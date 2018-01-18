@@ -1,89 +1,116 @@
 ---
-title: "Report attività in Skype for Business"
+title: "Rapporto attività"
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/24/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-f1_keywords:
-- O365E_ReportsS4BActivity
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection:
-- Adm_Skype4B_Online
-- Adm_UI_Elements
-ms.custom: Adm_O365_FullSet
 ms.assetid: 8cbe2eb2-1194-4fd7-b1ee-9f9287c82424
-
-description: "Learn how to get the Skype for Business Activity reports, what it contains, and how to interpret the data. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: O365E_ReportsS4BActivity
+ms.custom: Reporting
+description: 'Learn how to get the Skype for Business Activity reports, what it contains, and how to interpret the data. '
+ms.openlocfilehash: be0cba752c5d516a65ee8533750add2e46345455
+ms.sourcegitcommit: 5ef156b78eb64a4370ad8e73b16e1ab5fd8fc976
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/05/2018
 ---
+# <a name="activity-report"></a>Rapporto attività
 
-# Report attività in Skype for Business
+Il nuovo dashboard di Office 365 **report** Mostra panoramica attività tra i prodotti di Office 365 all'interno dell'organizzazione. Consente di eseguire il drill-ai singoli report a livello di prodotto per assegnare più granulare delle conoscenze relative alle attività all'interno di ogni prodotto. Ad esempio, si può utilizzare il report **Skype per l'attività aziendale** per visualizzare gli utenti utilizzano la quantità peer-to-peer o organizzati in sessioni di conferenza o la quantità sta che partecipano alle sessioni di conferenza. 
 
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Consultare la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per ulteriori informazioni.
   
-Nuovo dashboard di Office 365 **report** Mostra la panoramica di attività per i prodotti Office 365 all'interno dell'organizzazione. Consente di eseguire il drill-ai singoli report di livello di prodotto di notificare comprendere meglio le attività all'interno di ogni prodotto. Ad esempio, è possibile utilizzare il report di **Skype per attività** per visualizzare gli utenti utilizzano quantità peer-to-peer o organizzati in sessioni di conferenza o quantità sta partecipando sessioni di conferenza. Vedere[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
-  
-Questo report insieme altri Skype per i report di Business, per ottenere informazioni dettagliate sull'attività all'interno dell'organizzazione. Questi dettagli sono molto utili quando si analisi, pianificazione e altre decisioni aziendali per l'organizzazione.
+La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate sull'attività all'interno dell'organizzazione. Queste informazioni sono molto utili quando vengono analisi dei, pianificazione e altre decisioni strategiche per l'organizzazione.
   
 > [!NOTE]
-> È possibile visualizzare tutti di Skype per i report di Business quando effettua l'accesso come amministratore nell'interfaccia di amministrazione di Office 365. 
+> Quando effettua l'accesso come amministratore nell'interfaccia di amministrazione di Office 365, è possibile visualizzare tutti i Skype per i report di Business. 
   
-## Come ottenere il report attività in Skype for Business
+## <a name="how-to-get-to-the-skype-for-business-activity-report"></a>Come ottenere il report attività in Skype for Business
 
-1. Passare all'interfaccia **di amministrazione di Office 365** > **report** > **l'uso**.
+1. Vai al **Centro di amministrazione di Office 365** > **report** > **dati di utilizzo**.
     
-2. Nella pagina **utilizzo** fare clic su **Skype per attività di Business** in **Selezionare un elenco di report** sul lato sinistro oppure fare clic su widget **Skype per attività**.
+2. Nella pagina **utilizzo** , fare clic su **Skype per attività di Business** in **Selezionare un elenco dei report** sinistra oppure fare clic su widget **Skype per l'attività aziendale** .
     
      ![Skype for Business DashBoard Widget.](../images/3925bc24-18fd-471e-8e93-edf5ccd3cdb7.png)
   
     > [!IMPORTANT]
-    > A seconda dell'abbonamento di Office 365 che si dispone, potrebbe non essere visibile tutti i prodotti e i report illustrato di seguito. 
+    > A seconda della sottoscrizione di Office 365 che si dispone, non è possibile visualizzare tutti i prodotti e i rapporti riportati di seguito. 
   
-## Interpretazione del report attività in Skype for Business
+## <a name="interpret-the-skype-for-business-activity-report"></a>Interpretazione del report attività in Skype for Business
 
 Puoi consultare il report attività in Skype for Business dell'utente, visualizzando i grafici **Attività** e **Utenti**.
   
 ![Skype for Business Online Activity Report](../images/670c8bc6-d29c-4033-87fc-a20d324c9aae.png)
   
-|||
-|:-----|:-----|
-|**1** <br/> |Il report **attività in Skype for Business** può essere visualizzato per individuare le tendenze degli ultimi 7, 30, 90 o 180 giorni. <br/> |
-|**2** <br/> |Ogni report è una data per quando è stato generato il report. I report riflettono in genere una latenza 24 - 48 ore dall'ora dell'attività.  <br/> |
-|**3** <br/> |Usa i dati del grafico interattivo **Attività** per comprendere le tendenze di utilizzo e vedere il numero delle attività di conferenze tenute nella tua organizzazione. Il grafico mostra il numero totale e i tipi di **Sessioni peer-to-peer**, sessioni di conferenze **Organizzate** e **Frequentate** tenute nella tua organizzazione. <br/> |
-|**4** <br/> |Usare i dati del grafico interattive del grafico di **utenti** per comprendere le tendenze di utilizzo e per visualizzare il numero di utenti univoci che fanno parte di attività di conferenza utilizzate all'interno dell'organizzazione. È il numero totale di utenti, nonché i tipi di **sessioni - to-peer**, **organizzata** e **Participated** verrà visualizzato alle conferenze telefoniche. <br/> |
-|**5** <br/> |È possibile filtrare la serie visualizzate nel grafico facendo clic su un elemento nella legenda. Ad esempio, nel grafico **attività** fare clic o toccare **- to-peer sessioni**, **organizzata** o **Participated** per visualizzare solo le informazioni relative a ciascuno di essi. La modifica di questa selezione non modificare le informazioni nella tabella. <br/> |
-|**6** <br/> | Ciascun grafico ha un asse X (orizzontale) e un asse Y (verticale). <br/>  Nel grafico **attività** l'asse Y è il numero totale di peer-to-peer, organizzati e partecipato alle conferenze telefoniche che vengono mantenute. <br/>  Nel grafico attività **utente**, l'asse Y è il numero di utenti univoci parteciparvi in ogni tipo di peer-to-peer organizzati e partecipato conferenza..  <br/>  L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per il report specifico. <br/> |
-|**7** <br/> | Nella tabella sono scomposizione tutte le attività di servizi di conferenza per ogni utente. Mostra tutti gli utenti che dispongono di Skype per le aziende assegnata e le loro attività di servizi di conferenza. È possibile aggiungere altre colonne alla tabella. <br/> **Nomeutente** è il nome dell'utente. <br/> **Eliminato** indica che la licenza dell'utente è stata rimossa. <br/> > [!NOTE]>  L'attività per un utente eliminato continuerà a essere visualizzata in un report se durante il periodo di tempo selezionato all'utente è stata assegnata una licenza. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.          **Data eliminazione** è la data in cui la licenza dell'utente è stata rimossa. <br/> **Data di ultima attività (UTC)** indica l'ultima volta in cui l'utente ha avviato una sessione peer to peer o ha organizzato o partecipato a una conferenza. <br/> **-To-peer** Mostra il numero totale di sessioni peer-to-peer conferenza utilizzata dall'utente. <br/> **Conferenze organizzate** mostra il numero totale di conferenze che sono state organizzate dall'utente. <br/> **Conferenze frequentate** mostra il numero totale di conferenze a cui ha partecipato questo utente. <br/> **Prodotto assegnato** si riferisce ai prodotti di Office 365 assegnati all'utente. <br/>  Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui sono identificabili informazioni utente, è possibile modificare l'impostazione di privacy per tutti i report. Consultare la sezione **nascondono i dettagli utente i report** nei[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).  <br/> |
-|**8** <br/> |Fare clic o toccare l'icona di **colonne** in una delle colonne da aggiungere o rimuovere colonne dal report.           <br/> ![Skype for Business Online Reporting Manage Button.](../images/4c8f5387-cebb-4d6c-b7d3-05c954a2c234.png)|
-|**9** <br/> |È anche possibile esportare i dati del report in un file CSV di Excel toccando o facendo clic o toccando **Esporta**.           <br/> ![Skype for Business Reporting Export Button.](../images/de7e2ab7-d70c-422f-a0ec-178b10f7dd51.png)Ciò Esporta i dati di tutti gli utenti e consente di eseguire semplici ordinamento e filtro per un'ulteriore analisi. Se si dispone di meno di 2000 utenti, è possibile ordinare e filtrare all'interno della tabella nel report stesso. Se sono presenti più di 2000 utenti, nell'ordine per filtrare e ordinare, sarà necessario esportare i dati.  <br/> |
+***
+![Numero 1](../images/sfbcallout1.png)<br/>
+Il report **attività in Skype for Business** può essere visualizzato per individuare le tendenze degli ultimi 7, 30, 90 o 180 giorni.
+
+    > [!Note]
+    > If you click into the details of a specific day, the table will only show data for the 30 days up to the date when the report was generated.
+***
+![Numero 2](../images/sfbcallout2.png)<br/>
+Ogni rapporto è una data relativa a quando è stato generato questo rapporto. I report riflettono in genere una latenza 24 a 48 ore di tempo di attività. 
+***
+![Numero 3](../images/sfbcallout3.png)<br/>Usa i dati del grafico interattivo **Attività** per comprendere le tendenze di utilizzo e vedere il numero delle attività di conferenze tenute nella tua organizzazione. Il grafico mostra il numero totale e i tipi di **Sessioni peer-to-peer**, sessioni di conferenze **Organizzate** e **Frequentate** tenute nella tua organizzazione.  
+***
+![Numero 4](../images/sfbcallout4.png)<br/>
+Utilizzare i dati del grafico interattivo nel grafico **gli utenti** di comprendere le tendenze di utilizzo e per visualizzare il numero di utenti univoci che fanno parte delle attività di conferenza utilizzate nell'organizzazione. Descritto il numero totale di utenti e i tipi di **sessioni Peer-to-peer**, **organizzata**e **Participated** nelle sessioni di conferenza.
+***
+![Numero 5](../images/sfbcallout5.png)<br/>
+È possibile filtrare la serie che viene visualizzato nel grafico facendo clic su un elemento nella legenda. Ad esempio, nel grafico **attività** , fare clic o toccare **sessioni Peer-to-peer**, **organizzata**o **Participated** per visualizzare solo le informazioni relative a ciascuno di essi. Questa opzione non modifica le informazioni nella tabella griglia. 
+***
+![Numero 6](../images/sfbcallout6.png)<br/>
+Ciascun grafico ha un asse X (orizzontale) e un asse Y (verticale).
+*    Nel grafico **attività** all'asse Y è il numero totale di peer-to-peer, organizzati e partecipato alle sessioni di conferenza che vengono mantenute.
+*    Nel grafico attività **degli utenti** , all'asse Y è il numero di utenti univoci partecipazione a ogni tipo di peer-to-peer, organizzati e partecipato alla conferenza.
+
+L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per il report specifico. 
+***
+![Numero 7](../images/sfbcallout7.png)<br/>
+La tabella mostra suddivisione di tutte le attività di conferenza per utente. Mostra tutti gli utenti che dispongono di Skype per le aziende assegnata e le attività di conferenza. È possibile aggiungere colonne aggiuntive alla tabella.
+*    **Nome utente** è il nome dell'utente.
+*    **Eliminato** indica che la licenza dell'utente è stata rimossa. <br/> <br/> **Nota:** Attività per un utente eliminato sarà comunque visualizzata in un rapporto, purché potrà è stato concesso in licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Deleted** consente di tenere presente che l'utente potrebbe non essere più attivo, ma contribuito ai dati nel report.<br/><br/>
+*    **Deleted data** corrisponde alla data in cui è stata rimossa la licenza dell'utente.
+*    **Data di ultima attività (UTC)** indica l'ultima volta in cui l'utente ha avviato una sessione peer to peer o ha organizzato o partecipato a una conferenza.
+*    **-To-peer** Visualizza il numero totale di sessioni di conferenze peer-to-peer utilizzato dall'utente.
+*    **Conferenze organizzate** mostra il numero totale di conferenze che sono state organizzate dall'utente.
+*    **Conferenze frequentate** mostra il numero totale di conferenze a cui ha partecipato questo utente.
+*    **Prodotto assegnato** si riferisce ai prodotti di Office 365 assegnati all'utente.<br/>
+
+Se i criteri dell'organizzazione impediscano la visualizzazione dei report in cui sono identificabili informazioni utente, è possibile modificare l'impostazione di privacy per tutti questi rapporti. Consultare la sezione **nascondere dettagli utente nei rapporti** nei [Rapporti sull'attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
+***
+![Numero 8](../images/sfbcallout8.png)<br/>
+Fare clic o toccare l'icona di **colonne** in una delle colonne da aggiungere o rimuovere colonne dal rapporto.           <br/> ![Skype for Business Online Reporting Manage Button.](../images/4c8f5387-cebb-4d6c-b7d3-05c954a2c234.png)
+***
+![Numero 9](../images/sfbcallout9.png)<br/>
+È anche possibile esportare i dati del report in un file CSV di Excel toccando o facendo clic o toccando **Esporta**.           <br/> ![Pulsante Esporta Skype per i report di Business.](../images/de7e2ab7-d70c-422f-a0ec-178b10f7dd51.png)<br/> Questo Esporta i dati di tutti gli utenti e consente di eseguire semplici ordinamento e filtraggio per un'ulteriore analisi. Se si dispone di meno di 2000 utenti, è possibile ordinare e filtrare all'interno della tabella report stesso. Se si dispone di più di 2000 utenti, nell'ordine indicato per filtrare e ordinare, è necessario esportare i dati. 
    
-## Per consultare altri report di Skype for Business
+## <a name="want-to-see-other-skype-for-business-reports"></a>Per consultare altri report di Skype for Business
 
-- [Skype per report di utilizzo del dispositivo Business](skype-for-business-device-usage-report.md) È possibile per visualizzare i dispositivi, inclusi i sistemi operativi basati su Windows e dispositivi mobili con Skype for Business app installate e usano per messaggistica Istantanea e le riunioni.
+- [Skype per report sull'utilizzo dei dispositivi Business](device-usage-report.md) È possibile per visualizzare i dispositivi, inclusi sistemi operativi Windows e dispositivi mobili con Skype per applicazioni aziendali installati e utilizzano per la messaggistica Istantanea e riunioni.
     
-- [Report attività organizzatore di conferenze in Skype for Business](skype-for-business-conference-organizer-activity-report.md) È possibile vedere quanto gli utenti sono organizzare conferenze che utilizzano messaggistica Istantanea, audio/video, condivisione, Web, festa - 3 dial-in e all'esterno di applicazioni e dial-in e all'esterno a Microsoft.
+- [Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) permette di vedere quanto gli utenti organizzano conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft.
     
-- [Report attività partecipante di conferenze in Skype for Business](skype-for-business-conference-participant-activity-report.md) È possibile vedere quante messaggistica Istantanea, audio/video, condivisione, Web, applicazioni ed e le conferenze telefoniche con accesso esterno dial-in e all'esterno sono vengano partecipate.
+- [Skype per report attività peer-to-peer aziendale](peer-to-peer-activity-report.md) È possibile visualizzare quanto gli utenti utilizzano la messaggistica immediata, audio/video, condivisione dell'applicazione e trasferimento di file.
     
-- [Report attività peer-to-peer in Skype for Business](skype-for-business-peer-to-peer-activity-report.md) È possibile vedere quanto gli utenti utilizzano applicazione audio/video, messaggistica Istantanea, condivisione e il trasferimento di file.
+- [Skype per gli utenti aziendali bloccati report](users-blocked-report.md) - Permette di consultare gli utenti dell'organizzazione a cui è impedito effettuare chiamate.
     
-- [Skype per gli utenti aziendali bloccati report](skype-for-business-users-blocked-report.md) È possibile visualizzare gli utenti dell'organizzazione che sono stati bloccati da effettuare chiamate PSTN.
-    
-- [Report di utilizzo PSTN di Skype for Business](skype-for-business-pstn-usage-report.md) È possibile visualizzare il numero di minuti trascorso in chiamate in ingresso/uscita e dei costi per le chiamate.
-    
-## 
-<a name="MT_Footer"> </a>
+- [Skype per i report di utilizzo PSTN Business](pstn-usage-report.md) È possibile visualizzare il numero di minuti, trascorso per le chiamate in ingresso/in uscita e dei costi per le chiamate.
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
+- [Skype per report pool minuto Business PSTN](pstn-minute-pools-report.md) è possibile visualizzare il numero di minuti utilizzati durante il mese corrente all'interno dell'organizzazione.
 
-#### 
+- [Skype per rapporto Dettagli sessione Business](session-details-report.md) È possibile visualizzare informazioni dettagliate sull'esperienza di chiamata dell'utente singolo.
 
+    
+## <a name="related-topics"></a>Argomenti correlati
 [Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 

@@ -1,36 +1,46 @@
 ---
-title: "Gestione dei numeri di telefono per Irlanda"
+title: Gestione numerica di telefono per Irlanda
 ms.author: tonysmit
 author: tonysmit
-ms.date: 11/22/2017
-ms.audience: ITPro
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 4ae9b75f-d5e8-4afb-b17d-4ea668c00669
-description: "Utilizzare questa tabella per trovare informazioni sulla Guida e la gestione di numeri di telefono in Irlanda per Skype for Business Online."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Calling Plans
+description: Utilizzare questa tabella per trovare le informazioni sul recupero e gestione dei numeri di telefono in Irlanda per Skype Business online.
+ms.openlocfilehash: e879d5142c39af05547b805c5cc125d7b0206688
+ms.sourcegitcommit: b7f7ff1f88cd71ba289c20e745d0642ce5f11809
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/17/2018
 ---
+# <a name="phone-number-management-for-ireland"></a>Gestione numerica di telefono per Irlanda
 
-# Gestione dei numeri di telefono per Irlanda
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Utilizzare questa tabella per trovare le informazioni sul recupero e gestione dei numeri di telefono in Irlanda per Skype Business online. 
   
-Utilizzare questa tabella per trovare informazioni sulla Guida e la gestione di numeri di telefono in Irlanda per Skype for Business Online.
+Per ulteriori informazioni, vedere [Manage i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization.md).
   
-Per ulteriori informazioni, vedere [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).
-  
-|**Operazioni da eseguire**|**Scarica i moduli corretti**|
+|**Che cosa si desidera eseguire?**|**Scaricare le forme corrette**|
 |:-----|:-----|
-|Richiesta di nuovi numeri di telefono utente.  <br/> |In Irlanda, è possibile ottenere numeri di telefono per l'organizzazione utilizzando il Skype per Business admin center. È necessario inviare una nuova richiesta di numeri di telefono. Scaricare il modulo di [ottenere nuovi numeri di telefono in Irlanda (en-US)](http://download.microsoft.com/download/3/B/D/3BDD4575-EAFA-4777-B4C6-A42E8F235AC9/New Phone Number Request for Ireland %28Geographic numbers%29 (v.3) (en.US).pdf) , riempire una prova e[inviarlo a Microsoft](mailto:ptneu@microsoft.com).  <br/> |
-|Trasferimento di numeri di telefono a Skype for Business.  <br/> | Scarica uno dei seguenti moduli: <br/> [Lettera di autorizzazione (LOA) per l'Irlanda (numeri geografici)](http://download.microsoft.com/download/F/0/1/F01AE714-0F3C-4D9D-B41A-DFD180EC1622/Letter of Authorization %28LOA%29 for Ireland (Geographic numbers) (v.1.0) (en-US).pdf) <br/> [Lettera di autorizzazione (LOA) per l'Irlanda (numeri non geografici)]("http://download.microsoft.com/download/F/0/1/F01AE714-0F3C-4D9D-B41A-DFD180EC1622/Letter of Authorization %28LOA%29 for Ireland (Non-geographic numbers) (v.1.0) (en-US).pdf) <br/>  Compila il modulo e[inviacelo](mailto:ptneu@microsoft.com).  <br/> |
-|Pubblicazione o annullamento della pubblicazione di uno o più numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che desideri pubblicare o di cui desideri annullare la pubblicazione. <br/> |
-|Modifica di un numero di telefono utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com ) l'elenco dei numeri utente che desideri convertire in numeri di servizio. <br/> |
+|Ottenere numeri di telefono nuovo utente.  <br/> |Irlandese, è possibile visualizzare i numeri di telefono per l'organizzazione mediante il Skype per interfaccia di amministrazione di Business. È necessario inviare una nuova richiesta di numeri di telefono. Scaricare il [nuova richiesta numerico di telefono per Irlanda (numeri geografici) (v.3.0)(en.us)](../../downloads/new-phone-number-request-for-ireland-(geographic-numbers)-(v.3.0)-(en.us).pdf) del modulo, compilare estrazione e [invialo a Microsoft](mailto:ptneu@microsoft.com).  <br/> |
+|È necessario ottenere numeri di telefono trasferiti per noi.  <br/> |Scaricare uno di questi moduli: <br/> [Lettera di autorizzazione (LOA) Ireland (numeri geografici) (v.3.0)(en.us)](../../downloads/LOA-forms/letter-of-authorization-(loa)-for-ireland-(geographic-numbers)-(v.1.0)-(en.us).pdf) <br/> [Lettera di autorizzazione (LOA) Ireland (non geografico) (v.1.0)(en.us)](../../downloads/LOA-forms/letter-of-authorization-(loa)-for-ireland-(non-geographic-numbers)-(v.1.0)-(en.us).pdf) <br/>  Estrazione e [invialo a us](mailto:ptneu@microsoft.com)del riempimento.  <br/> |
+|È necessario pubblicare/annullare la pubblicazione di numeri di telefono nella directory telefono nazionali.  <br/> |[Invia commenti](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che si desidera pubblicare/annullarne la pubblicazione. <br/> |
+|È necessario modificare il numero di un utente a un numero di servizio.  <br/> |[Invia commenti](mailto:ptneu@microsoft.com ) l'elenco dei numeri di utente che si desidera convertire i numeri di servizio. <br/> |
    
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
+[Diversi tipi di numeri di telefono utilizzati per la chiamata dei piani](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
+[Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization.md)
+
+[Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
+
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 

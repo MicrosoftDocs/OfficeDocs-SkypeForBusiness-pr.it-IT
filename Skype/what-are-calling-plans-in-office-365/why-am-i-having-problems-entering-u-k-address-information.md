@@ -1,91 +1,97 @@
 ---
-title: "Perché ho difficoltà a inserire i dati quando l'indirizzo non è americano?"
+title: Why am I having problems entering U.K. address information?
 ms.author: tonysmit
 author: tonysmit
-ms.date: 11/17/2017
-ms.audience: Admin
-ms.topic: troubleshooting
-f1_keywords:
-- ms.lync.lac.CivicAddressGBSyntaxError
-ms.prod: office-online-server
-localization_priority: Normal
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: e2376646-f0d6-4d33-a8fd-68ecbd46fb7a
-description: "Di seguito sono riportati alcuni motivi perché si potrebbe avere problemi ottenere l'indirizzo o gli indirizzi per convalidare correttamente nel Regno Unito (Regno Unito)."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
+f1keywords: ms.lync.lac.CivicAddressGBSyntaxError
+ms.custom: Calling Plans
+description: Here are some reasons why you may be having problems getting your address or addresses to validate correctly in the United Kingdom (U.K.).
+ms.openlocfilehash: 7752a6d0f1ff802b8b54ec70f8d51ba1a7f286ea
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="why-am-i-having-problems-entering-uk-address-information"></a>Why am I having problems entering U.K. address information?
 
-# Perché ho difficoltà a inserire i dati quando l'indirizzo non è americano?
+Here are some reasons why you may be having problems getting your address or addresses to validate correctly in the United Kingdom (U.K.).
+  
+## <a name="whats-wrong-with-the-company-name"></a>What's wrong with the company name?
 
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+If you are having a problem entering the company name, remember:
   
-Di seguito sono riportati alcuni motivi perché si potrebbe avere problemi ottenere l'indirizzo o gli indirizzi per convalidare correttamente nel Regno Unito (Regno Unito).
-  
-## Qual è il problema con il nome della mia azienda?
-
-Se si è verificato un problema immettere il nome della società, tenere presenti:
-  
-- Può avere lettere, numeri e i caratteri speciali seguenti:, / - +. "&amp;"_
+- It can have letters, numbers, and the following special characters: , / - + . ' &amp; " _ 
     
     > [!CAUTION]
-    > Nel Regno Unito (Regno Unito), non è possibile specificare il nome della società il segno +. 
+    > In the United Kingdom (U.K.), the company name can't have the + sign. 
   
-- Deve contenere 80 caratteri o meno.
+- It has to be 80 characters or less.
     
-- Non può iniziare con un carattere speciale. 
+- It can't start with a special character.
     
-## Qual è il problema con il numero civico?
+## <a name="whats-wrong-with-the-house-number"></a>What's wrong with the house number?
 
-Se si è verificato un problema immettere il numero di casa, tenere presenti:
+If you are having a problem entering the house number, remember:
   
-- Può avere lettere, numeri e i caratteri speciali seguenti:-/]
+- It can have letters, numbers, and the following special characters: - / [ ]
     
-- Deve iniziare con un numero.
+- It has to start with a number.
     
-- Deve contenere 20 caratteri o meno.
+- It has to be 20 characters or less.
     
-- Può avere una maiuscola o minuscola.
+- It can have a capital or lowercase letter.
     
-## Qual è il problema con il nome dell'abitazione?
+## <a name="whats-wrong-with-the-house-name"></a>What's wrong with the house name?
 
-Se si è verificato un problema immettere il nome di casa, tenere presenti:
+If you are having a problem entering the house name, remember:
   
-- Può contenere lettere, numeri e i seguenti caratteri speciali: , / - + . ' &amp; " _
+- It can have letters, numbers and the following special characters : , / - + . ' &amp; " _
     
-- Deve contenere 50 caratteri o meno.
+- It has to be 50 characters or less.
     
-- Non può iniziare con un carattere speciale.
+- It can't start with a special character.
     
-## Qual è il problema con il nome della via?
+## <a name="whats-wrong-with-the-street-name"></a>What's wrong with the street name?
 
-Se si è verificato un problema immettere il nome della via, tenere presenti:
+If you are having a problem entering the street name, remember:
   
-- Può avere lettere, numeri e i caratteri speciali seguenti:, / - +. "&amp;"_
+- It can have letters, numbers, and the following special characters : , / - + . ' &amp; " _ 
     
-- Deve contenere 50 caratteri o meno.
+- It has to be 50 characters or less.
     
-- Non può iniziare con un carattere speciale. 
+- It can't start with a special character. 
     
-## Qual è il problema con la città o paese?
+## <a name="whats-wrong-with-the-city-or-town"></a>What's wrong with the city or town?
 
-Se si è verificato un problema immettere il nome della propria città, tenere presenti:
+If you are having a problem entering the name of the city or town, remember:
   
-- Può avere lettere, numeri e i caratteri speciali seguenti:, / - +. "&amp;"_
+- It can have letters, numbers, and the following special characters : , / - + . ' &amp; " _
     
-- Deve contenere 50 caratteri o meno.
+- It has to be 50 characters or less.
     
-- Non può iniziare con un carattere speciale. 
+- It can't start with a special character. 
     
-## Qual è il problema con il codice postale?
+## <a name="whats-wrong-with-the-postal-code"></a>What's wrong with the postal code?
 
-Se si è verificato un problema immettere il codice postale, tenere presenti:
+If you are having a problem entering the postal code, remember:
   
-- Possono contenere solo lettere, numeri o spazi.
+- It can only have letters, numbers, or spaces.
     
-- È necessario avere minore o uguale a 8 lettere, inclusi i numeri e spazi.
+- It has to have 8 or less letters, including numbers and spaces.
     
-- **Tenere presente che se ci si trova nel Regno Unito (Regno Unito)**, è **necessario** inserire il codice postale in uno dei seguenti formati in cui la lettera A carattere alla Z, il simbolo # = = numero compreso tra 0-9 e _ (carattere di sottolineatura) = uno spazio vuoto. Ecco alcuni esempi:
+- **Remember that if you are in the United Kingdom (U.K.)**, you **must** put the postal code in one of the following formats, where the letter A = character A-Z, the # sign = a number from 0-9, and the _ (underscore) = a blank space. Here are some examples:
     
-|**Formato**|**Esempio**|
+|**Format**|**Esempio**|
 |:-----|:-----|
 |AA#A_#AA  <br/> |EC3B 2BD  <br/> |
 |A#A_#AA  <br/> |E1W 1AP  <br/> |
@@ -93,19 +99,16 @@ Se si è verificato un problema immettere il codice postale, tenere presenti:
 |A##_#AA  <br/> |C44 8HT  <br/> |
 |AA#_#AA  <br/> |DR3 6HG  <br/> |
 |AA##_#AA  <br/> |FN35 1TH  <br/> |
-   
-## 
-<a name="MT_Footer"> </a>
 
 > [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
+> If you need to get more telephone numbers than this, please [contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
-#### 
+   
+## <a name="related-topics"></a>Argomenti correlati
+[Transferring phone numbers common questions](transferring-phone-numbers-common-questions.md)
+
+[Different kinds of phone numbers used for Calling Plans](different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
-  
-[Periodo di chiamata in uscita di conferenze audio](../accessibility-and-regulatory/audio-conferencing-complimentary-dial-out-period.md)
 
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)

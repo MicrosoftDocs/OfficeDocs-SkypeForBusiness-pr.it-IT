@@ -1,36 +1,46 @@
 ---
-title: "Gestione dei numeri di telefono per Regno Unito"
+title: Gestione numerica di telefono per Regno Unito
 ms.author: tonysmit
 author: tonysmit
-ms.date: 11/22/2017
-ms.audience: ITPro
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 104dea98-6d0a-4c45-ba79-ea568e588c77
-description: "Utilizzare questa tabella per trovare informazioni sulla Guida e sulla gestione dei numeri di telefono nel Regno Unito per Skype for Business Online."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Calling Plans
+description: Utilizzare questa tabella per trovare le informazioni sul recupero e gestione dei numeri di telefono nel Regno Unito per Skype Business online.
+ms.openlocfilehash: 51f72b24055ee9b99f869b30bc7f5a7c41048bd1
+ms.sourcegitcommit: b7f7ff1f88cd71ba289c20e745d0642ce5f11809
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/17/2018
 ---
+# <a name="phone-number-management-for-the-uk"></a>Gestione numerica di telefono per Regno Unito
 
-# Gestione dei numeri di telefono per Regno Unito
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Utilizzare questa tabella per trovare le informazioni sul recupero e gestione dei numeri di telefono nel Regno Unito per Skype Business online. 
   
-Utilizzare questa tabella per trovare informazioni sulla Guida e sulla gestione dei numeri di telefono nel Regno Unito per Skype for Business Online.
+Per ulteriori informazioni, vedere [Manage i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization.md).
   
-Per ulteriori informazioni, vedere [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).
-  
-|**Operazioni da eseguire**|**Scarica i moduli corretti**|
+|**Che cosa si desidera eseguire?**|**Scaricare le forme corrette**|
 |:-----|:-----|
-|Richiesta di numeri utente che non sono già elencati nell'interfaccia di amministrazione di Skype for Business.  <br/> |Scaricare il modulo di [nuovi numeri di telefono per il Regno Unito (numeri geografici)](http://download.microsoft.com/download/3/B/D/3BDD4575-EAFA-4777-B4C6-A42E8F235AC9/New Phone Number Request for the U.K. %28Subscriber geographic numbers%29 (v.3) (en.US).pdf) , riempire una prova e[inviarlo a Microsoft](mailto:ptneu@microsoft.com).  <br/> |
-|Trasferimento di numeri di telefono a Skype for Business.  <br/> | Scarica uno dei seguenti moduli: <br/> [Lettera di autorizzazione (LOA) per il Regno Unito (numeri a tariffa)](http://download.microsoft.com/download/F/0/1/F01AE714-0F3C-4D9D-B41A-DFD180EC1622/Letter of Authorization %28LOA%29 for the U.K. (Subscriber numbers) (v.2.0) (en-US).pdf) <br/> [Lettera di autorizzazione (LOA) per il Regno Unito (numeri di servizio)](http://download.microsoft.com/download/F/0/1/F01AE714-0F3C-4D9D-B41A-DFD180EC1622/Letter of Authorization %28LOA%29 for the U.K. (Service numbers) (v.2.1) (en-US).pdf) <br/>  Compila il modulo e[inviacelo](mailto:ptneu@microsoft.com).  <br/> |
-|Pubblicazione o annullamento della pubblicazione di uno o più numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che desideri pubblicare o di cui desideri annullare la pubblicazione. <br/> |
-|Modifica di un numero di telefono utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com ) l'elenco dei numeri utente che desideri convertire in numeri di servizio. <br/> |
+|È necessario ottenere numeri di utenti che non sono incluse nel Skype per interfaccia di amministrazione di Business.  <br/> |Scaricare il [nuova richiesta numerico di telefono per Regno Unito (numeri geografici) (v.3.0)(en.us)](../../downloads/nnew-phone-number-request-for-the-u.k.-(geographic-numbers)-(v.3.0)-(en.us).pdf) del modulo, compilare estrazione e [invialo a Microsoft](mailto:ptneu@microsoft.com).  <br/> |
+|È necessario ottenere numeri di telefono trasferiti per noi.  <br/> |Scaricare uno di questi moduli: <br/> [Lettera di autorizzazione (LOA) per Regno Unito (numeri geografici) (v.2.0)(en.us)](../../downloads/LOA-forms/letter-of-authorization-(loa)-for-the-u.k.-(geographic-numbers)-(v.2.0)-(en.us).pdf) <br/> [Lettera di autorizzazione (LOA) per Regno Unito (non geografico) (v.2.1)(en.us)](../../downloads/LOA-forms/letter-of-authorization-(loa)-for-the-u.k.-(non-geographic-numbers)-(v.2.1)-(en.us).pdf) <br/>  Estrazione e [invialo a us](mailto:ptneu@microsoft.com)del riempimento.  <br/> |
+|È necessario pubblicare/annullare la pubblicazione di numeri di telefono nella directory telefono nazionali.  <br/> |[Invia commenti](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che si desidera pubblicare/annullarne la pubblicazione. <br/> |
+|È necessario modificare il numero di un utente a un numero di servizio.  <br/> |[Invia commenti](mailto:ptneu@microsoft.com ) l'elenco dei numeri di utente che si desidera convertire i numeri di servizio. <br/> |
    
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
+[Diversi tipi di numeri di telefono utilizzati per la chiamata dei piani](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
+[Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization.md)
+
+[Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
+
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 

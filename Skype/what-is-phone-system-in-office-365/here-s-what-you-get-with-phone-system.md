@@ -1,112 +1,97 @@
 ---
-title: "Ecco cosa viene visualizzato con sistema telefonico in Office 365"
+title: Ecco cosa viene visualizzato con sistema telefonico in Office 365
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/14/2017
-ms.audience: Admin
-ms.topic: overview
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection:
-- Adm_Skype4B_Online
-- Adm_Skype4B_Online_Top
-ms.custom:
-- Adm_O365_FullSet
-- DianeF_Adm_Simplified
-- Strat_SB_PSTN
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: bc9756d1-8a2f-42c4-98f6-afb17c29231c
-
-description: "Learn about the features, availability, and how to plan and set up a Phone System (Cloud PBX) for your business. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom:
+- Phone System
+- Strat_SB_PSTN
+description: "Informazioni sulle caratteristiche, disponibilità e su come pianificare e configurare un sistema telefonico (Cloud PBX) per la propria azienda. "
+ms.openlocfilehash: 8891904d9ccb5df8983eca64222f6c88bba7dd0d
+ms.sourcegitcommit: 820ebac06f38f82c900fc87e19a9cec624d81c5d
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 01/16/2018
 ---
+# <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa viene visualizzato con sistema telefonico in Office 365
 
-# Ecco cosa viene visualizzato con sistema telefonico in Office 365
+Un sistema PBX è un sistema telefonico all'interno di business. Il sistema telefonico nel componente aggiuntivo di Office 365 offre funzionalità di PBX, ma senza le apparecchiature complessa e costosa. 
+  
+Con il componente aggiuntivo sistema telefonico, è possibile utilizzare Skype for Business per eseguire attività di base, ad esempio effettuare e ricevere chiamate, trasferire e per la disattivazione dell'o unmuting chiamate, da praticamente ovunque con accesso a Internet. È disponibile in tutto il mondo! 
+  
+Per ulteriori informazioni, vedere [determinazione del prezzo di sistema telefonico](https://products.office.com/en-us/skype-for-business/cloud-pbx#requirements).
+  
+## <a name="phone-system-in-office-365-features"></a>Sistema telefonico in funzionalità di Office 365
 
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
-  
-Un PBX è un sistema telefonico all'interno di business. Il sistema telefonico nel componente aggiuntivo di Office 365 fornisce le funzionalità PBX, ma senza le apparecchiature complicata e oneroso.
-  
-Con il componente aggiuntivo sistema telefonico, è possibile utilizzare Skype for Business per completare le attività di base, ad esempio effettuare e ricevere chiamate, il trasferimento delle chiamate e la disattivazione dell'o unmuting chiamate da praticamente ovunque con accesso a Internet. È disponibile in tutto il mondo!
-  
-Per ulteriori informazioni, vedere [determinazione del prezzo per sistema telefonico](https://products.office.com/en-us/skype-for-business/cloud-pbx#requirements).
-  
-## Sistema telefonico in termini di caratteristiche di Office 365
-
-Con sistema telefonico, gli utenti Skype for Business riceveranno le caratteristiche seguenti:
+Con sistema telefonico, il Skype per gli utenti aziendali verrà visualizzati le funzionalità seguenti:
   
 |||
 |:-----|:-----|
 |**Sistema telefonico in funzionalità di Office 365** <br/> |**Descrizione** <br/> |
-|[Quali sono gli operatori automatici di sistema telefonico?](what-are-phone-system-auto-attendants.md) <br/> |Sistema telefonico gli operatori automatici di possono essere usati per creare un sistema di menu per l'organizzazione che consente ai chiamanti interni ed esterni spostarsi da un sistema di menu per individuare e inserire o trasferire le chiamate per gli utenti della società o reparti all'interno dell'organizzazione.  <br/> |
-|Risposta/inizio chiamata (per nome e numero)  <br/> |Rispondi alle chiamate in arrivo con un tocco ed effettua chiamate in uscita componendo tutto il numero di telefono o selezionando un nome in Skype for Business o in Outlook.  <br/> |
-|[Impostare le opzioni per l'inoltro di chiamata in Skype for Business](https://support.office.com/article/1ec2e7fb-471c-4c35-bc90-a35991b3f532) <br/> |Effettua o rispondi a chiamate per conto di un manager a cui dai assistenza. Le notifiche rendono chiaro ai partecipanti quando le chiamate vengono effettuate o ricevute per conto terzi.  <br/> |
-|[Inoltro di chiamata e squillo simultaneo](https://support.office.com/article/967d9aaf-3fed-448b-ab96-40bbc9a11a20) <br/> |Queste caratteristiche consentono di definire regole di inoltro in modo da ricevere ed effettuare chiamate ovunque e inoltrare chiamate a colleghi o caselle vocali.  <br/> |
-|[Trovare una conversazione precedente di Lync](https://support.office.com/article/d1d54123-0301-482e-b047-c82e9e2724a3) <br/> |Un unico registro di tutte le tue conversazioni, che siano da messaggistica istantanea, telefonate o riunioni immediate o pianificate. Le conversazioni sono memorizzate nel tuo registro chiamate.  <br/> |
-|Pausa/recupero chiamata  <br/> | È utile quando gestisci più chiamate allo stesso tempo. Quando rispondi alla prossima chiamata in entrata o effettui una chiamata in uscita, la chiamata in corso va automaticamente in attesa. <br/> |
-|[Trasferire una chiamata Skype for Business](https://support.office.com/article/f9f312a3-ccc9-4215-86e8-8928b2df1f97) <br/> |Trasferisca le chiamate a un altro utente. In alternativa, se è necessario mantenere di office, ma continuare la conversazione, è possibile trasferire le chiamate dal telefono PC o un indirizzo IP a un cellulare o tablet.  <br/> |
-|ID chiamante  <br/> |Le chiamate interne all'azienda mostrano un ID chiamante dettagliato che recupera informazioni dall'elenco aziendale, con immagine e mansione dell'interlocutore, invece di un semplice numero di telefono.  <br/> |
-|[Creare una coda di chiamata sistema telefonico](create-a-phone-system-call-queue.md) <br/> |Telefonata sistema code includono messaggi di saluto che vengono utilizzati quando si riceve una chiamata a un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e la possibilità di eseguire una ricerca per l'agente di chiamata disponibile successiva gestire la chiamata durante le persone che hanno chiamata in attesa musica durante l'attesa.  <br/> |
-|[Avvisami quando cambia lo stato di un utente](https://support.office.com/article/042a13d8-c815-4101-8b41-1e141b6bf6e9) <br/> | Questa funzione ti permette di contrassegnare le persone attualmente non disponibili e ricevere notifiche quando laloro presenza cambia e possono ricevere chiamate. <br/> |
-|Client per PC, Mac e dispositivi mobili  <br/> |Si ottiene così il richiamo di funzioni nei dispositivi, da Tablet e telefoni cellulari per PC e i telefoni IP desktop.  <br/> |
-|Cambio dispositivi  <br/> |Permette di riprodurre la chiamata o riunione su un altro dispositivo.  <br/> |
-|[Modificare gli avvisi di Lync](https://support.office.com/article/15db9f71-a3d1-4ad7-9d84-39f05520b4c2) <br/> |Riproduci suonerie diverse per i diversi tipi di chiamata che ricevi ogni giorno, in modo da sapere subito chi ti sta chiamando.  <br/> |
-|[Modificare lo stato della presenza in Skype for Business](https://support.office.com/article/9b64eef5-47b8-46d8-a744-f490e6f88feb) <br/> |Controlla le comunicazioni in arrivo secondo la presenza, consentendo di bloccare tutte le comunicazioni in arrivo tranne quelle che indichi specificamente.  <br/> |
-|Il routing delle chiamate calendario dell'organizzazione  <br/> |Routing delle chiamate calendario Enterprise consente di usare il calendario di Exchange orario di lavoro per attivare o disattivare l'inoltro di chiamata e squillo simultaneo: in Skype for Business.  <br/> |
-|Tastiera integrata  <br/> | Chiama per nome o numero in qualsiasi punto della barra ricerca e tastiera del telefono, velocizzando le procedure per le chiamate in uscita. <br/> |
-|[Effettuare una chiamata Skype for Business con il telefono da tavolo](https://support.office.com/article/6a316c11-a05e-460c-b969-32ff0ad848e6) <br/> |Quando il tuo telefono da tavolo è configurato per interagire con Skype for Business, puoi chiamare persone nella tua organizzazione con Skype for Business e l'audio della chiamata verrà trasmesso attraverso il tuo telefono.  <br/> > [!NOTE]> Questo vale anche per i telefoni PBX per gli utenti ibridi.           |
-|Musica di attesa  <br/> |Riproduce musica quando metti in attesa una chiamata, in modo che l'interlocutore sappia che è ancora collegato e la linea non è caduta accidentalmente.  <br/> |
-|Skype e si chiama federato  <br/> |È possibile eseguire una ricerca per tutti gli utenti nella directory Skype, quindi in modo sicuro connettersi, comunicare e collaborare con loro.  <br/> |
-|[Impostare le opzioni per l'inoltro di chiamata in Skype for Business](https://support.office.com/article/1ec2e7fb-471c-4c35-bc90-a35991b3f532) <br/> |Invia le tue chiamate al tuo team, immediatamente o dopo un tempo definito.  <br/> |
-|[Effettuare e ricevere videochiamate con Skype for Business](https://support.office.com/article/abf62493-670f-4b0d-b2cf-fe03b49caf42) <br/> | Puoi vedere il nome della persona che parla e lo streaming video in una piccola finestra indipendente, per rispondere prontamente a qualsiasi domanda. <br/> |
-|[Controllare le opzioni e la segreteria telefonica di Skype for Business](https://support.office.com/article/2deea7f8-831f-4e85-a0d4-b34da55945a8) <br/> |Ecco come funziona il sistema telefonico segreteria telefonica: quando si riceve un messaggio vocale, viene recapitato alla cassetta postale tramite posta elettronica con il messaggio di segreteria telefonica come allegato. È anche possibile ascoltare i messaggi sopra il proprio telefono desktop certificata Skype, tutte le applicazioni Skype for Business o Lync per Mac 2011.  <br/> Segreteria telefonica sistema telefonico include messaggio di saluto personalizzato, indicatore in attesa di messaggio e risposta con chiamata. È possibile impostare tutta la segreteria telefonica depositato nelle cassette postali e resi disponibili tramite Skype for Business nel PC, dispositivo mobile e telefono IP.  <br/> |
+|[Che cosa sono gli operatori automatici di sistema telefonico?](what-are-phone-system-auto-attendants.md) <br/> |Sistema telefonico gli operatori automatici possono essere utilizzati per creare un sistema di menu per l'organizzazione che consente ai chiamanti interni ed esterni spostarsi in un sistema di menu per individuare ed effettuare o trasferire le chiamate per gli utenti della società o reparti all'interno dell'organizzazione.  <br/> |
+|Chiamata risposta/avviare (per nome e il numero)  <br/> |Rispondere alle chiamate in ingresso con un tocco ed effettuare chiamate in uscita per la composizione del numero di telefono completo o facendo clic su un nome in Skype per Business o Outlook.  <br/> |
+|[Impostare le opzioni di inoltro di chiamata in Skype per le aziende](https://support.office.com/en-us/article/1ec2e7fb-471c-4c35-bc90-a35991b3f532) <br/> |Effettua o si risponde alle chiamate per conto di un manager supportato. Notifiche rendono deselezionarla per tutti i partecipanti quando vengono chiamate risposto o appositamente per un utente.  <br/> |
+|[Inoltro di chiamata e contemporaneamente chiama](https://support.office.com/en-us/article/967d9aaf-3fed-448b-ab96-40bbc9a11a20) <br/> |Tali funzionalità consentono di configurare le regole di inoltro in modo che le chiamate consente di passare in qualsiasi punto con l'utente ed è possibile inoltrare le chiamate ai colleghi o alla segreteria telefonica.  <br/> |
+|[Trovare una conversazione precedente - Lync](https://support.office.com/en-us/article/d1d54123-0301-482e-b047-c82e9e2724a3) <br/> |Tenere traccia di tutte le conversazioni in un'unica posizione, se le conversazioni sono da messaggi istantanei, telefonate o riunioni improvvisate o pianificate. Le conversazioni vengono registrate nella cronologia delle chiamate.  <br/> |
+|Attesa/recupero delle chiamate  <br/> | Utilizzare quando si verificano più chiamate contemporaneamente. Quando si risponde alla chiamata in ingresso successiva o effettua una chiamata in uscita, la chiamata corrente viene inserito automaticamente in attesa. <br/> |
+|[Trasferire Skype per chiamata Business](https://support.office.com/en-us/article/f9f312a3-ccc9-4215-86e8-8928b2df1f97) <br/> |Consente di trasferire le chiamate a un'altra persona. In alternativa, se è necessario lasciare l'ufficio ma per continuare la conversazione, è possibile trasferire le chiamate dal telefono IP o PC al telefono cellulare o Tablet PC.  <br/> |
+|ID chiamante  <br/> |Le chiamate da interni alla società Visualizza un ID chiamante dettagliate che estrae informazioni dalla directory aziendale, con un'immagine e il titolo anziché un numero di telefono.  <br/> |
+|[Creare una coda di chiamata di sistema telefonico](create-a-phone-system-call-queue.md) <br/> |Chiamata al sistema telefonico code includono messaggi di saluto che vengono utilizzati quando si riceve una chiamata a un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e le funzionalità di ricerca per il successivo agente disponibile chiamata gestire la chiamata mentre gli utenti che chiamata in attesa la musica di attesa.  <br/> |
+|[Sapere quando cambia lo stato di una persona](https://support.office.com/en-us/article/042a13d8-c815-4101-8b41-1e141b6bf6e9) <br/> | Questa funzionalità consente agli utenti di tag che sono attualmente disponibili e ricevere una notifica quando le modifiche di presenza e si è pronti per ricevere chiamate telefoniche. <br/> |
+|Client per PC, Mac e Mobile  <br/> | In questo modo si effettua la chiamata caratteristiche nei dispositivi, dal Tablet e telefoni cellulari a PC e telefoni IP desktop. <br/> |
+|Dispositivo di commutazione  <br/> |Consente di riprodurre la chiamata o una riunione in un altro dispositivo.  <br/> |
+|[Modificare gli avvisi di Lync](https://support.office.com/article/15DB9F71-A3D1-4AD7-9D84-39F05520B4C2) <br/> |Riprodotti suoni diversi per diversi tipi di chiamate che viene visualizzato ogni giorno, in modo rapido verificare se il chiamante è.  <br/> |
+|[Modificare lo stato di presenza in Skype per le aziende](https://support.office.com/en-us/article/9b64eef5-47b8-46d8-a744-f490e6f88feb) <br/> |Consente di controllare le comunicazioni in ingresso con presenza, che consente di bloccare tutte le comunicazioni in arrivo con la differenza rispetto a quelli in particolare indicare.  <br/> |
+|Il routing delle chiamate calendario dell'organizzazione  <br/> |Il routing delle chiamate calendario aziendale consente di utilizzare orari d'ufficio al calendario di Exchange per abilitare o disabilitare l'inoltro di chiamata e lo squillo simultaneo in Skype per le aziende.  <br/> |
+|Tastiera integrata  <br/> | Accedere in base al nome o numero in un punto qualsiasi nella barra di ricerca e la tastiera, velocizzazione del processo di esecuzione di chiamate in uscita. <br/> |
+|[Utilizzare il telefono da tavolo per rendere Skype per chiamata Business](https://support.office.com/en-us/article/6a316c11-a05e-460c-b969-32ff0ad848e6) <br/> |Quando il telefono da tavolo viene configurato la registrazione di Skype per Business Online con le credenziali di Office 365, è possibile chiamare le persone all'interno dell'organizzazione utilizzando il telefono da tavolo con l'audio per la chiamata intermediazione al telefono.  <br/>  |
+|Musica di attesa  <br/> |Riproduce musica quando si effettua una chiamata in attesa, in modo che i chiamanti verificare se si è ancora presente e la chiamata non ha eliminato accidentalmente.  <br/> |
+|Skype e federati di chiamare il metodo  <br/> |È possibile cercare tutti gli utenti nella directory Skype quindi in modo sicuro connettersi, comunicare e collaborare con loro.  <br/> |
+|[Impostare le opzioni di inoltro di chiamata in Skype per le aziende](https://support.office.com/en-us/article/1ec2e7fb-471c-4c35-bc90-a35991b3f532) <br/> |Invia le chiamate al proprio team sia immediatamente o dopo un periodo di tempo impostato periodo.  <br/> |
+|[Effettuare e ricevere una videochiamata tramite Skype per le aziende](https://support.office.com/en-us/article/abf62493-670f-4b0d-b2cf-fe03b49caf42) <br/> | È possibile visualizzare nome e il flusso video in una piccola finestra mobile, l'altoparlante in modo sempre sei pronto a rispondere alle domande. <br/> |
+|[Skype di controllo per la segreteria telefonica aziendale e opzioni](https://support.office.com/en-us/article/2deea7f8-831f-4e85-a0d4-b34da55945a8) <br/> |Funzionamento della segreteria telefonica sistema telefonico: quando un utente riceve un messaggio vocale, viene recapitato alla cassetta postale come un messaggio di posta elettronica con il messaggio di posta vocale come allegato. È inoltre possibile ascoltare i messaggi su Skype Certificate desktop telefonicamente, tutti i Skype per le applicazioni aziendali o Lync per Mac 2011.  <br/> Segreteria telefonica sistema telefonico include messaggio di saluto personalizzato, l'indicatore di messaggio in attesa e Rispondi con chiamata. Possono disporre di tutti i messaggi vocali depositato nelle cassette postali e resi disponibili tramite Skype per le aziende sul PC, dispositivi mobili e telefono IP.  <br/> |
    
-## Pianificare e configurare il sistema telefonico in Office 365
+## <a name="plan-and-set-up-the-phone-system-in-office-365"></a>Pianificare e configurare il sistema telefonico in Office 365
 <a name="bkmk_setup"> </a>
 
-Impostare sistema telefonico in modo che meglio si adatta organizzazione:
+Configurazione di sistema telefonico in modo che l'organizzazione soddisfi maggiormente:
   
-- È possibile utilizzare il componente aggiuntivo sistema telefonico con linea telefonica esistente dell'azienda o il servizio [Cosa sono i Piani per le chiamate in Office 365?](../what-are-calling-plans-in-office-365/what-are-calling-plans-in-office-365.md) per le chiamate in ingresso e in uscita.
+- È possibile utilizzare il componente aggiuntivo sistema telefonico con linea telefonica esistente dell'azienda, o la [che cosa sono i piani di chiamata in Office 365?](../what-are-calling-plans-in-office-365/what-are-calling-plans-in-office-365.md) servizio per le chiamate in ingresso e in uscita.
     
-- Puoi ottenere nuovi numeri di telefono da Office 365 o trasferire numeri di telefono esistenti a Skype for Business. 
+- È possibile ottenere nuovi numeri di telefono da Office 365 o trasferire i numeri di telefono esistente per Skype per le aziende. 
     
-Vedere gli articoli seguenti per pianificare e configurare il sistema telefonico nell'organizzazione:
+In questi articoli per pianificare e configurare il sistema telefonico in ambito aziendale, vedere:
   
-- [Configurare la chiamata plan di messaggistica unificata](../what-are-calling-plans-in-office-365/set-up-calling-plans.md) : questo articolo contiene istruzioni dettagliate per impostare se stessi con i numeri di telefono o di trasferire i numeri di telefono esistente Skype for Business.
+- [Impostare le tariffe di chiamate](../what-are-calling-plans-in-office-365/set-up-calling-plans.md): in questo articolo è fornite istruzioni dettagliate per impostare i numeri di telefono o per trasferire i numeri di telefono esistente per Skype per le aziende.
     
-- [Pianificare il sistema telefonico in Office 365 (PBX Cloud) soluzione](https://go.microsoft.com/fwlink/?LinkId=708645): articolo di TechNet questo deve essere disposto tutte le opzioni di distribuzione. Offre informazioni sulla pianificazione di una soluzione completamente basata solo su cloud.
+- [Pianificare sistema telefonico in uso nella soluzione di Office 365 (PBX Cloud)](https://go.microsoft.com/fwlink/?LinkId=708645): in questo sito TechNet l'articolo dispone tutte le opzioni di distribuzione. Include inoltre informazioni sulla pianificazione di una soluzione completamente cloud-only. 
     
-- [Skype for Business e Teams Microsoft componente aggiuntivo per le licenze](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md) : informazioni su quali licenze è necessario acquistare per ottenere il sistema telefonico in Office 365.
+- [Skype per aziendali e team Microsoft che la licenza componente aggiuntivo](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md): apprendere le licenze che è necessario acquistare per ottenere il sistema telefonico in Office 365.
     
-- [Impostare la segreteria telefonica del Sistema telefonico - Guida per gli amministratori](phone-system-voicemail/set-up-phone-system-voicemailadmin-help.md)
+- [Impostare la segreteria telefonica del Sistema telefonico - Guida per gli amministratori](phone-system-voicemail/set-up-phone-system-voicemail.md)
     
-- [Alla scoperta di Skype for Business](https://support.office.com/article/8a3491a3-c095-4718-80cf-cbbe4afe4eba): Aiuta i dipendenti della tua azienda a imparare a usare le funzioni di Skype for Business. 
+- [Scopri Skype for Business](https://support.office.com/en-us/article/8a3491a3-c095-4718-80cf-cbbe4afe4eba): Guida persone appartenenti alla società di informazioni su come utilizzare Skype per le funzionalità di Business. 
     
-## Disponibilità
+## <a name="availability"></a>Disponibilità
 <a name="bkmk_setup"> </a>
 
 ||||
 |:-----|:-----|:-----|
-|**Client a piene funzionalità** <br/> |**Client per mobile** <br/> |**Telefoni IP** <br/> |
-| Funziona con tutti i client supportati per PC e Mac in Office 365. <br/> [Installare Skype for Business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb) <br/> [Configurazione di Lync per Mac 2011 per Office 365](https://support.office.com/article/ae3ebd0e-a1a7-48cf-9350-36b144dc5f88) <br/> | Abbiamo client Skype for Business per: <br/> [Installare Skype for Business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb#OS_Type=iOS) <br/> [Installare Skype for Business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb#OS_Type=Android) <br/> [Installare Skype for Business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb#OS_Type=Windows_Phone) <br/> |Scegli tra i tanti telefoni da tavolo compatibili con Skype for Business. Consulta [Ottenere telefoni per Skype for Business online](getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online.md).  <br/> |
+|**I rich client** <br/> |**Client mobili** <br/> |**Telefoni IP** <br/> |
+| Funziona con tutti i client PC e Mac supportati in Office 365. <br/> [Installare Skype for Business](https://support.office.com/en-us/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb) <br/> [Configurazione di Lync per Mac 2011 per Office 365](https://support.office.com/en-us/article/ae3ebd0e-a1a7-48cf-9350-36b144dc5f88) <br/> | Skype è disponibile per i client aziendali per: <br/> [iOS](https://support.office.com/en-us/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb#os_type=ios) <br/> [Android](https://support.office.com/en-us/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb#os_type=android) <br/> [Windows Phone](https://support.office.com/en-us/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb#os_type=windows_phone) <br/> |Selezionare un numero elevato di telefoni da scrivania compatibili con Skype per le aziende. Vedere [Getting telefoni Skype Business online](getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online.md). <br/> |
    
-## Lasciare un commento
-<a name="bkmk_comment"> </a>
+## <a name="related-topics"></a>Argomenti correlati
+[Ottenere numeri di telefono del servizio per Skype per le aziende e Teams Microsoft](getting-service-phone-numbers.md)
 
-Se questo articolo è risultato utile, invia un commento dalla sezione in fondo a questo articolo. Altrimenti, facci sapere cosa non ti è chiaro o cosa non hai trovato. Useremo i tuoi commenti per aggiornare i nostri articoli. 
-  
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
-
-#### 
-
-[Termini e condizioni per le chiamate al numero di emergenza](../what-are-calling-plans-in-office-365/emergency-calling-terms-and-conditions.md)
-  
-[Periodo di chiamata in uscita di conferenze audio](../accessibility-and-regulatory/audio-conferencing-complimentary-dial-out-period.md)
-
+[Disponibilità paese e alle aree per le conferenze Audio e la chiamata dei piani](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
