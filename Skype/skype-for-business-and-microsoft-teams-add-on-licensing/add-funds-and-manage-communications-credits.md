@@ -1,88 +1,89 @@
 ---
-title: "Aggiungere e i fondi e gestire le comunicazioni crediti"
+title: Aggiungere i fondi e gestire Communications titoli di coda
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/27/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-f1_keywords:
+ms.assetid: 691c9301-1f66-41fe-9b2c-ca24ae987463
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords:
 - O365E_SFBVoiceCredit
-- O365E_SFBVoiceCreditAether 
+- O365E_SFBVoiceCreditAether
 - O365M_SFBVoiceCredit
 - O365M_SFBVoiceCreditAether
-O365P_SFBVoiceCreditAether
-O365E_SFBVoiceCreditAether 
+- O365P_SFBVoiceCreditAether
+- O365E_SFBVoiceCreditAether
 - O365P_SFBVoiceCredit
-- O365P_SFBVoiceCreditAether 
-
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection:
-- Adm_Skype4B_Online
-- Adm_UI_Elements
+- O365P_SFBVoiceCreditAether
 ms.custom:
-- Adm_O365_FullSet
+- Licensing
 - Strat_SB_PSTN
-ms.assetid: 691c9301-1f66-41fe-9b2c-ca24ae987463
-description: "Learn how to pay for Communication credits (PSTN Consumption) for Skype for Business services and see plans to keep your users with continous phone system access. "
+description: 'Informazioni su come il pagamento per titoli di coda di comunicazione (consumo PSTN) Skype per servizi e vedere piani per mantenere gli utenti con l''accesso al sistema telefonico continua. '
+ms.openlocfilehash: 32eca129b1168ebd34ffd1c38cb9789b264c9470
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="add-funds-and-manage-communications-credits"></a>Aggiungere i fondi e gestire Communications titoli di coda
 
-# Aggiungere e i fondi e gestire le comunicazioni crediti
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Riconoscimenti Communications sono un modo pratico per pagare sistema telefonico e la chiamata dei piani di Office 365. Consente di verificare che gli utenti possano mai vengono individuate senza possibilità di:
   
-Comunicazioni crediti sono molto comoda per pagare sistema telefonico e si chiama plan di messaggistica unificata in Office 365. Consente di verificare che tutti gli utenti non vengono rilevate non è in grado di:
-  
-- Connettersi a riunioni di conferenze Audio usando i numeri di telefono di accesso esterno verde.
+- Accedere alle riunioni di audioconferenze con accesso esterno numeri verdi.
     
-- Effettuare chiamate in uscita da una riunione di conferenze Audio per aggiungere un altro dall'utente in un punto qualsiasi nel mondo.
+- Effettuare chiamate in uscita da una riunione di conferenze Audio per aggiungere un utente da un punto qualsiasi del mondo.
     
-- Chiamate in uscita da una riunione di conferenze Audio al proprio cellulare con Skype per Business o Microsoft Teams app installate.
+- Effettuare chiamate in uscita da una riunione di conferenze Audio per il telefono cellulare con Skype per Business o Microsoft Teams app installata.
     
-- Comporre un numero di telefono internazionale quando si dispone di un **Piano di chiamate nazionali**.
+- Comporre un numero di telefono internazionale quando si dispone di una **Chiamata a pianificare le**.
     
-- Effettuare chiamate in uscita e pagare al minuto dopo aver provato l'unità di minuto mensile.
+- Effettuare chiamate in uscita e verrà al minuto dopo aver esaurito l'allocazione minuta mensile per la risoluzione.
     
 > [!NOTE]
-> Se si sta per sapere quanto spazio è e le tariffe, vedere la tabella tariffe nella pagina [Chiamata plan di messaggistica unificata](https://go.microsoft.com/fwlink/p/?LinkId=799523) .
+> Se si desidera sapere per quanto è e le tariffe, vedere la tabella tariffe nella pagina [Dei piani di chiamata](https://go.microsoft.com/fwlink/p/?LinkId=799523) .
   
-L'amministratore, è possibile aggiungere manualmente e i fondi o è possibile configurare automaticamente ricarica, quali è **consigliabile**.
+Come amministratore, è possibile aggiungere manualmente i fondi oppure è possibile impostare auto-ricarica, che è **consigliabile**.
   
 L'autoricarica consente di aggiungere automaticamente fondi al saldo quando scende al di sotto dell'importo configurato. È consigliabile utilizzare l'autoricarica per non dover ogni volta ricordarsi di aggiungere fondi manualmente. Quando il tuo saldo raggiunge l'importo configurato, i fondi vengono aggiunti automaticamente. Se non scegli di utilizzare l'autoricarica, corri il rischio che il tuo saldo scenda al di sotto dello zero. Se il saldo scende al di sotto dello zero, tu e i tuoi utenti non sarete in grado di effettuare chiamate ai numeri verdi o chiamate internazionali.
   
-È possibile aggiornare le opzioni di pagamento in qualsiasi momento. Nella pagina **abbonamenti** selezionare **Comunicazioni crediti** e apportare le modifiche.
+È possibile aggiornare le opzioni di pagamento in qualsiasi momento. Nella pagina **degli abbonamenti** di selezionare **Crediti Communications**e apportare le modifiche.
   
-Fondi verranno applicati solo ai crediti di comunicazioni a tassi pubblicati Microsoft quando si utilizzano i servizi. Qualsiasi fondi non utilizzati entro dodici (12) mesi dalla data di acquisto scadranno e incamerate.
+Fondi verranno applicati solo alle comunicazioni crediti rate pubblicato di Microsoft quando vengono utilizzati i servizi. Qualsiasi fondi inutilizzati entro dodici (12) mesi dalla data di acquisto scadranno ed essere tal.
   
 > [!TIP]
-> Ti invieremo notifiche tramite posta elettronica quando i fondi vengono aggiunti tramite l'autoricarica e quando un'operazione di autoricarica non riesce, ad esempio quando una carta di credito scade e quando il saldo scende al di sotto dello zero. 
+> Verrà inviato che via e-mail notifiche quando vengono aggiunti i fondi tramite auto-Ricarica Ricarica automatico ha esito negativo (ad esempio scadenza carta di credito) e quando il bilanciamento inferiore a zero. 
   
-Per ulteriori informazioni, vedere [Cosa sono i Crediti comunicazioni?](what-are-communications-credits.md)
+Per ulteriori informazioni, vedere [che cosa sono i titoli di coda Communications?](what-are-communications-credits.md)
   
-## Informazioni su piani e prezzi.
+## <a name="want-to-know-about-plans-and-pricing"></a>Informazioni su piani e prezzi.
 
-È possibile visualizzare i piani e prezzi, visitare uno dei seguenti collegamenti:
+Per consultare piani e prezzi, consultare uno di questi link:
   
 - [Piani per chiamate](https://go.microsoft.com/fwlink/?LinkId=799761 )
     
-- [Piani di conferenze audio](https://go.microsoft.com/fwlink/?LinkId=799762 )
+- [Piani di audioconferenze con accesso esterno](https://go.microsoft.com/fwlink/?LinkId=799762 )
     
 - [Piani di sistema telefonico](https://go.microsoft.com/fwlink/?LinkId=799763)
     
 È possibile consultare le informazioni anche [accedendo all'interfaccia di amministrazione di Office 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e andando su **Fatturazione** > **Sottoscrizioni** > **Aggiungi sottoscrizioni**.
   
-Per consultare una tabella con la licenza o le licenze necessarie per ciascuna funzione, vedere [Skype for Business e Teams Microsoft componente aggiuntivo per le licenze](skype-for-business-and-microsoft-teams-add-on-licensing.md).
+Per una tabella con la licenza o licenze che necessarie per ogni caratteristica, vedere [Skype di licenza di componente aggiuntivo Business e i team di Microsoft](skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
-## 
+## <a name="related-topics"></a>Argomenti correlati
 
-[Periodo di chiamata in uscita di conferenze audio](../accessibility-and-regulatory/audio-conferencing-complimentary-dial-out-period.md)
-  
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-
+- [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
+    
+- [Configurare le audioconferenze per Skype for Business e Microsoft Teams](../audio-conferencing-in-office-365/set-up-audio-conferencing.md)
+    
+- [Impostare la segreteria telefonica del Sistema telefonico - Guida per gli amministratori](../what-is-phone-system-in-office-365/phone-system-voicemail/set-up-phone-system-voicemail.md)
+    
+- [Impostare le tariffe di chiamate](../what-are-calling-plans-in-office-365/set-up-calling-plans.md) e [La chiamata a piani per Office 365](calling-plans-for-office-365.md)
+        
+- [Configurare il connettore Cloud](https://technet.microsoft.com/en-us/library/mt605228.aspx) e [scaricare il connettore Cloud](https://aka.ms/CloudConnectorInstaller)

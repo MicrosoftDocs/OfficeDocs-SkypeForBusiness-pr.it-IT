@@ -1,29 +1,41 @@
 ---
-title: "Video Comunicazioni esterne di Skype for Business online"
+title: Skype video per le comunicazioni esterne Business Online
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 5/13/2016
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom: Adm_O365_FullSet
 ms.assetid: a4fa9dea-1de3-461c-a32a-f1bf54596c16
-description: "Learn to set up Skype for Business Online external communications for your users can communicate with external Skype contacts. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Setup
+description: 'Informazioni su come configurare Skype per Business Online comunicazioni esterne per gli utenti possano comunicare con contatti esterni Skype. '
+ms.openlocfilehash: b23872f10d826486395a00b57ab5c1a0c74dedd9
+ms.sourcegitcommit: 61127a5723fe58545b0b19edb2e2d4260965eb4a
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/19/2017
 ---
+# <a name="video-skype-for-business-online-external-communications"></a>Video: Skype per le comunicazioni esterne Business Online
 
-# Video: Comunicazioni esterne di Skype for Business online
+Impostare Skype per comunicazioni esterne Business Online in modo che gli utenti possono comunicare con Skype esterno per i contatti aziendali, Lync e Skype.
+
+ **Gruppo di destinatari:** Amministratori di Office 365
 
 ****
+> [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=492278f0-6912-47ba-a1d1-00040061cf44&AutoPlayVideo=false]
 
-![Il browser in uso non supporta le funzionalità video. Installare Microsoft Silverlight, Adobe Flash Player o Internet Explorer 9.](../images/MSN_Video_Widget.gif)
+***
   
- **Destinatari:** Amministratori di Office 365
-  
-Configurare le comunicazioni esterne di Skype for Business online per consentire agli utenti di comunicare con contatti esterni di Skype for Business, Lync e Skype.
-  
-Vedi anche: [Configurare le comunicazioni esterne di Skype for Business online](https://support.microsoft.com/it-it/help/10041/set-up-lync-online-external-communications) (procedura dettagliata)
-  
+## <a name="related-topics"></a>Argomenti correlati
+[Impostare Skype per le comunicazioni esterne Business Online](https://support.microsoft.com/en-us/help/10041/set-up-lync-online-external-communications) (procedura guidata dettagliata)
 
+[Consentire agli utenti di contattare utenti Skype for Business esterni](allow-users-to-contact-external-skype-for-business-users.md)
+
+[Consentire Skype per gli utenti aziendali di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)

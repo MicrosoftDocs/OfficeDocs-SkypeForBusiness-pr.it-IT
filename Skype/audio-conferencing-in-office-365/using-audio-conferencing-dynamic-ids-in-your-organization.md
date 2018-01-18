@@ -1,66 +1,65 @@
 ---
-title: "Utilizzo degli ID dinamici di conferenze Audio all'interno dell'organizzazione"
+title: Utilizzo degli ID dinamici audioconferenze all'interno dell'organizzazione
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/17/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom:
-- Adm_O365_FullSet
-- Strat_SB_PSTN
 ms.assetid: e55e4bff-fb67-4389-8695-f03024baa9b6
-description: "Il servizio di conferenze Audio aggiornamento per fornire ogni Skype per Business e Microsoft Teams riunione con diversi conferenza ID. ID conferenza dinamici sono un miglioramento significativo su statica conferenza ID, in quanto forniscono:"
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom:
+- Strat_SB_PSTN
+- Audio Conferencing
+description: 'Il servizio di conferenza Audio viene viene aggiornato per fornire ogni Skype per Business e Microsoft Teams riunione con gli ID conferenza diversi. ID conferenza dinamici sono un miglioramento significativo tramite conferenza statico ID, in quanto forniscono:'
+ms.openlocfilehash: 0838014e8a88d5e27b6bd84838ea105b9f75025a
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="using-audio-conferencing-dynamic-ids-in-your-organization"></a>Utilizzo degli ID dinamici audioconferenze all'interno dell'organizzazione
 
-# Utilizzo degli ID dinamici di conferenze Audio all'interno dell'organizzazione
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Il servizio di conferenza Audio viene viene aggiornato per fornire ogni Skype per Business e Microsoft Teams riunione con gli ID conferenza diversi. ID conferenza dinamici sono un miglioramento significativo tramite conferenza statico ID, in quanto forniscono:
   
-Il servizio di conferenze Audio aggiornamento per fornire ogni Skype per Business e Microsoft Teams riunione con diversi conferenza ID. ID conferenza dinamici sono un miglioramento significativo su statica conferenza ID, in quanto forniscono:
-  
-- **Protezione avanzata** Alla conferenza gli ID univoci per ogni Skype for Business o Teams Microsoft per la riunione e vengono generati quando viene programmato in base alla riunione.
+- **Protezione avanzata** La conferenza ID sono univoci per ogni Skype per riunione Business o Microsoft Teams e vengono generati quando viene programmato in base alla riunione.
     
 - **Una migliore esperienza per le riunioni vicine l'una all'altra** Alle riunioni di un singolo organizzatore sono trasmesse informazioni specifiche sul numero da chiamare che impediscono ai partecipanti telefonici di una riunione di essere confusi con i partecipanti di un'altra quando sono pianificate una vicino all'altra.
     
 - **Una transizione fluida** Quando la tua organizzazione è abilitata agli ID conferenza dinamici, tutte le riunioni che sono già state pianificate nella tua organizzazione con ID conferenza statici continueranno ad essere attive.
     
 > [!TIP]
-> ID dinamico sono disponibili solo per gli utenti abilitati per ** Conferenze Audio** e impostate Microsoft come provider di conferenze audio. È possibile[Assegnare Microsoft come provider di conferenze audio](assign-microsoft-as-the-audio-conferencing-provider.md) per gli utenti.
+> ID dinamici sono disponibili solo per gli utenti abilitati per * * Audio Conferencing * * in modo che Microsoft impostato come i provider di servizi di conferenza audio. È possibile [Assegnare Microsoft come provider di servizi di conferenza audio](assign-microsoft-as-the-audio-conferencing-provider.md) per gli utenti.
   
-## Le modifiche che verranno visualizzato agli utenti dell'organizzazione?
+## <a name="what-changes-will-the-users-in-my-organization-see"></a>Quali modifiche verranno visualizzato agli utenti nell'organizzazione?
 
-Dopo l'attivazione delle ID conferenza dinamici per l'organizzazione, qualsiasi nuova Skype for Business o Teams Microsoft riunione che è programmata per gli utenti dell'organizzazione abilitati per conferenze Audio avrà conferenza ID sono diverse dal ID conferenza statico che avevano prima. Organizzatori che hanno statico ID conferenza prima necessario ricordare partecipare alle riunioni che a questo punto è necessario usare un nuovo ID conferenza nella convocazione della riunione prima di essere ammesse.
+Dopo l'ID conferenza dinamici sono stati abilitati per l'organizzazione, qualsiasi nuova Skype per Business o Microsoft Teams riunioni che è pianificato per gli utenti nell'organizzazione abilitati per conferenze Audio avrà gli ID che sarà diversa dalla conferenza la ID conferenza statica aveva prima. Gli organizzatori con statica ID conferenza prima necessario ricordare gli utenti di partecipare alle riunioni che ora devono utilizzare un nuovo ID conferenza nell'invito della riunione prima di consentire loro di partecipare.
   
 > [!NOTE]
-> Riunioni pianificate da un utente con conferenza statico ID prima dell'organizzazione è stata attivata per conferenza dinamica che ID continueranno ad avere ID conferenza statico in modo che continuino a pianificare riunioni senza alcun effetto. 
+> Riunioni pianificate da un utente con gli ID conferenza statico prima che l'organizzazione è stato abilitato per conferenza dinamico che ID continuerà a disporre gli ID conferenza statico, in modo che continuino a pianificare riunioni senza alcun impatto. 
   
-In questi esempi viene nuova esperienza utente per due Skype per le riunioni aziendali che sono state classificate dall'utente stesso ma entrambe ora avrà due ID conferenza diversi:
+Negli esempi seguenti la nuova esperienza per due Skype per le riunioni aziendali che sono stati organizzate dall'utente stesso, ma entrambi ora avranno due ID conferenza diversi: 
   
-La **riunione n. 1** è stata pianificata dalle 09.00 alle 10.00 e ha 93907123 come proprio ID conferenza:
+ La **riunione n. 1** è stata pianificata dalle 09.00 alle 10.00 e ha 93907123 come proprio ID conferenza:
   
 ![First Dynamic Conference ID.](../images/997b2473-7645-46df-9774-95eb070c2239.png)
   
-La **riunione n. 2** è stata pianificata dallo stesso utente dalle 10.00 alle 11.00 e ha 16353789 come proprio ID conferenza:
+ La **riunione n. 2** è stata pianificata dallo stesso utente dalle 10.00 alle 11.00 e ha 16353789 come proprio ID conferenza:
   
 ![Second Dynamic Conference IDs](../images/e1eecc76-812b-426c-90e8-80e9f6f4ad31.png)
   
-## Argomenti correlati
+## <a name="related-topics"></a>Argomenti correlati
 
 - [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
     
-- [Configurare le audioconferenze per Skype for Business e Microsoft Teams](set-up-audio-conferencing-for-skype-for-business-and-microsoft-teams.md)
+- I servizi di conferenza telefonica con accesso esterno, anche noti con il nome di Servizi di conferenza PSTN, non sono disponibili per tutte le organizzazioni Office 365.
     
-- [Skype for Business e Teams Microsoft componente aggiuntivo per le licenze](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
+- Per ulteriori informazioni, consulta [Servizi di conferenza telefonica con accesso esterno in Office 365](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
     
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
 

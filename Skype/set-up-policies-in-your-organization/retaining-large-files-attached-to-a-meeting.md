@@ -1,31 +1,44 @@
 ---
-title: "Retaining large files attached to a Skype for Business meeting"
+title: Conservazione dei file di grandi dimensioni collegati a un Skype per le riunioni aziendali
 ms.author: tonysmit
 author: tonysmit
-ms.date: 11/7/2017
-ms.audience: ITPro
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 12203a1a-4a9f-4838-88c5-3740ea16ed8d
-description: "You can attach files to a Skype for Business meeting, which participants can then open and download. Files attached to Skype for Business meetings are retained in the mailboxes of any participant whose mailbox is placed on Litigation Hold, has an Office 365 retention policy applied, or is placed on a hold associated with an eDiscovery case in the Centro sicurezza e conformità di Office 365. This content is saved to participants' Recoverable Items folders in their mailboxes."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Setup
+description: "È possibile allegare file a un Skype per le riunioni aziendali, quali i partecipanti possono quindi aperta e download. File allegati a Skype per le riunioni aziendali vengono mantenuti nelle cassette postali di qualsiasi partecipante la cui cassetta postale viene messa in attesa di conservazione per controversia, è applicato un criterio di conservazione Office 365 o viene messa in attesa associata a un caso eDiscovery in Office 365 Security &amp; Centro conformità. Tale contenuto viene salvato nelle cassette postali di cartelle degli elementi recuperabili dei partecipanti."
+ms.openlocfilehash: bf6a3d0df568a043bc569d78ca0942682e936158
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="retaining-large-files-attached-to-a-skype-for-business-meeting"></a>Conservazione dei file di grandi dimensioni collegati a un Skype per le riunioni aziendali
 
-# Retaining large files attached to a Skype for Business meeting
-
-You can attach files to a Skype for Business meeting, which participants can then open and download. Files attached to Skype for Business meetings are retained in the mailboxes of any participant whose mailbox is placed on Litigation Hold, has an Office 365 retention policy applied, or is placed on a hold associated with an eDiscovery case in the Centro sicurezza e conformità di Office 365. This content is saved to participants' **Recoverable Items** folders in their mailboxes.
+È possibile allegare file a un Skype per le riunioni aziendali, quali i partecipanti possono quindi aperta e download. File allegati a Skype per le riunioni aziendali vengono mantenuti nelle cassette postali di qualsiasi partecipante la cui cassetta postale viene messa in attesa di conservazione per controversia, è applicato un criterio di conservazione Office 365 o viene messa in attesa associata a un caso eDiscovery in Office 365 Security &amp; Centro conformità. Tale contenuto viene salvato nelle cassette postali di cartelle **Degli elementi recuperabili** dei partecipanti.
   
-Files that are retained in mailboxes on hold are indexed and can therefore be searched when running a Content Search in the Centro sicurezza e conformità when searching a participant's mailbox. However, attached files that are larger than 39 MB are split into two or more smaller files and saved as compressed (.zip) files. The  *content*  of these smaller files is not indexed for search, and might not be returned in a Content Search. However, the *metadata*  of these files (such as the file name and author) is indexed for search, and might be returned in a Content Search.
+I file che vengono mantenuti nelle cassette postali in attesa sono indicizzati e pertanto possono essere ricercati quando si esegue una ricerca di contenuto per la protezione &amp; centro conformità durante la ricerca delle cassette postali del partecipante. Tuttavia, file allegati che superano MB 39 sono divisa in due o più file di dimensioni ridotte e salvati come file compresso (zip). Il *contenuto* di questi file di dimensioni ridotte non è indicizzato per la ricerca e potrebbe non essere restituito in una ricerca di contenuto. Tuttavia, i *metadati* di questi file (ad esempio il nome di file e l'autore) sono indicizzato per la ricerca e potrebbero essere restituito in una ricerca di contenuto.
   
 > [!NOTE]
-> If the mailbox is full or the tenant admin has configured MaxSendSize to be smaller than 39 MB, uploaded file data will not be retained at all. The default MaxSendSize is 150 MB, but tenant admins can configure MaxSendSize to be as small as 1 MB. 
+> Se la cassetta postale è piena o amministratore tenant è configurato per essere minore del valore MB 39 MaxSendSize, caricamento file di dati non verranno mantenuti affatto. Il valore predefinito MaxSendSize è 150 MB, ma gli amministratori tenant possono configurare MaxSendSize sia di circa 1 MB. 
   
-Mailboxes that are not on hold will not have any meeting data saved. For example, in a three-person meeting in which the mailboxes of two participants are marked for retention, the meeting data is saved to the mailboxes of those two participants, but not to the mailbox of the third participant, whose mailbox is not on hold.
+Cassette postali che non sono in attesa non avrà eventuali dati delle riunioni salvati. Ad esempio, in una riunione di tre persone nelle cassette postali tra due partecipanti contrassegnate per la conservazione, vengono salvati i dati di riunione per le cassette postali tra i due partecipanti, ma non per la cassetta postale del terzo partecipante, la cui cassetta postale non è in attesa.
   
-## Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
+[Creare criteri di accesso esterno personalizzati](create-custom-external-access-policies.md)
 
-[Run a Content Search in the Office 365 Security &amp; Compliance Center](https://support.office.com/article/61852fd9-fe8a-4880-a339-cb19ed3bff4a .aspx)
-  
-[Elementi non indicizzati in ricerca contenuto in Office 365](https://support.office.com/article/d1691de4-ca0d-446f-a0d0-373a4fc8487b)
-  
+[Trasferimenti di file bloccati punto-punto](block-point-to-point-file-transfers.md)
 
+[Impostare i criteri client per l'organizzazione](set-up-client-policies-for-your-organization.md)
+
+[Impostare i criteri relativi alle conferenze nell'organizzazione](set-up-conferencing-policies-for-your-organization.md)
+  

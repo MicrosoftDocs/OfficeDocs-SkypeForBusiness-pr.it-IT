@@ -1,26 +1,27 @@
 ---
-title: "Utilizzo di qualità chiamata nell'organizzazione"
+title: "Utilizzo di qualità chiamata all'interno dell'organizzazione"
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
-ms.date: 11/14/2017
-ms.audience: ITPro
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 57c0568a-78b0-4167-b1d1-af782f70f24b
-description: ""
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Setup
+description: "Configurare e utilizzare chiamate Analitica per identificare e risolvere i problemi Skype per problemi di qualità chiamata Business e Teams Microsoft."
+ms.openlocfilehash: 195316d18ca18fc841fe6c9ae3c4d03b3eef3629
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="using-call-quality-in-your-organization"></a>Utilizzo di qualità chiamata all'interno dell'organizzazione
 
-# Utilizzo di qualità chiamata nell'organizzazione
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
-  
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
 

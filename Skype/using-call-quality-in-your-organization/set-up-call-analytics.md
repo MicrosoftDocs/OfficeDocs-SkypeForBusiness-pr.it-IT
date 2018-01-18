@@ -1,92 +1,90 @@
 ---
-title: "Configurazione di Skype for Business Call Analytics"
+title: Configurazione di Skype per Business chiamare Analitica
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
-ms.date: 9/25/2017
+ms.date: 12/15/2017
+ms.topic: article
+ms.assetid: 
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
-ms.topic: get-started-article
-ms.prod: office-online-server
+ms.appliesto: Skype for Business, Microsoft Teams
 localization_priority: Normal
-ms.assetid: fbf7247a-84ae-46cc-9204-2c45b1c734cd
-description: "Set up and use Call Analytics to identify and troubleshoot Skype for Business and Microsoft Teams call quality problems."
+ROBOTS: None
+f1keywords: None
+ms.custom: Setup
+description: "Configurare e utilizzare chiamate Analitica per identificare e risolvere i problemi Skype per problemi di qualità chiamata Business e Teams Microsoft."
+ms.openlocfilehash: 287b45cf8363c03bf6b62cd68f8e2be681996101
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="set-up-skype-for-business-call-analytics"></a>Configurazione di Skype per Business chiamare Analitica
 
-# Configurazione di Skype for Business Call Analytics
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Skype per amministrazione Business Online, è possibile utilizzare chiamate Analitica per risolvere i problemi Skype per le aziende e Microsoft Teams problemi di qualità e connessione delle chiamate. Può essere utile per configurare le seguenti funzionalità di chiamata Analitica:
   
-Gli amministratori Skype for Business online è possibile utilizzare chiamare Analitica di problemi Skype for Business e Microsoft Teams chiamata qualità e connessione. Può risultare utile per configurare le funzionalità seguenti in Analitica chiamata:
-  
-- Impostazione di autorizzazioni che permettono ad altro personale, come gli agenti helpdesk, di usare Call Analytics ma impediscono loro di accedere al resto dell'interfaccia di amministrazione di Skype for Business. 
+- Impostare le autorizzazioni che consentono di altri membri del personale, ad esempio gli agenti help desk, utilizzare chiamate Analitica ma impedire loro l'accesso al contenuto del Skype per interfaccia di amministrazione di Business. 
     
-- Aggiunta di informazioni a livello di edificio, sito e tenant a Call Analytics con l'invio di un file di dati .tsv o .csv.
+- Aggiungere edificio, siti e le informazioni di tenant per chiamare Analitica caricando un file di dati tsv o csv.
     
 > [!NOTE]
 > Call Analytics è attualmente in fase di anteprima. Il testo e le immagini qui riportati possono non corrispondere alla tua esperienza di utilizzo. 
   
-## Impostazione delle autorizzazioni di Call Analytics
-<a name="BKMK_SetCAPerms"> </a>
+## <a name="set-call-analytics-permissions"></a>Impostare le autorizzazioni di chiamata Analitica
+<a name="BKMK_SetCAPerms"></a>
 
-Come amministratore, avrai accesso completo a tutte le funzioni di Call Analytics. Inoltre, potrai usare un modello di helpdesk in Call Analytics che include gruppi di autorizzazioni di Livello 1 e Livello 2. Gli utenti con autorizzazioni di Livello 1 possono accedere solo a una porzione limitata di Call Analytics. Gli utenti con autorizzazioni di Livello 2 possono accedere a tutte le funzionalità di Call Analytics. Nessuno dei due livelli di autorizzazione consente l'accesso al resto dell'interfaccia di amministrazione di Skype for Business. Potrai dare accesso ai due livelli aggiungendo un gruppo che contenga l'utente alla sezione Livello 1 o Livello 2 della pagina Autorizzazioni. Per i dettagli, consulta [Configurazione delle autorizzazioni a più livelli in Call Analytics](fbf7247a-84ae-46cc-9204-2c45b1c734cd.md#BKMK_SetUpTier).
+Come l'amministratore è ottenere accesso completo a tutte le funzionalità di chiamata Analitica. Inoltre, è possibile utilizzare un modello di supporto tecnico di Analitica chiamata che include i gruppi di autorizzazione di livello 1 e 2 a livelli. Gli utenti con autorizzazioni di livello 1 possono accedere solo una vista limitata delle chiamate Analitica. Gli utenti che dispongono delle autorizzazioni di livello 2 possono accedere a tutte le funzionalità di chiamata Analitica. Entrambe livelli di autorizzazione impediscono l'accesso per il resto del Skype per interfaccia di amministrazione di Business. È possibile concedere l'accesso ai livelli mediante l'aggiunta di un gruppo contenente all'utente di livello 1 o la sezione di livello 2 della pagina autorizzazioni. Per ulteriori informazioni, vedere [impostare le autorizzazioni a più livelli nel chiamare Analitica](set-up-call-analytics.md#BKMK_SetUpTier).
   
-Gli agenti di helpdesk di Livello 1 gestiscono i problemi di base sulla qualità delle chiamate. Gli agenti di Livello 1 non esaminano i problemi relativi alle riunioni, ma raccolgono le informazioni correlate e poi inoltrano il problema a un agente di Livello 2. Gli agenti di Livello 2 possono consultare informazioni in registri chiamate dettagliati non accessibili agli agenti di Livello 1. La tabella seguente offre una panoramica delle informazioni disponibili agli agenti che utilizzano Call Analytics.
-  
-|
-|
-|**Attività**|**Informazioni in Call Analytics**|**Cosa vede l'agente di Livello 1**|**Cosa vede l'agente di Livello 2**|
+Problemi di qualità delle chiamate di base di gestire gli agenti di supporto tecnico di livello 1. Gli agenti di livello 1 non analizzare i problemi relativi alle riunioni; hanno raccogliere informazioni correlate e quindi passare a un agente di livello 2. Gli agenti di livello 2 visualizzare le informazioni in registri chiamate dettagliate sono nascosta dagli agenti di livello 1. Nella tabella seguente viene fornita una panoramica delle informazioni disponibili per gli agenti mediante chiamata Analitica.
+
+
+|**Attività**|**Informazioni di chiamata Analitica**|**Ciò che vede l'agente di livello 1**|**Ciò che vede l'agente di livello 2**|
 |:-----|:-----|:-----|:-----|
-|**Chiamate** <br/> |Nome del chiamante  <br/> |Solo il nome dell'utente cercato dall'agente.  <br/> |Nome utente.  <br/> |
-||Nome del destinatario  <br/> |Mostrato come Utente interno o Utente esterno.  <br/> |Nome del destinatario.  <br/> |
-||Numero di telefono del chiamante  <br/> |Numero di telefono completo eccetto le ultime tre cifre, mascherate con asterischi. Per esempio: 15552823***.  <br/> |Numero di telefono completo eccetto le ultime tre cifre, mascherate con asterischi. Per esempio: 15552823***.  <br/> |
-||Numero di telefono del destinatario  <br/> |Numero di telefono completo eccetto le ultime tre cifre, mascherate con asterischi. Per esempio: 15552823***.  <br/> |Numero di telefono completo eccetto le ultime tre cifre, mascherate con asterischi. Per esempio: 15552823***.  <br/> |
-||Scheda **Dettagli chiamata** > **Avanzati** <br/> |Le informazioni non sono mostrate.  <br/> |Vengono mostrati tutti i dettagli, ad esempio nome di dispositivo, indirizzo IP, mappatura della subnet e altro ancora.  <br/> |
-||Scheda **Dettagli chiamata** > **Avanzati** > **Debug** <br/> |Le informazioni non sono mostrate.  <br/> |Vengono mostrati tutti i dettagli, ad esempio suffisso DNS e SSID.  <br/> |
-|**Riunioni** <br/> |Nomi dei partecipanti  <br/> |Solo il nome dell'utente cercato dall'agente. Tutti gli altri partecipanti identificati come Utente interno o Utente esterno.  <br/> |Vengono mostrati tutti i nomi.  <br/> |
-||Numero di partecipanti  <br/> |Numero di partecipanti.  <br/> |Numero di partecipanti.  <br/> |
-||Dettagli della sessione  <br/> |Vengono mostrati i dettagli della sessione, con alcune eccezioni. Viene mostrato solo il nome dell'utente cercato dall'agente. Tutti gli altri partecipanti identificati come Utente interno o Utente esterno. Le ultime tre cifre del numero di telefono sono mascherate con asterischi.  <br/> |Vengono mostrati i dettagli della sessione. Vengono mostrati i nomi degli utenti e i dettagli della sessione. Le ultime tre cifre del numero di telefono sono mascherate con asterischi.  <br/> |
+|**Chiamate** <br/> |Nome del chiamante  <br/> |Solo il nome dell'utente per il quale l'agente di una ricerca.  <br/> |Nome dell'utente.  <br/> |
+||Nome del destinatario  <br/> |Viene illustrato come utente interno o degli utenti esterni.  <br/> |Nome del destinatario.  <br/> |
+||Numero di telefono chiamante  <br/> |Numero intero, ad eccezione delle ultime tre cifre vengono offuscate con simboli asterisco. Ad esempio, 15552823 * * *.  <br/> |Numero intero, ad eccezione delle ultime tre cifre vengono offuscate con simboli asterisco. Ad esempio, 15552823 * * *.  <br/> |
+||Numero di telefono del destinatario  <br/> |Numero intero, ad eccezione delle ultime tre cifre vengono offuscate con simboli asterisco. Ad esempio, 15552823 * * *.  <br/> |Numero intero, ad eccezione delle ultime tre cifre vengono offuscate con simboli asterisco. Ad esempio, 15552823 * * *.  <br/> |
+||**Dettagli chiamata** > scheda**Avanzate** <br/> |Informazioni non visualizzate.  <br/> |Tutti i dettagli indicati, ad esempio i nomi dei dispositivi, indirizzo IP, mapping subnet e altro ancora.  <br/> |
+||**Dettagli chiamata** > **Avanzate** > scheda**Debug** <br/> |Informazioni non visualizzate.  <br/> |Tutti i dettagli indicati, ad esempio il suffisso DNS e SSID.  <br/> |
+|**Riunioni** <br/> |Nomi dei partecipanti  <br/> |Solo il nome dell'utente per il quale l'agente di una ricerca. Gli altri partecipanti identificati come utente interno o degli utenti esterni.  <br/> |Tutti i nomi visualizzati.  <br/> |
+||Numero partecipanti  <br/> |Numero di partecipanti.  <br/> |Numero di partecipanti.  <br/> |
+||Dettagli sessione  <br/> |Dettagli visualizzati con le eccezioni. Viene visualizzato solo il nome dell'utente per il quale l'agente di una ricerca. Gli altri partecipanti identificati come utente interno o degli utenti esterni. Ultimi tre cifre del numero di telefono offuscati con simboli asterisco.  <br/> |Dettagli riportati. I nomi utente e i dettagli di sessione riportati. Ultimi tre cifre del numero di telefono offuscati con simboli asterisco.  <br/> |
    
- **Configurazione delle autorizzazioni a più livelli in Call Analytics**
+ **Impostare le autorizzazioni a più livelli nel chiamare Analitica** 
+ <a name="BKMK_SetUpTier"> </a>
   
-1. Crea gruppi di sicurezza di Office 365 per il Livello 1 e il Livello 2, e aggiungi a ciascun gruppo gli utenti che desideri. Puoi anche riutilizzare gruppi di sicurezza esistenti. Per maggiori informazioni, consulta [Creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/55c96b32-e086-4c9e-948b-a018b44510cb).
+1. Creare gruppi di protezione di Office 365 per livello 1 e 2 a livelli e aggiungere le persone che si desidera che a ogni gruppo. È inoltre possibile riutilizzare i gruppi di protezione esistente. Per ulteriori informazioni, vedere [creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/55c96b32-e086-4c9e-948b-a018b44510cb).
     
-2. Nell'Interfaccia di amministrazione di Office 365, accedi a **Interfacce di amministrazione** > **Skype for Business**.
+2. Nell'interfaccia di amministrazione di Office 365 andare a **Admin Center** > **Skype per le aziende**.
     
     > [!NOTE]
-    > Se questo ti porta alla vecchia interfaccia di amministrazione di Skype for Business, fai clic su **Prova la nuova interfaccia di amministrazione** per accedere alla nuova versione.
+    > Se inserita nella precedente Skype per interfaccia di amministrazione di Business, passare alla nuova versione facendo clic sul pulsante **implementati provare la nuova interfaccia di amministrazione**. 
   
-3. Nella nuova interfaccia di amministrazione di Skype for Business, fai clic su **Autorizzazioni**.
+3. In nuovo Skype per interfaccia di amministrazione di Business, fare clic su **autorizzazioni**.
     
-4. Aggiungi i gruppi di sicurezza di Office 365 alle caselle **Livello 1** e **Livello 2**. Puoi aggiungere più gruppi allo stesso ruolo.
+4. Aggiungere i gruppi di protezione di Office 365 per le caselle di **livello 1** e **2 a livelli** . È possibile aggiungere più gruppi a ogni ruolo.
     
-     ![Screenshot shows the Permissions for Call Analytics page with the options for Tier 1 and Tier 2 permissions.](../images/ed5b6b05-b407-4363-8cf0-a6e79027f64b.png)
+     ![Schermata che mostra la pagina autorizzazioni per chiamare Analitica con le opzioni per le autorizzazioni di livello 1 e 2 a livelli.](../images/ed5b6b05-b407-4363-8cf0-a6e79027f64b.png)
   
- Gli utenti con uno di questi livelli di autorizzazione possono accedere a Call Analytics tramite l'URL dedicato https://adminportal.services.skypeforbusiness.com.
+ Gli utenti con uno di questi livelli di autorizzazione visualizzare chiamare Analitica tramite dedicato URL *https://adminportal.services.skypeforbusiness.com*.
   
-## Invio di un file di dati .tsv o .csv per aggiungere informazioni a livello di edificio, sito e tenant
+## <a name="upload-a-tsv-or-csv-file-to-add-building-site-and-tenant-information"></a>Caricare un file CSV o TSV per aggiungere creazione, del sito e titolari delle informazioni
 <a name="BKMK_UploadFiles"> </a>
 
-Puoi aggiungere informazioni a livello di edificio, sito e tenant a Call Analytics inviando un file .tsv o .csv. Con tutte queste informazioni, Call Analytics può mappare gli indirizzi IP alle posizioni fisiche. Queste informazioni possono essere utili a te o agli agenti helpdesk per individuare tendenze nei problemi di chiamata. Ad esempio: perché tanti utenti nello stesso edificio hanno problemi simili di qualità delle chiamate? 
+È possibile aggiungere edificio, siti e le informazioni di tenant per chiamare Analitica caricando un file CSV o tsv. Con queste informazioni, chiamare Analitica possibile mappare gli indirizzi IP a posizioni fisiche. Si o dell'help desk agenti potrebbero risultare queste informazioni utili per individuare tendenze in problemi di chiamata. Ad esempio perché sono simili a quelle molti utenti nello stesso edificio con chiamata problemi di qualità? 
   
-![Screenshot shows the Sites page with values for Number of sites and Number of subnets, and the Select file button to import site data by uploading a .tsv or a .csv file.](../images/b2f3a5cb-32b5-4f60-a9af-0691aa6ff1e8.png)
+![Schermata che mostra la pagina siti con i valori per numero di siti e il numero di subnet e il pulsante selezionare il file per caricamento un tsv o un file CSV per importare i dati del sito.](../images/b2f3a5cb-32b5-4f60-a9af-0691aa6ff1e8.png)
   
-Se sei un amministratore di Skype for Business, puoi usare un file dati esistente da Call Quality Dashboard di Skype for Business online. Per prima cosa, scarica il file da Call Quality Dashboard, poi invialo a Call Analytics. Per scaricare un file di dati esistente, accedi all' **interfaccia di amministrazione Skype for Business** > **Strumenti** > **Call Quality Dashboard di Skype for Business Online** > **Carica ora**. Nell'elenco **caricamenti**, fai clic su **Scarica** accanto al file che desideri.
+Se si è Skype per amministratore aziendale, è possibile utilizzare un file di dati dal Skype per Business Online i Dashboard qualità delle chiamate. Innanzitutto scaricare il file dal Dashboard di qualità delle chiamate e quindi caricarlo nel chiamare Analitica. Per scaricare un file di dati, passare a **Skype per Business Admin center** > **Strumenti** > **Skype per chiamare Online Business per i Dashboard qualità** > **caricare ora**. Nell'elenco **il caricamento** , fare clic su **Download** accanto al file desiderato.
   
-Se stai creando il file .tsv o .csv da zero, consulta [Formato del file di dati tenant e struttura del file di dati di tipo Building](turning-on-and-using-call-quality-dashboard-for-microsoft-teams-and-skype-for-bu.md#BKMK_TenantDataFile).
+Se si sta creando il file con estensione csv o TSV da zero, vedere [file di dati Tenant formato e la struttura dei file dei dati predefinito](turning-on-and-using-call-quality-dashboard.md#BKMKTenantDataFile).
   
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
+<a name="BKMK_UploadFiles"> </a>
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
+[Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
-#### 
-
-[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate in Skype for Business](use-call-analytics-to-troubleshoot-poor-skype-for-business-call-quality.md)
-  
-[Qual è la differenza tra Call Analytics e Call Quality Dashboard?](what-s-the-difference-between-call-analytics-and-call-quality-dashboard.md)
-
+[Che cos'è la differenza tra Analitica delle chiamate e chiamate Dashboard qualità?](difference-between-call-analytics-and-call-quality-dashboard.md)

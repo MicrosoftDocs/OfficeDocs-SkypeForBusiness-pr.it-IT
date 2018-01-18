@@ -1,24 +1,32 @@
 ---
-title: "Supporto per Skype for Business Online in Outlook sul Web"
+title: Supporto per Skype for Business Online in Outlook sul Web
 ms.author: tonysmit
 author: tonysmit
-ms.date: 11/16/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 305984ec-3da8-4509-bb2b-6643dcf2cb7d
-description: "Outlook sul web (Outlook Web App) in Office 365 offre una base Skype for Business client web dalla barra di spostamento. Il client di base è disponibile per gli utenti Online cui amministratore non sia stato configurato un URL per l'orgoglio per l'organizzazione di Office 365. A condizione che l'account dell'utente è online e non è disponibile un URL per l'orgoglio, vedranno comunque l'esperienza anche se l'organizzazione ha alcuni account utente che sono disponibili nel server locale. Gli utenti che hanno utente account locali (fatto che dispongano di un URL per l'orgoglio o meno) o gestiti da Microsoft vedranno l'esperienza di Lync in Outlook web app."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Setup
+description: "Microsoft Outlook sul web (Outlook Web App) in Office 365 offre una base Skype per client web Business dalla barra di spostamento. Questo client di base è disponibile per gli utenti Online cui amministratore non ha configurato un URL di reindirizzamento a microsito per la propria organizzazione Office 365. A condizione che l'account dell'utente è in linea e non dispone di un URL di reindirizzamento a microsito, cui viene visualizzata l'esperienza anche se l'organizzazione presenta alcuni account utente che sono ospitati in locale. Gli utenti che hanno utente account in locale (che hanno un URL di reindirizzamento a microsito o non) o gestiti da Microsoft vedranno l'esperienza di Lync in Outlook web app."
+ms.openlocfilehash: 8688123f0e19a648dae7706dc346a647ecd99211
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="skype-for-business-online-support-in-outlook-on-the-web"></a>Supporto per Skype for Business Online in Outlook sul Web
 
-# Supporto per Skype for Business Online in Outlook sul Web
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Microsoft Outlook sul web (Outlook Web App) in Office 365 offre una base Skype per client web Business dalla barra di spostamento. Questo client di base è disponibile per gli utenti Online cui amministratore non ha configurato un URL di reindirizzamento a microsito per la propria organizzazione Office 365. A condizione che l'account dell'utente è in linea e non dispone di un URL di reindirizzamento a microsito, cui viene visualizzata l'esperienza anche se l'organizzazione presenta alcuni account utente che sono ospitati in locale. Gli utenti che hanno utente account in locale (che hanno un URL di reindirizzamento a microsito o non) o gestiti da Microsoft vedranno l'esperienza di Lync in Outlook web app.
   
-Outlook sul web (Outlook Web App) in Office 365 offre una base Skype for Business client web dalla barra di spostamento. Il client di base è disponibile per gli utenti Online cui amministratore non sia stato configurato un URL per l'orgoglio per l'organizzazione di Office 365. A condizione che l'account dell'utente è online e non è disponibile un URL per l'orgoglio, vedranno comunque l'esperienza anche se l'organizzazione ha alcuni account utente che sono disponibili nel server locale. Gli utenti che hanno utente account locali (fatto che dispongano di un URL per l'orgoglio o meno) o gestiti da Microsoft vedranno l'esperienza di Lync in Outlook web app.
-  
-Nella tabella seguente vengono riepilogate le diverse impostazioni che possono essere e il client web utilizzato.
+Nella tabella seguente sono riepilogate le installazioni diverse che possono verificarsi e il client web utilizzato.
   
 ||||
 |:-----|:-----|:-----|
@@ -29,13 +37,11 @@ Nella tabella seguente vengono riepilogate le diverse impostazioni che possono e
 |Ibrida ma ospitata online  <br/> |Sì  <br/> |Esperienza Web di Lync  <br/> |
 |Ibrida ma ospitata in locale  <br/> |No  <br/> |Esperienza Web di Lync  <br/> |
 |Ibrida ma ospitata in locale  <br/> |Sì  <br/> |Esperienza Web di Lync  <br/> |
-|Pure in locale  <br/> |No  <br/> |Esperienza Web di Lync  <br/> |
-|Pure in locale  <br/> |Sì  <br/> |Esperienza Web di Lync  <br/> |
+|Solo bianco in % beni  <br/> |No  <br/> |Esperienza Web di Lync  <br/> |
+|Solo bianco in % beni  <br/> |Sì  <br/> |Esperienza Web di Lync  <br/> |
    
-## 
-<a name="MT_Footer"> </a>
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
+## <a name="related-topics"></a>Argomenti correlati
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
+[Consentire Skype per gli utenti aziendali di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)

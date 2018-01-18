@@ -1,62 +1,56 @@
 ---
-title: "Attivare o disattivare le notifiche su cellulare"
-ms.author: TONYSMIT
+title: Attivare o disattivare le notifiche di cellulare
+ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/17/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-f1_keywords:
-- ms.lync.lac.OrgMobileNotification
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom: Adm_O365_FullSet
 ms.assetid: 2de47013-4f09-493c-abc5-372f56ad69e3
-description: "Learn how to turn mobile phone notirications on or off so your users can receive alerts about incoming, voice mail, and missed instant messages. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: ms.lync.lac.OrgMobileNotification
+ms.custom: Setup
+description: Informazioni su come attivare le notifiche di cellulare o disattivare in modo che gli utenti possono ricevere avvisi relativi a segreteria telefonica in arrivo e non effettuate messaggi immediati.
+ms.openlocfilehash: 7345859c265c8f300046a22aaac73e17292d0946
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="turn-on-or-off-mobile-phone-notifications"></a>Attivare o disattivare le notifiche di cellulare
 
-# Attivare o disattivare le notifiche su cellulare
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Come l' **[assegnazione dei ruoli di amministratore in Office 365 per aziende](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** per l'organizzazione, è possibile scegliere se il Skype per gli utenti aziendali di ricevere avvisi relativi a messaggi immediati in arrivo e senza risposta quando sono i telefoni cellulari o Tablet.
   
-Come **[Assegnare ruoli di amministratore in Office 365](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** dell'organizzazione, è possibile scegliere se gli utenti Skype for Business riceveranno avvisi per i messaggi istantanei in arrivo e persi quando sono presenti i propri telefoni cellulari e Tablet.
+Via Android e Windows Phone, Skype per le notifiche di Business visualizzare in tempo reale. Per Windows Phone, iPhone e i dispositivi iPad, tuttavia, notifica push consente di visualizzare gli avvisi ogni volta che si sta utilizzando attivamente non Skype per le aziende su cellulare o tablet.
   
-Nei dispositivi Android e Windows Phone le notifiche di Skype for Business compaiono in tempo reale. Tuttavia, nei dispositivi Windows Phone, iPhone e iPad le notifiche push sono utilizzate per visualizzare gli avvisi quando non si usa attivamente Skype for Business sul telefono o sul tablet.
-  
-## Disattivare le notifiche push per tutti i dispositivi Windows Phone o Apple in un'organizzazione
+## <a name="turn-push-notifications-off-for-all-the-windows-phone-or-apple-devices-in-your-organization"></a>Disattivare le notifiche push per tutti i dispositivi Windows Phone o Apple all'interno dell'organizzazione
 <a name="__top"> </a>
 
 1. Accedere a Office 365.
     
-2. Passare all'interfaccia **di amministrazione di Office 365** > **Skype per le aziende**.
+2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
-3. Passare a **Organizzazione** > **Generale**.
+3. Andare a **organizzazione** > **Generale**. 
     
-4. In **Notifiche sul cellulare** deselezionare la casella di controllo accanto al servizio di notifica che si vuole disattivare e fare clic su **Salva**.
+4. In **notifiche cellulare**, deselezionare la casella accanto al servizio di notifica da disattivare e quindi fare clic su **Salva**.
     
-Tenere presente quanto segue:
+Tenere presente quanto segue: 
   
-- Se disattivi le notifiche push, gli utenti riceveranno comunque tutti gli avvisi al successivo avvio di Skype for Business nel dispositivo mobile.
+- Se si disattivano le notifiche push, gli utenti ricevono ancora tutti gli avvisi quando vengono riprenda Skype per le aziende nel dispositivo mobile.
     
-- Le notifiche push sono attive per impostazione predefinita. Gli utenti possono disattivarle scegliendo l'opzione di Skype for Business appropriata nel dispositivo mobile.
+- Le notifiche push sono attivate per impostazione predefinita. Singoli utenti possono essere disattivati scegliendo Skype appropriato per l'opzione Business nel dispositivo mobile.
     
-- Una volta disattivate le notifiche push, l'utente non può riattivarle.
+- Se si disattivano le notifiche push, gli utenti non possono riattivarli.
     
 > [!IMPORTANT]
-> Microsoft utilizza altre aziende per fornire in tempo reale Skype for Business notifiche mobile per Windows Phone, iPhone e iPad utenti. Vedere l' [informativa sulla Privacy per Microsoft Skype for Business prodotti](https://go.microsoft.com/fwlink/p/?linkid=247732). 
+>  Microsoft utilizza altre società per fornire Skype in tempo reale per le notifiche per dispositivi mobili di Business per Windows Phone, iPhone e iPad utenti. Vedere l' [informativa sulla Privacy per Microsoft Skype per i prodotti di Business](https://go.microsoft.com/fwlink/p/?linkid=247732). 
   
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
-
-#### 
+## <a name="related-topics"></a>Argomenti correlati
 
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 

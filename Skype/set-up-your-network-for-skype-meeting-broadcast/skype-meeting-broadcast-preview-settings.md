@@ -1,29 +1,33 @@
 ---
-title: "Impostazioni di Anteprima Skype Meeting Broadcast"
-ms.author: tonysmit
+title: Impostazioni di Skype riunione trasmissione Preview
+mms.author: tonysmit
 author: tonysmit
-ms.date: 11/16/2017
-ms.audience: End User
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-f1_keywords:
-- ms.lync.lac.BroadcastMeetingsPreview
-ms.prod: office-online-server
+ms.assetid: 651d4773-cbd8-49e9-b55e-7abb8064060
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
 localization_priority: Normal
-ms.assetid: 651d4773-cbd8-49e9-b55e-7abb8064060a
-description: "Skype per Business anteprima programma accesso è anticipata ai nuovi prodotti e funzionalità. Consente all'organizzazione a dare un'occhiata al novità, testare nuove funzionalità nel proprio ambiente e fornire commenti e suggerimenti prima è rilasciare build di prodotto al pubblico. Per maggiori informazioni, vedere Skype per Business preview."
+ROBOTS: NOINDEX, NOFOLLOW
+f1keywords: ms.lync.lac.BroadcastMeetingsPreview
+ms.custom: SMB
+description: "Skype programma preview Analisi Business fornisce anticipati accedere ai nuovi prodotti e alle funzionalità. Consente all'organizzazione di ottenere uno sguardo al nuove caratteristiche, le nuove funzionalità nel tuo ambiente di testing e fornire commenti e suggerimenti prima è rilasciare build di prodotto al pubblico. Per ulteriori informazioni, vedere Skype per l'anteprima di Business."
+ms.openlocfilehash: 73043e342674db1e5a5b5b4acf11927922adef6e
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="skype-meeting-broadcast-preview-settings"></a>Impostazioni di Skype riunione trasmissione Preview
 
-# Impostazioni di Anteprima Skype Meeting Broadcast
+Skype programma preview Analisi Business fornisce anticipati accedere ai nuovi prodotti e alle funzionalità. Consente all'organizzazione di ottenere uno sguardo al nuove caratteristiche, le nuove funzionalità nel tuo ambiente di testing e fornire commenti e suggerimenti prima è rilasciare build di prodotto al pubblico. Per ulteriori informazioni, vedere [Skype per l'anteprima di Business](https://www.skypepreview.com/).
 
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+## <a name="related-topics"></a>Argomenti correlati
+[Introduzione a Windows Powershell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
   
-Skype per Business anteprima programma accesso è anticipata ai nuovi prodotti e funzionalità. Consente all'organizzazione a dare un'occhiata al novità, testare nuove funzionalità nel proprio ambiente e fornire commenti e suggerimenti prima è rilasciare build di prodotto al pubblico. Per maggiori informazioni, vedere [Skype per Business preview](https://www.skypepreview.com/).
-  
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
+[Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
 

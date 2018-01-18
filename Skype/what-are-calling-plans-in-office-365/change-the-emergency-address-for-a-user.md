@@ -1,69 +1,68 @@
 ---
-title: "Modificare l'indirizzo per gli interventi di emergenza per un utente"
+title: Modificare l'indirizzo di emergenza per un utente
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/14/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom:
-- Adm_O365_FullSet
-- Strat_SB_PSTN
 ms.assetid: 5412636c-ad0e-48a5-b199-5925156abee4
-description: "See steps on how to change the emergency address for a user to work with the Public Switched Telephone Network (PSTN) in the US and Europe. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom:
+- Calling Plans
+- Strat_SB_PSTN
+description: 'Vedere passaggi su come modificare l''indirizzo di emergenza per un utente di lavorare con il telefono rete PSTN (Public Switched) Stati Uniti e Europe. '
+ms.openlocfilehash: 7a44e2a7abf50311c6e737185883b832124c7afb
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="change-the-emergency-address-for-a-user"></a>Modificare l'indirizzo di emergenza per un utente
 
-# Modificare l'indirizzo per gli interventi di emergenza per un utente
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Quando imposta la chiamata dei piani di Office 365, è necessario assegnare un indirizzo di emergenza a ogni numero di telefono o un utente. European paesi, l'indirizzo di emergenza è associato il numero di telefono quando si ottiene da Office 365 o quando si trasferiscono su un numero di telefono a Office 365. Negli Stati Uniti, l'indirizzo di emergenza è associato il numero di telefono quando viene assegnato all'utente. L'indirizzo di emergenza può essere modificato se l'utente che è assegnato viene spostato in una nuova posizione. Per ulteriori informazioni sugli indirizzi di emergenza e posizioni, vedere [quali sono posizioni di emergenza, indirizzi e il routing delle chiamate?](what-are-emergency-locations-addresses-and-call-routing.md)
   
-Quando si configurano chiamata plan di messaggistica unificata in Office 365, sarà necessario assegnare un indirizzo di emergenza a ogni utente o il numero di telefono. Paesi europei, l'indirizzo di emergenza è associato il numero di telefono quando si riceve da Office 365 o quando si trasferisce un numero di telefono sopra a Office 365. Negli Stati Uniti, l'indirizzo di emergenza è associato il numero di telefono quando viene assegnata all'utente. L'indirizzo di emergenza può essere modificata se l'utente a che viene assegnato sposta in una nuova posizione. Per ulteriori informazioni sugli indirizzi di emergenza e posizioni, vedere [Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?](what-are-emergency-locations-addresses-and-call-routing.md)
+Per informazioni su come ottenere la chiamata dei piani di Office 365 e il relativo costo, vedere [Skype di licenza di componente aggiuntivo Business e i team di Microsoft](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
-Per informazioni su come ottenere la chiamata plan di messaggistica unificata in Office 365 e quanto costano, vedere [Skype for Business e Teams Microsoft componente aggiuntivo per le licenze](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
-  
-## Modificare l'indirizzo per gli interventi di emergenza per un utente
+## <a name="change-the-emergency-address-for-a-user"></a>Modificare l'indirizzo di emergenza per un utente
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
-3. Nel riquadro di spostamento sinistro, passare alla **voce** > **utenti vocali**.
-    
-    **IMPORTANTE**: per visualizzare l'opzione **Voce** nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Skype for Business, è necessario acquistare almeno una **licenza Enterprise E5**, una licenza per il componente aggiuntivo **Sistema telefonico** o una licenza per il componente aggiuntivo **Audioconferenza**.
-    
-4. Nella pagina **Utenti voce**, individua e seleziona l'utente per il quale desideri modificare l'indirizzo per gli interventi di emergenza.
-    
-5. Nel riquadro Azione, in **Posizione di emergenza**, fai clic su **Cambia**.
-    
-6. Nella pagina **Assegna numero**, fai clic su **Modifica posizione**. 
-    
-7. In **Modifica indirizzo di emergenza a**, immettere il nome della città nella casella e fare clic su **Cerca**.
+3. Nel riquadro di spostamento sinistro, passare a **Voice** > **agli utenti di VoIP**.
     
     > [!IMPORTANT]
-    > È possibile modificare solo un indirizzo di emergenza è già stato convalidato. Per modificare un indirizzo di emergenza che non è stato convalidato, eliminarla e creare un altro indirizzo di emergenza. 
-  
-8. Selezionare un nuovo indirizzo di emergenza dall'elenco e quindi fare clic su **Salva**.
+    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
     
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
+4. Nella pagina **utenti dei servizi vocali** , individuare e selezionare l'utente che si desidera modificare l'indirizzo di emergenza per.
+    
+5. Nel riquadro Azioni, in **Posizione per gli interventi di emergenza**, fai clic su **Modifica**.
+    
+6. Nella pagina **assegnazione numero** , fare clic su **Cambia percorso**. 
+    
+7. **Cambia indirizzo di emergenza per**immettere il nome della città nella casella e fare clic su **Cerca**.
+    
+    > [!IMPORTANT]
+    > È possibile modificare solo un indirizzo di emergenza che è già stato convalidato. Per modificare un indirizzo di emergenza che non è stato convalidato, eliminare e creare un altro indirizzo di emergenza. 
   
-## Vedere anche
-<a name="MT_Footer"> </a>
+8. Selezionare un nuovo indirizzo emergenza dall'elenco e quindi fare clic su **Salva**.
+    
+## <a name="related-topics"></a>Argomenti correlati
+[Aggiungere o rimuovere un indirizzo di emergenza dell'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md)
 
-#### 
+[Aggiungere, modificare o rimuovere un percorso di emergenza dell'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md)
 
-[Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md)
-  
-[Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza](add-change-or-remove-an-emergency-location-for-your-organization.md)
-  
+[Che cos'è la convalida dell'indirizzo?](what-is-address-validation.md)
+
+[Gestire i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
-  
-[Periodo di chiamata in uscita di conferenze audio](../accessibility-and-regulatory/audio-conferencing-complimentary-dial-out-period.md)
 
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)

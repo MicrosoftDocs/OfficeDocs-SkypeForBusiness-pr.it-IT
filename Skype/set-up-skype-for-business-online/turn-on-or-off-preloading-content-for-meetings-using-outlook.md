@@ -1,29 +1,35 @@
 ---
-title: "Attivare o disattivare il precaricamento dei contenuti delle riunioni tramite Outlook"
+title: Attivare o disattivare il precaricamento dei contenuti delle riunioni tramite Outlook
 ms.author: tonysmit
 author: tonysmit
-ms.date: 11/17/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom: Adm_O365_FullSet
 ms.assetid: d217d422-f7e9-433d-ad24-bf41751f65ca
-description: "See how to turn preloaded content on or off for Skype for Business meetings using files or attachments on an Outlook meeting invitation. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Setup
+description: 'See how to turn preloaded content on or off for Skype for Business meetings using files or attachments on an Outlook meeting invitation. '
+ms.openlocfilehash: 7cef226e6b2370aa486476375a5c4747dbe9e5b4
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="turn-on-or-off-allowing-content-to-be-preloaded-for-meetings-using-outlook"></a>Attivare o disattivare il precaricamento dei contenuti delle riunioni tramite Outlook
 
-# Attivare o disattivare il precaricamento dei contenuti delle riunioni tramite Outlook
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
-  
-Gli utenti possono precaricare contenuto, del file o allegati associati a un invito di riunione di Outlook a Skype for Business Online riunione, ma è possibile attivare o disattivare. È attivata per impostazione predefinita per tutte le organizzazioni che usano Skype for Business Online. Vedere come [Precaricare gli allegati per una riunione Skype for Business](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).
+Gli utenti possono precaricare contenuto, i file o gli allegati associati a un invito alla riunione di Outlook per Skype per riunione in linea di Business, ma è possibile attivare o disattivare. È attivata per impostazione predefinita per tutte le organizzazioni che utilizzano Skype Business online. Vedere come [allegato precaricamento per Skype per le riunioni aziendali](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).
   
 > [!NOTE]
-> Attualmente, sono non disponibili cmdlet in Skype for Business Online per l'impostazione o la visualizzazione dei valori in linea per  _MaxContentStorageMB_ e _MaxUploadFileMB_. Sono disponibili solo per le distribuzioni locali. È importante sapere che il contenuto non caricato in una riunione se il contenuto allegato supera  _MaxUploadFileSizeMB_ o se viene raggiunto il limite di _MaxContentStorageMB_.
+> Non sono attualmente presenti alcun cmdlet disponibili in Skype Business online per l'impostazione o visualizzazione di valori in linea per _MaxContentStorageMB_ e _MaxUploadFileMB_. Sono disponibili solo per le distribuzioni locali. È importante tenere presente che il contenuto non verrà caricato in una riunione se il contenuto allegato supera _MaxUploadFileSizeMB_ o se viene raggiunto il limite _MaxContentStorageMB_ .
   
-## Per iniziare
+## <a name="to-get-you-started"></a>Per iniziare
 
 ### 
 
@@ -37,7 +43,7 @@ Gli utenti possono precaricare contenuto, del file o allegati associati a un inv
     
 4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
     
-Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx).
+Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx).
   
 ### 
 
@@ -70,14 +76,14 @@ Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in u
   Import-PSSession $session
   ```
 
-Per altre informazioni sull'avvio di Windows PowerShell, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx) o[Connessione a Skype for Business online con Windows PowerShell](https://technet.microsoft.com/library/dn362795%28v=ocs.15%29.aspx).
+Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
   
-## Attivazione o disattivazione del precaricamento
+## <a name="turning-it-on-or-off"></a>Attivazione o disattivazione del precaricamento
 
-La possibilità di precaricare contenuto associato a un invito alla riunione Outlook a Skype for Business Online riunioni è attivata per impostazione predefinita, ma potrebbe essere necessario impedire agli utenti dell'organizzazione da precaricamento contenuto alle riunioni.
+Possibilità di precaricare contenuto collegato a un invito alla riunione di Outlook per Skype per le riunioni in linea aziendale è attivata per impostazione predefinita, ma potrebbe essere necessario per impedire agli utenti dell'organizzazione di precaricare contenuto le riunioni.
   
 > [!IMPORTANT]
-> Questa impostazione possa solo essere attivata e disattivata per l'intera organizzazione; per un singolo utente, è possibile attivare o disattivare. 
+> Questa impostazione può solo essere attivata o disattivato per l'intera organizzazione; è possibile disabilitare viene attivato o disattivato per un singolo utente. 
   
  **Per disattivarla, aprire Windows PowerShell e procedere come segue:**
   
@@ -91,7 +97,7 @@ Grant-CsGraphPolicy -PolicyName GraphDisabled
 Grant-CsGraphPolicy -PolicyName GraphEnabled 
 ```
 
-## Per saperne di più su Windows PowerShell
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
@@ -105,12 +111,9 @@ Grant-CsGraphPolicy -PolicyName GraphEnabled
     
   - [Usare Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
     
-  - [Usare Windows PowerShell per svolgere comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-
+[Consentire Skype per gli utenti aziendali di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)

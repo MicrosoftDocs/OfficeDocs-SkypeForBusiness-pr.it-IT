@@ -1,38 +1,38 @@
 ---
-title: "Questa funzionalità di Skype for Business online non è abilitata"
-ms.author: TONYSMIT
+title: "Non è abilitata questa Skype per funzionalità di Business in linea"
+ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/21/2017
-ms.audience: Admin
-ms.topic: troubleshooting
-f1_keywords:
-- ms.lync.lac.FeatureNotEnabled
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom: Adm_O365_FullSet
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: e95a7d09-0c45-4b95-956e-f099b7b0e659
-description: "Find possible causes and action suggestions when you get a Skype for Buisness Online feature isn't enabled error. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
+f1keywords: ms.lync.lac.FeatureNotEnabled
+ms.custom: Setup
+description: "Individuare le possibili cause e suggerimenti azione quando si ricevono un Skype per funzionalità di Business Online non è errori abilitato. "
+ms.openlocfilehash: 293ef22e18ea8abe1ec316580023d486696d20f7
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="this-skype-for-business-online-feature-isnt-enabled"></a>Non è abilitata questa Skype per funzionalità di Business in linea
 
-# Questa funzionalità di Skype for Business online non è abilitata
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+C' probabilmente l'utente non viene concesso in licenza per questa funzionalità.
   
-L'utente non dispone della licenza per questa caratteristica.
-  
-|**Causa possibile**|**Azione consigliata**|
+|**Possibili cause**|**Azione suggerita**|
 |:-----|:-----|
-|Si sono disponibili le licenze, ma non è stata attivata la caratteristica per questo utente.  <br/> |Passare all'interfaccia **di amministrazione di Office 365** > **utenti attivi** in licenza questo utente. <br/> |
-|L'utente si trova in un percorso in cui questa caratteristica non è disponibile.  <br/> |Se possibile, passare **all'interfaccia di amministrazione di Office 365** > **utenti attivi** e assegnare l'utente a una posizione in cui la caratteristica è disponibile. <br/> |
-|La caratteristica non è stata attivata per l'organizzazione.  <br/> |Accedi all' **interfaccia di amministrazione di Office 365** > **Skype for Business** e attiva la caratteristica per tutta l'organizzazione. <br/> |
+|Si dispongono di licenze disponibili, ma è stato attivato la caratteristica per l'utente.  <br/> |Vai al **Centro di amministrazione di Office 365** > **utenti attivi** per assegnare una licenza a questo utente. <br/> |
+|L'utente è in una posizione in cui questa funzionalità non è disponibile.  <br/> |Se possibile, passare **all'interfaccia di amministrazione di Office 365** > **utenti attivi** e assegnare l'utente a una posizione in cui è disponibile la caratteristica. <br/> |
+|Non è stata attivata la caratteristica per l'organizzazione.  <br/> |Accedere **all'interfaccia di amministrazione di Office 365** > **Skype per le aziende** e attivare la caratteristica per l'intera organizzazione. <br/> |
    
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-
+[Consentire Skype per gli utenti aziendali di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)

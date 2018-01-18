@@ -1,59 +1,68 @@
 ---
-title: "Cosa sono i Piani per le chiamate in Office 365?"
+title: Che cosa sono i piani di chiamata in Office 365?
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/22/2017
-ms.audience: Admin
-ms.topic: overview
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection:
-- Adm_Skype4B_Online
-- Adm_Skype4B_Online_Top
-ms.custom:
-- Adm_O365_FullSet
-- DianeF_Adm_Simplified
-- LIL_Placement
-- Strat_SB_PSTN
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: 3dc773b9-95e0-4448-b2f1-887c54022429
-
-description: "Learn what Office 365 Callings Plans (PSTN calling) are, what regions it's available in, and where to go for step by step instructions on how to set it up. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom:
+- Calling Plans
+- Strat_SB_PSTN
+- LIL_Placement
+description: "Informazioni su quali Office 365 Callings dei piani (chiamata PSTN) sono, quali aree è disponibile in e a chi rivolgersi per istruzioni dettagliate su come configurarla. "
+ms.openlocfilehash: cfc7f25a5887717a1ebb28fe690e3a5b8651d73d
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="what-are-calling-plans-in-office-365"></a>Che cosa sono i piani di chiamata in Office 365?
 
-# Cosa sono i Piani per le chiamate in Office 365?
+Piani di chiamata sono telefono un componente aggiuntivo dei servizi, se combinato con sistema telefonico in Office 365, può diventare il sistema telefonico per l'intera organizzazione. La chiamata a pianificare fornisce le persone nell'azienda con un numero di telefono principale e consente di effettuare e ricevere chiamate telefoniche di fuori dell'organizzazione. Esistono due tipi di piani di chiamata: **La chiamata a pianificare interno** e un **nazionali e internazionali la chiamata a pianificare**. Per ulteriori informazioni, vedere [La chiamata dei piani di Office 365](../skype-for-business-and-microsoft-teams-add-on-licensing/calling-plans-for-office-365.md).
+  
+Gli utenti che sono assegnati i numeri di telefono è possono effettuare chiamate vocali da tutti i Skype per i dispositivi aziendali, inclusi [telefoni Getting Skype Business online](../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online.md), PC e dispositivi mobili. È possibile controllare le chiamate a telefoni da scrivania utilizzando funzionalità quali attiva/disattiva, attesa/riprendere, il trasferimento di chiamata e inoltro di chiamata.
+  
+## <a name="start-here"></a>Iniziare da qui
 
-I Piani per le chiamate sono un servizio telefonico aggiuntivo che, unito al Sistema telefonico di Office 365, può diventare il sistema telefonico dell'intera organizzazione. Un Piano per chiamate offre alle persone che lavorano in azienda un numero di telefono principale e consente loro di effettuare e ricevere chiamate telefoniche dall'esterno dell'organizzazione. Ci sono due tipi di Piani per chiamate: il **Piano per chiamate nazionali** e il **Piano per chiamate internazionali**. Per saperne di più, consulta [Piani di chiamata per Office 365](../skype-for-business-and-microsoft-teams-add-on-licensing/calling-plans-for-office-365.md).
+Prima a tale scopo, eseguire uno sguardo a questi argomenti relativi alle domande seguenti:
   
-Gli utenti a cui sono assegnati numeri di telefono possono effettuare chiamate vocali su tutti i dispositivi Skype for Business, compresi i [Ottenere telefoni per Skype for Business online](../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online.md), i PC e i dispositivi mobili. Gli utenti possono controllare le proprie chiamate attraverso i telefoni da scrivania con funzioni come attivazione o disattivazione audio, chiamate in attesa, trasferimento chiamate e inoltro chiamate.
-  
-## Inizia qui
-
-Prima di procedere alla configurazione, chiarisci eventuali dubbi consultando questi argomenti:
-  
-- Per vedere se i Piani per chiamate sono disponibili nel tuo Paese/area geografica e sapere quanti minuti avrai a disposizione, seleziona il [Paesi e aree disponibilità per conferenze Audio e si chiama plan di messaggistica unificata](../countries-and-region-availability-for-audio-conferencing-and-calling-plans/countries-and-region-availability-for-audio-conferencing-and-calling-plans.md) nel menu a discesa.
+- Per verificare se il paese/area geografica con la chiamata dei piani disponibili e il numero di minuti che verranno visualizzati seleziona l' [area disponibilità per le conferenze Audio e la chiamata a piani e paesi](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) discesa verso il basso.
     
-- Se pensi che potresti superare i minuti disponibili, [Configurare i Crediti comunicazioni per la propria organizzazione](../skype-for-business-and-microsoft-teams-add-on-licensing/set-up-communications-credits-for-your-organization.md).
+- Se si ritiene che esaminerà il numero di minuti, [impostare i titoli di coda di comunicazione per l'organizzazione](../skype-for-business-and-microsoft-teams-add-on-licensing/set-up-communications-credits-for-your-organization.md).
     
-- Puoi trovare informazioni sui prezzi [qui](https://go.microsoft.com/fwlink/?linkid=799761).
+- È possibile trovare informazioni sui prezzi [di seguito](https://go.microsoft.com/fwlink/?linkid=799761).
     
-## Configurazione
+## <a name="setting-it-up"></a>Impostazione di
 
-Configurare i Piani per chiamate è facile. È possibile cercare, acquisire e assegnare nuovi numeri di telefono agli utenti. Inoltre, è possibile trasferire i numeri esistenti a Office 365.
+Impostazione di piani di chiamata è semplice. È possibile cercare, acquisire e assegnare nuovi numeri di telefono per gli utenti. È inoltre possibile trasferire i numeri esistenti a Office 365.
   
- **Per le istruzioni dettagliate, consulta [Configurare la chiamata plan di messaggistica unificata](set-up-calling-plans.md).**
+ **Per le istruzioni dettagliate, vedere [impostare le tariffe di chiamate](set-up-calling-plans.md).**
   
-Per saperne di più su Sistema telefonico, Piani per chiamate e audioconferenze, guarda questo video su YouTube: [Sistema telefonico di Office 365 e riunioni PSTN in Skype for Business ](https://www.youtube.com/watch?v=5Cxawu9mIag&amp;list=PLXtHYVsvn_b8dbRbnL19GUPcBH1UQ7c4x&amp;index=28).
-  
-||
-|:-----|
-|![Icona breve di LinkedIn Learning.](../images/7e5cb7c8-dc66-4c9a-a16d-a30f10a970bd.png) **Nuovi utenti di Office 365?**         Vedere i corsi video gratuiti per **amministratori di Office 365 e professionisti IT**, offerti da LinkedIn Learning. |
-   
-## Vedere anche
+Per ulteriori informazioni su sistema telefonico, la chiamata a piani e audioconferenze con accesso esterno, vedere questo video di YouTube: [sistema telefonico in Office 365 e riunioni in Skype per le aziende](https://www.youtube.com/watch?v=5Cxawu9mIag&amp;list=PLXtHYVsvn_b8dbRbnL19GUPcBH1UQ7c4x&amp;index=28).
 
-#### 
+> [!NOTE]
+> Se si desidera ottenere altri numeri di telefono rispetto a quella, [contattare il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
-[Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
-  
-[Skype for Business e Teams Microsoft componente aggiuntivo per le licenze](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
 
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+
+## <a name="related-topics"></a>Argomenti correlati
+Per ulteriori informazioni, consulta [Servizi di conferenza telefonica con accesso esterno in Office 365](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
+
+[Trasferimento di domande comuni numeri di telefono](transferring-phone-numbers-common-questions.md)
+
+[Diversi tipi di numeri di telefono utilizzati per la chiamata dei piani](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+
+[Gestire i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+[condizioni di chiamata di emergenza](emergency-calling-terms-and-conditions.md)
+
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)

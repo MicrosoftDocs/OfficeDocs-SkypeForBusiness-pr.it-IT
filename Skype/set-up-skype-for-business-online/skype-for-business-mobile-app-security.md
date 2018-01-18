@@ -1,38 +1,43 @@
 ---
-title: "Skype per la protezione Business per dispositivi mobili"
-ms.author: kenwith
-author: kenwith
-ms.date: 3/21/2017
-ms.audience: ITPro
-ms.topic: concetpual
-ms.prod: office-online-server
-localization_priority: Normal
+title: Skype per la protezione di applicazioni per dispositivi mobili aziendali
+ms.author: tonysmit
+author: tonysmit
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: d2be8c74-3ba2-4b2d-9807-634904e1f0e8
-description: ""
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Setup
+description: 'Informazioni su come impostare la protezione di applicazioni per dispositivi mobili per gli utenti. '
+ms.openlocfilehash: bc80434cb29f6d2133ce99e9a583cb388fc7b1b3
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="skype-for-business-mobile-app-security"></a>Skype per la protezione di applicazioni per dispositivi mobili aziendali
 
-# Skype per la protezione Business per dispositivi mobili
+## <a name="skype-for-business-client-security"></a>Skype per la sicurezza dei Client di Business
 
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
-  
-## Sicurezza del client Skype for Business
-
-Questo articolo riguarda le informazioni di crittografia dei dati nelle app per dispositivi mobili di Skype for Business.
+In questo articolo vengono illustrate informazioni sulla crittografia dei dati in Skype per le applicazioni di Business Mobile.
   
 |||||
 |:-----|:-----|:-----|:-----|
-||**Nome utente/password** <br/> |**Dati app (conversazioni, elenco contatti, riunioni)** <br/> |**Log diagnostici** <br/> |
-|**Android** <br/> |Archiviamo informazioni relative alle credenziali negli account Android. Inoltre, crittografiamo le credenziali prima di salvarle negli account. Usiamo l'algoritmo " **AES/CBC/PKCS5Padding** " per la crittografia. <br/> |L'archiviazione avviene in un database SQL crittografato utilizzando una libreria chiamata [sqlcipher](https://www.zetetic.net/sqlcipher/design/). Usiamo il loro algoritmo predefinito di AES a 256 bit in modalità CBC. I dati a riposo sono sempre crittografati nel file di database e sono in chiaro soltanto in transito all'interno della memoria volatile e nei call stack della app. Crittografiamo anche i file della segreteria telefonica utilizzando lo stesso metodo della crittografia di nome utente e password (che non vengono memorizzati nel DB). I messaggi vocali vengono temporaneamente non crittografati su disco per consentire la riproduzione.  <br/> |Queste informazioni non sono crittografate.  <br/> |
-|**iOS** <br/> |NON crittografiamo nome utente/password nella keychain. La keychain, tuttavia, è crittografata per conto suo.  <br/> |Stiamo già utilizzando il flag di protezione dati [NSFileProtectionCompleteUntilFirstUserAuthentication](https://developer.apple.com/reference/foundation/fileprotectiontype/1616633-completeuntilfirstuserauthentica) su tutti i file nello spazio di archiviazione della app. Ciò significa che nello spazio di archiviazione della app i file sono crittografati finché l'utente non sblocca il dispositivo per la prima volta dopo il riavvio del dispositivo. <br/> |Queste informazioni non sono crittografate.  <br/> |
-|**Windows Phone** <br/> |Windows Phone usa la DPAPI (Data Protection API - interfaccia di programmazione applicazioni per la protezione dati) in Windows per proteggere le password. Credo che il sistema di crittografia utilizzato sia AES. Windows non ci dà la possibilità di configurare la dimensione della chiave (o schema), quindi dobbiamo attenerci alle impostazioni della DPAPI. Utilizzerà il TPM del dispositivo per proteggere chiavi specifiche per l'utente e il dispositivo. Le chiavi DPAPI non sono specifiche per l'applicazione.  <br/> |I dati dell'app WP sono protetti con [DPAP](https://msdn.microsoft.com/en-us/library/windows/apps/hh487164%28v=vs.105%29.aspx)I, come le credenziali. A seconda del livello di dettagli che vogliamo, alcune delle informazioni di indice per i dati app sono protetti da crittografia AES (non DPAPI) per evitare il salting, in modo che possiamo effettuare ricerche senza decrittografare, e quella chiave è a sua volta protetta con DPAPI. I dati memorizzati nella cache possono essere letti da qualsiasi processo proveniente dallo stesso telefono, purché possa raggiungere la nostra cartella dei dati. La crittografia di Windows non protegge dalla violazione sandbox, solo dai tentativi di accesso esterni.  <br/> |Queste informazioni non sono crittografate.  <br/> |
+||**Nome utente/Password** <br/> |**App Data (conversazioni,<br/> elenco, le riunioni contatti)** <br/> |**Registri diagnostici** <br/> |
+|**Android** <br/> |Informazioni sulle credenziali memorizzate in account Android. È anche possibile crittografare le credenziali prima del salvataggio in account. Viene utilizzato " **AES/CBC/PKCS5Padding** " algoritmo di crittografia. <br/> |Memorizzati in un database SQL crittografato mediante una libreria denominata [sqlcipher](https://www.zetetic.net/sqlcipher/design/). Viene utilizzato l'algoritmo predefinito di AES a 256 bit in modalità CBC. I dati statici sempre vengono crittografati nei file di database e solo non crittografati in transito all'interno dell'app volatili memoria e chiamata stack. È inoltre crittografare i file di segreteria telefonica utilizzando lo stesso metodo come nome dell'utente e la crittografia delle password (non vengono archiviati nel database). Messaggi vocali vengono temporaneamente non crittografate su disco per consentire la riproduzione.  <br/> |Queste informazioni non crittografate.  <br/> |
+|**iOS** <br/> |NON è crittografare il nome utente e la password in keychain. Keychain viene crittografato, tuttavia, in modo autonomo.  <br/> |Flag di protezione dati [NSFileProtectionCompleteUntilFirstUserAuthentication](https://developer.apple.com/reference/foundation/fileprotectiontype/1616633-completeuntilfirstuserauthentica) utilizziamo già su tutti i file di archiviazione app. Ciò significa che i file nell'archivio app potrebbero essere crittografati fino a quando non utente consente di sbloccare il dispositivo per la prima volta dopo il riavvio del dispositivo. <br/> |Queste informazioni non crittografate.  <br/> |
+|**Windows Phone** <br/> |Windows Phone utilizza DPAPI (Data Protection API) di Windows per proteggere le password. È possibile provare a utilizzare lo schema di crittografia è AES. Windows non invio di commenti un'opzione per configurare la chiave dimensioni (o combinazione), in modo da essere ciò che offre DPAPI. Utilizza il dispositivo GPC per proteggere le chiavi quali sono specifiche per l'utente e il dispositivo. Si noti che le chiavi DPAPI non sono specifiche per l'applicazione.  <br/> |WP App Data è protetta con [DPAP](https://msdn.microsoft.com/en-us/library/windows/apps/hh487164%28v=vs.105%29.aspx)è possibile, ad esempio le credenziali. A seconda della quantità dettagli vogliamo, alcune delle informazioni sugli indici per i dati di App viene protetta tramite la crittografia AES (non DPAPI) per evitare la salagione, in modo che è possibile cercare senza decrittografare e tale chiave, a sua volta è protetta con DPAPI. Leggere i dati memorizzati nella cache da qualsiasi processo dal telefono stesso, presupponendo che sia possibile raggiungere la cartella di dati. Crittografia di Windows non protegge da violazione sandbox, tenta solo l'accesso esterno.  <br/> |Queste informazioni non crittografate.  <br/> |
    
-Nota: fare riferimento a [questa documentazione pubblica](https://docs.microsoft.com/it-it/InTune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) per l'obbligo di utilizzo del pin del dispositivo disponibile su ciascuna delle piattaforme mobili di cui sopra
+**Nota:** Fare riferimento a [questa documentazione pubblica](https://docs.microsoft.com/en-us/InTune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) per l'applicazione pin dispositivi disponibile in ogni le piattaforme mobili
   
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-
+[Consentire Skype per gli utenti aziendali di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)

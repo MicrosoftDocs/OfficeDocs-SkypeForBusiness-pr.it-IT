@@ -1,42 +1,42 @@
 ---
-title: "Cosa devo indicare nell'indirizzo del servizio?"
+title: "Che cos'è consigliabile inserire per l'indirizzo del servizio?"
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/17/2017
-ms.audience: Admin
-ms.topic: get-started-article
-f1_keywords:
-- ms.lync.lac.PortOrderAccountInfoServiceAddress
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom: Adm_O365_FullSet
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: b7bcf334-1dc6-4fd7-8145-f89ce695fca0
-description: "Learn what your service address is, how it differes from your billing address, and where you can find it. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
+f1keywords: ms.lync.lac.PortOrderAccountInfoServiceAddress
+ms.custom: Calling Plans
+description: "Informazioni che cos'è l'indirizzo del servizio, le differenze con l'indirizzo di fatturazione e su cui è possibile trovare. "
+ms.openlocfilehash: 9a10b82f1fe41806baca1dccd76fcc47664b6a2d
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="what-should-i-put-in-for-the-service-address"></a>Che cos'è consigliabile inserire per l'indirizzo del servizio?
 
-# Cosa devo indicare nell'indirizzo del servizio?
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+L'indirizzo del servizio è diverso dall'indirizzo di fatturazione o di emergenza che è registrati con il provider di servizi di telefono o un gestore di telefonia. Se non si conosce ciò, è possibile contattare il provider di servizi o gestore di telefonia per trovare l'indirizzo del servizio elencato per l'account.
   
-L'indirizzo del servizio è la differenza tra l'indirizzo di fatturazione o di emergenza registrati con il provider di servizi di telefono o carrier. Se non si conosce questa operazione, è possibile contattare il provider di servizi o vettore per individuare l'indirizzo del servizio elencato nel proprio account.
-  
- **Per istruzioni dettagliate complete, vedere [Trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md).**
-  
-## 
-<a name="MT_Footer"> </a>
+ **Per istruzioni dettagliate complete, vedere [trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md).**
 
 > [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
+> Se si desidera ottenere altri numeri di telefono rispetto a quella, [contattare il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
-#### 
+  
+## <a name="related-topics"></a>Argomenti correlati
+[Trasferimento di domande comuni numeri di telefono](transferring-phone-numbers-common-questions.md)
+
+[Diversi tipi di numeri di telefono utilizzati per la chiamata dei piani](different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
-  
-[Periodo di chiamata in uscita di conferenze audio](../accessibility-and-regulatory/audio-conferencing-complimentary-dial-out-period.md)
 
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)

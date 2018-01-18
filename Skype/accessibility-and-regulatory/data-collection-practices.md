@@ -1,125 +1,116 @@
 ---
-title: "Skype for Business e Microsoft Teams procedure di raccolta dati"
+title: Procedure di raccolta dati
 ms.author: tonysmit
 author: tonysmit
-ms.date: 5/31/2017
-ms.audience: Admin
-ms.topic: reference
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom: Adm_O365_FullSet
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: c17e8ea6-b83b-4345-9401-47a6c8b13aad
-description: "Microsoft collects census, usage, and error data to understand how Skype for Business is being used and where users encounter problems. The data is used to plan product improvements."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Legal
+description: Microsoft raccoglie dati censimento, dati di utilizzo e di errore per comprendere l'utilizzo Skype per le aziende e dove gli utenti riscontrano problemi. I dati vengono utilizzati per pianificare miglioramenti del prodotto.
+ms.openlocfilehash: 61f3e627883151eaf194b8ac4f4b4023e8624e48
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="skype-for-business-and-microsoft-teams-data-collection-practices"></a>Skype per procedure di raccolta dati Business e Teams Microsoft
 
-# Skype for Business e Microsoft Teams procedure di raccolta dati
+Skype per Business Server 2015, Skype Business online, e Skype per le applicazioni aziendali e Teams Microsoft raccolga dati per consentire a Microsoft informazioni su come vengono utilizzati questi prodotti e i tipi di errori, ad esempio errori di accesso, si sono verificati. Queste informazioni consentono di acquisire familiarità con modelli di utilizzo, pianificare nuove funzionalità e risolvere i problemi e correggere i problemi.
+  
+Mentre alcuni dati di utilizzo viene raccolti automaticamente, altri dati possono essere raccolti solo quando l'amministratore e/o l'utente sceglie che consentono la. La raccolta dei dati può essere suddiviso in tre categorie:
+  
+- Dati
+    
+- Dati di utilizzo
+    
+- Dati della segnalazione errori
+    
+## <a name="census-data"></a>Dati
 
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
-  
-client Skype for Business Server 2015, Skype for Business online e Skype for Business raccogliere dati per consentire a Microsoft informazioni su come vengono utilizzati questi prodotti e si sono verificati i tipi di errori, ad esempio problemi di accesso. Queste informazioni permettono di ottenere informazioni sui modelli di utilizzo, pianificare nuove caratteristiche e identificare e risolvere problemi.
-  
-Sebbene alcuni dati di utilizzo vengano raccolti automaticamente, altri possono essere raccolti solo quando l'amministratore e/o l'utente sceglie di consentirlo. La raccolta dati rientra in queste tre categorie: 
-  
-- Dati demografici
-    
-- Dati sull'utilizzo
-    
-- Dati di segnalazione degli errori
-    
-## Dati demografici
+Dati viene acquisiti unicamente per fornire, supporto e migliorare Skype per le aziende. Team di Microsoft e Skype for Business in linea. Sono incluse informazioni ambientali quali versioni di dispositivi e del sistema operativo e le impostazioni internazionali e della lingua. Include inoltre contatori per i tentativi di accesso e gli errori. Di seguito sono riportati alcuni esempi specifici dei dati raccolti:
 
-Dati viene acquisiti esclusivamente per fornire, supporto e migliorare Skype for Business e Skype for Business online. Include informazioni ambientale, ad esempio le versioni di dispositivo e il sistema operativo e opzioni internazionali e della lingua. Sono inoltre disponibili contatori per tentativi di accesso e gli errori. Ecco alcuni esempi specifici dei dati raccolti:
-  
-|
-|
-|****Tipo di dati****|****Esempio****|****Note****|
+|**Tipo di dati**|**Esempio**|**Note**|
 |:-----|:-----|:-----|
-|AppName  <br/> |IPhoneSkype  <br/> ||
+|AppName  <br/> |iPhoneSkype  <br/> ||
 |DeviceModel  <br/> |iPhone  <br/> ||
-|OSName  <br/> |IPhoneiOS  <br/> ||
+|OSName  <br/> |iPhoneiOS  <br/> ||
 |OSVersion  <br/> |8.3  <br/> ||
 |UserLanguage  <br/> |EN-US  <br/> ||
-|UserID  <br/> |E296D735-4F36-4E18-7C3B-52E1A02A0164  <br/> |L'hashing dell'ID viene seguito due volte: una volta sul client e di nuovo clic sul servizio di telemetria. L'hashing garantisce che l'ID non venga collegato a un utente specifico.  <br/> |
-|DeviceID  <br/> |5E872200-F546-4CCD-8F23-AF5F507AA2DD  <br/> |L'ID del dispositivo è un GUID che ha generato una volta sul dispositivo e inviato al servizio di telemetria in modo casuale.  <br/> |
+|ID utente  <br/> |E296D735-4F36-4E18-7C3B-52E1A02A0164  <br/> |L'ID di hashing due volte: una volta sul client e di nuovo il servizio di telemetria. L'hashing garantisce che l'ID non è collegato a un utente specifico.  <br/> |
+|DeviceID  <br/> |5E872200-F546-4CCD-8F23-AF5F507AA2DD  <br/> |L'ID del dispositivo è un GUID che ha generato una volta sul dispositivo e inviate al servizio di telemetria in modo casuale.  <br/> |
    
-Dati non contengano informazioni che identificano organizzazione o utenti. [Skype per Business informativa sulla privacy](https://www.microsoft.com/privacystatement/en-us/SkypeforBusiness/Default.aspx) per ulteriori informazioni, vedere.
+Dati non contengono alcuna informazione che identifica la propria organizzazione o gli utenti. [Skype per Business informativa sulla privacy](https://www.microsoft.com/privacystatement/en-us/SkypeforBusiness/Default.aspx) per ulteriori informazioni, vedere.
   
-I dati demografici sono attivati per impostazione predefinita e non possono essere disattivati dagli amministratori o dagli utenti finali.
+Dati sono attivata per impostazione predefinita e non possono essere disattivati da domain admins o gli utenti finali.
   
-## Dati sull'utilizzo
+## <a name="usage-data"></a>Dati di utilizzo
 
-I dati sull'utilizzo comprendono informazioni quali il numero di chiamate effettuate, il numero di messaggi istantanei inviati o ricevuti, il numero di riunioni a cui si partecipa, la frequenza delle funzionalità utilizzate e problemi di stabilità.
+Dati di utilizzo includono informazioni quali numero di chiamate effettuate, numero di messaggi immediati inviati o ricevuti, numero di riunioni che si è unito, frequenza delle caratteristiche utilizzate e problemi di stabilità.
   
-I dati sull'utilizzo potrebbero contenere informazioni che identificano un'organizzazione, ad esempio contoso.com. Di seguito sono illustrati alcuni esempi specifici dei dati sull'utilizzo raccolti.
+Dati di utilizzo possono contenere informazioni che identifica l'organizzazione, ad esempio contoso.com. Di seguito sono riportati alcuni esempi specifici dei dati di utilizzo raccolti:
   
-|
-|
-|****Tipo di dati****|****Esempio****|****Note****|
+|**Tipo di dati**|**Esempio**|**Note**|
 |:-----|:-----|:-----|
-|Messaggi istantanei inviati  <br/> |12  <br/> ||
-|Messaggi istantanei ricevuti  <br/> |5  <br/> ||
-|Partecipazione a una riunione (tentativi)  <br/> |5  <br/> ||
-|Partecipazione a una riunione (esiti positivi)  <br/> |4  <br/> ||
-|Minuti di chiamate/riunioni  <br/> |30 minuti  <br/> ||
-|FederationPartner  <br/> |Microsoft.com  <br/> |Questo è il nome dell'organizzazione registrata in Office 365 e viene trasmesso in testo non crittografato, ovvero non offuscato.  <br/> |
+|Messaggi immediati inviati  <br/> |12  <br/> ||
+|Messaggi immediati ricevuti  <br/> |5  <br/> ||
+|Partecipare a una riunione (tentativi)  <br/> |5  <br/> ||
+|Partecipare a una riunione (esito positivo)  <br/> |4  <br/> ||
+|Minuti chiamata/riunione  <br/> |30 minuti  <br/> ||
+|FederationPartner  <br/> |Microsoft.com  <br/> |Questo è il nome dell'organizzazione registrato in Office 365 e viene trasmessa in testo non crittografato, il che significa che non è offuscato.  <br/> |
    
-I dati sull'utilizzo NON contengono informazioni che identificano un utente.
+Dati di utilizzo viene non contengono alcuna informazione che identifica gli utenti.
   
-Raccolta di dati di utilizzo è attivata per impostazione predefinita ma gli amministratori possono disattivarlo mediante l'impostazione di criteri di gruppo DisableAutomaticSendTracing in Skype for Business Server 2015 in locale. Disattivare questa impostazione viene applicata a tutti gli utenti nell'organizzazione. Per ulteriori informazioni, vedere [configurare client avvio automatico i criteri in Skype for Business Server 2015](https://technet.microsoft.com/EN-US/library/gg425941.aspx) .
+Raccolta dati di utilizzo è attivata per impostazione predefinita ma locale gli amministratori possono disattivarlo utilizzando l'impostazione di criteri di gruppo DisableAutomaticSendTracing su Skype per Business Server 2015. Disattivare questa impostazione riguarda tutti gli utenti nell'organizzazione. Per ulteriori informazioni, vedere [Configure criteri di avvio automatico client in Skype per Business Server 2015](https://technet.microsoft.com/EN-US/library/gg425941.aspx) .
   
-Gli utenti finali non è possibile disattivare raccolta dati di utilizzo.
+Gli utenti finali non possono attivare raccolta dati di utilizzo attivato o disattivato.
   
-Per App riunioni Skype e le pagine web di join pulsante di visualizzazione, il modo per controllare telemetria è tramite questo criterio:
+Per le pagine web di join launcher e Skype riunioni App, la modalità di controllo del telemetria è a questo criterio:
   
-Set CsWebServiceConfiguration - MeetingUxEnableTelemetry $True
+Set-CsWebServiceConfiguration - MeetingUxEnableTelemetry $True
   
-Questo criterio predefinita è false, in modo insieme di telemetria è disattivata per impostazione predefinita. Questa impostazione per pool e i controlli di tutti gli utenti che metta App riunioni Skype a una riunione ospitata nel server.
+Questo criterio viene impostato automaticamente su false, in modo che insieme telemetria è disattivata per impostazione predefinita. Questa impostazione è per ogni pool e controlla tutti gli utenti che si connettono a Skype riunioni App a una riunione ospitata nel server.
   
-## Dati di segnalazione degli errori
+## <a name="error-reporting-data"></a>Dati della segnalazione errori
 
-I dati di segnalazione degli errori possono includere informazioni sulle prestazioni e sull'affidabilità, sulla configurazione dei dispositivi, sulla qualità della connessione di rete, sui codici di errore, sui log degli errori e sulle eccezioni. Di seguito sono illustrati alcuni esempi specifici dei dati di segnalazione degli errori raccolti.
-  
-|
-|
-|****Tipo di dati****|****Esempio****||
+Dati dei report di errore possono includere informazioni sulle prestazioni e affidabilità, configurazione del dispositivo, qualità della connessione di rete, codici di errore, i log degli errori ed eccezioni. Di seguito sono riportati alcuni esempi specifici di dati raccolti della segnalazione errori:
+
+|**Tipo di dati**|**Esempio**|**Note**|
 |:-----|:-----|:-----|
-|Direzione del messaggio  <br/> |In arrivo  <br/> ||
+|Direzione messaggio  <br/> |In ingresso  <br/> ||
 |Stato della conversazione  <br/> |Inattivo  <br/> ||
-|ID del thread di conversazione  <br/> |AdDO8hsJqilU93hQHC3OZaPR2saEA==  <br/> ||
-|UserID  <br/> ||L'ID viene inviato in formato di testo non crittografato e sottoposto ad hashing da parte del servizio di telemetria prima dell'archiviazione  <br/> |
+|ID del thread di conversazione  <br/> |AdDO8hsJqilU93hQHC3OZaPR2saEA = =  <br/> ||
+|ID utente  <br/> |amosmarble <br/> |L'ID viene inviata in testo non crittografato, prima di archiviarli hash per il servizio di telemetria  <br/> |
    
-Dati dei report di errore possono contenere anche informazioni personali, ad esempio indirizzo IP dell'utente e sessione avvio Protocol Uniform Resource Identifier (URI SIP). Vedere [Skype per Business informativa sulla privacy](https://www.microsoft.com/privacystatement/en-us/SkypeforBusiness/Default.aspx) per una spiegazione dettagliata delle informazioni raccolte.
+Dati dei report di errore possono contenere anche informazioni personali, ad esempio l'indirizzo IP e Session Initiation Protocol Uniform Resource Identifier (URI SIP) dell'utente. Vedere [Skype per Business informativa sulla privacy](https://www.microsoft.com/privacystatement/en-us/SkypeforBusiness/Default.aspx) per una descrizione dettagliata delle quali raccolti.
   
-La segnalazione degli errori richiede due elementi: 
+Segnalazione errori richiede due operazioni:
   
-- L'impostazione di criteri di gruppo DisableAutomaticSendTracing impostare False sul server o nell'interfaccia di amministrazione tenant (è stato predefinito). Per ulteriori informazioni, vedere [configurare client avvio automatico i criteri in Skype for Business Server 2015](https://technet.microsoft.com/EN-US/library/gg425941.aspx) .
+- L'impostazione di criteri di gruppo DisableAutomaticSendTracing essere impostata su False, nel server o nell'interfaccia di amministrazione tenant (è lo stato predefinito). Per ulteriori informazioni, vedere [Configure criteri di avvio automatico client in Skype per Business Server 2015](https://technet.microsoft.com/EN-US/library/gg425941.aspx) .
     
-- Gli utenti finali singolarmente acconsentire esplicitamente dalla scheda Generale (fare clic sull'icona degli ingranaggi e la finestra di dialogo Opzioni verrà visualizzato con la visualizzazione della scheda Generale) nel client Skype for Business.
+- Gli utenti finali singolarmente consentire (fare clic sull'icona dell'ingranaggio e la finestra di dialogo Opzioni viene aperto con la visualizzazione della scheda Generale) nella scheda Generale nel Skype per client di Business.
     
      ![Icona ingranaggio](../images/70f1b43f-16d6-4172-9139-71d845c4ed5c.png)
   
-![Skype for Business data collection checkbox in the Options > General dialog](../images/68bc8f77-deaa-478c-9977-a5259b88df3e.png)
+![Skype per checkbox di raccolta dati Business nelle opzioni > finestra di dialogo generale](../images/68bc8f77-deaa-478c-9977-a5259b88df3e.png)
   
-Per App riunioni Skype, il MeetingUxEnableTelemetry controlla inoltre segnalazione errori, anche se per si blocca in Windows, le impostazioni di Watson controllano caricamento informazioni arresto anomalo. Non esiste nessuna impostazione dell'utente per App riunioni di Skype come viene visualizzato nella finestra di dialogo client desktop.
+Per App riunioni Skype, il MeetingUxEnableTelemetry controlla inoltre segnalazione errori, sebbene per si blocca in Windows, le impostazioni di criteri Watson controllano caricamento info arresto anomalo del sistema. Non esiste alcuna impostazione utente per App riunioni Skype come viene visualizzato nella finestra di dialogo client desktop.
   
-Per ulteriori informazioni, consulta [Impostare le opzioni generali in Skype for Business](https://support.office.com/article/e1a46d3e-dcea-437a-ba7b-6d442a40f439).
+Per ulteriori informazioni, vedere [Generale impostare le opzioni di Skype per le aziende](http://support.office.com/article/e1a46d3e-dcea-437a-ba7b-6d442a40f439) .
   
-È possibile consultare [Configurare la rete per Skype for Business online](https://support.office.com/article/81fa5e16-418d-4698-a5f0-e666211c5c66) per configurare la rete.
+È possibile visualizzare [la configurazione della rete per Skype Business online](http://support.office.com/article/81fa5e16-418d-4698-a5f0-e666211c5c66) per la configurazione della rete.
   
-Se utilizzi Office 365 gestito tramite 21Vianet in Cina, consulta [Set up your network for Lync Online](https://support.office.com/article/d21f89b0-3afc-432e-b735-036b2432fdbf).
+Se si utilizza Office 365 gestito dal 21Vianet in Cina, vedere [configurazione di rete per Skype Business online gestito dal 21Vianet](http://support.office.com/article/d21f89b0-3afc-432e-b735-036b2432fdbf).
   
-## Argomenti correlati
-
+## <a name="related-topics"></a>Argomenti correlati
 [Programma Analisi utilizzo software](https://www.microsoft.com/products/ceip/en-US/default.mspx)
-  
-[URL e intervalli di indirizzi IP per Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
-  
-## 
-<a name="MT_Footer"> </a>
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-
+[Disponibilità paese e alle aree per le conferenze Audio e la chiamata dei piani](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)

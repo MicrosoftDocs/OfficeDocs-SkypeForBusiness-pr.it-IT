@@ -1,25 +1,25 @@
 ---
-title: "Accessibilità e alle normative"
+title: Accesso facilitato e normativi
 ms.author: tonysmit
 author: tonysmit
-ms.date: 11/13/2017
-ms.audience: ITPro
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: bfda8317-12a9-4594-9fb3-c0061a82711e
-description: ""
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Legal
+description: "Si tratta di contenuto che deve essere pubblicato in modo da soddisfare i requisiti per l'accesso facilitato, conformità e normativi per Skype Business online in Francia. "
+ms.openlocfilehash: 11601ff25468f5aed081b422b0b971adcb24c3aa
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
-
-# Accessibilità e alle normative
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
-  
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-
+# <a name="accessibility-and-regulatory"></a>Accesso facilitato e normativi

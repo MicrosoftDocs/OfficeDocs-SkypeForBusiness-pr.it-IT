@@ -1,46 +1,46 @@
 ---
-title: "Cos'è la convalida dell'indirizzo?"
+title: "Che cos'è la convalida dell'indirizzo?"
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/17/2017
-ms.audience: Admin
-ms.topic: get-started-article
-f1_keywords:
-- ms.lync.lac.CivicAddressValidation
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom:
-- Adm_O365_FullSet
-- Strat_SB_PSTN
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: 64353277-9949-4cf2-ac04-6d57cce43619
-description: "Learn what address validation is, why it's important, and how it relates to emergency addresses and services. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto:
+- Skype for Business
+- Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: ms.lync.lac.CivicAddressValidation
+ms.custom:
+- Calling Plans
+- Strat_SB_PSTN
+description: "Informazioni su quali la convalida dell'indirizzo è, perché è importante e la sua relazione con i servizi e gli indirizzi di emergenza. "
+ms.openlocfilehash: 552cafc715a4ec9cce7170a8bee5fd23dc4f6825
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="what-is-address-validation"></a>Che cos'è la convalida dell'indirizzo?
 
-# Cos'è la convalida dell'indirizzo?
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Quando si imposta la chiamata dei piani di Office 365, è necessario assegnare un numero di telefono e l'indirizzo di emergenza per ogni utente.
   
-Quando si configura la chiamata plan di messaggistica unificata in Office 365, sarà necessario assegnare un numero di telefono e indirizzo di emergenza a ogni utente.
-  
-Convalidare un indirizzo strada o civico comporta assicurandosi che sia corretto e anche formattato correttamente. È possibile che un indirizzo di emergenza parzialmente corretto, ad esempio un nome digitato della città, può passare ancora passaggio di convalida. Il processo di convalida utilizza tutte le parti di un determinato indirizzo per determinare se contiene le informazioni necessarie per instradare la chiamata all'interfaccia di servizi di emergenza appropriato. In caso affermativo, verrà restituito come convalidata e possibile assegnare un numero di telefono.
-  
-## 
-<a name="MT_Footer"> </a>
+Convalida un indirizzo civico o civico comporta assicurandosi che sia corretto e anche formattato in modo corretto. È possibile che un indirizzo di emergenza parzialmente corretto, ad esempio il nome della città, errato può passare ancora passaggio di convalida. Il processo di convalida utilizza tutte le parti di un indirizzo specifico per determinare se contiene le informazioni necessarie per instradare la chiamata al centro servizi di emergenza appropriato. In tal caso, verranno restituito come convalidata e possono essere assegnato a un numero di telefono.
 
 > [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
+> Se si desidera ottenere altri numeri di telefono rispetto a quella, [contattare il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
-#### 
+  
+## <a name="related-topics"></a>Argomenti correlati
+[Che cosa sono posizioni di emergenza, indirizzi e il routing delle chiamate?](what-are-emergency-locations-addresses-and-call-routing.md)
 
-[Configurare la chiamata plan di messaggistica unificata](set-up-calling-plans.md)
-  
-[Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
-  
-[Periodo di chiamata in uscita di conferenze audio](../accessibility-and-regulatory/audio-conferencing-complimentary-dial-out-period.md)
+[Gestire i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+[condizioni di chiamata di emergenza](emergency-calling-terms-and-conditions.md)
+
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 

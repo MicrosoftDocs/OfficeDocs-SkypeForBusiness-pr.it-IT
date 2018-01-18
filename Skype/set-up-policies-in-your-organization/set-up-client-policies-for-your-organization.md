@@ -1,31 +1,39 @@
 ---
-title: "Configurare i criteri client per l'organizzazione"
+title: Impostare i criteri client per l'organizzazione
 ms.author: tonysmit
 author: tonysmit
-ms.date: 11/14/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 0326b19f-4fd1-4b74-8791-df4c09a964b9
-description: "I criteri client aiutano a determinare le funzioni di Skype for Business online messe a disposizione degli utenti; per esempio, si potrebbe dare ad alcuni utenti il ​​diritto di trasferire i file negando lo stesso diritto ad altri utenti."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Setup
+description: I criteri client aiutano a determinare le funzioni di Skype for Business online messe a disposizione degli utenti; per esempio, si potrebbe dare ad alcuni utenti il diritto di trasferire i file negando lo stesso diritto ad altri utenti.
+ms.openlocfilehash: 2d76f1037e595419caf5059a563e441c521abd81
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="set-up-client-policies-for-your-organization"></a>Impostare i criteri client per l'organizzazione
 
-# Configurare i criteri client per l'organizzazione
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+[] I criteri client aiutano a determinare le funzioni di Skype for Business online messe a disposizione degli utenti; per esempio, si potrebbe dare ad alcuni utenti il diritto di trasferire i file negando lo stesso diritto ad altri utenti.
   
-I criteri client aiutano a determinare le funzioni di Skype for Business online messe a disposizione degli utenti; per esempio, si potrebbe dare ad alcuni utenti il ​​diritto di trasferire i file negando lo stesso diritto ad altri utenti.
+Impostazioni dei criteri client possono essere configurate durante la creazione di un criterio oppure è possibile utilizzare il cmdlet **Set-CsClientPolicy** per modificare le impostazioni di un criterio esistente.
   
-Impostazioni di criteri client possono essere configurate durante la creazione di un criterio oppure è possibile utilizzare il cmdlet Set-CsClientPolicy per modificare le impostazioni di un criterio esistente.
-  
-## Impostare i criteri client
+## <a name="set-your-client-policies"></a>Impostare i criteri client
 
 > [!NOTE]
-> Per tutte le impostazioni dei criteri client in Skype for Business Online, è necessario utilizzare Windows PowerShell ed è **possibile utilizzare** **Skype per Business admin center**. 
+> Per tutte le impostazioni dei criteri client in Skype Business online, è necessario utilizzare Windows PowerShell e non è **possibile utilizzare** **Skype per interfaccia di amministrazione di Business**. 
   
-### Verificare e avviare Windows PowerShell
+### <a name="verify-and-start-windows-powershell"></a>Verificare e avviare Windows PowerShell
 
 - **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
     
@@ -37,7 +45,7 @@ Impostazioni di criteri client possono essere configurate durante la creazione d
     
 4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
     
-    Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx).
+    Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx).
     
 - **Avviare una sessione di Windows PowerShell**
     
@@ -47,30 +55,17 @@ Impostazioni di criteri client possono essere configurate durante la creazione d
     
     > [!NOTE]
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
-  
-> 
-  ```
-  Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
+
+  ```      
+    Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
+    $credential = Get-Credential
+    $session = New-CsOnlineSession -Credential $credential
+    Import-PSSession $session
   ```
 
-> 
-  ```
-  $credential = Get-Credential
-  ```
-
-> 
-  ```
-  $session = New-CsOnlineSession -Credential $credential
-  ```
-
-> 
-  ```
-  Import-PSSession $session
-  ```
-
-    Per altre informazioni sull'avvio di Windows PowerShell, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx) o[Connessione a Skype for Business online con Windows PowerShell](https://technet.microsoft.com/library/dn362795%28v=ocs.15%29.aspx).
+  Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
     
-### Disattivare le emoticon e le notifiche sulla presenza ed evitare che il salvataggio dei messaggi istantanei
+### <a name="disable-emoticons-and-presence-notifications-and-prevent-saving-of-ims"></a>Disattivare le notifiche di presenza e le emoticon e impedire il salvataggio dei messaggi immediati
 
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
     
@@ -79,20 +74,20 @@ Impostazioni di criteri client possono essere configurate durante la creazione d
   New-CsClientPolicy -Identity ClientPolicy -DisableEmoticons $true -DisablePresenceNote -$true -DisableSavingIM $true
   ```
 
-    Altre informazioni sul cmdlet [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779155.aspx).
+  Vedere ulteriori informazioni sui cmdlet [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779155.aspx) .
     
-- Per concedere nuovi criteri creati per tutti gli utenti dell'organizzazione, eseguire:
+- Per assegnare il criterio creato a tutti gli utenti dell'organizzazione, eseguire:
     
 > 
   ```
   Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName ClientPolicy
   ```
 
-    Altre informazioni sul cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx).
+  Vedere ulteriori informazioni sui cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) .
     
-Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779153.aspx) per apportare modifiche al criterio esistente e quindi utilizzare il cmdlet[Grant CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) per applicare le impostazioni gli utenti.
+Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779153.aspx) per apportare modifiche al criterio esistente e quindi utilizzare il cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) per applicare le impostazioni per gli utenti.
   
-### Abilitare URL o collegamenti ipertestuali perché siano cliccabili nei messaggi istantanei
+### <a name="enable-urls-or-hyperlinks-to-be-clickable-in-ims"></a>Abilitare URL o collegamenti ipertestuali perché siano cliccabili nei messaggi istantanei
 
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
     
@@ -101,42 +96,40 @@ Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsCl
   New-CsClientPolicy -Identity URLClientPolicy -EnableURL $true
   ```
 
-    Altre informazioni sul cmdlet [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779155.aspx).
+  Vedere ulteriori informazioni sui cmdlet [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779155.aspx) .
     
-- Per concedere nuovi criteri creati per tutti gli utenti dell'organizzazione, eseguire:
+- Per assegnare il criterio creato a tutti gli utenti dell'organizzazione, eseguire:
     
 > 
   ```
   Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName URLClientPolicy
   ```
 
-    Altre informazioni sul cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx).
+  Vedere ulteriori informazioni sui cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) .
     
-Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779153.aspx) per apportare modifiche al criterio esistente e quindi utilizzare il cmdlet[Grant CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) per applicare le impostazioni gli utenti.
+Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779153.aspx) per apportare modifiche al criterio esistente e quindi utilizzare il cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) per applicare le impostazioni per gli utenti.
   
-### Impedire di mostrare i contatti recenti
+### <a name="prevent-showing-recent-contacts"></a>Impedire di mostrare i contatti recenti
 
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
-    
 > 
   ```
   New-CsClientPolicy -Identity ContactsClientPolicy -ShowRecentContacts $false 
   ```
 
-    Altre informazioni sul cmdlet [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779155.aspx).
+  Vedere ulteriori informazioni sui cmdlet [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779155.aspx) .
     
-- Per concedere il nuovo criterio creato a Marmo Amos, eseguire:
-    
+- Per assegnare il criterio creato ad Amos Marble, eseguire:
 > 
   ```
   Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName ContactsClientPolicy
   ```
 
-    Altre informazioni sul cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx).
+  Vedere ulteriori informazioni sui cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) .
     
-Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779153.aspx) per apportare modifiche al criterio esistente e quindi utilizzare il cmdlet[Grant CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) per applicare le impostazioni gli utenti.
+  Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779153.aspx) per apportare modifiche al criterio esistente e quindi utilizzare il cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) per applicare le impostazioni per gli utenti.
   
-## Per saperne di più su Windows PowerShell
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
@@ -150,12 +143,11 @@ Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsCl
     
   - [Usare Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
     
-  - [Usare Windows PowerShell per svolgere comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
+[Creare criteri di accesso esterno personalizzati](create-custom-external-access-policies.md)
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
+[Trasferimenti di file bloccati punto-punto](block-point-to-point-file-transfers.md)
 
+[Impostare i criteri relativi alle conferenze nell'organizzazione](set-up-conferencing-policies-for-your-organization.md)

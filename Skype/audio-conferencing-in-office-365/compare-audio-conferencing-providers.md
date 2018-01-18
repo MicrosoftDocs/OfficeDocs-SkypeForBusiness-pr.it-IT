@@ -1,87 +1,83 @@
 ---
-title: "Confronto tra provider di conferenze audio"
+title: Confronto tra i provider di servizi di conferenza audio
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/10/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom:
-- Adm_O365_FullSet
-- Strat_SB_PSTN
 ms.assetid: b0d2b50e-def3-4bd8-82d4-a27f4b6f205c
-description: "Quando Configura audioconferenza per Skype for Business e Teams Microsoft, è necessario scegliere un provider di conferenze audio. È possibile scegliere Microsoft o terze parti come provider di conferenze audio."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom:
+- Strat_SB_PSTN
+- Audio Conferencing
+description: "Quando configurare conferenze Audio per Skype per le aziende e Teams Microsoft, è necessario scegliere un provider di servizi di conferenza audio. È possibile scegliere Microsoft o terze parti, come il provider di servizi di conferenza audio."
+ms.openlocfilehash: f46801ae58e2d7f955ee347e4bf1af9567b19b0b
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="compare-audio-conferencing-providers"></a>Confronto tra i provider di servizi di conferenza audio
 
-# Confronto tra provider di conferenze audio
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
-  
-Quando Configura audioconferenza per Skype for Business e Teams Microsoft, è necessario scegliere un provider di conferenze audio. È possibile scegliere Microsoft o terze parti come provider di conferenze audio.
+Quando configurare conferenze Audio per Skype per le aziende e Teams Microsoft, è necessario scegliere un provider di servizi di conferenza audio. È possibile scegliere Microsoft o terze parti, come il provider di servizi di conferenza audio. 
   
 > [!IMPORTANT]
-> Gli utenti Teams Microsoft non è possibile utilizzare un provider di conferenze audio di terze parti. 
+> Microsoft Teams utenti non possono utilizzare un provider di servizi di conferenza audio di terze parti. 
   
-Provider di conferenze audio eseguire le operazioni seguenti:
+Provider di servizi di conferenza audio procedere come segue: 
   
-- Fornire un  *bridge di conferenza audio*  . Il bridge di conferenza consente di impostare i numeri di telefono di accesso esterno, pin e conferenza ID per le riunioni.
+- Fornire un *ponte per conferenze audio*. Bridge conferenza impostano i numeri di telefono di accesso esterno, pin e gli ID conferenza per le riunioni.
     
-- Assegnare a pagamento, verde e numeri di telefono internazionali che gli utenti verranno effettuare chiamate a. Si tratta dei numeri di telefono inclusi nella convocazione di riunione.
+- Fornire il numero a pagamento, il numero verde e numeri di telefono internazionale che gli utenti cui accederà alla. Questi sono i numeri di telefono inclusi nell'invito alla riunione.
     
-- Impostare la lingua che gli utenti ascolteranno quando accedono tramite telefono a una riunione.
+- Impostare la lingua che gli utenti possano rispondere quando si effettua la chiamata a una riunione.
     
-- Crea ID conferenza riunione da utilizzare quando si partecipa a una riunione.
+- Creare riunioni ID conferenza utilizzati quando gli utenti sono una riunione.
     
-- Per ottenere l'organizzatore PIN per avviare riunioni tramite telefono.
+- Assegnare l'organizzatore PIN per l'avvio di riunioni tramite telefono.
     
-Utilizzare la tabella seguente per confrontare viene visualizzato se si sceglie Microsoft o un provider di conferenze audio di terze parti.
+Utilizzare la seguente tabella per confrontare viene visualizzato se si sceglie Microsoft o un provider di servizi di conferenza audio di terze parti.
   
 ||||
 |:-----|:-----|:-----|
-|**Funzione** <br/> |**Microsoft (Office 365)** <br/> |**Provider di terze parti** <br/> |
-|Impostazione provider  <br/> |Facile da configurare. La maggior parte delle impostazioni sono automatiche.  <br/> |Difficili da impostare; richiede procedure manuali  <br/> |
-|Licenze  <br/> |È necessaria una licenza di **Conferenze Audio**. Vedere [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).  <br/> |Nessuna licenza, ma è applicata una tariffa per utente  <br/> |
-|Gestione  <br/> |Integrata nell'interfaccia di amministrazione di Office 365.  <br/> |Gestione manuale con terze parti  <br/> |
-|Impostazioni utente  <br/> |Facile  <br/> |Difficile  <br/> |
-|Fatturazione  <br/> |Tramite Office 365  <br/> |Anche tramite terze parti  <br/> |
-|Assegnazione bridge audioconferenza  <br/> |Automatico  <br/> |È necessario immettere manualmente il bridge di conferenza per ogni utente  <br/> |
-|Gestione ID conferenza  <br/> |Automatica  <br/> |Manuale  <br/> |
-|Reimpostazione ID conferenza riunione  <br/> |Sì. Vedi [Reimpostare un ID conferenza per un utente](reset-a-conference-id-for-a-user.md) <br/> |Sì, ma è necessario immetterlo manualmente  <br/> |
-|Numeri verdi  <br/> |Sì  <br/> |Sì  <br/> |
-|Numeri a pagamento nazionali  <br/> |Sì  <br/> |Sì  <br/> |
-|Numeri a pagamento internazionali  <br/> |Sì  <br/> |Sì  <br/> |
-|Trasferimento dei numeri di telefono esistenti  <br/> |Sì  <br/> |No  <br/> |
-|Chiamata esterna/Chiama - Nazionali  <br/> |Sì  <br/> |Sì  <br/> |
-|Chiamata esterna/Chiama - Internazionali  <br/> |Sì, ma sono disponibili solo in alcuni paesi/aree geografiche. Per un elenco di paesi supportati, vedere [Paesi e aree disponibilità per conferenze Audio e si chiama plan di messaggistica unificata](../countries-and-region-availability-for-audio-conferencing-and-calling-plans/countries-and-region-availability-for-audio-conferencing-and-calling-plans.md) . <br/> |Sì  <br/> |
-|L'organizzatore della riunione può eseguire l'autenticazione tramite un PIN  <br/> |Sì  <br/> |No  <br/> |
-|Qualsiasi utente nell'organizzazione può eseguire l'autenticazione tramite un PIN  <br/> |No  <br/> |No  <br/> |
-|Pagina della convocazione di riunione con numeri di telefono di accesso esterno predefiniti  <br/> |Sì  <br/> |Sì  <br/> |
-|Pagina supplementare per audio con un elenco completo dei numeri di telefono di accesso esterno supportati  <br/> |Sì  <br/> |Sì  <br/> |
-|Opzione per avviare una riunione con terze parti senza un PIN  <br/> |Sì  <br/> |No  <br/> |
-|Supporto per più lingue  <br/> |Sì. Vedere [Lingue supportate da audioconferenza](audio-conferencing-supported-languages.md).  <br/> |Sì  <br/> |
-|Gestione delle lingue per l'operatore automatico di servizi di conferenza  <br/> |Sì  <br/> |Sì  <br/> |
-|Supporto per più paese/area geografica  <br/> |Sì. Vedere [Paesi e aree disponibilità per conferenze Audio e si chiama plan di messaggistica unificata](../countries-and-region-availability-for-audio-conferencing-and-calling-plans/countries-and-region-availability-for-audio-conferencing-and-calling-plans.md).  <br/> |Sì  <br/> |
-|Se la riunione non è ancora iniziata o se è stata bloccata, gli utenti ascoltano musica durante l'attesa  <br/> |Sì  <br/> |No  <br/> |
-|Impostazione numero internazionale come numero predefinito, conferenze (che viene visualizzato nella convocazione di riunione) per un utente  <br/> |Sì  <br/> |No  <br/> |
-|Esperienza utente per Skype for Business online o Teams Microsoft all'utente di reimpostare la riunione integrata ID conferenza e PIN  <br/> |Sì  <br/> |No  <br/> |
-|Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |Sì  <br/> |No  <br/> |
+|**Funzionalità** <br/> |**Microsoft (Office 365)** <br/> |**Terze parti** <br/> |
+|Impostazione provider  <br/> |Facile da configurare. La maggior parte delle impostazioni sono automatiche.  <br/> |Difficili da impostare; è necessario eseguire operazioni manuali  <br/> |
+|Gestione delle licenze  <br/> |È necessaria una licenza di **Conferenze Audio** . Vedere [Assegnare Skype per le licenze aziendali e team di Microsoft](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).  <br/> |Nessuna licenza, ma è comunque pagamento per utente  <br/> |
+|Gestione  <br/> |Integrato nell'interfaccia di amministrazione di Office 365.  <br/> |Gestione manuale con terze parti  <br/> |
+|Impostazioni utente  <br/> |Semplice  <br/> |Difficile  <br/> |
+|Fatturazione  <br/> |Tramite Office 365  <br/> | Ulteriori informazioni, a terze parti <br/> |
+|Assegnazione di ponte conferenza  <br/> |Automatico  <br/> |Richiede un'immissione manuale di ponte conferenza per ogni utente  <br/> |
+|Gestione di ID conferenza  <br/> |Automatico  <br/> |Manuale  <br/> |
+|Reimpostare l'ID conferenza della riunione  <br/> |Sì. Vedere [reimpostare un ID conferenza per un utente](reset-a-conference-id-for-a-user.md).  <br/> |Sì, ma è necessario immettere manualmente  <br/> |
+|Numeri di telefono verde  <br/> |Sì  <br/> |Sì  <br/> |
+|Numeri di telefono interno a pagamento  <br/> |Sì  <br/> |Sì  <br/> |
+|Numeri di telefono a pagamento internazionale  <br/> |Sì  <br/> |Sì  <br/> |
+|Trasferire i numeri di telefono esistente  <br/> |Sì  <br/> |No  <br/> |
+|Chiamata esterna / chiamare-me - nazionale  <br/> |Sì  <br/> |Sì  <br/> |
+|Chiamata esterna / chiamare-me - internazionale  <br/> |Sì, ma è disponibile solo in alcuni paesi. Per un elenco dei paesi supportati, vedere [disponibilità paese e alle aree per le conferenze Audio e la chiamata dei piani](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) . <br/> |Sì  <br/> |
+|Organizzatore della riunione può eseguire l'autenticazione tramite un PIN  <br/> |Sì  <br/> |No  <br/> |
+|Tutti gli utenti dell'organizzazione possono eseguire l'autenticazione tramite PIN  <br/> |No  <br/> |No  <br/> |
+|Pagina invito della riunione con numeri di telefono di accesso esterno predefiniti  <br/> |Sì  <br/> |Sì  <br/> |
+|Pagina aggiuntiva audio con un elenco completo dei numeri di telefono di accesso esterno supportato  <br/> |Sì  <br/> |Sì  <br/> |
+|Opzione per l'avvio di una riunione di terze parti senza un PIN  <br/> |Sì  <br/> |No  <br/> |
+|Supporto di più lingue  <br/> |Sì. Vedere [audioconferenze lingue supportate](audio-conferencing-supported-languages.md).  <br/> |Sì  <br/> |
+|Gestire le lingue per l'operatore automatico di servizi di conferenza  <br/> |Sì  <br/> |Sì  <br/> |
+|Supporto per più paese/area geografica  <br/> |Sì. Vedere [disponibilità paese e alle aree per le conferenze Audio e la chiamata Plans](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).  <br/> |Sì  <br/> |
+|Gli utenti ascoltare la musica di attesa se non è avviato riunione o se la riunione è stata bloccata  <br/> |Sì  <br/> |No  <br/> |
+|Imposta numero internazionale come predefinito numero di accesso (che mostra nell'invito alla riunione) per un utente  <br/> |Sì  <br/> |No  <br/> |
+|Integrato esperienza per Skype per utenti Business Online o Microsoft Teams reimpostare la riunione ID conferenza e il PIN  <br/> |Sì  <br/> |No  <br/> |
+|Supporto per le riunioni private con gli ID conferenza riunione dinamico  <br/> |Sì  <br/> |No  <br/> |
    
-Se si sceglie Microsoft come provider di conferenze audio, vedere anche [Risoluzione dei problemi e problemi noti relativi ai servizi di audioconferenza](audio-conferencing-troubleshooting-and-known-issues.md).
+Se si sceglie Microsoft come provider di servizi di conferenza audio, vedere inoltre [la risoluzione dei problemi di conferenze Audio e problemi noti](audio-conferencing-troubleshooting-and-known-issues.md).
   
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
-
-#### 
-
-[Configurare le audioconferenze per Skype for Business e Microsoft Teams](set-up-audio-conferencing-for-skype-for-business-and-microsoft-teams.md)
+[Configurare le audioconferenze per Skype for Business e Microsoft Teams](set-up-audio-conferencing.md)
 

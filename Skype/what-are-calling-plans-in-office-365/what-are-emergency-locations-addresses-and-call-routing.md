@@ -1,65 +1,73 @@
 ---
-title: "Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?"
+title: Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/17/2017
-ms.audience: Admin
-ms.topic: get-started-article
-f1_keywords:
-- ms.lync.lac.AddressAndLocation
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom:
-- Adm_O365_FullSet
-- Strat_SB_PSTN
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: 589bf5f5-490a-4215-8588-99bab7d33e31
-description: "Learn what emergency address, location, and emergency call routing are, and how to plan and assign them to your users. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: ms.lync.lac.AddressAndLocation
+ms.custom:
+- Calling Plans
+- Strat_SB_PSTN
+description: 'Learn what emergency address, location, and emergency call routing are, and how to plan and assign them to your users. '
+ms.openlocfilehash: b6f9ffcbba68a7892a137a68565de97fe390d00f
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="what-are-emergency-locations-addresses-and-call-routing"></a>Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?
 
-# Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?
+Quando si configura la chiamata dei piani in Office 365, è necessario che un indirizzo di emergenza essere assegnato a ogni numero di telefono è uno ottenere il numero di telefono o quando il relativo assegnati a un utente per il supporto di chiamate di emergenza. Prima di assegnare un indirizzo di emergenza a un numero di telefono, è necessario creare un indirizzo di emergenza e convalidato. La convalida garantisce che l'indirizzo di emergenza viene riconosciuta e che sia in un formato corretto che può essere utilizzato dai servizi di emergenza. Facoltativamente, una posizione all'interno dell'indirizzo emergenza è possibile aggiungere per fornire una posizione più specifica per l'utente. Ad esempio, il percorso di emergenza potrebbe essere un floor, ala o office collegato a un indirizzo specifico di emergenza. Anche se viene convalidato l'indirizzo di emergenza, non sono le posizioni.
+  
+## <a name="what-are-emergency-addresses"></a>Che cosa sono gli indirizzi per gli interventi di emergenza?
 
-Durante la configurazione dei Piani per chiamate per Office 365, è obbligatorio associare un indirizzo di emergenza a ogni numero di telefono ottenuto o assegnato a un utente per supportare le chiamate di emergenza. L'indirizzo di emergenza deve essere stato creato e convalidato prima di essere assegnato a un numero di telefono. La convalida conferma la corretta formattazione dell'indirizzo di emergenza, che può dunque essere usato dai servizi di emergenza. In via facoltativa, è possibile aggiungere una posizione nell'indirizzo di emergenza per fornire indicazioni più specifiche per l'utente. Ad esempio, la posizione di emergenza potrebbe essere un piano, un'ala o un ufficio collegato a un indirizzo di emergenza specifico. Diversamente dagli indirizzi di emergenza, le posizioni non vengono convalidate.
+Un indirizzo di emergenza è necessario per i numeri telefonici attivo, ma quando è necessario che dipende il paese/area geografica. Negli Stati Uniti, è **necessario** un indirizzo emergenza quando viene assegnato un numero a un utente. Per altri paesi, ad esempio in Europa, Medio Oriente e Africa (EMEA), un indirizzo di emergenza è **necessario** quando si ottiene il numero di telefono da Office 365 oppure quando viene trasferita da un altro provider di servizi o gestore di telefonia.
   
-## Che cosa sono gli indirizzi per gli interventi di emergenza?
+Un indirizzo di emergenza può essere definito un indirizzo civico, numero civico o un indirizzo fisico. È l'indirizzo civico o civico di una sede di attività per l'organizzazione. Ad esempio, l'indirizzo *che 12345 Nord Main Street., Redmond, WA 98052* viene utilizzata per instradare le chiamate di emergenza per le autorità intervento appropriato e facilitano l'individuazione al chiamante di emergenza. È probabile che saranno necessari più di un indirizzo di emergenza se l'azienda dispone di più di una posizione fisica business.
+  
+Convalida un indirizzo di emergenza implica assicurandosi che sia valido e formattato in modo corretto per i servizi di emergenza. È possibile creare e salvare un indirizzo di emergenza che non viene convalidato, ma solo gli indirizzi convalidati possono essere associati a un utente. Dopo avere un indirizzo di emergenza viene convalidato e salvato, possono essere assegnato a un utente. Se si desidera modificare un indirizzo di emergenza convalidato salvato, sarà necessario crearne uno nuovo.
+  
+## <a name="what-are-emergency-locations"></a>Che cosa sono le posizioni per gli interventi di emergenza?
 
-L'indirizzo di emergenza per i numeri di telefono attivi è obbligatorio, ma il punto specifico in cui diventa obbligatorio dipende dal Paese o area geografica. Negli Stati Uniti, l'indirizzo di emergenza è **obbligatorio** quando un numero viene assegnato a un utente. In altri paesi, come in Europa, Medio Oriente e Africa (EMEA), l'indirizzo di emergenza è **obbligatorio** quando si ottiene il numero di telefono da Office 365 o quando il numero viene trasferito da un altro provider o gestore di servizi.
+Posizioni di emergenza sono associate a un indirizzo di emergenza per fornire una posizione più preciso all'interno di un edificio. Un percorso di emergenza è in genere un piano, ala edificio o numero dell'ufficio in cui si trova l'utente. È possibile avere un numero illimitato di posizioni associate a un indirizzo di emergenza. 
   
-Per indirizzo di emergenza si intende un indirizzo civico, un indirizzo stradale o un indirizzo fisico. Si tratta dell'indirizzo stradale o civico di una sede o ufficio dell'organizzazione, ad esempio  *12345 North Main Street, Redmond, WA 98052*  . Questo indirizzo viene utilizzato per trasmettere le chiamate di emergenza alle autorità appropriate e per agevolare l'individuazione del chiamante. Se la tua azienda ha più di una sede fisica potresti dover fornire più indirizzi di emergenza.
+Quando si assegna un utente un indirizzo di emergenza, è effettivamente un ID di posizione viene fatto riferimento quando si assegna l'indirizzo. ID posizione include l'indirizzo di emergenza riferimento (l'indirizzo civico o civico). Posizione predefinita del emergenza è inclusa in un indirizzo per il caso di emergenza quando non sono necessari i percorsi di creazione. 
   
-La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione per i servizi di emergenza. Sebbene sia possibile creare e salvare un indirizzo di emergenza non convalidato, gli indirizzi non convalidati non possono essere associati agli utenti. L'indirizzo di emergenza deve essere convalidato e salvato prima di poter essere associato a un utente. Se è necessario apportare una modifica a un indirizzo di emergenza convalidato, occorrerà crearne uno nuovo.
-  
-## Che cosa sono le posizioni per gli interventi di emergenza?
+## <a name="what-is-emergency-call-routing"></a>Che cos'è il routing delle chiamate di emergenza?
 
-Le posizioni per gli interventi di emergenza sono associate a un indirizzo per gli interventi di emergenza, al fine di indicare in modo più preciso una posizione fisica all'interno di un edificio. La posizione per gli interventi di emergenza può corrispondere di solito al piano, all'ala dell'edificio o al numero dell'ufficio in cui si trova l'utente. È possibile indicare un numero illimitato di posizioni associate a un indirizzo per gli interventi di emergenza. 
+Percorsi e gli indirizzi di emergenza vengono utilizzati durante il processo di routing delle chiamate di emergenza al centro di intervento appropriato in fase di invio operatori prima. Quando un Skype per gli utenti aziendali componga un numero di emergenza, come la chiamata viene indirizzata a esecuzione Public Safety nazionale (PSAP) variano in base paese/area geografica. In alcuni paesi, ad esempio Stati Uniti e Regno Unito, le chiamate verranno essere preliminarmente per determinare la posizione corrente dell'utente prima di connettere la chiamata al centro di intervento appropriato. In altri paesi, le chiamate vengono instradate direttamente al centro di spedizione gestiscono il numero di telefono associato al chiamante di emergenza.
   
-Durante l'assegnazione di un indirizzo di emergenza a un utente, si fa in genere riferimento a un ID posizione. Nell'ID posizione è riportato l'indirizzo di emergenza di riferimento (la strada o l'indirizzo civico). Nel caso in cui non sia necessario indicare posizioni all'interno di un edificio, all'indirizzo di emergenza viene associata una posizione predefinita. 
-  
-## Che cos'è il routing delle chiamate di emergenza?
+## <a name="creating-adding-and-assigning-emergency-locations-and-addresses-to-your-users"></a>Creazione, aggiunta e l'assegnazione di posizioni di emergenza e indirizzi per gli utenti
 
-Gli indirizzi e le posizioni di emergenza sono usati durante il processo di routing delle chiamate di emergenza al centro appropriato per l'inoltro agli operatori dei servizi di emergenza. Quando un utente di Skype for Business chiama un numero di emergenza, il routing della chiamata al centro di raccolta delle chiamate di emergenza (PSAP, Public Safety Answering Point) cambia in base al paese o regione geografica. In alcuni paesi, come Stati Uniti e Regno Unito, le chiamate vengono innanzitutto vagliate per determinare la posizione attuale dell'utente e in seguito inoltrate al centro di emergenza appropriato. In altri paesi e aree geografiche, le chiamate vengono instradate direttamente al centro di emergenza che ha in carico il numero di telefono associato all'utente che effettua la chiamata di emergenza.
-  
-## Creazione, aggiunta e assegnazione di indirizzi e posizioni per gli interventi di emergenza agli utenti
-
-1. **Configurare le posizioni di emergenza** Il primo passaggio consiste nel pianificare le posizioni di emergenza. In base a tale pianificazione, si stabilisce se siano necessarie posizioni per gli indirizzi di emergenza e, in tal caso, le si specifica. Se ad esempio un'azienda ha 3 edifici, ognuno con 4 piani, probabilmente saranno necessari 3 indirizzi di emergenza, con l'elenco dei piani da 1 a 4 come posizione per ogni edificio.
+1. **Pianificare posizioni di emergenza** Il primo passaggio consiste nel pianificare per le posizioni di emergenza. È necessario ottenere un elenco di tutti gli indirizzi fisici. Quindi, in base a ciò, determinare se sono necessari i percorsi per gli indirizzi di emergenza e, in caso affermativo, quali. Ad esempio, se un'azienda ha 3 office edifici ogni con 4 piani, è probabile che devono essere 3 indirizzi di emergenza, con piani elencato come percorso per ognuna da 1 a 4.
     
-2. **Creare e convalidare le posizioni per gli interventi di emergenza** Il passaggio successivo consiste nel creare e convalidare gli indirizzi per gli interventi di emergenza. Quando crei un indirizzo per gli interventi di emergenza, puoi convalidarlo. Per creare un indirizzo per gli interventi emergenza, vedi[Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md).
+2. **Crea e convalidare le posizioni di emergenza** Il passaggio successivo consiste nel creare e convalidare gli indirizzi di emergenza. Quando si crea un indirizzo di emergenza, è possibile convalidarlo. Per creare un indirizzo di emergenza, vedere [aggiungere o rimuovere un'emergenza indirizzo per l'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md).
     
     > [!IMPORTANT]
-    > La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione dell'indirizzo. È possibile che un indirizzo di emergenza parzialmente corretto, in cui hai ad esempio digitato erroneamente il nome della città, superi comunque la fase di convalida. Il processo di convalida utilizza tutte le parti di un dato indirizzo per stabilire se contiene informazioni sufficienti a inoltrare la chiamata al centro dei servizi di emergenza più appropriato. In tal caso viene considerato convalidato e può essere assegnato a un numero di telefono. 
+    > Convalida un indirizzo civico o civico comporta assicurandosi che sia valido e formattato in modo corretto. È possibile che un indirizzo di emergenza parzialmente corretto, ad esempio il nome della città, errato può passare ancora passaggio di convalida. Il processo di convalida utilizza tutte le parti di un indirizzo specifico per determinare se contiene le informazioni necessarie per instradare la chiamata al centro di intervento di emergenza appropriato. In tal caso, verranno restituito come convalidata e possono essere quindi assegnata a un numero di telefono. 
   
-3. **Ottenere i numeri di telefono** Il passaggio successivo consiste nell'ottenere i numeri di telefono per gli utenti. Puoi eseguire l'operazione ottenendo nuovi numeri di telefono da Office 365 o attraverso la "portabilità" o il trasferimento dei numeri di telefono esistenti in Office 365. Per le istruzioni dettagliate, consulta[Trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md).
+3. **Ottenere numeri di telefono** Il passaggio successivo consiste nell'eseguire i numeri di telefono per gli utenti. Per farlo recuperando nuovi numeri di telefono da Office 365 o da "porting" o il trasferimento di numeri di telefono esistente su a Office 365. Per le procedure complete, vedere [trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md).
     
-4. **Assegnare i numeri di telefono** L'ultimo passaggio consiste nel consentire agli utenti di effettuare e ricevere telefonate: a tale scopo, sarà necessario assegnare un numero di telefono a ciascun utente. Per assegnare un numero di telefono, fare riferimento a[Assegnare, modificare o rimuovere il numero di telefono di un utente](assign-change-or-remove-a-phone-number-for-a-user.md).
-    
-## Vedere anche
+4. **Assegnare i numeri di telefono** L'ultimo passaggio consiste nel consentire agli utenti di effettuare e ricevere chiamate telefoniche. A tale scopo, è necessario assegnare un numero di telefono per ogni utente. Vedere [assegnare, modificare o rimuovere un numero di telefono di un utente](assign-change-or-remove-a-phone-number-for-a-user.md) a cui assegnare un numero di telefono.
 
-#### 
+> [!NOTE]
+> Se si desidera ottenere altri numeri di telefono rispetto a quella, [contattare il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+
+    
+## <a name="related-topics"></a>Argomenti correlati
+[Che cos'è la convalida dell'indirizzo?](what-is-address-validation.md)
+
+[Diversi tipi di numeri di telefono utilizzati per la chiamata dei piani](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+
+[Termini e condizioni per le chiamate al numero di emergenza](../what-are-calling-plans-in-office-365/emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
-  
-[Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
-  
-[Periodo di chiamata in uscita di conferenze audio](../accessibility-and-regulatory/audio-conferencing-complimentary-dial-out-period.md)
-

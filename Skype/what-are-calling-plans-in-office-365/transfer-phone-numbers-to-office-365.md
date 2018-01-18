@@ -1,120 +1,111 @@
 ---
-title: "Trasferire i numeri di telefono a Office 365"
+title: Trasferire i numeri di telefono a Office 365
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/22/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-f1_keywords:
-- ms.lync.lac.PortingNumbersOverview
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom:
-- Adm_O365_FullSet
-- DianeF_Adm_Simplified
-- LIL_Placement
-- Strat_SB_PSTN
 ms.assetid: 47b3af8e-4171-4dec-8333-c956f108664e
-
-description: "Learn what you need to know and do before porting phone numbers to Skype for Business, and how to create a port order to transfer them."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: ms.lync.lac.PortingNumbersOverview
+ms.custom:
+- Calling Plans
+- Strat_SB_PSTN
+- LIL_Placement
+description: "Informazioni su cosa è necessario conoscere e prima di portabilità i numeri di telefono a Skype per le aziende e creare un ordine di porta per il trasferimento."
+ms.openlocfilehash: 13054913e73b21627f29bfb6038b44c97070417b
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="transfer-phone-numbers-to-office-365"></a>Trasferire i numeri di telefono a Office 365
 
-# Trasferire i numeri di telefono a Office 365
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+È facile trasferire i numeri di telefono da provider di servizi corrente a Skype per le aziende. Dopo che la porta i numeri di telefono a Skype per le aziende, Microsoft diventerà il provider di servizi e verrà a pagamento per i numeri di telefono.
   
-È facile trasferire numeri di telefono dal provider di servizi telefonici attuale a Skype for Business. Dopo il trasferimento dei numeri in Skype for Business, Microsoft diventa il tuo provider di servizi e ti addebita l'uso di tali numeri. 
+Prima di avviare il trasferimento di numeri di telefono, è consigliabile esaminare le informazioni contenute in [domande più comuni numeri di telefono trasferimento](transferring-phone-numbers-common-questions.md). Se si dispone di numeri di servizio per ponti di componente aggiuntivo per conferenze, gli operatori automatici o altri numeri di servizio, sono numeri verdi o avere più di 999 utente (sottoscrittore) numeri di telefono che si devono trasferire Skype per le aziende, vedere Manage [i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per scaricare le forme corrette e di inviarle a Microsoft.
+  > [!NOTE]
+  > Siamo elaborare gli ordini di porta per il trasferimento dei numeri di telefono solo nei giorni lavorativi negli Stati Uniti e non su festivi oppure nei fine settimana. 
   
-Prima di iniziare il trasferimento numeri di telefono, è consigliabile esaminare le informazioni nelle [Trasferimento di domande comuni i numeri di telefono](transferring-phone-numbers-common-questions.md).Se si dispone di numeri di servizio per le conferenze telefoniche ponti, operatori automatici o altri numeri di servizio, verde numeri o non sono più di 999 numeri di telefono utente (sottoscrittore) che è necessario trasferire Skype for Business, vedere [Inviare manualmente una richiesta di servizio](manually-submit-a-custom-service-request.md) per scaricare le forme corrette e inviarli a Microsoft.
-> [!NOTE]
-> Siamo elaborare gli ordini di porta per il trasferimento numeri di telefono solo nei giorni lavorativi degli Stati Uniti e non su festività o i fine settimana. 
-  
-## Come creare un ordine di trasferimento e trasferire i numeri di telefono in Skype for Business
+## <a name="how-to-create-a-port-order-and-transfer-your-phone-numbers-to-skype-for-business"></a>Come creare un ordine di porta e trasferire i numeri di telefono a Skype per le aziende
 <a name="bk_LNPcountries_1"> </a>
 
-> [!NOTE]
-> Se si dispone di numeri di servizio per le conferenze telefoniche ponti, operatori automatici o altri numeri di servizio, verde numeri o non sono più di 999 numeri di telefono utente (sottoscrittore) che è necessario trasferire Skype for Business, vedere [Inviare manualmente una richiesta di servizio](manually-submit-a-custom-service-request.md) per scaricare le forme corrette e inviarli a Microsoft.
+  > [!NOTE]
+  > Se si dispone di numeri di servizio per ponti di componente aggiuntivo per conferenze, gli operatori automatici o altri numeri di servizio, sono numeri verdi o avere più di 999 utente (sottoscrittore) numeri di telefono che si devono trasferire Skype per le aziende, vedere Manage [i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)) selezionare il paese o la regione e scaricare i moduli corretti e di inviarle a Microsoft.
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
-3. Nella barra di spostamento sinistra, passa a **Voce** > **Ordini di trasferimento** e fai clic su **Aggiungi**.
+3. Nel riquadro sinistro passare a **Voice** > **ordini porta** > fare clic su **Aggiungi**.
     
-4. Nella pagina **Nuovo ordine di trasferimento di un numero locale**, leggi le informazioni e fai clic su **Inizia**.
+4. Nella pagina **Nuovo locali numero di porta dell'ordine** , leggere le informazioni e quindi **è possibile iniziare**.
     
-5. Nella pagina **Informazioni account**, immetti le informazioni seguenti e quindi fai clic su **Avanti**:
+5. Nella pagina **informazioni sull'Account** immettere quanto segue e quindi fare clic su **Avanti**:
     
-  - **Numero account** Numero dell'account per il provider di servizi o il gestore.
+  - **Numero di conto** Numero di conto per il provider di servizi o di un gestore di telefonia.
     
-  - **Numero di telefono di fatturazione** deve essere in formato e. 164 (richiede un segno + per anteporre il numero). Ad esempio, per un numero Nord America, utilizzare il formato + 1XXXYYYZZZZ.
+  - **Numero di telefono di fatturazione** deve essere nel formato e. 164 (richiede un segno + per anteporre il numero). Ad esempio, per un numero Nord America, utilizzare il formato + 1XXXYYYZZZZ.
     
-  - **PIN per sbloccare i numeri** PIN eventualmente richiesto dal provider di servizi o dal gestore corrente.
+  - **PIN per sbloccare numero** PIN - necessari per il provider di servizio corrente o l'operatore di telefonia.
     
-  - **Nome azienda** Nome dell'azienda o dell'organizzazione.
-    
-    > [!NOTE]
-    > Nella casella **Nome azienda** è possibile inserire solo 25 caratteri spazi inclusi. Se il nome dell'azienda è composto da più di 25 caratteri, i primi 25 caratteri del nome verranno inviati e l'ordine di trasferimento verrà comunque elaborato.
-  
-  - **Utente incaricato dell'autorizzazione** Nome dell'utente autorizzato.
+  - **Nome della società** Questo è il nome della società o dell'organizzazione.
     
     > [!NOTE]
-    > Nella casella **Utente incaricato dell'autorizzazione** è possibile inserire solo 15 caratteri spazi inclusi. Se il nome dell'utente incaricato dell'autorizzazione è composto da più di 15 caratteri, i primi 15 caratteri del nome verranno inviati e l'ordine di trasferimento verrà comunque elaborato.
+    > La casella **nome della società** accetta solo 25 caratteri che contiene spazi. Se il nome della società include più di 25 caratteri, verranno inviati i primi 25 caratteri del nome e l'ordine di porta ancora essere elaborato.
   
-  - **Indirizzo del servizio** L'indirizzo del servizio per l'account. È riportato nella fattura del gestore o del provider di servizi.
-    
-  - **Città**, **Stato**, **CAP** dell'indirizzo del servizio.
-    
-6. Nella pagina **numeri**, immettere i numeri di telefono che si desidera trasferire in formato e. 164. Ad esempio, per un numero Nord America, utilizzare il formato + 1XXXYYYZZZZ. Separare più numeri di telefono utilizzando un punto e virgola.
+  - **Persona Authorizing** Nome dell'utente autorizzato.
     
     > [!NOTE]
-    > Se stai eseguendo una portabilità completa, devi includere nell'elenco il numero di telefono di fatturazione. Se stai eseguendo una portabilità parziale, non devi includere nell'elenco il numero di telefono di fatturazione. 
+    > La casella di **persona Authorizing** accetta solo 15 caratteri che contiene spazi. Se il nome della persona autorizzato include più di 15 caratteri, verranno inviati i primi 15 caratteri del nome e l'ordine di porta ancora essere elaborato.
   
-    Se stai eseguendo una portabilità completa, seleziona **Intendo trasferire tutti i miei numeri dal mio gestore corrente**. Se stai eseguendo una portabilità parziale, seleziona **Intendo trasferire solo alcuni numeri**. Dopo aver scelto l'opzione corretta, fai clic su **Verifica la portabilità del numero**.
+  - **Indirizzo del servizio** Indirizzo del servizio per l'account. Questo verrà elencato bill dal provider di servizi o gestore di telefonia.
+    
+  - **City**, **State**, **Zip** dell'indirizzo del servizio.
+    
+6. Nella pagina **numeri** immettere i numeri di telefono che si desidera trasferire in formato e. 164. Ad esempio, per un numero Nord America, utilizzare il formato + 1XXXYYYZZZZ. Separare più numeri di telefono utilizzando una virgola.
+    
+    > [!NOTE]
+    > Se si sta eseguendo una porta completa, è necessario includere il numero di telefono di fatturazione (tasto) servizio nell'elenco. Se si sta eseguendo una porta parziale, lasciare il numero di telefono di fatturazione (tasto) servizio da questo elenco. 
+  
+    Se si sta eseguendo una porta full, selezionare **am trasferire tutti i numeri dal gestore personali corrente**. Se si sta eseguendo una porta parziale, selezionare **sto solo il trasferimento di alcuni dei numeri**. Dopo aver scelto più appropriato, fare clic su **Controlla la portabilità del numero**.
     
 7. Fare clic su **procedere**.
     
-8. Nella pagina **Data di trasferimento** il **giorno** elenco a discesa, selezionare la data in **ora di inizio** a discesa, selezionare l'ora (EST) e quindi fare clic su **Avanti**.
+8. Nella pagina **Data trasferimento** il **giorno** a discesa, selezionare la data e in **ora di inizio** a discesa, selezionare l'ora (EST) e quindi fare clic su **Avanti**.
     
-9. Nella pagina **lettera di autorizzazione** selezionare ognuna delle caselle seguenti. Sotto la casella **della firma**, quindi digitare la persona che è autorizzata ad apportare modifiche all'account. Questo è lo stesso nome utilizzato nella pagina **Informazioni sull'Account** > **Authorizing persona**. Fare clic su **Avanti**.
+9. Nella pagina **lettera dell'autorizzazione** controllo ognuna delle caselle seguenti. Sotto la casella di **firma** , quindi digitare la persona a cui è autorizzata a effettuare le modifiche apportate all'account. Questo è lo stesso nome utilizzato nella pagina **Informazioni sull'Account** > **Authorizing persona**. Fare clic su **Avanti**.
     
-10. Nella pagina **Invia** in **altre persone per ricevere una notifica** immettere qualsiasi altro indirizzo di posta elettronica delle persone a cui si vuole e fare clic su **Invia porta ordine**. L'ordine di porta sarà ora elencato nella pagina **porta ordini**. È possibile visualizzare lo stato dell'ordine nella colonna **stato**. È possibile visualizzare i dettagli dell'ordine di porta, ad esempio **ID ordine**, **inviata**, **Data di trasferimento** e **stato**. È possibile visualizzare ulteriori dettagli per l'ordine di porta nel riquadro azioni, tra cui il nome del vettore.
+10. Nella pagina **Invia** in **altre persone per notificare** immettere altri indirizzi di posta elettronica degli utenti che si desidera e fare clic su **Submit porta ordine**. L'ordine di porta sarà ora elencato nella pagina **porta ordini** . È possibile visualizzare lo stato dell'ordine nella colonna **stato** . È possibile visualizzare i dettagli dell'ordine di porta, ad esempio **ID ordine**, **Submitted**, **Data di trasferimento** e **lo stato**. È possibile visualizzare ulteriori dettagli per l'ordine di porta nel riquadro azioni, inclusi il nome del gestore telefonico.
     
-## E ora?
+## <a name="what-happens-next"></a>Cosa succede successivamente?
 <a name="bk_LNPcountries_1"> </a>
 
-Dopo che l'ordine di trasferimento viene inviato e ricevuto, riceverai un'e-mail di verifica dell'ordine. 
+Dopo aver inviato e ricevuto l'ordine di porta, verrà inviato un messaggio di posta elettronica che consente di verificare l'ordine delle porte. 
   
-La richiesta di ordine porta verrà selezionata e aggiornata quotidianamente e si riceverà una notifica del proprio stato e lo stato nel messaggio di posta elettronica. In caso di rifiuto della richiesta, verrà chiesto di aprire un ticket di supporto e in che supporta i ticket che vi chiediamo di fornire **ID ordine porta**. L'ordine di porta ID sono disponibili in Skype for di amministrazione di Business in **segreteria** > **ordini porta** > colonna **ID ordine**.
+La richiesta di ordine porta verrà controllata e aggiornata ogni giorno e si riceverà una notifica del proprio stato e stato di posta elettronica. Se la richiesta viene rifiutata, verrà richiesto di aprire un ticket di supporto e in che supporta ticket che è chiedere è fornire **ID ordine di porta**. L'ordine di porta può trovare l'ID di Skype per interfaccia di amministrazione di Business in **Voice** > **ordini porta** > colonna**ID ordine** .
   
-## Cosa fare in caso di problemi?
+## <a name="what-if-i-have-problems"></a>Se si verificano problemi?
 <a name="bk_LNPcountries_1"> </a>
 
- **L'indirizzo del servizio non è uguale all'indirizzo di fatturazione. Le informazioni sull'indirizzo inviata sull'ordine corrisponde copia distinta il cliente, perché non ancora accetta?** La maggior parte dei vettori identifica le informazioni portabilità in base alle informazioni di indirizzo del servizio, non l'indirizzo di fatturazione. Poiché una copia distinta è un record di fatturazione, potrebbero non fornire le stesse informazioni come l'indirizzo del servizio per i numeri di telefono vengono trasferiti.
+ **L'indirizzo del servizio non è uguale all'indirizzo fatturazione. È possibile inviare informazioni sull'indirizzo all'ordine corrisponde copia bill personale del cliente, perché continua a rifiutare?** La maggior parte dei gestori telefonici identificherà informazioni porting basate sull'indirizzo del servizio, non l'indirizzo di fatturazione. Poiché una copia di bill è un record di fatturazione, ma potrebbe non fornisce le stesse informazioni dell'indirizzo del servizio per i numeri di telefono viene trasferiti.
   
- **Cosa deve fare se il mio ordine sta impiegando troppo tempo per elaborare?** Vogliamo portabilità numero per diventare un processo molto semplice e rapido. Se ordine è richiede più tempo del interazione utente è necessario che lo stato ancora non mostra come completato nell'interfaccia di amministrazione di Skype for Business, aprire ticket di supporto e includono l'ordine di porta ID.
-  
-## 
-<a name="bk_LNPcountries_1"> </a>
+ **Cosa fare se richiede troppo tempo per elaborare il mio ordine?** Vogliamo porting numeri per essere processo molto semplice e rapido. Se l'ordine richiede più tempo del previsto interazione utente e lo stato ancora non mostra come completate in Skype per interfaccia di amministrazione di Business, aprire ticket di supporto e includere l'ID dell'ordine di porta.
 
-||
-|:-----|
-|![Icona breve di LinkedIn Learning.](../images/7e5cb7c8-dc66-4c9a-a16d-a30f10a970bd.png) **Nuovi utenti di Office 365?**         Vedere i corsi video gratuiti per **amministratori di Office 365 e professionisti IT**, offerti da LinkedIn Learning. |
+
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
-## Argomenti correlati
-<a name="bk_LNPcountries_1"> </a>
+## <a name="related-topics"></a>Argomenti correlati
+[Trasferimento di domande comuni numeri di telefono](transferring-phone-numbers-common-questions.md)
 
-[Configurare la chiamata plan di messaggistica unificata](set-up-calling-plans.md)
-  
-[Trasferimento di domande comuni i numeri di telefono](transferring-phone-numbers-common-questions.md)
-  
-## 
-<a name="MT_Footer"> </a>
+[Diversi tipi di numeri di telefono utilizzati per la chiamata dei piani](different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
+[Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)

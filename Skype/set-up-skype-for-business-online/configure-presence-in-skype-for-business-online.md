@@ -1,59 +1,55 @@
 ---
-title: "Configurare la presenza in Skype for Business online"
-ms.author: TONYSMIT
+title: Configurare la presenza in Skype for Business online
+ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/15/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-f1_keywords:
-- O365P_OnlinePresenceDesc
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom: Adm_O365_FullSet
 ms.assetid: ce59ac0b-8115-4c6b-8174-e3aef982d3cb
-description: "Learn how to set up Skype for Business so you can see the availability of your co-workers. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: O365P_OnlinePresenceDesc
+ms.custom: Setup
+description: 'Learn how to set up Skype for Business so you can see the availability of your co-workers. '
+ms.openlocfilehash: 7c28bd8f393d8f2efc2da7616296f3f4075d11b6
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="configure-presence-in-skype-for-business-online"></a>Configurare la presenza in Skype for Business online
 
-# Configurare la presenza in Skype for Business online
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Per impostazione predefinita, tutti gli utenti possono comunicare tra gli utenti dell'organizzazione utilizzando Skype per le aziende possono visualizzare se tale persona è in linea. Skype per le aziende indica se una persona è disponibile in linea, di una riunione, non in linea, o un altro indicatore. 
   
-Per impostazione predefinita, chiunque possa comunicare con una delle persone della tua organizzazione utilizzando Skype for Business può anche vedere se tale persona è online. Skype for Business mostra se una persona è disponibile online, è in una riunione, è offline, oppure mostra un altro indicatore. 
+![Un esempio di stato in linea di una persona in Skype per le aziende.](../images/f0849132-1ddb-480f-bca6-cfe9eaa0486d.png)
   
-![An example of a person's online status in Skype for Business.](../images/f0849132-1ddb-480f-bca6-cfe9eaa0486d.png)
+Come **[amministratore](http://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** per i dipendenti della propria azienda, è possibile scegliere che visualizza la presenza in linea in Skype per le aziende.
   
-Come **[Assegnare ruoli di amministratore in Office 365](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** di tutte le persone della tua azienda, puoi scegliere chi può vedere la loro presenza online in Skype for Business.
-  
-1. Passare a **interfaccia di amministrazione di Office 365** > **amministratore Centra** > **Skype per le aziende**.
+1. Accedere **all'interfaccia di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.
     
-2. Nell'interfaccia **di amministrazione di Skype for Business** scegliere **organizzazione**.
+2. **Skype per interfaccia di amministrazione di Business**, scegliere **dell'organizzazione**.
     
-3. In **modalità privacy presenza**, seleziona una delle seguenti impostazioni, quindi scegli **Salva**.
+3. In **modalità privacy della presenza**, selezionare una delle seguenti impostazioni e quindi fare clic su **Salva**.
     
-|****Impostazione****|****Chi può vedere la presenza dell'utente****|
+|**Impostazione**|**Utenti autorizzati a visualizzare la presenza dell'utente**|
 |:-----|:-----|
-|**Visualizza automaticamente le informazioni sulla presenza** <br/> |Qualsiasi utente Skype for Business della tua azienda che non è stato aggiunto all'elenco degli utenti **esterni** o **bloccati** di una persona sarà in grado di vedere la presenza online di quella persona. <br/> |
-|**Mostra informazioni sulla presenza solo ai contatti dell'utente** <br/> |Qualsiasi utente presente nell'elenco Contatti di una persona che non è stato aggiunto all'elenco degli utenti **esterni** o **bloccati** di tale persona. <br/> Persone possono ignorare le impostazioni predefinite in app Skype for Business: **Impostazioni** > **Strumenti** > **Opzioni**. <br/> |
+|**Visualizza automaticamente le informazioni sulla presenza** <br/> |Qualsiasi Skype per utenti Business nell'azienda che non è stato aggiunto a una persona **esterna** o elenco **bloccato** sarà in grado di visualizzare la presenza in linea della persona. <br/> |
+|**Visualizzare le informazioni sulla presenza solo ai contatti dell'utente** <br/> |Tutti gli utenti nell'elenco contatti di una persona che ha non sono stati aggiunti all'elenco **esterno** o **bloccato** . <br/> Singoli utenti possono eseguire l'override di impostazioni predefinite nella loro Skype per applicazioni aziendali: **Impostazioni** > **Strumenti** > **Opzioni**. <br/> |
    
-Per informazioni su cosa i tuoi utenti possono cambiare in Skype for Business, consulta questi articoli: 
+Per informazioni su quali gli utenti possono modificare in Skype per le aziende, vedere gli articoli: 
   
-- [Controllo dell'accesso alle informazioni sulla presenza in Skype for Business](https://support.office.com/article/fea86e34-60cf-4dd0-bfb2-169a42afd92c)
+- [Controllo dell'accesso alle informazioni sulla presenza in Skype per le aziende](https://support.office.com/en-us/article/fea86e34-60cf-4dd0-bfb2-169a42afd92c)
     
-- [Impostare le opzioni di stato in Skype for Business](https://support.office.com/article/efd25395-c8ef-4510-b9cb-6f70e2fff8a0)
+- [Impostare le opzioni dello stato in Skype per le aziende](https://support.office.com/en-us/article/efd25395-c8ef-4510-b9cb-6f70e2fff8a0)
     
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
+[Configurare Skype for Business online](set-up-skype-for-business-online.md) 
 
-#### 
-
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+[Consentire Skype per gli utenti aziendali di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

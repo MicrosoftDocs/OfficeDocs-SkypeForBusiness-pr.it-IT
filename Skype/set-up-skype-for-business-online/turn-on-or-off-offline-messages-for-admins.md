@@ -1,36 +1,42 @@
 ---
-title: "Attivare o disattivare i messaggi offline per gli amministratori"
+title: Attivare o disattivare i messaggi offline per gli amministratori
 ms.author: tonysmit
 author: tonysmit
-ms.date: 11/17/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom: Adm_O365_FullSet
 ms.assetid: 8967a77f-caa2-4680-aa22-8faa32c716e4
-description: "Learn how to send Skype for Business instant messages even when your contacts aren't signed in using PowerShell."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Setup
+description: Learn how to send Skype for Business instant messages even when your contacts aren't signed in using PowerShell.
+ms.openlocfilehash: 2210f7f0acb2609b7557afe781bbb4349d76c73f
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="turn-on-or-off-offline-messages-for-admins"></a>Attivare o disattivare i messaggi offline per gli amministratori
 
-# Attivare o disattivare i messaggi offline per gli amministratori
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
-  
-È possibile inviare Skype per Business i messaggi istantanei ai contatti anche se non è connesso. Questa caratteristica informa i contatti che si è tentato di comunicare con loro. Non è necessario attendere fino a quando non è in linea prima dell'invio di un messaggio.
+È possibile inviare Skype per messaggi immediati Business ai contatti anche se non sono connessi. Questa funzionalità consente ai contatti a sapere che si è tentato di comunicare con loro. Non è necessario attendere che un utente è online prima dell'invio di un messaggio. 
   
 Per i messaggi offline, è importante sapere:
   
 - I messaggi offline non verranno archiviati nella cassetta postale dell'utente.
     
-- Non in linea verranno inviati alla cassetta postale dell'utente e l'utente verrà visualizzato al momento dell'accesso a Skype for Business.
+- Cassetta postale dell'utente verranno inviati messaggi non in linea e verrà inviate notifiche all'utente al momento dell'accesso a Skype per le aziende.
     
-- Se lo stato del destinatario del messaggio è impostato su **Non disturbare** o **presentazione**, riceveranno un messaggio senza risposta viene inviato dal Skype del destinatario for Business client.
+- Se lo stato del destinatario del messaggio è impostato su **Non disturbare** o **parola presentazione**, ricevono un messaggio senza risposta inviato da Skype del destinatario per il client di Business.
     
-Per ulteriori informazioni, vedere [Utilizzare messaggi offline su Skype for Business](https://support.office.com/article/ffdc6a43-71a1-40ee-bfcc-640d21324a3d).
+Per ulteriori informazioni, vedere [utilizzo offline messaggistica in Skype per le aziende](http://support.office.com/article/ffdc6a43-71a1-40ee-bfcc-640d21324a3d).
   
-## Per iniziare
+## <a name="to-get-you-started"></a>Per iniziare
 
 ### 
 
@@ -44,7 +50,7 @@ Per ulteriori informazioni, vedere [Utilizzare messaggi offline su Skype for Bus
     
 4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
     
-Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx).
+Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx).
   
 ### 
 
@@ -77,14 +83,14 @@ Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in u
   Import-PSSession $session
   ```
 
-Per altre informazioni sull'avvio di Windows PowerShell, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx) o[Connessione a Skype for Business online con Windows PowerShell](https://technet.microsoft.com/library/dn362795%28v=ocs.15%29.aspx).
+Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
   
-## Attivazione o disattivazione della messaggistica offline
+## <a name="turning-on-or-off-offline-im"></a>Attivazione o disattivazione della messaggistica offline
 
 > [!NOTE]
-> Messaggi non in linea sono **solo** disponibili nella versione più recente di Skype a portata di clic for Business client e non sono disponibili quando viene utilizzato un Skype a portata di clic precedente per le aziende o un file MSI è stato usato per installare Skype for Business client.
+> Messaggi non in linea sono **solo** disponibili nella versione più recente di Skype a portata di clic per client di Business e non sono disponibili quando viene utilizzato un precedenti Skype Click-to-Run for Business o un file MSI utilizzato per installare Skype per client di Business.
   
-Per attivare o disattivare i messaggi non in linea invia messaggi non in linea per gli utenti dell'organizzazione, impostare  _EnableIMAutoArchiving_ su `True` o `False`. L'impostazione predefinita, è  `True`.
+Per abilitare o disabilitare messaggi non in linea inviare messaggi non in linea per gli utenti dell'organizzazione, impostare _EnableIMAutoArchiving_ su `True` o `False`. Per impostazione predefinita, questo è impostato su `True`.
   
 Per disattivarli, utilizzare il cmdlet **Set-CsClientPolicy** ed eseguire:
   
@@ -92,7 +98,7 @@ Per disattivarli, utilizzare il cmdlet **Set-CsClientPolicy** ed eseguire:
 Set-CsClientPolicy -Identity Global -EnableIMAutoArchiving $False
 ```
 
-Per attivare o disattivare i messaggi non in linea invia messaggi fuori rete per un utente, impostare  _EnableIMAutoArchiving_ su `True` o `False`. L'impostazione predefinita, è  `True`. È possibile utilizzare un criterio esistente o creare in quello raffigurato nell'illustrazione seguente.
+Per abilitare o disabilitare l'invio di messaggi non in linea messaggi non in linea per un utente, impostare _EnableIMAutoArchiving_ su `True` o `False`. Per impostazione predefinita, questo è impostato su `True`. È possibile utilizzare un criterio esistente o crearne uno simile all'esempio seguente.
   
 > 
   ```
@@ -109,7 +115,7 @@ Per attivare o disattivare i messaggi non in linea invia messaggi fuori rete per
   Grant -CsClientPolicy -Identity "Tony Smith" - PolicyName OfflineIM
   ```
 
-## Per saperne di più su Windows PowerShell
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
@@ -123,12 +129,9 @@ Per attivare o disattivare i messaggi non in linea invia messaggi fuori rete per
     
   - [Usare Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
     
-  - [Usare Windows PowerShell per svolgere comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-
+[Consentire Skype per gli utenti aziendali di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)

@@ -1,45 +1,42 @@
 ---
-title: "Modificare le impostazioni di Skype Meeting Broadcast per la propria organizzazione"
+title: Apportare modifiche alle impostazioni di trasmissione riunione Skype per l'organizzazione
 ms.author: tonysmit
 author: tonysmit
-ms.date: 11/13/2017
-ms.audience: End User
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-f1_keywords:
-- ms.lync.lac.BroadcastMeetings
-ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 8e46e857-f046-4e87-a633-0d7fb88d66d5
-description: "Puoi abilitare Skype Meeting Broadcast e apportare modifiche alle impostazioni e ai criteri per le riunioni."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: ms.lync.lac.BroadcastMeetings
+ms.custom: SMB
+description: "È possibile abilitare Skype riunione trasmissione e apportare modifiche alle impostazioni e i criteri per le riunioni."
+ms.openlocfilehash: dd47a5352ce5ef65b5c1c16ea41eadbc44b2b89f
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="make-changes-to-skype-meeting-broadcast-settings-for-your-organization"></a>Apportare modifiche alle impostazioni di trasmissione riunione Skype per l'organizzazione
 
-# Modificare le impostazioni di Skype Meeting Broadcast per la propria organizzazione
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+È possibile abilitare Skype riunione trasmissione e apportare modifiche alle impostazioni e i criteri per le riunioni.
   
-Puoi abilitare Skype Meeting Broadcast e apportare modifiche alle impostazioni e ai criteri per le riunioni.
-  
-- **Abilitare Skype Meeting Broadcast** Abilita Skype Meeting Broadcast. Dopo aver abilitato Skype Meeting Broadcast, devi[Configurare la rete per Skype Meeting Broadcast](set-up-your-network-for-skype-meeting-broadcast.md). Segui questo passaggio se vuoi tenere webinar e altri eventi in broadcast per persone all'esterno della tua azienda. 
+- **Abilitare la trasmissione riunione Skype** Consente la trasmissione riunione Skype. Dopo aver abilitato Skype trasmissione riunione, è necessario [configurare la rete per la trasmissione riunione Skype](set-up-your-network-for-skype-meeting-broadcast.md). Eseguire questo passaggio se si desidera mantenere webinar e altre trasmissioni per gli utenti all'esterno dell'azienda. 
     
-- **Caratteristiche di attiva Skype Meeting Broadcast anteprima per la propria organizzazione** Skype per le applicazioni di clienti aziendali forniscono primo accesso alle funzionalità e nuovi prodotti. In questo modo l'organizzazione anteprima novità e la possibilità di verificare le nuove funzionalità nel proprio ambiente e fornire commenti e suggerimenti prima è rilasciare build di prodotto al pubblico.[Skype per Business preview](https://www.skypepreview.com/)
+- **Funzionalità di anteprima di trasmissione riunione abilitare Skype per l'organizzazione** Skype per programmi clienti aziendali forniscono anticipato accesso a nuovi prodotti e funzionalità. In questo modo l'organizzazione anteprima nuove caratteristiche e la possibilità di verificare le nuove funzionalità nel tuo ambiente e fornire commenti e suggerimenti prima è rilasciare build di prodotto al pubblico.<br/>[Skype per l'anteprima di Business](https://www.skypepreview.com/)
     
-- **Consenti organizzatori per pianificare le riunioni anonime** In questo modo organizzatori eseguire sottotitoli codificati e traduzione per trasmettere riunioni.
+- **Consenti agli organizzatori di pianificare riunioni anonime** In tal modo gli organizzatori non chiuso le didascalie e translation per le riunioni di trasmissione.
     
-- **Consenti trasmettere riunioni da registrare** In questo modo tutte le riunioni che si devono essere registrati per il relatore o l'organizzatore.
+- **Consenti riunioni trasmissione devono essere registrati** In questo modo le riunioni che si devono essere registrati tramite il relatore o organizzatore.
     
-- **URL per i partecipanti di supporto tecnico** Immettere un collegamento per trasmettere partecipanti da usare se è necessaria assistenza connessione o la partecipazione a una riunione di trasmissione.
+- **URL per i partecipanti del supporto tecnico di supporto tecnico** Immettere un collegamento per i partecipanti alle trasmissioni di riunione da utilizzare se si ha bisogno di assistenza connessione o partecipazione a una riunione di trasmissione.
     
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
-
-#### 
-
-[Configurare la rete per Skype Meeting Broadcast](set-up-your-network-for-skype-meeting-broadcast.md)
+[La configurazione della rete per la trasmissione riunione Skype](set-up-your-network-for-skype-meeting-broadcast.md)
 

@@ -1,77 +1,73 @@
 ---
-title: "Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni"
+title: Attivare o disattivare gli annunci di entrata e uscita per le riunioni
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/22/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom:
-- Adm_O365_FullSet
-- Strat_SB_PSTN
 ms.assetid: f2c7b5ea-07b6-4b77-8023-bec9596fcc32
-description: "Learn how to turn entry and exit announcements on or off in a Skype for Business Online meeting using the Skype for Business admin center. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom:
+- Strat_SB_PSTN
+- Audio Conferencing
+description: 'Informazioni su come attivare la voce e uscire da attivare o disattivare gli annunci in Skype per riunioni Online Business con i Skype per interfaccia di amministrazione di Business. '
+ms.openlocfilehash: 2298450d28ebb09acb87820b1f8a01cb9196708e
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="turn-on-or-off-entry-and-exit-announcements-for-meetings"></a>Attivare o disattivare gli annunci di entrata e uscita per le riunioni
 
-# Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Quando impostano audioconferenze con accesso esterno in Office 365, si otterrà un ponte per conferenze audio. Un ponte per conferenze può contenere uno o più numeri di telefono utilizzato per chiamare un Skype per riunione Business o Microsoft Teams persone. 
   
-Quando si configurano audioconferenza in Office 365, verrà visualizzato un bridge di conferenza audio. Un bridge di conferenza può contenere uno o più numeri di telefono che persone verranno usato per accedere a Skype for Business o Teams Microsoft per la riunione.
+Bridge conferenza risponde a una chiamata di un utente che si collegano a una riunione utilizzando un telefono. Bridge conferenza risponde al chiamante di istruzioni vocali da un operatore automatico conferenza e quindi, a seconda delle impostazioni consentono di riprodurre le notifiche, chiedere ai chiamanti di registrare il proprio nome e impostato la protezione PIN. Un PIN viene assegnato a un Skype per Business o Microsoft Teams organizzatore della riunione e ha la possibilità di avviare una riunione, se non possono avviare una riunione utilizzando un Skype per applicazioni aziendali o Microsoft Teams. È possibile impostarla, tuttavia, in modo che non è richiesto un PIN per avviare una riunione.
   
-Il bridge di conferenza risponde a una chiamata per un utente che accedono a una riunione tramite telefono. Il bridge di conferenza vengono fornite le risposte chiamante con istruzioni vocali da un operatore automatico di servizi di conferenza e quindi, a seconda delle impostazioni riproducibili notifiche, chiedere ai chiamanti di registrare il proprio nome e impostare la protezione PIN. Il PIN è assegnato a una Skype for Business o Microsoft Teams organizzatore della riunione e consente di avviare una riunione se non è possibile avviare alla riunione tramite un Skype per Business o Microsoft Teams app. È tuttavia possibile, impostarlo in modo che non è necessario un PIN per avviare una riunione.
-  
-## Impostazione delle opzioni di partecipazione a una riunione
+## <a name="setting-meeting-join-options"></a>Impostazione di opzioni di partecipazione alla riunione
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
-3. Nel **Interfaccia di amministrazione di Skype for Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **Impostazioni bridge Microsoft**.
+3. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **Impostazioni bridge di Microsoft**.
     
-4. In **esperienza utente partecipa alla riunione**, selezionare o deselezionare **Abilita voce relativa alla riunione e chiudere le notifiche per essere attivata**. Questa opzione è selezionata per impostazione predefinita. Se si deseleziona il campo, gli utenti che hanno già eseguito l'accesso alla riunione non è possibile sapere quando un utente attiva o disattiva la riunione.
+4. In **esperienza di partecipazione alle riunioni**, selezionare o deselezionare **Abilita voce relativa alla riunione e chiudere le notifiche per essere attivata**. Questa opzione è selezionata per impostazione predefinita. Se si deselezionare l'opzione, gli utenti che già sono uniti alla riunione non vengono informati quando un utente si unisce o abbandona la riunione.
     
-5. In **tipo di annuncio di ingresso/uscita**, selezionare **i nomi o i numeri di telefono** o **toni**.
+5. In **tipo di annunci di entrata/uscita**, selezionare **i nomi o numeri di telefono** o **toni**.
     
-6. Selezionare o deselezionare **Chiedi ai chiamanti di registrare il proprio nome prima di partecipare alla riunione**.
+6. Selezionare o deselezionare **Ask ai chiamanti di registrare il proprio nome prima di partecipare alla riunione**.
     
-7. Dopo aver apportato le modifiche, fai clic su **Salva**.
+7. Dopo aver apportato le modifiche desiderate, fare clic su **Salva**.
     
-## Vuoi sapere come gestire queste operazioni con Windows PowerShell?
+## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
 - Per risparmiare tempo o automatizzare questa operazione, è possibile utilizzare il cmdlet [Set-CsOnlineDialInConferencingBridge](https://go.microsoft.com/fwlink/?LinkId=617686 ) .
     
-- Quando si tratta di Windows PowerShell, Skype for Business online è basato sui gestione di utenti e quali utenti sono consentite o non consentite. Con Windows PowerShell, è possibile gestire Office 365 utilizzando un unico punto di amministrazione che consente di semplificare le attività quotidiane quando si dispone di più attività da eseguire. Per iniziare a utilizzare Windows PowerShell, vedere i seguenti argomenti:
+-  Per quanto riguarda Windows PowerShell, è possibile gestire gli utenti di Skype for Business online e le azioni che sono autorizzati a eseguire. Con Windows PowerShell puoi gestire Office 365 tramite un unico punto di amministrazione, che ti agevola il lavoro quotidiano quando hai molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedi i seguenti argomenti:
     
-  - [Perché è necessario utilizzare PowerShell di Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Perché è necessario utilizzare Office 365 PowerShell](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-  - [Gestire Office 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Modi migliori per gestire Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-- Windows PowerShell offre molti vantaggi velocità, semplicità e produttività rispetto all'uso solo di amministrazione di Office 365, ad esempio quando si eseguono modifiche alle impostazioni per molti utenti contemporaneamente. Informazioni su questi vantaggi negli argomenti seguenti:
+- Windows PowerShell offre numerosi vantaggi in velocità, la semplicità e produttività rispetto solo tramite l'interfaccia di amministrazione di Office 365, ad esempio se si sta creando le modifiche alle impostazioni per molti utenti contemporaneamente. Informazioni su queste vantaggiose caratteristiche negli argomenti seguenti: 
     
-  - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [Introduzione a Windows Powershell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
-  - [Usare Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
+  - [Uso di Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
     
-  - [Usare Windows PowerShell per svolgere comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
     > [!NOTE]
     > Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business Online.](https://go.microsoft.com/fwlink/?LinkId=294688)
   
-## 
-<a name="MT_Footer"> </a>
+## <a name="related-topics"></a>Argomenti correlati
 
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-## Vedere anche
-<a name="MT_Footer"> </a>
-
-#### 
-
-[Servizi di conferenza telefonica con accesso esterno in Office 365](../misctopics/dial-in-conferencing-in-office-365.md)
+[Domande più comuni di servizi di conferenza audio](audio-conferencing-common-questions.md)
 

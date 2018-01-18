@@ -1,67 +1,64 @@
 ---
-title: "Spostamento di un provider di servizi di audioconferenza a Microsoft"
+title: Spostamento di provider di servizi di conferenza audio di un utente a Microsoft
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/14/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-f1_keywords:
-- ms.lync.lac.PSTNConferencingEnableUsers
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom:
-- Adm_O365_FullSet
-- Strat_SB_PSTN
 ms.assetid: 3a518241-1ecc-406a-93a1-d2653eecc0f5
-description: "Change your Skype for Business users from third-party audio conferencing providers (ACP) to a Microsoft dial-in conferencing provider. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: ms.lync.lac.PSTNConferencingEnableUsers
+ms.custom:
+- Strat_SB_PSTN
+- Audio Conferencing
+description: 'Modificare il Skype per gli utenti aziendali dal provider di terze parti audioconferenza (ACP) a un provider di conferenze telefoniche con Microsoft. '
+ms.openlocfilehash: 79697299ce2c3e3fa398150cd300e305ef0c672a
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="moving-a-users-audio-conferencing-provider-to-microsoft"></a>Spostamento di provider di servizi di conferenza audio di un utente a Microsoft
 
-# Spostamento di un provider di servizi di audioconferenza a Microsoft
+Per utilizzare audioconferenze con accesso esterno in Office 365 con Skype per le aziende e Teams Microsoft, è necessario impostare gli utenti dell'organizzazione necessita di una licenza di **Audioconferenza** assegnata a loro e i provider di servizi di conferenza audio a Microsoft. Per ulteriori informazioni sulla gestione delle licenze e sul costo, vedere [prova o acquisto audioconferenza in Office 365](try-or-purchase-audio-conferencing-in-office-365.md) .
+  
+## <a name="to-move-a-users-audio-conferencing-provider-to-microsoft"></a>Per spostare il provider di conferenza audio di un utente a Microsoft
 
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Se una licenza di **Accesso esterno alle audioconferenze** è assegnata a un utente che non dispone di un provider, provider dell'utente viene automaticamente impostato su Microsoft e non è necessario eseguire altre operazioni. Se l'utente dispone già di un provider di servizi di conferenza audio, è necessario modificare provider dell'utente a Microsoft dopo l'assegnazione di una licenza di **Audioconferenza** .
   
-Per usare audioconferenza in Office 365 con Skype for Business e Teams Microsoft, è necessario impostare gli utenti in esigenze dell'organizzazione per avere una licenza di ** Conferenze Audio** assegnata e il provider di conferenze audio a Microsoft. Vedere[Prova o acquista le audioconferenze in Office 365](try-or-purchase-audio-conferencing-in-office-365.md) per ottenere ulteriori informazioni sulle licenze e sul costo.
-  
-## Per spostare il provider di conferenze audio di un utente a Microsoft
-
-Se viene assegnata una licenza di **Conferenze Audio** a un utente che non dispone di un provider di conferenze audio, provider dell'utente verrà impostata automaticamente a Microsoft e non è necessario eseguire altre operazioni. Se l'utente dispone già di un provider di conferenze audio, è necessario modificare il provider dell'utente a Microsoft dopo l'assegnazione di una licenza di **Conferenze Audio**.
-  
-Per impostare Microsoft come provider di conferenze audio per un utente che ha una licenza di **Conferenze Audio** assegnate, ma con un altro provider di conferenze audio, procedere come segue:
+Per configurare Microsoft come provider di audioconferenza per un utente che dispone di una licenza di **Audioconferenza** assegnati ma utilizza un altro provider di servizi di conferenza audio, eseguire questa operazione:
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
-3. Nell' **interfaccia di amministrazione di Skype for Business**, scegli **Audioconferenza**.
+3. In **Skype per interfaccia di amministrazione di Business**, passare a **conferenze Audio**.
     
-4. Se viene visualizzato un avviso di notifica che indica che sono presenti utenti che hanno un **Audioconferenza** licenza assegnata ma non Microsoft impostato come i provider di conferenze audio ancora, fare clic **qui per spostarli**. Se non è visibile l'intestazione, in **Skype for Business admin center** fare clic su **utenti** e quindi selezionare il filtro **utenti pronti per essere spostato a conferenze Audio**.
+4. Se viene visualizzata un'intestazione di notifica che indica che non vi sono utenti che dispongono di un' **Audioconferenza** licenza assegnata ma non dispone di Microsoft impostato come i provider di servizi di conferenza audio sono ancora stati, fare clic **qui per spostarli**. Se non viene visualizzata l'intestazione, in **Skype per Business admin center** fare clic su **utenti**e quindi selezionare il filtro **utenti pronti a conferenze Audio** .
     
-5. Selezionare gli utenti che si desidera spostare e quindi nel riquadro azioni, fare clic su **Modifica**.
+5. Selezionare gli utenti da spostare e quindi nel riquadro azioni fare clic su **Modifica**.
     
-6. Selezionare **Microsoft** nell'elenco **nome Provider**.
+6. Selezionare **Microsoft** nell'elenco **nome del Provider** .
     
     > [!NOTE]
-    > Se il provider di conferenze audio di un utente viene modificato in Microsoft, le informazioni di conferenze audio dell'utente vengono modificate. Se è necessario mantenere queste informazioni, vedere record in un punto prima di modificare il provider di uno degli utenti. 
+    > Quando il provider di servizi di conferenza audio di un utente viene modificato in Microsoft, le informazioni di accesso esterno alle audioconferenze dell'utente verranno modificato. Se è necessario conservare tali informazioni, visitare registrarlo in un punto qualsiasi prima di modificare il provider di uno degli utenti. 
   
-7. Fai clic su **Salva**.
+7. Fare clic su **Salva**.
     
-## Quali altre informazioni sono necessarie?
+## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 
-- Se selezioni l'utente dall'elenco, puoi visualizzare le informazioni predefinite per i servizi di audioconferenza, ma non il PIN della riunione. Per reimpostare il PIN di conferenza di un utente, fai clic su **Reimposta**.
+- Se si seleziona l'utente nell'elenco, è possibile visualizzare le informazioni di audioconferenza predefinito dell'utente, ma non sarà in grado di visualizzare il PIN per conferenze audio. È possibile reimpostare il PIN di un utente per conferenze audio facendo clic su **Reimposta**.
     
-- Per modificare le impostazioni dei servizi di audioconferenza per un utente, seleziona l'utente dall'elenco, fai clic su **Modifica** e apporta le modifiche desiderate nella pagina **Proprietà**.
+- Se si desidera modificare le impostazioni di conferenza audio di un utente, si può selezionare l'utente dall'elenco e quindi fare clic su **Modifica** e apportare le modifiche desiderate nella pagina delle **proprietà** . 
     
-## Argomenti correlati
+## <a name="related-topics"></a>Argomenti correlati
 
-[Servizi di conferenza telefonica con accesso esterno in Office 365](../misctopics/dial-in-conferencing-in-office-365.md)
-  
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
+[Configurare le audioconferenze per Skype for Business e Microsoft Teams](set-up-audio-conferencing.md)
   
 

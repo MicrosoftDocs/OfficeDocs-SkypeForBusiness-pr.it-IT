@@ -1,34 +1,40 @@
 ---
-title: "Termini e condizioni per le chiamate al numero di emergenza"
+title: Termini e condizioni per le chiamate al numero di emergenza
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 9/22/2017
-ms.audience: Admin
-ms.topic: reference
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
-ms.custom: Adm_O365_FullSet
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: ca2c751b-53ab-42c7-aed9-cfe27e662940
-description: "Learn how Emergency Services  (911) differ from traditional telephone services and how to make a call. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business, Microsoft Teams
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Calling Plans
+description: 'Informazioni su come servizi di emergenza (911) si differenziano dai servizi telefonici tradizionali e su come effettuare una chiamata. '
+ms.openlocfilehash: 8ed5e90ab2c00435b92dc1b35b2bece9198d745e
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="emergency-calling-terms-and-conditions"></a>Termini e condizioni per le chiamate al numero di emergenza
 
-# Termini e condizioni per le chiamate al numero di emergenza
+## <a name="important-information"></a>[]
 
-## Informazioni importanti
-
-Le chiamate di emergenza al funzionano in modo diverso con i Piani per chiamate di Office 365 rispetto ai servizi di telefonia tradizionali. È importante comprendere queste differenze e comunicarle a tutti gli utenti dei Piani per chiamate di Office 365. L'utente accetta e conferma di aver letto e compreso le differenze nella chiamata ai servizi di emergenza e trasmetterà questa notifica a tutti gli utenti dei Piani per chiamate di Office 365.
+Informazioni importanti
   
-Le differenze nella nostra funzionalità di chiamata ai servizi di emergenza includono quanto segue: (i) Skype for Business potrebbe non conoscere la posizione effettiva di un chiamante ai servizi di emergenza, il che potrebbe comportare un instradamento della chiamata ai servizi di emergenza a un call center dei servizi di emergenza errato e/o l'invio dei servizi di emergenza a una località errata; (ii) se il dispositivo dell'utente non riceve l'alimentazione, sta sperimentando un'interruzione dell'alimentazione, o per qualsiasi motivo, non è in grado di accedere a Internet, l'utente non potrà effettuare la chiamata ai servizi di emergenza tramite i Piani per chiamate di Office 365; e (iii) sebbene i Piani per chiamate di Office 365 possano essere usati ovunque nel mondo laddove sia disponibile una connessione a Internet, gli utenti non dovrebbero chiamare i servizi di emergenza da una località al di fuori del proprio paese/regione poiché la chiamata non verrà probabilmente instradata al call center appropriato di tale paese/area geografica.
+Le differenze di funzionalità di chiamata ai servizi di emergenza includono quanto segue: (i) Skype per le aziende non può conoscere il percorso effettivo del chiamante effettua una chiamata a servizi di emergenza, che può provocare la chiamata viene instradata ai servizi di emergenza errato servizio clienti e/o i servizi di emergenza viene inviati alla posizione errata; (ii) se il dispositivo dell'utente non ha alimentazione, si verifica un'interruzione dell'alimentazione o, per qualunque motivo, non è in caso contrario l'accesso a Internet, l'utente non può effettuare una chiamata di servizi di emergenza tramite la chiamata dei piani in Office 365, e (iii) la chiamata dei piani di Office 365 può essere utilizzata in qualsiasi punto del mondo in cui una connessione Internet è disponibile, gli utenti non devono effettuare una chiamata di servizi di emergenza da una posizione di fuori il paese/area geografica principale perché la chiamata probabilmente non verrà instradata a centro di chiamata appropriata in quel paese/area geografica.
   
-## Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
+[Trasferimento di domande comuni numeri di telefono](transferring-phone-numbers-common-questions.md)
 
-#### 
+[Diversi tipi di numeri di telefono utilizzati per la chiamata dei piani](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+
+[Gestire i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
-  
-[Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
-  
-[Periodo di chiamata in uscita di conferenze audio](../accessibility-and-regulatory/audio-conferencing-complimentary-dial-out-period.md)
-

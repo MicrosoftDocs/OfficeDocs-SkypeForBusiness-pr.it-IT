@@ -1,59 +1,58 @@
 ---
-title: "Creazione di report di Skype for Business Online"
+title: Creazione di report di Skype for Business Online
 ms.author: tonysmit
 author: tonysmit
-manager: scotv
-ms.date: 11/22/2017
-ms.audience: Admin
-ms.topic: reference
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection:
-- Adm_Skype4B_Online
-- Adm_Skype4B_Online_Top
-ms.custom: Adm_O365_FullSet
+manager: serdars
+ms.date: 12/15/2017
+ms.topic: article
 ms.assetid: 4935cddf-fafa-442d-91a3-246af01f8373
-
-description: "Use this reference guide to learn about Skype for Business Online reporting and what info is available. "
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: Reporting
+description: 'Use this reference guide to learn about Skype for Business Online reporting and what info is available. '
+ms.openlocfilehash: 097178a70bb98627be9dfadc49b3bcad8efc5148
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="skype-for-business-online-reporting"></a>Creazione di report di Skype for Business Online
 
-# Creazione di report di Skype for Business Online
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+Come amministratore per l'organizzazione, potrebbe essere utile disporre di un elenco completo di tutti i diversi report disponibili in Skype per Business Online. Si tratta include tutti i diversi report e le informazioni che è possibile ottenere con ogni rapporto.
   
-Per l'amministratore dell'organizzazione può essere utile avere un elenco completo di tutti i report disponibili in UNRESOLVED_TOKEN_VAL( Skype_for_Business_Online). Include tutti i report e le informazioni che è possibile ottenere con ciascun report.
-  
-Per accedere ai report Skype for Business online, accedere all'interfaccia di amministrazione di Office 365 utilizzando l'account utente e la password. L'account usato per l'accesso deve essere assegnata una assegnato uno dei due al ruolo amministratore globale o a un delegato di Skype per il ruolo di amministratore di servizio aziendale per visualizzare i report.
+Per visualizzare i report di Skype for Business online, accedi all'interfaccia di amministrazione di Office 365 usando il tuo account utente e password. Per visualizzare i report, è necessario che all'account utilizzato per l'accesso sia assegnato il ruolo Amministratore globale o Amministratore dei servizi Skype for Business delegato.
   
 > [!NOTE]
-> Per verificare le autorizzazioni, nell'interfaccia di amministrazione di Office 365 > **utenti** > **utenti attivi**. Fare clic sul nome di visualizzazione dell'utente e quindi fare clic su **Modifica** e una pagina di proprietà dell'account, fare clic su **ruoli**
+> Per verificare le autorizzazioni, nell'interfaccia di amministrazione di Office 365 > **Utenti** > **Utenti attivi**, fai clic sul nome visualizzato dell'utente e quindi su **Modifica**; una volta nella pagina delle proprietà account, fai clic su **Ruoli**
   
-## Riferimento per la creazione di report di Skype for Business online
+## <a name="skype-for-business-online-reporting-reference"></a>Riferimento per la creazione di report di Skype for Business online
 
-In Office 365 e Skype per interfacce di amministrazione di Business, è possibile usare diversi tipi di report, incluse quelle per Skype for Business online.
+In Office 365 e Skype per interfacce di amministrazione di Business, è possibile utilizzare diversi tipi di report, incluse quelle per Skype Business online.
   
- **Visualizzare i report**
+ **Per visualizzare i report**
   
-1. Passare **all'interfaccia di amministrazione di Office 365** o **Skype per Business admin center** > **report**.
+1. Vai al **Centro di amministrazione di Office 365** o **Skype per Business admin center** > **report**.
     
 2. Nella finestra dashboard fai clic sul widget dei report o scegli dalla lista il report che desideri.
     
 |**Report**|**Cosa viene misurato?**|
 |:-----|:-----|
-|[Report attività in Skype for Business](skype-for-business-activity-report.md) <br/> | Utenti attivi <br/>  Utenti di messaggistica istantanea attivi <br/>  Utenti audio attivi <br/>  Utenti video attivi <br/>  Utenti di condivisione applicazioni attivi <br/>  Utenti di trasferimento di file attivi <br/> |
-|[Report attività peer-to-peer in Skype for Business](skype-for-business-peer-to-peer-activity-report.md) <br/> | Totale <br/>  Messaggistica istantanea <br/>  Audio <br/>  Video <br/>  Condivisione applicazioni <br/>  Trasferimento di file <br/> |
-|[Report attività partecipante di conferenze in Skype for Business](skype-for-business-conference-participant-activity-report.md) <br/> | Totale <br/>  Messaggistica istantanea <br/>  Audio/video <br/>  Condivisione applicazioni <br/>  Web <br/>  Accesso esterno <br/> |
-|[Report attività organizzatore di conferenze in Skype for Business](skype-for-business-conference-organizer-activity-report.md) <br/> | Minuti audio <br/>  Minuti video <br/>  Minuti conferenze audio/video <br/>  Minuti conferenze telefoniche con accesso esterno <br/>  Minuti conferenze telefoniche con chiamata in uscita <br/> |
-|[Skype per report di utilizzo del dispositivo Business](skype-for-business-device-usage-report.md) <br/> | Utenti di Windows: <br/>  Utenti Windows Phone <br/>  Utenti Android <br/>  Utenti iPhone <br/>  Utenti iPad <br/> |
-|[Report attività in Skype for Business](skype-for-business-activity-report.md) <br/> | Nome utente <br/>  Ora ultimo accesso <br/>  Ora ultima attività <br/>  Totale sessioni peer-to-peer <br/>  Totale sessioni di messaggistica istantanea peer-to-peer <br/>  Totale sessioni audio peer-to-peer <br/>  Totale sessioni video peer-to-peer <br/>  Totale sessioni di condivisione applicazioni peer-to-peer <br/>  Totale minuti sessioni audio peer-to-peer <br/>  Totale minuti sessioni video peer-to-peer <br/>  Totale conferenze organizzate <br/>  Totale conferenze di messaggistica istantanea organizzate <br/>  Totale conferenze audio/video organizzate <br/>  Totale conferenze di condivisione applicazioni organizzate <br/>  Totale conferenze Web organizzate <br/>  Totale conferenze telefoniche con accesso esterno organizzate <br/>  Totale minuti conferenze audio/video organizzate <br/>  Totale conferenze a cui l'utente ha partecipato <br/>  Totale conferenze di messaggistica istantanea a cui l'utente ha partecipato <br/>  Totale conferenze audio/video a cui l'utente ha partecipato <br/>  Totale conferenze di condivisione applicazioni a cui l'utente ha partecipato <br/>  Totale conferenze Web a cui l'utente ha partecipato <br/>  Totale conferenze telefoniche con accesso esterno a cui l'utente ha partecipato <br/>  Totale minuti conferenze audio/video a cui l'utente ha partecipato <br/>  Totale chiamate PSTN effettuate <br/>  Totale chiamate PSTN ricevute <br/>  Totale minuti chiamate PSTN effettuate <br/>  Totale minuti di chiamate PSTN ricevute <br/>  Totale messaggi <br/>  Totale file trasferiti <br/> |
-|[Report di utilizzo PSTN di Skype for Business](skype-for-business-pstn-usage-report.md) <br/> > [!TIP]> Usa l' **interfaccia di amministrazione Skype for Business** > **Report** per consultare questo report.          | Nome utente <br/>  Data/ora della chiamata <br/>  Numero di telefono <br/>  ID chiamata <br/>  Tipo di chiamata <br/>  Posizione <br/>  Durata chiamata <br/>  Valuta <br/>  Costo chiamata <br/> |
-|[Skype per gli utenti aziendali bloccati report](skype-for-business-users-blocked-report.md) <br/> > [!TIP]> Usa l' **interfaccia di amministrazione Skype for Business** > **Report** per consultare questo report.          | Data azione <br/>  Nome utente <br/>  Tipo di azione <br/>  Numero di telefono <br/>  Motivo <br/> |
-   
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-
+|[Report attività in Skype for Business](activity-report.md) <br/> | Utenti attivi <br/>  Utenti di messaggistica istantanea attivi <br/>  Utenti audio attivi <br/>  Utenti video attivi <br/>  Utenti di condivisione applicazioni attivi <br/>  Utenti di trasferimento di file attivi <br/> |
+|[Report attività peer-to-peer in Skype for Business](peer-to-peer-activity-report.md) <br/> | Totale <br/>  Messaggistica istantanea <br/>  Audio <br/>  Video <br/>  Condivisione applicazioni <br/>  Trasferimento di file <br/> |
+|[Report attività partecipante di conferenze in Skype for Business](conference-participant-activity-report.md) <br/> | Totale <br/>  Messaggistica istantanea <br/>  Audio/video <br/>  Condivisione applicazioni <br/>  Web <br/>  Accesso esterno <br/> |
+|[Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) <br/> | Minuti audio <br/>  Minuti video <br/>  Minuti conferenze audio/video <br/>  Minuti conferenze telefoniche con accesso esterno <br/>  Minuti conferenze telefoniche con chiamata in uscita <br/> |
+|[Skype per report di utilizzo del dispositivo Business](device-usage-report.md) <br/> | Utenti di Windows: <br/>  Utenti Windows Phone <br/>  Utenti Android <br/>  Utenti iPhone <br/>  Utenti iPad <br/> |
+|[Report attività in Skype for Business](activity-report.md) <br/> | Nome utente <br/>  Ora ultimo accesso <br/>  Ora ultima attività <br/>  Totale sessioni peer-to-peer <br/>  Totale sessioni di messaggistica istantanea peer-to-peer <br/>  Totale sessioni audio peer-to-peer <br/>  Totale sessioni video peer-to-peer <br/>  Totale sessioni di condivisione applicazioni peer-to-peer <br/>  Totale minuti sessioni audio peer-to-peer <br/>  Totale minuti sessioni video peer-to-peer <br/>  Totale conferenze organizzate <br/>  Totale conferenze di messaggistica istantanea organizzate <br/>  Totale conferenze audio/video organizzate <br/>  Totale conferenze di condivisione applicazioni organizzate <br/>  Totale conferenze Web organizzate <br/>  Totale conferenze telefoniche con accesso esterno organizzate <br/>  Totale minuti conferenze audio/video organizzate <br/>  Totale conferenze a cui l'utente ha partecipato <br/>  Totale conferenze di messaggistica istantanea a cui l'utente ha partecipato <br/>  Totale conferenze audio/video a cui l'utente ha partecipato <br/>  Totale conferenze di condivisione applicazioni a cui l'utente ha partecipato <br/>  Totale conferenze Web a cui l'utente ha partecipato <br/>  Totale conferenze telefoniche con accesso esterno a cui l'utente ha partecipato <br/>  Totale minuti conferenze audio/video a cui l'utente ha partecipato <br/>  Totale chiamate PSTN effettuate <br/>  Totale chiamate PSTN ricevute <br/>  Totale minuti chiamate PSTN effettuate <br/>  Totale minuti di chiamate PSTN ricevute <br/>  Totale messaggi <br/>  Totale file trasferiti <br/> |
+|[Report di utilizzo PSTN di Skype for Business](pstn-usage-report.md) <br/>  | Nome utente <br/>  Data/ora della chiamata <br/>  Numero di telefono <br/>  CallID <br/>  Tipo di chiamata <br/>  Posizione <br/>  Durata chiamata <br/>  Valuta <br/>  Costo chiamata <br/> |
+|[Skype per gli utenti aziendali bloccati report](users-blocked-report.md) <br/> | Data azione <br/>  Nome utente <br/>  Tipo di azione <br/>  Numero di telefono <br/>  Motivo <br/> |
+|[Skype per minuto Business PSTN pool report](pstn-minute-pools-report.md) <br/> | Capacità è il piano di licenza/servizio utilizzato per la chiamata. <br/> Tipo di licenza <br/> Descrizione delle funzionalità <br/> Pool minuto paese  <br/> Minuti utilizzati <br/> Numero totale di minuti <br/> Percentuale di minuti per il mese <br/> |
+|[Skype per rapporto Dettagli sessione Business](session-details-report.md) <br/> | Alias utente <br/> ID dialogo  <br/> Tipi di contenuto multimediale  <br/> Ora di inizio e fine <br/> Da e verso URI <br/> URL della conferenza <br/> Numero di telefono <br/> |
+ 
+## <a name="related-topics"></a>Argomenti correlati
+[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)

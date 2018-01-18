@@ -1,46 +1,48 @@
 ---
-title: "Gestire Skype for Business Online organizzazioni mediante la Skype per Business Connector Online"
+title: Gestire Skype per le organizzazioni aziendali Online
 ms.author: tonysmit
 author: tonysmit
-ms.date: 5/17/2017
-ms.audience: Admin
+manager: serdars
+ms.date: 12/15/2017
 ms.topic: article
-ms.prod: office-online-server
-localization_priority: Normal
-ms.collection: Adm_Skype4B_Online
 ms.assetid: c71f0d4d-5b6b-40ac-bc4a-6b97c05a121a
-description: "Use Windows PowerShell and the Get-CsTenant and Get-CsTenantLicensingConfiguration cmdlets to get information about your Skype for Business Online tenant."
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+ms.appliesto: Skype for Business
+localization_priority: Normal
+ROBOTS: None
+f1keywords: None
+ms.custom: PowerShell
+description: Utilizzare il cmdlet Get-CsTenant e Get-CsTenantLicensingConfiguration e Windows PowerShell per ottenere informazioni sui Skype per tenant Business Online.
+ms.openlocfilehash: cab693fa153eae99ac605981112a30ec09f49920
+ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/15/2017
 ---
+# <a name="manage-skype-for-business-online-organizations"></a>Gestire Skype per le organizzazioni aziendali Online
 
-# Gestire Skype for Business Online organizzazioni mediante la Skype per Business Connector Online
-
-> [!IMPORTANT]
-> Il presente articolo è stato tradotto automaticamente, vedere la dichiarazione di non responsabilità.  
+È possibile trovare informazioni la Skype per tenant Business Online utilizzando i cmdlet **Get-CsTenant** e **Get-CsTenantLicensingConfiguration** .
   
-È possibile trovare informazioni del tenant Skype for Business online utilizzando i cmdlet **Get-CsTenant** e **Get-CsTenantLicensingConfiguration**.
-  
-## Gestire Skype for Business Online tenant
+## <a name="manage-skype-for-business-online-tenants"></a>Gestire Skype per tenant Business Online
 
-Per restituire le informazioni del tenant Skype for Business online, chiamare il cmdlet [Get-CsTenant](https://go.microsoft.com/fwlink/p/?linkid=849599) senza parametri aggiuntivi.
+Per restituire informazioni sui Skype per tenant Business Online, chiamare il cmdlet [Get-CsTenant](https://go.microsoft.com/fwlink/p/?linkid=849599) senza alcun parametro aggiuntivo.
   
 ```
 Get-CsTenant
 ```
 
-Per restituire solo il tenant nome e ID, usare questo comando.
+Per restituire solo il tenant nome e l'ID, utilizzare questo comando.
   
 ```
 Get-CsTenant | Select-Object Name, TenantID
 ```
 
-Il valore del parametro  _TenantID_ è necessario durante l'esecuzione di cmdlet, ad esempio[Set CsTenantPublicProvider](https://go.microsoft.com/fwlink/p/?linkid=849602) e[Impostare CsTenantFederationConfiguration](https://go.microsoft.com/fwlink/p/?linkid=849602).
+Il valore del parametro _ID tenant_ è necessario quando si esegue cmdlet quali [Set-CsTenantPublicProvider](https://go.microsoft.com/fwlink/p/?linkid=849602) e [Set-CsTenantFederationConfiguration](https://technet.microsoft.com/en-us/library/jj994080.aspx).
   
-Per trovare informazioni su se le informazioni sulle licenze per il tenant specificato sono disponibile nell'interfaccia di amministrazione di Skype for Business online, utilizzare il cmdlet [Get-CsTenantLicensingConfiguration](https://go.microsoft.com/fwlink/p/?linkid=849606) .
+Per informazioni sugli indica se le informazioni sulle licenze per il tenant specificato sono disponibile in Skype per interfaccia di amministrazione di Business in linea, utilizzare il cmdlet [Get-CsTenantLicensingConfiguration](https://go.microsoft.com/fwlink/p/?linkid=849606) .
   
-## 
-<a name="MT_Footer"> </a>
-
-> [!NOTE]
-> **Dichiarazione di non responsabilità per la traduzione automatica**: Il presente articolo è stato tradotto tramite un software di traduzione automatica e non da una persona. Microsoft offre le traduzioni automatiche per consentire a coloro che non conoscono la lingua inglese di leggere gli articoli sui prodotti, sui servizi e sulle tecnologie Microsoft. Dal momento che l'articolo è stato tradotto automaticamente, potrebbe contenere errori di sintassi, di grammatica o di utilizzo dei vocaboli. 
-  
-
+## <a name="related-topics"></a>Argomenti correlati
+[Configurare il computer per Skype per la gestione in linea aziendale tramite Windows PowerShell](set-up-your-computer-for-windows-powershell.md)
