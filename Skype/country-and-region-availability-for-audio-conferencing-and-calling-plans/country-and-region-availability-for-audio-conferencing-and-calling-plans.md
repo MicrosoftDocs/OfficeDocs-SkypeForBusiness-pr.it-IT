@@ -3,32 +3,38 @@ title: "Disponibilità di Audioconferenza e Piani per chiamate per paese e area 
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
-ms.date: 01/22/2018
+ms.reviewer: mikedav, jastark, oscarr, LolaJacobsen
+ms.date: 01/24/2018
 ms.topic: article
 ms.assetid: 95893973-f90d-44d7-ba86-72712f031817
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
-appliesto: Skype for Business, Microsoft Teams
+appliesto:
+- Skype for Business
+- Microsoft Teams
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
+- Strat_SB_PSTN
 - LIL_Placement
 description: "Puoi selezionare un paese/un’area geografica per vedere se sono disponibili o meno Audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e i numeri verdi e a tariffa."
-ms.openlocfilehash: c1d378a37850d8fdb9fb8d4cda68cedb929ba204
-ms.sourcegitcommit: 3fb8ed855e72a28cd28c94f1414fbe81937d9422
+ms.openlocfilehash: 2024b5df01cd1cfa787883fa3b2337500b2dea61
+ms.sourcegitcommit: 77bfcdfbe33f5c55f1508588a939297d7092a5e7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica
 
 Puoi selezionare un paese o un'area geografica per vedere se sono disponibili Audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni.
+
+> [!Note]
+> Se stai cercando un foglio di calcolo con tutti i Paesi e le regioni, scarica e salva la [cartella di lavoro Tutti i Paesi e le regioni](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/downloads/country-region-availabilty/country-and-region-availability-(v.01242018)-(en.us).xlsx?raw=true).
 
 ## <a name="select-your-country-or-region-to-see-whats-available-for-you"></a>Seleziona il tuo paese o la tua area geografica per vedere cosa è disponibile per te!
 
@@ -47,7 +53,7 @@ Puoi selezionare un paese o un'area geografica per vedere se sono disponibili Au
 > - [Canada](availability-in-canada.md)
 > - [Cile](availability-in-chile.md)
 > - [Cina](availability-in-china.md)
-> - [Colombia](availability-in-columbia.md)
+> - [Colombia](availability-in-colombia.md)
 > - [Costa Rica](availability-in-costa-rica.md)
 > - [Croazia](availability-in-croatia.md)
 > - [Cipro](availability-in-cyprus.md)
@@ -165,7 +171,7 @@ Oltre a ottenere numeri di telefono per singoli utenti di Office 365, è anche p
 Utilizza l'elenco a discesa in alto per cercare un paese o un’area geografica e sapere quali servizi sono disponibili.
 
 ### <a name="calling-plans"></a>Piani per chiamate
-Unitamente al Sistema telefonico, un Piano per chiamate consente agli utenti di effettuare e ricevere telefonate. Devi anzitutto ottenere un numero di telefono dell'utente (abbonato) (non un numero di servizio) da assegnare all'utente, e quindi assegnargli un Piano per chiamate. Due sono i tipi di Piani per chiamate disponibili: **Nazionali** e **Nazionali e internazionali**. Per maggiore dettagli, consulta [Che cosa sono i Piani per chiamate?](../what-are-calling-plans-in-office-365/what-are-calling-plans-in-office-365.md)
+Unitamente al Sistema telefonico, un Piano per chiamate consente agli utenti di effettuare e ricevere telefonate. Devi anzitutto ottenere un numero di telefono dell'utente (abbonato) (non un numero di servizio) da assegnare all'utente, e quindi assegnargli un Piano per chiamate. Ci sono due tipi di Piani per chiamate disponibili: **Nazionali** e **Nazionali e internazionali**. Per maggiore dettagli, consulta [Che cosa sono i Piani per chiamate?](../what-are-calling-plans-in-office-365/what-are-calling-plans-in-office-365.md)
 
 Per informazioni sulle licenze puoi anche consultare [Licenze per Sistema telefonico e Piani per chiamate](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
 
@@ -187,7 +193,7 @@ Utilizza l'elenco a discesa in alto per cercare un paese o un’area geografica 
 
 Consigliamo di configurare i Crediti comunicazioni per i tuoi utenti di Audioconferenza e Piani per chiamate che hanno bisogno di effettuare chiamate in uscita verso **qualsiasi destinazione**. Sono inclusi numerosi paesi/aree geografiche, ma alcune destinazioni potrebbero non essere incluse nel tuo Piano per chiamate o nei tuoi abbonamenti Audioconferenza.
   
-Se non vengono impostati i Crediti comunicazioni o assegnata una licenza Crediti comunicazioni agli utenti e vengono esauriti i minuti per la propria organizzazione (a seconda del Piano per chiamate e Audioconferenza per lo specifico paese/area geografica), quegli utenti non potranno effettuare chiamate o chiamate in uscita dalle riunioni.  Per altre informazioni, compresi gli importi consigliati, consulta [Cosa sono i Crediti comunicazioni?](../skype-for-business-and-microsoft-teams-add-on-licensing/what-are-communications-credits.md)
+Se non vengono impostati i Crediti comunicazioni o assegnata una licenza Crediti comunicazioni agli utenti e vengono esauriti i minuti per la propria organizzazione (a seconda del Piano per chiamate e Audioconferenza per lo specifico paese/area geografica), quegli utenti non potranno effettuare chiamate o chiamate in uscita dalle riunioni. Per altre informazioni, compresi gli importi consigliati, consulta [Cosa sono i Crediti comunicazioni?](../skype-for-business-and-microsoft-teams-add-on-licensing/what-are-communications-credits.md)
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 

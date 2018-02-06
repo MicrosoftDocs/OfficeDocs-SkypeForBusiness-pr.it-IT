@@ -1,106 +1,108 @@
 ---
-title: Creazione di un ticket del supporto per la convalida dell'indirizzo
+title: Come faccio a creare un ticket di supporto per la convalida dell'indirizzo?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
-ms.date: 12/15/2017
+ms.reviewer: mikedav, roykuntz, jastark
+ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: 6e7c4964-b7b4-4f87-af00-220a2cd5a1c2
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
-ms.appliesto: Skype for Business, Microsoft Teams
+appliesto:
+- Skype for Business
+- Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 f1keywords: ms.lync.lac.CivicAddressValidationOpenSupportTicket
 ms.custom:
 - Calling Plans
-- Strat_SB_PSTN
-description: "Convalida dell'indirizzo è un aspetto importante della configurazione tariffe di chiamate in Office 365. Un utente all'interno dell'organizzazione fornisce un indirizzo chiamato di emergenza che può essere utilizzato dai servizi di emergenza."
-ms.openlocfilehash: e1f4cfe276f50b80f66a1d20d5c38a18b15b2071
-ms.sourcegitcommit: 8f2e49bc813125137c90de997fb7a6dd74e6d1d5
-ms.translationtype: MT
+description: "La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza."
+ms.openlocfilehash: 3d6ab2d8b21b3ea2a85b3d7a2379cd5589cb392c
+ms.sourcegitcommit: 77bfcdfbe33f5c55f1508588a939297d7092a5e7
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="how-do-i-create-a-support-ticket-for-address-validation"></a>Creazione di un ticket del supporto per la convalida dell'indirizzo
+# <a name="how-do-i-create-a-support-ticket-for-address-validation"></a>Come faccio a creare un ticket di supporto per la convalida dell'indirizzo?
 
-Convalida dell'indirizzo è un aspetto importante della configurazione tariffe di chiamate in Office 365. Un utente all'interno dell'organizzazione fornisce un indirizzo chiamato di emergenza che può essere utilizzato dai servizi di emergenza. Come l'operazione dipende dalle dimensioni dell'organizzazione.
+La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
 
 > [!NOTE]
-> Se si desidera ottenere altri numeri di telefono rispetto a quella, [contattare il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+> Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 
-## <a name="for-organizations-150-or-less-follow-these-steps"></a>Eseguire la procedura seguente per le organizzazioni 150 o meno
-1. Nell' **interfaccia di amministrazione di Office 365**, scegli **ha bisogno di assistenza**?
-2. Nel **ha bisogno di assistenza?** riquadro commenti è necessario Guida in linea con e quindi scegliere **Guida**.
-3. Se i risultati nella sezione di **visualizzare le soluzioni** non utili, scegliere una delle operazioni seguenti:
-    - **Possiamo chiamare l'utente (scelta consigliata)**: verificare il numero del contatto e scegliere **chiama**. Il tempo di attesa prevista per una chiamata è indicato nel **ha bisogno di assistenza?** riquadro.
-    - **Invia un messaggio**: verificare l'indirizzo di posta elettronica, quindi scegliere **Invia**. Il tempo di risposta di chiamata è indicato nel **ha bisogno di assistenza?** riquadro.
+## <a name="for-organizations-150-or-less-follow-these-steps"></a>Per le organizzazioni da 150 persone o meno segui questi passaggi
+1. Nell'**interfaccia di amministrazione di Office 365**, scegli **Serve aiuto**?
+2. Nel riquadro **Serve aiuto?**, comunicaci di cosa hai bisogno, quindi scegli **Richiedi assistenza**.
+3. Se i risultati nella sezione **Mostra soluzioni** non sono d'aiuto, scegli una delle seguenti opzioni:
+    - **Contattaci (consigliato)**: conferma il tuo numero di contatto, quindi premi **Chiamatemi**. Il tempo di attesa previsto per la chiamata è indicato nel riquadro **Serve aiuto?**.
+    - **Inviaci una e-mail**: conferma il tuo indirizzo e-mail, quindi scegli **Invia**. Il tempo di risposta previsto per la chiamata è indicato nel riquadro **Serve aiuto?**.
 
-## <a name="for-organizations-with-more-than-150-users-create-a-service-request-to-validate-an-emergency-address"></a>Per le organizzazioni con più di 150 utenti, creare una richiesta di assistenza per convalidare un indirizzo di emergenza
+## <a name="for-organizations-with-more-than-150-users-create-a-service-request-to-validate-an-emergency-address"></a>Per le organizzazioni con più di 150 utenti, crea una richiesta di servizio per convalidare un indirizzo per gli interventi di emergenza
 
-1. Accedere a Office 365 come amministratore usando l'account aziendale o dell'istituto di istruzione.
+1. Accedi a Office 365 come amministratore usando l'account aziendale o dell'istituto di istruzione.
     
-2. Nell'interfaccia di amministrazione di Office 365 nel riquadro di spostamento sinistra fare clic su **supporto** > **nuova richiesta di assistenza**.
+2. Nell'interfaccia di amministrazione di Office 365 fai clic su **Assistenza** > **Nuova richiesta di servizio**.
     
-3. In **le richieste di assistenza**, fare clic su **Aggiungi**.
+3. In **Richieste di servizio** fai clic su **Aggiungi**.
     
-4. Nella pagina **Creare una richiesta di servizio** fare clic su **Collaborazione online**.
+4. Nella pagina **Creare una richiesta di servizio** fai clic su **Collaborazione online**.
     
-5. Nella pagina **identificare il problema** , selezionare e immettere quanto segue:
+5. Nella pagina **Identificare il problema** seleziona e immetti quanto segue:
     
-  - **Caratteristica:** Selezionare **nazionale piano di chiamata** e/o **piano nazionale e internazionali**.
+  - **Funzionalità**: seleziona **Piano per chiamate nazionali** e/o **Piano per chiamate nazionali e internazionali**.
     
-  - **Sintomo:** Immettere **la chiamata di emergenza**.
+  - **Sintomo:** immetti **Chiamata di emergenza**.
     
-  - **Riepilogo dei problemi:** Immettere **la convalida dell'indirizzo**.
+  - **Riepilogo problema:** immetti **Convalida indirizzo**.
     
-  - **Dettagli del problema:** Immettere le informazioni dettagliate sui address(s) che si desidera convalidare ad esempio il:
+  - **Dettagli problema:** immetti tutti i dettagli relativi all'indirizzo o agli indirizzi che desideri convalidare, ad esempio:
     
       - Numero civico
     
-      - Nome della via
+      - Indirizzo
     
-      - Città o località
+      - Città
     
-      - Paese
+      - Paese o area geografica
     
     > [!IMPORTANT]
-    > **Inserire il paese/area geografica in cui si forniscono tariffe di chiamate in Office 365 che si sta tentando di convalidare un indirizzo di emergenza quando si assegna il numero di telefono.**
+    > **Immettere il paese o area geografica in cui offriamo il servizio Piani per chiamate in Office 365 per il quale stai tentando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
   
-      - Postale o CAP
+      - Codice postale
     
-6. Fare clic su **Pagina successiva** e quindi su **Sì, continua** per continuare.
+6. Fai clic su **Pagina successiva** e quindi su **Sì, continua** per continuare.
     
-7. Nella pagina **Aggiungere i dettagli** selezionare e immettere quanto segue:
+7. Nella pagina **Aggiungere i dettagli** seleziona e immetti quanto segue:
     
-  - **Il servizio non è disponibile.** Selezionare **No**.
+  - **Il servizio non è disponibile?** Seleziona **No**.
     
-  - **Numero di utenti interessato?** Selezionare **alcuni utenti**.
+  - **Quanti utenti sono interessati?** Seleziona **Alcuni utenti**.
     
-  - **Immettere un indirizzo di posta elettronica di un utente interessato dal problema** o lasciare vuoto.
+  - Lascia vuoto il campo **Indirizzo di posta elettronica di un utente interessato dal problema**.
     
-  - **Selezionare i domini per cui si desidera elencare**
+  - **Selezionare i domini da elencare**
     
-  - **Associazione di un file** se si dispone di più indirizzi che è necessario convalidati.
+  - Usa **Allega file** per convalidare più indirizzi.
     
-  - Fare clic su **Avanti**.
+  - Fai clic su **Avanti**.
     
-  - Immettere il proprio numero di telefono di contatto.
+  - Immetti il tuo numero di telefono di contatto.
     
-8. Esaminare le informazioni e quindi fare clic su **Invia richiesta**.
+8. Controlla le informazioni e quindi fai clic su **Invia ticket**.
     
 > [!TIP]
 > Il numero di riferimento sarà elencato nella pagina **Richieste di servizio** nell'interfaccia di amministrazione di Office 365.
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Trasferimento di domande comuni numeri di telefono](transferring-phone-numbers-common-questions.md)
+[Domande comuni sul trasferimento dei numeri di telefono](transferring-phone-numbers-common-questions.md)
 
-[Diversi tipi di numeri di telefono utilizzati per la chiamata dei piani](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
-[Gestire i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+[Gestire i numeri di telefono per la propria organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 

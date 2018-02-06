@@ -1,44 +1,48 @@
 ---
-title: Gestione numerica di telefono per gli Stati Uniti
+title: Gestione dei numeri di telefono per gli Stati Uniti
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
-ms.date: 12/15/2017
+ms.reviewer: mikedav, roykuntz, jastark
+ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: 09c8ca24-d018-422f-8485-9610171016a9
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
-ms.appliesto: Skype for Business, Microsoft Teams
+appliesto:
+- Skype for Business
+- Microsoft Teams
 localization_priority: Normal
-ROBOTS: None
 f1keywords: None
-ms.custom: Calling Plans
-description: Utilizzare questa tabella per trovare le informazioni sul recupero e gestione dei numeri di telefono negli Stati Uniti (e Porto Rico) per Skype Business online.
-ms.openlocfilehash: 862169ea5b6b8d91416574e065ea319840e1176b
-ms.sourcegitcommit: b7f7ff1f88cd71ba289c20e745d0642ce5f11809
-ms.translationtype: MT
+ms.custom:
+- Calling Plans
+- Strat_SB_PSTN
+description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono negli Stati Uniti (e Portorico) per Skype for Business online.
+ms.openlocfilehash: e89c244d00d221da3ec6e9de0a0209be6ee35a7e
+ms.sourcegitcommit: 77bfcdfbe33f5c55f1508588a939297d7092a5e7
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="phone-number-management-for-the-us"></a>Gestione numerica di telefono per gli Stati Uniti
+# <a name="phone-number-management-for-the-us"></a>Gestione dei numeri di telefono per gli Stati Uniti
 
-Utilizzare questa tabella per trovare le informazioni sul recupero e gestione dei numeri di telefono negli Stati Uniti (e Porto Rico) per Skype Business online. 
+Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono negli Stati Uniti (e Portorico) per Skype for Business online. 
   
-Per ulteriori informazioni, vedere [Manage i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization.md).
+Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).
   
-|**Che cosa si desidera eseguire?**|**Eseguire la procedura seguente e scaricare le forme corrette**|
+|**Cosa vuoi fare?**|**Segui queste istruzioni e scarica i moduli corretti**|
 |:-----|:-----|
-|È necessario ottenere numeri di utenti che non sono incluse nel Skype per interfaccia di amministrazione di Business.  <br/> |Scaricare il [nuova richiesta numerico di telefono per gli Stati Uniti (numeri utente) (v.3.0(en.us)](../../downloads/new-phone-number-request-for-the-u.s.-(user-numbers)-(v.3.0)-(en.us).pdf) del modulo, compilare estrazione e [invialo a Microsoft](mailto:gcstnmsd@microsoft.com).  <br/> |
-|È necessario ottenere numeri di telefono trasferiti per noi.  <br/> | Scaricare uno di questi moduli: <br/> [Lettera di autorizzazione (LOA) per gli Stati Uniti (numeri utente e il servizio) (v.3.1)(en.us)](../../downloads/LOA-forms/letter-of-authorization-(loa)-for-the-u.s.-(user-and-service-numbers)-(v.3.1)-(en.us).pdf) <br/> [Lettera di autorizzazione (LOA) per gli Stati Uniti (numeri verdi) (v.3.1)(en.us)](../../downloads/LOA-forms/letter-of-authorization-(loa)-for-the-u.s.-(toll-free-numbers)-(v.3.1)-(en.us).pdf) <br/><br/>**Nota:** Se si sta tentando di ottenere maggiore di 999 sottoscrittore o utente numeri di telefono, è necessario immettere fuori una lettera di autorizzazione (LOA) e inviare per noi. Per ulteriori informazioni, vedere [trasferire i numeri di telefono a Office 365](../../what-are-calling-plans-in-office-365/transfer-phone-numbers-to-office-365.md) .           Estrazione e [invialo a us](mailto:ptn@microsoft.com)del riempimento.  <br/> |
-|È necessario modificare il numero di un utente a un numero di servizio.  <br/> |[Inviare](mailto:ptn@microsoft.com) il PIN e l'elenco di numeri utente si desidera convertire i numeri di servizio. Per impostare un PIN, Vai [qui](../../what-are-calling-plans-in-office-365/set-your-pin-for-transferring-numbers-to-a-new-service-provider.md).  <br/> |
-|È necessario trasferire i numeri da un'organizzazione di Office 365.  <br/> |[Invia commenti](mailto:ptn@microsoft.com) dell'utente (sottoscrittore) numeri di telefono che si desidera trasferire e il PIN dell'organizzazione di origine in cui si desidera trasferire i numeri di elenco. Per impostare un PIN, Vai [qui](../../what-are-calling-plans-in-office-365/set-your-pin-for-transferring-numbers-to-a-new-service-provider.md).  <br/> |
+|Devi ottenere numeri per gli utenti che non sono elencati nell'interfaccia di amministrazione di Skype for Business.  <br/> |Scarica il modulo [Richiesta di nuovo numero di telefono per il Regno Unito (numeri utente) (v.3.0) (en.us)](../../downloads/new-number-request-forms/new-phone-number-request-for-the-u.s.-(user-numbers)-(v.3.0)-(en.us).pdf), compilalo e [inviacelo](mailto:gcstnmsd@microsoft.com).  <br/> |
+|Devi far trasferire a noi numeri di telefono.  <br/> | Scarica uno di questi moduli: <br/> [Lettera di autorizzazione (LOA) per gli Stati Uniti (numeri di servizio e utente) (v.3.1)(en.us)](../../downloads/LOA-forms/letter-of-authorization-(loa)-for-the-u.s.-(user-and-service-numbers)-(v.3.1)-(en.us).pdf) <br/> [Lettera di autorizzazione (LOA) per gli Stati Uniti (numeri verdi) (v.3.1)(en.us)](../../downloads/LOA-forms/letter-of-authorization-(loa)-for-the-u.s.-(toll-free-numbers)-(v.3.1)-(en.us).pdf) <br/><br/>**Nota:** se stai cercando di ottenere più di 999 numeri di telefono degli utenti o degli abbonati, dovrai compilare una lettera di autorizzazione (LOA) e inviarcela. Consulta [Trasferire numeri di telefono in Office 365](../../what-are-calling-plans-in-office-365/transfer-phone-numbers-to-office-365.md) per maggiori informazioni.           Compilalo e [inviacelo](mailto:ptn@microsoft.com).  <br/> |
+|Devi cambiare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptn@microsoft.com) il PIN e l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. Per impostare un PIN, vai [qui](../../what-are-calling-plans-in-office-365/set-your-pin-for-transferring-numbers-to-a-new-service-provider.md).  <br/> |
+|Devi trasferire numeri da un'organizzazione di Office 365 a un'altra.  <br/> |[Inviaci](mailto:ptn@microsoft.com) l'elenco dei numeri di telefono utente (abbonato) che desideri trasferire insieme al PIN dell'organizzazione di origine da cui desideri trasferire i numeri. Per impostare un PIN, vai [qui](../../what-are-calling-plans-in-office-365/set-your-pin-for-transferring-numbers-to-a-new-service-provider.md).  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
-[Diversi tipi di numeri di telefono utilizzati per la chiamata dei piani](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
+[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
-[Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization.md)
+[Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md)
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
 
