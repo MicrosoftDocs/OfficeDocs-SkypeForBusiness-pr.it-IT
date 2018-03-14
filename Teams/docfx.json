@@ -20,8 +20,7 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "**/*.jpg"
         ],
         "exclude": [
           "**/obj/**",
@@ -32,9 +31,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "searchScope": ["Microsoft Teams"],      
       "breadcrumb_path": "/microsoftteams/breadcrumb/toc.json",
-       "extendBreadcrumb": "true"
+       "extendBreadcrumb": "true",
+       "feedback_system": "GitHub",
+       "feedback_github_repo": "MicrosoftDocs/OfficeDocs-SkypeForBusiness",
+       "feedback_product_url": "https://microsoftteams.uservoice.com" 
     },
     "fileMetadata": {},
     "template": [],
