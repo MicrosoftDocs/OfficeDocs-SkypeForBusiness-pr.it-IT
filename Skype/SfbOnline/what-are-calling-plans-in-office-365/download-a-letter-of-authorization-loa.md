@@ -21,10 +21,10 @@ ms.custom:
 - Strat_SB_PSTN
 description: La lettera di autorizzazione (LOA, Letter of Authorization) ci consente di richiedere, a tuo nome, il trasferimento dei numeri esistenti da un provider di servizi diverso in caso di disputa.
 ms.openlocfilehash: 52f4d51a12b174d1b285e702ce65f8511c2a1500
-ms.sourcegitcommit: 46ca433590a4c3aefbe2fb777542bb0b332563bf
-ms.translationtype: HT
+ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="download-a-letter-of-authorization-loa"></a>Download della lettera di autorizzazione (LOA, Letter of Authorization) 
 

@@ -23,10 +23,10 @@ ms.custom:
 - Calling Plans
 description: Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams disponibili per il Canada.
 ms.openlocfilehash: 19bd588ec12256512d7007b378db4c79ee4e2c20
-ms.sourcegitcommit: 46ca433590a4c3aefbe2fb777542bb0b332563bf
-ms.translationtype: HT
+ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="availability-in-canada"></a>Disponibilità in Canada
 

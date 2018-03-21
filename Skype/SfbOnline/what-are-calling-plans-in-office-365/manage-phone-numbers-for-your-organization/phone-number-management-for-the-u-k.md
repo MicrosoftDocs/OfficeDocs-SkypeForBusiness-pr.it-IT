@@ -21,10 +21,10 @@ ms.custom:
 - Strat_SB_PSTN
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono nel Regno Unito per Skype for Business online e Microsoft Teams.
 ms.openlocfilehash: aebfee8efeb09558676c9eb5c746b1350ba6ca1b
-ms.sourcegitcommit: 46ca433590a4c3aefbe2fb777542bb0b332563bf
-ms.translationtype: HT
+ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="phone-number-management-for-the-uk"></a>Gestione dei numeri di telefono per il Regno Unito
 
