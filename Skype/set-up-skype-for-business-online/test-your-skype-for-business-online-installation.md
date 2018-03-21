@@ -1,0 +1,142 @@
+---
+title: Testare l'installazione di Skype for Business online
+ms.author: tonysmit
+author: tonysmit
+manager: serdars
+ms.date: 01/22/2018
+ms.topic: article
+ms.assetid: 19873b1f-8f7e-4dd8-92f4-2ce11344ed5e
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+appliesto:
+- Skype for Business
+localization_priority: Normal
+f1keywords: None
+ms.custom:
+- Setup
+description: 'Learn to save time, support calls and increase satisfaction by setting up test accounts and computers, and testing dial-in conferencing, online features such as person-to-person calls, conferencing, and sign in and out. '
+ms.openlocfilehash: 94a167dad9ab745993315450717e7efc7c5e00bc
+ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/19/2018
+---
+# <a name="test-your-skype-for-business-online-installation"></a><span data-ttu-id="cde8b-103">Testare l'installazione di Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="cde8b-103">Test your Skype for Business Online installation</span></span>
+
+<span data-ttu-id="cde8b-104">[] Per risparmiare tempo, ridurre le chiamate al supporto tecnico e aumentare la soddisfazione dei clienti, esegui una verifica dell'installazione di Skype for Business online prima di configurare il programma per tutti i dipendenti dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="cde8b-104">Save time, reduce support calls, and increase user satisfaction by testing your Skype for Business Online installation before you set it up for everyone in your organization.</span></span>
+  
+<span data-ttu-id="cde8b-105">Ecco quello che occorre:</span><span class="sxs-lookup"><span data-stu-id="cde8b-105">Here's what you need:</span></span>
+  
+- <span data-ttu-id="cde8b-106">Almeno tre account Office 365 (quello personale più altri due account).</span><span class="sxs-lookup"><span data-stu-id="cde8b-106">At least three Office 365 accounts (yours and at least two others).</span></span>
+    
+- <span data-ttu-id="cde8b-p101">Un computer per ogni account di prova. Impostare tali computer con la configurazione tipica dei computer dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="cde8b-p101">A computer for each test account. Set them up like a typical computer would be in your organization.</span></span>
+    
+- <span data-ttu-id="cde8b-p102">Un account supportato da un provider di servizi di audioconferenza per Skype for Business online. Per informazioni dettagliate, vedi [Configurare le audioconferenze per Skype for Business e Microsoft Teams](../audio-conferencing-in-office-365/set-up-audio-conferencing.md).</span><span class="sxs-lookup"><span data-stu-id="cde8b-p102">An account with an audio conferencing provider for Skype for Business Online. To learn more, see [Set up Audio Conferencing for Skype for Business and Microsoft Teams](../audio-conferencing-in-office-365/set-up-audio-conferencing.md).</span></span>
+    
+## <a name="what-do-you-want-to-do"></a><span data-ttu-id="cde8b-111">Selezionare l'operazione da eseguire</span><span class="sxs-lookup"><span data-stu-id="cde8b-111">What do you want to do?</span></span>
+
+> [<span data-ttu-id="cde8b-112">Configurare gli account di prova</span><span class="sxs-lookup"><span data-stu-id="cde8b-112">Set up test accounts</span></span>](test-your-skype-for-business-online-installation.md#__toc328126910)
+    
+> [<span data-ttu-id="cde8b-113">Configurare i computer di prova</span><span class="sxs-lookup"><span data-stu-id="cde8b-113">Set up test computers</span></span>](test-your-skype-for-business-online-installation.md#__toc328126911)
+    
+> [<span data-ttu-id="cde8b-114">Configurare l'audioconferenza</span><span class="sxs-lookup"><span data-stu-id="cde8b-114">Set up Audio Conferencing</span></span>](test-your-skype-for-business-online-installation.md#__toc328126912)
+    
+> [<span data-ttu-id="cde8b-115">Verificare i dispositivi e le funzionalità di Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="cde8b-115">Test Skype for Business Online features and devices</span></span>](test-your-skype-for-business-online-installation.md#__toc328126913)
+    
+## <a name="set-up-test-accounts"></a><span data-ttu-id="cde8b-116">Configurare gli account di prova</span><span class="sxs-lookup"><span data-stu-id="cde8b-116">Set up test accounts</span></span>
+<span data-ttu-id="cde8b-117"><a name="__toc328126910"> </a></span><span class="sxs-lookup"><span data-stu-id="cde8b-117"><a name="__toc328126910"> </a></span></span>
+
+1. <span data-ttu-id="cde8b-118">Passare a **Amministratore** > **Office 365** > **Utenti e gruppi**, selezionare Aggiungi![Aggiungi](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) e immettere le informazioni richieste.</span><span class="sxs-lookup"><span data-stu-id="cde8b-118">Go to **Admin** > **Office 365** > **Users and groups**, then select add![Add](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) and enter the required information.</span></span>
+    
+2. <span data-ttu-id="cde8b-p103">Al passaggio 4 (Posta elettronica) immettere il proprio indirizzo di posta elettronica. Verrà creato un record che contiene il nome utente e la password per il nuovo utente.</span><span class="sxs-lookup"><span data-stu-id="cde8b-p103">When you come to Step 4 (Email), enter your own email address. You'll then have a record of the new user's name and password.</span></span> 
+    
+3. <span data-ttu-id="cde8b-p104">Esegui di nuovo i passaggi 1 e 2 fino alla creazione di tutti gli account di prova desiderati. Oltre a quello personale, devi avere almeno altri due account per verificare le funzionalità relative alle riunioni online di Skype for Business online.</span><span class="sxs-lookup"><span data-stu-id="cde8b-p104">Repeat steps 1 and 2 until you have the number of test accounts you want. You need at least two accounts (besides your own) to test the online meeting capabilities of Skype for Business Online.</span></span> 
+    
+## <a name="set-up-test-computers"></a><span data-ttu-id="cde8b-123">Configurare i computer di prova</span><span class="sxs-lookup"><span data-stu-id="cde8b-123">Set up test computers</span></span>
+<span data-ttu-id="cde8b-124"><a name="__toc328126911"> </a></span><span class="sxs-lookup"><span data-stu-id="cde8b-124"><a name="__toc328126911"> </a></span></span>
+
+<span data-ttu-id="cde8b-125">In ogni computer di prova eseguire le seguenti operazioni:</span><span class="sxs-lookup"><span data-stu-id="cde8b-125">On each test computer:</span></span>
+  
+1. <span data-ttu-id="cde8b-126">Passare alla home page di Office 365 ed eseguire l'accesso usando le credenziali di un account di prova.</span><span class="sxs-lookup"><span data-stu-id="cde8b-126">Go to the Office 365 home page and sign in with credentials from one of your test accounts.</span></span>
+    
+2. <span data-ttu-id="cde8b-127">Andare a **Impostazioni**![Impostazioni: aggiornare il profilo, installare il software e connetterlo al cloud](../images/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png), quindi fare clic su **Installa il software e connettilo al cloud**.</span><span class="sxs-lookup"><span data-stu-id="cde8b-127">Go to **Settings**![Settings: update your profile, install software and connect it to the cloud](../images/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png), and then click **Install software and connect it to the cloud**.</span></span> 
+    
+## <a name="set-up-audio-conferencing"></a><span data-ttu-id="cde8b-128">Configurare l'audioconferenza</span><span class="sxs-lookup"><span data-stu-id="cde8b-128">Set up Audio Conferencing</span></span>
+<span data-ttu-id="cde8b-129"><a name="__toc328126912"> </a></span><span class="sxs-lookup"><span data-stu-id="cde8b-129"><a name="__toc328126912"> </a></span></span>
+
+<span data-ttu-id="cde8b-p105">Per consentire l'accesso telefonico alle riunioni di Skype for Business online, configura un account con un provider di servizi di audioconferenza. In questo modo puoi ottenere:</span><span class="sxs-lookup"><span data-stu-id="cde8b-p105">To provide telephone access to Skype for Business Online meetings, set up an account with an audio conferencing provider. Here's what you get:</span></span>
+  
+- <span data-ttu-id="cde8b-132">Numeri a tariffa per accesso esterno e numeri verdi, se disponibili.</span><span class="sxs-lookup"><span data-stu-id="cde8b-132">Toll dial-in numbers, and toll-free numbers if available.</span></span>
+    
+- <span data-ttu-id="cde8b-133">Un codice conferenza e un PIN per ogni utente dell'organizzazione che pianifica o conduce le riunioni.</span><span class="sxs-lookup"><span data-stu-id="cde8b-133">For each user in your organization who schedules or leads meetings, a conference code and personal identification number (PIN).</span></span>
+    
+<span data-ttu-id="cde8b-p106">Dopo essere stati configurati per i servizi di audioconferenza, gli utenti riceveranno un messaggio di posta elettronica automatico che contiene i numeri di accesso esterno e il codice della conferenza. Queste informazioni verranno automaticamente aggiunte alle nuove convocazioni di riunione di Skype for Business.</span><span class="sxs-lookup"><span data-stu-id="cde8b-p106">After setting up your users for audio conferencing, they receive an automated email message with the dial-in numbers and conference code. This information is also automatically added to new Skype for Business meeting requests.</span></span>
+  
+<span data-ttu-id="cde8b-136">Per i dettagli, vedere [Configurare le audioconferenze per Skype for Business e Microsoft Teams](../audio-conferencing-in-office-365/set-up-audio-conferencing.md).</span><span class="sxs-lookup"><span data-stu-id="cde8b-136">For details, see [Set up Audio Conferencing for Skype for Business and Microsoft Teams](../audio-conferencing-in-office-365/set-up-audio-conferencing.md).</span></span> 
+  
+ <span data-ttu-id="cde8b-137">**Per aggiungere le informazioni relative alle conferenze telefoniche con audio all'account di uno degli utenti di prova**</span><span class="sxs-lookup"><span data-stu-id="cde8b-137">**To add audio conferencing information to the account of one of your test users**</span></span>
+  
+1. <span data-ttu-id="cde8b-138">Fare clic su **Audioconferenza** > **Utenti**.</span><span class="sxs-lookup"><span data-stu-id="cde8b-138">Click **Audio Conferencing** > **Uusers**.</span></span>
+    
+2. <span data-ttu-id="cde8b-139">Fare clic sui nomi degli utenti da configurare per le conferenze telefoniche con accesso esterno, quindi fare clic su **Modifica**![Modifica](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png).</span><span class="sxs-lookup"><span data-stu-id="cde8b-139">Click the names of the users you want to set up for dial-in conferencing, and then click **Edit**![Edit](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png).</span></span>
+    
+3. <span data-ttu-id="cde8b-140">Selezionare il proprio provider di servizi di audioconferenza, digitare le informazioni richieste e fare clic su **Salva**.</span><span class="sxs-lookup"><span data-stu-id="cde8b-140">Select your audio conferencing provider, type the requested information, and then click **Save**.</span></span>
+    
+|<span data-ttu-id="cde8b-141">**Impostazioni delle audioconferenze**</span><span class="sxs-lookup"><span data-stu-id="cde8b-141">**Audio conferencing setting**</span></span>|<span data-ttu-id="cde8b-142">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="cde8b-142">**Description**</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="cde8b-143">**Provider**</span><span class="sxs-lookup"><span data-stu-id="cde8b-143">**Provider**</span></span> <br/> |<span data-ttu-id="cde8b-144">Scegliere il provider di servizi di audioconferenza dall'elenco.</span><span class="sxs-lookup"><span data-stu-id="cde8b-144">Choose your audio conferencing provider from the list.</span></span>  <br/> |
+|<span data-ttu-id="cde8b-145">**Numero a pagamento** (obbligatorio)</span><span class="sxs-lookup"><span data-stu-id="cde8b-145">**Toll number** (required)</span></span> <br/> |<span data-ttu-id="cde8b-p107">Numeri di telefono ricevuti dal provider di servizi di audioconferenza. Applica ai numeri la formattazione da visualizzare negli inviti alle riunioni di Skype for Business.</span><span class="sxs-lookup"><span data-stu-id="cde8b-p107">The phone numbers you received from the audio conferencing provider. Format the numbers like you want them to appear in Skype for Business meeting invitations.</span></span>  <br/> |
+|<span data-ttu-id="cde8b-148">**Numero verde**</span><span class="sxs-lookup"><span data-stu-id="cde8b-148">**Toll-free number**</span></span> <br/> |<span data-ttu-id="cde8b-p108">Numeri di telefono ricevuti dal provider di servizi di audioconferenza. Applica ai numeri la formattazione da visualizzare negli inviti alle riunioni di Skype for Business.</span><span class="sxs-lookup"><span data-stu-id="cde8b-p108">The phone numbers you received from the audio conferencing provider. Format the numbers like you want them to appear in Skype for Business meeting invitations.</span></span>  <br/> |
+|<span data-ttu-id="cde8b-151">**Passcode**</span><span class="sxs-lookup"><span data-stu-id="cde8b-151">**Passcode**</span></span> <br/> |<span data-ttu-id="cde8b-152">Passcode, o codice conferenza, per questo utente.</span><span class="sxs-lookup"><span data-stu-id="cde8b-152">The passcode, or conference code, for this user.</span></span>  <br/> |
+   
+## <a name="test-skype-for-business-online-features-and-devices"></a><span data-ttu-id="cde8b-153">Verificare i dispositivi e le funzionalità di Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="cde8b-153">Test Skype for Business Online features and devices</span></span>
+<span data-ttu-id="cde8b-154"><a name="__toc328126913"> </a></span><span class="sxs-lookup"><span data-stu-id="cde8b-154"><a name="__toc328126913"> </a></span></span>
+
+<span data-ttu-id="cde8b-155">Verifica che le funzionalità principali di Skype for Business online funzionino come previsto.</span><span class="sxs-lookup"><span data-stu-id="cde8b-155">Verify that the major Skype for Business Online features are working as expected.</span></span>
+  
+ <span data-ttu-id="cde8b-156">**Accesso e disconnessione**</span><span class="sxs-lookup"><span data-stu-id="cde8b-156">**Sign in and sign out**</span></span>
+  
+|<span data-ttu-id="cde8b-157">**Attività**</span><span class="sxs-lookup"><span data-stu-id="cde8b-157">**Task**</span></span>|<span data-ttu-id="cde8b-158">**Risultato previsto**</span><span class="sxs-lookup"><span data-stu-id="cde8b-158">**Expected result**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="cde8b-159">Effettuare l'accesso e disconnettersi da Lync Online</span><span class="sxs-lookup"><span data-stu-id="cde8b-159">Sign in to and out of Lync Online</span></span>](http://support.office.com/article/1f0fb5f3-102e-4397-a5c4-f878cc0009d6) <br/> |<span data-ttu-id="cde8b-160">Viene visualizzata la finestra principale di Skype for Business, con lo stato presenza specificato al momento dell'accesso</span><span class="sxs-lookup"><span data-stu-id="cde8b-160">The Skype for Business main window appears, with the presence state you specified when you signed in</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-161">Effettuare l'accesso e disconnettersi da Lync Online</span><span class="sxs-lookup"><span data-stu-id="cde8b-161">Sign in to and out of Lync Online</span></span>](http://support.office.com/article/1f0fb5f3-102e-4397-a5c4-f878cc0009d6) <br/> |<span data-ttu-id="cde8b-162">Viene visualizzata la schermata di accesso di Skype for Business</span><span class="sxs-lookup"><span data-stu-id="cde8b-162">The Skype for Business sign-in screen is displayed</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-163">Effettuare l'accesso e disconnettersi da Lync Online</span><span class="sxs-lookup"><span data-stu-id="cde8b-163">Sign in to and out of Lync Online</span></span>](http://support.office.com/article/1f0fb5f3-102e-4397-a5c4-f878cc0009d6) <br/> |<span data-ttu-id="cde8b-164">La finestra di Skype for Business viene chiusa e l'icona di Skype for Business non è più visualizzata nell'area di notifica di Windows.</span><span class="sxs-lookup"><span data-stu-id="cde8b-164">The Skype for Business window closes, and the Skype for Business icon no longer appears in the Windows notification area.</span></span>  <br/> |
+   
+<span data-ttu-id="cde8b-p109">Non riesci ad accedere? Vedi [Come risolvere i problemi di accesso a Skype for Business online](https://support.microsoft.com/kb/2541980).</span><span class="sxs-lookup"><span data-stu-id="cde8b-p109">Can't sign in? See [How to troubleshoot sign-in issues in Skype for Business Online](https://support.microsoft.com/kb/2541980).</span></span>
+  
+ <span data-ttu-id="cde8b-167">**Contatti, presenza e messaggistica istantanea**</span><span class="sxs-lookup"><span data-stu-id="cde8b-167">**Contacts, presence, and instant messaging**</span></span>
+  
+|<span data-ttu-id="cde8b-168">**Attività**</span><span class="sxs-lookup"><span data-stu-id="cde8b-168">**Task**</span></span>|<span data-ttu-id="cde8b-169">**Risultato previsto**</span><span class="sxs-lookup"><span data-stu-id="cde8b-169">**Expected result**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="cde8b-170">Inviare un messaggio istantaneo in Skype for Business</span><span class="sxs-lookup"><span data-stu-id="cde8b-170">Send an IM in Skype for Business</span></span>](http://support.office.com/article/b3aefb9b-dec8-4be8-a1ee-1eab12144d05) <br/> |<span data-ttu-id="cde8b-171">Digita del testo nella finestra di conversazione di Skype for Business visualizzata e riceverai una risposta dalla persona contattata.</span><span class="sxs-lookup"><span data-stu-id="cde8b-171">The Skype for Business conversation window appears, you type something, and you receive a response from the person you contacted.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-172">Inviare un messaggio istantaneo in Skype for Business</span><span class="sxs-lookup"><span data-stu-id="cde8b-172">Send an IM in Skype for Business</span></span>](http://support.office.com/article/b3aefb9b-dec8-4be8-a1ee-1eab12144d05) <br/> |<span data-ttu-id="cde8b-173">Digita del testo nella finestra di conversazione di Skype for Business visualizzata e chiunque partecipi alla conversazione risponderà.</span><span class="sxs-lookup"><span data-stu-id="cde8b-173">The Skype for Business conversation window appears, you type something, and everyone in the conversation responds.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-174">Ricerca di un contatto tramite il nome o il cognome</span><span class="sxs-lookup"><span data-stu-id="cde8b-174">Search for a contact by using their first or last name</span></span>](https://support.office.live.com/article/29fa2061-f679-4e0d-902d-736b67774c8b#BKMK_ContactsFAQ) <br/> |<span data-ttu-id="cde8b-175">I risultati di ricerca iniziano a comparire non appena si digita qualcosa.</span><span class="sxs-lookup"><span data-stu-id="cde8b-175">Your search results begin to appear as soon as you start typing.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-176">Domande frequenti su Lync per Office 365</span><span class="sxs-lookup"><span data-stu-id="cde8b-176">FAQ about Lync for Office 365</span></span>](http://support.office.com/article/29fa2061-f679-4e0d-902d-736b67774c8b.aspx#BKMK_ContactsFAQ) <br/> |<span data-ttu-id="cde8b-177">Il contatto aggiunto viene visualizzato nel gruppo di contatti scelto.</span><span class="sxs-lookup"><span data-stu-id="cde8b-177">The contact you added appears in the Contacts group you chose.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-178">Modificare lo stato presenza in Lync</span><span class="sxs-lookup"><span data-stu-id="cde8b-178">Change your presence status in Lync</span></span>](http://support.office.com/article/ef8998cc-7801-4b62-81ba-9a2c1630f9e5) <br/> |<span data-ttu-id="cde8b-179">Il nuovo stato presenza viene aggiornato nell'elenco Contatti delle altre persone.</span><span class="sxs-lookup"><span data-stu-id="cde8b-179">Your new presence status is reflected in other people's Contacts list.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-180">Utilizzare la scheda contatto</span><span class="sxs-lookup"><span data-stu-id="cde8b-180">Use the contact card</span></span>](http://support.office.com/article/19870880-FC90-46B0-9C60-C398518E9FBC) <br/> |<span data-ttu-id="cde8b-181">La scheda contatto della persona viene visualizzata accanto al nome.</span><span class="sxs-lookup"><span data-stu-id="cde8b-181">The person's contact card appears near their name.</span></span>  <br/> |
+   
+ <span data-ttu-id="cde8b-182">**Chiamate dirette**</span><span class="sxs-lookup"><span data-stu-id="cde8b-182">**Person-to-person calls**</span></span>
+  
+|<span data-ttu-id="cde8b-183">**Attività**</span><span class="sxs-lookup"><span data-stu-id="cde8b-183">**Task**</span></span>|<span data-ttu-id="cde8b-184">**Risultato previsto**</span><span class="sxs-lookup"><span data-stu-id="cde8b-184">**Expected result**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="cde8b-185">Effettuare e ricevere una chiamata audio Lync</span><span class="sxs-lookup"><span data-stu-id="cde8b-185">Make and receive a Lync audio call</span></span>](http://support.office.com/article/39342f16-4d16-44de-a806-0b2b566f3886) <br/> |<span data-ttu-id="cde8b-p110">Viene visualizzata la finestra di conversazione e si sente lo squillo della chiamata. La persona chiamata riceve un avviso per il desktop e accetta la chiamata, quindi la finestra di conversazione viene aggiornata quando l'altra persona si connette.</span><span class="sxs-lookup"><span data-stu-id="cde8b-p110">The conversation window appears and you hear the call ringing. The person you're calling receives a desktop alert and accepts the call, and the conversation window is updated when they're connected.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-188">Aggiungere audio a una conversazione istantanea di Lync</span><span class="sxs-lookup"><span data-stu-id="cde8b-188">Add audio to a Lync instant message conversation</span></span>](http://support.office.com/article/21a098b2-63f1-4205-a9aa-532b6a67ea92) <br/> |<span data-ttu-id="cde8b-189">La chiamata si connette ed è possibile inviare messaggi istantanei e parlare con l'altra persona.</span><span class="sxs-lookup"><span data-stu-id="cde8b-189">The call is connected and you can IM and talk with the other person.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-190">Condividere il desktop o un programma in Lync</span><span class="sxs-lookup"><span data-stu-id="cde8b-190">Share your desktop or a program in Lync</span></span>](http://support.office.com/article/33aaa965-eb32-42a9-8a9b-cdfffa364842) <br/> |<span data-ttu-id="cde8b-191">Il desktop o il programma condiviso è visibile per l'altra persona.</span><span class="sxs-lookup"><span data-stu-id="cde8b-191">The desktop or program you shared is visible to the other person.</span></span>  <br/> |
+   
+ <span data-ttu-id="cde8b-192">**Conferenze**</span><span class="sxs-lookup"><span data-stu-id="cde8b-192">**Conferencing**</span></span>
+  
+|<span data-ttu-id="cde8b-193">**Attività**</span><span class="sxs-lookup"><span data-stu-id="cde8b-193">**Task**</span></span>|<span data-ttu-id="cde8b-194">**Risultato previsto**</span><span class="sxs-lookup"><span data-stu-id="cde8b-194">**Expected result**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="cde8b-195">Configurare una riunione Lync</span><span class="sxs-lookup"><span data-stu-id="cde8b-195">Set up a Lync Meeting</span></span>](http://support.office.com/article/258f9d20-f06c-49a4-a77f-7f5ac635bb5d) <br/> |<span data-ttu-id="cde8b-196">Viene inviata una convocazione per la riunione alle persone specificate.</span><span class="sxs-lookup"><span data-stu-id="cde8b-196">A meeting invitation is sent to the people you specified.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-197">Modificare le impostazioni dei partecipanti per le riunioni Lync</span><span class="sxs-lookup"><span data-stu-id="cde8b-197">Change participant settings for Lync Meetings</span></span>](http://support.office.com/article/cee2aa78-d878-4a63-ad33-9c249fceced9) <br/> |<span data-ttu-id="cde8b-198">Variabile a seconda dell'opzione.</span><span class="sxs-lookup"><span data-stu-id="cde8b-198">Varies depending on the option.</span></span>  <br/> <span data-ttu-id="cde8b-199">**SUGGERIMENTO:** in **Accessi e relatori** è possibile sperimentare le diverse impostazioni dell'opzione **Persone che evitano la sala di attesa**.</span><span class="sxs-lookup"><span data-stu-id="cde8b-199">**TIP:** Under **Access and presenters**, you can experiment with different settings of the **Who will bypass the lobby** option.</span></span> <br/> |
+|[<span data-ttu-id="cde8b-200">Partecipazione a una riunione Skype for Business (Lync)</span><span class="sxs-lookup"><span data-stu-id="cde8b-200">Joining a Lync Meeting</span></span>](http://support.office.com/article/538716dc-f4f2-48c2-af96-587c62387b87) <br/> |<span data-ttu-id="cde8b-201">Viene visualizzata la finestra di conversazione e il proprio nome compare nell'elenco dei partecipanti alla riunione dopo la connessione.</span><span class="sxs-lookup"><span data-stu-id="cde8b-201">The conversation window opens, and your name appears in the list of meeting participants once you're connected.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-202">Attivare o disattivare il microfono in una chiamata o riunione Skype for Business</span><span class="sxs-lookup"><span data-stu-id="cde8b-202">Mute or unmute your microphone in a Skype for Business meeting or call</span></span>](http://support.office.com/article/47399948-db7f-4ee5-8e61-53a94bb97704) <br/> |<span data-ttu-id="cde8b-p111">L'icona Audio disattivato viene visualizzata accanto al nome di tutte le persone incluse nell'elenco dei partecipanti alla riunione. Solo la voce del relatore è udibile.</span><span class="sxs-lookup"><span data-stu-id="cde8b-p111">The Muted icon appears next to the name of everyone in the meeting participant list. Only you can be heard when you speak.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-205">Presentare diapositive di PowerPoint in una riunione Lync</span><span class="sxs-lookup"><span data-stu-id="cde8b-205">Present PowerPoint slides in a Lync Meeting</span></span>](http://support.office.com/article/3910a2b2-01df-4b97-9451-322b598ede7e) <br/> |<span data-ttu-id="cde8b-206">La presentazione di PowerPoint viene visualizzata nei computer di tutti i partecipanti nella finestra di condivisione della riunione Skype for Business.</span><span class="sxs-lookup"><span data-stu-id="cde8b-206">Your PowerPoint presentation is displayed on everyone's computer in the Skype for Business meeting stage window.</span></span>  <br/> |
+|[<span data-ttu-id="cde8b-207">Trasferire un file in una riunione di Lync</span><span class="sxs-lookup"><span data-stu-id="cde8b-207">Transfer a file in a Lync Meeting</span></span>](http://support.office.com/article/f6942910-bc1d-4a48-bf18-385778f08088) <br/> |<span data-ttu-id="cde8b-208">Dopo il caricamento, tutti nella riunione potranno visualizzare e scaricare l'allegato.</span><span class="sxs-lookup"><span data-stu-id="cde8b-208">After upload, everyone else in the meeting can view and download the attachment.</span></span>  <br/> |
+   
+## <a name="related-topics"></a><span data-ttu-id="cde8b-209">See also</span><span class="sxs-lookup"><span data-stu-id="cde8b-209">Related topics</span></span>
+[<span data-ttu-id="cde8b-210">Configurare Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="cde8b-210">Set up Skype for Business Online</span></span>](set-up-skype-for-business-online.md)
+
+[<span data-ttu-id="cde8b-211">Consentire agli utenti di Skype for Business di aggiungere contatti Skype</span><span class="sxs-lookup"><span data-stu-id="cde8b-211">Let Skype for Business users add Skype contacts</span></span>](let-skype-for-business-users-add-skype-contacts.md)
