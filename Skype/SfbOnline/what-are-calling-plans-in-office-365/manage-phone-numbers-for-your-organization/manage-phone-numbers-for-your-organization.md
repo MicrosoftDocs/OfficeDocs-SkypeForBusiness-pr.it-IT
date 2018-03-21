@@ -4,7 +4,7 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: mikedav, roykuntz, jastark
-ms.date: 02/06/2018
+ms.date: 03/19/2018
 ms.topic: article
 ms.assetid: 6b61cb3c-361c-48a8-a9ef-d81bddde27bb
 ms.tgt.pltfrm: cloud
@@ -24,11 +24,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Ciascun Paese o area geografica ha istruzioni diverse per ottenere i numeri di telefono per gli utenti in Skype for Business online e Microsoft Teams. Segui il link relativo al tuo Paese o area geografica per ricevere le informazioni di cui hai bisogno.
-ms.openlocfilehash: 600d1370d0823c0cf5efab0c75ce0f26d6867828
-ms.sourcegitcommit: 730194fa152085ca2cee30373eaf68efa5f6b4ce
+ms.openlocfilehash: 01c6f3bbb01d74d021594612561d035163378ba5
+ms.sourcegitcommit: e7e4d7200b586ff3d21d93a17867eb20a13a6212
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="manage-phone-numbers-for-your-organization"></a>Gestire i numeri di telefono per la propria organizzazione
 Esistono tre modi per ottenere l'utente e servizio (a pagamento e il numero verde) numeri per l'organizzazione.
@@ -37,7 +37,7 @@ Esistono tre modi per ottenere l'utente e servizio (a pagamento e il numero verd
 - Trasferire o "porte" i numeri esistenti over per noi.
 
 > [!IMPORTANT]
-> In **Belgio, Irlanda, Germania e i Paesi Bassi**, non è possibile ottenere telefono nuovi numeri di telefono utilizzando **Skype per Business admin center**; è necessario scaricare e compilare un modulo.
+> In **Belgio, Irlanda, Germania e i Paesi Bassi**, non è possibile ottenere telefono nuovi numeri di telefono utilizzando **Skype per Business admin center**; è necessario scaricare e compilare un modulo. Per nuovi numeri di telefono in Australia, vedere [Servizi vocali Telstra](http://aka.ms/TelstraVoicePlan). 
 
 ***
 Se si conosce il tipo di moduli che si sta cercando utilizzare il menu a discesa per selezionare il paese/area geografica in cui si desidera ottenere numeri.
