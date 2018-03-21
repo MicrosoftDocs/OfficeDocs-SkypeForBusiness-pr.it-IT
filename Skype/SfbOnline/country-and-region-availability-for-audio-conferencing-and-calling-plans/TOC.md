@@ -15,8 +15,7 @@
 ### [Chiamata in uscita all'interno di una riunione per consentire ad altri di parteciparvi](../audio-conferencing-in-office-365/dialing-out-from-a-meeting-so-other-people-can-join-it.md)
 ### [Disattivazione di numeri verdi per utenti specifici](../audio-conferencing-in-office-365/disabling-toll-free-numbers-for-specific-users.md)
 ### [E-mail inviate automaticamente agli utenti in caso di modifica delle impostazioni](../audio-conferencing-in-office-365/emails-sent-to-users-when-their-settings-change.md) 
-### [Abilitare o disabilitare l'invio automatico dei messaggi di posta elettronica quando le
-impostazioni vengono modificate](../audio-conferencing-in-office-365/enable-or-disable-sending-emails-when-their-settings-change.md)
+### [Abilitare o disabilitare l'invio automatico dei messaggi di posta elettronica quando le impostazioni vengono modificate](../audio-conferencing-in-office-365/enable-or-disable-sending-emails-when-their-settings-change.md)
 ### [Consentire agli utenti di registrare il loro nome quando partecipano a una riunione](../audio-conferencing-in-office-365/enable-users-to-record-their-name-when-they-join-a-meeting.md)
 ### [Gestire le impostazioni di audioconferenza per l'organizzazione](../audio-conferencing-in-office-365/manage-the-audio-conferencing-settings-for-my-organization.md)
 ### [Gestire le impostazioni di audioconferenza per un utente](../audio-conferencing-in-office-365/manage-the-audio-conferencing-settings-for-a-user.md)
