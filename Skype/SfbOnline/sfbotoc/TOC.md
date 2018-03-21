@@ -1,5 +1,5 @@
 
-# [Skype per Business Admin Online](../skype-for-business-online.md)
+# [Amministratore Skype for Business online](../skype-for-business-online.md)
 
 ## [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
@@ -13,15 +13,14 @@
 ### [Cambiare i numeri di telefono del bridge per i servizi di audioconferenza](../audio-conferencing-in-office-365/change-the-phone-numbers-on-your-audio-conferencing-bridge.md)
 ### [Confrontare i provider di servizi di audioconferenza](../audio-conferencing-in-office-365/compare-audio-conferencing-providers.md)
 ### [Chiamata in uscita all'interno di una riunione per consentire ad altri di parteciparvi](../audio-conferencing-in-office-365/dialing-out-from-a-meeting-so-other-people-can-join-it.md)
-### [Disattivazione di numeri verdi per utenti specifici](../audio-conferencing-in-office-365/disabling-toll-free-numbers-for-specific-users.md)
+### [Disabling toll-free numbers for specific users](../audio-conferencing-in-office-365/disabling-toll-free-numbers-for-specific-users.md)
 ### [E-mail inviate automaticamente agli utenti in caso di modifica delle impostazioni](../audio-conferencing-in-office-365/emails-sent-to-users-when-their-settings-change.md) 
-### [Abilitare o disabilitare l'invio automatico dei messaggi di posta elettronica quando le
-impostazioni vengono modificate](../audio-conferencing-in-office-365/enable-or-disable-sending-emails-when-their-settings-change.md)
+### [Abilitare o disabilitare l'invio automatico dei messaggi di posta elettronica quando le impostazioni vengono modificate](../audio-conferencing-in-office-365/enable-or-disable-sending-emails-when-their-settings-change.md)
 ### [Consentire agli utenti di registrare il loro nome quando partecipano a una riunione](../audio-conferencing-in-office-365/enable-users-to-record-their-name-when-they-join-a-meeting.md)
 ### [Gestire le impostazioni di audioconferenza per l'organizzazione](../audio-conferencing-in-office-365/manage-the-audio-conferencing-settings-for-my-organization.md)
 ### [Gestire le impostazioni di audioconferenza per un utente](../audio-conferencing-in-office-365/manage-the-audio-conferencing-settings-for-a-user.md)
 ### [Spostamento di un provider di servizi di audioconferenza a Microsoft](../audio-conferencing-in-office-365/moving-a-user-s-audio-conferencing-provider-to-microsoft.md)
-### [Stratégies de restriction chiamata in uscita per le chiamate PSTN per conferenze Audio e degli utenti](../audio-conferencing-in-office-365/outbound-calling-restriction-policies.md)
+### [Outbound calling restriction policies for Audio Conferencing and user PSTN calls](../audio-conferencing-in-office-365/outbound-calling-restriction-policies.md)
 ### [Numeri di telefono per i servizi di audioconferenza](../audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing.md)
 ### [Reimpostare un ID conferenza per un utente](../audio-conferencing-in-office-365/reset-a-conference-id-for-a-user.md)
 ### [Reimpostare il PIN di audioconferenza per un utente](../audio-conferencing-in-office-365/reset-the-audio-conferencing-pin-for-a-user.md)
@@ -52,7 +51,7 @@ impostazioni vengono modificate](../audio-conferencing-in-office-365/enable-or-d
 ### [Recupero di numeri di telefono per gli utenti](../what-are-calling-plans-in-office-365/getting-phone-numbers-for-your-users.md)
 ### [Come ottenere i Piani per chiamate per Office 365](../what-are-calling-plans-in-office-365/how-to-get-calling-plans-for-office-365.md)
 ### [Gestire i numeri di telefono per la propria organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
-#### [Gestione numerica di telefono per Australia](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/phone-number-management-for-australia.md)
+#### [Gestione dei numeri di telefono per il Belgio](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/phone-number-management-for-australia.md)
 #### [Gestione dei numeri di telefono per il Belgio](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/phone-number-management-for-belgium.md)
 #### [Gestione dei numeri di telefono per il Canada](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/phone-number-management-for-canada.md)
 #### [Gestione dei numeri di telefono per la Francia](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/phone-number-management-for-france.md)
@@ -86,7 +85,7 @@ impostazioni vengono modificate](../audio-conferencing-in-office-365/enable-or-d
 #### [Lingue per i messaggi di saluto della segreteria e i messaggi di Skype for Business](../what-is-phone-system-in-office-365/phone-system-voicemail/languages-for-voicemail-greetings-and-messages.md)
 #### [Impostare la segreteria telefonica del Sistema telefonico - Guida per gli amministratori](../what-is-phone-system-in-office-365/phone-system-voicemail/set-up-phone-system-voicemail.md)
 ### [Impostare un operatore automatico in Sistema telefonico](../what-is-phone-system-in-office-365/set-up-a-phone-system-auto-attendant.md)
-### [Impostazione di sistema telefonico all'interno dell'organizzazione](../what-is-phone-system-in-office-365/setting-up-your-phone-system.md)
+### [Setting up Phone System in your organization](../what-is-phone-system-in-office-365/setting-up-your-phone-system.md)
 ### [Cosa sono gli operatori automatici in Sistema telefonico](../what-is-phone-system-in-office-365/what-are-phone-system-auto-attendants.md)
 
 ## [Configurare la rete per Skype Meeting Broadcast](../set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast.md)
