@@ -1,0 +1,98 @@
+---
+title: Cosa sono i Crediti comunicazioni?
+ms.author: tonysmit
+author: tonysmit
+manager: serdars
+ms.reviewer: mikedav
+ms.date: 01/22/2018
+ms.topic: article
+ms.assetid: 524dbea7-117f-493d-8005-6461f7f10059
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+appliesto:
+- Skype for Business
+- Microsoft Teams
+localization_priority: Normal
+f1keywords: None
+ms.custom:
+- Licensing
+- Strat_SB_PSTN
+description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
+ms.openlocfilehash: 604fb504d54ffb2721e82cac6364629b04feea15
+ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/19/2018
+---
+# <a name="what-are-communications-credits"></a><span data-ttu-id="6f1d6-103">Cosa sono i Crediti comunicazioni?</span><span class="sxs-lookup"><span data-stu-id="6f1d6-103">What are Communications Credits?</span></span>
+
+<span data-ttu-id="6f1d6-p101">[] I Crediti comunicazioni son un modo comodo per pagare i minuti di Audioconferenze e Piani per chiamate. Tu e i tuoi utenti sarete sempre in grado di:</span><span class="sxs-lookup"><span data-stu-id="6f1d6-p101">Communications Credits are a convenient way to pay for Audio Conferencing and Calling Plan minutes. It helps ensure you and your users are never caught without being able to:</span></span>
+  
+- <span data-ttu-id="6f1d6-p102">Aggiungere numeri verdi da usare per riunioni, operatori automatici o code di chiamata per l'Audioconferenza. Le chiamate a numero verde sono fatturate a minuti e richiedono un saldo positivo di Crediti comunicazioni.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-p102">Add toll-free numbers to use with Audio Conferencing meetings, auto attendants, or call queues. Toll-free calls are billed per minute and require a positive Communications Credits balance.</span></span>
+    
+- <span data-ttu-id="6f1d6-108">Effettuare chiamate in uscita da una riunione in audioconferenza per aggiungere altri utenti da qualsiasi parte del mondo.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-108">Dialing out from an Audio Conference meeting to add someone else from anywhere in the world.</span></span>
+    
+- <span data-ttu-id="6f1d6-109">Effettuare chiamate in uscita da una conferenza di Audioconferenza al proprio telefono cellulare con l'app Skype for Business o Microsoft Teams installata, non ancora incluse nell'abbonamento.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-109">Dialing out from an Audio Conference meeting to your mobile phone with the Skype for Business or Microsoft Teams app installed to destinations that aren't already included in your subscription.</span></span>
+    
+- <span data-ttu-id="6f1d6-110">Comporre numeri di telefono internazionali nel caso siano disponibili abbonamenti per un **Piano per chiamate nazionali**.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-110">Dial any international phone number when you have **Domestic Calling Plan** subscriptions.</span></span>
+    
+- <span data-ttu-id="6f1d6-111">Comporre i numeri di telefono internazionale oltre a quelli descritti in una sottoscrizione **nazionali e internazionali chiamata pianificare** .</span><span class="sxs-lookup"><span data-stu-id="6f1d6-111">Dial international phone numbers beyond what is included in a **Domestic and International Calling Plan** subscription.</span></span>
+    
+- <span data-ttu-id="6f1d6-112">Effettuare chiamate in uscita e verrà al minuto dopo aver esaurito l'allocazione minuta mensile per la risoluzione.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-112">Dial out and pay per minute once you have exhausted your monthly minute allotment.</span></span>
+    
+> [!NOTE]
+> <span data-ttu-id="6f1d6-p103">Le chiamate in uscita verso alcune destinazioni possono essere incluse nel tuo abbonamento Audioconferenza. Per i dettagli, controlla le informazioni sull'abbonamento.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-p103">Outbound calls to some destinations may be included in your Audio Conferencing subscription. Please check your subscription information for details.</span></span> 
+  
+> [!NOTE]
+> <span data-ttu-id="6f1d6-p104">Se l'organizzazione risiede in un'area geografica diversa dall'indirizzo di fatturazione del tuo contratto aziendale (EA, enterprise agreement), potrebbe non essere possibile acquistare Crediti comunicazioni. Se non riesci ad acquistare Crediti comunicazioni, apri un ticket di assistenza sul portale e collaboreremo per correggere la situazione finché non sarà implementata una soluzione permanente.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-p104">If your organization is located in a different region than the billing address of your Enterprise Agreement (EA), you might not be able to purchase Communications Credits. If you are unable to acquire Communications Credits, open a support incident from the portal and we will work with you to mitigate this issue until a permanent solution is in place.</span></span> 
+  
+## <a name="what-are-the-communications-credits-rates"></a><span data-ttu-id="6f1d6-117">Quali sono le tariffe dei Crediti comunicazioni?</span><span class="sxs-lookup"><span data-stu-id="6f1d6-117">What are the Communications Credits rates?</span></span>
+
+<span data-ttu-id="6f1d6-118">Se vuoi sapere quali sono i costi delle chiamate dei Piani per chiamate, consulta i piani di [Tariffe per le chiamate](https://products.office.com/en-us/skype-for-business/pstn-calling-plans#Rates) dei Crediti comunicazioni.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-118">If you're wondering how what the cost of the calls are for Calling Plans, see Communications Credits [Rates for Calling](https://products.office.com/en-us/skype-for-business/pstn-calling-plans#Rates) Plans.</span></span>
+  
+## <a name="what-is-it"></a><span data-ttu-id="6f1d6-119">Descrizione</span><span class="sxs-lookup"><span data-stu-id="6f1d6-119">What is it?</span></span>
+
+<span data-ttu-id="6f1d6-p105">Per usare i numeri verdi in Skype for Business, sono necessari Crediti comunicazioni in quanto queste chiamate sono fatturate a minuto. Inoltre, è consigliabile impostare i Crediti comunicazioni per gli utenti di Piani per chiamate e Audioconferenza che hanno necessità di effettuare chiamate in uscita verso **qualsiasi destinazione PSTN**. Sono inclusi molti paesi/aree geografiche, ma alcune destinazioni PSTN possono non essere incluse in un dato abbonamento Piano per chiamate e Audioconferenza. Se non vengono impostati i Crediti comunicazioni o assegnata una licenza agli utenti e vengono esauriti i minuti per la propria organizzazione (a seconda del Piano per chiamate e Audioconferenza per lo specifico paese/area geografica), quegli utenti non potranno effettuare chiamate o chiamate in uscita dalle riunioni online in audioconferenza.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-p105">To use toll-free numbers in Skype for Business, Communications Credits are required as these calls are billed per minute. Also, we recommend that you set up Communications Credits for your Calling Plan and Audio Conferencing users who need the ability to dial out to **any PSTN destination**. Many countries/regions are included, but some destinations may not be included in your Calling Plan or Audio Conferencing subscriptions. If you don't set up Communications Credits or assign a license to your users and you run out minutes for your organization (depending on your Calling Plan, Audio Conferencing plan, or your country/region), those users won't be able to make calls or dial out from Online Audio Conferencing meetings.</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="6f1d6-124">È necessario impostare Crediti comunicazioni e quindi assegnare una licenza di Crediti comunicazioni a ciascun utente nell' **interfaccia di amministrazione Office 365** > **Utenti** > **Utenti attivi**.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-124">You must set up Communications Credits and then assign a Communications Credits license for each user in the **Office 365 admin center** > **Users** > **Active Users**.</span></span> 
+  
+<span data-ttu-id="6f1d6-125">È consigliabile valutare attentamente l'utilizzo dell'organizzazione del servizio di rete PSTN per comprendere il programma di installazione ottimale per crediti Communications.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-125">It's recommended that you carefully evaluate your organization's PSTN Service usage in order to understand the best setup for Communications Credits.</span></span> <span data-ttu-id="6f1d6-126">È possibile visualizzare ulteriori informazioni sui servizi PSTN leggendo [che cosa sono i piani di chiamata in Office 365?](../what-are-calling-plans-in-office-365/what-are-calling-plans-in-office-365.md) e [audioconferenze domande frequenti](../audio-conferencing-in-office-365/Audio-Conferencing-common-questions.md).</span><span class="sxs-lookup"><span data-stu-id="6f1d6-126">You can see more about PSTN services by reading [What are Calling Plans in Office 365?](../what-are-calling-plans-in-office-365/what-are-calling-plans-in-office-365.md) and [Audio Conferencing common questions](../audio-conferencing-in-office-365/Audio-Conferencing-common-questions.md).</span></span>
+  
+<span data-ttu-id="6f1d6-p107">È possibile considerare la fatturazione a consumo con il **pagamento una tantum** del saldo prepagato **OPPURE** l'impostazione di una somma di **autoricarica** ( **opzione consigliata** ) con un saldo minimo che attiverà un acquisto per tale importo da ricaricare. Inizialmente, è consigliabile configurare importi di autoricarica che consentano di monitorare l'uso effettivo e individuare le giuste soglie di autoricarica che soddisfino le proprie esigenze e i piani di utilizzo. I Crediti comunicazioni dovrebbero essere misurati nel tempo per determinare il saldo minimo e gli importi di ricarica in base alle esigenze di ogni organizzazione.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-p107">You can set up consumption billing using a **one-time funding** of the pre-paid balance **OR** by setting up an **auto-recharge** ( **recommended** ) amount with a minimum balance that will trigger a purchase for that recharge amount. Initially, it's suggested that you set up auto recharge amounts that allow you to monitor actual usage and find the right auto recharge thresholds that meet your needs and usage patterns. Communications Credits should be monitored over time and then adjust the minimum balance and recharge amounts as needed to be tailored for each organization's needs.</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="6f1d6-130">È possibile vedere i piani e i prezzi [accedendo all'interfaccia di amministrazione di Office 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e andando su **Fatturazione** > **Sottoscrizioni** > **Aggiungi sottoscrizioni**.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-130">You can see the plans and pricing by [signing in to the Office 365 admin center](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) and going to **Billing** > **Subscriptions** > **Add subscriptions**.</span></span> 
+  
+<span data-ttu-id="6f1d6-p108">Nell' **interfaccia di amministrazione di Office 365** > **Fatturazione** > **Sottoscrizioni**, si potrà aggiungere manualmente il credito in qualsiasi momento. È possibile anche abilitare l'opzione **Autoricarica**, che consente di ricaricare automaticamente l'account quando il saldo scende al di sotto della soglia impostata. Se si sceglie di pagare i Crediti comunicazioni versando l'importo in un'unica soluzione e il saldo scende a zero, i servizi di chiamata aggiuntivi illustrati in precedenza non saranno più disponibili. Per questo, è consigliabile utilizzare la funzione " **Autoricarica** " per evitare qualsiasi interruzione del servizio, nel caso in cui i Crediti comunicazioni arrivino a 0 (zero). Verrà inviata un'e-mail al completamento della transazione di ricarica, quando essa non va a buon fine (ad esempio una carta di credito scaduta) e anche quando i Crediti comunicazioni arrivano a 0 (zero).</span><span class="sxs-lookup"><span data-stu-id="6f1d6-p108">In the **Office 365 admin center** > **Billing** > **Subscriptions**, you can add credit manually at any time. You can also enable the **Auto-recharge** option, which will allow automatic account refills when the balance falls below the threshold that you set. If you choose to fund your Communications Credits balance with a one-time amount and then the balance falls to zero, the additional calling scenarios above will no longer work, including toll-free phone numbers. As such, it's recommended that you use the **Auto-recharge** setting to avoid any disruption of service should your Communications Credits balance reach 0 (zero). You will be sent an email when recharge transactions succeed, recharge transactions fail (such as an expired credit card), and or your Communications Credits balance reaches 0 (zero).</span></span>
+  
+## <a name="communications-credits"></a><span data-ttu-id="6f1d6-136">Crediti comunicazioni</span><span class="sxs-lookup"><span data-stu-id="6f1d6-136">Communications Credits</span></span>
+
+<span data-ttu-id="6f1d6-p109">Ogni organizzazione farà un diverso uso dei piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Per queste organizzazioni, che usano già Skype for Business come provider di servizi, è possibile ottenere i dati di utilizzo esaminandoli nell' **interfaccia di amministrazione di Office 365** > **Report** o **Interfaccia di amministrazione di Skype for Business** > **Report** > **Dettagli dell'utilizzo della rete PSTN**.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-p109">Each organization will have a different usage of Calling Plans volume and rates to consider. You will need to get this type of usage data from your current service provider. For organizations using Skype for Business already as their service provider, you can get usage data by reviewing it in either **Office 365 admin center** > **Reports** or **Skype for Business admin center** > **Reports** > **PSTN usage details**.</span></span>
+  
+<span data-ttu-id="6f1d6-p110">Quando si impostano i Crediti comunicazioni è necessario analizzare l'uso delle chiamate nella propria organizzazione per determinare gli importi da considerare. Per ottenere informazioni sull'uso delle chiamate, esaminare il report **Dettagli dell'utilizzo della rete PSTN**. Questo report permette di esportare i record dei dati di chiamata su Excel e di creare report personalizzati.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-p110">When you are setting up Communications Credits, you will need to investigate call usage for your organization to determine the amounts that you will need to put in. You can get call usage information by reviewing the **PSTN usage details** report. This report lets you export the call data records to Excel and create custom reports.</span></span>
+  
+## <a name="recommended-funding-amounts"></a><span data-ttu-id="6f1d6-143">Importi da pagare consigliati</span><span class="sxs-lookup"><span data-stu-id="6f1d6-143">Recommended funding amounts</span></span>
+
+<span data-ttu-id="6f1d6-144">È consigliabile iniziare utilizzando una piccola quantità di finanziamento, che per organizzazioni di piccole dimensioni può anche il valore minimo di 20 $.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-144">We recommended that you begin by using a small funding amount, which for smaller organizations could be even the minimum of $20.</span></span> <span data-ttu-id="6f1d6-145">Dopo avere raccolto un mese o due di utilizzo PSTN tramite il rapporto dettagli di utilizzo PSTN, sarà possibile modificare gli importi in base alle normale utilizzo nella propria organizzazione.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-145">After you gather a month or two of PSTN usage using the PSTN usage details report, you'll be able to adjust the amounts to meet the normal usage in your organization.</span></span>
+  
+<span data-ttu-id="6f1d6-146">Se tutto è pronto per la configurazione, consulta [Configurare i Crediti comunicazioni per la propria organizzazione](set-up-communications-credits-for-your-organization.md).</span><span class="sxs-lookup"><span data-stu-id="6f1d6-146">If you're ready to set this all up, see [Set up Communications Credits for your organization](set-up-communications-credits-for-your-organization.md).</span></span>
+  
+## <a name="want-to-know-about-plans-and-pricing"></a><span data-ttu-id="6f1d6-147">Informazioni su piani e prezzi.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-147">Want to know about plans and pricing?</span></span>
+
+<span data-ttu-id="6f1d6-148">Per consultare piani e prezzi, consultare uno di questi link:</span><span class="sxs-lookup"><span data-stu-id="6f1d6-148">You can see the plans and pricing by visiting one of the following links:</span></span>
+  
+- [<span data-ttu-id="6f1d6-149">Piani per chiamate</span><span class="sxs-lookup"><span data-stu-id="6f1d6-149">Calling Plans</span></span>](https://go.microsoft.com/fwlink/?linkid=799761)
+    
+- [<span data-ttu-id="6f1d6-150">Audioconferenza</span><span class="sxs-lookup"><span data-stu-id="6f1d6-150">Audio Conferencing</span></span>](https://go.microsoft.com/fwlink/?linkid=799762)
+    
+- [<span data-ttu-id="6f1d6-151">Sistema telefonico</span><span class="sxs-lookup"><span data-stu-id="6f1d6-151">Phone System</span></span>](https://go.microsoft.com/fwlink/?linkid=799763 )
+    
+<span data-ttu-id="6f1d6-152">È possibile consultare le informazioni sui prezzi anche [accedendo all'interfaccia di amministrazione di Office 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e andando su **Fatturazione** > **Sottoscrizioni** > **Aggiungi sottoscrizioni**.</span><span class="sxs-lookup"><span data-stu-id="6f1d6-152">You can also see information about pricing by [signing in to the Office 365 admin center](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) and going to **Billing** > **Subscriptions** > **Add subscriptions**.</span></span>
+  
+<span data-ttu-id="6f1d6-153">Per una tabella con la licenza o licenze che necessarie per ogni caratteristica, vedere [Skype di licenza di componente aggiuntivo Business e i team di Microsoft](skype-for-business-and-microsoft-teams-add-on-licensing.md).</span><span class="sxs-lookup"><span data-stu-id="6f1d6-153">To see a table with the license or licenses you will need for each feature, see [Skype for Business and Microsoft Teams add-on licensing](skype-for-business-and-microsoft-teams-add-on-licensing.md).</span></span>
+  
+## <a name="related-topics"></a><span data-ttu-id="6f1d6-154">See also</span><span class="sxs-lookup"><span data-stu-id="6f1d6-154">Related topics</span></span>
+[<span data-ttu-id="6f1d6-155">Report di utilizzo PSTN di Skype for Business</span><span class="sxs-lookup"><span data-stu-id="6f1d6-155">Skype for Business PSTN usage report</span></span>](../skype-for-business-online-reporting/pstn-usage-report.md)
