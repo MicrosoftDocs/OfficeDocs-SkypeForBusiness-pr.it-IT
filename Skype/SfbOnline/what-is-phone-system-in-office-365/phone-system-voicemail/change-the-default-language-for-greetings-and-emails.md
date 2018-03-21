@@ -4,12 +4,14 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: wasseemh
-ms.date: 01/22/2018
+ms.date: 03/13/2018
 ms.topic: article
 ms.assetid: 820c3892-1b7e-47d3-ae8d-6e27e7cbcf38
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -20,11 +22,11 @@ ms.custom:
 - Phone System
 - Strat_SB_PSTN
 description: 'Scopri come configurare Skype for Business in modo che usi un''altra lingua per il messaggio di saluto predefinito della segreteria telefonica dell''organizzazione. '
-ms.openlocfilehash: 1c311436ed9010ea20598aac6a55b4806fe18abb
-ms.sourcegitcommit: 77bfcdfbe33f5c55f1508588a939297d7092a5e7
-ms.translationtype: HT
+ms.openlocfilehash: 04ba9aa11b5cfa49fc72b3ba0b96c1b3c0f9b73b
+ms.sourcegitcommit: b985035b91ebd7ceff8d50e9e0fa9aa6ff971f3a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="change-the-default-language-for-greetings-and-emails"></a>Modificare la lingua predefinita per i messaggi di saluto e le e-mail
 
@@ -40,10 +42,12 @@ Se sei un [amministratore globale di Office 365](https://support.office.com/en-u
     > Gli utenti possono modificare la lingua del saluto attraverso le impostazioni dopo l'accesso. 
   
 - **Vuoi registrare il messaggio in uscita della segreteria telefonica?** Vedi [Controllare le opzioni e la segreteria telefonica di Skype for Business](https://support.office.com/en-us/article/2deea7f8-831f-4e85-a0d4-b34da55945a8).
+
+- **Si desidera modificare la lingua di prompt dei comandi di segreteria telefonica?** Accedere a [https://mysettings.lync.com/voicemail](https://mysettings.lync.com/voicemail) e fare clic su una nuova lingua in **Lingua prompt dei comandi**.
     
 ## <a name="change-the-system-language-for-everyone-in-your-organization"></a>Cambiare la lingua di sistema per tutti i membri dell'organizzazione.
 
-1. Accedi con l'account di [Informazioni sui ruoli di amministratore di Office 365](https://support.office.com/en-us/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) all'indirizzo [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home). 
+1. Accedere con l'account [amministratore globale di Office 365](https://support.office.com/en-us/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) in[https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home). 
     
 2. Nell'interfaccia di amministrazione, scegli **Impostazioni** > **Profilo organizzazione**. 
     
@@ -73,4 +77,5 @@ Se sei un [amministratore globale di Office 365](https://support.office.com/en-u
     
 - [Abilitare o cambiare la lingua del layout di tastiera](https://support.office.com/en-us/article/Enable-or-change-a-keyboard-layout-language-1c2242c0-fe15-4bc3-99bc-535de6f4f258)
     
-
+## <a name="feedback"></a>Commenti e suggerimenti?
+Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).

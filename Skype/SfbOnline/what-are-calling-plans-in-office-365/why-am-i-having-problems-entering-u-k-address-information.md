@@ -21,11 +21,11 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: Di seguito sono indicati alcuni dei motivi per cui si verificarsi problemi nell'ottenere l'indirizzo o gli indirizzi per convalidare correttamente nel Regno Unito (Regno Unito).
-ms.openlocfilehash: 6f77a9f69751df04d995c098768d99d85a6e2c70
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: e012de9ba4371063bc16e2896a5bd4e3b8814a4d
+ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="why-am-i-having-problems-entering-uk-address-information"></a>Perché si verificano problemi immissione Regno Unito informazioni sull'indirizzo?
 
@@ -117,3 +117,6 @@ Se si è verificato un problema immettere il codice postale, tenere presenti:
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+## <a name="feedback"></a>Commenti e suggerimenti?
+Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).

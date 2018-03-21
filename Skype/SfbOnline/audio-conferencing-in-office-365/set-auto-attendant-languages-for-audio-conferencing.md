@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: 26d73dda-ab26-4af4-8aec-d17f3479ae50
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -20,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: Vedere come selezionare le lingue di operatore automatico conferenza per un numero di conferenze audio.
-ms.openlocfilehash: 85dd6fb9328e3362d84315f7c8a7f3d7e8e2df86
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: c352609926a7bc6bf7f72015447ba9f7ae115487
+ms.sourcegitcommit: 997c03395fd1966607cef0df8ee884303401cd64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing"></a>Set di lingue con operatore automatico per le conferenze Audio
 
@@ -71,4 +73,3 @@ Per ulteriori informazioni, vedere [Using Windows PowerShell per eseguire Skype 
 ## <a name="related-topics"></a>See also
 
 [Servizi di conferenza telefonica con accesso esterno in Office 365](set-up-audio-conferencing.md)
-

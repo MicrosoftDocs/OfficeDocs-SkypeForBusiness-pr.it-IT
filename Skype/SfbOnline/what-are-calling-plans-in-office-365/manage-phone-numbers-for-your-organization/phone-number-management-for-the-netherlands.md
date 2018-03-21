@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: f3b75104-bdb9-435a-bec5-9858db9df402
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -20,11 +22,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono nei Paesi Bassi per Skype for Business online e Microsoft Teams.
-ms.openlocfilehash: ce6381433733fff8750f175f6e4473ab29be7926
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: df9c9b53821c6e3dae8a55b06754a78558f3090e
+ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="phone-number-management-for-the-netherlands"></a>Gestione dei numeri di telefono per i Paesi Bassi
 
@@ -34,7 +36,8 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono.  <br/> | Scarica [Richiesta di nuovo numero di telefono per i Paesi Bassi (numeri geografici) (v.3.0) (nl-nl)](../../downloads/new-number-request-forms/new-phone-number-request-for-the-netherlands-(geographic-numbers)-(v.3.0)-(nl-nl).pdf) <br/>  <br/>  Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> |
+|Ottenere nuovo utente numeri di telefono che non sono incluse le Skype per interfaccia di amministrazione di Business.   <br/> | Scarica [Richiesta di nuovo numero di telefono per i Paesi Bassi (numeri geografici) (v.3.0) (nl-nl)](../../downloads/new-number-request-forms/new-phone-number-request-for-the-netherlands-(geographic-numbers)-(v.3.0)-(nl-nl).pdf) <br/>  <br/>  Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> |
+|Ottenere nuovi numeri di telefono del servizio che non sono incluse le Skype per interfaccia di amministrazione di Business. <br/> |Per i numeri di servizio di fuori degli Stati Uniti, si [Scarica questo formato](../../downloads/new-number-request-forms/new-phone-number-request-for-numbers-outside-the-u.s.-(service-numbers)-(v.1.0)-(en-us).pdf)di riempimento estrazione e [invialo a Microsoft](mailto:ptneu@microsoft.com).
 |Devi far trasferire a noi numeri di telefono.  <br/> |Scarica uno di questi moduli: <br/> [Lettera di autorizzazione (LOA) per i Paesi Bassi (numeri geografici) (v.2.0)(nl-nl)](../../downloads/LOA-forms/letter-of-authorization-(loa)-for-the-netherlands-(geographic-numbers)-(v.2.0)-(nl-nl).pdf) <br/> [Lettera di autorizzazione (LOA) per i Paesi Bassi (numeri non geografici) (v.2.0)(nl-nl)](../../downloads/LOA-forms/letter-of-authorization-(loa)-for-the-netherlands-(non-geographic-numbers)-(v.2.0)-(nl-nl).pdf) <br/> <br/>  Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> |
 |Devi pubblicare/rimuovere numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
 |Devi cambiare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
@@ -48,3 +51,5 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
+## <a name="feedback"></a>Commenti e suggerimenti?
+Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).

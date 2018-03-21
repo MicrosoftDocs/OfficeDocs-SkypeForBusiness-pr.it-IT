@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: 28cbf7d7-97f3-4a99-aa76-897022c14a24
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -20,11 +22,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: "Le operazioni seguenti sono domande frequenti relative al trasferimento di numeri di telefono a Skype per le aziende. Dopo aver esaminato le risposte, è possibile creare un ordine di porta e trasferire i numeri di telefono. Visualizzare i numeri di telefono di trasferimento a Office 365 per le istruzioni."
-ms.openlocfilehash: a7b6b9ea1b028f6578b13f29706c25fb182befc1
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 3fe34a7c38fb8be206b0e3812674255d0593d188
+ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="transferring-phone-numbers-common-questions"></a>Trasferimento di domande comuni numeri di telefono
 
@@ -62,7 +64,7 @@ In generale, è possibile trasferire qualsiasi numero di telefono da un provider
     
 - Numeri di telefono VoIP da un provider di telefono, ad esempio Vonage o RingCentral.
     
-- Skype ibrida Business dei numeri di telefono. Se si desidera trasferire questi numeri, è necessario inviare posta elettronica per noi <ptn@microsoft.com>.
+- Skype ibrida Business dei numeri di telefono. Se si desidera trasferire questi numeri, è necessario inviare posta elettronica per noi a <ptn@microsoft.com>.
     
  **NON È POSSIBILE TRASFERIRE:**
   
@@ -117,7 +119,7 @@ Ecco ulteriori informazioni sull'invio di richieste porting numeri per ognuno di
     
 - **I numeri a tariffa liberi** con codici area, ad esempio: 800, 844, 855, 866, 877 e 888 non possono essere inclusi in una richiesta porting numerica con altri tipi di numeri. Per questi numeri a pagamento gratuita delle porte, è necessario eseguire [manualmente inviare una richiesta di servizio personalizzato](manually-submit-a-custom-service-request.md); essi non può essere inviati in Skype per interfaccia di amministrazione di Business. Vedere [Manage i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
     
-    È importante utilizzare LOA corretto per il paese e il tipo dei numeri di telefono che si desidera porta. È possibile scaricare l' alle LoA [scaricare una lettera di autorizzazione (LOA)](download-a-letter-of-authorization-loa.md). Vedere [Manage i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+    È importante utilizzare LOA corretto per il paese e il tipo dei numeri di telefono che si desidera porta. È possibile scaricare LOA che è necessario [download lettera di autorizzazione (LOA) che è necessario qui](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
     
 - **I numeri di telefono** richiedono un codice PIN per autorizzare il trasferimento. Di conseguenza, è necessario separare richiesta porting numerico.
     
@@ -176,4 +178,5 @@ Per il trasferimento o *dalla porta fuori* numeri di telefono da Skype Business 
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
   
-
+## <a name="feedback"></a>Commenti e suggerimenti?
+Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).

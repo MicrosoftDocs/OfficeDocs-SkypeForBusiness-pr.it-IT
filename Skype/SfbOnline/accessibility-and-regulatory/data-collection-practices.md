@@ -20,11 +20,11 @@ ms.custom:
 - Legal
 hideEdit: 
 description: Microsoft raccoglie dati censimento, dati di utilizzo e di errore per comprendere l'utilizzo Skype per le aziende e dove gli utenti riscontrano problemi. I dati vengono utilizzati per pianificare miglioramenti del prodotto.
-ms.openlocfilehash: f58a5650da1b6f489c63fdb5e5870321e0f06727
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 9eaebe086e65b68cb13013931b753285f63bd9de
+ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="skype-for-business-and-microsoft-teams-data-collection-practices"></a>Skype per procedure di raccolta dati Business e Teams Microsoft
 
@@ -117,4 +117,7 @@ Se si utilizza Office 365 gestito dal 21Vianet in Cina, vedere [configurazione d
 ## <a name="related-topics"></a>See also
 [Programma Analisi utilizzo software](https://www.microsoft.com/products/ceip/en-US/default.mspx)
 
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+
+## <a name="feedback"></a>Commenti e suggerimenti?
+Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).

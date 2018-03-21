@@ -20,7 +20,7 @@ ms.custom:
 - Reporting
 description: "Configurare e utilizzare chiamate Analitica per identificare e risolvere i problemi Skype per problemi di qualità chiamata Business e Teams Microsoft."
 ms.openlocfilehash: 32900eb98ce4ea25602ed748fc750427b795d313
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.sourcegitcommit: 85105cb4e42ae8eb6e7e76eaf6d4dd5b9568cf41
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/19/2018

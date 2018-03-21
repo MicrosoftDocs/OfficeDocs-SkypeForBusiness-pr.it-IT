@@ -17,11 +17,11 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Informazioni su come impostare la protezione di applicazioni per dispositivi mobili per gli utenti. '
-ms.openlocfilehash: 150eb50c4e2c57b3e51b9400d9fdb79d49990174
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 98a748ca626d9b27a3e75ce5d75641155af7853d
+ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="skype-for-business-mobile-app-security"></a>Skype per la protezione di applicazioni per dispositivi mobili aziendali
 
@@ -42,3 +42,6 @@ In questo articolo vengono illustrate informazioni sulla crittografia dei dati i
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
+
+## <a name="feedback"></a>Commenti e suggerimenti?
+Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).

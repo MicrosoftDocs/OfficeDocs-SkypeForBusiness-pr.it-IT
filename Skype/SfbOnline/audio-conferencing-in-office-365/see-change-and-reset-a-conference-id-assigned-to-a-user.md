@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: 77d36233-2aab-4802-ba9c-e9a8885ea643
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -20,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: 'Informazioni su come assegnare un ID conferenza a un utente in Skype per le aziende e quali la conferenza ID devono essere parametri. '
-ms.openlocfilehash: f98257892c219e2777c52aefb3b2fd89bfb53710
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: b542e764d0b8b1587c34e78a54612410cd72a3bd
+ms.sourcegitcommit: 997c03395fd1966607cef0df8ee884303401cd64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="see-change-and-reset-a-conference-id-assigned-to-a-user"></a>Visualizzare, modificare e ripristinare un ID conferenza assegnato a un utente
 
@@ -127,5 +129,4 @@ Per modificare o cambiare l'ID conferenza per un utente, eseguire:
 ## <a name="related-topics"></a>See also
 
 [Servizi di conferenza telefonica con accesso esterno in Office 365](set-up-audio-conferencing.md)
-  
 

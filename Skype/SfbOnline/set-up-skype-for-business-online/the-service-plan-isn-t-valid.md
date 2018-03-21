@@ -19,11 +19,11 @@ f1keywords:
 ms.custom:
 - Setup
 description: "Vedere sull'assegnazione di un piano di servizio valido per un utente dopo un Skype per Business Online piano di servizio non è errore valido. "
-ms.openlocfilehash: d109386134afdca9641eac6b5f9c9b2aad1f45c1
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: e40f82aa22a003c53c982b3185db3a71fcbf271f
+ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="the-users-skype-for-business-online-service-plan-isnt-valid"></a>Skype dell'utente per la Business Online piano di servizio non è valido
 
@@ -36,4 +36,5 @@ Vai al **Centro di amministrazione di Office 365** > piano**utenti attivi** e as
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
   
-
+## <a name="feedback"></a>Commenti e suggerimenti?
+Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
