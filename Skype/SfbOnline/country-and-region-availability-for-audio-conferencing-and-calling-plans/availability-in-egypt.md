@@ -6,7 +6,6 @@ manager: serdars
 ms.reviewer: mikedav, jastark, oscarr
 ms.date: 01/22/2018
 ms.topic: article
-ms.assetid: f6fac40d-bc9e-4038-a537-587942d99066
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 ms.collection: Adm_Skype4B_Online
@@ -22,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per l'Egitto i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 76a84e6cc9b639b5b72c7babaae534daa4abd98e
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 5ed1349d921c3810032ff95d8e5b0a9cfcfc0807
+ms.sourcegitcommit: ddd923c871b5cd92499cd2bd4ac1f708aeae6467
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="availability-in-egypt"></a>Disponibilità in Egitto
 
@@ -65,7 +64,7 @@ Di seguito sono disponibili per l'Egitto i servizi di Skype per le aziende e Tea
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Non applicabile  <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |No  <br/> |
-|Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
+|Sono disponibili numeri verdi gratuiti?  <br/> |No <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).
   
@@ -83,5 +82,3 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
