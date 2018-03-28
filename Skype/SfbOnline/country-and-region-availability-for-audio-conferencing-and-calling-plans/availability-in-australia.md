@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità in Australia"
+title: Disponibilità in Australia
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per Australia i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 4552e465531ddbb331a0b0226b427ac44de1c558
-ms.sourcegitcommit: e7e4d7200b586ff3d21d93a17867eb20a13a6212
+ms.openlocfilehash: ec5ac53fc0688aeb6ed960f64c5ffb35ceb216f9
+ms.sourcegitcommit: 39228142658557890b2173c41db9661eb502b946
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="availability-in-australia"></a>Disponibilità in Australia
 
@@ -53,13 +53,13 @@ Di seguito sono disponibili per Australia i servizi di Skype per le aziende e Te
    
 ## <a name="calling-plans"></a>Piani per chiamate
 > [!IMPORTANT]
-> Australia è disponibile solo per preview e anticipati adottato clienti. Per ulteriori informazioni, vedere [Telstra Voice](http://aka.ms/TelstraVoicePlan). 
+> Attualmente disponibili solo per l'anteprima e adozione anticipato in Australia. Per ulteriori informazioni, vedere [Telstra la chiamata di Office 365](http://aka.ms/TelstraVoicePlan). 
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì, vedere [Servizi vocali Telstra](http://aka.ms/TelstraVoicePlan).  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |Vedere [Telstra servizi](http://aka.ms/TelstraVoicePlan). <br/> |
-|Chiamate in uscita possibili verso...?  <br/> |Vedere [Telstra servizi](http://aka.ms/TelstraVoicePlan). <br/> |
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì, vedere [Telstra la chiamata di Office 365](http://aka.ms/TelstraVoicePlan).  <br/> |
+|Minuti disponibili per i Piani per chiamate  <br/> |Vedere [Telstra la chiamata di Office 365](http://aka.ms/TelstraVoicePlan). <br/> |
+|Chiamate in uscita possibili verso...?  <br/> |Vedere [Telstra la chiamata di Office 365](http://aka.ms/TelstraVoicePlan). <br/> |
 
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
@@ -69,7 +69,7 @@ Di seguito sono disponibili per Australia i servizi di Skype per le aziende e Te
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
-Se si desidera ottenere numero a pagamento e numeri verdi per gli operatori automatici e le code di chiamata, vedere [Servizi vocali Telstra](http://aka.ms/TelstraVoicePlan). Per i numeri di servizio servizi di conferenza audio, [contattare Microsoft](mailto:ptnapac@microsoft.com).
+Se si desidera ottenere numero a pagamento e numeri verdi per gli operatori automatici e le code di chiamata, vedere [Telstra la chiamata di Office 365](http://aka.ms/TelstraVoicePlan). Per i numeri di servizio servizi di conferenza audio, [contattare Microsoft](mailto:ptnapac@microsoft.com).
   
 ## <a name="communications-credits"></a>Crediti comunicazioni
 
