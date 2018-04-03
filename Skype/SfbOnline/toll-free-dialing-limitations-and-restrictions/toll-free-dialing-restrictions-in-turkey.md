@@ -1,5 +1,5 @@
 ---
-title: Restrizioni per comporre il numero verde Turchia
+title: Toll-free dialing restrictions in Turkey
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,34 +19,34 @@ ROBOTS: NOINDEX, NOFOLLOW
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: "Ciò consentirà di scoprire come per comporre i numeri gratuito a pagamento in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verranno visualizzate a una pagina specifica contenente informazioni specifiche, restrizioni e limiti per la disponibilità dei servizi verdi dove il numero verde è disponibile. Il formato di composizione e i formati verranno visualizzato i codice di accesso necessarie all'interno di ogni paese/area geografica comporre il numero verde."
-ms.openlocfilehash: d29323e558d92834a2068dd4c2069747561b892f
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: This will help you find out how to dial toll free numbers in each country/region. After you select the country/region, it will take you to a country-specific page that contains specific details, restrictions, and limits for toll-free service availability where toll-free service is available. The dialing format or formats will show you the required access codes within each country/region to dial the toll free number.
+ms.openlocfilehash: 8bc902e254c79836affd0d1766c195c962032b35
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="toll-free-dialing-restrictions-in-turkey"></a><span data-ttu-id="cdeb0-105">Restrizioni per comporre il numero verde Turchia</span><span class="sxs-lookup"><span data-stu-id="cdeb0-105">Toll-free dialing restrictions in Turkey</span></span>
+# <a name="toll-free-dialing-restrictions-in-turkey"></a><span data-ttu-id="c6508-105">Toll-free dialing restrictions in Turkey</span><span class="sxs-lookup"><span data-stu-id="c6508-105">Toll-free dialing restrictions in Turkey</span></span>
 
-<span data-ttu-id="cdeb0-106">[Trovare un altro paese](../what-are-calling-plans-in-office-365/toll-free-dialing-limitations-and-restrictions.md), o ulteriori informazioni sulle limitazioni di comporre il numero verde e restrizioni.</span><span class="sxs-lookup"><span data-stu-id="cdeb0-106">[Find another country or region](../what-are-calling-plans-in-office-365/toll-free-dialing-limitations-and-restrictions.md), or learn more about toll-free dialing limitations and restrictions.</span></span>
+<span data-ttu-id="c6508-106">[Find another country or region](../what-are-calling-plans-in-office-365/toll-free-dialing-limitations-and-restrictions.md), or learn more about toll-free dialing limitations and restrictions.</span><span class="sxs-lookup"><span data-stu-id="c6508-106">[Find another country or region](../what-are-calling-plans-in-office-365/toll-free-dialing-limitations-and-restrictions.md), or learn more about toll-free dialing limitations and restrictions.</span></span>
 
 
-|<span data-ttu-id="cdeb0-107">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="cdeb0-107">**Details**</span></span>|<span data-ttu-id="cdeb0-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="cdeb0-108">**Description**</span></span>|
+|<span data-ttu-id="c6508-107">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="c6508-107">**Details**</span></span>|<span data-ttu-id="c6508-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="c6508-108">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="cdeb0-109">È il numero verde chiamata disponibili?</span><span class="sxs-lookup"><span data-stu-id="cdeb0-109">Is toll-free calling available?</span></span>  <br/> |<span data-ttu-id="cdeb0-110">Sì</span><span class="sxs-lookup"><span data-stu-id="cdeb0-110">Yes</span></span>  <br/> |
-|<span data-ttu-id="cdeb0-111">Formati di composizione</span><span class="sxs-lookup"><span data-stu-id="cdeb0-111">Dialing format(s)</span></span>  <br/> |<span data-ttu-id="cdeb0-112">00 800 XXXX XXXXX</span><span class="sxs-lookup"><span data-stu-id="cdeb0-112">00 800 XXXX XXXXX</span></span>  <br/> |
-|<span data-ttu-id="cdeb0-113">Codice ISO paese/area geografica</span><span class="sxs-lookup"><span data-stu-id="cdeb0-113">Country/region ISO code</span></span>  <br/> |<span data-ttu-id="cdeb0-114">TR</span><span class="sxs-lookup"><span data-stu-id="cdeb0-114">TR</span></span>  <br/> |
-|<span data-ttu-id="cdeb0-115">Isola/territorio coperto</span><span class="sxs-lookup"><span data-stu-id="cdeb0-115">Island/territory covered</span></span>  <br/> |<span data-ttu-id="cdeb0-116">Non applicabile</span><span class="sxs-lookup"><span data-stu-id="cdeb0-116">Not applicable</span></span>  <br/> |
-|<span data-ttu-id="cdeb0-117">Non vengono illustrato isola/territorio</span><span class="sxs-lookup"><span data-stu-id="cdeb0-117">Island/territory not covered</span></span>  <br/> |<span data-ttu-id="cdeb0-118">Non applicabile</span><span class="sxs-lookup"><span data-stu-id="cdeb0-118">Not applicable</span></span>  <br/> |
-|<span data-ttu-id="cdeb0-119">Disponibilità di riga cablata fisso</span><span class="sxs-lookup"><span data-stu-id="cdeb0-119">Wired/fixed line availability</span></span>  <br/> | <span data-ttu-id="cdeb0-120">Sì, eccetto Super Online.</span><span class="sxs-lookup"><span data-stu-id="cdeb0-120">Yes, except from Super Online.</span></span> <br/> |
-|<span data-ttu-id="cdeb0-121">Disponibilità della rete per dispositivi mobili</span><span class="sxs-lookup"><span data-stu-id="cdeb0-121">Mobile network availability</span></span>  <br/> |<span data-ttu-id="cdeb0-122">No</span><span class="sxs-lookup"><span data-stu-id="cdeb0-122">No</span></span>  <br/> |
-|<span data-ttu-id="cdeb0-123">Commenti, limitazioni e problemi di accesso</span><span class="sxs-lookup"><span data-stu-id="cdeb0-123">Comments, restrictions, and access issues</span></span>  <br/> |<span data-ttu-id="cdeb0-124">Nessuno</span><span class="sxs-lookup"><span data-stu-id="cdeb0-124">None</span></span>  <br/> |
+|<span data-ttu-id="c6508-109">Is toll-free calling available?</span><span class="sxs-lookup"><span data-stu-id="c6508-109">Is toll-free calling available?</span></span>  <br/> |<span data-ttu-id="c6508-110">Sì</span><span class="sxs-lookup"><span data-stu-id="c6508-110">Yes</span></span>  <br/> |
+|<span data-ttu-id="c6508-111">Dialing format(s)</span><span class="sxs-lookup"><span data-stu-id="c6508-111">Dialing format(s)</span></span>  <br/> |<span data-ttu-id="c6508-112">00 800 XXXX XXXXX</span><span class="sxs-lookup"><span data-stu-id="c6508-112">00 800 XXXX XXXXX</span></span>  <br/> |
+|<span data-ttu-id="c6508-113">Country/region ISO code</span><span class="sxs-lookup"><span data-stu-id="c6508-113">Country/region ISO code</span></span>  <br/> |<span data-ttu-id="c6508-114">TR</span><span class="sxs-lookup"><span data-stu-id="c6508-114">TR</span></span>  <br/> |
+|<span data-ttu-id="c6508-115">Island/territory covered</span><span class="sxs-lookup"><span data-stu-id="c6508-115">Island/territory covered</span></span>  <br/> |<span data-ttu-id="c6508-116">Non applicabile</span><span class="sxs-lookup"><span data-stu-id="c6508-116">Not applicable</span></span>  <br/> |
+|<span data-ttu-id="c6508-117">Island/territory not covered</span><span class="sxs-lookup"><span data-stu-id="c6508-117">Island/territory not covered</span></span>  <br/> |<span data-ttu-id="c6508-118">Non applicabile</span><span class="sxs-lookup"><span data-stu-id="c6508-118">Not applicable</span></span>  <br/> |
+|<span data-ttu-id="c6508-119">Wired/fixed line availability</span><span class="sxs-lookup"><span data-stu-id="c6508-119">Wired/fixed line availability</span></span>  <br/> | <span data-ttu-id="c6508-120">Sì, eccetto Super Online.</span><span class="sxs-lookup"><span data-stu-id="c6508-120">Yes, except from Super Online.</span></span> <br/> |
+|<span data-ttu-id="c6508-121">Mobile network availability</span><span class="sxs-lookup"><span data-stu-id="c6508-121">Mobile network availability</span></span>  <br/> |<span data-ttu-id="c6508-122">No</span><span class="sxs-lookup"><span data-stu-id="c6508-122">No</span></span>  <br/> |
+|<span data-ttu-id="c6508-123">Comments, restrictions, and access issues</span><span class="sxs-lookup"><span data-stu-id="c6508-123">Comments, restrictions, and access issues</span></span>  <br/> |<span data-ttu-id="c6508-124">Nessuno</span><span class="sxs-lookup"><span data-stu-id="c6508-124">None</span></span>  <br/> |
    
-## <a name="related-topics"></a><span data-ttu-id="cdeb0-125">See also</span><span class="sxs-lookup"><span data-stu-id="cdeb0-125">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="c6508-125">See also</span><span class="sxs-lookup"><span data-stu-id="c6508-125">Related topics</span></span>
 
-[<span data-ttu-id="cdeb0-126">Limitazioni di comporre il numero verde</span><span class="sxs-lookup"><span data-stu-id="cdeb0-126">Toll-free dialing limitations and restrictions</span></span>](../what-are-calling-plans-in-office-365/toll-free-dialing-limitations-and-restrictions.md)
+[<span data-ttu-id="c6508-126">Toll-free dialing limitations and restrictions</span><span class="sxs-lookup"><span data-stu-id="c6508-126">Toll-free dialing limitations and restrictions</span></span>](../what-are-calling-plans-in-office-365/toll-free-dialing-limitations-and-restrictions.md)
 
-[<span data-ttu-id="cdeb0-127">Ottenere numeri di servizio per Skype for Business e Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="cdeb0-127">Getting service phone numbers for Skype for Business and Microsoft Teams</span></span>](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md)
+[<span data-ttu-id="c6508-127">Ottenere numeri di servizio per Skype for Business e Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="c6508-127">Getting service phone numbers for Skype for Business and Microsoft Teams</span></span>](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md)
 
-## <a name="feedback"></a><span data-ttu-id="cdeb0-128">Commenti e suggerimenti?</span><span class="sxs-lookup"><span data-stu-id="cdeb0-128">Feedback?</span></span>
-<span data-ttu-id="cdeb0-129">Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).</span><span class="sxs-lookup"><span data-stu-id="cdeb0-129">To provide product feedback or to let us know how we're doing, see [Skype for Business Feedback](https://www.skypefeedback.com).</span></span>
+  
+ 

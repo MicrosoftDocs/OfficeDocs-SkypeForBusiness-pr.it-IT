@@ -17,103 +17,103 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: Utilizzare il cmdlet Get-CsOnlineUser in Windows PowerShell per ottenere informazioni su Skype dell'organizzazione per gli utenti aziendali Online.
-ms.openlocfilehash: 47e920d2cb66a9bee8fcdc36cbb05b785ed48ccf
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: b4647fae1baf84a2cc59a30c9291df196b56a88e
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="manage-user-accounts"></a><span data-ttu-id="734dd-103">Gestione degli account utente</span><span class="sxs-lookup"><span data-stu-id="734dd-103">Manage user accounts</span></span>
+# <a name="manage-user-accounts"></a><span data-ttu-id="72b20-103">Gestione degli account utente</span><span class="sxs-lookup"><span data-stu-id="72b20-103">Manage user accounts</span></span>
 
-## <a name="manage-user-accounts"></a><span data-ttu-id="734dd-104">Gestione degli account utente</span><span class="sxs-lookup"><span data-stu-id="734dd-104">Manage user accounts</span></span>
+## <a name="manage-user-accounts"></a><span data-ttu-id="72b20-104">Gestione degli account utente</span><span class="sxs-lookup"><span data-stu-id="72b20-104">Manage user accounts</span></span>
 
-<span data-ttu-id="734dd-105">In questo argomento contiene le sezioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="734dd-105">This topic contains the following sections:</span></span>
+<span data-ttu-id="72b20-105">In questo argomento contiene le sezioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="72b20-105">This topic contains the following sections:</span></span>
   
-- [<span data-ttu-id="734dd-106">Restituire informazioni su tutti i Skype per gli utenti aziendali Online</span><span class="sxs-lookup"><span data-stu-id="734dd-106">Return information about all your Skype for Business Online users</span></span>](manage-user-accounts.md#BKMKReturnInfoAboutAllUsers)
+- [<span data-ttu-id="72b20-106">Restituire informazioni su tutti i Skype per gli utenti aziendali Online</span><span class="sxs-lookup"><span data-stu-id="72b20-106">Return information about all your Skype for Business Online users</span></span>](manage-user-accounts.md#BKMKReturnInfoAboutAllUsers)
     
-- [<span data-ttu-id="734dd-107">Restituire informazioni per un utente specifico Skype Business online</span><span class="sxs-lookup"><span data-stu-id="734dd-107">Return information for a specific user in Skype for Business Online</span></span>](manage-user-accounts.md#BKMKReturnInfoSpecificUser)
+- [<span data-ttu-id="72b20-107">Restituire informazioni per un utente specifico Skype Business online</span><span class="sxs-lookup"><span data-stu-id="72b20-107">Return information for a specific user in Skype for Business Online</span></span>](manage-user-accounts.md#BKMKReturnInfoSpecificUser)
     
-- [<span data-ttu-id="734dd-108">Restituire informazioni specifiche per utenti specifici in Skype Business online</span><span class="sxs-lookup"><span data-stu-id="734dd-108">Return specific information for specific users in Skype for Business Online</span></span>](manage-user-accounts.md#BKMKReturninfoSpecificUsers)
+- [<span data-ttu-id="72b20-108">Restituire informazioni specifiche per utenti specifici in Skype Business online</span><span class="sxs-lookup"><span data-stu-id="72b20-108">Return specific information for specific users in Skype for Business Online</span></span>](manage-user-accounts.md#BKMKReturninfoSpecificUsers)
     
-- [<span data-ttu-id="734dd-109">Restituire un elenco filtrato degli utenti in Skype Business online</span><span class="sxs-lookup"><span data-stu-id="734dd-109">Return a filtered list of users in Skype for Business Online </span></span>](manage-user-accounts.md#BKMKReturnFilteredListofUsers)
+- [<span data-ttu-id="72b20-109">Restituire un elenco filtrato degli utenti in Skype Business online</span><span class="sxs-lookup"><span data-stu-id="72b20-109">Return a filtered list of users in Skype for Business Online </span></span>](manage-user-accounts.md#BKMKReturnFilteredListofUsers)
     
 > [!NOTE]
-> <span data-ttu-id="734dd-110">Il cmdlet **Set-CsUser** è anche incluso nel set di cmdlet disponibili per Skype per gli amministratori aziendali in linea.</span><span class="sxs-lookup"><span data-stu-id="734dd-110">The **Set-CsUser** cmdlet is also included in the set of cmdlets available to Skype for Business Online admins.</span></span> <span data-ttu-id="734dd-111">Tuttavia, **Set-CsUser** attualmente non può essere utilizzato per gestire Skype Business online, fatta eccezione per l'impostazione del parametro _AudioVideoDisabled_ .</span><span class="sxs-lookup"><span data-stu-id="734dd-111">However, **Set-CsUser** cannot currently be used to manage Skype for Business Online, except for setting the _AudioVideoDisabled_ parameter.</span></span> <span data-ttu-id="734dd-112">Se si tenta di eseguire il cmdlet con un altro parametro avrà esito negativo con un messaggio di errore simile al seguente: non è possibile impostare "SipAddress".</span><span class="sxs-lookup"><span data-stu-id="734dd-112">If you attempt to run the cmdlet with any other parameter, it will fail with an error message similar to this: Unable to set "SipAddress".</span></span> <span data-ttu-id="734dd-113">Questo parametro è con restrizioni all'interno di Remote PowerShell Tenant.</span><span class="sxs-lookup"><span data-stu-id="734dd-113">This parameter is restricted within Remote Tenant PowerShell.</span></span>
+> <span data-ttu-id="72b20-110">Il cmdlet **Set-CsUser** è anche incluso nel set di cmdlet disponibili per Skype per gli amministratori aziendali in linea.</span><span class="sxs-lookup"><span data-stu-id="72b20-110">The **Set-CsUser** cmdlet is also included in the set of cmdlets available to Skype for Business Online admins.</span></span> <span data-ttu-id="72b20-111">Tuttavia, **Set-CsUser** attualmente non può essere utilizzato per gestire Skype Business online, fatta eccezione per l'impostazione del parametro _AudioVideoDisabled_ .</span><span class="sxs-lookup"><span data-stu-id="72b20-111">However, **Set-CsUser** cannot currently be used to manage Skype for Business Online, except for setting the _AudioVideoDisabled_ parameter.</span></span> <span data-ttu-id="72b20-112">Se si tenta di eseguire il cmdlet con un altro parametro avrà esito negativo con un messaggio di errore simile al seguente: non è possibile impostare "SipAddress".</span><span class="sxs-lookup"><span data-stu-id="72b20-112">If you attempt to run the cmdlet with any other parameter, it will fail with an error message similar to this: Unable to set "SipAddress".</span></span> <span data-ttu-id="72b20-113">Questo parametro è con restrizioni all'interno di Remote PowerShell Tenant.</span><span class="sxs-lookup"><span data-stu-id="72b20-113">This parameter is restricted within Remote Tenant PowerShell.</span></span>
   
-### <a name="return-information-about-all-your-skype-for-business-online-users"></a><span data-ttu-id="734dd-114">Ottenere informazioni su tutti gli utenti di Lync Online</span><span class="sxs-lookup"><span data-stu-id="734dd-114">Return information about all your Skype for Business Online users</span></span>
-<span data-ttu-id="734dd-115"><a name="BKMKReturnInfoAboutAllUsers"> </a></span><span class="sxs-lookup"><span data-stu-id="734dd-115"></span></span>
+### <a name="return-information-about-all-your-skype-for-business-online-users"></a><span data-ttu-id="72b20-114">Ottenere informazioni su tutti gli utenti di Lync Online</span><span class="sxs-lookup"><span data-stu-id="72b20-114">Return information about all your Skype for Business Online users</span></span>
+<span data-ttu-id="72b20-115"><a name="BKMKReturnInfoAboutAllUsers"> </a></span><span class="sxs-lookup"><span data-stu-id="72b20-115"></span></span>
 
-<span data-ttu-id="734dd-116">Per restituire informazioni su tutti gli utenti che sono stati abilitati per Skype Business online, chiamare il cmdlet [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) senza alcun parametro aggiuntivo.</span><span class="sxs-lookup"><span data-stu-id="734dd-116">To return information about all your users who have been enabled for Skype for Business Online, call the [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) cmdlet without any additional parameters.</span></span>
+<span data-ttu-id="72b20-116">Per restituire informazioni su tutti gli utenti che sono stati abilitati per Skype Business online, chiamare il cmdlet [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) senza alcun parametro aggiuntivo.</span><span class="sxs-lookup"><span data-stu-id="72b20-116">To return information about all your users who have been enabled for Skype for Business Online, call the [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) cmdlet without any additional parameters.</span></span>
   
 ```
 Get-CsOnlineUser
 ```
 
-<span data-ttu-id="734dd-117">Per restituire informazioni per un singolo utente selezionato in modo casuale (ad esempio, per utilizzare questo account per i test), chiamare il cmdlet **Get-CsOnlineUser** e impostare il parametro _ResultSize_ su 1.</span><span class="sxs-lookup"><span data-stu-id="734dd-117">To return information for a single, randomly selected user (for example, to use this account for test purposes), call the **Get-CsOnlineUser** cmdlet and set the _ResultSize_ parameter to 1.</span></span>
+<span data-ttu-id="72b20-117">Per restituire informazioni per un singolo utente selezionato in modo casuale (ad esempio, per utilizzare questo account per i test), chiamare il cmdlet **Get-CsOnlineUser** e impostare il parametro _ResultSize_ su 1.</span><span class="sxs-lookup"><span data-stu-id="72b20-117">To return information for a single, randomly selected user (for example, to use this account for test purposes), call the **Get-CsOnlineUser** cmdlet and set the _ResultSize_ parameter to 1.</span></span>
   
 ```
 Get-CsOnlineUser -ResultSize 1
 ```
 
-<span data-ttu-id="734dd-118">Che fa sì che il cmdlet **Get-CsOnlineUser** restituisca informazioni per un singolo utente, indipendentemente dal numero di utenti nell'organizzazione sono presenti.</span><span class="sxs-lookup"><span data-stu-id="734dd-118">That causes the **Get-CsOnlineUser** cmdlet to return information for just one user, regardless of how many users you have in your organization.</span></span> <span data-ttu-id="734dd-119">Per restituire informazioni relative a cinque utenti, impostare il valore del parametro _ResultSize_ su 5.</span><span class="sxs-lookup"><span data-stu-id="734dd-119">To return information for five users, set the value of the _ResultSize_ parameter to 5.</span></span>
+<span data-ttu-id="72b20-118">Che fa sì che il cmdlet **Get-CsOnlineUser** restituisca informazioni per un singolo utente, indipendentemente dal numero di utenti nell'organizzazione sono presenti.</span><span class="sxs-lookup"><span data-stu-id="72b20-118">That causes the **Get-CsOnlineUser** cmdlet to return information for just one user, regardless of how many users you have in your organization.</span></span> <span data-ttu-id="72b20-119">Per restituire informazioni relative a cinque utenti, impostare il valore del parametro _ResultSize_ su 5.</span><span class="sxs-lookup"><span data-stu-id="72b20-119">To return information for five users, set the value of the _ResultSize_ parameter to 5.</span></span>
   
 ```
 Get-CsOnlineUser -ResultSize 5
 ```
 
-### <a name="return-information-for-a-specific-user-in-skype-for-business-online"></a><span data-ttu-id="734dd-120">Restituire informazioni per un utente specifico Skype Business online</span><span class="sxs-lookup"><span data-stu-id="734dd-120">Return information for a specific user in Skype for Business Online</span></span>
-<span data-ttu-id="734dd-121"><a name="BKMKReturnInfoSpecificUser"> </a></span><span class="sxs-lookup"><span data-stu-id="734dd-121"></span></span>
+### <a name="return-information-for-a-specific-user-in-skype-for-business-online"></a><span data-ttu-id="72b20-120">Restituire informazioni per un utente specifico Skype Business online</span><span class="sxs-lookup"><span data-stu-id="72b20-120">Return information for a specific user in Skype for Business Online</span></span>
+<span data-ttu-id="72b20-121"><a name="BKMKReturnInfoSpecificUser"> </a></span><span class="sxs-lookup"><span data-stu-id="72b20-121"></span></span>
 
-<span data-ttu-id="734dd-122">Esistono diversi modi per fare riferimento a un account utente specifico quando si chiama il cmdlet [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) .</span><span class="sxs-lookup"><span data-stu-id="734dd-122">There are multiple ways of referencing a specific user account when calling the [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) cmdlet.</span></span> <span data-ttu-id="734dd-123">È possibile utilizzare i servizi di dominio Active Directory (AD DS) nome visualizzato dell'utente.</span><span class="sxs-lookup"><span data-stu-id="734dd-123">You can use the user's Active Directory Domain Services (AD DS) display name.</span></span>
+<span data-ttu-id="72b20-122">Esistono diversi modi per fare riferimento a un account utente specifico quando si chiama il cmdlet [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) .</span><span class="sxs-lookup"><span data-stu-id="72b20-122">There are multiple ways of referencing a specific user account when calling the [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) cmdlet.</span></span> <span data-ttu-id="72b20-123">È possibile utilizzare i servizi di dominio Active Directory (AD DS) nome visualizzato dell'utente.</span><span class="sxs-lookup"><span data-stu-id="72b20-123">You can use the user's Active Directory Domain Services (AD DS) display name.</span></span>
   
 ```
 Get-CsOnlineUser -Identity "Ken Myer"
 ```
 
-<span data-ttu-id="734dd-124">È possibile utilizzare l'indirizzo SIP dell'utente.</span><span class="sxs-lookup"><span data-stu-id="734dd-124">You can use the user's SIP address.</span></span>
+<span data-ttu-id="72b20-124">È possibile utilizzare l'indirizzo SIP dell'utente.</span><span class="sxs-lookup"><span data-stu-id="72b20-124">You can use the user's SIP address.</span></span>
   
 ```
 Get-CsOnlineUser -Identity "sip:kenmyer@litwareinc.com"
 ```
 
-<span data-ttu-id="734dd-125">È possibile utilizzare nome entità utente dell'utente (UPN).</span><span class="sxs-lookup"><span data-stu-id="734dd-125">You can use the user's user principal name (UPN).</span></span>
+<span data-ttu-id="72b20-125">È possibile utilizzare nome entità utente dell'utente (UPN).</span><span class="sxs-lookup"><span data-stu-id="72b20-125">You can use the user's user principal name (UPN).</span></span>
   
 ```
 Get-CsOnlineUser -Identity "kenmyer@litwareinc.com"
 ```
 
-### <a name="return-specific-information-for-specific-users-in-skype-for-business-online"></a><span data-ttu-id="734dd-126">Restituire informazioni specifiche per utenti specifici in Skype Business online</span><span class="sxs-lookup"><span data-stu-id="734dd-126">Return specific information for specific users in Skype for Business Online</span></span>
-<span data-ttu-id="734dd-127"><a name="BKMKReturninfoSpecificUsers"> </a></span><span class="sxs-lookup"><span data-stu-id="734dd-127"></span></span>
+### <a name="return-specific-information-for-specific-users-in-skype-for-business-online"></a><span data-ttu-id="72b20-126">Restituire informazioni specifiche per utenti specifici in Skype Business online</span><span class="sxs-lookup"><span data-stu-id="72b20-126">Return specific information for specific users in Skype for Business Online</span></span>
+<span data-ttu-id="72b20-127"><a name="BKMKReturninfoSpecificUsers"> </a></span><span class="sxs-lookup"><span data-stu-id="72b20-127"></span></span>
 
-<span data-ttu-id="734dd-128">Per impostazione predefinita, il cmdlet [Get-CsOnlineUser](http://technet.microsoft.com/library/2bfafd70-a7d9-4308-a353-5ecf44249b53.aspx) restituisce una grande quantità di informazioni per ogni Skype per account utente in linea aziendale.</span><span class="sxs-lookup"><span data-stu-id="734dd-128">By default, the [Get-CsOnlineUser](http://technet.microsoft.com/library/2bfafd70-a7d9-4308-a353-5ecf44249b53.aspx) cmdlet returns a huge amount of information for each Skype for Business Online user account.</span></span> <span data-ttu-id="734dd-129">Se si è interessati solo un sottoinsieme di tali informazioni, eseguire il piping i dati restituiti al cmdlet **Select-Object** .</span><span class="sxs-lookup"><span data-stu-id="734dd-129">If you are interested in only a subset of that information, pipe the returned data to the **Select-Object** cmdlet.</span></span> <span data-ttu-id="734dd-130">Ad esempio, questo comando restituisce tutti i dati per l'utente Ken Myer e quindi viene utilizzato il cmdlet **Select-Object** per limitare le informazioni visualizzato sullo schermo al nome visualizzato di Active Directory di Ken e dial plan.</span><span class="sxs-lookup"><span data-stu-id="734dd-130">For example, this command returns all the data for the user Ken Myer, and then uses the **Select-Object** cmdlet to limit the information displayed onscreen to Ken's AD DS display name and dial plan.</span></span>
+<span data-ttu-id="72b20-128">Per impostazione predefinita, il cmdlet [Get-CsOnlineUser](http://technet.microsoft.com/library/2bfafd70-a7d9-4308-a353-5ecf44249b53.aspx) restituisce una grande quantità di informazioni per ogni Skype per account utente in linea aziendale.</span><span class="sxs-lookup"><span data-stu-id="72b20-128">By default, the [Get-CsOnlineUser](http://technet.microsoft.com/library/2bfafd70-a7d9-4308-a353-5ecf44249b53.aspx) cmdlet returns a huge amount of information for each Skype for Business Online user account.</span></span> <span data-ttu-id="72b20-129">Se si è interessati solo un sottoinsieme di tali informazioni, eseguire il piping i dati restituiti al cmdlet **Select-Object** .</span><span class="sxs-lookup"><span data-stu-id="72b20-129">If you are interested in only a subset of that information, pipe the returned data to the **Select-Object** cmdlet.</span></span> <span data-ttu-id="72b20-130">Ad esempio, questo comando restituisce tutti i dati per l'utente Ken Myer e quindi viene utilizzato il cmdlet **Select-Object** per limitare le informazioni visualizzato sullo schermo al nome visualizzato di Active Directory di Ken e dial plan.</span><span class="sxs-lookup"><span data-stu-id="72b20-130">For example, this command returns all the data for the user Ken Myer, and then uses the **Select-Object** cmdlet to limit the information displayed onscreen to Ken's AD DS display name and dial plan.</span></span>
   
 ```
 Get-CsOnlineUser -Identity "Ken Myer" | Select-Object DisplayName, DialPlan
 ```
 
-<span data-ttu-id="734dd-131">Il comando seguente restituisce il nome visualizzato e un dial plan per tutti gli utenti.</span><span class="sxs-lookup"><span data-stu-id="734dd-131">The following command returns the display name and dial plan for all your users.</span></span>
+<span data-ttu-id="72b20-131">Il comando seguente restituisce il nome visualizzato e un dial plan per tutti gli utenti.</span><span class="sxs-lookup"><span data-stu-id="72b20-131">The following command returns the display name and dial plan for all your users.</span></span>
   
 ```
 Get-CsOnlineUser | Select-Object DisplayName, DialPlan
 ```
 
-<span data-ttu-id="734dd-132">Per trovare le proprietà di un Skype per l'account utente in linea di Business, utilizzare il seguente comando.</span><span class="sxs-lookup"><span data-stu-id="734dd-132">To find the properties of a Skype for Business Online user account, use the following command.</span></span>
+<span data-ttu-id="72b20-132">Per trovare le proprietà di un Skype per l'account utente in linea di Business, utilizzare il seguente comando.</span><span class="sxs-lookup"><span data-stu-id="72b20-132">To find the properties of a Skype for Business Online user account, use the following command.</span></span>
   
 ```
 Get-CsOnlineUser | Get-Member
 ```
 
-### <a name="return-a-filtered-list-of-users-in-skype-for-business-online"></a><span data-ttu-id="734dd-133">Restituire un elenco filtrato degli utenti in Skype Business online</span><span class="sxs-lookup"><span data-stu-id="734dd-133">Return a filtered list of users in Skype for Business Online</span></span>
-<span data-ttu-id="734dd-134"><a name="BKMKReturnFilteredListofUsers"> </a></span><span class="sxs-lookup"><span data-stu-id="734dd-134"></span></span>
+### <a name="return-a-filtered-list-of-users-in-skype-for-business-online"></a><span data-ttu-id="72b20-133">Restituire un elenco filtrato degli utenti in Skype Business online</span><span class="sxs-lookup"><span data-stu-id="72b20-133">Return a filtered list of users in Skype for Business Online</span></span>
+<span data-ttu-id="72b20-134"><a name="BKMKReturnFilteredListofUsers"> </a></span><span class="sxs-lookup"><span data-stu-id="72b20-134"></span></span>
 
-<span data-ttu-id="734dd-135">Utilizzando il cmdlet [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) e i parametri _Filter_ o _LdapFilter_ , è possibile ottenere facilmente informazioni su un insieme specifico di utenti.</span><span class="sxs-lookup"><span data-stu-id="734dd-135">By using the [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) cmdlet and the _LdapFilter_ or _Filter_ parameters, you can easily return information about a targeted set of users.</span></span> <span data-ttu-id="734dd-136">Ad esempio, questo comando restituisce tutti gli utenti che lavorano nel reparto Finance.</span><span class="sxs-lookup"><span data-stu-id="734dd-136">For example, this command returns all the users who work in the Finance department.</span></span>
+<span data-ttu-id="72b20-135">Utilizzando il cmdlet [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) e i parametri _Filter_ o _LdapFilter_ , è possibile ottenere facilmente informazioni su un insieme specifico di utenti.</span><span class="sxs-lookup"><span data-stu-id="72b20-135">By using the [Get-CsOnlineUser](https://go.microsoft.com/fwlink/p/?linkid=849603) cmdlet and the _LdapFilter_ or _Filter_ parameters, you can easily return information about a targeted set of users.</span></span> <span data-ttu-id="72b20-136">Ad esempio, questo comando restituisce tutti gli utenti che lavorano nel reparto Finance.</span><span class="sxs-lookup"><span data-stu-id="72b20-136">For example, this command returns all the users who work in the Finance department.</span></span>
   
 ```
 Get-CsOnlineUser -LdapFilter "department=Finance"
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="734dd-137">See also</span><span class="sxs-lookup"><span data-stu-id="734dd-137">Related topics</span></span>
-[<span data-ttu-id="734dd-138">Configurare il computer per Skype per la gestione in linea aziendale tramite Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="734dd-138">Set up your computer for skype for business online management using Windows PowerShell</span></span>](set-up-your-computer-for-windows-powershell.md)
+## <a name="related-topics"></a><span data-ttu-id="72b20-137">See also</span><span class="sxs-lookup"><span data-stu-id="72b20-137">Related topics</span></span>
+[<span data-ttu-id="72b20-138">Configurare il computer per Skype per la gestione in linea aziendale tramite Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="72b20-138">Set up your computer for skype for business online management using Windows PowerShell</span></span>](set-up-your-computer-for-windows-powershell.md)
 
-## <a name="feedback"></a><span data-ttu-id="734dd-139">Commenti e suggerimenti?</span><span class="sxs-lookup"><span data-stu-id="734dd-139">Feedback?</span></span>
-<span data-ttu-id="734dd-140">Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).</span><span class="sxs-lookup"><span data-stu-id="734dd-140">To provide product feedback or to let us know how we're doing, see [Skype for Business Feedback](https://www.skypefeedback.com).</span></span>
+  
+ 
