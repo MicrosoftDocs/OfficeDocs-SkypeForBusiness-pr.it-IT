@@ -17,11 +17,11 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Le conferenze sono una parte importante di Skype for Business online: le conferenze consentono a gruppi di utenti di incontrarsi online per visualizzare diapositive e video, condividere applicazioni, scambiare file e comunicare e collaborare in altro modo.'
-ms.openlocfilehash: 97102f717fbc8703c6bda456acdfadfcfd71276f
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 6005789d4be479ea4fd39f74fb950600c640bbb5
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-up-conferencing-policies-for-your-organization"></a>Impostazione dei criteri di conferenza per la propria organizzazione
 
@@ -148,3 +148,6 @@ Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsCo
 [Trasferimenti di file bloccati punto-punto](block-point-to-point-file-transfers.md)
 
 [Impostazione dei criteri client per la propria organizzazione](set-up-client-policies-for-your-organization.md)
+
+  
+ 

@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 - Strat_SB_PSTN
-description: 'Informazioni su come configurare e testare gli operatori automatici di sistema telefonico in (Cloud PBX) per la gestione dell''organizzazione delle chiamate efficiente. '
-ms.openlocfilehash: 60118fa973bc316b1b79f3d97e89953a40c6a9c7
-ms.sourcegitcommit: 50446359cd7c359eb2536176545291c723392e47
+description: "Informazioni su come configurare e testare gli operatori automatici di sistema telefonico in (Cloud PBX) per la gestione dell'organizzazione delle chiamate efficiente. "
+ms.openlocfilehash: 275aececccca18b82cbd08a4f4aa580d1696dcf9
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-up-a-phone-system-auto-attendant"></a>Configurare un operatore automatico di sistema telefonico
 
@@ -254,5 +254,5 @@ Questi sono i cmdlet necessari per gestire un operatore automatico.
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
     
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

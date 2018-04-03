@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
-description: "Informazioni su come configurare un numero di emergenza indirizzo e telefono per ogni utente che può essere utilizzato con il telefono rete PSTN (Public Switched)."
-ms.openlocfilehash: 1b86861e40ac1b5929176b1e0b8f6274d749e8f9
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+description: Informazioni su come configurare un numero di emergenza indirizzo e telefono per ogni utente che può essere utilizzato con il telefono rete PSTN (Public Switched).
+ms.openlocfilehash: d1323f400e15b629d6fc623636c4060028ec42c1
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="assign-or-change-an-emergency-address-for-a-user"></a>Assegnare o modificare un indirizzo di emergenza per un utente
 
@@ -67,5 +67,5 @@ Desiderano come ottenere la chiamata dei piani di Office 365 e il relativo costo
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

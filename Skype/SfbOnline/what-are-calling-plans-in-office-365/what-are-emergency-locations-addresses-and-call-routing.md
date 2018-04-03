@@ -23,11 +23,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: 'Learn what emergency address, location, and emergency call routing are, and how to plan and assign them to your users. '
-ms.openlocfilehash: 3dfc02ef5c5316e8767512e57d1f98eae9f57a06
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 8aceaab0c54b42555c31f14883973fdab3c854fd
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="what-are-emergency-locations-addresses-and-call-routing"></a>Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?
 
@@ -77,5 +77,5 @@ Percorsi e gli indirizzi di emergenza vengono utilizzati durante il processo di 
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

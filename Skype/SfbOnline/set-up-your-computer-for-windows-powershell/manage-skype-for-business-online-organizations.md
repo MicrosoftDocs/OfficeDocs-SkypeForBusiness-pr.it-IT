@@ -17,11 +17,11 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: Utilizzare il cmdlet Get-CsTenant e Get-CsTenantLicensingConfiguration e Windows PowerShell per ottenere informazioni sui Skype per tenant Business Online.
-ms.openlocfilehash: 6461a15baeed3bf3fde0ee79dc24f7863eaabd02
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 53043fbf623ce2cc7342bf5ac7b32c363927def5
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="manage-skype-for-business-online-organizations"></a>Gestire Skype per le organizzazioni aziendali Online
 
@@ -48,5 +48,5 @@ Per informazioni sugli indica se le informazioni sulle licenze per il tenant spe
 ## <a name="related-topics"></a>See also
 [Configurare il computer per Skype per la gestione in linea aziendale tramite Windows PowerShell](set-up-your-computer-for-windows-powershell.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

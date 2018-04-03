@@ -20,12 +20,12 @@ f1keywords:
 - ms.lync.lac.NumberActivationStatePending
 ms.custom:
 - Calling Plans
-description: "La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza."
-ms.openlocfilehash: 9e11ffdc522b02082f7a4eb6fcab993a9fa33589
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
+ms.openlocfilehash: 0ef01cb445f2dff18638c1714f3e71c9655018e1
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="why-is-number-activation-just-pending"></a>Quali sono i numerico attivazione solo in sospeso?
 
@@ -107,3 +107,6 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+  
+ 

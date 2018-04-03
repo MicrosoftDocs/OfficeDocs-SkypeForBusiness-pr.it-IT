@@ -18,11 +18,11 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: "La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate sull'attività, tra cui utilizzo PSTN all'interno dell'organizzazione. "
-ms.openlocfilehash: 4a3ca5b29a6be75f2f03890d4447b9c62c966c92
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 9d7a43cc8348dc3e56ddffc27c20446518fb32b5
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="users-blocked-report"></a>Rapporto utenti bloccati
 
@@ -83,3 +83,6 @@ Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e 
    
 ## <a name="related-topics"></a>See also
 [Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+
+  
+ 

@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 - Strat_SB_PSTN
-description: 'Scopri come configurare Skype for Business in modo che usi un''altra lingua per il messaggio di saluto predefinito della segreteria telefonica dell''organizzazione. '
-ms.openlocfilehash: 04ba9aa11b5cfa49fc72b3ba0b96c1b3c0f9b73b
-ms.sourcegitcommit: b985035b91ebd7ceff8d50e9e0fa9aa6ff971f3a
+description: "Scopri come configurare Skype for Business in modo che usi un'altra lingua per il messaggio di saluto predefinito della segreteria telefonica dell'organizzazione. "
+ms.openlocfilehash: 7b8e289a36c4642f37035158977b677174a8b95b
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="change-the-default-language-for-greetings-and-emails"></a>Modificare la lingua predefinita per i messaggi di saluto e le e-mail
 
@@ -77,5 +77,5 @@ Se sei un [amministratore globale di Office 365](https://support.office.com/en-u
     
 - [Abilitare o cambiare la lingua del layout di tastiera](https://support.office.com/en-us/article/Enable-or-change-a-keyboard-layout-language-1c2242c0-fe15-4bc3-99bc-535de6f4f258)
     
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

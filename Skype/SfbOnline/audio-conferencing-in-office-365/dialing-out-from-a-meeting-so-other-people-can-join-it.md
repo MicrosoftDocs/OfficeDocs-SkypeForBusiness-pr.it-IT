@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: 3c2db9a5-3a19-4e19-b59e-8e5587f25d31
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -20,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: Learn what you need and how meeting organizers can call out to other people using Skype for Business.
-ms.openlocfilehash: 3bceef26b1858e4fa750953db08767f77041311c
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 1dc1fb9b97381eed3a078e64fb408095df414f6d
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="dialing-out-from-a-meeting-so-other-people-can-join-it"></a>Chiamata in uscita all'interno di una riunione per consentire ad altri di parteciparvi
 
@@ -48,11 +50,10 @@ Dial-out is only available to some countries/regions. Per un elenco completo, ve
   
 ## <a name="want-to-know-more-about-audio-conferencing"></a>Per saperne di più sui servizi di conferenza telefonica con accesso esterno
 
-- I servizi di conferenza telefonica con accesso esterno, anche noti con il nome di Servizi di conferenza PSTN, non sono disponibili per tutte le organizzazioni Office 365.
+[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
     
 - Per ulteriori informazioni, consulta [Servizi di conferenza telefonica con accesso esterno in Office 365](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
     
 ## <a name="related-topics"></a>See also
 
 [Installare Skype for Business](https://support.office.com/en-us/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
-

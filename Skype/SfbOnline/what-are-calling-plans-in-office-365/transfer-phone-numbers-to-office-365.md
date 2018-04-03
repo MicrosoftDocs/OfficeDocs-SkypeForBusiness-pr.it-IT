@@ -23,12 +23,12 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 - LIL_Placement
-description: "Informazioni su cosa è necessario conoscere e prima di portabilità i numeri di telefono a Skype per le aziende e creare un ordine di porta per il trasferimento."
-ms.openlocfilehash: 4e276c42b31f8457222d67c51352310ecc4f5bc7
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+description: Informazioni su cosa è necessario conoscere e prima di portabilità i numeri di telefono a Skype per le aziende e creare un ordine di porta per il trasferimento.
+ms.openlocfilehash: ae74db2d5182fbab619e9d6cbdbb3c648d95df08
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="transfer-phone-numbers-to-office-365"></a>Trasferire i numeri di telefono a Office 365
 
@@ -115,5 +115,5 @@ La richiesta di ordine porta verrà controllata e aggiornata ogni giorno e si ri
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

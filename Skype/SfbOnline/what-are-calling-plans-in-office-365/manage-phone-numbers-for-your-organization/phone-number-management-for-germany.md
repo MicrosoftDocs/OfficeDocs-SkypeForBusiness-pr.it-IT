@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Germania per Skype for Business online e Microsoft Teams.
-ms.openlocfilehash: 1ae3b6bc39ea4e4cbce4376635180a0662fca2cb
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 6f7f6f8f67c2e880472d9c6c97d683dfc138fdbc
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="phone-number-management-for-germany"></a>Gestione dei numeri di telefono per la Germania
 
@@ -51,5 +51,5 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

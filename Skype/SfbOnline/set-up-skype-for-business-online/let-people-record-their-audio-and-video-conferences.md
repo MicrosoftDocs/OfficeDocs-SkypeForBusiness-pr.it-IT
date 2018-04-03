@@ -17,12 +17,12 @@ f1keywords:
 - O365P_RecordingDesc
 ms.custom:
 - Setup
-description: "Come attivare la registrazione per le conferenze audio e video e informazioni sugli aspetti è e non è incluso in registrazioni. "
-ms.openlocfilehash: 9c8f3107272eaad7911c86f6b914a67bed3902ee
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: 'Come attivare la registrazione per le conferenze audio e video e informazioni sugli aspetti è e non è incluso in registrazioni. '
+ms.openlocfilehash: bbf9eb07354be68467968265e1a714e2090272b9
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="let-people-record-their-audio-and-video-conferences"></a>Consentire agli utenti di registrare le conferenze audio e video
 
@@ -47,5 +47,5 @@ Per ulteriori informazioni, vedere [registrazione di Lync Salva e pubblica](http
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

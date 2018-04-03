@@ -18,12 +18,12 @@ f1keywords:
 - ms.lync.lac.UsersCountLimitationWarning
 ms.custom:
 - Setup
-description: 'Informazioni su come utilizzare nei limiti di Skype per la visualizzazione dell''amministratore aziendale Online degli utenti. '
-ms.openlocfilehash: 7f7189536d1c859b25eb6cacb3fc75c57995d464
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: "Informazioni su come utilizzare nei limiti di Skype per la visualizzazione dell'amministratore aziendale Online degli utenti. "
+ms.openlocfilehash: 13b5a6f8aa838b7a2ff21b10d488f5569792c385
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="skype-for-business-online-admin-center-users-page-limitations"></a>Skype per gli utenti di centro Business Online admin pagina limitazioni
 
@@ -45,5 +45,5 @@ Per motivi di prestazioni **Skype per interfaccia di amministrazione di Business
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

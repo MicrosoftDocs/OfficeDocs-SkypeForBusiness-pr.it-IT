@@ -1,5 +1,5 @@
 ---
-title: "Invio di una richiesta di servizio per la portabilità dei numeri locali"
+title: Invio di una richiesta di servizio per la portabilità dei numeri locali
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,11 +21,11 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: 'If you have more than 999 phone numbers to transferred to Skype for Business, learn how to submit a port order service request to get them moved. '
-ms.openlocfilehash: 8f261fa07da4aa8fef48b25ca09ecd84950aa18c
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 5221476d56b79fceabea2fa23a60ce58749e0ad9
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="submitting-a-service-request-for-local-number-porting"></a>Invio di una richiesta di servizio per la portabilità dei numeri locali
 
@@ -45,4 +45,5 @@ Se si desidera trasferire i numeri di telefono più di 999 (per gli utenti o i n
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
   
-
+  
+ 

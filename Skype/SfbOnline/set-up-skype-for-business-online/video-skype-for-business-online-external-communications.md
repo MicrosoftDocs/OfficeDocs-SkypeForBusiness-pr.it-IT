@@ -17,11 +17,11 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Informazioni su come configurare Skype per Business Online comunicazioni esterne per gli utenti possano comunicare con contatti esterni Skype. '
-ms.openlocfilehash: 173e1715bbefec0e446011581fcaaecefcebf4d9
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: b915bd266f1df7056182dc89b472a2a30ee371de
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="video-skype-for-business-online-external-communications"></a>Video: Skype per le comunicazioni esterne Business Online
 
@@ -41,5 +41,5 @@ Impostare Skype per comunicazioni esterne Business Online in modo che gli utenti
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

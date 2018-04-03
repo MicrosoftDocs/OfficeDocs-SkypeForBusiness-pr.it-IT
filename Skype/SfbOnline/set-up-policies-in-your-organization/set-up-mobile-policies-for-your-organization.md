@@ -16,12 +16,12 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Setup
-description: "È possibile impostare come cui gli utenti possono connettersi Skype, Business online utilizzando il Skype per app Business nei dispositivi mobili, ad esempio una caratteristica che consente agli utenti di effettuare e ricevere chiamate telefoniche sul telefono cellulare utilizzando il numero di telefono dell'ufficio anziché il numero di cellulare numero. I criteri di mobilità possono essere utilizzati anche per richiedere la presenza di connessioni Wi-Fi quando si effettuano o ricevono chiamate."
-ms.openlocfilehash: 33978ca8e9a83ebe35342da169a01b1bfe53785b
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: È possibile impostare come cui gli utenti possono connettersi Skype, Business online utilizzando il Skype per app Business nei dispositivi mobili, ad esempio una caratteristica che consente agli utenti di effettuare e ricevere chiamate telefoniche sul telefono cellulare utilizzando il numero di telefono dell'ufficio anziché il numero di cellulare numero. I criteri di mobilità possono essere utilizzati anche per richiedere la presenza di connessioni Wi-Fi quando si effettuano o ricevono chiamate.
+ms.openlocfilehash: f3fa8b2974406827494ea8ceb759b23d01817825
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-up-mobile-policies-for-your-organization"></a>Impostare i criteri per dispositivi mobili per l'organizzazione
 
@@ -145,5 +145,5 @@ Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsMo
 
 [Impostare i criteri relativi alle conferenze nell'organizzazione](set-up-conferencing-policies-for-your-organization.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

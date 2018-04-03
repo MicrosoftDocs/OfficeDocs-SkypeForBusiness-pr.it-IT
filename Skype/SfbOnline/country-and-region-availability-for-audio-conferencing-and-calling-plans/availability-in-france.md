@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità in Francia"
+title: Disponibilità in Francia
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -23,10 +23,10 @@ ms.custom:
 - Calling Plans
 description: Di seguito sono disponibili per la Francia i servizi di Skype per le aziende e Teams di Microsoft Office 365.
 ms.openlocfilehash: b75594d18259155a2480487b64eb33767d53e69f
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="availability-in-france"></a>Disponibilità in Francia
 

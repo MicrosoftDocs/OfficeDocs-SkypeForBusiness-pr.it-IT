@@ -20,12 +20,12 @@ f1keywords:
 - ms.lync.lac.PortOrderAccountInfoAuthorizingPerson
 ms.custom:
 - Calling Plans
-description: "Informazioni sui motivi per cui si desidera aggiungere un utente autorizzato può apportare modifiche all'account quando si utilizza la procedura guidata nuovo ordine di porta numero locale."
-ms.openlocfilehash: f12bb42b3ae74f0d487e25f935c2c129545008c1
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: Informazioni sui motivi per cui si desidera aggiungere un utente autorizzato può apportare modifiche all'account quando si utilizza la procedura guidata nuovo ordine di porta numero locale.
+ms.openlocfilehash: 9d0b49828be9bc87443ba77ae8daf7ba16270b42
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="authorized-person-on-the-account"></a>Utente autorizzato dell'account
 
@@ -49,3 +49,6 @@ Nella procedura guidata **Nuovo locali numero di porta dell'ordine** è necessar
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+  
+ 

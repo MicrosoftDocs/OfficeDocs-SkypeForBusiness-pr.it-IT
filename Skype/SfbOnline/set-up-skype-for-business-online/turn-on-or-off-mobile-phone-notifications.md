@@ -18,11 +18,11 @@ f1keywords:
 ms.custom:
 - Setup
 description: Informazioni su come attivare le notifiche di cellulare o disattivare in modo che gli utenti possono ricevere avvisi relativi a segreteria telefonica in arrivo e non effettuate messaggi immediati.
-ms.openlocfilehash: 5f783c45fa198d02a44bbd2f7501a5bc4f0b5e1e
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 111d225b77c735dcf139a207f7c338cd228c873f
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="turn-on-or-off-mobile-phone-notifications"></a>Attivare o disattivare le notifiche di cellulare
 
@@ -56,5 +56,5 @@ Tenere presente quanto segue:
 
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

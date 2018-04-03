@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Skype per Business Online utilizza tipi di numero di telefono diverso a seconda dello scopo per la quale si desidera utilizzare il numero di telefono.
-ms.openlocfilehash: a417aac7143b7be1afb8f7801b1007b1a1ab69b5
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 8cbb68639b5fda89cb93604985880b1934819af8
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="different-kinds-of-phone-numbers-used-for-calling-plans"></a>Diversi tipi di numeri di telefono utilizzati per la chiamata dei piani
 
@@ -67,5 +67,5 @@ Skype per Business Online utilizza tipi di numero di telefono diverso a seconda 
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

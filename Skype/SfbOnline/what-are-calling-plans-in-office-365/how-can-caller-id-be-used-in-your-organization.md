@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
-description: "ID chiamante può essere controllato per le chiamate in ingresso e in uscita per gli utenti di sistema telefonico utilizzando un criterio denominato CallingLineIdentity."
-ms.openlocfilehash: e68b9c2130f5cfc8a054e485367351eccbffc93c
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+description: ID chiamante può essere controllato per le chiamate in ingresso e in uscita per gli utenti di sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
+ms.openlocfilehash: d658c292164556bb67845a08b519b9e78b6ff91d
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="how-can-caller-id-be-used-in-your-organization"></a>Come ID chiamante utilizzare all'interno dell'organizzazione
 
@@ -93,5 +93,5 @@ Per impostare l'ID chiamante in uscita, vedere [impostazione dell'ID chiamante p
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

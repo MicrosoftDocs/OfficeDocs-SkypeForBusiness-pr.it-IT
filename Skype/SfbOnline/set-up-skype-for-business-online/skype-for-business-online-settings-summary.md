@@ -17,12 +17,12 @@ ROBOTS: NOIDEX, NOFOLLOW
 f1keywords: None
 ms.custom:
 - Setup
-description: "In questo riepilogo di Skype per le impostazioni utente e organizzazione Business consentono di ulteriori informazioni sulla connettività per messaggistica immediata pubblica, gli inviti alle riunioni, la registrazione delle chiamate e le riunioni e altro ancora.  "
-ms.openlocfilehash: 0f9bbf7e24d268cb4690212fc3f70abfd024c871
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: 'In questo riepilogo di Skype per le impostazioni utente e organizzazione Business consentono di ulteriori informazioni sulla connettività per messaggistica immediata pubblica, gli inviti alle riunioni, la registrazione delle chiamate e le riunioni e altro ancora.  '
+ms.openlocfilehash: f730b18110f4c114ebb414a2aa863a9194b427a0
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="skype-for-business-online-settings-summary"></a>Riepilogo delle impostazioni di Skype for Business online
 
@@ -56,3 +56,6 @@ ms.lasthandoff: 02/19/2018
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
+
+  
+ 

@@ -26,11 +26,11 @@ ms.custom:
 - Strat_SB_PSTN
 - LIL_Placement
 description: 'Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization. '
-ms.openlocfilehash: 8bf23449421dabcc310bba5792e1b1c8dbb534a1
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 573d8b58c156ec707f88bf4e3ee0d8ac8764e6f3
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="calling-plans-for-office-365"></a>La chiamata a piani di Office 365
 
@@ -99,8 +99,6 @@ Di seguito sono altri articoli che illustrano come configurare i piani di chiama
 
 - [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
     
-- [Configurare le audioconferenze per Skype for Business e Microsoft Teams](../audio-conferencing-in-office-365/set-up-audio-conferencing.md)
-    
 - [Impostare la segreteria telefonica del Sistema telefonico - Guida per gli amministratori](../what-is-phone-system-in-office-365/phone-system-voicemail/set-up-phone-system-voicemail.md)
     
 - [Configurare i piani per chiamate](../what-are-calling-plans-in-office-365/set-up-calling-plans.md)
@@ -109,5 +107,5 @@ Di seguito sono altri articoli che illustrano come configurare i piani di chiama
     
 - [Configurare il connettore Cloud](https://technet.microsoft.com/en-us/library/mt605228.aspx) e [scaricare il connettore Cloud](https://aka.ms/CloudConnectorInstaller)
   
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

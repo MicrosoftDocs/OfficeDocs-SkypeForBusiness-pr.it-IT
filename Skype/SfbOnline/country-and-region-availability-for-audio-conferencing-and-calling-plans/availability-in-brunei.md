@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità di Brunei"
+title: Disponibilità di Brunei
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per Brunei i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: eec2edad282d4bcc34a40b2c669a5c97a10859ee
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 0a375722169ea38a4a027a1a84284f583d0791dc
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="availability-in-brunei"></a>Disponibilità di Brunei
 
@@ -82,6 +82,3 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
-
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).

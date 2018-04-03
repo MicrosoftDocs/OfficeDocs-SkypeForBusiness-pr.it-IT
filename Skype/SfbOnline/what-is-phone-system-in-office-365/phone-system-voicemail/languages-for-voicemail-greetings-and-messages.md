@@ -4,12 +4,14 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: wasseemh
-ms.date: 01/22/2018
+ms.date: 03/13/2018
 ms.topic: article
 ms.assetid: 4a57e3d0-8b08-494f-a195-b44afa9cbc0d
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -20,11 +22,11 @@ ms.custom:
 - Phone System
 - Strat_SB_PSTN
 description: 'Scopri quali lingue puoi impostare in Skype for Business per i messaggi di sistema predefiniti. '
-ms.openlocfilehash: 256bc49c67ffbbfc4a503ffaf621cd4bb82b0c07
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: bcb8f00910c0ce15c0e9a1da6e008bc2008cbfad
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="languages-for-voicemail-greetings-and-messages"></a>Lingua per i messaggi e i saluti della segreteria telefonica
 
@@ -61,9 +63,12 @@ Per cambiare la lingua usata da Skype for Business per i messaggi di saluto dell
 |Spagnolo  <br/> |Spagna  <br/> |es-ES  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Spagnolo  <br/> |Messico  <br/> |es-MX  <br/> |Sì, ma viene utilizzato lo spagnolo continentale (es-ES).  <br/> |Sì  <br/> |Sì, ma viene utilizzato lo spagnolo continentale (es-ES).  <br/> |
 |Svedese  <br/> |Svezia  <br/> |sv-SE  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Turco  <br/> |Turchia  <br/> |tr-TR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
 [Ecco cosa offre il Sistema telefonico in Office 365](../../what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system.md)
   
+  
+ 

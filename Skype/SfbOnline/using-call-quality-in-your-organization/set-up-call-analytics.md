@@ -6,7 +6,7 @@ manager: serdars
 ms.reviewer: mikedav, wlooney
 ms.date: 01/22/2018
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 ms.collection: Adm_Skype4B_Online
@@ -18,12 +18,12 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Reporting
-description: "Configurare e utilizzare chiamate Analitica per identificare e risolvere i problemi Skype per problemi di qualità chiamata Business e Teams Microsoft."
-ms.openlocfilehash: ef8f9e10e25e7f67f0161a143c313ed25330db18
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: Configurare e utilizzare chiamate Analitica per identificare e risolvere i problemi Skype per problemi di qualità chiamata Business e Teams Microsoft.
+ms.openlocfilehash: 0169d8e2008ce0d87f4ee666663d4d8ccb71d1b8
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-up-skype-for-business-call-analytics"></a>Configurazione di Skype per Business chiamare Analitica
 
@@ -72,7 +72,7 @@ Problemi di qualità delle chiamate di base di gestire gli agenti di supporto te
     
      ![Schermata che mostra la pagina autorizzazioni per chiamare Analitica con le opzioni per le autorizzazioni di livello 1 e 2 a livelli.](../images/ed5b6b05-b407-4363-8cf0-a6e79027f64b.png)
   
- Gli utenti con uno di questi livelli di autorizzazione visualizzare chiamare Analitica tramite dedicato URL *https://adminportal.services.skypeforbusiness.com*.
+ Ottengono gli utenti con uno di questi livelli di autorizzazione per chiamare Analitica tramite l'URL dedicato *https://adminportal.services.skypeforbusiness.com*.
   
 ## <a name="upload-a-tsv-or-csv-file-to-add-building-site-and-tenant-information"></a>Caricare un file CSV o TSV per aggiungere creazione, del sito e titolari delle informazioni
 <a name="BKMK_UploadFiles"> </a>
@@ -92,5 +92,5 @@ Se si sta creando il file con estensione csv o TSV da zero, vedere [file di dati
 
 [Che cos'è la differenza tra Analitica delle chiamate e chiamate Dashboard qualità?](difference-between-call-analytics-and-call-quality-dashboard.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

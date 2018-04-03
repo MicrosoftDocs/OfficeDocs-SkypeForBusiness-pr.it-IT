@@ -18,12 +18,12 @@ f1keywords:
 - ms.lync.lac.BroadcastMeetings
 ms.custom:
 - SMB
-description: "È possibile abilitare Skype riunione trasmissione e apportare modifiche alle impostazioni e i criteri per le riunioni."
-ms.openlocfilehash: b61a03178086699a8b5fc27ebc00f1c6b6f72021
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: È possibile abilitare Skype riunione trasmissione e apportare modifiche alle impostazioni e i criteri per le riunioni.
+ms.openlocfilehash: 26b5173ad911632a1a36b499e9f617f6848c2345
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="make-changes-to-skype-meeting-broadcast-settings-for-your-organization"></a>Apportare modifiche alle impostazioni di trasmissione riunione Skype per l'organizzazione
 
@@ -43,5 +43,5 @@ ms.lasthandoff: 02/27/2018
 
 [Configurare la rete per Skype Meeting Broadcast](set-up-your-network-for-skype-meeting-broadcast.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: f1defa5b-e49c-4d8c-a5f8-3f736201af5e
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -19,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
-description: "Per trasferire o delle porte numeri di telefono da Skype Business online in un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di un numero di telefono fuori delle porte."
-ms.openlocfilehash: 03e2e0ca76ea434e2458f1dec4a236996a19f7aa
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: Per trasferire o delle porte numeri di telefono da Skype Business online in un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di un numero di telefono fuori delle porte.
+ms.openlocfilehash: f4ff20f4252686d047b3e9d83cf8beb4b3a9daae
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-your-pin-for-transferring-numbers-to-a-new-service-provider"></a>Impostare il PIN per il trasferimento di numeri in un nuovo provider di servizi
 
@@ -73,6 +75,7 @@ Ecco alcune informazioni specifiche sul PIN è necessario conoscere:
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-
+  
+ 
   
 

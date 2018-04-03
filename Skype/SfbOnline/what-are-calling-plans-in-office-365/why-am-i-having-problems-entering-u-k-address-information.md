@@ -1,5 +1,5 @@
 ---
-title: "Perché si verificano problemi immissione Regno Unito informazioni sull'indirizzo?"
+title: Perché si verificano problemi immissione Regno Unito informazioni sull'indirizzo?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,11 +21,11 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: Di seguito sono indicati alcuni dei motivi per cui si verificarsi problemi nell'ottenere l'indirizzo o gli indirizzi per convalidare correttamente nel Regno Unito (Regno Unito).
-ms.openlocfilehash: e012de9ba4371063bc16e2896a5bd4e3b8814a4d
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 75373098af599768aa654f5327c1f40069ed51c7
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="why-am-i-having-problems-entering-uk-address-information"></a>Perché si verificano problemi immissione Regno Unito informazioni sull'indirizzo?
 
@@ -118,5 +118,5 @@ Se si è verificato un problema immettere il codice postale, tenere presenti:
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

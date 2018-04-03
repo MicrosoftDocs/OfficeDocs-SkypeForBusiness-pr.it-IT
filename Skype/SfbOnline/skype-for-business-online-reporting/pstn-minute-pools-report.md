@@ -17,12 +17,12 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Reporting
-description: "Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile utilizzare Skype per report pool minuto Business PSTN per visualizzare il numero di minuti utilizzati durante il mese corrente all'interno dell'organizzazione."
-ms.openlocfilehash: f0cb22187fe8b791ef143524eeae6b453f89f4f4
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile utilizzare Skype per report pool minuto Business PSTN per visualizzare il numero di minuti utilizzati durante il mese corrente all'interno dell'organizzazione.
+ms.openlocfilehash: 3db3e0394bc7af9394b4b6988bc28fbaa1da42a5
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="pstn-minute-pools-report"></a>Rapporto pool minuto PSTN
 
@@ -92,4 +92,6 @@ Questo è l'aspetto del report.
     
 ## <a name="related-topics"></a>See also
 [Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+
   
+   

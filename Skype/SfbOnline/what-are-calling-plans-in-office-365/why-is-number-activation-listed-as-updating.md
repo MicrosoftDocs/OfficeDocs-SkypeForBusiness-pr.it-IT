@@ -1,5 +1,5 @@
 ---
-title: "Perché attivazione numerico risulti l'aggiornamento?"
+title: Perché attivazione numerico risulti l'aggiornamento?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,12 +20,12 @@ f1keywords:
 - ms.lync.lac.NumberActivationStateUpdating
 ms.custom:
 - Calling Plans
-description: "La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza."
-ms.openlocfilehash: 02fcabb41238de43ec07151dfa8926420829571d
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
+ms.openlocfilehash: 825b1e15e4dd83a9a9fe70a31dbc46dcc6cf04f6
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="why-is-number-activation-listed-as-updating"></a>Perché attivazione numerico risulti l'aggiornamento?
 
@@ -105,3 +105,6 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+  
+ 

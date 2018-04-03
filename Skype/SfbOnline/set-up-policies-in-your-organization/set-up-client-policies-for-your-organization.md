@@ -17,11 +17,11 @@ f1keywords: None
 ms.custom:
 - Setup
 description: I criteri client aiutano a determinare le funzioni di Skype for Business online messe a disposizione degli utenti; per esempio, si potrebbe dare ad alcuni utenti il diritto di trasferire i file negando lo stesso diritto ad altri utenti.
-ms.openlocfilehash: 82fa2c828af9aed01652870ea5d3db02ca8248c3
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 2cf7507e4616d54982d8baaf4388ee5830ae64da
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-up-client-policies-for-your-organization"></a>Impostare i criteri client per l'organizzazione
 
@@ -152,3 +152,6 @@ Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsCl
 [Trasferimenti di file bloccati punto-punto](block-point-to-point-file-transfers.md)
 
 [Impostare i criteri relativi alle conferenze nell'organizzazione](set-up-conferencing-policies-for-your-organization.md)
+
+  
+ 

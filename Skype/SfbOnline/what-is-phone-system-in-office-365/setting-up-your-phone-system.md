@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 - Strat_SB_PSTN
-description: 'Informazioni su come configurare il sistema telefonico (Cloud PBX) per l''organizzazione. '
-ms.openlocfilehash: dfecf35e4e10f74adfcb4d237e4f03c72048ed68
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+description: "Informazioni su come configurare il sistema telefonico (Cloud PBX) per l'organizzazione. "
+ms.openlocfilehash: a9715797284f08c3d7f2ecbf3ba45a9269a5e0e0
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="setting-up-phone-system-in-your-organization"></a>Impostazione di sistema telefonico all'interno dell'organizzazione
 
@@ -183,11 +183,7 @@ Per le domande frequenti sui servizi di conferenza Audio, vedere [domande freque
     
     - **Terze parti come provider di servizi di conferenza audio**: se si partecipa a un paese dove audioconferenze con accesso esterno in Office 365 non è disponibile, la qualità del servizio non è grande a causa della posizione o si dispone di un contratto esistente, scegliere un audio di terze parti provider di servizi di conferenza. Per trovare un provider, andare a [Individuare Microsoft](http://go.microsoft.com/fwlink/?LinkId=797530).
  
-2.  Assegnare il provider di servizi di conferenza audio agli utenti di condurre o pianificare riunioni. Esegui una delle operazioni seguenti: 
-
-    - [Assegnare Microsoft come provider di servizi di conferenza audio](../audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider.md).
-    
-    - [Assegnare una terza parte come provider di servizi di conferenza audio](../audio-conferencing-in-office-365/assign-a-third-party-as-the-audio-conferencing-provider.md).
+2.  Assegnare il provider di servizi di conferenza audio agli utenti di condurre o pianificare riunioni. Vedere [Assegnare Microsoft come provider di servizi di conferenza audio](../audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider.md).
 
 3. Impostare le convocazioni di riunione. La procedura seguente è facoltativa, ma una quantità elevata di admins like eseguirle: 
   
@@ -280,5 +276,5 @@ Dopo avere creato i numeri di servizio dal **passaggio 4 sopra**, è necessario 
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
     
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità negli Stati Uniti (Stati Uniti)"
+title: Disponibilità negli Stati Uniti (Stati Uniti)
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per gli Stati Uniti.
-ms.openlocfilehash: 7f56d0aa5590373cd0a93e1a55e732cda374ad58
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 61438e063b540f3eea5b114aa109c0cca4cfe77a
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="availability-in-the-united-states-us"></a>Disponibilità negli Stati Uniti (Stati Uniti)
 
@@ -83,6 +83,6 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 
 

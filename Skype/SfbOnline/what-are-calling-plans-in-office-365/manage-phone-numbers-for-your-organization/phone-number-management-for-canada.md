@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Canada per Skype for Business online.
-ms.openlocfilehash: aefcda10cc00a3ce24e831c2b6dd5a0b162f7158
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 149905af1521c4fa9eabb028d5aa80d8bb92729b
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="phone-number-management-for-canada"></a>Gestione dei numeri di telefono per il Canada
 > [!IMPORTANT]
@@ -53,5 +53,5 @@ Devi cambiare il numero di un utente in un numero di servizio.  <br/> |[Inviaci]
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
   
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

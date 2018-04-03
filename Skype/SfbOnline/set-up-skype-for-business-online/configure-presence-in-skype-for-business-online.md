@@ -18,11 +18,11 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Learn how to set up Skype for Business so you can see the availability of your co-workers. '
-ms.openlocfilehash: 65a2281a43b67f718104bddc414693ead50cbfb5
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: ee1bd75326ba758918b647e43d40d571c093d543
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="configure-presence-in-skype-for-business-online"></a>Configurare la presenza in Skype for Business online
 
@@ -55,5 +55,5 @@ Per informazioni su quali gli utenti possono modificare in Skype per le aziende,
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

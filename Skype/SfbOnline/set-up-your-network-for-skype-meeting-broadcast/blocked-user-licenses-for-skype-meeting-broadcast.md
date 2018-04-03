@@ -17,16 +17,16 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - SMB
-description: Purtroppo, esistono alcune licenze utente che vengono bloccate quando l'utente passare a https://broadcast.skype.com e da utilizzare Skype riunione trasmissione. Se un utente visualizza il messaggio, hanno una delle licenze bloccate ad essi assegnate. Se si desidera comunque loro di utilizzarlo, assegnarli a un'altra licenza di Office 365.
-ms.openlocfilehash: 946e073183f52af84adbbf5f727282f487db07c3
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: Purtroppo, esistono alcune licenze utente che vengono bloccate quando utente passa a https://broadcast.skype.com e si desidera utilizzare Skype riunione trasmissione. Se un utente visualizza il messaggio, hanno una delle licenze bloccate ad essi assegnate. Se si desidera comunque loro di utilizzarlo, assegnarli a un'altra licenza di Office 365.
+ms.openlocfilehash: 59b00fd9b7557177994a1d4279756c56aa5ba613
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="blocked-user-licenses-for-skype-meeting-broadcast"></a>Bloccati le licenze utente per la trasmissione riunione Skype
 
-Purtroppo, esistono alcune licenze utente che vengono bloccate quando gli utenti visitano https://broadcast.skype.com e da utilizzare Skype riunione trasmissione. Se un utente visualizza il messaggio, hanno una delle licenze bloccate ad essi assegnate. Se si desidera comunque loro di utilizzarlo, assegnarli a un'altra licenza di Office 365.
+Purtroppo, esistono alcune licenze utente che vengono bloccate quando gli utenti https://broadcast.skype.com e si desidera utilizzare Skype riunione trasmissione. Se un utente visualizza il messaggio, hanno una delle licenze bloccate ad essi assegnate. Se si desidera comunque loro di utilizzarlo, assegnarli a un'altra licenza di Office 365.
   
  *"I criteri aziendali non consentono di utilizzare Skype riunione trasmissione. Rivolgersi all'amministratore di sistema per verificare che il servizio è abilitato e si dispone di licenza corretta."* 
   
@@ -69,3 +69,6 @@ Verranno bloccate Skype riunione trasmissione se una qualsiasi delle licenze ute
 [Introduzione a Windows Powershell e Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525039)
   
 [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
+
+  
+ 

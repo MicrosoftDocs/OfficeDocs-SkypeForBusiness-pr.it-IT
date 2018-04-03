@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità in Portorico"
+title: Disponibilità in Portorico
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per il Portorico i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: db1670a8fc392c7accb1a1fd4176221bb246a778
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 2fb3d4662ff72a11bcc7d6bb084b218038540674
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="availability-in-puerto-rico"></a>Disponibilità in Portorico
 
@@ -83,4 +83,5 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-
+  
+ 

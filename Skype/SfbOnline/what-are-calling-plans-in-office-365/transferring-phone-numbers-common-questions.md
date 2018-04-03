@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
-description: "Le operazioni seguenti sono domande frequenti relative al trasferimento di numeri di telefono a Skype per le aziende. Dopo aver esaminato le risposte, è possibile creare un ordine di porta e trasferire i numeri di telefono. Visualizzare i numeri di telefono di trasferimento a Office 365 per le istruzioni."
-ms.openlocfilehash: 3fe34a7c38fb8be206b0e3812674255d0593d188
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+description: Le operazioni seguenti sono domande frequenti relative al trasferimento di numeri di telefono a Skype per le aziende. Dopo aver esaminato le risposte, è possibile creare un ordine di porta e trasferire i numeri di telefono. Visualizzare i numeri di telefono di trasferimento a Office 365 per le istruzioni.
+ms.openlocfilehash: ce62365c337d94c05c7ca1b3ff1703cb39086f97
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="transferring-phone-numbers-common-questions"></a>Trasferimento di domande comuni numeri di telefono
 
@@ -178,5 +178,5 @@ Per il trasferimento o *dalla porta fuori* numeri di telefono da Skype Business 
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
   
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

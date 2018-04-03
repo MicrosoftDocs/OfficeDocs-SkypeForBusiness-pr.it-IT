@@ -16,12 +16,12 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Setup
-description: "Ulteriori cause più comuni per Skype per errori di accesso Business Online e lavoro e risoluzione dei problemi relativi a tali problemi. "
-ms.openlocfilehash: aa5069e5fd5bf40ebd460c03b72ce8d9327da6d2
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: 'Ulteriori cause più comuni per Skype per errori di accesso Business Online e lavoro e risoluzione dei problemi relativi a tali problemi. '
+ms.openlocfilehash: 26541918db9598cbdaf9d61e52806da94bae9d46
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="troubleshooting-skype-for-business-online-sign-in-errors-for-administrators"></a>Risoluzione dei problemi Skype per errori di accesso Business Online per amministratori
 
@@ -214,3 +214,6 @@ Per risolvere i problemi Skype per errori di accesso Business Online, avviare el
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
+
+  
+ 

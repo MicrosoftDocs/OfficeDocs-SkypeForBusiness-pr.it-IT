@@ -29,12 +29,12 @@ f1keywords:
 ms.custom:
 - Licensing
 - Strat_SB_PSTN
-description: 'Informazioni su come il pagamento per titoli di coda di comunicazione (consumo PSTN) Skype per servizi e vedere piani per mantenere gli utenti con l''accesso al sistema telefonico continua. '
-ms.openlocfilehash: a53c2e1f92437afa134a26f7203cb36c7714219a
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+description: "Informazioni su come il pagamento per titoli di coda di comunicazione (consumo PSTN) Skype per servizi e vedere piani per mantenere gli utenti con l'accesso al sistema telefonico continua. "
+ms.openlocfilehash: c9eb2cb23b4d7be58970a28c928d7c839c30db4b
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="add-funds-and-manage-communications-credits"></a>Aggiungere i fondi e gestire Communications titoli di coda
 
@@ -84,13 +84,11 @@ Per una tabella con la licenza o licenze che necessarie per ogni caratteristica,
 
 - [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
     
-- [Configurare le audioconferenze per Skype for Business e Microsoft Teams](../audio-conferencing-in-office-365/set-up-audio-conferencing.md)
-    
 - [Impostare la segreteria telefonica del Sistema telefonico - Guida per gli amministratori](../what-is-phone-system-in-office-365/phone-system-voicemail/set-up-phone-system-voicemail.md)
     
 - [Impostare le tariffe di chiamate](../what-are-calling-plans-in-office-365/set-up-calling-plans.md) e [La chiamata a piani per Office 365](calling-plans-for-office-365.md)
         
 - [Configurare il connettore Cloud](https://technet.microsoft.com/en-us/library/mt605228.aspx) e [scaricare il connettore Cloud](https://aka.ms/CloudConnectorInstaller)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

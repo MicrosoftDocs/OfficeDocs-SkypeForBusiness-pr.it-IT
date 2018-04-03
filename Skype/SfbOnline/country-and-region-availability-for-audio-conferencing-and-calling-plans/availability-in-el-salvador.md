@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità in El Salvador"
+title: Disponibilità in El Salvador
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per El Salvador i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 7e59fb24193f218abf62bd4224fe3db2579fd1ce
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: ebb857d60e2a5a42ee611b7e2cdf0a218e4f01ec
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="availability-in-el-salvador"></a>Disponibilità in El Salvador
 
@@ -82,6 +82,5 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
-
 
 

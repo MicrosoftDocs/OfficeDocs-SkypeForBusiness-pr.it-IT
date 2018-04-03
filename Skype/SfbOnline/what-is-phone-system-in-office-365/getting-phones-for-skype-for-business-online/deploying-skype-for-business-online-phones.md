@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Strat_SB_PSTN
 description: Informazioni sulle procedure di distribuzione per ottenere il firmware corretto, aggiornare, se necessario, assegnare licenze e configurare le impostazioni per Skype per i telefoni online Business
-ms.openlocfilehash: c6321222cdd3f6a5214ff17ac950da397b73baf9
-ms.sourcegitcommit: 50446359cd7c359eb2536176545291c723392e47
+ms.openlocfilehash: ee6f8e0b892b8cef1c70c7bc01ba7e7d9c4cb8e8
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="deploying-skype-for-business-online-phones"></a>Distribuzione dei telefoni per Skype for Business Online
 
@@ -224,7 +224,7 @@ BToE può essere configurato per operare in due modalità: *automatico* (imposta
 
 [Ecco cosa offre il Sistema telefonico in Office 365](../../what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system.md)
 
-[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](../../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

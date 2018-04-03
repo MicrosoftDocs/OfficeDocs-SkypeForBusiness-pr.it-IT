@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: In questo argomento contiene tutti i paesi in cui gli utenti possono effettuare chiamate in uscita se dispongono di un piano di chiamata.
-ms.openlocfilehash: 455f677827006921335cb30f09a0da5720ea0bd8
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 9cac97144bec681773eca2811751525e0c2950d5
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="users-can-make-outbound-calls-to-these-countries-and-regions"></a>Gli utenti possono effettuare chiamate in uscita per i paesi selezionati
 
@@ -91,5 +91,5 @@ ms.lasthandoff: 02/27/2018
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

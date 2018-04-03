@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
-description: "Il sistema telefonico in Office 365 fornisce un ID chiamante predefinito che è il numero di telefono assegnato dell'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. È possibile ulteriori informazioni su come utilizzare l'ID del chiamante all'interno dell'organizzazione passando come ID chiamante utilizzare all'interno dell'organizzazione."
-ms.openlocfilehash: 241f75b50a0e874fc4b11213cc80e99f166da937
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+description: Il sistema telefonico in Office 365 fornisce un ID chiamante predefinito che è il numero di telefono assegnato dell'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. È possibile ulteriori informazioni su come utilizzare l'ID del chiamante all'interno dell'organizzazione passando come ID chiamante utilizzare all'interno dell'organizzazione.
+ms.openlocfilehash: 07fc6db1a161f8eca83ea601e1a8f5d70e1f1d5e
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
 Il sistema telefonico in Office 365 fornisce un ID chiamante predefinito che è il numero di telefono assegnato dell'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. È possibile ulteriori informazioni su come utilizzare l'ID chiamante all'interno dell'organizzazione da utilizzare [come ID chiamante utilizzare all'interno dell'organizzazione](how-can-caller-id-be-used-in-your-organization.md).
@@ -188,5 +188,5 @@ Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName $nul
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
   
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

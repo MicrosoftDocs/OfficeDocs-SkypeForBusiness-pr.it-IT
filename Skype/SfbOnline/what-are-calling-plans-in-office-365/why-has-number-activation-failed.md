@@ -1,5 +1,5 @@
 ---
-title: "Perché non riuscita numero attivazione?"
+title: Perché non riuscita numero attivazione?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,12 +20,12 @@ f1keywords:
 - ms.lync.lac.NumberActivationStateFailed
 ms.custom:
 - Calling Plans
-description: "La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza."
-ms.openlocfilehash: 45f2d6d93630d4f858fc3531f530ac0f030c5aac
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
+ms.openlocfilehash: 0da05c5cdcc3c0c28d92d44d7433ec1a1abcabce
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="why-has-number-activation-failed"></a>Perché non riuscita numero attivazione?
 La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Se per qualche motivo un numero di telefono non è attivato per la convalida dell'indirizzo, è necessario creare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
@@ -106,5 +106,5 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

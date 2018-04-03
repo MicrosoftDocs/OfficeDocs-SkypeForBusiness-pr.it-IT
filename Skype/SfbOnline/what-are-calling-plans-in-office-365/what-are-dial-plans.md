@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
-description: 'Informazioni su come scegliere un modello per l''organizzazione e il tipo di dial plan (chiamata PSTN dial plan) la chiamata sono disponibili con Office 365.  '
-ms.openlocfilehash: 70998648a1d9b054697cfa578b2b5e191a432bc7
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+description: "Informazioni su come scegliere un modello per l'organizzazione e il tipo di dial plan (chiamata PSTN dial plan) la chiamata sono disponibili con Office 365.  "
+ms.openlocfilehash: 32efaccf1572bf086f40d0d4b49c910b7ca345f3
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="what-are-dial-plans"></a>Che cosa sono i dial plan?
 
@@ -155,5 +155,5 @@ La tabella seguente illustra un piano di chiamata di esempio per Redmond, Washin
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

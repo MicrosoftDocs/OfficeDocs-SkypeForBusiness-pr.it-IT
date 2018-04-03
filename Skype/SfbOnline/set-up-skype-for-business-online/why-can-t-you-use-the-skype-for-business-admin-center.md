@@ -1,5 +1,5 @@
 ---
-title: "Perché non è possibile utilizzare il Skype Business Online interfaccia di amministrazione di direttamente?"
+title: Perché non è possibile utilizzare il Skype Business Online interfaccia di amministrazione di direttamente?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,11 +19,11 @@ f1keywords:
 ms.custom:
 - Setup
 description: "Informazioni su informazioni che è possibile utilizzare in Skype per l'interfaccia di amministrazione di Business e altre caratteristiche quando il servizio viene eseguita la migrazione a un'altra data center di Microsoft. "
-ms.openlocfilehash: e9d0f2b56ebe11ef95b59ff125434dcf3dd4574d
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 0b87061f1ef3861c4c01d9144fa5e2c86f5c2985
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="why-cant-i-use-the-skype-for-business-online-admin-center-right-now"></a>Perché non è possibile utilizzare il Skype Business Online interfaccia di amministrazione di direttamente?
 
@@ -68,5 +68,5 @@ Verificare. Mentre è stiamo migrazione il Skype per il servizio di Business in 
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

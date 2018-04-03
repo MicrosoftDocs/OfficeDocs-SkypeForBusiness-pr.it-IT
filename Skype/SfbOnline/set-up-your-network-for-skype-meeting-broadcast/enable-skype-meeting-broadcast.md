@@ -17,12 +17,12 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - SMB
-description: "Prima che le persone nella tua organizzazione possano usare Skype Meeting Broadcast, devi abilitarlo. Per eseguire questo passaggio devi sapere come usare Windows PowerShell. Se non conosci Windows PowerShell, può essere utile assumere un partner Microsoft che se ne occupi al posto tuo."
-ms.openlocfilehash: a220f6809aec764b4ad83ca49926dcc919a8fbe3
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: Prima che le persone nella tua organizzazione possano usare Skype Meeting Broadcast, devi abilitarlo. Per eseguire questo passaggio devi sapere come usare Windows PowerShell. Se non conosci Windows PowerShell, può essere utile assumere un partner Microsoft che se ne occupi al posto tuo.
+ms.openlocfilehash: 6dc6e52d9a91e9ba3ceb32c2be5a8c0b4564902d
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="enable-skype-meeting-broadcast"></a>Abilitare Skype Meeting Broadcast
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/27/2018
   
 ## <a name="enable-skype-meeting-broadcast-using-the-skype-for-business-admin-center"></a>Abilitare Skype Meeting Broadcast con l'interfaccia di amministrazione di Skype for Business
 
-1. Accedi con l'account di amministratore globale di Office 365 all'indirizzo [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home).
+1. Accedere con l'account amministratore globale di Office 365 in [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home).
     
 2. Nell'interfaccia di amministrazione di Office 365, passare a **Interfacce di amministrazione** > **Skype for Business**.
     
@@ -100,5 +100,5 @@ Per tralasciare questo passaggio e aggiungere un'altra azienda alla federazione,
   
 [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

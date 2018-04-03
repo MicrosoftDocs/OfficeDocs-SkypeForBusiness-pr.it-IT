@@ -16,12 +16,12 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Setup
-description: "In Skype Business online, è necessario possibilità di controllare i trasferimenti di file da punto a punto (P2P) come parte di impostazioni di criteri di conferenza esistente. Tuttavia, in questo modo o blocchi file trasferimenti per gli utenti sono o meno sono trasferimento di file a un utente che si trova all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguire la procedura riportata di seguito, è possibile bloccare i trasferimenti di file P2P con organizzazioni federate o partner."
-ms.openlocfilehash: 288bec32d55d9784690d84b8daa205dd33568847
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: In Skype Business online, è necessario possibilità di controllare i trasferimenti di file da punto a punto (P2P) come parte di impostazioni di criteri di conferenza esistente. Tuttavia, in questo modo o blocchi file trasferimenti per gli utenti sono o meno sono trasferimento di file a un utente che si trova all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguire la procedura riportata di seguito, è possibile bloccare i trasferimenti di file P2P con organizzazioni federate o partner.
+ms.openlocfilehash: 8e3fd112d46a88752b0d6d19cf2e1fbb1787df32
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="block-point-to-point-file-transfers"></a>Trasferimenti di file bloccati Point-to-
 
@@ -125,3 +125,5 @@ Per consentire i trasferimenti P2P per interno i trasferimenti di file esterno o
 
 [Impostare i criteri relativi alle conferenze nell'organizzazione](set-up-conferencing-policies-for-your-organization.md)
 
+  
+ 

@@ -22,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: 'Informazioni su come assegnare un ID conferenza a un utente in Skype per le aziende e quali la conferenza ID devono essere parametri. '
-ms.openlocfilehash: b542e764d0b8b1587c34e78a54612410cd72a3bd
-ms.sourcegitcommit: 997c03395fd1966607cef0df8ee884303401cd64
+ms.openlocfilehash: 12fe2b0f425f58dca8272f5f0536ba5393b2f76c
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="see-change-and-reset-a-conference-id-assigned-to-a-user"></a>Visualizzare, modificare e ripristinare un ID conferenza assegnato a un utente
 
@@ -108,7 +108,6 @@ Per modificare o cambiare l'ID conferenza per un utente, eseguire:
     
 - L'ID conferenza per tutti gli utenti di audioconferenze con accesso esterno sarà 7 cifre per impostazione predefinita e il numero di cifre non può essere modificato.
     
-- Se l'utente viene spostato da Microsoft come provider di audioconferenza a un provider di servizi di conferenza audio di terze parti o il provider di servizi di conferenza audio è impostato su **Nessuno**, l'ID conferenza non funzionerà. Vedere [assegnazione di terze parti come provider di servizi di conferenza audio](assign-a-third-party-as-the-audio-conferencing-provider.md) o lo [spostamento di provider di servizi di conferenza audio di un utente a Microsoft](moving-a-user-s-audio-conferencing-provider-to-microsoft.md).
     
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
@@ -128,5 +127,5 @@ Per modificare o cambiare l'ID conferenza per un utente, eseguire:
     
 ## <a name="related-topics"></a>See also
 
-[Servizi di conferenza telefonica con accesso esterno in Office 365](set-up-audio-conferencing.md)
+[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
 

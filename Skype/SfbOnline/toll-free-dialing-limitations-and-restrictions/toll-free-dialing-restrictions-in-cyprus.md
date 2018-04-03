@@ -19,12 +19,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: "Ciò consentirà di scoprire come per comporre i numeri gratuito a pagamento in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verranno visualizzate a una pagina specifica contenente informazioni specifiche, restrizioni e limiti per la disponibilità dei servizi verdi dove il numero verde è disponibile. Il formato di composizione e i formati verranno visualizzato i codice di accesso necessarie all'interno di ogni paese/area geografica comporre il numero verde."
-ms.openlocfilehash: 3fc8c0392ac024b6ab54e4221660a19d1b927a6a
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: Ciò consentirà di scoprire come per comporre i numeri gratuito a pagamento in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verranno visualizzate a una pagina specifica contenente informazioni specifiche, restrizioni e limiti per la disponibilità dei servizi verdi dove il numero verde è disponibile. Il formato di composizione e i formati verranno visualizzato i codice di accesso necessarie all'interno di ogni paese/area geografica comporre il numero verde.
+ms.openlocfilehash: 3e95b163e82a8259ab8bdb5127820bd28c58a711
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="toll-free-dialing-restrictions-in-cyprus"></a>Restrizioni di composizione verdi Cipro
 
@@ -48,5 +48,5 @@ ms.lasthandoff: 02/27/2018
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

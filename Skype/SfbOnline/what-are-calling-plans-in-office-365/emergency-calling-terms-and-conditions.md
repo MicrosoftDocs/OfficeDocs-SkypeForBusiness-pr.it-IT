@@ -20,11 +20,11 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come servizi di emergenza (911) si differenziano dai servizi telefonici tradizionali e su come effettuare una chiamata. '
-ms.openlocfilehash: 4b2bbd8e5c4b9c11b17595f53180f7217518c145
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 5ba29f0020f17ecb3cd1e0b1abe39f27576a5657
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="emergency-calling-terms-and-conditions"></a>Termini e condizioni per le chiamate al numero di emergenza
 
@@ -42,3 +42,6 @@ Le differenze di funzionalità di chiamata ai servizi di emergenza includono qua
 [Gestire i numeri di telefono per la propria organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+  
+ 

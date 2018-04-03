@@ -18,11 +18,11 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 description: Download, install, and then use Windows PowerShell 3.0 to create a remote PowerShell session that connects to Skype for Business Online.
-ms.openlocfilehash: 28f4db7492c233f5cfa16137d77ed8e0dc4a6572
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 56e0c885d25510156b7336e63f83c89c29b07fb4
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="download-and-install-windows-powershell-30"></a>Download e installazione di Windows PowerShell 3.0
 
@@ -150,5 +150,5 @@ Se l'autenticazione di base è stata impostata su true, quindi si è pronti per 
 ## <a name="related-topics"></a>See also
 [Configurare il computer per Windows PowerShell](set-up-your-computer-for-windows-powershell.md) 
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

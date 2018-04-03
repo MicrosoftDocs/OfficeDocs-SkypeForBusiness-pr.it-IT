@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: d080bb8c-3465-47bb-ad2b-9428f1a3fd24
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -21,11 +23,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: 'Vedere come prova o acquisto di licenze audioconferenze (conferenze PSTN) per configurare le conferenze telefoniche che gli utenti possono connettersi a Office 365. '
-ms.openlocfilehash: 2c2b76bb207d5463c4b431e4cf9be4f0ecdba472
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 1dda3a2ecc24e512e9d614b42292233471525805
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365"></a>Prova o acquisto audioconferenza in Office 365
 
@@ -73,7 +75,7 @@ Se si è un cliente multilicenza e licenze, è possibile ottenere le licenze di 
   
 ## <a name="step-2-set-the-audio-conferencing-provider-for-people-who-lead-or-schedule-meetings"></a>Passaggio 2: Impostare il provider di servizi di conferenza audio per gli utenti conducono o pianificare riunioni
 
-Quando si assegna una licenza di **Conferenze Audio** agli utenti dell'organizzazione che condurre o pianificare riunioni, sono tutte impostate configurato ed è pronto a passare! (Non è necessario impostare il provider di audioconferenza.) Tuttavia, se vi sono utenti che hanno utilizzato un provider di servizi di conferenza audio di terze parti (ACP), sarà necessario [spostare il provider di audioconferenze con accesso esterno di un utente a Microsoft](moving-a-user-s-audio-conferencing-provider-to-microsoft.md).
+Quando si assegna una licenza di **Conferenze Audio** agli utenti dell'organizzazione che condurre o pianificare riunioni, sono tutte impostate configurato ed è pronto a passare! (Non è necessario impostare il provider di audioconferenza.) 
   
 > [!NOTE]
 > Se si desidera utilizzare un'AUDIOCONFERENZA di terze parti, scegliere **audioconferenze** > **bridge di Microsoft**. Nella parte inferiore della pagina, fare clic su **Se si desidera configurare un provider di servizi di conferenza audio di terze parti in realtà, fare clic qui**. 

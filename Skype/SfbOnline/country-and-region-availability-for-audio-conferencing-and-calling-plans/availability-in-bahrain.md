@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità di Bahrain"
+title: Disponibilità di Bahrain
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per il Bahrein i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 1fea4599e6d3a7d35d305eac1e11c9370e47e9f1
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 7a7d91defec60ae0cbbe43287e065212b1f66a22
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="availability-in-bahrain"></a>Disponibilità di Bahrain
 
@@ -82,4 +82,3 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
-

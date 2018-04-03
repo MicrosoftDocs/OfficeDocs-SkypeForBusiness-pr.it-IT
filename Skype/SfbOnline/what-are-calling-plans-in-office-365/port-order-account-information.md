@@ -21,11 +21,11 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: "Ulteriori informazioni sull'account è necessario quando si lavora con una procedura guidata nuovo ordine di porta numero locale. "
-ms.openlocfilehash: 33816b96de13f3e6ffac22d6ff738cc78bef6db7
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 53fa83e98af94505fd8cea5f2b30caf267f9d7e5
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="port-order-account-information"></a>Informazioni sull'account dell'ordine di porta
 
@@ -82,3 +82,6 @@ Per effettuare l'invio dell'ordine di porta semplice ed evitare errori, assicura
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+  
+ 

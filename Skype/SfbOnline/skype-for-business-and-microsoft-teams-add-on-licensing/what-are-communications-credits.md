@@ -22,11 +22,11 @@ ms.custom:
 - Licensing
 - Strat_SB_PSTN
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: ac89a8bfa8cd961541a83916b3ef0088981922be
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 4c8cb1ccd2cbccb176f0b362592dfd08bc952bb2
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
@@ -99,5 +99,5 @@ Per una tabella con la licenza o licenze che necessarie per ogni caratteristica,
 ## <a name="related-topics"></a>See also
 [Report di utilizzo PSTN di Skype for Business](../skype-for-business-online-reporting/pstn-usage-report.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

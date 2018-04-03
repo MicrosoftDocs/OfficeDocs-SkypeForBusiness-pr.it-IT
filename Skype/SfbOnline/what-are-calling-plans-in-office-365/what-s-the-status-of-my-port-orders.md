@@ -1,5 +1,5 @@
 ---
-title: "Qual è lo stato dei miei ordini di trasferimento?"
+title: Qual è lo stato dei miei ordini di trasferimento?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,11 +21,11 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: 'Learn how to get the status of your port orders, and what the different actions you can take on them. '
-ms.openlocfilehash: b715318beb048940b6fbaa5666217e027836332d
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: eb38684ea2f6fbd4d10f0947d1756350f788efbb
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="whats-the-status-of-my-port-orders"></a>Qual è lo stato dei miei ordini di trasferimento?
 
@@ -57,3 +57,6 @@ Nella tabella seguente sono elencati gli Stati dell'ordine di porta, le azioni d
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+  
+ 

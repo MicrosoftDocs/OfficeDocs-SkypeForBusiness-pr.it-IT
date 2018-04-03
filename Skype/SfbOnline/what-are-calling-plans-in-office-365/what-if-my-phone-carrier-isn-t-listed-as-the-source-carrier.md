@@ -1,5 +1,5 @@
 ---
-title: "Se il gestore telefonico non è elencato come il gestore telefonico origine?"
+title: Se il gestore telefonico non è elencato come il gestore telefonico origine?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,12 +20,12 @@ f1keywords:
 - ms.lync.lac.PortOrderDetailPanelWhois
 ms.custom:
 - Calling Plans
-description: "Informazioni su come procedere se il gestore non è elencato nel Skype per le aziende. "
-ms.openlocfilehash: da9f5603c477f67b68ed02b00434b10318de31c8
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: 'Informazioni su come procedere se il gestore non è elencato nel Skype per le aziende. '
+ms.openlocfilehash: 7ca5b0b959066dec5841862ac9270dcc023aecd4
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="what-if-my-phone-carrier-isnt-listed-as-the-source-carrier"></a>Se il gestore telefonico non è elencato come il gestore telefonico origine?
 
@@ -48,5 +48,5 @@ Esempio:
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

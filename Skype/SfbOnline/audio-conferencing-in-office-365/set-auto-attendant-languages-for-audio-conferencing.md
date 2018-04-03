@@ -22,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: Vedere come selezionare le lingue di operatore automatico conferenza per un numero di conferenze audio.
-ms.openlocfilehash: c352609926a7bc6bf7f72015447ba9f7ae115487
-ms.sourcegitcommit: 997c03395fd1966607cef0df8ee884303401cd64
+ms.openlocfilehash: e7c4adb2129a737ec34e5641a9724bdab665cd23
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing"></a>Set di lingue con operatore automatico per le conferenze Audio
 
@@ -72,4 +72,4 @@ Per ulteriori informazioni, vedere [Using Windows PowerShell per eseguire Skype 
   
 ## <a name="related-topics"></a>See also
 
-[Servizi di conferenza telefonica con accesso esterno in Office 365](set-up-audio-conferencing.md)
+[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

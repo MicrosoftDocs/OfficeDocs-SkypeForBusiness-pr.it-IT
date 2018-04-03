@@ -17,11 +17,11 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Learn how to plan and deploy Skype for Business in small, medium, and large organizations and making it available to your users. '
-ms.openlocfilehash: 5a3af14d7bf507a50ab7d007a066e3bd42d90c50
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: ee7799116f20a8ca1e9f1cb71d8616d44df93c8e
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="deploy-the-skype-for-business-client-in-office-365"></a>Distribuire il client Skype for Business in Office 365
 
@@ -153,4 +153,5 @@ Puoi controllare la frequenza degli aggiornamenti delle funzionalità usando lo 
   
 [Licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
   
-
+  
+ 

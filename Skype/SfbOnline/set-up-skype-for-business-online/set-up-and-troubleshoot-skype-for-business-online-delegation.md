@@ -17,11 +17,11 @@ f1keywords: None
 ms.custom:
 - Setup
 description: In questo articolo viene illustrato come impostare e risolvere i problemi Skype per la delega Business Online. In questo articolo vengono fornite indicazioni per suggerimenti per il programma di installazione, procedure consigliate e istruzioni sulla risoluzione dei problemi.
-ms.openlocfilehash: b69f6712f78906bc955d3ce014fe8ccd6ab252c1
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 343559110b5026f09b22f8f85d6fc95b19abedb6
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-up-and-troubleshoot-skype-for-business-online-delegation"></a>Impostare e risolvere i problemi Skype per la delega Business Online
 
@@ -145,3 +145,6 @@ Se l'installazione viene eseguita correttamente, il delegato verrà visualizzato
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
+
+  
+ 

@@ -1,5 +1,5 @@
 ---
-title: Restrizioni per comporre il numero verde Honduras
+title: Toll-free dialing restrictions in Honduras
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,31 +19,34 @@ ROBOTS: NOINDEX, NOFOLLOW
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: "Ciò consentirà di scoprire come per comporre i numeri gratuito a pagamento in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verranno visualizzate a una pagina specifica contenente informazioni specifiche, restrizioni e limiti per la disponibilità dei servizi verdi dove il numero verde è disponibile. Il formato di composizione e i formati verranno visualizzato i codice di accesso necessarie all'interno di ogni paese/area geografica comporre il numero verde."
-ms.openlocfilehash: ec44792ae451ed4c226bf2df91f298e812667a12
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: This will help you find out how to dial toll free numbers in each country/region. After you select the country/region, it will take you to a country-specific page that contains specific details, restrictions, and limits for toll-free service availability where toll-free service is available. The dialing format or formats will show you the required access codes within each country/region to dial the toll free number.
+ms.openlocfilehash: e8ded971205c4d373bd6ac62dfbce59220f6be86
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="toll-free-dialing-restrictions-in-honduras"></a>Restrizioni per comporre il numero verde Honduras
+# <a name="toll-free-dialing-restrictions-in-honduras"></a>Toll-free dialing restrictions in Honduras
 
-[Trovare un altro paese](../what-are-calling-plans-in-office-365/toll-free-dialing-limitations-and-restrictions.md), o ulteriori informazioni sulle limitazioni di comporre il numero verde e restrizioni.
+[Find another country or region](../what-are-calling-plans-in-office-365/toll-free-dialing-limitations-and-restrictions.md), or learn more about toll-free dialing limitations and restrictions.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È il numero verde chiamata disponibili?  <br/> |Sì  <br/> |
-|Formati di composizione  <br/> |800 XXXX XXXX  <br/> |
-|Codice ISO paese/area geografica  <br/> |HN  <br/> |
-|Isola/territorio coperto  <br/> |Non applicabile  <br/> |
-|Non vengono illustrato isola/territorio  <br/> |Non applicabile  <br/> |
-|Disponibilità di riga cablata fisso  <br/> |Solo da Hondutel.  <br/> |
-|Disponibilità della rete per dispositivi mobili  <br/> | Solo da Tigo. <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |Nessuno  <br/> |
+|Is toll-free calling available?  <br/> |Sì  <br/> |
+|Dialing format(s)  <br/> |800 XXXX XXXX  <br/> |
+|Country/region ISO code  <br/> |HN  <br/> |
+|Island/territory covered  <br/> |Non applicabile  <br/> |
+|Island/territory not covered  <br/> |Non applicabile  <br/> |
+|Wired/fixed line availability  <br/> |Solo da Hondutel.  <br/> |
+|Mobile network availability  <br/> | Solo da Tigo. <br/> |
+|Comments, restrictions, and access issues  <br/> |Nessuno  <br/> |
    
 ## <a name="related-topics"></a>See also
 
-[Limitazioni di comporre il numero verde](../what-are-calling-plans-in-office-365/toll-free-dialing-limitations-and-restrictions.md)
+[Toll-free dialing limitations and restrictions](../what-are-calling-plans-in-office-365/toll-free-dialing-limitations-and-restrictions.md)
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md)
+
+  
+ 

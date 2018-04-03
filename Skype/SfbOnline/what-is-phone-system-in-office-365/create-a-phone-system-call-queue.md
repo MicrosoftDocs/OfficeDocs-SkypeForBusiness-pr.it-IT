@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: 67ccda94-1210-43fb-a25b-7b9785f8a061
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -20,11 +22,11 @@ ms.custom:
 - Phone System
 - Strat_SB_PSTN
 description: 'Learn how to set up phone system for Office 365 (Cloud PBX) call queues to give you an organizational greeting, music on hold, and redirecting calls to call agents in distribution lists and security groups. You can also set the maximum queue size, time out, and call handling options. '
-ms.openlocfilehash: 363c6d7eefd63d1f89eb5d1420e516894d432b6b
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: a6eac4b7fec191d9e897f41e3c32b270ab21abcf
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="create-a-phone-system-call-queue"></a>Creare una coda di chiamata di sistema telefonico
 
@@ -95,7 +97,7 @@ Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto se
 Before you can create and set up your call queues, you will need to get or transfer your existing toll or toll-free service numbers. Dopo aver ottenuto il numero a tariffa o numeri verdi servizio, che verranno visualizzati nella **Skype per Business admin center** > **vocale** > **numeri di telefono**e **tipo di numero** elencato verrà indicato come **servizio - numero verde **. Per ottenere i numeri di servizio, vedere [Getting numeri di telefono del servizio per Skype per le aziende e team Microsoft che](getting-service-phone-numbers.md) oppure se si desidera trasferimento e il numero di servizio esistente, [trasferire i numeri di telefono a Office 365](../what-are-calling-plans-in-office-365/transfer-phone-numbers-to-office-365.md).
   
 > [!NOTE]
-> Se si è fuori degli Stati Uniti, è possibile utilizzare Skype per interfaccia di amministrazione di Business per ottenere i numeri di servizio. Passare invece [Gestisci i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per informazioni su come eseguire questa operazione di fuori degli Stati Uniti.
+> Se si è fuori degli Stati Uniti, è possibile utilizzare Skype per interfaccia di amministrazione di Business per ottenere i numeri di servizio. Vai a [Gestisci i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) ma per informazioni su come effettuare di fuori degli Stati Uniti.
   
 ## <a name="step-3---create-a-new-call-queue"></a>Fase 3 - Creare una nuova coda di chiamata
 
@@ -138,6 +140,9 @@ Nell' **interfaccia di amministrazione di Skype for Business**, fai clic su **In
  1. Aprire **le opzioni** nel proprio desktop Skype per client di Business. 
  2. Nella scheda **Inoltro** di chiamata, fare clic sul collegamento **Modifica impostazioni online** .
  3. Nella pagina Impostazioni utente, fare clic su **Chiama code**e quindi deselezionare le caselle di controllo per una o più code per cui desiderano consentire in modo esplicito.
+ 
+    > [!NOTE] 
+    > Agenti tramite Mac, mobile o client Lync 2013 o Hybrid Voice utenti ospitati locale con Skype per 2015 Business server, è possibile accedere ai [https://aka.ms/cqsettings](https://aka.ms/cqsettings) per accedere a consenso esplicito opzione out.
    
 ### <a name="add-call-agents-to-a-call-queue"></a>Aggiungere agenti di chiamata a una coda di chiamata
 
@@ -161,7 +166,7 @@ Nell' **interfaccia di amministrazione di Skype for Business**, fai clic su **In
 ![Numero 2](../images/sfbcallout2.png)<br/><br/>**Quando viene raggiunto il numero massimo di chiamate** Quando la coda di chiamate raggiunge la dimensione massima (impostata utilizzando l'impostazione **massimo chiama nella coda** ), è possibile scegliere cosa accade a nuove chiamate in arrivo.
 *    **Disconnetti con segnale di occupato** La chiamata verrà disconnessa.
 *    **Inoltrare la chiamata** Quando si sceglie questo, si disporrà di queste opzioni:
-     *    **Persona nell'azienda** Un utente in linea con una licenza di **Sistema telefonico** e abilitato per Enterprise Voice o un piano di chiamata. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. A tale scopo, selezionare una **persona nell'azienda** e impostare tale persona per le chiamate inoltrate direttamente alla segreteria telefonica. <br/>
+     *    **Persona nell'azienda** Un utente in linea con una licenza di **Sistema telefonico** e abilitato per Enterprise Voice o un piano di chiamata. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. A tale scopo, selezionare una **persona nell'azienda** e impostare tale persona per le chiamate inoltrate direttamente alla segreteria telefonica. <br/> <br/>Per ulteriori informazioni sulle licenze necessarie per la segreteria telefonica, vedere [impostare i messaggi vocali sistema telefonico](../what-is-phone-system-in-office-365/phone-system-voicemail/set-up-phone-system-voicemail.md). 
      
         > [!Note]
         > Gli utenti ospitati in locale con Lync Server 2010 non sono supportati.<br/>
@@ -175,7 +180,7 @@ Nell' **interfaccia di amministrazione di Skype for Business**, fai clic su **In
 ![Numero 4](../images/sfbcallout4.png)<br/><br/>**Quando una chiamata va in timeout** Quando la chiamata raggiunge il limite impostato nell'impostazione **Quanto tempo può aspettare una chiamata in coda**, puoi scegliere cosa succede alla chiamata:
 *    **Disconnetti** La chiamata verrà disconnessa.
 *    **Inoltrare la chiamata** Quando si sceglie questo, si disporrà di queste opzioni:
-     *    **Persona nell'azienda** Un utente in linea con una licenza di **Sistema telefonico** e abilitato per Enterprise Voice o piani di chiamata. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. A tale scopo, selezionare una **persona nell'azienda** e impostare tale persona per le chiamate inoltrate direttamente alla segreteria telefonica. 
+     *    **Persona nell'azienda** Un utente in linea con una licenza di **Sistema telefonico** e abilitato per Enterprise Voice o piani di chiamata. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. A tale scopo, selezionare una **persona nell'azienda** e impostare tale persona per le chiamate inoltrate direttamente alla segreteria telefonica. </br><br/>  Per ulteriori informazioni sulle licenze necessarie per la segreteria telefonica, vedere [impostare i messaggi vocali sistema telefonico](../what-is-phone-system-in-office-365/phone-system-voicemail/set-up-phone-system-voicemail.md). 
 
         > [!Note]
         > Gli utenti ospitati in locale con Lync Server 2010 non sono supportati.<br/>
@@ -239,3 +244,6 @@ Questi sono i cmdlet necessari per gestire una coda di chiamata.
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](getting-service-phone-numbers.md)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+
+  
+ 

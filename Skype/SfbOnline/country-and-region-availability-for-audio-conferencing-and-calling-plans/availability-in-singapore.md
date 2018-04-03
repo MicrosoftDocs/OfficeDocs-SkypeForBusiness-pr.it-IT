@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità Singapore"
+title: Disponibilità Singapore
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per Singapore.
-ms.openlocfilehash: 192e291b507324b7b29e3a6d8d4901976aea38fb
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 3cf99d8bee52114f579eb0780111532815929370
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="availability-in-singapore"></a>Disponibilità Singapore
 
@@ -83,5 +83,5 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

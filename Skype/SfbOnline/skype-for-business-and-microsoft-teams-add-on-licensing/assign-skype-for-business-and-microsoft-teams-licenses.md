@@ -22,11 +22,11 @@ ms.custom:
 - Licensing
 - Strat_SB_PSTN
 description: 'Informazioni su come assegnare Skype per le licenze Business per sistema telefonico, conferenze Audio, la chiamata a piani e avere comunicazioni. '
-ms.openlocfilehash: ca3b7a5abef407bb4b8ead2af060a6cfa9b7dd74
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 12a26dc7b9ebd47ae10005afb66f23a8cb278237
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="assign-skype-for-business-and-microsoft-teams-licenses"></a>Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams
 
@@ -115,11 +115,7 @@ I passaggi sono uguali a quelli seguiti per l'assegnazione di una licenza di Off
 
 - **Provider di audioconferenze di terze parti**: se per un utente è già stato impostato l'utilizzo di un provider di servizi di audioconferenza di terze parti, quando gli viene assegnata una licenza di **Audioconferenza**, Microsoft diventa il provider di servizi di audioconferenza. Puoi impostare nuovamente il provider di servizi di audioconferenza di terze parti.
     
-- Passaggi successivi: dopo l'assegnazione delle licenze di **Audioconferenza** , è necessario assegnare un provider di servizi di conferenza audio. Esegui una delle operazioni seguenti:
-    
-  - [Assegnare Microsoft come provider di servizi di audioconferenza](../audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider.md)
-    
-  - In alternativa, [Assegnare una terza parte come provider di servizi di audioconferenza](../audio-conferencing-in-office-365/assign-a-third-party-as-the-audio-conferencing-provider.md)
+- Passaggi successivi: dopo l'assegnazione delle licenze di **Audioconferenza** , è necessario assegnare un provider di servizi di conferenza audio. Vedere [Microsoft assegnare come provider di servizi di conferenza audio].
     
 ### <a name="how-to-assign-an-audio-conferencing-license-to-one-user"></a>Come assegnare una licenza di Audioconferenza a un utente
 
@@ -201,12 +197,10 @@ I passaggi sono uguali a quelli seguiti per l'assegnazione di una licenza di Off
 Guarda lo script di esempio per l'assegnazione delle licenze di **Audioconferenza**. Aggiornalo con le informazioni per l'assegnazione di licenze di **Crediti comunicazioni**.
   
 ## <a name="related-topics"></a>See also
-
-[Configurare le audioconferenze per Skype for Business e Microsoft Teams](../audio-conferencing-in-office-365/set-up-audio-conferencing.md)
   
 [Configurare i piani per chiamate](../what-are-calling-plans-in-office-365/set-up-calling-plans.md)
   
 [Aggiungere fondi e gestire Crediti comunicazioni](add-funds-and-manage-communications-credits.md)
   
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

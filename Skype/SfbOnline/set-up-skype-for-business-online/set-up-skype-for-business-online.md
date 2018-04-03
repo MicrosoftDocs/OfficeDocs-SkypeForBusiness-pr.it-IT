@@ -21,12 +21,12 @@ ms.custom:
 - Setup
 - Alchemy
 - LIL_Placement
-description: 'Informazioni su come impostare il dominio, gli utenti, messaggistica Istantanea e presenza per l''organizzazione per installare Skype per le aziende. Vedere anche come configurare conferenze audio, sistema telefonico e la chiamata dei piani e trasmissione Skype riunione. '
-ms.openlocfilehash: 122ff43fd13a2bd9e2207d9e4e1c2b6e5d8be2a8
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: "Informazioni su come impostare il dominio, gli utenti, messaggistica Istantanea e presenza per l'organizzazione per installare Skype per le aziende. Vedere anche come configurare conferenze audio, sistema telefonico e la chiamata dei piani e trasmissione Skype riunione. "
+ms.openlocfilehash: ad0608dbb637b4b2343bf39d47b2beea0ca9e12c
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-up-skype-for-business-online"></a>Configurare Skype per Business Online
   
@@ -130,8 +130,6 @@ Prima di impostare le altre funzionalità, verificare che siano disponibili lice
 
 Talvolta le persone all'interno dell'organizzazione dovranno usare un telefono per accedere a una riunione. Skype per le aziende include la funzionalità di audioconferenza per solo questa situazione! Le persone possono accedere alle riunioni di Skype for Business usando un telefono, al posto di usare la app di Skype for Business su un dispositivo mobile o PC.
   
-Per le istruzioni dettagliate, vedere [configurazione di conferenze Audio per Skype per le aziende e team di Microsoft](../audio-conferencing-in-office-365/set-up-audio-conferencing.md) Office 365.
-  
 ### <a name="set-up-phone-system-and-the-calling-plans-in-office-365"></a>Configurazione di sistema telefonico e i piani di chiamata in Office 365
 
 La caratteristica di sistema telefonico in Office 365 offre un sistema telefonico per la propria azienda. Le chiamate per gli altri Skype per gli utenti aziendali all'interno dell'organizzazione sono gratuite e i dipendenti possono ricevere messaggi vocali tra loro e i chiamanti esterni. Ecco cosa viene visualizzato con sistema telefonico.
@@ -152,7 +150,7 @@ Di seguito viene fornita una panoramica dei passaggi per configurare trasmission
     
 3. [Configurazione di rete per la trasmissione riunione Skype](../set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast.md): se si desidera webinar host e altre trasmissioni con partecipanti esterni all'organizzazione, è necessario configurare la rete.
     
-4. [Pianifica riunione trasmissione Skype](http://support.office.com/article/c3995bc9-4d32-4f75-a004-3bc5c477e553) e dispongono di un [Join la trasmissione di una riunione Skype](http://support.office.com/article/14689da0-821d-48d4-9035-ea762de80ebe): assicurarsi che tentano di partecipare a riunioni trasmissione lavoro pianificando una trasmissione riunione Skype *all'https://portal.broadcast.skype.com* e fare in modo che un utente di riunione.
+4. [Pianifica riunione trasmissione Skype](http://support.office.com/article/c3995bc9-4d32-4f75-a004-3bc5c477e553) e dispongono di un [Join la trasmissione di una riunione Skype](http://support.office.com/article/14689da0-821d-48d4-9035-ea762de80ebe): effettuare riunioni verificare trasmissione utilizzare pianificando una trasmissione riunione Skype al *https://portal.broadcast.skype.com* e fare in modo che un utente tenta di partecipare alla riunione.
     
 ## <a name="learn-about-network-connectivity-requirements"></a>Informazioni sui requisiti di connettività di rete
 <a name="bkmk_more"> </a>
@@ -177,5 +175,5 @@ La qualità dell'audio, video e Skype per le aziende di condivisione applicazion
 
 [Pianificare la connettività ibrida tra Skype per Business Server e Skype Business online](https://go.microsoft.com/fwlink/p/?linkid=400791)
   
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

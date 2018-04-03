@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: 'See how to search for phone numbers you can assign to your users, by country/region, state/region, or city, and specify the quantity of numbers you need. '
-ms.openlocfilehash: 2ff298f72939ba9cf8c4524a6adbb75deb26b94a
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 59691acf7892c0907c7a2f461c45c5289a3ebbbe
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="search-for-phone-numbers-for-users"></a>Cercare numeri di telefono per gli utenti
 
@@ -73,5 +73,5 @@ Se è necessario alcuni assistenza per ottenere i numeri di telefono, è possibi
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

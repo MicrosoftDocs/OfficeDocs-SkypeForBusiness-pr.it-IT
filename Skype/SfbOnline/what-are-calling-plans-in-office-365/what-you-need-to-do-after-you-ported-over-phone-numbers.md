@@ -1,5 +1,5 @@
 ---
-title: "Che cosa è necessario eseguire dopo aver trasferito su numeri di telefono?"
+title: Che cosa è necessario eseguire dopo aver trasferito su numeri di telefono?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,11 +21,11 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: Visualizzare le informazioni necessarie eseguire successivamente dopo aver trasferito i numeri di telefono a Skype per le aziende.
-ms.openlocfilehash: 961d61e93be4f6647fe7396a7400bf42d47911ba
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: d190d642edc932d1c620493afc893e03d85a4fb4
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="what-do-you-need-to-do-after-you-have-ported-over-your-phone-numbers"></a>Che cosa è necessario eseguire dopo aver trasferito su numeri di telefono?
 
@@ -52,3 +52,5 @@ Dopo che è stato inviato l'ordine delle porte, si contatta il gestore e utilizz
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
+  
+ 

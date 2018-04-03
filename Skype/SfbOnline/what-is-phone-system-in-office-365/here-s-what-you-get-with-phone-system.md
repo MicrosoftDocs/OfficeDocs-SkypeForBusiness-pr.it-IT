@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 - Strat_SB_PSTN
-description: "Informazioni sulle caratteristiche, disponibilità e su come pianificare e configurare un sistema telefonico (Cloud PBX) per la propria azienda. "
-ms.openlocfilehash: aa7dfb85a212aef17effa45e8a194e018f595448
-ms.sourcegitcommit: 50446359cd7c359eb2536176545291c723392e47
+description: 'Informazioni sulle caratteristiche, disponibilità e su come pianificare e configurare un sistema telefonico (Cloud PBX) per la propria azienda. '
+ms.openlocfilehash: e1e1319bd9dd5ba92f19fb0b30b9806417c84f7d
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa viene visualizzato con sistema telefonico in Office 365
 
@@ -100,5 +100,5 @@ In questi articoli per pianificare e configurare il sistema telefonico in ambito
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

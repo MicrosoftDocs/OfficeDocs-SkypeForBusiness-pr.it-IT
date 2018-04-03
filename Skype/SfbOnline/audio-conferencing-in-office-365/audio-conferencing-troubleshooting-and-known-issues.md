@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: 72979911-5319-4de2-a275-4dd9a0f44fe6
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -20,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: 'Ottenere un elenco di problemi noti quando si utilizza Microsoft come i provider di conferenza telefonica, lo stato e alcune soluzioni alternative. '
-ms.openlocfilehash: 9e566d0ba9f07aeecca222ef586f301b1cd6cf5f
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 3748c6f60c04ea34f327eb371ba16f112a124287
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="audio-conferencing-troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti relativi ai servizi di audioconferenza
 
@@ -46,6 +48,7 @@ Per risolvere potenziali problemi durante la configurazione e il funzionamento d
 |L'accesso verso l'esterno richiede 5 cifre o più.  <br/> |Gli utenti che cercano di effettuare una chiamata verso l'esterno da una riunione devono digitare 5 o più cifre anche se è disponibile una regola di normalizzazione del piano di chiamata per normalizzare la composizione breve a E.164.  <br/> |Effettuare la chiamata con il numero DID o locale completo invece del numero interno.  <br/> |25/9/2017  <br/> |
 |Il controllo per le chiamate esterne a volte non viene visualizzato.  <br/> |Il controllo per le chiamate esterne può non essere visibile nel pannello Info riunione.  <br/> |Non ci sono soluzioni alternative.  <br/> |25/9/2017  <br/> |
 |Gli ID conferenza statici non sono supportati per le riunioni Microsoft Teams.  <br/> |Se l'amministratore sostituisce l'impostazione standard di ID conferenza dinamico con l'impostazione ID conferenza statico, questo non ha effetto per le riunioni di Microsoft Teams. Vedere [ID dinamico tramite servizi di conferenza Audio all'interno dell'organizzazione](using-audio-conferencing-dynamic-ids-in-your-organization.md).  <br/> |Non ci sono soluzioni alternative.  <br/> |25/9/2017  <br/> |
+|Le coordinate riunione PSTN non sono disponibili per Skype per gli utenti locali aziendali  <br/> |Se l'utente è un Skype per utente locale aziendale, assegnati con Skype per Business Online, conferenze Audio e le licenze di team, tutte le riunioni pianificate con team non includerà le coordinate riunione PSTN. <br/> |Non ci sono soluzioni alternative.  <br/> |1/2/2018  <br/> |
    
 ### <a name="skype-for-business-app"></a>App Skype for Business
 
@@ -58,6 +61,4 @@ Per risolvere potenziali problemi durante la configurazione e il funzionamento d
    
 ## <a name="related-topics"></a>See also
 
-[Configurare le audioconferenze per Skype for Business e Microsoft Teams](set-up-audio-conferencing.md)
-  
-
+[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

@@ -1,5 +1,5 @@
 ---
-title: "Che cos'è consigliabile inserire per l'indirizzo del servizio?"
+title: Che cos'è consigliabile inserire per l'indirizzo del servizio?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,11 +21,11 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: "Informazioni che cos'è l'indirizzo del servizio, le differenze con l'indirizzo di fatturazione e su cui è possibile trovare. "
-ms.openlocfilehash: dc894bad87a232154207300b02e722e9d10626e6
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: c5791e2bb48bc6fb8a42c1941ed3b6b225b22460
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="what-should-i-put-in-for-the-service-address"></a>Che cos'è consigliabile inserire per l'indirizzo del servizio?
 
@@ -45,3 +45,6 @@ L'indirizzo del servizio è diverso dall'indirizzo di fatturazione o di emergenz
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+  
+ 

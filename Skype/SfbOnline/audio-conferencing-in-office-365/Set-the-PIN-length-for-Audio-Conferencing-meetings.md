@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: b86d31c6-1543-478f-b8c6-4b71e708403a
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -20,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: Ulteriori parametri per la lunghezza e i requisiti di un PIN e informazioni su come impostare il periodo per le riunioni in Skype per le aziende.
-ms.openlocfilehash: 308bce9196f085c1f9473e74746bccd2f0ca96c5
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 442ec6f4395b71acaf3296bdd6ec6317451dc36f
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-the-pin-length-for-audio-conferencing-meetings"></a>Impostare la lunghezza del PIN per le riunioni di conferenze Audio
 
@@ -80,5 +82,4 @@ Ponte per conferenze audio risponde a una chiamata a coloro che si collegano a u
   
 ## <a name="see-also"></a>Le differenze nella nostra funzionalità di chiamata ai servizi di emergenza includono quanto segue: (i) Skype for Business potrebbe non conoscere la posizione effettiva di un chiamante ai servizi di emergenza, il che potrebbe comportare un instradamento della chiamata ai servizi di emergenza a un call center dei servizi di emergenza errato e/o l'invio dei servizi di emergenza a una località errata; (ii) se il dispositivo dell'utente non riceve l'alimentazione, sta sperimentando un'interruzione dell'alimentazione, o per qualsiasi motivo, non è in grado di accedere a Internet, l'utente non potrà effettuare la chiamata ai servizi di emergenza tramite i Piani per chiamate di Office 365; e (iii) sebbene i Piani per chiamate di Office 365 possano essere usati ovunque nel mondo laddove sia disponibile una connessione a Internet, gli utenti non dovrebbero chiamare i servizi di emergenza da una località al di fuori del proprio paese/regione poiché la chiamata non verrà probabilmente instradata al call center appropriato di tale paese/area geografica.
 
-[Configurare le audioconferenze per Skype for Business e Microsoft Teams](set-up-audio-conferencing.md)
-
+[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

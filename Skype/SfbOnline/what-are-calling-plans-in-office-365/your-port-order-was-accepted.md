@@ -1,5 +1,5 @@
 ---
-title: "Il tuo ordine di trasferimento è stato accettato"
+title: Il tuo ordine di trasferimento è stato accettato
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,11 +21,11 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: 'What it means when your port order has been accepted, and what you need to do next to finish your Skype for Business set up. '
-ms.openlocfilehash: 57e03ff6c0cc9f225458335d2a090fb7d9fe4dd7
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 946c07c7d5a686b755fa0a9694552ee6afe02890
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="your-port-order-was-accepted"></a>Il tuo ordine di trasferimento è stato accettato
 
@@ -52,3 +52,6 @@ Ora che è stata approvata ed sono pronti i numeri di telefono, è necessario es
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+  
+ 

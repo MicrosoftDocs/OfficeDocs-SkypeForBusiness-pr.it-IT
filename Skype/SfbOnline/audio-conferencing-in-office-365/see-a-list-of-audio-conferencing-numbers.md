@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
-description: 'Informazioni su come cercare i numeri di conferenza telefonica all''interno di Skype per le aziende. '
-ms.openlocfilehash: 75e1d78581585f5c9ce94b78a19191918827dbbf
-ms.sourcegitcommit: 997c03395fd1966607cef0df8ee884303401cd64
+description: "Informazioni su come cercare i numeri di conferenza telefonica all'interno di Skype per le aziende. "
+ms.openlocfilehash: 19bbf38968afb094deaf97ff14a6673b4cfdda48
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers"></a>Visualizzare un elenco di numeri di conferenze Audio
 
@@ -82,5 +82,5 @@ Se esiste un solo numero all'interno dell'organizzazione, verrà utilizzato come
   
 ## <a name="related-topics"></a>See also
 
-[Servizi di conferenza telefonica con accesso esterno in Office 365](set-up-audio-conferencing.md)
+[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
   

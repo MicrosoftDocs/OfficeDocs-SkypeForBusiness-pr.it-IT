@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità in Malaysia"
+title: Disponibilità in Malaysia
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per la Malaysia i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 62cc6b543e90f8da549ea51a957b57c53d8c4700
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: de83027d74e0387b0a94585c18d93f14e3bb2e3d
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="availability-in-malaysia"></a>Disponibilità in Malaysia
 
@@ -83,6 +83,6 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 
 

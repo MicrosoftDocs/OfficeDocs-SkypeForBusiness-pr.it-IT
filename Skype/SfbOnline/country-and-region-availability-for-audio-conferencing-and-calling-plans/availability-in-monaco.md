@@ -1,5 +1,5 @@
 ---
-title: "Disponibilità in Principato di Monaco"
+title: Disponibilità in Principato di Monaco
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per Principato di Monaco i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: b6e5203acaa9ffbea24f155a2c9b06662fa88944
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 0636652fbfa9b934c7f0f073b6a5b4cde96c5524
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="availability-in-monaco"></a>Disponibilità in Principato di Monaco
 
@@ -83,5 +83,6 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-
+  
+ 
 

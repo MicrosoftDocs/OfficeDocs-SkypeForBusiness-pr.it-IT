@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: 'Learn how to add an emergency address to your Skype for Business account. '
-ms.openlocfilehash: 4bde1e825df6425f25fe9dbf41873e6b3b932507
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 1853d3904b79d3f4edad2909e2cf2476d3450828
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="add-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione
 
@@ -78,5 +78,5 @@ Per informazioni su come ottenere un piano di chiamata e sul costo, vedere [Skyp
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

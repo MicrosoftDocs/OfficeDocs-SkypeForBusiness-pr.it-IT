@@ -1,5 +1,5 @@
 ---
-title: "Che cos'è consigliabile inserire per il nome della società."
+title: Che cos'è consigliabile inserire per il nome della società.
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,12 +20,12 @@ f1keywords:
 - ms.lync.lac.PortOrderAccountInfoCompanyName
 ms.custom:
 - Calling Plans
-description: "Elementi da inserire per la società in Skype per le aziende e dove sono disponibili. "
-ms.openlocfilehash: 875ae462ad2ade0e486adb90c06bcd3463465fbc
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: 'Elementi da inserire per la società in Skype per le aziende e dove sono disponibili. '
+ms.openlocfilehash: 9664879695a79a485b034667feff2c4486878bae
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="what-should-i-put-in-for-the-company-name"></a>Che cos'è consigliabile inserire per il nome della società.
 
@@ -46,3 +46,5 @@ Questo è il nome della società o dell'organizzazione. Il nome della società �
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
+  
+ 

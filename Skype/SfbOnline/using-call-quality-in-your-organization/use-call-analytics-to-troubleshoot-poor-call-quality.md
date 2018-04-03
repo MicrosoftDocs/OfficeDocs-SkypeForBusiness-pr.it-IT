@@ -1,5 +1,5 @@
 ---
-title: "Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate"
+title: Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
@@ -18,12 +18,12 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Reporting
-description: "Utilizzare chiama Analitica dettagli sui dispositivi, reti e connettività per la risoluzione dei problemi degli utenti con Skype per chiamate di lavoro e le riunioni."
-ms.openlocfilehash: 4f43c517beba318889e12fca8b09a488f6da5916
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: Utilizzare chiama Analitica dettagli sui dispositivi, reti e connettività per la risoluzione dei problemi degli utenti con Skype per chiamate di lavoro e le riunioni.
+ms.openlocfilehash: b7f900509506433bd2c863fb6c0c33c4f71f2ab5
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="use-call-analytics-to-troubleshoot-poor-skype-for-business-call-quality"></a>Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate
 
@@ -46,7 +46,7 @@ Se hai bisogno di informazioni con le autorizzazioni, vedere il Skype per Busine
   
  **Aprire chiamare Analitica come agente help desk livello 1 o livello 2**
   
-1. Accedere all'interfaccia di amministrazione di Office 365 e accedere utilizzando l'account di lavoro o della scuola. Nel web browser andare al *https://adminportal.services.skypeforbusiness.com*.
+1. Accedere all'interfaccia di amministrazione di Office 365 e accedere utilizzando l'account di lavoro o della scuola. Nel web browser passare alla *https://adminportal.services.skypeforbusiness.com*.
     
 2. In **Ricerca utente**, iniziare a digitare il nome o sip l'indirizzo dell'utente le cui chiamate da risolvere i problemi e quindi selezionare l'utente dall'elenco.
     
@@ -77,3 +77,5 @@ Per le sessioni audio di qualità dei dati QoE (dagli utenti QoE), nella tabella
 
 [Che cos'è la differenza tra Analitica delle chiamate e chiamate Dashboard qualità?](difference-between-call-analytics-and-call-quality-dashboard.md)
 
+  
+ 

@@ -1,5 +1,5 @@
 ---
-title: "Perché è elencato come incompleto numerico attivazione?"
+title: Perché è elencato come incompleto numerico attivazione?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,12 +20,12 @@ f1keywords:
 - ms.lync.lac.NumberActivationStateIncomplete
 ms.custom:
 - Calling Plans
-description: "La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza."
-ms.openlocfilehash: e8e84deb77a1cdc122c36a1031fe2efa8d3eaf67
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
+ms.openlocfilehash: 6297fe3badaf933a62230f51b41066d18c0c04e3
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="why-is-number-activation-listed-as-incomplete"></a>Perché è elencato come incompleto numerico attivazione?
 
@@ -107,5 +107,5 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

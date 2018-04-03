@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono nei Paesi Bassi per Skype for Business online e Microsoft Teams.
-ms.openlocfilehash: df9c9b53821c6e3dae8a55b06754a78558f3090e
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 5f7912f76439082ccd3078f649d1ebab329bcb2a
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="phone-number-management-for-the-netherlands"></a>Gestione dei numeri di telefono per i Paesi Bassi
 
@@ -51,5 +51,5 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

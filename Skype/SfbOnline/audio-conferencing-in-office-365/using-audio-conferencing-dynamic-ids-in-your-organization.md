@@ -22,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: 'Il servizio di conferenza Audio viene viene aggiornato per fornire ogni Skype per Business e Microsoft Teams riunione con gli ID conferenza diversi. ID conferenza dinamici sono un miglioramento significativo tramite conferenza statico ID, in quanto forniscono:'
-ms.openlocfilehash: c4158537f7c36299a82df92d3c6ced6cb6189315
-ms.sourcegitcommit: 997c03395fd1966607cef0df8ee884303401cd64
+ms.openlocfilehash: 418e6f486b8108791930c7843bfed8bdc56e83ef
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="using-audio-conferencing-dynamic-ids-in-your-organization"></a>Utilizzo degli ID dinamici audioconferenze all'interno dell'organizzazione
 
@@ -62,6 +62,4 @@ Negli esempi seguenti la nuova esperienza per due Skype per le riunioni aziendal
 
 - [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
     
-- [Configurare le audioconferenze per Skype for Business e Microsoft Teams](set-up-audio-conferencing.md)
-    
-- Per ulteriori informazioni, consulta [Servizi di conferenza telefonica con accesso esterno in Office 365](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
+- [Licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)

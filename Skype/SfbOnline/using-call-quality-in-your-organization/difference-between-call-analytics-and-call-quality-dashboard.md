@@ -1,5 +1,5 @@
 ---
-title: "Qual è la differenza tra Call Analytics e Call Quality Dashboard?"
+title: Qual è la differenza tra Call Analytics e Call Quality Dashboard?
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
@@ -19,11 +19,11 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Learn about Call Analytics and Call Quality Dashboard and when to use them to monitor and troubleshoot call-quality problems in Skype for Business.
-ms.openlocfilehash: 6c8eb372388ae42863292dbf00a70c5ddd19118d
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: 934b0cfec28fa4a67e1dad699db504bda25b2978
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="whats-the-difference-between-call-analytics-and-call-quality-dashboard"></a>Qual è la differenza tra Call Analytics e Call Quality Dashboard?
 
@@ -65,5 +65,5 @@ Per ulteriori informazioni su CQD, vedere [attivazione e l'utilizzo del Dashboar
 
 [Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

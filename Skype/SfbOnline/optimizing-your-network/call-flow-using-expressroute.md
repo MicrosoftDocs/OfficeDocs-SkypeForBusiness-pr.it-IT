@@ -19,11 +19,11 @@ f1keywords: None
 ms.custom:
 - Optimization
 description: Questo articolo illustra i principi di base del flusso delle chiamate per Skype for Business online ed ExpressRoute, e fornisce alcuni esempi dettagliati di flussi delle chiamate per una maggiore comprensione e per eseguire una corretta programmazione.
-ms.openlocfilehash: aa746ad4152dca6e1c06d99ad5b14d55f7be2fa1
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 220a23a5a43b281790422c39908e7a0ea32c03b4
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="call-flow-using-expressroute"></a>Flusso delle chiamate con ExpressRoute
 
@@ -233,3 +233,6 @@ Gli utenti che effettuano la connessione a Cloud Connector Edition sono tutti os
 ## <a name="related-topics"></a>See also
 
 [Documentazione ExpressRoute](https://go.microsoft.com/fwlink/?LinkId=690285)
+
+  
+ 

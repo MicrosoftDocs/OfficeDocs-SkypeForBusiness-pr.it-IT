@@ -19,11 +19,11 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su problemi noti di piano di chiamata per Office 365 (tramite la chiamata PSTN) e operazioni su di essi. '
-ms.openlocfilehash: cb572c9de92cd53384c07c4e48779598ca73bb8c
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 4af75c194631680877b053841790e536e425794a
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="calling-plans-known-issues"></a>Problemi noti di piani di chiamata
 
@@ -48,3 +48,6 @@ Piani di chiamata in Office 365 sono una nuova funzionalità disponibili in Skyp
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+  
+ 

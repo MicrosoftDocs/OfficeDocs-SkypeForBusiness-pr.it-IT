@@ -1,5 +1,5 @@
 ---
-title: "Che cos'è consigliabile inserire per il numero di conto?"
+title: Che cos'è consigliabile inserire per il numero di conto?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,11 +21,11 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: "Vedere che cos'è opportuno inserire come un numero di conto nelle Skype per le aziende e ubicazione che. "
-ms.openlocfilehash: 1853e8c6d63db37d89f41c49a6302d2f765a0302
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.openlocfilehash: 14a95d5f4061216fbf0dfef077bdac9ac4294206
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="what-should-i-put-in-for-the-account-number"></a>Che cos'è consigliabile inserire per il numero di conto?
 
@@ -48,4 +48,5 @@ In genere, è possibile trovare il numero di conto in qualsiasi bill o fatturazi
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-
+  
+ 

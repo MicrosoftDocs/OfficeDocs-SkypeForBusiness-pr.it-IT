@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 - LIL_Placement
-description: "Informazioni su quali Office 365 Callings dei piani (chiamata PSTN) sono, quali aree è disponibile in e a chi rivolgersi per istruzioni dettagliate su come configurarla. "
-ms.openlocfilehash: 0fb7bf62be37a196eb5432eb747f77b5a08ecc93
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+description: 'Informazioni su quali Office 365 Callings dei piani (chiamata PSTN) sono, quali aree è disponibile in e a chi rivolgersi per istruzioni dettagliate su come configurarla. '
+ms.openlocfilehash: cc6405662eef6be5a2461147356b2a1a58fccf0f
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="what-are-calling-plans-in-office-365"></a>Che cosa sono i piani di chiamata in Office 365?
 
@@ -71,5 +71,5 @@ Per ulteriori informazioni su sistema telefonico, la chiamata a piani e audiocon
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 

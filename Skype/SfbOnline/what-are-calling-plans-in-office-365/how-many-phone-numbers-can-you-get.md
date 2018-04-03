@@ -1,5 +1,5 @@
 ---
-title: "Quanti numeri di telefono è possibile ottenere."
+title: Quanti numeri di telefono è possibile ottenere.
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -9,7 +9,9 @@ ms.topic: article
 ms.assetid: 61dfb27c-5bfa-4481-a930-9c026e73ff3a
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- Adm_Skype4B_Online
+- Strat_SB_PSTN
 ms.audience: Admin
 appliesto:
 - Skype for Business
@@ -19,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
-description: "Se per la tua organizzazione hai bisogno di numeri di telefono aggiuntivi, puoi ottenere una quantità di numeri di telefono maggiore rispetto al numero di licenze assegnate. Tutto dipende, però, dal tipo di numeri di telefono e di licenze acquistate e assegnate. È possibile fare clic su tipi diversi di numeri di telefono utilizzati per la chiamata dei piani per conoscere i numeri di telefono diverso che vengono utilizzati in Skype Business online."
-ms.openlocfilehash: 7925b5b19e0ef60bd4bde2bac5c3632b0c30ef42
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+description: Se per la tua organizzazione hai bisogno di numeri di telefono aggiuntivi, puoi ottenere una quantità di numeri di telefono maggiore rispetto al numero di licenze assegnate. Tutto dipende, però, dal tipo di numeri di telefono e di licenze acquistate e assegnate. È possibile fare clic su tipi diversi di numeri di telefono utilizzati per la chiamata dei piani per conoscere i numeri di telefono diverso che vengono utilizzati in Skype Business online.
+ms.openlocfilehash: 729f99b2b0f0a3507c6ecba0e119fe12083ac6c2
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="how-many-phone-numbers-can-you-get"></a>Quanti numeri di telefono è possibile ottenere.
 
@@ -56,3 +58,6 @@ Se per la tua organizzazione hai bisogno di numeri di telefono aggiuntivi, puoi 
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+
+  
+ 

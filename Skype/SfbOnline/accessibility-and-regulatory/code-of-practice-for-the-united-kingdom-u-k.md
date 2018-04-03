@@ -18,13 +18,13 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Legal
-hideEdit: 
+hideEdit: true
 description: 'Learn the code of practice for Calling Plans (PSTN Calling plans)  for Skype for Business for the United Kingdom, where to get help, and how to submit complaints and resolve disputes. '
-ms.openlocfilehash: ec34b528ed31f78e3c6075f357ff96c702371514
-ms.sourcegitcommit: 371a699df0c13f44d2cb6511ba7eaafe047be92c
+ms.openlocfilehash: c1528d1ec28dd940b5b696dd03f9c389f6d16844
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="code-of-practice-for-the-united-kingdom-uk"></a>Codice di consigliata per Regno Unito (Regno Unito)
 
@@ -114,7 +114,7 @@ Un Internet dialler, analogo a un virus informatico, è un software che può ess
   
 ### <a name="phonepayplus"></a>PhonepayPlus
 
-Tutti i Provider di servizi devono registrarsi con PhonepayPlus, un'organizzazione indipendente approvata da Ofcom. PhonepayPlus disciplina i servizi a tariffa maggiorata e dà seguito ai reclami presentati dai consumatori. Tutti i provider di servizi devono essere conformi al codice PhonepayPlus dell'esercitazione, che sono disponibili nel [http://www.phonepayplus.org.uk/for-business/code-of-practice](http://www.phonepayplus.org.uk/for-business/code-of-practice). Se un Provider di servizi dovesse violare il Codice di condotta, PhonepayPlus potrà:
+Tutti i Provider di servizi devono registrarsi con PhonepayPlus, un'organizzazione indipendente approvata da Ofcom. PhonepayPlus disciplina i servizi a tariffa maggiorata e dà seguito ai reclami presentati dai consumatori. Tutti i Provider di servizi devono attenersi al Codice di condotta PhonepayPlus, consultabile presso [http://www.phonepayplus.org.uk/for-business/code-of-practice](http://www.phonepayplus.org.uk/for-business/code-of-practice). Se un Provider di servizi dovesse violare il Codice di condotta, PhonepayPlus potrà:
   
 - esigere che sia posto rimedio alla violazione;
     
@@ -124,7 +124,7 @@ Tutti i Provider di servizi devono registrarsi con PhonepayPlus, un'organizzazio
     
 ### <a name="service-provider-contact-information"></a>Informazioni di contatto dei Provider di servizi
 
-Per trovare informazioni sui contatti per un Provider di servizi, è possibile utilizzare strumento #NumberChecker degli PhonepayPlus a [http://www.phonepayplus.org.uk/for-consumers/making-an-enquiry/submit-an-online-enquiry](http://www.phonepayplus.org.uk/for-consumers/making-an-enquiry/submit-an-online-enquiry). Se ritieni di aver pagato ingiustamente un servizio a tariffa maggiorata, contatta direttamente il Provider di servizi.
+Per trovare le informazioni di contatto di un Provider di servizi, è possibile usare lo strumento #NumberChecker di PhonepayPlus disponibile alla pagina [http://www.phonepayplus.org.uk/for-consumers/making-an-enquiry/submit-an-online-enquiry](http://www.phonepayplus.org.uk/for-consumers/making-an-enquiry/submit-an-online-enquiry). Se ritieni di aver pagato ingiustamente un servizio a tariffa maggiorata, contatta direttamente il Provider di servizi.
   
 ### <a name="complaints"></a>Reclami
 
@@ -132,7 +132,7 @@ Se si desidera presentare un reclamo riguardo un Provider di servizi presso Phon
   
 - Telefono: 0300 30 300 20 (9:30 - 17:00, da lunedì a venerdì)
     
-- [Http://www.phonepayplus.org.uk/for-consumers/making-an-enquiry/submit-an-online-enquiry](http://www.phonepayplus.org.uk/for-consumers/making-an-enquiry/submit-an-online-enquiry) l'indagine online:
+- Richiesta online: [http://www.phonepayplus.org.uk/for-consumers/making-an-enquiry/submit-an-online-enquiry](http://www.phonepayplus.org.uk/for-consumers/making-an-enquiry/submit-an-online-enquiry)
     
 ### <a name="dispute-resolution"></a>Risoluzione dei contenziosi
 
@@ -148,5 +148,3 @@ Le tariffe per numeri NTS, numeri personali e numeri 0870 sono disponibili sul n
 ## <a name="related-topics"></a>Argomenti correlati
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).

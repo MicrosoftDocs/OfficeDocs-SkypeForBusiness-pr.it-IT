@@ -1,5 +1,5 @@
 ---
-title: "Accesso facilitato dichiarazione di conformità in Francia"
+title: Accesso facilitato dichiarazione di conformità in Francia
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,13 +18,13 @@ localization_priority: None
 f1keywords: None
 ms.custom:
 - Legal
-hideEdit: 
+hideEdit: true
 description: "Si tratta di contenuto che deve essere pubblicato in modo da soddisfare i requisiti per l'accesso facilitato, conformità e normativi per Skype Business online in Francia. "
 ms.openlocfilehash: e7898502544b9a72be42f29751356c09d08d9e7d
-ms.sourcegitcommit: 94e32f776364b0aaefe2d2d72062ec1c249eaef3
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="accessibility-declaration-of-conformance-for-skype-for-business-online-in-france"></a>Accesso facilitato dichiarazione di conformità per Skype for Business in linea in Francia
 

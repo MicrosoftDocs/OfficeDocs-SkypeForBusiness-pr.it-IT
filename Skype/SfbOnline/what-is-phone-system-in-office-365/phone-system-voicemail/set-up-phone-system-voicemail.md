@@ -22,11 +22,11 @@ ms.custom:
 - Phone System
 - Strat_SB_PSTN
 description: 'Learn how to set up the phone system (Cloud PBX) voicemail for your Skype for Business users. '
-ms.openlocfilehash: c0ea32a7e5792f00380c41c50cc69a2521a3eb37
-ms.sourcegitcommit: 6c59400d2e677c1022f320c91cd7f102b99d292b
+ms.openlocfilehash: 18fb66a4a16ca3fd674b2ccdd0ef15af1f6dc761
+ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-up-phone-system-voicemail"></a>Configurazione di sistema telefonico segreteria telefonica
 
@@ -124,5 +124,5 @@ Abbiamo informazioni e articoli di formazione per aiutare gli utenti a usare con
 
 [Ecco cosa offre il Sistema telefonico in Office 365](../../what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system.md)
 
-## <a name="feedback"></a>Commenti e suggerimenti?
-Per inviare commenti e suggerimenti prodotto o per consentire us sapere come ci si limita, vedere [Skype per commenti e suggerimenti Business](https://www.skypefeedback.com).
+  
+ 
