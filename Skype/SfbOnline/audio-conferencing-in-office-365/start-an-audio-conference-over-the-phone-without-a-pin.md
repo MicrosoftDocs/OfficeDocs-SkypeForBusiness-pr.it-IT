@@ -22,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: 'Learn how to enable or disable anonymous callers from joining a meeting from the Skype for Business admin center or using a PowerShell script. '
-ms.openlocfilehash: b4244647674f25a10b6ca447a6ee8b4d23b36a9f
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: 7c6f0e70780b04e75be52ead1eaf08602bcba003
+ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="start-an-audio-conference-over-the-phone-without-a-pin"></a>Avviare una conferenza Audio nel telefono senza un PIN
 
@@ -38,19 +38,29 @@ Se un utente ha avviato la riunione da Skype per applicazioni aziendali o Teams 
   
 ## <a name="enable-or-disable-anonymous-callers-from-joining-a-meeting"></a>Abilitare o disabilitare la partecipazione dei chiamanti anonimi a una riunione
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+
+1. Nel riquadro di spostamento sinistra fare clic su **utenti**. 
+
+2. Selezionare un utente nell'elenco e quindi fare clic su **Modifica** nella parte superiore della pagina. 
+
+3. Fare clic sul menu accanto a **Ponti di conferenza**e quindi fare clic su **Modifica**.
+
+4. Nel riquadro dei **provider di ponte conferenza** , abilitare o disabilitare i chiamanti Consenti non autenticato **diventi il prima persone a una riunione. Se non, quindi si attenderà nella sala di attesa fino a quando non si unisce a un utente autenticato**.
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+4. Fare clic su **Applica**. 
+
+**Utilizzo di Skype per interfaccia di amministrazione di Business**
     
-3. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **gli utenti**. 
+1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **gli utenti**. 
     
-4. Nell'elenco, selezionare l'utente e nel riquadro azioni fare clic su **Modifica**. 
+2. Nell'elenco, selezionare l'utente e nel riquadro azioni fare clic su **Modifica**. 
     
-5. Nella pagina proprietà dell'utente, in **Opzioni riunione**, selezionare o deselezionare i chiamanti Consenti non autenticato **diventi il prima persone a una riunione. Se non, quindi si attenderà nella sala di attesa fino a quando non si unisce a un utente autenticato**.
+3. Nella pagina proprietà dell'utente, in **Opzioni riunione**, selezionare o deselezionare i chiamanti Consenti non autenticato **diventi il prima persone a una riunione. Se non, quindi si attenderà nella sala di attesa fino a quando non si unisce a un utente autenticato**.
     
-6. Fai clic su **Salva**. 
+4. Fai clic su **Salva**. 
     
- **Per abilitare o disabilitare i chiamanti anonimi per tutte le riunioni dell'utente tramite Windows Powershell**
+ **Utilizzo di Windows Powershell**
   
 - Esegui il seguente comando: 
     

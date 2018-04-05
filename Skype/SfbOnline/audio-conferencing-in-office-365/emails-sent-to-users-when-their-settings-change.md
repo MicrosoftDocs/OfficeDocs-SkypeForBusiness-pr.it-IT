@@ -22,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: 'Informazioni su quali informazioni automaticamente agli utenti viene inviato tramite posta elettronica quando modificano le impostazioni di conferenza telefonica. '
-ms.openlocfilehash: f504e9b807afb4a587a9d6f13baf69a3c5b9db68
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: 0cf1eabd25a6be5d6104c2593e5bc286d15d59f0
+ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="emails-sent-to-users-when-their-settings-change"></a>Messaggi di posta elettronica inviati agli utenti quando le relative impostazioni di modifica
 
@@ -104,21 +104,27 @@ Set-CsOnlineDialInConferencingTenantSetting -SendEmailOverride $true -SendEmailF
 
 Quando si disattiva invio messaggi di posta elettronica agli utenti, posta elettronica non verranno inviata anche quando un utente viene assegnato una licenza. In questo caso, l'ID conferenza, impostazione predefinita il numero di telefono per conferenze e, più importante, non verranno inviata le audioconferenze con accesso esterno PIN all'utente. In questo caso, è necessario che l'utente inviando un messaggio di posta elettronica separato o richiamando i.
   
-Per impostazione predefinita, verranno inviati messaggi di posta elettronica per gli utenti, ma se si desidera impedire la ricezione di posta elettronica per le conferenze audio, è possibile utilizzare il Skype per Business admin center o Windows PowerShell. 
+Per impostazione predefinita, verranno inviati messaggi di posta elettronica per gli utenti, ma se si desidera impedire la ricezione posta elettronica per le conferenze audio, è possibile utilizzare Microsoft Teams, il Skype per Business admin center o Windows PowerShell. 
+
+**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+
+1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
+
+2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
+
+3. Nel riquadro **Impostazioni Bridge** , abilitare o disabilitare **automaticamente inviare messaggi di posta elettronica per gli utenti di modificare le relative impostazioni di connessione**.
+
+4. Fare clic su **Applica**.
   
- **Utilizzo di Skype per interfaccia di amministrazione di Business**
-  
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+**Utilizzo di Skype per interfaccia di amministrazione di Business**
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     
-3. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
+2. Nella pagina **Impostazioni bridge Microsoft** , selezionare o deselezionare **automaticamente inviare messaggi di posta elettronica agli utenti se modificare le impostazioni di conferenza**. 
     
-4. Nella pagina **Impostazioni bridge Microsoft** , selezionare o deselezionare **automaticamente inviare messaggi di posta elettronica agli utenti se modificare le impostazioni di conferenza**. 
+3. Fai clic su **Salva**. 
     
-5. Fai clic su **Salva**. 
-    
- **Utilizzo di Windows PowerShell**
+**Utilizzo di Windows PowerShell**
   
 1. Eseguire le operazioni seguenti per disabilitare l'invio di tutti gli utenti di posta elettronica:
     

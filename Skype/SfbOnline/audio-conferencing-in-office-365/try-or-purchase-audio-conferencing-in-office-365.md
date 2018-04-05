@@ -23,11 +23,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: 'Vedere come prova o acquisto di licenze audioconferenze (conferenze PSTN) per configurare le conferenze telefoniche che gli utenti possono connettersi a Office 365. '
-ms.openlocfilehash: 1dda3a2ecc24e512e9d614b42292233471525805
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: eec26ca81cf9ee29d0d341720c2fdb353038a1e1
+ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365"></a>Prova o acquisto audioconferenza in Office 365
 
@@ -75,10 +75,7 @@ Se si è un cliente multilicenza e licenze, è possibile ottenere le licenze di 
   
 ## <a name="step-2-set-the-audio-conferencing-provider-for-people-who-lead-or-schedule-meetings"></a>Passaggio 2: Impostare il provider di servizi di conferenza audio per gli utenti conducono o pianificare riunioni
 
-Quando si assegna una licenza di **Conferenze Audio** agli utenti dell'organizzazione che condurre o pianificare riunioni, sono tutte impostate configurato ed è pronto a passare! (Non è necessario impostare il provider di audioconferenza.) 
-  
-> [!NOTE]
-> Se si desidera utilizzare un'AUDIOCONFERENZA di terze parti, scegliere **audioconferenze** > **bridge di Microsoft**. Nella parte inferiore della pagina, fare clic su **Se si desidera configurare un provider di servizi di conferenza audio di terze parti in realtà, fare clic qui**. 
+Quando si assegna una licenza di **Conferenze Audio** agli utenti dell'organizzazione che condurre o pianificare riunioni, sono tutte impostate configurato ed è pronto a passare! (Non è necessario impostare il provider di audioconferenza.)  
   
 ## <a name="step-3-other-admin-tasks"></a>Passaggio 3: Altre attività
 

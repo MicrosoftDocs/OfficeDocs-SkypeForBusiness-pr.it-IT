@@ -22,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: 'Learn how to enable or disable whether your users can record their names when they join a meeting '
-ms.openlocfilehash: f01d9457fee181615b8a30467ec558eb36a32e7a
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: 6f1c5c9c86f4b0296340c9185acdc9d505baeda7
+ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="enable-users-to-record-their-name-when-they-join-a-meeting"></a>Consentire agli utenti di registrare il proprio nome quando accedono a una riunione
 
@@ -36,19 +36,28 @@ Il bridge di conferenza risponde alla chiamata di un utente che sta eseguendo l'
   
 ## <a name="set-whether-callers-should-record-their-name"></a>Impostare l'opzione che prevede se i chiamanti devono registrare il proprio nome
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+
+1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
+
+2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
+
+3. Abilitare o disabilitare **abilitare voce relativa alla riunione e chiudere le notifiche per essere attivata**.
+
+4. Fare clic su **Applica**.
+
+
+**Utilizzo di Skype per Business Admin Center**
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     
-3. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
-    
-4. In **esperienza di partecipazione alle riunioni**, vedere la casella di controllo **Abilita voce relativa alla riunione e chiudere le notifiche per essere attivata**.
+2. In **esperienza di partecipazione alle riunioni**, vedere la casella di controllo **Abilita voce relativa alla riunione e chiudere le notifiche per essere attivata**.
     
   - Ai chiamanti **selezionati** viene chiesto di registrare il proprio nome prima di accedere alla riunione. Questa opzione è selezionata per impostazione predefinita.
     
   - Ai chiamanti **deselezionati** non viene chiesto di registrare il proprio nome prima di accedere alla riunione.
     
-5. Dopo aver apportato le modifiche, fai clic su **Salva**.
+3. Dopo aver apportato le modifiche, fai clic su **Salva**.
     
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 

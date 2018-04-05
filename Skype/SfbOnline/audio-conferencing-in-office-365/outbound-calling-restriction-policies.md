@@ -1,5 +1,5 @@
 ---
-title: "Stratégies de restriction chiamata in uscita per le chiamate PSTN per conferenze Audio e degli utenti"
+title: Stratégies de restriction chiamata in uscita per le chiamate PSTN per conferenze Audio e degli utenti
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,11 +18,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: Gli amministratori possono controllare il tipo di utente finale e servizi di conferenza PSTN le chiamate audio che possono essere effettuate dagli utenti.
-ms.openlocfilehash: 0585fc8861d8a805380bc6058523ec91087c4764
-ms.sourcegitcommit: 997c03395fd1966607cef0df8ee884303401cd64
+ms.openlocfilehash: ab6f34e46ceb6a9811830ba1444278db667de73c
+ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Stratégies de restriction chiamata in uscita per le chiamate PSTN per conferenze Audio e degli utenti
 
@@ -39,19 +39,33 @@ Controlli delle chiamate in uscita possono essere applicati a ogni utente e forn
    > Una chiamata è considerata interno se è il numero di telefono chiamato nello stesso paese del paese che è stato impostato in Office 365 per l'organizzatore della riunione (nel caso di conferenze audio) o l'utente finale (nel caso di chiamate PSTN degli utenti finali). 
 
 
-## <a name="restrict-audio-conferencing-outbound-calls-using-the-skype-for-business-admin-center"></a>Limitare le chiamate in uscita audioconferenza utilizzando il Skype per interfaccia di amministrazione di Business 
+## <a name="restrict-audio-conferencing-outbound-calls"></a>Limitare le chiamate in uscita audioconferenze con accesso esterno 
 
+**Utilizzo del team di Microsoft e Skype for Business Admin Center**
 
-1.  Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
-2.  In Skype per interfaccia di amministrazione di Business, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-3.  In the Action pane, click **Edit**.
-4.  In **restrizioni alla connessione-outs dalle riunioni dell'utente**, selezionare l'opzione di chiamata in uscita restrizione desiderato.
+1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
+
+2. Nella parte superiore della pagina, fare clic su **Modifica**.
+
+3. Fare clic sul menu accanto a **Ponti di conferenza**e quindi fare clic su **Modifica** nell'elenco a discesa.
+
+4. Nel riquadro di **provider di ponte conferenza** , in **restrizioni alla connessione-outs dalle riunioni dell'utente**, selezionare l'opzione di chiamata esterna per una restrizione desiderato.
+
+5. Fare clic su **Applica**. 
+
+**Utilizzo di Skype per interfaccia di amministrazione di Business**
+
+1.  Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
+
+2.  In the Action pane, click **Edit**.
+
+3.  In **restrizioni alla connessione-outs dalle riunioni dell'utente**, selezionare l'opzione di chiamata in uscita restrizione desiderato.
 
     ![Le restrizioni alle opzioni di chiamate](../images/restrictions-to-dial-outs.png)
 
 5. Fai clic su **Salva**.
 
-## <a name="restrict-audio-conferencing-and-end-user-outbound-calls-using-powershell"></a>Limitare le conferenze e degli utenti finali in uscita le chiamate audio tramite PowerShell
+**Utilizzo di PowerShell**
 
 Limitazioni delle chiamate in uscita sono controllati da un singolo criterio denominato OnlineDialOutPolicy che ha un attributo di restrizione per ogni. Non è possibile personalizzare il criterio, bensì sono disponibili le istanze dei criteri predefiniti per ogni combinazione delle impostazioni. 
 

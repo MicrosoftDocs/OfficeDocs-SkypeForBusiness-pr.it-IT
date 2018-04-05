@@ -22,27 +22,35 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: Ulteriori parametri per la lunghezza e i requisiti di un PIN e informazioni su come impostare il periodo per le riunioni in Skype per le aziende.
-ms.openlocfilehash: 442ec6f4395b71acaf3296bdd6ec6317451dc36f
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: d8e6073bd60612131e54e10be6498370d8dfe3bb
+ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="set-the-pin-length-for-audio-conferencing-meetings"></a>Impostare la lunghezza del PIN per le riunioni di conferenze Audio
 
-Quando imposta audioconferenze con accesso esterno in per Skype per Business o Microsoft Teams, si otterrà un ponte per conferenze audio. Un ponte per conferenze può contenere uno o più numeri di telefono. Si imposta il numero di telefono verrà inclusa in inviti riunione per Skype per le applicazioni aziendali e Teams Microsoft.
+Per configurare conferenze audio per Skype per Business o Microsoft Teams, si otterrà un ponte per conferenze audio. Un ponte per conferenze può contenere uno o più numeri di telefono. Si imposta il numero di telefono verrà inclusa in inviti riunione per Skype per le applicazioni aziendali e Teams Microsoft.
   
 Ponte per conferenze audio risponde a una chiamata a coloro che si collegano a una riunione utilizzando un telefono. Vengono fornite risposte al chiamante di istruzioni vocali da un operatore automatico e quindi, a seconda delle impostazioni, può riprodurre le notifiche e chiedere ai chiamanti di registrare il proprio nome. **Impostazioni bridge Microsoft** consentono di modificare le impostazioni per le notifiche di riunione e la riunione partecipare esperienza e impostare la lunghezza del PIN che vengono utilizzati per gli organizzatori delle riunioni. Per avviare riunioni se è Impossibile partecipare alla riunione utilizzando il Skype per applicazioni aziendali o Microsoft Teams, gli organizzatori delle riunioni eseguire PIN.
   
 ## <a name="setting-the-pin-length"></a>Impostazione della lunghezza PIN
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+
+1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
+
+2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
+
+3. Nel riquadro **Impostazioni Bridge** , in **lunghezza del PIN**, selezionare il numero di cifre che si desidera utilizzare per il PIN.
+
+4. Fare clic su **Applica**.
+
+**Utilizzo di Skype per interfaccia di amministrazione di Business**
+ 
+1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
-    
-3. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
-    
-4. In **sicurezza** > **lunghezza del PIN**, selezionare il numero di cifre che si desidera utilizzare per il PIN e quindi fare clic su **Salva**.
+2. In **sicurezza** > **lunghezza del PIN**, selezionare il numero di cifre che si desidera utilizzare per il PIN e quindi fare clic su **Salva**.
     
 > [!NOTE]
 > Un PIN è diverso da un ID conferenza. ID conferenza vengono utilizzati per i chiamanti quando partecipano a riunione. Vengono utilizzati per identificare la riunione. Il PIN viene utilizzato per autenticare un chiamante organizzatore della riunione. 

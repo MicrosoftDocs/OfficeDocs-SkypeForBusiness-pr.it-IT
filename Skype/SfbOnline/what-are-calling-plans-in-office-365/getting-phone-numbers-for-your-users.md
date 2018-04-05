@@ -22,21 +22,23 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: 'Learn how to get new, port, or transfer existing numbers for Skype for Business, and how to show the changes to your users. '
-ms.openlocfilehash: 94d68c9caa11057393be66ca38c465f39fad9d7a
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: dc75a47f9e2de6c124675b4ae2cd9f3a9ff17036
+ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 
 [] Prima di poter impostare gli utenti nella tua organizzazione per fare e ricevere telefonate, devi recuperare i numeri di telefono.
   
-Per ottenere numeri per gli utenti, hai a disposizione due metodi:
-  
-- Ottenere nuovi numeri tramite l' **interfaccia di amministrazione di Skype for Business**.
+Esistono tre modi per ottenere nuovi numeri utente:
+
+- **Utilizzare il Skype per l'interfaccia di amministrazione di Business.** Per alcuni paesi, è possibile ottenere numeri per gli utenti con il Skype per interfaccia di amministrazione di Business, vedere [ottenere numeri di telefono per gli utenti.](../what-is-phone-system-in-office-365/getting-phone-numbers-for-your-users.md).
     
-- Trasferire i numeri di telefono esistenti dal provider di servizi o gestore di telefonia attuale a Office 365.
+- **Porte i numeri esistenti.** Consente di porta o trasferire i numeri esistenti dal provider di servizi corrente o gestore telefonico a Office 365. [Trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md) o [numeri di telefono di gestione dell'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per ulteriori informazioni che consentono di eseguire questa operazione, vedere.  
+  
+- **Utilizzare un modulo di richiesta per nuovi numeri.** In alcuni casi (a seconda del paese/area geografica) non sarà in grado di ottenere numeri di telefono nuovo utilizzando il Skype per interfaccia di amministrazione di Business o sarà necessario area codici o i numeri di telefono specifico. In questo caso, dovrai scaricare un modulo e inviarcelo. Per ulteriori informazioni, vedere [Manage i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) .
     
 Devi consultare la pagina **Aggiungi nuovi numeri utente** per visualizzare, eseguire ricerche, acquisire e prenotare quei numeri. Puoi eseguire una ricerca in base a **Paese/Area geografica**, **Stato** e **Città** e inserire i numeri di telefono necessari per gli utenti.
   

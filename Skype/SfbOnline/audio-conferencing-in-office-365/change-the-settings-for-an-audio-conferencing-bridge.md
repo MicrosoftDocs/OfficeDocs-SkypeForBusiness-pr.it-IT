@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
-description: "È possibile ottenere la procedura che è necessario modificare le impostazioni per un bridge di componente aggiuntivo per conferenze Microsoft che consente di richiedere i chiamanti e raccogliere i nomi e i pin per gli organizzatori delle riunioni quando non sono in uso Skype per i client aziendali. "
-ms.openlocfilehash: 62307bf26458ae54134772a0d920bcc602265bdc
-ms.sourcegitcommit: 997c03395fd1966607cef0df8ee884303401cd64
+description: 'È possibile ottenere la procedura che è necessario modificare le impostazioni per un bridge di componente aggiuntivo per conferenze Microsoft che consente di richiedere i chiamanti e raccogliere i nomi e i pin per gli organizzatori delle riunioni quando non sono in uso Skype per i client aziendali. '
+ms.openlocfilehash: d9b80b06a3c52c6ec386a0e5052f1bb71f914650
+ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un ponte per conferenze Audio
 
@@ -37,17 +37,39 @@ Bridging risponde a una chiamata e viene richiesto il chiamante con istruzioni v
   > [!IMPORTANT]
   > Un PIN è solo necessario per l'organizzatore della riunione quando Skype per utente app aziendali o Teams Microsoft non ha già avviato la riunione. Se tutti gli utenti è accedono alla riunione, il PIN è obbligatorio per l'organizzatore della riunione avviare la riunione. 
   
-## <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un ponte per conferenze audio
+## <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un ponte per conferenze audio 
+
+### <a name="using-the-microsoft-teams-and-skype-for-business-admin-center"></a>Utilizzo del team di Microsoft e Skype for Business Admin Center
+
+1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
+
+2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
+
+3. Nel riquadro **Impostazioni Bridge** selezionare: 
+  - **Abilitare questa impostazione voce relativa alla riunione e chiudere le notifiche per essere attivata** Se si disattiva questa opzione, gli utenti che già sono uniti alla riunione non vengono informati quando un utente si unisce o abbandona la riunione.
+    
+    Quando si seleziona **Abilita voce relativa alla riunione e uscire da attivare le notifiche**, è possibile selezionare le opzioni nell'elenco **tipo di annunci di entrata/uscita** :
+    
+  - **I nomi o numeri di telefono** Quando gli utenti accedono a una riunione, il numero di telefono verrà riprodotto quando partecipano a.
+    
+  - **Toni** Quando gli utenti accedono a una riunione, un tono di audio da riprodurre quando partecipano a.
+      
+  - **Chiamanti ASK per registrare il proprio nome prima di partecipare alla riunione** Se si disattiva questa opzione, i chiamanti non verranno richiesto di registrare il proprio nome prima che partecipano a una riunione.
+
+4. Per impostare la lunghezza del PIN per le riunioni, selezionare il numero di cifre che si desidera utilizzare per il PIN nell'elenco **lunghezza del PIN** .
+
+5. Per specificare se inviare posta elettronica per gli utenti, abilitare o disabilitare **l'invio automatico di messaggi di posta elettronica agli utenti se viene modificata la relativa configurazione di audioconferenze con accesso esterno**.
+    Per ulteriori informazioni, vedere [messaggi di posta elettronica inviato automaticamente agli utenti quando modificano le impostazioni di conferenza Audio](emails-sent-to-users-when-their-settings-change.md) .
+ 
+6. Fare clic su **Applica**. 
+
+### <a name="using-skype-for-business-online"></a>Utilizzo di Skype for Business in linea
 
  **Configurare l'esperienza di riunione quando i chiamanti di partecipare a una riunione**
-  
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+1. In **Skype per interfaccia di amministrazione di Business**, nel riquadro sinistro passare a **conferenze Audio** > **Impostazioni bridge di Microsoft**.
     
-3. In **Skype per interfaccia di amministrazione di Business**, nel riquadro sinistro passare a **conferenze Audio** > **Impostazioni bridge di Microsoft**.
-    
-4. Nella pagina **impostazioni di bridge di Microsoft** , in **esperienza di partecipazione alle riunioni**, selezionare:
+2. Nella pagina **impostazioni di bridge di Microsoft** , in **esperienza di partecipazione alle riunioni**, selezionare:
     
   - **Enable meeting entry and exit notifications to be turned on** This is selected by default. Se si deseleziona la casella di controllo, gli utenti che già sono uniti alla riunione non vengono informati quando un utente si unisce o abbandona la riunione.
     
@@ -62,7 +84,7 @@ Bridging risponde a una chiamata e viene richiesto il chiamante con istruzioni v
   
   - **Chiamanti ASK per registrare il proprio nome prima di partecipare alla riunione** Questa opzione è selezionata per impostazione predefinita. Se si deseleziona la casella di controllo, i chiamanti non verranno richiesto di registrare il proprio nome prima che partecipano a una riunione.
     
-5. Vedi **Modificare le impostazioni per un bridge per audioconferenza**.
+3. Vedi **Modificare le impostazioni per un bridge per audioconferenza**.
     
 **Impostare la lunghezza del PIN per le riunioni**
   

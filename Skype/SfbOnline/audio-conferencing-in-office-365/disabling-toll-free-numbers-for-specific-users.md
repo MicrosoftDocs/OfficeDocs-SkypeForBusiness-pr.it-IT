@@ -19,11 +19,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: Gli amministratori possono controllare gli organizzatori utilizzo numeri verdi per le riunioni.
-ms.openlocfilehash: fb4b0f8725608928e686307845871b4f5c1976d9
-ms.sourcegitcommit: 997c03395fd1966607cef0df8ee884303401cd64
+ms.openlocfilehash: d0b7703f4dd518caa5ffb339282c5a7bbac4daa3
+ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione di numeri verdi per utenti specifici
 
@@ -42,14 +42,31 @@ Numeri verdi quando sono disabilitati per organizzare una determinata:
 
  - I partecipanti possono continuare a partecipare alle riunioni dell'organizzatore tramite numeri a tariffa. 
 
-## <a name="disabling-toll-free-numbers-for-specific-users-using-the-skype-for-business-admin-center"></a>Disattivazione di numeri verdi per utenti specifici utilizzando il Skype per interfaccia di amministrazione di Business 
- 1. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**. 
- 2. In Skype per interfaccia di amministrazione di Business, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili. 
- 3. In the Action pane, click **Edit**. 
- 4. Selezionare o deselezionare **Consenti utilizzo di numeri verdi per partecipare alle riunioni di questo utente**. 
- 5. Fai clic su **Salva**. 
+## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione di numeri verdi per utenti specifici 
+
+**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+
+1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
+
+2. Nella parte superiore della pagina, fare clic su **Modifica**.
+
+3. Fare clic sul menu accanto a **Ponti di conferenza**e quindi fare clic su **Modifica** nell'elenco a discesa.
+
+4. Nel riquadro dei **provider di ponte conferenza** , disattiva **Consenti utilizzo di numeri verdi di ponte per conferenze della propria organizzazione di partecipare alle riunioni di questo utente**. 
+
+5. Fare clic su **si applicano.** 
+
+**Utilizzo di Skype per interfaccia di amministrazione di Business**
+
+1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili. 
+
+2. In the Action pane, click **Edit**. 
+
+3. Deselezionare **Consenti utilizzo di numeri verdi per partecipare alle riunioni di questo utente**. 
  
-## <a name="disabling-toll-free-numbers-for-specific-users-using-powershell"></a>Disattivazione di numeri verdi per utenti specifici utilizzando PowerShell  
+4. Fai clic su **Salva**. 
+ 
+**Utilizzo di PowerShell**  
 
 È possibile utilizzare il parametro AllowTollFreeDialIn del cmdlet Set-CsOnlineDialInConferencingUser per abilitare o disabilitare questo controllo. Ad esempio: 
 

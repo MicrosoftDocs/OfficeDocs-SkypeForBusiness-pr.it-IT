@@ -22,11 +22,11 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: "Informazioni su come visualizzare un elenco di utenti nell'organizzazione abilitati per la conferenza telefonica all'interno di Skype per interfaccia di amministrazione di Business. "
-ms.openlocfilehash: c58a8e2475b1b41e02d0abced47fcc9d076d5f25
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: 4f019a3ffc8b30de0a5d57a882bd2cdcb78f0508
+ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing"></a>Visualizzare un elenco di utenti abilitati per le conferenze Audio
 
@@ -34,11 +34,13 @@ Dopo aver abilitato Skype per utenti Business o Microsoft Teams all'interno dell
   
 ## <a name="viewing-a-list-of-users"></a>Visualizzazione di un elenco di utenti
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+
+- Nel riquadro di spostamento sinistra fare clic su **utenti**.
+
+**Utilizzo di Skype per interfaccia di amministrazione di Business**
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
-    
-3. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **gli utenti**.
+- Nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **gli utenti**.
     
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 
