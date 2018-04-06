@@ -23,11 +23,12 @@ ms.custom:
 - Strat_SB_PSTN
 - LIL_Placement
 description: 'Informazioni su quali Office 365 Callings dei piani (chiamata PSTN) sono, quali aree è disponibile in e a chi rivolgersi per istruzioni dettagliate su come configurarla. '
-ms.openlocfilehash: cc6405662eef6be5a2461147356b2a1a58fccf0f
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+search.appverid: MED150, MOE150
+ms.openlocfilehash: 235000b5b6446d5b622a7abbc1af216d3340b1d0
+ms.sourcegitcommit: cacd16f596460c1400dd514437794afd04bddadc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="what-are-calling-plans-in-office-365"></a>Che cosa sono i piani di chiamata in Office 365?
 
