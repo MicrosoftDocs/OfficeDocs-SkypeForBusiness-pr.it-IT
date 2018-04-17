@@ -1,0 +1,1 @@
+Si sta per aggiorna continuamente modalità di gestione delle funzionalità Skype per le aziende e Microsoft Teams, in modo che i passaggi possono essere leggermente diversi da quella disponibile. Utilizzare il collegamento sotto riportato per confermare se si dispone di commenti e suggerimenti.

@@ -1,5 +1,5 @@
 ---
-title: Abilitare o disabilitare l'invio messaggi di posta elettronica quando le relative impostazioni di modifica
+title: Enable or disable sending emails when their settings change
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,94 +22,81 @@ ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
 description: 'Learn how to enable or disable Skype from sending emails to users when settings such as pin changes or the default conferencing number changes. '
-ms.openlocfilehash: c7582030765db6951c972dc3fa59610aca73417e
-ms.sourcegitcommit: ffca287cf70db2cab14cc1a6cb7cea68317bedd1
+ms.openlocfilehash: 4138ed08ef05cc1947131dab22d5470e52eda6c5
+ms.sourcegitcommit: dea27df69d948b7b9cc017b7023c4013cee8e4d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change"></a>Attivare o disattivare i messaggi di posta elettronica invio quando modificate le impostazioni di conferenze Audio
 
-Gli utenti vengono informati automaticamente tramite posta elettronica quando sono abilitati per le audioconferenze. È possibile che, tuttavia, se si desidera ridurre il numero di messaggi di posta elettronica inviati a Skype per utenti Business e Microsoft Teams. In tal caso, è possibile disabilitare l'invio di posta elettronica.
+Users are automatically notified by email when they are enabled for Audio Conferencing. There may be times, however, when you want to reduce the number of emails that are sent to Skype for Business and Microsoft Teams user. In such cases, you can disable sending email.
   
-Se si disattiva invio messaggi di posta elettronica, messaggi di posta elettronica audioconferenze con accesso esterno non verranno inviate agli utenti, inclusi messaggi di posta elettronica per quando gli utenti sono abilitati o disattivati per le conferenze audio, quando viene reimpostato il proprio PIN e l'ID conferenza e i servizi di conferenza predefinito cambia il numero di telefono .
+If you disable sending emails, Audio Conferencing emails won't be sent to your users, including emails for when users are enabled or disabled for audio conferencing, when their PIN is reset, and when the conference ID and the default conferencing phone number changes.
   
-Di seguito è riportato un esempio di messaggio di posta elettronica inviato agli utenti quando vengono abilitati per le conferenze Audio:
+Here is an example of the email that is sent to users when they are enabled for Audio Conferencing:
   
-![Posta elettronica per conferenze audio](../images/audio-conferencing-user-enabled.png)
+![Audio Conferencing email](../images/audio-conferencing-user-enabled.png)
   
 ## <a name="when-are-emails-being-sent-to-your-users"></a>I messaggi di posta elettronica quando vengono inviati agli utenti?
 
-- Esistono diversi messaggi di posta elettronica inviati a utenti dell'organizzazione dopo che vengono abilitati per le conferenze audio:
+- There are several emails that are sent to users in your organization after they are enabled for audio conferencing:
     
-  - Quando una licenza di **Conferenze Audio** viene assegnata loro.
+  - When an **Audio Conferencing** license is assigned to them.
     
-  - Quando si reimposta manualmente conferenza PIN dell'utente.
+  - When you manually reset the user's audio conferencing PIN.
     
   - Quando reimposti manualmente l'ID conferenza dell'utente.
     
-  - Se la licenza di **Conferenze Audio** viene rimosso da essi.
+  - When the **Audio Conferencing** license is removed from them.
     
-  - Quando viene modificato il provider di servizi di conferenza audio di un utente da Microsoft a un altro provider o **Nessuno**.
+  - When the audio conferencing provider of a user is changed from Microsoft to another provider or **None**.
     
-  - Quando si modifica il provider di servizi di conferenza audio di un utente a Microsoft.
+  - When the audio conferencing provider of a user is changed to Microsoft.
     
-## <a name="enable-or-disable-email-from-being-sent-to-users"></a>Attivare o disattivare la posta elettronica non verrà inviato agli utenti
+## <a name="enable-or-disable-email-from-being-sent-to-users"></a>Enable or disable email from being sent to users
 
-È possibile utilizzare Microsoft Teams, Skype per interfaccia di amministrazione di Business o Windows PowerShell per abilitare o disabilitare la posta elettronica inviato agli utenti.
+You can use Microsoft Teams, the Skype for Business admin center, or Windows PowerShell to enable or disable email sent to users.
 
-**Utilizzo del team di Microsoft e Skype for Business Admin Center**
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
+**Using the Microsoft Teams and Skype for Business Admin Center**
+1. In the left navigation, go to **Meetings** > **Conference Bridges**. 
 
-2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
+2. At the top of the **Conference Bridges** page, click **Bridge Settings**. 
 
-3. Nel riquadro **Impostazioni Bridge** , abilitare o disabilitare **automaticamente inviare messaggi di posta elettronica per gli utenti di modificare le relative impostazioni di connessione**.
+3. In the **Bridge settings** pane, enable or disable **Automatically send emails to users if their dial-in settings change**.
 
-4. Fare clic su **Applica**.
+4. Click **Apply**.
   
-**Utilizzo di Skype per interfaccia di amministrazione di Business**
+**Using the Skype for Business admin center**
     
-1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistra fare clic su **audioconferenze**.
+1. In the **Skype for Business admin center**, in the left navigation, click **Audio conferencing**.
     
-2. Nella pagina **Impostazioni bridge Microsoft** , selezionare o deselezionare **automaticamente inviare messaggi di posta elettronica agli utenti se modificare le impostazioni di conferenza**.
+2. On the **Microsoft bridge settings** page, select or clear the **Automatically send emails to users if their audio conferencing settings change**.
     
 3. Fai clic su **Salva**.
     
     > [!TIP]
-    > È inoltre possibile inviare posta elettronica a un utente con le impostazioni di conferenza audio **all'audioconferenza** > **gli utenti**, selezionare l'utente e fare clic su **Invia informazioni conferenza tramite posta elettronica**.  In questo caso, verrà inviato un messaggio di posta elettronica che include solo ID conferenza e il numero di telefono di conferenza, ma non il PIN.  Per ulteriori informazioni, vedere [inviare un messaggio di posta elettronica a un utente con le loro informazioni di conferenze Audio](send-an-email-to-a-user-with-their-dial-in-information.md) .
+    > You can also send email to a user with the audio conferencing settings by going to **Audio conferencing** > **Users**, selecting the user, and clicking **Send conference info via email**.  If you do this, an email will be sent that only includes conference ID and conference phone number, but not the PIN.  See [Send an email to a user with their Audio Conferencing information](send-an-email-to-a-user-with-their-dial-in-information.md) for more information.
   
-**Utilizzo di Windows PowerShell**
+**Using Windows PowerShell**
   
-- Eseguire il cmdlet seguente per disabilitare l'invio messaggi di posta elettronica: 
+- Run the following to disable sending emails: 
     
   ```
   Set-CsOnlineDialInConferencingTenantSetting -AutomaticallySendEmailsToUsers $false
   ```
 
-    Per assistenza per questo cmdlet, vedere [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=715757).
+    For help with this cmdlet, see [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=715757).
     
 ## <a name="what-else-should-you-know"></a>Quali altre informazioni devi conoscere?
 
-- Quando i messaggi di posta elettronica automatiche sono disabilitate, è possibile attivare ancora manualmente messaggio di posta elettronica con il numero di ID e il telefono di conferenza utilizzando il Skype per interfaccia di amministrazione di Business. Tuttavia, in tal caso, il PIN non sarà incluso. Se si desidera reimpostare il PIN di conferenza audio e l'invio di messaggi di posta elettronica è disattivato, sarà necessario inviarla all'utente in un altro modo.
-    
-- Per impostazione predefinita, il mittente dei messaggi di posta elettronica saranno da Office 365, ma è possibile modificare l'indirizzo di posta elettronica e viene visualizzato il nome tramite Windows PowerShell e inoltre utilizzare il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=715757) .
-    
-    > [!NOTE]
-    >  Se si desidera modificare le informazioni sull'indirizzo di posta elettronica, è necessario assicurarsi che i criteri di posta elettronica in ingresso dell'ambiente di consentano i messaggi di posta elettronica che provengono da personalizzato specificato dall'indirizzo.
-  
-  - Immetti il nome visualizzato nel parametro  _SendEmailFromDisplayName_.
-    
-  - Enter the email display name in the  _SendEmailFromDisplayName_ parameter.
-    
-  - Il parametro _SendEmailOverride_ impostato su _True_.
-    
-  -  `Set-CsOnlineDialInConferencingTenantSetting -SendEmailOverride $true -SendEmailFromAddress amos.marble@contoso.com -SendEmailFromDisplayName "Amos Marble"`
+- When automatic emails are disabled, you can still manually trigger sending an email with the conference ID and phone number using the Skype for Business admin center. However, if you do this, the PIN won't be included. If you want to reset the audio conferencing PIN and sending emails is disabled, you will need to send it to the user in another way.
     
 - L'invio dei messaggi di posta elettronica agli utenti può essere disabilitato tramite l'interfaccia di amministrazione di Skype for Business o Windows PowerShell.
     
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- È possibile utilizzare questi cmdlet per risparmiare tempo o automatizzare questa operazione.
+- You can use these cmdlets to save time or automate this.
     
   - [Get-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=715760)
     
@@ -138,8 +125,8 @@ Di seguito è riportato un esempio di messaggio di posta elettronica inviato agl
   
 ## <a name="related-topics"></a>See also
 
-[Messaggi di posta elettronica inviati agli utenti quando modificano le impostazioni di conferenza Audio](emails-sent-to-users-when-their-settings-change.md)
+[Emails sent to users when their Audio Conferencing settings change](emails-sent-to-users-when-their-settings-change.md)
 
-[Inviare un messaggio di posta elettronica a un utente con le loro informazioni di conferenze Audio](send-an-email-to-a-user-with-their-dial-in-information.md)
+[Send an email to a user with their Audio Conferencing information](send-an-email-to-a-user-with-their-dial-in-information.md)
 
 
