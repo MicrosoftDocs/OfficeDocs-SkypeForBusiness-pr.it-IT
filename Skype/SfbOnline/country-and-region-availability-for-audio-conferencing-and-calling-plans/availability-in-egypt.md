@@ -1,10 +1,9 @@
 ---
-title: "Disponibilità in Egitto"
+title: Disponibilità in Egitto
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: mikedav, jastark, oscarr
-ms.date: 01/22/2018
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
@@ -21,11 +20,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per l'Egitto i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 5ed1349d921c3810032ff95d8e5b0a9cfcfc0807
-ms.sourcegitcommit: ddd923c871b5cd92499cd2bd4ac1f708aeae6467
+ms.openlocfilehash: ff745abe7ce0dca0e99e6e2e1d03ebcc9c00416b
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="availability-in-egypt"></a>Disponibilità in Egitto
 
