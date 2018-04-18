@@ -4,7 +4,6 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: mikedav, roykuntz, jastark
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: d95a727c-8ba0-4e71-a569-aefda5b8908a
 ms.tgt.pltfrm: cloud
@@ -21,33 +20,33 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: 'È possibile ottenere una rapida panoramica di come trasferire i numeri di telefono con un provider di servizi a Skype per le aziende. '
-ms.openlocfilehash: 503c160e11eaab62b815f0f66a13a30546f6dfd6
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: b5720d5740f8ba47ea883678def03d277e0bd97f
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="port-order-overview"></a><span data-ttu-id="e035f-103">Panoramica dell'ordine di porta</span><span class="sxs-lookup"><span data-stu-id="e035f-103">Port order overview</span></span>
+# <a name="port-order-overview"></a><span data-ttu-id="08603-103">Panoramica dell'ordine di porta</span><span class="sxs-lookup"><span data-stu-id="08603-103">Port order overview</span></span>
 
-<span data-ttu-id="e035f-104">Se si dispone di un provider di servizi di telefono o un gestore di telefonia e si dispone già di numeri di telefono per gli utenti, è necessario creare il processo definito un "*ordine porta*" che trasferisce le numero di telefono Skype Business online.</span><span class="sxs-lookup"><span data-stu-id="e035f-104">If you currently have a phone service provider or carrier and already have phone numbers for your users, you will need to create what is called a "*port order*" that transfers those phone number to Skype for Business Online.</span></span> <span data-ttu-id="e035f-105">Dopo averli trasferiti, puoi assegnare i numeri di telefono agli utenti.</span><span class="sxs-lookup"><span data-stu-id="e035f-105">Once the numbers are ported over, you can assign those phone numbers to your users.</span></span>
+<span data-ttu-id="08603-104">Se si dispone di un provider di servizi di telefono o un gestore di telefonia e si dispone già di numeri di telefono per gli utenti, è necessario creare il processo definito un "*ordine porta*" che trasferisce le numero di telefono Skype Business online.</span><span class="sxs-lookup"><span data-stu-id="08603-104">If you currently have a phone service provider or carrier and already have phone numbers for your users, you will need to create what is called a "*port order*" that transfers those phone number to Skype for Business Online.</span></span> <span data-ttu-id="08603-105">Dopo averli trasferiti, puoi assegnare i numeri di telefono agli utenti.</span><span class="sxs-lookup"><span data-stu-id="08603-105">Once the numbers are ported over, you can assign those phone numbers to your users.</span></span>
   
-<span data-ttu-id="e035f-106">Dopo che la porta i numeri di telefono su Skype Business online in Office 365, Microsoft diventerà il provider di servizi ed è possibile disconnettere il servizio è precedente provider di servizi o gestore di telefonia.</span><span class="sxs-lookup"><span data-stu-id="e035f-106">After you port your phone numbers over to Skype for Business Online in Office 365, Microsoft will become your service provider and you can disconnect your service with you old service provider or carrier.</span></span>
+<span data-ttu-id="08603-106">Dopo che la porta i numeri di telefono su Skype Business online in Office 365, Microsoft diventerà il provider di servizi ed è possibile disconnettere il servizio è precedente provider di servizi o gestore di telefonia.</span><span class="sxs-lookup"><span data-stu-id="08603-106">After you port your phone numbers over to Skype for Business Online in Office 365, Microsoft will become your service provider and you can disconnect your service with you old service provider or carrier.</span></span>
   
- <span data-ttu-id="e035f-107">**Per istruzioni dettagliate complete, vedere [trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md).**</span><span class="sxs-lookup"><span data-stu-id="e035f-107">**For complete step-by-step instructions, see [Transfer phone numbers to Office 365](transfer-phone-numbers-to-office-365.md).**</span></span>
+ <span data-ttu-id="08603-107">**Per istruzioni dettagliate complete, vedere [trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md).**</span><span class="sxs-lookup"><span data-stu-id="08603-107">**For complete step-by-step instructions, see [Transfer phone numbers to Office 365](transfer-phone-numbers-to-office-365.md).**</span></span>
 
  > [!NOTE]
-> <span data-ttu-id="e035f-108">Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).</span><span class="sxs-lookup"><span data-stu-id="e035f-108">If you need to get more telephone numbers than this, please [contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)</span></span>
+> <span data-ttu-id="08603-108">Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).</span><span class="sxs-lookup"><span data-stu-id="08603-108">If you need to get more telephone numbers than this, please [contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)</span></span>
   
-## <a name="related-topics"></a><span data-ttu-id="e035f-109">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="e035f-109">Related topics</span></span>
-[<span data-ttu-id="e035f-110">Domande comuni sul trasferimento dei numeri di telefono</span><span class="sxs-lookup"><span data-stu-id="e035f-110">Transferring phone numbers common questions</span></span>](transferring-phone-numbers-common-questions.md)
+## <a name="related-topics"></a><span data-ttu-id="08603-109">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="08603-109">Related topics</span></span>
+[<span data-ttu-id="08603-110">Domande comuni sul trasferimento dei numeri di telefono</span><span class="sxs-lookup"><span data-stu-id="08603-110">Transferring phone numbers common questions</span></span>](transferring-phone-numbers-common-questions.md)
 
-[<span data-ttu-id="e035f-111">Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate</span><span class="sxs-lookup"><span data-stu-id="e035f-111">Different kinds of phone numbers used for Calling Plans</span></span>](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+[<span data-ttu-id="08603-111">Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate</span><span class="sxs-lookup"><span data-stu-id="08603-111">Different kinds of phone numbers used for Calling Plans</span></span>](different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
-[<span data-ttu-id="e035f-112">Gestire i numeri di telefono per la propria organizzazione</span><span class="sxs-lookup"><span data-stu-id="e035f-112">Manage phone numbers for your organization</span></span>](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+[<span data-ttu-id="08603-112">Gestire i numeri di telefono per la propria organizzazione</span><span class="sxs-lookup"><span data-stu-id="08603-112">Manage phone numbers for your organization</span></span>](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-[<span data-ttu-id="e035f-113">Termini e condizioni per le chiamate al numero di emergenza</span><span class="sxs-lookup"><span data-stu-id="e035f-113">Emergency calling terms and conditions</span></span>](emergency-calling-terms-and-conditions.md)
+[<span data-ttu-id="08603-113">Termini e condizioni per le chiamate al numero di emergenza</span><span class="sxs-lookup"><span data-stu-id="08603-113">Emergency calling terms and conditions</span></span>](emergency-calling-terms-and-conditions.md)
 
-[<span data-ttu-id="e035f-114">Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza</span><span class="sxs-lookup"><span data-stu-id="e035f-114">Skype for Business Online: Emergency Calling disclaimer label</span></span>](https://go.microsoft.com/fwlink/?LinkID=692099)
+[<span data-ttu-id="08603-114">Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza</span><span class="sxs-lookup"><span data-stu-id="08603-114">Skype for Business Online: Emergency Calling disclaimer label</span></span>](https://go.microsoft.com/fwlink/?LinkID=692099)
 
   
  
