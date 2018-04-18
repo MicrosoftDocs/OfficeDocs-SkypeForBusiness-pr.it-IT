@@ -1,10 +1,9 @@
 ---
-title: Send an email to a user with their dial-in information
+title: Inviare un messaggio di posta elettronica a un utente con le loro informazioni di accesso esterno
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: oscarr
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: 7440d3e2-1b49-4258-bd2c-79e9072f8c8d
 ms.tgt.pltfrm: cloud
@@ -21,64 +20,64 @@ f1keywords: None
 ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
-description: Send your users an email with their audio conferencing information.
-ms.openlocfilehash: f1e4ddd06011d7eb85253e06d6b7de775a207683
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+description: Inviare agli utenti un messaggio di posta elettronica con le loro informazioni di audioconferenza.
+ms.openlocfilehash: 23eb461d84395672f97fc4ff97c4c0ded7aa92e2
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="send-an-email-to-a-user-with-their-audio-conferencing-information"></a>Inviare un messaggio di posta elettronica a un utente con le informazioni di conferenze Audio
 
-Sometimes Skype for Business or Microsoft Teams users may need you to send them their Audio Conferencing information. You can do this by using the **Skype for Business admin center** and clicking **Send conference info via email** under the properties for a user. When you send this email, it will contain all of the audio conferencing information, including:
+In alcuni casi potrebbe essere necessario Skype per utenti Business o Teams Microsoft è possibile inviare loro le informazioni di conferenze Audio. È possibile farlo utilizzando **Skype per interfaccia di amministrazione di Business** e fare clic su **Invia informazioni conferenza tramite posta elettronica** nelle proprietà di un utente. Quando si invia il messaggio di posta elettronica, contiene tutte le informazioni di audioconferenza, tra cui:
   
 - Il numero di telefono per le conferenze o per l'accesso esterno dell'utente.
     
 - L'ID conferenza dell'utente.
     
     > [!NOTE]
-    > Static IDs are used when people in your organization don't want to remember a random number; they can select a certain number or use one that's easy to remember. When dynamic conference IDs are used, each meeting that a user schedules will get assigned a unique conference ID. If you want to assign dynamic rather than static conference IDs, [go here](using-audio-conferencing-dynamic-ids-in-your-organization.md). 
+    > ID statico vengono utilizzati quando gli utenti dell'organizzazione non desiderano Memorizza numero casuale; possono selezionare un determinato numero o utilizzare una facile da ricordare. Quando vengono utilizzati gli ID conferenza dinamico, ogni riunione pianificazioni un utente verranno ottenere assegnato un ID conferenza univoco. Se si desidera assegnare dinamico anziché gli ID, [fare clic qui](using-audio-conferencing-dynamic-ids-in-your-organization.md)di conferenza statico. 
   
-Here is an example of the email that is sent:
+Di seguito è riportato un esempio di messaggio di posta elettronica inviati:
   
 ![Posta elettronica di conferenza telefonica con accesso esterno](../images/audio-conferencing-info.png)
   
-## <a name="send-an-email-with-audio-conferencing-information-to-a-user"></a>Send an email with audio conferencing information to a user
+## <a name="send-an-email-with-audio-conferencing-information-to-a-user"></a>Inviare un messaggio di posta elettronica con informazioni di audioconferenza a un utente
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Go to the **Office 365 admin center** > **Skype for Business**, and in the left navigation, click **Audio conferencing**.
+2. Vai al **Centro di amministrazione di Office 365** > **Skype per le aziende**e nel riquadro di spostamento sinistra fare clic su **servizi di conferenza Audio**.
     
-3. Click **Users**, and then select the user.
+3. Fare clic su **utenti**e quindi selezionare l'utente.
     
 4. Nel riquadro Azioni fai clic su **Invia informazioni sulla conferenza tramite posta elettronica**.
     
 > [!TIP]
-> You can also send email to the user with the audio conferencing settings by editing the user's properties and then clicking **Audio conferencing** > **Send conference info via email**. 
+> È inoltre possibile inviare posta elettronica all'utente con le impostazioni di conferenza audio per la modifica delle proprietà dell'utente e quindi fare clic su **servizi di conferenza Audio** > **inviare informazioni conferenza tramite posta elettronica**. 
   
 ## <a name="what-else-should-you-know-about-this-email"></a>Cos'altro occorre sapere su questo messaggio di posta elettronica?
 
-- There are several emails that are sent to users in your organization after they are enabled for audio conferencing:
+- Esistono diversi messaggi di posta elettronica inviati a utenti dell'organizzazione dopo che vengono abilitati per le conferenze audio:
     
-  - When an **Audio Conferencing** license is assigned to them.
+  - Quando una licenza di **Conferenze Audio** viene assegnata loro.
     
-  - When you manually reset the user's audio conferencing PIN.
+  - Quando si reimposta manualmente conferenza PIN dell'utente.
     
   - Quando reimposti manualmente l'ID conferenza dell'utente.
     
-  - When an **Audio Conferencing** license is removed from them.
+  - Quando una licenza di **Audioconferenza** è stata rimossa da essi.
     
-  - When the audio conferencing provider for a user is changed from Microsoft to another provider or **None**.
+  - Quando viene modificato il provider di servizi di conferenza audio di un utente da Microsoft a un altro provider o **Nessuno**.
     
-  - When the audio conferencing provider for a user is changed to Microsoft.
+  - Quando si modifica il provider di servizi di conferenza audio di un utente a Microsoft.
     
-- By default, the sender of the emails will be from Office 365, but you can change the email address and display name by using Windows PowerShell and the [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=708983) cmdlet. To make changes to the email address that is sending the email to users, you must:
+- Per impostazione predefinita, il mittente dei messaggi di posta elettronica saranno da Office 365, ma è possibile modificare l'indirizzo di posta elettronica e viene visualizzato il nome utilizzando Windows PowerShell e il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=708983) . Per apportare modifiche all'indirizzo di posta elettronica che invia messaggio di posta elettronica agli utenti, è necessario:
     
-  - Enter the email address in the SendEmailFromAddress parameter.
+  - Immettere l'indirizzo di posta elettronica nel parametro SendEmailFromAddress.
     
-  - Set the SendEmailOverride parameter to True.
+  - Impostare il parametro SendEmailOverride su True.
     
-  - Enter the email display name in the SendEmailFromDisplayName parameter.
+  - Immettere il nome visualizzato posta elettronica nel parametro SendEmailFromDisplayName.
     
      `Set-CsOnlineDialInConferencingTenantSetting -SendEmailOverride $true -SendEmailFromAddress amos.marble@contoso.com -SendEmailFromDisplayName "Amos Marble"`
     
@@ -89,7 +88,7 @@ Here is an example of the email that is sent:
 
 - Per renderle automatiche o per risparmiare tempo, puoi utilizzare il cmdlet [Set-CsOnlineDialInConferencingUser](https://go.microsoft.com/fwlink/?LinkId=617688 ).
     
-    To send an email to the user with their audio conferencing information, run the following:
+    Per inviare un messaggio di posta elettronica all'utente con le loro informazioni di audioconferenze con accesso esterno, eseguire le operazioni seguenti:
     
   ```
   Set-CsOnlineDialInConferencingUser -id amos.marble@contoso.com  -SendEmail

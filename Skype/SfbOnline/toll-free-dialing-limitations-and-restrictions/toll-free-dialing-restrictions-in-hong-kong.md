@@ -4,7 +4,6 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: mikedav, oscarr
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: 999aa4b0-6084-4fbe-83c9-eed030bf9560
 ms.tgt.pltfrm: cloud
@@ -20,11 +19,11 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Ciò consentirà di scoprire come per comporre i numeri gratuito a pagamento in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verranno visualizzate a una pagina specifica contenente informazioni specifiche, restrizioni e limiti per la disponibilità dei servizi verdi dove il numero verde è disponibile. Il formato di composizione e i formati verranno visualizzato i codice di accesso necessarie all'interno di ogni paese/area geografica comporre il numero verde.
-ms.openlocfilehash: bacc4013b1152fe5107fecbcf6059aba729bd7d9
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: 772cfc7cb371c23279a2a207b1ce861027b0ace1
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="toll-free-dialing-restrictions-in-hong-kong"></a>Restrizioni di composizione verdi Hong Kong
 

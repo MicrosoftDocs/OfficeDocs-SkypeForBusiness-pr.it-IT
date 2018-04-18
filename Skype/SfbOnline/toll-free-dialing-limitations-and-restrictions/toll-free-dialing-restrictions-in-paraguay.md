@@ -4,7 +4,6 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: mikedav, oscarr
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: 167a9d99-4df8-416a-a709-d76e101ae2fb
 ms.tgt.pltfrm: cloud
@@ -20,11 +19,11 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Ciò consentirà di scoprire come per comporre i numeri gratuito a pagamento in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verranno visualizzate a una pagina specifica contenente informazioni specifiche, restrizioni e limiti per la disponibilità dei servizi verdi dove il numero verde è disponibile. Il formato di composizione e i formati verranno visualizzato i codice di accesso necessarie all'interno di ogni paese/area geografica comporre il numero verde.
-ms.openlocfilehash: 99a0cf85b11b31ea3184ff27dcf3aca55e89443d
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: f50908a491a58ae620a01bd58e1d8bb1c1526cff
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="toll-free-dialing-restrictions-in-paraguay"></a>Restrizioni per comporre il numero verde Paraguay
 

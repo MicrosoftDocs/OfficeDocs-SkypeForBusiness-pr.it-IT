@@ -4,7 +4,6 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: mpottier, dougand
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: 413acb29-ad83-4393-9402-51d88e7561ab
 ms.tgt.pltfrm: cloud
@@ -19,11 +18,11 @@ f1keywords: None
 ms.custom:
 - Optimization
 description: Questo articolo illustra i principi di base del flusso delle chiamate per Skype for Business online ed ExpressRoute, e fornisce alcuni esempi dettagliati di flussi delle chiamate per una maggiore comprensione e per eseguire una corretta programmazione.
-ms.openlocfilehash: 220a23a5a43b281790422c39908e7a0ea32c03b4
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: f74ea2376ed790e960b0b7a7cee00c05486ed11e
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="call-flow-using-expressroute"></a>Flusso delle chiamate con ExpressRoute
 

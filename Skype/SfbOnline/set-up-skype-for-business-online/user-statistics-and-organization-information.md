@@ -3,7 +3,6 @@ title: Statistiche sugli utenti e informazioni sull'organizzazione
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: 3e55c5a2-baad-4573-9ad9-37d0c42dcb53
 ms.tgt.pltfrm: cloud
@@ -20,11 +19,11 @@ f1keywords:
 ms.custom:
 - Setup
 description: Scopri quali statistiche degli utenti di Skype for Business sono disponibili, ad esempio il numero di utenti abilitati, gli utenti con accesso alle conferenze o gli utenti abilitati per Office 365.
-ms.openlocfilehash: 29fe9f5aad88e7eb394d09316d5c37c4d6531687
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: 77fc0bbabb419ea43afa98ee9ab70c2c7d5404fd
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="user-statistics-and-organization-information"></a>Statistiche sugli utenti e informazioni sull'organizzazione
 

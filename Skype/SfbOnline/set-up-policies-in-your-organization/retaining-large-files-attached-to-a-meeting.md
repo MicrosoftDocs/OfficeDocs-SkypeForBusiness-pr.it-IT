@@ -4,7 +4,6 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: brendonb, markjjo
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: 12203a1a-4a9f-4838-88c5-3740ea16ed8d
 ms.tgt.pltfrm: cloud
@@ -18,11 +17,11 @@ f1keywords: None
 ms.custom:
 - Setup
 description: È possibile allegare file a un Skype per le riunioni aziendali, quali i partecipanti possono quindi aperta e download. File allegati a Skype per le riunioni aziendali vengono mantenuti nelle cassette postali di qualsiasi partecipante la cui cassetta postale viene messa in attesa di conservazione per controversia, è applicato un criterio di conservazione Office 365 o viene messa in attesa associata a un caso eDiscovery in Office 365 Security &amp; Centro conformità. Tale contenuto viene salvato nelle cassette postali di cartelle degli elementi recuperabili dei partecipanti.
-ms.openlocfilehash: c2f032a34cc5de604bb5437554add885c29645a0
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: ddd4742b3e30ed09a7e538d40712577ab26edfda
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="retaining-large-files-attached-to-a-skype-for-business-meeting"></a>Conservazione dei file di grandi dimensioni collegati a un Skype per le riunioni aziendali
 

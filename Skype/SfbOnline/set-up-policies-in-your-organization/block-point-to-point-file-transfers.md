@@ -3,7 +3,6 @@ title: Trasferimenti di file bloccati Point-to-
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: 9adf9859-de5b-461e-92ea-b6ce4dd2f7c1
 ms.tgt.pltfrm: cloud
@@ -17,11 +16,11 @@ f1keywords: None
 ms.custom:
 - Setup
 description: In Skype Business online, è necessario possibilità di controllare i trasferimenti di file da punto a punto (P2P) come parte di impostazioni di criteri di conferenza esistente. Tuttavia, in questo modo o blocchi file trasferimenti per gli utenti sono o meno sono trasferimento di file a un utente che si trova all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguire la procedura riportata di seguito, è possibile bloccare i trasferimenti di file P2P con organizzazioni federate o partner.
-ms.openlocfilehash: 8e3fd112d46a88752b0d6d19cf2e1fbb1787df32
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: e73a2baa8368d3ed1c20a79e8f78010749c05fb2
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="block-point-to-point-file-transfers"></a>Trasferimenti di file bloccati Point-to-
 

@@ -4,7 +4,6 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: mikedav, roykuntz, jastark
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: 93098bc5-df63-4a1f-8734-0b72a6280a69
 ms.tgt.pltfrm: cloud
@@ -22,11 +21,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Informazioni su come visualizzare un elenco di tutti i numeri di telefono dell'organizzazione, tutti i numeri assegnati agli utenti e tutti i numeri assegnati per gli utenti vocali da Skype per interfaccia di amministrazione di Business.
-ms.openlocfilehash: c58932544e64041eb93404a3f9477a8ca953bafb
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: 459001a410b7b3eeadb223cbdbd5d98d2f868fdf
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="see-a-list-of-phone-numbers-in-your-organization"></a>Visualizzare un elenco di numeri di telefono all'interno dell'organizzazione
 

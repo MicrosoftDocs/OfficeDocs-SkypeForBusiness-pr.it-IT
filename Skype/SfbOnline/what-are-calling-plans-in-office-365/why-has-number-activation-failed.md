@@ -1,10 +1,9 @@
 ---
-title: Perché non riuscita numero attivazione?
+title: Why has number activation failed?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: mikedav, roykuntz, jastark
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: c4e54d00-e096-474c-a457-56e785439ff6
 ms.tgt.pltfrm: cloud
@@ -21,14 +20,14 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: 0da05c5cdcc3c0c28d92d44d7433ec1a1abcabce
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: eca7d50bdc33c12f6cea11f1d37e054516891aae
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="why-has-number-activation-failed"></a>Perché non riuscita numero attivazione?
-La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Se per qualche motivo un numero di telefono non è attivato per la convalida dell'indirizzo, è necessario creare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
+# <a name="why-has-number-activation-failed"></a>Why has number activation failed?
+La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. If for some reason a phone number isn't activated because of address validation, you will need to create a service request. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
   
 ## <a name="for-organizations-150-or-less-follow-these-steps"></a>Per le organizzazioni da 150 persone o meno segui questi passaggi
 1. Nell'**interfaccia di amministrazione di Office 365**, scegli **Serve aiuto**?

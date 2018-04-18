@@ -3,7 +3,6 @@ title: Impostare i criteri per dispositivi mobili per l'organizzazione
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: beea47b2-7b9a-4b28-92d0-af65d80cd00f
 ms.tgt.pltfrm: cloud
@@ -17,11 +16,11 @@ f1keywords: None
 ms.custom:
 - Setup
 description: È possibile impostare come cui gli utenti possono connettersi Skype, Business online utilizzando il Skype per app Business nei dispositivi mobili, ad esempio una caratteristica che consente agli utenti di effettuare e ricevere chiamate telefoniche sul telefono cellulare utilizzando il numero di telefono dell'ufficio anziché il numero di cellulare numero. I criteri di mobilità possono essere utilizzati anche per richiedere la presenza di connessioni Wi-Fi quando si effettuano o ricevono chiamate.
-ms.openlocfilehash: f3fa8b2974406827494ea8ceb759b23d01817825
-ms.sourcegitcommit: 627d3108e3e2f232e911162d9d2db9558e8ead0c
+ms.openlocfilehash: cbd981285f6c4dfacf09597b2bd8e687ba124ad8
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="set-up-mobile-policies-for-your-organization"></a>Impostare i criteri per dispositivi mobili per l'organizzazione
 

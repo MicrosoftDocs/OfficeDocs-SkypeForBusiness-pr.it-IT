@@ -4,7 +4,6 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: mikedav, oscarr
-ms.date: 01/22/2018
 ms.topic: article
 ms.assetid: b13e5e40-b4fe-4386-aa9b-538dbaf4d963
 ms.tgt.pltfrm: cloud
@@ -20,11 +19,11 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Ciò consentirà di scoprire come per comporre i numeri gratuito a pagamento in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verranno visualizzate a una pagina specifica contenente informazioni specifiche, restrizioni e limiti per la disponibilità dei servizi verdi dove il numero verde è disponibile. Il formato di composizione e i formati verranno visualizzato i codice di accesso necessarie all'interno di ogni paese/area geografica comporre il numero verde.
-ms.openlocfilehash: ac540ddc846090d6c00f0a26d4a88386a0af299c
-ms.sourcegitcommit: dea27df69d948b7b9cc017b7023c4013cee8e4d1
+ms.openlocfilehash: 70b1c1567cf1b64ccf4cc78b70ef0b0eecd1f0c7
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="toll-free-dialing-restrictions-in-columbia"></a>Restrizioni per comporre il numero verde Colombia
 

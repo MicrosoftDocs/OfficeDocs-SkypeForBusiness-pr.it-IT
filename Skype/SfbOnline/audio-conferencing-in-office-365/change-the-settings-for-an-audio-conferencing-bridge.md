@@ -1,10 +1,9 @@
 ---
-title: Change the settings for an Audio Conferencing bridge
+title: Modificare le impostazioni per un ponte per conferenze Audio
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: oscarr
-ms.date: 04/03/2018
 ms.topic: article
 ms.assetid: 783fad3f-b77c-422b-b91f-7c8b0af324fb
 ms.tgt.pltfrm: cloud
@@ -21,70 +20,70 @@ f1keywords: None
 ms.custom:
 - Strat_SB_PSTN
 - Audio Conferencing
-description: "Get the steps you need to change settings for a conferencing bridge that's used to prompt callers and gather names and pins for meeting organizers when they're not using Skype for Business or Microsoft Teams apps. "
-ms.openlocfilehash: 727392bc81bce2fb3cfd84029e6a275e1eed3e24
-ms.sourcegitcommit: dea27df69d948b7b9cc017b7023c4013cee8e4d1
+description: 'È possibile ottenere la procedura che è necessario modificare le impostazioni per un ponte per conferenze che consente di richiedere i chiamanti e raccogliere i nomi e i pin per gli organizzatori delle riunioni quando non sono in uso Skype per le applicazioni aziendali o Microsoft Teams. '
+ms.openlocfilehash: 1ab6f5f82d8282f9062439f875ea15d2ab6d7fd5
+ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Change the settings for an Audio Conferencing bridge
+# <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un ponte per conferenze Audio
 
-When you are setting up Audio Conferencing in Office 365, you will receive phone numbers for your users from what is called an audio conferencing bridge. A conferencing bridge can contain one or more phone numbers. These phone numbers are used when callers dial in to a meeting. The phone number is included at the bottom of the Skype for Business or Microsoft Teams meeting invite.
+Quando impostano audioconferenze con accesso esterno in Office 365, si riceverà i numeri di telefono per gli utenti da quello che viene definito un ponte per conferenze audio. Un ponte per conferenze può contenere uno o più numeri di telefono. Questi numeri di telefono vengono utilizzati quando i chiamanti effettua la chiamata a una riunione. Il numero di telefono è incluso nella parte inferiore della Skype di invito alla riunione Business o Microsoft Teams.
   
-The conferencing bridge answers a call and prompts the caller with voice prompts using a meeting auto attendant, and then, depending on your settings, it can play notifications, ask callers to record their name, and control the PIN settings. PINs are given to meeting organizers to allow them to start a meeting when they are aren't using a Skype for Business or Microsoft Teams app.
+Bridging risponde a una chiamata e viene richiesto il chiamante con istruzioni vocali utilizzando un automatico riunione attendant e quindi, a seconda delle impostazioni riprodurre le notifiche, chiedere ai chiamanti di registrare il proprio nome e controllare le impostazioni del PIN. PIN assegnate agli organizzatori della riunione per consentire il per avviare una riunione quando si trovano non sono tramite un Skype per applicazioni aziendali o Microsoft Teams.
 
   > [!IMPORTANT]
-  > A PIN is only required for the meeting organizer when a Skype for Business or Microsoft Teams app user hasn't already started the meeting. If everyone is dialing in to the meeting, the PIN is required for the meeting organizer to start the meeting. 
+  > Un PIN è solo necessario per l'organizzatore della riunione quando Skype per utente app aziendali o Teams Microsoft non ha già avviato la riunione. Se tutti gli utenti è accedono alla riunione, il PIN è obbligatorio per l'organizzatore della riunione avviare la riunione. 
 
 > [!CAUTION]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
-## <a name="using-the-microsoft-teams-and-skype-for-business-admin-center"></a>Using the Microsoft Teams and Skype for Business Admin Center
+## <a name="using-the-microsoft-teams-and-skype-for-business-admin-center"></a>Utilizzo del team di Microsoft e Skype for Business Admin Center
 
-1. In the left navigation, go to **Meetings** > **Conference bridges**. 
+1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
 
-2. At the top of the **Conference bridges** page, click **Bridge settings**. 
+2. Nella parte superiore della pagina **ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
 
-3. In the **Bridge settings** pane, select: 
-  - **Meeting entry and exit notifications** If you turn this off, users who have already joined the meeting won't be notified when someone enters or leaves the meeting.
+3. Nel riquadro **Impostazioni Bridge** selezionare: 
+  - **Voce della riunione e chiudere le notifiche** Se si disattiva questa opzione, gli utenti che già sono uniti alla riunione non vengono informati quando un utente si unisce o abbandona la riunione.
     
-    When you turn on **Meeting entry and exit notifications**, you can select these options:
+    Quando si attiva **le notifiche di entrata e uscita delle riunioni**, è possibile selezionare queste opzioni:
     
-  - **Names or phone numbers** When users dial in to a meeting, their phone number will be played when they join it.
+  - **I nomi o numeri di telefono** Quando gli utenti accedono a una riunione, il numero di telefono verrà riprodotto quando partecipano a.
     
-  - **Tones** When users dial in to a meeting, an audio tone will be played when they join it.
+  - **Toni** Quando gli utenti accedono a una riunione, un tono di audio da riprodurre quando partecipano a.
       
-  - **Ask callers to record their name before joining the meeting** If you turn this off, callers won't be asked to record their name before they join a meeting.
+  - **Chiamanti ASK per registrare il proprio nome prima di partecipare alla riunione** Se si disattiva questa opzione, i chiamanti non verranno richiesto di registrare il proprio nome prima che partecipano a una riunione.
 
-4. To set the PIN length for meetings, select the number of digits you want for the PIN in the **PIN length** list.
+4. Per impostare la lunghezza del PIN per le riunioni, selezionare il numero di cifre che si desidera utilizzare per il PIN nell'elenco **lunghezza del PIN** .
 
-5. To specify whether to send email to your users, enable or disable **Automatically send emails to users if their audio conferencing configuration changes**.
-    See [Emails automatically sent to users when their Audio Conferencing settings change](emails-sent-to-users-when-their-settings-change.md) for more information.
+5. Per specificare se inviare posta elettronica per gli utenti, abilitare o disabilitare **l'invio automatico di messaggi di posta elettronica agli utenti se viene modificata la relativa configurazione di audioconferenze con accesso esterno**.
+    Per ulteriori informazioni, vedere [messaggi di posta elettronica inviato automaticamente agli utenti quando modificano le impostazioni di conferenza Audio](emails-sent-to-users-when-their-settings-change.md) .
  
-6. Click **Apply**. 
+6. Fare clic su **Applica**. 
 
-## <a name="using-skype-for-business-admin-center"></a>Using Skype for Business admin center
+## <a name="using-skype-for-business-admin-center"></a>Utilizzo di Skype per interfaccia di amministrazione di Business
 
- **Set up the meeting experience when callers join a meeting**
+ **Configurare l'esperienza di riunione quando i chiamanti di partecipare a una riunione**
     
-1. In the **Skype for Business admin center**, in the left navigation go to **Audio conferencing** > **Microsoft bridge settings**.
+1. In **Skype per interfaccia di amministrazione di Business**, nel riquadro sinistro passare a **conferenze Audio** > **Impostazioni bridge di Microsoft**.
     
-2. On the **Microsoft bridge settings** page, under **Meeting join experience**, select:
+2. Nella pagina **impostazioni di bridge di Microsoft** , in **esperienza di partecipazione alle riunioni**, selezionare:
     
-  - **Enable meeting entry and exit notifications to be turned on** This is selected by default. If you clear the check box, users who have already joined the meeting won't be notified when someone enters or leaves the meeting.
+  - **Enable meeting entry and exit notifications to be turned on** This is selected by default. Se si deseleziona la casella di controllo, gli utenti che già sono uniti alla riunione non vengono informati quando un utente si unisce o abbandona la riunione.
     
-    When you select **Enable meeting entry and exit notifications to be turned on**, you can select these options from the **Entry/exit announcement type** list:
+    Quando si seleziona **Abilita voce relativa alla riunione e uscire da attivare le notifiche**, è possibile selezionare le opzioni nell'elenco **tipo di annunci di entrata/uscita** :
     
-  - **Names or phone numbers** When users dial in to a meeting, their phone number will be played when they join it.
+  - **I nomi o numeri di telefono** Quando gli utenti accedono a una riunione, il numero di telefono verrà riprodotto quando partecipano a.
     
-  - **Tones** When users dial in to a meeting, an audio tone will be played when they join it.
+  - **Toni** Quando gli utenti accedono a una riunione, un tono di audio da riprodurre quando partecipano a.
   
-  - **Ask callers to record their name before joining the meeting** This is selected by default. If you clear the check box, callers won't be asked to record their name before they join a meeting.
+  - **Chiamanti ASK per registrare il proprio nome prima di partecipare alla riunione** Questa opzione è selezionata per impostazione predefinita. Se si deseleziona la casella di controllo, i chiamanti non verranno richiesto di registrare il proprio nome prima che partecipano a una riunione.
     
 3. Vedi **Modificare le impostazioni per un bridge per audioconferenza**.
     
-**Set the PIN length for meetings**
+**Impostare la lunghezza del PIN per le riunioni**
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -92,12 +91,12 @@ The conferencing bridge answers a call and prompts the caller with voice prompts
     
 3. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     
-4. On the **Microsoft bridge settings** page, under **Security**, enter the number of digits you want for the PIN in the **PIN length** list, and then click **Save**.
+4. Nella sezione **protezione**della pagina **impostazioni di ponte Microsoft** immettere il numero di cifre che si desidera utilizzare per il PIN nell'elenco **lunghezza del PIN** e quindi fare clic su **Salva**.
     
     > [!IMPORTANT]
-    > The PIN must be between 4 and 12 digits. 
+    > Il codice PIN deve essere compreso tra 4 e 12 cifre. 
   
-**Select whether to send email to your users**
+**Selezionare questa opzione per inviare la posta elettronica per gli utenti**
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -105,13 +104,13 @@ The conferencing bridge answers a call and prompts the caller with voice prompts
     
 3. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     
-4. On the **Microsoft bridge settings** page, select or clear **Automatically send emails to users if their dial-in information changes**, and then click **Save**.
+4. Nella pagina **impostazioni di ponte Microsoft** selezionare o deselezionare **automaticamente inviare messaggi di posta elettronica agli utenti se cambiano le informazioni di accesso esterno**e quindi fare clic su **Salva**.
     
-    See [Emails automatically sent to users when their Audio Conferencing settings change](emails-sent-to-users-when-their-settings-change.md) for more information.
+    Per ulteriori informazioni, vedere [messaggi di posta elettronica inviato automaticamente agli utenti quando modificano le impostazioni di conferenza Audio](emails-sent-to-users-when-their-settings-change.md) .
     
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- To save time or automate this process, you can use the [Set-CsDialinConferencingBridge](https://go.microsoft.com/fwlink/?LinkId=617686 ) cmdlet.
+- Per risparmiare tempo o automatizzare il processo, è possibile utilizzare il cmdlet [Set-CsDialinConferencingBridge](https://go.microsoft.com/fwlink/?LinkId=617686 ) .
     
 - Windows PowerShell riguarda la gestione degli utenti e le azioni che sono autorizzati o meno a eseguire. Con Windows PowerShell puoi gestire Office 365 tramite un unico punto di amministrazione, che ti agevola il lavoro quotidiano quando hai molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedi i seguenti argomenti:
     
