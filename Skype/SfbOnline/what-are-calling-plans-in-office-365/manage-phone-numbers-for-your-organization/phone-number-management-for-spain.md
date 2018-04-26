@@ -21,11 +21,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Spagna per Skype for Business online e Microsoft Teams.
-ms.openlocfilehash: b1ee44f7135466a416bf9a8a011d9e3f543a0ed3
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 25b989195a7510d8efb2bd2476c30654bb5c23ef
+ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="phone-number-management-for-spain"></a>Gestione dei numeri di telefono per la Spagna
 
@@ -46,9 +46,9 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md)
 
-[Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](../../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
   
  

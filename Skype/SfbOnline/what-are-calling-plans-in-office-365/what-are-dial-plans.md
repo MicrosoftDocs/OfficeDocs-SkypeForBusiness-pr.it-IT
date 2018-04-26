@@ -1,5 +1,5 @@
 ---
-title: What are dial plans?
+title: Che cosa sono i dial plan?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,29 +20,29 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
-description: 'Learn what type of dial calling plans (PSTN Calling dial plans) are available with Office 365 and how to choose one for your organization.  '
+description: "Informazioni su come scegliere un modello per l'organizzazione e il tipo di dial plan (chiamata PSTN dial plan) la chiamata sono disponibili con Office 365.  "
 search.appverid:
 - MED150
 - MOE150
-ms.openlocfilehash: c24727dec0a9d938b3b0e40ef6f47501944e70e1
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 1ddf0203b2fb2c0d03d9607e96086972cf18304d
+ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="what-are-dial-plans"></a>What are dial plans?
+# <a name="what-are-dial-plans"></a>Che cosa sono i dial plan?
 
 [] Un piano di chiamata è un insieme denominato di regole di normalizzazione che traducono i numeri di telefono composti da un singolo utente in un formato alternativo (in genere E.164) per l'autorizzazione delle chiamate e l'instradamento delle chiamate.
   
-A dial plan consists of one or more normalization rules that define how phone numbers expressed in various formats are translated to an alternate format. The same dial string may be interpreted and translated differently in different dial plans, so depending on which dial plan is assigned to a given user, the same dialed number may be translated and routed differently.
+Un dial plan è costituita da uno o più regole di normalizzazione che definiscono la modalità di conversione dei numeri di telefono espressi in formati diversi per un formato alternativo. La stessa stringa di connessione può essere interpretata e convertita in modo diverso nel dial plan differenti, in modo che in base al quale plan di messaggistica unificata è assegnato a un determinato utente, lo stesso composto numero può essere convertito e inviato in modo diverso.
   
-See [Create and manage dial plans](create-and-manage-dial-plans.md) to create and manage tenant dial plans.
+Vedere [creare e gestire i dial plan](create-and-manage-dial-plans.md) per creare e gestire i tenant dial plan.
   
 ## <a name="tenant-dial-plan-scope"></a>Ambito tenant del piano di chiamata
 
-L'ambito di un piano di chiamata determina il livello gerarchico in cui il piano di chiamata può essere applicato. The scopes are different than in a Skype for Business Server 2015 on-premises deployment. I clienti ottengono il piano di chiamata appropriato attraverso le impostazioni di provisioning che vengono fornite automaticamente quando gli utenti accedono a Skype for Business online. Come amministratore, puoi gestire e assegnare i livelli di ambito del piano di chiamata utilizzando PowerShell da remoto.
+L'ambito di un piano di chiamata determina il livello gerarchico in cui il piano di chiamata può essere applicato. Gli ambiti sono diversi da quella in Skype per Business Server 2015 distribuzione locale. I clienti ottengono il piano di chiamata appropriato attraverso le impostazioni di provisioning che vengono fornite automaticamente quando gli utenti accedono a Skype for Business online. Come amministratore, puoi gestire e assegnare i livelli di ambito del piano di chiamata utilizzando PowerShell da remoto.
   
-In Skype for Business Online, there are two types of dial plans - service scoped and tenant (which is for your organization) scoped. A service scoped dial plan is defined for every country/region where the Office 365 Phone System is available. Each user is automatically assigned the service country dial plan that matches the Office 365 Usage Location assigned to the user. You can't change the service country dial plan, but you can create tenant scoped dial plans, which augment the service country dial plan. As clients are provisioned, they obtain an "effective dial plan," which is a combination of the service country dial plan and the appropriately scoped tenant dial plan. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
+In Skype Business online, esistono due tipi di plan di messaggistica unificata-tenant, ovvero per l'organizzazione, l'ambito e nell'ambito del servizio. Un dial plan con ambito servizio è definito per ogni paese/area geografica in cui è disponibile il sistema telefonico di Office 365. Ogni utente viene automaticamente assegnato il dial plan paese servizio che genera una corrispondenza per il percorso di utilizzo Office 365 assegnati all'utente. Non è possibile modificare il dial plan paese servizio, ma è possibile creare i dial plan tenant con ambito, quale aggiungere il dial plan paese servizio. Come i client sono predisposti, ottengono un "efficace dial plan," che corrisponde a una combinazione di servizio paese dial plan e il dial plan tenant con ambito in modo appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
   
 I piani di chiamata tenant si possono suddividere ulteriormente in due ambiti: l'ambito tenant e l'ambito utente. Se un tenant definisce e assegna un piano di chiamata con ambito utente, quell'utente riceverà in provisioning un piano di chiamata effettivo costituito dal piano di chiamata di servizio del Paese dell'utente e dal piano di chiamata assegnato all'utente. Se un tenant definisce un piano di chiamata con ambito tenant ma non assegna un piano di chiamata con ambito utente, quell'utente riceverà in provisioning un piano di chiamata effettivo costituito dal piano di chiamata di servizio del Paese e dal piano di chiamata tenant.
   
@@ -52,27 +52,27 @@ Quello che segue è il modello di ereditarietà dei piani di chiamata in Skype f
   
 Di seguito sono riportati i possibili piani di chiamata effettivi.
   
- **Service Country** If no tenant scoped dial plan is defined and no tenant user scoped dial plan is assigned to the provisioned user, the user will receive an effective dial plan mapped to the service country associated with their Office 365 Usage Location.
+ **Paese del servizio** Se non è definito alcun dial plan tenant con ambito e alcun dial plan con ambito utente tenant non vengono assegnati all'utente fornita, l'utente riceverà un efficace dial plan mappati nel paese di servizio associato relativo percorso di utilizzo di Office 365.
   
- **Tenant Global - Service Country** If a tenant user dial plan is defined but not assigned to a user, the provisioned user will receive an effective dial plan consisting of a merged tenant dial plan and the service country dial plan associated with their Office 365 Usage Location.
+ **Tenant globale - servizio paese** Se un dial plan utente tenant è definito ma non assegnati a un utente, l'utente fornita riceverà un'efficace plan di messaggistica unificata composta da un dial plan tenant unito e il servizio paese dial plan associato relativo percorso di utilizzo di Office 365.
   
- **Tenant User - Service Country** If a tenant user dial plan is defined and assigned to a user, the provisioned user will receive an effective dial plan consisting of the merged tenant user dial plan and the service country dial plan associated with their Office 365 Usage Location.
+ **Utente tenant - servizio paese** Se un dial plan utente tenant viene definito e assegnato a un utente, l'utente fornita riceverà un'efficace plan di messaggistica unificata costituito dal dial plan utente tenant unito e il servizio paese dial plan associato relativo percorso di utilizzo di Office 365.
   
-See [Create and manage dial plans](create-and-manage-dial-plans.md) to create your tenant dial plans.
+Vedere [creare e gestire i dial plan](create-and-manage-dial-plans.md) per creare il tenant di dial plan.
   
 ## <a name="planning-for-tenant-dial-plans"></a>Pianificazione dei piani di chiamata tenant
 
 Per pianificare piani di chiamata personalizzati, attenersi alla seguente procedura.
   
-- **Step 1** Decide whether a custom dial plan is needed to enhance the user dialing experience. Typically, the need for one would be to support non-E.164 dialing, such as extensions or abbreviated national dialing.
+- **Passaggio 1** Decidere se un oggetto personalizzato dial plan è necessaria per migliorare l'esperienza di composizione di utente. In genere, la necessità di uno è per il supporto di composizione non e. 164, ad esempio le estensioni o abbreviato composizione nazionale.
     
-- **Step 2** Determine whether tenant global or tenant user scoped dial plans are needed, or both. Sono necessari piani di chiamata di ambito utente se gli utenti hanno diversi requisiti di composizione locali.
+- **Passaggio 2** Determinare se sono necessari tenant globale o tenant con ambito utente dial plan o entrambi. Sono necessari piani di chiamata di ambito utente se gli utenti hanno diversi requisiti di composizione locali.
     
 - **Passo 3** Identificare i modelli di numerazione validi per ciascun piano di chiamata richiesto. Sono richiesti solo i modelli di numerazione che non sono definiti nel piano di chiamata di ambito di servizio del Paese.
     
 - **Passo 4** Sviluppare un sistema a livello di organizzazione per la denominazione dei piani di chiamata. L'adozione di uno schema di denominazione standard assicura la coerenza in tutta l'organizzazione e rende più semplici la manutenzione e gli aggiornamenti.
     
-The [FastTrack](https://fasttrack.microsoft.com/microsoft365/capabilities?view=voice) has additional resources and partners that can assist you with implementing tenant dial plans.
+Risorse aggiuntive e partner che possono facilitare l'implementazione di tenant dial plan [FastTrack](https://fasttrack.microsoft.com/microsoft365/capabilities?view=voice) .
   
 ## <a name="creating-your-new-tenant-dial-plan"></a>Creazione di un nuovo piano di chiamata di ambito tenant
 
@@ -80,7 +80,7 @@ Quando si crea un nuovo piano di chiamata, è necessario mettere le informazioni
   
 ### <a name="name-and-simple-name"></a>Nome e nome semplice
 
-For user dial plans, you should specify a descriptive name that identifies to the users the dial plan will be assigned. Il nome semplice del piano di chiamata precompilato con una stringa derivata dal nome del piano di chiamata. Il campo Nome semplice è modificabile, per creare una convenzione di denominazione più descrittiva per i piani di chiamata. Il valore Nome semplice non può essere vuoto e deve essere unico. L'approccio ideale è sviluppare una convenzione di denominazione per l'intera organizzazione e quindi utilizzare questa convenzione in modo coerente in tutte le sedi e per tutti gli utenti.
+Per i dial plan utente, è necessario specificare un nome descrittivo che identifica il dial plan agli utenti verrà assegnato. Il nome semplice del piano di chiamata precompilato con una stringa derivata dal nome del piano di chiamata. Il campo Nome semplice è modificabile, per creare una convenzione di denominazione più descrittiva per i piani di chiamata. Il valore Nome semplice non può essere vuoto e deve essere unico. L'approccio ideale è sviluppare una convenzione di denominazione per l'intera organizzazione e quindi utilizzare questa convenzione in modo coerente in tutte le sedi e per tutti gli utenti.
   
 ### <a name="description"></a>Descrizione
 
@@ -96,13 +96,13 @@ Consigliamo di digitare il nome comune riconoscibile della posizione geografica 
 > [!NOTE]
 > Se si specifica un prefisso di accesso esterno, non è necessario creare un'ulteriore regola di normalizzazione che comprenda il prefisso. 
   
-See [Create and manage dial plans](create-and-manage-dial-plans.md) to create your tenant dial plans.
+Vedere [creare e gestire i dial plan](create-and-manage-dial-plans.md) per creare il tenant di dial plan.
   
 ## <a name="normalization-rules"></a>Regole di normalizzazione
 
 Le regole di normalizzazione definiscono come i numeri di telefono espressi in vari formati devono essere convertiti. La stessa stringa numerica può essere interpretata e tradotta in modo diverso, a seconda della posizione da cui viene composta. Le regole di normalizzazione possono essere necessarie se gli utenti devono essere in grado di comporre numeri interni o esterni abbreviati.
   
-Devono essere assegnate una o più regole di normalizzazione al piano di chiamata. Normalization rules are matched from top to bottom, so the order in which they appear in a tenant dial plan is important. Ad esempio, se un piano di chiamata tenant ha 10 regole di normalizzazione, la logica di abbinamento del numero composto verrà applicata per prima cosa alla prima regola di normalizzazione; se non corrisponde, passerà alla seconda, e così via. Se si ottiene un abbinamento, viene utilizzata quella regola e non vengono controllate le corrispondenze con altre regole definite. Possono essere definite al massimo 25 regole di normalizzazione in un determinato piano di chiamata tenant.
+Devono essere assegnate una o più regole di normalizzazione al piano di chiamata. Le regole di normalizzazione vengono eseguite dall'alto verso il basso, in modo che l'ordine in cui vengono visualizzati in un tenant dial plan è importante. Ad esempio, se un piano di chiamata tenant ha 10 regole di normalizzazione, la logica di abbinamento del numero composto verrà applicata per prima cosa alla prima regola di normalizzazione; se non corrisponde, passerà alla seconda, e così via. Se si ottiene un abbinamento, viene utilizzata quella regola e non vengono controllate le corrispondenze con altre regole definite. Possono essere definite al massimo 25 regole di normalizzazione in un determinato piano di chiamata tenant.
   
 ### <a name="determining-the-required-normalization-rules"></a>Determinare le regole di normalizzazione richieste
 
@@ -112,32 +112,32 @@ Dato che qualsiasi piano di chiamata tenant viene di fatto unito al piano di chi
 
 Le regole di normalizzazione usano le espressioni regolari .NET Framework per specificare modelli numerici di abbinamento che il server utilizza per tradurre le stringhe di composizione in formato E.164 allo scopo di eseguire la ricerca inversa. Possono essere create regole di normalizzazione specificando l'espressione regolare per cercare l'abbinamento e la conversione da eseguire quando si trova l'abbinamento. Terminata l'operazione, è possibile immettere un numero di prova per verificare che la regola di normalizzazione funzioni come previsto.
   
-For details about using .NET Framework regular expressions, see [.NET Framework Regular Expressions](https://go.microsoft.com/fwlink/p/?linkId=140927).
+Per ulteriori informazioni sull'utilizzo di espressioni regolari di .NET Framework, vedere [Espressioni regolari di .NET Framework](https://go.microsoft.com/fwlink/p/?linkId=140927).
   
-See [Create and manage dial plans](create-and-manage-dial-plans.md) to create and manage normalization rules for your tenant dial plans.
+Vedere [creare e gestire i dial plan](create-and-manage-dial-plans.md) per creare e gestire la normalizzazione regole per il tenant di dial plan.
   
 ### <a name="sample-normalization-rules"></a>Esempio di regole di normalizzazione
 
 La tabella seguente mostra esempi di regole di normalizzazione scritte sotto forma di espressioni regolari .NET Framework. Si tratta solo di esempi, non di regole fisse di riferimento per la creazione di regole di normalizzazione.
   
- **Normalization rules using .NET Framework regular expressions**
+ **Regole di normalizzazione tramite espressioni regolari di .NET Framework**
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Nome regola** <br/> |**Descrizione** <br/> |**Schema numerico** <br/> |**Conversione** <br/> |**Esempio** <br/> |
-|4digitExtension  <br/> |Converte i numeri interni a 4 cifre.  <br/> |^(\\d{4})$  <br/> |+1425555$1  <br/> |0100 viene convertito in +14255550100  <br/> |
-|5digitExtension  <br/> |Converte i numeri interni a 5 cifre.  <br/> |^5(\\d{4})$  <br/> |+1425555$1  <br/> |50100 viene convertito in +14255550100  <br/> |
-|7digitcallingRedmond  <br/> |Converte i numeri a 7 cifre in numeri locali di Redmond.  <br/> |^(\\d{7})$  <br/> |+1425$1  <br/> |5550100 viene convertito in +14255550100  <br/>|
+|4digitExtension  <br/> |Converte i numeri interni a 4 cifre.  <br/> |^ (\\g{4}) $  <br/> |+1425555$1  <br/> |0100 viene convertito in +14255550100  <br/> |
+|5digitExtension  <br/> |Converte i numeri interni a 5 cifre.  <br/> |^ 5 (\\g{4}) $  <br/> |+1425555$1  <br/> |50100 viene convertito in +14255550100  <br/> |
+|7digitcallingRedmond  <br/> |Converte i numeri a 7 cifre in numeri locali di Redmond.  <br/> |^ (\\g{7}) $  <br/> |+1425$1  <br/> |5550100 viene convertito in +14255550100  <br/>|
 |RedmondOperator  <br/> |Converte 0 nel numero del centralino per Redmond.  <br/> |^0$  <br/> |+14255550100  <br/> |0 viene convertito in +14255550100  <br/> |
-|RedmondSitePrefix  <br/> |Converte i numeri con il prefisso in rete (6) e il codice di sede di Redmond (222).  <br/> |^6222(\\d{4})$  <br/> |+1425555$1  <br/> |62220100 viene convertito in +14255550100  <br/> |
-|5digitRange  <br/> |Converte i numeri interni a 5 cifre iniziando con l'intervallo di cifre da 3 a 7, limiti inclusi.  <br/> |^([3-7]\\d{4})$  <br/> |+142570$1  <br/> |54567 viene convertito in +14255554567  <br/> |
-|PrefixAdded  <br/> |Aggiunge un prefisso internazionale prima di un numero a 9 cifre, con limitazioni sulla prima e terza cifra.  <br/> |^([2-9]\\d\\d[2-9]\\d{6})$  <br/> |1$1  <br/> |4255554567 viene convertito in 14255554567  <br/> |
-|NoTranslation  <br/> |Abbinamento a 5 cifre senza conversione.  <br/> |^(\\d{5})$  <br/> |$1  <br/> |34567 viene convertito in 34567  <br/> |
+|RedmondSitePrefix  <br/> |Converte i numeri con il prefisso in rete (6) e il codice di sede di Redmond (222).  <br/> |^ 6222 (\\g{4}) $  <br/> |+1425555$1  <br/> |62220100 viene convertito in +14255550100  <br/> |
+|5digitRange  <br/> |Converte i numeri interni a 5 cifre iniziando con l'intervallo di cifre da 3 a 7, limiti inclusi.  <br/> |^ ([3-7]\\g{4}) $  <br/> |+142570$1  <br/> |54567 viene convertito in +14255554567  <br/> |
+|PrefixAdded  <br/> |Aggiunge un prefisso internazionale prima di un numero a 9 cifre, con limitazioni sulla prima e terza cifra.  <br/> |^ ([2-9]\\g\\g [2-9]\\g{6}) $  <br/> |1$1  <br/> |4255554567 viene convertito in 14255554567  <br/> |
+|Non tradotto  <br/> |Abbinamento a 5 cifre senza conversione.  <br/> |^ (\\g{5}) $  <br/> |$1  <br/> |34567 viene convertito in 34567  <br/> |
    
  **Piano di chiamata Redmond basato sulle regole di normalizzazione sopra indicate.**
   
 La tabella seguente illustra un piano di chiamata di esempio per Redmond, Washington, Stati Uniti, in base alle regole di normalizzazione indicate nella tabella precedente.
-|:-----| |**Redmond dial plan** <br/> | |5digitExtension <br/> | |7digitcallingRedmond <br/> | |RedmondSitePrefix <br/> | |RedmondOperator <br/> |
+|:-----| | **Dial plan di Redmond** <br/> | | 5digitExtension <br/> | | 7digitcallingRedmond <br/> | | RedmondSitePrefix <br/> | | RedmondOperator <br/> |
    
 > [!NOTE]
 > I nomi delle regole di normalizzazione mostrati nella tabella precedente non includono spazi, ma questa è solo una scelta. Il primo nome nella tabella, ad esempio, avrebbe potuto essere "5 digit extension" o "5-digit Extension" e sarebbe stato comunque valido. 
@@ -153,9 +153,9 @@ La tabella seguente illustra un piano di chiamata di esempio per Redmond, Washin
 
 [Gestire i numeri di telefono per la propria organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-[Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
   
  

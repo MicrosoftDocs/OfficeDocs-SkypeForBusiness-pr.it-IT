@@ -21,11 +21,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Francia per Skype for Business online e Microsoft Teams.
-ms.openlocfilehash: 3c6bd48f25e4d627701963ee09c3b0cb6428d63c
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 125de99f7334c36da4ddba6330c57ee9ea323c06
+ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="phone-number-management-for-france"></a>Gestione dei numeri di telefono per la Francia
 
@@ -46,9 +46,9 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md)
 
-[Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](../../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+[Etichette chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
   
  

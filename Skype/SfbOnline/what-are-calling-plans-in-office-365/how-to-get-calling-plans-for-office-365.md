@@ -25,11 +25,11 @@ ms.custom:
 - Strat_SB_PSTN
 - LIL_Placement
 description: 'Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization. '
-ms.openlocfilehash: 4e2dba9b7a73c36f823a4f73a49c4980dc98e305
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 317659a868deff0827d23debb454eaaa35392216
+ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="calling-plans-for-office-365"></a>La chiamata a piani di Office 365
 
@@ -47,7 +47,7 @@ Minuti mensile disponibili per ogni organizzazione e ogni paese/area geografica 
 > Il paese/area geografica è in base alla posizione della licenza dell'utente nell' **interfaccia di amministrazione di Office 365** > **utenti attivi** e **non** l'indirizzo di fatturazione elencate sotto il **Profilo dell'organizzazione** nell'interfaccia di amministrazione **Office 365 **.   
 ![Posizione della licenza dell'utente](../images/cc1e16d1-8a5e-43e0-99a3-dc991efdfbab.png)
   
-Per informazioni dettagliate sui limiti di utilizzo e condizioni per l'utilizzo, vedere [audioconferenze gratuito chiamata esterna per periodo](../accessibility-and-regulatory/complimentary-dial-out-period.md).
+Per informazioni dettagliate sui limiti di utilizzo e condizioni per l'utilizzo, vedere [audioconferenze gratuito chiamata esterna per periodo](../legal-and-regulatory/complimentary-dial-out-period.md).
   
 ## <a name="how-to-buy-a-calling-plan"></a>Come acquistare un piano di chiamata
 

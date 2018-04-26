@@ -23,11 +23,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Ciascun Paese o area geografica ha istruzioni diverse per ottenere i numeri di telefono per gli utenti in Skype for Business online e Microsoft Teams. Segui il link relativo al tuo Paese o area geografica per ricevere le informazioni di cui hai bisogno.
-ms.openlocfilehash: 1a1c2a0efafa2edc9e3bae2eff812edadfca1d87
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 42a16c8dbdddd2907dfd2da8debfcd2dcd583487
+ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-phone-numbers-for-your-organization"></a>Gestire i numeri di telefono per la propria organizzazione
 Esistono tre modi per ottenere l'utente e servizio (a pagamento e il numero verde) numeri per l'organizzazione.
@@ -84,6 +84,6 @@ Se è ancora necessario della Guida in linea, inviaci i tuoi suggerimenti come p
 
     
 ## <a name="related-topics"></a>See also
-[Termini e condizioni per le chiamate al numero di emergenza](../../what-are-calling-plans-in-office-365/emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](../../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)

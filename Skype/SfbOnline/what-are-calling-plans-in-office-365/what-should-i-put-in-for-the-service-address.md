@@ -20,11 +20,11 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: "Informazioni che cos'è l'indirizzo del servizio, le differenze con l'indirizzo di fatturazione e su cui è possibile trovare. "
-ms.openlocfilehash: 2c5155c83f950f4840f351b686aa458e70016d0f
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: ca435b2fb91d36996d13d94dea4f071abe1c8684
+ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="what-should-i-put-in-for-the-service-address"></a>Che cos'è consigliabile inserire per l'indirizzo del servizio?
 
@@ -41,9 +41,9 @@ L'indirizzo del servizio è diverso dall'indirizzo di fatturazione o di emergenz
 
 [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
-[Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
   
  

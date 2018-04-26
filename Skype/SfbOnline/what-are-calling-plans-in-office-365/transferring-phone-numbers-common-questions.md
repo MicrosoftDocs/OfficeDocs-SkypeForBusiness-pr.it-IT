@@ -21,11 +21,11 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Le operazioni seguenti sono domande frequenti relative al trasferimento di numeri di telefono a Skype per le aziende. Dopo aver esaminato le risposte, è possibile creare un ordine di porta e trasferire i numeri di telefono. Visualizzare i numeri di telefono di trasferimento a Office 365 per le istruzioni.
-ms.openlocfilehash: f5f267fea1d06f1225773257df2be2d4312f837b
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 64ce253ffa9feb62bb2c737082a1162ced301878
+ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="transferring-phone-numbers-common-questions"></a>Trasferimento di domande comuni numeri di telefono
 
@@ -173,9 +173,9 @@ Per il trasferimento o *dalla porta fuori* numeri di telefono da Skype Business 
 ## <a name="related-topics"></a>Argomenti correlati
 [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../what-are-calling-plans-in-office-365/different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
-[Termini e condizioni per le chiamate al numero di emergenza](../what-are-calling-plans-in-office-365/emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://go.microsoft.com/fwlink/?LinkID=692099)
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
   
   
  
