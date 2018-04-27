@@ -174,6 +174,8 @@
 ## Legali e normativi
 ### [Dichiarazione di conformità all'accessibilità per Skype for Business online in Francia](../legal-and-regulatory/accessibility-declaration-of-conformance-in-france.md)
 ### [Soluzioni di accessibilità per Skype for Business online in Francia](../legal-and-regulatory/accessibility-solutions-in-france.md)
+### [Inoltro IP in Canada - iscrizione](../legal-and-regulatory/ip-relay-canada-email-signup.md)
+### [Inoltro IP in Canada - manuale dell'utente](../legal-and-regulatory/ip-relay-canada-user-guide.md)
 ### [Periodo di accesso gratuito](../legal-and-regulatory/complimentary-dial-out-period.md)
 ### [Codice di condotta per il Regno Unito](../legal-and-regulatory/code-of-practice-for-the-united-kingdom-u-k.md)
 ### [Codice di gestione dei reclami per il Regno Unito](../legal-and-regulatory/complaint-handling-code-for-the-united-kingdom-u-k.md)

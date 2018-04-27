@@ -25,11 +25,11 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: "Informazioni su come configurare Skype for Business consentire agli utenti di comunicare agli utenti di un'altra organizzazione o consentire a tali contatti esterni. "
-ms.openlocfilehash: 533bf45ff1abd0a1127ff54c91ab4c424c7d2df8
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 59ef459db2af5fe42c7a84fbef2d2a09b70ee783
+ms.sourcegitcommit: 5cc51e2d3898fccd1969accedb5e185a332e83bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="allow-users-to-contact-external-skype-for-business-users"></a>Consentire agli utenti di contatti esterni Skype per gli utenti aziendali
 
@@ -46,11 +46,6 @@ Utilizzare la procedura descritta in questo articolo, se:
     
 ## <a name="enable-business-to-business-communications-for-your-users"></a>Abilitare le comunicazioni aziendali to business per gli utenti
 <a name="bk_preview"> </a>
-
-Per verificare il funzionamento, guardare questo video:
-***
-> [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=492278f0-6912-47ba-a1d1-00040061cf44&AutoPlayVideo=false]
-***
 
 In entrambe le organizzazioni a tale scopo, è necessario disporre [delle autorizzazioni di amministratore](https://support.office.com/en-us/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) in Office 365.
   
