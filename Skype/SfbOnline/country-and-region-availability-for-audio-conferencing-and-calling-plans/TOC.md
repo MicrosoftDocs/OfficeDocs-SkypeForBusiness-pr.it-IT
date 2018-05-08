@@ -73,8 +73,7 @@
 ### [Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?](../what-are-calling-plans-in-office-365/what-are-emergency-locations-addresses-and-call-routing.md)
 ### [Che cosa sono i piani di chiamata?](../what-are-calling-plans-in-office-365/what-are-dial-plans.md)
 
-## Sistema telefonico in Office 365
-### [Che cos’è il Sistema telefonico in Office 365?](../what-is-phone-system-in-office-365/what-is-phone-system-in-office-365.md)
+## [Sistema telefonico in Office 365](../what-is-phone-system-in-office-365/what-is-phone-system-in-office-365.md)
 ### [Creare una coda di chiamata del Sistema telefonico](../what-is-phone-system-in-office-365/create-a-phone-system-call-queue.md)
 ### [Ottenere telefoni per Skype for Business online](../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online.md)
 #### [Distribuzione dei telefoni per Skype for Business online](../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/deploying-skype-for-business-online-phones.md)
@@ -87,6 +86,7 @@
 ### [Impostare un operatore automatico in Sistema telefonico](../what-is-phone-system-in-office-365/set-up-a-phone-system-auto-attendant.md)
 ### [Impostazione di sistema telefonico all'interno dell'organizzazione](../what-is-phone-system-in-office-365/setting-up-your-phone-system.md)
 ### [Cosa sono gli operatori automatici in Sistema telefonico](../what-is-phone-system-in-office-365/what-are-phone-system-auto-attendants.md)
+#### [Impostare un operatore automatico in Sistema telefonico](../what-is-phone-system-in-office-365/set-up-a-phone-system-auto-attendant.md)
 
 ## [Configurare la rete per Skype Meeting Broadcast](../set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast.md)
 ### [Licenze utente bloccate per Skype Meeting Broadcast](../set-up-your-network-for-skype-meeting-broadcast/blocked-user-licenses-for-skype-meeting-broadcast.md)
