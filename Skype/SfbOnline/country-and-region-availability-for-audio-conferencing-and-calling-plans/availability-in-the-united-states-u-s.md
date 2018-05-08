@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per gli Stati Uniti.
-ms.openlocfilehash: 34ef8a3ead8dfc37690f3588b8b61c8f1b467f95
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: db1d6c2473e45479cc9eca16951946a8c2ead9b5
+ms.sourcegitcommit: 2c084358844f02fbf7953f2ea49ed6d710cbf06f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="availability-in-the-united-states-us"></a>Disponibilità negli Stati Uniti (Stati Uniti)
 
@@ -55,7 +55,16 @@ Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per gli S
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |3000 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda del limite che viene raggiunto per primo per mese di calendario). Le chiamate nazionali negli Stati Uniti includono le chiamate a tutti i 50 Stati e a Portorico. Gli utenti a cui è assegnata la posizione di utilizzo della licenza degli Stati Uniti e/o a Portorico condividono lo stesso pool di minuti.  <br/> |
+|Minuti disponibili per la chiamata Plans. |Sono disponibili tre opzioni di pianificazione per il mese di calendario:
+- 120 piano di chiamate interne minute (disponibilità è limitata)
+- 240 piano di chiamate interne minute (disponibilità è limitata)
+- Plan minuto 1200 le chiamate
+- Plan minuto 1200 le chiamate
+- 600 minuti per le chiamate internazionali (se è stato acquistato una nazionali e internazionali chiamata piano del)
+
+Le chiamate nazionali negli Stati Uniti includono le chiamate a tutti i 50 Stati e a Portorico. Gli utenti a cui è assegnata la posizione di utilizzo della licenza degli Stati Uniti e/o a Portorico condividono lo stesso pool di minuti.
+|||
+|:-----|:-----|
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).  <br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
