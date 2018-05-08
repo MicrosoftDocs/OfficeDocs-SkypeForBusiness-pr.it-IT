@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: 'È possibile ottenere la procedura che è necessario modificare le impostazioni per un ponte per conferenze che consente di richiedere i chiamanti e raccogliere i nomi e i pin per gli organizzatori delle riunioni quando non sono in uso Skype per le applicazioni aziendali o Microsoft Teams. '
-ms.openlocfilehash: d5af21ab1df8b2b4b5b7e6d296a585812a5888c1
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: c58c1b3031da9e9ebe8408568bed0fd4b8c9ae9b
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un ponte per conferenze Audio
 
@@ -36,9 +35,10 @@ Bridging risponde a una chiamata e viene richiesto il chiamante con istruzioni v
   > [!IMPORTANT]
   > Un PIN è solo necessario per l'organizzatore della riunione quando Skype per utente app aziendali o Teams Microsoft non ha già avviato la riunione. Se tutti gli utenti è accedono alla riunione, il PIN è obbligatorio per l'organizzatore della riunione avviare la riunione. 
 
+> [!CAUTION]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
 ## <a name="teams-logo-30x30pngimagesteams-logo-30x30png-using-the-microsoft-teams-and-skype-for-business-admin-center"></a>![30x30.png di logo del team](../images/teams-logo-30x30.png) Utilizzo del team di Microsoft e Skype for Business Admin Center
-   > [!NOTE]
-   > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
 1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
 
@@ -61,8 +61,11 @@ Bridging risponde a una chiamata e viene richiesto il chiamante con istruzioni v
     Per ulteriori informazioni, vedere [messaggi di posta elettronica inviato automaticamente agli utenti quando modificano le impostazioni di conferenza Audio](emails-sent-to-users-when-their-settings-change.md) .
  
 6. Fare clic su **Applica**. 
+ 
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
-## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-using-skype-for-business-admin-center"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png) Utilizzo di Skype per interfaccia di amministrazione di Business
+## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png--using-the-skype-for-business-admin-center"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png)  Utilizzo dell'interfaccia di amministrazione di Skype for Business
 
  **Configurare l'esperienza di riunione quando i chiamanti di partecipare a una riunione**
     

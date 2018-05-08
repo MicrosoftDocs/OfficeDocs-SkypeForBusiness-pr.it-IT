@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: "Informazioni su come cercare i numeri di conferenza telefonica all'interno di Skype per le aziende. "
-ms.openlocfilehash: d4e1ef41a02a0197133d2b5cc08a4f35f961e4ee
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: c50c7a06aae2e9e68a5f9a2c66fc04f912a35705
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers"></a>Visualizzare un elenco di numeri di conferenze Audio
 
@@ -43,7 +42,7 @@ Se esiste un solo numero all'interno dell'organizzazione, verrà utilizzato come
 > [!NOTE]
 > Nazionali numeri dedicati alla propria organizzazione e sono le uniche che possono essere impostate come un numero di telefono predefinito. Tuttavia, internazionali numeri di accesso possono essere condivisi tra più organizzazioni. 
   
-## <a name="to-view-your-audio-conferencing-phone-numbers"></a>Per visualizzare i numeri di telefono di accesso esterno alle audioconferenze
+## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png--to-view-your-audio-conferencing-phone-numbers"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png)  Per visualizzare i numeri di telefono di accesso esterno alle audioconferenze
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -57,6 +56,9 @@ Se esiste un solo numero all'interno dell'organizzazione, verrà utilizzato come
     
 > [!NOTE]
 > È possibile accedere ai **servizi di conferenza Audio** > **utenti** e selezionare le proprietà dell'utente per modificare l'impostazione predefinita dei numeri scegliendo un nuovo numero dall'elenco dei numeri disponibili nell'organizzazione. Vedere [impostare telefono numeri incluso nel invita](set-the-phone-numbers-included-on-invites.md). 
+
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 

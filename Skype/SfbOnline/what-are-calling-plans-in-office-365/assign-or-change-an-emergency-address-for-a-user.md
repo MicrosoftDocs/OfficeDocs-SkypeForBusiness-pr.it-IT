@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-- Strat_SB_PSTN
 description: Informazioni su come configurare un numero di emergenza indirizzo e telefono per ogni utente che può essere utilizzato con il telefono rete PSTN (Public Switched).
-ms.openlocfilehash: cb9fe4dbf75310cffaa6fa05a9bee5c920df0da9
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: 185a3eb8d64e990b4e242a62cf7b76bd02237371
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="assign-or-change-an-emergency-address-for-a-user"></a>Assegnare o modificare un indirizzo di emergenza per un utente
 

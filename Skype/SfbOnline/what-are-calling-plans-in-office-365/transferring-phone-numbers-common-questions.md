@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-- Strat_SB_PSTN
 description: Le operazioni seguenti sono domande frequenti relative al trasferimento di numeri di telefono a Skype per le aziende. Dopo aver esaminato le risposte, è possibile creare un ordine di porta e trasferire i numeri di telefono. Visualizzare i numeri di telefono di trasferimento a Office 365 per le istruzioni.
-ms.openlocfilehash: 64ce253ffa9feb62bb2c737082a1162ced301878
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: dc366d3a9ec877a56c51b099fd3184012a1b907d
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="transferring-phone-numbers-common-questions"></a>Trasferimento di domande comuni numeri di telefono
 

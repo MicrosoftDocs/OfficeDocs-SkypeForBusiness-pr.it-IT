@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: 'Informazioni su quali informazioni automaticamente agli utenti viene inviato tramite posta elettronica quando modificano le impostazioni di conferenza telefonica. '
-ms.openlocfilehash: df4e85dbe0549035984a518ad378307a41740fa9
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 47225eff4d7d8bd091b2b7ba9d795c600cbd4b0e
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="emails-sent-to-users-when-their-settings-change"></a>Messaggi di posta elettronica inviati agli utenti quando le relative impostazioni di modifica
 
@@ -59,7 +58,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
   
 - **Viene reimpostato il PIN di un utente di audioconferenza.**
     
-    Questo messaggio di posta elettronica contiene audioconferenza dell'organizzatore PIN, l'ID conferenza esistente e numero di telefono di conferenza predefinito per l'utente. Inviare un messaggio di posta elettronica con le informazioni audioconferenza a un utente
+    Questo messaggio di posta elettronica contiene audioconferenza dell'organizzatore PIN, l'ID conferenza esistente e numero di telefono di conferenza predefinito per l'utente. Vedere [reimpostare il PIN per conferenze Audio](reset-the-audio-conferencing-pin.md).
     
     > [!NOTE]
     > Se l'organizzazione è stato abilitato per gli ID conferenza dinamico, tutte le riunioni dell'utente che si pianifica dovranno gli ID conferenza univoco. È possibile impostare [gli ID dinamici audioconferenze all'interno dell'organizzazione](using-audio-conferencing-dynamic-ids-in-your-organization.md). 
@@ -105,7 +104,7 @@ Quando si disattiva invio messaggi di posta elettronica agli utenti, posta elett
   
 Per impostazione predefinita, verranno inviati messaggi di posta elettronica per gli utenti, ma se si desidera impedire la ricezione posta elettronica per le conferenze audio, è possibile utilizzare Microsoft Teams, il Skype per Business admin center o Windows PowerShell. 
 
-**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
 
 1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
 
@@ -113,16 +112,19 @@ Per impostazione predefinita, verranno inviati messaggi di posta elettronica per
 
 3. Nel riquadro **Impostazioni Bridge** , abilitare o disabilitare **automaticamente inviare messaggi di posta elettronica per gli utenti di modificare le relative impostazioni di connessione**.
 
-4. Fare clic su **Applica**.
+4. Fai clic su **Salva**.
   
-**Utilizzo di Skype per interfaccia di amministrazione di Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png)  **utilizzando Skype per interfaccia di amministrazione di Business**
     
 1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     
 2. Nella pagina **Impostazioni bridge Microsoft** , selezionare o deselezionare **automaticamente inviare messaggi di posta elettronica agli utenti se modificare le impostazioni di conferenza**. 
     
 3. Fai clic su **Salva**. 
-    
+
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+  
 **Utilizzo di Windows PowerShell**
   
 1. Eseguire le operazioni seguenti per disabilitare l'invio di tutti gli utenti di posta elettronica:

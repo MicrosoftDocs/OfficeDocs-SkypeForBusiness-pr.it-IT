@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Phone System
-- Strat_SB_PSTN
 description: Oltre a ottenere numeri di telefono per gli utenti da Office 365, è possibile cercare e acquisire tariffe o numeri verdi per i servizi, ad esempio audioconferenze con accesso esterno (per i ponti di conferenza), gli operatori automatici e le code di chiamata (denominate anche numeri service). I numeri di servizio hanno una capacità di chiamate contemporanee superiore ai numeri di telefono per utenti o abbonati.
-ms.openlocfilehash: 9af5332f2e6079b9d5093939f4a381f7afb029bc
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 9a7761ca39295ef36531f74b835d9e0dbd498d51
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getting-service-phone-numbers"></a>Ottenere numeri di telefono del servizio
 

@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: 'Informazioni su come attivare la voce e uscire da attivare o disattivare gli annunci in Skype per riunioni Online Business con i Skype per interfaccia di amministrazione di Business. '
-ms.openlocfilehash: a9c3788db6b5742b4f2b41961c3843b4939c315b
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 8c2eee6d9a6631fa9ade4e3f1dc4b54b74ea4465
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="turn-on-or-off-entry-and-exit-announcements-for-meetings"></a>Attivare o disattivare gli annunci di entrata e uscita per le riunioni
 
@@ -35,7 +34,7 @@ Bridge conferenza risponde a una chiamata di un utente che si collegano a una ri
   
 ## <a name="setting-meeting-join-options"></a>Impostazione di opzioni di partecipazione alla riunione
 
-**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
 
 1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
 
@@ -49,7 +48,7 @@ Bridge conferenza risponde a una chiamata di un utente che si collegano a una ri
     
 6. Dopo aver apportato le modifiche desiderate, fare clic su **Applica**.
 
-**Utilizzo di Skype per interfaccia di amministrazione di Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
     
 1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     
@@ -61,6 +60,9 @@ Bridge conferenza risponde a una chiamata di un utente che si collegano a una ri
     
 5. Dopo aver apportato le modifiche, fai clic su **Salva**.
     
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
 - Per risparmiare tempo o automatizzare questa operazione, è possibile utilizzare il cmdlet [Set-CsOnlineDialInConferencingBridge](https://go.microsoft.com/fwlink/?LinkId=617686 ) .

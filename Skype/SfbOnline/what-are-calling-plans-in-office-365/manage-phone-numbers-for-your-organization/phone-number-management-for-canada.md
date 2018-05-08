@@ -15,21 +15,18 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-- Strat_SB_PSTN
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Canada per Skype for Business online.
-ms.openlocfilehash: f240892f6bc20f28ef640842a5f0123988d7b458
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: 16c25e31c1417c5d25cd8b6a18f9e72b6427559d
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="phone-number-management-for-canada"></a>Gestione dei numeri di telefono per il Canada
-> [!IMPORTANT]
-> Il Canda è disponibile solo per i clienti Preview e per gli utenti precoci. Per maggiori informazioni, consultare [Programmi Skype Preview](https://www.skypepreview.com). 
 
 Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Canada per Skype for Business online. 
 

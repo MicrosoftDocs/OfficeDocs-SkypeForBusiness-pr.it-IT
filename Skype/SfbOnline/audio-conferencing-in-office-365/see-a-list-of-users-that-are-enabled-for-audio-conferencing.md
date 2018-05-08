@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: "Informazioni su come visualizzare un elenco di utenti nell'organizzazione abilitati per la conferenza telefonica all'interno di Skype per interfaccia di amministrazione di Business. "
-ms.openlocfilehash: d97da976941f0853e5948112e4e7c34c7841afc8
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 28fb899586c6a0904126249b769e6fb0004878ca
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing"></a>Visualizzare un elenco di utenti abilitati per le conferenze Audio
 
@@ -33,13 +32,16 @@ Dopo aver abilitato Skype per utenti Business o Microsoft Teams all'interno dell
   
 ## <a name="viewing-a-list-of-users"></a>Visualizzazione di un elenco di utenti
 
-**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
 
 - Nel riquadro di spostamento sinistra fare clic su **utenti**.
 
-**Utilizzo di Skype per interfaccia di amministrazione di Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
     
 - Nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **gli utenti**.
+
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
     
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 

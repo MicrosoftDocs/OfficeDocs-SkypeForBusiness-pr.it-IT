@@ -12,17 +12,16 @@ ms.collection:
 - Strat_SB_PSTN
 ms.audience: Admin
 ms.appliesto: Skype for Business, Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: Gli amministratori possono controllare gli organizzatori utilizzo numeri verdi per le riunioni.
-ms.openlocfilehash: 0d2b4d16d6475587dd85223e0a88f64562664429
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: a63078256ac9ac52b3d405bd3cf1b63120fb77ce
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione di numeri verdi per utenti specifici
 
@@ -43,7 +42,7 @@ Numeri verdi quando sono disabilitati per organizzare una determinata:
 
 ## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione di numeri verdi per utenti specifici 
 
-**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
 
 1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
 
@@ -55,7 +54,7 @@ Numeri verdi quando sono disabilitati per organizzare una determinata:
 
 5. Fare clic su **si applicano.** 
 
-**Utilizzo di Skype per interfaccia di amministrazione di Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili. 
 
@@ -64,6 +63,9 @@ Numeri verdi quando sono disabilitati per organizzare una determinata:
 3. Deselezionare **Consenti utilizzo di numeri verdi per partecipare alle riunioni di questo utente**. 
  
 4. Fai clic su **Salva**. 
+ 
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
  
 **Utilizzo di PowerShell**  
 

@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: Vedere come selezionare le lingue di operatore automatico conferenza per un numero di conferenze audio.
-ms.openlocfilehash: 6b3d0f2fd9a74429a0b1817fc3987c0fdef8698e
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: c4461f61ce05afedc2663a3e5b61d37370394cd4
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing"></a>Set di lingue con operatore automatico per le conferenze Audio
 
@@ -38,7 +37,7 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. Verrà utili
   
 ## <a name="set-the-conferencing-auto-attendant-languages"></a>Impostare i servizi di conferenza lingue operatore automatico
 
-**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
 
 1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**.
 
@@ -51,7 +50,7 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. Verrà utili
 
 4. Fare clic su **Applica**.
 
-**Utilizzo di Skype for Business in linea**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **Utilizzando Skype for Business in linea**
 
 È necessario essere un [amministratore globale di Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) o [Skype per Business admin](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) per eseguire questo passaggio.
     
@@ -66,6 +65,9 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. Verrà utili
   
 4. Fai clic su **Salva**.
     
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
 ## <a name="want-else-should-i-know"></a>Desidera, in caso contrario, è necessario conoscere?
 
 - Per visualizzare l'elenco delle lingue supportate per le conferenze Audio, vedere [servizi di conferenza Audio lingue supportate](audio-conferencing-supported-languages.md).

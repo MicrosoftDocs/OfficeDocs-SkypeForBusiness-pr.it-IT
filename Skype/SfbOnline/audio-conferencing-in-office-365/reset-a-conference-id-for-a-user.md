@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: "Learn the steps to reset a user's meeting conference ID, and get links to meeting update and migration tools. "
-ms.openlocfilehash: 3c40c4bb59dd6628730542f73d8bdbddae7b9ad7
-ms.sourcegitcommit: a72a1b71a8ef8e9581038503130c2c1a58a4abdb
+ms.openlocfilehash: 395b1f2d9813c5ef99102c5c50ed7fff884dc594
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reset-a-conference-id-for-a-user"></a>Reimpostare un ID conferenza per un utente
 
@@ -37,7 +36,7 @@ ID conferenza vengono impostate automaticamente solo solo per Skype per utenti B
   
 ## <a name="resetting-the-conference-id-for-a-user"></a>Reimpostare l'ID conferenza per un utente
 
-**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
 
 1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
 
@@ -47,7 +46,7 @@ ID conferenza vengono impostate automaticamente solo solo per Skype per utenti B
 
 2. Nella finestra di **reimpostare id conferenza** , fare clic su **Ok**. A conference ID will be automatically created and an email sent to the user with the new conference ID. Per impostazione predefinita, messaggi di posta elettronica inviati a utenti, ma si possono essere disattivata.   
 
-**Utilizzo di Skype per interfaccia di amministrazione di Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
     
 1. In **Skype per interfaccia di amministrazione di Business**, fare clic su **servizi di conferenza Audio** > **gli utenti**, selezionare un utente e quindi nel riquadro azioni in **ID conferenza** fare clic su **Reimposta**.
     
@@ -56,6 +55,9 @@ ID conferenza vengono impostate automaticamente solo solo per Skype per utenti B
 > [!NOTE]
 > Dopo la reimpostazione dell'ID conferenza, viene inviata all'utente un'e-mail con il nuovo ID conferenza. Questo messaggio viene inviato all'indirizzo e-mail principale, che, in molti casi, corrisponde alla cassetta postale di Office 365. Nell'e-mail è contenuto il nuovo ID conferenza, i numeri di telefono predefiniti per l'accesso esterno e alcune istruzioni per utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business, che consente di aggiornare le riunioni esistenti. 
   
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 
 - È possibile inviare tutte le informazioni di servizi di conferenza per utente in un messaggio di posta elettronica che include l'ID conferenza e i numeri di telefono di accesso esterno facendo clic su **Invia informazioni conferenza tramite posta elettronica** dell'utente nel riquadro azioni. Il PIN non è incluso.
@@ -92,4 +94,4 @@ ID conferenza vengono impostate automaticamente solo solo per Skype per utenti B
     
 ## <a name="related-topics"></a>See also
 
-[Reimpostare il PIN di audioconferenza per un utente](reset-the-audio-conferencing-pin-for-a-user.md)
+[Reimpostare il PIN per conferenze Audio](reset-the-audio-conferencing-pin.md)

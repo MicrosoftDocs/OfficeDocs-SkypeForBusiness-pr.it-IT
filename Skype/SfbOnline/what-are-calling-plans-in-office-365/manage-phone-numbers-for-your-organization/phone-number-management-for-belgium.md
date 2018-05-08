@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-- Strat_SB_PSTN
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Belgio per Skype for Business online e Microsoft Teams.
-ms.openlocfilehash: a123b306fbade2f0331715436a0cfbcb296df115
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: f056a426df8b6d043a21fb0931ae0531d721c918
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="phone-number-management-for-belgium"></a>Gestione dei numeri di telefono per il Belgio
 

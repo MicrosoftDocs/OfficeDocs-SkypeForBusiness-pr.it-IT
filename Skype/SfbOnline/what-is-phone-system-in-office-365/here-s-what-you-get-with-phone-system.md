@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Phone System
-- Strat_SB_PSTN
 description: 'Informazioni sulle caratteristiche, disponibilità e su come pianificare e configurare un sistema telefonico (Cloud PBX) per la propria azienda. '
-ms.openlocfilehash: 3de0311bc971349f10ed17b19b38215904b3ce4e
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: e2ba535de48e11e503280b8bd65fbe78611dc47d
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa viene visualizzato con sistema telefonico in Office 365
 

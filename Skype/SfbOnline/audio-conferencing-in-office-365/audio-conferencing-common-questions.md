@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: Ecco alcune delle principali domande che è possibile ottenere dai nostri clienti che desiderano utilizzare servizi di conferenza Audio.
-ms.openlocfilehash: 6b2647a8242458c7ba1be87bb8843bd630821780
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: bc902c8c01abc7edab52c8e5341b93d2aaaaaeb7
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="audio-conferencing-common-questions"></a>Domande più comuni di servizi di conferenza audio
 

@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-- Strat_SB_PSTN
 description: Learn how to assign Microsoft the dial-in conferencing provider for Skype for Business.
-ms.openlocfilehash: 2ccb2b9a2b0a611d46056a8369dcb92d294c081f
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: e5e11adb4bf02e87de316d70be48b60d3ecd1d7f
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="assign-microsoft-as-the-audio-conferencing-provider"></a>Assegnare Microsoft come provider di servizi di conferenza audio
 
@@ -35,7 +34,7 @@ Audioconferenze Microsoft fornisce i numeri di telefono di accesso esterno, pin 
   
 ## <a name="assign-microsoft-as-the-audio-conferencing-provider"></a>Assegnare Microsoft come provider di servizi di conferenza audio
 
-### <a name="using-the-skype-for-business-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Skype for Business
+### <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-using-the-skype-for-business-admin-center"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png) Utilizzo dell'interfaccia di amministrazione di Skype for Business
 
 1. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
@@ -49,6 +48,9 @@ Audioconferenze Microsoft fornisce i numeri di telefono di accesso esterno, pin 
     > Poiché si utilizza Microsoft come provider di servizi di conferenza audio e sono disponibili più numeri di telefono, è possibile utilizzare l'elenco a discesa **numero a pagamento predefinito** per selezionare un numero di audio predefinita per l'utente.
   
 5. Fare clic su **Salva**.
+
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
     
 ### <a name="using-a-windows-powershell-script-for-a-small-number-of-users"></a>Utilizzo di uno script Windows PowerShell per un numero ridotto di utenti
 

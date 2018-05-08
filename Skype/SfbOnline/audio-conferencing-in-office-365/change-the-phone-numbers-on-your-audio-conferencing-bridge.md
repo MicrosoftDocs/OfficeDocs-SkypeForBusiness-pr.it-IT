@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: Quando si acquistano le licenze di accesso esterno alle audioconferenze, Microsoft ospita la ponte per conferenze audio per la propria organizzazione. Consente di ponte per conferenze audio numeri di telefono di accesso esterno da posizioni diverse in modo i partecipanti e gli organizzatori delle riunioni possono utilizzarli per partecipare a Skype per le riunioni aziendali o Microsoft Teams mediante un telefono.
-ms.openlocfilehash: cb38da52bd2c67a66e354b21712b8cc0d986796c
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: de5959a6182e354a9f12669100b60f66fd70f88f
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Modificare i numeri di telefono del ponte per conferenze Audio
 
@@ -53,6 +52,9 @@ Oltre ai numeri di telefono già assegnati al ponte per conferenze, è possibile
     > [!NOTE]
     > Una volta assegnato un nuovo numero di telefono, anche se il numero è diventato il nuovo numero predefinito, il numero predefinito per gli utenti esistenti non cambierà. Per impostare il numero a tariffa predefinito o un numero verde viene aggiunto alla riunione dell'organizzatore invita, vedere [impostare telefono numeri incluso nel invita](set-the-phone-numbers-included-on-invites.md). 
   
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
 ### <a name="step-2---change-the-default-phone-numbers-that-are-included-in-the-meeting-invites-of-users-optional"></a>Passo 2 - Cambiare i numeri di telefono predefiniti inclusi nelle inviti alle riunioni degli utenti (facoltativo)
 
 I numeri di telefono predefiniti per gli utenti sono quelli inclusi nell'invito alla riunione quando pianificano una riunione. Per ulteriori informazioni, vedere [impostare telefono numeri incluso nel invita](set-the-phone-numbers-included-on-invites.md).

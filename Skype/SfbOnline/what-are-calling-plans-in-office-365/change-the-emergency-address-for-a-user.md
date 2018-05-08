@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-- Strat_SB_PSTN
 description: "Vedere passaggi su come modificare l'indirizzo di emergenza per un utente di lavorare con il telefono rete PSTN (Public Switched) Stati Uniti e Europe. "
-ms.openlocfilehash: fc5976a2701b174ecbfcbcbb32f278debe7c68f2
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: 8ea0263cb6304dd9c0b7edf44f60b12d8db7a29a
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-the-emergency-address-for-a-user"></a>Modificare l'indirizzo di emergenza per un utente
 

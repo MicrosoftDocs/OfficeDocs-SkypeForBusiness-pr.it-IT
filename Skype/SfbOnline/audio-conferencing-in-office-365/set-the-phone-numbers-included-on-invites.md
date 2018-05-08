@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: 'È possibile ottenere i passaggi per creare un numero di telefono predefinito per i chiamanti partecipare a una Skype per riunione in linea aziendale. '
-ms.openlocfilehash: ae0f26c02bef1262b54cd509f9e539ef68aec112
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 03b6f3b2ce270d1dd6e2855dec4ee2af9a2447c8
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-the-phone-numbers-included-on-invites"></a>Impostare il telefono numeri incluso nel invita
 
@@ -39,7 +38,7 @@ Un ponte per conferenze offre un set di numeri di telefono di accesso esterno pe
 > [!NOTE]
 > Può esistere un massimo di un numero a pagamento e un numero verde nel invito alla riunione per organizzare una riunione, ma è disponibile anche un collegamento presente nella parte inferiore di ogni invito alla riunione che consente di aprire l'elenco completo di tutti i numeri di telefono di accesso esterno che può essere utilizzato per accedere a una riunione. 
   
-## <a name="setting-the-default-dial-in-phone-number-for-a-meeting-organizer"></a>Impostazione del numero di telefono di accesso esterno predefinito per l'organizzatore della riunione
+## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-set-the-default-dial-in-phone-number-for-a-meeting-organizer"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png) Impostare il numero di telefono di accesso esterno predefinito per l'organizzatore della riunione
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -72,7 +71,10 @@ Un ponte per conferenze offre un set di numeri di telefono di accesso esterno pe
   
   - **Terze parti sono il provider**: utilizzare i campi **numero a pagamento** e **numero verde** per immettere i numeri per l'utente.
     
-## <a name="reset-audio-conferencing-phone-numbers"></a>Reimpostare i numeri di telefono di accesso esterno alle audioconferenze
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
+## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-reset-audio-conferencing-phone-numbers"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png) Reimpostare i numeri di telefono di accesso esterno alle audioconferenze
 
 1. **Skype per interfaccia di amministrazione di Business**, scegliere **audioconferenze**.
     

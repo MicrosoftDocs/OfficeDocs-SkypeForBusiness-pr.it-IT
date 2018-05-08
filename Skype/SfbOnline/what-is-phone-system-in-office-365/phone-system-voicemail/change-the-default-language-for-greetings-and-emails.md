@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Phone System
-- Strat_SB_PSTN
 description: "Scopri come configurare Skype for Business in modo che usi un'altra lingua per il messaggio di saluto predefinito della segreteria telefonica dell'organizzazione. "
-ms.openlocfilehash: 5ee5b3e307e21e4b7225fadfbe2a079dd40f72de
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: b5d03806065337312ec35b30b58cfb0e6af1e0b6
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-the-default-language-for-greetings-and-emails"></a>Modificare la lingua predefinita per i messaggi di saluto e le e-mail
 

@@ -11,17 +11,16 @@ ms.collection:
 - Strat_SB_PSTN
 ms.audience: Admin
 ms.appliesto: Skype for Business, Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: Gli amministratori possono controllare il tipo di utente finale e servizi di conferenza PSTN le chiamate audio che possono essere effettuate dagli utenti.
-ms.openlocfilehash: a842366a5788de960cf5f0338219903ebe3d93f7
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 2929198a8bfff866f0d9f6d375593cd429885b2e
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Stratégies de restriction chiamata in uscita per le chiamate PSTN per conferenze Audio e degli utenti
 
@@ -40,7 +39,7 @@ Controlli delle chiamate in uscita possono essere applicati a ogni utente e forn
 
 ## <a name="restrict-audio-conferencing-outbound-calls"></a>Limitare le chiamate in uscita audioconferenze con accesso esterno 
 
-**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
 
 1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
 
@@ -52,7 +51,7 @@ Controlli delle chiamate in uscita possono essere applicati a ogni utente e forn
 
 5. Fare clic su **Applica**. 
 
-**Utilizzo di Skype per interfaccia di amministrazione di Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1.  Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
 
@@ -63,6 +62,9 @@ Controlli delle chiamate in uscita possono essere applicati a ogni utente e forn
     ![Le restrizioni alle opzioni di chiamate](../images/restrictions-to-dial-outs.png)
 
 5. Fai clic su **Salva**.
+
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
 **Utilizzo di PowerShell**
 

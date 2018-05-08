@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Phone System
-- Strat_SB_PSTN
 description: "Informazioni su come configurare e testare gli operatori automatici di sistema telefonico in (Cloud PBX) per la gestione dell'organizzazione delle chiamate efficiente. "
-ms.openlocfilehash: 456c60fb02b3ef63b14b2ff2e369c78a90edeb0d
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: dae8dc68162944f6547615626d5e94912a99caf2
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-a-phone-system-auto-attendant"></a>Configurare un operatore automatico di sistema telefonico
 

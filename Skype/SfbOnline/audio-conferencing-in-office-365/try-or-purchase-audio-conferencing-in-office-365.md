@@ -15,18 +15,17 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords:
 - ms.lync.lac.CpcGettingStarted
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: 'Vedere come prova o acquisto di licenze audioconferenze (conferenze PSTN) per configurare le conferenze telefoniche che gli utenti possono connettersi a Office 365. '
-ms.openlocfilehash: b1fdf386e778ec907dbeae2ce2178fa2596435ff
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 77e849e162e880b99d425c2e78535f0101f55bd4
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365"></a>Prova o acquisto audioconferenza in Office 365
 

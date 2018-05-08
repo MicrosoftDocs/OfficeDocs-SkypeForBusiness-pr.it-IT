@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: Ulteriori parametri per la lunghezza e i requisiti di un PIN e informazioni su come impostare il periodo per le riunioni in Skype per le aziende.
-ms.openlocfilehash: b20e782955b946f676cca5221f63b06cdd4d1be1
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 318e24bf30563d0a790584f9c1ccceb01d93c793
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-the-pin-length-for-audio-conferencing-meetings"></a>Impostare la lunghezza del PIN per le riunioni di conferenze Audio
 
@@ -35,7 +34,7 @@ Ponte per conferenze audio risponde a una chiamata a coloro che si collegano a u
   
 ## <a name="setting-the-pin-length"></a>Impostazione della lunghezza PIN
 
-**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
 
 1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
 
@@ -45,7 +44,7 @@ Ponte per conferenze audio risponde a una chiamata a coloro che si collegano a u
 
 4. Fare clic su **Applica**.
 
-**Utilizzo di Skype per interfaccia di amministrazione di Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
  
 1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     
@@ -53,6 +52,9 @@ Ponte per conferenze audio risponde a una chiamata a coloro che si collegano a u
     
 > [!NOTE]
 > Un PIN è diverso da un ID conferenza. ID conferenza vengono utilizzati per i chiamanti quando partecipano a riunione. Vengono utilizzati per identificare la riunione. Il PIN viene utilizzato per autenticare un chiamante organizzatore della riunione. 
+
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="want-to-know-more-about-pin-settings"></a>Fonti di informazioni sulle impostazioni del PIN
 

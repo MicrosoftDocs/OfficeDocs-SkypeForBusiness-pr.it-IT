@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
-- Strat_SB_PSTN
 - Audio Conferencing
 description: 'Learn how to enable or disable anonymous callers from joining a meeting from the Skype for Business admin center or using a PowerShell script. '
-ms.openlocfilehash: 8a4b9c9cbb21c8a269e9d07285e4ecf68d2f2a7a
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 4deb415e9fd7154d72b7d598bcc5dfb8eabed6ed
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="start-an-audio-conference-over-the-phone-without-a-pin"></a>Avviare una conferenza Audio nel telefono senza un PIN
 
@@ -37,7 +36,7 @@ Se un utente ha avviato la riunione da Skype per applicazioni aziendali o Teams 
   
 ## <a name="enable-or-disable-anonymous-callers-from-joining-a-meeting"></a>Abilitare o disabilitare la partecipazione dei chiamanti anonimi a una riunione
 
-**Utilizzo del team di Microsoft e Skype for Business Admin Center**
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
 
 1. Nel riquadro di spostamento sinistra fare clic su **utenti**. 
 
@@ -49,7 +48,7 @@ Se un utente ha avviato la riunione da Skype per applicazioni aziendali o Teams 
     
 4. Fare clic su **Applica**. 
 
-**Utilizzo di Skype per interfaccia di amministrazione di Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
     
 1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **gli utenti**. 
     
@@ -58,6 +57,9 @@ Se un utente ha avviato la riunione da Skype per applicazioni aziendali o Teams 
 3. Nella pagina proprietà dell'utente, in **Opzioni riunione**, selezionare o deselezionare i chiamanti Consenti non autenticato **diventi il prima persone a una riunione. Se non, quindi si attenderà nella sala di attesa fino a quando non si unisce a un utente autenticato**.
     
 4. Fai clic su **Salva**. 
+
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
     
  **Utilizzo di Windows Powershell**
   
@@ -69,7 +71,7 @@ Se un utente ha avviato la riunione da Skype per applicazioni aziendali o Teams 
 
 ## <a name="what-else-should-you-know"></a>Quali altre informazioni devi conoscere?
 
-- Se desideri reimpostare il PIN, vedi [Reimpostare il PIN di conferenza telefonica con accesso esterno per un utente](reset-the-audio-conferencing-pin-for-a-user.md).
+- Se si desidera reimpostare il PIN, vedere [reimpostare il PIN per le conferenze Audio](reset-the-audio-conferencing-pin.md).
     
 - Se è abilitato l'accesso anonimo o che non richiede un PIN avviare una riunione:
     

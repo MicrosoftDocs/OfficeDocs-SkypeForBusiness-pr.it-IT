@@ -15,18 +15,17 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: ms.lync.lac.GetNewNumbers
 ms.custom:
 - Calling Plans
-- Strat_SB_PSTN
 description: A volte (a seconda del Paese/area geografica) non potrai ottenere nuovi numeri tramite l'interfaccia di amministrazione Skype for Business, oppure ti serviranno numeri di telefono o prefissi specifici. In questo caso, dovrai scaricare un modulo e inviarcelo.
 robots: noindex
 redirect_url: https://docs.microsoft.com/en-us/SkypeForBusiness/what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization
 redirect_document_id: true
-ms.openlocfilehash: dcc4748973cdfcdc9c64d2860e93860375f5a620
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 6168fd7160f2345568d344d30de7da0f5e4b76e1
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---

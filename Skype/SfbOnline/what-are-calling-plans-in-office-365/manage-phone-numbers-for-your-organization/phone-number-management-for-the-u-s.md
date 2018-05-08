@@ -15,17 +15,16 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-- Strat_SB_PSTN
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono negli Stati Uniti (e Portorico) per Skype for Business online e Microsoft Teams.
-ms.openlocfilehash: edb4ee74eb9b128c529599326dc09a15b6487dab
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: abad4882e152eaba2a18bfe019cc2765a7aedf3c
+ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="phone-number-management-for-the-us"></a>Gestione dei numeri di telefono per gli Stati Uniti
 
