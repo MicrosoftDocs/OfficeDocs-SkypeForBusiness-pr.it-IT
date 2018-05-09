@@ -18,11 +18,11 @@ f1keywords:
 ms.custom:
 - Reporting
 description: Il nuovo dashboard di Office 365 report mostra Panoramica attività tra i prodotti di Office 365 all'interno dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare Skype per report sull'utilizzo dei dispositivi Business per visualizzare i dispositivi, inclusi sistemi operativi Windows e dispositivi mobili con Skype per applicazioni aziendali installato e utilizzano per la messaggistica Istantanea e riunioni. Rapporti di attività nell'interfaccia di amministrazione di Office 365 per ulteriori informazioni, consultare.
-ms.openlocfilehash: e03719fc48609ce490e311015927df9a426dbbcd
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 711138e62b6614606b8532004591547cb2acd525
+ms.sourcegitcommit: 7ec95ea34422e635661f3659bbc43a7a3484ff99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="device-usage-report"></a>Report sull'utilizzo dei dispositivi
 
@@ -52,7 +52,7 @@ La relazione, nonché altri Skype per i report di Business, offre informazioni d
 ![Skype per report sull'utilizzo dei dispositivi Business](../images/a1350924-37f8-4ae3-8603-bdde8c694203.png)
   
 ***
-![Numero 1](../images/sfbcallout1.png)<br/>È possibile visualizzare il report **Skype per l'utilizzo del dispositivo Business** le tendenze negli ultimi 7 giorni, 30 giorni, 90 giorni o 180 giorni. 
+![Numero 1](../images/sfbcallout1.png)<br/>È possibile visualizzare il report **Skype per l'utilizzo del dispositivo Business** le tendenze negli ultimi 7 giorni, 30 giorni, 90 giorni o 180 giorni. Tuttavia, se si fa clic su in un giorno particolare del rapporto di tabella (vedere numero 7) verrà visualizzati i dati per 30 giorni, fino alla data (vedere numero 2) per cui è stato generato il rapporto.
 
     > [!Note]
     > If you click into the details of a specific day, the table will only show data for the 30 days up to the date when the report was generated.
