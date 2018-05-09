@@ -21,8 +21,8 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per gli Stati Uniti.
-ms.openlocfilehash: db1d6c2473e45479cc9eca16951946a8c2ead9b5
-ms.sourcegitcommit: 2c084358844f02fbf7953f2ea49ed6d710cbf06f
+ms.openlocfilehash: 36a33915108d11a65349e8c1fca73c57fe1feae7
+ms.sourcegitcommit: b93d1a0012aacb164d700db0143683cb6f276bf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/08/2018
@@ -55,17 +55,10 @@ Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per gli S
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per la chiamata Plans. |Sono disponibili tre opzioni di pianificazione per il mese di calendario:
-- 120 piano di chiamate interne minute (disponibilità è limitata)
-- 240 piano di chiamate interne minute (disponibilità è limitata)
-- Plan minuto 1200 le chiamate
-- Plan minuto 1200 le chiamate
-- 600 minuti per le chiamate internazionali (se è stato acquistato una nazionali e internazionali chiamata piano del)
-
-Le chiamate nazionali negli Stati Uniti includono le chiamate a tutti i 50 Stati e a Portorico. Gli utenti a cui è assegnata la posizione di utilizzo della licenza degli Stati Uniti e/o a Portorico condividono lo stesso pool di minuti.
-|||
-|:-----|:-----|
-|Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).  <br/> |
+|Minuti disponibili per la chiamata Plans. |Sono disponibili quattro opzioni plan al mese di calendario: <ul><li>120 minuto nazionale chiamata pianificare (disponibilità è limitata)</li><li>240 minuto nazionale chiamata pianificare (disponibilità è limitata)</li></li><li>3000 minuto chiamata pianificare nazionale </li></li><li>600 minuti per nazionali e internazionali chiamata piani</li></li> 
+|Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
+>[!Note] 
+> Le chiamate nazionali negli Stati Uniti includono le chiamate a tutti i 50 Stati e a Portorico. Gli utenti a cui è assegnata la posizione di utilizzo della licenza degli Stati Uniti e/o a Portorico condividono lo stesso pool di minuti.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

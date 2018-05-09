@@ -20,11 +20,11 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'È possibile ottenere i passaggi per creare un numero di telefono predefinito per i chiamanti partecipare a una Skype per riunione in linea aziendale. '
-ms.openlocfilehash: 03b6f3b2ce270d1dd6e2855dec4ee2af9a2447c8
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 0ade5a68483319fe437d83c51dbe40ddb4f0fbc0
+ms.sourcegitcommit: b93d1a0012aacb164d700db0143683cb6f276bf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="set-the-phone-numbers-included-on-invites"></a>Impostare il telefono numeri incluso nel invita
 
@@ -38,7 +38,28 @@ Un ponte per conferenze offre un set di numeri di telefono di accesso esterno pe
 > [!NOTE]
 > Può esistere un massimo di un numero a pagamento e un numero verde nel invito alla riunione per organizzare una riunione, ma è disponibile anche un collegamento presente nella parte inferiore di ogni invito alla riunione che consente di aprire l'elenco completo di tutti i numeri di telefono di accesso esterno che può essere utilizzato per accedere a una riunione. 
   
-## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-set-the-default-dial-in-phone-number-for-a-meeting-organizer"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png) Impostare il numero di telefono di accesso esterno predefinito per l'organizzatore della riunione
+## <a name="set-the-default-dial-in-phone-number-for-a-meeting-organizer"></a>Impostare il numero di telefono di accesso esterno predefinito per l'organizzatore della riunione
+
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
+
+1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
+
+    ![Visualizza la selezione utenti in Microsoft Teams e Skype per Business Admin Center](../images/teamsselectusers.png)
+
+2. Nella parte superiore della pagina, fare clic su **Modifica**.
+
+    ![Fare clic su Modifica nel team di Microsoft e Skype per Business Admin Center](../images/teamsedituser.png)
+
+3. Accanto a **Servizi di conferenza Audio**, fare clic su **Modifica**. 
+    
+    ![Fare clic su Modifica accanto a conferenze Audio](../images/teamseditaudioconf.png)
+
+4. Utilizzare i campi **numero a pagamento** o **numero verde** per immettere i numeri per l'utente.
+
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -70,11 +91,23 @@ Un ponte per conferenze offre un set di numeri di telefono di accesso esterno pe
     > Almeno un numero verde deve essere assegnato ai bridge conferenza prima può essere impostata come il numero verde predefinito di un utente. Per ottenere un numero verde, vedere [Getting numeri di telefono del servizio per Skype per le aziende e team di Microsoft](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md). 
   
   - **Terze parti sono il provider**: utilizzare i campi **numero a pagamento** e **numero verde** per immettere i numeri per l'utente.
-    
-> [!Note]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
-## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-reset-audio-conferencing-phone-numbers"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png) Reimpostare i numeri di telefono di accesso esterno alle audioconferenze
+
+## <a name="change-the-audio-conferencing-phone-number-for-users"></a>Modificare il numero di telefono per conferenze audio per gli utenti
+
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
+
+1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
+
+2. Nella parte superiore della pagina, fare clic su **Modifica**.
+
+3. Accanto a **Servizi di conferenza Audio**, fare clic su **Modifica**. 
+    
+4. Utilizzare i campi **numero a pagamento** o **numero verde** per immettere i numeri per l'utente.
+
+## <a name="reset-audio-conferencing-phone-numbers"></a>Reimpostare i numeri di telefono di accesso esterno alle audioconferenze
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. **Skype per interfaccia di amministrazione di Business**, scegliere **audioconferenze**.
     

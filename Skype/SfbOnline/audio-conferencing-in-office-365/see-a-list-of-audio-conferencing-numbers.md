@@ -20,11 +20,11 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come cercare i numeri di conferenza telefonica all'interno di Skype per le aziende. "
-ms.openlocfilehash: c50c7a06aae2e9e68a5f9a2c66fc04f912a35705
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: bccd4a5c02dbb6bc32c27e315b80a39705284429
+ms.sourcegitcommit: b93d1a0012aacb164d700db0143683cb6f276bf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers"></a>Visualizzare un elenco di numeri di conferenze Audio
 
@@ -42,7 +42,19 @@ Se esiste un solo numero all'interno dell'organizzazione, verrà utilizzato come
 > [!NOTE]
 > Nazionali numeri dedicati alla propria organizzazione e sono le uniche che possono essere impostate come un numero di telefono predefinito. Tuttavia, internazionali numeri di accesso possono essere condivisi tra più organizzazioni. 
   
-## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png--to-view-your-audio-conferencing-phone-numbers"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png)  Per visualizzare i numeri di telefono di accesso esterno alle audioconferenze
+## <a name="to-view-your-audio-conferencing-phone-numbers"></a>Per visualizzare i numeri di telefono di accesso esterno alle audioconferenze
+
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
+
+1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
+2.  Visualizzare i numeri di telefono disponibili per le conferenze audio.
+
+- È inoltre possibile visualizzare il percorso e il linguaggio principale che verrà utilizzato per l'operatore automatico di audioconferenza.
+
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -57,8 +69,6 @@ Se esiste un solo numero all'interno dell'organizzazione, verrà utilizzato come
 > [!NOTE]
 > È possibile accedere ai **servizi di conferenza Audio** > **utenti** e selezionare le proprietà dell'utente per modificare l'impostazione predefinita dei numeri scegliendo un nuovo numero dall'elenco dei numeri disponibili nell'organizzazione. Vedere [impostare telefono numeri incluso nel invita](set-the-phone-numbers-included-on-invites.md). 
 
-> [!Note]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 

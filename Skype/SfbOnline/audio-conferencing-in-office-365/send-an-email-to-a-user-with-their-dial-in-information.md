@@ -20,11 +20,11 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Inviare agli utenti un messaggio di posta elettronica con le loro informazioni di audioconferenza.
-ms.openlocfilehash: da006b1e63dd36234acf20bb02fdffba2dc70fa2
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 0ac6aa097b9c34c23c27afb2e99e4e40e3f587c8
+ms.sourcegitcommit: b93d1a0012aacb164d700db0143683cb6f276bf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="send-an-email-to-a-user-with-their-audio-conferencing-information"></a>Inviare un messaggio di posta elettronica a un utente con le informazioni di conferenze Audio
 
@@ -39,7 +39,25 @@ Di seguito è riportato un esempio di messaggio di posta elettronica inviati:
   
 ![Posta elettronica di conferenza telefonica con accesso esterno](../images/audio-conferencing-info.png)
   
-## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-send-an-email-with-audio-conferencing-information-to-a-user"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png) Inviare un messaggio di posta elettronica con informazioni di audioconferenza a un utente
+## <a name="send-an-email-with-audio-conferencing-information-to-a-user"></a>Inviare un messaggio di posta elettronica con informazioni di audioconferenza a un utente
+
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
+
+1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
+
+2. Nella parte superiore della pagina, fare clic su **Modifica**.
+
+
+> [!Note]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+
+1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
+
+2. Nella parte superiore della pagina, fare clic su **Modifica**.
+
+3. In **Servizi di conferenza Audio**, fare clic su **Invia le informazioni di conferenza nel messaggio di posta elettronica**.
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -51,9 +69,6 @@ Di seguito è riportato un esempio di messaggio di posta elettronica inviati:
     
 > [!TIP]
 > È inoltre possibile inviare posta elettronica all'utente con le impostazioni di conferenza audio per la modifica delle proprietà dell'utente e quindi fare clic su **servizi di conferenza Audio** > **inviare informazioni conferenza tramite posta elettronica**. 
-
-> [!Note]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
 ## <a name="what-else-should-you-know-about-this-email"></a>Cos'altro occorre sapere su questo messaggio di posta elettronica?
 

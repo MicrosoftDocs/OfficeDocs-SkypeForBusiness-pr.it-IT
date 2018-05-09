@@ -20,11 +20,11 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Scoprire che cosa è necessario tenere conto PIN e su come reimpostare i valori. '
-ms.openlocfilehash: 811659bec8691a7ccb7ce8137380ef14d584a788
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 092d51061c374e14485527993a95e03e8e29649d
+ms.sourcegitcommit: b93d1a0012aacb164d700db0143683cb6f276bf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="reset-the-audio-conferencing-pin"></a>Reimpostare il PIN per conferenze Audio
 
@@ -61,7 +61,7 @@ Un utente può reimpostare un PIN utilizzando l'opzione **Reimposta PIN** nella 
     
 - Quando la riunione inizia, tutti gli utenti nella sala di attesa si uniranno automaticamente. Se ad esempio due partecipanti tentano di partecipare a una riunione prima che questa inizi, dovranno rimanere nella sala di attesa ascoltando musica e quando l'organizzatore della riunione si unirà usando il proprio PIN tramite telefono, la riunione avrà inizio e i partecipanti nella sala di attesa potranno partecipare alla riunione.
     
-- L'impostazione predefinita per non consentire una riunione di avvio per i chiamanti anonimi.
+- L'impostazione predefinita è non consentire una riunione di avvio per i chiamanti anonimi.
     
 - Quando si attiva un utente per le conferenze audio, per impostazione predefinita vengono inviati i messaggi di posta elettronica che includono informazioni sulle conferenze e il proprio PIN. L'utente deve disporre di una cassetta postale Office 365, perché quando viene reimpostato un PIN, un nuovo PIN verrà inviato all'utente di posta elettronica per il proprio indirizzo SMTP principale (alias) è impostato per l'utente.
     
