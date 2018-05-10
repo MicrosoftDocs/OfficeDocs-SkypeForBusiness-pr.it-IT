@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per la Spagna i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 836d989137c67ff5e0ee331db61bc5a2e084d21c
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 8d320279d4cd81841c6642a183f7b4bb93e02714
+ms.sourcegitcommit: 4e9574c8a9eac270135684aa4a8b77621aa46403
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="availability-in-spain"></a>Disponibilità in Spagna
 
@@ -51,12 +51,12 @@ Di seguito sono disponibili per la Spagna i servizi di Skype per le aziende e Te
 |Casella vocale  <br/> |Disponibili  <br/> |
    
 ## <a name="calling-plans"></a>Piani per chiamate
-
+    
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda del limite che viene raggiunto per primo per mese di calendario).  <br/> |
-|Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).  <br/> |
+|Minuti disponibili per la chiamata Plans. |Sono disponibili quattro opzioni plan al mese di calendario: <ul><li>120 minuti chiamata pianificare nazionale </li><li>240 minuti chiamata pianificare nazionale</li></li><li>3000 minuto chiamata pianificare nazionale </li></li><li>600 minuto per nazionali e internazionali chiamata piani</li></li> 
+|Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

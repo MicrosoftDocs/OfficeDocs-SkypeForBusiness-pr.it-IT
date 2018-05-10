@@ -22,11 +22,11 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni su come configurare servizi di conferenza telefonica o audio per le persone nell'azienda che desiderano partecipare a conferenze telefoniche mediante un telefono. "
-ms.openlocfilehash: 303b22f43a756fcade575dd63ae9bba205e6cbda
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: d91a3637a0f7d35d319368017e0f9c6611faf2a7
+ms.sourcegitcommit: 4e9574c8a9eac270135684aa4a8b77621aa46403
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="set-up-audio-conferencing-for-skype-for-business-and-microsoft-teams"></a>Configurare le audioconferenze per Skype for Business e Microsoft Teams
 
@@ -69,7 +69,11 @@ Per le conferenze Audio, è possibile utilizzare i numeri di telefono per gli ut
 
 Una volta che viene visualizzato il numero a tariffa e/o numeri verdi per i bridge conferenza, è necessario assegnare i numeri in modo che possono essere utilizzati in inviti della riunione.  
 
-Per assegnare un nuovo numero di telefono per il ponte per conferenze audio, visitare il **Centro di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende** > **vocale** > **i numeri di telefono**, selezionare il telefono numero e fare clic su **Assegna**.
+Per assegnare un nuovo numero di telefono per il ponte per conferenze audio:
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **con la Skype per Business admin center:**
+
+ Vai al **Centro di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende** > **vocale** > **i numeri di telefono**, selezionare il numero di telefono e fare clic su **Assegna**.
 
 Per ulteriori informazioni, vedere [assegnare un nuovo numero di telefono per il ponte per conferenze audio](../audio-conferencing-in-office-365/change-the-phone-numbers-on-your-audio-conferencing-bridge.md).
 
@@ -78,6 +82,12 @@ Per ulteriori informazioni, vedere [assegnare un nuovo numero di telefono per il
 
 Si desidera [impostare le lingue di operatore automatico per le conferenze Audio](../audio-conferencing-in-office-365/set-auto-attendant-languages-for-audio-conferencing.md) che utilizza l'operatore automatico di servizi di conferenza per saluti salutare un chiamante quando si effettua la chiamata a un numero di telefono per le audioconferenze. 
 
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando Microsoft Teams e Skype per Business Admin Center:**
+
+Nel Dashboard di accedere alle **riunioni** > **ponti di conferenza**, selezionare il numero di telefono di ponte conferenza, fare clic su **Modifica**e quindi fare clic sulla lingua predefinita.
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **con la Skype per Business admin center:**
+
 Vai al **Centro di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende** > **audioconferenze** > **Impostazioni bridge Microsoft**, selezionare il numero di telefono di ponte per conferenze e quindi Fare clic su **Imposta lingue**.
 
 ## <a name="step-6-set-your-conferencing-bridge-settings"></a>Passaggio 6: Le impostazioni delle conferenze bridge
@@ -85,15 +95,27 @@ Vai al **Centro di amministrazione di Office 365** > **Admin Center** > **Skype 
     
 Dopo aver impostato i bridge conferenza, verificare che le impostazioni predefinite, ad esempio lunghezza del PIN e le notifiche di ingresso/uscita siano quelle che si desidera utilizzare; Se non si trovino, è possibile modificarli. 
 
-Consente di passare all' **interfaccia di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende** > **audioconferenze** > **Impostazioni bridge di Microsoft**. Verrà aperta la pagina **impostazioni di bridge di Microsoft** . Per ulteriori informazioni, vedere [modificare le impostazioni per un ponte per conferenze Audio](../audio-conferencing-in-office-365/change-the-settings-for-an-audio-conferencing-bridge.md).
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando Microsoft Teams e Skype per Business Admin Center:**
 
-## <a name="step-7-assign-the-audio-conferencing-provider-and-dial-in-phone-numbers"></a>Passaggio 7: Assegnare i numeri di telefono provider dial-in e audioconferenze con accesso esterno
+Nel Dashboard di accedere alle **riunioni** > **Bridge conferenza** > **Impostazioni Bridge**. Verrà visualizzato il riquadro **Impostazioni Bridge** . Per ulteriori informazioni, vedere [modificare le impostazioni per un ponte per conferenze Audio](../audio-conferencing-in-office-365/change-the-settings-for-an-audio-conferencing-bridge.md).
 
-È necessario assicurarsi che Microsoft viene assegnato come provider e impostare il numero a pagamento e numeri verdi per tali contemporaneamente.
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **con la Skype per Business admin center:**
 
-Assegnare agli utenti dell'organizzazione che condurre o pianificare riunioni accedendo **all'interfaccia di amministrazione di Office 365**Microsoft come provider > **Skype per le aziende** > **audioconferenze** > **utenti**e quindi selezionare l'utente dall'elenco e fare clic su **Modifica**. Se sono necessarie ulteriori informazioni, vedere [Microsoft assegnare come provider di servizi di conferenza audio](../audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider.md).
+Vai al **Centro di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende** > **audioconferenze** > **Impostazioni bridge di Microsoft**. Verrà aperta la pagina **impostazioni di bridge di Microsoft** . Per ulteriori informazioni, vedere [modificare le impostazioni per un ponte per conferenze Audio](../audio-conferencing-in-office-365/change-the-settings-for-an-audio-conferencing-bridge.md).
 
-Quando si imposta il provider, è inoltre possibile impostare il numero a tariffa e numeri verdi che verranno aggiunto alla riunione invia un invito di quell'utente. Selezionare semplicemente i numeri di telefono dall'elenco a discesa. Per ulteriori informazioni, vedere [impostare telefono numeri incluso nel invita](../audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites.md). 
+## <a name="step-7-assign-dial-in-phone-numbers-for-users-who-lead-meetings"></a>Passaggio 7: Assegna dial-in numeri per gli utenti che condurre riunioni
+
+Dopo aver creato un ponte per conferenze Audio, è necessario impostare il numero a pagamento e numeri verdi per gli utenti.
+
+È necessario eseguire questa operazione per tutti gli utenti dell'organizzazione che condurre o pianificare riunioni. Procedi come segue.
+
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando Microsoft Teams e Skype per Business Admin Center:**
+
+Nel dashboard, fare clic su **utenti**, selezionare l'utente dall'elenco, fare clic su **Modifica**, fare clic su **Edit** accanto a **Servizi di conferenza Audio**e quindi nel riquadro di **Conferenze Audio** , selezionare un numero nel **numero a pagamento** e ** Numero verde** elenchi numerati.
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **con la Skype per Business admin center:**
+
+Vai al **Centro di amministrazione di Office 365** > **Skype per le aziende** > **audioconferenze** > **gli utenti**, quindi selezionare l'utente dall'elenco e fare clic su **Modifica**. Se sono necessarie ulteriori informazioni, vedere [Microsoft assegnare come provider di servizi di conferenza audio](../audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider.md).
 
 
 ## <a name="step-8-set-up-meeting-invitations-optional"></a>Passaggio 8: Configurazione di convocazioni di riunione (facoltativo)
