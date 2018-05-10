@@ -1,7 +1,24 @@
 ---
-titolo: ms.author "Block in ingresso le chiamate in Skype per Business Online": tonysmit autore: tonysmit manager: serdars ms.date: 07/05/2018 ms.topic: l'articolo ms.assetid: ms.tgt.pltfrm: cloud ms.service: ms.collection Skype-per-business-online: Adm_Skype4B_ Ms.audience online: amministrazione appliesto: Skype per Business localization_priority: f1keywords normale: nessuno ms.custom: descrizione di PowerShell: "Utilizzare PowerShell per gestire in ingresso chiamare blocco in Skype per Business Online".
+title: Bloccare le chiamate in arrivo in Skype for Business in linea
+ms.author: tonysmit
+author: tonysmit
+manager: serdars
+ms.date: 05/07/2018
+ms.topic: article
+ms.assetid: ''
+ms.tgt.pltfrm: cloud
+ms.service: skype-for-business-online
+ms.collection: Adm_Skype4B_Online
+ms.audience: Admin
+appliesto: Skype for Business
+localization_priority: Normal
+ms.custom: Use PowerShell to manage inbound call blocking in Skype for Business Online.
+ms.openlocfilehash: 9a9ff446d7b95588f1d9c2460db1284de717e557
+ms.sourcegitcommit: b394b394e6c51fe0d75b1eec47f6ada1b0265b63
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/10/2018
 ---
-
  # <a name="block-inbound-calls"></a>Bloccare le chiamate in arrivo
 
 Skype per Business Online la chiamata dei piani supporta il blocco delle chiamate in ingresso dalla rete pubblica commutata (PSTN). Questa funzionalità consente a un elenco globale tenant di formati di numeri da definire in modo da chiamare l'ID chiamante di ogni PSTN in arrivo al tenant può essere archiviato in base all'elenco in base alla corrispondenza. Se viene individuata una corrispondenza, verrà rifiutata una chiamata in arrivo. 
@@ -14,7 +31,6 @@ Questa funzionalità non è ancora disponibile per il Routing diretto.
 
 ## <a name="call-blocking-admin-controls-and-information"></a>Blocco delle informazioni e i controlli di amministrazione di chiamata
 Vengono forniti controlli di amministrazione per i numeri di blocchi tramite PowerShell solo. Formati di numeri blocco vengono definiti come criteri di espressioni regolari. L'ordine delle espressioni è importante-il primo modello corrispondono nell'elenco genererà la chiamata viene bloccata. Un nuovo numero o un motivo aggiunte o rimosse in bloccati elenco chiamanti potrebbe richiedere fino a 24 ore per il motivo di diventare attivi.
-
 ## <a name="call-blocking-powershell-commands"></a>Chiamata di blocco dei comandi di PowerShell
 
 *InboundBlockedNumberPattern* Formati di numeri vengono gestite tramite i comandi *CsInboundBlockedNumberPattern* **New**, **ottenere**, **impostare**e **rimuovere**.  
@@ -57,4 +73,4 @@ Utilizzare PowerShell incorporati filtro delle capacità per analizzare i valori
 Come già detto, criteri di ricerca per il blocco dei chiamanti viene eseguito utilizzando le espressioni regolari (regex). Sono disponibili più strumenti disponibili in linea per convalidare un criterio di espressione regolare ricerca. Se non si ha familiarità con i formati di espressioni regolari, è consigliabile richiedere tempo per acquisire familiarità con i concetti di base e per accertarsi di disporre i risultati previsti, utilizzare uno strumento per la convalida di caratteri jolly prima di aggiungere nuove bloccati numero corrisponde al tenant. 
 
 ## <a name="related-topics"></a>See also
-[Configurare il computer per Skype per la gestione in linea aziendale tramite Windows PowerShell](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell )
+[Configurare il computer per Skype per la gestione Business Online utilizzando Windows PowerShell](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell )
