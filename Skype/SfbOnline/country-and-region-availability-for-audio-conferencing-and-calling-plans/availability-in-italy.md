@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per l'Italia.
-ms.openlocfilehash: 5c3f4ddca1709d4dc22a51c2d03223198ebe280f
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 8080297dc2b88912d518b0c366537f11e728e9d9
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-italy"></a>Disponibilità in Italia
 
@@ -38,7 +38,7 @@ Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per l'Ita
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per Milano. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Milano</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico

@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per i paesi bassi i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 9f48184cc28a2d5803f6354225039f12e3df0570
-ms.sourcegitcommit: 4e9574c8a9eac270135684aa4a8b77621aa46403
+ms.openlocfilehash: 0977d1c6d099f0a49ec7d5cfd42138a0e70367ef
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-the-netherlands"></a>Disponibilità nei Paesi Bassi
 
@@ -38,7 +38,7 @@ Di seguito sono disponibili per i paesi bassi i servizi di Skype per le aziende 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per Amsterdam. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Amsterdam</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico

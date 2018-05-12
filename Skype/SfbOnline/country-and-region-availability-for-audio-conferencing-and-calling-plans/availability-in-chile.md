@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per il Cile i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 87fb67e88057a37b5d624e4e8041a7819a93d13f
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 4c7b9305c1a3fc6d77e84e4b5538bce2a950118f
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-chile"></a>Disponibilità in Cile
 
@@ -38,7 +38,7 @@ Di seguito sono disponibili per il Cile i servizi di Skype per le aziende e Team
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per Santiago (disponibile solo per le organizzazioni all'interno del Cile). Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Santiago (disponibile solo per le organizzazioni all'interno del Cile)</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Non disponibile  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -62,8 +62,8 @@ Di seguito sono disponibili per il Cile i servizi di Skype per le aziende e Team
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Santiago  <br/> > [!NOTE]> Disponibile solo a organizzazioni in Cile.           |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> > [!NOTE]> Disponibile solo a organizzazioni in Cile.           |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Santiago  <br/> **Nota:** Disponibile solo per le organizzazioni all'interno del Cile.           |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> **Nota:** Disponibile solo per le organizzazioni all'interno del Cile.           |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).

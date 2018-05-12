@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per il Perù i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 163c2347872ac56c883d648030a73d69179ad64b
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 2cef59fa5ff9025d6e18bd314e5c0105a00d4a76
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-peru"></a>Disponibilità in Perù
 
@@ -38,7 +38,7 @@ Di seguito sono disponibili per il Perù i servizi di Skype per le aziende e Tea
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per Lima. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per: <br/><ul><li>Lima</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Non disponibile  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico

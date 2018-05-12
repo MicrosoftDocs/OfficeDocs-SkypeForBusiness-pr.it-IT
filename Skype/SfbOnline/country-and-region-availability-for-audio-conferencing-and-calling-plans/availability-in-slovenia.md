@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per la Slovenia i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 0df0c8114c97ea958b877d796287737466ca3a5b
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 9eae8d90cf7ef21e250ad1b5dff44c46736c3c1a
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-slovenia"></a>Disponibilità Slovenia
 
@@ -38,7 +38,7 @@ Di seguito sono disponibili per la Slovenia i servizi di Skype per le aziende e 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per Lubiana. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per: <br/><ul><li> Lubiana</ul> Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -62,7 +62,7 @@ Di seguito sono disponibili per la Slovenia i servizi di Skype per le aziende e 
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | Celie <br/>  Lubiana <br/>  Città Maribor <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Celie <li>  Lubiana <li>  Città Maribor </ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    

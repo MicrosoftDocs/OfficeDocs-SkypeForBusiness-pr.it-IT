@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per il Belgio i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 6bb8f95f8ce3e1957076bd4900c0362d6c97b73c
-ms.sourcegitcommit: 4e9574c8a9eac270135684aa4a8b77621aa46403
+ms.openlocfilehash: d13461ca83362b056dca0eab9e58c2c9b1f77810
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-belgium"></a>Disponibilità in Belgio
 
@@ -38,7 +38,7 @@ Di seguito sono disponibili per il Belgio i servizi di Skype per le aziende e Te
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per Bruxelles. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Bruxelles</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -62,7 +62,7 @@ Di seguito sono disponibili per il Belgio i servizi di Skype per le aziende e Te
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | Bruges <br/>  Bruxelles <br/>  Charleroi <br/>  Ghent <br/>  Liegi <br/>  Namur <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | <ul><li>Bruges<li>  Bruxelles <li>Charleroi <li>  Ghent <li>  Liegi <li>  Namur </ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    

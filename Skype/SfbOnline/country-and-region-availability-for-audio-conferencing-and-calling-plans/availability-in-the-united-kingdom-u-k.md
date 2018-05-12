@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per l'Italia.
-ms.openlocfilehash: 51509ecbd2f1944cb8f0406efab557756536bbcf
-ms.sourcegitcommit: 4e9574c8a9eac270135684aa4a8b77621aa46403
+ms.openlocfilehash: fd81f016ede49843a1f2ae8b431514d07ba55c5f
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-the-united-kingdom-uk"></a>Disponibilità nel Regno Unito (Regno Unito)
 
@@ -38,7 +38,7 @@ Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per l'Ita
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, di Londra. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per: <br/><ul><li> Londra</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -62,7 +62,7 @@ Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per l'Ita
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | Birmingham <br/>  Bolton <br/>  Bournemouth <br/>  Bradford <br/>  Brighton <br/>  Bristol <br/>  Coventry <br/>  Hull <br/>  Leeds <br/>  Leicester <br/>  Liverpool <br/>  Londra <br/>  Manchester <br/>  Newcastle <br/>  Nottingham <br/>  Plymouth <br/>  Sheffield <br/>  Stoke-on-Trent <br/>  Teesside (Middlesbrough) <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Birmingham <li>  Bolton <li>  Bournemouth <li>  Bradford <li>  Brighton <li>  Bristol <li>  Coventry <li>  Hull <li>  Leeds <li>  Leicester <li>  Liverpool <li>  Londra <li>  Manchester <li>  Newcastle <li>  Nottingham <li>  Plymouth <li>  Sheffield <li>  Stoke-on-Trent <li>  Teesside (Middlesbrough) </ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    

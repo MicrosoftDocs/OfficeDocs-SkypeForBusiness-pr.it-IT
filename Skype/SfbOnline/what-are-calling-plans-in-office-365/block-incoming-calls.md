@@ -13,11 +13,11 @@ ms.audience: Admin
 appliesto: Skype for Business
 localization_priority: Normal
 ms.custom: Use PowerShell to manage inbound call blocking in Skype for Business Online.
-ms.openlocfilehash: 9a9ff446d7b95588f1d9c2460db1284de717e557
-ms.sourcegitcommit: b394b394e6c51fe0d75b1eec47f6ada1b0265b63
+ms.openlocfilehash: 7a9d9637973f18e5322e1c39d38627b0883f2c9f
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
  # <a name="block-inbound-calls"></a>Bloccare le chiamate in arrivo
 
@@ -27,7 +27,8 @@ Questa caratteristica blocco chiamata in arrivo funziona solo sulle chiamate in 
 
 Questa funzionalità non è ancora disponibile per il Routing diretto.
 
->[Nota] I chiamanti bloccati potrebbero verificarsi comportamenti leggermente diversi quando sono stati bloccati. Il comportamento si baserà come gestore del chiamante bloccati gestisce la notifica di chiamata non è consentita per essere completata correttamente. Può ad esempio un messaggio di gestore di telefonia che segnala la chiamata non può essere completata, o recarsi semplicemente la chiamata.
+>[!NOTE]
+ I chiamanti bloccati potrebbero verificarsi comportamenti leggermente diversi quando sono stati bloccati. Il comportamento si baserà come gestore del chiamante bloccati gestisce la notifica di chiamata non è consentita per essere completata correttamente. Può ad esempio un messaggio di gestore di telefonia che segnala la chiamata non può essere completata, o recarsi semplicemente la chiamata.
 
 ## <a name="call-blocking-admin-controls-and-information"></a>Blocco delle informazioni e i controlli di amministrazione di chiamata
 Vengono forniti controlli di amministrazione per i numeri di blocchi tramite PowerShell solo. Formati di numeri blocco vengono definiti come criteri di espressioni regolari. L'ordine delle espressioni è importante-il primo modello corrispondono nell'elenco genererà la chiamata viene bloccata. Un nuovo numero o un motivo aggiunte o rimosse in bloccati elenco chiamanti potrebbe richiedere fino a 24 ore per il motivo di diventare attivi.

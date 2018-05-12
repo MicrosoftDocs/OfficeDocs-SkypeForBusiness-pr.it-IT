@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per gli Stati Uniti.
-ms.openlocfilehash: 36a33915108d11a65349e8c1fca73c57fe1feae7
-ms.sourcegitcommit: b93d1a0012aacb164d700db0143683cb6f276bf4
+ms.openlocfilehash: 5ecc646fc00725d05c2623d0097b236ee4ff1f80
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-the-united-states-us"></a>Disponibilità negli Stati Uniti (Stati Uniti)
 
@@ -38,7 +38,7 @@ Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per gli S
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per Chicago, Dallas, Los Angeles e New York. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per: <br/><ul><li> Chicago<li>Dallas<li>Roma<li>New York City</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -64,7 +64,7 @@ Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per gli S
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | Alabama, Birmingham <br/>  Arizona, Phoenix <br/>  Arkansas, Little Rock <br/>  California, Los Angeles <br/>  California, San Francisco <br/>  Colorado, Denver <br/>  Columbia, Washington DC <br/>  Connecticut, Hartford <br/>  Delaware, Wilmington <br/>  Florida, Miami <br/>  Georgia, Atlanta <br/>  Hawaii, Honolulu <br/>  Idaho, Boise <br/>  Illinois, Aurora <br/>  Illinois, Chicago <br/>  Illinois, Cicero <br/>  Indiana, Indianapolis <br/>  Iowa, Iowa City <br/>  Kansas, Wichita <br/>  Kentucky, Louisville <br/>  Louisiana, New Orleans <br/>  Maine, Portland <br/>  Maryland, Baltimore <br/>  Massachusetts, Boston <br/>  Michigan, Pontiac <br/>  Minnesota, Minneapolis <br/>  Minnesota, St. Paul <br/>  Mississippi, Jackson <br/>  Missouri, Kansas City <br/>  Missouri, St. Louis <br/>  Montana, Billings <br/>  North Carolina, Charlotte <br/>  North Dakota, Fargo <br/>  Nebraska, Omaha <br/>  Nevada, Las Vegas <br/>  New Hampshire, Manchester <br/>  New Jersey, Newark <br/>  New Mexico, Albuquerque <br/>  New York, New York City <br/>  Ohio, Columbus <br/>  Oklahoma, Oklahoma City <br/>  Oregon, Portland <br/>  Pennsylvania, Philadelphia <br/>  Rhode Island, Providence <br/>  South Carolina, Charleston <br/>  South Dakota, Sioux Falls <br/>  Tennessee, Memphis <br/>  Texas, Dallas <br/>  Texas, Houston <br/>  Utah, Salt Lake City <br/>  Vermont, Brattleboro <br/>  Virginia, Richmond <br/>  Washington, Seattle <br/>  West Virginia, Charleston <br/>  Wisconsin, Milwaukee <br/>  Wyoming, Laramie <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Alabama, Birmingham <li>  Arizona, Phoenix <li>  Arkansas, Little Rock <li> California, Los Angeles <li> California, San Francisco <li>  Colorado, Denver <li>  Columbia, Washington DC <li>  Connecticut, Hartford <li>  Delaware, Wilmington <li>Florida, Miami <li>  Georgia, Atlanta <li> Hawaii, Honolulu <li> Idaho, Boise <li> Illinois, Aurora <li> Illinois, Chicago <li> Illinois, Cicero<li>  Indiana, Indianapolis <li>  Iowa, Iowa City <li>  Kansas, Wichita <li> Kentucky, Louisville <li>  Louisiana, New Orleans <li> Maine, Portland <li> Maryland, Baltimore <li>  Massachusetts, Boston <li> Michigan, Pontiac <li> Minnesota, Minneapolis <li> Minnesota, St. Paul <li> Mississippi, Jackson <li>  Missouri, Kansas City <li>Missouri, St. Louis <li>  Montana, Billings <li> North Carolina, Charlotte<li>North Dakota, Fargo <li> Nebraska, Omaha <li> Nevada, Las Vegas <li>  New Hampshire, Manchester <li> New Jersey, Newark <li> New Mexico, Albuquerque <li>  New York, New York City <li>Ohio, Columbus <li>Oklahoma, Oklahoma City <li> Oregon, Portland <li> Pennsylvania, Philadelphia <li> Rhode Island, Providence <li>  South Carolina, Charleston <li>South Dakota, Sioux Falls <li>  Tennessee, Memphis <li> Texas, Dallas <li>  Texas, Houston <li> Utah, Salt Lake City <li> Vermont, Brattleboro<li> Virginia, Richmond <li> Washington, Seattle <li>  West Virginia, Charleston<li>  Wisconsin, Milwaukee <li> Wyoming, Laramie</ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    

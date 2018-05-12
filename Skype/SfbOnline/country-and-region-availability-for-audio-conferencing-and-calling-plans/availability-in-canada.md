@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams disponibili per il Canada.
-ms.openlocfilehash: e79b8960366881ae4f5e6d2205cd5b935b468b08
-ms.sourcegitcommit: b93d1a0012aacb164d700db0143683cb6f276bf4
+ms.openlocfilehash: ecb8310f6440698ba8cd367d6128cde5b643b088
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-canada"></a>Disponibilità in Canada
 
@@ -38,7 +38,7 @@ Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams dispon
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per Toronto. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Toronto</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -64,7 +64,7 @@ Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams dispon
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | Calgary <br/>  Montreal <br/>  Toronto <br/>  Vancouver <br/>  Winnipeg <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | <ul><li>Calgary <li>  Montreal <li>  Toronto <li>  Vancouver <li>  Winnipeg </ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    

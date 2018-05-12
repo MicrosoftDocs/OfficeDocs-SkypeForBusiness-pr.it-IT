@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per l'Argentina i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 24c67f2104ec64340a9d1470bc44e75925085ab4
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 00f7d05855afd56382e162a1664a108f91beb858
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-argentina"></a>Disponibilità in Argentina
 
@@ -38,7 +38,7 @@ Di seguito sono disponibili per l'Argentina i servizi di Skype per le aziende e 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per Buenos Aires. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li>Buenos Aires</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Non disponibile <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -62,7 +62,7 @@ Di seguito sono disponibili per l'Argentina i servizi di Skype per le aziende e 
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | Buenos Aires <br/>  Cordoba <br/>  La Plata <br/>  Mar Del Plata <br/>  Mendoza <br/>  Rosario <br/>  San Miguel de Tucuman <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | <ul><li>Buenos Aires <li>Cordoba <li>La Plata <li>Mar Del Plata <li>Mendoza <br/>  <li>San Miguel de Tucuman <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili i numeri liberi a pagamento?  <br/> |Sì  <br/> |
    

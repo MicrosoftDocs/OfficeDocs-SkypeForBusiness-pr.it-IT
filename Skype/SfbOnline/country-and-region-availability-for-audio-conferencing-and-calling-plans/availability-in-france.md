@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per la Francia i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 27b20b58acd55329be1fc748b980d19ff2d8ce28
-ms.sourcegitcommit: 4e9574c8a9eac270135684aa4a8b77621aa46403
+ms.openlocfilehash: d9149fdf8f2c220526164b2f3244359ab60dda8b
+ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="availability-in-france"></a>Disponibilità in Francia
 
@@ -38,7 +38,7 @@ Di seguito sono disponibili per la Francia i servizi di Skype per le aziende e T
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per Paris. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Parigi</ul> Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -62,7 +62,7 @@ Di seguito sono disponibili per la Francia i servizi di Skype per le aziende e T
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | Angers <br/>  Bordeaux <br/>  Carcassonne <br/>  Dijon <br/>  Grenoble <br/>  Le Havre <br/>  Lille <br/>  Lione <br/>  Marsiglia <br/>  Montpellier <br/>  Nantes <br/>  Nizza <br/>  Parigi <br/>  Reims <br/>  Rennes <br/>  Saint-Etienne <br/>  Strasburgo <br/>  Tolone <br/>  Tolosa <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | <ul><li>Angers <li>  Bordeaux <li>  Carcassonne <li>  Dijon <li>  Grenoble <li>  Le Havre <li>  Lille <li>  Lione <li>  Marsiglia <li>  Montpellier <li>  Nantes <li>  Nizza <li>  Parigi <li>  Reims <li>  Rennes <li>  Saint-Etienne <li>  Strasburgo <li>  Tolone <li>  Tolosa </ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
