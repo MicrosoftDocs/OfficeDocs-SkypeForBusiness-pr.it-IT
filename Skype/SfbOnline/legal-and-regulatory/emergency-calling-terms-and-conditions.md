@@ -19,11 +19,11 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come servizi di emergenza (911) si differenziano dai servizi telefonici tradizionali e su come effettuare una chiamata. '
-ms.openlocfilehash: 1e96595796c92d3ba505b52e6321dd28db46f54c
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: 62d7354430c3548e246766016721002364a9a626
+ms.sourcegitcommit: c63e7a8a746d427a1c886e8dca4d631c851e417c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="emergency-calling-terms-and-conditions"></a>Termini e condizioni per le chiamate al numero di emergenza
 
