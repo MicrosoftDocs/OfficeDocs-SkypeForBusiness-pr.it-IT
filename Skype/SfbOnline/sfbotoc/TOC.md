@@ -34,13 +34,12 @@
 ### [Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
 ### [Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni](../audio-conferencing-in-office-365/turn-on-or-off-entry-and-exit-announcements-for-meetings.md)
 
-
-
 ## [Piani per chiamate in Office 365](../what-are-calling-plans-in-office-365/what-are-calling-plans-in-office-365.md)
 ### [Aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza dell'organizzazione](../what-are-calling-plans-in-office-365/add-change-or-remove-an-emergency-location-for-your-organization.md)
 ### [Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione](../what-are-calling-plans-in-office-365/add-or-remove-an-emergency-address-for-your-organization.md)
 ### [Assegnare, modificare o rimuovere il numero di telefono di un utente](../what-are-calling-plans-in-office-365/assign-change-or-remove-a-phone-number-for-a-user.md)
 ### [Assegnare o modificare l'indirizzo per gli interventi di emergenza di un utente](../what-are-calling-plans-in-office-365/assign-or-change-an-emergency-address-for-a-user.md)
+### [Blocco delle chiamate in arrivo](../what-are-calling-plans-in-office-365/block-incoming-calls.md)
 ### [Problemi noti nei Piani per chiamate](../what-are-calling-plans-in-office-365/calling-plans-known-issues.md)
 ### [Modificare l’indirizzo per gli interventi di emergenza per un utente](../what-are-calling-plans-in-office-365/change-the-emergency-address-for-a-user.md)
 ### [Modificare la posizione per gli interventi di emergenza per un utente](../what-are-calling-plans-in-office-365/change-the-emergency-location-for-a-user.md)
@@ -77,6 +76,7 @@
 ### [Creare una coda di chiamata del Sistema telefonico](../what-is-phone-system-in-office-365/create-a-phone-system-call-queue.md)
 ### [Ottenere telefoni per Skype for Business online](../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online.md)
 #### [Distribuzione dei telefoni per Skype for Business online](../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/deploying-skype-for-business-online-phones.md)
+#### [Impostazione di telefoni di Area comuni (CAP)](../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/setting-up-common-area-phones.md)
 ### [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md)
 ### [Vantaggi offerti dal Sistema telefonico](../what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system.md)
 ### Segreteria telefonica del Sistema telefonico
