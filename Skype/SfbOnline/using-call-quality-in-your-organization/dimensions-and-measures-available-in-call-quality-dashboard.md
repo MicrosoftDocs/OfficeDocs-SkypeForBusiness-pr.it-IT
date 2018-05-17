@@ -18,11 +18,11 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Get detailed information about the dimensions and measures exposed by the Call Quality Dashboard for Microsoft Teams and Skype for Business Online.
-ms.openlocfilehash: 86b244db777fd4b0a0a8d43e768f45432e3a4096
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 657a441f2dc3415006d0f126da876fa525a8610c
+ms.sourcegitcommit: 5a0b3fe49b64f08979c89443f66b15827034e755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="dimensions-and-measures-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibile nel Dashboard di qualità delle chiamate
 
@@ -513,7 +513,7 @@ Nella tabella seguente sono elencate le misure correntemente disponibili nel das
 
 [Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
-[Che cos'è la differenza tra Analitica delle chiamate e chiamate Dashboard qualità?](Difference-between-call-analytics-and-call-quality-dashboard.md)
+[Chiamata Analitica e Dashboard qualità chiamata](Difference-between-call-analytics-and-call-quality-dashboard.md)
 
   
  

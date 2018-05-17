@@ -19,11 +19,11 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Utilizzare chiama Analitica dettagli sui dispositivi, reti e connettività per la risoluzione dei problemi degli utenti con Skype per chiamate di lavoro e le riunioni.
-ms.openlocfilehash: 8f782a18dd7cb7fe7cbae73c7bd43b3e44c6928c
-ms.sourcegitcommit: dea27df69d948b7b9cc017b7023c4013cee8e4d1
+ms.openlocfilehash: cb887a1c582c9547616c2133c2f175ac634e2da8
+ms.sourcegitcommit: 5a0b3fe49b64f08979c89443f66b15827034e755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-call-analytics-to-troubleshoot-poor-skype-for-business-call-quality"></a>Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate
 
@@ -75,7 +75,7 @@ Per le sessioni audio di qualità dei dati QoE (dagli utenti QoE), nella tabella
 ## <a name="related-topics"></a>See also
 [Configurazione di Skype for Business Call Analytics](set-up-call-analytics.md)
 
-[Che cos'è la differenza tra Analitica delle chiamate e chiamate Dashboard qualità?](difference-between-call-analytics-and-call-quality-dashboard.md)
+[Chiamata Analitica e Dashboard qualità chiamata](difference-between-call-analytics-and-call-quality-dashboard.md)
 
   
  

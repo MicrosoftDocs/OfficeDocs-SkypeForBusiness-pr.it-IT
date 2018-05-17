@@ -18,11 +18,11 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Configurare e utilizzare chiamate Analitica per identificare e risolvere i problemi Skype per problemi di qualità chiamata Business e Teams Microsoft.
-ms.openlocfilehash: 6e4566198e140c94da40f4db1a890eb4190d5da3
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 0fea9e37933908ef64f1b2eb100f3851f84a6690
+ms.sourcegitcommit: 5a0b3fe49b64f08979c89443f66b15827034e755
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-up-skype-for-business-call-analytics"></a>Configurazione di Skype per Business chiamare Analitica
 
@@ -89,7 +89,7 @@ Se si sta creando il file con estensione csv o TSV da zero, vedere [file di dati
 
 [Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
-[Che cos'è la differenza tra Analitica delle chiamate e chiamate Dashboard qualità?](difference-between-call-analytics-and-call-quality-dashboard.md)
+[Chiamata Analitica e Dashboard qualità chiamata](difference-between-call-analytics-and-call-quality-dashboard.md)
 
   
  
