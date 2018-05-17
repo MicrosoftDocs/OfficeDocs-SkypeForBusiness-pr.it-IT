@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per i paesi bassi i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 0977d1c6d099f0a49ec7d5cfd42138a0e70367ef
-ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
+ms.openlocfilehash: d0992da6e45a4ecdc6fde70ac181f02df4e77fe5
+ms.sourcegitcommit: 265fbdc1a8ac566751e707874656bd6b90de980d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="availability-in-the-netherlands"></a>Disponibilità nei Paesi Bassi
 
@@ -56,6 +56,7 @@ Di seguito sono disponibili per i paesi bassi i servizi di Skype per le aziende 
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Minuti disponibili per la chiamata Plans. |Sono disponibili quattro opzioni plan al mese di calendario: <ul><li>120 minuti chiamata pianificare nazionale </li><li>240 minuti chiamata pianificare nazionale</li></li><li>3000 minuto chiamata pianificare nazionale </li></li><li>600 minuto per nazionali e internazionali chiamata piani</li></li> 
+|Può effettuare chiamate in uscita a numeri speciali? <br/> | Non è supportato in questa fase. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi

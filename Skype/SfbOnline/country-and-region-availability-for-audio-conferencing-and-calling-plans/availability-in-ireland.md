@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Di seguito sono disponibili per l'Irlanda i servizi di Skype per le aziende e Teams di Microsoft Office 365.
-ms.openlocfilehash: 1445895530403fcf3f38cfa787faa4df7e1dfdb2
-ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
+ms.openlocfilehash: f3443286f890ea7b7111c0605490789e91e08320
+ms.sourcegitcommit: 265fbdc1a8ac566751e707874656bd6b90de980d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="availability-in-ireland"></a>Disponibilità irlandese
 
@@ -56,6 +56,7 @@ Di seguito sono disponibili per l'Irlanda i servizi di Skype per le aziende e Te
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Minuti disponibili per la chiamata Plans. |Sono disponibili quattro opzioni plan al mese di calendario: <ul><li>120 minuti chiamata pianificare nazionale </li><li>240 minuti chiamata pianificare nazionale</li></li><li>3000 minuto chiamata pianificare nazionale </li></li><li>600 minuto per nazionali e internazionali chiamata piani</li></li> 
+|Può effettuare chiamate in uscita a numeri speciali? <br/> | Non è supportato in questa fase. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi

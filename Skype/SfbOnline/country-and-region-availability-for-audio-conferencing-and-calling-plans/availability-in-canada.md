@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams disponibili per il Canada.
-ms.openlocfilehash: ecb8310f6440698ba8cd367d6128cde5b643b088
-ms.sourcegitcommit: febd51fd7988602a8c9839e4e9872ae8f5d77c63
+ms.openlocfilehash: 7547e82f6e5554ccb881ac167719f67d578ca5fe
+ms.sourcegitcommit: 265fbdc1a8ac566751e707874656bd6b90de980d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="availability-in-canada"></a>Disponibilità in Canada
 
@@ -56,6 +56,7 @@ Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams dispon
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Minuti disponibili per la chiamata Plans. |Sono disponibili quattro opzioni plan al mese di calendario: <ul><li>120 minuti chiamata pianificare nazionale </li><li>240 minuti chiamata pianificare nazionale</li></li><li>3000 minuto chiamata pianificare nazionale </li></li><li>600 minuto per nazionali e internazionali chiamata piani</li></li> 
+|Può effettuare chiamate in uscita a numeri speciali?  <br/> | Non è supportato in questa fase.<br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
 > [!Note]
 > Le chiamate verso gli USA vengono considerate come chiamate nazionali.
