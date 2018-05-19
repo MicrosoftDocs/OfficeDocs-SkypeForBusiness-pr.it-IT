@@ -23,11 +23,11 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 description: Puoi selezionare un paese/un’area geografica per vedere se sono disponibili o meno Audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e i numeri verdi e a tariffa.
-ms.openlocfilehash: 5707784f04dc52697ecd3d65b4c48ec105d10247
-ms.sourcegitcommit: 2c084358844f02fbf7953f2ea49ed6d710cbf06f
+ms.openlocfilehash: c106f90cee586fccbeb87b9b45757691191b449e
+ms.sourcegitcommit: 7bb52d5d998415555a535a32419e99b68e3be6a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica
 
@@ -163,7 +163,7 @@ Le chiamate in uscita dall'interno di una riunione verso un altro paese/un’alt
 ### <a name="phone-system"></a>Sistema telefonico
 Con Sistema telefonico puoi creare operatori automatici e code di chiamata (con un numero verde o a tariffa) per rispondere alle chiamate in arrivo alla tua organizzazione e, quando aggiungi un Piano per chiamate per gli utenti, questi ultimi possono utilizzare Skype for Business per assolvere alle attività di base di controllo delle chiamate, come effettuare e ricevere chiamate, trasferire chiamate, attivare o disattivare l’audio delle chiamate. Gli utenti di **Sistema telefonico** possono fare clic su un nome nella loro rubrica e Skype for Business effettuerà una chiamata a tale persona. Per effettuare e ricevere chiamate, gli utenti di **Sistema telefonico** possono utilizzare i loro dispositivi mobili, una cuffia auricolare con laptop o PC o uno dei numerosi telefoni IP che funzionano con Skype for Business.
 
-Oltre a ottenere numeri di telefono per singoli utenti di Office 365, è anche possibile cercare e acquisire numeri di telefono a tariffa o gratuiti (numeri verdi) per servizi come Audioconferenza (per il bridging delle conferenze), operatori automatici e code di chiamata. Questi vengono chiamati numeri di servizio. Visualizzare [i numeri di telefono di ottenere assistenza](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md) per ottenere i numeri di telefono. Ai tuoi utenti, tuttavia, una volta assegnato loro un Piano per le chiamate, puoi assegnare un numero di telefono utente per permettere loro di effettuare e ricevere chiamate. Puoi trovare questi numeri di telefono andando [qui](../what-are-calling-plans-in-office-365/getting-phone-numbers-for-your-users.md). Puoi anche consultare [Assegnare, modificare o rimuovere il numero di telefono di un utente](../what-are-calling-plans-in-office-365/assign-change-or-remove-a-phone-number-for-a-user.md). 
+Oltre a ottenere numeri di telefono per singoli utenti di Office 365, è anche possibile cercare e acquisire numeri di telefono a tariffa o gratuiti (numeri verdi) per servizi come Audioconferenza (per il bridging delle conferenze), operatori automatici e code di chiamata. Questi vengono chiamati numeri di servizio. Visualizzare [i numeri di telefono di ottenere assistenza](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md) per ottenere i numeri di telefono. Ai tuoi utenti, tuttavia, una volta assegnato loro un Piano per le chiamate, puoi assegnare un numero di telefono utente per permettere loro di effettuare e ricevere chiamate. Per trovare i numeri di telefono, accedere alla [Guida i numeri di telefono per gli utenti](../what-are-calling-plans-in-office-365/getting-phone-numbers-for-your-users.md). Puoi anche consultare [Assegnare, modificare o rimuovere il numero di telefono di un utente](../what-are-calling-plans-in-office-365/assign-change-or-remove-a-phone-number-for-a-user.md). 
 
 [Tariffe del Sistema telefonico](https://products.office.com/en-us/skype-for-business/phone-system#Requirements)
 

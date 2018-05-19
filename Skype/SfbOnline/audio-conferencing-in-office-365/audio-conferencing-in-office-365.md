@@ -17,11 +17,11 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-ms.openlocfilehash: c43a49ee62fe20d8f74e0968a13ef7f40d6a3eaf
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 4157485cc29334585430701b703218217663bb24
+ms.sourcegitcommit: 7bb52d5d998415555a535a32419e99b68e3be6a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audio-conferencing-in-office-365"></a>Audioconferenza in Office 365
 Audioconferenze con accesso esterno in Office 365 consente agli utenti di chiamare alle riunioni dal telefono. Audioconferenze con accesso esterno consente ai partecipanti Telefono fino a 250.
@@ -46,9 +46,9 @@ Per informazioni sui prezzi, vedere [prezzi per le audioconferenze](https://prod
 ## <a name="where-is-it-available"></a>Dove è disponibile?
 Con le conferenze Audio, gli utenti possono utilizzare per partecipare a riunioni a pagamento e numeri verdi. I numeri a tariffa (servizio) vengono assegnati automaticamente come numeri condivise per conferenze audio per le organizzazioni quando sono abilitati per le conferenze Audio. I numeri verdi e a tariffa dedicati possono essere assegnati all'organizzazione da altre città.
 
-Numeri verdi (numeri service) sono disponibili, ma solo in alcuni paesi. Che cos'è disponibile nel proprio paese o regione, Vai [qui](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
+Numeri verdi (numeri service) sono disponibili, ma solo in alcuni paesi. Per verificare che cos'è disponibile nel proprio paese o regione, vedere [disponibilità paese e alle aree per le conferenze Audio e la chiamata Plans](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
 
-Dopo aver deciso di adottare i servizi di Audioconferenza per la propria azienda, occorrerà acquistare una licenza di servizi di **Audioconferenza** per ciascuna persona che pianificherà od ospiterà una riunione audio.
+Dopo avere deciso desiderate audioconferenze con accesso esterno per l'organizzazione, è necessario acquistare una licenza di **Audioconferenza** per ogni persona dell'organizzazione che verrà pianificazione/host una riunione audio.
 
 ## <a name="how-do-conferencing-bridges-work"></a>Come funzionano i ponti di audioconferenze
 Per configurare conferenze Audio per Skype per Business o Microsoft Teams, si otterrà un ponte per conferenze audio. Un ponte per conferenze può contenere uno o più numeri di telefono. Si imposta il numero di telefono verrà inclusa in inviti riunione per Skype per le applicazioni aziendali e Teams Microsoft. È possibile [modificare i numeri di telefono del ponte per conferenze](change-the-phone-numbers-on-your-audio-conferencing-bridge.md)ed è inoltre possibile [modificare altre impostazioni di ponte conferenza](change-the-settings-for-an-audio-conferencing-bridge.md). 
@@ -87,7 +87,7 @@ Numeri di telefono dedicato audioconferenze con accesso esterno sono i numeri di
 - **Utilizzare un modulo di richiesta per nuovi numeri.** In alcuni casi (a seconda del paese/area geografica) non sarà in grado di ottenere numeri di telefono nuovo utilizzando il Skype per interfaccia di amministrazione di Business o sarà necessario area codici o i numeri di telefono specifico. In questo caso, dovrai scaricare un modulo e inviarcelo. Per ulteriori informazioni, vedere [Manage i numeri di telefono per l'organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) .
 
 ## <a name="how-do-you-set-it-up"></a>Come si configura lo?
-Dopo avere deciso impostare le conferenze Audio per gli utenti, è possibile seguire i passaggi descritti [di seguito](set-up-audio-conferencing.md) per eseguire questa operazione.
+Dopo avere deciso impostare le conferenze Audio per gli utenti, per, vedere [configurazione di conferenze Audio per Skype per le aziende e team Microsoft che](set-up-audio-conferencing.md) è possibile attenersi alla procedura per eseguire questa operazione.
 
 ## <a name="related-topics"></a>See also
 
