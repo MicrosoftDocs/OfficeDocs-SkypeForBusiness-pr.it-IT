@@ -18,11 +18,11 @@ f1keywords:
 ms.custom:
 - SMB
 description: È possibile abilitare Skype riunione trasmissione e apportare modifiche alle impostazioni e i criteri per le riunioni.
-ms.openlocfilehash: e4e51e7e23138fe2e0b0cd1ce05d19f275c085b9
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 7cba3f66713d76e32da01d3dd318a6096dbed35c
+ms.sourcegitcommit: faea19005301c56a081b6e6157965becac76ec2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="make-changes-to-skype-meeting-broadcast-settings-for-your-organization"></a>Apportare modifiche alle impostazioni di trasmissione riunione Skype per l'organizzazione
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/18/2018
     
 - **Funzionalità di anteprima di trasmissione riunione abilitare Skype per l'organizzazione** Skype per programmi clienti aziendali forniscono anticipato accesso a nuovi prodotti e funzionalità. In questo modo l'organizzazione anteprima nuove caratteristiche e la possibilità di verificare le nuove funzionalità nel tuo ambiente e fornire commenti e suggerimenti prima è rilasciare build di prodotto al pubblico.<br/>[Skype per l'anteprima di Business](https://www.skypepreview.com/)
     
-- **Consenti agli organizzatori di pianificare riunioni anonime** In tal modo gli organizzatori non chiuso le didascalie e translation per le riunioni di trasmissione.
+- **Consenti agli organizzatori di pianificare riunioni anonime** In tal modo gli organizzatori di creare eventi di trasmissione che consentono di tutti gli utenti esterni all'organizzazione di partecipare senza un requisito per l'accesso.
     
 - **Consenti riunioni trasmissione devono essere registrati** In questo modo le riunioni che si devono essere registrati tramite il relatore o organizzatore.
     
