@@ -1,5 +1,6 @@
 ---
 title: Skype di licenza di componente aggiuntivo Business e Teams Microsoft
+ms.date: 05/23/2018
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,11 +22,11 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: "Informazioni sulle licenze di componente aggiuntivo, le funzioni che si otterranno con, come acquistare li per il prodotto e come utilizzare l'operatore di telefonia esistente con loro. È possibile ottenere informazioni sui prezzi e plan dettagli per Office 365, titoli di coda di comunicazione, e prevede la chiamata. "
-ms.openlocfilehash: 4bc58d0863890ab9cdd610f3bfa21803c81f8671
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 8de537ccec1e1ff10d42c1b31bae539bde671ba8
+ms.sourcegitcommit: 68e68c96c18d854afc0158920e6d9d738f276d91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="skype-for-business-and-microsoft-teams-add-on-licensing"></a>Skype di licenza di componente aggiuntivo Business e Teams Microsoft
 

@@ -19,11 +19,11 @@ ms.custom:
 - Legal
 hideEdit: true
 description: Microsoft raccoglie dati censimento, dati di utilizzo e di errore per comprendere l'utilizzo Skype per le aziende e dove gli utenti riscontrano problemi. I dati vengono utilizzati per pianificare miglioramenti del prodotto.
-ms.openlocfilehash: 37073ad92933e03b9b05c7d3c8d9cd427276cc5b
-ms.sourcegitcommit: c63e7a8a746d427a1c886e8dca4d631c851e417c
+ms.openlocfilehash: 46a292e462708b77b60aa1c8a52c2148fbc82775
+ms.sourcegitcommit: 68e68c96c18d854afc0158920e6d9d738f276d91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="skype-for-business-and-microsoft-teams-data-collection-practices"></a>Skype per procedure di raccolta dati Business e Teams Microsoft
 
