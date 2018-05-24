@@ -18,10 +18,10 @@ f1keywords: None
 ms.custom:
 - Legal
 description: "Si tratta di contenuto che deve essere pubblicato in modo da soddisfare i requisiti per l'accesso facilitato, conformità e normativi per Skype Business online in Francia. "
-ms.openlocfilehash: 7c17cd60f7ba693a182e22aeba8d160942a6bf37
-ms.sourcegitcommit: c63e7a8a746d427a1c886e8dca4d631c851e417c
+ms.openlocfilehash: 498fbb07ab5d2dd6ea036e1ceeb1e5598203a8cf
+ms.sourcegitcommit: 68e68c96c18d854afc0158920e6d9d738f276d91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="legal-and-regulatory"></a><span data-ttu-id="04859-103">Legali e normativi</span><span class="sxs-lookup"><span data-stu-id="04859-103">Legal and regulatory</span></span>
+# <a name="legal-and-regulatory"></a><span data-ttu-id="9ccf9-103">Legali e normativi</span><span class="sxs-lookup"><span data-stu-id="9ccf9-103">Legal and regulatory</span></span>
