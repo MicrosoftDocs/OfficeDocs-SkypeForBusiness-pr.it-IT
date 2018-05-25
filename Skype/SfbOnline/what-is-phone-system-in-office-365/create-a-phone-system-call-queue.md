@@ -20,11 +20,11 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: 'Learn how to set up phone system for Office 365 (Cloud PBX) call queues to give you an organizational greeting, music on hold, and redirecting calls to call agents in distribution lists and security groups. You can also set the maximum queue size, time out, and call handling options. '
-ms.openlocfilehash: 81fbb40aad10687d3a75020a23b20cbeee7d5c2e
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 119e56f27edc992466a6565235715d2703b1cb12
+ms.sourcegitcommit: f76ac33ae47eafa2ae853cc031b6ac53c2d4fbbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="create-a-phone-system-call-queue"></a>Creare una coda di chiamata di sistema telefonico
 
@@ -127,7 +127,10 @@ Nell' **interfaccia di amministrazione di Skype for Business**, fai clic su **In
 ![Vengono illustrate le chiamate opzioni metodo di distribuzione](../images/5d249515-d532-4af2-90da-011404028b89.png)
   
 ***
-![Numero 1](../images/sfbcallout1.png)<br/>**Chiamare il metodo di distribuzione** È possibile scegliere **operatore** o **seriale** per il metodo di distribuzione della coda di chiamata. Tutte le code di chiamata nuovi ed esistenti hanno routing operatore selezionata per impostazione predefinita. Per utilizzare il routing seriale, è necessario scegliere l'opzione di routing **seriale** in modo esplicito nell'interfaccia utente e i cmdlet. <br/><br/> Quando si sceglie il routing seriale e viene salvata la coda di chiamata, le chiamate dalla coda squillerà gli agenti uno alla volta, a partire dall'inizio dell'elenco di agenti. Se un agente Elimina o non seleziona una chiamata, la chiamata squillerà agente successivo nell'elenco e cercherà tutti gli agenti uno alla volta fino a quando non si è prelevato o timeout in attesa nella coda.  <br/><br/>  **Nota:** Il routing seriale ignorerà gli agenti di persone **non in linea**, aver impostato la presenza su **non disturbare**o **scelto** di ricevere chiamate da questa coda.  
+![Numero 1](../images/sfbcallout1.png)<br/>**Chiamare il metodo di distribuzione** È possibile scegliere **operatore** o **seriale** per il metodo di distribuzione della coda di chiamata. Tutte le code di chiamata nuovi ed esistenti hanno routing operatore selezionata per impostazione predefinita. Per utilizzare il routing seriale, è necessario scegliere l'opzione di routing **seriale** in modo esplicito nell'interfaccia utente e i cmdlet. <br/><br/> Quando si sceglie il routing seriale e viene salvata la coda di chiamata, le chiamate dalla coda squillerà gli agenti uno alla volta, a partire dall'inizio dell'elenco di agenti. Se un agente Elimina o non seleziona una chiamata, la chiamata squillerà agente successivo nell'elenco e cercherà tutti gli agenti uno alla volta fino a quando non si è prelevato o timeout in attesa nella coda.   
+
+> [!NOTE]
+> Il routing seriale ignorerà gli agenti di persone **non in linea**, aver impostato la presenza su **non disturbare**o **scelto** di ricevere chiamate da questa coda. 
    
 ### <a name="select-an-agent-opt-out-option"></a>Selezionare un agente esplicito opzione
 
@@ -222,7 +225,7 @@ Questi sono i cmdlet necessari per gestire una coda di chiamata.
     
 ### <a name="more-about-windows-powershell"></a>Altre informazioni su Windows PowerShell
 
-- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     

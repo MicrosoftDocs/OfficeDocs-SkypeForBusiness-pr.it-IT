@@ -19,11 +19,11 @@ ms.custom:
 - Legal
 hideEdit: true
 description: Microsoft raccoglie dati censimento, dati di utilizzo e di errore per comprendere l'utilizzo Skype per le aziende e dove gli utenti riscontrano problemi. I dati vengono utilizzati per pianificare miglioramenti del prodotto.
-ms.openlocfilehash: 46a292e462708b77b60aa1c8a52c2148fbc82775
-ms.sourcegitcommit: 68e68c96c18d854afc0158920e6d9d738f276d91
+ms.openlocfilehash: 8ea357aefe96505285d9c7bb870ef852ea2649a4
+ms.sourcegitcommit: f76ac33ae47eafa2ae853cc031b6ac53c2d4fbbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="skype-for-business-and-microsoft-teams-data-collection-practices"></a>Skype per procedure di raccolta dati Business e Teams Microsoft
 
@@ -77,8 +77,9 @@ Raccolta dati di utilizzo è attivata per impostazione predefinita ma locale gli
 Gli utenti finali non possono attivare raccolta dati di utilizzo attivato o disattivato.
   
 Per le pagine web di join launcher e Skype riunioni App, la modalità di controllo del telemetria è a questo criterio:
-  
-Set-CsWebServiceConfiguration - MeetingUxEnableTelemetry $True
+ 
+`Set-CsWebServiceConfiguration -MeetingUxEnableTelemetry $True` 
+
   
 Questo criterio viene impostato automaticamente su false, in modo che insieme telemetria è disattivata per impostazione predefinita. Questa impostazione è per ogni pool e controlla tutti gli utenti che si connettono a Skype riunioni App a una riunione ospitata nel server.
   
@@ -99,9 +100,9 @@ Segnalazione errori richiede due operazioni:
   
 - L'impostazione di criteri di gruppo DisableAutomaticSendTracing essere impostata su False, nel server o nell'interfaccia di amministrazione tenant (è lo stato predefinito). Per ulteriori informazioni, vedere [Configure criteri di avvio automatico client in Skype per Business Server 2015](https://technet.microsoft.com/EN-US/library/gg425941.aspx) .
     
-- Gli utenti finali singolarmente consentire (fare clic sull'icona dell'ingranaggio e la finestra di dialogo Opzioni viene aperto con la visualizzazione della scheda Generale) nella scheda Generale nel Skype per client di Business.
+- Gli utenti finali consenso esplicito singolarmente nella scheda Generale (fare clic sull'icona dell'ingranaggio ![icona ingranaggio](../images/70f1b43f-16d6-4172-9139-71d845c4ed5c.png) e quindi verrà visualizzata la finestra di dialogo **Opzioni** con la visualizzazione della scheda **Generale** ) in Skype per client di Business.
     
-     ![Icona ingranaggio](../images/70f1b43f-16d6-4172-9139-71d845c4ed5c.png)
+ 
   
 ![Skype per checkbox di raccolta dati Business nelle opzioni > finestra di dialogo generale](../images/68bc8f77-deaa-478c-9977-a5259b88df3e.png)
   

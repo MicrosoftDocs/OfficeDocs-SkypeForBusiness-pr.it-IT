@@ -18,11 +18,11 @@ f1keywords:
 ms.custom:
 - Reporting
 description: Il nuovo dashboard di Office 365 report mostra Panoramica attività tra i prodotti di Office 365 all'interno dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare Skype per report sull'utilizzo dei dispositivi Business per visualizzare i dispositivi, inclusi sistemi operativi Windows e dispositivi mobili con Skype per applicazioni aziendali installato e utilizzano per la messaggistica Istantanea e riunioni. Rapporti di attività nell'interfaccia di amministrazione di Office 365 per ulteriori informazioni, consultare.
-ms.openlocfilehash: 711138e62b6614606b8532004591547cb2acd525
-ms.sourcegitcommit: 7ec95ea34422e635661f3659bbc43a7a3484ff99
+ms.openlocfilehash: 415522c9b8999229e32c90b2ac3be0a69a068a9c
+ms.sourcegitcommit: f76ac33ae47eafa2ae853cc031b6ac53c2d4fbbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="device-usage-report"></a>Report sull'utilizzo dei dispositivi
 
@@ -54,8 +54,9 @@ La relazione, nonché altri Skype per i report di Business, offre informazioni d
 ***
 ![Numero 1](../images/sfbcallout1.png)<br/>È possibile visualizzare il report **Skype per l'utilizzo del dispositivo Business** le tendenze negli ultimi 7 giorni, 30 giorni, 90 giorni o 180 giorni. Tuttavia, se si fa clic su in un giorno particolare del rapporto di tabella (vedere numero 7) verrà visualizzati i dati per 30 giorni, fino alla data (vedere numero 2) per cui è stato generato il rapporto.
 
-    > [!Note]
-    > If you click into the details of a specific day, the table will only show data for the 30 days up to the date when the report was generated.
+> [!NOTE]
+> Se fa clic su nei dettagli di un giorno specifico, la tabella verrà visualizzati solo i dati per 30 giorni fino alla data quando è stato generato il rapporto.
+    
 ***
 ![Numero 2](../images/sfbcallout2.png)<br/>
 Ogni report riporta la data in cui è stato generato. I report riflettono in genere una latenza 24 a 48 ore di tempo di attività. 
