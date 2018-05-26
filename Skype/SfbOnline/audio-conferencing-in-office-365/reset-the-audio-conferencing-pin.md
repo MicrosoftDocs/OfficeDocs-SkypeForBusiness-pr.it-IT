@@ -20,11 +20,11 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Scoprire che cosa è necessario tenere conto PIN e su come reimpostare i valori. '
-ms.openlocfilehash: 092d51061c374e14485527993a95e03e8e29649d
-ms.sourcegitcommit: b93d1a0012aacb164d700db0143683cb6f276bf4
+ms.openlocfilehash: 956c8e1ec7a83832c9aa2605845bc7fd42a047f7
+ms.sourcegitcommit: 9d816453083c26fd24f8a1cdc0f53f3d218c43b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="reset-the-audio-conferencing-pin"></a>Reimpostare il PIN per conferenze Audio
 
@@ -32,7 +32,17 @@ Un PIN è un codice costituito da numeri che viene creati per ogni Skype per ute
   
 È possibile avviare riunioni quando si unisce a un utente autenticato mediante un Skype per applicazioni aziendali o Microsoft Teams oppure quando l'organizzatore accede a con il proprio PIN nel telefono. Se è richiesto un PIN per avviare la riunione tramite telefono, per impostazione predefinita tutti gli utenti che partecipano alla riunione tramite telefono prima dell'inizio della riunione dovranno rimanere nella sala di attesa ascoltando musica fino all'inizio della riunione. Se l'organizzatore di una riunione non richiede il PIN per avviare la riunione tramite telefono, quando un chiamante tenta di partecipare alla riunione, non dovrà specificare un PIN.
   
-## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-reset-a-users-pin"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png) Reimpostare il PIN dell'utente
+## <a name="reset-a-users-pin"></a>Reimpostare il PIN dell'utente
+
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
+
+1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
+
+2. Nella parte superiore della pagina, fare clic su **Modifica**.
+
+3. In **Servizi di conferenza Audio**, fare clic su **Reimposta PIN**.
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png)  **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -45,9 +55,16 @@ Un PIN è un codice costituito da numeri che viene creati per ogni Skype per ute
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
    
-## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-have-a-user-reset-his-or-her-own-pin"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png) Dispongono di un utente reimpostare il proprio PIN
+## <a name="have-a-user-reset-his-or-her-own-pin"></a>Dispongono di un utente reimpostare il proprio PIN
 
-Un utente può reimpostare un PIN utilizzando l'opzione **Reimposta PIN** nella pagina **conferenza telefonica** . Pagina Thsi accessibile in uno dei tre modi:
+![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
+
+1. Richiedere all'utente di accedere a [https://admin0m.online.lync.com/lscp/usp/pstnconferencing](https://admin0m.online.lync.com/lscp/usp/pstnconferencing).
+2. Fare clic su **Reimposta PIN**. 
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png)  **utilizzando Skype per interfaccia di amministrazione di Business**
+
+Un utente può reimpostare un PIN utilizzando l'opzione **Reimposta PIN** nella pagina **conferenza telefonica** . In questa pagina è possibile accedere in uno dei tre modi:
 
 * In un browser, accedere a [https://mysettings.lync.com/pstncalling](https://mysettings.lync.com/pstncalling).
 * Skype per le aziende, fare clic sulla freccia **Mostra Menu** accanto al pulsante **Opzioni**e quindi fare clic su **Strumenti di** > **Le impostazioni di conferenza telefonica**.
