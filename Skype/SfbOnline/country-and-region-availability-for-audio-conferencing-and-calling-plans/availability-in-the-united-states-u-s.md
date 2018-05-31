@@ -21,11 +21,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per gli Stati Uniti.
-ms.openlocfilehash: 5120f4f6e51f2a5ce3a87a8febf4b82fd68288fd
-ms.sourcegitcommit: 5e094591704e27d9d802ff86c1ada6d775ab783a
+ms.openlocfilehash: b1d5f66f1ebb63553904a9b1992bf9e08d46a98a
+ms.sourcegitcommit: 0a0fd436d4d732710bb65e1809ac28dd2e0df41a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "19526341"
 ---
 # <a name="availability-in-the-united-states-us"></a>Disponibilità negli Stati Uniti (Stati Uniti)
 
@@ -55,7 +56,7 @@ Ecco i servizi di Skype per le aziende e Teams di Microsoft Office 365 per gli S
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per la chiamata Plans. |Sono disponibili quattro opzioni plan al mese di calendario: <ul><li>120 minuto nazionale chiamata pianificare (disponibilità è limitata)</li><li>240 minuto nazionale chiamata pianificare (disponibilità è limitata)</li></li><li>1200 minuto chiamata pianificare nazionale </li></li><li>600 minuti per nazionali e internazionali chiamata piani</li></li> 
+|Minuti disponibili per la chiamata Plans. |Sono disponibili quattro opzioni plan al mese di calendario: <ul><li>120 minuto nazionale chiamata pianificare (disponibilità è limitata)</li><li>240 minuto nazionale chiamata pianificare (disponibilità è limitata)</li></li><li>3000 minuto chiamata pianificare nazionale </li></li><li>600 minuti per nazionali e internazionali chiamata piani</li></li> 
 |Può effettuare chiamate in uscita a numeri speciali? <br/> | Non è supportato in questa fase. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
 >[!Note] 
