@@ -17,11 +17,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile utilizzare Skype per report pool minuto Business PSTN per visualizzare il numero di minuti utilizzati durante il mese corrente all'interno dell'organizzazione.
-ms.openlocfilehash: 850a6659311b030fff6ca6c10660491694c50c27
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: be1b3cbea37f8d66c25ef6c1e75f18e7473a299e
+ms.sourcegitcommit: 0a0fd436d4d732710bb65e1809ac28dd2e0df41a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "19526945"
 ---
 # <a name="pstn-minute-pools-report"></a>Rapporto pool minuto PSTN
 
@@ -38,6 +39,8 @@ La relazione, nonché altri Skype per i report di Business, offre informazioni d
 > I report sono disponibili quando si accede a Skype for Business come amministratore dall'interfaccia di amministrazione di Office 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-pstn-minute-pools-report"></a>Come ottenere Skype per report pool minuto Business PSTN
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 - Accedere **all'interfaccia di amministrazione di Office 365** > **Admin Center** > **Skype per Business admin center** > **report** > **pool minuto PSTN**.
     
@@ -57,12 +60,11 @@ Questo è l'aspetto del report.
 ***
 ![Numero 1](../images/sfbcallout1.png)<br/>La tabella mostra suddivisione dei pool minuto con licenza (funzionalità) e la posizione di utilizzo. 
 *    **Capacità** è il piano di licenza/servizio utilizzato per la chiamata. I piani di servizio di licenza e che potrebbe essere riportato in questo report sono:
-     * MCOPSTNPP - Communications titoli di coda
      * MCOPSTN1 - nazionale chiamata pianificare (minuto 3000 1200/US-minuto UE piani
      * MCOPSTN2 - piano chiamate internazionali
      * MCOPSTN5 - nazionale chiamata Plan (piano di chiamata di 120 minuti)
+     * MCOPSTN6 - nazionale chiamata Plan (piano chiamante 240 minuti)
      * MCOMEETADD - audioconferenze con accesso esterno
-     * MCOMEETACPEA - retributive Per minuto audioconferenze con accesso esterno
 *    **Descrizione delle funzionalità** è una descrizione del tipo di licenza utilizzata per la chiamata.
 *    **Paese minuto Pool** è il percorso di utilizzo di licenza di uno o più utenti che condividono il pool minuto. 
 *    **Minuti utilizzato** è il numero di minuti utilizzati ogni mese.
