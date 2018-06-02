@@ -18,11 +18,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Activity reports, what it contains, and how to interpret the data. '
-ms.openlocfilehash: 0b376ddecf13a1346e17f23bbc1780e2780255dc
-ms.sourcegitcommit: 7ec95ea34422e635661f3659bbc43a7a3484ff99
+ms.openlocfilehash: 3240f26159e39169e1e31dcdb278acbd43a13f11
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "19516865"
 ---
 # <a name="activity-report"></a>Rapporto attività
 
@@ -56,8 +57,9 @@ Puoi consultare il report attività in Skype for Business dell'utente, visualizz
 ![Numero 1](../images/sfbcallout1.png)<br/>
 Il rapporto attività di posta elettronica **Skype per l'attività aziendali** può essere visualizzato per le tendenze negli ultimi 7 giorni, 30 giorni, 90 giorni o 180 giorni. Tuttavia, se si fa clic su in un giorno particolare del rapporto di tabella (vedere numero 7) verrà visualizzati i dati fino a 28 giorni dalla data corrente (non la data della generazione del report).
 
-    > [!Note]
-    > If you click into the details of a specific day, the table will only show data for the 30 days up to the date when the report was generated.
+> [!NOTE]
+> Se fa clic su nei dettagli di un giorno specifico, la tabella verrà visualizzati solo i dati per 30 giorni fino alla data quando è stato generato il rapporto.
+
 ***
 ![Numero 2](../images/sfbcallout2.png)<br/>
 Ogni report riporta la data in cui è stato generato. I report riflettono in genere una latenza 24 a 48 ore di tempo di attività. 
@@ -80,7 +82,10 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 ![Numero 7](../images/sfbcallout7.png)<br/>
 La tabella mostra suddivisione di tutte le attività di conferenza per utente. Mostra tutti gli utenti che dispongono di Skype per le aziende assegnata e le attività di conferenza. Puoi aggiungere altre colonne alla tabella.
 *    **Nome utente** è il nome dell'utente.
-*    **Eliminato** indica che la licenza dell'utente è stata rimossa. <br/> <br/> **Nota:** Attività per un utente eliminato sarà comunque visualizzata in un rapporto, purché potrà è stato concesso in licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.<br/><br/>
+*    **Eliminato** indica che la licenza dell'utente è stata rimossa.<br/><br/>
+    > [!NOTE]
+    > Attività per un utente eliminato sarà comunque visualizzata in un rapporto, purché potrà è stato concesso in licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.
+     
 *    **Data eliminazione** è la data in cui la licenza dell'utente è stata rimossa.
 *    **Data di ultima attività (UTC)** indica l'ultima volta in cui l'utente ha avviato una sessione peer to peer o ha organizzato o partecipato a una conferenza.
 *    **-To-peer** Visualizza il numero totale di sessioni di conferenze peer-to-peer utilizzato dall'utente.

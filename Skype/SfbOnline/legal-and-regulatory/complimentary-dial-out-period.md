@@ -19,16 +19,16 @@ ms.custom:
 - Legal
 hideEdit: true
 description: I clienti possono utilizzare il Piano di chiamata di Office 365 e il Servizio di audioconferenza di Office 365 come consentito dalle condizioni d'uso dei servizi PSTN online di Skype for Business e dal contratto multilicenza del cliente.
-ms.openlocfilehash: b1661b5f7b18be8b466cd5028e2b42e5c06faf1a
-ms.sourcegitcommit: 68e68c96c18d854afc0158920e6d9d738f276d91
+ms.openlocfilehash: 1a76831e81c2d4d13cd87ab6d608e98bbdee557d
+ms.sourcegitcommit: c63e7a8a746d427a1c886e8dca4d631c851e417c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "19436524"
+ms.lasthandoff: 05/14/2018
+ms.locfileid: "19146564"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 
-## <a name="skype-for-business-pstn-services"></a>Servizi PSTN di Skype for Business
+## <a name="skype-for-business-pstn-services"></a>Servizi di conferenza PSTN Skype for Business
 
 I clienti possono utilizzare il Piano di chiamata di Office 365 e il Servizio di audioconferenza di Office 365 come consentito dalle condizioni d'uso dei servizi PSTN online di Skype for Business e dal contratto multilicenza del cliente. Le condizioni di utilizzo dei servizi PSTN sono disponibili all'indirizzo [Condizioni e documentazione della licenza](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&amp;Keyword=PSTN).
   
