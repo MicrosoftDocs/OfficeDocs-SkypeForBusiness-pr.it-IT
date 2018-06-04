@@ -6,17 +6,18 @@ author: tonysmit
 manager: serdars
 ms.date: 01/22/2018
 layout: LandingPage
-ms.assetid: 
+ms.assetid: ''
 ms.service: skype-for-business-online-admin
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.author: tonysmit
-ms.openlocfilehash: 3de4ba1e928dfef92a259738507a94a279e9ca1e
-ms.sourcegitcommit: 85105cb4e42ae8eb6e7e76eaf6d4dd5b9568cf41
-ms.translationtype: MT
+ms.openlocfilehash: e92f5fdf9aa3b7d60ccf956d0eca872fd7b3f43f
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "19546461"
 ---
 # <a name="skype-for-business-online-admin"></a>Amministratore Skype for Business Online
 
@@ -30,7 +31,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_get-started.svg" alt="Get started" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started-blue.svg" alt="Get started" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -48,7 +49,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_support.svg" alt="Help" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/help.svg" alt="Help" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -66,7 +67,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_account-management.svg" alt="User account" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/user-accounts.svg" alt="User account" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -84,7 +85,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_tools.svg" alt="Troubleshoot" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/toolbox.svg" alt="Troubleshoot" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -102,16 +103,74 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/media/common/i_teams-flag.svg" alt="Flag" />
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/flag-blue.svg" alt="Flag" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Percorso da Skype for Business a Teams</h3>
+                        <h3>Passaggio da Skype for Business a Teams</h3>
                     </div>
                 </div>
             </div>
         </div>
         </a>
+    </li>
+</ul>
+
+---
+
+<h2>Novità</h2>
+
+<ul class="panelContent cardsF">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/paragraph-writing-blue.svg" alt="Article" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Articoli</h3>
+                        <p><a href=" ">Collega nome</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/whats-new-megaphone-blue.svg" alt="What's new" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Nuove funzionalità</h3>
+                        <p><a href=" ">Collega nome</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/en-us/office/media/icons/connector-blue.svg" alt="Updates" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Aggiornamenti importanti</h3>
+                        <p><a href=" ">Collega nome</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </li>
 </ul>
 
@@ -136,7 +195,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Configurare </h3>
+                        <h3>Configurare</h3>
                         <p><a href="/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online">Configurare Skype for Business online</a></p><p><a href="/SkypeForBusiness/set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users">Consentire agli utenti di contattare utenti Skype for Business esterni</a></p><p><a href="/SkypeForBusiness/set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts">Consentire agli utenti di Skype for Business di aggiungere contatti Skype</a></p>
                      </div>
                 </div>
