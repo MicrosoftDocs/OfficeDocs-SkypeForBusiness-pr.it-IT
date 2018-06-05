@@ -20,11 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Quando si acquistano le licenze di accesso esterno alle audioconferenze, Microsoft ospita la ponte per conferenze audio per la propria organizzazione. Consente di ponte per conferenze audio numeri di telefono di accesso esterno da posizioni diverse in modo i partecipanti e gli organizzatori delle riunioni possono utilizzarli per partecipare a Skype per le riunioni aziendali o Microsoft Teams mediante un telefono.
-ms.openlocfilehash: 89bc5d0ad31deec9ebc0a970bedc62cb5ed50bee
-ms.sourcegitcommit: 7bb52d5d998415555a535a32419e99b68e3be6a2
+ms.openlocfilehash: 0eceff97470bf6c0df6b0818734955ebf71d0f76
+ms.sourcegitcommit: a79668bb45b73a63bea5c249d76a4c4c2530a096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19568364"
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Modificare i numeri di telefono del ponte per conferenze Audio
 
@@ -81,7 +82,6 @@ Utilizzo del servizio di migrazione di riunioni, è possibile aggiornare facolta
     
 ```
     Start-CsExMeetingMigration user@contoso.com
-
 ```
 
 - È inoltre possibile visualizzare lo stato della migrazione della riunione. Tutte le riunioni sono ripianificate una volta che non ci sono più operazioni con lo stato  *In attesa*  o *In corso*  .

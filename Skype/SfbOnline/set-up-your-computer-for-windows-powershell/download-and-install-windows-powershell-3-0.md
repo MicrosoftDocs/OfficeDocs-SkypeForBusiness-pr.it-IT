@@ -17,12 +17,12 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 description: Download, install, and then use Windows PowerShell 3.0 to create a remote PowerShell session that connects to Skype for Business Online.
-ms.openlocfilehash: 6679e9749efd6ee09a7c26f383b1b411caadb43e
-ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
+ms.openlocfilehash: 9c2b0f02d9da7e44cdb5585314c13a6bafbe58c6
+ms.sourcegitcommit: a79668bb45b73a63bea5c249d76a4c4c2530a096
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/05/2018
-ms.locfileid: "19493993"
+ms.locfileid: "19568323"
 ---
 # <a name="download-and-install-windows-powershell-30"></a>Download e installazione di Windows PowerShell 3.0
 
@@ -34,17 +34,17 @@ Se usi Windows 7 o Windows Server 2008 R2, è possibile che tu stia già usando 
     
 2. Nella console PowerShell, digita il comando seguente e poi premi INVIO:
     
-    ```
+   ```
    Get-Host | Select-Object Version
    ```
 
 3. La finestra della console mostrerà informazioni simili a quelle seguenti:
     
-    ```
-    Version
-    -------
+    <pre>
+    Version <BR>
+    ------- <BR>
     3.0
-    ```
+    </pre>
 
     Se il numero di versione indicato è 3.0, allora stai usando Windows PowerShell 3.0. Se il numero di versione indicato non è 3.0, allora dovrai installare Windows PowerShell 3.0. Puoi scaricare Windows Management Framework 3.0, che include Windows PowerShell 3.0, dall'[Area download Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=34595).
   
@@ -79,9 +79,7 @@ Get-ExecutionPolicy
 
 Se ottieni il valore seguente, tutto è configurato correttamente:
   
-```
-RemoteSigned
-```
+`RemoteSigned`
 
 Se al momento non stai usando Windows PowerShell 3.0, dovrai anche scaricare e installare Windows Management Framework 3.0 dall'Area download Microsoft. Si tratta di un pacchetto di installazione che include Windows PowerShell 3.0 e Windows Remote Management (WinRM) 3.0. Questo pacchetto di installazione potrebbe essere necessario se stai usando Windows 7 e non hai ancora aggiornato a Windows PowerShell 3.0. Se stai usando Windows Server 2012, Windows Server 2012 R2, Windows 8 o Windows 8.1, non dovrebbe essere necessario installare Windows PowerShell 3.0. Windows PowerShell 3.0 è preinstallato su quei sistemi operativi.
   
@@ -115,11 +113,11 @@ Get-Service winrm
 
 Verranno quindi visualizzate sullo schermo informazioni sul servizio WinRM:
   
-```
+<pre>
 Status   Name               DisplayName
 ------   ----               -----------
 Running  winrm              Windows Remote Management (WS-Manag...
-```
+</pre>
 
 Se lo Stato del servizio non è "In esecuzione", digita il comando seguente e premi INVIO per avviare il servizio WinRM:
   
@@ -135,7 +133,7 @@ winrm set winrm/config/client/auth '@{Basic="True"}'
 
 Lo schermo mostrerà informazioni simili a quelle seguenti:
   
-```
+<pre>
 Auth
     Basic = true
     Digest = true
@@ -143,7 +141,7 @@ Auth
     Negotiate = true
     Certificate = true
     CredSSP = false
-```
+</pre>
 
 Se l'autenticazione di base è stata impostata su true, quindi si è pronti per utilizzare PowerShell per connettersi a Skype Business online.
   
