@@ -16,107 +16,95 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'See how to turn preloaded content on or off for Skype for Business meetings using files or attachments on an Outlook meeting invitation. '
-ms.openlocfilehash: 312a008c85acb5067f0198e7a1b0a88cbbced8b5
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 7a572689575a708707aeca3eb963d5eb7d864594
+ms.sourcegitcommit: a79668bb45b73a63bea5c249d76a4c4c2530a096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19568272"
 ---
-# <a name="turn-on-or-off-allowing-content-to-be-preloaded-for-meetings-using-outlook"></a><span data-ttu-id="0211c-103">Attivare o disattivare il precaricamento dei contenuti delle riunioni tramite Outlook</span><span class="sxs-lookup"><span data-stu-id="0211c-103">Turn on or off allowing content to be preloaded for meetings using Outlook</span></span>
+# <a name="turn-on-or-off-allowing-content-to-be-preloaded-for-meetings-using-outlook"></a><span data-ttu-id="84f2a-103">Attivare o disattivare il precaricamento dei contenuti delle riunioni tramite Outlook</span><span class="sxs-lookup"><span data-stu-id="84f2a-103">Turn on or off allowing content to be preloaded for meetings using Outlook</span></span>
 
-<span data-ttu-id="0211c-104">Gli utenti possono precaricare contenuto, i file o gli allegati associati a un invito alla riunione di Outlook per Skype per riunione in linea di Business, ma è possibile attivare o disattivare.</span><span class="sxs-lookup"><span data-stu-id="0211c-104">Users can preload content, files, or attachments that are attached to an Outlook meeting invitation to a Skype for Business Online meeting, but you can it turn on or off.</span></span> <span data-ttu-id="0211c-105">È attivata per impostazione predefinita per tutte le organizzazioni che utilizzano Skype Business online.</span><span class="sxs-lookup"><span data-stu-id="0211c-105">It's turned on by default for all organizations that are using Skype for Business Online.</span></span> <span data-ttu-id="0211c-106">Vedere come [Precaricare gli allegati per una riunione Skype for Business](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).</span><span class="sxs-lookup"><span data-stu-id="0211c-106">See how to [Preload attachments for a Skype for Business meeting](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).</span></span>
+<span data-ttu-id="84f2a-104">Gli utenti possono precaricare contenuto, i file o gli allegati associati a un invito alla riunione di Outlook per Skype per riunione in linea di Business, ma è possibile attivare o disattivare.</span><span class="sxs-lookup"><span data-stu-id="84f2a-104">Users can preload content, files, or attachments that are attached to an Outlook meeting invitation to a Skype for Business Online meeting, but you can it turn on or off.</span></span> <span data-ttu-id="84f2a-105">È attivata per impostazione predefinita per tutte le organizzazioni che utilizzano Skype Business online.</span><span class="sxs-lookup"><span data-stu-id="84f2a-105">It's turned on by default for all organizations that are using Skype for Business Online.</span></span> <span data-ttu-id="84f2a-106">Vedere come [Precaricare gli allegati per una riunione Skype for Business](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).</span><span class="sxs-lookup"><span data-stu-id="84f2a-106">See how to [Preload attachments for a Skype for Business meeting](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="0211c-107">Non sono attualmente presenti alcun cmdlet disponibili in Skype Business online per l'impostazione o visualizzazione di valori in linea per _MaxContentStorageMB_ e _MaxUploadFileMB_.</span><span class="sxs-lookup"><span data-stu-id="0211c-107">Currently, there are no cmdlets available in Skype for Business Online for setting or viewing online values for  _MaxContentStorageMB_ and _MaxUploadFileMB_.</span></span> <span data-ttu-id="0211c-108">Sono disponibili solo per le distribuzioni locali.</span><span class="sxs-lookup"><span data-stu-id="0211c-108">They are only available for on-premises deployments.</span></span> <span data-ttu-id="0211c-109">È importante tenere presente che il contenuto non verrà caricato in una riunione se il contenuto allegato supera _MaxUploadFileSizeMB_ o se viene raggiunto il limite _MaxContentStorageMB_ .</span><span class="sxs-lookup"><span data-stu-id="0211c-109">It's important to know that content won't be uploaded to a meeting if the attached content exceeds the  _MaxUploadFileSizeMB_ or if the _MaxContentStorageMB_ limit is reached.</span></span>
+> <span data-ttu-id="84f2a-107">Non sono attualmente presenti alcun cmdlet disponibili in Skype Business online per l'impostazione o visualizzazione di valori in linea per _MaxContentStorageMB_ e _MaxUploadFileMB_.</span><span class="sxs-lookup"><span data-stu-id="84f2a-107">Currently, there are no cmdlets available in Skype for Business Online for setting or viewing online values for  _MaxContentStorageMB_ and _MaxUploadFileMB_.</span></span> <span data-ttu-id="84f2a-108">Sono disponibili solo per le distribuzioni locali.</span><span class="sxs-lookup"><span data-stu-id="84f2a-108">They are only available for on-premises deployments.</span></span> <span data-ttu-id="84f2a-109">È importante tenere presente che il contenuto non verrà caricato in una riunione se il contenuto allegato supera _MaxUploadFileSizeMB_ o se viene raggiunto il limite _MaxContentStorageMB_ .</span><span class="sxs-lookup"><span data-stu-id="84f2a-109">It's important to know that content won't be uploaded to a meeting if the attached content exceeds the  _MaxUploadFileSizeMB_ or if the _MaxContentStorageMB_ limit is reached.</span></span>
   
-## <a name="to-get-you-started"></a><span data-ttu-id="0211c-110">Per iniziare</span><span class="sxs-lookup"><span data-stu-id="0211c-110">To get you started</span></span>
+## <a name="to-get-you-started"></a><span data-ttu-id="84f2a-110">Per iniziare</span><span class="sxs-lookup"><span data-stu-id="84f2a-110">To get you started</span></span>
 
 ### 
 
- <span data-ttu-id="0211c-111">**Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**</span><span class="sxs-lookup"><span data-stu-id="0211c-111">**Check that you are running Windows PowerShell version 3.0 or higher**</span></span>
+ <span data-ttu-id="84f2a-111">**Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**</span><span class="sxs-lookup"><span data-stu-id="84f2a-111">**Check that you are running Windows PowerShell version 3.0 or higher**</span></span>
   
-1. <span data-ttu-id="0211c-112">A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="0211c-112">To verify that you are running version 3.0 or higher: **Start Menu** > **Windows PowerShell**.</span></span>
+1. <span data-ttu-id="84f2a-112">A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="84f2a-112">To verify that you are running version 3.0 or higher: **Start Menu** > **Windows PowerShell**.</span></span>
     
-2. <span data-ttu-id="0211c-113">Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="0211c-113">Check the version by typing  _Get-Host_ in the **Windows PowerShell** window.</span></span>
+2. <span data-ttu-id="84f2a-113">Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="84f2a-113">Check the version by typing  _Get-Host_ in the **Windows PowerShell** window.</span></span>
     
-3. <span data-ttu-id="0211c-p103">Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell. Per scaricare e aggiornare Windows PowerShell alla versione 4.0, vedere [Windows Management Framework 4.0 ](https://go.microsoft.com/fwlink/?LinkId=716845). Quando richiesto, riavviare il computer.</span><span class="sxs-lookup"><span data-stu-id="0211c-p103">If you don't have version 3.0 or higher, you need to download and install updates to Windows PowerShell. See [Windows Management Framework 4.0 ](https://go.microsoft.com/fwlink/?LinkId=716845) to download and update Windows PowerShell to version 4.0. Restart your computer when you are prompted.</span></span>
+3. <span data-ttu-id="84f2a-p103">Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell. Per scaricare e aggiornare Windows PowerShell alla versione 4.0, vedere [Windows Management Framework 4.0 ](https://go.microsoft.com/fwlink/?LinkId=716845). Quando richiesto, riavviare il computer.</span><span class="sxs-lookup"><span data-stu-id="84f2a-p103">If you don't have version 3.0 or higher, you need to download and install updates to Windows PowerShell. See [Windows Management Framework 4.0 ](https://go.microsoft.com/fwlink/?LinkId=716845) to download and update Windows PowerShell to version 4.0. Restart your computer when you are prompted.</span></span>
     
-4. <span data-ttu-id="0211c-p104">Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.</span><span class="sxs-lookup"><span data-stu-id="0211c-p104">You will also need to install the Windows PowerShell module for Skype for Business Online that enables you to create a remote Windows PowerShell session that connects to Skype for Business Online. This module, which is supported only on 64-bit computers, can be downloaded from the Microsoft Download Center at [Windows PowerShell Module for Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Restart your computer if you are prompted.</span></span>
+4. <span data-ttu-id="84f2a-p104">Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.</span><span class="sxs-lookup"><span data-stu-id="84f2a-p104">You will also need to install the Windows PowerShell module for Skype for Business Online that enables you to create a remote Windows PowerShell session that connects to Skype for Business Online. This module, which is supported only on 64-bit computers, can be downloaded from the Microsoft Download Center at [Windows PowerShell Module for Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Restart your computer if you are prompted.</span></span>
     
-<span data-ttu-id="0211c-120">Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx).</span><span class="sxs-lookup"><span data-stu-id="0211c-120">If you need to know more, see [Connect to all Office 365 services in a single Windows PowerShell window](https://technet.microsoft.com/EN-US/library/dn568015.aspx).</span></span>
+<span data-ttu-id="84f2a-120">Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx).</span><span class="sxs-lookup"><span data-stu-id="84f2a-120">If you need to know more, see [Connect to all Office 365 services in a single Windows PowerShell window](https://technet.microsoft.com/EN-US/library/dn568015.aspx).</span></span>
   
 ### 
 
- <span data-ttu-id="0211c-121">**Avviare una sessione di Windows PowerShell**</span><span class="sxs-lookup"><span data-stu-id="0211c-121">**Start a Windows PowerShell session**</span></span>
+ <span data-ttu-id="84f2a-121">**Avviare una sessione di Windows PowerShell**</span><span class="sxs-lookup"><span data-stu-id="84f2a-121">**Start a Windows PowerShell session**</span></span>
   
-1. <span data-ttu-id="0211c-122">Fare clic sul pulsante **Start** > **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="0211c-122">From the **Start Menu** > **Windows PowerShell**.</span></span>
+1. <span data-ttu-id="84f2a-122">Fare clic sul pulsante **Start** > **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="84f2a-122">From the **Start Menu** > **Windows PowerShell**.</span></span>
     
-2. <span data-ttu-id="0211c-123">Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:</span><span class="sxs-lookup"><span data-stu-id="0211c-123">In the **Windows PowerShell** window, connect to your Office 365 organization by running:</span></span>
+2. <span data-ttu-id="84f2a-123">Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:</span><span class="sxs-lookup"><span data-stu-id="84f2a-123">In the **Windows PowerShell** window, connect to your Office 365 organization by running:</span></span>
     
     > [!NOTE]
-    > <span data-ttu-id="0211c-124">Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.</span><span class="sxs-lookup"><span data-stu-id="0211c-124">You only have to run the **Import-Module** command the first time you use the Skype for Business Online Windows PowerShell module.</span></span>
+    > <span data-ttu-id="84f2a-124">Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.</span><span class="sxs-lookup"><span data-stu-id="84f2a-124">You only have to run the **Import-Module** command the first time you use the Skype for Business Online Windows PowerShell module.</span></span>
   
-> 
-  ```
-  Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
-  ```
+```
+Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
+$credential = Get-Credential
+$session = New-CsOnlineSession -Credential $credential
+Import-PSSession $session
+```
 
-> 
-  ```
-  $credential = Get-Credential
-  ```
-
-> 
-  ```
-  $session = New-CsOnlineSession -Credential $credential
-  ```
-
-> 
-  ```
-  Import-PSSession $session
-  ```
-
-<span data-ttu-id="0211c-125">Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="0211c-125">If you want more information about starting Windows PowerShell, see [Connect to all Office 365 services in a single Windows PowerShell window](https://technet.microsoft.com/EN-US/library/dn568015.aspx) or [Connecting to Skype for Business Online by using Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).</span></span>
+<span data-ttu-id="84f2a-125">Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="84f2a-125">If you want more information about starting Windows PowerShell, see [Connect to all Office 365 services in a single Windows PowerShell window](https://technet.microsoft.com/EN-US/library/dn568015.aspx) or [Connecting to Skype for Business Online by using Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).</span></span>
   
-## <a name="turning-it-on-or-off"></a><span data-ttu-id="0211c-126">Attivazione o disattivazione del precaricamento</span><span class="sxs-lookup"><span data-stu-id="0211c-126">Turning it on or off</span></span>
+## <a name="turning-it-on-or-off"></a><span data-ttu-id="84f2a-126">Attivazione o disattivazione del precaricamento</span><span class="sxs-lookup"><span data-stu-id="84f2a-126">Turning it on or off</span></span>
 
-<span data-ttu-id="0211c-127">Possibilità di precaricare contenuto collegato a un invito alla riunione di Outlook per Skype per le riunioni in linea aziendale è attivata per impostazione predefinita, ma potrebbe essere necessario per impedire agli utenti dell'organizzazione di precaricare contenuto le riunioni.</span><span class="sxs-lookup"><span data-stu-id="0211c-127">Being able to preload content attached to an Outlook meeting invitation to Skype for Business Online meetings is turned on by default, but you may need to prevent users in your organization from preloading content in their meetings.</span></span>
+<span data-ttu-id="84f2a-127">Possibilità di precaricare contenuto collegato a un invito alla riunione di Outlook per Skype per le riunioni in linea aziendale è attivata per impostazione predefinita, ma potrebbe essere necessario per impedire agli utenti dell'organizzazione di precaricare contenuto le riunioni.</span><span class="sxs-lookup"><span data-stu-id="84f2a-127">Being able to preload content attached to an Outlook meeting invitation to Skype for Business Online meetings is turned on by default, but you may need to prevent users in your organization from preloading content in their meetings.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="0211c-128">Questa impostazione può solo essere attivata o disattivato per l'intera organizzazione; è possibile disabilitare viene attivato o disattivato per un singolo utente.</span><span class="sxs-lookup"><span data-stu-id="0211c-128">This setting can only be turned on or off for your entire organization; you can't turn it on or off for a single user.</span></span> 
+> <span data-ttu-id="84f2a-128">Questa impostazione può solo essere attivata o disattivato per l'intera organizzazione; è possibile disabilitare viene attivato o disattivato per un singolo utente.</span><span class="sxs-lookup"><span data-stu-id="84f2a-128">This setting can only be turned on or off for your entire organization; you can't turn it on or off for a single user.</span></span> 
   
- <span data-ttu-id="0211c-129">**Per disattivarla, aprire Windows PowerShell e procedere come segue:**</span><span class="sxs-lookup"><span data-stu-id="0211c-129">**To turn it off, open Windows PowerShell and do the following:**</span></span>
+ <span data-ttu-id="84f2a-129">**Per disattivarla, aprire Windows PowerShell e procedere come segue:**</span><span class="sxs-lookup"><span data-stu-id="84f2a-129">**To turn it off, open Windows PowerShell and do the following:**</span></span>
   
 ```
 Grant-CsGraphPolicy -PolicyName GraphDisabled 
 ```
 
- <span data-ttu-id="0211c-130">**Se si desidera riattivarla, aprire Windows PowerShell e procedere come segue:**</span><span class="sxs-lookup"><span data-stu-id="0211c-130">**If you want to turn it back on, open Windows PowerShell and do the following:**</span></span>
+ <span data-ttu-id="84f2a-130">**Se si desidera riattivarla, aprire Windows PowerShell e procedere come segue:**</span><span class="sxs-lookup"><span data-stu-id="84f2a-130">**If you want to turn it back on, open Windows PowerShell and do the following:**</span></span>
   
 ```
 Grant-CsGraphPolicy -PolicyName GraphEnabled 
 ```
 
-## <a name="want-to-know-more-about-windows-powershell"></a><span data-ttu-id="0211c-131">Per saperne di più su Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="0211c-131">Want to know more about Windows PowerShell?</span></span>
+## <a name="want-to-know-more-about-windows-powershell"></a><span data-ttu-id="84f2a-131">Per saperne di più su Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="84f2a-131">Want to know more about Windows PowerShell?</span></span>
 
-- <span data-ttu-id="0211c-p105">Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:</span><span class="sxs-lookup"><span data-stu-id="0211c-p105">When it comes to Windows PowerShell is all about managing users and what users are allowed or not allowed to do. With Windows PowerShell, you can manage Office 365 and Skype for Business Online using a single point of administration that can simplify your daily work, when you have multiple tasks to do. To get started with Windows PowerShell, see these topics:</span></span>
+- <span data-ttu-id="84f2a-132">Windows PowerShell is all about managing users and what users are allowed or not allowed to do.</span><span class="sxs-lookup"><span data-stu-id="84f2a-132">Windows PowerShell is all about managing users and what users are allowed or not allowed to do.</span></span> <span data-ttu-id="84f2a-133">È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere.</span><span class="sxs-lookup"><span data-stu-id="84f2a-133">With Windows PowerShell, you can manage Office 365 and Skype for Business Online using a single point of administration that can simplify your daily work, when you have multiple tasks to do.</span></span> <span data-ttu-id="84f2a-134">Per iniziare a usare Windows PowerShell, vedere questi argomenti:</span><span class="sxs-lookup"><span data-stu-id="84f2a-134">To get started with Windows PowerShell, see these topics:</span></span>
     
-  - [<span data-ttu-id="0211c-135">Introduzione a Windows PowerShell e Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="0211c-135">An introduction to Windows PowerShell and Skype for Business Online</span></span>](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [<span data-ttu-id="84f2a-135">Introduzione a Windows PowerShell e Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="84f2a-135">An introduction to Windows PowerShell and Skype for Business Online</span></span>](https://go.microsoft.com/fwlink/?LinkId=525039)
     
-  - [<span data-ttu-id="0211c-136">Sei motivi per cui è consigliabile usare Windows PowerShell per gestire Office 365</span><span class="sxs-lookup"><span data-stu-id="0211c-136">Six Reasons Why You Might Want to Use Windows PowerShell to Manage Office 365 </span></span>](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [<span data-ttu-id="84f2a-136">Sei motivi per cui è consigliabile usare Windows PowerShell per gestire Office 365</span><span class="sxs-lookup"><span data-stu-id="84f2a-136">Six Reasons Why You Might Want to Use Windows PowerShell to Manage Office 365 </span></span>](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-- <span data-ttu-id="0211c-p106">Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Office 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="0211c-p106">Windows PowerShell has many advantages in speed, simplicity, and productivity over only using the Office 365 admin center such as when you are making setting changes for many users at one time. Learn about these advantages in the following topics:</span></span>
+- <span data-ttu-id="84f2a-p106">Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Office 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="84f2a-p106">Windows PowerShell has many advantages in speed, simplicity, and productivity over only using the Office 365 admin center such as when you are making setting changes for many users at one time. Learn about these advantages in the following topics:</span></span>
     
-  - [<span data-ttu-id="0211c-139">Gestire Office 365 con Windows PowerShell nel modo migliore</span><span class="sxs-lookup"><span data-stu-id="0211c-139">Best ways to manage Office 365 with Windows PowerShell</span></span>](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [<span data-ttu-id="84f2a-139">Gestire Office 365 con Windows PowerShell nel modo migliore</span><span class="sxs-lookup"><span data-stu-id="84f2a-139">Best ways to manage Office 365 with Windows PowerShell</span></span>](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-  - [<span data-ttu-id="0211c-140">Usare Windows PowerShell per gestire Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="0211c-140">Using Windows PowerShell to manage Skype for Business Online</span></span>](https://go.microsoft.com/fwlink/?LinkId=525453)
+  - [<span data-ttu-id="84f2a-140">Usare Windows PowerShell per gestire Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="84f2a-140">Using Windows PowerShell to manage Skype for Business Online</span></span>](https://go.microsoft.com/fwlink/?LinkId=525453)
     
-  - [<span data-ttu-id="0211c-141">Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="0211c-141">Using Windows PowerShell to do common Skype for Business Online management tasks</span></span>](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [<span data-ttu-id="84f2a-141">Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="84f2a-141">Using Windows PowerShell to do common Skype for Business Online management tasks</span></span>](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## <a name="related-topics"></a><span data-ttu-id="0211c-142">See also</span><span class="sxs-lookup"><span data-stu-id="0211c-142">Related topics</span></span>
-[<span data-ttu-id="0211c-143">Configurare Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="0211c-143">Set up Skype for Business Online</span></span>](set-up-skype-for-business-online.md)
+## <a name="related-topics"></a><span data-ttu-id="84f2a-142">See also</span><span class="sxs-lookup"><span data-stu-id="84f2a-142">Related topics</span></span>
+[<span data-ttu-id="84f2a-143">Configurare Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="84f2a-143">Set up Skype for Business Online</span></span>](set-up-skype-for-business-online.md)
 
-[<span data-ttu-id="0211c-144">Consentire agli utenti di Skype for Business di aggiungere contatti Skype</span><span class="sxs-lookup"><span data-stu-id="0211c-144">Let Skype for Business users add Skype contacts</span></span>](let-skype-for-business-users-add-skype-contacts.md)
+[<span data-ttu-id="84f2a-144">Consentire agli utenti di Skype for Business di aggiungere contatti Skype</span><span class="sxs-lookup"><span data-stu-id="84f2a-144">Let Skype for Business users add Skype contacts</span></span>](let-skype-for-business-users-add-skype-contacts.md)
 
   
  
