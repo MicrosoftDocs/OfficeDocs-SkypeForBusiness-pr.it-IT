@@ -18,11 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Configurare e utilizzare chiamate Analitica per identificare e risolvere i problemi Skype per problemi di qualità chiamata Business e Teams Microsoft.
-ms.openlocfilehash: 0fea9e37933908ef64f1b2eb100f3851f84a6690
-ms.sourcegitcommit: 5a0b3fe49b64f08979c89443f66b15827034e755
+ms.openlocfilehash: 5cba53e1a01b1aff3a08f4ec84cea60dc455fb35
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19500694"
 ---
 # <a name="set-up-skype-for-business-call-analytics"></a>Configurazione di Skype per Business chiamare Analitica
 
@@ -57,6 +58,8 @@ Problemi di qualità delle chiamate di base di gestire gli agenti di supporto te
    
  **Impostare le autorizzazioni a più livelli nel chiamare Analitica** 
  <a name="BKMK_SetUpTier"> </a>
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
   
 1. Creare gruppi di protezione di Office 365 per livello 1 e 2 a livelli e aggiungere le persone che si desidera che a ogni gruppo. È inoltre possibile riutilizzare i gruppi di protezione esistente. Per ulteriori informazioni, vedere [creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/55c96b32-e086-4c9e-948b-a018b44510cb).
     

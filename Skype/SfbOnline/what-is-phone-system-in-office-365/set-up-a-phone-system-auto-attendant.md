@@ -20,11 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare e testare gli operatori automatici di sistema telefonico in (Cloud PBX) per la gestione dell'organizzazione delle chiamate efficiente. "
-ms.openlocfilehash: dae8dc68162944f6547615626d5e94912a99caf2
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 255b93c40419eaf10994b42de214d4495cd09b6a
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19501110"
 ---
 # <a name="set-up-a-phone-system-auto-attendant"></a>Configurare un operatore automatico di sistema telefonico
 
@@ -46,6 +47,9 @@ Per ulteriori informazioni sugli operatori automatici, vedere [che cosa sono gli
   
 ## <a name="step-2---create-a-new-auto-attendant"></a>Fase 2 - Creare un nuovo operatore automatico
 
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+
+
 Nell' **interfaccia di amministrazione di Skype for Business**, fai clic su **Instradamento chiamate** > **Operatori automatici**, poi fai clic su **Aggiungi nuovo**.
   
 ### <a name="edit-general-info-page"></a>Pagina Modifica informazioni generali
@@ -58,8 +62,9 @@ Nell' **interfaccia di amministrazione di Skype for Business**, fai clic su **In
 
 ![Numero 2](../images/sfbcallout2.png)<br/>**Numero di telefono** Questa impostazione è facoltativa. Se si desidera, selezionare un numero di telefono per l'operatore automatico. È possibile scegliere qualsiasi numero a tariffa servizio disponibile o il numero verde che è necessario per l'organizzazione. Se non ci sono numeri di telefono indicati, dovrai ottenere un numero di servizio (a pagamento o numero verde). Andare [qui](getting-service-phone-numbers.md) per ottenere informazioni utili. <br/> <br/>
 
-    > [!Note]
-    > **User (subscriber)** numbers can't be assigned to auto attendants.
+> [!NOTE]
+> **User (subscriber)** numbers can't be assigned to auto attendants.
+    
 ***
 ![Numero 3](../images/sfbcallout3.png)<br/>**Fuso orario** È necessario impostare il fuso orario per l'operatore automatico, che non deve necessariamente corrispondere al fuso orario dell'indirizzo principale indicato per l'organizzazione. Ciascun operatore automatico può avere un fuso orario diverso, e l'orario di ufficio fissato per l'operatore automatico verrà impostato in base al fuso orario che selezioni qui.
 ***
@@ -115,13 +120,17 @@ Per impostazione predefinita, orari d'ufficio sono impostato su 24 ore al giorno
 ***
 ![Numero 3](../images/sfbcallout3.png)<br/>**Messaggio del menu** Per creare il messaggio del menu principale, puoi utilizzare il sintetizzatore vocale o caricare un file audio (.wav, .mp3 o .wma). Puoi digitare il messaggio nella casella **I chiamanti sentiranno** o registrare un file audio e dire, per esempio: "Per assistenza commerciale, premere o pronunciare 1. Per i servizi, premere o pronunciare 2. Per l'assistenza clienti, premere o pronunciare 3. Per contattare un operatore, premere o pronunciare 0. Per ascoltare di nuovo questo menu, premere il tasto asterisco o pronunciare Ripeti". **Crea un messaggio personalizzato** Se scegli questa opzione, devi inserire il testo che vuoi fare leggere al sistema (fino a 1000 caratteri). **Carica un file audio** Se scegli questa opzione, dovrai registrare il messaggio di saluto e poi caricare il file audio (in formato .wav, .mp3 o .wma).
 ***
-![Numero 4](../images/sfbcallout4.png)<br/>**Accesso esterno in base al nome** Se si sceglie questa opzione, in questo modo gli utenti che chiamare nella ricerca di utenti all'interno dell'organizzazione con ricerca nella Directory. Puoi selezionare quali persone saranno elencate come disponibili o non disponibili per Chiamata per nome definendo queste opzioni nella pagina **Ambito chiamata**. Tutti gli utenti in linea con una licenza di **Sistema telefonico** o tutti gli utenti ospitati in locale con Skype per Business Server 2015 o di Lync Server 2013 sono disponibili con accesso esterno in base al nome.<br/><br/>  **Attenzione:** Gli utenti ospitati in locale con Lync 2010 **non è raggiungibile** con accesso esterno in base al nome.
+![Numero 4](../images/sfbcallout4.png)<br/>**Accesso esterno in base al nome** Se si sceglie questa opzione, in questo modo gli utenti che chiamare nella ricerca di utenti all'interno dell'organizzazione con ricerca nella Directory. Puoi selezionare quali persone saranno elencate come disponibili o non disponibili per Chiamata per nome definendo queste opzioni nella pagina **Ambito chiamata**. Tutti gli utenti in linea con una licenza di **Sistema telefonico** o tutti gli utenti ospitati in locale con Skype per Business Server 2015 o di Lync Server 2013 sono disponibili con accesso esterno in base al nome.<br/><br/>  
+
+> [!WARNING]
+> Gli utenti ospitati in locale con Lync 2010 **non è raggiungibile** con accesso esterno in base al nome.
 ***
 
 ![Numero 5](../images/sfbcallout5.png)<br/>**Modifica opzioni di menu** Le opzioni del menu possono essere aggiunte o rimosse utilizzando i tasti della tastiera. Per aggiungere un'opzione di menu, premi il tasto corrispondente sulla tastiera. I tasti in uso cambieranno colore e sotto di essi apparirà la fila di opzioni corrispondente. Per eliminare una voce di menu, scegliere semplicemente la chiave corrispondente del controllo utilizzando il tastierino numerico per deselezionare questa chiave. La riga di mapping dei tasti verrà rimosso.<br/><br/>  **Suggerimento:** È necessario aggiornare il testo di richieste di menu o registrare l'audio separatamente, quando si aggiunge alla rimozione di opzioni in quanto non verranno eseguita automaticamente per il prompt dei comandi di menu esistenti.  <br/><br/>  Qualsiasi opzione di menu può essere aggiunte o rimosse in qualsiasi ordine e il mapping dei tasti non è necessario essere continuo. È possibile, ad esempio, per creare un menu con i tasti 0, 1 e 3 mappati alle opzioni, mentre non viene utilizzata la chiave di 2.<br/><br/> 
 
-    > [!Note] 
-    > The keys * (Repeat) and # (Back) are reserved by the system and can't be reassigned. If speech recognition is enabled, pressing * will correspond with "Repeat" and # will correspond with the "Back" voice commands. <br/><br/>
+> [!NOTE]
+> I tasti * (ripetere il) e # (indietro) sono riservate dal sistema e non può essere riassegnata. Se è abilitato il riconoscimento vocale, premere * corrisponderà con "Ripeti" e # corrisponderà con i comandi vocali "Nuovo".
+
 
 Per configurare le opzioni di menu, dopo aver selezionato dei codici, è necessario: 
 - **Immettere il nome dell'opzione** Questo può contenere un massimo di 64 caratteri e può contenere più parole come "Servizio clienti" o "operazioni e motivi". Se è abilitato il riconoscimento vocale, verrà riconosciuto automaticamente il nome e la persona chiamata in saranno in grado di premere 3, ad esempio "3" o dica "Servizio clienti" selezionare l'opzione mappato al tasto 3. 
@@ -231,7 +240,7 @@ Questi sono i cmdlet necessari per gestire un operatore automatico.
    
 ### <a name="more-about-windows-powershell"></a>Altre informazioni su Windows PowerShell
 
-- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     

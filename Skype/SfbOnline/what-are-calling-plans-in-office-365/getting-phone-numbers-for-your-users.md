@@ -20,11 +20,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Learn how to get new, port, or transfer existing numbers for Skype for Business, and how to show the changes to your users. '
-ms.openlocfilehash: ff7716a057ee2b3bb27b01a4912f718d28e3739b
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: a4ede7e5bac4b7e1fe5931f404a6d2c9e4f63056
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19500864"
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 
@@ -44,6 +45,8 @@ Devi consultare la pagina **Aggiungi nuovi numeri utente** per visualizzare, ese
 > Se hai bisogno di aiuto con l'impostazione dei numeri di telefono per la tua organizzazione, puoi [Contattare il supporto di Office 365 per le aziende - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b). 
   
 ## <a name="get-new-phone-numbers-for-your-users"></a>Ottenere nuovi numeri di telefono per gli utenti
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -81,6 +84,8 @@ Devi consultare la pagina **Aggiungi nuovi numeri utente** per visualizzare, ese
 - Se invece devi trasferire più di 999 numeri di telefono, consulta [Inviare manualmente una richiesta di servizio](manually-submit-a-custom-service-request.md) per inviare una richiesta di servizio relativa a un ordine di trasferimento o un ordine per il trasferimento di tutti i numeri di telefono in Office 365.
     
 ## <a name="show-phone-numbers-for-your-organization"></a>Visualizzazione dei numeri di telefono per l'organizzazione
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     

@@ -20,11 +20,12 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: 'Informazioni su come modificare Skype per le impostazioni di Business per singoli utenti, ad esempio: conferenze Audio e video, la registrazione delle chiamate e riunioni. '
-ms.openlocfilehash: 930960117a46639e86ed2d24c286a5270b21acb9
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: f9b6db08c87e46326d6e9de7c82d6e1c89cffce0
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19500820"
 ---
 # <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Gli amministratori: Configurare Skype per le impostazioni di Business per singoli utenti
 
@@ -40,6 +41,8 @@ Per consentire o bloccare tutti gli utenti nell'organizzazione di comunicare con
 <a name="__toc325019204"> </a>
 
 È necessario disporre [delle autorizzazioni di amministratore](https://support.office.com/en-us/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) per eseguire la procedura seguente.
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     

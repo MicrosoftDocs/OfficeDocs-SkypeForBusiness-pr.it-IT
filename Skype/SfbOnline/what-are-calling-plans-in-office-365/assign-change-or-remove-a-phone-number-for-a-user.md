@@ -20,11 +20,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono di lavoro per la Skype per gli utenti aziendali in modo che le aziende e i client esterni possono chiamare.
-ms.openlocfilehash: e718c5c64a3778f6a3acaedcaed9b77d955446a1
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 07feefa28fa43c4b279ca57b02f92c558dfee47c
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19500738"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user"></a>Assegnare, modificare o rimuovere un numero di telefono di un utente
 
@@ -41,7 +42,7 @@ In Skype per client di Business, il numero di telefono che si assegna verrà ele
 > [!IMPORTANT]
 > Se si desidera [modificare il proprio numero di telefono per Skype per le aziende](https://support.office.com/article/20e03cc1-c023-4e5d-bafd-064ddb59ed5e) e il numero di telefono in Skype per app Business non può essere modificato o è in grigio, che indica che gli amministratori sono impostata per tali e non può essere modificata da essi.
   
-## <a name="assigning-a-number"></a>Assegnazione di un numero
+
 
 Quando si imposta le impostazioni degli utenti in modo che possano effettuare e ricevere chiamate telefoniche, è innanzitutto necessario utilizzare il Skype per l'interfaccia di amministrazione di Business e assegnare un numero di telefono, ma è possibile modificare o rimuovere il numero di telefono se è necessario.
   
@@ -50,15 +51,19 @@ Per informazioni su come ottenere la chiamata dei piani di Office 365 e il relat
 > [!NOTE]
 > Un modo per verificare se un utente dispone di una licenza assegnata è passando alla **Skype per Business admin center** > **vocale** > **utenti VoIP** e selezionando l'utente. Se viene assegnata una licenza, verrà notificata con **licenza assegnata**. È inoltre possibile utilizzare l'interfaccia di amministrazione di Office 365. 
   
- **Assegnare un numero di telefono a un utente**
-  
+ ## <a name="assign-a-phone-number-to-a-user"></a>Assegnare un numero di telefono a un utente
+ 
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+ 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Accedere **all'interfaccia di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.
     
 3. Nel riquadro di spostamento sinistra fare clic su **VoIP** > **agli utenti di VoIP**.
-    
-    **IMPORTANTE**: per visualizzare l'opzione **Voce** nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Skype for Business, è necessario acquistare almeno una **licenza Enterprise E5**, una licenza per il componente aggiuntivo **Sistema telefonico** o una licenza per il componente aggiuntivo **Audioconferenza**.
+   > [!NOTE]
+ Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+ 
+   
     
 4. Nella pagina **Utenti vocali**, individua e seleziona l'utente o gli utenti a cui vuoi assegnare un numero di telefono.
     
@@ -76,10 +81,12 @@ Per informazioni su come ottenere la chiamata dei piani di Office 365 e il relat
     > [!NOTE]
     > A causa della latenza tra Office 365 e Skype Business online, talvolta può richiedere fino a 24 ore per gli utenti da abilitare. Se dopo 24 ore, se il numero di telefono non è assegnato correttamente, effettuare [contatta il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b). Siamo a tua disposizione per! 
   
-## <a name="changing-a-number"></a>Modifica di un numero
 
- **Per modificare un numero di telefono di un utente**
-  
+
+ ## <a name="change-a-phone-number-for-a-user"></a>Modificare un numero di telefono di un utente
+ 
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+ 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Accedere **all'interfaccia di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.
@@ -98,10 +105,12 @@ Per informazioni su come ottenere la chiamata dei piani di Office 365 e il relat
     
 9. Fai clic su **Salva**.
     
-## <a name="removing-a-number"></a>Rimozione di un numero
 
- **Per rimuovere un numero di telefono da un utente**
-  
+
+ ## <a name="remove-a-phone-number-from-a-user"></a>Rimozione di un numero di telefono da un utente
+ 
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+ 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Accedere **all'interfaccia di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.

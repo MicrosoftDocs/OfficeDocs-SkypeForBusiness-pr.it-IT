@@ -20,11 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Oltre a ottenere numeri di telefono per gli utenti da Office 365, è possibile cercare e acquisire tariffe o numeri verdi per i servizi, ad esempio audioconferenze con accesso esterno (per i ponti di conferenza), gli operatori automatici e le code di chiamata (denominate anche numeri service). I numeri di servizio hanno una capacità di chiamate contemporanee superiore ai numeri di telefono per utenti o abbonati.
-ms.openlocfilehash: 9a7761ca39295ef36531f74b835d9e0dbd498d51
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 78bb84b60e6c7b4632e8eef84e2b6dc057af136e
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19500728"
 ---
 # <a name="getting-service-phone-numbers"></a>Ottenere numeri di telefono del servizio
 
@@ -43,6 +44,8 @@ Sono disponibili due modi di ottenere numeri di servizio in modo che è possibil
     > Quando si trasferiscono i numeri di servizio, è consigliabile contattare [il supporto Microsoft](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) per garantire che la capacità di chiamata simultanea superiore viene considerata e configurata correttamente.
   
 ## <a name="get-new-service-numbers"></a>Ottenere i numeri di servizio
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     

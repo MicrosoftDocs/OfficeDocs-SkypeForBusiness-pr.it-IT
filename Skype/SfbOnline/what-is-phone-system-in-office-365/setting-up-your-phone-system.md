@@ -19,11 +19,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare il sistema telefonico (Cloud PBX) per l'organizzazione. "
-ms.openlocfilehash: 3092442f9b2421bb0dc8a7a6ac7683761176d64c
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 26ffa60322c4b3f37b8f524c43efdf9a74cb1305
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19501041"
 ---
 # <a name="setting-up-phone-system-in-your-organization"></a>Impostazione di sistema telefonico all'interno dell'organizzazione
 
@@ -39,7 +40,7 @@ Di seguito è una Guida passo passo per la configurazione di sistema telefonico 
 
 ## <a name="step-2-buy-and-assign-phone-system-and-calling-plan-licenses"></a>Passaggio 2: Acquistare e assegnare licenze sistema telefonico e pianificare la chiamata
 
-Per assegnare una licenza sistema telefonico e pianificare la chiamata a un singolo utente i passaggi sono gli stessi come assegnare una licenza Office 365. Vedi [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). Se si desidera assegnare più utenti in blocco, vedere (.. / skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).
+Per assegnare una licenza sistema telefonico e pianificare la chiamata a un singolo utente i passaggi sono gli stessi come assegnare una licenza Office 365. Vedi [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). Se si desidera assegnare più utenti in blocco, vedere [Assegnare Skype per le licenze aziendali e team di Microsoft](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).
 
 ## <a name="step-3-get-phone-numbers-for-your-users"></a>Passaggio 3: Ottenere i numeri di telefono per gli utenti
 
@@ -53,7 +54,10 @@ Sono disponibili tre modi di ottenere numeri per gli utenti:
 Devi consultare la pagina **Aggiungi nuovi numeri utente** per visualizzare, eseguire ricerche, acquisire e prenotare quei numeri. Ricerca in base al paese/area geografica, lo stato e città e quindi immettere il numero dei numeri di telefono, che è necessario per gli utenti. 
 
 ### <a name="get-new-user-phone-numbers"></a>Ottenere numeri di telefono nuovo utente 
-  
+ 
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+
+ 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
@@ -77,6 +81,9 @@ In alcuni casi (a seconda del paese/area geografica) non sarà in grado di otten
 Oltre a ottenere numeri di telefono per gli utenti da Office 365, è possibile cercare e acquisire tariffe o numeri verdi per i servizi, ad esempio audioconferenze con accesso esterno (per i ponti di conferenza), gli operatori automatici e le code di chiamata (denominate anche numeri service). I numeri di servizio hanno una capacità di chiamate contemporanee superiore ai numeri di telefono per utenti o abbonati. Ad esempio, un numero di servizio può gestire 100s delle chiamate contemporaneamente, mentre il numero di telefono dell'utente può gestire solo alcune chiamate contemporaneamente.
 
 ### <a name="get-new-service-numbers"></a>Ottenere i numeri di servizio
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -262,7 +269,7 @@ Dopo avere creato i numeri di servizio dal **passaggio 4 sopra**, è necessario 
     
 3. Nel riquadro Azioni, in **Licenze prodotti**, fai clic su **Modifica**.
     
-4. On the **Product licenses** page, toggle ** Communications Credits** to **On** to assign this license, and then click **Save**.
+4. Nella pagina **licenze per i prodotti** , attivare e disattivare **Communications titoli di coda** di **su** per assegnare la licenza e quindi fare clic su **Salva**.
     
     > [!NOTE]
     > Anche se ad alcuni utenti è assegnata una licenza **Enterprise E5**, è consigliabile comunque procedere in questo modo.

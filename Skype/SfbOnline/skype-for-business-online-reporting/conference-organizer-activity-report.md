@@ -18,11 +18,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Conference Organized Activity report, and how to interpret and customize it. '
-ms.openlocfilehash: ed65aaed214a35b961c9c13c0d789a224e41258f
-ms.sourcegitcommit: 7ec95ea34422e635661f3659bbc43a7a3484ff99
+ms.openlocfilehash: 7917920c0eeaf5b5e0c1f31ee4eca9bafed10c85
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19500782"
 ---
 # <a name="conference-organizer-activity-report"></a>Rapporto attività organizzatore della conferenza
 
@@ -55,8 +56,9 @@ La relazione, nonché altri Skype per i report di Business, offre informazioni d
 ***
 ![Numero 1](../images/sfbcallout1.png)<br/>Il report **Attività organizzatore di conferenze in Skype for Business** può essere visualizzato per individuare le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si fa clic su in un giorno particolare del rapporto di tabella (vedere numero 7) verrà visualizzati i dati per 30 giorni, fino alla data (vedere numero 2) per cui è stato generato il rapporto.
 
-    > [!Note]
-    > If you click into the details of a specific day, the table will only show data for the 30 days up to the date when the report was generated.
+> [!NOTE]
+> Se fa clic su nei dettagli di un giorno specifico, la tabella verrà visualizzati solo i dati per 30 giorni fino alla data quando è stato generato il rapporto.
+
 ***
 ![Numero 2](../images/sfbcallout2.png)<br/>Ogni report riporta la data in cui è stato generato. I report riflettono in genere una latenza 24 a 48 ore di tempo di attività. 
 ***
@@ -79,7 +81,9 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 ![Numero 8](../images/sfbcallout8.png)<br/>La tabella mostra un'analisi delle attività delle conferenze organizzate, suddivise per utente. Mostra inoltre tutti gli utenti a cui è assegnato Skype for Business e le conferenze che hanno organizzato. Puoi aggiungere altre colonne alla tabella. 
 *    **Nome utente** è il nome dell'utente. 
 *    **Eliminato** indica che la licenza dell'utente è stata rimossa.<br/><br/>
-     **Nota:**  Attività per un utente eliminato sarà comunque visualizzata in un rapporto, purché potrà è stato concesso in licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.<br/> <br/>
+    > [!NOTE]
+    > Attività per un utente eliminato sarà comunque visualizzata in un rapporto, purché potrà è stato concesso in licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.
+     
 *    **Data eliminazione** è la data in cui la licenza dell'utente è stata rimossa. 
 *    **Data di ultima attività (UTC)** è la data dell'ultima attività (UTC) per quell'utente. 
 *    **Messaggistica istantanea** mostra il numero totale di conferenze di messaggistica istantanea che sono state organizzate. 

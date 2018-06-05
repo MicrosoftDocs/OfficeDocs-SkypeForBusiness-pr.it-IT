@@ -19,11 +19,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Informazioni su come attivare e utilizzare il Skype per Business Online i Dashboard qualità delle chiamate e ottenere rapporti di riepilogo di qualità delle chiamate. '
-ms.openlocfilehash: f8a7a71a0e0c0e64ceb7447c53c15483d977e16a
-ms.sourcegitcommit: 5a0b3fe49b64f08979c89443f66b15827034e755
+ms.openlocfilehash: 966dc71705344b1cece9b0e706539d64df95bf50
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19501269"
 ---
 # <a name="turning-on-and-using-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivazione e l'utilizzo del Dashboard di qualità delle chiamate per Microsoft Teams e Skype Business online
 
@@ -50,7 +51,9 @@ Fare riferimento a questo articolo per un elenco di [dimensioni e misure disponi
 ## <a name="activate-microsoft-call-quality-dashboard-cqd-summary-reports"></a>Attivare i rapporti di riepilogo di chiamata Microsoft Quality Dashboard (CQD)
 
 Prima di iniziare a utilizzare il CQD, è necessario attivarlo per l'organizzazione Office 365.
-  
+ 
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+ 
 1. Accedere all'organizzazione Office 365 utilizzando un account di amministrazione e quindi selezionare le sezioni di **amministrazione** per aprire l'interfaccia di amministrazione.
     
 2. Nel riquadro sinistro, in **Admin Center**, selezionare **Skype for Business** per aprire Skype per interfaccia di amministrazione di Business.
@@ -63,7 +66,7 @@ Prima di iniziare a utilizzare il CQD, è necessario attivarlo per l'organizzazi
     
      ![Account di accesso CQD](../images/ac4c1699-d8c1-4bda-af30-0fec35b5fd22.png)
   
-Dopo l'accesso, dopo l'attivazione, la CQD verrà avviata la raccolti e l'elaborazione dei dati.
+Dopo l'accesso dopo l'attivazione, la CQD verrà avviata la raccolti e l'elaborazione dei dati.
   
 > [!NOTE]
 > Potrebbe richiedere alcune ore per l'elaborazione di dati sufficiente per visualizzare i risultati significativi nei report. 

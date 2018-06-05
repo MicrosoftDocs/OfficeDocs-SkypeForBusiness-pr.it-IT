@@ -21,11 +21,12 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 description: 'Learn how in Office 365 Calling Plan (PSTN Calling plan) to buy and set up licenses, get phone numbers, add and assign emergency locations and phone numbers to users, and tell your users about their new phone numbers. '
-ms.openlocfilehash: 7ba6ade1e18dd17716a6669d6a97c3150a97a03a
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 104b682ebf7b28b09e7f44c75d37cf2874e34c47
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19500969"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 Calls to other Skype for Business users are free, but if you want your users to be able to call phones outside of your business, get a Domestic Calling Plan or an International Calling Plan in Office 365. It's easy to set this up for your business. 
@@ -44,7 +45,7 @@ Passare alla [disponibilità paese e alle aree per le conferenze Audio e la chia
 ## <a name="step-3-get-phone-numbers"></a>Passaggio 3: Ottenere i numeri di telefono
 Esistono tre modi per ottenere nuovi numeri utente:
 
-- **Utilizzare il Skype per l'interfaccia di amministrazione di Business.** Per alcuni paesi, è possibile ottenere numeri per gli utenti con il Skype per interfaccia di amministrazione di Business, vedere [ottenere numeri di telefono e per gli utenti.](getting-phone-numbers-for-your-users.md).
+- **Utilizzare il Skype per l'interfaccia di amministrazione di Business.** Per alcuni paesi, è possibile ottenere numeri per gli utenti con il Skype per interfaccia di amministrazione di Business, vedere [Getting i numeri di telefono per gli utenti](getting-phone-numbers-for-your-users.md).
     
 - **Porte i numeri esistenti.** Consente di porta o trasferire i numeri esistenti dal provider di servizi corrente o gestore telefonico a Office 365. [Trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md) o [numeri di telefono di gestione dell'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per ulteriori informazioni che consentono di eseguire questa operazione, vedere.  
   
@@ -53,20 +54,36 @@ Esistono tre modi per ottenere nuovi numeri utente:
 ## <a name="step-4-add-emergency-addresses-and-locations-for-your-organization"></a>Passaggio 4: Aggiungere gli indirizzi di emergenza e percorsi per l'organizzazione
 <a name="bkmk_add_addresses"></a> Un indirizzo di emergenza deve essere associato a un numero di telefono. Quando si verifica questa associazione può variare in paese e aree. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito, è necessario associare un indirizzo di emergenza per il numero di telefono quando si desidera ottenere i numeri di telefono da Office 365 o il trasferimento di numeri di telefono da provider di servizi corrente. 
 
-Per aggiungere un indirizzo di emergenza per l'organizzazione, in Skype per Business admin center passare a **Voice** > **percorsi Emergency** > **Aggiungi nuovo indirizzo**. Per ulteriori informazioni, vedere [Add o remove e indirizzo di emergenza per l'organizzazione](../what-are-calling-plans-in-office-365/add-or-remove-an-emergency-address-for-your-organization.md) .
+**Per aggiungere un indirizzo di emergenza dell'organizzazione**
 
-Per aggiungere un percorso di emergenza per l'organizzazione in Skype per interfaccia di amministrazione di Business, passare a **Voice** > **percorsi Emergency** > **Aggiungi nuovo indirizzo**. Per ulteriori informazioni, vedere [aggiungere, modificare o rimuovere un percorso di emergenza per l'organizzazione](../what-are-calling-plans-in-office-365/add-or-remove-an-emergency-address-for-your-organization.md) .
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+
+In Skype per interfaccia di amministrazione di Business, passare a **Voice** > **percorsi Emergency** > **Aggiungi nuovo indirizzo**. Per ulteriori informazioni, vedere [Add o remove e indirizzo di emergenza per l'organizzazione](../what-are-calling-plans-in-office-365/add-or-remove-an-emergency-address-for-your-organization.md) .
+
+**Per aggiungere un percorso di emergenza dell'organizzazione** 
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+
+In Skype per interfaccia di amministrazione di Business, passare a **Voice** > **percorsi Emergency** > **Aggiungi nuovo indirizzo**. Per ulteriori informazioni, vedere [aggiungere, modificare o rimuovere un percorso di emergenza per l'organizzazione](../what-are-calling-plans-in-office-365/add-or-remove-an-emergency-address-for-your-organization.md) .
 
     
 ## <a name="step-5-assign-an-emergency-address-and-a-phone-number-to-a-user"></a>Passaggio 5: Assegnare un indirizzo di emergenza e un numero di telefono a un utente
 <a name="bkmk_add_addresses"></a> Quando imposta la chiamata dei piani di Office 365, è necessario assegnare un numero di telefono e l'indirizzo di emergenza per ogni utente. Prima che è possibile associare a un numero di telefono, è necessario creare l'indirizzo di emergenza. 
 
-Per aggiungere un indirizzo di emergenza per un utente, in Skype per interfaccia di amministrazione di Business, passare a **Voice** > **utenti VoIP** > **percorso Emergency** > **assegnare numero** > **Cambia percorso**. Per ulteriori informazioni, vedere [assegnare o modificare un indirizzo di emergenza per un utente](../what-are-calling-plans-in-office-365/assign-or-change-an-emergency-address-for-a-user.md) .
+**Per aggiungere un indirizzo di emergenza per un utente** 
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+
+In Skype per interfaccia di amministrazione di Business, passare a **Voice** > **utenti VoIP** > **percorso Emergency** > **assegnare numero** > **Cambia percorso**. Per ulteriori informazioni, vedere [assegnare o modificare un indirizzo di emergenza per un utente](../what-are-calling-plans-in-office-365/assign-or-change-an-emergency-address-for-a-user.md) .
 
    > [!NOTE]
    > È inoltre possibile assegnare un indirizzo di emergenza quando si assegna un numero di telefono.
 
-Per assegnare un numero di telefono a un utente, in Skype per interfaccia di amministrazione di Business, passare a **Voice** > **utenti VoIP** > **assegnare numero** > **Cambia percorso**. Per ulteriori informazioni, vedere [assegnare, modificare o rimuovere un numero di telefono di un utente](../what-are-calling-plans-in-office-365/assign-change-or-remove-a-phone-number-for-a-user.md) .
+**Per assegnare un numero di telefono a un utente**
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+
+In Skype per interfaccia di amministrazione di Business, passare a **Voice** > **utenti VoIP** > **assegnare numero** > **Cambia percorso**. Per ulteriori informazioni, vedere [assegnare, modificare o rimuovere un numero di telefono di un utente](../what-are-calling-plans-in-office-365/assign-change-or-remove-a-phone-number-for-a-user.md) .
 
 ## <a name="step-6-tell-your-users-about-their-new-phone-numbers"></a>Passaggio 6: Informare gli utenti ai nuovi numeri di telefono
 <a name="bkmk_add_addresses"> </a>

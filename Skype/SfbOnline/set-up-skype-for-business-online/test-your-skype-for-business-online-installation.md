@@ -16,11 +16,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Learn to save time, support calls and increase satisfaction by setting up test accounts and computers, and testing dial-in conferencing, online features such as person-to-person calls, conferencing, and sign in and out. '
-ms.openlocfilehash: f180dc41bb76c8ceba0ce657232b543afebd5e6b
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: fdb0b7585c2462b64d4735bc4c59d9020e6466e3
+ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19500762"
 ---
 # <a name="test-your-skype-for-business-online-installation"></a>Testare l'installazione di Skype for Business online
 
@@ -47,7 +48,7 @@ Ecco quello che occorre:
 ## <a name="set-up-test-accounts"></a>Configurare gli account di prova
 <a name="__toc328126910"> </a>
 
-1. Passare a **Amministratore** > **Office 365** > **Utenti e gruppi**, selezionare Aggiungi![Aggiungi](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) e immettere le informazioni richieste.
+1. Passare a **amministrazione** > **Office 365** > **utenti e gruppi**e quindi selezionare Aggiungi![Add](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) e immettere le informazioni necessarie.
     
 2. Al passaggio 4 (Posta elettronica) immettere il proprio indirizzo di posta elettronica. Verrà creato un record che contiene il nome utente e la password per il nuovo utente. 
     
@@ -75,7 +76,7 @@ Dopo essere stati configurati per i servizi di audioconferenza, gli utenti ricev
   
  **Per aggiungere le informazioni relative alle conferenze telefoniche con audio all'account di uno degli utenti di prova**
   
-1. Fare clic su **Audioconferenza** > **Utenti**.
+1. Fare clic su **servizi di conferenza Audio** > **gli utenti**.
     
 2. Fare clic sui nomi degli utenti da configurare per le conferenze telefoniche con accesso esterno, quindi fare clic su **Modifica**![Modifica](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png).
     
