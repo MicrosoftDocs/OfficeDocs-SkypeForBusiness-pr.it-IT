@@ -16,11 +16,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: Learn how to send Skype for Business instant messages even when your contacts aren't signed in using PowerShell.
-ms.openlocfilehash: 99238998f5bb5396f0c2c97226ac9dc37180fe01
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 84455ad8efceda6af8f7f077ff9968485debed06
+ms.sourcegitcommit: a79668bb45b73a63bea5c249d76a4c4c2530a096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "19568398"
 ---
 # <a name="turn-on-or-off-offline-messages-for-admins"></a>Attivare o disattivare i messaggi offline per gli amministratori
 
@@ -66,20 +67,8 @@ Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in u
 > 
   ```
   Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
-  ```
-
-> 
-  ```
   $credential = Get-Credential
-  ```
-
-> 
-  ```
   $session = New-CsOnlineSession -Credential $credential
-  ```
-
-> 
-  ```
   Import-PSSession $session
   ```
 
@@ -100,24 +89,16 @@ Set-CsClientPolicy -Identity Global -EnableIMAutoArchiving $False
 
 Per abilitare o disabilitare l'invio di messaggi non in linea messaggi non in linea per un utente, impostare _EnableIMAutoArchiving_ su `True` o `False`. Per impostazione predefinita, è impostato su  `True`. È possibile utilizzare un criterio esistente o crearne uno simile all'esempio seguente.
   
-> 
+ 
   ```
   New-CsClientPolicy -Identity OfflineIM
-  ```
-
-> 
-  ```
   Set-CsClientPolicy -Identity OfflineIM -EnableIMAutoArchiving $False
-  ```
-
-> 
-  ```
   Grant -CsClientPolicy -Identity "Tony Smith" - PolicyName OfflineIM
   ```
 
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 
-- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
