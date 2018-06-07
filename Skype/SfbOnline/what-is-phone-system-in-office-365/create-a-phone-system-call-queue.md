@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: 'Learn how to set up phone system for Office 365 (Cloud PBX) call queues to give you an organizational greeting, music on hold, and redirecting calls to call agents in distribution lists and security groups. You can also set the maximum queue size, time out, and call handling options. '
-ms.openlocfilehash: c3ac8c47d0936ecede1532bd9356d0db0807142a
-ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
+ms.openlocfilehash: 18988c7d6f913b85d11bc465c336dfd265fa34a0
+ms.sourcegitcommit: 6340d0050a51790e40b7ab8e4e89348251ba184f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "19501093"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19649583"
 ---
 # <a name="create-a-phone-system-call-queue"></a>Creare una coda di chiamata di sistema telefonico
 
@@ -155,7 +155,7 @@ Nell' **interfaccia di amministrazione di Skype for Business**, fai clic su **In
 ***
 ![Numero 1](../images/sfbcallout1.png)<br/><br/>Gli agenti di chiamata (50 massimo) possono essere:
 *    Un utente in linea con una licenza di **Sistema telefonico** e abilitato per Enterprise Voice o con un piano di chiamata. <br/><br/> **Nota:**  Per reindirizzare le chiamate agli utenti dell'organizzazione che sono in linea, che deve disporre di una licenza di **Sistema telefonico** e abilitati per Enterprise Voice o disporre di un piano di chiamata. Vedere [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, eseguire:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true` <br/><br/>
-*    Gli utenti in linea con una con una licenza di **Sistema telefonico** e una chiamata a pianificare che vengono aggiunti a un gruppo di Office 365, una lista di distribuzione abilitati alla posta elettronica o un gruppo di sicurezza. Possono occorrere fino a 30 minuti perché un nuovo agente aggiunto a una lista di distribuzione o gruppo di sicurezza inizi a ricevere chiamate da una coda di chiamata. Un gruppo di sicurezza o elenco distribuzione appena creata può richiedere fino a 48 ore per diventare disponibili per l'utilizzo con le code di chiamata. Appena creati gruppi di Office 365 sono disponibili quasi immediatamente. <br/> 
+*    Utenti in linea con una licenza di **Sistema telefonico** e un piano di chiamata che vengono aggiunti a un gruppo di Office 365, una lista di distribuzione abilitati alla posta elettronica o un gruppo di sicurezza. Possono occorrere fino a 30 minuti perché un nuovo agente aggiunto a una lista di distribuzione o gruppo di sicurezza inizi a ricevere chiamate da una coda di chiamata. Un gruppo di sicurezza o elenco distribuzione appena creata può richiedere fino a 48 ore per diventare disponibili per l'utilizzo con le code di chiamata. Appena creati gruppi di Office 365 sono disponibili quasi immediatamente. <br/> 
 
     > [!NOTE] 
     > Gli utenti ospitati in locale con Lync Server 2010 non sono supportati.           
