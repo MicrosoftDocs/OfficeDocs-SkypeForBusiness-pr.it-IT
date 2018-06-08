@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'È possibile ottenere i passaggi per creare un numero di telefono predefinito per i chiamanti partecipare a una Skype per riunione in linea aziendale. '
-ms.openlocfilehash: 5ddc20d1b9166315581a6f894c5d630d9e247881
-ms.sourcegitcommit: a79668bb45b73a63bea5c249d76a4c4c2530a096
+ms.openlocfilehash: eb2c5c5e8cdc0562cb5a2e391c741763b1da0bd4
+ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "19568282"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "19703749"
 ---
 # <a name="set-the-phone-numbers-included-on-invites"></a>Impostare il telefono numeri incluso nel invita
 
@@ -38,6 +38,9 @@ Un ponte per conferenze offre un set di numeri di telefono di accesso esterno pe
   
 > [!NOTE]
 > Può esistere un massimo di un numero a pagamento e un numero verde nel invito alla riunione per organizzare una riunione, ma è disponibile anche un collegamento presente nella parte inferiore di ogni invito alla riunione che consente di aprire l'elenco completo di tutti i numeri di telefono di accesso esterno che può essere utilizzato per accedere a una riunione. 
+
+> [!NOTE]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="set-the-default-dial-in-phone-number-for-a-meeting-organizer"></a>Impostare il numero di telefono di accesso esterno predefinito per l'organizzatore della riunione
 
@@ -56,9 +59,6 @@ Un ponte per conferenze offre un set di numeri di telefono di accesso esterno pe
     ![Fare clic su Modifica accanto a conferenze Audio](../images/teamseditaudioconf.png)
 
 4. Utilizzare i campi **numero a pagamento** o **numero verde** per immettere i numeri per l'utente.
-
-> [!Note]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
 ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 

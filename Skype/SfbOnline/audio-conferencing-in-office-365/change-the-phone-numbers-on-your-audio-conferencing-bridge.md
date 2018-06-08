@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Quando si acquistano le licenze di accesso esterno alle audioconferenze, Microsoft ospita la ponte per conferenze audio per la propria organizzazione. Consente di ponte per conferenze audio numeri di telefono di accesso esterno da posizioni diverse in modo i partecipanti e gli organizzatori delle riunioni possono utilizzarli per partecipare a Skype per le riunioni aziendali o Microsoft Teams mediante un telefono.
-ms.openlocfilehash: 0eceff97470bf6c0df6b0818734955ebf71d0f76
-ms.sourcegitcommit: a79668bb45b73a63bea5c249d76a4c4c2530a096
+ms.openlocfilehash: 1801a3501e865ca91081a0e298efc45882a872eb
+ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "19568364"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "19703649"
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Modificare i numeri di telefono del ponte per conferenze Audio
 
@@ -35,13 +35,13 @@ Oltre ai numeri di telefono già assegnati al ponte per conferenze, è possibile
   
 > [!NOTE]
 > Per poter assegnare/annullare l'assegnazione di un numero di telefono per un ponte per conferenze, il numero di telefono deve essere un numero "*servizio*". È possibile visualizzare il tipo di numero è, passare a **Voice** > **numeri di telefono** e informazioni nella colonna **Tipo di numero** . Titoli di coda di Office 365 Communications deve impostare prima per consentire agli utenti di accedere alla bridge su un numero verde. 
+
+> [!NOTE]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="steps-when-you-are-assigning-a-new-service-phone-number-to-your-conference-bridge"></a>Istruzioni per assegnare un numero telefonico di servizio al tuo bridge di conferenza
 
 ### <a name="step-1---assign-the-new-phone-number-to-your-audio-conferencing-bridge"></a>Passaggio 1 - assegnare il nuovo numero di telefono per il ponte per conferenze audio
-
-> [!Note]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
 1. Accedi a Office 365 con l'account aziendale.
     

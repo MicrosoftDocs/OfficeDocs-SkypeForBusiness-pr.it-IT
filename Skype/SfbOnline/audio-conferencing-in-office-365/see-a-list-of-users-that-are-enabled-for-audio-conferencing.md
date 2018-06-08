@@ -20,15 +20,19 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come visualizzare un elenco di utenti nell'organizzazione abilitati per la conferenza telefonica all'interno di Skype per interfaccia di amministrazione di Business. "
-ms.openlocfilehash: 28fb899586c6a0904126249b769e6fb0004878ca
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: d7a5c272968def249df22af25fd36d257f8c74a0
+ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "19703465"
 ---
 # <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing"></a>Visualizzare un elenco di utenti abilitati per le conferenze Audio
 
 Dopo aver abilitato Skype per utenti Business o Microsoft Teams all'interno dell'organizzazione per le conferenze Audio, è possibile visualizzare l'elenco degli utenti che sono stati abilitati. Quando si esamina l'elenco verrà visualizzato anche per ogni utente presente nell'elenco tipo di provider di servizi di conferenza audio che utilizzano, il numero di telefono di accesso esterno predefinito per l'utente e se l'organizzazione non è abilitata per gli ID conferenza dinamico, ID conferenza statico per le riunioni di audioconferenze con accesso esterno che consentono di organizzare.
+
+> [!NOTE]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="viewing-a-list-of-users"></a>Visualizzazione di un elenco di utenti
 
@@ -40,9 +44,6 @@ Dopo aver abilitato Skype per utenti Business o Microsoft Teams all'interno dell
     
 - Nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **gli utenti**.
 
-> [!Note]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
-    
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 
 - Quando si visualizza l'elenco di utenti abilitati, è possibile selezionare un utente dall'elenco e utilizzare riquadro delle azioni per modificare le impostazioni di conferenza audio di quell'utente.
@@ -75,7 +76,7 @@ Dopo aver abilitato Skype per utenti Business o Microsoft Teams all'interno dell
     
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     

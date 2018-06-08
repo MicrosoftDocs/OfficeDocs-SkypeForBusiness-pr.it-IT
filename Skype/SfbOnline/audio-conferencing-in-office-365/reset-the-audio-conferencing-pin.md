@@ -20,17 +20,21 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Scoprire che cosa è necessario tenere conto PIN e su come reimpostare i valori. '
-ms.openlocfilehash: 956c8e1ec7a83832c9aa2605845bc7fd42a047f7
-ms.sourcegitcommit: 9d816453083c26fd24f8a1cdc0f53f3d218c43b3
+ms.openlocfilehash: 85e890327da538016ffb874ee01be0e86959f47e
+ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "19703759"
 ---
 # <a name="reset-the-audio-conferencing-pin"></a>Reimpostare il PIN per conferenze Audio
 
 Un PIN è un codice costituito da numeri che viene creati per ogni Skype per utenti Business e Teams Microsoft che sono abilitato per le conferenze audio. PIN di conferenza audio vengono utilizzati per gli organizzatori delle riunioni per identificare che sono l'organizzatore della riunione e consentire loro di avviare una riunione tramite telefono. Se si utilizza Skype per applicazioni aziendali o Microsoft Teams per avviare la riunione, un PIN non è obbligatorio. Se gli utenti dimenticano il PIN e non possono trovare la posta elettronica che è stato inviato a tali quando sono stati abilitati per le conferenze audio, un amministratore può reimpostare il PIN o è possibile reimpostare i propri PIN.
   
 È possibile avviare riunioni quando si unisce a un utente autenticato mediante un Skype per applicazioni aziendali o Microsoft Teams oppure quando l'organizzatore accede a con il proprio PIN nel telefono. Se è richiesto un PIN per avviare la riunione tramite telefono, per impostazione predefinita tutti gli utenti che partecipano alla riunione tramite telefono prima dell'inizio della riunione dovranno rimanere nella sala di attesa ascoltando musica fino all'inizio della riunione. Se l'organizzatore di una riunione non richiede il PIN per avviare la riunione tramite telefono, quando un chiamante tenta di partecipare alla riunione, non dovrà specificare un PIN.
+
+> [!NOTE]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="reset-a-users-pin"></a>Reimpostare il PIN dell'utente
 

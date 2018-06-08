@@ -20,11 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come cercare i numeri di conferenza telefonica all'interno di Skype per le aziende. "
-ms.openlocfilehash: bccd4a5c02dbb6bc32c27e315b80a39705284429
-ms.sourcegitcommit: b93d1a0012aacb164d700db0143683cb6f276bf4
+ms.openlocfilehash: 70602e252d7c31bff7d6181c0cd5a51353da2def
+ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "19703659"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers"></a>Visualizzare un elenco di numeri di conferenze Audio
 
@@ -41,7 +42,10 @@ Se esiste un solo numero all'interno dell'organizzazione, verrà utilizzato come
   
 > [!NOTE]
 > Nazionali numeri dedicati alla propria organizzazione e sono le uniche che possono essere impostate come un numero di telefono predefinito. Tuttavia, internazionali numeri di accesso possono essere condivisi tra più organizzazioni. 
-  
+
+> [!NOTE]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
 ## <a name="to-view-your-audio-conferencing-phone-numbers"></a>Per visualizzare i numeri di telefono di accesso esterno alle audioconferenze
 
 ![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
@@ -50,9 +54,6 @@ Se esiste un solo numero all'interno dell'organizzazione, verrà utilizzato come
 2.  Visualizzare i numeri di telefono disponibili per le conferenze audio.
 
 - È inoltre possibile visualizzare il percorso e il linguaggio principale che verrà utilizzato per l'operatore automatico di audioconferenza.
-
-> [!Note]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
 ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 

@@ -22,11 +22,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni su come configurare servizi di conferenza telefonica o audio per le persone nell'azienda che desiderano partecipare a conferenze telefoniche mediante un telefono. "
-ms.openlocfilehash: d91a3637a0f7d35d319368017e0f9c6611faf2a7
-ms.sourcegitcommit: 4e9574c8a9eac270135684aa4a8b77621aa46403
+ms.openlocfilehash: 52872b9995d5973ee872e3105c870ccf7bb07abc
+ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "19703485"
 ---
 # <a name="set-up-audio-conferencing-for-skype-for-business-and-microsoft-teams"></a>Configurare le audioconferenze per Skype for Business e Microsoft Teams
 
@@ -35,6 +36,9 @@ A volte le persone all’interno dell'organizzazione devono utilizzare un telefo
 È sufficiente configurare conferenze Audio per gli utenti che prevedono di programmare o condurre riunioni. I partecipanti alla riunione che effettua la chiamata non è necessario alcun licenze assegnate loro o altre impostazioni.
   
 Per le domande frequenti sui servizi di conferenza Audio, vedere [domande frequenti di conferenze Audio](audio-conferencing-common-questions.md).
+
+> [!NOTE]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="step-1-find-out-if-audio-conferencing-is-available-in-your-countryregion"></a>Passaggio 1: Scoprire se l'audioconferenza è disponibile nel paese/area geografica
 <a name="__top"> </a>
