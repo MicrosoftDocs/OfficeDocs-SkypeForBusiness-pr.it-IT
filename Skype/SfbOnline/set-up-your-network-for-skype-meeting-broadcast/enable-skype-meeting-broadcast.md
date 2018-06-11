@@ -17,20 +17,21 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Prima che le persone nella tua organizzazione possano usare Skype Meeting Broadcast, devi abilitarlo. Per eseguire questo passaggio devi sapere come usare Windows PowerShell. Se non conosci Windows PowerShell, può essere utile assumere un partner Microsoft che se ne occupi al posto tuo.
-ms.openlocfilehash: 847630e92d0a8ea26edcc7bb70213ee9f932517d
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 2564cf8acc809cb3b3973519bfea3518c851eb34
+ms.sourcegitcommit: 0fa147c33b1d7b5790af8d93339700ab62939430
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19744262"
 ---
 # <a name="enable-skype-meeting-broadcast"></a>Abilitare Skype Meeting Broadcast
 
 [] Prima che le persone nella tua organizzazione possano usare Skype Meeting Broadcast, devi abilitarlo. Per eseguire questo passaggio devi sapere come usare Windows PowerShell. Se non conosci Windows PowerShell, può essere utile assumere un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) che se ne occupi al posto tuo.
-  
-> [!CAUTION]
-> Skype Meeting Broadcast è disattivato per impostazione predefinita in quanto la distribuzione del contenuto multimediale di una riunione trasmessa si serve della Rete di distribuzione dei contenuti (CDN) di Microsoft Azure per raggiungere una larga scala di utenza e supportare migliaia di persone che guardano una trasmissione. I contenuti multimediali in blocchi che passano attraverso la CDN vengono crittografati, e la cache CDN ha una durata limitata. Inoltre, il componente CDN di Azure potrebbe non essere conforme a tutti gli elementi delle clausole del modello EU derivanti dalla Direttiva sulla protezione dei dati dell'Unione Europea. Abilitando questa funzione, accetti il presente avviso. 
+
   
 ## <a name="enable-skype-meeting-broadcast-using-the-skype-for-business-admin-center"></a>Abilitare Skype Meeting Broadcast con l'interfaccia di amministrazione di Skype for Business
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Accedere con l'account amministratore globale di Office 365 in [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home).
     
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/18/2018
     
 1. Per verificare che sia in esecuzione la versione 3.0 o successive: **Menu Start** > **Windows PowerShell**.
     
-2. Controlla la versione digitando  _Get-Host_ nella finestra **Windows PowerShell**.
+2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
     
 3. Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell. Per scaricare e aggiornare Windows PowerShell alla versione 4.0, vedere [Windows Management Framework 4.0 ](https://go.microsoft.com/fwlink/?LinkId=716845). Quando richiesto, riavviare il computer.
     
