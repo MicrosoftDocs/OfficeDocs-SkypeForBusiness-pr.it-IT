@@ -17,11 +17,12 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Purtroppo, esistono alcune licenze utente che vengono bloccate quando utente passa a https://broadcast.skype.com e si desidera utilizzare Skype riunione trasmissione. Se un utente visualizza il messaggio, hanno una delle licenze bloccate ad essi assegnate. Se si desidera comunque loro di utilizzarlo, assegnarli a un'altra licenza di Office 365.
-ms.openlocfilehash: 536df828081fdda78b6a0079a53661a4b3276e3a
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: f7a7bb44a6de3cfaa5af282f855b0345f0a3ea76
+ms.sourcegitcommit: 2290f152ea13d87fb1fd70007fe19523184ce947
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/12/2018
+ms.locfileid: "19844600"
 ---
 # <a name="blocked-user-licenses-for-skype-meeting-broadcast"></a>Bloccati le licenze utente per la trasmissione riunione Skype
 
@@ -51,17 +52,10 @@ Verranno bloccate Skype riunione trasmissione se una qualsiasi delle licenze ute
     
 - Office 365 Education E3 studente
     
-- Vantaggi di utilizzo di Office 365 A3 student
+- Vantaggi di utilizzo di Office 365 A1 student
     
-- Vantaggi di utilizzo di Office 365 A5 student
-    
-- Office 365 A5 senza vantaggio di utilizzo PSTN per conferenze studente
-    
-- Vantaggi di utilizzare Microsoft 365 A3 studente
-    
-- Vantaggi di utilizzare Microsoft 365 A5 studente
-    
-- Vantaggi di utilizzare Microsoft 365 A5 student senza servizi di conferenza PSTN
+- Vantaggi di utilizzo di Microsoft 365 A1 studente
+
     
 ## <a name="related-topics"></a>See also
 
