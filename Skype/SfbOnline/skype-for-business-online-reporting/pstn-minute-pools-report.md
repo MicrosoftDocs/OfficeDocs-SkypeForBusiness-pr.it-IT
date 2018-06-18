@@ -17,12 +17,13 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile utilizzare Skype per report pool minuto Business PSTN per visualizzare il numero di minuti utilizzati durante il mese corrente all'interno dell'organizzazione.
-ms.openlocfilehash: be1b3cbea37f8d66c25ef6c1e75f18e7473a299e
-ms.sourcegitcommit: 0a0fd436d4d732710bb65e1809ac28dd2e0df41a
+search.appverid: MET150
+ms.openlocfilehash: 876455807887694f7e885038e7473634a40f5f21
+ms.sourcegitcommit: 607029d24fda331681e23006887fb484410c2b31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "19526945"
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "19933058"
 ---
 # <a name="pstn-minute-pools-report"></a>Rapporto pool minuto PSTN
 

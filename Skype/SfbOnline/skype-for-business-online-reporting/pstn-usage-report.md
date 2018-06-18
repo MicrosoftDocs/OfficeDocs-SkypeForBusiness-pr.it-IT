@@ -17,12 +17,13 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo di Audio conferenza PSTN compreso il costo della chiamata in modo che è possibile acquisire familiarità con i dati di utilizzo e chiamare fatturazione dettagli per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: e69595c9aa85e181ecc74afbfa949679b4b3f561
-ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
+search.appverid: MET150
+ms.openlocfilehash: 62b6bff4952a590bfeef47a6d1fe23e1fe3d49d5
+ms.sourcegitcommit: 607029d24fda331681e23006887fb484410c2b31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "19500942"
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "19933128"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
