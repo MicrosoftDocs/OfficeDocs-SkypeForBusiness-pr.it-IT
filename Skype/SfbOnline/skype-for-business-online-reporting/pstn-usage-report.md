@@ -18,12 +18,12 @@ ms.custom:
 - Reporting
 description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo di Audio conferenza PSTN compreso il costo della chiamata in modo che è possibile acquisire familiarità con i dati di utilizzo e chiamare fatturazione dettagli per determinare l'utilizzo all'interno dell'organizzazione.
 search.appverid: MET150
-ms.openlocfilehash: 62b6bff4952a590bfeef47a6d1fe23e1fe3d49d5
-ms.sourcegitcommit: 607029d24fda331681e23006887fb484410c2b31
+ms.openlocfilehash: 59a1fbae9614fa6742f73b46c442d7912c71f88d
+ms.sourcegitcommit: 08cf97296fb9ba6fbc4d68c3e380c8f37e86dd02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "19933128"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "19973369"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -89,6 +89,7 @@ Questo è l'aspetto del report.
      *    **MCOPSTNPP** - Communications titoli di coda <br/> **MCOPSTN1** - chiamata pianificare nazionale (min 3000 US / min 1200 UE piani) 
      *    **MCOPSTN2** - piano chiamate internazionali 
      *    **MCOPSTN5** - nazionale chiamata Plan (piano chiamante min 120) 
+     *    **MCOPSTN6** - nazionale chiamata Plan (piano chiamante 240 min) Nota: limitata disponibilità
      *    **MCOMEETADD** - audioconferenze con accesso esterno
      *    **MCOMEETACPEA** - retributive Per minuto audioconferenze con accesso esterno 
 ***
