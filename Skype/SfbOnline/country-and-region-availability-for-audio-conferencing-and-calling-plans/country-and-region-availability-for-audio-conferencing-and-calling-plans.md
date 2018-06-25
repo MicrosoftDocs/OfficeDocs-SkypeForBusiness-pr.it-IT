@@ -24,11 +24,12 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 description: Puoi selezionare un paese/un’area geografica per vedere se sono disponibili o meno Audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e i numeri verdi e a tariffa.
-ms.openlocfilehash: 5a8ccbda886b72b0ad960a92152d37d68784197d
-ms.sourcegitcommit: 68e68c96c18d854afc0158920e6d9d738f276d91
+ms.openlocfilehash: d4fd54348cf1897a60c235f3f4fa408c051b3f0b
+ms.sourcegitcommit: 18ae1505642e985f7fb62d2e70e37e8489b5ef15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "20034647"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica
 
@@ -124,7 +125,7 @@ ms.lasthandoff: 05/24/2018
 > - [Venezuela](availability-in-venezuela.md)
 > - [Vietnam](availability-in-vietnam.md)
 
-**Se sta cercando un foglio di calcolo con tutti i paesi, scaricare e salvare la [cartella di lavoro Cloud vocale caratteristica paese/area geografica disponibilità](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/country-and-region-availabilty/country-and-region-availability-(v-05042018)-(en-us).xlsx?raw=true)**.
+**Se sta cercando un foglio di calcolo con tutti i paesi, scaricare e salvare la [cartella di lavoro Cloud vocale caratteristica paese/area geografica disponibilità](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/country-and-region-availabilty/country-and-region-availability-(v-06252018)-(en-us).xlsx?raw=true)**.
 
 ***
 
