@@ -1,5 +1,5 @@
 ---
-title: Attivazione e l'utilizzo del Dashboard di qualità delle chiamate
+title: Attivazione e utilizzo di Call Quality Dashboard
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
@@ -19,12 +19,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Informazioni su come attivare e utilizzare il Skype per Business Online i Dashboard qualità delle chiamate e ottenere rapporti di riepilogo di qualità delle chiamate. '
-ms.openlocfilehash: 856cf70085bbd0c7ca5cd5e253aec991bb970d62
-ms.sourcegitcommit: dfcdb18d0eb3205ef9180f048674f586aac92de0
+ms.openlocfilehash: 6651525ced62b89b690a8100ec69a36b5fd5695c
+ms.sourcegitcommit: b859f9b3cb89f0b0ac4aacbba75f916e38981a26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "19570317"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "20091609"
 ---
 # <a name="turning-on-and-using-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivazione e l'utilizzo del Dashboard di qualità delle chiamate per Microsoft Teams e Skype Business online
 
@@ -42,7 +42,9 @@ Le modifiche più recenti per CQD sono i seguenti:
 - Include i dati di Microsoft Teams oltre Skype per dati Business in linea.
     
 - Rapporti di riepilogo includono un filtro prodotti per selezionare tutti i dati, dati di Microsoft Teams o Skype per dati Business in linea.
-    
+
+- Regola di classificazione qualità flusso video e VBSS è stata aggiornata. Fare riferimento alla [Classificazione flusso nel Dashboard di qualità delle chiamate](stream-classification-in-call-quality-dashboard.md) per le definizioni di classificatore più recente.
+
 Fare riferimento a questo articolo per un elenco di [dimensioni e misure disponibile nel Dashboard di qualità delle chiamate](dimensions-and-measures-available-in-call-quality-dashboard.md).
   
 > [!NOTE]
@@ -117,7 +119,7 @@ Utilizzare i dati in questa scheda per valutare lo stato di qualità chiamata e 
   
 ![Chiave CQD dati](../images/c8d183b1-6592-49b0-a81d-35cc0568d5f0.png)
   
-I flussi sono classificati in tre gruppi: buona scadente e non classificati. Sono disponibili anche calcolata *che scadente %* i valori che consentono di è il rapporto tra i flussi classificata come *insufficiente* per il conteggio totale flusso classificati. Poiché *% scadente = scadente flussi / (scadente flussi + flussi buona) * 100* , in questo modo diventa *insufficiente %* non modifica la presenza con più flussi *Unclassified* . Per viene utilizzato per la classificazione di un oggetto stream come insufficiente o buona, consultare [Le soglie di qualità delle chiamate](https://aka.ms/cqd_quality_thresholds).
+I flussi sono classificati in tre gruppi: buona scadente e non classificati. Sono disponibili anche calcolata *che scadente %* i valori che consentono di è il rapporto tra i flussi classificata come *insufficiente* per il conteggio totale flusso classificati. Poiché *% scadente = scadente flussi / (scadente flussi + flussi buona) * 100* , in questo modo diventa *insufficiente %* non modifica la presenza con più flussi *Unclassified* . Per viene utilizzato per la classificazione di un oggetto stream come insufficiente o buona, fare riferimento alla [Classificazione flusso nel Dashboard di qualità delle chiamate](stream-classification-in-call-quality-dashboard.md).
   
 Utilizzare la scala sinistra per misurare i valori di conteggio flusso.
   
@@ -226,7 +228,7 @@ Il formato del file di dati che carica deve soddisfare le seguenti operazioni pe
 |Città  <br/> |Stringa  <br/> |Seattle  <br/> |
 |Codice postale  <br/> |Stringa  <br/> |98001  <br/> |
 |Paese  <br/> |Stringa  <br/> |STATI UNITI  <br/> |
-|Informazioni sullo stato  <br/> |Stringa  <br/> |WA  <br/> |
+|Stato  <br/> |Stringa  <br/> |WA  <br/> |
 |Area  <br/> |Stringa  <br/> |MSU  <br/> |
 |InsideCorp  <br/> |Bool  <br/> |1  <br/> |
 |ExpressRoute  <br/> |Bool  <br/> |0  <br/> |
