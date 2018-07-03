@@ -1,17 +1,18 @@
 ---
 layout: HubPage
-hide_bc: ''
-title: Skype per le aziende
-description: Skype per le aziende
-ms.openlocfilehash: be9c878aacde44a547ecbaa2d85ca85ad411fec3
-ms.sourcegitcommit: 7d819bc9eb63bfd85f5dada09f1b8e5354c56f6b
-ms.translationtype: MT
+hide_bc: true
+title: Skype for Business
+description: Skype for Business
+ms.openlocfilehash: 8c09204d6651787de29de48e37ff517b5d70a746
+ms.sourcegitcommit: fb1022abfa10e9cc07528e9b6b821a7214bf45bd
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "19942662"
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>Skype per le aziende</h1>
+        <h1>Skype for Business</h1>
         <ul class="pivots">
             <li>
                 <a href="#home"></a>
@@ -26,12 +27,12 @@ ms.lasthandoff: 03/28/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/skypeforbusiness/skype_business_online.svg" alt="Skype for Business Online" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/SkypeForBusiness-Online-400x140.svg" alt="Skype for Business Online" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Skype per le aziende in linea</h3>
-                                                    <p>Risorse per la gestione di Skype Business online nell'ambiente Office 365.</p>
+                                                    <h3>Skype for Business online</h3>
+                                                    <p>Trova risorse per la gestione di Skype for Business online nell'ambiente di Office 365.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -45,12 +46,12 @@ ms.lasthandoff: 03/28/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/Office/media/hybrid-environment.svg" alt="Hybrid solutions" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/SkypeForBusiness-hybrid-400x140.svg" alt="Hybrid solutions" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Soluzioni ibride</h3>
-                                                    <p>Per informazioni sulla pianificazione Skype per la distribuzione ibrida di Business.</p>
+                                                    <p>Trova informazioni sulla pianificazione di una distribuzione ibrida di Skype for Business.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -64,12 +65,12 @@ ms.lasthandoff: 03/28/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/skypeforbusiness/skype_business_server.svg" alt="Skype for Business Server" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/SkypeForBusiness-Server-400x140.svg" alt="Skype for Business Server" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Skype per Business Server</h3>
-                                                    <p>Distribuire e gestire Skype per Business Server per l'organizzazione.</p>
+                                                    <h3>Skype for Business Server</h3>
+                                                    <p>Distribuisci e gestisci Skype for Business Server per la tua organizzazione.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -83,12 +84,12 @@ ms.lasthandoff: 03/28/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/skypeforbusiness/powershell_reference.svg" alt="PowerShell" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/SkypeForBusiness-Powershell-400x140.svg" alt="PowerShell" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Guida di riferimento di PowerShell per Skype per le aziende</h3>
-                                                    <p>Informazioni sui cmdlet di PowerShell che è necessario gestire Skype per le aziende e Skype Business online.</p>
+                                                    <h3>Riferimento PowerShell per Skype for Business</h3>
+                                                    <p>Scopri i cmdlet di PowerShell necessari per gestire Skype for Business e Skype for Business online.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -102,12 +103,12 @@ ms.lasthandoff: 03/28/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/skypeforbusiness/Microsoft_teams.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/SkypeForBusiness-MicrosoftTeams-400x140.svg" alt="Microsoft Teams" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Team di Microsoft</h3>
-                                                    <p>Ottenere le attività di pianificazione, procedure e indicazioni pratiche è necessario distribuire correttamente Teams Microsoft.</p>
+                                                    <h3>Microsoft Teams</h3>
+                                                    <p>Ottieni la pianificazione, le modalità e il materiale sussidiario pratico necessari per implementare con successo i Microsoft Team.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -121,12 +122,31 @@ ms.lasthandoff: 03/28/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/skypeforbusiness/journey_skype_business_teams.svg" alt="Journey" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/SkypeForBusiness-JourneytoTeams-400x140.svg" alt="Journey" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Passaggio dal Skype per le aziende ai team di Microsoft</h3>
-                                                    <p>Trova informazioni e strumenti per esplorare il percorso ottimale ai team.</p>
+                                                    <h3>Percorso da Skype for Business a Teams</h3>
+                                                    <p>Trova materiale sussidiario e strumenti per esplorare il tuo percorso ottimale per i Teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>                            
+                            <li>
+                                <a href="/SkypeForBusiness/room-systems/">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/SkypeForBusiness-RoomSystems-400x140.svg" alt="Room Systems" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Skype Room Systems v2</h3>
+                                                    <p>Scopri come pianificare, implementare e gestire Skype Room Systems v2.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -140,12 +160,12 @@ ms.lasthandoff: 03/28/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/Office/media/Office-help-support-training.svg" alt="End users" />
+                                                        <img src="https://docs.microsoft.com/en-us/office/media/hub-tiles/SkypeForBusiness-EndUsers-400x140.svg" alt="End users" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Utenti finali</h3>
-                                                    <p>Trovare Guida in linea, formazione e supporto tecnico per Skype per utenti Business support.office.com.</p>
+                                                    <p>Trova aiuto, formazione e supporto tecnico per gli utenti Skype for Business su support.office.com.</p>
                                                 </div>
                                             </div>
                                         </div>
