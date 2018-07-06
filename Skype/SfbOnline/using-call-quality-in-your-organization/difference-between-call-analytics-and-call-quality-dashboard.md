@@ -18,24 +18,27 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Learn about Call Analytics and Call Quality Dashboard and when to use them to monitor and troubleshoot call-quality problems in Skype for Business.
-ms.openlocfilehash: 59be26d9f5adc48b71b2b675f872025b13eb206e
-ms.sourcegitcommit: 607029d24fda331681e23006887fb484410c2b31
+ms.openlocfilehash: 3871db21fef268f9589246b31ee285aa117d0412
+ms.sourcegitcommit: 26d93a15c9d4704c08f3fabc5635839ce2456b2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "19933068"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "20205087"
 ---
 # <a name="call-analytics-and-call-quality-dashboard"></a>Chiamata Analitica e Dashboard qualità chiamata
 
-[] Skype for Business offre due modi per monitorare e risolvere i problemi di qualità delle chiamate: Call Analytics e Call Quality Dashboard. Questo articolo li descrive entrambi e indica quando usare l'uno o l'altro.
+Microsoft Teams e Skype per le aziende consentono di due modi per monitorare e risolvere i problemi di qualità delle chiamate: Analitica delle chiamate e il Dashboard di qualità delle chiamate. Questo articolo li descrive entrambi e indica quando usare l'uno o l'altro.
   
 > [!NOTE]
-> Call Analytics è attualmente in fase di anteprima. Il testo e le immagini qui riportati possono non corrispondere alla tua esperienza di utilizzo. Solo ultimi 30 giorni di dati è disponibile nelle chiamate Analitica.
+> Chiamata Analitica è ora disponibile in Microsoft Teams e Skype per interfaccia di amministrazione di Business in https://admin.teams.microsoft.com. Solo ultimi 30 giorni di dati è disponibile nelle chiamate Analitica.
   
 ## <a name="whats-call-analytics-and-when-should-i-use-it"></a>Che cos'è Call Analytics e quando è consigliabile usarlo?
 
-Call Analytics mostra informazioni dettagliate sui dispositivi, le reti e la connettività relativamente alle specifiche chiamate e riunioni di ciascun utente in un account Skype for Business. Se sei un amministratore di Skype for Business, puoi usare Call Analytics per risolvere i problemi di qualità delle chiamate e di connessione di Skype for Business.
-  
+Chiamata Analitica Visualizza informazioni dettagliate sui dispositivi, reti e connettività relative alle chiamate specifiche e riunioni per ogni utente in un Teams Microsoft Skype per conto di Business. Se si è un amministratore di Office 365, è possibile utilizzare chiamate Analitica risoluzione dei problemi di qualità e la connessione telefonica in Microsoft Teams e Skype per le aziende.
+
+> [!NOTE]
+> Autorizzazioni di agenti help desk e il caricamento di topologia di rete sarà disponibile nel portale di amministrazione di nuovo nei prossimi mesi.
+
 Se desideri che gli utenti non amministratori, come gli agenti di helpdesk di fornitori esterni, possano usare Call Analytics, puoi assegnare loro autorizzazioni in modo che possano usare Call Analytics ma non possano accedere al resto dell'interfaccia di amministrazione di Skype for Business. 
   
 - **Agenti helpdesk con autorizzazioni di Livello 1**: gli agenti vendono un sottoinsieme limitato di dati e di informazioni personali identificabili (personally identifiable information, PII) in Call Analytics. Possono risolvere i problemi delle chiamate, ma inoltreranno i problemi di riunione a un agente di Livello 2.
@@ -46,7 +49,7 @@ Per i dettagli sull'installazione di Call Analytics, vedi [Configurazione di Sky
   
 ## <a name="whats-the-call-quality-dashboard-and-when-should-i-use-it"></a>Che cos'è Call Quality Dashboard e quando è consigliabile usarlo?
 
-Call Analytics offre informazioni dettagliate e specifiche sulla qualità della chiamata dal punto di vista dell'utente. Perché la chiamata dell'utente Antonio Rossi aveva un audio di bassa qualità oggi pomeriggio? Usando Call Analytics, un amministratore di Skype for Business o un agente helpdesk con adeguata formazione può indagare su dispositivo, rete, connettività e altri fattori relativi alla chiamata di Antonio.
+Call Analytics offre informazioni dettagliate e specifiche sulla qualità della chiamata dal punto di vista dell'utente. Perché la chiamata dell'utente Antonio Rossi aveva un audio di bassa qualità oggi pomeriggio? Mediante chiamata Analitica, un Microsoft Teams o Skype per agente help desk adeguatamente formati o amministratore aziendale può esaminare il dispositivo, rete, connettività e altri fattori legati alle chiamate di Tony.
   
 Se da una parte CA è progettato per aiutare amministratori e agenti helpdesk a risolvere i problemi di qualità per specifiche chiamate, Call Quality Dashboard (CQD) è progettato per aiutare gli amministratori di Skype for Business e i tecnici di rete a ottimizzare una rete. CQD non è focalizzato sui singoli utenti, bensì sulle informazioni in aggregato di un'intera organizzazione di Skype for Business. 
   

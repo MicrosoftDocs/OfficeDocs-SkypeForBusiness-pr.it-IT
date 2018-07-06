@@ -1,5 +1,5 @@
 ---
-title: Configurazione di Skype per Business chiamare Analitica
+title: Configurazione di Skype for Business Call Analytics
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
@@ -18,14 +18,14 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Configurare e utilizzare chiamate Analitica per identificare e risolvere i problemi Skype per problemi di qualità chiamata Business e Teams Microsoft.
-ms.openlocfilehash: 5cba53e1a01b1aff3a08f4ec84cea60dc455fb35
-ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
+ms.openlocfilehash: d9483d702280bfe7119ff64431e5d42b168f9021
+ms.sourcegitcommit: 26d93a15c9d4704c08f3fabc5635839ce2456b2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "19500694"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "20205016"
 ---
-# <a name="set-up-skype-for-business-call-analytics"></a>Configurazione di Skype per Business chiamare Analitica
+# <a name="set-up-skype-for-business-call-analytics"></a>Configurazione di Skype for Business Call Analytics
 
 Skype per amministrazione Business Online, è possibile utilizzare chiamate Analitica per risolvere i problemi Skype per le aziende e Microsoft Teams problemi di qualità e connessione delle chiamate. Può essere utile per configurare le seguenti funzionalità di chiamata Analitica:
   
@@ -34,7 +34,7 @@ Skype per amministrazione Business Online, è possibile utilizzare chiamate Anal
 - Aggiungere edificio, siti e le informazioni di tenant per chiamare Analitica caricando un file di dati tsv o csv.
     
 > [!NOTE]
-> Call Analytics è attualmente in fase di anteprima. Il testo e le immagini qui riportati possono non corrispondere alla tua esperienza di utilizzo. 
+> Chiamata Analitica è ora disponibile in Microsoft Teams e Skype per interfaccia di amministrazione di Business in https://admin.teams.microsoft.com. Autorizzazioni di agenti help desk e il caricamento di topologia di rete sarà disponibile nel portale di amministrazione di nuovo nei prossimi mesi. Nel frattempo è possibile continuare a utilizzare il punto finale https://adminportal.services.skypeforbusiness.com per l'accesso livello 1 e Tier 2 help desk. 
   
 ## <a name="set-call-analytics-permissions"></a>Impostare le autorizzazioni di chiamata Analitica
 <a name="BKMK_SetCAPerms"></a>
