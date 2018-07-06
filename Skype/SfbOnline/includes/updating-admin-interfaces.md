@@ -1,1 +1,1 @@
-Stiamo aggiornando domande sulla gestione delle funzionalità disponibili in Microsoft Teams. Operazioni potrebbero essere leggermente diverse.
+Stiamo aggiornando frequentemente il modo in cui puoi gestire le funzionalità disponibili in Microsoft Teams, pertanto i passaggi potrebbero essere leggermente diversi nei Microsoft Teams e nel centro di amministrazione di Skype for Business.
