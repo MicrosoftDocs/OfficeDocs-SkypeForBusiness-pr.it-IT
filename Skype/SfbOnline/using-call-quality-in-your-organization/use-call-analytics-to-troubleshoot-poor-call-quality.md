@@ -1,5 +1,5 @@
 ---
-title: Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate
+title: Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
@@ -19,19 +19,21 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Utilizzare chiama Analitica dettagli sui dispositivi, reti e connettività per la risoluzione dei problemi degli utenti con Skype per chiamate di lavoro e le riunioni.
-ms.openlocfilehash: 933c041fd9683dd84d82fd9abdcf4cc627cf4366
-ms.sourcegitcommit: 26d93a15c9d4704c08f3fabc5635839ce2456b2d
+ms.openlocfilehash: 3610aff4b82f7d1fb0016a8934ec0feb640cc8ff
+ms.sourcegitcommit: abc0f95ef0efe15a8c38cc27a3991abf7480c30e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "20205006"
+ms.lasthandoff: 07/08/2018
+ms.locfileid: "20211006"
 ---
 # <a name="use-call-analytics-to-troubleshoot-poor-call-quality"></a>Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
 
-Analitica chiamata consente di risolvere i problemi di connessione o chiamata con il team di Microsoft e Skype per le aziende. Chiamata Analitica Visualizza informazioni dettagliate sui dispositivi, reti e connettività per le chiamate e le riunioni di ogni utente nell'account di Office 365. Se si crea, siti e tenant sono state aggiunte informazioni per chiamare Analitica verranno inoltre visualizzato per ogni chiamata e della sessione. Informazioni disponibili tramite chiamata Analitica consentono di capire perché un utente è insufficiente o esperienza della riunione. 
+Analitica chiamata consente di risolvere i problemi di connessione o chiamata con Microsoft Teams e Skype per le aziende. Chiamata Analitica Visualizza informazioni dettagliate sui dispositivi, reti e connettività per le chiamate e le riunioni di ogni utente nell'account di Office 365. Se si crea, siti e tenant sono state aggiunte informazioni per chiamare Analitica verranno inoltre visualizzato per ogni chiamata e della sessione. Informazioni disponibili tramite chiamata Analitica consentono di capire perché un utente è insufficiente o esperienza della riunione. 
   
-> [!NOTE]
-> Chiamata Analitica è ora disponibile in Microsoft Teams e Skype per interfaccia di amministrazione di Business in https://admin.teams.microsoft.com.  Autorizzazioni di agenti help desk e il caricamento di topologia di rete sarà disponibile nel portale di amministrazione di nuovo nei prossimi mesi.  Nel frattempo è possibile continuare a utilizzare il punto finale https://adminportal.services.skypeforbusiness.com per l'accesso livello 1 e Tier 2 help desk.
+**Chiamata Analitica è ora disponibile in Microsoft Teams e Skype per Business Admin Center.** Per visualizzare tutte le informazioni sulle chiamate e dati per un utente, utilizzare la scheda **Cronologia delle chiamate** . Tale scopo, la ricerca nella pagina del profilo dell'utente per una ricerca per l'utente nel dashboard di o individuare l'utente dagli **utenti** nel riquadro di spostamento sinistro.
+
+> [!IMPORTANT]
+> Autorizzazioni di agenti help desk e il caricamento di topologia di rete sarà disponibile nel portale di amministrazione di nuovo nei prossimi mesi. Nel frattempo, è possibile continuare a utilizzare https://adminportal.services.skypeforbusiness.com per l'accesso livello 1 e Tier 2 help desk.
   
 ## <a name="troubleshoot-call-quality-problems-using-call-analytics"></a>Risoluzione dei problemi di qualità chiamata tramite chiamata Analitica
 

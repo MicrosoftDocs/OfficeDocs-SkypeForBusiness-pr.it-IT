@@ -1,5 +1,5 @@
 ---
-title: Configurazione di Skype for Business Call Analytics
+title: Impostare le chiamate Analitica
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
@@ -18,14 +18,14 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Configurare e utilizzare chiamate Analitica per identificare e risolvere i problemi Skype per problemi di qualità chiamata Business e Teams Microsoft.
-ms.openlocfilehash: d9483d702280bfe7119ff64431e5d42b168f9021
-ms.sourcegitcommit: 26d93a15c9d4704c08f3fabc5635839ce2456b2d
+ms.openlocfilehash: 748f421a9ec2d5d44ca41192db50c48cc6edcf05
+ms.sourcegitcommit: abc0f95ef0efe15a8c38cc27a3991abf7480c30e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "20205016"
+ms.lasthandoff: 07/08/2018
+ms.locfileid: "20211043"
 ---
-# <a name="set-up-skype-for-business-call-analytics"></a>Configurazione di Skype for Business Call Analytics
+# <a name="set-up-call-analytics"></a>Impostare le chiamate Analitica
 
 Skype per amministrazione Business Online, è possibile utilizzare chiamate Analitica per risolvere i problemi Skype per le aziende e Microsoft Teams problemi di qualità e connessione delle chiamate. Può essere utile per configurare le seguenti funzionalità di chiamata Analitica:
   
@@ -33,13 +33,15 @@ Skype per amministrazione Business Online, è possibile utilizzare chiamate Anal
     
 - Aggiungere edificio, siti e le informazioni di tenant per chiamare Analitica caricando un file di dati tsv o csv.
     
-> [!NOTE]
-> Chiamata Analitica è ora disponibile in Microsoft Teams e Skype per interfaccia di amministrazione di Business in https://admin.teams.microsoft.com. Autorizzazioni di agenti help desk e il caricamento di topologia di rete sarà disponibile nel portale di amministrazione di nuovo nei prossimi mesi. Nel frattempo è possibile continuare a utilizzare il punto finale https://adminportal.services.skypeforbusiness.com per l'accesso livello 1 e Tier 2 help desk. 
+**Chiamata Analitica è ora disponibile in Microsoft Teams e Skype per Business Admin Center.** Per visualizzare tutte le informazioni sulle chiamate e dati per un utente, utilizzare la scheda **Cronologia delle chiamate** . Tale scopo, la ricerca nella pagina del profilo dell'utente per una ricerca per l'utente nel dashboard di o individuare l'utente dagli **utenti** nel riquadro di spostamento sinistro.
+
+> [!IMPORTANT]
+> Autorizzazioni di agenti help desk e il caricamento di topologia di rete sarà disponibile nel portale di amministrazione di nuovo nei prossimi mesi. Nel frattempo, è possibile continuare a utilizzare https://adminportal.services.skypeforbusiness.com per l'accesso livello 1 e Tier 2 help desk.
   
 ## <a name="set-call-analytics-permissions"></a>Impostare le autorizzazioni di chiamata Analitica
 <a name="BKMK_SetCAPerms"></a>
 
-Come l'amministratore è ottenere accesso completo a tutte le funzionalità di chiamata Analitica. Inoltre, è possibile utilizzare un modello di supporto tecnico di Analitica chiamata che include i gruppi di autorizzazione di livello 1 e 2 a livelli. Gli utenti con autorizzazioni di livello 1 possono accedere solo una vista limitata delle chiamate Analitica. Gli utenti che dispongono delle autorizzazioni di livello 2 possono accedere a tutte le funzionalità di chiamata Analitica. Entrambe livelli di autorizzazione impediscono l'accesso per il resto del Skype per interfaccia di amministrazione di Business. È possibile concedere l'accesso ai livelli mediante l'aggiunta di un gruppo contenente all'utente di livello 1 o la sezione di livello 2 della pagina autorizzazioni. Per ulteriori informazioni, vedere [impostare le autorizzazioni a più livelli nel chiamare Analitica](set-up-call-analytics.md#BKMK_SetUpTier).
+Come l'amministratore è ottenere accesso completo a tutte le funzionalità di chiamata Analitica. Inoltre, è possibile utilizzare un modello di supporto tecnico di Analitica chiamata che include i gruppi di autorizzazione di livello 1 e 2 a livelli. Gli utenti con autorizzazioni di livello 1 possono accedere solo una vista limitata delle chiamate Analitica. Gli utenti che dispongono delle autorizzazioni di livello 2 possono accedere a tutte le funzionalità di chiamata Analitica. Entrambe livelli di autorizzazione impediscono l'accesso per il resto del Teams Microsoft e Skype per Business Admin Center. È possibile concedere l'accesso ai livelli mediante l'aggiunta di un gruppo contenente all'utente di livello 1 o la sezione di livello 2 della pagina autorizzazioni. Per ulteriori informazioni, vedere [impostare le autorizzazioni a più livelli nel chiamare Analitica](set-up-call-analytics.md#BKMK_SetUpTier).
   
 Problemi di qualità delle chiamate di base di gestire gli agenti di supporto tecnico di livello 1. Gli agenti di livello 1 non analizzare i problemi relativi alle riunioni; hanno raccogliere informazioni correlate e quindi passare a un agente di livello 2. Gli agenti di livello 2 visualizzare le informazioni in registri chiamate dettagliate sono nascosta dagli agenti di livello 1. Nella tabella seguente viene fornita una panoramica delle informazioni disponibili per gli agenti mediante chiamata Analitica.
 
@@ -59,16 +61,16 @@ Problemi di qualità delle chiamate di base di gestire gli agenti di supporto te
  **Impostare le autorizzazioni a più livelli nel chiamare Analitica** 
  <a name="BKMK_SetUpTier"> </a>
 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
   
 1. Creare gruppi di protezione di Office 365 per livello 1 e 2 a livelli e aggiungere le persone che si desidera che a ogni gruppo. È inoltre possibile riutilizzare i gruppi di protezione esistente. Per ulteriori informazioni, vedere [creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/55c96b32-e086-4c9e-948b-a018b44510cb).
     
 2. Nell'interfaccia di amministrazione di Office 365 andare a **Admin Center** > **Skype per le aziende**.
-    
+
     > [!NOTE]
-    > Se inserita nella precedente Skype per interfaccia di amministrazione di Business, passare alla nuova versione facendo clic sul pulsante **implementati provare la nuova interfaccia di amministrazione**. 
+    > Se il **team di Microsoft e Skype per Business Admin Center**, nel riquadro di spostamento sinistra fare clic su **portale Legacy**.
   
-3. In nuovo Skype per interfaccia di amministrazione di Business, fare clic su **autorizzazioni**.
+3. **Chiamare Analitica (anteprima)**, fare clic su **autorizzazioni**.
     
 4. Aggiungere i gruppi di protezione di Office 365 per le caselle di **livello 1** e **2 a livelli** . È possibile aggiungere più gruppi a ogni ruolo.
     
@@ -90,7 +92,7 @@ Se si sta creando il file con estensione csv o TSV da zero, vedere [file di dati
 ## <a name="related-topics"></a>Argomenti correlati
 <a name="BKMK_UploadFiles"> </a>
 
-[Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
 [Chiamata Analitica e Dashboard qualità chiamata](difference-between-call-analytics-and-call-quality-dashboard.md)
 

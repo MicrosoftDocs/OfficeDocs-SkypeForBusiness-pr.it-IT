@@ -17,33 +17,43 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Reporting
-description: Learn about Call Analytics and Call Quality Dashboard and when to use them to monitor and troubleshoot call-quality problems in Skype for Business.
-ms.openlocfilehash: 3871db21fef268f9589246b31ee285aa117d0412
-ms.sourcegitcommit: 26d93a15c9d4704c08f3fabc5635839ce2456b2d
+description: Informazioni sulle chiamate Analitica e Dashboard di qualità delle chiamate e quando vengono utilizzati per monitorare e risolvere i problemi di qualità delle chiamate.
+ms.openlocfilehash: a929f88d502d7a1a999114a42093b389f6d3cdfb
+ms.sourcegitcommit: abc0f95ef0efe15a8c38cc27a3991abf7480c30e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "20205087"
+ms.lasthandoff: 07/08/2018
+ms.locfileid: "20211033"
 ---
 # <a name="call-analytics-and-call-quality-dashboard"></a>Chiamata Analitica e Dashboard qualità chiamata
 
 Microsoft Teams e Skype per le aziende consentono di due modi per monitorare e risolvere i problemi di qualità delle chiamate: Analitica delle chiamate e il Dashboard di qualità delle chiamate. Questo articolo li descrive entrambi e indica quando usare l'uno o l'altro.
   
-> [!NOTE]
-> Chiamata Analitica è ora disponibile in Microsoft Teams e Skype per interfaccia di amministrazione di Business in https://admin.teams.microsoft.com. Solo ultimi 30 giorni di dati è disponibile nelle chiamate Analitica.
+**Chiamata Analitica è ora disponibile in Microsoft Teams e Skype per Business Admin Center.** Per visualizzare tutte le informazioni sulle chiamate e dati per un utente, utilizzare la scheda **Cronologia delle chiamate** . Tale scopo, la ricerca nella pagina del profilo dell'utente per una ricerca per l'utente nel dashboard di o individuare l'utente dagli **utenti** nel riquadro di spostamento sinistro.
+
+> [!IMPORTANT]
+> Autorizzazioni di agenti help desk e il caricamento di topologia di rete sarà disponibile nel portale di amministrazione di nuovo nei prossimi mesi. Nel frattempo, è possibile continuare a utilizzare https://adminportal.services.skypeforbusiness.com per l'accesso livello 1 e Tier 2 help desk.
   
 ## <a name="whats-call-analytics-and-when-should-i-use-it"></a>Che cos'è Call Analytics e quando è consigliabile usarlo?
 
 Chiamata Analitica Visualizza informazioni dettagliate sui dispositivi, reti e connettività relative alle chiamate specifiche e riunioni per ogni utente in un Teams Microsoft Skype per conto di Business. Se si è un amministratore di Office 365, è possibile utilizzare chiamate Analitica risoluzione dei problemi di qualità e la connessione telefonica in Microsoft Teams e Skype per le aziende.
 
-> [!NOTE]
-> Autorizzazioni di agenti help desk e il caricamento di topologia di rete sarà disponibile nel portale di amministrazione di nuovo nei prossimi mesi.
+Per visualizzare queste informazioni per un utente in Microsoft Teams e Skype per Business Admin Center, fare clic sulla scheda **Cronologia delle chiamate** per l'utente nella pagina di dettagli utente, che mostra tutte le chiamate e le riunioni che ha partecipato a tale utente negli ultimi 30 giorni.
+
+![Dati utente chiamata analitica.](../images/call-analytics-user-data.png)
+
+Per ottenere ulteriori informazioni su una determinata sessione, compresi i supporti dettagliati e le statistiche di rete, fare clic su una sessione di visualizzare i dettagli.
+
+![Chiamare analitica dati della sessione utente.](../images/call-analytics-user-data-session.png)
 
 Se desideri che gli utenti non amministratori, come gli agenti di helpdesk di fornitori esterni, possano usare Call Analytics, puoi assegnare loro autorizzazioni in modo che possano usare Call Analytics ma non possano accedere al resto dell'interfaccia di amministrazione di Skype for Business. 
   
 - **Agenti helpdesk con autorizzazioni di Livello 1**: gli agenti vendono un sottoinsieme limitato di dati e di informazioni personali identificabili (personally identifiable information, PII) in Call Analytics. Possono risolvere i problemi delle chiamate, ma inoltreranno i problemi di riunione a un agente di Livello 2.
     
 - **Agenti helpdesk con autorizzazioni di Livello 2**: gli agenti vedono tutti i dati disponibili in Call Analytics e risolvono i problemi di chiamate e riunioni. hanno accesso completo ai registri chiamate e alle informazioni del cliente.
+
+> [!IMPORTANT]
+> Autorizzazioni di agenti help desk e il caricamento di topologia di rete sarà disponibile nel portale di amministrazione di nuovo nei prossimi mesi. Nel frattempo, è possibile continuare a utilizzare https://adminportal.services.skypeforbusiness.com per l'accesso livello 1 e Tier 2 help desk.
     
 Per i dettagli sull'installazione di Call Analytics, vedi [Configurazione di Skype for Business Call Analytics](set-up-call-analytics.md). Per ulteriori informazioni sul funzionamento di agenti help desk con chiamata Analitica, vedere [Utilizzo delle chiamate Analitica per risolvere i problemi di qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md).
   
@@ -64,9 +74,6 @@ Call Analytics e CQD funzionano parallelamente l'uno all'altro e possono essere 
 Per ulteriori informazioni su CQD, vedere [attivazione e l'utilizzo del Dashboard di qualità delle chiamate per team di Microsoft e Skype Business online](turning-on-and-using-call-quality-dashboard.md) e [dimensioni e misure disponibile nel Dashboard di qualità delle chiamate per team di Microsoft e Skype Business online](dimensions-and-measures-available-in-call-quality-dashboard.md).
   
 ## <a name="related-topics"></a>See also
-[Configurazione di Skype for Business Call Analytics](set-up-call-analytics.md)
+[Impostare le chiamate Analitica](set-up-call-analytics.md)
 
-[Utilizzo delle chiamate Analitica per la risoluzione dei Skype insufficiente per le aziende qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
-
-  
- 
+[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)

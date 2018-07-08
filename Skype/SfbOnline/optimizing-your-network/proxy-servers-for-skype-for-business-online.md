@@ -18,11 +18,12 @@ f1keywords: None
 ms.custom:
 - Optimization
 description: Questo articolo dà informazioni su come utilizzare un server proxy con Skype for Business.
-ms.openlocfilehash: a4369208ab277e0eb5490a637421de605235a0cd
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: fcae4ec366845818d515a4d78c79ea77d038a4a5
+ms.sourcegitcommit: abc0f95ef0efe15a8c38cc27a3991abf7480c30e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/08/2018
+ms.locfileid: "20211023"
 ---
 # <a name="proxy-servers-for-skype-for-business-online"></a>Server proxy per Skype for Business online
 
@@ -54,24 +55,6 @@ Microsoft inoltre consiglia:
     
 Seguire queste indicazioni dovrebbe ridurre al minimo i potenziali problemi.
   
-## <a name="proxy-vendors-with-built-in-skype-for-business-support-or-configuration-options"></a>Fornitori di proxy con supporto Skype for Business integrato o opzioni di configurazione
-
-Questa sezione contiene informazioni sui fornitori di proxy che forniscono prodotti o servizi che si sono dimostrati compatibili con il traffico di Skype for Business.
-  
-Per le organizzazioni che utilizzano **le soluzioni Bluecoat Proxy**, è stato pubblicato un nuovo firmware che risolve diversi problemi con:
-    
-  - intercettazione SSL
-    
-  - controlli OCSP/SRL
-    
-  - SIP via TLS
-    
-  - supporto per TURN
-    
-Il supporto nativo di Bluecoat per Skype for Business può essere attivato con facilità, e permette l'identificazione del traffico interessato e la sua corretta gestione. Questo garantisce autenticazione, segnalazione e flusso di traffico multimediale ottimali per offrire un'ottima esperienza utente senza problemi di sicurezza.
-    
-Consultare il collegamento seguente se Proxy Bluecoat è una parte della topologia di rete:https://support.symantec.com/en_US/article.DOC9757.html
-
 ## <a name="related-topics"></a>See also
 
 [Ottimizzare la rete per Skype for Business online](https://support.office.com/en-us/article/Optimizing-your-network-for-Skype-for-Business-Online-b363bdca-b00d-4150-96c3-ec7eab5a8a43)
