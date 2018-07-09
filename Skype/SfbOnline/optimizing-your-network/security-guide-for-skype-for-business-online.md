@@ -19,16 +19,16 @@ f1keywords: None
 ms.custom:
 - Security
 description: Guida alla sicurezza per Skype for Business online <add description>
-ms.openlocfilehash: b3ba4368cd68239ad612e5c4dfd059a100173b30
-ms.sourcegitcommit: 0fa147c33b1d7b5790af8d93339700ab62939430
+ms.openlocfilehash: 4d379a827b5dde8780d017834fd0ef011f2055eb
+ms.sourcegitcommit: abc0f95ef0efe15a8c38cc27a3991abf7480c30e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19744322"
+ms.lasthandoff: 07/08/2018
+ms.locfileid: "20211127"
 ---
 #  <a name="security-and-skype-for-business-online"></a>Sicurezza e Skype for Business online
 
-Skype for Business Online (SfBO), come parte del servizio Office 365, segue tutte le migliori pratiche e procedure di sicurezza, come la protezione a livello di servizio attraverso difesa in profondità, controlli utente nell'ambito del servizio, potenziamento delle misure di sicurezza e best practice operative. Per ulteriori dettagli, consultare [Centro protezione di Office 365](https://products.office.com/en-us/business/office-365-trust-center-security).
+Skype for Business Online (SfBO), come parte del servizio Office 365, segue tutte le migliori pratiche e procedure di sicurezza, come la protezione a livello di servizio attraverso difesa in profondità, controlli utente nell'ambito del servizio, potenziamento delle misure di sicurezza e best practice operative.  Per i dettagli completi, consultare il Centro protezione di Office 365 (https://products.office.com/en-us/business/office-365-trust-center-security).
 
 ## <a name="trustworthy-by-design"></a>Affidabile per progettazione
 Skype for Business Online è progettato e sviluppato in conformità con MIcrosoft Trustworthy Computing Security Development Lifecycle (SDL) descritto in https://www.microsoft.com/en-us/sdl/default.aspx. Il primo passo verso la creazione di un sistema di comunicazioni unificato più sicuro è stato quello di progettare modelli di minacce e testare ciascuna funzionalità così come era stata progettata. Diversi miglioramenti relativi alla sicurezza sono stati integrati nel processo e nelle pratiche di codifica. Gli strumenti della fase di compilazione rilevano sovraccarichi del buffer e altre potenziali minacce alla sicurezza prima che il codice venga archiviato nel prodotto finale. Ovviamente, è impossibile progettare contro tutte le minacce alla sicurezza sconosciute. Nessun sistema può garantire una protezione completa. Tuttavia, poiché lo sviluppo del prodotto ha accolto principi di progettazione sicuri fin dall'inizio, Skype for Business Online incorpora tecnologie di protezione standard del settore come parte fondamentale della sua architettura. 
@@ -117,13 +117,13 @@ Le seguenti tabelle elencano i dati richiesti per il funzionamento di SfBO.
 <!-- end of table -->
 
 ## <a name="security-framework-for-sfbo"></a>Framework di sicurezza per SfBO
-Questa sezione fornisce informazioni generali sugli elementi fondamentali che formano il framework di sicurezza per Microsoft SfBO. Questi elementi sono i seguenti:
+La presente sezione fornisce le informazioni generali sugli elementi fondamentali che formano il framework di protezione per Microsoft SfBO. Gli elementi sono i seguenti:
 - Azure Active Directory (AAD) fornisce un singolo archivio back-end attendibile per gli account utente. 
 - L'infrastruttura a chiave pubblica (PKI) utilizza i certificati emessi dalle autorità di certificazione (CA) attendibili per autenticare i server e garantire l'integrità dei dati.
 - Transport Layer Security (TLS), HTTPS su SSL (HTTPS) e TLS reciproche (MTLS) abilitano l'autenticazione dell'endpoint e la crittografia della messaggistica istantanea (IM). Point-to-point audio, video e flussi di condivisione delle applicazioni sono crittografati  e l'integrità viene verificata tramite il protocollo SRTP (Secure Real-Time Transport Protocol).
 - Protocolli standard del settore per l'autenticazione dell'utente, ove possibile.
 
-Gli argomenti di questa sezione descrivono come ciascuno di questi elementi fondamentali funziona per migliorare la sicurezza del servizio SfBO.
+Gli argomenti di questa sezione descrivono come ciascuno di questi elementi fondamentali funziona per migliorare la protezione del servizio SfBO.
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 Azure Active Directory funziona come servizio directory per O365. Memorizza tutte le informazioni sulla directory utente e le attività in base ai criteri. 
@@ -263,8 +263,8 @@ Un relatore può anche promuovere un partecipante al ruolo di relatore durante l
 
 I partecipanti alla riunione sono inoltre classificati per posizione e credenziali. È possibile utilizzare entrambe queste caratteristiche per specificare quali utenti possano accedere a riunioni specifiche. Gli utenti possono essere suddivisi nelle seguenti categorie:
 1.  **Utenti che appartengono al tenant** &nbsp;&nbsp; Questi utenti dispongono di credenziali in Azure Active Directory per il tenant.<br/>
-    a. *All'interno di corpnet* : questi utenti partecipano dall'interno della rete aziendale.<br/>b. *Utenti remoti*: questi utenti partecipano al di fuori della rete aziendale. Possono comprendere i dipendenti che lavorano da casa o in viaggio e altri, come dipendenti di fornitori affidabili, a cui sono state concesse credenziali aziendali per le rispettive condizioni d'uso. Gli utenti remoti possono creare e partecipare a conferenze e agire da relatori.
-2.  **Utenti che non appartengono al tenant**&nbsp;&nbsp;  Questi utenti non dispongono di credenziali in Azure Active Directory per il tenant.<br/>a. *Utenti federati*: gli utenti federati dispongono di credenziali valide con partner federati e vengono quindi considerati come autentificati da SfBO. Gli utenti federati possono partecipare alle conferenze ed essere promossi a relatori dopo che hanno aderito alla riunione, ma non possono creare conferenze in aziende con cui sono federati.<br/>b. *Utenti anonimi* : gli utenti anonimi non hanno un'identità di Active Directory e non sono federati con il tenant. 
+    a. *All'interno di corpnet* : questi utenti partecipano dall'interno della rete aziendale.<br/>b. *Utenti remoti*- questi utenti partecipano al di fuori della rete aziendale. Possono comprendere i dipendenti che lavorano da casa o in viaggio e altri, come dipendenti di fornitori affidabili, a cui sono state concesse credenziali aziendali per le rispettive condizioni d'uso. Gli utenti remoti possono creare e partecipare a conferenze e agire da relatori.
+2.  **Utenti che non appartengono al tenant**&nbsp;&nbsp;  Questi utenti non dispongono di credenziali in Azure Active Directory per il tenant.<br/>a. *Utenti federati*: gli utenti federati dispongono di credenziali valide con partner federati e vengono quindi considerati come autentificati da SfBO. Gli utenti federati possono partecipare alle conferenze ed essere promossi a relatori dopo che hanno aderito alla riunione, ma non possono creare conferenze in aziende con cui sono federati.<br/>b. *Utenti anonimi* - gli utenti anonimi non hanno un'identità di Active Directory e non sono federati con il tenant. 
 
 I dati della società mostrano che molte conferenze coinvolgono utenti esterni. Queste stesse società desiderano anche rassicurazioni in merito all'identità degli utenti esterni prima di consentire a tali utenti di partecipare a una conferenza. Come descritto nella sezione seguente, SfBO limita l'accesso ai tipi di utenti che sono stati esplicitamente autorizzati e richiede che tutti i tipi di utenti presentino credenziali appropriate quando aderiscono a una riunione.
 
@@ -284,7 +284,8 @@ Gli organizzatori della riunione controllano se i partecipanti possono presentar
 - **Solo l'organizzatore **&nbsp;&nbsp; Può presentare solo l'organizzatore della riunione.
 - **Persone della mia società**&nbsp;&nbsp; Tutti gli utenti interni possono presentare.
 - **Tutti comprese persone esterne alla mia società**&nbsp;&nbsp; Tutti (non ci sono restrizioni) i partecipanti alla riunione possono presentare.
-- **Persone che scelgo**&nbsp;&nbsp; L'organizzatore della riunione specifica quali utenti possono presentare aggiungendoli a un elenco di relatori.
+- **Persone scelte**&nbsp;&nbsp; L'organizzatore della riunione specifica quali utenti possono presentare aggiungendoli a un elenco di relatori.
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="related-topics"></a>Argomenti correlati
 [Centro protezione di Office 365](https://products.office.com/en-us/business/office-365-trust-center-security)
+
