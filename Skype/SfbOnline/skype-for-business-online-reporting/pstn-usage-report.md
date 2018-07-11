@@ -18,12 +18,12 @@ ms.custom:
 - Reporting
 description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo di Audio conferenza PSTN compreso il costo della chiamata in modo che è possibile acquisire familiarità con i dati di utilizzo e chiamare fatturazione dettagli per determinare l'utilizzo all'interno dell'organizzazione.
 search.appverid: MET150
-ms.openlocfilehash: 59a1fbae9614fa6742f73b46c442d7912c71f88d
-ms.sourcegitcommit: 08cf97296fb9ba6fbc4d68c3e380c8f37e86dd02
+ms.openlocfilehash: 3c2148b54c04950867feef1844a4ca1595f708e5
+ms.sourcegitcommit: 1530670628e8645b9f8e2fc2786dddd989a9e908
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "19973369"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "20246489"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -73,9 +73,10 @@ Questo è l'aspetto del report.
      *    **conf_in** (una chiamata in arrivo al bridge di conferenze Audio) 
      *    **conf_out** (chiamata in uscita dal bridge Audioconferenze, tipicamente per aggiungere un numero PSTN alla conferenza)
 
-     **Applicazioni di comunicazioni unificate (UCAP)** 
-     *    **ucap_in** (una chiamata in arrivo per l'applicazione di comunicazioni unificate, ad esempio coda chiamata o operatore automatico) 
-     *    **ucap_out** (una chiamata in uscita dall'applicazione di comunicazioni unificate, ad esempio coda chiamata o operatore automatico)
+     **UCAP (Unified Communication Applications)** 
+     *    **ucap_in** (una chiamata PSTN in arrivo per l'applicazione di comunicazioni unificate, ad esempio coda chiamata o operatore automatico) 
+     *    **ucap_out** (una chiamata PSTN in uscita dall'applicazione di comunicazioni unificate, ad esempio coda chiamata o operatore automatico)
+     *    **Nota:** Le chiamate a cui sono state trasferite a un utente dall'applicazione di comunicazioni unificate, ad esempio una coda di chiamata o operatore automatico non verrà visualizzato nel rapporto di utilizzo PSTN come si tratti di chiamata sono to peer (P2P) per le chiamate audio. È possibile accedere a chiamate P2P in Skype per Business Admin Center in "Strumenti > Skype per Business chiamare Analitica" e di ricerca in base all'indirizzo SIP o nome utente correlazione delle chiamate da data/ora e/o che hanno origine CLID (riga ID chiamante). 
 *     
      **Nazionale/internazionale** indica se la chiamata effettuata è considerata nazionale (entro un Paese/area geografica) o internazionale (al di fuori di un Paese/area geografica) a seconda della posizione dell'utente. 
 *    **Destinazione composto** è il nome della destinazione paese/area geografica composto, ad esempio Francia, Germania o degli Stati Uniti (Stati Uniti). 

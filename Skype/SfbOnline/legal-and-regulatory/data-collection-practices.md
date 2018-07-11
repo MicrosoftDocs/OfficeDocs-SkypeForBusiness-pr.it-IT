@@ -1,5 +1,5 @@
 ---
-title: Procedure di raccolta dati
+title: Pratiche di raccolta dati
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,12 +19,12 @@ ms.custom:
 - Legal
 hideEdit: true
 description: Microsoft raccoglie dati censimento, dati di utilizzo e di errore per comprendere l'utilizzo Skype per le aziende e dove gli utenti riscontrano problemi. I dati vengono utilizzati per pianificare miglioramenti del prodotto.
-ms.openlocfilehash: 9f0e0886df721397fe82a60672ef3947c14a3860
-ms.sourcegitcommit: c05731b8a757864c0f6620bfeda3ae28a3582011
+ms.openlocfilehash: 2175d3fea0ab5cc2ca7cb573d48e3c700ac2bd03
+ms.sourcegitcommit: 1530670628e8645b9f8e2fc2786dddd989a9e908
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2018
-ms.locfileid: "19856037"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "20246479"
 ---
 # <a name="skype-for-business-and-microsoft-teams-data-collection-practices"></a>Skype per procedure di raccolta dati Business e Teams Microsoft
 
@@ -77,15 +77,10 @@ Raccolta dati di utilizzo è attivata per impostazione predefinita ma locale gli
   
 Gli utenti finali non possono attivare raccolta dati di utilizzo attivato o disattivato.
   
-Per le pagine web di join launcher e Skype riunioni App, la modalità di controllo del telemetria è a questo criterio: <<<<<<< testa
-  
-<a name="set-cswebserviceconfiguration--meetinguxenabletelemetry-true"></a>Set-CsWebServiceConfiguration - MeetingUxEnableTelemetry $True
-=======
+Per le pagine web di join launcher e Skype riunioni App, la modalità di controllo del telemetria è a questo criterio:
  
 `Set-CsWebServiceConfiguration -MeetingUxEnableTelemetry $True` 
 
->>>>>>> master
-  
 Questo criterio viene impostato automaticamente su false, in modo che insieme telemetria è disattivata per impostazione predefinita. Questa impostazione è per ogni pool e controlla tutti gli utenti che si connettono a Skype riunioni App a una riunione ospitata nel server.
   
 ## <a name="error-reporting-data"></a>Dati della segnalazione errori
@@ -105,16 +100,9 @@ Segnalazione errori richiede due operazioni:
   
 - L'impostazione di criteri di gruppo DisableAutomaticSendTracing essere impostata su False, nel server o nell'interfaccia di amministrazione tenant (è lo stato predefinito). Per ulteriori informazioni, vedere [Configure criteri di avvio automatico client in Skype per Business Server 2015](https://technet.microsoft.com/EN-US/library/gg425941.aspx) .
     
-<<<<<<< Testa
-- Gli utenti finali singolarmente consentire (fare clic sull'icona dell'ingranaggio e la finestra di dialogo Opzioni viene aperto con la visualizzazione della scheda Generale) nella scheda Generale nel Skype per client di Business.
-    
-     ![Icona ingranaggio](../images/70f1b43f-16d6-4172-9139-71d845c4ed5c.png)
-=======
 - Gli utenti finali consenso esplicito singolarmente nella scheda Generale (fare clic sull'icona dell'ingranaggio ![icona ingranaggio](../images/70f1b43f-16d6-4172-9139-71d845c4ed5c.png) e quindi verrà visualizzata la finestra di dialogo **Opzioni** con la visualizzazione della scheda **Generale** ) in Skype per client di Business.
     
  
->>>>>>> master
-  
 ![Skype per checkbox di raccolta dati Business nelle opzioni > finestra di dialogo generale](../images/68bc8f77-deaa-478c-9977-a5259b88df3e.png)
   
 Per App riunioni Skype, il MeetingUxEnableTelemetry controlla inoltre segnalazione errori, sebbene per si blocca in Windows, le impostazioni di criteri Watson controllano caricamento info arresto anomalo del sistema. Non esiste alcuna impostazione utente per App riunioni Skype come viene visualizzato nella finestra di dialogo client desktop.
