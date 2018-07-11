@@ -17,16 +17,16 @@ f1keywords: None
 ms.custom:
 - Optimization
 description: Scopri come la qualità della trasmissione è classificata nel Dashboard Qualità della chiamata di Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 7eb0e7f7a3a2447f69f4e42826d74169e1dba549
-ms.sourcegitcommit: b859f9b3cb89f0b0ac4aacbba75f916e38981a26
+ms.openlocfilehash: 7806178b355d3f86cbc470f6d7401b3f76077b12
+ms.sourcegitcommit: 1530670628e8645b9f8e2fc2786dddd989a9e908
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "20136911"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "20246624"
 ---
 # <a name="stream-classification-in-call-quality-dashboard"></a>Classificazione trasmissione nel Dashboard Qualità della chiamata
 
-Il Dashboard Qualità della chiamata (DQC) per Microsoft Teams e Skype for Business Online ti consente di analizzare la qualità delle chiamate effettuate con i servizi Microsoft Teams e Skype for Business. Questo argomento fornisce informazioni dettagliate sulla classificazione di qualità delle trasmissione multimediali. Per saperne di più su DQC e su come attivarlo, consultare [Attivazione e utilizzo di Dashboard Qualità della chiamata](turning-on-and-using-call-quality-dashboard.md).
+Il Dashboard Qualità della chiamata (DQC) per Microsoft Teams e Skype for Business online ti consente di analizzare la qualità delle chiamate effettuate con i servizi Microsoft Teams e Skype for Business. Questo argomento fornisce informazioni dettagliate sulla classificazione di qualità delle trasmissione multimediali. Per saperne di più su DQC e su come attivarlo, consultare [Attivazione e utilizzo di Dashboard Qualità della chiamata](turning-on-and-using-call-quality-dashboard.md).
 
 ## <a name="classifier-definitions"></a>Definizioni di classificatore
 
@@ -38,11 +38,11 @@ Una trasmissione audio è contrassegnata come scarsa se sono soddisfatte una o p
 
 |**Metrica**|**Condizione**|**Spiegazione**|
 |:-----|:-----|:-----|
-|Media degradazione audio|> 1,0|Degradazione del valore Mean Opinion Score di rete medio per la trasmissione. Rappresenta l'impatto della perdita di rete e del jitter sulla qualità dell'audio ricevuto.|
-|Round Trip|> 500|Il tempo medio di round trip di propagazione di rete in millisecondi, come specificato in RFC3550.|
-|Percentuale di perdita di pacchetti|> 0,1|La percentuale media di perdita di pacchetti della trasmissione.|
-|Jitter|> 30|Il jitter medio della trasmissione in millisecondi.|
-|Rapporto medio esempi nascosti|> 0,07|Rapporto medio del numero di frame audio con esempi nascosti generati dalla perdita di pacchetti rispetto al numero totale di frame audio.|
+|Media della degradazione audio|> 1,0|Media del Mean Opinion Score di rete per la degradazione dello stream. Rappresenta quanto la perdita di rete e il jitter ha avuto un impatto sulla qualità dell'audio ricevuto.|
+|Round Trip|> 500|Tempo medio di round trip di propagazione di rete come specificato in RFC3550 in millisecondi.|
+|Tasso di perdita di pacchetti|> 0,1|Percentuale media di perdita pacchetti dello stream.|
+|Tremolio|> 30|Jitter medio dello stream in millisecondi.|
+|Rapporto medio campioni nascosti|> 0,07|Rapporto medio del numero di frame audio con campioni nascosti generati dalla compensazione di perdita di pacchetti rispetto al numero totale di frame audio.|
 
 ### <a name="video-classifier"></a>Classificatore video
 
@@ -50,9 +50,9 @@ Una trasmissione video è contrassegnata come buona o scarsa in base al valore d
 
 |**Passaggio #**|**Metrica**|**Condizione**|**Classificazione se la condizione è vera**|**Classificazione se la condizione è falsa**|**Classificazione se la metrica non è disponibile**|**Spiegazione**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|1|Percentuale media frame locali video persi|> 50|Scarsa|Buona|Andare al passaggio 2|Percentuale media di frame video persi visualizzati all'utente. Sono inclusi i frame ripristinati dalle perdite di rete.|
-|2|Percentuale media frame video|< 7|Scarsa|Buona|Andare al passaggio 3|Il numero medio di frame al secondo ricevuti per una trasmissione video, calcolati per tutta la durata della sessione.|
-|3|Video Post FECPLR|> 0,15|Scarsa|Buona|Non classificata|La percentuale di perdita di pacchetti dopo l'applicazione di FEC in aggregato in tutti i codec e le trasmissioni video.|
+|1|Percentuale media di perdita di frame video locale|> 50% |Scarsa|Buona|Andare al passaggio 2|Percentuale media di fotogrammi video persi come visualizzato all'utente. Sono inclusi i fotogrammi ripristinati dalle perdite di rete.|
+|2|Percentuale media frame video|< 7|Scarsa|Buona|Andare al passaggio 3|Media dei fotogrammi al secondo ricevuti per uno stream video, calcolata per tutta la durata della sessione.|
+|3|Video Post FECPLR|> 0,15|Scarsa|Buona|Non classificata|Il tasso di perdita di pacchetti dopo l'applicazione di FEC in aggregato in tutti i codec e le trasmissioni video.|
 
 ### <a name="vbss-classifier"></a>Classificatore VBSS
 
@@ -60,9 +60,9 @@ Una trasmissione VBSS è contrassegnata come buona o scarsa in base al valore de
 
 |**Passaggio #**|**Metrica**|**Condizione**|**Classificazione se la condizione è vera**|**Classificazione se la condizione è falsa**|**Classificazione se la metrica non è disponibile**|**Spiegazione**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|1|Percentuale media frame locali video persi|> 50|Scarsa|Buona|Andare al passaggio 2|Percentuale media di frame video persi visualizzati all'utente. Sono inclusi i frame ripristinati dalle perdite di rete.|
-|2|Percentuale media frame video|< 2|Scarsa|Buona|Andare al passaggio 3|Il numero medio di frame al secondo ricevuti per una trasmissione video, calcolati per tutta la durata della sessione.|
-|3|Video Post FECPLR|> 0,15|Scarsa|Buona|Non classificata|Non classificata|La percentuale di perdita di pacchetti dopo l'applicazione di FEC in aggregato in tutti i codec e le trasmissioni video.|
+|1|Percentuale media di perdita di frame locali VBSS|> 50% |Scarsa|Buona|Andare al passaggio 2|Percentuale media di fotogrammi video persi come visualizzato all'utente. Sono inclusi i fotogrammi ripristinati dalle perdite di rete.|
+|2|Media di frame VBSS|< 2|Scarsa|Buona|Andare al passaggio 3|Media dei fotogrammi al secondo ricevuti per uno stream video, calcolata per tutta la durata della sessione.|
+|3|VBSS Post FECPLR|> 0,15|Scarsa|Buona|Non classificata|Non classificata|Il tasso di perdita di pacchetti dopo l'applicazione di FEC in aggregato in tutti i codec e le trasmissioni video.|
 
 ### <a name="application-sharing-classifier"></a>Classificatore di condivisione applicazioni
 
@@ -70,8 +70,8 @@ Una trasmissione di condivisione applicazioni è contrassegnata come scarsa se s
 
 **Metrica**|**Condizione**|**Spiegazione**|
 |:-----|:-----|:-----|
-|Percentuale totale sezioni danneggiate|> 36|Percentuale di sezioni che vengono scartate invece di essere inviate ad un peer remoto (ad esempio, dalla MCU a un visualizzatore). Le sezioni possono essere scartate (o danneggiate) a causa di limitazioni di larghezza di banda tra il client e il server.|
-|Latenza media elaborazione sezioni RDP condivisione applicazioni|> 400|Latenza media in millisecondi dell'elaborazione delle sezioni sullo stack RDP sul server di conferenze.|
+|Percentuale totale di sezioni danneggiate|> 36|Percentuale di sezioni che vengono scartate invece di essere inviate ad un peer remoto (ad esempio, dalla MCU a un visualizzatore). Le sezioni possono essere scartate (o danneggiate) a causa di limitazioni di larghezza di banda tra il client e il server.|
+|Latenza media elaborazione sezioni RDP condivisione applicazioni|> 400|Latenza media in millisecondi dell'elaborazione tile sullo stack PDR presso il server conferenze.|
 |Ritardo relativo unidirezionale medio condivisione applicazioni|> 1,75|Ritardo relativo unidirezionale medio tra gli endpoint in millisecondi per le trasmissioni di condivisione delle applicazioni.|
 
 ## <a name="unclassified-streams"></a>Trasmissioni non classificate
@@ -100,8 +100,8 @@ Se la connettività ICE è riuscita per una trasmissione non classificata, la tr
 
 
 ## <a name="related-topics"></a>Argomenti correlati
-[Attivazione e utilizzo di Dashboard Qualità della chiamata (QDC)](turning-on-and-using-call-quality-dashboard.md)
+[Attivazione e utilizzo di Dashboard Qualità della chiamata (DQC)](turning-on-and-using-call-quality-dashboard.md)
 
-[Dimensioni e misure disponibili in Dashboard Qualità della chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md)
+[Dimensioni e misure disponibili in Call Quality Dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md)
 
-[Uso di Call Analytics per risolvere problemi di scarsa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
