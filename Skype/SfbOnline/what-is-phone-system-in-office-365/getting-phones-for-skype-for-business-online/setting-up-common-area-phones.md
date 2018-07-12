@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Scopri i passaggi di distribuzione per ottenere il firmware corretto, aggiornarlo se necessario, assegnare le licenze e configurare le impostazioni per i telefoni delle aree comuni.
-ms.openlocfilehash: 25605e7538792080213eebb898e612be6ce5bfab
-ms.sourcegitcommit: bdf9946b7c65ef7985d6b03a1479ea3a5c17a304
+ms.openlocfilehash: b32995839da45975449cd8b4cd077c97cff8ad38
+ms.sourcegitcommit: 57c8211047e6e6501cd1f9eefddfe4da36cb7d7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "19426802"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20302181"
 ---
 # <a name="set-up-common-area-phones"></a>Configurare i telefoni di aree comuni
 Un telefono di area comune (CAP) è in genere collocato in un'area come un atrio o un'altra area a disposizione di molte persone. Ad esempio, un telefono nella reception, un citofono o un telefono per sala riunioni, i CAP vengono configurati come dispositivi anziché come utenti e si collegano automaticamente ad una rete. Nei seguenti passaggi, ti aiuteremo a configurare un account per Sistema telefonico con piani tariffari in modo da poter distribuire questi tipi di telefoni nella tua azienda.
@@ -35,14 +35,14 @@ La prima cosa che devi fare è confermare di aver fatto quanto segue:
  - Acquistato la licenza per telefono di area comune e un piano tariffario.
  - Cercato e acquistato telefoni approvati (visualizza l'elenco [Qui](deploying-skype-for-business-online-phones.md)).         
  - Aggiornato il firmware sui tuoi telefoni (vedi firmware supportato [in questo argomento](getting-phones-for-skype-for-business-online.md)).  Puoi controllare il firmware sul tuo telefono in questo modo:       
-    - **Telefoni Polycom VVX**: vai a **Impostazioni** > **Stato** > **Piattaforma** > **Applicazione** > **Principale**.
-    - **Telefoni Yealink**: vai a**Stato**sulla schermata principale del telefono.
-    - **Telefoni AudioCodes**: vai a **Menu** > **Stato Dispositivo** > **Versione Firmware** dalla schermata principale. 
+    - **Telefoni Polycom VVX**: Vai su **Impostazioni** > **Stato** > **Piattaforma** > **Applicazione** > **Principale**.
+    - **Telefoni Yealink**: Vai a**Status** (Stato) sulla schermata principale del telefono.
+    - **Telefoni AudioCodes**, Vai a **Menu** > **Device Status** > **Firmware version** dalla schermata principale. 
     - **Telefoni Lync Phone Edition (LPE)**: vai a **Menu** > **Informazioni sul sistema** dalla schermata iniziale.
 
-    Gli upgrade del firmware sono gestiti dal servizio Skype for Business Service. Ogni firmware del telefono certificato Skype for Business viene caricato sul server Skype for Business Update e gli aggiornamenti dispositivo sono attivati su tutti i telefoni per impostazione predefinita. 
+    Gli aggiornamenti del firmware sono gestiti dal servizio Skype for Business Service. Ogni firmware del telefono certificato Skype for Business viene caricato sul server Skype for Business Update e gli aggiornamenti dispositivo sono attivati su tutti i telefoni per impostazione predefinita. 
 
-    A seconda del tempo di inattività sul telefono e degli intervalli di polling, i telefoni scaricano e installano automaticamente l'ultima versione certificata. Puoi disabilitare le impostazioni di aggiornamento del dispositivo utilizzando il cmdlet [Set-CsIPPhonePolicy](https://docs.microsoft.com/powershell/module/skype/set-csipphonepolicy) e impostando il parametro *EnableDeviceUpdate* a `false`.
+    A seconda del tempo di inattività sul telefono e degli intervalli di polling, i telefoni scaricano e installano automaticamente l'ultima build certificata. Puoi disabilitare le impostazioni di aggiornamento del dispositivo utilizzando il cmdlet [Set-CsIPPhonePolicy](https://docs.microsoft.com/powershell/module/skype/set-csipphonepolicy) e impostando il parametro *EnableDeviceUpdate* a `false`.
 
 ## <a name="setting-up-a-common-area-phone"></a>Impostazione di un telefono di area comune
 Dovrai seguire questi passaggi:
@@ -100,7 +100,7 @@ Per maggiori dettagli, vedi [Aggiungere un utente](https://support.office.com/ar
 
 Per ulteriori informazioni, vedi [Ottenere numeri di telefono per i tuoi utenti](../../what-are-calling-plans-in-office-365/getting-phone-numbers-for-your-users.md).
 
-Nel cado te lo stessi chiedendo, puoi anche prendere il tuo numero di telefono che hai con un altro operatore e "*portarlo*"o trasferirlo su Office 365. Vedi, [Trasferire numeri di telefono verso Office 365](../../what-are-calling-plans-in-office-365/transfer-phone-numbers-to-office-365.md).
+Nel cado te lo stessi chiedendo, puoi anche prendere il tuo numero di telefono che hai con un altro operatore e "*portarlo*"o trasferirlo su Office 365. Vedi, [Trasferire numeri di telefono a Office 365](../../what-are-calling-plans-in-office-365/transfer-phone-numbers-to-office-365.md).
 
 ### <a name="step-4---setting-up-your-phone"></a>Passaggio 4: configurazione del telefono
 
@@ -137,6 +137,11 @@ Il telefono o i telefoni in dotazione devono avere la modalità **Telefono di ar
     5. Nella finestra del codice di accoppiamento, inserisci il codice visualizzato sul telefono e clicca su **Fornitura**.
 
         Dopo questo ultimo passaggio, il telefono dovrebbe accedere automaticamente.
+        
+
+> [!NOTE]
+> Il sito di provisioning CAP afferma che ripristinerà la password dell'account CAP ad una password casuale. Prendere nota che l'account a cui fa riferimento il CAP è l'account Azure Active Directory (AAD). Se hai creato l'account solo in AAD, la procedura è semplice. Se hai sincronizzato un Active Directory locale con AAD, assicurati di prendere nota delle credenziali che stai utilizzando che verranno modificate dal provisioning CAP.
+
 
 ### <a name="related-topics"></a>Argomenti correlati
 
