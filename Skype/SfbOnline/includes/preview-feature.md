@@ -1,1 +1,1 @@
-<span data-ttu-id="89cf7-101">Questa è un'anteprima o una funzionalità di rilascio anticipato.</span><span class="sxs-lookup"><span data-stu-id="89cf7-101">This is a preview or early release feature.</span></span>
+<span data-ttu-id="2ad57-101">Questa è un'anteprima o una funzionalità di rilascio anticipato.</span><span class="sxs-lookup"><span data-stu-id="2ad57-101">This is a preview or early release feature.</span></span>
