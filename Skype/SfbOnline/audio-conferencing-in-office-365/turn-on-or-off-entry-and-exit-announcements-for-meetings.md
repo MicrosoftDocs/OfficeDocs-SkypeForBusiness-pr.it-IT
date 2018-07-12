@@ -1,5 +1,5 @@
 ---
-title: Attivare o disattivare gli annunci di entrata e uscita per le riunioni
+title: Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,14 +20,14 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come attivare la voce e uscire da attivare o disattivare gli annunci in Skype per riunioni Online Business con i Skype per interfaccia di amministrazione di Business. '
-ms.openlocfilehash: 18b22e5491b67b6f4ec3f089803bcfb5e486eb14
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+ms.openlocfilehash: 9cd2c95d0dde2e61ca1f0378fe91a215bdfc2682
+ms.sourcegitcommit: 57c8211047e6e6501cd1f9eefddfe4da36cb7d7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703455"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20302152"
 ---
-# <a name="turn-on-or-off-entry-and-exit-announcements-for-meetings"></a>Attivare o disattivare gli annunci di entrata e uscita per le riunioni
+# <a name="turn-on-or-off-entry-and-exit-announcements-for-meetings"></a>Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni
 
 Quando impostano audioconferenze con accesso esterno in Office 365, si otterrà un ponte per conferenze audio. Un ponte per conferenze può contenere uno o più numeri di telefono utilizzato per chiamare un Skype per riunione Business o Microsoft Teams persone. 
   
@@ -67,7 +67,7 @@ Bridge conferenza risponde a una chiamata di un utente che si collegano a una ri
 
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Per risparmiare tempo o automatizzare questa operazione, è possibile utilizzare il cmdlet [Set-CsOnlineDialInConferencingBridge](https://go.microsoft.com/fwlink/?LinkId=617686 ) .
+- Per risparmiare tempo o automatizzare questa operazione, è possibile utilizzare il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://docs.microsoft.com/en-us/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) .
     
 -  Per quanto riguarda Windows PowerShell, è possibile gestire gli utenti di Skype for Business online e le azioni che sono autorizzati a eseguire. Con Windows PowerShell puoi gestire Office 365 tramite un unico punto di amministrazione, che ti agevola il lavoro quotidiano quando hai molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedi i seguenti argomenti:
     
