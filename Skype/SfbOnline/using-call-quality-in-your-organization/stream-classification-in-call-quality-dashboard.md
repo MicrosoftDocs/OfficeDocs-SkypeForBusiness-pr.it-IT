@@ -17,16 +17,16 @@ f1keywords: None
 ms.custom:
 - Optimization
 description: Scopri come la qualità della trasmissione è classificata nel Dashboard Qualità della chiamata di Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 7806178b355d3f86cbc470f6d7401b3f76077b12
-ms.sourcegitcommit: 1530670628e8645b9f8e2fc2786dddd989a9e908
+ms.openlocfilehash: 6cd19fb1f163f6e7a9e11598b03f539b5fc1a02d
+ms.sourcegitcommit: 411d59a92ad73555cf39d9c64822b24240b5af8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "20246624"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20327079"
 ---
 # <a name="stream-classification-in-call-quality-dashboard"></a>Classificazione trasmissione nel Dashboard Qualità della chiamata
 
-Il Dashboard Qualità della chiamata (DQC) per Microsoft Teams e Skype for Business online ti consente di analizzare la qualità delle chiamate effettuate con i servizi Microsoft Teams e Skype for Business. Questo argomento fornisce informazioni dettagliate sulla classificazione di qualità delle trasmissione multimediali. Per saperne di più su DQC e su come attivarlo, consultare [Attivazione e utilizzo di Dashboard Qualità della chiamata](turning-on-and-using-call-quality-dashboard.md).
+Il Dashboard Qualità della chiamata (DQC) per Microsoft Teams e Skype for Business online ti consente di analizzare la qualità delle chiamate effettuate con i servizi Microsoft Teams e Skype for Business. Questo argomento fornisce informazioni dettagliate sulla classificazione di qualità delle trasmissione multimediali. Per saperne di più sul DQC e su come attivarlo, consultare [Attivazione e utilizzo di Dashboard Qualità della chiamata](turning-on-and-using-call-quality-dashboard.md).
 
 ## <a name="classifier-definitions"></a>Definizioni di classificatore
 
@@ -60,9 +60,9 @@ Una trasmissione VBSS è contrassegnata come buona o scarsa in base al valore de
 
 |**Passaggio #**|**Metrica**|**Condizione**|**Classificazione se la condizione è vera**|**Classificazione se la condizione è falsa**|**Classificazione se la metrica non è disponibile**|**Spiegazione**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|1|Percentuale media di perdita di frame locali VBSS|> 50% |Scarsa|Buona|Andare al passaggio 2|Percentuale media di fotogrammi video persi come visualizzato all'utente. Sono inclusi i fotogrammi ripristinati dalle perdite di rete.|
-|2|Media di frame VBSS|< 2|Scarsa|Buona|Andare al passaggio 3|Media dei fotogrammi al secondo ricevuti per uno stream video, calcolata per tutta la durata della sessione.|
-|3|VBSS Post FECPLR|> 0,15|Scarsa|Buona|Non classificata|Non classificata|Il tasso di perdita di pacchetti dopo l'applicazione di FEC in aggregato in tutti i codec e le trasmissioni video.|
+|1|Percentuale media di perdita di frame video locale|> 50% |Scarsa|Buona|Andare al passaggio 2|Percentuale media di fotogrammi video persi come visualizzato all'utente. Sono inclusi i fotogrammi ripristinati dalle perdite di rete.|
+|2|Percentuale media frame video|< 2|Scarsa|Buona|Andare al passaggio 3|Media dei fotogrammi al secondo ricevuti per uno stream video, calcolata per tutta la durata della sessione.|
+|3|Video Post FECPLR|> 0,15|Scarsa|Buona|Non classificata|Il tasso di perdita di pacchetti dopo l'applicazione di FEC in aggregato in tutti i codec e le trasmissioni video.|
 
 ### <a name="application-sharing-classifier"></a>Classificatore di condivisione applicazioni
 
@@ -70,7 +70,7 @@ Una trasmissione di condivisione applicazioni è contrassegnata come scarsa se s
 
 **Metrica**|**Condizione**|**Spiegazione**|
 |:-----|:-----|:-----|
-|Percentuale totale di sezioni danneggiate|> 36|Percentuale di sezioni che vengono scartate invece di essere inviate ad un peer remoto (ad esempio, dalla MCU a un visualizzatore). Le sezioni possono essere scartate (o danneggiate) a causa di limitazioni di larghezza di banda tra il client e il server.|
+|Spoiled Tile Percent Total|> 36|Percentuale di sezioni che vengono scartate invece di essere inviate ad un peer remoto (ad esempio, dalla MCU a un visualizzatore). Le sezioni possono essere scartate (o danneggiate) a causa di limitazioni di larghezza di banda tra il client e il server.|
 |Latenza media elaborazione sezioni RDP condivisione applicazioni|> 400|Latenza media in millisecondi dell'elaborazione tile sullo stack PDR presso il server conferenze.|
 |Ritardo relativo unidirezionale medio condivisione applicazioni|> 1,75|Ritardo relativo unidirezionale medio tra gli endpoint in millisecondi per le trasmissioni di condivisione delle applicazioni.|
 
