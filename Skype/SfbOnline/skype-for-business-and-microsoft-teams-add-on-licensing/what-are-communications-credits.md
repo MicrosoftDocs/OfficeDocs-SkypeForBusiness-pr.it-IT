@@ -20,11 +20,12 @@ f1keywords: None
 ms.custom:
 - Licensing
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: 5d3a1c2b3565f8497bf108d9af6ad44379f2515b
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: 070816cf38fd86bf89bb05d27f1aedf5a5f90da5
+ms.sourcegitcommit: 411d59a92ad73555cf39d9c64822b24240b5af8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20326996"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
@@ -76,7 +77,7 @@ Quando si impostano i Crediti comunicazioni è necessario analizzare l'uso delle
   
 ## <a name="recommended-funding-amounts"></a>Importi da pagare consigliati
 
-È consigliabile iniziare utilizzando una piccola quantità di finanziamento, che per organizzazioni di piccole dimensioni può anche il valore minimo di 20 $. Dopo avere raccolto un mese o due di utilizzo PSTN tramite il rapporto dettagli di utilizzo PSTN, sarà possibile modificare gli importi in base alle normale utilizzo nella propria organizzazione.
+È consigliabile iniziare utilizzando una piccola quantità di finanziamento, che per organizzazioni di piccole dimensioni può anche il valore minimo di $50. Dopo avere raccolto un mese o due di utilizzo PSTN tramite il rapporto dettagli di utilizzo PSTN, sarà possibile modificare gli importi in base alle normale utilizzo nella propria organizzazione.
   
 Se tutto è pronto per la configurazione, consulta [Configurare i Crediti comunicazioni per la propria organizzazione](set-up-communications-credits-for-your-organization.md).
   

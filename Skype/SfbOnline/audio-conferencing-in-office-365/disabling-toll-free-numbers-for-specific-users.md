@@ -1,5 +1,5 @@
 ---
-title: Disattivazione di numeri verdi per utenti specifici
+title: Disattivazione dei numeri verdi per utenti specifici
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,14 +17,14 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Gli amministratori possono controllare gli organizzatori utilizzo numeri verdi per le riunioni.
-ms.openlocfilehash: c144f807a20088f8e2330b541ba18b1da4b40e10
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+ms.openlocfilehash: 2f506163ce815f71d18935040dbf13bf4af4f04c
+ms.sourcegitcommit: 411d59a92ad73555cf39d9c64822b24240b5af8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703799"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20324142"
 ---
-# <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione di numeri verdi per utenti specifici
+# <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici
 
 Se l'organizzazione dispone di numeri verdi nel relativo Audio Conferencing Bridge Microsoft, è possibile consentire o impedire loro utilizzo in riunioni degli organizzatori specifici.  
 
@@ -44,7 +44,7 @@ Numeri verdi quando sono disabilitati per organizzare una determinata:
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
-## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione di numeri verdi per utenti specifici 
+## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici 
 
 ![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
 
