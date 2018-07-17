@@ -1,5 +1,5 @@
 ---
-title: Users can make outbound calls to these countries and regions
+title: Gli utenti possono effettuare chiamate in uscita per i paesi selezionati
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,19 +19,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: This topic contains all of the countries/regions that users can place outbound calls to if they have a Calling Plan.
-ms.openlocfilehash: bd8ce62b5f1d5c8b032503a045e40c72bbe5d00b
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+description: In questo argomento contiene tutti i paesi in cui gli utenti possono effettuare chiamate in uscita se dispongono di un piano di chiamata.
+ms.openlocfilehash: 036fd70b067d461505c4fccf83fe1e4b5a5c408f
+ms.sourcegitcommit: b9f33329cbf3352bfe3741717abcf871e7395657
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "20409372"
 ---
-# <a name="users-can-make-outbound-calls-to-these-countries-and-regions"></a>Users can make outbound calls to these countries and regions
+# <a name="users-can-make-outbound-calls-to-these-countries-and-regions"></a>Gli utenti possono effettuare chiamate in uscita per i paesi selezionati
 
-### <a name="see-what-countriesregions-users-can-make-outbound-calls-to-if-the-user-has-a-domestic-or-domestic-and-international-calling-plan-license"></a>See what countries/regions users can make outbound calls to if the user has a Domestic or Domestic and International Calling Plan license
+### <a name="see-what-countriesregions-users-can-make-outbound-calls-to-if-the-user-has-a-domestic-or-domestic-and-international-calling-plan-license"></a>Vedere ciò che gli utenti di paesi possono effettuare chiamate in uscita a se l'utente ha un nazionale o domestico e la licenza per la chiamata a pianificare internazionale
 
-
-|**A - D**| **E - H**|**I - L**|**M - O**|**P - S**|**T - Z**|
+|**A - D**| **E - H**|**È POSSIBILE - L**|**M - O**|**P - S**|**T - Z**|
 ---|---|---|---|---|---|
 |Afghanistan|Ecuador |Islanda |Macao |Pakistan |Taiwan   |
 |Albania|Egitto |India |Macedonia |Palau |Tagikistan   |
@@ -60,7 +60,7 @@ ms.lasthandoff: 04/18/2018
 |Bolivia |Guyana| |Nuova Caledonia |Slovenia |Zimbabwe |
 |Bosnia ed Erzegovina |Haiti ||Nuova Zelanda |Sudafrica | 
 |Botswana |Honduras ||Nicaragua |Spagna |
-|Bazil |Hong Kong - R.A.S. ||Niger |Sri Lanka | 
+|Brasile |Hong Kong - R.A.S. ||Niger |Sri Lanka | 
 |Bunei Darussalam |Ungheria ||Nigeria |St. Pierre e Miquelon | 
 |Bulgaria |||Isole Marianne Settentrionali |Sudan |
 |Burkina Faso |||Norvegia |Suriname |
