@@ -1,5 +1,5 @@
 ---
-title: Consentire agli utenti di contatti esterni Skype per gli utenti aziendali
+title: Consentire agli utenti di contattare utenti Skype for Business esterni
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -25,14 +25,14 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: "Informazioni su come configurare Skype for Business consentire agli utenti di comunicare agli utenti di un'altra organizzazione o consentire a tali contatti esterni. "
-ms.openlocfilehash: d8cac3838550530666c2e7550c616a0b77cfd820
-ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
+ms.openlocfilehash: bd03e7c85b91bb9995dcbac3fc5d885cba2c7bd0
+ms.sourcegitcommit: e9f277dc96265a193c6298c3556ef16ff640071d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "19500684"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "20968461"
 ---
-# <a name="allow-users-to-contact-external-skype-for-business-users"></a>Consentire agli utenti di contatti esterni Skype per gli utenti aziendali
+# <a name="allow-users-to-contact-external-skype-for-business-users"></a>Consentire agli utenti di contattare utenti Skype for Business esterni
 
 > [!NOTE]
 > Skype per la federazione Business non è disponibile per Office 365 gestito dal 21Vianet e organizzazioni Germania di Office 365. 
@@ -107,9 +107,9 @@ Dopo aver abilitato le comunicazioni esterne con altri Skype per gli utenti azie
 ## <a name="tips-on-setting-up-communications-with-federated-businesses"></a>Suggerimenti sull'impostazione delle comunicazioni con aziende federate
 <a name="bk_preview"> </a>
 
-- Per configurare la federazione tra Skype per 2015 Business e Skype Business online, vedere questo articolo di TechNet: [configurazione della federazione con Skype Business online](https://technet.microsoft.com/en-us/library/jj205126.aspx).
+- Per configurare la federazione tra Skype per 2015 Business e Skype Business online, vedere questo articolo: [configurare la federazione con Skype Business online](https://technet.microsoft.com/en-us/library/jj205126.aspx).
     
-- Per configurare la federazione tra Lync e Skype Business online, vedere questo articolo di TechNet: [Configurazione del supporto per la federazione per un cliente di Lync Online](https://technet.microsoft.com/en-us/library/hh202193.aspx).
+- Per configurare la federazione tra Lync e Skype Business online, vedere questo articolo: [Configurazione del supporto per la federazione per un cliente di Lync Online](https://technet.microsoft.com/en-us/library/hh202193.aspx).
     
 - Quando si comunica tra loro due Skype per gli utenti aziendali di Office 365 in domini separati, possono utilizzare solo Skype per le caratteristiche (ad esempio, le conversazioni video o condivisione del desktop) che vengono attivate in entrambe le organizzazioni.
     
