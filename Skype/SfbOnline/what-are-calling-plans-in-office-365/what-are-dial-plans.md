@@ -1,5 +1,5 @@
 ---
-title: Che cosa sono i dial plan?
+title: Che cosa sono i piani di chiamata?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,14 +20,14 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: "Informazioni su come scegliere un modello per l'organizzazione e il tipo di dial plan (chiamata PSTN dial plan) la chiamata sono disponibili con Office 365.  "
-ms.openlocfilehash: 5df6b2e9f9e5ccb83d6320cbd43f78ef4fc44424
-ms.sourcegitcommit: 607029d24fda331681e23006887fb484410c2b31
+ms.openlocfilehash: 27e65cb0651171f7e0a5d0262db0072b4d620851
+ms.sourcegitcommit: b45077dd1b5d366fa9a30698aa66ed4b13264eee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "19933166"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "21145294"
 ---
-# <a name="what-are-dial-plans"></a>Che cosa sono i dial plan?
+# <a name="what-are-dial-plans"></a>Che cosa sono i piani di chiamata?
 
 [] Un piano di chiamata è un insieme denominato di regole di normalizzazione che traducono i numeri di telefono composti da un singolo utente in un formato alternativo (in genere E.164) per l'autorizzazione delle chiamate e l'instradamento delle chiamate.
   
@@ -127,7 +127,7 @@ La tabella seguente mostra esempi di regole di normalizzazione scritte sotto for
 |7digitcallingRedmond  <br/> |Converte i numeri a 7 cifre in numeri locali di Redmond.  <br/> |^ (\\g{7}) $  <br/> |+1425$1  <br/> |5550100 viene convertito in +14255550100  <br/>|
 |RedmondOperator  <br/> |Converte 0 nel numero del centralino per Redmond.  <br/> |^0$  <br/> |+14255550100  <br/> |0 viene convertito in +14255550100  <br/> |
 |RedmondSitePrefix  <br/> |Converte i numeri con il prefisso in rete (6) e il codice di sede di Redmond (222).  <br/> |^ 6222 (\\g{4}) $  <br/> |+1425555$1  <br/> |62220100 viene convertito in +14255550100  <br/> |
-|5digitRange  <br/> |Converte i numeri interni a 5 cifre iniziando con l'intervallo di cifre da 3 a 7, limiti inclusi.  <br/> |^ ([3-7]\\g{4}) $  <br/> |+142570$1  <br/> |54567 viene convertito in +14255554567  <br/> |
+|5digitRange  <br/> |Converte i numeri interni a 5 cifre iniziando con l'intervallo di cifre da 3 a 7, limiti inclusi.  <br/> |^ ([3-7]\\g{4}) $  <br/> |+ 142555$ 1 <br/> |54567 viene convertito in +14255554567  <br/> |
 |PrefixAdded  <br/> |Aggiunge un prefisso internazionale prima di un numero a 9 cifre, con limitazioni sulla prima e terza cifra.  <br/> |^ ([2-9]\\g\\g [2-9]\\g{6}) $  <br/> |1$1  <br/> |4255554567 viene convertito in 14255554567  <br/> |
 |Non tradotto  <br/> |Abbinamento a 5 cifre senza conversione.  <br/> |^ (\\g{5}) $  <br/> |$1  <br/> |34567 viene convertito in 34567  <br/> |
    
