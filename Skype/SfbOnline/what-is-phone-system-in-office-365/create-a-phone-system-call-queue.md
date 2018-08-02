@@ -1,5 +1,5 @@
 ---
-title: Creare una coda di chiamata di sistema telefonico
+title: Creare una coda di chiamata del Sistema telefonico
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,14 +20,14 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: 'Learn how to set up phone system for Office 365 (Cloud PBX) call queues to give you an organizational greeting, music on hold, and redirecting calls to call agents in distribution lists and security groups. You can also set the maximum queue size, time out, and call handling options. '
-ms.openlocfilehash: 18988c7d6f913b85d11bc465c336dfd265fa34a0
-ms.sourcegitcommit: 6340d0050a51790e40b7ab8e4e89348251ba184f
+ms.openlocfilehash: 9b86bec84846dff36e509488eb34f0415fe8cd95
+ms.sourcegitcommit: 247747ec19c0f5c1d45fea7e5ac5318e4d5127ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19649583"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "21708351"
 ---
-# <a name="create-a-phone-system-call-queue"></a>Creare una coda di chiamata di sistema telefonico
+# <a name="create-a-phone-system-call-queue"></a>Creare una coda di chiamata del Sistema telefonico
 
 Chiamata al sistema telefonico code includono messaggi di saluto che vengono utilizzati quando si riceve una chiamata a un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e le funzionalità di ricerca per il successivo agente disponibile chiamata gestire la chiamata mentre gli utenti che chiamata in attesa la musica di attesa. È possibile creare uno o più code di chiamata per l'organizzazione.
   
@@ -90,6 +90,14 @@ Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto se
   - iPhone Skype per Client Business (versione 6.16.0 e versioni successive)
     
   - iPad Skype per Client Business (versione 6.16.0 e versioni successive)
+
+  - Client Microsoft team Windows (versioni a 32 e 64 bit)
+
+  - Client Microsoft Team Mac
+
+  - Microsoft Teams iPhone app
+
+  - Team di Microsoft app Android
     
 ## <a name="step-2---getting-or-transferring-toll-or-toll-free-service-phone-numbers"></a>Fase 2 - Ottenere o trasferire numeri di servizio a pagamento o a numero verde
 
