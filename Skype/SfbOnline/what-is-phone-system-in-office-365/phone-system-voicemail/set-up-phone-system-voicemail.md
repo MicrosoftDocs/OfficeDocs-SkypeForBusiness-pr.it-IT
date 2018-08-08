@@ -20,11 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: 'Learn how to set up the phone system (Cloud PBX) voicemail for your Skype for Business users. '
-ms.openlocfilehash: 93dd33eefe587c548e346974cc86fe2608b392ec
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
+ms.openlocfilehash: f5dcf6012dc9ac6659d35c29a31ee6a5ff40eec2
+ms.sourcegitcommit: 0c2d1766b96b99d9985f5a0f4f90b8d8bd9aa3ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "22135531"
 ---
 # <a name="set-up-phone-system-voicemail"></a>Configurazione di sistema telefonico segreteria telefonica
 
@@ -80,7 +81,7 @@ Set-CsOnlineVoicemailPolicy -EnableTranscription $false
 
 ### <a name="turning-on-transcription-profanity-masking-for-your-organization"></a>Attivazione della maschera volgari trascrizione per l'organizzazione
 
-Il mascheramento volgari trascrizione è disabilitato per impostazione predefinita per l'organizzazione. Se non esiste un requisiti aziendali per abilitarla, è possibile abilitare volgari trascrizione per il mascheramento tramite [Set-CsOnlineVoicemailPolicy](https://technet.microsoft.com/EN-US/library/mt798310.aspx). Per farlo, eseguire quanto segue:
+Il mascheramento volgari trascrizione è disabilitato per impostazione predefinita per l'organizzazione. Se non vi è un requisito aziendale abilitarla, è possibile abilitare volgari trascrizione per il mascheramento tramite [Set-CsOnlineVoicemailPolicy](https://technet.microsoft.com/EN-US/library/mt798310.aspx). Per farlo, eseguire quanto segue:
   
 ```
 Set-CsOnlineVoicemailPolicy -EnableTranscriptionProfanityMasking $true
@@ -88,7 +89,7 @@ Set-CsOnlineVoicemailPolicy -EnableTranscriptionProfanityMasking $true
 
 ### <a name="turning-off-transcription-for-a-user"></a>Disattivare la trascrizione per un utente
 
-I criteri utente vengono valutati prima delle impostazioni predefinite dell'organizzazione. Ad esempio, se la trascrizione segreteria telefonica è abilitata per tutti gli utenti è possibile assegnare un criterio per disabilitare la trascrizione per un utente specifico utilizzando il cmdlet [Grant-CsOnlineVoicemailPolicy](https://technet.microsoft.com/library/mt798309.aspx).
+I criteri utente vengono valutati prima delle impostazioni predefinite dell'organizzazione. Se, ad esempio, la trascrizione di segreteria telefonica è abilitata per tutti gli utenti, è possibile assegnare un criterio per disabilitare la trascrizione per un utente specifico utilizzando il cmdlet [Grant-CsOnlineVoicemailPolicy](https://technet.microsoft.com/library/mt798309.aspx) .
   
 Per disabilitare la trascrizione per un singolo utente, eseguire:
   
@@ -98,7 +99,7 @@ Grant-CsOnlineVoicemailPolicy -PolicyName TranscriptionDisabled -Identity sip:am
 
 ### <a name="turning-on-transcription-profanity-masking-for-a-user"></a>Attivazione della maschera volgari trascrizione per un utente
 
-Per attivare la trascrizione volgari mascheramento per un utente specifico, è possibile assegnare un criterio per attivare la trascrizione volgari mascheramento per un utente specifico utilizzando il cmdlet [Grant-CsOnlineVoicemailPolicy](https://technet.microsoft.com/EN-US/library/mt798309.aspx) .
+Per abilitare volgari trascrizione per il mascheramento per un utente specifico, è possibile assegnare un criterio per abilitare volgari trascrizione per il mascheramento per un utente specifico utilizzando il cmdlet [Grant-CsOnlineVoicemailPolicy](https://technet.microsoft.com/EN-US/library/mt798309.aspx) .
   
 Per abilitare volgari trascrizione per il mascheramento per un singolo utente, eseguire:
   
