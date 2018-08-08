@@ -1,5 +1,5 @@
 ---
-title: Stratégies de restriction chiamata in uscita per le chiamate PSTN per conferenze Audio e degli utenti
+title: Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -10,20 +10,22 @@ ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
 ms.audience: Admin
-ms.appliesto: Skype for Business, Microsoft Teams
+appliesto:
+- Skype for Business
+- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Gli amministratori possono controllare il tipo di utente finale e servizi di conferenza PSTN le chiamate audio che possono essere effettuate dagli utenti.
-ms.openlocfilehash: 0533a15d6c60720f37c859f110b30af617d95774
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+ms.openlocfilehash: 473baddce6ddac5fa523f02477cd89f6a2c4f4a2
+ms.sourcegitcommit: 905ba61de9622dd485ff375fa75bb0d76bac0b55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703425"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "22193014"
 ---
-# <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Stratégies de restriction chiamata in uscita per le chiamate PSTN per conferenze Audio e degli utenti
+# <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 
 In qualità di amministratore, è possibile utilizzare i controlli delle chiamate in uscita per limitare il tipo di utente finale e servizi di conferenza PSTN le chiamate audio che possono essere effettuate dagli utenti nell'organizzazione. 
 
