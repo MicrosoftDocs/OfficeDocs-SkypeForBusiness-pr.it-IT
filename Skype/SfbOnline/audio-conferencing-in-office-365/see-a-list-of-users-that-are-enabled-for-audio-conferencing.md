@@ -1,5 +1,5 @@
 ---
-title: Visualizzare un elenco di utenti abilitati per le conferenze Audio
+title: Visualizzare un elenco di utenti abilitati per le conferenze Audio in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,34 +14,31 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come visualizzare un elenco di utenti nell'organizzazione abilitati per la conferenza telefonica all'interno di Skype per interfaccia di amministrazione di Business. "
-ms.openlocfilehash: d7a5c272968def249df22af25fd36d257f8c74a0
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+ms.openlocfilehash: 441fb797fa3e1325fe5c63a2b1d6a86d876ebb5b
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703465"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490626"
 ---
-# <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing"></a>Visualizzare un elenco di utenti abilitati per le conferenze Audio
+# <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-skype-for-business-online"></a>Visualizzare un elenco di utenti abilitati per le conferenze Audio in Skype Business online
 
-Dopo aver abilitato Skype per utenti Business o Microsoft Teams all'interno dell'organizzazione per le conferenze Audio, è possibile visualizzare l'elenco degli utenti che sono stati abilitati. Quando si esamina l'elenco verrà visualizzato anche per ogni utente presente nell'elenco tipo di provider di servizi di conferenza audio che utilizzano, il numero di telefono di accesso esterno predefinito per l'utente e se l'organizzazione non è abilitata per gli ID conferenza dinamico, ID conferenza statico per le riunioni di audioconferenze con accesso esterno che consentono di organizzare.
+> [!NOTE]
+> Per informazioni sugli utenti abilitati Teams Microsoft, vedere [visualizzare un elenco di utenti che sono abilitati per le conferenze Audio nel team di Microsoft](/MicrosoftTeams/see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-teams).
+
+Dopo aver abilitato Skype per gli utenti aziendali all'interno dell'organizzazione per le conferenze Audio, è possibile visualizzare l'elenco degli utenti che sono stati abilitati. Quando si esamina l'elenco verrà visualizzato anche per ogni utente presente nell'elenco tipo di provider di servizi di conferenza audio che utilizzano, il numero di telefono di accesso esterno predefinito per l'utente e se l'organizzazione non è abilitata per gli ID conferenza dinamico, ID conferenza statico per le riunioni di audioconferenze con accesso esterno che consentono di organizzare.
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="viewing-a-list-of-users"></a>Visualizzazione di un elenco di utenti
 
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-- Nel riquadro di spostamento sinistra fare clic su **utenti**.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
-    
+   
 - Nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **gli utenti**.
 
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?

@@ -1,5 +1,5 @@
 ---
-title: Modificare le impostazioni per un ponte per conferenze Audio
+title: Modificare le impostazioni per un bridge per audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,14 +20,14 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'È possibile ottenere la procedura che è necessario modificare le impostazioni per un ponte per conferenze che consente di richiedere i chiamanti e raccogliere i nomi e i pin per gli organizzatori delle riunioni quando non sono in uso Skype per le applicazioni aziendali o Microsoft Teams. '
-ms.openlocfilehash: d01ef5f96483ae26ccfaf429e87221b1a5c61d11
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+ms.openlocfilehash: c649859d718ece3a8316ea8baa76be3be751561b
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703679"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490657"
 ---
-# <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un ponte per conferenze Audio
+# <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un bridge per audioconferenza
 
 Quando impostano audioconferenze con accesso esterno in Office 365, si riceverà i numeri di telefono per gli utenti da quello che viene definito un ponte per conferenze audio. Un ponte per conferenze può contenere uno o più numeri di telefono. Questi numeri di telefono vengono utilizzati quando i chiamanti effettua la chiamata a una riunione. Il numero di telefono è incluso nella parte inferiore della Skype di invito alla riunione Business o Microsoft Teams.
   
@@ -61,7 +61,7 @@ Bridging risponde a una chiamata e viene richiesto il chiamante con istruzioni v
 5. Per specificare se inviare posta elettronica per gli utenti, abilitare o disabilitare **l'invio automatico di messaggi di posta elettronica agli utenti se viene modificata la relativa configurazione di audioconferenze con accesso esterno**.
     Per ulteriori informazioni, vedere [messaggi di posta elettronica inviato automaticamente agli utenti quando modificano le impostazioni di conferenza Audio](emails-sent-to-users-when-their-settings-change.md) .
  
-6. Fare clic su **Applica**. 
+6. Fai clic su **Salva**. 
  
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]

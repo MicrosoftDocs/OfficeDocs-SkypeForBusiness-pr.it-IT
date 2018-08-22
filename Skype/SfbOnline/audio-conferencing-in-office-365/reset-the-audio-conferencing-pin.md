@@ -1,5 +1,5 @@
 ---
-title: Reimpostare il PIN per conferenze Audio
+title: Reimpostare il PIN in Skype per conferenze Audio per le aziende Online
 mms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,39 +14,28 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: 'Scoprire che cosa è necessario tenere conto PIN e su come reimpostare i valori. '
-ms.openlocfilehash: 85e890327da538016ffb874ee01be0e86959f47e
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+description: 'Scoprire che cosa è necessario tenere conto PIN e come reimpostarle in Skype Business online. '
+ms.openlocfilehash: 7e47f3e33dbb6811f5fabafc1ccd213f8e0bac11
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703759"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490606"
 ---
-# <a name="reset-the-audio-conferencing-pin"></a>Reimpostare il PIN per conferenze Audio
+# <a name="reset-the-audio-conferencing-pin-in-skype-for-business-online"></a>Reimpostare il PIN in Skype per conferenze Audio per le aziende Online
 
-Un PIN è un codice costituito da numeri che viene creati per ogni Skype per utenti Business e Teams Microsoft che sono abilitato per le conferenze audio. PIN di conferenza audio vengono utilizzati per gli organizzatori delle riunioni per identificare che sono l'organizzatore della riunione e consentire loro di avviare una riunione tramite telefono. Se si utilizza Skype per applicazioni aziendali o Microsoft Teams per avviare la riunione, un PIN non è obbligatorio. Se gli utenti dimenticano il PIN e non possono trovare la posta elettronica che è stato inviato a tali quando sono stati abilitati per le conferenze audio, un amministratore può reimpostare il PIN o è possibile reimpostare i propri PIN.
+> [!Note]
+> Per informazioni sulla reimpostazione pin di conferenza Audio in Teams Microsoft, vedere [reimpostare il PIN di conferenza Audio nel team di Microsoft](/MicrosoftTeams/reset-the-audio-conferencing-pin-in-teams).
+
+Un PIN è un codice costituito da numeri che viene creati per ogni Skype per gli utenti aziendali sono abilitato per le conferenze audio. PIN di conferenza audio vengono utilizzati per gli organizzatori delle riunioni per identificare che sono l'organizzatore della riunione e consentire loro di avviare una riunione tramite telefono. Se si utilizza Skype per applicazioni aziendali per avviare la riunione, un PIN non è obbligatorio. Se gli utenti dimenticano il PIN e non possono trovare la posta elettronica che è stato inviato a tali quando sono stati abilitati per le conferenze audio, un amministratore può reimpostare il PIN o è possibile reimpostare i propri PIN.
   
-È possibile avviare riunioni quando si unisce a un utente autenticato mediante un Skype per applicazioni aziendali o Microsoft Teams oppure quando l'organizzatore accede a con il proprio PIN nel telefono. Se è richiesto un PIN per avviare la riunione tramite telefono, per impostazione predefinita tutti gli utenti che partecipano alla riunione tramite telefono prima dell'inizio della riunione dovranno rimanere nella sala di attesa ascoltando musica fino all'inizio della riunione. Se l'organizzatore di una riunione non richiede il PIN per avviare la riunione tramite telefono, quando un chiamante tenta di partecipare alla riunione, non dovrà specificare un PIN.
-
-> [!NOTE]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+È possibile avviare riunioni quando si unisce a un utente autenticato tramite il Skype per applicazioni aziendali o quando l'organizzatore accede a con il proprio PIN nel telefono. Se è richiesto un PIN per avviare la riunione tramite telefono, per impostazione predefinita tutti gli utenti che partecipano alla riunione tramite telefono prima dell'inizio della riunione dovranno rimanere nella sala di attesa ascoltando musica fino all'inizio della riunione. Se l'organizzatore di una riunione non richiede il PIN per avviare la riunione tramite telefono, quando un chiamante tenta di partecipare alla riunione, non dovrà specificare un PIN.
   
 ## <a name="reset-a-users-pin"></a>Reimpostare il PIN dell'utente
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-3. In **Servizi di conferenza Audio**, fare clic su **Reimposta PIN**.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png)  **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -60,13 +49,6 @@ Un PIN è un codice costituito da numeri che viene creati per ogni Skype per ute
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
    
 ## <a name="have-a-user-reset-his-or-her-own-pin"></a>Dispongono di un utente reimpostare il proprio PIN
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Richiedere all'utente di accedere a [https://admin0m.online.lync.com/lscp/usp/pstnconferencing](https://admin0m.online.lync.com/lscp/usp/pstnconferencing).
-2. Fare clic su **Reimposta PIN**. 
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png)  **utilizzando Skype per interfaccia di amministrazione di Business**
 
 Un utente può reimpostare un PIN utilizzando l'opzione **Reimposta PIN** nella pagina **conferenza telefonica** . In questa pagina è possibile accedere in uno dei tre modi:
 

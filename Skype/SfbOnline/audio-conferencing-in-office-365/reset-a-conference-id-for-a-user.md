@@ -1,5 +1,5 @@
 ---
-title: Reimpostare un ID conferenza per un utente
+title: Reimpostare un ID conferenza per un utente in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,44 +14,30 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: "Learn the steps to reset a user's meeting conference ID, and get links to meeting update and migration tools. "
-ms.openlocfilehash: 3a02ae779b55aa9ca4f340d5a88d6e5fb9c5f750
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+description: 'Informazioni sui passaggi per reimpostare un utente della riunione ID conferenza in Skype Business online e vengono forniti collegamenti get a strumenti di aggiornamento e migrazione della riunione. '
+ms.openlocfilehash: ac37d682d45b22eff61392ee05d7c369d67c3b67
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703415"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490536"
 ---
-# <a name="reset-a-conference-id-for-a-user"></a>Reimpostare un ID conferenza per un utente
+# <a name="reset-a-conference-id-for-a-user-in-skype-for-business-online"></a>Reimpostare un ID conferenza per un utente in Skype Business online
+
+> [!NOTE]
+> Per informazioni sulla reimpostazione ID conferenza in Teams Microsoft, vedere [reimpostare un ID conferenza per un utente nel team di Microsoft](/MicrosoftTeams/reset-a-conference-id-for-a-user-in-teams).
 
 Un ID conferenza dinamica è incluso nella parte inferiore dell'insieme ai numeri di telefono di accesso esterno che possono essere utilizzati per i chiamanti per chiamare una riunione convocazioni di riunione. Quando l'utente digita il numero di telefono, l'operatore automatico per la riunione verrà chiedere al chiamante di immettere l'ID conferenza in modo che è possibile partecipare alla riunione.
   
 > [!NOTE]
-> Se il provider di servizi di conferenza Microsoft, ID conferenza degli utenti è impostato su dinamico solo per impostazione predefinita. Non è purtroppo, non è possibile modificare in Skype per Business Admin Center o utilizzando Windows Powershell di diventare statico, come questa è ora supportato.
-ID conferenza vengono impostate automaticamente solo solo per Skype per utenti Business e Teams Microsoft abilitato per le audioconferenze. 
-
-> [!NOTE]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+> Se il provider di servizi di conferenza Microsoft, ID conferenza degli utenti è impostato su dinamico solo per impostazione predefinita. Non è purtroppo, non è possibile modificare in Skype per Business Admin Center o utilizzando Windows Powershell di diventare statico, come questa è ora supportato. ID conferenza vengono impostate automaticamente solo per Skype per gli utenti aziendali abilitati per le audioconferenze. 
 
 ## <a name="resetting-the-conference-id-for-a-user"></a>Reimpostare l'ID conferenza per un utente
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-3. Fare clic sul menu accanto a **Ponti di conferenza**e quindi fare clic su **Reimposta id conferenza** nell'elenco a discesa.
-
-2. Nella finestra di **reimpostare id conferenza** , fare clic su **Ok**. A conference ID will be automatically created and an email sent to the user with the new conference ID. Per impostazione predefinita, messaggi di posta elettronica inviati a utenti, ma si possono essere disattivata.   
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
-    
+   
 1. In **Skype per interfaccia di amministrazione di Business**, fare clic su **servizi di conferenza Audio** > **gli utenti**, selezionare un utente e quindi nel riquadro azioni in **ID conferenza** fare clic su **Reimposta**.
     
 2. Nella **reimpostare ID conferenza?** finestra, fare clic su **Sì**. A conference ID will be automatically created and an email sent to the user with the new conference ID. Per impostazione predefinita, messaggi di posta elettronica inviati a utenti, ma si possono essere disattivata.

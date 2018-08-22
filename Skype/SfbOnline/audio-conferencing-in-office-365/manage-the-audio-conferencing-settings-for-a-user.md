@@ -1,5 +1,5 @@
 ---
-title: Gestire le impostazioni di conferenze Audio per un utente
+title: Gestire le impostazioni di conferenza Audio di un utente in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,47 +14,25 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: Come un amministratore di Office 365, è possibile modificare le impostazioni di conferenza Audio, ad esempio il provider, a pagamento predefinito o numero verde, ID conferenza o PIN, per un singolo utente nell'organizzazione. Se si desidera modificare le impostazioni per l'organizzazione, vedere Manage conferenze Audio le impostazioni per l'organizzazione.
-ms.openlocfilehash: 064625919cab532c10cdadd16ad95e144d301419
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+description: "Come un amministratore di Office 365, è possibile modificare Skype per le impostazioni di conferenza Audio Online aziendali, ad esempio il provider, a pagamento predefinito o numero verde, ID conferenza o PIN, per un singolo utente nell'organizzazione. "
+ms.openlocfilehash: ed8038955174a19e7861c872e1a095644288e6c2
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703375"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490526"
 ---
-# <a name="manage-the-audio-conferencing-settings-for-a-user"></a>Gestire le impostazioni di conferenze Audio per un utente
+# <a name="manage-the-audio-conferencing-settings-for-a-user-in-skype-for-business-online"></a>Gestire le impostazioni di conferenza Audio di un utente in Skype Business online
+
+> [!Note]
+> Se si desidera gestire le impostazioni utente in Teams Microsoft, vedere [gestire le impostazioni di conferenza Audio di un utente nel team di Microsoft](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-a-user-in-teams).
 
 Come un amministratore di Office 365, è possibile modificare le impostazioni di conferenza Audio, ad esempio il provider, a pagamento predefinito o numero verde, ID conferenza o PIN, per un singolo utente nell'organizzazione. Se si desidera modificare le impostazioni per l'organizzazione, vedere [gestire le impostazioni di conferenze Audio per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization.md).
 
-> [!NOTE]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-3. In **Servizi di conferenza Audio**, modificare uno dei seguenti:
-
-|**Impostazione**|**Descrizione**|
-|:-----|:-----|
-|**Audioconferenze con accesso esterno**|Per attivare servizi di conferenza audio o disattivato per l'utente, fare clic su **Edit** accanto a **Conferenze Audio**e quindi nel riquadro di **Audioconferenza** , passare **all'audioconferenza** attivato o disattivato.|
-|**Inviare informazioni conferenza nella posta elettronica**  |Fare clic su questo collegamento solo se si desidera inviare immediatamente un messaggio di posta elettronica all'utente con il proprio ID e il telefono numero di conferenza. (Questo messaggio di posta elettronica non include il PIN). Vedere [inviare un messaggio di posta elettronica a un utente con le loro informazioni di conferenze Audio](send-an-email-to-a-user-with-their-dial-in-information.md).  |
-|**ID conferenza**  |Se si desidera reimpostare l'ID conferenza per utente, fare clic su **Reimposta ID conferenza** . Per ulteriori informazioni, vedere [reimpostare un ID conferenza per un utente](reset-a-conference-id-for-a-user.md).  |
-|**PIN** |Se si desidera reimpostare il PIN per utente, fare clic su **Reimposta PIN** . Per ulteriori informazioni, vedere [reimpostare il PIN per le conferenze Audio](reset-the-audio-conferencing-pin.md). |
-|**Numero di telefono a pagamento per conferenze predefinito** (obbligatorio) |Questi saranno numeri che vengono impostati su ponte per conferenze audio. Formattare i numeri che si desidera che vengano visualizzate in Skype per Business e Microsoft Teams convocazioni di riunione. Per modificare il numero a pagamento predefinito, fare clic su **Edit** accanto ai **servizi di conferenza Audio** e nel riquadro di **Conferenze Audio** , selezionare un numero in **numero a pagamento**. |
-|**Gli inviti da questo utente possono includere numero verde**|Per modificare questa impostazione, fare clic su **Edit** accanto a **Servizi di conferenza Audio** e nel riquadro di **Conferenze Audio** , attivare e disattivare **includono numeri verdi nelle convocazioni da questo utente** attivato o disattivato. |
-|**Autorizzazioni di chiamata in uscita**|Per modificare questa impostazione, fare clic su **Edit** accanto a **Servizi di conferenza Audio** e nel riquadro di **Conferenze Audio** , scegliere un'opzione in **autorizzazioni di chiamata in uscita dalle riunioni**.|
-
-![Visualizza le impostazioni di conferenza Audio di un utente](../images/sfbaudioconf-usersettings.png)
- 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
  
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     

@@ -1,5 +1,5 @@
 ---
-title: Gestire le impostazioni di audioconferenza per l'organizzazione
+title: Gestire le impostazioni di conferenze Audio per l'organizzazione in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,30 +14,30 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: 'Vedere Procedura per assegnare un ID conferenza telefonica con licenza e di conferenza per un utente e molte altre impostazioni di conferenza telefonica. '
-ms.openlocfilehash: f3ab0f2d1ac32de5744dc4ac994e8030a1540ba4
-ms.sourcegitcommit: e5a54e2ead0edd9e450bbed4b6e50b3cfd2e91c0
+description: 'Vedere Skype per operazioni aziendali in linea per assegnare un ID conferenza telefonica con licenza e di conferenza per un utente e molte altre impostazioni di conferenza telefonica. '
+ms.openlocfilehash: fe5de9aa17a242337776c04178fe36bab24ca8f9
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "21642476"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490811"
 ---
-# <a name="manage-the-audio-conferencing-settings-for-my-organization"></a>Gestire le impostazioni di audioconferenza per l'organizzazione
-
-Potrebbe risultare più semplice per poter visualizzare tutte le impostazioni di audioconferenza per Skype per le aziende e Teams Microsoft in un unico sito. 
+# <a name="manage-the-audio-conferencing-settings-for-my-organization-in-skype-for-business-online"></a>Gestire le impostazioni di conferenze Audio per l'organizzazione in Skype Business online
 
 > [!NOTE]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+> Se si desidera gestire le impostazioni di team, vedere [gestire le impostazioni di conferenze Audio per l'organizzazione nel team di Microsoft](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-my-organization-in-teams).
+
+Potrebbe risultare più semplice per poter visualizzare tutte le impostazioni di audioconferenza per Skype for Business in un unico sito. 
+
   
 ## <a name="assign-an-audio-conferencing-license"></a>Assegnare una licenza di conferenze Audio
 
 > [!NOTE]
-> È possibile assegnare licenze utilizzando **Skype per interfaccia di amministrazione di Business**. È necessario utilizzare l'interfaccia di amministrazione di Office 365. Vedi [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). 
+> È possibile assegnare licenze utilizzando **Skype per interfaccia di amministrazione di Business**. È necessario utilizzare l'interfaccia di amministrazione di Office 365. Assegnare un ID conferenza a un utente 
   
  **Per assegnare una licenza per un utente**
   
@@ -46,26 +46,16 @@ Potrebbe risultare più semplice per poter visualizzare tutte le impostazioni di
 2. Nel riquadro di spostamento sinistro dell' **interfaccia di amministrazione di Office 365**, passare a **utenti** > **utenti attivi**e quindi selezionare l'utente o gli utenti dall'elenco degli utenti disponibili.
     
     > [!NOTE]
-    > Per assegnare licenze a un massimo di 20 utenti contemporaneamente, puoi ricorrere all'elenco a discesa **Selezionare una visualizzazione** e scegliere una delle opzioni oppure creare una visualizzazione personalizzata. Quindi fai clic su **Modifica**, due volte su **Avanti**, seleziona la licenza e fai clic su **Invia**. Puoi anche assegnare licenze a più utenti con Windows Powershell. Per istruzioni ed esempi di script PowerShell, vedere [Assegnare Skype per le licenze aziendali e team di Microsoft](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). 
+    > Per assegnare licenze a un massimo di 20 utenti contemporaneamente, puoi ricorrere all'elenco a discesa **Selezionare una visualizzazione** e scegliere una delle opzioni oppure creare una visualizzazione personalizzata. Quindi fai clic su **Modifica**, due volte su **Avanti**, seleziona la licenza e fai clic su **Invia**. Puoi anche assegnare licenze a più utenti con Windows Powershell. Per istruzioni ed esempi di script PowerShell, vedere [Assegnare Skype per le licenze di Business](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). 
   
 3. Nel riquadro Azioni, in **Licenze prodotti**, fai clic su **Modifica**. 
     
-4. Nella pagina **Licenze per i prodotti** , attivare **Servizi di conferenza Audio** e quindi fare clic su **Salva**. Per ulteriori informazioni sulle licenze, vedere [Skype di licenza di componente aggiuntivo Business e i team di Microsoft](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
+4. Nella pagina **Licenze per i prodotti** , attivare **Servizi di conferenza Audio** e quindi fare clic su **Salva**. Per ulteriori informazioni sulle licenze, consulta [Licenze per i componenti aggiuntivi Skype for Business](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
     
 > [!NOTE]
 > Dopo aver assegnato alla licenza, Microsoft potrebbe non viene inizialmente visualizzato nell'elenco come provider di servizi di conferenza audio. In questa eventualità, esegui la disconnessione dall'interfaccia di amministrazione di Office 365 oppure premi CTRL+F5 per aggiornare la finestra del browser. 
   
 ## <a name="enable-or-disable-emails-sent-to-audio-conferencing-users"></a>Attivare o disattivare i messaggi di posta elettronica inviati agli utenti di audioconferenze con accesso esterno
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
-
-2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
-
-3. Nel riquadro **Impostazioni Bridge** , abilitare o disabilitare **automaticamente inviare messaggi di posta elettronica per gli utenti di modificare le relative impostazioni di connessione**.
-
-4. Fai clic su **Salva**.
 
 ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
   
@@ -80,8 +70,11 @@ Potrebbe risultare più semplice per poter visualizzare tutte le impostazioni di
     È anche possibile inviare messaggi di posta elettronica all'utente con le impostazioni di conferenza audio verranno le proprietà dell'utente per conferenze audio e facendo clic su **Invia informazioni conferenza tramite posta elettronica**. L'ID e imposta come predefinito audioconferenza numero di telefono conferenza è inclusi nell'invito alla riunione, ma non il PIN.
     
     [Uso di Windows PowerShell](send-an-email-to-a-user-with-their-dial-in-information.md)
+
+> [!NOTE]
+> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
     
- **Utilizzo di Windows PowerShell**
+**Utilizzo di Windows PowerShell**
   
 - You can also use the Windows PowerShell and run: 
     
@@ -115,18 +108,6 @@ Vedere [messaggi di posta elettronica che vengono inviati automaticamente agli u
   
 ## <a name="reset-the-meeting-conference-id"></a>Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-3. In **Servizi di conferenza Audio**, fare clic su **Reimposta ID conferenza**.  
-
-4. Nella **reimpostare ID conferenza?** finestra, fare clic su **Reimposta**. A conference ID will be automatically created and an email sent to the user with the new conference ID if sending email to your users is enabled. It's enabled by default.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**  
-
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
@@ -144,15 +125,6 @@ Reimpostare il PIN dell'organizzatore della conferenza
 
 Ogni riunione che un utente pianifica verrà viene assegnato un ID conferenza univoco. Benché un ID conferenza viene automaticamente creato e assegnato a un utente, è possibile quando non da un utente di utilizzare questo e si desidera impostare per un determinato numero o gli utenti non possono ricordare o sono persa loro ID conferenza. È possibile utilizzare Skype per interfaccia di amministrazione di Business e Windows PowerShell per visualizzare, modificare e ripristinare gli ID conferenza.
 
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-3. In **Servizi di conferenza Audio**, fare clic su **Reimposta PIN**e quindi fare clic su **Reimposta**. 
-  
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business** 
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -168,19 +140,6 @@ Vedere [reimpostare il PIN per conferenze Audio](reset-the-audio-conferencing-pi
   
 ## <a name="send-an-email-with-audio-conferencing-information-to-a-user"></a>Inviare un messaggio di posta elettronica con informazioni di audioconferenza a un utente
 
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-3. In **Servizi di conferenza Audio**, fare clic su **Invia le informazioni di conferenza nel messaggio di posta elettronica**. 
-
-    > [!NOTE]
-    > A tale scopo, conferenze audio PIN non viene inviato all'utente. 
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**  
-
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Vai al **Centro di amministrazione di Office 365** > **Skype per le aziende** e nel riquadro di spostamento sinistra fare clic su **servizi di conferenza Audio**.
@@ -195,18 +154,6 @@ Vedere [reimpostare il PIN per conferenze Audio](reset-the-audio-conferencing-pi
 [Uso di Windows PowerShell](send-an-email-to-a-user-with-their-dial-in-information.md)
   
 ## <a name="setting-the-phone-numbers-included-on-invites"></a>L'impostazione del telefono invita numeri incluso nel
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Accanto a **Servizi di conferenza Audio**, fare clic su **Modifica**.
- 
-3. Nel riquadro di **Conferenze Audio** , è possibile impostare il **numero a pagamento** e, se abilitato, il **numero verde**.
-
-4. Fai clic su **Salva**.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**  
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -225,24 +172,7 @@ Vedere [impostare telefono numeri incluso nel invita](set-the-phone-numbers-incl
 
 **Impostare l'esperienza di riunione quando i chiamanti di partecipare a una riunione**
 
- ![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
-
-2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
-
-3. Nel riquadro **Impostazioni Bridge** , abilitare o disabilitare **voce della riunione e chiudere le notifiche**.
-
-    Questa opzione è attivata per impostazione predefinita. Se si disabilita questa opzione, gli utenti che già sono uniti alla riunione per impostazione predefinita non vengono informati quando un utente si unisce o abbandona la riunione.
-
-4. In **tipo di annunci di entrata/uscita**scegliere **toni** o **i nomi o numeri di telefono**. 
-
-    Se si sceglie **nomi o numeri di telefono**, è anche possibile scegliere di attivare o disattivare **i chiamanti Ask per registrare il proprio nome prima di partecipare alla riunione**. 
-
-1. Fai clic su **Salva**.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business** 
-  
+   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
@@ -253,7 +183,7 @@ Vedere [impostare telefono numeri incluso nel invita](set-the-phone-numbers-incl
     
   - **Enable meeting entry and exit notifications to be turned on** This is selected by default. Se si deseleziona la casella di controllo, gli utenti che già sono uniti alla riunione per impostazione predefinita non vengono informati quando un utente si unisce o abbandona la riunione.
     
-    Ciò può essere impostata in base a una riunione per riunioni quando un utente partecipa a una riunione con un Skype per applicazioni aziendali o Microsoft Teams e cui modificare l'impostazione di **annuncio quando vengono inclusi o esclusi** dal menu riunione Skype o Microsoft Teams **le opzioni** del riunione.
+    Può essere impostata in base a una riunione per riunioni quando un utente partecipa a una riunione con un Skype per applicazioni aziendali e di cui modificare l'impostazione di **annuncio quando vengono inclusi o esclusi** dal menu riunione Skype **Opzioni** della riunione.
     
   - **Chiamanti ASK per registrare il proprio nome prima di partecipare alla riunione** Questa opzione è selezionata per impostazione predefinita. Se si deseleziona la casella di controllo, i chiamanti non verranno richiesto di registrare il proprio nome prima che partecipano a una riunione.
     
@@ -262,18 +192,6 @@ Vedere [impostare telefono numeri incluso nel invita](set-the-phone-numbers-incl
 Vedere [modificare le impostazioni per un ponte per conferenze Audio](change-the-settings-for-an-audio-conferencing-bridge.md).
   
  **Impostare la lunghezza del PIN per le riunioni**
-
- ![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
-
-2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
-
-3. Nel riquadro **Impostazioni Bridge** immettere il numero di cifre che si desidera utilizzare per il PIN nell'elenco **lunghezza del PIN** e quindi fare clic su **Salva**.
-
-    Il codice PIN deve essere compreso tra 4 e 12 cifre. The default is 5.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business** 
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -288,22 +206,6 @@ Vedere [modificare le impostazioni per un ponte per conferenze Audio](change-the
 Vedere [modificare le impostazioni per un ponte per conferenze Audio](change-the-settings-for-an-audio-conferencing-bridge.md).
   
  **Attivare o disattivare la posta elettronica non verrà inviato agli utenti audio**
-
- ![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
-
-2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
-
-3. Nel riquadro **Impostazioni Bridge** , abilitare o disabilitare **automaticamente inviare messaggi di posta elettronica agli utenti se modificare le impostazioni di conferenza**.
-
-4. Fai clic su **Salva**. 
- 
-    Inoltre, è possibile inviare posta elettronica all'utente con le impostazioni di conferenza audio, quindi facendo clic su **Invia le informazioni di conferenza nel messaggio di posta elettronica**per le proprietà dell'utente per conferenze audio.
-    
-    If you do this, an email will be sent that only includes conference ID and conference phone number, but the PIN won't be included.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business** 
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -321,15 +223,6 @@ Vedere [modificare le impostazioni per un ponte per conferenze Audio](change-the
     
 ## <a name="see-and-set-the-primary-default-and-secondary-alternate-languages-on-an-audio-conferencing-bridge"></a>Visualizzare e impostare il primario (impostazione predefinita) e lingue secondarie (alternative) su un ponte per conferenze audio
 
- ![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
-
-2. Selezionare un numero di telefono dall'elenco e fare clic su **Modifica**.
-
-3. Selezionare le lingue desiderate nella sezione **lingua predefinita** e le relative **lingue alternative (facoltative)**.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business** 
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -344,19 +237,6 @@ Vedere [modificare le impostazioni per un ponte per conferenze Audio](change-the
 Visualizzare i numeri di accesso esterno per i servizi l'audioconferenza
   
 ## <a name="see-audio-conferencing-dial-in-numbers"></a>Vedere audioconferenza numeri di accesso
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
-
-2. Selezionare un numero di telefono dall'elenco e fare clic su **Modifica**. È possibile:
-    
-  - Visualizzare i numeri di telefono che sono specificati per Office 365 da utilizzare per le audioconferenze. 
-    
-  - Visualizzare la posizione e la lingua principale, che verrà utilizzata per l'operatore automatico di conferenze Audio.
-
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**  
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -374,7 +254,7 @@ Visualizzare i numeri di accesso esterno per i servizi l'audioconferenza
   
 [Visualizzare un elenco di numeri di conferenza Audio](see-a-list-of-audio-conferencing-numbers.md), vedere.
   
-## <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-see-a-list-of-users-that-are-enabled"></a>![30x30.png di logo sfb](../images/sfb-logo-30x30.png) Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+## <a name="see-a-list-of-users-that-are-enabled"></a>Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     

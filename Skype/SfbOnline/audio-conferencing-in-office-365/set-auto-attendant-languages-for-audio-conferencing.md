@@ -1,5 +1,5 @@
 ---
-title: Set di lingue con operatore automatico per le conferenze Audio
+title: Impostare le lingue di operatore automatico per le conferenze Audio in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,22 +14,24 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: Vedere come selezionare le lingue di operatore automatico conferenza per un numero di conferenze audio.
-ms.openlocfilehash: 44c05f081115ddf50eefd8df97765b3cbd82ef56
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+description: Vedere come selezionare le lingue operatore automatico di audioconferenza per un numero di conferenze audio in Skype Business online.
+ms.openlocfilehash: 026a09290c6e008493784c0d883220e03d13559f
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703769"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490516"
 ---
-# <a name="set-auto-attendant-languages-for-audio-conferencing"></a>Set di lingue con operatore automatico per le conferenze Audio
+# <a name="set-auto-attendant-languages-for-audio-conferencing-in-skype-for-business-online"></a>Impostare le lingue di operatore automatico per le conferenze Audio in Skype Business online
 
-L'operatore automatico di audioconferenza per Skype per le aziende e Teams Microsoft può greet i chiamanti audio in numerose lingue diverse quando partecipano a una riunione.
+> [!Note]
+> Per informazioni sull'impostazione di lingua operatore automatico in Teams Microsoft, vedere [impostare le lingue di operatore automatico per le conferenze Audio nel team di Microsoft](/MicrosoftTeams/set-auto-attendant-languages-for-audio-conferencing-in-teams).
+
+L'operatore automatico di audioconferenza per Skype per le aziende può greet chiamanti audio in numerose lingue diverse quando partecipano a una riunione.
   
 Scegliere una lingua principale e fino a quattro lingue secondarie. Verrà utilizzata la lingua principale impostata prima e lingue secondarie da utilizzare per l'operatore automatico in modo che si seleziona. 
   
@@ -40,21 +42,6 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. Verrà utili
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="set-the-conferencing-auto-attendant-languages"></a>Impostare i servizi di conferenza lingue operatore automatico
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**.
-
-2. Selezionare il numero di telefono di accesso esterno alle audioconferenze dall'elenco nella parte superiore della pagina, quindi fare clic su **Modifica**.
-
-3. Nel riquadro a destra, scegliere la lingua predefinita desiderata e le lingue alternative. 
- 
-    > [!NOTE]
-    > L'impostazione predefinita e le relative lingue alternative supportati sono elencate. L'ordine in cui vengono selezionati negli elenchi è l'ordine delle lingue disponibili per i chiamanti. 
-
-4. Fare clic su **Applica**.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **Utilizzando Skype for Business in linea**
 
 È necessario essere un [amministratore globale di Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) o [Skype per Business admin](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) per eseguire questo passaggio.
     

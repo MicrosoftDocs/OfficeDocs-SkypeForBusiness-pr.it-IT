@@ -1,5 +1,5 @@
 ---
-title: Chiamata in uscita all'interno di una riunione per consentire ad altri di parteciparvi
+title: Chiamate in uscita da Skype per le riunioni aziendali in modo che altri utenti possono accedervi
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,24 +14,26 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Learn what you need and how meeting organizers can call out to other people using Skype for Business.
-ms.openlocfilehash: 31d81b1a61838d4fcb8151ef467b14a9c1240c4b
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+ms.openlocfilehash: 392b237c36841990caacbaafd7c6d3dd8ebc7d77
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703385"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490466"
 ---
-# <a name="dialing-out-from-a-meeting-so-other-people-can-join-it"></a>Chiamata in uscita all'interno di una riunione per consentire ad altri di parteciparvi
+# <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamate in uscita da Skype per le riunioni aziendali in modo che altri utenti possono accedervi
 
-[] L'organizzatore della riunione può effettuare una chiamata in uscita utilizzando un client Skype for Business per consentire ad altri utenti di partecipare alla stessa riunione tramite telefono. Sebbene non sia obbligatorio, quando effettui una chiamata a un altro utente, è consigliabile comporre il numero completo, incluso il codice del paese o dell'area geografica. Per attivare la chiamata in uscita:
+> [!NOTE]
+> Se si sta cercando informazioni su composizione fuori da una riunione di team, vedere [chiamate in uscita da una riunione team in modo che altri utenti possono accedervi](/MicrosoftTeams/dialing-out-from-a-teams-meeting-so-other-people-can-join-it).
+
+Organizzatore della riunione, è possibile comporre disattivato utilizzando Skype per applicazioni aziendali per consentire di partecipazione alle altre persone alla riunione stessa utilizzando il proprio telefono. Sebbene non sia obbligatorio, quando effettui una chiamata a un altro utente, è consigliabile comporre il numero completo, incluso il codice del paese o dell'area geografica. Per attivare la chiamata in uscita:
   
-- È possibile effettuare una chiamata in uscita solo partecipando a una riunione con il client Skype for Business.
+- È possibile chiamata in uscita solo se si partecipa a una riunione con un Skype per applicazioni aziendali.
     
 - L'organizzatore della riunione è abilitato alle conferenze telefoniche con accesso esterno.
 
@@ -54,7 +56,7 @@ Dial-out is only available to some countries/regions. Per un elenco completo, ve
 
 [Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
     
-- [Licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
+- [Licenze per i componenti aggiuntivi Skype for Business](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
     
 ## <a name="related-topics"></a>See also
 

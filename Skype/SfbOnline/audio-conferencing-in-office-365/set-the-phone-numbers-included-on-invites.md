@@ -1,5 +1,5 @@
 ---
-title: Impostare il telefono numeri incluso nel invita
+title: Impostare il telefono invita numeri incluso in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,22 +14,24 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'È possibile ottenere i passaggi per creare un numero di telefono predefinito per i chiamanti partecipare a una Skype per riunione in linea aziendale. '
-ms.openlocfilehash: eb2c5c5e8cdc0562cb5a2e391c741763b1da0bd4
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+ms.openlocfilehash: 7aa426a1ede348e29230b177ecf790d9d32d7fbd
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703749"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490476"
 ---
-# <a name="set-the-phone-numbers-included-on-invites"></a>Impostare il telefono numeri incluso nel invita
+# <a name="set-the-phone-numbers-included-on-invites-in-skype-for-business-online"></a>Impostare il telefono invita numeri incluso in Skype Business online
 
-Audioconferenze con accesso esterno in Office 365 consente agli utenti dell'organizzazione creare Skype per le riunioni aziendali e Teams Microsoft e quindi consentire agli utenti di accedere a tali riunioni mediante un telefono. In Office 365, è necessario l'opzione di utilizzare un ponte per conferenze audio Microsoft o un ponte per conferenze audio di terze parti ospitato da un provider approvato audioconferenza (ACP).
+> [!Note]
+> Per informazioni sulla riunione invitare i numeri di telefono in Teams Microsoft, vedere [impostare il telefono numeri incluso nel invita nel team di Microsoft](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams).
+
+Audioconferenze con accesso esterno in Office 365 consente agli utenti dell'organizzazione creare Skype per le riunioni di Business e quindi consentire agli utenti di accedere a tali riunioni mediante un telefono. In Office 365, è necessario l'opzione di utilizzare un ponte per conferenze audio Microsoft o un ponte per conferenze audio di terze parti ospitato da un provider approvato audioconferenza (ACP).
   
 > [!NOTE]
 > Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza. Se si desidera utilizzare per verificare se sono disponibili i numeri di telefono di accesso esterno nell'area o paese/area geografica, utilizzare **Skype per Business admin center** > **vocale** > **I numeri di telefono**, fare clic su **Aggiungi** , quindi **nuovi numeri di servizio **. Utilizzare gli elenchi **Paese/area geografica**, **paese** e **città** per filtrare la ricerca. >, inoltre, se sta cercando numeri a pagamento servizio gratuito, **numero verde** selezionare dal **paese** elenco.
@@ -43,24 +45,6 @@ Un ponte per conferenze offre un set di numeri di telefono di accesso esterno pe
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="set-the-default-dial-in-phone-number-for-a-meeting-organizer"></a>Impostare il numero di telefono di accesso esterno predefinito per l'organizzatore della riunione
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-    ![Visualizza la selezione utenti in Microsoft Teams e Skype per Business Admin Center](../images/teamsselectusers.png)
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-    ![Fare clic su Modifica nel team di Microsoft e Skype per Business Admin Center](../images/teamsedituser.png)
-
-3. Accanto a **Servizi di conferenza Audio**, fare clic su **Modifica**. 
-    
-    ![Fare clic su Modifica accanto a conferenze Audio](../images/teamseditaudioconf.png)
-
-4. Utilizzare i campi **numero a pagamento** o **numero verde** per immettere i numeri per l'utente.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -89,26 +73,12 @@ Un ponte per conferenze offre un set di numeri di telefono di accesso esterno pe
   - **Microsoft è il provider**: **numero verde predefinito** elenchi per selezionare i numeri predefiniti per l'utente e utilizzare il **numero a pagamento predefinito** .
     
     > [!NOTE]
-    > Almeno un numero verde deve essere assegnato ai bridge conferenza prima può essere impostata come il numero verde predefinito di un utente. Per ottenere un numero verde, vedere [Getting numeri di telefono del servizio per Skype per le aziende e team di Microsoft](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md). 
+    > Almeno un numero verde deve essere assegnato ai bridge conferenza prima può essere impostata come il numero verde predefinito di un utente. Per ottenere un numero verde, vedere [Getting numeri di telefono del servizio per Skype per le aziende](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md). 
   
   - **Terze parti sono il provider**: utilizzare i campi **numero a pagamento** e **numero verde** per immettere i numeri per l'utente.
 
 
-## <a name="change-the-audio-conferencing-phone-number-for-users"></a>Modificare il numero di telefono per conferenze audio per gli utenti
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-3. Accanto a **Servizi di conferenza Audio**, fare clic su **Modifica**. 
-    
-4. Utilizzare i campi **numero a pagamento** o **numero verde** per immettere i numeri per l'utente.
-
 ## <a name="reset-audio-conferencing-phone-numbers"></a>Reimpostare i numeri di telefono di accesso esterno alle audioconferenze
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. **Skype per interfaccia di amministrazione di Business**, scegliere **audioconferenze**.
     
@@ -119,7 +89,7 @@ Un ponte per conferenze offre un set di numeri di telefono di accesso esterno pe
 Per impostazione predefinita, quando si modificano le impostazioni di conferenza dell'utente, un messaggio di posta elettronica viene inviato all'utente. Per modificare questa impostazione, vedere [abilitare o disabilitare l'invio messaggi di posta elettronica quando modificano le impostazioni di conferenza Audio](enable-or-disable-sending-emails-when-their-settings-change.md).
   
 > [!IMPORTANT]
-> Quando si modificano le impostazioni di conferenza audio di un utente, Skype ricorrenti e future per le riunioni aziendali e Microsoft Teams deve essere aggiornato e inviati ai partecipanti. 
+> Quando si modificano le impostazioni di conferenza audio di un utente, è necessario aggiornato Skype ricorrenti e future per le riunioni di Business e inviare ai partecipanti. 
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 

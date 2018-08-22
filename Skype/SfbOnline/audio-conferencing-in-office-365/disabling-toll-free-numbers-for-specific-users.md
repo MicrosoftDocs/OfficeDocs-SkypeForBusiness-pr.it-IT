@@ -1,5 +1,5 @@
 ---
-title: Disattivazione dei numeri verdi per utenti specifici
+title: Disattivazione di numeri verdi per specifico Skype per gli utenti aziendali Online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -13,20 +13,22 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Gli amministratori possono controllare gli organizzatori utilizzo numeri verdi per le riunioni.
-ms.openlocfilehash: 4bee4449dd8e21ded52f40cc04832bd40b15c139
-ms.sourcegitcommit: 905ba61de9622dd485ff375fa75bb0d76bac0b55
+ms.openlocfilehash: 1cd144af4f57b3c4ecb19de6c4aeea36f5d2baed
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "22193045"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490546"
 ---
-# <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici
+# <a name="disabling-toll-free-numbers-for-specific-skype-for-business-online-users"></a>Disattivazione di numeri verdi per specifico Skype per gli utenti aziendali Online
+
+> [!Note]
+> Per informazioni sulla disattivazione numeri strumento gratuito per gli utenti di team, vedere [Disabilitazione numeri verdi per utenti specifici in team](/MicrosoftTeams/disabling-toll-free-numbers-for-specific-teams-users).
 
 Se l'organizzazione dispone di numeri verdi nel relativo Audio Conferencing Bridge Microsoft, è possibile consentire o impedire loro utilizzo in riunioni degli organizzatori specifici.  
 
@@ -43,24 +45,8 @@ Numeri verdi quando sono disabilitati per organizzare una determinata:
 
  - I partecipanti possono continuare a partecipare alle riunioni dell'organizzatore tramite numeri a tariffa. 
 
-> [!NOTE]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
-
 ## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici 
 
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-3. Fare clic sul menu accanto a **Ponti di conferenza**e quindi fare clic su **Modifica** nell'elenco a discesa.
-
-4. Nel riquadro dei **provider di ponte conferenza** , disattiva **Consenti utilizzo di numeri verdi di ponte per conferenze della propria organizzazione di partecipare alle riunioni di questo utente**. 
-
-5. Fare clic su **si applicano.** 
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili. 
 

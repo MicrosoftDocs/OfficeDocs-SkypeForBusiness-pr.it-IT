@@ -1,5 +1,5 @@
 ---
-title: Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni
+title: Attivare o disattivare voce e chiudere gli annunci per le riunioni in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,45 +14,31 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come attivare la voce e uscire da attivare o disattivare gli annunci in Skype per riunioni Online Business con i Skype per interfaccia di amministrazione di Business. '
-ms.openlocfilehash: 9cd2c95d0dde2e61ca1f0378fe91a215bdfc2682
-ms.sourcegitcommit: 57c8211047e6e6501cd1f9eefddfe4da36cb7d7f
+ms.openlocfilehash: d6d1b70713ac0cd7a38f7de9cb84f0acb54cbe30
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20302152"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490486"
 ---
-# <a name="turn-on-or-off-entry-and-exit-announcements-for-meetings"></a>Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni
+# <a name="turn-on-or-off-entry-and-exit-announcements-for-meetings-in-skype-for-business-online"></a>Attivare o disattivare voce e chiudere gli annunci per le riunioni in Skype Business online
 
-Quando impostano audioconferenze con accesso esterno in Office 365, si otterrà un ponte per conferenze audio. Un ponte per conferenze può contenere uno o più numeri di telefono utilizzato per chiamare un Skype per riunione Business o Microsoft Teams persone. 
+> [!Note]
+> Per informazioni sugli annunci di entrata e uscita nel Teams Microsoft, vedere [attivazione o disattivazione di annunci di entrata e uscita per le riunioni nel team di Microsoft](/MicrosoftTeams/turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams).
+
+Quando impostano audioconferenze con accesso esterno in Office 365, si otterrà un ponte per conferenze audio. Un ponte per conferenze può contenere uno o più numeri di telefono utilizzato per chiamare un Skype per le riunioni aziendali persone. 
   
-Bridge conferenza risponde a una chiamata di un utente che si collegano a una riunione utilizzando un telefono. Bridge conferenza risponde al chiamante di istruzioni vocali da un operatore automatico conferenza e quindi, a seconda delle impostazioni consentono di riprodurre le notifiche, chiedere ai chiamanti di registrare il proprio nome e impostato la protezione PIN. Un PIN viene assegnato a un Skype per Business o Microsoft Teams organizzatore della riunione e ha la possibilità di avviare una riunione, se non possono avviare una riunione utilizzando un Skype per applicazioni aziendali o Microsoft Teams. È possibile impostarla, tuttavia, in modo che non è richiesto un PIN per avviare una riunione.
+Bridge conferenza risponde a una chiamata di un utente che si collegano a una riunione utilizzando un telefono. Bridge conferenza risponde al chiamante di istruzioni vocali da un operatore automatico conferenza e quindi, a seconda delle impostazioni consentono di riprodurre le notifiche, chiedere ai chiamanti di registrare il proprio nome e impostato la protezione PIN. Un PIN viene assegnato a un Skype per l'organizzatore della riunione di Business e ha la possibilità di avviare una riunione, se non possono avviare una riunione utilizzando il Skype per applicazioni aziendali. È possibile impostarla, tuttavia, in modo che non è richiesto un PIN per avviare una riunione.
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="setting-meeting-join-options"></a>Impostazione di opzioni di partecipazione alla riunione
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
-
-2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
-
-3. Nel riquadro **Impostazioni Bridge** , abilitare o disabilitare **abilitare voce relativa alla riunione e chiudere le notifiche per essere attivata**. Questa opzione è selezionata per impostazione predefinita. Se si deselezionare l'opzione, gli utenti che già sono uniti alla riunione non vengono informati quando un utente si unisce o abbandona la riunione.
-    
-4. In **tipo di annunci di entrata/uscita**, selezionare **i nomi o numeri di telefono** o **toni**.
-    
-5. Attivare o disattivare **i chiamanti Ask per registrare il proprio nome prima di partecipare alla riunione**.
-    
-6. Dopo aver apportato le modifiche desiderate, fare clic su **Applica**.
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
     
 1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     

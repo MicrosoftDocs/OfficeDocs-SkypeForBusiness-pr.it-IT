@@ -1,5 +1,5 @@
 ---
-title: Messaggi di posta elettronica inviati agli utenti quando le relative impostazioni di modifica
+title: Messaggi di posta elettronica inviati agli utenti quando le relative impostazioni di modifica del Skype per Business Online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,20 +14,22 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: 'Informazioni su quali informazioni automaticamente agli utenti viene inviato tramite posta elettronica quando modificano le impostazioni di conferenza telefonica. '
-ms.openlocfilehash: 4766f8f236cbe94b11660165b8659a892d301285
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+description: 'Informazioni su quali informazioni automaticamente agli utenti viene inviato tramite posta elettronica quando modificano le impostazioni di conferenza telefonica in Skype Business online. '
+ms.openlocfilehash: cfa3e86be0d282e335b20a094e60835df3471358
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703435"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490506"
 ---
-# <a name="emails-sent-to-users-when-their-settings-change"></a>Messaggi di posta elettronica inviati agli utenti quando le relative impostazioni di modifica
+# <a name="emails-sent-to-users-when-their-settings-change-in-skype-for-business-online"></a>Messaggi di posta elettronica inviati agli utenti quando le relative impostazioni di modifica del Skype per Business Online
+
+> [!Note]
+> Se desiderano informazioni relative alla posta elettronica automatico in Teams Microsoft, vedere [messaggi di posta elettronica inviato agli utenti quando le relative impostazioni di modifica nel team di Microsoft](/MicrosoftTeams/emails-sent-to-users-when-their-settings-change-in-teams).
 
 Messaggi di posta elettronica inviati automaticamente agli utenti che sono [abilitati per le conferenze Audio](set-up-audio-conferencing.md) tramite Microsoft come provider di servizi di conferenza audio.
   
@@ -35,7 +37,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
   
 - **Una licenza di accesso esterno alle audioconferenze è assegnata ai ruoli o quando si passa il provider di servizi di conferenza audio a Microsoft.**
     
-     Questo messaggio di posta elettronica include l'ID conferenza, il numero di telefono predefinito conferenza per le riunioni, conferenze audio PIN dell'utente e le istruzioni e collegamento da utilizzare il Skype per Business Online Meeting aggiornare strumento che consente di aggiornare riunioni esistenti per il utente. Vedere [Assegnare Skype per le licenze aziendali e team di Microsoft](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md) o [Assegnare Microsoft come provider di servizi di conferenza audio](assign-microsoft-as-the-audio-conferencing-provider.md).
+     Questo messaggio di posta elettronica include l'ID conferenza, il numero di telefono predefinito conferenza per le riunioni, conferenze audio PIN dell'utente e le istruzioni e collegamento da utilizzare il Skype per Business Online Meeting aggiornare strumento che consente di aggiornare riunioni esistenti per il utente. Vedere [Assegnare Skype per le licenze Business](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md) o [Assegnare Microsoft come provider di servizi di conferenza audio](assign-microsoft-as-the-audio-conferencing-provider.md).
     
     > [!NOTE]
     > Se l'organizzazione è stato abilitato per gli ID conferenza dinamico, tutte le riunioni dell'utente che si pianifica dovranno gli ID conferenza univoco. È possibile impostare [gli ID dinamici audioconferenze all'interno dell'organizzazione](using-audio-conferencing-dynamic-ids-in-your-organization.md). 
@@ -44,7 +46,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
     
      ![Verificare la licenza Skype per le aziende](../images/audio-conferencing-user-enabled.png)
   
-    È possibile trovare ulteriori informazioni su Skype Business licenza visualizzando i [di licenza di componente aggiuntivo Business e i team di Microsoft Skype](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
+    È possibile trovare ulteriori informazioni su Skype Business licenza visualizzando [Skype per la gestione delle licenze di componente aggiuntivo Business](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
     
 - **Conferenza predefinito o ID conferenza numero di telefono delle modifiche utente.**
     
@@ -106,18 +108,8 @@ Set-CsOnlineDialInConferencingTenantSetting -SendEmailOverride $true -SendEmailF
 
 Quando si disattiva invio messaggi di posta elettronica agli utenti, posta elettronica non verranno inviata anche quando un utente viene assegnato una licenza. In questo caso, l'ID conferenza, impostazione predefinita il numero di telefono per conferenze e, più importante, non verranno inviata le audioconferenze con accesso esterno PIN all'utente. In questo caso, è necessario che l'utente inviando un messaggio di posta elettronica separato o richiamando i.
   
-Per impostazione predefinita, verranno inviati messaggi di posta elettronica per gli utenti, ma se si desidera impedire la ricezione posta elettronica per le conferenze audio, è possibile utilizzare Microsoft Teams, il Skype per Business admin center o Windows PowerShell. 
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
-
-2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
-
-3. Nel riquadro **Impostazioni Bridge** , abilitare o disabilitare **automaticamente inviare messaggi di posta elettronica per gli utenti di modificare le relative impostazioni di connessione**.
-
-4. Fai clic su **Salva**.
-  
+Per impostazione predefinita, verranno inviati messaggi di posta elettronica per gli utenti, ma se si desidera impedire la ricezione di posta elettronica per le conferenze audio, è possibile utilizzare il Skype per Business admin center o Windows PowerShell. 
+ 
 ![30x30.png di logo sfb](../images/sfb-logo-30x30.png)  **utilizzando Skype per interfaccia di amministrazione di Business**
     
 1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.

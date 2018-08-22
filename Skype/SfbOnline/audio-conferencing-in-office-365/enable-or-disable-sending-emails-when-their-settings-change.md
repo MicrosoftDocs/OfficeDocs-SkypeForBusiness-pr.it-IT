@@ -1,5 +1,5 @@
 ---
-title: Abilitare o disabilitare l'invio messaggi di posta elettronica quando le relative impostazioni di modifica
+title: Abilitare o disabilitare l'invio messaggi di posta elettronica quando modificano le impostazioni di conferenza Audio in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,22 +14,24 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Learn how to enable or disable Skype from sending emails to users when settings such as pin changes or the default conferencing number changes. '
-ms.openlocfilehash: 9656dc25347661626397e4f95daee7bd5f460a6d
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+ms.openlocfilehash: 4d52603fb0d2701cbebd58644cd002dbc94baf89
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703445"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490586"
 ---
-# <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change"></a>Attivare o disattivare i messaggi di posta elettronica invio quando modificate le impostazioni di conferenze Audio
+# <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change-in-skype-for-business-online"></a>Abilitare o disabilitare l'invio messaggi di posta elettronica quando modificano le impostazioni di conferenza Audio in Skype Business online
 
-Gli utenti vengono informati automaticamente tramite posta elettronica quando sono abilitati per le audioconferenze. È possibile che, tuttavia, se si desidera ridurre il numero di messaggi di posta elettronica inviati a Skype per utenti Business e Microsoft Teams. In tal caso, è possibile disabilitare l'invio di posta elettronica.
+> [!Note]
+> Se si desidera abilitare o disabilitare l'invio messaggi di posta elettronica in Teams Microsoft, vedere [abilitare o disabilitare l'invio messaggi di posta elettronica quando modificano le impostazioni di conferenza Audio nel team di Microsoft](/MicrosoftTeams/enable-or-disable-sending-emails-when-their-settings-change-in-teams).
+
+Gli utenti vengono informati automaticamente tramite posta elettronica quando sono abilitati per le audioconferenze. È possibile che, tuttavia, se si desidera ridurre il numero di messaggi di posta elettronica inviati a Skype per gli utenti aziendali. In tal caso, è possibile disabilitare l'invio di posta elettronica.
   
 Se si disattiva invio messaggi di posta elettronica, messaggi di posta elettronica audioconferenze con accesso esterno non verranno inviate agli utenti, inclusi messaggi di posta elettronica per quando gli utenti sono abilitati o disattivati per le conferenze audio, quando viene reimpostato il proprio PIN e l'ID conferenza e i servizi di conferenza predefinito cambia il numero di telefono .
   
@@ -52,23 +54,13 @@ Di seguito è riportato un esempio di messaggio di posta elettronica inviato agl
   - Quando viene modificato il provider di servizi di conferenza audio di un utente da Microsoft a un altro provider o **Nessuno**.
     
   - Quando si modifica il provider di servizi di conferenza audio di un utente a Microsoft.
-    
-> [!NOTE]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
+
 
 ## <a name="enable-or-disable-email-from-being-sent-to-users"></a>Attivare o disattivare la posta elettronica non verrà inviato agli utenti
 
-È possibile utilizzare Microsoft Teams, Skype per interfaccia di amministrazione di Business o Windows PowerShell per abilitare o disabilitare la posta elettronica inviato agli utenti.
+È possibile utilizzare Skype per interfaccia di amministrazione di Business o Windows PowerShell per abilitare o disabilitare la posta elettronica inviato agli utenti.
 
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
-
-2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
-
-3. Nel riquadro **Impostazioni Bridge** , abilitare o disabilitare **automaticamente inviare messaggi di posta elettronica per gli utenti di modificare le relative impostazioni di connessione**.
-
-4. Fai clic su **Salva**.
-  
+ 
 ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
     
 1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistra fare clic su **audioconferenze**.

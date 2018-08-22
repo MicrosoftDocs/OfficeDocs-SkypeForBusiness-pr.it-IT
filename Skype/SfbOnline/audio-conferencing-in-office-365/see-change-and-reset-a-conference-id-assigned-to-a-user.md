@@ -1,5 +1,5 @@
 ---
-title: Visualizzare, modificare e ripristinare un ID conferenza assegnato a un utente
+title: Vedere, modificare e ripristinare un ID conferenza assegnato a un utente in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,22 +14,24 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: 'Informazioni su come assegnare un ID conferenza a un utente in Skype per le aziende e quali la conferenza ID devono essere parametri. '
-ms.openlocfilehash: eccbcd31add14026d2b5f3a57348ae5d6f1db2a5
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+description: 'Informazioni su come assegnare un ID conferenza per un utente in Skype Business online e quale devono essere i parametri ID conferenza. '
+ms.openlocfilehash: 19a5af7a3a9a06e99556eda09f00566843551a34
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703405"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490636"
 ---
-# <a name="view-and-reset-a-conference-id-assigned-to-a-user"></a>Consente di visualizzare e reimpostare un ID conferenza assegnato a un utente
+# <a name="view-and-reset-a-conference-id-assigned-to-a-user-in-skype-for-business-online"></a>Consente di visualizzare e reimpostare un ID conferenza assegnato a un utente in Skype Business online
 
-Al Skype per utenti Business o Microsoft Teams viene automaticamente assegnato un ID conferenza quando sono configurati per l'audioconferenza in Office 365 e utilizzare Microsoft come provider di servizi di conferenza audio. L'ID conferenza assegnato viene inviato nell'invito alla riunione durante la riunione pianificata. Ogni riunione che un utente pianifica verrà viene assegnato un ID conferenza univoco. 
+> [!Note]
+> Per informazioni sulla conferenza utente ID in Teams Microsoft, vedere [View e reimpostare un ID conferenza assegnato a un utente in Microsoft Teasms](/MicrosoftTeams/see-change-and-reset-a-conference-id-assigned-to-a-user-in-teams).
+
+Un ID conferenza viene assegnato a un Skype per gli utenti aziendali automaticamente quando sono configurati per l'audioconferenza in Office 365 e utilizzare Microsoft come provider di servizi di conferenza audio. L'ID conferenza assegnato viene inviato nell'invito alla riunione durante la riunione pianificata. Ogni riunione che un utente pianifica verrà viene assegnato un ID conferenza univoco. 
   
 Benché un ID conferenza viene automaticamente creato e assegnato a un utente, è possibile che quando un utente non desidera utilizzare questo e si desidera impostare per un determinato numero o quando gli utenti non possono ricordare o sono persa loro ID conferenza. È possibile utilizzare il **Skype per interfaccia di amministrazione di Business** e Windows PowerShell per visualizzare, modificare e ripristinare gli ID conferenza.
   
@@ -41,26 +43,6 @@ Verrà inviato un messaggio di posta elettronica all'utente con l'ID conferenza 
 ## <a name="view-and-reset-conference-ids"></a>Consente di visualizzare e reimpostare gli ID conferenza
 
 ### <a name="to-view-the-conference-id"></a>Per visualizzare l'ID conferenza
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-3. In **Servizi di conferenza Audio**, cercare nella casella **ID conferenza**.
-
-    > [!TIP]
-    > È possibile inviare tutte le informazioni di servizi di conferenza per utente in un messaggio di posta elettronica che include l'ID conferenza e i numeri di telefono audio facendo clic sul collegamento **Invia informazioni conferenza nella posta elettronica** .
-  
-È possibile utilizzare Windows PowerShell per visualizzare l'ID conferenza per un utente. A tale scopo, eseguire:
-    
-  ```
-  Get-CsOnlineDialInConferencingUser -Identity "Amos Marble"  
-  ```
-
-    See [Get-CsOnlineDialInConferencingUser](https://go.microsoft.com/fwlink/?LinkId=617693 ) to learn more about the cmdlet.
-
 
 ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
@@ -77,6 +59,8 @@ Verrà inviato un messaggio di posta elettronica all'utente con l'ID conferenza 
     > [!TIP]
     > È possibile inviare tutte le informazioni di servizi di conferenza per utente in un messaggio di posta elettronica che include l'ID conferenza e i numeri di telefono audio facendo clic sul collegamento **Invia informazioni conferenza tramite posta elettronica** dopo aver selezionato l'utente nella pagina **utenti** .
 
+**Utilizzo di Windows PowerShell**
+
 È possibile utilizzare Windows PowerShell per visualizzare l'ID conferenza per un utente. A tale scopo, eseguire:
     
   ```
@@ -88,24 +72,8 @@ Verrà inviato un messaggio di posta elettronica all'utente con l'ID conferenza 
   
 ### <a name="to-reset-the-conference-id"></a>Per reimpostare l'ID conferenza
 
-È possibile reimpostare un ID conferenza per un utente se, ad esempio, se si dimentica.
-  
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
-
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
-
-3. In **Servizi di conferenza Audio**, fare clic su **Reimposta ID conferenza**.
-
-4. Nella finestra di **reimpostare ID conferenza** , fare clic su **Reimposta**. A conference ID will be automatically created and an email sent to the user with the new conference ID.
-    
-    È possibile reimpostare l'ID conferenza per un utente tramite Windows PowerShell. Per farlo, eseguire quanto segue:
-    
-  ```
-  Set-CsOnlineDialInConferencingUser -Identity "Amos Marble"  -ResetConferenceID 8271964
-  ```
-
+Se, ad esempio, si dimentica, è possibile reimpostare un ID conferenza per un utente.
+ 
 ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
@@ -116,7 +84,9 @@ Verrà inviato un messaggio di posta elettronica all'utente con l'ID conferenza 
     
 4. Nella **reimpostare ID conferenza?** finestra, fare clic su **Sì**. A conference ID will be automatically created and an email sent to the user with the new conference ID.
     
-    È possibile reimpostare l'ID conferenza per un utente tramite Windows PowerShell. Per farlo, eseguire quanto segue:
+**Utilizzo di Windows PowerShell**
+
+È possibile reimpostare l'ID conferenza per un utente tramite Windows PowerShell. Per farlo, eseguire quanto segue:
     
   ```
   Set-CsOnlineDialInConferencingUser -Identity "Amos Marble"  -ResetConferenceID 8271964

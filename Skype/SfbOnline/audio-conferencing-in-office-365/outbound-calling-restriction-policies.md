@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Gli amministratori possono controllare il tipo di utente finale e servizi di conferenza PSTN le chiamate audio che possono essere effettuate dagli utenti.
-ms.openlocfilehash: 473baddce6ddac5fa523f02477cd89f6a2c4f4a2
-ms.sourcegitcommit: 905ba61de9622dd485ff375fa75bb0d76bac0b55
+ms.openlocfilehash: 6096816ef9fb98811ec3ebed5a56b90a90b58c29
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "22193014"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490576"
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 
@@ -50,11 +50,11 @@ Controlli delle chiamate in uscita possono essere applicati a ogni utente e forn
 
 2. Nella parte superiore della pagina, fare clic su **Modifica**.
 
-3. Fare clic sul menu accanto a **Ponti di conferenza**e quindi fare clic su **Modifica** nell'elenco a discesa.
+3. Accanto a **Servizi di conferenza Audio**, fare clic su **Modifica**.
 
-4. Nel riquadro di **provider di ponte conferenza** , in **restrizioni alla connessione-outs dalle riunioni dell'utente**, selezionare l'opzione di chiamata esterna per una restrizione desiderato.
+4. In **autorizzazioni di chiamata in uscita dalle riunioni**, selezionare l'opzione di chiamata esterna per una restrizione desiderato.
 
-5. Fare clic su **Applica**. 
+5. Fai clic su **Salva**. 
 
 ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 

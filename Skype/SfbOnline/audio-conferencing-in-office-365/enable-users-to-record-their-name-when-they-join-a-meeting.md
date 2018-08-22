@@ -1,5 +1,5 @@
 ---
-title: Consentire agli utenti di registrare il proprio nome quando accedono a una riunione
+title: Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,42 +14,28 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: 'Learn how to enable or disable whether your users can record their names when they join a meeting '
-ms.openlocfilehash: 940d4eefb6a997b03bb25fc558faf15ce9edb507
-ms.sourcegitcommit: 527c7dd4c5edc70503ba31e7c689a71d7356b17e
+description: Informazioni su come abilitare o disabilitare se gli utenti possono registrare i rispettivi nomi quando partecipano a una riunione in Skype Business online.
+ms.openlocfilehash: b920f0cfea6aa607f5bc3ea7c8a53b5668ba02da
+ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19703495"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "22490726"
 ---
-# <a name="enable-users-to-record-their-name-when-they-join-a-meeting"></a>Consentire agli utenti di registrare il proprio nome quando accedono a una riunione
+# <a name="enable-users-to-record-their-name-when-they-join-a-meeting-in-skype-for-business-online"></a>Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione in Skype Business online
+
+> [!Note]
+> Se si desidera consentire agli utenti di registrare i nomi di team, vedere [consentono agli utenti di registrare il proprio nome quando partecipano a una riunione nel team di Microsoft](/MicrosoftTeams/enable-users-to-record-their-name-when-they-join-a-meeting-in-teams).
 
 [] Quando configuri i servizi di conferenza telefonica con accesso esterno in Skype for Business online, ricevi numeri di telefono e un bridge per audioconferenze o con accesso esterno. Un bridge di conferenza può contenere uno o più numeri di telefono, dedicati o condivisi.
   
 Il bridge di conferenza risponde alla chiamata di un utente che sta eseguendo l'accesso a una riunione con il telefono. Il bridge risponde con i comandi vocali di un operatore automatico e quindi, a seconda delle impostazioni, può riprodurre notifiche, richiedere ai chiamanti di registrare il proprio nome e configurare le opzioni di sicurezza del PIN per gli organizzatori della riunione. I PIN sono assegnati a un organizzatore della riunione per consentire l'avvio della stessa. Puoi comunque configurarla in modo tale che non sia richiesto il PIN per l'avvio.
 
-> [!NOTE]
-> [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
-  
 ## <a name="set-whether-callers-should-record-their-name"></a>Impostare l'opzione che prevede se i chiamanti devono registrare il proprio nome
-
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando il team di Microsoft e Skype per Business Admin Center**
-
-1. Nel riquadro di spostamento sinistro, passare a **riunioni** > **Bridge conferenza**. 
-
-2. Nella parte superiore della pagina **Ponti di conferenza** , fare clic su **Impostazioni Bridge**. 
-
-3. Abilitare o disabilitare **abilitare voce relativa alla riunione e chiudere le notifiche per essere attivata**.
-
-4. Fare clic su **Applica**.
-
-
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per Business Admin Center**
     
 1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     
