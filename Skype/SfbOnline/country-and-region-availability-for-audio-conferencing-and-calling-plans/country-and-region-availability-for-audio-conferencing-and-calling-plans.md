@@ -24,12 +24,12 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 description: Puoi selezionare un paese/un’area geografica per vedere se sono disponibili o meno Audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e i numeri verdi e a tariffa.
-ms.openlocfilehash: d4fd54348cf1897a60c235f3f4fa408c051b3f0b
-ms.sourcegitcommit: 18ae1505642e985f7fb62d2e70e37e8489b5ef15
+ms.openlocfilehash: 5844b271cb89d669dac11d2dda67b62ed4bd22c1
+ms.sourcegitcommit: bc125c655e76129b086f821011f63a983fb23e7b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "20034647"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "22554034"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica
 
@@ -158,9 +158,6 @@ In Audioconferenza è presente una funzionalità denominata "*Chiama*" che può 
 > L'accesso a numeri telefonici verdi o gratuiti potrebbe non essere possibile, perché alcuni numeri verdi funzionano solo all'interno di un determinato paese o di una determinata area all'interno di un paese. Ad esempio, se si chiama dagli Stati Uniti un numero verde in Brasile, la chiamata potrebbe non andare a buon fine perché la chiamata non proviene dal Brasile o da una regione specifica del Brasile. La possibilità di chiamare i numeri verdi varia notevolmente a seconda delle restrizioni del numero verde composto. Purtroppo, dall'interno di Office 365 non possiamo influire su questo comportamento, e di conseguenza, la tua esperienza può variare a seconda del numero verde e delle restrizioni del numero verde. 
   
 Le chiamate in uscita dall'interno di una riunione verso un altro paese/un’altra area geografica non elencati di seguito possono essere effettuate mediante [Crediti comunicazioni Office 365](../skype-for-business-and-microsoft-teams-add-on-licensing/what-are-communications-credits.md). Per questo tipo di utenti sarà necessario [configurare i Crediti comunicazioni per la propria organizzazione](../skype-for-business-and-microsoft-teams-add-on-licensing/set-up-communications-credits-for-your-organization.md).
-  
-> [!NOTE]
-> Nel corso del periodo introduttivo, gli utenti di tutte le organizzazioni possono effettuare chiamate in uscita quando usano la funzionalità Chiama o quando aggiungono altre persone alla riunione in uno qualsiasi dei seguenti paesi/delle seguenti aree geografiche senza incorrere in costi aggiuntivi. Questa possibilità è soggetta alle condizioni del [Periodo di accesso gratuito ad audioconferenze](../legal-and-regulatory/complimentary-dial-out-period.md). 
   
 ### <a name="phone-system"></a>Sistema telefonico
 Con Sistema telefonico puoi creare operatori automatici e code di chiamata (con un numero verde o a tariffa) per rispondere alle chiamate in arrivo alla tua organizzazione e, quando aggiungi un Piano per chiamate per gli utenti, questi ultimi possono utilizzare Skype for Business per assolvere alle attività di base di controllo delle chiamate, come effettuare e ricevere chiamate, trasferire chiamate, attivare o disattivare l’audio delle chiamate. Gli utenti di **Sistema telefonico** possono fare clic su un nome nella loro rubrica e Skype for Business effettuerà una chiamata a tale persona. Per effettuare e ricevere chiamate, gli utenti di **Sistema telefonico** possono utilizzare i loro dispositivi mobili, una cuffia auricolare con laptop o PC o uno dei numerosi telefoni IP che funzionano con Skype for Business.
