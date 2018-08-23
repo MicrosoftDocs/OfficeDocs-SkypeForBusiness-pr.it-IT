@@ -1,1 +1,1 @@
-Stiamo aggiornando frequentemente il modo in cui puoi gestire le funzionalità disponibili in Microsoft Teams, pertanto i passaggi potrebbero essere leggermente diversi nei Microsoft Teams e nel centro di amministrazione di Skype for Business.
+Stiamo aggiornando frequentemente il modo in cui puoi gestire le funzionalità disponibili in Skype for Business online, pertanto i passaggi potrebbero essere leggermente diversi.
