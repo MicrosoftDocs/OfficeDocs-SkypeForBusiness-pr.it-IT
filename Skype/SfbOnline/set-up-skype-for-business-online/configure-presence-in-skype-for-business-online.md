@@ -17,42 +17,44 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Learn how to set up Skype for Business so you can see the availability of your co-workers. '
-ms.openlocfilehash: 45a39fc0e3c7e0e11eabf159b152c5cc30d506e9
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: d547bb107f8c44fc09f72736a2e7965103288714
+ms.sourcegitcommit: 08c6fe9955ea61dd9cded2210ae0153e06bdd8a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23241507"
 ---
 # <a name="configure-presence-in-skype-for-business-online"></a>Configurare la presenza in Skype for Business online
 
-Per impostazione predefinita, tutti gli utenti possono comunicare tra gli utenti dell'organizzazione utilizzando Skype per le aziende possono visualizzare se tale persona è in linea. Skype per le aziende indica se una persona è disponibile in linea, di una riunione, non in linea, o un altro indicatore. 
-  
+Per impostazione predefinita, tutti gli utenti possono comunicare tra gli utenti dell'organizzazione utilizzando Skype per le aziende possono visualizzare se tale persona è in linea. Skype per le aziende indica se una persona è disponibile in linea, di una riunione, non in linea, o un altro indicatore.
+
 ![Un esempio di stato in linea di una persona in Skype per le aziende.](../images/f0849132-1ddb-480f-bca6-cfe9eaa0486d.png)
-  
-Come **[amministratore](http://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** per i dipendenti della propria azienda, è possibile scegliere che visualizza la presenza in linea in Skype per le aziende.
-  
+
+Come **[amministratore](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** per i dipendenti della propria azienda, è possibile scegliere che visualizza la presenza in linea in Skype per le aziende.
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+
 1. Accedere **all'interfaccia di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.
-    
+
 2. **Skype per interfaccia di amministrazione di Business**, scegliere **dell'organizzazione**.
-    
+
 3. In **modalità privacy della presenza**, selezionare una delle seguenti impostazioni e quindi fare clic su **Salva**.
-    
+
 |**Impostazione**|**Utenti autorizzati a visualizzare la presenza dell'utente**|
 |:-----|:-----|
 |**Visualizza automaticamente le informazioni sulla presenza** <br/> |Qualsiasi Skype per utenti Business nell'azienda che non è stato aggiunto a una persona **esterna** o elenco **bloccato** sarà in grado di visualizzare la presenza in linea della persona. <br/> |
 |**Visualizzare le informazioni sulla presenza solo ai contatti dell'utente** <br/> |Tutti gli utenti nell'elenco contatti di una persona che ha non sono stati aggiunti all'elenco **esterno** o **bloccato** . <br/> Singoli utenti possono eseguire l'override di impostazioni predefinite nella loro Skype per applicazioni aziendali: **Impostazioni** > **Strumenti** > **Opzioni**. <br/> |
-   
-Per informazioni su quali gli utenti possono modificare in Skype per le aziende, vedere gli articoli: 
-  
+
+Per informazioni su quali gli utenti possono modificare in Skype per le aziende, vedere gli articoli:
+
 - [Controllo dell'accesso alle informazioni sulla presenza in Skype per le aziende](https://support.office.com/en-us/article/fea86e34-60cf-4dd0-bfb2-169a42afd92c)
-    
+
 - [Impostare le opzioni dello stato in Skype per le aziende](https://support.office.com/en-us/article/efd25395-c8ef-4510-b9cb-6f70e2fff8a0)
-    
+
 ## <a name="related-topics"></a>See also
 
-[Configurare Skype for Business online](set-up-skype-for-business-online.md) 
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 
-  
- 
+

@@ -18,29 +18,29 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Get detailed information about the dimensions and measures exposed by the Call Quality Dashboard for Microsoft Teams and Skype for Business Online.
-ms.openlocfilehash: 2949f170aef6567d186adcd8414e39c7689537e2
-ms.sourcegitcommit: e5a54e2ead0edd9e450bbed4b6e50b3cfd2e91c0
+ms.openlocfilehash: 95194240a110a5372a6891c884e729b5a0cc7d43
+ms.sourcegitcommit: 08c6fe9955ea61dd9cded2210ae0153e06bdd8a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "21645211"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23245438"
 ---
 # <a name="dimensions-and-measures-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibili in Call Quality Dashboard
 
 La chiamata qualità Dashboard (CQD) per Microsoft Teams e Skype Business online consente di ottenere informazioni di base sulla qualità delle chiamate effettuate con Microsoft Teams e Skype per servizi di Business. Questo argomento illustra nel dettaglio le dimensioni e metriche misurate dal CQD. Per ulteriori informazioni su CQD e come abilitarla, vedere [attivazione e l'utilizzo del Dashboard di qualità delle chiamate per team di Microsoft e Skype Business online](turning-on-and-using-call-quality-dashboard.md).
-  
+
 ## <a name="first-and-second-endpoint-classification"></a>Classificazione del primo e secondo endpoint
 
 Molte delle dimensioni e misure del Call Quality Dashboard (CQD) sono classificate come prima o seconda. La seguente logica determina quale endpoint coinvolto nello stream o chiamata viene etichettato come primo:
-  
+
 - Innanzitutto sarà sempre un endpoint del Server (MCU AV, Mediation Server, ecc.) se un Server interessato flusso/chiamata.
-    
+
 - Il secondo endpoint sarà sempre un endpoint client a meno che lo stream non sia tra due endpoint server.
-    
+
 - Se entrambi gli endpoint sono dello stesso tipo, l'ordine per il quale è il primo e secondo si basa sull'ordine interno della categoria di agente utente. Ciò assicura che l'ordinamento sia coerente.
-    
+
 Ad esempio, ciascuna riga rappresenta una coppia di agenti utente coinvolti in uno stream:
-  
+
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Categoria agente utente del chiamante** <br/> |**Categoria agente utente del chiamato** <br/> |**First Endpoint** <br/> |**Second Endpoint** <br/> |**First Is Caller** <br/> |
@@ -51,14 +51,14 @@ Ad esempio, ciascuna riga rappresenta una coppia di agenti utente coinvolti in u
 |Mediation Server  <br/> |AV-MCU  <br/> |Mediation Server  <br/> |AV-MCU  <br/> |TRUE  <br/> |
 |OC (client Skype for Business)  <br/> |OC Phone (telefono IP Skype for Business)  <br/> |OC (client Skype for Business)  <br/> |OC Phone (telefono IP Skype for Business)  <br/> |TRUE  <br/> |
 |OC Phone (telefono IP Skype for Business)  <br/> |OC (client Skype for Business)  <br/> |OC (client Skype for Business)  <br/> |OC Phone (telefono IP Skype for Business)  <br/> |FALSE  <br/> |
-   
+
 > [!NOTE]
 > Questa classificazione primo-secondo è distinta da quale endpoint sia il chiamante o il chiamato. La dimensione Il primo è il chiamante può essere usata per aiutare a individuare quale endpoint è il chiamante o il chiamato.
-  
+
 ## <a name="dimensions"></a>Dimensioni
 
 La tabella seguente elenca le dimensioni attualmente disponibili in CQD.
-  
+
 |||||
 |:-----|:-----|:-----|:-----|
 |**Nome della dimensione** <br/> |**Tipo di dati / Unità** <br/> |**Descrizione** <br/> |**Valori** <br/> |
@@ -321,17 +321,17 @@ La tabella seguente elenca le dimensioni attualmente disponibili in CQD.
 |Inside Corp Pair  <br/> |Coppia enumerata  <br/> | Coppi che mostra se gli endpoint erano situati all'interno o all'esterno della rete aziendale in base alla mappatura della subnet. Valori possibili: <br/>  Interno : Interno <br/>  Interno : Esterno <br/>  Esterno : Esterno <br/> |**Valore di esempio:** All'interno: all'interno  <br/> |
 |Scenario Pair  <br/> |Coppia enumerata  <br/> |Coppia che mostra se gli endpoint erano situati all'interno o all'esterno della rete aziendale in base alla mappatura della subnet e ai dettagli di connessione della rete.  <br/> **Nota:** Le coppie sono separate da ': '.           |I valori vuoti nell'enumerazione indicano che il tipo di connettività di rete era sconosciuto per uno o entrambi gli endpoint. <br/>**Valore di esempio:** Client interno-Client-Inside-wifi  <br/> |
 |È team  <br/> |Boolean  <br/> |True indica che l'agente utente prima o seconda per il flusso è un endpoint Teams Microsoft.  <br/> False indica che gli agenti utente sono Skype per gli endpoint di Business.  |**Valore di esempio:** True  |
-   
+
 ### <a name="notes-on-dimension-data-typeunits"></a>Note sul tipo di dati/unità delle dimensioni:
 
 #### <a name="range"></a>Intervallo
 
 Le dimensioni fornite come intervallo o gruppo di valori sono indicate utilizzando il formato seguente:
-  
+
  _\<stringa dell'ordine di ordinamento\> [\<limite inferiore inclusi\> - \<limite superiore esclusivo\>)_
-  
+
 Ad esempio, la dimensione Durata (Minuti) rappresenta la durata della chiamata in secondi e il valore è riferito come intervallo di valori.
-  
+
 |||
 |:-----|:-----|
 |**Duration (Minutes)** <br/> |**Interpretazione** <br/> |
@@ -340,22 +340,22 @@ Ad esempio, la dimensione Durata (Minuti) rappresenta la durata della chiamata i
 |065: [2 - 3)  <br/> |2 minuti < = durata flusso < 3 minuti  <br/> |
 |066: [3 - 4)  <br/> |3 minuti < = durata flusso < 4 minuti  <br/> |
 |…  <br/> |…  <br/> |
-   
+
 La stringa <sort order string> si usa per controllare l'ordinamento quando si presentano i dati e si può utilizzare per filtrare. Ad esempio, un filtro su Durata (Minuti) < "065", mostrerà flussi con una durata inferiore a 2 minuti (lo "0" iniziale è necessario perché il filtro funzioni come previsto).
-  
+
 > [!NOTE]
-> Il valore effettivo della stringa di ordinamento non è significativo. 
-  
+> Il valore effettivo della stringa di ordinamento non è significativo.
+
 #### <a name="enumeration-pair"></a>Coppia di enumerazione
 
 Le dimensioni fornite come coppia di enumerazione sono indicate utilizzando il formato seguente:
-  
+
  _\<valore di enumerazione da un punto finale\> : \<valore di enumerazione da altri endpoint\>_
-  
+
 L'ordinamento dei valori di enumerazione è coerente ma non riflette l'ordinamento del primo e del secondo endpoint.
-  
+
 Ad esempio, la coppia dettagli di connessione di rete mostra i valori dei dettagli di connessione di rete dei due endpoint:
-  
+
 |||
 |:-----|:-----|
 |**Network Connection Detail Pair** <br/> |**Interpretazione** <br/> |
@@ -363,15 +363,15 @@ Ad esempio, la coppia dettagli di connessione di rete mostra i valori dei dettag
 |Cablata : WiFi  <br/> |Il primo endpoint usava una connessione ethernet cablata mentre il secondo endpoint usava una connessione WiFi oppure il secondo endpoint usava una connessione ethernet cablata mentre il primo endpoint usava una connessione WiFi.  <br/> |
 |: WiFi  <br/> |Il primo endpoint usava una connessione WiFi e la connessione di rete usata dal secondo endpoint era sconosciuta oppure il secondo endpoint usava una connessione WiFi e la connessione di rete usata dal primo endpoint era sconosciuta.  <br/> |
 |…  <br/> |…  <br/> |
-   
+
 #### <a name="blank-values"></a>Valori vuoti
 
 Nella tabella sopra riportata sono elencati i motivi possibili per cui una dimensione potrebbe essere vuota. Molte dimensioni e misure sono vuote quando la dimensione disponibile nel record QoE (Quality of Experience) è falsa. In genere questa situazione si verifica quando non è stato possibile effettuare la chiamata.
-  
+
 ## <a name="measures"></a>Misure
 
 Nella tabella seguente sono elencate le misure correntemente disponibili nel dashboard di qualità chiamata (Call Quality Dashboard, CQD):
-  
+
 ||||
 |:-----|:-----|:-----|
 |**Nome misura** <br/> |**Unità** <br/> |**Descrizione** <br/> |
@@ -425,10 +425,10 @@ Nella tabella seguente sono elencate le misure correntemente disponibili nel das
 |Second Feedback Token Audio Issue Count  <br/> |Numero di flussi valutati  <br/> |Il numero dei flussi in cui l'utente del secondo endpoint ha segnalato un problema audio.  <br/> |
 |First Feedback Token Video Issue Count  <br/> |Il numero dei flussi valutati  <br/> |Numero di flussi di cui utente utilizzando il primo endpoint indicato un problema con il video.  <br/> |
 |Second Feedback Token Video Issue Count  <br/> |Il numero dei flussi valutati  <br/> |Numero di flussi di cui utente utilizzando il secondo endpoint indicato un problema con il video.  <br/> |
-|Audio SLA Good Call Count  <br/> |Numero di chiamate  <br/> |Numero di chiamate audio nell'ambito del Skype per SLA di qualità vocale aziendale ([Contratti multilicenza per prodotti e Microsoft Online Services](http://aka.ms/voicequalitysla)) classificato come conseguimento degli obiettivi di prestazioni di rete.  <br/> |
-|Audio SLA Poor Call Count  <br/> |Numero di chiamate  <br/> |Numero di chiamate audio nell'ambito del Skype per Business vocale qualità SLA ([Contratti multilicenza per prodotti e Microsoft Online Services](http://aka.ms/voicequalitysla)) classificato come non soddisfano gli obiettivi di prestazioni di rete.  <br/> |
-|Audio SLA Call Count  <br/> |Numero di chiamate  <br/> |Numero di chiamate audio nell'ambito del Skype per SLA di qualità vocale aziendale ([Contratti multilicenza per prodotti e Microsoft Online Services](http://aka.ms/voicequalitysla)).  <br/> |
-|Audio SLA Good Call Percentage  <br/> |Percentuale  <br/> |Percentuale delle chiamate audio che rientrano nell'ambito del contratto di servizio (SLA) sulla qualità vocale di Skype for Business ([Volume Licensing for Microsoft Products and Online Services](http://aka.ms/voicequalitysla)) la cui classificazione ha soddisfatto i target delle prestazioni di rete.  <br/> |
+|Audio SLA Good Call Count  <br/> |Numero di chiamate  <br/> |Numero di chiamate audio nell'ambito del Skype per SLA di qualità vocale aziendale ([Contratti multilicenza per prodotti e Microsoft Online Services](https://aka.ms/voicequalitysla)) classificato come conseguimento degli obiettivi di prestazioni di rete.  <br/> |
+|Audio SLA Poor Call Count  <br/> |Numero di chiamate  <br/> |Numero di chiamate audio nell'ambito del Skype per Business vocale qualità SLA ([Contratti multilicenza per prodotti e Microsoft Online Services](https://aka.ms/voicequalitysla)) classificato come non soddisfano gli obiettivi di prestazioni di rete.  <br/> |
+|Audio SLA Call Count  <br/> |Numero di chiamate  <br/> |Numero di chiamate audio nell'ambito del Skype per SLA di qualità vocale aziendale ([Contratti multilicenza per prodotti e Microsoft Online Services](https://aka.ms/voicequalitysla)).  <br/> |
+|Audio SLA Good Call Percentage  <br/> |Percentuale  <br/> |Percentuale delle chiamate audio che rientrano nell'ambito del contratto di servizio (SLA) sulla qualità vocale di Skype for Business ([Volume Licensing for Microsoft Products and Online Services](https://aka.ms/voicequalitysla)) la cui classificazione ha soddisfatto i target delle prestazioni di rete.  <br/> |
 |Audio Good Call Stream Count  <br/> |Numero di flussi  <br/> |Numero di flussi audio in entrambi i flussi audio alla chiamata (tratto di chiamata) non sono classificati come scarso basato su metriche di rete elencate di seguito: [Classificazione flusso nel Dashboard di qualità delle chiamate](stream-classification-in-call-quality-dashboard.md).  <br/> |
 |Audio Poor Call Stream Count  <br/> |Numero di flussi  <br/> |Numero di flussi audio in almeno un flusso audio alla chiamata (tratto di chiamata) è stato classificato come scarso basato su metriche di rete elencate di seguito: [Classificazione flusso nel Dashboard di qualità delle chiamate](stream-classification-in-call-quality-dashboard.md).  <br/> |
 |Audio Unclassified Call Stream Count  <br/> |Numero di flussi  <br/> |Numero di flussi audio in entrambi i flussi audio alla chiamata (tratto di chiamata) non potrebbero essere classificati causa della mancanza delle metriche di rete.  <br/> |
@@ -496,7 +496,7 @@ Nella tabella seguente sono elencate le misure correntemente disponibili nel das
 |Firewall IP Blocked Media Failure Percentage  <br/> |Percentuale  <br/> |Percentuale di flussi che non è stato possibile eseguire perché l'apparecchiatura di rete bloccava l'accesso ai server Skype for Business. Questi errori in genere indicano che un proxy, un firewall o altro dispositivo di protezione della rete, non è configurato correttamente per l'accesso all'indirizzo IP e alle porte usate da Skype for Business in Office 365.  <br/> |
 |Media Failed Due To Firewall DPI Stream Count  <br/> |Numero di flussi  <br/> |Numero di flussi che non è stato possibile eseguire perché l'apparecchiatura di rete bloccava l'accesso a causa dell'ispezione profonda dei pacchetti (DPI, Deep Packet Inspection), che non consentiva il traffico di Skype for Business. Questi errori in genere indicano che un proxy, un firewall o altro dispositivo di protezione della rete, non è configurato correttamente per l'accesso all'indirizzo IP e alle porte usate da Skype for Business in Office 365.  <br/> |
 |Firewall DPI Media Failure Percentage  <br/> |Percentuale  <br/> |Percentuale di flussi che non è stato possibile eseguire perché l'apparecchiatura di rete bloccava l'accesso a causa dell'ispezione profonda dei pacchetti (DPI, Deep Packet Inspection), che non consentiva il traffico di Skype for Business. Questi errori in genere indicano che un proxy, un firewall o altro dispositivo di protezione della rete, non è configurato correttamente per l'accesso all'indirizzo IP e alle porte usate da Skype for Business in Office 365.  <br/> |
-   
+
 ## <a name="related-topics"></a>See also
 [Configurazione di Skype for Business Call Analytics](set-up-call-analytics.md)
 
@@ -504,5 +504,4 @@ Nella tabella seguente sono elencate le misure correntemente disponibili nel das
 
 [Chiamata Analitica e Dashboard qualità chiamata](Difference-between-call-analytics-and-call-quality-dashboard.md)
 
-  
- 
+
