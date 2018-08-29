@@ -1,5 +1,5 @@
 ---
-title: La configurazione della rete per la trasmissione riunione Skype
+title: Configurare la rete per Skype Meeting Broadcast
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,48 +17,49 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Informazioni sulla funzionalità di trasmissione riunione Skype di Skype Business online che consente inoltre di pianificazione, prodotti e trasmissione riunioni o eventi ai gruppi di destinatari in linea di grandi dimensioni fino a 10.000 partecipanti.
-ms.openlocfilehash: eafd27bf8ee8d8ae2c533501d50806f7d271b48d
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 190911fcf87e0b3042bc8895ade016756a58a1ec
+ms.sourcegitcommit: 08c6fe9955ea61dd9cded2210ae0153e06bdd8a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23251659"
 ---
-# <a name="set-up-your-network-for-skype-meeting-broadcast"></a>La configurazione della rete per la trasmissione riunione Skype
+# <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
 Dopo aver [Abilitare trasmissione riunione Skype](enable-skype-meeting-broadcast.md) trasmissione riunione Skype, è necessario configurare la rete. Eseguire questo passaggio se si desidera mantenere webinar e altre trasmissioni per gli utenti all'esterno dell'azienda.
-  
+
 Se non hai dimestichezza con la configurazione del firewall, può essere utile assumere un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) che se ne occupi al posto tuo.
-  
+
 Per ignorare questo passaggio e aggiungere invece business diversa per la federazione in modo che possono essere invitati alle trasmissioni, seguire i passaggi descritti in [Consenti agli utenti di contatti esterni Skype per gli utenti aziendali](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md).
-  
+
 ## <a name="step-1-set-up-allowed-domains"></a>Passaggio 1: Impostare i domini consentiti
 
 Per impostare i domini consentiti, utilizzare **uno** dei metodi seguenti:
-  
-### 
+
+###
 
  **Metodo 1: Utilizzare l'interfaccia di amministrazione di Office 365**
-  
+
 1. Visitare il **Centro di amministrazione di Office 365** e quindi la barra di spostamento sinistra fare clic su **Impostazioni** > **servizi &amp; componenti aggiuntivi**e quindi fare clic su **Skype per le aziende**.
-    
+
 2. Nella pagina **condivisione esterna** in **eccezioni di dominio**, selezionare **tutti i domini vengono bloccati, ad eccezione**e immettere i seguenti domini separati da una virgola (,):
-    
+
   - noammeetings.Lync.com
-    
+
   - emeameetings.Lync.com
-    
+
   - apacmeetings.Lync.com
-    
+
   - Resources.Lync.com
-    
+
 3. Fai clic su **Salva**.
-    
-### 
+
+###
 
  **Metodo 2: Utilizzare Windows PowerShell**
-  
+
 - Dal **Menu Start di** **Windows PowerShell** pulsante destro del mouse e fare clic su **Esegui come amministratore**. Nella finestra di **Windows PowerShell** , digitare ogni riga e premere INVIO.
-    
+
   ```
   $r = New-CsEdgeDomainPattern -Domain "noammeetings.lync.com"
   ```
@@ -86,20 +87,20 @@ Per impostare i domini consentiti, utilizzare **uno** dei metodi seguenti:
 ## <a name="step-2-add-skype-meeting-broadcast-domains-urls-and-ip-addresses"></a>Passaggio 2: Aggiungere Skype riunione trasmissione domini, gli URL e IP indirizzi
 
 Il secondo passaggio del processo di installazione è consente di aggiungere i domini necessarie e quindi aggiungono gli indirizzi IP e gli URL che sono necessari per trasmettere riunione Skype per l'utilizzo.
-  
+
 - **Aggiungere Skype necessarie per gli URL degli endpoint Business Online e gli indirizzi IP verificando quali sono necessari** [di seguito](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_lyo).
-    
+
 ## <a name="set-up-skype-meeting-broadcast-in-hybrid-deployments-and-organizations"></a>Configurazione di trasmissione riunione Skype nelle organizzazioni e le distribuzioni ibride
 
 Se sono Skype per le organizzazioni aziendali in linea e una distribuzione locale di Lync Server 2010, Microsoft Lync Server 2013 e Skype per Business Server 2015 e avere agli utenti sia online e locale, sono disponibili altre operazioni di installazione è necessario eseguire Oltre a quelli sopra per abilitare l'organizzazione locale comunicare con Skype Business online e consentire a tutti gli utenti siano in grado di creare e partecipare a una riunione Skype trasmissione. Per verificare quali sono i requisiti, vedere [configurare la distribuzione in locale per la trasmissione riunione Skype](https://go.microsoft.com/fwlink/?LinkId=617070).
-  
+
 ## <a name="related-topics"></a>See also
 
 [Abilitare Skype Meeting Broadcast](enable-skype-meeting-broadcast.md)
-  
-[URL e intervalli di indirizzi IP per Office 365](http://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
-  
+
+[URL e intervalli di indirizzi IP per Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+
 [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
-  
-  
- 
+
+
+
