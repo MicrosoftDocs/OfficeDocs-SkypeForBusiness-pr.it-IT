@@ -19,59 +19,62 @@ f1keywords: None
 ms.custom:
 - Licensing
 - LIL_Placement
-description: "Informazioni sulle licenze di componente aggiuntivo, caratteristiche e sull'acquisto di per i piani di Office 365 Business Premium. "
-ms.openlocfilehash: 4ccfc891eadf7d1b8cde99946304b88a0d5db63e
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
-ms.translationtype: MT
+description: "Informazioni sulle licenze di componenti aggiuntivi, sulle funzionalità e sull'acquisto di piani per Office 365 Business Premium. "
+ms.openlocfilehash: 35994c5b3c446bd581e9001ea1a74dd57a2426ad
+ms.sourcegitcommit: 08c6fe9955ea61dd9cded2210ae0153e06bdd8a6
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23251774"
 ---
-# <a name="office-365-business-premium"></a><span data-ttu-id="1732f-103">Office 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="1732f-103">Office 365 Business Premium</span></span> 
+# <a name="office-365-business-premium"></a><span data-ttu-id="ffb56-103">Office 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="ffb56-103">Guidance for Office 365 Business Premium Plan customers</span></span>
 
-<span data-ttu-id="1732f-p101">Se disponi di [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium), puoi usare Skype for Business per chiamare altre persone della tua azienda con il medesimo abbonamento. Ad esempio, se nell'azienda lavorano 10 persone, queste possono comunicare tra loro effettuando chiamate o inviando messaggi istantanei con Skype for Business.</span><span class="sxs-lookup"><span data-stu-id="1732f-p101">If you have [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium), you can use Skype for Business to make calls to other people in your business who are on your subscription. For example, if your business has 10 people, you can call and IM each other using Skype for Business.</span></span>
-  
- <span data-ttu-id="1732f-106">**Per effettuare e ricevere le chiamate da persone esterne all'azienda, hai due opzioni**:</span><span class="sxs-lookup"><span data-stu-id="1732f-106">**To make and receive calls from people external to your business, you have two options**:</span></span>
-  
-- <span data-ttu-id="1732f-107">**Opzione 1: puoi usare l'[app Skype](https://www.skype.com/)** gratuita.</span><span class="sxs-lookup"><span data-stu-id="1732f-107">**Option 1. Use the free [Skype app](https://www.skype.com/)**.</span></span> <span data-ttu-id="1732f-108">Se si dispone di un'azienda di dimensioni molto piccola (ad esempio, 1-2 persone), utilizzando l'app Skype è il modo migliore per accedere.</span><span class="sxs-lookup"><span data-stu-id="1732f-108">If you have a very small business (for example, 1-2 people), using the Skype app is the better way to go.</span></span> <span data-ttu-id="1732f-109">È l'opzione più conveniente per effettuare le chiamate nazionali e internazionali.</span><span class="sxs-lookup"><span data-stu-id="1732f-109">It's less expensive to use for domestic and international calls.</span></span> <span data-ttu-id="1732f-110">È comunque tenere conferenze telefoniche, effettuare videochiamate e condividere il desktop per le presentazioni.</span><span class="sxs-lookup"><span data-stu-id="1732f-110">You can still hold conference calls, make video calls, and share your desktop for presentations.</span></span> <span data-ttu-id="1732f-111">[Estrarre le tariffe e le opzioni di pagamento](https://secure.skype.com/en/calling-rates?wt.mc_id=legacy&amp;expo365=bundled).</span><span class="sxs-lookup"><span data-stu-id="1732f-111">[Check out the rates and payment options](https://secure.skype.com/en/calling-rates?wt.mc_id=legacy&amp;expo365=bundled).</span></span>
-    
-    <span data-ttu-id="1732f-p103">Nota che l'app Skype non è inclusa nelle applicazioni di Office 365, per cui non viene integrata in Outlook 2016, a differenza di Skype for Business. Ciò significa che i contatti presenti in Outlook 2016 non verranno visualizzati in Skype, ma li dovrai aggiungere tu.</span><span class="sxs-lookup"><span data-stu-id="1732f-p103">Note that the Skype app isn't part of the Office 365 suite, so it won't be integrated with Outlook 2016 the way Skype for Business is. This means your contacts in Outlook 2016 won't show up in Skype; you'll need to add your contacts to Skype.</span></span>
-    
-    <span data-ttu-id="1732f-p104">È consigliabile iniziare a usare l'app Skype per vedere se soddisfa le tue esigenze. In caso contrario, per aggiornare il tuo piano, prendi in considerazione la prossima opzione.</span><span class="sxs-lookup"><span data-stu-id="1732f-p104">We recommend starting with the Skype app to see if it meets your needs. If it doesn't, then consider the next option, to upgrade your plan.</span></span>
-    
-    <span data-ttu-id="1732f-116">**IMPORTANTE**: devi impostare la possibilità di consentire o impedire agli utenti di utilizzare Skype for Business per cercare utenti Skype.</span><span class="sxs-lookup"><span data-stu-id="1732f-116">**IMPORTANT**: You have to set a toggle to allow your employees to use Skype for Business to search for Skype users.</span></span> <span data-ttu-id="1732f-117">Vedere [Skype consente agli utenti aziendali aggiungere contatti Skype](../../set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts.md).</span><span class="sxs-lookup"><span data-stu-id="1732f-117">See [Let Skype for Business users add Skype contacts](../../set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts.md).</span></span>
-    
-- <span data-ttu-id="1732f-118">Opzione **2. Aggiornare il piano di acquistare un sistema telefonico e un nazionale o nazionali e internazionali chiamata Plan**.</span><span class="sxs-lookup"><span data-stu-id="1732f-118">**Option 2. Upgrade your plan, and buy a Phone System and a Domestic or Domestic and International Calling Plan**.</span></span>
+<span data-ttu-id="ffb56-p101">Se disponi di [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium), puoi usare Skype for Business per chiamare altre persone della tua azienda con il medesimo abbonamento. Ad esempio, se nell'azienda lavorano 10 persone, queste possono comunicare tra loro effettuando chiamate o inviando messaggi istantanei con Skype for Business.</span><span class="sxs-lookup"><span data-stu-id="ffb56-p101">If you have [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium), you can use Skype for Business to make calls to other people in your business who are on your subscription. For example, if your business has 10 people, you can call and IM each other using Skype for Business.</span></span>
+
+ <span data-ttu-id="ffb56-106">**Per effettuare e ricevere le chiamate da persone esterne all'azienda, hai due opzioni**:</span><span class="sxs-lookup"><span data-stu-id="ffb56-106">**To make and receive calls from people external to your business, you have two options**:</span></span>
+
+- <span data-ttu-id="ffb56-107">**Opzione 1. Usare la [app gratuita Skype](https://www.skype.com/)**.</span><span class="sxs-lookup"><span data-stu-id="ffb56-107">**Option 1. Use the free [Skype app](https://www.skype.com/)**.</span></span> <span data-ttu-id="ffb56-108">Se hai un'azienda molto piccola (composta, ad esempio, da 1 o 2 persone), la soluzione migliore è l'utilizzo della app Skype.</span><span class="sxs-lookup"><span data-stu-id="ffb56-108">If you have a very small business (for example, 1-2 people) using the Skype app is the better way to go.</span></span> <span data-ttu-id="ffb56-109">È l'opzione più conveniente per effettuare chiamate nazionali e internazionali.</span><span class="sxs-lookup"><span data-stu-id="ffb56-109">It's less expensive to use for domestic and international calls.</span></span> <span data-ttu-id="ffb56-110">Puoi anche tenere conferenze telefoniche, effettuare videochiamate e condividere il desktop per le presentazioni.</span><span class="sxs-lookup"><span data-stu-id="ffb56-110">You can still hold conference calls, make video calls, and share your desktop for presentations.Check out the rates and payment options.</span></span> <span data-ttu-id="ffb56-111">[Scopri le tariffe e le opzioni di pagamento](https://secure.skype.com/en/calling-rates?wt.mc_id=legacy&amp;expo365=bundled).</span><span class="sxs-lookup"><span data-stu-id="ffb56-111">[Check out the rates and payment options](https://secure.skype.com/en/calling-rates?wt.mc_id=legacy&amp;expo365=bundled).</span></span>
+
+    <span data-ttu-id="ffb56-p103">Nota che l'app Skype non è inclusa nelle applicazioni di Office 365, per cui non viene integrata in Outlook 2016, a differenza di Skype for Business. Ciò significa che i contatti presenti in Outlook 2016 non verranno visualizzati in Skype, ma li dovrai aggiungere tu.</span><span class="sxs-lookup"><span data-stu-id="ffb56-p103">Note that the Skype app isn't part of the Office 365 suite, so it won't be integrated with Outlook 2016 the way Skype for Business is. This means your contacts in Outlook 2016 won't show up in Skype; you'll need to add your contacts to Skype.</span></span>
+
+    <span data-ttu-id="ffb56-p104">È consigliabile iniziare a usare l'app Skype per vedere se soddisfa le tue esigenze. In caso contrario, per aggiornare il tuo piano, prendi in considerazione la prossima opzione.</span><span class="sxs-lookup"><span data-stu-id="ffb56-p104">We recommend starting with the Skype app to see if it meets your needs. If it doesn't, then consider the next option, to upgrade your plan.</span></span>
+
+    > [!IMPORTANT]
+    > <span data-ttu-id="ffb56-116">Devi impostare un'opzione per consentire o impedire agli utenti di utilizzare Skype for Business di cercare utenti Skype.</span><span class="sxs-lookup"><span data-stu-id="ffb56-116">IMPORTANT: You have to set a toggle to allow your employees to use Skype for Business to search for Skype users.</span></span> <span data-ttu-id="ffb56-117">Consulta [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](../../set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts.md).</span><span class="sxs-lookup"><span data-stu-id="ffb56-117">[Let Skype for Business users add Skype contacts](../../set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts.md)</span></span>
+
+
+- <span data-ttu-id="ffb56-118">**Opzione 2. Aggiornare il proprio piano e acquistare un Sistema telefonico e un Piano di chiamata nazionale o nazionale e internazionale**.</span><span class="sxs-lookup"><span data-stu-id="ffb56-118">**Option 2. Upgrade your plan, and buy a Phone System and a Domestic or Domestic and International Calling Plan**.</span></span>
 
     > [!Important]
-    > <span data-ttu-id="1732f-119">Sebbene Skype per Business Online piano 2 è incluso con abbonamento Office Business Premium, **non è possibile aggiungere funzionalità per chiamate vocali di cloud**.</span><span class="sxs-lookup"><span data-stu-id="1732f-119">Although Skype for Business Online Plan 2 is included with the Office Business Premium subscription, **you can’t add cloud voice calling features**.</span></span> <span data-ttu-id="1732f-120">Pertanto, è consigliabile valutare un piano aziendale E5 (o aziendale E3) per verificare se è più economico.</span><span class="sxs-lookup"><span data-stu-id="1732f-120">So, we recommend that you evaluate an Enterprise E5 (or Enterprise E3) plan to see if it is more cost effective.</span></span>
-    
-1. <span data-ttu-id="1732f-121">[Passare a un piano di Office 365 per le aziende diverso](http://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a).</span><span class="sxs-lookup"><span data-stu-id="1732f-121">[Switch to a different Office 365 for business plan](http://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a).</span></span> <span data-ttu-id="1732f-122">È consigliabile valutare un piano aziendale E5 per verificare se è più economico.</span><span class="sxs-lookup"><span data-stu-id="1732f-122">We recommend that you evaluate an Enterprise E5 plan to see if it is more cost effective.</span></span>
-    
-2. <span data-ttu-id="1732f-123">Acquisto di componente aggiuntivo al **Sistema telefonico** .</span><span class="sxs-lookup"><span data-stu-id="1732f-123">Buy the **Phone System** add-on.</span></span>
-    
-3. <span data-ttu-id="1732f-124">Acquisto di una [Chiamata a pianificazione per Office 365](../../skype-for-business-and-microsoft-teams-add-on-licensing/calling-plans-for-office-365.md): è possibile solo acquistare questo dopo l'acquisto di componente aggiuntivo al **Sistema telefonico** .</span><span class="sxs-lookup"><span data-stu-id="1732f-124">Buy a [Calling Plan for Office 365](../../skype-for-business-and-microsoft-teams-add-on-licensing/calling-plans-for-office-365.md): you can only buy this after you buy the **Phone System** add-on.</span></span>
-    
-    <span data-ttu-id="1732f-125">Questa seconda opzione è ideale per le aziende con molti dipendenti che effettuano e ricevono chiamate esterne.</span><span class="sxs-lookup"><span data-stu-id="1732f-125">This second option is ideal for businesses with several people who make and receive external phone calls.</span></span>
+    > <span data-ttu-id="ffb56-119">Sebbene Skype per Business Online Plan 2 sia incluso con l'abbonamento a Office Business Premium, **non è possibile aggiungere funzionalità per chiamate vocali su cloud**.</span><span class="sxs-lookup"><span data-stu-id="ffb56-119">Although Skype for Business Online Plan 2 is included with the Office Business Premium subscription, **you can’t add cloud voice calling features**.</span></span> <span data-ttu-id="ffb56-120">Pertanto, è consigliabile valutare un piano aziendale E5 (o aziendale E3) per verificare se è più conveniente.</span><span class="sxs-lookup"><span data-stu-id="ffb56-120">So, we recommend that you evaluate an Enterprise E5 (or Enterprise E3) plan to see if it is more cost effective.</span></span>
 
-## <a name="how-to-see-prices-and-buy"></a><span data-ttu-id="1732f-126">Come sui prezzi e acquistare</span><span class="sxs-lookup"><span data-stu-id="1732f-126">How to see prices and buy</span></span>
-<span data-ttu-id="1732f-127"><a name="bkmk_buypremium"> </a></span><span class="sxs-lookup"><span data-stu-id="1732f-127"></span></span>
+1. <span data-ttu-id="ffb56-121">[Passare a un piano diverso di Office 365 per le aziende](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a).</span><span class="sxs-lookup"><span data-stu-id="ffb56-121">[Switch to a different Office 365 for business plan](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a).</span></span> <span data-ttu-id="ffb56-122">È consigliabile valutare un piano aziendale E5 per verificare se è più conveniente.</span><span class="sxs-lookup"><span data-stu-id="ffb56-122">We recommend that you evaluate an Enterprise E5 plan to see if it is more cost effective.</span></span>
 
- <span data-ttu-id="1732f-128">**Per ottenere le conferenze Audio e titoli di coda di comunicazione:**</span><span class="sxs-lookup"><span data-stu-id="1732f-128">**To get Audio Conferencing and Communication Credits:**</span></span>
-  
-1. <span data-ttu-id="1732f-129">Accedi all'interfaccia di amministrazione di Office 365.</span><span class="sxs-lookup"><span data-stu-id="1732f-129">Sign in to the Office 365 admin center.</span></span>
-    
-2. <span data-ttu-id="1732f-130">Passa a **Fatturazione** > **Abbonamenti** > **Componenti aggiuntivi** > **Acquista componenti aggiuntivi**.</span><span class="sxs-lookup"><span data-stu-id="1732f-130">Go to **Billing** > **Subscriptions** > **Add-ons** > **Buy add-ons**.</span></span>
-    
-   ![Per acquistare una licenza di componente aggiuntivo, scegliere componenti aggiuntivi di acquisto.](../../images/fc4d7506-4ee9-4e39-be54-0622edffb77a.png)
-  
-3. <span data-ttu-id="1732f-132">Ora vedremo i prezzi e acquistare conferenze Audio e il programma di installazione Communications crediti.</span><span class="sxs-lookup"><span data-stu-id="1732f-132">You'll now see the prices and option to buy Audio Conferencing, and setup Communications Credits.</span></span>
-    
-<span data-ttu-id="1732f-133">**Per aprire sistema telefonico e un piano di chiamata:**</span><span class="sxs-lookup"><span data-stu-id="1732f-133">**To get Phone System and a Calling Plan:**</span></span>
-  
-1. <span data-ttu-id="1732f-134">Passa al piano E1 o E3.</span><span class="sxs-lookup"><span data-stu-id="1732f-134">Switch to the E1 or E3 plan.</span></span>
-    
-2. <span data-ttu-id="1732f-135">Vai a Interfaccia di amministrazione di Office 365 > **Fatturazione** > **Abbonamenti**.</span><span class="sxs-lookup"><span data-stu-id="1732f-135">Go to Office 365 admin center > **Billing** > **Subscriptions**.</span></span>
-    
-3. <span data-ttu-id="1732f-136">Seleziona **Componenti aggiuntivi**.</span><span class="sxs-lookup"><span data-stu-id="1732f-136">Choose **Add-ons**.</span></span> <span data-ttu-id="1732f-137">Verrà ora visualizzato i prezzi di sistema telefonico e acquistare viene.</span><span class="sxs-lookup"><span data-stu-id="1732f-137">You'll now see the prices for Phone System, and the option to buy it.</span></span>
-    
-4. <span data-ttu-id="1732f-138">Dopo l'acquisto di una licenza di **Sistema telefonico** , verrà visualizzato il prezzo e acquistare un piano di chiamata.</span><span class="sxs-lookup"><span data-stu-id="1732f-138">After you buy a **Phone System** license, you'll see the price and option to buy a Calling Plan.</span></span>
+2. <span data-ttu-id="ffb56-123">Acquisto di un componente aggiuntivo al **Sistema telefonico**.</span><span class="sxs-lookup"><span data-stu-id="ffb56-123">Buy the **Phone System** add-on.</span></span>
+
+3. <span data-ttu-id="ffb56-124">Acquisto di un [Piano di chiamata per Office 365](../../skype-for-business-and-microsoft-teams-add-on-licensing/calling-plans-for-office-365.md): è possibile acquistarlo solo dopo l'acquisto di un componente aggiuntivo al **Sistema telefonico**.</span><span class="sxs-lookup"><span data-stu-id="ffb56-124">Buy a Voice calling plans for Office 365 Enterprise E5: you can only buy this after you buy the Cloud PBX add-on.</span></span>
+
+    <span data-ttu-id="ffb56-125">Questa seconda opzione è ideale per le aziende con molti dipendenti che effettuano e ricevono chiamate esterne.</span><span class="sxs-lookup"><span data-stu-id="ffb56-125">This second option is ideal for businesses with several people who make and receive external phone calls.</span></span>
+
+## <a name="how-to-see-prices-and-buy"></a><span data-ttu-id="ffb56-126">Come scoprire i prezzi e acquistare</span><span class="sxs-lookup"><span data-stu-id="ffb56-126">Partners: How to see prices and buy</span></span>
+<span data-ttu-id="ffb56-127"><a name="bkmk_buypremium"> </a></span><span class="sxs-lookup"><span data-stu-id="ffb56-127"></span></span>
+
+ <span data-ttu-id="ffb56-128">**Per ottenere Audioconferenza e Credito per la comunicazione:**</span><span class="sxs-lookup"><span data-stu-id="ffb56-128">**To get Audio Conferencing and Communication Credits:**</span></span>
+
+1. <span data-ttu-id="ffb56-129">Accedi all'Interfaccia di amministrazione di Office 365.</span><span class="sxs-lookup"><span data-stu-id="ffb56-129">Sign in to the Office 365 admin center.</span></span>
+
+2. <span data-ttu-id="ffb56-130">Vai su **Fatturazione** > **Abbonamenti** > **Componenti aggiuntivi** > **Acquista componenti aggiuntivi**.</span><span class="sxs-lookup"><span data-stu-id="ffb56-130">Go to **Billing** > **Subscriptions** > **Add-ons** > **Buy add-ons**.</span></span>
+
+   ![Per acquistare una licenza per un componente aggiuntivo, scegli Acquista componenti aggiuntivi.](../../images/fc4d7506-4ee9-4e39-be54-0622edffb77a.png)
+
+3. <span data-ttu-id="ffb56-132">Ora potrai vedere i prezzi e acquistare Audioconferenza e impostare il Credito per la comunicazione.</span><span class="sxs-lookup"><span data-stu-id="ffb56-132">You'll now see the prices and option to buy Audio Conferencing, and setup Communications Credits.</span></span>
+
+<span data-ttu-id="ffb56-133">**Per ottenere un Sistema telefonico e un Piano di chiamata:**</span><span class="sxs-lookup"><span data-stu-id="ffb56-133">**To get Phone System and a Calling Plan:**</span></span>
+
+1. <span data-ttu-id="ffb56-134">Passa al piano E1 o E3.</span><span class="sxs-lookup"><span data-stu-id="ffb56-134">Switch to the E1 or E3 plan.</span></span>
+
+2. <span data-ttu-id="ffb56-135">Vai a Interfaccia di amministrazione di Office 365 > **Fatturazione** > **Abbonamenti**.</span><span class="sxs-lookup"><span data-stu-id="ffb56-135">Go to Office 365 admin center > **Billing** > **Subscriptions**.</span></span>
+
+3. <span data-ttu-id="ffb56-136">Seleziona **Componenti aggiuntivi**.</span><span class="sxs-lookup"><span data-stu-id="ffb56-136">Choose **Add-ons**.</span></span> <span data-ttu-id="ffb56-137">Ora potrai vedere i prezzi per Sistema telefonico e l'opzione per acquistarlo.</span><span class="sxs-lookup"><span data-stu-id="ffb56-137">You'll now see the prices for Cloud PBX, and the option to buy it.</span></span>
+
+4. <span data-ttu-id="ffb56-138">Una volta acquistata una licenza di **Sistema telefonico**, vedrai i prezzi e l'opzione per acquistare un Piano di chiamata.</span><span class="sxs-lookup"><span data-stu-id="ffb56-138">After you buy a Cloud PBX license, you'll see the price and option to buy a PSTN Calling plan.</span></span>
