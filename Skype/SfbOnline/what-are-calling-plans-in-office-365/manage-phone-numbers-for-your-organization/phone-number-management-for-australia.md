@@ -1,5 +1,5 @@
 ---
-title: Gestione numerica di telefono per Australia
+title: Gestione dei numeri di telefono per l'Australia
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,35 +18,36 @@ localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: Utilizzare questa tabella per trovare informazioni sul recupero e gestione dei numeri di telefono in Australia per Skype per Business Online e Microsoft Teams.
-ms.openlocfilehash: 7ed10dde6866016f9689cba7f1f0e014e87c4d76
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
-ms.translationtype: MT
+description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Australia per Skype for Business online e Microsoft Teams.
+ms.openlocfilehash: 296936f84d215d7b3a917ff2ecc4ddea15f483c4
+ms.sourcegitcommit: 08c6fe9955ea61dd9cded2210ae0153e06bdd8a6
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23244774"
 ---
-# <a name="phone-number-management-for-australia"></a>Gestione numerica di telefono per Australia
+# <a name="phone-number-management-for-australia"></a>Gestione dei numeri di telefono per l'Australia
 > [!IMPORTANT]
-> Australia è disponibile solo per preview e anticipati adottato clienti. Per ulteriori informazioni, vedere [Telstra la chiamata di Office 365](http://aka.ms/TelstraVoicePlan). 
+> L'Australia è disponibile solo per i clienti Preview e per i primi clienti. Per ulteriori informazioni, consulta [Chiamate Telstra per Office 365](https://aka.ms/TelstraVoicePlan).
 
-In Australia, si ha stretto una partnership con Telstra per l'acquisto e la preparazione dei piani di chiamata. Telstra vendere tariffe di chiamate e fornire il supporto per la gestione di numeri di telefono per i numeri utente e di servizio per gli operatori automatici di e le code di chiamata. Tuttavia, i numeri di servizio e le licenze per le conferenze Audio saranno ancora essere vendute e gestite in Office 365.
+In Australia abbiamo stretto una collaborazione con Telstra per l'acquisto e il provisioning di piani di chiamata. Telstra venderà i piani di chiamata e fornirà l'assistenza per la gestione dei numeri di telefono sia per i numeri utente che di servizio per gli operatori automatici e le code di chiamata. I numeri di servizio e le licenze per Audioconferenza saranno però ancora venduti e gestiti tramite Office 365.
 
-Per ulteriori informazioni sulla [Chiamata Telstra per Office 365](http://aka.ms/TelstraVoicePlan).
+Per ulteriori informazioni, consulta [Chiamate Telstra per Office 365](https://aka.ms/TelstraVoicePlan).
 
-Utilizzare questa tabella per trovare informazioni sul recupero e gestione dei numeri di telefono in Australia per Skype per Business Online e Microsoft Teams. 
+Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Australia per Skype for Business online e Microsoft Teams.
 
 Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).
-  
+
 |**Cosa vuoi fare?**|**Segui queste istruzioni e scarica i moduli corretti**|
 |:-----|:-----|
-|Ottenere numeri di telefono nuovo utente per la chiamata dei piani in Australia.   <br/> |[La chiamata a Telstra per Office 365](http://aka.ms/TelstraVoicePlan) per contattare nuovi numeri di telefono per gli utenti. Si aggiungerà tali numeri nell'organizzazione in modo che è possibile assegnarli agli utenti. <br/> 
-|È possibile ottenere nuovi numeri di telefono del servizio che possono essere utilizzati con operatori automatici di sistema telefonico e chiamare code per Australia. <br/> |Per nuovi numeri di telefono, contattare [Telstra la chiamata di Office 365](http://aka.ms/TelstraVoicePlan) . Si aggiungerà tali numeri nell'organizzazione in modo che è possibile assegnare loro i operatori automatici e chiamare code. <br/>|
-|Ottenere numeri di telefono nuovo servizio per le conferenze Audio in Australia.   <br/> |[Rimanete Contattaci](mailto:ptnapac@microsoft.com).|
-|È necessario ottenere numeri di telefono trasferiti a Office 365 per gli operatori automatici e le code di chiamata.  <br/> |Contattare [Telstra la chiamata di Office 365](http://aka.ms/TelstraVoicePlan) per trasferire i numeri di telefono. L'organizzazione e quindi viene aggiunta tali numeri.  <br/> |
-|È necessario ottenere numeri di telefono trasferiti a Office 365 per l'utilizzo con servizi di conferenza Audio.  |[Contattaci](mailto:ptnapac@microsoft.com) |
-|Modifica emergenza gestione assegnati a utenti che hanno un numero di telefono pianificare la chiamata. |Contattare [Telstra la chiamata di Office 365](http://aka.ms/TelstraVoicePlan) per apportare modifiche di emergenza. È possibile aggiornare le informazioni automaticamente.|
-|È necessario modificare il numero di un utente a un numero di servizio. |Questo tipo di servizio non è supportato in Australia. 
-   
+|Ottenere nuovi numeri di telefono per piani di chiamata in Australia.   <br/> |Contatta [Chiamate Telstra per Office 365](https://aka.ms/TelstraVoicePlan) per ottenere nuovi numeri di telefono per gli utenti. Questi numeri saranno aggiunti all'organizzazione in modo che potrai assegnarli ai tuoi utenti. <br/>
+|Ottenere nuovi numeri di telefono di servizio utilizzabili con operatori automatici e code di chiamata di sistemi telefonici per l'Australia. <br/> |Contatta [Chiamate Telstra per Office 365](https://aka.ms/TelstraVoicePlan) per ottenere nuovi numeri di telefono. Questi numeri saranno aggiunti all'organizzazione in modo che potrai assegnarli ai tuoi operatori automatici e alle code di chiamata. <br/>|
+|Ottenere nuovi numeri di telefono di servizio per Audioconferenza in Australia.   <br/> |[Ti invitiamo a contattarci](mailto:ptnapac@microsoft.com).|
+|Trasferire numeri di telefono a Office 365 per utenti, operatori automatici e code di chiamata.  <br/> |Contatta [Chiamate Telstra per Office 365](https://aka.ms/TelstraVoicePlan) per trasferire i numeri di telefono. Questi numeri saranno aggiunti all'organizzazione.  <br/> |
+|Trasferire numeri di telefono a Office 365 da utilizzare con Audioconferenza.  |[Ti invitiamo a contattarci](mailto:ptnapac@microsoft.com) |
+|Cambiare l'indirizzamento di emergenza assegnato a utenti che hanno un numero di telefono con un Piano per chiamate. |Contatta [Chiamate Telstra per Office 365](https://aka.ms/TelstraVoicePlan) per apportare modifiche all'indirizzo di emergenza. Loro aggiorneranno le informazioni per te.|
+|Cambiare un numero di utente in numero di servizio. |Questo tipo di servizio non è supportato in Australia.
+
 ## <a name="related-topics"></a>Argomenti correlati
 [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
