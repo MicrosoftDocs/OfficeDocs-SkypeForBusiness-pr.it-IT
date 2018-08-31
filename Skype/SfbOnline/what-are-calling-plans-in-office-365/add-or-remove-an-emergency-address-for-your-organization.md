@@ -19,40 +19,41 @@ localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: 'Learn how to add an emergency address to your Skype for Business account. '
-ms.openlocfilehash: 48091ec9a3b5d689c8ecc72947712404bee2ecd2
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
-ms.translationtype: MT
+description: 'Istruzioni su come aggiungere o rimuovere un indirizzo di emergenza per il tuo account di Skype for Business. '
+ms.openlocfilehash: df0a820b49db88efffa5d040741d6628c4e0dc47
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23780920"
 ---
-# <a name="add-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione
+# <a name="add-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere o rimuovere un indirizzo di emergenza per la tua organizzazione
 
-Un indirizzo di emergenza deve essere associato a un numero di telefono, ma in questo caso può variare tra i paesi. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito, è necessario associare un indirizzo di emergenza per il numero di telefono quando si desidera ottenere i numeri di telefono da Office 365 o il trasferimento di numeri di telefono da provider di servizi corrente.
+Un indirizzo di emergenza deve essere associato a un numero di telefono, ma questa regola può variare tra Paesi/aree geografiche Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito, è necessario associare un indirizzo di emergenza per il numero di telefono quando si desidera ottenere i numeri di telefono da Office 365 o il trasferimento di numeri di telefono da provider di servizi corrente.
   
-Indipendentemente dalla quale paese/area geografica è in corso, è possibile aggiungere una posizione o posizioni in caso di emergenza indirizzi o rimuovere un indirizzo di emergenza. A seconda del numero di posizioni fisiche all'interno dell'organizzazione, è possibile creare tali per edifici, piani e uffici. Vedere [quali sono posizioni di emergenza, indirizzi e il routing delle chiamate?](what-are-emergency-locations-addresses-and-call-routing.md) per ulteriori informazioni.
+Indipendentemente dal Paese/area geografica in cui ti trovi, è possibile aggiungere una o più posizioni ad un indirizzo di emergenza oppure rimuovere l'indirizzo di emergenza. A seconda del numero di posizioni fisiche dell'organizzazione, puoi creare posizioni per edifici, piani e uffici. Consulta [Quali sono le posizioni di emergenza, gli indirizzi e il routing delle chiamate?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing) per ulteriori informazioni.
   
-Per informazioni su come ottenere un piano di chiamata e sul costo, vedere [Skype di licenza di componente aggiuntivo Business e i team di Microsoft](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
+Per informazioni su come ottenere Piani di chiamata e il relativo costo, consulta [Licenze per componenti aggiuntivi per Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
-## <a name="to-add-an-emergency-address"></a>Per aggiungere un indirizzo per gli interventi di emergenza
+## <a name="to-add-an-emergency-address"></a>Per aggiungere un indirizzo di emergenza
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai su **Interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
-3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**e quindi fare clic sul pulsante **Aggiungi nuovo indirizzo** .
+3. Nella barra di navigazione sinistra, vai su VocePosizioni di emergenza e quindi fai clic sul pulsante Aggiungi nuovo indirizzo.** **  >  ** ** ** **
     
     > [!Important]
-    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+    > Per visualizzare l'opzione **Voce** nella barra di navigazione sinistra dell'interfaccia di amministrazione di Skype for Business, è necessario acquistare almeno una **Licenza Enterprise E5**, una licenza per il componente aggiuntivo **Sistema telefonico** o una licenza per il componente aggiuntivo **Audioconferenza**.
     
-4. Nel riquadro azioni, **Nuovo indirizzo**, immettere le informazioni richieste nelle caselle.
+4. Nel riquadro Azioni, su **Nuovo indirizzo**, immetti le informazioni richieste nelle caselle.
     
-5. Dopo avere immesso tutte le informazioni per l'indirizzo, fare clic su **convalida**.
+5. Dopo aver inserito tutte le informazioni per l'indirizzo, fai clic su **Convalida**.
     
     > [!IMPORTANT]
     > La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione dell'indirizzo. È possibile che un indirizzo per gli interventi di emergenza parzialmente corretto, in cui hai ad esempio digitato erroneamente il nome della città, superi comunque la fase di convalida. In caso di convalida nonostante gli errori di ortografia, la combinazione del nome della città errato e delle altre parti corrette dell'indirizzo fornisce informazioni sufficienti per instradare la chiamata al centro di emergenza appropriato. 
   
-    Se l'indirizzo non può essere convalidato, è possibile inviare una richiesta di convalida manuale facendo clic su **Invia una richiesta di convalida** se si sta tentando di convalidare un indirizzo negli Stati Uniti o fare clic su **Apri una richiesta di assistenza per ottenere assistenza per la convalida dell'indirizzo** se si è all'esterno di Stati Uniti.
+    Se l'indirizzo non può essere convalidato, è possibile inviare una richiesta di convalida manuale facendo clic su **Invia una richiesta di convalida** se si sta tentando di convalidare un indirizzo negli Stati Uniti, o facendo clic su **Apri una richiesta di assistenza per ottenere la convalida dell'indirizzo** se si è al di fuori degli Stati Uniti.
     
 6. Dopo la convalida dell'indirizzo, fai clic su **Salva**.
     
@@ -60,19 +61,19 @@ Per informazioni su come ottenere un piano di chiamata e sul costo, vedere [Skyp
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai su **Interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
-3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**, selezionare l'indirizzo che si desidera eliminare e nel riquadro azioni fare clic su **Elimina**.
+3. Nella barra di navigazione sinistra, vai su **Voce** > **Posizioni di emergenza**, seleziona l'indirizzo che desideri eliminare e nel riquadro Azioni fai clic su **Elimina**.
     
     > [!IMPORTANT]
-    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+    > Per visualizzare l'opzione **Voce** nella barra di navigazione sinistra dell'interfaccia di amministrazione di Skype for Business, è necessario acquistare almeno una **Licenza Enterprise E5**, una licenza per il componente aggiuntivo **Sistema telefonico** o una licenza per il componente aggiuntivo **Audioconferenza**.
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?](what-are-emergency-locations-addresses-and-call-routing.md)
+[Che cosa sono le posizioni e gli indirizzi di emergenza, e il call routing?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing)
 
-[Gestire i numeri di telefono per la propria organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+[Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)
 
-[Termini e condizioni per le chiamate al numero di emergenza](../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 

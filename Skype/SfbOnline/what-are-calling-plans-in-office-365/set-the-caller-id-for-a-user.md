@@ -19,21 +19,21 @@ localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: Il sistema telefonico in Office 365 fornisce un ID chiamante predefinito che è il numero di telefono assegnato dell'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. È possibile ulteriori informazioni su come utilizzare l'ID del chiamante all'interno dell'organizzazione passando come ID chiamante utilizzare all'interno dell'organizzazione.
-ms.openlocfilehash: a48edfd6f0b6967f1f9c628b415f781b8c4832c7
-ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
-ms.translationtype: MT
+description: Il Sistema telefonico in Office 365 permette di usare un ID chiamante che è il numero di telefono assegnato all'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. Per sapere come usare l'ID chiamante nella tua organizzazione, visita Come usare l'ID chiamante nella tua organizzazione.
+ms.openlocfilehash: cf6f1aab6f865a87186b7acb793e5aa7829907aa
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "19500854"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23780818"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
-Il sistema telefonico in Office 365 fornisce un ID chiamante predefinito che è il numero di telefono assegnato dell'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. È possibile ulteriori informazioni su come utilizzare l'ID chiamante all'interno dell'organizzazione da utilizzare [come ID chiamante utilizzare all'interno dell'organizzazione](how-can-caller-id-be-used-in-your-organization.md).
+Il Sistema telefonico in Office 365 permette di usare un ID chiamante che è il numero di telefono assegnato all'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. Per sapere come usare l'ID chiamante nella tua organizzazione, visita [Come usare l'ID chiamante nella tua organizzazione](how-can-caller-id-be-used-in-your-organization.md).
   
 > [!TIP]
-> Non è possibile bloccare le chiamate in arrivo attualmente in Skype Business online. 
+> Al momento non è possibile bloccare le chiamate in arrivo in Skype for Business online. 
   
-Ci sono impostazioni che possono essere modificate:
+È possibile cambiare alcune impostazioni:
   
 > [!NOTE]
 > Questa funzione **non** deve essere usata per le organizzazioni in sede con Lync o Skype for Business Server.
@@ -41,11 +41,11 @@ Ci sono impostazioni che possono essere modificate:
 - **Cambiare l'ID chiamante in uscita** È possibile sostituire l'ID chiamante di un utente, che per impostazione predefinita è il suo numero di telefono, con un altro numero di telefono. Per esempio, è possibile cambiare l'ID chiamante dell'utente dal suo numero di telefono a un numero principale usato dall'azienda o cambiare l'ID linea chiamante dal suo numero di telefono al numero principale dell'ufficio legale. È possibile cambiare l'ID chiamante in qualsiasi numero di **servizio** online o in sede (a tariffa o numero verde).
     
     > [!NOTE]
-    > Se vuoi utilizzare il parametro  _Service_, devi specificare un numero di servizio valido.
+    > Per utilizzare il parametro  _Servizio_, è necessario specificare un numero di servizio valido.
   
-- **Blocca l'ID chiamante in uscita** È possibile bloccare l'ID chiamante in uscita vengano inviate in chiamate PSTN in uscita dell'utente. In questo modo il suo numero non verrà visualizzato sul telefono di una persona che chiama.
+- **Bloccare l'ID chiamante in uscita** È possibile bloccare l'invio dell'ID chiamante in uscita nelle chiamate PSTN in uscita di un utente. In questo modo il suo numero non verrà visualizzato sul telefono di una persona che riceve la chiamata.
     
-- **Blocca l'ID chiamante in ingresso** È possibile bloccare un utente di ricevere l'ID chiamante in tutte le chiamate PSTN in arrivo.
+- **Bloccare l'ID chiamante in entrata** È possibile impedire all'utente di ricevere l'ID chiamante su tutte le chiamate PSTN in entrata.
     
 > [!IMPORTANT]
 > Le chiamate d'emergenza vedranno sempre il numero di telefono dell'utente (ID chiamante). 
@@ -54,10 +54,10 @@ Per impostazione predefinita, tutte queste impostazioni dell'ID chiamante sono *
   
 Per ulteriori informazioni su queste impostazioni e su come usarle, visita [Come usare l'ID chiamante nella tua organizzazione](how-can-caller-id-be-used-in-your-organization.md).
   
-## <a name="set-your-caller-id-policy-settings"></a>Impostare il criterio ID chiamante
+## <a name="set-your-caller-id-policy-settings"></a>Impostazioni dei criteri del tuo ID chiamante
 
 > [!NOTE]
-> Per tutte le impostazioni di ID chiamante in Skype Business online, è necessario utilizzare Windows PowerShell e non è **possibile utilizzare** **Skype per interfaccia di amministrazione di Business**. 
+> Per tutte le impostazioni dell'ID chiamante in Skype for Business online è necessario utilizzare Windows PowerShell e **non è possibile** utilizzare l' **interfaccia di amministrazione di Skype for Business**. 
   
 ### <a name="verify-and-start-windows-powershell"></a>Verificare e avviare Windows PowerShell
 
@@ -98,49 +98,49 @@ Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modul
   Import-PSSession $session
   ```
 
-Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
+Per ulteriori informazioni sull'avvio di Windows PowerShell, consultare [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connessione a Skype for Business online con Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
     
-### <a name="see-all-of-the-caller-id-policy-settings-in-your-organization"></a>Consultare tutte le impostazioni dei criteri ID chiamante nella propria organizzazione
+### <a name="see-all-of-the-caller-id-policy-settings-in-your-organization"></a>Consultare tutte le impostazioni dei criteri dell'ID chiamante nella propria organizzazione
 
-- Per visualizzare tutte le impostazioni di criteri di ID chiamante nell'organizzazione, eseguire:
+- Per visualizzare tutte le impostazioni dei criteri dell'ID chiamante nella propria organizzazione, eseguire:
 
   ```
   Get-CsCallingLineIdentity |fl
   ```
-Vedere ulteriori esempi e informazioni dettagliate per [Get-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793856.aspx).
+Ulteriori esempi e dettagli per [Get-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793856.aspx).
     
-### <a name="create-a-new-caller-id-policy-for-your-organization"></a>Creare un nuovo criterio ID chiamante per la propria organizzazione
+### <a name="create-a-new-caller-id-policy-for-your-organization"></a>Creare un nuovo criterio dell'ID chiamante per la propria organizzazione
 
 
-- Per creare un nuovo criterio di ID chiamante che imposta l'ID chiamante anonimi, eseguire:
+- Per creare un nuovo criterio dell'ID chiamante per la propria organizzazione che imposti l'ID chiamante in modo anonimo, eseguire:
     
   ```
   New-CsCallingLineIdentity  -Identity Anonymous -Description "Anonymous policy" -CallingIDSubstitute Anonymous -EnableUserOverride $false
   ```
   > [!NOTE]  
-  > In tutti i casi, il campo "Servizio Number" non dovrebbe includere un iniziale "+".
+  > In qualsiasi caso, il campo "Numero di servizio" non deve iniziare con un "+".
 
-  Vedere ulteriori esempi e informazioni dettagliate per [CsCallingLineIdentity New](https://technet.microsoft.com/en-us/library/mt793855.aspx).
+  Ulteriori esempi e dettagli per [New-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793855.aspx).
     
-- Per applicare il nuovo criterio creato a Marmo Amos, eseguire:
+- Per applicare il nuovo criterio creato ad Amos Marble, eseguire:
     
   ```
    Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName Anonymous
   ```
   Altre informazioni sul cmdlet [Grant-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793857.aspx).
     
-Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793854.aspx) per apportare modifiche al criterio esistente e quindi utilizzare il cmdlet [Grant-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793857.aspx) per applicare le impostazioni per gli utenti.
+Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793854.aspx) per apportare modifiche al criterio esistente, quindi utilizzare il cmdlet [Grant-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793857.aspx) per applicare le impostazioni ai propri utenti.
   
-### <a name="set-it-so-the-incoming-caller-id-is-blocked"></a>Impostare in modo che l'ID chiamante in entrata venga bloccato
+### <a name="set-it-so-the-incoming-caller-id-is-blocked"></a>Impostare il blocco dell'ID chiamante in entrata
 
-- Per bloccare l'ID chiamante in arrivo, eseguire:
+- Per bloccare l'ID chiamante in entrata, eseguire:
     
   ```
   Set-CsCallingLineIdentity  -Identity "Block Incoming" -BlockIncomingPstnCallerID $true -EnableUserOverride $true
   ```
-  Vedere ulteriori esempi e informazioni dettagliate per [Set-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793854.aspx).
+  Ulteriori esempi e dettagli per [Set-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793854.aspx).
     
-- Per applicare l'impostazione del criterio creato a un utente all'interno dell'organizzazione, eseguire:
+- Per applicare l'impostazione dei criteri creata a un utente dell'organizzazione, eseguire:
     
   ```
   Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName "Block Incoming"
@@ -161,11 +161,11 @@ Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName $nul
 ```
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 
-- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell è incentrato sulla gestione degli utenti e su quello che gli utenti sono o non sono autorizzati a fare. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
-  - [Sei motivi per cui è consigliabile usare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Sei motivi per cui è consigliabile usare Windows PowerShell per gestire Office 365 ](https://go.microsoft.com/fwlink/?LinkId=525041)
     
 - Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Office 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
     
@@ -175,18 +175,17 @@ Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName $nul
     
   - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## <a name="related-topics"></a>See also
-[Domande comuni sul trasferimento dei numeri di telefono](transferring-phone-numbers-common-questions.md)
+  
+ ## <a name="related-topics"></a>Argomenti correlati
+[Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)
 
-[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](/microsoftteams/different-kinds-of-phone-numbers-used-for-calling-plans)
 
-[Gestire i numeri di telefono per la propria organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+[Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)
 
 [Ulteriori informazioni su ID linea chiamante e nome del chiamante](../what-are-calling-plans-in-office-365/more-about-calling-line-ID-and-calling-party-name.md)
 
-[Termini e condizioni per le chiamate al numero di emergenza](../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
-  
- 
  

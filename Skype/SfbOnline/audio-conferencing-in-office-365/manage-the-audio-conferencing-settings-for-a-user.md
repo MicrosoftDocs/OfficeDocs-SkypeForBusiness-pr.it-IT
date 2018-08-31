@@ -1,5 +1,5 @@
 ---
-title: Gestire le impostazioni di conferenza Audio di un utente in Skype Business online
+title: Gestire le impostazioni di Audioconferenza per un utente di Skype for Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,51 +18,51 @@ localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: "Come un amministratore di Office 365, è possibile modificare Skype per le impostazioni di conferenza Audio Online aziendali, ad esempio il provider, a pagamento predefinito o numero verde, ID conferenza o PIN, per un singolo utente nell'organizzazione. "
-ms.openlocfilehash: ed8038955174a19e7861c872e1a095644288e6c2
-ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
-ms.translationtype: MT
+description: "In qualità di amministratore di Office 365, puoi modificare le impostazioni di Audioconferenza di Skype for Business online, ad esempio il provider, il numero predefinito a pagamento o gratuito, l'ID conferenza o il PIN per un singolo utente nell'organizzazione. "
+ms.openlocfilehash: 11ab14b3ebba54e1af8125c2d2f6c2acbd0730b7
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "22490526"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23779056"
 ---
-# <a name="manage-the-audio-conferencing-settings-for-a-user-in-skype-for-business-online"></a>Gestire le impostazioni di conferenza Audio di un utente in Skype Business online
+# <a name="manage-the-audio-conferencing-settings-for-a-user-in-skype-for-business-online"></a>Gestire le impostazioni di Audioconferenza per un utente di Skype for Business online
 
 > [!Note]
-> Se si desidera gestire le impostazioni utente in Teams Microsoft, vedere [gestire le impostazioni di conferenza Audio di un utente nel team di Microsoft](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-a-user-in-teams).
+> Se desideri gestire le impostazioni utente di Microsoft Teams, consulta la pagina [Gestire le impostazioni di Audioconferenza di un utente in Microsoft Teams](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-a-user-in-teams).
 
-Come un amministratore di Office 365, è possibile modificare le impostazioni di conferenza Audio, ad esempio il provider, a pagamento predefinito o numero verde, ID conferenza o PIN, per un singolo utente nell'organizzazione. Se si desidera modificare le impostazioni per l'organizzazione, vedere [gestire le impostazioni di conferenze Audio per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization.md).
+In qualità di amministratore di Office 365, puoi modificare le impostazioni di Audioconferenza, ad esempio il provider, il numero predefinito a pagamento o gratuito, l'ID conferenza o il PIN per un singolo utente nell'organizzazione. Se desideri modificare le impostazioni per l'organizzazione, consulta la pagina [Gestire le impostazioni di Audioconferenza per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization.md).
 
  
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedi a Office 365 con l'account aziendale o scolastico.
     
-2. Scegliere **Admin Center** > **Skype per le aziende**.
+2. Scegli **Interfaccia di amministrazione** > **Skype for Business**.
     
-3. Skype per interfaccia di amministrazione di Business, scegliere **utenti**.
+3. Nell'interfaccia di amministrazione di Skype for Business scegli **Utenti**.
     
-4. Selezionare l'utente per il quale si desidera gestire le impostazioni e quindi nel riquadro azioni fare clic su **Modifica**![verrà visualizzata l'icona Modifica](../images/4d8bea48-be68-4e0e-a54c-73decf7ea4ec.png).
+4. Seleziona l'utente per il quale vuoi gestire le impostazioni, quindi nel riquadro Azioni fai clic su **Modifica**![Mostra l'icona Modifica](../images/4d8bea48-be68-4e0e-a54c-73decf7ea4ec.png).
     
-5. Scegliere **audioconferenze** nel riquadro di spostamento sinistro e quindi nella pagina **proprietà** dell'utente, modificare uno dei seguenti:
+5. Scegli **Audioconferenza** nel riquadro di spostamento sinistro, quindi nella pagina **Proprietà** dell'utente, modifica i seguenti campi:
     
 |**Impostazione**|**Descrizione**|
 |:-----|:-----|
-|**Nome del provider** <br/> |Scegliere il provider dall'elenco.  <br/><br/> **Nota:** Le altre impostazioni in questa tabella sono applicano solo se si seleziona Microsoft come provider di servizi di conferenza audio.           |
-|**Numero verde predefinito** (obbligatorio) <br/> |Per un provider di terze parti, questi numeri di telefono sono forniti dal provider di servizi di conferenza audio. Se l'utente sta utilizzando Microsoft come provider di servizi di conferenza audio, queste saranno numeri che vengono impostati su ponte per conferenze audio. Formattare i numeri che si desidera che vengano visualizzate in Skype per Business e Microsoft Teams convocazioni di riunione.  <br/> |
-|**Umero numero verde predefinito** <br/> |Per un provider di terze parti, questi numeri di telefono sono forniti dal provider di servizi di conferenza audio. Se l'utente sta utilizzando Microsoft come provider di servizi di conferenza audio, queste saranno numeri che vengono impostati su ponte per conferenze audio. Formattare i numeri che si desidera che vengano visualizzate in Skype per Business e Microsoft Teams convocazioni di riunione.  <br/> |
-|**Consentire l'utilizzo di numeri verdi nel bridge Microsoft dell'organizzazione di partecipare alle riunioni di questo utente** <br/> |Selezionare questa opzione se si desidera consentire all'utente di numeri verdi per partecipare alle riunioni.  <br/> |
-|**Inviare informazioni conferenza tramite posta elettronica** <br/> |Fare clic su questo collegamento solo se si desidera inviare immediatamente un messaggio di posta elettronica all'utente con il proprio ID e il telefono numero di conferenza. (Questo messaggio di posta elettronica non include il PIN). Vedere [inviare un messaggio di posta elettronica a un utente con le loro informazioni di conferenze Audio](send-an-email-to-a-user-with-their-dial-in-information.md).  <br/> |
-|**ID conferenza** <br/> |Selezionare **Reimposta** se si desidera reimpostare l'ID conferenza per utente. Per ulteriori informazioni, vedere [reimpostare un ID conferenza per un utente](reset-a-conference-id-for-a-user.md).  <br/> |
-|**PIN** <br/> |Selezionare **Reimposta** se è necessario reimpostare il PIN dell'utente. Per ulteriori informazioni, vedere [reimpostare il PIN per le conferenze Audio](reset-the-audio-conferencing-pin.md).  <br/> |
-|**Consentire ai chiamanti non autenticati di essere il prima persone a una riunione** <br/> |Selezionare questa opzione per consentire ai chiamanti non autenticati di essere la prima di partecipare alle riunioni.  <br/> |
-|**Restrizioni alla connessione-outs dalle riunioni di questo utente** <br/> |Se si desidera limitare dial-outs a solo o se si desidera impedire a tutti i dial-outs dalle riunioni, selezionare un'opzione nell'elenco.  <br/> |
+|**Nome del provider** <br/> |Scegli il provider dall'elenco.  <br/><br/> **Nota:** le altre impostazioni di questa tabella si applicano solo se selezioni Microsoft come provider di servizi di audioconferenza.           |
+|**Numero a pagamento predefinito** (obbligatorio) <br/> |Per i provider di terze parti, questi numeri di telefono sono quelli forniti dal provider di servizi di audioconferenza. Se l'utente sta utilizzando Microsoft come provider di servizi di audioconferenza, questi saranno i numeri impostati sul ponte per audioconferenza. Formatta i numeri come desideri che vengano visualizzati negli inviti alle riunioni di Skype for Business e Microsoft Teams.  <br/> |
+|**Numero gratuito predefinito** <br/> |Per i provider di terze parti, questi numeri di telefono sono quelli forniti dal provider di servizi di audioconferenza. Se l'utente sta utilizzando Microsoft come provider di servizi di audioconferenza, questi saranno i numeri impostati sul ponte per audioconferenza. Formatta i numeri come desideri che vengano visualizzati negli inviti alle riunioni di Skype for Business e Microsoft Teams.  <br/> |
+|**Consenti l'utilizzo di numeri gratuiti nel ponte Microsoft della tua organizzazione per partecipare alle riunioni di questo utente** <br/> |Seleziona questa opzione se desideri consentire all'utente l'utilizzo di numeri gratuiti per partecipare alle riunioni.  <br/> |
+|**Invia informazioni sulla conferenza tramite posta elettronica** <br/> |Fai clic su questo collegamento solo se desideri inviare immediatamente un messaggio di posta elettronica all'utente con il suo ID conferenza e numero di telefono. (Questo messaggio di posta elettronica non include il PIN). Consulta [Inviare un messaggio di posta elettronica a un utente con le informazioni di Audioconferenza](send-an-email-to-a-user-with-their-dial-in-information.md).  <br/> |
+|**ID conferenza** <br/> |Seleziona **Reimposta** se desideri reimpostare l'ID conferenza per l'utente. Per ulteriori informazioni, consulta [Reimpostare un ID conferenza per un utente](reset-a-conference-id-for-a-user.md).  <br/> |
+|**PIN** <br/> |Seleziona **Reimposta** se desideri reimpostare il PIN per l'utente. Per ulteriori informazioni, consulta [Reimpostare il PIN per Audioconferenza](reset-the-audio-conferencing-pin.md).  <br/> |
+|**Consenti ai chiamanti non autenticati di essere le prime persone presenti a una riunione** <br/> |Seleziona questa opzione per consentire ai chiamanti non autenticati di essere i primi a partecipare alle riunioni.  <br/> |
+|**Restrizioni sulla disconnessione dalle riunioni di questo utente** <br/> |Seleziona un'opzione dell'elenco se vuoi impedire solo le disconnessioni nazionali o se vuoi impedirle tutte dalle riunioni.  <br/> |
   
-![Mostra la pagina delle proprietà di conferenze Audio per un utente](../images/228550f7-92be-416d-9ab1-7c2ef54dd4e6.png)
+![Mostra la pagina Proprietà di Audioconferenza per un utente](../images/228550f7-92be-416d-9ab1-7c2ef54dd4e6.png)
 
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 
-[Gestire le impostazioni di audioconferenza per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization.md)
+[Gestire le impostazioni di Audioconferenza per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization.md)
 
-[Domande ricorrenti sulle audioconferenze](audio-conferencing-common-questions.md)
+[Domande ricorrenti su Audioconferenza](/MicrosoftTeams/audio-conferencing-common-questions)
