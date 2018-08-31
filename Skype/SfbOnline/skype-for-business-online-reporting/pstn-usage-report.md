@@ -18,12 +18,12 @@ ms.custom:
 - Reporting
 description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo di Audio conferenza PSTN compreso il costo della chiamata in modo che è possibile acquisire familiarità con i dati di utilizzo e chiamare fatturazione dettagli per determinare l'utilizzo all'interno dell'organizzazione.
 search.appverid: MET150
-ms.openlocfilehash: 3c2148b54c04950867feef1844a4ca1595f708e5
-ms.sourcegitcommit: 1530670628e8645b9f8e2fc2786dddd989a9e908
+ms.openlocfilehash: 562911b6ceb4751a1a808d4e8f63ddaddddfad99
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "20246489"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23779185"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -31,7 +31,7 @@ Nuovo Skype per area Business Admin Center **report** Mostra è chiamante e audi
   
 Consultare la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per i report più disponibili.
   
-La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate su attività inclusa la chiamata a utilizzo all'interno dell'organizzazione. Queste informazioni sono molto utili quando l'analisi dei, pianificazione e l'esecuzione di altre business le decisioni per l'organizzazione e per la configurazione di [comunicazioni titoli di coda](../skype-for-business-and-microsoft-teams-add-on-licensing/what-are-communications-credits.md)
+La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate su attività inclusa la chiamata a utilizzo all'interno dell'organizzazione. Queste informazioni sono molto utili quando l'analisi dei, pianificazione e l'esecuzione di altre business le decisioni per l'organizzazione e per la configurazione di [comunicazioni titoli di coda](/microsoftteams/what-are-communications-credits)
   
 > [!NOTE]
 > È possibile visualizzare tutti i report di Skype for Business quando si accede come amministratori nell'interfaccia di amministrazione di Office 365. 
