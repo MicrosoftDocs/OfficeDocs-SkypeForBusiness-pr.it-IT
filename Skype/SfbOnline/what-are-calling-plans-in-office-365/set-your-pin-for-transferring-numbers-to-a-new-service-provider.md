@@ -1,5 +1,5 @@
 ---
-title: Impostare il PIN per il trasferimento di numeri in un nuovo provider di servizi
+title: Configurare il PIN per il trasferimento numeri a un nuovo provider di servizi
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,57 +19,60 @@ localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: Per trasferire o delle porte numeri di telefono da Skype Business online in un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di un numero di telefono fuori delle porte.
-ms.openlocfilehash: 30eaed1f5ec139f82dce75cfec77c873b8f491de
-ms.sourcegitcommit: 2c084358844f02fbf7953f2ea49ed6d710cbf06f
-ms.translationtype: MT
+description: Per trasferire o esportare numeri di telefono da Skype for Business Online  in un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di esportazione di un numero di telefono.
+ms.openlocfilehash: 4dc60b489a6b382df5764f0c011f716f36a17cd8
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23779142"
 ---
-# <a name="set-your-pin-for-transferring-numbers-to-a-new-service-provider"></a>Impostare il PIN per il trasferimento di numeri in un nuovo provider di servizi
+# <a name="set-your-pin-for-transferring-numbers-to-a-new-service-provider"></a>Configurare il PIN per il trasferimento numeri a un nuovo provider di servizi
 
-Per il trasferimento o *dalla porta fuori* numeri di telefono da Skype Business online in un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di un numero di telefono fuori delle porte. 
+Per il trasferimento o *l'esportazione* di numeri di telefono da Skype for Business Online a un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di esportazione di un numero di telefono. 
   
 > [!IMPORTANT]
-> Una porta fuori PIN viene utilizzata solo per le organizzazioni negli Stati Uniti. 
+> Un PIN esportato viene utilizzato solo per le organizzazioni negli Stati Uniti. 
   
-Per ulteriori informazioni sul trasferimento e portabilità/esclusione numeri di telefono, vedere [trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md) .
+Per ulteriori informazioni sul trasferimento e la portabilità/esclusione di numeri di telefono, consultare [Trasferire i numeri di telefono a Office 365](/microsoftteams/transfer-phone-numbers-to-office-365).
   
-Ecco alcune informazioni specifiche sul PIN è necessario conoscere:
+Ecco alcune informazioni specifiche sul PIN che è necessario conoscere:
   
-- Se non viene impostato un PIN, non sarà in grado di trasferimento o dalla porta numeri telefonici da Skype Business online.
+- Se non viene impostato un PIN, non sarà possibile o il trasferimento o la portabilità di numeri telefonici da Skype for Business Online.
     
 - Può contenere 6-10 cifre (numeri).
     
 - Non può contenere lettere o caratteri speciali.
     
-- Il PIN predefinito è vuoto, ma se vengono inseriti nel, non è possibile rimuovere o impostarla su vuoto.
+- Il PIN predefinito è vuoto, ma se viene inserito, non è possibile rimuoverlo o reimpostarlo a vuoto.
     
-- È possibile aggiornare o modificare il PIN dopo vengono inseriti.
+- È possibile aggiornare o modificare il PIN dopo che ne viene inserito uno.
     
 ## <a name="set-up-your-pin"></a>Configurare il PIN
 
+![sfb-logo-30x30.png](../images/sfb-logo-30x30.png) **Tramite l'interfaccia di amministrazione di Skype for Business**
+
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **Centro di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.
+2. Vai su **Interfaccia di amministrazione di Office 365** > **Interfacce amministratore** > **Skype for Business**.
     
-3. Nel riquadro di spostamento sinistro, selezionare **segreteria** > **orders di porta**.
+3. Nel riquadro di spostamento sinistro, seleziona **Voce** > **Ordini di portabilità**.
     
-4. Fare clic su **impostare verso l'alto e gestire il PIN** utilizzata per il trasferimento o porting numeri per portante di un altro servizio.
+4. Fai cli su **Imposta e gestisci il PIN** utilizzato per il trasferimento o la portabilità dei numeri ad un altro gestore di telefonia.
     
-5. Nella **impostare o modificare la porta fuori PIN** pannello, immettere il PIN e fare clic su **Salva**.
+5. Nel pannello **Imposta o modifica il PIN di portabilità**, immettere il PIN e fare clic su **Salva**.
 
 > [!NOTE]
-> Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+> Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Domande comuni sul trasferimento dei numeri di telefono](transferring-phone-numbers-common-questions.md)
+[Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)
 
-[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](/microsoftteams/different-kinds-of-phone-numbers-used-for-calling-plans)
 
-[Gestire i numeri di telefono per la propria organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+[Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)
 
-[Termini e condizioni per le chiamate al numero di emergenza](../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
