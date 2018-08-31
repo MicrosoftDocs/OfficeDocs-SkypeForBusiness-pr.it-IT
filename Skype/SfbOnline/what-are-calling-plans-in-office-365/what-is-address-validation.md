@@ -19,11 +19,12 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: "Scopri cos'è la convalida dell'indirizzo, perché è importante e che rapporto ha con gli indirizzi e servizi di emergenza. "
-ms.openlocfilehash: c82208dd08018c812451a6a26b5a9c6e5420410d
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: d5a64273ae29bac3b1f6e42212a0b50aa3dca9a5
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23779116"
 ---
 # <a name="what-is-address-validation"></a>Cos'è la convalida dell'indirizzo?
 
@@ -36,10 +37,11 @@ La convalida di un indirizzo civico o stradale implica la verifica della legitti
 
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?](what-are-emergency-locations-addresses-and-call-routing.md)
+[Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing)
 
-[Gestire i numeri di telefono per la propria organizzazione](../what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
-[Termini e condizioni per le chiamate al numero di emergenza](../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
+[Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)
+
+[Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 

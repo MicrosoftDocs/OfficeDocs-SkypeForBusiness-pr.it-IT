@@ -1,5 +1,5 @@
 ---
-title: Rapporto pool minuto PSTN
+title: Report pool minuti PSTN
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,14 +18,14 @@ ms.custom:
 - Reporting
 description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile utilizzare Skype per report pool minuto Business PSTN per visualizzare il numero di minuti utilizzati durante il mese corrente all'interno dell'organizzazione.
 search.appverid: MET150
-ms.openlocfilehash: 876455807887694f7e885038e7473634a40f5f21
-ms.sourcegitcommit: 607029d24fda331681e23006887fb484410c2b31
+ms.openlocfilehash: a12597faf9f5669809cbf97a2ea8a054c65a8a0c
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "19933058"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23779669"
 ---
-# <a name="pstn-minute-pools-report"></a>Rapporto pool minuto PSTN
+# <a name="pstn-minute-pools-report"></a>Report pool minuti PSTN
 
 >[!NOTE]
 >In questo report è disponibile solo in anteprima i clienti.
@@ -34,7 +34,7 @@ Nuovo Skype per area Business Admin Center **report** Mostra è chiamante e audi
   
 Consultare la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per i report più disponibili.
   
-La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate sull'attività all'interno dell'organizzazione. Queste informazioni sono molto utili quando analisi dei, pianificazione e altre decisioni strategiche, per l'organizzazione e per la configurazione di [Comunicazioni titoli di coda](../skype-for-business-and-microsoft-teams-add-on-licensing/what-are-communications-credits.md)
+La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate sull'attività all'interno dell'organizzazione. Queste informazioni sono molto utili quando analisi dei, pianificazione e altre decisioni strategiche, per l'organizzazione e per la configurazione di [Comunicazioni titoli di coda](/microsoftteams/what-are-communications-credits)
   
 > [!NOTE]
 > I report sono disponibili quando si accede a Skype for Business come amministratore dall'interfaccia di amministrazione di Office 365. 

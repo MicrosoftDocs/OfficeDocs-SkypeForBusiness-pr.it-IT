@@ -20,28 +20,29 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni sul Skype per le aziende fatturazione numero di telefono e dove è possibile per ottenere istruzioni dettagliate su come trasferire un numero.
-ms.openlocfilehash: 498ccb436adb181aa1399c9643dcaf52f3884663
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: e73a8d003d3be6b14aaacc36fe0c9a8b3f4159b1
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23780930"
 ---
 # <a name="what-is-my-billing-telephone-number"></a>Che cos'è il numero di telefono fatturazione?
 
 Il numero di telefono fatturazione (tasto) è il numero di telefono principale è incluso nella fattura e configurato per il provider di servizi o di un gestore di telefonia l'utilizzo. Se si desidera trasferire un numero di telefono da un account con un solo numero di telefono, è necessario inserire il numero di telefono. Se si desidera trasferire i numeri di telefono da un account che dispone di più, è possibile esaminare il pagamento o contattare il provider di servizi o gestore per determinare il numero di telefono fatturazione per l'account.
   
- **Per istruzioni dettagliate complete, vedere [trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md).**
+ **Per istruzioni dettagliate complete, vedere [trasferire i numeri di telefono a Office 365](/microsoftteams/transfer-phone-numbers-to-office-365).**
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Domande comuni sul trasferimento dei numeri di telefono](transferring-phone-numbers-common-questions.md)
+[Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)
 
-[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](/microsoftteams/different-kinds-of-phone-numbers-used-for-calling-plans)
 
-[Termini e condizioni per le chiamate al numero di emergenza](../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 

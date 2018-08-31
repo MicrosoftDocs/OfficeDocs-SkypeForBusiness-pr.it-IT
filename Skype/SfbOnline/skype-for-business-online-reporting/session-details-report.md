@@ -1,5 +1,5 @@
 ---
-title: Rapporto Dettagli sessione
+title: Report dettagli della sessione.
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -16,22 +16,22 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Reporting
-description: Il nuovo dashboard di Office 365 report mostra Panoramica attività tra i prodotti di Office 365 all'interno dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto.
+description: '[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto.'
 search.appverid: MET150
-ms.openlocfilehash: 63d0d049e7522d1e62f717c063eb92f658a5623f
-ms.sourcegitcommit: 607029d24fda331681e23006887fb484410c2b31
+ms.openlocfilehash: ae892766be3b9bc18f37ae8b551678a738743325
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "19933176"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23780856"
 ---
-# <a name="session-details-report"></a>Rapporto Dettagli sessione
+# <a name="session-details-report"></a>Report dettagli della sessione.
 
 [] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare report **Skype per Business dettagli** per visualizzare informazioni dettagliate sull'esperienza di chiamata dell'utente singolo.
   
 Vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per i report più disponibili.
   
-La relazione, nonché altri Skype per i report di Business fornire informazioni dettagliate sull'attività all'interno dell'organizzazione, incluse informazioni dettagliate di sessione. Queste informazioni sono molto utili quando si analisi dei, pianificazione e l'esecuzione di altre business le decisioni per l'organizzazione e per la configurazione di [titoli di coda di comunicazioni](../skype-for-business-and-microsoft-teams-add-on-licensing/what-are-communications-credits.md).
+La relazione, nonché altri Skype per i report di Business fornire informazioni dettagliate sull'attività all'interno dell'organizzazione, incluse informazioni dettagliate di sessione. Queste informazioni sono molto utili quando si analisi dei, pianificazione e l'esecuzione di altre business le decisioni per l'organizzazione e per la configurazione di [titoli di coda di comunicazioni](/microsoftteams/what-are-communications-credits).
   
 > [!NOTE]
 > I report sono disponibili quando si accede a Skype for Business come amministratore dall'interfaccia di amministrazione di Office 365. 

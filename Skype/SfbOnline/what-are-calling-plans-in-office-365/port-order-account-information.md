@@ -20,11 +20,12 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: "Ulteriori informazioni sull'account è necessario quando si lavora con una procedura guidata nuovo ordine di porta numero locale. "
-ms.openlocfilehash: bd2f929a7268db03c1d9e3660d6f3df20ff9cc72
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: 69d972709e0711f8ac17131a81c604044d869c85
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23780482"
 ---
 # <a name="port-order-account-information"></a>Informazioni sull'account dell'ordine di porta
 
@@ -66,19 +67,19 @@ Per effettuare l'invio dell'ordine di porta semplice ed evitare errori, assicura
 > [!CAUTION]
 > **Non disconnettere i servizi dal gestore o provider di servizi.**> **Devi mantenere attivo il servizio precedente per poter trasferire i numeri di telefono in Skype for Business online.**> **Non bloccare l'account del gestore o del provider di servizi. Il blocco dell'account impedisce di cambiare i relativi gestori. L'utente autorizzato dovrà inviare un ordine al gestore corrente per rimuovere il blocco. Questo processo può richiedere da 1 a 3 settimane a seconda del gestore.**> 
   
- **Per istruzioni dettagliate complete, vedere [trasferire i numeri di telefono a Office 365](transfer-phone-numbers-to-office-365.md).**
+ **Per istruzioni dettagliate complete, vedere [trasferire i numeri di telefono a Office 365](/microsoftteams/transfer-phone-numbers-to-office-365).**
 
  > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Domande comuni sul trasferimento dei numeri di telefono](transferring-phone-numbers-common-questions.md)
+[Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)
 
-[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](/microsoftteams/different-kinds-of-phone-numbers-used-for-calling-plans)
 
-(.. / what-are-calling-plans-in-office-365/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+[Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)
 
-[Termini e condizioni per le chiamate al numero di emergenza](../legal-and-regulatory/emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 

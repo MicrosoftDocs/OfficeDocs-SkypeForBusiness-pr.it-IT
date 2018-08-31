@@ -1,5 +1,5 @@
 ---
-title: Qualità multimediale e le prestazioni di connettività di rete
+title: Qualità multimediale e prestazioni della connettività di rete
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,13 +18,14 @@ f1keywords: None
 ms.custom:
 - Optimization
 description: In questo argomento definisce il set di requisiti di prestazioni di rete per Skype per i servizi in linea di Business e la valutazione della rete in base a come è possibile scegliere di utilizzare Internet o ExpressRoute per la connettività tra la rete e Skype Business online connettività. Se si è deciso di distribuire ExpressRoute Azure per la connettività dedicata a Office 365, questo documento vengono inoltre fornite indicazioni su come pianificare le connessioni ExpressRoute in Skype diversi per gli scenari aziendali in linea.
-ms.openlocfilehash: a3af3ac55d39089f2fa6146c93a92fcd174a8cb6
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 3a57ba58e2881f2e279949877d17e115cb1c23df
+ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23779357"
 ---
-# <a name="media-quality-and-network-connectivity-performance-in-skype-for-business-online"></a>Qualità multimediale e le prestazioni di connettività di rete in Skype for Business in linea
+# <a name="media-quality-and-network-connectivity-performance-in-skype-for-business-online"></a>Qualità degli elementi multimediali e prestazioni della connessione di rete in Skype for Business online
 
 In questo argomento definisce il set di requisiti di prestazioni di rete per Skype per i servizi in linea di Business e la valutazione della rete in base a come è possibile scegliere di utilizzare Internet o ExpressRoute per la connettività tra la rete e Skype Business online connettività. Se si è deciso di distribuire ExpressRoute Azure per la connettività dedicata a Office 365, questo documento vengono inoltre fornite indicazioni su come pianificare le connessioni ExpressRoute in Skype diversi per gli scenari aziendali in linea.
   
@@ -45,7 +46,7 @@ Esistono molti diversi fattori che contribuiscono a Skype per la qualità dei su
 
 In una sessione multimediale in tempo reale, supporti l'acquisizione e il rendering dei dispositivi utilizzati da tutti i partecipanti, ad esempio auricolari e Web camme avere un impatto significativo sul complessiva qualità audio e video. I dispositivi di bassa qualità o dotati di driver non adeguati produrranno suoni audio o immagini video di qualità inferiore. Al contrario, i dispositivi certificati o di buona qualità aiutano a eliminare l'eco, filtrare il rumore, migliorare la risoluzione video e ridurre la latenza.
   
-Sebbene certified dispositivi multimediali audio e video non siano obbligatori, è consigliabile dispositivi certificati per Skype for Business per l'esperienza multimediale ottimale. Per un elenco di tutti i Skype per le aziende dispositivi certificati, vedere [telefoni e dispositivi per Skype per le aziende](https://technet.microsoft.com/en-us/office/dn947482). È possibile utilizzare [Skype per Business Online i Dashboard qualità delle chiamate](../using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard.md), disponibili in **Skype per Business admin center**, per verificare i dispositivi in uso funzionino correttamente e monitorare la qualità multimediale audio e video.
+Sebbene certified dispositivi multimediali audio e video non siano obbligatori, è consigliabile dispositivi certificati per Skype for Business per l'esperienza multimediale ottimale. Per un elenco di tutti i Skype per le aziende dispositivi certificati, vedere [telefoni e dispositivi per Skype per le aziende](https://technet.microsoft.com/en-us/office/dn947482). È possibile utilizzare [Skype per Business Online i Dashboard qualità delle chiamate](/microsoftteams/turning-on-and-using-call-quality-dashboard), disponibili in **Skype per Business admin center**, per verificare i dispositivi in uso funzionino correttamente e monitorare la qualità multimediale audio e video.
   
 > [!TIP]
 > **Un dispositivo certificato è necessario per Skype ottimale per la qualità multimediale Business**.
