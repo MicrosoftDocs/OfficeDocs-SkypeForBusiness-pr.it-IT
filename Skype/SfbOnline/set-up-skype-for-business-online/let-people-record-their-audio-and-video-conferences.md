@@ -1,5 +1,5 @@
 ---
-title: Consentire agli utenti di registrare le conferenze audio e video
+title: Permettere alle persone di registrare le proprie audio e videoconferenze
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,15 +17,18 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Come attivare la registrazione per le conferenze audio e video e informazioni sugli aspetti è e non è incluso in registrazioni. '
-ms.openlocfilehash: bec8910c838e253a135a605d53306185aae3383e
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: eaf94874dc55dd333911b8bdfade085e137916a8
+ms.sourcegitcommit: dbef8028cb7f8c6366e0fdb34f5f2e2a30d8c32a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "19500528"
 ---
-# <a name="let-people-record-their-audio-and-video-conferences"></a>Consentire agli utenti di registrare le conferenze audio e video
+# <a name="let-people-record-their-audio-and-video-conferences"></a>Permettere alle persone di registrare le proprie audio e videoconferenze
 
 ## <a name="choose-the-default-recording-setting-for-a-single-user-or-everyone-in-your-organization"></a>Scegliere l'impostazione di registrazione per un singolo utente o tutti gli utenti nell'organizzazione predefinita
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Vai al **Centro di amministrazione di Office 365** > **Skype per le aziende**e quindi fare clic su **utenti**.
     
@@ -41,7 +44,7 @@ Quando la registrazione è attivata, gli organizzatori o i relatori possono esse
    
 Per ulteriori informazioni, vedere [registrazione di Lync Salva e pubblica](https://support.office.com/en-US/Article/83cf1507-0f05-40f5-a520-5a6c133bc33e) e [Lync registrazione manager](https://support.office.com/en-US/Article/fa915c55-ff55-45c0-b372-1ef5596da10b). 
   
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)

@@ -1,5 +1,5 @@
 ---
-title: Personalizzare convocazioni di riunione
+title: Personalizzare inviti alle riunioni
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,13 +17,14 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Personalizzare Skype inviti alle riunioni con logo grafici, Guida in linea e gli URL legali e testo piè di pagina. '
-ms.openlocfilehash: f6c5c65c1f12010a6ee6cc625748dfa0287a856a
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 1f53ce183ebe62923948a33a7ac6b14f3c61f04a
+ms.sourcegitcommit: dbef8028cb7f8c6366e0fdb34f5f2e2a30d8c32a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "19500555"
 ---
-# <a name="customize-meeting-invitations"></a>Personalizzare convocazioni di riunione
+# <a name="customize-meeting-invitations"></a>Personalizzare inviti alle riunioni
 
 Come amministratore, è possibile garantire che tutto Skype per convocazioni di riunione di lavoro include alcune informazioni utili per gli utenti potrebbe essere necessario, ad esempio collegamenti per il sito Web supporto tecnico e di non responsabilità, il logo della società e altro testo che si desidera includere. 
   
@@ -40,6 +41,8 @@ Come amministratore, è possibile garantire che tutto Skype per convocazioni di 
     
 ## <a name="customize-your-meeting-invitations"></a>Personalizzare le convocazioni di riunione
 <a name="__top"> </a>
+
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
