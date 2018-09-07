@@ -1,5 +1,5 @@
 ---
-title: Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione in Skype Business online
+title: Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione su Skype for Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 1d649328-ada7-422d-a074-d6da4da36970
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -18,18 +19,18 @@ localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: Informazioni su come abilitare o disabilitare se gli utenti possono registrare i rispettivi nomi quando partecipano a una riunione in Skype Business online.
-ms.openlocfilehash: b920f0cfea6aa607f5bc3ea7c8a53b5668ba02da
-ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
-ms.translationtype: MT
+description: Informazioni su come abilitare o disabilitare se gli utenti possono registrare i rispettivi nomi quando partecipano a una riunione su Skype for Business online.
+ms.openlocfilehash: 6022d7ebf0e653bc43373cb00faabc207f91562a
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "22490726"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23850042"
 ---
-# <a name="enable-users-to-record-their-name-when-they-join-a-meeting-in-skype-for-business-online"></a>Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione in Skype Business online
+# <a name="enable-users-to-record-their-name-when-they-join-a-meeting-in-skype-for-business-online"></a>Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione su Skype for Business online
 
 > [!Note]
-> Se si desidera consentire agli utenti di registrare i nomi di team, vedere [consentono agli utenti di registrare il proprio nome quando partecipano a una riunione nel team di Microsoft](/MicrosoftTeams/enable-users-to-record-their-name-when-they-join-a-meeting-in-teams).
+> Se desideri consentire agli utenti di registrare i nomi su Teams, consulta [Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione su Microsoft Teams](/MicrosoftTeams/enable-users-to-record-their-name-when-they-join-a-meeting-in-teams).
 
 [] Quando configuri i servizi di conferenza telefonica con accesso esterno in Skype for Business online, ricevi numeri di telefono e un bridge per audioconferenze o con accesso esterno. Un bridge di conferenza può contenere uno o più numeri di telefono, dedicati o condivisi.
   
@@ -37,9 +38,9 @@ Il bridge di conferenza risponde alla chiamata di un utente che sta eseguendo l'
 
 ## <a name="set-whether-callers-should-record-their-name"></a>Impostare l'opzione che prevede se i chiamanti devono registrare il proprio nome
     
-1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
+1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, vai su **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni ponte Microsoft**.
     
-2. In **esperienza di partecipazione alle riunioni**, vedere la casella di controllo **Abilita voce relativa alla riunione e chiudere le notifiche per essere attivata**.
+2. Su **Esperienza di partecipazione alle riunioni**, vedi la casella di controllo **Abilita l'accensione delle notifiche di entrata e uscita dalla riunione**.
     
   - Ai chiamanti **selezionati** viene chiesto di registrare il proprio nome prima di accedere alla riunione. Questa opzione è selezionata per impostazione predefinita.
     
@@ -71,6 +72,6 @@ Il bridge di conferenza risponde alla chiamata di un utente che sta eseguendo l'
     > [!NOTE]
     > Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business Online.](https://go.microsoft.com/fwlink/?LinkId=294688)
   
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare Audioconferenza in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: c7323490-d9b7-421a-aa76-5bd485f80583
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -19,21 +20,21 @@ localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: Il Sistema telefonico in Office 365 permette di usare un ID chiamante che è il numero di telefono assegnato all'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. Per sapere come usare l'ID chiamante nella tua organizzazione, visita Come usare l'ID chiamante nella tua organizzazione.
-ms.openlocfilehash: cf6f1aab6f865a87186b7acb793e5aa7829907aa
-ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+description: Il sistema telefonico in Office 365 fornisce un ID chiamante predefinito che è il numero di telefono assegnato dell'utente. È possibile modificare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. Per sapere come usare l'ID chiamante nella tua organizzazione, visita Come usare l'ID chiamante nella tua organizzazione.
+ms.openlocfilehash: cb32a7dcc38dcdd7fbaa5bf414d711953d237deb
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23780818"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23858656"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
-Il Sistema telefonico in Office 365 permette di usare un ID chiamante che è il numero di telefono assegnato all'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. Per sapere come usare l'ID chiamante nella tua organizzazione, visita [Come usare l'ID chiamante nella tua organizzazione](how-can-caller-id-be-used-in-your-organization.md).
+Il sistema telefonico in Office 365 fornisce un ID chiamante predefinito che è il numero di telefono assegnato dell'utente. È possibile modificare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. Per sapere come usare l'ID chiamante nella tua organizzazione, visita [Come usare l'ID chiamante nella tua organizzazione](how-can-caller-id-be-used-in-your-organization.md).
   
 > [!TIP]
 > Al momento non è possibile bloccare le chiamate in arrivo in Skype for Business online. 
   
-È possibile cambiare alcune impostazioni:
+Ci sono impostazioni che possono essere modificate:
   
 > [!NOTE]
 > Questa funzione **non** deve essere usata per le organizzazioni in sede con Lync o Skype for Business Server.
@@ -41,20 +42,20 @@ Il Sistema telefonico in Office 365 permette di usare un ID chiamante che è il 
 - **Cambiare l'ID chiamante in uscita** È possibile sostituire l'ID chiamante di un utente, che per impostazione predefinita è il suo numero di telefono, con un altro numero di telefono. Per esempio, è possibile cambiare l'ID chiamante dell'utente dal suo numero di telefono a un numero principale usato dall'azienda o cambiare l'ID linea chiamante dal suo numero di telefono al numero principale dell'ufficio legale. È possibile cambiare l'ID chiamante in qualsiasi numero di **servizio** online o in sede (a tariffa o numero verde).
     
     > [!NOTE]
-    > Per utilizzare il parametro  _Servizio_, è necessario specificare un numero di servizio valido.
+    > Se vuoi utilizzare il parametro  _Service_, devi specificare un numero di servizio valido.
   
-- **Bloccare l'ID chiamante in uscita** È possibile bloccare l'invio dell'ID chiamante in uscita nelle chiamate PSTN in uscita di un utente. In questo modo il suo numero non verrà visualizzato sul telefono di una persona che riceve la chiamata.
+- **Bloccare l'ID chiamante in uscita** È possibile bloccare l'invio dell'ID chiamante in uscita nelle chiamate PSTN in uscita di un utente. In questo modo il suo numero non verrà visualizzato sul telefono di una persona che chiama.
     
 - **Bloccare l'ID chiamante in entrata** È possibile impedire all'utente di ricevere l'ID chiamante su tutte le chiamate PSTN in entrata.
     
 > [!IMPORTANT]
-> Le chiamate d'emergenza vedranno sempre il numero di telefono dell'utente (ID chiamante). 
+> Le chiamate d'emergenza invieranno sempre il numero di telefono dell'utente (ID chiamante). 
   
 Per impostazione predefinita, tutte queste impostazioni dell'ID chiamante sono **disattivate**. Questo significa che il numero di telefono di un utente Skype for Business online è visibile quando un utente effettua una chiamata a un telefono PSTN.
   
 Per ulteriori informazioni su queste impostazioni e su come usarle, visita [Come usare l'ID chiamante nella tua organizzazione](how-can-caller-id-be-used-in-your-organization.md).
   
-## <a name="set-your-caller-id-policy-settings"></a>Impostazioni dei criteri del tuo ID chiamante
+## <a name="set-your-caller-id-policy-settings"></a>Impostare il criterio ID chiamante
 
 > [!NOTE]
 > Per tutte le impostazioni dell'ID chiamante in Skype for Business online è necessario utilizzare Windows PowerShell e **non è possibile** utilizzare l' **interfaccia di amministrazione di Skype for Business**. 
@@ -100,7 +101,7 @@ Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modul
 
 Per ulteriori informazioni sull'avvio di Windows PowerShell, consultare [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connessione a Skype for Business online con Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
     
-### <a name="see-all-of-the-caller-id-policy-settings-in-your-organization"></a>Consultare tutte le impostazioni dei criteri dell'ID chiamante nella propria organizzazione
+### <a name="see-all-of-the-caller-id-policy-settings-in-your-organization"></a>Consultare tutte le impostazioni dei criteri ID chiamante nella propria organizzazione
 
 - Per visualizzare tutte le impostazioni dei criteri dell'ID chiamante nella propria organizzazione, eseguire:
 
@@ -109,7 +110,7 @@ Per ulteriori informazioni sull'avvio di Windows PowerShell, consultare [Connett
   ```
 Ulteriori esempi e dettagli per [Get-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793856.aspx).
     
-### <a name="create-a-new-caller-id-policy-for-your-organization"></a>Creare un nuovo criterio dell'ID chiamante per la propria organizzazione
+### <a name="create-a-new-caller-id-policy-for-your-organization"></a>Creare un nuovo criterio ID chiamante per la propria organizzazione
 
 
 - Per creare un nuovo criterio dell'ID chiamante per la propria organizzazione che imposti l'ID chiamante in modo anonimo, eseguire:
@@ -131,7 +132,7 @@ Ulteriori esempi e dettagli per [Get-CsCallingLineIdentity](https://technet.micr
     
 Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793854.aspx) per apportare modifiche al criterio esistente, quindi utilizzare il cmdlet [Grant-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793857.aspx) per applicare le impostazioni ai propri utenti.
   
-### <a name="set-it-so-the-incoming-caller-id-is-blocked"></a>Impostare il blocco dell'ID chiamante in entrata
+### <a name="set-it-so-the-incoming-caller-id-is-blocked"></a>Impostare in modo che l'ID chiamante in entrata venga bloccato
 
 - Per bloccare l'ID chiamante in entrata, eseguire:
     
@@ -185,7 +186,7 @@ Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName $nul
 
 [Ulteriori informazioni su ID linea chiamante e nome del chiamante](../what-are-calling-plans-in-office-365/more-about-calling-line-ID-and-calling-party-name.md)
 
-[Termini e condizioni per le chiamate di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
+[Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
  

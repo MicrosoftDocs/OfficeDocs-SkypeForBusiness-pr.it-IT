@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 031f09c0-9d2a-487a-b6db-b5d4bed6d16a
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -20,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Meeting Migration Service (MMS) è un servizio di Skype for Business eseguito in background che aggiorna automaticamente le riunioni di Skype for Business e Microsoft Teams per gli utenti. MMS è progettato per eliminare la necessità di avviare lo Strumento di migrazione riunioni per aggiornare le riunioni di Skype for Business e Microsoft Teams.
-ms.openlocfilehash: 013e68ada16f15b3a410823680ec062b9fb7fa3a
-ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.openlocfilehash: 562cc616af59ee2fb87b5a2a023c9efe6c3093c3
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23780502"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23854316"
 ---
 # <a name="setting-up-the-meeting-migration-service-mms"></a>Configurazione del servizio MMS (Meeting Migration Service)
 
@@ -39,7 +40,7 @@ MMS richiede che le caselle postali degli organizzatori delle riunioni siano su 
   
 MMS aggiorna le riunioni Skype per un utente nei due seguenti scenari primari:
   
-- Quando l'utente viene migrato da Skype for Business Server locale a Skype for Business online.
+- Quando l'utente viene migrato da Skype for Business Server a Skype for Business online.
     
 - Quando un amministratore apporta una modifica alle impostazioni di audioconferenza dell'utente che richiederebbe l'aggiornamento delle informazioni di audioconferenza nelle riunioni di questo utente.
     
@@ -53,21 +54,21 @@ Ecco alcuni scenari comuni che potrebbero essere applicabili all'utente. Questi 
     
 - Migrazione di utenti da Skype for Business online a Skype for Business Server locale
     
-## <a name="updating-meetings-when-an-on-premises-user-is-migrated-to-skype-for-business-online"></a>Aggiornamento delle riunioni quando un utente locale viene migrato a Skype for Business online
+## <a name="updating-meetings-when-an-on-premises-user-is-migrated-to-skype-for-business-online"></a>Aggiornare le riunioni quando un utente locale viene migrato a Skype for Business online
 
-Questo è lo scenario più comune in cui il servizio MMS può contribuire a creare una transizione agevole per gli utenti. Quando l'utente viene migrato da Skype for Business Server locale a Skype for Business online, il servizio MMS rileva il nuovo utente e analizza il calendario di quell'utente alla ricerca di riunioni di Skype for Business e Microsoft Teams. Tutte le future riunioni saranno aggiornate con le nuove informazioni per l'utente.
+Questo è lo scenario più comune in cui il servizio MMS può contribuire a creare una transizione agevole per i tuoi utenti. Quando l'utente viene migrato da Skype for Business Server a Skype for Business online, il servizio MMS rileva il nuovo utente e analizza il calendario di quell'utente alla ricerca di riunioni di Skype for Business e Microsoft Teams. Tutte le future riunioni saranno aggiornate con le nuove informazioni per l'utente.
   
-### <a name="if-youre-currently-using-skype-server-2015-for-audio-conferencing"></a>Se si sta attualmente utilizzando Skype Server 2015 per le audioconferenze
+### <a name="if-youre-currently-using-skype-server-2015-for-audio-conferencing"></a>Se stai attualmente utilizzando Skype Server 2015 per le audioconferenze
 
 Si consiglia di seguire le migliori pratiche riportate di seguito per la migliore esperienza con MMS in questo scenario:
   
 - Dato che MMS richiede che la posta dell'utente sia su Exchange Online, se si esegue la migrazione anche da Exchange Server locale, spostare prima la posta dell'utente su Exchange Online.
     
-- Assegnare la licenza di **Audioconferenza** all'utente prima di eseguire il `Move-CSUser` cmdlet per migrare l'utente. Questo perché MMS aggiorna anche le riunioni quando vengono modificate le impostazioni di audioconferenza per un utente. Se non si assegna prima la licenza, il servizio MMS aggiornerà di nuovo tutte le riunioni quando si assegna la licenza.
+- Assegna la licenza di **Audioconferenza** all'utente prima di eseguire il `Move-CSUser` cmdlet per migrare l'utente. Questo perché MMS aggiorna anche le riunioni quando vengono modificate le impostazioni di audioconferenza per un utente. Se non assegni prima la licenza, il servizio MMS aggiornerà di nuovo tutte le riunioni quando assegni la licenza.
     
-### <a name="if-youre-currently-using-a-third-party-audio-conferencing-provider-acp"></a>Se si sta utilizzando un provider di servizi di audioconferenza (ACP) di terze parti
+### <a name="if-youre-currently-using-a-third-party-audio-conferencing-provider-acp"></a>Se stai utilizzando un provider di servizi di audioconferenza telefonica audio (ACP) di terze parti
 
-Con un ACP di terze parti, il fatto che venga eseguito o meno il servizio MMS dipende dalle impostazioni di audioconferenza dell'organizzazione. È possibile scegliere di sostituire automaticamente i numeri di accesso esterno dal proprio ACP quando si assegna a un utente una licenza di **Audioconferenza**. D'altra parte, potrebbe essere necessario evitare che ciò accada e mantenere i numeri di accesso esterno dal proprio ACP. Per consultare l'impostazione della propria organizzazione, eseguire il seguente comando di Windows PowerShell e controllare il valore del parametro `AutomaticallyReplaceAcpProvider`. Se serve aiuto con PowerShell, vedere la sezione [Uso di PowerShell per gestire l'organizzazione di Skype for Business](setting-up-the-meeting-migration-service-mms.md#WPSInfo) al termine di questo articolo.
+Con un ACP di terze parti, il fatto che venga eseguito o meno il servizio MMS dipende dalle impostazioni di audioconferenza dell'organizzazione. È possibile scegliere di sostituire automaticamente i numeri di accesso esterno dal proprio ACP quando assegni a un utente una licenza di **Audioconferenza**. D'altra parte, potrebbe essere necessario evitare che ciò accada e mantenere i numeri di accesso esterno dal proprio ACP. Per consultare l'impostazione della propria organizzazione, esegui il seguente comando di Windows PowerShell e controlla il valore del parametro `AutomaticallyReplaceAcpProvider`. Se serve aiuto con PowerShell, vedere la sezione [Uso di PowerShell per gestire l'organizzazione di Skype for Business](setting-up-the-meeting-migration-service-mms.md#WPSInfo) al termine di questo articolo.
   
 ```
 Get-CsOnlineDialInConferencingTenantSettings
@@ -89,10 +90,10 @@ MMS aggiornerà le riunioni esistenti di Skype for Business e Microsoft Teams ne
     
 - Quando si trasferisce l'utente a un nuovo bridge di audioconferenza.
     
-- Quando un numero di telefono non è impostato in un bridge di audioconferenza. Questo è uno scenario complesso che richiede passaggi aggiuntivi. Per maggiori informazioni, vedere [Modifica i numeri a tariffa o i numeri verdi del bridge di audioconferenza](/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge).
+- Quando un numero di telefono non è impostato in un ponte per audioconferenza. Questo è uno scenario complesso che richiede passaggi aggiuntivi. Per maggiori informazioni, consulta [Modifica i numeri a tariffa o i numeri gratuiti del ponte per Audioconferenza](/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge).
     
 > [!IMPORTANT]
-> Il servizio MMS aggiorna le riunioni solo quando si utilizza il bridge Microsoft. Se si utilizza un provider di servizi di audioconferenza di terze parti, gli utenti dovranno aggiornare le riunioni manualmente. In questo caso, è possibile utilizzare lo [Strumento di migrazione riunioni](https://go.microsoft.com/fwlink/p/?linkid=626047). 
+> Il servizio MMS aggiorna le riunioni solo quando utilizzi il ponte Microsoft. Se utilizzi un provider di servizi di audioconferenza di terze parti, gli utenti dovranno aggiornare le riunioni manualmente. In questo caso, è possibile utilizzare lo [Strumento di migrazione riunioni](https://go.microsoft.com/fwlink/p/?linkid=626047). 
   
 Non tutte le modifiche alle impostazioni di audioconferenza di un utente attivano il servizio MMS. In particolare, le seguenti due modifiche non faranno aggiornare le riunioni dal servizio MMS:
   
@@ -102,7 +103,7 @@ Non tutte le modifiche alle impostazioni di audioconferenza di un utente attivan
     
 ## <a name="what-happens-when-mms-updates-meetings"></a>Cosa succede quando il servizio MMS aggiorna le riunioni?
 
-Quando rileva che le riunioni di un utente devono essere aggiornate, il servizio MMS procede come segue:
+Quando il servizio MMS rileva che le riunioni di un utente devono essere aggiornate, procedi come segue:
   
 1. Identifica tutte le riunioni di Skype for Business e Microsoft Teams che l'utente ha in programma in futuro
     
@@ -136,16 +137,16 @@ La quantità di tempo necessaria al servizio MMS per la migrazione delle riunion
     
 ### <a name="what-will-the-users-see-when-mms-updates-their-meetings"></a>Cosa vedranno gli utenti quando il servizio MMS aggiorna le loro riunioni?
 
-Proprio come lo Strumento di migrazione riunioni, MMS invia aggiornamenti sulle riunioni per conto degli utenti. Pertanto, l'unica cosa che gli utenti vedranno sarà un altro giro di notifiche di accettazione delle loro riunioni. Questo potrebbe essere fonte di confusione per gli utenti, perciò si consiglia di informare gli utenti in anticipo non solo per la migrazione da Skype for Business locale a Skype for Business online, ma anche quando si effettua una modifica all'audioconferenza che attiverà il servizio MMS.
+Proprio come lo Strumento di migrazione riunioni, MMS invia aggiornamenti sulle riunioni per conto degli utenti. Pertanto, l'unica cosa che gli utenti vedranno sarà un'altra tornata di notifiche di accettazione per le loro riunioni. Questo potrebbe essere fonte di confusione per gli utenti, perciò si consiglia di informarli in anticipo non solo per la migrazione da Skype for Business locale a Skype for Business online, ma anche quando si effettua una modifica all'audioconferenza che attiverà il servizio MMS.
   
 ## <a name="managing-mms"></a>Gestione del servizio MMS
 
-È necessario utilizzare Windows PowerShell per gestire il servizio MMS e controllare lo stato delle migrazioni in corso. Le informazioni in questa sezione presuppongono che l'utente abbia familiarità con l'uso di PowerShell per gestire l'organizzazione di Skype for Business. Se non si ha dimestichezza con PowerShell, vedere la sezione [Uso di PowerShell per gestire l'organizzazione di Skype for Business](setting-up-the-meeting-migration-service-mms.md#WPSInfo) al termine di questo articolo.
+È necessario utilizzare Windows PowerShell per gestire il servizio MMS e controllare lo stato delle migrazioni in corso. Le informazioni in questa sezione danno per scontato che l'utente abbia familiarità con l'uso di PowerShell per gestire l'organizzazione di Skype for Business. Se non hai dimestichezza con PowerShell, consulta la sezione [Uso di PowerShell per gestire l'organizzazione di Skype for Business](setting-up-the-meeting-migration-service-mms.md#WPSInfo) al termine di questo articolo.
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
-### <a name="how-do-i-check-the-status-of-meeting-migrations"></a>Procedure relative al controllo dello stato della migrazione delle riunioni
+### <a name="how-do-i-check-the-status-of-meeting-migrations"></a>Come posso controllare lo stato della migrazione delle riunioni?
 
 Per controllare lo stato della migrazione delle riunioni è necessario usare il cmdlet  `Get-CsMeetingMigrationStatus`. Di seguito sono riportati alcuni esempi.
   
@@ -155,7 +156,7 @@ Per ottenere un riepilogo di tutte le migrazioni MMS, eseguire il seguente coman
 Get-CsMeetingMigrationStatus -SummaryOnly
 ```
 
-Questo mostrerà una rappresentazione tabulare di tutti gli stati di migrazione come questa:
+Questo darà una rappresentazione tabulare di tutti gli stati di migrazione come questa:
   
 Stato UserCount---------------<br/> 21 in sospeso<br/>6 in corso<br/> 2 non riuscito <br/> 131 completato
 > [!IMPORTANT]
@@ -195,7 +196,7 @@ Quando si esegue il cmdlet  `Get-CsMeetingMigrationStatus` per ottenere una visu
 ### <a name="enabling-and-disabling-mms"></a>Attivazione e disattivazione del servizio MMS
 <a name="Troubleshooting"> </a>
 
-MMS è attivato per impostazione predefinita per tutte le organizzazioni, ma può essere disattivato, se necessario. Ad esempio, se si desidera migrare manualmente tutte le riunioni o se si utilizza un provider di servizi di audioconferenza di terze parti, potrebbe non essere necessario eseguire il servizio MMS. È inoltre possibile scegliere di disattivare temporaneamente il servizio MMS. Ad esempio, possono essere in corso modifiche sostanziali alle impostazioni di audioconferenza per l'organizzazione e non si desidera che MMS venga eseguito fino a quando sono state completate tutte.
+MMS è attivato per impostazione predefinita per tutte le organizzazioni, ma può essere disattivato, se necessario. Ad esempio, se si desidera migrare manualmente tutte le riunioni o se si utilizza un provider di servizi di audioconferenza di terze parti, potrebbe non essere necessario eseguire il servizio MMS. È inoltre possibile scegliere di disattivare temporaneamente MMS. Ad esempio, stai facendo delle modifiche sostanziali alle impostazioni di audioconferenza per l'organizzazione e non vuoi che MMS venga eseguito fino a quando sono state completate tutte.
   
 Per verificare se il servizio MMS è attivato nella propria organizzazione, eseguire il seguente comando e controllare il valore del parametro  `MeetingMigrationEnabled`. Se questo parametro è impostato su $true, il servizio MMS è abilitato.
   
@@ -209,7 +210,7 @@ Per disabilitare il servizio MMS, eseguire il comando seguente:
 Set-CsTenantMigrationConfiguration -MeetingMigrationEnabled $false
 ```
 
-Per abilitare il servizio MMS, eseguire il comando seguente:
+Per abilitare il servizio MMS, esegui il comando seguente:
   
 ```
 Set-CsTenantMigrationConfiguration -MeetingMigrationEnabled $true
@@ -218,7 +219,7 @@ Set-CsTenantMigrationConfiguration -MeetingMigrationEnabled $true
 ### <a name="enabling-and-disabling-mms-only-for-audio-conferencing-changes"></a>Abilitazione e disabilitazione del servizio MMS solo per le modifiche relative all'audioconferenza
 <a name="Troubleshooting"> </a>
 
-È anche possibile disattivare il servizio MMS solo le modifiche relative all'audioconferenza. Il servizio verrà comunque eseguito quando l'utente viene migrato da Skype for Business Server locale a Skype for Business online. Per verificare lo stato attuale del servizio MMS per gli aggiornamenti relativi all'audioconferenza, eseguire il seguente comando e controllare il valore del parametro `AutomaticallyMigrateUserMeetings`. Se questo parametro è impostato su $true, il servizio MMS è impostato per aggiornare le riunioni degli utenti quando vengono modificate le impostazioni di audioconferenza.
+È anche possibile disattivare il servizio MMS solo le modifiche relative all'audioconferenza. Il servizio verrà comunque eseguito quando l'utente viene migrato da Skype for Business locale a Skype for Business online. Per verificare lo stato attuale del servizio MMS per gli aggiornamenti relativi all'audioconferenza, eseguire il seguente comando e controllare il valore del parametro `AutomaticallyMigrateUserMeetings`. Se questo parametro è impostato su $true, il servizio MMS è impostato per aggiornare le riunioni degli utenti quando vengono modificate le impostazioni di audioconferenza.
   
 ```
 Get-CsOnlineDialInConferencingTenantSettings
@@ -230,16 +231,16 @@ Per disabilitare il servizio MMS per l'audioconferenza, eseguire il comando segu
 Set-CsOnlineDialInConferencingTenantSettings -AutomaticallyMigrateUserMeetings $false
 ```
 
-Per abilitare il servizio MMS per l'audioconferenza, eseguire il comando seguente:
+Per abilitare il servizio MMS per l'audioconferenza, esegui il comando seguente:
   
 ```
 Set-CsOnlineDialInConferencingTenantSettings  -AutomaticallyMigrateUserMeetings $true
 ```
 
-### <a name="how-do-i-run-meeting-migration-manually-for-a-user"></a>Procedure relative all'esecuzione manuale della migrazione delle riunioni per un utente
+### <a name="how-do-i-run-meeting-migration-manually-for-a-user"></a>Come si esegue manualmente la migrazione delle riunioni per un utente?
 <a name="Troubleshooting"> </a>
 
-Oltre alle migrazioni automatiche delle riunioni, è anche possibile effettuare manualmente la migrazione delle riunioni per un utente eseguendo il cmdlet **Start-CsExMeetingMigration**. Questo cmdlet consente di aggiungere l'utente nella coda di migrazione delle riunioni. Meeting Migration Service leggerà la richiesta dell'utente e migrerà le sue riunioni. È possibile controllare lo stato della migrazione riunioni con il cmdlet **Get-CsMeetingMigrationStatus**.
+Oltre alle migrazioni automatiche delle riunioni, è possibile anche eseguire la migrazione riunioni manualmente per un utente eseguendo il cmdlet **Start-CsExMeetingMigration**. Questo cmdlet consente di aggiungere l'utente nella coda di migrazione delle riunioni. Meeting Migration Service leggerà la richiesta dell';utente e migrerà le sue riunioni. È possibile controllare lo stato della migrazione riunioni con il cmdlet **Get-CsMeetingMigrationStatus**.
   
 Ecco un esempio che avvia la migrazione riunioni per l'utente ashaw@contoso.com:
   
@@ -282,9 +283,9 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [Connettersi a t
   
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
-  - [Introduzione a Windows PowerShell e Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
-  - [Perché è importante utilizzare PowerShell di Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
 - Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Office 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
     
@@ -294,6 +295,6 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [Connettersi a t
     
   - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-topics"></a>See also
 
 [Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
