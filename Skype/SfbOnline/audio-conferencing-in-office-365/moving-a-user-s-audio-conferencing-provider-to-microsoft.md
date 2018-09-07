@@ -1,5 +1,5 @@
 ---
-title: Spostamento di provider di servizi di conferenza audio di un utente a Microsoft
+title: Spostamento del provider di servizi di audioconferenza di un utente a Microsoft
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 3a518241-1ecc-406a-93a1-d2653eecc0f5
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -20,13 +21,14 @@ f1keywords:
 - ms.lync.lac.PSTNConferencingEnableUsers
 ms.custom:
 - Audio Conferencing
-description: 'Modificare il Skype per gli utenti aziendali dal provider di terze parti audioconferenza (ACP) a un provider di conferenze telefoniche con Microsoft. '
+description: 'Spostare gli utenti Skype for Business da provider di audioconferenza di terze parti (ACP) a un provider di conferenze telefoniche Microsoft. '
 robots: noindex
 redirect_url: https://docs.microsoft.com/en-us/SkypeForBusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider
 redirect_document_id: true
-ms.openlocfilehash: 4c1edda3fecc93fcd882f5d5d54b49322e008d5b
-ms.sourcegitcommit: fa61d0b380a6ee559ad78e06bba85bc28d1045a6
-ms.translationtype: MT
+ms.openlocfilehash: 2c307bdb47fe7e7cfb66c5bb03b537d2174e9f4d
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23860982"
 ---
