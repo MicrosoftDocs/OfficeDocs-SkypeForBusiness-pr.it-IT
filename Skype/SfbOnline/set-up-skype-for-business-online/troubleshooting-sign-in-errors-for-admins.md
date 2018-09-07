@@ -7,6 +7,7 @@ ms.topic: article
 ms.assetid: cdd4801a-2fe1-4aab-bbb6-db5f95f972d1
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -16,12 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Ulteriori cause più comuni per Skype per errori di accesso Business Online e lavoro e risoluzione dei problemi relativi a tali problemi. '
-ms.openlocfilehash: 88ff25ab4603810d41e92e25a62bfecb3c376246
-ms.sourcegitcommit: 08c6fe9955ea61dd9cded2210ae0153e06bdd8a6
+ms.openlocfilehash: 63bcd69fa4db2266647960c119c198797c154f75
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23255788"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23850214"
 ---
 # <a name="troubleshooting-skype-for-business-online-sign-in-errors-for-administrators"></a>Risoluzione dei problemi Skype per errori di accesso Business Online per amministratori
 
@@ -212,7 +213,7 @@ Potrebbe essere necessario fornire ulteriori informazioni di diagnostica per l'i
 
 Per risolvere i problemi Skype per errori di accesso Business Online, avviare eliminando le cause più comuni di accesso difficoltà. Se necessario, è possibile seguire quindi risoluzione specifica passaggi in base al tipo di errore. Se l'utente di accesso persiste, raccogliere le informazioni aggiuntive e quindi cercare informazioni aggiuntive.
 
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)

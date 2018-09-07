@@ -7,6 +7,7 @@ ms.topic: article
 ms.assetid: 19873b1f-8f7e-4dd8-92f4-2ce11344ed5e
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -16,12 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Learn to save time, support calls and increase satisfaction by setting up test accounts and computers, and testing dial-in conferencing, online features such as person-to-person calls, conferencing, and sign in and out. '
-ms.openlocfilehash: ca8813392012fe0703e8c1bae51e1d6dfa96a76c
-ms.sourcegitcommit: 08c6fe9955ea61dd9cded2210ae0153e06bdd8a6
+ms.openlocfilehash: 50f313fcbc68fc28d0b1bc65482b6c14cb1d59b0
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23248704"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23851694"
 ---
 # <a name="test-your-skype-for-business-online-installation"></a>Testare l'installazione di Skype for Business online
 
@@ -134,7 +135,7 @@ Non riesci ad accedere? Vedi [Come risolvere i problemi di accesso a Skype for B
 |[Presentare diapositive di PowerPoint in una riunione Lync](https://support.office.com/article/3910a2b2-01df-4b97-9451-322b598ede7e) <br/> |La presentazione di PowerPoint viene visualizzata nei computer di tutti i partecipanti nella finestra di condivisione della riunione Skype for Business.  <br/> |
 |[Trasferire un file in una riunione di Lync](https://support.office.com/article/f6942910-bc1d-4a48-bf18-385778f08088) <br/> |Dopo il caricamento, tutti nella riunione potranno visualizzare e scaricare l'allegato.  <br/> |
 
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)

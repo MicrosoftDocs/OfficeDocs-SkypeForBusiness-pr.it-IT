@@ -1,5 +1,5 @@
 ---
-title: Rapporto utenti bloccati
+title: Report utenti bloccati
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 0ac844b2-1b08-4e5a-addf-03cde7af7a40
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -17,15 +18,14 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: "La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate sull'attività, tra cui utilizzo PSTN all'interno dell'organizzazione. "
-search.appverid: MET150
-ms.openlocfilehash: 0b6bc07afb44b4bb2ba7e2b31f51443c93645655
-ms.sourcegitcommit: 607029d24fda331681e23006887fb484410c2b31
+ms.openlocfilehash: 508d41de4a8b67e1a266bead6f91445acd041a7e
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "19933048"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23860618"
 ---
-# <a name="users-blocked-report"></a>Rapporto utenti bloccati
+# <a name="users-blocked-report"></a>Report utenti bloccati
 
 Nuovo Skype per il dashboard di Business **report** Mostra la panoramica attività tra Skype per i prodotti di Business nell'organizzazione. Consente di eseguire il drill-ai singoli report a livello di prodotto per assegnare più granulare delle conoscenze relative alle attività all'interno di ogni prodotto. Ad esempio, è possibile utilizzare il rapporto **Skype per gli utenti aziendali bloccato** per visualizzare gli utenti dell'organizzazione che sono stati bloccati di effettuare chiamate PSTN. La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate sull'attività, tra cui utilizzo PSTN all'interno dell'organizzazione.
   
@@ -84,7 +84,7 @@ Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e 
 
 - [Skype per rapporto Dettagli sessione Business](session-details-report.md) È possibile visualizzare informazioni dettagliate sull'esperienza di chiamata dell'utente singolo.
    
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
   

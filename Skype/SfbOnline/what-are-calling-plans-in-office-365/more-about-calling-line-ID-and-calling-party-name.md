@@ -1,5 +1,5 @@
 ---
-title: Ulteriori informazioni sulla riga ID chiamante e la chiamata a nome entità
+title: Ulteriori informazioni su ID linea chiamante e nome del chiamante
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -7,6 +7,7 @@ ms.reviewer: mikedav, roykuntz, jastark
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -17,13 +18,14 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni sui motivi per cui si desidera aggiungere un utente autorizzato può apportare modifiche all'account quando si utilizza la procedura guidata nuovo ordine di porta numero locale.
-ms.openlocfilehash: 1174ba5837bb91c3251232ab48fa63c343425ac1
-ms.sourcegitcommit: f942232d43fc4ad56b34dd400fdb4bca39013f5f
+ms.openlocfilehash: 846abfd5b6973a02ad1a7388b45a79ec709695a0
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23865278"
 ---
-# <a name="more-about-calling-line-id-and-calling-party-name"></a>Ulteriori informazioni sulla riga ID chiamante e la chiamata a nome entità
+# <a name="more-about-calling-line-id-and-calling-party-name"></a>Ulteriori informazioni su ID linea chiamante e nome del chiamante
 
 CallerID, come in genere è definito, effettivamente costituito da due parti personali per l'utente di informazioni:
     - Un numero di telefono (in genere definito come CLID o chiamate linea ID) 
@@ -35,6 +37,6 @@ Trasmissione CLID & CNAM è responsabilità del gestore telefonico di terminazio
 
 Incongruenze nella CNAM possono essere causate da ritardi nel gestori telefonici intermediate o terminazione aggiornamento info CNAM nei database rilevanti come nel caso degli Stati Uniti. Nei paesi in cui è presente alcun database rilevanti per CNAM, consigliate singolo vettore anche possono causare problemi con le informazioni CNAM in arrivo quando viene spostato con la chiamata. Microsoft attualmente non supporta origine CNAM informazioni nei paesi eccezione degli Stati Uniti."
 
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 
 

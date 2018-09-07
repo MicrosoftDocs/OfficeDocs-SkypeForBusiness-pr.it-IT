@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 28aa24b4-8c81-4327-9752-989ea7540db2
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -19,12 +20,12 @@ f1keywords: ms.lync.lac.PortOrderNumbers
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come configurare i numeri di telefono quando porta Skype per le aziende. '
-ms.openlocfilehash: b5b547a88dab1c812a47c310645254985cc0b606
-ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.openlocfilehash: a5a3b0d5586e050a79c1aeb43967ad0d3e4bdf98
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23780600"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23857318"
 ---
 # <a name="how-should-i-enter-the-phone-numbers"></a>Come è necessario immettere i numeri di telefono?
 

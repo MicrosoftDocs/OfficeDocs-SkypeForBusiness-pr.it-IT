@@ -1,5 +1,5 @@
 ---
-title: Report sull'utilizzo dei dispositivi
+title: Report utilizzo dispositivo
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: b9019c36-034f-40c7-acb0-c2a0400b03c3
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -17,16 +18,15 @@ f1keywords:
 - O365E_ReportsS4BClients
 ms.custom:
 - Reporting
-description: Il nuovo dashboard di Office 365 report mostra Panoramica attività tra i prodotti di Office 365 all'interno dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare Skype per report sull'utilizzo dei dispositivi Business per visualizzare i dispositivi, inclusi sistemi operativi Windows e dispositivi mobili con Skype per applicazioni aziendali installato e utilizzano per la messaggistica Istantanea e riunioni. Rapporti di attività nell'interfaccia di amministrazione di Office 365 per ulteriori informazioni, consultare.
-search.appverid: MET150
-ms.openlocfilehash: 722a1302f3c94737b520c3c8e23101cc04629a70
-ms.sourcegitcommit: 607029d24fda331681e23006887fb484410c2b31
+description: "[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare Skype per report sull'utilizzo dei dispositivi Business per visualizzare i dispositivi, inclusi sistemi operativi Windows e dispositivi mobili con Skype per applicazioni aziendali installato e utilizzano per la messaggistica Istantanea e riunioni. Rapporti di attività nell'interfaccia di amministrazione di Office 365 per ulteriori informazioni, consultare."
+ms.openlocfilehash: 72d700f5e3c63fde3f4a17f6a652643695303a8d
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "19933098"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23863384"
 ---
-# <a name="device-usage-report"></a>Report sull'utilizzo dei dispositivi
+# <a name="device-usage-report"></a>Report utilizzo dispositivo
 
 [] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare il rapporto **Skype per l'utilizzo del dispositivo Business** per visualizzare i dispositivi, compresi i sistemi operativi Windows e dispositivi mobili con Skype per applicazioni aziendali installato e utilizzano per la messaggistica Istantanea e riunioni. 
 
@@ -51,7 +51,7 @@ La relazione, nonché altri Skype per i report di Business, offre informazioni d
 
 È possibile ottenere una visualizzazione in dispositivi che utilizzano il Skype per applicazioni aziendali esaminando i grafici **utente** e la **distribuzione** .
   
-![Skype per report sull'utilizzo dei dispositivi Business](../images/a1350924-37f8-4ae3-8603-bdde8c694203.png)
+![Skype per report di utilizzo del dispositivo Business](../images/a1350924-37f8-4ae3-8603-bdde8c694203.png)
   
 ***
 ![Numero 1](../images/sfbcallout1.png)<br/>È possibile visualizzare il report **Skype per l'utilizzo del dispositivo Business** le tendenze negli ultimi 7 giorni, 30 giorni, 90 giorni o 180 giorni. Tuttavia, se si fa clic su in un giorno particolare del rapporto di tabella (vedere numero 7) verrà visualizzati i dati per 30 giorni, fino alla data (vedere numero 2) per cui è stato generato il rapporto.
@@ -108,7 +108,7 @@ Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cu
 
 - [Skype per rapporto Dettagli sessione Business](session-details-report.md) È possibile visualizzare informazioni dettagliate sull'esperienza di chiamata dell'utente singolo.
     
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
   

@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: dfa736b9-4920-4f48-b8c0-b5487ec6086f
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -17,12 +18,12 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Informazioni sulla funzionalità di trasmissione riunione Skype di Skype Business online che consente inoltre di pianificazione, prodotti e trasmissione riunioni o eventi ai gruppi di destinatari in linea di grandi dimensioni fino a 10.000 partecipanti.
-ms.openlocfilehash: 190911fcf87e0b3042bc8895ade016756a58a1ec
-ms.sourcegitcommit: 08c6fe9955ea61dd9cded2210ae0153e06bdd8a6
+ms.openlocfilehash: e1f10ad5036e2866cc480491e98bd2dd7396895a
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23251659"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23862216"
 ---
 # <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
@@ -94,7 +95,7 @@ Il secondo passaggio del processo di installazione è consente di aggiungere i d
 
 Se sono Skype per le organizzazioni aziendali in linea e una distribuzione locale di Lync Server 2010, Microsoft Lync Server 2013 e Skype per Business Server 2015 e avere agli utenti sia online e locale, sono disponibili altre operazioni di installazione è necessario eseguire Oltre a quelli sopra per abilitare l'organizzazione locale comunicare con Skype Business online e consentire a tutti gli utenti siano in grado di creare e partecipare a una riunione Skype trasmissione. Per verificare quali sono i requisiti, vedere [configurare la distribuzione in locale per la trasmissione riunione Skype](https://go.microsoft.com/fwlink/?LinkId=617070).
 
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 
 [Abilitare Skype Meeting Broadcast](enable-skype-meeting-broadcast.md)
 

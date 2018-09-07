@@ -1,5 +1,5 @@
 ---
-title: Rapporto attività partecipanti conferenza
+title: Report attività partecipante di conferenze
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: c3c89995-65dd-4715-9e38-bb244c742c6b
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -18,15 +19,14 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Conference Participant Activity report, and how to interpret and customize it. '
-search.appverid: MET150
-ms.openlocfilehash: 76d41724223e55f10bbabf566719e2bd19e24411
-ms.sourcegitcommit: 607029d24fda331681e23006887fb484410c2b31
+ms.openlocfilehash: 844fdb83a1219a23b66a3f65bc1bde69475b3eb4
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2018
-ms.locfileid: "19933118"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23864580"
 ---
-# <a name="conference-participant-activity-report"></a>Rapporto attività partecipanti conferenza
+# <a name="conference-participant-activity-report"></a>Report attività partecipante di conferenze
 
 L'amministratore di Office 365, il nuovo dashboard **report** sono visualizzati i dati sull'utilizzo dei prodotti Office 365 all'interno dell'organizzazione. È possibile utilizzare il report **Skype per l'attività di Business conferenza partecipanti** per vedere quanti messaggistica immediata, audio/video, condivisione applicazioni, Web ed e Partecipate a conferenze telefoniche/esclusione sono viene dagli utenti nell'organizzazione.
 
@@ -111,7 +111,7 @@ Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cu
 
 - [Skype per rapporto Dettagli sessione Business](session-details-report.md) È possibile visualizzare informazioni dettagliate sull'esperienza di chiamata dell'utente singolo.
     
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
   

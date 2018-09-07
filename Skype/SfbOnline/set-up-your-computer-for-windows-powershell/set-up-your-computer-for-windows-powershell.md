@@ -7,6 +7,7 @@ ms.topic: article
 ms.assetid: ebf5adf0-d848-4e99-baf4-387d1711e1d0
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -16,11 +17,12 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: Scopri i requisiti per la gestione remota di Skype Business online tramite Windows PowerShell, inclusi sistemi operativi supportati.
-ms.openlocfilehash: 94f5fe81e510b5722bde38a64fe3f8473a7f5c8b
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 001e8da26daaff65a1761519073667e530688243
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23862594"
 ---
 # <a name="set-up-your-computer-for-windows-powershell"></a>Configurare il computer per Windows PowerShell
 
@@ -52,7 +54,7 @@ Oltre il sistema operativo supportato, il computer deve inoltre eseguire le oper
     
 - [Download e installazione di Windows PowerShell 3.0](download-and-install-windows-powershell-3-0.md)
     
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Diagnosticare i problemi di connessione con Skype per business online connector](diagnose-problems-with-the-skype-for-business-online-connector.md)
 
   

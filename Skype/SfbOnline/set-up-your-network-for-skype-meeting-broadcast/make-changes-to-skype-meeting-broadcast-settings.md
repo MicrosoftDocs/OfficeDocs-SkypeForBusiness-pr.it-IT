@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 8e46e857-f046-4e87-a633-0d7fb88d66d5
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -18,11 +19,12 @@ f1keywords:
 ms.custom:
 - SMB
 description: È possibile abilitare Skype riunione trasmissione e apportare modifiche alle impostazioni e i criteri per le riunioni.
-ms.openlocfilehash: 7cba3f66713d76e32da01d3dd318a6096dbed35c
-ms.sourcegitcommit: faea19005301c56a081b6e6157965becac76ec2f
+ms.openlocfilehash: 7145f246ff7b3b6edbcae84f2ca2f5bc381ea501
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23851704"
 ---
 # <a name="make-changes-to-skype-meeting-broadcast-settings-for-your-organization"></a>Apportare modifiche alle impostazioni di trasmissione riunione Skype per l'organizzazione
 
@@ -38,7 +40,7 @@ ms.lasthandoff: 05/22/2018
     
 - **URL per i partecipanti del supporto tecnico di supporto tecnico** Immettere un collegamento per i partecipanti alle trasmissioni di riunione da utilizzare se si ha bisogno di assistenza connessione o partecipazione a una riunione di trasmissione.
     
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 
 [Configurare la rete per Skype Meeting Broadcast](set-up-your-network-for-skype-meeting-broadcast.md)
 

@@ -7,6 +7,7 @@ ms.topic: article
 ms.assetid: 40296968-e779-4259-980b-c2de1c044c6e
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -21,12 +22,12 @@ ms.custom:
 - Alchemy
 - LIL_Placement
 description: "Informazioni su come impostare il dominio, gli utenti, messaggistica Istantanea e presenza per l'organizzazione per installare Skype per le aziende. Vedere anche come configurare conferenze audio, sistema telefonico e la chiamata dei piani e trasmissione Skype riunione. "
-ms.openlocfilehash: 264edbeeaaca9eb2b057760ec6432deedb4b78e4
-ms.sourcegitcommit: 08c6fe9955ea61dd9cded2210ae0153e06bdd8a6
+ms.openlocfilehash: b4db326212b472539a483a406a7c940f0802978d
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23252527"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23864490"
 ---
 # <a name="set-up-skype-for-business-online"></a>Configurare Skype for Business online
 
@@ -42,7 +43,7 @@ Se si dispone di **[Office 365 Business Premium](https://products.office.com/en-
 
 Se si desidera utilizzare Skype for Business per effettuare e ricevere **chiamate** da utenti *esterni* all'azienda:
 
-- **Opzione 1: puoi usare l'[app Skype](https://www.skype.com/)** gratuita. Se si dispone di un'azienda di dimensioni molto piccola (ad esempio, 1-2 persone), utilizzando l'app Skype è il modo migliore per accedere. È l'opzione più conveniente per effettuare le chiamate nazionali e internazionali. È comunque tenere conferenze telefoniche, effettuare videochiamate e condividere il desktop per le presentazioni. [Estrarre le tariffe e le opzioni di pagamento](https://secure.skype.com/en/calling-rates?wt.mc_id=legacy&amp;expo365=bundled).
+- **Opzione 1: puoi usare l'[app Skype](https://www.skype.com/)** gratuita. Se si dispone di un'azienda di dimensioni molto piccola (ad esempio, 1-2 persone), utilizzando l'app Skype è il modo migliore per accedere. È l'opzione più conveniente per effettuare le chiamate nazionali e internazionali. È comunque tenere conferenze telefoniche, effettuare videochiamate e condividere il desktop per le presentazioni. [Scopri le tariffe e le opzioni di pagamento](https://secure.skype.com/en/calling-rates?wt.mc_id=legacy&amp;expo365=bundled).
 
 - Opzione **2. Aggiornare il piano di acquistare un piano di chiamata e il sistema telefonico per Office 365**. Il modo più semplice per scoprire quanto questo costi e quindi passare, è a [contattare il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) e chiedere di effettuare tutte le automaticamente.
 

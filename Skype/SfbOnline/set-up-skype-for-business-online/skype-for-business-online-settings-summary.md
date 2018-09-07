@@ -7,6 +7,7 @@ ms.topic: article
 ms.assetid: da3386ab-0397-4c55-b9f0-9dbeade93455
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 ms.appliesto:
@@ -17,11 +18,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'In questo riepilogo di Skype per le impostazioni utente e organizzazione Business consentono di ulteriori informazioni sulla connettività per messaggistica immediata pubblica, gli inviti alle riunioni, la registrazione delle chiamate e le riunioni e altro ancora.  '
-ms.openlocfilehash: 17504d2c0e367a6bd92f427befb3aebb7ecdc364
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 95368d06cbd243aa5b57b7e68ec1e99db81b2fb0
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23865598"
 ---
 # <a name="skype-for-business-online-settings-summary"></a>Riepilogo delle impostazioni di Skype for Business online
 
@@ -51,7 +53,7 @@ ms.lasthandoff: 04/18/2018
 |Chiamata in uscita partecipanti anonimi  <br/> |Consente ai partecipanti anonimi di una riunione Skype for Business online di connettersi mediante chiamata del provider di servizi di audioconferenza  <br/> |Abilitata  <br/> |[Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti](configure-skype-for-business-settings-for-individual-users.md) <br/> |
 |Disattivazione delle funzionalità non archiviate  <br/> | Disattiva tutte le caratteristiche che non sono state acquisite durante l'organizzazione ha configurato un [contenuto aggiunta a un caso e posizione delle origini conservazione nel centro eDiscovery](https://go.microsoft.com/fwlink/?LinkId=529482) nell'interfaccia di amministrazione di Exchange: <br/>  Trasferimento di file tramite messaggistica istantanea <br/>  Pagine condivise di OneNote <br/>  Annotazioni di PowerPoint <br/>  Selezionare questa opzione se la conservazione delle informazioni archiviate elettronicamente è un requisito di legge. <br/> |Disabilitata  <br/> |[Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti](configure-skype-for-business-settings-for-individual-users.md) <br/> |
    
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)

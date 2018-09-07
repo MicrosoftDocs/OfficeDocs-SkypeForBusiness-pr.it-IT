@@ -7,6 +7,7 @@ ms.topic: article
 ms.assetid: 8c563b81-22c9-4024-9efe-9fe28c7bbc96
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -16,11 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Learn how to plan and deploy Skype for Business in small, medium, and large organizations and making it available to your users. '
-ms.openlocfilehash: 83c2b0060f7edbb39c24709db2880b8aed014553
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: 6af2ed700783fef853052b39c60270baf86919e9
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23858796"
 ---
 # <a name="deploy-the-skype-for-business-client-in-office-365"></a>Distribuire il client Skype for Business in Office 365
 
@@ -146,7 +148,7 @@ Alcune organizzazioni preferiscono avere il tempo di testare le nuove funzionali
   
 Puoi controllare la frequenza degli aggiornamenti delle funzionalità usando lo Strumento di distribuzione di Office o Criteri di gruppo per configurare il canale di aggiornamento. Monthly Channel offre ogni mese (all'incirca) aggiornamenti delle funzionalità, mentre Semi-Annual Channel offre gli aggiornamenti delle funzionalità ogni sei mesi. Per altre informazioni sui canali, consulta [Panoramica dei canali di aggiornamento per Office 365 ProPlus](https://support.office.com/article/9ccf0f13-28ff-4975-9bd2-7e4ea2fefef4).
   
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
   

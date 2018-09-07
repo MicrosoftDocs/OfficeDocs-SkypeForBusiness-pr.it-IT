@@ -8,6 +8,7 @@ ms.date: 01/22/2018
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -19,14 +20,14 @@ f1keywords: None
 ms.custom:
 - Security
 description: Guida alla sicurezza per Skype for Business online <add description>
-ms.openlocfilehash: 4d379a827b5dde8780d017834fd0ef011f2055eb
-ms.sourcegitcommit: abc0f95ef0efe15a8c38cc27a3991abf7480c30e
-ms.translationtype: HT
+ms.openlocfilehash: 646f4235a590532739ae4f06edeaf9c5a3070d5d
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2018
-ms.locfileid: "20211127"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23856774"
 ---
-#  <a name="security-and-skype-for-business-online"></a>Sicurezza e Skype for Business online
+#  <a name="security-and-skype-for-business-online"></a>Sicurezza e Skype for Business in linea
 
 Skype for Business Online (SfBO), come parte del servizio Office 365, segue tutte le migliori pratiche e procedure di sicurezza, come la protezione a livello di servizio attraverso difesa in profondità, controlli utente nell'ambito del servizio, potenziamento delle misure di sicurezza e best practice operative.  Per i dettagli completi, consultare il Centro protezione di Office 365 (https://products.office.com/en-us/business/office-365-trust-center-security).
 
@@ -108,7 +109,7 @@ Le seguenti tabelle elencano i dati richiesti per il funzionamento di SfBO.
 
 ||||
 |:-----|:-----|:-----|
-|**Categoria** |**Impostazioni possibili** |
+|**Categoria** |**Possibili impostazioni** |
 |Indirizzo IP|Indirizzo effettivo del computer o indirizzo NAT|
 |URI SIP|<u>david.campbell@contoso.com</u>|
 |Nome|David Campbell (come definito in Servizi di dominio Active Directory)|
@@ -117,13 +118,13 @@ Le seguenti tabelle elencano i dati richiesti per il funzionamento di SfBO.
 <!-- end of table -->
 
 ## <a name="security-framework-for-sfbo"></a>Framework di sicurezza per SfBO
-La presente sezione fornisce le informazioni generali sugli elementi fondamentali che formano il framework di protezione per Microsoft SfBO. Gli elementi sono i seguenti:
+In questa sezione viene fornita una panoramica degli elementi fondamentali che costituiscono il framework di protezione per Microsoft SfBO. Gli elementi sono i seguenti:
 - Azure Active Directory (AAD) fornisce un singolo archivio back-end attendibile per gli account utente. 
 - L'infrastruttura a chiave pubblica (PKI) utilizza i certificati emessi dalle autorità di certificazione (CA) attendibili per autenticare i server e garantire l'integrità dei dati.
 - Transport Layer Security (TLS), HTTPS su SSL (HTTPS) e TLS reciproche (MTLS) abilitano l'autenticazione dell'endpoint e la crittografia della messaggistica istantanea (IM). Point-to-point audio, video e flussi di condivisione delle applicazioni sono crittografati  e l'integrità viene verificata tramite il protocollo SRTP (Secure Real-Time Transport Protocol).
 - Protocolli standard del settore per l'autenticazione dell'utente, ove possibile.
 
-Gli argomenti di questa sezione descrivono come ciascuno di questi elementi fondamentali funziona per migliorare la protezione del servizio SfBO.
+Gli argomenti di questa sezione descrivono come ciascuno di questi elementi fondamentali funziona per migliorare la sicurezza del servizio SfBO.
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 Azure Active Directory funziona come servizio directory per O365. Memorizza tutte le informazioni sulla directory utente e le attività in base ai criteri. 
@@ -206,7 +207,7 @@ I certificati client forniscono un modo alternativo per l'autenticazione degli u
 In SfBO, gli amministratori IT possono gestire il servizio tramite il portale amministratore O365 o utilizzando TRPS (Tenant Remote PowerShell).  Gli amministratori dei tenant utilizzano l'autenticazione moderna per l'autenticazione in TRPS.
 
 ### <a name="configuring-access-to-sfbo-at-your-internet-boundary"></a>Configurazione dell'accesso a SfBO al tuo limite Internet
-Affinché SfBO funzioni correttamente (utenti in grado di partecipare alle riunioni, ecc.), i clienti devono configurare l'accesso a Internet in modo tale che sia consentito il traffico UDP e TCP in uscita verso i servizi nel cloud SfBO.  Per maggiori dettagli, consultare: https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_lyo 
+Per SfBO per il corretto funzionamento (gli utenti in grado di partecipare alle riunioni e così via), i clienti è necessario configurare l'accesso internet in modo che il traffico UDP e TCP in uscita per i servizi di SfBO cloud è consentita.  Per maggiori dettagli, consultare: https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_lyo 
 
 ### <a name="udp-3478-3481-and-tcp-443"></a>UDP 3478-3481 e TCP 443
 
@@ -230,7 +231,7 @@ L'abilitazione di utenti esterni e utenti interni per lo scambio di file multime
 
     Tra le altre informazioni, le conferenze A/V inviano una risposta Aggiungi utente che contiene il token da presentare al servizio AV Conferencing Edge.
 
-    [Nota] Tutto il traffico SIP precedente fluiva attraverso il servizio Access Edge.
+    [Nota]  Tutto il traffico SIP precedente è passato attraverso l'Access Edge Server.
 
     Il client si connette al server di conferenza A/V, che convalida il token e trasmette la richiesta, che contiene un altro token di autorizzazione, al server di conferenza A/V interno. Il server di conferenza A/V convalida il token di autorizzazione, che ha originariamente rilasciato tramite il canale SIP, per garantire ulteriormente che un utente valido partecipi alla conferenza.
     
@@ -263,8 +264,8 @@ Un relatore può anche promuovere un partecipante al ruolo di relatore durante l
 
 I partecipanti alla riunione sono inoltre classificati per posizione e credenziali. È possibile utilizzare entrambe queste caratteristiche per specificare quali utenti possano accedere a riunioni specifiche. Gli utenti possono essere suddivisi nelle seguenti categorie:
 1.  **Utenti che appartengono al tenant** &nbsp;&nbsp; Questi utenti dispongono di credenziali in Azure Active Directory per il tenant.<br/>
-    a. *All'interno di corpnet* : questi utenti partecipano dall'interno della rete aziendale.<br/>b. *Utenti remoti*- questi utenti partecipano al di fuori della rete aziendale. Possono comprendere i dipendenti che lavorano da casa o in viaggio e altri, come dipendenti di fornitori affidabili, a cui sono state concesse credenziali aziendali per le rispettive condizioni d'uso. Gli utenti remoti possono creare e partecipare a conferenze e agire da relatori.
-2.  **Utenti che non appartengono al tenant**&nbsp;&nbsp;  Questi utenti non dispongono di credenziali in Azure Active Directory per il tenant.<br/>a. *Utenti federati*: gli utenti federati dispongono di credenziali valide con partner federati e vengono quindi considerati come autentificati da SfBO. Gli utenti federati possono partecipare alle conferenze ed essere promossi a relatori dopo che hanno aderito alla riunione, ma non possono creare conferenze in aziende con cui sono federati.<br/>b. *Utenti anonimi* - gli utenti anonimi non hanno un'identità di Active Directory e non sono federati con il tenant. 
+    un. *All'interno di corpnet* – partecipa da questi utenti all'interno della rete aziendale.<br/>b. *Gli utenti remoti* – questi utenti partecipa dall'esterno della rete aziendale. Possono comprendere i dipendenti che lavorano da casa o in viaggio e altri, come dipendenti di fornitori affidabili, a cui sono state concesse credenziali aziendali per le rispettive condizioni d'uso. Gli utenti remoti possono creare e partecipare a conferenze e agire da relatori.
+2.  **Utenti che non appartengono al tenant**&nbsp;&nbsp;  Questi utenti non dispongono di credenziali in Azure Active Directory per il tenant.<br/>un. *Gli utenti federati* , gli utenti federati dispongono di credenziali valide con partner federati e vengono pertanto trattati come utenti autenticati da SFBO. Gli utenti federati possono partecipare alle conferenze ed essere promossi a relatori dopo che hanno aderito alla riunione, ma non possono creare conferenze in aziende con cui sono federati.<br/>b. *Gli utenti anonimi* , utenti anonimi non dispongono di un'identità Active Directory e non sono federati con il tenant. 
 
 I dati della società mostrano che molte conferenze coinvolgono utenti esterni. Queste stesse società desiderano anche rassicurazioni in merito all'identità degli utenti esterni prima di consentire a tali utenti di partecipare a una conferenza. Come descritto nella sezione seguente, SfBO limita l'accesso ai tipi di utenti che sono stati esplicitamente autorizzati e richiede che tutti i tipi di utenti presentino credenziali appropriate quando aderiscono a una riunione.
 
@@ -284,7 +285,7 @@ Gli organizzatori della riunione controllano se i partecipanti possono presentar
 - **Solo l'organizzatore **&nbsp;&nbsp; Può presentare solo l'organizzatore della riunione.
 - **Persone della mia società**&nbsp;&nbsp; Tutti gli utenti interni possono presentare.
 - **Tutti comprese persone esterne alla mia società**&nbsp;&nbsp; Tutti (non ci sono restrizioni) i partecipanti alla riunione possono presentare.
-- **Persone scelte**&nbsp;&nbsp; L'organizzatore della riunione specifica quali utenti possono presentare aggiungendoli a un elenco di relatori.
+- **Persone che scelgo**&nbsp;&nbsp; L'organizzatore della riunione specifica quali utenti possono presentare aggiungendoli a un elenco di relatori.
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Centro protezione di Office 365](https://products.office.com/en-us/business/office-365-trust-center-security)

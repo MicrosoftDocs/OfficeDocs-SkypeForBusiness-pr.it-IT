@@ -7,6 +7,7 @@ ms.topic: article
 ms.assetid: 77b26eac-8228-4161-ba9f-733b187bd836
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -20,14 +21,14 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: 'Informazioni su come modificare Skype per le impostazioni di Business per singoli utenti, ad esempio: conferenze Audio e video, la registrazione delle chiamate e riunioni. '
-ms.openlocfilehash: f9b6db08c87e46326d6e9de7c82d6e1c89cffce0
-ms.sourcegitcommit: a5b8b0a1e5ae5eb718e296ca6df6687368ee9174
+ms.openlocfilehash: 1296ec96d194be80ae3c48a947a0398f0eefb4e3
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "19500820"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23860330"
 ---
-# <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Gli amministratori: Configurare Skype per le impostazioni di Business per singoli utenti
+# <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti
 
 In questo articolo viene illustrato come gli amministratori configurare Skype for Business per un numero limitato di utenti. Per eseguire la procedura seguente in blocco, è stata inclusa collegamenti a è possibile utilizzare i cmdlet di Windows PowerShell.
   
@@ -46,7 +47,7 @@ Per consentire o bloccare tutti gli utenti nell'organizzazione di comunicare con
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Scegliere **Admin Center** > **Skype per le aziende**.
+2. Scegli **Interfaccia di amministrazione** > **Skype for Business**.
     
 3. Scegliere **utenti**.
     
@@ -95,8 +96,8 @@ Per configurare queste impostazioni in blocco, utilizzare PowerShell. Vedere [ge
 |**Impostazioni delle audioconferenze**|**Descrizione**|
 |:-----|:-----|
 |**Nome del provider** <br/> |Scegliere il provider dall'elenco.  <br/> |
-|**Numero a pagamento** (obbligatorio) <br/> |Per un'AUDIOCONFERENZA di terze parti, questi numeri di telefono sono forniti dal provider di servizi di conferenza audio. Se l'utente sta utilizzando Microsoft come provider di servizi di conferenza audio, queste saranno numeri che vengono impostati su ponte per conferenze audio. Formattare i numeri che si desidera che vengano visualizzate in Skype per Business e Microsoft Teams convocazioni di riunione.  <br/> |
-|**Numero verde** <br/> |Per un'AUDIOCONFERENZA di terze parti, questi numeri di telefono sono forniti dal provider di servizi di conferenza audio. Se l'utente sta utilizzando Microsoft come provider di servizi di conferenza audio, queste saranno numeri che vengono impostati su ponte per conferenze audio. Formattare i numeri che si desidera che vengano visualizzate in Skype per Business e Microsoft Teams convocazioni di riunione.  <br/> |
+|**Numero a pagamento** (obbligatorio) <br/> |Per un'AUDIOCONFERENZA di terze parti, questi numeri di telefono sono forniti dal provider di servizi di conferenza audio. Se l'utente sta utilizzando Microsoft come provider di servizi di audioconferenza, questi saranno i numeri impostati sul ponte per audioconferenza. Formattare i numeri che si desidera che vengano visualizzate in Skype per Business e Microsoft Teams convocazioni di riunione.  <br/> |
+|**Numero verde** <br/> |Per un'AUDIOCONFERENZA di terze parti, questi numeri di telefono sono forniti dal provider di servizi di conferenza audio. Se l'utente sta utilizzando Microsoft come provider di servizi di audioconferenza, questi saranno i numeri impostati sul ponte per audioconferenza. Formattare i numeri che si desidera che vengano visualizzate in Skype per Business e Microsoft Teams convocazioni di riunione.  <br/> |
 |**ID conferenza e PIN** (obbligatorio) <br/> |Il partecipante PIN o conferenza codice, utilizzato per partecipare a riunioni pianificate dall'utente e vengono fornite da un provider di servizi di conferenza audio di terze parti. Se l'utente sta utilizzando Microsoft come provider di servizi di conferenza audio, questo non sarà necessario.  <br/> |
    
 Per configurare queste impostazioni in blocco, utilizzare PowerShell. Vedere [impostare telefono numeri incluso nel invita](../audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites.md).
@@ -105,7 +106,7 @@ Per configurare queste impostazioni in blocco, utilizzare PowerShell. Vedere [im
 [!INCLUDE [LinkedIn Learning Info](../../common/office/linkedin-learning-info.md)]
   
    
-## <a name="related-topics"></a>See also 
+## <a name="related-topics"></a>Argomenti correlati 
 
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 

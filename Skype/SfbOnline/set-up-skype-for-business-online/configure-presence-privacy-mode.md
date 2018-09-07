@@ -1,5 +1,5 @@
 ---
-title: Configurare la modalità privacy della presenza
+title: Configurare la modalità di privacy della presenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -7,6 +7,7 @@ ms.topic: article
 ms.assetid: b33d57fe-b9cf-43c1-961a-edf28db738e8
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
@@ -17,13 +18,14 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Informazioni su come impostare la modalità di privacy per gli utenti in modo che possono migliorare per controllare come utenti relativa disponibilità. '
-ms.openlocfilehash: 9181962111e8e637af816351eb88ac32f7e50dcc
-ms.sourcegitcommit: a0d3e7a177fcd0667ab0d7d0e904f4053b09a92d
+ms.openlocfilehash: e2fb222046dc936d8fbd010dc8016da2b06e1ae8
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23862802"
 ---
-# <a name="configure-presence-privacy-mode"></a>Configurare la modalità privacy della presenza
+# <a name="configure-presence-privacy-mode"></a>Configurare la modalità di privacy della presenza
 
 Skype per l'impostazione della presenza in linea Business offre maggiore controllo su chi può visualizzare se sono disponibili in una riunione o fuori sede. Per informazioni dettagliate su Skype per la presenza di Business e le impostazioni di privacy, vedere [Configure la presenza in Skype Business online](configure-presence-in-skype-for-business-online.md). 
   
@@ -39,7 +41,7 @@ Skype per l'impostazione della presenza in linea Business offre maggiore control
 |**Visualizza automaticamente le informazioni sulla presenza** <br/> |Qualunque utente di Skype for Business non appartenente al gruppo di privacy **Esterno** o **Bloccato**. <br/> |
 |**Visualizzare le informazioni sulla presenza solo ai contatti dell'utente** <br/> |Tutti gli utenti nell'elenco contatti dell'utente che non appartengono al gruppo di privacy **esterno** o **bloccato** . <br/> Singoli utenti possono modificare questa impostazione in Skype per la finestra di dialogo **Opzioni** di Business. <br/> |
    
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
