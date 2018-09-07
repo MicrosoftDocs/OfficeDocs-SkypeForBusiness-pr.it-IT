@@ -1,5 +1,5 @@
 ---
-title: Impostare il telefono invita numeri incluso in Skype Business online
+title: Impostare in Skype for Business online i numeri di telefono inclusi negli inviti
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 32954439-d365-4125-872f-b37466ecb035
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -18,28 +19,28 @@ localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: 'È possibile ottenere i passaggi per creare un numero di telefono predefinito per i chiamanti partecipare a una Skype per riunione in linea aziendale. '
-ms.openlocfilehash: 7aa426a1ede348e29230b177ecf790d9d32d7fbd
-ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
-ms.translationtype: MT
+description: 'Ottenere i passaggi per creare un numero di telefono predefinito affinché i chiamanti possano partecipare ad una riunione di Skype for Business online. '
+ms.openlocfilehash: d4ab76fc99483812d2be6b2f7009be361f33c3c9
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "22490476"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23851486"
 ---
-# <a name="set-the-phone-numbers-included-on-invites-in-skype-for-business-online"></a>Impostare il telefono invita numeri incluso in Skype Business online
+# <a name="set-the-phone-numbers-included-on-invites-in-skype-for-business-online"></a>Impostare in Skype for Business online i numeri di telefono inclusi negli inviti
 
 > [!Note]
-> Per informazioni sulla riunione invitare i numeri di telefono in Teams Microsoft, vedere [impostare il telefono numeri incluso nel invita nel team di Microsoft](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams).
+> Per informazioni sui numeri di telefono inclusi negli inviti di Microsoft Teams, vedere[Impostare i numeri di telefono inclusi negli inviti di Microsoft Teams](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams).
 
-Audioconferenze con accesso esterno in Office 365 consente agli utenti dell'organizzazione creare Skype per le riunioni di Business e quindi consentire agli utenti di accedere a tali riunioni mediante un telefono. In Office 365, è necessario l'opzione di utilizzare un ponte per conferenze audio Microsoft o un ponte per conferenze audio di terze parti ospitato da un provider approvato audioconferenza (ACP).
+L'Audioconferenza in Office 365 consente agli utenti dell'organizzazione di creare riunioni di Skype for Business e quindi di accedere a tali riunioni mediante un telefono. In Office 365, vi è l'opzione di utilizzare un ponte per audioconferenze Microsoft o un ponte per audioconferenza di terze parti ospitato da un provider di servizi di audioconferenza approvato (ACP).
   
 > [!NOTE]
-> Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza. Se si desidera utilizzare per verificare se sono disponibili i numeri di telefono di accesso esterno nell'area o paese/area geografica, utilizzare **Skype per Business admin center** > **vocale** > **I numeri di telefono**, fare clic su **Aggiungi** , quindi **nuovi numeri di servizio **. Utilizzare gli elenchi **Paese/area geografica**, **paese** e **città** per filtrare la ricerca. >, inoltre, se sta cercando numeri a pagamento servizio gratuito, **numero verde** selezionare dal **paese** elenco.
+> Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza. Per scoprire se nel tuo paese/area geografica sono disponibili dei numeri di telefono con accesso esterno, vai alla **Interfaccia di amministrazione di Skype for Business** > **Voce** > **Numeri di telefono**, fai clic su **Aggiungi** e quindi fai clic su **Nuovi numeri di servizio**. Utilizza gli elenchi **Paese/area geografica**, **Stato/regione** e **Città** per filtrare la ricerca. > Inoltre, se stai cercando numeri di servizio gratuiti, seleziona **Numero verde** dall'elenco **Stato/regione**.
   
-Un ponte per conferenze offre un set di numeri di telefono di accesso esterno per l'organizzazione. Tutti gli elementi da utilizzare per partecipare alle riunioni creati dall'organizzatore della riunione, ma è possibile selezionare quelli che verranno inclusi nel proprio gli inviti di riunione.
+Un ponte per conferenze offre un insieme di numeri di telefono di accesso esterno per l'organizzazione. Tutti questi numeri possono essere utilizzati per accedere alle riunioni create dall'organizzatore, ma è possibile selezionare quelli che verranno inclusi negli inviti alle riunioni.
   
 > [!NOTE]
-> Può esistere un massimo di un numero a pagamento e un numero verde nel invito alla riunione per organizzare una riunione, ma è disponibile anche un collegamento presente nella parte inferiore di ogni invito alla riunione che consente di aprire l'elenco completo di tutti i numeri di telefono di accesso esterno che può essere utilizzato per accedere a una riunione. 
+> Vi è un massimo per organizzatore di un numero a pagamento e un numero verde nell'invito alla riunione, ma è disponibile anche un collegamento nella parte inferiore di ogni invito che consente di aprire l'elenco completo di tutti i numeri di telefono di accesso esterno che possono essere utilizzati per accedere ad una riunione. 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
@@ -48,48 +49,48 @@ Un ponte per conferenze offre un set di numeri di telefono di accesso esterno pe
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Scegliere **Admin Center** > **Skype per le aziende**.
+2. Scegli **Interfacce di amministrazione** > **Skype for Business**.
     
-3. Scegliere **utenti**.
+3. Scegli **Utenti**.
     
-    ![Visualizza la selezione utenti in Skype per interfaccia di amministrazione di Business](../images/abc9ce4e-2250-474d-b053-b3bea8162c77.png)
+    ![Visualizza la selezione utenti nell'interfaccia di amministrazione di Skype for Business](../images/abc9ce4e-2250-474d-b053-b3bea8162c77.png)
   
-4. Scegliere gli utenti che si desidera modificare:
+4. Scegli gli utenti che desideri modificare:
     
-  - Per selezionare un singolo utente, selezionare il nome dell'utente.
+  - Per selezionare un singolo utente, seleziona il nome dell'utente.
     
-  - Per selezionare tutti gli utenti della pagina, selezionare la casella accanto al **nome visualizzato** nella parte superiore dell'elenco.
+  - Per selezionare tutti gli utenti della pagina, seleziona la casella accanto al **Nome visualizzato** nella parte superiore dell'elenco.
     
-  - Per selezionare più utenti, selezionare la casella accanto al nome di ogni utente.
+  - Per selezionare più utenti, seleziona la casella accanto al nome di ogni utente.
     
-5. Riquadro destro fare clic su **Modifica**.
+5. Nel riquadro destro, scegli **Modifica**.
     
-    ![Scegliere l'icona di modifica.](../images/5dd7c5bc-b8fa-4201-b6a6-1436ad8f88fb.png)
+    ![Scegli l'icona di modifica.](../images/5dd7c5bc-b8fa-4201-b6a6-1436ad8f88fb.png)
   
-6. Scegliere **servizi di conferenza Audio**.
+6. Scegli **servizi di audioconferenza**.
     
-7. Nella pagina **proprietà** nell'elenco **nome Provider di** scegliere il provider per l'utente. A seconda del provider, completare le caselle seguenti.
+7. Nella pagina **Proprietà** nell'elenco **Nome provider** scegli il provider per l'utente. A seconda del provider, completa le caselle seguenti.
     
-  - **Microsoft è il provider**: **numero verde predefinito** elenchi per selezionare i numeri predefiniti per l'utente e utilizzare il **numero a pagamento predefinito** .
+  - **Microsoft è il provider**: usa gli elenchi **Numero a pagamento predefinito** e **Numero verde predefinito** per selezionare i numeri predefiniti per l'utente.
     
     > [!NOTE]
-    > Almeno un numero verde deve essere assegnato ai bridge conferenza prima può essere impostata come il numero verde predefinito di un utente. Per ottenere un numero verde, vedere [Getting numeri di telefono del servizio per Skype per le aziende](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md). 
+    > Almeno un numero verde deve essere assegnato al ponte per conferenze prima che possa essere impostato come numero verde predefinito per un utente. Per ottenere un numero verde, vedi [Ottenere numeri di telefono di servizio per Skype for Business](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md). 
   
-  - **Terze parti sono il provider**: utilizzare i campi **numero a pagamento** e **numero verde** per immettere i numeri per l'utente.
+  - **Il provider è una terza parte**: utilizza i campi **Numero a pagamento** e **Numero verde** per immettere i numeri per l'utente.
 
 
-## <a name="reset-audio-conferencing-phone-numbers"></a>Reimpostare i numeri di telefono di accesso esterno alle audioconferenze
+## <a name="reset-audio-conferencing-phone-numbers"></a>Reimpostare i numeri di telefono per Audioconferenza
 
-1. **Skype per interfaccia di amministrazione di Business**, scegliere **audioconferenze**.
+1. Nell'**interfaccia di amministrazione Skype for Business**, scegli **Audioconferenza**.
     
-2. Nella parte superiore della pagina, scegliere **utenti**.
+2. Nella parte superiore della pagina, scegli **Utenti**.
     
-3. Scegliere gli utenti che si desidera ripristinare e quindi nel riquadro azioni fare clic su **Cancella**.
+3. Scegli gli utenti che desideri ripristinare e quindi nel riquadro azioni, fai clic su **Cancella**.
     
-Per impostazione predefinita, quando si modificano le impostazioni di conferenza dell'utente, un messaggio di posta elettronica viene inviato all'utente. Per modificare questa impostazione, vedere [abilitare o disabilitare l'invio messaggi di posta elettronica quando modificano le impostazioni di conferenza Audio](enable-or-disable-sending-emails-when-their-settings-change.md).
+Per impostazione predefinita, quando si modificano le impostazioni di conferenza dell'utente, un messaggio di posta elettronica viene inviato all'utente. Per modificare questa impostazione, vedi [abilitare o disabilitare l'invio di messaggi di posta elettronica quando vengono modificate le impostazioni di audioconferenza](enable-or-disable-sending-emails-when-their-settings-change.md).
   
 > [!IMPORTANT]
-> Quando si modificano le impostazioni di conferenza audio di un utente, è necessario aggiornato Skype ricorrenti e future per le riunioni di Business e inviare ai partecipanti. 
+> Quando vengono modificate le impostazioni di audioconferenza di un utente, è necessario aggiornare le riunioni di Skype for Business ricorrenti e future ed inviarle ai partecipanti. 
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
@@ -103,36 +104,36 @@ Per impostazione predefinita, quando si modificano le impostazioni di conferenza
   Set-CsOnlineDialinConferencingUser -Identity amos.marble@Contoso.com -TollFreeServiceNumber   +180045551234
   ```
 
-- Usa il cmdlet **Set-CsOnlineDialInConferencingUserDefaultNumber** per cambiare il numero a pagamento o verde predefinito di utenti in base al loro numero predefinito originale o alla loro località.
+- Usa il cmdlet **Set-CsOnlineDialInConferencingUserDefaultNumber** per cambiare il numero a pagamento o verde predefinito degli utenti in base al loro numero predefinito originale o alla loro località.
     
     > [!NOTE]
-    > Per trovare il BridgeID, utilizzare il cmdlet **Get-CsOnlineDialInConferencingBridge** .
+    > Per trovare il BridgeID, usa il cmdlet **Get-CsOnlineDialInConferencingBridge**.
   
   ```
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber +18005551234 -ToNumber +18005551239 NumberType TollFree -BridgeId <Bridge Id> -RescheduleMeetings 
   ```
 
-  - Per impostare il numero verde predefinito per tutti gli utenti senza 1 in modo da +18005551234, eseguire:
+  - Per impostare su +18005551234 il numero verde predefinito per tutti gli utenti a cui ne manca uno, esegui:
     
   ```
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber $null -ToNumber +18005551234 -NumberType TollFree -BridgeId <Bridge Id>  
   ```
 
-  - Per modificare il numero verde predefinito di tutti gli utenti che hanno +18005551234 come il numero verde predefinito per +18005551239, eseguire:
+  - Per modificare in +18005551239 il numero verde predefinito di tutti gli utenti che hanno +18005551234 come numero verde predefinito, esegui:
     
   ```
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber +18005551234 -ToNumber +18005551239 NumberType TollFree -BridgeId <Bridge Id>
   ```
 
-  - Per impostare il numero verde predefinito di tutti gli utenti presente negli Stati Uniti a +18005551234, eseguire:
+  - Per impostare su +18005551234 il numero verde predefinito di tutti gli utenti situati negli Stati Uniti, esegui:
     
   ```
   Set-CsOnlineDialInConferencingUserDefaultNumber -Country US -ToNumber +18005551234 -NumberType TollFree -BridgeId <Bridge Id>
   ```
-## <a name="want-to-learn-more-about-windows-powershell"></a>Fonti di ulteriori informazioni su Windows PowerShell
+## <a name="want-to-learn-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
-  - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [Introduzione a Windows PowerShell e Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
@@ -144,6 +145,6 @@ Per impostazione predefinita, quando si modificano le impostazioni di conferenza
     
   - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 
 [Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 1411b594-1e88-44c9-9f60-2202f9bb8553
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -20,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come configurare un numero e un indirizzo di emergenza per ogni utente che può essere utilizzato con il telefono di rete pubblica (PSTN).
-ms.openlocfilehash: 35247b7ca6dc1073a4a110ab7c95e11a75cbbc8a
-ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.openlocfilehash: e4ca1934ddb604c5efd81fd6a21b6f18d39b144b
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23780884"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23854868"
 ---
 # <a name="assign-or-change-an-emergency-address-for-a-user"></a>Assegnare o modificare l'indirizzo di emergenza di un utente
 
@@ -33,11 +34,11 @@ Durante la configurazione dei Piani di chiamata in Office 365, devi assegnare un
   
 Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo costo, consulta [Licenze per componenti aggiuntivi per Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
-## <a name="assign-or-change-an-emergency-address"></a>Assegnare o modificare l'indirizzo di emergenza di un utente
+## <a name="assign-or-change-an-emergency-address"></a>Assegnare o modificare un indirizzo di emergenza
 
 1. Accedi a Office 365 con l'account aziendale o scolastico.
     
-2. Vai su **Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai su **interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
 3. Nella barra di navigazione sinistra, vai su **Voce**, e quindi fai clic su **Utenti voce**.
     
@@ -46,7 +47,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
     
 4. Nella pagina **Utenti voce**, individua e seleziona l'utente a cui desideri modificare l'indirizzo di emergenza.
     
-5. Nel riquadro Azioni, su **Luogo di emergenza**, fai clic su **Modifica**.
+5. Nel riquadro Azioni, in **Posizione di emergenza**, fai clic su **Modifica**.
     
     > [!NOTE]
     > È possibile modificare solo un indirizzo di emergenza che è già stato convalidato. Per modificare un indirizzo di emergenza che non è stato convalidato, elimina quell'indirizzo e creane un altro. 

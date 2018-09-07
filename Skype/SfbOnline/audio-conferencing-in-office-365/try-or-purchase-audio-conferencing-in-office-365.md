@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: d080bb8c-3465-47bb-ad2b-9428f1a3fd24
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -20,12 +21,12 @@ f1keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Vedi come provare o acquistare le licenze di Audioconferenza (conferenze PSTN) per Office 365 per configurare le conferenze telefoniche a cui gli utenti possono connettersi. '
-ms.openlocfilehash: 081dd7146eb30a10efd4f2ed88ed070f04ea589e
-ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.openlocfilehash: 6730d8e928ab8851781e51e0392686912cf89721
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23779066"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23860796"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365-for-skype-for-business-online"></a>Provare o acquistare Audioconferenza in Office 365 per Skype for Business Online
 
@@ -33,19 +34,19 @@ ms.locfileid: "23779066"
 > Per informazioni su Audioconferenza in Microsoft Teams, consulta [Provare o acquistare Audioconferenza in Office 365 per Skype per Microsof Teams](/MicrosoftTeams/try-or-purchase-audio-conferencing-in-office-365-for-teams).
 
 
-A volte le persone della propria organizzazione devono utilizzare un telefono per accedere a una riunione. Skype for Business include la funzionalità di Audioconferenza proprio per questa evenienza! Le persone possono accedere alle riunioni di Skype for Business usando un telefono, al posto di usare la app di Skype for Business su un dispositivo mobile o PC.
+A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere ad una riunione. Skype for Business include la funzionalità di Audioconferenza proprio per questa evenienza! Le persone possono accedere alle riunioni di Skype for Business usando un telefono, al posto di usare la app di Skype for Business su un dispositivo mobile o PC.
 
 È sufficiente impostare il servizio di Audioconferenza per gli utenti che prevedono di programmare o condurre riunioni. Le persone che partecipano alla riunione tramite telefono non hanno bisogno che le venga assegnata alcuna licenza o di altre impostazioni.
 
 Per informazioni sui prezzi, consulta [Prezzi per Audioconferenza](https://products.office.com/en-us/skype-for-business/audio-conferencing#Requirements).
 
-## <a name="step-1-buy-and-assign-audio-conferencing-licenses"></a>Passo 1: Acquistare e assegnare licenze di Audioconferenza
+## <a name="step-1-buy-and-assign-audio-conferencing-licenses"></a>Passo 1: Acquista e assegna licenze di Audioconferenza
 
 È necessario essere un [amministratore di Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) per eseguire la seguente procedura.
 
 ### <a name="to-buy-and-assign-user-audio-conferencing-licenses"></a>Per acquistare e assegnare licenze utente di Audioconferenza:
 
-1. Verifica se **Audioconferenza** è disponibile nel tuo Paese/area geografica. [Disponibilità Paesi e aree geografiche per Audioconferenza e Piani di chiamata](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). 
+1. Verifica se **Audioconferenza** è disponibile nel tuo paese/area geografica. [Disponibilità paesi e aree geografiche per Audioconferenza e Piani di chiamata](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). 
     
 2. Ottenere le licenze di **Audioconferenza**. Se vuoi:
 
@@ -55,13 +56,13 @@ Per informazioni sui prezzi, consulta [Prezzi per Audioconferenza](https://produ
 
 3. [Assegnare o rimuovere licenze per Office 365 per aziende](https://support.office.com/article//997596b5-4173-4627-b915-36abac6786dc) che hai acquistato per gli utenti dell'organizzazione che intendono pianificare o condurre riunioni.
 
-4. Se hai acquistato licenze del componente aggiuntivo Audioconferenza e licenze di Credito per la comunicazione, assegna anche quelle. Per istruzioni, consulta [Assegnare licenze di Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).
+4. Se hai acquistato licenze del componente aggiuntivo Audioconferenza e licenze di Credito per la comunicazione, assegna anche quelle. Per istruzioni, vedi [Assegnare licenze di Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).
 
 ### <a name="to-buy-and-assign-pay-per-minute-audio-conferencing-licenses"></a>Per acquistare e assegnare licenze Audioconferenza con tariffa al minuto:
 
 Se si è un cliente di licenze a volume, è possibile ottenere le licenze di Audioconferenza con tariffa al minuto. Per ulteriori informazioni sulle licenze di Audioconferenza con tariffa al minuto, consulta [Audioconferenza con tariffa al minuto](/microsoftteams/audio-conferencing-pay-per-minute). 
   
-1. Verifica se **Audioconferenza** è disponibile nel tuo Paese/area geografica. [Disponibilità di Audioconferenza e Piani di chiamata per Paese e area geografica](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). 
+1. Verifica se **Audioconferenza** è disponibile nel tuo paese/area geografica. [Disponibilità di Audioconferenza e Piani di chiamata per paese e area geografica](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). 
     
 2. Ottenere le licenze di **Audioconferenza**. Per acquistare le licenze di tariffa al minuto, contattare il proprio rappresentante dell'account.
     
@@ -97,8 +98,8 @@ La procedura seguente è **facoltativa**, ma molti amministratori preferiscono e
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Configurare Skype for Business Online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
+[Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
 
-[Numeri di telefono per Audioconferenza](phone-numbers-for-audio-conferencing.md)
+[Numeri di telefono per i servizi di audioconferenza](phone-numbers-for-audio-conferencing.md)
 
 [Impostare le opzioni per riunioni online e conferenze telefoniche](https://support.office.com/article/DCD1CA39-0C1F-466C-9573-F04138FEF5E2)

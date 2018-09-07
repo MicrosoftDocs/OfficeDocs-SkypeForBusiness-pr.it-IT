@@ -1,5 +1,5 @@
 ---
-title: Disattivazione di numeri verdi per specifico Skype per gli utenti aziendali Online
+title: Disattivazione di numeri gratuiti per utenti specifici su Skype for Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -7,6 +7,7 @@ ms.reviewer: oscarr
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -17,42 +18,42 @@ localization_priority: Priority
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: Gli amministratori possono controllare gli organizzatori utilizzo numeri verdi per le riunioni.
-ms.openlocfilehash: 1cd144af4f57b3c4ecb19de6c4aeea36f5d2baed
-ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
-ms.translationtype: MT
+description: Gli amministratori possono controllare come gli organizzatori utilizzano i numeri gratuiti per le riunioni.
+ms.openlocfilehash: 6b441d8c136375628243d77280b6a32768b0a590
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "22490546"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23860722"
 ---
-# <a name="disabling-toll-free-numbers-for-specific-skype-for-business-online-users"></a>Disattivazione di numeri verdi per specifico Skype per gli utenti aziendali Online
+# <a name="disabling-toll-free-numbers-for-specific-skype-for-business-online-users"></a>Disattivazione di numeri gratuiti per utenti specifici su Skype for Business online
 
 > [!Note]
-> Per informazioni sulla disattivazione numeri strumento gratuito per gli utenti di team, vedere [Disabilitazione numeri verdi per utenti specifici in team](/MicrosoftTeams/disabling-toll-free-numbers-for-specific-teams-users).
+> Per informazioni sulla disattivazione dei numeri telefonici gratuiti per gli utenti di Teams, consulta [Disabilitazione numeri gratuiti per utenti specifici su Teams](/MicrosoftTeams/disabling-toll-free-numbers-for-specific-teams-users).
 
-Se l'organizzazione dispone di numeri verdi nel relativo Audio Conferencing Bridge Microsoft, è possibile consentire o impedire loro utilizzo in riunioni degli organizzatori specifici.  
+Se la tua organizzazione dispone di numeri gratuiti nel relativo ponte per audioconferenze Microsoft, puoi consentire o impedire il loro utilizzo in riunioni di organizzatori specifici.  
 
-Per impostazione predefinita, tutti gli utenti nell'organizzazione sono abilitati per l'utilizzo di numeri verdi, ovvero i numeri, se disponibile, possono essere utilizzati dai partecipanti per partecipare alle riunioni. Se non è il comportamento desiderato per alcuni utenti all'interno dell'organizzazione, è possibile limitare gli utenti specifici di utilizzare tali numeri relativi alle riunioni tramite un controllo di attivazione dei numerico verdi. 
+Per impostazione predefinita, tutti gli utenti nell'organizzazione sono abilitati per l'utilizzo di numeri gratuiti, ovvero questi numeri, se disponibili, possono essere utilizzati dai partecipanti per partecipare alle riunioni. Se desideri che alcuni utenti all'interno dell'organizzazione siano esclusi, puoi limitare l'uso di tali numeri relativi alle riunioni per utenti specifici tramite un controllo di attivazione dei numeri gratuiti. 
 
-Numeri verdi quando sono disabilitati per organizzare una determinata: 
- - Un numero verde non verrà non è più incluso nel suo o verrà invita. 
- - Non è più numeri verdi verranno elencati nella pagina "Trova un numero locale" viene fatto riferimento nel suo o verrà invita. 
- - I partecipanti saranno in grado di partecipare alla riunione dell'organizzatore determinato se è comporre un numero verde dell'organizzazione. 
- - Tutte le riunioni dell'organizzatore ripianificate automaticamente e verrà rimossa il numero verde.  
+Quando i numeri gratuiti sono disabilitati per un determinato organizzatore: 
+ - Un numero gratuito non verrà più incluso nel suo invito alle riunioni. 
+ - I numeri gratuiti non verranno più elencati nella pagina "Trova un numero locale" a cui viene fatto riferimento nei suoi inviti alle riunioni. 
+ - I partecipanti saranno in grado di partecipare alla riunione di un determinato organizzatore se compongono qualsiasi numero gratuito dell'organizzazione. 
+ - Tutte le riunioni dell'organizzatore verranno ripianificate automaticamente e verrà rimosso il numero gratuito.  
 
     > [!IMPORTANT]
-    > Si verrà nuovamente tutti gli inviti di posta elettronica dell'organizzatore inviato a tutti i partecipanti delle riunioni. 
+    > Quindi verranno inviati nuovamente tutti gli inviti di posta elettronica dell'organizzatore ai partecipanti di quelle riunioni. 
 
- - I partecipanti possono continuare a partecipare alle riunioni dell'organizzatore tramite numeri a tariffa. 
+ - I partecipanti possono continuare a partecipare alle riunioni dell'organizzatore tramite numeri a pagamento. 
 
-## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici 
+## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri gratuiti per utenti specifici 
 
 
-1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili. 
+1. Nell'** Interfaccia di amministrazione di Skype for Business**, sul riquadro di navigazione sinistro, vai su **Audioconferenza** > ** Utenti** e quindi seleziona l'utente dall'elenco degli utenti disponibili. 
 
-2. In the Action pane, click **Edit**. 
+2. Nel riquadro Azioni fai clic su **Modifica**. 
 
-3. Deselezionare **Consenti utilizzo di numeri verdi per partecipare alle riunioni di questo utente**. 
+3. Deseleziona **Consenti a questo utente l'utilizzo di numeri gratuiti per partecipare alle riunioni**. 
  
 4. Fai clic su **Salva**. 
  
@@ -61,6 +62,6 @@ Numeri verdi quando sono disabilitati per organizzare una determinata:
  
 **Utilizzo di PowerShell**  
 
-È possibile utilizzare il parametro AllowTollFreeDialIn del cmdlet Set-CsOnlineDialInConferencingUser per abilitare o disabilitare questo controllo. Ad esempio: 
+Puoi utilizzare il parametro AllowTollFreeDialIn del cmdlet Set-CsOnlineDialInConferencingUser per abilitare o disabilitare questo controllo. Ad esempio: 
 
  - Set-CsOnlineDialInConferencingUser user@contoso.com – AllowTollFreeDialIn $false

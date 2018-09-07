@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 67ccda94-1210-43fb-a25b-7b9785f8a061
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -20,16 +21,16 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare Sistema telefonico per le code di chiamata di Office 365 (Cloud PBX) per fornire un messaggio di saluto, una musica di attesa e per reindirizzare le chiamate ad agenti nelle liste di distribuzione e gruppi di protezione dell'organizzazione. È inoltre possibile impostare la dimensione massima della coda, il timeout e le opzioni di gestione delle chiamate. "
-ms.openlocfilehash: 5a3ace77542a86aea1dd77e1ddcf594f61abb738
-ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.openlocfilehash: bb9812eb880ce7451c2fd30f93fa080d6ec84c87
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23780424"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23854448"
 ---
 # <a name="create-a-phone-system-call-queue"></a>Creare una coda di chiamata di Sistema telefonico
 
-Le code di chiamata in Sistema telefonico includono messaggi di saluto che vengono utilizzati quando si riceve una chiamata a un numero di telefono aziendale, la possibilità di inserire automaticamente le chiamate in attesa e la funzionalità di ricerca per il successivo agente disponibile mentre gli utenti in attesa ascoltano della musica.
+Le code di chiamata di Sistema telefonico includono messaggi di saluto che vengono utilizzati quando si riceve una chiamata a un numero di telefono aziendale, la possibilità di inserire automaticamente le chiamate in attesa e la funzionalità di ricerca per il successivo agente disponibile mentre gli utenti in attesa ascoltano una musica. Puoi creare una o più code di chiamata per l'organizzazione.
   
 Le code di chiamata di Sistema possono fornire:
   
@@ -37,13 +38,13 @@ Le code di chiamata di Sistema possono fornire:
     
 - Musica mentre le persone sono in attesa.
     
-- Reindirizzamento delle chiamate per chiamare gli agenti in liste di distribuzione via mail e gruppi di protezione.
+- Reindirizzamento delle chiamate per chiamare gli agenti in liste di distribuzione per posta elettronica e gruppi di protezione.
     
 - Impostazioni per le dimensioni massime della coda di chiamata, il timeout e le opzioni di gestione delle chiamate.
     
-Quando qualcuno chiama un numero di telefono configurato con una coda di chiamata, sente prima un saluto (se è configurato) e poi viene messo in coda e aspetta il successivo agente di chiamata disponibile. Il chiamante ascolterà la musica durante l'attesa, e le chiamate verranno inoltrate agli agenti di chiamata in ordine *First In, First Out - Primo arrivato, primo servito (FIFO)*.
+Quando qualcuno chiama un numero di telefono configurato con una coda di chiamata, sente prima un saluto (se è configurato) e poi viene messo in coda e aspetta il successivo agente di chiamata disponibile. Il chiamante ascolterà la musica durante l'attesa, e le chiamate verranno inoltrate agli agenti di chiamata in ordine  *FIFO (First In, First Out - Primo arrivato, primo servito)*  .
   
-Tutte le chiamate in attesa nella coda saranno distribuite utilizzando una modalità di instradamento operatore:
+Tutte le chiamate in attesa nella coda saranno distribuite utilizzando una modalità di instradamento operatore o seriale:
   
 - Con l'instradamento operatore, la prima chiamata nella coda squillerà a tutti gli agenti contemporaneamente.
     
@@ -63,7 +64,7 @@ Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto se
 - La propria organizzazione deve disporre (almeno) di una licenza Enterprise E3 plus con **Sistema telefonico** o una licenza Enterprise E5. Il numero di licenze utente di **Sistema telefonico** assegnate influisce sul numero dei numeri di servizio disponibili per gli operatori automatici. Il numero di code di chiamata che è possibile avere dipende dal numero di licenze **Sistema telefonico** e **Audioconferenza** assegnate all'interno dell'organizzazione. Per ulteriori informazioni sulle licenze, vai [qui](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
     
     > [!NOTE]
-    > Per reindirizzare le chiamate agli utenti dell'organizzazione che sono in linea, essi devono disporre di una licenza di **Sistema telefonico** ed essere abilitati per Enterprise Voice o avere Piani di chiamata di Office 365. Consulta [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, esegui:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+    > Per reindirizzare le chiamate agli utenti dell'organizzazione che sono in linea, essi devono disporre di una licenza di **Sistema telefonico** ed essere abilitati per Enterprise Voice o avere Piani di chiamata di Office 365. Consulta [Assegnare le licenze per i componenti aggiuntivi di Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, esegui:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
   
 - Per ulteriori informazioni sui piani di chiamata di Office 365, consulta [Che cosa sono i Piani di chiamata in Office 365?](/microsoftteams/what-are-calling-plans-in-office-365)  e [Piani di chiamata per Office 365](/microsoftteams/calling-plans-for-office-365).
     
@@ -81,7 +82,7 @@ Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto se
     
   - Client desktop Lync 2013 (versioni a 32 e 64 bit)
     
-  - Tutti i modelli di telefono IP supportati per Skype for Business online. Consulta [Ottenere telefoni Skype for Business online](getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online.md).
+  - Tutti i modelli di telefoni IP supportati per Skype for Business online. Consulta [Ottenere telefoni per Skype for Business online](getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online.md).
     
   - Client Mac Skype for Business (versione 16.8.196 e versioni successive) 
     
@@ -108,18 +109,18 @@ Prima di poter creare e configurare le code di chiamata, è necessario ottenere 
   
 ## <a name="step-3---create-a-new-call-queue"></a>Passo 3 - Creare una nuova coda di chiamata
 
-![sfb-logo-30x30.png](../images/sfb-logo-30x30.png) **Usare l'Interfaccia di amministrazione di Skype for Business**
+![sfb-logo-30x30.png](../images/sfb-logo-30x30.png) **Tramite l'Interfaccia di amministrazione di Skype for Business**
 
-Nell'**Interfaccia di amministrazione di Skype for Business**, fai clic su **Instradamento chiamate** > **Code di chiamata**, poi fai clic su **Aggiungi nuova**:
+Nell' **Interfaccia di amministrazione di Skype for Business**, fai clic su **Instradamento chiamate** > **Code di chiamata**, poi fai clic su **Aggiungi nuova**:
   
 ### <a name="set-the-call-queue-display-name-phone-number-and-domain-if-any"></a>Imposta il nome visualizzato della coda di chiamata, il numero di telefono e il dominio (se presente)
 
 ![Configurare una coda di chiamata.](../images/37ecc300-a108-4294-8463-fce570dfce72.png)
 ***
 ![Numero 1](../images/sfbcallout1.png)<br/>
-**Nome** Immetti un nome visualizzato descrittivo per la coda di chiamata. È obbligatorio e può contenere fino a 64 caratteri, spazi inclusi. <br/> Questo nome verrà visualizzato nella notifica per la chiamata in arrivo.
+**Nome** Immetti un nome descrittivo visualizzato per la coda di chiamata. È obbligatorio e può contenere fino a 64 caratteri, spazi inclusi. <br/> Questo nome verrà visualizzato nella notifica per la chiamata in arrivo.
 ***
-![Numero 2](../images/sfbcallout2.png)<br/>**Numero di telefono** Scegli un numero di servizio (a pagamento o numero verde) per la coda di chiamata. Questo passaggio è facoltativo. <br/> Se non ci sono numeri nell'elenco, devi ottenere numeri di servizio prima di poter creare questa coda di chiamata. Per ottenere i numeri di servizio, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](getting-service-phone-numbers.md)
+![Numero 2](../images/sfbcallout2.png)<br/>**Numero di telefono** Scegli un numero di servizio (a pagamento o gratuito) per la coda di chiamata. Questo passaggio è facoltativo. <br/> Se non ci sono numeri nell'elenco, devi ottenere numeri di servizio prima di poter creare questa coda di chiamata. Per ottenere i numeri di servizio, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](getting-service-phone-numbers.md)
 ***
 ![Numero 3](../images/sfbcallout3.png)<br/>**Dominio** Se è disponibile, scegli il dominio di Office 365 che desideri utilizzare. Questa opzione è disponibile solo se disponi di più di un dominio utilizzato con Office 365. Se ne hai più di uno, devi scegliere il nome di dominio dall'elenco. <br/> Ad esempio, puoi avere un dominio come:  _contoso.com or redmond.contoso.com_
    
@@ -162,7 +163,7 @@ Nell'**Interfaccia di amministrazione di Skype for Business**, fai clic su **Ins
   
 ***
 ![Numero 1](../images/sfbcallout1.png)<br/><br/>Gli agenti di chiamata (50 massimo) possono essere:
-*    Un utente in linea con una licenza di **Sistema telefonico** e abilitato per Enterprise Voice o con un Piano di chiamata. <br/><br/> **Nota:** Per reindirizzare le chiamate agli utenti dell'organizzazione che sono in linea, essi devono disporre di una licenza di **Sistema telefonico** ed essere abilitati per Enterprise Voice o avere Piani di chiamata. Consulta [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, esegui:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true` <br/><br/>
+*    Un utente in linea con una licenza di **Sistema telefonico** e abilitato per Enterprise Voice o con un Piano di chiamata. <br/><br/> **Nota:** Per reindirizzare le chiamate agli utenti dell'organizzazione che sono in linea, essi devono disporre di una licenza di **Sistema telefonico** ed essere abilitati per Enterprise Voice o avere Piani di chiamata. Consulta [Assegnare le licenze per i componenti aggiuntivi di Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, esegui:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true` <br/><br/>
 *    Utenti in linea con una licenza di **Sistema telefonico** e un Piano di chiamata che vengono aggiunti a un Gruppo di Office 365, una lista di distribuzione abilitata alla posta elettronica o un gruppo di protezione. Possono occorrere fino a 30 minuti perché un nuovo agente aggiunto a una lista di distribuzione o gruppo di sicurezza inizi a ricevere chiamate da una coda di chiamata. Un gruppo di protezione o un elenco distribuzione appena creato può richiedere fino a 48 ore per diventare disponibile all'utilizzo con le code di chiamata. I Gruppi di Office 365 appena creati sono disponibili quasi immediatamente. <br/> 
 
     > [!NOTE] 
@@ -192,7 +193,7 @@ Nell'**Interfaccia di amministrazione di Skype for Business**, fai clic su **Ins
 ![Numero 4](../images/sfbcallout4.png)<br/><br/>**Quando una chiamata va in timeout** Quando la chiamata raggiunge il limite impostato nell'impostazione **Quanto tempo può aspettare una chiamata in coda**, puoi scegliere cosa succede alla chiamata:
 *    **Disconnetti** La chiamata verrà disconnessa.
 *    **Inoltra a** Quando scegli questa voce avrai le seguenti opzioni:
-     *    **Persona nell'azienda** Un utente in linea con una licenza di **Sistema telefonico** e abilitata per Enterprise Voice o un Piano di chiamata. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. Per fare ciò, scegli una **Persona nell'azienda** e questa persona riceverà le chiamate inoltrate direttamente sulla segreteria telefonica. </br><br/>  Per ulteriori informazioni sulle licenze necessarie per la segreteria telefonica, consulta [Configurare i messaggi vocali in Sistema telefonico](/microsoftteams/set-up-phone-system-voicemail). 
+     *    **Persona nell'azienda** Un utente in linea con una licenza di **Sistema telefonico** e abilitata per Enterprise Voice o Piani di chiamata. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. Per fare ciò, scegli una **Persona nell'azienda** e questa persona riceverà le chiamate inoltrate direttamente sulla segreteria telefonica. </br><br/>  Per ulteriori informazioni sulle licenze necessarie per la segreteria telefonica, consulta [Configurare i messaggi vocali in Sistema telefonico](/microsoftteams/set-up-phone-system-voicemail). 
 
         > [!Note]
         > Gli utenti ospitati localmante con Lync Server 2010 non sono supportati.<br/>
@@ -204,13 +205,13 @@ Nell'**Interfaccia di amministrazione di Skype for Business**, fai clic su **Ins
 
 Puoi proteggere l'identità di un utente modificando l'ID chiamante per le chiamate in uscita a una coda di chiamata, mediante la creazione di un criterio utilizzando il cmdlet **New-CallingLineIdentity**.
   
-Per farlo, esegui:
+Per farlo, esegui quanto segue:
   
 ```
 New-CsCallingLineIdentity -Identity "UKSalesQueue" -CallingIdSubstitute "Service" -ServiceNumber 14258828080 -EnableUserOverride $False -Verbose
 ```
 
-Quindi applica il criterio per l'utente utilizzando il cmdlet ** Grant-CallingLineIdentity.** Per farlo, esegui:
+Quindi applica il criterio per l'utente utilizzando il cmdlet ** Grant-CallingLineIdentity.** Per farlo, esegui quanto segue:
   
 ```
 Grant-CsCallingLineIdentity -PolicyName UKSalesQueue -Identity "AmosMarble@contoso.com"
@@ -234,7 +235,7 @@ Questi sono i cmdlet necessari per gestire una coda di chiamata.
     
 - [Remove-CsHuntgroup](https://technet.microsoft.com/en-us/library/mt796456.aspx)
     
-### <a name="more-about-windows-powershell"></a>Ulteriori informazioni su Windows PowerShell
+### <a name="more-about-windows-powershell"></a>Altre informazioni su Windows PowerShell
 
 - Windows PowerShell è incentrato sulla gestione degli utenti e su quello che gli utenti sono o non sono autorizzati a fare. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
@@ -250,7 +251,7 @@ Questi sono i cmdlet necessari per gestire una coda di chiamata.
     
   - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-topics"></a>See also
 [Ecco cosa offre il Sistema telefonico in Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system)
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](getting-service-phone-numbers.md)

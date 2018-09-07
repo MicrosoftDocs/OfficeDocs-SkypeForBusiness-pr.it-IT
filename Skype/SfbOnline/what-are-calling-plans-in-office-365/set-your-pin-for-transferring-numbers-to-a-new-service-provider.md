@@ -1,5 +1,5 @@
 ---
-title: Configurare il PIN per il trasferimento numeri a un nuovo provider di servizi
+title: Configurare il PIN per il trasferimento di numeri a un nuovo provider di servizi
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: f1defa5b-e49c-4d8c-a5f8-3f736201af5e
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -20,14 +21,14 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Per trasferire o esportare numeri di telefono da Skype for Business Online  in un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di esportazione di un numero di telefono.
-ms.openlocfilehash: 4dc60b489a6b382df5764f0c011f716f36a17cd8
-ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.openlocfilehash: 144e3b0527b8557bbbb6a7f9c1b51ad2d61a0f1f
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23779142"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23851714"
 ---
-# <a name="set-your-pin-for-transferring-numbers-to-a-new-service-provider"></a>Configurare il PIN per il trasferimento numeri a un nuovo provider di servizi
+# <a name="set-your-pin-for-transferring-numbers-to-a-new-service-provider"></a>Configurare il PIN per il trasferimento di numeri a un nuovo provider di servizi
 
 Per il trasferimento o *l'esportazione* di numeri di telefono da Skype for Business Online a un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di esportazione di un numero di telefono. 
   
@@ -50,9 +51,9 @@ Ecco alcune informazioni specifiche sul PIN che è necessario conoscere:
     
 ## <a name="set-up-your-pin"></a>Configurare il PIN
 
-![sfb-logo-30x30.png](../images/sfb-logo-30x30.png) **Tramite l'interfaccia di amministrazione di Skype for Business**
+![sfb-logo-30x30.png](../images/sfb-logo-30x30.png) **Utilizzo dell'Interfaccia di amministrazione di Skype for Business**
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedi a Office 365 con l'account aziendale o scolastico.
     
 2. Vai su **Interfaccia di amministrazione di Office 365** > **Interfacce amministratore** > **Skype for Business**.
     

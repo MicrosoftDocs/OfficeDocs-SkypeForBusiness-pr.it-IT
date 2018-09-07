@@ -1,5 +1,5 @@
 ---
-title: Cambiare l'indirizzo di emergenza per un utente
+title: Modificare l'indirizzo di emergenza di un utente
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: 5412636c-ad0e-48a5-b199-5925156abee4
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -20,26 +21,26 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: "Procedura per cambiare l'indirizzo di emergenza per un utente per l'utilizzo con la Rete telefonica pubblica commutata (PSTN) negli Stati Uniti e in Europe. "
-ms.openlocfilehash: 62deeae8624ad0eb6b85c25a39c475b0d1d0b198
-ms.sourcegitcommit: cbb4738e119cf366c3aad9aad7f7b369bcd86c19
+ms.openlocfilehash: 5f08e7503e95028e5045404dc4a0ba294addd481
+ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23779046"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23860550"
 ---
-# <a name="change-the-emergency-address-for-a-user"></a>Cambiare l'indirizzo di emergenza per un utente
+# <a name="change-the-emergency-address-for-a-user"></a>Modificare l'indirizzo di emergenza di un utente
 
-Durante la configurazione dei Piani di chiamata in Office 365, devi assegnare un indirizzo di emergenza a ciascun numero di telefono o utente. Nei paesi europei, l'indirizzo di emergenza è associato al numero di telefono quando lo si ottiene da Office 365 o quando si trasferisce un numero di telefono in Office 365. Negli Stati Uniti, l'indirizzo di emergenza è associato al numero di telefono quando viene assegnato all'utente. È possibile cambiare l'indirizzo di emergenza se l'utente a cui è assegnato si sposta in una nuova posizione. Per ulteriori informazioni su indirizzi di mergenza e posizioni, consulta [Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni di emergenza?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing)
+Durante la configurazione dei Piani di chiamata in Office 365, devi assegnare un indirizzo di emergenza a ciascun numero di telefono o utente. Nei paesi europei, l'indirizzo di emergenza è associato al numero di telefono quando lo si ottiene da Office 365 o quando si trasferisce un numero di telefono in Office 365. Negli Stati Uniti, l'indirizzo di emergenza è associato al numero di telefono quando viene assegnato all'utente. È possibile cambiare l'indirizzo di emergenza se l'utente a cui è assegnato si sposta in una nuova posizione. Per ulteriori informazioni su posizioni e indirizzi di emergenza, consulta [ Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni di emergenza?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing)
   
 Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo costo, consulta [Licenze per componenti aggiuntivi per Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
-## <a name="change-the-emergency-address-for-a-user"></a>Cambiare l'indirizzo di emergenza per un utente
+## <a name="change-the-emergency-address-for-a-user"></a>Modificare l'indirizzo di emergenza di un utente
 
 ![sfb-logo-30x30.png](../images/sfb-logo-30x30.png) **Usare l'Interfaccia di amministrazione di Skype for Business**
 
-1. Accedi a Office 365 con il tuo account aziendale o scolastico.
+1. Accedi a Office 365 con l'account aziendale o scolastico.
     
-2. Vai su **Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Accedi all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
 3. Nella barra di navigazione sinistra, vai su **Voce** > **Utenti voce**.
     
@@ -48,7 +49,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
     
 4. Nella pagina **Utenti voce**, individua e seleziona l'utente a cui desideri cambiare l'indirizzo di emergenza.
     
-5. Nel riquadro Azioni, in **Posizione di emergenza**, fai clic su **Cambia**.
+5. Nel riquadro Azioni, in **Posizione di emergenza**, fai clic su **Modifica**.
     
 6. Nella pagina **Assegna numero**, fai clic su **Cambia posizione**. 
     
@@ -60,9 +61,9 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
 8. Seleziona un nuovo indirizzo di emergenza dall'elenco e fai clic su **Salva**.
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md)
+[Aggiungere o rimuovere un indirizzo di emergenza dell'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md)
 
-[Aggiungere, cambiare o rimuovere una posizione di emergenza per l'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md)
+[Aggiungere, modificare o rimuovere una posizione di emergenza dell'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md)
 
 [Cos'è la convalida dell'indirizzo?](what-is-address-validation.md)
 
