@@ -15,17 +15,17 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Priority
+localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Scopri quali informazioni vengono inviate automaticamente agli utenti tramite posta elettronica quando modificano le impostazioni di conferenza telefonica in Skype for Business online. '
-ms.openlocfilehash: 3f37ca23a33131f66b9a2251087ac24ed9220c91
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
-ms.translationtype: HT
+ms.openlocfilehash: 2ffe61d165b7cbfe6f91af9b819f892f88433724
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "23854652"
+ms.locfileid: "23890427"
 ---
 # <a name="emails-sent-to-users-when-their-settings-change-in-skype-for-business-online"></a>Messaggi di posta elettronica inviati agli utenti quando le loro impostazioni cambiano in Skype for Business online
 
@@ -51,7 +51,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
     
 - **L'ID conferenza o il numero di telefono per le conferenze predefinito di un utente cambia.**
     
-    Questo messaggio di posta elettronica contiene l'ID conferenza, il numero di telefono di conferenza predefinito, le istruzioni e il collegamento per utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business online che consente di aggiornare riunioni esistenti per l'utente. Tuttavia, questo messaggio di posta elettronica non include il PIN per l'audioconferenza dell'utente. Consulta [Reimpostare l'ID conferenza di un utente](reset-a-conference-id-for-a-user.md).
+    Questo messaggio di posta elettronica contiene l'ID conferenza, il numero di telefono di conferenza predefinito, le istruzioni e il collegamento per utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business online che consente di aggiornare riunioni esistenti per l'utente. Tuttavia, questo messaggio di posta elettronica non include il PIN per l'audioconferenza dell'utente. Reimpostare il PIN dell'organizzatore della conferenza
     
     > [!NOTE]
     > Se l'organizzazione è stata abilitata per gli ID conferenza dinamici, tutte le riunioni dell'utente pianificate avranno ID conferenza univoci. È possibile impostare [gli ID audioconferenza dinamici all'interno dell'organizzazione](using-audio-conferencing-dynamic-ids-in-your-organization.md). 
@@ -62,7 +62,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
   
 - **Viene reimpostato il PIN di audioconferenza di un utente.**
     
-    Questo messaggio di posta elettronica contiene il PIN di audioconferenza dell'organizzatore, l'ID conferenza esistente e il numero di telefono di conferenza predefinito per l'utente. Consulta [Reimpostare il PIN di audioconferenza](reset-the-audio-conferencing-pin.md).
+    Questo messaggio di posta elettronica contiene il PIN di audioconferenza dell'organizzatore, l'ID conferenza esistente e il numero di telefono di conferenza predefinito per l'utente. Vedere [reimpostare il PIN per conferenze Audio](reset-the-audio-conferencing-pin.md).
     
     > [!NOTE]
     > Se l'organizzazione è stata abilitata per gli ID conferenza dinamici, tutte le riunioni dell'utente pianificate avranno ID conferenza univoci. È possibile impostare [gli ID audioconferenza dinamici all'interno dell'organizzazione](using-audio-conferencing-dynamic-ids-in-your-organization.md). 
@@ -86,24 +86,24 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
 
 ## <a name="make-changes-to-the-email-messages-that-are-sent-to-them"></a>Apportare modifiche ai messaggi di posta elettronica inviati
 
-È possibile apportare modifiche alla posta elettronica inviata automaticamente agli utenti, tra cui l'indirizzo di posta elettronica e il nome visualizzato incluso nelle informazioni di contatto *Da*. Per impostazione predefinita, il mittente sarà Office 365, ma puoi modificare l'indirizzo di posta elettronica e il nome visualizzato utilizzando Windows PowerShell e il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285). Per apportare modifiche all'indirizzo di posta elettronica da cui viene inviato il messaggio agli utenti, procedi come segue:
+È possibile apportare modifiche alla posta elettronica inviato automaticamente agli utenti, tra cui l'indirizzo di posta elettronica e il nome visualizzato è inclusa nelle informazioni sul contatti *da* . Per impostazione predefinita, il mittente dei messaggi di posta elettronica saranno da Office 365, ma è possibile modificare l'indirizzo di posta elettronica e viene visualizzato il nome utilizzando Windows PowerShell e il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) . Per apportare modifiche all'indirizzo di posta elettronica che invia messaggio di posta elettronica agli utenti, è necessario:
   
-- Immetti l'indirizzo di posta elettronica nel parametro  _SendEmailFromAddress_.
-    
 - Immetti il nome visualizzato nel parametro  _SendEmailFromDisplayName_.
     
-- Imposta il parametro _SendEmailOverride_ su _True_.
+- Enter the email display name in the  _SendEmailFromDisplayName_ parameter.
     
-Se desideri apportare modifiche al messaggio di posta elettronica inviato agli utenti, come l'indirizzo di posta elettronica del mittente e il nome visualizzato, devi eseguire:
+- Il parametro _SendEmailOverride_ impostato su _True_.
+    
+È possibile apportare modifiche al messaggio di posta elettronica inviato a utenti, ad esempio l'indirizzo di posta elettronica inviato il messaggio di posta elettronica da e il nome visualizzato per la posta elettronica, eseguire:
   
 ```
 Set-CsOnlineDialInConferencingTenantSetting -SendEmailOverride $true -SendEmailFromAddress amos.marble -SendEmailFromDisplayName "Amos Marble"
 ```
 
 > [!NOTE]
->  Se desideri modificare le informazioni relative all'indirizzo di posta elettronica, devi verificare che i criteri di posta elettronica in ingresso dell'organizzazione consentano i messaggi in arrivo dall'indirizzo specificato. Se decidi di sostituire le informazioni di contatto *Da*, devi verificare che i messaggi di posta elettronica vengano inviati correttamente agli utenti. Puoi farlo facendo un test con un utente della tua organizzazione.
+>  Se si desidera modificare le informazioni sull'indirizzo di posta elettronica, è necessario assicurarsi che i criteri di posta elettronica in ingresso dell'ambiente di consentano i messaggi di posta elettronica che provengono da personalizzato specificato dall'indirizzo. Se decidi di sostituire le informazioni di contatto *Da*, devi verificare che i messaggi di posta elettronica vengano inviati correttamente agli utenti. Puoi farlo facendo un test con un utente della tua organizzazione.
   
-Puoi usare il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) per gestire altre impostazioni per la tua organizzazione, inclusa la posta elettronica.
+È possibile utilizzare il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) per gestire altre impostazioni per l'organizzazione, inclusa la posta elettronica.
   
 ## <a name="what-if-you-dont-want-email-to-be-sent-to-them"></a>E se non vuoi che la posta elettronica venga inviata a loro?
 
@@ -111,18 +111,18 @@ Quando disattivi l'invio di messaggi di posta elettronica agli utenti, la posta 
   
 Per impostazione predefinita, verranno inviati messaggi di posta elettronica agli utenti, ma se desideri impedire loro di ricevere posta elettronica per le audioconferenze, puoi utilizzare l'interfaccia di amministrazione di Skype for Business o Windows PowerShell. 
  
-![sfb-logo-30x30.png](../images/sfb-logo-30x30.png) **Tramite l'Interfaccia di amministrazione di Skype for Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png)  **utilizzando Skype per interfaccia di amministrazione di Business**
     
-1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, vai su **Audioconferenza** > **Impostazioni bridge Microsoft**.
+1. Nell' **Interfaccia di amministrazione di Skype for Business**, nella barra di spostamento sinistra, passa a **Servizi di conferenza telefonica con accesso esterno** > **Impostazioni bridge Microsoft**.
     
-2. Nella pagina **Impostazioni bridge Microsoft**, seleziona o deseleziona **Invia automaticamente messaggi di posta elettronica agli utenti se le impostazioni di Audioconferenza vengono modificate**. 
+2. Nella pagina **Impostazioni bridge Microsoft** , selezionare o deselezionare **automaticamente inviare messaggi di posta elettronica agli utenti se modificare le impostazioni di conferenza**. 
     
 3. Fai clic su **Salva**. 
 
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
-**Tramite Windows PowerShell**
+**Utilizzo di Windows PowerShell**
   
 1. Esegui le operazioni seguenti per disabilitare l'invio di posta elettronica a tutti gli utenti:
     
@@ -130,21 +130,21 @@ Per impostazione predefinita, verranno inviati messaggi di posta elettronica agl
   Set-CsOnlineDialInConferencingTenantSetting -AutomaticallySendEmailsToUsers $false
   ```
 
-Puoi usare il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) per gestire altre impostazioni per la tua organizzazione, inclusa la posta elettronica.
+È possibile utilizzare il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) per gestire altre impostazioni per l'organizzazione, inclusa la posta elettronica.
   
 ## <a name="what-else-should-you-know-about-this-email"></a>Cos'altro occorre sapere su questo messaggio di posta elettronica?
 
 - Per ulteriori informazioni su come abilitare e disabilitare automaticamente l'invio di posta elettronica agli utenti, consulta [Attivare o disattivare l'invio messaggi di posta elettronica quando le impostazioni di Audioconferenza vengono modificate](enable-or-disable-sending-emails-when-their-settings-change.md).
     
-- In alcuni casi, gli utenti perdono le informazioni audio e devi riuscire a inviare loro tutte le informazioni audio. A tale scopo, puoi utilizzare l'interfaccia di amministrazione di Skype for Business e fare clic su **Invia informazioni sulla conferenza tramite posta elettronica** nelle proprietà relative ai servizi di audioconferenza dell'utente. Consulta[Inviare un messaggio di posta elettronica a un utente con le sue informazioni sull'audioconferenza](send-an-email-to-a-user-with-their-dial-in-information.md). Tuttavia, queste informazioni non includono il PIN di audioconferenza.
+- In alcuni casi, gli utenti perdono le informazioni audio e devi riuscire a inviare loro tutte le informazioni audio. Tale operazione può essere eseguita utilizzando il Skype per interfaccia di amministrazione di Business e facendo clic su **Invia informazioni conferenza tramite posta elettronica** in proprietà audioconferenze con accesso esterno di un utente. [Uso di Windows PowerShell](send-an-email-to-a-user-with-their-dial-in-information.md) Tuttavia, queste informazioni non includono il PIN di audioconferenza.
     
     Di seguito è riportato un esempio del messaggio di posta elettronica che verrà inviato:
     
-     ![Messaggio di posta elettronica sulla conferenza telefonica](../images/81fe4e09-a346-4469-8cc5-c6d65f739b73.png)
+     ![Posta elettronica di conferenza telefonica con accesso esterno](../images/81fe4e09-a346-4469-8cc5-c6d65f739b73.png)
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Per impostazione predefinita, il mittente sarà Office 365, ma puoi modificare l'indirizzo di posta elettronica e il nome visualizzato utilizzando Windows PowerShell e il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285).
+- Per impostazione predefinita, il mittente dei messaggi di posta elettronica saranno da Office 365, ma è possibile modificare l'indirizzo di posta elettronica e viene visualizzato il nome utilizzando Windows PowerShell e il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) .
     
 - Windows PowerShell riguarda la gestione degli utenti e le azioni che sono autorizzati o meno a eseguire. Con Windows PowerShell puoi gestire Office 365 tramite un unico punto di amministrazione, che ti agevola il lavoro quotidiano quando hai molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedi i seguenti argomenti:
     
@@ -163,8 +163,8 @@ Puoi usare il cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://go.m
     > [!NOTE]
     > Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business Online.](https://go.microsoft.com/fwlink/?LinkId=294688)
   
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-topics"></a>See also
 
-[Attivare o disattivare l'invio di messaggi di posta elettronica quando le impostazioni di Audioconferenza vengono modificate](enable-or-disable-sending-emails-when-their-settings-change.md)
+[Abilitare o disabilitare l'invio messaggi di posta elettronica quando modificano le impostazioni di conferenza Audio](enable-or-disable-sending-emails-when-their-settings-change.md)
   
-[Inviare un messaggio di posta elettronica a un utente con le sue informazioni sull'audioconferenza](send-an-email-to-a-user-with-their-dial-in-information.md)
+[Inviare un messaggio di posta elettronica a un utente con le loro informazioni di conferenze Audio](send-an-email-to-a-user-with-their-dial-in-information.md)
