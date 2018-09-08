@@ -1,5 +1,5 @@
 ---
-title: Visualizzare un elenco di utenti abilitati per Audioconferenza in Skype for Business online
+title: Visualizzare un elenco di utenti abilitati per le conferenze Audio in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -15,19 +15,19 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Priority
+localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come visualizzare un elenco di utenti nell'organizzazione abilitati per la conferenza telefonica dall'interfaccia di amministrazione di Skype for Business. "
-ms.openlocfilehash: 5cb792a3706c93c764f119075fca657b2179a383
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
-ms.translationtype: HT
+ms.openlocfilehash: 722f9e411e1781529ea68f6995a2109f58d39cb0
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "23849854"
+ms.locfileid: "23881996"
 ---
-# <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-skype-for-business-online"></a>Visualizzare un elenco di utenti abilitati per Audioconferenza in Skype for Business online
+# <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-skype-for-business-online"></a>Visualizzare un elenco di utenti abilitati per le conferenze Audio in Skype Business online
 
 > [!NOTE]
 > Per informazioni sugli utenti abilitati su Microsoft Teams, consulta [Visualizzare un elenco di utenti che sono abilitati per le Audioconferenza su Microsoft Teams](/MicrosoftTeams/see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-teams).
@@ -40,7 +40,7 @@ Dopo aver abilitato gli utenti di Skype for Business all'interno della tua organ
 ## <a name="viewing-a-list-of-users"></a>Visualizzazione di un elenco di utenti
 
    
-- Nel riquadro di navigazione sinistro, vai su **Audioconferenza** > **Utenti**.
+- Nel riquadro di navigazione sinistro, vai su  **Audioconferenza** > **Utenti**.
 
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 
@@ -74,9 +74,9 @@ Dopo aver abilitato gli utenti di Skype for Business all'interno della tua organ
     
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Windows PowerShell è incentrato sulla gestione degli utenti e a cosa gli è consentito o non consentito fare. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
-  - [Introduzione a Windows PowerShell e Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
@@ -88,6 +88,6 @@ Dopo aver abilitato gli utenti di Skype for Business all'interno della tua organ
     
   - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-topics"></a>See also
 
-[Provare o acquistare Audioconferenza in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

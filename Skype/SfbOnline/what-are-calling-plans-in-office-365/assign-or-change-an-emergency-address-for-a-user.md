@@ -1,5 +1,5 @@
 ---
-title: Assegnare o modificare l'indirizzo di emergenza di un utente
+title: Assegnare o modificare l'indirizzo per gli interventi di emergenza di un utente
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -16,47 +16,47 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Priority
+localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come configurare un numero e un indirizzo di emergenza per ogni utente che può essere utilizzato con il telefono di rete pubblica (PSTN).
-ms.openlocfilehash: e4ca1934ddb604c5efd81fd6a21b6f18d39b144b
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
-ms.translationtype: HT
+ms.openlocfilehash: 053e0d13109f66b4e714b69f0bc5650e20acdb69
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "23854868"
+ms.locfileid: "23885812"
 ---
-# <a name="assign-or-change-an-emergency-address-for-a-user"></a>Assegnare o modificare l'indirizzo di emergenza di un utente
+# <a name="assign-or-change-an-emergency-address-for-a-user"></a>Assegnare o modificare l'indirizzo per gli interventi di emergenza di un utente
 
-Durante la configurazione dei Piani di chiamata in Office 365, devi assegnare un numero di telefono e un indirizzo di emergenza a ciascun utente. Prima di poter associare a un numero di telefono, è necessario creare l'indirizzo di emergenza. Consulta [Quali sono i luoghi di emergenza, gli indirizzi e il routing delle chiamate?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing) per ulteriori informazioni.
+Quando imposta la chiamata dei piani di Office 365, è necessario assegnare un numero di telefono e l'indirizzo di emergenza per ogni utente. Prima di poter associare a un numero di telefono, è necessario creare l'indirizzo di emergenza. Consulta [Quali sono i luoghi di emergenza, gli indirizzi e il routing delle chiamate?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing) per ulteriori informazioni.
   
 Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo costo, consulta [Licenze per componenti aggiuntivi per Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
 ## <a name="assign-or-change-an-emergency-address"></a>Assegnare o modificare un indirizzo di emergenza
 
-1. Accedi a Office 365 con l'account aziendale o scolastico.
+1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai su **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
-3. Nella barra di navigazione sinistra, vai su **Voce**, e quindi fai clic su **Utenti voce**.
+3. Nel riquadro sinistro passare a **Voice**, quindi scegliere **gli utenti di VoIP**.
     
     > [!IMPORTANT]
-    > Per visualizzare l'opzione **Voce** nella barra di navigazione sinistra dell'interfaccia di amministrazione di Skype for Business, è necessario acquistare almeno una **Licenza Enterprise E5**, una licenza per il componente aggiuntivo **Sistema telefonico** o una licenza per il componente aggiuntivo **Audioconferenza**.
+    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
     
 4. Nella pagina **Utenti voce**, individua e seleziona l'utente a cui desideri modificare l'indirizzo di emergenza.
     
-5. Nel riquadro Azioni, in **Posizione di emergenza**, fai clic su **Modifica**.
+5. Nel riquadro Azioni, in **Posizione per gli interventi di emergenza**, fai clic su **Modifica**.
     
     > [!NOTE]
     > È possibile modificare solo un indirizzo di emergenza che è già stato convalidato. Per modificare un indirizzo di emergenza che non è stato convalidato, elimina quell'indirizzo e creane un altro. 
   
 6. Nella pagina **Assegna numero**, fai clic su **Cambia luogo**.
     
-7. Su **Cambia indirizzo di emergenza**, immetti il nome della città e fai clic su **Cerca**.
+7. **Cambia indirizzo di emergenza per**immettere il nome della città e fare clic su **Cerca**.
     
-8. Seleziona l'indirizzo di emergenza dall'elenco a discesa e quindi fai clic su **Salva**. 
+8. Selezionare l'indirizzo di emergenza dall'elenco a discesa indirizzi e quindi fare clic su **Salva**. 
     
 ## <a name="related-topics"></a>Argomenti correlati
 [Cos'è la convalida dell'indirizzo?](what-is-address-validation.md)

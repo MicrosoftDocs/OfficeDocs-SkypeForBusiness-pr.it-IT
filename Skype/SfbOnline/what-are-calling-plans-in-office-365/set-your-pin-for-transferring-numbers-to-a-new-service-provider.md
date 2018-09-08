@@ -1,5 +1,5 @@
 ---
-title: Configurare il PIN per il trasferimento di numeri a un nuovo provider di servizi
+title: Configurare il PIN per il trasferimento numeri a un nuovo provider di servizi
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -16,19 +16,19 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Priority
+localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
 description: Per trasferire o esportare numeri di telefono da Skype for Business Online  in un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di esportazione di un numero di telefono.
-ms.openlocfilehash: 144e3b0527b8557bbbb6a7f9c1b51ad2d61a0f1f
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
-ms.translationtype: HT
+ms.openlocfilehash: ef688c6aa7aabd1880513994236cb62353eab665
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "23851714"
+ms.locfileid: "23890109"
 ---
-# <a name="set-your-pin-for-transferring-numbers-to-a-new-service-provider"></a>Configurare il PIN per il trasferimento di numeri a un nuovo provider di servizi
+# <a name="set-your-pin-for-transferring-numbers-to-a-new-service-provider"></a>Configurare il PIN per il trasferimento numeri a un nuovo provider di servizi
 
 Per il trasferimento o *l'esportazione* di numeri di telefono da Skype for Business Online a un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di esportazione di un numero di telefono. 
   
@@ -51,11 +51,11 @@ Ecco alcune informazioni specifiche sul PIN che è necessario conoscere:
     
 ## <a name="set-up-your-pin"></a>Configurare il PIN
 
-![sfb-logo-30x30.png](../images/sfb-logo-30x30.png) **Utilizzo dell'Interfaccia di amministrazione di Skype for Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
-1. Accedi a Office 365 con l'account aziendale o scolastico.
+1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai su **Interfaccia di amministrazione di Office 365** > **Interfacce amministratore** > **Skype for Business**.
+2. Vai al **Centro di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.
     
 3. Nel riquadro di spostamento sinistro, seleziona **Voce** > **Ordini di portabilità**.
     
@@ -64,7 +64,7 @@ Ecco alcune informazioni specifiche sul PIN che è necessario conoscere:
 5. Nel pannello **Imposta o modifica il PIN di portabilità**, immettere il PIN e fare clic su **Salva**.
 
 > [!NOTE]
-> Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+> Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
     
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)

@@ -16,40 +16,40 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Priority
+localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come eseguire la ricerca di numeri di telefono che è possibile assegnare agli utenti tramite paese/area geografica, stato/regione o città e specificare la quantità di numeri necessaria. '
-ms.openlocfilehash: 057eca4ba0f884fb1c81cb8ee8e45be6a19194bf
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
-ms.translationtype: HT
+ms.openlocfilehash: d3d131e850fef1afe95763a0e48b6c7c766b55ed
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "23850148"
+ms.locfileid: "23884112"
 ---
 # <a name="search-for-phone-numbers-for-users"></a>Cercare numeri di telefono per gli utenti
 
-Quando configuri gli utenti della tua organizzazione per la ricezione e l'esecuzione delle telefonate, devi utilizzare l'**Interfaccia di amministrazione di Skype for Business** e ottenere innanzitutto i numeri di telefono da assegnare agli utenti. Questo numero, scelto per l'organizzazione, è disponibile nell'elenco a discesa che compare quando modifichi le proprietà dell'utente e fai clic su **Assegna**.
+Quando si imposta le impostazioni degli utenti all'interno dell'organizzazione di effettuare e ricevere chiamate telefoniche, è necessario utilizzare **Skype per interfaccia di amministrazione di Business** e ottenere innanzitutto i numeri di telefono che possono essere assegnati agli utenti. Questo numero, scelto per l'organizzazione, è disponibile nell'elenco a discesa che compare quando modifichi le proprietà dell'utente e fai clic su **Assegna**.
   
-Prima di poter assegnare numeri di telefono agli utenti, devi utilizzare la pagina **Nuovi numeri** per cercare i numeri disponibili automaticamente all'interno di un'area. Puoi eseguire una ricerca in base a **Paese/area geografica**, **Stato** e **Città** e inserire i numeri di telefono necessari per gli utenti. 
+Prima di poter assegnare numeri di telefono agli utenti, devi utilizzare la pagina **Nuovi numeri** per cercare i numeri disponibili automaticamente all'interno di un'area. Ricerca in base al **paese/area geografica**, **lo stato**e **città**e quindi immettere il numero dei numeri di telefono, che è necessario per gli utenti. 
   
-Se hai bisogno di aiuto per ottenere i numeri di telefono, consulta [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization) oppure[Contattare il supporto per prodotti per le aziende - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+Se è necessario alcuni assistenza per ottenere i numeri di telefono, è possibile visualizzare [i numeri di telefono di gestione dell'organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization) o un [contatto supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
   
 ## <a name="search-for-phone-numbers"></a>Cercare numeri di telefono
 
  **Per cercare numeri di telefono per gli utenti**
 
-![sfb-logo-30x30.png](../images/sfb-logo-30x30.png) **Tramite l'interfaccia di amministrazione di Skype for Business**
+![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
   
-1. Accedi a Office 365 con l'account aziendale o scolastico.
+1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
-3. Nella barra di navigazione sinistra, passa a **Voce** > **Numeri di telefono** e quindi fai clic su **Aggiungi nuovo numero** > **Nuovi numeri utente**.
+3. Nella barra di spostamento sinistra, passa a **Voce** > **Numeri di telefono** e quindi fai clic su **Aggiungi nuovo numero** > **Nuovi numeri utente**.
   
     > [!IMPORTANT]
-    > Per visualizzare l'opzione **Voce** nella barra di navigazione sinistra dell'Interfaccia di amministrazione di Skype for Business, devi prima acquistare almeno una **Licenza Enterprise E5**, una licenza per il componente aggiuntivo **Sistema telefonico** o una licenza per il componente aggiuntivo **Audioconferenza**.  
+    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.  
     
     
 4. Nella pagina **Aggiungi nuovi numeri utente**, fai clic sugli elenchi **Paese** e **Stato** per selezionare lo stato da cui scegliere i numeri, poi seleziona il prefisso locale della città dall'elenco **Città**.
@@ -64,7 +64,7 @@ Se hai bisogno di aiuto per ottenere i numeri di telefono, consulta [Gestire i n
 7. Seleziona i numeri di telefono desiderati e quindi fai clic su **Acquisisci numeri**.
     
     > [!IMPORTANT]
-    > Puoi acquisire più numeri di telefono delle licenze disponibili. Per determinare quanti numeri di telefono puoi acquisire, aggiungi il 10% delle tue licenze e poi aggiungi 10. Ad esempio, se disponi di 100 licenze **Piano di chiamata nazionale** e/o **Piano di chiamata internazionale**, puoi prenotare 120 numeri di telefono, supponendo che non siano già stati acquisiti alcuni numeri di telefono per quei 100 utenti. Per i dettagli, consulta [Quanti numeri di telefono è possibile ottenere?](/microsoftteams/how-many-phone-numbers-can-you-get)
+    > È possibile acquisire altri numeri di telefono che dispongono di licenze. Per determinare quanti numeri di telefono puoi acquisire, aggiungi il 10% delle tue licenze e poi aggiungi 10. Ad esempio, se si dispongono di 100 licenze **Chiamata pianificare interne** e/o **International la chiamata a pianificare** , è possibile prenotare 120 numeri di telefono, supponendo che non è stata acquisita già alcuni numeri di telefono per gli utenti di 100. Per ulteriori informazioni, vedere [quanti numeri di telefono è possibile ottenere?](/microsoftteams/how-many-phone-numbers-can-you-get)
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)

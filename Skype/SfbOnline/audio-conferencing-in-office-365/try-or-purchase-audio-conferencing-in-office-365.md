@@ -15,18 +15,18 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Priority
+localization_priority: Normal
 f1keywords:
 - ms.lync.lac.CpcGettingStarted
 ms.custom:
 - Audio Conferencing
 description: 'Vedi come provare o acquistare le licenze di Audioconferenza (conferenze PSTN) per Office 365 per configurare le conferenze telefoniche a cui gli utenti possono connettersi. '
-ms.openlocfilehash: 6730d8e928ab8851781e51e0392686912cf89721
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
-ms.translationtype: HT
+ms.openlocfilehash: 248156cb326c4614be717b6f851d0ea04b28dd39
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "23860796"
+ms.locfileid: "23888315"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365-for-skype-for-business-online"></a>Provare o acquistare Audioconferenza in Office 365 per Skype for Business Online
 
@@ -34,19 +34,19 @@ ms.locfileid: "23860796"
 > Per informazioni su Audioconferenza in Microsoft Teams, consulta [Provare o acquistare Audioconferenza in Office 365 per Skype per Microsof Teams](/MicrosoftTeams/try-or-purchase-audio-conferencing-in-office-365-for-teams).
 
 
-A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere ad una riunione. Skype for Business include la funzionalità di Audioconferenza proprio per questa evenienza! Le persone possono accedere alle riunioni di Skype for Business usando un telefono, al posto di usare la app di Skype for Business su un dispositivo mobile o PC.
+A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Skype per le aziende include la funzionalità di audioconferenza per solo questa situazione! Le persone possono accedere alle riunioni di Skype for Business usando un telefono, al posto di usare la app di Skype for Business su un dispositivo mobile o PC.
 
-È sufficiente impostare il servizio di Audioconferenza per gli utenti che prevedono di programmare o condurre riunioni. Le persone che partecipano alla riunione tramite telefono non hanno bisogno che le venga assegnata alcuna licenza o di altre impostazioni.
+È sufficiente configurare conferenze audio per gli utenti che prevedono di programmare o condurre riunioni. Le persone che partecipano alla riunione tramite telefono non hanno bisogno che le venga assegnata alcuna licenza o di altre impostazioni.
 
 Per informazioni sui prezzi, consulta [Prezzi per Audioconferenza](https://products.office.com/en-us/skype-for-business/audio-conferencing#Requirements).
 
-## <a name="step-1-buy-and-assign-audio-conferencing-licenses"></a>Passo 1: Acquista e assegna licenze di Audioconferenza
+## <a name="step-1-buy-and-assign-audio-conferencing-licenses"></a>Passaggio 1: Acquistare e assegnare licenze di conferenze Audio
 
 È necessario essere un [amministratore di Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) per eseguire la seguente procedura.
 
 ### <a name="to-buy-and-assign-user-audio-conferencing-licenses"></a>Per acquistare e assegnare licenze utente di Audioconferenza:
 
-1. Verifica se **Audioconferenza** è disponibile nel tuo paese/area geografica. [Disponibilità paesi e aree geografiche per Audioconferenza e Piani di chiamata](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). 
+1. Scoprire se **l'Audioconferenza** è disponibile nel paese/area geografica. [Paesi e la disponibilità di aree per le conferenze Audio e la chiamata Plans](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). 
     
 2. Ottenere le licenze di **Audioconferenza**. Se vuoi:
 
@@ -56,17 +56,17 @@ Per informazioni sui prezzi, consulta [Prezzi per Audioconferenza](https://produ
 
 3. [Assegnare o rimuovere licenze per Office 365 per aziende](https://support.office.com/article//997596b5-4173-4627-b915-36abac6786dc) che hai acquistato per gli utenti dell'organizzazione che intendono pianificare o condurre riunioni.
 
-4. Se hai acquistato licenze del componente aggiuntivo Audioconferenza e licenze di Credito per la comunicazione, assegna anche quelle. Per istruzioni, vedi [Assegnare licenze di Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).
+4. Se hai acquistato licenze del componente aggiuntivo Audioconferenza e licenze di Credito per la comunicazione, assegna anche quelle. Per ulteriori informazioni, vedere [Assegnare Skype per le licenze aziendali e team di Microsoft](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).
 
 ### <a name="to-buy-and-assign-pay-per-minute-audio-conferencing-licenses"></a>Per acquistare e assegnare licenze Audioconferenza con tariffa al minuto:
 
 Se si è un cliente di licenze a volume, è possibile ottenere le licenze di Audioconferenza con tariffa al minuto. Per ulteriori informazioni sulle licenze di Audioconferenza con tariffa al minuto, consulta [Audioconferenza con tariffa al minuto](/microsoftteams/audio-conferencing-pay-per-minute). 
   
-1. Verifica se **Audioconferenza** è disponibile nel tuo paese/area geografica. [Disponibilità di Audioconferenza e Piani di chiamata per paese e area geografica](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). 
+1. Scoprire se **l'Audioconferenza** è disponibile nel paese/area geografica. [Disponibilità paese e alle aree per le conferenze Audio e la chiamata Plans](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). 
     
 2. Ottenere le licenze di **Audioconferenza**. Per acquistare le licenze di tariffa al minuto, contattare il proprio rappresentante dell'account.
     
-3. [Impostare il Credito per la comunicazione per la propria organizzazione](/microsoftteams/set-up-communications-credits-for-your-organization). Per impostare il Credito per la comunicazione, consulta [Cosa è il Credito per la comunicazione?](/microsoftteams/what-are-communications-credits)
+3. [Impostare i titoli di coda di comunicazione per l'organizzazione](/microsoftteams/set-up-communications-credits-for-your-organization) per l'organizzazione. Per impostare il Credito per la comunicazione, consulta [Cosa è il Credito per la comunicazione?](/microsoftteams/what-are-communications-credits)
     
     > [!IMPORTANT]
     > Se i Crediti per la comunicazione non sono stati impostati, l'Audioconferenza non funzionerà per tutti gli utenti con le licenze di tariffa al minuto.
@@ -84,13 +84,13 @@ Quando si assegna una licenza di **Audioconferenza** agli utenti dell'organizzaz
 
 La procedura seguente è **facoltativa**, ma molti amministratori preferiscono eseguirla:
 
-1. [Personalizzare gli inviti alle riunioni](../set-up-skype-for-business-online/customize-meeting-invitations.md). I numeri di accesso impostati per l'utente verranno aggiunti automaticamente agli inviti alle riunioni inviati ai partecipanti. Tuttavia, puoi aggiungere una guida o collegamenti legali personalizzati, un messaggio di testo e una piccola immagine aziendale.
+1. [Personalizza convocazioni di riunione](../set-up-skype-for-business-online/customize-meeting-invitations.md). I numeri di accesso impostati per l'utente verranno aggiunti automaticamente agli inviti alle riunioni inviati ai partecipanti. Tuttavia, puoi aggiungere una guida o collegamenti legali personalizzati, un messaggio di testo e una piccola immagine aziendale.
 
-2. [Impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbers-included-on-invites.md). Questo è il numero di telefono che verrà visualizzato nelle riunioni pianificate dall'utente.
+2. [Impostare il telefono invita numeri inclusi nel](set-the-phone-numbers-included-on-invites.md). Questo è il numero di telefono che verrà visualizzato nelle riunioni pianificate dall'utente.
 
 3. [Impostare le lingue dell'operatore automatico per Audioconferenza](set-auto-attendant-languages-for-audio-conferencing.md) che utilizza l'operatore automatico di Audioconferenza per salutare un utente quando quest'ultimo chiama un numero di telefono di audioconferenza. Questo passaggio si applica solo se si utilizza Microsoft come provider di audioconferenza.
 
-4. [Impostare la lunghezza del PIN per le riunioni in Audioconferenza](set-the-pin-length-for-audio-conferencing-meetings.md).
+4. [Impostare la lunghezza del PIN per le riunioni di conferenze Audio](set-the-pin-length-for-audio-conferencing-meetings.md).
 
 
 > [!NOTE]

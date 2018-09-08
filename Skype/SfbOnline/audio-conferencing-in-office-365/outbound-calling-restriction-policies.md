@@ -6,6 +6,7 @@ manager: serdars
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
+search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
@@ -13,17 +14,17 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Priority
+localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Gli amministratori possono controllare il tipo di utente finale e servizi di conferenza PSTN le chiamate audio che possono essere effettuate dagli utenti.
-ms.openlocfilehash: 6096816ef9fb98811ec3ebed5a56b90a90b58c29
-ms.sourcegitcommit: 6207b98e8395f6c640b61cfb3f6c85d96520e33b
+ms.openlocfilehash: ed61dc5c131dd38d59820f3ccda9682dcf7fd886
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "22490576"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23882013"
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 
@@ -48,7 +49,7 @@ Controlli delle chiamate in uscita possono essere applicati a ogni utente e forn
 
 1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
 
-2. Nella parte superiore della pagina, fare clic su **Modifica**.
+2. Nella parte superiore della pagina, fai clic su **Modifica**.
 
 3. Accanto a **Servizi di conferenza Audio**, fare clic su **Modifica**.
 

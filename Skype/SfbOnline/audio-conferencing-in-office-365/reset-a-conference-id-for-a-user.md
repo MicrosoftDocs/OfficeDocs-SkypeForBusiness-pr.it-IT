@@ -1,5 +1,5 @@
 ---
-title: Reimpostare un ID conferenza per un utente su Skype for Business online
+title: Reimpostare un ID conferenza per un utente in Skype Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -15,33 +15,33 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Priority
+localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: "Informazioni sui passaggi per reimpostare l'ID conferenza di un utente su Skype for Business online e ottenere collegamenti di aggiornamento e migrazione della riunione. "
-ms.openlocfilehash: 34e165d92f4dc63eea8fc31c05612b6e20b64025
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
-ms.translationtype: HT
+description: 'Informazioni sui passaggi per reimpostare un utente della riunione ID conferenza in Skype Business online e vengono forniti collegamenti get a strumenti di aggiornamento e migrazione della riunione. '
+ms.openlocfilehash: d569dfb015db5cea79c57233ba455adfd90a3182
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "23850062"
+ms.locfileid: "23887546"
 ---
-# <a name="reset-a-conference-id-for-a-user-in-skype-for-business-online"></a>Reimpostare un ID conferenza per un utente su Skype for Business online
+# <a name="reset-a-conference-id-for-a-user-in-skype-for-business-online"></a>Reimpostare un ID conferenza per un utente in Skype Business online
 
 > [!NOTE]
 > Per informazioni sulla reimpostazione di un ID conferenza su Microsoft Teams, consulta [Reimpostare un ID conferenza per un utente su Microsoft Teams](/MicrosoftTeams/reset-a-conference-id-for-a-user-in-teams).
 
-Un ID conferenza dinamico è incluso nella parte inferiore dell'invito alla riunione insieme ai numeri di telefono di accesso esterno che possono essere utilizzati dai chiamanti per partecipare a una riunione. Quando l'utente compone il numero di telefono, l'operatore automatico della riunione richiede di inserire l'ID conferenza per poter partecipare alla riunione.
+Un ID conferenza dinamica è incluso nella parte inferiore dell'insieme ai numeri di telefono di accesso esterno che possono essere utilizzati per i chiamanti per chiamare una riunione convocazioni di riunione. Quando l'utente digita il numero di telefono, l'operatore automatico per la riunione verrà chiedere al chiamante di immettere l'ID conferenza in modo che è possibile partecipare alla riunione.
   
 > [!NOTE]
 > Se il provider di servizi di conferenza è Microsoft, l'ID conferenza degli utenti è impostato su Solo dinamico per impostazione predefinita. Purtroppo, non è possibile modificarlo in statico nell'Interfaccia di amministrazione di Skype for Business o utilizzando Windows Powershell, dato che questa opzione non è più supportata. Gli ID conferenza vengono impostati automaticamente solo per gli utenti di Skype for Business abilitati per Audioconferenza. 
 
-## <a name="resetting-the-conference-id-for-a-user"></a>Reimpostazione dell'ID conferenza di una riunione per un utente
+## <a name="resetting-the-conference-id-for-a-user"></a>Reimpostare l'ID conferenza per un utente
    
-1. Nell'**Interfaccia di amministrazione di Skype for Business**, clicca su **Audioconferenza** > **Utenti**, seleziona un utente, e poi nel riquadro Azioni alla voce **ID conferenza**, fai clic su **Reimposta**.
+1. In **Skype per interfaccia di amministrazione di Business**, fare clic su **servizi di conferenza Audio** > **gli utenti**, selezionare un utente e quindi nel riquadro azioni in **ID conferenza** fare clic su **Reimposta**.
     
-2. Nella finestra **Reimpostare ID conferenza?**, fai clic su **Sì**. Un ID conferenza verrà creato automaticamente e un messaggio di posta elettronica verrà inviato all'utente con il nuovo ID conferenza. Per impostazione predefinita, i messaggi di posta elettronica vengono inviati agli utenti, ma questa impostazione può essere disattivata.
+2. Nella **reimpostare ID conferenza?** finestra, fare clic su **Sì**. A conference ID will be automatically created and an email sent to the user with the new conference ID. Per impostazione predefinita, messaggi di posta elettronica inviati a utenti, ma si possono essere disattivata.
     
 > [!NOTE]
 > Dopo la reimpostazione dell'ID conferenza, viene inviata all'utente un'e-mail con il nuovo ID conferenza. Questo messaggio viene inviato all'indirizzo e-mail principale, che, in molti casi, corrisponde alla cassetta postale di Office 365. Nell'e-mail è contenuto il nuovo ID conferenza, i numeri di telefono predefiniti per l'accesso esterno e alcune istruzioni per utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business, che consente di aggiornare le riunioni esistenti. 
@@ -51,17 +51,17 @@ Un ID conferenza dinamico è incluso nella parte inferiore dell'invito alla riun
 
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 
-- Facendo clic su **Invia informazioni conferenza tramite posta elettronica**, puoi inviare all'utente tutte le informazioni relative alla conferenza in un messaggio di posta elettronica che contiene l'ID conferenza e i numeri di telefono per l'accesso esterno. Il PIN non è incluso.
+- È possibile inviare tutte le informazioni di servizi di conferenza per utente in un messaggio di posta elettronica che include l'ID conferenza e i numeri di telefono di accesso esterno facendo clic su **Invia informazioni conferenza tramite posta elettronica** dell'utente nel riquadro azioni. Il PIN non è incluso.
     
-- Un ID conferenza conterrà 7 cifre e tale lunghezza non può essere modificata nell'Interfaccia di amministrazione di Skype for Business o tramite Windows PowerShell.
+- Un ID conferenza conterrà 7 cifre e non è possibile modificare la lunghezza in Skype for Business admin center o utilizzando Windows PowerShell.
     
-- Dopo la reimpostazione, il nuovo ID conferenza viene mostrato nella sezione **ID conferenza**.
+- Dopo la reimpostazione, il nuovo ID conferenza viene riportato nella sezione **ID conferenza**.
     
-- Per visualizzare l'ID conferenza di un utente per un'audioconferenza, osserva la parte inferiore del riquadro Azioni alla voce **Audioconferenza** dopo aver selezionato l'utente nella pagina **Utenti**.
+- L'ID conferenza per un utente per le conferenze audio può essere visualizzato nella parte inferiore del riquadro delle azioni in **servizi di conferenza Audio** quando si seleziona l'utente nella pagina **utenti** .
     
-- Una volta creato un nuovo ID conferenza, il vecchio ID conferenza non potrà più essere utilizzato dai chiamanti. È necessario informare gli utenti di pianificare di nuovo gli inviti alle riunioni esistenti per assicurarsi che il nuovo ID conferenza venga aggiunto agli inviti. Gli utenti possono utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business per aggiornare le riunioni esistenti. Per scoprire come scaricare, installare ed eseguire lo strumento di aggiornamento delle riunioni di Skype for Business, consulta:
+- Una volta creato un nuovo ID conferenza, il vecchio ID conferenza non potrà più essere utilizzato dai chiamanti. You should notify users to reschedule their existing meeting invites to make sure the new conference ID is added to the invitations. Gli utenti possono utilizzare Skype per strumento riunione Business per aggiornare le riunioni esistenti. Per informazioni su come scaricare, installare ed eseguire il Skype per strumento di aggiornamento riunione Business, vedere:
     
-  - [Strumento di aggiornamento delle riunioni di Skype for Business e Lync](https://support.office.com/article/2b525fe6-ed0f-4331-b533-c31546fcf4d4)
+  - [Meeting Update Tool per Skype for Business e Lync](https://support.office.com/article/2b525fe6-ed0f-4331-b533-c31546fcf4d4)
     
   - [Skype for Business online, strumento di migrazione delle riunioni (64 bit)](https://go.microsoft.com/fwlink/?LinkID=626047)
     
@@ -71,7 +71,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore dell'invito alla riun
 
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
-  - [Introduzione a Windows PowerShell e Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
@@ -83,6 +83,6 @@ Un ID conferenza dinamico è incluso nella parte inferiore dell'invito alla riun
     
   - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-topics"></a>See also
 
-[Reimpostare il PIN di Audioconferenza](reset-the-audio-conferencing-pin.md)
+[Reimpostare il PIN per conferenze Audio](reset-the-audio-conferencing-pin.md)

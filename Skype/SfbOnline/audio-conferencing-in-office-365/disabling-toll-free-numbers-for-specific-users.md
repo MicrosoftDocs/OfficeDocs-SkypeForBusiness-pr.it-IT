@@ -14,17 +14,17 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Priority
+localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Gli amministratori possono controllare come gli organizzatori utilizzano i numeri gratuiti per le riunioni.
-ms.openlocfilehash: 6b441d8c136375628243d77280b6a32768b0a590
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
-ms.translationtype: HT
+ms.openlocfilehash: b438ee16135485a79458869858c52dd35bafa560
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "23860722"
+ms.locfileid: "23885172"
 ---
 # <a name="disabling-toll-free-numbers-for-specific-skype-for-business-online-users"></a>Disattivazione di numeri gratuiti per utenti specifici su Skype for Business online
 
@@ -46,14 +46,14 @@ Quando i numeri gratuiti sono disabilitati per un determinato organizzatore:
 
  - I partecipanti possono continuare a partecipare alle riunioni dell'organizzatore tramite numeri a pagamento. 
 
-## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri gratuiti per utenti specifici 
+## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici 
 
 
-1. Nell'** Interfaccia di amministrazione di Skype for Business**, sul riquadro di navigazione sinistro, vai su **Audioconferenza** > ** Utenti** e quindi seleziona l'utente dall'elenco degli utenti disponibili. 
+1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili. 
 
-2. Nel riquadro Azioni fai clic su **Modifica**. 
+2. In the Action pane, click **Edit**. 
 
-3. Deseleziona **Consenti a questo utente l'utilizzo di numeri gratuiti per partecipare alle riunioni**. 
+3. Deselezionare **Consenti utilizzo di numeri verdi per partecipare alle riunioni di questo utente**. 
  
 4. Fai clic su **Salva**. 
  

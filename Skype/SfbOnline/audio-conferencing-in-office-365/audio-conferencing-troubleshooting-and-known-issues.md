@@ -16,19 +16,19 @@ ms.audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Priority
+localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: 'Ottenere un elenco di problemi noti quando si utilizza Microsoft come provider di conferenza telefonica, lo stato e alcune soluzioni alternative. '
-ms.openlocfilehash: 6a8988145e9f07e0f110e5e9aa3b6976fbc570c4
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
-ms.translationtype: HT
+description: 'Ottenere un elenco di problemi noti quando si utilizza Microsoft come i provider di conferenza telefonica, lo stato e alcune soluzioni alternative. '
+ms.openlocfilehash: e5c6144081eb68426d3be53efb0ac9e9acbf41bd
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "23850080"
+ms.locfileid: "23887462"
 ---
-# <a name="audio-conferencing-troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti relativi ai servizi di Audioconferenza
+# <a name="audio-conferencing-troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti relativi ai servizi di audioconferenza
 
  **[] **Questo articolo è rivolto ai clienti Skype for Business e Microsoft Teams che usano Microsoft come provider per audioconferenze. Non interessa i clienti che usano provider per audioconferenze di terzi (ACP).****
   
@@ -47,7 +47,7 @@ Per risolvere potenziali problemi durante la configurazione e il funzionamento d
 |Gli inviti alle riunioni per il componente aggiuntivo Outlook mostrano caratteri senza significato per le coordinate PSTN per le localizzazioni diverse da US.  <br/> |Quando si programmano riunioni private con il componente aggiuntivo Outlook per Microsoft Teams in computer con localizzazione non US, le coordinate PSTN possono contenere caratteri senza significato.  <br/> |Non ci sono soluzioni alternative.  <br/> |25/9/2017  <br/> |
 |L'accesso verso l'esterno richiede 5 cifre o più.  <br/> |Gli utenti che cercano di effettuare una chiamata verso l'esterno da una riunione devono digitare 5 o più cifre anche se è disponibile una regola di normalizzazione del piano di chiamata per normalizzare la composizione breve a E.164.  <br/> |Effettuare la chiamata con il numero DID o locale completo invece del numero interno.  <br/> |25/9/2017  <br/> |
 |Il controllo per le chiamate esterne a volte non viene visualizzato.  <br/> |Il controllo per le chiamate esterne può non essere visibile nel pannello Info riunione.  <br/> |Non ci sono soluzioni alternative.  <br/> |25/9/2017  <br/> |
-|Gli ID conferenza statici non sono supportati per le riunioni Microsoft Teams.  <br/> |Se l'amministratore sostituisce l'impostazione standard di ID conferenza da dinamico a statico, questo non ha effetto sulle riunioni di Microsoft Teams. [ Consulta Uso degli ID dinamici di Audioconferenza nella tua organizzazione.](using-audio-conferencing-dynamic-ids-in-your-organization.md)  <br/> |Non ci sono soluzioni alternative.  <br/> |25/9/2017  <br/> |
+|Gli ID conferenza statici non sono supportati per le riunioni Microsoft Teams.  <br/> |Se l'amministratore sostituisce l'impostazione standard di ID conferenza dinamico con l'impostazione ID conferenza statico, questo non ha effetto per le riunioni di Microsoft Teams. Vedere [ID dinamico tramite servizi di conferenza Audio all'interno dell'organizzazione](using-audio-conferencing-dynamic-ids-in-your-organization.md).  <br/> |Non ci sono soluzioni alternative.  <br/> |25/9/2017  <br/> |
 |Le coordinate riunione PSTN non sono disponibili per Skype for Business per gli utenti locali  <br/> |Se l'utente di Skype for Business è locale, assegnato con Skype for Business online, licenze di Audioconferenza e Teams, tutte le riunioni pianificate con Teams non includeranno le coordinate riunione PSTN. <br/> |Non ci sono soluzioni alternative.  <br/> |1/2/2018  <br/> |
    
 ### <a name="skype-for-business-app"></a>App Skype for Business
@@ -55,10 +55,10 @@ Per risolvere potenziali problemi durante la configurazione e il funzionamento d
 |**Problema**|**Comportamento/sintomi**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
 |L'opzione che riproduce una notifica quando qualcuno accede a una riunione o l'abbandona è attiva all'avvio della riunione, ma viene disattivata subito dopo.  <br/> |Per impostazione predefinita, le notifiche di accesso o abbandono sono disattivate per le riunioni alle quali i partecipanti accedono dalle app Skype for Business e tramite telefono. Gli annunci possono essere attivati nelle **Opzioni riunione Skype** nel'app Skype for Business. Per una riunione alla quale tutti i partecipanti accedono tramite telefono, le notifiche di accesso o abbandono sono attive per impostazione predefinita, poiché i presenti non possono visualizzare l'elenco dei partecipanti. Quando viene avviata una riunione i cui partecipanti eseguono l'accesso solo tramite telefono, le notifiche di accesso o abbandono sono attive, ma vengono disattivate se un utente esegue l'accesso tramite una app Skype for Business. Se sono state disattivate, le notifiche possono essere attivate nuovamente mediante le **Opzioni riunione Skype** nell'app Skype for Business. <br/> |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
-|Se, durante il provisioning iniziale, a un utente viene assegnata una licenza E5, è possibile che l'e-mail di benvenuto ai servizi di audioconferenza non sia stata recapitata in caso di mancata attivazione della cassetta postale.  <br/> |In tale evenienza è possibile inviare nuovamente le informazioni sui servizi di audioconferenza dell'utente utilizzando l'opzione **Servizi di audioconferenza** nell'UNRESOLVED_TOKEN_VAL(Skype for Business admin center) o mediante PowerShell. Consulta [Attivare o disattivare l'invio di messaggi di posta elettronica quando vengono modificate le impostazioni di Audioconferenza](enable-or-disable-sending-emails-when-their-settings-change.md).  <br/> **Nota:** Per inviare di nuovo all'utente il PIN per i servizi di audioconferenza, dovrai reimpostarlo. L'operazione può essere eseguita tramite l'opzione **Audioconferenza** nell'Interfaccia di amministrazione di Skype for Business o tramite PowerShell.          |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
+|Se, durante il provisioning iniziale, a un utente viene assegnata una licenza E5, è possibile che l'e-mail di benvenuto ai servizi di audioconferenza non sia stata recapitata in caso di mancata attivazione della cassetta postale.  <br/> |In tale evenienza è possibile inviare nuovamente le informazioni sui servizi di audioconferenza dell'utente utilizzando l'opzione **Servizi di audioconferenza** nell'UNRESOLVED_TOKEN_VAL(Skype for Business admin center) o mediante PowerShell. Vedere [abilitare o disabilitare l'invio messaggi di posta elettronica quando modificano le impostazioni di conferenza Audio](enable-or-disable-sending-emails-when-their-settings-change.md).  <br/> **Nota:** Per inviare nuovamente il PIN di conferenza audio all'utente, deve reimpostare il PIN. L'operazione può essere eseguita tramite l'opzione **Servizi di audioconferenza** nell'UNRESOLVED_TOKEN_VAL(Skype for Business admin center) o tramite PowerShell.          |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
 |La visualizzazione delle chiamate per i servizi di audioconferenza nei rapporti sull'utilizzo può richiedere fino a 24 ore.  <br/> |Nei prossimi aggiornamenti del servizio, ci impegniamo a introdurre miglioramenti in proposito.  <br/> |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
 |Quando un chiamante accede a un bridge di conferenza tramite telefono dopo che la riunione è stata bloccata da un utente Skype for Business, nell'app Skype for Business non è presente alcuna notifica che indica che l'utente è in sala di attesa.  <br/> |Si tratta di un'impostazione inerente alla progettazione; tuttavia, alla luce dei feedback raccolti, abbiamo deciso di introdurre un supporto per questa funzionalità nei prossimi aggiornamenti del servizio.  <br/> |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare Audioconferenza in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

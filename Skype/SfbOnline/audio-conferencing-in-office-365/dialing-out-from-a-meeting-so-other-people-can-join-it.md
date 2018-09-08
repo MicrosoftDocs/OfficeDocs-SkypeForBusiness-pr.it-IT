@@ -1,5 +1,5 @@
 ---
-title: Chiamata in uscita all'interno di una riunione di Skype for Business per consentire ad altri utenti di parteciparvi
+title: Chiamate in uscita da Skype per le riunioni aziendali in modo che altri utenti possono accedervi
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -15,26 +15,26 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Priority
+localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Informazioni su requisiti e sul modo in cui gli organizzatori delle riunioni possono effettua una chiamata a utenti che utilizzano Skype for Business.
-ms.openlocfilehash: 630802b034200b3ab029446f6300b1d8ddcccbb0
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
-ms.translationtype: HT
+ms.openlocfilehash: 2fe59b977384e9c76dfde4a9fd609510dc69a5d4
+ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/07/2018
-ms.locfileid: "23851450"
+ms.locfileid: "23887315"
 ---
-# <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamata in uscita all'interno di una riunione di Skype for Business per consentire ad altri utenti di parteciparvi
+# <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamate in uscita da Skype per le riunioni aziendali in modo che altri utenti possono accedervi
 
 > [!NOTE]
 > Se cerchi informazioni sulle chiamate in uscita da una riunione di Teams, consulta [Chiamate in uscita da una riunione di Teams in modo che altri utenti possano accedervi](/MicrosoftTeams/dialing-out-from-a-teams-meeting-so-other-people-can-join-it).
 
-L'organizzatore della riunione può effettuare una chiamata in uscita utilizzando l'app Skype for Business per consentire ad altri utenti di partecipare alla stessa riunione tramite telefono. Sebbene non sia obbligatorio, quando effettui una chiamata a un altro utente, è consigliabile comporre il numero completo, incluso il codice del Paese o dell'area geografica. Per attivare la chiamata in uscita:
+Organizzatore della riunione, è possibile comporre disattivato utilizzando Skype per applicazioni aziendali per consentire di partecipazione alle altre persone alla riunione stessa utilizzando il proprio telefono. Sebbene non sia obbligatorio, quando effettui una chiamata a un altro utente, è consigliabile comporre il numero completo, incluso il codice del paese o dell'area geografica. Per attivare la chiamata in uscita:
   
-- È possibile effettuare una chiamata in uscita solo partecipando a una riunione con l'app Skype for Business.
+- È possibile chiamata in uscita solo se si partecipa a una riunione con un Skype per applicazioni aziendali.
     
 - L'organizzatore della riunione è abilitato alle conferenze telefoniche con accesso esterno.
 
@@ -51,13 +51,13 @@ L'organizzatore della riunione può effettuare una chiamata in uscita utilizzand
   
 ## <a name="supported-countries-and-regions"></a>Paesi e aree geografiche supportati
 
-La chiamata in uscita è disponibile solo per alcuni Paesi. Per un elenco completo, consulta [Disponibilità di Audioconferenza e Piani di chiamata per Paese e area geografica](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans).
+Dial-out is only available to some countries/regions. Per un elenco completo, vedere [disponibilità paese e alle aree per le conferenze Audio e la chiamata Plans](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans).
   
-## <a name="want-to-know-more-about-audio-conferencing"></a>Vuoi saperne di più sull'audioconferenza?
+## <a name="want-to-know-more-about-audio-conferencing"></a>Per saperne di più sui servizi di conferenza telefonica con accesso esterno
 
-[Provare o acquistare Audioconferenza in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
     
-- [Licenze per i componenti aggiuntivi di Skype for Business](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
+- [Licenze per i componenti aggiuntivi Skype for Business](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
     
 ## <a name="related-topics"></a>Argomenti correlati
 
