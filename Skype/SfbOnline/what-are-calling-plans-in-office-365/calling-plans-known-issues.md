@@ -13,18 +13,17 @@ ms.collection: Adm_Skype4B_Online
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su problemi noti di piano di chiamata per Office 365 (tramite la chiamata PSTN) e operazioni su di essi. '
-ms.openlocfilehash: e43aecea6bd19c6b346de68577f471214818d43f
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 7db9f99a2884d78c07df1cb5d020ae9e8335515c
+ms.sourcegitcommit: d21e7ef1d4e36f4aced606e11837c693e8fd6410
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23854158"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "23999165"
 ---
 # <a name="calling-plans-known-issues"></a>Problemi noti nei Piani per chiamate
 
