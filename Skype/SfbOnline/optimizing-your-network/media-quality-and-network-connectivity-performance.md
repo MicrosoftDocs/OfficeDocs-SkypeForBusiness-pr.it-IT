@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Optimization
 description: In questo argomento definisce il set di requisiti di prestazioni di rete per Skype per i servizi in linea di Business e la valutazione della rete in base a come è possibile scegliere di utilizzare Internet o ExpressRoute per la connettività tra la rete e Skype Business online connettività. Se si è deciso di distribuire ExpressRoute Azure per la connettività dedicata a Office 365, questo documento vengono inoltre fornite indicazioni su come pianificare le connessioni ExpressRoute in Skype diversi per gli scenari aziendali in linea.
-ms.openlocfilehash: ce4a1379310d9dd7fdcad6c8242c792103f05c18
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: dbe927794d8660a801596dac32623574e314ee44
+ms.sourcegitcommit: 3a7d2131717327d9b2d16848758e31e10326a0bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23850232"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24057612"
 ---
 # <a name="media-quality-and-network-connectivity-performance-in-skype-for-business-online"></a>Qualità degli elementi multimediali e prestazioni della connessione di rete in Skype for Business online
 
@@ -58,10 +58,8 @@ Sebbene certified dispositivi multimediali audio e video non siano obbligatori, 
 
 L'ambiente e l'area circostante il punto in cui gli utenti si incontrano e usano dispositivi audio e video rappresentano un altro fattore importante che influisce sulla qualità. Gli utenti che chiamano da ambienti rumorosi dovranno fare i conti con l'eco e suoni soffocati e poco chiari. Gli utenti in ambienti bui o di scarsa illuminazione non potranno produrre immagini chiare e luminose. In una sala riunioni, la posizione del microfono e del dispositivo video hanno un impatto diretto sulla qualità del suono e dell'immagine che riceveranno i partecipanti.
   
-Per ottenere una visione dell'utilizzo di audio e video esperienza dell'utente di Skype per app Business **Strumenti** > **Opzioni** > **Dispositivo Audio** o **Video** per apportare modifiche al dispositivo in uso e personalizzare le impostazioni. È inoltre possibile controllare la qualità dell'audio di una chiamata facendo clic su **Controlla qualità chiamata**. Se gli utenti fanno clic su **Controllo qualità chiamata**, possono segnalare li livello di qualità e i problemi riscontrati con una chiamata di prova.
-  
-![Testing audio in the Skype for Business client.](../images/1730a71e-a09d-4702-8eb6-ef1346a091fa.png)
-  
+Per ottenere una visione dell'utilizzo di audio e video esperienza dell'utente di Skype per app Business **Strumenti** > **Opzioni** > **Dispositivo Audio** o **Video** per apportare modifiche al dispositivo in uso e personalizzare le impostazioni.
+
 #### <a name="network"></a>Rete
 
 La qualità dei dati multimediali in tempo reale tramite rete IP notevolmente è interessata dalla qualità della connettività di rete, ma soprattutto dalla quantità di:
