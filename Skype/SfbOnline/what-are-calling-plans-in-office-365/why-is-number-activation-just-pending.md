@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: 44321df914ebd2bf85109a64cbc285f2e6572d6b
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: c5409c2049e7f56a2625805e033b192cbaa080f9
+ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23860304"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24958382"
 ---
 # <a name="why-is-number-activation-just-pending"></a>Quali sono i numerico attivazione solo in sospeso?
 
@@ -107,6 +107,6 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
 
 [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
   
  

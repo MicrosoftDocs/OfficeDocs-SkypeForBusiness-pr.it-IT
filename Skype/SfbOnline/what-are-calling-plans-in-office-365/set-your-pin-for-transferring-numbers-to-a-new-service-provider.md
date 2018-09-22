@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Per trasferire o esportare numeri di telefono da Skype for Business Online  in un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di esportazione di un numero di telefono.
-ms.openlocfilehash: ef688c6aa7aabd1880513994236cb62353eab665
-ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.openlocfilehash: f30c26d366d6ad431683ba5b80641a9796c2730c
+ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23890109"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24958252"
 ---
 # <a name="set-your-pin-for-transferring-numbers-to-a-new-service-provider"></a>Configurare il PIN per il trasferimento numeri a un nuovo provider di servizi
 
@@ -75,7 +75,7 @@ Ecco alcune informazioni specifiche sul PIN che è necessario conoscere:
 
 [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
   
  

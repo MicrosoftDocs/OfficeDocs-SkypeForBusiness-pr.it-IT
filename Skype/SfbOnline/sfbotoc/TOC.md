@@ -235,6 +235,7 @@
 ### [Configurazione di Sistema telefonico nella tua organizzazione](/microsoftteams/setting-up-your-phone-system?toc=/skypeforbusiness/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
 ### [Cosa sono gli operatori automatici in Sistema telefonico](/microsoftteams/what-are-phone-system-auto-attendants?toc=/skypeforbusiness/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
 #### [Impostare un operatore automatico in Sistema telefonico](../what-is-phone-system-in-office-365/set-up-a-phone-system-auto-attendant.md)
+#### [Esempio di implementazione - gli operatori automatici](../what-is-phone-system-in-office-365/tutorial-org-aa.yml)
 
 ## [Configurare la rete per Skype Meeting Broadcast](../set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast.md)
 ### [Licenze utente bloccate per Skype Meeting Broadcast](../set-up-your-network-for-skype-meeting-broadcast/blocked-user-licenses-for-skype-meeting-broadcast.md)
@@ -250,6 +251,7 @@
 #### [Office 365 Enterprise E5 (senza audioconferenze con accesso esterno)](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-without-audio-conferencing.md)
 #### [Skype Room Systems v2](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-room-systems-v2.md)
 #### [GOV, EDU e organizzazioni senza scopo di lucro](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/gov-edu-and-nonprofit-organizations.md)
+#### [Skype per pensionistico Business Online piano 1](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-for-business-online-plan-1-retirement.md)
 ### [Aggiungere fondi e gestire Crediti comunicazioni](/microsoftteams/add-funds-and-manage-communications-credits?toc=/skypeforbusiness/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
 ### [Assegnare le licenze Skyper for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md)
 ### [Audioconferenze con tariffe al minuto](/microsoftteams/audio-conferencing-pay-per-minute?toc=/skypeforbusiness/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)

@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come configurare un numero e un indirizzo di emergenza per ogni utente che può essere utilizzato con il telefono di rete pubblica (PSTN).
-ms.openlocfilehash: 053e0d13109f66b4e714b69f0bc5650e20acdb69
-ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.openlocfilehash: 56552002c589b776935be973700cff822a9f4857
+ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23885812"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24958162"
 ---
 # <a name="assign-or-change-an-emergency-address-for-a-user"></a>Assegnare o modificare l'indirizzo per gli interventi di emergenza di un utente
 
@@ -65,7 +65,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
 
 [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
   
  

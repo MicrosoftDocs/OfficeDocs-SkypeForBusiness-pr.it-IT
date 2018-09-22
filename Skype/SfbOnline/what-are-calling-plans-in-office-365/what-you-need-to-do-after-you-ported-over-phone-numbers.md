@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: Visualizzare le informazioni necessarie eseguire successivamente dopo aver trasferito i numeri di telefono a Skype per le aziende.
-ms.openlocfilehash: 806cd5cc714e76e894336abd2bdbf74bc34b09c8
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: edcf796be766f62a99686c2182091daa13d3a810
+ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23861068"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24958322"
 ---
 # <a name="what-do-you-need-to-do-after-you-have-ported-over-your-phone-numbers"></a>Che cosa è necessario eseguire dopo aver trasferito su numeri di telefono?
 
@@ -51,7 +51,7 @@ Dopo che è stato inviato l'ordine delle porte, si contatta il gestore e utilizz
 
 [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
   
  

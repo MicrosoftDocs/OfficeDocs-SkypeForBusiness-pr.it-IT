@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come visualizzare un elenco di tutti i numeri di telefono dell'organizzazione, tutti i numeri assegnati agli utenti e tutti i numeri assegnati per gli utenti vocali dal centro di amministrazione Skype for Business.
-ms.openlocfilehash: b28fb7c75beefa08b35b3b35be30b58652037895
-ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.openlocfilehash: 2f7311b3b50be7bb6cea086fdd3e9f4fe67a677b
+ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23888000"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24958232"
 ---
 # <a name="see-a-list-of-phone-numbers-in-your-organization"></a>Visualizzare un elenco di numeri di telefono assegnati nell'organizzazione
 
@@ -117,6 +117,6 @@ Quando si imposta le impostazioni degli utenti all'interno dell'organizzazione d
 
 [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
   
  
