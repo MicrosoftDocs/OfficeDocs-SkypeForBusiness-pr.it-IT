@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare e testare gli operatori automatici di sistema telefonico in (Cloud PBX) per la gestione dell'organizzazione delle chiamate efficiente. "
-ms.openlocfilehash: 00743fed485effe76864f3d7b619d6fb1fd28c0b
-ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.openlocfilehash: 8b9d6bead2fc4aec259765d322840c948eeb31ef
+ms.sourcegitcommit: 090ff859083ace43c08d483f4023009e8b6e79e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23884159"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25019019"
 ---
 # <a name="set-up-a-phone-system-auto-attendant"></a>Impostare un operatore automatico in Sistema telefonico
 
@@ -37,14 +37,14 @@ Per ulteriori informazioni sugli operatori automatici, vedere [che cosa sono gli
 ## <a name="step-1---getting-started"></a>Fase 1 - Attività iniziali
 
 - Before you can create and set up your auto attendants, you will need to get or transfer your existing toll or toll-free service numbers. Dopo aver ottenuto il numero a tariffa o i numeri verdi servizio, verrà visualizzato nella **Skype per Business admin center** > **vocale** > pagina**i numeri di telefono** . Per ottenere i numeri di servizio, vedere [Getting numeri di telefono del servizio per Skype per le aziende e team di Microsoft](getting-service-phone-numbers.md)o se si desidera trasferimento e il numero di servizio esistente, [trasferire i numeri di telefono a Office 365](/microsoftteams/transfer-phone-numbers-to-office-365). **User (subscriber)** numbers can't be assigned to auto attendants. Se si è fuori degli Stati Uniti, è possibile utilizzare Skype per interfaccia di amministrazione di Business per ottenere numeri di servizio. andare [qui](/microsoftteams/manage-phone-numbers-for-your-organization) invece.
-    
+
     > [!CAUTION]
-    > Per ottenere e utilizzare numeri verdi, è necessario impostare i titoli di coda di comunicazioni. Per eseguire questo vedere [che cosa sono i titoli di coda Communications?](/microsoftteams/what-are-communications-credits) e [impostare i titoli di coda di comunicazione per l'organizzazione](/microsoftteams/set-up-communications-credits-for-your-organization). 
+    > Per ottenere e utilizzare numeri verdi, è necessario impostare i titoli di coda di comunicazioni. Per eseguire questo vedere [che cosa sono i titoli di coda Communications?](/microsoftteams/what-are-communications-credits) e [impostare i titoli di coda di comunicazione per l'organizzazione](/microsoftteams/set-up-communications-credits-for-your-organization).
   
 - L'organizzazione deve disporre (almeno) una licenza Enterprise E3 plus **Sistema telefonico** o una licenza Enterprise E5. Il numero di licenze utente **Sistema telefonico** assegnati influisce sul numero dei numeri di servizio disponibili essere utilizzati per gli operatori automatici. I numeri di operatori automatici, che è possibile avere dipende le licenze numeri **Sistema telefonico** e **Audioconferenza** che sono assegnate all'interno dell'organizzazione. Per ulteriori informazioni sulle licenze, Vai [qui](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
     
     > [!TIP]
-    > Per reindirizzare le chiamate a un operatore o un'opzione di menu è un utente in linea con una licenza di **Sistema telefonico** , sarà necessario abilitati per Enterprise Voice o assegnarvi tariffe di chiamate in Office 365. Vedi [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). Puoi anche utilizzare Windows PowerShell. Ad esempio, eseguire:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true` 
+    > Per reindirizzare le chiamate a un operatore o un'opzione di menu è un utente in linea con una licenza di **Sistema telefonico** , sarà necessario abilitati per Enterprise Voice o assegnarvi tariffe di chiamate in Office 365. Vedi [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). Puoi anche utilizzare Windows PowerShell. Ad esempio, eseguire:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
   
 ## <a name="step-2---create-a-new-auto-attendant"></a>Fase 2 - Creare un nuovo operatore automatico
 
@@ -65,7 +65,7 @@ Nell' **interfaccia di amministrazione di Skype for Business**, fai clic su **In
 
 > [!NOTE]
 > **User (subscriber)** numbers can't be assigned to auto attendants.
-    
+
 ***
 ![Numero 3](../images/sfbcallout3.png)<br/>**Fuso orario** È necessario impostare il fuso orario per l'operatore automatico, che non deve necessariamente corrispondere al fuso orario dell'indirizzo principale indicato per l'organizzazione. Ciascun operatore automatico può avere un fuso orario diverso, e l'orario di ufficio fissato per l'operatore automatico verrà impostato in base al fuso orario che selezioni qui.
 ***
@@ -261,6 +261,7 @@ Questi sono i cmdlet necessari per gestire un operatore automatico.
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](getting-service-phone-numbers.md)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans)
-    
-  
- 
+
+[Cosa sono gli operatori automatici in Sistema telefonico](/MicrosoftTeams/what-are-phone-system-auto-attendants.md)
+
+[Esempio di piccole e medie imprese - configurazione di un operatore automatico](tutorial-org-aa.yml)  
