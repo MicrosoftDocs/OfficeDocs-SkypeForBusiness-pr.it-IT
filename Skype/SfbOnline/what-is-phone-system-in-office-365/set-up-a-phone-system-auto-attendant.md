@@ -4,6 +4,7 @@ ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: makolomi
+ms.date: 9/1/2018
 ms.topic: article
 ms.assetid: 6fc2687c-0abf-43b8-aa54-7c3b2a84b67c
 ms.tgt.pltfrm: cloud
@@ -21,12 +22,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare e testare gli operatori automatici di sistema telefonico in (Cloud PBX) per la gestione dell'organizzazione delle chiamate efficiente. "
-ms.openlocfilehash: 8b9d6bead2fc4aec259765d322840c948eeb31ef
-ms.sourcegitcommit: 090ff859083ace43c08d483f4023009e8b6e79e4
+ms.openlocfilehash: bceda290adc10e806249cbd0938305ffa321d91f
+ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25019019"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347267"
 ---
 # <a name="set-up-a-phone-system-auto-attendant"></a>Impostare un operatore automatico in Sistema telefonico
 

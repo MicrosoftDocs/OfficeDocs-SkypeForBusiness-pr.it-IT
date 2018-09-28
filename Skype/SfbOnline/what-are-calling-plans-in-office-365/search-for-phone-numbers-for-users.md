@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come eseguire la ricerca di numeri di telefono che è possibile assegnare agli utenti tramite paese/area geografica, stato/regione o città e specificare la quantità di numeri necessaria. '
-ms.openlocfilehash: d57ccfbea0020ab3ddacd894ffa6f277798bb042
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: 0edf61b52869eff4a52e7b109085e02d4b380742
+ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958102"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347072"
 ---
 # <a name="search-for-phone-numbers-for-users"></a>Cercare numeri di telefono per gli utenti
 
@@ -44,7 +44,7 @@ Se è necessario alcuni assistenza per ottenere i numeri di telefono, è possibi
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nella barra di spostamento sinistra, passa a **Voce** > **Numeri di telefono** e quindi fai clic su **Aggiungi nuovo numero** > **Nuovi numeri utente**.
   
@@ -59,7 +59,7 @@ Se è necessario alcuni assistenza per ottenere i numeri di telefono, è possibi
     > [!NOTE]
     > Puoi visualizzare quanti numeri di telefono puoi acquisire in base al numero di licenze di cui disponi in **Totale numeri utente che è possibile acquisire**. 
   
-6. Facendo clic su **Mostra numeri** puoi visualizzare l'elenco completo dei numeri di telefono. Questa funzionalità è utile se non desideri selezionare un numero di telefono specifico incluso nell'elenco.
+6. Facendo clic su **Mostra numeri** puoi visualizzare l'elenco completo dei numeri di telefono. Questo è utile se non si desidera selezionare un numero di telefono specifico nell'elenco.
     
 7. Seleziona i numeri di telefono desiderati e quindi fai clic su **Acquisisci numeri**.
     

@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono per utenti di Skype for Business in modo che le aziende e i clienti esterni li possano chiamare.
-ms.openlocfilehash: 17cb05a4d9982981e65b5919a868979fca1a1aa2
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: 57ffe302c784ff441d124017035c8031c1c737c1
+ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958122"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347029"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user"></a>Assegnare, modificare o rimuovere il numero di telefono di un utente
 
@@ -58,7 +58,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
  
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Accedere **all'interfaccia di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nella barra di navigazione sinistra fai clic su VoceUtenti Voce.**** > ****
    > [!NOTE]
@@ -73,7 +73,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
 6. Nella pagina **assegnazione numero** nell'elenco **selezionare numero da assegnare** , selezionare il numero di telefono dell'utente.
     
     > [!TIP]
-    > Se non riesci a visualizzare nessun numero di telefono nell'elenco, devi prima [Ottenere numeri di telefono per gli utenti](getting-phone-numbers-for-your-users.md). Oppure, utilizzando la pagina **Interfaccia di amminstrazione Skype per Business** > **Voce** > **Numeri di telefono**, fai clic su **Aggiungi** e quindi fai clic su **Nuovi numeri utente**. 
+    > Se non viene visualizzata dei numeri di telefono elencati, è necessario [ottenere numeri di telefono per gli utenti](getting-phone-numbers-for-your-users.md) prima. Oppure, utilizzando la pagina **Interfaccia di amminstrazione Skype per Business** > **Voce** > **Numeri di telefono**, fai clic su **Aggiungi** e quindi fai clic su **Nuovi numeri utente**. 
   
 7. Per assegnare o modificare l'indirizzo di emergenza associato, vai su **Selezionare luogo di emergenza approvato**, seleziona il luogo dall'elenco oppure, se hai molti luoghi definiti, immetti il nome della città nella casella di ricerca e fai clic su **Cerca**.
     
@@ -90,7 +90,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
  
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Accedere **all'interfaccia di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nella barra di navigazione sinistra fai clic su VoceUtenti Voce.**** > ****
     
@@ -114,7 +114,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
  
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Accedere **all'interfaccia di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nella barra di navigazione sinistra fai clic su VoceUtenti Voce.**** > ****
     

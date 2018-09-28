@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: "Procedura per cambiare l'indirizzo di emergenza per un utente per l'utilizzo con la Rete telefonica pubblica commutata (PSTN) negli Stati Uniti e in Europe. "
-ms.openlocfilehash: 31162e24471cb4e9259678f779143900fa61ac08
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: e27ea228972ceead0838cff481a0db983c503b02
+ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958352"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347102"
 ---
 # <a name="change-the-emergency-address-for-a-user"></a>Modificare l’indirizzo per gli interventi di emergenza per un utente
 
@@ -40,7 +40,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel riquadro di spostamento sinistro, passare a **Voice** > **agli utenti di VoIP**.
     

@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Scopri come ottenere nuovi, importati, o trasferire i numeri esistenti per Skype for Business e come mostrare le modifiche ai tuoi utenti. '
-ms.openlocfilehash: 9bbeaa180cf09e969af412c6ee10651d7a9a7f04
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: 72793ce279155df857dfe11529acbacf673c8552
+ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958132"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347130"
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 
@@ -51,7 +51,7 @@ Devi consultare la pagina **Aggiungi nuovi numeri utente** per visualizzare, ese
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel riquadro sinistro passare a **Voice** > **i numeri di telefono**, fare clic su **Aggiungi nuovo numero** ![pulsante Aggiungi](../images/c224fbd0-f0f5-46ce-a1a7-73adf4540ef7.png), quindi fare clic su **nuovo utente numeri**.
     
@@ -90,7 +90,7 @@ Devi consultare la pagina **Aggiungi nuovi numeri utente** per visualizzare, ese
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nella barra di spostamento sinistra, passa a **Voce** > **Numeri di telefono**. I numeri di telefono disponibili per la tua organizzazione sono elencati in **Numero**.
     

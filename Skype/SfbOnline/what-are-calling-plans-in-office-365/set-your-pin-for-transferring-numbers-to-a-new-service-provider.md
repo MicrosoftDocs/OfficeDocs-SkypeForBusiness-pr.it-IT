@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Per trasferire o esportare numeri di telefono da Skype for Business Online  in un altro provider di servizi telefonici o gestore di telefonia, è necessario impostare manualmente un PIN. Dopo aver impostato il PIN, è necessario includerlo nella richiesta di esportazione di un numero di telefono.
-ms.openlocfilehash: f30c26d366d6ad431683ba5b80641a9796c2730c
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: 3a3744a4b1272bab987add10039c89c6e3983927
+ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958252"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347092"
 ---
 # <a name="set-your-pin-for-transferring-numbers-to-a-new-service-provider"></a>Configurare il PIN per il trasferimento numeri a un nuovo provider di servizi
 
@@ -55,7 +55,7 @@ Ecco alcune informazioni specifiche sul PIN che è necessario conoscere:
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **Centro di amministrazione di Office 365** > **Admin Center** > **Skype per le aziende**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel riquadro di spostamento sinistro, seleziona **Voce** > **Ordini di portabilità**.
     

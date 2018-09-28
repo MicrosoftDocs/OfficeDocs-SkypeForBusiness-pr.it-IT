@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come visualizzare un elenco di tutti i numeri di telefono dell'organizzazione, tutti i numeri assegnati agli utenti e tutti i numeri assegnati per gli utenti vocali dal centro di amministrazione Skype for Business.
-ms.openlocfilehash: 2f7311b3b50be7bb6cea086fdd3e9f4fe67a677b
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: c257991c0b867cb42b5b56af0e5595257260b25a
+ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958232"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347082"
 ---
 # <a name="see-a-list-of-phone-numbers-in-your-organization"></a>Visualizzare un elenco di numeri di telefono assegnati nell'organizzazione
 
@@ -39,7 +39,7 @@ Esistono diversi tipi di numeri di telefono che è possibile assegnare a utenti 
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **Voice** > **i numeri di telefono**.
     
@@ -71,7 +71,7 @@ Quando imposti gli utenti, è possibile solo visualizzare l'elenco dei numeri di
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **Voice** > **agli utenti di VoIP**.
     
@@ -95,7 +95,7 @@ Quando si imposta le impostazioni degli utenti all'interno dell'organizzazione d
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **Voice** > **agli utenti di VoIP**.
     

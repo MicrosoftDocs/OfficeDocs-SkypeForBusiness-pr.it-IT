@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come aggiungere, modificare o rimuovere una posizione di emergenza utilizzata da Skype for Business su telefono di rete pubblica (PSTN) per la tua organizzazione. '
-ms.openlocfilehash: 862d62af8db8275e304c1522ae19a80d9ebcfec4
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: 43a8ac0759fd8dc949953fe22cb73c00a96f4314
+ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958272"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347054"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
@@ -38,7 +38,7 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**e quindi selezionare l'indirizzo di emergenza che si desidera aggiungere un percorso per.
     
@@ -55,7 +55,7 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**e quindi selezionare l'indirizzo di emergenza per il quale si desidera modificare un percorso.
     
@@ -69,13 +69,13 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**e quindi selezionare l'indirizzo di emergenza che si desidera rimuovere un percorso per.
     
 4. Nel riquadro azioni, accanto a **associato percorsi**, fare clic su **Cambia**.
     
-5. Su **Posizione associata a**, vicino al collegamento per il percorso, fai clic su **Rimuovi**.
+5. In **percorsi associato**, accanto al collegamento per il percorso, fare clic su **Rimuovi**.
     
 6. Fai clic su **Salva**.
     

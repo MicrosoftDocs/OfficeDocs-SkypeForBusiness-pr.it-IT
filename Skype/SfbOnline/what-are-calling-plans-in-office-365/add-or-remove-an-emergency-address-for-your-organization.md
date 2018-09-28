@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Istruzioni su come aggiungere o rimuovere un indirizzo di emergenza per il tuo account di Skype for Business. '
-ms.openlocfilehash: 06cd8202198b49efbf2c478e233865a681d2ce34
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: a4edcfa5673ac20c571bfae4d26f41facb9f0c80
+ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958182"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347061"
 ---
 # <a name="add-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione
 
@@ -40,7 +40,7 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nella barra di navigazione sinistra, vai su VocePosizioni di emergenza e quindi fai clic sul pulsante Aggiungi nuovo indirizzo.** **  >  ** ** ** **
     
@@ -62,7 +62,7 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**, selezionare l'indirizzo che si desidera eliminare e nel riquadro azioni fare clic su **Elimina**.
     

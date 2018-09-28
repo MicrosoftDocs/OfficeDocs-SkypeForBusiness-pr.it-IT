@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come modificare la posizione di emergenza per gli utenti. Con un numero illimitato di posizioni, è possibile modificare le posizioni di emergenza quando i dipendenti si spostano su altri piani o edifici. '
-ms.openlocfilehash: caf201bf71d15518ffbfbf473a904da2d1d03aa4
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: 7ebec7ca6a2180702eec9e24b3165eb501d4a097
+ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958212"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347112"
 ---
 # <a name="change-the-emergency-location-for-a-user"></a>Modificare la posizione per gli interventi di emergenza per un utente
 
@@ -38,7 +38,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel riquadro sinistro passare a **Voice** > **agli utenti di VoIP**.
     
