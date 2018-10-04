@@ -17,12 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: È possibile abilitare il Skype agli utenti aziendali di utilizzare Skype incorporata per strumento di Business app commenti e suggerimenti per consentire agli utenti di segnalare problemi e inviare commenti e suggerimenti direttamente a Microsoft sull'esperienza.
-ms.openlocfilehash: 6d8f5c7e7c333e447b4238e47dab1fc7ad394816
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: f681a3745f44745083abc4b1750870aa7d3c4efe
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23850100"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25370793"
 ---
 # <a name="turn-on-or-off-skype-for-business-client-feedback-reporting"></a>Attivare o disattivare i report di feedback client di Skype for Business
 
@@ -64,13 +64,13 @@ Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in u
     > [!NOTE]
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
  
-  ```
+   ```
     Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
     $credential = Get-Credential
     $session = New-CsOnlineSession -Credential $credential
     Import-PSSession $session
-  ```
-Per altre informazioni sull'avvio di Windows PowerShell, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o[Connessione a Skype for Business online con Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
+   ```
+   Per altre informazioni sull'avvio di Windows PowerShell, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o[Connessione a Skype for Business online con Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
     
 ## <a name="turn-on-client-app-feedback-reporting-for-all-the-users-in-your-organization"></a>Attiva i report di feedback dell'applicazione client per tutti gli utenti dell'organizzazione
 

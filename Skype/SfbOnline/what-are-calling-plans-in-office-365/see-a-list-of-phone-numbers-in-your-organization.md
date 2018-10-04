@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come visualizzare un elenco di tutti i numeri di telefono dell'organizzazione, tutti i numeri assegnati agli utenti e tutti i numeri assegnati per gli utenti vocali dal centro di amministrazione Skype for Business.
-ms.openlocfilehash: c257991c0b867cb42b5b56af0e5595257260b25a
-ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
+ms.openlocfilehash: a6ab8115e1b336f2ccc77548fdfe501852efbda7
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347082"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25370700"
 ---
 # <a name="see-a-list-of-phone-numbers-in-your-organization"></a>Visualizzare un elenco di numeri di telefono assegnati nell'organizzazione
 
@@ -50,17 +50,17 @@ Esistono diversi tipi di numeri di telefono che è possibile assegnare a utenti 
     
 5. È possibile utilizzare l'elenco a discesa per filtrare la visualizzazione da:
     
-  - **Tutti** i numeri di telefono inclusi numeri di telefono di servizio.
+   - **Tutti** i numeri di telefono inclusi numeri di telefono di servizio.
     
-  - Un telefono **intervallo di numeri** impostato.
+   - Un telefono **intervallo di numeri** impostato.
     
-  - Numeri di telefono che vengono **assegnati all'utente**.
+   - Numeri di telefono che vengono **assegnati all'utente**.
     
-  - Numeri telefonici **assegnati alla conferenza** per le conferenze telefoniche con accesso esterno.
+   - Numeri telefonici **assegnati alla conferenza** per le conferenze telefoniche con accesso esterno.
     
-  - Numeri di telefono non **assegnati**.
+   - Numeri di telefono non **assegnati**.
     
-  - **Posizione** dei numeri di telefono.
+   - **Posizione** dei numeri di telefono.
     
 ## <a name="to-see-all-of-the-phone-numbers-that-are-assigned-to-users"></a>Per visualizzare tutti i numeri di telefono che vengono assegnati agli utenti
 
@@ -78,20 +78,20 @@ Quando imposti gli utenti, è possibile solo visualizzare l'elenco dei numeri di
     > [!IMPORTANT]
     > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
     
-4. È possibile filtrare la visualizzazione per i numeri di telefono assegnati a utenti o i numeri di telefono che è possibile assegnare ad un utente. È possibile filtrare per:
+4. You can filter your view for phone numbers that are assigned to users or phone numbers that you can assign to a user. You can filter by:
     
-  - **Tutti** i numeri di telefono inclusi numeri di telefono di servizio.
+   - **Tutti** i numeri di telefono inclusi numeri di telefono di servizio.
     
-  - **Numero assegnato **all'utente.
+   - **Numero assegnato **all'utente.
     
-  - **Nessun numero assegnato** all'utente.
+   - **Nessun numero assegnato** all'utente.
     
 ## <a name="to-see-the-phone-numbers-that-are-assigned-to-voice-users"></a>Per visualizzare i numeri di telefono assegnati agli utenti voce
 
 ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
 
 
-Quando si imposta le impostazioni degli utenti all'interno dell'organizzazione di effettuare e ricevere chiamate telefoniche, è necessario ottenere innanzitutto i numeri di telefono e quindi assegnarli a utenti. Dopo aver ottenuto i tuoi numeri di telefono, è possibile solo visualizzare l'elenco di utenti che hanno numeri di telefono assegnati agli utenti, quelli che non lo fanno e se un utente è ospitato Online o locale.
+When you are setting up users in your organization to make and receive phone calls, you must first get the phone numbers and then assign them to your users. After you've gotten your phone numbers, you might just want to see the list of the users that have phone numbers assigned to users, those that don't and whether a user is hosted Online or on-premises.
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -102,11 +102,11 @@ Quando si imposta le impostazioni degli utenti all'interno dell'organizzazione d
     > [!IMPORTANT]
     > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
     
-4. È possibile utilizzare l'elenco a discesa per filtrare la visualizzazione per gli utenti attivi, se l'utente è Online o locale, o informazioni sullo stato e il tipo di licenza per un utente. È possibile filtrare per:
+4. You can use the drop-down list to filter your view for active users, whether the user is Online or on-premises, or the state and type of licensing for a user. You can filter by:
     
-  - **Utenti attivi** e se un utente è Online o locale.
+   - **Utenti attivi** e se un utente è Online o locale.
     
-  - **Le licenze in sospeso** e se un utente è Online o locale.
+   - **Le licenze in sospeso** e se un utente è Online o locale.
     
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)

@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Informazioni su come abilitare o disabilitare se gli utenti possono registrare i rispettivi nomi quando partecipano a una riunione in Skype Business online.
-ms.openlocfilehash: 0e330d5efdd7325a8db48aa679d6ecbb9264c345
-ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.openlocfilehash: 7b28a038edf9b812532283ecaa766b86e2bc8de8
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23884722"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25371759"
 ---
 # <a name="enable-users-to-record-their-name-when-they-join-a-meeting-in-skype-for-business-online"></a>Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione in Skype Business online
 
@@ -42,9 +42,9 @@ Il bridge di conferenza risponde alla chiamata di un utente che sta eseguendo l'
     
 2. In **esperienza di partecipazione alle riunioni**, vedere la casella di controllo **Abilita voce relativa alla riunione e chiudere le notifiche per essere attivata**.
     
-  - Ai chiamanti **selezionati** viene chiesto di registrare il proprio nome prima di accedere alla riunione. Questa opzione è selezionata per impostazione predefinita.
+   - Ai chiamanti **selezionati** viene chiesto di registrare il proprio nome prima di accedere alla riunione. Questa opzione è selezionata per impostazione predefinita.
     
-  - Ai chiamanti **deselezionati** non viene chiesto di registrare il proprio nome prima di accedere alla riunione.
+   - Ai chiamanti **deselezionati** non viene chiesto di registrare il proprio nome prima di accedere alla riunione.
     
 3. Dopo aver apportato le modifiche, fai clic su **Salva**.
     
@@ -55,7 +55,7 @@ Il bridge di conferenza risponde alla chiamata di un utente che sta eseguendo l'
 
 - Per renderle automatiche o per risparmiare tempo, puoi utilizzare il cmdlet [Set-CsOnlineDialInConferencingTenantSettings ](https://go.microsoft.com/fwlink/?LinkId=715757).
     
--  Per quanto riguarda Windows PowerShell, è possibile gestire gli utenti di Skype for Business online e le azioni che sono autorizzati a eseguire. Con Windows PowerShell puoi gestire Office 365 tramite un unico punto di amministrazione, che ti agevola il lavoro quotidiano quando hai molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedi i seguenti argomenti:
+- Per quanto riguarda Windows PowerShell, è possibile gestire gli utenti di Skype for Business online e le azioni che sono autorizzati a eseguire. Con Windows PowerShell puoi gestire Office 365 tramite un unico punto di amministrazione, che ti agevola il lavoro quotidiano quando hai molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedi i seguenti argomenti:
     
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     

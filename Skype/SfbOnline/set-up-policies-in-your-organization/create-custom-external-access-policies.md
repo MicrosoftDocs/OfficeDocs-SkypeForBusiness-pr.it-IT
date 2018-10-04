@@ -17,12 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: Skype per Business Online consente di creare i criteri di accesso esterno aggiuntivi. A differenza dei criteri client o di conferenza, dove è possibile avere più combinazioni, sono disponibili tre criteri predefiniti l'accesso esterno che possono soddisfare la maggior parte degli scenari.
-ms.openlocfilehash: e0af31d015c69ebd91c28a229a20d3d2c6c926c4
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: ad40319330a66c1f0ec141531ae0ccb16a01ae07
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23850158"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25372602"
 ---
 # <a name="create-custom-external-access-policies"></a>Creare criteri di accesso esterno personalizzato
 
@@ -70,28 +70,28 @@ Per ottenere questo risultato, l'utente deve utilizzando una versione supportata
     > [!NOTE]
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
 
-  ```      
+   ```      
     Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
     $credential = Get-Credential
     $session = New-CsOnlineSession -Credential $credential
     Import-PSSession $session
-  ```
+   ```
 
-  Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
+   Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
     
 ## <a name="create-a-custom-external-access-policy-for-a-user"></a>Creare un criterio di accesso esterno personalizzati per un utente
 
 Per farlo, eseguire quanto segue:
   
 > 
-  ```
-  New-CsExternalAccessPolicy -Identity BlockSkypeVideo -EnablePublicCloudAccess $True -EnablePublicCloudAudioVideoAccess $False -EnableFederationAccess $True -EnableOutsideAccess $True
-  ```
-
+>   ```
+>   New-CsExternalAccessPolicy -Identity BlockSkypeVideo -EnablePublicCloudAccess $True -EnablePublicCloudAudioVideoAccess $False -EnableFederationAccess $True -EnableOutsideAccess $True
+>   ```
 > 
-  ```
-  Grant-CsExternalAccessPolicy -PolicyName BlockSkypeVideo -Identity amosm@contoso.com
-  ```
+> 
+>   ```
+>   Grant-CsExternalAccessPolicy -PolicyName BlockSkypeVideo -Identity amosm@contoso.com
+>   ```
 
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 

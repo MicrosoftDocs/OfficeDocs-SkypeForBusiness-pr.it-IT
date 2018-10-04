@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Impara come creare Piani di chiamata (piani per chiamate PSTN) in Office 365 e come gestirli. '
-ms.openlocfilehash: c8dadaed781a7975f9045d73caed110ecaab4cbb
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: 7d3f9d7db989d46ec980a716cdbdf717d48087d6
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958152"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25370643"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 
@@ -59,12 +59,12 @@ Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in u
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
   
 > 
-  ```
-    Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
-    $credential = Get-Credential
-    $session = New-CsOnlineSession -Credential $credential
-    Import-PSSession $session
-  ```
+>   ```
+>     Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
+>     $credential = Get-Credential
+>     $session = New-CsOnlineSession -Credential $credential
+>     Import-PSSession $session
+>   ```
 
 Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
   
@@ -152,7 +152,7 @@ $nr1=New-CsVoiceNormalizationRule -Parent Global/NR1 -InMemory
 Set-CsTenantDialPlan -Identity DP1 -NormalizationRules @{remove=$nr1}
 ```
 
-Eseguire quanto segue quando si desidera esaminare anche le regole di normalizzazione esistenti, determinare quale si desidera eliminare e quindi utilizzare l'indice per rimuoverla. Matrice delle regole di normalizzazione inizia con l'indice 0. Si desidera rimuovere la regola di normalizzazione a 3 cifre, in modo che sia indice 1.
+Run the following when you want to also examine the existing normalization rules, determine which one you want to delete, and then use its index to remove it. The array of normalization rules starts with index 0. We would like to remove the 3-digit normalization rule, so that is index 1.
   
 ```
 Get-CsTenantDialPlan RedmondDialPlan).NormalizationRules
@@ -178,7 +178,7 @@ Eseguire questa operazione per trovare tutti gli utenti a cui è stato concesso 
 Get-CsOnlineuser | where-Object {$_.TenantDialPlan -eq "RedmondDialPlan"}
 ```
 
-Eseguirli per aggiungere il piano di chiamata esistente locale denominato OPDP1 come un piano di chiamata del tenant per l'organizzazione. È necessario innanzitutto salvare il piano di chiamata del tenant locale in un file .xml e quindi utilizzarlo per creare il nuovo piano di chiamata del tenant.
+Run these to add the existing on-premises dial plan named OPDP1 as a tenant dial plan for your organization. You need to first save the on-premises dial plan to an .xml file, and then use it to create the new tenant dial plan.
   
 Eseguire questa operazione per salvare il piano di chiamata del tenant locale nel file .xml.
   
@@ -204,9 +204,9 @@ New-CsTenantDialPlan -Identity $dp.SimpleName -ExternalAccessPrefix $dp.External
 ```
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per ulteriori informazioni su Windows Powershell?
 
-- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. With Windows PowerShell, you can manage Office 365 and Skype for Business Online using a single point of administration that can simplify your daily work, when you have multiple tasks to do. To get started with Windows PowerShell, see these topics:
     
-  - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [Introduzione a Windows Powershell e Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     

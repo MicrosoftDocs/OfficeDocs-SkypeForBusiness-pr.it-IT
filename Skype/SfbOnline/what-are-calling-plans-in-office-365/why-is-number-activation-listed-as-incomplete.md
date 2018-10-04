@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: 24299e40d5f1ae9a8b3dd58324bfa54e525f13e1
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: bcc4ad06d922c4d0f65dc4f98a7d0780904e1d18
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958202"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25374700"
 ---
 # <a name="why-is-number-activation-listed-as-incomplete"></a>Perché è elencato come incompleto numerico attivazione?
 
@@ -51,13 +51,13 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
     
 5. Nella pagina **Identificare il problema** seleziona e immetti quanto segue:
     
-  - **Funzionalità**: seleziona **Piano per chiamate nazionali** e/o **Piano per chiamate nazionali e internazionali**.
+   - **Funzionalità**: seleziona **Piano per chiamate nazionali** e/o **Piano per chiamate nazionali e internazionali**.
     
-  - **Sintomo:** immetti **Chiamata di emergenza**.
+   - **Sintomo:** immetti **Chiamata di emergenza**.
     
-  - **Riepilogo problema:** immetti **Convalida indirizzo**.
+   - **Riepilogo problema:** immetti **Convalida indirizzo**.
     
-  - **Dettagli problema:** immetti tutti i dettagli relativi all'indirizzo o agli indirizzi che desideri convalidare, ad esempio:
+   - **Dettagli problema:** immetti tutti i dettagli relativi all'indirizzo o agli indirizzi che desideri convalidare, ad esempio:
     
       - Numero civico
     
@@ -67,8 +67,8 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
     
       - Paese o area geografica
     
-    > [!IMPORTANT]
-    > **Immettere il paese o area geografica in cui offriamo il servizio Piani per chiamate in Office 365 per il quale stai tentando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
+     > [!IMPORTANT]
+     > **Immettere il paese o area geografica in cui offriamo il servizio Piani per chiamate in Office 365 per il quale stai tentando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
   
       - Codice postale
     
@@ -76,19 +76,19 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
     
 7. Nella pagina **Aggiungere i dettagli** seleziona e immetti quanto segue:
     
-  - **Il servizio non è disponibile?** Seleziona **No**.
+   - **Il servizio non è disponibile?** Seleziona **No**.
     
-  - **Quanti utenti sono interessati?** Seleziona **Alcuni utenti**.
+   - **Quanti utenti sono interessati?** Seleziona **Alcuni utenti**.
     
-  - Lascia vuoto il campo **Indirizzo di posta elettronica di un utente interessato dal problema**.
+   - Lascia vuoto il campo **Indirizzo di posta elettronica di un utente interessato dal problema**.
     
-  - **Selezionare i domini da elencare**
+   - **Selezionare i domini da elencare**
     
-  - Usa **Allega file** per convalidare più indirizzi.
+   - Usa **Allega file** per convalidare più indirizzi.
     
-  - Fai clic su **Avanti**.
+   - Fai clic su **Avanti**.
     
-  - Immetti il tuo numero di telefono di contatto.
+   - Immetti il tuo numero di telefono di contatto.
     
 8. Controlla le informazioni e quindi fai clic su **Invia ticket**.
     

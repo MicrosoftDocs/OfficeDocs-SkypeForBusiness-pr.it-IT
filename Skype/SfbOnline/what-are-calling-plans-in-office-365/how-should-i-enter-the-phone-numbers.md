@@ -20,12 +20,12 @@ f1keywords: ms.lync.lac.PortOrderNumbers
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come configurare i numeri di telefono quando porta Skype per le aziende. '
-ms.openlocfilehash: 8d214ea7cf21ea713de28763f36b9995160fb395
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: 62f9fb98378bfa7802013399d3d9b005047e663d
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958142"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25374088"
 ---
 # <a name="how-should-i-enter-the-phone-numbers"></a>Come è necessario immettere i numeri di telefono?
 
@@ -82,10 +82,10 @@ Quando si trasferisce i numeri di telefono, è necessario immettere tali nel for
     
   - Il "-" viene utilizzato per separare solo due numeri. Non è supportato in modo da includere più "-" nell'intervallo di numeri. Ad esempio, **(425) 555-0649-(425) 555-1115** deve essere immesso come **(425) 5550649 - (425) 5551115**.
     
- **Per istruzioni dettagliate complete, vedere [trasferire i numeri di telefono a Office 365](/microsoftteams/transfer-phone-numbers-to-office-365).**
+  **Per istruzioni dettagliate complete, vedere [trasferire i numeri di telefono a Office 365](/microsoftteams/transfer-phone-numbers-to-office-365).**
 
- > [!NOTE]
-> Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+  > [!NOTE]
+  > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
   
 ## <a name="related-topics"></a>Argomenti correlati

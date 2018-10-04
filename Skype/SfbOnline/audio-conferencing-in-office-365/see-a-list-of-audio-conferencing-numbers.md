@@ -20,31 +20,31 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come cercare i numeri di conferenza telefonica con accesso esterno all'interno di Skype for Business online. "
-ms.openlocfilehash: 43442d2ecee1de30126b73dd7cce8124db650c84
-ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.openlocfilehash: 557aef5e85cdd176e2d95e1cd946ed23e00764a0
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "23891257"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25372888"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers-in-skype-for-business-online"></a>Visualizzare un elenco di numeri per Audioconferenza in Skype for Business online
 
 > [!NOTE]
 > Per informazioni sui numeri per Audioconferenza in Microsoft Teams, consulta [Visualizzare un elenco di numeri per Audioconferenza in Microsoft Teams](/MicrosoftTeams/see-a-list-of-audio-conferencing-numbers-in-teams) .
 
-Quando imposti un'Audioconferenza per gli utenti di Skype for Business, è possibile visualizzare i numeri di telefono disponibili per Audioconferenza. Questo elenco conterrà tutti i numeri di telefono per Audioconferenza disponibili per l'organizzazione.
+When you set up Audio Conferencing for Skype for Business users, you can view the phone numbers that are available to them for audio conferencing. This list will have all of the audio conferencing phone numbers that are available to your organization.
   
- **Stai cercando i prezzi?** Vedere [prezzi per le conferenze Audio](https://products.office.com/en-us/skype-for-business/audio-conferencing#Requirements).
+ **Looking for prices?** See [Pricing for Audio Conferencing](https://products.office.com/en-us/skype-for-business/audio-conferencing#Requirements).
   
 > [!IMPORTANT]
-> **Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza.** Se si sta cercando di verificare se sono disponibili i numeri di telefono di accesso esterno nell'area o paese/area geografica, andare a **Skype per Business admin center** > **vocale** > **I numeri di telefono**, fare clic su **Aggiungi**e quindi fare clic su nuovo servizio ** Numeri**. Utilizza gli elenchi per **paese/area geografica**, **stato/regione**, e **città** per filtrare la ricerca. Inoltre, se sta cercando numeri verdi assistenza, **numero verde** selezionare dal **paese** elenco.
+> **There isn't a resource that contains a listing of all of the dial-in numbers for Audio Conferencing.** If you are looking to see if there are dial-in phone numbers available in your area or country/region, go to **Skype for Business admin center** > **Voice** > **Phone Numbers**, click **Add**, and then click **New Service Numbers**. Use the lists for **Country/Region**, **State/Region**, and **City** to filter your search. Also, if you are looking for toll-free service numbers, select **Toll-Free** from the **State/Region** list.
   
-Se è disponibile un solo numero di telefono all'interno dell'organizzazione, questo verrà utilizzato come numero predefinito per tutti gli utenti. Quando sono disponibili più numeri di telefono, è possibile selezionare il numero di telefono predefinito per ogni utente. Questo numero predefinito verrà incluso negli inviti alle riunioni di Skype for Business.
+If there is only one phone number available in your organization, it will be used as the default number for all of your users. When multiple phone numbers are available, you can select the default phone number for each user. This default number will be included in Skype for Business meeting invitations.
   
 È possibile consultare [Impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbers-included-on-invites.md) per modificare il numero di telefono di accesso esterno per un singolo utente.
   
 > [!NOTE]
-> I numeri nazionali di accesso esterno sono dedicati all'organizzazione e sono gli unici che possono essere impostati come numero di telefono predefinito. Tuttavia, i numeri internazionali di accesso esterno possono essere condivisi tra più organizzazioni. 
+> Domestic dial-in numbers are dedicated to your organization and are the only ones that can be set as a default phone number. However, international dial-in numbers may be shared across multiple organizations. 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
@@ -57,12 +57,12 @@ Se è disponibile un solo numero di telefono all'interno dell'organizzazione, qu
     
 3. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **bridging Microsoft**e quindi:
     
-  - È possibile visualizzare i numeri di telefono disponibili per le conferenze audio.
+   - È possibile visualizzare i numeri di telefono disponibili per le conferenze audio.
     
-  - È inoltre possibile visualizzare il percorso e le lingue principale e secondarie che verranno utilizzate per le conferenze audio l'operatore automatico.
+   - È inoltre possibile visualizzare il percorso e le lingue principale e secondarie che verranno utilizzate per le conferenze audio l'operatore automatico.
     
 > [!NOTE]
-> È possibile accedere ai **servizi di conferenza Audio** > **utenti** e selezionare le proprietà dell'utente per modificare l'impostazione predefinita dei numeri scegliendo un nuovo numero dall'elenco dei numeri disponibili nell'organizzazione. Vedere [impostare telefono numeri incluso nel invita](set-the-phone-numbers-included-on-invites.md). 
+> You can go to **Audio conferencing** > **Users** and select the user's properties to change the default number by choosing a new number from the list of available numbers in your organization. See [Set the phone numbers included on invites](set-the-phone-numbers-included-on-invites.md). 
 
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?

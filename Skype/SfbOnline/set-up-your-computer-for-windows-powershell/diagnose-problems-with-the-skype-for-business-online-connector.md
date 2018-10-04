@@ -17,12 +17,12 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: 516da269e41f7945238aa8b402793a65444bd932
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 651afa58513819eb57914bfa1cd92bc38a46298f
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23851514"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25372905"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
 
@@ -51,7 +51,7 @@ ms.locfileid: "23851514"
 
 Il criterio di esecuzione di PowerShell consente di determinare quali file di configurazione possono essere caricati nella console di PowerShell e quali script possono essere eseguiti da un utente da questa console. Come minimo, il Modulo del connettore di Skype for Business Online non può essere importato a meno che il criterio di esecuzione non sia stato impostato su RemoteSigned. In caso contrario, quando si prova a importare il modulo verrà visualizzato il seguente messaggio di errore:
   
-- **Errore**: *Import-Module: c: File\\i file di programma\\Common Files\\Microsoft Lync Server 2013\\moduli\\LyncOnlineConnector\\LyncOnlineConnectorStartup.psm1 non possono essere caricati perché è in esecuzione script è disattivato nel sistema. Per ulteriori informazioni, vedere about_Execution_Policies in https://go.microsoft.com/fwlink/?LinkID=135170.*
+- **Errore**: <em>Import-Module: c: File\\i file di programma\\Common Files\\Microsoft Lync Server 2013\\moduli\\LyncOnlineConnector\\LyncOnlineConnectorStartup.psm1 non possono essere caricati perché è in esecuzione script è disattivato nel sistema. Per ulteriori informazioni, vedere about_Execution_Policies in https://go.microsoft.com/fwlink/?LinkID=135170.</em>
 
 - **Soluzione** Per risolvere questo problema, avviare PowerShell come amministratore e quindi eseguire il comando seguente:
     ```

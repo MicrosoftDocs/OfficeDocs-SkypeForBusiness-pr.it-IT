@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Informazioni sulla funzionalità di trasmissione riunione Skype di Skype Business online che consente inoltre di pianificazione, prodotti e trasmissione riunioni o eventi ai gruppi di destinatari in linea di grandi dimensioni fino a 10.000 partecipanti.
-ms.openlocfilehash: e1f10ad5036e2866cc480491e98bd2dd7396895a
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 7c22b4b0911935ffd90d10e65d2fff0d71018910
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23862216"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25374555"
 ---
 # <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
@@ -37,7 +37,7 @@ Per ignorare questo passaggio e aggiungere invece business diversa per la federa
 
 Per impostare i domini consentiti, utilizzare **uno** dei metodi seguenti:
 
-###
+## #
 
  **Metodo 1: Utilizzare l'interfaccia di amministrazione di Office 365**
 
@@ -45,17 +45,17 @@ Per impostare i domini consentiti, utilizzare **uno** dei metodi seguenti:
 
 2. Nella pagina **condivisione esterna** in **eccezioni di dominio**, selezionare **tutti i domini vengono bloccati, ad eccezione**e immettere i seguenti domini separati da una virgola (,):
 
-  - noammeetings.Lync.com
+   - noammeetings.Lync.com
 
-  - emeameetings.Lync.com
+   - emeameetings.Lync.com
 
-  - apacmeetings.Lync.com
+   - apacmeetings.Lync.com
 
-  - Resources.Lync.com
+   - Resources.Lync.com
 
 3. Fai clic su **Salva**.
 
-###
+## #
 
  **Metodo 2: Utilizzare Windows PowerShell**
 

@@ -20,24 +20,24 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Ottenere i passaggi per creare un numero di telefono predefinito affinché i chiamanti possano partecipare ad una riunione di Skype for Business online. '
-ms.openlocfilehash: cb808cb8271cfb32174106e2692793aa41a64d50
-ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.openlocfilehash: c78a3fb140431dd46b3850e1d01e7fb29fb29210
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23882114"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25372821"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-skype-for-business-online"></a>Impostare in Skype for Business online i numeri di telefono inclusi negli inviti
 
 > [!Note]
 > Per informazioni sui numeri di telefono inclusi negli inviti di Microsoft Teams, vedere[Impostare i numeri di telefono inclusi negli inviti di Microsoft Teams](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams).
 
-L'Audioconferenza in Office 365 consente agli utenti dell'organizzazione di creare riunioni di Skype for Business e quindi di accedere a tali riunioni mediante un telefono. In Office 365, vi è l'opzione di utilizzare un ponte per audioconferenze Microsoft o un ponte per audioconferenza di terze parti ospitato da un provider di servizi di audioconferenza approvato (ACP).
+Audio Conferencing in Office 365 enables users in your organization to create Skype for Business meetings, and then allow users to dial in to those meetings using a phone. In Office 365, you have the option of using a Microsoft audio conferencing bridge or a third-party audio conferencing bridge that is hosted by an approved audio conferencing provider (ACP).
   
 > [!NOTE]
-> Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza. Se si desidera utilizzare per verificare se sono disponibili i numeri di telefono di accesso esterno nell'area o paese/area geografica, utilizzare **Skype per Business admin center** > **vocale** > **I numeri di telefono**, fare clic su **Aggiungi** , quindi **nuovi numeri di servizio **. Utilizza gli elenchi **Paese/area geografica**, **Stato/regione** e **Città** per filtrare la ricerca. > Inoltre, se stai cercando numeri di servizio gratuiti, seleziona **Numero verde** dall'elenco **Stato/regione**.
+> There isn't a resource that contains a listing of all of the dial-in numbers for Audio Conferencing. If you are looking to see if there are dial-in phone numbers available in your area or country/region, use the **Skype for Business admin center** > **Voice** > **Phone Numbers**, click **Add** then **New Service Numbers**. Use the lists for **Country/Region**, **State/Region** and **City** to filter your search.> Also, if you are looking for toll free service numbers, select **Toll-Free** from the **State/Region** list.
   
-Un ponte per conferenze offre un insieme di numeri di telefono di accesso esterno per l'organizzazione. Tutti questi numeri possono essere utilizzati per accedere alle riunioni create dall'organizzatore, ma è possibile selezionare quelli che verranno inclusi negli inviti alle riunioni.
+A conferencing bridge gives you a set of dial-in phone numbers for your organization. All of them can be used to join the meetings that a meeting organizer has created, but you can select which ones will be included on their meeting invites.
   
 > [!NOTE]
 > Vi è un massimo per organizzatore di un numero a pagamento e un numero verde nell'invito alla riunione, ma è disponibile anche un collegamento nella parte inferiore di ogni invito che consente di aprire l'elenco completo di tutti i numeri di telefono di accesso esterno che possono essere utilizzati per accedere ad una riunione. 
@@ -57,11 +57,11 @@ Un ponte per conferenze offre un insieme di numeri di telefono di accesso estern
   
 4. Scegli gli utenti che desideri modificare:
     
-  - Per selezionare un singolo utente, seleziona il nome dell'utente.
+   - Per selezionare un singolo utente, seleziona il nome dell'utente.
     
-  - Per selezionare tutti gli utenti della pagina, seleziona la casella accanto al **Nome visualizzato** nella parte superiore dell'elenco.
+   - Per selezionare tutti gli utenti della pagina, seleziona la casella accanto al **Nome visualizzato** nella parte superiore dell'elenco.
     
-  - Per selezionare più utenti, seleziona la casella accanto al nome di ogni utente.
+   - Per selezionare più utenti, seleziona la casella accanto al nome di ogni utente.
     
 5. Nel riquadro destro, scegli **Modifica**.
     
@@ -69,14 +69,14 @@ Un ponte per conferenze offre un insieme di numeri di telefono di accesso estern
   
 6. Scegli **servizi di audioconferenza**.
     
-7. Nella pagina **Proprietà** nell'elenco **Nome provider** scegli il provider per l'utente. A seconda del provider, completa le caselle seguenti.
+7. On the **Properties** page, in the **Provider name** list, choose the provider for the user. Depending on the provider, complete the following boxes.
     
-  - **Microsoft è il provider**: usa gli elenchi **Numero a pagamento predefinito** e **Numero verde predefinito** per selezionare i numeri predefiniti per l'utente.
+   - **Microsoft è il provider**: usa gli elenchi **Numero a pagamento predefinito** e **Numero verde predefinito** per selezionare i numeri predefiniti per l'utente.
     
-    > [!NOTE]
-    > Almeno un numero verde deve essere assegnato al ponte per conferenze prima che possa essere impostato come numero verde predefinito per un utente. Per ottenere un numero verde, vedere [Getting numeri di telefono del servizio per Skype per le aziende](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md). 
+     > [!NOTE]
+     > At least one toll-free number must be assigned to your conferencing bridge before it can be set as the default toll-free number of a user. To get a toll-free number, see [Getting service phone numbers for Skype for Business](../what-is-phone-system-in-office-365/getting-service-phone-numbers.md). 
   
-  - **Il provider è una terza parte**: utilizza i campi **Numero a pagamento** e **Numero verde** per immettere i numeri per l'utente.
+   - **Il provider è una terza parte**: utilizza i campi **Numero a pagamento** e **Numero verde** per immettere i numeri per l'utente.
 
 
 ## <a name="reset-audio-conferencing-phone-numbers"></a>Reimpostare i numeri di telefono per Audioconferenza
@@ -87,7 +87,7 @@ Un ponte per conferenze offre un insieme di numeri di telefono di accesso estern
     
 3. Scegli gli utenti che desideri ripristinare e quindi nel riquadro azioni, fai clic su **Cancella**.
     
-Per impostazione predefinita, quando si modificano le impostazioni di conferenza dell'utente, un messaggio di posta elettronica viene inviato all'utente. Per modificare questa impostazione, vedere [abilitare o disabilitare l'invio messaggi di posta elettronica quando modificano le impostazioni di conferenza Audio](enable-or-disable-sending-emails-when-their-settings-change.md).
+By default, when you change a user's conferencing settings, an email is sent to the user. To change this, see [Enable or disable sending emails when Audio Conferencing settings change](enable-or-disable-sending-emails-when-their-settings-change.md).
   
 > [!IMPORTANT]
 > Quando vengono modificate le impostazioni di audioconferenza di un utente, è necessario aggiornare le riunioni di Skype for Business ricorrenti e future ed inviarle ai partecipanti. 
@@ -130,7 +130,7 @@ Per impostazione predefinita, quando si modificano le impostazioni di conferenza
   ```
   Set-CsOnlineDialInConferencingUserDefaultNumber -Country US -ToNumber +18005551234 -NumberType TollFree -BridgeId <Bridge Id>
   ```
-## <a name="want-to-learn-more-about-windows-powershell"></a>Fonti di ulteriori informazioni su Windows PowerShell
+  ## <a name="want-to-learn-more-about-windows-powershell"></a>Fonti di ulteriori informazioni su Windows PowerShell
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)

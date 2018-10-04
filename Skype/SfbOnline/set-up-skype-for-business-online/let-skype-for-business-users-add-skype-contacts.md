@@ -18,12 +18,12 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: 'See how to  let people who are using Skype for Business contact Skype for Business users from outside your organization and add them to their list of contacts. '
-ms.openlocfilehash: 98701f55bd1cdf2c6a5f8177d05a95030a4a04a5
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 3961aaa5bfe8ca17a28fa736f64a91a48414a494
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23850090"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25371952"
 ---
 # <a name="let-skype-for-business-users-add-skype-contacts"></a>Consenti agli utenti di Skype for Business di aggiungere contatti Skype
 
@@ -75,9 +75,9 @@ Per testare le tue impostazioni, ti servirà un contatto in Skype che non sia di
     
 4. Un altro metodo per testare se il problema è causato dal firewall è spostarti in un luogo dove la rete WiFi non si trova dietro il firewall, ad esempio in un bar, e utilizzare Skype for Business per inviare una richiesta di chat al tuo contatto Skype. 
     
-  - **Se hai inviato una richiesta al tuo contatto Skype e lui non l'ha mai ricevuta**, chiedigli di inviarti una richiesta di chat. Se il problema è stabilire una connessione tra Skype e Skype for Business, in questo modo spesso si risolve.
+   - **Se hai inviato una richiesta al tuo contatto Skype e lui non l'ha mai ricevuta**, chiedigli di inviarti una richiesta di chat. Se il problema è stabilire una connessione tra Skype e Skype for Business, in questo modo spesso si risolve.
     
-  - Se il messaggio viene consegnato dal bar ma non quando sei al lavoro, allora il problema è senz'altro il tuo firewall. 
+   - Se il messaggio viene consegnato dal bar ma non quando sei al lavoro, allora il problema è senz'altro il tuo firewall. 
     
 ## <a name="what-you-can-and-cant-do"></a>Funzionalità disponibili e non disponibili
 

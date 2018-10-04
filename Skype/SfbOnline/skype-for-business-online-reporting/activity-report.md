@@ -19,12 +19,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Activity reports, what it contains, and how to interpret the data. '
-ms.openlocfilehash: d13ca7f70880d7ad0f3c6376e167c6222682887d
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 26b835162f0db82a7ea4631d8add24dcd9ec79dc
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23855576"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25374493"
 ---
 # <a name="activity-report"></a>Report attività
 
@@ -82,17 +82,17 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 ***
 ![Numero 7](../images/sfbcallout7.png)<br/>
 La tabella mostra suddivisione di tutte le attività di conferenza per utente. Mostra tutti gli utenti che dispongono di Skype per le aziende assegnata e le attività di conferenza. Puoi aggiungere altre colonne alla tabella.
-*    **Nome utente** è il nome dell'utente.
-*    **Eliminato** indica che la licenza dell'utente è stata rimossa.<br/><br/>
-    > [!NOTE]
-    > Attività per un utente eliminato sarà comunque visualizzata in un rapporto, purché potrà è stato concesso in licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.
+* **Nome utente** è il nome dell'utente.
+* **Eliminato** indica che la licenza dell'utente è stata rimossa.<br/><br/>
+  > [!NOTE]
+  > Attività per un utente eliminato sarà comunque visualizzata in un rapporto, purché potrà è stato concesso in licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.
      
-*    **Data eliminazione** è la data in cui la licenza dell'utente è stata rimossa.
-*    **Data di ultima attività (UTC)** indica l'ultima volta in cui l'utente ha avviato una sessione peer to peer o ha organizzato o partecipato a una conferenza.
-*    **-To-peer** Visualizza il numero totale di sessioni di conferenze peer-to-peer utilizzato dall'utente.
-*    **Conferenze organizzate** mostra il numero totale di conferenze che sono state organizzate dall'utente.
-*    **Conferenze frequentate** mostra il numero totale di conferenze a cui ha partecipato questo utente.
-*    **Prodotto assegnato** si riferisce ai prodotti di Office 365 assegnati all'utente.<br/>
+* **Data eliminazione** è la data in cui la licenza dell'utente è stata rimossa.
+* **Data di ultima attività (UTC)** indica l'ultima volta in cui l'utente ha avviato una sessione peer to peer o ha organizzato o partecipato a una conferenza.
+* **-To-peer** Visualizza il numero totale di sessioni di conferenze peer-to-peer utilizzato dall'utente.
+* **Conferenze organizzate** mostra il numero totale di conferenze che sono state organizzate dall'utente.
+* **Conferenze frequentate** mostra il numero totale di conferenze a cui ha partecipato questo utente.
+* **Prodotto assegnato** si riferisce ai prodotti di Office 365 assegnati all'utente.<br/>
 
 Se i criteri dell'organizzazione impediscano la visualizzazione dei report in cui sono identificabili informazioni utente, è possibile modificare l'impostazione di privacy per tutti questi rapporti. Consultare la sezione **nascondere dettagli utente nei rapporti** nei [Rapporti sull'attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
 ***

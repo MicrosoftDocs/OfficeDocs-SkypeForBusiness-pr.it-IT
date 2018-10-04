@@ -17,12 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Learn how to plan and deploy Skype for Business in small, medium, and large organizations and making it available to your users. '
-ms.openlocfilehash: 6af2ed700783fef853052b39c60270baf86919e9
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: c96d4759e25370997b9af8d42d8130d7964962df
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23858796"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25372572"
 ---
 # <a name="deploy-the-skype-for-business-client-in-office-365"></a>Distribuire il client Skype for Business in Office 365
 
@@ -136,7 +136,7 @@ Per altre informazioni sul funzionamento degli aggiornamenti per il software Off
     
 - [Configurare le impostazioni di aggiornamento per Office 365 ProPlus](https://technet.microsoft.com/en-us/library/dn761708.aspx)
     
- **Frequenza di ricezione degli aggiornamenti delle funzionalità**
+  **Frequenza di ricezione degli aggiornamenti delle funzionalità**
   
 Oltre all'origine degli aggiornamenti, puoi anche controllare la frequenza con la quale ottenere nuove funzionalità per il client Skype for Business. Puoi scegliere se:
   

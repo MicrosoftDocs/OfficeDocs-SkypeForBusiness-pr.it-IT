@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono per utenti di Skype for Business in modo che le aziende e i clienti esterni li possano chiamare.
-ms.openlocfilehash: 57ffe302c784ff441d124017035c8031c1c737c1
-ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
+ms.openlocfilehash: 40c067657132781d29b8f20a3738d6d28ce36331
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347029"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25374659"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user"></a>Assegnare, modificare o rimuovere il numero di telefono di un utente
 
@@ -50,7 +50,7 @@ Quando imposti la possibilità per gli utenti di effettuare e ricevere chiamate 
 Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo costo, consulta [Licenze per componenti aggiuntivi per Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
 > [!NOTE]
-> Un modo per verificare se un utente dispone di una licenza assegnata è andando su **Interfaccia di amministrazione di Skype for Business** > **Voce** > **Utenti Voce** e selezionare l'utente. Se viene assegnata una licenza, verrà notificata in **Licenza assegnata**. Puoi anche utilizzare l'interfaccia di amministrazione di Office 365. 
+> One way to see whether a user has a license assigned is by going to **Skype for Business admin center** > **Voice** > **Voice users** and selecting the user. If a license is assigned, it will be noted under **Assigned license**. You also can use the Office 365 admin center. 
   
  ## <a name="assign-a-phone-number-to-a-user"></a>Assegnare un numero di telefono a un utente
  
@@ -62,7 +62,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
     
 3. Nella barra di navigazione sinistra fai clic su VoceUtenti Voce.**** > ****
    > [!NOTE]
- Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+   > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
  
    
     
@@ -80,7 +80,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
 8. Una volta selezionato il numero di telefono e il luogo di emergenza, fai clic su **Salva**.
     
     > [!NOTE]
-    > A causa della latenza tra Office 365 e Skype Business online, talvolta può richiedere fino a 24 ore per gli utenti da abilitare. Se dopo 24 ore il numero di telefono non è assegnato correttamente, per favore [Contatta il supporto per i prodotti per aziende - Guida amministratore](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b). Siamo a tua disposizione per! 
+    > Because of the latency between Office 365 and Skype for Business Online, it can possibly take up to 24 hours for users to be enabled. If after 24 hours, if the phone number isn't assigned correctly, please [Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b). We're here to help! 
   
 
 

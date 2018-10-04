@@ -19,12 +19,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Conference Organized Activity report, and how to interpret and customize it. '
-ms.openlocfilehash: 5e2d38c3576cd39769fd3b150ad905f37421e9bc
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: ac3c65a19d80e5218e121c1cf582753e5f5eecc5
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23854262"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25372592"
 ---
 # <a name="conference-organizer-activity-report"></a>Report attività organizzatore di conferenze
 
@@ -80,22 +80,22 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 ![Numero 7](../images/sfbcallout7.png)<br/>Puoi filtrare la serie visualizzata nel grafico facendo clic su un elemento nella legenda. Ad esempio, nel grafico **Attività**, fai clic o tocca **Messaggistica istantanea**, **Audio/video**, **Condivisione applicazioni**, **Web**, **Accesso esterno in ingresso/uscita di terze parti** e **Accesso esterno in ingresso/uscita Microsoft** per visualizzare solo le informazioni pertinenti. La modifica di questa selezione non cambia le informazioni nella tabella della griglia. 
 ***
 ![Numero 8](../images/sfbcallout8.png)<br/>La tabella mostra un'analisi delle attività delle conferenze organizzate, suddivise per utente. Mostra inoltre tutti gli utenti a cui è assegnato Skype for Business e le conferenze che hanno organizzato. Puoi aggiungere altre colonne alla tabella. 
-*    **Nome utente** è il nome dell'utente. 
-*    **Eliminato** indica che la licenza dell'utente è stata rimossa.<br/><br/>
-    > [!NOTE]
-    > Attività per un utente eliminato sarà comunque visualizzata in un rapporto, purché potrà è stato concesso in licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.
+* **Nome utente** è il nome dell'utente. 
+* **Eliminato** indica che la licenza dell'utente è stata rimossa.<br/><br/>
+  > [!NOTE]
+  > Attività per un utente eliminato sarà comunque visualizzata in un rapporto, purché potrà è stato concesso in licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.
      
-*    **Data eliminazione** è la data in cui la licenza dell'utente è stata rimossa. 
-*    **Data di ultima attività (UTC)** è la data dell'ultima attività (UTC) per quell'utente. 
-*    **Messaggistica istantanea** mostra il numero totale di conferenze di messaggistica istantanea che sono state organizzate. 
-*    **Audio/video** mostra il numero totale di conferenze audio/video che sono state organizzate.
-*    **Condivisione applicazioni** mostra il numero totale di conferenze con condivisione di applicazioni che sono state organizzate. 
-*    **Web** mostra il numero totale di conferenze web che sono state organizzate. 
-*    **Chiamata in/in uscita - parte 3** Visualizza il numero totale di accesso/disconnessione Audio conferenze che sono stati organizzati che utilizzano un provider di audioconferenza di terze parti 3. 
-*    **Accesso/disconnessione Microsoft** Visualizza il numero totale di conferenze Audio/chiamata in uscita che sono stati organizzati. 
-*    **Minuti audio/video** mostra il numero totale di minuti utilizzati per l'organizzazione di conferenze che hanno utilizzato audio/video. 
-*    **Minuti Dial-in Microsoft** Visualizza il numero totale di chiamate in ingresso minuti utilizzati nelle riunioni in cui sono state organizzate che utilizzano Microsoft come provider di servizi di conferenza Audio. 
-*    **Minuti chiamata in uscita Microsoft** Visualizza il numero totale di minuti per chiamata in uscita utilizzato nelle riunioni in cui sono state organizzate che utilizzano Microsoft come provider di servizi di conferenza Audio. 
+* **Data eliminazione** è la data in cui la licenza dell'utente è stata rimossa. 
+* **Data di ultima attività (UTC)** è la data dell'ultima attività (UTC) per quell'utente. 
+* **Messaggistica istantanea** mostra il numero totale di conferenze di messaggistica istantanea che sono state organizzate. 
+* **Audio/video** mostra il numero totale di conferenze audio/video che sono state organizzate.
+* **Condivisione applicazioni** mostra il numero totale di conferenze con condivisione di applicazioni che sono state organizzate. 
+* **Web** mostra il numero totale di conferenze web che sono state organizzate. 
+* **Chiamata in/in uscita - parte 3** Visualizza il numero totale di accesso/disconnessione Audio conferenze che sono stati organizzati che utilizzano un provider di audioconferenza di terze parti 3. 
+* **Accesso/disconnessione Microsoft** Visualizza il numero totale di conferenze Audio/chiamata in uscita che sono stati organizzati. 
+* **Minuti audio/video** mostra il numero totale di minuti utilizzati per l'organizzazione di conferenze che hanno utilizzato audio/video. 
+* **Minuti Dial-in Microsoft** Visualizza il numero totale di chiamate in ingresso minuti utilizzati nelle riunioni in cui sono state organizzate che utilizzano Microsoft come provider di servizi di conferenza Audio. 
+* **Minuti chiamata in uscita Microsoft** Visualizza il numero totale di minuti per chiamata in uscita utilizzato nelle riunioni in cui sono state organizzate che utilizzano Microsoft come provider di servizi di conferenza Audio. 
 
 Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Estrarre il **come nascondere dettagli relativi al livello utente?** sezione dei [Rapporti di attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
 ***

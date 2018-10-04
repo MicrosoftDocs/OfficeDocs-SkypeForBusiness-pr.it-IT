@@ -17,12 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: In Skype Business online, è necessario possibilità di controllare i trasferimenti di file da punto a punto (P2P) come parte di impostazioni di criteri di conferenza esistente. Tuttavia, in questo modo o blocchi file trasferimenti per gli utenti sono o meno sono trasferimento di file a un utente che si trova all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguire la procedura riportata di seguito, è possibile bloccare i trasferimenti di file P2P con organizzazioni federate o partner.
-ms.openlocfilehash: 3ae7bce22a99858af36696e1fde41bb614f2c008
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 6ca79b45c4e068ae6999db24cf6a0dd54e9e3aa6
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23858492"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25372104"
 ---
 # <a name="block-point-to-point-file-transfers"></a>Bloccare i trasferimenti di file “punto a punto”
 
@@ -72,14 +72,14 @@ Per ottenere questo risultato, l'utente deve utilizzare una versione supportata 
     > [!NOTE]
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
 
-  ```      
+   ```      
     Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
     $credential = Get-Credential
     $session = New-CsOnlineSession -Credential $credential
     Import-PSSession $session
-  ```
+   ```
 
-  Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
+   Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
     
 ## <a name="disable-p2p-file-transfers-for-your-organization"></a>Disattivare i trasferimenti di file P2P per l'organizzazione
 
@@ -95,13 +95,13 @@ Per consentire i trasferimenti P2P per interno i trasferimenti di file esterno o
 
 È possibile applicare a un utente crea un nuovo criterio e concedere a tale utente. A tale scopo, eseguire: 
 > 
-  ```
-  New-CsExternalUserCommunicationPolicy -Identity BlockExternalFT -EnableP2PFileTransfer $False
-  ```
+>   ```
+>   New-CsExternalUserCommunicationPolicy -Identity BlockExternalFT -EnableP2PFileTransfer $False
+>   ```
 > 
-  ```
-  Grant-CsExternalUserCommunicationPolicy -PolicyName BlockExternalFT -Identity amosm@contoso.com
-  ```
+>   ```
+>   Grant-CsExternalUserCommunicationPolicy -PolicyName BlockExternalFT -Identity amosm@contoso.com
+>   ```
 
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 

@@ -17,12 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: I criteri client aiutano a determinare le funzioni di Skype for Business online messe a disposizione degli utenti; per esempio, si potrebbe dare ad alcuni utenti il diritto di trasferire i file negando lo stesso diritto ad altri utenti.
-ms.openlocfilehash: 791d54dd12e5f222958fd4513abdeca2433cbf16
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 1a5e752976aaa14adeb0b2345da830c5765ce7f7
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23857862"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25373194"
 ---
 # <a name="set-up-client-policies-for-your-organization"></a>Impostazione dei criteri client per la propria organizzazione
 
@@ -58,32 +58,32 @@ Impostazioni dei criteri client possono essere configurate durante la creazione 
     > [!NOTE]
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
 
-  ```      
+   ```      
     Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
     $credential = Get-Credential
     $session = New-CsOnlineSession -Credential $credential
     Import-PSSession $session
-  ```
+   ```
 
-  Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
+   Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
     
 ### <a name="disable-emoticons-and-presence-notifications-and-prevent-saving-of-ims"></a>Disattivare le notifiche di presenza e le emoticon e impedire il salvataggio dei messaggi immediati
 
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
     
 > 
-  ```
-  New-CsClientPolicy -Identity ClientPolicy -DisableEmoticons $true -DisablePresenceNote -$true -DisableSavingIM $true
-  ```
+>   ```
+>   New-CsClientPolicy -Identity ClientPolicy -DisableEmoticons $true -DisablePresenceNote -$true -DisableSavingIM $true
+>   ```
 
   Vedere ulteriori informazioni sui cmdlet [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779155.aspx) .
     
 - Per assegnare il criterio creato a tutti gli utenti dell'organizzazione, eseguire:
     
 > 
-  ```
-  Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName ClientPolicy
-  ```
+>   ```
+>   Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName ClientPolicy
+>   ```
 
   Vedere ulteriori informazioni sui cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) .
     
@@ -94,18 +94,18 @@ Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsCl
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
     
 > 
-  ```
-  New-CsClientPolicy -Identity URLClientPolicy -EnableURL $true
-  ```
+>   ```
+>   New-CsClientPolicy -Identity URLClientPolicy -EnableURL $true
+>   ```
 
   Vedere ulteriori informazioni sui cmdlet [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779155.aspx) .
     
 - Per assegnare il criterio creato a tutti gli utenti dell'organizzazione, eseguire:
     
 > 
-  ```
-  Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName URLClientPolicy
-  ```
+>   ```
+>   Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName URLClientPolicy
+>   ```
 
   Vedere ulteriori informazioni sui cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) .
     
@@ -114,18 +114,18 @@ Se è già stato creato un criterio, è possibile utilizzare il cmdlet [Set-CsCl
 ### <a name="prevent-showing-recent-contacts"></a>Impedire di mostrare i contatti recenti
 
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
-> 
-  ```
-  New-CsClientPolicy -Identity ContactsClientPolicy -ShowRecentContacts $false 
-  ```
+  > 
+  > ```
+  > New-CsClientPolicy -Identity ContactsClientPolicy -ShowRecentContacts $false 
+  > ```
 
   Vedere ulteriori informazioni sui cmdlet [New-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779155.aspx) .
     
 - Per assegnare il criterio creato ad Amos Marble, eseguire:
-> 
-  ```
-  Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName ContactsClientPolicy
-  ```
+  > 
+  > ```
+  > Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName ContactsClientPolicy
+  > ```
 
   Vedere ulteriori informazioni sui cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/en-us/library/mt779152.aspx) .
     

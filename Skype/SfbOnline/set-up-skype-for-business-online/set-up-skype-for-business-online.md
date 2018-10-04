@@ -22,12 +22,12 @@ ms.custom:
 - Alchemy
 - LIL_Placement
 description: "Informazioni su come impostare il dominio, gli utenti, messaggistica Istantanea e presenza per l'organizzazione per installare Skype per le aziende. Vedere anche come configurare conferenze audio, sistema telefonico e la chiamata dei piani e trasmissione Skype riunione. "
-ms.openlocfilehash: b4db326212b472539a483a406a7c940f0802978d
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: af472553cea8a79f2fe9d918f7924f8884e834b5
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23864490"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25374476"
 ---
 # <a name="set-up-skype-for-business-online"></a>Configurare Skype for Business online
 
@@ -54,7 +54,7 @@ Per ulteriori informazioni, vedere [pianificare l'installazione di Office 365 pe
 
 Skype per Business Online fa parte della famiglia di prodotti Office 365 dei servizi. Per configurare Skype Business online, è necessario accedere a Office 365. Ecco come eseguire che:
 
-1. Individuare l'ID utente di Office 365 (ad esempio *rob@fourthcoffee.com* ). È stato ricevuto un messaggio di posta elettronica dal Microsoft Online Services Team che contiene l'ID utente di Office 365 creato quando è stato acquistato Skype Business online. La posta sarà simile al seguente:
+1. Individuare l'ID utente di Office 365 (ad esempio <em>rob@fourthcoffee.com</em> ). È stato ricevuto un messaggio di posta elettronica dal Microsoft Online Services Team che contiene l'ID utente di Office 365 creato quando è stato acquistato Skype Business online. La posta sarà simile al seguente:
 
     ![Un esempio di messaggio di posta elettronica iniziale è stato ricevuto dopo che è iscritti a Skype Business online. Contiene l'id utente di Office 365.](../images/977c5c96-29c5-40c0-a4c4-1ba66ba3a1fb.png)
 
@@ -80,11 +80,11 @@ Messaggistica immediata e la presenza ([controllo dell'accesso alle informazioni
 
 1. **Scegliere gli altri utenti che può comunicare il Skype per gli utenti aziendali:**
 
-  - [Consenti agli utenti di contatti esterni Skype per gli utenti aziendali](allow-users-to-contact-external-skype-for-business-users.md) Entrambe si *e* altre attività è necessario configurare i sistemi.
+   - [Consenti agli utenti di contatti esterni Skype per gli utenti aziendali](allow-users-to-contact-external-skype-for-business-users.md) Entrambe si *e* altre attività è necessario configurare i sistemi.
 
-    **Importante**: se si dispone di due domini nell'azienda, ad esempio rob@contosowest.com e ina@contosoeast.com, è necessario eseguire questo passaggio, in modo che tutti gli utenti possono comunicare tra loro.
+     **Importante**: se si dispone di due domini nell'azienda, ad esempio rob@contosowest.com e ina@contosoeast.com, è necessario eseguire questo passaggio, in modo che tutti gli utenti possono comunicare tra loro.
 
-  - [Consentire Skype per gli utenti aziendali di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md) all'esterno dell'azienda
+   - [Consentire Skype per gli utenti aziendali di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md) all'esterno dell'azienda
 
 2. **Scegli utenti che possono se colleghi sono in linea:** La funzionalità di presenza viene illustrato che è in linea e come la loro disponibilità viene, ad esempio disponibile, occupato, non al computer o presentazione.
 
@@ -92,9 +92,9 @@ Messaggistica immediata e la presenza ([controllo dell'accesso alle informazioni
 
     È possibile scegliere le impostazioni predefinite per tutti gli utenti nell'organizzazione:
 
-  - Visualizzare automaticamente la presenza in linea di una persona per tutti gli utenti nell'organizzazione
+   - Visualizzare automaticamente la presenza in linea di una persona per tutti gli utenti nell'organizzazione
 
-  - Visualizzare la presenza in linea di una persona solo per i contatti
+   - Visualizzare la presenza in linea di una persona solo per i contatti
 
 Per ulteriori informazioni, vedere [Configure la presenza in Skype Business online](configure-presence-in-skype-for-business-online.md).
 

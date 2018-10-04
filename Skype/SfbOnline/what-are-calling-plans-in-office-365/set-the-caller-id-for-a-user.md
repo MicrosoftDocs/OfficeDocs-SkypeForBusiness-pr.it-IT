@@ -20,16 +20,16 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: Il sistema telefonico in Office 365 fornisce un ID chiamante predefinito che è il numero di telefono assegnato dell'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. È possibile ulteriori informazioni su come utilizzare l'ID del chiamante all'interno dell'organizzazione passando come ID chiamante utilizzare all'interno dell'organizzazione.
-ms.openlocfilehash: 6b224addfcbc18ec3faad27e8369996647b51b03
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+description: The Phone System in Office 365 provides a default caller ID that is the user's assigned telephone number. You can either change or block the caller ID (also called a Calling Line ID) for a user. You can learn more about how to use caller ID in your organization by going How can caller ID be used in your organization.
+ms.openlocfilehash: 2f86e28a99c1c129943d97d58e97e73a355719ab
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958192"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25371734"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
-Il sistema telefonico in Office 365 fornisce un ID chiamante predefinito che è il numero di telefono assegnato dell'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. È possibile ulteriori informazioni su come utilizzare l'ID chiamante all'interno dell'organizzazione da utilizzare [come ID chiamante utilizzare all'interno dell'organizzazione](how-can-caller-id-be-used-in-your-organization.md).
+The Phone System in Office 365 provides a default caller ID that is the user's assigned telephone number. You can either change or block the caller ID (also called a Calling Line ID) for a user. You can learn more about how to use caller ID in your organization by going [How can caller ID be used in your organization](how-can-caller-id-be-used-in-your-organization.md).
   
 > [!TIP]
 > Al momento non è possibile bloccare le chiamate in arrivo in Skype for Business online. 
@@ -44,7 +44,7 @@ Ci sono impostazioni che possono essere modificate:
     > [!NOTE]
     > Se vuoi utilizzare il parametro  _Service_, devi specificare un numero di servizio valido.
   
-- **Blocca l'ID chiamante in uscita** È possibile bloccare l'ID chiamante in uscita vengano inviate in chiamate PSTN in uscita dell'utente. In questo modo il suo numero non verrà visualizzato sul telefono di una persona che chiama.
+- **Block their outbound caller ID** You can block the outgoing Caller ID from being sent on a user's outgoing PSTN calls. Doing this will block their phone number from being displayed on the phone of a person being called.
     
 - **Blocca l'ID chiamante in ingresso** È possibile bloccare un utente di ricevere l'ID chiamante in tutte le chiamate PSTN in arrivo.
     
@@ -80,24 +80,24 @@ Per ulteriori informazioni su queste impostazioni e su come usarle, visita [Come
     
 2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
     
-    > [!NOTE]
-    > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
-> 
-  ```
-Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
-  ```
-> 
-  ```
-  $credential = Get-Credential
-  ```
-> 
-  ```
-  $session = New-CsOnlineSession -Credential $credential
-  ```
-> 
-  ```
-  Import-PSSession $session
-  ```
+   > [!NOTE]
+   > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
+   > 
+   > ```
+   > Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
+   > ```
+   > 
+   > ```
+   > $credential = Get-Credential
+   > ```
+   > 
+   > ```
+   > $session = New-CsOnlineSession -Credential $credential
+   > ```
+   > 
+   > ```
+   > Import-PSSession $session
+   > ```
 
 Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
     
@@ -108,7 +108,7 @@ Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere
   ```
   Get-CsCallingLineIdentity |fl
   ```
-Vedere ulteriori esempi e informazioni dettagliate per [Get-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793856.aspx).
+  Vedere ulteriori esempi e informazioni dettagliate per [Get-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793856.aspx).
     
 ### <a name="create-a-new-caller-id-policy-for-your-organization"></a>Creare un nuovo criterio ID chiamante per la propria organizzazione
 
@@ -162,7 +162,7 @@ Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName $nul
 ```
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 
-- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. With Windows PowerShell, you can manage Office 365 and Skype for Business Online using a single point of administration that can simplify your daily work, when you have multiple tasks to do. To get started with Windows PowerShell, see these topics:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     

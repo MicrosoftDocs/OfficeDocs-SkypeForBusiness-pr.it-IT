@@ -21,12 +21,12 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: 'Informazioni su come modificare Skype per le impostazioni di Business per singoli utenti, ad esempio: conferenze Audio e video, la registrazione delle chiamate e riunioni. '
-ms.openlocfilehash: 1296ec96d194be80ae3c48a947a0398f0eefb4e3
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: f99c99fc291a2df71a3e47448e3cc8fcf01e371f
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23860330"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25370916"
 ---
 # <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti
 
@@ -49,15 +49,15 @@ Per consentire o bloccare tutti gli utenti nell'organizzazione di comunicare con
     
 2. Scegli **Interfaccia di amministrazione** > **Skype for Business**.
     
-3. Scegliere **utenti**.
+3. Scegli **Utenti**.
     
     ![Skype per interfaccia di amministrazione di Business, scegliere utenti.](../images/7c80eeb3-6555-4fc8-91f4-61b493581e9e.png)
   
 4. Scegliere gli utenti che si desidera modificare.
     
-5. Riquadro destro fare clic su **Modifica**.
+5. Nel riquadro destro, scegli **Modifica**.
     
-    ![Scegliere l'icona di modifica.](../images/5dd7c5bc-b8fa-4201-b6a6-1436ad8f88fb.png)
+    ![Scegli l'icona di modifica.](../images/5dd7c5bc-b8fa-4201-b6a6-1436ad8f88fb.png)
   
 6. Nella pagina Opzioni **Generale** , selezionare o deselezionare la casella di controllo accanto alle funzionalità che si desidera modificare e quindi fare clic su **Salva**.
     
@@ -78,9 +78,9 @@ Dopo aver [Skype consente agli utenti aziendali aggiungere contatti Skype](let-s
     
 2. Scegliere **comunicazioni esterne**e quindi deselezionare le opzioni desiderate:
     
-  - **Skype esterna per gli utenti aziendali**: deselezionare questa casella se non si desidera che l'utente di comunicare con Skype per utenti Business nei domini federati.
+   - **Skype esterna per gli utenti aziendali**: deselezionare questa casella se non si desidera che l'utente di comunicare con Skype per utenti Business nei domini federati.
     
-  - **Gli utenti esterni Skype**: deselezionare questa casella se non si desidera che l'utente di comunicare con persone che utilizzano l'app freeSkype.
+   - **Gli utenti esterni Skype**: deselezionare questa casella se non si desidera che l'utente di comunicare con persone che utilizzano l'app freeSkype.
     
 3. Fai clic su **Salva**.
     

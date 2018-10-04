@@ -13,12 +13,12 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.author: tonysmit
-ms.openlocfilehash: 3ec47c32dec98f0e72c1f0274893dfcf2764dc5e
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 6393cf6b3ffce8139272e7d00df0b389b4c9eeb5
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23861000"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25372251"
 ---
 # <a name="skype-for-business-online-admin"></a>Amministratore Skype for Business Online
 
@@ -54,7 +54,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Siamo qui per aiutarti</h3>
+                        <h3>È & #39; r qui per</h3>
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
 
 ---
 
-<h2>Novità</h2>
+<h2>Che cosa & #39; s nuova</h2>
 
 <ul class="panelContent cardsF">
     <li>
@@ -236,7 +236,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                 <div class="card">
                     <div class="cardText">
                         <h3>Sistema telefonico</h3>
-                        <p><a href="/MicrosoftTeams/what-is-phone-system-in-office-365">Che cos’è il Sistema telefonico in Office 365?</a></p><p><a href="/MicrosoftTeams/here-s-what-you-get-with-phone-system">Ecco cosa offre il Sistema telefonico in Office 365</a></p>
+                        <p><a href="/MicrosoftTeams/what-is-phone-system-in-office-365">Che cos’è il Sistema telefonico in Office 365?</a></p><p><a href="/MicrosoftTeams/here-s-what-you-get-with-phone-system">& #39; s ottenere con sistema telefonico in Office 365</a></p>
                </div>
                 </div>
             </div>

@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: 'Learn the steps you need to do to submit a port order request when you have more than 999 phone numbers to Skype for Business. '
-ms.openlocfilehash: a65cd85c98f59f562aa8a2db37fe71090174cb25
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.openlocfilehash: 7c44e6be750e4793083a0fa931874db2e6b09b80
+ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958112"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25371874"
 ---
 # <a name="manually-submit-a-custom-service-request"></a>Inviare manualmente una richiesta di servizio
 
@@ -56,13 +56,13 @@ In alcuni paesi, è necessario inviare manualmente una richiesta di servizio per
     
 5. Nella pagina **Identificare il problema** seleziona e immetti quanto segue:
     
-  - **Funzionalità**: seleziona **Piano per chiamate nazionali** e/o **Piano per chiamate nazionali e internazionali**.
+   - **Funzionalità**: seleziona **Piano per chiamate nazionali** e/o **Piano per chiamate nazionali e internazionali**.
     
-  - **Sintomo:** immetti **Chiamata di emergenza**.
+   - **Sintomo:** immetti **Chiamata di emergenza**.
     
-  - **Riepilogo problema:** immetti **Convalida indirizzo**.
+   - **Riepilogo problema:** immetti **Convalida indirizzo**.
     
-  - **Dettagli problema:** immetti tutti i dettagli relativi all'indirizzo o agli indirizzi che desideri convalidare, ad esempio:
+   - **Dettagli problema:** immetti tutti i dettagli relativi all'indirizzo o agli indirizzi che desideri convalidare, ad esempio:
     
       - Numero civico
     
@@ -72,8 +72,8 @@ In alcuni paesi, è necessario inviare manualmente una richiesta di servizio per
     
       - Paese o area geografica
     
-    > [!IMPORTANT]
-    > **Immettere il paese o area geografica in cui offriamo il servizio Piani per chiamate in Office 365 per il quale stai tentando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
+     > [!IMPORTANT]
+     > **Immettere il paese o area geografica in cui offriamo il servizio Piani per chiamate in Office 365 per il quale stai tentando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
   
       - Codice postale
     
@@ -81,19 +81,19 @@ In alcuni paesi, è necessario inviare manualmente una richiesta di servizio per
     
 7. Nella pagina **Aggiungere i dettagli** seleziona e immetti quanto segue:
     
-  - **Il servizio non è disponibile?** Seleziona **No**.
+   - **Il servizio non è disponibile?** Seleziona **No**.
     
-  - **Quanti utenti sono interessati?** Seleziona **Alcuni utenti**.
+   - **Quanti utenti sono interessati?** Seleziona **Alcuni utenti**.
     
-  - Lascia vuoto il campo **Indirizzo di posta elettronica di un utente interessato dal problema**.
+   - Lascia vuoto il campo **Indirizzo di posta elettronica di un utente interessato dal problema**.
     
-  - **Selezionare i domini da elencare**
+   - **Selezionare i domini da elencare**
     
-  - Usa **Allega file** per convalidare più indirizzi.
+   - Usa **Allega file** per convalidare più indirizzi.
     
-  - Fai clic su **Avanti**.
+   - Fai clic su **Avanti**.
     
-  - Immetti il tuo numero di telefono di contatto.
+   - Immetti il tuo numero di telefono di contatto.
     
 8. Controlla le informazioni e quindi fai clic su **Invia ticket**.
     
