@@ -17,12 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: In questo articolo viene illustrato come impostare e risolvere i problemi Skype per la delega Business Online. In questo articolo vengono fornite indicazioni per suggerimenti per il programma di installazione, procedure consigliate e istruzioni sulla risoluzione dei problemi.
-ms.openlocfilehash: 5af84a6731d1f1e95a8d9da70fcd7c2677f36d7d
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: e3131b28be1ad01e0965b2739dc152a627826d5e
+ms.sourcegitcommit: 28e0e8043f418505039cd12407c927f454c141f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25370891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25546676"
 ---
 # <a name="set-up-and-troubleshoot-skype-for-business-online-delegation"></a>Configurare le deleghe e risolvere i problemi relativi alle deleghe in Skype for Business online
 
@@ -89,13 +89,13 @@ Per configurare Skype per la delega Business Online, procedere come segue:
     
 3. Selezionare **Aggiungi**, selezionare il delegato che si desidera aggiungere e quindi scegliere **OK**.
     
-   **Nessuna scheda inoltro di chiamata**
+ **Nessuna scheda inoltro di chiamata**
   
-4. In Outlook, selezionare **File** > **Le impostazioni degli Account** > **Accesso delegato** > **Add**.
+1. In Outlook, selezionare **File** > **Le impostazioni degli Account** > **Accesso delegato** > **Add**.
     
-5. Individuare e quindi aggiungere il nome della persona che verrà il delegato.
+2. Individuare e quindi aggiungere il nome della persona che verrà il delegato.
     
-6. Selezionare il menu **calendario** e quindi selezionare **Editor (lettura, creare e modificare elementi)**.
+3. Selezionare il menu **calendario** e quindi selezionare **Editor (lettura, creare e modificare elementi)**.
     
 ### <a name="for-mac-clients---lync"></a>Per i client Mac - Lync
 
