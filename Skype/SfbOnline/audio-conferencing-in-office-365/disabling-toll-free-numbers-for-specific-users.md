@@ -19,15 +19,15 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Gli amministratori possono controllare come gli organizzatori utilizzano i numeri gratuiti per le riunioni.
-ms.openlocfilehash: 316497b6b4569ffef4419b6ed2ce6994c604d16a
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: 0ee8274dd30b246da513d0597bf39964b94be8ca
+ms.sourcegitcommit: 044286f9dec2743a622bdaeac03469418cfdfa0d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25370612"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25678157"
 ---
 # <a name="disabling-toll-free-numbers-for-specific-skype-for-business-online-users"></a>Disattivazione di numeri gratuiti per utenti specifici su Skype for Business online
-
+ 
 > [!Note]
 > Per informazioni sulla disattivazione dei numeri telefonici gratuiti per gli utenti di Teams, consulta [Disabilitazione numeri gratuiti per utenti specifici su Teams](/MicrosoftTeams/disabling-toll-free-numbers-for-specific-teams-users).
 
@@ -48,20 +48,21 @@ Quando i numeri gratuiti sono disabilitati per un determinato organizzatore:
 
 ## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici 
 
+Dal **team Microsoft che & Skype per Business Admin Center**:
 
-1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili. 
+1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
 
-2. In the Action pane, click **Edit**. 
+2. Accanto a **Servizi di conferenza Audio**, fare clic su **Modifica**.
 
-3. Deselezionare **Consenti utilizzo di numeri verdi per partecipare alle riunioni di questo utente**. 
- 
-4. Fai clic su **Salva**. 
+3. Impostare **includono numeri verdi nelle convocazioni da questo utente** su **disattivato**. 
+
+4. Fare clic su **salvare.** 
  
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
  
 **Utilizzo di PowerShell**  
 
-You can use the AllowTollFreeDialIn parameter of the Set-CsOnlineDialInConferencingUser cmdlet to enable or disable this control. For example: 
+Puoi utilizzare il parametro AllowTollFreeDialIn del cmdlet Set-CsOnlineDialInConferencingUser per abilitare o disabilitare questo controllo. Ad esempio: 
 
 - Set-CsOnlineDialInConferencingUser user@contoso.com – AllowTollFreeDialIn $false

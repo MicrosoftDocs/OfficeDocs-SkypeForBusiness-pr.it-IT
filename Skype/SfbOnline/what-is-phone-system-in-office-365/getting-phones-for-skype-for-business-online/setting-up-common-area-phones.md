@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni sulle procedure di distribuzione per ottenere il firmware corretto, aggiornare, se necessario, assegnare licenze e configurare le impostazioni per i telefoni delle aree comuni.
-ms.openlocfilehash: d741b2ea76b8824ed36252d1d53e3f66e0118401
-ms.sourcegitcommit: cba568455949deab3c47777cb6504b4ed889bdbd
+ms.openlocfilehash: b92cef4234823c53faf6193d2e9e90fe3e5b60f0
+ms.sourcegitcommit: 044286f9dec2743a622bdaeac03469418cfdfa0d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2018
-ms.locfileid: "25552439"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25678167"
 ---
 # <a name="set-up-common-area-phones"></a>Configurare i telefoni di aree comuni
 A common area phone (CAP) is typically placed in an area like a lobby or another area that is available to a lot of people. For example, a reception area phone, door phone or meeting room phone, CAPs are set up as devices rather than users and automatically sign into a network. In the steps below, we’ll help you set up an account for Phone System with Calling Plans so you can deploy these types of phones for your organization.
@@ -137,7 +137,7 @@ Il telefono o i telefoni in dotazione devono avere la modalità **Telefono di ar
 
 
 > [!NOTE]
-> Il sito di provisioning CAP afferma che ripristinerà la password dell'account CAP ad una password casuale. Prendere nota che l'account a cui fa riferimento il CAP è l'account Azure Active Directory (AAD). Se hai creato l'account solo in AAD, la procedura è semplice. Se hai sincronizzato un Active Directory locale con AAD, assicurati di prendere nota delle credenziali che stai utilizzando che verranno modificate dal provisioning CAP.
+> Il sito di provisioning CAP afferma che ripristinerà la password dell'account CAP ad una password casuale. Prendere nota che l'account a cui fa riferimento il CAP è l'account Azure Active Directory (AAD). Se hai creato l'account solo in AAD, la procedura è semplice. Se si sincronizza un locale in Active Directory per AAD e si utilizza un IDP di terze parti o ADFS, il provisioning di tipo CAP non riesce. In questo caso, è necessario utilizzare un Office 365/Azure solo account di Active Directory (ad esempio, un account con dominio **onmicrosoft.com** ) per limitare il provisioning per funzionare.
 
 
 ### <a name="related-topics"></a>Argomenti correlati
