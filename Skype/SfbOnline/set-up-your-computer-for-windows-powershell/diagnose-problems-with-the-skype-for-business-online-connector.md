@@ -17,12 +17,12 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: 651afa58513819eb57914bfa1cd92bc38a46298f
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: 223886b68c22f3713118eaed4a556743df2c7cf1
+ms.sourcegitcommit: 7d65eafd5b0163ece91deb7801458c7a45fcc4f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25372905"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "25839189"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
 
@@ -112,7 +112,7 @@ Quando tenti di effettuare una connessione remota a Skype for Business online, d
 
 Non puoi stabilire una connessione remota di PowerShell a Skype for Business online a meno che tu non faccia parte del gruppo di amministratori del tenant. Se non sei un membro di questo gruppo, il tentativo di connessione non riuscirà e verrà visualizzato il messaggio di errore seguente:
 
-- **Errore**: *New-PSSession: [admin.vdomain.com] elaborazione dei dati dal server remoto admin.vdomain.com non riuscito con il messaggio di errore: l'utente 'user@foo.com' non dispone dell'autorizzazione per gestire il tenant. È possibile concedere autorizzazioni assegnando l'utente al ruolo RBAC appropriato. Per ulteriori informazioni, vedere la [Risoluzione dei problemi di Remote](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1).*
+- **Errore**: *New-PSSession: [admin.vdomain.com] elaborazione dei dati dal server remoto admin.vdomain.com non riuscito con il messaggio di errore: l'utente 'user@foo.com' non dispone dell'autorizzazione per gestire il tenant. È possibile concedere autorizzazioni assegnando l'utente al ruolo RBAC appropriato. Per ulteriori informazioni, vedere la [Risoluzione dei problemi di Remote](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1).*
 
 - **Soluzione**: se si ritiene che sono o dovrebbero essere, un membro del gruppo amministratori Tenant, è necessario contattare il supporto di Office 365.
   
@@ -121,7 +121,7 @@ Non puoi stabilire una connessione remota di PowerShell a Skype for Business onl
 
 Per poter usare PowerShell per la gestone di Skype for Business online, è necessario che la proprietà di EnableRemotePowerShellAccess del criterio del tenant di PowerShell in uso sia impostata su  `True`. In caso contrario, la connessione non riesce e viene visualizzato il messaggio di errore seguente:
 
-- **Errore**: *New-PSSession: [admin.vdomain.com] elaborazione dei dati dal server remoto admin.vdomain.com non riuscito con il messaggio di errore: la possibilità di connettersi a questo tenant mediante una sessione remote PowerShell è stata disattivata. Contattare Guida di Lync per verificare i criteri di Powershell Tenant di questo tenant. Per ulteriori informazioni, vedere la [Risoluzione dei problemi di Remote](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1).*
+- **Errore**: *New-PSSession: [admin.vdomain.com] elaborazione dei dati dal server remoto admin.vdomain.com non riuscito con il messaggio di errore: la possibilità di connettersi a questo tenant mediante una sessione remote PowerShell è stata disattivata. Contattare Guida di Lync per verificare i criteri di Powershell Tenant di questo tenant. Per ulteriori informazioni, vedere la [Risoluzione dei problemi di Remote](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1).*
 
 - **Soluzione**: se viene visualizzato questo messaggio di errore, è necessario contattare il supporto di Office 365 e ottenere abilitato l'accesso PowerShell remoto.
   
@@ -130,7 +130,7 @@ Per poter usare PowerShell per la gestone di Skype for Business online, è neces
 
 Ogni amministratore può eseguire fino a tre connessioni remote simultanee a Skype for Business online. Se sono attive tre connessioni remote a PowerShell, qualsiasi tentativo di effettuare una quarta connessione simultanea non riuscirà, generando il messaggio di errore seguente:
 
-- **Errore**: *New-PSSession: [admin.vdomain.com] la connessione al server remoto admin.vdomain.com non riuscito con il messaggio di errore: servizio The WS-Management non è in grado di elaborare la richiesta. Il numero massimo di shell simultanee per l'utente è stato superato. Chiudere le shell o aumentare la quota per l'utente. Per ulteriori informazioni, vedere [remoto Troubleshooting] (https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1 *
+- **Errore**: *New-PSSession: [admin.vdomain.com] la connessione al server remoto admin.vdomain.com non riuscito con il messaggio di errore: servizio The WS-Management non è in grado di elaborare la richiesta. Il numero massimo di shell simultanee per l'utente è stato superato. Chiudere le shell o aumentare la quota per l'utente. Per ulteriori informazioni, vedere [remoto Troubleshooting] (https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1 *
 
 - **Soluzione**: è l'unico modo per risolvere il problema per chiudere una o più delle connessioni precedenti. Dopo aver concluso una sessione di Skype for Business online, è consigliabile usare il cmdlet **Remove-PSSession** per terminare la sessione. Questa soluzione aiuta a prevenire il problema.
   
@@ -139,7 +139,7 @@ Ogni amministratore può eseguire fino a tre connessioni remote simultanee a Sky
 
 Anche se ogni amministratore può avere al massimo tre connessioni simultanee a Skype per tenant Business Online, non tenant singolo può avere più di 20 connessioni simultanee. Ad esempio, gli amministratori di sei possono avere tre sessioni aperte. Se un amministratore della quarto tenta di effettuare connessioni più di 2 (causando un totale di connessioni simultanee 21), questo tentativo avrà esito negativo, il messaggio di errore seguente:
   
-- **Errore**: *New-PSSession: [admin.vdomain.com] la connessione al server remoto admin.vdomain.com non riuscito con il messaggio di errore: servizio The WS-Management non è in grado di elaborare la richiesta. È stato superato il numero massimo di shell simultanee per il tenant. Chiudere le shell o aumentare la quota per il tenant. Per ulteriori informazioni, vedere [remoto Troubleshooting] (https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1 *
+- **Errore**: *New-PSSession: [admin.vdomain.com] la connessione al server remoto admin.vdomain.com non riuscito con il messaggio di errore: servizio The WS-Management non è in grado di elaborare la richiesta. È stato superato il numero massimo di shell simultanee per il tenant. Chiudere le shell o aumentare la quota per il tenant. Per ulteriori informazioni, vedere [remoto Troubleshooting] (https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1 *
 
 - **Soluzione**: è l'unico modo per risolvere il problema per chiudere una o più delle connessioni precedenti. Dopo aver concluso una sessione di Skype for Business online, è consigliabile usare il cmdlet **Remove-PSSession** per terminare la sessione. Questa soluzione aiuta a prevenire il problema.  
  

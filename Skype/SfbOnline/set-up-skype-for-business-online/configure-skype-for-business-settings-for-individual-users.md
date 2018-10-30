@@ -21,12 +21,12 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: 'Informazioni su come modificare Skype per le impostazioni di Business per singoli utenti, ad esempio: conferenze Audio e video, la registrazione delle chiamate e riunioni. '
-ms.openlocfilehash: f99c99fc291a2df71a3e47448e3cc8fcf01e371f
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: e686e42771b22d7c8d8b21ac05998bbbd5f9ad7e
+ms.sourcegitcommit: 7d65eafd5b0163ece91deb7801458c7a45fcc4f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25370916"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "25838952"
 ---
 # <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti
 
@@ -63,7 +63,7 @@ Per consentire o bloccare tutti gli utenti nell'organizzazione di comunicare con
     
 |**Opzione**|**Dettagli**|
 |:-----|:-----|
-|Audio e video HD  <br/> |Consentire questa persona di registrare le riunioni audio, audio e video alle riunioni o non consentire loro di pianificare qualsiasi meeetings (nessuno).  <br/> |
+|Audio e video HD  <br/> |Consentire questa persona di registrare le riunioni audio, audio e video alle riunioni o non consentire loro di pianificare le riunioni (nessuno).  <br/> |
 |Registrare conversazioni e riunioni  <br/> |Scegliere quali questa persona è consentita registrare.  <br/> Questa opzione non è disponibile con Skype per Business Basic.  <br/> |
 |Per motivi di conformità, disattivare le funzionalità non archiviate  <br/> | Scegliere questa opzione se si è obbligate per legge a conservare le informazioni archiviate in formato elettronico. <br/>  Se si seleziona questa opzione viene disattivata la funzionalità che non sono state acquisite in presenza di un' [Archiviazione sul posto](https://technet.microsoft.com/en-us/library/ff637980%28v=exchg.150%29.aspx) configurato nell'interfaccia di amministrazione di Exchange. Disattiva le funzionalità seguenti: <br/>  Trasferimento di file tramite messaggistica istantanea <br/>  Pagine condivise di OneNote <br/>  Annotazioni di PowerPoint <br/> |
    

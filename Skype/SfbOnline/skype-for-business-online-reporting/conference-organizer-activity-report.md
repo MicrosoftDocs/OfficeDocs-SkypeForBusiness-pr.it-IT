@@ -19,16 +19,16 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Conference Organized Activity report, and how to interpret and customize it. '
-ms.openlocfilehash: ac3c65a19d80e5218e121c1cf582753e5f5eecc5
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: 871af1f9ec06f24b7c2ef6248c1d48b859bb4563
+ms.sourcegitcommit: 7d65eafd5b0163ece91deb7801458c7a45fcc4f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25372592"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "25838555"
 ---
 # <a name="conference-organizer-activity-report"></a>Report attività organizzatore di conferenze
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi utilizzare il report **attività organizzatore di conferenze in Skype for Business** per vedere quanto i tuoi utenti utilizzano messaggistica istantanea, audio, video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft nelle loro conferenze. 
+[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella propria organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi utilizzare il report **attività organizzatore di conferenze in Skype for Business** per vedere quanto i tuoi utenti utilizzano messaggistica istantanea, audio, video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft nelle loro conferenze. 
 
 Consultare la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per ulteriori informazioni.
   
@@ -109,7 +109,7 @@ Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cu
     
 - [Skype per report di utilizzo del dispositivo Business](device-usage-report.md) permette di vedere i dispositivi, compresi i sistemi operativi e dispositivi mobili basati su Windows, in cui è installata l'app Skype for Business e che la utilizzano per messaggistica istantanea e riunioni.
     
-- [Report attività partecipante di conferenze in Skype for Business](conference-participant-activity-report.md) - Visualizza il numero di partecipazioni a conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web e accesso esterno in ingresso/uscita.
+- [Skype per rapporto attività partecipante di conferenza aziendali](conference-participant-activity-report.md) È possibile visualizzare il numero messaggistica immediata, audio/video, la condivisione delle applicazioni, Web e le conferenze telefoniche/esclusione conferenze sono viene ha partecipate.
     
 - [Skype per report attività peer-to-peer aziendale](peer-to-peer-activity-report.md) È possibile visualizzare quanto gli utenti utilizzano la messaggistica immediata, audio/video, condivisione dell'applicazione e trasferimento di file.
     

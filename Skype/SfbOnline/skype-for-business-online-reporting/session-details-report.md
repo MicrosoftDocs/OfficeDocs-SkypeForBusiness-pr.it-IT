@@ -17,24 +17,24 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Reporting
-description: '[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto.'
-ms.openlocfilehash: 46a44a61777cdd4d52b9899429b4a17ffe6ad7cb
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+description: '[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella propria organizzazione. Permette di approfondire le analisi fino al livello dei report dei singoli prodotti per un panorama più dettagliato delle attività di ciascun prodotto.'
+ms.openlocfilehash: 33aa42ea7acd2f28ab0e27da85421071f948ca99
+ms.sourcegitcommit: 7d65eafd5b0163ece91deb7801458c7a45fcc4f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23851810"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "25838537"
 ---
 # <a name="session-details-report"></a>Report dettagli della sessione.
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare report **Skype per Business dettagli** per visualizzare informazioni dettagliate sull'esperienza di chiamata dell'utente singolo.
+[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella propria organizzazione. Permette di approfondire le analisi fino al livello dei report dei singoli prodotti per un panorama più dettagliato delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare report **Skype per Business dettagli** per visualizzare informazioni dettagliate sull'esperienza di chiamata dell'utente singolo.
   
 Vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per i report più disponibili.
   
 La relazione, nonché altri Skype per i report di Business fornire informazioni dettagliate sull'attività all'interno dell'organizzazione, incluse informazioni dettagliate di sessione. Queste informazioni sono molto utili quando si analisi dei, pianificazione e l'esecuzione di altre business le decisioni per l'organizzazione e per la configurazione di [titoli di coda di comunicazioni](/microsoftteams/what-are-communications-credits).
   
 > [!NOTE]
-> I report sono disponibili quando si accede a Skype for Business come amministratore dall'interfaccia di amministrazione di Office 365. 
+> È possibile visualizzare tutti i report di Skype for Business quando si accede come amministratori nell'interfaccia di amministrazione di Office 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-session-details-report"></a>Come ottenere Skype per rapporto Dettagli sessione Business
 
@@ -107,7 +107,7 @@ Per ogni sessione è disponibile a seconda dello scenario una tabella di sub con
     
 - [Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) permette di vedere quanto gli utenti organizzano conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft.
     
-- [Report attività partecipante di conferenze in Skype for Business](conference-participant-activity-report.md) - Visualizza il numero di partecipazioni a conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web e accesso esterno in ingresso/uscita.
+- [Skype per rapporto attività partecipante di conferenza aziendali](conference-participant-activity-report.md) È possibile visualizzare il numero messaggistica immediata, audio/video, la condivisione delle applicazioni, Web e le conferenze telefoniche/esclusione conferenze sono viene ha partecipate.
     
 - [Report attività peer-to-peer in Skype for Business](peer-to-peer-activity-report.md) - Permette di vedere quanto gli utenti usano messaggistica istantanea, audio/video, condivisione applicazioni e trasferimento di file.
     

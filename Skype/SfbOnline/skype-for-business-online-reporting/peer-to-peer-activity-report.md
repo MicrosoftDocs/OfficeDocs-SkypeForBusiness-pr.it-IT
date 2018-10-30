@@ -21,16 +21,16 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Get a Skype for Business Peer-to-peer activity report, and learn how to interpret and customize it for your needs. '
-ms.openlocfilehash: 2ee918cb82ea42a321af9b91ac9a4526fa849a65
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: e2499cb2d1432c4b9ad48be3333e798a3a8b1574
+ms.sourcegitcommit: 7d65eafd5b0163ece91deb7801458c7a45fcc4f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23860644"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "25838709"
 ---
 # <a name="peer-to-peer-activity-report"></a>Report attività peer-to-peer
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare il rapporto **Skype per attività peer-to-peer Business** per visualizzare quanto gli utenti utilizzano la messaggistica immediata, audio, video, condivisione dell'applicazione e trasferimento di file. 
+[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella propria organizzazione. Permette di approfondire le analisi fino al livello dei report dei singoli prodotti per un panorama più dettagliato delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare il rapporto **Skype per attività peer-to-peer Business** per visualizzare quanto gli utenti utilizzano la messaggistica immediata, audio, video, condivisione dell'applicazione e trasferimento di file. 
 
 Consultare la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
   
@@ -78,7 +78,7 @@ La relazione, nonché altri Skype per i report di Business, offre informazioni d
 
 L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per il report specifico.
 ***
-![Numero 7](../images/sfbcallout7.png)<br/>Puoi filtrare la serie visualizzata nel grafico facendo clic su un elemento nella legenda. Ad esempio, nel grafico **attività** , fare clic o toccare **messaggistica immediata**, **Audio**, **Video**, **condivisione di applicazioni**e **i trasferimenti di File** per visualizzare solo le informazioni relative a ciascuno di essi. La modifica di questa selezione non cambia le informazioni nella tabella della griglia. 
+![Numero 7](../images/sfbcallout7.png)<br/>È possibile filtrare la serie visualizzata nel grafico facendo clic su un elemento nella legenda. Ad esempio, nel grafico **attività** , fare clic o toccare **messaggistica immediata**, **Audio**, **Video**, **condivisione di applicazioni**e **i trasferimenti di File** per visualizzare solo le informazioni relative a ciascuno di essi. La modifica di questa selezione non modifica le informazioni nella tabella della griglia. 
 ***
 ![Numero 8](../images/sfbcallout8.png)<br/>La tabella illustra tutte le attività peer-to-peer per utente. Mostra tutti gli utenti a cui è assegnato Skype for Business e le loro attività peer-to-peer. È possibile aggiungere ulteriori colonne dalla tabella.
 *    **Nome utente** è il nome dell'utente.
@@ -107,7 +107,7 @@ Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cu
     
 - [Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) permette di vedere quanto gli utenti organizzano conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft.
     
-- [Report attività partecipante di conferenze in Skype for Business](conference-participant-activity-report.md) - Visualizza il numero di partecipazioni a conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web e accesso esterno in ingresso/uscita.
+- [Skype per rapporto attività partecipante di conferenza aziendali](conference-participant-activity-report.md) È possibile visualizzare il numero messaggistica immediata, audio/video, la condivisione delle applicazioni, Web e le conferenze telefoniche/esclusione conferenze sono viene ha partecipate.
     
 - [Skype per gli utenti aziendali bloccati report](users-blocked-report.md) - Permette di consultare gli utenti dell'organizzazione a cui è impedito effettuare chiamate.
     

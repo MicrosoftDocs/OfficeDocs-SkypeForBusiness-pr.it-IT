@@ -18,17 +18,17 @@ f1keywords:
 - O365E_ReportsS4BClients
 ms.custom:
 - Reporting
-description: "[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare Skype per report sull'utilizzo dei dispositivi Business per visualizzare i dispositivi, inclusi sistemi operativi Windows e dispositivi mobili con Skype per applicazioni aziendali installato e utilizzano per la messaggistica Istantanea e riunioni. Rapporti di attività nell'interfaccia di amministrazione di Office 365 per ulteriori informazioni, consultare."
-ms.openlocfilehash: 72d700f5e3c63fde3f4a17f6a652643695303a8d
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+description: "[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella propria organizzazione. Permette di approfondire le analisi fino al livello dei report dei singoli prodotti per un panorama più dettagliato delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare Skype per report sull'utilizzo dei dispositivi Business per visualizzare i dispositivi, inclusi sistemi operativi Windows e dispositivi mobili con Skype per applicazioni aziendali installato e utilizzano per la messaggistica Istantanea e riunioni. Rapporti di attività nell'interfaccia di amministrazione di Office 365 per ulteriori informazioni, consultare."
+ms.openlocfilehash: 3d5561bfe0f2a2c5b6900c7cf6a1e92d63741992
+ms.sourcegitcommit: 7d65eafd5b0163ece91deb7801458c7a45fcc4f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23863384"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "25838681"
 ---
 # <a name="device-usage-report"></a>Report utilizzo dispositivo
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare il rapporto **Skype per l'utilizzo del dispositivo Business** per visualizzare i dispositivi, compresi i sistemi operativi Windows e dispositivi mobili con Skype per applicazioni aziendali installato e utilizzano per la messaggistica Istantanea e riunioni. 
+[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella propria organizzazione. Permette di approfondire le analisi fino al livello dei report dei singoli prodotti per un panorama più dettagliato delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare il rapporto **Skype per l'utilizzo del dispositivo Business** per visualizzare i dispositivi, compresi i sistemi operativi Windows e dispositivi mobili con Skype per applicazioni aziendali installato e utilizzano per la messaggistica Istantanea e riunioni. 
 
 Consultare la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per ulteriori informazioni.
   
@@ -67,7 +67,7 @@ Ogni report riporta la data in cui è stato generato. I report riflettono in gen
 ***
 ![Numero 4](../images/sfbcallout4.png)<br/>Utilizzare i dati del grafico interattivo sul grafico a barre **distribuzione** per informazioni sull'utilizzo per visualizzare il numero di utenti che utilizzano dispositivi univoci all'interno dell'organizzazione. Descritto il numero totale di **Windows**, **Windows Phone**, **telefono Android**, **iPhone**e **iPad** utenti con un dispositivo in uso. 
 ***
-![Numero 5](../images/sfbcallout5.png)<br/>Puoi filtrare la serie visualizzata nel grafico facendo clic su un elemento nella legenda. Ad esempio, nel grafico **gli utenti** , fare clic o toccare **Windows**, **Windows Phone**, **Android phone**, **iPhone**o **iPad** per visualizzare solo le informazioni relative a ciascuno di essi. La modifica di questa selezione non cambia le informazioni nella tabella della griglia. 
+![Numero 5](../images/sfbcallout5.png)<br/>È possibile filtrare la serie visualizzata nel grafico facendo clic su un elemento nella legenda. Ad esempio, nel grafico **gli utenti** , fare clic o toccare **Windows**, **Windows Phone**, **Android phone**, **iPhone**o **iPad** per visualizzare solo le informazioni relative a ciascuno di essi. La modifica di questa selezione non modifica le informazioni nella tabella della griglia. 
 ***
 ![Numero 6](../images/sfbcallout6.png)<br/>Ciascun grafico ha un asse X (orizzontale) e un asse Y (verticale).
 *    Nel grafico **gli utenti** all'asse Y è il numero totale di utenti connessi a un dispositivo con Skype per applicazioni aziendali installato.
@@ -96,7 +96,7 @@ Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cu
     
 - [Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) permette di vedere quanto gli utenti organizzano conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft.
     
-- [Report attività partecipante di conferenze in Skype for Business](conference-participant-activity-report.md) - Visualizza il numero di partecipazioni a conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web e accesso esterno in ingresso/uscita.
+- [Skype per rapporto attività partecipante di conferenza aziendali](conference-participant-activity-report.md) È possibile visualizzare il numero messaggistica immediata, audio/video, la condivisione delle applicazioni, Web e le conferenze telefoniche/esclusione conferenze sono viene ha partecipate.
     
 - [Report attività peer-to-peer in Skype for Business](peer-to-peer-activity-report.md) - Permette di vedere quanto gli utenti usano messaggistica istantanea, audio/video, condivisione applicazioni e trasferimento di file.
     
