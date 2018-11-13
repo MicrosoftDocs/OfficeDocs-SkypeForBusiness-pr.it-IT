@@ -4,11 +4,11 @@ hide_bc: true
 title: Skype for Business
 description: Skype for Business
 ms.openlocfilehash: cbb9765c358047b628be45759e2002cdc5a46f02
-ms.sourcegitcommit: 28e0e8043f418505039cd12407c927f454c141f1
-ms.translationtype: HT
+ms.sourcegitcommit: 1cb5a3570032250aecd5a1a839cbbe4daeb77f2c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25546666"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "26293648"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -31,7 +31,7 @@ ms.locfileid: "25546666"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Skype for Business online</h3>
+                                                    <h3>Skype per le aziende in linea</h3>
                                                     <p>Trova risorse per la gestione di Skype for Business online nell'ambiente di Office 365.</p>
                                                 </div>
                                             </div>
@@ -68,7 +68,7 @@ ms.locfileid: "25546666"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Skype for Business Server</h3>
+                                                    <h3>Skype per Business Server</h3>
                                                     <p>Distribuisci e gestisci Skype for Business Server per la tua organizzazione.</p>
                                                 </div>
                                             </div>
@@ -106,7 +106,7 @@ ms.locfileid: "25546666"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Microsoft Teams</h3>
+                                                    <h3>Team di Microsoft</h3>
                                                     <p>Ottieni la pianificazione, le modalità e il materiale sussidiario pratico necessari per implementare con successo i Microsoft Team.</p>
                                                 </div>
                                             </div>
@@ -125,7 +125,7 @@ ms.locfileid: "25546666"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Passaggio da Skype for Business a Microsoft Teams</h3>
+                                                    <h3>Passaggio dal Skype per le aziende ai team di Microsoft</h3>
                                                     <p>Trova materiale sussidiario e strumenti per esplorare il tuo percorso ottimale per i Teams.</p>
                                                 </div>
                                             </div>
@@ -180,7 +180,7 @@ ms.locfileid: "25546666"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Utenti finali</h3>
-                                                    <p>Trova aiuto, formazione e supporto tecnico per gli utenti Skype for Business su <a href='https://support.office.com/en-us/skype-for-business' target="_blank">support.office.com</a>.</p>
+                                                    <p>Trovare Guida in linea, formazione e supporto tecnico per Skype per utenti Business <a href='https://support.office.com/en-us/skype-for-business' target="_blank">support.office.com</a>.</p>
                                                 </div>
                                             </div>
                                         </div>
