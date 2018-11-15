@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: "La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate sull'attività, tra cui utilizzo PSTN all'interno dell'organizzazione. "
-ms.openlocfilehash: 508d41de4a8b67e1a266bead6f91445acd041a7e
-ms.sourcegitcommit: 1cb5a3570032250aecd5a1a839cbbe4daeb77f2c
+ms.openlocfilehash: 789f881aff2f80603ac440250bc769d6c7b989c0
+ms.sourcegitcommit: 30620021ceba916a505437ab641a23393f55827a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "26294739"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26532686"
 ---
 # <a name="users-blocked-report"></a>Report utenti bloccati
 
@@ -74,7 +74,7 @@ Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e 
     
 - [Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) permette di vedere quanto gli utenti organizzano conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft.
     
-- [Report attività partecipante di conferenze in Skype for Business](conference-participant-activity-report.md) - Visualizza il numero di partecipazioni a conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web e accesso esterno in ingresso/uscita.
+- [Skype per rapporto attività partecipante di conferenza aziendali](conference-participant-activity-report.md) È possibile visualizzare il numero messaggistica immediata, audio/video, la condivisione delle applicazioni, Web e le conferenze telefoniche/esclusione conferenze sono viene ha partecipate.
     
 - [Report attività peer-to-peer in Skype for Business](peer-to-peer-activity-report.md) - Permette di vedere quanto gli utenti usano messaggistica istantanea, audio/video, condivisione applicazioni e trasferimento di file.
     

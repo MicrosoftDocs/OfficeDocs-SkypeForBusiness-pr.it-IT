@@ -22,12 +22,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare e testare gli operatori automatici di sistema telefonico in (Cloud PBX) per la gestione dell'organizzazione delle chiamate efficiente. "
-ms.openlocfilehash: 41a4f7d3536e3a92104c98eaee057a47a21aeb9e
-ms.sourcegitcommit: 1cb5a3570032250aecd5a1a839cbbe4daeb77f2c
+ms.openlocfilehash: 0bf312734c788e0bd02bc4fce40dbea4267850d4
+ms.sourcegitcommit: 30620021ceba916a505437ab641a23393f55827a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "26294574"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26531579"
 ---
 # <a name="set-up-a-phone-system-auto-attendant"></a>Impostare un operatore automatico in Sistema telefonico
 
@@ -49,10 +49,9 @@ Per ulteriori informazioni sugli operatori automatici, vedere [che cosa sono gli
   
 ## <a name="step-2---create-a-new-auto-attendant"></a>Fase 2 - Creare un nuovo operatore automatico
 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+ **Utilizzo del team di Microsoft Skype per Business Admin Center**
 
-
-Nell' **interfaccia di amministrazione di Skype for Business**, fai clic su **Instradamento chiamate** > **Operatori automatici**, poi fai clic su **Aggiungi nuovo**.
+Il **team di Microsoft e Skype per Business Admin Center**, fare clic su ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **Portale Legacy** >  **routing delle chiamate** > **gli operatori automatici**, quindi fare clic su **Aggiungi nuovo +**:
 
 ### <a name="edit-general-info-page"></a>Pagina Modifica informazioni generali
 
@@ -77,11 +76,11 @@ Nell' **interfaccia di amministrazione di Skype for Business**, fai clic su **In
 ![Numero 6](../images/sfbcallout6.png)<br/>**Operatore** È un'impostazione facoltativa per l'operatore automatico. Tuttavia, è possibile impostare l'opzione **operatore** per gli utenti che chiamano in siano in grado di abbandonare i menu di parlare a una persona per migliorare la. <br/> <br/> Il tasto 0 viene assegnato automaticamente alla funzione Operatore. <br/> <br/> Se a tale scopo, è necessario anche informare gli altri utenti chiamata in quanto si tratta di un'opzione disponibile nel **menu Opzioni di modifica** nella pagina di **gestione delle chiamate di orari d'ufficio** . Se si imposta un operatore per l'operatore automatico, è necessario immettere il testo del messaggio corrispondente nella casella **i chiamanti possano rispondere** o modificare il file audio per includere questa opzione. Ad esempio: "Per contattare un operatore, premere zero". <br/><br/>  Puoi impostare la funzione Operatore a una delle persone seguenti. 
 *    **Persona nell'azienda** con una licenza di **Sistema telefonico** abilitata per Enterprise Voice o con Piani di chiamata di Office 365 assegnati. <br/>
 
-        > [!Note] 
-        > Una **Persona nell'azienda** può essere un utente in linea o un utente ospitato in locale con Skype per Business Server 2015 o Lync Server 2013. Lync Server 2010 non è supportato. <br/> 
+     > [!Note] 
+     > Una **Persona nell'azienda** può essere un utente in linea o un utente ospitato in locale con Skype per Business Server 2015 o Lync Server 2013. Lync Server 2010 non è supportato. <br/> 
 
-*    Una **Coda di chiamata** che hai impostato. 
-*    Puoi impostarla in modo che la persona che chiama può essere passata alla segreteria. A tale scopo, selezionare **persona nell'azienda** e impostare le chiamate vengano inoltrate direttamente alla segreteria telefonica della persona. 
+* Una **Coda di chiamata** che hai impostato. 
+* Puoi impostarla in modo che la persona che chiama può essere passata alla segreteria. A tale scopo, selezionare **persona nell'azienda** e impostare le chiamate vengano inoltrate direttamente alla segreteria telefonica della persona. 
 
 ### <a name="select-hours-of-operation-page"></a>Pagina Seleziona orari di utilizzo
 
@@ -105,14 +104,14 @@ Per impostazione predefinita, orari d'ufficio sono impostato su 24 ore al giorno
 
 ***
 ![Numero 1](../images/sfbcallout1.png)<br/>**Messaggio di saluto aziendale** Il messaggio di saluto in orario di ufficio è facoltativo e può essere impostato su **Nessuno**. In questo caso, il chiamante non udirà alcun messaggio o saluto prima che la chiamata venga gestita da una delle opzioni selezionate. È possibile caricare un file audio (nel formato con estensione wav, mp3 o .wma) o creare un messaggio di saluto personalizzato utilizzando la sintesi vocale.
-*    **Nessuno** Nessun messaggio di saluto verrà riprodotto quando le persone chiamano il numero di telefono dell'operatore automatico.
+* **Nessuno** Nessun messaggio di saluto verrà riprodotto quando le persone chiamano il numero di telefono dell'operatore automatico.
 *    **Crea un oggetto personalizzato messaggio di saluto** Se si sceglie questa opzione, immettere il testo che si desidera che il sistema per la lettura (fino a 1000 caratteri). Ad esempio, è possibile immettere "Benvenuti alla Contoso. La tua chiamata è importante per noi." nella casella **I chiamanti udiranno**.
-*    **Caricare un file audio** Se si sceglie questa, registrare il messaggio di saluto e quindi caricare i file audio (in formato WAV, MP3 o. wma).
+* **Caricare un file audio** Se si sceglie questa, registrare il messaggio di saluto e quindi caricare i file audio (in formato WAV, MP3 o. wma).
 ***
 ![Numero 2](../images/sfbcallout2.png)<br/>È possibile selezionare cosa avviene alle chiamate in arrivo durante l'orario di ufficio. È possibile scegliere tra le opzioni seguenti:
 * **Disconnettere** Se selezionata, la persona che chiama verrà disconnessa dopo aver ascoltato una saluto di orario di ufficio.
 * **Reindirizzare una chiamata** Ciò consente di inviare automaticamente la chiamata a:
-  * **Persona nell'azienda** con una licenza di **Sistema telefonico** abilitata per Enterprise Voice o con Piani di chiamata di Office 365 assegnati. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. A tale scopo, selezionare **persona nell'azienda** e impostare tale persona per le chiamate inoltrate direttamente alla segreteria telefonica. <br/><br/>   
+  * **Persona nell'azienda** con una licenza di **Sistema telefonico** abilitata per Enterprise Voice o con Piani di chiamata di Office 365 assegnati. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. A tale scopo, selezionare **persona nell'azienda** e impostare tale persona per le chiamate inoltrate direttamente alla segreteria telefonica. <br/><br/>
     > [!Note]
     > Una **Persona nell'azienda** può essere un utente in linea o un utente ospitato in locale con Skype per Business Server 2015 o Lync Server 2013. Lync Server 2010 non è supportato. <br/><br/>
 
@@ -148,9 +147,9 @@ Per configurare le opzioni di menu, dopo aver selezionato dei tasti, è necessar
     - **Operatore automatico** Puoi usare un operatore automatico esistente per creare un secondo livello di opzioni del menu contenente un sottomenu. Questi sono denominati operatori automatici innestati.<br/><br/>
 
         > [!Note]
-        > Gli **Orari d'ufficio** degli operatori automatici innestati (o di secondo livello) verranno inoltre utilizzate, incluso per le chiamate inviate da altri operatori automatici che sono stati configurati.         
+        > Gli **Orari d'ufficio** degli operatori automatici innestati (o di secondo livello) verranno inoltre utilizzate, incluso per le chiamate inviate da altri operatori automatici che sono stati configurati.
 
-### <a name="select-holidays-page"></a>Pagina selezione festività 
+### <a name="select-holidays-page"></a>Pagina selezione festività
 
 È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
@@ -160,9 +159,9 @@ Per configurare le opzioni di menu, dopo aver selezionato dei tasti, è necessar
 ![Numero 1](../images/sfbcallout1.png)<br/>**Aggiungere una festività** Immettere un nome per la nuova festività nel campo **Nome della festività**.<br/><br/> I nomi delle festività possono essere formati da un massimo di 64 caratteri e devono essere univoci per l'operatore automatico stesso. Ad esempio, è possibile avere due festività denominate "Giorno del ringraziamento" nello stesso operatore automatico.  
 ***
 ![Numero 2](../images/sfbcallout2.png)<br/>**Messaggio di saluto festività** Il messaggio di saluto festività è facoltativo e può essere impostata su **Nessuno**. In questo caso, il chiamante non udirà alcun messaggio o saluto prima che la chiamata venga gestita da una delle opzioni selezionate. È possibile caricare un file audio (nel formato con estensione wav, mp3 o .wma) o creare un messaggio di saluto personalizzato utilizzando la sintesi vocale.
-*    **Nessuno** Nessun messaggio di saluto verrà riprodotto quando le persone chiamano il numero di telefono dell'operatore automatico.
-*    **Crea un oggetto personalizzato messaggio di saluto** Se si sceglie questa opzione, immettere il testo che si desidera che il sistema per la lettura (fino a 1000 caratteri). Ad esempio, è possibile immettere "Buon anno! I nostri uffici sono chiusi." nella casella **I chiamanti udiranno**.
-*    **Caricare un file audio** Se si sceglie questa, registrare il saluto festività e quindi caricare i file audio (in formato WAV, MP3 o. wma).  
+* **Nessuno** Nessun messaggio di saluto verrà riprodotto quando le persone chiamano il numero di telefono dell'operatore automatico.
+* **Crea un oggetto personalizzato messaggio di saluto** Se si sceglie questa opzione, immettere il testo che si desidera che il sistema per la lettura (fino a 1000 caratteri). Ad esempio, è possibile immettere "Buon anno! I nostri uffici sono chiusi." nella casella **I chiamanti udiranno**.
+* **Caricare un file audio** Se si sceglie questa, registrare il saluto festività e quindi caricare i file audio (in formato WAV, MP3 o. wma).  
 ***
 ![Numero 3](../images/sfbcallout3.png)<br/>**Cosa succede alle chiamate dopo il messaggio di saluto?** È possibile selezionare cosa succede alle chiamate in arrivo durante una festività. È possibile scegliere tra le opzioni seguenti:
 * **Disconnettere**  La persona chiamata verrà disconnessa dopo aver ascoltato il messaggio di saluto di festività.
@@ -180,9 +179,9 @@ Per configurare le opzioni di menu, dopo aver selezionato dei tasti, è necessar
 
 ***
 ![Numero 4](../images/sfbcallout4.png)<br/>**Se si desidera iniziare e terminare la festività?** Immetti la data di inizio festività nel formato gg/mm/aaaa e quindi seleziona un'ora di inizio, data di fine e ora di fine, come richiesto nella tabella intervallo date.<br/><br/>È possibile specificare fino a 10 diversi intervalli di date per una festività. Ad esempio, è possibile aggiungere gli intervalli di date per le festività di Natale fino a 10 anni. Una festività può estendersi su più giorni.<br/><br/>Per aggiungere ulteriori intervalli di date alle festività (ad esempio, per l'anno successivo), fai clic su **Aggiungi un altro**e quindi immetti una nuova serie di date di inizio e fine della festività.<br/><br/>Sono inoltre supportate le festività innestate. Ad esempio, è possibile innestare più festività all'interno di un intervallo di tempo "interruzione festività": 
-*    **Dal 24 dicembre tal 3 gennaio:** "Buone feste! I nostri uffici sono chiusi. Riapriremo il 4 gennaio."
-*    **25 dicembre:** "Buon Natale! I nostri uffici sono chiusi. Riapriremo il 4 gennaio."
-*    **Il 1° gennaio:** "Buon anno! I nostri uffici sono chiusi. Riapriremo il 4 gennaio."
+* **Dal 24 dicembre tal 3 gennaio:** "Buone feste! I nostri uffici sono chiusi. Riapriremo il 4 gennaio."
+* **25 dicembre:** "Buon Natale! I nostri uffici sono chiusi. Riapriremo il 4 gennaio."
+* **Il 1° gennaio:** "Buon anno! I nostri uffici sono chiusi. Riapriremo il 4 gennaio."
 
 Dopo aver salvato l'operatore automatico, le festività vengono visualizzate nella scheda **Festività**, in cui è possibile editare, aggiungere o modificare le impostazioni di festività.
 
@@ -205,7 +204,7 @@ In questa pagina, è possibile impostare gli utenti nell'organizzazione sarà el
 * **Personalizzato** Se si utilizza questa opzione, è possibile cercare un gruppo di Office 365, lista di distribuzione o gruppo di protezione che è stata creata nella propria organizzazione e tutti gli utenti aggiunti a questo gruppo di Office 365, lista di distribuzione o gruppi di protezione vengono esclusi dalla ricerca di directory. È possibile aggiungere più gruppi di Office 365, liste di distribuzione e gruppi di sicurezza. <br/><br/> 
 
   > [!Caution]
-  > Gli utenti locali di distribuzioni di Lync Server 2010 non è incluso quando un utente cerca nella directory con accesso esterno in base al nome.          
+  > Gli utenti locali di distribuzioni di Lync Server 2010 non è incluso quando un utente cerca nella directory con accesso esterno in base al nome.
 
 > [!NOTE]
 > Potrebbe richiedere fino a 36 ore a un nuovo utente a con il nome nell'elenco nella directory quando un utente utilizza Dial per nome da riconoscimento vocale. 
@@ -228,19 +227,18 @@ Puoi anche utilizzare Windows PowerShell per creare e configurare gli operatori 
 
 Questi sono i cmdlet necessari per gestire un operatore automatico.
 
-
-|                                                                                                                                                               |                                                                                                                                                               |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                   [New-CsOrganizationalAutoAttendant](https://technet.microsoft.com/library/mt796493.aspx)                                    |                                [New-CsOrganizationalAutoAttendantPrompt](https://technet.microsoft.com/library/mt796484.aspx)                                 |
-|                                   [Set-CsOrganizationalAutoAttendant](https://technet.microsoft.com/library/mt796486.aspx)                                    |                              [New-CsOrganizationalAutoAttendantMenuOption](https://technet.microsoft.com/library/mt796485.aspx)                               |
-|                                   [Get-CsOrganizationalAutoAttendant](https://technet.microsoft.com/library/mt796482.aspx)                                    |    [Get-CsOrganizationalAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/get-csorganizationalautoattendantholidays?view=skype-ps)    |
-|                                  [Remove-CsOrganizationalAutoAttendant](https://technet.microsoft.com/library/mt796492.aspx)                                  |                                 [New-CsOrganizationalAutoAttendantMenu](https://technet.microsoft.com/library/mt796488.aspx)                                  |
-|                                         [New- CsOnlineAudioFile](https://technet.microsoft.com/library/mt796479.aspx)                                         |                               [New-CsOrganizationalAutoAttendantCallFlow](https://technet.microsoft.com/library/mt796489.aspx)                                |
-| [Export-CsOrganizationalAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/export-csorganizationalautoattendantholidays?view=skype-ps) |                                         [New-CsOnlineTimeRange](https://technet.microsoft.com/library/mt796491.aspx)                                          |
-|                    [New-CsOnlineDateTimeRange](https://docs.microsoft.com/powershell/module/skype/new-csonlinedatetimerange?view=skype-ps)                    |                                          [New-CsOnlineSchedule](https://technet.microsoft.com/library/mt796490.aspx)                                          |
-|                           [Get-CsOrganizationalAutoAttendantSupportedTimeZone](https://technet.microsoft.com/library/mt796483.aspx)                           |                        [New-CsOrganizationalAutoAttendantCallHandlingAssociation](https://technet.microsoft.com/library/mt796487.aspx)                        |
-|                           [Get-CsOrganizationalAutoAttendantSupportedLanguage](https://technet.microsoft.com/library/mt796481.aspx)                           | [Import-CsOrganizationalAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/import-csorganizationalautoattendantholidays?view=skype-ps) |
-|                            [New-CsOrganizationalAutoAttendantCallableEntity](https://technet.microsoft.com/library/mt796480.aspx)                             |                                                                                                                                                               |
+|| |
+|---  |---  |
+| [New-CsOrganizationalAutoAttendant](https://technet.microsoft.com/library/mt796493.aspx) | [New-CsOrganizationalAutoAttendantPrompt](https://technet.microsoft.com/library/mt796484.aspx) |
+| [Set-CsOrganizationalAutoAttendant](https://technet.microsoft.com/library/mt796486.aspx) | [New-CsOrganizationalAutoAttendantMenuOption](https://technet.microsoft.com/library/mt796485.aspx) |
+| [Get-CsOrganizationalAutoAttendant](https://technet.microsoft.com/library/mt796482.aspx) | [Get-CsOrganizationalAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/get-csorganizationalautoattendantholidays?view=skype-ps) |
+| [Remove-CsOrganizationalAutoAttendant](https://technet.microsoft.com/library/mt796492.aspx) | [New-CsOrganizationalAutoAttendantMenu](https://technet.microsoft.com/library/mt796488.aspx) |
+| [New- CsOnlineAudioFile](https://technet.microsoft.com/library/mt796479.aspx) | [New-CsOrganizationalAutoAttendantCallFlow](https://technet.microsoft.com/library/mt796489.aspx) |
+| [Export-CsOrganizationalAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/export-csorganizationalautoattendantholidays?view=skype-ps) | [New-CsOnlineTimeRange](https://technet.microsoft.com/library/mt796491.aspx) |
+| [New-CsOnlineDateTimeRange](https://docs.microsoft.com/powershell/module/skype/new-csonlinedatetimerange?view=skype-ps) | [New-CsOnlineSchedule](https://technet.microsoft.com/library/mt796490.aspx) |
+| [Get-CsOrganizationalAutoAttendantSupportedTimeZone](https://technet.microsoft.com/library/mt796483.aspx) | [New-CsOrganizationalAutoAttendantCallHandlingAssociation](https://technet.microsoft.com/library/mt796487.aspx) |
+| [Get-CsOrganizationalAutoAttendantSupportedLanguage](https://technet.microsoft.com/library/mt796481.aspx) | [Import-CsOrganizationalAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/import-csorganizationalautoattendantholidays?view=skype-ps) |
+| [New-CsOrganizationalAutoAttendantCallableEntity](https://technet.microsoft.com/library/mt796480.aspx) | |
 
 ### <a name="more-about-windows-powershell"></a>Altre informazioni su Windows PowerShell
 

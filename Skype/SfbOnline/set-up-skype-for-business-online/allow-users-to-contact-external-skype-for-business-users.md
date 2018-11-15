@@ -26,12 +26,12 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: "Informazioni su come configurare Skype for Business consentire agli utenti di comunicare agli utenti di un'altra organizzazione o consentire a tali contatti esterni. "
-ms.openlocfilehash: b18c4d3f04cab78b48039bcd33dae00a960132ea
-ms.sourcegitcommit: 1cb5a3570032250aecd5a1a839cbbe4daeb77f2c
+ms.openlocfilehash: eaac8426677268e526f622b477caff062d81deef
+ms.sourcegitcommit: 30620021ceba916a505437ab641a23393f55827a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "26293755"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26533199"
 ---
 # <a name="allow-users-to-contact-external-skype-for-business-users"></a>Consentire agli utenti di contattare utenti Skype for Business esterni
 
@@ -71,9 +71,9 @@ In entrambe le organizzazioni a tale scopo, è necessario disporre [delle autori
     
 7. Se si utilizza Windows Firewall, Skype for Business apre automaticamente le porte necessarie.
     
-    Se l'organizzazione utilizza una soluzione di firewall diverso per limitare i computer della rete di connettersi a Internet, verificare che i computer client siano in grado di accedere ai seguenti [intervalli di indirizzi IP e gli URL di Office 365](https://docs.microsoft.com/en-us/microsoftteams/office-365-urls-ip-address-ranges). Ciò potrebbe essere necessario aggiungere i nomi FQDN per l'uscita elenco Consenti di firewall o proxy di configurazione dell'infrastruttura: ** \*. api.skype.com**, \* **. users.storage.live.com**e **graph.skype.com**. Per istruzioni su come aprire le porte del firewall, consultare la documentazione fornita con esso.
+    Se l'organizzazione utilizza una soluzione di firewall diverso per limitare i computer della rete di connettersi a Internet, verificare che i computer client siano in grado di accedere ai seguenti [intervalli di indirizzi IP e gli URL di Office 365](https://docs.microsoft.com/microsoftteams/office-365-urls-ip-address-ranges). Ciò potrebbe essere necessario aggiungere i nomi FQDN per l'uscita elenco Consenti di firewall o proxy di configurazione dell'infrastruttura: ** \*. api.skype.com**, \* **. users.storage.live.com**e **graph.skype.com**. Per istruzioni su come aprire le porte del firewall, consultare la documentazione fornita con esso.
     
-    Per un elenco di tutte le porte, è necessario aprire, vedere [Office 365 URL e intervalli di indirizzi IP](https://docs.microsoft.com/en-us/microsoftteams/office-365-urls-ip-address-ranges).
+    Per un elenco di tutte le porte, è necessario aprire, vedere [Office 365 URL e intervalli di indirizzi IP](https://docs.microsoft.com/microsoftteams/office-365-urls-ip-address-ranges).
 
 8. Verificare che l'amministratore dell'organizzazione ha inoltre seguita la procedura seguente.
     
@@ -84,7 +84,7 @@ In entrambe le organizzazioni a tale scopo, è necessario disporre [delle autori
 ## <a name="test-and-troubleshoot"></a>Test e risoluzione dei problemi
 <a name="bk_preview"> </a>
 
- **Il problema più comune persone verificano durante l'impostazione di comunicazione business to business otterrà le [Office 365 URL e intervalli di indirizzi IP](https://docs.microsoft.com/en-us/microsoftteams/office-365-urls-ip-address-ranges) destro.**
+ **Il problema più comune persone verificano durante l'impostazione di comunicazione business to business otterrà le [Office 365 URL e intervalli di indirizzi IP](https://docs.microsoft.com/microsoftteams/office-365-urls-ip-address-ranges) destro.**
   
 Per testare l'installazione, è necessario un contatto in Skype per le aziende che non sono protetti dal firewall aziendale.
   
@@ -92,7 +92,7 @@ Per testare l'installazione, è necessario un contatto in Skype per le aziende c
     
 2. In Skype per le aziende, cercare il contatto in Skype per le aziende e inviare una richiesta a chat.
     
-    Se viene visualizzato un messaggio in cui non è stato inviato a causa di politica aziendale, è necessario fare doppio clic di [Office 365 URL e intervalli di indirizzi IP](https://docs.microsoft.com/en-us/microsoftteams/office-365-urls-ip-address-ranges).
+    Se viene visualizzato un messaggio in cui non è stato inviato a causa di politica aziendale, è necessario fare doppio clic di [Office 365 URL e intervalli di indirizzi IP](https://docs.microsoft.com/microsoftteams/office-365-urls-ip-address-ranges).
     
 3. Chiedere la Skype per contatto commerciale per inviare una richiesta a chat. Se non si ricevono le proprie richieste, il problema è le impostazioni del firewall (presupponendo che hai già confermato che le relative impostazioni di firewall siano corrette).
     
