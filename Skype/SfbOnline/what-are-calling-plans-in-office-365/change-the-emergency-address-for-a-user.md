@@ -20,17 +20,18 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: "Procedura per cambiare l'indirizzo di emergenza per un utente per l'utilizzo con la Rete telefonica pubblica commutata (PSTN) negli Stati Uniti e in Europe. "
-ms.openlocfilehash: e27ea228972ceead0838cff481a0db983c503b02
-ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
+description: "Come modificare l'indirizzo di emergenza per un utente di lavorare con il telefono rete PSTN (Public Switched) Stati Uniti e Europe. "
+ROBOTS: NOINDEX
+ms.openlocfilehash: 8dac43120fafa1a98e441b983b673e78d2a24d75
+ms.sourcegitcommit: f0dec487e2893a171c7e701bfcf598076f5245b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347102"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26538960"
 ---
 # <a name="change-the-emergency-address-for-a-user"></a>Modificare l’indirizzo per gli interventi di emergenza per un utente
 
-Durante la configurazione dei Piani di chiamata in Office 365, devi assegnare un indirizzo di emergenza a ciascun numero di telefono o utente. Nei paesi europei, l'indirizzo di emergenza è associato al numero di telefono quando lo si ottiene da Office 365 o quando si trasferisce un numero di telefono in Office 365. Negli Stati Uniti, l'indirizzo di emergenza è associato al numero di telefono quando viene assegnato all'utente. È possibile cambiare l'indirizzo di emergenza se l'utente a cui è assegnato si sposta in una nuova posizione. Per ulteriori informazioni sugli indirizzi di emergenza e posizioni, vedere [quali sono posizioni di emergenza, indirizzi e il routing delle chiamate?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing)
+When you are setting up Calling Plans in Office 365, you will need to assign an emergency address to each phone number or user. In European countries, the emergency address is associated with the phone number when you get it from Office 365 or when you transfer a phone number over to Office 365. In the United States, the emergency address is associated with the phone number when it is assigned to the user. The emergency address can be changed if the user it is assigned to moves to a new location. For more about emergency addresses and locations, see [What are emergency locations, addresses and call routing?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing)
   
 Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo costo, consulta [Licenze per componenti aggiuntivi per Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
@@ -56,7 +57,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
 7. **Cambia indirizzo di emergenza per**immettere il nome della città nella casella e fare clic su **Cerca**.
     
     > [!IMPORTANT]
-    > È possibile cambiare solo un indirizzo di emergenza che è già stato convalidato. Per cambiare un indirizzo di emergenza che non è stato convalidato, elimina quell'indirizzo e creane un altro. 
+    > You can only change an emergency address that has already been validated. To change an emergency address that hasn't been validated, delete it and create another emergency address. 
   
 8. Seleziona un nuovo indirizzo di emergenza dall'elenco e fai clic su **Salva**.
     
