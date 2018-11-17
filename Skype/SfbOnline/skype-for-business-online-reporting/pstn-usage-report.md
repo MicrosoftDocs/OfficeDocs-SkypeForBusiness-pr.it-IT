@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo di Audio conferenza PSTN compreso il costo della chiamata in modo che è possibile acquisire familiarità con i dati di utilizzo e chiamare fatturazione dettagli per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: 6003199b69395001dc47d77f83927ac32e06e5a4
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: e4af77832cca1cd2a9d9de49aa83f4400c359277
+ms.sourcegitcommit: 6ad3ce36140464319f5957652331acd6a4273f82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23862242"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26561647"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -92,7 +92,9 @@ Questo è l'aspetto del report.
      *    **MCOPSTN5** - nazionale chiamata Plan (piano chiamante min 120) 
      *    **MCOPSTN6** - nazionale chiamata Plan (piano chiamante 240 min) Nota: limitata disponibilità
      *    **MCOMEETADD** - audioconferenze con accesso esterno
-     *    **MCOMEETACPEA** - retributive Per minuto audioconferenze con accesso esterno 
+     *    **MCOMEETACPEA** - retributive Per minuto audioconferenze con accesso esterno
+> [!NOTE]
+> È anche non possibile visualizzare "dati" in alcuni campi. "Senza dati" indica che il campo non è applicabile al tipo di chiamata o funzionalità. 
 ***
 ![Numero 2](../images/sfbcallout2.png)<br/>Fare clic per trascinare una colonna fino a **Per raggruppare per una specifica colonna, trascinare qui l'intestazione di colonna** se si desidera creare una visualizzazione che raggruppi tutti i dati in una o più colonne.
  ***

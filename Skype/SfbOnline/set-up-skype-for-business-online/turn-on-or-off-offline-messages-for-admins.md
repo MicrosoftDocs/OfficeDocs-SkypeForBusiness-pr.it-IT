@@ -17,12 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: Learn how to send Skype for Business instant messages even when your contacts aren't signed in using PowerShell.
-ms.openlocfilehash: 6722f68da55ef9a9db7783727aaf010cd5df39ed
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: 7401d1690f85fcfcc0cefe157b4335da63181693
+ms.sourcegitcommit: 6ad3ce36140464319f5957652331acd6a4273f82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25374180"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26561583"
 ---
 # <a name="turn-on-or-off-offline-messages-for-admins"></a>Attivare o disattivare i messaggi offline per gli amministratori
 
@@ -44,7 +44,7 @@ Per ulteriori informazioni, vedere [utilizzo offline messaggistica in Skype per 
 
  **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
 
-1. A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.
+1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
 
 2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
 
@@ -73,7 +73,7 @@ Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in u
   Import-PSSession $session
   ```
 
-Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
+Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [impostare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
 
 ## <a name="turning-on-or-off-offline-im"></a>Attivazione o disattivazione della messaggistica offline
 
@@ -103,7 +103,7 @@ Per abilitare o disabilitare l'invio di messaggi non in linea messaggi non in li
 
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
 
-  - [Sei motivi per cui è consigliabile usare Windows PowerShell per gestire Office 365 ](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Sei motivi per cui è consigliabile usare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
 
 - Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Office 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
 

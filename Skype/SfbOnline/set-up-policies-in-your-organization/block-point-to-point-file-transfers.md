@@ -17,12 +17,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: In Skype Business online, è necessario possibilità di controllare i trasferimenti di file da punto a punto (P2P) come parte di impostazioni di criteri di conferenza esistente. Tuttavia, in questo modo o blocchi file trasferimenti per gli utenti sono o meno sono trasferimento di file a un utente che si trova all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguire la procedura riportata di seguito, è possibile bloccare i trasferimenti di file P2P con organizzazioni federate o partner.
-ms.openlocfilehash: 6ca79b45c4e068ae6999db24cf6a0dd54e9e3aa6
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: 7128de070e13a1c4fc62ba12e05c1fffb3595467
+ms.sourcegitcommit: 6ad3ce36140464319f5957652331acd6a4273f82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25372104"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26561667"
 ---
 # <a name="block-point-to-point-file-transfers"></a>Bloccare i trasferimenti di file “punto a punto”
 
@@ -53,7 +53,7 @@ Per ottenere questo risultato, l'utente deve utilizzare una versione supportata 
 
 - **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
     
-1. A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.
+1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
     
 2. Verificare la versione digitando _Get-Host_ nella finestra di **Windows PowerShell** .
     
@@ -79,7 +79,7 @@ Per ottenere questo risultato, l'utente deve utilizzare una versione supportata 
     Import-PSSession $session
    ```
 
-   Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [Connecting to Skype Business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
+   Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [impostare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
     
 ## <a name="disable-p2p-file-transfers-for-your-organization"></a>Disattivare i trasferimenti di file P2P per l'organizzazione
 
