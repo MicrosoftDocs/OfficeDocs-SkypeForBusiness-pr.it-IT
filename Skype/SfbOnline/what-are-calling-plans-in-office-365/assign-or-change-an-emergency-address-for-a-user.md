@@ -21,16 +21,16 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come configurare un numero e un indirizzo di emergenza per ogni utente che può essere utilizzato con il telefono di rete pubblica (PSTN).
-ms.openlocfilehash: 10b22db9e50c1913124d021bff1cc7c285c1f52c
-ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
+ms.openlocfilehash: c16e53df15d46457501c75ad5adcb0882d8fe875
+ms.sourcegitcommit: d7cab12337c0226c321e905a0504247fcff5eb77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347030"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26676398"
 ---
 # <a name="assign-or-change-an-emergency-address-for-a-user"></a>Assegnare o modificare l'indirizzo per gli interventi di emergenza di un utente
 
-Quando imposta la chiamata dei piani di Office 365, è necessario assegnare un numero di telefono e l'indirizzo di emergenza per ogni utente. Prima di poter associare a un numero di telefono, è necessario creare l'indirizzo di emergenza. Consulta [Quali sono i luoghi di emergenza, gli indirizzi e il routing delle chiamate?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing) per ulteriori informazioni.
+Durante la configurazione dei Piani di chiamata in Office 365, devi assegnare un indirizzo di emergenza a ciascun numero di telefono o utente. Nei paesi europei, l'indirizzo di emergenza è associato al numero di telefono quando lo si ottiene da Office 365 o quando si trasferisce un numero di telefono in Office 365. Negli Stati Uniti, l'indirizzo di emergenza è associato al numero di telefono quando viene assegnato all'utente. È possibile cambiare l'indirizzo di emergenza se l'utente a cui è assegnato si sposta in una nuova posizione. Per ulteriori informazioni sugli indirizzi di emergenza e posizioni, vedere [quali sono posizioni di emergenza, indirizzi e il routing delle chiamate?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing)
   
 Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo costo, consulta [Licenze per componenti aggiuntivi per Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
@@ -45,11 +45,11 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
     > [!IMPORTANT]
     > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
     
-4. Nella pagina **Utenti voce**, individua e seleziona l'utente a cui desideri modificare l'indirizzo di emergenza.
+4. Nella pagina **Utenti voce**, individua e seleziona l'utente a cui desideri cambiare l'indirizzo di emergenza.
     
 5. Nel riquadro Azioni, in **Posizione per gli interventi di emergenza**, fai clic su **Modifica**.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > È possibile modificare solo un indirizzo di emergenza che è già stato convalidato. Per modificare un indirizzo di emergenza che non è stato convalidato, elimina quell'indirizzo e creane un altro. 
   
 6. Nella pagina **Assegna numero**, fai clic su **Cambia luogo**.
@@ -59,6 +59,11 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
 8. Selezionare l'indirizzo di emergenza dall'elenco a discesa indirizzi e quindi fare clic su **Salva**. 
     
 ## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-topics"></a>Argomenti correlati
+[Aggiungere, modificare o rimuovere un indirizzo di emergenza dell'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md)
+
+[Aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza dell'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md)
+
 [Cos'è la convalida dell'indirizzo?](what-is-address-validation.md)
 
 [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)

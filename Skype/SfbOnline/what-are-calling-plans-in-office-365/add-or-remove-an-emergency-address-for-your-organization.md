@@ -1,5 +1,5 @@
 ---
-title: Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione
+title: Aggiungere, modificare o rimuovere un indirizzo di emergenza dell'organizzazione
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,23 +20,23 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: 'Istruzioni su come aggiungere o rimuovere un indirizzo di emergenza per il tuo account di Skype for Business. '
-ms.openlocfilehash: a4edcfa5673ac20c571bfae4d26f41facb9f0c80
-ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
+description: 'Learn how to add an emergency address to your Skype for Business account. '
+ms.openlocfilehash: d4347610238230e5e509dab998b99fbd7b496833
+ms.sourcegitcommit: d7cab12337c0226c321e905a0504247fcff5eb77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347061"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26676408"
 ---
-# <a name="add-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione
+# <a name="add-change-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere, modificare o rimuovere un indirizzo di emergenza dell'organizzazione
 
-Un indirizzo di emergenza deve essere associato a un numero di telefono, ma questa regola può variare tra Paesi/aree geografiche Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito, è necessario associare un indirizzo di emergenza per il numero di telefono quando si desidera ottenere i numeri di telefono da Office 365 o il trasferimento di numeri di telefono da provider di servizi corrente.
+Un indirizzo di emergenza deve essere associato a un numero di telefono, ma in questo caso può variare tra i paesi. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito, è necessario associare un indirizzo di emergenza per il numero di telefono quando si desidera ottenere i numeri di telefono da Office 365 o il trasferimento di numeri di telefono da provider di servizi corrente.
   
 Indipendentemente dal Paese/area geografica in cui ti trovi, è possibile aggiungere una o più posizioni ad un indirizzo di emergenza oppure rimuovere l'indirizzo di emergenza. A seconda del numero di posizioni fisiche all'interno dell'organizzazione, è possibile creare tali per edifici, piani e uffici. Vedere [quali sono posizioni di emergenza, indirizzi e il routing delle chiamate?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing) per ulteriori informazioni.
   
 Per informazioni su come ottenere Piani di chiamata e il relativo costo, consulta [Licenze per componenti aggiuntivi per Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
-## <a name="to-add-an-emergency-address"></a>Per aggiungere un indirizzo per gli interventi di emergenza
+## <a name="add-an-emergency-address"></a>Aggiungere un indirizzo di emergenza
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
@@ -58,6 +58,21 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
     
 6. Dopo la convalida dell'indirizzo, fai clic su **Salva**.
     
+## <a name="change-an-emergency-address"></a>Modificare un indirizzo di emergenza
+
+1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+    
+2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
+    
+3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**, selezionare l'indirizzo che si desidera modificare e nel riquadro azioni fare clic su **Modifica**.
+    
+    > [!IMPORTANT]
+    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+
+4. Apportare le modifiche desiderate e quindi fare clic su **convalida**.
+
+5. Fai clic su **Salva**.
+
 ## <a name="to-remove-an-emergency-address"></a>Per rimuovere un indirizzo per gli interventi di emergenza
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.

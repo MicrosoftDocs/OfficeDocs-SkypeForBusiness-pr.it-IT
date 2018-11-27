@@ -20,13 +20,13 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: 'Informazioni su come aggiungere, modificare o rimuovere una posizione di emergenza utilizzata da Skype for Business su telefono di rete pubblica (PSTN) per la tua organizzazione. '
-ms.openlocfilehash: 43a8ac0759fd8dc949953fe22cb73c00a96f4314
-ms.sourcegitcommit: 19fb0279985251c00cd507a8d13b8499b19e2808
+description: 'Learn to add, change, or remove an emergency location used by  Skype for Business on Public Switched Telephone Networks (PSTN) for your organization. '
+ms.openlocfilehash: 81a70264e5b8a7f316a9c64e3fa6104d193dec66
+ms.sourcegitcommit: d7cab12337c0226c321e905a0504247fcff5eb77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347054"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26676436"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
