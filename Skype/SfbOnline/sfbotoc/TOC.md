@@ -124,7 +124,7 @@
 ## [Piani per chiamate in Office 365](/microsoftteams/what-are-calling-plans-in-office-365?toc=/skypeforbusiness/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
 ### [Problemi noti nei Piani per chiamate](../what-are-calling-plans-in-office-365/calling-plans-known-issues.md)
 ### [Aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza dell'organizzazione](../what-are-calling-plans-in-office-365/add-change-or-remove-an-emergency-location-for-your-organization.md)
-### [Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione](../what-are-calling-plans-in-office-365/add-or-remove-an-emergency-address-for-your-organization.md)
+### [Aggiungere, modificare o rimuovere un indirizzo di emergenza dell'organizzazione](../what-are-calling-plans-in-office-365/add-or-remove-an-emergency-address-for-your-organization.md)
 ### [Assegnare, modificare o rimuovere il numero di telefono di un utente](../what-are-calling-plans-in-office-365/assign-change-or-remove-a-phone-number-for-a-user.md)
 ### [Assegnare o modificare l'indirizzo per gli interventi di emergenza di un utente](../what-are-calling-plans-in-office-365/assign-or-change-an-emergency-address-for-a-user.md)
 ### [Assegnare o modificare il percorso di emergenza per un utente](../what-are-calling-plans-in-office-365/change-the-emergency-location-for-a-user.md)
