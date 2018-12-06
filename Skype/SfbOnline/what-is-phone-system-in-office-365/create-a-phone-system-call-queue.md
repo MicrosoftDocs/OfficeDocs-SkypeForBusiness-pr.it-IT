@@ -3,7 +3,7 @@ title: Creare una coda di chiamata del Sistema telefonico
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
-ms.reviewer: makolomi
+ms.reviewer: phans, wasseemh
 ms.topic: article
 ms.assetid: 67ccda94-1210-43fb-a25b-7b9785f8a061
 ms.tgt.pltfrm: cloud
@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: 'Learn how to set up phone system for Office 365 (Cloud PBX) call queues to give you an organizational greeting, music on hold, and redirecting calls to call agents in distribution lists and security groups. You can also set the maximum queue size, time out, and call handling options. '
-ms.openlocfilehash: 742fdbf38aeb64426ad1781d552c580385dc8117
-ms.sourcegitcommit: 30620021ceba916a505437ab641a23393f55827a
+ms.openlocfilehash: ec3cbc89a0a8ab07d7936d604d1f38a5d99ed2b6
+ms.sourcegitcommit: 969a71ef0ac0030c27bd2455c3bf9d536dbcd752
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26531835"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27182394"
 ---
 # <a name="create-a-phone-system-call-queue"></a>Creare una coda di chiamata del Sistema telefonico
 
@@ -156,7 +156,7 @@ Il **team di Microsoft e Skype per Business Admin Center**, fare clic su ![30x30
 ![Set up call queues.](../images/skype-for-business-add-agents-to-call-queue.png)
   
 ***
-![Numero 1](../images/sfbcallout1.png)<br/><br/>Gli agenti di chiamata (50 massimo) possono essere:
+![Numero 1](../images/sfbcallout1.png)<br/><br/>Gli agenti di chiamata (massimo 200) possono essere:
 * Un utente in linea con una licenza di **Sistema telefonico** e abilitato per Enterprise Voice o con un Piano di chiamata. <br/><br/> **Nota:**  Per reindirizzare le chiamate agli utenti dell'organizzazione che sono in linea, che deve disporre di una licenza di **Sistema telefonico** e abilitati per Enterprise Voice o disporre di un piano di chiamata. Vedere [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, eseguire:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true` <br/><br/>
 * Utenti in linea con una licenza di **Sistema telefonico** e un Piano di chiamata che vengono aggiunti a un Gruppo di Office 365, una lista di distribuzione abilitata alla posta elettronica o un gruppo di protezione. Possono occorrere fino a 30 minuti perché un nuovo agente aggiunto a una lista di distribuzione o gruppo di sicurezza inizi a ricevere chiamate da una coda di chiamata. Un gruppo di sicurezza o elenco distribuzione appena creata può richiedere fino a 48 ore per diventare disponibili per l'utilizzo con le code di chiamata. I Gruppi di Office 365 appena creati sono disponibili quasi immediatamente. <br/> 
 
