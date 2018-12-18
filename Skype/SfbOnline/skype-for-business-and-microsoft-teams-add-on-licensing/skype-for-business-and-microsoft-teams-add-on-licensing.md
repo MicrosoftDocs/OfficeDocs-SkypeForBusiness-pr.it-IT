@@ -23,12 +23,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: "Informazioni sulle licenze di componente aggiuntivo, le funzioni che si otterranno con, come acquistare li per il prodotto e come utilizzare l'operatore di telefonia esistente con loro. È possibile ottenere informazioni sui prezzi e plan dettagli per Office 365, titoli di coda di comunicazione, e prevede la chiamata. "
-ms.openlocfilehash: 778f2b829c09442f105576a2407c51e1d9799ae2
-ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.openlocfilehash: 17115e5456ee874cbdb4ed96c8616d6f1d3527b7
+ms.sourcegitcommit: 8279beffec35fe8a75968245c6cb09f1d622370f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23883996"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27297676"
 ---
 # <a name="skype-for-business-and-microsoft-teams-add-on-licensing"></a>Licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams
 
@@ -59,7 +59,7 @@ A seconda che si prevede già essere, è possibile acquistare le licenze di comp
 |**Funzionalità** <br/> |**Descrizione** <br/> |
 |**Audioconferenza** <br/> |In alcuni casi gli utenti dell'organizzazione saranno necessario utilizzare un telefono per chiamare un Skype per riunioni aziendali o Microsoft Teams, anziché utilizzare il proprio computer. Utilizzare la funzionalità di conferenze Audio per questa situazione.  <br/> Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). <br/> Se stai cercando i costi, consulta [Requisiti per Audioconferenza](https://products.office.com/en-us/skype-for-business/audio-conferencing#requirements).  <br/> |
 |**Numeri verdi per l'accesso esterno alle conferenze o per avere la possibilità di effettuare chiamate in uscita all'interno di una conferenza per aggiungere un partecipante chiamando qualsiasi numero di telefono in tutto il mondo** <br/> |Se aggiungi Audioconferenze, ti consigliamo di [Impostare Crediti di comunicazione](/microsoftteams/set-up-communications-credits-for-your-organization). <br/> |
-|**Sistema telefonico** <br/> |PBX è un sistema di telefonia per aziende. Il Sistema telefonico in Office 365 è un servizio telefonico ospitato in Office 365. Offre tutte le funzionalità PBX tradizionali e innovative ma senza la necessità di un'attrezzatura complessa e costosa. [Ecco cosa viene visualizzato con sistema telefonico in Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system).  <br/> Se stai cercando i costi, consulta [Requisiti di Sistema telefonico](https://products.office.com/en-us/skype-for-business/cloud-pbx#requirements).  <br/> |
+|**Sistema telefonico** <br/> |PBX è un sistema di telefonia per aziende. Il sistema telefonico in Office 365 è un servizio ospitato telefono. Offre tutte le funzionalità PBX tradizionali e innovative ma senza la necessità di un'attrezzatura complessa e costosa. [Ecco cosa viene visualizzato con sistema telefonico in Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system).  <br/> Se stai cercando i costi, consulta [Requisiti di Sistema telefonico](https://products.office.com/en-us/skype-for-business/cloud-pbx#requirements).  <br/> |
 |**Piani per chiamate** <br/> |Le chiamate a altri Skype per gli utenti aziendali libero, ma se si desidera che gli utenti siano in grado di chiamare tutti i numeri di telefono all'esterno dell'azienda, ottenere una [Chiamata a pianificare](/MicrosoftTeams/calling-plans-for-office-365). Sono disponibili Piani di chiamata nazionali e internazionali in Office 365.  <br/> Se stai cercando i costi, consulta [Requisiti per i Piani di chiamata](https://products.office.com/en-us/skype-for-business/pstn-calling-plans#requirements).  <br/> |
 |**Skype Room Systems v2** <br/> |Questo non è un componente aggiuntivo, ma una funzione che porta video, audio e condivisione di contenuti nelle sale conferenze. Vedere [Skype sala v2 sistemi](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-room-systems-v2.md).  <br/> |
 

@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni sulle procedure di distribuzione per ottenere il firmware corretto, aggiornare, se necessario, assegnare licenze e configurare le impostazioni per Skype per i telefoni online Business
-ms.openlocfilehash: 809cec268ac2a086a01fc00cf043759a326a34f5
-ms.sourcegitcommit: 30620021ceba916a505437ab641a23393f55827a
+ms.openlocfilehash: f036f2fa47c99d1ea206192c15c901fc9391c1ee
+ms.sourcegitcommit: 8279beffec35fe8a75968245c6cb09f1d622370f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26531817"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27297658"
 ---
 # <a name="deploying-skype-for-business-online-phones"></a>Distribuzione dei telefoni per Skype for Business Online
 
@@ -39,7 +39,7 @@ In tutti i tipi di aziende, con un numero di telefono consente agli utenti di ef
 
 Prima di iniziare, è una buona idea quella di scaricare le guide per l'amministratore e i manuali d'uso del telefono del produttore.
   
-- Per i telefoni Polycom, vedere [Polycom Deployment Guide] ((http://www.polycom.com/voice-conferencing-solutions/desktop-ip-phones.html).
+- Per i telefoni Polycom, consulta la [Guida alla distribuzione di Polycom](http://www.polycom.com/voice-conferencing-solutions/desktop-ip-phones.html).
     
 - Per i telefoni Yealink, vedere [Skype Yealink for Business HD SIP telefoni Solution](http://www.yealink.com/products_top_2.html).
     
