@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Informazioni sulla funzionalità di trasmissione riunione Skype di Skype Business online che consente inoltre di pianificazione, prodotti e trasmissione riunioni o eventi ai gruppi di destinatari in linea di grandi dimensioni fino a 10.000 partecipanti.
-ms.openlocfilehash: 7c22b4b0911935ffd90d10e65d2fff0d71018910
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: b29ec51ddcb672f6727f7bc43958872962245ebb
+ms.sourcegitcommit: 0458232441d3aed8dd578f41a13078aa379c9b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25374555"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27788976"
 ---
 # <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
@@ -93,7 +93,7 @@ Il secondo passaggio del processo di installazione è consente di aggiungere i d
 
 ## <a name="set-up-skype-meeting-broadcast-in-hybrid-deployments-and-organizations"></a>Configurazione di trasmissione riunione Skype nelle organizzazioni e le distribuzioni ibride
 
-Se sono Skype per le organizzazioni aziendali in linea e una distribuzione locale di Lync Server 2010, Microsoft Lync Server 2013 e Skype per Business Server 2015 e avere agli utenti sia online e locale, sono disponibili altre operazioni di installazione è necessario eseguire Oltre a quelli sopra per abilitare l'organizzazione locale comunicare con Skype Business online e consentire a tutti gli utenti siano in grado di creare e partecipare a una riunione Skype trasmissione. Per verificare quali sono i requisiti, vedere [configurare la distribuzione in locale per la trasmissione riunione Skype](https://go.microsoft.com/fwlink/?LinkId=617070).
+Se sono Skype per le organizzazioni aziendali in linea e una distribuzione locale di Lync Server 2010, Microsoft Lync Server 2013 e Skype per Business Server 2015 e avere agli utenti sia online e locale, sono disponibili altre operazioni di installazione è necessario eseguire Oltre a quelli sopra per abilitare l'organizzazione locale comunicare con Skype Business online e tutti gli utenti possono partecipare a una riunione Skype trasmissione. Per verificare quali sono i requisiti, vedere [configurare la distribuzione in locale per la trasmissione riunione Skype](https://go.microsoft.com/fwlink/?LinkId=617070).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

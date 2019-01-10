@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Learn what you need and how meeting organizers can call out to other people using Skype for Business.
-ms.openlocfilehash: d4ff0ab207d5526fe8b24f4ec791de5f952a83e3
-ms.sourcegitcommit: 969a71ef0ac0030c27bd2455c3bf9d536dbcd752
+ms.openlocfilehash: 49130a14391e014d1e7aea21c62abaf2385296d8
+ms.sourcegitcommit: 0458232441d3aed8dd578f41a13078aa379c9b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27182343"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27788948"
 ---
 # <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamate in uscita da Skype per le riunioni aziendali in modo che altri utenti possono accedervi
 
@@ -38,7 +38,7 @@ Organizzatore della riunione, è possibile comporre disattivato utilizzando Skyp
     
 - L'organizzatore della riunione è abilitato alle conferenze telefoniche con accesso esterno.
 
-Per aggiungere altri partecipanti tramite chiamata in uscita per le riunioni dell'organizzazione, almeno un utente autenticato alla stessa organizzazione come organizzatore (organizzazione) è necessario essere presenti nel loro per consentire l'aggiunta di altri partecipanti alla riunione tramite chiamata in uscita. 
+Per aggiungere altri partecipanti tramite chiamata in uscita per le riunioni dell'organizzazione, è necessario almeno un utente autenticato alla stessa organizzazione organizzare (organizzazione) deve essere presente nella riunione per consentire l'aggiunta di altri partecipanti tramite chiamata in uscita. 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]

@@ -17,18 +17,18 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Ulteriori cause più comuni per Skype per errori di accesso Business Online e lavoro e risoluzione dei problemi relativi a tali problemi. '
-ms.openlocfilehash: df34252281bebe429a85fb1a778b6d28023eb9d4
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: b9eccd817fbb9a67fcbce61d73b4a701c6b063de
+ms.sourcegitcommit: 0458232441d3aed8dd578f41a13078aa379c9b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25371150"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789085"
 ---
 # <a name="troubleshooting-skype-for-business-online-sign-in-errors-for-administrators"></a>Risoluzione dei problemi Skype per errori di accesso Business Online per amministratori
 
 Per risolvere i problemi Skype per errori di accesso Business Online, avviare eliminando le cause più comuni di accesso difficoltà. Se necessario, è possibile seguire quindi risoluzione specifica passaggi in base al tipo di errore. Se l'utente di accesso persiste, raccogliere le informazioni aggiuntive e quindi cercare informazioni aggiuntive.
 
-## <a name="what-do-you-want-to-do"></a>Selezionare l'operazione da eseguire
+## <a name="what-do-you-want-to-do"></a>Per saperne di più
 <a name="top"> </a>
 
 > [Controllare le cause comuni di Skype per errori di accesso Business Online](troubleshooting-sign-in-errors-for-admins.md#toc323194094)
@@ -124,7 +124,7 @@ Se l'organizzazione dispone di un dominio personalizzato, questa procedura è po
 
   - **Nome**: sip
 
-  - **Valore/destinazione**: sipdir.online.microsoft.com
+  - **Valore/destinazione**: sipdir.online.lync.com
 
 Per ulteriori informazioni, vedere l'articolo della Microsoft Knowledge Base 2566790, [Risoluzione dei problemi Skype per problemi di configurazione di DNS Online Business in Office 365](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2566790).
 

@@ -18,22 +18,22 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Purtroppo, esistono alcune licenze utente che vengono bloccate quando utente passa a https://broadcast.skype.com e si desidera utilizzare Skype riunione trasmissione. Se un utente visualizza il messaggio, hanno una delle licenze bloccate ad essi assegnate. Se si desidera comunque loro di utilizzarlo, assegnarli a un'altra licenza di Office 365.
-ms.openlocfilehash: 68ea3a6632ce5c25c0c443edc8abc66a5c6f5bbe
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: b20334a525aa7942af90439cf05add7c49fc1f8b
+ms.sourcegitcommit: 0458232441d3aed8dd578f41a13078aa379c9b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23861406"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27788966"
 ---
-# <a name="blocked-user-licenses-for-skype-meeting-broadcast"></a>Licenze utente bloccate per Skype Meeting Broadcast
+# <a name="blocked-user-licenses-for-hosting-skype-meeting-broadcast"></a>Bloccare le licenze utente per l'hosting di trasmissione riunione Skype
 
-Purtroppo, esistono alcune licenze utente che vengono bloccate quando gli utenti https://broadcast.skype.com e si desidera utilizzare Skype riunione trasmissione. Se un utente visualizza il messaggio, hanno una delle licenze bloccate ad essi assegnate. Se si desidera comunque loro di utilizzarlo, assegnarli a un'altra licenza di Office 365.
+Purtroppo, esistono alcune licenze utente che vengono bloccate quando gli utenti https://broadcast.skype.com e si desidera ospitare una riunione Skype trasmissione. Se un utente visualizza il messaggio, hanno una delle licenze bloccate ad essi assegnate. Se si desidera comunque loro di utilizzarlo, assegnarli a un'altra licenza di Office 365.
   
  *"I criteri aziendali non consentono di utilizzare Skype riunione trasmissione. Rivolgersi all'amministratore di sistema per verificare che il servizio è abilitato e si dispone di licenza corretta."* 
   
-## <a name="blocked-user-licenses"></a>Licenze utente bloccato
+## <a name="blocked-user-licenses"></a>Licenze utente bloccato 
 
-Verranno bloccate Skype riunione trasmissione se una qualsiasi delle licenze utente seguenti sono assegnata a un utente.
+Hosting di trasmissione riunione Skype eventi verranno bloccate se una qualsiasi delle licenze utente seguenti sono assegnata a un utente. I partecipanti che sono flussi di trasmissione eventi non richiedono le licenze utente.
   
 - Office 365 /FAc/personale
     
