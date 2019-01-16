@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Learn how to add an emergency address to your Skype for Business account. '
-ms.openlocfilehash: cf6f2118ff147e6c126db6fcbbd0af9dbe155e21
-ms.sourcegitcommit: 160ced7013c1c46595c4362c2f32c5769b082294
+ms.openlocfilehash: f4d66c58066cd5547a8692066763675006d97920
+ms.sourcegitcommit: 788e3526ff973454f3904c33d867691a2fae814f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699400"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "28326700"
 ---
 # <a name="add-change-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere, modificare o rimuovere un indirizzo di emergenza dell'organizzazione
 
@@ -40,7 +40,7 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
+2. Vai al **team di Microsoft & Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nella barra di navigazione sinistra, vai su VocePosizioni di emergenza e quindi fai clic sul pulsante Aggiungi nuovo indirizzo.** **  >  ** ** ** **
     
@@ -62,7 +62,7 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
+2. Vai al **team di Microsoft & Skype per Business Admin Center** > **portale Legacy**.
     
 3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**, selezionare l'indirizzo che si desidera modificare e nel riquadro azioni fare clic su **Modifica**.
     
@@ -83,7 +83,34 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
     
     > [!IMPORTANT]
     > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+
+**Numero di informazioni sullo stato "Errore".**
+
+Dopo aver acquisito un numero compreso tra il portale di Office 365, lo stato modificato da **"Provisioning"** in **"Errore"**.
+
+Spesso questo problema si verifica quando viene aggiunto un numero dal portale di utilizzo di un indirizzo di emergenza che punta a un percorso che non viene corrispondente indicativo di località del telefono.
+
+Per ottenere ulteriori informazioni sui numeri che non è stati attivati correttamente, eseguire Powershell seguenti:
+ 
+> [! Get-CsOnlineTelephoneNumber sintassi] | Where-Object {$_. ActivationState - cnotcontains "Attivato"} | fl *
+
+Il risultato al altre informazioni come area, id e ActivationState, dovrebbe inoltre contenere il CityCode.
+
+**Esempio**di un numero Madrid, CityCode restituito sarà "EMEA-ES-ALL-M_MA".
+
+Se effettivamente è stato utilizzato un indirizzo di emergenza errato, verificare che hanno creato un nuovo indirizzo emergenza corrispondente all'indicativo di località del numero e assegnarlo al numero.
+
+1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
+2. Vai al **team di Microsoft & Skype per Business Admin Center** > **portale Legacy**.
+    
+3. Nel riquadro di spostamento sinistro, passare a **Voice** > **I numeri di telefono**, quindi fare doppio clic sul numero stato **"Errore"** e nel menu a destra del sito, selezionare il **Nuovo indirizzo di emergenza**.
+
+
+Si noti che dopo la modifica dell'indirizzo di emergenza, stato del numero verrà modificato in **"assegnazione in sospeso"** e può richiedere fino a 24 ore per l'attivazione delle correttamente.
+
 ## <a name="related-topics"></a>Argomenti correlati
 [Che cosa sono il routing delle chiamate, gli indirizzi e le posizioni per gli interventi di emergenza?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing)
 
