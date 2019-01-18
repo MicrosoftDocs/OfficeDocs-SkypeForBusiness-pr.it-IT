@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo di Audio conferenza PSTN compreso il costo della chiamata in modo che è possibile acquisire familiarità con i dati di utilizzo e chiamare fatturazione dettagli per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: e4af77832cca1cd2a9d9de49aa83f4400c359277
-ms.sourcegitcommit: 6ad3ce36140464319f5957652331acd6a4273f82
+ms.openlocfilehash: c0a207681db425bd411bfdbda1bb9f380fbb70a1
+ms.sourcegitcommit: 5f289e4ca3ba40013d38c352bd34eff96d6421b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2018
-ms.locfileid: "26561647"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726626"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -76,7 +76,7 @@ Questo è l'aspetto del report.
      **UCAP (Unified Communication Applications)** 
      *    **ucap_in** (una chiamata PSTN in arrivo per l'applicazione di comunicazioni unificate, ad esempio coda chiamata o operatore automatico) 
      *    **ucap_out** (una chiamata PSTN in uscita dall'applicazione di comunicazioni unificate, ad esempio coda chiamata o operatore automatico)
-     *    **Nota:** Le chiamate a cui sono state trasferite a un utente dall'applicazione di comunicazioni unificate, ad esempio una coda di chiamata o operatore automatico non verrà visualizzato nel rapporto di utilizzo PSTN come si tratti di chiamata sono to peer (P2P) per le chiamate audio. È possibile accedere a chiamate P2P in Skype per Business Admin Center in "Strumenti > Skype per Business chiamare Analitica" e di ricerca in base all'indirizzo SIP o nome utente correlazione delle chiamate da data/ora e/o che hanno origine CLID (riga ID chiamante). 
+     *    **Nota:** Le chiamate a cui sono state trasferite a un utente dall'applicazione di comunicazioni unificate, ad esempio una coda di chiamata o operatore automatico non verrà visualizzato nel rapporto di utilizzo PSTN come si tratti di chiamata sono to peer (P2P) per le chiamate audio. È possibile accedere a chiamate P2P in Skype per Business Admin Center in "Strumenti gt _ Skype per Business chiamata Analitica" e di ricerca in base all'indirizzo SIP o nome utente correlazione delle chiamate da data/ora e/o che hanno origine CLID (riga ID chiamante). 
 *     
      **Nazionale/internazionale** indica se la chiamata effettuata è considerata nazionale (entro un Paese/area geografica) o internazionale (al di fuori di un Paese/area geografica) a seconda della posizione dell'utente. 
 *    **Destinazione composto** è il nome della destinazione paese/area geografica composto, ad esempio Francia, Germania o degli Stati Uniti (Stati Uniti). 
@@ -93,6 +93,9 @@ Questo è l'aspetto del report.
      *    **MCOPSTN6** - nazionale chiamata Plan (piano chiamante 240 min) Nota: limitata disponibilità
      *    **MCOMEETADD** - audioconferenze con accesso esterno
      *    **MCOMEETACPEA** - retributive Per minuto audioconferenze con accesso esterno
+> [!NOTE]
+> Se si desidera eseguire un report da includere sola retributive per chiamate minute che non vengono inclusi nella chiamata o di sottoscrizione di servizi di conferenza, è possibile filtrare il rapporto con funzionalità "MCOPSTNPP". In questo modo verrà fornire dettagli di tutte le retributive per le chiamate minute.  Per retributive per minuto audioconferenze con accesso esterno, vengono filtrati da "MCOMEETACPEA" anziché "MCOPSTNPP".  
+***
 > [!NOTE]
 > È anche non possibile visualizzare "dati" in alcuni campi. "Senza dati" indica che il campo non è applicabile al tipo di chiamata o funzionalità. 
 ***
