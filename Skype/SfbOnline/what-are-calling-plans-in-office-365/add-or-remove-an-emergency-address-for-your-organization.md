@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Learn how to add an emergency address to your Skype for Business account. '
-ms.openlocfilehash: f4d66c58066cd5547a8692066763675006d97920
-ms.sourcegitcommit: 788e3526ff973454f3904c33d867691a2fae814f
+ms.openlocfilehash: a1e1421e79b25da37f26c09b271abb67f7b3340b
+ms.sourcegitcommit: 5cf9b45ad87aebfd46d3f1f757786c01804143ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "28326700"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29635755"
 ---
 # <a name="add-change-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere, modificare o rimuovere un indirizzo di emergenza dell'organizzazione
 
@@ -53,6 +53,8 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
     
     > [!IMPORTANT]
     > La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione dell'indirizzo. È possibile che un indirizzo per gli interventi di emergenza parzialmente corretto, in cui hai ad esempio digitato erroneamente il nome della città, superi comunque la fase di convalida. In caso di convalida nonostante gli errori di ortografia, la combinazione del nome della città errato e delle altre parti corrette dell'indirizzo fornisce informazioni sufficienti per instradare la chiamata al centro di emergenza appropriato. 
+    
+    > Nota: In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna è importante tenere presente che, per poter attivare correttamente un numero di telefono in Office 365, l'impostazione indirizzo nella posizione di emergenza, che verrà utilizzato per acquisire il numero, deve corrispondere la indicativo di località del numero di telefono.
   
     Se l'indirizzo non può essere convalidato, è possibile inviare una richiesta di convalida manuale facendo clic su **Invia una richiesta di convalida** se si sta tentando di convalidare un indirizzo negli Stati Uniti, o facendo clic su **Apri una richiesta di assistenza per ottenere la convalida dell'indirizzo** se si è al di fuori degli Stati Uniti.
     
