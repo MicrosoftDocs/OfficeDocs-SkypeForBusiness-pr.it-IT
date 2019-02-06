@@ -22,12 +22,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare e testare gli operatori automatici di sistema telefonico in (Cloud PBX) per la gestione dell'organizzazione delle chiamate efficiente. "
-ms.openlocfilehash: 0bf312734c788e0bd02bc4fce40dbea4267850d4
-ms.sourcegitcommit: 30620021ceba916a505437ab641a23393f55827a
+ms.openlocfilehash: 9e84ea2130238866db61fa222169435772cc7758
+ms.sourcegitcommit: 31827526894ffb75d64fcb0a7c76ee874ad3c269
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26531579"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29754154"
 ---
 # <a name="set-up-a-phone-system-auto-attendant"></a>Impostare un operatore automatico in Sistema telefonico
 
@@ -49,9 +49,9 @@ Per ulteriori informazioni sugli operatori automatici, vedere [che cosa sono gli
   
 ## <a name="step-2---create-a-new-auto-attendant"></a>Fase 2 - Creare un nuovo operatore automatico
 
- **Utilizzo del team di Microsoft Skype per Business Admin Center**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams**
 
-Il **team di Microsoft e Skype per Business Admin Center**, fare clic su ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **Portale Legacy** >  **routing delle chiamate** > **gli operatori automatici**, quindi fare clic su **Aggiungi nuovo +**:
+**Interfaccia di amministrazione di Microsoft Team**fare clic su ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **Portale Legacy** >  **routing delle chiamate** > **gli operatori automatici**, quindi fare clic su **Aggiungi nuovo +**:
 
 ### <a name="edit-general-info-page"></a>Pagina Modifica informazioni generali
 

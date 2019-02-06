@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: 'Learn how to set up phone system for Office 365 (Cloud PBX) call queues to give you an organizational greeting, music on hold, and redirecting calls to call agents in distribution lists and security groups. You can also set the maximum queue size, time out, and call handling options. '
-ms.openlocfilehash: ec3cbc89a0a8ab07d7936d604d1f38a5d99ed2b6
-ms.sourcegitcommit: 969a71ef0ac0030c27bd2455c3bf9d536dbcd752
+ms.openlocfilehash: 84134809d11b8175dca6369afdf552543ffc07d0
+ms.sourcegitcommit: 31827526894ffb75d64fcb0a7c76ee874ad3c269
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27182394"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29753972"
 ---
 # <a name="create-a-phone-system-call-queue"></a>Creare una coda di chiamata del Sistema telefonico
 
@@ -104,9 +104,9 @@ Prima di poter creare e configurare le code di chiamata, è necessario ottenere 
   
 ## <a name="step-3---create-a-new-call-queue"></a>Fase 3 - Creare una nuova coda di chiamata
 
- **Utilizzo del team di Microsoft Skype per Business Admin Center**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams**
 
-Il **team di Microsoft e Skype per Business Admin Center**, fare clic su ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **Portale Legacy** >  **routing delle chiamate** > **code di chiamata**, quindi fare clic su **Aggiungi nuovo +**:
+**Interfaccia di amministrazione di Microsoft Team**fare clic su ![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **Portale Legacy** >  **routing delle chiamate** > **code di chiamata**, quindi fare clic su **Aggiungi nuovo +**:
   
 ### <a name="set-the-call-queue-display-name-phone-number-and-domain-if-any"></a>Imposta il nome visualizzato della coda di chiamata, il numero di telefono e il dominio (se presente)
 

@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Learn how to add an emergency address to your Skype for Business account. '
-ms.openlocfilehash: a1e1421e79b25da37f26c09b271abb67f7b3340b
-ms.sourcegitcommit: 5cf9b45ad87aebfd46d3f1f757786c01804143ed
+ms.openlocfilehash: d2eddc3812919a187fffa01279136be2a7735095
+ms.sourcegitcommit: 31827526894ffb75d64fcb0a7c76ee874ad3c269
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29635755"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29753677"
 ---
 # <a name="add-change-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere, modificare o rimuovere un indirizzo di emergenza dell'organizzazione
 
@@ -40,7 +40,7 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **team di Microsoft & Skype per Business Admin Center** > **portale Legacy**.
+2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
     
 3. Nella barra di navigazione sinistra, vai su VocePosizioni di emergenza e quindi fai clic sul pulsante Aggiungi nuovo indirizzo.** **  >  ** ** ** **
     
@@ -64,7 +64,7 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **team di Microsoft & Skype per Business Admin Center** > **portale Legacy**.
+2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
     
 3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**, selezionare l'indirizzo che si desidera modificare e nel riquadro azioni fare clic su **Modifica**.
     
@@ -79,7 +79,7 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
+2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
     
 3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**, selezionare l'indirizzo che si desidera eliminare e nel riquadro azioni fare clic su **Elimina**.
     
@@ -106,7 +106,7 @@ Se effettivamente è stato utilizzato un indirizzo di emergenza errato, verifica
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **team di Microsoft & Skype per Business Admin Center** > **portale Legacy**.
+2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
     
 3. Nel riquadro di spostamento sinistro, passare a **Voice** > **I numeri di telefono**, quindi fare doppio clic sul numero stato **"Errore"** e nel menu a destra del sito, selezionare il **Nuovo indirizzo di emergenza**.
 

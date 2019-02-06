@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come configurare un numero e un indirizzo di emergenza per ogni utente che può essere utilizzato con il telefono di rete pubblica (PSTN).
-ms.openlocfilehash: c16e53df15d46457501c75ad5adcb0882d8fe875
-ms.sourcegitcommit: d7cab12337c0226c321e905a0504247fcff5eb77
+ms.openlocfilehash: 4778009ddcd004f37c5ed0f0566d64dae6648997
+ms.sourcegitcommit: 31827526894ffb75d64fcb0a7c76ee874ad3c269
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26676398"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29753437"
 ---
 # <a name="assign-or-change-an-emergency-address-for-a-user"></a>Assegnare o modificare l'indirizzo per gli interventi di emergenza di un utente
 
@@ -38,7 +38,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
+2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
     
 3. Nel riquadro sinistro passare a **Voice**, quindi scegliere **gli utenti di VoIP**.
     

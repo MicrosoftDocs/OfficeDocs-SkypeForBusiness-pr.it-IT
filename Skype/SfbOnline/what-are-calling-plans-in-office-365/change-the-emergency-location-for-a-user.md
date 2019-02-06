@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Learn how to change the emergency location for your users. With an unlimited number of locations, you can change emergency locations as employees move floors or buildings. '
-ms.openlocfilehash: 292789b19899f01478e44a183236960282ac6330
-ms.sourcegitcommit: d7cab12337c0226c321e905a0504247fcff5eb77
+ms.openlocfilehash: fc128a8de266bbf5ed6804ea07cc73bb2287a6e5
+ms.sourcegitcommit: 31827526894ffb75d64fcb0a7c76ee874ad3c269
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26676418"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29754843"
 ---
 # <a name="assign-or-change-the-emergency-location-for-a-user"></a>Assegnare o modificare il percorso di emergenza per un utente
 
@@ -38,7 +38,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **team di Microsoft e Skype per Business Admin Center** > **portale Legacy**.
+2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
     
 3. Nel riquadro sinistro passare a **Voice** > **agli utenti di VoIP**.
     
