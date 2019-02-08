@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni sulle procedure di distribuzione per ottenere il firmware corretto, aggiornare, se necessario, assegnare licenze e configurare le impostazioni per Skype per i telefoni online Business
-ms.openlocfilehash: f036f2fa47c99d1ea206192c15c901fc9391c1ee
-ms.sourcegitcommit: 8279beffec35fe8a75968245c6cb09f1d622370f
+ms.openlocfilehash: 04cb3aa17574f56d9069f07a10c1c6ae95f9576d
+ms.sourcegitcommit: 3f88e2f1fb4dd84bf6e88e29b89cefeb7a0a954b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27297658"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29770363"
 ---
 # <a name="deploying-skype-for-business-online-phones"></a>Distribuzione dei telefoni per Skype for Business Online
 
@@ -184,7 +184,7 @@ Per consentire agli utenti di accedere a un Skype per il telefono aziendale Onli
     
 - **Phone-Lock** è una funzionalità di recente introduzione nei telefoni certificati Skype for Business che permette di proteggere un telefono. Se attivata, gli utenti verranno richiesto di creare un PIN dopo un'autenticazione eseguita correttamente. Una volta creato il PIN, il telefono si blocca quando scade un periodo di inattività definito, quando l'utente blocca manualmente il telefono o quando sincronizza il proprio Phone-Lock con il blocco su PC utilizzando l'accoppiamento del telefono. Se blocco telefono viene immesso il PIN errato più volte, il telefono verrà disconnesso l'utente o richiedono il codice dell'amministratore di sbloccare il telefono, ma questa variano a seconda del partner telefono. Il PIN dell'utente deve essere composto di un numero di cifre compreso tra 6 e 15.
     
-    È possibile disattivare Blocco telefono per l'organizzazione (in cui è abilitata per impostazione predefinita), modificare il timeout di inattività e scegliere se gli utenti possono effettuare chiamate telefoniche mentre sono bloccate o non tramite le impostazioni inband. Per ulteriori informazioni su queste impostazioni, consulta [Set-CsIPPhonePolicy](https://technet.microsoft.com/en-us/library/mt629497.aspx).
+    È possibile disattivare Blocco telefono per l'organizzazione (in cui è abilitata per impostazione predefinita), modificare il timeout di inattività e scegliere se gli utenti possono effettuare chiamate telefoniche mentre sono bloccate o non tramite le impostazioni inband. Per ulteriori informazioni su queste impostazioni, vedere [Set-CsUCPhoneConfiguration](https://technet.microsoft.com/en-us/library/mt629497.aspx) .
     
 ## <a name="step-7-optional---if-you-have-device-pairing-and-better-together-over-ethernet-btoe"></a>Fase 7 (opzionale) - Con accoppiamento dispositivo e Better Together over Ethernet (BToE)
 <a name="BK_BTOE"> </a>
