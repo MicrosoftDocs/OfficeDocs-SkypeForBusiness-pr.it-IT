@@ -1,5 +1,5 @@
 ---
-title: Office 365 ProPlus, o Skype per Business Online autonoma, piano 2
+title: Office 365 ProPlus o Skype per Business Online autonoma, piano 2
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,23 +14,22 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle licenze di componente aggiuntivo, caratteristiche e sull'acquisto di Office 365 ProPlus o Skype per Business Online autonomo piano 2.
-ms.openlocfilehash: 2a5cd00a0573999afe6f27b6a792b0eaa2260093
-ms.sourcegitcommit: 1ad4120af98240f1b54c0ca18286598b289a97f1
+ms.openlocfilehash: 79f2638f8c2da923846ac522752a3f2bc0a940ec
+ms.sourcegitcommit: 27f1ecb730355dcfac2f4be3f5642f383d5532ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240668"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30120338"
 ---
-# <a name="office-365-proplus-or-skype-for-business-online-standalone-plan-2"></a>Office 365 ProPlus, o Skype per Business Online autonoma, piano 2
+# <a name="office-365-proplus-or-skype-for-business-online-standalone-plan-2"></a>Office 365 ProPlus o Skype per Business Online autonoma, piano 2
 
-Se è già stato acquistato [Office 365 ProPlus](https://products.office.com/en-us/business/office-365-proplus-business-software), o piano [Skype per Business Online autonomo piano 2](https://products.office.com/en-us/skype-for-business/online) , ecco le licenze di componente aggiuntivo che è necessario acquistare per ottenere ulteriori Skype per le funzionalità di Business.
+Se è già stato acquistato [Office 365 ProPlus](https://products.office.com/en/business/office-365-proplus-business-software) o [Skype per Business Online autonomo piano 2](https://products.office.com/skype-for-business/online), ecco le licenze di componente aggiuntivo che è necessario acquistare per ottenere ulteriori Skype per le funzionalità di Business.
 
 > [!IMPORTANT]
 > Sebbene Audioconferenza, Sistema telefonico e Piani di chiamata possono essere acquistati con Skype per Business Online Plan 2 per abilitare funzionalità di chiamata vocale, è consigliabile valutare un piano aziendale E5 per verificare se è più economico.

@@ -14,29 +14,28 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Licensing
 - LIL_Placement
 description: "Informazioni sulle licenze di componenti aggiuntivi, sulle caratteristiche e sull'acquisto di piani E1, E3 ed E4 per Office 365 Enterprise. "
-ms.openlocfilehash: 64bd2278e1d53c2fd363cf215095af53cd2e2697
-ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.openlocfilehash: 0ff3a0cb4ff29f98dd5a3b69490eeb2c9a513eaa
+ms.sourcegitcommit: 27f1ecb730355dcfac2f4be3f5642f383d5532ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23881932"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30120308"
 ---
 # <a name="office-365-enterprise-e1-e3-and-e4"></a>Office 365 Enterprise (E1, E3 ed E4)
 
-Se è già stato acquistato di [Office 365 Enterprise E1](https://products.office.com/en-us/business/office-365-enterprise-e1-business-software), [E3](https://products.office.com/en-us/business/office-365-enterprise-e3-business-software)o E4 plan, ecco le licenze di componente aggiuntivo che è necessario acquistare per ottenere ulteriori Skype per le funzionalità di Business e Microsoft Teams.
+Se è stato già acquistato il piano [Office 365 Enterprise E1](https://products.office.com/en-us/business/office-365-enterprise-e1-business-software), [E3](https://products.office.com/en-us/business/office-365-enterprise-e3-business-software) o E4, queste sono le licenze per i componenti aggiuntivi da acquistare per ottenere altre funzionalità Skype for Business.
 
 |||
 |:-----|:-----|
 |**Per aggiungere questa funzionalità** <br/> |**Ecco cosa occorre acquistare** <br/> |
-|**Audioconferenza** <br/> Acquista 1 licenza di **Conferenze Audio** per ogni persona che verrà programmare o un meeting dial-in. I partecipanti non hanno bisogno di una licenza. <br/> |Componente aggiuntivo **Audioconferenza** <br/>Una volta acquistate le licenze, Microsoft sarà il provider di servizi di audioconferenza. |
-|**Numeri verdi per di accesso per le riunioni e la possibilità di effettuare chiamate in uscita da una riunione di aggiungere un utente chiamando un numero di telefono nel mondo** <br/> |[Credito per la comunicazione](/microsoftteams/add-funds-and-manage-communications-credits)|
+|**Audioconferenza** <br/> Buy 1 **Audio Conferencing** license for each person who is going to schedule or host a dial-in meeting. Attendees do not need licenses. <br/> |Componente aggiuntivo **Audioconferenza** <br/>Una volta acquistate le licenze, Microsoft sarà il provider di servizi di audioconferenza. |
+|**Numeri verdi per di accesso per le riunioni e la possibilità di effettuare chiamate in uscita da una riunione di aggiungere un utente chiamando un numero di telefono nel mondo** <br/> |[Riconoscimenti Communications](/microsoftteams/add-funds-and-manage-communications-credits)|
 |**Sistema telefonico** <br/> |1. Componente aggiuntivo **Sistema telefonico di Office 365** <br/> 2. Piani di chiamata: acquista un [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365) da Office 365. <br/>  In alternativa, utilizza il [servizio telefonico del tuo provider esistente](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md#bkmk_existing).  <br/> |
 |**Segreteria telefonica del Sistema telefonico** <br/> |Per i piani E1 e E4, acquistare Exchange Online (Piano 2). <br/>Oppure, passare a una suite Office fornita con Exchange Online (Piano 2), come Office 365 E3. |
 |**Piani per chiamate** <br/> |1. Componente aggiuntivo **Sistema telefonico** <br/> 2. [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365): è possibile acquistarlo solo dopo l'acquisto del componente aggiuntivo **Sistema telefonico**. <br/> |
@@ -56,9 +55,9 @@ Se è già stato acquistato di [Office 365 Enterprise E1](https://products.offic
 ### <a name="partners-how-to-see-prices-and-buy"></a>Partner: come conoscere i prezzi e acquistare
 <a name="bkmk_partners"> </a>
 
-Il piano E3 fa parte del tuo Action Pack. Per acquistare i componenti aggiuntivi **Sistema telefonico** e **Audioconferenza**:
+The E3 plan is part of your Action Pack. To buy the **Phone System** and **Audio Conferencing** add-ons:
 
-1. Acquistare una sede E3 da questo [sito Web marketing](https://go.microsoft.com/fwlink/?LinkId=24393). Scegliere l'opzione di aggiungere l'abbonamento al tenant esistente.
+1. Buy one seat of E3 from our [marketing website](https://go.microsoft.com/fwlink/?LinkId=24393). Choose the option to add the seat to your existing tenant.
 
 2. Accedere a Interfaccia di amministrazione di Office 365 e passare a **Fatturazione** > **Abbonamenti** > **Componenti aggiuntivi**.
 
@@ -67,10 +66,10 @@ Il piano E3 fa parte del tuo Action Pack. Per acquistare i componenti aggiuntivi
 ## <a name="why-dont-i-see-the-option-to-buy-add-ons"></a>Perché non vedo la possibilità di acquistare componenti aggiuntivi?
 <a name="bkmk_how"> </a>
 
-In alcuni casi, si potrà essere visualizzato acquistare Skype per componenti aggiuntivi di Business e Microsoft Teams nell'interfaccia di amministrazione di Office 365.
+In alcune situazioni, non puoi vedere la possibilità di acquistare componenti aggiuntivi di Skype for Business in Interfaccia di amministrazione di Office 365.
 
-- **Office 365 Business Premium è stato acquistato tramite GoDaddy**. In questo caso, si può essere acquistato Skype per i componenti aggiuntivi Microsoft Teams e Business. È necessario passare al piano E3 (che non viene venduto GoDaddy) e quindi è possibile acquistare. [Contattare il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- **Office 365 Business Premium è stato acquistato tramite GoDaddy**. In questo caso, non sarà possibile acquistare componenti aggiuntivi Skype for Business (non disponibili presso GoDaddy). È necessario passare al piano E3 (che non viene venduto GoDaddy) e quindi è possibile acquistare. [Contattare il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
-- **Hai un impegno mensile invece che annuale**. In alcuni casi, i clienti che dispongono di un impegno mensile può essere acquistato con i componenti aggiuntivi (diversa dal metodo di pagamento, che può essere mensile). Si tratta di un problema noto che è in corso la correzione. [Contattare il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- **You have a monthly commitment instead of an annual commitment**. In some cases, customers who have a monthly commitment can't buy the add-ons (this is different from the payment method, which can be monthly). This is a known issue that we are fixing. [Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
     ![You may need an annual commitment to buy add-ons.](../../images/164579c2-f4df-4ae0-bd1d-bff12addb500.png)

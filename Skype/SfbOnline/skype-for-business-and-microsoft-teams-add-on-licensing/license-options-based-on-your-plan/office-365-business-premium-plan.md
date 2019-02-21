@@ -14,42 +14,41 @@ ms.collection:
 ms.audience: Admin
 appliesto:
 - Skype for Business
-- Microsoft Teams
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Licensing
 - LIL_Placement
 description: "Informazioni sulle licenze di componenti aggiuntivi, sulle funzionalità e sull'acquisto di piani per Office 365 Business Premium. "
-ms.openlocfilehash: 30ae65e9e9f1daad9039c95368a59f89d0596bb0
-ms.sourcegitcommit: 940cb253923e3537cb7fb4d7ce875ed9bfbb72db
+ms.openlocfilehash: 272039c0a7cf0f568efd523f94c42348cba743fd
+ms.sourcegitcommit: 27f1ecb730355dcfac2f4be3f5642f383d5532ad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23885468"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30120502"
 ---
 # <a name="office-365-business-premium"></a>Office 365 Business Premium
 
-Se disponi di [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium), puoi usare Skype for Business per chiamare altre persone della tua azienda con il medesimo abbonamento. Ad esempio, se nell'azienda lavorano 10 persone, queste possono comunicare tra loro effettuando chiamate o inviando messaggi istantanei con Skype for Business.
+Se disponi di [Office 365 Business Premium](https://products.office.com/en/business/office-365-business-premium), puoi usare Skype for Business per chiamare altre persone della tua azienda con il medesimo abbonamento. Ad esempio, se nell'azienda lavorano 10 persone, queste possono comunicare tra loro effettuando chiamate o inviando messaggi istantanei con Skype for Business.
 
  **Per effettuare e ricevere le chiamate da persone esterne all'azienda, hai due opzioni**:
 
-- **Opzione 1: puoi usare l'[app Skype](https://www.skype.com/)** gratuita. Se si dispone di un'azienda di dimensioni molto piccola (ad esempio, 1-2 persone), utilizzando l'app Skype è il modo migliore per accedere. È l'opzione più conveniente per effettuare le chiamate nazionali e internazionali. È comunque tenere conferenze telefoniche, effettuare videochiamate e condividere il desktop per le presentazioni. [Scopri le tariffe e le opzioni di pagamento](https://secure.skype.com/en/calling-rates?wt.mc_id=legacy&amp;expo365=bundled).
+- **Option 1. Use the free [Skype app](https://www.skype.com/)**. If you have a very small business (for example, 1-2 people), using the Skype app is the better way to go. It's less expensive to use for domestic and international calls. You can still hold conference calls, make video calls, and share your desktop for presentations. [Check out the rates and payment options](https://secure.skype.com/en/calling-rates?wt.mc_id=legacy&amp;expo365=bundled).
 
     Nota che l'app Skype non è inclusa nelle applicazioni di Office 365, per cui non viene integrata in Outlook 2016, a differenza di Skype for Business. Ciò significa che i contatti presenti in Outlook 2016 non verranno visualizzati in Skype, ma li dovrai aggiungere tu.
 
     È consigliabile iniziare a usare l'app Skype per vedere se soddisfa le tue esigenze. In caso contrario, per aggiornare il tuo piano, prendi in considerazione la prossima opzione.
 
     > [!IMPORTANT]
-    > È necessario impostare un interruttore per consentire i dipendenti a utilizzare Skype for Business per cercare utenti Skype. Vedere [Skype consente agli utenti aziendali aggiungere contatti Skype](../../set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts.md).
+    > You have to set a toggle to allow your employees to use Skype for Business to search for Skype users. See [Let Skype for Business users add Skype contacts](../../set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts.md).
 
 
 - **Opzione 2. Aggiornare il proprio piano e acquistare un Sistema telefonico e un Piano di chiamata nazionale o nazionale e internazionale**.
 
     > [!Important]
-    > Sebbene Skype per Business Online Plan 2 sia incluso con l'abbonamento a Office Business Premium, **non è possibile aggiungere funzionalità per chiamate vocali su cloud**. Pertanto, è consigliabile valutare un piano aziendale E5 (o aziendale E3) per verificare se è più conveniente.
+    > Although Skype for Business Online Plan 2 is included with the Office Business Premium subscription, **you can’t add cloud voice calling features**. So, we recommend that you evaluate an Enterprise E5 (or Enterprise E3) plan to see if it is more cost effective.
 
-1. [Passare a un piano di Office 365 per le aziende diverso](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a). È consigliabile valutare un piano aziendale E5 per verificare se è più conveniente.
+1. [Switch to a different Office 365 for business plan](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a). We recommend that you evaluate an Enterprise E5 plan to see if it is more cost effective.
 
 2. Acquisto di un componente aggiuntivo al **Sistema telefonico**.
     
@@ -76,6 +75,6 @@ Se disponi di [Office 365 Business Premium](https://products.office.com/en-us/bu
 
 2. Vai a Interfaccia di amministrazione di Office 365 > **Fatturazione** > **Abbonamenti**.
 
-3. Seleziona **Componenti aggiuntivi**. Verrà ora visualizzato i prezzi di sistema telefonico e acquistare viene.
+3. Choose **Add-ons**. You'll now see the prices for Phone System, and the option to buy it.
 
 4. Dopo l'acquisto di una licenza di **Sistema telefonico** , verrà visualizzato il prezzo e acquistare un piano di chiamata.
