@@ -20,16 +20,17 @@ metadata:
   localization_priority: Normal
   search.appverid: MET150
   ms.collection:
+  - M365-voice
   - Adm_Skype4B_Online
   - Teams_ITadmin_Training
   ms.custom:
   - NewAdminCenter_Update
-  ms.openlocfilehash: c309f4882cc12c3d8ccb9a0d9bccadb6d1cd459e
-  ms.sourcegitcommit: e378b8652be6319755a04eb820761364c7faa916
+  ms.openlocfilehash: f6138e8279ca0c45c186cc3c9e60bf7952a6d14f
+  ms.sourcegitcommit: d90beb625c2d12616fb9aee39b6dd1c2d4c12947
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/22/2019
-  ms.locfileid: "30210771"
+  ms.lasthandoff: 03/05/2019
+  ms.locfileid: "30408369"
 items:
 - durationInMinutes: 2
   content: "\n[Team di Microsoft](/MicrosoftTeams/Teams-overview.md) e [Skype per le aziende](https://support.office.com/en-us/article/Video-What-is-Skype-for-Business-3a21eca4-434d-41f1-ab06-3d4a268573b7) fanno entrambi parte di Office 365 che forniscono chat, le conversazioni telefoniche, segreteria telefonica, riunioni, i file e applicazioni tra in un unico sito. Entrambe vengano utilizzare [**Sistema telefonico**](/MicrosoftTeams/what-is-phone-system-in-office-365) per abilitare il controllo delle chiamate e le funzionalità di PBX nel cloud di Office 365. \n\nSistema telefonico consente di sostituire il sistema PBX esistente con un [set di caratteristiche](/MicrosoftTeams/here-s-what-you-get-with-phone-system) che includono segreteria telefonica e [gli operatori automatici](/microsoftteams/what-are-phone-system-auto-attendants), quali persone let chiamare un'azienda passare un sistema di menu per ottenere informazioni utili per il reparto destro, persona, o la Operatore. Gli operatori automatici possono essere utilizzati con team o Skype per le aziende. Per creare un sistema di operatore automatico per l'organizzazione mediante il Skype per interfaccia di amministrazione di Business.\n\nSe viene chiesto di impostare un operatore automatico, in questo articolo sono contenute informazioni utili per la pianificazione e l'implementazione di operatori automatici per un ipotetico small business. Non è una soluzione adatta, ma è un punto di partenza ottimale. \n\n## <a name=\"before-you-begin\"></a>Prima di iniziare\n\nSi presuppone che è già stata effettuata la seguente: \n- [Configurare il sistema telefonico all'interno dell'organizzazione](/MicrosoftTeams/setting-up-your-phone-system.md) con una [Chiamata a pianificare](/MicrosoftTeams/what-are-calling-plans-in-office-365) per fornire i numeri di telefono per gli utenti.\n- [Configurazione di sistema telefonico segreteria telefonica](/MicrosoftTeams/set-up-phone-system-voicemail.md) \n- Rivisto [che cosa sono gli operatori automatici di sistema Phone?](/MicrosoftTeams/what-are-phone-system-auto-attendants.md) per ottenere una migliore comprensione delle caratteristiche sistema telefonico in grado di interagire con un operatore automatico.\n\nInoltre, sarà lieti di individuazione che può essere eseguita la maggior parte della parte relativa alla pianificazione e progettazione utilizzando una lavagna o schede: definizione di un piano valido non è tecnicamente complesse.\n"
