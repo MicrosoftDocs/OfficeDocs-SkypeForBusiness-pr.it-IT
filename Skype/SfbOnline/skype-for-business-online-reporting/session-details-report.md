@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: '[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella propria organizzazione. Permette di approfondire le analisi fino al livello dei report dei singoli prodotti per un panorama più dettagliato delle attività di ciascun prodotto.'
-ms.openlocfilehash: 33aa42ea7acd2f28ab0e27da85421071f948ca99
-ms.sourcegitcommit: 30620021ceba916a505437ab641a23393f55827a
+ms.openlocfilehash: c4f3040c759deefc222c6243d80de393e18befe9
+ms.sourcegitcommit: d12a9f2d10093e24d4af54ce6044b512e7e3787e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26530551"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454035"
 ---
 # <a name="session-details-report"></a>Report dettagli della sessione.
 

@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Nuovo Skype per area Business Admin Center report mostra è chiamante e audio conferencing attività all'interno dell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile utilizzare Skype per report pool minuto Business PSTN per visualizzare il numero di minuti utilizzati durante il mese corrente all'interno dell'organizzazione.
-ms.openlocfilehash: 2840ac4bde1234f0f87fe17c41f43b6efad647b5
-ms.sourcegitcommit: 969a71ef0ac0030c27bd2455c3bf9d536dbcd752
+ms.openlocfilehash: 903ea97fa5cd187e49db89d0e4db32ad7b851a41
+ms.sourcegitcommit: d12a9f2d10093e24d4af54ce6044b512e7e3787e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27182376"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454017"
 ---
 # <a name="pstn-minute-pools-report"></a>Report pool minuti PSTN
 
@@ -62,7 +62,7 @@ Questo è l'aspetto del report.
 ![Numero 1](../images/sfbcallout1.png)<br/>La tabella mostra suddivisione dei pool minuto con licenza (funzionalità) e la posizione di utilizzo. 
 *    **Capacità** è il piano di licenza/servizio utilizzato per la chiamata. I piani di servizio di licenza e che potrebbe essere riportato in questo report sono:
      * MCOPSTN1 - nazionale chiamata pianificare (minuto 3000 1200/US-minuto UE piani
-     * MCOPSTN2 - nazionali e internazionali chiamata pianificare da cui verrà visualizzato un pool interno (minuto 3000 negli Stati Uniti, in Canada/PR, minuto 1200 European paesi) e un pool internazionale (600 minuti). Cap minuto viene raggiunto ogni volta che viene raggiunto il cap OR international interno all'interno del mese di calendario. 
+     * MCOPSTN2 - & nazionale International chiamata pianificare da cui verrà visualizzato un pool interno (minuto 3000 negli Stati Uniti, in Canada/PR, minuto 1200 European paesi) e un pool internazionale (600 minuti). Cap minuto viene raggiunto ogni volta che viene raggiunto il cap OR international interno all'interno del mese di calendario. 
      * MCOPSTN5 - nazionale chiamata Plan (piano di chiamata di 120 minuti)
      * MCOPSTN6 - nazionale chiamata Plan (piano chiamante 240 minuti)
      * MCOMEETADD - audioconferenze con accesso esterno
