@@ -20,27 +20,26 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle funzionalità disponibili in sistemi sala Skype v2. '
-ms.openlocfilehash: 2c7b2f4460dbfea5a16a36f7ceed20c8b8ebe2f4
-ms.sourcegitcommit: 27f1ecb730355dcfac2f4be3f5642f383d5532ad
+ms.openlocfilehash: 5cc6f34b7c8f493ef81732d68c2d7af37989ba09
+ms.sourcegitcommit: a589b86520028d8751653386265f6ce1e066818b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30120485"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30645334"
 ---
 # <a name="skype-room-systems-v2"></a>Skype Room Systems v2
 <a name="bkmk_srs"> </a>
 
-Nella tabella seguente sono elencate le funzionalità disponibili in[Guida di Skype Room Systems v2](https://support.office.com/article/e667f40e-5aab-40c1-bd68-611fe0002ba2) e le licenze che è necessario acquistare per ottenerle.
+Nella tabella seguente sono elencate le caratteristiche utilizzate da sistemi di chat Room Skype versione 2 e le licenze che è necessario acquistare per ottenere informazioni utili.
   
 > [!NOTE]
-> È necessario che la sala configurata sia un oggetto utente e abbia le licenze assegnate. 
+> È necessario che la sala configurata sia un oggetto utente e abbia le licenze assegnate.
   
-|||||
+| Scenario relativo a Skype Room Systems |Si dispone di Office 365 Premium, Office 365 ProPlus0 o Skype per Business autonomo piano 2. <br/> Ecco cosa occorre acquistare: |Attualmente disponi di un piano di tipo Enterprise. <br/> Ecco cosa occorre acquistare: |Disponi di Skype for Business Server 2015 (locale o ibrido). <br/> Ecco cosa occorre acquistare: |
 |:-----|:-----|:-----|:-----|
-|**Scenario relativo a Skype Room Systems** <br/> |**Si dispone di Office 365 Premium, Office 365 ProPlus0 o Skype per Business autonomo piano 2.** <br/> **Ecco cosa occorre acquistare:** <br/> |**Attualmente disponi di un piano di tipo Enterprise.** <br/> **Ecco cosa occorre acquistare:** <br/> |**Disponi di Skype for Business Server 2015 (locale o ibrido).** <br/> **Ecco cosa occorre acquistare:** <br/> |
-|Partecipare a una riunione pianificata.  <br/> |Skype for Business Licenza autonoma Plan 1  <br/> |E1, 3, 4, o 5  <br/> |Skype for Business Licenza CAL per server Standard  <br/> |
-|Avviare una riunione ad hoc.  <br/> |Licenza autonoma Plan 2 di Skype for Business  <br/> |E1, 3, 4, o 5  <br/> |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Enterprise  <br/> |
-|Avviare una riunione ad hoc e chiamate in uscita da una riunione ai numeri di telefono.  <br/> |Skype per Business autonoma, piano 2 con accesso esterno alle audioconferenze  <br/> **Nota:** Riconoscimenti Communications sono facoltativi.           |E1 o E3 con accesso esterno alle audioconferenze  <br/> OPPURE  <br/> E5  <br/> |Skype for Business Licenza CAL Standard  <br/> Skype for Business Licenza CAL per server Enterprise  <br/> |
-|Fornire la chat room un numero di telefono ed effettuare o ricevere una chiamate dalla chat room o partecipare a una conferenza audio utilizzando un numero di telefono.  <br/> |Skype per Business autonoma, piano 2 con sistema telefonico in Office 365 e un piano di chiamata  <br/> **Nota:** Riconoscimenti Communications sono facoltativi.           |E1 o E3 con sistema telefonico in Office 365 e un piano di chiamata di Office 365  <br/> OPPURE  <br/> E5  <br/> |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Plus  <br/> |
+|Partecipare a una riunione pianificata.   |Skype for Business Licenza autonoma Plan 1  |E1, 3, 4, o 5   |Skype for Business Licenza CAL per server Standard  |
+|Avviare una riunione ad hoc.  |Licenza autonoma Plan 2 di Skype for Business  |E1, 3, 4, o 5   |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Enterprise   |
+|Avviare una riunione ad hoc e chiamate in uscita da una riunione ai numeri di telefono.   |Skype per Business autonoma, piano 2 con accesso esterno alle audioconferenze  <br/> **Nota:** Riconoscimenti Communications sono facoltativi.           |E1 o E3 con accesso esterno alle audioconferenze  <br/> OPPURE  <br/> E5  <br/> |Skype for Business Licenza CAL Standard  <br/> Skype for Business Licenza CAL per server Enterprise  |
+|Fornire la chat room un numero di telefono ed effettuare o ricevere una chiamate dalla chat room o partecipare a una conferenza audio utilizzando un numero di telefono. |Skype per Business autonoma, piano 2 con sistema telefonico in Office 365 e un piano di chiamata  <br/> **Nota:** Riconoscimenti Communications sono facoltativi.           |E1 o E3 con sistema telefonico in Office 365 e un piano di chiamata di Office 365  <br/> OPPURE  <br/> E5  <br/> |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Plus |
    
- **Utilizzare la versione corretta di Windows 10**: per i clienti che desiderano distribuire immagini Windows 10 per i dispositivi, è necessaria una versione specifica di Windows 10 e questa versione è disponibile solo per clienti con contratti multilicenza.  È possibile ottenere una copia dal [Centro servizi di Volume Licensing](https://www.microsoft.com/Licensing/servicecenter/). Utilizzare le linee guida nello [script CreateSrsMedia.ps1](https://go.microsoft.com/fwlink/?linkid=867842) per scoprire versione Windows 10 necessari per creare i file multimediali per Skype sala sistema versione 2.   
+ **Utilizzare la versione corretta di Windows 10**: per i clienti che desiderano distribuire immagini Windows 10 per i dispositivi, è necessaria una versione specifica di Windows 10 e questa versione è disponibile solo per clienti con contratti multilicenza.  È possibile ottenere una copia dal [Centro servizi di Volume Licensing](https://www.microsoft.com/Licensing/servicecenter/). Utilizzare le istruzioni in [configurare una console v2 Skype sala sistemi](/Skypeforbusiness/deploy/deploy-clients/console.md) per creare il supporto di installazione del software per i sistemi di chat Room Skype versione 2.
