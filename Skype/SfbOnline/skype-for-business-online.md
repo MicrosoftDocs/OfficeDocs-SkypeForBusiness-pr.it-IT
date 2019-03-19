@@ -13,12 +13,13 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.author: tonysmit
-ms.openlocfilehash: db174b9e9df8fb6a819930babfaae9422f3ffe30
-ms.sourcegitcommit: f091c351bec56219a8c91b8c12b9c1f5c5983c95
-ms.translationtype: HT
+f1keywords: ms.teamsadmincenter.dashboard.helparticle.sfboadmindocumentation
+ms.openlocfilehash: 4f941766db77b8bb8678d4d593e6843db662dc06
+ms.sourcegitcommit: 8e62025d630c511ffb0361b9643d46c762188102
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "26531749"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30664605"
 ---
 # <a name="skype-for-business-online-admin"></a>Amministratore Skype for Business Online
 
@@ -54,7 +55,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Siamo qui per aiutarti!</h3>
+                        <h3>We& #39; r qui per</h3>
                     </div>
                 </div>
             </div>
@@ -108,7 +109,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Percorso da Skype for Business a Teams</h3>
+                        <h3>Passaggio dal Skype per le aziende a team</h3>
                     </div>
                 </div>
             </div>
@@ -119,7 +120,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
 
 ---
 
-<h2>Novità</h2>
+<h2>What& #39; s nuova</h2>
 
 <ul class="panelContent cardsF">
     <li>
@@ -224,7 +225,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                 <div class="card">
                     <div class="cardText">
                         <h3>Piani per chiamate</h3>
-                        <p><a href="/MicrosoftTeams/what-are-calling-plans-in-office-365">Cosa sono i Piani per chiamate in Office 365?</a></p><p><a href="/MicrosoftTeams/set-up-calling-plans">Configurare i Piani per chiamate</a></p><p><a href="/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans">Verificare la disponibilità di Piani per chiamate nel proprio paese o area geografica</a></p>
+                        <p><a href="/MicrosoftTeams/calling-plan-landing-page">Cosa sono i Piani per chiamate in Office 365?</a></p><p><a href="/MicrosoftTeams/set-up-calling-plans">Configurare i Piani per chiamate</a></p><p><a href="/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans">Verificare la disponibilità di Piani per chiamate nel proprio paese o area geografica</a></p>
                     </div>
                 </div>
             </div>
@@ -236,7 +237,7 @@ Scopri come gestire Skype for Business Online per la tua organizzazione.
                 <div class="card">
                     <div class="cardText">
                         <h3>Sistema telefonico</h3>
-                        <p><a href="/MicrosoftTeams/what-is-phone-system-in-office-365">Che cos’è il Sistema telefonico in Office 365?</a></p><p><a href="/MicrosoftTeams/here-s-what-you-get-with-phone-system">Ecco cosa offre il Sistema telefonico in Office 365</a></p>
+                        <p><a href="/MicrosoftTeams/what-is-phone-system-in-office-365">Che cos’è il Sistema telefonico in Office 365?</a></p><p><a href="/MicrosoftTeams/here-s-what-you-get-with-phone-system">Rispondere, 39 # Here& ottenere con sistema telefonico in Office 365</a></p>
                </div>
                 </div>
             </div>
