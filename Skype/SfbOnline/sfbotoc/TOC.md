@@ -232,7 +232,7 @@
 ### [Configurazione di Sistema telefonico nella tua organizzazione](/microsoftteams/setting-up-your-phone-system?toc=/skypeforbusiness/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
 ### [Che cosa sono gli operatori automatici del sistema telefonico?](/microsoftteams/what-are-phone-system-auto-attendants?toc=/skypeforbusiness/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
 #### [Impostare un operatore automatico del sistema telefonico](/microsoftteams/set-up-a-phone-system-auto-attendant?toc=/skypeforbusiness/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
-#### [Esempio per piccole imprese - Impostare un operatore automatico](../what-is-phone-system-in-office-365/tutorial-org-aa.yml)
+#### [Esempio per piccole imprese - Impostare un operatore automatico](../what-is-phone-system-in-office-365/tutorial-org-aa.yml)  
 ### [Creare una coda di chiamate del sistema telefonico](/microsoftteams/create-a-phone-system-call-queue?toc=/skypeforbusiness/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
 
 
