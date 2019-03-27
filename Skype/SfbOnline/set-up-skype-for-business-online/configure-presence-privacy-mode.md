@@ -1,5 +1,6 @@
 ---
 title: Configurare la modalità di privacy della presenza
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,12 +19,12 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Informazioni su come impostare la modalità di privacy per gli utenti in modo che possono migliorare per controllare come utenti relativa disponibilità. '
-ms.openlocfilehash: e2fb222046dc936d8fbd010dc8016da2b06e1ae8
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: e51c4b6a545b59dc6eed713a1518f44f1cd25443
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23862802"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30874224"
 ---
 # <a name="configure-presence-privacy-mode"></a>Configurare la modalità di privacy della presenza
 
@@ -32,7 +33,7 @@ Skype per l'impostazione della presenza in linea Business offre maggiore control
 ## <a name="choose-the-default-online-presence-setting-for-everyone-in-your-organization"></a>Scegliere l'impostazione di presenza in linea predefinita per tutti gli utenti dell'organizzazione
 <a name="__top"> </a>
 
-1. Andare a Skype per Business Online interfaccia di amministrazione > **organizzazione > generale**.
+1. Passare al Skype per Online Business admin center gt _ **gt _ organizzazione generale**.
     
 2. In **modalità privacy della presenza**, scegliere l'impostazione e quindi fare clic su **Salva**.
     
@@ -42,7 +43,7 @@ Skype per l'impostazione della presenza in linea Business offre maggiore control
 |**Visualizzare le informazioni sulla presenza solo ai contatti dell'utente** <br/> |Tutti gli utenti nell'elenco contatti dell'utente che non appartengono al gruppo di privacy **esterno** o **bloccato** . <br/> Singoli utenti possono modificare questa impostazione in Skype per la finestra di dialogo **Opzioni** di Business. <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

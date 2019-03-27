@@ -1,5 +1,6 @@
 ---
 title: Riepilogo delle impostazioni di Skype for Business online
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'In questo riepilogo di Skype per le impostazioni utente e organizzazione Business consentono di ulteriori informazioni sulla connettività per messaggistica immediata pubblica, gli inviti alle riunioni, la registrazione delle chiamate e le riunioni e altro ancora.  '
-ms.openlocfilehash: 95368d06cbd243aa5b57b7e68ec1e99db81b2fb0
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: df16f6893da94e456bc873a74c8e0a1639eda3db
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23865598"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30876064"
 ---
 # <a name="skype-for-business-online-settings-summary"></a>Riepilogo delle impostazioni di Skype for Business online
 
@@ -54,7 +55,7 @@ ms.locfileid: "23865598"
 |Disattivazione delle funzionalità non archiviate  <br/> | Disattiva tutte le caratteristiche che non sono state acquisite durante l'organizzazione ha configurato un [contenuto aggiunta a un caso e posizione delle origini conservazione nel centro eDiscovery](https://go.microsoft.com/fwlink/?LinkId=529482) nell'interfaccia di amministrazione di Exchange: <br/>  Trasferimento di file tramite messaggistica istantanea <br/>  Pagine condivise di OneNote <br/>  Annotazioni di PowerPoint <br/>  Selezionare questa opzione se la conservazione delle informazioni archiviate elettronicamente è un requisito di legge. <br/> |Disabilitata  <br/> |[Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti](configure-skype-for-business-settings-for-individual-users.md) <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni su come impostare dial-in o conferenze Audio per le persone in un'azienda che devono utilizzare un telefono per partecipare a conferenze telefoniche. "
-ms.openlocfilehash: 64ebcb97157d94a5c25ddff38e8e1ca58d3975ec
-ms.sourcegitcommit: bc2b227b4ac0a9521993f808a1361b4f9bc7faad
+ms.openlocfilehash: d57eedec13d9bd1c01ec9365fd42c0a4dfdc2d96
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30633299"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30877191"
 ---
 # <a name="set-up-audio-conferencing-for-skype-for-business"></a>Configurazione di conferenze Audio per Skype per le aziende
 
@@ -49,7 +49,7 @@ Vai a [Disponibilità di audioconferenza e Piani di chiamata per Paese e area ge
     >[!NOTE] 
     > Audioconferenze con accesso esterno è inclusa in Office 365 Enterprise E5 licenze e come componente aggiuntivo.
         
-2. Dopo aver acquistato le licenze per Audioconferenza, è necessario assegnarle agli utenti dell'organizzazione che desiderano pianificare o condurre riunioni. Vedere [assegnare o rimuovere licenze per Office 365 per aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) è stato acquistato per gli utenti dell'organizzazione che intende pianificazione o lead riunioni.
+2. Dopo che acquistare le licenze di conferenze Audio, è necessario assegnarli a tali persone all'interno dell'organizzazione che desiderano programmare o condurre riunioni. Vedere [assegnare o rimuovere licenze per Office 365 per aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) è stato acquistato per gli utenti dell'organizzazione che intende pianificazione o lead riunioni.
     
 3. È inoltre consigliabile assegnare licenze di Credito per la comunicazione (non costano nulla) agli stessi utenti a cui sono state assegnate le licenze nel passo precedente. Per informazioni su come impostare i titoli di coda di comunicazioni, vedere [impostare i titoli di coda di comunicazione per l'organizzazione](/microsoftteams/set-up-communications-credits-for-your-organization).
     
