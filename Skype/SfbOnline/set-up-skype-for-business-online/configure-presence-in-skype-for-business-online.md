@@ -1,5 +1,6 @@
 ---
 title: Configurare la presenza in Skype for Business online
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,12 +19,12 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Learn how to set up Skype for Business so you can see the availability of your co-workers. '
-ms.openlocfilehash: a3d65a3ef79bb24e5f05a5bd761170e618cc2020
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 5c8d30106397d18957c7866d9b4961cfa1409f83
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23849948"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30894158"
 ---
 # <a name="configure-presence-in-skype-for-business-online"></a>Configurare la presenza in Skype for Business online
 
@@ -54,7 +55,7 @@ Per informazioni su quali gli utenti possono modificare in Skype per le aziende,
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

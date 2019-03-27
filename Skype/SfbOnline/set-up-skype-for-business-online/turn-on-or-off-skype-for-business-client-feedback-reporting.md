@@ -1,5 +1,6 @@
 ---
 title: Attivare o disattivare i report di feedback client di Skype for Business
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: È possibile abilitare il Skype agli utenti aziendali di utilizzare Skype incorporata per strumento di Business app commenti e suggerimenti per consentire agli utenti di segnalare problemi e inviare commenti e suggerimenti direttamente a Microsoft sull'esperienza.
-ms.openlocfilehash: 3dcb003c23ca1a96a646851358d21aca5a47e674
-ms.sourcegitcommit: 6ad3ce36140464319f5957652331acd6a4273f82
+ms.openlocfilehash: f803c1fe88de564f8fb4870446ef6d1d1058a841
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2018
-ms.locfileid: "26561620"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30891432"
 ---
 # <a name="turn-on-or-off-skype-for-business-client-feedback-reporting"></a>Attivare o disattivare i report di feedback client di Skype for Business
 
@@ -45,7 +46,7 @@ Puoi anche utilizzare l'impostazione  _EnableOnlineFeedbackScreenshot_ in modo c
 
 - **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
     
-1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
+1. A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.
     
 2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
     
@@ -94,8 +95,8 @@ Per attivare i commenti e suggerimenti creazione di report per gli utenti dell'o
     
   - [Usare Windows PowerShell per svolgere comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
 
-## <a name="related-topics"></a>See also
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+## <a name="related-topics"></a>Argomenti correlati
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

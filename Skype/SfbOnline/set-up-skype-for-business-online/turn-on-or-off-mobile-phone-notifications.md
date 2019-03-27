@@ -1,5 +1,6 @@
 ---
-title: Attivare o disattivare le notifiche su cellulare
+title: Attivare o disattivare le notifiche per cellulari
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,14 +19,14 @@ f1keywords:
 ms.custom:
 - Setup
 description: Informazioni su come attivare le notifiche di cellulare o disattivare in modo che gli utenti possono ricevere avvisi relativi a segreteria telefonica in arrivo e non effettuate messaggi immediati.
-ms.openlocfilehash: 6ec2dad1a6084db4c83061b06d056382f90787b8
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 40d71ba5a3106e9ae33e5f39a504e1e413a58af1
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23854244"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30897024"
 ---
-# <a name="turn-on-or-off-mobile-phone-notifications"></a>Attivare o disattivare le notifiche su cellulare
+# <a name="turn-on-or-off-mobile-phone-notifications"></a>Attivare o disattivare le notifiche per cellulari
 
 Come l' **[assegnazione dei ruoli di amministratore in Office 365 per aziende](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** per l'organizzazione, è possibile scegliere se il Skype per gli utenti aziendali di ricevere avvisi relativi a messaggi immediati in arrivo e senza risposta quando sono i telefoni cellulari o Tablet.
   

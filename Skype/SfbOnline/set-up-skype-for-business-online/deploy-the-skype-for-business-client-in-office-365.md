@@ -1,5 +1,6 @@
 ---
 title: Distribuire il client Skype for Business in Office 365
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Learn how to plan and deploy Skype for Business in small, medium, and large organizations and making it available to your users. '
-ms.openlocfilehash: c96d4759e25370997b9af8d42d8130d7964962df
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: 6dccd022d82519c1dfdce13f767e5b0a2531eb10
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25372572"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30896794"
 ---
 # <a name="deploy-the-skype-for-business-client-in-office-365"></a>Distribuire il client Skype for Business in Office 365
 
@@ -52,7 +53,7 @@ Come [amministratore](https://support.office.com/en-us/article/eac4d046-1afd-4f1
     ![Choose which software you want the user to access.](../images/91f6f422-2c85-4afd-944f-0021b2f6f109.png)
   
 > [!NOTE]
-> Se si desidera visualizzare i piani assegnati alle persone all'interno dell'organizzazione, l'accesso alla nuova interfaccia di amministrazione di Office 365 > **utenti** > **utenti attivi**. Selezionare la persona nell'elenco, quindi cercare sotto **licenze per i prodotti**. Se si utilizza l'interfaccia di amministrazione di Office 365 classica, cercare in **licenza assegnata**. 
+> Se si desidera visualizzare i piani assegnati alle persone all'interno dell'organizzazione, l'accesso per il nuovo Office 365 admin center gt _ **gli utenti** > **utenti attivi**. Selezionare la persona nell'elenco, quindi cercare sotto **licenze per i prodotti**. Se si utilizza l'interfaccia di amministrazione di Office 365 classica, cercare in **licenza assegnata**. 
   
 ### <a name="manually-deploying-skype-for-business-to-your-users"></a>Distribuzione manuale di Skype for Business agli utenti
 <a name="bkmk_manual_1"> </a>
