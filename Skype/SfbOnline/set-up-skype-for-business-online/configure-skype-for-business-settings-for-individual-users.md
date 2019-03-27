@@ -1,5 +1,6 @@
 ---
 title: Gli amministratori configurare Skype per le impostazioni di Business per singoli utenti
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,12 +22,12 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: 'Informazioni su come modificare Skype per le impostazioni di Business per singoli utenti, ad esempio: conferenze Audio e video, la registrazione delle chiamate e riunioni. '
-ms.openlocfilehash: 9dde738431e8afac4837b6f4bcab9b955787927a
-ms.sourcegitcommit: 6ad3ce36140464319f5957652331acd6a4273f82
+ms.openlocfilehash: 5c9bb7cfddb496a5b3bdb0b28ea050d5958a8147
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2018
-ms.locfileid: "26561687"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30885763"
 ---
 # <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti
 
@@ -108,7 +109,7 @@ Per configurare queste impostazioni in blocco, utilizzare PowerShell. Vedere [im
    
 ## <a name="related-topics"></a>Argomenti correlati 
 
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
   

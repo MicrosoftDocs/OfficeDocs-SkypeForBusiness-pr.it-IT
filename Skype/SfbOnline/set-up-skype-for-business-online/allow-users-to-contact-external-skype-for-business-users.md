@@ -1,5 +1,6 @@
 ---
-title: Consentire agli utenti di contattare utenti Skype for Business esterni
+title: Permettere agli utenti di contattare utenti Skype for Business esterni
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -26,14 +27,14 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: "Informazioni su come configurare Skype for Business consentire agli utenti di comunicare agli utenti di un'altra organizzazione o consentire a tali contatti esterni. "
-ms.openlocfilehash: eaac8426677268e526f622b477caff062d81deef
-ms.sourcegitcommit: 30620021ceba916a505437ab641a23393f55827a
+ms.openlocfilehash: 24cedb4a9fd612c3aa0c4886a9a35dd89b52fbe7
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26533199"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30887594"
 ---
-# <a name="allow-users-to-contact-external-skype-for-business-users"></a>Consentire agli utenti di contattare utenti Skype for Business esterni
+# <a name="allow-users-to-contact-external-skype-for-business-users"></a>Permettere agli utenti di contattare utenti Skype for Business esterni
 
 > [!NOTE]
 > Skype per la federazione Business non è disponibile per Office 365 gestito dal 21Vianet e organizzazioni Germania di Office 365. 
@@ -55,11 +56,11 @@ In entrambe le organizzazioni a tale scopo, è necessario disporre [delle autori
   
 1. Accedere con l'account di amministrazione di Office 365. 
     
-2. In Interfaccia di amministrazione di Office 365, vai a **Interfacce di amministrazione** > **Skype for Business**.
+2. Nell'interfaccia di amministrazione di Office 365 andare a **Admin Center** > **Skype per le aziende**.
     
-    ![Choose the Skype for Business admin center.](../images/376a7a45-e6e3-4716-be09-d2f294d885a2.png)
+    ![Scegliere Skype per interfaccia di amministrazione di Business.](../images/376a7a45-e6e3-4716-be09-d2f294d885a2.png)
   
-3. In **Interfaccia di amministrazione di Skype for Business**, scegli **Organizzazione** > **Comunicazioni esterne**.
+3. **Skype per interfaccia di amministrazione di Business**, selezionare **organizzazione** > **comunicazioni esterne**.
     
 4. Per configurare la comunicazione con un aziendali specifici o agli utenti in un altro dominio, nella casella a discesa fare clic **su solo per domini consentiti**.
     
@@ -69,7 +70,7 @@ In entrambe le organizzazioni a tale scopo, è necessario disporre [delle autori
     
 6. Verificare che l'amministratore all'interno dell'organizzazione è la stessa procedura loro **Skype per interfaccia di amministrazione di Business**. Ad esempio, nel loro elenco **domini consentiti** proprio amministratore deve immettere il dominio per la propria azienda.
     
-7. Se si utilizza Windows Firewall, Skype for Business apre automaticamente le porte necessarie.
+7. Se si utilizza Windows Firewall, Skype per le aziende apre le porte necessarie automaticamente.
     
     Se l'organizzazione utilizza una soluzione di firewall diverso per limitare i computer della rete di connettersi a Internet, verificare che i computer client siano in grado di accedere ai seguenti [intervalli di indirizzi IP e gli URL di Office 365](https://docs.microsoft.com/microsoftteams/office-365-urls-ip-address-ranges). Ciò potrebbe essere necessario aggiungere i nomi FQDN per l'uscita elenco Consenti di firewall o proxy di configurazione dell'infrastruttura: ** \*. api.skype.com**, \* **. users.storage.live.com**e **graph.skype.com**. Per istruzioni su come aprire le porte del firewall, consultare la documentazione fornita con esso.
     
@@ -77,18 +78,18 @@ In entrambe le organizzazioni a tale scopo, è necessario disporre [delle autori
 
 8. Verificare che l'amministratore dell'organizzazione ha inoltre seguita la procedura seguente.
     
-9. **ATTENDI FINO A 24 ORE PRIMA DEL TEST**. Ogni volta che modifichi le impostazioni per le comunicazioni esterne, possono occorrere fino a 24 ore perché le modifiche vengano distribuite su tutti i data center.
+9. **ATTENDERE fino a 24 ore da TESTARE**. Ogni volta che si modificano le impostazioni di comunicazioni esterne, può richiedere fino a 24 ore per le modifiche da popolare in tutti i data center.
     
 ![Skype](../images/58550720-2a68-42d1-a926-1884e6aeb55c.png) è possibile consentire agli utenti di cercare e messaggistica immediata con tutti gli utenti Skype, app consumer gratuita! Per ulteriori informazioni, vedere [Skype consente agli utenti aziendali aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md).
   
-## <a name="test-and-troubleshoot"></a>Test e risoluzione dei problemi
+## <a name="test-and-troubleshoot"></a>Risoluzione dei problemi
 <a name="bk_preview"> </a>
 
  **Il problema più comune persone verificano durante l'impostazione di comunicazione business to business otterrà le [Office 365 URL e intervalli di indirizzi IP](https://docs.microsoft.com/microsoftteams/office-365-urls-ip-address-ranges) destro.**
   
 Per testare l'installazione, è necessario un contatto in Skype per le aziende che non sono protetti dal firewall aziendale.
   
-1. Dopo aver modificato le impostazioni di comunicazione esterna, **ASPETTA FINO A 24 ORE PER TESTARLE**.
+1. Dopo aver modificare le impostazioni di comunicazioni esterne, **ATTENDERE fino a 24 ore a TEST**.
     
 2. In Skype per le aziende, cercare il contatto in Skype per le aziende e inviare una richiesta a chat.
     

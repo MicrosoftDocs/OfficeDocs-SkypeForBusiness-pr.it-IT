@@ -1,5 +1,6 @@
 ---
 title: Configurare le deleghe e risolvere i problemi relativi alle deleghe in Skype for Business online
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: In questo articolo viene illustrato come impostare e risolvere i problemi Skype per la delega Business Online. In questo articolo vengono fornite indicazioni per suggerimenti per il programma di installazione, procedure consigliate e istruzioni sulla risoluzione dei problemi.
-ms.openlocfilehash: e3131b28be1ad01e0965b2739dc152a627826d5e
-ms.sourcegitcommit: 28e0e8043f418505039cd12407c927f454c141f1
+ms.openlocfilehash: 450aee07691a007b976aafffc05d34c3e7ef85f2
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25546676"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30887836"
 ---
 # <a name="set-up-and-troubleshoot-skype-for-business-online-delegation"></a>Configurare le deleghe e risolvere i problemi relativi alle deleghe in Skype for Business online
 
@@ -105,7 +106,7 @@ Per configurare Skype per la delega Business Online, procedere come segue:
     
 ### <a name="verify-success"></a>Verificare l'esito positivo
 
-Se l'installazione viene eseguita correttamente, il delegato verrà visualizzato l'oggetto **è stato aggiunto come delegato per < nome >** messaggio e che viene creato il gruppo **persone per utente gestisce le chiamate** . Delegante dovrebbero essere visualizzati che viene creato il gruppo **delegati** .
+Se l'installazione viene eseguita correttamente, il delegato verrà visualizzato l'oggetto **è stato aggiunto come delegato per lt Name>** messaggio e che viene creato il gruppo **persone per utente gestisce le chiamate** . Delegante dovrebbero essere visualizzati che viene creato il gruppo **delegati** .
   
 > [!NOTE]
 > Autorizzazioni di delega in genere vengono visualizzati all'interno di 30 minuti di processo di installazione. Tuttavia, il processo può richiedere fino a 24 ore. 
@@ -143,7 +144,7 @@ Se l'installazione viene eseguita correttamente, il delegato verrà visualizzato
 - La cassetta postale di Exchange Online non è accessibile tramite Skype per client di Business. In tal caso, eseguire il [test di connettività Outlook](https://testconnectivity.microsoft.com/) per assicurarsi che viene passato.
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

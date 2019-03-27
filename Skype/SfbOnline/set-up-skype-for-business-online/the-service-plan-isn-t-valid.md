@@ -1,5 +1,6 @@
 ---
 title: Skype dell'utente per la Business Online piano di servizio non è valido
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,12 +20,12 @@ f1keywords:
 ms.custom:
 - Setup
 description: "Vedere sull'assegnazione di un piano di servizio valido per un utente dopo un Skype per Business Online piano di servizio non è errore valido. "
-ms.openlocfilehash: 92945ec7cb39a91c68c6fe31022feaf482e4310b
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: a6e42e26b9a0257005d735b0e5cda13af6f11b67
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23861010"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30888021"
 ---
 # <a name="the-users-skype-for-business-online-service-plan-isnt-valid"></a>Skype dell'utente per la Business Online piano di servizio non è valido
 
@@ -33,7 +34,7 @@ Hai Skype per Business Online, piano servizio assegnato a questo utente non vien
 Vai al **Centro di amministrazione di Office 365** > piano**utenti attivi** e assegna un servizio valido per questo utente.
 
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
   

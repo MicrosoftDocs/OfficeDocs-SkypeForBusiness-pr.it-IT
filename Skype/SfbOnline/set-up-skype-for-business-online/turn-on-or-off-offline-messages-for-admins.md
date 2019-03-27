@@ -1,5 +1,6 @@
 ---
 title: Attivare o disattivare i messaggi offline per gli amministratori
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: Learn how to send Skype for Business instant messages even when your contacts aren't signed in using PowerShell.
-ms.openlocfilehash: 7401d1690f85fcfcc0cefe157b4335da63181693
-ms.sourcegitcommit: 6ad3ce36140464319f5957652331acd6a4273f82
+ms.openlocfilehash: 3992c2b4be9cbaaee5f7e7c9648f90d8034bc6aa
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2018
-ms.locfileid: "26561583"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30884893"
 ---
 # <a name="turn-on-or-off-offline-messages-for-admins"></a>Attivare o disattivare i messaggi offline per gli amministratori
 
@@ -44,7 +45,7 @@ Per ulteriori informazioni, vedere [utilizzo offline messaggistica in Skype per 
 
  **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
 
-1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
+1. A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.
 
 2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
 
@@ -109,12 +110,12 @@ Per abilitare o disabilitare l'invio di messaggi non in linea messaggi non in li
 
   - [Gestire Office 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
 
-  - [Usare Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
+  - [Usare Windows PowerShell per gestire Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525453)
 
-  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525038)
 
-## <a name="related-topics"></a>See also
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+## <a name="related-topics"></a>Argomenti correlati
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

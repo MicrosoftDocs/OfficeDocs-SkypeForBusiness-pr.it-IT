@@ -1,5 +1,6 @@
 ---
 title: Passaggio tra le interfacce utente del client Skype for Business e del client Lync
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Learn how to switch between Skype for Business and Lync client user interfaces using PowerShell in Office 365 '
-ms.openlocfilehash: cde636a0919a1cc4e6c8c852e61040f6bee296eb
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: f248da01bb7046174fd241ed01ad6c0c93111cd9
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23857056"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30887129"
 ---
 # <a name="switching-between-the-skype-for-business-and-the-lync-client-user-interfaces"></a>Passaggio tra le interfacce utente del client Skype for Business e del client Lync
 
@@ -131,39 +132,39 @@ Questa tabella mostra l'esperienza utente quando il criterio viene applicato per
 |:-----|:-----|
 |Il criterio non è impostato. |L'utente continuerà a utilizzare l'interfaccia utente del client Skype for Business.|
 |`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI`<br/>|L'utente continuerà a utilizzare l'interfaccia utente del client Skype for Business.|
-|`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`<br/>|All'utente verrà richiesto di passare all'interfaccia utente del client Skype for Business (Lync). Gli utenti possono cambiare interfaccia in un secondo momento.|
-|`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI -Identity <username>`|L'utente utilizzerà l'interfaccia utente del client Skype for Business. |
+|`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`<br/>|L'utente verrà richiesto di passare a Skype per l'interfaccia utente client Business (Lync). Gli utenti possono cambiare interfaccia in un secondo momento.|
+|`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI -Identity <username>`|L'utente verrà utilizzata la Skype per l'interfaccia utente client aziendali. |
 `Grant-CsClientPolicy-PolicyName ClientPolicyDisableSkypeUI -Identity <username>`|L'utente verrà richiesto di passare a Skype per l'interfaccia utente client Business (Lync). L'amministratore potrà in futuro modificare l'impostazione che consentirà agli utenti di passare all'interfaccia utente del client Skype for Business. |
    
 Questa tabella mostra l'esperienza utente quando il criterio viene modificato:
   
 |**Impostazione del criterio da parte dell'amministratore**|**Interfaccia utente di Skype for Business (Lync)**|**Interfaccia utente di Skype for Business**|
 |:-----|:-----|:-----|
-|`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI`|All'utente verrà richiesto di passare all'interfaccia utente del client Skype for Business.  <br/> |L'utente continuerà a utilizzare l'interfaccia utente del client Skype for Business.  <br/> |
+|`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI`|L'utente verrà richiesto di passare a Skype per l'interfaccia utente client aziendali.  <br/> |L'utente continua a utilizzare il Skype per l'interfaccia utente del client Business.  <br/> |
 |`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`|L'utente continua a utilizzare il Skype per l'interfaccia Business (Lync).  <br/> |L'utente verrà richiesto di passare a Skype per l'interfaccia utente client Business (Lync).  <br/> |
-|Il criterio non è impostato.  <br/> |Se il criterio non è impostato, gli utenti non visualizzeranno mai Skype per l'interfaccia utente client Business (Lync). Gli utenti utilizzeranno sempre l'interfaccia utente del client Skype for Business.  <br/> |L'utente continuerà a utilizzare l'interfaccia utente del client Skype for Business.  <br/> |
+|Il criterio non è impostato.  <br/> |Se il criterio non è impostato, gli utenti non visualizzeranno mai Skype per l'interfaccia utente client Business (Lync). Gli utenti utilizzeranno sempre l'interfaccia utente del client Skype for Business.  <br/> |L'utente continua a utilizzare il Skype per l'interfaccia utente del client Business.  <br/> |
    
 Questa tabella visualizza tutti i criteri personalizzati online disponibili. Sono stati creati nuovi criteri per dare agli amministratori la flessibilità di mantenere il vecchio criterio personalizzato durante il passaggio da un flag EnableSkypeUI all'altro. Utilizza i cmdlet indicati in precedenza per concedere agli utenti uno dei seguenti criteri.
   
 |**Nome del criterio**|**EnableSkypeUI**|
 |:-----|:-----|
 `ClientPolicyDefaultPhoto`||
-`ClientPolicyDefaultPhotoDisableSkypeUI` |Falso|
+`ClientPolicyDefaultPhotoDisableSkypeUI` |False|
 `ClientPolicyNoIMURL`||
-`ClientPolicyNoIMURLDisableSkypeUI` |Falso|
+`ClientPolicyNoIMURLDisableSkypeUI` |False|
 `ClientPolicyNoIMURLPhoto`||
-`ClientPolicyNoIMURLPhotoDisableSkypeUI` |Falso|
+`ClientPolicyNoIMURLPhotoDisableSkypeUI` |False|
 `ClientPolicyNoSaveIMNoArchivingI`||
-`ClientPolicyNoSaveIMNoArchivingDisableSkypeUI` |Falso|
+`ClientPolicyNoSaveIMNoArchivingDisableSkypeUI` |False|
 `ClientPolicyNoSaveIMNoArchivingNoIMURL`||
-`ClientPolicyNoSaveIMNoArchivingNoIMURLDisableSkypeUI` |Falso|
+`ClientPolicyNoSaveIMNoArchivingNoIMURLDisableSkypeUI` |False|
 `ClientPolicyNoSaveIMNoArchivingNoIMURLPhoto` ||
-`ClientPolicyNoSaveIMNoArchivingNoIMURLPhotoDisableSkypeUI`|Falso|
+`ClientPolicyNoSaveIMNoArchivingNoIMURLPhotoDisableSkypeUI`|False|
 `ClientPolicyNoSaveIMNoArchivingPhoto`||
-`ClientPolicyNoSaveIMNoArchivingPhotoDisableSkypeUI` |Falso|
+`ClientPolicyNoSaveIMNoArchivingPhotoDisableSkypeUI` |False|
 
    
-Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
   
 - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
@@ -277,7 +278,7 @@ Successivamente dovrai collegare l'oggetto Criteri di gruppo creato al gruppo di
 Puoi inoltre verificare che l'oggetto Criteri di gruppo abbia aggiornato correttamente il Registro di sistema nel computer di un utente esaminando il Registro di sistema. Apri Editor del Registro di sistema e accedi alla chiave **[HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\Lync]**. Se l'oggetto Criteri di gruppo ha aggiornato correttamente il Registro di sistema, visualizzerai un valore denominato EnableSkypeUI con il valore 0.
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 
