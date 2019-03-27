@@ -1,5 +1,6 @@
 ---
-title: Personalizzare inviti alle riunioni
+title: Personalizzare gli inviti alle riunioni
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,14 +20,14 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Personalizzare Skype inviti alle riunioni con logo grafici, Guida in linea e gli URL legali e testo piè di pagina. '
-ms.openlocfilehash: a5ea519ddc762e861b8c3bad173139c328d8bab4
-ms.sourcegitcommit: f3b41e7abafc84571bd9e8267d41decc0fe78e4a
+ms.openlocfilehash: 3d01d23172d7c187d09930c644390bdbf7a273b2
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30493522"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30897335"
 ---
-# <a name="customize-meeting-invitations"></a>Personalizzare inviti alle riunioni
+# <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
 Come amministratore, è possibile garantire che tutto Skype per convocazioni di riunione di lavoro include alcune informazioni utili per gli utenti potrebbe essere necessario, ad esempio collegamenti per il sito Web supporto tecnico e di non responsabilità, il logo della società e altro testo che si desidera includere. 
   
