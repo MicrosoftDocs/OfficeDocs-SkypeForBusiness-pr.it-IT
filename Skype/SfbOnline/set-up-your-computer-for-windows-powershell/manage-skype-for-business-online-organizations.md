@@ -1,5 +1,6 @@
 ---
 title: Gestire Skype per le organizzazioni aziendali Online
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,37 +18,37 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: Utilizzare il cmdlet Get-CsTenant e Get-CsTenantLicensingConfiguration e Windows PowerShell per ottenere informazioni sui Skype per tenant Business Online.
-ms.openlocfilehash: 279f9431c69605377fcc0070bf9c81a027cb4064
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: b71c89967ab34909fa461f71fc5f67c1cf99a408
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23863334"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30896552"
 ---
-# <a name="manage-skype-for-business-online-organizations"></a><span data-ttu-id="b883b-103">Gestire Skype per le organizzazioni aziendali Online</span><span class="sxs-lookup"><span data-stu-id="b883b-103">Manage Skype for Business Online organizations</span></span>
+# <a name="manage-skype-for-business-online-organizations"></a><span data-ttu-id="bfb49-103">Gestire Skype per le organizzazioni aziendali Online</span><span class="sxs-lookup"><span data-stu-id="bfb49-103">Manage Skype for Business Online organizations</span></span>
 
-<span data-ttu-id="b883b-104">È possibile trovare informazioni la Skype per tenant Business Online utilizzando i cmdlet **Get-CsTenant** e **Get-CsTenantLicensingConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="b883b-104">You can find information about your Skype for Business Online tenant by using the **Get-CsTenant** and **Get-CsTenantLicensingConfiguration** cmdlets.</span></span>
+<span data-ttu-id="bfb49-104">È possibile trovare informazioni la Skype per tenant Business Online utilizzando i cmdlet **Get-CsTenant** e **Get-CsTenantLicensingConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="bfb49-104">You can find information about your Skype for Business Online tenant by using the **Get-CsTenant** and **Get-CsTenantLicensingConfiguration** cmdlets.</span></span>
   
-## <a name="manage-skype-for-business-online-tenants"></a><span data-ttu-id="b883b-105">Gestire Skype per tenant Business Online</span><span class="sxs-lookup"><span data-stu-id="b883b-105">Manage Skype for Business Online tenants</span></span>
+## <a name="manage-skype-for-business-online-tenants"></a><span data-ttu-id="bfb49-105">Gestire Skype per tenant Business Online</span><span class="sxs-lookup"><span data-stu-id="bfb49-105">Manage Skype for Business Online tenants</span></span>
 
-<span data-ttu-id="b883b-106">Per restituire informazioni sui Skype per tenant Business Online, chiamare il cmdlet [Get-CsTenant](https://go.microsoft.com/fwlink/p/?linkid=849599) senza alcun parametro aggiuntivo.</span><span class="sxs-lookup"><span data-stu-id="b883b-106">To return information about your Skype for Business Online tenant, call the [Get-CsTenant](https://go.microsoft.com/fwlink/p/?linkid=849599) cmdlet without any additional parameters.</span></span>
+<span data-ttu-id="bfb49-106">Per restituire informazioni sui Skype per tenant Business Online, chiamare il cmdlet [Get-CsTenant](https://go.microsoft.com/fwlink/p/?linkid=849599) senza alcun parametro aggiuntivo.</span><span class="sxs-lookup"><span data-stu-id="bfb49-106">To return information about your Skype for Business Online tenant, call the [Get-CsTenant](https://go.microsoft.com/fwlink/p/?linkid=849599) cmdlet without any additional parameters.</span></span>
   
 ```
 Get-CsTenant
 ```
 
-<span data-ttu-id="b883b-107">Per restituire solo il tenant nome e l'ID, utilizzare questo comando.</span><span class="sxs-lookup"><span data-stu-id="b883b-107">To return just the tenant name and ID, use this command.</span></span>
+<span data-ttu-id="bfb49-107">Per restituire solo il tenant nome e l'ID, utilizzare questo comando.</span><span class="sxs-lookup"><span data-stu-id="bfb49-107">To return just the tenant name and ID, use this command.</span></span>
   
 ```
 Get-CsTenant | Select-Object Name, TenantID
 ```
 
-<span data-ttu-id="b883b-108">Il valore del parametro _ID tenant_ è necessario quando si esegue cmdlet quali [Set-CsTenantPublicProvider](https://go.microsoft.com/fwlink/p/?linkid=849602) e [Set-CsTenantFederationConfiguration](https://technet.microsoft.com/en-us/library/jj994080.aspx).</span><span class="sxs-lookup"><span data-stu-id="b883b-108">The value of the  _TenantID_ parameter is required when running cmdlets such as [Set-CsTenantPublicProvider](https://go.microsoft.com/fwlink/p/?linkid=849602) and [Set-CsTenantFederationConfiguration](https://technet.microsoft.com/en-us/library/jj994080.aspx).</span></span>
+<span data-ttu-id="bfb49-108">Il valore del parametro _ID tenant_ è necessario quando si esegue cmdlet quali [Set-CsTenantPublicProvider](https://go.microsoft.com/fwlink/p/?linkid=849602) e [Set-CsTenantFederationConfiguration](https://technet.microsoft.com/en-us/library/jj994080.aspx).</span><span class="sxs-lookup"><span data-stu-id="bfb49-108">The value of the  _TenantID_ parameter is required when running cmdlets such as [Set-CsTenantPublicProvider](https://go.microsoft.com/fwlink/p/?linkid=849602) and [Set-CsTenantFederationConfiguration](https://technet.microsoft.com/en-us/library/jj994080.aspx).</span></span>
   
-<span data-ttu-id="b883b-109">Per informazioni sugli indica se le informazioni sulle licenze per il tenant specificato sono disponibile in Skype per interfaccia di amministrazione di Business in linea, utilizzare il cmdlet [Get-CsTenantLicensingConfiguration](https://go.microsoft.com/fwlink/p/?linkid=849606) .</span><span class="sxs-lookup"><span data-stu-id="b883b-109">To find information about whether licensing information for the specified tenant is available in the Skype for Business Online admin center, use the [Get-CsTenantLicensingConfiguration](https://go.microsoft.com/fwlink/p/?linkid=849606) cmdlet.</span></span>
+<span data-ttu-id="bfb49-109">Per informazioni sugli indica se le informazioni sulle licenze per il tenant specificato sono disponibile in Skype per interfaccia di amministrazione di Business in linea, utilizzare il cmdlet [Get-CsTenantLicensingConfiguration](https://go.microsoft.com/fwlink/p/?linkid=849606) .</span><span class="sxs-lookup"><span data-stu-id="bfb49-109">To find information about whether licensing information for the specified tenant is available in the Skype for Business Online admin center, use the [Get-CsTenantLicensingConfiguration](https://go.microsoft.com/fwlink/p/?linkid=849606) cmdlet.</span></span>
   
-## <a name="related-topics"></a><span data-ttu-id="b883b-110">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="b883b-110">Related topics</span></span>
-[<span data-ttu-id="b883b-111">Configurare il computer per Skype per la gestione in linea aziendale tramite Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="b883b-111">Set up your computer for skype for business online management using Windows PowerShell</span></span>](set-up-your-computer-for-windows-powershell.md)
+## <a name="related-topics"></a><span data-ttu-id="bfb49-110">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="bfb49-110">Related topics</span></span>
+[<span data-ttu-id="bfb49-111">Configurare il computer per Skype per la gestione in linea aziendale tramite Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="bfb49-111">Set up your computer for skype for business online management using Windows PowerShell</span></span>](set-up-your-computer-for-windows-powershell.md)
 
   
  

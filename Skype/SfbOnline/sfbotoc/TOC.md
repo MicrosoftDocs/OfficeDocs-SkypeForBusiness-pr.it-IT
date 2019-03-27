@@ -316,7 +316,7 @@
 
 ## [Configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
 ### [Diagnosi dei problemi di connessione con il modulo del connettore di Skype for Business online](../set-up-your-computer-for-windows-powershell/diagnose-problems-with-the-skype-for-business-online-connector.md)
-### [Download e installazione di Windows PowerShell 3.0](../set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-3-0.md)
+### [Download e installazione di Windows PowerShell 3.0](../set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-5-1.md)
 ### [Download e installazione del modulo del connettore di Skype for Business online](../set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector.md)
 ### [Gestire la messaggistica unificata di Exchange e la segreteria telefonica ospitata](../set-up-your-computer-for-windows-powershell/manage-exchange-unified-messaging-and-hosted-voicemail.md)
 ### [Gestione degli account utente](../set-up-your-computer-for-windows-powershell/manage-user-accounts.md)
