@@ -1,5 +1,6 @@
 ---
 title: Creare criteri di accesso esterno personalizzato
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: Skype per Business Online consente di creare i criteri di accesso esterno aggiuntivi. A differenza dei criteri client o di conferenza, dove è possibile avere più combinazioni, sono disponibili tre criteri predefiniti l'accesso esterno che possono soddisfare la maggior parte degli scenari.
-ms.openlocfilehash: a822e09875bbef1fcd1472ac988a32cadfaf5850
-ms.sourcegitcommit: 6ad3ce36140464319f5957652331acd6a4273f82
+ms.openlocfilehash: b368c7d30e74225f7808f9f3728691040e75016f
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2018
-ms.locfileid: "26561697"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30878778"
 ---
 # <a name="create-custom-external-access-policies"></a>Creare criteri di accesso esterno personalizzato
 
@@ -51,7 +52,7 @@ Per ottenere questo risultato, l'utente deve utilizzando una versione supportata
 
 - **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
     
-1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
+1. A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.
     
 2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
     
@@ -105,11 +106,11 @@ Per farlo, eseguire quanto segue:
     
   - [Gestire Office 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-  - [Usare Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
+  - [Usare Windows PowerShell per gestire Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525453)
     
-  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Trasferimenti di file bloccati punto-punto](block-point-to-point-file-transfers.md)
 
 [Impostazione dei criteri client per la propria organizzazione](set-up-client-policies-for-your-organization.md)

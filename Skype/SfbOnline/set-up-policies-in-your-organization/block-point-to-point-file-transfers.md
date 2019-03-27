@@ -1,5 +1,6 @@
 ---
 title: Bloccare i trasferimenti di file “punto a punto”
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: In Skype Business online, è necessario possibilità di controllare i trasferimenti di file da punto a punto (P2P) come parte di impostazioni di criteri di conferenza esistente. Tuttavia, in questo modo o blocchi file trasferimenti per gli utenti sono o meno sono trasferimento di file a un utente che si trova all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguire la procedura riportata di seguito, è possibile bloccare i trasferimenti di file P2P con organizzazioni federate o partner.
-ms.openlocfilehash: 7128de070e13a1c4fc62ba12e05c1fffb3595467
-ms.sourcegitcommit: 6ad3ce36140464319f5957652331acd6a4273f82
+ms.openlocfilehash: 9b7d229c7f0ea0565dc3174286b4117984a2b606
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2018
-ms.locfileid: "26561667"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30883244"
 ---
 # <a name="block-point-to-point-file-transfers"></a>Bloccare i trasferimenti di file “punto a punto”
 
@@ -53,7 +54,7 @@ Per ottenere questo risultato, l'utente deve utilizzare una versione supportata 
 
 - **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
     
-1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
+1. A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.
     
 2. Verificare la versione digitando _Get-Host_ nella finestra di **Windows PowerShell** .
     
@@ -115,11 +116,11 @@ Per consentire i trasferimenti P2P per interno i trasferimenti di file esterno o
     
   - [Gestire Office 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-  - [Usare Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
+  - [Usare Windows PowerShell per gestire Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525453)
     
-  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 [Creare criteri di accesso esterno personalizzato](create-custom-external-access-policies.md)
 
 [Impostazione dei criteri client per la propria organizzazione](set-up-client-policies-for-your-organization.md)

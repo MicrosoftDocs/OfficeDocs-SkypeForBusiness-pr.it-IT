@@ -1,5 +1,6 @@
 ---
 title: Permettere alle persone di registrare le proprie audio e videoconferenze
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,12 +19,12 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Come attivare la registrazione per le conferenze audio e video e informazioni sugli aspetti è e non è incluso in registrazioni. '
-ms.openlocfilehash: ddd560970b84333f14fcc039c4c1501874048c50
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 0e642dc8075c4a7cdcc6d3846cf0c69bca3e2e01
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23849902"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30881185"
 ---
 # <a name="let-people-record-their-audio-and-video-conferences"></a>Permettere alle persone di registrare le proprie audio e videoconferenze
 
@@ -46,7 +47,7 @@ Quando la registrazione è attivata, gli organizzatori o i relatori possono esse
 Per ulteriori informazioni, vedere [registrazione di Lync Salva e pubblica](https://support.office.com/en-US/Article/83cf1507-0f05-40f5-a520-5a6c133bc33e) e [Lync registrazione manager](https://support.office.com/en-US/Article/fa915c55-ff55-45c0-b372-1ef5596da10b). 
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

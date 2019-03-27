@@ -1,5 +1,6 @@
 ---
 title: Non è abilitata questa Skype per funzionalità di Business in linea
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,12 +20,12 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Individuare le possibili cause e suggerimenti azione quando si ricevono un Skype per funzionalità di Business Online non è errori abilitato. '
-ms.openlocfilehash: 12d5c19f7830d99ce6c7e8fad8089b713bd90d0a
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: 0688bcc572c90c776bb1db6413825436f2ba8930
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23863610"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30881575"
 ---
 # <a name="this-skype-for-business-online-feature-isnt-enabled"></a>Non è abilitata questa Skype per funzionalità di Business in linea
 
@@ -37,7 +38,7 @@ C' probabilmente l'utente non viene concesso in licenza per questa funzionalità
 |Non è stata attivata la caratteristica per l'organizzazione.  <br/> |Accedere **all'interfaccia di amministrazione di Office 365** > **Skype per le aziende** e attivare la caratteristica per l'intera organizzazione. <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

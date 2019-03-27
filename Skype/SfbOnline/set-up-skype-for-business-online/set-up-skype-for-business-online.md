@@ -1,5 +1,6 @@
 ---
-title: Configurare Skype for Business online
+title: Configurare Skype for Business Online
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,14 +23,14 @@ ms.custom:
 - Alchemy
 - LIL_Placement
 description: "Informazioni su come impostare il dominio, gli utenti, messaggistica Istantanea e presenza per l'organizzazione per installare Skype per le aziende. Vedere anche come configurare conferenze audio, sistema telefonico e la chiamata dei piani e trasmissione Skype riunione. "
-ms.openlocfilehash: af472553cea8a79f2fe9d918f7924f8884e834b5
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.openlocfilehash: 2a968fa0f5b89351c2a7a2726052b1418f0ac213
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25374476"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30878685"
 ---
-# <a name="set-up-skype-for-business-online"></a>Configurare Skype for Business online
+# <a name="set-up-skype-for-business-online"></a>Configurare Skype for Business Online
 
 È necessario disporre delle autorizzazioni di amministratore globale di Office 365 impostare Skype per le aziende. Se si dispone di un firewall o il server proxy che limita l'accesso a Web part del sito web, potrebbe essere necessario rivolgersi un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per impostare Skype per le aziende automaticamente.
 
@@ -127,7 +128,7 @@ Problemi? Eseguire le operazioni seguenti:
 
 Prima di impostare le altre funzionalità, verificare che siano disponibili licenze per tali. [Licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
 
-### <a name="set-up-audio-conferencing"></a>Configurare l'audioconferenza
+### <a name="set-up-audio-conferencing"></a>Configurare l’audioconferenza
 
 Talvolta le persone all'interno dell'organizzazione dovranno usare un telefono per accedere a una riunione. Skype per le aziende include la funzionalità di audioconferenza per solo questa situazione! Le persone possono accedere alle riunioni di Skype for Business usando un telefono, al posto di usare la app di Skype for Business su un dispositivo mobile o PC.
 
