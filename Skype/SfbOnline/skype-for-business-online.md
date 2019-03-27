@@ -1,5 +1,6 @@
 ---
 title: Amministratore Skype for Business online
+ms.reviewer: ''
 description: Scopri come gestire Skype for Business online per la tua organizzazione.
 services: skype-for-business-online-admin
 author: tonysmit
@@ -14,12 +15,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.author: tonysmit
 f1keywords: ms.teamsadmincenter.dashboard.helparticle.sfboadmindocumentation
-ms.openlocfilehash: 4f941766db77b8bb8678d4d593e6843db662dc06
-ms.sourcegitcommit: 8e62025d630c511ffb0361b9643d46c762188102
+ms.openlocfilehash: 4ae0fdda230e02e0aa7c6c95dc91036e927a4b07
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30664605"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30891996"
 ---
 # <a name="skype-for-business-online-admin"></a>Amministratore Skype for Business Online
 

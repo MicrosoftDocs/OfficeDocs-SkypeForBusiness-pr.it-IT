@@ -1,5 +1,6 @@
 ---
 title: Skype dell'utente per la Business Online piano di servizio non è valido
+ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,23 +20,23 @@ f1keywords:
 ms.custom:
 - Setup
 description: "Vedere sull'assegnazione di un piano di servizio valido per un utente dopo un Skype per Business Online piano di servizio non è errore valido. "
-ms.openlocfilehash: 92945ec7cb39a91c68c6fe31022feaf482e4310b
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.openlocfilehash: a6e42e26b9a0257005d735b0e5cda13af6f11b67
+ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23861010"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30888021"
 ---
-# <a name="the-users-skype-for-business-online-service-plan-isnt-valid"></a><span data-ttu-id="0825d-103">Skype dell'utente per la Business Online piano di servizio non è valido</span><span class="sxs-lookup"><span data-stu-id="0825d-103">The user's Skype for Business Online service plan isn't valid</span></span>
+# <a name="the-users-skype-for-business-online-service-plan-isnt-valid"></a><span data-ttu-id="7b59a-103">Skype dell'utente per la Business Online piano di servizio non è valido</span><span class="sxs-lookup"><span data-stu-id="7b59a-103">The user's Skype for Business Online service plan isn't valid</span></span>
 
-<span data-ttu-id="0825d-104">Hai Skype per Business Online, piano servizio assegnato a questo utente non viene riconosciuto, o non è valido.</span><span class="sxs-lookup"><span data-stu-id="0825d-104">Sorry, the Skype for Business Online service plan assigned to this user is not recognized, or is invalid.</span></span>
+<span data-ttu-id="7b59a-104">Hai Skype per Business Online, piano servizio assegnato a questo utente non viene riconosciuto, o non è valido.</span><span class="sxs-lookup"><span data-stu-id="7b59a-104">Sorry, the Skype for Business Online service plan assigned to this user is not recognized, or is invalid.</span></span>
   
-<span data-ttu-id="0825d-105">Vai al **Centro di amministrazione di Office 365** > piano**utenti attivi** e assegna un servizio valido per questo utente.</span><span class="sxs-lookup"><span data-stu-id="0825d-105">Go to the **Office 365 admin center** > **Active users** and assign a valid service plan to this user.</span></span>
+<span data-ttu-id="7b59a-105">Vai al **Centro di amministrazione di Office 365** > piano**utenti attivi** e assegna un servizio valido per questo utente.</span><span class="sxs-lookup"><span data-stu-id="7b59a-105">Go to the **Office 365 admin center** > **Active users** and assign a valid service plan to this user.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="0825d-106">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="0825d-106">Related topics</span></span>
-[<span data-ttu-id="0825d-107">Configurare Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="0825d-107">Set up Skype for Business Online</span></span>](set-up-skype-for-business-online.md)
+## <a name="related-topics"></a><span data-ttu-id="7b59a-106">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="7b59a-106">Related topics</span></span>
+[<span data-ttu-id="7b59a-107">Configurare Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="7b59a-107">Set up Skype for Business Online</span></span>](set-up-skype-for-business-online.md)
 
-[<span data-ttu-id="0825d-108">Consentire agli utenti di Skype for Business di aggiungere contatti Skype</span><span class="sxs-lookup"><span data-stu-id="0825d-108">Let Skype for Business users add Skype contacts</span></span>](let-skype-for-business-users-add-skype-contacts.md)
+[<span data-ttu-id="7b59a-108">Consentire agli utenti di Skype for Business di aggiungere contatti Skype</span><span class="sxs-lookup"><span data-stu-id="7b59a-108">Let Skype for Business users add Skype contacts</span></span>](let-skype-for-business-users-add-skype-contacts.md)
   
   
  
