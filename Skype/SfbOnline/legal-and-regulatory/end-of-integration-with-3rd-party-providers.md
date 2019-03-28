@@ -18,19 +18,19 @@ f1keywords: None
 ms.custom:
 - Legal
 hideEdit: true
-description: In 2019, aprile 1, la fine del programma vita verrà concludere per l'integrazione di Skype for Business con i provider di servizi di conferenza audio di terze parti (ACP parte 3).
-ms.openlocfilehash: 99643ae8d7ff00ffb006ec5a19ef97ab6f551d83
-ms.sourcegitcommit: 30620021ceba916a505437ab641a23393f55827a
+description: In 2020, aprile 1, la fine del programma vita verrà concludere per l'integrazione di Skype for Business con i provider di servizi di conferenza audio di terze parti (ACP parte 3).
+ms.openlocfilehash: 4846875a8fb288683e896454a33e9213eec3a2ac
+ms.sourcegitcommit: 5b33cfc828906917f76b0d2a9ae402c9336388a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26532385"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30934674"
 ---
 # <a name="end-of-life-program-for-the-integration-of-skype-for-business-with-third-party-audio-conferencing-providers"></a>Fine del programma di vita per l'integrazione di Skype for Business con i provider di servizi di conferenza audio di terze parti 
 
 Microsoft ha annunciato l'inizio della fine del programma di vita per l'integrazione di Skype for Business con i provider di servizi di conferenza audio di terze parti (audioconferenza). 
 
-Fine del programma vita verrà concluse su 1 ° aprile 2019. Quando si conclude, il programma smette di funzionare l'integrazione di Skype for Business con i provider di servizi di conferenza audio di terze parti e verranno osservate le seguenti modifiche a tale data (1 ° aprile 2019): 
+Fine del programma vita verrà concluse su 1 ° aprile 2020. Quando si conclude, il programma smette di funzionare l'integrazione di Skype for Business con i provider di servizi di conferenza audio di terze parti e verranno osservate le seguenti modifiche a tale data (1 ° aprile 2020): 
 
 - I partecipanti che tentano di partecipare a qualsiasi Skype per le riunioni aziendali tramite numeri di accesso fornito da un'AUDIOCONFERENZA di terze parti servizio non verrà non è più connesso al Skype per le riunioni aziendali.
  
@@ -40,13 +40,13 @@ Come parte di annuncio dell'inizio della fine del programma di vita, le seguenti
 
 - I clienti con alcun Skype per utenti Business configurati per l'utilizzo di un servizio di Audioconferenza di terze parti non sarà in grado di configurare tutti gli utenti per l'utilizzo di un servizio di Audioconferenza di terze parti. 
 
-- I clienti esistenti con Skype per utenti Business configurati per l'utilizzo di un servizio di Audioconferenza di terze parti continuerà a essere in grado di aggiungere nuovi utenti per la durata della fine del periodo di durata. Si noti che non è consigliabile impostare Skype aggiuntive agli utenti aziendali di utilizzo di un servizio di Audioconferenza di terze parti, come le modifiche entreranno in vigore in 1 ° aprile di 2019 verranno applicate anche a loro. 
+- I clienti esistenti con Skype per utenti Business configurati per l'utilizzo di un servizio di Audioconferenza di terze parti continuerà a essere in grado di aggiungere nuovi utenti per la durata della fine del periodo di durata. Si noti che non è consigliabile impostare Skype aggiuntive agli utenti aziendali di utilizzo di un servizio di Audioconferenza di terze parti, come le modifiche entreranno in vigore in 1 ° aprile di 2020 verranno applicate anche a loro. 
 
 ## <a name="preparing-for-this-change"></a>Preparazione per la modifica
 
-Per preparare la modifica, Microsoft incoraggia interessato alle organizzazioni di notificare agli utenti di questo aggiornamento pianificato prima del 1 ° aprile 2019 abilitati. 
+Per preparare la modifica, Microsoft incoraggia interessato alle organizzazioni di notificare agli utenti di questo aggiornamento pianificato prima del 1 ° aprile 2020 abilitati. 
 
-Dopo il 1 ° aprile 2019 gli utenti possono continuare a utilizzare Skype per le aziende senza interruzioni per le riunioni in linea, le organizzazioni, tuttavia, saranno necessario consentire agli utenti di audioconferenze con accesso esterno fornito da Microsoft se richiedono che audio conferenza telefonica con Skype per Business o Microsoft Teams. Per ulteriori informazioni sulle conferenze Audio Microsoft, vedere [Servizi di conferenza Audio](https://products.office.com/en-us/skype-for-business/audio-conferencing). 
+Dopo il 1 ° aprile 2020 gli utenti possono continuare a utilizzare Skype per le aziende senza interruzioni per le riunioni in linea, le organizzazioni, tuttavia, saranno necessario consentire agli utenti di audioconferenze con accesso esterno fornito da Microsoft se richiedono che audio conferenza telefonica con Skype per Business o Microsoft Teams. Per ulteriori informazioni sulle conferenze Audio Microsoft, vedere [Servizi di conferenza Audio](https://products.office.com/en-us/skype-for-business/audio-conferencing). 
 
 In base allo stato finale desiderato di un'organizzazione, sono disponibili tre percorsi che possono essere seguiti:
 
@@ -56,7 +56,7 @@ In base allo stato finale desiderato di un'organizzazione, sono disponibili tre 
 
 ### <a name="path-1-migrate-to-microsoft-audio-conferencing"></a>Percorso #1: Eseguire la migrazione a Microsoft audioconferenze   
 
-Le organizzazioni che decidono di eseguire la migrazione a Microsoft audioconferenze e completare la migrazione prima del 1 ° aprile 2019, non rileveranno effetto service durante o dopo tale data. La migrazione a Microsoft audioconferenze verrà presentate le seguenti modifiche a un'organizzazione: 
+Le organizzazioni che decidono di eseguire la migrazione a Microsoft audioconferenze e completare la migrazione prima del 1 ° aprile 2020, non rileveranno effetto service durante o dopo tale data. La migrazione a Microsoft audioconferenze verrà presentate le seguenti modifiche a un'organizzazione: 
 
 - Il servizio per la fatturazione con tutti gli altri servizi di Office 365. 
 
@@ -76,21 +76,21 @@ Migrazione a Microsoft audioconferenze è semplice e può essere eseguito in sol
  
 **Riepilogo:**
 
-- Organizzazioni che la migrazione a Microsoft audioconferenze e completare la migrazione prima del 1 ° aprile 2019, non sarà possibile vedere effetto al loro servizio durante o dopo tale data.
+- Organizzazioni che la migrazione a Microsoft audioconferenze e completare la migrazione prima del 1 ° aprile 2020, non sarà possibile vedere effetto al loro servizio durante o dopo tale data.
 
 - Per ulteriori informazioni sulla migrazione a Microsoft di audioconferenza, vedere [prova o acquisto audioconferenza in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md). 
 
 ### <a name="path-2-continue-to-separately-use-a-third-party-audio-conferencing-provider"></a>Percorso #2: Continuare a utilizzare separatamente un provider di servizi di conferenza audio di terze parti
 
-Le organizzazioni che decidono di continuare a utilizzare un'AUDIOCONFERENZA di terze parti e dopo il 1 ° aprile 2019 osserveranno impatto servizio perché telefoniche informazioni ACP terze parti non è più potranno essere utilizzato per accedere alla parte audio di Skype per le riunioni aziendali. 
+Le organizzazioni che decidono di continuare a utilizzare un'AUDIOCONFERENZA di terze parti e dopo il 1 ° aprile 2020 osserveranno impatto servizio perché telefoniche informazioni ACP terze parti non è più potranno essere utilizzato per accedere alla parte audio di Skype per le riunioni aziendali. 
 
 Per impedire la frammentazione dell'audio in Skype per le riunioni Business facendo in modo che alcuni partecipanti connessi tramite VoIP e altre tramite i servizi di Audioconferenza di terze parti, è consigliabile tali organizzazioni possono disattivare tramite VoIP nelle riunioni agli utenti. In questo modo, tutti i partecipanti dovranno partecipare alla parte audio di una riunione utilizzando i servizi di Audioconferenza di terze parti e tutti gli altri carichi di lavoro della riunione (ad esempio chat o condivisione dello schermo) può continuare a essere supportata su Skype per le aziende. 
 
 - Per disabilitare VoIP da tutte le riunioni di organizzatore di una determinata, impostare il parametro AllowIPAudio del proprio criteri conferenza su false mediante il cmdlet Set-CsConferencingPolicy. Per ulteriori informazioni, vedere [Set-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csconferencingpolicy?view=skype-ps).
  
-In termini di pianificazione e a partire da 1 ° aprile 2019, le informazioni di accesso esterno di un'AUDIOCONFERENZA di terze parti non sono più automaticamente includerà in Skype per gli inviti riunione Business. Gli utenti saranno necessario aggiungere manualmente che le informazioni di connessione nella loro Skype per le riunioni aziendali invita se si desidera continuare inclusi queste informazioni durante le riunioni. 
+In termini di pianificazione e a partire da 1 ° aprile 2020, le informazioni di accesso esterno di un'AUDIOCONFERENZA di terze parti non sono più automaticamente includerà in Skype per gli inviti riunione Business. Gli utenti saranno necessario aggiungere manualmente che le informazioni di connessione nella loro Skype per le riunioni aziendali invita se si desidera continuare inclusi queste informazioni durante le riunioni. 
 
-Si noti che nel 1 ° aprile 2019 riunioni esistenti di utenti non verranno automaticamente ripianificate per rimuovere qualsiasi informazione del dial-in servizi di Audioconferenza di terze parti. Le organizzazioni che decidono di mantenere VoIP abilitato per le riunioni ai propri utenti devono prendere in considerazione la disabilitazione dell'integrazione di servizi di Audioconferenza di terze parti per i propri utenti e pianificare di nuovo le riunioni utilizzando la riunione il servizio di migrazione per rimuovere l'audio di terze parti servizi di conferenza telefonica informazioni dalle riunioni esistenti e impedire la frammentazione dell'audio per le riunioni già pianificate. 
+Si noti che nel 1 ° aprile 2020 riunioni esistenti di utenti non verranno automaticamente ripianificate per rimuovere qualsiasi informazione del dial-in servizi di Audioconferenza di terze parti. Le organizzazioni che decidono di mantenere VoIP abilitato per le riunioni ai propri utenti devono prendere in considerazione la disabilitazione dell'integrazione di servizi di Audioconferenza di terze parti per i propri utenti e pianificare di nuovo le riunioni utilizzando la riunione il servizio di migrazione per rimuovere l'audio di terze parti servizi di conferenza telefonica informazioni dalle riunioni esistenti e impedire la frammentazione dell'audio per le riunioni già pianificate. 
 
 - Per disabilitare l'integrazione di servizi di conferenza audio di terze parti per organizzare una determinata, utilizzare il cmdlet Remove-CsUserAcp. Per ulteriori informazioni, vedere [Remove-CsUserAcp](https://docs.microsoft.com/powershell/module/skype/remove-csuseracp?view=skype-ps). 
 
@@ -98,9 +98,9 @@ Si noti che nel 1 ° aprile 2019 riunioni esistenti di utenti non verranno autom
 
 **Riepilogo:**
 
-- Le organizzazioni che decidono di continuare a utilizzare un'AUDIOCONFERENZA di terze parti e dopo il 1 ° aprile 2019 usufruirà poiché un'AUDIOCONFERENZA di terze parti non sarà in grado di utilizzare per partecipare a una Skype per le riunioni aziendali e le nuove riunioni non includerà informazioni telefoniche ACP di terze parti. 
+- Le organizzazioni che decidono di continuare a utilizzare un'AUDIOCONFERENZA di terze parti e dopo il 1 ° aprile 2020 usufruirà poiché un'AUDIOCONFERENZA di terze parti non sarà in grado di utilizzare per partecipare a una Skype per le riunioni aziendali e le nuove riunioni non includerà informazioni telefoniche ACP di terze parti. 
 
-- È consigliabile che VoIP è disabilitato per tutte le riunioni di tutti gli utenti interessati prima del 1 ° aprile 2019 per impedire l'audio di frammentazione tra partecipanti connessi tramite VoIP e tramite un'AUDIOCONFERENZA di terze parti. 
+- È consigliabile che VoIP è disabilitato per tutte le riunioni di tutti gli utenti interessati prima del 1 ° aprile 2020 per impedire l'audio di frammentazione tra partecipanti connessi tramite VoIP e tramite un'AUDIOCONFERENZA di terze parti. 
 
     - Per disabilitare il VoIP da tutte le riunioni di organizzatore di una determinata, impostare il parametro AllowIPAudio del criterio di conferenza dell'utente su false mediante il cmdlet Set-CsConferencingPolicy. Per ulteriori informazioni, vedere [Set-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csconferencingpolicy?view=skype-ps).
  
@@ -122,7 +122,7 @@ Tali organizzazioni dovranno disattivare agli utenti di utilizzare un provider d
 
 **Riepilogo:** 
 
-- Le organizzazioni che decidono di non utilizzare audioconferenze con accesso esterno del tutto prima del 1 ° aprile 2019, non vi siano conseguenze.
+- Le organizzazioni che decidono di non utilizzare audioconferenze con accesso esterno del tutto prima del 1 ° aprile 2020, non vi siano conseguenze.
 
 - Per disabilitare l'integrazione di servizi di conferenza audio di terze parti per organizzare una determinata, utilizzare il cmdlet Remove-CsUserAcp. Per ulteriori informazioni, vedere [Remove-CsUserAcp](https://docs.microsoft.com/powershell/module/skype/remove-csuseracp?view=skype-ps). 
 
