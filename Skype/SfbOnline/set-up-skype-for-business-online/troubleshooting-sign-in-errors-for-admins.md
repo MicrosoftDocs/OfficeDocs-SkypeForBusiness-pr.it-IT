@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi Skype per errori di accesso Business Online per amministratori
+title: Risoluzione dei problemi di accesso a Skype for Business online (amministratori)
 ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
@@ -17,24 +17,24 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Setup
-description: 'Ulteriori cause più comuni per Skype per errori di accesso Business Online e lavoro e risoluzione dei problemi relativi a tali problemi. '
+description: 'Scopri le cause più comuni per Skype di errori di accesso Business online e il lavoro e risolvere questi problemi. '
 ms.openlocfilehash: 369dc9347903335227641b1afebb1fd199d64541
 ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/27/2019
 ms.locfileid: "30886996"
 ---
-# <a name="troubleshooting-skype-for-business-online-sign-in-errors-for-administrators"></a>Risoluzione dei problemi Skype per errori di accesso Business Online per amministratori
+# <a name="troubleshooting-skype-for-business-online-sign-in-errors-for-administrators"></a>Risoluzione dei problemi di accesso a Skype for Business online (amministratori)
 
-Per risolvere i problemi Skype per errori di accesso Business Online, avviare eliminando le cause più comuni di accesso difficoltà. Se necessario, è possibile seguire quindi risoluzione specifica passaggi in base al tipo di errore. Se l'utente di accesso persiste, raccogliere le informazioni aggiuntive e quindi cercare informazioni aggiuntive.
+Per risolvere i problemi di accesso a Skype for Business online problemi, è bene iniziare eliminando le cause più comuni dei problemi di accesso. Se necessario, è possibile seguire una procedura di risoluzione specifica in base al tipo di errore. Se non è ancora possibile accedere, raccogliere nuove informazioni e chiedere ulteriore assistenza.
 
-## <a name="what-do-you-want-to-do"></a>Per saperne di più
+## <a name="what-do-you-want-to-do"></a>Quale operazione si desidera effettuare?
 <a name="top"> </a>
 
-> [Controllare le cause comuni di Skype per errori di accesso Business Online](troubleshooting-sign-in-errors-for-admins.md#toc323194094)
+> [Cercare le cause più comuni dei problemi di accesso di Skype for Business online ](troubleshooting-sign-in-errors-for-admins.md#toc323194094)
 > 
-> [Eseguire passaggi di risoluzione per uno specifico errore (solo Enterprise)](troubleshooting-sign-in-errors-for-admins.md#toc325626440)
+> [Eseguire le procedure di risoluzione per un errore specifico (solo Enterprise)](troubleshooting-sign-in-errors-for-admins.md#toc325626440)
 > 
 > [Aggiungere una voce del firewall per msoidsvc.exe al server proxy](troubleshooting-sign-in-errors-for-admins.md#add-a-firewall)
 > 
@@ -42,181 +42,181 @@ Per risolvere i problemi Skype per errori di accesso Business Online, avviare el
 > 
 > [Installare un certificato SSL di terze parti nel server ADFS](troubleshooting-sign-in-errors-for-admins.md#verify-upn-and)
 > 
-> [Aggiornare le credenziali di protezione](troubleshooting-sign-in-errors-for-admins.md#update-security-credentials)
+> [Aggiornare le credenziali di sicurezza](troubleshooting-sign-in-errors-for-admins.md#update-security-credentials)
 > 
-> [Modificare chiavi del Registro di sistema TrustModelData](troubleshooting-sign-in-errors-for-admins.md#modify-trustmodeldata-registry)
+> [Modificare le chiavi TrustModelData del Registro di sistema](troubleshooting-sign-in-errors-for-admins.md#modify-trustmodeldata-registry)
 > 
 > [Aggiornare le impostazioni utente in Active Directory](troubleshooting-sign-in-errors-for-admins.md#update-user-settings)
 > 
-> [Utilizzare il supporto di Microsoft risoluzione dei problemi di Guida](troubleshooting-sign-in-errors-for-admins.md#toc325626447)
+> [Usare la guida alla risoluzione dei problemi del supporto tecnico Microsoft](troubleshooting-sign-in-errors-for-admins.md#toc325626447)
 > 
-> [Raccogliere ulteriori informazioni e seek avere ulteriore assistenza](troubleshooting-sign-in-errors-for-admins.md#collect-more-information)
+> [Raccogliere ulteriori informazioni e richiedere assistenza](troubleshooting-sign-in-errors-for-admins.md#collect-more-information)
 
-## <a name="check-for-common-causes-of-skype-for-business-online-sign-in-errors"></a>Controllare le cause comuni di Skype per errori di accesso Business Online
+## <a name="check-for-common-causes-of-skype-for-business-online-sign-in-errors"></a>Cercare le cause più comuni dei problemi di accesso di Skype for Business online
 <a name="toc323194094"> </a>
 
-La maggior parte dei problemi di accesso possono essere registrati per un numero limitato di cause e molte di queste sono facili da correggere. Nella tabella seguente sono elencati alcuni cause più comuni di errori di accesso e alcuni passaggi che si o gli utenti possono essere eseguite per risolverli.
+La maggior parte dei problemi di accesso rientrano in un numero limitato di cause, molte delle quali risolvibili in modo semplice. La tabella seguente elenca le cause comuni dei problemi di accesso e alcune operazioni che gli utenti possono effettuare per risolverli.
 
 
-| **Possibili Cause**                                                                                                                                                    | **Soluzione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Causa possibile**                                                                                                                                                    | **Risoluzione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Durante l'accesso, viene visualizzata una finestra di dialogo che contiene la frase seguente: **non possono verificare che il server sia attendibile per l'indirizzo di accesso. Connettersi comunque?** <br/> | Verificare che il nome di dominio nella finestra di dialogo è un server trusted nell'organizzazione, ad esempio **domainName.contoso.com**. Chiedere all'utente di selezionare la casella di controllo **sempre considerare attendibile il server** e quindi fare clic su **Connetti**. <br/> I clienti aziendali possono viene impedita questo messaggio quando un utente accede per la prima volta, modificando il Registro di sistema nel computer di ogni utente. Per ulteriori informazioni, vedere [chiavi del Registro di sistema TrustModelData modificare](troubleshooting-sign-in-errors-for-admins.md#modify-trustmodeldata-registry).<br/> |
-| Indirizzo di accesso errata, nome utente o password  <br/>                                                                                                               | Verificare che il nome di accesso e la password dell'utente siano corretti. <br/>  Verificare che il nome dell'utente accesso viene formattato come indicato di seguito: <strong>bobk@contoso.com</strong>. Potrebbe essere diverso dal formato da utilizzare per l'accesso alla rete dell'organizzazione.  <br/>  Chiedere all'utente di provare a effettuare nuovamente l'accesso. <br/>                                                                                                                                                                                                                             |
-| Password dimenticata  <br/>                                                                                                                                             | Reimpostare la password dell'utente e notificare all'utente la nuova password temporanea.  <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Non è consentito per utilizzare Skype Business online  <br/>                                                                                                                  | Verificare che l'utente è registrato come Skype per utenti Business Online. In caso contrario, registrare l'utente e quindi chiedere all'utente di effettuare nuovamente l'accesso.  <br/>                                                                                                                                                                                                                                                                                                                                                                                           |
-| Versione corretta di Skype Business online installato  <br/>                                                                                                           | Questo problema è in genere associato a un messaggio di errore contenente il messaggio seguente: **il servizio di autenticazione non è compatibile con questa versione del programma**.  <br/> Chiedere all'utente di disinstallare e reinstallare Skype per Business Online dal portale di Office 365.  <br/>                                                                                                                                                                                                                                                    |
-| Acquisizione di un certificato personale che è necessario che tu acceda problema  <br/>                                                                                           | Se recentemente è stato modificato indirizzo di accesso dell'utente, potrebbe essere necessario eliminare i dati memorizzati nella cache accesso. Chiedere agli utenti di disconnessione, fare clic su Elimina collegamento nella schermata di accesso personale informazioni di accesso e quindi riprovare.  <br/>                                                                                                                                                                                                                                                                                                                                |
-| Impostare un nome di dominio personalizzato e le modifiche potrebbero non aver completato la propagazione nel sistema.  <br/>                                                         | Per prima cosa, verificare che sia stata modificata i record del servizio DNS (Domain Name) in modo da riflettere le modifiche.  <br/> Se sono state già le modifiche necessarie DNS, consigliare all'utente di prova registrazione in seguito. Le modifiche al DNS possono richiedere fino a 72 ore per rendere effettive in tutto il sistema.  <br/>                                                                                                                                                                                                                                                        |
-| Sistema di clock non è sincronizzata con orologio del server  <br/>                                                                                                                     | Verificare che il controller di dominio di rete la sincronizzazione con un'origine esterna affidabile. Per ulteriori informazioni, vedere l'articolo della Microsoft Knowledge Base 816042 della [procedura configurare un server di riferimento ora autorevole in Windows Server](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=816042).<br/>                                                                                                                                                                                                                                          |
+| Durante l’accesso viene visualizzata una finestra di dialogo che contiene la frase seguente: ** Impossibile verificare l'attendibilità del server per l'indirizzo di accesso. Connettersi comunque?** <br/> | Verificare che il nome di dominio nella finestra di dialogo sia un server attendibile dell'organizzazione, ad esempio, **nomedominio.contoso.com**. Chiedere all'utente di selezionare la **Considera il server sempre attendibile**, quindi fare clic su **Connetti**. <br/> I clienti aziendali possono disattivare la visualizzazione di questo messaggio quando l'utente accede per la prima volta modificando il Registro di sistema di Windows nel computer di ogni utente. Per informazioni dettagliate, vedere [Modificare le chiavi TrustModelData del Registro di sistema](troubleshooting-sign-in-errors-for-admins.md#modify-trustmodeldata-registry).<br/> |
+| Indirizzo, nome utente o password di accesso digitati in modo non corretto  <br/>                                                                                                               | Confermare che nome utente e password di accesso dell'utente siano corretti. <br/>  Verificare che il nome d’accesso dell’utente sia stato formattato nel modo seguente: <strong>bobk@contoso.com</strong>. Questo può essere diverso dal formato utilizzato per effettuare l’accesso alla rete della propria organizzazione.  <br/>  Chiedere all'utente di provare a effettuare nuovamente l’accesso. <br/>                                                                                                                                                                                                                             |
+| Password dimenticata  <br/>                                                                                                                                             | Reimpostare la password dell'utente e comunicare la nuova password temporanea.  <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Non si possiede la licenza per usare Skype for Business online.  <br/>                                                                                                                  | Verificare che l'utente sia registrato come utente Skype for Business online. In caso contrario, registrare l'utente e chiedere di effettuare nuovamente l’accesso.  <br/>                                                                                                                                                                                                                                                                                                                                                                                           |
+| È stata installata la versione errata di Skype for Business online.  <br/>                                                                                                           | Questo problema è generalmente associato a un messaggio di errore che contiene la frase seguente: **il servizio di autenticazione non è compatibile con questa versione del programma**.  <br/> Chiedere all'utente di disinstallare e reinstallare Skype for Business online dal portale di Office 365.   <br/>                                                                                                                                                                                                                                                    |
+| Problema durante l'acquisizione di un certificato personale richiesto per eseguire l'accesso  <br/>                                                                                           | Se l'indirizzo di accesso dell'utente è stato modificato di recente, è necessario eliminare i dati di accesso memorizzati nella cache. Chiedere agli utenti di disconnettersi, fare clic su Elimina il collegamento alle informazioni di accesso nella schermata di accesso e riprovare.  <br/>                                                                                                                                                                                                                                                                                                                                |
+| È stato configurato un nome di dominio personalizzato ed è possibile che le modifiche non siano ancora state propagate in tutto il sistema.  <br/>                                                         | Verificare innanzitutto di aver modificato i record DNS (Domain Name Service) in modo da riflettere la modifica.  <br/> Se le modifiche DNS necessarie sono già state effettuate, chiedere all'utente di riprovare ad accedere in un secondo momento. Le modifiche DNS possono richiedere fino a 72 ore perché si riflettano in tutto il sistema.  <br/>                                                                                                                                                                                                                                                        |
+| L'orologio di sistema non è sincronizzato con l'orologio del server  <br/>                                                                                                                     | Verificare che il controller di dominio di rete si sincronizzi con un'origine ora esterna affidabile. Per informazioni dettagliate, vedere l'articolo 816042 della Microsoft Knowledge Base [Configurazione di un server di riferimento ora autorevole in Windows Server](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=816042).<br/>                                                                                                                                                                                                                                          |
 
-Per risolvere i problemi Skype per errori di accesso Business Online, avviare eliminando le cause più comuni di accesso difficoltà. Se necessario, è possibile seguire quindi risoluzione specifica passaggi in base al tipo di errore. Se l'utente di accesso persiste, raccogliere le informazioni aggiuntive e quindi cercare informazioni aggiuntive.
+Per risolvere i problemi di accesso a Skype for Business online problemi, è bene iniziare eliminando le cause più comuni dei problemi di accesso. Se necessario, è possibile seguire una procedura di risoluzione specifica in base al tipo di errore. Se non è ancora possibile accedere, raccogliere nuove informazioni e chiedere ulteriore assistenza.
 
-## <a name="follow-resolution-steps-for-a-specific-error-enterprise-only"></a>Eseguire passaggi di risoluzione per uno specifico errore (solo Enterprise)
+## <a name="follow-resolution-steps-for-a-specific-error-enterprise-only"></a>Eseguire le procedure di risoluzione per un errore specifico (solo Enterprise)
 <a name="toc325626440"> </a>
 
 > [!IMPORTANT]
->  In queste istruzioni sono destinate principalmente per i clienti E pianificazione di Microsoft Office 365. Se si è un cliente di Office 365 pianificare P, continuare con la sezione seguente,[raccogliere ulteriori informazioni e seek avere ulteriore assistenza ](troubleshooting-sign-in-errors-for-admins.md#collect-more-information).
+>  Queste istruzioni sono destinate principalmente ai clienti del Piano E di Microsoft Office 365. Se si è un cliente del Piano E di Microsoft Office 365, passare alla sezione seguente [Raccogliere ulteriori informazioni e richiedere assistenza](troubleshooting-sign-in-errors-for-admins.md#collect-more-information). 
 
-Se l'utente non può effettuare l'accesso dopo avere tentato i suggerimenti nella sezione precedente, è possibile eseguire ulteriori la risoluzione dei problemi in base al tipo di errore. Nella tabella seguente sono elencati i messaggi di errore più comuni e le possibili cause. Nella tabella seguente sono le procedure dettagliate per risolvere i problemi.
+Se non si riesce ad accedere dopo aver provato i suggerimenti nella sezione precedente, è possibile eseguire ulteriori operazioni per la risoluzione dei problemi in base al tipo di errore. La tabella seguente elenca i più comuni messaggi di errore e le possibili cause. La tabella di seguito contiene procedure dettagliate per ogni problema.
 
-|**Messaggio di errore**|**Possibili cause**|**Soluzione**|
+|**Messaggio di errore**|**Causa possibile**|**Risoluzione**|
 |:-----|:-----|:-----|
-|Indirizzo di accesso non trovato  <br/> |Le richieste di accesso dall'Assistente Microsoft Online Services Sign-On (msoidsvc.exe) non verranno attraverso il firewall esterno o server proxy.  <br/> |[Aggiungere una voce del firewall per msoidsvc.exe al server proxy](troubleshooting-sign-in-errors-for-admins.md#add-a-firewall) <br/> |
-|Server è temporaneamente non disponibile  <br/> |Se l'organizzazione dispone di un dominio personalizzato, le impostazioni necessarie del sistema DNS (Domain Name) potrebbero essere mancanti o errati.  <br/> |[Aggiornare le impostazioni DNS](troubleshooting-sign-in-errors-for-admins.md#update-dns-service) <br/> |
-|Server è temporaneamente non disponibile  <br/> |Se l'organizzazione utilizza single sign-on con Active Directory Federation Services (ADFS), è stata utilizzata un certificato autofirmato Secure Socket Layer (SSL) anziché uno da un'autorità di certificazione di terze parti.  <br/> |[Installare un certificato SSL di terze parti nel server ADFS](troubleshooting-sign-in-errors-for-admins.md#verify-upn-and) <br/> |
-|Acquisizione di un certificato personale che è necessario che tu acceda problema  <br/> |Se è già stato rimosso i dati memorizzati nella cache server utilizzati per l'accesso e l'errore viene nuovamente visualizzato, le credenziali di protezione dell'utente è danneggiate o una cartella RSA nel computer dell'utente può determinare il blocco di autenticazione.  <br/> |[Aggiornare le credenziali di protezione](troubleshooting-sign-in-errors-for-admins.md#update-security-credentials) <br/> |
-|Quando un utente accede per la prima volta, verrà visualizzata una finestra di dialogo certificato relazione di trust.  <br/> |Questa finestra di dialogo viene visualizzato se il Skype per Business server non è ancora elencato nella chiave del Registro di sistema **TrustModelData** . <br/> |[Modificare chiavi del Registro di sistema TrustModelData](troubleshooting-sign-in-errors-for-admins.md#modify-trustmodeldata-registry) <br/> |
-|Utenti non sono abilitati per SIP  <br/> |Se l'organizzazione dispone di un'installazione di Microsoft Office Communications Server o Microsoft Lync Server 2010, si potrebbero non essere eliminato gli utenti dal server prima della rimozione delle autorizzazioni. Di conseguenza, l'attributo **msRTCSIP-UserEnabled** ancora è impostato su **FALSE** in servizi di dominio Active Directory. <br/> |[Aggiornare le impostazioni utente in Active Directory](troubleshooting-sign-in-errors-for-admins.md#update-user-settings)<br/> |
+|Indirizzo di accesso non trovato  <br/> |Le richieste di accesso dall'Assistente per l'accesso a Microsoft Online Services (msoidsvc.exe) non attraversano il firewall esterno o il server proxy.  <br/> |[Aggiungere una voce del firewall per msoidsvc.exe al server proxy](troubleshooting-sign-in-errors-for-admins.md#add-a-firewall) <br/> |
+|Server temporaneamente non disponibile  <br/> |Se l'organizzazione dispone di un dominio personalizzato, è possibile che le impostazioni DNS (Domain Name System) necessarie non siano disponibili o siano errate.  <br/> |[Aggiornare le impostazioni DNS](troubleshooting-sign-in-errors-for-admins.md#update-dns-service) <br/> |
+|Server temporaneamente non disponibile  <br/> |Se l'organizzazione usa l'accesso Single Sign-On con Active Directory Federation Services, è possibile che sia stato usato un certificato SSL (Secure Sockets Layer) autofirmato anziché un certificato emesso da un'Autorità di certificazione di terze parti.  <br/> |[Installare un certificato SSL di terze parti nel server ADFS](troubleshooting-sign-in-errors-for-admins.md#verify-upn-and) <br/> |
+|Problema durante l'acquisizione di un certificato personale richiesto per eseguire l'accesso  <br/> |Se i dati del server memorizzati nella cache e usati da Lync per accedere sono già stati rimossi ma l'errore viene ancora visualizzato, le credenziali di sicurezza dell'utente potrebbero essere danneggiate oppure una cartella RSA nel computer dell'utente potrebbe impedire l'autenticazione.  <br/> |[Aggiornare le credenziali di sicurezza](troubleshooting-sign-in-errors-for-admins.md#update-security-credentials) <br/> |
+|Viene visualizzata una finestra di dialogo relativa all'attendibilità del certificato quando un utente accede per la prima volta.  <br/> |Questa finestra di dialogo viene visualizzata se il server Skype for Business non è ancora elencato nella chiave del Registro di sistema **TrustModelData**. <br/> |[Modificare le chiavi TrustModelData del Registro di sistema](troubleshooting-sign-in-errors-for-admins.md#modify-trustmodeldata-registry) <br/> |
+|Utente non abilitato per SIP  <br/> |Se per l'organizzazione è disponibile un'installazione precedente di Microsoft Office Communications Server o Microsoft Lync Server 2010, è possibile che gli utenti non siano stati eliminati dal server prima di rimuoverne le autorizzazioni. Di conseguenza l'attributo **msRTCSIP-UserEnabled** è ancora impostato su **FALSE** in Servizi di Dominio di Active Directory. <br/> |[Aggiornare le impostazioni utente in Active Directory](troubleshooting-sign-in-errors-for-admins.md#update-user-settings)<br/> |
 
 ### <a name="add-a-firewall-entry-for-msoidsvcexe-to-your-proxy-server"></a>Aggiungere una voce del firewall per msoidsvc.exe al server proxy
 <a name="add-a-firewall"> </a>
 
-Questa procedura è possibile correzione per il messaggio di errore: **indirizzo di accesso non viene trovato**.
+Questa procedura è una possibile soluzione per il messaggio di errore seguente: **Indirizzo di accesso non trovato**.
 
 > [!NOTE]
-> I passaggi seguenti presuppongono che l'utilizzo di Microsoft Forefront Threat Management Gateway (TMG) 2010. Se si dispone di una soluzione gateway web diversa, utilizzare le impostazioni descritte nel passaggio 4 di seguito.
+> Le seguenti operazioni presuppongono l’utilizzo di Microsoft Forefront Threat Management Gateway (TMG) 2010. Se si dispone di una diversa soluzione a gateway web, usare le impostazioni descritte nel passaggio 4.
 
 
-Per creare una voce di applicazione per Msoidsvc.exe in Forefront TMG 2010, procedere come segue:
+Per creare una voce per l'applicazione Msoidsvc.exe in Forefront TMG 2010, eseguire le operazioni seguenti:
 
-1. Nel riquadro sinistro Forefront, fare clic su **rete**.
+1. Nel riquadro sinistro di Forefront fare clic su **Networking**.
 
-2. Fare clic sulla scheda di **rete** . Nella scheda **attività** nel riquadro destro fare clic su **Configura impostazioni di Forefront TMG Client**.
+2. Fare clic sulla scheda **Network**. Nella scheda **Tasks** del riquadro destro fare clic su **Configure Forefront TMG Client Settings**.
 
-3. Nella finestra di dialogo **Impostazioni del Client di Forefront TMG** fare clic su **Nuovo**.
+3. Nella finestra di dialogo **Forefront TMG Client Settings** fare clic su **New**.
 
-4. Nella finestra di dialogo **Impostazione delle voci di applicazione** , configurare le regole seguenti:
+4. Nella finestra di dialogo **Application Entry Setting** configurare le regole seguenti:
 
 |**Applicazione**|**Chiave**|**Valore**|
 |:-----|:-----|:-----|
-|**msoidsvc** <br/> |Disabilitare  <br/> |0  <br/> |
+|**msoidsvc** <br/> |Disabilita  <br/> |0  <br/> |
 |**msoidsvc** <br/> |DisableEx  <br/> |0  <br/> |
 
-Per ulteriori informazioni, vedere l'articolo della Microsoft Knowledge Base 2409256, [che è possibile connettersi a Skype Business online poiché un firewall locale blocca la connessione](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2409256).
+Per informazioni dettagliate, vedere l'articolo della Microsoft Knowledge Base 2409256 [Non è possibile connettersi a Skype for Business online perché un firewall locale blocca la connessione](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2409256).
 
 ### <a name="update-dns-settings"></a>Aggiornare le impostazioni DNS
 <a name="update-dns-service"> </a>
 
-Se l'organizzazione dispone di un dominio personalizzato, questa procedura è possibile correzione per il messaggio di errore: **Server è temporaneamente non disponibile**.
+Se l'organizzazione dispone di un dominio personalizzato, questa procedura è una possibile soluzione per il messaggio di errore seguente: **Server temporaneamente non disponibile**.
 
-- Per informazioni su come aggiungere il seguente record CNAME per il dominio, contattare il registrar nome:
+- Contattare il registrar per informazioni su come aggiungere il record CNAME seguente al dominio:
 
   - **Tipo di record DNS**: CNAME
 
   - **Nome**: sip
 
-  - **Valore/destinazione**: sipdir.online.lync.com
+  - **Valore/Destinazione**: sipdir.online.lync.com
 
-Per ulteriori informazioni, vedere l'articolo della Microsoft Knowledge Base 2566790, [Risoluzione dei problemi Skype per problemi di configurazione di DNS Online Business in Office 365](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2566790).
+Per informazioni dettagliate, vedere l'articolo della Microsoft Knowledge Base 2566790, [Risoluzione dei problemi di Skype for Business online per problemi di configurazione di DNS in Office 365](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2566790).
 
 ### <a name="install-a-third-party-ssl-certificate-on-your-adfs-server"></a>Installare un certificato SSL di terze parti nel server ADFS
 <a name="verify-upn-and"> </a>
 
-Per installare un certificato SSL di terze parti nel server attivo dominio Federation Services (ADFS), eseguire la procedura seguente:
+Per installare un certificato SSL di terze parti nel server Active Domain Federation Services (ADFS), eseguire le operazioni seguenti:
 
-1. Ottenere un certificato SSL da un'autorità di certificazione di terze parti, ad esempio VeriSign o Thawte.
+1. Ottenere un certificato SSL da un'Autorità di certificazione di terze parti come VeriSign o Thawte.
 
-2. Installare il certificato nel server ADFS utilizzando la console di gestione ADFS.
+2. Installare il certificato nel server ADFS con la console di gestione di Active Directory Federation Services.
 
-### <a name="update-security-credentials"></a>Aggiornare le credenziali di protezione
+### <a name="update-security-credentials"></a>Aggiornare le credenziali di sicurezza
 <a name="update-security-credentials"> </a>
 
-Questa procedura è possibile correzione per il messaggio di errore **problema acquisto di un certificato personale richiesto per l'accesso**.
+Questa procedura è una possibile soluzione per il messaggio di errore **Si è verificato un problema durante l'acquisizione di un certificato personale richiesto per eseguire l'accesso**.
 
-Per eliminare i possibili problemi di certificato o credenziali, rinnovare innanzitutto il certificato dell'utente in Gestione certificati di Windows. A tale scopo, eseguire la procedura seguente:
+Per eliminare possibili problemi di certificato o credenziali, rinnovare prima di tutto il certificato dell'utente in Gestione certificati Windows. A tale scopo, eseguire la procedura seguente:
 
-1. Aprire Gestione certificati di Windows. A tale scopo, fare clic su **Start**, scegliere **Esegui**, digitare **certmgr. msc**e quindi fare clic su **OK**.
+1. Aprire Windows Certificate Manager. A questo scopo, fare clic su **Start**, scegliere **Esegui**, digitare **certmgr.msc**, quindi fare clic su **OK**.
 
-2. Fare doppio clic su **personale**e quindi fare doppio clic su **certificati**.
+2. Fare doppio clic su **Personali** e quindi fare doppio clic su **Certificati**.
 
-3. Ordina per la colonna **Rilasciato da** e quindi cercare un certificato emesso da Communications Server.
+3. Ordinare le informazioni in base alla colonna **Emesso da** e quindi cercare un certificato emesso da Communications Server.
 
-4. Destro del mouse sul certificato e quindi fare clic su **Elimina**.
+4. Fare clic con il pulsante destro del mouse sul certificato e quindi scegliere **Elimina**.
 
-Successivamente, se l'utente è in esecuzione Windows 7, rimuovere le proprie credenziali memorizzate in Gestione credenziali di Windows. A tale scopo, eseguire la procedura seguente:
+In seguito, se l'utente esegue Windows 7, rimuovere le credenziali archiviate in Gestione credenziali in Windows Credential Manager. A tale scopo, eseguire la procedura seguente:
 
-1. Fare clic su **Start**, scegliere **Pannello di controllo**e quindi fare clic su **Gestione credenziali**.
+1. Fare clic sul pulsante **Start**, scegliere **Pannello di controllo** e quindi fare clic su **Gestione credenziali**.
 
-2. Individuare il set di credenziali che viene utilizzato per connettersi a Skype Business online.
+2. Individuare il set di credenziali usato per la connessione a Skype for Business online.
 
 3. Espandere il set di credenziali e quindi fare clic su **Rimuovi dall'insieme di credenziali**.
 
-4. Eseguire nuovamente l'accesso e immettere nuovamente le credenziali dell'utente.
+4. Effettuare nuovamente l’accesso e reimmettere le credenziali dell'utente.
 
-Infine, se l'utente di accesso persiste dopo aver aggiornato le proprie credenziali, provare a eseguire l'eliminazione della cartella RSA nel computer dell'utente, poiché è Impossibile impedisca il completamento del processo di autenticazione utente:
+Infine, se l'utente non riesce ancora ad accedere dopo l'aggiornamento delle credenziali, provare a eliminare la cartella RSA nel computer dell'utente, perché potrebbe impedire il completamento del processo di autenticazione dell'utente:
 
-1. Accedere al computer dell'utente utilizzando un account di amministratore.
+1. Accedere al computer dell'utente con un account di amministratore.
 
-2. Se necessario, attivare l'opzione di visualizzazione di cartella **Mostra file nascosti**.
+2. Se necessario, attivare l'opzione di visualizzazione della cartella **Visualizzare i file nascosti**.
 
-3. Digitare il comando seguente nella barra degli indirizzi del File Explorer: **c:\\Documents and Settings\\UserName\\dati delle applicazioni\\Microsoft\\crittografia\\RSA**, dove ***il nome utente*** è il nome di accesso di Windows.
+3. Digitare il percorso seguente nella barra degli indirizzi di Esplora File: **C:\\Documents and Settings\\NomeUtente\\Application Data\\Microsoft\\Crypto\\RSA**, dove***NomeUtente*** è il nome di accesso di Windows.
 
-4. Eliminare qualsiasi cartella che inizia con il nome **S-1-5-21 -** seguita da una stringa di numeri.
+4. Eliminare le eventuali cartelle con un nome che inizia con **S-1-5-21-** seguito da una stringa di numeri.
 
-### <a name="modify-trustmodeldata-registry-keys"></a>Modificare chiavi del Registro di sistema TrustModelData
+### <a name="modify-trustmodeldata-registry-keys"></a>Modificare le chiavi TrustModelData del Registro di sistema
 <a name="modify-trustmodeldata-registry"> </a>
 
-Quando un utente accede per la prima volta, può ricevere una finestra di dialogo che contiene un elemento analogo al seguente: **non possono verificare che il server sia attendibile per l'indirizzo di accesso. Connettersi comunque?** Questa è una funzionalità di sicurezza e non un errore. Tuttavia, è possibile viene impedita la finestra di dialogo utilizzando un oggetto Criteri di gruppo (GPO) per aggiornare i computer degli utenti con il nome di dominio prima di accesso per la prima volta. A tale scopo, eseguire le operazioni seguenti:
+Quando un utente accede per la prima volta, potrebbe comparire una finestra di dialogo contenente il seguente avviso: **Impossibile verificare che il server sia attendibile per l'indirizzo di accesso. Connettersi comunque?** Questa è una funzionalità di sicurezza e non un messaggio di errore. Tuttavia, è possibile impedire la comparsa della finestra di dialogo usando un Oggetto Criteri di gruppo (GPO) per aggiornare il computer degli utenti con il proprio nome di dominio prima di accedere per la prima volta. A tale scopo, effettuare le seguenti operazioni:
 
-- Creare e distribuire un oggetto Criteri di gruppo che aggiunge il Skype per nome di dominio aziendale, ovvero domainName.contoso.com—to, ad esempio, il valore corrente del HKEY_LOCAL_MACHINE\\Software\\criteri\\Microsoft\\Communicator\\ TrustModelData.
+- Creare e distribuire un oggetto Criteri di gruppo che aggiunga il nome di dominio Skype for Business, ad esempio nomeDominio.contoso.com, al valore corrente di HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Communicator\\TrustModelData.
 
 > [!IMPORTANT]
->  È necessario *aggiungere* il nome di dominio per il valore esistente, non semplicemente lo sostituisce.
+>  È necessario *aggiungere* il proprio nome di dominio al valore esistente e non sostituirlo semplicemente.
 
-Per ulteriori informazioni, vedere l'articolo della Microsoft Knowledge Base 2531068, [che Skype per le aziende (Lync) non può verificare che il server sia attendibile per l'indirizzo di accesso](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2531068).
+Per informazioni dettagliate, vedere l'articolo 2531068 della Microsoft Knowledge Base [Skype for Business (Lync) non riesce a verificare che il server sia attendibile per l'indirizzo di accesso](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2531068).
 
-### <a name="update-user-settings-in-active-directory"></a>Aggiornare le impostazioni utente in Active Directory
+### <a name="update-user-settings-in-active-directory"></a>Caricare le impostazioni dell'utente in Active Directory
 <a name="update-user-settings"> </a>
 
-Se l'organizzazione dispone di un'installazione di Microsoft Office Communications Server o Microsoft Lync Server 2010, si potrebbero non essere eliminato gli utenti dal server prima della rimozione delle autorizzazioni. Di conseguenza, l'attributo **msRTCSIP-UserEnabled** ancora è impostato su **FALSE** in servizi di dominio Active Directory.
+Se per l'organizzazione è disponibile un'installazione precedente di Microsoft Office Communications Server o Microsoft Lync Server 2010, è possibile che gli utenti non siano stati eliminati dal server prima di rimuoverne le autorizzazioni. Di conseguenza l'attributo **msRTCSIP-UserEnabled** è ancora impostato su **FALSE** in Servizi di Dominio di Active Directory.
 
-Per risolvere questo problema, eseguire la procedura seguente:
+Per risolvere il problema, eseguire le operazioni seguenti:
 
-1. Aggiornare l'attributo **msRTCSIP-UserEnabled** per tutti gli utenti interessati su **TRUE**.
+1. Aggiornare l'attributo **msRTCSIP-UserEnabled** per tutti gli utenti interessati, impostandolo su **TRUE**.
 
-2. Eseguire di nuovo lo strumento di sincronizzazione Directory di Microsoft Online Services (DirSync). Per ulteriori informazioni, vedere [Directory AIntegrate locale con Azure Active Directory](https://technet.microsoft.com/en-us/library/hh967642.aspx).
+2. Eseguire nuovamente lo Strumento di sincronizzazione della directory dei Microsoft Online Services. Per informazioni dettagliate, vedere [AIntegrate locale directory con Azure Active Directory](https://technet.microsoft.com/it-IT/library/hh967642.aspx).
 
-Per risolvere i problemi Skype per errori di accesso Business Online, avviare eliminando le cause più comuni di accesso difficoltà. Se necessario, è possibile seguire quindi risoluzione specifica passaggi in base al tipo di errore. Se l'utente di accesso persiste, raccogliere le informazioni aggiuntive e quindi cercare informazioni aggiuntive.
-## <a name="use-the-microsoft-support-troubleshooting-guide"></a>Utilizzare il supporto di Microsoft risoluzione dei problemi di Guida
+Per risolvere i problemi di accesso a Skype for Business online problemi, è bene iniziare eliminando le cause più comuni dei problemi di accesso. Se necessario, è possibile seguire una procedura di risoluzione specifica in base al tipo di errore. Se non è ancora possibile accedere, raccogliere nuove informazioni e chiedere ulteriore assistenza.
+## <a name="use-the-microsoft-support-troubleshooting-guide"></a>Usare la guida alla risoluzione dei problemi del supporto tecnico Microsoft
 <a name="toc325626447"> </a>
 
-Se si è ancora non in grado di risolvere i problemi di accesso dell'utente, esaminare i suggerimenti nell'articolo della Microsoft Knowledge Base 2541980, [come per la risoluzione dei problemi di accesso in Skype Business online](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2541980).
+Se non si riesce ancora a risolvere i problemi di accesso dell'utente, esaminare i suggerimenti descritti nell'articolo 2541980 della Microsoft Knowledge Base [Come risolvere i problemi di autenticazione e connettività in Skype for Business online](https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2541980).
 
-## <a name="collect-more-information-and-seek-additional-help"></a>Raccogliere ulteriori informazioni e seek avere ulteriore assistenza
+## <a name="collect-more-information-and-seek-additional-help"></a>Raccogliere ulteriori informazioni e richiedere assistenza
 <a name="collect-more-information"> </a>
 
-Se si aver effettuato le istruzioni precedenti e ancora non è in grado di risolvere i problemi di accesso, è necessario raccogliere le informazioni aggiuntive e contattare il supporto tecnico. A tale scopo, eseguire la procedura seguente:
+Se dopo aver seguito le istruzioni nelle sezioni precedenti non è ancora possibile risolvere i problemi di accesso, è necessario raccogliere ulteriori informazioni e contattare il supporto tecnico.  A tale scopo, eseguire la procedura seguente:
 
-1. Ottenere il file di registro e i dettagli del registro eventi di Windows dal computer dell'utente. Per istruzioni dettagliate, vedere l'argomento della Guida dell'utente finale [attivare i log degli errori in Lync](https://support.office.com/article/eaf6602b-95e0-4c27-869f-36017475806c).
+1. Ottenere i file di log e i dettagli registro eventi di Windows dal computer dell'utente. Per istruzioni dettagliate, vedere l'argomento della Guida dell’utente finale [Attivare a registrazione eventi in Lync](https://support.office.com/article/eaf6602b-95e0-4c27-869f-36017475806c).
 
-2. Inviare il file di registro e informazioni dettagliate sull'errore per il supporto tecnico Microsoft.
+2. Inviare al supporto tecnico Microsoft i file di registrazione e le informazioni dettagliate sull'errore.
 
-Potrebbe essere necessario fornire ulteriori informazioni di diagnostica per l'installazione di Microsoft Online Services diagnostica e Toolkit di supporto Logging (MOSDAL) nel computer dell'utente interessato. Per ulteriori informazioni, vedere [utilizzo Toolkit di supporto](https://support.office.com/article/ddf1f52f-24a1-4675-abe0-141052c88b72).
+Potrebbero essere richieste ulteriori informazioni diagnostiche installando il Toolkit di supporto Microsoft Online Services Diagnostics and Logging (MOSDAL) nel computer dell'utente interessato.  Per ulteriori informazioni, vedere [Uso del Toolkit di supporto MOSDAL](https://support.office.com/article/ddf1f52f-24a1-4675-abe0-141052c88b72).
 
-Per risolvere i problemi Skype per errori di accesso Business Online, avviare eliminando le cause più comuni di accesso difficoltà. Se necessario, è possibile seguire quindi risoluzione specifica passaggi in base al tipo di errore. Se l'utente di accesso persiste, raccogliere le informazioni aggiuntive e quindi cercare informazioni aggiuntive.
+Per risolvere i problemi di accesso a Skype for Business online problemi, è bene iniziare eliminando le cause più comuni dei problemi di accesso. Se necessario, è possibile seguire una procedura di risoluzione specifica in base al tipo di errore. Se non è ancora possibile accedere, raccogliere nuove informazioni e chiedere ulteriore assistenza.
 
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 
