@@ -1,7 +1,7 @@
 ---
 title: Creare una coda di chiamate del sistema telefonico
-author: CarolynRowe
-ms.author: crowe
+author: Jambirk
+ms.author: jambirk
 manager: serdars
 ms.reviewer: phans, wasseemh
 ms.topic: article
@@ -21,12 +21,12 @@ f1keywords: ms.teamsadmincenter.callqueues.overview
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare Sistema telefonico per le code di chiamata di Office 365 (Cloud PBX) per fornire un messaggio di saluto, una musica di attesa e per reindirizzare le chiamate ad agenti nelle liste di distribuzione e gruppi di protezione dell'organizzazione. È inoltre possibile impostare la dimensione massima della coda, il timeout e le opzioni di gestione delle chiamate. "
-ms.openlocfilehash: 204959e68fa398300352e477fc7e78ea870aa359
-ms.sourcegitcommit: 8e62025d630c511ffb0361b9643d46c762188102
+ms.openlocfilehash: c76f7e00c8c12e79c0dc333e05d4ccb0ca75266a
+ms.sourcegitcommit: f9a9a7e4b7f6c821a3372f7dcb966a8a6d458752
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30664631"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30952352"
 ---
 # <a name="create-a-phone-system-call-queue"></a>Creare una coda di chiamate del sistema telefonico
 
@@ -173,7 +173,7 @@ Before you can create and set up your call queues, you will need to get or trans
 ![Numero 2](../images/sfbcallout2.png)<br/><br/>**Quando viene raggiunto il numero massimo di chiamate** Quando la coda di chiamate raggiunge la dimensione massima (impostata utilizzando l'impostazione **massimo chiama nella coda** ), è possibile scegliere cosa accade a nuove chiamate in arrivo.
 * **Disconnetti con segnale di occupato** La chiamata verrà disconnessa.
 * **Inoltrare la chiamata** Quando si sceglie questo, si disporrà di queste opzioni:
-  * **Person in your company** An Online user with a **Phone System** license and be enabled for Enterprise Voice or have a Calling Plan. You can set it up so the person calling in can be sent to voicemail. To do this, select a **Person in your company** and set this person to have their calls forwarded directly to voicemail. <br/> <br/>Per ulteriori informazioni sulle licenze necessarie per la segreteria telefonica, consulta [Configurare i messaggi vocali in Sistema telefonico](/microsoftteams/set-up-phone-system-voicemail). 
+  * **Person in your company** An Online user with a **Phone System** license and be enabled for Enterprise Voice or have a Calling Plan. You can set it up so the person calling in can be sent to voicemail. To do this, select a **Person in your company** and set this person to have their calls forwarded directly to voicemail. <br/> <br/>Per ulteriori informazioni sulle licenze necessarie per la segreteria telefonica, vedere [configurazione di segreteria telefonica Cloud](/microsoftteams/set-up-phone-system-voicemail). 
 
     > [!Note]
     > Gli utenti ospitati in locale con Lync Server 2010 non sono supportati.<br/>
@@ -187,7 +187,7 @@ Before you can create and set up your call queues, you will need to get or trans
 ![Numero 4](../images/sfbcallout4.png)<br/><br/>**Quando una chiamata va in timeout** Quando la chiamata raggiunge il limite impostato nell'impostazione **Quanto tempo può aspettare una chiamata in coda**, puoi scegliere cosa succede alla chiamata:
 * **Disconnetti** La chiamata verrà disconnessa.
 * **Inoltrare la chiamata** Quando si sceglie questo, si disporrà di queste opzioni:
-  * **Person in your company** An Online user with a **Phone System** license and be enabled for Enterprise Voice or have Calling Plans. You can set it up so the person calling in can be sent to voicemail. To do this, select a **Person in your company** and set this person to have their calls forwarded directly to voicemail. </br><br/>  Per ulteriori informazioni sulle licenze necessarie per la segreteria telefonica, consulta [Configurare i messaggi vocali in Sistema telefonico](/microsoftteams/set-up-phone-system-voicemail). 
+  * **Person in your company** An Online user with a **Phone System** license and be enabled for Enterprise Voice or have Calling Plans. You can set it up so the person calling in can be sent to voicemail. To do this, select a **Person in your company** and set this person to have their calls forwarded directly to voicemail. </br><br/>  Per ulteriori informazioni sulle licenze necessarie per la segreteria telefonica, vedere [configurazione di segreteria telefonica Cloud](/microsoftteams/set-up-phone-system-voicemail). 
 
     > [!Note]
     > Gli utenti ospitati in locale con Lync Server 2010 non sono supportati.<br/>
