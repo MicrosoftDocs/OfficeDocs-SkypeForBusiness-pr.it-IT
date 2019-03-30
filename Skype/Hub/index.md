@@ -140,8 +140,8 @@ description: Skype per le aziende
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Skype Room Systems v2</h3>
-                                                    <p>Scopri come pianificare, implementare e gestire Skype Room Systems v2.</p>
+                                                    <h3>Sale team di Microsoft</h3>
+                                                    <p>Informazioni su come pianificare, distribuire e gestire le chat team di Microsoft.</p>
                                                 </div>
                                             </div>
                                         </div>
