@@ -1,5 +1,5 @@
 ---
-title: Assegnare o modificare il percorso di emergenza per un utente
+title: Assegnare o modificare la posizione di emergenza per un utente
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -20,15 +20,15 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: 'Learn how to change the emergency location for your users. With an unlimited number of locations, you can change emergency locations as employees move floors or buildings. '
-ms.openlocfilehash: c55f8f51ee7d94ad3b9e0c91c0bb67c319a28c46
-ms.sourcegitcommit: 60e8365281ec6d780f1b2439bedef0bd71f002d8
+description: 'Informazioni su come modificare la posizione di emergenza per gli utenti. Con un numero illimitato di posizioni, è possibile modificare le posizioni di emergenza quando i dipendenti si spostano su altri piani o edifici. '
+ms.openlocfilehash: 79ba52d65dc87b36397d4d0a8df121ac1fec8262
+ms.sourcegitcommit: 58fec9aebd80029e1f1e71376efe222f9abf707e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30046497"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31516943"
 ---
-# <a name="assign-or-change-the-emergency-location-for-a-user"></a>Assegnare o modificare il percorso di emergenza per un utente
+# <a name="assign-or-change-the-emergency-location-for-a-user"></a>Assegnare o modificare la posizione di emergenza per un utente
 
 Ogni numero di telefono attivo deve avere un indirizzo di emergenza associato quando si assegna il numero di telefono a un utente. (Viene associato all'indirizzo quando si ricevono un numero di telefono in Office 365 o quando si trasferisce un numero di telefono). Quando si associa il numero a un indirizzo di emergenza, è inoltre possibile aggiungere un percorso di emergenza per fornire una posizione più preciso all'interno di una posizione fisica. La posizione per gli interventi di emergenza può corrispondere al piano, all'ala dell'edificio o al numero dell'ufficio in cui si trova l'utente. È possibile avere un numero illimitato di posizioni per un determinato indirizzo di emergenza ed è possibile modificare la posizione di emergenza se l'utente passa a un altro ufficio o edificio, ad esempio, se l'utente si sposta dal 34° al 35° piano.
   
@@ -60,9 +60,12 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
     Se si desidera aggiungere un nuovo percorso di emergenza che verrà visualizzato nell'elenco, vedere [aggiungere, modificare o rimuovere un percorso di emergenza per l'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md).
     
 ## <a name="related-topics"></a>Argomenti correlati
+
+[Assegnare una risposta all'emergenza percorsi tramite powershell](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsOnlineVoiceUser.md)
+
 [Aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md)
 
-[Aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza dell'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md)
+[Aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md)
 
 [Cos'è la convalida dell'indirizzo?](what-is-address-validation.md)
 
