@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Migrazione servizio MMS delle riunioni è un servizio che viene eseguito in background e vengono aggiornati automaticamente Skype per le riunioni aziendali e Teams Microsoft per gli utenti. MMS è progettato per eliminare la necessità di agli utenti di eseguire lo strumento di migrazione di riunioni per aggiornare i Skype per le riunioni aziendali e Teams Microsoft.
-ms.openlocfilehash: e700725fc95957647bea8fe44d6a73a34bd16ab8
-ms.sourcegitcommit: 2d79898281258e123a86d9a0a2bc1211ee6b039e
+ms.openlocfilehash: 90953f1352f54a8411513a78ccfda8bfb5356883
+ms.sourcegitcommit: 004d9475aa704779f8f70adeaf2db9b36c6828cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28019577"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31836857"
 ---
 # <a name="using-the-meeting-migration-service-mms"></a>Utilizzare il servizio di migrazione Meeting MMS)
 
@@ -41,7 +41,7 @@ La riunione migrazione servizio MMS è servizio per l'aggiornamento di riunioni 
 Per impostazione predefinita, MMS viene attivata automaticamente in ognuno di questi casi, anche se gli amministratori possono disabilitare a livello di tenant. Inoltre, gli amministratori è possono utilizzare un cmdlet di PowerShell attivare manualmente la migrazione di riunioni per un utente specificato.
 
 > [!NOTE]
-> La possibilità di convertire Skype per le riunioni Business alle riunioni di team e la possibilità di aggiornare riunioni team esistenti per modificare le impostazioni di audioconferenza è attualmente limitato ai clienti di scegliere solo.
+> La possibilità di convertire Skype per le riunioni Business alle riunioni di team e la possibilità di aggiornare riunioni team esistenti per modificare le impostazioni di audioconferenza è attualmente limitato ai clienti di scegliere solo. Microsoft prevede che rendere disponibile questa funzionalità per tutti i clienti rimasta in maggio 2019.
 
 **Limitazioni**: la riunione non è possibile utilizzare il servizio di migrazione se nelle situazioni seguenti:
 
@@ -113,7 +113,7 @@ Non tutte le modifiche alle impostazioni di conferenza audio di un utente attiva
 ### <a name="updating-meetings-when-assigning-teamsupgradepolicy"></a>Aggiornamento delle riunioni durante l'assegnazione TeamsUpgradePolicy
 
 > [!NOTE]
-> In questa sezione viene descritta funzionalità che è attualmente disponibile per i clienti di scegliere solo.
+> In questa sezione viene descritta funzionalità che è attualmente disponibile per i clienti di scegliere solo. Microsoft prevede che rendere disponibile questa funzionalità per tutti i clienti rimasta in maggio 2019.
 
 Per impostazione predefinita, la migrazione delle riunioni verrà automaticamente attivata quando un utente viene concesso a un'istanza di `TeamsUpgradePolicy` con `mode=TeamsOnly` o `mode= SfBWithTeamsCollabAndMeetings`. Se non si desidera eseguire la migrazione di riunioni quando è necessario concedere una di queste modalità, quindi specificare `MigrateMeetingsToTeams $false` in `Grant-CsTeamsUpgradePolicy`.
 
