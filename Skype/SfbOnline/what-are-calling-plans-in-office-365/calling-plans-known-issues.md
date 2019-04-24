@@ -1,5 +1,5 @@
 ---
-title: Problemi noti nei Piani per chiamate
+title: Problemi noti relativi ai piani di chiamata
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,17 +19,17 @@ ms.custom:
 - Calling Plans
 description: 'Informazioni su problemi noti di piano di chiamata per Office 365 (tramite la chiamata PSTN) e operazioni su di essi. '
 ms.openlocfilehash: 01a49749f472b6a3e591295cff7184dc26fd564a
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32233226"
 ---
-# <a name="calling-plans-known-issues"></a>Problemi noti nei Piani per chiamate
+# <a name="calling-plans-known-issues"></a>Problemi noti relativi ai piani di chiamata
 
 Piani di chiamata in Office 365 sono una nuova funzionalità disponibili in Skype Business online. Di seguito sono riportati i problemi correnti che vengono registrati e analizzare attivamente. Verrà risolto potenzialmente quando la caratteristica viene aggiornata in futuro build in Office 365 e Skype Business online.
   
-## <a name="calling-plans-known-issues"></a>Problemi noti nei Piani per chiamate
+## <a name="calling-plans-known-issues"></a>Problemi noti relativi ai piani di chiamata
 
 |**Problemi noti**|**Commenti**|
 |:-----|:-----|

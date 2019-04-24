@@ -21,11 +21,11 @@ ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come assegnare un ID conferenza per un utente in Skype for Business online e quale devono essere i parametri ID conferenza. '
 ms.openlocfilehash: eb7d42fa88c54b917e89eb97ce9f52bd03af4935
-ms.sourcegitcommit: 3d3a296f225ecbbee0b4cea67664ad7ab31ed1c2
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30535960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32229332"
 ---
 # <a name="view-and-reset-a-conference-id-assigned-to-a-user-in-skype-for-business-online"></a>Visualizzare e reimpostare un ID conferenza assegnato a un utente in Skype for Business online
 
@@ -51,7 +51,7 @@ An email will be sent to the user with the conference ID and the default audio c
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
 
 3. Nell'**interfaccia di amministrazione di Skype for Business**> **Audioconferenze** > **Utenti**, seleziona l'utente che ha bisogno dell'ID conferenza.
 
@@ -79,7 +79,7 @@ You can use Windows PowerShell to view the conference ID for a user. To do so, r
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
-2. Passa all'**Interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
 
 3. In **Skype per Business admin center**> **audioconferenze** > **gli utenti**, nel riquadro azioni in **ID conferenza**, fare clic su **Reimposta**.
 
@@ -121,7 +121,7 @@ You can reset the conference ID for a user by using the Windows PowerShell. To d
 
   - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
 
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 
 [Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
 

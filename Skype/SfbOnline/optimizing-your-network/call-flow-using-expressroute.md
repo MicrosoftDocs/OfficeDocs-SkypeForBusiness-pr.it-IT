@@ -20,11 +20,11 @@ ms.custom:
 - Optimization
 description: Questo articolo illustra i principi di base del flusso delle chiamate per Skype for Business online ed ExpressRoute, e fornisce alcuni esempi dettagliati di flussi delle chiamate per una maggiore comprensione e per eseguire una corretta programmazione.
 ms.openlocfilehash: 2406badc671fec8ede36039ebf230115a5920e97
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23861078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32213024"
 ---
 # <a name="call-flow-using-expressroute"></a>Flusso delle chiamate con ExpressRoute
 
@@ -231,7 +231,7 @@ Gli utenti che effettuano la connessione a Cloud Connector Edition sono tutti os
 |Chiamata PSTN  <br/> |Utente online sulla tua rete che utilizza Cloud Connector Edition.  <br/> |locale  <br/> |locale  <br/> |[Chiamata PSTN utilizzando Skype for Business Cloud Connector Edition](call-flow-using-expressroute.md#bk_Figure6) <br/> ||
 |Chiamata PSTN  <br/> |Utente online che utilizza Internet con Cloud Connector Edition.  <br/> |Internet  <br/> |Internet  <br/> |Combinazione di [server perimetrali locali con Office 365 ospitati conferenze](call-flow-using-expressroute.md#bk_Figure5) e [PSTN di chiamata tramite Skype per Business Cloud connettore Edition](call-flow-using-expressroute.md#bk_Figure6).  <br/> |Gli utenti Internet effettueranno la connessione attraverso il server perimetrale incluso in Cloud Connector, mentre Cloud Connector effettuerà la connessione alla rete PSTN.  <br/> |
 
-## <a name="related-topics"></a>See also
+## <a name="related-topics"></a>Argomenti correlati
 
 [Documentazione ExpressRoute](https://go.microsoft.com/fwlink/?LinkId=690285)
 

@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono per utenti di Skype for Business in modo che le aziende e i clienti esterni li possano chiamare.
 ms.openlocfilehash: 0e354956d1077b2f81de7b889d8085f05db038c4
-ms.sourcegitcommit: 60e8365281ec6d780f1b2439bedef0bd71f002d8
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30047749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32235693"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user"></a>Assegnare, modificare o rimuovere il numero di telefono di un utente
 

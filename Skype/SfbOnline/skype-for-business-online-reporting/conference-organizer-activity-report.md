@@ -20,15 +20,15 @@ ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Conference Organized Activity report, and how to interpret and customize it. '
 ms.openlocfilehash: 7f70da0423257df4a02207aaaa1888b279404706
-ms.sourcegitcommit: d12a9f2d10093e24d4af54ce6044b512e7e3787e
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32245504"
 ---
 # <a name="conference-organizer-activity-report"></a>Report attività organizzatore di conferenze
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella propria organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi utilizzare il report **attività organizzatore di conferenze in Skype for Business** per vedere quanto i tuoi utenti utilizzano messaggistica istantanea, audio, video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft nelle loro conferenze. 
+[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi utilizzare il report **attività organizzatore di conferenze in Skype for Business** per vedere quanto i tuoi utenti utilizzano messaggistica istantanea, audio, video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft nelle loro conferenze. 
 
 Consultare la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per ulteriori informazioni.
   

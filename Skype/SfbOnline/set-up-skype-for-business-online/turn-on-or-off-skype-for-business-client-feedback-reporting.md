@@ -19,11 +19,11 @@ ms.custom:
 - Setup
 description: È possibile abilitare il Skype agli utenti aziendali di utilizzare Skype incorporata per strumento di Business app commenti e suggerimenti per consentire agli utenti di segnalare problemi e inviare commenti e suggerimenti direttamente a Microsoft sull'esperienza.
 ms.openlocfilehash: f803c1fe88de564f8fb4870446ef6d1d1058a841
-ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30891432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32226672"
 ---
 # <a name="turn-on-or-off-skype-for-business-client-feedback-reporting"></a>Attivare o disattivare i report di feedback client di Skype for Business
 
@@ -96,7 +96,7 @@ Per attivare i commenti e suggerimenti creazione di report per gli utenti dell'o
   - [Usare Windows PowerShell per svolgere comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
 
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

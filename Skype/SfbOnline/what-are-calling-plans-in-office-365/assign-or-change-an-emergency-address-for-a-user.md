@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 description: Informazioni su come configurare un numero e un indirizzo di emergenza per ogni utente che può essere utilizzato con il telefono di rete pubblica (PSTN).
 ms.openlocfilehash: 4778009ddcd004f37c5ed0f0566d64dae6648997
-ms.sourcegitcommit: 31827526894ffb75d64fcb0a7c76ee874ad3c269
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29753437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32233253"
 ---
 # <a name="assign-or-change-an-emergency-address-for-a-user"></a>Assegnare o modificare l'indirizzo per gli interventi di emergenza di un utente
 
@@ -45,7 +45,7 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
     > [!IMPORTANT]
     > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
     
-4. Nella pagina **Utenti voce**, individua e seleziona l'utente a cui desideri cambiare l'indirizzo di emergenza.
+4. Nella pagina **Utenti voce**, individua e seleziona l'utente a cui desideri modificare l'indirizzo di emergenza.
     
 5. Nel riquadro Azioni, in **Posizione per gli interventi di emergenza**, fai clic su **Modifica**.
     
@@ -60,9 +60,9 @@ Per informazioni su come ottenere Piani di chiamata in Office 365 e il relativo 
     
 ## <a name="related-topics"></a>Argomenti correlati
 ## <a name="related-topics"></a>Argomenti correlati
-[Aggiungere, modificare o rimuovere un indirizzo di emergenza dell'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md)
+[Aggiungere, modificare o rimuovere un indirizzo di emergenza per l'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md)
 
-[Aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza dell'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md)
+[Aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md)
 
 [Cos'è la convalida dell'indirizzo?](what-is-address-validation.md)
 
