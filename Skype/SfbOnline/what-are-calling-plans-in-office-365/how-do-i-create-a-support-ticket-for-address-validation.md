@@ -21,11 +21,11 @@ ms.custom:
 - Calling Plans
 description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
 ms.openlocfilehash: bbafd82e985cb3aabec99e73d2d13f7068a7c59d
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25374350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32227855"
 ---
 # <a name="how-do-i-create-a-support-ticket-for-address-validation"></a>Come faccio a creare un ticket di supporto per la convalida dell'indirizzo?
 

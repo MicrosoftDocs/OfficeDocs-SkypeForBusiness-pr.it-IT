@@ -19,20 +19,20 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: Learn what you need and how meeting organizers can call out to other people using Skype for Business.
+description: Informazioni su requisiti e sul modo in cui gli organizzatori delle riunioni possono effettua una chiamata a utenti che utilizzano Skype for Business.
 ms.openlocfilehash: 49130a14391e014d1e7aea21c62abaf2385296d8
-ms.sourcegitcommit: 0458232441d3aed8dd578f41a13078aa379c9b00
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27788948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32229536"
 ---
 # <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamate in uscita da Skype per le riunioni aziendali in modo che altri utenti possono accedervi
 
 > [!NOTE]
 > Se cerchi informazioni sulle chiamate in uscita da una riunione di Teams, consulta [Chiamate in uscita da una riunione di Teams in modo che altri utenti possano accedervi](/MicrosoftTeams/dialing-out-from-a-teams-meeting-so-other-people-can-join-it).
 
-Organizzatore della riunione, è possibile comporre disattivato utilizzando Skype per applicazioni aziendali per consentire di partecipazione alle altre persone alla riunione stessa utilizzando il proprio telefono. Sebbene non sia obbligatorio, quando effettui una chiamata a un altro utente, è consigliabile comporre il numero completo, incluso il codice del paese o dell'area geografica. Per attivare la chiamata in uscita:
+As the meeting organizer, you can dial out using the Skype for Business app to let other people join the same meeting using their phone. Although it's not required, when you are dialing out to someone, it's recommended that you dial the full number, including the country/region code. To get dial-out to work:
   
 - È possibile chiamata in uscita solo se si partecipa a una riunione con un Skype per applicazioni aziendali.
     
@@ -59,7 +59,7 @@ Dial-out is only available to some countries/regions. Per un elenco completo, ve
 
 [Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
     
-- [Licenze per i componenti aggiuntivi Skype for Business](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
+- [Licenze per i componenti aggiuntivi di Skype for Business](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
     
 ## <a name="related-topics"></a>Argomenti correlati
 
