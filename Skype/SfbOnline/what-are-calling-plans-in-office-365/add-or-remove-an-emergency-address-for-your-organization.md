@@ -1,5 +1,5 @@
 ---
-title: Aggiungere, modificare o rimuovere un indirizzo di emergenza dell'organizzazione
+title: Aggiungere, modificare o rimuovere un indirizzo di emergenza per l'organizzazione
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -20,19 +20,19 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: 'Learn how to add an emergency address to your Skype for Business account. '
+description: 'Istruzioni su come aggiungere o rimuovere un indirizzo di emergenza per il tuo account di Skype for Business. '
 ms.openlocfilehash: b3fab8d41c1b6f59961feee09f5eae888d32b362
-ms.sourcegitcommit: 60e8365281ec6d780f1b2439bedef0bd71f002d8
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30047739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32170916"
 ---
-# <a name="add-change-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere, modificare o rimuovere un indirizzo di emergenza dell'organizzazione
+# <a name="add-change-or-remove-an-emergency-address-for-your-organization"></a>Aggiungere, modificare o rimuovere un indirizzo di emergenza per l'organizzazione
 
 Un indirizzo di emergenza deve essere associato a un numero di telefono, ma in questo caso può variare tra i paesi. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito, è necessario associare un indirizzo di emergenza per il numero di telefono quando si desidera ottenere i numeri di telefono da Office 365 o il trasferimento di numeri di telefono da provider di servizi corrente.
   
-Indipendentemente dal Paese/area geografica in cui ti trovi, è possibile aggiungere una o più posizioni ad un indirizzo di emergenza oppure rimuovere l'indirizzo di emergenza. A seconda del numero di posizioni fisiche all'interno dell'organizzazione, è possibile creare tali per edifici, piani e uffici. Vedere [quali sono posizioni di emergenza, indirizzi e il routing delle chiamate?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing) per ulteriori informazioni.
+No matter which country/region you are in, it's possible to add a location or locations to an emergency address or remove an emergency address. Depending on the number of physical locations in your organization, you can create them for buildings, floors, and offices. See [What are emergency locations, addresses, and call routing?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing) for some details.
   
 Per informazioni su come ottenere Piani di chiamata e il relativo costo, consulta [Licenze per componenti aggiuntivi per Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
