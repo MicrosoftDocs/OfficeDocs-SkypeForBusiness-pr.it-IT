@@ -20,11 +20,11 @@ ms.custom:
 - LIL_Placement
 description: Scaricare, installare e quindi utilizzare Windows PowerShell 5.1 per creare una sessione di remote PowerShell che si connette a Skype Business online.
 ms.openlocfilehash: 63f4924a30bfc910679f23a617cc5252ecc5b6aa
-ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32198069"
 ---
 # <a name="download-and-install-windows-powershell-51"></a>Scaricare e installare Windows PowerShell 5.1
 

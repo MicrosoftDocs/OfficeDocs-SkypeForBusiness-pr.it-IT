@@ -22,11 +22,11 @@ ms.custom:
 - Audio Conferencing
 description: 'Vedi come provare o acquistare le licenze di Audioconferenza (conferenze PSTN) per Office 365 per configurare le conferenze telefoniche a cui gli utenti possono connettersi. '
 ms.openlocfilehash: deb26d47c2b291e83c3ed32e4175bf7a82035c67
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25370854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32203328"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365-for-skype-for-business-online"></a>Provare o acquistare Audioconferenza in Office 365 per Skype for Business Online
 

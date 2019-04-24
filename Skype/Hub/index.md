@@ -1,11 +1,17 @@
---- 
+---
 layout: HubPage
 hide_bc: true
 title: Skype per le aziende
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
 description: Skype per le aziende
+ms.openlocfilehash: a08b6ecdaf09ade237332e08a23ddbfeb9c5eb64
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32195016"
 ---
 <div id="main" class="v2">
     <div class="container">

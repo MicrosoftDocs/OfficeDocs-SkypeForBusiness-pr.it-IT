@@ -20,10 +20,10 @@ ms.custom:
 - Legal
 description: "Si tratta di contenuto che deve essere pubblicato in modo da soddisfare i requisiti per l'accesso facilitato, conformità e normativi per Skype Business online in Francia. "
 ms.openlocfilehash: 1681bedf95938a9eddc5f9e65862855a1591fd0c
-ms.sourcegitcommit: 2a6e499165424fe2d189ad140951e222c8ba9c81
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23865554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32199599"
 ---
 # <a name="legal-and-regulatory"></a>Aspetti legali e normativi

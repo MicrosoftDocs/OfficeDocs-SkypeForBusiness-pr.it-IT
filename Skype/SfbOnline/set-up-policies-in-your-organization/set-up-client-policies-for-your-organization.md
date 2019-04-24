@@ -19,11 +19,11 @@ ms.custom:
 - Setup
 description: I criteri client aiutano a determinare le funzioni di Skype for Business online messe a disposizione degli utenti; per esempio, si potrebbe dare ad alcuni utenti il diritto di trasferire i file negando lo stesso diritto ad altri utenti.
 ms.openlocfilehash: 33623e43ed6e7db6edd8af14e042ae798c9c8cd1
-ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30878768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32237499"
 ---
 # <a name="set-up-client-policies-for-your-organization"></a>Impostazione dei criteri client per la propria organizzazione
 

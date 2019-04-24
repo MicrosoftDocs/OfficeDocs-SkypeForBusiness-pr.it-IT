@@ -21,11 +21,11 @@ ms.custom:
 - Calling Plans
 description: "Scopri cos'è la convalida dell'indirizzo, perché è importante e che rapporto ha con gli indirizzi e servizi di emergenza. "
 ms.openlocfilehash: 4ae8ab25f83eb97929706881f7f757ee3541284d
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32229636"
 ---
 # <a name="what-is-address-validation"></a>Cos'è la convalida dell'indirizzo?
 

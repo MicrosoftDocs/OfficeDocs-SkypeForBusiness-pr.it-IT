@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
 ms.openlocfilehash: 8cb2e7b9f901ce4ab1db13e2869d002c62529537
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25371653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32229566"
 ---
 # <a name="why-has-number-activation-failed"></a>Perché non riuscita numero attivazione?
 La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Se per qualche motivo un numero di telefono non è attivato per la convalida dell'indirizzo, è necessario creare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
