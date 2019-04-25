@@ -19,17 +19,17 @@ ms.custom:
 - SMB
 description: Informazioni sulla funzionalità di trasmissione riunione Skype di Skype Business online che consente inoltre di pianificazione, prodotti e trasmissione riunioni o eventi ai gruppi di destinatari in linea di grandi dimensioni fino a 10.000 partecipanti.
 ms.openlocfilehash: b29ec51ddcb672f6727f7bc43958872962245ebb
-ms.sourcegitcommit: 0458232441d3aed8dd578f41a13078aa379c9b00
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27788976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32226163"
 ---
 # <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
 Dopo aver [Abilitare trasmissione riunione Skype](enable-skype-meeting-broadcast.md) trasmissione riunione Skype, è necessario configurare la rete. Eseguire questo passaggio se si desidera mantenere webinar e altre trasmissioni per gli utenti all'esterno dell'azienda.
 
-Se non hai dimestichezza con la configurazione del firewall, può essere utile assumere un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) che se ne occupi al posto tuo.
+Se non si è pratici di configurazione del firewall, potrebbe essere necessario rivolgersi un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio è.
 
 Per ignorare questo passaggio e aggiungere invece business diversa per la federazione in modo che possono essere invitati alle trasmissioni, seguire i passaggi descritti in [Consenti agli utenti di contatti esterni Skype per gli utenti aziendali](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md).
 

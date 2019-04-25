@@ -21,11 +21,11 @@ ms.custom:
 - LIL_Placement
 description: 'Informazioni sulle funzionalità e le licenze di componente aggiuntivo per GOV, EDU e organizzazione no profit piani. '
 ms.openlocfilehash: e1c19e7db6f4167fa0992101c7070dc4661665b0
-ms.sourcegitcommit: 27f1ecb730355dcfac2f4be3f5642f383d5532ad
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30120374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32226052"
 ---
 # <a name="gov-edu-and-non-profit-organizations"></a>GOV, EDU e organizzazioni senza scopo di lucro
 

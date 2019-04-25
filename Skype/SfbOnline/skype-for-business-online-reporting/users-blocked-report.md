@@ -19,11 +19,11 @@ ms.custom:
 - Reporting
 description: "La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate sull'attività, tra cui utilizzo PSTN all'interno dell'organizzazione. "
 ms.openlocfilehash: 2cd12c19911df796ae33bd841e8fd15b987cf366
-ms.sourcegitcommit: d12a9f2d10093e24d4af54ce6044b512e7e3787e
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30453957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32239840"
 ---
 # <a name="users-blocked-report"></a>Report utenti bloccati
 

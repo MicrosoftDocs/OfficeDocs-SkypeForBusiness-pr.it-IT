@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 description: 'Informazioni su come procedere se il gestore non è elencato nel Skype per le aziende. '
 ms.openlocfilehash: 638d222231ca0f092684ebde2fab74cc034af70c
-ms.sourcegitcommit: dd37c12a0312270955755ab2826adcfbae813790
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25372831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32229653"
 ---
 # <a name="what-if-my-phone-carrier-isnt-listed-as-the-source-carrier"></a>Se il gestore telefonico non è elencato come il gestore telefonico origine?
 

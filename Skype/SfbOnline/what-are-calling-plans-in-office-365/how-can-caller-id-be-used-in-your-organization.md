@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 description: L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
 ms.openlocfilehash: df6c7c053b5dce4ffb1d121a1adbf829efda9943
-ms.sourcegitcommit: 60e8365281ec6d780f1b2439bedef0bd71f002d8
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30047898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32229888"
 ---
 # <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nella tua organizzazione
 
@@ -73,8 +73,8 @@ Gli utenti finali possono impostare ID chiamante **anonima** utilizzando la sche
 |A portata di clic  <br/> |Current Channel rilasciato il 6 dicembre 2016 - versione 1611 (Build 7571.2072)  <br/> |Sì  <br/> |
 |A portata di clic  <br/> |Prima versione per Deferred Channel rilasciata il 22 febbraio 2017 - versione 1701 (Build 7766.2060)  <br/> |Sì  <br/> |
 |A portata di clic  <br/> |Deferred Channel rilasciato il 13 giugno 2017 - versione 1701 (Build 7766.2092)  <br/> |Sì  <br/> |
-|MSI  <br/> |Skype for Business  <br/> |No  <br/> |
-|Mac  <br/> |Skype for Business  <br/> |No  <br/> |
+|MSI  <br/> |Skype per le aziende  <br/> |No  <br/> |
+|Mac  <br/> |Skype per le aziende  <br/> |No  <br/> |
    
 ## <a name="inbound-caller-id"></a>ID chiamante in ingresso
 

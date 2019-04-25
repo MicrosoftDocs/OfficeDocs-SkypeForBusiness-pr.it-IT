@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 description: Di seguito sono indicati alcuni dei motivi per cui si verificarsi problemi nell'ottenere l'indirizzo o gli indirizzi per convalidare correttamente nel Regno Unito (Regno Unito).
 ms.openlocfilehash: dafc6608f45393ccc0a39ecdb2c01e2479ec630b
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32227815"
 ---
 # <a name="why-am-i-having-problems-entering-uk-address-information"></a>Perché si verificano problemi immissione Regno Unito informazioni sull'indirizzo?
 

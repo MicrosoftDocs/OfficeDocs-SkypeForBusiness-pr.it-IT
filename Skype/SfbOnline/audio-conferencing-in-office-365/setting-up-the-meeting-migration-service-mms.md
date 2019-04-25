@@ -22,11 +22,11 @@ ms.custom:
 - Audio Conferencing
 description: Migrazione servizio MMS delle riunioni è un servizio che viene eseguito in background e vengono aggiornati automaticamente Skype per le riunioni aziendali e Teams Microsoft per gli utenti. MMS è progettato per eliminare la necessità di agli utenti di eseguire lo strumento di migrazione di riunioni per aggiornare i Skype per le riunioni aziendali e Teams Microsoft.
 ms.openlocfilehash: 90953f1352f54a8411513a78ccfda8bfb5356883
-ms.sourcegitcommit: 004d9475aa704779f8f70adeaf2db9b36c6828cc
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31836857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32229242"
 ---
 # <a name="using-the-meeting-migration-service-mms"></a>Utilizzare il servizio di migrazione Meeting MMS)
 

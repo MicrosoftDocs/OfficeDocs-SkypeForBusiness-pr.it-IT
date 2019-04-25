@@ -20,11 +20,11 @@ ms.custom:
 - Phone System
 description: Informazioni sulle procedure di distribuzione per ottenere il firmware corretto, aggiornare, se necessario, assegnare licenze e configurare le impostazioni per i telefoni delle aree comuni.
 ms.openlocfilehash: b92cef4234823c53faf6193d2e9e90fe3e5b60f0
-ms.sourcegitcommit: 044286f9dec2743a622bdaeac03469418cfdfa0d
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "25678167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32231156"
 ---
 # <a name="set-up-common-area-phones"></a>Configurare i telefoni di aree comuni
 A common area phone (CAP) is typically placed in an area like a lobby or another area that is available to a lot of people. For example, a reception area phone, door phone or meeting room phone, CAPs are set up as devices rather than users and automatically sign into a network. In the steps below, we’ll help you set up an account for Phone System with Calling Plans so you can deploy these types of phones for your organization.
@@ -83,7 +83,7 @@ Per maggiori dettagli, vedi [Aggiungere un utente](https://support.office.com/ar
 
 ![sfb-logo-30x30.png](../../images/sfb-logo-30x30.png) Assegna un numero di telefono all'utente utilizzando il **Centro di amministrazione Skype for Business**.
 
-1. Nell'interfaccia di amministrazione di Office 365 > **Admin Center** > **Skype per le aziende**.
+1. Nel gt Office 365 admin center _ desktop **Admin Center** > **Skype per le aziende**.
 2. Nell' **Interfaccia di amministrazione Skype for Business** >  **Voce** > **Numeri di telefono**.
 3. Seleziona un numero dall'elenco di numeri di telefono e fai clic su **Assegnare**.
 4. Sulla pagina relativa all'**Assegnazione**, nella casella **Utente vocale** immetti il nome dell'utente che viene utilizzato per il telefono, quindi seleziona l'utente nel menù a tendina **Seleziona un utente vocale**.
@@ -143,6 +143,6 @@ Il telefono o i telefoni in dotazione devono avere la modalità **Telefono di ar
 ### <a name="related-topics"></a>Argomenti correlati
 
 - Trovi ulteriori informazioni sui telefoni disponibili su [Distribuzione di telefoni Skype for Business online](deploying-skype-for-business-online-phones.md).
-- [Ottenere telefoni per Skype for Business online](getting-phones-for-skype-for-business-online.md)
+- [Ottenere telefoni per Skype for Business Online](getting-phones-for-skype-for-business-online.md)
 
 

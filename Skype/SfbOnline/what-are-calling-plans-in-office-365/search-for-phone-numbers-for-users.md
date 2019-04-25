@@ -20,19 +20,19 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: 'See how to search for phone numbers you can assign to your users, by country/region, state/region, or city, and specify the quantity of numbers you need. '
+description: 'Informazioni su come eseguire la ricerca di numeri di telefono che è possibile assegnare agli utenti tramite paese/area geografica, stato/regione o città e specificare la quantità di numeri necessaria. '
 ms.openlocfilehash: eeae7ad4bcafea1f8a1f86d36e59d2f57a2edff1
-ms.sourcegitcommit: 31827526894ffb75d64fcb0a7c76ee874ad3c269
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29753517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32230060"
 ---
 # <a name="search-for-phone-numbers-for-users"></a>Cercare numeri di telefono per gli utenti
 
-Quando si imposta le impostazioni degli utenti all'interno dell'organizzazione di effettuare e ricevere chiamate telefoniche, è necessario utilizzare **Skype per interfaccia di amministrazione di Business** e ottenere innanzitutto i numeri di telefono che possono essere assegnati agli utenti. Questo numero, scelto per l'organizzazione, è disponibile nell'elenco a discesa che compare quando modifichi le proprietà dell'utente e fai clic su **Assegna**.
+When you are setting up users in your organization to make and receive phone calls, you must use the **Skype for Business admin center** and first get phone numbers that can be assigned to users. The phone number you assign to a user will be a phone number that you have chosen for your organization and will be listed in the drop-down list when you edit the properties of the user and click **Assign**.
   
-Before you can assign phone numbers to your users, you must use the **New numbers** page to search for numbers that are available for you within an area. Ricerca in base al **paese/area geografica**, **lo stato**e **città**e quindi immettere il numero dei numeri di telefono, che è necessario per gli utenti. 
+Before you can assign phone numbers to your users, you must use the **New numbers** page to search for numbers that are available for you within an area. You can search by **Country/region**, **State**, and **City**, and then enter the number of phone numbers you will need for your users. 
   
 Se è necessario alcuni assistenza per ottenere i numeri di telefono, è possibile visualizzare [i numeri di telefono di gestione dell'organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization) o un [contatto supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
   
@@ -59,12 +59,12 @@ Se è necessario alcuni assistenza per ottenere i numeri di telefono, è possibi
     > [!NOTE]
     > Puoi visualizzare quanti numeri di telefono puoi acquisire in base al numero di licenze di cui disponi in **Totale numeri utente che è possibile acquisire**. 
   
-6. Facendo clic su **Mostra numeri** puoi visualizzare l'elenco completo dei numeri di telefono. Questo è utile se non si desidera selezionare un numero di telefono specifico nell'elenco.
+6. You can click **Show numbers** to see the full list of phone numbers. Questo è utile se non si desidera selezionare un numero di telefono specifico nell'elenco.
     
 7. Seleziona i numeri di telefono desiderati e quindi fai clic su **Acquisisci numeri**.
     
     > [!IMPORTANT]
-    > È possibile acquisire altri numeri di telefono che dispongono di licenze. Per determinare quanti numeri di telefono puoi acquisire, aggiungi il 10% delle tue licenze e poi aggiungi 10. Ad esempio, se si dispongono di 100 licenze **Chiamata pianificare interne** e/o **International la chiamata a pianificare** , è possibile prenotare 120 numeri di telefono, supponendo che non è stata acquisita già alcuni numeri di telefono per gli utenti di 100. Per ulteriori informazioni, vedere [quanti numeri di telefono è possibile ottenere?](/microsoftteams/how-many-phone-numbers-can-you-get)
+    > You can acquire more phone numbers than you have licenses. To determine how many phone numbers you can acquire, take your number of licenses, add 10 percent of the number of licenses, and then add 10. For example, if you have 100 **Domestic Calling Plan** and/or **International Calling Plan** licenses, you can reserve 120 phone numbers, assuming that you have not already acquired some phone numbers for those 100 users. For more details, see [How many phone numbers can you get?](/microsoftteams/how-many-phone-numbers-can-you-get)
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)

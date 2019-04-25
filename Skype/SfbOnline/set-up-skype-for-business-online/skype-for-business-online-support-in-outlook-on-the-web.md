@@ -19,11 +19,11 @@ ms.custom:
 - Setup
 description: La versione online di Outlook (Outlook Web App) in Office 365 offre un client Web Skype for Business di base dalla barra di navigazione. Questo client di base è disponibile per gli utenti Online cui amministratore non ha configurato un URL di reindirizzamento a microsito per la propria organizzazione Office 365. A condizione che l'account dell'utente è in linea e non dispone di un URL di reindirizzamento a microsito, cui viene visualizzata l'esperienza anche se l'organizzazione presenta alcuni account utente che sono ospitati in locale. Gli utenti che hanno utente account in locale (che hanno un URL di reindirizzamento a microsito o non) o gestiti da Microsoft vedranno l'esperienza di Lync in Outlook web app.
 ms.openlocfilehash: 0d98d2490510b54ec0aabd4fefb7ed4137b449b7
-ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30891038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32237232"
 ---
 # <a name="skype-for-business-online-support-in-outlook-on-the-web"></a>Supporto per Skype for Business Online in Outlook sul Web
 
@@ -45,7 +45,7 @@ Nella tabella seguente sono riepilogate le installazioni diverse che possono ver
    
 
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

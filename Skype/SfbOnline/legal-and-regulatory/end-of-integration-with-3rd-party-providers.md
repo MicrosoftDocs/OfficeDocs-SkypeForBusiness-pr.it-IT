@@ -20,11 +20,11 @@ ms.custom:
 hideEdit: true
 description: In 2020, aprile 1, la fine del programma vita verrà concludere per l'integrazione di Skype for Business con i provider di servizi di conferenza audio di terze parti (ACP parte 3).
 ms.openlocfilehash: 4846875a8fb288683e896454a33e9213eec3a2ac
-ms.sourcegitcommit: 5b33cfc828906917f76b0d2a9ae402c9336388a1
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30934674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32223864"
 ---
 # <a name="end-of-life-program-for-the-integration-of-skype-for-business-with-third-party-audio-conferencing-providers"></a>Fine del programma di vita per l'integrazione di Skype for Business con i provider di servizi di conferenza audio di terze parti 
 

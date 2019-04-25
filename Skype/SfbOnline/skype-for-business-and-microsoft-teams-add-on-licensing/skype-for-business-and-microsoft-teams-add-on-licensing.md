@@ -23,11 +23,11 @@ ms.custom:
 - LIL_Placement
 description: "Learn about add-on licenses, what features you'll get with it, how to buy them for your product, and how to use your existing carrier with them. You can get information on pricing and plan details for Office 365, Communication Credits, and Calling plans. "
 ms.openlocfilehash: ada45384ed7eb1328954105334523b51825f4bcb
-ms.sourcegitcommit: 4266c1fbd8557bf2bf65447557ee8d597f90ccd3
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31012485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32238318"
 ---
 # <a name="skype-for-business-add-on-licensing"></a>Licenze per i componenti aggiuntivi Skype for Business
 
@@ -103,7 +103,7 @@ Per la documentazione completa sulla pianificazione della distribuzione, tra cui
 
 - [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
     
-- [Impostare i messaggi vocali Cloud - della Guida di amministrazione](/microsoftteams/set-up-phone-system-voicemail)
+- [Impostare Cloud Voicemail - Guida per gli amministratori](/microsoftteams/set-up-phone-system-voicemail)
     
 - [Impostare Piani di chiamata](/microsoftteams/set-up-calling-plans) e [Piani di chiamata per Office 365](/MicrosoftTeams/calling-plans-for-office-365)
     

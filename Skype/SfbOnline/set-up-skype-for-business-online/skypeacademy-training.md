@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 description: Video di formazione che presentano Skype for Business e illustrano agli amministratori come pianificarlo, distribuirlo e utilizzarlo.
 ms.openlocfilehash: dd9d114beb0ebfb3765fac72f7391ac2ab202272
-ms.sourcegitcommit: 4266c1fbd8557bf2bf65447557ee8d597f90ccd3
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31012964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32247453"
 ---
 <a name="admin-training-for-skype-for-business-online"></a>Formazione per amministratori di Skype for Business online
 ==================================

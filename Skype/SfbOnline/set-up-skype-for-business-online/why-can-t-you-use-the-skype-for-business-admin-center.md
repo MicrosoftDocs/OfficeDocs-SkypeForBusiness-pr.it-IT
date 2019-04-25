@@ -21,11 +21,11 @@ ms.custom:
 - Setup
 description: "Informazioni su informazioni che è possibile utilizzare in Skype per l'interfaccia di amministrazione di Business e altre caratteristiche quando il servizio viene eseguita la migrazione a un'altra data center di Microsoft. "
 ms.openlocfilehash: 57ffa6e37c18de8e87e5af00750eef276649f4f5
-ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30885640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32226318"
 ---
 # <a name="why-cant-i-use-the-skype-for-business-online-admin-center-right-now"></a>Perché non è possibile utilizzare il Skype Business Online interfaccia di amministrazione di direttamente?
 
@@ -66,7 +66,7 @@ Sebbene non sarà in grado di accedere Skype per interfaccia di amministrazione 
 Verificare. Mentre è stiamo migrazione il Skype per il servizio di Business in linea, è comunque possibile utilizzare altre interfacce di amministrazione di Office 365 (ad esempio, l'Office 365 ed Exchange admin Center). Insieme Skype per interfaccia di amministrazione di Business in linea, tuttavia, non sarà in grado di utilizzare il Skype per i cmdlet di PowerShell remoto Online Business durante la migrazione. 
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

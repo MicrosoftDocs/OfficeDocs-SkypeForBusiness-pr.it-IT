@@ -19,11 +19,11 @@ ms.custom:
 - Setup
 description: 'Learn to save time, support calls and increase satisfaction by setting up test accounts and computers, and testing dial-in conferencing, online features such as person-to-person calls, conferencing, and sign in and out. '
 ms.openlocfilehash: 2cdb08634ce16b3ba6e09148daee57191e8c6988
-ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30883544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32237777"
 ---
 # <a name="test-your-skype-for-business-online-installation"></a>Testare l'installazione di Skype for Business online
 
@@ -37,7 +37,7 @@ Ecco quello che occorre:
 
 - Un account supportato da un provider di servizi di audioconferenza per Skype for Business online.
 
-## <a name="what-do-you-want-to-do"></a>Per saperne di più
+## <a name="what-do-you-want-to-do"></a>Quale operazione si desidera effettuare?
 
 > [Configurare gli account di prova](test-your-skype-for-business-online-installation.md#__toc328126910)
 > 
@@ -65,7 +65,7 @@ In ogni computer di prova eseguire le seguenti operazioni:
 
 2. Andare a **Impostazioni**![Impostazioni: aggiornare il profilo, installare il software e connetterlo al cloud](../images/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png), quindi fare clic su **Installa il software e connettilo al cloud**.
 
-## <a name="set-up-audio-conferencing"></a>Configurare l'audioconferenza
+## <a name="set-up-audio-conferencing"></a>Configurare l’audioconferenza
 <a name="__toc328126912"> </a>
 
 Per consentire l'accesso telefonico alle riunioni di Skype for Business online, configura un account con un provider di servizi di audioconferenza. In questo modo puoi ottenere:
@@ -137,7 +137,7 @@ Non riesci ad accedere? Vedi [Come risolvere i problemi di accesso a Skype for B
 |[Trasferire un file in una riunione di Lync](https://support.office.com/article/f6942910-bc1d-4a48-bf18-385778f08088) <br/> |Dopo il caricamento, tutti nella riunione potranno visualizzare e scaricare l'allegato.  <br/> |
 
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

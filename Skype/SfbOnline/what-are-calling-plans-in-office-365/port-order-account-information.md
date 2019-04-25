@@ -22,11 +22,11 @@ ms.custom:
 - Calling Plans
 description: "Ulteriori informazioni sull'account è necessario quando si lavora con una procedura guidata nuovo ordine di porta numero locale. "
 ms.openlocfilehash: 404bef2ad18728de90ac0a296c213e841719984b
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32229848"
 ---
 # <a name="port-order-account-information"></a>Informazioni sull'account dell'ordine di porta
 
