@@ -19,46 +19,46 @@ ms.custom:
 - PowerShell
 description: Scopri i requisiti per la gestione remota di Skype Business online tramite Windows PowerShell, inclusi sistemi operativi supportati.
 ms.openlocfilehash: 7854fa064420c2addeea4397e8dd882374c3b940
-ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30896521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32226346"
 ---
-# <a name="set-up-your-computer-for-windows-powershell"></a><span data-ttu-id="df554-103">Configurare il computer per Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="df554-103">Set up your computer for Windows PowerShell</span></span>
+# <a name="set-up-your-computer-for-windows-powershell"></a><span data-ttu-id="72a03-103">Configurare il computer per Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="72a03-103">Set up your computer for Windows PowerShell</span></span>
 
-<span data-ttu-id="df554-104">Gestione remota di Skype Business online tramite Microsoft PowerShell è supportata solo nei computer a 64 bit in esecuzione uno dei sistemi operativi seguenti:</span><span class="sxs-lookup"><span data-stu-id="df554-104">Remote management of Skype for Business Online by using Microsoft PowerShell is supported only on 64-bit computers running one of the following operating systems:</span></span>
+<span data-ttu-id="72a03-104">Gestione remota di Skype Business online tramite Microsoft PowerShell è supportata solo nei computer a 64 bit in esecuzione uno dei sistemi operativi seguenti:</span><span class="sxs-lookup"><span data-stu-id="72a03-104">Remote management of Skype for Business Online by using Microsoft PowerShell is supported only on 64-bit computers running one of the following operating systems:</span></span>
 
-- <span data-ttu-id="df554-105">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="df554-105">Windows Server 2016</span></span>
+- <span data-ttu-id="72a03-105">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="72a03-105">Windows Server 2016</span></span>
 
-- <span data-ttu-id="df554-106">Windows 10</span><span class="sxs-lookup"><span data-stu-id="df554-106">Windows 10</span></span>
+- <span data-ttu-id="72a03-106">Windows 10</span><span class="sxs-lookup"><span data-stu-id="72a03-106">Windows 10</span></span>
     
-- <span data-ttu-id="df554-107">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="df554-107">Windows 8.1</span></span>
+- <span data-ttu-id="72a03-107">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="72a03-107">Windows 8.1</span></span>
     
-- <span data-ttu-id="df554-108">Windows 8</span><span class="sxs-lookup"><span data-stu-id="df554-108">Windows 8</span></span>
+- <span data-ttu-id="72a03-108">Windows 8</span><span class="sxs-lookup"><span data-stu-id="72a03-108">Windows 8</span></span>
     
-- <span data-ttu-id="df554-109">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="df554-109">Windows Server 2012 R2</span></span>
+- <span data-ttu-id="72a03-109">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="72a03-109">Windows Server 2012 R2</span></span>
     
-- <span data-ttu-id="df554-110">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="df554-110">Windows Server 2012</span></span>
+- <span data-ttu-id="72a03-110">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="72a03-110">Windows Server 2012</span></span>
     
-- <span data-ttu-id="df554-111">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="df554-111">Windows Server 2008</span></span>
+- <span data-ttu-id="72a03-111">Windows Server 2008</span><span class="sxs-lookup"><span data-stu-id="72a03-111">Windows Server 2008</span></span>
     
-- <span data-ttu-id="df554-112">Windows 7</span><span class="sxs-lookup"><span data-stu-id="df554-112">Windows 7</span></span>
+- <span data-ttu-id="72a03-112">Windows 7</span><span class="sxs-lookup"><span data-stu-id="72a03-112">Windows 7</span></span>
     
-<span data-ttu-id="df554-113">Oltre il sistema operativo supportato, il computer deve inoltre eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="df554-113">In addition to the supported operating system, the computer must also be running the following:</span></span>
+<span data-ttu-id="72a03-113">Oltre il sistema operativo supportato, il computer deve inoltre eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="72a03-113">In addition to the supported operating system, the computer must also be running the following:</span></span>
   
-- <span data-ttu-id="df554-114">PowerShell</span><span class="sxs-lookup"><span data-stu-id="df554-114">PowerShell</span></span>
+- <span data-ttu-id="72a03-114">PowerShell</span><span class="sxs-lookup"><span data-stu-id="72a03-114">PowerShell</span></span>
     
-- <span data-ttu-id="df554-115">Skype per la funzionalità di Business Online Connector</span><span class="sxs-lookup"><span data-stu-id="df554-115">Skype for Business Online Connector module</span></span>
+- <span data-ttu-id="72a03-115">Skype per la funzionalità di Business Online Connector</span><span class="sxs-lookup"><span data-stu-id="72a03-115">Skype for Business Online Connector module</span></span>
     
-<span data-ttu-id="df554-116">È possibile trovare informazioni sul download e installazione di questi elementi negli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="df554-116">You can find information about downloading and installing these items in the following topics:</span></span>
+<span data-ttu-id="72a03-116">È possibile trovare informazioni sul download e installazione di questi elementi negli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="72a03-116">You can find information about downloading and installing these items in the following topics:</span></span>
   
-- [<span data-ttu-id="df554-117">Scaricare e installare Skype di funzionalità di Business Online Connector</span><span class="sxs-lookup"><span data-stu-id="df554-117">Download and install the Skype for Business Online Connector module</span></span>](download-and-install-the-skype-for-business-online-connector.md)
+- [<span data-ttu-id="72a03-117">Scaricare e installare Skype di funzionalità di Business Online Connector</span><span class="sxs-lookup"><span data-stu-id="72a03-117">Download and install the Skype for Business Online Connector module</span></span>](download-and-install-the-skype-for-business-online-connector.md)
     
-- [<span data-ttu-id="df554-118">Scaricare e installare Windows PowerShell 5.1</span><span class="sxs-lookup"><span data-stu-id="df554-118">Download and install Windows PowerShell 5.1</span></span>](download-and-install-windows-powershell-5-1.md)
+- [<span data-ttu-id="72a03-118">Scaricare e installare Windows PowerShell 5.1</span><span class="sxs-lookup"><span data-stu-id="72a03-118">Download and install Windows PowerShell 5.1</span></span>](download-and-install-windows-powershell-5-1.md)
     
-## <a name="related-topics"></a><span data-ttu-id="df554-119">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="df554-119">Related topics</span></span>
-[<span data-ttu-id="df554-120">Diagnosticare i problemi di connessione con Skype per business online connector</span><span class="sxs-lookup"><span data-stu-id="df554-120">Diagnose connection problems with the skype for business online connector</span></span>](diagnose-problems-with-the-skype-for-business-online-connector.md)
+## <a name="related-topics"></a><span data-ttu-id="72a03-119">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="72a03-119">Related topics</span></span>
+[<span data-ttu-id="72a03-120">Diagnosticare i problemi di connessione con Skype per business online connector</span><span class="sxs-lookup"><span data-stu-id="72a03-120">Diagnose connection problems with the skype for business online connector</span></span>](diagnose-problems-with-the-skype-for-business-online-connector.md)
 
   
  

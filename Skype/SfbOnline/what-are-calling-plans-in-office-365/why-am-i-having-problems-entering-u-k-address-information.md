@@ -22,102 +22,102 @@ ms.custom:
 - Calling Plans
 description: Di seguito sono indicati alcuni dei motivi per cui si verificarsi problemi nell'ottenere l'indirizzo o gli indirizzi per convalidare correttamente nel Regno Unito (Regno Unito).
 ms.openlocfilehash: dafc6608f45393ccc0a39ecdb2c01e2479ec630b
-ms.sourcegitcommit: c5940ef2674a00281604045baf8b2a320c4b189d
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24958282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32227815"
 ---
-# <a name="why-am-i-having-problems-entering-uk-address-information"></a><span data-ttu-id="30bdb-104">Perché si verificano problemi immissione Regno Unito</span><span class="sxs-lookup"><span data-stu-id="30bdb-104">Why am I having problems entering U.K.</span></span> <span data-ttu-id="30bdb-105">informazioni sull'indirizzo?</span><span class="sxs-lookup"><span data-stu-id="30bdb-105">address information?</span></span>
+# <a name="why-am-i-having-problems-entering-uk-address-information"></a><span data-ttu-id="30d94-104">Perché si verificano problemi immissione Regno Unito</span><span class="sxs-lookup"><span data-stu-id="30d94-104">Why am I having problems entering U.K.</span></span> <span data-ttu-id="30d94-105">informazioni sull'indirizzo?</span><span class="sxs-lookup"><span data-stu-id="30d94-105">address information?</span></span>
 
-<span data-ttu-id="30bdb-106">Di seguito sono indicati alcuni dei motivi per cui si verificarsi problemi nell'ottenere l'indirizzo o gli indirizzi per convalidare correttamente nel Regno Unito (Regno Unito).</span><span class="sxs-lookup"><span data-stu-id="30bdb-106">Here are some reasons why you may be having problems getting your address or addresses to validate correctly in the United Kingdom (U.K.).</span></span>
+<span data-ttu-id="30d94-106">Di seguito sono indicati alcuni dei motivi per cui si verificarsi problemi nell'ottenere l'indirizzo o gli indirizzi per convalidare correttamente nel Regno Unito (Regno Unito).</span><span class="sxs-lookup"><span data-stu-id="30d94-106">Here are some reasons why you may be having problems getting your address or addresses to validate correctly in the United Kingdom (U.K.).</span></span>
   
-## <a name="whats-wrong-with-the-company-name"></a><span data-ttu-id="30bdb-107">Che cos'è un problema con il nome della società?</span><span class="sxs-lookup"><span data-stu-id="30bdb-107">What's wrong with the company name?</span></span>
+## <a name="whats-wrong-with-the-company-name"></a><span data-ttu-id="30d94-107">Che cos'è un problema con il nome della società?</span><span class="sxs-lookup"><span data-stu-id="30d94-107">What's wrong with the company name?</span></span>
 
-<span data-ttu-id="30bdb-108">Se si è verificato un problema immettere il nome della società, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30bdb-108">If you are having a problem entering the company name, remember:</span></span>
+<span data-ttu-id="30d94-108">Se si è verificato un problema immettere il nome della società, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30d94-108">If you are having a problem entering the company name, remember:</span></span>
   
-- <span data-ttu-id="30bdb-109">Può avere lettere, numeri e caratteri speciali seguenti:, / - +.</span><span class="sxs-lookup"><span data-stu-id="30bdb-109">It can have letters, numbers, and the following special characters: , / - + .</span></span> <span data-ttu-id="30bdb-110">' &amp; " _</span><span class="sxs-lookup"><span data-stu-id="30bdb-110"></span></span> 
+- <span data-ttu-id="30d94-109">Può avere lettere, numeri e caratteri speciali seguenti:, / - +.</span><span class="sxs-lookup"><span data-stu-id="30d94-109">It can have letters, numbers, and the following special characters: , / - + .</span></span> <span data-ttu-id="30d94-110">' &amp; " _</span><span class="sxs-lookup"><span data-stu-id="30d94-110"></span></span> 
     
     > [!CAUTION]
-    > <span data-ttu-id="30bdb-111">Nel Regno Unito (Regno Unito), il nome della società non può avere il segno +.</span><span class="sxs-lookup"><span data-stu-id="30bdb-111">In the United Kingdom (U.K.), the company name can't have the + sign.</span></span> 
+    > <span data-ttu-id="30d94-111">Nel Regno Unito (Regno Unito), il nome della società non può avere il segno +.</span><span class="sxs-lookup"><span data-stu-id="30d94-111">In the United Kingdom (U.K.), the company name can't have the + sign.</span></span> 
   
-- <span data-ttu-id="30bdb-112">Lo schema deve essere 80 caratteri o meno.</span><span class="sxs-lookup"><span data-stu-id="30bdb-112">It has to be 80 characters or less.</span></span>
+- <span data-ttu-id="30d94-112">Lo schema deve essere 80 caratteri o meno.</span><span class="sxs-lookup"><span data-stu-id="30d94-112">It has to be 80 characters or less.</span></span>
     
-- <span data-ttu-id="30bdb-113">Non può iniziare con un carattere speciale.</span><span class="sxs-lookup"><span data-stu-id="30bdb-113">It can't start with a special character.</span></span>
+- <span data-ttu-id="30d94-113">Non può iniziare con un carattere speciale.</span><span class="sxs-lookup"><span data-stu-id="30d94-113">It can't start with a special character.</span></span>
     
-## <a name="whats-wrong-with-the-house-number"></a><span data-ttu-id="30bdb-114">Che cos'è un problema con il numero di accesso a terze parti?</span><span class="sxs-lookup"><span data-stu-id="30bdb-114">What's wrong with the house number?</span></span>
+## <a name="whats-wrong-with-the-house-number"></a><span data-ttu-id="30d94-114">Che cos'è un problema con il numero di accesso a terze parti?</span><span class="sxs-lookup"><span data-stu-id="30d94-114">What's wrong with the house number?</span></span>
 
-<span data-ttu-id="30bdb-115">Se si è verificato un problema immettendo il numero civico, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30bdb-115">If you are having a problem entering the house number, remember:</span></span>
+<span data-ttu-id="30d94-115">Se si è verificato un problema immettendo il numero civico, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30d94-115">If you are having a problem entering the house number, remember:</span></span>
   
-- <span data-ttu-id="30bdb-116">Può avere lettere, numeri e caratteri speciali seguenti:-/]</span><span class="sxs-lookup"><span data-stu-id="30bdb-116">It can have letters, numbers, and the following special characters: - / [ ]</span></span>
+- <span data-ttu-id="30d94-116">Può avere lettere, numeri e caratteri speciali seguenti:-/]</span><span class="sxs-lookup"><span data-stu-id="30d94-116">It can have letters, numbers, and the following special characters: - / [ ]</span></span>
     
-- <span data-ttu-id="30bdb-117">Deve iniziare con un numero.</span><span class="sxs-lookup"><span data-stu-id="30bdb-117">It has to start with a number.</span></span>
+- <span data-ttu-id="30d94-117">Deve iniziare con un numero.</span><span class="sxs-lookup"><span data-stu-id="30d94-117">It has to start with a number.</span></span>
     
-- <span data-ttu-id="30bdb-118">Lo schema deve essere 20 caratteri o meno.</span><span class="sxs-lookup"><span data-stu-id="30bdb-118">It has to be 20 characters or less.</span></span>
+- <span data-ttu-id="30d94-118">Lo schema deve essere 20 caratteri o meno.</span><span class="sxs-lookup"><span data-stu-id="30d94-118">It has to be 20 characters or less.</span></span>
     
-- <span data-ttu-id="30bdb-119">Può avere un maiuscola o minuscola.</span><span class="sxs-lookup"><span data-stu-id="30bdb-119">It can have a capital or lowercase letter.</span></span>
+- <span data-ttu-id="30d94-119">Può avere un maiuscola o minuscola.</span><span class="sxs-lookup"><span data-stu-id="30d94-119">It can have a capital or lowercase letter.</span></span>
     
-## <a name="whats-wrong-with-the-house-name"></a><span data-ttu-id="30bdb-120">Che cos'è un problema con il nome di accesso a terze parti?</span><span class="sxs-lookup"><span data-stu-id="30bdb-120">What's wrong with the house name?</span></span>
+## <a name="whats-wrong-with-the-house-name"></a><span data-ttu-id="30d94-120">Che cos'è un problema con il nome di accesso a terze parti?</span><span class="sxs-lookup"><span data-stu-id="30d94-120">What's wrong with the house name?</span></span>
 
-<span data-ttu-id="30bdb-121">Se si è verificato un problema immettere il nome di accesso a terze parti, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30bdb-121">If you are having a problem entering the house name, remember:</span></span>
+<span data-ttu-id="30d94-121">Se si è verificato un problema immettere il nome di accesso a terze parti, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30d94-121">If you are having a problem entering the house name, remember:</span></span>
   
-- <span data-ttu-id="30bdb-122">Può avere lettere, numeri e caratteri speciali seguenti:, / - +.</span><span class="sxs-lookup"><span data-stu-id="30bdb-122">It can have letters, numbers and the following special characters : , / - + .</span></span> <span data-ttu-id="30bdb-123">' &amp; " _</span><span class="sxs-lookup"><span data-stu-id="30bdb-123"></span></span>
+- <span data-ttu-id="30d94-122">Può avere lettere, numeri e caratteri speciali seguenti:, / - +.</span><span class="sxs-lookup"><span data-stu-id="30d94-122">It can have letters, numbers and the following special characters : , / - + .</span></span> <span data-ttu-id="30d94-123">' &amp; " _</span><span class="sxs-lookup"><span data-stu-id="30d94-123"></span></span>
     
-- <span data-ttu-id="30bdb-124">Lo schema deve essere 50 caratteri o meno.</span><span class="sxs-lookup"><span data-stu-id="30bdb-124">It has to be 50 characters or less.</span></span>
+- <span data-ttu-id="30d94-124">Lo schema deve essere 50 caratteri o meno.</span><span class="sxs-lookup"><span data-stu-id="30d94-124">It has to be 50 characters or less.</span></span>
     
-- <span data-ttu-id="30bdb-125">Non può iniziare con un carattere speciale.</span><span class="sxs-lookup"><span data-stu-id="30bdb-125">It can't start with a special character.</span></span>
+- <span data-ttu-id="30d94-125">Non può iniziare con un carattere speciale.</span><span class="sxs-lookup"><span data-stu-id="30d94-125">It can't start with a special character.</span></span>
     
-## <a name="whats-wrong-with-the-street-name"></a><span data-ttu-id="30bdb-126">Che cos'è un problema con il nome della via?</span><span class="sxs-lookup"><span data-stu-id="30bdb-126">What's wrong with the street name?</span></span>
+## <a name="whats-wrong-with-the-street-name"></a><span data-ttu-id="30d94-126">Che cos'è un problema con il nome della via?</span><span class="sxs-lookup"><span data-stu-id="30d94-126">What's wrong with the street name?</span></span>
 
-<span data-ttu-id="30bdb-127">Se si è verificato un problema immettere il nome della via, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30bdb-127">If you are having a problem entering the street name, remember:</span></span>
+<span data-ttu-id="30d94-127">Se si è verificato un problema immettere il nome della via, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30d94-127">If you are having a problem entering the street name, remember:</span></span>
   
-- <span data-ttu-id="30bdb-128">Può avere lettere, numeri e caratteri speciali seguenti:, / - +.</span><span class="sxs-lookup"><span data-stu-id="30bdb-128">It can have letters, numbers, and the following special characters : , / - + .</span></span> <span data-ttu-id="30bdb-129">' &amp; " _</span><span class="sxs-lookup"><span data-stu-id="30bdb-129"></span></span> 
+- <span data-ttu-id="30d94-128">Può avere lettere, numeri e caratteri speciali seguenti:, / - +.</span><span class="sxs-lookup"><span data-stu-id="30d94-128">It can have letters, numbers, and the following special characters : , / - + .</span></span> <span data-ttu-id="30d94-129">' &amp; " _</span><span class="sxs-lookup"><span data-stu-id="30d94-129"></span></span> 
     
-- <span data-ttu-id="30bdb-130">Lo schema deve essere 50 caratteri o meno.</span><span class="sxs-lookup"><span data-stu-id="30bdb-130">It has to be 50 characters or less.</span></span>
+- <span data-ttu-id="30d94-130">Lo schema deve essere 50 caratteri o meno.</span><span class="sxs-lookup"><span data-stu-id="30d94-130">It has to be 50 characters or less.</span></span>
     
-- <span data-ttu-id="30bdb-131">Non può iniziare con un carattere speciale.</span><span class="sxs-lookup"><span data-stu-id="30bdb-131">It can't start with a special character.</span></span> 
+- <span data-ttu-id="30d94-131">Non può iniziare con un carattere speciale.</span><span class="sxs-lookup"><span data-stu-id="30d94-131">It can't start with a special character.</span></span> 
     
-## <a name="whats-wrong-with-the-city-or-town"></a><span data-ttu-id="30bdb-132">Che cos'è un problema con propria città?</span><span class="sxs-lookup"><span data-stu-id="30bdb-132">What's wrong with the city or town?</span></span>
+## <a name="whats-wrong-with-the-city-or-town"></a><span data-ttu-id="30d94-132">Che cos'è un problema con propria città?</span><span class="sxs-lookup"><span data-stu-id="30d94-132">What's wrong with the city or town?</span></span>
 
-<span data-ttu-id="30bdb-133">Se si è verificato un problema immettere il nome della propria città, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30bdb-133">If you are having a problem entering the name of the city or town, remember:</span></span>
+<span data-ttu-id="30d94-133">Se si è verificato un problema immettere il nome della propria città, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30d94-133">If you are having a problem entering the name of the city or town, remember:</span></span>
   
-- <span data-ttu-id="30bdb-134">Può avere lettere, numeri e caratteri speciali seguenti:, / - +.</span><span class="sxs-lookup"><span data-stu-id="30bdb-134">It can have letters, numbers, and the following special characters : , / - + .</span></span> <span data-ttu-id="30bdb-135">' &amp; " _</span><span class="sxs-lookup"><span data-stu-id="30bdb-135"></span></span>
+- <span data-ttu-id="30d94-134">Può avere lettere, numeri e caratteri speciali seguenti:, / - +.</span><span class="sxs-lookup"><span data-stu-id="30d94-134">It can have letters, numbers, and the following special characters : , / - + .</span></span> <span data-ttu-id="30d94-135">' &amp; " _</span><span class="sxs-lookup"><span data-stu-id="30d94-135"></span></span>
     
-- <span data-ttu-id="30bdb-136">Lo schema deve essere 50 caratteri o meno.</span><span class="sxs-lookup"><span data-stu-id="30bdb-136">It has to be 50 characters or less.</span></span>
+- <span data-ttu-id="30d94-136">Lo schema deve essere 50 caratteri o meno.</span><span class="sxs-lookup"><span data-stu-id="30d94-136">It has to be 50 characters or less.</span></span>
     
-- <span data-ttu-id="30bdb-137">Non può iniziare con un carattere speciale.</span><span class="sxs-lookup"><span data-stu-id="30bdb-137">It can't start with a special character.</span></span> 
+- <span data-ttu-id="30d94-137">Non può iniziare con un carattere speciale.</span><span class="sxs-lookup"><span data-stu-id="30d94-137">It can't start with a special character.</span></span> 
     
-## <a name="whats-wrong-with-the-postal-code"></a><span data-ttu-id="30bdb-138">Che cos'è un problema con il codice postale?</span><span class="sxs-lookup"><span data-stu-id="30bdb-138">What's wrong with the postal code?</span></span>
+## <a name="whats-wrong-with-the-postal-code"></a><span data-ttu-id="30d94-138">Che cos'è un problema con il codice postale?</span><span class="sxs-lookup"><span data-stu-id="30d94-138">What's wrong with the postal code?</span></span>
 
-<span data-ttu-id="30bdb-139">Se si è verificato un problema immettere il codice postale, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30bdb-139">If you are having a problem entering the postal code, remember:</span></span>
+<span data-ttu-id="30d94-139">Se si è verificato un problema immettere il codice postale, tenere presenti:</span><span class="sxs-lookup"><span data-stu-id="30d94-139">If you are having a problem entering the postal code, remember:</span></span>
   
-- <span data-ttu-id="30bdb-140">Può avere solo lettere, numeri o spazi.</span><span class="sxs-lookup"><span data-stu-id="30bdb-140">It can only have letters, numbers, or spaces.</span></span>
+- <span data-ttu-id="30d94-140">Può avere solo lettere, numeri o spazi.</span><span class="sxs-lookup"><span data-stu-id="30d94-140">It can only have letters, numbers, or spaces.</span></span>
     
-- <span data-ttu-id="30bdb-141">Deve avere le lettere minore o uguale a 8, compresi i numeri e spazi.</span><span class="sxs-lookup"><span data-stu-id="30bdb-141">It has to have 8 or less letters, including numbers and spaces.</span></span>
+- <span data-ttu-id="30d94-141">Deve avere le lettere minore o uguale a 8, compresi i numeri e spazi.</span><span class="sxs-lookup"><span data-stu-id="30d94-141">It has to have 8 or less letters, including numbers and spaces.</span></span>
     
-- <span data-ttu-id="30bdb-142">**Tenere presente che se si è nel Regno Unito (Regno Unito)**, è **necessario** inserire il codice postale in uno dei seguenti formati dove la lettera A = caratteri A-Z, il simbolo # = un numero compreso tra 0-9 e _ (sottolineatura) = uno spazio vuoto.</span><span class="sxs-lookup"><span data-stu-id="30bdb-142">**Remember that if you are in the United Kingdom (U.K.)**, you **must** put the postal code in one of the following formats, where the letter A = character A-Z, the # sign = a number from 0-9, and the _ (underscore) = a blank space.</span></span> <span data-ttu-id="30bdb-143">Di seguito sono riportati alcuni esempi:</span><span class="sxs-lookup"><span data-stu-id="30bdb-143">Here are some examples:</span></span>
+- <span data-ttu-id="30d94-142">**Tenere presente che se si è nel Regno Unito (Regno Unito)**, è **necessario** inserire il codice postale in uno dei seguenti formati dove la lettera A = caratteri A-Z, il simbolo # = un numero compreso tra 0-9 e _ (sottolineatura) = uno spazio vuoto.</span><span class="sxs-lookup"><span data-stu-id="30d94-142">**Remember that if you are in the United Kingdom (U.K.)**, you **must** put the postal code in one of the following formats, where the letter A = character A-Z, the # sign = a number from 0-9, and the _ (underscore) = a blank space.</span></span> <span data-ttu-id="30d94-143">Di seguito sono riportati alcuni esempi:</span><span class="sxs-lookup"><span data-stu-id="30d94-143">Here are some examples:</span></span>
     
-|<span data-ttu-id="30bdb-144">**Formato**</span><span class="sxs-lookup"><span data-stu-id="30bdb-144">**Format**</span></span>|<span data-ttu-id="30bdb-145">**Esempio**</span><span class="sxs-lookup"><span data-stu-id="30bdb-145">**Example**</span></span>|
+|<span data-ttu-id="30d94-144">**Formato**</span><span class="sxs-lookup"><span data-stu-id="30d94-144">**Format**</span></span>|<span data-ttu-id="30d94-145">**Esempio**</span><span class="sxs-lookup"><span data-stu-id="30d94-145">**Example**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="30bdb-146">AA #A_ #AA</span><span class="sxs-lookup"><span data-stu-id="30bdb-146">AA#A_#AA</span></span>  <br/> |<span data-ttu-id="30bdb-147">EC3B 2BD</span><span class="sxs-lookup"><span data-stu-id="30bdb-147">EC3B 2BD</span></span>  <br/> |
-|<span data-ttu-id="30bdb-148">UN A_ # #AA</span><span class="sxs-lookup"><span data-stu-id="30bdb-148">A#A_#AA</span></span>  <br/> |<span data-ttu-id="30bdb-149">E1W 1AP</span><span class="sxs-lookup"><span data-stu-id="30bdb-149">E1W 1AP</span></span>  <br/> |
-|<span data-ttu-id="30bdb-150">UN #_ #AA</span><span class="sxs-lookup"><span data-stu-id="30bdb-150">A#_#AA</span></span>  <br/> |<span data-ttu-id="30bdb-151">F1 2AG</span><span class="sxs-lookup"><span data-stu-id="30bdb-151">F1 2AG</span></span>  <br/> |
-|<span data-ttu-id="30bdb-152">UN _ # # #AA</span><span class="sxs-lookup"><span data-stu-id="30bdb-152">A##_#AA</span></span>  <br/> |<span data-ttu-id="30bdb-153">C44 8HT</span><span class="sxs-lookup"><span data-stu-id="30bdb-153">C44 8HT</span></span>  <br/> |
-|<span data-ttu-id="30bdb-154">AA #_ #AA</span><span class="sxs-lookup"><span data-stu-id="30bdb-154">AA#_#AA</span></span>  <br/> |<span data-ttu-id="30bdb-155">DR3 HG 6</span><span class="sxs-lookup"><span data-stu-id="30bdb-155">DR3 6HG</span></span>  <br/> |
-|<span data-ttu-id="30bdb-156">AA # # _ #AA</span><span class="sxs-lookup"><span data-stu-id="30bdb-156">AA##_#AA</span></span>  <br/> |<span data-ttu-id="30bdb-157">1 ª FN35</span><span class="sxs-lookup"><span data-stu-id="30bdb-157">FN35 1TH</span></span>  <br/> |
+|<span data-ttu-id="30d94-146">AA #A_ #AA</span><span class="sxs-lookup"><span data-stu-id="30d94-146">AA#A_#AA</span></span>  <br/> |<span data-ttu-id="30d94-147">EC3B 2BD</span><span class="sxs-lookup"><span data-stu-id="30d94-147">EC3B 2BD</span></span>  <br/> |
+|<span data-ttu-id="30d94-148">UN A_ # #AA</span><span class="sxs-lookup"><span data-stu-id="30d94-148">A#A_#AA</span></span>  <br/> |<span data-ttu-id="30d94-149">E1W 1AP</span><span class="sxs-lookup"><span data-stu-id="30d94-149">E1W 1AP</span></span>  <br/> |
+|<span data-ttu-id="30d94-150">UN #_ #AA</span><span class="sxs-lookup"><span data-stu-id="30d94-150">A#_#AA</span></span>  <br/> |<span data-ttu-id="30d94-151">F1 2AG</span><span class="sxs-lookup"><span data-stu-id="30d94-151">F1 2AG</span></span>  <br/> |
+|<span data-ttu-id="30d94-152">UN _ # # #AA</span><span class="sxs-lookup"><span data-stu-id="30d94-152">A##_#AA</span></span>  <br/> |<span data-ttu-id="30d94-153">C44 8HT</span><span class="sxs-lookup"><span data-stu-id="30d94-153">C44 8HT</span></span>  <br/> |
+|<span data-ttu-id="30d94-154">AA #_ #AA</span><span class="sxs-lookup"><span data-stu-id="30d94-154">AA#_#AA</span></span>  <br/> |<span data-ttu-id="30d94-155">DR3 HG 6</span><span class="sxs-lookup"><span data-stu-id="30d94-155">DR3 6HG</span></span>  <br/> |
+|<span data-ttu-id="30d94-156">AA # # _ #AA</span><span class="sxs-lookup"><span data-stu-id="30d94-156">AA##_#AA</span></span>  <br/> |<span data-ttu-id="30d94-157">1 ª FN35</span><span class="sxs-lookup"><span data-stu-id="30d94-157">FN35 1TH</span></span>  <br/> |
 
 > [!NOTE]
-> <span data-ttu-id="30bdb-158">Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).</span><span class="sxs-lookup"><span data-stu-id="30bdb-158">If you need to get more telephone numbers than this, please [contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)</span></span>
+> <span data-ttu-id="30d94-158">Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).</span><span class="sxs-lookup"><span data-stu-id="30d94-158">If you need to get more telephone numbers than this, please [contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)</span></span>
 
    
-## <a name="related-topics"></a><span data-ttu-id="30bdb-159">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="30bdb-159">Related topics</span></span>
-[<span data-ttu-id="30bdb-160">Domande comuni sul trasferimento dei numeri di telefono</span><span class="sxs-lookup"><span data-stu-id="30bdb-160">Transferring phone numbers common questions</span></span>](/microsoftteams/transferring-phone-numbers-common-questions)
+## <a name="related-topics"></a><span data-ttu-id="30d94-159">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="30d94-159">Related topics</span></span>
+[<span data-ttu-id="30d94-160">Domande comuni sul trasferimento dei numeri di telefono</span><span class="sxs-lookup"><span data-stu-id="30d94-160">Transferring phone numbers common questions</span></span>](/microsoftteams/transferring-phone-numbers-common-questions)
 
-[<span data-ttu-id="30bdb-161">Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate</span><span class="sxs-lookup"><span data-stu-id="30bdb-161">Different kinds of phone numbers used for Calling Plans</span></span>](/microsoftteams/different-kinds-of-phone-numbers-used-for-calling-plans)
+[<span data-ttu-id="30d94-161">Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate</span><span class="sxs-lookup"><span data-stu-id="30d94-161">Different kinds of phone numbers used for Calling Plans</span></span>](/microsoftteams/different-kinds-of-phone-numbers-used-for-calling-plans)
 
-[<span data-ttu-id="30bdb-162">Termini e condizioni per le chiamate al numero di emergenza</span><span class="sxs-lookup"><span data-stu-id="30bdb-162">Emergency calling terms and conditions</span></span>](/microsoftteams/emergency-calling-terms-and-conditions)
+[<span data-ttu-id="30d94-162">Termini e condizioni per le chiamate al numero di emergenza</span><span class="sxs-lookup"><span data-stu-id="30d94-162">Emergency calling terms and conditions</span></span>](/microsoftteams/emergency-calling-terms-and-conditions)
 
-<span data-ttu-id="30bdb-163">[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)</span><span class="sxs-lookup"><span data-stu-id="30bdb-163">[Skype for Business Online: Emergency Calling disclaimer label](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)</span></span>
+<span data-ttu-id="30d94-163">[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)</span><span class="sxs-lookup"><span data-stu-id="30d94-163">[Skype for Business Online: Emergency Calling disclaimer label](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)</span></span>
 
   
  
