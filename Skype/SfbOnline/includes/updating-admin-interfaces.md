@@ -1,1 +1,1 @@
-Stiamo aggiornando frequentemente il modo in cui puoi gestire le funzionalità disponibili in Skype for Business online, pertanto i passaggi potrebbero essere leggermente diversi.
+Aggiorniamo spesso la gestione delle funzionalità in Skype for Business Online, quindi la procedura seguente potrebbe essere leggermente diversa.
