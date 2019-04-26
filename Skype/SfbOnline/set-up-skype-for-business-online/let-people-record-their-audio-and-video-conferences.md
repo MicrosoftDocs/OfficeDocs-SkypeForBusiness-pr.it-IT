@@ -20,11 +20,11 @@ ms.custom:
 - Setup
 description: 'Come attivare la registrazione per le conferenze audio e video e informazioni sugli aspetti è e non è incluso in registrazioni. '
 ms.openlocfilehash: 0e642dc8075c4a7cdcc6d3846cf0c69bca3e2e01
-ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30881185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32237567"
 ---
 # <a name="let-people-record-their-audio-and-video-conferences"></a>Permettere alle persone di registrare le proprie audio e videoconferenze
 
@@ -47,7 +47,7 @@ Quando la registrazione è attivata, gli organizzatori o i relatori possono esse
 Per ulteriori informazioni, vedere [registrazione di Lync Salva e pubblica](https://support.office.com/en-US/Article/83cf1507-0f05-40f5-a520-5a6c133bc33e) e [Lync registrazione manager](https://support.office.com/en-US/Article/fa915c55-ff55-45c0-b372-1ef5596da10b). 
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

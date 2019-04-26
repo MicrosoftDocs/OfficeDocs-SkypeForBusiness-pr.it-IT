@@ -19,11 +19,11 @@ ms.custom:
 - Setup
 description: 'Informazioni su come impostare la protezione di applicazioni per dispositivi mobili per gli utenti. '
 ms.openlocfilehash: 0c07bbbe7d186774c4c8aa13d7fcb08bf81dcb63
-ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30886832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32237259"
 ---
 # <a name="skype-for-business-mobile-app-security"></a>Sicurezza dell’app per dispositivi mobili di Skype for Business
 
@@ -41,7 +41,7 @@ In questo articolo vengono illustrate informazioni sulla crittografia dei dati i
 **Nota:** Fare riferimento a [questa documentazione pubblica](https://docs.microsoft.com/InTune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) per l'applicazione pin dispositivi disponibile in ogni le piattaforme mobili
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

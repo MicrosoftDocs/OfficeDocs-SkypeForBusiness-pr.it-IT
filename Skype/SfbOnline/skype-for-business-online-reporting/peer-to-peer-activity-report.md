@@ -22,15 +22,15 @@ ms.custom:
 - Reporting
 description: 'Get a Skype for Business Peer-to-peer activity report, and learn how to interpret and customize it for your needs. '
 ms.openlocfilehash: 7610f8c97dcab5536f8c02420e4aff83cb4aaefe
-ms.sourcegitcommit: d12a9f2d10093e24d4af54ce6044b512e7e3787e
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30453977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242228"
 ---
 # <a name="peer-to-peer-activity-report"></a>Report attività peer-to-peer
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella propria organizzazione. Permette di approfondire le analisi fino al livello dei report dei singoli prodotti per un panorama più dettagliato delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare il rapporto **Skype per attività peer-to-peer Business** per visualizzare quanto gli utenti utilizzano la messaggistica immediata, audio, video, condivisione dell'applicazione e trasferimento di file. 
+[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare il rapporto **Skype per attività peer-to-peer Business** per visualizzare quanto gli utenti utilizzano la messaggistica immediata, audio, video, condivisione dell'applicazione e trasferimento di file. 
 
 Consultare la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
   

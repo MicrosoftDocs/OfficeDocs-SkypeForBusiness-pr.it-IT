@@ -20,13 +20,13 @@ ms.custom:
 - Optimization
 description: In questo argomento definisce il set di requisiti di prestazioni di rete per Skype per i servizi in linea di Business e la valutazione della rete in base a come è possibile scegliere di utilizzare Internet o ExpressRoute per la connettività tra la rete e Skype Business online connettività. Se si è deciso di distribuire ExpressRoute Azure per la connettività dedicata a Office 365, questo documento vengono inoltre fornite indicazioni su come pianificare le connessioni ExpressRoute in Skype diversi per gli scenari aziendali in linea.
 ms.openlocfilehash: 00d77bc72cbfd99d496bf458e008cce3da7970c3
-ms.sourcegitcommit: 30620021ceba916a505437ab641a23393f55827a
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26533234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32236924"
 ---
-# <a name="media-quality-and-network-connectivity-performance-in-skype-for-business-online"></a>Qualità degli elementi multimediali e prestazioni della connessione di rete in Skype for Business online
+# <a name="media-quality-and-network-connectivity-performance-in-skype-for-business-online"></a>Qualità multimediale e prestazioni della connettività di rete in Skype for Business online
 
 In questo argomento definisce il set di requisiti di prestazioni di rete per Skype per i servizi in linea di Business e la valutazione della rete in base a come è possibile scegliere di utilizzare Internet o ExpressRoute per la connettività tra la rete e Skype Business online connettività. Se si è deciso di distribuire ExpressRoute Azure per la connettività dedicata a Office 365, questo documento vengono inoltre fornite indicazioni su come pianificare le connessioni ExpressRoute in Skype diversi per gli scenari aziendali in linea.
   
@@ -126,13 +126,13 @@ Skype ottimale per la qualità dei supporti aziendali, i seguenti obiettivi metr
   
 |||
 |:-----|:-----|
-|**Metrica** <br/> |**Destinazione** <br/> |
-|Latenza (unidirezionale)  <br/> |< 50ms  <br/> |
-|Latenza (RTT o tempo di round trip)  <br/> |< 100 ms  <br/> |
-|Burst di perdita di pacchetti  <br/> |< pari al 10% durante un intervallo di 200 ms  <br/> |
-|Perdita di pacchetti  <br/> |< % 1 durante qualsiasi 15s intervallo  <br/> |
-|Instabilità in arrivo tra pacchetti  <br/> |< 30 ms durante qualsiasi 15s intervallo  <br/> |
-|Riordino dei pacchetti  <br/> |< pacchetti in ordine 0,05%  <br/> |
+|**Metrica** <br/> |**bersaglio** <br/> |
+|Latenza (unidirezionale)  <br/> |lt 50ms  <br/> |
+|Latenza (RTT o tempo di round trip)  <br/> |lt 100 ms  <br/> |
+|Burst di perdita di pacchetti  <br/> |% <10 durante un intervallo di 200 ms  <br/> |
+|Perdita di pacchetti  <br/> |% <1 durante qualsiasi 15s intervallo  <br/> |
+|Instabilità in arrivo tra pacchetti  <br/> |<30ms durante qualsiasi 15s intervallo  <br/> |
+|Riordino dei pacchetti  <br/> |pacchetti in ordine <0.05%  <br/> |
    
  **Altri requisiti di destinazione delle prestazioni:**
   
@@ -152,13 +152,13 @@ Di seguito è gli obiettivi di prestazioni di rete o soglie necessari per la con
   
 |||
 |:-----|:-----|
-|**Metrica** <br/> |**Destinazione** <br/> |
-|Latenza (unidirezionale)  <br/> |< 30 ms  <br/> |
-|Latenza (RTT)  <br/> |< 60 MS  <br/> |
-|Burst di perdita di pacchetti  <br/> |< % 1 durante un intervallo di 200 ms  <br/> |
-|Perdita di pacchetti  <br/> |< 0,1% durante qualsiasi 15s intervallo  <br/> |
-|Instabilità in arrivo tra pacchetti  <br/> |< 15 ms durante qualsiasi 15s intervallo  <br/> |
-|Riordino dei pacchetti  <br/> |< pacchetti in ordine allo 0,01%  <br/> |
+|**Metrica** <br/> |**bersaglio** <br/> |
+|Latenza (unidirezionale)  <br/> |lt 30 ms  <br/> |
+|Latenza (RTT)  <br/> |lt 60 MS  <br/> |
+|Burst di perdita di pacchetti  <br/> |% <1 durante un intervallo di 200 ms  <br/> |
+|Perdita di pacchetti  <br/> |<0.1% durante qualsiasi 15s intervallo  <br/> |
+|Instabilità in arrivo tra pacchetti  <br/> |<15ms durante qualsiasi 15s intervallo  <br/> |
+|Riordino dei pacchetti  <br/> |pacchetti in ordine <0.01%  <br/> |
    
  **Altri requisiti di destinazione delle prestazioni:**
   

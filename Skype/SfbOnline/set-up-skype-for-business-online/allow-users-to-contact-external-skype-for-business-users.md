@@ -28,11 +28,11 @@ ms.custom:
 - LIL_Placement
 description: "Informazioni su come configurare Skype for Business consentire agli utenti di comunicare agli utenti di un'altra organizzazione o consentire a tali contatti esterni. "
 ms.openlocfilehash: 352973816e07ce60cff650f43ac6fced7f81e3b1
-ms.sourcegitcommit: 1bb3bf4b16394aaa1fdf9bab8d766afe040b9aac
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31907498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32239218"
 ---
 # <a name="allow-users-to-contact-external-skype-for-business-users"></a>Permettere agli utenti di contattare utenti Skype for Business esterni
 

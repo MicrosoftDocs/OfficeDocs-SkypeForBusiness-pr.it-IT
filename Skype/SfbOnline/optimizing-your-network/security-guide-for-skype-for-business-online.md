@@ -21,15 +21,15 @@ ms.custom:
 - Security
 description: Guida alla sicurezza per Skype for Business online <add description>
 ms.openlocfilehash: 555a7bd3e4a57c637c0375ea406caeca3c221be7
-ms.sourcegitcommit: f3b41e7abafc84571bd9e8267d41decc0fe78e4a
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30493915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32248003"
 ---
 # <a name="security-and-skype-for-business-online"></a>Sicurezza e Skype for Business in linea
 
-Skype for Business Online (SfBO), as part of the Office 365 service, follows all the security best practices and procedures such as service-level security through defense-in-depth, customer controls within the service, security hardening and operational best practices. Per informazioni dettagliate, vedere Microsoft Trust Center (https://microsoft.com/trustcenter).
+Skype for Business Online (SfBO), come parte del servizio Office 365, segue tutte le migliori pratiche e procedure di sicurezza, come la protezione a livello di servizio attraverso difesa in profondità, controlli utente nell'ambito del servizio, potenziamento delle misure di sicurezza e best practice operative. Per informazioni dettagliate, vedere Microsoft Trust Center (https://microsoft.com/trustcenter).
 
 ## <a name="trustworthy-by-design"></a>Affidabile per progettazione
 Skype for Business Online is designed and developed in compliance with the Microsoft Trustworthy Computing Security Development Lifecycle (SDL), which is described at https://www.microsoft.com/en-us/sdl/default.aspx. The first step in creating a more secure unified communications system was to design threat models and test each feature as it was designed. Multiple security-related improvements were built into the coding process and practices. Build-time tools detect buffer overruns and other potential security threats before the code is checked in to the final product. Of course, it is impossible to design against all unknown security threats. No system can guarantee complete security. However, because product development embraced secure design principles from the start, Skype for Business Online incorporates industry standard security technologies as a fundamental part of its architecture. 
@@ -125,7 +125,7 @@ This section provides an overview of the fundamental elements that form the secu
 - Transport Layer Security (TLS), HTTPS over SSL (HTTPS), and mutual TLS (MTLS) enable endpoint authentication and IM encryption. Point-to-point audio, video, and application sharing streams are encrypted and integrity checked using Secure Real-Time Transport Protocol (SRTP).
 - Protocolli standard del settore per l'autenticazione dell'utente, ove possibile.
 
-Gli argomenti di questa sezione descrivono come ciascuno di questi elementi fondamentali funziona per migliorare la sicurezza del servizio SfBO.
+Negli argomenti di questa sezione viene descritto il funzionamento ognuno di questi elementi fondamentali per ottimizzare la sicurezza del servizio SfBO.
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 Azure Active Directory functions as the directory service for O365. It stores all user directory information and policy assignments. 
@@ -203,10 +203,10 @@ For media authentication, the ICE and TURN protocols also use the Digest challen
 I certificati client costituiscono un'alternativa per gli utenti essere autenticati da SfBO. Invece di fornire un nome utente e password, gli utenti dispongono di un certificato e la chiave privata corrispondente al certificato che è necessario risolvere una richiesta di crittografia. 
 
 ### <a name="windows-powershell-and-sfbo-management-tools"></a>Strumenti di gestione di Windows PowerShell e SfBO
-In SfBO, gli amministratori IT possono gestire il servizio tramite il portale amministratore O365 o utilizzando TRPS (Tenant Remote PowerShell). Gli amministratori dei tenant utilizzano l'autenticazione moderna per l'autenticazione in TRPS.
+In SfBO, gli amministratori IT possono gestire il servizio tramite il portale amministratore O365 o utilizzando TRPS (Tenant Remote PowerShell). Gli amministratori tenant utilizzano l'autenticazione moderno per l'autenticazione con TRPS.
 
 ### <a name="configuring-access-to-sfbo-at-your-internet-boundary"></a>Configurazione dell'accesso a SfBO al tuo limite Internet
-Per SfBO per il corretto funzionamento (gli utenti in grado di partecipare alle riunioni e così via), i clienti è necessario configurare l'accesso internet in modo che il traffico UDP e TCP in uscita per i servizi di SfBO cloud è consentita. Per maggiori dettagli, consultare: https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_lyo 
+Per SfBO per il corretto funzionamento (gli utenti in grado di partecipare alle riunioni e così via), i clienti è necessario configurare l'accesso internet in modo che il traffico UDP e TCP in uscita per i servizi di SfBO cloud è consentita. Per ulteriori informazioni, vedere di seguito:https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_lyo 
 
 ### <a name="udp-3478-3481-and-tcp-443"></a>UDP 3478-3481 e TCP 443
 
@@ -237,7 +237,7 @@ Enabling external users and internal users to exchange media requires an Access 
 4. Tra il client e A / V Conferencing Server, una connessione multimediale viene negoziato e il programma di installazione tramite SRTP.
 5. A user receives an email containing an invitation to join an SfBO meeting. The email contains a conference key and a HTTP-based URL linking to the conference. Both the key and the URL are unique for a particular meeting.
 
-### <a name="federation-safeguards-for-sfbo"></a>Garanzie di federazione per SfBO
+### <a name="federation-safeguards-for-sfbo"></a>Misure di protezione per la federazione per SfBO
 La federazione offre all'organizzazione la capacità di comunicare con altre organizzazioni per condividere messaggi istantanei e presenza. Nella federazione SfBO è attiva per impostazione predefinita. Tuttavia, gli amministratori dei tenant hanno la possibilità di controllare questa funzione tramite il portale amministratore O365. Vedi altro.
 
 ## <a name="addressing-threats-to-sfbo-conferences"></a>Affrontare le minacce alle Conferenze SfBO
@@ -283,7 +283,7 @@ Meeting organizers control whether participants can present during a meeting. Ea
 - **Solo organizzatore**&nbsp;&nbsp;solo l'organizzatore della riunione può agire come relatore.
 - **Persone appartenenti alla società**&nbsp;&nbsp;tutti gli utenti interni possono presentare.
 - **Tutti, incluse le persone esterne alla società**&nbsp;&nbsp;chiunque (non esistono restrizioni) partecipi alla riunione può agire come relatore.
-- **Persone che scelgo**&nbsp;&nbsp; L'organizzatore della riunione specifica quali utenti possono presentare aggiungendoli a un elenco di relatori.
+- **Persone scelte dall'utente**&nbsp;&nbsp;l'organizzatore della riunione specifica quali utenti possono agire aggiungendoli a un elenco dei relatori.
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Centro protezione di Microsoft](https://microsoft.com/trustcenter)

@@ -1,5 +1,5 @@
 ---
-title: 'Skype per pensionistico Business Online piano 1 '
+title: 'Ritiro di Skype for Business online (Piano 1) '
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,13 +20,13 @@ ms.custom:
 - Licensing
 description: Skype per Business Online piano 1 è stato rimosso. Tuttavia, se si dispone di un abbonamento a Skype per Business Online piano 1, questa modifica non influisce sul è interrotto. Quando sei pronto a passare a un nuovo piano, ovvero immediatamente o durante il rinnovo, sarà necessario tre opzioni.
 ms.openlocfilehash: d8468fa2d070e98cb19a1f41fff6884ac7c3517e
-ms.sourcegitcommit: 6212645c485c41aafe1206bf7d39171ce35837b2
+ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24968609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32248714"
 ---
-# <a name="skype-for-business-online-plan-1-retirement"></a>Skype per pensionistico Business Online piano 1 
+# <a name="skype-for-business-online-plan-1-retirement"></a>Ritiro di Skype for Business online (Piano 1) 
 
 Skype per Business Online piano 1 è stato rimosso. Tuttavia, se si dispone di un abbonamento a Skype per Business Online piano 1, questa modifica non influisce sul è interrotto. Un amministratore globale di Office 365, sarà ricevere gli aggiornamenti di posta elettronica e vedere i post nel centro di messaggi (parte dell'interfaccia di amministrazione di Office 365) con informazioni su cui è necessario eseguire l'azione necessaria. Nel frattempo, possono continuare a utilizzare le Skype esistente per le licenze Business Online piano 1.
 
