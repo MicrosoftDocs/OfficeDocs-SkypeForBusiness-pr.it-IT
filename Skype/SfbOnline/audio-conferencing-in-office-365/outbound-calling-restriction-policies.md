@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Gli amministratori possono controllare il tipo di utente finale e servizi di conferenza PSTN le chiamate audio che possono essere effettuate dagli utenti.
-ms.openlocfilehash: 36f116acb62cd16863cb547a11fe5687457a8a4e
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: acd75df192211465071940148e35bc7e269c7976
+ms.sourcegitcommit: d1b14268efe334aa93a6889f25fcfe46e07d5daa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229788"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33584224"
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 
@@ -39,7 +39,7 @@ Controlli delle chiamate in uscita possono essere applicati a ogni utente e forn
 |Chiamate PSTN degli utenti finali|Consente di limitare il tipo di chiamate </br>che può essere effettuata da un utente.|International e interno (impostazione predefinita)</br>Nazionale</br>Nessuno|
 
    > [!NOTE]
-   > Una chiamata è considerata interno se è il numero di telefono chiamato nello stesso paese del paese che è stato impostato in Office 365 per l'organizzatore della riunione (nel caso di conferenze audio) o l'utente finale (nel caso di chiamate PSTN degli utenti finali). 
+   > Una chiamata è considerata interna se il numero composto nello stesso paese in Office 365 stati impostati per l'organizzatore della riunione (nel caso di conferenze audio) o l'utente finale (nel caso di chiamate PSTN degli utenti finali). 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
