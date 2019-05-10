@@ -20,18 +20,18 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: "Scopri cos'è la convalida dell'indirizzo, perché è importante e che rapporto ha con gli indirizzi e servizi di emergenza. "
-ms.openlocfilehash: 4ae8ab25f83eb97929706881f7f757ee3541284d
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 85a24cff6f73bc6caaabab6a0efb436105de3a55
+ms.sourcegitcommit: b2acf18ba6487154ebb4ee46938e96dc56cb2c9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229636"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33864997"
 ---
 # <a name="what-is-address-validation"></a>Cos'è la convalida dell'indirizzo?
 
 Durante la configurazione dei Piani per chiamate in Office 365, devi assegnare un numero di telefono e un indirizzo per gli interventi di emergenza a ciascun utente.
   
-La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione dell'indirizzo. È possibile che un indirizzo per gli interventi di emergenza parzialmente corretto, in cui hai ad esempio digitato erroneamente il nome della città, superi comunque la fase di convalida. Il processo di convalida utilizza tutte le parti di un dato indirizzo per stabilire se contiene informazioni sufficienti a inoltrare la chiamata al centro dei servizi di emergenza più appropriato. In tal caso, viene considerato convalidato e può essere assegnato a un numero di telefono.
+La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione dell'indirizzo. È possibile che un indirizzo di emergenza parzialmente corretto, ad esempio il nome della città, errato può superare comunque la convalida. Il processo di convalida utilizza tutte le parti di un dato indirizzo per stabilire se contiene informazioni sufficienti a inoltrare la chiamata al centro dei servizi di emergenza più appropriato. In tal caso, viene considerato convalidato e può essere assegnato a un numero di telefono.
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
