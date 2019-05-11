@@ -1,6 +1,6 @@
 ---
 title: Impostazioni di Skype riunione trasmissione Preview
-mms.author: tonysmit
+ms.author: tonysmit
 author: tonysmit
 manager: serdars
 ms.reviewer: micchan
@@ -20,12 +20,12 @@ f1keywords:
 ms.custom:
 - SMB
 description: Skype programma preview Analisi Business fornisce anticipati accedere ai nuovi prodotti e alle funzionalità. Consente all'organizzazione di ottenere uno sguardo al nuove caratteristiche, le nuove funzionalità nel tuo ambiente di testing e fornire commenti e suggerimenti prima è rilasciare build di prodotto al pubblico. Per ulteriori informazioni, vedere Skype per l'anteprima di Business.
-ms.openlocfilehash: 1f563292e2e5927cf037e5d2a9b24405d0a336a2
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 0769d33885e3782a4e716797ef0c8995047f9659
+ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32226145"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33906570"
 ---
 # <a name="skype-meeting-broadcast-preview-settings"></a>Impostazioni di Skype riunione trasmissione Preview
 
