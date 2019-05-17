@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Migrazione servizio MMS delle riunioni è un servizio che viene eseguito in background e vengono aggiornati automaticamente Skype per le riunioni aziendali e Teams Microsoft per gli utenti. MMS è progettato per eliminare la necessità di agli utenti di eseguire lo strumento di migrazione di riunioni per aggiornare i Skype per le riunioni aziendali e Teams Microsoft.
-ms.openlocfilehash: 9a133cb2a91e50ad21b263009f8f2c64cd3d8ccb
-ms.sourcegitcommit: c997490cf7239d07e2fd52a4b03bec464b3d192b
+ms.openlocfilehash: da1b21b65794354a023632e785c463b494cc38f5
+ms.sourcegitcommit: ee05fe02fe68b5bd6ee38dd4a3ad69da3d37c492
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33835120"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34106175"
 ---
 # <a name="using-the-meeting-migration-service-mms"></a>Utilizzare il servizio di migrazione Meeting MMS)
 
@@ -83,7 +83,7 @@ In questa sezione viene descritto il comportamento quando viene attivata MMS in 
 
 Questo è lo scenario più comune dove MMS consente di creare una transizione più uniforme per gli utenti. Senza la migrazione di riunioni, riunioni esistenti organizzate da un utente in Skype Business Server locali potrebbero non funzionano più dopo lo spostamento dell'utente è online. Pertanto, quando si utilizzano gli strumenti di amministrazione locale (il `Move-CsUser` o il pannello di controllo Admin) per spostare un utente nel cloud, riunioni esistenti vengono automaticamente spostate nel cloud come indicato di seguito:
 
-- Se il `MoveToTeams` passare `Move-CsUser` è specificato, vengono eseguita la migrazione di riunioni direttamente ai team e l'utente sarà in modalità TeamsOnly. Utilizzo di questa opzione richiede Skype per Business Server con CU8 o versione successiva. Questi utenti possono comunque partecipare qualsiasi Skype per le riunioni aziendali che possono essere invitati a, tramite Skype per Business client o l'App riunione Skype.
+- Se il `MoveToTeams` passare `Move-CsUser` è specificato, vengono eseguita la migrazione di riunioni direttamente ai team e l'utente sarà in modalità TeamsOnly. Utilizzo di questa opzione richiede Skype per Business Server 2015 con CU8 o versione successiva. Questi utenti possono comunque partecipare qualsiasi Skype per le riunioni aziendali che possono essere invitati a, tramite Skype per Business client o l'App riunione Skype.
 - In caso contrario le riunioni vengono migrate in Skype Business online.
 
 In entrambi i casi, se l'utente è stata assegnata una licenza di conferenze Audio prima di essere spostati nel cloud, le riunioni saranno create con le coordinate dial-in. Se si sposta un utente in locale al cloud che si prevede di quell'utente da utilizzare per conferenze Audio, è consigliabile assegnare all'audioconferenza innanzitutto prima di spostare l'utente in modo che la migrazione di riunioni solo 1 viene attivata.
