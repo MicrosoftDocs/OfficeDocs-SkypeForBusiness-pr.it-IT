@@ -1,5 +1,5 @@
 ---
-title: Che cosa è necessario eseguire dopo aver trasferito su numeri di telefono?
+title: Cosa occorre fare dopo aver effettuato il porting sui numeri di telefono?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,25 +20,25 @@ f1keywords:
 - ms.lync.lac.PortOrderFinish
 ms.custom:
 - Calling Plans
-description: Visualizzare le informazioni necessarie eseguire successivamente dopo aver trasferito i numeri di telefono a Skype per le aziende.
-ms.openlocfilehash: edcf796be766f62a99686c2182091daa13d3a810
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: Dopo aver convertito i numeri di telefono in Skype for business, vedere cosa è necessario fare.
+ms.openlocfilehash: fc63f734b9be26db928488f7b759ca5e68ddc29b
+ms.sourcegitcommit: d7c8d03883d4ae4e37af88625dd74ab037eac914
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229587"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34159175"
 ---
-# <a name="what-do-you-need-to-do-after-you-have-ported-over-your-phone-numbers"></a>Che cosa è necessario eseguire dopo aver trasferito su numeri di telefono?
+# <a name="what-do-you-need-to-do-after-you-have-ported-over-your-phone-numbers"></a>Cosa occorre fare dopo aver effettuato il porting sui numeri di telefono?
 
-Dopo che è stato inviato l'ordine delle porte, si contatta il gestore e utilizzare i dettagli con loro. Quando è stata impostata la data di trasferimento finale, si invierà una notifica tramite posta elettronica. Tuttavia, durante l'attesa sul gestore di accettare l'ordine, proseguire e creare gli indirizzi di emergenza necessari che verrà utilizzato con tali numeri.
+Dopo aver inoltrato l'ordine di trasferimento, contatteremo il gestore e ne useremo i dettagli. Quando è stata impostata la data di trasferimento finale, verrà inviata una notifica tramite posta elettronica. Tuttavia, mentre aspetti il gestore per accettare l'ordine, vai avanti e crea gli indirizzi di emergenza necessari che userai con questi numeri.
   
-- Per ulteriori informazioni su [quali sono posizioni di emergenza, indirizzi e il routing delle chiamate?](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing).
+- Ulteriori informazioni sulle [posizioni di emergenza, gli indirizzi e il routing delle chiamate](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing).
     
-- Se si desidera, è possibile [aggiungere o rimuovere un'emergenza indirizzo per l'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md) .
+- Se necessario, è possibile [aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md) .
     
-- Se i numeri di telefono dispone già di un indirizzo di emergenza, [aggiungere, modificare o rimuovere un percorso di emergenza per l'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md).
+- Se i numeri di telefono hanno già un indirizzo di emergenza, [aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md).
     
-- [Assegnare, modificare o rimuovere il numero di telefono di un utente](assign-change-or-remove-a-phone-number-for-a-user.md)
+- [Assegnare, modificare o rimuovere il numero di telefono di un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user)
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
