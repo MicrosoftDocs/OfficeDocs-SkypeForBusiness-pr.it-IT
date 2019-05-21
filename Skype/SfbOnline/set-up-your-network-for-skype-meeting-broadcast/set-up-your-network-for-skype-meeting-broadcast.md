@@ -10,56 +10,56 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - SMB
-description: Informazioni sulla funzionalità di trasmissione riunione Skype di Skype Business online che consente inoltre di pianificazione, prodotti e trasmissione riunioni o eventi ai gruppi di destinatari in linea di grandi dimensioni fino a 10.000 partecipanti.
-ms.openlocfilehash: b29ec51ddcb672f6727f7bc43958872962245ebb
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: Informazioni sulla funzionalità Skype meeting broadcast di Skype for business online che consente di pianificare, produrre e trasmettere riunioni o eventi a un ampio pubblico online fino a 10.000 partecipanti.
+ms.openlocfilehash: f9a85a1f64f88b55d99c7a27694a46b7ea885849
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32226163"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34301289"
 ---
 # <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
-Dopo aver [Abilitare trasmissione riunione Skype](enable-skype-meeting-broadcast.md) trasmissione riunione Skype, è necessario configurare la rete. Eseguire questo passaggio se si desidera mantenere webinar e altre trasmissioni per gli utenti all'esterno dell'azienda.
+Dopo aver [abilitato Skype meeting broadcast](enable-skype-meeting-broadcast.md) Skype meeting broadcast, è necessario configurare la rete. Eseguire questa procedura se si vogliono tenere webinar e altre trasmissioni per gli utenti esterni all'azienda.
 
-Se non si è pratici di configurazione del firewall, potrebbe essere necessario rivolgersi un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio è.
+Se non si ha esperienza con la configurazione del firewall, prendere in considerazione l'assunzione di un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio.
 
-Per ignorare questo passaggio e aggiungere invece business diversa per la federazione in modo che possono essere invitati alle trasmissioni, seguire i passaggi descritti in [Consenti agli utenti di contatti esterni Skype per gli utenti aziendali](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md).
+Per ignorare questo passaggio e aggiungere un altro business alla Federazione in modo da poterlo invitare alle trasmissioni, seguire i passaggi descritti in [consentire agli utenti di contattare utenti Skype for business esterni](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md).
 
-## <a name="step-1-set-up-allowed-domains"></a>Passaggio 1: Impostare i domini consentiti
+## <a name="step-1-set-up-allowed-domains"></a>Passaggio 1: configurare i domini consentiti
 
-Per impostare i domini consentiti, utilizzare **uno** dei metodi seguenti:
+Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
 ## #
 
- **Metodo 1: Utilizzare l'interfaccia di amministrazione di Office 365**
+ **Metodo 1: usare l'interfaccia di amministrazione di Office 365**
 
-1. Visitare il **Centro di amministrazione di Office 365** e quindi la barra di spostamento sinistra fare clic su **Impostazioni** > **servizi &amp; componenti aggiuntivi**e quindi fare clic su **Skype per le aziende**.
+1. Accedere all'interfaccia **di amministrazione di Office 365** e quindi fare clic su componenti aggiuntivi **** > **servizi &amp; **impostazioni nella barra di spostamento sinistra e quindi scegliere **Skype for business**.
 
-2. Nella pagina **condivisione esterna** in **eccezioni di dominio**, selezionare **tutti i domini vengono bloccati, ad eccezione**e immettere i seguenti domini separati da una virgola (,):
+2. Nella pagina **condivisione esterna** in **eccezioni di dominio**Selezionare **tutti i domini sono bloccati eccetto**e immettere i domini seguenti, separati da una virgola (,):
 
-   - noammeetings.Lync.com
+   - noammeetings.lync.com
 
-   - emeameetings.Lync.com
+   - emeameetings.lync.com
 
-   - apacmeetings.Lync.com
+   - apacmeetings.lync.com
 
-   - Resources.Lync.com
+   - resources.lync.com
 
 3. Fai clic su **Salva**.
 
 ## #
 
- **Metodo 2: Utilizzare Windows PowerShell**
+ **Metodo 2: usare Windows PowerShell**
 
-- Dal **Menu Start di** **Windows PowerShell** pulsante destro del mouse e fare clic su **Esegui come amministratore**. Nella finestra di **Windows PowerShell** , digitare ogni riga e premere INVIO.
+- Nel **menu Start**fare clic con il pulsante destro del mouse su **Windows PowerShell** e scegliere **Esegui come amministratore**. Nella finestra di **Windows PowerShell** Digitare ogni riga e premere INVIO.
 
   ```
   $r = New-CsEdgeDomainPattern -Domain "noammeetings.lync.com"
@@ -85,15 +85,15 @@ Per impostare i domini consentiti, utilizzare **uno** dei metodi seguenti:
   Set-CsTenantFederationConfiguration -AllowedDomains $newAllowList
   ```
 
-## <a name="step-2-add-skype-meeting-broadcast-domains-urls-and-ip-addresses"></a>Passaggio 2: Aggiungere Skype riunione trasmissione domini, gli URL e IP indirizzi
+## <a name="step-2-add-skype-meeting-broadcast-domains-urls-and-ip-addresses"></a>Passaggio 2: aggiungere domini, URL e indirizzi IP di Skype meeting broadcast
 
-Il secondo passaggio del processo di installazione è consente di aggiungere i domini necessarie e quindi aggiungono gli indirizzi IP e gli URL che sono necessari per trasmettere riunione Skype per l'utilizzo.
+Il secondo passaggio del processo di configurazione è la prima volta che si aggiungono i domini necessari e quindi si aggiungono gli indirizzi IP e gli URL necessari per il funzionamento di Skype meeting broadcast.
 
-- **Aggiungere Skype necessarie per gli URL degli endpoint Business Online e gli indirizzi IP verificando quali sono necessari** [di seguito](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_lyo).
+- **Aggiungere gli URL e gli indirizzi IP dell'endpoint Skype for business online necessari per vedere quali sono necessari** [qui](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_lyo).
 
-## <a name="set-up-skype-meeting-broadcast-in-hybrid-deployments-and-organizations"></a>Configurazione di trasmissione riunione Skype nelle organizzazioni e le distribuzioni ibride
+## <a name="set-up-skype-meeting-broadcast-in-hybrid-deployments-and-organizations"></a>Configurare Skype meeting broadcast in distribuzioni e organizzazioni ibride
 
-Se sono Skype per le organizzazioni aziendali in linea e una distribuzione locale di Lync Server 2010, Microsoft Lync Server 2013 e Skype per Business Server 2015 e avere agli utenti sia online e locale, sono disponibili altre operazioni di installazione è necessario eseguire Oltre a quelli sopra per abilitare l'organizzazione locale comunicare con Skype Business online e tutti gli utenti possono partecipare a una riunione Skype trasmissione. Per verificare quali sono i requisiti, vedere [configurare la distribuzione in locale per la trasmissione riunione Skype](https://go.microsoft.com/fwlink/?LinkId=617070).
+Se si ha un'organizzazione di Skype for business online e una distribuzione locale di Lync Server 2010, Microsoft Lync Server 2013 e Skype for Business Server 2015 e gli utenti sono online e locali, è necessario eseguire altre operazioni di configurazione oltre a quelli descritti sopra, per consentire all'organizzazione locale di comunicare con Skype for business online e consentire a tutti gli utenti di partecipare a una riunione Skype meeting broadcast. Per vedere quali sono questi requisiti, vedere [configurare la distribuzione locale per Skype meeting broadcast](https://go.microsoft.com/fwlink/?LinkId=617070).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

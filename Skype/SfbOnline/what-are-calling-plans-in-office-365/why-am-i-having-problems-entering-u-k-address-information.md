@@ -1,5 +1,5 @@
 ---
-title: Perché si verificano problemi immissione Regno Unito informazioni sull'indirizzo?
+title: Perché si verificano problemi con l'immissione in UK informazioni sull'indirizzo?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -20,91 +20,91 @@ f1keywords:
 - ms.lync.lac.CivicAddressGBSyntaxError
 ms.custom:
 - Calling Plans
-description: Di seguito sono indicati alcuni dei motivi per cui si verificarsi problemi nell'ottenere l'indirizzo o gli indirizzi per convalidare correttamente nel Regno Unito (Regno Unito).
-ms.openlocfilehash: dafc6608f45393ccc0a39ecdb2c01e2479ec630b
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: Ecco alcuni motivi per cui potresti avere problemi a ottenere l'indirizzo o gli indirizzi da convalidare correttamente nel Regno Unito (UK).
+ms.openlocfilehash: e710f2ef502bb264677bc89d5cdebb2584d48679
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32227815"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34290689"
 ---
-# <a name="why-am-i-having-problems-entering-uk-address-information"></a>Perché si verificano problemi immissione Regno Unito informazioni sull'indirizzo?
+# <a name="why-am-i-having-problems-entering-uk-address-information"></a>Perché si verificano problemi con l'immissione in UK informazioni sull'indirizzo?
 
-Di seguito sono indicati alcuni dei motivi per cui si verificarsi problemi nell'ottenere l'indirizzo o gli indirizzi per convalidare correttamente nel Regno Unito (Regno Unito).
+Ecco alcuni motivi per cui potresti avere problemi a ottenere l'indirizzo o gli indirizzi da convalidare correttamente nel Regno Unito (UK).
   
-## <a name="whats-wrong-with-the-company-name"></a>Che cos'è un problema con il nome della società?
+## <a name="whats-wrong-with-the-company-name"></a>Qual è il problema con il nome della società?
 
-Se si è verificato un problema immettere il nome della società, tenere presenti:
+In caso di problemi con l'immissione del nome della società, tenere presente quanto segue:
   
-- Può avere lettere, numeri e caratteri speciali seguenti:, / - +. ' &amp; " _ 
+- Può avere lettere, numeri e i seguenti caratteri speciali:,/-+. ' &amp; " _ 
     
     > [!CAUTION]
-    > Nel Regno Unito (Regno Unito), il nome della società non può avere il segno +. 
+    > Nel Regno Unito (UK) il nome della società non può avere il segno +. 
   
-- Lo schema deve essere 80 caratteri o meno.
+- Deve essere di 80 caratteri o meno.
     
 - Non può iniziare con un carattere speciale.
     
-## <a name="whats-wrong-with-the-house-number"></a>Che cos'è un problema con il numero di accesso a terze parti?
+## <a name="whats-wrong-with-the-house-number"></a>Qual è il problema con il numero civico?
 
-Se si è verificato un problema immettendo il numero civico, tenere presenti:
+In caso di problemi con l'immissione del numero civico, tenere presente quanto segue:
   
-- Può avere lettere, numeri e caratteri speciali seguenti:-/]
+- Può avere lettere, numeri e i caratteri speciali seguenti:-/[]
     
 - Deve iniziare con un numero.
     
-- Lo schema deve essere 20 caratteri o meno.
+- Deve essere di 20 caratteri o meno.
     
-- Può avere un maiuscola o minuscola.
+- Può avere una lettera maiuscola o minuscola.
     
-## <a name="whats-wrong-with-the-house-name"></a>Che cos'è un problema con il nome di accesso a terze parti?
+## <a name="whats-wrong-with-the-house-name"></a>Qual è il problema con il nome della casa?
 
-Se si è verificato un problema immettere il nome di accesso a terze parti, tenere presenti:
+In caso di problemi con l'immissione del nome dell'abitazione, tenere presente quanto segue:
   
-- Può avere lettere, numeri e caratteri speciali seguenti:, / - +. ' &amp; " _
+- Può avere lettere, numeri e i seguenti caratteri speciali:,/-+. ' &amp; " _
     
-- Lo schema deve essere 50 caratteri o meno.
+- Deve essere di 50 caratteri o meno.
     
 - Non può iniziare con un carattere speciale.
     
-## <a name="whats-wrong-with-the-street-name"></a>Che cos'è un problema con il nome della via?
+## <a name="whats-wrong-with-the-street-name"></a>Qual è il problema con il nome della strada?
 
-Se si è verificato un problema immettere il nome della via, tenere presenti:
+In caso di problemi con l'immissione del nome della strada, tenere presente quanto segue:
   
-- Può avere lettere, numeri e caratteri speciali seguenti:, / - +. ' &amp; " _ 
+- Può avere lettere, numeri e i seguenti caratteri speciali:,/-+. ' &amp; " _ 
     
-- Lo schema deve essere 50 caratteri o meno.
+- Deve essere di 50 caratteri o meno.
     
 - Non può iniziare con un carattere speciale. 
     
-## <a name="whats-wrong-with-the-city-or-town"></a>Che cos'è un problema con propria città?
+## <a name="whats-wrong-with-the-city-or-town"></a>Qual è il problema con la città o la città?
 
-Se si è verificato un problema immettere il nome della propria città, tenere presenti:
+Se si verifica un problema con l'immissione del nome della città o della città, tenere presente quanto segue:
   
-- Può avere lettere, numeri e caratteri speciali seguenti:, / - +. ' &amp; " _
+- Può avere lettere, numeri e i seguenti caratteri speciali:,/-+. ' &amp; " _
     
-- Lo schema deve essere 50 caratteri o meno.
+- Deve essere di 50 caratteri o meno.
     
 - Non può iniziare con un carattere speciale. 
     
-## <a name="whats-wrong-with-the-postal-code"></a>Che cos'è un problema con il codice postale?
+## <a name="whats-wrong-with-the-postal-code"></a>Qual è il problema con il codice postale?
 
-Se si è verificato un problema immettere il codice postale, tenere presenti:
+In caso di problemi con l'immissione del codice postale, tenere presente quanto segue:
   
 - Può avere solo lettere, numeri o spazi.
     
-- Deve avere le lettere minore o uguale a 8, compresi i numeri e spazi.
+- Deve avere 8 o meno lettere, inclusi i numeri e gli spazi.
     
-- **Tenere presente che se si è nel Regno Unito (Regno Unito)**, è **necessario** inserire il codice postale in uno dei seguenti formati dove la lettera A = caratteri A-Z, il simbolo # = un numero compreso tra 0-9 e _ (sottolineatura) = uno spazio vuoto. Di seguito sono riportati alcuni esempi:
+- **Tenere presente che, se si usa il Regno Unito (UK)**, è **necessario** inserire il codice postale in uno dei formati seguenti, in cui la lettera a = carattere a-Z, il segno # = un numero da 0-9 e la _ (sottolineatura) = uno spazio vuoto. Ecco alcuni esempi:
     
 |**Formato**|**Esempio**|
 |:-----|:-----|
-|AA #A_ #AA  <br/> |EC3B 2BD  <br/> |
-|UN A_ # #AA  <br/> |E1W 1AP  <br/> |
-|UN #_ #AA  <br/> |F1 2AG  <br/> |
-|UN _ # # #AA  <br/> |C44 8HT  <br/> |
-|AA #_ #AA  <br/> |DR3 HG 6  <br/> |
-|AA # # _ #AA  <br/> |1 ª FN35  <br/> |
+|AA # _ # AA #  <br/> |EC3B 2BD  <br/> |
+|A # _ # AA #  <br/> |E1W 1AP  <br/> |
+|A # _ # AA  <br/> |2AG F1  <br/> |
+|UN # #_ # AA  <br/> |C44 8HT  <br/> |
+|AA # _ # AA  <br/> |DR3 6HG  <br/> |
+|AA # #_ # AA  <br/> |FN35 1O  <br/> |
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

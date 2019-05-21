@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -19,52 +19,52 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Conference Participant Activity report, and how to interpret and customize it. '
-ms.openlocfilehash: 44427c5ed40d44c9ad82223dd468f869dcbeec0c
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 3be118c02e260688f89bea31283c3914d657d045
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242022"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34303675"
 ---
 # <a name="conference-participant-activity-report"></a>Report attività partecipante di conferenze
 
-L'amministratore di Office 365, il nuovo dashboard **report** sono visualizzati i dati sull'utilizzo dei prodotti Office 365 all'interno dell'organizzazione. È possibile utilizzare il report **Skype per l'attività di Business conferenza partecipanti** per vedere quanti messaggistica immediata, audio/video, condivisione applicazioni, Web e Partecipate a conferenze telefoniche/esclusione sono viene dagli utenti nell'organizzazione.
+Come amministratore di Office 365, il dashboard nuovi **report** Mostra i dati sull'uso dei prodotti Office 365 all'interno dell'organizzazione. È possibile usare il report **attività partecipante di conferenze di Skype for business** per vedere in che modo gli utenti dell'organizzazione hanno partecipato a conferenze di messaggistica istantanea, audio/video, condivisione applicazioni, Web e accesso esterno/uscita.
 
-Consultare la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per ulteriori informazioni.
+Per altre informazioni, vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) .
   
-La relazione, nonché altri Skype per i report di Business, offre informazioni dettagliate sull'attività di conferenza all'interno dell'organizzazione. Questi dettagli sono molto utili per indagare, pianificare e prendere altre decisioni aziendali per l'organizzazione.
+Questo report, insieme agli altri report di Skype for business, fornisce informazioni dettagliate sulle attività di conferenza in tutta l'organizzazione. Questi dettagli sono molto utili per indagare, pianificare e prendere altre decisioni aziendali per l'organizzazione.
   
 > [!NOTE]
 > I report sono disponibili quando si accede a Skype for Business come amministratore dall'interfaccia di amministrazione di Office 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-conference-participant-report"></a>Come ottenere i report sui partecipanti alle conferenze di Skype for Business
 
-1. Vai al **Centro di amministrazione di Office 365** > **report** > **dati di utilizzo**.
+1. Accedere all'**uso**di**report** > dell'interfaccia di **Amministrazione** > di Office 365.
     
-2. Nella pagina **utilizzo** , fare clic su **Skype per l'attività partecipante di conferenza aziendali** in **Selezionare un elenco dei report** a sinistra. In alternativa, fare clic su widget **Skype per attività di Business** e quindi su **Skype per attività di partecipanti conferenza Business** nell'elenco **Skype per attività di Business** .
+2. Nella pagina **uso** fare clic su **attività partecipante conferenza Skype for business** nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività partecipante di conferenze** di Skype for business nell'elenco **attività di Skype for business** .
     
-     ![Dal menu attività partecipante di conferenza Skype elemento selezionato](../images/4033059e-dd2d-447d-8ee8-7515a5c26672.PNG)
+     ![Voce di menu attività partecipante conferenza Skype selezionata](../images/4033059e-dd2d-447d-8ee8-7515a5c26672.PNG)
   
     > [!IMPORTANT]
     > In base all'abbonamento a Office 365 di cui si dispone, alcuni dei report su prodotti e attività illustrati in questo articolo potrebbero non essere disponibili. 
   
 ## <a name="interpret-the-skype-for-business-conference-participant-activity-report"></a>Interpretazione del report Attività partecipante di conferenze in Skype for Business
 
-![Rapporto attività partecipante di conferenza Skype](../images/a5fb6a3f-d8bc-402e-850e-87a75fbc2546.PNG)
+![Report attività partecipante conferenza Skype](../images/a5fb6a3f-d8bc-402e-850e-87a75fbc2546.PNG)
   
 ***
-![Numero 1](../images/sfbcallout1.png)<br/>Il report **Attività partecipante di conferenze in Skype for Business** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si fa clic su in un giorno particolare del rapporto di tabella (vedere numero 7) verrà visualizzati i dati per 30 giorni, fino alla data (vedere numero 2) per cui è stato generato il rapporto.
+![Numero 1](../images/sfbcallout1.png)<br/>Il report **Attività partecipante di conferenze in Skype for Business** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si fa clic in un determinato giorno del report, la tabella (Vedi numero 7) visualizzerà i dati per 30 giorni, fino alla data (Vedi numero 2) per la generazione del report.
 > [!NOTE]
-> Se fa clic su nei dettagli di un giorno specifico, la tabella verrà visualizzati solo i dati per 30 giorni fino alla data quando è stato generato il rapporto.
+> Se si fa clic nei dettagli di un giorno specifico, nella tabella verranno visualizzati solo i dati per i 30 giorni fino alla data in cui è stato generato il report.
      
 ***
-![Numero 2](../images/sfbcallout2.png)<br/>Ogni report riporta la data in cui è stato generato. I report riflettono in genere una latenza 24 a 48 ore di tempo di attività. 
+![Numero 2](../images/sfbcallout2.png)<br/>Ogni report riporta la data in cui è stato generato. I report riflettono in genere una latenza da 24 a 48 ore dal momento dell'attività. 
 ***
 ![Numero 3](../images/sfbcallout3.png)<br/>Usare i dati del grafico interattivo **Attività** per comprendere le tendenze di utilizzo e vedere il numero totale di conferenze che hanno avuto partecipanti e il tipo di conferenze tenute nella propria organizzazione. Mostra il numero totale e il tipo di conferenze di **Messaggistica istantanea**, **Audio/video**, **Condivisione applicazioni**, **Web** e **Accesso esterno - terze parti** a cui hanno partecipato membri della propria organizzazione. 
 ***
 ![Numero 4](../images/sfbcallout4.png)<br/>Usare i dati del grafico interattivo **Utenti** per comprendere le tendenze di utilizzo e vedere il numero totale di utenti unici che hanno partecipato a conferenze tenute nella propria organizzazione. Mostra il numero totale di utenti e il tipo di conferenze di **Messaggistica istantanea**, **Audio/video**, **Condivisione applicazioni**, **Web** e **Accesso esterno - terze parti** organizzate. 
 ***
-![Numero 5](../images/sfbcallout5.png)<br/>Utilizzare i dati del grafico interattivo del grafico di **minuti** per comprendere le tendenze di utilizzo e per visualizzare il numero di minuti per cui vengono utilizzati dagli utenti durante una conferenza con audio/video e chiamate in ingresso e in uscita - Microsoft come le audioconferenze con accesso esterno consentono di organizzare provider. Mostra il numero totale di minuti di **Audio/video** utilizzati nelle conferenze a cui hanno partecipato membri dell'organizzazione.
+![Numero 5](../images/sfbcallout5.png)<br/>Usare i dati del grafico interattivo nel grafico **minuti** per comprendere le tendenze di utilizzo e visualizzare il numero di minuti usati dagli utenti quando organizzano una conferenza con audio/video e accesso esterno e chiamata in uscita-Microsoft come conferenza audio provider. Mostra il numero totale di minuti di **Audio/video** utilizzati nelle conferenze a cui hanno partecipato membri dell'organizzazione.
 ***
 ![Numero 6](../images/sfbcallout6.png)<br/>È possibile filtrare la serie visualizzata nel grafico facendo clic su un elemento nella legenda. Ad esempio, nel grafico **Attività** toccare o fare clic su **Messaggistica istantanea**, **Audio/video**, **Condivisione applicazioni**, **Web** e **Accesso esterno - terze parti** per visualizzare solo le informazioni pertinenti. La modifica di questa selezione non modifica le informazioni nella tabella della griglia.  
 ***
@@ -77,7 +77,7 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 ***
 ![Numero 8](../images/sfbcallout8.png)<br/>La tabella illustra le conferenze in cui hanno partecipato gli utenti, suddivise per utente. Mostra tutti gli utenti a cui è assegnato Skype for Business e le conferenze a cui hanno partecipato. È possibile aggiungere altre colonne alla tabella.
 *    **Nome utente** è il nome dell'utente. 
-*    **Eliminato** indica che la licenza dell'utente è stata rimossa. <br/> <br/> **Nota:**  Attività per un utente eliminato sarà comunque visualizzata in un rapporto, purché potrà è stato concesso in licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.   <br/><br/> 
+*    **Eliminato** indica che la licenza dell'utente è stata rimossa. <br/> <br/> **Nota:**  Le attività per un utente eliminato verranno comunque visualizzate in un report a condizione che sia stata concessa una licenza in un determinato momento durante il periodo di tempo selezionato. La colonna **Eliminati** consente di notare che l'utente potrebbe non essere più attivo, ma ha contribuito ai dati nel report.   <br/><br/> 
 *    **Data eliminazione** è la data in cui la licenza dell'utente è stata rimossa. 
 *    **Data di ultima attività (UTC)** è la data dell'ultima attività (UTC) per quell'utente.
 *    **Messaggistica istantanea** mostra il numero totale di conferenze di messaggistica istantanea a cui l'utente ha partecipato. 
@@ -87,9 +87,9 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 *    **Accesso esterno - terze parti** mostra il numero totale di conferenze in accesso esterno organizzate che usano un provider di servizi di audioconferenza di terza parte. 
 *    **Minuti audio/video** mostra il numero totale di minuti usati quando l'utente ha partecipato a conferenze che utilizzano audio/video. 
 
-Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Estrarre il **come nascondere dettagli relativi al livello utente?** sezione dei [Rapporti di attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
+Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **come si nascondono i dettagli del livello utente** nell' [area report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
 ***
-![Numero 9](../images/sfbcallout9.png)<br/>È anche possibile esportare i dati del report in un file CSV di Excel toccando o facendo clic o toccando **Esporta**.           <br/> ![Pulsante Esporta Skype per i report di Business.](../images/de7e2ab7-d70c-422f-a0ec-178b10f7dd51.png)<br/>Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.
+![Numero 9](../images/sfbcallout9.png)<br/>È anche possibile esportare i dati del report in un file CSV di Excel toccando o facendo clic o toccando **Esporta**.           <br/> ![Pulsante Esporta report di Skype for business.](../images/de7e2ab7-d70c-422f-a0ec-178b10f7dd51.png)<br/>Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.
 ***
 ![Numero 10](../images/sfbcallout10.png)<br/>Toccare o fare clic su **Colonne** per aggiungere o rimuovere colonne dal report.           <br/> ![Skype for Business Online Reporting Manage Button.](../images/4c8f5387-cebb-4d6c-b7d3-05c954a2c234.png)
    
@@ -105,11 +105,11 @@ Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cu
     
 - [Skype per gli utenti aziendali bloccati report](users-blocked-report.md) - Permette di consultare gli utenti dell'organizzazione a cui è impedito effettuare chiamate.
     
-- [Skype per i report di utilizzo PSTN Business](pstn-usage-report.md) È possibile visualizzare il numero di minuti, trascorso per le chiamate in ingresso/in uscita e dei costi per le chiamate.
+- [Report sull'utilizzo PSTN di Skype for business](pstn-usage-report.md) È possibile visualizzare il numero di minuti di chiamate in ingresso/in uscita e il costo per queste chiamate.
     
-- [Skype per report pool minuto Business PSTN](pstn-minute-pools-report.md) è possibile visualizzare il numero di minuti utilizzati durante il mese corrente all'interno dell'organizzazione.
+- [Report pool di minuti PSTN di Skype for business](pstn-minute-pools-report.md) è possibile visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
 
-- [Skype per rapporto Dettagli sessione Business](session-details-report.md) È possibile visualizzare informazioni dettagliate sull'esperienza di chiamata dell'utente singolo.
+- [Report Dettagli sessione di Skype for business](session-details-report.md) È possibile visualizzare i dettagli sulle singole esperienze delle chiamate degli utenti.
     
 ## <a name="related-topics"></a>Argomenti correlati
 [Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)

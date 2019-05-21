@@ -1,5 +1,5 @@
 ---
-title: Ottenere numeri di telefono del servizio
+title: Recupero di numeri di telefono del servizio
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -21,43 +21,43 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: In addition to getting phone numbers for your users from Office 365, you can search and acquire toll or toll-free phone numbers for services such as audio conferencing (for conference bridges), auto attendants, and call queues (also called service numbers). Service phone numbers have a higher concurrent calling capacity than user or subscriber phone numbers.
-ms.openlocfilehash: e1f4020e7062066451eebd626832da8d4a633069
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: ca00db8882837bc748dee89a100b2e7d9dd2d04f
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32227875"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34297972"
 ---
-# <a name="getting-service-phone-numbers"></a>Ottenere numeri di telefono del servizio
+# <a name="getting-service-phone-numbers"></a>Recupero di numeri di telefono del servizio
 
 In addition to getting phone numbers for your users from Office 365, you can search and acquire toll or toll-free phone numbers for services such as audio conferencing (for conference bridges), auto attendants, and call queues (also called service numbers). Service phone numbers have a higher concurrent calling capacity than user or subscriber phone numbers. For example, a service number can handle 100s of calls simultaneously, whereas a user's phone number can only handle a few calls simultaneously.
   
 > [!NOTE]
 > Office 365 Communications Credits must be set up first in order to acquire toll-free numbers. See [Set up Communications Credits for your organization](/microsoftteams/set-up-communications-credits-for-your-organization). 
   
-Sono disponibili due modi di ottenere numeri di servizio in modo che è possibile utilizzarli con Skype per le aziende e Teams Microsoft:
+Esistono due modi per ottenere i numeri di servizio, in modo da poterli usare con Skype for business e Microsoft teams:
   
 - Ottenere nuovi numeri da Office 365.
     
-- Porta o trasferire i numeri esistenti dal provider di servizi o gestore telefonico a Office 365.
+- Trasferire i numeri esistenti dal provider di servizi o dal gestore telefonico a Office 365.
     
     > [!NOTE]
-    > Quando si trasferiscono i numeri di servizio, è consigliabile contattare [il supporto Microsoft](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) per garantire che la capacità di chiamata simultanea superiore viene considerata e configurata correttamente.
+    > Quando si trasferiscono i numeri di servizio, è consigliabile contattare il [supporto Microsoft](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) per verificare che la capacità di chiamata concorrente più elevata sia considerata e configurata correttamente.
   
 ## <a name="get-new-service-numbers"></a>Ottenere i numeri di servizio
 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **Centro di amministrazione** > **Team e Skype** > **Skype Legacy Admin**.
+2. Accedere ai team dell'interfaccia di **Amministrazione** > **e** > all'**amministratore legacy**di Skype Skype.
     
-3. Nel riquadro sinistro passare a **Voice** > **i numeri di telefono** > **Aggiungi nuovo numero**, quindi fare clic su **nuovi numeri di servizio**.
+3. Nella barra di spostamento sinistra, vai a**numeri** > di telefono **vocale** > **Aggiungi nuovo numero**e quindi fai clic su **nuovi numeri di servizio**.
     
     > [!IMPORTANT] 
-    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+    > Per visualizzare l'opzione **Voice** nella barra di spostamento sinistra nell'interfaccia di amministrazione di Skype for business, è necessario prima acquistare almeno una licenza **Enterprise E5**, una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
     
-4. Nella pagina **Aggiungi nuovi numeri di servizio** , scegliere le operazioni seguenti:
+4. Nella pagina **Aggiungi nuovi numeri di servizio** scegliere la seguente:
     
    - **Paese/area geografica**
     
