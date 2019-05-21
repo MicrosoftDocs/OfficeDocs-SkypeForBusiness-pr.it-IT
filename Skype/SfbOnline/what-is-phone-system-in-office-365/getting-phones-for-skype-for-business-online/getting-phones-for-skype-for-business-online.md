@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -21,24 +21,24 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: 'Informazioni su quali telefoni di Polycom, HP e Mitel utilizzano Skype for Business e sulle licenze necessarie. '
-ms.openlocfilehash: e79c942923e9a9d4d0df0bc18172eb10caff57bc
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: f3a042a200f821f6e5836eb3fc6b062a88e2da35
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229526"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34297999"
 ---
 # <a name="getting-phones-for-skype-for-business-online"></a>Ottenere telefoni per Skype for Business online
 
 Skype for Business Online qualifies and supports desktop phones for users who want to have a traditional phone experience, rather than use the Skype for Business app. This topic covers the phones and firmware versions that are supported for use in Skype for Business Online and other information that can help you when you are setting up phones in your organization.
   
-Per ottenere gli aggiornamenti più recenti e la maggior parte delle informazioni aggiornate sui dispositivi supportati, vedere [Skype per il catalogo dei dispositivi Business](http://partnersolutions.skypeforbusiness.com/solutionscatalog).
+Per ottenere gli aggiornamenti più recenti e la maggior parte delle informazioni aggiornate sui dispositivi supportati, vedere il [Catalogo di dispositivi Skype for business](http://partnersolutions.skypeforbusiness.com/solutionscatalog).
   
 ## <a name="supported-phones"></a>Telefoni supportati
 
-Per Skype per gli utenti aziendali Online, è possibile scegliere tra diversi modelli di *certificati per Skype per i telefoni aziendali* e telefoni che eseguono Lync Phone Edition (LPE) elencato in Skype per categoria Business Online in [Skype per dispositivo Business Catalogo](http://partnersolutions.skypeforbusiness.com/solutionscatalog).
+Per gli utenti di Skype for business online, è possibile scegliere tra diversi modelli all'interno dei *telefoni certificati per Skype for business* e telefoni con Lync Phone Edition (LPE) elencati nella categoria Skype for business online nel [dispositivo Skype for business Catalogo](http://partnersolutions.skypeforbusiness.com/solutionscatalog).
   
-Microsoft è collaborazione e stretta collaborazione con Polycom, Yealink e AudioCodes per sviluppare e la certificazione un'ampia gamma di dispositivi tramite Partner IP Phone programma (PIP) per il sistema telefonico in Office 365 e Skype per Business Server.
+Microsoft collabora e lavora in stretta collaborazione con Polycom, Yealink e AudioCodes per sviluppare e certificare una vasta gamma di dispositivi tramite il programma PIP (partner IP Phone Program) per il sistema telefonico in Office 365 e Skype for Business Server.
   
 When ordering new phones for Skype for Business, it is important to buy phones with the *right product ID*. These product IDs will ensure that the phones you receive have the Skype for Business Online qualified version already installed.
   
@@ -53,14 +53,14 @@ Per maggiori dettagli sui telefoni Polycom, consulta [Soluzioni vocali per Micro
   
 Per maggiori dettagli sui telefoni Yealink, consulta [Telefoni IP per Skype for Business](http://www.yealink.com/products_list_10.html#filter2).
   
-Per ulteriori informazioni sul AudioCodes telefoni, vedere [Skype per i telefoni IP Business](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/ip-phones-room-solutions).
+Per altre informazioni sui telefoni AudioCodes, Vedi [telefoni IP di Skype for business](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/ip-phones-room-solutions).
   
 > [!NOTE]
 > Lync Phone Edition is supported with Skype for Business Online, but not with Microsoft Teams. Mainstream support for the LPE platform ended by April/10/2014, with extended support until April/11/2023 to align with the product support lifecycle of Lync Server 2013. See [Microsoft Product Lifecycle](https://support.microsoft.com/lifecycle/search?qid=&amp;alpha=Lync%20Phone%20Edition&amp;Filter=FilterNO) for details on the LPE lifecycle. LPE CAP models aren't supported with Skype for Business Online.
 >
 > Later this year, Office 365 will not support any version of TLS older than 1.2. Since the underlying operating system of LPE does not support TLS 1.2, LPE will not be supported to connect to Office 365 anymore. See [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/en-gb/help/4057306/preparing-for-tls-1-2-in-office-365) for more information.
   
-## <a name="supported-firmware"></a>Firmware supportate
+## <a name="supported-firmware"></a>Firmware supportato
 
 Si tratta della versione software minima necessaria per i telefoni supportati per l'utilizzo con Sistema telefonico in Office 365:
   
@@ -72,27 +72,27 @@ Si tratta della versione software minima necessaria per i telefoni supportati pe
 |Yealink  <br/> |X.8.1.52  <br/> |Febbraio 2017  <br/> |
 |AudioCodes  <br/> |3.0.0.459.1  <br/> |Dicembre 2016  <br/> |
 
-Per ulteriori informazioni sulle versioni del firmware Certificate corrente, vedere [Skype per i telefoni IP Business](https://docs.microsoft.com/skypeforbusiness/certification/devices-ip-phones#conference-phones).
+Per altre informazioni sulle versioni correnti del firmware certificate, vedere [telefoni IP di Skype for business](https://docs.microsoft.com/skypeforbusiness/certification/devices-ip-phones#conference-phones).
 
 > [!NOTE]
 > I telefoni Lync Phone Edition (LPE) configurati per la distribuzione locale devono essere aggiornati alla versione minima o successiva del firmware richiesta prima di trasferire gli utenti in Skype for Business online. Se il trasferimento degli utenti dalla distribuzione locale a Skype for Business online avviene prima dell'aggiornamento del firmware nei telefoni, questi telefoni non potranno connettersi a Skype for Business online. 
   
-## <a name="required-licenses"></a>Licenze necessarie
+## <a name="required-licenses"></a>Licenze obbligatorie
 
-Skype per Business Online non richiede alcuna licenza di Microsoft aggiuntiva oltre le licenze utente. Per ulteriori informazioni sulle licenze utente necessari, vedere [Skype di licenza di componente aggiuntivo Business e i team di Microsoft](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
+Skype for business online non richiede una licenza Microsoft aggiuntiva diversa dalle licenze utente. Per altre informazioni sulle licenze necessarie per gli utenti, Vedi [licenze per i componenti aggiuntivi Skype for business e Microsoft teams](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   
-Produttore modelli di licenze può variare tra aperto SIP e Skype per Business Certificate del firmware. Se stai rinnovando un modello di certificato con un firmware Open SIP, devi verificare i requisiti di licenza del firmware con il produttore.
+I modelli di licenza per i produttori possono variare tra il firmware aperto SIP e Skype for business Certified. Se stai rinnovando un modello di certificato con un firmware Open SIP, devi verificare i requisiti di licenza del firmware con il produttore.
   
-## <a name="skype-for-business-online-connected-phones-feature-set"></a>Skype per set di caratteristiche di Business Online connessi telefoni
+## <a name="skype-for-business-online-connected-phones-feature-set"></a>Set di funzionalità telefoni connessi Skype for business online
 
-Per dispositivo completa caratteristiche e funzionalità, controllare le guide utente produttore.
+Per le funzionalità e le funzionalità del dispositivo completo, controllare le guide utente del produttore.
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Funzionalità** <br/> |**Polycom 3PIP** <br/> |**Yealink 3PIP** <br/> |**AudioCodes 3PIP** <br/> |**LPE** <br/> |
 |Accedi con le credenziali utente  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
 |Accesso tramite PC (accoppiamento), solo per Windows  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Accedi con (accesso Web)  <br/>  <br/> **Nota:** Controllare la matrice di supporto nella Guida alla distribuzione.           |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Accedi con (accesso Web)  <br/>  <br/> **Nota:** Verificare la matrice di supporto nella Guida alla distribuzione.           |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
 |Partecipa a una riunione con un singolo clic  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
 |Clic per comporre (accoppiamento)  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
 |Controlli per le riunioni  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
@@ -101,10 +101,10 @@ Per dispositivo completa caratteristiche e funzionalità, controllare le guide u
 |Aggiornamento del dispositivo  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
 |Provisioning in banda  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
 |QoE  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Invio registro  <br/> <br/> **Nota:** Attualmente, tutti i registri vengono caricati al team di supporto Microsoft di sola lettura. accesso cliente alle telefonate non sono ancora disponibili.           |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
+|Invio registro  <br/> <br/> **Nota:** Attualmente tutti i registri vengono caricati solo nel team di supporto Microsoft; l'accesso dei clienti ai registri telefonici non è ancora disponibile.           |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
 |Autenticazione moderna  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
 |Numero di emergenza multiplo  <br/> |No  <br/> |No  <br/> |Pagina della convocazione di riunione con numeri di telefono di accesso esterno predefiniti  <br/> |Sì  <br/> |
-|Integrazione calendario Exchange*  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> <br/> **Nota:** È necessario legare PC           |
+|Integrazione calendario Exchange*  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> <br/> **Nota:** Richiede il tethering del PC           |
 |Integrazioni presenza  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
 |Elenco aziendale  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Delega  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |No  <br/> |

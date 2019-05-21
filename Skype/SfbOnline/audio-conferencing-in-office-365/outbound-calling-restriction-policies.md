@@ -11,7 +11,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -19,54 +19,54 @@ localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: Gli amministratori possono controllare il tipo di utente finale e servizi di conferenza PSTN le chiamate audio che possono essere effettuate dagli utenti.
-ms.openlocfilehash: acd75df192211465071940148e35bc7e269c7976
-ms.sourcegitcommit: d1b14268efe334aa93a6889f25fcfe46e07d5daa
+description: Gli amministratori possono controllare il tipo di audioconferenza e chiamate PSTN degli utenti finali che possono essere effettuate dagli utenti.
+ms.openlocfilehash: e4589a2785d5debf4de6d6a146ede76b020cd2d6
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33584224"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34299154"
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 
-In qualità di amministratore, è possibile utilizzare i controlli delle chiamate in uscita per limitare il tipo di utente finale e servizi di conferenza PSTN le chiamate audio che possono essere effettuate dagli utenti nell'organizzazione. 
+Come amministratore, puoi usare i controlli delle chiamate in uscita per limitare il tipo di servizi di audioconferenza e chiamate PSTN degli utenti finali che possono essere eseguiti da un utente dell'organizzazione. 
 
-Controlli delle chiamate in uscita possono essere applicati a ogni utente e forniscono i seguenti due controlli per limitare in modo indipendente ogni tipo di chiamate in uscita. Per impostazione predefinita, entrambi i controlli sono impostati per consentire le chiamate in uscita nazionali e internazionali. 
+I controlli delle chiamate in uscita possono essere applicati per ogni singolo utente e offrono i due controlli seguenti per limitare in modo indipendente ogni tipo di chiamata in uscita. Per impostazione predefinita, entrambi i controlli sono impostati per consentire chiamate in uscita internazionali e nazionali. 
 
 |Controllo|Descrizione|Opzioni di controllo|
 |:-----|:-----|:-----|
-|Chiamate PSTN per conferenze audio|Consente di limitare il tipo di in uscita </br>chiamate a cui sono consentite dall'interno </br>riunioni organizzate dall'utente.|International e interno (impostazione predefinita)</br>Nazionale</br>Nessuno|
-|Chiamate PSTN degli utenti finali|Consente di limitare il tipo di chiamate </br>che può essere effettuata da un utente.|International e interno (impostazione predefinita)</br>Nazionale</br>Nessuno|
+|Chiamate PSTN per servizi di audioconferenza|Limita il tipo di in uscita </br>chiamate consentite dall'interno </br>riunioni organizzate da un utente.|Internazionali e nazionali (impostazione predefinita)</br>Nazionali</br>Nessuno|
+|Chiamate PSTN degli utenti finali|Limita il tipo di chiamate </br>che possono essere eseguite da un utente.|Internazionali e nazionali (impostazione predefinita)</br>Nazionali</br>Nessuno|
 
    > [!NOTE]
-   > Una chiamata è considerata interna se il numero composto nello stesso paese in Office 365 stati impostati per l'organizzatore della riunione (nel caso di conferenze audio) o l'utente finale (nel caso di chiamate PSTN degli utenti finali). 
+   > Una chiamata è considerata domestica se il numero composto si trova nello stesso paese in cui è stato configurato Office 365 per l'organizzatore della riunione (nel caso di servizi di audioconferenza) o per l'utente finale (nel caso di chiamate PSTN degli utenti finali). 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
-## <a name="restrict-audio-conferencing-outbound-calls"></a>Limitare le chiamate in uscita audioconferenze con accesso esterno 
+## <a name="restrict-audio-conferencing-outbound-calls"></a>Limitare le chiamate in uscita per i servizi di audioconferenza 
 
-![i team-logo-30x30.png](../images/teams-logo-30x30.png) **utilizzando l'interfaccia di amministrazione di team di Microsoft**
+![Teams-logo-30x30. png](../images/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**
 
-1. Nel riquadro di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
+1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
 2. Nella parte superiore della pagina, fai clic su **Modifica**.
 
-3. Accanto a **Servizi di conferenza Audio**, fare clic su **Modifica**.
+3. Accanto a servizi di **audioconferenza**fare clic su **modifica**.
 
-4. In **autorizzazioni di chiamata in uscita dalle riunioni**, selezionare l'opzione di chiamata esterna per una restrizione desiderato.
+4. In **autorizzazioni di accesso esterno da riunioni**selezionare l'opzione di restrizione della chiamata in uscita desiderata.
 
 5. Fai clic su **Salva**. 
 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**
 
-1.  Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **utenti**e quindi selezionare l'utente dall'elenco degli utenti disponibili.
+1.  Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, passa a**utenti**di servizi di **audioconferenza** > e quindi seleziona l'utente nell'elenco degli utenti disponibili.
 
 2.  In the Action pane, click **Edit**.
 
-3.  In **restrizioni alla connessione-outs dalle riunioni dell'utente**, selezionare l'opzione di chiamata in uscita restrizione desiderato.
+3.  In **restrizioni ai dial-out delle riunioni di questo utente**selezionare l'opzione di restrizione chiamata in uscita desiderata.
 
-    ![Le restrizioni alle opzioni di chiamate](../images/restrictions-to-dial-outs.png)
+    ![Le restrizioni alle opzioni per i dial-out](../images/restrictions-to-dial-outs.png)
 
 5. Fai clic su **Salva**.
 
@@ -75,20 +75,20 @@ Controlli delle chiamate in uscita possono essere applicati a ogni utente e forn
 
 **Utilizzo di PowerShell**
 
-Limitazioni delle chiamate in uscita sono controllati da un singolo criterio denominato OnlineDialOutPolicy che ha un attributo di restrizione per ogni. Non è possibile personalizzare il criterio, bensì sono disponibili le istanze dei criteri predefiniti per ogni combinazione delle impostazioni. 
+Le restrizioni delle chiamate in uscita sono controllate da un singolo criterio denominato OnlineDialOutPolicy che contiene un attributo di restrizione per ogni. I criteri non possono essere personalizzati, ma esistono istanze di criteri predefinite per ogni combinazione delle impostazioni. 
 
-È possibile utilizzare il cmdlet Get-CSOnlineDialOutPolicy per visualizzare i criteri di chiamata in uscita e assegnrli a utenti utilizzando il cmdlet Grant-CSDialOutPolicy. (Si noti che il cmdlet Grant non contiene la parola "Online" in modo analogo al cmdlet Get.) 
+Puoi usare il cmdlet Get-CSOnlineDialOutPolicy per visualizzare i criteri di chiamata in uscita e assegnarli agli utenti usando il cmdlet Grant-CSDialOutPolicy. Tieni presente che il cmdlet Grant non contiene la parola "online" come fa il cmdlet Get. 
 
-Nella tabella seguente viene fornita una panoramica di ogni criterio.
+La tabella seguente offre una panoramica di ogni criterio.
 
 |||
 |:-----|:-----|
-|Identità = 'tag: DialoutCPCandPSTNInternational'    |    Utente nella conferenza effettuare chiamate ai numeri nazionali e internazionali e l'utente può inoltre effettuare chiamate in uscita per i numeri nazionali e internazionali.    |
-|Identità = 'tag: DialoutCPCDomesticPSTNInternational'  |    Solo utente alla conferenza effettuare chiamate ai numeri nazionali e l'utente può effettuare chiamate in uscita per i numeri nazionali e internazionali.    |
-|    Identità = 'tag: DialoutCPCDisabledPSTNInternational'    |    Utente alla conferenza non può effettuare qualsiasi dial out. L'utente può effettuare chiamate in uscita per i numeri nazionali e internazionali.    |
-|    Identità = 'tag: DialoutCPCInternationalPSTNDomestic'    |    Utente nella conferenza effettuare chiamate ai numeri nazionali e internazionali e l'utente può effettuare solo chiamate in uscita a numero PSTN interna.    |
-|    Identità = 'tag: DialoutCPCInternationalPSTNDisabled'    |    Utente nella conferenza effettuare chiamate ai numeri nazionali e internazionali e l'utente non può effettuare chiamate in uscita numero PSTN oltre ai numeri di emergenza.    |
-|    Identità = 'tag: DialoutCPCandPSTNDomestic'    |    Solo utente alla conferenza effettuare chiamate ai numeri nazionali e l'utente può effettuare solo chiamate in uscita a numeri PSTN interne.    |
-|    Identità = 'tag: DialoutCPCDomesticPSTNDisabled'    |    Solo utente alla conferenza effettuare chiamate ai numeri di interno e all'utente non può effettuare chiamate in uscita numero PSTN oltre ai numeri di emergenza.    |
-|    Identità = 'tag: DialoutCPCDisabledPSTNDomestic'    |    Utente alla conferenza non può effettuare le chiamate in uscita e l'utente può effettuare solo chiamate in uscita a numeri PSTN interne.    |
-|    Identità = 'tag: DialoutCPCandPSTNDisabled'    |    Utente alla conferenza non può effettuare le chiamate in uscita e l'utente non può effettuare chiamate in uscita numero PSTN oltre ai numeri di emergenza.    |
+|Identity =' Tag: DialoutCPCandPSTNInternational '    |    L'utente della conferenza può effettuare chiamate in uscita per i numeri nazionali e internazionali, e questo utente può anche eseguire una chiamata in uscita a numeri nazionali e internazionali.    |
+|Identity =' Tag: DialoutCPCDomesticPSTNInternational '  |    L'utente nella conferenza può effettuare la chiamata solo ai numeri nazionali e questo utente può eseguire chiamate in uscita a numeri nazionali e internazionali.    |
+|    Identity =' Tag: DialoutCPCDisabledPSTNInternational '    |    L'utente della conferenza non può effettuare una chiamata esterna. Questo utente può effettuare chiamate in uscita a numeri nazionali e internazionali.    |
+|    Identity =' Tag: DialoutCPCInternationalPSTNDomestic '    |    L'utente della conferenza può effettuare una chiamata esterna a numeri nazionali e internazionali e questo utente può eseguire chiamate in uscita solo al numero PSTN nazionale.    |
+|    Identity =' Tag: DialoutCPCInternationalPSTNDisabled '    |    L'utente della conferenza può effettuare una chiamata esterna a numeri nazionali e internazionali e questo utente non può eseguire chiamate in uscita al numero PSTN oltre ai numeri di emergenza.    |
+|    Identity =' Tag: DialoutCPCandPSTNDomestic '    |    L'utente nella conferenza può effettuare la chiamata solo ai numeri nazionali e questo utente può eseguire solo chiamate in uscita ai numeri PSTN nazionali.    |
+|    Identity =' Tag: DialoutCPCDomesticPSTNDisabled '    |    L'utente nella conferenza può effettuare la chiamata solo ai numeri nazionali e questo utente non può eseguire chiamate in uscita al numero PSTN oltre ai numeri di emergenza.    |
+|    Identity =' Tag: DialoutCPCDisabledPSTNDomestic '    |    L'utente della conferenza non può effettuare chiamate in uscita e questo utente può solo effettuare una chiamata in uscita ai numeri PSTN nazionali.    |
+|    Identity =' Tag: DialoutCPCandPSTNDisabled '    |    L'utente della conferenza non può effettuare chiamate in uscita e questo utente non può effettuare alcuna chiamata in uscita al numero PSTN oltre ai numeri di emergenza.    |

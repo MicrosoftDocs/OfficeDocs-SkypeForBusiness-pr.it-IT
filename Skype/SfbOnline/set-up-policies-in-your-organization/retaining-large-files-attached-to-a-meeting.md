@@ -1,5 +1,5 @@
 ---
-title: Conservazione dei file di grandi dimensioni collegati a un Skype per le riunioni aziendali
+title: Mantenere file di grandi dimensioni allegati a una riunione Skype for business
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -10,40 +10,40 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Setup
-description: È possibile allegare file a un Skype per le riunioni aziendali, quali i partecipanti possono quindi aperta e download. File allegati a Skype per le riunioni aziendali vengono mantenuti nelle cassette postali di qualsiasi partecipante la cui cassetta postale viene messa in attesa di conservazione per controversia, è applicato un criterio di conservazione Office 365 o viene messa in attesa associata a un caso eDiscovery in Office 365 Security &amp; Centro conformità. Tale contenuto viene salvato nelle cassette postali di cartelle degli elementi recuperabili dei partecipanti.
-ms.openlocfilehash: f9a18aaf556427ccc1fad2700b40f40ff057be6a
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: È possibile allegare file a una riunione Skype for business, che i partecipanti possono aprire e scaricare. I file allegati alle riunioni Skype for business vengono conservati nelle cassette postali di qualsiasi partecipante la cui cassetta postale viene inserita nel blocco per controversia legale, ha un criterio di conservazione di Office 365 applicato o viene inserito in un blocco associato a un caso di eDiscovery nella sicurezza di Office 365 &amp; Centro conformità. Questo contenuto viene salvato nelle cartelle elementi ripristinabili dei partecipanti nelle cassette postali.
+ms.openlocfilehash: 4a8022b522f933ff8897586f632764eda77c6a67
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32237519"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34297760"
 ---
-# <a name="retaining-large-files-attached-to-a-skype-for-business-meeting"></a>Conservazione dei file di grandi dimensioni collegati a un Skype per le riunioni aziendali
+# <a name="retaining-large-files-attached-to-a-skype-for-business-meeting"></a>Mantenere file di grandi dimensioni allegati a una riunione Skype for business
 
-È possibile allegare file a un Skype per le riunioni aziendali, quali i partecipanti possono quindi aperta e download. File allegati a Skype per le riunioni aziendali vengono mantenuti nelle cassette postali di qualsiasi partecipante la cui cassetta postale viene messa in attesa di conservazione per controversia, è applicato un criterio di conservazione Office 365 o viene messa in attesa associata a un caso eDiscovery in Office 365 Security &amp; Centro conformità. Tale contenuto viene salvato nelle cassette postali di cartelle **Degli elementi recuperabili** dei partecipanti.
+È possibile allegare file a una riunione Skype for business, che i partecipanti possono aprire e scaricare. I file allegati alle riunioni Skype for business vengono conservati nelle cassette postali di qualsiasi partecipante la cui cassetta postale viene inserita nel blocco per controversia legale, ha un criterio di conservazione di Office 365 applicato o viene inserito in un blocco associato a un caso di eDiscovery nella sicurezza di Office 365 &amp; Centro conformità. Questo contenuto viene salvato nelle cartelle **elementi ripristinabili** dei partecipanti nelle cassette postali.
   
-I file che vengono mantenuti nelle cassette postali in attesa sono indicizzati e pertanto possono essere ricercati quando si esegue una ricerca di contenuto per la protezione &amp; centro conformità durante la ricerca delle cassette postali del partecipante. Tuttavia, file allegati di dimensioni superiori a 30 MB sono divisa in due o più file di dimensioni ridotte e salvati come file compresso (zip). Il *contenuto* di questi file di dimensioni ridotte non è indicizzato per la ricerca e potrebbe non essere restituito in una ricerca di contenuto. Tuttavia, i *metadati* di questi file (ad esempio il nome di file e l'autore) sono indicizzato per la ricerca e potrebbero essere restituito in una ricerca di contenuto.
+I file conservati nelle cassette postali in blocco vengono indicizzati e possono quindi essere cercati durante l'esecuzione di una ricerca &amp; contenuto nel centro conformità della sicurezza durante la ricerca nella cassetta postale di un partecipante. Tuttavia, i file allegati di dimensioni maggiori di 30 MB vengono divisi in due o più file più piccoli e salvati come file compressi (con estensione zip). Il *contenuto* di questi file più piccoli non viene indicizzato per la ricerca e potrebbe non essere restituito in una ricerca contenuto. Tuttavia, i *metadati* di questi file, ad esempio il nome e l'autore del file, vengono indicizzati per la ricerca e potrebbero essere restituiti in una ricerca contenuto.
   
 > [!IMPORTANT]
-> Le impostazioni per una cassetta postale di Exchange Online MaxReceiveSize e MaxSendSize possono influire sulla possibilità di mantenere i file di grandi dimensioni da Skype per le riunioni di Business. Le impostazioni predefinite per MaxReceiveSize e MaxSendSize sono 36 e 35 MB, rispettivamente. Tuttavia, queste impostazioni predefinite sono troppo piccole per mantenere un file da un Skype per le riunioni aziendali superiori a 30 MB. Ciò avviene perché Exchange Online utilizza la codifica Base64 di allegati del messaggio e altri dati binari. Quando un messaggio codificato, aumenta le dimensioni di circa il 33%. Pertanto, per garantire che i file di grandi dimensioni da Skype per le riunioni aziendali vengono mantenuti, è consigliabile aumentare il valore di MaxReceiveSize sia MaxSendSize 39 MB, ovvero circa il 33% superano il limite delle dimensioni 30 MB che è stato precedentemente illustrato, per gli utenti che restano in attesa. In caso contrario, un file di grandi dimensioni collegato a un Skype per le riunioni aziendali potrebbe non essere conservato. Per ulteriori informazioni sull'utilizzo di **Set-Mailbox MaxReceiveSize** e comandi **MaxSendSize Set-Mailbox** in Exchange Online PowerShell, vedere [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox).
+> Le impostazioni di MaxReceiveSize e MaxSendSize per una cassetta postale di Exchange Online possono influire sulla possibilità di mantenere i file di grandi dimensioni dalle riunioni Skype for business. Le impostazioni predefinite per MaxReceiveSize e MaxSendSize sono rispettivamente 36 MB e 35 MB. Tuttavia, queste impostazioni predefinite sono troppo piccole per conservare qualsiasi file da una riunione Skype for business di dimensioni maggiori di 30 MB. Il motivo è che Exchange Online USA la codifica Base64 degli allegati dei messaggi e di altri dati binari. Quando un messaggio viene codificato, la relativa dimensione viene aumentata di circa 33%. Per fare in modo che i file di grandi dimensioni provenienti da riunioni Skype for business vengano mantenuti, ti consigliamo di aumentare il valore sia per MaxReceiveSize che per MaxSendSize in 39 MB (che è approssimativamente 33% più grande del limite di 30 MB che è stato precedentemente spiegato) per gli utenti posizionati in attesa. In caso contrario, un file di grandi dimensioni allegato a una riunione Skype for business potrebbe non essere mantenuto. Per altre informazioni sull'uso dei comandi **Set-Mailbox-MaxReceiveSize** e **Set-Mailbox-MaxSendSize** in Exchange Online PowerShell, vedere [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox).
   
-Cassette postali che non sono in attesa non avrà eventuali dati delle riunioni salvati. Ad esempio, in una riunione di tre persone nelle cassette postali tra due partecipanti contrassegnate per la conservazione, vengono salvati i dati di riunione per le cassette postali tra i due partecipanti, ma non per la cassetta postale del terzo partecipante, la cui cassetta postale non è in attesa.
+Le cassette postali non bloccate non avranno salvato i dati della riunione. Ad esempio, in una riunione di tre persone in cui le cassette postali di due partecipanti sono contrassegnate per la conservazione, i dati della riunione vengono salvati nelle cassette postali di questi due partecipanti, ma non nella cassetta postale del terzo partecipante, la cui cassetta postale non è in attesa.
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Creare criteri di accesso esterno personalizzato](create-custom-external-access-policies.md)
 
-[Trasferimenti di file bloccati punto-punto](block-point-to-point-file-transfers.md)
+[Bloccare i trasferimenti di file Point-to-Point](block-point-to-point-file-transfers.md)
 
 [Impostazione dei criteri client per la propria organizzazione](set-up-client-policies-for-your-organization.md)
 
-[Impostare i criteri relativi alle conferenze nell'organizzazione](set-up-conferencing-policies-for-your-organization.md)
+[Configurare i criteri di conferenza nell'organizzazione](set-up-conferencing-policies-for-your-organization.md)
   
   
  
