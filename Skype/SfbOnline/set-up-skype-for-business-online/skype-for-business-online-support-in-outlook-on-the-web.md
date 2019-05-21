@@ -10,26 +10,26 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Setup
-description: La versione online di Outlook (Outlook Web App) in Office 365 offre un client Web Skype for Business di base dalla barra di navigazione. Questo client di base è disponibile per gli utenti Online cui amministratore non ha configurato un URL di reindirizzamento a microsito per la propria organizzazione Office 365. A condizione che l'account dell'utente è in linea e non dispone di un URL di reindirizzamento a microsito, cui viene visualizzata l'esperienza anche se l'organizzazione presenta alcuni account utente che sono ospitati in locale. Gli utenti che hanno utente account in locale (che hanno un URL di reindirizzamento a microsito o non) o gestiti da Microsoft vedranno l'esperienza di Lync in Outlook web app.
-ms.openlocfilehash: 0d98d2490510b54ec0aabd4fefb7ed4137b449b7
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: La versione online di Outlook (Outlook Web App) in Office 365 offre un client Web Skype for Business di base dalla barra di navigazione. Questo client di base è disponibile per gli utenti online il cui amministratore non ha configurato un URL di vanità per l'organizzazione di Office 365. Finché l'account dell'utente è online e non ha un URL di vanità, ne vedrà ancora l'esperienza, anche se l'organizzazione ha alcuni account utente ospitati in locale. Gli utenti che dispongono di un account utente locale (se hanno un URL di vanità o meno) o sono gestiti da Microsoft vedranno l'esperienza di Lync in Outlook Web App.
+ms.openlocfilehash: 3a985bd8ad0a04198501ca8d1ec780496c59f561
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32237232"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34285085"
 ---
 # <a name="skype-for-business-online-support-in-outlook-on-the-web"></a>Supporto per Skype for Business Online in Outlook sul Web
 
-[] La versione online di Outlook (Outlook Web App) in Office 365 offre un client Web Skype for Business di base dalla barra di navigazione. Questo client di base è disponibile per gli utenti Online cui amministratore non ha configurato un URL di reindirizzamento a microsito per la propria organizzazione Office 365. A condizione che l'account dell'utente è in linea e non dispone di un URL di reindirizzamento a microsito, cui viene visualizzata l'esperienza anche se l'organizzazione presenta alcuni account utente che sono ospitati in locale. Gli utenti che hanno utente account in locale (che hanno un URL di reindirizzamento a microsito o non) o gestiti da Microsoft vedranno l'esperienza di Lync in Outlook web app.
+[] La versione online di Outlook (Outlook Web App) in Office 365 offre un client Web Skype for Business di base dalla barra di navigazione. Questo client di base è disponibile per gli utenti online il cui amministratore non ha configurato un URL di vanità per l'organizzazione di Office 365. Finché l'account dell'utente è online e non ha un URL di vanità, ne vedrà ancora l'esperienza, anche se l'organizzazione ha alcuni account utente ospitati in locale. Gli utenti che dispongono di un account utente locale (se hanno un URL di vanità o meno) o sono gestiti da Microsoft vedranno l'esperienza di Lync in Outlook Web App.
   
-Nella tabella seguente sono riepilogate le installazioni diverse che possono verificarsi e il client web utilizzato.
+La tabella seguente riepiloga le diverse configurazioni che potresti avere e il client Web usato.
   
 ||||
 |:-----|:-----|:-----|
@@ -40,8 +40,8 @@ Nella tabella seguente sono riepilogate le installazioni diverse che possono ver
 |Ibrida ma ospitata online  <br/> |Sì  <br/> |Esperienza Web di Lync  <br/> |
 |Ibrida ma ospitata in locale  <br/> |No  <br/> |Esperienza Web di Lync  <br/> |
 |Ibrida ma ospitata in locale  <br/> |Sì  <br/> |Esperienza Web di Lync  <br/> |
-|Solo bianco in % beni  <br/> |No  <br/> |Esperienza Web di Lync  <br/> |
-|Solo bianco in % beni  <br/> |Sì  <br/> |Esperienza Web di Lync  <br/> |
+|Puro su Prem  <br/> |No  <br/> |Esperienza Web di Lync  <br/> |
+|Puro su Prem  <br/> |Sì  <br/> |Esperienza Web di Lync  <br/> |
    
 
 ## <a name="related-topics"></a>Argomenti correlati

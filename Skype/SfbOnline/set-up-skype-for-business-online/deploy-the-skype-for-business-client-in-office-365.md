@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -18,49 +18,49 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Learn how to plan and deploy Skype for Business in small, medium, and large organizations and making it available to your users. '
-ms.openlocfilehash: 6dccd022d82519c1dfdce13f767e5b0a2531eb10
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: b6895a45f59de2c73e445c7c26345f3b3d191a5f
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32237693"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34285285"
 ---
 # <a name="deploy-the-skype-for-business-client-in-office-365"></a>Distribuire il client Skype for Business in Office 365
 
-In questo articolo vengono illustrate le opzioni per come, **[amministrazione](https://support.office.com/en-us/article/eac4d046-1afd-4f1a-85fc-8219c79e1504?ui=en-US&rs=en-US&ad=US)**, distribuire Skype per applicazioni aziendali per gli utenti nell'organizzazione.
+In questo articolo vengono illustrate le opzioni per il modo in cui l' **[amministratore](https://support.office.com/en-us/article/eac4d046-1afd-4f1a-85fc-8219c79e1504?ui=en-US&rs=en-US&ad=US)** può distribuire l'app Skype for business agli utenti dell'organizzazione.
   
-Prima di distribuire Skype for Business per gli utenti, assicurarsi che è stata effettuata passaggi da 1 a 3 nell'articolo [configurare Skype Business online](set-up-skype-for-business-online.md). In questo modo, Skype for Business verrà configurato con il tuo dominio, ognuno avrà le proprie licenze e la messaggistica istantanea e la [Configurare la presenza in Skype for Business online](configure-presence-in-skype-for-business-online.md) saranno configurate per l'azienda.
+Prima di distribuire Skype for business agli utenti, verificare di aver eseguito i passaggi 1-3 nell'articolo [Configurare Skype for business online](set-up-skype-for-business-online.md). In questo modo, Skype for Business verrà configurato con il tuo dominio, ognuno avrà le proprie licenze e la messaggistica istantanea e la [Configurare la presenza in Skype for Business online](configure-presence-in-skype-for-business-online.md) saranno configurate per l'azienda.
   
 > [!NOTE]
-> Per installare l'app Skype for Business, gli utenti devono essere amministratori locali dei relativi PC o dispositivi. In alternativa, devono far parte di un gruppo locale che può installare le app nel proprio PC o dispositivo. Se non sono consentiti agli utenti di installare software nei dispositivi, sarà necessario installare Skype per applicazioni aziendali di essi. 
+> Per installare l'app Skype for Business, gli utenti devono essere amministratori locali dei relativi PC o dispositivi. In alternativa, devono far parte di un gruppo locale che può installare le app nel proprio PC o dispositivo. Se gli utenti non sono autorizzati a installare il software nei propri dispositivi, è necessario installare l'app Skype for business. 
   
 ## <a name="for-most-small-and-medium-sized-businesses"></a>Per la maggior parte delle piccole e medie imprese
 
- **Istruzioni dettagliate di installazione:** se hai un'azienda di piccole o medie dimensioni, ti consigliamo di invitare semplicemente i tuoi utenti a installare l'app Skype for Business sui loro PC. Puntino a queste istruzioni: [Installare Skype per le aziende](https://support.office.com/en-us/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb?ui=en-US&rs=en-US&ad=US). Se usano il Mac, indirizzali all'argomento [Configurazione di Lync per Mac 2011 per Office 365](https://support.office.com/en-us/article/ae3ebd0e-a1a7-48cf-9350-36b144dc5f88?ui=en-US&rs=en-US&ad=US). L'app di Skype for Business è installata separatamente rispetto al resto delle app di Office.
+ **Istruzioni dettagliate di installazione:** se hai un'azienda di piccole o medie dimensioni, ti consigliamo di invitare semplicemente i tuoi utenti a installare l'app Skype for Business sui loro PC. Indirizzale alle istruzioni seguenti: [installare Skype for business](https://support.office.com/en-us/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb?ui=en-US&rs=en-US&ad=US). Se usano il Mac, indirizzali all'argomento [Configurazione di Lync per Mac 2011 per Office 365](https://support.office.com/en-us/article/ae3ebd0e-a1a7-48cf-9350-36b144dc5f88?ui=en-US&rs=en-US&ad=US). L'app di Skype for Business è installata separatamente rispetto al resto delle app di Office.
   
  **Clienti di Office 365 Pro Plus:** se la tua azienda utilizza un piano di Office 365 che include Office 365 Pro Plus, ad esempio il piano E3, l'app Skype for Business viene installata nello stesso momento in cui l'utente scarica e installa Word, Excel, PowerPoint e così via. Questo significa anche che l'utente non potrà disinstallare Skype for Business a meno che non disinstalli tutti i prodotti di Office.
   
 ### <a name="choose-whether-to-make-skype-for-business-available-to-your-users"></a>Scegliere se rendere Skype for Business disponibile agli utenti
 
-Come [amministratore](https://support.office.com/en-us/article/eac4d046-1afd-4f1a-85fc-8219c79e1504?ui=en-US&rs=en-US&ad=US) è possibile scegliere se si desidera rendere disponibili agli utenti Skype per applicazioni aziendali.
+Come [amministratore](https://support.office.com/en-us/article/eac4d046-1afd-4f1a-85fc-8219c79e1504?ui=en-US&rs=en-US&ad=US) , puoi scegliere se rendere disponibile l'app Skype for business agli utenti.
   
-- **Ottiene il software per controllare se tutti gli utenti dell'azienda**: accedere a Office 365 admin center, per **l'installazione del software**e quindi selezionare il software si desidera rendere disponibili per gli utenti.
+- **Per controllare se tutti gli utenti della società ottengono il software**: accedere all'interfaccia di amministrazione di Office 365, andare a **installare il software**e quindi selezionare il software che si vuole sia disponibile per gli utilizzatori.
     
     ![Choose the software you want to make available to the people in your company.](../images/5eb9e9d4-6ea2-4cc1-a61d-8a1af5a7c121.png)
   
-- **Per controllare se specifici dell'azienda ottenere il software**: accedere a Office 365 admin center, andare a **utenti** > **utenti attivi**, selezionare la persona che si desidera concedere l'accesso al software e quindi fare clic su **Modifica** accanto a **licenze per i prodotti** e attivare o disattivare i di licenza.
+- **Per controllare se le persone specifiche dell'azienda ottengono il software**: accedere all'interfaccia di amministrazione di Office 365, accedere a utenti**attivi**degli **utenti** > , selezionare la persona a cui si vuole consentire l'accesso al software e quindi fare clic su **modifica** accanto a **licenze di prodotto** e attivare o disattivare la licenza.
     
     ![Choose which software you want the user to access.](../images/91f6f422-2c85-4afd-944f-0021b2f6f109.png)
   
 > [!NOTE]
-> Se si desidera visualizzare i piani assegnati alle persone all'interno dell'organizzazione, l'accesso per il nuovo Office 365 admin center gt _ **gli utenti** > **utenti attivi**. Selezionare la persona nell'elenco, quindi cercare sotto **licenze per i prodotti**. Se si utilizza l'interfaccia di amministrazione di Office 365 classica, cercare in **licenza assegnata**. 
+> Per informazioni sui piani assegnati alle persone dell'organizzazione, accedere al nuovo interfaccia di amministrazione di Office 365 > **** > utenti**attivi**. Selezionare la persona nell'elenco e quindi cercare in **licenze di prodotto**. Se si usa l'interfaccia di amministrazione classica di Office 365, cercare in **licenza assegnata**. 
   
 ### <a name="manually-deploying-skype-for-business-to-your-users"></a>Distribuzione manuale di Skype for Business agli utenti
 <a name="bkmk_manual_1"> </a>
 
 Se desideri che i tuoi utenti installino l'app Skype for Business da un percorso di rete invece che da Internet, puoi scaricare i file di configurazione. A tale scopo, passa alla sezione **Distribuire manualmente il software utente** dell'Interfaccia di amministrazione di Office 365. Quindi puoi selezionare **Installa** e salvare il file .exe di installazione in un percorso di rete.
   
-Un'altra opzione è quella di scaricare l'app Skype for Business Basic per gli utenti. È possibile scaricare [Microsoft Skype per Business Basic (a 32 o 64 Bit)](https://www.microsoft.com/en-us/download/details.aspx?id=49440).
+Un'altra opzione è quella di scaricare l'app Skype for Business Basic per gli utenti. È possibile scaricare [Microsoft Skype for Business Basic (32 o 64 bit)](https://www.microsoft.com/en-us/download/details.aspx?id=49440).
   
 Sia per le app Skype for Business base che per quelle complete, dopo aver scaricato i file di configurazione dovrai inviare manualmente (ad esempio, tramite e-mail) il percorso di rete agli utenti per fare in modo che eseguano il programma di configurazione per installare l'app nel computer
   
@@ -73,7 +73,7 @@ Puoi anche utilizzare questi download per distribuire l'app Skype for Business a
   
 In molte aziende o grandi organizzazioni, gli utenti non sono autorizzati a installare software nel computer. Sono i reparti IT a distribuire il software necessario per i computer degli utenti. Inoltre, i reparti IT potrebbero avere l'esigenza di controllare in che misura si utilizza la larghezza di banda di rete o Internet nell'organizzazione, preferendo quindi installare il software da una posizione vicina nella propria rete anziché da Internet o tramite la rete aziendale.
   
-Con Office 365, sono disponibili diverse opzioni per la distribuzione Skype per applicazioni aziendali se si desidera controllare in cui è installato da. Alcune di queste opzioni includono:
+Con Office 365 sono disponibili diverse opzioni per la distribuzione dell'app Skype for business se si vuole controllare la posizione in cui è installato. Alcune di queste opzioni includono le seguenti:
   
 - Scaricare l'app Skype for Business nella rete locale dall'Interfaccia di amministrazione di Office 365, come descritto in [Distribuzione manuale di Skype for Business agli utenti](deploy-the-skype-for-business-client-in-office-365.md#bkmk_manual_1).
     
@@ -85,7 +85,7 @@ Con Office 365, sono disponibili diverse opzioni per la distribuzione Skype per 
 
 Per informazioni dettagliate sul download dello Strumento di distribuzione di Office e per altre informazioni sull'installazione dell'app Skype for Business e di altre app client di Office 365, consulta [Gestire il software degli utenti in Office 365](https://support.office.com/en-us/article/c13051e6-f75c-4737-bc0d-7685dcedf360).
   
-Ecco una panoramica dei passaggi coinvolti utilizzando lo strumento di distribuzione di Office per distribuire un'app:
+Ecco una panoramica dei passaggi necessari per usare lo strumento di distribuzione di Office per distribuire un'app:
   
 1. **[Scarica il nuovo Strumento di distribuzione di Office](https://www.microsoft.com/en-us/download/details.aspx?id=49117)** dall'Area download Microsoft.
     
@@ -133,7 +133,7 @@ Per altre informazioni sul funzionamento degli aggiornamenti per il software Off
   
 - [Panoramica del processo di aggiornamento di Office 365 ProPlus](https://technet.microsoft.com/en-us/library/dn761709.aspx)
     
-- [Scegliere la modalità di gestione degli aggiornamenti per Office 365 ProPlus](https://technet.microsoft.com/en-us/library/dn761707.aspx)
+- [Scegliere come gestire gli aggiornamenti a Office 365 ProPlus](https://technet.microsoft.com/en-us/library/dn761707.aspx)
     
 - [Configurare le impostazioni di aggiornamento per Office 365 ProPlus](https://technet.microsoft.com/en-us/library/dn761708.aspx)
     

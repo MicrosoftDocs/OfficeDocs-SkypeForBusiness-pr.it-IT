@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: Learn how to fix issues for admins and users of Skype for Business in Office 365.
-ms.openlocfilehash: 07cc390cdc4e65d0ce8f59c42c6eb57f4900e949
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: e08eb29827996ff65e85de1afe7aabba1b02ac40
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32237184"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34285055"
 ---
 # <a name="troubleshoot-problems-with-skype-for-business-online"></a>Risolvere i problemi di Skype for Business online
 
@@ -31,7 +31,7 @@ ms.locfileid: "32237184"
 
 ## <a name="troubleshoot-admin-issues-for-skype-for-business-online"></a>Risolvere i problemi di amministrazione relativi a Skype for Business online
 
-È possibile ottenere risposte per la maggior parte del Skype per domande Business Online per [ricercare le cause comuni di Skype per errori di accesso Business Online](troubleshooting-sign-in-errors-for-admins.md#toc323194094). Questo articolo della Knowledge Base include anche molte risorse per la risoluzione dei problemi e riferimenti a codici di errore: [Come risolvere i problemi di accesso in Skype for Business online](https://go.microsoft.com/fwlink/p/?LinkId=747952).
+Puoi trovare le risposte per la maggior parte delle domande di Skype for business online per [verificare le cause più comuni degli errori di accesso di Skype for business online](troubleshooting-sign-in-errors-for-admins.md#toc323194094). Questo articolo della Knowledge Base include anche molte risorse per la risoluzione dei problemi e riferimenti a codici di errore: [Come risolvere i problemi di accesso in Skype for Business online](https://go.microsoft.com/fwlink/p/?LinkId=747952).
 
 Per i problemi dei servizi di conferenza telefonica, vedere [Risoluzione dei problemi e problemi noti relativi ai servizi di audioconferenza](../audio-conferencing-in-office-365/audio-conferencing-troubleshooting-and-known-issues.md).
 
@@ -65,7 +65,7 @@ La maggior parte dei problemi che devono affrontare gli utenti di Skype for Busi
 
 - [Guida alle riunioni di Skype for Business](https://support.office.com/article/e0bc00a0-b01f-4f51-88fa-6f74abefa203)
 
-- [Skype per la formazione per soluzioni aziendali](https://support.office.com/article/2461b8dd-c825-4e18-9a4c-015bba5a5a7e)
+- [Formazione su Skype for business](https://support.office.com/article/2461b8dd-c825-4e18-9a4c-015bba5a5a7e)
 
 - [Presentazione di programmi in Skype for Business](https://support.office.com/article/a5e6f4dc-06ac-4ccd-9a52-649b4f4a5306)
 

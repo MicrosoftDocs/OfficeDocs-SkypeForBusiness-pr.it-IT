@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -18,82 +18,82 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: '[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto.'
-ms.openlocfilehash: c4f3040c759deefc222c6243d80de393e18befe9
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 62b64fd971d776b265d7b78789e8ac7684cc5e26
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32240606"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34302088"
 ---
 # <a name="session-details-report"></a>Report dettagli della sessione.
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile utilizzare report **Skype per Business dettagli** per visualizzare informazioni dettagliate sull'esperienza di chiamata dell'utente singolo.
+[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report **Dettagli sessione di Skype for business** per vedere i dettagli sulle singole esperienze di chiamata dell'utente.
   
-Vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per i report più disponibili.
+Vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per altri report disponibili.
   
-La relazione, nonché altri Skype per i report di Business fornire informazioni dettagliate sull'attività all'interno dell'organizzazione, incluse informazioni dettagliate di sessione. Queste informazioni sono molto utili quando si analisi dei, pianificazione e l'esecuzione di altre business le decisioni per l'organizzazione e per la configurazione di [titoli di coda di comunicazioni](/microsoftteams/what-are-communications-credits).
+Questo report, insieme agli altri report di Skype for business, fornisce informazioni dettagliate sull'attività, inclusi i dettagli della sessione nell'organizzazione. Questi dettagli sono molto utili per l'analisi, la pianificazione e l'esecuzione di altre decisioni aziendali per l'organizzazione e per la configurazione dei crediti per le [comunicazioni](/microsoftteams/what-are-communications-credits).
   
 > [!NOTE]
 > I report sono disponibili quando si accede a Skype for Business come amministratore dall'interfaccia di amministrazione di Office 365. 
   
-## <a name="how-to-get-to-the-skype-for-business-session-details-report"></a>Come ottenere Skype per rapporto Dettagli sessione Business
+## <a name="how-to-get-to-the-skype-for-business-session-details-report"></a>Come ottenere il report Dettagli sessione di Skype for business
 
-1. Vai al **Centro di amministrazione di Office 365** > **report**
+1. Accedere ai > **report** dell'interfaccia di **amministrazione di Office 365**
     
-2. Selezionare **report** dal menu a sinistra e quindi fare clic su **dati di utilizzo**.
+2. Selezionare **report** nel menu a sinistra e quindi fare clic su **utilizzo**.
     
-3. Nell'elenco **Selezionare un report**, fare clic su **Skype per i dettagli di sessione Business**.
+3. Nell'elenco in **selezionare un report**fare clic su **Dettagli sessione di Skype for business**.
     
     > [!TIP]
-    > Se non viene visualizzata in questo report elencato, andare a **Skype per Business admin center** > **report** > **Dettagli sessione**. 
+    > Se questo report non è visualizzato, accedere ai**** > **Dettagli della sessione**nell'interfaccia di amministrazione > di **Skype for business**. 
   
     > [!IMPORTANT]
     > In base all'abbonamento a Office 365 di cui si dispone, alcuni dei prodotti e report illustrati in questo articolo potrebbero non essere disponibili. 
   
-## <a name="interpret-the-skype-for-business-session-details-report"></a>Interpretazione Skype per rapporto Dettagli sessione Business
+## <a name="interpret-the-skype-for-business-session-details-report"></a>Interpretare il report Dettagli sessione di Skype for business
 
-È possibile ottenere una visualizzazione in Skype dell'utente per i dettagli di sessione Business esaminando ognuna delle colonne visualizzate.
+È possibile visualizzare i dettagli della sessione Skype for business dell'utente esaminando ognuna delle colonne visualizzate.
   
 Questo è l'aspetto del report.
   
-![Skype per dashboard rapporto Dettagli sessione Business.](../images/3d87ab39-6eaa-46b5-b5f9-7f54dc987ae0.png)
+![Dashboard dei dettagli della sessione di Skype for business per il report.](../images/3d87ab39-6eaa-46b5-b5f9-7f54dc987ae0.png)
   
 ***
-![Numero 1](../images/sfbcallout1.png)<br/>**Utente di ricerca da alias** consente di cercare un singolo utente e tutti i dettagli di sessione dell'utente viene visualizzato nella tabella seguente. 
+![Numero 1](../images/sfbcallout1.png)<br/>La **ricerca di un utente tramite alias** consente di cercare un singolo utente e di visualizzare tutti i dettagli della sessione dell'utente nella tabella seguente. 
 ***
-![Numero 2](../images/sfbcallout2.png)<br/>**Invio da data ora** consente di che salvare la data di inizio. È possibile utilizzare il calendario per selezionare la data o immettere la data manualmente. In questo campo deve essere compilato.
+![Numero 2](../images/sfbcallout2.png)<br/>**Invio da data/ora** consente di inserire la data di inizio. È possibile usare il calendario per selezionare la data o immetterla manualmente. Questo campo deve essere popolato.
 ***
-![Numero 3](../images/sfbcallout3.png)<br/>**INVIO per data ora** consente di che salvare la data di fine. È possibile utilizzare il calendario per selezionare la data o immettere la data manualmente. Se non è impostata alcuna data di fine, il valore predefinito è 30 giorni dalla data di inizio.
+![Numero 3](../images/sfbcallout3.png)<br/>**Invio a data ora** consente di inserire la data di fine. È possibile usare il calendario per selezionare la data o immetterla manualmente. Se non viene impostata una data di fine, l'impostazione predefinita è 30 giorni dalla data di inizio.
 ***
-![Numero 4](../images/sfbcallout4.png)<br/>La tabella mostra suddivisione di tutti i dettagli di sessioni per utente. Mostra tutti gli utenti che hanno Skype per le aziende assegnata e alle informazioni sulla sessione. È possibile aggiungere/rimuovere colonne dalla tabella. <br/><br/>La tabella include le colonne seguenti per ogni sessione:
-*    **Finestra di dialogo ID** è l'ID dell'identificatore univoco della sessione SIP.
-*    **Descrizione di tipi multimediali** descrive se la sessione è una conferenza telefonica o una sessione P2P e il tipo di supporto utilizzato (Audio/Video/Application Sharing).
-*    **Ora di inizio** è l'ora di inizio della sessione.
-*    **Ora di fine** è l'ora di fine della sessione.
-*    **Dall'URI** è l'URI dell'utente o del servizio che ha avviato la sessione. Può essere vuota se l'utente ha avviato la sessione da un telefono PSTN.
-*    **All'URI** è l'URI dell'utente o del servizio di destinazione dell'avvio della sessione. Nel caso di conferenza, si tratta URI dell'organizzatore. Può essere vuota se la destinazione della sessione è un numero di telefono PSTN.
-*    **Dalla versione del client** viene illustrato l'agente utente e la versione del client utilizzato dall'utente o servizio che ha avviato la sessione.
-*    **Versione client** viene illustrato l'agente utente e la versione del client utilizzato dall'utente o del servizio di destinazione dell'avvio della sessione.
-*    **URL della conferenza** è l'URL SIP per la conferenza, se la sessione è stata una conferenza telefonica. Tutti gli utenti nella stessa conferenza telefonica avranno lo stesso URL di conferenza. 
-*    **Numero da Tel** è il numero di telefono di destinazione della sessione, se applicabile. L'ultima cifre del numero di telefono possono essere sostituite con "x" per proteggere la riservatezza degli utenti.
-*    **Numero di Tel** è il numero di telefono di destinazione della sessione, se applicabile. L'ultima cifre del numero di telefono possono essere sostituite con "x" per proteggere la riservatezza degli utenti.
-*    **Dall'Id dell'Endpoint** è un GUID univoco dell'endpoint utilizzato dall'utente da. Consente di stabilire se l'utente comunica più sessioni da stesso endpoint. Può essere vuota se l'utente sta utilizzando un telefono PSTN o se la sessione è stata avviata da un servizio.
-*    **Per Id dell'Endpoint** è un GUID univoco dell'endpoint dell'utente a. Consente di stabilire se l'utente comunica più sessioni da stesso endpoint. Può essere vuota se l'utente sta utilizzando un telefono PSTN, se la sessione è stata avviata da un servizio o una sessione non è riuscito a stabilire.
-*    **Istanza conf** è un GUID univoco per l'istanza di conferenza utilizzando l'URL della conferenza. Riunioni ricorrenti avranno lo stesso URL di conferenza, ma ogni istanza della riunione avrà una differenza istanza Conf.
-*    **Per conto di URI** è l'URI del delegante per conto del quale viene stabilita la sessione. <br/> **Definito dall'URI** è l'URI dell'utente che ha definito la creazione di una sessione.
-*    **Codice di risposta** è il codice di risposta SIP per la determinazione della sessione che indica se la sessione è stata stabilita correttamente.
+![Numero 4](../images/sfbcallout4.png)<br/>La tabella mostra una ripartizione dei dettagli di tutte le sessioni per ogni utente. In questo articolo vengono visualizzati tutti gli utenti a cui sono stati assegnati Skype for business e le relative informazioni sulla sessione. È possibile aggiungere/rimuovere colonne dalla tabella. <br/><br/>La tabella contiene le colonne seguenti per ogni sessione:
+*    **ID finestra di dialogo** è l'ID per l'identificatore univoco della sessione SIP.
+*    **Descrizione tipi di elementi multimediali** descrive se la sessione è una conferenza telefonica o una sessione P2P e il tipo di elemento multimediale usato (audio/video/condivisione applicazioni).
+*    **Ora inizio** è l'ora in cui è stata avviata la sessione.
+*    **Ora di fine** è il momento in cui la sessione è terminata.
+*    **From URI** è l'URI dell'utente o del servizio che ha avviato la sessione. Potrebbe essere vuoto se l'utente ha avviato la sessione da un telefono PSTN.
+*    **Per URI** è l'URI dell'utente o del servizio che era la destinazione dell'avvio della sessione. Nel caso della conferenza, questo è l'URI dell'organizzatore. Potrebbe essere vuoto se la destinazione della sessione era un numero di telefono PSTN.
+*    **Dalla versione client** viene indicato l'agente utente e la versione del client usata dall'utente o dal servizio che ha avviato la sessione.
+*    **Per la versione client** viene indicato l'agente utente e la versione del client usata dall'utente o dal servizio che era la destinazione dell'avvio della sessione.
+*    **URL conferenza** è l'URL SIP per la conferenza, se la sessione è stata una conferenza telefonica. Tutti gli utenti della stessa conferenza telefonica avranno lo stesso URL conferenza. 
+*    **Da Tel num** è il numero di telefono che è stato il destinatario della sessione, se applicabile. Le ultime cifre del numero di telefono possono essere sostituite con "x" per proteggere la privacy degli utenti.
+*    **Per numero Tel** si trova il numero di telefono che era il destinatario della sessione, se applicabile. Le ultime cifre del numero di telefono possono essere sostituite con "x" per proteggere la privacy degli utenti.
+*    **Da ID endpoint** è un GUID univoco dell'endpoint usato dall'utente. Usato per identificare se l'utente sta comunicando più sessioni dallo stesso endpoint. Potrebbe essere vuoto se l'utente usa un telefono PSTN o se la sessione è stata avviata da un servizio.
+*    **Per ID endpoint** è un GUID univoco dell'endpoint usato dall'utente. Usato per identificare se l'utente sta comunicando più sessioni dallo stesso endpoint. Potrebbe essere vuoto se l'utente usa un telefono PSTN, se la sessione è stata avviata da un servizio o se non è stata creata una sessione.
+*    L' **istanza di conf** è un GUID univoco per l'istanza della conferenza usando l'URL della conferenza. Le riunioni ricorrenti avranno lo stesso URL della conferenza, ma ogni istanza della riunione avrà un'istanza di conf differenza.
+*    **Per conto di URI** è l'URI del delegante per conto della quale viene stabilita la sessione. <br/> **Indicato da URI** è l'URI dell'utente che ha fatto riferimento alla creazione di una sessione.
+*    Il **codice di risposta** è il codice di risposta SIP per la creazione della sessione che indica se la sessione è stata stabilita correttamente.
 
-Per ogni sessione è disponibile a seconda dello scenario una tabella di sub con dati diversi. Di seguito sono elencati le schede disponibili nella tabella sub per il mittente e di utente o i servizi.
-*    Scheda di sessione vengono visualizzati dati relativi al computer e i sistemi operativi.
-*    Scheda MEDIALINES Mostra informazioni di connettività di rete e informazioni sul dispositivo.
-*    Scheda AUDIOSTREAMS vengono illustrati dati sulle prestazioni di rete sui flussi audio per la sessione.
-*    Scheda AUDIOCLIENTEVENTS Mostra dati relativi ai client rilevato incidono sulla qualità audio.
-*    Scheda AUDIOSIGNALS Mostra i dati sull'elaborazione per la sessione del segnale audio.
-*    Scheda APPSHARINGSTREAMS vengono illustrati dati sulle prestazioni di rete sulla condivisione di applicazioni o flussi di condivisione desktop per la sessione.
-*    Scheda VIDEOCLIENTEVENTS Mostra dati relativi ai client rilevato incidono sull'esperienza video.
-*    Scheda VIDEOSTREAMS vengono illustrati dati sulle prestazioni di rete sui flussi video per la sessione.
-*    Scheda TRACEROUTE Mostra l'hop di rete raccolti da traceroute durante la sessione. Il percorso multimediale effettivo utilizzato per la sessione può variare e dati sono disponibili solo se è presente nella sessione audio.
-*    Scheda FEEDBACKREPORTS Visualizza qualsiasi fine della chiamata i dati del sondaggio forniti dagli utenti nella sessione.
+Per ogni sessione è disponibile una tabella secondaria con dati diversi a seconda dello scenario. Di seguito sono elencate le schede disponibili nella tabella secondaria per l'utente o i servizi da e a.
+*    La scheda sessione Mostra i dati relativi ai computer e ai sistemi operativi.
+*    La scheda MEDIALINES Mostra le informazioni sulla connettività di rete e le informazioni sui dispositivi.
+*    La scheda AUDIOSTREAMS Mostra i dati sulle prestazioni di rete relativi ai flussi audio coinvolti nella sessione.
+*    La scheda AUDIOCLIENTEVENTS Mostra i dati relativi ai problemi rilevati dal client che influiscono sull'esperienza audio.
+*    AUDIOSIGNALS Tab Mostra i dati relativi all'elaborazione del segnale audio per la sessione.
+*    La scheda APPSHARINGSTREAMS Mostra i dati sulle prestazioni di rete relativi alla condivisione dell'applicazione o ai flussi di condivisione desktop coinvolti nella sessione.
+*    VIDEOCLIENTEVENTS Tab Mostra i dati relativi ai problemi rilevati dal client che influiscono sull'esperienza video.
+*    La scheda VIDEOSTREAMS Mostra i dati sulle prestazioni di rete relativi ai flussi video coinvolti nella sessione.
+*    La scheda TRACEROUTE Mostra i passaggi di rete raccolti tramite traceroute durante la sessione. Il percorso multimediale effettivo usato per la sessione può variare e questi dati sono disponibili solo quando c'è l'audio nella sessione.
+*    La scheda FEEDBACKREPORTS Mostra la fine dei dati di sondaggio delle chiamate forniti dagli utenti nella sessione.
 ***
 ![Numero 5](../images/sfbcallout5.png)<br/>Fare clic per trascinare una colonna fino a **Per raggruppare per una specifica colonna, trascinare qui l'intestazione di colonna** se si desidera creare una visualizzazione che raggruppi tutti i dati in una o più colonne. 
 ***
@@ -107,15 +107,15 @@ Per ogni sessione è disponibile a seconda dello scenario una tabella di sub con
     
 - [Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) permette di vedere quanto gli utenti organizzano conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft.
     
-- [Skype per rapporto attività partecipante di conferenza aziendali](conference-participant-activity-report.md) È possibile visualizzare il numero messaggistica immediata, audio/video, la condivisione delle applicazioni, Web e le conferenze telefoniche/esclusione conferenze sono viene ha partecipate.
+- [Report attività partecipante di conferenze di Skype for business](conference-participant-activity-report.md) Puoi vedere il numero di partecipazioni a conferenze di messaggistica istantanea, audio/video, condivisione applicazioni, Web e accesso esterno in entrata/uscita.
     
 - [Report attività peer-to-peer in Skype for Business](peer-to-peer-activity-report.md) - Permette di vedere quanto gli utenti usano messaggistica istantanea, audio/video, condivisione applicazioni e trasferimento di file.
     
-- [Skype per i report di utilizzo PSTN Business](pstn-usage-report.md) È possibile visualizzare il numero di minuti, trascorso per le chiamate in ingresso/in uscita e dei costi per le chiamate.
+- [Report sull'utilizzo PSTN di Skype for business](pstn-usage-report.md) È possibile visualizzare il numero di minuti di chiamate in ingresso/in uscita e il costo per queste chiamate.
 
 - [Skype per gli utenti aziendali bloccati report](users-blocked-report.md) - Permette di consultare gli utenti dell'organizzazione a cui è impedito effettuare chiamate.
 
-- [Skype per report pool minuto Business PSTN](pstn-minute-pools-report.md) è possibile visualizzare il numero di minuti utilizzati durante il mese corrente all'interno dell'organizzazione.
+- [Report pool di minuti PSTN di Skype for business](pstn-minute-pools-report.md) è possibile visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
     
 ## <a name="related-topics"></a>Argomenti correlati
 [Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
