@@ -1,5 +1,5 @@
 ---
-title: Assegnazione di terze parti come provider di servizi di conferenza audio
+title: Assegnare una terza parte come provider di servizi di audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -26,10 +26,10 @@ description: 'Informazioni su come configurare terze parti come provider di serv
 robots: noindex
 redirect_url: https://docs.microsoft.com/SkypeForBusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider
 redirect_document_id: true
-ms.openlocfilehash: 9a01595ee8318dc1204b7fc94ae6b714e20c091e
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 1768b39c9e03c5d4074c1d9cec5efbb7118ed6d5
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229205"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34273755"
 ---
