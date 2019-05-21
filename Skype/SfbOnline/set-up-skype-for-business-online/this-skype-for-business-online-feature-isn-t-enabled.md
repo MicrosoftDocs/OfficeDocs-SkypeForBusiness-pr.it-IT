@@ -1,5 +1,5 @@
 ---
-title: Non è abilitata questa Skype per funzionalità di Business in linea
+title: Questa funzionalità di Skype for business online non è abilitata
 ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -19,23 +19,23 @@ f1keywords:
 - ms.lync.lac.FeatureNotEnabled
 ms.custom:
 - Setup
-description: 'Individuare le possibili cause e suggerimenti azione quando si ricevono un Skype per funzionalità di Business Online non è errori abilitato. '
-ms.openlocfilehash: 0688bcc572c90c776bb1db6413825436f2ba8930
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: "Trovare le possibili cause e i suggerimenti di azione quando si riceve una caratteristica di Skype for business online non è stato abilitato l'errore. "
+ms.openlocfilehash: d819dacc777b4e6ef8f3adb9e6e7cab20a1be874
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32237174"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34285045"
 ---
-# <a name="this-skype-for-business-online-feature-isnt-enabled"></a>Non è abilitata questa Skype per funzionalità di Business in linea
+# <a name="this-skype-for-business-online-feature-isnt-enabled"></a>Questa funzionalità di Skype for business online non è abilitata
 
-C' probabilmente l'utente non viene concesso in licenza per questa funzionalità.
+Mi dispiace, sembra che l'utente non sia autorizzato per questa funzionalità.
   
-|**Causa possibile**|**Azione suggerita**|
+|**Causa possibile**|**Azione consigliata**|
 |:-----|:-----|
-|Si dispongono di licenze disponibili, ma è stato attivato la caratteristica per l'utente.  <br/> |Vai al **Centro di amministrazione di Office 365** > **utenti attivi** per assegnare una licenza a questo utente. <br/> |
-|L'utente è in una posizione in cui questa funzionalità non è disponibile.  <br/> |Se possibile, passare **all'interfaccia di amministrazione di Office 365** > **utenti attivi** e assegnare l'utente a una posizione in cui è disponibile la caratteristica. <br/> |
-|Non è stata attivata la caratteristica per l'organizzazione.  <br/> |Accedere **all'interfaccia di amministrazione di Office 365** > **Skype per le aziende** e attivare la caratteristica per l'intera organizzazione. <br/> |
+|Sono disponibili licenze, ma non è stata attivata la funzionalità per l'utente.  <br/> |Accedere agli > **utenti attivi** dell'interfaccia di **amministrazione di Office 365**per concedere la licenza a questo utente. <br/> |
+|L'utente si trova in una posizione in cui questa caratteristica non è disponibile.  <br/> |Se possibile, accedere agli > **utenti attivi** dell'interfaccia di **amministrazione di Office 365**e assegnare l'utente a una posizione in cui è disponibile la funzionalità. <br/> |
+|La caratteristica non è stata attivata per l'organizzazione.  <br/> |Accedere all'interfaccia di **Amministrazione** > di Office 365**Skype for business** e attivare la funzionalità per l'intera organizzazione. <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)

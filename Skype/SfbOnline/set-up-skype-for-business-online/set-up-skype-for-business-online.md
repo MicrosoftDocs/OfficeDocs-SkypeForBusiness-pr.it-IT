@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -23,12 +23,12 @@ ms.custom:
 - Alchemy
 - LIL_Placement
 description: "Informazioni su come configurare il dominio, gli utenti, la messaggistica Istantanea e la presenza dell'organizzazione per l'installazione di Skype for Business.  Vedere anche Informazioni su come Configurazione di conferenze Audio, Sistema telefonico e Piani di chiamata e Skype Meeting broadcast. "
-ms.openlocfilehash: 2a968fa0f5b89351c2a7a2726052b1418f0ac213
-ms.sourcegitcommit: da8c037bb30abf5d5cf3b60d4b71e3a10e553402
-ms.translationtype: HT
+ms.openlocfilehash: fb31a2affa1507f043244fbe6f1988040cfec4ba
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30878685"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34285255"
 ---
 # <a name="set-up-skype-for-business-online"></a>Configurare Skype for Business online
 
@@ -40,7 +40,7 @@ Serve aiuto per configurare Skype con l'abbonamento a Office 365? È possibile s
 
 ## <a name="1-plan-for-skype-for-business"></a>1. Pianificare Skype for Business 
 
-Con **[Office 365 Business Premium](https://products.office.com/it-IT/business/office-365-business-premium)** o ** Business Essentials**, è possibile usare Skype for Business per effettuare chiamate ad altre persone dell'azienda incluse nell'abbonamento. Ad esempio, se l'azienda ha 10 dipendenti, sarà possibile [Iniziare a usare Skype for Business per la messaggistica Istantanea e riunioni online](https://support.office.com/article/cc05afa6-1894-4a82-9dd9-6222061f50fd) tra loro, e [Riunioni con Skype for Business](https://support.office.com/article/2eed8424-581a-4497-b505-c08c152e5851) usando Skype for Business dopo ave eseguito i passaggi da 2 a 6, descritti qui sotto. È possibile [Impostare una Riunione in Skype for Business su Outlook](https://support.office.com/article/b8305620-d16e-4667-989d-4a977aad6556#bkmk_OWA) oltre alle riunioni online!
+Con **[Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium)** o ** Business Essentials**, è possibile usare Skype for Business per effettuare chiamate ad altre persone dell'azienda incluse nell'abbonamento. Ad esempio, se l'azienda ha 10 dipendenti, sarà possibile [Iniziare a usare Skype for Business per la messaggistica Istantanea e riunioni online](https://support.office.com/article/cc05afa6-1894-4a82-9dd9-6222061f50fd) tra loro, e [Riunioni con Skype for Business](https://support.office.com/article/2eed8424-581a-4497-b505-c08c152e5851) usando Skype for Business dopo ave eseguito i passaggi da 2 a 6, descritti qui sotto. È possibile [Impostare una Riunione in Skype for Business su Outlook](https://support.office.com/article/b8305620-d16e-4667-989d-4a977aad6556#bkmk_OWA) oltre alle riunioni online!
 
 Se si desidera usare Skype for Business per effettuare e ricevere **chiamate** da persone*esterne* all'azienda:
 

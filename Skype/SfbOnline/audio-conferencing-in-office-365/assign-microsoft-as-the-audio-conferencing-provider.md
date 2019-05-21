@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Learn how to assign Microsoft the dial-in conferencing provider for Skype for Business.
-ms.openlocfilehash: 0cbfe5fec234ab237bd0c6bf108cfaa968685f0f
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: e779b3f9aaf5c88bb64e1045f5743e4c4a238d50
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229405"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34273728"
 ---
 # <a name="assign-microsoft-as-the-audio-conferencing-provider"></a>Assegnare Microsoft come provider di servizi di audioconferenza
 
@@ -41,16 +41,16 @@ Microsoft Audio Conferencing supplies dial-in phone numbers, PINs, and conferenc
 
 ### <a name="sfb-logo-30x30pngimagessfb-logo-30x30png-using-the-skype-for-business-admin-center"></a>![sfb-logo-30x30.png](../images/sfb-logo-30x30.png) Utilizzo dell'interfaccia di amministrazione di Skype for Business
 
-1. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
+1. Accedere al**portale legacy**dell'interfaccia di **Amministrazione** > di Microsoft teams.
     
-2. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio**.
+2. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, passa a servizi di **audioconferenza**.
     
 3. If you see a banner notifying you that there are users who have an **Audio Conferencing** license assigned but don't have Microsoft set as their audio conferencing provider yet, click **Click here to move them**. If you don't see the banner, in the **Skype for Business admin center** click **Users**, and then select the **Users ready to be moved to Audio Conferencing** filter.
     
-4. Nella pagina proprietà dell'utente, sotto il **nome del Provider**, selezionare **Microsoft** nell'elenco a discesa.
+4. Nella pagina delle proprietà dell'utente, in **Nome provider**, selezionare **Microsoft** nell'elenco a discesa.
     
     > [!NOTE]
-    > Poiché si utilizza Microsoft come provider di servizi di conferenza audio e sono disponibili più numeri di telefono, è possibile utilizzare l'elenco a discesa **numero a pagamento predefinito** per selezionare un numero di audio predefinita per l'utente.
+    > Poiché si usa Microsoft come provider di servizi di audioconferenza e sono presenti più numeri di telefono, è possibile usare l'elenco a discesa **predefinito** per selezionare un numero audio predefinito per l'utente.
   
 5. Fai clic su **Salva**.
 
@@ -59,17 +59,17 @@ Microsoft Audio Conferencing supplies dial-in phone numbers, PINs, and conferenc
     
 ### <a name="using-a-windows-powershell-script-for-a-small-number-of-users"></a>Utilizzo di uno script Windows PowerShell per un numero ridotto di utenti
 
-Per risparmiare tempo o automatizzare questa operazione, è possibile utilizzare il seguente script di PowerShell per configurare Microsoft come provider di servizi di conferenza audio per un numero limitato di utenti.
+Per risparmiare tempo o automatizzare questa operazione, è possibile usare lo script di PowerShell seguente per impostare Microsoft come provider di servizi di audioconferenza per un numero limitato di utenti.
 
 > [!NOTE]
 > When the provider is changed from another provider to **Microsoft**, the audio conferencing information for the user (Conference ID, Toll and Toll-free numbers) will be replaced. You should save this information before changing the provider. 
 
   
-Per modificare il provider a Microsoft per un numero limitato di utenti, è possibile utilizzare il cmdlet [Enable-CsOnlineDialInConferencingUser](https://technet.microsoft.com/en-us/library/mt243813.aspx) .
+Per cambiare il provider in Microsoft per un numero limitato di utenti, è possibile usare il cmdlet [Enable-CsOnlineDialInConferencingUser](https://technet.microsoft.com/en-us/library/mt243813.aspx) .
   
 
 ### <a name="using-a-windows-powershell-script-for-a-large-number-of-users"></a>Utilizzo di uno script Windows PowerShell per un grande numero di utenti
-Per risparmiare tempo o automatizzare questa operazione, è possibile utilizzare il seguente script di PowerShell per configurare Microsoft come provider di servizi di conferenza audio per un numero elevato di utenti.
+Per risparmiare tempo o automatizzare questa operazione, è possibile usare lo script di PowerShell seguente per impostare Microsoft come provider di servizi di audioconferenza per un numero elevato di utenti.
 
 When the provider is changed from another provider to **Microsoft**, the audio conferencing information for the user (Conference ID, Toll and Toll-free numbers) will be replaced. You should save this information before changing the provider. 
   
@@ -89,7 +89,7 @@ Script.ps1 -CsvFile <Path of the csv file>
 ./Script.ps1 -CsvFile ".\\CsvFile.csv"
   ```
 
-**Con l'esempio 3:** In questo esempio, è possibile utilizzare questo script per modificare il provider di servizi di conferenza audio da Intercall (o un altro provider) a **Microsoft** per un grande numero utenti nell'organizzazione.
+**Esempio 3:** In questo esempio puoi usare questo script per cambiare il provider di servizi di audioconferenza da InterCall (o da un altro provider) a **Microsoft** per un numero elevato di utenti nell'organizzazione.
     
   ```
   Script.ps1 -ACPProviderName <Provider>
@@ -195,6 +195,6 @@ Script.ps1 -CsvFile <Path of the csv file>
 Per ulteriori informazioni sull'uso di Windows PowerShell, consulta [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038).
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Prova o acquisto audioconferenza in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
-[impostare Skype Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
+[Provare o acquistare servizi di audioconferenza in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Configurare Skype for business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
 

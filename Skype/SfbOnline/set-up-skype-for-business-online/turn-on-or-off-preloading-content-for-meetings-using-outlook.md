@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -18,19 +18,19 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'See how to turn preloaded content on or off for Skype for Business meetings using files or attachments on an Outlook meeting invitation. '
-ms.openlocfilehash: 413610285a187fc85d7aa926a77f09cccbb15643
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 8b3b912526a44fb10cb685dd6ab9b3dea8f8eac4
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32226015"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34284925"
 ---
 # <a name="turn-on-or-off-allowing-content-to-be-preloaded-for-meetings-using-outlook"></a>Attivare o disattivare il precaricamento dei contenuti delle riunioni tramite Outlook
 
-Gli utenti possono precaricare contenuto, i file o gli allegati associati a un invito alla riunione di Outlook per Skype per riunione in linea di Business, ma è possibile attivare o disattivare. È attivata per impostazione predefinita per tutte le organizzazioni che utilizzano Skype Business online. Vedere come [Precaricare gli allegati per una riunione Skype for Business](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).
+Gli utenti possono precaricare il contenuto, i file o gli allegati associati a un invito a una riunione di Outlook a una riunione Skype for business online, ma è possibile attivarla o disattivarla. È attivata per impostazione predefinita per tutte le organizzazioni che usano Skype for business online. Vedere come [Precaricare gli allegati per una riunione Skype for Business](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).
   
 > [!NOTE]
-> Non sono attualmente presenti alcun cmdlet disponibili in Skype Business online per l'impostazione o visualizzazione di valori in linea per _MaxContentStorageMB_ e _MaxUploadFileMB_. Sono disponibili solo per le distribuzioni locali. È importante tenere presente che il contenuto non verrà caricato in una riunione se il contenuto allegato supera _MaxUploadFileSizeMB_ o se viene raggiunto il limite _MaxContentStorageMB_ .
+> Attualmente non sono disponibili cmdlet in Skype for business online per l'impostazione o la visualizzazione di valori online per _MaxContentStorageMB_ e _MaxUploadFileMB_. Sono disponibili solo per le distribuzioni locali. È importante sapere che il contenuto non verrà caricato in una riunione se il contenuto allegato supera il _MaxUploadFileSizeMB_ o se viene raggiunto il limite di _MaxContentStorageMB_ .
   
 ## <a name="to-get-you-started"></a>Per iniziare
 
@@ -66,14 +66,14 @@ $session = New-CsOnlineSession -Credential $credential
 Import-PSSession $session
 ```
 
-Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [impostare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
+Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
   
 ## <a name="turning-it-on-or-off"></a>Attivazione o disattivazione del precaricamento
 
-Possibilità di precaricare contenuto collegato a un invito alla riunione di Outlook per Skype per le riunioni in linea aziendale è attivata per impostazione predefinita, ma potrebbe essere necessario per impedire agli utenti dell'organizzazione di precaricare contenuto le riunioni.
+La possibilità di precaricare il contenuto allegato a un invito a una riunione di Outlook a riunioni Skype for business online è attivata per impostazione predefinita, ma potrebbe essere necessario impedire agli utenti dell'organizzazione di precaricare il contenuto nelle riunioni.
   
 > [!IMPORTANT]
-> Questa impostazione può solo essere attivata o disattivato per l'intera organizzazione; è possibile disabilitare viene attivato o disattivato per un singolo utente. 
+> Questa impostazione può essere attivata o disattivata solo per l'intera organizzazione; non è possibile attivarlo o disattivarlo per un singolo utente. 
   
  **Per disattivarla, aprire Windows PowerShell e procedere come segue:**
   
