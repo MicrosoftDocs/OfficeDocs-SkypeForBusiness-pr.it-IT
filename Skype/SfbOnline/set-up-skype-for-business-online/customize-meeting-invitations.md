@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -19,58 +19,58 @@ f1keywords:
 - ms.teamsadmincenter.meetingsettings.invitationurls
 ms.custom:
 - Setup
-description: 'Personalizzare Skype inviti alle riunioni con logo grafici, Guida in linea e gli URL legali e testo piè di pagina. '
-ms.openlocfilehash: 3d01d23172d7c187d09930c644390bdbf7a273b2
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: 'Personalizzare gli inviti alle riunioni Skype con loghi grafici, guida e URL legali e testo del piè di pagina. '
+ms.openlocfilehash: c8b31aa579edb62e9b6aec65bda5adde10726deb
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32237891"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34285295"
 ---
 # <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
-Come amministratore, è possibile garantire che tutto Skype per convocazioni di riunione di lavoro include alcune informazioni utili per gli utenti potrebbe essere necessario, ad esempio collegamenti per il sito Web supporto tecnico e di non responsabilità, il logo della società e altro testo che si desidera includere. 
+Come amministratore, puoi assicurarti che tutti gli inviti alle riunioni di Skype for business includano alcune informazioni utili che potrebbero essere necessarie agli utenti, ad esempio i collegamenti al sito Web del supporto e il Disclaimer legale, il logo della società e il testo che vuoi includere. 
   
 ## <a name="tips-for-creating-a-logo-for-meeting-invitations"></a>Suggerimenti per la creazione di un logo per gli inviti alle riunioni
 <a name="__top"> </a>
 
-1. Creare un'immagine che sarà pixel non più di 188 per 30 pixel di altezza (è molto piccola).
+1. Creare un'immagine di dimensioni non superiori a 188 pixel di altezza di 30 pixel (è abbastanza piccola).
     
-2. L'immagine viene salvata in formato JPG.
+2. Salvare l'immagine in formato JPG.
     
-3. Archiviare l'immagine in una posizione centralizzata possa accedere chiunque nell'azienda, ad esempio una condivisione di rete condiviso OneDrive per la cartella di Business, raccolta, ecc.
+3. Archiviare l'immagine in una posizione centrale accessibile a tutti gli utenti aziendali, ad esempio una condivisione di rete, una cartella condivisa di OneDrive for business, un Dropbox e così via.
     
-    A questo punto è possibile aggiungere alle convocazioni di riunione. Vedere i passaggi successivi.
+    A questo punto è possibile aggiungerlo agli inviti alle riunioni. Vedere i passaggi successivi.
     
-## <a name="customize-your-meeting-invitations"></a>Personalizzare le convocazioni di riunione
+## <a name="customize-your-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 <a name="__top"> </a>
 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Nell'interfaccia di amministrazione di Office 365, selezionare **Admin Center** > **Skype per le aziende**.
+2. Nell'interfaccia di amministrazione di Office 365 scegliere interfaccia di **Amministrazione** > **Skype for business**.
     
-3. Skype per interfaccia di amministrazione di Business, scegliere **riunioni in linea**. 
+3. Nell'interfaccia di amministrazione di Skype for Business Scegli **riunioni online**. 
     
 4. Completare le caselle seguenti:
     
-    ![Ecco che cosa è possibile ottenere quando si completa il modulo per personalizzare le convocazioni di riunione.](../images/b0a7c3c6-0d86-41c6-b116-331143bbe398.png) 
+    ![Ecco come può apparire quando si compila il modulo per personalizzare gli inviti alle riunioni.](../images/b0a7c3c6-0d86-41c6-b116-331143bbe398.png) 
 
-   **URL logo:** Immettere l'URL in cui è archiviato il logo. Ricordare che deve essere nel formato JPG. 
+   **URL logo:** Immettere l'URL in cui è archiviato il logo. Ricorda che deve essere in formato JPG! 
  
-   **URL della Guida:** Se l'organizzazione dispone di un sito Web supporto tecnico che si desidera passare al se dispongono di problemi, immettere l'URL di seguito. 
+   **URL della guida:** Se l'organizzazione dispone di un sito Web di supporto in cui si vuole che gli utenti possano accedere in caso di problemi, immettere l'URL qui. 
 
-   **URL legali:** Se l'organizzazione dispone di un sito Web legale che si desidera passare al se hanno problemi legali, immettere l'URL di seguito.
+   **URL legale:** Se l'organizzazione ha un sito Web legale a cui si vuole che gli utenti possano rivolgersi per motivi legali, immettere l'URL qui.
     
-   **Testo piè di pagina:** Immettere una nota di solo testo che è appropriata per gli utenti.  
+   **Testo piè** di pagina: Immettere una nota a piè di pagina di solo testo appropriata per gli utenti.  
   
    
 5. Scegliere **Save**.
     
-6. In attesa un'ora o richiesto ottenere popolato in tutti i servizi di Office 365 le modifiche. Quindi accedere a Outlook e pianificare una riunione Skype per verificare che le modifiche aspetto. 
+6. Attendere un'ora o in modo che le modifiche vengano popolate in tutti i servizi di Office 365. Quindi passa a Outlook e pianifica una riunione Skype per vedere come sono le modifiche. 
     
-    ![Aspetto un invito a una personalizzata, senza l'elemento grafico](../images/ebb5c03c-c23d-4da7-97f1-9b13e26a6cf8.png)
+    ![Ecco l'aspetto di un invito personalizzato, senza l'elemento grafico](../images/ebb5c03c-c23d-4da7-97f1-9b13e26a6cf8.png)
   
 ## <a name="related-topics"></a>Argomenti correlati
 <a name="__top"> </a>

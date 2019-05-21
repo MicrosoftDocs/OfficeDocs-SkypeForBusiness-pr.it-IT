@@ -11,44 +11,44 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Licensing
-description: Skype per Business Online piano 1 è stato rimosso. Tuttavia, se si dispone di un abbonamento a Skype per Business Online piano 1, questa modifica non influisce sul è interrotto. Quando sei pronto a passare a un nuovo piano, ovvero immediatamente o durante il rinnovo, sarà necessario tre opzioni.
-ms.openlocfilehash: d8468fa2d070e98cb19a1f41fff6884ac7c3517e
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: Il piano 1 di Skype for business online è stato ritirato. Tuttavia, se si ha un abbonamento corrente a Skype for business online Plan 1, questa modifica non verrà applicata immediatamente. Quando si è pronti per il passaggio a un nuovo piano, ora o durante il rinnovo, è possibile scegliere tra tre opzioni.
+ms.openlocfilehash: 92b8cc0b01c14cf254dd90fdd96d06b80dfd5345
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32248714"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34290292"
 ---
 # <a name="skype-for-business-online-plan-1-retirement"></a>Ritiro di Skype for Business online (Piano 1) 
 
-Skype per Business Online piano 1 è stato rimosso. Tuttavia, se si dispone di un abbonamento a Skype per Business Online piano 1, questa modifica non influisce sul è interrotto. Un amministratore globale di Office 365, sarà ricevere gli aggiornamenti di posta elettronica e vedere i post nel centro di messaggi (parte dell'interfaccia di amministrazione di Office 365) con informazioni su cui è necessario eseguire l'azione necessaria. Nel frattempo, possono continuare a utilizzare le Skype esistente per le licenze Business Online piano 1.
+Il piano 1 di Skype for business online è stato ritirato. Tuttavia, se si ha un abbonamento corrente a Skype for business online Plan 1, questa modifica non verrà applicata immediatamente. L'amministratore di Office 365 globale riceverà gli aggiornamenti della posta elettronica e vedrà i post nel centro messaggi (parte dell'interfaccia di amministrazione di Office 365) con informazioni su quando è necessario intervenire. Nel frattempo, puoi continuare a usare le licenze esistenti di Skype for business online per il piano 1.
 
-Quando sei pronto a passare a un nuovo piano, ovvero immediatamente o durante il rinnovo, è necessario l'opzione per passare a Office 365 F1 o un altro piano di Office 365 di propria scelta.
+Quando si è pronti per passare a un nuovo piano, ora o durante il rinnovo, è possibile passare a Office 365 F1 o a un altro piano di Office 365 scelto.
 
-È possibile mantenere la stessa funzionalità che sono con Skype per Business Online piano 1 durante l'utilizzo delle nuove caratteristiche e funzionalità di Office 365. Numerose opzioni di pianificazione disponibili includono tutte le funzionalità fornite con Skype per Business Online piano 1, nonché messaggistica Istantanea e presenza, peer-to-peer audio e video tramite protocollo IP e la possibilità di partecipare alle riunioni come utente autenticato.
+È possibile mantenere le stesse funzionalità di Skype for business online Plan 1 sfruttando le nuove caratteristiche e funzionalità di Office 365. Molte opzioni di piano disponibili includono tutte le caratteristiche fornite con Skype for business online Plan 1, nonché la messaggistica istantanea e la presenza, l'audio e il video su IP peer-to-peer e la possibilità di partecipare alle riunioni come utente autenticato.
 
 
 ## <a name="switching-to-office-365-f1"></a>Passaggio a Office 365 F1
 
-Questa opzione è appropriata se si desidera usufruire delle funzionalità aggiuntive disponibili in Office 365 F1. Per ulteriori informazioni e ottenere informazioni sui prezzi, vedere [Office 365 F1](https://products.office.com/en-us/business/office-365-f1).
+Questa opzione è ideale se vuoi sfruttare le funzionalità aggiuntive che Office 365 F1 ha da offrire. Per saperne di più e ottenere informazioni sui prezzi, vedere [Office 365 F1](https://products.office.com/en-us/business/office-365-f1).
 
 
-### <a name="how-to-switch"></a>Viene illustrato come passare 
+### <a name="how-to-switch"></a>Come cambiare 
 
-È possibile passare a Office 365 F1 ora o attendere fino a quando non è necessario rinnovare e l'aggiornamento durante il processo di rinnovo. In entrambi i casi, si utilizzerà il responsabile account o partner per iniziare l'operazione, a meno che non sono stati acquistati dell'abbonamento direttamente da Microsoft, qual caso è possibile passare a Office 365 F1 familiarità nell'interfaccia di amministrazione di Office 365.
+È possibile passare a Office 365 F1 ora o aspettare che sia il momento di rinnovare e aggiornare durante il processo di rinnovo. In entrambi i casi, è possibile collaborare con il proprio rappresentante o partner per l'account, a meno che l'abbonamento non sia stato acquistato direttamente da Microsoft, in questo caso si può passare a Office 365 F1 autonomamente nell'interfaccia di amministrazione di Office 365.
 
 
-## <a name="switching-to-another-office-365-offer"></a>Passaggio a un'altra proposta di Office 365
+## <a name="switching-to-another-office-365-offer"></a>Passaggio a un'altra offerta di Office 365
 
-Le funzionalità di sfruttare gli utenti in Skype per Business Online piano 1 sono disponibili in molti dei nostri famiglie di prodotti di Office 365, tramite Microsoft Teams o Skype Business online, in base al quale servizio attualmente in uso. 
+Le caratteristiche che gli utenti godono in Skype for business online Plan 1 sono disponibili in molte delle nostre suite di Office 365, tramite Microsoft teams o Skype for business online, a seconda del servizio attualmente in uso. 
 
-### <a name="how-to-switch"></a>Viene illustrato come passare 
+### <a name="how-to-switch"></a>Come cambiare 
 
-Quando è necessario rinnovare la sottoscrizione e Skype per Business Online piano 1 non è più disponibile per l'utente, sarà possibile passare a un altro piano di Office 365 come parte del processo di rinnovo. Se non si desidera attendere fino rinnovo, è possibile scegliere di passare a questo punto. In entrambi i casi, si utilizzerà il rappresentante o partner di effettuare l'opzione o, se è stato acquistato Skype per Business Online piano 1 Microsoft direttamente, in linea, eseguire tale operazione manualmente nell'interfaccia di amministrazione.
+Quando è il momento di rinnovare l'abbonamento e Skype for business online piano 1 non è più disponibile, è possibile passare a un altro piano di Office 365 nell'ambito del processo di rinnovo. Se non si vuole attendere il rinnovo, è possibile scegliere di passare ora. In entrambi i casi, si lavorerà con il proprio rappresentante o partner per effettuare l'opzione oppure, se è stato acquistato direttamente da Microsoft Skype for business online Plan 1, online, nell'interfaccia di amministrazione.

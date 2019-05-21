@@ -1,5 +1,5 @@
 ---
-title: Chiamate in uscita da Skype per le riunioni aziendali in modo che altri utenti possono accedervi
+title: Chiamata in uscita da una riunione Skype for business in modo che gli altri utenti possano accedervi
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -20,25 +20,25 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Informazioni su requisiti e sul modo in cui gli organizzatori delle riunioni possono effettua una chiamata a utenti che utilizzano Skype for Business.
-ms.openlocfilehash: 49130a14391e014d1e7aea21c62abaf2385296d8
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 4f46315c7817ad7e8e529fabff9a3a333527a266
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229536"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34306121"
 ---
-# <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamate in uscita da Skype per le riunioni aziendali in modo che altri utenti possono accedervi
+# <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione Skype for business in modo che gli altri utenti possano accedervi
 
 > [!NOTE]
 > Se cerchi informazioni sulle chiamate in uscita da una riunione di Teams, consulta [Chiamate in uscita da una riunione di Teams in modo che altri utenti possano accedervi](/MicrosoftTeams/dialing-out-from-a-teams-meeting-so-other-people-can-join-it).
 
 As the meeting organizer, you can dial out using the Skype for Business app to let other people join the same meeting using their phone. Although it's not required, when you are dialing out to someone, it's recommended that you dial the full number, including the country/region code. To get dial-out to work:
   
-- È possibile chiamata in uscita solo se si partecipa a una riunione con un Skype per applicazioni aziendali.
+- È possibile effettuare una chiamata in uscita solo se si partecipa a una riunione con un'app Skype for business.
     
 - L'organizzatore della riunione è abilitato alle conferenze telefoniche con accesso esterno.
 
-Per aggiungere altri partecipanti tramite chiamata in uscita per le riunioni dell'organizzazione, è necessario almeno un utente autenticato alla stessa organizzazione organizzare (organizzazione) deve essere presente nella riunione per consentire l'aggiunta di altri partecipanti tramite chiamata in uscita. 
+Per aggiungere altri partecipanti tramite chiamata in uscita alle riunioni dell'organizzazione, è necessario che almeno un utente autenticato della stessa organizzazione dell'organizzatore (l'organizzazione) sia presente nella riunione per consentire l'aggiunta di altri partecipanti tramite chiamata in uscita. 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
@@ -53,7 +53,7 @@ Per aggiungere altri partecipanti tramite chiamata in uscita per le riunioni del
   
 ## <a name="supported-countries-and-regions"></a>Paesi e aree geografiche supportati
 
-Dial-out is only available to some countries/regions. Per un elenco completo, vedere [disponibilità paese e alle aree per le conferenze Audio e la chiamata Plans](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans).
+Dial-out is only available to some countries/regions. Per l'elenco completo, vedere [disponibilità di paesi e aree geografiche per i piani di audioconferenza e chiamate](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans).
   
 ## <a name="want-to-know-more-about-audio-conferencing"></a>Per saperne di più sui servizi di conferenza telefonica con accesso esterno
 

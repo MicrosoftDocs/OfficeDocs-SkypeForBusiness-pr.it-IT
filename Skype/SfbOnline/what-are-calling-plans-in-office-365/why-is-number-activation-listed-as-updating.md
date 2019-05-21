@@ -1,5 +1,5 @@
 ---
-title: Perché attivazione numerico risulti l'aggiornamento?
+title: Perché l'attivazione del numero è elencata come aggiornamento?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -21,16 +21,16 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: dc1bf738f301dfc800b0e0e4975322fae6a1568e
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: f9f24ff805cb78f0e77042d8ba180695fecf746c
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32227825"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34290546"
 ---
-# <a name="why-is-number-activation-listed-as-updating"></a>Perché attivazione numerico risulti l'aggiornamento?
+# <a name="why-is-number-activation-listed-as-updating"></a>Perché l'attivazione del numero è elencata come aggiornamento?
 
-La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Se per qualche motivo un numero di telefono non è attivato ed è elencato come **l'aggiornamento** a causa della convalida dell'indirizzo, è necessario creare e inviare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
+La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Se per qualche motivo un numero di telefono non è attivato ed è elencato come **aggiornamento** a causa della convalida degli indirizzi, è necessario creare e inviare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
   
 ## <a name="for-organizations-150-or-less-follow-these-steps"></a>Per le organizzazioni da 150 persone o meno segui questi passaggi
 1. Nell'**interfaccia di amministrazione di Office 365**, scegli **Serve aiuto**?

@@ -11,7 +11,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -19,13 +19,13 @@ f1keywords: None
 ms.custom:
 - Licensing
 - LIL_Placement
-description: "Informazioni sulle licenze di componente aggiuntivo, caratteristiche e sull'acquisto di per i piani di Office 365 Enterprise. "
-ms.openlocfilehash: 084d60a2c21712e119657005a52dc0af11bce9a0
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: 'Informazioni sulle licenze per i componenti aggiuntivi, le caratteristiche e su come acquistare i piani aziendali di Office 365. '
+ms.openlocfilehash: c0da6cc3d28cb5f41e29509a7f75dbe8c3a1b476
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32238365"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34290040"
 ---
 # <a name="office-365-enterprise-e5"></a>Office 365 Enterprise E5
 
@@ -34,6 +34,6 @@ Il piano [Office 365 Enterprise E5](https://products.office.com/en-us/business/o
 |||
 |:-----|:-----|
 |**Per aggiungere questa funzionalità** <br/> |**Ecco cosa occorre acquistare** <br/> |
-|**Audioconferenze con accesso esterno è incluso!** <br/> |Una volta acquistate le licenze, Microsoft sarà il provider di servizi di audioconferenza.  <br/> |
-|**Numeri verdi per di accesso per le riunioni e la possibilità di effettuare chiamate in uscita da una riunione di aggiungere un utente chiamando un numero di telefono in tutto il mondo.** <br/> |[Riconoscimenti Communications](/microsoftteams/set-up-communications-credits-for-your-organization)|
-|**Sistema telefonico e segreteria telefonica è incluso!** <br/> |Piani di chiamata: acquista un [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365) da Office 365. <br/>  In alternativa, utilizza il [servizio telefonico del tuo provider esistente](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md#bkmk_existing). |
+|**Sono inclusi i servizi di audioconferenza.** <br/> |Una volta acquistate le licenze, Microsoft sarà il provider di servizi di audioconferenza.  <br/> |
+|**Numeri verdi per l'accesso esterno alle riunioni e la possibilità di effettuare chiamate in uscita da una riunione per aggiungere qualcuno chiamando qualsiasi numero di telefono nel mondo.** <br/> |[Crediti per comunicazioni](/microsoftteams/set-up-communications-credits-for-your-organization)|
+|**È incluso il sistema telefonico e la segreteria telefonica.** <br/> |Piani di chiamata: acquista un [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365) da Office 365. <br/>  In alternativa, utilizza il [servizio telefonico del tuo provider esistente](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md#bkmk_existing). |

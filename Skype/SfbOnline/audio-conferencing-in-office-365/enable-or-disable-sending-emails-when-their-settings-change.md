@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come abilitare o disabilitare Skype dall'invio di messaggi di posta elettronica agli utenti quando cambiano le impostazioni, quali ad esempio le modifiche del pin o del numero predefinito della conferenza. "
-ms.openlocfilehash: a9100de01fc835916af54d08b84dbd03a06ec1d6
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 9581589dcc9b07ed5745069f56d6f2ba3561feae
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229818"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34290121"
 ---
 # <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change-in-skype-for-business-online"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica quando vengono modificate le impostazioni di Audioconferenza in Skype for Business online
 
@@ -34,37 +34,37 @@ ms.locfileid: "32229818"
 
 Users are automatically notified by email when they are enabled for Audio Conferencing. There may be times, however, when you want to reduce the number of emails that are sent to Skype for Business users. In such cases, you can disable sending email.
   
-Se si disattiva invio messaggi di posta elettronica, messaggi di posta elettronica audioconferenze con accesso esterno non verranno inviate agli utenti, inclusi messaggi di posta elettronica per quando gli utenti sono abilitati o disattivati per le conferenze audio, quando viene reimpostato il proprio PIN e l'ID conferenza e i servizi di conferenza predefinito cambia il numero di telefono .
+Se si disabilita l'invio di messaggi di posta elettronica, i messaggi di audioconferenza non verranno inviati agli utenti, inclusi i messaggi di posta elettronica per quando gli utenti sono abilitati o disabilitati per i servizi di audioconferenza, quando il PIN viene reimpostato e quando l'ID conferenza e il numero di telefono delle conferenze predefinite cambiano .
   
-Di seguito è riportato un esempio di messaggio di posta elettronica inviato agli utenti quando vengono abilitati per le conferenze Audio:
+Ecco un esempio di messaggio di posta elettronica inviato agli utenti quando sono abilitati per i servizi di audioconferenza:
   
 ![Posta elettronica per Audioconferenza](../images/audio-conferencing-user-enabled.png)
   
 ## <a name="when-are-emails-being-sent-to-your-users"></a>I messaggi di posta elettronica quando vengono inviati agli utenti?
 
-- Esistono diversi messaggi di posta elettronica inviati a utenti dell'organizzazione dopo che vengono abilitati per le conferenze audio:
+- Ci sono diversi messaggi di posta elettronica inviati agli utenti dell'organizzazione dopo che sono stati abilitati per i servizi di audioconferenza:
     
   - Quando una licenza di **Audioconferenza** viene assegnata a loro.
     
-  - Quando si reimposta manualmente conferenza PIN dell'utente.
+  - Quando si reimposta manualmente il PIN per i servizi di audioconferenza dell'utente.
     
   - Quando reimposti manualmente l'ID conferenza dell'utente.
     
   - Quando la licenza di **Audioconferenza** viene loro rimossa.
     
-  - Quando viene modificato il provider di servizi di conferenza audio di un utente da Microsoft a un altro provider o **Nessuno**.
+  - Quando il provider di servizi di audioconferenza di un utente viene modificato da Microsoft a un altro provider o **nessuno**.
     
-  - Quando si modifica il provider di servizi di conferenza audio di un utente a Microsoft.
+  - Quando il provider di servizi di audioconferenza di un utente viene modificato in Microsoft.
 
 
-## <a name="enable-or-disable-email-from-being-sent-to-users"></a>Attivare o disattivare la posta elettronica non verrà inviato agli utenti
+## <a name="enable-or-disable-email-from-being-sent-to-users"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica agli utenti
 
-È possibile utilizzare Skype per interfaccia di amministrazione di Business o Windows PowerShell per abilitare o disabilitare la posta elettronica inviato agli utenti.
+Puoi usare l'interfaccia di amministrazione di Skype for business o Windows PowerShell per abilitare o disabilitare l'invio di messaggi di posta elettronica agli utenti.
 
  
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**
     
-1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistra fare clic su **audioconferenze**.
+1. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, fare clic su **audioconferenza**.
     
 2. Nella pagina **Impostazioni ponte Microsoft**, seleziona o deseleziona **Invia automaticamente messaggi di posta elettronica agli utenti se le impostazioni di audioconferenza vengono modificate**.
     
@@ -76,7 +76,7 @@ Di seguito è riportato un esempio di messaggio di posta elettronica inviato agl
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
-**Utilizzo di Windows PowerShell**
+**Uso di Windows PowerShell**
   
 - Esegui il seguente comando per disabilitare l'invio di messaggi di posta elettronica: 
     
@@ -123,8 +123,8 @@ Di seguito è riportato un esempio di messaggio di posta elettronica inviato agl
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Messaggi di posta elettronica inviati agli utenti quando modificano le impostazioni di conferenza Audio](emails-sent-to-users-when-their-settings-change.md)
+[Messaggi di posta elettronica inviati agli utenti quando cambiano le impostazioni dei servizi di audioconferenza](emails-sent-to-users-when-their-settings-change.md)
 
-[Inviare un messaggio di posta elettronica a un utente con le loro informazioni di conferenze Audio](send-an-email-to-a-user-with-their-dial-in-information.md)
+[Inviare un messaggio di posta elettronica a un utente con le informazioni relative ai servizi di audioconferenza](send-an-email-to-a-user-with-their-dial-in-information.md)
 
 

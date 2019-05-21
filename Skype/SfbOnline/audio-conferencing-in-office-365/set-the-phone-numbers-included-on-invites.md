@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Ottenere i passaggi per creare un numero di telefono predefinito affinché i chiamanti possano partecipare ad una riunione di Skype for Business online. '
-ms.openlocfilehash: c78a3fb140431dd46b3850e1d01e7fb29fb29210
-ms.sourcegitcommit: 85b135cf622c9e9eb1857ef953bc618dc2cdb51e
+ms.openlocfilehash: 2f9d7c6960eb70cff28a941903e0646197bc4c4e
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "32229415"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34306311"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-skype-for-business-online"></a>Impostare in Skype for Business online i numeri di telefono inclusi negli inviti
 
@@ -81,7 +81,7 @@ A conferencing bridge gives you a set of dial-in phone numbers for your organiza
 
 ## <a name="reset-audio-conferencing-phone-numbers"></a>Reimpostare i numeri di telefono per Audioconferenza
 
-1. **Skype per interfaccia di amministrazione di Business**, scegliere **audioconferenze**.
+1. Nell'interfaccia di **amministrazione di Skype for business**scegli **audioconferenza**.
     
 2. Nella parte superiore della pagina, scegli **Utenti**.
     
@@ -107,30 +107,30 @@ By default, when you change a user's conferencing settings, an email is sent to 
 - Usa il cmdlet **Set-CsOnlineDialInConferencingUserDefaultNumber** per cambiare il numero a pagamento o verde predefinito di utenti in base al loro numero predefinito originale o alla loro località.
     
     > [!NOTE]
-    > Per trovare il BridgeID, utilizzare il cmdlet **Get-CsOnlineDialInConferencingBridge** .
+    > Per trovare il BridgeID, usa il cmdlet **Get-CsOnlineDialInConferencingBridge** .
   
   ```
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber +18005551234 -ToNumber +18005551239 NumberType TollFree -BridgeId <Bridge Id> -RescheduleMeetings 
   ```
 
-  - Per impostare il numero verde predefinito per tutti gli utenti senza 1 in modo da +18005551234, eseguire:
+  - Per impostare il numero verde predefinito per tutti gli utenti senza uno a + 18005551234, eseguire:
     
   ```
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber $null -ToNumber +18005551234 -NumberType TollFree -BridgeId <Bridge Id>  
   ```
 
-  - Per modificare il numero verde predefinito di tutti gli utenti che hanno +18005551234 come il numero verde predefinito per +18005551239, eseguire:
+  - Per modificare il numero verde predefinito di tutti gli utenti che hanno + 18005551234 come numero verde predefinito a + 18005551239, eseguire:
     
   ```
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber +18005551234 -ToNumber +18005551239 NumberType TollFree -BridgeId <Bridge Id>
   ```
 
-  - Per impostare il numero verde predefinito di tutti gli utenti presente negli Stati Uniti a +18005551234, eseguire:
+  - Per impostare il numero verde predefinito di tutti gli utenti che si trovano negli Stati Uniti in + 18005551234, eseguire:
     
   ```
   Set-CsOnlineDialInConferencingUserDefaultNumber -Country US -ToNumber +18005551234 -NumberType TollFree -BridgeId <Bridge Id>
   ```
-  ## <a name="want-to-learn-more-about-windows-powershell"></a>Fonti di ulteriori informazioni su Windows PowerShell
+  ## <a name="want-to-learn-more-about-windows-powershell"></a>Ulteriori informazioni su Windows PowerShell
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)

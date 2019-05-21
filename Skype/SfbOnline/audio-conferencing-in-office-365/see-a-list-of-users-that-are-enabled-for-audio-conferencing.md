@@ -1,5 +1,5 @@
 ---
-title: Visualizzare un elenco di utenti abilitati per le conferenze Audio in Skype Business online
+title: Visualizzare un elenco di utenti abilitati per i servizi di audioconferenza in Skype for business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -20,14 +20,14 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come visualizzare un elenco di utenti nell'organizzazione abilitati per la conferenza telefonica dall'interfaccia di amministrazione di Skype for Business. "
-ms.openlocfilehash: 722f9e411e1781529ea68f6995a2109f58d39cb0
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 9fb3a5ca8e21969ea5c09a5ac5c282dc4b816eff
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229262"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34298932"
 ---
-# <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-skype-for-business-online"></a>Visualizzare un elenco di utenti abilitati per le conferenze Audio in Skype Business online
+# <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-skype-for-business-online"></a>Visualizzare un elenco di utenti abilitati per i servizi di audioconferenza in Skype for business online
 
 > [!NOTE]
 > Per informazioni sugli utenti abilitati su Microsoft Teams, consulta [Visualizzare un elenco di utenti che sono abilitati per le Audioconferenza su Microsoft Teams](/MicrosoftTeams/see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-teams).

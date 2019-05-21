@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come aggiungere, modificare o rimuovere una posizione di emergenza utilizzata da Skype for Business su telefono di rete pubblica (PSTN) per la tua organizzazione. '
-ms.openlocfilehash: 39d3d530c4bfc3729e7711333bb804055d97378f
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: feaad24649c44be0561a90b568f023fd54ccc8f7
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32225780"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34299553"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
@@ -38,14 +38,14 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
+2. Accedere al**portale legacy**dell'interfaccia di **Amministrazione** > di Microsoft teams.
     
-3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**e quindi selezionare l'indirizzo di emergenza che si desidera aggiungere un percorso per.
+3. Nella barra di spostamento sinistra, vai a**posizioni di emergenza** **vocale** > e quindi seleziona l'indirizzo di emergenza per cui vuoi aggiungere una posizione.
     
     > [!Important]
-    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+    > Per visualizzare l'opzione **Voice** nella barra di spostamento sinistra nell'interfaccia di amministrazione di Skype for business, è necessario prima acquistare almeno una licenza **Enterprise E5**, una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
     
-4. Nel riquadro azioni, accanto a **associato percorsi**, fare clic su **Cambia**.
+4. Nel riquadro azioni, accanto a **posizioni associate**, fare clic su **Cambia**.
     
 5. Su **Posizioni associate**, fai clic su **Aggiungi nuova**, dopodiché immetti un'altra posizione associata (ad esempio, immetti "Edificio 64 Piano 1") e quindi fai clic su **Invia**.
     
@@ -55,11 +55,11 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
+2. Accedere al**portale legacy**dell'interfaccia di **Amministrazione** > di Microsoft teams.
     
-3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**e quindi selezionare l'indirizzo di emergenza per il quale si desidera modificare un percorso.
+3. Nella barra di spostamento sinistra passare a **** > **posizioni di emergenza**vocale e quindi selezionare l'indirizzo di emergenza per cui si vuole modificare la posizione.
     
-4. Nel riquadro azioni, accanto a **associato percorsi**, fare clic su **Cambia**.
+4. Nel riquadro azioni, accanto a **posizioni associate**, fare clic su **Cambia**.
     
 5. Su **Posizioni associate**, fai clic sul collegamento per la posizione nell'elenco, immetti i dettagli della nuova posizione su **Modifica i dettagli associati della posizione**e quindi fai clic su **Invia**.
     
@@ -69,13 +69,13 @@ Per informazioni su come ottenere Piani di chiamata e il relativo costo, consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
+2. Accedere al**portale legacy**dell'interfaccia di **Amministrazione** > di Microsoft teams.
     
-3. Nel riquadro di spostamento sinistro, passare a **Voice** > **posizioni di emergenza**e quindi selezionare l'indirizzo di emergenza che si desidera rimuovere un percorso per.
+3. Nella barra di spostamento sinistra, vai a**posizioni di emergenza** **vocale** > e quindi seleziona l'indirizzo di emergenza per cui vuoi rimuovere una posizione.
     
-4. Nel riquadro azioni, accanto a **associato percorsi**, fare clic su **Cambia**.
+4. Nel riquadro azioni, accanto a **posizioni associate**, fare clic su **Cambia**.
     
-5. In **percorsi associato**, accanto al collegamento per il percorso, fare clic su **Rimuovi**.
+5. In **posizioni associate**, accanto al collegamento per la posizione, fare clic su **Rimuovi**.
     
 6. Fai clic su **Salva**.
     

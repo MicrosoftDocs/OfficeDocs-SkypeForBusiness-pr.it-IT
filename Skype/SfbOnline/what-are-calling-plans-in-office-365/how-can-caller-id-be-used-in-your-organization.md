@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
-ms.openlocfilehash: df6c7c053b5dce4ffb1d121a1adbf829efda9943
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 9d15d51d0044ae15b04572f0b64a21912cea720a
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229888"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34305434"
 ---
 # <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nella tua organizzazione
 
@@ -65,16 +65,16 @@ Per impostare l'ID chiamante in uscita, vedere [Impostazione dell'ID chiamante p
 
 The EnableUserOverride attribute enables single or multiple users to change their Caller ID setting to **Anonymous**. This only applies when a CallingLineIdentity policy is configured with a CallingIDSubstitute parameter of either LineURI or Substitute. The default value of EnableUserOverride is False.
   
-Gli utenti finali possono impostare ID chiamante **anonima** utilizzando la scheda **Impostazioni** nel Skype per client desktop Business, selezionare **chiama un utente finale** (se abilitato dall'amministratore), informazioni sul profilo e numero **Nascondi il mio telefono per tutte le chiamate **.
+Gli utenti finali possono impostare l'ID chiamante su **Anonimo** usando la scheda **Impostazioni** nel client desktop Skype for business, selezionare **chiama un utente finale** (se abilitato dall'amministratore), selezionare Nascondi il **numero di telefono e le informazioni del profilo per tutte le chiamate **.
   
 ||||
 |:-----|:-----|:-----|
-|**Windows** <br/> |**Versione** <br/> |**È supportata** <br/> |
+|**Windows** <br/> |**Versione** <br/> |**Supportati** <br/> |
 |A portata di clic  <br/> |Current Channel rilasciato il 6 dicembre 2016 - versione 1611 (Build 7571.2072)  <br/> |Sì  <br/> |
 |A portata di clic  <br/> |Prima versione per Deferred Channel rilasciata il 22 febbraio 2017 - versione 1701 (Build 7766.2060)  <br/> |Sì  <br/> |
 |A portata di clic  <br/> |Deferred Channel rilasciato il 13 giugno 2017 - versione 1701 (Build 7766.2092)  <br/> |Sì  <br/> |
-|MSI  <br/> |Skype per le aziende  <br/> |No  <br/> |
-|Mac  <br/> |Skype per le aziende  <br/> |No  <br/> |
+|MSI  <br/> |Skype for business  <br/> |No  <br/> |
+|Mac  <br/> |Skype for business  <br/> |No  <br/> |
    
 ## <a name="inbound-caller-id"></a>ID chiamante in ingresso
 

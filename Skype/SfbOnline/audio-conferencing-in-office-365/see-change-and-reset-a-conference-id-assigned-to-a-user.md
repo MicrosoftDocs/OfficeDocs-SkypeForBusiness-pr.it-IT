@@ -1,5 +1,5 @@
 ---
-title: Vedere, modificare e ripristinare un ID conferenza assegnato a un utente in Skype Business online
+title: Visualizzare, modificare e reimpostare un ID conferenza assegnato a un utente in Skype for business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come assegnare un ID conferenza per un utente in Skype for Business online e quale devono essere i parametri ID conferenza. '
-ms.openlocfilehash: eb7d42fa88c54b917e89eb97ce9f52bd03af4935
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 28d18b6a12fdfcb40fa43904b8cc8a0461977c38
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229332"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34298922"
 ---
 # <a name="view-and-reset-a-conference-id-assigned-to-a-user-in-skype-for-business-online"></a>Visualizzare e reimpostare un ID conferenza assegnato a un utente in Skype for Business online
 
@@ -45,7 +45,7 @@ An email will be sent to the user with the conference ID and the default audio c
 
 ### <a name="to-view-the-conference-id"></a>Per visualizzare l'ID conferenza
 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**
 
 È possibile visualizzare l'ID conferenza e inviarlo agli utenti.
 
@@ -58,9 +58,9 @@ An email will be sent to the user with the conference ID and the default audio c
 4. Nella pagina Azione, cerca in **ID conferenza**.
 
     > [!TIP]
-    > È possibile inviare tutte le informazioni di servizi di conferenza per utente in un messaggio di posta elettronica che include l'ID conferenza e i numeri di telefono audio facendo clic sul collegamento **Invia informazioni conferenza tramite posta elettronica** dopo aver selezionato l'utente nella pagina **utenti** .
+    > È possibile inviare tutte le informazioni di conferenza all'utente in un messaggio di posta elettronica che include l'ID conferenza e i numeri di telefono audio facendo clic sul collegamento **Invia informazioni sulla conferenza tramite posta elettronica** dopo aver selezionato l'utente nella pagina **utenti** .
 
-**Utilizzo di Windows PowerShell**
+**Uso di Windows PowerShell**
 
 You can use Windows PowerShell to view the conference ID for a user. To do so, run:
 
@@ -75,17 +75,17 @@ You can use Windows PowerShell to view the conference ID for a user. To do so, r
 
 È possibile reimpostare un ID conferenza per un utente se, per esempio, venisse dimenticato.
 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
 
-3. In **Skype per Business admin center**> **audioconferenze** > **gli utenti**, nel riquadro azioni in **ID conferenza**, fare clic su **Reimposta**.
+3. Negli**utenti**di servizi di> **audioconferenza** > per l'interfaccia di **amministrazione di Skype for business**, nel riquadro azioni in **ID conferenza**fare clic su **Reimposta**.
 
 4. In the **Reset conference ID?** window, click **Yes**. A conference ID will be automatically created and an email sent to the user with the new conference ID.
 
-**Utilizzo di Windows PowerShell**
+**Uso di Windows PowerShell**
 
 You can reset the conference ID for a user by using the Windows PowerShell. To do this, run:
 

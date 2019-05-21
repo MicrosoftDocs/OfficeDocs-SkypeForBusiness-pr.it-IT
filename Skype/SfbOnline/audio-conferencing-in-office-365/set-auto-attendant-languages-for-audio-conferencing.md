@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Vedere come selezionare le lingue dell'operatore automatico per un numero di Audioconferenza in Skype for Business online.
-ms.openlocfilehash: 393ba3433ba7241ca5c992114de02191b7fb1044
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: a05b393ac671447c0efe385bb1d562039aef32d6
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229215"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34306379"
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing-in-skype-for-business-online"></a>Impostare le lingue dell'operatore automatico per Audioconferenza in Skype for Business online
 
@@ -37,7 +37,7 @@ L'operatore automatico di Audioconferenza per Skype for Business può dare il be
 Choose one primary language and up to four secondary languages. The primary language that you set will be used first and the secondary languages will be used by the auto-attendant in order that you select. 
   
 > [!NOTE]
->  È possibile modificare solo le lingue di numeri di accesso esterno alle audioconferenze della categoria dedicata. Le lingue del numero di conferenze audio condivisi non possono essere modificate.
+>  È possibile modificare solo le lingue dei numeri di servizi di audioconferenza della categoria dedicata. Le lingue del numero di audioconferenza condiviso non possono essere modificate.
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
@@ -46,18 +46,18 @@ Choose one primary language and up to four secondary languages. The primary lang
 
 È necessario essere un [amministratore globale di Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) o [Skype for Business](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) per eseguire questo passaggio.
     
-1. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro sinistro passare al **portale Legacy**. Una volta nel portale legacy, selezionare **conferenze Audio**e quindi fare clic su **Microsoft bridge**.
+1. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, vai a **portale legacy**. Nel portale legacy Selezionare Servizi di **audioconferenza**e quindi fare clic su **Microsoft Bridge**.
     
-2. Selezionare il numero di telefono di accesso esterno alle audioconferenze dall'elenco, quindi nel riquadro azioni, fare clic su **Imposta lingue**. È possibile solo modificare la lingua dei numeri di audioconferenza dedicato.  
+2. Selezionare il numero di telefono dell'audioconferenza nell'elenco e fare clic su **imposta lingue**nel riquadro azioni. È possibile cambiare solo le lingue dei numeri di servizi di audioconferenza dedicati.  
     
 3. Nella pagina **Imposta lingue,** fai clic sull'elenco **Lingua principale** per visualizzare l'elenco completo delle lingue supportate. Se lo desideri, fai clic su ognuno degli elenchi delle **Lingue secondarie** per selezionare una lingua secondaria.
     
     > [!NOTE]
-    > Vengono elencate le lingue principali e secondarie supportate. L'ordine in cui vengono selezionati negli elenchi è l'ordine delle lingue disponibili per i chiamanti. 
+    > Vengono elencate le lingue principali e secondarie supportate. L'ordine in cui vengono selezionati gli elenchi sarà l'ordine delle lingue presentate ai chiamanti. 
   
 4. Fai clic su **Salva**.
     
-## <a name="want-else-should-i-know"></a>Desidera, in caso contrario, è necessario conoscere?
+## <a name="want-else-should-i-know"></a>Altre informazioni utili
 
 - Per visualizzare l'elenco delle lingue supportate per Audioconferenza, consulta [Lingue supportate per Audioconferenza](/MicrosoftTeams/audio-conferencing-supported-languages).
     
@@ -67,9 +67,9 @@ Choose one primary language and up to four secondary languages. The primary lang
     
 ## <a name="want-to-use-windows-powershell"></a>Desideri utilizzare Windows PowerShell?
 
-Per automatizzare questo passaggio, è possibile utilizzare il cmdlet [Set-CsOnlineDialInConferencingServiceNumber](https://go.microsoft.com/fwlink/?LinkId=617689) e [Get-CsOnlineDialInConferencingLanguagesSupported](https://go.microsoft.com/fwlink/?LinkId=617684) .
+Per automatizzare questo passaggio, è possibile usare i cmdlet [set-CsOnlineDialInConferencingServiceNumber](https://go.microsoft.com/fwlink/?LinkId=617689) e [Get-renderle](https://go.microsoft.com/fwlink/?LinkId=617684) .
   
-Per ulteriori informazioni, vedere [Using Windows PowerShell per eseguire Skype comuni per le attività di gestione in linea aziendale](https://go.microsoft.com/fwlink/?LinkId=525038)
+Per altre informazioni, vedere [uso di Windows PowerShell per eseguire comuni attività di gestione di Skype for business online](https://go.microsoft.com/fwlink/?LinkId=525038)
   
 ## <a name="related-topics"></a>Argomenti correlati
 

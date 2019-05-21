@@ -1,5 +1,5 @@
 ---
-title: Manuale dell'utente Canada inoltro IP
+title: Guida per l'utente di IP Relay Canada
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -9,7 +9,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: None
@@ -17,65 +17,65 @@ f1keywords: None
 ms.custom:
 - Legal
 hideEdit: true
-description: Come utilizzare un account di inoltro IP per il Canada.
-ms.openlocfilehash: b5f6d268db302b4b0446c5f692bb7e27daa60b17
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: Come usare un account di inoltro IP per il Canada.
+ms.openlocfilehash: 8fa60a7e8a5b91326733aacde610bc2ed125a627
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32224193"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34306559"
 ---
 # <a name="ip-relay-in-canada---user-guide"></a>IP Relay in Canada - guida utente
 
-Descrizione del servizio di inoltro di messaggi IP Microsoft:
+Descrizione del servizio relay IP Message da Microsoft:
 
-## <a name="scenario-a"></a>Nello scenario
-Se una persona dell'udito o con problemi vocale desidera contattare una persona non compromessa, essi "chat" tramite un client basato su web speciale a un agente viene chiamato un incaricato di chiamata.
+## <a name="scenario-a"></a>Scenario A
+Se una persona non udente o con problemi di udito vuole contattare un individuo non soggetto a problemi, "Chatta" tramite uno speciale client basato sul Web a un agente chiamato acquirente di chiamata.
 
-Incaricato chiamare quindi comunica con la persona dell'udito o con problemi vocale tramite la sessione di chat e contatti persone con problemi non attraverso la rete telefonica in un punto qualsiasi del Canada o gli Stati Uniti, in base alle esigenze.
+Il beneficiario della chiamata comunica quindi con la persona con problemi di udito o di voce tramite la sessione di chat e contatta la persona non compromessa tramite la rete telefonica in qualsiasi punto del Canada o degli Stati Uniti, se necessario.
 
 ## <a name="scenario-b"></a>Scenario B
-Se una persona non compromessa desidera parlare con un utente registrato dell'udito o vocale-con problemi, chiamano il numero verde come fornito da Microsoft.
+Se una persona non in difficoltà desidera comunicare con un utente con problemi di udito o di voce non registrato, chiama il numero verde fornito da Microsoft.
 
-Incaricato chiamare quindi comunica con la persona non con problemi e la persona dell'udito o con problemi vocale tramite chat dei contatti e comunica e viceversa.
+Il beneficiario della chiamata comunica quindi con la persona non compromessa e contatta la persona con problemi di udito o di voce tramite chat e comunica in avanti e indietro.
 
-La persona dell'udito o con problemi vocale non deve essere in linea nel programma di chat, se è disponibile un indirizzo di posta elettronica incaricato di chiamata verrà inviato un messaggio di posta elettronica a persone con problemi udito o vocali se richiesto dal chiamante.
+Se l'udito o la persona con problemi di voce non è online nel programma di chat, se è disponibile un indirizzo di posta elettronica, il beneficiario della chiamata invierà un messaggio di posta elettronica all'udito o alla persona con problemi di voce, se richiesto dal chiamante.
 
 ## <a name="scenario-c"></a>Scenario C
-Se una persona dell'udito o con problemi vocale richiede urgenza, potrà può selezionare il tasto appropriato: 911 – polizia / 911 – attivi / 911-servizio ambulanze.
+Se una persona non udente o con problemi di udito richiede assistenza di emergenza, può selezionare il pulsante appropriato: 911-Police/911-Fire/911-Ambulance.
 
-Verrà inviato una notifica di emergenza per gli operatori settentrionale inoltro IP che verranno quindi accedere all'account 911 progettato a tale scopo. Una volta incaricato di chiamata è confermato il proprio indirizzo, tali contatti PSAP appropriato e restare in linea per il tempo richiesto.
+Verrà inviata una notifica di emergenza agli operatori di Relay IP settentrionali, che accederanno all'account di 911 progettato per questo scopo. Una volta che il beneficiario della chiamata ha confermato il proprio indirizzo, contatterà il PSAP appropriato e rimarrà sulla linea il più a lungo necessario.
 
-## <a name="how-to-place-a-text-chat-to-voice-call"></a>Il posizionamento di una chat di testo per la chiamata vocale
+## <a name="how-to-place-a-text-chat-to-voice-call"></a>Come inserire una chat di testo in una chiamata vocale
 
 https://aka.ms/IPRelay
 
-Per avviare un testo da una chiamata vocale, accedere all'URL precedente e accedere con l'IP messaggio inoltro Username e Password.
+Per avviare un testo per la chiamata vocale, accedere all'URL precedente ed eseguire l'accesso con il nome utente e la password di inoltro del messaggio IP.
 
-Dopo aver effettuato l'accesso, verrà visualizzato le istruzioni visualizzate sul lato sinistro dello schermo.
+Dopo aver effettuato l'accesso, verranno visualizzate le istruzioni sul lato sinistro dello schermo.
 
-### <a name="how-to-make-a-text-to-voice-call"></a>Come rendere un testo alla chiamata vocale:
-1. Nell'angolo inferiore destro dello schermo, fare clic su **Chat**.
-2. Fare clic sull'utente **IPRelay** .
-3. Nella parte inferiore della finestra di nuovo visualizzata, digitare il messaggio.
+### <a name="how-to-make-a-text-to-voice-call"></a>Come effettuare una chiamata vocale a un testo:
+1. Nell'angolo in basso a destra dello schermo fare clic su **chat**.
+2. Fare clic sull'utente di **IPRelay** .
+3. Nella parte inferiore della nuova casella visualizzata digitare il messaggio.
 
-### <a name="how-to-receive-a-voice-to-text-call"></a>Come ricevere una segreteria telefonica di testo:
-- Gli utenti VoIP necessario conoscere il nome dell'utente IP inoltro messaggi per effettuare una segreteria telefonica di testo.
-- Gli utenti VoIP possono chiamare (866) 660-8613 di connettersi a un operatore di inoltro di messaggi IP.
-- È necessario accedere al portale di inoltro di messaggi IP per ricevere le chiamate oppure le chat.
+### <a name="how-to-receive-a-voice-to-text-call"></a>Come ricevere una chiamata vocale in SMS:
+- Gli utenti di Voice dovranno conoscere il nome utente Relay del messaggio IP per inserire una chiamata vocale in SMS.
+- Gli utenti vocali possono chiamare (866) 660-8613 per connettersi con un operatore di inoltro di messaggi IP.
+- Per ricevere chiamate o chat, è necessario avere effettuato l'accesso al portale di inoltro del messaggio IP.
 
-### <a name="how-to-place-a-911-call"></a>Come effettuare una chiamata 911:
-Se si verifica un'emergenza, è possibile selezionare il pulsante di emergenza appropriato situato nella parte inferiore dello schermo (come illustrato di seguito).
+### <a name="how-to-place-a-911-call"></a>Come inserire una chiamata di 911:
+Se si verifica un'emergenza, è possibile selezionare il pulsante di emergenza appropriato situato nella parte inferiore dello schermo, come illustrato di seguito.
 
 ![Pulsanti di emergenza](../images/ip-relay-emergency-buttons.png)
 
-L'operatore di inoltro di messaggi IP contatta 911, verificare che l'indirizzo e consentono di convertire con centri di emergenza diversi fino a quando non potrà è più necessario, e viene inviato al reparto appropriato per la posizione.
+L'operatore di inoltro del messaggio IP contatterà 911, confermerà l'indirizzo e si tradurrà con vari centri di emergenza fino a quando non sarà più necessario e il reparto appropriato sarà stato inviato alla propria posizione.
 
 > [!WARNING]
-> Non testare il servizio, come l'Agenzia appropriato verrà contattato ed eventualmente inviata anche se si indicano è semplicemente un test e si potrebbe essere addebitati un dispatch false dall'agenzia di emergenza.
+> Non testare questo servizio, in quanto l'agenzia appropriata verrà contattata e possibilmente spedita anche se indichi che è semplicemente un test, e potrebbe essere addebitato un canone di spedizione falsa dall'agenzia di emergenza.
 
-#### <a name="customer-support"></a>Assistenza clienti:
-Contattare progetti speciali [specialprojects@northern911.com](mailto:specialprojects@northern911.com) o (705) 222-1733.
+#### <a name="customer-support"></a>Supporto tecnico:
+Contattare i progetti speciali in [specialprojects@northern911.com](mailto:specialprojects@northern911.com) o (705) 222-1733.
 
 > [!IMPORTANT]
 > Northern911 gestisce il servizio di inoltro IP per conto di Microsoft.

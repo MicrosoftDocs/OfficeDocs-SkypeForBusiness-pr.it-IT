@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come cercare i numeri di conferenza telefonica con accesso esterno all'interno di Skype for Business online. "
-ms.openlocfilehash: 557aef5e85cdd176e2d95e1cd946ed23e00764a0
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 220d266796dc52832e3f10fe45ca6e9f2e999e14
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229225"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34299050"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers-in-skype-for-business-online"></a>Visualizzare un elenco di numeri per Audioconferenza in Skype for Business online
 
@@ -55,11 +55,11 @@ If there is only one phone number available in your organization, it will be use
     
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
     
-3. Nella **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **conferenze Audio** > **bridging Microsoft**e quindi:
+3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, vai a**Microsoft Bridge** **audioconferenza** > e quindi:
     
-   - È possibile visualizzare i numeri di telefono disponibili per le conferenze audio.
+   - È possibile visualizzare i numeri di telefono disponibili per i servizi di audioconferenza.
     
-   - È inoltre possibile visualizzare il percorso e le lingue principale e secondarie che verranno utilizzate per le conferenze audio l'operatore automatico.
+   - È anche possibile visualizzare la posizione e le lingue primarie e secondarie che verranno usate dall'operatore automatico di audioconferenza.
     
 > [!NOTE]
 > You can go to **Audio conferencing** > **Users** and select the user's properties to change the default number by choosing a new number from the list of available numbers in your organization. See [Set the phone numbers included on invites](set-the-phone-numbers-included-on-invites.md). 
@@ -67,7 +67,7 @@ If there is only one phone number available in your organization, it will be use
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Per risparmiare tempo o automatizzare questa operazione, è possibile utilizzare il cmdlet [Get-CsOnlineDialInConferencingServiceNumber](https://go.microsoft.com/fwlink/?LinkId=617691) .
+- Per risparmiare tempo o automatizzare questa operazione, è possibile usare il cmdlet [Get-CsOnlineDialInConferencingServiceNumber](https://go.microsoft.com/fwlink/?LinkId=617691) .
     
 - Windows PowerShell riguarda la gestione degli utenti e le azioni che sono autorizzati o meno a eseguire. Con Windows PowerShell puoi gestire Office 365 tramite un unico punto di amministrazione, che ti agevola il lavoro quotidiano quando hai molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedi i seguenti argomenti:
     
