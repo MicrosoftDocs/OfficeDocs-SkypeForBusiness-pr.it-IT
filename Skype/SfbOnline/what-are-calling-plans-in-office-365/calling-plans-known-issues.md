@@ -10,33 +10,33 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: 'Informazioni su problemi noti di piano di chiamata per Office 365 (tramite la chiamata PSTN) e operazioni su di essi. '
-ms.openlocfilehash: 01a49749f472b6a3e591295cff7184dc26fd564a
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: 'Informazioni sui problemi noti relativi al piano chiamante per Office 365 (chiamate PSTN) e sulle operazioni che è possibile eseguire. '
+ms.openlocfilehash: 9a6f97a93aa6c7b4e847ba1cb3280a21c473db0c
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32233226"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34299525"
 ---
 # <a name="calling-plans-known-issues"></a>Problemi noti relativi ai piani di chiamata
 
-Piani di chiamata in Office 365 sono una nuova funzionalità disponibili in Skype Business online. Di seguito sono riportati i problemi correnti che vengono registrati e analizzare attivamente. Verrà risolto potenzialmente quando la caratteristica viene aggiornata in futuro build in Office 365 e Skype Business online.
+I piani per le chiamate in Office 365 sono una nuova funzionalità trovata in Skype for business online. Di seguito sono riportati i problemi correnti che vengono rilevati e analizzati attivamente. Saranno potenzialmente risolti quando la funzionalità verrà aggiornata nelle build future in Office 365 e Skype for business online.
   
 ## <a name="calling-plans-known-issues"></a>Problemi noti relativi ai piani di chiamata
 
-|**Problemi noti**|**Commenti**|
+|**Problema noto**|**Commenti**|
 |:-----|:-----|
-|Transizione da Tech Preview licenze per le licenze di produzione per piani di chiamata non vengono aggiornati automaticamente la licenza.  <br/> |Acquistare le licenze nuove innanzitutto in modo che siano pronti per essere assegnati agli utenti. Rimuovere la licenza promozione (Tech Preview) da un utente e quindi assegnare **immediatamente** le nuove licenze **Chiamata pianificare interne** e/o **nazionali e internazionali chiamata pianificare** all'utente. <br/> Se si ha la rimozione e aggiungendo le licenze per più utenti, è estremamente importante per rimuovere tutti gli utenti utilizzando Windows PowerShell le licenze e assegnarle **immediatamente** le licenze per tutti gli utenti anche tramite Windows PowerShell. In questo modo verrà assicurarsi che non vi sia alcuna interruzione del servizio quando si gestiscono volumi elevati di assegnazione di licenze utente. Per gli script di PowerShell di esempio, vedere [Assegnare Skype per le licenze aziendali e team di Microsoft](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).  <br/> **Nota:** Se si utilizza una connettività PSTN locale per gli utenti ibrida, è *solo* necessario assegnare una licenza di **Sistema telefonico** . **Non** deve inoltre assegnare una voce pianificare la chiamata. Tuttavia, se si abilita la chiamata dei piani di Office 365 per gli utenti presenti in Office 365, è necessario assegnare ancora un **Interno pianificare la chiamata** o una licenza **nazionali e internazionali la chiamata a pianificare** per tali utenti. Vedi [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).
+|La transizione dalle licenze dell'anteprima tecnica alle licenze di produzione per i piani di chiamata non aggiorna automaticamente la licenza.  <br/> |Acquistare prima le nuove licenze in modo che siano pronte per essere assegnate agli utenti. Rimuovere la licenza promo (Tech Preview) da un utente e quindi assegnare **immediatamente** il nuovo piano per le **chiamate nazionali** e/o le licenze del **piano per chiamate nazionali e internazionali** all'utente. <br/> Se si stanno rimuovendo e aggiungendo licenze per più utenti, è estremamente importante rimuovere le licenze da tutti gli utenti che usano Windows PowerShell e quindi assegnare **immediatamente** le licenze per tutti gli utenti che usano anche Windows PowerShell. Questa operazione garantirà che il servizio non presenti interruzioni durante la gestione di grandi volumi di assegnazioni di licenze utente. Per gli script di PowerShell di esempio, Vedi [assegnare le licenze di Skype for business e Microsoft teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).  <br/> **Nota:** Se si usa la connettività PSTN locale per gli utenti ibridi, è sufficiente ** assegnare una licenza per il **sistema telefonico** . **Non** devi anche assegnare un piano per chiamate vocali. Tuttavia, se si abilitano i piani per le chiamate in Office 365 per gli utenti di Office 365, è comunque necessario assegnare un piano per le chiamate **nazionali** o una licenza per un **piano per chiamate nazionali e internazionali** per gli utenti. Vedi [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).
 
 > [!NOTE]
-> Se si desidera ottenere altri numeri di telefono rispetto a quella, [contattare il supporto per i prodotti di business - della Guida di amministrazione](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)         |
+> Per ottenere più numeri di telefono, [contattare il supporto per i prodotti business-Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)         |
    
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)

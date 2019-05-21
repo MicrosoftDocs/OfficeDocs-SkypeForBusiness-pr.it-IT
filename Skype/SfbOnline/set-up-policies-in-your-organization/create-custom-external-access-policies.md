@@ -10,43 +10,43 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Setup
-description: Skype per Business Online consente di creare i criteri di accesso esterno aggiuntivi. A differenza dei criteri client o di conferenza, dove è possibile avere più combinazioni, sono disponibili tre criteri predefiniti l'accesso esterno che possono soddisfare la maggior parte degli scenari.
-ms.openlocfilehash: b368c7d30e74225f7808f9f3728691040e75016f
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: Skype for business online consente di creare altri criteri di accesso esterno. A differenza dei criteri per i client o i servizi di conferenza, in cui è possibile avere più combinazioni, esistono tre criteri di accesso esterno predefiniti in grado di coprire la maggior parte degli scenari.
+ms.openlocfilehash: 0ffd39559e4bc45a7d70466d48fb9ae838660af9
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32237529"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34297807"
 ---
 # <a name="create-custom-external-access-policies"></a>Creare criteri di accesso esterno personalizzato
 
-Skype per Business Online consente di creare i criteri di accesso esterno aggiuntivi. A differenza dei criteri client o di conferenza, dove è possibile avere più combinazioni, sono disponibili tre criteri predefiniti l'accesso esterno che possono soddisfare la maggior parte degli scenari. Di seguito sono:
+Skype for business online consente di creare altri criteri di accesso esterno. A differenza dei criteri per i client o i servizi di conferenza, in cui è possibile avere più combinazioni, esistono tre criteri di accesso esterno predefiniti in grado di coprire la maggior parte degli scenari. Questi sono:
   
-- No federato o Access Consumer Skype (_Tag: NoFederationAndPIC_ )
+- Nessun accesso dei consumatori federati o Skype (_Tag: NoFederationAndPIC_ )
     
-- Accesso federato (_Tag: FederationOnly_ )
+- Solo accesso federativo (_Tag: FederationOnly_ )
     
-- Federati e Consumer accedere (_FederationAndPICDefault_)
+- Accesso federativo e consumer (_FederationAndPICDefault_)
     
-Criteri personalizzati esterni consentono di creare ulteriori criteri che non sono inclusi le impostazioni precedenti. Quando è stato creato il criterio, potrebbe essere necessario impostare tutti i parametri obbligatori e non modificare in seguito. Creazione di nuovi criteri personalizzati consentono alle funzionalità di controllo, ad esempio access consumer Skype o un criterio per disabilitare pubblica cloud audio/video, ovvero un'attività non è stato trattati con impostazioni predefinite. Criteri di accesso esterno personalizzati seguono la stessa sintassi di criteri client, conferenze e dispositivi mobili. È possibile trovare ulteriori informazioni su queste impostazioni [di seguito](https://technet.microsoft.com/en-us/library/mt228132.aspx).
+I criteri esterni personalizzati consentono di creare altre forze di polizia che non sono coperte dalle impostazioni descritte sopra. Quando il criterio è stato creato, è necessario impostare tutti i parametri obbligatori e non è possibile modificarli in un secondo momento. La creazione di nuovi criteri personalizzati consente di controllare funzionalità come l'accesso dei consumatori Skype o un criterio per disabilitare l'audio/video del cloud pubblico, un aspetto che non è stato incluso nelle impostazioni predefinite. I criteri di accesso esterno personalizzati seguono la stessa sintassi dei criteri client, mobilità e conferenza. Per altre informazioni su queste impostazioni, vedere [qui](https://technet.microsoft.com/en-us/library/mt228132.aspx).
   
-Per ottenere questo risultato, l'utente deve utilizzando una versione supportata di 2016 Skype a portata di clic per applicazioni aziendali che supporta lo. La versione minima seguente di Skype per Business 2016 Click-to-Run client è necessaria:
+Per fare questo lavoro, l'utente deve usare una versione supportata di 2016 a portata di clic di Skype for business app che lo supporta. È necessaria la versione minima seguente di Skype for business 2016 a portata di clic:
   
 |**Tipo**|**Data di rilascio**|**Versione**|**Build**|
 |:-----|:-----|:-----|:-----|
-|Prima versione per il canale corrente  <br/> |17/11/2016  <br/> |16.0.7571.2006  <br/> |Versione 1611 (Build 7571.2006)  <br/> |
-|Canale corrente  <br/> |6/12/2016  <br/> |16.0.7571.2072  <br/> |Versione 1611 (Build 7571.2072)  <br/> |
-|Canale differito  <br/> |22/2/2017  <br/> |16.0.7369.2118  <br/> |Versione 1609 (Build 7369.2118)  <br/> |
+|First Release per il canale corrente  <br/> |11/17/2016  <br/> |16.0.7571.2006  <br/> |Versione 1611 (Build 7571,2006)  <br/> |
+|Canale corrente  <br/> |12/6/2016  <br/> |16.0.7571.2072  <br/> |Versione 1611 (Build 7571,2072)  <br/> |
+|Deferred Channel  <br/> |2/22/2017  <br/> |16.0.7369.2118  <br/> |Versione 1609 (Build 7369,2118)  <br/> |
    
 > [!CAUTION]
-> Gli utenti che utilizzano le versioni precedenti di Skype per Mac client o app di Windows Business saranno ancora in grado di trasferire file. 
+> Gli utenti che usano versioni precedenti di Skype for business per le app di Windows o i client Mac saranno comunque in grado di trasferire file. 
   
 ## <a name="verify-and-start-windows-powershell"></a>Verificare e avviare Windows PowerShell
 
@@ -78,9 +78,9 @@ Per ottenere questo risultato, l'utente deve utilizzando una versione supportata
     Import-PSSession $session
    ```
 
-   Se si desiderano ulteriori informazioni sull'avvio di Windows PowerShell, vedere [Connect a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [impostare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
+   Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
     
-## <a name="create-a-custom-external-access-policy-for-a-user"></a>Creare un criterio di accesso esterno personalizzati per un utente
+## <a name="create-a-custom-external-access-policy-for-a-user"></a>Creare un criterio di accesso esterno personalizzato per un utente
 
 Per farlo, eseguire quanto segue:
   
@@ -111,11 +111,11 @@ Per farlo, eseguire quanto segue:
   - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Trasferimenti di file bloccati punto-punto](block-point-to-point-file-transfers.md)
+[Bloccare i trasferimenti di file Point-to-Point](block-point-to-point-file-transfers.md)
 
 [Impostazione dei criteri client per la propria organizzazione](set-up-client-policies-for-your-organization.md)
 
-[Impostare i criteri relativi alle conferenze nell'organizzazione](set-up-conferencing-policies-for-your-organization.md)
+[Configurare i criteri di conferenza nell'organizzazione](set-up-conferencing-policies-for-your-organization.md)
 
   
  

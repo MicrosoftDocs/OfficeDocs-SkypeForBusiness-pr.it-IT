@@ -1,5 +1,5 @@
 ---
-title: Reimpostare il PIN in Skype per conferenze Audio per le aziende Online
+title: Reimpostare il PIN per la conferenza audio in Skype for business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -12,22 +12,22 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Audio Conferencing
-description: 'Scoprire che cosa è necessario tenere conto PIN e come reimpostarle in Skype Business online. '
-ms.openlocfilehash: 0b2c6ae7a26d23fbcb0f18da45886ba13853037f
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+description: 'Scopri cosa devi sapere sui pin e come reimpostarli in Skype for business online. '
+ms.openlocfilehash: 11fafd6d79236fdddf3f73f384e9c339a5a775fc
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33906797"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34299087"
 ---
-# <a name="reset-the-audio-conferencing-pin-in-skype-for-business-online"></a>Reimpostare il PIN in Skype per conferenze Audio per le aziende Online
+# <a name="reset-the-audio-conferencing-pin-in-skype-for-business-online"></a>Reimpostare il PIN per la conferenza audio in Skype for business online
 
 > [!Note]
 > Per informazioni sulla reimpostazione del PIN di audioconferenza in Microsoft Teams, vedere [reimpostare il PIN di audioconferenza di Microsoft Teams](/MicrosoftTeams/reset-the-audio-conferencing-pin-in-teams).
@@ -40,11 +40,11 @@ Meetings can be started when an authenticated user joins using the Skype for Bus
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **Centro di amministrazione di Office 365** > **Skype per le aziende**e nel riquadro di spostamento sinistra fare clic su **servizi di conferenza Audio**.
+2. Accedere all'interfaccia **di amministrazione** > di Office 365**Skype for business**e, nella barra di spostamento sinistra, fare clic su **audioconferenza**.
     
-3. Fare clic su **utenti**, selezionare l'utente che si desidera reimpostare il PIN per.
+3. Fare clic su **utenti**, selezionare l'utente per cui si vuole reimpostare il PIN.
     
-4. Nel riquadro azioni, in **PIN**, fare clic su **Reimposta**.
+4. Nel riquadro azioni, in **pin**, fare clic su **Reimposta**.
  
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
@@ -65,7 +65,7 @@ A user can reset a PIN by using the **Reset PIN** option on the **Dial-in Confer
     
 - Quando la riunione inizia, tutti gli utenti nella sala di attesa si uniranno automaticamente. Se ad esempio due partecipanti tentano di partecipare a una riunione prima che questa inizi, dovranno rimanere nella sala di attesa ascoltando musica e quando l'organizzatore della riunione si unirà usando il proprio PIN tramite telefono, la riunione avrà inizio e i partecipanti nella sala di attesa potranno partecipare alla riunione.
     
-- L'impostazione predefinita è non consentire una riunione di avvio per i chiamanti anonimi.
+- L'impostazione predefinita consiste nel non consentire l'avvio di una riunione da parte di chiamanti anonimi.
     
 - When you enable a user for audio conferencing, by default they are sent emails that include conferencing information and their PIN. The user must have an Office 365 mailbox, because when a PIN is reset, a new PIN will be sent to the user in email to their primary SMTP address (alias) that is set for the user.
     
