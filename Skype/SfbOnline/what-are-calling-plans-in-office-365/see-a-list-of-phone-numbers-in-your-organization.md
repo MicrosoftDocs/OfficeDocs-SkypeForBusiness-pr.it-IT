@@ -12,7 +12,7 @@ search.appverid: MET150
 ms.collection:
 - Adm_Skype4B_Online
 - Strat_SB_PSTN
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come visualizzare un elenco di tutti i numeri di telefono dell'organizzazione, tutti i numeri assegnati agli utenti e tutti i numeri assegnati per gli utenti vocali dal centro di amministrazione Skype for Business.
-ms.openlocfilehash: 7cda5c0ae791436d9f584cc4af802bfbc3649fcc
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 9682e0473932337734828a13cf75a8c77e622938
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229945"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34280469"
 ---
 # <a name="see-a-list-of-phone-numbers-in-your-organization"></a>Visualizzare un elenco di numeri di telefono assegnati nell'organizzazione
 
@@ -34,17 +34,17 @@ Esistono diversi tipi di numeri di telefono che è possibile assegnare a utenti 
   
 ## <a name="to-see-a-list-of-all-phone-numbers-that-you-have-for-your-organization"></a>Per visualizzare un elenco di tutti i numeri di telefono che hai per la tua organizzazione
 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**
 
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
+2. Accedere al**portale legacy**dell'interfaccia di **Amministrazione** > di Microsoft teams.
     
-3. Nel **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **Voice** > **i numeri di telefono**.
+3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, vai a**numeri di telefono** **vocale** > .
     
     > [!IMPORTANT]
-    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+    > Per visualizzare l'opzione **Voice** nella barra di spostamento sinistra nell'interfaccia di amministrazione di Skype for business, è necessario prima acquistare almeno una licenza **Enterprise E5**, una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
     
 4. Per visualizzare i numeri di telefono assegnati, vedere la colonna **Numero**.
     
@@ -64,19 +64,19 @@ Esistono diversi tipi di numeri di telefono che è possibile assegnare a utenti 
     
 ## <a name="to-see-all-of-the-phone-numbers-that-are-assigned-to-users"></a>Per visualizzare tutti i numeri di telefono che vengono assegnati agli utenti
 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**
 
 
 Quando imposti gli utenti, è possibile solo visualizzare l'elenco dei numeri di telefono che sono già assegnati a utenti e i quali numeri di telefono possono essere assegnati a loro.
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
+2. Accedere al**portale legacy**dell'interfaccia di **Amministrazione** > di Microsoft teams.
     
-3. Nel **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **Voice** > **agli utenti di VoIP**.
+3. Nell'interfaccia **di amministrazione di Skype for business**, nella barra di spostamento sinistra, **** > **** passa a Voice Voice Users.
     
     > [!IMPORTANT]
-    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+    > Per visualizzare l'opzione **Voice** nella barra di spostamento sinistra nell'interfaccia di amministrazione di Skype for business, è necessario prima acquistare almeno una licenza **Enterprise E5**, una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
     
 4. You can filter your view for phone numbers that are assigned to users or phone numbers that you can assign to a user. You can filter by:
     
@@ -88,19 +88,19 @@ Quando imposti gli utenti, è possibile solo visualizzare l'elenco dei numeri di
     
 ## <a name="to-see-the-phone-numbers-that-are-assigned-to-voice-users"></a>Per visualizzare i numeri di telefono assegnati agli utenti voce
 
-![30x30.png di logo sfb](../images/sfb-logo-30x30.png) **utilizzando Skype per interfaccia di amministrazione di Business**
+![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**
 
 
 When you are setting up users in your organization to make and receive phone calls, you must first get the phone numbers and then assign them to your users. After you've gotten your phone numbers, you might just want to see the list of the users that have phone numbers assigned to users, those that don't and whether a user is hosted Online or on-premises.
   
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Vai al **Centro di amministrazione di team Microsoft che** > **portale Legacy**.
+2. Accedere al**portale legacy**dell'interfaccia di **Amministrazione** > di Microsoft teams.
     
-3. Nel **Skype per interfaccia di amministrazione di Business**, nel riquadro di spostamento sinistro, passare a **Voice** > **agli utenti di VoIP**.
+3. Nell'interfaccia **di amministrazione di Skype for business**, nella barra di spostamento sinistra, **** > **** passa a Voice Voice Users.
     
     > [!IMPORTANT]
-    > Per poter visualizzare l'opzione **vocale** nel riquadro di spostamento sinistra in Skype per interfaccia di amministrazione di Business, è necessario acquistare una licenza di componente aggiuntivo **Per conferenze Audio** , una licenza di componente aggiuntivo di **Sistema telefonico** o almeno una **licenza Enterprise E5**.
+    > Per visualizzare l'opzione **Voice** nella barra di spostamento sinistra nell'interfaccia di amministrazione di Skype for business, è necessario prima acquistare almeno una licenza **Enterprise E5**, una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
     
 4. You can use the drop-down list to filter your view for active users, whether the user is Online or on-premises, or the state and type of licensing for a user. You can filter by:
     

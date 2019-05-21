@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
@@ -18,16 +18,16 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: 'Download, install, and then use the Skype for Business Online Connector to create a remote Windows PowerShell session that connects to Skype for Business Online. '
-ms.openlocfilehash: a93cf1d3d09910001f25619969b6d504e23ec36f
-ms.sourcegitcommit: 85b135cf622c9e9eb1857ef953bc618dc2cdb51e
+ms.openlocfilehash: 7e97bc31d85370919eec7c50fae01d00f5b1ddac
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036693"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34284711"
 ---
 # <a name="download-and-install-the-skype-for-business-online-connector-module"></a>Download e installazione del modulo Skype for Business Online Connector
 
-[] Modulo del connettore di Skype for Business Online include il cmdlet **New-CsOnlineSession**, che consente di creare una sessione Windows PowerShell remota che si connette a Skype for Business online. In questo modulo, è supportato solo nei computer a 64 bit (per ulteriori informazioni, vedere [configurare il computer per Skype per la gestione Business Online utilizzando Windows PowerShell](set-up-your-computer-for-windows-powershell.md) ), può essere scaricato da Microsoft Download Center al [https://www.microsoft.com/download/details.aspx?id=39366](https://www.microsoft.com/download/details.aspx?id=39366). Scarica il file SkypeOnlinePowershell.exe, poi procedi come segue.
+[] Modulo del connettore di Skype for Business Online include il cmdlet **New-CsOnlineSession**, che consente di creare una sessione Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit (vedere [configurare il computer per la gestione di Skype for business online con Windows PowerShell](set-up-your-computer-for-windows-powershell.md) per altre informazioni), può essere scaricato dall'area download Microsoft [https://www.microsoft.com/download/details.aspx?id=39366](https://www.microsoft.com/download/details.aspx?id=39366). Scarica il file SkypeOnlinePowershell.exe, poi procedi come segue.
   
 1. Fai doppio clic sul file **SkypeOnlinePowershell.exe**.
     
@@ -60,7 +60,7 @@ Oltre a installare Modulo del connettore di Skype for Business Online, SkypeOnli
 Per verificare il numero di versione del modulo Connector attualmente installato sul computer, apri Pannello di controllo, apri **Programmi e funzionalità** e verifica il numero di versione di **Skype for Business Online, modulo Windows PowerShell**.
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare il computer per Skype per la gestione in linea aziendale tramite Windows PowerShell](set-up-your-computer-for-windows-powershell.md)
+[Configurare il computer per la gestione di Skype for business online con Windows PowerShell](set-up-your-computer-for-windows-powershell.md)
 
   
  

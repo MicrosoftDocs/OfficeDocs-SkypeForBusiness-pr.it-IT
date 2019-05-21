@@ -1,5 +1,5 @@
 ---
-title: Informazioni sull'account dell'ordine di porta
+title: Informazioni sull'account dell'ordine di trasferimento
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection: Adm_Skype4B_Online
-ms.audience: Admin
+audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -20,55 +20,55 @@ f1keywords:
 - ms.lync.lac.PortOrderAccountInfo
 ms.custom:
 - Calling Plans
-description: "Ulteriori informazioni sull'account è necessario quando si lavora con una procedura guidata nuovo ordine di porta numero locale. "
-ms.openlocfilehash: 404bef2ad18728de90ac0a296c213e841719984b
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+description: 'Informazioni sugli account di cui si ha bisogno quando si lavora con una nuova procedura guidata numero di porta locale. '
+ms.openlocfilehash: 4d1ac6831287281b5e9dfa691e09807d2887aaf4
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32229848"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34280707"
 ---
-# <a name="port-order-account-information"></a>Informazioni sull'account dell'ordine di porta
+# <a name="port-order-account-information"></a>Informazioni sull'account dell'ordine di trasferimento
 
-Quando si utilizza la pagina **informazioni Account** nella procedura guidata **Nuovo ordine di porta numero locale** per inviare un ordine di porta, sarà necessario quasi tutte le stesse informazioni specificate nei LOA, tra cui:
+Quando si usa la pagina **informazioni account** nella procedura guidata **nuovo ordine di trasferimento dei numeri locali** per inviare un ordine di trasferimento, sarà necessario quasi tutte le stesse informazioni fornite in Loa, tra cui:
   
-- Numero di conto per il provider di servizi o il gestore di telefonia
+- Numero di account per il provider di servizi o il gestore
     
 - Numero di telefono di fatturazione (BTN, Billing Telephone Number)
     
-- PIN - necessari per il provider di servizio corrente o l'operatore di telefonia
+- PIN-se necessario per il provider o gestore di servizi corrente
     
-- Nome della società
+- Nome società
     
     > [!NOTE]
-    > Si accetta solo di 25 caratteri, inclusi gli spazi. Se il nome della società include più di 25 caratteri, verranno inviati i primi 25 caratteri del nome e l'ordine di porta ancora essere elaborato. 
+    > Verranno accettati solo 25 caratteri, inclusi gli spazi. Se il nome della società è maggiore di 25 caratteri, verranno inviati i primi 25 caratteri del nome e l'ordine di trasferimento verrà ancora elaborato. 
   
 - Nome dell'utente autorizzato
     
     > [!NOTE]
-    > Si accetta solo 15 caratteri, inclusi gli spazi. Se il nome della persona autorizzato include più di 15 caratteri, verranno inviati i primi 15 caratteri del nome e l'ordine di porta ancora essere elaborato. 
+    > Verranno accettati solo 15 caratteri, inclusi gli spazi. Se il nome della persona autorizzata è maggiore di 15 caratteri, verranno inviati i primi 15 caratteri del nome e l'ordine di porta verrà ancora elaborato. 
   
 - Indirizzo del servizio
     
-- City, State e CAP dell'indirizzo di fatturazione
+- Codice città, stato e CAP dell'indirizzo di fatturazione
     
     > [!NOTE]
-    > Non sono più necessari firma della persona per l'autorizzazione. 
+    > Non è necessaria la firma della persona che l'autorizza. 
   
-Per effettuare l'invio dell'ordine di porta semplice ed evitare errori, assicurarsi di eseguire le operazioni seguenti:
+Per rendere più semplice l'invio dell'ordine di trasferimento ed evitare errori, verificare di eseguire le operazioni seguenti:
   
-- Rimuovere tutte le caratteristiche (ad esempio, i gruppi di risposta) associate i numeri. Verificare che nessuna funzionalità di controllo chiamata avanzate, ad esempio risposta delle chiamate o suoneria, abilitata su questi numeri di telefono.
+- Rimuovere tutte le funzionalità, ad esempio i gruppi di risposta, associate ai numeri. Verificare che non siano presenti funzionalità avanzate per il controllo delle chiamate, ad esempio la chiamata a caccia o l'anello distintivo, abilitati in questi numeri di telefono.
     
-- Verificare che non sono stati inseriti tutti i nuovi servizi ordini o si disconnette il provider di servizi corrente.
+- Verificare che non siano stati inseriti nuovi ordini di servizio o disconnessioni con il provider di servizi corrente.
     
-- Verificare che tutti i numeri vengono dal gestore stesso e lo stesso account utente.
+- Assicurarsi che tutti i numeri siano dello stesso vettore e dello stesso account.
     
-- Verificare che le informazioni di account fornite corrispondano esattamente quali il gestore telefonico dispone di record. Informazioni non corrispondenti sono più comuni provocano degli errori e può posticipare l'ordine delle porte.
+- Verificare che le informazioni sull'account fornite corrispondano esattamente a ciò che il gestore di telefonia ha registrato. Le informazioni non corrispondenti sono la causa più comune di errori e possono ritardare l'ordine di trasferimento.
     
 > [!CAUTION]
 > **Non disconnettere i servizi dal gestore o provider di servizi.**> **Devi mantenere attivo il servizio precedente per poter trasferire i numeri di telefono in Skype for Business online.**> **Non bloccare l'account del gestore o del provider di servizi. Il blocco dell'account impedisce di cambiare i relativi gestori. L'utente autorizzato dovrà inviare un ordine al gestore corrente per rimuovere il blocco. Questo processo può richiedere da 1 a 3 settimane a seconda del gestore.**> 
   
- **Per istruzioni dettagliate complete, vedere [trasferire i numeri di telefono a Office 365](/microsoftteams/transfer-phone-numbers-to-office-365).**
+ **Per istruzioni dettagliate, vedere [trasferire i numeri di telefono in Office 365](/microsoftteams/transfer-phone-numbers-to-office-365).**
 
  > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
