@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni su come configurare le conferenze telefoniche con accesso esterno o audio per gli utenti dell'azienda che hanno bisogno di usare un telefono per partecipare alle conferenze telefoniche. "
-ms.openlocfilehash: fd259553794f0ed56d5e3a59752017b50478a97c
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: 37bdc3208934d6ef9a7d97b896988b705735c869
+ms.sourcegitcommit: 30995da65ff6a9b33534c3818833cf0ae1952ab9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34329561"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34343839"
 ---
 # <a name="set-up-audio-conferencing-for-skype-for-business"></a>Configurare i servizi di audioconferenza per Skype for business
 
@@ -87,7 +87,7 @@ Per altre informazioni, vedere [modificare i numeri di telefono nel Bridge di au
 
 Si vogliono quindi impostare le [lingue dell'operatore automatico per](../audio-conferencing-in-office-365/set-auto-attendant-languages-for-audio-conferencing.md) i servizi di audioconferenza che l'operatore automatico di conferenza USA per salutare i chiamanti quando effettuano la chiamata a un numero di telefono per i servizi di audioconferenza. 
 
-![Teams-logo-30x30. png](../images/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**:
+![Icona che mostra il logo](../images/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**:
 
 1. Nel dashboard accedere a**Bridge conferenza** **riunioni** > .
 2. Selezionare il numero di telefono del Bridge di conferenza, fare clic su **modifica**e quindi scegliere la lingua predefinita.
@@ -103,7 +103,7 @@ Si vogliono quindi impostare le [lingue dell'operatore automatico per](../audio-
     
 Dopo aver impostato il ponte per audioconferenza, verifica che le impostazioni predefinite, ad esempio le notifiche di ingresso e di uscita e la lunghezza del PIN siano quelle desiderate; se non lo sono, è possibile modificarle. 
 
-![Teams-logo-30x30. png](../images/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**:
+![Icona che mostra il logo](../images/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**:
 
 1. Nel dashboard accedere a**Bridge conferenza** **riunioni** > .
 2. Selezionare **Impostazioni Bridge**. Verrà visualizzato il riquadro **Impostazioni ponte**. 
@@ -123,7 +123,7 @@ Dopo aver creato un ponte per Audioconferenza, è necessario impostare i numeri 
 
 È necessario eseguire questa operazione per tutti gli utenti dell'organizzazione che conducono o pianificano riunioni. 
 
-![Teams-logo-30x30. png](../images/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**:
+![Icona che mostra il logo](../images/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**:
 
 1. Nel dashboard fare clic su **utenti**, selezionare l'utente nell'elenco e quindi selezionare **modifica**.
 2. Selezionare **modifica** accanto a servizi di **audioconferenza**e quindi nel riquadro **audioconferenza** scegliere un numero nell'elenco a **pagamento** e numero **verde** .
