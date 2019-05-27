@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni sui passaggi di distribuzione per ottenere il firmware corretto, aggiornarlo se necessario, assegnare licenze e configurare le impostazioni per i telefoni Skype for business online
-ms.openlocfilehash: 1e83c240b5406fbb3e7a247200d2b38d74ba8ef5
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 8d3de52f7c732571b3692ed2b3683673acdb8e60
+ms.sourcegitcommit: b92b673e718e34b6ebda6de57ad69eb6651faa98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34298009"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "34432586"
 ---
 # <a name="deploying-skype-for-business-online-phones"></a>Distribuzione dei telefoni per Skype for Business Online
 
@@ -71,15 +71,15 @@ Check the firmware version on your phones. For:
   
 Firmware updates are managed by the Skype for Business Service. Every Skype for Business certified phone's firmware is uploaded to the Skype for Business Update server, and device update is enabled on all phones by default. Depending on the inactivity time on the phone and polling intervals, phones will automatically download and install the latest certified builds. You can disable the device update settings by using the [Set-CsIPPhonePolicy](https://technet.microsoft.com/en-us/library/mt629497.aspx) cmdlet and setting the _EnableDeviceUpdate_ parameter to `false`.
   
-![Distribuzione di telefoni.](../../images/be727622-1924-439f-96ca-89230739db9e.png)
+![Screenshot che mostra la distribuzione di telefoni](../../images/be727622-1924-439f-96ca-89230739db9e.png)
   
 When a new firmware is available and ready for download and install, the phone will notify the user. Polycom phones will notify the user and provide them with an option to **Update** or **Postpone**.
   
-![Distribuzione di telefoni.](../../images/50956fa0-da0c-4085-9bb5-4a2e99aecebb.png)
+![Screenshot che mostra le opzioni di aggiornamento e posticipazione.](../../images/50956fa0-da0c-4085-9bb5-4a2e99aecebb.png)
   
 Per un telefono Polycom, è possibile aggiornare il firmware del telefono selezionando **SwUpdate**.
   
-![Distribuzione di telefoni.](../../images/376c1998-6ce6-44b6-a84d-ae7d96b1c307.png)
+![Screenshot che mostra l'opzione SwUpdate](../../images/376c1998-6ce6-44b6-a84d-ae7d96b1c307.png)
   
 Puoi anche scegliere di gestire gli aggiornamenti del firmware utilizzando un sistema di provisioning partner. Per la gestione del sistema di provisioning partner, compresa la personalizzazione avanzata del telefono, consulta le guide per l'amministratore del produttore.
   
@@ -102,17 +102,17 @@ Per altre informazioni sui piani di chiamata, è possibile leggere i [piani di t
     
   - Gli utenti con **Polycom VVX 5xx/6xx** Phones vedranno:
     
-     ![Distribuzione di telefoni.](../../images/8a1ffb33-8a63-4242-bb76-d5fafb6a6472.png)
+     ![Screenshot che mostra l'accesso ai telefoni Polycom](../../images/8a1ffb33-8a63-4242-bb76-d5fafb6a6472.png)
   
   - Gli utenti con **YEALINK T48G/T46G** Phones vedranno:
     
-     ![Accesso telefoni Yealink.](../../images/2a2892ae-850d-4781-8be0-4ffb8af068c9.png)
+     ![Screenshot che mostra l'accesso ai telefoni Yealink.](../../images/2a2892ae-850d-4781-8be0-4ffb8af068c9.png)
   
     Per informazioni dettagliate sulle opzioni di accesso supportate dal produttore, vedere [ottenere telefoni per Skype for business online](getting-phones-for-skype-for-business-online.md).
     
 - **ID utente** Utilizzando la tastiera del telefono o la tastiera a schermo (se disponibile), gli utenti possono utilizzare il nome utente e la password della propria organizzazione per accedere al telefono. Ad esempio, possono utilizzare il formato UPN come <em>amosm@contoso.com</em>  per il nome utente.
     
-     ![Distribuzione di telefoni.](../../images/f67fa8f4-66a5-451d-bdf2-a12daac15cb5.png)
+     ![Screenshot che mostra la schermata di accesso](../../images/f67fa8f4-66a5-451d-bdf2-a12daac15cb5.png)
   
     > [!NOTE]
     > L'autenticazione PIN non è supportata per Skype for Business online per i telefoni IP LPE e Partner. 
@@ -122,47 +122,47 @@ Per altre informazioni sui piani di chiamata, è possibile leggere i [piani di t
   > [!NOTE]
   > Gli utenti devono utilizzare il nome utente e la password della propria organizzazione per accedere al telefono. Ad esempio, possono utilizzare il formato UPN come  <em>amosm@contoso.com</em>  per il nome utente.
   
-     ![Distribuzione di telefoni.](../../images/f67fa8f4-66a5-451d-bdf2-a12daac15cb5.png)
+     ![Screenshot che mostra la schermata di accesso](../../images/f67fa8f4-66a5-451d-bdf2-a12daac15cb5.png)
   
 - **Using a Web Sign-in**: This is a new way for Online users to authenticate using a standard web browser. Users will be provided with a set of instructions to follow when they use a browser to sign in.
     
   - Gli utenti con **Polycom VVX 5xx/6xx** Phones vedranno:
     
-     ![Distribuzione di telefoni.](../../images/ba0df923-a6e5-4a9b-b40b-b03ca188e814.png)
+     ![Screenshot che mostra le istruzioni di Polycom](../../images/ba0df923-a6e5-4a9b-b40b-b03ca188e814.png)
   
   - Gli utenti con **YEALINK T48G/T46G** Phones vedranno:
     
-     ![Accesso telefoni Yealink.](../../images/86551cc3-533a-4694-9683-bad907c9ad5a.png)
+     ![Screenshot che mostra le istruzioni di Yealink](../../images/86551cc3-533a-4694-9683-bad907c9ad5a.png)
   
     The code that is generated will expire in 15 minutes. When it expires, the user will have to click **Retry** or **OK** to generate a new code, depending on the phone.
     
   - Gli utenti con **Polycom VVX 5xx/6xx** Phones vedranno:
     
-     ![Codice PIN scaduto.](../../images/b5d27037-aa26-4054-be95-d5a6c293d08c.png)
+     ![Screenshot che mostra il codice Polycom scaduto](../../images/b5d27037-aa26-4054-be95-d5a6c293d08c.png)
   
   - Gli utenti con **YEALINK T48G/T46G** Phones vedranno:
     
-     ![Accesso telefoni Yealink.](../../images/3a4462ac-0c59-409e-a3bb-1451cdcc8676.png)
+     ![Screenshot che mostra il codice Yealink scaduto](../../images/3a4462ac-0c59-409e-a3bb-1451cdcc8676.png)
   
     Utilizzando un browser, accedi all'indirizzo visualizzato sul telefono e inserisci il tuo nome utente Skype for Business.
     
-     ![Distribuzione di telefoni.](../../images/7c540b85-dc37-4ce7-a077-9e3454a0efd0.png)
+     ![Screenshot che mostra la verifica della posta elettronica](../../images/7c540b85-dc37-4ce7-a077-9e3454a0efd0.png)
   
     Immetti il codice mostrato sul telefono.
     
-     ![Distribuzione di telefoni.](../../images/d6b88016-35d2-41d1-a0da-81fef34521d4.png)
+     ![Screenshot che mostra l'immissione di codice nella schermata di accesso](../../images/d6b88016-35d2-41d1-a0da-81fef34521d4.png)
   
     Verificare che il sito visualizzi "[nome produttore telefono] **telefono certificato Skype for business**", quindi fare clic su **continua**.
     
-     ![Distribuzione di telefoni.](../../images/a8252b37-4ff5-4ece-9e2a-3e05bf928299.png)
+     ![Screenshot che mostra la verifica del nome](../../images/a8252b37-4ff5-4ece-9e2a-3e05bf928299.png)
   
     Fai clic sulle credenziali dell'utente o fai clic su **Usa un altro account**:
     
-     ![Distribuzione di telefoni.](../../images/8415028b-7924-4747-b639-052d9b0b961e.png)
+     ![Screenshot che mostra le opzioni delle credenziali](../../images/8415028b-7924-4747-b639-052d9b0b961e.png)
   
     Quando viene visualizzata la pagina seguente, è sicuro chiudere il browser.
     
-     ![Distribuzione di telefoni.](../../images/1a873201-52fc-4a63-b7b5-e82bbd031fd2.png)
+     ![Screenshot che mostra il messaggio di conferma](../../images/1a873201-52fc-4a63-b7b5-e82bbd031fd2.png)
   
     > [!NOTE]
     > I telefoni LPE per Skype for Business online supportano l'accesso solo attraverso tethering USB. 
@@ -203,7 +203,7 @@ BToE can be configured to operate in two modes:  *Auto*  (default) and *Manual* 
   
 1. Collegare il PC al telefono utilizzando la porta del PC.
     
-     ![Distribuzione di telefoni.](../../images/e21d76c7-867c-4fe6-95c6-fc40c608ed0c.png)
+     ![Schermata che mostra la connessione a un PC](../../images/e21d76c7-867c-4fe6-95c6-fc40c608ed0c.png)
   
 2. Scaricare e installare l'ultima versione del software BToE dal sito web del produttore dai link qui sotto. Per una migliore esperienza utente, è possibile distribuire e installare il software BToE utilizzando una soluzione di distribuzione di amministrazione come System Center Configuration Manager (SCCM). Per informazioni sull'utilizzo di SCCM, consulta [Pacchetti e programmi in System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
     
