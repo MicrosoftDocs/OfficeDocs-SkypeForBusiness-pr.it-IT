@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni su come configurare le conferenze telefoniche con accesso esterno o audio per gli utenti dell'azienda che hanno bisogno di usare un telefono per partecipare alle conferenze telefoniche. "
-ms.openlocfilehash: 37bdc3208934d6ef9a7d97b896988b705735c869
-ms.sourcegitcommit: 30995da65ff6a9b33534c3818833cf0ae1952ab9
+ms.openlocfilehash: 9406c0ba680dd7eb6be52e2055041677913c3315
+ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34343839"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34494197"
 ---
 # <a name="set-up-audio-conferencing-for-skype-for-business"></a>Configurare i servizi di audioconferenza per Skype for business
 
@@ -74,7 +74,7 @@ Dopo aver ottenuto i numeri di telefono a pagamento e/o il numero verde per il B
 
 Per assegnare un nuovo numero di telefono per il ponte per audioconferenza:
 
-![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business:**
+![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business:**
 
  1. **** > Accedere al**portale legacy**di interfaccia di amministrazione di **Microsoft 365 Admin Center** > **Teams** > .
  2. Selezionare **** > **numeri di telefono**vocali.
@@ -92,7 +92,7 @@ Si vogliono quindi impostare le [lingue dell'operatore automatico per](../audio-
 1. Nel dashboard accedere a**Bridge conferenza** **riunioni** > .
 2. Selezionare il numero di telefono del Bridge di conferenza, fare clic su **modifica**e quindi scegliere la lingua predefinita.
 
-![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**:
+![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**:
 
 1. **** > Accedere al**portale legacy**di interfaccia di amministrazione di **Office 365 Admin Center** > **Teams** > .
 2. Selezionare **audioconferenza** > **Microsoft Bridge**. 
@@ -110,7 +110,7 @@ Dopo aver impostato il ponte per audioconferenza, verifica che le impostazioni p
 
 Per ulteriori informazioni, consulta [Modificare le impostazioni per un ponte per Audioconferenza](/MicrosoftTeams/change-the-settings-for-an-audio-conferencing-bridge).
 
-![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business:**
+![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business:**
 
 1. **** > Accedere al**portale legacy**di interfaccia di amministrazione di **Microsoft 365 Admin Center** > **Teams** > .
 2. Selezionare **** > **impostazioni di Microsoft Bridge**per audioconferenza. Verrà visualizzata la pagina **Impostazioni ponte Microsoft**. 
@@ -128,7 +128,7 @@ Dopo aver creato un ponte per Audioconferenza, è necessario impostare i numeri 
 1. Nel dashboard fare clic su **utenti**, selezionare l'utente nell'elenco e quindi selezionare **modifica**.
 2. Selezionare **modifica** accanto a servizi di **audioconferenza**e quindi nel riquadro **audioconferenza** scegliere un numero nell'elenco a **pagamento** e numero **verde** .
 
-![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business:**
+![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business:**
 
 1. Accedere al**portale legacy**di **Microsoft 365 Admin Center** > **Teams** > .
 2. Selezionare **** > **utenti**di servizi di audioconferenza e quindi selezionare l'utente nell'elenco e fare clic su **modifica**. 

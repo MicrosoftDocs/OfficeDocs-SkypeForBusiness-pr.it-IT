@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: "Questo report, insieme ad altri report di Skype for business, fornisce informazioni dettagliate sull'attività, incluso l'utilizzo PSTN nell'organizzazione. "
-ms.openlocfilehash: b94245c3526011a10ddb417357bf2516968f7773
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 77ce7a5ff05c4302be875a16519c2dc1a3a994de
+ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34299573"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34494006"
 ---
 # <a name="users-blocked-report"></a>Report utenti bloccati
 
@@ -36,7 +36,7 @@ Il nuovo dashboard **report** di Skype for business Mostra la panoramica delle a
   
 ## <a name="how-to-get-to-the-skype-for-business-users-blocked-report"></a>Come ottenere il report bloccati degli utenti di Skype for business
 
-![SFB-logo-30x30. png](../images/sfb-logo-30x30.png) **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
 - Accedere all'interfaccia di amministrazione di **Office 365** > **** > per gli amministratori dell'interfaccia di amministrazione di**Skype for business** > **segnala** > **gli utenti bloccati**.
     
