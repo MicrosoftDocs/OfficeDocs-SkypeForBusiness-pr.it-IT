@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, è necessario abilitarlo. A questo scopo, devi sapere come usare Windows PowerShell. Se non si conosce Windows PowerShell, è consigliabile assumere un partner Microsoft per eseguire questo passaggio.
-ms.openlocfilehash: f1a672bc8d3b0ce957a32691270293551e1a1409
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: 066aeb3d3217cb61ebcd0323b342c88d0b99caee
+ms.sourcegitcommit: e487637fc122727b41b37961f208ddc0d20a3fce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34494036"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34591630"
 ---
 # <a name="enable-skype-meeting-broadcast"></a>Abilitare Skype Meeting Broadcast
 
@@ -34,11 +34,11 @@ Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, 
 
 ![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
-1. Accedere con l'account di amministratore globale di Office 365 [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)all'indirizzo.
+1. Accedere con l'account di amministratore globale di Office 365 o con l'account di [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)amministratore di Skype for business.
     
-2. Nell'interfaccia di amministrazione di Office 365 accedere a interfaccia di **Amministrazione** > di**Skype for business**.
+2. Nell'interfaccia di amministrazione di Office 365 accedere a **** > **Teams**di interfaccia di amministrazione.
     
-3. Nell'interfaccia di **amministrazione di Skype for business**passa a**riunioni di trasmissione** **online riunioni** > e quindi seleziona **Abilita Skype meeting broadcast**.
+3. Nell'interfaccia **di amministrazione**di teams, passa a**riunioni broadcast** **legacy Portal** > **online** > e quindi seleziona **Abilita Skype meeting broadcast**.
     
 ## <a name="enable-skype-meeting-broadcast-using-powershell"></a>Abilitare Skype meeting broadcast tramite PowerShell
 
