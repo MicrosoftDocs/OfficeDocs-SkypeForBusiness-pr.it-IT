@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: be3fc4d3597e00ae2274bc8793a5f99091384713
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 267580b8a78ce0c0002e6830ba06cc4ae031e42c
+ms.sourcegitcommit: 1336f6c182043016c42660d5f21632d82febb658
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34284868"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34667383"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
 
@@ -42,10 +42,11 @@ ms.locfileid: "34284868"
 - [L'utente non dispone delle autorizzazioni per la gestione del tenant](diagnose-connection-problems-with-the-skype-for-business-online-connector.md#BKMKUserPermission)
     
 - [La possibilità di connetterti al tenant è stata disabilitata in Skype for Business Online](diagnose-connection-problems-with-the-skype-for-business-online-connector.md#BKMKAbilityConnect)
-    
-- [È stato superato il numero massimo di shell simultanee per questo utente in Skype for business online](diagnose-connection-problems-with-the-skype-for-business-online-connector.md#BKMKMaxNumberShellsUser)
-    
-- [È stato superato il numero massimo di shell simultanee per il tenant in Skype for business online](diagnose-connection-problems-with-the-skype-for-business-online-connector.md#BKMK_MaxNumberShellsTenant)
+
+- [È stato superato il numero massimo di shell simultanee per questo utente in Skype for business online](#the-maximum-number-of-concurrent-shells-for-this-user-in-skype-for-business-online-has-been-exceeded)
+
+- [È stato superato il numero massimo di shell simultanee per il tenant in Skype for business online](#the-maximum-number-of-concurrent-shells-for-this-tenant-in-skype-for-business-online-has-been-exceeded)
+
     
 ## <a name="import-module-error-caused-by-windows-powershell-execution-policy"></a>Errore di Import-Module causato dal criterio di esecuzione di Windows PowerShell
 <a name="BKMKPowerShellExecutionPolicy"> </a>
