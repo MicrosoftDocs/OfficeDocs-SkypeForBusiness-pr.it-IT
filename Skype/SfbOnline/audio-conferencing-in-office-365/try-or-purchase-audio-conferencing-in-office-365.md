@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Vedi come provare o acquistare le licenze di Audioconferenza (conferenze PSTN) per Office 365 per configurare le conferenze telefoniche a cui gli utenti possono connettersi. '
-ms.openlocfilehash: ad0549380f4e90e746fec7b7bc997f99e8510ef6
-ms.sourcegitcommit: 6d5f09acdcdc8d5a36f7ac785349209e7496f17d
+ms.openlocfilehash: 1a96e8866671c6a6a268113b4b8ca89c67bed8fa
+ms.sourcegitcommit: ba5ee891e5b16c8bece475133a0b6cd1d1f9c145
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34768766"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34813050"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365-for-skype-for-business-online"></a>Provare o acquistare Audioconferenza in Office 365 per Skype for Business Online
 
@@ -69,7 +69,7 @@ If you're a Volume and Licensing customer, you can get pay-per-minute Audio Conf
 3. [Set up Communications Credits for your organization](/microsoftteams/set-up-communications-credits-for-your-organization) for your organization. To set up Communications Credits, see [What are Communications Credits?](/microsoftteams/what-are-communications-credits)
     
     > [!IMPORTANT]
-    > Se i Crediti per la comunicazione non sono stati impostati, l'Audioconferenza non funzionerà per tutti gli utenti con le licenze di tariffa al minuto.
+    > Se i Crediti per la comunicazione non sono stati impostati, l'Audioconferenza non funzionerà per tutti gli utenti con le licenze di tariffa al minuto. Inoltre, se hai licenze pay-per-minute per i servizi di audioconferenza, non devi assegnare licenze per i crediti di comunicazione separatamente per ogni utente in modo specifico per l'uso di audioconferenza, ma potresti comunque dover assegnarle per un altro servizio.
 
 4. [Assegnare o rimuovere licenze di Office 365 per aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) che hai acquistato per gli utenti dell'organizzazione che intendono pianificare o condurre riunioni.
 
