@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Licensing
 description: 'Impara come assegnare le licenze di Skype for Business per Sistema telefonico, Audioconferenza, Piani di chiamata e Credito per la comunicazione. '
-ms.openlocfilehash: 96f2805a031ab122dce0fc354da4a4e60dbded32
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 997cffce5b98ed992371a0f43e701b2efc1ae128
+ms.sourcegitcommit: 6d5f09acdcdc8d5a36f7ac785349209e7496f17d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34301269"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34768776"
 ---
 # <a name="assign-skype-for-business-licenses"></a>Assegnare licenze di Skype for Business
 
@@ -107,7 +107,9 @@ I passaggi sono uguali a quelli seguiti per l'assegnazione di una licenza di Off
 |Offerta autonoma Plan 2 di Skype for Business online  <br/> |MCOSTANDARD  <br/> |
 |Sistema telefonico  <br/> |MCOEV  <br/> |
 |Piano per chiamate internazionali  <br/> |MCOPSTN2  <br/> |
-|Piano per chiamate nazionali  <br/> |MCOPSTN1  <br/> |
+|Piano per chiamate nazionali (3000 min US/1200 min EU plans)  <br/> |MCOPSTN1  <br/> |
+|Piano per chiamate nazionali (piano per le chiamate di 120 min)  <br/> |MCOPSTN5  <br/> |
+|Piano per chiamate nazionali (piano per le chiamate di 240 min)  <br/> |MCOPSTN6  <br/> |
 |Crediti comunicazioni  <br/> |MCOPSTNC  <br/> |
 
 ## <a name="audio-conferencing-tips-and-scripts-for-assigning-licenses"></a>Servizi di audioconferenza: suggerimenti e script per l'assegnazione delle licenze
@@ -116,7 +118,7 @@ I passaggi sono uguali a quelli seguiti per l'assegnazione di una licenza di Off
 
 - **Provider di audioconferenze di terze parti**: se per un utente è già stato impostato l'utilizzo di un provider di servizi di audioconferenza di terze parti, quando gli viene assegnata una licenza di **Audioconferenza**, Microsoft diventa il provider di servizi di audioconferenza. Puoi impostare nuovamente il provider di servizi di audioconferenza di terze parti.
 
-- Next steps: After you assign **Audio Conferencing** licenses, you need to assign an audio conferencing provider. See [Assign Microsoft as the audio conferencing provider].
+- Passaggi successivi: dopo aver assegnato le licenze di **audioconferenza** , è necessario assegnare un provider di servizi di audioconferenza. Vedi [Assegnare Microsoft come provider di servizi di audioconferenza].
 
 ### <a name="how-to-assign-an-audio-conferencing-license-to-one-user"></a>Come assegnare una licenza di Audioconferenza a un utente
 
@@ -130,7 +132,7 @@ I passaggi sono uguali a quelli seguiti per l'assegnazione di una licenza di Off
 
     Una volta installati i moduli, usa il prompt dei comandi di Windows PowerShell e la seguente sintassi per assegnare le licenze agli utenti:
 
-    The name of the licenses or product names in the script are listed in italics text. See [Audio Conferencing product names or SKUs used for scripting](assign-skype-for-business-and-microsoft-teams-licenses.md#sku) for all of the product names.
+    Il nome delle licenze o i nomi dei prodotti nello script sono elencati in corsivo. Vedere [nomi di prodotti per la conferenza audio o SKU usati per gli script](assign-skype-for-business-and-microsoft-teams-licenses.md#sku) per tutti i nomi di prodotto.
 
     In questo esempio vengono assegnate una licenza di Enterprise E3 e una licenza per i servizi Audioconferenza.
 
@@ -187,15 +189,15 @@ foreach ($user in $users)
 
 - **Clienti Enterprise E5**: anche se agli utenti sono assegnate licenze Enterprise E5, è comunque consigliabile assegnare loro licenze per i **crediti per comunicazioni** .
     
-- **Next steps**: After you assign these licenses, you will need to get your phone numbers for your organization, and then assign those numbers to the people in your organization. For step-by-step instructions, see [Set up Calling Plans](/microsoftteams/set-up-calling-plans).
+- **Passaggi successivi**: dopo avere assegnato le licenze, dovrai recuperare i numeri di telefono per l'organizzazione e assegnarli agli utenti. Per istruzioni dettagliate, vedere [configurare i piani](/microsoftteams/set-up-calling-plans)per le chiamate.
     
 ### <a name="how-to-assign-a-communications-credits-license-to-one-user"></a>Come assegnare una licenza di Servizi di conferenza PSTN a un utente
 
-The steps are the same as assigning an Office 365 license. See [Assign or remove licenses for Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+I passaggi sono uguali a quelli seguiti per l'assegnazione di una licenza di Office 365. Consulta la sezione [Assegnare o rimuovere licenze per Office 365 per le aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
 
 ### <a name="how-to-assign-communications-credits-licenses-in-bulk"></a>Come assegnare licenze per i crediti di comunicazione in blocco
 
-Take a look at the sample script for assigning **Audio Conferencing** licenses. Update it with the info for assigning **Communications Credits** licenses.
+Guarda lo script di esempio per l'assegnazione delle licenze di **Audioconferenza**. Aggiornalo con le informazioni per l'assegnazione di licenze di **Crediti comunicazioni**.
 
 ## <a name="related-topics"></a>Argomenti correlati
   

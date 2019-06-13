@@ -1,12 +1,12 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Skype per le aziende
+title: Skype for business
 ms.reviewer: ''
 ms.author: kenwith
 manager: serdars
 author: kenwith
-description: Skype per le aziende
+description: Skype for business
 ms.openlocfilehash: 140d0f361883ca40f4b394eedd03b3ef23fa4b19
 ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33905695"
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>Skype per le aziende</h1>
+        <h1>Skype for business</h1>
         <ul class="pivots">
             <li>
                 <a href="#home"></a>
@@ -35,7 +35,7 @@ ms.locfileid: "33905695"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Skype per le aziende in linea</h3>
+                                                    <h3>Skype for business online</h3>
                                                     <p>Trova risorse per la gestione di Skype for Business online nell'ambiente di Office 365.</p>
                                                 </div>
                                             </div>
@@ -72,7 +72,7 @@ ms.locfileid: "33905695"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Skype per Business Server</h3>
+                                                    <h3>Skype for Business Server</h3>
                                                     <p>Distribuisci e gestisci Skype for Business Server per la tua organizzazione.</p>
                                                 </div>
                                             </div>
@@ -110,7 +110,7 @@ ms.locfileid: "33905695"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Team di Microsoft</h3>
+                                                    <h3>Microsoft Teams</h3>
                                                     <p>Ottieni la pianificazione, le modalità e il materiale sussidiario pratico necessari per implementare con successo i Microsoft Team.</p>
                                                 </div>
                                             </div>
@@ -129,7 +129,7 @@ ms.locfileid: "33905695"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Passaggio dal Skype per le aziende ai team di Microsoft</h3>
+                                                    <h3>Viaggio da Skype for business a Microsoft Teams</h3>
                                                     <p>Trova materiale sussidiario e strumenti per esplorare il tuo percorso ottimale per i Teams.</p>
                                                 </div>
                                             </div>
@@ -147,8 +147,8 @@ ms.locfileid: "33905695"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Sale team di Microsoft</h3>
-                                                    <p>Informazioni su come pianificare, distribuire e gestire le chat team di Microsoft.</p>
+                                                    <h3>Sale di Microsoft Teams</h3>
+                                                    <p>Informazioni su come pianificare, distribuire e gestire le sale di Microsoft teams.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -184,7 +184,7 @@ ms.locfileid: "33905695"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Utenti finali</h3>
-                                                    <p>Trovare Guida in linea, formazione e supporto tecnico per Skype per utenti Business <a href='https://support.office.com/en-us/skype-for-business' target="_blank">support.office.com</a>.</p>
+                                                    <p>Trovare assistenza, formazione e supporto tecnico per gli utenti di Skype for business in <a href='https://support.office.com/en-us/skype-for-business' target="_blank">support.Office.com</a>.</p>
                                                 </div>
                                             </div>
                                         </div>
