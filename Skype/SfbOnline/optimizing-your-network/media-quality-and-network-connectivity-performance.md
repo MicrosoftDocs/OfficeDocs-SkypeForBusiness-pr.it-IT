@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Optimization
 description: Questo argomento definisce il set di requisiti di prestazioni di rete per i servizi Skype for business online e come si può scegliere di usare Internet o ExpressRoute per la connettività tra la rete e Skype for business online in base alla valutazione della rete connettività. Se si è deciso di distribuire Azure ExpressRoute per la connettività dedicata a Office 365, questo documento fornisce anche indicazioni su come pianificare le connessioni di ExpressRoute in diversi scenari di distribuzione di Skype for business online.
-ms.openlocfilehash: 2ec74fb3137b8eac048187ac4015f857428b0851
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5818c07bcc939d18275409fd34bb627be2f2abd9
+ms.sourcegitcommit: 4fb1c691f0f84d47e215c9c1775da9bdba875f61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34297837"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253720"
 ---
 # <a name="media-quality-and-network-connectivity-performance-in-skype-for-business-online"></a>Qualità multimediale e prestazioni della connettività di rete in Skype for Business online
 
@@ -129,10 +129,10 @@ Per una qualità ottimale dei contenuti multimediali di Skype for business, per 
 |**Metrica** <br/> |**Destinazione** <br/> |
 |Latenza (solo andata)  <br/> |< 50ms  <br/> |
 |Latenza (RTT o periodo di andata e ritorno)  <br/> |< 100ms  <br/> |
-|Perdita di pacchetti burst  <br/> |<10% durante qualsiasi intervallo di 200ms  <br/> |
+|Perdita di pacchetti burst  <br/> |<10% durante l'intervallo di 200ms  <br/> |
 |Perdita di pacchetti  <br/> |<1% durante qualsiasi intervallo di 15s  <br/> |
 |Jitter tra i pacchetti di arrivo  <br/> |<30ms durante qualsiasi intervallo di 15s  <br/> |
-|Riordino dei pacchetti  <br/> |< 0.05% pacchetti fuori ordine  <br/> |
+|Riordino dei pacchetti  <br/> |<pacchetti fuori ordine di 0,05%  <br/> |
    
  **Altri requisiti di destinazione delle prestazioni:**
   
@@ -156,9 +156,9 @@ Di seguito sono riportate le destinazioni o le soglie di prestazioni di rete nec
 |Latenza (solo andata)  <br/> |< 30ms  <br/> |
 |Latenza (RTT)  <br/> |< 60ms  <br/> |
 |Perdita di pacchetti burst  <br/> |<1% durante qualsiasi intervallo di 200 ms  <br/> |
-|Perdita di pacchetti  <br/> |< 0.1% durante qualsiasi intervallo di 15s  <br/> |
+|Perdita di pacchetti  <br/> |<0,1% durante qualsiasi intervallo di 15s  <br/> |
 |Jitter tra i pacchetti di arrivo  <br/> |<15ms durante qualsiasi intervallo di 15s  <br/> |
-|Riordino dei pacchetti  <br/> |< 0.01% pacchetti fuori ordine  <br/> |
+|Riordino dei pacchetti  <br/> |<pacchetti fuori ordine di 0,01%  <br/> |
    
  **Altri requisiti di destinazione delle prestazioni:**
   
@@ -288,7 +288,7 @@ Se si è deciso che ExpressRoute in base alle raccomandazioni descritte sopra è
 
 Se tutti gli utenti usano il servizio Skype for business online e se gli uffici sono centrati attorno a una singola posizione fisica e si decide di distribuire Azure ExpressRoute, è necessario configurare una singola connessione di ExpressRoute tra il sito aziendale e il più vicino [Posizione di peering ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-locations/).
   
-L'immagine seguente mostra un esempio di questo tipo di distribuzione. Per questo esempio, Contoso è un ateneo situato a Orlando, FL. Contoso include 10.000 membri della facoltà e studenti. I test Internet dalla loro posizione ai siti Microsoft Edge hanno mostrato una perdita di pacchetti maggiore del 5% durante le ore di punta della classe. Gli utenti hanno deciso di ottenere una connessione dedicata a Office 365 usando ExpressRoute con larghezza di banda troppo provisionale per evitare la congestione della rete per Office 365, in particolare per il traffico in tempo reale di Skype for business online. Si connettono a Microsoft Cloud tramite ExpressRoute nel sito di Atlanta, GA MeetMe.
+L'immagine seguente mostra un esempio di questo tipo di distribuzione. Per questo esempio, Contoso è un ateneo situato a Orlando, FL. Contoso include 10.000 membri della facoltà e studenti. I test Internet dalla loro posizione ai siti Microsoft Edge hanno mostrato una perdita di pacchetti maggiore del 5% durante le ore di punta della classe. Hanno deciso di ottenere una connessione dedicata a Office 365 usando ExpressRoute con larghezza di banda troppo provisionale in modo che possano evitare la congestione della rete per Office 365 in particolare per il traffico in tempo reale di Skype for business online. Si connettono a Microsoft Cloud tramite ExpressRoute nel sito di Atlanta, GA MeetMe.
   
 ![ExpressRoute sito singolo.](../images/59fbca3c-a3ea-4568-8da5-3281096a7453.png)
   
