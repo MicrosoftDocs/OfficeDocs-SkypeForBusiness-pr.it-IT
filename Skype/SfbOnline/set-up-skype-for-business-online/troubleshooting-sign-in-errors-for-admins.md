@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Scopri le cause più comuni per Skype di errori di accesso Business online e il lavoro e risolvere questi problemi. '
-ms.openlocfilehash: 25f6c08392823c35e4bb5d53ac523c1efeddf958
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 397e899796184274ca357e40e070e7c92cf23b66
+ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34285035"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35221492"
 ---
 # <a name="troubleshooting-skype-for-business-online-sign-in-errors-for-administrators"></a>Risoluzione dei problemi di accesso a Skype for Business online (amministratori)
 
@@ -75,7 +75,7 @@ Per risolvere i problemi di accesso a Skype for Business online problemi, è ben
 <a name="toc325626440"> </a>
 
 > [!IMPORTANT]
->  Queste istruzioni sono destinate principalmente ai clienti del Piano E di Microsoft Office 365. Se si è un cliente del Piano E di Microsoft Office 365, passare alla sezione seguente [Raccogliere ulteriori informazioni e richiedere assistenza](troubleshooting-sign-in-errors-for-admins.md#collect-more-information). 
+>  Queste istruzioni sono destinate principalmente ai clienti del Piano E di Microsoft Office 365. Se si è un cliente del Piano P di Office 365, passare alla sezione seguente [Raccogliere ulteriori informazioni e richiedere assistenza](troubleshooting-sign-in-errors-for-admins.md#collect-more-information).
 
 Se non si riesce ad accedere dopo aver provato i suggerimenti nella sezione precedente, è possibile eseguire ulteriori operazioni per la risoluzione dei problemi in base al tipo di errore. La tabella seguente elenca i più comuni messaggi di errore e le possibili cause. La tabella di seguito contiene procedure dettagliate per ogni problema.
 
