@@ -20,18 +20,18 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Vedere dove assegnare un piano di servizio valido per un utente dopo che un piano di servizio Skype for business online non è un errore valido. '
-ms.openlocfilehash: bae00d6d7646abb82931f9293444e7c86fc5a59a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 896ac04909e9b00ada8e18e6a83f7fa9096f7455
+ms.sourcegitcommit: 3c11153ffdc3296a9cf2a7078fff5049c091e55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34285065"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "35411543"
 ---
 # <a name="the-users-skype-for-business-online-service-plan-isnt-valid"></a>Il piano di servizio Skype for business online dell'utente non è valido
 
 Il piano di servizio Skype for business online assegnato a questo utente non è riconosciuto o non è valido.
   
-Accedere agli > **utenti attivi** dell'interfaccia di **amministrazione di Office 365**e assegnare un piano di servizio valido a questo utente.
+Accedere all'interfaccia di *amministrazione di Microsoft 365** > **utenti attivi** e assegnare un piano di servizio valido a questo utente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
