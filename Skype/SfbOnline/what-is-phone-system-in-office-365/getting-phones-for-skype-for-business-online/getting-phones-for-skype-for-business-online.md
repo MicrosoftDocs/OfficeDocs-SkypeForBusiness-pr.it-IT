@@ -21,26 +21,27 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: 'Informazioni su quali telefoni di Polycom, HP e Mitel utilizzano Skype for Business e sulle licenze necessarie. '
-ms.openlocfilehash: f3a042a200f821f6e5836eb3fc6b062a88e2da35
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ac3b262a9888acb95eef4e2e8822abc3441617c4
+ms.sourcegitcommit: 2f12e0d4dc2ef8e848a63bf3a9c63e07e4439cf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34297999"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35587935"
 ---
 # <a name="getting-phones-for-skype-for-business-online"></a>Ottenere telefoni per Skype for Business online
 
 Skype for Business Online qualifies and supports desktop phones for users who want to have a traditional phone experience, rather than use the Skype for Business app. This topic covers the phones and firmware versions that are supported for use in Skype for Business Online and other information that can help you when you are setting up phones in your organization.
-  
-Per ottenere gli aggiornamenti più recenti e la maggior parte delle informazioni aggiornate sui dispositivi supportati, vedere il [Catalogo di dispositivi Skype for business](http://partnersolutions.skypeforbusiness.com/solutionscatalog).
+
+> [!NOTE]
+> Skype for business verrà sostituito lentamente da Microsoft teams come metodo di comunicazione principale in Office 365.  Per altre informazioni, vedere [una nuova visione per comunicazioni intelligenti in Office 365](https://www.microsoft.com/microsoft-365/blog/2017/09/25/a-new-vision-for-intelligent-communications-in-office-365/) .
+>
+>Per ottenere gli aggiornamenti più recenti e le informazioni più aggiornate sui dispositivi supportati, vedere i [dispositivi Microsoft teams per comunicazioni intelligenti](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1).
   
 ## <a name="supported-phones"></a>Telefoni supportati
-
-Per gli utenti di Skype for business online, è possibile scegliere tra diversi modelli all'interno dei *telefoni certificati per Skype for business* e telefoni con Lync Phone Edition (LPE) elencati nella categoria Skype for business online nel [dispositivo Skype for business Catalogo](http://partnersolutions.skypeforbusiness.com/solutionscatalog).
   
 Microsoft collabora e lavora in stretta collaborazione con Polycom, Yealink e AudioCodes per sviluppare e certificare una vasta gamma di dispositivi tramite il programma PIP (partner IP Phone Program) per il sistema telefonico in Office 365 e Skype for Business Server.
   
-When ordering new phones for Skype for Business, it is important to buy phones with the *right product ID*. These product IDs will ensure that the phones you receive have the Skype for Business Online qualified version already installed.
+Quando si ordinano nuovi telefoni per Skype for business, è importante acquistare telefoni con il *giusto ID prodotto*. Questi ID prodotto garantiscono che i telefoni ricevuti abbiano già installato la versione qualificata di Skype for business online.
   
 |||
 |:-----|:-----|
@@ -56,9 +57,9 @@ Per maggiori dettagli sui telefoni Yealink, consulta [Telefoni IP per Skype for 
 Per altre informazioni sui telefoni AudioCodes, Vedi [telefoni IP di Skype for business](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/ip-phones-room-solutions).
   
 > [!NOTE]
-> Lync Phone Edition is supported with Skype for Business Online, but not with Microsoft Teams. Mainstream support for the LPE platform ended by April/10/2014, with extended support until April/11/2023 to align with the product support lifecycle of Lync Server 2013. See [Microsoft Product Lifecycle](https://support.microsoft.com/lifecycle/search?qid=&amp;alpha=Lync%20Phone%20Edition&amp;Filter=FilterNO) for details on the LPE lifecycle. LPE CAP models aren't supported with Skype for Business Online.
+> Lync Phone Edition è supportato con Skype for business online, ma non con Microsoft teams. Il supporto mainstream per la piattaforma LPE è terminato da aprile/10/2014, con il supporto esteso fino ad aprile/11/al 2023 per allinearsi al ciclo di vita del supporto tecnico di Lync Server 2013. Per informazioni dettagliate sul ciclo di vita di LPE, vedere ciclo di vita dei [prodotti Microsoft](https://support.microsoft.com/lifecycle/search?qid=&amp;alpha=Lync%20Phone%20Edition&amp;Filter=FilterNO) . I modelli LPE CAP non sono supportati con Skype for business online.
 >
-> Later this year, Office 365 will not support any version of TLS older than 1.2. Since the underlying operating system of LPE does not support TLS 1.2, LPE will not be supported to connect to Office 365 anymore. See [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/en-gb/help/4057306/preparing-for-tls-1-2-in-office-365) for more information.
+> Nei prossimi mesi, Office 365 non supporterà nessuna versione di TLS precedente alla 1.2. Poiché il sistema operativo sottostante di LPE non supporta TLS 1.2, LPE non sarà più supportato per la connessione a Office 365. Per ulteriori informazioni, consulta [Preparazione per l'utilizzo obbligatorio di TLS 1.2 in Office 365](https://support.microsoft.com/en-gb/help/4057306/preparing-for-tls-1-2-in-office-365).
   
 ## <a name="supported-firmware"></a>Firmware supportato
 
@@ -90,25 +91,25 @@ Per le funzionalità e le funzionalità del dispositivo completo, controllare le
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Funzionalità** <br/> |**Polycom 3PIP** <br/> |**Yealink 3PIP** <br/> |**AudioCodes 3PIP** <br/> |**LPE** <br/> |
-|Accedi con le credenziali utente  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Accesso tramite PC (accoppiamento), solo per Windows  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Accedi con (accesso Web)  <br/>  <br/> **Nota:** Verificare la matrice di supporto nella Guida alla distribuzione.           |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Partecipa a una riunione con un singolo clic  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Clic per comporre (accoppiamento)  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Controlli per le riunioni  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Casella vocale visuale  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Blocco telefono  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Aggiornamento del dispositivo  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Provisioning in banda  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|QoE  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Invio registro  <br/> <br/> **Nota:** Attualmente tutti i registri vengono caricati solo nel team di supporto Microsoft; l'accesso dei clienti ai registri telefonici non è ancora disponibile.           |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Autenticazione moderna  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Numero di emergenza multiplo  <br/> |No  <br/> |No  <br/> |Pagina della convocazione di riunione con numeri di telefono di accesso esterno predefiniti  <br/> |Sì  <br/> |
-|Integrazione calendario Exchange*  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> <br/> **Nota:** Richiede il tethering del PC           |
-|Integrazioni presenza  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Elenco aziendale  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Delega  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
-|Integrazione immagine contatto  <br/> |No  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |Sì  <br/> |
+|Accedi con le credenziali utente  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |No  <br/> |No  <br/> |
+|Accesso tramite PC (accoppiamento), solo per Windows  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Accedi con (accesso Web)  <br/>  <br/> **Nota:** Verificare la matrice di supporto nella Guida alla distribuzione.           |Sì  <br/> |Supporto per più paesi  <br/> |No  <br/> |No  <br/> |
+|Partecipa a una riunione con un singolo clic  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Clic per comporre (accoppiamento)  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Controlli per le riunioni  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Casella vocale visuale  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Blocco telefono  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Sì  <br/> |
+|Aggiornamento del dispositivo  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Provisioning in banda  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|QoE  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Invio registro  <br/> <br/> **Nota:** Attualmente tutti i registri vengono caricati solo nel team di supporto Microsoft; l'accesso dei clienti ai registri telefonici non è ancora disponibile.           |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Autenticazione moderna  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Numero di emergenza multiplo  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |Pagina della convocazione di riunione con numeri di telefono di accesso esterno predefiniti  <br/> |Sì  <br/> |
+|Integrazione calendario Exchange*  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> <br/> **Nota:** Richiede il tethering del PC           |
+|Integrazioni presenza  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Elenco aziendale  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Sì  <br/> |
+|Delega  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |No  <br/> |No  <br/> |
+|Integrazione immagine contatto  <br/> |No  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |Sì  <br/> |
 ||||||
 
      
