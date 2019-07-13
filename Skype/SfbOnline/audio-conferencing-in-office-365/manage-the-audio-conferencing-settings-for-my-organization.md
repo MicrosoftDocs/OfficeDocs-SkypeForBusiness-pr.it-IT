@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Vedere i passaggi di Skype for business online per assegnare una licenza di conferenza telefonica con accesso esterno a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno. '
-ms.openlocfilehash: e699cf51f3a9366cdd86004e48eeb18235849680
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: aef115d2882a368e085880a66332dc7d22e4ff04
+ms.sourcegitcommit: e65411a739c539d5232ebc89af3630d07d518b89
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34494247"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35638565"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-my-organization-in-skype-for-business-online"></a>Gestire le impostazioni di Audioconferenza per l'organizzazione in Skype for Business Online
 
@@ -83,11 +83,11 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
   Set-CsOnlineDialInConferencingTenantSettings -AutomaticallySendEmailsToUsers $true|$false
   ```
 
-    Puoi usare il [set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) per gestire altre impostazioni per l'organizzazione, incluso il messaggio di posta elettronica.
+    Puoi usare il [set-CsOnlineDialInConferencingTenantSettings](https://docs.microsoft.com/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) per gestire altre impostazioni per l'organizzazione, incluso il messaggio di posta elettronica.
 
 ## <a name="change-the-senders-contact-information-in-email-messages-sent-to-users"></a>Modificare le informazioni di contatto del mittente nei messaggi di posta elettronica inviati agli utenti
 
-You can make changes to the email that is automatically sent to your users, including the actual email address and the display name of the sender's contact information. By default, the sender of the emails is Office 365, but you can change the email address and display name using Windows PowerShell and the [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) cmdlet. To make changes to the email address that is sending the email to the users, you must:
+You can make changes to the email that is automatically sent to your users, including the actual email address and the display name of the sender's contact information. By default, the sender of the emails is Office 365, but you can change the email address and display name using Windows PowerShell and the [Set-CsOnlineDialInConferencingTenantSettings](https://docs.microsoft.com/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) cmdlet. To make changes to the email address that is sending the email to the users, you must:
 
 - Immettere l'indirizzo di posta elettronica nel parametro _SendEmailFromAddress_ .
 
@@ -103,7 +103,7 @@ Set-CsOnlineDialInConferencingTenantSettings -SendEmailOverride $true -SendEmail
 
 Se desideri modificare le informazioni dell'indirizzo di posta elettronica, devi assicurarti che le politiche interne di posta elettronica della tua organizzazione consentono i messaggi che arrivano da un indirizzo personalizzato.
 
-Puoi usare il cmdlet [set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) per gestire altre impostazioni per l'organizzazione, incluso il messaggio di posta elettronica.
+Puoi usare il cmdlet [set-CsOnlineDialInConferencingTenantSettings](https://docs.microsoft.com/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) per gestire altre impostazioni per l'organizzazione, incluso il messaggio di posta elettronica.
 
 Vedere [i messaggi di posta elettronica inviati automaticamente agli utenti quando cambiano le impostazioni dei servizi di audioconferenza](emails-sent-to-users-when-their-settings-change.md).
 
@@ -261,7 +261,7 @@ Vedere [visualizzare un elenco di numeri di conferenza audio](see-a-list-of-audi
 
 2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
 
-3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, passa a **audioconferenza**_GT_ e quindi **agli utenti**.
+3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, passa a **audioconferenza**> e quindi **agli utenti**.
 
 See [See a list of users that are enabled for Audio Conferencing](see-a-list-of-users-that-are-enabled-for-audio-conferencing.md).
 
