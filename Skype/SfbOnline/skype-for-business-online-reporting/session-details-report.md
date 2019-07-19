@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: '[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto.'
-ms.openlocfilehash: 62b64fd971d776b265d7b78789e8ac7684cc5e26
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: faee3d0a4f2228ddc32121bf85cc2f6b3018f2cc
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34302088"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793063"
 ---
 # <a name="session-details-report"></a>Report dettagli della sessione.
 
@@ -34,11 +34,11 @@ Vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-
 Questo report, insieme agli altri report di Skype for business, fornisce informazioni dettagliate sull'attività, inclusi i dettagli della sessione nell'organizzazione. Questi dettagli sono molto utili per l'analisi, la pianificazione e l'esecuzione di altre decisioni aziendali per l'organizzazione e per la configurazione dei crediti per le [comunicazioni](/microsoftteams/what-are-communications-credits).
   
 > [!NOTE]
-> I report sono disponibili quando si accede a Skype for Business come amministratore dall'interfaccia di amministrazione di Office 365. 
+> È possibile visualizzare tutti i report di Skype for business quando si accede come amministratore all'interfaccia di amministrazione di Microsoft 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-session-details-report"></a>Come ottenere il report Dettagli sessione di Skype for business
 
-1. Accedere ai > **report** dell'interfaccia di **amministrazione di Office 365**
+1. Accedere all'interfaccia di amministrazione > **report**
     
 2. Selezionare **report** nel menu a sinistra e quindi fare clic su **utilizzo**.
     
@@ -118,7 +118,7 @@ Per ogni sessione è disponibile una tabella secondaria con dati diversi a secon
 - [Report pool di minuti PSTN di Skype for business](pstn-minute-pools-report.md) è possibile visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
   
  

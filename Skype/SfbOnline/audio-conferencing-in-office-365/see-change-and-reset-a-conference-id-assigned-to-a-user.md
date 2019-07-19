@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come assegnare un ID conferenza per un utente in Skype for Business online e quale devono essere i parametri ID conferenza. '
-ms.openlocfilehash: 884934360c8d3a627e68486189acc398c22b68f2
-ms.sourcegitcommit: 46fb558814cb6bd7d70729eac590afd51fc6606e
+ms.openlocfilehash: 65a27315898ec0673d68842e7d5249cbad2d7298
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2019
-ms.locfileid: "35002837"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793005"
 ---
 # <a name="view-and-reset-a-conference-id-assigned-to-a-user-in-skype-for-business-online"></a>Visualizzare e reimpostare un ID conferenza assegnato a un utente in Skype for Business online
 
@@ -51,7 +51,7 @@ An email will be sent to the user with the conference ID and the default audio c
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Accedere all'interfaccia di amministrazione > **Skype for business**.
 
 3. Nell'**interfaccia di amministrazione di Skype for Business**> **Audioconferenze** > **Utenti**, seleziona l'utente che ha bisogno dell'ID conferenza.
 
@@ -79,7 +79,7 @@ You can use Windows PowerShell to view the conference ID for a user. To do so, r
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Accedere all'interfaccia di amministrazione > **Skype for business**.
 
 3. Negli**utenti**di servizi di> **audioconferenza** > per l'interfaccia di **amministrazione di Skype for business**, nel riquadro azioni in **ID conferenza**fare clic su **Reimposta**.
 
@@ -113,7 +113,7 @@ You can reset the conference ID for a user by using the Windows PowerShell. To d
 
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
 
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Office 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
+- Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo usando l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Learn about these advantages in the following topics:
 
   - [Gestire Office 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
 

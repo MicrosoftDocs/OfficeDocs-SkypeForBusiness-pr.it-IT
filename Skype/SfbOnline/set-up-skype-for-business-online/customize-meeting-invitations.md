@@ -20,12 +20,12 @@ f1keywords:
 ms.custom:
 - Setup
 description: 'Personalizzare gli inviti alle riunioni Skype con loghi grafici, guida e URL legali e testo del piè di pagina. '
-ms.openlocfilehash: 6d16bf7f7d41f2706ccefd217b2d810c37a9d0f3
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: e43db5deeabcfa2db3e64423357d60b2723d606f
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34494120"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792832"
 ---
 # <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
@@ -49,7 +49,7 @@ Come amministratore, puoi assicurarti che tutti gli inviti alle riunioni di Skyp
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Nell'interfaccia di amministrazione di Office 365 scegliere interfaccia di **Amministrazione** > **Skype for business**.
+2. Nell'interfaccia di amministrazione scegliere interfaccia di **Amministrazione** > **Skype for business**.
     
 3. Nell'interfaccia di amministrazione di Skype for Business Scegli **riunioni online**. 
     

@@ -19,12 +19,12 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: "Informazioni su come consentire alle persone che usano Skype for business di contattare utenti Skype for business all'esterno dell'organizzazione e aggiungerli al proprio elenco di contatti. "
-ms.openlocfilehash: afe1cb7f465a2a2e43056d01e7512f6f46c0f587
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: 3ba92977fa45686a900a78cfcf231a3c0985a933
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34494160"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792144"
 ---
 # <a name="let-skype-for-business-users-add-skype-contacts"></a>Consentire agli utenti di Skype for Business di aggiungere contatti Skype
 
@@ -36,7 +36,7 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
   
 1. Accedere con l'account di amministratore di Office 365 [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home#/homepage)all'indirizzo.
     
-2. Nell'interfaccia di amministrazione di Office 365 accedere a interfaccia di **Amministrazione** > di**Skype for business**. 
+2. Nell'interfaccia di amministrazione accedere a interfaccia di **Amministrazione** > di**Skype for business**. 
     
     ![Scegliere l'interfaccia di amministrazione di Skype for business.](../images/376a7a45-e6e3-4716-be09-d2f294d885a2.png)
   

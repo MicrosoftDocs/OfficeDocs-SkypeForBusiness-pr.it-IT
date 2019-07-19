@@ -20,12 +20,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: "Informazioni sulle licenze di componenti aggiuntivi, sulle funzionalità e sull'acquisto di piani per Office 365 Business Premium. "
-ms.openlocfilehash: b4f501d3a047e0408a484065e38ab23f98b850ab
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0e1c5ebe64c105e15485c0722920ec1437d05b27
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34290074"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792893"
 ---
 # <a name="office-365-business-premium"></a>Office 365 Business Premium
 
@@ -61,7 +61,7 @@ Se disponi di [Office 365 Business Premium](https://products.office.com/en/busin
 
  **Per ottenere Audioconferenza e Credito per la comunicazione:**
 
-1. Accedi all'interfaccia di amministrazione di Office 365.
+1. Accedere all'interfaccia di amministrazione.
 
 2. Passa a **Fatturazione** > **Abbonamenti** > **Componenti aggiuntivi** > **Acquista componenti aggiuntivi**.
 
@@ -73,7 +73,7 @@ Se disponi di [Office 365 Business Premium](https://products.office.com/en/busin
 
 1. Passa al piano E1 o E3.
 
-2. Vai a Interfaccia di amministrazione di Office 365 > **Fatturazione** > **Abbonamenti**.
+2. Accedere all'interfaccia di amministrazione > **** > **abbonamenti**alla fatturazione.
 
 3. Choose **Add-ons**. You'll now see the prices for Phone System, and the option to buy it.
 

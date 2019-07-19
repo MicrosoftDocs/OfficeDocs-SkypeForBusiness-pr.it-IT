@@ -19,16 +19,16 @@ f1keywords: None
 ms.custom:
 - Licensing
 description: Il piano 1 di Skype for business online è stato ritirato. Tuttavia, se si ha un abbonamento corrente a Skype for business online Plan 1, questa modifica non verrà applicata immediatamente. Quando si è pronti per il passaggio a un nuovo piano, ora o durante il rinnovo, è possibile scegliere tra tre opzioni.
-ms.openlocfilehash: 92b8cc0b01c14cf254dd90fdd96d06b80dfd5345
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 6e3ede1a6c01fe48384faf92048e502c393a346a
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34290292"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793139"
 ---
 # <a name="skype-for-business-online-plan-1-retirement"></a>Ritiro di Skype for Business online (Piano 1) 
 
-Il piano 1 di Skype for business online è stato ritirato. Tuttavia, se si ha un abbonamento corrente a Skype for business online Plan 1, questa modifica non verrà applicata immediatamente. L'amministratore di Office 365 globale riceverà gli aggiornamenti della posta elettronica e vedrà i post nel centro messaggi (parte dell'interfaccia di amministrazione di Office 365) con informazioni su quando è necessario intervenire. Nel frattempo, puoi continuare a usare le licenze esistenti di Skype for business online per il piano 1.
+Il piano 1 di Skype for business online è stato ritirato. Tuttavia, se si ha un abbonamento corrente a Skype for business online Plan 1, questa modifica non verrà applicata immediatamente. L'amministratore di Office 365 globale riceverà gli aggiornamenti della posta elettronica e vedrà i post nel centro messaggi (parte dell'interfaccia di amministrazione di Microsoft 365) con informazioni su quando è necessario intervenire. Nel frattempo, puoi continuare a usare le licenze esistenti di Skype for business online per il piano 1.
 
 Quando si è pronti per passare a un nuovo piano, ora o durante il rinnovo, è possibile passare a Office 365 F1 o a un altro piano di Office 365 scelto.
 
@@ -42,7 +42,7 @@ Questa opzione è ideale se vuoi sfruttare le funzionalità aggiuntive che Offic
 
 ### <a name="how-to-switch"></a>Come cambiare 
 
-È possibile passare a Office 365 F1 ora o aspettare che sia il momento di rinnovare e aggiornare durante il processo di rinnovo. In entrambi i casi, è possibile collaborare con il proprio rappresentante o partner per l'account, a meno che l'abbonamento non sia stato acquistato direttamente da Microsoft, in questo caso si può passare a Office 365 F1 autonomamente nell'interfaccia di amministrazione di Office 365.
+È possibile passare a Office 365 F1 ora o aspettare che sia il momento di rinnovare e aggiornare durante il processo di rinnovo. In entrambi i casi, è possibile collaborare con il proprio rappresentante o partner per l'account, a meno che l'abbonamento non sia stato acquistato direttamente da Microsoft, in questo caso si può passare a Office 365 F1 autonomamente nell'interfaccia di amministrazione di Microsoft 365.
 
 
 ## <a name="switching-to-another-office-365-offer"></a>Passaggio a un'altra offerta di Office 365

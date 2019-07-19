@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Setup
 description: Scopri quali statistiche degli utenti di Skype for Business sono disponibili, ad esempio il numero di utenti abilitati, gli utenti con accesso alle conferenze o gli utenti abilitati per Office 365.
-ms.openlocfilehash: 9aaef735dff56de1a5e55e109255e76b4437e91c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d15ba89dda3a5a87162855d5746aed93b21598d0
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34284898"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792116"
 ---
 # <a name="user-statistics-and-organization-information"></a>Statistiche sugli utenti e informazioni sull'organizzazione
 
@@ -61,7 +61,7 @@ Il dashboard di Skype for Business dà una rapida visione d'insieme di come è c
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 
-[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
   
  

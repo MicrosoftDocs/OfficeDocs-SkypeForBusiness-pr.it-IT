@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: La nuova area report dell'interfaccia di amministrazione di Skype for business Mostra la chiamata e l'attività di conferenza audio nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli di utilizzo PSTN dei servizi di audioconferenza, incluso il costo della chiamata, in modo da poter comprendere l'utilizzo e chiamare i dettagli di fatturazione per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: 3d5ea4552cec8e9f10ad0108dad4c00875918c0e
-ms.sourcegitcommit: 2f12e0d4dc2ef8e848a63bf3a9c63e07e4439cf5
+ms.openlocfilehash: bb6c2456a103782caea72baef5ac6e8df26a24a2
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35587917"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793081"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -34,13 +34,13 @@ Vedere la [Panoramica dei report](https://support.office.com/article/0d6dfb17-85
 Questo report, insieme agli altri report di Skype for business, fornisce informazioni dettagliate sull'attività, incluso l'uso delle chiamate nell'organizzazione. Questi dettagli sono molto utili per l'analisi, la pianificazione e l'esecuzione di altre decisioni aziendali per l'organizzazione e per la configurazione dei crediti per le [comunicazioni](/microsoftteams/what-are-communications-credits)
   
 > [!NOTE]
-> I report sono disponibili quando si accede a Skype for Business come amministratore dall'interfaccia di amministrazione di Office 365. 
+> È possibile visualizzare tutti i report di Skype for business quando si accede come amministratore all'interfaccia di amministrazione di Microsoft 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-pstn-usage-details-report"></a>Come ottenere i report di utilizzo PSTN di Skype for Business
 
 ![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
-- Accedere all'interfaccia di amministrazione di **Office 365** > **** > per gli amministratori dell'interfaccia di amministrazione di**Skype for business** > per i**report** > di**utilizzo PSTN**.
+- Accedere all'interfaccia di amministrazione > **** > interfaccia di amministrazione di**Skype for business** > per l'interfaccia di amministrazione**segnala** > **i dettagli sull'utilizzo PSTN**.
     
     > [!NOTE]
     > In base all'abbonamento a Office 365 di cui si dispone, alcuni dei prodotti e report illustrati in questo articolo potrebbero non essere disponibili. 
@@ -127,7 +127,7 @@ Questo è l'aspetto del report.
 - [Report Dettagli sessione di Skype for business](session-details-report.md) È possibile visualizzare i dettagli sulle singole esperienze delle chiamate degli utenti.
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
   
   
  

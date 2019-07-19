@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: "Questo report, insieme ad altri report di Skype for business, fornisce informazioni dettagliate sull'attività, incluso l'utilizzo PSTN nell'organizzazione. "
-ms.openlocfilehash: 77ce7a5ff05c4302be875a16519c2dc1a3a994de
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: 95269dc08806ab09a44f47153748d45a63fedbc2
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34494006"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793015"
 ---
 # <a name="users-blocked-report"></a>Report utenti bloccati
 
@@ -32,13 +32,13 @@ Il nuovo dashboard **report** di Skype for business Mostra la panoramica delle a
  Vedere la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per altri report disponibili.
   
 > [!NOTE]
-> È possibile visualizzare tutti i report di Skype for business quando si accede come amministratore all'interfaccia di amministrazione di Office 365. 
+> È possibile visualizzare tutti i report di Skype for business quando si accede come amministratore all'interfaccia di amministrazione di Microsoft 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-users-blocked-report"></a>Come ottenere il report bloccati degli utenti di Skype for business
 
 ![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
-- Accedere all'interfaccia di amministrazione di **Office 365** > **** > per gli amministratori dell'interfaccia di amministrazione di**Skype for business** > **segnala** > **gli utenti bloccati**.
+- Accedere all'interfaccia di amministrazione > **** > interfaccia di amministrazione di**Skype for business** > per i**report** > **degli utenti bloccati**.
     
 ## <a name="interpret-the-skype-for-business-users-blocked-report"></a>Interpretare il report degli utenti di Skype for business bloccati
 
@@ -85,7 +85,7 @@ Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e 
 - [Report Dettagli sessione di Skype for business](session-details-report.md) È possibile visualizzare i dettagli sulle singole esperienze delle chiamate degli utenti.
    
 ## <a name="related-topics"></a>Argomenti correlati
-[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
   
  

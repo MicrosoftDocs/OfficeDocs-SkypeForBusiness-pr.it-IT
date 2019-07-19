@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: La nuova area report dell'interfaccia di amministrazione di Skype for business Mostra la chiamata e l'attività di conferenza audio nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile usare il report pool di minuti PSTN di Skype for business per visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
-ms.openlocfilehash: bfbc21453732d338c4d0cf6355903df344c826f4
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: 8d7441f74600557ac93051daf206af3f1f1842f9
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34494016"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793091"
 ---
 # <a name="pstn-minute-pools-report"></a>Report pool minuti PSTN
 
@@ -37,13 +37,13 @@ Vedere la [Panoramica dei report](https://support.office.com/article/0d6dfb17-85
 Questo report, insieme agli altri report di Skype for business, fornisce informazioni dettagliate sulle attività in tutta l'organizzazione. Questi dettagli sono molto utili quando si esaminano, progettano e prendono le altre decisioni aziendali per la propria organizzazione e per la configurazione dei crediti per le [comunicazioni](/microsoftteams/what-are-communications-credits)
   
 > [!NOTE]
-> I report sono disponibili quando si accede a Skype for Business come amministratore dall'interfaccia di amministrazione di Office 365. 
+> È possibile visualizzare tutti i report di Skype for business quando si accede come amministratore all'interfaccia di amministrazione di Microsoft 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-pstn-minute-pools-report"></a>Come ottenere il report dei pool di minuti PSTN di Skype for business
 
 ![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
-- Accedere all'interfaccia di amministrazione di **Office 365** > **** > per l'interfaccia di amministrazione di**Skype for business** > **segnala** > i**pool di minuti PSTN**.
+- Accedere all'interfaccia di amministrazione > **** > interfaccia di amministrazione di**Skype for business** > per i**report** > di**pool di minuti PSTN**.
     
 > [!NOTE]
 > A seconda dell'abbonamento a Office 365, potresti non vedere tutti gli stessi dettagli visualizzati qui. 
@@ -62,7 +62,7 @@ Questo è l'aspetto del report.
 ![Numero 1](../images/sfbcallout1.png)<br/>La tabella mostra una ripartizione dei pool di minuti in base alla licenza (funzionalità) e alla posizione di utilizzo. 
 *    **Funzionalità** è il piano di licenza/servizio usato per la chiamata. I piani di licenza/servizio che potrebbero essere visualizzati in questo report includono:
      * MCOPSTN1-piano per chiamate nazionali (3000-minuti US/1200-minute EU plans
-     * MCOPSTN2-piano nazionale di chiamate internazionali & da cui si vedrà una piscina nazionale (3000 minuti Stati Uniti/Canada/PR, 1200 minuti in paesi europei) e un pool internazionale (600 minuti). Viene raggiunto il limite di minuti ogni volta che viene raggiunto il limite nazionale o internazionale entro il mese del calendario. 
+     * MCOPSTN2-nazionale & piano di chiamate internazionali da cui si vedrà un pool nazionale (3000-minuti Stati Uniti/Canada/PR, 1200 minuti paesi europei) e un pool internazionale (600 minuti). Viene raggiunto il limite di minuti ogni volta che viene raggiunto il limite nazionale o internazionale entro il mese del calendario. 
      * MCOPSTN5-piano per chiamate nazionali (piano per chiamate di 120-minute)
      * MCOPSTN6-piano per chiamate nazionali (piano per chiamate di 240-minute)
      * MCOMEETADD-audioconferenza
@@ -93,7 +93,7 @@ Questo è l'aspetto del report.
 - [Report Dettagli sessione di Skype for business](session-details-report.md) È possibile visualizzare i dettagli sulle singole esperienze delle chiamate degli utenti.
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
   
    

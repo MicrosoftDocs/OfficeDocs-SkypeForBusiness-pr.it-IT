@@ -19,12 +19,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Activity reports, what it contains, and how to interpret the data. '
-ms.openlocfilehash: df46f6a8fa029936911d8cafd463e683d25b4551
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 05e3c61a144fb962cfb6c7aca83f2996db17370a
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34298019"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793245"
 ---
 # <a name="activity-report"></a>Report attività
 
@@ -35,11 +35,11 @@ Per altre informazioni, vedere [Panoramica dei report](https://support.office.co
 Questo report, insieme agli altri report di Skype for business, fornisce informazioni dettagliate sulle attività in tutta l'organizzazione. Questi dettagli sono molto utili per indagare, pianificare e prendere altre decisioni aziendali per l'organizzazione.
   
 > [!NOTE]
-> È possibile visualizzare tutti i report di Skype for business quando si accede come amministratore nell'interfaccia di amministrazione di Office 365. 
+> È possibile visualizzare tutti i report di Skype for business quando si accede come amministratore nell'interfaccia di amministrazione di Microsoft 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-activity-report"></a>Come ottenere il report attività in Skype for Business
 
-1. Accedere all'**uso**di**report** > dell'interfaccia di **Amministrazione** > di Office 365.
+1. Accedere all'interfaccia di amministrazione > **segnala** > l'**utilizzo**.
     
 2. Nella pagina **uso** fare clic su **attività Skype for business** nell' **elenco Seleziona un report** a sinistra oppure fare clic sul widget **attività di Skype for business** .
     
@@ -94,7 +94,7 @@ La tabella mostra una ripartizione di tutte le attività di conferenza per ogni 
 * **Conferenze frequentate** mostra il numero totale di conferenze a cui ha partecipato questo utente.
 * **Prodotto assegnato** si riferisce ai prodotti di Office 365 assegnati all'utente.<br/>
 
-Se i criteri dell'organizzazione impediscono di visualizzare i report in cui le informazioni utente sono identificabili, è possibile modificare l'impostazione di privacy per tutti questi report. Per visualizzare i **dettagli degli utenti** , vedere la sezione report nell' [area report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
+Se i criteri dell'organizzazione impediscono di visualizzare i report in cui le informazioni utente sono identificabili, è possibile modificare l'impostazione di privacy per tutti questi report. Per visualizzare i **dettagli degli utenti** , vedere la sezione report nei [report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
 ***
 ![Numero 8](../images/sfbcallout8.png)<br/>
 Toccare o fare clic sull'icona **colonne** in una delle colonne per aggiungere o rimuovere colonne dal report.           <br/> ![Skype for Business Online Reporting Manage Button.](../images/4c8f5387-cebb-4d6c-b7d3-05c954a2c234.png)
@@ -120,7 +120,7 @@ Toccare o fare clic sull'icona **colonne** in una delle colonne per aggiungere o
 
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
   
  

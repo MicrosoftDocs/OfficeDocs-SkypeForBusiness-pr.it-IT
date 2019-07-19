@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: Puoi consentire agli utenti di Skype for business di usare lo strumento di feedback delle app Skype for business predefinito per consentire agli utenti di segnalare problemi e inviare commenti e suggerimenti direttamente a Microsoft sulle loro esperienze.
-ms.openlocfilehash: a15ef9f8c29b98dc4012800716380e6979d2874e
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: d7d80110be63b60fcfa1581c806d01ab0f056077
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35221815"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792668"
 ---
 # <a name="turn-on-or-off-skype-for-business-client-feedback-reporting"></a>Attivare o disattivare i report di feedback client di Skype for Business
 
@@ -87,7 +87,7 @@ Per abilitare la segnalazione di feedback per gli utenti dell'organizzazione e c
     
   - [Sei motivi per cui potresti voler usare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Office 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
+- Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo usando l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
     
   - [Gestire Office 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
     

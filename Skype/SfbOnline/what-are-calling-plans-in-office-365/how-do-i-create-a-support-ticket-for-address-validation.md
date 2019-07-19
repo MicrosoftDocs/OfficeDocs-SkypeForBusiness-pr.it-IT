@@ -20,12 +20,12 @@ f1keywords: ms.lync.lac.CivicAddressValidationOpenSupportTicket
 ms.custom:
 - Calling Plans
 description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: fd3544c287dca28c1ab0408ee58209d8f9e8a7b6
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 4cd11e97978ea0439fd918f4e6c2e854a822e908
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34305424"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793335"
 ---
 # <a name="how-do-i-create-a-support-ticket-for-address-validation"></a>Come faccio a creare un ticket di supporto per la convalida dell'indirizzo?
 
@@ -36,7 +36,7 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
 
 
 ## <a name="for-organizations-150-or-less-follow-these-steps"></a>Per le organizzazioni da 150 persone o meno segui questi passaggi
-1. Nell'**interfaccia di amministrazione di Office 365**, scegli **Serve aiuto**?
+1. Nell'interfaccia di amministrazione scegliere **serve assistenza**?
 2. Nel riquadro **Serve aiuto?**, comunicaci di cosa hai bisogno, quindi scegli **Richiedi assistenza**.
 3. Se i risultati nella sezione **Mostra soluzioni** non sono d'aiuto, scegli una delle seguenti opzioni:
     - **Contattaci (consigliato)**: conferma il tuo numero di contatto, quindi premi **Chiamatemi**. Il tempo di attesa previsto per la chiamata è indicato nel riquadro **Serve aiuto?**.
@@ -46,7 +46,7 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
 
 1. Accedi a Office 365 come amministratore usando l'account aziendale o dell'istituto di istruzione.
     
-2. Nell'interfaccia di amministrazione di Office 365 fai clic su **Assistenza** > **Nuova richiesta di servizio**.
+2. Nell'interfaccia di amministrazione, nella barra di spostamento sinistra, fare clic su **supporta** > **nuova richiesta di servizio**.
     
 3. In **Richieste di servizio** fai clic su **Aggiungi**.
     
@@ -96,7 +96,7 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
 8. Controlla le informazioni e quindi fai clic su **Invia ticket**.
     
 > [!TIP]
-> Il numero di riferimento sarà elencato nella pagina **Richieste di servizio** nell'interfaccia di amministrazione di Office 365.
+> Il numero di riferimento verrà elencato nella pagina **richieste di servizio** nell'interfaccia di amministrazione di Microsoft 365.
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)

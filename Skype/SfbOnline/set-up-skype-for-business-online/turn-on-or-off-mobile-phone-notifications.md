@@ -19,12 +19,12 @@ f1keywords:
 ms.custom:
 - Setup
 description: Informazioni su come attivare o disattivare le notifiche per i telefoni cellulari, in modo che gli utenti possano ricevere avvisi su messaggi istantanei in arrivo, segreteria telefonica e messaggistica istantanea.
-ms.openlocfilehash: 0864fbac9aa4d576cc5c69a405077739a818209c
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: 6bd762c12a9945c6eaf7c103f3e19502e58840b3
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34494054"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792126"
 ---
 # <a name="turn-on-or-off-mobile-phone-notifications"></a>Attivare o disattivare le notifiche per cellulari
 
@@ -39,7 +39,7 @@ Su telefoni Android e Windows, le notifiche di Skype for business compaiono in t
 
 1. Accedere a Office 365.
     
-2. Passa all' **interfaccia di amministrazione di Office 365** > **Skype for Business**.
+2. Accedere all'interfaccia di amministrazione > **Skype for business**.
     
 3. Accedere a **organizzazione** > **generale**. 
     

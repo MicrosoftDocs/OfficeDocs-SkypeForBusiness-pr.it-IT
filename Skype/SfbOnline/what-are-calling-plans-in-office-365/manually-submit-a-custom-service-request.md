@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: 'Learn the steps you need to do to submit a port order request when you have more than 999 phone numbers to Skype for Business. '
-ms.openlocfilehash: 84160b877ffa8420ea41e804d02ad5828e55ad8a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 498f69070e7dfed8d367effd83715fa3ee8001cd
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34293784"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793355"
 ---
 # <a name="manually-submit-a-custom-service-request"></a>Inviare manualmente una richiesta di servizio
 
@@ -38,7 +38,7 @@ In alcuni paesi/aree geografiche è anche necessario inviare manualmente una ric
 ## <a name="if-you-need-to-create-and-submit-a-service-request-follow-these-steps"></a>Se è necessario creare e inviare una richiesta di servizio, eseguire le operazioni seguenti:
 
 ## <a name="for-organizations-150-or-less-follow-these-steps"></a>Per le organizzazioni da 150 persone o meno segui questi passaggi
-1. Nell'**interfaccia di amministrazione di Office 365**, scegli **Serve aiuto**?
+1. Nell'interfaccia di amministrazione scegliere **serve assistenza**?
 2. Nel riquadro **Serve aiuto?**, comunicaci di cosa hai bisogno, quindi scegli **Richiedi assistenza**.
 3. Se i risultati nella sezione **Mostra soluzioni** non sono d'aiuto, scegli una delle seguenti opzioni:
     - **Contattaci (consigliato)**: conferma il tuo numero di contatto, quindi premi **Chiamatemi**. Il tempo di attesa previsto per la chiamata è indicato nel riquadro **Serve aiuto?**.
@@ -46,9 +46,9 @@ In alcuni paesi/aree geografiche è anche necessario inviare manualmente una ric
 
 ### <a name="for-organizations-with-more-than-150-users-follow-these-steps-to-create-a-service-request"></a>Per le organizzazioni con più di 150 utenti, seguire questa procedura per creare una richiesta di servizio:
 
-1. Accedi a Office 365 come amministratore usando l'account aziendale o dell'istituto di istruzione.
+1. Accedere a Office 365 come amministratore usando l'account aziendale o dell'istituto di istruzione.
     
-2. Nell'interfaccia di amministrazione di Office 365 fai clic su **Assistenza** > **Nuova richiesta di servizio**.
+2. Nell'interfaccia di amministrazione, nella barra di spostamento sinistra, fare clic su **supporta** > **nuova richiesta di servizio**.
     
 3. In **Richieste di servizio** fai clic su **Aggiungi**.
     
@@ -98,7 +98,7 @@ In alcuni paesi/aree geografiche è anche necessario inviare manualmente una ric
 8. Controlla le informazioni e quindi fai clic su **Invia ticket**.
     
 > [!TIP]
-> Il numero di riferimento sarà elencato nella pagina **Richieste di servizio** nell'interfaccia di amministrazione di Office 365.
+> Il numero di riferimento verrà elencato nella pagina **richieste di servizio** nell'interfaccia di amministrazione di Microsoft 365.
   
 ## <a name="what-else-should-you-know-about-number-porting"></a>Quali sono le altre informazioni utili sulla portabilità del numero?
 

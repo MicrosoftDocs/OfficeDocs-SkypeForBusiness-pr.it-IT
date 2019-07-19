@@ -18,13 +18,13 @@ f1keywords:
 - O365E_ReportsS4BClients
 ms.custom:
 - Reporting
-description: "[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report sull'uso del dispositivo Skype for business per vedere i dispositivi, inclusi i sistemi operativi basati su Windows e i dispositivi mobili, che hanno installato l'app Skype for business e lo usano per la messaggistica istantanea e le riunioni. Per altre informazioni, vedere report attività nell'interfaccia di amministrazione di Office 365."
-ms.openlocfilehash: aa96fc36e2efd5574bc363b8a199007a60060338
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+description: "[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report sull'uso del dispositivo Skype for business per vedere i dispositivi, inclusi i sistemi operativi basati su Windows e i dispositivi mobili, che hanno installato l'app Skype for business e lo usano per la messaggistica istantanea e le riunioni. Per altre informazioni, vedere report attività nell'interfaccia di amministrazione."
+ms.openlocfilehash: e5fade6e28c935a8ff454afc47d77cc691372d83
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34280774"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793121"
 ---
 # <a name="device-usage-report"></a>Report utilizzo dispositivo
 
@@ -35,11 +35,11 @@ Per altre informazioni, vedere [Panoramica dei report](https://support.office.co
 Questo report, insieme agli altri report di Skype for business, fornisce informazioni dettagliate sui tipi di client/dispositivi usati nell'organizzazione. Questi dettagli sono molto utili per indagare, pianificare e prendere altre decisioni aziendali per l'organizzazione.
   
 > [!NOTE]
-> I report sono disponibili quando si accede a Skype for Business come amministratore dall'interfaccia di amministrazione di Office 365. 
+> È possibile visualizzare tutti i report di Skype for business quando si accede come amministratore all'interfaccia di amministrazione di Microsoft 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-device-usage-report"></a>Come ottenere il report sull'utilizzo del dispositivo Skype for business
 
-1. Accedere all'**uso**di**report** > dell'interfaccia di **Amministrazione** > di Office 365.
+1. Accedere all'interfaccia di amministrazione > **segnala** > l'**utilizzo**.
     
 2. Nella pagina **uso** fare clic su **utilizzo del dispositivo Skype for business** nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **uso del dispositivo Skype for business** nell'elenco **attività di Skype for business** .
     
@@ -84,7 +84,7 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 *    **iPhone** è selezionato se l'utente ha installato l'app client Skype for business su un iPhone e lo usa. 
 *    l' **iPad** è selezionato se l'utente ha installato l'app client Skype for business su un iPad e la USA. 
 
-Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **come si nascondono i dettagli del livello utente** nell' [area report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263). 
+Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **come si nascondono i dettagli del livello utente?** nei [report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263). 
 ***
 ![Numero 8](../images/sfbcallout8.png)<br/>Toccare o fare clic sull'icona **colonne** in una delle colonne per aggiungere o rimuovere colonne dal report.           <br/> ![Skype for Business Online Reporting Manage Button.](../images/4c8f5387-cebb-4d6c-b7d3-05c954a2c234.png)
 ***
@@ -109,7 +109,7 @@ Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cu
 - [Report Dettagli sessione di Skype for business](session-details-report.md) È possibile visualizzare i dettagli sulle singole esperienze delle chiamate degli utenti.
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Report attività nell'interfaccia di amministrazione di Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
   
  

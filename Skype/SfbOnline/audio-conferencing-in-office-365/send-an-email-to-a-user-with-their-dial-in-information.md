@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Inviare agli utenti un messaggio di posta elettronica con le loro informazioni di audioconferenza su Skype for Business online.
-ms.openlocfilehash: 14c8bc3eb246cf4ab6ffa0d823ec53fbdc78d189
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: cf1555f572c4c8f4e6c11e87315f2fdfcac22cd8
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34302098"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792269"
 ---
 # <a name="send-an-email-to-a-user-with-their-audio-conferencing-information-in-skype-for-business-online"></a>Inviare un messaggio di posta elettronica a un utente con le informazioni relative ai servizi di audioconferenza in Skype for business online
 
@@ -56,7 +56,7 @@ Ecco un esempio di messaggio di posta elettronica inviato:
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Accedere all'interfaccia **di amministrazione** > di Office 365**Skype for business**e, nella barra di spostamento sinistra, fare clic su **audioconferenza**.
+2. Accedere all'interfaccia di amministrazione > **Skype for business**e, nella barra di spostamento sinistra, fare clic su **audioconferenza**.
     
 3. Fare clic su **utenti**e quindi selezionare l'utente.
     
@@ -110,7 +110,7 @@ Ecco un esempio di messaggio di posta elettronica inviato:
     
   - [Modi migliori per gestire Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-- Rispetto all'utilizzo dell'interfaccia di amministrazione di Office 365, Windows PowerShell presenta molti vantaggi in termini di rapidità, semplicità e produttività, ad esempio quando modifichi contemporaneamente le impostazioni di molti utenti. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
+- Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo con l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Learn about these advantages in the following topics: 
     
   - [Introduzione a Windows Powershell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     

@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Scopri cosa devi sapere sui pin e come reimpostarli in Skype for business online. '
-ms.openlocfilehash: 11fafd6d79236fdddf3f73f384e9c339a5a775fc
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ca2bbef02b0c6ecdefef700ca316188f5c544070
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34299087"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792279"
 ---
 # <a name="reset-the-audio-conferencing-pin-in-skype-for-business-online"></a>Reimpostare il PIN per la conferenza audio in Skype for business online
 
@@ -40,7 +40,7 @@ Meetings can be started when an authenticated user joins using the Skype for Bus
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Accedere all'interfaccia **di amministrazione** > di Office 365**Skype for business**e, nella barra di spostamento sinistra, fare clic su **audioconferenza**.
+2. Accedere all'interfaccia di amministrazione > **Skype for business**e, nella barra di spostamento sinistra, fare clic su **audioconferenza**.
     
 3. Fare clic su **utenti**, selezionare l'utente per cui si vuole reimpostare il PIN.
     
@@ -91,7 +91,7 @@ A user can reset a PIN by using the **Reset PIN** option on the **Dial-in Confer
     
   - [Modi migliori per gestire Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-- Rispetto all'utilizzo dell'interfaccia di amministrazione di Office 365, Windows PowerShell presenta molti vantaggi in termini di rapidità, semplicità e produttività, ad esempio quando modifichi contemporaneamente le impostazioni di molti utenti. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+- Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo con l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Learn about these advantages in the following topics:
     
   - [Introduzione a Windows Powershell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     

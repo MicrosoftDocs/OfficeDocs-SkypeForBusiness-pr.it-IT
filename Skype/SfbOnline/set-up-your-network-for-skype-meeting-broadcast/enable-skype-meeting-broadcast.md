@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, è necessario abilitarlo. A questo scopo, devi sapere come usare Windows PowerShell. Se non si conosce Windows PowerShell, è consigliabile assumere un partner Microsoft per eseguire questo passaggio.
-ms.openlocfilehash: 6b68931bbedc80bcd8209e366de8201e4b93c98d
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: 1d96ce1bb234ee319af2eeb11442fc15736b8f54
+ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35221643"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35793235"
 ---
 # <a name="enable-skype-meeting-broadcast"></a>Abilitare Skype Meeting Broadcast
 
@@ -36,7 +36,7 @@ Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, 
 
 1. Accedere con l'account di amministratore globale di Office 365 o con l'account di [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)amministratore di Skype for business.
     
-2. Nell'interfaccia di amministrazione di Office 365 accedere a **** > **Teams**di interfaccia di amministrazione.
+2. Nell'interfaccia di amministrazione accedere a teams di interfaccia di **Amministrazione** > ****.
     
 3. Nell'interfaccia **di amministrazione**di teams, passa a**riunioni broadcast** **legacy Portal** > **online** > e quindi seleziona **Abilita Skype meeting broadcast**.
     
