@@ -1,0 +1,85 @@
+---
+title: "Lync Server 2013: gestione della Federazione e dell'accesso esterno a Skype for Business Server"
+ms.reviewer: ''
+ms:assetid: 26f806c1-f284-4637-b06b-06270336c540
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg520966(v=OCS.15)
+ms:contentKeyID: 48183665
+mtps_version: v=OCS.15
+ms.author: v-lanac
+author: lanachin
+manager: serdars
+audience: ITPro
+ms.topic: article
+ms.prod: skype-for-business-itpro
+localization_priority: Normal
+description: Puoi abilitare e configurare l'accesso degli utenti esterni per controllare se gli utenti esterni supportati possono collaborare con gli utenti di Skype for Business Server interni.
+ms.openlocfilehash: 555fa5ca08a707f09c9e33d8b98294b7bb584046
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "36188810"
+---
+# <a name="managing-federation-and-external-access-to-skype-for-business-server"></a>Gestione della Federazione e dell'accesso esterno a Skype for Business Server
+
+La distribuzione di un Edge Server o di un pool di Edge è il primo passo per supportare utenti esterni. Per informazioni dettagliate sulla distribuzione di Edge Server, vedere [distribuire Edge Server in Skype for Business Server](../../deploy/deploy-edge-server/deploy-edge-server.md).
+
+Dopo l'installazione e la configurazione della distribuzione interna di Skype for Business Server, gli utenti interni dell'organizzazione possono collaborare con altri utenti interni che dispongono di account SIP in servizi di dominio Active Directory. La collaborazione può includere l'invio e la ricezione di messaggi istantanei e l'aggiornamento dello stato presenza e la partecipazione a conferenze (note anche come "riunioni"). Puoi abilitare e configurare l'accesso degli utenti esterni per controllare se gli utenti esterni supportati possono collaborare con gli utenti di Skype for Business Server interni. Gli utenti esterni possono includere utenti remoti della distribuzione, utenti federati (inclusi gli utenti supportati di provider di servizi di messaggistica istantanea pubblici) e partecipanti anonimi alle conferenze.
+
+Se la distribuzione include l'installazione di un server Edge di Skype for Business Server o di un pool di Edge, l'ambito dei possibili tipi di comunicazione è notevolmente ampliato con una serie di opzioni per l'accesso degli utenti esterni, la comunicazione con i membri di altri federati SIP domini e provider federati SIP. Dopo aver configurato il server perimetrale o il pool di Edge, è possibile abilitare i tipi di accesso utente esterno che si desidera specificare e configurare i criteri per il controllo dell'accesso esterno. In Skype for Business Server è possibile abilitare e configurare l'accesso e i criteri degli utenti esterni usando il pannello di controllo di Skype for Business Server, [Skype for Business Server Management Shell](../management-shell.md)o entrambi, in base ai requisiti di attività. 
+
+
+
+> [!IMPORTANT]  
+> Quando si progetta la configurazione e i criteri per l'accesso degli utenti esterni, è necessario comprendere la precedenza dei criteri e il modo in cui vengono applicati i criteri. Le impostazioni dei criteri di Skype for Business Server applicate a un livello di criteri possono eseguire l'override delle impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è: criteri utente (la maggior parte delle influenze) esegue l'override di un criterio del sito e quindi un criterio del sito sostituisce un criterio globale (almeno l'influenza). Ciò significa che l'impostazione del criterio è più vicina all'oggetto che il criterio sta influenzando, più influenza ha sull'oggetto.
+
+
+Per impostazione predefinita, nessun criterio è configurato per supportare l'accesso degli utenti esterni, incluso l'accesso degli utenti remoti, l'accesso degli utenti federati, anche se è già stato abilitato il supporto per l'accesso degli utenti esterni per l'organizzazione. Per controllare l'uso dell'accesso degli utenti esterni, è necessario configurare uno o più criteri, specificando il tipo di accesso utente esterno supportato per ogni criterio. Sono inclusi i seguenti criteri di accesso esterno:
+
+  - **Criteri globali il**   criterio globale viene creato quando si distribuisce un server perimetrale. Per impostazione predefinita, nel criterio globale non sono abilitate le opzioni di accesso degli utenti esterni. Per supportare l'accesso degli utenti esterni a livello globale, è possibile configurare il criterio globale per supportare uno o più tipi di opzioni di accesso degli utenti esterni. Il criterio globale si applica a tutti gli utenti dell'organizzazione, ma i criteri del sito e i criteri degli utenti eseguono l'override del criterio globale. Se elimini il criterio globale, non lo Rimuovi. Puoi invece reimpostarla sull'impostazione predefinita.
+
+  - **Criteri sito è**   possibile creare e configurare uno o più criteri del sito per limitare il supporto per l'accesso degli utenti esterni a siti specifici. La configurazione dei criteri sito ha la precedenza sui criteri globali, ma solo per il sito specifico a cui i criteri si riferiscono. Ad esempio, se si Abilita l'accesso degli utenti remoti nel criterio globale, è possibile specificare un criterio per il sito che disabilita l'accesso degli utenti remoti per un sito specifico. Per impostazione predefinita, un criterio del sito viene applicato a tutti gli utenti del sito, ma è possibile assegnare un criterio utente a un utente per ignorare l'impostazione dei criteri del sito.
+
+  - **Criteri**   per gli utenti è possibile creare e configurare uno o più criteri utente per limitare il supporto per l'accesso degli utenti remoti a un utente specifico. La configurazione nel criterio utente sostituisce il criterio globale e del sito, ma solo per gli utenti specifici a cui è assegnato il criterio utente. Ad esempio, se si Abilita l'accesso degli utenti remoti nei criteri globali e nei criteri del sito, è possibile specificare un criterio utente che disabilita l'accesso degli utenti remoti e quindi assegnare i criteri utente a utenti specifici. Se crei un criterio utente, devi applicarlo a uno o più utenti prima che abbia effetto.
+
+Per determinare le impostazioni di configurazione e i criteri necessari per la creazione o la modifica, vedere i punti decisionali seguenti:
+
+**Si vuole consentire agli utenti interni ed esterni del proprio dominio di collaborare usando la messaggistica istantanea, le conferenze Web e l'audio/video?**
+
+Configurare le impostazioni come descritto negli argomenti [configurare i criteri per controllare l'accesso remoto agli utenti](external-access-policies/configure-policies-to-control-remote-user-access.md)e [abilitare o disabilitare la connettività di messaggistica istantanea pubblica](access-edge/enable-or-disable-federation-and-public-im-connectivity.md)e della Federazione.
+
+**Si vuole consentire agli utenti anonimi di partecipare ed essere invitati a conferenze ospitate dagli utenti nella distribuzione?**
+
+Configurare le impostazioni come descritto in dettaglio nell'argomento [assegnare criteri di conferenza per supportare utenti anonimi](access-edge/assign-conferencing-policies-to-support-anonymous-users.md) e [creare criteri di conferenza](../conferencing/create-policies.md).
+
+**Si vuole consentire agli utenti di comunicare con i contatti di dominio federato SIP?**
+
+Configurare le impostazioni come descritto in dettaglio negli argomenti [configurare i criteri per controllare l'accesso degli utenti federati](external-access-policies/configure-policies-to-control-federated-user-access.md), [abilitare o disabilitare la connettività della Federazione e della messaggistica istantanea pubblica](access-edge/enable-or-disable-federation-and-public-im-connectivity.md)e [gestire i domini federati SIP per l'organizzazione](sip-domains/manage-sip-federated-domains-for-your-organization.md).
+
+
+**Se è stata abilitata la comunicazione con i domini federati SIP, si vuole abilitare l'individuazione automatica della Federazione SIP?**
+
+Configurare le impostazioni come descritto nell'argomento [abilitare o disabilitare l'individuazione dei partner federativi](access-edge/enable-or-disable-discovery-of-federation-partners.md).
+
+**Se è stata abilitata la comunicazione con i domini federativi SIP, si vuole abilitare l'invio di una dichiarazione di non responsabilità ai contatti federati che informa che si usa l'archiviazione e che le comunicazioni possono essere archiviate?**
+
+Configurare le impostazioni come descritto nell'argomento [abilitare o disabilitare l'invio di una dichiarazione di non responsabilità per l'archiviazione a partner federati](access-edge/enable-or-disable-sending-an-archiving-disclaimer-to-federated-partners.md).
+
+**Si vuole consentire agli utenti di comunicare con provider federati SIP che consentono la comunicazione con i provider pubblici?**
+
+Configurare le impostazioni come descritto in dettaglio negli argomenti [configurare i criteri per controllare l'accesso degli utenti pubblici](external-access-policies/configure-policies-to-control-public-user-access.md), [abilitare o disabilitare la connettività per la messaggistica istantanea pubblica](access-edge/enable-or-disable-federation-and-public-im-connectivity.md)e la Federazione e [creare o modificare provider federati SIP pubblici](sip-providers/manage-sip-federated-providers-for-your-organization.md#create-or-edit-public-sip-federated-providers-in-skype-for-business-server)
+
+
+**Si vuole consentire agli utenti di comunicare con provider federati SIP che sono provider ospitati che eseguono Microsoft Office 365 e Skype for business online?**
+
+Configurare le impostazioni come descritto in dettagli sugli argomenti [abilitare o disabilitare la connettività di messaggistica istantanea pubblica](access-edge/enable-or-disable-federation-and-public-im-connectivity.md) e la Federazione e [creare o modificare provider federati SIP ospitati](sip-providers/manage-sip-federated-providers-for-your-organization.md#create-or-edit-hosted-sip-federated-providers-in-skype-for-business-server).
+
+**La distribuzione è configurata in un dominio diviso (noto anche come ibrido), in cui alcuni utenti hanno il proprio server principale in una distribuzione locale e altri utenti sono configurati con un server principale in un ambiente online?**
+
+Configurare le impostazioni come descritto in dettaglio negli argomenti [configurare i criteri per controllare l'accesso degli utenti federati](external-access-policies/configure-policies-to-control-federated-user-access.md), [abilitare o disabilitare la connettività della Federazione e della messaggistica istantanea pubblica](access-edge/enable-or-disable-federation-and-public-im-connectivity.md)e [creare o modificare provider federati SIP ospitati](sip-providers/manage-sip-federated-providers-for-your-organization.md#create-or-edit-hosted-sip-federated-providers-in-skype-for-business-server).
+
+
+È possibile configurare le impostazioni di accesso degli utenti esterni, inclusi i criteri che si desidera utilizzare per controllare l'accesso degli utenti esterni, anche se non è stato abilitato l'accesso degli utenti esterni per l'organizzazione. Tuttavia, i criteri e le altre impostazioni configurate sono attivi solo quando si ha accesso utente esterno abilitato per l'organizzazione. Gli utenti esterni non possono comunicare con gli utenti dell'organizzazione quando l'accesso degli utenti esterni è disabilitato o se non sono configurati criteri di accesso degli utenti esterni per supportarlo.
+
+La distribuzione di Edge esegue l'autenticazione dei tipi di utenti esterni (ad eccezione degli utenti anonimi, che vengono autenticati dall'ID conferenza e da una passkey inviata al partecipante anonimo quando si crea la conferenza e si invitano i partecipanti) e i controlli Access in base alla configurazione del supporto Edge. Per controllare le comunicazioni, è possibile configurare uno o più criteri e configurare le impostazioni che definiscono in che modo gli utenti all'interno e all'esterno della distribuzione comunicano tra loro. I criteri e le impostazioni includono il criterio globale predefinito per l'accesso degli utenti esterni, oltre ai criteri per il sito e l'utente che è possibile creare e configurare per consentire uno o più tipi di accesso utente esterno per siti o utenti specifici.
+
