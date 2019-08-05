@@ -1,0 +1,121 @@
+---
+title: Configurare la licenza telefonica per l'area comune per Microsoft Teams
+ms.author: lolaj
+author: LolaJacobsen
+manager: serdars
+ms.date: 12/13/2018
+ms.reviewer: kponnus
+ms.topic: article
+ms.tgt.pltfrm: cloud
+ms.service: msteams
+search.appverid: MET150
+ms.collection:
+- Teams_ITAdmin_Help
+- M365-collaboration
+- M365-voice
+audience: Admin
+appliesto:
+- Microsoft Teams
+localization_priority: Normal
+f1keywords: None
+ms.custom:
+- Phone System
+description: "Informazioni su come configurare i telefoni per l'area comune per atri, aree di ricezione e sale conferenze "
+ms.openlocfilehash: a62399c1c7b7b27e35fdea1fc52b9531a1fa25cc
+ms.sourcegitcommit: 66213b972920b4e09faf7d7e732c4bfe7b322ac4
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "36184171"
+---
+# <a name="set-up-the-common-area-phone-license-for-microsoft-teams"></a>Configurare la licenza telefonica per l'area comune per Microsoft Teams
+> [!NOTE]
+> I telefoni delle aree comuni non supportano la segreteria telefonica.
+
+Un telefono per area comune viene in genere posizionato in un'area come una sala d'attesa o in un'altra area disponibile per molti utenti per effettuare una chiamata; ad esempio, un'area di ricezione, una sala d'attesa o un telefono per conferenze. I telefoni delle aree comuni sono configurati come dispositivi anziché utenti e possono accedere automaticamente a una rete.
+
+Nei passaggi seguenti ti aiuteremo a configurare un account per il sistema telefonico per la distribuzione dei telefoni delle aree comuni per l'organizzazione. Per un'esperienza di sala riunioni più completa, inclusi i servizi di audioconferenza, valutare l'acquisto della licenza dedicata sala riunioni con un dispositivo della sala riunioni. 
+
+La prima cosa che devi fare è acquistare una licenza per un telefono con area comune (CAP) e verificare di avere un telefono certificato. Per cercare e ottenere ulteriori informazioni sui telefoni certificati, vedere [dispositivi Microsoft teams](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1). 
+
+## <a name="step-1---buy-the-licenses"></a>Passaggio 1: acquista le licenze
+
+1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **** > **servizi di acquisto** fatturazione e quindi espandere **altri piani**.
+
+    ![Screenshot che mostra il riquadro Telefono area comune](media/set-up-common-area-phone-image1.png)
+
+2. Selezionare Acquista >  **telefono area comune****ora**.
+
+3. Nella pagina di **estrazione** fare clic su **Acquista ora**.
+
+4. Espandere **abbonamenti a componenti aggiuntivi** e quindi fare clic per acquistare un piano per le chiamate. Scegli **Piano di chiamata domestico** o **Piano di chiamata nazionale e internazionale**.
+
+> [!NOTE]
+> Non hai bisogno di una licenza per il sistema telefonico. È inclusa con la licenza per il Telefono di area comune.
+
+Per altre informazioni sulle licenze, vedere [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+
+La licenza telefonica per l'area comune supporta: 
+
+
+|   |  Telefono di area comune  |
+|---------|---------|
+|Skype for business |   &#x2714; |
+|Microsoft Teams |   &#x2714; |
+|Sistemi telefonici |    &#x2714; |
+|Audioconferenza |       &#x2718; &sup1;  |
+|Microsoft Intune |        &#x2718; &sup2; |
+|Disponibilità mondiale |    &#x2714; |
+|Disponibilità del canale |    EA, EAS, CSP, GCC, SEO, Web Direct  |
+|      |         |
+
+&sup1; I telefoni per l'area comune possono partecipare a conferenze audio tramite il numero di accesso esterno fornito dall'organizzatore della riunione
+
+&sup2; Non disponibile in nubi sovrane  
+
+
+
+## <a name="step-2---create-a-new-user-account-for-the-phone-and-assign-the-licenses"></a>Passaggio 2: crea un nuovo account utente per il telefono e assegna le licenze
+
+1. Nell'interfaccia di amministrazione di Microsoft 365, passa **** > a utenti**attivi** > gli utenti che**aggiungono un utente**.
+
+2. Immettere un nome utente come "Main" per il nome e la "ricezione" per il secondo nome.
+
+3. Immettere un nome visualizzato se non genera automaticamente uno come "ricezione principale".
+
+4. Immettere un nome utente come "MainReception" o "Mainlobby".
+
+5. Per i telefoni delle aree comuni, è possibile impostare una password manualmente o avere la stessa password per tutti i telefoni delle aree comuni. Inoltre, potresti pensare di deselezionare la casella di controllo imposta l'utente come modificarne la **password al primo accesso** .
+
+6. Assegnare le licenze all'utente. Nella stessa pagina, fai clic per espandere **Licenze di prodotto**. Attivare il telefono per l'area comune e selezionare un **piano per chiamate nazionali** o un **piano per chiamate nazionali e internazionali**. 
+
+    ![Schermata che mostra l'assegnazione delle licenze](media/set-up-common-area-phone-image2.png)
+
+Per altre informazioni, vedere [aggiungere un utente](https://docs.microsoft.com/office365/admin/add-users/add-users?redirectSourcePath=%252farticle%252f1970f7d6-03b5-442f-b385-5880b9c256ec&view=o365-worldwide).
+
+## <a name="step-3---assign-a-phone-number-to-the-common-area-phone-user-account"></a>Passaggio 3: assegna un numero di telefono all'account utente del telefono di area comune
+
+Usare l'interfaccia di amministrazione di Skype for business per assegnare un numero all'utente.
+
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare teams di **Amministrazione** > **&** > **portale legacy**Skype.
+
+2. Nell'interfaccia di amministrazione di Skype for Business seleziona **** > **numeri di telefono**vocali.
+
+3.  Seleziona un numero dall'elenco di numeri di telefono e fai clic su **Assegnare**.
+
+4. Nella casella utente vocale della pagina **assegna** Digitare il nome dell'utente che utilizzerà il telefono e quindi selezionare l'utente nell'elenco a discesa **selezionare un utente vocale** .
+
+5. Mentre sei lì, dovrai aggiungere un indirizzo di emergenza. Scegliere **Cerca**in base alla città, **ricerca per Descrizione**o **Cerca in base alla posizione** dall'elenco a discesa e quindi immettere la città, la descrizione o la posizione nella casella di testo. Una volta eseguita la ricerca, Cerca in **selezionare l'indirizzo di emergenza** per selezionarne uno giusto.
+
+6. Clicca su **Salvare** e il tuo utente dovrebbe apparire così:
+
+   ![Schermata che mostra l'assegnazione delle licenze](media/set-up-common-area-phone-image3.png)
+
+> [!NOTE]
+> Gli utenti verranno visualizzati solo se è stata applicata una licenza per il sistema telefonico. Se lo hai appena fatto, a volte ci vuole un po' perché l'utente venga visualizzato nell'elenco.
+
+Per altre informazioni, vedere [recupero di numeri di telefono per gli utenti](/microsoftteams/getting-phone-numbers-for-your-users).
+
+È anche possibile prendere il numero di telefono che si ha con un altro vettore e "porta" oppure trasferirlo in Office 365. Vedere [trasferire i numeri di telefono in Office 365](transfer-phone-numbers-to-office-365.md).
+
+
