@@ -1,0 +1,126 @@
+---
+title: Limitazioni e restrizioni di chiamata senza pedaggio
+ms.author: tonysmit
+author: tonysmit
+manager: serdars
+ms.reviewer: mikedav, roykuntz, jastark, oscarr
+ms.topic: reference
+ms.assetid: 6b8d5ddb-59c1-4ee7-b171-18e5ace2dcd6
+ms.tgt.pltfrm: cloud
+ms.service: msteams
+search.appverid: MET150
+ms.collection:
+- Teams_ITAdmin_Help
+- M365-voice
+audience: Admin
+appliesto:
+- Skype for Business
+- Microsoft Teams
+localization_priority: Normal
+f1keywords: None
+ms.custom:
+- Calling Plans
+- Strat_SB_PSTN
+description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
+ms.openlocfilehash: 8cba8dc9fffbe843f715445649a78d8a02fba4db
+ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "36182722"
+---
+# <a name="toll-free-dialing-limitations-and-restrictions"></a><span data-ttu-id="d42ab-105">Limitazioni e restrizioni di chiamata senza pedaggio</span><span class="sxs-lookup"><span data-stu-id="d42ab-105">Toll-free dialing limitations and restrictions</span></span>
+
+<span data-ttu-id="d42ab-106">Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese o area geografica.</span><span class="sxs-lookup"><span data-stu-id="d42ab-106">This will help you find out how to dial toll free numbers in each country or region.</span></span> <span data-ttu-id="d42ab-107">Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina che contiene la posizione in cui è disponibile il servizio a pagamento gratuito, inclusi dettagli, restrizioni e limiti specifici.</span><span class="sxs-lookup"><span data-stu-id="d42ab-107">After you select the country/region, it will take you to a page that contains where toll free service is available including specific details, restrictions, and limits.</span></span> <span data-ttu-id="d42ab-108">Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.</span><span class="sxs-lookup"><span data-stu-id="d42ab-108">The dialing format or formats will show you the required access codes within each country/region to dial the toll-free number.</span></span>
+  
+<span data-ttu-id="d42ab-109">Se si è pronti, selezionare un paese o un'area geografica:</span><span class="sxs-lookup"><span data-stu-id="d42ab-109">If you're ready, select a country or region:</span></span>
+  
+## <a name="select-your-country-or-region-to-see-the-dialing-codes-limitations-and-restrictions"></a><span data-ttu-id="d42ab-110">Selezionare il paese o l'area geografica per visualizzare i codici di chiamata, le limitazioni e le restrizioni.</span><span class="sxs-lookup"><span data-stu-id="d42ab-110">Select your country or region to see the dialing codes, limitations and restrictions.</span></span>
+
+> [!div class="op_single_selector"]    
+> - [Argentina](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-argentina.md)
+> - [Australia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-australia.md)
+> - [Bielorussia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-belarus.md)
+> - [Belgio](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-belgium.md)
+> - [Belize](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-belize.md)
+> - [Bosnia ed Herzegovina](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-bosnia-and-herzegovina.md)
+> - [Brasile](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-brazil.md)
+> - [Brunei](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-brunei.md)
+> - [Bulgaria](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-bulgaria.md)
+> - [Cile](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-chile.md)
+> - [Cina (settentrionale)](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-chinanorth-10-800-714-xxxx-range.md)
+> - [Cina (meridionale)](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-chinasouth-10-800-140-xxxx-range.md)
+> - [Colombia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-columbia.md)
+> - [Croazia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-croatia.md)
+> - [Cipro](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-cyprus.md)
+> - [Danimarca](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-denmark.md)
+> - [Ecuador](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-ecuador.md)
+> - [Egitto](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-egypt.md)
+> - [Estonia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-estonia.md)
+> - [Finlandia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-finland.md)
+> - [Francia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-france.md)
+> - [Germania](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-germany.md)
+> - [Honduras](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-honduras.md)
+> - [Hong Kong - R.A.S.](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-hong-kong.md)
+> - [Ungheria](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-hungary.md)
+> - [India](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-india.md)
+> - [Indonesia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-indonesia.md)
+> - [Irlanda](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-ireland.md)
+> - [Israele](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-israel.md)
+> - [Giappone](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-japan.md)
+> - [Kenya](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-kenya.md)
+> - [Lussemburgo](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-luxembourg.md)
+> - [Malaysia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-malaysia.md)
+> - [Messico](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-mexico.md)
+> - [Moldova](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-moldova.md)
+> - [Monaco](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-monaco.md)
+> - [Paesi Bassi](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-the-netherlands.md)
+> - [Panama](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-panama.md)
+> - [Paraguay](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-paraguay.md)
+> - [Perù](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-peru.md)
+> - [Filippine](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-the-philippines.md)
+> - [Polonia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-poland.md)
+> - [Portogallo](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-portugal.md)
+> - [Qatar](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-qatar.md)
+> - [Romania](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-romania.md)
+> - [Arabia Saudita](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-saudi-arabia.md)
+> - [Serbia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-serbia.md)
+> - [Singapore](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-singapore.md)
+> - [Slovacchia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-slovakia.md)
+> - [Slovenia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-slovenia.md)
+> - [Sudafrica](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-south-africa.md)
+> - [Corea del Sud](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-south-korea.md)
+> - [Spagna](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-spain.md)
+> - [Svezia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-sweden.md)
+> - [Taiwan](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-taiwan.md)
+> - [Tailandia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-thailand.md)
+> - [Turchia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-turkey.md)
+> - [Emirati Arabi Uniti (E.A.U.)](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-the-united-arab-emirates.md)
+> - [Regno Unito](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-the-united-kingdom-u-k.md)
+> - [Uruguay](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-uruguay.md)
+> - [Venezuela](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-venezuela.md)
+> - [Vietnam](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-vietnam.md)
+  
+## <a name="here-are-some-important-things-for-you-to-remember-about-toll-free-numbers"></a><span data-ttu-id="d42ab-173">Ecco alcuni aspetti importanti da ricordare sui numeri verdi:</span><span class="sxs-lookup"><span data-stu-id="d42ab-173">Here are some important things for you to remember about toll free numbers:</span></span>
+
+- <span data-ttu-id="d42ab-174">**I numeri verdi funzionano solo all'interno di ogni paese/area geografica.**</span><span class="sxs-lookup"><span data-stu-id="d42ab-174">**Toll free numbers only operate within each country/region.**</span></span> <span data-ttu-id="d42ab-175">Ad esempio, gli utenti non potranno chiamare un numero verde australiano fuori dall'Australia.</span><span class="sxs-lookup"><span data-stu-id="d42ab-175">For example, your users won't be able to call an Australian toll-free number outside of Australia.</span></span>
+    
+- <span data-ttu-id="d42ab-176">**L'acquisizione o il trasferimento di numeri verdi internazionali universali (UIFN) non è supportata.**</span><span class="sxs-lookup"><span data-stu-id="d42ab-176">**Acquiring or porting Universal International Freephone Numbers (UIFN) isn't supported.**</span></span>
+    
+- <span data-ttu-id="d42ab-177">**In molti paesi/aree geografiche, l'Agenzia per il regolatore/telecomunicazioni nel paese/area geografica richiede ogni numero di telefono gratuito per mantenere almeno 100 minuti di utilizzo al mese per mantenere il numero.**</span><span class="sxs-lookup"><span data-stu-id="d42ab-177">**In many countries/regions, the regulator/telecommunication agency in the country/region requires each toll free phone number to maintain at least 100 minutes of usage per month in order to retain the number.**</span></span>
+    
+    > [!NOTE]
+    > Se si riceve un numero verde e l'uso del numero non soddisfa questi requisiti minimi, Microsoft può essere obbligato dall'Agenzia del regolatore/telecomunicazioni a recuperare il numero da un utente. 
+  
+- <span data-ttu-id="d42ab-179">**La wireline, la linea fissa e l'accesso alla rete mobile ai numeri verdi possono essere completamente o parzialmente limitati.**</span><span class="sxs-lookup"><span data-stu-id="d42ab-179">**Wireline, fixed line, and mobile network access to toll-free numbers may be fully or partially restricted.**</span></span> <span data-ttu-id="d42ab-180">Il formato di composizione descrive i codici di accesso richiesti in ciascun paese per chiamare un numero verde.</span><span class="sxs-lookup"><span data-stu-id="d42ab-180">The dialing format describes the required access codes within each country/region to place calls using the toll free number.</span></span>
+    
+- <span data-ttu-id="d42ab-181">**Numero verde numeri verdi:** Le tariffe per minuto per il piano di numerazione dei numeri verdi del Nord America sono determinate dal paese originario.</span><span class="sxs-lookup"><span data-stu-id="d42ab-181">**North America Numbering Plan Toll Free Numbers:** Per-minute rates for North America Numbering Plan toll free numbers are determined by the originating country.</span></span> <span data-ttu-id="d42ab-182">La tariffa a pagamento per minuto gratuita per le chiamate provenienti dagli Stati Uniti corrisponde alla tariffa definita "Nord America".</span><span class="sxs-lookup"><span data-stu-id="d42ab-182">The toll free per-minute rate for calls that originate from the United States map to the rate defined as "North America."</span></span> <span data-ttu-id="d42ab-183">Tuttavia, le chiamate provenienti da altri paesi nordamericani, come Canada, Puerto Rico e così via, hanno tariffe specifiche a pedaggio gratuito.</span><span class="sxs-lookup"><span data-stu-id="d42ab-183">However, calls that originate from other North American countries such as Canada, Puerto Rico, etc. have specific toll free rates.</span></span>
+
+> [!NOTE]
+> Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+    
+## <a name="related-topics"></a><span data-ttu-id="d42ab-185">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="d42ab-185">Related topics</span></span>
+[<span data-ttu-id="d42ab-186">Ottenere numeri di servizio per Skype for Business e Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="d42ab-186">Getting service phone numbers for Skype for Business and Microsoft Teams</span></span>](/microsoftteams/getting-service-phone-numbers)
+
+  
+ 

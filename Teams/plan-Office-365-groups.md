@@ -1,0 +1,53 @@
+---
+title: Pianificare i gruppi di Office 365 durante la creazione di team in Microsoft Teams
+ms.reviewer: ''
+author: LolaJacobsen
+ms.author: lolaj
+manager: serdars
+ms.date: 08/29/2018
+ms.topic: conceptual
+ms.service: msteams
+description: Informazioni sulle decisioni da eseguire durante la pianificazione di gruppi di Office 365 come la scelta di gruppi pubblici e privati, l'uso del client teams o la console Web di amministrazione di Office 365 e come istruire i team sull'uso delle conversazioni.
+localization_priority: Normal
+search.appverid: MET150
+MS.collection:
+- Teams_ITAdmin_Help
+- M365-collaboration
+appliesto:
+- Microsoft Teams
+ms.openlocfilehash: aca7dcf2607fd90bfea15ef324034be96770a822
+ms.sourcegitcommit: c997490cf7239d07e2fd52a4b03bec464b3d192b
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "36182056"
+---
+<a name="plan-for-office-365-groups-when-creating-teams-in-microsoft-teams"></a><span data-ttu-id="ce2aa-103">Pianificare i gruppi di Office 365 durante la creazione di team in Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="ce2aa-103">Plan for Office 365 Groups when creating teams in Microsoft Teams</span></span>
+==========================================================
+
+<span data-ttu-id="ce2aa-104">Quando si considera l'uso di gruppi di Office 365 o durante la creazione di Team, valutare il tipo di utilizzo del team, chi deve avere accesso e il risultato che il team si aspetta di ottenere.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-104">When considering the use of Office 365 Groups or when creating teams, consider what the team will be used for, who should have access, and what outcome the team will expect to achieve.</span></span> <span data-ttu-id="ce2aa-105">Prestare particolare attenzione al numero di canali creati in quanto gli utenti possono diventare rapidamente invasi da contenuti distribuiti troppo sottili (in troppi canali).</span><span class="sxs-lookup"><span data-stu-id="ce2aa-105">Pay special attention to the number of channels you create as people can quickly become overrun by content spread too thin (across too many channels).</span></span>
+
+<span data-ttu-id="ce2aa-106">Esistono due scenari che giustificano una discussione intorno alla pianificazione dei gruppi di Office 365 e al loro impatto su (o da) Microsoft teams:</span><span class="sxs-lookup"><span data-stu-id="ce2aa-106">There are two scenarios that warrant some discussion around planning of Office 365 Groups and their impact on (or by) Microsoft Teams:</span></span>
+
+-   <span data-ttu-id="ce2aa-107">Prima di tutto, dato che i clienti possono avere investimenti esistenti in gruppi, attualmente Supportiamo gruppi pubblici e privati di meno di 5000 membri.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-107">First, since customers could have existing investments in Groups, we currently support both Public and Private groups of less than 5000 members.</span></span> <span data-ttu-id="ce2aa-108">Come accennato in precedenza, si vuole gestire l'appartenenza delle persone a un team usando il client teams anziché la console Web di amministrazione di Office 365.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-108">As mentioned previously, you want to manage the membership of people to a team using the Teams client rather than the Office 365 admin web console.</span></span> <span data-ttu-id="ce2aa-109">Dato questo scenario, se le persone vengono usate per le conversazioni in thread nei gruppi di Office 365, è interessante notare che una conversazione di gruppo è essenzialmente posta elettronica e non la stessa di un messaggio di chat in un canale di teams.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-109">Given this scenario, if people are used to threaded conversations in Office 365 Groups, it is worthwhile noting that a Groups conversation is essentially email and not the same as a chat message in a Teams channel.</span></span> <span data-ttu-id="ce2aa-110">Educare gli utenti a questa differenza e suggerire di adottare il formato di messaggio di chat più flessibile in teams versus inviare tramite posta elettronica il gruppo usando Outlook o OWA.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-110">Educate your people about this difference and suggest they adopt the more flexible chat message format in Teams versus emailing the Group using Outlook or OWA.</span></span>
+
+-   <span data-ttu-id="ce2aa-111">In secondo luogo, per i clienti che non hanno gruppi esistenti definiti in Office 365, è possibile crearli usando il portale di amministrazione di Office 365, il Web team o i client desktop.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-111">Second, for customers who don’t have existing Groups defined in Office 365, you can either create them using the Office 365 admin portal, the Teams web, or desktop clients.</span></span> <span data-ttu-id="ce2aa-112">Come accennato in precedenza, è possibile gestire tutti i futuri membri del gruppo Office 365 usando il client teams.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-112">As mentioned previously, manage all future membership to the Office 365 Group using the Teams client.</span></span> <span data-ttu-id="ce2aa-113">Poiché l'appartenenza a un team definisce anche l'appartenenza a gruppi di Office 365, è consigliabile preparare le persone per questa modifica.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-113">Since membership to a team is also defining membership to Office 365 Groups, you should prepare people for this change.</span></span>
+ 
+
+
+## <a name="teams-respects-office-365-groups-naming-policy-in-private-preview"></a><span data-ttu-id="ce2aa-114">Teams rispetta i criteri di denominazione dei gruppi di Office 365 (in anteprima privata)</span><span class="sxs-lookup"><span data-stu-id="ce2aa-114">Teams respects Office 365 Groups naming policy (in private preview)</span></span>
+
+<span data-ttu-id="ce2aa-115">Tutti i criteri di denominazione dei gruppi di Office 365 impostati dall'amministratore verranno applicati in teams quando gli utenti creano o modificano i nomi del team.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-115">Any Office 365 Groups naming policy that has been set by your admin will be applied in Teams when users create or edit team names.</span></span> <span data-ttu-id="ce2aa-116">Ciò include elementi come i prefissi o i suffissi obbligatori ed escludendo le parole vietate.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-116">This includes things like mandatory prefixes or suffixes and excluding banned words.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="ce2aa-117">Questa caratteristica è in anteprima privata, il che significa che se non si fa parte di questa anteprima, i team non aderiscono ancora ai criteri di denominazione dei gruppi di Office 365.</span><span class="sxs-lookup"><span data-stu-id="ce2aa-117">This feature is in private preview, which means that if you're not part of this preview, Teams doesn't yet adhere to this Office 365 Groups naming policy.</span></span>
+
+<span data-ttu-id="ce2aa-118">Per altre informazioni, leggere i [criteri di denominazione dei gruppi di Office 365 in teams](https://support.office.com/article/Office-365-Groups-Naming-Policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552).</span><span class="sxs-lookup"><span data-stu-id="ce2aa-118">To learn more, read [Office 365 Groups naming policy in Teams](https://support.office.com/article/Office-365-Groups-Naming-Policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552).</span></span>
+
+<span data-ttu-id="ce2aa-119">Gli articoli seguenti sono una buona posizione per trovare il contenuto di preparazione e adozione per i gruppi di Office 365:</span><span class="sxs-lookup"><span data-stu-id="ce2aa-119">The following articles are a good place to find readiness and adoption content for your Office 365 Groups:</span></span>
+
+-   [<span data-ttu-id="ce2aa-120">Ottenere di più con i gruppi in Outlook</span><span class="sxs-lookup"><span data-stu-id="ce2aa-120">Get more with groups in Outlook</span></span>](https://support.office.com/article/Get-more-with-Office-365-Groups-in-Outlook-93132800-5b11-49de-8cc2-605b6075b2b9)
+
+-   [<span data-ttu-id="ce2aa-121">Aggiungere o rimuovere membri di gruppi di Office 365 tramite l'interfaccia di amministrazione di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="ce2aa-121">Add or remove members from Office 365 Groups using the Microsoft 365 admin center</span></span>](https://support.office.com/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)
+
+-   [<span data-ttu-id="ce2aa-122">Ripristinare un gruppo di Office 365 eliminato</span><span class="sxs-lookup"><span data-stu-id="ce2aa-122">Restore a deleted Office 365 Group</span></span>](https://support.office.com/article/Restore-a-deleted-Office-365-Group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)
