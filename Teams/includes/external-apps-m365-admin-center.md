@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Assicurarsi di aver attivato le app per i team in [impostazioni a livello di tenant nell'interfaccia di amministrazione di Microsoft 365](../enable-features-office-365.md#tenant-wide-settings-in-the-microsoft-365-admin-center). Se si vogliono aggiungere app esterne (fornite da terze parti), è necessario attivare [le impostazioni delle app esterne](../enable-features-office-365.md#external-apps).

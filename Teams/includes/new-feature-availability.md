@@ -1,0 +1,2 @@
+> [!NOTE]
+> Questa funzionalità non è ancora visibile nel client di Microsoft Teams? Attualmente viene implementato e potrebbe non essere ancora disponibile nell'organizzazione. Vedere la [Roadmap teams](https://aka.ms/TeamsRoadmap) per informazioni sulle prossime versioni in teams.

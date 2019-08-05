@@ -1,0 +1,34 @@
+---
+title: Installare il richiamo dello Store di configurazione locale (Configura)
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+manager: serdars
+audience: ITPro
+ms.topic: article
+f1_keywords:
+- ms.lync.dep.DeployReplicaConfig
+ms.prod: skype-for-business-itpro
+localization_priority: Normal
+ms.assetid: 92dccbca-7a5b-4064-9f2e-964b8e62433c
+ROBOTS: NOINDEX, NOFOLLOW
+description: Per avviare l'installazione del database che conterrà la copia locale di sola lettura di Central Management store, è possibile selezionare tra il recupero della configurazione definita pubblicata tramite Generatore di topologia dalla centrale già installata e configurata Management Store oppure leggendo la configurazione definita da altri elementi multimediali. Per un computer che si trova nella rete interna dell'organizzazione, selezionare Recupera automaticamente la configurazione dall'Central Management store.
+ms.openlocfilehash: b4249f4968c51fb901e612b2414bb2c6921be40c
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "36195460"
+---
+# <a name="install-local-configuration-store-invoke-configure"></a>Installare il richiamo dello Store di configurazione locale (Configura)
+ 
+Per avviare l'installazione del database che conterrà la copia locale di sola lettura di Central Management store, è possibile selezionare tra il recupero della configurazione definita pubblicata tramite Generatore di topologia dalla centrale già installata e configurata Management Store oppure leggendo la configurazione definita da altri elementi multimediali. Per un computer che si trova nella rete interna dell'organizzazione, selezionare **Recupera automaticamente la configurazione dall'Central Management store**.
+  
+Se si sta installando una replica di Central Management store in un server perimetrale, è possibile selezionare la copia esportata del documento di configurazione da un supporto portatile, ad esempio un'unità flash USB, un'unità disco rigido USB, un CD-ROM o un altro elemento multimediale. 
+  
+> [!IMPORTANT]
+> Se si sta installando l'archivio di configurazione locale in un server perimetrale, le informazioni di configurazione devono essere in un formato esportato dall'archivio di gestione centrale eseguendo il cmdlet di Windows PowerShell:`Export-CsConfiguration -FileName <ConfigurationFilePath.zip>`
+  
+Dopo aver selezionato l'opzione appropriata, fare clic su **Avanti**.
+  
+

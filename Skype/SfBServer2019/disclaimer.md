@@ -1,0 +1,2 @@
+> [!NOTE]
+> Questa pagina descrive il software preliminare che potrebbe cambiare in modo sostanziale prima del rilascio. Tutte le schermate sono segnaposto e possono avere un aspetto diverso da quello visualizzato. 

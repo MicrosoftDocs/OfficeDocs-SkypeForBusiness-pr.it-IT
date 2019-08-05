@@ -1,0 +1,1 @@
+Stiamo aggiornando spesso il modo in cui è possibile gestire le caratteristiche, quindi la procedura potrebbe essere leggermente diversa da quella visualizzata.
