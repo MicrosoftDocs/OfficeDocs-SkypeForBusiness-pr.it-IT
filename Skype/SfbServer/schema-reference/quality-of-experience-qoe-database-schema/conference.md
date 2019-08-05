@@ -1,0 +1,32 @@
+---
+title: Tabella Conference
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+manager: serdars
+ms.date: 2/1/2018
+audience: ITPro
+ms.topic: article
+ms.prod: skype-for-business-itpro
+localization_priority: Normal
+ms.assetid: 2a2c327c-4719-42dc-a3bb-6dbc0864d9af
+description: La tabella conferenze è una tabella di supporto. Ogni record rappresenta una conferenza o una sessione peer-to-peer.
+ms.openlocfilehash: 61e9667d235ed9ab8f3696f55e676bfc60ab69e3
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "36194629"
+---
+# <a name="conference-table"></a><span data-ttu-id="99c67-104">Tabella Conference</span><span class="sxs-lookup"><span data-stu-id="99c67-104">Conference table</span></span>
+ 
+<span data-ttu-id="99c67-105">La tabella conferenze è una tabella di supporto.</span><span class="sxs-lookup"><span data-stu-id="99c67-105">The Conference table is a supporting table.</span></span> <span data-ttu-id="99c67-106">Ogni record rappresenta una conferenza o una sessione peer-to-peer.</span><span class="sxs-lookup"><span data-stu-id="99c67-106">Each record represents one conference or peer-to-peer session.</span></span>
+  
+|<span data-ttu-id="99c67-107">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="99c67-107">**Column**</span></span>|<span data-ttu-id="99c67-108">**Tipo di dati**</span><span class="sxs-lookup"><span data-stu-id="99c67-108">**Data Type**</span></span>|<span data-ttu-id="99c67-109">**Chiave/indice**</span><span class="sxs-lookup"><span data-stu-id="99c67-109">**Key/Index**</span></span>|<span data-ttu-id="99c67-110">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="99c67-110">**Details**</span></span>|
+|:-----|:-----|:-----|:-----|
+|<span data-ttu-id="99c67-111">**ConferenceKey**</span><span class="sxs-lookup"><span data-stu-id="99c67-111">**ConferenceKey**</span></span> <br/> |<span data-ttu-id="99c67-112">int</span><span class="sxs-lookup"><span data-stu-id="99c67-112">int</span></span>  <br/> |<span data-ttu-id="99c67-113">Principale</span><span class="sxs-lookup"><span data-stu-id="99c67-113">Primary</span></span>  <br/> |<span data-ttu-id="99c67-114">Numero univoco che identifica questo record della conferenza.</span><span class="sxs-lookup"><span data-stu-id="99c67-114">Unique number identifying this conference record.</span></span>  <br/> |
+|<span data-ttu-id="99c67-115">**ConfURI**</span><span class="sxs-lookup"><span data-stu-id="99c67-115">**ConfURI**</span></span> <br/> |<span data-ttu-id="99c67-116">nvarchar (450)</span><span class="sxs-lookup"><span data-stu-id="99c67-116">nvarchar(450)</span></span>  <br/> |<span data-ttu-id="99c67-117">univoci</span><span class="sxs-lookup"><span data-stu-id="99c67-117">unique</span></span>  <br/> |<span data-ttu-id="99c67-118">URI conferenza se si tratta di una conferenza o di DialogID se si tratta di una sessione peer-to-peer.</span><span class="sxs-lookup"><span data-stu-id="99c67-118">Conference URI if this is a conference, or DialogID if this is a peer-to-peer session.</span></span>  <br/> |
+|<span data-ttu-id="99c67-119">**Checksum**</span><span class="sxs-lookup"><span data-stu-id="99c67-119">**Checksum**</span></span> <br/> |<span data-ttu-id="99c67-120">int</span><span class="sxs-lookup"><span data-stu-id="99c67-120">int</span></span>  <br/> |<span data-ttu-id="99c67-121">Indice</span><span class="sxs-lookup"><span data-stu-id="99c67-121">index</span></span>  <br/> |<span data-ttu-id="99c67-122">Checksum dell'URI della conferenza.</span><span class="sxs-lookup"><span data-stu-id="99c67-122">Checksum of the conference URI.</span></span> <span data-ttu-id="99c67-123">Viene usato internamente.</span><span class="sxs-lookup"><span data-stu-id="99c67-123">This is used internally.</span></span>  <br/> |
+|<span data-ttu-id="99c67-124">**NextUpdateTS**</span><span class="sxs-lookup"><span data-stu-id="99c67-124">**NextUpdateTS**</span></span> <br/> |<span data-ttu-id="99c67-125">DateTime</span><span class="sxs-lookup"><span data-stu-id="99c67-125">datetime</span></span>  <br/> ||<span data-ttu-id="99c67-126">Solo per uso interno.</span><span class="sxs-lookup"><span data-stu-id="99c67-126">For internal use only.</span></span>  <br/> |
+   
+
