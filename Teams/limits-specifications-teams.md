@@ -1,0 +1,111 @@
+---
+title: Limiti e specifiche per Microsoft Teams
+author: LolaJacobsen
+ms.author: lolaj
+manager: serdars
+ms.date: 06/10/2019
+ms.topic: reference
+ms.service: msteams
+ms.reviewer: karuanag
+description: Informazioni sui limiti, le specifiche e gli altri requisiti applicabili a Microsoft teams.
+localization_priority: Normal
+MS.collection:
+- Teams_ITAdmin_Help
+- M365-collaboration
+search.appverid: MET150
+appliesto:
+- Microsoft Teams
+ms.openlocfilehash: 40c334a1a0159614b77de11f8eb3e5a0e3dcc1b5
+ms.sourcegitcommit: 9d9376c6e5e6d79e33ba54fb8ce87509a2f57754
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "36184126"
+---
+# <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
+
+Questo articolo descrive alcuni dei limiti, delle specifiche e di altri requisiti applicabili ai team.
+
+## <a name="teams-and-channels"></a>Team e canali 
+
+|Funzionalità    | Limite massimo |
+|-----------|---------------|
+|Numero di team che un utente può creare | Soggetto a un limite di oggetti di 250&sup1;         |
+|Numero di membri in un team | 5.000       |
+|Numero di team a livello di organizzazione consentiti in un tenant | 5     |
+|Numero di membri in un [team a livello di organizzazione](create-an-org-wide-team.md) | 5.000       |
+|Numero di team che un amministratore globale può creare        |  500.000   |
+|Numero di team che un tenant di Office 365 può avere    | 500.000&sup2;     |
+|Numero di canali per Team    | 200 (include canali eliminati) &sup3;         |
+
+&sup1; Qualsiasi oggetto directory in Azure Active Directory conta verso questo limite. Gli amministratori globali sono esenti da questo limite, così come le app che chiamano Microsoft Graph usando le [autorizzazioni dell'applicazione](https://docs.microsoft.com/graph/permissions-reference).
+
+&sup2; Questo limite include team archiviati.
+
+&sup3; i canali eliminati possono essere ripristinati entro 30 giorni. Durante questi 30 giorni, un canale eliminato continua a essere conteggiato verso il canale di 200 per limite di team. Dopo 30 giorni, un canale eliminato e il relativo contenuto vengono eliminati definitivamente e il canale non viene più conteggiato verso i canali di 200 per il limite del team.
+
+## <a name="meetings-and-calls"></a>Riunioni e chiamate 
+
+|Funzionalità     | Limite massimo |
+|------------|---------------|
+|Numero di persone in una riunione  | 250    |
+
+## <a name="teams-live-events"></a>Eventi live di Teams
+
+|Funzionalità     | Limite massimo |
+|------------|---------------|
+|Dimensioni del gruppo di destinatari | 10.000 partecipanti |
+|Durata dell'evento | 4 ore |
+|Eventi dinamici contemporanei in un tenant di Office 365 | 15 |
+
+Per altre informazioni sugli eventi dinamici e un confronto tra eventi live di teams e Skype meeting broadcast, vai a [eventi live di teams e Skype meeting broadcast](teams-live-events/plan-for-teams-live-events.md#teams-live-events-and-skype-meeting-broadcast).
+
+## <a name="storage"></a>Archiviazione
+
+Ogni team di Microsoft Teams ha un sito del team in SharePoint Online e ogni canale di un team ottiene una cartella all'interno della raccolta documenti predefinita del sito del team. I file condivisi all'interno di una conversazione vengono automaticamente aggiunti alla raccolta documenti e le autorizzazioni e le opzioni di sicurezza dei file impostate in SharePoint vengono automaticamente riflesse in teams.
+
+Se SharePoint Online non è abilitato nel tenant, gli utenti di Microsoft teams non possono sempre condividere file in teams. Gli utenti di chat privata non possono anche condividere file perché OneDrive for business (collegato alla licenza di SharePoint) è necessario per tale funzionalità.
+
+Archiviando i file nella raccolta documenti di SharePoint Online e in OneDrive for business, verranno seguite tutte le regole di conformità configurate a livello di tenant. Per altre informazioni, vedere [come interagire con SharePoint Online e OneDrive for business con Microsoft teams](sharepoint-onedrive-interact.md).
+
+Poiché teams viene eseguito su un backend di SharePoint Online per la condivisione di file, le limitazioni di SharePoint si applicano alla sezione file all'interno di un team. Ecco i limiti di spazio di archiviazione applicabili per SharePoint Online.
+
+|Funzionalità                 |Office 365 Business Essentials  |Office 365 Business Premium   |Office 365 Enterprise E1  |Office 365 Enterprise E3  |Office 365 Enterprise E5  |Office 365 Enterprise F1  |
+|------------------------|---------|---------|---------|---------|---------|---------|
+|Archiviazione                 |1 TB per organizzazione più 10 GB per licenza acquistata  |1 TB per organizzazione più 10 GB per licenza acquistata  |1 TB per organizzazione più 10 GB per licenza acquistata   |1 TB per organizzazione più 10 GB per licenza acquistata |1 TB per organizzazione più 10 GB per licenza acquistata  |1 TB per organizzazione           |
+|Spazio di archiviazione per i file Teams |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |
+|Limite di caricamento file (per file)    |15 GB    |15 GB    |15 GB    |15 GB    |15 GB    |15 GB    |
+
+I canali sono appoggiati da cartelle nella raccolta siti di SharePoint Online creata per il team, quindi le schede dei file nei canali condividono i limiti di spazio di archiviazione del team a cui appartengono.
+
+Per altre informazioni, vedere [limiti di SharePoint Online](https://support.office.com/article/SharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).
+
+## <a name="messaging"></a>Messaggistica
+
+Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in Microsoft teams devono avere una cassetta postale di Exchange Online (basata su cloud) per un amministratore per cercare le conversazioni di chat. Questo perché le conversazioni che fanno parte dell'elenco chat sono archiviate nelle cassette postali basate su cloud dei partecipanti alla chat. Se un partecipante alla chat non ha una cassetta postale di Exchange Online, l'amministratore non potrà cercare o inserire un blocco nelle conversazioni di chat. Ad esempio, in una distribuzione ibrida di Exchange gli utenti con cassette postali locali potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco chat in Microsoft teams. Tuttavia, in questo caso, il contenuto di queste conversazioni non è ricercabile e non può essere messo in attesa perché gli utenti non hanno cassette postali basate su cloud. Per altre informazioni, vedere [interazione tra Exchange e Microsoft teams](exchange-teams-interact.md).
+
+La funzione chat di Microsoft teams funziona su un backend di Microsoft Exchange, quindi puoi applicare i limiti della messaggistica di Exchange alla funzione chat in Microsoft teams. Se gli utenti desiderano inviare un messaggio di posta elettronica a un canale in teams, usano l'indirizzo di posta elettronica del canale. Una volta che un messaggio di posta elettronica fa parte di un canale, chiunque può rispondere per avviare una conversazione. Ecco alcuni dei limiti applicabili per l'invio di messaggi di posta elettronica a un canale. 
+
+|Funzionalità  | Limite massimo  |
+|---------|---------|
+|Numero di persone in una chat privata  | 100    |
+|Dimensione messaggio&dagger;  |25 KB   |
+|Numero di file allegati&Dagger;  |10     |
+|Numero di immagini in linea&Dagger; |50   |
+
+&dagger;Se il messaggio supera questo limite, viene generato un messaggio di anteprima e viene chiesto all'utente di visualizzare/scaricare il indirizzo di posta elettronica originale dal collegamento fornito.
+
+&Dagger;Se il numero di allegati o immagini supera questo limite, il messaggio non verrà elaborato e un NDR verrà rinviato al mittente per segnalare l'errore.
+
+> [!NOTE]
+> Le dimensioni dei messaggi, i file allegati e i limiti delle immagini in linea sono gli stessi per tutte le licenze di Office 365.
+
+Per altre informazioni, vedere [limiti di Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx).
+
+## <a name="browsers"></a>Browser
+
+[!INCLUDE [browser-support](includes/browser-support.md)]
+
+## <a name="operating-systems"></a>Sistemi operativi
+
+Per informazioni sui requisiti del sistema operativo, vedere [ottenere client per Microsoft teams](get-clients.md).
