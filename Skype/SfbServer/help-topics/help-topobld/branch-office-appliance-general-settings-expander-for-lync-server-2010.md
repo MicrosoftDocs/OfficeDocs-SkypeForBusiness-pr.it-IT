@@ -1,0 +1,55 @@
+---
+title: Espansione delle impostazioni generali di Survivable Branch Appliance per Lync Server 2010
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+manager: serdars
+ms.date: 3/26/2015
+audience: ITPro
+ms.topic: article
+f1_keywords:
+- ms.lync.tb.BranchOfficeApplianceGeneralSettingsExpander2010
+ms.prod: skype-for-business-itpro
+localization_priority: Normal
+ms.assetid: 4a41754a-4653-4845-afb6-4a74b2edfeb4
+description: 'Per modificare le proprietà per Survivable Branch Appliance o Survivable Branch Server, in generale è possibile configurare:'
+ms.openlocfilehash: e0c2aba5998b2eb4288c63fd50f47e8e8bb75033
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "36195256"
+---
+# <a name="branch-office-appliance-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni generali di Survivable Branch Appliance per Lync Server 2010
+ 
+Per modificare le proprietà per Survivable Branch Appliance o Survivable Branch Server, in **generale**è possibile configurare:
+  
+- **FQDN**: si digita il nome di dominio completo di Survivable Branch Appliance o Survivable Branch Server.
+    
+    **Usa tutti gli indirizzi IP** configurati usa gli indirizzi IP configurati in Survivable Branch Appliance o Survivable Branch Server per tutti gli scopi.
+    
+    **Limita utilizzo servizio a indirizzi IP selezionati**: configurare l'indirizzo distinto che definisce il server e l'indirizzo IP da usare per PSTN.
+    
+    **Indirizzo IP primario**: l'indirizzo IP viene definito e configurato per tutti gli scopi, a eccezione delle funzioni associate a PSTN.
+    
+    **Indirizzo IP PSTN**: indirizzo IP associato alle funzioni PSTN (Public Switched Telephone Network).
+    
+- Si configurano le **associazioni** per verificare che altri ruoli del server siano configurati e associati a Survivable Branch Appliance o Survivable Branch Server.
+    
+    **Associare il server di archiviazione** Selezionare nell'elenco il server di archiviazione che si vuole associare al Survivable Branch Appliance o Survivable Branch Server
+    
+    Fare clic su **nuovo** se non è stato creato il server di archiviazione che si vuole associare a questo Survivable Branch Appliance o Survivable Branch Server
+    
+    **Associare il server di monitoraggio** Selezionare dall'elenco il server di monitoraggio che si vuole associare al Survivable Branch Appliance o Survivable Branch Server
+    
+    Fare clic su **nuovo** se non è stato creato il server di monitoraggio che si vuole associare a questo Survivable Branch Appliance o Survivable Branch Server
+    
+    **Associa Edge pool (per i componenti multimediali)** Selezionare nell'elenco il server perimetrale o il pool di Edge da associare a Survivable Branch Appliance o Survivable Branch Server
+    
+  **OK** Consente di accettare e salvare le modifiche nella finestra di dialogo.
+  
+  **Annulla** Consente di eliminare le modifiche e di chiudere la finestra di dialogo.
+  
+  **Guida** Consente di visualizzare questa schermata della Guida.
+  
+
