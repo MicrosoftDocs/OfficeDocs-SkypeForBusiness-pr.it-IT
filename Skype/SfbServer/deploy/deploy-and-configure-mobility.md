@@ -1,0 +1,632 @@
+---
+title: Distribuire e configurare la mobilità per Skype for Business Server
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+manager: serdars
+audience: ITPro
+ms.topic: get-started-article
+ms.prod: skype-for-business-itpro
+localization_priority: Normal
+ms.assetid: 8ec6197a-3d1e-4b42-9465-564044cdab1a
+description: Questo articolo illustra i passaggi per configurare un'installazione di Skype for Business Server esistente per l'uso del servizio di mobilità, consentendo ai dispositivi mobili di sfruttare le caratteristiche di mobilità di Skype for Business Server.
+ms.openlocfilehash: 35b9ca6a69dc5add9331aa5399a59a572bdf6906
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "36195486"
+---
+# <a name="deploy-and-configure-mobility-for-skype-for-business-server"></a><span data-ttu-id="f9d08-103">Distribuire e configurare la mobilità per Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="f9d08-103">Deploy and Configure Mobility for Skype for Business Server</span></span>  
+ 
+<span data-ttu-id="f9d08-104">Questo articolo illustra i passaggi per configurare un'installazione di Skype for Business Server esistente per l'uso del servizio di mobilità, consentendo ai dispositivi mobili di sfruttare le caratteristiche di mobilità di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="f9d08-104">This article will walk you through the steps to configure an existing Skype for Business Server installation to use the Mobility service, allowing your mobile devices to be able to take advantage of Skype for Business Server Mobility features.</span></span>
+  
+<span data-ttu-id="f9d08-105">Dopo aver esaminato l'articolo [relativo al piano per la mobilità per Skype for Business Server](../plan-your-deployment/mobility.md) , è necessario essere pronti per procedere con la procedura descritta di seguito per distribuire la mobilità nell'ambiente di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="f9d08-105">Having reviewed the [Plan for Mobility for Skype for Business Server](../plan-your-deployment/mobility.md) article, you should be ready to proceed with the steps below to deploy Mobility into your Skype for Business Server environment.</span></span> <span data-ttu-id="f9d08-106">I passaggi sono i seguenti (e nella tabella è incluso un elenco di autorizzazioni):</span><span class="sxs-lookup"><span data-stu-id="f9d08-106">The steps are as follows (and we're including in this table a permissions list):</span></span>
+  
+|<span data-ttu-id="f9d08-107">**Fase**</span><span class="sxs-lookup"><span data-stu-id="f9d08-107">**Phase**</span></span>|<span data-ttu-id="f9d08-108">**Autorizzazioni**</span><span class="sxs-lookup"><span data-stu-id="f9d08-108">**Permissions**</span></span>|
+|:-----|:-----|
+|[<span data-ttu-id="f9d08-109">Creare record DNS</span><span class="sxs-lookup"><span data-stu-id="f9d08-109">Create DNS records</span></span>](deploy-and-configure-mobility.md#CreateDNSRec) <br/> |<span data-ttu-id="f9d08-110">Amministratori di dominio</span><span class="sxs-lookup"><span data-stu-id="f9d08-110">Domain Admins</span></span>  <br/> <span data-ttu-id="f9d08-111">DNSAdmins</span><span class="sxs-lookup"><span data-stu-id="f9d08-111">DNSAdmins</span></span>  <br/> |
+|[<span data-ttu-id="f9d08-112">Modificare i certificati</span><span class="sxs-lookup"><span data-stu-id="f9d08-112">Modify certificates</span></span>](deploy-and-configure-mobility.md#ModCerts) <br/> |<span data-ttu-id="f9d08-113">Amministratore locale</span><span class="sxs-lookup"><span data-stu-id="f9d08-113">Local Administrator</span></span>  <br/> |
+|[<span data-ttu-id="f9d08-114">Configurare il proxy inverso</span><span class="sxs-lookup"><span data-stu-id="f9d08-114">Configure the reverse proxy</span></span>](deploy-and-configure-mobility.md#ConfigRP) <br/> |<span data-ttu-id="f9d08-115">Amministratore locale</span><span class="sxs-lookup"><span data-stu-id="f9d08-115">Local Administrator</span></span>  <br/> |
+|[<span data-ttu-id="f9d08-116">Configurare l'individuazione automatica per la mobilità con distribuzioni ibride</span><span class="sxs-lookup"><span data-stu-id="f9d08-116">Configure Autodiscover for Mobility with hybrid deployments</span></span>](deploy-and-configure-mobility.md#ConfigAutoD) <br/> |<span data-ttu-id="f9d08-117">Amministratori di dominio</span><span class="sxs-lookup"><span data-stu-id="f9d08-117">Domain Admins</span></span>  <br/> |
+|[<span data-ttu-id="f9d08-118">Testare la distribuzione della mobilità</span><span class="sxs-lookup"><span data-stu-id="f9d08-118">Test your Mobility deployment</span></span>](deploy-and-configure-mobility.md#TestMobility) <br/> |<span data-ttu-id="f9d08-119">CsAdministrator</span><span class="sxs-lookup"><span data-stu-id="f9d08-119">CsAdministrator</span></span>  <br/> |
+|[<span data-ttu-id="f9d08-120">Configurare le notifiche push</span><span class="sxs-lookup"><span data-stu-id="f9d08-120">Configure for push notifications</span></span>](deploy-and-configure-mobility.md#ConfigPush) <br/> |<span data-ttu-id="f9d08-121">RtcUniversalServerAdmins</span><span class="sxs-lookup"><span data-stu-id="f9d08-121">RtcUniversalServerAdmins</span></span>  <br/> |
+|[<span data-ttu-id="f9d08-122">Configurare i criteri di mobilità</span><span class="sxs-lookup"><span data-stu-id="f9d08-122">Configure Mobility policy</span></span>](deploy-and-configure-mobility.md#ConfigMob) <br/> |<span data-ttu-id="f9d08-123">CsAdministrator</span><span class="sxs-lookup"><span data-stu-id="f9d08-123">CsAdministrator</span></span>  <br/> |
+   
+<span data-ttu-id="f9d08-124">Tutte le sezioni seguenti contengono passaggi che presuppongono che l'argomento di pianificazione sia stato letto.</span><span class="sxs-lookup"><span data-stu-id="f9d08-124">All the following sections contain steps that assume you've read the Planning topic.</span></span> <span data-ttu-id="f9d08-125">Se ti confonde qualcosa, sentiti libero di verificare le informazioni.</span><span class="sxs-lookup"><span data-stu-id="f9d08-125">If anything's confusing you, feel free to check out the information there.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="f9d08-126">Il supporto di MCX (servizio mobilità) per i client mobili legacy non è più disponibile in Skype for Business Server 2019.</span><span class="sxs-lookup"><span data-stu-id="f9d08-126">MCX (Mobility Service) support for legacy mobile clients is no longer available in Skype for Business Server 2019.</span></span> <span data-ttu-id="f9d08-127">Tutti i client di Skype for business mobile correnti usano già Unified Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti.</span><span class="sxs-lookup"><span data-stu-id="f9d08-127">All current Skype for Business mobile clients already use Unified Communications Web API (UCWA) to support instant messaging (IM), presence, and contacts.</span></span> <span data-ttu-id="f9d08-128">Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-128">Users with legacy clients using MCX will need to upgrade to a current client.</span></span>
+  
+## <a name="create-dns-records"></a><span data-ttu-id="f9d08-129">Creare record DNS</span><span class="sxs-lookup"><span data-stu-id="f9d08-129">Create DNS records</span></span>
+<span data-ttu-id="f9d08-130"><a name="CreateDNSRec"> </a></span><span class="sxs-lookup"><span data-stu-id="f9d08-130"></span></span>
+
+<span data-ttu-id="f9d08-131">Potresti averne già una parte nell'ambiente di Skype for Business Server, ma devi creare i record seguenti per il lavoro di individuazione automatica:</span><span class="sxs-lookup"><span data-stu-id="f9d08-131">You may already have these as part of your Skype for Business Server environment, but you do need to create the following records for Autodiscovery to work:</span></span>
+  
+- <span data-ttu-id="f9d08-132">Un record DNS interno che supporta gli utenti di dispositivi mobili che si connettono dall'interno della rete dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="f9d08-132">An internal DNS record to support mobile users who're connecting from within your organization's network.</span></span>
+    
+- <span data-ttu-id="f9d08-133">Un record DNS esterno (o pubblico) per supportare gli utenti di dispositivi mobili che si connettono dall'esterno della rete dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="f9d08-133">An external (or public) DNS record to support mobile users who're connecting from outside your organization's network.</span></span>
+    
+<span data-ttu-id="f9d08-134">Questi record possono essere nomi (host) o CNAME (non è necessario eseguire entrambe le operazioni, sono inclusi solo i passaggi per tutti gli elementi).</span><span class="sxs-lookup"><span data-stu-id="f9d08-134">These records can be either A (host) names or CNAME records (you don't have to make both, we're just including the steps for everything here).</span></span>
+  
+### <a name="create-an-internal-dns-cname-record"></a><span data-ttu-id="f9d08-135">Creare un record CNAME DNS interno</span><span class="sxs-lookup"><span data-stu-id="f9d08-135">Create an internal DNS CNAME record</span></span>
+
+1. <span data-ttu-id="f9d08-136">Accedere a un server DNS della rete che sia un membro del gruppo **Domain Admins** o del gruppo **DnsAdmins** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-136">Log into a DNS server in your network that's either a member of the **Domain Admins** group or the **DnsAdmins** group.</span></span>
+    
+2. <span data-ttu-id="f9d08-137">Fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione** (potrebbe essere necessario **cercarlo** se non si tratta di un'opzione dal menu Start), quindi fare clic su **DNS** per aprire lo snap-in amministrativo DNS.</span><span class="sxs-lookup"><span data-stu-id="f9d08-137">Click **Start**, Choose **Administrative Tools** (you may need to **Search** for it if it's not an option off the Start menu), and then click **DNS** to open the DNS administrative snap-in.</span></span>
+    
+3. <span data-ttu-id="f9d08-138">Nel riquadro sinistro della finestra della console è necessario passare al dominio che ospita i server front-end di Skype for Business Server ed espandere le **aree di ricerca in avanti** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-138">In the left-hand pane of the console window, you'll need to go to the domain that's home to your Skype for Business Server's Front End Servers, and expand the **Forward Lookup Zones** there.</span></span>
+    
+4. <span data-ttu-id="f9d08-139">Prendere un momento per vedere quale delle seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-139">Take a moment to see which of the following you have:</span></span>
+    
+   - <span data-ttu-id="f9d08-140">Tutti i record host A o AAAA per il server front-end (standard o Enterprise) o i pool di front-end.</span><span class="sxs-lookup"><span data-stu-id="f9d08-140">Any host A or AAAA records for your Front End Server (Standard or Enterprise) or Front End pool(s).</span></span>
+    
+   - <span data-ttu-id="f9d08-141">Tutti i record host A o AAAA per un pool di Director o Director (una configurazione facoltativa che si può avere nella distribuzione).</span><span class="sxs-lookup"><span data-stu-id="f9d08-141">Any host A or AAAA records for a Director or Director pool (an optional configuration you may have in your deployment).</span></span>
+    
+5. <span data-ttu-id="f9d08-142">Dopo aver notato questo, fai clic con il pulsante destro del mouse sul nome di dominio SIP e quindi scegli **nuovo alias (CNAME)** dal menu.</span><span class="sxs-lookup"><span data-stu-id="f9d08-142">Once you've noted this, right-click your SIP domain name, and then choose **New Alias (CNAME)** from the menu.</span></span>
+    
+6. <span data-ttu-id="f9d08-143">Nella casella di testo **nome alias** Digitare lyncdiscoverinternal per il nome host, per l'URL del servizio di individuazione automatica interno.</span><span class="sxs-lookup"><span data-stu-id="f9d08-143">In the **Alias name** textbox, type lyncdiscoverinternal for your host name, for the internal Autodiscover service URL.</span></span>
+    
+7. <span data-ttu-id="f9d08-144">Nel **nome di dominio completo (FQDN per l'host di destinazione**è necessario digitare o individuare l'FQDN dei servizi Web interni per il pool Front-End (o un singolo server front-end o un pool di Director o un amministratore), identificato nel passaggio 4.</span><span class="sxs-lookup"><span data-stu-id="f9d08-144">In the **Fully qualified domain name (FQDN for target host**, you'll need to type or browse to the internal Web Services FQDN for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 4 above.</span></span> <span data-ttu-id="f9d08-145">Fare clic su OK quando viene immesso.</span><span class="sxs-lookup"><span data-stu-id="f9d08-145">Click OK when this is entered.</span></span>
+    
+8. <span data-ttu-id="f9d08-146">È necessario creare un nuovo record CNAME di individuazione automatica nella zona di ricerca diretta per ogni dominio SIP supportato nell'ambiente di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="f9d08-146">You'll need to create a new Autodiscover CNAME record in the forward lookup zone for each SIP domain supported in your Skype for Business Server environment.</span></span>
+    
+### <a name="create-an-external-dns-cname-record"></a><span data-ttu-id="f9d08-147">Creare un record CNAME DNS esterno</span><span class="sxs-lookup"><span data-stu-id="f9d08-147">Create an external DNS CNAME record</span></span>
+
+1. <span data-ttu-id="f9d08-148">Questi passaggi sono generici, perché non è possibile indicare il provider DNS pubblico che si sta usando, ma si vuole comunque aiutarti. Accedere al provider DNS pubblico con un account che consentirà di creare nuovi record DNS.</span><span class="sxs-lookup"><span data-stu-id="f9d08-148">These steps are generic, because we can't tell what public DNS provider you might be using, but we still want to help you out. Please log into your public DNS provider with an account that will be able to make new DNS records there.</span></span>
+    
+2. <span data-ttu-id="f9d08-149">A questo punto, un dominio SIP dovrebbe già esistere per Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="f9d08-149">At this point in time, a SIP domain should already exist there for Skype for Business Server.</span></span> <span data-ttu-id="f9d08-150">Espandere l' **area di ricerca in avanti** per il dominio SIP oppure aprirla.</span><span class="sxs-lookup"><span data-stu-id="f9d08-150">Expand the **Forward Lookup Zone** for this SIP domain, or otherwise open it up.</span></span>
+    
+3. <span data-ttu-id="f9d08-151">Prendere un momento per vedere quale delle seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-151">Take a moment to see which of the following you have:</span></span>
+    
+   - <span data-ttu-id="f9d08-152">Tutti i record host A o AAAA per il server front-end (standard o Enterprise) o i pool di front-end.</span><span class="sxs-lookup"><span data-stu-id="f9d08-152">Any host A or AAAA records for your Front End Server (Standard or Enterprise) or Front End pool(s).</span></span>
+    
+   - <span data-ttu-id="f9d08-153">Tutti i record host A o AAAA per un pool di Director o Director (una configurazione facoltativa che si può avere nella distribuzione).</span><span class="sxs-lookup"><span data-stu-id="f9d08-153">Any host A or AAAA records for a Director or Director pool (an optional configuration you may have in your deployment).</span></span>
+    
+4. <span data-ttu-id="f9d08-154">Una volta che hai queste informazioni, dovresti essere in grado di selezionare un'opzione per la creazione di un **nuovo alias (CNAME)**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-154">Once you have that information, you should be able to select an option for creating a **New Alias (CNAME)**.</span></span>
+    
+5. <span data-ttu-id="f9d08-155">Ora dovresti essere in grado di immettere un **nome alias**, devi immettere Lyncdiscover qui per l'URL del servizio di individuazione automatica esterna.</span><span class="sxs-lookup"><span data-stu-id="f9d08-155">Now you should be able to enter an **Alias Name**, you need to enter lyncdiscover here for the external Autodiscover service URL.</span></span>
+    
+6. <span data-ttu-id="f9d08-156">A questo punto deve essere presente un'area da immettere in un **nome di dominio completo per l'host di destinazione**, che dovrà essere il nome di dominio completo per il pool Front-End (o un singolo server front-end o un pool di Director o un amministratore) identificato nel passaggio 3.</span><span class="sxs-lookup"><span data-stu-id="f9d08-156">Next there should be an area to enter in a **FQDN for target host**, this will need to be the FQDN for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 3 above.</span></span>
+    
+7. <span data-ttu-id="f9d08-157">Potrebbe essere necessario salvare qui o se è necessario creare altri record CNAME nell'area di ricerca diretta di ogni dominio SIP nell'ambiente di Skype for Business Server, ma una volta pronti, salvare il lavoro.</span><span class="sxs-lookup"><span data-stu-id="f9d08-157">You may need to save here, or if you need to create additional CNAME records in the forward lookup zone of each SIP domain in your Skype for Business Server environment, you should do that, but once you're ready, save your work.</span></span>
+    
+### <a name="create-an-internal-dns-a-record"></a><span data-ttu-id="f9d08-158">Creare un record DNS interno</span><span class="sxs-lookup"><span data-stu-id="f9d08-158">Create an internal DNS A record</span></span>
+
+1. <span data-ttu-id="f9d08-159">Accedere a un server DNS della rete che sia un membro del gruppo **Domain Admins** o del gruppo **DnsAdmins** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-159">Log into a DNS server in your network that's either a member of the **Domain Admins** group or the **DnsAdmins** group.</span></span>
+    
+2. <span data-ttu-id="f9d08-160">Fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione** (potrebbe essere necessario **cercarlo** se non si tratta di un'opzione dal menu Start), quindi fare clic su **DNS** per aprire lo snap-in amministrativo DNS.</span><span class="sxs-lookup"><span data-stu-id="f9d08-160">Click **Start**, Choose **Administrative Tools** (you may need to **Search** for it if it's not an option off the Start menu), and then click **DNS** to open the DNS administrative snap-in.</span></span>
+    
+3. <span data-ttu-id="f9d08-161">Nel riquadro sinistro della finestra della console è necessario passare al dominio che ospita i server front-end di Skype for Business Server ed espandere le **aree di ricerca in avanti** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-161">In the left-hand pane of the console window, you'll need to go to the domain that's home to your Skype for Business Server's Front End Servers, and expand the **Forward Lookup Zones** there.</span></span>
+    
+4. <span data-ttu-id="f9d08-162">Prendere un momento per vedere quale delle seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-162">Take a moment to see which of the following you have:</span></span>
+    
+   - <span data-ttu-id="f9d08-163">Tutti i record host A o AAAA per il server front-end (standard o Enterprise) o i pool di front-end.</span><span class="sxs-lookup"><span data-stu-id="f9d08-163">Any host A or AAAA records for your Front End Server (Standard or Enterprise) or Front End pool(s).</span></span>
+    
+   - <span data-ttu-id="f9d08-164">Tutti i record host A o AAAA per un pool di Director o Director (una configurazione facoltativa che si può avere nella distribuzione).</span><span class="sxs-lookup"><span data-stu-id="f9d08-164">Any host A or AAAA records for a Director or Director pool (an optional configuration you may have in your deployment).</span></span>
+    
+5. <span data-ttu-id="f9d08-165">Dopo aver notato questo, fare clic con il pulsante destro del mouse sul nome di dominio SIP e quindi scegliere **nuovo host (A o AAAA)** dal menu.</span><span class="sxs-lookup"><span data-stu-id="f9d08-165">Once you've noted this, right-click your SIP domain name, and then choose **New Host (A or AAAA)** from the menu.</span></span>
+    
+6. <span data-ttu-id="f9d08-166">Nella casella di testo **nome** Digitare lyncdiscoverinternal per il nome host, per l'URL del servizio di individuazione automatica interno.</span><span class="sxs-lookup"><span data-stu-id="f9d08-166">In the **Name** textbox, type lyncdiscoverinternal for your host name, for the internal Autodiscover service URL.</span></span>
+    
+7. <span data-ttu-id="f9d08-167">Nella casella di testo **indirizzo IP** Digitare l'indirizzo IP dei servizi Web interni per il pool Front-End (o un singolo server front-end o un pool o un Director di Director) identificato nel passaggio 4.</span><span class="sxs-lookup"><span data-stu-id="f9d08-167">In the **IP Address** textbox, type the internal Web Services IP address for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 4 above.</span></span>
+    
+8. <span data-ttu-id="f9d08-168">Al termine, fare clic su **Aggiungi host**e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-168">When this is done, click **Add Host**, and then click **OK**.</span></span>
+    
+9. <span data-ttu-id="f9d08-169">È necessario creare un nuovo record di individuazione automatica a o AAAA nella zona di ricerca inoltra per ogni dominio SIP supportato nell'ambiente di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="f9d08-169">You'll need to create a new Autodiscover A or AAAA records in the forward lookup zone for each SIP domain supported in your Skype for Business Server environment.</span></span> <span data-ttu-id="f9d08-170">A tale scopo, ripetere i passaggi 6-8 tutte le volte necessarie.</span><span class="sxs-lookup"><span data-stu-id="f9d08-170">To do this, repeat steps 6-8 as many times as needed.</span></span>
+    
+10. <span data-ttu-id="f9d08-171">Al termine, fare clic su **fine**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-171">When you're done, click **Done**.</span></span>
+    
+### <a name="create-an-external-dns-a-record"></a><span data-ttu-id="f9d08-172">Creare un record DNS esterno</span><span class="sxs-lookup"><span data-stu-id="f9d08-172">Create an external DNS A record</span></span>
+
+1. <span data-ttu-id="f9d08-173">Questi passaggi sono generici, perché non è possibile indicare il provider DNS pubblico che si sta usando, ma si vuole comunque aiutarti. Accedere al provider DNS pubblico con un account che consentirà di creare nuovi record DNS.</span><span class="sxs-lookup"><span data-stu-id="f9d08-173">These steps are generic, because we can't tell what public DNS provider you might be using, but we still want to help you out. Please log into your public DNS provider with an account that will be able to make new DNS records there.</span></span>
+    
+2. <span data-ttu-id="f9d08-174">A questo punto, un dominio SIP dovrebbe già esistere per Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="f9d08-174">At this point in time, a SIP domain should already exist there for Skype for Business Server.</span></span> <span data-ttu-id="f9d08-175">Espandere l' **area di ricerca in avanti** per il dominio SIP oppure aprirla.</span><span class="sxs-lookup"><span data-stu-id="f9d08-175">Expand the **Forward Lookup Zone** for this SIP domain, or otherwise open it up.</span></span>
+    
+3. <span data-ttu-id="f9d08-176">Prendere un momento per vedere quale delle seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-176">Take a moment to see which of the following you have:</span></span>
+    
+   - <span data-ttu-id="f9d08-177">Tutti i record host A o AAAA per il server front-end (standard o Enterprise) o i pool di front-end.</span><span class="sxs-lookup"><span data-stu-id="f9d08-177">Any host A or AAAA records for your Front End Server (Standard or Enterprise) or Front End pool(s).</span></span>
+    
+   - <span data-ttu-id="f9d08-178">Tutti i record host A o AAAA per un pool di Director o Director (una configurazione facoltativa che si può avere nella distribuzione).</span><span class="sxs-lookup"><span data-stu-id="f9d08-178">Any host A or AAAA records for a Director or Director pool (an optional configuration you may have in your deployment).</span></span>
+    
+4. <span data-ttu-id="f9d08-179">Una volta che hai queste informazioni, dovresti essere in grado di selezionare un'opzione per la creazione di un **nuovo host a o AAAA**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-179">Once you have that information, you should be able to select an option for creating a **New Host A or AAAA**.</span></span>
+    
+5. <span data-ttu-id="f9d08-180">Ora dovrebbe essere possibile immettere un **nome**, è necessario immettere Lyncdiscover qui per l'URL del servizio di individuazione automatica esterna.</span><span class="sxs-lookup"><span data-stu-id="f9d08-180">Now you should be able to enter a **Name**, you need to enter lyncdiscover here for the external Autodiscover service URL.</span></span>
+    
+6. <span data-ttu-id="f9d08-181">A questo punto dovrebbe essere presente un'area da immettere in un **indirizzo IP**, che dovrà essere l'IP per il pool Front-End (o un singolo server front-end o un pool di Director o un direttore), identificato nel passaggio 3.</span><span class="sxs-lookup"><span data-stu-id="f9d08-181">Next there should be an area to enter in a **IP Addresss**, this will need to be the IP for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 3 above.</span></span>
+    
+7. <span data-ttu-id="f9d08-182">Potrebbe essere necessario salvare qui o se è necessario creare altri record a o AAAA nella zona di ricerca diretta di ogni dominio SIP per l'ambiente di Skype for Business Server, ma una volta pronti, salvare il lavoro.</span><span class="sxs-lookup"><span data-stu-id="f9d08-182">You may need to save here, or if you need to create additional A or AAAA records in the forward lookup zone of each SIP domain for your Skype for Business Server environment, you should do that, but once you're ready, save your work.</span></span>
+    
+## <a name="modify-certificates"></a><span data-ttu-id="f9d08-183">Modificare i certificati</span><span class="sxs-lookup"><span data-stu-id="f9d08-183">Modify certificates</span></span>
+<span data-ttu-id="f9d08-184"><a name="ModCerts"> </a></span><span class="sxs-lookup"><span data-stu-id="f9d08-184"></span></span>
+
+<span data-ttu-id="f9d08-185">In caso di domande sulla pianificazione dei certificati, è stato documentato l'articolo [relativo al piano per la mobilità per Skype for Business Server](../plan-your-deployment/mobility.md) .</span><span class="sxs-lookup"><span data-stu-id="f9d08-185">If you have questions about Planning around certificates, we've documented that in our [Plan for Mobility for Skype for Business Server](../plan-your-deployment/mobility.md) article.</span></span> <span data-ttu-id="f9d08-186">Dopo aver esaminato questo argomento, verranno illustrati i passaggi seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-186">Once you've reviewed that, we'll walk you through the following:</span></span>
+  
+- <span data-ttu-id="f9d08-187">Sono necessari nuovi certificati?</span><span class="sxs-lookup"><span data-stu-id="f9d08-187">Do I need new certificates?</span></span>
+    
+- <span data-ttu-id="f9d08-188">Richiedere nuovi certificati dall'autorità di certificazione (CA).</span><span class="sxs-lookup"><span data-stu-id="f9d08-188">Requesting new certificates from your Certificate Authority (CA).</span></span>
+    
+- <span data-ttu-id="f9d08-189">Aggiornare i certificati sul posto con le sostituzioni che usano PowerShell.</span><span class="sxs-lookup"><span data-stu-id="f9d08-189">Updating your in-place certificates with the replacements using PowerShell.</span></span>
+    
+- <span data-ttu-id="f9d08-190">Controllo dei certificati tramite lo snap-in certificati in Microsoft Management Console (MMC).</span><span class="sxs-lookup"><span data-stu-id="f9d08-190">Checking the certificates using the Certificates snapin in the Microsoft Management Console (MMC).</span></span>
+    
+### <a name="do-i-need-new-certificates"></a><span data-ttu-id="f9d08-191">Sono necessari nuovi certificati?</span><span class="sxs-lookup"><span data-stu-id="f9d08-191">Do I need new certificates?</span></span>
+
+1. <span data-ttu-id="f9d08-192">Prima di tutto, potrebbe essere necessario controllare e verificare quali certificati sono sul posto e se hanno o meno le voci necessarie.</span><span class="sxs-lookup"><span data-stu-id="f9d08-192">First, you may need to check and see what certificates are in-place, and whether or not they have the entries you need.</span></span> <span data-ttu-id="f9d08-193">Per eseguire questa operazione, devi accedere al server Skype for business con un account che è un amministratore locale.</span><span class="sxs-lookup"><span data-stu-id="f9d08-193">To do that, you'll need to log into your Skype for Business Server with an account that's a local Administrator.</span></span> <span data-ttu-id="f9d08-194">Questo account può anche essere necessario avere diritti per l'autorità di certificazione (CA) emittente, per alcuni di questi passaggi.</span><span class="sxs-lookup"><span data-stu-id="f9d08-194">This account may also need to have rights to the issuing Certificate Authority (CA), for some of these steps.</span></span>
+    
+2. <span data-ttu-id="f9d08-195">Aprire Skype for Business Server Management Shell (è possibile usare la funzione di ricerca per trovarlo se non è stato aggiunto al menu Start o alla barra delle applicazioni).</span><span class="sxs-lookup"><span data-stu-id="f9d08-195">Open the Skype for Business Server Management Shell (you can use Search to find it if you don't have it pinned to your Start menu or task bar).</span></span>
+    
+3. <span data-ttu-id="f9d08-196">Sarà essenziale sapere quali certificati sono stati assegnati prima di provare ad aggiungere un certificato aggiornato.</span><span class="sxs-lookup"><span data-stu-id="f9d08-196">It's going to be essential for you to know what certificates have been assigned before you try adding an updated certificate.</span></span> <span data-ttu-id="f9d08-197">Quindi, al comando digitare:</span><span class="sxs-lookup"><span data-stu-id="f9d08-197">So at the command, type:</span></span>
+    
+   ```
+   Get-CsCertificate
+   ```
+
+4. <span data-ttu-id="f9d08-198">Le informazioni del passaggio 3 saranno univoche per l'utente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-198">The information from Step 3 will be unique to you.</span></span> <span data-ttu-id="f9d08-199">È necessario esaminarlo per determinare se si dispone di un singolo certificato assegnato per più elementi o se è stato assegnato un certificato diverso per i diversi componenti che ne hanno bisogno.</span><span class="sxs-lookup"><span data-stu-id="f9d08-199">You need to look it over to determine if you have a single certificate that's been assigned for multiple things, or whether you have a different certificate assigned for the different components that need them.</span></span> <span data-ttu-id="f9d08-200">Il parametro **use** indica il modo in cui viene usato un certificato e il parametro **identificazione personale** indica se si tratta dello stesso certificato o di più certificati.</span><span class="sxs-lookup"><span data-stu-id="f9d08-200">The **Use** parameter will tell you how a certificate's being used, and the **Thumbprint** parameter will tell you if it's all the same certificate, or multiple certs.</span></span>
+    
+5. <span data-ttu-id="f9d08-201">Se sono state consigliate le voci SAN nella sezione pianificazione, è consigliabile.</span><span class="sxs-lookup"><span data-stu-id="f9d08-201">If you have the SAN entries recommended in our Planning section, you're good.</span></span> <span data-ttu-id="f9d08-202">In caso contrario, è necessario richiedere un nuovo certificato oppure più certificati (a seconda della configurazione) dell'autorità di certificazione.</span><span class="sxs-lookup"><span data-stu-id="f9d08-202">If not, you'll need to request a new certificate, or multiple certificates (depending on your configuration) from your Certificate Authority.</span></span>
+    
+### <a name="request-a-new-certificate-or-certificates-from-your-certificate-authority-ca"></a><span data-ttu-id="f9d08-203">Richiedere un nuovo certificato o certificati dall'autorità di certificazione (CA)</span><span class="sxs-lookup"><span data-stu-id="f9d08-203">Request a new certificate, or certificates, from your Certificate Authority (CA)</span></span>
+
+1. <span data-ttu-id="f9d08-204">Dopo aver controllato per vedere quali sono le voci di SAN che si hanno, si è certi di avere un **singolo certificato** (dopo il controllo tramite la procedura descritta sopra) e si è appreso che non si hanno tutte le voci necessarie.</span><span class="sxs-lookup"><span data-stu-id="f9d08-204">After you've checked to see what SAN entries you have, you know you have a **single certificate** (after checking via the steps above), and you learned you don't have all the entries you need.</span></span> <span data-ttu-id="f9d08-205">È necessario apportare una nuova richiesta di certificato alla CA.</span><span class="sxs-lookup"><span data-stu-id="f9d08-205">A new certificate request needs to be made to your CA.</span></span> <span data-ttu-id="f9d08-206">Aprire la finestra di PowerShell per Skype for Business Server:</span><span class="sxs-lookup"><span data-stu-id="f9d08-206">Open your Skype for Business Server PowerShell:</span></span>
+    
+   - <span data-ttu-id="f9d08-207">Per un SAN servizio di individuazione automatica mancante (sostituendo il parametro-CA con il percorso dell'autorità di certificazione):</span><span class="sxs-lookup"><span data-stu-id="f9d08-207">For a missing Autodiscover Service SAN (replacing the -Ca parameter with your own Certificate Authority path):</span></span>
+    
+   ```
+   Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -Ca dc\myca -AllSipDomain -verbose
+   ```
+
+   - <span data-ttu-id="f9d08-208">Ora, se si hanno più domini SIP, non è possibile usare il parametro AllSipDomain come illustrato nell'esempio precedente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-208">Now, if you have multiple SIP domains, you can't use the AllSipDomain parameter as in the example above.</span></span> <span data-ttu-id="f9d08-209">Devi invece usare il parametro DomainName.</span><span class="sxs-lookup"><span data-stu-id="f9d08-209">You'll need to use the DomainName parameter instead.</span></span> <span data-ttu-id="f9d08-210">Quando si usa il parametro DomainName, è necessario definire il nome di dominio completo per i record LyncdiscoverInternal e lyncdiscover.</span><span class="sxs-lookup"><span data-stu-id="f9d08-210">And when you use the DomainName parameter, you've got to define the FQDN for the lyncdiscoverinternal and lyncdiscover records.</span></span> <span data-ttu-id="f9d08-211">Un esempio potrebbe essere (sostituendo il parametro-CA con il proprio percorso dell'autorità di certificazione):</span><span class="sxs-lookup"><span data-stu-id="f9d08-211">An example would be (replacing the -Ca parameter with your own Certificate Authority path):</span></span>
+    
+   ```
+   Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -Ca dc\myca -DomainName "LyncdiscoverInternal.contoso.com, LyncdiscoverInternal.contoso.net" -verbose
+   ```
+
+2. <span data-ttu-id="f9d08-212">In alternativa, dopo aver controllato per vedere quali sono le voci di SAN, è stato rilevato che sono presenti **più certificati** che non dispongono di tutte le voci necessarie.</span><span class="sxs-lookup"><span data-stu-id="f9d08-212">Or, after you've checked to see what SAN entries you have, you found you have **multiple certificates** that don't have all the entries you need.</span></span> <span data-ttu-id="f9d08-213">È necessario apportare una nuova richiesta di certificato alla CA.</span><span class="sxs-lookup"><span data-stu-id="f9d08-213">A new certificate request needs to be made to your CA.</span></span> <span data-ttu-id="f9d08-214">Aprire la finestra di PowerShell per Skype for Business Server:</span><span class="sxs-lookup"><span data-stu-id="f9d08-214">Open your Skype for Business Server PowerShell:</span></span>
+    
+   - <span data-ttu-id="f9d08-215">Per un SAN servizio di individuazione automatica mancante (sostituendo il parametro-CA con il percorso dell'autorità di certificazione):</span><span class="sxs-lookup"><span data-stu-id="f9d08-215">For a missing Autodiscover Service SAN (replacing the -Ca parameter with your own Certificate Authority path):</span></span>
+    
+   ```
+   Request-CsCertificate -New -Type WebServicesInternal -Ca dc\myca -AllSipDomain -verbose
+   ```
+
+   - <span data-ttu-id="f9d08-216">Ora, se si hanno più domini SIP, non è possibile usare il parametro AllSipDomain come illustrato nell'esempio precedente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-216">Now, if you have multiple SIP domains, you can't use the AllSipDomain parameter as in the example above.</span></span> <span data-ttu-id="f9d08-217">Devi invece usare il parametro DomainName.</span><span class="sxs-lookup"><span data-stu-id="f9d08-217">You'll need to use the DomainName parameter instead.</span></span> <span data-ttu-id="f9d08-218">Quando si usa il parametro DomainName, è necessario definire il nome di dominio completo per i record LyncdiscoverInternal e lyncdiscover.</span><span class="sxs-lookup"><span data-stu-id="f9d08-218">And when you use the DomainName parameter, you've got to define the FQDN for the lyncdiscoverinternal and lyncdiscover records.</span></span> <span data-ttu-id="f9d08-219">Gli esempi potrebbero essere (sostituendo il parametro-CA con il percorso dell'autorità di certificazione):</span><span class="sxs-lookup"><span data-stu-id="f9d08-219">Examples would be (replacing the -Ca parameter with your own Certificate Authority path):</span></span>
+    
+   ```
+   Request-CsCertificate -New -Type WebServicesInternal -Ca dc\myca -DomainName "LyncdiscoverInternal.contoso.com, LyncdiscoverInternal.contoso.net" -verbose
+   ```
+
+   ```
+   Request-CsCertificate -New -Type WebServicesExternal -Ca dc\myca -DomainName "Lyncdiscover.contoso.com, Lyncdiscover.contoso.net" -verbose
+   ```
+
+   - <span data-ttu-id="f9d08-220">Una volta generati i nuovi certificati dalla CA, sarà necessario assegnarli.</span><span class="sxs-lookup"><span data-stu-id="f9d08-220">Once the new certificates have been generated by the CA, you're going to need to assign them.</span></span>
+    
+### <a name="assign-certificates-using-skype-for-business-server-management-shell"></a><span data-ttu-id="f9d08-221">Assegnare certificati con Skype for Business Server Management Shell</span><span class="sxs-lookup"><span data-stu-id="f9d08-221">Assign certificates using Skype for Business Server Management Shell</span></span>
+
+- <span data-ttu-id="f9d08-222">A seconda di cosa è stato trovato nella sezione non sono necessarie nuove certificazioni, è necessario eseguire **una** delle operazioni seguenti.</span><span class="sxs-lookup"><span data-stu-id="f9d08-222">Depending on what you found in the Do I need new certifications section above, you need to run **one** of the following.</span></span>
+    
+  - <span data-ttu-id="f9d08-223">Se si dispone di un singolo certificato per tutto (le identificazioni personali sono identiche), è necessario eseguire questa operazione:</span><span class="sxs-lookup"><span data-stu-id="f9d08-223">If you have a single certificate for everything (the thumbprints are identical) then you need to run this:</span></span>
+    
+  ```
+  Set-CsCertificate -Type <certificate(s) from the Use parameter> -Thumbprint <unique identifier>
+  ```
+
+  - <span data-ttu-id="f9d08-224">Se si hanno certificati diversi per gli elementi (le identificazioni personali sono tutte diverse), eseguire questa operazione:</span><span class="sxs-lookup"><span data-stu-id="f9d08-224">If you've got different certificates for things (the thumbprints are all different), run this instead:</span></span>
+    
+  ```
+  Set-CsCertificate -Type Default -Thumbprint <certificate thumbprint>
+  Set-CsCertificate -Type WebServicesInternal -Thumbprint <certificate thumbprint>
+  Set-CsCertificate -Type WebServicesExternal -Thumbprint <certificate thumbprint>
+  ```
+
+### <a name="viewing-certificates-in-the-microsoft-management-console-mmc"></a><span data-ttu-id="f9d08-225">Visualizzazione di certificati in Microsoft Management Console (MMC)</span><span class="sxs-lookup"><span data-stu-id="f9d08-225">Viewing certificates in the Microsoft Management Console (MMC)</span></span>
+
+1. <span data-ttu-id="f9d08-226">È possibile esaminare i certificati usando lo snap-in certificati per MMC.</span><span class="sxs-lookup"><span data-stu-id="f9d08-226">You have an option to look at your certificates using the Certificates snap-in for the MMC.</span></span> <span data-ttu-id="f9d08-227">È sufficiente digitare MMC nella ricerca e dovrebbe essere visualizzata come opzione per l'applicazione.</span><span class="sxs-lookup"><span data-stu-id="f9d08-227">Simply type MMC into search and it should pop up as an application option,.</span></span>
+    
+2. <span data-ttu-id="f9d08-228">Per aggiungere lo snap-in certificati, è necessario fare clic su **file**e quindi su **Aggiungi/Rimuovi snap-in...** (o anche tasti di scelta rapida **CTRL + M** funzionerebbe).</span><span class="sxs-lookup"><span data-stu-id="f9d08-228">To add the Certificates snap-in, you'll need to click **File**, and then **Add/Remove Snap-In...** (or keyboard shortcut **Ctrl+M** would also work).</span></span> <span data-ttu-id="f9d08-229">I **certificati** saranno un'opzione nel riquadro sinistro, selezionarla e quindi l'account del **computer** nella finestra popup, quindi fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-229">**Certificates** will be an option in the left-hand pane, select it and then **Computer Account** in the pop-up window, then **Next**.</span></span>
+    
+3. <span data-ttu-id="f9d08-230">Sempre nella finestra popup, con ogni probabilità si sta eseguendo questa operazione nel computer che ospita i certificati che è necessario esaminare, quindi lascia la selezione nel **computer locale** , se è così.</span><span class="sxs-lookup"><span data-stu-id="f9d08-230">Still in the pop-up window, in all likelihood you're doing this on the computer that's home to the certificates you need to look at, so leave the selection on **Local Computer** if that's so.</span></span> <span data-ttu-id="f9d08-231">Se si sta lavorando a un computer remoto, cambiare il pulsante di opzione in **un altro PC** e quindi immettere il nome di dominio completo del computer o usare il pulsante **Sfoglia** per cercare il computer tramite Active Directory.</span><span class="sxs-lookup"><span data-stu-id="f9d08-231">If you're working on a remote machine, change the radio button to **Another Computer** and then either enter that computer's FQDN or use the **Browse** button to search for that computer through AD.</span></span> <span data-ttu-id="f9d08-232">Dopo aver selezionato il computer, è necessario fare clic su **fine** quando è pronto e quindi su **OK** per aggiungere lo snap-in alla console MMC.</span><span class="sxs-lookup"><span data-stu-id="f9d08-232">After selecting the computer, you'll need to click **Finish** when ready, and then **OK** to add the snap-in to the MMC.</span></span>
+    
+4. <span data-ttu-id="f9d08-233">Espandere la sezione **certificati** nel riquadro sinistro di MMC.</span><span class="sxs-lookup"><span data-stu-id="f9d08-233">Expand the **Certificates** section in the MMC's left-hand pane.</span></span> <span data-ttu-id="f9d08-234">Espandere anche la cartella **personale** e quindi selezionare **certificati**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-234">Expand the **Personal** folder as well, and then select **Certificates**.</span></span> <span data-ttu-id="f9d08-235">In questo modo è possibile visualizzare i certificati in questo archivio.</span><span class="sxs-lookup"><span data-stu-id="f9d08-235">This lets you see the certificates in this store.</span></span>
+    
+5. <span data-ttu-id="f9d08-236">È necessario individuare il certificato che si vuole visualizzare, fare clic con il pulsante destro del mouse su di esso e scegliere **Apri**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-236">You need to locate the certificate you want to view, right-click on it, and choose **Open**.</span></span>
+    
+    > [!NOTE]
+    > <span data-ttu-id="f9d08-237">Come si può verificare quale certificato si tratta?</span><span class="sxs-lookup"><span data-stu-id="f9d08-237">How do you know what certificate this is?</span></span> <span data-ttu-id="f9d08-238">Dovrebbe essere il singolo certificato assegnato a tutto il contenuto della farm oppure avere più certificati per elementi diversi, ad esempio i servizi Web interni e così via, in questo caso potrebbe essere necessario esaminare più certificati.</span><span class="sxs-lookup"><span data-stu-id="f9d08-238">It should be either the single certificate assigned to everything for your farm, or you may have multiple certificates for different things, like Default, Internal Web Services, etc., in which case you may need to look at multiple certificates.</span></span> <span data-ttu-id="f9d08-239">Più certificati avranno la stessa identificazione personale.</span><span class="sxs-lookup"><span data-stu-id="f9d08-239">Multiple certificates will have the same thumbprint.</span></span> 
+  
+6. <span data-ttu-id="f9d08-240">Dopo aver ottenuto la visualizzazione **certificato** , scegliere **Dettagli**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-240">Once you've gotten to the **Certificate** view, choose **Details**.</span></span> <span data-ttu-id="f9d08-241">In questo modo viene visualizzato il nome del soggetto del certificato quando si seleziona **oggetto**e viene visualizzato il nome del soggetto assegnato e le proprietà associate.</span><span class="sxs-lookup"><span data-stu-id="f9d08-241">This will let you see the certificate subject name when you select **Subject**, and the assigned subject name and associated properties are shown.</span></span>
+    
+7. <span data-ttu-id="f9d08-242">Dovrai anche controllare le voci del **nome alternativo oggetto** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-242">You'll also need to check the **Subject Alternate Name** entries.</span></span> <span data-ttu-id="f9d08-243">È possibile trovare una o più delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-243">You'll find one or more of the following:</span></span>
+    
+   - <span data-ttu-id="f9d08-244">Il nome del pool per il pool o il nome del server singolo se non si tratta di un pool.</span><span class="sxs-lookup"><span data-stu-id="f9d08-244">The pool name for this pool, or the single server name if this isn't a pool.</span></span>
+    
+   - <span data-ttu-id="f9d08-245">Il nome del server a cui è assegnato il certificato.</span><span class="sxs-lookup"><span data-stu-id="f9d08-245">The server name that the certificate is assigned to.</span></span>
+    
+   - <span data-ttu-id="f9d08-246">Record URL semplici, in genere soddisfano e effettuano la chiamata.</span><span class="sxs-lookup"><span data-stu-id="f9d08-246">Simple URL records, typically meet and dialin.</span></span>
+    
+   - <span data-ttu-id="f9d08-247">Servizi Web Internal e Web Services External names (ad esempio, webpool01.contoso.net, webpool01.contoso.com), in base alle scelte effettuate in Generatore di topologia e alle selezioni di servizi Web sovrascritte.</span><span class="sxs-lookup"><span data-stu-id="f9d08-247">Web Services internal and Web Services external names (for example, webpool01.contoso.net, webpool01.contoso.com), based on choices made in Topology Builder and over-ridden Web Services selections.</span></span>
+    
+   - <span data-ttu-id="f9d08-248">Se è già stata assegnata, Lyncdiscover. \<SipDomain\> e lyncdiscoverinternal. \<record\> di SipDomain.</span><span class="sxs-lookup"><span data-stu-id="f9d08-248">If already assigned, the lyncdiscover.\<sipdomain\> and lyncdiscoverinternal.\<sipdomain\> records.</span></span>
+    
+     <span data-ttu-id="f9d08-249">È necessario controllare più certificati se sono stati assegnati più di uno (selezionare la nota precedente).</span><span class="sxs-lookup"><span data-stu-id="f9d08-249">You'll need to check multiple certificates if you have more than one assigned (check the Note above).</span></span>
+    
+8. <span data-ttu-id="f9d08-250">Quindi, se trovi lyncdiscover. \<SipDomain\> e lyncdiscoverinternal. \<SipDomain\> Records, questa configurazione è già stata configurata.</span><span class="sxs-lookup"><span data-stu-id="f9d08-250">So, if you find lyncdiscover.\<sipdomain\> and lyncdiscoverinternal.\<sipdomain\> records, you've got this configured already.</span></span> <span data-ttu-id="f9d08-251">È possibile chiudere la console MMC.</span><span class="sxs-lookup"><span data-stu-id="f9d08-251">You can close the MMC.</span></span>
+    
+9. <span data-ttu-id="f9d08-252">Se non sono assegnati, è necessario effettuare una nuova richiesta di certificato (sopra sopra) oppure è necessario installarla dopo la richiesta (è consigliabile eseguire la seguente procedura di PowerShell).</span><span class="sxs-lookup"><span data-stu-id="f9d08-252">If they aren't assigned, you'll either need to make a new certificate request (outlined above) or you need to install them post-request (we recommend the following the PowerShell above for that).</span></span>
+    
+## <a name="configure-the-reverse-proxy"></a><span data-ttu-id="f9d08-253">Configurare il proxy inverso</span><span class="sxs-lookup"><span data-stu-id="f9d08-253">Configure the reverse proxy</span></span>
+<span data-ttu-id="f9d08-254"><a name="ConfigRP"> </a></span><span class="sxs-lookup"><span data-stu-id="f9d08-254"></span></span>
+
+<span data-ttu-id="f9d08-255">La procedura seguente non è destinata a essere seguita esattamente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-255">The steps below are not meant to be followed exactly.</span></span> <span data-ttu-id="f9d08-256">Il motivo è che nelle versioni precedenti del prodotto, ad esempio, è stata configurata la configurazione di Threat Management Gateway (TMG) e, se non è stato usato, è necessario elaborare una versione personalizzata.</span><span class="sxs-lookup"><span data-stu-id="f9d08-256">That's because in previous versions of the product, we'd have walked you through, for example, configuring Threat Management Gateway (TMG) and if you weren't using that, you'd need to work out your own version from there.</span></span>
+  
+<span data-ttu-id="f9d08-257">TMG non viene più offerto da Microsoft come prodotto e, se è comunque necessario configurarlo, è possibile esaminare i [passaggi di 2013 di Lync Server](https://technet.microsoft.com/en-us/library/hh690011%28v=ocs.15%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="f9d08-257">TMG is no longer being offered by Microsoft as a product, and if you still need to configure it, you can look at the [Lync Server 2013 steps](https://technet.microsoft.com/en-us/library/hh690011%28v=ocs.15%29.aspx).</span></span> <span data-ttu-id="f9d08-258">Ma le informazioni seguenti sono destinate a essere più in generale utili, anche se non c'è modo in cui possiamo eseguire procedure dettagliate specifiche per ogni proxy inverso.</span><span class="sxs-lookup"><span data-stu-id="f9d08-258">But the following information's intended to be more generally helpful, even if there's no way we can provide specific walkthrough steps for every Reverse proxy out there.</span></span>
+  
+<span data-ttu-id="f9d08-259">Ci sono due aspetti principali da considerare:</span><span class="sxs-lookup"><span data-stu-id="f9d08-259">We have two main things to consider:</span></span>
+  
+- <span data-ttu-id="f9d08-260">Si sta andando a eseguire la richiesta di individuazione automatica iniziale tramite HTTPS (che è consigliabile)?</span><span class="sxs-lookup"><span data-stu-id="f9d08-260">Are you going to be doing your initial Autodiscover request over HTTPS (which we recommend)?</span></span>
+    
+  - <span data-ttu-id="f9d08-261">Se si ha una regola di pubblicazione Web, è necessario modificarla.</span><span class="sxs-lookup"><span data-stu-id="f9d08-261">If you have a web publishing rule, you need to modify it.</span></span>
+    
+  - <span data-ttu-id="f9d08-262">Se non si ha ancora una regola di pubblicazione Web, è necessario crearla.</span><span class="sxs-lookup"><span data-stu-id="f9d08-262">If you don't have a web publishing rule yet, you need to create it.</span></span>
+    
+- <span data-ttu-id="f9d08-263">Se si sta eseguendo la richiesta di individuazione automatica tramite HTTP, è necessario creare o modificare anche la regola.</span><span class="sxs-lookup"><span data-stu-id="f9d08-263">If you're doing your initial Autodiscover request over HTTP, then you'll need to create or modify that rule as well.</span></span>
+    
+> [!NOTE]
+> <span data-ttu-id="f9d08-264">**Importante** Un valore di timeout proxy è un numero che può variare dalla distribuzione alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="f9d08-264">**Important** A Proxy time-out value is a number that will vary from deployment to deployment.</span></span> <span data-ttu-id="f9d08-265">È consigliabile monitorare la distribuzione e modificare il valore per l'esperienza ottimale per i client.</span><span class="sxs-lookup"><span data-stu-id="f9d08-265">You should monitor your deployment and modify the value for the best experience for clients.</span></span> <span data-ttu-id="f9d08-266">Potresti essere in grado di impostare il valore in basso come 200.</span><span class="sxs-lookup"><span data-stu-id="f9d08-266">You may be able to set the value as low as 200.</span></span> <span data-ttu-id="f9d08-267">Se si supportano client mobili Lync nell'ambiente, è necessario impostare il valore su 960 per consentire i timeout delle notifiche push da Office 365, che hanno un valore di timeout di 900.</span><span class="sxs-lookup"><span data-stu-id="f9d08-267">If you are supporting Lync mobile clients in your environment, you should set the value to 960 to allow for push notification time-outs from Office 365, which have a time-out value of 900.</span></span> <span data-ttu-id="f9d08-268">È molto probabile che sia necessario aumentare il valore di timeout per evitare la disconnessione del client quando il valore è troppo basso o ridurre il numero se le connessioni tramite il proxy non si disconnettono, ma si cancellano molto tempo dopo la disconnessione del client.</span><span class="sxs-lookup"><span data-stu-id="f9d08-268">It is very likely that you will have to increase the time-out value to avoid client disconnects when the value is too low, or decrease the number if connections through the proxy do not disconnect but clear long after the client has disconnected.</span></span> <span data-ttu-id="f9d08-269">Il monitoraggio e la previsione delle operazioni usuali per l'ambiente sono l'unico modo esatto per determinare l'impostazione appropriata per questo valore.</span><span class="sxs-lookup"><span data-stu-id="f9d08-269">Monitoring and baselining what is usual for your environment is the only accurate way to determine the appropriate setting for this value.</span></span>
+  
+### <a name="modify-the-existing-web-publishing-rule-for-your-external-autodiscover-san-and-url"></a><span data-ttu-id="f9d08-270">Modificare la regola di pubblicazione Web esistente per la SAN e l'URL di individuazione automatica esterna</span><span class="sxs-lookup"><span data-stu-id="f9d08-270">Modify the existing web publishing rule for your external Autodiscover SAN and URL</span></span>
+
+1. <span data-ttu-id="f9d08-271">Aprire l'interfaccia proxy inverso.</span><span class="sxs-lookup"><span data-stu-id="f9d08-271">Open your Reverse proxy interface.</span></span>
+    
+2. <span data-ttu-id="f9d08-272">È necessario individuare la regola di pubblicazione Web e scegliere l'opzione di modifica (può essere presente in un menu o in una scheda, a seconda della configurazione del proxy inverso).</span><span class="sxs-lookup"><span data-stu-id="f9d08-272">You'll need to locate your web publishing rule, and choose the Edit option (it may be on a menu or tab, depending on your Reverse proxy configuration).</span></span>
+    
+3. <span data-ttu-id="f9d08-273">Dovrebbe essere presente un'area in cui viene applicata la regola di pubblicazione Web.</span><span class="sxs-lookup"><span data-stu-id="f9d08-273">There should be an area that states what this web publishing rule is applied to.</span></span> <span data-ttu-id="f9d08-274">È necessario modificare questa regola per i siti in arrivo o le richieste per i siti.</span><span class="sxs-lookup"><span data-stu-id="f9d08-274">You need to modify this rule for incoming sites or requests for sites.</span></span> <span data-ttu-id="f9d08-275">Si sta per **aggiungere** una nuova voce.</span><span class="sxs-lookup"><span data-stu-id="f9d08-275">You're going to **add** a new entry.</span></span>
+    
+4. <span data-ttu-id="f9d08-276">Digitare il nome del sito di individuazione automatica (l'esempio che useremo è lyncdiscover.contoso.com) e fare clic su **OK** o su **Salva**, a seconda del formato del proxy inverso.</span><span class="sxs-lookup"><span data-stu-id="f9d08-276">Type the name of your Autodiscover site (the example we'll use is lyncdiscover.contoso.com), and click **OK** or **Save**, depending on your Reverse proxy's format.</span></span>
+    
+5. <span data-ttu-id="f9d08-277">Potrebbe essere presente un nuovo certificato con la voce SAN individuazione automatica.</span><span class="sxs-lookup"><span data-stu-id="f9d08-277">You may have a new certificate that has the Autodiscover SAN entry in it.</span></span> <span data-ttu-id="f9d08-278">Che deve essere installato anche e configurato per l'uso in base alle impostazioni del proxy inverso.</span><span class="sxs-lookup"><span data-stu-id="f9d08-278">That needs to be installed as well and configured for use according to your Reverse proxy's settings.</span></span> <span data-ttu-id="f9d08-279">Assicurarsi di salvare tutto quando la configurazione viene completata.</span><span class="sxs-lookup"><span data-stu-id="f9d08-279">Be sure to save everything when the configuration is completed.</span></span>
+    
+6. <span data-ttu-id="f9d08-280">Se il proxy inverso ha una funzionalità di **test** , fare in modo che venga usato per verificare che tutto funzioni correttamente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-280">If your Reverse proxy has a **Test** functionality, then please make use of it, to ensure everything's working properly.</span></span>
+    
+7. <span data-ttu-id="f9d08-281">A questo punto, potrebbe essere necessario ripetere questa procedura se si ha un pool di Director o Director nell'ambiente in cui è presente una seconda regola.</span><span class="sxs-lookup"><span data-stu-id="f9d08-281">Now, you may need to repeat these steps if you have a Director or Director pool in your environment (this would mean you have a second rule).</span></span>
+    
+### <a name="create-a-web-publishing-rule-for-the-external-autodiscover-url"></a><span data-ttu-id="f9d08-282">Creare una regola di pubblicazione Web per l'URL di individuazione automatica esterna</span><span class="sxs-lookup"><span data-stu-id="f9d08-282">Create a web publishing rule for the external Autodiscover URL</span></span>
+
+1. <span data-ttu-id="f9d08-283">Aprire l'interfaccia proxy inverso.</span><span class="sxs-lookup"><span data-stu-id="f9d08-283">Open your Reverse proxy interface.</span></span>
+    
+2. <span data-ttu-id="f9d08-284">È necessario individuare la posizione dell'interfaccia in cui creare le regole di pubblicazione Web e scegliere l'opzione **nuovo** o **Crea** (può essere presente in un menu o una scheda, a seconda della configurazione del proxy inverso).</span><span class="sxs-lookup"><span data-stu-id="f9d08-284">You'll need to locate where in the interface you create your web publishing rules, and choose the **New** or **Create** option (it may be on a menu or tab, depending on your Reverse proxy configuration).</span></span> <span data-ttu-id="f9d08-285">Si sta cercando l'opzione per creare una nuova regola di pubblicazione Web.</span><span class="sxs-lookup"><span data-stu-id="f9d08-285">You are looking for the option to create a new web publishing rule.</span></span>
+    
+3. <span data-ttu-id="f9d08-286">In genere, dovrai immettere le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-286">Typically, you will need to enter the following information:</span></span>
+    
+   - <span data-ttu-id="f9d08-287">**Nome**: nome della regola</span><span class="sxs-lookup"><span data-stu-id="f9d08-287">**Name**: the name for your rule</span></span>
+    
+   - <span data-ttu-id="f9d08-288">**Azione regola**: in questo caso si tratta di una regola **Allow** che consente di passare al proxy inverso.</span><span class="sxs-lookup"><span data-stu-id="f9d08-288">**Rule Action**: In this case it's an **Allow** rule, you're letting something pass through your Reverse proxy.</span></span>
+    
+   - <span data-ttu-id="f9d08-289">La regola o l'opzione di **pubblicazione** che si sta scegliendo sarebbe un **singolo sito Web o**un punto di bilanciamento del carico.</span><span class="sxs-lookup"><span data-stu-id="f9d08-289">The **Publishing** rule or option you're choosing would be **single web site or load balancer**.</span></span>
+    
+   - <span data-ttu-id="f9d08-290">Questo deve essere **SSL** per l'accesso esterno, scegliere questa opzione.</span><span class="sxs-lookup"><span data-stu-id="f9d08-290">This needs to be **SSL** for external access, choose that option.</span></span>
+    
+   - <span data-ttu-id="f9d08-291">Dovrai pubblicare un percorso per la **pubblicazione interna**e immettere il nome di dominio completo per i servizi Web esterni sul servizio di bilanciamento del carico del pool di front end (o il nome di dominio completo del dispositivo di bilanciamento del carico del pool di Director se ne hai uno), un esempio sarebbe sfb_ pool01. contoso. local.</span><span class="sxs-lookup"><span data-stu-id="f9d08-291">You're going to need to publish a path for **Internal Publishing**, and enter the FQDN for the external Web Services on your Front End pool's load balancer (or the FQDN of the Director pool's load balancer if you have one), an example would be sfb_pool01.contoso.local.</span></span>
+    
+   - <span data-ttu-id="f9d08-292">È consigliabile digitare \*\* / \*\*\* come percorso da pubblicare, ma è anche necessario **inoltrare l'intestazione host originale**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-292">You should type **/\\**\* as the path to be published, but you also need to **forward the original host header**.</span></span>
+    
+   - <span data-ttu-id="f9d08-293">Sarà disponibile un'opzione per i dettagli o le informazioni sul **nome pubblico o esterno** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-293">There will be an option for **public or external name** details or information.</span></span> <span data-ttu-id="f9d08-294">Questa è la posizione in cui è possibile immettere:</span><span class="sxs-lookup"><span data-stu-id="f9d08-294">This is the place where you'll be able to enter:</span></span>
+    
+   - <span data-ttu-id="f9d08-295">**Accettare le richieste**, ma deve essere per il nome di dominio.</span><span class="sxs-lookup"><span data-stu-id="f9d08-295">**Accept requests**, but it should be for the domain name.</span></span>
+    
+   - <span data-ttu-id="f9d08-296">Per il **nome**, devi immettere **lyncdiscover.**</span><span class="sxs-lookup"><span data-stu-id="f9d08-296">For the **Name**, you should enter **lyncdiscover.**</span></span> <span data-ttu-id="f9d08-297"><sipdomain>(questo è l'URL del servizio di individuazione automatica esterna).</span><span class="sxs-lookup"><span data-stu-id="f9d08-297"><sipdomain> (this is the external Autodiscover Service URL).</span></span> <span data-ttu-id="f9d08-298">Ora, se si sta creando una regola per l'URL dei servizi Web esterni nel pool Front-End, è necessario digitare il nome di dominio completo per i servizi Web esterni nel pool Front-End, ad esempio lyncwebextpool01.contoso.com.</span><span class="sxs-lookup"><span data-stu-id="f9d08-298">Now, if you're creating a rule for the external Web Services URL on the Front End pool, you'll need to type the FQDN for the external Web Services on your Front End pool (for example, lyncwebextpool01.contoso.com).</span></span>
+    
+   - <span data-ttu-id="f9d08-299">Verrà visualizzata un'opzione **percorso** e sarà necessario immettere \*\* / \*\*\* qui.</span><span class="sxs-lookup"><span data-stu-id="f9d08-299">There will be a **Path** option, and you'll need to enter **/\\**\* here.</span></span>
+    
+   - <span data-ttu-id="f9d08-300">È necessario selezionare un **listener SSL** con il certificato pubblico aggiornato.</span><span class="sxs-lookup"><span data-stu-id="f9d08-300">You'll need to select a **SSL Listener** with your up-to-date public certificate.</span></span>
+    
+   - <span data-ttu-id="f9d08-301">La **delega per l'autenticazione** deve essere impostata su **Nessuna delega**, ma **deve** essere consentita l'autenticazione client diretta.</span><span class="sxs-lookup"><span data-stu-id="f9d08-301">**Authentication Delegation** should be set to **No delegation**, but direct client authentication **should** be allowed.</span></span>
+    
+   - <span data-ttu-id="f9d08-302">La regola deve essere impostata su **tutti gli utenti**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-302">The rule should be set to **All users**.</span></span>
+    
+   - <span data-ttu-id="f9d08-303">Dovrebbero essere tutte le informazioni necessarie per creare questa regola e consentire di procedere.</span><span class="sxs-lookup"><span data-stu-id="f9d08-303">This should be all the information you need to create this rule and allow you to proceed.</span></span>
+    
+4. <span data-ttu-id="f9d08-304">Dovrai assicurarti che l' **intestazione host originale** sia inoltrata.</span><span class="sxs-lookup"><span data-stu-id="f9d08-304">You're going to need to ensure that the **original host header** is forwarded.</span></span>
+    
+5. <span data-ttu-id="f9d08-305">Sarà necessario impostare anche le porte del **server Web** , è necessario eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-305">The **Web Server** ports will need to be set as well, you'll need to do the following:</span></span>
+    
+   - <span data-ttu-id="f9d08-306">**Reindirizza le richieste alla porta http** e il numero di porta deve essere **8080**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-306">**Redirect requests to HTTP port** and the port number should be **8080**.</span></span>
+    
+   - <span data-ttu-id="f9d08-307">**Reindirizza le richieste alla porta SSL** e il numero di porta deve essere **4443**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-307">**Redirect requests to SSL port** and the port number should be **4443**.</span></span>
+    
+6. <span data-ttu-id="f9d08-308">Quando tutto è configurato, è necessario salvarlo o applicarlo, quindi si vuole testare la regola.</span><span class="sxs-lookup"><span data-stu-id="f9d08-308">When everything's configured, you'll need to save or apply these, and then you'll want to test the rule.</span></span>
+    
+### <a name="create-a-web-publishing-rule-for-port-80-optional"></a><span data-ttu-id="f9d08-309">Creare una regola di pubblicazione Web per la porta 80 (facoltativa)</span><span class="sxs-lookup"><span data-stu-id="f9d08-309">Create a web publishing rule for port 80 (Optional)</span></span>
+
+1. <span data-ttu-id="f9d08-310">Aprire l'interfaccia proxy inverso.</span><span class="sxs-lookup"><span data-stu-id="f9d08-310">Open your Reverse proxy interface.</span></span>
+    
+2. <span data-ttu-id="f9d08-311">È necessario individuare la posizione dell'interfaccia in cui creare le regole di pubblicazione Web e scegliere l'opzione **nuovo** o **Crea** (può essere presente in un menu o una scheda, a seconda della configurazione del proxy inverso).</span><span class="sxs-lookup"><span data-stu-id="f9d08-311">You'll need to locate where in the interface you create your web publishing rules, and choose the **New** or **Create** option (it may be on a menu or tab, depending on your Reverse proxy configuration).</span></span> <span data-ttu-id="f9d08-312">Si sta cercando l'opzione per creare una nuova regola di pubblicazione Web.</span><span class="sxs-lookup"><span data-stu-id="f9d08-312">You are looking for the option to create a new web publishing rule.</span></span>
+    
+3. <span data-ttu-id="f9d08-313">In genere, dovrai immettere le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-313">Typically, you will need to enter the following information:</span></span>
+    
+   - <span data-ttu-id="f9d08-314">**Nome**: nome della regola</span><span class="sxs-lookup"><span data-stu-id="f9d08-314">**Name**: the name for your rule</span></span>
+    
+   - <span data-ttu-id="f9d08-315">**Azione regola**: in questo caso si tratta di una regola **Allow** che consente di passare al proxy inverso.</span><span class="sxs-lookup"><span data-stu-id="f9d08-315">**Rule Action**: In this case it's an **Allow** rule, you're letting something pass through your Reverse proxy.</span></span>
+    
+   - <span data-ttu-id="f9d08-316">La regola o l'opzione di **pubblicazione** che si sta scegliendo sarebbe un **singolo sito Web o**un punto di bilanciamento del carico.</span><span class="sxs-lookup"><span data-stu-id="f9d08-316">The **Publishing** rule or option you're choosing would be **single web site or load balancer**.</span></span>
+    
+   - <span data-ttu-id="f9d08-317">Questa operazione deve essere una **connessione non protetta per la connessione al server Web o alla farm pubblicata**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-317">This needs to be a **non-secured connection to connect to the published Web server or farm**.</span></span>
+    
+   - <span data-ttu-id="f9d08-318">È necessario pubblicare un percorso per la **pubblicazione interna**e immettere il nome di dominio completo per l' **indirizzo VIP** del dispositivo di bilanciamento del carico del pool Front End, un esempio sarebbe sfb_pool01. contoso. local.</span><span class="sxs-lookup"><span data-stu-id="f9d08-318">You're going to need to publish a path for **Internal Publishing**, and enter the FQDN for the **VIP address** of your Front End pool's load balancer, an example would be sfb_pool01.contoso.local.</span></span>
+    
+   - <span data-ttu-id="f9d08-319">È consigliabile digitare \*\* / \*\*\* come percorso da pubblicare, ma è anche necessario **inoltrare l'intestazione host originale**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-319">You should type **/\\**\* as the path to be published, but you also need to **forward the original host header**.</span></span>
+    
+   - <span data-ttu-id="f9d08-320">Sarà disponibile un'opzione per i dettagli o le informazioni sul **nome pubblico o esterno** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-320">There will be an option for **public or external name** details or information.</span></span> <span data-ttu-id="f9d08-321">Questa è la posizione in cui è possibile immettere:</span><span class="sxs-lookup"><span data-stu-id="f9d08-321">This is the place where you'll be able to enter:</span></span>
+    
+   - <span data-ttu-id="f9d08-322">**Accettare le richieste**, ma deve essere per il nome di dominio.</span><span class="sxs-lookup"><span data-stu-id="f9d08-322">**Accept requests**, but it should be for the domain name.</span></span>
+    
+   - <span data-ttu-id="f9d08-323">Per il **nome**, devi immettere **lyncdiscover.**</span><span class="sxs-lookup"><span data-stu-id="f9d08-323">For the **Name**, you should enter **lyncdiscover.**</span></span> <span data-ttu-id="f9d08-324"><sipdomain>(questo è l'URL del servizio di individuazione automatica esterna).</span><span class="sxs-lookup"><span data-stu-id="f9d08-324"><sipdomain> (this is the external Autodiscover Service URL).</span></span>
+    
+   - <span data-ttu-id="f9d08-325">Verrà visualizzata un'opzione **percorso** e sarà necessario immettere \*\* / \*\*\* qui.</span><span class="sxs-lookup"><span data-stu-id="f9d08-325">There will be a **Path** option, and you'll need to enter **/\\**\* here.</span></span>
+    
+   - <span data-ttu-id="f9d08-326">È necessario selezionare un listener Web o consentire al proxy inverso di crearne uno per l'utente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-326">You'll need to select a web listener, or allow your Reverse proxy to create one for you.</span></span>
+    
+   - <span data-ttu-id="f9d08-327">La **delega per l'autenticazione** deve essere impostata su **Nessuna delega**, ma l'autenticazione client diretta **non deve** essere consentita.</span><span class="sxs-lookup"><span data-stu-id="f9d08-327">**Authentication Delegation** should be set to **No delegation**, but direct client authentication **should not** be allowed.</span></span>
+    
+   - <span data-ttu-id="f9d08-328">La regola deve essere impostata su **tutti gli utenti**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-328">The rule should be set to **All users**.</span></span>
+    
+   - <span data-ttu-id="f9d08-329">Dovrebbero essere tutte le informazioni necessarie per creare questa regola e consentire di procedere.</span><span class="sxs-lookup"><span data-stu-id="f9d08-329">This should be all the information you need to create this rule and allow you to proceed.</span></span>
+    
+4. <span data-ttu-id="f9d08-330">Sarà necessario impostare le porte del **server Web** , è necessario eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-330">The **Web Server** ports will need to be set, you'll need to do the following:</span></span>
+    
+   - <span data-ttu-id="f9d08-331">**Reindirizza le richieste alla porta http** e il numero di porta deve essere **8080**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-331">**Redirect requests to HTTP port** and the port number should be **8080**.</span></span>
+    
+   - <span data-ttu-id="f9d08-332">**Reindirizza le richieste alla porta SSL** e il numero di porta deve essere **4443**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-332">**Redirect requests to SSL port** and the port number should be **4443**.</span></span>
+    
+5. <span data-ttu-id="f9d08-333">Quando tutto è configurato, è necessario salvarlo o applicarlo, quindi si vuole testare la regola.</span><span class="sxs-lookup"><span data-stu-id="f9d08-333">When everything's configured, you'll need to save or apply these, and then you'll want to test the rule.</span></span>
+    
+## <a name="configure-autodiscover-for-mobility-with-hybrid-deployments"></a><span data-ttu-id="f9d08-334">Configurare l'individuazione automatica per la mobilità con distribuzioni ibride</span><span class="sxs-lookup"><span data-stu-id="f9d08-334">Configure Autodiscover for Mobility with hybrid deployments</span></span>
+<span data-ttu-id="f9d08-335"><a name="ConfigAutoD"> </a></span><span class="sxs-lookup"><span data-stu-id="f9d08-335"></span></span>
+
+<span data-ttu-id="f9d08-336">Gli ambienti ibridi in Skype for Business Server sono ambienti che combinano un ambiente locale e Office 365.</span><span class="sxs-lookup"><span data-stu-id="f9d08-336">Hybrid environments in Skype for Business Server are environments that combine an on-premises and O365 environment.</span></span> <span data-ttu-id="f9d08-337">Quando si utilizza Skype for Business Server in un ambiente ibrido, il servizio di individuazione automatica deve essere in grado di individuare un utente da uno di questi ambienti.</span><span class="sxs-lookup"><span data-stu-id="f9d08-337">When you have Skype for Business Server working in a Hybrid environment, the Autodiscover service needs to be able to locate a user from either of these environments.</span></span>
+  
+<span data-ttu-id="f9d08-338">Per consentire ai client mobili di individuare la posizione di un utente, è necessario configurare il servizio di individuazione automatica con un nuovo URL (Uniform Resource Locator).</span><span class="sxs-lookup"><span data-stu-id="f9d08-338">To let mobile clients discover where a user's located, the Autodiscover service needs to be configured with a new uniform resource locator (URL).</span></span> <span data-ttu-id="f9d08-339">I passaggi sono i seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-339">The steps are:</span></span>
+  
+1. <span data-ttu-id="f9d08-340">Aprire Skype for Business Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="f9d08-340">Open Skype for Business Server Management Shell.</span></span>
+    
+2. <span data-ttu-id="f9d08-341">Eseguire la procedura seguente per ottenere il valore dell'attributo **ProxyFqdn** per l'ambiente di Skype for Business Server:</span><span class="sxs-lookup"><span data-stu-id="f9d08-341">Run the following to get the value of the attribute **ProxyFQDN** for your Skype for Business Server environment:</span></span>
+    
+   ```
+   Get-CsHostingProvider
+   ```
+
+3. <span data-ttu-id="f9d08-342">Quindi, sempre nella finestra della shell, Esegui:</span><span class="sxs-lookup"><span data-stu-id="f9d08-342">Then, still in the shell window, run:</span></span>
+    
+   ```
+   Set-CsHostingProvider -Identity [identity] -AutodiscoverUrl https://webdir.online.lync.com/autodiscover/autodiscoverservice.svc/root
+   ```
+
+    <span data-ttu-id="f9d08-343">Dove [Identity] viene sostituito con il nome di dominio dello spazio di indirizzi SIP condiviso.</span><span class="sxs-lookup"><span data-stu-id="f9d08-343">Where [identity] is replaced with the domain name of the shared SIP address space.</span></span>
+    
+## <a name="test-your-mobility-deployment"></a><span data-ttu-id="f9d08-344">Testare la distribuzione della mobilità</span><span class="sxs-lookup"><span data-stu-id="f9d08-344">Test your Mobility deployment</span></span>
+<span data-ttu-id="f9d08-345"><a name="TestMobility"> </a></span><span class="sxs-lookup"><span data-stu-id="f9d08-345"></span></span>
+
+<span data-ttu-id="f9d08-346">Dopo aver distribuito il servizio di mobilità di Skype for Business Server e il servizio di individuazione automatica di Skype for Business Server, è consigliabile eseguire una transazione di test per verificare che la distribuzione funzioni correttamente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-346">Once you've deployed Skype for Business Server Mobility Service and Skype for Business Server Autodiscover Service, you'll want to run a test transaction, to make sure your deployment's working right.</span></span> <span data-ttu-id="f9d08-347">È possibile eseguire **test-CsUcwaConference** per testare la capacità di due utenti di creare, partecipare e comunicare in una conferenza.</span><span class="sxs-lookup"><span data-stu-id="f9d08-347">You can run **Test-CsUcwaConference** to test the ability of two users to create, join and communicate in a conference.</span></span> <span data-ttu-id="f9d08-348">Per eseguire questo test, sono necessari due utenti (reali o test) e le loro credenziali complete.</span><span class="sxs-lookup"><span data-stu-id="f9d08-348">You will need two users (real or test) and their full credentials to do this testing.</span></span> <span data-ttu-id="f9d08-349">Questo comando funzionerà sia per i client Skype for business che per i client Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f9d08-349">This command will work for both Skype for Business clients as well as Lync Server 2013 clients.</span></span>
+  
+<span data-ttu-id="f9d08-350">Per i client di Lync Server 2010 in Skype for Business Server 2015, è necessario eseguire **Test-CsMcxP2PIM** per testare.</span><span class="sxs-lookup"><span data-stu-id="f9d08-350">For Lync Server 2010 clients on Skype for Business Server 2015, you'll need to run **Test-CsMcxP2PIM** to test.</span></span> <span data-ttu-id="f9d08-351">Gli utenti di Lync Server 2010 dovranno comunque essere utenti effettivi o utenti di test predefiniti e saranno necessarie le credenziali per la password.</span><span class="sxs-lookup"><span data-stu-id="f9d08-351">Your Lync Server 2010 users will still have to be actual users, or predefined test users, and you'll need their password credentials.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="f9d08-352">Il supporto di MCX (servizio mobilità) per i client mobili legacy non è più disponibile in Skype for Business Server 2019.</span><span class="sxs-lookup"><span data-stu-id="f9d08-352">MCX (Mobility Service) support for legacy mobile clients is no longer available in Skype for Business Server 2019.</span></span> <span data-ttu-id="f9d08-353">Tutti i client di Skype for business mobile correnti usano già Unified Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti.</span><span class="sxs-lookup"><span data-stu-id="f9d08-353">All current Skype for Business mobile clients already use Unified Communications Web API (UCWA) to support instant messaging (IM), presence, and contacts.</span></span> <span data-ttu-id="f9d08-354">Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-354">Users with legacy clients using MCX will need to upgrade to a current client.</span></span>
+  
+### <a name="test-conferencing-for-skype-for-business-and-lync-2013-mobile-clients"></a><span data-ttu-id="f9d08-355">Testare i servizi di conferenza per Skype for business e i client per dispositivi mobili Lync 2013</span><span class="sxs-lookup"><span data-stu-id="f9d08-355">Test conferencing for Skype for Business and Lync 2013 mobile clients</span></span>
+
+1. <span data-ttu-id="f9d08-356">Accedere come membro del ruolo **CsAdministrator** in qualsiasi computer in cui sono installati **Skype for Business Server Management Shell** e **OCSCore** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-356">Log on as a member of the **CsAdministrator** role on any computer where **Skype for Business Server Management Shell** and **Ocscore** are installed.</span></span>
+    
+2. <span data-ttu-id="f9d08-357">Avviare **Skype for Business Server Management Shell** (è possibile digitare il nome in ricerca o accedere a **tutti i programmi** e sceglierlo).</span><span class="sxs-lookup"><span data-stu-id="f9d08-357">Start the **Skype for Business Server Management Shell** (you might type the name in search or go to **All Programs** and choose it).</span></span>
+    
+3. <span data-ttu-id="f9d08-358">Nella riga di comando immettere:</span><span class="sxs-lookup"><span data-stu-id="f9d08-358">At the command line, enter:</span></span>
+    
+   ```
+   Test-CsUcwaConference -TargetFqdn <FQDN of Front End pool> -Authentication <TrustedServer | Negotiate | ClientCertificate | LiveID> -OrganizerSipAddress sip:<SIP address of test user 1> -OrganizerCredential <test user 1 credentials> -ParticipantSipAddress sip:<SIP address of test user 2> -ParticipantCredential <test user 2 credentials> -v
+   ```
+
+   <span data-ttu-id="f9d08-359">È anche possibile impostare le credenziali in uno script e passarle al cmdlet di test.</span><span class="sxs-lookup"><span data-stu-id="f9d08-359">It's also possible to set credentials in a script and pass them to the test cmdlet.</span></span> <span data-ttu-id="f9d08-360">Di seguito è riportato un esempio.</span><span class="sxs-lookup"><span data-stu-id="f9d08-360">We have an example of this below.</span></span>
+    
+   ```
+   $passwd1 = ConvertTo-SecureString "Password01" -AsPlainText -Force
+   $passwd2 = ConvertTo-SecureString "Password02" -AsPlainText -Force
+   $testuser1 = New-Object Management.Automation.PSCredential("contoso\UserName1", $passwd1)
+   $testuser2 = New-Object Management.Automation.PSCredential("contoso\UserName2", $passwd2)
+   Test-CsUcwaConference -TargetFqdn pool01.contoso.com -Authentication Negotiate -OrganizerSipAddress sip:UserName1@contoso.com -OrganizerCredential $testuser1 -ParticipantSipAddress sip:UserName2@contoso.com -ParticipantCredential $testuser2 -v
+   ```
+
+### <a name="test-conferencing-for-lync-2010-mobile-clients"></a><span data-ttu-id="f9d08-361">Testare i servizi di conferenza per i client mobili di Lync 2010</span><span class="sxs-lookup"><span data-stu-id="f9d08-361">Test conferencing for Lync 2010 mobile clients</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="f9d08-362">Il supporto di MCX (servizio mobilità) per i client mobili legacy non è più disponibile in Skype for Business Server 2019.</span><span class="sxs-lookup"><span data-stu-id="f9d08-362">MCX (Mobility Service) support for legacy mobile clients is no longer available in Skype for Business Server 2019.</span></span> <span data-ttu-id="f9d08-363">Tutti i client di Skype for business mobile correnti usano già Unified Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti.</span><span class="sxs-lookup"><span data-stu-id="f9d08-363">All current Skype for Business mobile clients already use Unified Communications Web API (UCWA) to support instant messaging (IM), presence, and contacts.</span></span> <span data-ttu-id="f9d08-364">Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-364">Users with legacy clients using MCX will need to upgrade to a current client.</span></span>
+
+1. <span data-ttu-id="f9d08-365">Accedere come membro del ruolo **CsAdministrator** in qualsiasi computer in cui sono installati **Skype for Business Server Management Shell** e **OCSCore** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-365">Log on as a member of the **CsAdministrator** role on any computer where **Skype for Business Server Management Shell** and **Ocscore** are installed.</span></span>
+    
+2. <span data-ttu-id="f9d08-366">Avviare **Skype for Business Server Management Shell** (è possibile digitare il nome in ricerca o accedere a **tutti i programmi** e sceglierlo).</span><span class="sxs-lookup"><span data-stu-id="f9d08-366">Start the **Skype for Business Server Management Shell** (you might type the name in search or go to **All Programs** and choose it).</span></span>
+    
+3. <span data-ttu-id="f9d08-367">Nella riga di comando immettere:</span><span class="sxs-lookup"><span data-stu-id="f9d08-367">At the command line, enter:</span></span>
+    
+   ```
+   Test-CsMcxP2PIM -TargetFqdn <FQDN of Front End pool> -Authentication <TrustedServer | Negotiate | ClientCertificate | LiveID> -SenderSipAddress sip:<SIP address of test user 1> -SenderCredential <test user 1 credentials> -ReceiverSipAddress sip:<SIP address of test user 2> -ReceiverCredential <test user 2 credentials> -v
+   ```
+
+   <span data-ttu-id="f9d08-368">È anche possibile impostare le credenziali in uno script e passarle al cmdlet di test.</span><span class="sxs-lookup"><span data-stu-id="f9d08-368">It's also possible to set credentials in a script and pass them to the test cmdlet.</span></span> <span data-ttu-id="f9d08-369">Di seguito è riportato un esempio.</span><span class="sxs-lookup"><span data-stu-id="f9d08-369">We have an example of this below.</span></span>
+    
+   ```
+   $passwd1 = ConvertTo-SecureString "Password01" -AsPlainText -Force
+   $passwd2 = ConvertTo-SecureString "Password02" -AsPlainText -Force
+   $tuc1 = New-Object Management.Automation.PSCredential("contoso\UserName1", $passwd1)
+   $tuc2 = New-Object Management.Automation.PSCredential("contoso\UserName2", $passwd2)
+   Test-CsMcxP2PIM -TargetFqdn pool01.contoso.com -Authentication Negotiate -SenderSipAddress sip:UserName1@contoso.com -SenderCredential $tuc1 -ReceiverSipAddress sip:UserName2@contoso.com -ReceiverCredential $tuc2 -v
+   ```
+
+<span data-ttu-id="f9d08-370">Per esaminare ulteriormente le procedure di comando, è possibile estrarre [test-CsUcwaConference](https://docs.microsoft.com/powershell/module/skype/test-csucwaconference?view=skype-ps) e [Test-CsMcxP2PIM](https://docs.microsoft.com/powershell/module/skype/test-csmcxp2pim?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="f9d08-370">To review the command procedures further, you can check out [Test-CsUcwaConference](https://docs.microsoft.com/powershell/module/skype/test-csucwaconference?view=skype-ps) and [Test-CsMcxP2PIM](https://docs.microsoft.com/powershell/module/skype/test-csmcxp2pim?view=skype-ps).</span></span>
+  
+## <a name="configure-for-push-notifications"></a><span data-ttu-id="f9d08-371">Configurare le notifiche push</span><span class="sxs-lookup"><span data-stu-id="f9d08-371">Configure for push notifications</span></span>
+<span data-ttu-id="f9d08-372"><a name="ConfigPush"> </a></span><span class="sxs-lookup"><span data-stu-id="f9d08-372"></span></span>
+
+<span data-ttu-id="f9d08-373">Le notifiche push, in forma di badge, icone o avvisi, possono essere inviate a un dispositivo mobile anche quando l'app Skype o Lync è inattiva.</span><span class="sxs-lookup"><span data-stu-id="f9d08-373">Push notifications, in the form of badges, icons, or alerts, can be sent to a mobile device even when the Skype or Lync app is inactive.</span></span> <span data-ttu-id="f9d08-374">Ma cosa sono le notifiche push?</span><span class="sxs-lookup"><span data-stu-id="f9d08-374">But what are push notifications?</span></span> <span data-ttu-id="f9d08-375">Si tratta di avvisi per eventi, ad esempio un invito a un messaggio ISTANTANEo nuovo o mancato o per la segreteria telefonica ricevuta.</span><span class="sxs-lookup"><span data-stu-id="f9d08-375">They are event alerts, like a new or missed IM invitation, or for a received voicemail.</span></span> <span data-ttu-id="f9d08-376">Il servizio di mobilità di Skype for Business Server invia queste notifiche al servizio di notifica push di Skype for Business Server basato su cloud, che invia quindi le notifiche al servizio di notifica push Microsoft (MSNS) per gli utenti di Windows Phone.</span><span class="sxs-lookup"><span data-stu-id="f9d08-376">The Skype for Business Server Mobility service sends these notifications to the cloud-based Skype for Business Server Push Notification Service, which then sends the notifications to the Microsoft Push Notification Service (MSNS) for Windows Phone users.</span></span>
+  
+<span data-ttu-id="f9d08-377">Questa funzionalità è invariata rispetto a Lync Server 2013, ma se si ha un server Skype for business, è necessario eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f9d08-377">This functionality is unchanged from Lync Server 2013, but if you have a Skype for Business Server, you'll want to do the following:</span></span>
+  
+- <span data-ttu-id="f9d08-378">Per un server Edge Skype for Business Server, aggiungere un nuovo provider di hosting, Microsoft Skype for business online e quindi configurare la Federazione del provider di hosting tra l'organizzazione e Skype for business online.</span><span class="sxs-lookup"><span data-stu-id="f9d08-378">For a Skype for Business Server Edge Server, add a new hosting provider, Microsoft Skype for Business Online, and then set up hosting provider federation between your organization and Skype for Business Online.</span></span>
+    
+- <span data-ttu-id="f9d08-379">Abilitare le notifiche push eseguendo il cmdlet **Set-CsPushNotificationConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-379">Enable push notifications by running the **Set-CsPushNotificationConfiguration** cmdlet.</span></span> <span data-ttu-id="f9d08-380">Per impostazione predefinita, le notifiche push sono disattivate.</span><span class="sxs-lookup"><span data-stu-id="f9d08-380">By default, push notifications are turned off.</span></span>
+    
+- <span data-ttu-id="f9d08-381">Verificare la configurazione della Federazione e le notifiche push.</span><span class="sxs-lookup"><span data-stu-id="f9d08-381">Test your federation configuration and push notifications.</span></span>
+    
+### <a name="configure-your-skype-for-business-edge-server-for-push-notifications"></a><span data-ttu-id="f9d08-382">Configurare Skype for Business Edge Server per le notifiche push</span><span class="sxs-lookup"><span data-stu-id="f9d08-382">Configure your Skype for Business Edge Server for push notifications</span></span>
+
+1. <span data-ttu-id="f9d08-383">Accedere, con un account che fa parte del ruolo **CsAdministrator** , in un computer in cui sono installati **Skype for Business Server Management Shell** e **OCSCore** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-383">Log on, with an account that's a member of the **CsAdministrator** role, to a computer where **Skype for Business Server Management Shell** and **Ocscore** are installed.</span></span>
+    
+2. <span data-ttu-id="f9d08-384">Avviare **Skype for Business Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-384">Start the **Skype for Business Server Management Shell**.</span></span>
+    
+3. <span data-ttu-id="f9d08-385">Aggiungere un provider di hosting di Skype for Business Server online.</span><span class="sxs-lookup"><span data-stu-id="f9d08-385">Add a Skype for Business Server online hosting provider.</span></span>
+    
+   ```
+   New-CsHostingProvider -Identity <unique identifier for hosting provider> -Enabled $True -ProxyFQDN <FQDN for the Access Server used by the hosting provider> -VerificationLevel UseSourceVerification
+   ```
+
+   <span data-ttu-id="f9d08-386">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="f9d08-386">As an example:</span></span>
+    
+   ```
+   New-CsHostingProvider -Identity "SkypeOnline" -Enabled $True -ProxyFQDN "sipfed.online.lync.com" -VerificationLevel UseSourceVerification
+   ```
+
+    > [!NOTE]
+    > <span data-ttu-id="f9d08-387">Non è possibile avere più relazioni tra le federazioni con un singolo provider di hosting.</span><span class="sxs-lookup"><span data-stu-id="f9d08-387">You can't have more than one federation relationship with a single hosting provider.</span></span> <span data-ttu-id="f9d08-388">Quindi, se hai già configurato un provider di hosting che ha una relazione di federazione con sipfed.online.lync.com, non aggiungere un altro provider di hosting, anche se l'identità del provider di hosting è diversa da SkypeOnline.</span><span class="sxs-lookup"><span data-stu-id="f9d08-388">So, if you've already set up a hosting provider that has a federation relationship with sipfed.online.lync.com, don't add another hosting provider for it, even if the identity of the hosting provider is something other than SkypeOnline.</span></span> 
+  
+4. <span data-ttu-id="f9d08-389">Configurare la Federazione del provider di hosting tra l'organizzazione e il servizio di notifica push su Skype for business online.</span><span class="sxs-lookup"><span data-stu-id="f9d08-389">Set up the hosting provider federation between your organization and the Push Notification Service at Skype for Business Online.</span></span> <span data-ttu-id="f9d08-390">Alla riga di comando è necessario digitare:</span><span class="sxs-lookup"><span data-stu-id="f9d08-390">At the command line, you'll need to type:</span></span>
+    
+   ```
+    New-CsAllowedDomain -Identity "push.lync.com"
+   ```
+
+### <a name="enable-push-notifications"></a><span data-ttu-id="f9d08-391">Abilitare le notifiche push</span><span class="sxs-lookup"><span data-stu-id="f9d08-391">Enable push notifications</span></span>
+
+1. <span data-ttu-id="f9d08-392">Accedere, con un account che fa parte del ruolo **CsAdministrator** , in un computer in cui sono installati **Skype for Business Server Management Shell** e **OCSCore** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-392">Log on, with an account that's a member of the **CsAdministrator** role, to a computer where **Skype for Business Server Management Shell** and **Ocscore** are installed.</span></span>
+    
+2. <span data-ttu-id="f9d08-393">Avviare **Skype for Business Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-393">Start the **Skype for Business Server Management Shell**.</span></span>
+    
+3. <span data-ttu-id="f9d08-394">Abilitare le notifiche push:</span><span class="sxs-lookup"><span data-stu-id="f9d08-394">Enable push notifications:</span></span>
+    
+   ```
+   Set-CsPushNotificationConfiguration -EnableMicrosoftPushNotificationService $True
+   ```
+
+4. <span data-ttu-id="f9d08-395">Abilita federazione:</span><span class="sxs-lookup"><span data-stu-id="f9d08-395">Enable Federation:</span></span>
+     
+   ```
+   Set-CsAccessEdgeConfiguration -AllowFederatedUsers $True
+   ```
+
+### <a name="test-federation-and-push-notifications"></a><span data-ttu-id="f9d08-396">Federazioni di test e notifiche push</span><span class="sxs-lookup"><span data-stu-id="f9d08-396">Test federation and push notifications</span></span>
+
+1. <span data-ttu-id="f9d08-397">Accedere, con un account che fa parte del ruolo **CsAdministrator** , in un computer in cui sono installati **Skype for Business Server Management Shell** e **OCSCore** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-397">Log on, with an account that's a member of the **CsAdministrator** role, to a computer where **Skype for Business Server Management Shell** and **Ocscore** are installed.</span></span>
+    
+2. <span data-ttu-id="f9d08-398">Avviare **Skype for Business Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-398">Start the **Skype for Business Server Management Shell**.</span></span>
+    
+3. <span data-ttu-id="f9d08-399">Verificare la configurazione della Federazione:</span><span class="sxs-lookup"><span data-stu-id="f9d08-399">Test the federation configuration:</span></span>
+    
+   ```
+   Test-CsFederatedPartner -TargetFqdn <FQDN of Access Edge server used for federated SIP traffic> -Domain <FQDN of federated domain> -ProxyFqdn <FQDN of the Access Edge server used by the federated organization>
+   ```
+
+    <span data-ttu-id="f9d08-400">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="f9d08-400">As an example:</span></span>
+    
+   ```
+   Test-CsFederatedPartner -TargetFqdn accessproxy.contoso.com -Domain push.lync.com -ProxyFqdn sipfed.online.lync.com
+   ```
+
+4. <span data-ttu-id="f9d08-401">Verificare le notifiche push:</span><span class="sxs-lookup"><span data-stu-id="f9d08-401">Test your push notifications:</span></span>
+    
+   ```
+   Test-CsMcxPushNotification -AccessEdgeFqdn <Access Edge service FQDN>
+   ```
+
+    <span data-ttu-id="f9d08-402">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="f9d08-402">As an example:</span></span>
+    
+   ```
+   Test-CsMcxPushNotification -AccessEdgeFqdn accessproxy.contoso.com
+   ```
+
+## <a name="configure-mobility-policy"></a><span data-ttu-id="f9d08-403">Configurare i criteri di mobilità</span><span class="sxs-lookup"><span data-stu-id="f9d08-403">Configure Mobility policy</span></span>
+<span data-ttu-id="f9d08-404"><a name="ConfigMob"> </a></span><span class="sxs-lookup"><span data-stu-id="f9d08-404"></span></span>
+
+<span data-ttu-id="f9d08-405">Puoi usare Skype for Business Server per determinare chi può utilizzare il servizio di mobilità, chiamare tramite lavoro, Voice over IP (VoIP) o video, oltre a stabilire se il WiFi sarà necessario per il VoIP o il video.</span><span class="sxs-lookup"><span data-stu-id="f9d08-405">You have the ability with Skype for Business Server to determine who can use your Mobility service, Call via Work, voice over IP (VoIP), or video, as well as whether WiFi will be required for VoIP or video.</span></span> <span data-ttu-id="f9d08-406">Chiamata tramite lavoro consente a un utente di dispositivi mobili di usare il numero di telefono dell'ufficio, invece del numero di cellulare, quando si effettuano le chiamate.</span><span class="sxs-lookup"><span data-stu-id="f9d08-406">Call via Work lets a mobile user use their work phone number, instead of their mobile phone number, when placing and receiving calls.</span></span> <span data-ttu-id="f9d08-407">La persona all'altra estremità della riga non vedrà il numero di cellulare dell'utente mobile e consentirà all'utente di evitare oneri per le chiamate in uscita.</span><span class="sxs-lookup"><span data-stu-id="f9d08-407">The person on the other end of the line won't see that mobile user's cell phone number, and it lets that mobile user avoid outgoing call charges.</span></span> <span data-ttu-id="f9d08-408">Quando sono configurati VoIP e video, gli utenti possono eseguire chiamate VoIP e video.</span><span class="sxs-lookup"><span data-stu-id="f9d08-408">When VoIP and video are set up, users can take and make VoIP calls and video.</span></span> <span data-ttu-id="f9d08-409">Le impostazioni per l'utilizzo di WiFi determinano se un dispositivo mobile dell'utente sarà necessario per usare una rete WiFi tramite una rete dati cellulare.</span><span class="sxs-lookup"><span data-stu-id="f9d08-409">The settings for WiFi usage determine whether a user's mobile device will be required to use a WiFi network over a cellular data network.</span></span>
+  
+<span data-ttu-id="f9d08-410">La mobilità, la chiamata tramite lavoro e le funzionalità VoIP e video sono tutte abilitate per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="f9d08-410">Mobility, Call via Work, and the VoIP and video features are all enabled by default.</span></span> <span data-ttu-id="f9d08-411">L'impostazione per richiedere il WiFi per VoIP e video è disabilitata.</span><span class="sxs-lookup"><span data-stu-id="f9d08-411">The setting to require WiFi for VoIP and video are disabled.</span></span> <span data-ttu-id="f9d08-412">Un amministratore ha la possibilità di modificare questa funzionalità, sia a livello globale, per sito, sia per utente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-412">An Admin has the ability to change this, either globally, by site, or by user.</span></span>
+  
+<span data-ttu-id="f9d08-413">Per poter usare le caratteristiche di mobilità e chiamare tramite lavoro, gli utenti devono essere:</span><span class="sxs-lookup"><span data-stu-id="f9d08-413">To be able to use Mobility features and Call via Work, users need to be:</span></span>
+  
+- <span data-ttu-id="f9d08-414">Abilitato per Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="f9d08-414">Enabled for Skype for Business Server</span></span>
+    
+- <span data-ttu-id="f9d08-415">Abilitato per VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="f9d08-415">Enabled for Enterprise Voice.</span></span>
+    
+- <span data-ttu-id="f9d08-416">Assegnato un criterio di mobilità con l'opzione **EnableMobility** impostata su **true**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-416">Assigned a Mobility policy that has the **EnableMobility** option set to **True**.</span></span>
+    
+<span data-ttu-id="f9d08-417">Per consentire agli utenti di usare la chiamata tramite il lavoro, sarà anche necessario:</span><span class="sxs-lookup"><span data-stu-id="f9d08-417">For users to be able to use Call via Work, they'll also need to be:</span></span>
+  
+- <span data-ttu-id="f9d08-418">Assegnato un criterio vocale con l'opzione **Abilita squillo simultaneo dei telefoni** selezionata.</span><span class="sxs-lookup"><span data-stu-id="f9d08-418">Assigned a voice policy that has the **Enable simultaneous ringing of phones** option selected.</span></span>
+    
+- <span data-ttu-id="f9d08-419">Assegnato un criterio di mobilità con **EnableOutsideVoice** impostato su **true**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-419">Assigned a Mobility policy that has the **EnableOutsideVoice** set to **True**.</span></span>
+    
+> [!NOTE]
+> <span data-ttu-id="f9d08-420">Gli utenti non abilitati per Enterprise Voice possono usare i loro dispositivi mobili per effettuare chiamate Skype to Skype VoIP o possono partecipare a conferenze usando il collegamento Fai clic per partecipare ai loro dispositivi mobili, se sono impostate le opzioni appropriate per il criterio vocale a cui sono associate. con.</span><span class="sxs-lookup"><span data-stu-id="f9d08-420">Users who aren't enabled for Enterprise Voice can use their mobile devices to make Skype to Skype VoIP calls or can join conferences by using the Click to Join link while on their mobile devices, if the appropriate options are set for the Voice policy they're associated with.</span></span> <span data-ttu-id="f9d08-421">Nell'argomento pianificazione sono disponibili altri dettagli.</span><span class="sxs-lookup"><span data-stu-id="f9d08-421">There's more detail in the PLANNING topic.</span></span> 
+  
+### <a name="modify-global-mobility-policy"></a><span data-ttu-id="f9d08-422">Modificare i criteri di mobilità globale</span><span class="sxs-lookup"><span data-stu-id="f9d08-422">Modify global Mobility policy</span></span>
+
+1. <span data-ttu-id="f9d08-423">Accedere, con un account che fa parte del ruolo **CsAdministrator** , in un computer in cui sono installati **Skype for Business Server Management Shell** e **OCSCore** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-423">Log on, with an account that's a member of the **CsAdministrator** role, to a computer where **Skype for Business Server Management Shell** and **Ocscore** are installed.</span></span>
+    
+2. <span data-ttu-id="f9d08-424">Avviare **Skype for Business Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-424">Start the **Skype for Business Server Management Shell**.</span></span>
+    
+3. <span data-ttu-id="f9d08-425">Disattivare l'accesso alla mobilità e chiamare tramite il lavoro a livello globale digitando:</span><span class="sxs-lookup"><span data-stu-id="f9d08-425">Turn off access to Mobility and Call via Work globally by typing:</span></span>
+    
+   ```
+   Set-CsMobilityPolicy -EnableMobility $False -EnableOutsideVoice $False
+   ```
+
+    > [!NOTE]
+    > <span data-ttu-id="f9d08-426">È possibile disattivare la chiamata tramite lavoro senza disattivare l'accesso alla mobilità.</span><span class="sxs-lookup"><span data-stu-id="f9d08-426">You can turn off Call via Work without turning off access to Mobility.</span></span> <span data-ttu-id="f9d08-427">Ma non è possibile disattivare la mobilità senza disattivare la chiamata anche tramite lavoro.</span><span class="sxs-lookup"><span data-stu-id="f9d08-427">But you can't turn off Mobility without also turning off Call via Work.</span></span> 
+  
+    <span data-ttu-id="f9d08-428">Per altre info, Vedi [Set-CsMobilityPolicy](https://docs.microsoft.com/powershell/module/skype/set-csmobilitypolicy?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="f9d08-428">For more info, check out [Set-CsMobilityPolicy](https://docs.microsoft.com/powershell/module/skype/set-csmobilitypolicy?view=skype-ps).</span></span>
+    
+### <a name="modify-mobility-policy-by-site"></a><span data-ttu-id="f9d08-429">Modificare i criteri di mobilità per sito</span><span class="sxs-lookup"><span data-stu-id="f9d08-429">Modify Mobility policy by site</span></span>
+
+1. <span data-ttu-id="f9d08-430">Accedere, con un account che fa parte del ruolo **CsAdministrator** , in un computer in cui sono installati **Skype for Business Server Management Shell** e **OCSCore** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-430">Log on, with an account that's a member of the **CsAdministrator** role, to a computer where **Skype for Business Server Management Shell** and **Ocscore** are installed.</span></span>
+    
+2. <span data-ttu-id="f9d08-431">Avviare **Skype for Business Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-431">Start the **Skype for Business Server Management Shell**.</span></span>
+    
+3. <span data-ttu-id="f9d08-432">È possibile creare criteri a livello di sito, disattivare VoIP e video, abilitare Richiedi WiFi per l'audio IP e richiedere il WiFi per i video IP per sito.</span><span class="sxs-lookup"><span data-stu-id="f9d08-432">You can create a site-level policy, turn off VoIP and video, enable Require WiFi for IP Audio, and Require WiFi for IP Video by site.</span></span> <span data-ttu-id="f9d08-433">Tipo</span><span class="sxs-lookup"><span data-stu-id="f9d08-433">Type:</span></span>
+    
+   ```
+   New-CsMobilityPolicy -Identity site:<site identifier> -EnableIPAudioVideo $false -RequireWiFiForIPAudio $True -RequireWiFiforIPVideo $True
+   ```
+
+    <span data-ttu-id="f9d08-434">Altre informazioni su [New-CsMobilityPolicy](https://docs.microsoft.com/powershell/module/skype/new-csmobilitypolicy?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="f9d08-434">Learn more at [New-CsMobilityPolicy](https://docs.microsoft.com/powershell/module/skype/new-csmobilitypolicy?view=skype-ps).</span></span>
+    
+### <a name="modify-mobility-policy-by-user"></a><span data-ttu-id="f9d08-435">Modificare i criteri di mobilità per utente</span><span class="sxs-lookup"><span data-stu-id="f9d08-435">Modify Mobility policy by user</span></span>
+
+1. <span data-ttu-id="f9d08-436">Accedere, con un account che fa parte del ruolo **CsAdministrator** , in un computer in cui sono installati **Skype for Business Server Management Shell** e **OCSCore** .</span><span class="sxs-lookup"><span data-stu-id="f9d08-436">Log on, with an account that's a member of the **CsAdministrator** role, to a computer where **Skype for Business Server Management Shell** and **Ocscore** are installed.</span></span>
+    
+2. <span data-ttu-id="f9d08-437">Avviare **Skype for Business Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="f9d08-437">Start the **Skype for Business Server Management Shell**.</span></span>
+    
+3. <span data-ttu-id="f9d08-438">Creare criteri di mobilità a livello di utente e disattivare la mobilità e la chiamata tramite il lavoro da parte dell'utente.</span><span class="sxs-lookup"><span data-stu-id="f9d08-438">Create user level Mobility policies and turn off Mobility and Call via Work by user.</span></span> <span data-ttu-id="f9d08-439">Tipo</span><span class="sxs-lookup"><span data-stu-id="f9d08-439">Type:</span></span>
+    
+   ```
+   New-CsMobilityPolicy -Identity <policy name> -EnableMobility $False -EnableOutsideVoice $False
+   Grant-CsMobilityPolicy -Identity <user identifier> -PolicyName <policy name>
+   ```
+
+    <span data-ttu-id="f9d08-440">Un esempio ulteriore con i dati di esempio:</span><span class="sxs-lookup"><span data-stu-id="f9d08-440">A further example with sample data:</span></span>
+    
+   ```
+   New-CsMobilityPolicy "tag:disableOutsideVoice" -EnableOutsideVoice $False
+   Grant-CsMobilityPolicy -Identity MobileUser1@contoso.com -PolicyName tag:disableOutsideVoice
+   ```
+
+    > [!NOTE]
+    > <span data-ttu-id="f9d08-441">È possibile disattivare la chiamata tramite lavoro senza disattivare l'accesso alla mobilità.</span><span class="sxs-lookup"><span data-stu-id="f9d08-441">You can turn off Call via Work without turning off access to Mobility.</span></span> <span data-ttu-id="f9d08-442">Ma non è possibile disattivare la mobilità senza disattivare la chiamata anche tramite lavoro.</span><span class="sxs-lookup"><span data-stu-id="f9d08-442">But you can't turn off Mobility without also turning off Call via Work.</span></span> 
+  
+
