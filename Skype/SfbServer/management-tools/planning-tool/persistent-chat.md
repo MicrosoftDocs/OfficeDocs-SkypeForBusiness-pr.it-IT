@@ -1,0 +1,30 @@
+---
+title: Chat persistente (strumento di pianificazione)
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+manager: serdars
+ms.date: 3/27/2015
+audience: ITPro
+ms.topic: article
+f1_keywords:
+- ms.lync.plan.PersistentChat
+- ms.lync.plan.PersistentChat
+ms.prod: skype-for-business-itpro
+localization_priority: Normal
+ms.assetid: ec111e2e-15dd-4b9b-ba9c-6125139319a1
+description: Il server di chat persistente consente agli utenti di partecipare a conversazioni multiparte, basate su argomenti che persistono nel tempo.
+ms.openlocfilehash: bf1470dbaa0fd33ff7646ebef135de7f8b2ebe49
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "36191228"
+---
+# <a name="persistent-chat-planning-tool"></a><span data-ttu-id="cab45-103">Chat persistente (strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="cab45-103">Persistent Chat (Planning Tool)</span></span>
+ 
+<span data-ttu-id="cab45-104">Il server di chat persistente consente agli utenti di partecipare a conversazioni multiparte, basate su argomenti che persistono nel tempo.</span><span class="sxs-lookup"><span data-stu-id="cab45-104">Persistent Chat Server enables users to participate in multiparty, topic-based conversations that persist over time.</span></span>
+  
+<span data-ttu-id="cab45-105">Per altre informazioni sulla preparazione dell'ambiente per il server della chat persistente, vedere [pianificare il server di chat persistente in Skype for Business server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md).</span><span class="sxs-lookup"><span data-stu-id="cab45-105">For more details about preparing your environment for Persistent Chat Server, see [Plan for Persistent Chat Server in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md).</span></span>
+  
+

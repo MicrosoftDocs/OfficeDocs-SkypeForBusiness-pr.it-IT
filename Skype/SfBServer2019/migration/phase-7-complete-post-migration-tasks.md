@@ -1,0 +1,51 @@
+---
+title: Fase 7 completamento delle attività successive alla migrazione
+ms.reviewer: ''
+ms.author: kenwith
+author: kenwith
+manager: serdars
+audience: ITPro
+ms.topic: get-started-article
+ms.prod: skype-for-business-itpro
+localization_priority: Normal
+description: Negli argomenti di questa sezione vengono descritte le attività che è necessario eseguire dopo aver completato la migrazione a Skype for Business Server 2019.
+ms.openlocfilehash: 34977674966ab7c52e14a3036edc71e1e2f44469
+ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "36186638"
+---
+# <a name="phase-7-complete-post-migration-tasks"></a><span data-ttu-id="6a826-103">Fase 7: completare le attività successive alla migrazione</span><span class="sxs-lookup"><span data-stu-id="6a826-103">Phase 7: Complete post-migration tasks</span></span>
+
+<span data-ttu-id="6a826-104">Negli argomenti di questa sezione vengono descritte le attività che è necessario eseguire dopo aver completato la migrazione a Skype for Business Server 2019.</span><span class="sxs-lookup"><span data-stu-id="6a826-104">The topics in this section describe tasks that you will need to perform after you have completed your migration to Skype for Business Server 2019.</span></span>
+  
+## <a name="in-this-section"></a><span data-ttu-id="6a826-105">In questa sezione</span><span class="sxs-lookup"><span data-stu-id="6a826-105">In this section</span></span>
+
+- [<span data-ttu-id="6a826-106">Eseguire la migrazione di riunioni e contenuto delle riunioni esistenti</span><span class="sxs-lookup"><span data-stu-id="6a826-106">Migrate existing meetings and meeting content</span></span>](migrate-existing-meetings-and-meeting-content.md)
+    
+- [<span data-ttu-id="6a826-107">Eseguire la migrazione dei numeri di accesso esterno</span><span class="sxs-lookup"><span data-stu-id="6a826-107">Migrate dial-in access numbers</span></span>](migrate-dial-in-access-numbers.md)
+    
+- [<span data-ttu-id="6a826-108">Eseguire la migrazione delle impostazioni delle applicazioni di Call Park</span><span class="sxs-lookup"><span data-stu-id="6a826-108">Migrate Call Park application settings</span></span>](migrate-call-park-application-settings.md)
+    
+- [<span data-ttu-id="6a826-109">Eseguire la migrazione dei gruppi di risposte</span><span class="sxs-lookup"><span data-stu-id="6a826-109">Migrate response groups</span></span>](migrate-response-groups.md)
+    
+- [<span data-ttu-id="6a826-110">Migrare Rubrica</span><span class="sxs-lookup"><span data-stu-id="6a826-110">Migrate Address Book</span></span>](migrate-address-book.md)
+    
+- [<span data-ttu-id="6a826-111">Configurare la pagina di partecipazione alla riunione</span><span class="sxs-lookup"><span data-stu-id="6a826-111">Configure the meeting join page</span></span>](configure-the-meeting-join-page.md)
+    
+- [<span data-ttu-id="6a826-112">Rimuovere i server di archiviazione e monitoraggio legacy</span><span class="sxs-lookup"><span data-stu-id="6a826-112">Remove legacy Archiving and Monitoring servers</span></span>](remove-legacy-archiving-and-monitoring-servers.md)
+    
+- [<span data-ttu-id="6a826-113">Configurare i server delle applicazioni attendibili</span><span class="sxs-lookup"><span data-stu-id="6a826-113">Configure trusted application servers</span></span>](configure-trusted-application-servers.md)
+    
+- [<span data-ttu-id="6a826-114">Distribuire i client di Skype for Business Server 2019</span><span class="sxs-lookup"><span data-stu-id="6a826-114">Deploy Skype for Business Server 2019 clients</span></span>](deploy-clients.md)
+    
+- [<span data-ttu-id="6a826-115">Connettere un Survivable Branch Appliance</span><span class="sxs-lookup"><span data-stu-id="6a826-115">Connect a Survivable Branch Appliance</span></span>](connect-a-survivable-branch-appliance.md)
+    
+- [<span data-ttu-id="6a826-116">Configurare il monitoraggio di SCOM</span><span class="sxs-lookup"><span data-stu-id="6a826-116">Configure SCOM monitoring</span></span>](configure-scom-monitoring.md)
+    
+- [<span data-ttu-id="6a826-117">Eseguire la migrazione dei telefoni delle aree comuni</span><span class="sxs-lookup"><span data-stu-id="6a826-117">Migrate Common Area Phones</span></span>](migrate-common-area-phones.md)
+    
+- [<span data-ttu-id="6a826-118">Eseguire la migrazione dei dispositivi analogici</span><span class="sxs-lookup"><span data-stu-id="6a826-118">Migrate analog devices</span></span>](migrate-analog-devices.md)
+    
+

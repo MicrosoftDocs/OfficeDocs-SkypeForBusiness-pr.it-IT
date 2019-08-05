@@ -1,0 +1,1 @@
+<span data-ttu-id="2d462-101">Esempio di file include-basta sostituire il testo con il proprio.</span><span class="sxs-lookup"><span data-stu-id="2d462-101">Sample include file - just replace this text with your own.</span></span>
