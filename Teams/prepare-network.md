@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d203aefa4ba6991fbe6cf6a2ac463f4649f2aaa9
-ms.sourcegitcommit: a388aec386b1a72b44c24d5f189a8c1cd401f706
+ms.openlocfilehash: 041c391f202ac42b782ffc200db9ad495961fa52
+ms.sourcegitcommit: a49caec01ff724475d6670b303d851ddd8266c2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "36184237"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36207150"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams
 
@@ -58,10 +58,7 @@ La connessione del sito aziendale a Microsoft Network Edge include il primo acce
 
 Le destinazioni delle prestazioni di rete presuppongono una corretta pianificazione della larghezza di banda e/o [QoS](QoS-in-Teams.md). In altre parole, i requisiti si applicano direttamente al traffico multimediale in tempo reale dei team quando la connessione di rete è sotto un carico di picco.
 
-Per testare entrambi i segmenti di rete, è possibile usare lo [strumento di valutazione della rete](https://go.microsoft.com/fwlink/?linkid=855799). Questo strumento può essere distribuito sia nel PC client direttamente che in un PC collegato al bordo della rete del cliente. Lo strumento include una documentazione limitata, ma una documentazione più approfondita intorno all'uso dello strumento è disponibile qui: [valutazione della conformità della rete](https://go.microsoft.com/fwlink/?linkid=855800). Eseguendo questa valutazione della conformità della rete, è possibile convalidare la disponibilità della rete per l'esecuzione di applicazioni multimediali in tempo reale, ad esempio Microsoft teams.
-
-> [!NOTE]
-> Si tratta della stessa valutazione di conformità della rete che si consiglia di eseguire per i clienti che cercano di distribuire Skype for business con successo.
+Per altre informazioni sulla preparazione della rete per i team, vedere [Network Planner](https://docs.microsoft.com/microsoftteams/network-planner).
 
 
 ## <a name="bandwidth-requirements"></a>Requisiti di larghezza di banda

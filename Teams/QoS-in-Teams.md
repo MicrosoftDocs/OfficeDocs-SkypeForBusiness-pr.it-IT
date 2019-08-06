@@ -16,12 +16,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dc2344494ed853a992f205b6bdcfd4d702136f99
-ms.sourcegitcommit: da87a3c4c781223ab7de2fb539bb0796dc27ea9e
+ms.openlocfilehash: 0f6a48f11dafaff0bc0435e4a01561824c212936
+ms.sourcegitcommit: a49caec01ff724475d6670b303d851ddd8266c2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "36185038"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36207174"
 ---
 # <a name="implement-quality-of-service-qos-in-microsoft-teams"></a>Implementare la qualità del servizio (QoS) in Microsoft Teams
 
@@ -101,7 +101,7 @@ Il valore DSCP indica a una rete configurata in modo corrispondente quale priori
 
 La dimensione relativa degli intervalli di porta per i diversi carichi di lavoro in tempo reale in streaming imposta la percentuale di larghezza di banda disponibile totale dedicata a tale carico di lavoro. Per tornare all'analogia postale precedente: una lettera con un timbro "Air mail" potrebbe essere scattata entro un'ora dall'aeroporto più vicino, mentre un piccolo pacchetto contrassegnato come "posta in blocco" può attendere un giorno prima di spostarsi su una serie di camion.
 
-La tabella seguente mostra i contrassegni di DSCP necessari per i team con ExpressRoute e le porte associate per le code del carico di lavoro. Questi intervalli potrebbero fungere da buon punto di partenza per i clienti che non sono sicuri di cosa usare nei propri ambienti. Per altre informazioni, leggere i [Requisiti QoS di ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-qos).
+La tabella seguente mostra i contrassegni di DSCP necessari e gli intervalli di porte multimediali suggeriti usati da teams e ExpressRoute. Questi intervalli potrebbero fungere da buon punto di partenza per i clienti che non sono sicuri di cosa usare nei propri ambienti. Per altre informazioni, leggere i [Requisiti QoS di ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-qos).
 
 _Intervalli di porte iniziali consigliati_
 

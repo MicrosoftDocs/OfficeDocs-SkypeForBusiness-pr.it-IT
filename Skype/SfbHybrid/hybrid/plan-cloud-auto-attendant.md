@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica dell'uso di un operatore automatico cloud con Skype for Business Server 2019
-ms.openlocfilehash: 1a5f1aad4cd983f1f3839f47c54404d168ecf7f0
-ms.sourcegitcommit: 016beacc8b64eaeeaefb641360dd9bb8d2191c4a
+ms.openlocfilehash: 635d9c6548ba807153876d63ad228f69646e93c8
+ms.sourcegitcommit: a49caec01ff724475d6670b303d851ddd8266c2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "36185537"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36207032"
 ---
 # <a name="plan-cloud-auto-attendants"></a>Pianificare gli operatori automatici del cloud
 
@@ -45,7 +45,7 @@ Vedere anche:
 
 I requisiti seguenti presuppongono che si disponga già di Skype for Business Server 2019 distribuito in una topologia supportata.  I requisiti dipendono dallo scenario:
 
-- Se si sta già usando la messaggistica unificata di Exchange Online o in locale e si esegue l'aggiornamento a Skype for business 2019, sarà necessario acquisire la struttura degli operatori automatici e ricrearli nel cloud con gli operatori automatici di cloud. Per altre informazioni, vedere [spostamento di un operatore automatico di messaggistica unificata di Exchange o di una coda di chiamata nel sistema telefonico](configure-onprem-ra.md#moving-an-exchange-um-auto-attendant-or-call-queue-to-phone-system).
+- Se si sta già usando la messaggistica unificata di Exchange Online o locale e si esegue l'aggiornamento a Skype for business 2019, sarà necessario acquisire la struttura degli operatori automatici e ricrearli nel cloud con gli operatori automatici di cloud. Per altre informazioni, vedere [spostamento di un operatore automatico di messaggistica unificata di Exchange o di una coda di chiamata nel sistema telefonico](configure-onprem-ra.md#moving-an-exchange-um-auto-attendant-or-call-queue-to-phone-system).
 
 - Per una nuova configurazione degli operatori automatici del cloud, seguire i passaggi descritti in configurare gli [account delle risorse](configure-onprem-ra.md).
 
@@ -56,14 +56,14 @@ Oltre ai requisiti descritti sopra, i requisiti seguenti devono essere configura
    Per altre informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Office 365](configure-hybrid-connectivity.md).
 
 - Se si sta assegnando un numero di telefono all'operatore automatico, sarà necessaria una licenza di [Office 365 Enterprise E5](/skypeforbusiness/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-with-audio-conferencing) .
-- Creare un [account di risorse](/MicrosoftTeams/manage-resource-accounts.md) locale per ogni operatore automatico e assegnare numeri di telefono e licenze. 
+- È necessario creare [](/MicrosoftTeams/manage-resource-accounts.md) un account di risorse online o un [account di risorse](configure-onprem-ra.md)locale per ogni operatore automatico e assegnare numeri di telefono e licenze. 
 
 ## <a name="migration-and-interoperability"></a>Migrazione e interoperabilità
 
 Se si prevede di distribuire Skype for Business Server 2019 e/o Exchange Server 2019, è necessario pianificare con attenzione la migrazione per garantire il supporto continuo per gli operatori automatici. Tieni presente quanto segue:
 
 - Exchange Server 2019 non fornisce più la funzionalità di messaggistica unificata di Exchange
-- La messaggistica unificata di Exchange Online è in modalità pensionamento
+- La messaggistica unificata di Exchange è in modalità pensionamento
 - Skype for Business Server 2019 non si integra più con la messaggistica unificata di Exchange Online
 
 Gli operatori automatici cloud possono essere configurati con Skype for Business Server 2019, 2015 e 2013.
@@ -91,7 +91,7 @@ Per informazioni dettagliate su questa procedura, vedere [spostamento di un oper
 
 ## <a name="additional-planning-resources"></a>Risorse di pianificazione aggiuntive
 
-Esempio di esercitazione intitolato [Small Business-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) durante il processo di raccolta di informazioni sulle esigenze degli utenti, la pianificazione di una struttura di operatori automatici e gli utenti (e possibilmente le code di chiamata), la scrittura delle istruzioni del menu e implementazione del piano nell'interfaccia di amministrazione online. esaminare l'esercitazione e usare gli esercizi disponibili per creare il piano.
+Esempio di esercitazione intitolato [Small Business-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) durante il processo di raccolta di informazioni sulle esigenze degli utenti, la pianificazione di una struttura di operatori automatici e gli utenti (e possibilmente le code di chiamata), la scrittura delle istruzioni del menu e implementazione del piano nell'interfaccia di amministrazione di teams. Esaminare l'esercitazione e usare gli esercizi disponibili per creare il piano.
 
 Quando si ha una struttura solida che soddisfa le proprie esigenze e uno script che guida in modo efficiente i clienti, procedere alla [configurazione degli account delle risorse](configure-onprem-ra.md).
 
