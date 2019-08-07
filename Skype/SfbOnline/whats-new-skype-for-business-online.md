@@ -1,5 +1,5 @@
 ---
-title: What's new in Skype Business online.
+title: Novità di Skype for business online.
 ms.reviewer: ''
 description: Aggiungi una breve descrizione
 services: skype-for-business-online-admin
@@ -15,13 +15,13 @@ ms.topic: landing-page
 ms.date: 12/13/2017
 ms.author: samanro
 ms.openlocfilehash: c06dcc373b2029bac39af25a72429877c4bbd833
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "33911347"
 ---
-# <a name="whats-new-in-skype-for-business-online"></a>What's new in Skype Business online
+# <a name="whats-new-in-skype-for-business-online"></a>Novità di Skype for business online
 
 Scopri le novità di Skype for Business online.
 

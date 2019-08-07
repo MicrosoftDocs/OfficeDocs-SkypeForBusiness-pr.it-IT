@@ -26,10 +26,10 @@ ms.custom:
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per il Giappone.
 ms.openlocfilehash: 946a5f6cb5989b7bd9773ba34a0d62e19e2bb479
-ms.sourcegitcommit: 5faa89ea686448d5b339178f1330edc63e21a52f
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "36184789"
 ---
 # <a name="availability-in-japan"></a>Disponibilità in Giappone

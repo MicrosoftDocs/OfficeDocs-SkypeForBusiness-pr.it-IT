@@ -18,10 +18,10 @@ description: Scopri come misurare i risultati e il successo della tua abilitazio
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: f98783ef5baadc1f4f16d9390e4c3d6a6c2f796a
-ms.sourcegitcommit: ff777b61573b9d90e2d49c49b41fad654eeb3af7
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "36184015"
 ---
 # <a name="define-outcomes-and-success-for-your-microsoft-teams-adoption"></a>Definire i risultati e il successo per l'adozione di Microsoft Teams

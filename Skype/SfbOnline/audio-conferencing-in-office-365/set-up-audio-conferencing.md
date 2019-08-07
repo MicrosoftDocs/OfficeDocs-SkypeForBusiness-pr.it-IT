@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni sulla configurazione del servizio di conferenza telefonica con accesso esterno o del servizio Audioconferenza per gli utenti dell'organizzazione che devono usare il telefono per partecipare alle conferenze telefoniche. "
-ms.openlocfilehash: 9406c0ba680dd7eb6be52e2055041677913c3315
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: a36482dc6c58275491c65ac518e98cdc0ac0b787
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34494197"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "35792174"
 ---
 # <a name="set-up-audio-conferencing-for-skype-for-business"></a>Configurare il servizio Audioconferenza per Skype for Business
 
@@ -94,7 +94,7 @@ A questo punto, si vogliono [impostare le lingue dell'operatore automatico per A
 
 ![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**:
 
-1. Passare all'**interfaccia di amministrazione di Office 365** > **Interfacce di amministrazione** > **Teams** > **Portale legacy**.
+1. Andare all'interfaccia di amministrazione > **Interfacce di amministrazione** > **Teams** > **Portale legacy**.
 2. Selezionare **Audioconferenza** > **Bridge Microsoft**. 
 3. Selezionare il numero di telefono del bridge di conferenza, selezionare **Imposta lingue** e quindi fare clic sulla lingua predefinita.
 

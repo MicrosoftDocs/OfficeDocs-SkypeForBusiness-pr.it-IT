@@ -20,12 +20,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: "Informazioni sulle licenze di componenti aggiuntivi, sulle caratteristiche e sull'acquisto di piani E1, E3 ed E4 per Office 365 Enterprise. "
-ms.openlocfilehash: 7b9cadab1b261c23ce98fd4b007488a54b5b15e9
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: a6cdfdac5aaa56d9e1bc87df8f33b1143517f1ac
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34290057"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "35792883"
 ---
 # <a name="office-365-enterprise-e1-e3-and-e4"></a>Office 365 Enterprise E1, E3 e E4
 
@@ -44,7 +44,7 @@ Se è stato già acquistato il piano [Office 365 Enterprise E1](https://products
 ## <a name="e1-and-e3-customers-how-to-see-prices-and-buy"></a>Clienti E1 e E3: come visualizzare i prezzi e acquistare
 <a name="bkmk_buypremium"> </a>
 
-1. Accedere all'interfaccia di amministrazione di Office 365
+1. Accedere all'interfaccia di amministrazione.
 
 2. Passa a **Fatturazione** > **Abbonamenti** > **Componenti aggiuntivi** > **Acquista componenti aggiuntivi**.
 
@@ -59,14 +59,14 @@ The E3 plan is part of your Action Pack. To buy the **Phone System** and **Audio
 
 1. Buy one seat of E3 from our [marketing website](https://go.microsoft.com/fwlink/?LinkId=24393). Choose the option to add the seat to your existing tenant.
 
-2. Accedere all'interfaccia di amministrazione di Office 365 e passare a **Fatturazione** > **Abbonamenti** > **Componenti aggiuntivi**.
+2. Accedere all'interfaccia di amministrazione e passare a **Fatturazione** > **Abbonamenti** > **Componenti aggiuntivi**.
 
     Vengono visualizzati i prezzi e l'opzione per acquistare i componenti aggiuntivi **Sistema telefonico** e **Audioconferenza**.
 
 ## <a name="why-dont-i-see-the-option-to-buy-add-ons"></a>Perché l'opzione per acquistare componenti aggiuntivi non è visibile?
 <a name="bkmk_how"> </a>
 
-In alcune situazioni, non puoi vedere la possibilità di acquistare componenti aggiuntivi di Skype for Business in Interfaccia di amministrazione di Office 365.
+In alcune situazioni, non puoi vedere la possibilità di acquistare componenti aggiuntivi di Skype for Business in interfaccia di amministrazione di Microsoft 365.
 
 - **È stato acquistato Office 365 Business Premium con GoDaddy**. In questo caso, non è possibile acquistare i componenti aggiuntivi di Skype for Business. È necessario passare al piano E3 (che GoDaddy non vende) e quindi acquistarli. [Contattare il supporto tecnico per i prodotti per le aziende - Guida dell'amministratore](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 

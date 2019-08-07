@@ -26,10 +26,10 @@ ms.custom:
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Australia.
 ms.openlocfilehash: 64678a87cec4424cbe565f2f8df5e7e2dddf9e4c
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "36183241"
 ---
 # <a name="availability-in-australia"></a>Disponibilità in Australia

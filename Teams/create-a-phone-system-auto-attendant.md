@@ -22,10 +22,10 @@ ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
 ms.openlocfilehash: 939d1ac17007e3d823b0588f9949330e24555449
-ms.sourcegitcommit: 101fc98da3e8e969652ec1aca77dd4d7aef4a918
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "36185005"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud

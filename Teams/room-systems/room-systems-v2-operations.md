@@ -12,10 +12,10 @@ ms.collection: M365-voice
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
 ms.openlocfilehash: b5397e3b5049b4e7945780ebba70c2aaa2fc154b
-ms.sourcegitcommit: 8305fd00f6f9e302653fb383e4ac8d38490644c1
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "36183571"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft teams rooms 

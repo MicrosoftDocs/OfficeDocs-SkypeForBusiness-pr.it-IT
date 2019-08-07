@@ -15,10 +15,10 @@ MS.collection:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: e1d13052751a43f3dba3e17c12d8e66d9afaf9dd
-ms.sourcegitcommit: 6d5f09acdcdc8d5a36f7ac785349209e7496f17d
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "36184045"
 ---
 # <a name="run-a-report-to-show-active-staffhub-usage"></a>Eseguire un report per mostrare l'utilizzo di Active StaffHub

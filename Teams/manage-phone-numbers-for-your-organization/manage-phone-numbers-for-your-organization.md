@@ -24,10 +24,10 @@ ms.custom:
 - Calling Plans
 description: Informazioni su come ottenere e gestire i numeri di telefono per Microsoft teams per l'organizzazione.
 ms.openlocfilehash: af8586ecfd96ee75105fe7fcec6cf575dbc9f1e3
-ms.sourcegitcommit: 5faa89ea686448d5b339178f1330edc63e21a52f
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "36184783"
 ---
 # <a name="manage-phone-numbers-for-your-organization"></a>Gestire i numeri di telefono per la propria organizzazione

@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: Informazioni su quali Paesi e aree possiedono numeri telefonici di accesso esterno e come vengono assegnati automaticamente.
-ms.openlocfilehash: feaa7972766ffeb21517080e97ee67dcd597edb4
-ms.sourcegitcommit: 7d85a6784a21aec20dcaddd8940ffe95d532c2f4
+ms.openlocfilehash: 1e988db094b6d49f8fb8da548f6d71b3607975e2
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35134253"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "35792310"
 ---
 # <a name="phone-numbers-for-audio-conferencing-in-skype-for-business-online"></a>Numeri di telefono per Audioconferenza su Skype for Business online
 
@@ -63,7 +63,7 @@ While the default audio conferencing number that is assigned to an organizer is 
 Shared audio conferencing phone numbers are automatically assigned to organizations when they're enabled for audio conferencing. When the phone numbers are assigned, a phone number is assigned as the default phone number of the conferencing bridge. The phone number assigned as the default number of the bridge will be one from the country/region of the organization.
   
 > [!NOTE]
-> Il paese o l'area geografica dell'organizzazione è disponibile accedendo all'**interfaccia di amministrazione di Office 365** e controllando in **Profilo organizzazione**. 
+> Il paese o l'area geografica dell'organizzazione è disponibile accedendo all'interfaccia di amministrazione di Microsoft 365 e controllando in **Profilo organizzazione**. 
   
 > [!CAUTION]
 > A causa della disponibilità limitata di numeri di telefono a pagamento in Venezuela, Indonesia, Vietnam e Emirati Arabi Uniti (UAE), le organizzazioni di tali paesi o aree geografiche non dispongono di un numero a pagamento per la conferenza telefonica assegnato automaticamente. I numeri gratuiti in queste località sono disponibili a seconda dell’inventario. 

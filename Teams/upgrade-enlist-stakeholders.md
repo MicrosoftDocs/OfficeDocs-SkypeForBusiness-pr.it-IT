@@ -16,10 +16,10 @@ MS.collection:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: aaed448429bfa5715250eb7cf28488771c1c785c
-ms.sourcegitcommit: b92b673e718e34b6ebda6de57ad69eb6651faa98
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "36183703"
 ---
 ![Illustrazione che mostra lo stato delle parti interessate del viaggio di aggiornamento] (media/upgrade-banner-stakeholders.png "Fasi del viaggio di aggiornamento, con particolare attenzione alla raccolta del team di stakeholder del progetto")

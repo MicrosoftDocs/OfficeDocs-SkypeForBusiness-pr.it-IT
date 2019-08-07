@@ -22,10 +22,10 @@ ms.custom:
 - Reporting
 description: Informazioni su Call Analytics e Call Quality dashboard e su come usarli per monitorare e risolvere i problemi di qualità delle chiamate.
 ms.openlocfilehash: 535d3bf6ce2abf69143fb270e01bf4f0c2e230dc
-ms.sourcegitcommit: b92b673e718e34b6ebda6de57ad69eb6651faa98
+ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "36183748"
 ---
 # <a name="call-analytics-and-call-quality-dashboard"></a>Analisi delle chiamate e Dashboard Qualità della chiamata
