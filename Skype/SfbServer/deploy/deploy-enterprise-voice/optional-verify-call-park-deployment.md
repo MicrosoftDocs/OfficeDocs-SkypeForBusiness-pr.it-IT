@@ -5,32 +5,32 @@ ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: fcfe0962-1a9c-4cbd-847c-fed40e3b1480
 description: Verificare la distribuzione di Call Park in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 94d230491c0207c05016545de3c45cf0582ca496
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d698bf46f0a36a86729856c388fde09514288253
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194343"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36240437"
 ---
-# <a name="optional-verify-call-park-deployment-in-skype-for-business"></a><span data-ttu-id="7f677-103">Opzionale Verificare la distribuzione di Call Park in Skype for business</span><span class="sxs-lookup"><span data-stu-id="7f677-103">(Optional) Verify Call Park deployment in Skype for Business</span></span>
+# <a name="optional-verify-call-park-deployment-in-skype-for-business"></a><span data-ttu-id="a383d-103">Opzionale Verificare la distribuzione di Call Park in Skype for business</span><span class="sxs-lookup"><span data-stu-id="a383d-103">(Optional) Verify Call Park deployment in Skype for Business</span></span>
  
-<span data-ttu-id="7f677-104">Verificare la distribuzione di Call Park in Skype for Business Server VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="7f677-104">Verifying your deployment of Call Park in Skype for Business Server Enterprise Voice.</span></span> 
+<span data-ttu-id="a383d-104">Verificare la distribuzione di Call Park in Skype for Business Server VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="a383d-104">Verifying your deployment of Call Park in Skype for Business Server Enterprise Voice.</span></span> 
   
-<span data-ttu-id="7f677-105">Dopo l'installazione e la configurazione di Call Park, è necessario verificare la configurazione per assicurarsi che il parcheggio e il recupero delle chiamate funzionino come previsto.</span><span class="sxs-lookup"><span data-stu-id="7f677-105">After you install and configure Call Park, you need to verify the configuration to make sure that parking and retrieving calls works as expected.</span></span> <span data-ttu-id="7f677-106">Verificare quanto segue:</span><span class="sxs-lookup"><span data-stu-id="7f677-106">At minimum, verify the following:</span></span>
+<span data-ttu-id="a383d-105">Dopo l'installazione e la configurazione di Call Park, è necessario verificare la configurazione per assicurarsi che il parcheggio e il recupero delle chiamate funzionino come previsto.</span><span class="sxs-lookup"><span data-stu-id="a383d-105">After you install and configure Call Park, you need to verify the configuration to make sure that parking and retrieving calls works as expected.</span></span> <span data-ttu-id="a383d-106">Verificare quanto segue:</span><span class="sxs-lookup"><span data-stu-id="a383d-106">At minimum, verify the following:</span></span>
   
-- <span data-ttu-id="7f677-107">Chiama un utente con il parcheggio delle chiamate abilitato e fai parcheggiare la chiamata dall'utente.</span><span class="sxs-lookup"><span data-stu-id="7f677-107">Call a user who has Call Park enabled and have the user park the call.</span></span>
+- <span data-ttu-id="a383d-107">Chiama un utente con il parcheggio delle chiamate abilitato e fai parcheggiare la chiamata dall'utente.</span><span class="sxs-lookup"><span data-stu-id="a383d-107">Call a user who has Call Park enabled and have the user park the call.</span></span>
     
     > [!NOTE]
-    > <span data-ttu-id="7f677-108">Se è stato abilitato Call Park in criteri vocali subito prima di eseguire questo test, l'utente che sta parcheggiando la chiamata deve disconnettersi da Skype for business e quindi eseguire di nuovo l'accesso per poter vedere l'opzione Call Park nell'elenco trasferimento chiamate.</span><span class="sxs-lookup"><span data-stu-id="7f677-108">If you enabled Call Park in voice policy just before performing this test, the user who is parking the call needs to sign out of Skype for Business, and then sign back in, to be able to see the Call Park option in the transfer call list.</span></span> 
+    > <span data-ttu-id="a383d-108">Se è stato abilitato Call Park in criteri vocali subito prima di eseguire questo test, l'utente che sta parcheggiando la chiamata deve disconnettersi da Skype for business e quindi eseguire di nuovo l'accesso per poter vedere l'opzione Call Park nell'elenco trasferimento chiamate.</span><span class="sxs-lookup"><span data-stu-id="a383d-108">If you enabled Call Park in voice policy just before performing this test, the user who is parking the call needs to sign out of Skype for Business, and then sign back in, to be able to see the Call Park option in the transfer call list.</span></span> 
   
-- <span data-ttu-id="7f677-109">Componi il numero dell'orbita per recuperare la chiamata.</span><span class="sxs-lookup"><span data-stu-id="7f677-109">Dial the orbit number to retrieve the call.</span></span>
+- <span data-ttu-id="a383d-109">Componi il numero dell'orbita per recuperare la chiamata.</span><span class="sxs-lookup"><span data-stu-id="a383d-109">Dial the orbit number to retrieve the call.</span></span>
     
-- <span data-ttu-id="7f677-110">Parcheggiare un'altra chiamata, consentire il timeout della chiamata parcheggiata e non ritirare la risponderia.</span><span class="sxs-lookup"><span data-stu-id="7f677-110">Park another call, let the parked call time out, and do not pick up the ringback.</span></span> <span data-ttu-id="7f677-111">Verificare che la chiamata scaduta venga indirizzata correttamente alla destinazione di fallback specificata per **OnTimeoutURI**.</span><span class="sxs-lookup"><span data-stu-id="7f677-111">Verify that the timed-out call is correctly routed to the fallback destination that is specified for **OnTimeoutURI**.</span></span>
+- <span data-ttu-id="a383d-110">Parcheggiare un'altra chiamata, consentire il timeout della chiamata parcheggiata e non ritirare la risponderia.</span><span class="sxs-lookup"><span data-stu-id="a383d-110">Park another call, let the parked call time out, and do not pick up the ringback.</span></span> <span data-ttu-id="a383d-111">Verificare che la chiamata scaduta venga indirizzata correttamente alla destinazione di fallback specificata per **OnTimeoutURI**.</span><span class="sxs-lookup"><span data-stu-id="a383d-111">Verify that the timed-out call is correctly routed to the fallback destination that is specified for **OnTimeoutURI**.</span></span>
     
 
