@@ -5,22 +5,23 @@ ms.author: v-lanac
 manager: serdars
 ms.date: 06/21/2019
 ms.topic: article
+audience: admin
 ms.service: msteams
 ms.reviewer: sbhatta
 description: Usare questo elenco di controllo per configurare l'accesso guest in Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 09a6ec1f60ca4bfc39dbeb5ba1829330c3413560
-ms.sourcegitcommit: a78fee3cad5b58bf41dd014a79f4316cf310c8d1
+ms.openlocfilehash: 8418c9386c635d1fc1662ee6df80dfae21908bd0
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "36185170"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36244440"
 ---
 <a name="teams-guest-access-checklist"></a>Elenco di controllo di accesso Guest Teams
 ==========================================
@@ -81,7 +82,7 @@ Alcuni aspetti da ricordare:
    
    - **Gli ospiti possono invitare**: per consentire agli ospiti di invitare altri ospiti, impostare questo criterio su **Sì**.
    - **Abilitare la password unica per gli utenti (anteprima)**: per altre informazioni sulla funzionalità di codice per la sola volta, vedere autenticazione di un codice di accesso unico per la [posta elettronica (anteprima)](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode).
-   - **Limitazioni della collaborazione**: per altre informazioni su come consentire o bloccare gli inviti a specifici domini, vedere [consentire o bloccare gli inviti agli utenti B2B di organizzazioni specifiche](allow-deny-list.md).
+   - **Limitazioni della collaborazione**: per altre informazioni su come consentire o bloccare gli inviti a specifici domini, vedere [consentire o bloccare gli inviti agli utenti B2B di organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
 
 ## <a name="-step-2-configure-office-365-groups"></a>□ Passaggio 2: configurare i gruppi di Office 365
 

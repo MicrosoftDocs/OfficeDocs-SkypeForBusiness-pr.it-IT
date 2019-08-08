@@ -6,7 +6,7 @@ author: lanachin
 manager: serdars
 ms.date: 2/15/2018
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection:
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: defd6b2c-f267-4f8c-bc94-8894e2a429b6
 description: "Riepilogo: informazioni su come installare i componenti di sistema di Skype for Business Server in ogni server della topologia. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: 33775765f2ae677dd48e9cc581235df275de98d0
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 35ad1914dced8d8937de0f56a19c2709551a2893
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195789"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245806"
 ---
 # <a name="install-skype-for-business-server-on-servers-in-the-topology"></a>Installare Skype for Business Server nei server della topologia
  

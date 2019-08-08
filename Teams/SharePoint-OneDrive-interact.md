@@ -6,21 +6,22 @@ manager: serdars
 ms.date: 05/08/2019
 ms.topic: conceptual
 ms.service: msteams
+audience: admin
 ms.reviewer: snigdhav
 search.appverid: MET150
 description: Informazioni su come interagire con SharePoint Online e OneDrive for business con Microsoft teams, ad esempio la modalità di archiviazione dei file di chat privati e la relazione tra il team, il canale e la raccolta documenti.
 localization_priority: Normal
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 95e43baa0e7cd03ef08b4c9737b859f4095a64bb
-ms.sourcegitcommit: b92b673e718e34b6ebda6de57ad69eb6651faa98
+ms.openlocfilehash: d28a4a968fc9e478c3a13fb38acd1019221b5dcb
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "36183658"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36233022"
 ---
 # <a name="how-sharepoint-online-and-onedrive-for-business-interact-with-microsoft-teams"></a>Come interagire con SharePoint Online e OneDrive for business con Microsoft Teams
 

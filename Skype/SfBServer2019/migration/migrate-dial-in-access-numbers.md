@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: La migrazione dei numeri di accesso esterno a Skype for Business Server 2019 richiede l'esecuzione del cmdlet Move-CsApplicationEndpoint per eseguire la migrazione degli oggetti contatto. Durante l'installazione legacy e il periodo di coesistenza di Skype for Business Server 2019, i numeri di accesso esterno creati in Skype for Business Server 2019 si comportano in modo simile ai numeri di accesso per la chiamata in ingresso creati nell'installazione legacy, come descritto in questo sezione.
-ms.openlocfilehash: 83cf8b75bcf9a8d4794ae0f95962f3627d8592c1
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 81f100979d009f4f9b48cf9a538ec92095a67ad8
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189077"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238732"
 ---
 # <a name="migrate-dial-in-access-numbers"></a>Eseguire la migrazione dei numeri di accesso esterno
 

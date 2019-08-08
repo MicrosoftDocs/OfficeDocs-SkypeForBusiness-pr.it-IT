@@ -5,21 +5,22 @@ ms.author: lolaj
 manager: serdars
 ms.topic: article
 ms.service: msteams
+audience: admin
 search.appverid: MET150
 ms.reviewer: srividhc
 description: Questo articolo illustra come pianificare e configurare l'interoperabilità cloud video per gli utenti dell'organizzazione.
 localization_priority: Normal
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b171b3fb5e73561ea5aea54e6e4f25bfabe6b0dc
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: e91b0e25a7844634577083b26d74a48c788bc45b
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "36180578"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36237053"
 ---
 # <a name="set-up-cloud-video-interop-for-microsoft-teams"></a>Configurare l'interoperabilità cloud video per Microsoft Teams
 

@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: "La migrazione dell'applicazione Call Park include il provisioning del pool di Skype for Business Server 2019 con qualsiasi musica personalizzata su file in attesa caricati nell'installazione legacy, il ripristino delle impostazioni del livello di servizio e la destinazione di tutte le orbite di Call Park Pool di Skype for Business Server 2019. Se i file personalizzati per la musica in attesa sono stati configurati nel pool, questi file devono essere copiati nel nuovo pool di Skype for Business Server 2019. Inoltre, è consigliabile eseguire il backup di qualsiasi parcheggio di chiamata personalizzato per la musica in attesa di file da a un'altra destinazione per mantenere una copia di backup separata di qualsiasi file di musica in attesa personalizzato caricato per Call Park. I file personalizzati per la musica in blocco per l'applicazione Parcheggio di chiamata sono archiviati nell'archivio di file del pool. Per copiare i file audio da un file di pool in un archivio di file di Skype for Business Server 2019, usare il comando xcopy con i parametri seguenti:"
-ms.openlocfilehash: aa4ac3cfbe6802b8853a8ec8886f8fffe1a20a51
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: efb2bfbf8ac62ad05e2ee560c2aca4fb7b496006
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189083"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238707"
 ---
 # <a name="migrate-call-park-application-settings"></a>Eseguire la migrazione delle impostazioni delle applicazioni di Call Park
 

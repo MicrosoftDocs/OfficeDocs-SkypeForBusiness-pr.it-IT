@@ -7,21 +7,22 @@ ms.date: 01/11/2019
 ms.topic: article
 ms.service: msteams
 ms.reviewer: daro
+audience: admin
 description: Linee guida per i professionisti IT per guidare le distribuzioni di Office 365 in entità che gestiscono i dati soggetti al regolamento della difesa del governo degli Stati Uniti.
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Teams-upgrade-guidance
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_PracticalGuidance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 29de55208f53988a5941d114f3e681fd217f1b7e
-ms.sourcegitcommit: 30995da65ff6a9b33534c3818833cf0ae1952ab9
+ms.openlocfilehash: 247f0209c66a5d6ea1e39e938498eb0f75f9fdab
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "36183460"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36237707"
 ---
 # <a name="plan-for-microsoft-365-government---dod-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-DoD
 

@@ -6,21 +6,22 @@ manager: serdars
 ms.date: 5/11/2018
 ms.topic: article
 ms.service: msteams
+audience: admin
 ms.reviewer: dansteve
 description: Informazioni su cosa cercare quando si verifica la disponibilità dell'ambiente per Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1794b87beb1c6b1f1e499c214cde8d3e0b9b0a34
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: c0609efd8ac0286857b44996939378e57ce2702f
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "36181660"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36235376"
 ---
 <a name="check-your-environments-readiness-for-microsoft-teams"></a>Verificare la disponibilità dell'ambiente per Microsoft Teams
 ===========================================

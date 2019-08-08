@@ -5,22 +5,23 @@ ms.author: Rowille
 manager: serdars
 ms.date: 03/13/2018
 ms.topic: conceptual
+audience: admin
 ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
 description: Scegliere tra piani di chiamata e licenze, configurare le posizioni di emergenza e le caratteristiche come la segreteria telefonica e l'ID chiamante, acquisire o trasferire numeri di telefono.
 localization_priority: Normal
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_PracticalGuidance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 513519e95951676dc9e5a9b69d2fe3c5ace2824b
-ms.sourcegitcommit: 79ec789a22acf1686c33a5cc8ba3bd50049f94b8
+ms.openlocfilehash: ddc618a4b68c8a620568eba5ae2ed52d17096b30
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "36181963"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36233080"
 ---
 # <a name="make-my-service-decisions"></a>Prendere le decisioni del servizio
 

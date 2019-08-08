@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Se il server di archiviazione e il server di monitoraggio sono stati distribuiti nell'ambiente legacy, è possibile distribuire questi server nell'ambiente Skype for Business Server 2019 dopo la migrazione dei pool Front-end. Se le funzionalità di archiviazione e monitoraggio sono critiche per l'organizzazione, è tuttavia necessario aggiungere l'archiviazione e il monitoraggio al pool di piloti di Skype for Business Server 2019 prima della migrazione in modo che la funzionalità sia disponibile durante il processo di migrazione.
-ms.openlocfilehash: 94a3d21b9b76d18f63fdf7db53144b1d51deb53c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f259a08d25c93467c79fdaf3550288c6208607c3
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195011"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238459"
 ---
 # <a name="migrating-archiving-and-monitoring-servers"></a>Migrazione dei server di archiviazione e monitoraggio
 

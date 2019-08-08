@@ -4,8 +4,9 @@ author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
 ms.topic: article
+audience: admin
 ms.service: msteams
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 ms.reviewer: anach
@@ -13,12 +14,12 @@ search.appverid: MET150
 description: Informazioni sulla ricerca di contenuto in Microsoft teams e su come eseguire la ricerca in base a conversazioni di canale da Exchange, upload di file e modifiche da SharePoint e OneNote.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1860f3e5f79cd1ff2a2a63a8b49bf0dcfd65638f
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 7fe2528ab4f508af7840d820b54919d5b3a5faee
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "36180482"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36236813"
 ---
 <a name="use-content-search-in-microsoft-teams"></a>Usare la ricerca contenuto in Microsoft Teams
 =====================================
