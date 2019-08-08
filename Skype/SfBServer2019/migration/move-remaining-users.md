@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: 'Puoi trasferire gli utenti nella nuova distribuzione di Skype for Business Server 2019 usando il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell. È necessario soddisfare alcuni requisiti per garantire una transizione fluida a Skype for Business Server 2019. Per informazioni dettagliate sui prerequisiti per completare le procedure descritte in questo argomento, vedere Configurare i client per la migrazione. Per informazioni dettagliate sullo spostamento degli utenti, vedere la fase 4: spostare gli utenti del test nel pool pilota.'
-ms.openlocfilehash: 67bc2d3b239e65b5b1c83e2dcda81a1610d5a31c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 8c12ca52e162c4317dabc59d5de9b74082730882
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186665"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36244784"
 ---
 # <a name="move-remaining-users-to-skype-for-business-server-2019"></a>Trasferire gli utenti rimanenti in Skype for Business Server 2019
 

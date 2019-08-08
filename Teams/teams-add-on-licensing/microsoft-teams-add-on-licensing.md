@@ -8,7 +8,7 @@ ms.reviewer: mikedav
 ms.topic: conceptual
 ms.service: msteams
 search.appverid: MET150
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 audience: Admin
@@ -19,12 +19,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle licenze per i componenti aggiuntivi, sulle caratteristiche che si ottengono con ogni licenza, su come acquistarle per il prodotto e su come usare il proprio vettore esistente. È possibile ottenere informazioni sui prezzi e sui dettagli del piano per Office 365, i crediti di comunicazione e i piani per le chiamate.
-ms.openlocfilehash: 21a8b26180e4279fa6e735eb362e5703ace209a2
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: 2c2f3ecb632fda65d92b5c903c698eb9a53fa5ae
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "36184912"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36242742"
 ---
 # <a name="microsoft-teams-add-on-licensing"></a>Licenze per i componenti aggiuntivi Microsoft Teams
 

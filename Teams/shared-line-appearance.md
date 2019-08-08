@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: L'aspetto della linea condivisa consente a un utente di scegliere un delegato per rispondere o gestire le chiamate per proprio conto.
-ms.openlocfilehash: 619e011e1af5a765bc86ca6bd68134dc5ab1e9fa
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e2e99d214ef493933ed44d28c4a9cbdaeaab1077
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36182404"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243113"
 ---
 # <a name="shared-line-appearance-in-microsoft-teams"></a>Aspetto della linea condivisa in Microsoft Teams
 
@@ -43,7 +43,12 @@ Sia i responsabili che i delegati devono essere abilitati per VoIP aziendale. L'
 
 La delega e l'aspetto delle linee condivise sono caratteristiche guidate dall'utente: non ci sono impostazioni di amministratore da configurare. Per informazioni sull'uso della funzionalità, vedere [condividere una linea telefonica con un delegato](https://support.office.com/article/share-a-phone-line-with-a-delegate-16307929-a51f-43fc-8323-3b1bf115e5a8)
 
-L'amministratore del tenant deve abilitare la delega tramite l'impostazione **TeamsCallingPolicy AllowDelegation** per il funzionamento di questa funzionalità.
+L'amministratore del tenant può abilitare la delega tramite l'impostazione **TeamsCallingPolicy AllowDelegation** o tramite il portale di amministrazione di teams affinché questa funzionalità funzioni. 
+
+L'amministratore del tenant può anche configurare le relazioni di delega per un utente nell'interfaccia di amministrazione di teams. Inoltre, l'utente finale può anche configurare le relazioni di delega direttamente in teams. L'amministratore del tenant o l'utente non può bloccare la configurazione tra loro, ma l'interfaccia di amministrazione di teams e il client teams devono mostrare questa relazione accuratamente in entrambe le posizioni. 
+
+> [!IMPORTANT]
+> Quando l'amministratore del tenant disattiva la delega per un utente (dopo che è stato attivato), deve anche pulire le relazioni di delega per l'utente nell'interfaccia di amministrazione di teams per evitare il routing delle chiamate non corretto.
 
 ## <a name="shared-line-appearance-feature-availability"></a>Disponibilità delle caratteristiche delle linee condivise
 

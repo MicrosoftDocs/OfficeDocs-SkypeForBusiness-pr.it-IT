@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: M365-voice
 description: Questo articolo illustra i problemi noti per le sale di Microsoft teams, in base all'area delle caratteristiche.
-ms.openlocfilehash: 91e90479efdf905705d217de75cdac744a773860
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: fab004336d5a349bd0548479395ef0c25eb642c7
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36182476"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243433"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -37,7 +37,6 @@ Questo articolo elenca i problemi noti di Microsoft teams rooms, in base all'are
 | Titolo del problema |  Sintomo del comportamento \/ | Soluzione alternativa nota | Articolo KB |
 |  ---        |      ---             |   ---            | --- |
 |Tastiera virtuale mancante   | La tastiera virtuale non viene visualizzata quando è necessario immettere le informazioni nelle sale di Microsoft teams. Questo problema si verifica dopo l'installazione di Windows 10 Creators Update (versione 1703) in Surface Pro 4 in cui è in esecuzione Microsoft teams rooms. | Per risolvere il problema, aprire manualmente la tastiera virtuale. A tale scopo, eseguire la procedura seguente:<br><br> **1.** toccare e tenere premuta la barra delle applicazioni e quindi toccare **Mostra pulsante tastiera virtuale** . Sul lato destro della barra delle applicazioni deve essere visualizzata un'icona della tastiera. <br><br> **2.** toccare l'icona della tastiera per aprire la tastiera virtuale. | [KB4037694](https://support.microsoft.com/en-us/help/4037694/virtual-keyboard-missing-in-skype-room-systems-v2) | 
-   
 
 <a name="Hardware"> </a>  
 ## <a name="hardware"></a>Hardware
@@ -45,21 +44,29 @@ Questo articolo elenca i problemi noti di Microsoft teams rooms, in base all'are
 | Titolo del problema |  Sintomo del comportamento \/ | Soluzione alternativa nota | Articolo KB |
 |  ---        |      ---             |   ---            |   --- |
 | Monitoraggi non rilevati | Quando si eseguono sale di Microsoft teams su un dispositivo Surface Pro (modello 2017), i monitoraggi non vengono rilevati. |  Tenere premuto il pulsante Surface Pro Power per 20 o più secondi. Quando si esegue questa operazione, il dispositivo riavvia e cancella la cache grafica. |[KB4055681](https://support.microsoft.com/en-us/help/4055681/monitors-are-not-detected-when-you-run-skype-room-systems-on-a-surface)       | 
-          
+
 <a name="Limits"> </a>
 ## <a name="limitations-and-expected-behaviors"></a>Limitazioni e comportamenti previsti
+
 ***
+
 Microsoft teams Rooms non supporta l'input HDCP, che è stato osservato in modo da causare problemi con la funzionalità di ingesting HDMI (video, audio). Assicurarsi che le opzioni connesse alle sale di Microsoft teams siano disattivate. 
+
 ***
-Un televisore consumer usato come parte anteriore dello schermo della sala deve supportare/abilitare la funzionalità CEC (Consumer Electronics Control) di HDMI in modo che possa passare automaticamente a un'origine video attiva dalla modalità standby. Questa caratteristica non è supportata in tutti i televisori. 
+
+Un televisore consumer usato come parte anteriore della visualizzazione della sala deve supportare la funzionalità CEC (Consumer Electronics Control) di HDMI per passare automaticamente a un'origine video attiva dalla modalità standby. Questa caratteristica non è supportata in tutti i televisori.
+
 ***
-Usa sempre una connessione di rete a 1 Gbps cablata per assicurarti che avrai la larghezza di banda necessaria. 
+
+Usa sempre una connessione di rete a 1 Gbps cablata per assicurarti di avere la larghezza di banda necessaria. 
+
 ***
-Se il dispositivo Microsoft teams Rooms perde fiducia nel dominio (ad esempio, se si rimuovono le sale di Microsoft teams dal dominio dopo l'aggiunta di un dominio), non sarà possibile eseguire l'autenticazione nel dispositivo e aprire le impostazioni. La soluzione alternativa consiste nell'eseguire l'accesso con l'account di amministratore locale. 
+
+Se il dispositivo Microsoft teams Rooms perde fiducia nel dominio, non sarà possibile eseguire l'autenticazione nel dispositivo e aprire le impostazioni. Se ad esempio si rimuovono le sale di Microsoft teams dal dominio dopo l'aggiunta di un dominio, l'attendibilità viene persa. La soluzione alternativa consiste nell'eseguire l'accesso con l'account di amministratore locale. 
 ***
 La versione a 64 bit di Windows 10 Enterprise Anniversary Edition (lingua inglese, versione 1607) non è più supportata da Microsoft teams Rooms Release 3.0.12.0. 
 ***
-La sala Microsoft teams è un'applicazione a più finestre e richiede la connessione della visualizzazione della sala di ingresso alla porta HDMI del dispositivo, perché l'app funzioni correttamente. Verificare che sia collegato uno schermo HDMI oppure usare un connettore HDMI fittizio se si sta testando e non è ancora stato acquistato uno schermo.
+Microsoft teams Rooms è un'applicazione con più finestre e richiede la connessione di una facciata dello schermo della sala alla porta HDMI del dispositivo, perché l'app funzioni correttamente. Verificare che sia collegato uno schermo HDMI oppure usare un connettore HDMI fittizio se si sta testando e non è ancora stato acquistato uno schermo.
 ***
 <a name="See"> </a>  
 ## <a name="see-also"></a>Vedere anche

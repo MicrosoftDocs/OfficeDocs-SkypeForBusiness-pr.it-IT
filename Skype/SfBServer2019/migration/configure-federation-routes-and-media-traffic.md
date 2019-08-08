@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Federation è una relazione di trust tra due o più domini SIP che consente agli utenti di organizzazioni separate di comunicare tra loro attraverso i confini della rete. Dopo la migrazione al pool pilota, è necessario eseguire la transizione dalla Route federativo delle versioni precedenti dei server Edge alla route federativo dei server Edge di Skype for Business Server 2019.
-ms.openlocfilehash: 6b76932c8b988dbed61cba1470f32a51f6585536
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 50c10a4dced237e59c8dad12b5bdee1ef7d970fe
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195023"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239588"
 ---
 # <a name="configure-federation-routes-and-media-traffic"></a>Configurare le route federative e il traffico multimediale
 

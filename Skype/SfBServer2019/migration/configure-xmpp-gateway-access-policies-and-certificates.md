@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: 'La Federazione XMPP definisce una distribuzione esterna basata sul protocollo XMPP (eXtensible Messaging and Presence Protocol). Una configurazione XMPP consente agli utenti di accedere agli utenti del dominio XMPP:'
-ms.openlocfilehash: c5231016729cd40619bbcfe48ebfcf59eff9182a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 01adcbe06718068e84844f704858e04198b197b2
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187334"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239546"
 ---
 # <a name="configure-xmpp-gateway-access-policies-and-certificates"></a>Configurare criteri di accesso e certificati del gateway XMPP
 

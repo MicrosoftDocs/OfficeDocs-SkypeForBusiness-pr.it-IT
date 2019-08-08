@@ -5,22 +5,23 @@ ms.author: Rowille
 manager: serdars
 ms.date: 12/28/2018
 ms.topic: conceptual
+audience: admin
 ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
 description: Informazioni sulle riunioni, le licenze e la disponibilità, la configurazione delle impostazioni del Bridge di conferenza, l'acquisizione o il trasferimento di numeri di telefono e la scelta dei piani di chiamata tenant.
 localization_priority: Normal
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_PracticalGuidance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6f7c36904aadf19802511979fa5e069b3c91035e
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: d0155788ef4ba99a350be0043847edd5e705b75b
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36182740"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36240911"
 ---
 # <a name="make-my-service-decisions"></a>Prendere le decisioni del servizio
 

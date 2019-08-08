@@ -16,41 +16,52 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare i criteri di feedback per controllare se gli utenti dei team dell'organizzazione possono inviare commenti e suggerimenti sui team a Microsoft.
-ms.openlocfilehash: 3c9d05a3003906377447ee119b8cfc9bd137db81
-ms.sourcegitcommit: f26bb86d38c3b45a82e6d77c5aa521360a81ee9b
+ms.openlocfilehash: 148ba1dc19eecba4e447dd7049ae580c920a7bdf
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "36184681"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36242163"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-Gli utenti possono inviare commenti e suggerimenti su Teams a Microsoft per **contribuire** > a**fornire feedback** nei client teams. Stiamo migliorando continuamente l'esperienza dei team e usiamo questo feedback per migliorare le squadre.
+Gli utenti dell'organizzazione possono inviare commenti e suggerimenti su Teams a Microsoft per farci sapere come procedere, direttamente dall'interno dei client desktop e Web teams. Stiamo migliorando continuamente l'esperienza dei team e usiamo questo feedback per migliorare le squadre.
+
+**Funzionalità Invia feedback**
+
+Gli utenti possono inviare commenti e suggerimenti su teams per aiutarci **** > a**fornire feedback** in teams. I dati inviati tramite il **feedback** vengono considerati come dati di supporto nell'ambito del contratto di Office 365, incluse le informazioni che altrimenti verrebbero considerate "dati del cliente" o "dati personali".
 
 ![Screenshot dell'opzione Invia feedback in teams](media/manage-feedback-policies-in-teams-give-feedback.png)
 
-I dati inviati tramite il **feedback** vengono considerati come dati di supporto nell'ambito del contratto di Office 365, incluse le informazioni che altrimenti verrebbero considerate "dati del cliente" o "dati personali".
+**Sondaggi**
+
+Gli utenti possono anche valutare la propria esperienza con i team e inviarci i dettagli relativi alla valutazione assegnata. Questo sondaggio popup viene visualizzato agli utenti di tanto in tanto in teams. Quando un utente fa clic su **Fornisci un feedback** nella notifica, il sondaggio viene visualizzato per il completamento.
+
+![Screenshot della notifica e del modulo del sondaggio in teams](media/manage-feedback-policies-in-teams-survey.png)
 
 ## <a name="set-whether-users-can-send-feedback-about-teams-to-microsoft"></a>Impostare se gli utenti possono inviare commenti e suggerimenti su Teams a Microsoft
 
-Come amministratore, puoi controllare se gli utenti dell'organizzazione possono inviare commenti e suggerimenti su Teams a Microsoft. Per impostazione predefinita, a tutti gli utenti dell'organizzazione vengono assegnati automaticamente i criteri globali (per impostazione predefinita a livello globale) e la funzionalità è abilitata nel criterio. L'eccezione è teams for Education, in cui la funzionalità è abilitata per insegnanti e disabili per gli studenti.
+Come amministratore, puoi controllare se gli utenti dell'organizzazione possono inviare commenti e suggerimenti su Teams a Microsoft tramite **feedback** e se ricevono il sondaggio. Per impostazione predefinita, a tutti gli utenti dell'organizzazione vengono assegnati automaticamente i criteri globali (per impostazione predefinita) e la funzionalità **Invia feedback** e il sondaggio sono abilitati nel criterio. L'eccezione è teams for Education, in cui le funzionalità sono abilitate per insegnanti e disabili per gli studenti.
 
 È possibile modificare i criteri globali oppure creare e assegnare criteri personalizzati. Se a un utente viene assegnato un criterio personalizzato, tale criterio si applica all'utente. Se a un utente non viene assegnato un criterio personalizzato, il criterio globale si applica all'utente. Dopo aver modificato il criterio globale o assegnato un criterio, possono essere necessarie fino a 24 ore affinché le modifiche abbiano effetto.
 
-Supponiamo, ad esempio, di consentire a tutti gli utenti dell'organizzazione di inviare commenti e suggerimenti ad eccezione dei nuovi assunti in formazione. In questo scenario creerai un criterio personalizzato per disattivare la caratteristica e assegnarla ai nuovi assunti. Tutti gli altri utenti dell'organizzazione ottengono il criterio globale con la funzionalità attivata.  
+Supponiamo, ad esempio, di voler consentire a tutti gli utenti dell'organizzazione di inviare feedback tramite **feedback** e ricevere sondaggi, ad eccezione dei nuovi assunti in formazione. In questo scenario creerai un criterio personalizzato per disattivare entrambe le caratteristiche e assegnarlo ai nuovi assunti. Tutti gli altri utenti dell'organizzazione ottengono il criterio globale con le funzionalità attivate.  
 
-Puoi usare il cmdlet **New-CsTeamsFeedbackPolicy** per creare criteri personalizzati e il cmdlet **Grant-CsTeamsFeedbackPolicy** per assegnarlo a uno o più utenti o gruppi di utenti, ad esempio un gruppo di sicurezza o un gruppo di distribuzione. 
+Puoi usare il cmdlet **New-CsTeamsFeedbackPolicy** per creare criteri personalizzati e il cmdlet **Grant-CsTeamsFeedbackPolicy** per assegnarlo a uno o più utenti o gruppi di utenti, ad esempio un gruppo di sicurezza o un gruppo di distribuzione.
 
-Imposta il parametro **userInitiatedMode** su **Enabled** per consentire agli utenti a cui viene assegnato il criterio di inviare commenti e suggerimenti. Impostando il parametro **** su Disabled si disattiva la caratteristica e gli utenti a cui viene assegnato il criterio non hanno la possibilità di inviare commenti e suggerimenti.
+Per disattivare e attivare le caratteristiche, impostare i parametri seguenti:
+
+ - **Invia feedback**: imposta il parametro **userInitiatedMode** su **Enabled** per consentire agli utenti a cui viene assegnato il criterio di fornire commenti e suggerimenti. Impostando il parametro **** su Disabled si disattiva la caratteristica e gli utenti a cui viene assegnato il criterio non hanno la possibilità di inviare commenti e suggerimenti.
+ - **Sondaggi**: imposta il parametro **receiveSurveysMode** su **Enabled** per consentire agli utenti a cui viene assegnato il criterio di ricevere il sondaggio. Per consentire agli utenti di ricevere il sondaggio e consentirne l'opt-out, imposta il parametro su **enabledUserOverride**. In teams gli utenti possono quindi accedere alla**privacy** **delle impostazioni** > e scegliere se partecipare ai sondaggi. Impostando il parametro **** su Disabled si disattiva la caratteristica e gli utenti a cui viene assegnato il criterio non riceveranno il sondaggio.
 
 ## <a name="create-a-custom-feedback-policy"></a>Creare criteri di feedback personalizzati
 
-In questo esempio creiamo i criteri di feedback denominati nuovi criteri di feedback sul noleggio e disattiviamo la possibilità di fornire commenti e suggerimenti.
+In questo esempio creiamo i criteri di feedback denominati nuovi criteri di feedback sul noleggio e disattiviamo la possibilità di fornire feedback tramite **feedback** e il sondaggio.
 
 ```
-New-CsTeamsFeedbackPolicy -identity "New Hire Feedback Policy" -userInitiatedMode disabled
+New-CsTeamsFeedbackPolicy -identity "New Hire Feedback Policy" -userInitiatedMode disabled -receiveSurveysMode disabled
 ```
 
 ## <a name="assign-a-custom-feedback-policy"></a>Assegnare un criterio di feedback personalizzato
@@ -78,7 +89,7 @@ $members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-O
 ```
 Assegnare tutti gli utenti del gruppo a un particolare criterio di feedback. In questo esempio si tratta di nuovi criteri di feedback sulle assunzioni.
 ```
-$members | ForEach-Object { Grant-CsTeamsFeedbackPolicy -PolicyName "New Hire Feedback Policy" -Identity $_.EmailAddress}
+$members | ForEach-Object {Grant-CsTeamsFeedbackPolicy -PolicyName "New Hire Feedback Policy" -Identity $_.EmailAddress}
 ``` 
 A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.
 

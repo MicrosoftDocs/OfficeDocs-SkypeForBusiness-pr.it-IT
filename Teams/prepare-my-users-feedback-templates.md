@@ -7,20 +7,21 @@ ms.date: 03/31/2018
 ms.topic: article
 ms.service: msteams
 ms.reviewer: rowille
+audience: admin
 description: Raccogliere il feedback degli utenti per migliorare l'implementazione di cloud Voice in Microsoft teams o Skype for business.
 localization_priority: Normal
 search.appverid: MET150
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_PracticalGuidance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 16a535701088afd4e094e2762e9b278b74cb1ee7
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 9c0a18f82eebb926792e7c3450ef1db1eb9f2fad
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "36182074"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36233244"
 ---
 # <a name="user-feedback-surveys"></a>Sondaggi di feedback degli utenti 
 

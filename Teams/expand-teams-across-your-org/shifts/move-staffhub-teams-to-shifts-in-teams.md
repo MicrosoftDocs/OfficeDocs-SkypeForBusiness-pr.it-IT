@@ -5,19 +5,20 @@ ms.author: v-lanac
 ms.reviewer: lisawu
 manager: serdars
 ms.topic: article
+audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni su come spostare i team di Microsoft StaffHub e pianificare i dati in turni in Microsoft teams.
 localization_priority: Normal
-MS.collection: Strat_MT_TeamsAdmin
+ms.collection: Strat_MT_TeamsAdmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 56f1501f0b9947ea009c6ebbf697a211dd1118ae
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: cef8c6fbfd5ed0b19d6762b7508b311413d11066
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36184570"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36233284"
 ---
 # <a name="move-your-microsoft-staffhub-teams-to-shifts-in-microsoft-teams"></a>Spostare i team di Microsoft StaffHub in turni in Microsoft Teams
 
@@ -118,7 +119,7 @@ Esegui una delle operazioni seguenti:
   I proprietari e i responsabili del team di StaffHub possono convertire un account inattivo e collegarlo a un account di Azure AD in StaffHub modificando l'indirizzo di posta elettronica dell'utente in un UPN valido nella pagina delle impostazioni del team di StaffHub.
 
 - Rimuovere l'account non collegato e quindi aggiungere di nuovo l'account usando l'UPN.
-    1. Eseguire il cmdlet [Remove-StaffHubUser](https://docs.microsoft.com/powershell/module/staffhub/Remove-StaffHubUser?view=staffhub-ps) per rimuovere l'account non provisioning dal team di StaffHub.
+    1. Eseguire il cmdlet [Remove-StaffHubMember](https://docs.microsoft.com/powershell/module/staffhub/Remove-StaffHubMember?view=staffhub-ps) per rimuovere l'account non provisioning dal team di StaffHub.
     2. Eseguire il cmdlet [Add-StaffHubMember](https://docs.microsoft.com/powershell/module/staffhub/add-staffhubmember?view=staffhub-ps) per aggiungere di nuovo l'account al team di StaffHub usando l'UPN.
 
 - Rimuovere l'account utente non collegato. Usare questa opzione l'account utente non è più necessario.

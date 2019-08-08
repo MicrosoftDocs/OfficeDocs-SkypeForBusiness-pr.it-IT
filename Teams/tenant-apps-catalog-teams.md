@@ -7,21 +7,22 @@ ms.date: 06/20/2019
 ms.topic: article
 ms.service: msteams
 ms.reviewer: prem
+audience: admin
 description: Linee guida per la pubblicazione di app nel catalogo delle app tenant di Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
 f1keywords: ms.teamsadmincenter.apppolicies.publishtenantapps
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5d016fd1c341774115b9b68edafcc47a63e42b0d
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: b8f239a136ae3a2242dba45da5a68e22b8fb29c4
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36184315"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36235099"
 ---
 <a name="publish-apps-in-the-microsoft-teams-tenant-apps-catalog"></a>Pubblicare app nel catalogo delle app del tenant di Microsoft Teams
 =======================================================
@@ -30,20 +31,20 @@ ms.locfileid: "36184315"
 
 Il catalogo delle app tenant teams consente di distribuire applicazioni line-of-business costruite appositamente per l'organizzazione e di affidarsi alle funzioni aziendali critiche.
 
-Per pubblicare le app per l'organizzazione, accedere al client teams usando le credenziali di amministratore globale e quindi seguire le istruzioni riportate di seguito.
+Per pubblicare app per l'organizzazione, accedere al client teams usando un account con l'amministratore globale o i ruoli di amministratore del servizio teams e quindi seguire le istruzioni riportate di seguito.
 
 ## <a name="publish-an-app-in-the-tenant-apps-catalog-from-the-teams-client"></a>Pubblicare un'app nel catalogo delle app tenant dal client Teams
 
 > [!NOTE]
-> È necessario avere effettuato l'accesso al client Microsoft teams usando le credenziali di amministratore globale per pubblicare le app per l'organizzazione.
+> È necessario avere effettuato l'accesso al client Microsoft teams con un account che include l'amministratore globale o il ruolo di amministratore del servizio teams abilitato per pubblicare le app per l'organizzazione. Leggi altre informazioni sull' [uso dei ruoli di amministratore per gestire i team](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles).
 
 ### <a name="get-a-teams-app-package"></a>Ottenere un pacchetto dell'app Teams
 
-Viene creato un pacchetto dell'app teams con [Teams App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio). Una volta che hai il pacchetto dell'app, puoi aggiungerlo al catalogo dell'app Enterprise. Mentre tutti gli utenti del tenant possono visualizzare il catalogo delle app, attualmente solo gli amministratori globali hanno la possibilità di pubblicarlo e gestirlo. (Alla fine, anche gli amministratori di teams saranno in grado di eseguire questa operazione).
+Viene creato un pacchetto dell'app teams con [Teams App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio). Una volta che hai il pacchetto dell'app, puoi aggiungerlo al catalogo dell'app Enterprise. Mentre tutti gli utenti del tenant possono visualizzare il catalogo delle app, solo gli amministratori globali e i servizi di teams hanno la possibilità di pubblicarli e gestirli.
 
 ### <a name="go-to-the-tenant-apps-catalog"></a>Vai al catalogo delle app tenant
 
-Avviare il client Microsoft teams ed eseguire l'accesso usando le credenziali di amministratore globale. In Microsoft teams Store selezionare la nuova sezione denominata per l'organizzazione specifica (in questo esempio, contoso). Gli utenti dell'organizzazione possono visualizzare le app nel catalogo e installarle per i team di cui fanno parte.
+Avviare il client Microsoft teams ed eseguire l'accesso usando le credenziali di amministratore del servizio globale o teams. In Microsoft teams Store selezionare la nuova sezione denominata per l'organizzazione specifica (in questo esempio, contoso). Gli utenti dell'organizzazione possono visualizzare le app nel catalogo e installarle per i team di cui fanno parte.
 
 ![Screenshot dell'app teams Store che mostra il catalogo app.](media/private-app-store-teams-image01.png)
 

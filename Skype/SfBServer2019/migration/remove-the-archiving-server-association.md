@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Per rimuovere un server di archiviazione, è necessario modificare o deselezionare la dipendenza dal pool Front-end associato, Front End Server, Survivable Branch Appliance e Survivable Branch Server. Si modificano le proprietà del pool Front-End, Front End Server, Survivable Branch Appliance e Survivable Branch Server per rimuovere la dipendenza. Dopo aver cancellato la dipendenza ed eliminato il server in Generatore di topologia, viene visualizzato un avviso che l'oggetto archivio di database associato in Generatore di topologia verrà eliminata.
-ms.openlocfilehash: 52bba22f678bb4aee1ce406613ce19bb686a78c4
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d6d7b7f53f9997b17893db079090e1837ce77f4d
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195225"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36244428"
 ---
 # <a name="remove-the-archiving-server-association"></a>Rimuovere l'associazione del server di archiviazione
 

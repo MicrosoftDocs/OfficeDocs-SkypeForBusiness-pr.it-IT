@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: "Ogni Survivable Branch Appliance (SBA) è associato a un pool Front-end che funge da registrar di backup per l'SBA. Quando viene eseguita la migrazione del pool Front-end a Skype for Business Server 2019, l'SBA deve essere dissociato dal pool Front-end mentre il pool viene aggiornato, dopo la migrazione del pool a Skype for Business Server 2019, l'SBA può essere riassociato all'aggiornamento anteriore E pool ND. Questo comporta l'eliminazione della SBA dalla topologia legacy in Generatore di topologie e l'aggiunta della SBA alla topologia di Skype for Business Server 2019. Gli utenti residenti nell'ASB legacy devono prima essere spostati in un altro pool Front end prima di rimuovere l'SBA dalla topologia. Dopo aver aggiunto l'SBA alla topologia di Skype for Business Server 2019, questi utenti possono quindi essere spostati di nuovo nella SBA. Questi passaggi sono riepilogati di seguito:"
-ms.openlocfilehash: 7cb933018d24dafb978464338f01f97b25e15539
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e5545a2de4eddd65790f425ab888b8fd07faf970
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187331"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239549"
 ---
 # <a name="connect-a-survivable-branch-appliance"></a>Connettere un Survivable Branch Appliance
 
