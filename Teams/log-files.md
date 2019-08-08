@@ -5,21 +5,22 @@ author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
 ms.date: 09/25/2017
+audience: admin
 ms.topic: troubleshooting
 ms.service: msteams
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 search.appverid: MET150
 description: Informazioni sui registri di debug, multimediali e desktop prodotti da Microsoft teams, dove possono essere trovati e come possono essere utili per la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2d210c5c2e3e2d9b3b3757c2945c504296f00788
-ms.sourcegitcommit: a49caec01ff724475d6670b303d851ddd8266c2c
+ms.openlocfilehash: 6af503206118b03d9d86fdaf2491e92c69cf9716
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36207136"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36245088"
 ---
 <a name="use-log-files-in-troubleshooting-microsoft-teams"></a>Usare i file di log in risoluzione dei problemi di Microsoft Teams
 =================================================
@@ -86,11 +87,11 @@ I registri multimediali contengono dati di diagnostica relativi alla condivision
 
 |Client |Posizione |
 |---------|---------|
-|Windows     |%appdata%\Microsoft\Teams\media-stack\*. Blog         |
-|            |%appdata%\Microsoft\Teams\skylib\*. Blog
-|            |%appdata%\Microsoft\Teams\media-stack\*. etl         |
-|Mac OSX     |~/Libreria/Application Support/Microsoft/teams/media-\*stack. Blog         |
-|            |~/Libreria/Application Support/Microsoft/teams/\*skylib. Blog         |
+|Windows     |%appdata%\Microsoft\Teams\media-stack\\*. Blog         |
+|            |%appdata%\Microsoft\Teams\skylib\\*. Blog
+|            |%appdata%\Microsoft\Teams\media-stack\\*. etl         |
+|Mac OSX     |~/Libreria/Application Support/Microsoft/teams/media-stack/*. Blog         |
+|            |~/Libreria/Application Support/Microsoft/teams/skylib/*. Blog         |
 
 
 

@@ -12,17 +12,17 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come aumentare la consapevolezza e implementare un programma di formazione per l'adozione di Microsoft teams.
 ms.custom: Adopt
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1bafcf554ded9149106ee8d313cb7ff0646ea252
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: d8bda03900368e349e2a6579dfb32381af8c97b1
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36183721"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36242295"
 ---
 # <a name="drive-awareness-and-implement-training-for-microsoft-teams"></a>Guidare la consapevolezza e implementare la formazione per Microsoft Teams
 

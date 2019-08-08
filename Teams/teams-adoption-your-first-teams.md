@@ -12,17 +12,17 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come guidare l'adozione di teams usando il prodotto.
 ms.custom: Adopt
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ca3365cd147cf2c6d49e3fda4dc283ce758d76e3
-ms.sourcegitcommit: b5949233f8080a6cf0edb4b5e27272214feb1c22
+ms.openlocfilehash: ce2cec58d96e5c812cf63a9af1ebf6dfeffa7c13
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "36183931"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36244814"
 ---
 # <a name="create-your-first-teams-in-microsoft-teams"></a>Creare i primi team in Microsoft Teams
 

@@ -7,21 +7,22 @@ ms.date: 07/10/2019
 ms.topic: article
 ms.service: msteams
 ms.reviewer: sonua
+audience: admin
 search.appverid: MET150
 localization_priority: Normal
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni sui passaggi per configurare Live per gli eventi in teams, tra cui la preparazione della rete, l'assegnazione di licenze, l'uso di criteri per abilitare le caratteristiche e la pianificazione degli eventi dinamici per gli utenti e la configurazione di un provider di distribuzione di terze parti.
 f1keywords: ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e82506a78f907192a43eaf08d5d7d47841ebc1a4
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: 3848dde21ae45c0354049a69c939ba4bd978bea4
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36184747"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36237369"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi dinamici in Microsoft Teams
 

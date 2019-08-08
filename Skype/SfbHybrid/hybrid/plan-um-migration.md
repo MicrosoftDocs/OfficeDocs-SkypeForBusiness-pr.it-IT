@@ -7,14 +7,14 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
-ms.prod: skypeforbusiness-server-itpro
+ms.prod: skype-for-business-itpro
 description: Questo argomento illustra le informazioni che è necessario prendere in considerazione quando si decide di eseguire la migrazione delle distribuzioni esistenti di Skype for Business Server o Exchange Server alla versione più recente o a Skype for business online o Exchange Online.
-ms.openlocfilehash: b1e7f52da2f036ebf88b4a8986650bfbc20c38b6
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 864a777c1fcb483df7f3779e9b105c1af551748e
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "36185429"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36237471"
 ---
 # <a name="plan-for-skype-for-business-server-and-exchange-server-migration"></a>Pianificare la migrazione a Skype for Business Server e Exchange Server
 

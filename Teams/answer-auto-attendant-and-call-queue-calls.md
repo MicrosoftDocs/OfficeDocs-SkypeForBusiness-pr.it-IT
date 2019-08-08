@@ -4,23 +4,24 @@ ms.reviewer: waseemh
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
+audience: ITPro
 ms.date: 09/20/2018
 ms.topic: conceptual
 ms.service: msteams
 description: Descrive gli operatori automatici del cloud e le code di chiamata e spiega come rispondere alle chiamate in teams.
 localization_priority: Normal
 search.appverid: MET150
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 855029001863b6603548c865d5f7bfb039261a18
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: 5eb58a945f1a5ff06c9f92c9440e783e4df9cde0
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "36183841"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36241254"
 ---
 <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate all'operatore automatico e alla coda di chiamata direttamente da teams
 ===========================================================

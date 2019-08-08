@@ -5,22 +5,23 @@ ms.author: v-lanac
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
+audience: admin
 ms.reviewer: dearbeen
 description: Integrare le parti interessate per il servizio del team di progetto per l'aggiornamento.
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Teams-upgrade-guidance
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: aaed448429bfa5715250eb7cf28488771c1c785c
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: e248d0cc92cea65fe8eb3b4a2c05f70b4c11c124
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36183703"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36236457"
 ---
 ![Illustrazione che mostra lo stato delle parti interessate del viaggio di aggiornamento] (media/upgrade-banner-stakeholders.png "Fasi del viaggio di aggiornamento, con particolare attenzione alla raccolta del team di stakeholder del progetto")
 

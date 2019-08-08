@@ -3,10 +3,11 @@ title: Assegnare licenze Teams
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
+audience: ITPro
 ms.date: 12/14/2018
 ms.topic: article
 ms.service: msteams
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 search.appverid: MET150
@@ -14,12 +15,12 @@ ms.reviewer: mikedav
 description: Informazioni su come assegnare licenze per funzionalità come audioconferenza, sistema telefonico e piani di chiamata.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 46966b7cad855ef6336b501564cde89dffd6b2b2
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 8d51e2cf8a563c5094da923949c8e736aceeb864
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "36180521"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36241884"
 ---
 # <a name="assign-microsoft-teams-licenses"></a>Assegnare licenze di Microsoft Teams
 

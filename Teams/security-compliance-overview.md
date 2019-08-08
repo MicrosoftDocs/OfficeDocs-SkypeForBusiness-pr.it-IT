@@ -7,20 +7,21 @@ ms.date: 09/11/2018
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: anach
+audience: admin
 description: Una panoramica delle caratteristiche di sicurezza e conformità di Microsoft teams, inclusi il controllo e la creazione di report, la ricerca di contenuto di conformità, eDiscovery e altro ancora.
 localization_priority: Normal
 search.appverid: MET150
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7582a7890b13c2879a672f87c90e9e646557dbc0
-ms.sourcegitcommit: 9751f34318119991b1bd32b384b8e1479c83cb0e
+ms.openlocfilehash: d9e9b07ed1ca995d673ef6ea79652cb880c4dff6
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "36184867"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243191"
 ---
 <a name="overview-of-security-and-compliance-in-microsoft-teams"></a>Panoramica della sicurezza e della conformità in Microsoft Teams
 ======================================================
@@ -121,10 +122,14 @@ La ricerca di contenuto e eDiscovery non richiedono l'abilitazione nel centro co
 <a name="location-of-data-in-teams"></a>Posizione dei dati in teams
 -------------------------
 
-I dati in teams si trovano nell'area geografica associata al tenant di Office 365. Attualmente, teams supporta le aree Australia, Canada, Francia, India, Giappone, UK, Americhe, APAC e EMEA. 
+I dati in teams si trovano nell'area geografica associata al tenant di Office 365. Attualmente, teams supporta le aree Australia, Canada, Francia, India, Giappone, Regno Unito, Corea del sud, Sud Africa, Americhe, APAC e EMEA. 
 
 > [!IMPORTANT]
-> I team attualmente offrono la residenza dati in Australia, Canada, Francia, India, Giappone e Regno Unito solo per i nuovi inquilini. Un nuovo tenant viene definito come un tenant che non ha un singolo utente del tenant che accede a teams. I tenant esistenti provenienti da Australia, India e Giappone continueranno a archiviare i dati del team nell'area APAC. I tenant esistenti in Canada continueranno ad avere i loro dati archiviati nelle Americhe. I tenant esistenti in Francia e Regno Unito continueranno ad avere i loro dati archiviati nell'area EMEA.
+> I team attualmente offrono la residenza dati in Australia, Canada, Francia, India, Giappone, Regno Unito, Corea del sud e Sud Africa solo per i nuovi inquilini. Un nuovo tenant viene definito come un tenant che non ha un singolo utente del tenant che accede a teams. I tenant esistenti provenienti da Australia, India, Giappone e Corea del sud continueranno ad avere i dati dei team archiviati nell'area APAC. I tenant esistenti in Canada continueranno ad avere i loro dati archiviati nelle Americhe. I tenant esistenti in Francia, Regno Unito e Sud Africa continueranno ad avere i loro dati archiviati nell'area EMEA.
+
+Per altre informazioni su South African data Residency per Teams è possibile trovare il post di Blog di Antonio Sagar, [Microsoft teams lancia il South African data Residency](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-launches-South-Africa-Data-Residency/ba-p/776611).
+
+Altre informazioni sulla residenza di dati in Corea del sud per i team viene fornita per gentile concessione del post di Blog di Antonio Sagar, [Microsoft teams lancia il sud coreano data Residency](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-launches-South-Korea-Data-Residency/ba-p/789171).
 
 Per altre informazioni sul lancio della residenza di dati in India e Regno Unito per i team, leggere il post di Blog di anmariana, [Microsoft teams avvia l'India data Residency, altro GEOS presto disponibile](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-Launches-Australia-and-Japan-Data-Residency/ba-p/237827). 
 

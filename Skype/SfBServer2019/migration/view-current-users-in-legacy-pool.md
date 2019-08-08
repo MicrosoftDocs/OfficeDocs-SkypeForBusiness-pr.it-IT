@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Prima di apprendere i vari modi per trasferire gli utenti tra i pool, dobbiamo prima di tutto determinare gli utenti presenti nel pool legacy. La colonna del pool di registrazione identifica gli utenti configurati per il pool legacy. Questi sono gli utenti di test che sposteremo nel pool di Skype for Business Server 2019.
-ms.openlocfilehash: abcb7066ebcc58e603861985673584249edef1ad
-ms.sourcegitcommit: c554b09527817dc3e06b10509f6668b42ccc5cb9
+ms.openlocfilehash: d5ef86d1750cb0a6bb770adf0c75628d9229d83a
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "36196040"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243983"
 ---
 # <a name="view-current-users-in-legacy-pool"></a>Visualizzare gli utenti correnti nel pool legacy
 

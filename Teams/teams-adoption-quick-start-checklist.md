@@ -12,17 +12,17 @@ localization_priority: Normal
 search.appverid: MET150
 description: Completare l'elenco di controllo per iniziare l'adozione di Microsoft teams.
 ms.custom: Adopt
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 222973b0377e8a8568a5a170aca0a11e23ea2fd6
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 9050959ba070bfae99ee077dedfd1b503bea1c2c
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "36182155"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36237817"
 ---
 # <a name="microsoft-teams-adoption-quick-start-checklist"></a>Elenco di controllo introduttivo di Microsoft teams adoption
 

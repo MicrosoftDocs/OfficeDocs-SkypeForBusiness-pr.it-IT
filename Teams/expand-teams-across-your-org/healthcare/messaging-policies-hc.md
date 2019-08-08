@@ -8,17 +8,17 @@ ms.topic: article
 ms.service: msteams
 search.appverid: MET150
 localization_priority: Normal
-MS.collection: Teams_ITAdmin_PracticalGuidance
+ms.collection: Teams_ITAdmin_PracticalGuidance
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
 description: Introduzione alla messaggistica sicura per le organizzazioni sanitarie
-ms.openlocfilehash: d53a445cd7c13001fee8f365bc5d897a065de398
-ms.sourcegitcommit: f735495849f02e0ea23c7d6f250e9c0656daeea1
+ms.openlocfilehash: 154588eb1008bd1cd2749642fb2b9c994d9fb647
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "36184102"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36232337"
 ---
 # <a name="get-started-with-secure-messaging-for-healthcare-organizations"></a>Introduzione alla messaggistica sicura per le organizzazioni sanitarie
 

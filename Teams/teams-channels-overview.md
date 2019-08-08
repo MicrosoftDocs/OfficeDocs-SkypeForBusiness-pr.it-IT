@@ -6,23 +6,24 @@ ms.reviewer: ''
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
+audience: admin
 search.appverid: MET150
 description: Informazioni sui diversi team, canali e app disponibili per una vasta gamma di requisiti, ad esempio finanza, pianificazione eventi, vendite e altro ancora.
 localization_priority: Normal
 f1keywords:
 - ms.teamsadmincenter.teamschannel.overview
 - ms.teamsadmincenter.teamssettings.overview
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 04a7366c9b4f09fa9c06b7d7f4cd40a24892f840
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: cab50101f23b9d687d744031c14412b5a65a5dad
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36184957"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36237510"
 ---
 > [!NOTE]
 > Per informazioni su chat, team, canali, & app in teams, vedere la pagina seguente. Quindi, passa a [chat, team, canali, & app in teams](deploy-chat-teams-channels-microsoft-teams-landing-page.md) per esaminare un elenco di decisioni importanti per l'implementazione del team.
