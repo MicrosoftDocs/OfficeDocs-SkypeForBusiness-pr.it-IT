@@ -5,22 +5,23 @@ ms.author: v-lanac
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
+audience: admin
 ms.reviewer: dearbeen
 description: Verificare che l'organizzazione e gli utenti siano pronti per Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Teams-upgrade-guidance
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0b1fcbd95d58dd53eb2f8e4289563ab403f73e29
-ms.sourcegitcommit: b5949233f8080a6cf0edb4b5e27272214feb1c22
+ms.openlocfilehash: 716e5342d29bca21ea2963a28244ae6d766c0392
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "36183895"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36236440"
 ---
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione degli utenti] (media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione degli utenti")
 

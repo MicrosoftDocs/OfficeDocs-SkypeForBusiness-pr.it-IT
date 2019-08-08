@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Questo argomento evidenzia le impostazioni di configurazione da tenere presenti prima di distribuire il server Edge di Skype for Business Server 2019. I processi di distribuzione e configurazione per Skype for Business Server 2019 sono molto simili a Skype for Business Server 2015. Questa sezione evidenzia solo i punti chiave da tenere in considerazione nell'ambito della distribuzione del pool pilota. Per la procedura dettagliata, vedere distribuzione dell'accesso degli utenti esterni in Skype for Business Server 2019 nella documentazione relativa alla distribuzione, che descrive il processo di distribuzione e fornisce anche informazioni sulla configurazione per l'accesso degli utenti esterni.
-ms.openlocfilehash: f692eb5ad4a24b47a8bab7a56be218eab04af7dd
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b416ba38646d05f3d10a7d2643c01924fe57020a
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189095"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238955"
 ---
 # <a name="deploy-pilot-edge-server"></a>Distribuire Pilot Edge Server
 

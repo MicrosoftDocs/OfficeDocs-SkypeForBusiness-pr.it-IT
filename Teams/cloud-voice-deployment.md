@@ -6,21 +6,22 @@ manager: serdars
 ms.date: 08/21/2018
 ms.topic: conceptual
 ms.service: msteams
+audience: admin
 search.appverid: MET150
 ms.reviewer: Rowille
 description: Linee guida pratiche per la distribuzione di funzionalità cloud Voice in Microsoft teams.
 localization_priority: Normal
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_PracticalGuidance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7cce1d8c6abfe3c71e9ac923899b9b8f18626cbf
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 476d65ee927fedf285cf66377c58c9f09698b046
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "36182143"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36237023"
 ---
 # <a name="cloud-voice-deployment"></a>Distribuzione di cloud Voice
 

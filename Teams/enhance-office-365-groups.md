@@ -7,20 +7,21 @@ manager: serdars
 ms.date: 09/25/2017
 ms.topic: article
 ms.service: msteams
+audience: admin
 description: Per informazioni su come migliorare i gruppi di Office 365 con Microsoft teams, è possibile invitare un elenco di ditributi a un team, aggiungere gruppi di sicurezza abilitati alla posta elettronica e altro ancora.
 localization_priority: Normal
 search.appverid: MET150
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2e20971ec2c1b2b493428b4f37466d673a9f013f
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 0654123e9779fc3af97982d26d714cb58bc6e26e
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "36181711"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36236774"
 ---
 <a name="enhance-existing-office-365-groups-with-microsoft-teams"></a>Migliorare i gruppi di Office 365 esistenti con Microsoft Teams
 =======================================================

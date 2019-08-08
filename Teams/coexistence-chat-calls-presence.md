@@ -6,20 +6,21 @@ manager: Serdars
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: francoid
+audience: admin
 localization_priority: Normal
 search.appverid: MET150
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_PracticalGuidance
 - M365-voice
 appliesto:
 - Microsoft Teams
 description: Questo documento descrive il comportamento della chat, il routing delle chiamate e la presenza tra gli utenti di teams e Skype for business, sia in-tenant che federati, in base alle modalità di TeamsUpgrade assegnate. Include le ottimizzazioni del routing, il comportamento della presenza, nonché la modifica della modalità di TeamsUpgrade predefinita da *legacy* a *Islands* e l'imminente pensionamento di *legacy*.
-ms.openlocfilehash: 3c88bd93805e6c2a33eb2f5c03ee04d4e7d55535
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 22e931d50c3008a77df6ad6568bd50acbe891c8b
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "36182140"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36236912"
 ---
 # <a name="coexistence-with-skype-for-business"></a>Coesistenza con Skype for business
 

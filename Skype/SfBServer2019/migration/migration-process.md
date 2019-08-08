@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: La procedura di migrazione consigliata e supportata per Skype for Business Server 2019 è la migrazione affiancata. Questo argomento descrive il motivo per cui è consigliabile usare la migrazione affiancata e include anche informazioni sui test di coesistenza.
-ms.openlocfilehash: 179ad56dcf4c31abe8b94fb7131dd27dc68bfd96
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 6ef8a70aa436663b7ff88723800375eeef620b6d
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195006"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238084"
 ---
 # <a name="migration-process"></a>Processo di migrazione
 

@@ -7,19 +7,20 @@ manager: serdars
 ms.date: 08/21/2018
 ms.topic: troubleshooting
 ms.service: msteams
-MS.collection:
+audience: admin
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 search.appverid: MET150
 description: Risolvere i problemi di connettività con il client Microsoft teams, causato principalmente dal firewall o dalla connessione proxy, e come risolverlo.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d208671415e44ca5ec83313d0d8af666534f2b20
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 79718ebc58205cd63ab291f0985e4dd7e452be3e
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "36180485"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36236841"
 ---
 <a name="troubleshoot-connectivity-issues-with-the-microsoft-teams-client"></a>Risolvere i problemi di connettività con il client Microsoft Teams
 ==============================================================

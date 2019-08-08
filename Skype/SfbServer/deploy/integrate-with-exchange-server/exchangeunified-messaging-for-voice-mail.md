@@ -6,18 +6,18 @@ author: lanachin
 manager: serdars
 ms.date: 2/11/2019
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 1be9c4f4-fd8e-4d64-9798-f8737b12e2ab
 description: 'Riepilogo: configurare la messaggistica unificata di Exchange Server per Skype for Business Server Voice mail.'
-ms.openlocfilehash: a1c83b4ec92e6e3b3d678d2d7e0a65f58fc9d6ce
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 514b2159c3836aee4bd6bcfad2b85311280277c4
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188147"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238007"
 ---
 # <a name="configure-exchange-server-unified-messaging-for-skype-for-business-server-voice-mail"></a>Configurazione della messaggistica unificata di Exchange Server 2013 per la segreteria telefonica di Skype for Business Server 2015
  

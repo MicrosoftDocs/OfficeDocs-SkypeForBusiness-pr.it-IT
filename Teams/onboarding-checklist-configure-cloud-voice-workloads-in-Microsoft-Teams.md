@@ -6,21 +6,22 @@ manager: serdars
 ms.date: 03/13/2018
 ms.topic: article
 ms.service: msteams
+audience: admin
 ms.reviewer: rowille
 description: Seguire le attività di base di questo elenco di controllo quando si configurano i carichi di lavoro cloud Voice in teams.
 localization_priority: Normal
 search.appverid: MET150
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_PracticalGuidance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dea6cc2f8c24d53d18f80904b297ff3f2e8ac31c
-ms.sourcegitcommit: 2f12e0d4dc2ef8e848a63bf3a9c63e07e4439cf5
+ms.openlocfilehash: 5c9dd5462b423dd9a609d721a8162444be1ef242
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "36184708"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239246"
 ---
 # <a name="configure-cloud-voice-workloads-in-microsoft-teams"></a>Configurare i carichi di lavoro cloud Voice in Microsoft Teams
 

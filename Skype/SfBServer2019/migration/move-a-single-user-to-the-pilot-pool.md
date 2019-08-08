@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: È possibile trasferire un utente dal pool legacy al pool pilota di Skype for Business Server 2019 usando il pannello di controllo di Skype for Business Server 2019 o Skype for Business Server 2019 Management Shell. Nell'esempio seguente, nella colonna del pool di registrazione, pool01.contoso.net è il pool legacy e tutti e sei di questi utenti sono connessi al pool. Usare le procedure seguenti per trasferire un utente nel pool di Skype for Business Server 2019 usando il pannello di controllo di Skype for Business Server 2019 e Skype for Business Server Management Shell.
-ms.openlocfilehash: 23ce56f8bcf759aeeaa9e9a9b64820958c656c6a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 456035cfd917f620383d4dff70f6366cd73d530e
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195003"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238078"
 ---
 # <a name="move-a-single-user-to-the-pilot-pool"></a>Trasferire un singolo utente nel pool pilota
 

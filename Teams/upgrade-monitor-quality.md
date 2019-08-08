@@ -5,22 +5,23 @@ ms.author: v-lanac
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
+audience: admin
 ms.reviewer: dearbeen
 description: Attività e attività necessarie per il monitoraggio della qualità e dell'utilizzo di Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Teams-upgrade-guidance
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a64e374e674fed4c6efe267d6559a260dce960e1
-ms.sourcegitcommit: b92b673e718e34b6ebda6de57ad69eb6651faa98
+ms.openlocfilehash: ecc3781f3190b7c7e5f52aec7ecf9dbae0894886
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "36183610"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36236429"
 ---
 ![Diagramma che evidenzia la fase di eccellenza operativa del viaggio di aggiornamento] (media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
 

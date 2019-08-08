@@ -5,7 +5,7 @@ ms.author: v-lanac
 author: lanachin
 audience: ITPro
 manager: serdars
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection:
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 69837f86-d141-4884-a4ca-c7e7463afaad
 description: 'Riepilogo: informazioni su come verificare che la distribuzione di Edge Server o pool di Edge Server funzioni in Skype for Business Server.'
-ms.openlocfilehash: 0c432cba78e97add71bb7c4e21e155f92c9fe66a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 57994e4583a3424fc680c8dfb220aeb11668c6fc
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195834"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36234078"
 ---
 # <a name="validate-your-edge-deployment-in-skype-for-business-server"></a>Convalidare la distribuzione di Edge in Skype for Business Server
  

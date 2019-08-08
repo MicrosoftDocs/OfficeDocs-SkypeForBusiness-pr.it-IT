@@ -5,17 +5,17 @@ ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3b67df85-181d-45ca-ba48-bb74a439f242
 description: 'Riepilogo: leggere questo argomento per informazioni su come aggiungere database di archiviazione alla distribuzione di Skype for Business Server.'
-ms.openlocfilehash: 2110a6c82aed473fdc07e5796075aabdb50c7086
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b7d429206e003042922b9b9cae6de420fdf517bb
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188480"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36234581"
 ---
 # <a name="add-archiving-databases-to-an-existing-deployment-in-skype-for-business-server"></a>Aggiungere database di archiviazione a una distribuzione esistente in Skype for Business Server
  

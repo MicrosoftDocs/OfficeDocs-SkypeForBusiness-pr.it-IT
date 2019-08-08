@@ -5,17 +5,17 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.reviewer: PhillipGarding
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b6301e98-051c-4e4b-8e10-ec922a8f508a
 description: "Riepilogo: distribuire l'app Skype for Business Web App e le riunioni Skype usate con Skype for business."
-ms.openlocfilehash: cb0b4f34cb86b84cc033cfc14c5926bbaa839e74
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 8f2449fde2f270834bda50602fe163829f3b725f
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194456"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36234394"
 ---
 # <a name="deploy-web-downloadable-clients-in-skype-for-business-server"></a>Distribuire client scaricabili Web in Skype for Business Server
 

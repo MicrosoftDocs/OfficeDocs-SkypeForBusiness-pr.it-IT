@@ -5,16 +5,16 @@ ms.author: kenwith
 author: kenwith
 manager: serdars
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Dopo lo spostamento degli utenti nei pool di Skype for Business Server 2019, è possibile eseguire la migrazione dei gruppi di risposta. La migrazione dei gruppi di risposte include la copia di gruppi di agenti, code, flussi di lavoro, file audio e oggetti contatto del gruppo di risposte in spostamento dalla distribuzione legacy al pool di Skype for Business Server 2019. Dopo la migrazione dei gruppi di risposta legacy, le chiamate ai gruppi di risposta vengono gestite dall'applicazione Response Group nel pool di Skype for Business Server 2019. Le chiamate ai gruppi di risposte non vengono più gestite dal pool legacy.
-ms.openlocfilehash: cba50526748ca15c04513013e484b0e279410c1e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b8d49205f4f54ca7c00a9aed0b6ac176c11cd617
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195012"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238462"
 ---
 # <a name="migrate-response-groups"></a>Eseguire la migrazione dei gruppi di risposte
 

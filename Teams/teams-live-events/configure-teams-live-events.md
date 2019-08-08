@@ -7,21 +7,22 @@ ms.date: 03/11/2019
 ms.topic: article
 ms.service: msteams
 ms.reviewer: sonua
+audience: admin
 search.appverid: MET150
 localization_priority: Normal
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per gli eventi di teams Live che si svolgono nell'organizzazione.
 f1keywords: ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 734186e12187540f65b0c62da8c6ce56e7cb4fbb
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: 6a1d60ce0e8796d038c6ea8890066c1aee5f0ec6
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36184753"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36243703"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi dinamici in Microsoft Teams
 

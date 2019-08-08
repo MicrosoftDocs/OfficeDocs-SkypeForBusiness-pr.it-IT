@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Condivisione chiamate e raccolta chiamate di gruppo consente agli utenti di condividere le chiamate in arrivo con i colleghi in modo che le chiamate possano essere acquisite quando l'utente non è disponibile.
-ms.openlocfilehash: 02c6605f3a5ea1df3457eaadea9956727431a827
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: caf472f9829f9cf68ccb87a5081bc0b5cfae28f8
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36182272"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36237166"
 ---
 # <a name="call-sharing-and-group-call-pickup-in-microsoft-teams"></a>Condivisione delle chiamate e ritiro delle chiamate di gruppo in Microsoft Teams
 
@@ -48,11 +48,13 @@ Per configurare il ritiro delle chiamate di gruppo, un utente configura prima di
 
 Le preferenze per la creazione e la notifica di gruppi di chiamate sono caratteristiche guidate dall'utente; gli amministratori non devono configurare queste funzionalità per gli utenti. Non è possibile creare gruppi di chiamate da gruppi di sicurezza o gruppi di Office 365; devono essere creati in teams.
 
-Gli amministratori dovrebbero abilitare i gruppi di chiamate tramite l'impostazione **TeamsCallingPolicy AllowCallGroups** per un utente. Gli amministratori possono solo controllare se l'utente può configurare i gruppi di chiamate. Quando il bit è impostato su true, gli amministratori non possono impedire all'utente di configurare e aggiungere gli utenti del gruppo di chiamate a loro scelta.
+Gli amministratori dovrebbero abilitare i gruppi di chiamate tramite l'impostazione **TeamsCallingPolicy AllowCallGroups** per un utente. Gli amministratori possono anche abilitare questo tramite il portale di amministrazione di teams.  Inoltre, l'utente configurato può anche configurare i gruppi di chiamate direttamente tramite il client. L'amministratore o gli utenti finali non possono bloccare la configurazione a vicenda, ma il portale di amministrazione di teams e il client teams devono mostrare questa relazione accuratamente in entrambe le posizioni. 
+
+Importante: quando gli amministratori disattivano i gruppi di chiamate per gli utenti (dopo che sono stati attivati e sono configurate le relazioni di gruppo delle chiamate), gli amministratori devono pulire le relazioni di gruppo delle chiamate per gli utenti nell'interfaccia di amministrazione del team per evitare il routing delle chiamate non corretto. 
 
 ## <a name="limitations"></a>Limitazioni
 
-Un tenant può contenere un massimo di 32.768 gruppi di chiamate. In ogni gruppo di chiamate può essere disponibile un massimo di 5 utenti. 
+Un tenant può contenere un massimo di 32.768 gruppi di chiamate. In ogni gruppo di chiamate può essere disponibile un massimo di 25 utenti. 
 
 ## <a name="more-information"></a>Ulteriori informazioni
 

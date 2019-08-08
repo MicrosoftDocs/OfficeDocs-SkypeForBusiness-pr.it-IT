@@ -8,6 +8,7 @@ layout: LandingPage
 ms.date: 03/14/2019
 ms.topic: landing-page
 ms.service: msteams
+audience: admin
 ms.collection:
 - Teams_ITAdmin_Training
 - M365-collaboration
@@ -15,12 +16,12 @@ search.appverid: MET150
 description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse per gli amministratori che spiegano come pianificare, distribuire ed eseguire Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5e03889c4bdc4ae7c1b34538cba28cc73da9b8a9
-ms.sourcegitcommit: 195a4e1bbab46034408a22d636874c10f797945a
+ms.openlocfilehash: 6e42d9ffb4f32faffd27fa4e0843b2d8df9055cb
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "36185275"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36237279"
 ---
 # <a name="admin-training-for-microsoft-teams"></a>Formazione per amministratori per Microsoft Teams
 

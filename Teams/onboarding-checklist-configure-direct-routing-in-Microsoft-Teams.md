@@ -7,20 +7,21 @@ ms.date: 06/07/2018
 ms.topic: article
 ms.service: msteams
 ms.reviewer: rowille
+audience: admin
 description: Seguire le attività di base di questo elenco di controllo quando si configura il routing diretto in teams.
 localization_priority: Normal
 search.appverid: MET150
-MS.collection:
+ms.collection:
 - Teams_ITAdmin_PracticalGuidance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a69b71c4b55987b9495ebef149e8057fa6340775
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: ffb57ce19625c0e4b0cf51598fc2461393cef1e4
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "36182083"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239237"
 ---
 # <a name="configure-direct-routing-in-microsoft-teams"></a>Configurare il routing diretto in Microsoft Teams
 

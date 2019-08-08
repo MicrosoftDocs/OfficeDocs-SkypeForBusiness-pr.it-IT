@@ -6,6 +6,7 @@ manager: serdars
 ms.date: 01/28/2019
 ms.topic: article
 ms.service: msteams
+audience: admin
 ms.collection:
 - Teams_ITAdmin_Help
 - M365-voice
@@ -15,12 +16,12 @@ F1keywords: ms.teamsadmincenter.directrouting.overview
 description: Pagina di destinazione per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 59f7cf4f1249956f3c763d12fcd96bf5c10a9fac
-ms.sourcegitcommit: 79ec789a22acf1686c33a5cc8ba3bd50049f94b8
+ms.openlocfilehash: 1dca9fda99973931cff70301da089f6d0c3f4a9c
+ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "36181969"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36236587"
 ---
 # <a name="phone-system-direct-routing"></a>Routing diretto del sistema telefonico
 
