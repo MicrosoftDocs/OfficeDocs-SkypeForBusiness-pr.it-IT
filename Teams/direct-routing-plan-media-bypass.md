@@ -13,12 +13,12 @@ ms.collection: Teams_ITAdmin_Help
 appliesto:
 - Microsoft Teams
 description: Leggere questo argomento per informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico.
-ms.openlocfilehash: db236b1fadb4dcb13d5405402f469afee9eb2dac
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 70d0b5ea61d0d7a8001bb1dbfabda2c45274e521
+ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236600"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36271447"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con routing diretto
 
@@ -155,9 +155,17 @@ I relè di trasporto teams sono sempre nel percorso multimediale negli scenari s
 Verificare che il SBC abbia accesso ai relè di trasporto come descritto di seguito.    
 
 
-## <a name="sip-signaling-fqdns-and-firewall-ports"></a>Segnalazione SIP: FQDN e porte del firewall
+## <a name="sip-signaling-fqdns"></a>Segnalazione SIP: FQDN
 
 Per la segnalazione SIP, i requisiti di FQDN e firewall sono gli stessi per i casi non bypassati. 
+
+Il routing diretto è disponibile nei seguenti ambienti di Office 365:
+- Office 365
+- Office 365 GCC
+- Office 365 GCC High
+- Office 365 DoD ulteriori informazioni su [office 365 e gli ambienti governativi degli Stati Uniti](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) , ad esempio GCC, GCC High e DOD.
+
+### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
 
 I punti di connessione per il routing diretto sono i tre FQDN seguenti:
 
@@ -182,7 +190,43 @@ Gli FQDN **SIP.pstnhub.Microsoft.com**, **SIP2.pstnhub.Microsoft.com**e **SIP3.p
 - 52.114.7.24
 - 52.114.14.70
 
-Sarà necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in entrata e in uscita da e verso gli indirizzi per la segnalazione. Se il firewall supporta i nomi DNS, il nome FQDN **SIP-all.pstnhub.Microsoft.com** viene risolto in tutti gli indirizzi IP descritti sopra. È necessario usare le porte seguenti:
+È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in entrata e in uscita da e verso gli indirizzi per la segnalazione. Se il firewall supporta i nomi DNS, il nome FQDN **SIP-all.pstnhub.Microsoft.com** si risolve in tutti questi indirizzi IP. 
+
+### <a name="office-365-gcc-dod-environment"></a>Office 365 GCC DoD Environment
+
+Il punto di connessione per il routing diretto è il nome di dominio completo seguente:
+
+**SIP.pstnhub.DoD.teams.Microsoft.US** -FQDN globale. Poiché l'ambiente Office 365 DoD esiste solo nei data center degli Stati Uniti, non esistono nomi di dominio completi secondari e terziari.
+
+Gli FQDN-sip.pstnhub.dod.teams.microsoft.us verranno risolti in uno degli indirizzi IP seguenti:
+
+- 52.127.64.33
+- 52.127.68.34
+
+È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in entrata e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, il nome FQDN sip.pstnhub.dod.teams.microsoft.us si risolve in tutti questi indirizzi IP. 
+
+### <a name="office-365-gcc-high-environment"></a>Ambiente Office 365 GCC High Environment
+
+Il punto di connessione per il routing diretto è il nome di dominio completo seguente:
+
+**SIP.pstnhub.gov.teams.Microsoft.US** -FQDN globale. Dato che l'ambiente GCC High esiste solo nei data center americani, non esistono nomi di dominio completi secondari e terziari.
+
+Gli FQDN-sip.pstnhub.gov.teams.microsoft.us verranno risolti in uno degli indirizzi IP seguenti:
+
+- 52.127.88.59
+- 52.127.92.64
+
+È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in entrata e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, il nome FQDN sip.pstnhub.gov.teams.microsoft.us si risolve in tutti questi indirizzi IP. 
+
+## <a name="sip-signaling-ports"></a>Segnalazione SIP: porte
+
+I requisiti della porta sono gli stessi per tutti gli ambienti di Office 365 in cui viene offerto il routing diretto:
+- Office 365
+- Office 365 GCC
+- Office 365 GCC High
+- Office 365 DoD
+
+È necessario usare le porte seguenti:
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|
@@ -210,9 +254,22 @@ Nota: se si dispone di un dispositivo di rete che converte le porte di origine d
 
 ### <a name="requirements-for-using-transport-relays"></a>Requisiti per l'uso dei relè di trasporto
 
-I relè di trasporto si trovano nello stesso intervallo dei processori multimediali (per i casi di non esclusione): 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254).
+I relè di trasporto si trovano nello stesso intervallo dei processori multimediali (per i casi non di bypass): 
 
-L'intervallo di porte dei relè di trasporto teams è illustrato nella tabella seguente:
+### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
+
+-52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
+
+## <a name="office-365-gcc-dod-environment"></a>Office 365 GCC DoD Environment
+
+- 52.127.64.0/21
+
+### <a name="office-365-gcc-high-environment"></a>Ambiente Office 365 GCC High Environment
+
+- 52.127.88.0/21
+
+
+L'intervallo di porte dei relè di trasporto Teams (applicabile a tutti gli ambienti) è illustrato nella tabella seguente:
 
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
@@ -236,9 +293,21 @@ In questo momento, il bypass multimediale supporta solo la versione v4 dei relay
 I processori multimediali sono sempre nel percorso multimediale per le applicazioni vocali e per cleints Web (per exampe, teams cleint in Edge o Google Chrome). I requisiti sono gli stessi della configurazione non di bypass.
 
 
-L'intervallo IP per il traffico multimediale è 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254).
+L'intervallo IP per il traffico multimediale è 
 
-L'intervallo di porte dei processori multimediali è illustrato nella tabella seguente:
+### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
+
+-52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
+
+## <a name="office-365-gcc-dod-environment"></a>Office 365 GCC DoD Environment
+
+- 52.127.64.0/21
+
+### <a name="office-365-gcc-high-environment"></a>Ambiente Office 365 GCC High Environment
+
+- 52.127.88.0/21
+
+L'intervallo di porte dei processori multimediali (applicabile a tutti gli ambienti) è illustrato nella tabella seguente:
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|

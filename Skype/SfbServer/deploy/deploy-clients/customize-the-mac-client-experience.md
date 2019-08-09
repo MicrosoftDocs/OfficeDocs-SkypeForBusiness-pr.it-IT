@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d1d9cfec-e923-4d02-a306-ee40a9114cb8
 description: In questo articolo vengono illustrate le preferenze client e le impostazioni predefinite disponibili per il client Skype for business per Mac e come modificarle dall'esterno dell'app.
-ms.openlocfilehash: 6b343c076d0fd1736cc6974a5c33103f0b6dfcda
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: fe8e6280fc939283bccb02641672a4fec6d5481c
+ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234446"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36271417"
 ---
 # <a name="customize-the-mac-client-experience-in-skype-for-business"></a>Personalizzare l'esperienza del client Mac in Skype for business
  
@@ -34,7 +34,7 @@ Per impostare queste preferenze, accedere a una richiesta di terminale nel Mac d
 
 | Chiave | Tipo | Valore | Descrizione |
 |:-----|:-----|:-----|:-----|
-|AutoDetectAutoDiscoveryURLs    |Bool    |0 = configurazione manuale del server  <br/> 1 = rilevamento automatico del server (impostazione predefinita)    |Specifica come Skype for business identifica il trasporto e il server da usare durante l'accesso. Se si abilita questa impostazione per i criteri, è necessario specificare **internalAutoDiscoveryURL** e **externalAutoDiscoveryURL**.   |
+|autoDetectAutoDicoveryURLs    |Bool    |0 = configurazione manuale del server  <br/> 1 = rilevamento automatico del server (impostazione predefinita)    |Specifica come Skype for business identifica il trasporto e il server da usare durante l'accesso. Se si abilita questa impostazione per i criteri, è necessario specificare **internalAutoDiscoveryURL** e **externalAutoDiscoveryURL**.   |
 |internalAutoDiscoveryURL    |Stringa    |URL di individuazione automatica completo    |URL di individuazione automatica interno    |
 |externalAutoDiscoveryURL    |Stringa    |URL di individuazione automatica completo    |URL di individuazione automatica esterna    |
 |httpProxyDomain    |Stringa    ||Dominio proxy HTTP    |

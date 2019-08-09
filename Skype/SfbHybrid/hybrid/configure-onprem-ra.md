@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: 09663b1c539b561a0dc591590c53d22cdb530fee
-ms.sourcegitcommit: a49caec01ff724475d6670b303d851ddd8266c2c
+ms.openlocfilehash: a307a5ed40c52579020f4cd0eef6646afdb15649
+ms.sourcegitcommit: 5ec5df597614d402917e0585575dd69acda22172
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36207157"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "36253955"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
@@ -31,7 +31,7 @@ Se si ha un operatore automatico di messaggistica unificata di Exchange e un sis
 Se l'operatore automatico o la coda di chiamata del sistema telefonico richiede un numero di servizio, le varie dipendenze possono essere soddisfatte nella sequenza seguente:
 
 1. Ottenere un numero di servizio
-2. Ottenere un sistema telefonico gratuito- [licenza per gli utenti virtuali](/MicrosoftTeams/teams-add-on-licensing/virtual-user.md) o una licenza per il sistema telefonico a pagamento da usare con l'account delle risorse.
+2. Ottenere un sistema telefonico gratuito- [licenza per gli utenti virtuali](/MicrosoftTeams/teams-add-on-licensing/virtual-user) o una licenza per il sistema telefonico a pagamento da usare con l'account delle risorse.
 3. Creare l'account delle risorse. Per avere un account di risorse associato è necessario un operatore automatico o una coda di chiamata.
 4. Attendere la sincronizzazione di Active Directory tra online e in locale.
 5. Assegnare la licenza di sistema telefonico all'account delle risorse.

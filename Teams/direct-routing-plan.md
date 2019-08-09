@@ -15,12 +15,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Leggere questo argomento per informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente a Microsoft Phone System.
-ms.openlocfilehash: d462875103de900823b6754a9694cdada3a7a3e1
-ms.sourcegitcommit: 7ae59d1091ea086b7253c1d8ce85c28fabc5537a
+ms.openlocfilehash: b675fae995d228d440c5173ec444dce16745717f
+ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36185305"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36271425"
 ---
 # <a name="plan-direct-routing"></a>Pianificare il routing diretto
 
@@ -55,9 +55,10 @@ La pianificazione della distribuzione di routing diretto è la chiave per un'imp
 - [Licenze e altri requisiti](#licensing-and-other-requirements)
 - [Nomi di dominio SBC](#sbc-domain-names)
 - [Certificato attendibile pubblico per SBC](#public-trusted-certificate-for-the-sbc)
-- [Segnalazione SIP: FQDN e porte del firewall](#sip-signaling-fqdns-and-firewall-ports)
+- [Segnalazione SIP: FQDN](#sip-signaling-fqdns)
+- [Segnalazione SIP: porte](#sip-signaling-ports)
 - [Traffico multimediale: intervalli di porte](#media-traffic-port-ranges)
-- [SBCs supportate](#supported-session-border-controllers-sbcs)
+- [Controller di bordo della sessione supportati (SBCs)](#supported-session-border-controllers-sbcs)
 
 Per informazioni dettagliate sulla configurazione del routing diretto, vedere [configurare il routing diretto](direct-routing-configure.md).
 
@@ -75,7 +76,7 @@ I requisiti di infrastruttura per i SBCs, i domini e altri requisiti di connetti
 |Nome di dominio completo (FQDN) per SBC|Un nome di dominio completo per SBC, in cui la parte del dominio del nome FQDN è uno dei domini registrati nel tenant di Office 365. Per altre informazioni, Vedi [nomi di dominio SBC](#sbc-domain-names).|
 |Voce DNS pubblica per SBC |Una voce DNS pubblica che mappa il nome di dominio completo SBC all'indirizzo IP pubblico. |
 |Certificato attendibile pubblico per SBC |Certificato per l'SBC da usare per tutte le comunicazioni con routing diretto. Per altre informazioni, vedere [certificato attendibile pubblico per SBC](#public-trusted-certificate-for-the-sbc).|
-|Punti di connessione per il routing diretto |I punti di connessione per il routing diretto sono i tre FQDN seguenti:<br/><br/>`sip.pstnhub.microsoft.com`-L'FQDN globale deve essere provato per primo.<br/>`sip2.pstnhub.microsoft.com`-FQDN secondario, mappa geograficamente alla seconda area di priorità.<br/>`sip3.pstnhub.microsoft.com`– Il nome di dominio completo terziario viene mappato geograficamente alla terza area prioritaria.<br/><br/>Per informazioni sui requisiti di configurazione, vedere [segnalazione SIP: FQDN e porte del firewall](#sip-signaling-fqdns-and-firewall-ports).|
+|Punti di connessione per il routing diretto |I punti di connessione per il routing diretto sono i tre FQDN seguenti:<br/><br/>`sip.pstnhub.microsoft.com`-L'FQDN globale deve essere provato per primo.<br/>`sip2.pstnhub.microsoft.com`-FQDN secondario, mappa geograficamente alla seconda area di priorità.<br/>`sip3.pstnhub.microsoft.com`– Il nome di dominio completo terziario viene mappato geograficamente alla terza area prioritaria.<br/><br/>Per informazioni sui requisiti di configurazione, vedere [segnalazione SIP: FQDN](#sip-signaling-fqdns).|
 |Indirizzi IP e porte del firewall per il supporto di routing diretto |SBC comunica i servizi seguenti nel cloud:<br/><br/>Proxy SIP, che gestisce la segnalazione<br/>Media processor, che gestisce l'elemento multimediale, eccetto quando è attivato il bypass multimediale<br/><br/>Questi due servizi hanno indirizzi IP distinti in Microsoft Cloud, descritti più avanti in questo documento.<br/><br/>Per altre informazioni, vedere la [sezione Microsoft teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) negli [URL e negli intervalli di indirizzi IP di Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). |
 |Profilo di trasporto multimediale|TCP/RTP/SAVP <br/>UDP/RTP/SAVP|
 Indirizzi IP e porte firewall per Microsoft teams media |Per altre informazioni, vedere [URL e intervalli di indirizzi IP di Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). |
@@ -169,7 +170,17 @@ Il certificato deve essere generato da una delle autorità di certificazione rad
 
 Microsoft sta lavorando all'aggiunta di altre autorità di certificazione in base alle richieste dei clienti. 
 
-## <a name="sip-signaling-fqdns-and-firewall-ports"></a>Segnalazione SIP: FQDN e porte del firewall 
+## <a name="sip-signaling-fqdns"></a>Segnalazione SIP: FQDN 
+
+Il routing diretto è disponibile nei seguenti ambienti di Office 365:
+- Office 365
+- Office 365 GCC
+- Office 365 GCC High
+- Office 365 DoD
+
+Leggi altre informazioni su [Office 365 e gli ambienti governativi degli Stati Uniti](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) , ad esempio GCC, GCC High e DOD.
+
+### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
 
 Il punto di connessione per il routing diretto sono i tre FQDN seguenti:
 
@@ -191,7 +202,44 @@ Gli FQDN-sip.pstnhub.microsoft.com, sip2.pstnhub.microsoft.com e sip3.pstnhub.mi
 - 52.114.7.24 
 - 52.114.14.70
 
-Sarà necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in entrata e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, il nome FQDN sip-all.pstnhub.microsoft.com viene risolto in tutti gli indirizzi IP descritti sopra.  È necessario usare le porte seguenti:
+È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in entrata e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, il nome FQDN sip-all.pstnhub.microsoft.com si risolve in tutti questi indirizzi IP. 
+
+
+### <a name="office-365-gcc-dod-environment"></a>Office 365 GCC DoD Environment
+
+Il punto di connessione per il routing diretto è il nome di dominio completo seguente:
+
+**SIP.pstnhub.DoD.teams.Microsoft.US** -FQDN globale. Poiché l'ambiente Office 365 DoD esiste solo nei data center degli Stati Uniti, non esistono nomi di dominio completi secondari e terziari.
+
+Gli FQDN-sip.pstnhub.dod.teams.microsoft.us verranno risolti in uno degli indirizzi IP seguenti:
+
+- 52.127.64.33
+- 52.127.68.34
+
+È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in entrata e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, il nome FQDN sip.pstnhub.dod.teams.microsoft.us si risolve in tutti questi indirizzi IP. 
+
+### <a name="office-365-gcc-high-environment"></a>Ambiente Office 365 GCC High Environment
+
+Il punto di connessione per il routing diretto è il nome di dominio completo seguente:
+
+**SIP.pstnhub.gov.teams.Microsoft.US** -FQDN globale. Dato che l'ambiente GCC High esiste solo nei data center americani, non esistono nomi di dominio completi secondari e terziari.
+
+Gli FQDN-sip.pstnhub.gov.teams.microsoft.us verranno risolti in uno degli indirizzi IP seguenti:
+
+- 52.127.88.59
+- 52.127.92.64
+
+È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in entrata e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, il nome FQDN sip.pstnhub.gov.teams.microsoft.us si risolve in tutti questi indirizzi IP. 
+
+## <a name="sip-signaling-ports"></a>Segnalazione SIP: porte
+
+I requisiti della porta sono gli stessi per tutti gli ambienti di Office 365 in cui viene offerto il routing diretto:
+- Office 365
+- Office 365 GCC
+- Office 365 GCC High
+- Office 365 DoD
+
+È necessario usare le porte seguenti:
 
 |**Traffico**|**Da**|**A**|**Porta di origine**|**Porta di destinazione**|
 |:--- |:--- |:--- |:--- |:--- |
@@ -212,11 +260,25 @@ La tabella seguente riepiloga le relazioni tra i centri dati primari, secondari 
 |||||
 
 ## <a name="media-traffic-port-ranges"></a>Traffico multimediale: intervalli di porte
-Nota i requisiti seguenti si applicano se ANT consente di distribuire il routing diretto senza bypass multimediale. Per i requisiti del firewall per il bypass multimediale, vedere [pianificare il bypass multimediale con routing diretto](https://docs.microsoft.com/en-us/microsoftteams/direct-routing-plan-media-bypass)
+Tieni presente che i requisiti seguenti si applicano se vuoi distribuire il routing diretto senza bypass multimediale. Per i requisiti del firewall per il bypass multimediale, fare riferimento a [piano per il bypass multimediale con routing diretto](https://docs.microsoft.com/en-us/microsoftteams/direct-routing-plan-media-bypass).
+
+
 
 Il traffico multimediale passa da e verso un servizio separato nel cloud Microsoft. Intervallo IP per il traffico multimediale:
+
+### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
+
 - 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254).
 
+### <a name="office-365-gcc-dod-environment"></a>Office 365 GCC DoD Environment
+
+- 52.127.64.0/21
+
+### <a name="office-365-gcc-high-environment"></a>Ambiente Office 365 GCC High Environment
+
+- 52.127.88.0/21
+
+### <a name="port-range-applicable-to-all-environments"></a>Intervallo di porte (applicabile a tutti gli ambienti)
 L'intervallo di porte dei processori multimediali è illustrato nella tabella seguente: 
 
 |**Traffico**|**Da**|**A**|**Porta di origine**|**Porta di destinazione**|

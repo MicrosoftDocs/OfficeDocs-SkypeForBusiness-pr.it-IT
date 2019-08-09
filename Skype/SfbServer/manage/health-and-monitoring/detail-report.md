@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1d61cd81-dcfe-40b4-9a41-a73b038bc216
 description: 'Riepilogo: informazioni sul report Dettagli conferenza usato in Skype for Business Server.'
-ms.openlocfilehash: 5b88ae62c7d06437b3502bd72dd965fc26fbfcb6
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 17337624c955dfa174f7b98772fdd836e82891d0
+ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195696"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36271397"
 ---
 # <a name="conference-detail-report-in-skype-for-business-server"></a>Report Dettagli conferenza in Skype for Business Server
 
@@ -33,7 +33,7 @@ Il report Dettagli conferenza offre informazioni dettagliate su tutti gli utenti
 
 - [Report attività utente](call-diagnostic-reports-per-user.md) (facendo clic sulla metrica URI conferenza)
 
-Dal report Dettagli conferenza è possibile accedere al [Repor diagnostico](diagnostic-report.md) facendo clic sulla metrica rapporto di diagnostica (dettaglio).
+Dal report Dettagli conferenza è possibile accedere al [report di diagnostica](diagnostic-report.md) facendo clic sulla metrica rapporto di diagnostica (dettaglio).
 
 ## <a name="filters"></a>Filtri
 

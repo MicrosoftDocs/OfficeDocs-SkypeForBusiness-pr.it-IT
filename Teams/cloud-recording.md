@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Linee guida pratiche per la distribuzione di funzionalità cloud Voice in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bd749e00966c21677019d5d68d12e88287e96b45
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 88f043bec273cb19745e9800fc9cdb85f64c8e7a
+ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237031"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36271400"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni cloud Teams
 
@@ -32,7 +32,7 @@ Correlato: [documentazione dell'utente finale di teams Meeting recording](https:
 Per registrare le riunioni di un utente di teams, Microsoft stream deve essere abilitato per il tenant. Inoltre, sono necessari i prerequisiti seguenti sia per l'organizzatore della riunione che per la persona che avvia la registrazione:
 
 - L'utente ha un Office 365 E1, E3, E5, a1, a3, a5, M365 business, Business Premium o Business Essentials
-- L'utente deve essere concesso in licenza per Microsoft Stream
+- L'utente deve essere concesso in licenza per Microsoft Stream<sup>1</sup> 
 - L'utente ha le autorizzazioni di Microsoft Stream upload video
 - L'utente ha acconsentito alle linee guida della società, se è stato configurato dall'amministratore
 - L'utente dispone di spazio di archiviazione sufficiente in Microsoft Stream per le registrazioni da salvare
@@ -41,6 +41,8 @@ Per registrare le riunioni di un utente di teams, Microsoft stream deve essere a
 
 > [!NOTE]
 > Inoltre, per consentire alla persona che avvia la registrazione di scegliere se trascrivere automaticamente la registrazione, l'impostazione TeamsMeetingPolicy-AllowTranscription dell'utente deve essere impostata su true
+
+<sup>1</sup> L'utente deve avere la licenza per caricare/scaricare riunioni in/da Microsoft Stream, ma non ha bisogno della licenza per registrare una riunione. Se si vuole impedire a un utente di registrare una riunione Microsoft teams, è necessario concedere un TeamsMeetingPolicy con AllowCloudRecording impostato su $False.
 
 ## <a name="set-up-teams-cloud-meeting-recording-for-users-in-your-organization"></a>Configurare la registrazione di teams Cloud Meeting per gli utenti dell'organizzazione
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a6478938f26fb911cd3dc8f6ca8a7972cc906dd8
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: e6aacceaee811a80a9451f26cc1e8cba6ed56a49
+ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237670"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36271382"
 ---
 # <a name="plan-for-microsoft-365-government---gcc-high-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-GCC High
 
@@ -78,14 +78,14 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 |-----------------------------|-----------------------------|----------------|
 | Base | Accesso | Disponibili |
 | | Presenza | Disponibili |
-| | Presenza unificata (Skype for business e teams Unified) | Nell'arretrato governativo |
+| | Presenza unificata (Skype for business e teams Unified) | Disponibili |
 | Attività | Feed | Disponibili |
 |  | Attività personali | Disponibili |
 | Chat | Conversazione | Disponibili |
 | | File | Disponibili |
 | | Organigramma | Disponibili |
 | | Attività | Disponibili |
-| | Interoperabilità (1:1 Teams-chat Skype for business) | Nell'arretrato governativo |
+| | Interoperabilità (1:1 Teams-chat Skype for business) | Disponibili |
 | Squadre | Messaggio di canale | Disponibili |
 | | File di canale | Disponibili |
 | | Scheda OneNote | Nell'arretrato governativo |

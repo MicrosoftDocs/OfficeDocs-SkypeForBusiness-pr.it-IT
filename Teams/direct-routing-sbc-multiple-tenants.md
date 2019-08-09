@@ -15,12 +15,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant.
-ms.openlocfilehash: f12e4ac747607a8527021f50794b6fc742ed0b19
-ms.sourcegitcommit: a78fee3cad5b58bf41dd014a79f4316cf310c8d1
+ms.openlocfilehash: 3aad7aa5b958e9e4129bbf7e3553137768d1f4c1
+ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "36185173"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36271458"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un controller di bordo della sessione per più tenant
 
@@ -57,6 +57,7 @@ Di seguito sono riportate le procedure per l'implementazione tecnica per configu
 Per la procedura dettagliata relativa alla distribuzione e alla configurazione di SBCs per uno scenario di hosting SBC, vedere la documentazione del fornitore SBC.
 
 - **AudioCodes:** [Note di configurazione del routing diretto](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-Microsoft-Teams), la configurazione dello scenario di hosting SBC descritto in "connessione di AudioCodes SBC a Microsoft teams Direct routing modello di hosting nota di configurazione". 
+- **Oracle:** [Note di configurazione del routing diretto](https://www.oracle.com/technetwork/indexes/documentation/acme-packet-2228107.html), la configurazione dello scenario di hosting SBC è descritta nella sezione "Microsoft". 
 - **Comunicazioni della barra multifunzione:**  Vedere la guida alla [configurazione di Microsoft teams della barra multifunzione](https://support.sonus.net/display/IOT/PBXs+-+SBC+5k7kSWe) per la documentazione su come configurare SBCS della serie Core della barra multifunzione e la procedura consigliata della barra multifunzione [-configurazione dei vettori per Microsoft teams Direct routing SBC Bordo](https://support.sonus.net/display/UXDOC70/Best+Practice+-+Configuring+Carriers+for+Microsoft+Teams+Direct+Routing)
 - **Te-Systems (anynode):**  Eseguire la registrazione nella [pagina della community di te-Systems](https://community.te-systems.de/) per la documentazione e gli esempi relativi alla configurazione di anynode SBC per più tenant.
 
@@ -205,7 +206,7 @@ Con la versione iniziale di routing diretto, Microsoft ha richiesto un trunk da 
 
 Tuttavia, questo risultato non è stato ottimale per due motivi:
  
-• **Gestione overhead**. Lo scarico o lo svuotamento di un SBC, ad esempio, modifica alcuni parametri, come l'abilitazione o la disabilitazione del bypass multimediale. La modifica della porta richiede la modifica di parametri in più tenant (eseguendo set-CSonlinePSTNGateway), ma in realtà è lo stesso SBC. • **Elaborazione overhead**. Raccolta e monitoraggio dei dati di integrità del trunk: le opzioni SIP raccolte da più trunk logici, in realtà lo stesso SBC e lo stesso trunk fisico, rallentano l'elaborazione dei dati di routing.
+• **Gestione overhead**. Lo scarico o lo svuotamento di un SBC, ad esempio, modifica alcuni parametri, come l'abilitazione o la disabilitazione del bypass multimediale. La modifica della porta richiede la modifica di parametri in più tenant (eseguendo set-CSOnlinePSTNGateway), ma in realtà è lo stesso SBC. • **Elaborazione overhead**. Raccolta e monitoraggio dei dati di integrità del trunk: le opzioni SIP raccolte da più trunk logici, in realtà lo stesso SBC e lo stesso trunk fisico, rallentano l'elaborazione dei dati di routing.
  
 
 In base a questo feedback, Microsoft sta introducendo una nuova logica per eseguire il provisioning dei trunk per i tenant del cliente.
@@ -226,7 +227,7 @@ Logica e esempio di provisioning.
 
 Migrazione dal modello precedente al trunk del vettore
  
-Per la migrazione dall'implementazione corrente del modello ospitato dal vettore al nuovo modello, i vettori dovranno riconfigurare i trunk per i tenant del cliente. Rimuovere i Trunks dagli inquilini del cliente usando Remove-CSOnluinePSTNGateway (lasciando il trunk nel tenant del vettore).
+Per la migrazione dall'implementazione corrente del modello ospitato dal vettore al nuovo modello, i vettori dovranno riconfigurare i trunk per i tenant del cliente. Rimuovere i Trunks dagli inquilini del cliente usando Remove-CSOnlinePSTNGateway (lasciando il trunk nel tenant del vettore).
 
 Invitiamo vivamente la migrazione alla nuova soluzione il più presto possibile, per migliorare il monitoraggio e il provisioning tramite il modello Carrier e trunk derivato.
  
