@@ -23,12 +23,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Informazioni su come attivare e usare il dashboard di qualità delle chiamate di Skype for business online e ottenere report riepilogativi sulla qualità delle chiamate. '
-ms.openlocfilehash: a4fc0875e9c9672a53f6399aac344285b070855a
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: eaadd80030b04d5fb10fd8f29d656fe07e24a1db
+ms.sourcegitcommit: ab259764dc50bdd52efed3abb1d065ee19486946
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36183709"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36393494"
 ---
 # <a name="turning-on-and-using-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivazione e utilizzo di Call Quality dashboard per Microsoft teams e Skype for business online
 
@@ -159,7 +159,7 @@ Il volume complessivo del flusso è un fattore importante per determinare la per
   
 ### <a name="server-client-tab-and-client-client-tabs"></a>Scheda client-server e schede client-client
 
-Queste due schede contengono dettagli aggiuntivi per i flussi che hanno avuto luogo negli scenari endpoint-to-endpoint. Entrambe le schede hanno quattro sezioni comprimibili, che rappresentano quattro scenari in cui i flussi multimediali scorrono.
+Queste due schede contengono dettagli aggiuntivi per i flussi che hanno avuto luogo negli scenari endpoint-to-endpoint. La scheda Server-client include quattro sezioni comprimibili, che rappresentano quattro scenari in cui i flussi multimediali scorrono.
   
 - Cablato all'interno
     
@@ -168,6 +168,19 @@ Queste due schede contengono dettagli aggiuntivi per i flussi che hanno avuto lu
 - WiFi all'interno
     
 - WiFi all'esterno
+
+Analogamente, la scheda client-client contiene cinque sezioni comprimibili:
+
+- Cablato all'interno
+
+- Cablata all'esterno
+
+- Esterni cablati esterni
+
+- Cablata all'interno-WiFi all'interno
+
+- Cablata all'interno-WiFi all'esterno
+    
     
 #### <a name="inside-test"></a>Test all'interno
 
@@ -196,7 +209,7 @@ Il dashboard report di riepilogo di Call Quality dashboard include una pagina di
   
 ![Screenshot che mostra il dashboard qualità chiamata](media/839c9ab4-0246-46c9-8402-aafd83a0bc63.png)
   
-1. Nella pagina **caricamento dati tenant** usare il menu a discesa per scegliere un tipo di file di dati per il caricamento. Il tipo di dati del file denota il contenuto del file, ad esempio "Building" si riferisce al mapping dell'indirizzo IP e dell'edificio, oltre ad altre informazioni geografiche, "endpoint" fa riferimento al mapping del nome dell'endpoint all'endpoint marca/modello/tipo... informazioni). Attualmente supportiamo il caricamento dei tipi di dati "Building" e "endpoint" per Call Quality dashboard. teams. Microsoft. com (nella fase di anteprima e non ancora ufficialmente disponibile), cqd.lync.com supporta solo il caricamento del tipo di dati "Building". Verranno aggiunti altri tipi di dati con le versioni successive.
+1. Nella pagina **caricamento dati tenant** usare il menu a discesa per scegliere un tipo di file di dati per il caricamento. Il tipo di dati del file denota il contenuto del file, ad esempio "Building" si riferisce al mapping dell'indirizzo IP e dell'edificio, oltre ad altre informazioni geografiche, "endpoint" fa riferimento al mapping del nome dell'endpoint all'endpoint marca/modello/tipo... informazioni). Attualmente supportiamo il caricamento dei tipi di dati "Building" e "endpoint" per cqd.teams.microsoft.com (in anteprima e non ancora ufficialmente disponibile), cqd.lync.com supporta solo il caricamento del tipo di dati "Building". Verranno aggiunti altri tipi di dati con le versioni successive.
     
 2. Dopo aver selezionato il tipo di dati file, fare clic su **Sfoglia** per scegliere un file di dati.
     
@@ -204,7 +217,7 @@ Il dashboard report di riepilogo di Call Quality dashboard include una pagina di
     
    - Le dimensioni del file di dati non devono essere superiori a 50 MB.
 
-   - File caricato in cqd.teams.microsoft.com ha esteso il limite di riga di 1 milione per velocizzare le prestazioni delle query. Potremmo imporre il limite anche a cqd.lync.com.
+   - I file caricati in cqd.teams.microsoft.com hanno un limite di riga espanso di 1 milione in modo da semplificare le prestazioni delle query. Potremmo imporre il limite anche a cqd.lync.com.
     
    - Per ogni file di dati, ogni colonna del file deve corrispondere a un tipo di dati predefinito, descritto più avanti in questo argomento.
     
@@ -221,12 +234,14 @@ Il dashboard report di riepilogo di Call Quality dashboard include una pagina di
     Ogni record Mostra un file di dati del tenant caricato, con il tipo di file, l'ora dell'ultimo aggiornamento, il periodo di tempo, la descrizione, un'icona di rimozione e un'icona di download. Per rimuovere un file, selezionare l'icona del cestino nella tabella. Per scaricare un file, selezionare l'icona download nella colonna **Scarica** della tabella.
     
      ![Screenshot che mostra la tabella uploads](media/4168a883-bbea-461a-80b1-42eedf2e7732.png)
-  
+
+6. Si noti che se si sceglie di usare più file di dati dell'edificio o più file di dati dell'endpoint, la velocità operativa di alcuni report sarà più lenta.
+
 ### <a name="tenant-data-file-format-and-structure"></a>Formato e struttura del file di dati tenant
 <a name="BKMKTenantDataFile"> </a>
 
 ### <a name="building-data-file"></a>Creazione di file di dati
-Call Quality dashboard usa il file di dati della costruzione per derivare prima la colonna subnet dalla colonna Expanding Network + NetworkRange, quindi unire la colonna subnet alla prima colonna subnet/Second subnet di record di chiamata per mostrare l'edificio/città/paese/area geografica... informazioni. Il formato del file di dati caricato deve soddisfare quanto segue per passare il controllo di convalida prima del caricamento.
+Call Quality dashboard usa il file di dati della creazione derivando dapprima la colonna subnet dall'espansione della colonna Network + NetworkRange, unendo quindi la colonna subnet alla prima colonna subnet/Second subnet della chiamata per mostrare la costruzione/città/paese/area geografica... informazioni. Il formato del file di dati caricato deve soddisfare quanto segue per passare il controllo di convalida prima del caricamento.
   
 - Il file deve essere un file con estensione TSV, ovvero in ogni riga le colonne sono separate da una TABULAzione o da un file CSV con ogni colonna separata da una virgola.
     

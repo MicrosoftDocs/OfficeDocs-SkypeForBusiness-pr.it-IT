@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4812c444-2546-48d7-9ca7-b71fce508ed8
 description: 'Riepilogo: configurare i requisiti non server per Skype for Business Server 2015. Prima di eseguire la distribuzione è possibile configurare una varietà di elementi, inclusi Active Directory, DNS, certs e fileshares.'
-ms.openlocfilehash: 68ccac9b4335de6b4f3bea0fba179e7d8e498224
-ms.sourcegitcommit: bd50c6239cee414ea9933e9d569fa5a24bc05544
+ms.openlocfilehash: 59f7bed17c217eda46314d2a133c0d5671682824
+ms.sourcegitcommit: ab259764dc50bdd52efed3abb1d065ee19486946
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "36195918"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36393428"
 ---
 # <a name="environmental-requirements-for-skype-for-business-server-2015"></a>Requisiti ambientali di Skype for Business Server 2015
  
@@ -54,6 +54,8 @@ Mentre molti dati di configurazione per server e servizi sono archiviati in Cent
 ### <a name="os-for-domain-controllers"></a>Sistema operativo per i controller di dominio
 
 Qual è il sistema operativo del controller di dominio che può essere usato? È presente l'elenco seguente:
+
+- Windows Server 2019 (è necessario avere Skype for Business Server 2015 aggiornamento cumulativo 5 o versioni successive)
   
 - Windows Server 2016
     
@@ -66,6 +68,8 @@ Qual è il sistema operativo del controller di dominio che può essere usato? È
 - Windows Server 2008
     
 A questo punto, il livello di funzionalità del dominio di qualsiasi dominio in cui si distribuisce Skype for Business Server 2015 e il livello di funzionalità della foresta di qualsiasi foresta in cui si distribuisce Skype for Business Server 2015, devono essere uno dei seguenti:
+
+- Windows Server 2019 (è necessario avere Skype for Business Server 2015 aggiornamento cumulativo 5 o versioni successive)
   
 - Windows Server 2016
     

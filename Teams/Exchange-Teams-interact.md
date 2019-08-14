@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d89d9ed514eb5246911fe88d5fadc1af79caff1b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: b0f3e24d38e877d923e52de3f1c7116853737dc7
+ms.sourcegitcommit: ab259764dc50bdd52efed3abb1d065ee19486946
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245405"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36393431"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -29,11 +29,16 @@ ms.locfileid: "36245405"
 
 Per l'esperienza completa in teams, ogni utente deve essere abilitato per la creazione di gruppi di Exchange Online, SharePoint Online e Office 365.
 
-Le cassette postali di Exchange degli utenti possono essere ospitate online o in locale. Gli utenti ospitati in Exchange Online o Exchange dedicato a vNext possono usare tutte le funzionalità di teams. Possono creare e partecipare a team e canali, creare e visualizzare riunioni, chiamare e chattare, modificare le immagini del profilo utente, aggiungere e configurare connettori, schede e bot.
+Le cassette postali di Exchange degli utenti possono essere ospitate online o in locale. Alcune funzionalità richiedono tuttavia una distribuzione ibrida per essere in posizione con il tenant di Office 365.
 
-Gli utenti ospitati in Exchange Online dedicato-legacy o Exchange locale devono essere sincronizzati con Azure Active Directory per Office 365. Possono creare e partecipare a team e canali, aggiungere e configurare schede e bot e chattare e chiamare. Tuttavia, non possono modificare le immagini del profilo utente o aggiungere e configurare i connettori. Possono ricevere messaggi da connettori configurati da altri utenti. Per la creazione e la visualizzazione delle riunioni, è un miscuglio: la creazione e la visualizzazione delle riunioni è supportata per l'aggiornamento cumulativo 3 (CU3) di Exchange 2016 e versioni successive, ma non per le versione precedenti a Exchange 2016 CU3.
+Gli utenti ospitati in Exchange Online o Exchange dedicato a vNext possono usare tutte le funzionalità di teams. Possono creare e partecipare a team e canali, creare e visualizzare riunioni, chiamare e chattare, modificare le immagini del profilo utente e aggiungere e configurare connettori, schede e bot.
 
-La tabella seguente fornisce informazioni per gli utenti con Exchange Online ospitati in diversi ambienti.
+Gli utenti ospitati in Exchange Online dedicato (legacy) devono essere sincronizzati con Azure Active Directory in Office 365. Possono creare e partecipare a team e canali, aggiungere e configurare schede e bot e usare le funzionalità di chat e chiamate. Tuttavia, non possono modificare le immagini del profilo, gestire le riunioni, accedere ai contatti di Outlook o gestire i connettori.
+
+Gli utenti con cassette postali ospitate in locale devono essere sincronizzati con Azure Active Directory. Possono usare tutte le funzionalità dello scenario precedente, ma possono anche modificare l'immagine del profilo utente e gestire le riunioni, fornendo Exchange Server 2016 (aggiornamento cumulativo 3) o versioni successive, in fase di creazione locale.
+
+La tabella seguente fornisce un utile riferimento rapido per la disponibilità delle caratteristiche in base all'ambiente Exchange.
+
 
 **Azioni supportate:**
 
@@ -41,16 +46,23 @@ La tabella seguente fornisce informazioni per gli utenti con Exchange Online osp
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
 |**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
-|**Exchange Online dedicato-legacy** (È necessario eseguire la sincronizzazione con Azure AD)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì|Supporto per più paesi|Supporto per più paesi|
-|**Exchange locale** (È necessario eseguire la sincronizzazione con Azure AD)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì|Supporto per più paesi|Supporto per più paesi|
+|**Exchange Online dedicato-legacy** (È necessario eseguire la sincronizzazione con Azure AD)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
+|**Exchange locale** (È necessario eseguire la sincronizzazione con Azure AD)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
 
-<sup>1</sup> Exchange 2016 CU3 e versioni successive supportate  
-<sup>2</sup> eDiscovery e Legal detiene per la conformità ai messaggi di canale è supportato per tutte le opzioni di hosting.  
+<sup>1</sup> Exchange 2016 CU3 e versioni successive supportate.  
+
+<sup>2</sup> eDiscovery e Legal detiene per la conformità ai messaggi di canale è supportato per tutte le opzioni di hosting.
+
 <sup>3</sup> i messaggi di chat privati di teams non sono ancora supportati per il blocco legale per l'opzione di hosting.
 
 <sup>4</sup> la conservazione userà una cassetta postale ombreggiata per l'utente online per archiviare i messaggi. [Microsoft teams supporta eDiscovery per gli utenti di teams in un ambiente ibrido di Exchange](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-supports-eDiscovery-for-Teams-users-in-a/ba-p/200009).
 
 <sup>5</sup> gli utenti di teams con la cassetta postale di Exchange locale possono usare la segreteria telefonica con teams e ricevere messaggi vocali in Outlook, ma i messaggi vocali non saranno disponibili per la visualizzazione o la riproduzione all'interno del client teams.
+
+<sup>6</sup> se uno dei proprietari di un team può aggiungere connettori, tutti gli altri membri del team saranno in grado di farlo, anche se le cassette postali vengono ospitate in locale.
+
+
+Altre informazioni:
 
 ## <a name="requirements-to-get-the-most-out-of-microsoft-teams"></a>Requisiti per ottenere il massimo da Microsoft Teams
 
