@@ -22,12 +22,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare un sistema telefonico (cloud PBX) per l'azienda. "
-ms.openlocfilehash: 081355404c834edf8e9fc108d68d8fb597d6c151
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: 956834a7dbfee58601cb62848a12fad6a05abdd7
+ms.sourcegitcommit: 9053c0d5ddb6be3ce3da85dffcde3f45dbc0ab7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36182725"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407981"
 ---
 # <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa offre il Sistema telefonico in Office 365
 
@@ -65,7 +65,7 @@ Usando il sistema telefonico, gli utenti di Skype for business otterranno le car
 |[Impostare le opzioni di inoltro di chiamata in Skype for business](https://support.office.com/article/1ec2e7fb-471c-4c35-bc90-a35991b3f532) <br/> |Invia le chiamate al team immediatamente o dopo un determinato periodo di tempo.  <br/> |
 |[Effettuare e ricevere videochiamate con Skype for Business](https://support.office.com/article/abf62493-670f-4b0d-b2cf-fe03b49caf42) <br/> | Puoi vedere il nome e il flusso video del relatore in una piccola finestra mobile, quindi sei sempre pronto a rispondere a qualsiasi domanda. <br/> |
 |[Controllare la segreteria telefonica e le opzioni di Skype for business](https://support.office.com/article/2deea7f8-831f-4e85-a0d4-b34da55945a8) <br/> |Ecco come funziona cloud Voicemail: quando un utente riceve un messaggio vocale, viene recapitato alla propria cassetta postale come messaggio di posta elettronica con la segreteria telefonica come allegato. Possono anche ascoltare i loro messaggi tramite il telefono desktop certificato Skype, tutte le applicazioni Skype for business o Lync per Mac 2011.  <br/> La segreteria telefonica Cloud include il messaggio di saluto personalizzato, l'indicatore di attesa e la risposta tramite chiamata. È possibile avere tutti i messaggi vocali depositati nelle cassette postali e resi disponibili tramite Skype for business nel PC, nel dispositivo mobile e nel telefono IP.  <br/> |
-|Musica in attesa | Disponibile nel 2019 giugno, il sistema telefonico risuonerà la musica predefinita definita dal servizio quando una chiamata esterna dalla rete PSTN (Public Switched Telephone Network) viene inserita in attesa.  Questa funzionalità è compatibile con chiamate da PSTN a team da uno a uno oltre alle chiamate effettuate in una coda di chiamata. Questa caratteristica offre una parità di notifica in attesa con altre piattaforme. (Tutte le altre piattaforme forniscono un segnale visivo quando un utente viene messo in attesa, ma il chiamante PSTN non ha alcun modo di saperlo).  Nella prima versione, questa caratteristica non è configurabile dall'amministratore.| 
+|Musica in attesa | Disponibile nel 2019 settembre, il sistema telefonico risuonerà la musica predefinita definita dal servizio quando una chiamata esterna dalla rete PSTN (Public Switched Telephone Network) viene inserita in attesa.  Questa funzionalità è compatibile con chiamate da PSTN a team da uno a uno oltre alle chiamate effettuate in una coda di chiamata. Questa caratteristica offre una parità di notifica in attesa con altre piattaforme. (Tutte le altre piattaforme forniscono un segnale visivo quando un utente viene messo in attesa, ma il chiamante PSTN non ha alcun modo di saperlo).  Nella prima versione, questa caratteristica non è configurabile dall'amministratore.| 
    
 ## <a name="plan-and-set-up-the-phone-system-in-office-365"></a>Pianificare e configurare il sistema telefonico in Office 365
 <a name="bkmk_setup"> </a>

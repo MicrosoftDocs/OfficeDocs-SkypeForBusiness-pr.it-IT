@@ -3,7 +3,6 @@ title: Limiti e specifiche per Microsoft Teams
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 06/10/2019
 ms.topic: reference
 ms.service: msteams
 audience: admin
@@ -16,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4fba07eb5ba7e0d26b34657826419172b82a7248
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: ecd31a243da999704b7d466b3dc93dd66fb7ac25
+ms.sourcegitcommit: 9053c0d5ddb6be3ce3da85dffcde3f45dbc0ab7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245373"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407994"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -45,7 +44,19 @@ Questo articolo descrive alcuni dei limiti, delle specifiche e di altri requisit
 
 &sup3; i canali eliminati possono essere ripristinati entro 30 giorni. Durante questi 30 giorni, un canale eliminato continua a essere conteggiato verso il canale di 200 per limite di team. Dopo 30 giorni, un canale eliminato e il relativo contenuto vengono eliminati definitivamente e il canale non viene più conteggiato verso i canali di 200 per il limite del team.
 
-## <a name="meetings-and-calls"></a>Riunioni e chiamate 
+## <a name="channel-names"></a>Nomi dei canali
+
+I nomi dei canali non possono contenere i caratteri o le parole seguenti.
+
+|||
+|---------|---------|
+|Caratteri     | ~ #% & * {} +/\:  < > ? &#124;' "..        |
+|Caratteri in questi intervalli    | da 0 a 1F<br>80 a 9F        |
+|Parole     | maschere, CON, CONIn $, CONOUT $, PRN, AUX, NUL, COM1 in COM9, LPT1 in LPT9, desktop. ini, &#95;VTi&#95;|
+
+Anche i nomi dei canali non possono iniziare con un carattere di sottolineatura (_) o un punto (.) o terminare con un punto (.).
+
+## <a name="meetings-and-calls"></a>Riunioni e chiamate
 
 |Funzionalità     | Limite massimo |
 |------------|---------------|
@@ -57,7 +68,12 @@ Questo articolo descrive alcuni dei limiti, delle specifiche e di altri requisit
 |------------|---------------|
 |Dimensioni del gruppo di destinatari | 10.000 partecipanti |
 |Durata dell'evento | 4 ore |
-|Eventi dinamici contemporanei in un tenant di Office 365 | 15 |
+|Column1  |Column2  |
+|---------|---------|
+|Row1     |         |
+|Row2     |         |
+
+| Eventi dinamici contemporanei in un tenant di Office 365 | 15 |
 
 Per altre informazioni sugli eventi dinamici e un confronto tra eventi live di teams e Skype meeting broadcast, vai a [eventi live di teams e Skype meeting broadcast](teams-live-events/plan-for-teams-live-events.md#teams-live-events-and-skype-meeting-broadcast).
 
