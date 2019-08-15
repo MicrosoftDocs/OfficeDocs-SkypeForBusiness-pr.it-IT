@@ -18,12 +18,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per le riunioni di team che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: c26165abdc753fbe37d3465738200c43b42d087d
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: b1513e80028137c909f5fc0f854666b1770299c8
+ms.sourcegitcommit: c169b091a630ff78c233a2a2824da122184635d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236561"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "36404604"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni delle riunioni in Microsoft Teams
 
@@ -38,7 +38,7 @@ Con l'aggiunta anonima, chiunque può partecipare alla riunione come utente anon
 1. Nella barra di spostamento sinistra, vai a**Impostazioni riunione** **riunioni** > .
 2. In **partecipanti**, attivare **gli utenti anonimi possono partecipare a una riunione**.
 
-    Screenshot ![delle impostazioni dei partecipanti per le riunioni nell'] interfaccia di amministrazione Screenshot (media/meeting-settings-participants.png "delle impostazioni dei partecipanti per le riunioni di team nell'") interfaccia di amministrazione di Microsoft Teams
+    ![Screenshot delle impostazioni dei partecipanti per le riunioni nell'] interfaccia di amministrazione Screenshot (media/meeting-settings-participants.png "delle impostazioni dei partecipanti per le riunioni di team nell'") interfaccia di amministrazione di Microsoft Teams
 
 Se non si vuole che gli utenti anonimi partecipino alle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
@@ -61,7 +61,7 @@ Se non si vuole che gli utenti anonimi partecipino alle riunioni pianificate dag
 1. Nella barra di spostamento sinistra, vai a**Impostazioni riunione** **riunioni** > .
 2. In **invito tramite posta elettronica**eseguire le operazioni seguenti:
 
-    Screenshot ![delle impostazioni di invito alla riunione che è possibile personalizzare] Screenshot (media/meeting-settings-invitation.png "delle impostazioni dell'invito alla riunione che è possibile personalizzare per le riunioni") di Teams
+    ![Screenshot delle impostazioni dell'invito alla riunione che è possibile personalizzare] Screenshot (media/meeting-settings-invitation.png "delle impostazioni dell'invito alla riunione che è possibile personalizzare per le riunioni") di Teams
 
     - **URL del logo** Immettere l'URL in cui è archiviato il logo.
     - **URL legale** Se l'organizzazione ha un sito Web legale in cui si vuole che gli utenti possano rivolgersi per eventuali problemi legali, immettere l'URL qui.
@@ -73,14 +73,17 @@ Se non si vuole che gli utenti anonimi partecipino alle riunioni pianificate dag
 
 <a name="bknetwork"> </a>
 
-Se si usa la qualità del servizio [(QoS)](qos-in-teams.md) per definire la priorità del traffico di rete, è possibile abilitare gli indicatori QoS e impostare gli intervalli di porta per ogni tipo di traffico multimediale.
+Se si usa la qualità del servizio [(QoS)](qos-in-teams.md) per definire la priorità del traffico di rete, è possibile abilitare gli indicatori QoS e impostare gli intervalli di porta per ogni tipo di traffico multimediale. L'impostazione di intervalli di porte per tipi di traffico diversi è un solo passaggio nella gestione di elementi multimediali in tempo reale. vedere la [qualità del servizio (QoS) in teams](qos-in-teams.md) per un maggior dettaglio.
+
+> [!IMPORTANT]
+> Se si Abilita la QoS o si modificano le impostazioni nell'interfaccia di amministrazione di Microsoft teams per il servizio Microsoft teams, sarà necessario [applicare anche le impostazioni di corrispondenza a tutti i dispositivi utente](QoS-in-Teams-clients.md) e a tutti i dispositivi di rete interni per implementare completamente le modifiche apportate al QoS in teams.
 
  ![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
 
 1. Nella barra di spostamento sinistra, vai a**Impostazioni riunione** **riunioni** > .
 2. In **rete**eseguire le operazioni seguenti:
 
-    Screenshot ![delle impostazioni di rete per le riunioni nell'] interfaccia di amministrazione Screenshot (media/meeting-settings-network.png "delle impostazioni di rete per le riunioni di team nell'") interfaccia di amministrazione di Microsoft Teams
+    ![Screenshot delle impostazioni di rete per le riunioni nell'] interfaccia di amministrazione Screenshot (media/meeting-settings-network.png "delle impostazioni di rete per le riunioni di team nell'") interfaccia di amministrazione di Microsoft Teams
 
     - Per consentire l'uso dei contrassegni di DSCP per QoS, attivare l'opzione **Inserisci indicatori di qualità del servizio (QoS) per il traffico multimediale in tempo reale**. Hai solo l'opzione di usare i marcatori o meno; non è possibile impostare indicatori personalizzati per ogni tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method) .
     - Per specificare gli intervalli di porte, accanto a **selezionare un intervallo di porte per ogni tipo di traffico multimediale in tempo reale**, selezionare **Specifica intervalli di porte**e quindi immettere le porte di inizio e fine per la condivisione di audio, video e dello schermo. Per implementare QoS è necessario selezionare questa opzione.
@@ -89,7 +92,7 @@ Se si usa la qualità del servizio [(QoS)](qos-in-teams.md) per definire la prio
     >
     > La selezione di un intervallo di porte troppo stretto consentirà di ricevere chiamate cadute e una qualità di chiamata scadente. Le raccomandazioni riportate di seguito devono essere minime.
 
- Se non si è certi degli intervalli di porte da usare nell'ambiente, le impostazioni seguenti rappresentano un buon punto di partenza. Per altre informazioni, vedere [implementare la qualità del servizio (QoS) in Microsoft teams](QoS-in-Teams.md). Questi sono i contrassegni di DSCP necessari e gli intervalli di porte multimediali suggeriti usati da teams e ExpressRoute.
+Se non si è certi degli intervalli di porte da usare nell'ambiente, le impostazioni seguenti rappresentano un buon punto di partenza. Per altre informazioni, vedere [implementare la qualità del servizio (QoS) in Microsoft teams](QoS-in-Teams.md). Questi sono i contrassegni di DSCP necessari e gli intervalli di porte multimediali suggeriti usati da teams e ExpressRoute.
 
 _Intervalli di porte e contrassegni DSCP_
 
@@ -101,7 +104,5 @@ Tipo di traffico multimediale| Intervallo di porte di origine client\* |Protocol
 | | | | |
 
 \*Gli intervalli di porte assegnati non possono essere sovrapposti e devono essere adiacenti.
-
-L'impostazione di intervalli di porte per tipi di traffico diversi è un solo passaggio nella gestione di elementi multimediali in tempo reale. vedere la [qualità del servizio (QoS) in teams](qos-in-teams.md) per un maggior dettaglio. Se si abilitano o si modificano le impostazioni nell'interfaccia di amministrazione di Microsoft teams, sarà necessario [applicare le impostazioni di corrispondenza a tutti i dispositivi utente](QoS-in-Teams-clients.md) e ai dispositivi di rete interni per implementare completamente le modifiche apportate al QoS in teams.
 
 Dopo che il QoS è stato usato per un po' di tempo, si avranno informazioni sull'utilizzo della domanda per ognuno di questi tre carichi di lavoro e si potranno scegliere le modifiche da apportare in base alle proprie esigenze. Il [dashboard qualità chiamata](turning-on-and-using-call-quality-dashboard.md) sarà utile.
