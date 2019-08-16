@@ -19,6 +19,7 @@
 ### [Con System Center Configuration Manager](room-systems-scale.md)
 ### [Gestione con Azure monitor](azure-monitor-deploy.md)
 ### [Eseguire la migrazione di SRS V1 o LRS](lrs-migration.md)
+### [Telecamere di contenuto](content-camera.md)
 
 ## Gestire
 ### [Panoramica della gestione](skype-room-systems-v2.md)
