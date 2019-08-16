@@ -3,7 +3,7 @@ title: Pianificare eventi dinamici in Microsoft Teams
 author: chuckedmonson
 ms.author: chucked
 manager: serdars
-ms.date: 07/10/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare gli eventi dinamici in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d5ba4810da9ac940d9562b524ea1473b09bf3ff3
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 0afac3e6099f866e5b2cb75395fa1d2bc568d663
+ms.sourcegitcommit: 62f507154e502bb43c608b6f15f72ff7679e93c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243660"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36429993"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare eventi dinamici in Microsoft Teams
 
@@ -42,6 +42,9 @@ Ecco le licenze che devono essere assegnate:
 
 - **Per gli eventi prodotti in teams**  All'utente deve essere assegnata una licenza teams.
 - **Per gli eventi prodotti con un'app o un dispositivo esterno** All'utente deve essere assegnata una licenza Stream.
+
+> [!NOTE]
+> Gli eventi live di teams sono ora disponibili per le organizzazioni di community Cloud (GCC) degli Stati Uniti.
 
 Per altre informazioni sulle licenze, vedere [licenze per i componenti aggiuntivi Microsoft teams](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
