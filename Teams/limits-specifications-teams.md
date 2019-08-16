@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ecd31a243da999704b7d466b3dc93dd66fb7ac25
-ms.sourcegitcommit: 9053c0d5ddb6be3ce3da85dffcde3f45dbc0ab7c
+ms.openlocfilehash: 0601ee50046d543bd252c205cd7b55acbf16a323
+ms.sourcegitcommit: 2453f87088fc2f8034726c14699aacb65d859b1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407994"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36436361"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -68,12 +68,7 @@ Anche i nomi dei canali non possono iniziare con un carattere di sottolineatura 
 |------------|---------------|
 |Dimensioni del gruppo di destinatari | 10.000 partecipanti |
 |Durata dell'evento | 4 ore |
-|Column1  |Column2  |
-|---------|---------|
-|Row1     |         |
-|Row2     |         |
-
-| Eventi dinamici contemporanei in un tenant di Office 365 | 15 |
+|Eventi dinamici contemporanei in un tenant di Office 365 | 15 |
 
 Per altre informazioni sugli eventi dinamici e un confronto tra eventi live di teams e Skype meeting broadcast, vai a [eventi live di teams e Skype meeting broadcast](teams-live-events/plan-for-teams-live-events.md#teams-live-events-and-skype-meeting-broadcast).
 
