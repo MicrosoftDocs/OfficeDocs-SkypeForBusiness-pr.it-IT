@@ -3,7 +3,7 @@ title: Pianificare eventi dinamici in Microsoft Teams
 author: chuckedmonson
 ms.author: chucked
 manager: serdars
-ms.date: 08/15/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare gli eventi dinamici in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0afac3e6099f866e5b2cb75395fa1d2bc568d663
-ms.sourcegitcommit: 62f507154e502bb43c608b6f15f72ff7679e93c5
+ms.openlocfilehash: 1a38fad067f71fff0221a5af2f842ed1e2574d54
+ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36429993"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464557"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare eventi dinamici in Microsoft Teams
 
@@ -73,11 +73,12 @@ L'utente deve avere:
 
  
 ## <a name="teams-live-events-and-skype-meeting-broadcast"></a>Eventi live di teams e Skype meeting broadcast
+
 La tabella seguente evidenzia le funzionalità e le funzionalità principali offerte in eventi live e il modo in cui si differenziano da Skype meeting broadcast. 
 
 |**Capacità**   |**Trasmissione riunione Skype** |**Eventi prodotti in teams** |**Eventi prodotti in un'app o un dispositivo esterno** |
 |---------|---------|---------|---------|
-|Numero massimo di destinatari |10.000 partecipanti |10.000 partecipanti * |10.000 partecipanti * |
+|Numero massimo di destinatari |10.000 partecipanti |10.000 partecipanti<sup>1</sup> |10.000 partecipanti<sup>1</sup> |
 |Durata massima dell'evento Live |4 ore |4 ore |4 ore |
 |Numero massimo di eventi live concorrenti per Office 365 tenant |15  | 15  | 15  |
 |Creazione di eventi dinamici |   Portale Skype meeting broadcast |Teams, Yammer tramite Teams | Teams, Yammer tramite teams, Stream |
@@ -102,8 +103,7 @@ La tabella seguente evidenzia le funzionalità e le funzionalità principali off
 |Report di presenza post-broadcast per produttori |&#x2714; |&#x2714; |X |
 |Analisi del sentimento del pubblico-votazioni in tempo reale & sondaggi |&#x2714; (Microsoft Pulse) |X |X |
 
-> [!IMPORTANT]
-> I limiti impostati possono essere modificati.
+<sup>1</sup> i limiti impostati possono essere modificati.
 
 ## <a name="regional-availability"></a>Disponibilità regionale
 Puoi usare gli eventi teams Live in più aree geografiche in tutto il mondo. Le informazioni seguenti mostrano la disponibilità per i membri del team dell'evento e i partecipanti. 
@@ -118,7 +118,7 @@ Puoi usare gli eventi teams Live in più aree geografiche in tutto il mondo. Le 
 - Go local Canada
 
 **Esclusioni e considerazioni**
-- **Vai ai locali:** Regno Unito, India, Australia, Giappone e altri teams i locali non sono attualmente supportati.
+- **Vai ai locali:** Regno Unito e altri teams i locali non sono attualmente supportati.
 - **Cina:** I membri del team dell'evento e i partecipanti non saranno in grado di usare gli eventi live di teams perché Azure CDN non è accessibile in Cina. Una soluzione alternativa consiste nell'usare una connessione VPN aziendale, che consente di ottenere il client connesso alla rete CDN tramite il network aziendale del cliente.
 
 ## <a name="next-steps"></a>Passaggi successivi

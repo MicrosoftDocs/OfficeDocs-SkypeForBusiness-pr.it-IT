@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: "Riepilogo: preparare i server e l'infrastruttura di dominio di Skype for Business Server 2019 con questo argomento. Hardware, sistema operativo, database, software, tutti i requisiti di sistema e le raccomandazioni, insieme al certificato DNS, alla condivisione di file e alle informazioni di Active Directory, sono qui per garantire un'installazione e una distribuzione di successo della server farm."
-ms.openlocfilehash: b173097377c100fcb03b07d7a502e1e6c096608f
-ms.sourcegitcommit: a78fee3cad5b58bf41dd014a79f4316cf310c8d1
+ms.openlocfilehash: f54b6647a57cf61cb1ad85ad55985243129242f7
+ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "36196070"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464648"
 ---
 # <a name="system-requirements-for-skype-for-business-server-2019"></a>Requisiti di sistema per Skype for Business Server 2019
  
@@ -540,10 +540,13 @@ Skype for Business Server 2019 può usare la stessa condivisione file per tutti 
   
 - Una condivisione file deve essere inserita nell'archiviazione (DAS) Direct Attached Storage Network (SAN), che include il file System distribuito (DFS), nonché una matrice ridondante di dischi indipendenti (RAID) per gli archivi di file. Per altre informazioni su DFS per Windows Server 2012, vedere [Questa pagina DFS](https://technet.microsoft.com/en-us/library/jj127250.aspx).
     
-- È consigliabile un cluster condiviso per la condivisione file. Se si usa uno, è consigliabile eseguire il cluster Windows Server 2012 o Windows Server 2012 R2. Perché le finestre più recenti? Le versioni precedenti potrebbero non avere le autorizzazioni appropriate per abilitare tutte le funzionalità. Puoi usare l'amministratore del cluster per creare le condivisioni di file e questo articolo che [Crea un](https://support.microsoft.com/en-us/help/224967) KB di cluster ti aiuterà in questi dettagli.
+- È consigliabile un cluster condiviso per la condivisione file. Se si sta già usando uno, è consigliabile eseguire il cluster di Windows Server 2012 o versioni successive
+
+> [!Note]
+> **Perché le finestre più recenti?** Le versioni precedenti potrebbero non avere le autorizzazioni appropriate per abilitare tutte le funzionalità. È possibile usare Amministrazione cluster per creare le condivisioni file. Per altre informazioni, vedere questo articolo del supporto per [creare condivisioni di file in un cluster](https://support.microsoft.com/help/224967) .
     
 > [!CAUTION]
-> Dovresti sapere che l'uso di Network Attached Storage (NAS) come condivisione file non è supportato, quindi usa una delle opzioni elencate sopra. 
+> Dovresti sapere che l'uso di Network Attached Storage (NAS) come condivisione file non è supportato, quindi usa una delle opzioni elencate sopra. Questa limitazione del supporto è causata dalla progettazione variabile di dispositivi NAS che devono consentire l'adattabilità del file System al computer basato su Windows Server che accede al file system condiviso dei dispositivi.
   
 
 

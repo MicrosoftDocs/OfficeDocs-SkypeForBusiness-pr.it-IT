@@ -16,12 +16,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: 'Riepilogo: informazioni su come eseguire la migrazione delle impostazioni utente e spostare gli utenti in teams.'
-ms.openlocfilehash: 1a0b126537c02376eaf28f40e843295aa5582dd3
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c655d8ecaa5856a57d7e675676c0ba5e8c2c43d6
+ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36185447"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464679"
 ---
 # <a name="move-users-from-on-premises-to-teams"></a>Trasferire utenti da locale a teams
 
@@ -38,6 +38,11 @@ Quando un utente viene spostato da locale a teams only, l'utente Skype for Busin
     ![Messaggio che reindirizza un utente in teams](../media/go-to-teams-page.png)
 
 Prima di spostare qualsiasi utente, assicurati di rivedere i [prerequisiti](move-users-between-on-premises-and-cloud.md#prerequisites) per spostare gli utenti nel cloud. Assicurati anche di rivedere le [linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](/microsoftteams/migration-interop-guidance-for-teams-with-skype).
+
+
+> [!NOTE]
+> L'archivio contatti unificato deve essere disabilitato nell'account SfB per il contatto da spostare in teams.
+
 
 Esistono due metodi per trasferire un utente da locale a teams:
 
@@ -86,6 +91,9 @@ La sequenza di cmdlet seguente può essere usata per trasferire un utente in Tea
 ## <a name="notify-your-skype-for-business-on-premises-users-of-the-upcoming-move-to-teams"></a>Avvisare gli utenti locali di Skype for business dell'imminente trasferimento in teams
 
 Gli strumenti di amministrazione locali in Skype for Business Server 2015 con CU8, così come in Skype for Business Server 2019, consentono di comunicare agli utenti di Skype for business locali il loro imminente trasferimento in teams. Quando si abilitano queste notifiche, gli utenti vedranno una notifica nel client Skype for business (Win32, Mac, Web e mobile), come illustrato di seguito. Se gli utenti fanno clic sul pulsante **prova** , il client teams verrà avviato se è installato; in caso contrario, gli utenti verranno spostati nella versione Web di Teams nel browser. Per impostazione predefinita, quando le notifiche sono abilitate, i client di Skype for business Win32 scaricano automaticamente il client teams in modo che il rich client sia disponibile prima di spostare l'utente in modalità solo Teams; Tuttavia, puoi anche disabilitare questo comportamento.  Le notifiche vengono configurate tramite la versione locale `TeamsUpgradePolicy`di e il download silenzioso per i client Win32 viene controllato tramite il cmdlet `TeamsUpgradeConfiguration` locale.
+
+> [!TIP]
+> Potrebbe essere necessario riavviare alcuni server per questo lavoro in Skype for business 2015 con CU8.
 
 ![Notifica delle prossime mosse ai team](../media/teams-upgrade-notification.png)
 

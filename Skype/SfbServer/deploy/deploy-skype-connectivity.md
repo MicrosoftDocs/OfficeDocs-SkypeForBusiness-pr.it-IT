@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: fb51860b-6f46-4b71-b8c8-682d0982d36d
 description: 'Riepilogo: informazioni su come connettere Skype for Business Server con Skype consumer. Nota anche come connettività Skype.'
-ms.openlocfilehash: b41e974b2162826f375f2cce2b2eabbae320871b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 4a335d2ec8e20310a34ce1bdfc8f39fe9b1117ee
+ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235705"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464601"
 ---
 # <a name="deploy-skype-connectivity-in-skype-for-business-server"></a>Distribuire la connettività Skype in Skype for Business Server
 
@@ -124,7 +124,7 @@ Ulteriori indicazioni per i certificati esterni sono disponibili nella [pianific
 Il meccanismo di provisioning dei messaggi istantanei pubblici (pic.lync.com) distribuito in 2006 non è più utilizzabile e verrà arrestato in 8/15/2019. La Federazione di messaggistica istantanea pubblica assumerà invece lo stesso modello federativo usato da Skype for business online, noto come "partner Discovery", in cui una distribuzione locale è pubblicamente individuabile dai record SRV DNS federativi.
 
 **Questa modifica significa che la Federazione di messaggistica istantanea pubblica è deprecata?**
-Non. La Federazione di messaggistica istantanea pubblica continuerà a essere supportata per molti anni, probabilmente finché il prodotto locale di Skype for business non raggiungerà la fine del ciclo di vita.
+Non. La Federazione di messaggistica istantanea pubblica continuerà a essere supportata per molti anni, probabilmente finché il prodotto locale Skype for business non raggiungerà la fine del ciclo di vita.
 
 **La nostra azienda ha una relazione ibrida (spazio di indirizzi condiviso) con Skype for business online, siamo interessati?**
 No, dato che sei già in Federazione con Skype for business online, questa modifica non influirà su di te.
@@ -133,7 +133,7 @@ No, dato che sei già in Federazione con Skype for business online, questa modif
 Non. Se le impostazioni proxy di Edge Server non abilitano la Federazione con il provider di hosting di Skype for business online (sipfed.online.lync.com), questa modifica non influirà. Tuttavia, gli stessi requisiti di DNS e certificati applicati alla Federazione con Skype for business online ora si applicano anche alla Federazione con gli utenti Skype.
  
 **La nostra società è di grandi dimensioni e non può modificare la configurazione dei bordi a causa di normative/conformità/etc... Cosa possiamo fare?**
-Qualsiasi organizzazione locale che non può modificare la configurazione del server perimetrale specificata dovrebbe raggiungere il supporto tecnico al più presto possibile.
+Qualsiasi organizzazione locale che non può modificare la configurazione del server perimetrale come specificato dovrebbe raggiungere il supporto tecnico al più presto possibile.
 
 ### <a name="enabling-federation-and-public-im-connectivity-pic"></a>Abilitazione della Federazione e della connettività per messaggistica istantanea pubblica (PIC)
 

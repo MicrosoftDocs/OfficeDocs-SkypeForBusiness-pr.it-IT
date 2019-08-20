@@ -11,16 +11,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: "Riepilogo: informazioni su come usare PowerShell per ottenere la funzionalità SEFAUtil in Skype for Business Server 2019 dopo l'installazione dell'aggiornamento cumulativo 1."
-ms.openlocfilehash: 1c5d8d32c1b7b1b988b0ab39c79e4a7f40752875
-ms.sourcegitcommit: 14700a4faab81a294ac794f25b26619a5ed242a5
+ms.openlocfilehash: 6e0f7fc8e4bbb25564faa8107dec81ae3887b360
+ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "36196064"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464550"
 ---
 # <a name="using-sefautil-functionality-via-powershell-in-skype-for-business-server-2019"></a>Uso della funzionalità SEFAUtil tramite PowerShell in Skype for Business Server 2019
 
-SEFAUtil (attivazione delle funzionalità di estensione secondaria) consente agli amministratori di Skype for Business Server e agli agenti helpdesk di configurare le impostazioni di chiamata delegata, di inoltro delle chiamate e di gruppo per conto di un utente di Skype for Business Server. Questo strumento consente inoltre agli amministratori di eseguire query sulle impostazioni di routing delle chiamate pubblicate per un determinato utente. Dopo aver installato questo aggiornamento, le funzionalità seguenti che possono essere gestite solo tramite SEFAUtil saranno gestibili anche tramite PowerShell:
+SEFAUtil (attivazione delle funzionalità di estensione secondaria) consente agli amministratori di Skype for Business Server e agli agenti helpdesk di configurare le impostazioni di chiamata delegata, di inoltro delle chiamate e di gruppo per conto di un utente di Skype for Business Server. Questo strumento consente inoltre agli amministratori di eseguire query sulle impostazioni di routing delle chiamate pubblicate per un determinato utente. Dopo aver installato l'aggiornamento cumulativo di Skype for Business Server 2019 luglio, le funzionalità seguenti che possono essere gestite solo tramite SEFAUtil saranno gestibili anche tramite PowerShell:
 
 - [Impostazioni inoltro di chiamata](#call-forwarding-settings)
 - [Impostazioni di delega](#delegation-settings)

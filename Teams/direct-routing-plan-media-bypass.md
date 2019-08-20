@@ -13,12 +13,12 @@ ms.collection: Teams_ITAdmin_Help
 appliesto:
 - Microsoft Teams
 description: Leggere questo argomento per informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico.
-ms.openlocfilehash: 70d0b5ea61d0d7a8001bb1dbfabda2c45274e521
-ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
+ms.openlocfilehash: a6f13b8f7db767d8a6a16f8f4493f15aeed9af38
+ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36271447"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36464591"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con routing diretto
 
@@ -290,7 +290,7 @@ In questo momento, il bypass multimediale supporta solo la versione v4 dei relay
 
 ### <a name="requirements-for-using-media-processors"></a>Requisiti per l'uso dei processori multimediali
 
-I processori multimediali sono sempre nel percorso multimediale per le applicazioni vocali e per cleints Web (per exampe, teams cleint in Edge o Google Chrome). I requisiti sono gli stessi della configurazione non di bypass.
+I processori multimediali sono sempre nel percorso multimediale per le applicazioni vocali e per i client Web, ad esempio i client teams in Edge o Google Chrome. I requisiti sono gli stessi della configurazione non di bypass.
 
 
 L'intervallo IP per il traffico multimediale è 
@@ -353,7 +353,7 @@ Per informazioni su come configurare due trunk nello stesso SBC, vedere la docum
 
 Il bypass multimediale è supportato con tutti gli endpoint di teams.
 
-Nota per webcleints (teams Web App in Microsoft Edge, Google Chrome o Mozilla Firefox) sarà possibile nascondere la chiamata al non-bypass, anche se è stata avviata come chiamata di bypass. Questo problema si verifica automaticamente e non richiede alcuna azione per l'amministratore. 
+Nota per i client Web (teams Web App in Microsoft Edge, Google Chrome o Mozilla Firefox) sarà possibile nascondere la chiamata al non-bypass anche se è stata avviata come chiamata di bypass. Questo problema si verifica automaticamente e non richiede alcuna azione da parte dell'amministratore. 
  
 ## <a name="see-also"></a>Vedere anche
 
