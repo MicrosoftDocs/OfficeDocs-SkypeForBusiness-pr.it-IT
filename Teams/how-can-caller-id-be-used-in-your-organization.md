@@ -17,16 +17,16 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1keywords: ms.teamsadmincenter.voice.callerid.overview
 ms.custom:
 - Calling Plans
 description: L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
-ms.openlocfilehash: c0cd798f7aaed3b513db9d74fc52d458b9d17078
-ms.sourcegitcommit: bf7de2101862a154eb375c06bc89e6e0c4872119
+ms.openlocfilehash: 31948a8361d8ae5a15ce84549d982d0c7f9adf1b
+ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "36183541"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484038"
 ---
 # <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nella tua organizzazione
 

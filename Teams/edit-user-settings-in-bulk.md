@@ -12,16 +12,17 @@ search.appverid: MET150
 description: Informazioni su come gestire le impostazioni utente di Microsoft teams in blocco nell'interfaccia di amministrazione di Microsoft teams.
 localization_priority: Normal
 f1keywords:
+- ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
 ms.collection: Strat_MT_TeamsAdmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9585266ff2af124a1b9985c4cf18d842bc45af5c
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: c57ae4978e0cfacf69c9e68fb47d3f28ad5c4f4d
+ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236782"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36483749"
 ---
 # <a name="edit-microsoft-teams-user-settings-in-bulk"></a>Modificare le impostazioni degli utenti di Microsoft teams in blocco
 

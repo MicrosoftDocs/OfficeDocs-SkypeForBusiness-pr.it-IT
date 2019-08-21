@@ -18,12 +18,12 @@ localization_priority: Normal
 f1keywords:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
 description: Informazioni sulla gestione degli account delle risorse in Microsoft Teams
-ms.openlocfilehash: dfb7a9b65003442266cc6cf25ea59b7270aa1c9c
-ms.sourcegitcommit: a49caec01ff724475d6670b303d851ddd8266c2c
+ms.openlocfilehash: 0a53b68af411ad7085ef3abf6e978565f9ea18f0
+ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36207168"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36483562"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account delle risorse in Microsoft Teams
 
@@ -192,6 +192,12 @@ Set-csonlinevoiceapplicationinstance -identity <Resource Account oid> -Telephone
 ```
 
 Dopo aver eseguito questa operazione, è possibile eliminare l'account delle risorse dal portale di amministrazione di Office 365, in scheda utenti.
+
+Per dissociare un numero di telefono di routing diretto dall'account delle risorse, usare il cmdlet seguente:
+
+``` Powershell
+Set-CsOnlineApplicationInstance -Identity  <Resource Account oid> -OnpremPhoneNumber ""
+```
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 

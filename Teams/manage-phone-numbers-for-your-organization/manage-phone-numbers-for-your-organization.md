@@ -18,17 +18,19 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1keywords:
+- ms.teamsadmincenter.voice.phonenumbers.overview
+- ms.teamsadmincenter.voice.searchandacquire.PSTNpartner
 - ms.lync.lac.NewNumberManualAcquisitionOpenSupportTicket
 - ms.lync.lac.VASAMissingGeoCodes
 ms.custom:
 - Calling Plans
 description: Informazioni su come ottenere e gestire i numeri di telefono per Microsoft teams per l'organizzazione.
-ms.openlocfilehash: af8586ecfd96ee75105fe7fcec6cf575dbc9f1e3
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: 832a5dd14d1d7ff1d74443e8243d8e5f022a25af
+ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36184783"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36483690"
 ---
 # <a name="manage-phone-numbers-for-your-organization"></a>Gestire i numeri di telefono per la propria organizzazione
 
