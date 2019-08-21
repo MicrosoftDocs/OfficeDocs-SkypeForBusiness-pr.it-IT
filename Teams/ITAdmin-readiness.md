@@ -13,15 +13,17 @@ ms.collection:
 - Teams_ITAdmin_Training
 - M365-collaboration
 search.appverid: MET150
+f1keywords:
+- ms.teamsadmincenter.dashboard.trainingvideos.admintrainingteams
 description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse per gli amministratori che spiegano come pianificare, distribuire ed eseguire Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6e42d9ffb4f32faffd27fa4e0843b2d8df9055cb
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 67adf55badb30504ba55ed814c735de89fb9dc6b
+ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237279"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36483518"
 ---
 # <a name="admin-training-for-microsoft-teams"></a>Formazione per amministratori per Microsoft Teams
 
