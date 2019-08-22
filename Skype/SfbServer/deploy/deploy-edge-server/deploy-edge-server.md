@@ -13,26 +13,26 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 2fdf418e-e571-4f2b-bb83-91fdcf738edb
 description: "Riepilogo: informazioni su come distribuire un Edge Server o un pool di Edge nell'ambiente di Skype for Business Server."
-ms.openlocfilehash: 39f308c13c3164c2fa46363723d5f3b1256595fb
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 03cb3f1bc4a938a698c28332b4781d08434bc52f
+ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234101"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493105"
 ---
 # <a name="deploy-edge-server-in-skype-for-business-server"></a>Distribuire Edge Server in Skype for Business Server
  
 **Riepilogo:** Informazioni su come distribuire un Edge Server o un pool di Edge nell'ambiente di Skype for Business Server.
   
-Perché distribuire un Edge Server o un pool di Edge nell'ambiente di Skype for Business Server? È necessario se sono necessari utenti esterni che non hanno eseguito l'accesso alla rete interna delle organizzazioni per poter interagire con gli utenti interni. Questi utenti esterni possono essere autenticati e utenti remoti anonimi, partner federati o altri client mobili.
+Perché distribuire un Edge Server o un pool di Edge nell'ambiente di Skype for Business Server? È necessario se sono necessari utenti esterni che non hanno eseguito l'accesso alla rete interna dell'organizzazione per poter interagire con gli utenti interni. Questi utenti esterni possono essere autenticati e utenti remoti anonimi, partner federati o altri client mobili.
   
 ## <a name="deployment-checklist-for-the-edge-for-skype-for-business-server"></a>Elenco di controllo della distribuzione per Edge, per Skype for Business Server
 
-Come indicato in precedenza, molto passa alla distribuzione di Edge Server per Skype for Business Server. Questo elenco di controllo offre una panoramica delle attività che è necessario eseguire e collegamenti a passaggi più dettagliati.
+Come indicato in precedenza, molto passa in una distribuzione di Edge Server per Skype for Business Server. Questo elenco di controllo offre una panoramica delle attività che è necessario eseguire e collegamenti a passaggi più dettagliati.
   
 Speriamo che tu abbia iniziato nel [piano per le distribuzioni di Edge Server nella sezione Skype for Business Server](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md) . In caso contrario, molte delle cose a cui ci riferiamo sono dettagliate. La sezione distribuzione contiene solo le procedure, quindi se vuoi conoscere il ragionamento che sta alla base di questi passaggi, la pianificazione è il punto di partenza.
   
-Questa documentazione presuppone inoltre che sia stata eseguita anche la distribuzione di base di Skype for Business Server. Questa operazione può essere eseguita affiancata con il bordo, ma è necessario seguire prima questi passaggi e quindi è possibile apportare le modifiche della topologia per il bordo documentato in questa sezione.
+Questa documentazione presuppone anche che tu abbia già completato la distribuzione di base di Skype for Business Server. Questa operazione può essere eseguita affiancata con il bordo, ma è necessario seguire prima questi passaggi e quindi è possibile apportare le modifiche della topologia per il bordo documentato in questa sezione.
   
 Questi sono i passaggi di alto livello che è necessario seguire e i punti in cui sono disponibili:
   

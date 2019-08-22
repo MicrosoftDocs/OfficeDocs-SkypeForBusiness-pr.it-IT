@@ -17,12 +17,12 @@ description: Informazioni sui passaggi per configurare Live per gli eventi in te
 f1keywords: ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3848dde21ae45c0354049a69c939ba4bd978bea4
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 882a6c708a7aae67a8aafae880d8f0244f5fa8b1
+ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237369"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493099"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi dinamici in Microsoft Teams
 
@@ -57,7 +57,7 @@ I criteri per gli eventi dinamici vengono usati per controllare chi nell'organiz
 
 |Impostazione  |Descrizione  |
 |---------|---------|
-|**Nome**     |Questo è il nome del criterio visualizzato nella pagina Criteri eventi dinamici. Non può essere maggiore di 64 caratteri o avere caratteri speciali.          |
+|**Titolo**     |Questo è il titolo del criterio visualizzato nella pagina Criteri eventi dinamici. Non può essere maggiore di 64 caratteri o avere caratteri speciali.          |
 |**Descrizione**    |Usare questa caratteristica per aggiungere una descrizione amichevole per il criterio.         |
 |**Consenti pianificazione**     |Questa operazione consente agli utenti dell'organizzazione di creare e pianificare eventi dinamici in teams. È importante sapere che se si vuole che gli utenti programmino un evento dinamico prodotto con un'app o un dispositivo esterno, è necessario eseguire ulteriori operazioni. Per altre informazioni, vedere [consentire agli utenti di pianificare gli eventi prodotti con un'app o un dispositivo esterno](#enable-users-to-schedule-events-that-were-produced-with-an-external-app-or-device).     |
 |**Consentire la trascrizione per i partecipanti** |Questa impostazione può essere applicata solo agli eventi prodotti in teams. Questa operazione consente ai partecipanti agli eventi live di visualizzare le didascalie e i sottotitoli dinamici durante l'evento.         |

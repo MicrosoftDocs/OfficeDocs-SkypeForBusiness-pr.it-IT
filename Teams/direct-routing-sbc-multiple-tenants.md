@@ -15,12 +15,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant.
-ms.openlocfilehash: 3aad7aa5b958e9e4129bbf7e3553137768d1f4c1
-ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
+ms.openlocfilehash: a8ee395a0b588af976151923992efbb32971b43c
+ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36271458"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493127"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un controller di bordo della sessione per più tenant
 
@@ -206,28 +206,34 @@ Con la versione iniziale di routing diretto, Microsoft ha richiesto un trunk da 
 
 Tuttavia, questo risultato non è stato ottimale per due motivi:
  
-• **Gestione overhead**. Lo scarico o lo svuotamento di un SBC, ad esempio, modifica alcuni parametri, come l'abilitazione o la disabilitazione del bypass multimediale. La modifica della porta richiede la modifica di parametri in più tenant (eseguendo set-CSOnlinePSTNGateway), ma in realtà è lo stesso SBC. • **Elaborazione overhead**. Raccolta e monitoraggio dei dati di integrità del trunk: le opzioni SIP raccolte da più trunk logici, in realtà lo stesso SBC e lo stesso trunk fisico, rallentano l'elaborazione dei dati di routing.
+- **Gestione overhead**. Lo scarico o lo svuotamento di un SBC, ad esempio, modifica alcuni parametri, come l'abilitazione o la disabilitazione del bypass multimediale. La modifica della porta richiede la modifica di parametri in più tenant (eseguendo set-CSOnlinePSTNGateway), ma in realtà è lo stesso SBC. 
+
+-  **Elaborazione overhead**. Raccolta e monitoraggio dei dati di integrità del trunk: le opzioni SIP raccolte da più trunk logici, in realtà lo stesso SBC e lo stesso trunk fisico, rallentano l'elaborazione dei dati di routing.
  
 
 In base a questo feedback, Microsoft sta introducendo una nuova logica per eseguire il provisioning dei trunk per i tenant del cliente.
 
-Sono state introdotte due nuove entità: • un tronco portante registrato nel tenant del vettore usando il comando New-CSOnlinePSTNGateway, ad esempio New-CSOnlinePSTNGateway-FQDN customers.adatum.biz-SIPSignallingport 5068-ForwardPAI $true.
-• Un tronco derivato, che non richiede la registrazione. È semplicemente un nome host desiderato aggiunto dal trunk del vettore. Derivano tutti i parametri di configurazione dal trunk del vettore. Il trunk derivato non deve essere creato in PowerShell e l'associazione con il trunk del vettore si basa sul nome FQDN (Vedi dettagli seguenti).
+Sono state introdotte due nuove entità:
+-   Un tronco vettore registrato nel tenant del vettore usando il comando New-CSOnlinePSTNGateway, ad esempio New-CSOnlinePSTNGateway-FQDN customers.adatum.biz-SIPSignallingport 5068-ForwardPAI $true.
 
-Logica e esempio di provisioning.
+-   Un trunk derivato, che non richiede la registrazione. È semplicemente un nome host desiderato aggiunto dal trunk del vettore. Derivano tutti i parametri di configurazione dal trunk del vettore. Il trunk derivato non deve essere creato in PowerShell e l'associazione con il trunk del vettore si basa sul nome FQDN (Vedi dettagli seguenti).
 
-• I vettori devono solo configurare e gestire un singolo trunk (trunk Carrier nel dominio del vettore) usando il comando set-CSOnlinePSTNGateway. Nell'esempio precedente è adatum.biz; • Nel tenant del cliente, il vettore deve solo aggiungere il nome di dominio completo del trunk derivato ai criteri di routing vocale degli utenti. Non è necessario eseguire New-CSOnlinePSTNGateway per un trunk.
-• Il trunk derivato, come suggerisce il nome, eredita o deriva tutti i parametri di configurazione dal trunk del vettore. Esempi: • Customers.adatum.biz-il trunk carrier che deve essere creato nel tenant del vettore.
-• Sbc1.customers.adatum.biz-il trunk derivato in un tenant del cliente che non deve essere creato in PowerShell.  È possibile aggiungere semplicemente il nome del trunk derivato nel tenant del cliente nei criteri di routing vocale online senza crearlo.
+**Logica di provisioning ed esempio**
 
-• Tutte le modifiche apportate a un trunk del vettore (sul tenant del vettore) vengono applicate automaticamente ai tronchi derivati. Ad esempio, i vettori possono cambiare una porta SIP nel trunk del vettore e questa modifica si applica a tutti i trunk derivati. La nuova logica per configurare i trunk semplifica la gestione perché non è necessario passare a ogni tenant e cambiare il parametro in ogni trunk.
-• Le opzioni vengono inviate solo al nome di dominio completo del trunk del vettore. Lo stato di integrità del trunk del vettore viene applicato a tutti i trunk derivati e viene usato per le decisioni di routing. Altre informazioni sulle [Opzioni di routing diretto](https://docs.microsoft.com/microsoftteams/direct-routing-monitor-and-troubleshoot).
-• Il vettore può drenare il tronco del portapacchi e anche tutti i tronchi derivati verranno svuotati. 
+-   I vettori devono solo configurare e gestire un singolo trunk (trunk Carrier nel dominio vettore) usando il comando set-CSOnlinePSTNGateway. Nell'esempio precedente è adatum.biz;
+-   Nel tenant del cliente, il vettore deve solo aggiungere il nome di dominio completo del trunk derivato ai criteri di routing vocale degli utenti. Non è necessario eseguire New-CSOnlinePSTNGateway per un trunk.
+-    Il trunk derivato, come suggerisce il nome, eredita o deriva tutti i parametri di configurazione dal trunk del vettore. Esempi
+-   Customers.adatum.biz-il tronco portante che deve essere creato nel tenant del vettore.
+-   Sbc1.customers.adatum.biz: il trunk derivato in un tenant del cliente che non deve essere creato in PowerShell.  È possibile aggiungere semplicemente il nome del trunk derivato nel tenant del cliente nei criteri di routing vocale online senza crearlo.
+
+-   Tutte le modifiche apportate a un trunk del vettore (sul tenant del gestore) vengono applicate automaticamente ai trunk derivati. Ad esempio, i vettori possono cambiare una porta SIP nel trunk del vettore e questa modifica si applica a tutti i trunk derivati. La nuova logica per configurare i trunk semplifica la gestione perché non è necessario passare a ogni tenant e cambiare il parametro in ogni trunk.
+-   Le opzioni vengono inviate solo al nome di dominio completo del trunk vettore. Lo stato di integrità del trunk del vettore viene applicato a tutti i trunk derivati e viene usato per le decisioni di routing. Altre informazioni sulle [Opzioni di routing diretto](https://docs.microsoft.com/microsoftteams/direct-routing-monitor-and-troubleshoot).
+-   Il vettore può drenare il tronco del vettore e tutti i tronchi derivati verranno drenati. 
  
 
-Migrazione dal modello precedente al trunk del vettore
+**Migrazione dal modello precedente al trunk del vettore**
  
-Per la migrazione dall'implementazione corrente del modello ospitato dal vettore al nuovo modello, i vettori dovranno riconfigurare i trunk per i tenant del cliente. Rimuovere i Trunks dagli inquilini del cliente usando Remove-CSOnlinePSTNGateway (lasciando il trunk nel tenant del vettore).
+Per la migrazione dall'implementazione corrente del modello ospitato dal vettore al nuovo modello, i vettori dovranno riconfigurare i trunk per i tenant del cliente. Rimuovere i Trunks dagli inquilini del cliente usando Remove-CSOnlinePSTNGateway (lasciando il tronco nel tenant del vettore)-
 
 Invitiamo vivamente la migrazione alla nuova soluzione il più presto possibile, per migliorare il monitoraggio e il provisioning tramite il modello Carrier e trunk derivato.
  

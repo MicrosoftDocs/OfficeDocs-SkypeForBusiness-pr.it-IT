@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 ms.collection: M365-voice
 description: Questo articolo illustra i preparativi per l'infrastruttura per la distribuzione delle sale di Microsoft teams.
-ms.openlocfilehash: 1450752b14e509e86f6d2cf0c56ce9693e86265a
-ms.sourcegitcommit: 1401ee484a2bc8e72d96649b0571bb59198f9dab
+ms.openlocfilehash: 5789f8138bf5ab9e12c77a8b2963ff32e7f33586
+ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36427853"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493087"
 ---
 # <a name="prepare-your-environment"></a>Preparare l'ambiente
 
@@ -61,6 +61,9 @@ Per funzionare correttamente, il dispositivo Microsoft teams Rooms deve avere ac
 
 > [!IMPORTANT]
 > Assicurati di usare una connessione di rete a 1 Gbps cablata per assicurarti che avrai la larghezza di banda necessaria.
+
+> [!NOTE]
+> Gli aggiornamenti software per le sale di Microsoft teams vengono scaricati automaticamente da Microsoft Store for business. Vedere [prerequisiti per Microsoft Store per le aziende e l'istruzione](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) per verificare che la console della sala sia in grado di accedere allo Store e all'aggiornamento automatico.
   
 ### <a name="certificates"></a>Certificati
 
@@ -169,3 +172,5 @@ Analogamente a qualsiasi dispositivo Windows, il nome del computer può essere r
 [Configurare una console Microsoft teams rooms](console.md)
   
 [Gestire le sale di Microsoft Teams](skype-room-systems-v2.md)
+
+[Prerequisiti per Microsoft Store per le aziende e l'istruzione](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) 

@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Licensing
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: 6de37fb4f995e2af8be640fef62b379c2a1d7b0d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 18762b51fc44ed1bc3f63a0e815528174e4afd8a
+ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36182305"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493080"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
@@ -75,6 +75,9 @@ Negli abbonamenti all'interfaccia di amministrazione > **** > **** di **Microsof
 Ogni organizzazione farà un diverso uso dei piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Per le organizzazioni che usano Skype for business già come provider di servizi, è possibile ottenere i dati di utilizzo tramite la revisione in**report** dell'interfaccia di **Amministrazione** > di Microsoft 365 o nei report dell'interfaccia di >  **amministrazione di Skype for business**** **Dettagli sull' **utilizzo PSTN.**  > 
   
 Quando si impostano i Crediti comunicazioni è necessario analizzare l'uso delle chiamate nella propria organizzazione per determinare gli importi da considerare. Per ottenere informazioni sull'uso delle chiamate, esaminare il report **Dettagli dell'utilizzo della rete PSTN**. Questo report permette di esportare i record dei dati di chiamata su Excel e di creare report personalizzati.
+
+> [!NOTE]
+> I crediti per le comunicazioni vengono usati anche per i numeri a tariffa Premium. Il chiamante paga le spese.
   
 ## <a name="recommended-funding-amounts"></a>Importi da pagare consigliati
 

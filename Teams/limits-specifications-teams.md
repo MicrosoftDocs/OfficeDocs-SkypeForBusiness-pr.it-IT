@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 54c71dfb692dc5981699babdfdb708c404eb6231
-ms.sourcegitcommit: fd5d48b36d70e3f42e029572fe003ee397db090d
+ms.openlocfilehash: 854c6beeccdae6286bc609a226a49b15de1114e6
+ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36473369"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493119"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -43,6 +43,43 @@ Questo articolo descrive alcuni dei limiti, delle specifiche e di altri requisit
 &sup2; Questo limite include team archiviati.
 
 &sup3; i canali eliminati possono essere ripristinati entro 30 giorni. Durante questi 30 giorni, un canale eliminato continua a essere conteggiato verso il canale di 200 per limite di team. Dopo 30 giorni, un canale eliminato e il relativo contenuto vengono eliminati definitivamente e il canale non viene più conteggiato verso i canali di 200 per il limite del team.
+
+## <a name="messaging"></a>Messaggistica
+
+### <a name="chat"></a>Chat
+
+Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in teams devono avere una cassetta postale di Exchange Online (basata su cloud) per un amministratore per cercare le conversazioni di chat. Questo perché le conversazioni che fanno parte dell'elenco chat sono archiviate nelle cassette postali basate su cloud dei partecipanti alla chat. Se un partecipante alla chat non ha una cassetta postale di Exchange Online, l'amministratore non potrà cercare o inserire un blocco nelle conversazioni di chat. Ad esempio, in una distribuzione ibrida di Exchange gli utenti con cassette postali locali potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco chat in teams. Tuttavia, in questo caso, il contenuto di queste conversazioni non è ricercabile e non può essere messo in attesa perché gli utenti non hanno cassette postali basate su cloud. Per altre informazioni, vedere [interazione tra Exchange e Microsoft teams](exchange-teams-interact.md).
+
+La chat di teams funziona su un backend di Microsoft Exchange, quindi i limiti della messaggistica di Exchange si applicano alla funzione chat in teams.
+
+|Funzionalità  | Limite massimo  |
+|---------|---------|
+|Numero di persone in una chat privata<sup>1</sup>  | 100    |
+|Numero di file allegati<sup>2</sup>  |10     |
+
+<sup>1</sup> Se si hanno più di 20 persone in una chat, le caratteristiche della chat seguenti sono disattivate: le risposte automatiche di Outlook e i messaggi di stato di Teams; indicatore di digitazione; chiamate audio e video; condivisione leggere le conferme.
+
+<sup>2</sup> Se il numero di allegati supera questo limite, viene visualizzato un messaggio di errore.
+
+### <a name="emailing-a-channel"></a>Inviare tramite posta elettronica un canale
+
+ Se gli utenti desiderano inviare un messaggio di posta elettronica a un canale in teams, usano l'indirizzo di posta elettronica del canale. Quando un messaggio di posta elettronica fa parte di un canale, chiunque può rispondere per avviare una conversazione. Ecco alcuni dei limiti applicabili per l'invio di messaggi di posta elettronica a un canale.
+
+|Funzionalità  | Limite massimo  |
+|---------|---------|
+|Dimensione<sup>messaggio 1<sup> | 24 KB |
+|Numero di file allegati<sup>2</sup>  |20     |
+|Dimensioni di ogni allegato di file | Minore di 10 MB |
+|Numero di immagini inline<sup>2</sup> |50   |
+
+<sup>1</sup> Se il messaggio supera questo limite, viene generato un messaggio di anteprima e all'utente viene chiesto di scaricare e visualizzare la posta elettronica originale dal collegamento fornito.
+
+<sup>2</sup> Se il numero di allegati o immagini supera questo limite, viene visualizzato un messaggio di errore.
+
+Per altre informazioni, vedere [limiti di Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+
+> [!NOTE]
+> Le dimensioni dei messaggi, i file allegati e i limiti delle immagini in linea sono gli stessi per tutte le licenze di Office 365.
 
 ## <a name="channel-names"></a>Nomi dei canali
 
@@ -91,28 +128,6 @@ Poiché teams viene eseguito su un backend di SharePoint Online per la condivisi
 I canali sono appoggiati da cartelle nella raccolta siti di SharePoint Online creata per il team, quindi le schede dei file nei canali condividono i limiti di spazio di archiviazione del team a cui appartengono.
 
 Per altre informazioni, vedere [limiti di SharePoint Online](https://support.office.com/article/SharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).
-
-## <a name="messaging"></a>Messaggistica
-
-Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in Microsoft teams devono avere una cassetta postale di Exchange Online (basata su cloud) per un amministratore per cercare le conversazioni di chat. Questo perché le conversazioni che fanno parte dell'elenco chat sono archiviate nelle cassette postali basate su cloud dei partecipanti alla chat. Se un partecipante alla chat non ha una cassetta postale di Exchange Online, l'amministratore non potrà cercare o inserire un blocco nelle conversazioni di chat. Ad esempio, in una distribuzione ibrida di Exchange gli utenti con cassette postali locali potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco chat in Microsoft teams. Tuttavia, in questo caso, il contenuto di queste conversazioni non è ricercabile e non può essere messo in attesa perché gli utenti non hanno cassette postali basate su cloud. Per altre informazioni, vedere [interazione tra Exchange e Microsoft teams](exchange-teams-interact.md).
-
-La funzione chat di Microsoft teams funziona su un backend di Microsoft Exchange, quindi puoi applicare i limiti della messaggistica di Exchange alla funzione chat in Microsoft teams. Se gli utenti desiderano inviare un messaggio di posta elettronica a un canale in teams, usano l'indirizzo di posta elettronica del canale. Una volta che un messaggio di posta elettronica fa parte di un canale, chiunque può rispondere per avviare una conversazione. Ecco alcuni dei limiti applicabili per l'invio di messaggi di posta elettronica a un canale. 
-
-|Funzionalità  | Limite massimo  |
-|---------|---------|
-|Numero di persone in una chat privata  | 100    |
-|Dimensione messaggio&dagger;  |25 KB   |
-|Numero di file allegati&Dagger;  |10     |
-|Numero di immagini in linea&Dagger; |50   |
-
-&dagger;Se il messaggio supera questo limite, viene generato un messaggio di anteprima e viene chiesto all'utente di visualizzare/scaricare il indirizzo di posta elettronica originale dal collegamento fornito.
-
-&Dagger;Se il numero di allegati o immagini supera questo limite, il messaggio non verrà elaborato e un NDR verrà rinviato al mittente per segnalare l'errore.
-
-> [!NOTE]
-> Le dimensioni dei messaggi, i file allegati e i limiti delle immagini in linea sono gli stessi per tutte le licenze di Office 365.
-
-Per altre informazioni, vedere [limiti di Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx).
 
 ## <a name="contacts"></a>Contatti
 

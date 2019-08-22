@@ -6,7 +6,7 @@ ms.reviewer: Travis-Snoozy
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
-ms.prod: skype-for-business-itpro
+ms.service: msteams
 localization_priority: Normal
 ms.collection:
 - Strat_SB_Admin
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: dae1bfb6-7262-4030-bf53-dc3b3fe971ea
 description: Questo articolo descrive come configurare la console Microsoft teams Rooms e le sue periferiche.
-ms.openlocfilehash: 1bb1e45eca95628222b799d94c953bb49da1ea17
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 820921cdcf35f4c4072dae3b2029527b98454dc5
+ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243477"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493055"
 ---
 # <a name="configure-a-microsoft-teams-rooms-console"></a>Configurare una console Microsoft teams rooms
 
@@ -91,7 +91,10 @@ Al termine, rimuovere il disco USB dal computer e procedere con [l'installazione
 8. Il sistema si arresta dopo il completamento dell'installazione.
     
 Dopo che il sistema è stato arrestato, è sicuro rimuovere il disco di configurazione USB. A questo punto, è possibile posizionare il dispositivo di destinazione nel Dock (se si usa un prodotto basato su Dock), allegare le periferiche necessarie per la sala riunioni e connettersi alla rete. Fare riferimento alle istruzioni del produttore.
-  
+
+> [!NOTE]
+> Gli aggiornamenti software per le sale di Microsoft teams vengono scaricati automaticamente da Microsoft Store for business. Vedere [prerequisiti per Microsoft Store per le aziende e l'istruzione](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) per verificare che la console della sala sia in grado di accedere allo Store e all'aggiornamento automatico.  
+
 ### <a name="selecting-a-language"></a>Selezione di una lingua 
 
 Nell'aggiornamento di Creator è necessario usare lo script ApplyCurrentRegionAndLanguage. ps1 in scenari in cui la selezione della lingua implicita non offre all'utente la lingua effettiva dell'applicazione desiderata (ad esempio, vogliono che l'app console venga aggiornata in francese, ma è in arrivo in inglese).

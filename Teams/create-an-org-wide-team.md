@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 881996d5f8acbc7458a775e02adfad9b38a231a9
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 901f0dd116bf152433d226e0c131f795675784cc
+ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36241236"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493113"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -40,11 +40,12 @@ Questi tipi di account non verranno aggiunti al team a livello di organizzazione
 - Account di sala o attrezzature
 - Account supportato da una cassetta postale condivisa
 
-Man mano che la directory dell'organizzazione viene aggiornata per includere nuovi utenti attivi o se gli utenti non lavorano più presso la società e la licenza per i team è disabilitata, le modifiche vengono sincronizzate automaticamente e gli utenti vengono aggiunti o rimossi dal team. I membri del team non possono uscire da un team a livello di organizzazione. In qualità di proprietario del team, è possibile aggiungere o rimuovere manualmente gli utenti, se necessario.
+Dato che la directory dell'organizzazione viene aggiornata per includere nuovi utenti attivi o se gli utenti non lavorano più presso la società e il loro account è disabilitato, le modifiche vengono sincronizzate automaticamente e gli utenti vengono aggiunti o rimossi dal team. I membri del team non possono uscire da un team a livello di organizzazione. In qualità di proprietario del team, è possibile aggiungere o rimuovere manualmente gli utenti, se necessario.
 
 > [!NOTE]
-> - Se non si vede l'opzione a **livello** di organizzazione quando si crea un team e si è un amministratore globale, è possibile che la funzionalità sia ancora in corso o che l'azienda abbia più del limite di dimensione corrente dei membri di 5.000. Stiamo cercando di aumentare questo limite in futuro.
+> - Se non si vede l'opzione a **livello** di organizzazione quando si crea un team e si è un amministratore globale, è possibile che la caratteristica venga ancora distribuita, che sia stato raggiunto il limite di cinque team a livello di organigramma oppure che la società possa avere più del limite di dimensione corrente dei membri di 5.000. Stiamo cercando di aumentare questo limite in futuro.
 > - Le camere che non fanno parte di un elenco di chat room, attrezzature e risorse potrebbero essere aggiunte o sincronizzate con il team a livello di organizzazione. I proprietari del team possono facilmente rimuovere questi account dal team.
+> - Tutte le azioni del sistema per aggiungere o rimuovere membri vengono pubblicate nel canale generale. Il canale verrà contrassegnato anche come avente una nuova attività nel client teams.
 
 ## <a name="best-practices"></a>Procedure consigliate
 
@@ -68,7 +69,7 @@ Valuta la possibilità di configurare la moderazione dei canali e dare funzional
 
 ### <a name="remove-accounts-that-might-not-belong"></a>Rimuovere gli account che potrebbero non appartenere
 
-Anche se i membri non possono uscire da un team a livello di organizzazione, come proprietario del team, puoi gestire il roster del team rimuovendo gli account che non appartengono. Assicurarsi di usare teams per rimuovere utenti dal team dell'organizzazione. Se si usa un altro metodo per rimuovere un utente, ad esempio l'interfaccia di amministrazione di Microsoft 365 o da un gruppo in Outlook, l'utente potrebbe essere aggiunto al team dell'organizzazione.
+Anche se i membri non possono uscire da un team a livello di organizzazione, come proprietario del team, puoi gestire il roster del team rimuovendo gli account che non appartengono. Assicurarsi **di usare teams per rimuovere utenti dal team dell'organizzazione**. Se si usa un altro metodo per rimuovere un utente, ad esempio l'interfaccia di amministrazione di Microsoft 365 o da un gruppo in Outlook, l'utente potrebbe essere aggiunto al team dell'organizzazione.
 
 ## <a name="faq"></a>Domande frequenti
 
