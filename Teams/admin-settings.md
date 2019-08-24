@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e01f4efd8ab9fa532e1a8a6c0c0c158c9fe44fb0
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: efeb467c5cf3cad5e427a26b01f972d40922db21
+ms.sourcegitcommit: 16345e8a19dba6fd1b39f876755088f9d8368f13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483451"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "36620453"
 ---
 <a name="admin-settings-for-apps-in-microsoft-teams"></a>Impostazioni di amministrazione per le app in Microsoft Teams
 ==========================================
@@ -62,8 +62,6 @@ Ecco alcuni esempi di come usare i criteri di configurazione delle app:
 Per altre informazioni, vedere [gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
 ## <a name="custom-app-policies-and-settings"></a>Criteri e impostazioni delle app personalizzate
-
->[!INCLUDE [new-feature-coming-soon-section](includes/new-feature-coming-soon-section.md)]
 
 Teams consente agli sviluppatori dell'organizzazione di creare, testare e distribuire app personalizzate ad altri utenti. Le app personalizzate possono essere aggiunte ai team caricando un pacchetto dell'app in un file con estensione zip direttamente in un team o nel contesto personale. Puoi usare i criteri di configurazione delle app per controllare chi nell'organizzazione può caricare app personalizzate. Puoi anche impostare le impostazioni a livello di organizzazione per controllare se gli utenti possono interagire con specifiche app personalizzate.
 
