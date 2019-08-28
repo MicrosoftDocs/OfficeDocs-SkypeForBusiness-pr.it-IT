@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare il sistema telefonico (cloud PBX) per l'organizzazione. "
-ms.openlocfilehash: 73cae7507a7c9d4dc86ea24de51790d13a32cf27
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: e7d833e6170a442f9e97ff867e979bfd52700969
+ms.sourcegitcommit: 26b3d786da07fde20878b0f4a1656070fe01d918
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "36184918"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36645301"
 ---
 # <a name="setting-up-phone-system-in-your-organization"></a>Configurazione di Sistema telefonico nella tua organizzazione
 
@@ -235,8 +235,7 @@ Once you have your service numbers from **Step 4 above**, you need to assign the
 
 - Per i servizi di audioconferenza, è possibile assegnare un numero dedicato a un Bridge di conferenza accedendo all'interfaccia di amministrazione di **Microsoft 365** > **** > per i servizi di**audioconferenza** di**Skype for business** > e facendo clic sul pulsante Bridge di conferenza o vedere [cambiare il numero verde o il numero verde nel Bridge di audioconferenza](change-the-phone-numbers-on-your-audio-conferencing-bridge.md).
 
-- Per gli operatori automatici, è possibile assegnare un numero dedicato a un operatore automatico accedendo a **Microsoft 365** > **** > interfaccia di amministrazione dell'interfaccia di amministrazione di**Skype for business** > per gli operatori automatici di**routing** > delle chiamate** **e fai clic sull'operatore automatico. Nella pagina **Generale**, il numero di servizio già impostato viene indicato nel menù a tendina**numero di telefono**. Per informazioni dettagliate, vedere [configurare un operatore automatico cloud](/SkypeForBusiness/what-is-phone-system-in-office-365/set-up-a-phone-system-auto-attendant).
-
+- Per gli operatori automatici, è possibile assegnare un numero dedicato a un operatore automatico accedendo a **Microsoft 365** > **** > interfaccia di amministrazione dell'interfaccia di amministrazione di**Skype for business** > per gli operatori automatici di**routing** > delle chiamate** **e fai clic sull'operatore automatico. Nella pagina **generale** il numero di servizio già disponibile sarà elencato nell'elenco a discesa **numero di telefono** . Per informazioni dettagliate, vedere [configurare un operatore automatico cloud](https://docs.microsoft.com/microsoftteams/create-a-phone-system-auto-attendant).
 - Per le code di chiamata, è possibile assegnare un numero dedicato a una**** > coda di chiamata accedendo alle**Code** delle chiamate di**routing** > delle chiamate di**Skype for business** > per **Microsoft 365** > e fare clic su nella coda di chiamata. Nella pagina **Generale**, il numero di servizio già impostato viene indicato nel menù a tendina**numero di telefono**. Per informazioni dettagliate, vedere [creare una coda di chiamata cloud](https://docs.microsoft.com/microsoftteams/create-a-phone-system-call-queue).
 
 **Per informazioni dettagliate su come ottenere nuovi numeri di servizio oppure su come trasferire numeri di servizio esistenti, vedere [Ottenere numeri di telefono di servizio](/microsoftteams/getting-service-phone-numbers).**

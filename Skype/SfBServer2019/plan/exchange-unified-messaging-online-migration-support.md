@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Microsoft sta ritirando il servizio Exchange Unified Messaging online (ExchUMO) entro il 2020 febbraio. In questo articolo vengono riepilogate le informazioni che i clienti interessati dovrebbero conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: b9353546012a0cf16f154d330f27f36fd360b5ee
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 0472d142cc9d6b535b950e86e41753c82992bee5
+ms.sourcegitcommit: 26b3d786da07fde20878b0f4a1656070fe01d918
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243895"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36645249"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata di Exchange Online
 
@@ -23,8 +23,7 @@ In riferimento all' [annuncio](https://blogs.technet.microsoft.com/exchange/2019
  
 ExchUMO è distribuito dai clienti per la segreteria telefonica, l'operatore automatico, la coda delle chiamate e i servizi di integrazione fax. Microsoft prevede di aiutare i clienti a eseguire la migrazione a servizi di sistema telefonico che supportano già migliaia di clienti in Skype for business online e Microsoft teams. 
 
-La segreteria telefonica è principalmente una migrazione basata su Microsoft; il coinvolgimento degli amministratori e gli investimenti saranno necessari per un sottoinsieme di clienti. Gli operatori automatici e le code di chiamata hanno una migrazione guidata dall'amministratore; gli amministratori devono ricreare gli alberi di operatore automatico di ExchUMO esistenti nel servizio operatore automatico del sistema telefonico. I clienti che usano le caratteristiche di ExchUMO con un PBX di terze parti non verranno migrati in servizi cloud di sistema telefonico, perché questi servizi non supportano sistemi PBX di terze parti. Un piano di pensionamento per il supporto di terze parti è stato annunciato lo scorso anno in [questo Blog](https://blogs.technet.microsoft.com/exchange/2017/07/18/discontinuation-of-support-for-session-border-controllers-in-exchange-online-unified-messaging
-)e i clienti in questo modello di distribuzione possono eseguire la migrazione degli utenti a una delle piattaforme/servizi Microsoft Unified Communications o acquisire un messaggio vocale o un auto di terze parti soluzione Attendant per questi utenti. L'integrazione fax non è supportata nel sistema telefonico; i clienti dovranno eseguire la migrazione a una soluzione di terze parti. 
+La segreteria telefonica è principalmente una migrazione basata su Microsoft; il coinvolgimento degli amministratori e/o gli investimenti potrebbero essere necessari per un sottoinsieme di clienti. Operatore automatico è una migrazione guidata dall'amministratore; dovrai ricreare gli alberi di operatore automatico di ExchUMO esistenti nel servizio cloud di operatore automatico cloud. I clienti che usano qualsiasi funzionalità di ExchUMO con un PBX di terze parti non verranno migrati in servizi cloud Skype perché non supportano sistemi PBX di terze parti. In [questo Blog](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853)è stato annunciato un piano pensionistico per il supporto di terze parti e i clienti in questo modello di distribuzione possono eseguire la migrazione degli utenti a una delle piattaforme/servizi Microsoft Unified Communications o acquisire un messaggio vocale di terze parti e/o auto soluzione Attendant per questi utenti. L'integrazione fax non è supportata nei servizi basati sul cloud. i clienti dovranno eseguire la migrazione a una soluzione di terze parti.
 
 ### <a name="who-is-affected"></a>Chi è interessato?
 

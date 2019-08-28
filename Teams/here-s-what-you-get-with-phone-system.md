@@ -22,12 +22,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare un sistema telefonico (cloud PBX) per l'azienda. "
-ms.openlocfilehash: 956834a7dbfee58601cb62848a12fad6a05abdd7
-ms.sourcegitcommit: 9053c0d5ddb6be3ce3da85dffcde3f45dbc0ab7c
+ms.openlocfilehash: 0046a008579c6c741d99825e6b79387a73eec55b
+ms.sourcegitcommit: 26b3d786da07fde20878b0f4a1656070fe01d918
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407981"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36645260"
 ---
 # <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa offre il Sistema telefonico in Office 365
 
@@ -51,7 +51,7 @@ Usando il sistema telefonico, gli utenti di Skype for business otterranno le car
 |[Trovare una conversazione precedente-Lync](https://support.office.com/article/d1d54123-0301-482e-b047-c82e9e2724a3) <br/> |Tenere traccia di tutte le conversazioni in un'unica posizione, indipendentemente dal fatto che si tratti di conversazioni istantanee, telefonate o riunioni improvvisate e programmate. Le conversazioni vengono registrate nella cronologia chiamate.  <br/> |
 |Chiamata in attesa/recupero  <br/> | Usare quando si verificano più chiamate contemporaneamente. Quando si risponde alla successiva chiamata in ingresso o si effettua una chiamata in uscita, la chiamata corrente si blocca automaticamente. <br/> |
 |[Trasferire una chiamata Skype for business](https://support.office.com/article/f9f312a3-ccc9-4215-86e8-8928b2df1f97) <br/> |Trasferisce le chiamate a un'altra persona. In alternativa, se è necessario uscire dall'ufficio ma si vuole continuare la conversazione, è possibile trasferire le chiamate dal PC o dal telefono IP al cellulare o al tablet.  <br/> |
-|ID chiamante  <br/> |Le chiamate dall'interno della società visualizzano un ID chiamante dettagliato che estrae le informazioni dalla directory aziendale, mostrando un'immagine e un titolo di lavoro invece di un solo numero di telefono.  <br/> |
+|ID chiamante  <br/> |Le chiamate dall'interno della società visualizzano un ID chiamante dettagliato che estrae le informazioni dalla directory aziendale, mostrando un'immagine e un titolo di lavoro invece di un solo numero di telefono. Per le chiamate da numeri di telefono esterni, viene visualizzato l'ID chiamante fornito dal provider di servizi telefonici.   <br/> |
 |[Creare una coda di chiamata cloud](/skypeforbusiness/what-is-phone-system-in-office-365/create-a-phone-system-call-queue) <br/> |Le code delle chiamate Cloud includono i messaggi di saluto usati quando qualcuno chiama un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano sono ascolto della musica in attesa.  <br/> |
 |[Spiegami quando cambia lo stato di un utente](https://support.office.com/article/042a13d8-c815-4101-8b41-1e141b6bf6e9) <br/> | Questa funzionalità consente di contrassegnare le persone che attualmente non sono disponibili e di ricevere una notifica quando la loro presenza cambia e si è pronti a ricevere chiamate telefoniche. <br/> |
 |Client per PC, Mac e dispositivi mobili  <br/> | In questo modo puoi chiamare le caratteristiche dei dispositivi, da tablet e telefoni cellulari a PC e telefoni IP desktop. <br/> |

@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come assegnare un ID conferenza a un utente in Microsoft teams e quali sono i parametri dell'ID conferenza. "
-ms.openlocfilehash: a41935e324a7ed167efc905bbe274f6ef7c85de5
-ms.sourcegitcommit: 30995da65ff6a9b33534c3818833cf0ae1952ab9
+ms.openlocfilehash: 8c4832050626dadd1bec068be262281d1303ef46
+ms.sourcegitcommit: 26b3d786da07fde20878b0f4a1656070fe01d918
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "36183451"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36645282"
 ---
 # <a name="view-and-reset-a-conference-id-assigned-to-a-user-in-microsoft-teams"></a>Visualizzare e reimpostare un ID conferenza assegnato a un utente in Microsoft Teams
 
@@ -84,9 +84,7 @@ Per altre informazioni, vedere la pagina di [riferimento di PowerShell per Micro
   
     
 - L'ID conferenza deve soddisfare la lunghezza in cifre impostata sul ponte per audioconferenze. Non è possibile utilizzare caratteri speciali o alfabetici negli ID conferenza; possono essere utilizzati solo i numeri.
-    
-- L'ID conferenza per tutti gli utenti di audioconferenze sarà di 7 cifre per impostazione predefinita e il numero di cifre non può essere modificato.
-    
+   
     
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 

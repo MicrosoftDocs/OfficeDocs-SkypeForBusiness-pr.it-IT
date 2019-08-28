@@ -15,12 +15,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant.
-ms.openlocfilehash: a8ee395a0b588af976151923992efbb32971b43c
-ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
+ms.openlocfilehash: d331fa51b8065ba7d1d39c7583beebbc093ddcce
+ms.sourcegitcommit: 26b3d786da07fde20878b0f4a1656070fe01d918
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493127"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36645312"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un controller di bordo della sessione per più tenant
 
@@ -84,7 +84,8 @@ Il diagramma seguente riepiloga i requisiti per il dominio di base, i sottodomin
 
 ![Diagramma che mostra i requisiti per i domini e l'intestazione del contatto](media/direct-routing-1-sbc-requirements.png)
 
-Il SBC richiede un certificato per l'autenticazione delle connessioni. Per lo scenario di hosting SBC, il gestore deve richiedere un certificato con San * \*. base_domain (ad esempio, \*Customers.adatum.biz)*. Questo certificato può essere usato per autenticare le connessioni a più tenant serviti da un singolo SBC.
+Il SBC richiede un certificato per l'autenticazione delle connessioni. Per lo scenario di hosting SBC, il gestore deve richiedere un certificato con San * \*. base_domain (ad esempio, \*. Customers.adatum.biz)*. Questo certificato può essere usato per autenticare le connessioni a più tenant serviti da un singolo SBC.
+
 
 La tabella seguente è un esempio di una configurazione.
 
@@ -98,6 +99,9 @@ La tabella seguente è un esempio di una configurazione.
 ||         |         |         |         |         |
 
 Per configurare la base e i sottodomini, seguire i passaggi descritti di seguito. Nell'esempio verrà configurato un nome di dominio di base (customers.adatum.biz) e un sottodominio per un cliente (sbc1.customers.adatum.biz nel tenant della Woodgrove Bank).
+
+> [!NOTE]
+> Usare sbcX.customers.adatum.biz per abilitare la voce nel tenant del gestore.
 
 ## <a name="register-a-base-domain-name-in-the-carrier-tenant"></a>Registrare un nome di dominio di base nel tenant del vettore
 
