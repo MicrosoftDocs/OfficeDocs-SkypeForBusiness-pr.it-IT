@@ -15,18 +15,16 @@ ms.collection:
 description: Informazioni su come usare il report utilizzo eventi di teams Live nell'interfaccia di amministrazione di Microsoft teams per ottenere una panoramica delle attività dei teams Live Events nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f4eacd7df49de824ac6c0a98b7b923331fdee61f
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 416c8ee1a5dd2ef2294fc125926e1a83822170b2
+ms.sourcegitcommit: a5cde2df1aceed9d919ef53281dd0d75f1f5e183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239807"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667063"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Report sull'utilizzo degli eventi di Microsoft teams Live
 
 Il report utilizzo eventi di teams Live nell'interfaccia di amministrazione di Microsoft teams Mostra la panoramica delle attività per gli eventi dinamici nell'organizzazione. È possibile visualizzare le informazioni sull'utilizzo, inclusi lo stato dell'evento, l'ora di inizio, le visualizzazioni e il tipo di produzione per ogni evento. Puoi ottenere informazioni sulle tendenze di utilizzo e vedere chi nell'organizzazione pianifica, presenta e produce eventi dinamici. 
-
-Screenshot ![del report sull'utilizzo dell'evento teams Live nell'] interfaccia di amministrazione di Microsoft Teams Screenshot (../media/teams-live-event-usage-report.png "del report utilizzo teams nell'interfaccia di amministrazione")
 
 ## <a name="view-the-report"></a>Visualizzare il report
 
@@ -35,9 +33,9 @@ Screenshot ![del report sull'utilizzo dell'evento teams Live nell'] interfaccia 
 3. Opzionale In **Organizer**puoi scegliere di visualizzare solo gli eventi dinamici organizzati da un utente specifico.
 4. Fare clic su **Esegui report**.  
 
-## <a name="interpret-the-report"></a>Interpretare il report
+    Screenshot ![del report sull'utilizzo dell'evento teams Live nell'interfaccia di amministrazione di teams con callout] Screenshot (../media/teams-live-event-usage-report-with-callouts.png "del report sull'utilizzo dell'evento teams Live nell'interfaccia di amministrazione di teams con callout")
 
-Screenshot ![del report sull'utilizzo dell'evento teams Live nell'] interfaccia di amministrazione di Microsoft Teams Screenshot (../media/teams-live-event-usage-report-with-callouts.png "del report sull'utilizzo di teams Live Events nell'interfaccia di amministrazione con callout numerati")
+## <a name="interpret-the-report"></a>Interpretare il report
 
 |Callout |Descrizione  |
 |--------|-------------|
@@ -56,5 +54,6 @@ La pagina Dettagli evento dinamico offre un riepilogo dei dettagli di un evento 
 Se l'organizzazione è abilitata per [hive](https://www.hivestreaming.com/partners/integration-partners/microsoft/) ECDN o [Kollective](https://kollective.com) eCDN, è possibile ottenere ulteriori analisi dei partecipanti facendo clic sul collegamento rapporto partner.
 
 ## <a name="related-topics"></a>Argomenti correlati
+
 - [Analisi e creazione di report in teams](teams-reporting-reference.md)
 - [Cosa sono gli eventi teams Live?](../teams-live-events/what-are-teams-live-events.md)

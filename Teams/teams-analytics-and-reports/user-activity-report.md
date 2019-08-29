@@ -15,27 +15,25 @@ ms.collection:
 description: Informazioni su come usare il report attività utente teams nell'interfaccia di amministrazione di Microsoft teams per scoprire in che modo gli utenti dell'organizzazione usano team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 652df680f4394f8ad135278fc2f4ac68670d7f62
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: d64937d76ad2b634509972f203992b50eb64ccff
+ms.sourcegitcommit: a5cde2df1aceed9d919ef53281dd0d75f1f5e183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234782"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667097"
 ---
 # <a name="microsoft-teams-user-activity-report"></a>Report attività utente di Microsoft Teams
 
 Il report attività utente teams offre informazioni sui tipi di attività che gli utenti dell'organizzazione eseguono in teams. Ad esempio, puoi vedere il numero di utenti che comunicano tramite le chiamate di 1:1, il numero di utenti che comunicano tramite messaggi di canale e il numero di utenti che partecipano a messaggi di chat privati.
 
-Screenshot ![del report attività utente teams] Screenshot (../media/teams-reports-user-activity.png "del report attività utente teams nell'interfaccia di amministrazione di Microsoft teams")
-
 ## <a name="view-the-report"></a>Visualizzare il report
 
-1. Accedere all'interfaccia di amministrazione di Microsoft teams, nella barra di spostamento sinistra, fare clic su **analisi & report**e quindi in **report**selezionare **attività utente teams**. 
-2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**. 
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, fare clic su **analisi & report**e quindi in **report**selezionare **attività utente teams**.
+2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.
+
+    Screenshot ![del report attività utente teams nell'interfaccia di amministrazione di teams con callout] Screenshot (../media/teams-reports-user-activity-with-callouts.png "del report attività utente teams nell'interfaccia di amministrazione di teams con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
-
-![Screenshot del report attività utente teams con callout numerati] (../media/teams-reports-user-activity-with-callouts.png "Screenshot del report attività utente teams nell'interfaccia di amministrazione di Microsoft teams con callout numerati")
 
 |Callout |Descrizione  |
 |--------|-------------|
@@ -45,7 +43,8 @@ Screenshot ![del report attività utente teams] Screenshot (../media/teams-repor
 |**4**   |È possibile filtrare gli elementi visualizzati nel grafico facendo clic su un elemento nella legenda. Ad esempio, fare clic su **1:1 chiamate**, **canali**o **messaggi di chat** per visualizzare solo le informazioni relative a ognuna di esse. La modifica della selezione non modifica le informazioni nella tabella. |
 |**5**   |La tabella offre una ripartizione dell'utilizzo da parte dell'utente.   <ul><li>**Nome visualizzato** è il nome visualizzato dell'utente. È possibile fare clic sul nome visualizzato per accedere alla pagina di impostazione dell'utente nell'interfaccia di amministrazione di Microsoft teams.</li><li>**1:1 chiamate** è il numero di chiamate 1:1 a cui l'utente ha partecipato durante il periodo di tempo specificato.</li><li>**Messaggi di canale** è il numero di messaggi univoci che l'utente ha postato in una chat del team durante il periodo di tempo specificato.</li> <li>**Messaggi di chat** è il numero di messaggi univoci che l'utente ha postato in una chat privata durante il periodo di tempo specificato.</li>  <li>**Ultima attività** è l'ultima data (UTC) in cui l'utente ha partecipato a un'attività di teams.</li> </ul>Tieni presente che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella.
 |**6**   |Selezionare **modifica colonne** per aggiungere o rimuovere colonne nella tabella. |
-|**7**   |È possibile esportare il report in un file CSV per l'analisi offline. Fare clic su **Esporta in Excel**, quindi nella scheda **download** fare clic su **Scarica** per scaricare il report quando è pronto.<br>![Screenshot della scheda download che mostra i report esportati da scaricare](../media/teams-reports-export-to-csv.png) <br>Quando si Visualizza il report in Excel, viene visualizzata anche una colonna **ID** , che rappresenta l'ID del team. Un ID team è in genere una stringa alfanumerica. Se la colonna **ID** viene visualizzata come **\n**, significa che un utente ha richiesto le informazioni da eliminare. ||
+|**7**   |È possibile esportare il report in un file CSV per l'analisi offline. Fare clic su **Esporta in Excel**, quindi nella scheda **download** fare clic su **Scarica** per scaricare il report quando è pronto.<br><br>![Screenshot della scheda download che mostra i report esportati da scaricare](../media/teams-reports-export-to-csv.png) <br>Quando si Visualizza il report in Excel, viene visualizzata anche una colonna **ID** , che rappresenta l'ID del team. Un ID team è in genere una stringa alfanumerica. Se la colonna **ID** viene visualizzata come **\n**, significa che un utente ha richiesto le informazioni da eliminare. ||
 
 ## <a name="related-topics"></a>Argomenti correlati
+
 - [Analisi e creazione di report in teams](teams-reporting-reference.md)
