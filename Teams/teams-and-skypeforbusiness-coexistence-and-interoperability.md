@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d89eec1f643204750fb1c35845382639a7e04eb7
-ms.sourcegitcommit: ab259764dc50bdd52efed3abb1d065ee19486946
+ms.openlocfilehash: 53ab6c700f1a14700acbcdf1fdfeceb81b7bcbce
+ms.sourcegitcommit: bb8577aca8c7e0673b37634a24bf793c86c0537b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393471"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675355"
 ---
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di definizione del progetto] (media/upgrade-banner-project-definition.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di definizione del progetto")
 
@@ -43,7 +43,7 @@ Se l'organizzazione usa Skype for business oggi e si inizia a usare teams insiem
 
 ## <a name="coexistence-of-teams-and-skype-for-business"></a>Coesistenza di teams e Skype for business
 
-Oltre alle funzionalità di collaborazione, teams offre funzionalità di chat, chiamate e riunioni. A seconda di come si sceglie di distribuire Team, queste funzionalità potrebbero sovrapporsi alle funzionalità fornite da Skype for business per un utente specifico. La modalità predefinita consiste nell'eseguire teams insieme a Skype for business con le funzionalità sovrapposte; a un utente può tuttavia essere assegnata una delle diverse modalità di coesistenza (note anche come modalità di aggiornamento) progettate per garantire che queste funzionalità non si sovrappongano per tale utente (in questo caso è disponibile l'interoperabilità tra team e Skype for business). Ad esempio, se si hanno asset aziendali locali Skype for business significativi con una distribuzione VoIP aziendale complessa, ma si vuole che gli utenti possano godere di riunioni moderne il più rapidamente possibile, è consigliabile valutare prima le riunioni (come descritto di seguito) come percorso alternativo.
+Oltre alle funzionalità di collaborazione, teams offre funzionalità di chat, chiamate e riunioni. A seconda di come si sceglie di distribuire Team, queste funzionalità potrebbero sovrapporsi alle funzionalità fornite da Skype for business per un utente specifico. La modalità predefinita consiste nell'eseguire teams insieme a Skype for business con le funzionalità sovrapposte; a un utente può tuttavia essere assegnata una delle diverse modalità di coesistenza (note anche come modalità di aggiornamento) progettate per garantire che queste funzionalità non si sovrappongano per tale utente (in questo caso è disponibile l'interoperabilità tra team e Skype for business). Ad esempio, se si hanno asset aziendali locali Skype for business significativi con una distribuzione di VoIP aziendale complessa, ma si vuole che gli utenti possano godere di riunioni moderne il più rapidamente possibile, è consigliabile valutare [prima le riunioni](meetings-first.md) in alternativa percorso.
 
 Ti consigliamo di esaminare le seguenti modalità di coesistenza per determinare il percorso appropriato per l'organizzazione.
 

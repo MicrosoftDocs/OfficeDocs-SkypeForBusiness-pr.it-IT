@@ -18,12 +18,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle licenze gratuite degli utenti virtuali.
-ms.openlocfilehash: c8d196d876ed8df32f28aabf96a5817be0195145
-ms.sourcegitcommit: a0df7479662b3bea488c19722ad588981f58a5e4
+ms.openlocfilehash: cf51e927a05472b314e5fa193caa8d49f513c0cf
+ms.sourcegitcommit: bb8577aca8c7e0673b37634a24bf793c86c0537b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36447912"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675344"
 ---
 # <a name="phone-systemvirtual-user-license"></a>Sistema telefonico-licenza utente virtuale 
 
@@ -50,6 +50,9 @@ Contoso, Inc. ha acquistato le licenze 600 che includevano il sistema telefonico
 Contoso dovrebbe valutare la possibilità di riprogettare l'operatore automatico e il sistema delle code di chiamata. Se usano meno numeri di telefono e altri nodi annidati che non hanno bisogno di un numero di telefono, semplificano l'implementazione e riducono i costi. 
 
 ## <a name="how-to-acquire-phone-systemvirtual-user-licenses"></a>Come acquistare il sistema telefonico-licenze utente virtuali 
+
+> [!NOTE] 
+> Quando segui queste istruzioni, usa la modalità anteprima per acquistare un sistema telefonico-licenza per gli utenti virtuali.
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
 2. Accedere agli abbonamenti al**componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto

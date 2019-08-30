@@ -22,12 +22,12 @@ f1keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare il sistema telefonico per le code delle chiamate cloud con Microsoft teams.
-ms.openlocfilehash: 8ae41603e3899c379fa09b2b08dd5e111b8405da
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: 9ce7028c5ff56e24cda84536126cba271ee3e2b1
+ms.sourcegitcommit: bb8577aca8c7e0673b37634a24bf793c86c0537b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483316"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675407"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
 
@@ -173,7 +173,11 @@ Il **Saluto** è opzionale. Questo è il messaggio di saluto che viene riprodott
 - Gruppo di sicurezza
 - Elenco di distribuzione
 
-Gli agenti di chiamata **** selezionati devono essere utenti online con licenza di **sistema telefonico** e VoIP aziendale abilitato **o** con un piano per le chiamate.
+Gli agenti di chiamata selezionati devono essere uno dei seguenti: 
+
+- Utenti online con licenza di sistema telefonico e VoIP aziendale abilitato 
+- Utenti online con un piano per le chiamate
+- Utenti del server Skype for Businesss locale
 
   > [!NOTE]
   > Questo vale anche se vuoi reindirizzare le chiamate agli utenti dell'organizzazione online. Questi utenti devono avere una licenza per il **sistema telefonico** e VoIP aziendale abilitato **o** avere un piano di chiamata. Per altre informazioni, vedere [assegnare licenze Skype for business](/Skype/SfbOnline/skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md), [assegnare licenze Microsoft teams](https://docs.microsoft.com/microsoftteams/assign-teams-licenses)o [quale piano per le chiamate è giusto per l'utente?](https://docs.microsoft.com/microsoftteams/calling-plan-landing-page)

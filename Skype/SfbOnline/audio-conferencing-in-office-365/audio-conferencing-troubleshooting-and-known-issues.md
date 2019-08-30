@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Ottenere un elenco di problemi noti quando si usa Microsoft come provider di conferenze telefoniche con accesso esterno, stato e alcune soluzioni alternative. '
-ms.openlocfilehash: 9b70cfcdeeb80be43cd0ecc99ca7eced71bb9319
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: bfb76c23d3b1235bf67435e0af09ddef2a8852f3
+ms.sourcegitcommit: bb8577aca8c7e0673b37634a24bf793c86c0537b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34289584"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675238"
 ---
 # <a name="audio-conferencing-troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti relativi ai servizi di audioconferenza
 
@@ -43,6 +43,7 @@ Per il momento, usa questo nome come riferimento per la risoluzione dei problemi
 |Se, durante il provisioning iniziale, a un utente viene assegnata una licenza E5, è possibile che l'e-mail di benvenuto ai servizi di audioconferenza non sia stata recapitata in caso di mancata attivazione della cassetta postale.  <br/> |In tale evenienza è possibile inviare nuovamente le informazioni sui servizi di audioconferenza dell'utente utilizzando l'opzione **Servizi di audioconferenza** nell'UNRESOLVED_TOKEN_VAL(Skype for Business admin center) o mediante PowerShell. Vedere [abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di conferenza audio cambiano](enable-or-disable-sending-emails-when-their-settings-change.md).  <br/> **Nota:** Per inviare nuovamente il PIN per l'audioconferenza all'utente, è necessario reimpostare il PIN. L'operazione può essere eseguita tramite l'opzione **Servizi di audioconferenza** nell'UNRESOLVED_TOKEN_VAL(Skype for Business admin center) o tramite PowerShell.          |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
 |La visualizzazione delle chiamate per i servizi di audioconferenza nei rapporti sull'utilizzo può richiedere fino a 24 ore.  <br/> |Nei prossimi aggiornamenti del servizio, ci impegniamo a introdurre miglioramenti in proposito.  <br/> |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
 |Quando un chiamante accede a un bridge di conferenza tramite telefono dopo che la riunione è stata bloccata da un utente Skype for Business, nell'app Skype for Business non è presente alcuna notifica che indica che l'utente è in sala di attesa.  <br/> |Si tratta di un'impostazione inerente alla progettazione; tuttavia, alla luce dei feedback raccolti, abbiamo deciso di introdurre un supporto per questa funzionalità nei prossimi aggiornamenti del servizio.  <br/> |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
+|Un utente di Skype for Business Server (on-Prem) assegnato alla licenza di audioconferenza prima del 1 ° marzo 2019 potrebbe non vedere la chiamata nelle coordinate degli inviti alle riunioni.  <br/> |Il provisioning degli utenti di Skype for Business Server per i servizi di audioconferenza per i team non è stato supportato fino a tale data. Ora è supportato ed è prima di tutto un componente delle [riunioni](https://docs.microsoft.com/microsoftteams/meetings-first). L'utente deve avere una licenza di teams.  <br/> |La pipeline di provisioning deve essere riattivata. Rimuovere la licenza per i servizi di audioconferenza dell'utente, attendere un paio di ore e riassegnare la licenza.  <br/> |3/1/2019  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 

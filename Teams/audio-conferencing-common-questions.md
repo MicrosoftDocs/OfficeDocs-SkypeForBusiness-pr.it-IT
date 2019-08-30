@@ -22,12 +22,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Di seguito sono elencate alcune delle principali domande che si ottengono dai clienti che vogliono usare i servizi di audioconferenza.
-ms.openlocfilehash: fe98ac1bab2dfe61f9e511ad9ff14519792bcb36
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 3d35665da6ed32d66a2cfa82353ddcf9f60be063
+ms.sourcegitcommit: bb8577aca8c7e0673b37634a24bf793c86c0537b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36241862"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675333"
 ---
 # <a name="audio-conferencing-common-questions"></a>Domande ricorrenti sulle audioconferenze
 
@@ -95,7 +95,7 @@ Per informazioni sui limiti delle riunioni, vedere [limiti per Skype for busines
   
 ## <a name="can-audio-conferencing-be-used-by-the-users-who-are-part-of-an-on-premises-deployment-of-skype-for-business-server"></a>I servizi di conferenza audio possono essere usati dagli utenti che fanno parte di una distribuzione locale di Skype for Business Server?
 
-Non ci siamo ancora. Tuttavia, puoi continuare a usare i servizi di audioconferenza disponibili in Skype for Business Server insieme a un gateway PSTN per gli utenti locali. 
+Con le [riunioni prima](meetings-first.md), gli utenti di Skype for Business Server possono trarre vantaggio da riunioni di team e servizi di audioconferenza di teams. 
   
 ## <a name="can-a-user-get-a-personal-conference-id"></a>Un utente può ottenere un ID conferenza personale?
 
