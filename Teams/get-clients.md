@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 47341662267a3da0a83174cbccb2b2cd251538b6
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 646305383c8f38671c07f598bc9ff1671890d22f
+ms.sourcegitcommit: 3c40bdd228ef88967cdf689100f2030f6997d9d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36246186"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "36715944"
 ---
 <a name="get-clients-for-microsoft-teams"></a>Ottenere client per Microsoft Teams 
 ===========================
@@ -124,7 +124,7 @@ Le piattaforme mobili supportate per le app per dispositivi mobili Microsoft tea
 > [!NOTE]
 > La versione per dispositivi mobili deve essere disponibile al pubblico in modo che i team funzionino come previsto.
 
-Le app per dispositivi mobili vengono distribuite e aggiornate solo nell'App Store della piattaforma mobile e non sono disponibili per la distribuzione tramite le soluzioni MDM (Mobile Device Management) o Side-Loaded.
+Le app per dispositivi mobili vengono distribuite e aggiornate solo nell'App Store della piattaforma mobile corrispondente. La distribuzione delle app per dispositivi mobili tramite MDM o il caricamento laterale non è supportata da Microsoft. Quando l'app per dispositivi mobili è stata installata in una piattaforma mobile supportata, l'app teams per dispositivi mobili verrà supportata purché la versione sia entro tre mesi dalla data di rilascio corrente.
 
 
 | | | |

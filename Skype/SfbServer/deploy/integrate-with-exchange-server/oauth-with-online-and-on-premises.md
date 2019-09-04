@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ffe4c3ba-7bab-49f1-b229-5142a87f94e6
 description: La configurazione dell'autenticazione OAuth tra Exchange in locale e Skype for business online consente le funzionalità di integrazione di Skype for business e Exchange descritte nel supporto delle funzionalità.
-ms.openlocfilehash: 3c896e8b430276e5bb48bc425425292a382a1021
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: fe6d7bbe1be9418b7e960de02e91cecf1c808d2b
+ms.sourcegitcommit: 3c40bdd228ef88967cdf689100f2030f6997d9d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244220"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "36715808"
 ---
 # <a name="configure-integration-and-oauth-between-skype-for-business-online-and-exchange-server"></a>Configurare l'integrazione e il protocollo OAuth tra Skype for business online ed Exchange Server 
 
@@ -142,7 +142,7 @@ Verificare che la configurazione sia corretta verificando che alcune delle carat
 
 2. Verificare che la cronologia delle conversazioni per i client mobili sia visibile nella cartella Cronologia conversazioni di Outlook.
 
-3. Verificare che i messaggi di chat archiviati vengano depositati nella cassetta postale dell'utente in locale nella cartella Purges con [EWSEditor](https://blogs.msdn.microsoft.com/webdav_101/2018/03/12/where-to-get-ewseditor/).
+3. Verificare che i messaggi di chat archiviati vengano depositati nella cassetta postale dell'utente locale nella cartella Purges con [EWSEditor](https://blogs.msdn.microsoft.com/webdav_101/2018/03/12/where-to-get-ewseditor/).
 
 In alternativa, esamina il traffico. Il traffico in un handshake OAuth è davvero distintivo (e non ha l'aspetto dell'autenticazione di base), in particolare intorno ai regni, dove si inizierà a vedere il traffico dell'emittente che ha un aspetto simile al seguente: 00000004-0000-0FF1-CE00-000000000000 @ (a volte con a/prima @ Sign), nei token che vengono passati. Non verrà visualizzato un nome utente o una password, ovvero il punto di OAuth. Ma vedrai l'emittente "Office", in questo caso "4", Skype for business, e l'ambito dell'abbonamento.
 
