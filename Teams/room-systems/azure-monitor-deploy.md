@@ -6,7 +6,7 @@ ms.reviewer: Turgayo
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
-ms.prod: skype-for-business-itpro
+ms.service: msteams
 localization_priority: Normal
 ms.collection:
 - Strat_SB_Admin
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
 description: Questo articolo illustra come distribuire la gestione dei dispositivi Microsoft teams rooms in modo integrato e completo con Azure monitor.
-ms.openlocfilehash: 1f9a6e6ba4da22d8b14f4b1d545c0a6cfb16e14b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 4be57f97ef3b0813afef2aefd70c551ee50422ee
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243620"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36774685"
 ---
 # <a name="deploy-microsoft-teams-rooms-management-with-azure-monitor"></a>Distribuire Gestione di Microsoft teams Rooms con Azure monitor
 
@@ -34,13 +34,13 @@ Screenshot ![della visualizzazione analisi log di esempio per le sale di Microso
 A livello elevato, è necessario eseguire le attività seguenti:
 
 
-1.  [Convalida configurazione analisi log](azure-monitor-deploy.md#validate_LogAnalytics)
-2.  [Configurare i dispositivi di test per la configurazione di gestione analisi log](azure-monitor-deploy.md#configure_test_devices)
-3.  [Mappare i campi personalizzati](azure-monitor-deploy.md#Custom_fields)
-4.  [Definire le visualizzazioni delle sale di Microsoft teams in analisi log](azure-monitor-deploy.md#Define_Views)
-5.  [Definire gli avvisi](azure-monitor-deploy.md#Alerts)
-6.  [Configurare tutti i dispositivi per il monitoraggio](azure-monitor-deploy.md#configure_all_devices)
-7.  [Configurare altre soluzioni di Azure monitor](azure-monitor-deploy.md#Solutions)
+1. [Convalida configurazione analisi log](azure-monitor-deploy.md#validate_LogAnalytics)
+2. [Configurare i dispositivi di test per la configurazione di gestione analisi log](azure-monitor-deploy.md#configure_test_devices)
+3. [Mappare i campi personalizzati](azure-monitor-deploy.md#Custom_fields)
+4. [Definire le visualizzazioni delle sale di Microsoft teams in analisi log](azure-monitor-deploy.md#Define_Views)
+5. [Definire gli avvisi](azure-monitor-deploy.md#Alerts)
+6. [Configurare tutti i dispositivi per il monitoraggio](azure-monitor-deploy.md#configure_all_devices)
+7. [Configurare altre soluzioni di Azure monitor](azure-monitor-deploy.md#Solutions)
 
 > [!IMPORTANT]
 > Anche se con una configurazione minima, l'analisi dei log di Azure monitor può monitorare un computer che esegue un sistema operativo Windows, ci sono ancora alcune sale di Microsoft teams: passaggi specifici che è necessario eseguire prima di avviare la distribuzione di agenti in tutti i Microsoft Teams Dispositivi rooms.
@@ -256,7 +256,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 3.  Definire le proprietà dell' **intestazione** :<br>
     **Titolo:** Versioni del sistema operativo<br>
     **Sottotitoli:** Dispositivi con versioni specifiche del sistema operativo
-4.  Definire le **** proprietà della ciambella:<br>
+4.  Definire le proprietà della **ciambella** :<br>
     **Query:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize OS_Version = max(SRSOSLongVersion_CF) by Computer | summarize AggregatedValue = count() by OS_Version | sort by OS_Version asc```<br>
     **Testo centrale:** Dispositivi<br>
     **Operazione:** Somma
@@ -280,7 +280,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 3.  Definire le proprietà dell' **intestazione** :<br>
     **Titolo:** Versioni delle applicazioni<br>
     **Sottotitoli:** Dispositivi che gestiscono versioni specifiche delle applicazioni
-4.  Definire le **** proprietà della ciambella:<br>
+4.  Definire le proprietà della **ciambella** :<br>
     **Query:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize App_Version = max(SRSAppVersion_CF) by Computer | summarize AggregatedValue = count() by App_Version | sort by App_Version asc```<br>
     **Testo centrale:** Dispositivi<br>
     **Operazione:** Somma

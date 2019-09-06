@@ -3,7 +3,7 @@ title: Disponibilità in Cina
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
 ms.topic: reference
 ms.assetid: 30fde7fa-fb2b-4e73-8217-bdd41bd38567
 ms.tgt.pltfrm: cloud
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Cina.
-ms.openlocfilehash: 259118889d9d15be3c1974753c250bfe3b40781b
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: 394e07327b04634e9edd67f71c77dcc05ac0c226
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36183172"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775456"
 ---
 # <a name="availability-in-china"></a>Disponibilità in Cina
 
@@ -43,7 +43,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |No  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Pechino</ul> Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | Non geografica. I numeri di telefono non sono associati a una località o a una città specifica. <br/>  Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -69,7 +69,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Pechino  <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
-|Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
+|Sono disponibili numeri verdi gratuiti?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
   

@@ -4,18 +4,18 @@ ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 78a664ba-fefc-4423-ac8f-b58e6fbc2e55
 description: Leggere questo argomento per informazioni su come verificare se si dispone di una licenza per il volume del software Skype for business.
-ms.openlocfilehash: 731eefa49714fdced552c6cbedf4ecc288065d6b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 15f768de96d65cd8584ceb2529b92892a7a94afe
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235031"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775260"
 ---
 # <a name="skype-room-system-skype-for-business-software-license"></a>Skype room System: licenza per il software Skype for business
  

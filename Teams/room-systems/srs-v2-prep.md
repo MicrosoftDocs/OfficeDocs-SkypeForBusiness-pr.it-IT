@@ -2,7 +2,7 @@
 title: Preparare l'ambiente
 ms.author: v-lanac
 author: lanachin
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 manager: serdars
 ms.date: 2/16/2018
 audience: ITPro
@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 ms.collection: M365-voice
 description: Questo articolo illustra i preparativi per l'infrastruttura per la distribuzione delle sale di Microsoft teams.
-ms.openlocfilehash: 5789f8138bf5ab9e12c77a8b2963ff32e7f33586
-ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
+ms.openlocfilehash: 4f5242d2647810616f0ffaabc1cda938e24147da
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493087"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775056"
 ---
 # <a name="prepare-your-environment"></a>Preparare l'ambiente
 
@@ -28,22 +28,17 @@ Questa sezione contiene una panoramica dei passaggi necessari per preparare l'am
 2. Verificare che sia disponibile una connessione Internet o una rete funzionante per il dispositivo. 
     
    - Deve essere in grado di ricevere un indirizzo IP tramite DHCP. (Le sale di Microsoft teams non possono essere configurate con un indirizzo IP statico al primo avvio dell'unità, ma in seguito è possibile configurare un IP statico per il dispositivo nel dispositivo o nell'interruttore o nel router upstream.)
-    
    - Deve avere queste porte aperte (oltre ad aprire le normali porte per il contenuto multimediale):
-    
    - HTTPS: 443
-    
    - HTTP: 80
-    
    - Se la rete viene eseguita tramite proxy, sarà necessario anche l'indirizzo proxy o le informazioni sullo script.
     
      > [!NOTE]
-     > Microsoft teams Rooms non supporta l'input HDCP, che è stato osservato in modo da causare problemi con la funzionalità di ingesting HDMI (video, audio). Assicurarsi che le opzioni connesse alle sale di Microsoft teams siano disattivate. 
+     > Microsoft teams Rooms non supporta l'input HDCP, che è stato osservato in modo da causare problemi con la funzionalità di ingesting HDMI (video, audio). Assicurarsi che le opzioni connesse alle sale di Microsoft teams siano disattivate.
   
-3. Per migliorare l'esperienza acquisita, Microsoft raccoglie i dati. Per raccogliere dati, è necessario che questi siti siano whitelist:
-    
+3. Per migliorare l'esperienza acquisita, Microsoft raccoglie i dati. Per consentire a Microsoft di raccogliere dati, whitelist questi siti:
+
    - Endpoint client di telemetria:https://vortex.data.microsoft.com/
-    
    - Endpoint delle impostazioni di telemetria:https://settings.data.microsoft.com/
     
 ### <a name="create-and-test-a-device-account"></a>Creare e testare un account di dispositivo
@@ -90,13 +85,13 @@ Microsoft teams Rooms è progettato per ereditare le impostazioni proxy dal sist
  
 8. Aprire il tasto Skype e passare alle impostazioni di HKEY_USERS\Skype\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet, quindi verificare che le impostazioni siano immesse: 
     
-    [Impostazioni HKEY_USERS\Skype\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet]
+    `[HKEY_USERS\Skype\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]`
     
-    "MigrateProxy" = DWORD: 00000001
+    `"MigrateProxy"=dword:00000001`
     
-    "ProxyEnable" = DWORD: 00000001
+    `"ProxyEnable"=dword:00000001`
     
-    "ProxyServer" = "XX. XX. XX. XX: 8080"
+    `"ProxyServer"="xx.xx.xx.xx:8080"`
     
     Se ProxyServer non esiste può essere necessario aggiungere questa chiave come stringa, cambiare XX. XX. XX. XX: 8080 con l'indirizzo IP/host e la porta del server proxy.
     
@@ -123,7 +118,7 @@ Per usare questa applicazione, è necessario essere in grado di connettersi agli
 |Notifiche push di Lync mobile per Lync Mobile 2010 nei dispositivi iOS. Questa operazione non è necessaria per i dispositivi mobili Android, Nokia Symbian o Windows Phone.  <br/> |Computer client o utente connesso  <br/> |Porte effimere  <br/> |\*. contoso.com  <br/> |No  <br/> |Sì  <br/> |[Intervalli di indirizzi IP Skype for business](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#BKMK_SfB_IP) <br/> |TCP 5223  <br/> |
 |Telemetria Skype  <br/> |Computer client o utente connesso  <br/> |Porte effimere  <br/> |skypemaprdsitus.trafficmanager.net  <br/> pipe.skype.com  <br/> |No  <br/> |No  <br/> |N/D  <br/> |TCP 443  <br/> |
 |Client Skype suggerimenti rapidi  <br/> |Computer client o utente connesso  <br/> |Porte effimere  <br/> |quicktips.skypeforbusiness.com  <br/> |No  <br/> |No  <br/> |N/D  <br/> |TCP 443  <br/> |
-   
+
 > [!NOTE]
 > Il carattere jolly per contoso.com e broadcast.skype.com rappresenta un lungo elenco di nodi usati esclusivamente per Office 365. 
   

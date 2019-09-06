@@ -5,9 +5,9 @@ author: lanachin
 manager: serdars
 ms.date: 5/10/2018
 audience: ITPro
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 ms.topic: quickstart
-ms.prod: skype-for-business-itpro
+ms.service: msteams
 localization_priority: Normal
 ms.collection:
 - Strat_SB_Admin
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ''
 description: Leggere questo argomento per informazioni su come configurare gli account per Microsoft teams rooms in Exchange e Skype for business.
-ms.openlocfilehash: 30e887aa09b9013c3db18fb33133d11c639f9fe8
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 0ba44079e52a644e1d53ae937582a8d209f921da
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243323"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775140"
 ---
 # <a name="configure-accounts-for-microsoft-teams-rooms"></a>Configurare gli account per le sale di Microsoft Teams
  

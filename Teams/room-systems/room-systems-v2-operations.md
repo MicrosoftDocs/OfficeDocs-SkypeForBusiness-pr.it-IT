@@ -2,21 +2,21 @@
 title: Manutenzione e operazioni di Microsoft teams rooms
 ms.author: v-lanac
 author: lanachin
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 manager: serdars
 ms.date: 5/10/2018
 audience: ITPro
 ms.topic: article
-ms.prod: skype-for-business-itpro
+ms.service: msteams
 ms.collection: M365-voice
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: b5397e3b5049b4e7945780ebba70c2aaa2fc154b
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: 14f4fb23868cc3e4247c700d15851511310db471
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36183571"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775231"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft teams rooms 
  
@@ -51,7 +51,7 @@ Configurare il lato anteriore della visualizzazione della sala in modalità este
 Se Microsoft teams Rooms non è in esecuzione bene, potrebbe essere utile eseguire un ripristino di fabbrica. Questa operazione può essere eseguita nell'app Impostazioni nella scheda **ripristino** . sotto **Reimposta questo PC**Selezionare **inizia**e quindi **Rimuovi tutto**. Seguire le istruzioni rimanenti per reimpostare il dispositivo.
   
 > [!NOTE]
-> Si è verificato un problema noto in cui le sale di Microsoft teams possono diventare inutilizzabili se la funzione **Mantieni file-rimuove le app e le impostazioni, ma mantiene l'opzione file personali** selezionata durante il processo di ripristino di Windows. Non __ usare questa opzione.
+> Si è verificato un problema noto in cui le sale di Microsoft teams possono diventare inutilizzabili se la funzione **Mantieni file-rimuove le app e le impostazioni, ma mantiene l'opzione file personali** selezionata durante il processo di ripristino di Windows. Non _usare questa_ opzione.
   
 ## <a name="supported-remote-options"></a>Opzioni remote supportate
 <a name="RemoteOptions"> </a>
@@ -198,7 +198,7 @@ Alcune funzioni di gestione, come l'installazione manuale di un certificato CA p
 
 1. Riagganciare le chiamate in corso e tornare alla schermata iniziale.
     
-2. Selezionare l'icona dell'ingranaggio e visualizzare il menu (le opzioni sono **Impostazioni**, accessibilità e **dispositivo di riavvio** ). ****
+2. Selezionare l'icona dell'ingranaggio e visualizzare il menu (le opzioni sono **Impostazioni**, **accessibilità**e **dispositivo di riavvio** ).
     
 3. Selezionare **Impostazioni**.
     

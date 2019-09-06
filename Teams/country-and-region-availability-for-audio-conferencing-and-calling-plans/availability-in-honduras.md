@@ -3,7 +3,7 @@ title: Disponibilità in Honduras
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
 ms.topic: reference
 ms.assetid: 3662b214-5798-458d-8dcd-0bd563ad01fd
 ms.tgt.pltfrm: cloud
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Honduras.
-ms.openlocfilehash: 7bb9d48b9f988b66fdc1d547f6776d70d63bd7a1
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: dac59b3afa79252a9a91b48904935a225c4f55fa
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36183076"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36774418"
 ---
 # <a name="availability-in-honduras"></a>Disponibilità in Honduras
 
@@ -67,9 +67,9 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Non applicabile  <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |No  <br/> |
-|Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Tegucigalpa ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
+|Sono disponibili numeri verdi gratuiti?  <br/> |No  <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
   

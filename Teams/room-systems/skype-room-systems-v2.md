@@ -3,7 +3,7 @@ title: Licenze di Microsoft teams rooms
 ms.author: v-lanac
 author: lanachin
 manager: serdars
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
@@ -22,14 +22,14 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle caratteristiche disponibili nelle sale di Microsoft teams. '
-ms.openlocfilehash: 8112cdd11f5f5ca192da0780a6a316056e85063b
-ms.sourcegitcommit: c13bd343c3f3d14c7b8ff710ac5a4fec17ab88b7
+ms.openlocfilehash: d9908ce78b52e2f1f67040ac51f8ae035d79826c
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "36184075"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775062"
 ---
-# <a name="teams-meeting-room-licensing-update"></a>Aggiornamento delle licenze della sala riunioni Teams 
+# <a name="teams-meeting-room-licensing-update"></a>Aggiornamento delle licenze della sala riunioni Teams
 
 ## <a name="licensing-solutions-for-shared-communication-devices"></a>Soluzioni di gestione licenze per dispositivi di comunicazione condivisi
 
@@ -43,7 +43,7 @@ Microsoft ha e SKU dedicato per le riunioni di licenza e la chiamata su base per
 |Audioconferenza|&#x2714; &sup1;|
 |Microsoft Intune|&#x2714;|  
 |Disponibilità mondiale | &#x2714; &sup2;|
-|Disponibilità del canale | EA, EAS, CSP, <br>Web Direct |
+|Disponibilità del canale | EA, EAS, CSP, <br/>Web Direct |
 | | | |
 
 &sup1; La disponibilità e i minuti inclusi possono variare in base all'area geografica. Per verificare la disponibilità del servizio, fare riferimento alla [disponibilità di paesi e aree geografiche per i piani di audioconferenza e chiamate](http://docs.microsoft.com/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans). Gli oneri per il consumo possono essere applicati per servizi aggiuntivi, ad esempio i minuti gratuiti per i piani nazionali e così via. I clienti possono disabilitare queste funzionalità per evitare ulteriori fatturazione.  

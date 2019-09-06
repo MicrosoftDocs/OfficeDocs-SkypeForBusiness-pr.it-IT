@@ -2,7 +2,7 @@
 title: Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML
 ms.author: v-lanac
 author: lanachin
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 manager: serdars
 ms.date: 1/31/2018
 audience: ITPro
@@ -12,22 +12,22 @@ localization_priority: Normal
 ms.assetid: df418e25-81fd-474d-be16-5cd1ac8145cc
 ms.collection: M365-voice
 description: Questo articolo illustra la gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft teams rooms, incluso l'applicazione di un tema personalizzato.
-ms.openlocfilehash: c66aaba35fc678400118e67d7c66f362842c869f
-ms.sourcegitcommit: 1401ee484a2bc8e72d96649b0571bb59198f9dab
+ms.openlocfilehash: 916eca45a39e7bf0dfe6a35b5985832ef5d580f5
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36427622"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36774914"
 ---
 # <a name="manage-a-microsoft-teams-rooms-console-settings-remotely-with-an-xml-configuration-file"></a>Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML
 
-Questo articolo illustra la gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft teams rooms, incluso l'applicazione di un tema personalizzato.
+Questo articolo illustra la gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft teams rooms, incluso l'applicazione di un tema personalizzato. Viene illustrato come creare un file di impostazioni master e i collegamenti alle discussioni su come inserirli in base alle esigenze dei dispositivi gestiti in remoto.
   
-L'aggiornamento di un file XML master e l'invio di copie alle console gestite consente di modificare le impostazioni predefinite per i dispositivi gestiti in remoto. Questo articolo illustra come creare un file di questo tipo e i collegamenti alle discussioni su come inserirli in base alle esigenze dei dispositivi gestiti in remoto. Usando questo metodo puoi anche implementare temi personalizzati nelle console delle sale di Microsoft teams.
+È possibile modificare le impostazioni predefinite dei dispositivi gestiti in remoto aggiornando un file XML master e inviando copie alle console gestite. Puoi anche implementare temi personalizzati nelle console delle sale di Microsoft teams con i file di configurazione XML.
   
 ## <a name="create-an-xml-configuration-file"></a>Creare un file di configurazione XML
 
-La tabella seguente illustra gli elementi illustrati in questo esempio di file di configurazione SkypeSettings. XML (nome file obbligatorio).
+Qualsiasi editor di testo può essere usato per creare un file di impostazioni. La tabella **elementi XML** spiega gli elementi mostrati in questo esempio di file di configurazione SkypeSettings. XML (nome file obbligatorio).
   
 ```
 <SkypeSettings>
@@ -69,7 +69,7 @@ La tabella seguente illustra gli elementi illustrati in questo esempio di file d
 </SkypeSettings>
 ```
 
-Se il file XML viene formattato in modo errato (un valore variabile è di tipo sbagliato, gli elementi non sono in ordine, gli elementi vengono chiusi e così via), le impostazioni trovate fino al punto in cui viene trovato l'errore vengono applicate, quindi il resto del file viene ignorato durante l'elaborazione. Tutti gli elementi sconosciuti nel codice XML vengono ignorati. Se un parametro viene omesso, il dispositivo rimarrà invariato. Se un valore di parametro non è valido, il valore precedente rimane invariato.
+Se un valore variabile è di tipo errato, gli elementi non sono in ordine, gli elementi non sono chiusi o viene rilevato un altro errore, il file XML viene *formato male*. Durante l'elaborazione di un file XML formato male, le impostazioni trovate fino al punto in cui si verifica l'errore vengono applicate, quindi il resto del file viene ignorato. Tutti gli elementi sconosciuti nel codice XML vengono ignorati. Se un parametro viene omesso, il dispositivo rimarrà invariato. Se un valore di parametro non è valido, il valore precedente rimane invariato.
   
 **Elementi XML**
 
@@ -94,43 +94,42 @@ Se il file XML viene formattato in modo errato (un valore variabile è di tipo s
 |\<SendLogsAndFeedback\> |&#x2777; booleani  || Se true, i registri vengono inviati all'amministratore. Se false, viene inviato solo il feedback all'amministratore (e non ai registri).  |
 | \<Dispositivi\>  |Contenitore |Primo &#x2776;  | I nomi dei dispositivi audio connessi negli elementi figlio corrispondono agli stessi valori elencati nell'app gestione dispositivi. La configurazione può contenere un dispositivo che attualmente non esiste nel sistema, ad esempio un dispositivo A/V non connesso alla console. La configurazione verrebbe mantenuta per il rispettivo dispositivo.  |
 |\<MicrophoneForCommunication\> |&#x2778; di stringa  ||Imposta il microfono usato come dispositivo di registrazione in una conferenza. |
-|\<SpeakerForCommunication\> |&#x2778; di stringa  ||Dispositivo da usare come altoparlante per la conferenza. Questa impostazione viene usata per impostare il dispositivo altoparlante che verrà usato per ascoltare l'audio in una chiamata. |
+|\<SpeakerForCommunication\> |&#x2778; di stringa  ||Dispositivo da usare come altoparlante per la conferenza. Questa impostazione viene usata per impostare il dispositivo altoparlante usato in una chiamata. |
 |\<DefaultSpeaker\> |&#x2778; di stringa  ||Dispositivo da usare per riprodurre l'audio da un'origine di ingestione HDMI. |
 |\<> ContentCameraId  | &#x2778; di stringa  | | Definire il percorso dell'istanza per la fotocamera configurata in room per condividere il contenuto della lavagna analogica in una riunione. Vedere [individuare il percorso dell'istanza USB di Content camera](#locate-the-content-camera-usb-instance-path).|
 |\<> ContentCameraInverted  | &#x2777; booleani | | Specificare se la fotocamera del contenuto è installata fisicamente a testa in giù. Per le fotocamere del contenuto che supportano la rotazione automatica, specificare false. |
-|\<> ContentCameraEnhancement  | &#x2777; booleani | |Quando è impostato su true (impostazione predefinita), l'immagine della fotocamera del contenuto è migliorata digitalmente: viene rilevato il bordo della lavagna e viene selezionato uno zoom appropriato, le linee di input penna vengono migliorate e la persona che scrive sulla lavagna viene trasformata in modo trasparente.  <br><br> Imposta questo valore su false se intendi inviare un feed video non elaborato ai partecipanti alla riunione per gli spazi in cui una lavagna non viene disegnata con una penna e invece la fotocamera viene usata per mostrare note, poster o altri elementi multimediali.  |
-| \<Temi\>  |Contenitore |Primo &#x2776;  |Una delle caratteristiche che possono essere applicate usando un file XML è un tema personalizzato per l'organizzazione. È possibile specificare il nome del tema, l'immagine di sfondo e il colore. |
-|\<ThemeName\> |&#x2778; di stringa  || Usato per identificare il tema nel client. Le opzioni relative al nome del tema sono predefinite, uno dei temi preimpostati specificati o personalizzati. <br/>  I nomi dei temi personalizzati devono sempre usare il nome *Custom*. L'interfaccia utente del client può essere impostata alla console per l'impostazione predefinita o uno dei predefiniti, ma l'applicazione di un tema personalizzato deve essere impostata in remoto da un amministratore. <br/>  I temi preimpostati includono: <br/>  Predefinita <br/>  Onda blu <br/>  Foresta digitale <br/>  Dreamcatcher <br/>  Limeade <br/>  Pixel perfetti <br/>  Roadmap <br/>  Tramonto <br/>  Per disabilitare il tema corrente, USA "nessun tema" per il Temaname.  |
-|\<CustomThemeImageUrl\> |&#x2778; di stringa  ||Obbligatorio se si usa un tema personalizzato, in caso contrario facoltativo. Per altre informazioni sull'immagine del tema personalizzato, vedere la sezione [Immagini tema personalizzate](xml-config-file.md#Themes) .  |
-|\<CustomThemeColor\> |Contenitore ||Contenitore per i \<valori\>di \<RedComponent\>, GreenComponent \<e\> BlueComponent. Questi valori sono obbligatori se si usa un tema personalizzato. |
+|\<> ContentCameraEnhancement  | &#x2777; booleani | |Quando è impostato su true (impostazione predefinita), l'immagine della fotocamera del contenuto è migliorata digitalmente: viene rilevato il bordo della lavagna e viene selezionato uno zoom appropriato, le linee di input penna vengono migliorate e la persona che scrive sulla lavagna viene trasformata in modo trasparente.  <br><br> Impostare su false se si vuole inviare un feed video non elaborato ai partecipanti alla riunione per gli spazi in cui una lavagna non è disegnata con una penna e invece la fotocamera viene usata per mostrare note adesive, poster o altri elementi multimediali.  |
+| \<Temi\>  |Contenitore |Primo &#x2776;  |Una delle caratteristiche che è possibile applicare a un file XML è un tema personalizzato per l'organizzazione. È possibile specificare il nome del tema, l'immagine di sfondo e il colore. |
+|\<ThemeName\> |&#x2778; di stringa  || Usato per identificare il tema nel client. Le opzioni relative al nome del tema sono predefinite, uno dei temi preimpostati specificati o personalizzati. <br/>  I nomi dei temi personalizzati usano sempre il nome *Custom*. L'interfaccia utente del client può essere impostata alla console per l'impostazione predefinita o uno dei predefiniti, ma l'uso di un tema personalizzato deve essere impostato in remoto da un amministratore. <br/>  I temi preimpostati includono: <br/>  Predefinita <br/>  Onda blu <br/>  Foresta digitale <br/>  Dreamcatcher <br/>  Limeade <br/>  Pixel perfetti <br/>  Roadmap <br/>  Tramonto <br/>  Per disabilitare il tema corrente, USA "nessun tema" per il Temaname.  |
+|\<CustomThemeImageUrl\> |&#x2778; di stringa  ||Obbligatorio per un tema personalizzato, in caso contrario facoltativo.   |Per altre informazioni sull'immagine del tema personalizzata, vedere la sezione [Immagini tema personalizzate](xml-config-file.md#Themes) .
+|\<CustomThemeColor\> |Contenitore ||Contenitore per i \<valori\>di \<RedComponent\>, GreenComponent \<e\> BlueComponent. Questi valori sono necessari per un tema personalizzato. |
 |\<RedComponent\> |Byte (0-255) ||Rappresenta il componente colore rosso. |
 |\<GreenComponent\> |Byte (0-255) ||Rappresenta il componente colore verde. |
 |\<BlueComponent\> |Byte (0-255) ||Rappresenta il componente colore blu. |
 | | | |
- 
+
 &#x2776; tutti gli elementi di primo livello sono facoltativi. Se un elemento di primo livello viene omesso, tutti i relativi parametri figlio rimarranno invariati nel dispositivo.
   
-&#x2777; un flag Boolean può essere uno degli elementi seguenti: vero, falso, 0 o 1. L'uscita di valori booleani o numerici vuoti può eseguire il rendering di XML non valido e impedire modifiche alle impostazioni.
+&#x2777; un flag booleano può essere: vero, falso, 0 o 1. L'uscita di valori booleani o numerici vuoti può eseguire il rendering di XML non valido e impedire modifiche alle impostazioni.
   
- &#x2778; se un parametro di stringa è presente, Empty e Empty è un valore valido, il parametro è deselezionato nel dispositivo.
+&#x2778; se un parametro stringa è presente e vuoto e Empty è un valore valido, il parametro è deselezionato nel dispositivo.
   
-## <a name="manage-console-settings-using-an-xml-configuration-file"></a>Gestire le impostazioni della console usando un file di configurazione XML
+## <a name="manage-console-settings-with-an-xml-configuration-file"></a>Gestire le impostazioni della console con un file di configurazione XML
 
-All'avvio, se una console Microsoft teams Rooms trova un file XML denominato SkypeSettings. XML nella posizione **C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState**, applica le impostazioni di configurazione indicato dal file XML, quindi eliminare il file XML.
+All'avvio, se una console Microsoft teams Rooms trova un file XML denominato SkypeSettings. XML in `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState`cui si trova, applica le impostazioni di configurazione indicate dal file XML e quindi Elimina il file XML.
   
 A seconda del numero di dispositivi di Microsoft teams Rooms che l'organizzazione ha e della modalità di gestione per configurarli, esistono diversi modi per inserire il file di configurazione XML. Dopo aver inserito il file nella console, riavviarlo per elaborare le modifiche alla configurazione. Il file di configurazione XML viene eliminato dopo l'elaborazione corretta. I metodi di gestione suggeriti per i dispositivi Microsoft teams Rooms sono discussi in:
   
 - [Configurazione dei criteri di gruppo per le sale di Microsoft Teams](room-systems-v2-operations.md#GroupPolicy)
-
 - [Gestione remota tramite PowerShell](room-systems-v2-operations.md#RemotePS) e [configurare un elemento file](https://technet.microsoft.com/library/cc772536%28v=ws.11%29.aspx)
 
-Puoi usare qualsiasi metodo che ti piace, purché sia possibile usarlo per trasferire file e attivare un riavvio nel dispositivo console. Il file deve essere leggibile, scrivibile ed Elimina-in grado dall'account utente locale del dispositivo (preferibilmente dovrebbe essere di proprietà e avere i privilegi completi concessi a tale utente). Se le autorizzazioni per i file non sono impostate correttamente, il software potrebbe non riuscire ad applicare le impostazioni, potrebbe non riuscire ad eliminare il file dopo l'elaborazione corretta e potrebbe addirittura arrestarsi in modo anomalo.
+Puoi usare qualsiasi metodo che ti piace, purché sia possibile usarlo per trasferire file e attivare un riavvio nel dispositivo console. Il file deve essere leggibile, scrivibile ed Elimina-in grado dall'account utente locale del dispositivo. Preferibilmente è di proprietà di e ha privilegi completi concessi a quell'utente. Se le autorizzazioni per i file non sono impostate correttamente, il software può non riuscire ad applicare le impostazioni, può non riuscire ad eliminare il file dopo l'elaborazione corretta e può addirittura arrestarsi in modo anomalo.
   
 ## <a name="custom-theme-images"></a>Immagini del tema personalizzate
 
 <a name="Themes"> </a>
 
-Il file di immagine del tema personalizzato deve essere inserito in **C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState**, immettere il nome e l'estensione \<del\> file nella variabile CustomThemeImageUrl.
+Il file di immagine del tema personalizzato deve essere posizionato`C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState` nella cartella. Immettere il nome e l'estensione del file \<nella\> variabile CustomThemeImageUrl.
   
 Il file di immagine deve essere esattamente 3840X1080 pixel e deve essere uno dei formati di file seguenti: jpg, JPEG, PNG e BMP. Se l'organizzazione vuole un'immagine personalizzata, un progettista grafico può usare il [modello tema personalizzato Photoshop](https://go.microsoft.com/fwlink/?linkid=870441). Contiene ulteriori dettagli su dove inserire vari elementi in un'immagine del tema e quali aree vengono visualizzate in console e schermi.
   

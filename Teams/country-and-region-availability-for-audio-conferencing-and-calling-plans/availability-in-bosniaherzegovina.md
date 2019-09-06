@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Bosnia ed Erzegovina.
-ms.openlocfilehash: f75172efe76a4423872c321484855c8daf04ba9e
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: 1d382c02249f39a42f7f61a70c7687367e0cbad4
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36183211"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36774481"
 ---
 # <a name="availability-in-bosnia-amp-herzegovina"></a>Disponibilità in Bosnia &amp; Erzegovina
 
@@ -68,7 +68,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Non applicabile  <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |No  <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).

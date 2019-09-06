@@ -4,18 +4,18 @@ ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: df9f33b6-0360-4354-b651-bd35da533e33
 description: Leggere questo argomento per informazioni su come distribuire Skype room System in un ambiente che include più versioni di Skype for Business Server e Lync Server.
-ms.openlocfilehash: f5da7f92c7ab947d5e6d68c19823d227f8ae3ca3
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 6524a7312644ec306185b952caf17818d29344af
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234209"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36774674"
 ---
 # <a name="skype-room-system-migration-considerations"></a>Considerazioni sulla migrazione di Skype room System
  

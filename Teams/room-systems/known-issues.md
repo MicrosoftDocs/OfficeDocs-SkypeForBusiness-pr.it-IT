@@ -2,21 +2,21 @@
 title: Problemi noti
 ms.author: v-lanac
 author: lanachin
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 manager: serdars
 ms.date: 4/17/2018
 audience: ITPro
 ms.topic: article
-ms.prod: skype-for-business-itpro
+ms.service: msteams
 localization_priority: Normal
 ms.collection: M365-voice
 description: Questo articolo illustra i problemi noti per le sale di Microsoft teams, in base all'area delle caratteristiche.
-ms.openlocfilehash: fab004336d5a349bd0548479395ef0c25eb642c7
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 3e3da371a294582fc6a56db7e59615fdbe97c48b
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243433"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775195"
 ---
 # <a name="known-issues"></a>Problemi noti 
  

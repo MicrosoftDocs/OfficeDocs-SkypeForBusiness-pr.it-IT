@@ -25,12 +25,12 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 description: Puoi selezionare un paese/un’area geografica per vedere se sono disponibili o meno Audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e i numeri verdi e a tariffa.
-ms.openlocfilehash: 9a93ecaf9f68f5aa0412253a7a9355a0cfe33445
-ms.sourcegitcommit: 40328f5e80ee992cd0e63655ede9698a35069f15
+ms.openlocfilehash: 05e34a663e2c6e5ff4c2c0359bd0183d03caeb16
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "36185131"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36774654"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica
 
@@ -38,7 +38,8 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 ***
 ## <a name="select-your-country-or-region-to-see-whats-available-for-your-organization"></a>Selezionare il paese o l'area geografica per vedere le informazioni disponibili per l'organizzazione
 
-> [!div class="op_single_selector"]    
+> [!div class="op_single_selector"]
+> - [Algeria](availability-in-algeria.md)    
 > - [Argentina](availability-in-argentina.md)
 > - [Australia](availability-in-australia.md)
 > - [Austria](availability-in-austria.md)
@@ -46,10 +47,12 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Bielorussia](availability-in-belarus.md)
 > - [Belgio](availability-in-belgium.md)
 > - [Belize](availability-in-belize.md)
+> - [Benin](availability-in-benin.md)
 > - [Bosnia ed Herzegovina](availability-in-bosniaherzegovina.md)
 > - [Brasile](availability-in-brazil.md)
 > - [Brunei](availability-in-brunei.md)
 > - [Bulgaria](availability-in-bulgaria.md)
+> - [Cambogia](availability-in-cambodia.md)
 > - [Canada](availability-in-canada.md)
 > - [Cile](availability-in-chile.md)
 > - [Cina](availability-in-china.md)
@@ -68,6 +71,7 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Francia](availability-in-france.md)
 > - [Georgia](availability-in-georgia.md)
 > - [Germania](availability-in-germany.md)
+> - [Ghana](availability-in-ghana.md)
 > - [Grecia](availability-in-greece.md)
 > - [Honduras](availability-in-honduras.md)
 > - [Hong Kong - R.A.S.](availability-in-hong-kong.md)
@@ -79,7 +83,9 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Italia](availability-in-italy.md)
 > - [Giappone](availability-in-japan.md)
 > - [Giordania](availability-in-jordan.md)
+> - [Kazakistan](availability-in-kazakhstan.md)
 > - [Kenya](availability-in-kenya.md)
+> - [Kuwait (الكويت)](availability-in-kuwait.md)
 > - [Lettonia](availability-in-latvia.md)
 > - [Lituania](availability-in-lithuania.md)
 > - [Lussemburgo](availability-in-luxembourg.md)
@@ -89,8 +95,11 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Messico](availability-in-mexico.md)
 > - [Moldova](availability-in-moldova.md)
 > - [Monaco](availability-in-monaco.md)
+> - [Marocco](availability-in-morocco.md)
 > - [Paesi Bassi](availability-in-the-netherlands.md)
 > - [Nuova Zelanda](availability-in-new-zealand.md)
+> - [Nicaragua](availability-in-nicaragua.md)
+> - [Nigeria](availability-in-nigeria.md)
 > - [Norvegia](availability-in-norway.md)
 > - [Pakistan](availability-in-pakistan.md)
 > - [Panama](availability-in-panama.md)
@@ -117,6 +126,7 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Taiwan](availability-in-taiwan.md)
 > - [Thailandia](availability-in-thailand.md)
 > - [Trinidad e Tobago](availability-in-trinidad-and-tobago.md)
+> - [Tunisia](availability-in-tunisia.md)
 > - [Turchia](availability-in-turkey.md)
 > - [Ucraina](availability-in-the-ukraine.md)
 > - [Emirati Arabi Uniti (E.A.U.)](availability-in-the-united-arab-emirates-uae.md)
@@ -126,7 +136,7 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Venezuela](availability-in-venezuela.md)
 > - [Vietnam](availability-in-vietnam.md)
 
-**Se si sta cercando un foglio di calcolo con tutti i paesi e le aree geografiche, scaricare e salvare il foglio di calcolo per la [disponibilità del paese/area geografica cloud](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/country-and-region-availabilty/country-and-region-availability-(v-07252019)-(en-us).xlsx?raw=true)**.
+**Se si sta cercando un foglio di calcolo con tutti i paesi e le aree geografiche, scaricare e salvare il foglio di calcolo per la [disponibilità del paese/area geografica cloud](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/country-and-region-availabilty/country-and-region-availability-(v-09052019)-(en-us).xlsx?raw=true)**.
 
 ***
 
@@ -141,7 +151,7 @@ Una volta che hai cercato di vedere se uno dei servizi Skype for Business o Micr
 
 ### <a name="audio-conferencing"></a>Audioconferenza
 
-A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Skype for Business e Microsoft Teams offrono la funzione di Audioconferenza proprio per queste evenienze! È possibile accedere alle riunioni utilizzando un telefono anziché le app Skype for Business e Microsoft Teams su un dispositivo mobile o un PC. Dopo aver deciso di usare i servizi di audioconferenza per l'organizzazione, è necessario acquistare una **** licenza di audioconferenza per ogni persona dell'organizzazione che sta per pianificare/ospitare una riunione audio.
+A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Skype for Business e Microsoft Teams offrono la funzione di Audioconferenza proprio per queste evenienze! È possibile accedere alle riunioni utilizzando un telefono anziché le app Skype for Business e Microsoft Teams su un dispositivo mobile o un PC. Dopo aver deciso di usare i servizi di audioconferenza per l'organizzazione, è necessario acquistare una **licenza di audioconferenza per** ogni persona dell'organizzazione che sta per pianificare/ospitare una riunione audio.
   
 Con Audioconferenza ci sono numeri telefonici a tariffa e verdi che possono essere utilizzati dai tuoi utenti per connettersi alle riunioni. I numeri a tariffa dei seguenti paesi o aree geografiche vengono assegnati automaticamente come numeri condivisi dei servizi di audioconferenza alle organizzazioni in cui è abilitata l’Audioconferenza. I numeri verdi e a tariffa dedicati possono essere assegnati all'organizzazione da altre città.
 

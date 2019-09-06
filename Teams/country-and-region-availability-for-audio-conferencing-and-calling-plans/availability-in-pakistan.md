@@ -3,7 +3,7 @@ title: Disponibilità in Pakistan
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
 ms.topic: reference
 ms.assetid: 2066d1f9-cbf6-411f-91bb-84d824b4325e
 ms.tgt.pltfrm: cloud
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per il Pakistan.
-ms.openlocfilehash: 29d925bc24f07e9a907b004eb59b8e59e42254fa
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: faa9114fd080b05045bc26c4ff13f8ecc9301893
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36182947"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775489"
 ---
 # <a name="availability-in-pakistan"></a>Disponibilità in Pakistan
 
@@ -71,7 +71,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |No  <br/> |
    
- Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
+ Tieni presente che in Pakistan i numeri di servizio possono essere usati solo per i servizi di audioconferenza. Quindi, se vuoi ottenere numeri verdi e gratuiti per i servizi di audioconferenza, Vedi [ottenere numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).
   
 ## <a name="communications-credits"></a>Crediti comunicazioni
 

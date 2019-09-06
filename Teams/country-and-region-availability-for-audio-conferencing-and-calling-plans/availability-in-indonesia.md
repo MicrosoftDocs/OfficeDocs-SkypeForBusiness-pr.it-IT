@@ -3,7 +3,7 @@ title: Disponibilità in Indonesia
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
 ms.topic: reference
 ms.assetid: 98fef414-b8e1-4032-b07b-63ec52fb3f26
 ms.tgt.pltfrm: cloud
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Indonesia.
-ms.openlocfilehash: 8b0bd4f5a1ffc0a7f76c954677e14d9315a1fbe8
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: 027f8c9c70ef97665584f80714befe0a39899df5
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36183052"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36774429"
 ---
 # <a name="availability-in-indonesia"></a>Disponibilità in Indonesia
 
@@ -67,7 +67,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Non applicabile  <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Jakarta ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |No  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    

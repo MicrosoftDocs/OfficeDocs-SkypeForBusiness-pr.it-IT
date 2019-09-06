@@ -3,7 +3,7 @@ title: Disponibilità in India
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
 ms.topic: reference
 ms.assetid: b205d2b2-bb2c-457e-82ba-328742d168b6
 ms.tgt.pltfrm: cloud
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'India.
-ms.openlocfilehash: 7a7afac460f8b74a7386293cca75d1f8720a20f6
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: fdb9c6ee9abdb68b605743dbfe77bb594fa68ad0
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36183058"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775423"
 ---
 # <a name="availability-in-india"></a>Disponibilità in India
 
@@ -43,7 +43,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |No  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Mumbai</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Chennai<li> Mumbai</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -67,11 +67,11 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Mumbai  <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Chennai <li>Mumbai<li>Altre città [su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)</ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
- Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
+ Tieni presente che in India i numeri di servizio possono essere usati solo per i servizi di audioconferenza. Per ottenere numeri di telefono a pedaggio e a numero verde per i servizi di audioconferenza, vedere [come ottenere numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).
   
 ## <a name="communications-credits"></a>Crediti comunicazioni
 

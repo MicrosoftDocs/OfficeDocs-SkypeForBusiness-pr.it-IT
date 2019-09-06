@@ -2,7 +2,7 @@
 title: Panoramica della gestione per le sale di Microsoft Teams
 ms.author: jambirk
 author: jambirk
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 manager: serdars
 ms.date: 5/10/2018
 audience: ITPro
@@ -12,14 +12,14 @@ localization_priority: Normal
 ms.assetid: 39d7dc65-22c3-400f-91f1-87ed2fd792b6
 ms.collection: M365-voice
 description: Panoramica della gestione per le sale di Microsoft teams.
-ms.openlocfilehash: db1569f86ba0066691b6797517351087307cf38a
-ms.sourcegitcommit: 1401ee484a2bc8e72d96649b0571bb59198f9dab
+ms.openlocfilehash: 28a48bb4aba417fba076e8c31492e8191e7164c9
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36427875"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775096"
 ---
-# <a name="management-overview"></a>Panoramica della gestione 
+# <a name="management-overview"></a>Panoramica della gestione
 
 È essenziale sviluppare ed eseguire la manutenzione e le operazioni in corso per garantire che i sistemi Microsoft teams Rooms siano disponibili per gli utenti e per offrire un'esperienza utente ottimale. 
 
@@ -27,14 +27,12 @@ ms.locfileid: "36427875"
 
 Il monitoraggio dei sistemi Microsoft teams Rooms è costituito da due attività principali:
 
--  Monitoraggio di dispositivi, applicazioni e periferiche
-
--  Monitoraggio qualità e affidabilità (Call Quality Dashboard)
+- Monitoraggio di dispositivi, applicazioni e periferiche
+- Monitoraggio qualità e affidabilità (Call Quality Dashboard)
 
 ### <a name="microsoft-teams-rooms-device-application-and-peripheral-device-monitoring"></a>Monitoraggio di dispositivi, applicazioni e periferiche Microsoft teams rooms
 
 Per fare in modo che gli utenti siano in grado di usare le unità di Microsoft teams rooms, le unità devono essere accese, connesse alla rete con l'applicazione Microsoft teams Rooms correttamente configurata e connessa ai dispositivi periferici funzionanti. 
-
 
 Le informazioni sullo stato dell'applicazione Microsoft teams Rooms e delle periferiche connesse vengono scritte dall'applicazione Microsoft teams Rooms nel registro eventi di Windows e documentate in [comprendere le voci del log](azure-monitor-manage.md#understand-the-log-entries). 
 
@@ -43,7 +41,7 @@ Le informazioni sullo stato dell'applicazione Microsoft teams Rooms e delle peri
 |HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon AutoAdminLogon = (DWORD) 1  <br/> |Consente l'avvio delle sale di Microsoft Teams  <br/> |
 |Power Management-\> in AC, disattivare lo schermo dopo 10 minuti  <br/> Power Management-\> su AC, non posizionare mai il sistema in modalità Sleep  <br/> |Consente alle sale di Microsoft teams di disattivare i display allegati e di riattivarsi automaticamente  <br/> |
 |NET account/maxpwage: illimitato  <br/> O un mezzo equivalente per disabilitare la scadenza della password per l'account locale. La mancata esecuzione di questa operazione causerà l'errore di accesso dell'account Skype che lamenta una password scaduta. Tieni presente che questo ha un impatto su tutti gli account locali nel computer e quindi la mancata impostazione di questa operazione causerà anche l'eventuale scadenza dell'account amministrativo nella casella.  <br/> |Consente all'account Skype di accedere sempre  <br/> |
-   
+
 Il trasferimento di file tramite criteri di gruppo è illustrato in [configurare un elemento del file](https://technet.microsoft.com/en-us/library/cc772536%28v=ws.11%29.aspx).
   
 ## <a name="remote-management-using-powershell"></a>Gestione remota tramite PowerShell

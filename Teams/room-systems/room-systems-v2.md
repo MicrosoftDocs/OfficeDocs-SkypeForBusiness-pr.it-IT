@@ -4,9 +4,9 @@ ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 ms.topic: quickstart
-ms.prod: skype-for-business-itpro
+ms.service: msteams
 localization_priority: Normal
 ms.collection:
 - Strat_SB_Admin
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni sulla distribuzione delle sale di Microsoft teams.
-ms.openlocfilehash: bbea76639fe1be0edb3269fc345d3e0d4a89e721
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 132c40c674824bb763ea2087318423ca3677f506
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243334"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775129"
 ---
 # <a name="deployment-overview"></a>Panoramica della distribuzione
 

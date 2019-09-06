@@ -2,22 +2,22 @@
 title: Pianificare le sale di Microsoft Teams
 ms.author: v-lanac
 author: lanachin
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 manager: serdars
 ms.date: 5/10/2018
 audience: ITPro
 ms.topic: conceptual
-ms.prod: skype-for-business-itpro
+ms.service: msteams
 localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 ms.collection: M365-voice
 description: Questo articolo illustra le considerazioni relative alla pianificazione per la distribuzione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: e5c902b5e4e015bfcc9be3b2d3927365483f3396
-ms.sourcegitcommit: a84b8de70149d9688bde64809912dc470377807e
+ms.openlocfilehash: 2c47e95eccc8dcb362a10bd1a6980c2b12384711
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "36185059"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775107"
 ---
 # <a name="plan-microsoft-teams-rooms"></a>Pianificare le sale di Microsoft Teams
 

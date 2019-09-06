@@ -4,19 +4,21 @@ ms.author: jambirk
 author: jambirk
 manager: serdars
 audience: ITPro
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 ms.topic: quickstart
-ms.prod: skype-for-business-itpro
+ms.service: msteams
 localization_priority: Normal
 ms.assetid: 3034fdcb-7c89-42c4-9c5e-13400e82d88f
 description: Leggere questo argomento per informazioni su come partecipare a un PC appliance di sistema Skype room al proprio dominio.
-ms.openlocfilehash: 02aa02cd0297a9f35db187c3b1b00d6615fbaa39
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: be8fd60b67efb356e09678eef21fbfab425ce304
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243455"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36774643"
 ---
+<!-- This asset missed in the rebrand, and honestly not sure if it's worth keeping.   -->
+
 # <a name="skype-room-system-domain-joining-considerations"></a>Considerazioni sull'Unione di domini di Skype room System
  
 Leggere questo argomento per informazioni su come partecipare a un PC appliance di sistema Skype room al proprio dominio.
@@ -26,27 +28,17 @@ Leggere questo argomento per informazioni su come partecipare a un PC appliance 
 È possibile partecipare al PC di Skype room System Appliance al dominio Active Directory o lasciarlo in un gruppo di lavoro. Prima di prendere questa decisione, prendere in considerazione i punti seguenti:
   
 - Domain-partecipare al PC di Skype room System Appliance aiuta ad importare automaticamente la catena di certificati radice privati dell'organizzazione.
-    
 - Domain-Joining Skype room System Appliance PC consente di concedere a utenti e gruppi di domini i diritti amministrativi. In questo modo, non è necessario ricordare la password dell'account di amministratore del livello di computer locale.
-    
 - Quando si partecipa a un PC Appliance Skype room System al dominio, è necessario creare un'unità organizzativa separata (OU), in modo da consentire l'esclusione degli oggetti Criteri di gruppo per l'unità organizzativa in cui risiedono tutte le applicazioni del computer room System Skype. Quando si esegue questa operazione, creare oggetti macchina nell'unità organizzativa prima di partecipare al PC di Skype room System Appliance al dominio.
-    
-- Molte organizzazioni hanno gli oggetti Criteri di rete seguenti, che influiscono sulle funzioni PC appliance di Skype room System. Assicurarsi di ignorare o bloccare l'ereditarietà di questi oggetti Criteri di gruppo nell'OU di sistema di chat room di Skype: 
-    
+- Molte organizzazioni hanno gli oggetti Criteri di rete seguenti, che influiscono sulle funzioni PC appliance di Skype room System. Assicurarsi di ignorare o bloccare l'ereditarietà di questi oggetti Criteri di gruppo nell'OU di sistema di chat room di Skype:
+
   - Timeout delle sessioni di accesso (blocco automatico)
-    
   - Criteri correlati a Power Management
-    
   - Richiedere ulteriori passaggi di autenticazione
-    
   - Negazione dell'accesso alle unità locali
-    
   - Richiedere agli utenti le connessioni di rete lente
-    
   - Avviare un determinato programma all'accesso
-    
   - Creare un altro account utente di dominio in tutti i computer appartenenti a un dominio.
-    
   - Push Windows Update per Skype room System
     
 - In alternativa, è possibile che si decida di uscire dal PC Appliance nel gruppo di lavoro. Come per il client desktop Microsoft teams o Skype for business, è necessario importare manualmente la catena di certificati radice nel PC di Skype room System Appliance. Non è necessario importare la catena di certificati radice se la distribuzione usa un certificato pubblico, ad esempio Entrust, VeriSign e così via. 

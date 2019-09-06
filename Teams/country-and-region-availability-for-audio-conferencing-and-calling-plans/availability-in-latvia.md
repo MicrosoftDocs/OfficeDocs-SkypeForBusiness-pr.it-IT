@@ -3,7 +3,7 @@ title: Disponibilità in Lettonia
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
 ms.topic: reference
 ms.assetid: 01085d53-64d7-40ea-ade2-c73a48766746
 ms.tgt.pltfrm: cloud
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Lettonia.
-ms.openlocfilehash: 27eafcd181aebc1b767c90f94eda0e39ccf8cc13
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: 3c3b933e7dcbbf8ceee8a3863cb9303720468ec0
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36183022"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775401"
 ---
 # <a name="availability-in-latvia"></a>Disponibilità in Lettonia
 
@@ -67,9 +67,9 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Aluksne  <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Riiga ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
-|Sono disponibili numeri verdi gratuiti?  <br/> |No  <br/> |
+|Sono disponibili numeri verdi gratuiti?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
   

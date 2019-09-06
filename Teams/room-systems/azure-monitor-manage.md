@@ -2,21 +2,21 @@
 title: Gestire i dispositivi Microsoft teams Rooms con Azure monitor
 ms.author: v-lanac
 author: lanachin
-ms.reviewer: davgroom
+ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.prod: skype-for-business-itpro
+ms.service: msteams
 localization_priority: Normal
 ms.assetid: f8109905-3279-475f-a64b-31d37af48bfe
 ms.collection: M365-voice
 description: Questo articolo illustra come gestire i dispositivi Microsoft teams rooms in modo integrato con Azure monitor.
-ms.openlocfilehash: 22292ee5c7ebfe4e300eb1844443b38f88806588
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 7a0fc2474b1c3b76327f64df1796c491b2cd3c9b
+ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243510"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36774776"
 ---
 # <a name="manage-microsoft-teams-rooms-devices-with-azure-monitor"></a>Gestire i dispositivi Microsoft teams Rooms con Azure monitor
 
