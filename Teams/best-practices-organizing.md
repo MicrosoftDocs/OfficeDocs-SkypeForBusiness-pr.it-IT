@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b079ebc84dfef1714243f79daed970fb148b7c5a
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 32bd7664e8aa8fa8a818b3223e64b09f7982d12f
+ms.sourcegitcommit: 332817f49ec1e6767334fdd4c2ec3f791020a26c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237205"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36767176"
 ---
 <a name="best-practices-for-organizing-teams-in-microsoft-teams"></a>Procedure consigliate per organizzare team in Microsoft Teams
 ======================================================
@@ -30,7 +30,7 @@ ms.locfileid: "36237205"
 
 I team sono raccolte di persone che si riuniscono attorno a un obiettivo comune. Questo gruppo di persone può essere all'interno di un reparto o in tutta l'organizzazione. Ciò che li accomuna è il risultato verso cui stanno guidando. I membri di un team possono lavorare a un ritmo diverso o creare asset in modo diverso, ma nella nostra esperienza spesso collaborano rapidamente tra loro, un processo che chiamiamo "lavoro di squadra ad alta velocità".  
 
-Prima di creare un team nel prodotto, è consigliabile valutare l'obiettivo, il progetto o gli elementi di lavoro e le persone dell'organizzazione che possono aiutarlo a collaborare. Dopo averli identificati, Aggiungi questi utenti o gruppi a un team per iniziare a collaborare. Poiché l'appartenenza può cambiare nel tempo, è consigliabile designare più proprietari per ogni team. Per altre informazioni, vedere [gestione di Team](https://support.office.com/article/Teams-and-Channels-df38ae23-8f85-46d3-b071-cb11b9de5499).
+Prima di creare un team, pensare all'obiettivo, al progetto o agli elementi di lavoro e agli utenti dell'organizzazione che possono aiutarlo a collaborare. Dopo averli identificati, Aggiungi questi utenti o gruppi a un team per iniziare a collaborare. Poiché l'appartenenza può cambiare nel tempo, è consigliabile designare più proprietari per ogni team. Per altre informazioni, vedere [gestione di Team](https://support.office.com/article/Teams-and-Channels-df38ae23-8f85-46d3-b071-cb11b9de5499).
 
 Ecco un breve video per vedere alcuni esempi di come strutturare team interorganizzativi o a singolo scopo:
 

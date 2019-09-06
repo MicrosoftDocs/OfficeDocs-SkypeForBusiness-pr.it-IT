@@ -20,12 +20,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per le riunioni di team che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 5f45e8498a63397154b98d0dd2ac1469080fe5f6
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: 1e5b3fd1c76f4ff925b23b838e2719ec93077f14
+ms.sourcegitcommit: 332817f49ec1e6767334fdd4c2ec3f791020a26c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483302"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36767195"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni delle riunioni in Microsoft Teams
 
@@ -40,7 +40,7 @@ Con l'aggiunta anonima, chiunque può partecipare alla riunione come utente anon
 1. Nella barra di spostamento sinistra, vai a**Impostazioni riunione** **riunioni** > .
 2. In **partecipanti**, attivare **gli utenti anonimi possono partecipare a una riunione**.
 
-    ![Screenshot delle impostazioni dei partecipanti per le riunioni nell'] interfaccia di amministrazione Screenshot (media/meeting-settings-participants.png "delle impostazioni dei partecipanti per le riunioni di team nell'") interfaccia di amministrazione di Microsoft Teams
+    ![Screenshot delle impostazioni dei partecipanti per le riunioni nell'] interfaccia di amministrazione Screenshot (media/meeting-settings-participants.png "delle impostazioni dei partecipanti per le riunioni di team nell'interfaccia di amministrazione di Microsoft teams")
 
 Se non si vuole che gli utenti anonimi partecipino alle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
@@ -63,7 +63,7 @@ Se non si vuole che gli utenti anonimi partecipino alle riunioni pianificate dag
 1. Nella barra di spostamento sinistra, vai a**Impostazioni riunione** **riunioni** > .
 2. In **invito tramite posta elettronica**eseguire le operazioni seguenti:
 
-    ![Screenshot delle impostazioni dell'invito alla riunione che è possibile personalizzare] Screenshot (media/meeting-settings-invitation.png "delle impostazioni dell'invito alla riunione che è possibile personalizzare per le riunioni") di Teams
+    ![Screenshot delle impostazioni dell'invito alla riunione che è possibile personalizzare] Screenshot (media/meeting-settings-invitation.png "delle impostazioni dell'invito alla riunione che è possibile personalizzare per le riunioni di teams")
 
     - **URL del logo** Immettere l'URL in cui è archiviato il logo.
     - **URL legale** Se l'organizzazione ha un sito Web legale in cui si vuole che gli utenti possano rivolgersi per eventuali problemi legali, immettere l'URL qui.
@@ -85,9 +85,11 @@ Se si usa la qualità del servizio [(QoS)](qos-in-teams.md) per definire la prio
 1. Nella barra di spostamento sinistra, vai a**Impostazioni riunione** **riunioni** > .
 2. In **rete**eseguire le operazioni seguenti:
 
-    ![Screenshot delle impostazioni di rete per le riunioni nell'] interfaccia di amministrazione Screenshot (media/meeting-settings-network.png "delle impostazioni di rete per le riunioni di team nell'") interfaccia di amministrazione di Microsoft Teams
+    ![Screenshot delle impostazioni di rete per le riunioni nell'] interfaccia di amministrazione Screenshot (media/meeting-settings-network.png "delle impostazioni di rete per le riunioni di team nell'interfaccia di amministrazione di Microsoft teams")
 
     - Per consentire l'uso dei contrassegni di DSCP per QoS, attivare l'opzione **Inserisci indicatori di qualità del servizio (QoS) per il traffico multimediale in tempo reale**. Hai solo l'opzione di usare i marcatori o meno; non è possibile impostare indicatori personalizzati per ogni tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method) .
+    > [!NOTE] 
+    > L'attivazione degli **indicatori di qualità del servizio (QoS) per il traffico multimediale in tempo reale** consentirà anche di comunicare con il relay di trasporto con le porte UDP 3479 (audio), 3480 (video) e 3481 (condivisione).
     - Per specificare gli intervalli di porte, accanto a **selezionare un intervallo di porte per ogni tipo di traffico multimediale in tempo reale**, selezionare **Specifica intervalli di porte**e quindi immettere le porte di inizio e fine per la condivisione di audio, video e dello schermo. Per implementare QoS è necessario selezionare questa opzione.
     > [!IMPORTANT]
     > Se si seleziona **Usa automaticamente le porte disponibili**, vengono usate le porte disponibili tra 1024 e 65535. Usare questa opzione solo quando non si implementa QoS.

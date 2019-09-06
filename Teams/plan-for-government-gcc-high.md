@@ -3,7 +3,6 @@ title: Pianificare l'implementazione di Microsoft 365 Government-GCC High Deploy
 author: lolajacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 01/03/2019
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -17,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e6aacceaee811a80a9451f26cc1e8cba6ed56a49
-ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
+ms.openlocfilehash: d9e346e4e9d94c30454ad42ef5a3c44e12f2cde0
+ms.sourcegitcommit: 332817f49ec1e6767334fdd4c2ec3f791020a26c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36271382"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36767113"
 ---
 # <a name="plan-for-microsoft-365-government---gcc-high-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-GCC High
 
@@ -40,7 +39,7 @@ Microsoft 365 Government-GCC High Environment garantisce la conformità con i re
 - L'accesso al contenuto del cliente dell'organizzazione è limitato al personale Microsoft schermato.
 - Microsoft 365 Government-GCC High è conforme alle certificazioni e alle accreditazioni necessarie per i clienti del settore pubblico degli Stati Uniti.
 
-Per altre informazioni sul governo Microsoft 365-GCC High offering for US Government Customers in [Office 365 Government plans](https://products.office.com/government/compare-office-365-government-plans), inclusi i [requisiti](https://products.office.com/government/compare-office-365-government-plans#EligibilityRequirements)di ammissibilità.
+Per altre informazioni sul governo Microsoft 365-GCC High offering for US Government Customers in [Office 365 Government plans](https://products.office.com/government/compare-office-365-government-plans), inclusi i [requisiti di ammissibilità](https://products.office.com/government/compare-office-365-government-plans#EligibilityRequirements).
 
 La [Descrizione del servizio governativo degli Stati Uniti di Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) descrive i vantaggi della piattaforma, che sono centrati sui requisiti di conformità delle riunioni negli Stati Uniti.
 
@@ -154,6 +153,7 @@ Determinare i requisiti per la governance e il modo in cui è possibile conoscer
 
 ## <a name="step-6-deploy-teams-for-collaboration"></a>Passaggio 6. Distribuire teams per la collaborazione
 
-Dopo aver eseguito l'accesso a Microsoft 365 Government-GCC High, è possibile seguire l'approccio standard di distribuzione dell'uso di [FastTrack](https://www.microsoft.com/fasttrack) e del partner scelto per il servizio a bordo.
+Dopo aver eseguito l'accesso a Microsoft 365 Government-GCC High, seguire il percorso di distribuzione consigliato descritto in [come implementare Microsoft teams](How-to-roll-out-teams.md). Assicurati di interagire con il team di gestione di adozioni e cambiamenti.
 
-Quando si è pronti, distribuire teams per [consentire la collaborazione all'interno dell'organizzazione tramite Team e canali](teams-overview.md). Assicurati di partecipare al team di gestione di adozioni e cambiamenti o ai campioni di team.
+È anche possibile collaborare con [FastTrack](https://www.microsoft.com/fasttrack) o con il partner scelto per l'onboard del servizio.
+

@@ -3,7 +3,6 @@ title: Pianificare le distribuzioni di Microsoft 365 Government-DoD-Microsoft Te
 author: lolajacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 01/11/2019
 ms.topic: article
 ms.service: msteams
 ms.reviewer: daro
@@ -17,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 247f0209c66a5d6ea1e39e938498eb0f75f9fdab
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 210712e29fb64f587f2d1f2c9281e6383da11da1
+ms.sourcegitcommit: 332817f49ec1e6767334fdd4c2ec3f791020a26c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237707"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36767184"
 ---
 # <a name="plan-for-microsoft-365-government---dod-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-DoD
 
@@ -40,7 +39,7 @@ L'ambiente Microsoft 365 Government-DoD offre la conformità con i requisiti del
 - L'accesso al contenuto del cliente dell'organizzazione è limitato al personale Microsoft schermato.
 - Microsoft 365 Government-DoD è conforme alle certificazioni e alle accreditazioni necessarie per i clienti del settore pubblico.
 
-Per altre informazioni su Microsoft 365 Government-DoD offering for US Government Customers in [Office 365 Government plans](https://products.office.com/government/compare-office-365-government-plans), inclusi i [requisiti](https://products.office.com/government/compare-office-365-government-plans#EligibilityRequirements)di ammissibilità.
+Per altre informazioni su Microsoft 365 Government-DoD offering for US Government Customers in [Office 365 Government plans](https://products.office.com/government/compare-office-365-government-plans), inclusi i [requisiti di ammissibilità](https://products.office.com/government/compare-office-365-government-plans#EligibilityRequirements).
 
 La [Descrizione del servizio governativo degli Stati Uniti di Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) descrive i vantaggi della piattaforma, che sono centrati sui requisiti di conformità delle riunioni negli Stati Uniti.
 
@@ -153,6 +152,6 @@ Determinare i requisiti per la governance e il modo in cui è possibile conoscer
 
 ## <a name="step-6-deploy-teams-for-collaboration"></a>Passaggio 6. Distribuire teams per la collaborazione
 
-Dopo aver eseguito l'accesso a Microsoft 365 Government-DoD, è possibile seguire l'approccio di distribuzione standard dell'uso di [FastTrack](https://www.microsoft.com/fasttrack) e del partner scelto per il servizio.
+Dopo aver eseguito l'accesso a Microsoft 365 Government-DoD, seguire il percorso di distribuzione consigliato descritto in [come implementare Microsoft teams](How-to-roll-out-teams.md). Assicurati di interagire con il team di gestione di adozioni e cambiamenti.
 
-Quando si è pronti, distribuire teams per [consentire la collaborazione all'interno dell'organizzazione tramite Team e canali](teams-overview.md). Assicurati di partecipare al team di gestione di adozioni e cambiamenti o ai campioni di team.
+È anche possibile collaborare con [FastTrack](https://www.microsoft.com/fasttrack) o con il partner scelto per l'onboard del servizio.

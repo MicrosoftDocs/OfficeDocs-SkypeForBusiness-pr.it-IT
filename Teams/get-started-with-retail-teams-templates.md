@@ -3,7 +3,6 @@ title: Introduzione ai modelli di teams in Retail
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 03/11/2019
 audience: Admin
 ms.topic: article
 ms.service: msteams
@@ -18,12 +17,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e463061dca0633480124bbe91fb2e8e6f9f926f6
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: 1ef5647ba20b3fd9d3d4378182ea2e8b39b1487b
+ms.sourcegitcommit: 332817f49ec1e6767334fdd4c2ec3f791020a26c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "36181642"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36767102"
 ---
 # <a name="get-started-with-teams-templates-in-retail"></a>Introduzione ai modelli di teams in Retail 
 
@@ -33,7 +32,7 @@ I modelli di teams hanno definizioni predefinite delle strutture del team proget
 
 In questo articolo verranno introdotti tutti i modelli di team e il modo in cui è consigliabile usarli.
 
-Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione al dettaglio.
+Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione al dettaglio. Supponiamo che tu abbia già implementato il servizio teams nell'organizzazione. Se non sono stati ancora distribuiti team, iniziare leggendo la [procedura per l'implementazione di Microsoft teams](How-to-roll-out-teams.md).
 
 Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli](get-started-with-teams-templates.md)di teams.
 
@@ -50,7 +49,7 @@ Modi consigliati per personalizzare il modello di archivio per l'organizzazione:
 
 - Se l'organizzazione ha reparti all'interno di ogni archivio, aggiungere un canale per ogni reparto. Ciò faciliterà la comunicazione e la collaborazione all'interno del reparto.
 
-- Se l'organizzazione ha siti Web interni, ad esempio un sito di SharePoint, è consigliabile aggiungerli come schede nel canale del team pertinente. Per istruzioni, vedere [Introduzione ai modelli](get-started-with-teams-templates.md) di teams.
+- Se l'organizzazione ha siti Web interni, ad esempio un sito di SharePoint, è consigliabile aggiungerli come schede nel canale del team pertinente. Per istruzioni, vedere [Introduzione ai modelli di teams](get-started-with-teams-templates.md) .
 
 ## <a name="manager-collaboration-template"></a>Modello di Collaboration Manager
 
@@ -63,4 +62,4 @@ Il modello di collaborazione di Manager è un altro dei modelli di Team progetta
 
 Modi consigliati per personalizzare il modello di collaborazione di gestione per l'organizzazione:
 
-- Se l'organizzazione ha siti Web interni, ad esempio un sito di SharePoint, che sono rilevanti per i responsabili, valutare la possibilità di aggiungerli come schede in un canale del team [](get-started-with-teams-templates.md) pertinente (vedere la documentazione relativa alle istruzioni).
+- Se l'organizzazione ha siti Web interni, ad esempio un sito di SharePoint, che sono rilevanti per i responsabili, valutare la possibilità di aggiungerli come schede in un canale del team pertinente (vedere [la documentazione relativa alle istruzioni](get-started-with-teams-templates.md) ).
