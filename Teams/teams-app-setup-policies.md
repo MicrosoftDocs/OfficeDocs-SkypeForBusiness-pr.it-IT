@@ -18,12 +18,12 @@ search.appverid: MET150
 description: Informazioni sui criteri di configurazione delle app in Microsoft teams e su come usarli per aggiungere le app per personalizzare i team per gli utenti dell'organizzazione.
 f1keywords:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 492083de2414d93d5fe6d051374f3525311f8740
-ms.sourcegitcommit: c6ecea3205d509609a655db2348c04f655319df8
+ms.openlocfilehash: 95d96e3bebdcbe7acfde1bc84da7d7216090e5b3
+ms.sourcegitcommit: ee6fca44a611acaa8234563c546a3f841bba6e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36185320"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790910"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -51,7 +51,7 @@ Per includere le app desiderate, è possibile modificare le impostazioni del cri
 
 Puoi usare l'interfaccia di amministrazione di Microsoft teams per creare criteri personalizzati.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai**criteri di configurazione**delle **app** > teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di configurazione**delle **app teams**.
 2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio e quindi fare clic su **Aggiungi app**.
 4. Attivare o disattivare Consenti il **caricamento di app personalizzate**, a seconda che si voglia consentire agli utenti di caricare app personalizzate in teams. Non potrai modificare questa impostazione se Consenti le app di **terze parti o personalizzate** è disattivata nelle [impostazioni dell'app a livello di organizzazione](teams-app-permission-policies.md#manage-org-wide-app-settings) nei criteri di autorizzazione dell'app.
@@ -67,7 +67,7 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams per creare criter
 
 È possibile usare l'interfaccia di amministrazione di Microsoft teams per modificare un criterio, inclusi i criteri globali (a livello di organizzazione) e i criteri personalizzati creati.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai**criteri di configurazione**delle **app** > teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di configurazione**delle **app teams**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
 3. Da qui apportare le modifiche desiderate. È possibile aggiungere, rimuovere e modificare l'ordine delle app.
 4. Fai clic su **Salva**.
@@ -86,7 +86,7 @@ Per assegnare un criterio a più utenti alla volta, vedere [modificare le impost
 
 In alternativa, è anche possibile eseguire le operazioni seguenti:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai**criteri di configurazione**delle **app** > teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di configurazione**delle **app teams**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
 3. Selezionare **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
@@ -137,6 +137,8 @@ L'app chiamante non è disponibile in teams per l'istruzione. Quando crei un nuo
 #### <a name="how-many-apps-can-be-added-to-a-policy"></a>Quante app possono essere aggiunte a un criterio?
 
 Un minimo di due app deve essere aggiunto ai client per dispositivi mobili Teams (iOS e Android). Se un criterio include meno di due app, i client mobili non riflettono le impostazioni dei criteri e invece continueranno a usare la configurazione esistente.
+
+Non esiste alcun limite per il numero di app che è possibile aggiungere a un criterio.
 
 #### <a name="how-long-does-it-take-for-policy-changes-to-take-effect"></a>Quanto tempo occorre per applicare le modifiche ai criteri?
 

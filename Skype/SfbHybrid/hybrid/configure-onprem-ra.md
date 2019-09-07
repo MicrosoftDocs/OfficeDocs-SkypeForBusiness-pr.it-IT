@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: a307a5ed40c52579020f4cd0eef6646afdb15649
-ms.sourcegitcommit: 5ec5df597614d402917e0585575dd69acda22172
+ms.openlocfilehash: 72c56d8534eeacf9b3430e4439c2f40ab1f51f6d
+ms.sourcegitcommit: ee6fca44a611acaa8234563c546a3f841bba6e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "36253955"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790862"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
@@ -61,7 +61,7 @@ La creazione di un account delle risorse che usa un numero di telefono richiede 
    Se si è al di fuori degli Stati Uniti, non è possibile usare l'interfaccia di amministrazione di Microsoft teams per ottenere i numeri di servizio. Vai a [gestire i numeri di telefono per l'organizzazione](/MicrosoftTeams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization) per vedere come farlo dall'esterno degli Stati Uniti.
 
 2. Acquistare una licenza di sistema telefonico. Vedere  
-   - [Sistema telefonico-licenza utente virtuale](/MicrosoftTeams/teams-add-on-licensing/virtual-user.md)
+   - [Sistema telefonico-licenza utente virtuale](/MicrosoftTeams/teams-add-on-licensing/virtual-user)
    - [Office 365 Enterprise E1 e E3](/MicrosoftTeams/teams-add-on-licensing/office-365-enterprise-e1-e3)
    - [Office 365 Enterprise E5](/MicrosoftTeams/teams-add-on-licensing/office-365-enterprise-e5-with-audio-conferencing)
    - [Software aziendale di Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software)
@@ -103,7 +103,7 @@ La creazione di un account delle risorse che usa un numero di telefono richiede 
 
 L'account delle risorse avrà bisogno di un numero di telefono assegnato se verrà assegnato a un operatore automatico di primo livello o a una coda di chiamata. I numeri di telefono degli utenti (abbonati) non possono essere assegnati a un account delle risorse, ma possono essere usati solo numeri di telefono a pagamento o a numero verde.
 
-  È possibile assegnare un numero ibrido di routing diretto all'account delle risorse.  Vedere [pianificare il routing diretto](/MicrosoftTeams/direct-routing-plan.md) per i dettagli.
+  È possibile assegnare un numero ibrido di routing diretto all'account delle risorse.  Vedere [pianificare il routing diretto](/MicrosoftTeams/direct-routing-plan) per i dettagli.
 
   > [!NOTE]
   > I numeri di servizio di routing diretto assegnati agli account delle risorse per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft teams.
@@ -115,7 +115,7 @@ L'account delle risorse avrà bisogno di un numero di telefono assegnato se verr
 
 8. Associare l'account delle risorse all'operatore automatico del sistema telefonico o alla coda di chiamata selezionata in precedenza.
 
-Un esempio di implementazione di piccole imprese è disponibile in [Small Business example-configurare un operatore automatico](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-org-aa.yml) e un [esempio di piccola impresa-configurare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq.yml).
+Un esempio di implementazione di piccole imprese è disponibile in [Small Business example-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) e un [esempio di piccola impresa-configurare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq).
 
 ## <a name="create-a-resource-account-without-a-phone-number"></a>Creare un account delle risorse senza un numero di telefono
 
@@ -146,11 +146,14 @@ Accedere al server front-end Skype for business ed eseguire i cmdlet di PowerShe
    - [Creare una coda di chiamata cloud](/MicrosoftTeams/create-a-phone-system-call-queue)  
 4. Associare l'account delle risorse e l'operatore automatico del sistema telefonico o la coda di chiamata selezionata in precedenza.
 
-Un esempio di implementazione di piccole imprese è disponibile in [Small Business example-configurare un operatore automatico](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-org-aa.yml) e un [esempio di piccola impresa-configurare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq.yml).
+Un esempio di implementazione di piccole imprese è disponibile in [Small Business example-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) e un [esempio di piccola impresa-configurare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq).
 
 ## <a name="test-the-implementation"></a>Testare l'implementazione
 
-Il modo migliore per testare l'implementazione consiste nel chiamare il numero configurato per un operatore automatico o una coda di chiamata del sistema telefonico e connettersi a uno degli agenti o dei menu. È anche possibile inserire rapidamente una chiamata di prova usando il **pulsante test** nel riquadro azioni dell'interfaccia di amministrazione. Per apportare modifiche a un operatore automatico o a una coda di chiamata del sistema telefonico, selezionarlo e quindi fare clic su **modifica**nel riquadro azioni.
+Il modo migliore per testare l'implementazione consiste nel chiamare il numero configurato per un operatore automatico o una coda di chiamata del sistema telefonico e connettersi a uno degli agenti o dei menu. È anche possibile inserire rapidamente una chiamata di prova usando il **pulsante test** nel riquadro azioni dell'interfaccia di amministrazione. Per apportare modifiche a un operatore automatico o a una coda di chiamata del sistema telefonico, selezionarlo e quindi fare clic su **modifica**nel riquadro azioni. 
+
+> [!TIP]
+> Se l'account delle risorse ha difficoltà di assegnazione a una coda di chiamata o a un operatore automatico, vedere [problemi noti di Microsoft teams](/MicrosoftTeams/Known-issues#phone-system) e la sezione [come correggere le istanze dell'applicazione ibrida](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Auto-Attendant-and-Call-Queues-Service-Update/ba-p/564521) nel Blog di Microsoft teams.
 
 ## <a name="moving-an-exchange-um-auto-attendant-or-call-queue-to-phone-system"></a>Spostamento di un operatore automatico di Exchange UM o di una coda di chiamata nel sistema telefonico
 
@@ -180,7 +183,7 @@ La migrazione dalla messaggistica unificata di Exchange al sistema telefonico ri
 
 4. Configurare un operatore automatico o una coda di chiamata del sistema telefonico che usa gli endpoint come descritto in precedenza.
 
-   Potrebbe essere utile usare gli esercizi nell'esempio di esercitazione intitolato [Small Business-configurare un operatore automatico](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-org-aa.yml) per creare una mappa logica delle gerarchie nel vecchio sistema di messaggistica unificata di Exchange.
+   Potrebbe essere utile usare gli esercizi nell'esempio di esercitazione intitolato [Small Business-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) per creare una mappa logica delle gerarchie nel vecchio sistema di messaggistica unificata di Exchange.
 5. Testare l'operatore automatico del sistema telefonico o la coda di chiamata.
 6. Riassegnare il numero di telefono collegato alla coda di messaggistica unificata di Exchange o all'operatore automatico all'operatore automatico o alla coda di chiamata corrispondente del sistema telefonico.  
 

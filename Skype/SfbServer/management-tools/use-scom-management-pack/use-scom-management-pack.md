@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ca03f9ab-a227-4903-85a8-427df6a0a5bb
 description: "Riepilogo: informazioni su come configurare l'infrastruttura di Skype for Business Server 2015 per l'utilizzo con System Center Operations Manager."
-ms.openlocfilehash: 0f16e49477e457be7743d024061288f869d9ff58
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: a5f676180508898b433953c37656063bd34bd323
+ms.sourcegitcommit: ee6fca44a611acaa8234563c546a3f841bba6e1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36195897"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790893"
 ---
 # <a name="manage-skype-for-business-server-2015-using-scom-management-pack"></a>Gestire Skype for Business Server 2015 con SCOM Management Pack
  
@@ -41,7 +41,7 @@ Identificare e [configurare il server di gestione principale](configure-the-prim
 
 I Management Pack possono essere usati con System Center Operations Manager 2007 R2 (64 bit) (supportato solo per scopi di migrazione) o System Center Operations Manager 2012 SP1 &amp; r2 (64 bit) o System Center operations manager 2016 (64 bit). La tabella seguente mostra le configurazioni supportate per i Management Pack per Skype for Business Server 2015: 
   
-|**Configurazione**|**Supportati?**|
+|Configurazione|Supportati?|
 |:-----|:-----|
 |Sistema operativo Windows Server 2008 R2  <br/> Sistema operativo Windows Server 2012 R2  <br/> |Sì. Sia nei nodi Skype for Business Server 2015 che nel monitoraggio delle transazioni sintetiche.  <br/> |
 |Server raggruppati  <br/> |Non supportato.  <br/> |
@@ -54,7 +54,7 @@ I Management Pack possono essere usati con System Center Operations Manager 2007
    
 La tabella seguente mostra i requisiti di capacità e sistema operativo per un nodo di Watcher delle transazioni sintetiche:
   
-|**Componente hardware**|**Requisito minimo**|
+|Componente hardware|Requisito minimo|
 |:-----|:-----|
 |CPU  <br/> |Una delle operazioni seguenti:  <br/> processore a 64 bit, quad-core, 2,33 GHz o superiore  <br/> processore 2-vie a 64 bit, Dual-Core, 2,33 GHz o superiore  <br/> |
 |Memoria  <br/> |8 GB  <br/> |
@@ -84,7 +84,9 @@ Il pacchetto di monitoraggio per Skype for Business Server 2015 include i file s
 ## <a name="whats-new"></a>Novità
 
 Le caratteristiche seguenti sono nuove per i Management Pack di Skype for Business Server 2015.
-  
+
+- **Modifiche all' [aggiornamento di 2019 giugno](https://www.microsoft.com/en-in/download/details.aspx?id=47364) ** Alcuni avvisi hanno avuto caratteri speciali rimossi. In alcuni casi i caratteri speciali interferiscono con la funzionalità di notifica del canale di comando SCOM.
+
 - **Individuazione automatica per l'accesso client** Le applicazioni client che si iscrivono a Skype for Business Server 2015 spesso scoprono automaticamente il server in cui effettuare l'accesso. Le transazioni sintetiche supportano ora la verifica che l'individuazione automatica sia configurata correttamente.
     
 - **Intervalli di esecuzione delle transazioni sintetiche personalizzati** Per semplificare il processo di configurazione dei nodi Watcher, le transazioni sintetiche possono condividere gli account utente. Questo rallenta la frequenza con cui vengono eseguiti i test quando i test vengono serializzati per evitare conflitti. Per impostazione predefinita, le transazioni sintetiche vengono eseguite ogni 15 minuti per garantire che tutti i test abbiano il tempo per l'esecuzione. Gli amministratori che scelgono di usare più utenti o meno test per ogni utente possono ora ridurre anche l'intervallo di esecuzione.
@@ -97,13 +99,14 @@ Le caratteristiche seguenti sono nuove per i Management Pack di Skype for Busine
 
 Il Management Pack di Skype for Business Server 2015 sfrutta una vasta gamma di funzionalità che consentono di rilevare e diagnosticare i problemi. Queste caratteristiche consentono di ottenere una visibilità in tempo reale per l'integrità di un ambiente Skype for Business Server 2015.
   
-|**Scenario di monitoraggio**|**Descrizione**|
+|Scenario di monitoraggio|Descrizione|
 |:-----|:-----|
 |Transazioni sintetiche  <br/> | I cmdlet di Windows PowerShell per testare e aiutare a garantire l'elevata disponibilità di scenari come l'accesso, la presenza, la messaggistica istantanea e le conferenze per gli utenti. <br/> Le transazioni sintetiche possono essere eseguite da qualsiasi posizione geografica, anche all'interno dell'organizzazione, al di fuori dell'azienda e nelle filiali.  <br/> Quando una transazione sintetica non riesce, vengono creati i log HTML per determinare l'esatta natura dell'errore. Ciò include la comprensione dell'azione non riuscita, la latenza di ogni azione, la riga di comando usata per eseguire il test e l'errore specifico che si è verificato.  <br/> |
 |Avvisi di affidabilità delle chiamate  <br/> |I record dettagli chiamata (CDRs) scritti dai server Skype for Business Server 2015 riflettono se gli utenti sono in grado di connettersi a una chiamata o perché viene terminata una chiamata. Chiama avvisi di affidabilità consente di eseguire una query nel database CDR per produrre avvisi che indicano quando un numero elevato di utenti riscontra problemi di connettività per le chiamate peer-to-peer o per le funzionalità di conferenza di base.  <br/> La copertura dello scenario include chiamate audio, messaggistica istantanea peer-to-peer e altre funzionalità di conferenza.  <br/> |
 |Avvisi di qualità multimediale  <br/> |Query di database che esaminano i report di qualità dell'esperienza (QoE) pubblicati dai client Skype for Business Server 2015 alla fine di ogni chiamata. Queste query producono avvisi che individuano scenari in cui gli utenti hanno più probabilità di provare una qualità media compromessa durante le chiamate e le conferenze. I dati sono basati su metriche chiave, ad esempio la latenza e la perdita di pacchetti, che contribuiscono direttamente alla qualità dell'esperienza utente.  <br/> |
 |Avvisi di integrità dei componenti  <br/> |I singoli componenti del server generano avvisi tramite log eventi e contatori delle prestazioni per indicare le condizioni di errore che potrebbero influire in modo significativo sugli scenari utente. Questi avvisi indicano una varietà di condizioni, ad esempio i servizi non in uso, le frequenze di errore elevate, la latenza elevata dei messaggi o i problemi di connettività.  <br/> |
 |Monitoraggio dell'integrità delle dipendenze  <br/> |Skype for Business Server può non riuscire per diversi motivi esterni. Il Management Pack monitora e raccoglie i dati per le dipendenze esterne critiche che possono indicare problemi gravi. Queste dipendenze includono la disponibilità di Internet Information Services (IIS) e la CPU dei server usati per Skype for Business Server.  <br/> |
+|||
    
 ### <a name="alert-prioritization"></a>Priorità degli avvisi
 
@@ -119,19 +122,18 @@ Gli avvisi sono classificati nelle categorie seguenti:
 
 I Management Pack di Skype for Business Server 2015 offrono una maggiore copertura per gli avvisi tramite transazioni sintetiche. Le transazioni sintetiche sono cmdlet di Windows PowerShell integrati nel Management Pack di Operations Manager per testare gli scenari utente end-to-end. Quando si designa un server per l'esecuzione di transazioni sintetiche, questi cmdlet vengono attivati periodicamente dal Management Pack. Gli errori derivanti da una transazione sintetica generano un avviso con stato. Ecco le transazioni sintetiche supportate per Skype for Business Server 2015:
   
-**Transazioni sintetiche supportate per la registrazione, la presenza e i contatti**
 
-||||
+
+|Transazioni sintetiche supportate per la registrazione, la presenza e i contatti|||
 |:-----|:-----|:-----|
 |1  <br/> |Registrazione (accesso utente)  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
 |2  <br/> |Servizio Rubrica (download file)  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
 |3  <br/> |Query Web Rubrica  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
 |4  <br/> |Presenza  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
 |5  <br/> |Archivio contatti unificato  <br/> |Disponibile Lync Server 2013 e oltre  <br/> |
-   
-**Transazioni sintetiche supportate per i servizi peer-to-peer**
+||||   
 
-||||
+|Transazioni sintetiche supportate per i servizi peer-to-peer|||
 |:-----|:-----|:-----|
 |6  <br/> |Messaggistica istantanea peer-to-peer  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
 |7  <br/> |Video audio peer-to-peer  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
@@ -139,10 +141,9 @@ I Management Pack di Skype for Business Server 2015 offrono una maggiore copertu
  
 > [!NOTE]
 > Il supporto di MCX (servizio mobilità) per i client mobili legacy non è più disponibile in Skype for Business Server 2019. Tutti i client di Skype for business mobile correnti usano già Unified Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
-  
-**Transazioni sintetiche supportate per i servizi di conferenza e la chat persistente**
 
-||||
+
+|Transazioni sintetiche supportate per i servizi di conferenza e la chat persistente|||
 |:-----|:-----|:-----|
 |9  <br/> |Video conferenza audio  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
 |10  <br/> |Conferenza dati  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
@@ -152,22 +153,22 @@ I Management Pack di Skype for Business Server 2015 offrono una maggiore copertu
 |14  <br/> |Conferenza telefonica con accesso esterno  <br/> |Novità di Skype for Business Server 2015  <br/> |
 |15  <br/> |Conferenza di condivisione applicazioni  <br/> |Novità di Skype for Business Server 2015  <br/> |
 |16  <br/> |Conferenza UCWA (Web Meeting join)  <br/> |Novità di Skype for Business Server 2015  <br/> |
-   
-**Transazioni sintetiche supportate per le dipendenze di rete e partner**
-
 ||||
+
+|Transazioni sintetiche supportate per le dipendenze di rete e partner|||
 |:-----|:-----|:-----|
 |17  <br/> |Connettività AV Edge  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 |18  <br/> |Connettività di messaggistica unificata di Exchange (Voicemail) per AV Edge  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 |19  <br/> |Chiamata peer-to-peer PSTN  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
 |20  <br/> |Messaggistica istantanea XMPP (Federazione)  <br/> |Disponibile in Lync Server 2013 e Skype for business 2015  <br/> |
 |21  <br/> |Video Interop server  <br/> |Novità di Skype for Business Server 2015  <br/> |
+||||
    
 ## <a name="how-health-rolls-up"></a>Come viene arrotolato l'integrità
 
 La tabella seguente Mostra gli Stati di integrità degli oggetti il pacchetto di monitoraggio di Skype for Business Server.
   
-|**Oggetto Management Pack**|**Descrizione**|
+|Oggetto Management Pack|Descrizione|
 |:-----|:-----|
 |Distribuzione di Skype for Business Server  <br/> |Rappresenta la distribuzione di Skype for Business Server 2015 nell'organizzazione.  <br/> |
 |Sito di Skype for Business Server  <br/> |Rappresenta diverse posizioni geografiche in cui vengono distribuiti i servizi.  <br/> |
