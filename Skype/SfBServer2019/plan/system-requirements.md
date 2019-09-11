@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: "Riepilogo: preparare i server e l'infrastruttura di dominio di Skype for Business Server 2019 con questo argomento. Hardware, sistema operativo, database, software, tutti i requisiti di sistema e le raccomandazioni, insieme al certificato DNS, alla condivisione di file e alle informazioni di Active Directory, sono qui per garantire un'installazione e una distribuzione di successo della server farm."
-ms.openlocfilehash: f54b6647a57cf61cb1ad85ad55985243129242f7
-ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
+ms.openlocfilehash: e14da71795989356f24d7dc6ae72f94a649011e5
+ms.sourcegitcommit: dc151bf4454ddec20db5cd133a42a67599c08d64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36464648"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838119"
 ---
 # <a name="system-requirements-for-skype-for-business-server-2019"></a>Requisiti di sistema per Skype for Business Server 2019
  
@@ -112,7 +112,7 @@ Ci sono alcune operazioni che è necessario installare o configurare per qualsia
 |**Software/ruolo**|**Dettagli**|
 |:-----|:-----|
 |Windows PowerShell 3,0  <br/> |Tutti i server Skype for Business Server richiedono l'installazione di Windows PowerShell 3,0.  <br/> • Questo deve essere installato per impostazione predefinita con Windows Server 2016.<br/> |
-|Microsoft .NET Framework  <br/> |Servizi WCF è una **funzionalità** installata come funzionalità di Windows, in **Server Manager**, inizialmente non è necessario alcun download. <br/> • È necessario verificare che durante l'installazione di questa funzionalità o se è già installata e che si sta controllando che l'opzione di **attivazione http** sia anche selezionata e installata, in questo modo: <br/> ![Screenshot che mostra l'opzione di attivazione HTTP nelle caratteristiche di .NET Framework 4,5.](../../SfbServer/media/a4064fa0-fa49-4474-bd98-b9a79ff68f8b.png) <br/> Non preoccuparti se viene visualizzata una finestra popup aggiuntiva che indica che è necessario installare altre cose per l'attivazione HTTP. Questo è normale; fare clic su OK e andare avanti. Se non viene visualizzata questa finestra, è possibile assumere che questi elementi siano già installati e procedere.  <br/> Microsoft .NET Framework viene in genere installato quando si installa Windows Server 2016. Skype for Business Server richiede anche Microsoft .NET Framework 4,7, quindi probabilmente è necessario aggiornarlo. Puoi trovare l'aggiornamento [qui](https://support.microsoft.com/en-us/help/3186497/the-net-framework-4-7-offline-installer-for-windows/)<br/> |
+|Microsoft .NET Framework  <br/> |Servizi WCF è una **funzionalità** installata come funzionalità di Windows, in **Server Manager**, inizialmente non è necessario alcun download. <br/> • È necessario verificare che durante l'installazione di questa funzionalità o se è già installata e che si sta controllando che l'opzione di **attivazione http** sia anche selezionata e installata, in questo modo: <br/> ![Screenshot che mostra l'opzione di attivazione HTTP nelle caratteristiche di .NET Framework 4,5.](../../SfbServer/media/a4064fa0-fa49-4474-bd98-b9a79ff68f8b.png) <br/> Non preoccuparti se viene visualizzata una finestra popup aggiuntiva che indica che è necessario installare altre cose per l'attivazione HTTP. Questo è normale; fare clic su OK e andare avanti. Se non viene visualizzata questa finestra, è possibile assumere che questi elementi siano già installati e procedere.  <br/> Microsoft .NET Framework viene in genere installato quando si installa Windows Server 2016. Skype for Business Server richiede anche Microsoft .NET Framework 4,7 o 4,8, quindi probabilmente è necessario aggiornarlo. Puoi trovare l'aggiornamento [qui](https://support.microsoft.com/en-us/help/3186497/the-net-framework-4-7-offline-installer-for-windows/)<br/> |
 |Media Foundation  <br/> |Per Windows Server 2016, Windows Media Format Runtime viene installato con Microsoft Media Foundation.  <br/> Tutti i server front-end e i server Standard Edition usati per le conferenze richiedono che Windows Media Format runtime esegua i file di Windows Media Audio (con estensione WMA) che vengono riprodotti dalle applicazioni Park, annuncio e Response Group per gli annunci e la musica.  <br/> |
 |Windows Identity Foundation  <br/> |Per supportare scenari di autenticazione da server a server per Skype for Business Server 2019 è necessario Windows Identity Foundation 3,5.  <br/> • Per Windows Server 2016, non è necessario scaricare nulla. Aprire **Server Manager**e accedere alla **procedura guidata Aggiungi ruoli e funzionalità**. **Windows Identity Foundation 3,5** è elencato nella sezione **caratteristiche** . Se è selezionata, sei bravo. In caso contrario, selezionarlo e fare clic su **Avanti** per raggiungere il pulsante **Installa** . <br/> |
 |Strumenti di amministrazione del server remoto  <br/> |Strumenti di amministrazione del ruolo: strumenti AD DS e AD LDS  <br/> |
@@ -123,7 +123,7 @@ Ci sono alcune operazioni che è necessario installare o configurare per qualsia
 |:-----|:-----|
 |Internet Information Services (IIS)  <br/> |IIS è necessario in tutti i server front-end e in tutti i server Standard Edition, con i seguenti moduli selezionati:  <br/> • Caratteristiche HTTP comuni: documento predefinito, errori HTTP, contenuto statico  <br/> • Integrità e diagnostica: registrazione HTTP, strumenti di registrazione, traccia  <br/> • Prestazioni: compressione del contenuto statico, compressione del contenuto dinamico  <br/> • Sicurezza: filtro delle richieste, autenticazione del mapping dei certificati client, autenticazione di Windows  <br/> • Sviluppo di applicazioni: estensibilità .NET 3,5, Extensibility .NET 4,5, ASP.NET 3,5, ASP.NET 4,5, estensioni ISAPI, filtri ISAPI  <br/> • Strumenti di gestione: console di gestione IIS, script e strumenti di gestione di IIS  <br/> Tieni presente che è necessario anche l'accesso anonimo, ma quando Esegui l'installazione di IIS non hai un posto in cui selezionarlo nell'elenco.  <br/> |
 |Runtime in formato Windows Media  <br/> | Per Windows Server 2016 è necessario installare la funzionalità **Media Foundation** in **Server Manager**. Puoi effettivamente avviare l'installazione di Skype for Business Server 2019 senza questo, ma ti verrà richiesto di installarlo e quindi riavviare il server, prima che l'installazione di Skype for Business Server 2019 continui. È meglio farlo in anticipo. <br/> |
-|Silverlight  <br/> |È possibile installare la versione più recente di [](https://www.microsoft.com/silverlight/)Silverlight.  <br/> |
+|Silverlight  <br/> |È possibile installare la versione più recente di [Silverlight.](https://www.microsoft.com/silverlight/)  <br/> |
    
 Per aiutarti, ecco uno script di PowerShell di esempio che puoi eseguire per automatizzare questa operazione:
   

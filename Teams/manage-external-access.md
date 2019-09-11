@@ -18,12 +18,12 @@ description: L'amministratore IT può configurare l'accesso esterno per altri do
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 146ec2f30afa03a3e8519637a4f852f1b0e73cef
-ms.sourcegitcommit: 3c40bdd228ef88967cdf689100f2030f6997d9d5
+ms.openlocfilehash: dedda63d5ec97d914ba6bd1a70b7e5b3f1d9d7ee
+ms.sourcegitcommit: dc151bf4454ddec20db5cd133a42a67599c08d64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "36715862"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838113"
 ---
 <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 ======================================================
@@ -42,6 +42,9 @@ L'accesso esterno consente agli utenti esterni di trovare, chiamare e inviare me
 
 > [!IMPORTANT]
 > Attualmente, per federare all'interno dell'app Microsoft Teams a un utente esterno all'esterno dell'organizzazione che non è attualmente Guest di Azure Active Directory (Azure AD) o tenant, è necessario essere configurati correttamente per Hybrid e spostati in Skype for business online. A partire da 2/25/2019, teams non supporta la Federazione nativa senza che l'utente del profilo SIP venga ospitato in Skype for business online. Per altre informazioni su come configurare l'account per Hybrid e quindi passare a teams, vedere [aggiornare la distribuzione ibrida di Skype for business ai team](https://docs.microsoft.com/en-us/microsoftteams/upgrade-to-teams-execute-skypeforbusinesshybrid).
+
+> [!IMPORTANT]
+> Gli utenti Guest seguono le impostazioni a livello di organizzazione per la modalità di coesistenza. Non è possibile modificarlo.
 
 ## <a name="external-access-vs-guest-access"></a>Access esterno e accesso Guest
 
@@ -101,7 +104,7 @@ Per altre informazioni sulla versione gratuita di teams e su come funziona con l
 |Si vuole consentire **agli utenti di Skype for business online** di comunicare con gli **utenti di Skype for business online** da un'altra organizzazione di Office 365.    | Abilitare la modalità di coesistenza o scegliere la modalità di aggiornamento delle isole per supportare gli utenti di Skype for business nell'organizzazione. <p>In accesso esterno aggiungere il dominio esterno all'elenco consentiti o usare la Federazione aperta. <p> Attivare **gli utenti possono comunicare con l'impostazione utenti Skype for business e teams** in Access esterno.<p>Fare in modo che l'amministratore dell'organizzazione di altri team faccia tutte le stesse operazioni. |
 |Si vuole consentire **agli utenti di Skype for business online** di comunicare con gli **utenti di Skype for business online** da un'organizzazione locale.     |Abilitare la modalità di coesistenza o scegliere la modalità di aggiornamento delle isole per supportare gli utenti di Skype for business nell'organizzazione. <p>In accesso esterno aggiungere il dominio esterno all'elenco consentiti o usare la Federazione aperta.  <p>Attivare **gli utenti possono comunicare con l'impostazione utenti Skype for business e teams** in Access esterno.  <p> Quindi l'amministratore dell'organizzazione locale esegue le stesse operazioni. |
 |Si vuole consentire **agli utenti di Skype for business online** di comunicare con **gli utenti Skype** (all'interno o all'esterno dell'organizzazione).   |Abilitare la modalità di coesistenza o scegliere la modalità di aggiornamento delle isole per supportare gli utenti di Skype for business nell'organizzazione. <p>Attivare gli **utenti di Skype for business in grado di comunicare con l'impostazione utenti Skype** in Access esterno.         |
-|Si vuole consentire agli utenti di **Skype for business online** di comunicare con **gli utenti di Skype for business online** in un'altra organizzazione e **utenti Skype** dall'interno o dall'esterno dell'organizzazione.    |Abilitare la modalità di coesistenza o scegliere la modalità di aggiornamento delle isole per supportare gli utenti di Skype for business nell'organizzazione. <p>In accesso esterno aggiungere il dominio esterno all'elenco consentiti o usare la Federazione aperta.  <p> Attivare **gli utenti possono comunicare con Skype for business e gli utenti** di teams e gli **utenti di Skype for business possono comunicare con l'impostazione utenti Skype** in Access esterno. <p>Quindi, l'amministratore dell'organizzazione di altri team esegue le stesse operazioni.       <p> **Nota**: l'amministratore dell'altro dominio esterno non deve attivare **gli utenti di Skype for business in grado di comunicare con l'impostazione utenti Skype** in Access esterno.|
+|Si vuole consentire agli utenti di **Skype for business online** di comunicare con **gli utenti di Skype for business online** in un'altra organizzazione e **utenti Skype** dall'interno o dall'esterno dell'organizzazione.    |Abilitare la modalità di coesistenza o scegliere la modalità di aggiornamento delle isole per supportare gli utenti di Skype for business nell'organizzazione. <p>In accesso esterno aggiungere il dominio esterno all'elenco consentiti o usare la Federazione aperta.  <p> Attivare **gli utenti possono comunicare con Skype for business e gli utenti di teams** e gli **utenti di Skype for business possono comunicare con l'impostazione utenti Skype** in Access esterno. <p>Quindi, l'amministratore dell'organizzazione di altri team esegue le stesse operazioni.       <p> **Nota**: l'amministratore dell'altro dominio esterno non deve attivare **gli utenti di Skype for business in grado di comunicare con l'impostazione utenti Skype** in Access esterno.|
 
 > [!IMPORTANT]
 > Non è necessario aggiungere **"domini Skype"** come domini consentiti per consentire ai team o agli utenti di Skype for business online di comunicare con utenti Skype all'interno o all'esterno dell'organizzazione. Tutti i **domini Skype** sono in whitelist, quindi tutti questi domini sono considerati consentiti.
@@ -116,7 +119,7 @@ L'accesso esterno consente ai team e agli utenti di Skype for business di comuni
 
 - **Scenario 2** : è possibile aggiungere un dominio o domini all'elenco **Consenti** . A tale scopo, fare clic su **Aggiungi un dominio**, aggiungere il nome di dominio, fare clic **su azione per eseguire il dominio**e quindi selezionare **consentito**. È importante sapere che se si esegue questa operazione si **bloccherà** tutti gli altri domini.
 
-- **Scenario 3** : è possibile aggiungere un dominio o domini all'elenco **blocca** . A tale scopo, fare clic su **Aggiungi un dominio**, aggiungere il nome di dominio, fare clic **su azione per eseguire il dominio**e quindi selezionare **bloccato**. È importante sapere che, se si esegue questa operazione, verranno **** consentiti tutti gli altri domini.
+- **Scenario 3** : è possibile aggiungere un dominio o domini all'elenco **blocca** . A tale scopo, fare clic su **Aggiungi un dominio**, aggiungere il nome di dominio, fare clic **su azione per eseguire il dominio**e quindi selezionare **bloccato**. È importante sapere che, se si esegue questa operazione, verranno **consentiti** tutti gli altri domini.
 
 Seguire questa procedura per consentire o bloccare i domini.
 
@@ -126,7 +129,7 @@ Seguire questa procedura per consentire o bloccare i domini.
 
 1. Nella barra di spostamento sinistra passa a **Impostazioni** > a livello di organizzazione per**l'accesso esterno**.
 
-2. Attiva/disattiva gli **utenti possono comunicare con Skype for business e gli utenti** di **** teams si attivano.
+2. Attiva/disattiva gli **utenti possono comunicare con Skype for business e gli utenti di teams** **si attivano.**
 
      ![Schermata del pulsante di accesso esterno attivato](media/manage-external-access-2.png).
 
@@ -134,12 +137,12 @@ Seguire questa procedura per consentire o bloccare i domini.
 
 4. Se si vogliono limitare le organizzazioni che possono comunicare con gli utenti dell'organizzazione, è possibile consentire l'accesso a tutti tranne alcuni domini oppure consentire solo domini specifici. 
 
-    - Per consentire a tutti eccetto alcuni domini, aggiungere i domini che si desidera bloccare facendo clic su **Aggiungi dominio**. Nel riquadro **Aggiungi un dominio** Digitare il nome del dominio, fare clic su **bloccato**e quindi su clik **fatto**. 
+    - Per consentire a tutti eccetto alcuni domini, aggiungere i domini che si desidera bloccare facendo clic su **Aggiungi dominio**. Nel riquadro **Aggiungi un dominio** Digitare il nome del dominio, fare clic su **bloccato**e quindi fare clic su **fine**. 
     - Per limitare le comunicazioni a specifiche organizzazioni, aggiungere tali domini all'elenco con lo stato **consentito**. Dopo aver aggiunto un dominio all'elenco Consenti, le comunicazioni con altre organizzazioni saranno limitate solo alle organizzazioni i cui domini si trovano nell'elenco Consenti. 
 
 5. Fai clic su **Salva**.
 
-6. Verificare che l'amministratore dell'organizzazione di altri team completi gli stessi passaggi. Nell'elenco dei **domini** consentiti, ad esempio, l'amministratore deve immettere il dominio per l'azienda se limita le organizzazioni che possono comunicare con gli utenti.
+6. Verificare che l'amministratore dell'organizzazione di altri team completi gli stessi passaggi. Nell'elenco dei **domini consentiti** , ad esempio, l'amministratore deve immettere il dominio per l'azienda se limita le organizzazioni che possono comunicare con gli utenti.
 
 ### <a name="step-2---test-it"></a>Passaggio 2: testarlo
 
@@ -161,15 +164,15 @@ Se si sta configurando l'accesso esterno per consentire agli utenti del team di 
 
 Fare in modo che l'amministratore dell'organizzazione faccia questa procedura:
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a teams di interfaccia di **Amministrazione** > **&** > **portale legacy**Skype.
+1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **** > **Teams** > di interfaccia di amministrazione &**portale legacy**Skype.
   
 2. Nell'interfaccia di **amministrazione di Skype for business**scegli **** > **comunicazioni esterne**dell'organizzazione.
 
-3. Per configurare la comunicazione con un'azienda specifica o con utenti di un altro dominio, nella casella a discesa scegliere **solo per i domini**consentiti.
+3. Per configurare la comunicazione con un'azienda specifica o con utenti di un altro dominio, nella casella a discesa scegliere **solo per i domini consentiti**.
 
     In alternativa, se si vuole consentire la comunicazione con tutti gli altri utenti del mondo che hanno aperto i criteri di Skype for business, scegliere attivato **eccetto i domini bloccati**. Questa è l'impostazione predefinita.
 
-4. In **domini bloccati o**consentiti **+** scegliere e quindi aggiungere il nome del dominio che si vuole consentire.
+4. In **domini bloccati o consentiti**scegliere **+** e quindi aggiungere il nome del dominio che si vuole consentire.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

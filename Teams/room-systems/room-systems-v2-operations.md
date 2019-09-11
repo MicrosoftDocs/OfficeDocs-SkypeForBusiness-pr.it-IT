@@ -11,12 +11,12 @@ ms.service: msteams
 ms.collection: M365-voice
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: 14f4fb23868cc3e4247c700d15851511310db471
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: f5c4cf2a7b0c5f8fc12d94553d6c0f77216d9487
+ms.sourcegitcommit: dc151bf4454ddec20db5cd133a42a67599c08d64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775231"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838079"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft teams rooms 
  
@@ -43,7 +43,7 @@ I log verranno emessi come file ZIP in c:\rigel.
 Configurare il lato anteriore della visualizzazione della sala in modalità estesa. In questo modo si verificherà che l'interfaccia utente della console non sia duplicata in tale visualizzazione quando si esegue il ciclo di alimentazione sullo schermo.
   
 > [!NOTE]
-> Un televisore consumer usato come parte anteriore dello schermo della sala deve supportare/abilitare la funzionalità CEC (Consumer Electronics Control) di HDMI in modo che possa passare automaticamente a un'origine video attiva dalla modalità standby. Questa caratteristica non è supportata in tutti i televisori. 
+> Se si desidera che venga visualizzata una parte anteriore della visualizzazione della sala per passare automaticamente a una sorgente video attiva, ad esempio una console MTR, quando la sorgente viene riattivata dalla modalità standby, è necessario che siano soddisfatte determinate condizioni. Questa caratteristica è facoltativa ma supportata dal software Microsoft teams rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore consumer usato come parte anteriore della visualizzazione della sala deve supportare la funzionalità CEC (Consumer Electronics Control) di HDMI.  A seconda del dock o della console selezionato (che potrebbe non supportare la CEC, vedere la documentazione del supporto per il produttore), potrebbe essere necessario un controller dell'area di lavoro, ad esempio un [EXTRON HD CTL 100](https://www.extron.com/article/hdctl100ad) , per abilitare il comportamento desiderato. 
   
 ## <a name="microsoft-teams-rooms-reset-factory-restore"></a>Reimpostazione di Microsoft teams Rooms (ripristino di fabbrica)
 <a name="Reset"> </a>
@@ -59,7 +59,7 @@ Se Microsoft teams Rooms non è in esecuzione bene, potrebbe essere utile esegui
 La tabella seguente riepiloga le possibili operazioni remote e i metodi che è possibile usare per realizzarle.
   
 
-|**Gruppo**|**Non è stato aggiunto un dominio**|**Dominio Unito**|
+|Gruppo|Non è stato aggiunto un dominio|Dominio Unito|
 |:-----|:-----|:-----|
 |Riavviare  <br/> |Desktop remoto  <br/> PowerShell remoto  <br/> |Desktop remoto (richiede ulteriore configurazione)  <br/> PowerShell remoto (richiede ulteriore configurazione)  <br/> SCCM  <br/> |
 |Aggiornare il sistema operativo  <br/> |Windows Update  <br/> |Windows Update  <br/> WSUS  <br/> |
@@ -73,7 +73,7 @@ La tabella seguente riepiloga le possibili operazioni remote e i metodi che è p
 In questa sezione vengono illustrate le impostazioni di sistema di cui le sale di Microsoft teams dipendono per funzionare correttamente. Quando si partecipa a Microsoft teams Rooms a un dominio, verificare che i criteri di gruppo non eseguano l'override delle impostazioni nella tabella seguente.
   
 
-|**Impostazione**|**Permette**|
+|Impostazione|Permette|
 |:-----|:-----|
 |HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon AutoAdminLogon = (REG_SZ) 1  <br/> |Consente l'avvio delle sale di Microsoft Teams  <br/> |
 |Power Management-\> in AC, disattivare lo schermo dopo 10 minuti  <br/> Power Management-\> su AC, non posizionare mai il sistema in modalità Sleep  <br/> |Consente alle sale di Microsoft teams di disattivare i display allegati e di riattivarsi automaticamente  <br/> |
@@ -90,15 +90,10 @@ Il trasferimento di file tramite criteri di gruppo è illustrato in [configurare
 È possibile eseguire le operazioni di gestione seguenti in remoto usando PowerShell (vedere la tabella seguente per gli esempi di script):
   
 - Ottenere i dispositivi allegati
-    
 - Ottenere lo stato dell'app
-    
 - Ottenere informazioni di sistema
-    
 - Riavviare il sistema
-    
 - Recuperare i registri
-    
 - Trasferire file (richiede un dominio-joined Microsoft teams rooms)
     
 > [!NOTE]
@@ -107,21 +102,15 @@ Il trasferimento di file tramite criteri di gruppo è illustrato in [configurare
 Ad esempio, è possibile abilitare Remote PowerShell come indicato di seguito:
   
 1. Accedere come amministratore in un dispositivo Microsoft teams rooms.
-    
 2. Aprire un prompt dei comandi di PowerShell con privilegi elevati.
-    
 3. Immettere il comando seguente: Enable-PSRemoting-force
-    
+
 Per eseguire un'operazione di gestione:
   
 1. Accedere a un PC con le credenziali dell'account che dispongano delle autorizzazioni per eseguire i comandi di PowerShell in un dispositivo Microsoft teams rooms.
-    
 2. Aprire un prompt dei comandi di PowerShell normale nel PC.
-    
 3. Copiare il testo del comando dalla tabella seguente e incollarlo alla richiesta.
-    
 4. Sostituire `<Device fqdn>` i campi con valori FQDN appropriati per l'ambiente.
-    
 5. Sostituire * \<Path\> * con il nome file e il percorso locale del file di configurazione Master SkypeSettings. XML (o immagine del tema).
     
 Per ottenere i dispositivi allegati
@@ -182,7 +171,6 @@ Per gestire manualmente gli aggiornamenti e non è possibile seguire la procedur
 ### <a name="to-update-using-powershell"></a>Per eseguire l'aggiornamento usando PowerShell
 
 1. Estrai il pacchetto dal file [MSI](https://go.microsoft.com/fwlink/?linkid=851168) di installazione a una condivisione a cui il dispositivo può accedere.
-    
 2. Eseguire lo script seguente per la destinazione dei dispositivi Microsoft teams Rooms \<,\> modificando la condivisione alla condivisione del dispositivo in base alle esigenze:
     
 ```
@@ -197,28 +185,15 @@ Alcune funzioni di gestione, come l'installazione manuale di un certificato CA p
 ### <a name="switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-is-running"></a>Passare alla modalità amministratore e viceversa quando è in corso l'app Microsoft teams rooms
 
 1. Riagganciare le chiamate in corso e tornare alla schermata iniziale.
-    
 2. Selezionare l'icona dell'ingranaggio e visualizzare il menu (le opzioni sono **Impostazioni**, **accessibilità**e **dispositivo di riavvio** ).
-    
 3. Selezionare **Impostazioni**.
-    
-4. Immettere la password di amministratore. Verrà visualizzata la schermata di configurazione.
-    
-    > [!NOTE]
-    > Se il dispositivo non è collegato al dominio, per impostazione predefinita verrà usato l'account amministrativo locale (nome utente "amministratore"). La password predefinita per questo account è "SFB", ma è consigliabile che l'organizzazione modifichi questa operazione per motivi di sicurezza al più presto possibile. Se il computer è collegato al dominio, è possibile accedere con un account di dominio con privilegi appropriati. 
-  
+4. Immettere la password di amministratore. Verrà visualizzata la schermata di configurazione.  Se il dispositivo non è collegato al dominio, per impostazione predefinita verrà usato l'account amministrativo locale (nome utente "amministratore"). La password predefinita per l'account è "SFB", cambiare la password il prima possibile. Se il computer è collegato al dominio, è possibile accedere con un account di dominio con privilegi appropriati. 
 5. Selezionare **impostazioni di Windows** nella colonna sinistra.
-    
 6. Scegliere **Accedi ad amministratore**.
-    
 7. Immettere la password di amministratore. In questo modo si disconnetterà con garbo l'app e ti porterà alla schermata di accesso di Windows. 
-    
 8. Accedere al desktop con le credenziali amministrative. Avrai i privilegi necessari per gestire il dispositivo.
-    
 9. Eseguire le attività amministrative necessarie.
-    
 10. Disconnettersi dall'account di amministratore.
-    
 11. Tornare a Microsoft teams Rooms selezionando l'icona dell'account utente all'estrema sinistra dello schermo e quindi selezionando **Skype**.
     
     Se l'utente **Skype** non è elencato, potrebbe essere necessario selezionare un **altro utente** e immettere **.\skype** come nome utente ed eseguire l'accesso.
@@ -228,29 +203,21 @@ La console è ora tornata nella modalità operativa normale. La procedura seguen
 ### <a name="switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-crashes"></a>Passare alla modalità amministratore e viceversa quando l'app Microsoft teams Rooms si arresta in modo anomalo
 
 1. Premere il tasto Windows cinque volte in rapida successione. Verrà visualizzata la schermata di accesso di Windows. 
-    
 2. Accedere al desktop con le credenziali amministrative.
-    
+3. Eseguire le attività amministrative necessarie.
+4. Riavviare il computer al termine.
+
     > [!NOTE]
     > Questo metodo non disconnette l'utente Skype o chiude con garbo l'app, ma la userai se l'app non risponde e l'altro metodo non è disponibile. 
-  
-3. Eseguire le attività amministrative necessarie.
-    
-4. Riavviare il computer al termine.
-    
+
    La console viene riavviata nella modalità operativa normale, in cui è in esecuzione l'app Microsoft teams rooms. È possibile rimuovere la tastiera, se è stata allegata per consentire l'esecuzione di questa procedura.
    ## <a name="troubleshooting-tips"></a>Suggerimenti per la risoluzione dei problemi
    <a name="TS"> </a>
 
 - Gli inviti alle riunioni potrebbero non essere visualizzati quando vengono inviati oltre i limiti del dominio, ad esempio tra due società. In questi casi, gli amministratori IT devono decidere se consentire agli utenti esterni di pianificare una riunione.
-    
 - Microsoft teams Rooms non supporta il reindirizzamento di Exchange Autodiscover tramite Exchange 2010.
-    
 - In generale, è consigliabile che gli amministratori IT disattivino eventuali endpoint audio che non intendono usare.
-    
 - Se nell'anteprima della sala viene visualizzata un'immagine speculare, l'amministratore IT può correggere l'uso della videocamera in bicicletta o l'orientamento dell'immagine usando il telecomando della videocamera.
-    
 - Si nota che la perdita di accesso al touchscreen da console si verifica. In questi casi, il problema viene a volte risolto riavviando il sistema Microsoft teams rooms.
-    
 - La perdita di audio locale durante la connessione di un PC alla console tramite l'acquisizione tramite cavo è nota. In questi casi, il riavvio del PC può risolvere il problema di riproduzione audio locale.
     
