@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ''
 description: Introduzione ai modelli di team per le organizzazioni sanitarie
-ms.openlocfilehash: 437a645a0ab32024e81f3c73ba0db09b08267b3d
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 9a00d0d707867d009a9bc724d88fd4f9d8e6997f
+ms.sourcegitcommit: 113c00a26c5a6ad22ef24b1bdcd830e7c2cd14ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36232251"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852840"
 ---
 # <a name="get-started-with-teams-templates-for-healthcare-organizations"></a>Introduzione ai modelli di team per le organizzazioni sanitarie
 
@@ -54,7 +54,7 @@ Il modello Hospital è pensato per la comunicazione e la collaborazione tra più
 
 ## <a name="how-to-use-first-party-templates"></a>Come usare i modelli di First Party
 
-Per usare questi modelli, è sufficiente cambiare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" a TemplateIDs sopra.  Per altre informazioni su come distribuire i modelli di Team, vedere l'articolo su Microsoft Graph per la [creazione di un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta).
+Per usare questi modelli, è sufficiente cambiare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" a TemplateIDs sopra.  Per altre informazioni su come distribuire i modelli di Team, vedere l'articolo su Microsoft Graph su come [creare un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta).
 
 > [!NOTE]
 > I canali nel modello verranno creati automaticamente nella scheda generale.
