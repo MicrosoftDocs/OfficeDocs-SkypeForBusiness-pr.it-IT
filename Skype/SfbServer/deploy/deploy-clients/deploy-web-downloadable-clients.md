@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b6301e98-051c-4e4b-8e10-ec922a8f508a
 description: "Riepilogo: distribuire l'app Skype for Business Web App e le riunioni Skype usate con Skype for business."
-ms.openlocfilehash: 8f2449fde2f270834bda50602fe163829f3b725f
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 273ffca9ae91973fe9e3953efc914364de382ed4
+ms.sourcegitcommit: 8a20cb7bd1d23e2cf2987f55039748bad60f501b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234394"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36972877"
 ---
 # <a name="deploy-web-downloadable-clients-in-skype-for-business-server"></a>Distribuire client scaricabili Web in Skype for Business Server
 
@@ -140,6 +140,10 @@ Questa procedura è facoltativa e si applica a Skype for Business Server 2015 CU
    ```
    Set-CsWebServiceConfiguration -JoinLauncherCdnTimeout (New-TimeSpan -Seconds 10)
    ```
+
+> [!NOTE]
+> Con MeetingUxUseCdn in Skype for Business Server 2015 aggiornamento cumulativo 5, il valore predefinito è impostato su false. Questo causa un problema per cui il client Skype for business per Mac non è in grado di partecipare alle riunioni di partner non federative come Guest, anche se l'amministratore di Skype for business ha impostato MeetingUxUseCdn su true. Per risolvere il problema, Skype for Business Server 2015 deve avere l'aggiornamento cumulativo 7, 6.0.9319.534 o versione successiva. Vedere [abilitare l'app riunioni Skype per sostituire Skype for Business Web App in Skype for Business Server 2015](https://support.microsoft.com/kb/4132312).
+
 
 ## <a name="see-also"></a>Vedere anche
 <a name="SMA_Enable"> </a>
