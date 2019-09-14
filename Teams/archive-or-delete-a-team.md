@@ -3,11 +3,10 @@ title: Archiviare o eliminare un team in Microsoft Teams
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 04/18/2019
 ms.topic: conceptual
 audience: admin
 ms.service: msteams
-ms.reviewer: islubin
+ms.reviewer: jastark
 search.appverid: MET150
 description: Informazioni su come archiviare o eliminare definitivamente un team.
 localization_priority: Normal
@@ -18,26 +17,26 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 125c7954eabcbf5f454d1e9bc96b1c33377ed23f
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: cdbc5a03698fc5aa8cd7d686ad0c3038132236f1
+ms.sourcegitcommit: 21ef0846c8d9bc986550d34614bae1cb9eb2ded8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36241963"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "36980576"
 ---
 <a name="archive-or-delete-a-team-in-microsoft-teams"></a>Archiviare o eliminare un team in Microsoft Teams
 ===========================================
 
-Nel corso del tempo, un team creato in Microsoft teams potrebbe non essere in uso oppure potrebbe essere necessario archiviare o eliminare un team alla fine di un progetto. Se si è un amministratore di Microsoft teams, seguire i passaggi di questo articolo per archiviare o eliminare un team non più necessario. Quando si archivia un team, tutte le attività per il team cessano, ma è comunque possibile aggiungere o rimuovere membri e aggiornare ruoli ed è comunque possibile visualizzare tutte le attività del team in canali, file e chat. Quando si elimina un team, viene eliminata anche l'attività del team nei canali, nei file e nelle chat associate. 
+Nel corso del tempo, un team creato in Microsoft teams potrebbe non essere in uso oppure potrebbe essere necessario archiviare o eliminare un team alla fine di un progetto. Se si è un amministratore di Microsoft teams, seguire i passaggi di questo articolo per archiviare o eliminare un team non più necessario. Quando si archivia un team, tutte le attività per il team cessano, ma è comunque possibile aggiungere o rimuovere membri e aggiornare ruoli ed è comunque possibile visualizzare tutte le attività del team in canali, file e chat. Quando si elimina un team, viene eliminata anche l'attività del team nei canali, nei file e nelle chat associate.
 
 > [!IMPORTANT]
-> I team archiviati possono essere riattivati, ma non è possibile annullare l'eliminazione di un team eliminato. È consigliabile archiviare prima di tutto il team e posticipare l'eliminazione finché non si è certi di non avere più bisogno del team.
+> I team archiviati possono essere riattivati, ma non è possibile annullare direttamente l'eliminazione di un team eliminato. È consigliabile archiviare prima di tutto il team e posticipare l'eliminazione finché non si è certi di non avere più bisogno del team.
 
 ## <a name="archive-a-team"></a>Archiviare un team
 
 Seguire questa procedura per archiviare un team.
 
-1. Nell'interfaccia di amministrazione di Microsoft teams **** selezionare teams.
+1. Nell'interfaccia di amministrazione di Microsoft teams selezionare **Teams**.
 2. Selezionare un team facendo clic sul nome del team.
 3. Selezionare **Archivia**. Verrà visualizzato il messaggio seguente.
 
@@ -50,7 +49,7 @@ Seguire questa procedura per archiviare un team.
 
 Seguire questa procedura per rendere nuovamente attivo un team archiviato.
 
-1. Nell'interfaccia di amministrazione di Microsoft teams **** selezionare teams.
+1. Nell'interfaccia di amministrazione di Microsoft teams selezionare **Teams**.
 2. Selezionare un team facendo clic sul nome del team.
 3. Selezionare **Archivia**. Lo stato del team cambierà in **attivo**.
 
@@ -58,10 +57,52 @@ Seguire questa procedura per rendere nuovamente attivo un team archiviato.
 
 Se il team non sarà necessario in futuro, è possibile eliminarlo invece di archiviarlo. Seguire questa procedura per eliminare un team.
 
-1.  Nell'interfaccia di amministrazione di Microsoft teams **** selezionare teams.
+1.  Nell'interfaccia di amministrazione di Microsoft teams selezionare **Teams**.
 2.  Selezionare un team facendo clic sul nome del team.
 3.  Selezionare **Elimina**. Verrà visualizzato un messaggio di conferma.
 4.  Selezionare **Elimina** per eliminare definitivamente il team.
 
+## <a name="restore-a-deleted-team"></a>Ripristinare un team eliminato
 
+Seguire questa procedura per ripristinare un team eliminato ripristinando il gruppo di Office 365 associato al team. Per impostazione predefinita, un gruppo di Office 365 eliminato viene mantenuto per 30 giorni. Questo periodo di 30 giorni si chiama "soft-delete" perché è possibile ripristinare il gruppo. Per altre informazioni, vedere [ripristinare un gruppo di Office 365 eliminato](https://docs.microsoft.com/office365/admin/create-groups/restore-deleted-group).
 
+### <a name="install-the-azureadpreview-module"></a>Installare il modulo AzureADPreview
+
+1. Aprire Windows PowerShell come amministratore.
+2. Se è installata una versione precedente del modulo AzureADPreview o se è installato il modulo AzureAD, disinstallarlo eseguendo una delle operazioni seguenti:
+
+    ``` 
+    Uninstall-Module AzureADPreview
+    ```
+
+    ```
+    Uninstall-Module AzureAD
+    ```
+3. Installare la versione più recente del modulo AzureADPreview eseguendo le operazioni seguenti:
+
+    ```
+    Install-Module AzureADPreview
+    ```    
+
+### <a name="restore-the-deleted-office-365-group"></a>Ripristinare il gruppo di Office 365 eliminato
+
+1. Connettersi a Azure AD eseguendo le operazioni seguenti:
+    ```
+    Connect-AzureAD
+    ```
+    Quando viene richiesto, accedere con l'account di amministratore e la password.  
+2. Eseguire la procedura seguente per visualizzare un elenco di tutti i gruppi di Office 365 eliminati temporaneamente che si trovano ancora entro il periodo di conservazione di 30 giorni. Usa il parametro **-All $True** se hai molti gruppi.
+    ```
+    Get-AzureADMSDeletedGroup
+    ``` 
+3. Individuare il gruppo che si vuole ripristinare e quindi prendere nota dell'ID.
+4. Eseguire la procedura seguente per ripristinare il gruppo, dove [ID] è l'ID del gruppo.
+    ```
+    Restore-AzureADMSDeletedDirectoryObject -Id [Id]
+    ```
+5.  Eseguire la procedura seguente per verificare che il gruppo sia stato ripristinato correttamente, dove [ID] è l'ID del gruppo.
+    ```
+    Get-AzureADGroup -ObjectId [Id]
+    ```
+
+    Il completamento del processo di ripristino può richiedere fino a 24 ore, dopodiché il team e il contenuto associato al team, incluse le schede e i canali, vengono visualizzati in teams.
