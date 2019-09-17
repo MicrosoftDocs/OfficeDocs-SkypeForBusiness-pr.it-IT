@@ -21,16 +21,14 @@ f1keywords:
 - ms.teamsadmincenter.appsetuppolicies.allowsideloading
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
-ms.openlocfilehash: cd2f28df6b5b831d260f3d0070250249dfc90f6e
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: 90733b43ddb1d94d8c0f763ac048384816681f46
+ms.sourcegitcommit: 472825b0f4db1542a5b855d637aa90b4bcd797bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483584"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "36993978"
 ---
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire i criteri e le impostazioni dell'app personalizzata in Microsoft Teams
-
->[!INCLUDE [new-feature-coming-soon-article](includes/new-feature-coming-soon-article.md)]
 
 > [!NOTE]
 > Per usare app Studio vedere [Introduzione alla piattaforma Microsoft teams con C#/.NET e App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-dotnet-app-studio) l'ultimo passaggio non funziona ancora, quindi è necessario scaricare il zip e installarlo alla vecchia maniera in [caricare un pacchetto dell'app in Microsoft teams](https://docs.microsoft.com/microsoftteams/platform/concepts/apps/apps-upload).
@@ -72,7 +70,7 @@ Per includere le app desiderate, è possibile modificare le impostazioni dei cri
 
 #### <a name="set-a-user-custom-app-policy"></a>Impostare criteri delle app personalizzate per l'utente
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai**criteri di configurazione**delle **app** > teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di configurazione**delle **app teams**.
 2. Fare clic su **Aggiungi**.
 3. Attivare o disattivare Consenti il **caricamento di app personalizzate**.
 4. Scegliere le altre impostazioni desiderate per il criterio.
@@ -106,11 +104,11 @@ L'impostazione dell'app personalizzata a livello di organizzazione **consente l'
 
 #### <a name="configure-the-org-wide-custom-app-setting"></a>Configurare l'impostazione dell'app personalizzata a livello di organizzazione
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai**criteri di autorizzazione**delle **app** > teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di autorizzazione**delle **app teams**.
 2. Fare clic su **impostazioni app a livello di organizzazione**.
 3. In **app personalizzate**attivare o disattivare **Consenti l'interazione con le app personalizzate**.
 
-    ![Screenshot che mostra le impostazioni dell'app personalizzate a livello di organizzazione](media/teams-custom-app-policy-and-settings-org-wide.png)
+    ![Schermata che mostra le impostazioni dell'app personalizzate a livello di organizzazione](media/teams-custom-app-policy-and-settings-org-wide.png)
 
 ## <a name="how-custom-app-policies-and-settings-work-together"></a>Funzionamento dei criteri e delle impostazioni delle app personalizzate
 
