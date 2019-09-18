@@ -7,7 +7,7 @@ ms.date: 09/11/2018
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
-ms.reviewer: anach
+ms.reviewer: prvijay
 description: Informazioni su come gestire i criteri di conservazione e su come gestirli in teams.
 localization_priority: Normal
 search.appverid: MET150
@@ -16,18 +16,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dc547f30a7ff24b62e93501eba9a46a2e6e3da74
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: f2f3cc0c74b85d0b243dd8fefcd6bce1f2451fae
+ms.sourcegitcommit: 6b73b89f29a0eabbd9cdedf995d5325291594bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243598"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37018813"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
 Le conversazioni dei team sono permanenti e mantenute per sempre per impostazione predefinita. Con l'introduzione dei criteri di conservazione, gli amministratori possono configurare i criteri di conservazione (conservazione ed eliminazione) nel centro sicurezza & conformità per i messaggi di chat e canali di teams. In questo modo le organizzazioni mantengono i dati per la conformità (ovvero i criteri di conservazione) per un determinato periodo o eliminano i dati (vale a dire i criteri di eliminazione) se considerati passività dopo un determinato periodo. I criteri di conservazione dei team garantiscono che quando si eliminano i dati, questa viene rimossa da tutti i percorsi di archiviazione dati permanenti nel servizio teams. 
 
-Per gestire i criteri di conservazione **dei** > team, usare le impostazioni e i cmdlet nel centro conformità & sicurezza di Office 365 in**conservazione**della governance dati.
+Per gestire i criteri di conservazione dei team, usare le impostazioni e i cmdlet nel centro conformità & sicurezza di Office 365 in > **conservazione**della **governance dati**.
 
 I criteri di conservazione dei team supportano: 
     
@@ -40,11 +40,11 @@ I criteri di conservazione dei team non supportano ancora:
 - I criteri di conservazione avanzati non si applicano alle posizioni dei messaggi del canale chat teams e teams
 - Durata di meno di 30 giorni
 
-Gli amministratori possono configurare criteri di conservazione separati per le chat private di Teams (1:1 o 1: molte chat) e i messaggi del canale teams. In molti casi, le organizzazioni considerano i dati della chat privata come un numero maggiore di passività rispetto ai messaggi del canale, che in genere sono più conversazioni correlate al progetto. Configurare questi criteri nel centro conformità & sicurezza, > **conservazione**della **governance dei dati**. Attivare **i messaggi del canale teams** e le **chat** di teams e quindi definire i criteri di conservazione per queste posizioni (anche illustrato nel diagramma seguente). 
+Gli amministratori possono configurare criteri di conservazione separati per le chat private di Teams (1:1 o 1: molte chat) e i messaggi del canale teams. In molti casi, le organizzazioni considerano i dati della chat privata come un numero maggiore di passività rispetto ai messaggi del canale, che in genere sono più conversazioni correlate al progetto. Configurare questi criteri nel centro conformità & sicurezza, > **conservazione**della **governance dei dati**. Attivare **i messaggi del canale teams** e le **chat di teams** e quindi definire i criteri di conservazione per queste posizioni (anche illustrato nel diagramma seguente). 
 
 Quando si attivano **i messaggi del canale teams**, è possibile specificare i team a cui applicare i criteri. Ad esempio, per i team X, Y e Z, l'amministratore può impostare i criteri di eliminazione per 1 anno (selezionando questi team singolarmente) e applicare un criterio di eliminazione di 3 anni al resto dei team. 
 
-Puoi eseguire la stessa operazione per le **chat** di teams selezionando utenti specifici e applicando criteri di conservazione univoci. 
+Puoi eseguire la stessa operazione per le **chat di teams** selezionando utenti specifici e applicando criteri di conservazione univoci. 
 
 ![Diagramma del flusso di lavoro dei dati di teams in Exchange e SharePoint.](media/Retention-Policies.png)
 

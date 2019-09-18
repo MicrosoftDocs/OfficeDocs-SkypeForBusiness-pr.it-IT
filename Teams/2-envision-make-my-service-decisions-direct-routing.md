@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4d3410616cf3e841ab6689ffd0fea772975b484c
-ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
+ms.openlocfilehash: c57b3c8950f7e1618f578862290e8fb1696b6bc0
+ms.sourcegitcommit: 6b73b89f29a0eabbd9cdedf995d5325291594bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36271436"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37018780"
 ---
 # <a name="make-my-service-decisions"></a>Prendere le decisioni del servizio
 
@@ -271,7 +271,7 @@ Puoi configurare gli utenti per impostare teams come client preferito per le chi
 
 -   Configura teams come client chiamante preferito assegnando TeamsCallingPolicy e TeamsInteropPolicy.
 
-Per altre informazioni, Vedi [impostare Microsoft teams come client chiamante preferito per gli utenti](direct-routing-configure.md#set-microsoft-teams-as-the-preferred-calling-client-for-users).
+Per altre informazioni, vedere [assegnare la modalità solo team agli utenti per garantire la destinazione delle chiamate in Microsoft teams](direct-routing-configure.md#assign-teams-only-mode-to-users-to-ensure-calls-land-in-microsoft-teams).
 
 
 |         |         |         |

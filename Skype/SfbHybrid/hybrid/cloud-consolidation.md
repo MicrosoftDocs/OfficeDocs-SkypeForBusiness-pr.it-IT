@@ -19,12 +19,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Questo articolo descrive come ottenere il consolidamento per le organizzazioni con distribuzioni locali di Skype for business (o Lync) che vogliono trasferirsi per trasferire il carico di lavoro UC in teams e/o Skype for business online.
-ms.openlocfilehash: 46e84f9a65ec7626c5285196af83d63baa46c15e
-ms.sourcegitcommit: a78fee3cad5b58bf41dd014a79f4316cf310c8d1
+ms.openlocfilehash: 33cbc823fd7aeece1591810d63d2ebf4a348237a
+ms.sourcegitcommit: 6b73b89f29a0eabbd9cdedf995d5325291594bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "36185558"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37018845"
 ---
 # <a name="cloud-consolidation-for-teams-and-skype-for-business"></a>Consolidamento cloud per Teams e Skype for business
 
@@ -95,7 +95,7 @@ I diagrammi seguenti mostrano la configurazione in diversi punti chiave durante 
 
 ##### <a name="figure-b"></a>Figura B:
 
-- AcquiredCompany. <span>com è un [](https://docs.microsoft.com/en-us/powershell/module/skype/disable-csonlinesipdomain) dominio SIP disabilitato online. Tutti gli utenti sono locali. Se usano teams, non hanno la Federazione o l'interoperabilità. In questa fase, Microsoft consiglia di usare teams solo per i canali.
+- AcquiredCompany. <span>com è un dominio SIP [disabilitato](https://docs.microsoft.com/en-us/powershell/module/skype/disable-csonlinesipdomain) online. Tutti gli utenti sono locali. Se usano teams, non hanno la Federazione o l'interoperabilità. In questa fase, Microsoft consiglia di usare teams solo per i canali.
 - Skype for business Hybrid è stato abilitato per una delle organizzazioni locali.
 - Alcuni utenti dell'organizzazione ibrida sono stati spostati nel cloud (utente A come indicato da ombreggiatura viola). Questi utenti possono essere utenti di Skype for business online o solo teams con l'interoperabilità completa e il supporto federativo.<br><br>
     ![Figura B diagramma](../media/cloudconsolidationfigb.png)
@@ -155,7 +155,7 @@ I passaggi dell'esempio canonico precedente presuppongono che l'organizzazione i
 - L'ordine di alcuni passaggi precedenti può essere regolato. Il requisito chiave che deve essere soddisfatta è che, se tutte queste condizioni sono vere:
     - Più di una foresta Skype for business in locale che si sincronizza con un singolo tenant di AAD
     - Il dominio diviso è abilitato con una foresta locale
-    - Almeno un utente nell'organizzazione ibrida è stato migrato nel cloud<br>   Devi quindi disabilitare ** tutti gli altri domini SIP online da qualsiasi altra foresta Skype for business locale. In caso contrario, la Federazione tra gli utenti online nell'organizzazione ibrida e gli utenti locali in altre organizzazioni si spezzerà in una direzione.
+    - Almeno un utente nell'organizzazione ibrida è stato migrato nel cloud<br>   *Devi quindi disabilitare tutti* gli altri domini SIP online da qualsiasi altra foresta Skype for business locale. In caso contrario, la Federazione tra gli utenti online nell'organizzazione ibrida e gli utenti locali in altre organizzazioni si spezzerà in una direzione.
 
 ## <a name="implications"></a>Implicazioni
 
@@ -168,13 +168,13 @@ I passaggi dell'esempio canonico precedente presuppongono che l'organizzazione i
 Quando si spostano gli utenti dal locale al cloud in un ambiente ibrido, è possibile spostarli in modalità solo Skype for business o TeamsOnly. *Se si prevede di trasferire gli utenti in modalità TeamsOnly, assicurarsi di leggere prima di tutto questa sezione.*
 
 - Quando si assegna la modalità TeamsOnly a un utente, tutte le chat e le chiamate di qualsiasi altro utente sbarcheranno nel client teams di tale utente. 
-- Per garantire un corretto routing delle chat e delle chiamate tra gli utenti TeamsOnly e gli utenti che stanno ancora usando Skype for business in locale, devi assicurarti che gli utenti locali abbiano TeamsUpgradePolicy con una delle modalità di SfB, invece che con le isole (che è l'impostazione predefinita ). 
+- Se gli utenti con Skype for business locale usano principalmente client Skype for business e non teams, è consigliabile impostare TeamsUpgradePolicy in modo che il routing verso gli utenti locali venga sempre atterrato in Skype for business invece che in teams. Per garantire un corretto routing delle chat e delle chiamate tra gli utenti TeamsOnly e gli utenti che stanno ancora usando Skype for business in locale, gli utenti locali devono avere un valore effettivo di TeamsUpgradePolicy con una delle modalità di SfB, anziché le isole (che è la impostazione predefinita). 
     - A questo scopo, *devi prima impostare l'istanza globale del tenant di TeamsUpgradePolicy su uno di questi valori*:
         - SfBWithTeamsCollab (scelta consigliata)
         - SfBWithTeamsCollabAndMeetings
         - SfBOnly
     - È possibile concedere criteri a livello di tenant usando questo comando:<br>`Grant-CsTeamsUpgradePolicy -PolicyName SfBWithTeamsCollab -Global`
-    - Nota: al momento, è necessario eseguire questa operazione a livello di tenant, perché i criteri non possono essere assegnati a singoli utenti che non hanno un indirizzo SIP nella directory online. Mentre sono stati disabilitati i domini SIP online per le distribuzioni locali, gli utenti di tali domini non avranno indirizzi SIP nella directory online in base alla progettazione. L'unico modo per applicare criteri agli utenti locali è quindi l'assegnazione a livello di tenant. Al contrario, nella distribuzione ibrida gli utenti avranno un indirizzo SIP nella directory online in modo che possano essere assegnati in modo esplicito a un criterio, se si vuole che abbiano un valore diverso rispetto al criterio globale del tenant.
+    - Nota: è necessario eseguire questa operazione a livello di tenant perché non è possibile assegnare i criteri a singoli utenti che non hanno un indirizzo SIP nella directory online. Mentre sono stati disabilitati i domini SIP online per le distribuzioni locali, gli utenti di tali domini non avranno indirizzi SIP nella directory online in base alla progettazione. L'unico modo per applicare criteri agli utenti locali è quindi l'assegnazione a livello di tenant. Al contrario, nella distribuzione ibrida gli utenti avranno un indirizzo SIP nella directory online in modo che possano essere assegnati in modo esplicito a un criterio, se si vuole che abbiano un valore diverso rispetto al criterio globale del tenant.
 - Il client teams UX non rispetta ancora le modalità SfB di TeamsUpgradePolicy. Ad esempio, quando in queste modalità, l'avvio delle chiamate e delle chat in team è attualmente possibile, anche se in futuro non sarà così. Ciò può causare confusione tra gli utenti perché le risposte possono talvolta atterrare in team e, a volte, Skype for business, a seconda delle circostanze. È consigliabile disabilitare separatamente la chiamata e la chat tramite TeamsMessagingPolicy e TeamsCallingPolicy per gli utenti che sono ancora in locale.
 
 ## <a name="see-also"></a>Vedere anche

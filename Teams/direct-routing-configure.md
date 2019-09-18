@@ -15,12 +15,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come configurare il routing diretto di Microsoft Phone System.
-ms.openlocfilehash: 4013e0fd914630f154f407ad9c70e2c6915723f5
-ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
+ms.openlocfilehash: d1a763f150004b5c558dd311dd54ed6975dcb0c1
+ms.sourcegitcommit: 6b73b89f29a0eabbd9cdedf995d5325291594bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36464612"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37018769"
 ---
 # <a name="configure-direct-routing"></a>Configurare il routing diretto
 
@@ -42,7 +42,7 @@ Questo articolo descrive come configurare il routing diretto di Microsoft Phone 
 
 - [Associare il SBC a un sistema telefonico Microsoft e convalidare l'associazione](#pair-the-sbc-to-the-direct-routing-service-of-phone-system)
 - [Abilitare gli utenti per il servizio di routing diretto](#enable-users-for-direct-routing-service)
-- [Verificare che Microsoft teams sia il client chiamante preferito per gli utenti](#set-microsoft-teams-as-the-preferred-calling-client-for-users) 
+- Verificare che Microsoft teams sia il client chiamante preferito per gli utenti
 
 ## <a name="pair-the-sbc-to-the-direct-routing-service-of-phone-system"></a>Associare il SBC al servizio di routing diretto del sistema telefonico 
 
@@ -110,7 +110,7 @@ Nella tabella seguente sono elencati i parametri aggiuntivi che è possibile usa
 
 |Obbligatorio?|Nome|Descrizione|Predefinita|Valori possibili|Tipo e restrizioni|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|Sì|FQDN|Nome FQDN di SBC |Nessuno|Nome NoneFQDN, limite di 63 caratteri|Stringa, elenco dei caratteri consentiti e non consentiti nelle convenzioni di [denominazione in Active Directory per computer, domini, siti e unità organizzative](https://support.microsoft.com/help/909264)|
+|Sì|FQDN|Nome FQDN di SBC |Nessuno|Nome NoneFQDN, limite di 63 caratteri|Stringa, elenco dei caratteri consentiti e non consentiti nelle [convenzioni di denominazione in Active Directory per computer, domini, siti e unità organizzative](https://support.microsoft.com/help/909264)|
 |No|MediaBypass |Parametro riservato per un uso futuro. Il parametro indicato da SBC supporta il bypass multimediale e l'amministratore vuole usarlo.|Nessuno|True<br/>False|Boolean|
 |Sì|SipSignallingPort |Porta di ascolto usata per comunicare con i servizi di routing diretto usando il protocollo Transport Layer Security (TLS).|Nessuno|Qualsiasi porta|da 0 a 65535 |
 |No|FailoverTimeSeconds |Se impostato su 10 (valore predefinito), le chiamate in uscita non risposte dal gateway entro 10 secondi vengono instradate al successivo trunk disponibile. Se non sono presenti trunk aggiuntivi, la chiamata viene automaticamente eliminata. In un'organizzazione con reti lente e risposte del gateway, che potrebbero potenzialmente causare la perdita di chiamate inutilmente. Il valore predefinito è 10.|10|Numero|Int|
@@ -528,9 +528,9 @@ New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canad
 
 Il risultato è che il criterio vocale applicato alle chiamate di John Woods è illimitato e seguirà la logica di routing delle chiamate disponibile per gli Stati Uniti, il Canada e la chiamata internazionale.
 
-## <a name="set-microsoft-teams-as-the-preferred-calling-client-for-users"></a>Impostare Microsoft teams come client chiamante preferito per gli utenti
+## <a name="assign-teams-only-mode-to-users-to-ensure-calls-land-in-microsoft-teams"></a>Assegnare la modalità solo team agli utenti per garantire la destinazione delle chiamate in Microsoft Teams
 
-Il routing diretto instrada solo le chiamate da e verso gli utenti se usano il client teams. Se l'organizzazione usa solo teams, è consigliabile impostare la modalità "solo Teams" in criteri di aggiornamento. Se l'organizzazione usa Skype for Business Server o Skype for business online, vedere l'articolo seguente per altre informazioni e selezionare l'opzione appropriata: [comprendere la coesistenza e l'aggiornamento del viaggio per Skype for business e teams](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype). 
+Il routing diretto richiede che gli utenti siano in modalità solo teams per garantire la terra delle chiamate in arrivo nel client teams. Per inserire gli utenti solo in modalità teams, assegna loro l'istanza "UpgradeToTeams" di TeamsUpgradePolicy. Se l'organizzazione usa Skype for Business Server o Skype for business online, vedere l'articolo seguente per l'interoperabilità delle informazioni tra Skype e teams: [linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype). 
 
 
 ## <a name="see-also"></a>Vedere anche

@@ -16,12 +16,12 @@ f1keywords: ms.teamsadmincenter.directrouting.overview
 description: Pagina di destinazione per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 965fb26aee3d83550740e2ae7f855559fd9cdb79
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: 7ded644f552c233b712f43de212f2269ee6e70b2
+ms.sourcegitcommit: 6b73b89f29a0eabbd9cdedf995d5325291594bac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484060"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37018802"
 ---
 # <a name="phone-system-direct-routing"></a>Routing diretto del sistema telefonico
 
@@ -75,13 +75,13 @@ Si hanno più tenant? | Per altre informazioni, vedere [configurare un controlle
 | Quali utenti verranno assegnati ai criteri di routing vocale definiti? | Vedere gli esempi in [configurare il routing vocale](direct-routing-configure.md#configure-voice-routing). |
 |||
 
-### <a name="calling-and-interop-policies"></a>Criteri di chiamata e di interoperabilità
+### <a name="ensure-incoming-calls-land-in-the-teams-client-using-teamsupgradepolicy"></a>Assicurarsi che le chiamate in arrivo atterrino nel client teams usando TeamsUpgradePolicy
 
-Il routing diretto è supportato solo con Microsoft teams. Per effettuare o ricevere chiamate PSTN tramite routing diretto, è necessario configurare i criteri necessari per garantire che le chiamate in arrivo vengano ricevute in teams. Puoi configurare gli utenti per impostare Team come client preferito per le chiamate configurando l'utente per la modalità solo teams o configurando teams come client chiamante preferito assegnando TeamsCallingPolicy e TeamsInteropPolicy.
+Il routing diretto è supportato solo con Microsoft teams. Per ricevere chiamate PSTN tramite routing diretto, è necessario configurare TeamsUpgradePolicy per garantire che le chiamate in arrivo vengano ricevute in teams. Gli utenti devono essere in modalità solo teams, che è possibile eseguire assegnando loro l'istanza "UpgradeToTeams" di TeamsUpgradePolicy. 
 
 |Chiedi a te stesso|Azione |
 |:------------|:-------|
-|Come si imposta teams come client preferito per le chiamate? | Per altre informazioni, vedere [impostare Microsoft teams come client chiamante preferito per gli utenti](direct-routing-configure.md#set-microsoft-teams-as-the-preferred-calling-client-for-users).|
+|Cosa significa la modalità solo Teams? | Per altre informazioni, Vedi [linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype).|
 |||
 
 ## <a name="additional-deployment-considerations"></a>Considerazioni aggiuntive sulla distribuzione
