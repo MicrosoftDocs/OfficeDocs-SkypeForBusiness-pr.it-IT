@@ -18,12 +18,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle licenze per i componenti aggiuntivi, le caratteristiche e su come acquistare piani di Office 365 Business Premium. '
-ms.openlocfilehash: 48cfc0803f062f4ded43821b7db8604a49022fda
-ms.sourcegitcommit: 3c40bdd228ef88967cdf689100f2030f6997d9d5
+ms.openlocfilehash: 08d9ce55088c83126a6a8d303b4a02d6aa385584
+ms.sourcegitcommit: c6a79bebbbd7c1a1f801f465092a64fb40720296
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "36715908"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37040737"
 ---
 # <a name="office-365-business-premium"></a>Office 365 Business Premium
 
@@ -39,7 +39,7 @@ Se si dispone di [Office 365 Business Premium](https://products.office.com/en/bu
 
     1. [Passare a un piano di Office 365 per le aziende diverso](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a). È consigliabile valutare un piano aziendale E5 per verificare se è più conveniente.
 
-    2. Se decidi di acquistare una licenza Enterprise E5, include una licenza per il sistema telefonico. Se si usa una licenza Enterprise E1 o E3 o un Office 365 Business Essentials o Office 365 Business Premium licsense, è necessario acquistare il componente aggiuntivo per il sistema telefonico.
+    2. Se decidi di acquistare una licenza Enterprise E5, include una licenza per il sistema telefonico. Se si usa una licenza Enterprise E1 o E3, sarà necessario acquistare il componente aggiuntivo per il sistema telefonico.
     
     3. Acquistare un [piano per le chiamate per Office 365](../calling-plans-for-office-365.md): è possibile acquistarlo solo dopo aver acquistato il componente aggiuntivo per il sistema telefonico.
 
@@ -50,7 +50,7 @@ Se si dispone di [Office 365 Business Premium](https://products.office.com/en/bu
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
 
-2. Accedere agli abbonamenti al**componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto.
+2. Accedere agli**abbonamenti al componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto.
 
    Verranno visualizzati i prezzi e l'opzione per l'acquisto di servizi di audioconferenza.
 
@@ -58,7 +58,7 @@ Se si dispone di [Office 365 Business Premium](https://products.office.com/en/bu
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
 
-2. Accedere agli abbonamenti al**componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto.
+2. Accedere agli**abbonamenti al componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto.
 
    Verrà visualizzata l'opzione per acquistare i crediti per le comunicazioni.
 
@@ -73,7 +73,7 @@ Se si dispone di [Office 365 Business Premium](https://products.office.com/en/bu
 
 2. Accedere all'interfaccia di amministrazione di Microsoft 365.
 
-3. Accedere agli abbonamenti al**componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto.
+3. Accedere agli**abbonamenti al componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto.
 
     Verranno visualizzati i prezzi per il sistema telefonico e l'opzione per acquistarla.
 
