@@ -17,12 +17,12 @@ description: Informazioni sui passaggi per configurare Live per gli eventi in te
 f1keywords: ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 882a6c708a7aae67a8aafae880d8f0244f5fa8b1
-ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
+ms.openlocfilehash: 973e079cda665005dac55e466d444b09ecddb7da
+ms.sourcegitcommit: a6e44256c024fc3953cfd6a511ee024c4c7b8408
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493099"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047072"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi dinamici in Microsoft Teams
 
@@ -53,7 +53,7 @@ I criteri per gli eventi dinamici vengono usati per controllare chi nell'organiz
 
     Ecco le impostazioni che è possibile modificare per adattarsi alle esigenze dell'organizzazione.
 
-    ![Schermata delle impostazioni dei criteri di eventi dinamici] Screenshot (../media/teams-live-events-policies.png "delle impostazioni dei criteri di eventi dinamici nell'") interfaccia di amministrazione di Microsoft Teams 
+    ![Schermata delle impostazioni dei criteri di eventi live](../media/teams-live-events-policies.png "schermata delle impostazioni dei criteri eventi dinamici nell'interfaccia di amministrazione di Microsoft teams") 
 
 |Impostazione  |Descrizione  |
 |---------|---------|
@@ -108,7 +108,7 @@ Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate pe
 
 - **Hive streaming** offre una soluzione semplice e potente per la distribuzione di video aziendali Live e su richiesta. Hive è una soluzione basata sul software che non richiede hardware o larghezza di banda aggiuntivi e offre un modo sicuro per consentire a migliaia di videospettatori simultanei senza impatto sulla rete. Per i clienti che cercano di comprendere il video di impatto che sta avendo sulla loro rete prima di acquistare una soluzione SDN/eCDN, hive streaming offre anche una soluzione di analisi basata su browser per i clienti Microsoft. [Altre informazioni](https://www.hivestreaming.com/partners/integration-partners/microsoft/).
  
-- **Kollective** è una piattaforma di distribuzione Smart peer basata sul cloud che sfrutta l'infrastruttura di rete esistente per distribuire contenuto, in molte forme, (video in streaming live, video su richiesta, aggiornamenti software, patch di sicurezza e così via) più velocemente, più in modo affidabile e con meno larghezza di banda. La nostra piattaforma sicura è considerata attendibile dalle più grandi istituzioni finanziarie del mondo e senza hardware aggiuntivo, la configurazione e la manutenzione sono semplici. [Altre informazioni](http://www.kollective.com).
+- **Kollective** è una piattaforma di distribuzione Smart peer basata sul cloud che sfrutta l'infrastruttura di rete esistente per distribuire contenuto, in molte forme, (video in streaming live, video su richiesta, aggiornamenti software, patch di sicurezza e così via) più velocemente, più in modo affidabile e con meno larghezza di banda. La nostra piattaforma sicura è considerata attendibile dalle più grandi istituzioni finanziarie del mondo e senza hardware aggiuntivo, la configurazione e la manutenzione sono semplici. [Altre informazioni](https://kollective.com/microsoft-pilot/).
  
 - **Ramp OmniCache** offre la distribuzione di rete di nuova generazione e assicura il recapito continuo dei contenuti video in WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare trasmissioni di eventi live e su richiesta streaming. Il supporto per la rampa OmniCache per gli eventi dinamici prodotti in teams sarà disponibile a breve. [Altre informazioni](http://www.ramp.com). 
  

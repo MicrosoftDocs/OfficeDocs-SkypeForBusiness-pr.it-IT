@@ -18,17 +18,17 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8b6da80dda90c57a55a75c885b42bc08a824b613
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 2eb68a06a24436b6c12e4ee5b59a24a0da92ca7e
+ms.sourcegitcommit: a6e44256c024fc3953cfd6a511ee024c4c7b8408
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245350"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047083"
 ---
 <a name="turn-on-inline-message-translation-in-microsoft-teams"></a>Attivare la traduzione del messaggio in linea in Microsoft Teams 
 =================================================
 
-La traduzione dei messaggi in linea è una nuova caratteristica di Microsoft teams che consente agli utenti di tradurre automaticamente i messaggi di teams nella [lingua](https://support.office.com/article/translate-a-message-in-teams-d8926ce9-d6a6-47df-a416-f1adb62d3194) specificata dalle impostazioni della lingua personale per Office 365.
+La traduzione dei messaggi in linea è una nuova caratteristica di Microsoft teams che consente agli utenti di tradurre i messaggi di teams nella [lingua](https://support.office.com/article/translate-a-message-in-teams-d8926ce9-d6a6-47df-a416-f1adb62d3194) specificata dalle impostazioni della lingua personale per Office 365.
 
 La traduzione dei messaggi in linea viene distribuita per impostazione predefinita per l'organizzazione. Se si vuole consentire agli utenti di usare questa funzionalità nel client teams, è necessario attivare questa impostazione.
 
@@ -43,7 +43,7 @@ Attivare i criteri usando il cmdlet [set-CsTeamsMessagingPolicy](https://docs.mi
 
 ## <a name="use-the-microsoft-teams-admin-center-to-turn-on-inline-message-translation"></a>Usare l'interfaccia di amministrazione di Microsoft teams per attivare la traduzione dei messaggi in linea
 
-Nell'interfaccia di **amministrazione di Microsoft teams**selezionare criteri di **messaggistica** dalla barra di spostamento sinistra, quindi creare un nuovo criterio o modificare un criterio esistente e impostare l'opzione **Consenti agli utenti di tradurre i messaggi** **su**attivato.
+Nell'interfaccia di **amministrazione di Microsoft teams**selezionare **criteri di messaggistica** dalla barra di spostamento sinistra, quindi creare un nuovo criterio o modificare un criterio esistente e impostare l'opzione **Consenti agli utenti di tradurre i messaggi** **su**attivato.
 
 > [!NOTE]
 > Il servizio esegue la traduzione e lo recapita al client senza alcun effetto sul contenuto acquisito nei record di conformità. Per ulteriori informazioni sulla traduzione, vedere [che cos'è Microsoft Translator?](https://docs.microsoft.com/azure/cognitive-services/translator/translator-info-overview).

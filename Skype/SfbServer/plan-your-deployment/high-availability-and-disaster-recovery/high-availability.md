@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 965041b7-3136-49f2-89c1-8b30417cb8ea
 description: Informazioni sulla gestione del pool Front-end in Skype for Business Server, inclusi i pool di gestione, la perdita del quorum e i passaggi speciali per i pool con solo due server front-end.
-ms.openlocfilehash: 719a6099ac4bd54d82a833548b2438d0e9d8cc2d
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: e42e192d224d509356203c059751624fc706707b
+ms.sourcegitcommit: a6e44256c024fc3953cfd6a511ee024c4c7b8408
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36195903"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37047093"
 ---
 # <a name="front-end-pool-high-availability-and-management"></a>Disponibilità elevata e gestione del pool Front-End
  
@@ -52,7 +52,7 @@ La prima volta che si avvia un nuovo pool Front-End, è essenziale che il 85% de
 |11  <br/> |9  <br/> |
 |12  <br/> |10  <br/> |
    
-Ogni volta che il pool viene avviato, è necessario avviare 85% dei server (come illustrato nella tabella precedente). Se non è possibile avviare questo numero di server (ma è possibile avviare abbastanza server in modo che non si sia in perdita di quorum a livello di pool), `Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery` è possibile usare il cmdlet per consentire al pool di recuperare da questa perdita di quorum a livello di gruppo di routing ed eseguire lo stato di avanzamento. Per altre informazioni su come usare questo cmdlet, vedere <link Reset-CsPoolRegistrarState>.
+Ogni volta che il pool viene avviato, è necessario avviare 85% dei server (come illustrato nella tabella precedente). Se non è possibile avviare questo numero di server (ma è possibile avviare abbastanza server in modo che non si sia in perdita di quorum a livello di pool), `Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery` è possibile usare il cmdlet per consentire al pool di recuperare da questa perdita di quorum a livello di gruppo di routing ed eseguire lo stato di avanzamento. Per altre informazioni su come usare questo cmdlet, vedere [Reset-CsPoolRegistrarState](https://docs.microsoft.com/powershell/module/skype/reset-cspoolregistrarstate?view=skype-ps). 
   
 > [!NOTE]
 > In pool con un numero pari di server, Skype for Business Server usa il database SQL primario come testimone. In un pool come questo, se si arresta il database principale e si passa alla copia speculare e si arresta un numero sufficiente di server front-end in modo che non sia sufficiente eseguire in base alla tabella precedente, l'intero pool verrà disattivato. Per altre informazioni, Vedi [Witness mirroring del database](https://go.microsoft.com/fwlink/?LinkId=393672). 
