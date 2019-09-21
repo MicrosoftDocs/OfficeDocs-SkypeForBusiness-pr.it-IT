@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b0f3e24d38e877d923e52de3f1c7116853737dc7
-ms.sourcegitcommit: ab259764dc50bdd52efed3abb1d065ee19486946
+ms.openlocfilehash: 5f2e605e86b91fc5d0ea2f22d2aec3941a3d31d9
+ms.sourcegitcommit: 299f854bbb73887ba315b09b9adf9ea9ff91e8ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393431"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37062951"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -78,6 +78,9 @@ Microsoft teams funziona con diversi servizi di Office 365 per consentire agli u
 
 > [!NOTE]
 >Per l'integrazione di Exchange locale e teams, è necessario assegnare la licenza necessaria per l'utente sincronizzato di AAD.
+
+> [!IMPORTANT]
+> Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza smette di funzionare in Outlook e in altre app di Office. La presenza funziona correttamente in teams. Soluzione alternativa: per vedere la presenza in Outlook e in altre app di Office, è necessario installare Skype for business, anche se si sta usando teams in modalità **solo teams** . Microsoft è a conoscenza del problema e sta lavorando a una correzione.
 
 ## <a name="additional-considerations"></a>Considerazioni aggiuntive
 
