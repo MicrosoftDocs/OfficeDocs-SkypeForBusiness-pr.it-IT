@@ -15,14 +15,15 @@ ms.reviewer: dearbeen, nsuter
 search.appverid: MET150
 description: Laboratori dinamici e interattivi progettati per iniziare a usare Microsoft teams in soli 30 giorni.
 f1keywords: ms.teamsadmincenter.dashboard.trainingvideos.enduserteamstraining
+ROBOTS: NOINDEX
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e4be855754f6a162016f23feadc0de34849ac2bd
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 3036f50be02a5fdb0691a2895005fc373c4ac540
+ms.sourcegitcommit: 299f854bbb73887ba315b09b9adf9ea9ff91e8ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243760"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37062945"
 ---
 <div id="main" class="v2">
     <div class="container">
