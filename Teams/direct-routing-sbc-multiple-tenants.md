@@ -15,12 +15,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant.
-ms.openlocfilehash: d331fa51b8065ba7d1d39c7583beebbc093ddcce
-ms.sourcegitcommit: 26b3d786da07fde20878b0f4a1656070fe01d918
+ms.openlocfilehash: d3defa7be5fc7e2f8c9d96017706329184c4ad59
+ms.sourcegitcommit: f1c4255b52576c602d528c580941404eb547bc78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36645312"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "37131648"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un controller di bordo della sessione per più tenant
 
@@ -58,7 +58,7 @@ Per la procedura dettagliata relativa alla distribuzione e alla configurazione d
 
 - **AudioCodes:** [Note di configurazione del routing diretto](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-Microsoft-Teams), la configurazione dello scenario di hosting SBC descritto in "connessione di AudioCodes SBC a Microsoft teams Direct routing modello di hosting nota di configurazione". 
 - **Oracle:** [Note di configurazione del routing diretto](https://www.oracle.com/technetwork/indexes/documentation/acme-packet-2228107.html), la configurazione dello scenario di hosting SBC è descritta nella sezione "Microsoft". 
-- **Comunicazioni della barra multifunzione:**  Vedere la guida alla [configurazione di Microsoft teams della barra multifunzione](https://support.sonus.net/display/IOT/PBXs+-+SBC+5k7kSWe) per la documentazione su come configurare SBCS della serie Core della barra multifunzione e la procedura consigliata della barra multifunzione [-configurazione dei vettori per Microsoft teams Direct routing SBC Bordo](https://support.sonus.net/display/UXDOC70/Best+Practice+-+Configuring+Carriers+for+Microsoft+Teams+Direct+Routing)
+- **Comunicazioni della barra multifunzione:**  Vedere la guida alla [configurazione di Microsoft teams della barra multifunzione](https://support.sonus.net/display/IOT/PBXs+-+SBC+5k7kSWe) per la documentazione su come configurare SBCS della serie Core della barra multifunzione e la [procedura consigliata della barra multifunzione-configurazione dei vettori per Microsoft teams Direct routing SBC Bordo](https://support.sonus.net/display/UXDOC70/Best+Practice+-+Configuring+Carriers+for+Microsoft+Teams+Direct+Routing)
 - **Te-Systems (anynode):**  Eseguire la registrazione nella [pagina della community di te-Systems](https://community.te-systems.de/) per la documentazione e gli esempi relativi alla configurazione di anynode SBC per più tenant.
 
 > [!NOTE]
@@ -111,7 +111,7 @@ Per configurare la base e i sottodomini, seguire i passaggi descritti di seguito
 
 È possibile aggiungere nuovi domini solo se è stato effettuato l'accesso all'interfaccia di amministrazione di Microsoft 365 come amministratore globale. 
 
-Per convalidare il ruolo che si ha, accedere all'interfaccia di amministrazione di Microsofthttps://portal.office.com)365 (, **** > passare a utenti**attivi**e quindi verificare di avere un ruolo di amministratore globale. 
+Per convalidare il ruolo che si ha, accedere all'interfaccia di amministrazione di Microsofthttps://portal.office.com)365 (, **passare a** > utenti**attivi**e quindi verificare di avere un ruolo di amministratore globale. 
 
 Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo in Office 365, vedere [informazioni sui ruoli di amministratore di office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
@@ -120,17 +120,17 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 1.  Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione** > **** > **Aggiungi dominio**.
 2.  Nella casella **immettere un dominio** Digitare l'FQDN del dominio di base. Nell'esempio seguente il dominio di base è *Customers.adatum.biz*.
 
-    ![Screenshot che mostra la pagina Aggiungi un dominio](media/direct-routing-2-sbc-add-domain.png)
+    ![Schermata che mostra la pagina Aggiungi un dominio](media/direct-routing-2-sbc-add-domain.png)
 
 3. Fare clic su **Avanti**.
 4. Nell'esempio il tenant ha già adatum.biz come nome di dominio verificato. La procedura guidata non richiederà ulteriori verifiche perché customers.adatum.biz è un sottodominio per il nome già registrato. Tuttavia, se si aggiunge un nome di dominio completo che non è stato verificato prima, sarà necessario eseguire il processo di verifica. Il processo di verifica è [descritto di seguito](#add-a-subdomain-to-the-customer-tenant-and-verify-it).
 
-    ![Screenshot che mostra la conferma di un nome di dominio verificato](media/direct-routing-3-sbc-verify-domain.png)
+    ![Schermata che mostra la conferma di un nome di dominio verificato](media/direct-routing-3-sbc-verify-domain.png)
 
 5.  Fare clic su **Avanti**, quindi nella pagina **Aggiorna impostazioni DNS** Selezionare **aggiungerò i record DNS** e fare clic su **Avanti**.
 6.  Nella pagina successiva deselezionare tutti i valori (a meno che non si voglia usare il nome di dominio per Exchange, SharePoint o teams/Skype for business), fare clic su **Avanti**e quindi su **fine**. Verificare che il nuovo dominio sia nello stato di completamento della configurazione.
 
-    ![Screenshot che mostra i domini con stato di installazione completata](media/direct-routing-14-sbc-setup-complete.png)
+    ![Schermata che mostra i domini con stato di installazione completata](media/direct-routing-14-sbc-setup-complete.png)
 
 ### <a name="activate-the-domain-name"></a>Attivare il nome di dominio
 
@@ -152,7 +152,7 @@ Sarà necessario creare un nome di sottodominio univoco per ogni cliente. In que
 
 È possibile aggiungere nuovi domini solo se è stato effettuato l'accesso all'interfaccia di amministrazione di Microsoft 365 come amministratore globale. 
 
-Per convalidare il ruolo che si ha, accedere all'interfaccia di amministrazione di Microsofthttps://portal.office.com)365 (, **** > passare a utenti**attivi**e quindi verificare di avere un ruolo di amministratore globale. 
+Per convalidare il ruolo che si ha, accedere all'interfaccia di amministrazione di Microsofthttps://portal.office.com)365 (, **passare a** > utenti**attivi**e quindi verificare di avere un ruolo di amministratore globale. 
 
 Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo in Office 365, vedere [informazioni sui ruoli di amministratore di office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
@@ -178,7 +178,7 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
     Per altre informazioni, vedere [creare record DNS presso qualsiasi provider di hosting DNS per Office 365](https://support.office.com/article/create-dns-records-at-any-dns-hosting-provider-for-office-365-7b7b075d-79f9-4e37-8a9e-fb60c1d95166).
 
 7. Tornare all'interfaccia di amministrazione di Microsoft 365 del cliente e fare clic su **Verifica**. 
-8. Nella pagina successiva selezionare aggiungerò **personalmente i record DNS** e fare clic su **Avanti**.
+8. Nella pagina successiva selezionare **aggiungerò personalmente i record DNS** e fare clic su **Avanti**.
 
     ![Screenshot delle opzioni nella pagina Aggiorna impostazioni DNS](media/direct-routing-9-sbc-update-dns.png)
 
@@ -192,7 +192,7 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
 11. Verificare che lo stato sia **impostato su completata**. 
     
-    ![Schermata della pagina che mostra lo stato della configurazione completata](media/direct-routing-12-sbc-setup-complete.png)
+    ![Screenshot della pagina che mostra lo stato della configurazione completata](media/direct-routing-12-sbc-setup-complete.png)
 
 ### <a name="activate-the-subdomain-name"></a>Attivare il nome del sottodominio
 
@@ -229,6 +229,7 @@ Sono state introdotte due nuove entità:
 -    Il trunk derivato, come suggerisce il nome, eredita o deriva tutti i parametri di configurazione dal trunk del vettore. Esempi
 -   Customers.adatum.biz-il tronco portante che deve essere creato nel tenant del vettore.
 -   Sbc1.customers.adatum.biz: il trunk derivato in un tenant del cliente che non deve essere creato in PowerShell.  È possibile aggiungere semplicemente il nome del trunk derivato nel tenant del cliente nei criteri di routing vocale online senza crearlo.
+-   Il gestore dovrà impostare il record DNS che risolve il nome FQDN del trunk derivato nell'indirizzo IP di Carrier SBC.
 
 -   Tutte le modifiche apportate a un trunk del vettore (sul tenant del gestore) vengono applicate automaticamente ai trunk derivati. Ad esempio, i vettori possono cambiare una porta SIP nel trunk del vettore e questa modifica si applica a tutti i trunk derivati. La nuova logica per configurare i trunk semplifica la gestione perché non è necessario passare a ogni tenant e cambiare il parametro in ogni trunk.
 -   Le opzioni vengono inviate solo al nome di dominio completo del trunk vettore. Lo stato di integrità del trunk del vettore viene applicato a tutti i trunk derivati e viene usato per le decisioni di routing. Altre informazioni sulle [Opzioni di routing diretto](https://docs.microsoft.com/microsoftteams/direct-routing-monitor-and-troubleshoot).

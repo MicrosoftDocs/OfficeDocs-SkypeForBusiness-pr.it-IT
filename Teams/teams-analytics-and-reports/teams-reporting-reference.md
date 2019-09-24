@@ -16,12 +16,12 @@ ms.collection:
 description: Informazioni sui report Team disponibili nell'interfaccia di amministrazione di Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 29675485d9a23b184641e8fa855fe2d87b4b80ee
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: de405a89b74a5e772e0f3d58027592d2e6ae4289
+ms.sourcegitcommit: f1c4255b52576c602d528c580941404eb547bc78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234747"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "37131576"
 ---
 # <a name="microsoft-teams-analytics-and-reporting"></a>Analisi e creazione di report di Microsoft Teams
 
@@ -36,7 +36,7 @@ Per accedere ai report, è necessario essere un amministratore globale in Office
 
 ## <a name="teams-reporting-reference"></a>Riferimento per la creazione di report Team
 
-Ecco un elenco dei report Team disponibili nell'interfaccia di amministrazione di Microsoft teams e una panoramica delle informazioni disponibili in ogni report.
+Ecco un elenco dei report Team disponibili nell'interfaccia di amministrazione di Microsoft teams e una panoramica di alcune delle informazioni disponibili in ogni report.
 
 Stiamo migliorando continuamente l'esperienza di creazione di report in teams e aggiungendo funzionalità e funzionalità. Nel corso del tempo verranno costruite funzionalità aggiuntive nei report e si aggiungono nuovi report nell'interfaccia di amministrazione di Microsoft teams.
 
@@ -46,6 +46,9 @@ Stiamo migliorando continuamente l'esperienza di creazione di report in teams e 
 |[Report attività utente Teams](user-activity-report.md)  |  1:1 chiama un utente a cui ha partecipato<br/>Messaggi inviati da un utente in una chat del team<br/>Messaggi inviati da un utente in una chat privata<br/>Data ultima attività di un utente     |
 |[Report sull'utilizzo di dispositivi Teams](device-usage-report.md)   |  Utenti di Windows:<br/>Utenti Mac<br/>utenti iOS<br/>Utenti di telefoni Android     |
 |[Report sull'utilizzo dell'evento teams Live](teams-live-event-usage-report.md)   |  Visualizzazioni totali<br>Ora di inizio<br>Stato evento<br>Organizzatore<br>Relatore<br>Produttore<br>Impostazione di registrazione<br>Tipo di produzione    |
+|[Report utenti bloccati PSTN di Teams](pstn-blocked-users-report.md)   |  Nome visualizzato<br>Numero di telefono<br>Motivo<br>Tipo di azione<br>Data e ora di azione   |
+|[Report utilizzo PSTN teams-piani per chiamate](pstn-usage-report.md#calling-plans)|  Indicatore di data e ora<br>Nome utente<br>Numero di telefono<br>Tipo di chiamata <br>Chiamata a<br>In un paese o in un'area geografica <br>Chiamata da <br>Da paese o area geografica<br>Addebito<br>Valuta<br>Durata<br>Nazionali/internazionali<br>ID chiamata<br>Tipo di numero<br>Paese o area geografica<br>ID conferenza<br>Funzionalità (licenza)|
+|[Report utilizzo PSTN teams-routing diretto](pstn-usage-report.md#direct-routing)  |  Indicatore di data e ora<br>Nome visualizzato<br>Indirizzo SIP<br>Numero di telefono <br>Tipo di chiamata<br>Chiamata a<br>Ora di inizio<br>Invitare il tempo<br>Tempo di errore<br>Ora di fine<br>Durata<br>Tipo di numero<br>Bypass multimediale<br>FQDN DI SBC<br>Area di Azure<br>Tipo di evento<br>Codice SIP finale<br>Sottocodice Microsoft finale<br>Frase SIP finale<br>ID di coorelation  |
 
 > [!NOTE]
 > I report teams mostrano i dati per utenti attivi e team attivi. Ad esempio, se un utente dell'organizzazione non è attivo in teams durante l'intervallo di date specificato per un report, i dati per l'utente non sono inclusi nel report.

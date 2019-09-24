@@ -22,12 +22,12 @@ f1keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare il sistema telefonico per le code delle chiamate cloud con Microsoft teams.
-ms.openlocfilehash: 99e12ba4ee8bf983a62dee87a82f3bb7b9cb1ccc
-ms.sourcegitcommit: 6b73b89f29a0eabbd9cdedf995d5325291594bac
+ms.openlocfilehash: 644b551caaf8dbc2cabc0dd5ff4b4d0199aae766
+ms.sourcegitcommit: f1c4255b52576c602d528c580941404eb547bc78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37018856"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "37131637"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
 
@@ -68,7 +68,7 @@ Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto se
 > I numeri di servizio di routing diretto per le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft teams.
 
 > [!NOTE]
-> Per reindirizzare le chiamate alle persone dell'organizzazione online, devono avere una licenza per il **sistema telefonico** e essere abilitate per VoIP aziendale o avere piani di chiamata di Office 365. Vedere [assegnare licenze di Skype for business](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses) o [assegnare licenze di Microsoft teams](assign-teams-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+> Per reindirizzare le chiamate alle persone dell'organizzazione online, devono avere una licenza per il **sistema telefonico** e essere abilitate per VoIP aziendale o avere piani di chiamata di Office 365. Vedere [assegnare licenze di Skype for business](/Skype/SfbOnline/skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md) o [assegnare licenze di Microsoft teams](assign-teams-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
 - Per altre informazioni sui piani di chiamate di Office 365, vedere [sistemi di telefonia e](calling-plan-landing-page.md) piani di chiamata e [piani di chiamata per Office 365](calling-plans-for-office-365.md).
 

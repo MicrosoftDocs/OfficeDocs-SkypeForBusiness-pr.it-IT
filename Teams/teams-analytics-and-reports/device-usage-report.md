@@ -15,12 +15,12 @@ ms.collection:
 description: Informazioni su come usare il report utilizzo del dispositivo teams nell'interfaccia di amministrazione di Microsoft teams per vedere come gli utenti dell'organizzazione si connettono ai team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cfe8b11d633a8848d73e87c8fe0b4ecc8854062f
-ms.sourcegitcommit: a5cde2df1aceed9d919ef53281dd0d75f1f5e183
+ms.openlocfilehash: a1da28ccda6394a2e88685132150516cfed2c7fc
+ms.sourcegitcommit: f1c4255b52576c602d528c580941404eb547bc78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667122"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "37131626"
 ---
 # <a name="microsoft-teams-device-usage-report"></a>Report sull'utilizzo di dispositivi Microsoft Teams
 
@@ -28,10 +28,10 @@ Il report utilizzo di dispositivi teams nell'interfaccia di amministrazione di M
 
 ## <a name="view-the-report"></a>Visualizzare il report
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi & report**e quindi in **report**Selezionare **utilizzo del dispositivo teams**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo del dispositivo teams**.
 2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.
 
-    Screenshot ![del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout] Screenshot (../media/teams-reports-device-usage-with-callouts.png "del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout")
+    ![Screenshot del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout] (../media/teams-reports-device-usage-with-callouts.png "Screenshot del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 

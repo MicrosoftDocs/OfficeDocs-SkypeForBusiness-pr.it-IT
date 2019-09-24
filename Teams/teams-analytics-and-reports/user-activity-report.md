@@ -15,12 +15,12 @@ ms.collection:
 description: Informazioni su come usare il report attività utente teams nell'interfaccia di amministrazione di Microsoft teams per scoprire in che modo gli utenti dell'organizzazione usano team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d64937d76ad2b634509972f203992b50eb64ccff
-ms.sourcegitcommit: a5cde2df1aceed9d919ef53281dd0d75f1f5e183
+ms.openlocfilehash: dd8c33bfa1ebfbeb4ba4c79827c13e4c33f9a340
+ms.sourcegitcommit: f1c4255b52576c602d528c580941404eb547bc78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667097"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "37131599"
 ---
 # <a name="microsoft-teams-user-activity-report"></a>Report attività utente di Microsoft Teams
 
@@ -28,10 +28,10 @@ Il report attività utente teams offre informazioni sui tipi di attività che gl
 
 ## <a name="view-the-report"></a>Visualizzare il report
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, fare clic su **analisi & report**e quindi in **report**selezionare **attività utente teams**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **attività utente teams**.
 2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.
 
-    Screenshot ![del report attività utente teams nell'interfaccia di amministrazione di teams con callout] Screenshot (../media/teams-reports-user-activity-with-callouts.png "del report attività utente teams nell'interfaccia di amministrazione di teams con callout")
+    ![Screenshot del report attività utente teams nell'interfaccia di amministrazione di teams con callout] (../media/teams-reports-user-activity-with-callouts.png "Screenshot del report attività utente teams nell'interfaccia di amministrazione di teams con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
