@@ -13,17 +13,17 @@ localization_priority: Normal
 ms.collection: Strat_MT_TeamsAdmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cef8c6fbfd5ed0b19d6762b7508b311413d11066
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 5bf9776dbf5a5992354f542436b4904d53d58508
+ms.sourcegitcommit: 6ba9eeb81b7d55ffc319d6d6658d0ecac83c2159
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233284"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "37142046"
 ---
 # <a name="move-your-microsoft-staffhub-teams-to-shifts-in-microsoft-teams"></a>Spostare i team di Microsoft StaffHub in turni in Microsoft Teams
 
 > [!IMPORTANT]
-> Efficace il 1 ° ottobre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub smetterà di funzionare per tutti gli utenti il 1 ° ottobre 2019. Chiunque tenti di aprire StaffHub verrà visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub per](microsoft-staffhub-to-be-retired.md)ritirarsi.
+> Efficace il 1 ° ottobre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub smetterà di funzionare per tutti gli utenti il 1 ° ottobre 2019. Chiunque tenti di aprire StaffHub verrà visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub per ritirarsi](microsoft-staffhub-to-be-retired.md).
 
 L'app turni in teams offre un approccio semplice per gestire le pianificazioni e il flusso costante di scambi di turni e di annullamenti che si verificano giornalmente. I membri del team possono accedere alle informazioni di programmazione e spostamento direttamente nell'app e in tutti i loro dispositivi per impostare le preferenze, gestire le pianificazioni e richiedere il tempo libero.
 
@@ -88,9 +88,11 @@ Ogni utente deve avere una licenza Microsoft 365 o Office 365 attiva da [un pian
 > [!NOTE]
 > Se l'organizzazione usa Skype for business e non si è pronti per trasferire tutti gli utenti in teams, è possibile abilitare i team per i dipendenti di I FIRSTLINE che possono quindi eseguire teams insieme a Skype for business. In questa modalità di coesistenza, denominata *Islands*, ogni app client funziona come soluzione separata. Per altre informazioni, vedere [comprendere i team e la coesistenza e l'interoperabilità di Skype for business](../../teams-and-skypeforbusiness-coexistence-and-interoperability.md).
 
-### <a name="install-the-staffhub-powershell-module"></a>Installare il modulo di PowerShell StaffHub
+### <a name="install-the-prerelease-version-of-the-staffhub-powershell-module"></a>Installare la versione prerelease del modulo di PowerShell StaffHub
 
-Se non è già stato installato, [installare il modulo di PowerShell StaffHub](install-the-staffhub-powershell-module.md). 
+Se non è già stato installato, [installare la versione prerelease del modulo di PowerShell StaffHub](install-the-staffhub-powershell-module.md). 
+
+Per trasferire i team di StaffHub in teams, è necessario che sia installata la versione del modulo prerelease.
 
 ### <a name="link-an-azure-ad-account-for-staffhub-team-members-who-dont-have-one"></a>Collegare un account di Azure AD per i membri del team di StaffHub che non ne hanno uno
 
@@ -300,7 +302,7 @@ Se i team di StaffHub spostati contengono file che si vuole spostare anche in te
 
 ## <a name="monitor-teams-usage"></a>Monitorare l'utilizzo di Teams
 
-I report sull'utilizzo consentono di comprendere meglio i modelli di utilizzo e di fornire informazioni dettagliate su dove assegnare priorità agli sforzi di formazione e comunicazione nell'organizzazione. È possibile eseguire report che mostrano l'utilizzo complessivo dei team, i tipi di attività che gli utenti eseguono in team, il modo in cui gli utenti si connettono ai team e altro ancora. Per altre informazioni, vedere [segnalazione di team nell'](../../teams-analytics-and-reports/teams-reporting-reference.md) interfaccia di amministrazione di Microsoft teams e [report attività in teams nell'interfaccia di amministrazione di Microsoft 365](../../teams-activity-reports.md).
+I report sull'utilizzo consentono di comprendere meglio i modelli di utilizzo e di fornire informazioni dettagliate su dove assegnare priorità agli sforzi di formazione e comunicazione nell'organizzazione. È possibile eseguire report che mostrano l'utilizzo complessivo dei team, i tipi di attività che gli utenti eseguono in team, il modo in cui gli utenti si connettono ai team e altro ancora. Per altre informazioni, vedere [segnalazione di team nell'interfaccia di amministrazione di Microsoft teams](../../teams-analytics-and-reports/teams-reporting-reference.md) e [report attività in teams nell'interfaccia di amministrazione di Microsoft 365](../../teams-activity-reports.md).
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
