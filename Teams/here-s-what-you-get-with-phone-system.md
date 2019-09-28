@@ -22,12 +22,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare un sistema telefonico (cloud PBX) per l'azienda. "
-ms.openlocfilehash: 0046a008579c6c741d99825e6b79387a73eec55b
-ms.sourcegitcommit: 26b3d786da07fde20878b0f4a1656070fe01d918
+ms.openlocfilehash: c8725523fbef65b5687e68a860d2f2f3137e649d
+ms.sourcegitcommit: 1721acdd507591d16a4e766b390b997979d985e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36645260"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305786"
 ---
 # <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa offre il Sistema telefonico in Office 365
 
@@ -66,6 +66,8 @@ Usando il sistema telefonico, gli utenti di Skype for business otterranno le car
 |[Effettuare e ricevere videochiamate con Skype for Business](https://support.office.com/article/abf62493-670f-4b0d-b2cf-fe03b49caf42) <br/> | Puoi vedere il nome e il flusso video del relatore in una piccola finestra mobile, quindi sei sempre pronto a rispondere a qualsiasi domanda. <br/> |
 |[Controllare la segreteria telefonica e le opzioni di Skype for business](https://support.office.com/article/2deea7f8-831f-4e85-a0d4-b34da55945a8) <br/> |Ecco come funziona cloud Voicemail: quando un utente riceve un messaggio vocale, viene recapitato alla propria cassetta postale come messaggio di posta elettronica con la segreteria telefonica come allegato. Possono anche ascoltare i loro messaggi tramite il telefono desktop certificato Skype, tutte le applicazioni Skype for business o Lync per Mac 2011.  <br/> La segreteria telefonica Cloud include il messaggio di saluto personalizzato, l'indicatore di attesa e la risposta tramite chiamata. È possibile avere tutti i messaggi vocali depositati nelle cassette postali e resi disponibili tramite Skype for business nel PC, nel dispositivo mobile e nel telefono IP.  <br/> |
 |Musica in attesa | Disponibile nel 2019 settembre, il sistema telefonico risuonerà la musica predefinita definita dal servizio quando una chiamata esterna dalla rete PSTN (Public Switched Telephone Network) viene inserita in attesa.  Questa funzionalità è compatibile con chiamate da PSTN a team da uno a uno oltre alle chiamate effettuate in una coda di chiamata. Questa caratteristica offre una parità di notifica in attesa con altre piattaforme. (Tutte le altre piattaforme forniscono un segnale visivo quando un utente viene messo in attesa, ma il chiamante PSTN non ha alcun modo di saperlo).  Nella prima versione, questa caratteristica non è configurabile dall'amministratore.| 
+|Ricerca di numeri inversa | Disponibile in settembre 2019, il sistema telefonico visualizzerà ID denominato per un numero di telefono esterno se il numero è associato a un utente in AAD. Se il numero di telefono non è incluso in AAD, il nome visualizzato di Telco verrà visualizzato se disponibile.  |
+
    
 ## <a name="plan-and-set-up-the-phone-system-in-office-365"></a>Pianificare e configurare il sistema telefonico in Office 365
 <a name="bkmk_setup"> </a>
@@ -82,7 +84,7 @@ Vedere questi articoli per pianificare e configurare il sistema telefonico nell'
 
 - [Configurare i piani](set-up-calling-plans.md)per le chiamate: questo articolo contiene istruzioni dettagliate per configurare i numeri di telefono o per trasferire i numeri di telefono esistenti in Skype for business.
     
-- [Soluzioni](https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions)per la telefonia Microsoft: questo articolo contiene tutte le opzioni di distribuzione. Contiene inoltre informazioni sulla pianificazione di una soluzione interamente basata su cloud. 
+- [Soluzioni per la telefonia Microsoft](https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions): questo articolo contiene tutte le opzioni di distribuzione. Contiene inoltre informazioni sulla pianificazione di una soluzione interamente basata su cloud. 
     
 - [Licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md): informazioni sulle licenze che è necessario acquistare per ottenere il sistema telefonico in Office 365.
     

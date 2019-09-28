@@ -18,18 +18,21 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 068a37af62ea31c53caed8c9dc22feec6fd60ec6
-ms.sourcegitcommit: bd9b29cdaa183b1f5cc2d643a5a2d231a56a2c3f
+ms.openlocfilehash: 4e3b95e9d8de04abc6299a52a27cf07d95365a4f
+ms.sourcegitcommit: 1721acdd507591d16a4e766b390b997979d985e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "36184798"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305800"
 ---
 # <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca di directory con ambito Microsoft Teams
 
 La ricerca di directory con ambito Microsoft teams consente alle organizzazioni di creare confini virtuali che controllano in che modo gli utenti possono trovare e comunicare con altri utenti all'interno dell'organizzazione. 
 
 Microsoft teams consente alle organizzazioni di creare visualizzazioni personalizzate della directory per gli utenti. Microsoft teams USA [Criteri rubrica di Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) per supportare queste visualizzazioni personalizzate. Dopo l'abilitazione dei criteri, i risultati restituiti dalle ricerche di altri utenti, ad esempio per avviare una chat o per aggiungere membri a un team, verranno assegnati a un ambito secondo i criteri configurati. Gli utenti non potranno cercare o individuare i team quando è attiva la ricerca con ambito. 
+
+> [!NOTE]
+> In ambienti ibridi di Exchange questa funzionalità funziona solo con le cassette postali di Exchange Online e non con le cassette postali locali.
 
 ## <a name="when-should-you-use-scoped-directory-searches"></a>Quando è consigliabile usare ricerche di directory con ambito?
 
@@ -49,7 +52,7 @@ Per informazioni su come usare i criteri Rubrica, leggere i [criteri della Rubri
 
 2. Nell'interfaccia di amministrazione di Microsoft teams selezionare impostazioni per i**Team**di **Impostazioni** > a livello di organizzazione.
 
-3. In **ricerca**, accanto a **ricerca directory ambito in teams con un criterio rubrica di Exchange (avviso)**, attivare l'attivazione ****.
+3. In **ricerca**, accanto a **ricerca directory ambito in teams con un criterio rubrica di Exchange (avviso)**, attivare l'attivazione **.**
 
     ![Ricerca di directory con ambito nell'interfaccia di amministrazione di Microsoft Teams](media/teams-scoped-directory-search-image1.png)
 

@@ -20,12 +20,12 @@ f1keywords:
 - ms.teamsadmincenter.voice.resourceaccounts.tooltip.phonenumber
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 40d8ae4f56fcbfe7d9e82855f7c3f7eaa406effa
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: a4bfa488500d6bd0fcea3c64e0d463003756d89c
+ms.sourcegitcommit: 1721acdd507591d16a4e766b390b997979d985e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483515"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305778"
 ---
 <a name="office-365-licensing-for-microsoft-teams"></a>Licenze di Office 365 per Microsoft Teams
 ========================================
@@ -48,7 +48,10 @@ Per altre informazioni su come ottenere teams, vedere [come si accede a Microsof
 > Teams è disponibile anche per le organizzazioni no profit. Le squadre inizieranno a essere distribuite per la community Cloud (GCC) del governo degli Stati Uniti il 17 luglio ed essere disponibili per tutti i clienti idonei entro la fine del 2018 agosto. Stiamo lavorando per trasferire Microsoft teams alle altre nubi governative degli Stati Uniti (GCC High e DoD) presto disponibile. Per altre informazioni, vedere il Blog di Microsoft teams [qui](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-will-be-available-July-17-for-the-US-Government/ba-p/209976).
 
 > [!NOTE]
-> A partire dal 1 ° ottobre 2018, i nuovi clienti di Office 365 con 500 seggi o meno verranno imbarcati in teams e non avranno accesso a Skype for business online. I tenant che usano già Skype for business online potranno continuare a farlo (incluso il provisioning di nuovi utenti) fino a quando non completano la transizione ai team. Per altre informazioni, vedere [Microsoft teams ora il client principale per le riunioni e le chiamate in Office 365](https://support.microsoft.com/help/4465277/microsoft-teams-now-the-primary-client-for-meetings-and-calling).
+> A partire da agosto 2019, tutti i nuovi clienti di Office 365 verranno imbarcati in teams e non avranno accesso a Skype for business online. I tenant che usano già Skype for business online potranno continuare a farlo (incluso il provisioning di nuovi utenti) fino a quando non completano la transizione ai team. Per altre informazioni, vedere [Microsoft teams ora il client principale per le riunioni e le chiamate in Office 365](https://support.microsoft.com/help/4465277/microsoft-teams-now-the-primary-client-for-meetings-and-calling).
+
+> [!NOTE]
+> Se Skype for business online è elencato in app per la licenza selezionata, non rimuoverlo. Se è elencato e viene rimosso, la configurazione dell'utente di teams non viene completata correttamente. 
         
 In termini di funzionalità di base di teams non esistono differenze tra le sottoscrizioni di Office 365. La disponibilità delle funzionalità di conformità si basa sul livello di sottoscrizione corretto. Per altre informazioni, vedere [Panoramica della sicurezza e della conformità in teams](security-compliance-overview.md). Per un elenco dettagliato delle funzionalità disponibili in ogni sottoscrizione, vedere la [Descrizione del servizio della piattaforma Office 365](https://technet.microsoft.com/library/office-365-platform-service-description.aspx).
 

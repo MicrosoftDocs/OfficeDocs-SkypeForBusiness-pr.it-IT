@@ -18,12 +18,12 @@ description: L'amministratore IT può configurare l'accesso esterno per altri do
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: dedda63d5ec97d914ba6bd1a70b7e5b3f1d9d7ee
-ms.sourcegitcommit: dc151bf4454ddec20db5cd133a42a67599c08d64
+ms.openlocfilehash: f39760eb971a333373191b444abbb72395f13737
+ms.sourcegitcommit: 1721acdd507591d16a4e766b390b997979d985e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838113"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305762"
 ---
 <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 ======================================================
@@ -70,7 +70,7 @@ Vedere la tabella seguente per un confronto tra le caratteristiche di accesso es
 | L'utente viene identificato come parte esterna | Sì | Supporto per più paesi |
 | Visualizzazione della presenza | Sì | Supporto per più paesi |
 | Viene visualizzato il messaggio fuori sede | No | Sì |
-| Singoli utenti possono essere bloccati | No | Sì |
+| Singoli utenti possono essere bloccati | No | No |
 | @mentions supportate | No | Sì |
 | Effettuare chiamate private | Sì | Supporto per più paesi |
 | Consenti video IP | Sì | Supporto per più paesi |

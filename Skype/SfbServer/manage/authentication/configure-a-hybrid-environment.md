@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 700639ec-5264-4449-a8a6-d7386fad8719
 description: "Riepilogo: configurare l'autenticazione da server a server per un ambiente ibrido di Skype for Business Server."
-ms.openlocfilehash: d0c82d39c5232ccc3d425bad9533bf23b67dc8a6
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 2879a1acc35a2c8928a95af913476c26028d6e6c
+ms.sourcegitcommit: 1721acdd507591d16a4e766b390b997979d985e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190106"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37305772"
 ---
 # <a name="configure-server-to-server-authentication-for-a-skype-for-business-server-hybrid-environment"></a>Configurare l'autenticazione da server a server per un ambiente ibrido di Skype for Business Server.
 
@@ -67,17 +67,17 @@ Set-CsOAuthConfiguration -ServiceName 00000004-0000-0ff1-ce00-000000000000
 Tieni presente che il nome dell'area di autenticazione per un tenant è in genere diverso rispetto al nome dell'organizzazione; il nome Realm è infatti quasi sempre uguale all'ID tenant. Per questo motivo, la prima riga nello script viene usata per restituire il valore della proprietà ID tenant per il tenant specificato (in questo caso fabrikam.com) e quindi assegnare il nome alla variabile $TenantId:
 
 ```
-$TenantID = (Get-CsTenant -DisplayName "Fabrikam.com").TenantId
+$TenantID = (Get-CsTenant -Filter {DisplayName -eq "Fabrikam.com"}).TenantId
 ```
 
 Per eseguire questo script, è necessario aver installato il modulo di PowerShell di Skype for business online e connettersi al tenant con questo modulo. Se non sono stati installati questi cmdlet, lo script non riuscirà perché il cmdlet Get-CsTenant non sarà disponibile. Al termine dell'esecuzione dello script, è necessario configurare una relazione di trust tra Skype for Business Server e il server di autorizzazione e una seconda relazione di trust tra Exchange 2013/2016 e il server di autorizzazione. Questa operazione può essere eseguita solo usando i cmdlet dei Microsoft Online Services.
 
 > [!NOTE]
-> Se non sono stati installati i cmdlet dei Microsoft Online Services, sarà necessario installarlo dal repository di PowerShell con cmdlet Install-Module MSOnline. Informazioni dettagliate per l'installazione e l'uso del modulo Microsoft Online Services si trovano nel sito Web di Office 365. Queste istruzioni spiegano anche come configurare Single Sign-on, Federation e la sincronizzazione tra Office 365 e Active Directory. 
+> Se non sono stati installati i cmdlet dei Microsoft Online Services, sarà necessario installarlo dal repository di PowerShell con il cmdlet `install-module MSOnline`. Informazioni dettagliate per l'installazione e l'uso del modulo Microsoft Online Services si trovano nel sito Web di Office 365. Queste istruzioni spiegano anche come configurare Single Sign-on, Federation e la sincronizzazione tra Office 365 e Active Directory. 
 
 
 
-Dopo aver configurato Office 365 e dopo aver creato le entità di servizio di Office 365 per Skype for Business Server ed Exchange 2013, sarà necessario registrare le credenziali con queste entità di servizio. Per eseguire questa operazione, devi prima ottenere un X. 509 Base64 salvato come. File CER. Questo certificato verrà quindi applicato alle entità di servizio di Office 365.
+Dopo aver configurato Office 365 e dopo aver creato le entità di servizio di Office 365 per Skype for Business Server ed Exchange 2013, sarà necessario registrare le credenziali con queste entità di servizio. Per eseguire questa operazione, devi prima ottenere un certificato X. 509 Base64 salvato come. File CER. Questo certificato verrà quindi applicato alle entità di servizio di Office 365.
 
 Dopo aver ottenuto il certificato X. 509, aprire la console di PowerShell e importare il modulo Microsoft online di Windows PowerShell contenente i cmdlet che possono essere usati per gestire le entità di servizio:
 
