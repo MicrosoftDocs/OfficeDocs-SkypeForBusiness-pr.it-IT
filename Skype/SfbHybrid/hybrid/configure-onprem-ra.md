@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: 72c56d8534eeacf9b3430e4439c2f40ab1f51f6d
-ms.sourcegitcommit: ee6fca44a611acaa8234563c546a3f841bba6e1a
+ms.openlocfilehash: 0439532eba2639dc836f62fff94531d4930f03e0
+ms.sourcegitcommit: 1f84b0edc4e418259b9f6392370e2cc4dc70df82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36790862"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37328300"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
@@ -119,7 +119,7 @@ Un esempio di implementazione di piccole imprese è disponibile in [Small Busine
 
 ## <a name="create-a-resource-account-without-a-phone-number"></a>Creare un account delle risorse senza un numero di telefono
 
-Questa sezione illustra la creazione di un account delle risorse ospitato in locale. La creazione di un account delle risorse ospitato online viene discussa in [gestire gli account delle risorse in Microsoft teams](/MicrosoftTeams/manage-resource-accounts).
+In questa sezione viene illustrata la creazione di un account delle risorse ospitato in locale. La creazione di un account delle risorse ospitato online viene discussa in [gestire gli account delle risorse in Microsoft teams](/MicrosoftTeams/manage-resource-accounts).
 
 Questi passaggi sono necessari se si sta creando un nuovo operatore automatico o una struttura della coda di chiamata oppure una struttura di ricompilazione creata originariamente nella messaggistica unificata di Exchange.
 

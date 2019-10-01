@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica dell'uso degli strumenti di telemetria di Skype for business online per monitorare un'implementazione locale in uno scenario ibrido.
-ms.openlocfilehash: dc129ed99e1ed69e3faf5d2a7b6923f818c482eb
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3300ad17b109ac069c4f7382f610dd0214b30197
+ms.sourcegitcommit: 1f84b0edc4e418259b9f6392370e2cc4dc70df82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36185513"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37328428"
 ---
 # <a name="plan-call-data-connector"></a>Connettore dati chiamata piano
 
@@ -23,8 +23,6 @@ ms.locfileid: "36185513"
 
 Questo argomento descrive i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione di Skype for Business Server Call Data Connector. Per altre informazioni sulla configurazione del connettore dati chiamata, vedere [configurare il connettore dati chiamata](configure-call-data-connector.md).
 
-> [!NOTE]
-> Nella versione di anteprima pubblica è disponibile solo il dashboard di analisi delle chiamate.
 
 Chiamata Data Connector semplifica notevolmente il monitoraggio delle chiamate in un ambiente ibrido perché non è più necessario usare set diversi di strumenti locali e online per monitorare tutta la qualità delle chiamate degli utenti. Indipendentemente dal fatto che gli utenti siano ospitati in locale o online, è possibile scegliere di visualizzare la qualità delle chiamate per l'intera organizzazione online.
 
@@ -56,7 +54,7 @@ Naturalmente, potresti voler conservare alcuni dati sulla qualità delle chiamat
 
 ## <a name="requirements"></a>Requisiti
 
-I requisiti seguenti presuppongono che si disponga già di Skype for Business Server distribuito in una topologia supportata.  Per altre informazioni sulla distribuzione di Skype for Business Server e delle topologie supportate, vedere Nozioni di [base](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/topology-basics/topology-basics)sulla topologia. Per configurare il connettore dati chiamata, è necessario:
+I requisiti seguenti presuppongono che si disponga già di Skype for Business Server distribuito in una topologia supportata.  Per altre informazioni sulla distribuzione di Skype for Business Server e delle topologie supportate, vedere [nozioni di base sulla topologia](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/topology-basics/topology-basics). Per configurare il connettore dati chiamata, è necessario:
 
 - Abilitare la connettività ibrida. Se è già stato distribuito Skype for Business Server e si vuole abilitare il connettore dati chiamata, è necessario assicurarsi di avere configurato la connettività ibrida tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di domini divisi.
 
@@ -73,6 +71,8 @@ I requisiti seguenti presuppongono che si disponga già di Skype for Business Se
 
 > [!IMPORTANT]
 > Il connettore dati chiamata non funzionerà se il monitoraggio non è abilitato nel pool Front-end.
+
+- Configurata correttamente [l'autenticazione da server a server](https://docs.microsoft.com/skypeforbusiness/manage/authentication/server-to-server-and-partner-applications). 
 
 ## <a name="comparison-of-on-premises-and-online-call-quality-dashboard-cqd-reports"></a>Confronto tra i report di dashboard di qualità delle chiamate locali e online (Call Quality Dashboard)
 

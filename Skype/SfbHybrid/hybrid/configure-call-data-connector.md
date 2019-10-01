@@ -10,19 +10,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Istruzioni per la configurazione della chiamata Data Connector, che consente la visualizzazione di telemetria da Skype for business in locale con gli strumenti di Skype for business online.
-ms.openlocfilehash: 1851e1e0c430107a27d706f7bc16ad974c5abaed
-ms.sourcegitcommit: a78fee3cad5b58bf41dd014a79f4316cf310c8d1
+ms.openlocfilehash: 48af644523e9872107c814aa330d2af2d9a4272f
+ms.sourcegitcommit: 1f84b0edc4e418259b9f6392370e2cc4dc70df82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "36185555"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37328375"
 ---
 # <a name="configure-call-data-connector"></a>Configurare il connettore dati chiamata
 
-Questo articolo descrive come configurare il connettore dati chiamata, un singolo set di strumenti che consente di visualizzare i dati di qualità delle chiamate di Skype for Business Server usando Skype for business online Call Quality Dashboard (Call Quality Dashboard) e strumenti di analisi delle chiamate (CA). 
-
-> [!NOTE]
-> Nella versione di anteprima pubblica è disponibile solo il dashboard di analisi delle chiamate.
+Questo articolo descrive come configurare il connettore dati chiamata, un singolo set di strumenti che consente di visualizzare i dati di qualità delle chiamate di Skype for Business Server usando Skype for business online Call Quality Dashboard (Call Quality Dashboard) e strumenti di analisi delle chiamate (CA).
 
 Per altre informazioni sui vantaggi e i prerequisiti per i connettori dei dati delle chiamate, ad esempio i requisiti dei ruoli e la configurazione della connettività ibrida, Vedi [Data Connector chiamata piano](plan-call-data-connector.md).
 
@@ -139,8 +136,7 @@ Set-CsCloudCallDataConnectorConfiguration -Identity "global" -EnableCallDataConn
 
 ## <a name="view-on-premises-data-through-the-online-dashboard"></a>Visualizzare i dati locali tramite il dashboard online
 
- Dopo aver abilitato il connettore dati chiamata, è possibile visualizzare i dati delle chiamate locali nel dashboard di analisi delle chiamate, come descritto in [usare la chiamata analitica per la risoluzione dei problemi di qualità scadente](https://docs.microsoft.com/skypeforbusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality).
-
+ Dopo aver abilitato il connettore dati chiamata, è possibile visualizzare i dati delle chiamate locali nel dashboard di analisi delle chiamate o nel dashboard qualità chiamata, come descritto in [usare la chiamata analitica per risolvere i problemi di qualità scadente](https://docs.microsoft.com/skypeforbusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality) e [attivare e usare il dashboard qualità chiamata per Microsoft teams e Skype for business online](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard).
 
 ## <a name="for-more-information"></a>Per altre informazioni
 

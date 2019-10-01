@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: cc2fbf41-a7e0-4ef8-a939-47bc42da5529
 description: 'Riepilogo: informazioni su cosa tenere in considerazione quando si pianifica il dashboard qualità chiamata.'
-ms.openlocfilehash: 84fa8672e561cbf91714b3d18276de401f2ab377
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c98828f8fed3567a892e20dcab8040bb731c91f2
+ms.sourcegitcommit: 1f84b0edc4e418259b9f6392370e2cc4dc70df82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186884"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37328438"
 ---
 # <a name="plan-for-call-quality-dashboard-for-skype-for-business-server"></a>Pianificare il dashboard per la qualità delle chiamate per Skype for Business Server 
  
@@ -27,15 +27,14 @@ ms.locfileid: "36186884"
 Skype for Business Server Call Quality Dashboard (Call Quality Dashboard) è un livello di Reporting superiore al database di qualità dell'esperienza nel server di monitoraggio in Skype for Business Server. Call Quality dashboard USA Microsoft SQL Server Analysis Services per consentire l'utilizzo aggregato e le informazioni sulla qualità delle chiamate, nonché per filtrare e ruotare il set di dati. Le caratteristiche di Call Quality dashboard includono:
   
 - **Archiviazione degli archivi dei dati QoE tramite il componente archivio QoE di Call Quality dashboard.** Il componente archivio QoE può archiviare i dati QoE per una durata molto più lunga rispetto a quella del server di monitoraggio. In questo modo è possibile creare tendenze e report per un massimo di sette mesi di dati alla volta, con la possibilità di scorrere la finestra dei report fino a quando sono presenti dati.
-    
 - **Creazione di report e analisi con la potenza e la velocità di Microsoft SQL Server Analysis Services.** Call Quality dashboard USA Microsoft SQL Analysis Services per creare rapidamente funzionalità di riepilogo, filtro e rotazione per alimentare il dashboard tramite un cubo di analisi. La velocità di esecuzione della segnalazione e la possibilità di eseguire il drill-down dei dati possono ridurre drasticamente i tempi di analisi.
-    
 - **Nuovo schema di dati ottimizzato per i report sulla qualità delle chiamate.** Il cubo ha uno schema progettato per la creazione di report e indagini di qualità vocale. Gli utenti del portale possono concentrarsi sulle attività di creazione di report anziché capire in che modo lo schema di database delle metriche QoE esegue il mapping alle visualizzazioni necessarie. La combinazione dell'archivio QoE e del cubo offre un'astrazione che riduce la complessità della creazione di report e dell'analisi tramite Call Quality dashboard. Lo schema di database di archiviazione QoE contiene anche tabelle che possono essere popolate con dati specifici della distribuzione per migliorare il valore complessivo dei dati.
-    
 - **Progettazione report incorporata e modifica del report sul posto.** Il componente portale include diversi report predefiniti modellati dopo la metodologia di qualità delle chiamate. Gli utenti del portale possono modificare i report e creare nuovi report tramite la funzionalità di modifica del portale.
-    
 - **Accesso alle API Web per la struttura del report e i dati del cubo di analisi.** Dashboard Reporting Framework non è l'unico modo per visualizzare i dati dal cubo. Call Quality dashboard offre diversi esempi di uso di HTML e JavaScript per recuperare i dati dalle API Web di Call Quality dashboard ed eseguire il rendering dei dati in un formato personalizzato. La combinazione dell'editor report e delle API Web Call Quality dashboard consente la prototipazione rapida di report e layout di report personalizzati.
-    
+
+> [!NOTE]
+> Un amministratore può ora gestire Skype for Business Server 2019 usando [Call Quality dashboard versione 3](https://cqd.teams.microsoft.com) (accedere con le credenziali di amministratore). Questo richiede un'implementazione ibrida e l'uso del connettore dati chiamata (CDC). Per altre informazioni sull'abilitazione di CDC, vedere [Data Connector](/SkypeForBusiness/hybrid/plan-call-data-connector) . Per la documentazione di Call Quality dashboard versione 3, vedere [attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard) per altre informazioni su Call Quality dashboard versione 3.
+
 ## <a name="cqd-design-goals"></a>Obiettivi di progettazione Call Quality dashboard
 
 Call Quality dashboard consente ai professionisti IT di usare i dati aggregati per identificare le aree di interesse nell'ambiente in cui si verificano problemi di qualità multimediale. Consente a un professionista IT di confrontare le statistiche per diversi gruppi di utenti e identificare tendenze e modelli. Non è focalizzato sulla risoluzione dei singoli problemi di chiamata, ma sull'individuazione di problemi e soluzioni che verranno applicati a molti utenti in un ambiente specifico. 
@@ -162,8 +161,15 @@ Call Quality dashboard, inclusi tutti i componenti e i componenti dipendenti, pu
   
 |||
 |:-----|:-----|
+|Per Call Quality dashboard 2015 <br/> |  <br/> |
 |Sistemi operativi supportati  <br/> |Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2  <br/> |
 |SQL Server supportato  <br/> |SQL Server 2012, SQL Server 2014, SQL Server 2016  <br/> |
+
+|||
+|:-----|:-----|
+|Per Call Quality dashboard 2019 <br/> |  <br/> |
+|Sistemi operativi supportati  <br/> |Windows Server 2016, Windows Server 2019  <br/> |
+|SQL Server supportato  <br/> |SQL Server 2017, SQL Server 2019  <br/> |
    
 Call Quality dashboard USA Microsoft SQL Server, Microsoft SQL Server Analysis Services e Microsoft Internet Information Services in modo che i requisiti hardware e software minimi di Call Quality dashboard siano sostanzialmente gli stessi di questi componenti dipendenti. Tuttavia, in base ai requisiti dell'organizzazione intorno alla freschezza dei dati (che dipenderà in parte dal volume dei dati QoE generati dall'organizzazione) e dai costi di distribuzione, è necessario apportare ulteriori considerazioni sulla distribuzione.
   
@@ -188,7 +194,7 @@ Questa sezione presuppone che esista un singolo DB QoEMetrics nell'ambiente.
 |**Computer**|**Core della CPU**|**RAM**|**Archivio QoE e cubo nello stesso disco**|**Archivio QoE e SQL Temp DB sullo stesso disco**|
 |:-----|:-----|:-----|:-----|:-----|
 |Macchina virtuale  <br/> |4  <br/> |7 GB  <br/> |Sì  <br/> |Sì  <br/> |
-|4 core  <br/> |4  <br/> |20 GB  <br/> |Sì  <br/> |No  <br/> |
+|4 core  <br/> |4  <br/> |20 GB  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
 |8 core  <br/> |8  <br/> |32 GB  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
 |16 core  <br/> |16  <br/> |128 GB  <br/> |No  <br/> |No  <br/> |
    
@@ -240,6 +246,8 @@ Per Call Quality dashboard sono necessari i sistemi operativi seguenti:
 - Windows Server 2012 R2 con IIS 8,5
 
 - Windows Server 2016 con IIS 10,0 (solo per Skype for Business Server 2019 Call Quality Dashboard)
+
+- Windows Server 2019 (solo per Skype for Business Server 2019 Call Quality Dashboard)
     
 Di seguito sono riportati i servizi ruolo IIS necessari (in ordine gerarchico):
   
@@ -293,6 +301,8 @@ Sono supportate le versioni seguenti di SQL Server:
 - SQL Server 2016
 
 - SQL Server 2017
+
+- SQL Server 2019 (solo per Skype for Business Server 2019 Call Quality Dashboard)
     
 Business Intelligence o Enterprise Edition è consigliato per motivi di prestazioni. Queste edizioni consentono l'uso di più file di partizione che possono essere elaborati in parallelo, che è vantaggioso per l'elaborazione dei dati che si estendono più mesi o più. 
   
