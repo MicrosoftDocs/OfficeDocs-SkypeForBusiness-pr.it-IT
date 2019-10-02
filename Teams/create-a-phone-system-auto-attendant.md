@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: bd23262a3b8cd3c50cffbb4be6aa70317d209613
-ms.sourcegitcommit: a0df7479662b3bea488c19722ad588981f58a5e4
+ms.openlocfilehash: 6ac4ccea48e70a8bba5e11511379fef5c5a2a861
+ms.sourcegitcommit: e89c2234fc5aa8f7eeef66ba1ae093a0f7beda85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36447942"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37349250"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -67,11 +67,14 @@ Nell'interfaccia di **amministrazione di Microsoft teams**fare clic su**operator
 
 ![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
 
+<a name="phonenumber"> </a>
+
 **Account risorse** Fare clic su questo pulsante per selezionare uno o più account risorse per connettersi al nuovo operatore automatico. Tutti gli operatori automatici devono avere un account di risorse associato. Un account di risorse può avere un numero di telefono associato all'account, ma un numero di telefono non è un requisito. Un operatore automatico di primo livello ha in genere un account di risorse con un numero di telefono assegnato, ma l'operatore automatico annidato (usato come menu di livello 2 a cui si connette l'operatore automatico di prima livello) potrebbe non avere un numero di telefono assegnato al proprio account di risorse.
 
 * * *
 
-![Icona del numero 3, che fa riferimento a un callout nella schermata precedente](media/sfbcallout3.png)
+![Icona del numero 3, che fa riferimento a un callout nella schermata](media/sfbcallout3.png)
+ <a name="timezone"> </a> precedente
 
 **Fuso orario** È necessario impostare il fuso orario per l'operatore automatico, che non deve necessariamente corrispondere al fuso orario dell'indirizzo principale indicato per l'organizzazione. Ogni operatore automatico può avere un fuso orario diverso e gli orari di ufficio impostati per l'operatore automatico vengono impostati in base al fuso orario selezionato qui.
 
@@ -79,17 +82,21 @@ Nell'interfaccia di **amministrazione di Microsoft teams**fare clic su**operator
 
 ![Icona del numero 4, che fa riferimento a un callout nella schermata precedente](media/sfbcallout4.png)
 
+<a name="language"> </a>
+
 **Lingua** Seleziona la lingua che vuoi utilizzare per l'operatore automatico tra una delle lingue disponibili elencate. La lingua impostata qui è la lingua usata dall'operatore automatico per interagire con le persone che chiamano l'operatore automatico e tutte le richieste di sistema vengono riprodotte in questa lingua.
 
 * * *
 
 ![Icona del numero 5, che fa riferimento a un callout nella schermata precedente](media/sfbcallout5.png)
 
+<a name="operator"> </a>
+
 **Operatore** È facoltativo, ma puoi impostare l'opzione **operator** per consentire ai chiamanti di uscire dai menu e parlare con una persona.
 
 Per impostazione predefinita, il tasto 0 viene assegnato all'operatore.
 
-Se si imposta un operatore, sarà anche necessario indicare agli utenti che chiamano l'opzione nelle **Opzioni del menu modifica** nella pagina **Gestione chiamate orari di ufficio** . Se si imposta un operatore nell'operatore automatico, è necessario immettere il testo del prompt corrispondente nei chiamanti **si sente** la casella o si modifica il file audio per includere questa opzione. Ad esempio: "Per contattare un operatore, premere zero".
+Se si imposta un operatore, sarà anche necessario indicare agli utenti che chiamano l'opzione nelle **Opzioni del menu modifica** nella pagina **Gestione chiamate orari di ufficio** . Se si imposta un operatore nell'operatore automatico, è necessario immettere il testo del prompt corrispondente nei **chiamanti si sente** la casella o si modifica il file audio per includere questa opzione. Ad esempio: "Per contattare un operatore, premere zero".
 
 Sono disponibili diversi modi per impostare l'operatore:
 
@@ -147,6 +154,8 @@ Dopo aver completato le selezioni, fare clic su **Avanti**.
 
 ![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
 
+<a name="greetingsandrouting"> </a>
+
 **Messaggio di saluto** Un saluto per le ore lavorative è facoltativo e può essere impostato su **Nessun saluto**. In questo caso, il chiamante non sente un messaggio o un saluto prima che la chiamata venga gestita da una delle azioni selezionate. È possibile caricare un file audio (nel formato con estensione wav, mp3 o .wma) o creare un messaggio di saluto personalizzato utilizzando la sintesi vocale.
 - **Caricare un file audio** Se si sceglie questo record, registrare il messaggio di saluto e quindi caricare il file audio (in formato WAV, MP3 o WMA).
 - **Digitare un messaggio di saluto** Se si sceglie questa opzione, immettere il testo da leggere per il sistema (fino a 1000 caratteri). Ad esempio, è possibile immettere "Benvenuti alla Contoso. La tua chiamata è importante per noi." nella casella **I chiamanti udiranno**.
@@ -156,6 +165,8 @@ Dopo aver completato le selezioni, fare clic su **Avanti**.
 ![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
 
 È possibile selezionare cosa avviene alle chiamate in arrivo durante l'orario di ufficio. È possibile scegliere tra le azioni seguenti:
+
+<a name="redirectcalls"> </a>
 
 - **Disconnettere** Se selezionata, la persona che chiama verrà disconnessa dopo aver ascoltato una saluto di orario di ufficio.
 - **Reindirizzare una chiamata** Ciò consente di inviare automaticamente la chiamata a:
@@ -168,13 +179,13 @@ Dopo aver completato le selezioni, fare clic su **Avanti**.
 
    Puoi usare un operatore automatico esistente per creare un secondo livello di opzioni di menu che contiene un sottomenu. Questi sono denominati operatori automatici innestati. Per inviare la chiamata a un operatore automatico annidato, selezionare **persona in società** e assegnare un account di risorse, uno che ha già un operatore automatico associato o uno che verrà associato a un operatore automatico dopo aver creato questo operatore automatico.
 
-- Le **Opzioni del menu** Riproduci possono essere usate anche per configurare un prompt che si vuole riprodurre.
+- Le **Opzioni del menu Riproduci** possono essere usate anche per configurare un prompt che si vuole riprodurre.
 
 * * *
 
 ![Icona del numero 3, che fa riferimento a un callout nella schermata precedente](media/sfbcallout3.png)
 
-**Messaggio del menu** Per creare il messaggio del menu principale, puoi utilizzare il sintetizzatore vocale o caricare un file audio (.wav, .mp3 o .wma). È possibile digitare il messaggio nella casella **imposta il menu di spostamento per** i chiamanti o registrare un file audio e dire, ad esempio: "per le vendite, dire o premere o dire 1. Per i servizi, premere o pronunciare 2. Per l'assistenza clienti, premere o pronunciare 3. Per contattare un operatore, premere o pronunciare 0. Per ascoltare di nuovo questo menu, premere il tasto asterisco o pronunciare Ripeti". **Digitare un messaggio di saluto** Se si è scelto questo articolo, è necessario immettere il testo che si vuole leggere dal sistema (fino a 1000 caratteri). **Carica un file audio** Se scegli questa opzione, dovrai registrare il messaggio di saluto e poi caricare il file audio (in formato .wav, .mp3 o .wma).
+**Messaggio del menu** Per creare il messaggio del menu principale, puoi utilizzare il sintetizzatore vocale o caricare un file audio (.wav, .mp3 o .wma). È possibile digitare il messaggio nella casella **imposta il menu di spostamento per i chiamanti** o registrare un file audio e dire, ad esempio: "per le vendite, dire o premere o dire 1. Per i servizi, premere o pronunciare 2. Per l'assistenza clienti, premere o pronunciare 3. Per contattare un operatore, premere o pronunciare 0. Per ascoltare di nuovo questo menu, premere il tasto asterisco o pronunciare Ripeti". **Digitare un messaggio di saluto** Se si è scelto questo articolo, è necessario immettere il testo che si vuole leggere dal sistema (fino a 1000 caratteri). **Carica un file audio** Se scegli questa opzione, dovrai registrare il messaggio di saluto e poi caricare il file audio (in formato .wav, .mp3 o .wma).
 
 * * *
 
@@ -224,7 +235,7 @@ Dopo aver completato le selezioni, fare clic su **Avanti**.
 È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
 > [!TIP]
-> Per creare festività, è possibile visualizzare le **Impostazioni** > **** a livello di organizzazione, oppure crearle come parte della creazione di un nuovo gestore chiamate.
+> Per creare festività, è possibile visualizzare le **Impostazioni** > **a** livello di organizzazione, oppure crearle come parte della creazione di un nuovo gestore chiamate.
 
 ![Screenshot della pagina delle impostazioni delle chiamate festive](media/50a5ce88-7f39-4210-808a-da7ced969854.png)
 
@@ -244,7 +255,7 @@ Nella nuova finestra immettere un nome per il gestore della nuova chiamata nella
 
 ![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
 
-Se il nome della tua vacanza esiste già nell'elenco **** a discesa festività, puoi usarlo. Se il nome di festività necessario non esiste già, selezionare **Crea nuova festività** nell'elenco a discesa e assegnare un nome e una data per la nuova festività nella nuova schermata visualizzata. Fare clic su **Salva** quando si è pronti.
+Se il nome della tua vacanza esiste già nell'elenco a discesa **festività** , puoi usarlo. Se il nome di festività necessario non esiste già, selezionare **Crea nuova festività** nell'elenco a discesa e assegnare un nome e una data per la nuova festività nella nuova schermata visualizzata. Fare clic su **Salva** quando si è pronti.
 
 I nomi delle festività possono essere formati da un massimo di 64 caratteri e devono essere univoci per l'operatore automatico stesso. Ad esempio, è possibile avere due festività denominate "Giorno del ringraziamento" nello stesso operatore automatico.
 
@@ -289,7 +300,7 @@ In questa pagina è possibile configurare gli utenti dell'organizzazione che ver
 
 ![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
 
-Con l' **** opzione Escludi sono disponibili due opzioni:
+Con l'opzione **Escludi** sono disponibili due opzioni:
 
 - **Nessuno** Questa opzione indica che nessun utente online sarà escluso dalla ricerca in elenco.
 - **Gruppo utenti personalizzato** Se si usa questa opzione, è possibile cercare un gruppo, una lista di distribuzione o un gruppo di sicurezza di Office 365 creato nell'organizzazione e tutti gli utenti aggiunti a questo gruppo di Office 365, a una lista di distribuzione o a gruppi di sicurezza verranno esclusi dalla ricerca nella directory. È possibile aggiungere più gruppi di Office 365, liste di distribuzione e gruppi di sicurezza.
