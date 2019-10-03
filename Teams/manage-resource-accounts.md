@@ -18,16 +18,14 @@ localization_priority: Normal
 f1keywords:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
 description: Informazioni sulla gestione degli account delle risorse in Microsoft Teams
-ms.openlocfilehash: 0508408fbf5bde620cefe9233df4aa62ecf880df
-ms.sourcegitcommit: e89c2234fc5aa8f7eeef66ba1ae093a0f7beda85
+ms.openlocfilehash: 07718421daca271358964914fd29409b7b23fb58
+ms.sourcegitcommit: 2d31209aae9e0171693389db97b0b5c974864673
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37349264"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37375699"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account delle risorse in Microsoft Teams
-
-<a name="bk">PhoneNumber</a>
 
 Un account di risorse è noto anche come *oggetto utente disabilitato* in Azure ad e può essere usato per rappresentare le risorse in generale. In Exchange potrebbe essere usato per rappresentare le sale riunioni, ad esempio, e consentire loro di avere un numero di telefono. Un account delle risorse può essere ospitato in Microsoft 365 o in locale con Skype for Business Server 2019.
 
@@ -118,6 +116,7 @@ Applicare quindi una licenza all'account delle risorse nell'interfaccia di ammin
 ![Icona del numero 2, facendo riferimento a un callout nello screenshot](media/sfbcallout2.png) precedente è possibile modificare il nome visualizzato dell'account delle risorse usando l'opzione **modifica** . Al termine, fare clic su **Salva** .
 ![Screenshot dell'opzione modifica account risorse](media/r-a-edit.png)
 
+<a name="phonenumber"></a>
 ### <a name="assignunassign-phone-numbers-and-services"></a>Assegnare/annullare l'assegnazione di numeri di telefono e servizi
 
 ![Icona del numero 3, facendo riferimento a un callout nello screenshot](media/sfbcallout3.png) precedente dopo aver creato l'account delle risorse e assegnato la licenza, è possibile fare clic su **assegna/Annulla assegnazione** per assegnare un numero di servizio all'account della risorsa oppure assegnare la risorsa account per un operatore automatico o una coda di chiamata già esistente. L'assegnazione di un numero di routing diretto può essere eseguita solo tramite cmdlet. Se è ancora necessario creare la coda di chiamata o l'operatore automatico, è possibile collegare l'account delle risorse durante la creazione. Al termine, fare clic su **Salva** .

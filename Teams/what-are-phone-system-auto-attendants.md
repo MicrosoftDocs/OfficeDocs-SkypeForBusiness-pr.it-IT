@@ -22,12 +22,12 @@ f1keywords: ms.teamsadmincenter.autoattendants.overview
 ms.custom:
 - Phone System
 description: Scopri quali sono gli operatori automatici di cloud e come usarli.
-ms.openlocfilehash: b3541ad88f29727d07043cba46503d040e6434c0
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: fd1fd053c0ecab8e0a36835f6d26127db91431be
+ms.sourcegitcommit: 2d31209aae9e0171693389db97b0b5c974864673
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36184669"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37375688"
 ---
 # <a name="what-are-cloud-auto-attendants"></a>Cosa sono gli operatori automatici cloud?
 
@@ -90,7 +90,6 @@ Non esiste alcun limite per le dimensioni di Active Directory per cui è support
 > Se si usa dial by Name con il riconoscimento vocale, ma Active Directory dell'organizzazione è maggiore di 80.000 utenti e non è stato limitato l'ambito della chiamata per nome tramite la caratteristica ambito di chiamata, il comando componi per nome continuerà a funzionare per i chiamanti tramite una tastiera del telefono e gli input vocali saranno disponibili per tutti gli altri scenari. È possibile utilizzare la funzione Ambito di chiamata per limitare i nomi raggiungibili modificando l'ambito di Chiamata per nome per un particolare operatore automatico.
   
 ### <a name="dial-by-name---keypad-dtmf-entry"></a>Chiamata per nome - Immissione con tastiera (DTMF)
-
 Le persone che chiamano in può usare la chiamata in base al nome per raggiungere gli utenti specificando il nome completo o parziale della persona che sta cercando di raggiungere. Sono disponibili vari formati che possono essere usati quando viene immesso il nome.
 
 Durante la ricerca nell'elenco dell'organizzazione, le persone possono usare il tasto '0' (zero) per indicare uno spazio tra il nome e cognome o viceversa. Quando si immette il nome, verrà chiesto di terminare l'immissione del tastierino numerico con il tasto #. Ad esempio: "Dopo aver immesso il nome della persona che state cercando di raggiungere, premete #". Se vengono trovati più nomi, al chiamante verrà dato un elenco di nomi tra cui scegliere.
@@ -230,7 +229,7 @@ Per configurare un operatore automatico e le opzioni di menu, [impostare un oper
 
 È possibile assegnare un numero di servizio Microsoft, un numero di routing diretto o un numero ibrido all'operatore automatico. Vedere [pianificare il routing diretto](direct-routing-plan.md) per i dettagli.
 
-Per assegnare un numero di servizio, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Una volta ottenuto il pedaggio o i numeri di telefono del servizio gratuito, verranno visualizzati nella finestra di dialogo <!-- validate nav path --> **** > I**numeri di telefono****vocali** > dell'interfaccia di amministrazione di Skype for business e il **tipo di numero** elencato saranno elencati come **servizio a pagamento gratuito**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers) oppure, se si vuole trasferire e numero di servizio esistente, vedere trasferire i [numeri di telefono in Office 365](transfer-phone-numbers-to-office-365.md).
+Per assegnare un numero di servizio, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Una volta ottenuto il pedaggio o i numeri di telefono del servizio gratuito, verranno visualizzati nella finestra di dialogo <!-- validate nav path --> **** > I**numeri di telefono****vocali** > dell'interfaccia di amministrazione di Skype for business e il **tipo di numero** elencato saranno elencati come **servizio a pagamento gratuito**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers) oppure, se si vuole trasferire e numero di servizio esistente, vedere [trasferire i numeri di telefono in Office 365](transfer-phone-numbers-to-office-365.md).
   
 > [!NOTE]
 > Se si è al di fuori degli Stati Uniti, non è possibile usare l'interfaccia di amministrazione di Microsoft teams per ottenere i numeri di servizio. È invece necessario [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per vedere come eseguire questa operazione.
