@@ -3,10 +3,9 @@ title: Gestire i criteri delle riunioni
 author: tonysmit
 ms.author: tonysmit
 manager: serdars
-ms.date: 05/14/2019
 ms.topic: article
 ms.service: msteams
-ms.reviewer: sonua
+ms.reviewer: sonua, shalenc
 audience: admin
 localization_priority: Normal
 search.appverid: MET150
@@ -22,19 +21,19 @@ f1keywords:
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams.
-ms.openlocfilehash: eff7eb41b5dccba299f8650c5771b33df04e719b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: f926704a256bbea551d4aaa32bd98ba87322930c
+ms.sourcegitcommit: 58be786003d5ff703adfcd636585fb1852aba486
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236622"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "37391444"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri delle riunioni in teams
 
 ::: zone target="docs"
 I criteri per le riunioni vengono usati per controllare le caratteristiche disponibili per i partecipanti alla riunione per le riunioni pianificate dagli utenti dell'organizzazione. Dopo aver creato un criterio e aver apportato le modifiche, è possibile assegnare gli utenti ai criteri. Puoi gestire i criteri delle riunioni nell'interfaccia di amministrazione di Microsoft teams oppure [usando PowerShell](teams-powershell-overview.md).
 
-È possibile implementare i criteri nei modi seguenti, che influiscono sull'esperienza di riunione per gli utenti prima che venga avviata una riunione, durante una riunione o dopo una riunione. 
+È possibile implementare i criteri nei modi seguenti, che influiscono sull'esperienza di riunione per gli utenti prima che venga avviata una riunione, durante una riunione o dopo una riunione.
 
 |Tipo di implementazione  |Descrizione  |
 |---------|---------|
@@ -72,7 +71,7 @@ Se si applica un criterio a più utenti, selezionare **utenti** nel riquadro di 
  
 È anche possibile assegnare un criterio di riunione a uno o più utenti, come indicato di seguito:
 
-1. Accedere ai**criteri di riunione**delle**riunioni** > dell'interfaccia di **Amministrazione** > di Microsoft teams.
+1. Accedere ai**criteri di riunione**delle**riunioni** > dell'interfaccia di amministrazione > di **Microsoft teams**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
 3. Selezionare **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
@@ -116,7 +115,7 @@ Si tratta di un criterio per utente e si applica prima che venga avviata una riu
 
 Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se le riunioni dei team possono essere pianificate in Outlook (Windows, Mac, Web e mobile).
 
-![Screenshot che mostra la possibilità di pianificare una nuova riunione](media/meeting-policies-outlook-add-in.png)
+![Schermata che mostra la possibilità di pianificare una nuova riunione](media/meeting-policies-outlook-add-in.png)
 
 Se si disattiva questa opzione, gli utenti non potranno pianificare le riunioni dei team quando creano una nuova riunione in Outlook. Ad esempio, in Outlook su Windows l'opzione **nuova riunione teams** non viene visualizzata sulla barra multifunzione.
 
@@ -124,7 +123,7 @@ Se si disattiva questa opzione, gli utenti non potranno pianificare le riunioni 
 
 Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di teams.  Se si disattiva questa impostazione, l'opzione **Pianifica una riunione** non sarà disponibile per l'utente quando avvia una riunione in un canale di teams e l'opzione **Seleziona un canale da soddisfare** non sarà disponibile per l'utente quando pianifica una riunione da riunioni in teams.
 
-![Schermata che mostra l'opzione Pianifica una riunione in teams](media/meeting-policies-schedule-a-meeting.png)
+![Screenshot che mostra l'opzione Pianifica una riunione in teams](media/meeting-policies-schedule-a-meeting.png)
 
 ![Screenshot che mostra l'opzione Seleziona un canale da soddisfare in](media/meeting-policies-select-a-channel-to-meet-in.png)
 
@@ -142,7 +141,7 @@ Tieni presente che se disattivi Consenti la pianificazione di **riunioni private
 - [Consenti registrazione cloud](#allow-cloud-recording)
 - [Consenti video IP](#allow-ip-video)
 - [Velocità in bit media (KBs)](#media-bit-rate-kbs)
-- [Abilitare le didascalie Live (presto disponibile)](#enable-live-captions-coming-soon)
+- [Abilitare le didascalie Live (anteprima)](#enable-live-captions-preview)
 
 ### <a name="allow-transcription"></a>Consenti trascrizione
 
@@ -150,7 +149,7 @@ Si tratta di una combinazione di criteri per ogni organizzazione e per utente. Q
 
 Tieni presente che la trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua in teams impostati per l'inglese e quando l'inglese viene pronunciato nella riunione.
 
-![Screenshot che mostra le opzioni di trascrizione in una riunione](media/meeting-policies-transcription.png)
+![Schermata che mostra le opzioni di trascrizione in una riunione](media/meeting-policies-transcription.png)
 
 ### <a name="allow-cloud-recording"></a>Consenti registrazione cloud
 
@@ -176,7 +175,7 @@ Per altre informazioni sulla registrazione di Cloud Meeting, vedere [registrazio
 
 Si tratta di una combinazione di criteri per ogni organizzazione e per utente. Video è un componente chiave per le riunioni. In alcune organizzazioni gli amministratori potrebbero volere un maggiore controllo sulle riunioni degli utenti che hanno un video. Questa impostazione controlla se il video può essere attivato in riunioni ospitate da un utente e in chiamate di 1:1 e di gruppo avviate da un utente. Riunioni organizzate da un utente che ha attivato questo criterio, consentire la condivisione di video nella riunione da parte dei partecipanti alla riunione, se i partecipanti alla riunione hanno anche il criterio abilitato. I partecipanti alla riunione che non dispongono di criteri assegnati, ad esempio i partecipanti anonimi e federati, ereditano i criteri dell'organizzatore della riunione.
 
-![Screenshot che mostra una riunione con impostazioni audio e video](media/meeting-policies-audio-video-settings.png)
+![Schermata che mostra una riunione con impostazioni audio e video](media/meeting-policies-audio-video-settings.png)
 
 Esaminiamo l'esempio seguente.
 
@@ -199,9 +198,17 @@ Se non è disponibile una larghezza di banda sufficiente per una riunione, i par
 
 Per le riunioni che richiedono un'esperienza video di altissima qualità, ad esempio riunioni di CEO e teams Live Events, è consigliabile impostare la larghezza di banda su 10 Mbps. Anche quando viene impostata l'esperienza massima, lo stack multimediale di teams si adatta alle condizioni di larghezza di banda ridotta quando vengono rilevate determinate condizioni di rete, a seconda dello scenario. 
 
-### <a name="enable-live-captions-coming-soon"></a>Abilitare le didascalie Live (presto disponibile)
+### <a name="enable-live-captions-preview"></a>Abilitare le didascalie Live (anteprima)
 
-Si tratta di un criterio per utente e si applica durante una riunione. Se questa impostazione è attivata, l'utente vedrà un'opzione per visualizzare le didascalie durante una riunione.
+Si tratta di un criterio per utente e si applica durante una riunione. Questa impostazione controlla se l'opzione **Attiva didascalie Live** è disponibile per consentire all'utente di attivare e disattivare le didascalie Live nelle riunioni che l'utente partecipa.  
+
+![Screenshot che mostra l'opzione Attiva didascalie Live](media/meeting-policies-live-captions.png)
+
+|Valore di impostazione |Comportamento  |
+|---------|---------|
+|**Disabilitato e l'utente può eseguire l'override**     | Le didascalie Live non vengono attivate automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Attiva didascalie Live** nel menu di overflow (**...**) per attivarle. Questa è l'impostazione predefinita. |
+|**Disabilitata**     | Le didascalie Live sono disabilitate per l'utente durante una riunione. L'utente non ha l'opzione per attivarli.          |
+
 
 <a name="bkcontentsharing"> </a>
 
@@ -242,7 +249,7 @@ Si tratta di un criterio per utente. Questa impostazione controlla se l'utente p
 
 Se questa impostazione è attivata per l'utente, l'opzione **assegna controllo** viene visualizzata nella barra superiore in una sessione di condivisione. 
 
-![Screenshot che mostra l'opzione assegna controllo](media/meeting-policies-give-control.png)
+![Schermata che mostra l'opzione assegna controllo](media/meeting-policies-give-control.png)
 
 Se le impostazioni sono disattivate per l'utente, l'opzione **assegna controllo** non è disponibile.
 
@@ -320,7 +327,6 @@ Queste impostazioni controllano quali partecipanti alla riunione attendono nella
 - [Ammettere automaticamente le persone](#automatically-admit-people)
 - [Consentire agli utenti anonimi di avviare una riunione](#allow-anonymous-people-to-start-a-meeting)
 - [Consenti agli utenti con accesso esterno di ignorare la sala d'attesa](#allow-dial-in-users-to-bypass-the-lobby-coming-soon)
-- [Consentire agli organizzatori di ignorare le impostazioni della sala di attesa](#allow-organizers-to-override-lobby-settings-coming-soon)
 
 > [!NOTE]
 >Le opzioni per partecipare a una riunione variano a seconda delle impostazioni per ogni gruppo di team e del metodo di connessione. Se il gruppo dispone di servizi di audioconferenza e lo usa per la connessione, vedere Servizi di audioconferenza [in Office 365](https://docs.microsoft.com/microsoftteams/audio-conferencing-in-office-365). Se il gruppo teams non dispone di servizi di audioconferenza, vedere [partecipare a una riunione in teams](https://support.office.com/article/join-a-meeting-in-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9).
@@ -329,7 +335,7 @@ Queste impostazioni controllano quali partecipanti alla riunione attendono nella
 
 Si tratta di un criterio per organizzatore. Questa impostazione controlla se gli utenti partecipano a una riunione direttamente o attendono nella sala di attesa finché non vengono ammessi da un utente autenticato.
 
-![Screenshot che mostra una riunione con un utente nella sala di attesa](media/meeting-policies-lobby.png)
+![Schermata che mostra una riunione con un utente nella sala di attesa](media/meeting-policies-lobby.png)
 
  Gli organizzatori della riunione possono fare clic su **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata. **(presto disponibile)**
   
@@ -382,31 +388,6 @@ Ecco il comportamento di join delle persone che effettuano la chiamata tramite t
 |   | Tutti gli utenti dell'organizzazione     |Attendere nella sala di attesa         |
 |   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | Attendere nella sala di attesa         |
 
-### <a name="allow-organizers-to-override-lobby-settings-coming-soon"></a>Consentire agli organizzatori di ignorare le impostazioni della sala di attesa (presto disponibile)
-
-Si tratta di un criterio per organizzatore. Questa impostazione controlla se l'organizzatore della riunione può eseguire l'override delle impostazioni della sala di attesa che un amministratore ha impostato per **ammettere automaticamente le persone** e **consentire agli utenti con accesso esterno di ignorare la sala** d'attesa quando pianificano una nuova riunione. 
-
-Gli organizzatori della riunione possono fare clic su **Opzioni riunione** nell'invito alla riunione per modificare le impostazioni della sala di attesa per ogni riunione pianificata. 
-
-Ecco come questa impostazione interessa se l'organizzatore della riunione può modificare l'impostazione **ammetti automaticamente persone** per ogni riunione pianificata dall'organizzatore.
-
-|Consentire agli organizzatori di ignorare le impostazioni della sala di attesa  |Ammettere automaticamente le persone  |Comportamento |
-|---------|---------|---------|
-|True    | Tutti      | L'organizzatore può modificare l'impostazione in qualsiasi altro valore. |
-|   | Tutti gli utenti dell'organizzazione       | L'organizzatore può modificare l'impostazione in qualsiasi altro valore.|
-|   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate       | L'organizzatore può modificare l'operazione in qualsiasi altro valore.         |
-|False    | Tutti        | L'organizzatore può modificare l'impostazione in qualsiasi altro valore.|
-|   | Tutti gli utenti dell'organizzazione     |L'organizzatore può modificare l'impostazione per **tutti gli utenti dell'organizzazione**. |
-|   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | L'organizzazione non può ignorare l'impostazione della sala di attesa. |
-
-Ecco come questa impostazione interessa se l'organizzatore della riunione può modificare l'impostazione **Consenti agli utenti con accesso esterno di ignorare le** impostazioni della sala di attesa per ogni riunione pianificata dall'organizzatore.
-    
-|Consentire agli organizzatori di ignorare le impostazioni della sala di attesa  |Consenti agli utenti con accesso esterno di ignorare la sala d'attesa  |Comportamento |
-|---------|---------|---------|
-|True    |  True        | L'impostazione può essere modificata in false.       |
-|True      | False         | Organizer può modificare l'impostazione su true.        |
-|False     | True        |L'impostazione può essere modificata in false.         |
-|False      |False          |L'organizzatore non può ignorare l'impostazione della sala di attesa e non può consentire agli utenti con accesso esterno di ignorare la sala d'attesa nella riunione.        |
 
 [Articolo completo](meeting-policies-in-teams.md)
 
