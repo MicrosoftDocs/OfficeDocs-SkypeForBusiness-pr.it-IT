@@ -22,18 +22,18 @@ f1keywords: ms.teamsadmincenter.autoattendants.overview
 ms.custom:
 - Phone System
 description: Scopri quali sono gli operatori automatici di cloud e come usarli.
-ms.openlocfilehash: fd1fd053c0ecab8e0a36835f6d26127db91431be
-ms.sourcegitcommit: 2d31209aae9e0171693389db97b0b5c974864673
+ms.openlocfilehash: 43b5b023660c22a719b84079416df8ac3a7cff98
+ms.sourcegitcommit: d349922409f49b52048597a56b81501163749a69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375688"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37401860"
 ---
 # <a name="what-are-cloud-auto-attendants"></a>Cosa sono gli operatori automatici cloud?
 
-Sistema telefonico in Office 365 fornisce gli operatori automatici, che possono essere usati per consentire ai chiamanti esterni e interni di spostarsi in un sistema di menu per individuare e inserire o trasferire le chiamate agli utenti o ai reparti aziendali dell'organizzazione.
+Sistema telefonico in Office 365 fornisce gli operatori automatici, che possono essere usati per consentire ai chiamanti esterni e interni di spostarsi in un sistema di menu per individuare e inserire o trasferire chiamate a utenti o reparti dell'organizzazione.
   
-Un operatore automatico è una serie di richieste vocali o di file audio che i chiamanti sentono al posto di un operatore umano quando chiamano un'organizzazione. Quando gli utenti chiamano un numero associato a un operatore automatico, le loro scelte possono reindirizzare la chiamata a un utente o individuare qualcuno nell'organizzazione e quindi connettersi a tale utente. Possono esprimere le proprie scelte e interagire con il sistema di menu usando la tastiera del telefono (DTMF) o il riconoscimento vocale.
+Un operatore automatico è il più delle volte un nodo in un sistema, dando a un chiamante una serie di richieste vocali o di file audio che sente al posto di un operatore umano. Quando gli utenti chiamano un numero associato a un operatore automatico, le loro scelte possono reindirizzare la chiamata a un utente o individuare qualcuno nell'organizzazione e quindi connettersi a tale utente. Possono esprimere le proprie scelte e interagire con il sistema di menu usando la tastiera del telefono (DTMF) o il riconoscimento vocale. Le scelte effettuate possono anche reindirizzare la chiamata a un altro operatore automatico o a una coda di chiamata.
   
 Per configurare un operatore automatico per il sistema telefonico in Office 365, vedere [configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md).
   
@@ -54,14 +54,14 @@ Un operatore automatico cloud ha le caratteristiche seguenti:
 
 Per iniziare a utilizzare gli operatori automatici, è importante ricordare quanto segue.
 
-- Per avere un account di risorse associato, è necessario un operatore automatico. Per informazioni dettagliate sugli account delle risorse, vedere [gestire gli account delle risorse in teams](manage-resource-accounts.md) .
-- Se si sta assegnando un numero di telefono a un account di risorse, è ora possibile usare la licenza per gli utenti virtuali del sistema telefonico senza costi. In questo modo le funzionalità del sistema telefonico sono disponibili per i numeri di telefono a livello di organizzazione e consentono di creare funzionalità di operatore automatico e coda di chiamata.
+- Per avere un account di risorse associato, è necessario un operatore automatico. Per informazioni dettagliate sugli account delle risorse, vedere [gestire gli account delle risorse in teams](manage-resource-accounts.md) . <!-- You can either use an existing resource account or create a new resource account as you set up your auto attendant. -->
+- Quando si assegna un numero di telefono a un operatore automatico, in senso stretto lo si assegna all'account delle risorse associato all'operatore automatico. In questo modo è possibile accedere a più numeri di telefono a un operatore automatico. Il più delle volte, un account di risorse utilizzerà la licenza per gli utenti virtuali del sistema telefonico senza costi. Questa licenza offre funzionalità di sistema telefonico per i numeri di telefono a livello di organizzazione e consente di creare operatori automatici e code di chiamata.
 
 > [!NOTE]
-> I numeri di servizio di routing diretto per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft teams.
-  
+> I numeri di servizio di routing diretto per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti di Microsoft teams e gli agenti di chiamata.
+
    > [!TIP]
-   > Per reindirizzare le chiamate a un operatore o a un'opzione di menu che è un utente online con una licenza di **sistema telefonico** , sarà necessario abilitarle per VoIP aziendale o assegnare loro piani di chiamata. Vedere [assegnare le licenze di Microsoft teams](assign-teams-licenses.md). Puoi anche utilizzare Windows PowerShell. Ad esempio, esegui:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+   > Per reindirizzare le chiamate a un operatore o a un'opzione di menu che è un utente online con una licenza di **sistema telefonico** , è necessario abilitare il proprio account per VoIP aziendale o assegnare loro piani di chiamata. Vedere [assegnare le licenze di Microsoft teams](assign-teams-licenses.md). Puoi anche utilizzare Windows PowerShell. Ad esempio, esegui:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
   
 - Per ottenere e usare i numeri di servizio gratuiti per gli operatori automatici, è necessario configurare i crediti per le comunicazioni. Per eseguire questa operazione, vedere informazioni sui crediti per le [comunicazioni](what-are-communications-credits.md) e [configurare i crediti per le comunicazioni per l'organizzazione](set-up-communications-credits-for-your-organization.md).
 
@@ -73,13 +73,15 @@ Per iniziare a utilizzare gli operatori automatici, è importante ricordare quan
   
 ## <a name="feature-overview"></a>Panoramica delle funzionalità
 
-### <a name="dial-by-name"></a>Chiamata per nome
+### <a name="searching-for-users"></a>Ricerca di utenti
 
-Chiamata per nome è una caratteristica di un operatore automatico noto anche come ricerca directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte del tastierino telefonico (DTMF) per immettere un nome completo o parziale nella directory della società, individuare la persona e quindi fare in modo che venga trasferita la chiamata. Gli utenti che desiderano avere individuato e raggiunto tramite chiamata per nome **non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono avere una licenza di sistema telefonico se sono utenti online o EV abilitato per gli utenti di onlocale**. Il comando componi per nome sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali.
+Chiamata per nome è una caratteristica di un operatore automatico noto anche come ricerca directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte del tastierino telefonico (DTMF) per immettere un nome completo o parziale nella directory della società, individuare la persona e quindi fare in modo che venga trasferita la chiamata. Gli utenti che desiderano avere individuato e raggiunto tramite chiamata in base **al nome non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono avere una licenza per il sistema telefonico se sono utenti online o VoIP aziendale abilitato per Skype for Business Server utenti**. Il comando componi per nome sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti implicati, è possibile abilitare esplicitamente la chiamata per nome in un operatore automatico.
 
-### <a name="maximum-directory-size"></a>Dimensione massima dell'elenco
+Dial by Extension è una caratteristica di un operatore automatico che fa anche parte della ricerca nella directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte della tastiera del telefono (DTMF) per immettere l'estensione del telefono dell'utente che sta provando a raggiungere e quindi la chiamata viene trasferita. Gli utenti che desiderano avere individuato e raggiunto tramite dial by Extension **non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono avere una licenza per il sistema telefonico se sono utenti online o VoIP aziendale abilitato per Skype for business Utenti del server**. Sarà inoltre necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Dial by Extension sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti in questione, è possibile abilitare esplicitamente dial by Extension in un operatore automatico.
 
-Non esiste alcun limite per le dimensioni di Active Directory per cui è supportata la chiamata in base al nome quando si usa la tastiera del telefono per cercare l'immissione di nomi parziali o completi (nome + cognome e anche cognome + nome). Tuttavia, le dimensioni massime degli elenchi di nomi che un singolo operatore automatico può supportare usando il riconoscimento dei nomi con la parola sono gli utenti di 80.000.
+#### <a name="maximum-directory-size"></a>Dimensione massima dell'elenco
+
+Il numero di utenti di Active Directory per nome e dial by Extension può essere supportato quando un chiamante cerca una persona specifica. Un chiamante può immettere nomi parziali o completi (nome + cognome e cognome + nome), ma richiede il numero di interno completo. Le dimensioni massime degli elenchi di nomi che un singolo operatore automatico può supportare con il riconoscimento vocale sono gli utenti di 80.000.
   
 |Tipo di ingresso|Formato di ricerca|Numero massimo di utenti di un'organizzazione|
 |:-----|:-----|:-----|
@@ -114,15 +116,15 @@ Ci sono diversi caratteri speciali che vengono utilizzati per la ricerca di pers
 |0   |Spazio tra i nomi. |
 |*    |Ripete l'elenco dei nomi corrispondenti. |
 
-### <a name="dial-by-name---name-recognition-with-speech"></a>Chiamata per nome - Riconoscimento vocale del nome
+#### <a name="dial-by-name---name-recognition-with-speech"></a>Chiamata per nome - Riconoscimento vocale del nome
 
-Gli utenti possono cercare altri utenti nella propria organizzazione usando la voce (riconoscimento vocale). Possono anche raggiungere chiunque nell'Active Directory della società dicendo il nome della persona che sta tentando di individuare. L'uso di input vocali può riconoscere i nomi in diversi formati, tra cui nome, cognome, nome + cognome o cognome + nome.
+Gli utenti possono cercare altri utenti nella propria organizzazione con la propria voce (riconoscimento vocale). Possono anche raggiungere chiunque in Active Directory dicendo il nome della persona che sta tentando di individuare. L'uso di input vocali può riconoscere i nomi in diversi formati, tra cui nome, cognome, nome + cognome o cognome + nome.
   
-Quando si Abilita il riconoscimento vocale per un operatore automatico, la voce del tastierino telefonico (DTMF) non verrà disabilitata, pertanto è possibile usare entrambi i tipi di input. La voce della tastiera del telefono non può essere disabilitata e può essere usata in qualsiasi momento, anche se il riconoscimento vocale è abilitato nell'operatore automatico.
+È possibile abilitare il riconoscimento vocale per un operatore automatico, ma la voce del tastierino telefonico (DTMF) non è disabilitata. La voce della tastiera del telefono può essere usata in qualsiasi momento anche se il riconoscimento vocale è abilitato per l'operatore automatico.
   
-Come avviene per l'immissione da tastiera, se vengono trovati più nomi, al chiamante verrà dato un elenco di nomi tra cui scegliere.
+Come per l'immissione della tastiera del telefono, se vengono trovati più nomi, la persona che chiama sente un elenco di nomi da cui selezionare.
   
-Il chiamante può pronunciare i nomi nei seguenti formati.
+I chiamanti possono pronunciare i nomi nei formati seguenti:
   
 |Nome con il riconoscimento vocale|Tipo di ricerca|Esempio|Risultato della ricerca|
 |:-----|:-----|:-----|:-----|
@@ -134,9 +136,9 @@ Il chiamante può pronunciare i nomi nei seguenti formati.
 > [!NOTE]
 > Per un nuovo utente possono essere necessarie fino a 36 ore per avere il nome elencato nella directory per il nome della chiamata tramite il riconoscimento vocale a causa del ritardo di replica di Active Directory.
   
-### <a name="language-support"></a>Lingue supportate
+### <a name="language-support"></a>Supporto per le lingue
 
-Sono disponibili le seguenti lingue per il sintetizzatore vocale.
+Le lingue seguenti sono disponibili per la sintesi vocale usata con le istruzioni in uscita:
   
 ||||
 |:-----|:-----|:-----|
@@ -150,7 +152,7 @@ Sono disponibili le seguenti lingue per il sintetizzatore vocale.
 |Inglese (CA)  |Italiano (IT) |Spagnolo (MX)|
 |Inglese (IN)  |Giapponese (JP) |Svedese (SV)|
 
-Il riconoscimento vocale per gli operatori automatici è disponibile nelle seguenti lingue.
+L'input di riconoscimento vocale per gli operatori automatici è disponibile nelle lingue seguenti:
   
 |||
 |:-----|:-----|
@@ -162,74 +164,74 @@ Il riconoscimento vocale per gli operatori automatici è disponibile nelle segue
 |Inglese (US)  |Spagnolo (ES)  |
 |Francese (CA)   |Spagnolo (MX)  |
 
-I seguenti comandi vocali sono disponibili nelle quattordici (14) lingue supportate per il riconoscimento vocale.
+I comandi vocali seguenti sono disponibili nelle 14 lingue supportate per il riconoscimento vocale:
   
 |Comando vocale| Corrisponde a |
 |:-----|:-----|
-|Sì |Sì - corrisponde a premere 1 per Sì. |
-|No |No - corrisponde a premere 2 per No. |
-|Ripeti |Ripete l'elenco di opzioni - corrisponde a premere * per ripetere l'elenco di opzioni. |
-|Operatore |Chiama operatore - corrisponde a premere 0 per "Operatore". |
+|Sì | Premere 1 per Sì. |
+|No | Premere 2 per No. |
+|Ripeti |Ripete l'elenco di opzioni. Premere * sul tastierino per ripetere l'elenco di opzioni. |
+|Operatore | Premere 0 per "operator" |
 |Menu principale  |Porta il chiamante al menu principale dell'operatore automatico. |
-|Zero |Corrisponde a premere 0 (per impostazione predefinita, ha la stessa funzione di "Operatore").|
-|Uno |Corrisponde a premere 1. |
-|Due |Corrisponde a premere 2. |
-|Tre|Corrisponde a premere 3.|
-|Quattro |Corrisponde a premere 4. |
-|Cinque |Corrisponde a premere 5. |
-|Sei  |Corrisponde a premere 6. |
-|Sette |Corrisponde a premere 7.|
-|Otto |Corrisponde a premere 8.|
-|Nove  |Corrisponde a premere 9.|
+|Zero | Premere 0 (per impostazione predefinita, uguale a "operator").|
+|Uno | Premere 1. |
+|Due | Premere 2. |
+|Tre| Premere 3.|
+|Quattro | Premere 4. |
+|Cinque | Premere 5. |
+|Sei  | Premere 6. |
+|Sette | Premere 7.|
+|Otto |Premere 8.|
+|Nove  |Premere 9.|
 
-### <a name="using-the-operator-option"></a>Uso dell'opzione operatore
+### <a name="the-operator-option"></a>Opzione operatore
 
-L'uso dell'operatore per un operatore automatico è un'impostazione facoltativa che fornisce al chiamante l'opzione di parlare con un operatore umano.
+Un operatore automatico può essere impostato facoltativamente per consentire a un chiamante una selezione di parlare con un operatore umano.
   
-Il tasto 0 e il comando vocale "operator" indirizzano la chiamata all'operatore designato per impostazione predefinita. Questo è il caso di tutte le lingue supportate per il riconoscimento vocale. È anche possibile usare le **Opzioni di menu** per impostare un valore personalizzato per l'operatore.
+Il tasto 0 e il comando vocale "operator" indirizzano la chiamata all'operatore designato per impostazione predefinita. Questo è il caso di tutte le lingue supportate per il riconoscimento vocale. Puoi anche usare le **Opzioni di menu imposta** per impostare un valore personalizzato per l'operatore.
   
 L'operatore può essere impostato su:
   
-- Un utente di Microsoft teams o un utente di Skype for business in cui è abilitata la funzionalità VoIP aziendale.
-  
+- Un utente di Microsoft teams o un utente di Skype for Business Server abilitato per VoIP aziendale.
 - Un altro operatore automatico configurato per l'organizzazione.
 - Una coda di chiamata in corso configurata nell'organizzazione. Per altre informazioni sulle code di chiamata, vedere [creare una coda di chiamata cloud](/SkypeForBusiness/what-is-phone-system-in-office-365/create-a-phone-system-call-queue).
 
 ### <a name="business-hours-and-call-handling"></a>Orario di ufficio e gestione delle chiamate
 
-L'orario di ufficio è impostato su tutti gli operatori automatici. Se l'orario di ufficio non è impostato, tutti i giorni e tutte le ore del giorno sono considerati orario di ufficio perché il programma 24/7 è impostato come predefinito. Gli orari di ufficio possono essere impostati con interruzioni nel tempo durante il giorno e tutte le ore che non sono impostate come orari di ufficio sono considerate after-hours. È possibile impostare diverse opzioni di gestione delle chiamate in arrivo e messaggi di saluto diversi (facoltativi) ed entrambi possono essere impostati per le ore lavorative e le ore successive.
+Gli orari di ufficio possono essere impostati in ogni operatore automatico. Se l'orario di ufficio non è impostato, tutti i giorni e tutte le ore del giorno sono considerati orario di ufficio perché il programma 24/7 è impostato come predefinito. Gli orari di ufficio possono essere impostati con interruzioni nel tempo durante il giorno e tutte le ore che non sono impostate come orari di ufficio sono considerate after-hours. È possibile impostare diverse opzioni di gestione delle chiamate in arrivo e messaggi di saluto diversi (facoltativi) per le ore lavorative e le ore successive.
   
-Ogni operatore automatico ha le opzioni di gestione delle chiamate che possono essere impostate:
+Ogni operatore automatico ha diverse possibili opzioni di gestione delle chiamate:
   
-- È possibile far scollegare la chiamata dopo il saluto.
+- La chiamata può essere disconnessa dopo la riproduzione di un saluto.
 - È possibile anche:
   - Reindirizza la chiamata a un utente di Microsoft teams che dispone di una licenza per il **sistema telefonico** con funzionalità VoIP aziendale o con piani di chiamata assegnati. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. Per farlo, scegli una **Persona nell'azienda** che riceverà le chiamate inoltrate direttamente alla segreteria telefonica.
 
   - Reindirizzare la chiamata a una coda di chiamata. Per altre informazioni sulle code di chiamata, vedere [creare una coda di chiamata cloud](/SkypeForBusiness/what-is-phone-system-in-office-365/create-a-phone-system-call-queue).
 
-  - Reindirizzare la chiamata a un altro operatore automatico configurato.
-  - Creare opzioni di menu e riprodurre un messaggio menu per il chiamante. Ad esempio: "Premere 1 per i servizi commerciali, premere 2 per l'assistenza. Per parlare con l'operatore, premere 0 in qualsiasi momento".
+  - Reindirizza la chiamata a un altro operatore automatico.
 
-### <a name="menu-options"></a>Opzioni di menu
+Queste opzioni vengono espresse al chiamante dall'operatore automatico quando riproduce le richieste di menu. Ad esempio: "Premere 1 per i servizi commerciali, premere 2 per l'assistenza. Per parlare con l'operatore, premere 0 in qualsiasi momento".
 
-Gli operatori automatici del cloud consentono di creare prompt dei menu ("premere 1 per le vendite, premere 2 per i servizi") e configurare le opzioni del menu per instradare le chiamate in base all'opzione selezionata dall'utente. L'impostazione di opzioni di menu per un operatore automatico consente a un'organizzazione di fornire una guida interattiva per portare la persona a destinazione più velocemente, senza dover ricorrere a un operatore umano per gestire le chiamate in arrivo. Le richieste di menu possono essere create usando la sintesi vocale (prompt generati dal sistema) o caricando un file audio registrato. Il riconoscimento vocale utilizza i comandi vocali per la navigazione in vivavoce, ma il chiamante può anche usare la tastiera del telefono per navigare nei menu.
+### <a name="set-menu-options"></a>Impostare le opzioni del menu
+
+Gli operatori automatici cloud consentono di creare prompt dei menu ("premere 1 per le vendite, premere 2 per i servizi") e configurare le opzioni del menu per instradare le chiamate in base alle selezioni degli utenti. Le opzioni di menu per un operatore automatico consentono a un'organizzazione di specificare una serie di scelte che guidano i chiamanti a destinazione più rapidamente, senza affidarsi a un operatore umano per gestire le chiamate in arrivo. Le richieste di menu possono essere create usando la sintesi vocale (prompt generati dal sistema) o caricando un file audio registrato. Il riconoscimento vocale accetta i comandi vocali per la navigazione senza mani, ma le persone che chiamano possono anche usare la tastiera del telefono per spostarsi tra i menu.
   
-I tasti da 0 a 9 possono essere assegnati alle **Opzioni di menu** in un operatore automatico con l'interfaccia di amministrazione di Skype for business. Possono essere create serie di opzioni di menu diverse per l'orario di ufficio e l'orario di chiusura, e si può attivare o disattivare Chiamata per nome nelle **Opzioni di menu**. I tasti possono essere mappati per trasferire le chiamate a:
+I tasti da 0 a 9 possono essere assegnati a tasti di scelta rapida in un operatore automatico usando l'interfaccia di amministrazione di Skype for business. Possono essere create serie di opzioni di menu diverse per l'orario di ufficio e l'orario di chiusura, e si può attivare o disattivare Chiamata per nome nelle **Opzioni di menu**. I tasti possono essere mappati per trasferire le chiamate a:
   
 - Un operatore, mappato al tasto 0 per impostazione predefinita. Tuttavia, può essere riassegnato a qualsiasi altro tasto o rimosso dal menu.
 - Una coda di chiamata.
 - Un altro operatore automatico. I menu multilivello possono essere configurati puntando un' **opzione di menu** in un operatore automatico a un altro operatore automatico con il proprio set di opzioni di menu, che si chiama operatore automatico "annidato".
 - Un utente di Microsoft teams che dispone di una licenza di **sistema telefonico** con VoIP aziendale o con piani di chiamata assegnati. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. Per farlo, scegli una **Persona nell'azienda** che riceverà le chiamate inoltrate direttamente alla segreteria telefonica.
   
-Il nome di ogni opzione del menu diventa una parola chiave per il riconoscimento vocale se il riconoscimento vocale è stato abilitato. Ad esempio, i chiamanti possono pronunciare "uno" per selezionare l'opzione di menu mappata con il tasto 1 oppure possono semplicemente dire "vendite" per selezionare la stessa opzione di menu denominata "Sales".
+Il nome di ogni opzione del menu diventa una parola chiave per il riconoscimento vocale se il riconoscimento vocale è stato abilitato. Ad esempio, i chiamanti possono pronunciare "uno" per selezionare l'opzione di menu mappata con il tasto 1 oppure dire "vendite" per selezionare la stessa opzione di menu denominata "Sales".
   
 Per configurare un operatore automatico e le opzioni di menu, [impostare un operatore automatico cloud](create-a-phone-system-auto-attendant.md).
   
 ### <a name="assigning-phone-numbers-for-an-auto-attendant"></a>Assegnazione di numeri di telefono per un operatore automatico
 
-È possibile assegnare un numero di servizio Microsoft, un numero di routing diretto o un numero ibrido all'operatore automatico. Vedere [pianificare il routing diretto](direct-routing-plan.md) per i dettagli.
+È possibile assegnare un numero di servizio Microsoft, un numero di routing diretto o un numero ibrido all'account della risorsa collegata dell'operatore automatico (o a più account di risorse se si desidera più di un numero di telefono). Vedere [pianificare il routing diretto](direct-routing-plan.md) per ulteriori dettagli.
 
-Per assegnare un numero di servizio, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Una volta ottenuto il pedaggio o i numeri di telefono del servizio gratuito, verranno visualizzati nella finestra di dialogo <!-- validate nav path --> **** > I**numeri di telefono****vocali** > dell'interfaccia di amministrazione di Skype for business e il **tipo di numero** elencato saranno elencati come **servizio a pagamento gratuito**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers) oppure, se si vuole trasferire e numero di servizio esistente, vedere [trasferire i numeri di telefono in Office 365](transfer-phone-numbers-to-office-365.md).
+Per assegnare un numero di servizio, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Una volta ottenuto il pedaggio o i numeri di telefono del servizio gratuito, questi vengono visualizzati nei**numeri di telefono**della**voce** > dell'interfaccia di >  **amministrazione di Skype for business**. Il **tipo di numero** è elencato come **servizio a pagamento gratuito**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers) oppure, se si vuole trasferire e numero di servizio esistente, vedere [trasferire i numeri di telefono in Office 365](transfer-phone-numbers-to-office-365.md).
   
 > [!NOTE]
 > Se si è al di fuori degli Stati Uniti, non è possibile usare l'interfaccia di amministrazione di Microsoft teams per ottenere i numeri di servizio. È invece necessario [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per vedere come eseguire questa operazione.

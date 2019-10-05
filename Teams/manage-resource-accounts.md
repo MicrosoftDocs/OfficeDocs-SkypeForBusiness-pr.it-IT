@@ -18,18 +18,18 @@ localization_priority: Normal
 f1keywords:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
 description: Informazioni sulla gestione degli account delle risorse in Microsoft Teams
-ms.openlocfilehash: 07718421daca271358964914fd29409b7b23fb58
-ms.sourcegitcommit: 2d31209aae9e0171693389db97b0b5c974864673
+ms.openlocfilehash: 022163de7c3674fa0123927bad09a389514cc107
+ms.sourcegitcommit: d349922409f49b52048597a56b81501163749a69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375699"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37401849"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account delle risorse in Microsoft Teams
 
-Un account di risorse è noto anche come *oggetto utente disabilitato* in Azure ad e può essere usato per rappresentare le risorse in generale. In Exchange potrebbe essere usato per rappresentare le sale riunioni, ad esempio, e consentire loro di avere un numero di telefono. Un account delle risorse può essere ospitato in Microsoft 365 o in locale con Skype for Business Server 2019.
+Un account di risorse è noto anche come *oggetto utente disabilitato* in Azure ad e può essere usato per rappresentare le risorse in generale. In Exchange potrebbe essere usato per rappresentare le sale riunioni, ad esempio, e consentire loro di avere un numero di telefono. Un account delle risorse può essere ospitato in Microsoft 365 o in Skype for Business Server 2019.
 
-In Microsoft teams o Skype for business online ogni coda di chiamata di sistema telefonico o operatore automatico è necessaria per avere un account di risorse associato. Se un account di risorse richiede un numero di telefono assegnato dipenderà dall'uso previsto della coda di chiamata associata o dell'operatore automatico, come illustrato nel diagramma seguente. È anche possibile fare riferimento agli articoli sulle code di chiamata e gli operatori automatici collegati nella parte inferiore di questo articolo prima di assegnare un numero di telefono a un account delle risorse.
+In Microsoft teams o Skype for business online ogni coda di chiamata di sistema telefonico o operatore automatico è necessaria per avere almeno un account di risorse associato. Se un account di risorse richiede un numero di telefono assegnato dipenderà dall'uso previsto della coda di chiamata associata o dell'operatore automatico, come illustrato nel diagramma seguente. È anche possibile fare riferimento agli articoli sulle code di chiamata e gli operatori automatici collegati nella parte inferiore di questo articolo prima di assegnare un numero di telefono a un account delle risorse.
 
 > [!IMPORTANT]
 > Un numero di telefono non viene assegnato direttamente all'operatore automatico o alla coda di chiamata, bensì all'account delle risorse associato all'operatore automatico o alla coda di chiamata.
@@ -39,18 +39,19 @@ In Microsoft teams o Skype for business online ogni coda di chiamata di sistema 
 > [!NOTE]
 > Questo articolo si applica sia a Microsoft teams che a Skype for business online. Per gli account delle risorse ospitati in Skype for Business Server 2019, vedere [configurare gli account di risorse](/SkypeForBusiness/hybrid/configure-onprem-ra).
 
-
 ## <a name="overview"></a>Panoramica
 
-Se l'organizzazione usa già almeno una licenza per il sistema telefonico, per assegnare un numero di telefono a una coda di chiamata o a un operatore automatico del sistema telefonico, il processo è:
+Se l'organizzazione usa già almeno una licenza per il sistema telefonico, per assegnare un numero di telefono a una coda di chiamata di sistema telefonico, il processo è:
 
 1. Ottenere un numero di servizio.
 2. Ottenere un sistema telefonico gratuito- [licenza per gli utenti virtuali](teams-add-on-licensing/virtual-user.md) o una licenza per il sistema telefonico a pagamento da usare con l'account delle risorse o con una licenza per il sistema telefonico.
 3. Creare l'account delle risorse. Per avere un account di risorse associato è necessario un operatore automatico o una coda di chiamata.
 4. Assegnare il sistema telefonico o un sistema telefonico-licenza utente virtuale per l'account delle risorse.
-5. Assegnare un numero di telefono del servizio all'account risorse a cui sono state assegnate solo le licenze. 
+5. Assegnare un numero di telefono del servizio all'account risorse a cui sono state assegnate solo le licenze.
 6. Creare una coda di chiamata di sistema telefonico o un operatore automatico
 7. Collegare l'account delle risorse con una coda di chiamata o un operatore automatico.
+
+<!-- Auto attendants created after November 1st, 2019 also create a new resource account that is associated with the auto attendant. If a phone number is applied to the auto attendant's resource account,  a Phone System - Virtual user license is applied to the resource account if one is available. -->
 
 Se l'operatore automatico o la coda di chiamata è annidata in un operatore automatico di primo livello, l'account di risorse associato deve avere solo un numero di telefono se si vogliono più punti di entrata nella struttura degli operatori automatici e delle code di chiamata.
 
@@ -61,11 +62,16 @@ Per reindirizzare le chiamate alle persone dell'organizzazione ospitate online, 
 
 Se la coda di chiamata del sistema telefonico o l'operatore automatico che si sta creando verranno annidati e non sarà necessario un numero di telefono, il processo sarà:
 
-1. Creare l'account delle risorse 
+1. Creare l'account delle risorse
 2. Creare una coda di chiamata di sistema telefonico o un operatore automatico
 3. Associare l'account delle risorse a una coda di chiamata o a un operatore automatico del sistema telefonico
 
 ### <a name="create-a-resource-account-with-a-phone-number"></a>Creare un account delle risorse con un numero di telefono
+
+<a name="phonenumber"> </a>
+
+> [!IMPORTANT]
+> Un numero di telefono non viene assegnato direttamente all'operatore automatico o alla coda di chiamata, bensì all'account delle risorse associato all'operatore automatico o alla coda di chiamata.
 
 Un operatore automatico o una coda di chiamata di primo livello richiede un numero di telefono collegato all'operatore automatico. Per creare un account delle risorse che usa un numero di telefono, il processo è:
 
@@ -75,7 +81,7 @@ Un operatore automatico o una coda di chiamata di primo livello richiede un nume
 
    Se si sta assegnando un numero di telefono a un account di risorse, è ora possibile usare la licenza per gli utenti virtuali del sistema telefonico senza costi. In questo modo le funzionalità del sistema telefonico sono disponibili per i numeri di telefono a livello di organizzazione e consentono di creare funzionalità di operatore automatico e coda di chiamata.
 
-2. Ottenere una licenza per l'utente virtuale del sistema telefonico o una normale licenza per il sistema telefonico. 
+2. Ottenere una licenza per l'utente virtuale del sistema telefonico o una normale licenza per il sistema telefonico.
 
    Per ottenere la licenza utente virtuale, a partire dall'interfaccia di amministrazione di Microsoft 365, passare a**abbonamenti al componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto e scorrere fino alla fine: verrà visualizzata la licenza "sistema telefonico-utente virtuale". Selezionare **Acquista ora**. È disponibile un costo zero, ma è comunque necessario seguire questa procedura per acquisire la licenza.
 3. Creare un nuovo account di risorse. Vedere [creare un account risorse nell'interfaccia di amministrazione di Microsoft teams](#create-a-resource-account-in-microsoft-teams-admin-center) o [creare un account di risorse in PowerShell](#create-a-resource-account-in-powershell)
@@ -85,6 +91,8 @@ Un operatore automatico o una coda di chiamata di primo livello richiede un nume
    - [Operatore automatico cloud](create-a-phone-system-auto-attendant.md)
    - [Coda di chiamata cloud](create-a-phone-system-call-queue.md)
 7. Collegare l'account della risorsa all'operatore automatico o alla coda di chiamata. Vedere [assegnare o annullare l'assegnazione di numeri di telefono e servizi](#assignunassign-phone-numbers-and-services)
+
+Quando si crea un account di risorse durante la creazione di un operatore automatico, le licenze vengono applicate automaticamente.
 
 ### <a name="create-a-resource-account-without-a-phone-number"></a>Creare un account delle risorse senza un numero di telefono
 
@@ -137,11 +145,11 @@ Se si decide di cambiare le licenze per l'account delle risorse esistenti da una
 
 ## <a name="create-a-resource-account-in-powershell"></a>Creare un account risorse in PowerShell
 
-A seconda che il proprio account di risorse si trovi online o in locale, è necessario connettersi al prompt di PowerShell appropriato con i privilegi di amministratore.
+A seconda che il proprio account di risorse si trovi online o in Skype for Business Server 2019, è necessario connettersi al prompt di PowerShell appropriato con i privilegi di amministratore.
 
 - Gli esempi di cmdlet di PowerShell seguenti mostrano la creazione di un account delle risorse ospitato online con [New-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/new-CsOnlineApplicationInstance?view=skype-ps). 
 
-- Per gli account delle risorse ospitati in locale in Skype for Business Server 2019 che possono essere usati con le code delle chiamate cloud e gli operatori automatici del cloud, vedere [configurare le code di chiamata cloud](/skypeforbusiness/hybrid/configure-call-queue.md) o [configurare gli operatori automatici del cloud](/skypeforbusiness/hybrid/configure-cloud-auto-attendant.md). Le implementazioni ibride (numeri assegnati al routing diretto) useranno [New-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps).
+- Per gli account delle risorse ospitati in Skype for Business Server 2019 che possono essere usati con le code delle chiamate cloud e gli operatori automatici del cloud, vedere [configurare le code di chiamata cloud](/skypeforbusiness/hybrid/configure-call-queue.md) o [configurare gli operatori automatici del cloud](/skypeforbusiness/hybrid/configure-cloud-auto-attendant.md). Le implementazioni ibride (numeri assegnati al routing diretto) useranno [New-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps).
 
 L'ID applicazione che devi usare durante la creazione delle istanze dell'applicazione è:
 
@@ -149,7 +157,9 @@ L'ID applicazione che devi usare durante la creazione delle istanze dell'applica
 - **Coda di chiamata:** 11cd3e2e-FCCB-42AD-Ad00-878b93575e07
 
 > [!NOTE]
-> Se si vuole che la coda di chiamata o l'operatore automatico vengano ricercati dagli utenti locali, è consigliabile creare gli account delle risorse locale, poiché gli account delle risorse online non vengono sincronizzati in Active Directory.
+> Se si vuole che la coda di chiamata o l'operatore automatico siano ricercabili dagli utenti di Skype for Business Server 2019, è consigliabile creare gli account delle risorse in Skype for Business Server 2019, poiché gli account delle risorse online non vengono sincronizzati in Active Directory. Quando i record SRV DNS per sipfederationtls si risolvono in Skype for Business Server 2019, gli account delle risorse **devono** essere creati in Skype for business server 2019 usando SFB Management Shell e sincronizzati con Azure ad online.
+
+ 
 
 1. Per creare un account delle risorse online per l'uso con un operatore automatico, usare il comando seguente:
 
@@ -171,7 +181,7 @@ New-CsOnlineApplicationInstance -UserPrincipalName testra1@contoso.com -Applicat
    > [!NOTE]
    > È più semplice impostare il numero di telefono online usando l'interfaccia di amministrazione di Microsoft teams, come descritto in precedenza.
 
-   Per assegnare un numero di telefono di routing diretto a un account di risorse (ospitati online o in locale), usare il cmdlet seguente per PowerShell per Skype for business online:
+   Per assegnare un numero di telefono di routing diretto a un account delle risorse (ospitati in Microsoft teams o Skype for Business Server 2019), usare il cmdlet seguente per PowerShell per Skype for business online:
 
    ``` Powershell
    Set-CsOnlineApplicationInstance -Identity appinstance01@contoso.com -OnpremPhoneNumber +14250000000

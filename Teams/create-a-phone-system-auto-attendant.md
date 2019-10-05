@@ -21,37 +21,43 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: 0cac6b1bb7d19e91e4042bcb0673f6c677e77d2e
-ms.sourcegitcommit: 2d31209aae9e0171693389db97b0b5c974864673
+ms.openlocfilehash: 424b6cea41132bd03b9eecfbd2d387697332505f
+ms.sourcegitcommit: d349922409f49b52048597a56b81501163749a69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375710"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37401997"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
-Gli operatori automatici consentono agli utenti che chiamano l'organizzazione e spostano un sistema di menu per accedervi al reparto di destra, alla coda di chiamata, alla persona o all'operatore. Puoi creare un operatore automatico per l'organizzazione usando l'interfaccia di amministrazione di Microsoft teams. Per creare un nuovo operatore automatico, passa a **voce** nella barra di spostamento sinistra e quindi seleziona **operatori** > automatici**Aggiungi nuovo**.
+Gli operatori automatici consentono alle persone di chiamare l'organizzazione e di spostarsi in un sistema di menu per parlare con il reparto di destra, la coda di chiamata, la persona o un operatore. È possibile creare operatori automatici per l'organizzazione con l'interfaccia di amministrazione di Microsoft teams o con PowerShell. Per creare un operatore automatico, passa a **voce** nella barra di spostamento sinistra e quindi seleziona **operatori** > automatici**Aggiungi nuovo**.
 
 Per altre informazioni sugli operatori automatici, vedere [che cosa sono gli operatori automatici di cloud?](/microsoftteams/what-are-phone-system-auto-attendants)
 
 > [!NOTE]
 > Questo articolo si applica sia a Microsoft teams che a Skype for business online.
 
+I numeri di telefono non vengono assegnati direttamente all'operatore automatico, ma piuttosto a un [account delle risorse](manage-resource-accounts.md) associato all'operatore automatico.
+
+Le implementazioni di operatore automatico spesso coinvolgono diversi operatori automatici. Un operatore automatico di *primo livello* ha in genere un account delle risorse con un numero di telefono assegnato. Un operatore automatico annidato viene usato come menu di secondo livello a cui l'operatore automatico di *primo livello* si connette come chiamata. Un operatore automatico *annidato* non è necessario per avere un numero di telefono assegnato al proprio account di risorse.
+
 ## <a name="step-1--get-started"></a>Passaggio 1: iniziare
 
-- Per avere un account di risorse associato, è necessario un operatore automatico. Vedere [gestire gli account delle risorse in teams](manage-resource-accounts.md) per informazioni dettagliate sugli account delle risorse e tutte le licenze necessarie.
-
+- Per avere un account di risorse associato, è necessario un operatore automatico. Vedere [gestire gli account delle risorse in teams](manage-resource-accounts.md) per informazioni dettagliate sugli account delle risorse e tutte le licenze necessarie. 
+- 
+<!-- When you create a new auto attendant in Teams after October 10th, 2019, the required auto attendant is automatically created and linked with the new auto attendant. -->
+ 
 > [!TIP]
-> Per reindirizzare le chiamate a un operatore o a un'opzione di menu che è un utente online con una licenza di **sistema telefonico** , sarà necessario abilitarle per VoIP aziendale. Vedere [assegnare licenze di Skype for business](/skypeforbusiness/skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses) o [assegnare licenze di Microsoft teams](assign-teams-licenses.md). Puoi anche utilizzare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+> Per reindirizzare le chiamate a un operatore o a un'opzione di menu che è un utente online con una licenza di sistema telefonico, sarà necessario abilitarle per VoIP aziendale. Vedere [assegnare licenze di Skype for business](/skypeforbusiness/skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses) o [assegnare licenze di Microsoft teams](assign-teams-licenses.md). Puoi anche utilizzare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
-## <a name="step-2--create-a-new-auto-attendant"></a>Passaggio 2: creare un nuovo operatore automatico
+## <a name="step-2--create-auto-attendants"></a>Passaggio 2: creare operatori automatici
 
 > [!IMPORTANT]
 > Ogni operatore automatico è necessario per avere un [account di risorse](manage-resource-accounts.md)associato. Devi prima creare l'account della risorsa, quindi puoi associarlo all'operatore automatico.
 
-### <a name="using-the-microsoft-teams-admin-center"></a>Uso dell'interfaccia di amministrazione di Microsoft Teams
+### <a name="with-the-microsoft-teams-admin-center"></a>Con l'interfaccia di amministrazione di Microsoft Teams
 
-Nell'interfaccia di **amministrazione di Microsoft teams**fare clic su**operatore automatico** **vocale** > , quindi fare clic su **+ nuovo**:
+Nell'interfaccia di **amministrazione di Microsoft teams**fare clic su**operatore automatico** **vocale** > , quindi fare clic su **+ Aggiungi**:
 
 #### <a name="general-info-page"></a>Pagina informazioni generali
 
@@ -59,272 +65,322 @@ Nell'interfaccia di **amministrazione di Microsoft teams**fare clic su**operator
 
 * * *
 
-![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
-
-**Nome** Immettere un nome visualizzato descrittivo per l'operatore automatico. Il nome è obbligatorio e può contenere fino a 64 caratteri, inclusi gli spazi. È elencata nella colonna **nome** della scheda **operatori automatici** .
-
-* * *
-
-![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
+![Icona del numero 1, un callout nel](media/teamscallout1.png)
+**nome** dello screenshot precedente immettere un nome visualizzato per l'operatore automatico. Il nome è obbligatorio e può contenere fino a 64 caratteri, inclusi gli spazi. Il **nome** indicato in questo articolo è elencato in una colonna della scheda **operatori automatici** .
 
 <a name="phonenumber"> </a>
 
-**Account risorse** Fare clic su questo pulsante per selezionare uno o più account risorse per connettersi al nuovo operatore automatico. Tutti gli operatori automatici devono avere un account di risorse associato. Un account di risorse può avere un numero di telefono associato all'account, ma un numero di telefono non è un requisito. Un operatore automatico di primo livello ha in genere un account di risorse con un numero di telefono assegnato, ma l'operatore automatico annidato (usato come menu di livello 2 a cui si connette l'operatore automatico di prima livello) potrebbe non avere un numero di telefono assegnato al proprio account di risorse.
-
 * * *
 
-![Icona del numero 3, che fa riferimento a un callout nella schermata](media/sfbcallout3.png)
- <a name="timezone"> </a> precedente
-
-**Fuso orario** È necessario impostare il fuso orario per l'operatore automatico, che non deve necessariamente corrispondere al fuso orario dell'indirizzo principale indicato per l'organizzazione. Ogni operatore automatico può avere un fuso orario diverso e gli orari di ufficio impostati per l'operatore automatico vengono impostati in base al fuso orario selezionato qui.
-
-* * *
-
-![Icona del numero 4, che fa riferimento a un callout nella schermata precedente](media/sfbcallout4.png)
-
-<a name="language"> </a>
-
-**Lingua** Seleziona la lingua che vuoi utilizzare per l'operatore automatico tra una delle lingue disponibili elencate. La lingua impostata qui è la lingua usata dall'operatore automatico per interagire con le persone che chiamano l'operatore automatico e tutte le richieste di sistema vengono riprodotte in questa lingua.
-
-* * *
-
-![Icona del numero 5, che fa riferimento a un callout nella schermata precedente](media/sfbcallout5.png)
-
-<a name="operator"> </a>
-
-**Operatore** È facoltativo, ma puoi impostare l'opzione **operator** per consentire ai chiamanti di uscire dai menu e parlare con una persona.
+![Icona del numero 2, un callout nell'](media/teamscallout2.png)
+ <a name="operator"> </a> 
+ **operatore** screenshot precedente è facoltativo (ma consigliato). Puoi impostare l'opzione **operator** per consentire ai chiamanti di uscire dai menu e parlare con una persona designata.
 
 Per impostazione predefinita, il tasto 0 viene assegnato all'operatore.
 
-Se si imposta un operatore, sarà anche necessario indicare agli utenti che chiamano l'opzione nelle **Opzioni del menu modifica** nella pagina **Gestione chiamate orari di ufficio** . Se si imposta un operatore nell'operatore automatico, è necessario immettere il testo del prompt corrispondente nei **chiamanti si sente** la casella o si modifica il file audio per includere questa opzione. Ad esempio: "Per contattare un operatore, premere zero".
+Se si imposta un operatore, indicare agli utenti che chiamano l'opzione in **modifica opzioni del menu** nella pagina **flusso di chiamata** . Se si imposta un operatore nell'operatore automatico, si immette il testo della richiesta corrispondente nei **chiamanti si sente** la casella o si modifica il file audio per includere questa opzione. Ad esempio: "Per contattare un operatore, premere zero".
 
 Sono disponibili diversi modi per impostare l'operatore:
 
-- **Persona nell'azienda** con una licenza di **Sistema telefonico** abilitata per Enterprise Voice o con Piani di chiamata di Office 365 assegnati.
+- **Nessun operatore** Disabilita le opzioni "operatore" e "premi 0". Questa è l'impostazione predefinita corrente.
+- La **persona dell'organizzazione** assegna una persona con una licenza di sistema telefonico abilitata per i piani di chiamate aziendali o assegnati in Office 365. Puoi anche configurarlo in modo che il chiamante venga inviato alla segreteria telefonica. Per inviare un chiamante alla segreteria telefonica, selezionare **persona nell'organizzazione** e impostare le impostazioni dell'account per inviare chiamate direttamente alla segreteria telefonica.
 
      > [!Note]
-     > Una **Persona nell'azienda** può essere un utente in linea o un utente ospitato in locale con Skype per Business Server 2015 o Lync Server 2013.
+     > **La persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server.
 
-- **Applicazione vocale** Selezionare il nome di un account di risorsa associato a una coda di chiamata o a un operatore automatico già creato.
-- È possibile configurarlo in modo che la persona che chiama venga inviata alla segreteria telefonica. A questo scopo, seleziona **persona nella tua azienda** e imposta le chiamate di questa persona da inoltrare direttamente alla segreteria telefonica.
+- **Funzionalità vocali**  Selezionare il nome dell'account della risorsa collegato a un operatore automatico o a una coda di chiamata già creata. I chiamanti che richiedono l'operatore vengono reindirizzati.  
+<!--   
+
+- **Auto attendant** Select the name of the resource account linked to an auto attendant that has already been created. Callers that request an operator are redirected there.
+- **Call queue** Select the name of the resource account linked to a call queue that has already been created. Callers that request an operator are redirected there.
+
+**Phone number (optional)** Enter the service phone number you want to assign to the new resource account this wizard creates and links to the new auto attendant. If you intend this auto attendant to be a nested auto attendant, it doesn't need a phone number. You can add one if for some reason you require several ways to connect to the auto attendant system.
+
+> [!NOTE]
+> Auto attendants created after October 10th, 2019 also create a new [resource account](manage-resource-accounts.md) that is associated with the auto attendant. If a phone number is applied to the auto attendant's resource account,  a Phone System - Virtual user license is applied to the resource account if one is available.
+-->
+
+* * * 
+
+![Icona del numero 3, un callout nel](media/teamscallout3.png)<a name="timezone"> </a>  
+ **fuso orario** precedente dello screenshot necessario per impostare il fuso orario per l'operatore automatico. L'impostazione può essere uguale al fuso orario dell'indirizzo principale elencato per l'organizzazione o a un fuso orario diverso. Ogni operatore automatico può avere un fuso orario diverso. L'orario di ufficio impostato per l'operatore automatico usa anche questo fuso orario.
 
 * * *
 
-![Icona del numero 6, che fa riferimento a un callout nella schermata precedente](media/sfbcallout6.png)
+![Icona del numero 4, un callout nella](media/teamscallout4.png)
+ <a name="language"> </a> 
+ **lingua** dello screenshot precedente selezionare la lingua che si vuole usare per l'operatore automatico. L'operatore automatico usa quella lingua con i chiamanti e tutte le richieste di sistema vengono riprodotte in questa lingua.
 
-**Abilitare gli input vocali** Il riconoscimento vocale è disponibile se questa opzione è selezionata. Le persone che chiamano in grado di usare l'input vocale nella [lingua impostata](set-auto-attendant-languages-for-audio-conferencing-in-teams.md). Se si vuole consentire solo agli utenti di usare la tastiera del telefono, è possibile disabilitare il riconoscimento vocale impostandolo su disattivato.
+ * * *
 
-* * *
+![Icona del numero 5, un callout nella schermata](media/teamscallout5.png)
+precedente consente di abilitare il riconoscimento vocale degli**input vocali** è disponibile se questa opzione è selezionata. I chiamanti possono usare l'input vocale nella [lingua impostata](set-auto-attendant-languages-for-audio-conferencing-in-teams.md). Se si vuole consentire solo agli utenti di usare la tastiera del telefono per effettuare le selezioni, è possibile abbandonare il riconoscimento vocale impostato su **disattivato**.
+
+* * *  
 
 Dopo aver completato le selezioni, fare clic su **Avanti**.
 
-#### <a name="business-hours-page"></a>Pagina orari di ufficio
-
-Per impostazione predefinita, le ore lavorative sono impostate su 9:00 AM 5:00 PM, dal lunedì al venerdì. Tutte le ore che non sono incluse in orari di ufficio vengono considerate dopo l'orario di ufficio. È possibile fare clic su **seleziona 24/7** per impostare tutte le ore lavorative. A meno che non si selezioni l'opzione **seleziona 24/7** , verrà usata la pagina **Impostazioni chiamate dopo ora** per configurare le regole di gestione delle chiamate per gli orari di ufficio per l'operatore automatico.
-
-![Screenshot della pagina orari di ufficio](media/61769547-cdb4-45c0-af5a-3d6e0731fbc6.png)
-
-* * *
-
-![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
-
-Per impostazione predefinita, le ore lavorative sono impostate su lunedì a venerdì, 9:00 AM-5:00 PM. Selezionare **Cancella tutte le ore per deselezionare** tutte le ore nella programmazione. Quando si seleziona **Reimposta per impostazione predefinita**, le ore lavorative vengono reimpostate dal lunedì al venerdì, 9:00 am-5:00 PM.
-
-* * *
-
-![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
-
-Per modificare le ore lavorative, evidenziare gli orari di ufficio che si desidera impostare nel calendario. Il calendario consente di selezionare gli orari di ufficio in intervalli di 30 minuti e gli orari di ufficio selezionati sono basati sul fuso orario impostato nella pagina **informazioni generali** . Per impostare una pausa (ad esempio la pausa pranzo), deseleziona o trascina per deselezionare l'orario in questione sul calendario. È possibile impostare più interruzioni in orari di ufficio.
-
-* * *
-
-Dopo aver completato le selezioni, fare clic su **Avanti**.
-
-#### <a name="business-hours-call-settings"></a>Impostazioni delle chiamate in orario di ufficio
-
-> [!TIP]
-> Se si usa una programmazione per orari di ufficio personalizzati, è anche necessario configurare la consegna delle chiamate dopo l'orario di ufficio con la pagina **after hours handling** , che fornisce le stesse opzioni **delle impostazioni delle chiamate in orario di ufficio**.
-
-È possibile configurare i messaggi di saluto, le richieste e i menu che gli utenti sentono quando chiamano il numero di telefono collegato all'operatore automatico dell'organizzazione durante l'orario di ufficio.
-
-![Screenshot della sezione relativa](media/2a33b1f7-d362-47a7-bf32-ef702bc878e8.png)
-![alla gestione delle chiamate in orario di ufficio per l'apertura della pagina nella sezione delle azioni della pagina Gestione delle chiamate in orario di ufficio](media/2a33b1f7-d362-47a7-bf32-ef702bc878e8b.png)
-
-* * *
-
-![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
+#### <a name="call-flow"></a>Flusso delle chiamate
 
 <a name="greetingsandrouting"> </a>
 
-**Messaggio di saluto** Un saluto per le ore lavorative è facoltativo e può essere impostato su **Nessun saluto**. In questo caso, il chiamante non sente un messaggio o un saluto prima che la chiamata venga gestita da una delle azioni selezionate. È possibile caricare un file audio (nel formato con estensione wav, mp3 o .wma) o creare un messaggio di saluto personalizzato utilizzando la sintesi vocale.
-- **Caricare un file audio** Se si sceglie questo record, registrare il messaggio di saluto e quindi caricare il file audio (in formato WAV, MP3 o WMA).
-- **Digitare un messaggio di saluto** Se si sceglie questa opzione, immettere il testo da leggere per il sistema (fino a 1000 caratteri). Ad esempio, è possibile immettere "Benvenuti alla Contoso. La tua chiamata è importante per noi." nella casella **I chiamanti udiranno**.
+> [!TIP]
+> È possibile scegliere di configurare una pianificazione di orari di ufficio personalizzata con comportamenti diversi per il flusso delle chiamate durante e dopo le ore lavorative. Per impostare una pianificazione personalizzata, impostare il [flusso di chiamata facoltativo per le ore successive](#call-flow-for-after-hours). Per impostazione predefinita, un operatore automatico usa i flussi delle chiamate in orario di ufficio.
+
+È possibile configurare i messaggi di saluto, le richieste e i menu personalizzati che gli utenti sentono quando raggiungono l'operatore automatico.
+
+![Screenshot: sezione di saluto della pagina Gestione chiamate](media/2a33b1f7-d362-47a7-bf32-ef702bc878e8.png)
 
 * * *
 
-![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
+**Prima riproduzione di un messaggio di saluto** Un saluto è facoltativo e può essere impostato su **Nessun saluto**, **riprodurre un file audio**o **digitare un messaggio di saluto**.
 
-È possibile selezionare cosa avviene alle chiamate in arrivo durante l'orario di ufficio. È possibile scegliere tra le azioni seguenti:
+> [!NOTE]
+> Un saluto è molto utile per un operatore automatico di primo livello. Un operatore automatico annidato spesso non ha bisogno di un saluto.
+
+![Icona del numero 1, un callout nello screenshot](media/teamscallout1.png) precedente se si seleziona **Nessun saluto**, il chiamante non sente un messaggio o un saluto prima che la chiamata venga gestita da una delle azioni selezionate in un secondo momento. 
+
+<!-- You can also upload an audio file (in .wav, mp3 or .wma formats), or create a custom greeting using Text-to-Speech.-->
+
+![Icona del numero 2, un callout nello screenshot](media/teamscallout2.png) precedente se si seleziona **Riproduci un file audio** , è possibile usare il pulsante **Carica file** per caricare un messaggio di saluto registrato salvato come audio. WAV,. MP3 o. Formato WMA. La registrazione non può essere superiore a 5 MB.
+
+![Icona del numero 3, un callout nello screenshot](media/teamscallout3.png) precedente **digitare un messaggio di saluto** se si sceglie questa opzione, immettere il testo da leggere per il sistema (fino a 1000 caratteri) nel campo specificato. Ad esempio, immettere "Welcome to contoso. La tua chiamata è importante per noi." L'output viene creato tramite il software Text-to-Voice.
+
+* * *
+
+
+Puoi selezionare cosa succede accanto alle chiamate delle azioni seguenti nella sezione **quindi instrada la chiamata** . Le impostazioni sono le opzioni **Disconnetti**, **reindirizza chiamata**o **Riproduci menu**.
+
+Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduzione del messaggio di saluto. 
 
 <a name="redirectcalls"> </a>
 
-- **Disconnettere** Se selezionata, la persona che chiama verrà disconnessa dopo aver ascoltato una saluto di orario di ufficio.
-- **Reindirizzare una chiamata** Ciò consente di inviare automaticamente la chiamata a:
-  - **Persona in società** con una licenza di **sistema telefonico** abilitata per i piani VoIP aziendale o per le chiamate assegnate in Office 365. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. A questo scopo, seleziona **persona in società** e imposta questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
+![Icona del numero 4, un callout nella schermata](media/teamscallout4.png) precedente reindirizza la **chiamata** invia il chiamante alla destinazione scelta senza scegliere Opzioni. Le impostazioni possibili sono:
 
-    > [!Note]
-    > La **persona in società** può essere un utente online o un utente ospitato in locale con Skype for Business Server 2015 o Lync Server 2013.
+  - **Persona nell'organizzazione** L'account scelto deve avere una licenza per il sistema telefonico abilitato per VoIP aziendale o avere un piano di chiamata assegnato in Office 365. È possibile configurarlo in modo che il chiamante possa essere inviato alla segreteria telefonica: selezionare **persona nell'organizzazione** e impostare l'account per inoltrare le chiamate direttamente alla segreteria telefonica.
 
-   - Un altro **operatore automatico**
+  > [!Note]
+  > La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server.
 
-   Puoi usare un operatore automatico esistente per creare un secondo livello di opzioni di menu che contiene un sottomenu. Questi sono denominati operatori automatici innestati. Per inviare la chiamata a un operatore automatico annidato, selezionare **persona in società** e assegnare un account di risorse, uno che ha già un operatore automatico associato o uno che verrà associato a un operatore automatico dopo aver creato questo operatore automatico.
+  - **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato al servizio.
 
-- Le **Opzioni del menu Riproduci** possono essere usate anche per configurare un prompt che si vuole riprodurre.
+<!-- - **Auto attendant** Select the name of an existing auto attendant.
+- **Call queue** Select the name of an auto attendant that has already been created.
+- **External phone number** routes the caller to a phone number outside your local system.
+- **Operator** directs the call to a user you designate as an Operator. If you haven't previously set up an operator, an option to create one now shows up. The 0 key is assigned to Operator by default. Options for setting an Operator are:
 
-* * *
+  - **No operator** disables the "Operator" and "Press 0" options.
+  - **Person in your organization** can be an Online user or a user hosted on-premises using Skype for Business Server. They must have a Phone System license that is enabled for Enterprise Voice or assigned Calling Plans in Office 365. Search for the operator in the **Destination for your operator** field.
+  - **Auto attendant** lets you choose the name of an existing auto attendant.
+  - **Call queue** lets you select an existing call queue.
+  - **Group Voicemail** routes the call to a voicemail box that you select. -->
 
-![Icona del numero 3, che fa riferimento a un callout nella schermata precedente](media/sfbcallout3.png)
+ * * *
 
-**Messaggio del menu** Per creare il messaggio del menu principale, puoi utilizzare il sintetizzatore vocale o caricare un file audio (.wav, .mp3 o .wma). È possibile digitare il messaggio nella casella **imposta il menu di spostamento per i chiamanti** o registrare un file audio e dire, ad esempio: "per le vendite, dire o premere o dire 1. Per i servizi, premere o pronunciare 2. Per l'assistenza clienti, premere o pronunciare 3. Per contattare un operatore, premere o pronunciare 0. Per ascoltare di nuovo questo menu, premere il tasto asterisco o pronunciare Ripeti". **Digitare un messaggio di saluto** Se si è scelto questo articolo, è necessario immettere il testo che si vuole leggere dal sistema (fino a 1000 caratteri). **Carica un file audio** Se scegli questa opzione, dovrai registrare il messaggio di saluto e poi caricare il file audio (in formato .wav, .mp3 o .wma).
+![Screenshot: sezione Azioni pagina Gestione chiamate](media/2a33b1f7-d362-47a7-bf32-ef702bc878e8b.png)
 
-* * *
+![Icona del numero 1, un callout nello screenshot](media/teamscallout1.png) precedente quando si selezionano le **Opzioni di menu Riproduci** , è possibile scegliere se usare un file audio o immettere il testo che verrà visualizzato come testo in vocale per assegnare le opzioni del menu di scelta rapida ai chiamanti. Selezionare questa opzione invece delle opzioni **reindirizza chiamata** o **Disconnetti** .
 
-![Icona del numero 4, che fa riferimento a un callout nella schermata precedente](media/sfbcallout4.png)
 
-**Configurazione delle opzioni del menu** Le opzioni di menu che usano i pulsanti chiave sulla tastiera possono essere aggiunte o rimosse. Per aggiungere un'opzione di menu, premere **+ assegnazione di un tasto**di scelta rapida. Di seguito viene visualizzata una riga di opzioni corrispondente. Per eliminare un'opzione di menu, fare semplicemente clic a sinistra del tasto corrispondente sul controllo tastiera e fare clic sull'icona Elimina sopra. La riga di mapping dei tasti verrà rimossa.
+![Icona del numero 2, un callout nella schermata](media/teamscallout2.png) precedente **Riproduci un file audio** consente di configurare le richieste e le opzioni per il chiamante. 
+- Se si seleziona **Riproduci un file audio** , è possibile usare il pulsante **Carica file** per caricare un messaggio di saluto registrato salvato come audio. WAV,. MP3 o. Formato WMA. La registrazione non può essere superiore a 5 MB.
+
+- **Digitare un messaggio di saluto** Se si sceglie questa opzione, immettere il testo che si desidera venga letto dal sistema (fino a 1000 caratteri) nel campo specificato. Ad esempio, immettere "Welcome to contoso. La tua chiamata è importante per noi." L'output viene creato tramite il software Text-to-Voice.
+
+**Impostare le opzioni del menu** Il tastierino telefonico o i comandi vocali possono essere aggiunti o rimossi in questa finestra di dialogo. Per eliminare un'opzione di menu, rimuovere la voce del comando vocale e impostare **reindirizza su** torna per **selezionare**.
 
 > [!TIP]
-> Sarà necessario aggiornare il menu richieste di testo o registrare di nuovo l'audio separatamente quando si aggiungono le opzioni di rimozione perché non verranno eseguite automaticamente per il prompt dei menu esistente.  
+> Aggiornare il testo della richiesta di menu o registrare di nuovo le richieste audio quando si rimuovono le opzioni. Il prompt dei menu riprodotto per i chiamanti non viene aggiornato automaticamente.  
 >
->Qualsiasi opzione di menu può essere aggiunta e rimossa in qualsiasi ordine e i mapping delle chiavi non devono essere continui. È possibile, ad esempio, creare un menu con i tasti 0, 1 e 3 mappato alle opzioni, mentre il tasto 2 non viene usato.
+> Qualsiasi opzione di menu può essere aggiunta e rimossa in qualsiasi ordine e i mapping delle chiavi non devono essere continui. È possibile, ad esempio, creare un menu con i tasti 0, 1 e 3 mappato alle opzioni, mentre il tasto 2 non viene usato.
 
 > [!NOTE]
 > I tasti \* (Repeat) e \# (back) sono riservati dal sistema e non possono essere riassegnati. Se il riconoscimento vocale è abilitato, premendo * corrisponderà a "REPEAT" e # corrisponderà ai comandi vocali "back".
 
-Per configurare le opzioni di menu, dopo aver selezionato il tasto o i tasti di scelta rapida, sarà necessario:
+![Icona del numero 3, un callout nella schermata precedente](media/teamscallout3.png)
 
-- Immettere il **comando vocale** dell'opzione. Questo può contenere fino a 64 caratteri e può includere più parole come "Customer Service" o "Operations and grounds". Se è abilitato il riconoscimento vocale, verrà riconosciuto automaticamente il nome e la persona chiamata sarà in grado di premere 3, dire "tre" oppure "Servizio clienti" per selezionare l'opzione mappata al tasto 3.
-- Selezionare la posizione in cui deve essere inviata la chiamata se viene premuto il tasto corrispondente oppure l'opzione è selezionata tramite riconoscimento vocale. La chiamata può essere inviata a:
+Per impostare un'opzione di menu, fare clic sul pulsante **+ assegna un tasto** di scelta rapida e immettere le informazioni per le opzioni seguenti:
 
-  - **Operatore** Se l'operatore è già stato configurato, viene automaticamente mappato al tasto 0, ma può anche essere eliminato o riassegnato a un tasto diverso. Se l'operatore non è impostato su nessun tasto, anche il comando vocale "Operatore" verrà disabilitato.
-  - Una **Persona nell'azienda** con una licenza di **Sistema telefonico** abilitata per Enterprise Voice o con Piani di chiamata di Office 365 assegnati. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. A questo scopo, seleziona **persona nella tua azienda** e imposta questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
+![Icona del numero 4, un callout nella schermata precedente](media/teamscallout4.png) 
 
-    > [!Note]
-    > **La persona della società** può essere un utente online o un utente ospitato in locale con Skype for Business Server o Lync Server 2013.
+La colonna **comando vocale** per un'opzione può avere un massimo di 64 caratteri e può contenere più parole come "Customer Service" o "Operations and grounds". Se il riconoscimento vocale è abilitato, il nome viene riconosciuto automaticamente e il chiamante è in grado di premere 3, pronunciare "tre" oppure dire "Customer Service" per selezionare l'opzione associata al tasto 3.
 
-  - Un altro **operatore automatico**
+![Icona del numero 5, un callout nella schermata](media/teamscallout5.png) precedente l'opzione **reindirizza a** imposta la posizione in cui si trova la chiamata se viene premuto il tasto corrispondente oppure l'opzione è selezionata tramite riconoscimento vocale. La chiamata può essere inviata a:
 
-       Puoi usare un operatore automatico esistente per creare un secondo livello di opzioni di menu che contiene un sottomenu. Questi sono denominati operatori automatici innestati. Per inviare la chiamata a un operatore automatico annidato, selezionare **persona in società** e assegnare un account di risorse, uno che ha già un operatore automatico associato o uno che verrà associato a un operatore automatico dopo aver creato questo operatore automatico.
+<!-- Is the Operator behavior changing here? Looks like operator is only an available option for dial key 0 -->
 
-        > [!Note]
-        > The **Business Hours** of nested (or second-level) auto attendants will also be used, including for the calls sent from other auto attendants that have been set up.
+- **Operatore** Se un operatore è già configurato, l'opzione viene automaticamente mappata alla chiave 0, ma può anche essere eliminata o riassegnata a una chiave diversa. Il chiamante che seleziona questa opzione viene inviato all'operatore designato. Se operator non è impostato su un tasto qualsiasi, anche il comando vocale "operator" è disabilitato. 
+- La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server. L'utente deve avere una licenza per il sistema telefonico abilitata per i piani VoIP aziendale o per le chiamate assegnate in Office 365. Cercare la persona nel campo **Cerca in base al nome** .
 
-    - **Applicazione vocale** Selezionare il nome di un account di risorsa associato a una coda di chiamata o a un operatore automatico già creato.
+  - **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato all'applicazione.
+
+<!-- - **Auto attendant** Select the name of an existing auto attendant in the **Search by name** field. You will also have to select a resource account associated to the auto attendant. The caller who selects this option is sent to that auto attendant.
+- **Call queue** Select the name of an existing call queue in the **Search by name** field. You will also have to select a resource account associated to the call queue. The caller who selects this option is sent to that call queue, where the call is answered by a call agent.
+- **External phone number** routes the caller to a designated phone number outside your local system.<!-- does this have prerequisites like direct routing?
+- **Group Voicemail** routes the call to a voicemail box that you select.  -->
+
+![Icona del numero 6, un callout nella schermata precedente](media/teamscallout6.png) 
+
+**Ricerca directory** In questa sezione è possibile abilitare la **chiamata per nome** e la **chiamata per estensione** per l'operatore automatico. È possibile impostare chi è e non è incluso in questi servizi nella pagina dell'ambito di chiamata facoltativa. La ricerca della directory è impostata su **None** per impostazione predefinita.
+
+**Chiamata per nome** Se si abilita questa opzione, i chiamanti possono cercare gli utenti dell'organizzazione usando la chiamata in **base al nome**. Si dice che il nome dell'utente e il riconoscimento vocale corrispondano a un utente. È possibile impostare chi è e non è incluso in questi servizi nella pagina dell'ambito di chiamata facoltativa. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con chiamata per nome.
+
+**Dial by Extension** Se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione immettendo l'estensione del telefono, **purché sia stato configurato un dial plan che usa le estensioni**. È possibile selezionare gli utenti elencati come disponibili o non disponibili per l' **estensione dial by** nella pagina facoltativa dell'ambito di chiamata. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l'estensione dial by.
 
 * * *
 
-![Icona del numero 5, che fa riferimento a un callout nella schermata precedente](media/sfbcallout5.png)
+<!--
+**Instructions for callers** lets you choose **Use recorded call instructions** or **Write your call instructions**.  
 
-**Chiamata per nome** Se scegli questa opzione, consentirà agli utenti che accedono alla ricerca di persone nell'organizzazione tramite la ricerca nella directory. Puoi selezionare quali persone saranno elencate come disponibili o non disponibili per Chiamata per nome definendo queste opzioni nella pagina **Ambito chiamata**. Tutti gli utenti online con una licenza di **sistema telefonico** o qualsiasi utente ospitato in locale con Skype for Business Server o Lync Server 2013 possono essere trovati con la chiamata per nome.
+If you choose **Use recorded call instructions**, you have the option to record and upload new or prerecorded sound files to play as menu instructions. The same app used in recording the auto attendant greeting is used here.
+
+If you choose **Write your call instructions**, enter the script  you want the system to read (up to 1000 characters). For example, you might enter text that begins "Please choose from one of the following menu options ... " and provide a script written to reflect your configuration.
+* * *  -->
+
+Dopo aver completato le selezioni, è possibile fare clic su **Avanti** se si vogliono modificare le impostazioni avanzate o fare clic su **Invia** se si vogliono usare le impostazioni predefinite per elementi come:
+- Flusso delle chiamate per le ore successive
+- Flusso delle chiamate per le festività
+- Ambito di chiamata
+- Account risorse
+
+Dato che è necessario che l'operatore automatico disponga di un account di risorse, è possibile scegliere di procedere alla pagina dell' **account delle risorse** e associare un account di risorse già configurato oppure creare un account di risorse e associarlo all'auto Attendant come descritto in [gestire gli account delle risorse in Microsoft teams](manage-resource-accounts.md). Non sarà possibile usare questo operatore automatico finché non è stato associato a un account di risorse. a tale scopo, fare clic sul pulsante **Avanti** nella parte inferiore dello schermo e quindi fare clic su **account risorse** nella barra di spostamento sinistra per accedere direttamente alla pagina account risorse e associare l'operatore automatico a un account di risorse.
+
+#### <a name="advanced-settings-optional"></a>Impostazioni avanzate (facoltativo)
+
+Sono disponibili quattro schermate aggiuntive che è possibile configurare o abbandonare per impostazione predefinita mentre si sceglie.
+
+##### <a name="call-flow-for-after-hours"></a>Flusso delle chiamate per le ore successive
+
+Per impostazione predefinita, gli orari di ufficio di un operatore automatico sono impostati su 9.00-17.00, dal lunedì al venerdì  <!--24/7-->e le opzioni flusso di chiamata per le chiamate *after hours* sono disabilitate perché tutte le ore sono considerate *orari di ufficio*. Quando si seleziona l'opzione **imposta orari di ufficio personalizzati** , il **flusso delle chiamate per la pagina after hours** configura le regole di gestione delle chiamate usate dall'operatore automatico dopo le ore. Le opzioni disponibili sono le stesse, la differenza è la possibilità di impostare una programmazione per menu e comportamenti diversi.
+
+Un sistema di operatori automatici può essere necessario impostare solo dopo ore il comportamento di gestione delle chiamate per l'operatore automatico di primo livello. Gli operatori automatici annidati potrebbero anche non essere chiamati dall'operatore automatico di primo livello, ma in alternativa il sistema può definire il comportamento di after hours per ogni operatore automatico che usa.
+
+Inizialmente, gli orari di ufficio sono definiti per iniziare da 12:00 AM e terminano alle 12:00 PM, da domenica a sabato. Tutte le ore che non si trovano durante le ore lavorative vengono considerate *dopo ore*.
+
+
+![screenshot delle impostazioni di flusso delle chiamate dopo ore](media/aa-afterhour.png)
+ * * *
+
+![Icona del numero 1, un callout nello screenshot](media/teamscallout1.png) precedente è possibile fare clic su **Seleziona 24/7** per impostare tutte le ore lavorative per l'operatore automatico.
+
+![Icona del numero 2, un callout nella schermata](media/teamscallout2.png) precedente selezionare l'opzione **Reimposta per impostazione predefinita** per ripristinare tutte le modifiche nella programmazione e tornare alla definizione predefinita degli orari di ufficio come da 9:00 a 5:00 PM dal lunedì al venerdì.
+
+![Icona del numero 3, un callout nella schermata](media/teamscallout3.png) precedente selezionare **Cancella tutte le ore** per cancellare completamente la programmazione. La selezione di questa opzione e l'impostazione delle ore non impostate non sono consigliate, quindi è consigliabile usare questa funzione solo se si vogliono ripristinare completamente gli orari di ufficio.
+
+![Icona del numero 4, un callout nell'](media/teamscallout4.png)![icona dello screenshot precedente del numero 5, un callout nella schermata](media/teamscallout5.png) precedente per personalizzare l'ora di inizio o di fine per un giorno della settimana, fare clic su **Start at** o **End at** time che si vuole reimpostare e Selezionare la nuova ora nell'elenco visualizzato.   L'elenco consente di selezionare gli orari di ufficio in intervalli di 15 minuti e gli orari di ufficio selezionati in questo punto si basano sul fuso orario impostato nella pagina **informazioni generali** .
+
+ <!-- The **Apply to all days** option can be used to reset all days of the week to match the settings for that day. This makes setting weekdays and weekends to different hours easier.-->
+
+![Icona del numero 6, un callout nella schermata](media/teamscallout6.png) precedente per configurare un'interruzione (ad esempio un'interruzione di pranzo), selezionare **Aggiungi nuova ora** per il giorno della settimana per creare una nuova riga di tabella e selezionare nuovi orari di inizio e fine. È possibile impostare più interruzioni in orari di ufficio.
+
+Le opzioni di [flusso delle chiamate](#call-flow) disponibili dopo le ore sono le stesse delle opzioni disponibili durante l'orario di ufficio. Scorrere verso il basso nella pagina di immissione delle informazioni per impostare le opzioni del flusso delle chiamate orarie.
 
 * * *
 
-Dopo aver completato le selezioni, fare clic su **Avanti**.
+Dopo aver completato le selezioni, fare clic su **Avanti**. È anche possibile fare clic su **account risorse** nella barra di spostamento sinistra per accedere direttamente alla pagina account risorse e associare l'operatore automatico a un account di risorse.
 
-#### <a name="holiday-call-settings"></a>Impostazioni delle chiamate per le festività
+##### <a name="call-flow-during-holidays"></a>Flusso delle chiamate durante le festività
 
 <a name="holidaygreetings"> </a>
 
-È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
+È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico. L'organizzazione potrebbe avere già definito festività come descritto in [configurare le festività in Microsoft teams](set-up-holidays-in-teams.md). In caso contrario, verrà visualizzata la schermata seguente: 
 
+![Screenshot: nessuna festività configurata](media/aa-no-holidays.png)
+
+![Icona del numero 1, un callout nella schermata](media/teamscallout1.png) precedente per impostare un flusso di chiamata personalizzato per una festività nell'operatore automatico, fare clic su **+ Aggiungi** la schermata Visualizza **flusso chiamata nuova festività** .
 > [!TIP]
-> Per creare festività, è possibile visualizzare le **Impostazioni** > **a** livello di organizzazione, oppure crearle come parte della creazione di un nuovo gestore chiamate.
+> Per creare festività, è possibile accedere alla schermata durante **le** > **festività**a livello di organizzazione.  
 
-![Screenshot della pagina delle impostazioni delle chiamate festive](media/50a5ce88-7f39-4210-808a-da7ced969854.png)
 
-![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
 
-Se sono già stati creati altri operatori automatici, è possibile che venga visualizzata un'opzione che consente di usare o modificare le informazioni necessarie in questo elenco. In caso contrario, devi creare un nuovo gestore chiamate.
-
-Per aggiungere un nuovo gestore chiamate, fare clic su **+ nuovo gestore chiamate**.
+![Screenshot: aggiungere un gestore chiamate](media/50a5ce88-7f39-4210-808a-da7ced969854b.png)
 
 * * *
 
-![Screenshot che mostra l'aggiunta di un nuovo gestore chiamate](media/50a5ce88-7f39-4210-808a-da7ced969854b.png)
+![Icona del numero 1, un callout nella schermata](media/teamscallout1.png) precedente immettere un **nome** per il nuovo flusso di chiamata.
 
-![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
+![Icona del numero 2, un callout nello screenshot](media/teamscallout2.png) precedente se hai già creato le festività, le vedrai nel menu a discesa **festività** e potrai selezionarle. Potresti vedere un'opzione inutilizzata che puoi modificare in ciò che ti serve. In caso contrario, fare clic su **Aggiungi** nella parte inferiore dell'elenco a discesa per creare una nuova festività.  Vedere [configurare le festività in Microsoft teams](set-up-holidays-in-teams.md) per i passaggi usati per creare una festività. 
 
-Nella nuova finestra immettere un nome per il gestore della nuova chiamata nella parte superiore dello schermo.
+Un nome di flusso delle chiamate per le festività può essere lungo fino a 64 caratteri e deve essere univoco per l'organizzazione. Ad esempio, non è possibile avere due flussi di chiamate festivi denominati "thanksgiving" nella stessa organizzazione. L'operatore automatico può avere un flusso di chiamata per ogni festività configurata, ma potrebbe essere necessario disporre di un set di comportamenti comune diverso da un saluto personalizzato.
 
-![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
+![Icona del numero 3, un callout nello screenshot](media/teamscallout3.png) precedente le opzioni di [saluto](#call-flow) disponibili per un flusso delle chiamate delle festività sono le stesse delle opzioni disponibili durante l'orario di ufficio. Anche le **azioni** eseguite dopo la riproduzione del messaggio di saluto sono simili, tranne per il fatto che l'unica azione disponibile consiste nel **disconnettersi** o **reindirizzare**e quando si sceglie l'opzione **reindirizza a** l'operatore non è una delle opzioni disponibili . Non è possibile configurare un menu specifico per un flusso delle festività.
 
-Se il nome della tua vacanza esiste già nell'elenco a discesa **festività** , puoi usarlo. Se il nome di festività necessario non esiste già, selezionare **Crea nuova festività** nell'elenco a discesa e assegnare un nome e una data per la nuova festività nella nuova schermata visualizzata. Fare clic su **Salva** quando si è pronti.
+> [!NOTE]
+> Per impostazione predefinita, tutte le chiamate ricevute durante un periodo di festività sono impostate per **disconnettersi** dopo il messaggio di saluto (se presente), quindi devi specificare un redirect se vuoi un comportamento personalizzato.
 
-I nomi delle festività possono essere formati da un massimo di 64 caratteri e devono essere univoci per l'operatore automatico stesso. Ad esempio, è possibile avere due festività denominate "Giorno del ringraziamento" nello stesso operatore automatico.
+![Screenshot del flusso delle chiamate durante la pagina festività](media/50a5ce88-7f39-4210-808a-da7ced969854.png)
 
-![Icona del numero 3, che fa riferimento a un callout nella schermata precedente](media/sfbcallout3.png)
+Fare clic su Salva per completare la creazione del flusso delle chiamate festive. Dopo aver creato un flusso delle chiamate per le festività, verrà visualizzato nella schermata delle **chiamate durante le festività** .
 
-**Messaggio di saluto** Il messaggio di saluto è facoltativo e può essere impostato su **Nessun saluto**. In questo caso, il chiamante non udirà alcun messaggio o saluto prima che la chiamata venga gestita da una delle opzioni selezionate. È possibile caricare un file audio (nel formato con estensione wav, mp3 o .wma) o creare un messaggio di saluto personalizzato utilizzando la sintesi vocale.
+Fare clic su **Avanti** per impostare l'ambito di chiamata, quindi di **nuovo** per apportare modifiche al flusso delle chiamate ora e **inviarlo** se è stato completato. È anche possibile fare clic su **account risorse** nella barra di spostamento sinistra per accedere direttamente alla pagina account risorse e associare l'operatore automatico a un account di risorse.
 
-- **Nessun saluto** Nessun messaggio di saluto verrà riprodotto quando gli utenti chiamano il numero di telefono dell'operatore automatico.
-- **Caricare un file audio** Se si sceglie questo documento, registrare il messaggio di saluto e quindi caricare il file audio (in formato. wav,. mp3 o. WMA)
-- **Digitare un messaggio di saluto** Se si sceglie questa opzione, immettere il testo da leggere per il sistema (fino a 1000 caratteri). Ad esempio, è possibile immettere "Buon anno! I nostri uffici sono chiusi." nella casella **digitare un messaggio di saluto** .
+#### <a name="dial-scope"></a>Ambito di chiamata
 
-![Icona del numero 4, che fa riferimento a un callout nella schermata precedente](media/sfbcallout4.png)
-
-**Azioni** È possibile selezionare cosa succede alle chiamate che arrivano durante questa festività. È possibile scegliere tra le opzioni seguenti:
-
-- **Disconnettere**  La persona chiamata verrà disconnessa dopo aver ascoltato il messaggio di saluto di festività.
-- **Reindirizzare una chiamata** Ciò consente di inviare automaticamente la chiamata a:
-  - Una **Persona nell'azienda** con una licenza di **Sistema telefonico** abilitata per Enterprise Voice o con Piani di chiamata di Office 365 assegnati. Puoi impostarla in modo che la persona che chiama possa essere passata alla segreteria telefonica. A questo scopo, seleziona **persona nella tua azienda**e imposta questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
-
-    > [!Note]
-    > Una **Persona nell'azienda** può essere un utente in linea o un utente ospitato in locale con Skype per Business Server 2015 o Lync Server 2013.
-
-   - **Applicazione vocale** Selezionare il nome di un account di risorsa associato a una coda di chiamata o a un operatore automatico già creato.
-
-    > [!Note]
-    > Per impostazione predefinita, per tutte le chiamate in arrivo per un periodo di festività impostate per essere disconnesse dopo il messaggio di saluto (se esistenti), è necessario specificare un reindirizzamento se non si desidera un comportamento diverso.
-
-<a name="dialscope"></a>
-#### <a name="select-dial-scope-page"></a>Pagina Seleziona ambito di chiamata
-
-In questa pagina è possibile configurare gli utenti dell'organizzazione che verranno elencati nella directory e disponibili per il nome della chiamata per ogni persona che chiama l'organizzazione.
+<a name="dialscope"> </a>
 
 ![Schermata che mostra la pagina dell'ambito di chiamata](media/1bcb185c-00db-43a7-b5c4-9b021c0627f7.png)
 
-* * *
+In questa pagina è possibile impostare chi è elencato nella directory e disponibile per il nome della chiamata quando una persona chiama l'organizzazione. La chiamata per nome è impostata su **disattivato** per impostazione predefinita in una schermata precedente. Se sono stati creati dial plan, tutti gli utenti con un'estensione saranno disponibili se in precedenza è stato selezionato **dial by Extension** .
 
-![Icona del numero 1, facendo riferimento a un callout nello screenshot](media/sfbcallout1.png) precedente con l'opzione **Includi** , sono disponibili due opzioni:
+![Icona del numero 1, un callout nello](media/teamscallout1.png) screenshot precedente **include** le opzioni in questa sezione sono **tutti gli utenti online** o i gruppi di utenti **personalizzati**
 
-- **Tutti gli utenti online** Questa opzione permette di includere tutte le persone dell'organizzazione nella ricerca in elenco. Tutti gli utenti online con una licenza di **sistema telefonico** , nonché gli utenti ospitati in locale con Skype for Business Server o Lync Server 2013 che hanno piani di chiamata in Office 365, verranno elencati.
-- **Gruppo utenti personalizzato** Se si usa questa opzione, è possibile cercare un gruppo, una lista di distribuzione o un gruppo di sicurezza di Office 365 creato nell'organizzazione e le persone aggiunte al gruppo di Office 365, alla lista di distribuzione o al gruppo di sicurezza che sono **utenti online con un Licenza di sistema telefonico** o ospitata in locale con Skype for Business Server 2015 o Lync server 2013. È possibile aggiungere più gruppi di Office 365, liste di distribuzione e gruppi di sicurezza.
+Se si selezionano **tutti gli utenti online**, tutti gli utenti idonei sono inclusi nella ricerca nella directory.
 
-* * *
+**Gruppi di utenti personalizzati** Questa opzione consente di cercare e selezionare un gruppo, una lista di distribuzione o un gruppo di sicurezza di Office 365 già creato nell'organizzazione. Gli utenti vengono aggiunti alla directory se si trovano nel gruppo di Office 365 scelto, nella lista di distribuzione o nel gruppo di sicurezza e sono **utenti online con una licenza di sistema telefonico** o ospitati in locale con Skype for Business Server. È possibile aggiungere più gruppi di Office 365, liste di distribuzione e gruppi di sicurezza alla directory.
 
-![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
 
-Con l'opzione **Escludi** sono disponibili due opzioni:
 
-- **Nessuno** Questa opzione indica che nessun utente online sarà escluso dalla ricerca in elenco.
-- **Gruppo utenti personalizzato** Se si usa questa opzione, è possibile cercare un gruppo, una lista di distribuzione o un gruppo di sicurezza di Office 365 creato nell'organizzazione e tutti gli utenti aggiunti a questo gruppo di Office 365, a una lista di distribuzione o a gruppi di sicurezza verranno esclusi dalla ricerca nella directory. È possibile aggiungere più gruppi di Office 365, liste di distribuzione e gruppi di sicurezza.
+![Icona del numero 2, un callout nello screenshot](media/teamscallout2.png) precedente **esclude** le opzioni in questa sezione consente di escludere utenti o gruppi di utenti specifici dalla directory dell'organizzazione.
+
+Se si seleziona **nessuno**, tutti gli utenti idonei saranno inclusi nella ricerca nella directory.
+
+**Gruppo utenti personalizzato** È possibile cercare un gruppo, una lista di distribuzione o un gruppo di sicurezza di Office 365 creato nell'organizzazione. Gli utenti di tale gruppo sono esclusi dalla ricerca nella directory. È possibile aggiungere più gruppi di Office 365, liste di distribuzione e gruppi di sicurezza.
+
+
+Se si lasciano le impostazioni predefinite quando l'opzione Componi per nome è abilitata, tutti gli utenti idonei sono inclusi nella ricerca nella directory.
 
 > [!NOTE]
-> Il nome di un nuovo utente può richiedere fino a 36 ore nella directory quando qualcuno usa la chiamata per nome con il riconoscimento vocale.
+> Per un nuovo utente potrebbe essere necessario un massimo di 36 ore per avere il nome elencato nella directory. Quando qualcuno usa la chiamata per nome con il riconoscimento vocale, i nuovi account potrebbero non essere disponibili per questa funzionalità.
 
-Dopo aver immesso tutti i campi obbligatori e configurato i menu e le opzioni di gestione delle chiamate, fare clic su **Invia**.
+Dopo aver immesso tutti i campi obbligatori e aver configurato i menu e le opzioni di gestione delle chiamate, fare clic su **Avanti** per procedere con l'associazione di un account risorse.
 
-## <a name="editing-and-testing-auto-attendants"></a>Modifica e test degli operatori automatici
+#### <a name="resource-accounts"></a>Account risorse
 
-Dopo aver salvato il tuo operatore automatico, verrà elencato nella pagina **Operatori automatici**. In questo modo è possibile visualizzare rapidamente alcune delle opzioni configurate, ad esempio il nome, il numero di telefono, la lingua e lo stato.
+Tutti gli operatori automatici devono avere un account di risorse associato.  Gli operatori automatici di primo livello avranno sicuramente bisogno di almeno un account delle risorse con un numero di servizio associato. Se lo si desidera, è possibile assegnare più account di risorse a un operatore automatico, ognuno con un numero di servizio distinto.
 
-Se si vogliono apportare modifiche a un operatore automatico, selezionare l'operatore automatico e quindi nel riquadro azioni fare clic su **modifica**.
+Se non è già stato configurato un account di risorse per l'operatore automatico, viene visualizzata la schermata seguente: 
 
-È anche possibile inserire rapidamente una chiamata di test all'operatore automatico usando il pulsante **test** nel riquadro azioni.
+![Screenshot: gestione facoltativa degli account risorse](media/aa-ra-optional.png) 
 
-## <a name="auto-attendant-cmdlets"></a>Cmdlet dell'operatore automatico
+![Icona del numero 1, un callout nella schermata](media/teamscallout1.png) precedente per aggiungere uno o più account di risorse esistenti e non assegnati all'operatore automatico, fare clic su **Aggiungi account** e cercare e selezionarli dalle finestre di dialogo fornite.
 
-Puoi anche utilizzare Windows PowerShell per creare e configurare gli operatori automatici. Ecco i cmdlet necessari per gestire un operatore automatico:
+![screenshot della visualizzazione Riepilogo nuovo operatore](media/aa-assigned.png)
+
+![Icona del numero 1, un callout nella schermata](media/teamscallout1.png) precedente per aggiungere un altro account di risorse, fare clic su **+ Aggiungi account**.
+
+![Icona del numero 2, un callout nella schermata precedente](media/teamscallout2.png) L'account di risorse o gli account assegnati a questo operatore automatico sono visualizzati in un elenco.
+
+## <a name="edit-auto-attendants"></a>Modificare gli operatori automatici
+
+Dopo aver salvato il nuovo operatore automatico, viene elencato nella pagina **operatore automatico** . Questa pagina consente di visualizzare rapidamente alcune delle opzioni configurate, ad esempio il nome, l'account di risorse associato, la lingua e l'operatore assegnato.
+
+![screenshot dell'elenco di Attendant](media/aa-list.png)
+
+Se si vogliono modificare le impostazioni di operatore automatico, selezionare l'operatore automatico e quindi nel riquadro azioni fare clic su **modifica**.
+
+<!-- To quickly place a test call to your auto attendant, click the **Test** button in the Action pane. -->
+
+<!-- ## Summary view
+
+You can use the Summary page to review the settings you've created.
+
+![screenshot of the new attendant summary view](media/aa-new-summary.png)
+
+Press the **Create** button to finish setup of your new auto attendant. -->
+
+### <a name="create-an-auto-attendant-with-powershell"></a>Creare un operatore automatico con PowerShell
+
+È anche possibile usare PowerShell per creare e configurare gli operatori automatici. Ecco i cmdlet necessari per gestire un operatore automatico:
 
 - [New-CsAutoAttendant](https://docs.microsoft.com/powershell/module/skype/new-csautoattendant?view=skype-ps)  
 - [Set-CsAutoAttendant](https://docs.microsoft.com/powershell/module/skype/set-csautoattendant?view=skype-ps)
@@ -346,13 +402,13 @@ Puoi anche utilizzare Windows PowerShell per creare e configurare gli operatori 
 
 ### <a name="more-about-windows-powershell"></a>Altre informazioni su Windows PowerShell
 
-- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell è possibile gestire Office 365 e Microsoft teams usando un unico punto di amministrazione in grado di semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell è possibile gestire Office 365 e Microsoft Teams da un unico punto di amministrazione in grado di semplificare il lavoro quotidiano. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
 
   - [Introduzione a Windows PowerShell e Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://docs.microsoft.com/en-us/office365/enterprise/powershell/why-you-need-to-use-office-365-powershell)
 
-- Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo usando l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+- Windows PowerShell offre numerosi vantaggi in velocità, semplicità e produttività solo con l'interfaccia di amministrazione di Microsoft 365, ad esempio per apportare modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
 
   - [Gestire Office 365 con Office 365 PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
 
@@ -370,4 +426,4 @@ Puoi anche utilizzare Windows PowerShell per creare e configurare gli operatori 
 
 [Cosa sono gli operatori automatici cloud?](what-are-phone-system-auto-attendants.md)
 
-[Esempio per piccole imprese - Impostare un operatore automatico](/microsoftteams/tutorial-org-aa)  
+[Esempio di piccola impresa: configurare un operatore automatico](/microsoftteams/tutorial-org-aa)  
