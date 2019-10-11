@@ -18,12 +18,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle licenze gratuite degli utenti virtuali.
-ms.openlocfilehash: cf51e927a05472b314e5fa193caa8d49f513c0cf
-ms.sourcegitcommit: bb8577aca8c7e0673b37634a24bf793c86c0537b
+ms.openlocfilehash: 96ea4ed71eac8c6b67e4fd4c7964591dcef1f635
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36675344"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435126"
 ---
 # <a name="phone-systemvirtual-user-license"></a>Sistema telefonico-licenza utente virtuale 
 
@@ -52,10 +52,10 @@ Contoso dovrebbe valutare la possibilità di riprogettare l'operatore automatico
 ## <a name="how-to-acquire-phone-systemvirtual-user-licenses"></a>Come acquistare il sistema telefonico-licenze utente virtuali 
 
 > [!NOTE] 
-> Quando segui queste istruzioni, usa la modalità anteprima per acquistare un sistema telefonico-licenza per gli utenti virtuali.
+> Quando si seguono queste istruzioni, disattivare la modalità anteprima per acquistare un sistema telefonico-licenza per gli utenti virtuali.
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
-2. Accedere agli abbonamenti al**componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto
+2. Accedere agli**abbonamenti al componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto
 3. Scorrere fino alla fine per trovare la licenza **"sistema telefonico-utente virtuale"** . Selezionare **Acquista ora**.
 
 > [!WARNING]

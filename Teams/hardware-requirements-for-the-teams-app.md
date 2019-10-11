@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cc74de2c5cc6ae294b69f31f7c25e652da4ea397
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 446ff5c3dc5d7e6a33f5d6b3a44a07a8f6514f02
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245356"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37434978"
 ---
 # <a name="hardware-requirements-for-the-microsoft-teams-app"></a>Requisiti hardware per l'app Microsoft Teams
 
@@ -36,11 +36,11 @@ ms.locfileid: "36245356"
 |Disco rigido    | 3,0 GB di spazio disponibile su disco        |
 |Visualizzare    |   risoluzione dello schermo di 1024 x 768 |
 |Hardware grafico |  Minima di 128 MB di memoria grafica
-|Sistema operativo  |    Windows 10, Windows 8,1, Windows 8 o Windows 7 Service Pack 1 in 32 bit e 64 bit. Per un'esperienza ottimale, usa la versione più recente di qualsiasi sistema operativo.|
+|Sistema operativo  |    Windows 10, Windows 8,1 o Windows 7 Service Pack 1 in 32 bit e 64 bit. Per un'esperienza ottimale, usa la versione più recente di qualsiasi sistema operativo.|
 |Versione .NET    |  Richiede .NET 4,5 CLR o versioni successive       |
 |Video    |  Videocamera USB 2,0       |
 |Dispositivi    |   Fotocamera, microfono e altoparlanti standard del portatile    | 
-|Videochiamate e riunioni | Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). L'effetto di sfocatura opzionale video in **background** richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2). Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati. |
+|Videochiamate e riunioni | Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). L'effetto di **sfocatura** opzionale video in background richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2). Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati. |
 |Eventi live di Teams | Se si stanno producendo eventi live di teams, è consigliabile usare un computer in cui è installato un processore del lago Core i5 KABY, 4,0 GB di RAM (o superiore) e un codificatore hardware. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati. |
 
 ## <a name="hardware-requirements-for-the-teams-desktop-app-on-a-mac"></a>Requisiti hardware per l'app desktop teams in un Mac

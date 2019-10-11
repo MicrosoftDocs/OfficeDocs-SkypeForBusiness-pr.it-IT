@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: 424b6cea41132bd03b9eecfbd2d387697332505f
-ms.sourcegitcommit: d349922409f49b52048597a56b81501163749a69
+ms.openlocfilehash: 60fce49f2c03ef674e0b1e09f5d0193bcdab7ca0
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37401997"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37434965"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -44,7 +44,7 @@ Le implementazioni di operatore automatico spesso coinvolgono diversi operatori 
 ## <a name="step-1--get-started"></a>Passaggio 1: iniziare
 
 - Per avere un account di risorse associato, è necessario un operatore automatico. Vedere [gestire gli account delle risorse in teams](manage-resource-accounts.md) per informazioni dettagliate sugli account delle risorse e tutte le licenze necessarie. 
-- 
+ 
 <!-- When you create a new auto attendant in Teams after October 10th, 2019, the required auto attendant is automatically created and linked with the new auto attendant. -->
  
 > [!TIP]
@@ -88,7 +88,7 @@ Sono disponibili diversi modi per impostare l'operatore:
      > [!Note]
      > **La persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server.
 
-- **Funzionalità vocali**  Selezionare il nome dell'account della risorsa collegato a un operatore automatico o a una coda di chiamata già creata. I chiamanti che richiedono l'operatore vengono reindirizzati.  
+- **App vocale**  Selezionare il nome dell'account della risorsa collegato a un operatore automatico o a una coda di chiamata già creata. I chiamanti che richiedono l'operatore vengono reindirizzati.  
 <!--   
 
 - **Auto attendant** Select the name of the resource account linked to an auto attendant that has already been created. Callers that request an operator are redirected there.
@@ -100,10 +100,11 @@ Sono disponibili diversi modi per impostare l'operatore:
 > Auto attendants created after October 10th, 2019 also create a new [resource account](manage-resource-accounts.md) that is associated with the auto attendant. If a phone number is applied to the auto attendant's resource account,  a Phone System - Virtual user license is applied to the resource account if one is available.
 -->
 
-* * * 
+* * *
 
-![Icona del numero 3, un callout nel](media/teamscallout3.png)<a name="timezone"> </a>  
- **fuso orario** precedente dello screenshot necessario per impostare il fuso orario per l'operatore automatico. L'impostazione può essere uguale al fuso orario dell'indirizzo principale elencato per l'organizzazione o a un fuso orario diverso. Ogni operatore automatico può avere un fuso orario diverso. L'orario di ufficio impostato per l'operatore automatico usa anche questo fuso orario.
+<a name="timezone"> </a>
+
+![Icona del numero 3, un callout nel](media/teamscallout3.png) **fuso orario** precedente dello screenshot necessario per impostare il fuso orario per l'operatore automatico. L'impostazione può essere uguale al fuso orario dell'indirizzo principale elencato per l'organizzazione o a un fuso orario diverso. Ogni operatore automatico può avere un fuso orario diverso. L'orario di ufficio impostato per l'operatore automatico usa anche questo fuso orario.
 
 * * *
 
@@ -147,7 +148,6 @@ Dopo aver completato le selezioni, fare clic su **Avanti**.
 ![Icona del numero 3, un callout nello screenshot](media/teamscallout3.png) precedente **digitare un messaggio di saluto** se si sceglie questa opzione, immettere il testo da leggere per il sistema (fino a 1000 caratteri) nel campo specificato. Ad esempio, immettere "Welcome to contoso. La tua chiamata è importante per noi." L'output viene creato tramite il software Text-to-Voice.
 
 * * *
-
 
 Puoi selezionare cosa succede accanto alle chiamate delle azioni seguenti nella sezione **quindi instrada la chiamata** . Le impostazioni sono le opzioni **Disconnetti**, **reindirizza chiamata**o **Riproduci menu**.
 
@@ -197,13 +197,9 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 > [!NOTE]
 > I tasti \* (Repeat) e \# (back) sono riservati dal sistema e non possono essere riassegnati. Se il riconoscimento vocale è abilitato, premendo * corrisponderà a "REPEAT" e # corrisponderà ai comandi vocali "back".
 
-![Icona del numero 3, un callout nella schermata precedente](media/teamscallout3.png)
+![Icona del numero 3, un callout nella schermata](media/teamscallout3.png) precedente per configurare un'opzione di menu, fare clic sul **+ assegnare un tasto** di scelta rapida e immettere le informazioni per le opzioni seguenti:
 
-Per impostare un'opzione di menu, fare clic sul pulsante **+ assegna un tasto** di scelta rapida e immettere le informazioni per le opzioni seguenti:
-
-![Icona del numero 4, un callout nella schermata precedente](media/teamscallout4.png) 
-
-La colonna **comando vocale** per un'opzione può avere un massimo di 64 caratteri e può contenere più parole come "Customer Service" o "Operations and grounds". Se il riconoscimento vocale è abilitato, il nome viene riconosciuto automaticamente e il chiamante è in grado di premere 3, pronunciare "tre" oppure dire "Customer Service" per selezionare l'opzione associata al tasto 3.
+![Icona del numero 4, un callout nella colonna del](media/teamscallout4.png)  **comando vocale** dello screenshot precedente per un'opzione può avere un massimo di 64 caratteri e può contenere più parole come "Customer Service" o "Operations and grounds". Se il riconoscimento vocale è abilitato, il nome viene riconosciuto automaticamente e il chiamante è in grado di premere 3, pronunciare "tre" oppure dire "Customer Service" per selezionare l'opzione associata al tasto 3. Questo testo viene inoltre eseguito tramite testo in sintesi vocale per la richiesta di conferma del servizio, che potrebbe essere simile a "trasferimento di una chiamata all'operatore".
 
 ![Icona del numero 5, un callout nella schermata](media/teamscallout5.png) precedente l'opzione **reindirizza a** imposta la posizione in cui si trova la chiamata se viene premuto il tasto corrispondente oppure l'opzione è selezionata tramite riconoscimento vocale. La chiamata può essere inviata a:
 
@@ -219,13 +215,14 @@ La colonna **comando vocale** per un'opzione può avere un massimo di 64 caratte
 - **External phone number** routes the caller to a designated phone number outside your local system.<!-- does this have prerequisites like direct routing?
 - **Group Voicemail** routes the call to a voicemail box that you select.  -->
 
-![Icona del numero 6, un callout nella schermata precedente](media/teamscallout6.png) 
-
-**Ricerca directory** In questa sezione è possibile abilitare la **chiamata per nome** e la **chiamata per estensione** per l'operatore automatico. È possibile impostare chi è e non è incluso in questi servizi nella pagina dell'ambito di chiamata facoltativa. La ricerca della directory è impostata su **None** per impostazione predefinita.
+![Icona del numero 6, un callout nella](media/teamscallout6.png)  **ricerca della directory** dello screenshot precedente in questa sezione è possibile abilitare la **chiamata per nome** e la chiamata per **estensione** per l'operatore automatico. È possibile impostare chi è e non è incluso in questi servizi nella pagina dell'ambito di chiamata facoltativa. La ricerca della directory è impostata su **None** per impostazione predefinita.
 
 **Chiamata per nome** Se si abilita questa opzione, i chiamanti possono cercare gli utenti dell'organizzazione usando la chiamata in **base al nome**. Si dice che il nome dell'utente e il riconoscimento vocale corrispondano a un utente. È possibile impostare chi è e non è incluso in questi servizi nella pagina dell'ambito di chiamata facoltativa. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con chiamata per nome.
 
 **Dial by Extension** Se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione immettendo l'estensione del telefono, **purché sia stato configurato un dial plan che usa le estensioni**. È possibile selezionare gli utenti elencati come disponibili o non disponibili per l' **estensione dial by** nella pagina facoltativa dell'ambito di chiamata. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l'estensione dial by.
+
+> [!NOTE]
+> Se si vogliono usare entrambe le funzionalità di chiamata per **nome** e chiamata per **estensione** , è possibile creare l'operatore automatico principale (abilitato per il **Dial-in per nome**) che richiede ai chiamanti di scegliere un'opzione di menu 3 Se si conosce l'estensione dell'utente e impostare l'opzione 3 su Tran SFER la chiamata a un operatore automatico abilitato per l'estensione dial by. 
 
 * * *
 
@@ -328,7 +325,9 @@ Se si selezionano **tutti gli utenti online**, tutti gli utenti idonei sono incl
 
 **Gruppi di utenti personalizzati** Questa opzione consente di cercare e selezionare un gruppo, una lista di distribuzione o un gruppo di sicurezza di Office 365 già creato nell'organizzazione. Gli utenti vengono aggiunti alla directory se si trovano nel gruppo di Office 365 scelto, nella lista di distribuzione o nel gruppo di sicurezza e sono **utenti online con una licenza di sistema telefonico** o ospitati in locale con Skype for Business Server. È possibile aggiungere più gruppi di Office 365, liste di distribuzione e gruppi di sicurezza alla directory.
 
+<a name="dialscope"> </a>
 
+In questa pagina è possibile configurare gli utenti dell'organizzazione che verranno elencati nella directory e disponibili per il nome della chiamata per ogni persona che chiama l'organizzazione.
 
 ![Icona del numero 2, un callout nello screenshot](media/teamscallout2.png) precedente **esclude** le opzioni in questa sezione consente di escludere utenti o gruppi di utenti specifici dalla directory dell'organizzazione.
 

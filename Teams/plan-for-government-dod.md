@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 210712e29fb64f587f2d1f2c9281e6383da11da1
-ms.sourcegitcommit: 332817f49ec1e6767334fdd4c2ec3f791020a26c
+ms.openlocfilehash: d0071afd7198c56dcfb52d3a62cb4829e0c4d020
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36767184"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435218"
 ---
 # <a name="plan-for-microsoft-365-government---dod-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-DoD
 
@@ -108,7 +108,7 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 | | Chiamata VoIP | Disponibili |
 | | Skype for business-teams Calling | Disponibili |
 | | Piani per chiamate | Non disponibile |
-| | Servizi di audioconferenza (per consentire ai partecipanti alla riunione di partecipare tramite PSTN) | Nell'arretrato governativo |
+| | Servizi di audioconferenza (per consentire ai partecipanti alla riunione di partecipare tramite PSTN) | Disponibili |
 | | Routing diretto di Microsoft Phone System | Nell'arretrato governativo |
 | | Sala di attesa per i chiamanti PSTN | Nell'arretrato governativo |
 | | Coda di chiamata | Nell'arretrato governativo |

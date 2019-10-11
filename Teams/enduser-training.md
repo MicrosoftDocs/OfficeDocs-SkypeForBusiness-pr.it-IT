@@ -19,12 +19,12 @@ f1keywords:
 - ms.teamsadmincenter.dashboard.trainingvideos.enduser
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ba589ea0e83f506c3367df96fb130a8d6d7dea57
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: ee93aa39cf0c37c3a7defd690582eb6941337ec8
+ms.sourcegitcommit: a71ad6762e18267faaaac09533bac80a181102af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483283"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439590"
 ---
 # <a name="end-user-training-for-microsoft-teams"></a>Formazione per gli utenti finali per Microsoft Teams
 
@@ -104,7 +104,7 @@ Guardare questo breve video che introduce in teams</h3>
         </a>
     </li>
  <li>
-        <a href="https://www.youtube.com/channel/UC0--6byMAe9otLougDShhUw">
+        <a href="https://aka.ms/TeamsOnDemand">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -114,7 +114,7 @@ Guardare questo breve video che introduce in teams</h3>
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Vedere il canale teams su YouTube</h3>
+                        <h3>Vedere il canale di formazione su teams su YouTube</h3>
                     </div>
                 </div>
             </div>

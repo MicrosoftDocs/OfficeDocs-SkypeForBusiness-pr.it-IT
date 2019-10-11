@@ -22,12 +22,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare un sistema telefonico (cloud PBX) per l'azienda. "
-ms.openlocfilehash: dd1a9d68646481f9508657db2634b7d3c325396d
-ms.sourcegitcommit: 1f84b0edc4e418259b9f6392370e2cc4dc70df82
+ms.openlocfilehash: 398dcd2347f51cf4f50ee6fd7d6bfc6e95fe20d6
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37328365"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37434865"
 ---
 # <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa offre il Sistema telefonico in Office 365
 
@@ -35,7 +35,7 @@ Un PBX è un sistema telefonico all'interno di un'azienda. Il sistema telefonico
   
 Con il componente aggiuntivo sistema telefonico puoi usare Skype for business per completare le attività di base, ad esempio la creazione e la ricezione di chiamate, il trasferimento di chiamate e il muting o l'esclusione delle chiamate, da quasi ovunque con l'accesso a Internet. È disponibile in tutto il mondo. 
   
-Per altre informazioni, Vedi [prezzi per il sistema telefonico](https://products.office.com/skype-for-business/cloud-pbx#requirements).
+Per altre informazioni, Vedi [prezzi per il sistema telefonico](https://products.office.com/microsoft-teams/voice-calling#requirements).
   
 ## <a name="phone-system-in-office-365-features"></a>Sistema telefonico nelle caratteristiche di Office 365
 

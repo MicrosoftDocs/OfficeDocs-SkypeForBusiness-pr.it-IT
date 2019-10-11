@@ -16,12 +16,12 @@ ms.collection:
 description: Informazioni sui report Team disponibili nell'interfaccia di amministrazione di Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: de405a89b74a5e772e0f3d58027592d2e6ae4289
-ms.sourcegitcommit: f1c4255b52576c602d528c580941404eb547bc78
+ms.openlocfilehash: fad12604373c271d41b486d54c0093b5d273c6b8
+ms.sourcegitcommit: a71ad6762e18267faaaac09533bac80a181102af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "37131576"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439546"
 ---
 # <a name="microsoft-teams-analytics-and-reporting"></a>Analisi e creazione di report di Microsoft Teams
 
@@ -47,8 +47,8 @@ Stiamo migliorando continuamente l'esperienza di creazione di report in teams e 
 |[Report sull'utilizzo di dispositivi Teams](device-usage-report.md)   |  Utenti di Windows:<br/>Utenti Mac<br/>utenti iOS<br/>Utenti di telefoni Android     |
 |[Report sull'utilizzo dell'evento teams Live](teams-live-event-usage-report.md)   |  Visualizzazioni totali<br>Ora di inizio<br>Stato evento<br>Organizzatore<br>Relatore<br>Produttore<br>Impostazione di registrazione<br>Tipo di produzione    |
 |[Report utenti bloccati PSTN di Teams](pstn-blocked-users-report.md)   |  Nome visualizzato<br>Numero di telefono<br>Motivo<br>Tipo di azione<br>Data e ora di azione   |
+|[Report pool di minuti PSTN di Teams](pstn-minute-pools-report.md) |  Paese o area geografica<br>Funzionalità (licenza) <br>Minuti totali<br>Minuti usati<br>Minuti disponibili|
 |[Report utilizzo PSTN teams-piani per chiamate](pstn-usage-report.md#calling-plans)|  Indicatore di data e ora<br>Nome utente<br>Numero di telefono<br>Tipo di chiamata <br>Chiamata a<br>In un paese o in un'area geografica <br>Chiamata da <br>Da paese o area geografica<br>Addebito<br>Valuta<br>Durata<br>Nazionali/internazionali<br>ID chiamata<br>Tipo di numero<br>Paese o area geografica<br>ID conferenza<br>Funzionalità (licenza)|
-|[Report utilizzo PSTN teams-routing diretto](pstn-usage-report.md#direct-routing)  |  Indicatore di data e ora<br>Nome visualizzato<br>Indirizzo SIP<br>Numero di telefono <br>Tipo di chiamata<br>Chiamata a<br>Ora di inizio<br>Invitare il tempo<br>Tempo di errore<br>Ora di fine<br>Durata<br>Tipo di numero<br>Bypass multimediale<br>FQDN DI SBC<br>Area di Azure<br>Tipo di evento<br>Codice SIP finale<br>Sottocodice Microsoft finale<br>Frase SIP finale<br>ID di coorelation  |
+|[Report utilizzo PSTN teams-routing diretto](pstn-usage-report.md#direct-routing)  |  Indicatore di data e ora<br>Nome visualizzato<br>Indirizzo SIP<br>Numero di telefono <br>Tipo di chiamata<br>Chiamata a<br>Ora di inizio<br>Invitare il tempo<br>Tempo di errore<br>Ora di fine<br>Durata<br>Tipo di numero<br>Bypass multimediale<br>FQDN DI SBC<br>Area di Azure<br>Tipo di evento<br>Codice SIP finale<br>Sottocodice Microsoft finale<br>Frase SIP finale<br>ID correlazione  |
 
-> [!NOTE]
-> I report teams mostrano i dati per utenti attivi e team attivi. Ad esempio, se un utente dell'organizzazione non è attivo in teams durante l'intervallo di date specificato per un report, i dati per l'utente non sono inclusi nel report.
+[!INCLUDE [teams-reports-definitions](../includes/teams-reports-definitions.md)]

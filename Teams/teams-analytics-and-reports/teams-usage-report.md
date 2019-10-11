@@ -15,12 +15,12 @@ ms.collection:
 description: Informazioni su come usare il report utilizzo teams nell'interfaccia di amministrazione di Microsoft teams per ottenere una panoramica delle attività dei team nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 512b7844f1eb659758b95b8f0924506ce6542f41
-ms.sourcegitcommit: f1c4255b52576c602d528c580941404eb547bc78
+ms.openlocfilehash: 6a31d3a6bf374e512dde0549dbbd59ed90904cd0
+ms.sourcegitcommit: a71ad6762e18267faaaac09533bac80a181102af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "37131600"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439573"
 ---
 # <a name="microsoft-teams-usage-report"></a>Report sull'utilizzo di Microsoft Teams
 
@@ -31,7 +31,7 @@ Il report sull'utilizzo di teams nell'interfaccia di amministrazione di Microsof
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo teams**.
 2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.
 
-    ![Screenshot del report utilizzo teams nell'interfaccia di amministrazione di teams con callout] (../media/teams-reports-teams-usage-with-callouts.png "Screenshot del report utilizzo teams nell'interfaccia di amministrazione di teams con callout")
+    ![Screenshot del report utilizzo teams nell'interfaccia di amministrazione teams con callout](../media/teams-reports-teams-usage-with-callouts.png "screenshot del report utilizzo teams nell'interfaccia di amministrazione teams con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
@@ -44,6 +44,8 @@ Il report sull'utilizzo di teams nell'interfaccia di amministrazione di Microsof
 |**5**   |La tabella offre una ripartizione dell'utilizzo da parte del team. <ul><li>Il **nome del team** è il nome visualizzato del team. È possibile fare clic sul nome del team per accedere alla pagina delle impostazioni del team nell'interfaccia di amministrazione di Microsoft teams. </li> <li>La **privacy** si riferisce al fatto che il team sia un team privato o un team pubblico.</li> <li>**Utenti attivi** è il numero di utenti attivi nel team nel periodo di tempo specificato.</li><li>**Guest** è il numero di Guest nel team nel periodo di tempo specificato.</li> </li> </ul>Tieni presente che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella. |
 |**6**   |Selezionare **modifica colonne** per aggiungere o rimuovere colonne nella tabella.|
 |**7**   |È possibile esportare il report in un file CSV per l'analisi offline. Fare clic su **Esporta in Excel**, quindi nella scheda **download** fare clic su **Scarica** per scaricare il report quando è pronto.<br><br>![Screenshot della scheda download che mostra i report esportati da scaricare](../media/teams-reports-export-to-csv.png)|
+
+[!INCLUDE [teams-reports-definitions](../includes/teams-reports-definitions.md)]
 
 ## <a name="related-topics"></a>Argomenti correlati
 

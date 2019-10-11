@@ -9,12 +9,12 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Dopo aver eseguito la migrazione a Skype for Business Server 2019, è necessario trasferire il server di gestione centrale nel server o nel pool di Skype for Business Server 2019 front end, prima di poter rimuovere il server legacy.
-ms.openlocfilehash: 7ba82a3748a98e2f1bc25cd7c48eceabdf76ac19
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 0e13dab272a60967c0ccc676a47954b75170eeb3
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244709"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435188"
 ---
 # <a name="move-the-legacy-central-management-server-to-skype-for-business-server-2019"></a>Trasferire il server di gestione centrale legacy in Skype for Business Server 2019
 
@@ -67,7 +67,7 @@ Usare le procedure descritte in questa sezione per preparare i server front end 
 
 1. Nel server Skype for Business Server 2019, che sarà il server di gestione centrale, accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo **RTCUniversalServerAdmins** . È inoltre necessario disporre dei diritti e delle autorizzazioni per gli utenti di amministratore del database di SQL Server. 
     
-2. Aprire Skype for Business Server Management Shell.
+2. Aprire Skype for Business Server Management Shell (Esegui come amministratore).
     
 3. In Skype for Business Server Management Shell digitare: 
     

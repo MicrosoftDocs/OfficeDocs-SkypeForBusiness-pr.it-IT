@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f1a6d27dc2e01d433f36196394f7d3b98871c597
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 81609298a580594e8c54d185d7dea3be86824139
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244778"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435112"
 ---
 # <a name="teams-only-mode-considerations"></a>Considerazioni sulla modalità solo Teams
 
@@ -36,7 +36,7 @@ Mentre migliaia di clienti hanno eseguito l'aggiornamento a Microsoft teams, esi
 > [!IMPORTANT]
 > Se si sta solo avviando la pianificazione dell'aggiornamento, assicurarsi di esaminare le risorse di pianificazione e le informazioni complete sull'aggiornamento. [Iniziare da qui](upgrade-start-here.md). 
 
-**Considerazioni sulla**coesistenza: le organizzazioni che usano già Skype for business online e/o Skype for Business Server possono introdurre team nel proprio ambiente a un ritmo che soddisfi le proprie esigenze. Le organizzazioni possono distribuire in modo incrementale Teams a un set di utenti desiderato e gli utenti che usano i team possono comunicare con utenti che usano Skype for business e viceversa. Per gestire questa esperienza, gli amministratori usano le modalità di coesistenza, che definiscono l'esperienza dell'utente finale, il comportamento di routing delle chat e delle chiamate in arrivo, nonché la programmazione di nuove riunioni in teams o Skype for business. Gli utenti possono essere federati con utenti di altre organizzazioni se l'utente viene aggiornato **solo**a teams; Tuttavia, l'esperienza migliore viene fornita quando entrambi gli utenti usano teams. Gli utenti che hanno eseguito l'aggiornamento a teams possono ancora partecipare a riunioni Skype for business. 
+**Considerazioni sulla coesistenza**: le organizzazioni che usano già Skype for business online e/o Skype for Business Server possono introdurre team nel proprio ambiente a un ritmo che soddisfi le proprie esigenze. Le organizzazioni possono distribuire in modo incrementale Teams a un set di utenti desiderato e gli utenti che usano i team possono comunicare con utenti che usano Skype for business e viceversa. Per gestire questa esperienza, gli amministratori usano le modalità di coesistenza, che definiscono l'esperienza dell'utente finale, il comportamento di routing delle chat e delle chiamate in arrivo, nonché la programmazione di nuove riunioni in teams o Skype for business. Gli utenti possono essere federati con utenti di altre organizzazioni se l'utente viene aggiornato **solo a teams**; Tuttavia, l'esperienza migliore viene fornita quando entrambi gli utenti usano teams. Gli utenti che hanno eseguito l'aggiornamento a teams possono ancora partecipare a riunioni Skype for business. 
 
 > [!NOTE]
 > Gli utenti che hanno eseguito l'aggiornamento a teams non possono comunicare solo con utenti che usano Skype for consumer.
@@ -52,18 +52,10 @@ Mentre migliaia di clienti hanno eseguito l'aggiornamento a Microsoft teams, esi
  - Office 365 Germania
  - Il tenant di Skype for business è ospitato in Corea del sud **e** l'organizzazione richiede che i dati dei team vengano archiviati in Corea del sud. Attualmente, le organizzazioni con i dati di Skype for business archiviati in Corea del sud che aggiornano a teams avranno i loro dati di team archiviati nell'area del datacenter Asia, non nell'area del centro dati della Corea del sud.
 
-**Considerazioni specifiche dell'utente**: alcuni scenari degli utenti continuano a evolversi e gli amministratori possono decidere di posticipare temporaneamente l'aggiornamento di alcuni utenti durante l'aggiornamento di altri utenti nell'organizzazione. Stiamo lavorando per affrontare questi scenari; monitorare il sito della [Roadmap di Office 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) per gli annunci.
+**Considerazioni specifiche dell'utente**: alcuni scenari degli utenti continuano a evolversi e gli amministratori possono decidere di posticipare temporaneamente l'aggiornamento di alcuni utenti durante l'aggiornamento di altri utenti nell'organizzazione. In particolare, stiamo ancora lavorando agli scenari di indirizzamento per gli utenti il cui dispositivo principale è basato su VDI. Monitorare il sito della [Roadmap di Office 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) per gli annunci.
 
 > [!NOTE]
 > Prima di procedere con la modalità solo teams, è necessario sostituire o aggiornare i dispositivi che non supportano team. 
-
-| Scenario | Note |
-|----------|-------|
-|Il dispositivo di lavoro principale dell'utente è un Mac e l'utente deve vedere la disponibilità dei colleghi in Outlook. | La presenza di Outlook in teams non è ancora completamente supportata per i dispositivi Mac. |
-| L'utente sta regolarmente effettuando riunioni con clienti o partner esterni in diverse aree internazionali. | I partecipanti esterni il cui tenant risiede in una posizione geografica diversa non vedono la chat di messaggistica istantanea durante una riunione **federata** . I partecipanti possono ancora partecipare alla riunione come utenti anonimi. |
-| L'utente sta conducendo riunioni broadcast Skype for business. |  Mentre gli eventi di teams Live (sostituendo Skype broadcast) sono già in anteprima pubblica, l'utente potrebbe dover rimanere in Skype for business fino alla disponibilità generale di eventi live di teams.
-| Il dispositivo principale dell'utente è basato su VDI. | |
-|||
 
 > [!IMPORTANT]
 > **Ricorda**: il passaggio a teams è più di una migrazione tecnica. Un aggiornamento corretto valuta sia la conformità tecnica che la disponibilità degli utenti finali. Esaminare le [linee guida](upgrade-framework.md) per l'aggiornamento di Skype for business a teams per altre informazioni sulla pianificazione di un'implementazione dell'aggiornamento a teams.  

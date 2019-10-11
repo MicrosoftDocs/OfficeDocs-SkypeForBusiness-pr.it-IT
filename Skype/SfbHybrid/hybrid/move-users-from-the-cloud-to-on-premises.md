@@ -16,12 +16,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: Informazioni su come trasferire gli utenti da Skype for business online in locale.
-ms.openlocfilehash: 16e4419bfd8ea073c04d0b3c4a402455097e4ad5
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ec3aa727753ed9ac6564712d591ab6d2beac4ebf
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36185444"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37434729"
 ---
 # <a name="move-users-from-the-cloud-to-on-premises"></a>Trasferire utenti dal cloud a locale 
 
@@ -43,11 +43,11 @@ Dopo aver spostato un utente dal cloud di nuovo in locale:
 - L'utente interagisce con la distribuzione di Skype for Business Server per le sue funzionalità. 
 - Tutti i contatti esistenti in Skype for business online o in teams vengono migrati in Skype for Business Server. I due set di contatti vengono Uniti e quindi trasferiti di nuovo in locale.  Inoltre, i contatti preesistenti in teams rimangono in teams.
 - Se l'utente usa anche teams, non sarà in grado di interagire con gli utenti di Skype for business, né potrà comunicare con gli utenti nelle organizzazioni federate.
-- Le riunioni in Skype for business online *non* vengono automaticamente migrate di nuovo in locale. Gli utenti devono ripianificare le riunioni o, se necessario, usare lo [strumento di migrazione delle riunioni](https://support.office.com/en-us/article/2b525fe6-ed0f-4331-b533-c31546fcf4d4).
+- Le riunioni in Skype for business online *non* vengono automaticamente migrate di nuovo in locale. Gli utenti devono ripianificare le riunioni o, se necessario, usare lo [strumento di migrazione delle riunioni](https://support.office.com/article/2b525fe6-ed0f-4331-b533-c31546fcf4d4).
 
 ### <a name="move-users-with-move-csuser"></a>Trasferire gli utenti con Move-CsUser
 
-Move-CsUser è disponibile nella finestra di PowerShell di Skype for Business Management Shell locale. È necessario disporre di privilegi sufficienti sia nell'ambiente locale che nel tenant di Office 365, come descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials). È possibile usare un singolo account con privilegi in entrambi gli ambienti oppure è possibile avviare una finestra di Management Shell di Skype for Business Server locale con le credenziali locali e usare il parametro per specificare le `-Credential` credenziali per un Office 365 account con il ruolo di amministratore di Office 365 necessario.
+Move-CsUser è disponibile nella finestra di PowerShell di Skype for Business Management Shell locale. È necessario disporre di privilegi sufficienti sia nell'ambiente locale che nel tenant di Office 365, come descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials). È possibile usare un singolo account con privilegi in entrambi gli ambienti oppure è possibile avviare una finestra di gestione di Skype for Business Server locale con le credenziali locali e usare il parametro per specificare le `-Credential` credenziali per un Office 365 account con il ruolo di amministratore di Office 365 necessario.
 
 Per trasferire un utente in locale usando Move-CsUser:
 
@@ -68,16 +68,16 @@ Move-CsUser -Identity username@contoso.com -Target pool.corp.contoso.com -Creden
 
 1. Aprire l'app Pannello di controllo di Skype for Business Server.
 2. Nella barra di spostamento sinistra scegliere **utenti**.
-3. Usare **trova** per individuare gli utenti a cui si vuole tornare in locale.
+3. Usare **trova** per individuare gli utenti che si desidera spostare di nuovo in locale.
 4. Selezionare gli utenti e quindi, nell'elenco a discesa delle **azioni** , fare clic **su spostati in locale**.
 5. Nella procedura guidata selezionare il pool di utenti che ospiterà l'utente e fare clic su **Avanti**.
 6. Se richiesto, accedere a Office 365 con un account che termina in onmicrosoft.com e disponga di autorizzazioni sufficienti.
-7. Fare clic su **Avanti**e **** quindi su un'altra volta per trasferire l'utente.
+7. Fare clic su **Avanti**e **quindi su un'altra** volta per trasferire l'utente.
 8. Tieni presente che i messaggi di stato relativi a successo o errore vengono forniti nella parte superiore dell'app Pannello di controllo principale, non nella procedura guidata.
 
 ### <a name="removing-teamsonly-mode"></a>Rimozione della modalità TeamsOnly
 
-Se si usa una versione precedente a Skype for business 2015 con CU8 e l'utente viene spostato di nuovo in locale in modalità TeamsOnly, è necessario rimuovere l'istanza di UpgradeToTeams prima di `TeamsUpgradePolicy` spostare l'utente in locale. Puoi concedere esplicitamente un criterio con una modalità diversa o semplicemente rimuovere l'assegnazione di criteri esistente affinché l'utente usi il criterio globale, purché il criterio globale del tenant non sia UpgradeToTeams.
+Se si usa una versione precedente a Skype for business 2015 con CU8 e l'utente viene spostato di nuovo nella modalità locale in TeamsOnly, è necessario rimuovere l'istanza di UpgradeToTeams prima di `TeamsUpgradePolicy` spostare l'utente locale. Puoi concedere esplicitamente un criterio con una modalità diversa o semplicemente rimuovere l'assegnazione di criteri esistente affinché l'utente usi il criterio globale, purché il criterio globale del tenant non sia UpgradeToTeams.
 
 Per rimuovere l'assegnazione dell'utente di TeamsUpgradePolicy, eseguire il cmdlet seguente da una finestra di PowerShell di Skype for business online:
 

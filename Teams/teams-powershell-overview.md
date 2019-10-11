@@ -14,12 +14,12 @@ ms.collection:
 description: Informazioni su come usare i controlli di PowerShell per la gestione di Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 20e85b2f45977a0a78d0d358c2e8aaa01b9257e4
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 75bb6a982db4ab3986a423cf958ad8e81105380c
+ms.sourcegitcommit: a71ad6762e18267faaaac09533bac80a181102af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235132"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439584"
 ---
 # <a name="teams-powershell-overview"></a>Panoramica di PowerShell Teams
 
@@ -79,6 +79,9 @@ Quando è stata rilasciata la versione generalmente disponibile del modulo di Po
 ## <a name="managing-policies-via-powershell"></a>Gestione dei criteri tramite PowerShell
 
 I cmdlet per la gestione dei criteri si trovano nel [modulo cmdlet di Skype for business](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
+
+> [!NOTE]
+> I cmdlet saranno disponibili nella sessione di PowerShell quando ci si connette a Skype for business online. Per altre informazioni, vedere [gestire Skype for business online con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell). 
 
 Un criterio è un gruppo di impostazioni che possono essere applicate in maniera granulare ai singoli utenti. Ogni tipo di criterio ha un proprio set di cmdlet per la creazione, la visualizzazione, l'eliminazione e l'aggiornamento dei criteri stessi e quindi l'assegnazione di tali criteri agli utenti. La struttura generale è:
 

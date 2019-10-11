@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: "Riepilogo: preparare i server e l'infrastruttura di dominio di Skype for Business Server 2019 con questo argomento. Hardware, sistema operativo, database, software, tutti i requisiti di sistema e le raccomandazioni, insieme al certificato DNS, alla condivisione di file e alle informazioni di Active Directory, sono qui per garantire un'installazione e una distribuzione di successo della server farm."
-ms.openlocfilehash: e14da71795989356f24d7dc6ae72f94a649011e5
-ms.sourcegitcommit: dc151bf4454ddec20db5cd133a42a67599c08d64
+ms.openlocfilehash: 385aabbf0a3c17abd9a9a22dfdb810720ca76660
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838119"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435165"
 ---
 # <a name="system-requirements-for-skype-for-business-server-2019"></a>Requisiti di sistema per Skype for Business Server 2019
  
@@ -106,6 +106,9 @@ Altro che i sistemi operativi elencati qui non funzionano correttamente; per fav
 <a name="Software"> </a>
 
 Ci sono alcune operazioni che è necessario installare o configurare per qualsiasi server che esegue Skype for Business Server 2019. Questi sono elencati di seguito, seguiti da requisiti aggiuntivi per ruoli server specifici.
+
+> [!IMPORTANT]
+> Skype for business 2019 supporta .NET Framework 4,8. 
   
  **Tutti i server:**
   

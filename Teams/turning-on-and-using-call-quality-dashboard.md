@@ -23,12 +23,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate. '
-ms.openlocfilehash: 25f141f30691700414c3a24e705c7d8b490fd265
-ms.sourcegitcommit: 1f84b0edc4e418259b9f6392370e2cc4dc70df82
+ms.openlocfilehash: e4125b8a8c4cdb4fddf98b52381e2959ed557a84
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37328354"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435101"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -129,11 +129,11 @@ Quando viene selezionato un campo drill-through, il dashboard passa automaticame
 
 Ad esempio, in un report drill-through di qualità delle chiamate, un utente può fare clic sulla data a cui si vuole eseguire il drill-through, che porta alla scheda posizione.
 
-    ![Screenshot: shows the drill thru report](media/CQD-drill-thru-report.png)
+![Screenshot: Mostra il report drill-through](media/CQD-drill-thru-report.png)
 
 È possibile aggiungere più date dalla scheda posizione, ad esempio l'aggiunta di 2019-09-22 alla data: 2019-09-24: 
 
-    ![Screenshot: add a date to the drill thru report](media/CQD-add-date.png)
+![Screenshot: aggiungere una data al report drill-through](media/CQD-add-date.png)
 
 > [!NOTE]
 > Non passare direttamente all'ultima scheda. Senza filtri selezionati da un precedente drill-through i risultati sarebbero troppo grandi per essere visualizzati in una tabella.
@@ -339,6 +339,8 @@ Il dashboard report di riepilogo di Call Quality dashboard include una pagina di
 ### <a name="building-data-file"></a>Creazione di file di dati
 
 Call Quality dashboard usa un file di dati dell'edificio, che consente di ottenere dettagli utili per le chiamate. La colonna subnet viene derivata espandendo la colonna Network + NetworkRange, quindi unendo la colonna subnet alla prima subnet o alla seconda colonna subnet del record di chiamata per visualizzare le informazioni su edifici, città, Paesi o aree geografiche. Il formato del file di dati caricato deve soddisfare i criteri seguenti per superare il controllo di convalida prima del caricamento:
+
+È possibile scaricare un modello di esempio [qui](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/locations-template.zip?raw=true)
   
 - Il file deve essere un file TSV (le colonne sono separate da una TABULAzione) o un file CSV (le colonne sono separate da una virgola).
 - Il file di dati non include una riga di intestazione di tabella. La prima riga del file di dati dovrebbe essere dati reali, non etichette di intestazione come "rete".
@@ -359,9 +361,7 @@ Call Quality dashboard usa un file di dati dell'edificio, che consente di ottene
 
 **Riga di esempio:**
 
-```
-192.168.1.0,USA/Seattle/SEATTLE-SEA-1,26,SEATTLE-SEA-1,Contoso,IT Termination,Engineering,Seattle,98001,US,WA,MSUS,1,0,0
-```
+`192.168.1.0,USA/Seattle/SEATTLE-SEA-1,26,SEATTLE-SEA-1,Contoso,IT Termination,Engineering,Seattle,98001,US,WA,MSUS,1,0,0`
 
 > [!IMPORTANT]
 > L'intervallo di rete può essere usato per rappresentare una SuperNet (combinazione di più subnet con un unico prefisso di routing). Tutti gli upload di nuovi edifici verranno controllati per gli intervalli sovrapposti. Se in precedenza è stato caricato un file di costruzione, è consigliabile scaricare il file corrente e caricarlo di nuovo per identificare eventuali sovrapposizioni e correggere il problema prima del caricamento. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare l'errata mappatura delle subnet agli edifici nei report. Alcune implementazioni VPN non segnalano in modo accurato le informazioni sulla subnet. Si consiglia di aggiungere voci separate per ogni indirizzo della subnet VPN in una rete a 32 bit separata per l'aggiunta di una subnet VPN al file di compilazione, anziché una voce per la subnet. Ogni riga può avere gli stessi metadati dell'edificio. Ad esempio, invece di una riga per 172.16.18.0/24, dovresti avere 256 righe, con una riga per ogni indirizzo compreso tra 172.16.18.0/32 e 172.16.18.255/32, incluso.
@@ -382,11 +382,11 @@ Call Quality dashboard usa un file di dati dell'endpoint. I valori della colonna
 
   **Ordine dei campi:**
 
-  EndpointName, EndpointModel, EndpointType, EndpointLabel1, EndpointLabel2, EndpointLabel3
+EndpointName, EndpointModel, EndpointType, EndpointLabel1, EndpointLabel2, EndpointLabel3
 
   **Riga di esempio:**
 
-  `1409W3534, Fabrikam Model 123, Laptop, IT designated 2018 Laptop, Asset Tag 5678, Purchase 2018,`  
+`1409W3534, Fabrikam Model 123, Laptop, IT designated 2018 Laptop, Asset Tag 5678, Purchase 2018,`  
 
 ## <a name="create-custom-detailed-reports"></a>Creare report dettagliati personalizzati
 

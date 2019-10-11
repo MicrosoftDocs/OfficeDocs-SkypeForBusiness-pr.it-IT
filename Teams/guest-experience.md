@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4dddd12a291ece817669114e0b836e6df56d2610
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: d89150f3e4947ee43b013132ea73ae9d38ff14ea
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242323"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37434893"
 ---
 <a name="what-the-guest-experience-is-like"></a>Aspetto dell'esperienza Guest
 =================================
@@ -32,7 +32,7 @@ Quando un ospite è invitato a partecipare a un team, riceve un messaggio di pos
     
 Tutti i membri del team vedono un messaggio nel thread del canale che annuncia che il proprietario del team ha aggiunto un Guest e fornisce il nome dell'ospite. Tutti gli utenti del team possono identificare facilmente chi è ospite. Come illustrato nello screenshot seguente di un team di esempio, un banner indica "questo team ha Guest" e viene visualizzata un'etichetta "(Guest)" accanto al nome di ogni Guest.
     
-![Screenshot che Mostra gli utenti Guest notifica banner] Lo (media/guest-experience-image2.png "screenshot mostra una parte del canale di marketing per Northwind Traders, con la notifica nel banner superiore che indica che il team ha Guest e gli utenti che sono ospiti sono identificati con l'ospite di Word accanto al nome.")
+![Schermata che Mostra gli utenti di notifica banner Guest](media/guest-experience-image2.png "screenshot mostra una parte del canale di marketing per Northwind Traders, con la notifica nel banner superiore che indica che il team ha ospiti e utenti che sono Guest sono identificati con il GUEST di Word accanto al nome.")
 
 ## <a name="comparison-of-team-member-and-guest-capabilities"></a>Confronto tra i membri del team e le funzionalità Guest
 
@@ -54,6 +54,7 @@ Nella tabella seguente viene confrontata la funzionalità Microsoft teams dispon
 |Creare un team  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
 |Individuare e partecipare a un team pubblico  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
 |Visualizzazione organigramma  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
+|Usare la traduzione in linea  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
    
 La tabella seguente mostra le funzionalità di chiamata e riunione disponibili per gli utenti guest.
 

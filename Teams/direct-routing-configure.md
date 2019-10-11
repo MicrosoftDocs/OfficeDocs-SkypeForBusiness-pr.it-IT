@@ -15,12 +15,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come configurare il routing diretto di Microsoft Phone System.
-ms.openlocfilehash: d1a763f150004b5c558dd311dd54ed6975dcb0c1
-ms.sourcegitcommit: 6b73b89f29a0eabbd9cdedf995d5325291594bac
+ms.openlocfilehash: 38938846c594cbb325193e42111ba8dff528f17f
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37018769"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37434933"
 ---
 # <a name="configure-direct-routing"></a>Configurare il routing diretto
 
@@ -111,7 +111,7 @@ Nella tabella seguente sono elencati i parametri aggiuntivi che è possibile usa
 |Obbligatorio?|Nome|Descrizione|Predefinita|Valori possibili|Tipo e restrizioni|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Sì|FQDN|Nome FQDN di SBC |Nessuno|Nome NoneFQDN, limite di 63 caratteri|Stringa, elenco dei caratteri consentiti e non consentiti nelle [convenzioni di denominazione in Active Directory per computer, domini, siti e unità organizzative](https://support.microsoft.com/help/909264)|
-|No|MediaBypass |Parametro riservato per un uso futuro. Il parametro indicato da SBC supporta il bypass multimediale e l'amministratore vuole usarlo.|Nessuno|True<br/>False|Boolean|
+|No|MediaBypass |Il parametro indicato da SBC supporta il bypass multimediale e l'amministratore vuole usarlo.|Nessuno|True<br/>False|Boolean|
 |Sì|SipSignallingPort |Porta di ascolto usata per comunicare con i servizi di routing diretto usando il protocollo Transport Layer Security (TLS).|Nessuno|Qualsiasi porta|da 0 a 65535 |
 |No|FailoverTimeSeconds |Se impostato su 10 (valore predefinito), le chiamate in uscita non risposte dal gateway entro 10 secondi vengono instradate al successivo trunk disponibile. Se non sono presenti trunk aggiuntivi, la chiamata viene automaticamente eliminata. In un'organizzazione con reti lente e risposte del gateway, che potrebbero potenzialmente causare la perdita di chiamate inutilmente. Il valore predefinito è 10.|10|Numero|Int|
 |No|ForwardCallHistory |Indica se le informazioni del registro chiamate verranno inoltrate tramite il trunk. Se abilitata, il proxy PSTN di Office 365 invia due intestazioni: History-info e riferimento. Il valore predefinito è **false** ($false). |False|True<br/>False|Boolean|
@@ -532,6 +532,11 @@ Il risultato è che il criterio vocale applicato alle chiamate di John Woods è 
 
 Il routing diretto richiede che gli utenti siano in modalità solo teams per garantire la terra delle chiamate in arrivo nel client teams. Per inserire gli utenti solo in modalità teams, assegna loro l'istanza "UpgradeToTeams" di TeamsUpgradePolicy. Se l'organizzazione usa Skype for Business Server o Skype for business online, vedere l'articolo seguente per l'interoperabilità delle informazioni tra Skype e teams: [linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype). 
 
+
+## <a name="configuring-sending-calls-directly-to-voicemail"></a>Configurazione dell'invio di chiamate direttamente alla segreteria telefonica
+
+Il routing diretto consente di terminare la chiamata a un utente e di inviarla direttamente alla segreteria telefonica degli utenti. Se si vuole inviare la chiamata direttamente alla segreteria telefonica, allegare opaque = app: voicemail all'intestazione dell'URI della richiesta. Ad esempio, "SIP: user@yourdomain.com; opaque = app: voicemail".
+In questo caso, l'utente del team non riceverà la notifica chiamante, la chiamata verrà connessa direttamente alla segreteria telefonica dell'utente.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5f2e605e86b91fc5d0ea2f22d2aec3941a3d31d9
-ms.sourcegitcommit: 299f854bbb73887ba315b09b9adf9ea9ff91e8ec
+ms.openlocfilehash: 42d15f32cbdf7326ea8daf85860bd451d93ed3f3
+ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37062951"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37434957"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -46,8 +46,8 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
 |**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
-|**Exchange Online dedicato-legacy** (È necessario eseguire la sincronizzazione con Azure AD)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
-|**Exchange locale** (È necessario eseguire la sincronizzazione con Azure AD)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
+|**Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
+|**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
 
 <sup>1</sup> Exchange 2016 CU3 e versioni successive supportate.  
 
@@ -57,7 +57,7 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 <sup>4</sup> la conservazione userà una cassetta postale ombreggiata per l'utente online per archiviare i messaggi. [Microsoft teams supporta eDiscovery per gli utenti di teams in un ambiente ibrido di Exchange](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-supports-eDiscovery-for-Teams-users-in-a/ba-p/200009).
 
-<sup>5</sup> gli utenti di teams con la cassetta postale di Exchange locale possono usare la segreteria telefonica con teams e ricevere messaggi vocali in Outlook, ma i messaggi vocali non saranno disponibili per la visualizzazione o la riproduzione all'interno del client teams.
+<sup>5</sup> gli utenti di teams con cassetta postale di Exchange locale possono usare la segreteria telefonica con teams e ricevere messaggi vocali in Outlook, ma i messaggi vocali non saranno disponibili per la visualizzazione o la riproduzione all'interno del client teams.
 
 <sup>6</sup> se uno dei proprietari di un team può aggiungere connettori, tutti gli altri membri del team saranno in grado di farlo, anche se le cassette postali vengono ospitate in locale.
 
