@@ -11,12 +11,12 @@ ms.service: msteams
 localization_priority: Normal
 ms.collection: M365-voice
 description: Questo articolo illustra i problemi noti per le sale di Microsoft teams, in base all'area delle caratteristiche.
-ms.openlocfilehash: 3e3da371a294582fc6a56db7e59615fdbe97c48b
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: eaf95f8afd470376ee4f14549b50df8b38d93d34
+ms.sourcegitcommit: e84becc101232b8017aab519378480c5dbebbb48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775195"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "37468488"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -54,7 +54,7 @@ Microsoft teams Rooms non supporta l'input HDCP, che è stato osservato in modo 
 
 ***
 
-Un televisore consumer usato come parte anteriore della visualizzazione della sala deve supportare la funzionalità CEC (Consumer Electronics Control) di HDMI per passare automaticamente a un'origine video attiva dalla modalità standby. Questa caratteristica non è supportata in tutti i televisori.
+Se si desidera che venga visualizzata una parte anteriore della visualizzazione della sala per passare automaticamente a una sorgente video attiva, ad esempio una console MTR, quando la sorgente viene riattivata dalla modalità standby, è necessario che siano soddisfatte determinate condizioni. Questa caratteristica è facoltativa ma supportata dal software Microsoft teams rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore consumer usato come parte anteriore della visualizzazione della sala deve supportare la funzionalità CEC (Consumer Electronics Control) di HDMI.  A seconda del dock o della console selezionato (che potrebbe non supportare la CEC, vedere la documentazione del supporto per il produttore), potrebbe essere necessario un controller dell'area di lavoro, ad esempio un [EXTRON HD CTL 100](https://www.extron.com/article/hdctl100ad) , per abilitare il comportamento desiderato. 
 
 ***
 
@@ -67,6 +67,9 @@ Se il dispositivo Microsoft teams Rooms perde fiducia nel dominio, non sarà pos
 La versione a 64 bit di Windows 10 Enterprise Anniversary Edition (lingua inglese, versione 1607) non è più supportata da Microsoft teams Rooms Release 3.0.12.0. 
 ***
 Microsoft teams Rooms è un'applicazione con più finestre e richiede la connessione di una facciata dello schermo della sala alla porta HDMI del dispositivo, perché l'app funzioni correttamente. Verificare che sia collegato uno schermo HDMI oppure usare un connettore HDMI fittizio se si sta testando e non è ancora stato acquistato uno schermo.
+***
+Windows 10 1903 non è ancora disponibile nei dispositivi Microsoft teams rooms da Crestron a causa di problemi con un driver di grafica.
+
 ***
 <a name="See"> </a>  
 ## <a name="see-also"></a>Vedere anche
