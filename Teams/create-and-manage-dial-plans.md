@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Impara come creare Piani di chiamata (piani per chiamate PSTN) in Office 365 e come gestirli. '
-ms.openlocfilehash: 5254a2d63abeffa0b3452ed309d49272affcaf05
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: 6c432f6494355e9ae0d6a46cc787814bee252a29
+ms.sourcegitcommit: 0d7f3c7a84584ec25a23190187215109c8756189
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36184366"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37508790"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 
@@ -43,7 +43,7 @@ Dopo aver pianificato i piani di chiamata per l'organizzazione e individuato tut
     
 2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
     
-3. If you don't have version 3.0 or higher, you need to download and install updates to Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Restart your computer when you are prompted.
+3. Se non si ha la versione 3,0 o successiva, è necessario scaricare e installare gli aggiornamenti in Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Riavviare il computer quando viene richiesto.
     
 4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
     
@@ -126,7 +126,7 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a t
 - Per testare le impostazioni effettive di un piano di chiamata, eseguire:
     
   ```
-  Test-CsEffectiveTenantDialPlan -DialedNumber 14255551234 -Identity 1849827b-a810-40a8-8f77-e94250d4680b_US_TenantDialPlanRedmond
+  Test-CsEffectiveTenantDialPlan -DialedNumber 14255550199 -Identity amos.marble@contoso.com
   ```
 
     Per altri esempi e parametri, consultare [Test-CsEffectiveTenantDialPlan](https://technet.microsoft.com/library/mt775025.aspx).

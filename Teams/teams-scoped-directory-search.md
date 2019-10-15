@@ -18,18 +18,18 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4e3b95e9d8de04abc6299a52a27cf07d95365a4f
-ms.sourcegitcommit: 1721acdd507591d16a4e766b390b997979d985e5
+ms.openlocfilehash: e4966c2ac6071f0796efeb59248ed3eeacae69a7
+ms.sourcegitcommit: e5a9f276ace283b415f0abd4da6d27433a3d7d3b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37305800"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37495284"
 ---
 # <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca di directory con ambito Microsoft Teams
 
 La ricerca di directory con ambito Microsoft teams consente alle organizzazioni di creare confini virtuali che controllano in che modo gli utenti possono trovare e comunicare con altri utenti all'interno dell'organizzazione. 
 
-Microsoft teams consente alle organizzazioni di creare visualizzazioni personalizzate della directory per gli utenti. Microsoft teams USA [Criteri rubrica di Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) per supportare queste visualizzazioni personalizzate. Dopo l'abilitazione dei criteri, i risultati restituiti dalle ricerche di altri utenti, ad esempio per avviare una chat o per aggiungere membri a un team, verranno assegnati a un ambito secondo i criteri configurati. Gli utenti non potranno cercare o individuare i team quando è attiva la ricerca con ambito. 
+Microsoft teams consente alle organizzazioni di creare visualizzazioni personalizzate della directory per gli utenti. Microsoft teams USA i [criteri di barriera delle informazioni](https://docs.microsoft.com/microsoft-365/compliance/information-barriers) per supportare queste visualizzazioni personalizzate. Dopo l'abilitazione dei criteri, i risultati restituiti dalle ricerche di altri utenti, ad esempio per avviare una chat o per aggiungere membri a un team, verranno assegnati a un ambito secondo i criteri configurati. Gli utenti non potranno cercare o individuare i team quando è attiva la ricerca con ambito. 
 
 > [!NOTE]
 > In ambienti ibridi di Exchange questa funzionalità funziona solo con le cassette postali di Exchange Online e non con le cassette postali locali.
@@ -41,14 +41,14 @@ Gli scenari che traggono vantaggio dalle ricerche di directory con ambito sono s
 - L'organizzazione ha più società all'interno del tenant che si desidera conservare separate. 
 - La tua scuola vuole limitare le chat tra docenti e studenti. 
  
-Per informazioni su come usare i criteri Rubrica, leggere i [criteri della Rubrica in Exchange Online](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies).
+Per informazioni su come usare i criteri Rubrica, leggere i [criteri di barriera delle informazioni in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/information-barriers).
 
 > [!IMPORTANT]
 > I criteri della rubrica prevedono solo una separazione virtuale degli utenti dal punto di vista della directory. Gli utenti possono comunque avviare comunicazioni con altre persone fornendo indirizzi di posta elettronica completi. È anche importante notare che tutti i dati degli utenti già memorizzati nella cache, prima dell'applicazione di criteri per la rubrica nuovi o aggiornati, rimarranno disponibili per un massimo di 30 giorni.
 
 ## <a name="turn-on-scoped-directory-search"></a>Attivare la ricerca di directory con ambito
 
-1. Usare i criteri Rubrica per configurare l'organizzazione in sottogruppi virtuali. Per altre informazioni, vedere [procedure per i criteri per la rubrica](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies).
+1. Usare i criteri di barriera delle informazioni per configurare l'organizzazione in sottogruppi virtuali. Per altre informazioni, vedere [definire i criteri di barriera delle informazioni](https://docs.microsoft.com/microsoft-365/compliance/information-barriers-policies).
 
 2. Nell'interfaccia di amministrazione di Microsoft teams selezionare impostazioni per i**Team**di **Impostazioni** > a livello di organizzazione.
 

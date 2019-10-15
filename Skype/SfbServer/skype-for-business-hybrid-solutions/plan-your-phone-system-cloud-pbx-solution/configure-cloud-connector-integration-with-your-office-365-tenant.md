@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0e2f2395-b890-4d16-aa2d-99d52438b89c
 description: Informazioni su come configurare l'integrazione con il Cloud Connector con il tenant di Office 365.
-ms.openlocfilehash: 1742fbadec95eb72e46fb6cc46f006e1baeaf8f1
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b4c70c5698601a2aa69669da3384b6806af98110
+ms.sourcegitcommit: 0d7f3c7a84584ec25a23190187215109c8756189
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190874"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37508811"
 ---
 # <a name="configure-cloud-connector-integration-with-your-office-365-tenant"></a>Configurare l'integrazione del connettore Cloud con il tenant di Office 365
  
@@ -112,7 +112,7 @@ Dopo aver aggiunto gli utenti a Office 365, abilitare gli account per il sistema
   ```
 
     > [!NOTE]
-    > È anche possibile specificare l'identità di un utente per l'indirizzo SIP, il nome dell'entità utente (UPN), il nome di dominio e il nomeutente (dominio\nomeutente) e il nome visualizzato in Active Directory ("Bob Kelly"). 
+    > Un'identità utente può essere specificata usando l'indirizzo SIP dell'utente, il nome dell'entità utente (UPN) o il nome visualizzato dell'utente in Active Directory, ad esempio "Bob Kelly". Il carattere asterisco\*() può essere usato anche con il nome visualizzato come identità dell'utente. Ad esempio, l'identità "\*rossi" restituisce tutti gli utenti che hanno un nome visualizzato che termina con il valore stringa "Smith".
   
 Puoi quindi verificare che gli utenti siano stati aggiunti e abilitati usando lo script seguente:
   
@@ -138,7 +138,7 @@ Per disabilitare le chiamate internazionali per ogni utente, eseguire il cmdlet 
 Grant-CsVoiceRoutingPolicy -PolicyName InternationalCallsDisallowed -Identity $user
 ```
 
-Per riabilitare le chiamate internazionali per ogni utente dopo la disattivazione, eseguire lo stesso cmdlet, ma modificare il valore di PolicyName **** in *InternationalCallsAllowed* .
+Per riabilitare le chiamate internazionali per ogni utente dopo la disattivazione, eseguire lo stesso cmdlet, ma modificare il valore di **PolicyName** in *InternationalCallsAllowed* .
   
 ## <a name="assign-users-to-pstn-sites"></a>Assegnare utenti a siti PSTN
 
@@ -169,7 +169,7 @@ Quando una chiamata P2P viene escalated in una conferenza PSTN, Skype for busine
     
     Tieni presente che l'assegnazione delle licenze è necessaria solo per la propagazione degli utenti nella directory Skype for business online. Assegnare una licenza di Office 365 (ad esempio E5) all'account creato, consentire fino a un'ora per la propagazione delle modifiche, verificare che gli account utente siano stati provisionati correttamente nella directory di Skype for business online eseguendo il cmdlet seguente e quindi rimuovere il licenza da questo account.
     ```
-   Gets-CsOnlineUser -Identity <UserPrincipalName>
+   Get-CsOnlineUser -Identity <UserPrincipalName>
    ```
     
 2. Avviare una sessione remota di PowerShell per tenant Azure AD utilizzando le credenziali di amministratore globale o utente e quindi eseguire il cmdlet seguente per impostare il reparto per l'account utente di Azure AD configurato nel passaggio 1 in "HybridMediationServer":

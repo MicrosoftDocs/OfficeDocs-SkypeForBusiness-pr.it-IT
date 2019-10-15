@@ -3,72 +3,6 @@
 
 
 
-## <a name="week-of-september-02-2019"></a>Settimana del 02 settembre 2019
-
-
-| Pubblicato in |Titolo argomento | Modificare |
-|------|------------|--------|
-| 9/3/2019 | [Domande frequenti: aggiornamento da Skype for business a Microsoft Teams](/MicrosoftTeams/faq-journey) | modificato |
-| 9/3/2019 | [Gestire le impostazioni di Microsoft teams per l'organizzazione](/MicrosoftTeams/enable-features-office-365) | modificato |
-| 9/3/2019 | [Pianificare la spostamento dei team di StaffHub in turni in Microsoft Teams](/MicrosoftTeams/expand-teams-across-your-org/shifts/plan-to-move-staffhub-teams-to-shifts-in-teams) | modificato |
-| 9/3/2019 | [Ottenere client per Microsoft Teams](/MicrosoftTeams/get-clients) | modificato |
-| 9/3/2019 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
-| 9/3/2019 | [Gestire l'accesso esterno (Federazione) in Microsoft Teams](/MicrosoftTeams/manage-external-access) | modificato |
-| 9/3/2019 | [Gestire i criteri di feedback in Microsoft Teams](/MicrosoftTeams/manage-feedback-policies-in-teams) | modificato |
-| 9/3/2019 | [Gestire gli account delle risorse in teams](/MicrosoftTeams/manage-resource-accounts) | modificato |
-| 9/3/2019 | [Office 365 Business Premium](/MicrosoftTeams/teams-add-on-licensing/office-365-business-premium) | modificato |
-| 9/5/2019 | [Procedure consigliate per organizzare team in Microsoft Teams](/MicrosoftTeams/best-practices-organizing) | modificato |
-| 9/5/2019 | [Espandere Microsoft teams nell'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/expand-teams-across-your-organization-landing-page) | modificato |
-| 9/5/2019 | [Iniziare a usare team per organizzazioni sanitarie](/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc) | modificato |
-| 9/5/2019 | [Teams per enti pubblici](/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page) | modificato |
-| 9/5/2019 | [Introduzione ai modelli di teams in Retail](/MicrosoftTeams/get-started-with-retail-teams-templates) | modificato |
-| 9/5/2019 | [Gestire le impostazioni delle riunioni](/MicrosoftTeams/meeting-settings-in-teams) | modificato |
-| 9/5/2019 | [Pianificare le distribuzioni di Microsoft 365 Government-DoD-Microsoft Teams](/MicrosoftTeams/plan-for-government-dod) | modificato |
-| 9/5/2019 | [Pianificare l'implementazione di Microsoft 365 Government-GCC High Deployment-Microsoft Teams](/MicrosoftTeams/plan-for-government-gcc-high) | modificato |
-| 9/5/2019 | [Pianificare Microsoft 365 Government-distribuzioni di GCC-Microsoft Teams](/MicrosoftTeams/plan-for-government-gcc) | modificato |
-| 9/5/2019 | [Distribuire le sale di Microsoft teams con Exchange Online](/MicrosoftTeams/room-systems/with-exchange-online) | modificato |
-| 9/5/2019 | [Disponibilità in Bosnia &amp; Erzegovina](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-bosniaherzegovina) | modificato |
-| 9/5/2019 | [Disponibilità in Brasile](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-brazil) | modificato |
-| 9/5/2019 | [Disponibilità in Cina](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-china) | modificato |
-| 9/5/2019 | [Disponibilità in Egitto](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-egypt) | modificato |
-| 9/5/2019 | [Disponibilità in Honduras](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-honduras) | modificato |
-| 9/5/2019 | [Disponibilità in India](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-india) | modificato |
-| 9/5/2019 | [Disponibilità in Indonesia](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-indonesia) | modificato |
-| 9/5/2019 | [Disponibilità in Giordania](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-jordan) | modificato |
-| 9/5/2019 | [Disponibilità in Kenya](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-kenya) | modificato |
-| 9/5/2019 | [Disponibilità in Lettonia](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-latvia) | modificato |
-| 9/5/2019 | [Disponibilità in Pakistan](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-pakistan) | modificato |
-| 9/5/2019 | [Disponibilità in Russia](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-russia) | modificato |
-| 9/5/2019 | [Disponibilità in Arabia Saudita](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-saudi-arabia) | modificato |
-| 9/5/2019 | [Disponibilità in Uruguay](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-uruguay) | modificato |
-| 9/5/2019 | [Disponibilità in Vietnam](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-vietnam) | modificato |
-| 9/5/2019 | [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) | modificato |
-| 9/5/2019 | [Configurare e gestire la moderazione del canale in Microsoft Teams](/MicrosoftTeams/manage-channel-moderation-in-teams) | modificato |
-| 9/5/2019 | [Distribuire Gestione di Microsoft teams Rooms con Azure monitor](/MicrosoftTeams/room-systems/azure-monitor-deploy) | modificato |
-| 9/5/2019 | [Gestire i dispositivi Microsoft teams Rooms con Azure monitor](/MicrosoftTeams/room-systems/azure-monitor-manage) | modificato |
-| 9/5/2019 | [Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML](/MicrosoftTeams/room-systems/content-camera) | modificato |
-| 9/5/2019 | [Considerazioni sull'Unione di domini di Skype room System](/MicrosoftTeams/room-systems/domain-joining-considerations) | modificato |
-| 9/5/2019 | [Problemi noti](/MicrosoftTeams/room-systems/known-issues) | modificato |
-| 9/5/2019 | [Usare lo strumento di ripristino di Microsoft teams rooms](/MicrosoftTeams/room-systems/recovery-tool) | modificato |
-| 9/5/2019 | [Requisiti di Microsoft teams rooms](/MicrosoftTeams/room-systems/requirements) | modificato |
-| 9/5/2019 | [Configurare gli account per le sale di Microsoft Teams](/MicrosoftTeams/room-systems/room-systems-v2-configure-accounts) | modificato |
-| 9/5/2019 | [Manutenzione e operazioni di Microsoft teams rooms](/MicrosoftTeams/room-systems/room-systems-v2-operations) | modificato |
-| 9/5/2019 | [Distribuire le sale di Microsoft Teams](/MicrosoftTeams/room-systems/room-systems-v2) | modificato |
-| 9/5/2019 | [Pianificare le sale di Microsoft Teams](/MicrosoftTeams/room-systems/skype-room-systems-v2-0) | modificato |
-| 9/5/2019 | [Licenze di Microsoft teams rooms](/MicrosoftTeams/room-systems/skype-room-systems-v2) | modificato |
-| 9/5/2019 | [Panoramica della gestione per le sale di Microsoft Teams](/MicrosoftTeams/room-systems/skype-room-systems-v3) | modificato |
-| 9/5/2019 | [Preparare l'ambiente](/MicrosoftTeams/room-systems/srs-v2-prep) | modificato |
-| 9/5/2019 | [Supporto per la versione](/MicrosoftTeams/room-systems/srs2-lifecycle-support) | modificato |
-| 9/5/2019 | [Note sulla versione](/MicrosoftTeams/room-systems/srs2-release-note) | modificato |
-| 9/5/2019 | [Gestire gli aggiornamenti di Windows per Microsoft teams rooms](/MicrosoftTeams/room-systems/updates) | modificato |
-| 9/5/2019 | [Distribuire le sale di Microsoft teams con Exchange in locale](/MicrosoftTeams/room-systems/with-exchange-on-premises) | modificato |
-| 9/5/2019 | [Distribuire le sale di Microsoft teams con Office 365](/MicrosoftTeams/room-systems/with-office-365) | modificato |
-| 9/5/2019 | [Distribuire le sale di Microsoft teams con Skype for Business Server](/MicrosoftTeams/room-systems/with-skype-for-business-server-2015) | modificato |
-| 9/5/2019 | [Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML](/MicrosoftTeams/room-systems/xml-config-file) | modificato |
-| 9/6/2019 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | modificato |
-| 9/6/2019 | [Problemi noti di Microsoft Teams](/MicrosoftTeams/known-issues) | modificato |
-
-
 ## <a name="week-of-september-09-2019"></a>Settimana del 9 settembre 2019
 
 
@@ -189,3 +123,48 @@
 | 10/4/2019 | [Gestire gli account delle risorse in teams](/MicrosoftTeams/manage-resource-accounts) | modificato |
 | 10/4/2019 | [Esempio di piccola impresa: configurare un operatore automatico](/MicrosoftTeams/tutorial-org-aa) | modificato |
 | 10/4/2019 | [Cosa sono gli operatori automatici cloud?](/MicrosoftTeams/what-are-phone-system-auto-attendants) | modificato |
+
+
+## <a name="week-of-october-07-2019"></a>Settimana del 07 ottobre 2019
+
+
+| Pubblicato in |Titolo argomento | Modificare |
+|------|------------|--------|
+| 10/8/2019 | [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant) | modificato |
+| 10/8/2019 | [Spostare i team di StaffHub in turni in Microsoft Teams](/MicrosoftTeams/expand-teams-across-your-org/shifts/move-staffhub-teams-to-shifts-in-teams) | modificato |
+| 10/8/2019 | [Esempio di piccola impresa: configurare un operatore automatico](/MicrosoftTeams/tutorial-org-aa) | modificato |
+| 10/8/2019 | [Analisi e creazione di report di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/teams-reporting-reference) | modificato |
+| 10/9/2019 | [Interazione tra Exchange e Microsoft Teams](/MicrosoftTeams/exchange-teams-interact) | modificato |
+| 10/9/2019 | [Problemi noti di Microsoft Teams](/MicrosoftTeams/known-issues) | modificato |
+| 10/9/2019 | [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant) | modificato |
+| 10/9/2019 | [Gestire i dispositivi in Microsoft Teams](/MicrosoftTeams/device-management) | modificato |
+| 10/9/2019 | [Configurare il routing diretto](/MicrosoftTeams/direct-routing-configure) | modificato |
+| 10/9/2019 | [Introduzione alla messaggistica sicura per le organizzazioni sanitarie](/MicrosoftTeams/expand-teams-across-your-org/healthcare/messaging-policies-hc) | modificato |
+| 10/9/2019 | [Aspetto dell'esperienza Guest](/MicrosoftTeams/guest-experience) | modificato |
+| 10/9/2019 | [Requisiti hardware per l'app Microsoft Teams](/MicrosoftTeams/hardware-requirements-for-the-teams-app) | modificato |
+| 10/9/2019 | [Ecco cosa offre il Sistema telefonico in Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system) | modificato |
+| 10/9/2019 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
+| 10/9/2019 | [Gestire gli account delle risorse in teams](/MicrosoftTeams/manage-resource-accounts) | modificato |
+| 10/9/2019 | [Pianificare le distribuzioni di Microsoft 365 Government-DoD-Microsoft Teams](/MicrosoftTeams/plan-for-government-dod) | modificato |
+| 10/9/2019 | [Pianificare l'implementazione di Microsoft 365 Government-GCC High Deployment-Microsoft Teams](/MicrosoftTeams/plan-for-government-gcc-high) | modificato |
+| 10/9/2019 | [Pianificare la gestione del ciclo di vita in teams-Microsoft Teams](/MicrosoftTeams/plan-teams-lifecycle) | modificato |
+| 10/9/2019 | [Manutenzione e operazioni di Microsoft teams rooms](/MicrosoftTeams/room-systems/room-systems-v2-operations) | modificato |
+| 10/9/2019 | [Note sulla versione](/MicrosoftTeams/room-systems/srs2-release-note) | modificato |
+| 10/9/2019 | [Sistema telefonico-licenze per utenti virtuali](/MicrosoftTeams/teams-add-on-licensing/virtual-user) | modificato |
+| 10/9/2019 | [Manifesti di soluzioni per la telefonia e l'architettura IT di Microsoft Teams](/MicrosoftTeams/teams-architecture-solutions-posters) | modificato |
+| 10/9/2019 | [Esperienza e conformità del client teams alle modalità di coesistenza](/MicrosoftTeams/teams-client-experience-and-conformance-to-coexistence-modes) | modificato |
+| 10/9/2019 | [Considerazioni sulla modalità solo Teams](/MicrosoftTeams/teams-only-mode-considerations) | modificato |
+| 10/9/2019 | [Attivare e usare il dashboard qualità chiamata](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard) | modificato |
+| 10/9/2019 | [Aggiornamento di base\| di PowerShell\| Microsoft teams Grant aggiornamento dei criteri di interoperabilità](/MicrosoftTeams/upgrade-basic-powershell) | modificato |
+| 10/9/2019 | [Formazione per gli utenti finali per Microsoft Teams](/MicrosoftTeams/enduser-training) | modificato |
+| 10/9/2019 | [Requisiti di Microsoft teams rooms](/MicrosoftTeams/room-systems/requirements) | modificato |
+| 10/9/2019 | [Analisi e creazione di report di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/teams-reporting-reference) | modificato |
+| 10/9/2019 | [Report sull'utilizzo di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/teams-usage-report) | modificato |
+| 10/9/2019 | [Report attività utente di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/user-activity-report) | modificato |
+| 10/9/2019 | [Panoramica di PowerShell Teams](/MicrosoftTeams/teams-powershell-overview) | modificato |
+| 10/10/2019 | [Gestire i criteri di autorizzazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies) | modificato |
+| 10/10/2019 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
+| 10/11/2019 | [Gestire l'accesso esterno (Federazione) in Microsoft Teams](/MicrosoftTeams/manage-external-access) | modificato |
+| 10/11/2019 | [Problemi noti](/MicrosoftTeams/room-systems/known-issues) | modificato |
+| 10/11/2019 | [Requisiti di Microsoft teams rooms](/MicrosoftTeams/room-systems/requirements) | modificato |
+| 10/11/2019 | [Supporto per la versione](/MicrosoftTeams/room-systems/srs2-lifecycle-support) | modificato |
