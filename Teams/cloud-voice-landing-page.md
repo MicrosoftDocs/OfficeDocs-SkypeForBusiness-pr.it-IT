@@ -8,7 +8,6 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 - M365-voice
 ms.reviewer: crowe
@@ -18,12 +17,12 @@ search.appverid: MET150
 description: Pagina di destinazione per la distribuzione di cloud Voice in teams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 92e32950526f12c5da1856ce390ee3e532892681
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: f60159d2d9d65afd3837a0b48b82ac7e13b8e0df
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483866"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37515833"
 ---
 # <a name="cloud-voice-in-microsoft-teams"></a>Cloud Voice in Microsoft Teams
 
@@ -107,7 +106,7 @@ Per impostazione predefinita, tutte le chiamate in uscita usano il numero di tel
 
 ### <a name="phone-numbers-from-microsoft"></a>Numeri di telefono da Microsoft
 
-Microsoft ha due tipi di numeri di telefono disponibili ** : i numeri di abbonato (utente), che possono essere assegnati agli utenti dell'organizzazione e i numeri di *servizio* , disponibili come numeri di servizio a pedaggio e a numero verde, che hanno una chiamata simultanea più alta capacità rispetto ai numeri di abbonato e può essere assegnata a servizi come audioconferenza, operatori automatici o code di chiamata.
+Microsoft ha due tipi di numeri di telefono disponibili: i numeri di *abbonato* (utente), che possono essere assegnati agli utenti dell'organizzazione e i numeri di *servizio* , disponibili come numeri di servizio a pedaggio e a numero verde, che hanno una chiamata simultanea più alta capacità rispetto ai numeri di abbonato e può essere assegnata a servizi come audioconferenza, operatori automatici o code di chiamata.
 
 |Chiedi a te stesso|Azione |
 | :------------|:-------|

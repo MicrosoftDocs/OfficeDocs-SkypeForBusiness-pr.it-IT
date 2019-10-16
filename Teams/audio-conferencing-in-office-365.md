@@ -9,9 +9,8 @@ ms.assetid: a5a696c3-d321-4e61-9aad-e3a87041196e
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 - M365-voice
+- M365-collaboration
 search.appverid: MET150
 audience: admin
 appliesto:
@@ -21,12 +20,12 @@ localization_priority: Normal
 f1keywords: ms.teamsadmincenter.audioconferencing.overview
 ms.custom:
 - Audio Conferencing
-ms.openlocfilehash: 87ce2422fd4d14b5b9e2c90921b0fe84630f2887
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: cf8aa0de368803fa957667e239ba6ed0b161c0cb
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235749"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517044"
 ---
 # <a name="audio-conferencing-in-office-365"></a>Audioconferenza in Office 365
 I servizi di audioconferenza in Office 365 consentono agli utenti di effettuare una chiamata alle riunioni dai loro telefoni. I servizi di audioconferenza permettono fino a 250 partecipanti al telefono.
@@ -53,7 +52,7 @@ Con i servizi di audioconferenza, gli utenti possono usare numeri di telefono a 
 
 I numeri di telefono verdi (numeri di servizio) sono disponibili, ma solo in alcuni paesi/aree geografiche. Per vedere le informazioni disponibili nel proprio paese o nella propria area geografica, vedere [disponibilità di paesi e aree geografiche per i piani di audioconferenza e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
 
-Dopo aver deciso di usare i servizi di audioconferenza per l'organizzazione, è necessario acquistare una **** licenza di audioconferenza per ogni persona dell'organizzazione che sta per pianificare/ospitare una riunione audio.
+Dopo aver deciso di usare i servizi di audioconferenza per l'organizzazione, è necessario acquistare una **licenza di audioconferenza per** ogni persona dell'organizzazione che sta per pianificare/ospitare una riunione audio.
 
 ## <a name="how-do-conferencing-bridges-work"></a>Come funzionano i Bridge di conferenza?
 Quando si configura una conferenza audio per Skype for business o Microsoft teams, si otterrà un Bridge per audioconferenza. Un Bridge per i servizi di conferenza può contenere uno o più numeri di telefono. Il numero di telefono impostato verrà incluso nelle app riunioni per Skype for business e Microsoft teams. È possibile [modificare i numeri di telefono del Bridge per](change-the-phone-numbers-on-your-audio-conferencing-bridge.md)i servizi di conferenza ed è anche possibile [modificare altre impostazioni di Bridge per audioconferenza](change-the-settings-for-an-audio-conferencing-bridge.md). 

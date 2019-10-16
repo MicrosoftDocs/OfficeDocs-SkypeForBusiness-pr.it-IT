@@ -12,16 +12,16 @@ ms.reviewer: rowille
 description: Scaricare il sito Web Enablement PlayBook per pianificare l'implementazione dei team e accelerare e ottimizzare l'adozione, la percezione della qualità e la soddisfazione degli utenti.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
+- M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 17b73629aa874232a449605b45f97ea10e445204
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 760beb6b5f786367c76ce9ac2b66d808fa10c6de
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233028"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516763"
 ---
 # <a name="deploy-my-service"></a>Distribuire il servizio personale
 
@@ -42,7 +42,7 @@ Completando le attività in questo PlayBook, l'organizzazione può:
 -   Ridurre le esigenze di supporto e aumentare la soddisfazione degli utenti.
 
 > [!NOTE]
-> Questo articolo e il PlayBook associato non sono progettati per descrivere ogni passaggio di configurazione tecnica necessario per l'abilitazione del servizio o per fornire un tono di chiamata a un sito specifico. Si occupano invece delle attività e delle attività consigliate per gli utenti a bordo in modo semplice e consentono di iniziare a usare i carichi di lavoro vocali di teams attraverso una transizione veloce e fluida con un tasso di adozione elevato, riducendo al minimo i requisiti di supporto. Per informazioni tecniche su come configurare al meglio l'ambiente per i team Voice, vedere gli elenchi di controllo onboarding per la [configurazione dei workload vocali](onboarding-checklist-configure-cloud-voice-workloads-in-Microsoft-Teams.md)di teams, [configurazione del routing diretto in teams](onboarding-checklist-configure-direct-routing-in-Microsoft-Teams.md), funzionalità di base di [Teams](onboarding-checklist-configure-microsoft-teams-core-capabilities.md), [Networking per Teams](onboarding-checklist-configure-networking.md)e [Abilitazione di Office 365](onboarding-checklist-enable-office-365.md).
+> Questo articolo e il PlayBook associato non sono progettati per descrivere ogni passaggio di configurazione tecnica necessario per l'abilitazione del servizio o per fornire un tono di chiamata a un sito specifico. Si occupano invece delle attività e delle attività consigliate per gli utenti a bordo in modo semplice e consentono di iniziare a usare i carichi di lavoro vocali di teams attraverso una transizione veloce e fluida con un tasso di adozione elevato, riducendo al minimo i requisiti di supporto. Per informazioni tecniche su come configurare al meglio l'ambiente per i team Voice, vedere gli elenchi di controllo onboarding per la [configurazione dei workload vocali di teams](onboarding-checklist-configure-cloud-voice-workloads-in-Microsoft-Teams.md), [configurazione del routing diretto in teams](onboarding-checklist-configure-direct-routing-in-Microsoft-Teams.md), [funzionalità di base di teams](onboarding-checklist-configure-microsoft-teams-core-capabilities.md), [Networking per Teams](onboarding-checklist-configure-networking.md)e [Abilitazione di Office 365](onboarding-checklist-enable-office-365.md).
 
 <!--ENDOFSECTION-->
 
@@ -65,7 +65,7 @@ Lo scopo del PlayBook è quello di affrontare i fattori che influenzano la perce
 
 Il [sito Web Enablement PlayBook for Voice (PlayBook)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/site-enablement-playbook-for-voice-(playbook).xlsx?raw=true) è una cartella di lavoro di Microsoft Excel. Ognuna di queste cinque aree di interesse è un foglio separato nella cartella di lavoro e ogni attività di distribuzione è raggruppata su uno di questi fogli.
 
-![Screenshot del PlayBook per l'abilitazione del sito] (media/deploy-my-service-image1.png "Screenshot del PlayBook")
+![Screenshot della schermata di abilitazione del sito PlayBook](media/deploy-my-service-image1.png "del PlayBook")
 
 > [!NOTE]
 > Creerai un'istanza distinta del PlayBook per ogni sito in ambito per l'implementazione del team.
@@ -84,7 +84,7 @@ Indipendentemente dalle dimensioni e dalla complessità della posizione, l'abili
 
 4. Immettere il **nome del sito, il codice del sito**e la **Data di avvio pianificata**, come illustrato di seguito. Questo è un passaggio cruciale, perché regola le scadenze consigliate per ogni attività nel PlayBook.
 
-   ![Esempio con nome sito, codice sito e data di avvio pianificata] (media/deploy-my-service-image2.png "Esempio con il nome del sito di New York, il codice del sito NY01 e la data di avvio prevista del 20-mar-18")
+   ![Esempio con nome sito, codice sito e esempio di data di lancio pianificato](media/deploy-my-service-image2.png "con nome sito di New York, codice del sito NY01 e data di avvio prevista del 20-mar-18")
 
 5. Esaminare ogni attività, eseguire le azioni necessarie e aggiornare lo stato man mano che si cammina nella sequenza temporale. Lo stato è rappresentato graficamente, come descritto di seguito:
   
@@ -94,7 +94,7 @@ Indipendentemente dalle dimensioni e dalla complessità della posizione, l'abili
 
 6. Lo stato viene arrotolato all'interno di ogni sezione e l'intestazione di sezione è formattata con uno di questi indicatori di stato. Anche **lo stato settimanale** viene aggiornato automaticamente.
 
-![Screenshot dei rilevamenti settimanali di stato nel PlayBook] (media/deploy-my-service-image6.png "Screenshot dei rilevamenti settimanali di stato nel PlayBook")
+![Screenshot dei rilevamenti settimanali di stato nella](media/deploy-my-service-image6.png "schermata del PlayBook dello stato settimanale roll-up nel PlayBook")
 
 > [!TIP]
 > Ripetere i passaggi descritti sopra per tutte le posizioni presenti.

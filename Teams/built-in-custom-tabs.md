@@ -8,19 +8,18 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 ms.reviewer: lucarras
 search.appverid: MET150
 description: Informazioni su come usare le schede predefinite e personalizzate per includere funzionalità come le conversazioni, i file, le mappe e altro ancora.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c8fb0fcd1fab0fc51319b72d5557caac836bcb51
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 9a9a78f2b611bd586b0e465f8e5045484417d07f
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237194"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517036"
 ---
 <a name="use-built-in-and-custom-tabs-in-microsoft-teams"></a>Usare le schede predefinite e personalizzate in Microsoft Teams
 ==================================================
@@ -48,7 +47,7 @@ I proprietari e i membri del team possono aggiungere schede a un canale, una cha
 
 - Per aggiungere un sito Web, l'URL deve iniziare con un prefisso **https** in modo che le informazioni scambiate rimangano sicure.
 
-- Istruzioni dettagliate vengono fornite quando un membro del team prova ad aggiungere una scheda personalizzata al canale o alla chat. Quando una scheda personalizzata viene aggiunta a un canale, viene creata una **conversazione** di tabulazione che consente ai membri del team di avere discussioni mirate sul contenuto.
+- Istruzioni dettagliate vengono fornite quando un membro del team prova ad aggiungere una scheda personalizzata al canale o alla chat. Quando una scheda personalizzata viene aggiunta a un canale, viene creata una **conversazione di tabulazione** che consente ai membri del team di avere discussioni mirate sul contenuto.
 
     ![Screenshot di una scheda personalizzata con una conversazione di tabulazione a destra](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image3.png)
 

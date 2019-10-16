@@ -11,17 +11,17 @@ search.appverid: MET150
 ms.reviewer: rowille
 description: Misurare i risultati dei servizi di audioconferenza, del sistema telefonico con i piani di chiamata o del sistema telefonico Direct routing Deployment e verificare che siano stati raggiunti gli esiti desiderati.
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
+- M365-voice
 - M365-collaboration
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a84f0d38afbac74b296ccdfed626d6f8830d46a9
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 918869697b5cd63580a654b9d0051fdac35c44f4
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244167"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517076"
 ---
 # <a name="define-my-success"></a>Definire il successo
 

@@ -11,16 +11,15 @@ search.appverid: MET150
 description: Informazioni su come creare e gestire un team a livello di organizzazione in teams.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 901f0dd116bf152433d226e0c131f795675784cc
-ms.sourcegitcommit: f2cdb2c1abc2c347d4dbdca659e026a08e60ac11
+ms.openlocfilehash: db7caa3879e016b6e8453ad151785578d2391dd1
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493113"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516651"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -28,7 +27,7 @@ I team a livello di organizzazione rappresentano un modo automatico per consenti
 
 Con i team a livello di organizzazione, gli amministratori globali possono facilmente creare un team pubblico che si occupa di ogni utente dell'azienda e mantiene l'appartenenza aggiornata con Active Directory quando gli utenti partecipano e lasciano l'organizzazione. Solo gli amministratori globali possono creare team a livello di organizzazione e attualmente un team a livello di organizzazione è limitato alle organizzazioni che non hanno più di 5.000 utenti. Esiste anche un limite di cinque team per tenant a livello di organizzazione. Se questi requisiti sono soddisfatti, gli amministratori globali vedranno l' **intera organizzazione** come opzione quando scelgono di creare un team **da zero** durante la creazione di un team. 
 
-Screenshot ![dell'opzione a livello di organizzazione per creare un team a livello di organizzazione] Screenshot (media/create-org-wide-team.png "dell'opzione a livello di organizzazione per creare un team a livello di organizzazione")
+Screenshot ![dell'opzione a livello di organizzazione per creare una](media/create-org-wide-team.png "schermata del team a livello di organizzazione dell'opzione a livello di organizzazione per creare un team a livello di organizzazione")
 
 Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Al team vengono aggiunti anche utenti senza licenza. La prima volta che un utente senza licenza accede a teams, all'utente viene assegnata una licenza per la versione di valutazione cloud commerciale di Microsoft teams. Per altre informazioni sulla licenza di valutazione, vedere [gestire l'offerta di valutazione cloud commerciale teams](iw-trial-teams.md). 
 

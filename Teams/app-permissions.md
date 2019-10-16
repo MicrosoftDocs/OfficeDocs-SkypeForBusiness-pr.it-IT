@@ -8,7 +8,7 @@ ms.topic: conceptual
 audience: admin
 ms.service: msteams
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
+- M365-voice
 - M365-collaboration
 search.appverid: MET150
 ms.reviewer: rowille
@@ -16,12 +16,12 @@ description: Informazioni sulle app per i dati e le autorizzazioni richieste dal
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4e841943a4a6bf5f6fcc242d83f4a02d4ca1aa06
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 4a5efc1ec447d1aeda3c42841752b6fd6e1f1938
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36241974"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516785"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Autorizzazioni e considerazioni sulle app di Microsoft Teams
 
@@ -168,7 +168,7 @@ REPLYTO_CONNECTOR_MESSAGE. Alcuni connettori supportano i messaggi di azione, ch
 
 ## <a name="outgoing-webhooks"></a>Webhook in uscita
 
-I webhook in *uscita* vengono creati al volo dai proprietari del team o dai membri del team se sideload è abilitato per un tenant. Non sono funzionalità delle app Teams; Queste informazioni sono incluse per la completezza.
+I *webhook in uscita* vengono creati al volo dai proprietari del team o dai membri del team se sideload è abilitato per un tenant. Non sono funzionalità delle app Teams; Queste informazioni sono incluse per la completezza.
 
 ### <a name="required-permissions"></a>Autorizzazioni necessarie
 

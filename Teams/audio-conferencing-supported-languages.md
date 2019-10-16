@@ -10,9 +10,8 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 - M365-voice
+- M365-collaboration
 audience: Admin
 appliesto:
 - Skype for Business
@@ -22,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Trovare la lingua dei servizi di conferenza telefonica con accesso esterno per ogni paese o area geografica e l'ID della lingua assegnati (en-US, da-DK, de-DE e così via)
-ms.openlocfilehash: 9a34afb138491f28458b80474600daebbd767696
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b49b5e942229244d2a37fb632badcb580f98ca61
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36182278"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37515759"
 ---
 # <a name="audio-conferencing-supported-languages"></a>Lingue supportate per i servizi di audioconferenza
 
@@ -87,7 +86,7 @@ Quando si configura e si configurano i servizi di audioconferenza in Office 365,
    
 Se si cercano paesi o aree geografiche in cui è possibile acquistare servizi di audioconferenza, vedere [disponibilità per i servizi di audioconferenza e per i piani di chiamata](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
   
-Se si cercano paesi o aree geografiche specifiche con numeri di telefono per i servizi di audioconferenza, vedere [numeri di telefono per i](phone-numbers-for-audio-conferencing-in-teams.md) servizi di audioconferenza in Microsoft teams o [numeri di telefono per le conferenze audio in Skype for business online](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing).
+Se si cercano paesi o aree geografiche specifiche con numeri di telefono per i servizi di audioconferenza, vedere [numeri di telefono per i servizi di audioconferenza in Microsoft teams](phone-numbers-for-audio-conferencing-in-teams.md) o [numeri di telefono per le conferenze audio in Skype for business online](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing).
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 

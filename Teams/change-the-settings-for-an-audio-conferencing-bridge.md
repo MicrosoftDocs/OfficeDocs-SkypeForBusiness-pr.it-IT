@@ -10,9 +10,8 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 - M365-voice
+- M365-collaboration
 audience: Admin
 appliesto:
 - Skype for Business
@@ -22,12 +21,12 @@ f1keywords: ms.teamsadmincenter.audioconferencing.bridgesettings
 ms.custom:
 - Audio Conferencing
 description: 'Ecco i passaggi necessari per modificare le impostazioni per un Bridge di conferenza usato per richiedere ai chiamanti e raccogliere nomi e pin per gli organizzatori della riunione quando non usano le app Skype for business o Microsoft teams. '
-ms.openlocfilehash: 97c1439325e5a9a00cacfa26e97078d2c2a91014
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: b7ac85729bafe9d27f9e33cfa22597811b8d3d0b
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "36183793"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516953"
 ---
 # <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un bridge per audioconferenza
 
@@ -70,7 +69,7 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
 
  **Impostare l'esperienza della riunione quando i chiamanti partecipano a una riunione**
     
-1. Nell'interfaccia **di amministrazione di Skype for business**, nella barra di spostamento sinistra **** > , vai a**impostazioni di Microsoft Bridge**per audioconferenza.
+1. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, vai a**impostazioni di Microsoft Bridge**per **** > audioconferenza.
     
 2. Nella pagina **Impostazioni Bridge Microsoft** , in **esperienza di partecipazione a una riunione**, selezionare:
     
@@ -92,7 +91,7 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
     
 2. Accedere all'interfaccia di **Amministrazione** > di Microsoft 365**Skype for business**.
     
-3. Nell'interfaccia **di amministrazione di Skype for business**, nella barra di spostamento sinistra, **** > Vai a**impostazioni di Microsoft Bridge**per audioconferenza.
+3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, **Vai a** > **impostazioni di Microsoft Bridge**per audioconferenza.
     
 4. Nella pagina **Impostazioni Bridge Microsoft** , in **sicurezza**, immettere il numero di cifre desiderato per il PIN nell'elenco **lunghezza PIN** e quindi fare clic su **Salva**.
     
@@ -105,7 +104,7 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
     
 2. Accedere all'interfaccia di **Amministrazione** > di Microsoft 365**Skype for business**.
     
-3. Nell'interfaccia **di amministrazione di Skype for business**, nella barra di spostamento sinistra, **** > Vai a**impostazioni di Microsoft Bridge**per audioconferenza.
+3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, **Vai a** > **impostazioni di Microsoft Bridge**per audioconferenza.
     
 4. Nella pagina **Impostazioni Bridge Microsoft** selezionare o deselezionare **Invia automaticamente i messaggi di posta elettronica agli utenti se le informazioni di accesso esterno vengono modificate**e quindi fare clic su **Salva**.
     

@@ -11,8 +11,7 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
+- M365-voice
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -29,12 +28,12 @@ f1keywords:
 ms.custom:
 - Licensing
 description: 'Informazioni su come pagare i crediti per comunicazioni (consumo PSTN) per i servizi Skype for business e vedere i piani per consentire agli utenti di accedere a un sistema telefonico continuo. '
-ms.openlocfilehash: b6fde8cf36d31caca0c53d977b8844c263a53ff9
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 30f3d164fd28cfc9bbec034c404d9fe71a58568b
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239336"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516813"
 ---
 # <a name="add-funds-and-manage-communications-credits"></a>Aggiungere fondi e gestire i crediti per la comunicazione
 
@@ -76,7 +75,7 @@ Per consultare piani e prezzi, consultare uno di questi link:
     
 - [Piani per sistemi telefonici](https://go.microsoft.com/fwlink/?LinkId=799763)
     
-Per visualizzare le informazioni, è anche possibile [accedere all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e > **aggiungere abbonamenti**agli abbonamenti alla **fatturazione** > ****.
+Per visualizzare le informazioni, è anche possibile [accedere all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e**aggiungere abbonamenti**agli**abbonamenti** > alla **fatturazione** > .
   
 Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere licenze per i [componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
   

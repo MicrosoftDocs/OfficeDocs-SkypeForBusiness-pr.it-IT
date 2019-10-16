@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Linee guida pratiche per la distribuzione di funzionalità cloud Voice in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 88f043bec273cb19745e9800fc9cdb85f64c8e7a
-ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
+ms.openlocfilehash: 9feaffd1677d96c53dee57b03f9061c6fa8184ce
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36271400"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516942"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni cloud Teams
 

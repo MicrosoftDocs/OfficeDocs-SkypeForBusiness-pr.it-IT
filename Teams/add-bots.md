@@ -7,19 +7,18 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 search.appverid: MET150
 ms.reviewer: lucarras, jakon
 description: Informazioni su come aggiungere bot in Microsoft teams per le chat personali, le chat di gruppo e i canali e caricare i propri bot per le chat personali, i gruppi di chat e i canali.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1f5f031b01837980897f2c1f8ad5d306e056257b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 7837fd3a832a1764cfde3968b73337069762dab3
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239478"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516835"
 ---
 <a name="add-bots-for-personal-chats-group-chats-and-channels-in-microsoft-teams"></a>Aggiungere bot per chat personali, chat di gruppo e canali in Microsoft Teams
 ==========================================================
@@ -44,7 +43,7 @@ Puoi creare facilmente un bot che si integra nelle tue applicazioni line-of-busi
 
 Quando crei un bot e lo registri con il Framework bot, puoi scegliere di pubblicarlo. Se non la pubblichi, il bot rimane privato. Puoi anche richiedere agli utenti di eseguire l'accesso prima di usare il bot. La richiesta di accesso garantisce che solo i dipendenti dell'organizzazione possano accedere al bot, anche se l'ID applicazione del bot diventa noto. Vedere [*AuthBot*](https://go.microsoft.com/fwlink/?linkid=854372) su GitHub per un esempio di codice che illustra come autenticare gli utenti in Active Directory usando i bot.
 
-I bot possono essere testati usando l'emulatore di [Framework bot](https://go.microsoft.com/fwlink/?linkid=854373) prima di essere distribuiti nei team.
+I bot possono essere testati usando l' [emulatore di Framework bot](https://go.microsoft.com/fwlink/?linkid=854373) prima di essere distribuiti nei team.
 
 <a name="upload-your-bot-for-personal-chat"></a>Caricare il bot per la chat personale
 ---------------------------------------

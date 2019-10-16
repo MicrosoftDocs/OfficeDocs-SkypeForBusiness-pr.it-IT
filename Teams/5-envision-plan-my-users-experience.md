@@ -12,16 +12,16 @@ ms.reviewer: rowille
 description: Scegliere le app client teams, pianificare la qualità degli endpoint, ottenere suggerimenti per la distribuzione di endpoint Wi-Fi e la scelta di dispositivi audio.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
+- M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 688b1d05acb882b08128fa144f28bd8e682d57fa
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 37b74c631bc8194037b332e821b29fa61cb6530b
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235508"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516757"
 ---
 # <a name="plan-my-users-experience"></a>Pianificare l'esperienza degli utenti
 
@@ -41,7 +41,7 @@ Uno dei vantaggi principali di teams è che il client è mantenuto aggiornato au
 
 Come si può vedere dal diagramma seguente, gli endpoint sono un blocco predefinito importante per offrire un'esperienza di qualità per gli utenti.
 
-![Diagramma che descrive i tre componenti della qualità] (media/plan-my-users-experience-image1.png "Diagramma che descrive i tre componenti della qualità e in che modo la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sugli endpoint.")
+![Diagramma che descrive i]tre componenti del diagramma qualità che(media/plan-my-users-experience-image1.png "descrivono i tre componenti della qualità e come la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sugli endpoint.")
 
 I team endpoint possono essere eseguiti in molti dispositivi, tra cui PC, Mac, tablet e dispositivi mobili. Parte dell'esperienza non include solo il dispositivo, ma anche il modo in cui un utente si connette al dispositivo, ad esempio usando il microfono/altoparlante incorporato del dispositivo, gli auricolari o un auricolare ottimizzato. L'uso di un auricolare ottimizzato può arricchire l'esperienza utente complessiva.
 

@@ -10,17 +10,17 @@ audience: admin
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
-- M365-voice
+- Teams_ITAdmin_JourneyFromSfB
+- M365-collaboration
 appliesto:
 - Microsoft Teams
 description: Questo documento descrive il comportamento della chat, il routing delle chiamate e la presenza tra gli utenti di teams e Skype for business, sia in-tenant che federati, in base alle modalità di TeamsUpgrade assegnate. Include le ottimizzazioni del routing, il comportamento della presenza, nonché la modifica della modalità di TeamsUpgrade predefinita da *legacy* a *Islands* e l'imminente pensionamento di *legacy*.
-ms.openlocfilehash: 22e931d50c3008a77df6ad6568bd50acbe891c8b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 3af54bdfecc7843fbbc095ca0d0cebb91732e648
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236912"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37515863"
 ---
 # <a name="coexistence-with-skype-for-business"></a>Coesistenza con Skype for business
 
@@ -38,7 +38,7 @@ Se il mittente USA teams, la decisione di routing viene eseguita durante la crea
  I metodi di routing dei thread sono:  
 
 - *nativo* per un team per la conversazione in teams in-tenant
-- ** interoperabilità per un team per una conversazione in Skype for business in-tenant
+- *interoperabilità* per un team per una conversazione in Skype for business in-tenant
 - *federati* per una conversazione federata tra tenant
 
 I parametri che determinano il metodo di routing del thread sono i seguenti:

@@ -8,19 +8,16 @@ ms.date: 09/25/2017
 ms.topic: article
 ms.service: msteams
 audience: admin
-ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 search.appverid: MET150
 description: Informazioni su come creare una strategia di gestione delle modifiche per Microsoft teams attraverso l'identificazione di principali stakeholder, risultati aziendali, misure di successo e gestione della campagna.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 15cb50ed0b6e6dbba80daf1ed7d045b3cc92d4f2
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 0c2a01203246f56984f001acbfb4cb889e969c8f
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237191"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516981"
 ---
 <a name="create-a-change-management-strategy-for-microsoft-teams"></a>Creare una strategia di gestione delle modifiche per Microsoft Teams
 =======================================================
@@ -147,7 +144,7 @@ Come per qualsiasi & campagna di adozione delle comunicazioni, è consigliabile 
 
 Il team di progetto deve essere amministratori IT dell'organizzazione. Questi utenti avranno accesso ai report sull'utilizzo di Microsoft teams di Office 365 incorporati nell'esperienza di amministrazione del portale di Office 365. Queste informazioni possono mostrare l'uso di Microsoft teams nella tua azienda. Ti consigliamo anche di ricevere feedback direttamente dagli utenti circa la loro esperienza di teams e altre idee che hanno per l'uso. La condivisione di questi esempi reali dall'interno della propria azienda è estremamente utile per l'atterraggio di un cambiamento duraturo nel tempo con la community degli utenti.  
 
-Altre informazioni sui report sull'utilizzo di Microsoft Teams nel portale di amministrazione [](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524) di Office 365
+Altre informazioni sui report sull'utilizzo di Microsoft teams [nel portale di](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524) amministrazione di Office 365
 
 > [!TIP]
 > Usa il tuo team pubblico o la community di Yammer per raccogliere informazioni sull'uso. Condividili usando un tag #TeamsStories per facilitare il recupero.  Condividere un #TeamsStory al mese nella Intranet per evidenziare i dipendenti che abbracciano la modifica per aumentare la produttività e la collaborazione nell'ambiente.  

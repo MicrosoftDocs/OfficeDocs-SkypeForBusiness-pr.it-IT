@@ -22,12 +22,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare un sistema telefonico (cloud PBX) per l'azienda. "
-ms.openlocfilehash: 398dcd2347f51cf4f50ee6fd7d6bfc6e95fe20d6
-ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
+ms.openlocfilehash: 85b60b07dda2283fb91665834c7f6cd4187454cd
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37434865"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516865"
 ---
 # <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa offre il Sistema telefonico in Office 365
 
@@ -84,7 +84,7 @@ Vedere questi articoli per pianificare e configurare il sistema telefonico nell'
 
 - [Configurare i piani](set-up-calling-plans.md)per le chiamate: questo articolo contiene istruzioni dettagliate per configurare i numeri di telefono o per trasferire i numeri di telefono esistenti in Skype for business.
     
-- [Soluzioni per la telefonia Microsoft](https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions): questo articolo contiene tutte le opzioni di distribuzione. Contiene inoltre informazioni sulla pianificazione di una soluzione interamente basata su cloud. 
+- [Soluzioni per la telefonia Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions): questo articolo contiene tutte le opzioni di distribuzione. Contiene inoltre informazioni sulla pianificazione di un'intera soluzione cloud-only. 
     
 - [Licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md): informazioni sulle licenze che è necessario acquistare per ottenere il sistema telefonico in Office 365.
     
@@ -100,7 +100,17 @@ Vedere questi articoli per pianificare e configurare il sistema telefonico nell'
 |:-----|:-----|:-----|
 |**Client avanzati** <br/> |**Client per dispositivi mobili** <br/> |**Telefoni IP** <br/> |
 | Funziona con tutti i client PC e Mac supportati in Office 365. <br/> [Installare Skype for Business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb) <br/> [Configurare Lync per Mac 2011 per Office 365](https://support.office.com/article/ae3ebd0e-a1a7-48cf-9350-36b144dc5f88) <br/> | Abbiamo clienti Skype for business per: <br/> [iOS](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb#os_type=ios) <br/> [Android](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb#os_type=android) <br/> [Windows Phone](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb#os_type=windows_phone) <br/> |Scegli tra un numero elevato di telefoni da tavolo compatibili con Skype for business. Vedere [ottenere telefoni per Skype for business online](/skypeforbusiness/what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online). <br/> |
-   
+
+## <a name="availability-in-gcc-high-and-dod-clouds"></a>Disponibilità nelle nubi di GCC High e DoD
+<a name="bkmk_setup"> </a>
+
+Le funzionalità seguenti non sono ancora disponibili nelle nubi di GCC High e DoD. 
+- [Impostazioni delle chiamate per suonerie secondarie, segreteria telefonica e delega avanzata](https://support.office.com/article/Manage-your-call-settings-in-Teams-456cb611-3477-496f-b31a-6ab752a7595f)
+- [Trasferimento alla segreteria telefonica a metà chiamata](https://support.office.com/article/Transfer-a-call-in-Teams-b7f40f14-e083-46b9-b739-68038c8f73a0)
+- Chiamare il numero di telefono dalla barra di ricerca
+- Musica in attesa
+- Ricerca di numeri inversa di AAD
+
 ## <a name="related-topics"></a>Argomenti correlati
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 

@@ -12,16 +12,16 @@ ms.reviewer: rowille
 description: Scegliere un modello di distribuzione, sviluppare una matrice RACI (responsabile dell'accounting-consultata), creare piani di esecuzione e di governance.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
+- M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5f324c703c71adbcabedc71d9a5fdb6a4ce63ca0
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 1ef741290a4d669084ad55335d0a08ec1c9ffd5c
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245452"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516754"
 ---
 # <a name="document-my-success-plan"></a>Documentare il piano di successo
 

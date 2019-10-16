@@ -12,15 +12,14 @@ search.appverid: MET150
 description: Gli amministratori possono usare l'interfaccia di amministrazione di Microsoft teams per configurare l'app riunioni Skype per l'utilizzo con i team
 ms.collection:
 - M365-collaboration
-- Teams_ITAdmin_Help
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 227ac287958634ee699a29990149a494a00b2078
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 1f478eaaa1248e7738026f32ae0ccfb7ee03480f
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236863"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516923"
 ---
 <a name="configure-the-skype-meetings-app-to-work-with-teams"></a>Configurare l'app riunioni Skype per l'utilizzo con i team
 ===================================================

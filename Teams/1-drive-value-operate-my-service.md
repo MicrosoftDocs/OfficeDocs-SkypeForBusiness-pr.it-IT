@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
-ms.collection:
-- Teams_ITAdmin_PracticalGuidance
-- M365-collaboration
 description: Attività e attività necessarie per la gestione dei servizi di teams, incluso il monitoraggio dell'integrità dei servizi e la valutazione e garanzia della qualità e dell'uso della rete.
 localization_priority: Normal
+ms.collection:
+- M365-voice
+- M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a63cac388a777073f5c022e493a5abab51a12add
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 61d0bc220de81b67c27d21d3ea22c7974a4c84d1
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244394"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517085"
 ---
 # <a name="operate-my-service"></a>Gestire il servizio personale
 
@@ -39,7 +39,7 @@ La gestione dei servizi comprende tutte le attività e i processi coinvolti nell
 
 Le attività e le attività in questa guida sono raggruppate in otto categorie, come illustrato nel diagramma seguente. Ognuna di queste categorie verrà espansa nelle sezioni seguenti.
 
-![Diagramma che illustra un elenco di categorie di attività e attività] (media/operate-my-service-image1.png "Diagramma che descrive un elenco di categorie di attività e attività che la gestione dei servizi per i team include. Il diagramma descrive anche la gestione dei servizi in gran parte un'attività del cliente.")
+![Diagramma che illustra un elenco di categorie di attività e attività](media/operate-my-service-image1.png "un diagramma che descrive un elenco di categorie di attività e attività che la gestione dei servizi per i team include. Il diagramma descrive anche la gestione dei servizi in gran parte un'attività del cliente.")
 
 
 <table>
@@ -298,7 +298,7 @@ La comprensione del sentimento degli utenti può fungere da indicatore chiave pe
 
 -   **Conclusione del progetto**: valutare il sentimento degli utenti alla fine di un progetto ti dirà quanto hai fatto e dove deve essere ancora fatto il lavoro e ti permettono di confrontare i risultati con il sondaggio precedente.
 
--   **** Continuo: continuare a misurare il sentimento degli utenti a tempo indeterminato. Le modifiche apportate ai sentimenti degli utenti potrebbero essere dovute alle modifiche apportate all'ambiente dell'organizzazione o alle modifiche nel servizio teams. Misurando i sentimenti degli utenti a intervalli regolari, è possibile capire in che modo i team di gestione dei servizi stanno eseguendo e in che modo l'organizzazione risponde alle modifiche apportate al servizio teams.
+-   **Continuo: continuare**a misurare il sentimento degli utenti a tempo indeterminato. Le modifiche apportate ai sentimenti degli utenti potrebbero essere dovute alle modifiche apportate all'ambiente dell'organizzazione o alle modifiche nel servizio teams. Misurando i sentimenti degli utenti a intervalli regolari, è possibile capire in che modo i team di gestione dei servizi stanno eseguendo e in che modo l'organizzazione risponde alle modifiche apportate al servizio teams.
 
 Il sentimento degli utenti può essere valutato tramite molti metodi diversi. Possono includere sondaggi tramite posta elettronica, interviste di tipo in-persona o telefono oppure semplicemente creare un canale di feedback in teams o Yammer. Per altre informazioni, vedere [procedure consigliate per i metodi di feedback degli utenti in Microsoft teams](best-practices-feedback.md).
 
@@ -316,7 +316,7 @@ NPS è un indice, che va da-100 a 100, che misura la volontà del cliente di con
 
 -   Da 1 a 6 sono detrattori: clienti insoddisfatti che possono danneggiare il servizio e impedire la crescita.
 
-![Diagramma che illustra la scala NPS] (media/operate-my-service-image2.png "Questo diagramma mostra la scala NPS. Mostra che le classifiche da 0 a 6 sono detrattori, da 7 a 8 passivi e da 9 a 10 promotori.")
+![Diagramma che illustra la scala NPS]in(media/operate-my-service-image2.png "questo diagramma viene illustrata la scala NPS. Mostra che le classifiche da 0 a 6 sono detrattori, da 7 a 8 passivi e da 9 a 10 promotori.")
 
 Anche se il numero di NPS di base è utile, otterrai il valore massimo analizzando i commenti degli utenti. Ti aiuteranno a comprendere il motivo per cui l'utente non consiglia i team ad altri. Questi commenti possono fornire un valido feedback per consentire ai team di gestione di progetti o servizi di comprendere le modifiche necessarie per fornire un servizio di qualità.
 
@@ -431,7 +431,7 @@ Anche se sono state seguite le indicazioni precedenti, gli utenti dell'organizza
 1.  **Convalida integrità del servizio:** Il problema che un utente potrebbe provare può essere correlato a un evento che influisce negativamente sul servizio teams o sui servizi dipendenti. Come primo passo, ti consigliamo di confermare che non ci sono problemi di servizio attivo. Consultare [come controllare l'integrità dei servizi di Office 365](https://support.office.com/article/How-to-check-Office-365-service-health-932AD3AD-533C-418A-B938-6E44E8BC33B0).
     Ricordarsi di controllare lo stato dei servizi dipendenti, ad esempio Exchange, SharePoint, OneDrive for business. Il monitoraggio dell'integrità dei servizi viene illustrato in modo più dettagliato nella sezione precedente, [monitora l'integrità dei servizi](#monitor-service-health).
 
-2.  Convalidare la **connettività client:** I problemi di connettività causano problemi di funzionalità o di accesso in teams. È consigliabile (soprattutto per i nuovi siti o posizioni) che si convalida la connettività al servizio. Verificare che per ogni sito siano seguite le indicazioni seguenti per gli [URL e gli intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips) . Puoi sfruttare lo strumento di [valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per eseguire un test di connettività per verificare che le porte multimediali siano state aperte correttamente per le funzionalità di cloud Voice. I passaggi dettagliati su come eseguire i test di connettività vengono forniti nelle linee guida per la [conformità della rete](3-envision-evaluate-my-environment.md#network-readiness) .
+2.  **Convalidare la connettività client:** I problemi di connettività causano problemi di funzionalità o di accesso in teams. È consigliabile (soprattutto per i nuovi siti o posizioni) che si convalida la connettività al servizio. Verificare che per ogni sito siano seguite le indicazioni seguenti per gli [URL e gli intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips) . Puoi sfruttare lo strumento di [valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per eseguire un test di connettività per verificare che le porte multimediali siano state aperte correttamente per le funzionalità di cloud Voice. I passaggi dettagliati su come eseguire i test di connettività vengono forniti nelle linee guida per la [conformità della rete](3-envision-evaluate-my-environment.md#network-readiness) .
 
 3.  **Selezionare l'elenco dei problemi noti:** Consulta l' [elenco dei problemi noti per i team](known-issues.md) per determinare se l'utente è stato influenzato negativamente da uno di questi problemi. Seguire la soluzione alternativa fornita (se disponibile) per risolvere il problema.
 
@@ -548,7 +548,7 @@ Per impostazione predefinita, tutti gli utenti con una cassetta postale in Excha
 
 La [Guida alla revisione della qualità della](https://aka.ms/qerguide) funzionalità include un set di attività che valutano e includono indicazioni per il risanamento in aree chiave che hanno un impatto maggiore sul miglioramento dell'esperienza utente, come illustrato di seguito.
 
-![Diagramma delle aree da esaminare durante una revisione della qualità dell'esperienza] (media/plan-my-service-management-image2.png "Le aree principali da esaminare durante una revisione di qualità dell'esperienza: audio, affidabilità e risultati del sondaggio degli utenti.")
+![Diagramma delle aree da esaminare durante una qualità dell'esperienza]esaminare(media/plan-my-service-management-image2.png "le aree principali da esaminare durante una revisione di qualità dell'esperienza: audio, affidabilità e risultati del sondaggio degli utenti.")
 
 Valutando e rimediando continuamente le aree descritte nella Guida, è possibile ridurre le proprie potenzialità per influire negativamente sull'esperienza utente. La maggior parte dei problemi di esperienza utente incontrati in una distribuzione può essere raggruppata nelle categorie seguenti:
 

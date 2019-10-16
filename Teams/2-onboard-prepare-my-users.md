@@ -12,16 +12,16 @@ ms.reviewer: rowille
 description: Creare un piano per guidare l'adozione degli utenti definendo gli obiettivi, comprendendo l'aspetto dell'accettazione e fornendo formazione e supporto tecnico.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
+- M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 162bb3f2e0b17475618afbb796e9ae8778bdab4a
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 026edba5c85fa010ee583b501d1ecc1f18308518
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36246212"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516915"
 ---
 # <a name="prepare-my-users"></a>Preparare gli utenti
 
@@ -46,7 +46,7 @@ L'impostazione della visione del progetto consente ai principali stakeholder di 
 
 L'immagine seguente è un esempio di un'istruzione di visione-valore per un cliente che esegue l'aggiornamento da Skype for business a teams.
 
-![Tabella con due colonne che mostra la visualizzazione e il valore] (media/prepare-my-users-new-image1.png "Tabella con due colonne con visione-perché lo facciamo? (livello organizzazione) a sinistra e valore-cosa contiene? (livello utente) a destra")
+![Tabella a due colonne](media/prepare-my-users-new-image1.png "con la visualizzazione di una tabella di due colonne con visione e valore-perché lo facciamo? (livello organizzazione) a sinistra e valore-cosa contiene? (livello utente) a destra")
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>È stato articolato il vantaggio e il valore per gli utenti in modo da ottenere il buy-in per questa nuova soluzione?</li></ul></td></tr>
@@ -126,7 +126,7 @@ Per ogni gruppo di persona, discutere le operazioni seguenti con il team di prog
 
 L'immagine seguente è un esempio di tabella persona.
 
-![Tabella valori che elenca i dettagli persona] (media/prepare-my-users-image2.png "Tabella che elenca gli utenti con i loro ruoli comuni e le dipendenze della soluzione di comunicazione e collaborazione. La persona Executive viene evidenziata con i dettagli sul profilo (giorno nella vita) e le caratteristiche, i dispositivi e le esigenze di formazione") per i dirigenti.
+![Tabella dei valori che elenca](media/prepare-my-users-image2.png "le persone con i loro ruoli comuni e le dipendenze della soluzione di comunicazione e collaborazione. La persona Executive viene evidenziata con i dettagli sul profilo (giorno nella vita) e le caratteristiche, i dispositivi e le esigenze di formazione per i dirigenti.")
 
 Per ogni caso di utilizzo, discutere le operazioni seguenti con il team di progetto:
 
@@ -154,5 +154,5 @@ Dopo aver capito chi sono gli utenti e come funzioneranno all'interno della nuov
 
 <table>
 <tr><th>Comunicazione</th><th>Formazione</th><th>Supporto</th></tr>
-<tr><td><ul><li>Personalizzare i <a href="prepare-my-users-email-templates.md" data-raw-source="[voice email templates](prepare-my-users-email-templates.md)">modelli di posta elettronica della segreteria telefonica</a> &mdash;</li><li>Poster e segnaletica digitale </li><li>Avviare eventi</li><li>Responsabili reparto</li><li>Promotori</li><li>Team e canali</li><li>Gamification</li></ul></td><td><ul><li>Articoli e video da Microsoft:<ul><li><a href="https://support.office.com/article/Switch-to-Teams-from-Skype-for-Business-6295a0ae-4e8e-4bba-a100-64cc951cc964" data-raw-source="[Switch to Teams from Skype for Business](https://support.office.com/article/Switch-to-Teams-from-Skype-for-Business-6295a0ae-4e8e-4bba-a100-64cc951cc964)">Passare a teams da Skype for business</a></li><li><a href="https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7" data-raw-source="[Teams video training](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)">Formazione video Teams</a></li><li><a href="https://support.office.com/article/meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8" data-raw-source="[Meetings and calls](https://support.office.com/article/meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8)">Riunioni e chiamate</a></li></li></ul><li>Assistenza interna (Guida)</li><li>Team di formazione interna</li><li>Team di formazione per i partner</li></ul></td><td><ul><li>Helpdesk interni</li><li>Supporto tecnico in outsourcing</li><li>Self-Help (sito Intranet)</li><li><a href="https://support.office.com/teams" data-raw-source="[Online Help and how-to](https://support.office.com/teams)">Guida e procedure online</a></li><li>Piano-escursionisti e campioni</li><li>Ciclo&mdash;di feedback vedere i <a href="prepare-my-users-feedback-templates.md" data-raw-source="[sample user feedback surveys](prepare-my-users-feedback-templates.md)">sondaggi di feedback degli utenti di esempio</a></li></td></tr>
+<tr><td><ul><li>&mdash;Personalizzare i modelli di <a href="prepare-my-users-email-templates.md" data-raw-source="[voice email templates](prepare-my-users-email-templates.md)">posta elettronica della segreteria telefonica</a></li><li>Poster e segnaletica digitale </li><li>Avviare eventi</li><li>Responsabili reparto</li><li>Promotori</li><li>Team e canali</li><li>Gamification</li></ul></td><td><ul><li>Articoli e video da Microsoft:<ul><li><a href="https://support.office.com/article/Switch-to-Teams-from-Skype-for-Business-6295a0ae-4e8e-4bba-a100-64cc951cc964" data-raw-source="[Switch to Teams from Skype for Business](https://support.office.com/article/Switch-to-Teams-from-Skype-for-Business-6295a0ae-4e8e-4bba-a100-64cc951cc964)">Passare a teams da Skype for business</a></li><li><a href="https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7" data-raw-source="[Teams video training](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)">Formazione video Teams</a></li><li><a href="https://support.office.com/article/meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8" data-raw-source="[Meetings and calls](https://support.office.com/article/meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8)">Riunioni e chiamate</a></li></li></ul><li>Assistenza interna (Guida)</li><li>Team di formazione interna</li><li>Team di formazione per i partner</li></ul></td><td><ul><li>Helpdesk interni</li><li>Supporto tecnico in outsourcing</li><li>Self-Help (sito Intranet)</li><li><a href="https://support.office.com/teams" data-raw-source="[Online Help and how-to](https://support.office.com/teams)">Guida e procedure online</a></li><li>Piano-escursionisti e campioni</li><li>Ciclo&mdash;di feedback vedere i <a href="prepare-my-users-feedback-templates.md" data-raw-source="[sample user feedback surveys](prepare-my-users-feedback-templates.md)">sondaggi di feedback degli utenti di esempio</a></li></td></tr>
 </table>

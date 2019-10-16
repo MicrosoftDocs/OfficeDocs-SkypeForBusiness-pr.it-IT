@@ -9,7 +9,6 @@ ms.assetid: dc6e95cd-51e8-49ca-bcd3-78dc9dae486a
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 - M365-voice
 search.appverid: MET150
@@ -22,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Legal
 description: I clienti possono usare il piano di chiamata di Office 365 e i servizi di audioconferenza di Office 365 consentiti dai termini e dai contratti multilicenza del cliente per Skype for business online e Microsoft teams.
-ms.openlocfilehash: 4dcc4cbd85c8dbc9b821fd3cd1905c0270dce08c
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: e5f0d49cfd43b04f5c361564adcc05805d04b594
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236945"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516898"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 

@@ -11,16 +11,15 @@ ms.service: msteams
 search.appverid: MET150
 description: Configurare un criterio di riunione per consentire agli utenti di condividere i loro desktop in chat o riunioni di Teams
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f36804fc4d7c28f08ca383ddb09f22ee52f804e7
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 99c6e2a5adb9d0f9a4b4e3f6f17b7484bda96a74
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236934"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516887"
 ---
 <a name="configure-desktop-sharing-in-microsoft-teams"></a>Configurare la condivisione desktop in Microsoft Teams
 ============================================

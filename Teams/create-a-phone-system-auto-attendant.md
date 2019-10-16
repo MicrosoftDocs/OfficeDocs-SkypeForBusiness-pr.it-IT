@@ -10,7 +10,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 audience: Admin
 appliesto:
@@ -21,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: 60fce49f2c03ef674e0b1e09f5d0193bcdab7ca0
-ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
+ms.openlocfilehash: eeeafb99a7cf1344d973b5963eab5b0c4ee8eaea
+ms.sourcegitcommit: 9145ce09efe490d4d79b2a52ecc318f54d2feb2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37434965"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37522771"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -219,10 +218,20 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 
 **Chiamata per nome** Se si abilita questa opzione, i chiamanti possono cercare gli utenti dell'organizzazione usando la chiamata in **base al nome**. Si dice che il nome dell'utente e il riconoscimento vocale corrispondano a un utente. È possibile impostare chi è e non è incluso in questi servizi nella pagina dell'ambito di chiamata facoltativa. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con chiamata per nome.
 
-**Dial by Extension** Se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione immettendo l'estensione del telefono, **purché sia stato configurato un dial plan che usa le estensioni**. È possibile selezionare gli utenti elencati come disponibili o non disponibili per l' **estensione dial by** nella pagina facoltativa dell'ambito di chiamata. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l'estensione dial by.
+[!INCLUDE [preview-feature](includes/preview-feature.md)]
+
+**Dial by Extension** Se si abilita questa opzione (attualmente disponibile solo in alcuni tenant), i chiamanti possono connettersi con gli utenti dell'organizzazione immettendo l'estensione del telefono. È possibile selezionare gli utenti elencati come disponibili o non disponibili per l' **estensione dial by** nella pagina facoltativa dell'ambito di chiamata. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l'estensione dial by.
+
+> [!IMPORTANT]
+> Attenersi alla seguente procedura:
+>- Gli utenti che si desidera rendere disponibili per la chiamata tramite estensione devono avere un'estensione specificata come parte del numero di telefono o del numero di telefono cellulare assegnato nell'interfaccia di [amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users?view=o365-worldwide#use-the-new-admin-center-to-add-users).  Il formato necessario per immettere l'estensione nel campo numero di telefono dell'utente è `+<phonenumber>;ext=<extension>` o. `x<extension>`
+>- L'assegnazione di un'estensione nell'interfaccia di amministrazione di teams non è attualmente supportata. È necessario usare il comando [set-MsolUser](https://docs.microsoft.com/powershell/module/msonline/set-msoluser?view=azureadps-1.0) di PowerShell o l'interfaccia di amministrazione di Microsoft 365.
+>- Possono essere necessarie fino a 12 ore prima che siano disponibili modifiche agli attributi PhoneNumber e MobilePhone di AAD.
+>- NON definire un'estensione per il LineUri di un utente. Questa operazione non è attualmente supportata.
+>- Un operatore automatico può essere configurato per l'opzione Componi per nome o per chiamata tramite estensione, ma non entrambe.
 
 > [!NOTE]
-> Se si vogliono usare entrambe le funzionalità di chiamata per **nome** e chiamata per **estensione** , è possibile creare l'operatore automatico principale (abilitato per il **Dial-in per nome**) che richiede ai chiamanti di scegliere un'opzione di menu 3 Se si conosce l'estensione dell'utente e impostare l'opzione 3 su Tran SFER la chiamata a un operatore automatico abilitato per l'estensione dial by. 
+> Se si vogliono usare sia le caratteristiche per il **nome** che per il dial by **Extension** , è possibile creare l'operatore automatico principale (abilitato per la **chiamata per nome**) che richiede ai chiamanti di scegliere un'opzione di menu se conosce l'estensione dell'utente e impostare l'opzione su trasferire la chiamata a un operatore automatico abilitato per l'estensione dial by. 
 
 * * *
 

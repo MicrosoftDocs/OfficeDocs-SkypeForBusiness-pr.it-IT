@@ -12,16 +12,16 @@ ms.reviewer: rowille
 description: Usare gli elenchi di controllo onboarding per preparare Office 365 per i team e configurare le funzionalità di base di teams, le reti e i workload vocali cloud.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
+- M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 63b507237cbc9a1d32dc891b99eaf6425528b559
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 653b5cf46e0b079af47c282b4110b181e76be915
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236567"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517065"
 ---
 # <a name="prepare-my-service"></a>Preparare il servizio
 
@@ -103,7 +103,7 @@ Nella sua forma più semplice, l'approccio di testing si basa sulla revisione de
 
 
 >[!TIP]
->Per facilitare la creazione di test case come punto di partenza, vedere l'elenco delle indicazioni per gli utenti disponibili in [riunioni e chiamate](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8#bkmk_havingmeetings)di teams.
+>Per facilitare la creazione di test case come punto di partenza, vedere l'elenco delle indicazioni per gli utenti disponibili in [riunioni e chiamate di teams](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8#bkmk_havingmeetings).
 
 <!--ENDOFSECTION-->
 
@@ -140,7 +140,7 @@ Dopo aver configurato l'ambiente utente e il servizio, l'ultimo passaggio del te
 
 -   L'elenco dei servizi di audioconferenza dedicati e condivisi in numeri con preferenza lingua sono stati identificati e configurati.
 
--   [Crediti per comunicazioni](what-are-communications-credits.md) (se necessario) sono stati configurati per l'organizzazione.
+-   I crediti per le [comunicazioni](what-are-communications-credits.md) (se necessario) sono stati configurati per l'organizzazione.
 
 -   Sono state identificate e configurate le impostazioni del Bridge conferenza di audioconferenza (lunghezza del PIN, notifiche di entrata/uscita, preferenza di notifica di abilitazione).
 
@@ -158,7 +158,7 @@ Dopo aver configurato l'ambiente utente e il servizio, l'ultimo passaggio del te
 
 -   I numeri di telefono da assegnare agli utenti sono stati acquisiti o trasferiti a Microsoft e sono disponibili nel portale del tenant.
 
--   [Crediti per comunicazioni](what-are-communications-credits.md) (se necessario) sono stati configurati per l'organizzazione.
+-   I crediti per le [comunicazioni](what-are-communications-credits.md) (se necessario) sono stati configurati per l'organizzazione.
 
 -   Criteri per gli utenti del tenant e le impostazioni di dial plan che supportano scenari di piani di chiamata sono stati identificati, configurati e applicati.
 

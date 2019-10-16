@@ -23,12 +23,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate. '
-ms.openlocfilehash: e4125b8a8c4cdb4fddf98b52381e2959ed557a84
-ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
+ms.openlocfilehash: de5547f8a8cc4ee7284d544b0ef2a980b4d50b0c
+ms.sourcegitcommit: 9145ce09efe490d4d79b2a52ecc318f54d2feb2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435101"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37522760"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -310,9 +310,15 @@ Il dashboard report di riepilogo di Call Quality dashboard include una pagina di
 - Mappa di ogni punto di accesso wireless e del relativo indirizzo MAC
 - Una mappa di endpoint da fare/modello/tipo di endpoint e così via.
   
+> [!NOTE]
+> Le etichette di segnalazione che si caricano in Call Quality dashboard verranno gestite come *dati di supporto* sotto il contratto per Office 365, incluse le eventuali informazioni che altrimenti verrebbero considerate dati *dei clienti* o *dati personali*. Non includere dati che non si desidera concedere a Microsoft come *dati di supporto*, queste informazioni saranno visibili agli ingegneri Microsoft per scopi di supporto.
+
 ![Screenshot: Mostra i dati del tenant di Call Quality dashboard](media/839c9ab4-0246-46c9-8402-aafd83a0bc63.png)
   
 1. Nella pagina **caricamento dati tenant** usare il menu a discesa per scegliere un tipo di file di dati da caricare. Il tipo di dati del file denota il contenuto del file, ad esempio "Building" fa riferimento al mapping dell'indirizzo IP e dell'edificio e ad altre informazioni geografiche, "endpoint" si riferisce al mapping del nome dell'endpoint alle informazioni sul tipo o sul modello o sul testo dell'endpoint. Attualmente Call Quality dashboard supporta i tipi di dati "Building" e "endpoint" per cqd.teams.microsoft.com (in anteprima e non ancora ufficialmente disponibile), cqd.lync.com supporta solo il tipo di dati "Building".
+
+
+
 2. Dopo aver selezionato il tipo di dati file, fare clic su **Sfoglia** per scegliere un file di dati.
 
    - Un file di dati deve essere un file con estensione TSV (valori separati da tabulazioni) o un file CSV (valore delimitato da virgole). Con un file CSV, qualsiasi campo che contiene una virgola deve essere racchiuso tra virgolette o avere la virgola rimossa. Ad esempio, se il nome dell'edificio è NY, NY, immettere "NY, NY" nel file CSV.

@@ -10,7 +10,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 audience: Admin
 appliesto:
@@ -25,12 +24,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization. '
-ms.openlocfilehash: c3cafee8dcce326dd20661f919dc57b0e1f1fe26
-ms.sourcegitcommit: b5949233f8080a6cf0edb4b5e27272214feb1c22
+ms.openlocfilehash: 305416df22353743b891df6c7722bededaae0980
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "36183991"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516748"
 ---
 # <a name="calling-plans-for-office-365"></a>Piani di chiamata per Office 365
 
@@ -52,14 +51,14 @@ Per informazioni dettagliate sui limiti di utilizzo e sulle condizioni per l'uti
   
 ## <a name="how-to-buy-a-calling-plan"></a>Come acquistare un piano per le chiamate
 
-1. <strong>Devi prima acquistare una</strong> licenza per il componente aggiuntivo * * Phone System<strong>. A questo scopo, [Accedi all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e scegli * *</strong>abbonamenti >  > **per i componenti aggiuntivi per**l'**acquisto di servizi**di fatturazione > **Acquista ora**.
+1. <strong>Devi prima acquistare una</strong> licenza per il componente aggiuntivo * * Phone System<strong>. A questo scopo, [Accedi all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e scegli * *</strong> > **** >  > **abbonamenti per i componenti aggiuntivi per**l'acquisto di servizi di fatturazione**Acquista ora**.
     
     ![Screenshot che mostra l'opzione per acquistare un piano per chiamate vocali.](media/5893fca0-292c-4cdf-9b43-c507a8b44b74.png)
   
     > [!NOTE]
     > A seconda del piano, potrebbe essere necessario acquistare altri componenti aggiuntivi prima di poter acquistare licenze per il sistema telefonico. Per altre informazioni, vedere "opzioni di licenza basate sul piano" in [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
   
-2. Dopo aver acquistato le licenze per il sistema telefonico, è possibile acquistare il piano per le chiamate accedendo all'interfaccia di **amministrazione di Microsoft 365**, scegliere abbonamenti per**il componente aggiuntivo**per l'**acquisto di servizi** > di **fatturazione** > e quindi fare clic su **Acquista ora. **. Verranno visualizzati i piani per le chiamate.
+2. Dopo aver acquistato le licenze per il sistema telefonico, è possibile acquistare il piano per le chiamate accedendo all'interfaccia di **amministrazione di Microsoft 365**, scegliere**abbonamenti per il componente aggiuntivo**per l'**acquisto di servizi** > di **fatturazione** > e quindi fare clic su **Acquista ora. **. Verranno visualizzati i piani per le chiamate.
     
     ![Screenshot che mostra le opzioni del piano per le chiamate vocali.](media/ab2d6dce-56eb-4bbc-ac1a-430b0c065d18.png)
   

@@ -10,8 +10,8 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
+- M365-collaboration
 audience: Admin
 appliesto:
 - Skype for Business
@@ -21,21 +21,21 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: When you buy Audio Conferencing licenses, Microsoft is hosting your audio conferencing bridge for your organization. The audio conferencing bridge gives out dial-in phone numbers from different locations so meeting organizers and participants can use them to join Skype for Business or Microsoft Teams meetings using a phone.
-ms.openlocfilehash: 60095ff820c6aeb13745f5195a6274fa90f5eec0
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: 9c4d16f3f68e190549b1e8a1d7b6f3f03e8a44c6
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36184357"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37516964"
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Cambiare i numeri di telefono del bridge per i servizi di audioconferenza
 
-Quando si acquistano le licenze per i servizi di audioconferenza, Microsoft ospita il Bridge per audioconferenza per l'organizzazione. **** Il Bridge per i servizi di audioconferenza offre numeri di telefono con accesso esterno provenienti da posizioni diverse in modo che gli organizzatori e i partecipanti possano usarli per partecipare alle riunioni di Skype for business o Microsoft teams con un telefono.
+Quando si acquistano le licenze per i servizi **di audioconferenza,** Microsoft ospita il Bridge per audioconferenza per l'organizzazione. Il Bridge per i servizi di audioconferenza offre numeri di telefono con accesso esterno provenienti da posizioni diverse in modo che gli organizzatori e i partecipanti possano usarli per partecipare alle riunioni di Skype for business o Microsoft teams con un telefono.
   
 Oltre ai numeri di telefono già assegnati al Bridge per i servizi di conferenza, è possibile [ottenere i numeri di servizio aggiuntivi](/microsoftteams/getting-service-phone-numbers) (numero verde e numeri verdi usati per le conferenze audio) da altre posizioni e quindi assegnarli al Bridge di conferenza in modo da poter espandere la copertura per gli utenti.
   
 > [!NOTE]
-> Per poter assegnare o annullare l'assegnazione di un numero di telefono per un Bridge per i servizi di conferenza, il numero di telefono deve essere un numero di*servizio*. Per visualizzare il tipo di numero, è possibile spostarsi in numeri di **** > **telefono** vocale nel portale legacy e cercare nella colonna tipo di **numero** . Bisogna prima impostare il Credito per la comunicazione di Office 365 per consentire agli utenti di accedere al ponte per audioconferenze su un numero verde.
+> Per poter assegnare o annullare l'assegnazione di un numero di telefono per un Bridge per i servizi di conferenza, il numero di telefono deve essere un numero di*servizio*. Per visualizzare il tipo di numero, è possibile spostarsi in numeri di **** > **telefono** vocale nel portale legacy e cercare nella colonna tipo di **numero** . I crediti per le comunicazioni di Office 365 devono essere configurati prima di tutto per consentire agli utenti di effettuare una chiamata in plancia su un numero verde.
 
 ## <a name="steps-when-you-are-assigning-a-new-service-phone-number-to-your-conference-bridge"></a>Istruzioni per assegnare un numero telefonico di servizio al tuo bridge di conferenza
 
@@ -43,7 +43,7 @@ Oltre ai numeri di telefono già assegnati al Bridge per i servizi di conferenza
 
 1. Accedi a Office 365 con l'account aziendale.
 
-2. Accedere a teams di interfaccia di amministrazione di interfaccia di amministrazione di **Microsoft 365** > **** > **&** > **numeri di telefono****vocali** > del**portale** > legacy Skype.
+2. Accedere a**Teams** > di interfaccia**di amministrazione di** > interfaccia di amministrazione di **Microsoft 365** > &**numeri di telefono****vocali** > del**portale** > legacy Skype.
 
 3. Selezionare il numero di telefono nell'elenco, quindi fare clic su **assegna**nel riquadro azioni.
 
@@ -57,7 +57,7 @@ Solo un numero a pagamento del servizio può essere impostato come numero predef
 
 1. Accedi a Office 365 con l'account aziendale.
 
-2. Vai all'interfaccia di amministrazione di interfaccia di amministrazione di **Microsoft 365** > **** > **&** > **** > **ponti conferenza**riunioni Skype.
+2. Vai all'interfaccia**di amministrazione di** > interfaccia di amministrazione di **Microsoft 365** > &**ponti conferenza****riunioni** > **Skype** > .
 
 3. Evidenziare il numero a pagamento del servizio che si vuole configurare come predefinito.
 
@@ -133,7 +133,7 @@ Per ulteriori informazioni sul servizio MMS (Meeting Migration Service), consult
 
 1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
-2. Accedere ai team di interfaccia**** > di amministrazione di interfaccia di amministrazione di **Microsoft 365** > & i**numeri di telefono****vocali** > del**portale** > legacy**Skype** > .
+2. Accedere ai team di interfaccia**di amministrazione di** > interfaccia di amministrazione di **Microsoft 365** > **&** > i**numeri di telefono****vocali** > del**portale** > legacy Skype.
 
 3. Se il numero di telefono è un numero verde, selezionare il numero di telefono nell'elenco e quindi fare clic su **Annulla assegnazione**nel riquadro azioni. Se il numero di telefono è un numero a pagamento, contattare il [supporto Microsoft](https://go.microsoft.com/fwlink/?linkid=2091806) per ottenere il numero di telefono non assegnato.
 

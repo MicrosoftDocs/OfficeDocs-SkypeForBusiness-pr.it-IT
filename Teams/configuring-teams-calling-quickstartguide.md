@@ -12,17 +12,16 @@ search.appverid: MET150
 description: Guida introduttiva per la configurazione dei piani per le chiamate in Microsoft teams.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
-- Teams_ITAdmin_Training
+- M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0e043633749e0ef2dba41b5b3b18776cfbe1c497
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 87670ea398150e4895f2d87ccc48f60aba2d1377
+ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236855"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37517059"
 ---
 <a name="quick-start-guide-configuring-calling-plans-in-microsoft-teams"></a>Guida introduttiva: configurazione di piani di chiamata in Microsoft Teams
 ==============================================================
