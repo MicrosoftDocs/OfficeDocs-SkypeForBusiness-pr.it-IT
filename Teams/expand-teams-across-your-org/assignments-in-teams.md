@@ -20,12 +20,12 @@ description: Informazioni su come gestire le assegnazioni nell'interfaccia di am
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0eaaa4782ac1c0f5fa8d1618f89c05d3ffd58e57
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: 91d74a96cedcd0cdbdfd6b7fcc5ac1b8e261027e
+ms.sourcegitcommit: fa55f9e3690fcca36b530bd13a9eeaa44120b87c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483980"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37547280"
 ---
 # <a name="assignments-in-teams-for-education"></a>Assegnazioni in teams per l'istruzione
 
@@ -83,6 +83,4 @@ Il TurnitinApiKey verrà assegnato dopo aver seguito le istruzioni. Copiare la c
 
 Quando si fa clic sul pulsante **Salva** nell'interfaccia di amministrazione per questa impostazione, consentire fino a 24 ore per rendere effettive queste impostazioni.
 
-[Leggi altre informazioni sull'integrazione tra Turnitin e Microsoft Teams](https://www.turnitin.com/products/feedback-studio/microsoft-teams-integration)
-
-[Leggi altre informazioni su Turnitin](https://www.turnitin.com/)
+Pronti per iniziare a usare l'integrazione di Turnitin in teams? Iscriversi al [programma Early Access](https://www.turnitin.com/products/feedback-studio/microsoft-teams-integration).

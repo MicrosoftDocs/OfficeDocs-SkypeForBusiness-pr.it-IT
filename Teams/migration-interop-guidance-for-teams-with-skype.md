@@ -18,24 +18,24 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ac2b42094484ce711760a793053bf619aab66884
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: 33a56cb9844a9c40da41d411e537f7cedb2bf2a5
+ms.sourcegitcommit: 61deca3fd35142d210ab8307c21a576b3301ec84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484005"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37553772"
 ---
 # <a name="migration-and-interoperability-guidance-for-organizations-using-teams-together-with-skype-for-business"></a>Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business
 
 > [!Tip] 
-> Vedere la sessione seguente per informazioni sulla [coesistenza e](https://aka.ms/teams-upgrade-coexistence-interop) l'interoperabilità
+> Vedere la sessione seguente per informazioni sulla [coesistenza e l'interoperabilità](https://aka.ms/teams-upgrade-coexistence-interop)
 
 Come organizzazione con Skype for business che inizia ad adottare teams, gli amministratori possono gestire l'esperienza utente nella propria organizzazione usando il concetto di coesistenza "Mode" che è una proprietà di TeamsUpgradePolicy. Usando la modalità, gli amministratori gestiscono l'interoperabilità e la migrazione mentre gestiscono la transizione da Skype for business a teams.  La modalità di un utente determina il modo in cui vengono pianificate le chat in arrivo e le chiamate in entrata del client, nonché in quali servizi (team o Skype for business) sono programmate nuove riunioni. Regola anche le funzionalità disponibili nel client teams. 
 
 
 ## <a name="fundamental-concepts"></a>Concetti fondamentali
 
-1.  ** Interoperabilità: 1-1 comunicazione tra un utente di Lync/Skype for business e un utente di teams.
+1.  *Interoperabilità* : 1-1 comunicazione tra un utente di Lync/Skype for business e un utente di teams.
 
 2.  *Federazione* : comunicazione tra utenti di tenant diversi.
 
@@ -71,7 +71,7 @@ Da un punto di vista tecnico, la modalità di un utente regola diversi aspetti d
 - *Pianificazione delle riunioni*: quale servizio viene usato per pianificare nuove riunioni e verificare che il componente aggiuntivo appropriato sia presente in Outlook? Tieni presente che TeamsUpgradePolicy non regola la partecipazione alla riunione. Gli utenti possono sempre *partecipare* a una riunione, sia che si tratti di una riunione Skype for business o di una riunione di teams.
 - *Esperienza client*: quali funzionalità sono disponibili in teams e/o client Skype for business? Gli utenti possono avviare chiamate e chat in team, Skype for business o entrambi? L'esperienza di teams & Channels è disponibile?  
 
-Per altri dettagli sul comportamento di routing e presenza in base alla modalità, Vedi coesistenza [con Skype for business](https://docs.microsoft.com/en-us/MicrosoftTeams/coexistence-chat-calls-presence).
+Per altri dettagli sul comportamento di routing e presenza in base alla modalità, Vedi [coesistenza con Skype for business](https://docs.microsoft.com/en-us/MicrosoftTeams/coexistence-chat-calls-presence).
 
 Tuttavia, da un punto di vista dell'esperienza, la modalità può essere descritta più semplicemente definendo l'esperienza per:
 - *Chat e chiamate*: quale client usa un utente?
@@ -84,7 +84,7 @@ Le modalità sono elencate di seguito.
 
 |Modalità|Chiamata e chat|Pianificazione delle riunioni<sup>1</sup>|Canali & Teams|Caso di utilizzo|
 |---|---|---|---|---|
-|**TeamsOnly<sup>2</sup>**</br>*Richiede Home in Skype for business online*|Squadre|Squadre|Sì|Stato finale dell'aggiornamento. Anche l'impostazione predefinita per i nuovi tenant con <seggi di 500.|
+|**TeamsOnly<sup>2</sup>**</br>*Richiede Home in Skype for business online*|Squadre|Squadre|Sì|Stato finale dell'aggiornamento. Anche l'impostazione predefinita per i nuovi tenant.|
 |Isole|Sia|Sia|Sì|Configurazione predefinita. Consente a un singolo utente di valutare entrambi i client affiancati. Le chat e le chiamate possono atterrare in entrambi i client, quindi gli utenti devono sempre eseguire entrambi i client. Per evitare un'esperienza di Skype for business confusa o regressione, le comunicazioni esterne (federate), i servizi vocali PSTN e le applicazioni vocali, l'integrazione di Office e molte altre integrazioni continuano a essere gestite da Skype for business.|
 |SfBWithTeamsCollabAndMeetings<sup>2</sup>|Skype for business|Squadre|Sì|"First meetings". Principalmente per le organizzazioni locali per trarre vantaggio dalle funzionalità di riunione dei team, se non sono ancora pronte per la migrazione delle chiamate al cloud.|
 |SfBWithTeamsCollab|Skype for business|Skype for business|Sì|Punto di partenza alternativo per organizzazioni complesse che necessitano di un controllo amministrativo più rigoroso.|
@@ -98,7 +98,7 @@ Le modalità sono elencate di seguito.
 
 <sup>1</sup> la possibilità di partecipare a una riunione esistente (pianificata in teams o in Skype for business) non è regolata dalla modalità. Per impostazione predefinita, gli utenti possono sempre partecipare a una riunione a cui sono stati invitati.
 
-<sup>2</sup> per impostazione predefinita, quando si assegna TeamsOnly o SfbWithTeamsCollabAndMeetings a un singolo utente, le riunioni Skype for business esistenti pianificate dall'utente per il futuro vengono convertite in riunioni teams. Se si vuole, è possibile uscire da queste riunioni come riunioni Skype for business specificando `-MigrateMeetingsToTeams $false` quando si concede TeamsUpgradePolicy oppure deselezionando la casella di controllo nel portale di amministrazione di teams.   Tieni presente che la possibilità di convertire le riunioni da Skype for business a teams non è avaialble Quando concedi a TeamsUpgradePolicy una base a livello di tenant. 
+<sup>2</sup> per impostazione predefinita, quando si assegna TeamsOnly o SfbWithTeamsCollabAndMeetings a un singolo utente, le riunioni Skype for business esistenti pianificate dall'utente per il futuro vengono convertite in riunioni teams. Se si vuole, è possibile uscire da queste riunioni come riunioni Skype for business specificando `-MigrateMeetingsToTeams $false` quando si concede TeamsUpgradePolicy oppure deselezionando la casella di controllo nel portale di amministrazione di teams.   Tieni presente che la possibilità di convertire le riunioni da Skype for business a teams non è disponibile quando concedi a TeamsUpgradePolicy una base a livello di tenant. 
 
 <sup>3</sup> attualmente, teams non ha la possibilità di disabilitare la funzionalità Teams and Channels, quindi questo rimane abilitato per ora.
 
@@ -143,7 +143,7 @@ Queste istanze di criteri possono essere concesse a singoli utenti o a una base 
 
 ## <a name="federation-considerations"></a>Considerazioni sulla Federazione
 
-La Federazione da Teams a un altro utente che usa Skype for business richiede che l'utente dei team sia ospitato online in Skype for business. Alla fine, gli utenti di teams ospitati in Skype for business locale potranno eseguire la Federazione con solo gli utenti di teams.
+La Federazione da Teams a un altro utente che usa Skype for business richiede che l'utente dei team sia ospitato online in Skype for business.
 
 TeamsUpgradePolicy regola il routing per le chiamate e le Chat federate in arrivo. Il comportamento di routing federato è lo stesso per gli scenari dello stesso tenant, *ad eccezione della modalità isole*.  Quando i destinatari sono in modalità isole: 
 - Chat e chiamate avviate da teams Land in SfB se il destinatario si trova in un *tenant federato*.
@@ -153,7 +153,7 @@ TeamsUpgradePolicy regola il routing per le chiamate e le Chat federate in arriv
 Per altre informazioni, Vedi [coesistenza con Skype for business](https://docs.microsoft.com/en-us/MicrosoftTeams/coexistence-chat-calls-presence).
 
 ## <a name="the-teams-client-user-experience-when-using-sfb-modes"></a>Esperienza utente del client teams quando si usano le modalità SfB
-Quando un utente si trova in una delle modalità Skype for business (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings), tutte le chat in arrivo e le chiamate vengono instradate al client Skype for business dell'utente. Per evitare la confusione degli utenti finali e garantire un corretto routing, le funzionalità di chiamata e chat nel client Team vengono automaticamente disabilitate quando un utente si trova in una delle modalità Skype for business. Allo stesso modo, la pianificazione delle riunioni in team viene automaticamente disabilitata quando gli utenti si trovano nelle modalità SfBOnly o SfBWithTeamsCollab e vengono abilitati automaticamente quando un utente si trova in modalità SfBWithTeamsCollabAndMeetings. Per informazioni dettagliate, vedere [esperienza del client teams e conformità alle modalità di](https://docs.microsoft.com/en-us/MicrosoftTeams/teams-client-experience-and-conformance-to-coexistence-modes)coesistenza.
+Quando un utente si trova in una delle modalità Skype for business (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings), tutte le chat in arrivo e le chiamate vengono instradate al client Skype for business dell'utente. Per evitare la confusione degli utenti finali e garantire un corretto routing, le funzionalità di chiamata e chat nel client Team vengono automaticamente disabilitate quando un utente si trova in una delle modalità Skype for business. Allo stesso modo, la pianificazione delle riunioni in team viene automaticamente disabilitata quando gli utenti si trovano nelle modalità SfBOnly o SfBWithTeamsCollab e vengono abilitati automaticamente quando un utente si trova in modalità SfBWithTeamsCollabAndMeetings. Per informazioni dettagliate, vedere [esperienza del client teams e conformità alle modalità di coesistenza](https://docs.microsoft.com/en-us/MicrosoftTeams/teams-client-experience-and-conformance-to-coexistence-modes).
 
 > [!Note] 
 > - Prima della consegna dell'applicazione automatica di team e canali, le modalità SfbOnly e SfBWithTeamsCollab si comportano allo stesso modo.

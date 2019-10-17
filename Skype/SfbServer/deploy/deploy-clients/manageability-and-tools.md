@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c336ee9a-1ed8-4f64-9f7f-89549ae24c40
 description: Leggere questo argomento per informazioni sugli strumenti di gestione per Skype room System.
-ms.openlocfilehash: 51cb9ed85558a97b4afbeed8e4addd2ade6debec
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: c9289d3fffa78dd7ffd94fa17784c1b06c2278b1
+ms.sourcegitcommit: fa55f9e3690fcca36b530bd13a9eeaa44120b87c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775327"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37547259"
 ---
 # <a name="skype-room-system-manageability-and-tools"></a>Gestibilità e strumenti per Skype room System
  
@@ -29,9 +29,6 @@ Per altre informazioni, vedere l'articolo seguente:
   
 - [Distribuire il portale Web amministrativo di SRS V1 in Skype for Business Server](../deploy-conferencing/room-system-v1-administrative-web-portal.md)
     
-## <a name="system-center-operations-manager"></a>System Center Operations Manager
-
-Skype room System può essere monitorato tramite System Center Operations Manager (SCOM) scaricando il [Management Pack di Skype room System](https://www.microsoft.com/download/details.aspx?id=42320) e installarlo nel server di SCOM. Puoi usare SCOM per impostare gli avvisi, monitorare l'integrità del sistema room Skype, generare report uptime e molto altro. Skype room System include un agente di monitoraggio preinstallato che può essere configurato in maniera che punti al server SCOM. Vedere la Guida all'installazione fornita dal produttore del sistema Skype room System per sapere come configurare l'agente di monitoraggio in Skype room System.
   
 ## <a name="exchange-checklist"></a>Elenco di controllo di Exchange
 

@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: eeeafb99a7cf1344d973b5963eab5b0c4ee8eaea
-ms.sourcegitcommit: 9145ce09efe490d4d79b2a52ecc318f54d2feb2c
+ms.openlocfilehash: b1756cc58e485971157c0429e8180a5f5e507ec8
+ms.sourcegitcommit: 61deca3fd35142d210ab8307c21a576b3301ec84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37522771"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37553783"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -220,7 +220,7 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-**Dial by Extension** Se si abilita questa opzione (attualmente disponibile solo in alcuni tenant), i chiamanti possono connettersi con gli utenti dell'organizzazione immettendo l'estensione del telefono. È possibile selezionare gli utenti elencati come disponibili o non disponibili per l' **estensione dial by** nella pagina facoltativa dell'ambito di chiamata. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l'estensione dial by.
+**Dial by Extension** (questa funzionalità di anteprima non è ancora disponibile per il pubblico generale) se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione immettendo l'estensione del telefono. È possibile selezionare gli utenti elencati come disponibili o non disponibili per l' **estensione dial by** nella pagina facoltativa dell'ambito di chiamata. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l'estensione dial by.
 
 > [!IMPORTANT]
 > Attenersi alla seguente procedura:
@@ -231,7 +231,7 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 >- Un operatore automatico può essere configurato per l'opzione Componi per nome o per chiamata tramite estensione, ma non entrambe.
 
 > [!NOTE]
-> Se si vogliono usare sia le caratteristiche per il **nome** che per il dial by **Extension** , è possibile creare l'operatore automatico principale (abilitato per la **chiamata per nome**) che richiede ai chiamanti di scegliere un'opzione di menu se conosce l'estensione dell'utente e impostare l'opzione su trasferire la chiamata a un operatore automatico abilitato per l'estensione dial by. 
+> Se si vogliono usare sia le caratteristiche per il **nome** che per il dial by **Extension** , è possibile creare l'operatore automatico principale (abilitato per la **chiamata per nome**) che richiede ai chiamanti di scegliere un'opzione di menu se conosce l'estensione dell'utente e impostare l'opzione su trasferire la chiamata a un operatore automatico abilitato per l'estensione dial by.
 
 * * *
 
@@ -326,7 +326,7 @@ Fare clic su **Avanti** per impostare l'ambito di chiamata, quindi di **nuovo** 
 
 ![Schermata che mostra la pagina dell'ambito di chiamata](media/1bcb185c-00db-43a7-b5c4-9b021c0627f7.png)
 
-In questa pagina è possibile impostare chi è elencato nella directory e disponibile per il nome della chiamata quando una persona chiama l'organizzazione. La chiamata per nome è impostata su **disattivato** per impostazione predefinita in una schermata precedente. Se sono stati creati dial plan, tutti gli utenti con un'estensione saranno disponibili se in precedenza è stato selezionato **dial by Extension** .
+In questa pagina è possibile impostare chi è elencato nella directory e disponibile per il nome della chiamata quando una persona chiama l'organizzazione. La chiamata per nome è impostata su **disattivato** per impostazione predefinita in una schermata precedente. Tutti gli utenti con un'estensione saranno disponibili se in precedenza è stato selezionato **Componi per estensione** .
 
 ![Icona del numero 1, un callout nello](media/teamscallout1.png) screenshot precedente **include** le opzioni in questa sezione sono **tutti gli utenti online** o i gruppi di utenti **personalizzati**
 
