@@ -29,7 +29,7 @@ ms.locfileid: "35792883"
 ---
 # <a name="office-365-enterprise-e1-e3-and-e4"></a>Office 365 Enterprise E1, E3 e E4
 
-Se è stato già acquistato il piano [Office 365 Enterprise E1](https://products.office.com/it-IT/business/office-365-enterprise-e1-business-software), [E3](https://products.office.com/it-IT/business/office-365-enterprise-e3-business-software) o E4, queste sono le licenze per i componenti aggiuntivi da acquistare per ottenere altre funzionalità Skype for Business.
+Se è stato già acquistato il piano [Office 365 Enterprise E1](https://products.office.com/en-us/business/office-365-enterprise-e1-business-software), [E3](https://products.office.com/en-us/business/office-365-enterprise-e3-business-software) o E4, queste sono le licenze per i componenti aggiuntivi da acquistare per ottenere altre funzionalità Skype for Business.
 
 |||
 |:-----|:-----|
