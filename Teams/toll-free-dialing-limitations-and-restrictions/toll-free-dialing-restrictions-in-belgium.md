@@ -9,7 +9,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-- Teams_ITAdmin_Help
 - M365-voice
 search.appverid: MET150
 audience: Admin
@@ -22,30 +21,30 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: bfa0429d4ff7db8d234917ad7581f74bf302a853
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: b5f79e74373622348478b98f46e5f3cbe60acbb7
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36182701"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571630"
 ---
-# <a name="toll-free-dialing-restrictions-in-belgium"></a><span data-ttu-id="1dbbe-105">Restrizioni di chiamata gratuita in Belgio</span><span class="sxs-lookup"><span data-stu-id="1dbbe-105">Toll-free dialing restrictions in Belgium</span></span>
+# <a name="toll-free-dialing-restrictions-in-belgium"></a><span data-ttu-id="0cd11-105">Restrizioni di chiamata gratuita in Belgio</span><span class="sxs-lookup"><span data-stu-id="0cd11-105">Toll-free dialing restrictions in Belgium</span></span>
 
-<span data-ttu-id="1dbbe-106">[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.</span><span class="sxs-lookup"><span data-stu-id="1dbbe-106">[Find another country or region](../toll-free-dialing-limitations-and-restrictions.md), or learn more about toll-free dialing limitations and restrictions.</span></span>
+<span data-ttu-id="0cd11-106">[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.</span><span class="sxs-lookup"><span data-stu-id="0cd11-106">[Find another country or region](../toll-free-dialing-limitations-and-restrictions.md), or learn more about toll-free dialing limitations and restrictions.</span></span>
 
 
-|<span data-ttu-id="1dbbe-107">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="1dbbe-107">**Details**</span></span>|<span data-ttu-id="1dbbe-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="1dbbe-108">**Description**</span></span>|
+|<span data-ttu-id="0cd11-107">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="0cd11-107">**Details**</span></span>|<span data-ttu-id="0cd11-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="0cd11-108">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="1dbbe-109">È disponibile una chiamata gratuita?</span><span class="sxs-lookup"><span data-stu-id="1dbbe-109">Is toll-free calling available?</span></span>  <br/> |<span data-ttu-id="1dbbe-110">Sì</span><span class="sxs-lookup"><span data-stu-id="1dbbe-110">Yes</span></span>  <br/> |
-|<span data-ttu-id="1dbbe-111">Formato di chiamata (s)</span><span class="sxs-lookup"><span data-stu-id="1dbbe-111">Dialing format(s)</span></span>  <br/> | <span data-ttu-id="1dbbe-112">0 800 XX XXX</span><span class="sxs-lookup"><span data-stu-id="1dbbe-112">0 800 XX XXX</span></span> <br>|
-|<span data-ttu-id="1dbbe-113">Codice ISO paese/area geografica</span><span class="sxs-lookup"><span data-stu-id="1dbbe-113">Country/region ISO code</span></span>  <br/> |<span data-ttu-id="1dbbe-114">ESSERE</span><span class="sxs-lookup"><span data-stu-id="1dbbe-114">BE</span></span>  <br/> |
-|<span data-ttu-id="1dbbe-115">Isola/territorio coperto</span><span class="sxs-lookup"><span data-stu-id="1dbbe-115">Island/territory covered</span></span>  <br/> |<span data-ttu-id="1dbbe-116">Non applicabile</span><span class="sxs-lookup"><span data-stu-id="1dbbe-116">Not applicable</span></span>  <br/> |
-|<span data-ttu-id="1dbbe-117">Isola/territorio non coperto</span><span class="sxs-lookup"><span data-stu-id="1dbbe-117">Island/territory not covered</span></span>  <br/> | <span data-ttu-id="1dbbe-118">Non applicabile</span><span class="sxs-lookup"><span data-stu-id="1dbbe-118">Not applicable</span></span>  <br/>  |
-|<span data-ttu-id="1dbbe-119">Disponibilità di linee cablate/fisse</span><span class="sxs-lookup"><span data-stu-id="1dbbe-119">Wired/fixed line availability</span></span>  <br/> |<span data-ttu-id="1dbbe-120">Sì</span><span class="sxs-lookup"><span data-stu-id="1dbbe-120">Yes</span></span>  <br/> |
-|<span data-ttu-id="1dbbe-121">Disponibilità rete mobile</span><span class="sxs-lookup"><span data-stu-id="1dbbe-121">Mobile network availability</span></span>  <br/> | <span data-ttu-id="1dbbe-122">Sì, a tariffa Premium.</span><span class="sxs-lookup"><span data-stu-id="1dbbe-122">Yes, at premium rate.</span></span> <br/> |
-|<span data-ttu-id="1dbbe-123">Commenti, limitazioni e problemi di accesso</span><span class="sxs-lookup"><span data-stu-id="1dbbe-123">Comments, restrictions, and access issues</span></span>  <br/> |<span data-ttu-id="1dbbe-124">Nessuno</span><span class="sxs-lookup"><span data-stu-id="1dbbe-124">None</span></span>  <br/> |
+|<span data-ttu-id="0cd11-109">È disponibile una chiamata gratuita?</span><span class="sxs-lookup"><span data-stu-id="0cd11-109">Is toll-free calling available?</span></span>  <br/> |<span data-ttu-id="0cd11-110">Sì</span><span class="sxs-lookup"><span data-stu-id="0cd11-110">Yes</span></span>  <br/> |
+|<span data-ttu-id="0cd11-111">Formato di chiamata (s)</span><span class="sxs-lookup"><span data-stu-id="0cd11-111">Dialing format(s)</span></span>  <br/> | <span data-ttu-id="0cd11-112">0 800 XX XXX</span><span class="sxs-lookup"><span data-stu-id="0cd11-112">0 800 XX XXX</span></span> <br>|
+|<span data-ttu-id="0cd11-113">Codice ISO paese/area geografica</span><span class="sxs-lookup"><span data-stu-id="0cd11-113">Country/region ISO code</span></span>  <br/> |<span data-ttu-id="0cd11-114">ESSERE</span><span class="sxs-lookup"><span data-stu-id="0cd11-114">BE</span></span>  <br/> |
+|<span data-ttu-id="0cd11-115">Isola/territorio coperto</span><span class="sxs-lookup"><span data-stu-id="0cd11-115">Island/territory covered</span></span>  <br/> |<span data-ttu-id="0cd11-116">Non applicabile</span><span class="sxs-lookup"><span data-stu-id="0cd11-116">Not applicable</span></span>  <br/> |
+|<span data-ttu-id="0cd11-117">Isola/territorio non coperto</span><span class="sxs-lookup"><span data-stu-id="0cd11-117">Island/territory not covered</span></span>  <br/> | <span data-ttu-id="0cd11-118">Non applicabile</span><span class="sxs-lookup"><span data-stu-id="0cd11-118">Not applicable</span></span>  <br/>  |
+|<span data-ttu-id="0cd11-119">Disponibilità di linee cablate/fisse</span><span class="sxs-lookup"><span data-stu-id="0cd11-119">Wired/fixed line availability</span></span>  <br/> |<span data-ttu-id="0cd11-120">Sì</span><span class="sxs-lookup"><span data-stu-id="0cd11-120">Yes</span></span>  <br/> |
+|<span data-ttu-id="0cd11-121">Disponibilità rete mobile</span><span class="sxs-lookup"><span data-stu-id="0cd11-121">Mobile network availability</span></span>  <br/> | <span data-ttu-id="0cd11-122">Sì, a tariffa Premium.</span><span class="sxs-lookup"><span data-stu-id="0cd11-122">Yes, at premium rate.</span></span> <br/> |
+|<span data-ttu-id="0cd11-123">Commenti, limitazioni e problemi di accesso</span><span class="sxs-lookup"><span data-stu-id="0cd11-123">Comments, restrictions, and access issues</span></span>  <br/> |<span data-ttu-id="0cd11-124">Nessuno</span><span class="sxs-lookup"><span data-stu-id="0cd11-124">None</span></span>  <br/> |
    
-## <a name="related-topics"></a><span data-ttu-id="1dbbe-125">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="1dbbe-125">Related topics</span></span>
-[<span data-ttu-id="1dbbe-126">Limitazioni e restrizioni di chiamata senza pedaggio</span><span class="sxs-lookup"><span data-stu-id="1dbbe-126">Toll-free dialing limitations and restrictions</span></span>](../toll-free-dialing-limitations-and-restrictions.md)
+## <a name="related-topics"></a><span data-ttu-id="0cd11-125">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="0cd11-125">Related topics</span></span>
+[<span data-ttu-id="0cd11-126">Limitazioni e restrizioni di chiamata senza pedaggio</span><span class="sxs-lookup"><span data-stu-id="0cd11-126">Toll-free dialing limitations and restrictions</span></span>](../toll-free-dialing-limitations-and-restrictions.md)
 
-[<span data-ttu-id="1dbbe-127">Ottenere numeri di servizio per Skype for Business e Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="1dbbe-127">Getting service phone numbers for Skype for Business and Microsoft Teams</span></span>](/microsoftteams/getting-service-phone-numbers)
+[<span data-ttu-id="0cd11-127">Ottenere numeri di servizio per Skype for Business e Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="0cd11-127">Getting service phone numbers for Skype for Business and Microsoft Teams</span></span>](/microsoftteams/getting-service-phone-numbers)
