@@ -12,18 +12,17 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-- Teams_ITAdmin_Help
 description: Informazioni su come usare i modelli di teams per creare un team con canali predefiniti.
 ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b620f163f1dc071bde8a0ed43bf7fe546a9bc04a
-ms.sourcegitcommit: 111bf6255fa877b3fce70fa8166e8ec5a6643434
+ms.openlocfilehash: d5832ccce69c9863e364f94c6e850f8d938ac162
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "36181630"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569565"
 ---
 # <a name="get-started-with-teams-templates"></a>Introduzione ai modelli di Teams 
 
@@ -80,7 +79,7 @@ Per impostazione predefinita, il modello di base è impostato su **standard** ch
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Creare un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta) (in anteprima)
+- [Crea team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta) (in anteprima)
 - [Nuovo team](https://docs.microsoft.com/powershell/module/teams/New-Team?view=teams-ps)
 - [Formazione per amministratori per Microsoft Teams](itadmin-readiness.md)
 - [Introduzione ai modelli di team di vendita al dettaglio](get-started-with-retail-teams-templates.md)

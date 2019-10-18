@@ -12,16 +12,15 @@ description: Informazioni su come gestire i criteri di conservazione e su come g
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f2f3cc0c74b85d0b243dd8fefcd6bce1f2451fae
-ms.sourcegitcommit: 6b73b89f29a0eabbd9cdedf995d5325291594bac
+ms.openlocfilehash: 5e78e5837aa0e42f268b50bff47dab6aae71d5d2
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37018813"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569952"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 

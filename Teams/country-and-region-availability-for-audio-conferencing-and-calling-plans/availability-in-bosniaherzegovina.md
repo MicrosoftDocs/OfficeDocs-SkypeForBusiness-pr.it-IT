@@ -10,7 +10,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-- Teams_ITAdmin_Help
 - M365-voice
 search.appverid: MET150
 audience: Admin
@@ -25,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Bosnia ed Erzegovina.
-ms.openlocfilehash: 1d382c02249f39a42f7f61a70c7687367e0cbad4
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: f170b030acde7ccf07a39d47ae2e914935e1b225
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36774481"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571096"
 ---
 # <a name="availability-in-bosnia-amp-herzegovina"></a>Disponibilità in Bosnia &amp; Erzegovina
 

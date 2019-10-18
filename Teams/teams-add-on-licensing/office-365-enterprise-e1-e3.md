@@ -9,7 +9,6 @@ ms.topic: reference
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 audience: Admin
 appliesto:
@@ -19,12 +18,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle licenze per i componenti aggiuntivi, le caratteristiche e su come acquistare i piani di Office 365 Enterprise E1 e E3. '
-ms.openlocfilehash: 30a7f18382c6fcbc28d80089c5cd9f855c00aa8e
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 7c8851da745009439cd473c9bbd1e90cc7498363
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242648"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571181"
 ---
 # <a name="office-365-enterprise-e1-and-e3"></a>Office 365 Enterprise E1 e E3
 
@@ -44,7 +43,7 @@ Se è già stato acquistato il piano [Office 365 Enterprise E1](https://products
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
 
-2. Accedere agli abbonamenti al**componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto
+2. Accedere agli**abbonamenti al componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto
 
 3. Verrà visualizzato il componente aggiuntivo sistema telefonico. Selezionare **Acquista ora**. 
 
@@ -57,7 +56,7 @@ Il piano E3 fa parte del tuo Action Pack. Per acquistare i componenti aggiuntivi
 
 1. Acquistare una sede di E3 dal [sito Web di marketing](https://go.microsoft.com/fwlink/?LinkId=24393). Scegliere l'opzione di aggiungere l'abbonamento al tenant esistente.
 
-2. Accedere all'interfaccia di amministrazione di Microsoft 365 e accedere agli abbonamenti al**componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto.
+2. Accedere all'interfaccia di amministrazione di Microsoft 365 e accedere agli**abbonamenti al componente aggiuntivo** **fatturazione** > **Servizi** > di acquisto.
 
     Ora vedrai i prezzi e l'opzione per acquistare i componenti aggiuntivi per il sistema telefonico e per la audioconferenza.
 
@@ -66,7 +65,7 @@ Il piano E3 fa parte del tuo Action Pack. Per acquistare i componenti aggiuntivi
 
 In alcune situazioni non verrà visualizzata l'opzione per acquistare componenti aggiuntivi Microsoft teams nell'interfaccia di amministrazione di Microsoft 365:
 
-- **Office 365 Business Premium è stato acquistato tramite GoDaddy**. In questo caso, non è possibile acquistare componenti aggiuntivi Microsoft teams. È necessario passare al piano E3 (che GoDaddy non vende), quindi è possibile acquistarlo. [Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- **Office 365 Business Premium è stato acquistato tramite GoDaddy**. In questo caso, non è possibile acquistare componenti aggiuntivi Microsoft teams. È necessario passare al piano E3 e quindi acquistarlo. [Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 - **Hai un impegno mensile invece che annuale**. In alcuni casi, i clienti che hanno un impegno mensile non possono acquistare i componenti aggiuntivi (questo è diverso dal metodo di pagamento, che può essere mensile). Si tratta di un problema noto che stiamo correggendo. [Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 

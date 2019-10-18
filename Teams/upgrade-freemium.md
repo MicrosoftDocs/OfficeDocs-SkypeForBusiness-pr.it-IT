@@ -14,16 +14,15 @@ localization_priority: Normal
 ms.custom:
 - NewAdminCenter_Update
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 881437654744ef1d314f239ee98b7119e774cd00
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: fd0de5ba0901b77ef42e40ca0b18228d5d78e6fb
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236399"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568488"
 ---
 <a name="upgrade-microsoft-teams-free-to-office-365-subscription-version"></a>Aggiornare Microsoft teams gratuitamente alla versione dell'abbonamento a Office 365
 ======================================================
@@ -92,7 +91,7 @@ Al termine dell'aggiornamento, vedere [Introduzione a Microsoft teams](get-start
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- Per altre informazioni sulle versioni di team e sulle relative funzionalità, vedere [confrontare i piani](https://products.office.com/microsoft-teams/free)di teams.
+- Per altre informazioni sulle versioni di team e sulle relative funzionalità, vedere [confrontare i piani di teams](https://products.office.com/microsoft-teams/free).
 - Per altre informazioni sull'aggiornamento alla versione completa dei team, vedere [aggiornamento da teams Free to teams](https://support.office.com/article/Upgrade-from-Teams-free-to-Teams-29475bbd-a34f-4175-9b33-d44430f8ad39).
 - Per altre attività di amministrazione associate all'aggiornamento degli utenti, tra cui l'aggiunta di licenze utente, la modifica dei nomi utente e l'assegnazione di password temporanee, vedere gli [amministratori che eseguono l'aggiornamento da teams Free a un abbonamento a pagamento](https://support.office.com/article/for-admins-upgrading-from-teams-free-to-a-paid-subscription-75a95e7f-001e-42d0-a787-ae8b992d5a52).
 - Per informazioni sulla gestione di teams Free nell'organizzazione, vedere [gestire la versione gratuita di Microsoft teams](manage-freemium.md).

@@ -10,19 +10,21 @@ ms.service: msteams
 search.appverid: MET150
 description: ''
 localization_priority: Normal
-ms.collection: Strat_MT_TeamsAdmin
+ms.collection:
+- M365-collaboration
+- Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 63e54de51233997eab2ba17ab4f284afd03a21c0
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: eeab39a68827925fa9805380763f2375910ee793
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36232189"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568709"
 ---
 # <a name="microsoft-staffhub-to-be-retired"></a>Microsoft StaffHub per essere ritirato
 
-Efficace il 1 ° ottobre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo.
+Efficace 31 dicembre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo.
 
 Queste modifiche sono parte dei nostri continui sforzi per consentire a tutti i dipendenti di Microsoft 365. Con le funzionalità per gli operatori di I FIRSTLINE ora in teams, ogni dipendente dell'organizzazione potrà usare teams per semplificare la giornata lavorativa, collaborare con i colleghi e accedere a informazioni e competenze per aiutarli a svolgere il loro lavoro migliore.
 
@@ -32,11 +34,11 @@ Queste modifiche sono parte dei nostri continui sforzi per consentire a tutti i 
 
 #### <a name="when-will-staffhub-be-retired"></a>Quando verrà ritirato StaffHub?
 
-A partire dalla metà di aprile 2019, Microsoft StaffHub non sarà più disponibile per i nuovi tenant e non sarà più possibile accedere all'app dall'icona di avvio delle app di Office 365 nei tenant esistenti. Gli utenti correnti saranno comunque in grado di usare il servizio fino al 1 ° ottobre 2019, ma non verranno messe a disposizione altre funzionalità.
+A partire dalla metà di aprile 2019, Microsoft StaffHub non sarà più disponibile per i nuovi tenant e non sarà più possibile accedere all'app dall'icona di avvio delle app di Office 365 nei tenant esistenti. Gli utenti correnti saranno comunque in grado di usare il servizio fino al 31 dicembre 2019, ma non verranno resi disponibili altre funzionalità.
 
 #### <a name="what-will-happen-once-staffhub-is-retired"></a>Cosa succede quando StaffHub si ritira?
 
-Microsoft StaffHub smetterà di funzionare per tutti gli utenti il 1 ° ottobre 2019. Tutti gli utenti che provano ad aprire l'app verranno visualizzati un messaggio che li indirizza a scaricare teams. Se l'utente ha una licenza attiva che include teams e l'organizzazione ha adottato la procedura appropriata per abilitare i team, i dati e le funzionalità di base di StaffHub saranno resi disponibili al momento della transizione a teams.
+Microsoft StaffHub smetterà di funzionare per tutti gli utenti il 1 ° gennaio 2020. Tutti gli utenti che provano ad aprire l'app verranno visualizzati un messaggio che li indirizza a scaricare teams. Se l'utente ha una licenza attiva che include teams e l'organizzazione ha adottato la procedura appropriata per abilitare i team, i dati e le funzionalità di base di StaffHub saranno resi disponibili al momento della transizione a teams.
 
 Tra il 2019 e il 2019 di aprile StaffHub gli utenti riceveranno le notifiche in-app per incoraggiarle a usare teams.
 
@@ -44,7 +46,7 @@ Tra il 2019 e il 2019 di aprile StaffHub gli utenti riceveranno le notifiche in-
 
 In 2019 gennaio, Teams ha iniziato ad offrire turni già disponibili in Microsoft StaffHub. Questa funzionalità consente ai responsabili di pianificare e distribuire le pianificazioni di turni e i membri del team la possibilità di rivedere la pianificazione e di apportare le richieste di modifica di programmazione dai dispositivi mobili. Per altre informazioni, vedere [gestire l'app turni per l'organizzazione in teams](manage-the-shifts-app-for-your-organization-in-teams.md).
 
-Ci impegniamo per offrire un'esperienza utente superiore e per portare le funzionalità esclusive di StaffHub in teams. Per altre informazioni sulle caratteristiche che verranno messe a disposizione in teams, Vedi le [caratteristiche dei lavoratori di i FIRSTLINE presto](firstline-worker-features-coming-to-teams.md)disponibili in teams.
+Ci impegniamo per offrire un'esperienza utente superiore e per portare le funzionalità esclusive di StaffHub in teams. Per altre informazioni sulle caratteristiche che verranno messe a disposizione in teams, Vedi le [caratteristiche dei lavoratori di i FIRSTLINE presto disponibili in teams](firstline-worker-features-coming-to-teams.md).
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Cosa è necessario fare per prepararsi a questa modifica?
 
@@ -73,7 +75,7 @@ Per altre informazioni, vedere [disponibilità di turni](manage-the-shifts-app-f
 
 #### <a name="how-do-i-get-shifts"></a>Come si ottengono I turni? 
 
-Se si è già in un piano che include turni, è possibile iniziare a usare turni oggi come parte di teams. [Per](https://support.office.com/en-us/article/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6)iniziare, vedere i turni.
+Se si è già in un piano che include turni, è possibile iniziare a usare turni oggi come parte di teams. Per iniziare, vedere i [turni](https://support.office.com/en-us/article/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6).
 
 #### <a name="which-devices-or-platforms-is-shifts-available-on"></a>Su quali dispositivi o piattaforme sono disponibili i turni?
 
@@ -127,7 +129,7 @@ Per impostazione predefinita, teams è abilitato per tutte le organizzazioni. Si
 
 #### <a name="what-if-i-currently-have-skype-for-business-enabled-in-my-organization-but-not-teams"></a>Cosa fare se al momento è abilitato Skype for business nell'organizzazione ma non in teams?
 
-Teams supporta la coesistenza con Skype for business. Per altre informazioni, vedere [comprendere i team e](../../teams-and-skypeforbusiness-coexistence-and-interoperability.md) le linee guida per la coesistenza e l'interoperabilità e la [migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](../../migration-interop-guidance-for-teams-with-skype.md).
+Teams supporta la coesistenza con Skype for business. Per altre informazioni, vedere comprendere i team e le linee guida per [la coesistenza e l'interoperabilità](../../teams-and-skypeforbusiness-coexistence-and-interoperability.md) e la [migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](../../migration-interop-guidance-for-teams-with-skype.md).
 
 #### <a name="does-each-user-need-to-have-an-office-365-account-or-azure-active-directory-azure-ad-account"></a>Ogni utente deve avere un account di Office 365 o un account di Azure Active Directory (Azure AD)?
 
@@ -159,7 +161,7 @@ Un'altra opzione consiste nel fatto che gli amministratori eseguano i cmdlet **A
  
 #### <a name="what-happens-to-chats-in-staffhub"></a>Cosa succede alle chat in StaffHub?
 
-Per facilitare la transizione degli utenti, è necessario eseguire la migrazione della cronologia delle chat di dati in StaffHub a teams. La quantità di cronologia delle chat che sarà disponibile in teams dipende da quanto presto configuri l'organizzazione per la transizione. Si consiglia di intervenire entro il 30 giugno 2019 per avere abbastanza tempo per passare 90 giorni di dati entro il 1 ° ottobre 2019.
+Per facilitare la transizione degli utenti, è necessario eseguire la migrazione della cronologia delle chat di dati in StaffHub a teams. La quantità di cronologia delle chat che sarà disponibile in teams dipende da quanto presto configuri l'organizzazione per la transizione. Si consiglia di intervenire entro il 30 giugno 2019 per avere abbastanza tempo per passare 90 giorni di dati entro il 31 dicembre 2019.
 
 Assicurarsi che la creazione di gruppi di Office 365 sia abilitata nell'interfaccia di amministrazione di Microsoft 365 prima che venga avviata la transizione, poiché questo è essenziale per poter trasferire i dati della chat di StaffHub in teams. La mancata attivazione di questo servizio entro il 30 giugno 2019 si tradurrà in una data di migrazione successiva o in un minor numero di dati della chat da copiare.
 
@@ -207,8 +209,8 @@ Se sono state create eventuali integrazioni con le API StaffHub, queste API sara
 
 #### <a name="is-reporting-available-to-view-shifts-usage-across-my-organization"></a>La creazione di report è disponibile per visualizzare l'utilizzo di turni nell'organizzazione?
 
-Poiché turni è un'app in teams, è possibile visualizzare l'utilizzo tramite report teams. Per altre informazioni, vedere [Reporting teams nell'](../../teams-analytics-and-reports/teams-reporting-reference.md) interfaccia di amministrazione di Microsoft teams e [report attività in teams nell'interfaccia di amministrazione di Microsoft 365](../../teams-activity-reports.md).
+Poiché turni è un'app in teams, è possibile visualizzare l'utilizzo tramite report teams. Per altre informazioni, vedere [Reporting teams nell'interfaccia di amministrazione di Microsoft teams](../../teams-analytics-and-reports/teams-reporting-reference.md) e [report attività in teams nell'interfaccia di amministrazione di Microsoft 365](../../teams-activity-reports.md).
 
 #### <a name="where-can-i-provide-feedback"></a>Dove è possibile inviare commenti e suggerimenti?
   
-Nell'app per dispositivi mobili toccare **altro** nell'angolo in alto a sinistra dello schermo, scegliere **Impostazioni** > **Invia feedback** o **segnala un problema**. Allo stesso modo, nelle app desktop e Web, nell'angolo in basso a sinistra della schermata **** > , vai a**condividere un'idea** o **segnala un problema**.
+Nell'app per dispositivi mobili toccare **altro** nell'angolo in alto a sinistra dello schermo, scegliere **Impostazioni** > **Invia feedback** o **segnala un problema**. Allo stesso modo, nelle app desktop e Web, nell'angolo in basso a sinistra della schermata **, vai** > a**condividere un'idea** o **segnala un problema**.

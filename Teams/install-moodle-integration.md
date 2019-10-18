@@ -11,15 +11,16 @@ search.appverid: MET150
 description: Informazioni su come installare e configurare l'app di integrazione di Moodle per Microsoft Teams
 keywords: Plug-in integrazione app di Moodle Teams
 localization_priority: Normal
-ms.collection: Teams_ITAdmin_Help
+ms.collection:
+- M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4b712a6261a73472b6f134e3b38359f30e489cce
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 5c6e2d8cfb4e3932d4559a5c5c7b618189da7e57
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245381"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572059"
 ---
 # <a name="installing-the-moodle-integration-with-microsoft-teams"></a>Installazione dell'integrazione di Moodle con Microsoft Teams
 
@@ -35,7 +36,7 @@ Per consentire agli amministratori IT di impostare facilmente questa integrazion
 * Installazione automatica della scheda Moodle e di Moodle Assistant bot in ogni team sincronizzato. (Presto disponibile)
 * Pubblicazione con un solo clic dell'app Moodle nell'App Store private teams. (Presto disponibile)
 
-Per altre informazioni sulle funzionalità fornite da questa integrazione, procedere [](https://education.microsoft.com/courses-and-resources/resources/microsoft-teams-moodle)come segue.
+Per altre informazioni sulle funzionalità fornite da questa integrazione [, procedere come](https://education.microsoft.com/courses-and-resources/resources/microsoft-teams-moodle)segue.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -111,7 +112,7 @@ Quindi devi registrare Moodle come applicazione in Azure Active Directory. È st
     * Nella sezione **Sincronizza utenti con Azure ad** selezionare le caselle di controllo valide per l'ambiente. In genere si seleziona almeno:
         * Creare account in Moodle per gli utenti in Azure AD
         * Aggiornare tutti gli account in Moodle per gli utenti in Azure AD
-    * Nella sezione restrizione per la **creazione degli** utenti puoi configurare un filtro per limitare gli utenti di Azure ad che verranno sincronizzati con Moodle.
+    * Nella sezione **restrizione per la creazione degli** utenti puoi configurare un filtro per limitare gli utenti di Azure ad che verranno sincronizzati con Moodle.
     * La sezione **mapping campi utente** ti consente di personalizzare il mapping dei campi del profilo utente di Azure ad in Moodle.
     * Nella sezione **sincronizzazione teams** è possibile scegliere di creare automaticamente gruppi (ad esempio Team) per alcuni o tutti i corsi di Moodle esistenti.
 1. Per convalidare i processi di cron (ed eseguirli manualmente se si vuole per la prima esecuzione), fare clic sul collegamento **pagina Gestione attività pianificata** nella sezione **Sincronizza utenti con Azure ad** . In questo modo verrà riportata la pagina **attività pianificate** .
@@ -122,8 +123,8 @@ Quindi devi registrare Moodle come applicazione in Azure Active Directory. È st
     * Quindi è necessario abilitare l'incorporamento di frame. Fare clic sul collegamento **sicurezza http** , quindi fare clic sulla casella di controllo accanto a **Consenti incorporamento frame**.
     * Il passaggio successivo consiste nell'abilitare i servizi Web che consentiranno le funzionalità API di Moodle. Fare clic sul collegamento **funzionalità avanzate** , quindi verificare che la casella di controllo accanto a **Abilita servizi Web** sia selezionata.
     * Infine, è necessario abilitare i servizi esterni per Office 365. Fare clic sul collegamento **servizi esterni** , quindi:
-        * Fare clic su **modifica** nella riga **Moodle Office 365** WebServices.
-        * Contrassegnare la casella di **** controllo accanto a abilitata, quindi fare clic su **Salva modifiche**
+        * Fare clic su **modifica** nella riga **Moodle Office 365 WebServices** .
+        * Contrassegnare la casella di controllo accanto a **abilitata**, quindi fare clic su **Salva modifiche**
     * Sarà quindi necessario modificare le autorizzazioni degli utenti autenticati per consentire loro di creare token di servizio Web. Fare clic sul collegamento **"utente autenticato" del ruolo di modifica** . Scorrere verso il basso e individuare la funzionalità **Crea un token di servizio Web** e selezionare la casella di controllo **Consenti** .
 
 ## <a name="step-3-deploy-the-moodle-assistant-bot-to-azure"></a>Passaggio 3: distribuire Moodle Assistant bot in Azure
@@ -160,7 +161,7 @@ Dopo aver completato la distribuzione di risorse in Azure, è necessario configu
 4. Selezionare la risorsa **Web App bot** nell'elenco delle risorse del gruppo.
 5. Copiare l' **endpoint della messaggistica** dalla sezione **Panoramica** .
 6. In Moodle aprire la pagina **impostazioni del team** del plug-in di Office 365 Moodle.
-7. Nel campo **endpoint bot** incollare l'URL appena copiato e cambiare i *messaggi* di Word in webhook. ** Ora l'URL dovrebbe essere simile`https://botname.azurewebsites.net/api/webhook`
+7. Nel campo **endpoint bot** incollare l'URL appena copiato e cambiare i *messaggi* di Word in *webhook*. Ora l'URL dovrebbe essere simile`https://botname.azurewebsites.net/api/webhook`
 8. Fare clic su **Salva modifiche**
 9. Dopo aver salvato le modifiche, tornare alla scheda **impostazioni del team** , fare clic sul pulsante **Scarica manifesto file** e salvare il pacchetto manifesto nel computer (lo si userà nella sezione successiva).
 

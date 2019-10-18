@@ -10,17 +10,16 @@ ms.service: msteams
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 appliesto:
 - Microsoft Teams
 description: Informazioni su cosa è necessario per eseguire la migrazione a routing diretto da una prospettiva di configurazione di Skype for business online e teams.
-ms.openlocfilehash: 49980a0364e729fc41e6fe716de336a8a28f85bb
-ms.sourcegitcommit: c554b09527817dc3e06b10509f6668b42ccc5cb9
+ms.openlocfilehash: 9fb644c938c61fd9dd1c78362ad90bfe855e97ec
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "36184849"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572180"
 ---
 # <a name="migrate-to-direct-routing"></a>Eseguire la migrazione a routing diretto
 
@@ -49,15 +48,12 @@ OnPremLineURI |N/D|Il numero di telefono deve essere sincronizzato dall'annuncio
 |HostedVoiceMailPolicy |BusinessVoice|BusinessVoice|BusinessVoice|BusinessVoice|
 |VoiceRoutingPolicy|Ha un valore|Ha un valore|Ha un valore|N/D|
 |OnlineVoiceRoutingPolicy|$Null|$Null|$Null|Ha un valore|
-|TeamsUpgradePolicy<sup>1</sup>|TeamsOnly, SfBOnly o Islands|$Null|$Null|Isole o TeamsOnly|
-|TeamsInterPolicy<sup>2</sup></br>CallingDefaultClient-leggere la nota seguente.|Teams o SfB |SfB|SfB|Squadre|
+|TeamsUpgradePolicy<sup>1</sup>|TeamsOnly, SfBOnly|$Null|$Null|TeamsOnly|
 |TeamsCallingPolicy</br>AllowPrivateCalling|True|N/D|N/D|True|
 |TeamsCallingPolicy</br>AllowGroupCalling|True|N/D|N/D|True|
 ||||||
 
 <sup>1</sup> La scelta della modalità corretta di TeamsUpgradePolicy dipende dallo scenario. Leggere l'esperienza vocale in diverse modalità nelle [linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](migration-interop-guidance-for-teams-with-skype.md).
-
-<sup>2</sup> Come annunciato in precedenza, TeamsInteropPolicy sarà ritirato (mirato alla fine del Q3) e la sua funzionalità viene consolidata in TeamsUpgradePolicy. L'interoperabilità e la migrazione verranno gestite usando la modalità di coesistenza come determinato da TeamsUpgradePolicy, ora disponibile. La selezione della modalità dell'utente regola sia il routing delle chiamate in arrivo che delle chat e in quale client l'utente può avviare chat e chiamate o pianificare riunioni. Mentre TeamsInteropPolicy sarà ritirato, deve comunque essere impostato in parallelo con TeamsUpgradePolicy durante l'eliminazione graduale.  
 
 Come parte di questo sforzo, Microsoft ha recentemente aggiornato l'"interfaccia di amministrazione di Microsoft Teams" (noto anche come Modern Portal) per riflettere il nuovo modello di gestione basato sulle modalità di coesistenza. In Modern Portal la configurazione di TeamsUpgradePolicy ora imposta automaticamente anche TeamsInteropPolicy su un valore uniforme, quindi TeamsInteropPolicy non viene più esposto nell'interfaccia utente. Tuttavia, gli amministratori che usano PowerShell devono comunque impostare sia TeamsUpgradePolicy che TeamsInteropPolicy insieme per garantire il routing corretto. Una volta completata la transizione a TeamsUpgradePolicy, non sarà più necessario impostare anche TeamsInteropPolicy.
 

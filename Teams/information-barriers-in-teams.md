@@ -7,18 +7,19 @@ ms.date: 07/08/2019
 ms.topic: article
 ms.service: msteams
 audience: admin
-ms.collection: Teams_ITAdmin_Help
+ms.collection:
+- M365-collaboration
 search.appverid: MET150
 ms.reviewer: vikramju
 description: Informazioni sulle barriere informative e sul loro impatto sui team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1238e0e4d015a9216523c96e981e3f37ad54c131
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: bd9ac22a45d0e76e8f2d31c3d11be726148b3863
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245364"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572070"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -46,10 +47,10 @@ Il servizio di valutazione dei criteri barriera delle informazioni determina se 
 
 ## <a name="managing-information-barrier-policies"></a>Gestione dei criteri di barriera delle informazioni
 
-I criteri di barriera delle informazioni vengono gestiti nel centro protezione & conformità (SCC) di Office 365 tramite i cmdlet di PowerShell. Per altre informazioni, vedere [definire i criteri per le barriere](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies)informative.
+I criteri di barriera delle informazioni vengono gestiti nel centro protezione & conformità (SCC) di Office 365 tramite i cmdlet di PowerShell. Per altre informazioni, vedere [definire i criteri per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
 
 > [!IMPORTANT]
-> Prima di configurare o definire i criteri, **è necessario abilitare la ricerca di directory con ambito in Microsoft teams**. Attendere almeno 24 ore dopo l'abilitazione della ricerca nell'ambito della directory prima di configurare o definire i criteri per le barriere informative. Leggi [altre informazioni sui prerequisiti per le barriere](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies#prerequisites)informative.
+> Prima di configurare o definire i criteri, **è necessario abilitare la ricerca di directory con ambito in Microsoft teams**. Attendere almeno 24 ore dopo l'abilitazione della ricerca nell'ambito della directory prima di configurare o definire i criteri per le barriere informative. Leggi [altre informazioni sui prerequisiti per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies#prerequisites).
 
 ## <a name="information-barriers-administrator-role"></a>Ruolo amministratore barriere informative
 
@@ -81,7 +82,7 @@ Attualmente gli utenti avvertono quanto segue se un criterio barriera informativ
 
 - **Scheda persone** -un utente può visualizzare alcuni utenti bloccati nella scheda **persone** . L'utente può selezionare gli utenti bloccati.
 - **Scheda attività** : se un utente visita la scheda **attività** di un utente bloccato, non verranno visualizzati messaggi. La scheda **attività** Visualizza solo i post di canale e non ci sarebbero canali comuni tra i due utenti.
-- **** Organigrammi: se un utente accede a un organigramma in cui viene visualizzato un utente bloccato, l'utente verrà visualizzato nel grafico e sarà possibile fare clic su azioni nel grafico, ma le azioni (ad esempio le chiamate) non verranno passate.
+- **Organigrammi: se** un utente accede a un organigramma in cui viene visualizzato un utente bloccato, l'utente verrà visualizzato nel grafico e sarà possibile fare clic su azioni nel grafico, ma le azioni (ad esempio le chiamate) non verranno passate.
 - **Scheda persone** : se un utente partecipa a una conversazione e viene successivamente bloccato, gli altri utenti possono ancora vedere la scheda persone per l'utente bloccato. Tutte le azioni elencate nella scheda, ad esempio le chiamate e le chat, saranno disponibili, ma le azioni non verranno superate.
 - **Contatti suggeriti** : nell'elenco contatti suggeriti (elenco contatti iniziale visualizzato per i nuovi utenti) gli utenti possono visualizzare tutti i contatti suggeriti (inclusi gli utenti bloccati). Tuttavia, se un utente fa clic sul nome di un utente bloccato per aprire il riquadro chat, il messaggio verrà bloccato.
 - **Contatti chat** : un utente può visualizzare gli utenti bloccati nell'elenco contatti chat.
@@ -92,7 +93,7 @@ In arrivo: gli utenti sperimenteranno quanto segue se un criterio barriera infor
 
 - **Scheda persone** -un utente non può visualizzare gli utenti bloccati nella scheda **persone** .
 - **Scheda attività** : se un utente visita la scheda **attività** di un utente bloccato, non verranno visualizzati messaggi. La scheda **attività** Visualizza solo i post di canale e non ci sarebbero canali comuni tra i due utenti.
-- **** Organigrammi: se un utente accede a un organigramma in cui viene visualizzato un utente bloccato, l'utente bloccato non verrà visualizzato nell'organigramma e verrà visualizzato un messaggio di errore.
+- **Organigrammi: se** un utente accede a un organigramma in cui viene visualizzato un utente bloccato, l'utente bloccato non verrà visualizzato nell'organigramma e verrà visualizzato un messaggio di errore.
 - **Scheda persone** : se un utente partecipa a una conversazione e l'utente viene bloccato in seguito, gli altri utenti vedranno un messaggio di errore al posto della scheda persone quando passa il puntatore del mouse sul nome dell'utente bloccato. Le azioni elencate nella scheda, ad esempio le chiamate e le chat, non saranno disponibili.
 - **Contatti suggeriti** : gli utenti bloccati non vengono visualizzati nell'elenco dei contatti suggeriti (l'elenco dei contatti iniziale visualizzato per i nuovi utenti).
 - **Contatti chat** -un utente non può visualizzare gli utenti bloccati nell'elenco contatti chat.
@@ -112,8 +113,8 @@ Per altri dettagli, inclusi i piani e i prezzi, Vedi soluzioni per la [conformit
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-- Per ulteriori informazioni sulle barriere informative, vedere [barriere](https://docs.microsoft.com/office365/securitycompliance/information-barriers)informative.
+- Per ulteriori informazioni sulle barriere informative, vedere [barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers).
 
-- Per configurare i criteri di barriera delle informazioni, vedere [definire i criteri per le barriere](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies) informative
+- Per configurare i criteri di barriera delle informazioni, vedere [definire i criteri per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies)
 
 - Per modificare o rimuovere i criteri di barriera delle informazioni, vedere [modificare o rimuovere i criteri di barriera delle informazioni](https://docs.microsoft.com/office365/securitycompliance/information-barriers-edit-segments-policies.md)

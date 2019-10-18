@@ -9,7 +9,6 @@ ms.assetid: c17e8ea6-b83b-4345-9401-47a6c8b13aad
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 search.appverid: MET150
 audience: Admin
@@ -22,12 +21,12 @@ ms.custom:
 - Legal
 hideEdit: true
 description: Microsoft raccoglie i dati di censimento, utilizzo e errore per capire in che modo viene usato Skype for business e dove gli utenti incontrano problemi. I dati vengono usati per pianificare i miglioramenti del prodotto.
-ms.openlocfilehash: ff09801ca4810dcb92d778ca2ad3c85482accddd
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: d5e4e72ac06eb0638ed25dbf48321afd22b503ed
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240975"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571847"
 ---
 # <a name="skype-for-business-and-microsoft-teams-data-collection-practices"></a>Procedure per la raccolta di dati in Skype for business e Microsoft Teams
 
@@ -55,7 +54,7 @@ I dati del censimento vengono acquisiti solo per consentire, supportare e miglio
 |UserID  <br/> |E296D735-4F36-4E18-7C3B-52E1A02A0164  <br/> |L'ID viene hashato due volte: una volta sul client e di nuovo sul servizio di telemetria. L'hashing garantisce che l'ID non possa essere collegato a un utente specifico.  <br/> |
 |DeviceID  <br/> |5E872200-F546-4CCD-8F23-AF5F507AA2DD  <br/> |L'ID dispositivo è un GUID generato in modo casuale una volta sul dispositivo e inviato al servizio di telemetria.  <br/> |
 
-I dati del censimento non contengono informazioni che identifichino l'organizzazione o gli utenti. Per altre informazioni, vedere l'informativa [sulla privacy di Skype for business](https://www.microsoft.com/privacystatement/SkypeforBusiness/Default.aspx) .
+I dati del censimento non contengono informazioni che identifichino l'organizzazione o gli utenti. Per altre informazioni, vedere l' [informativa sulla privacy di Skype for business](https://www.microsoft.com/privacystatement/SkypeforBusiness/Default.aspx) .
 
 I dati del censimento sono attivati per impostazione predefinita e non possono essere disattivati da amministratori o utenti finali.
 

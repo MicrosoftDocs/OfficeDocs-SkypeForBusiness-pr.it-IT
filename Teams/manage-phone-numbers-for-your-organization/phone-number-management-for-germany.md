@@ -10,7 +10,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 audience: Admin
 appliesto:
@@ -20,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Germania per Microsoft teams.
-ms.openlocfilehash: 3cd1d4102131f4e2c545c663999b7a1780e8db28
-ms.sourcegitcommit: 3abc3dcaa79ebd8e4326fa282874500c4425e64f
+ms.openlocfilehash: 11158e3927539485cb5fc0149ce44aa051fef947
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "36184498"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573141"
 ---
 # <a name="phone-number-management-for-germany"></a>Gestione dei numeri di telefono per la Germania
 

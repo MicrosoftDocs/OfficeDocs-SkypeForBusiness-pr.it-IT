@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 ms.collection:
-- Teams_ITAdmin_Help
+- Teams_ITAdmin_GuestAccess
 - M365-collaboration
 ms.reviewer: sbhatta
 search.appverid: MET150
@@ -18,12 +18,12 @@ ms.custom:
 f1keywords: ms.teamsadmincenter.orgwidesettings.guestaccess.turnonguestaccessarticle
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f00b585b1473a366769650c2a59f6dee2a9d3bea
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 186c83b82c396a21fe0098a561bcd4db13370140
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243166"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571575"
 ---
 <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
 ===================================================
@@ -51,23 +51,23 @@ Le impostazioni Guest sono impostate in Azure Active Directory. Le modifiche pos
 
 4.  Impostare i toggle in **chiamata**, **riunione**e **messaggistica** **su** attivato o **disattivato**, a seconda delle funzionalità che si desidera consentire agli utenti guest.
 
-    - **Effettuare chiamate private** : attivare questa impostazione **** per consentire agli utenti di effettuare chiamate peer-to-peer.
-    - **Consenti video IP** -attivare questa impostazione **** per consentire agli utenti di usare il video nelle chiamate e nelle riunioni.
+    - **Effettuare chiamate private** : attivare **questa impostazione per consentire agli utenti** di effettuare chiamate peer-to-peer.
+    - **Consenti video IP** -attivare questa impostazione per consentire agli utenti di **usare il video** nelle chiamate e nelle riunioni.
     - **Modalità di condivisione dello schermo** : questa impostazione controlla la disponibilità della condivisione dello schermo per gli utenti guest. 
        - Attivare questa impostazione su **disabilitata** per rimuovere la possibilità per gli utenti di condividere i loro schermi in teams. 
        - Attivare questa impostazione su **singola applicazione** per consentire la condivisione di singole applicazioni. 
        - Attivare questa impostazione su **intero schermo** per consentire la condivisione completa dello schermo.
-    - **Consenti riunione ora** : attivare questa impostazione **** per consentire agli utenti di usare la funzionalità incontra ora in Microsoft teams.
-    - **Modifica messaggi inviati** -attivare questa impostazione **** per consentire agli utenti di modificare i messaggi inviati in precedenza.
-    - **Gli utenti possono eliminare i messaggi inviati** : attivare **** questa impostazione per consentire agli utenti di eliminare i messaggi inviati in precedenza.
-    - **Chat** : attiva questa impostazione **** per offrire agli utenti la possibilità di usare la chat in teams.
-    - **Usare giphy nelle conversazioni** : attivare questa impostazione **** per consentire agli utenti di usare giphy nelle conversazioni. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una valutazione del contenuto.
+    - **Consenti riunione ora** : attivare **questa impostazione per consentire agli utenti** di usare la funzionalità incontra ora in Microsoft teams.
+    - **Modifica messaggi inviati** -attivare **questa impostazione per consentire agli utenti** di modificare i messaggi inviati in precedenza.
+    - **Gli utenti possono eliminare i messaggi inviati** : attivare **questa impostazione per consentire agli utenti** di eliminare i messaggi inviati in precedenza.
+    - **Chat** : attiva **questa impostazione per offrire agli utenti** la possibilità di usare la chat in teams.
+    - **Usare giphy nelle conversazioni** : attivare **questa impostazione per consentire agli utenti** di usare giphy nelle conversazioni. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una valutazione del contenuto.
     - **Classificazione contenuto Giphy** -selezionare una classificazione nell'elenco a discesa:
        - **Consenti tutto il contenuto** : gli utenti potranno inserire tutte le giphy in chat, indipendentemente dalla valutazione del contenuto.
        - **Moderato** : gli utenti potranno inserire giphy in chat, ma saranno limitati a moderatamente dal contenuto per adulti.
        - **Strict** : gli utenti saranno in grado di inserire giphy in chat, ma verranno limitati dall'inserimento di contenuto per adulti.
-    - **Usare memi nelle conversazioni** -attivare questa impostazione per **** consentire agli utenti di usare i memi nelle conversazioni.
-    - **Usare gli adesivi nelle conversazioni** : attivare questa **** impostazione per consentire agli utenti di usare gli adesivi nelle conversazioni. 
+    - **Usare memi nelle conversazioni** -attivare **questa impostazione per consentire agli utenti** di usare i memi nelle conversazioni.
+    - **Usare gli adesivi nelle conversazioni** : attivare questa **impostazione per consentire agli utenti** di usare gli adesivi nelle conversazioni. 
 
 
 5.  Fai clic su **Salva**.

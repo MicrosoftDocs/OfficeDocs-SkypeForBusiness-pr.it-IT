@@ -10,20 +10,22 @@ ms.service: msteams
 search.appverid: MET150
 description: Informazioni su come spostare i team di Microsoft StaffHub e pianificare i dati in turni in Microsoft teams.
 localization_priority: Normal
-ms.collection: Strat_MT_TeamsAdmin
+ms.collection:
+- M365-collaboration
+- Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5bf9776dbf5a5992354f542436b4904d53d58508
-ms.sourcegitcommit: 6ba9eeb81b7d55ffc319d6d6658d0ecac83c2159
+ms.openlocfilehash: 03131bd9a89ae5f54fc8318b004385de3e32e26e
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "37142046"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569683"
 ---
 # <a name="move-your-microsoft-staffhub-teams-to-shifts-in-microsoft-teams"></a>Spostare i team di Microsoft StaffHub in turni in Microsoft Teams
 
 > [!IMPORTANT]
-> Efficace il 1 ° ottobre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub smetterà di funzionare per tutti gli utenti il 1 ° ottobre 2019. Chiunque tenti di aprire StaffHub verrà visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub per ritirarsi](microsoft-staffhub-to-be-retired.md).
+> Efficace 31 dicembre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub smetterà di funzionare per tutti gli utenti il 31 dicembre 2019. Chiunque tenti di aprire StaffHub verrà visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub per ritirarsi](microsoft-staffhub-to-be-retired.md).
 
 L'app turni in teams offre un approccio semplice per gestire le pianificazioni e il flusso costante di scambi di turni e di annullamenti che si verificano giornalmente. I membri del team possono accedere alle informazioni di programmazione e spostamento direttamente nell'app e in tutti i loro dispositivi per impostare le preferenze, gestire le pianificazioni e richiedere il tempo libero.
 
@@ -44,13 +46,13 @@ Per eseguire i passaggi di questo articolo, è necessario essere un amministrato
 
 ### <a name="when-to-move-to-teams"></a>Quando si passa a teams
 
-Efficace il 1 ° ottobre 2019, StaffHub sarà ritirato. Ti invitiamo a iniziare a usare teams oggi e iniziare a eseguire la transizione di team e utenti dell'organizzazione da StaffHub. La gestione della pianificazione è la caratteristica più usata in StaffHub, ti consigliamo di usare l'app turni in teams Moving Forward.
+Efficace il 31 dicembre 2019 StaffHub sarà ritirato. Ti invitiamo a iniziare a usare teams oggi e iniziare a eseguire la transizione di team e utenti dell'organizzazione da StaffHub. La gestione della pianificazione è la caratteristica più usata in StaffHub, ti consigliamo di usare l'app turni in teams Moving Forward.
 
 ### <a name="what-is-moved-to-teams"></a>Elementi spostati in teams
 
 Quando si sposta un team di StaffHub, i membri del team, i dettagli degli utenti, le pianificazioni del team e i dati della chat vengono spostati in teams. I file non vengono spostati quando si sposta un team di StaffHub. Se un team di StaffHub contiene file che si vuole anche trasferire in teams, è possibile trasferire i file in un passaggio separato.
 
-Ogni team di StaffHub ha bisogno di un gruppo di Office 365 corrispondente. Se a un team di StaffHub non è associato un gruppo di Office 365, viene creato automaticamente uno per supportare la transizione. Considerata la differenza tra team e nomi di gruppo tra team e StaffHub, è possibile che venga visualizzato un nome di team diverso in teams.
+Ogni team di StaffHub ha bisogno di un gruppo di Office 365 corrispondente. Se un team di StaffHub è associato a un gruppo di Office 365, l'impostazione della privacy del gruppo viene mantenuta quando si trasferisce il team. Se a un team di StaffHub non è associato un gruppo di Office 365, viene automaticamente creato un gruppo con l'impostazione di privacy private per supportare la transizione.  Considerata la differenza tra team e nomi di gruppo tra team e StaffHub, è possibile che venga visualizzato un nome di team diverso in teams. 
 
 Durante la transizione da Teams da StaffHub a teams, gli utenti non avranno più accesso alle loro pianificazioni in StaffHub e verranno reindirizzati ai turni in teams. È consigliabile comunicare questo cambiamento nell'organizzazione per ridurre al minimo le interruzioni e incoraggiare gli utenti ad adottare ed esplorare team. Se si dispone di Azure AD Premium, è possibile [eseguire un report](run-report-to-show-staffhub-usage.md) per ottenere un elenco di utenti di StaffHub nell'organizzazione che devono conoscere la modifica.  
 
@@ -60,7 +62,7 @@ Non è possibile eseguire l'opzione rollback dopo avere spostato un team di Staf
 
 Ci sono tempi di inattività minimi (meno di un secondo, se presenti) per gli utenti quando il loro team è passato da StaffHub a turni in teams. Gli utenti possono continuare a usare StaffHub fino al completamento del passaggio a teams. Al termine dello spostamento, i membri del team vedranno un messaggio per comunicare loro che devono iniziare a usare i turni in teams per accedere alla pianificazione del team. Ecco un esempio del messaggio visualizzato dagli utenti in StaffHub dopo che il team di StaffHub è stato spostato in teams.
 
-![Esempio di messaggio visualizzato dagli utenti.] (../../media/move-staffhub-teams-to-shifts-in-teams-message-to-users.png "Esempio di messaggio visualizzato dagli utenti in StaffHub dopo lo spostamento del team di StaffHub in teams")
+![Esempio di messaggio visualizzato dagli utenti.](../../media/move-staffhub-teams-to-shifts-in-teams-message-to-users.png "Esempio di messaggio visualizzato dagli utenti in StaffHub dopo lo spostamento del team di StaffHub in teams")
 
 ## <a name="prepare"></a>Preparare
 
@@ -74,8 +76,10 @@ Prima di trasferire un team di StaffHub in teams, verificare che:
 - Teams è abilitato per tutti gli utenti del tenant.
 - La creazione di gruppi di Office 365 è abilitata nel tenant.
 - StaffHub teamId è valido.
+- Il team di StaffHub ha almeno un proprietario del team.
 - Il team di StaffHub contiene membri.
 - Tutti i membri del team di StaffHub sono collegati a un account Azure AD.
+- A tutti i membri del team di StaffHub è assegnata una licenza teams.  
 
 Se questi prerequisiti non sono soddisfatti, la richiesta di trasferimento avrà esito negativo.
 
@@ -90,7 +94,7 @@ Ogni utente deve avere una licenza Microsoft 365 o Office 365 attiva da [un pian
 
 ### <a name="install-the-prerelease-version-of-the-staffhub-powershell-module"></a>Installare la versione prerelease del modulo di PowerShell StaffHub
 
-Se non è già stato installato, [installare la versione prerelease del modulo di PowerShell StaffHub](install-the-staffhub-powershell-module.md). 
+Se non è già stato installato, [installare la versione prerelease del modulo di PowerShell StaffHub](install-the-staffhub-powershell-module.md).
 
 Per trasferire i team di StaffHub in teams, è necessario che sia installata la versione del modulo prerelease.
 
@@ -101,15 +105,21 @@ Ogni membro del team di StaffHub deve essere collegato a un account di Azure Act
 - Un proprietario del team ha aggiunto un utente che non dispone di un account Azure AD.
 - Un proprietario del team ha invitato un utente a un team di StaffHub e l'utente non ha accettato l'invito.
 
-Puoi collegare un account di Azure AD per questi utenti.  Ecco come fare.
+Questi utenti hanno account inattivi e mostrano uno stato utente di sconosciuto, invitato o InviteRejected. Puoi collegare un account di Azure AD per questi utenti.  Ecco come fare.
 
-#### <a name="get-a-list-of-all-users-on-staffhub-teams-that-have-team-members-that-arent-linked-to-an-azure-ad-account"></a>Ottenere un elenco di tutti gli utenti dei team di StaffHub che hanno membri del team che non sono collegati a un account di Azure AD
+#### <a name="get-a-list-of-all-inactive-accounts-on-staffhub-teams"></a>Ottenere un elenco di tutti gli account inattivi nei team di StaffHub
 
-Esegui il seguente comando:
+Eseguire la procedura seguente per ottenere un elenco di tutti gli account inattivi nei team di StaffHub ed esportare l'elenco in un file CSV.
+
 ```
-$StaffHubTeams = Get-StaffHubTeamsForTenant
-$StaffHubTeams[0] = $StaffHubTeams[0] | Where-Object { $_.ManagedBy -eq 'StaffHub' }
-foreach($team in $StaffHubTeams[0]) {Get-StaffHubMember -TeamId $team.Id | where {$_.Email -eq $null -or $_.State -eq "Invited"}}
+$InvitedUsersObject = @()
+$StaffHubTeams = Get-StaffHubTeamsForTenant $StaffHubTeams[0] = $StaffHubTeams[0] | Where-Object { $_.ManagedBy -eq 'StaffHub' }
+foreach($team in $StaffHubTeams[0]) { write-host $team.name $StaffHubUsers = Get-StaffHubMember -TeamId $team.Id | where {$_.State -eq "Invited"}
+foreach($StaffHubUser in $StaffHubUsers) {
+        $InvitedUsersObject  += New-Object PsObject -Property @{         "TeamID"="$($team.Id)"         "TeamName"="$($team.name)"         "MemberID"="$($StaffHubUser.Id)" }
+}
+}
+$InvitedUsersObject | SELECT * $InvitedUsersObject | SELECT * | export-csv InvitedUsers.csv -NoTypeInformation  
 ```
 
 #### <a name="link-the-account"></a>Collegare l'account
@@ -124,7 +134,7 @@ Esegui una delle operazioni seguenti:
     1. Eseguire il cmdlet [Remove-StaffHubMember](https://docs.microsoft.com/powershell/module/staffhub/Remove-StaffHubMember?view=staffhub-ps) per rimuovere l'account non provisioning dal team di StaffHub.
     2. Eseguire il cmdlet [Add-StaffHubMember](https://docs.microsoft.com/powershell/module/staffhub/add-staffhubmember?view=staffhub-ps) per aggiungere di nuovo l'account al team di StaffHub usando l'UPN.
 
-- Rimuovere l'account utente non collegato. Usare questa opzione l'account utente non è più necessario.
+- Rimuovere l'account inattivo. Usare questa opzione se l'account utente non è più necessario.
 
 ### <a name="assign-the-firstlineworker-app-setup-policy-to-users"></a>Assegnare i criteri di configurazione dell'app FirstlineWorker agli utenti
 
@@ -179,9 +189,9 @@ Move-StaffHubTeam -TeamId "TEAM_4bbc03af-c764-497f-a8a5-1c0708475e5f"
 Ecco un esempio della risposta che ricevi quando invii una richiesta per trasferire un team di StaffHub in teams.
 
 ```
-    jobId                                      teamId                                      teamAlreadyInMicrosofteams  
-    ---------------------------------------    ----------------------------------------    ---------------------------          
-    JOB_81b1f191-3e19-45ce-ab32-3ef51f100000   TEAM_4bbc03af-c764-497f-a8a5-1c0708475e5f   false
+ jobId                                      teamId                                      teamAlreadyInMicrosofteams  
+---------------------------------------    ----------------------------------------    ---------------------------          
+JOB_81b1f191-3e19-45ce-ab32-3ef51f100000   TEAM_4bbc03af-c764-497f-a8a5-1c0708475e5f   false
 ```
 
 Per controllare lo stato di una richiesta di trasferimento, eseguire la procedura seguente.
@@ -198,9 +208,9 @@ Get-TeamMigrationJobStatus -JobId "JOB_81b1f191-3e19-45ce-ab32-3ef51f100000"
 Ecco un esempio della risposta che si ottiene quando è in corso una manovra.
 
 ```
-    jobId                                     status       teamId                                     isO365GroupCreated  Error
-    ----------------------------------------  ----------   ----------------------------------------   ------------------  -----    
-    JOB_81b1f191-3e19-45ce-ab32-3ef51f100000  inProgress   TEAM_4bbc03af-c764-497f-a8a5-1c0708475e5f  true                none
+jobId                                     status       teamId                                     isO365GroupCreated  Error
+----------------------------------------  ----------   ----------------------------------------   ------------------  -----    
+JOB_81b1f191-3e19-45ce-ab32-3ef51f100000  inProgress   TEAM_4bbc03af-c764-497f-a8a5-1c0708475e5f  true                none
 ```
 
 ### <a name="move-files-from-a-staffhub-team-to-teams"></a>Trasferire i file da un team di StaffHub a teams
@@ -259,10 +269,10 @@ Ecco un esempio della risposta.
 Per tutti i team già spostati in teams o già presenti in teams, il jobId sarà "null" perché non è necessario inviare un processo per spostare il team.
 
 ```
-    jobId                                      teamId                                      teamAlreadyInMicrosofteams  
-    ----------------------------------------   -----------------------------------------   --------------------------         
-    null                                       TEAM_4bbc03af-c764-497f-a8a5-1c0708475e5f   true
-    JOB_81b1f191-3e19-45ce-ab32-3ef51f100000   TEAM_81b1f191-3e19-45ce-ab32-3ef51f100000   false
+jobId                                      teamId                                      teamAlreadyInMicrosofteams  
+----------------------------------------   -----------------------------------------   --------------------------         
+null                                       TEAM_4bbc03af-c764-497f-a8a5-1c0708475e5f   true
+JOB_81b1f191-3e19-45ce-ab32-3ef51f100000   TEAM_81b1f191-3e19-45ce-ab32-3ef51f100000   false
 ```
 
 #### <a name="move-specific-staffhub-teams"></a>Trasferimento di team di StaffHub specifici
@@ -305,6 +315,32 @@ Se i team di StaffHub spostati contengono file che si vuole spostare anche in te
 I report sull'utilizzo consentono di comprendere meglio i modelli di utilizzo e di fornire informazioni dettagliate su dove assegnare priorità agli sforzi di formazione e comunicazione nell'organizzazione. È possibile eseguire report che mostrano l'utilizzo complessivo dei team, i tipi di attività che gli utenti eseguono in team, il modo in cui gli utenti si connettono ai team e altro ancora. Per altre informazioni, vedere [segnalazione di team nell'interfaccia di amministrazione di Microsoft teams](../../teams-analytics-and-reports/teams-reporting-reference.md) e [report attività in teams nell'interfaccia di amministrazione di Microsoft 365](../../teams-activity-reports.md).
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
+
+**Come ottenere ulteriori informazioni sugli errori di errore**
+
+Eseguire la procedura seguente per ottenere altre informazioni sugli errori di "errore" che si verificano quando si tenta di trasferire un team:
+
+```
+Move-StaffHubTeam -TeamId <TeamId>
+$res = Get-TeamMigrationJobStatus -JobId <JobId>
+$res.Status
+```
+
+Verrà visualizzato uno degli Stati seguenti restituiti: Success, Failure, InProgress, queued.
+
+Se viene restituito "errore", eseguire le operazioni seguenti per ottenere altre informazioni sull'errore:
+
+```
+$res.Result.Error.Innererror
+```
+
+**Quando si prova a trasferire un team di StaffHub, lo stato viene visualizzato come "errore" e viene visualizzato il messaggio di errore "Impossibile recuperare le categorie di SKU applicabili per l'utente"**
+
+Questo problema può verificarsi se uno o più membri del team non hanno una licenza teams. Accedere a portal.office.com, individuare il gruppo e quindi verificare che ai membri del gruppo sia assegnata una licenza teams.
+
+**Quando si prova a trasferire un team di StaffHub, lo stato viene visualizzato come "errore" e viene visualizzato un messaggio di errore "proprietario del team non trovato"**
+
+Questo problema può verificarsi se il gruppo associato al team di StaffHub non ha un proprietario del team. Accedere a portal.office.com, individuare il gruppo e quindi aggiungere uno o più proprietari al gruppo.
 
 **Quando si prova a trasferire i file da StaffHub a teams, viene visualizzato il messaggio di errore "autorizzazione negata".**
 

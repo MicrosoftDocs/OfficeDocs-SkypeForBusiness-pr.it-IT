@@ -9,7 +9,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 audience: Admin
 appliesto:
@@ -20,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni sulle operazioni che il sistema telefonico può eseguire per l'utente. "
-ms.openlocfilehash: 94fcff8e694eaee7bb57963519f67307f6754644
-ms.sourcegitcommit: a0df7479662b3bea488c19722ad588981f58a5e4
+ms.openlocfilehash: d6bc3d8265059520e3f8448f800de91331e26e01
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36447923"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568532"
 ---
 # <a name="what-is-phone-system-in-office-365"></a>Che cos’è il Sistema telefonico in Office 365?
 
@@ -39,7 +38,7 @@ Per abilitare le chiamate a dispositivi fissi e telefoni cellulari, il sistema t
   
 - Acquistare un piano per le chiamate (nazionale o nazionale e internazionale) per Office 365. Vedere [sistema telefonico e piani per chiamate](calling-plan-landing-page.md)
 
-- Usare la connettività PSTN locale, dove il software in locale si connette con l'infrastruttura di telefonia esistente. Vedere [soluzioni](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)per la telefonia Microsoft.
+- Usare la connettività PSTN locale, dove il software in locale si connette con l'infrastruttura di telefonia esistente. Vedere [soluzioni per la telefonia Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
 
 ## <a name="more-about-calling-plans"></a>Ulteriori informazioni sui piani di chiamata
 

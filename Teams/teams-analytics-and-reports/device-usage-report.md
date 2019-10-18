@@ -10,17 +10,16 @@ ms.reviewer: svemu
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni su come usare il report utilizzo del dispositivo teams nell'interfaccia di amministrazione di Microsoft teams per vedere come gli utenti dell'organizzazione si connettono ai team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a1da28ccda6394a2e88685132150516cfed2c7fc
-ms.sourcegitcommit: f1c4255b52576c602d528c580941404eb547bc78
+ms.openlocfilehash: c961b6c5897d0c494d0461a3533cae63fa613d41
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "37131626"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568398"
 ---
 # <a name="microsoft-teams-device-usage-report"></a>Report sull'utilizzo di dispositivi Microsoft Teams
 
@@ -31,7 +30,7 @@ Il report utilizzo di dispositivi teams nell'interfaccia di amministrazione di M
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo del dispositivo teams**.
 2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.
 
-    ![Screenshot del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout] (../media/teams-reports-device-usage-with-callouts.png "Screenshot del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout")
+    ![Screenshot del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout](../media/teams-reports-device-usage-with-callouts.png "Screenshot del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 

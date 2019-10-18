@@ -11,17 +11,14 @@ audience: admin
 description: Identificare un gruppo direttivo di principali stakeholder e Project leader per identificare gli obiettivi di distribuzione, tenere traccia dello stato di avanzamento e rimuovere i blocchi.
 localization_priority: Normal
 search.appverid: MET150
-ms.collection:
-- Teams_ITAdmin_PracticalGuidance
-- M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e4f264195a6c378f3724d99677f108abf631fed8
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 482779904ba49e945f6b071b3be17fe0a6f290dd
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36232865"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570409"
 ---
 # <a name="steering-committee"></a>Comitato direttivo
 

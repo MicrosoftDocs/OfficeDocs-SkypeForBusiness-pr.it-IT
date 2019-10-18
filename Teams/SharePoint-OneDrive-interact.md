@@ -12,16 +12,15 @@ search.appverid: MET150
 description: Informazioni su come interagire con SharePoint Online e OneDrive for business con Microsoft teams, ad esempio la modalità di archiviazione dei file di chat privati e la relazione tra il team, il canale e la raccolta documenti.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d28a4a968fc9e478c3a13fb38acd1019221b5dcb
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: af1d12eda58dc481ba28bf96ff4ecbfeab8ed5f0
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233022"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572550"
 ---
 # <a name="how-sharepoint-online-and-onedrive-for-business-interact-with-microsoft-teams"></a>Come interagire con SharePoint Online e OneDrive for business con Microsoft Teams
 
@@ -66,7 +65,7 @@ La scheda **file** in teams è simile alla visualizzazione documenti di SharePoi
 
 - Vedere Opzioni aggiuntive nel menu **nuovo** file.
 - Sincronizzare i file con l'unità locale.
-- Nel menu **tutti i documenti** , passare dalla **visualizzazione elenco** a **elenco compatto** alla **** visualizzazione riquadri.
+- Nel menu **tutti i documenti** , passare dalla **visualizzazione elenco** a **elenco compatto** alla visualizzazione **riquadri** .
 - Identificare i file che richiedono attenzione o avere malware.
 - Verificare immediatamente se un file è di sola lettura o estratto.
 - Estrarre e archiviare i file.

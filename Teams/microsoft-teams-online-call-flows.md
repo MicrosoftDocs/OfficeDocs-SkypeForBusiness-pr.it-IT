@@ -11,18 +11,16 @@ audience: admin
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 - M365-voice
 appliesto:
 - Microsoft Teams
 description: Descrive in che modo i team usano i flussi di Office 365 in diverse topologie.
-ms.openlocfilehash: d98f789017c0f5388a0adebd382d947e716d7fc9
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 91be46f556419dfd1ba8c52a99b8f06a19c63542
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239354"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573413"
 ---
 # <a name="microsoft-teams-call-flows"></a>Flussi delle chiamate di Microsoft Teams
 
@@ -115,7 +113,7 @@ Tieni presente che:
 
 Per altre informazioni, vedere le seguenti topologie facoltative più avanti nell'articolo:
 
-- La distribuzione locale di Skype for business è descritta nella **topologia ibrida**di teams.
+- La distribuzione locale di Skype for business è descritta nella **topologia ibrida di teams**.
 - Il routing diretto del sistema telefonico (per la connettività PSTN) è descritto in **Teams con topologia di routing diretta**.
 - Express route è descritto in **Teams con Express Route Optimization**.
 

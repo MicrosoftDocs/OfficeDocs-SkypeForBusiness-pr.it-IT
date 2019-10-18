@@ -14,18 +14,17 @@ description: Informazioni sulle diverse licenze di Office 365 e quelle che conse
 ms.custom:
 - NewAdminCenter_Update
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 f1keywords:
 - ms.teamsadmincenter.voice.resourceaccounts.tooltip.phonenumber
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a4bfa488500d6bd0fcea3c64e0d463003756d89c
-ms.sourcegitcommit: 1721acdd507591d16a4e766b390b997979d985e5
+ms.openlocfilehash: cf2671a1a637141abfc25033173ba4853cede605
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "37305778"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569832"
 ---
 <a name="office-365-licensing-for-microsoft-teams"></a>Licenze di Office 365 per Microsoft Teams
 ========================================

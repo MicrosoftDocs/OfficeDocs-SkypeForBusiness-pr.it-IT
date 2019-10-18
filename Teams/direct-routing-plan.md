@@ -10,17 +10,16 @@ ms.service: msteams
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 appliesto:
 - Microsoft Teams
 description: Leggere questo argomento per informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente a Microsoft Phone System.
-ms.openlocfilehash: 8dc06650a50af5b66931f196c0a1c3d7c5090bc5
-ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
+ms.openlocfilehash: ab76d3ee8a08b6bf109e1cb235b4f0f3a4fbdcc8
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36464580"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572147"
 ---
 # <a name="plan-direct-routing"></a>Pianificare il routing diretto
 
@@ -29,7 +28,7 @@ ms.locfileid: "36464580"
 
 Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato e fornito dal cliente al sistema telefonico Microsoft.  Con questa funzionalità, ad esempio, è possibile configurare la connettività PSTN locale con il client Microsoft teams, come illustrato nel diagramma seguente: 
 
-![Diagramma che mostra la configurazione della connettività PSTN locale] (media/PlanDirectRouting1-PSTNwithTeams.png "Configurazione della connettività PSTN locale con il client Microsoft teams")
+![Diagramma che mostra la configurazione della connettività PSTN locale](media/PlanDirectRouting1-PSTNwithTeams.png "Configurazione della connettività PSTN locale con il client Microsoft Teams")
 
   > [!NOTE]
   > Skype for business online consente anche di associare un SBC fornito dal cliente, ma richiede una distribuzione locale di Skype for Business Server o un'edizione speciale di Skype for business, denominata Cloud Connector, tra SBC e Microsoft Cloud. Questo scenario è noto come voce ibrida. Al contrario, il routing diretto consente una connessione diretta tra il SBC supportato e il cloud Microsoft. 
@@ -88,7 +87,7 @@ Gli utenti del routing diretto devono avere le licenze seguenti assegnate in Off
 
 - Sistema telefonico Microsoft 
 - Microsoft teams + Skype for Business Plan 2 se incluso nella SKU licenze
-- Servizi di audioconferenza Microsoft 
+- Servizi di audioconferenza Microsoft (leggere le note e il paragrafo seguente per esempi specifici su quando è richiesta la licenza)
 
 > [!NOTE]
 > Il piano Skype for business non deve essere rimosso da qualsiasi SKU di licenze in cui è incluso. 
@@ -97,10 +96,12 @@ Gli utenti del routing diretto devono avere le licenze seguenti assegnate in Off
 > [!IMPORTANT]
 >  Nel caso in cui si desideri aggiungere partecipanti esterni alle riunioni pianificate, effettuando la chiamata in uscita o fornendo il numero di accesso esterno, è *necessaria*la licenza per i servizi di audioconferenza.
 
-> [!NOTE]
-> La licenza per i servizi di audioconferenza è *necessaria* per:
-> - Eseguire l'escalation dalla chiamata di 1:1 a una chiamata di gruppo.
-> - Aggiungere partecipanti esterni alle riunioni pianificate effettuando la chiamata fuori o fornendo il numero di accesso esterno. 
+
+Escalation delle chiamate ad hoc e licenza per audioconferenza
+
+Un utente di teams può avviare uno su un team per chiamare PSTN o teams to teams e aggiungere un partecipante PSTN. Questo scenario si chiama conferenza ad hoc. Il percorso che la chiamata richiede dipende dal fatto che l'utente che esegue l'escalation della chiamata abbia una licenza di audioconferenza Microsoft assegnata o meno.
+1. Se l'utente di teams che escalation la chiamata ha una licenza di audioconferenza Microsoft assegnata, l'escalation avviene tramite il servizio di audioconferenza Microsoft. Il partecipante PSTN remoto invitato alla chiamata esistente riceve una notifica relativa alla chiamata in arrivo e vede il numero di Microsoft Bridge assegnato all'utente del team che ha avviato l'escalation.
+2. Se l'utente di teams che escalation la chiamata non ha la licenza di audioconferenza Microsoft assegnata, l'escalation avviene tramite un controller di bordo della sessione collegato all'interfaccia di routing diretto. Il partecipante PSTN remoto invitato alla chiamata riceve una notifica relativa alla chiamata in arrivo e vede il numero dell'utente di teams che ha avviato l'escalation. Lo specifico SBC, usato per l'escalation, viene definito dai criteri di routing dell'utente. 
 
 
 È inoltre necessario verificare quanto segue:

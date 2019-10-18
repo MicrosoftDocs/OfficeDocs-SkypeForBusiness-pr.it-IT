@@ -9,7 +9,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 audience: Admin
 appliesto:
@@ -19,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Giappone per Microsoft teams.
-ms.openlocfilehash: 36a1351818e6c8c1a5a6ec663873788980817d29
-ms.sourcegitcommit: 5faa89ea686448d5b339178f1330edc63e21a52f
+ms.openlocfilehash: c3e8692b4095843d17352c13509deaa701aa6e54
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "36184756"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573130"
 ---
 # <a name="phone-number-management-for-japan"></a>Gestione di numeri di telefono per il Giappone
 

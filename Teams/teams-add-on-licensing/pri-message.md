@@ -8,7 +8,6 @@ ms.topic: reference
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 audience: Admin
 appliesto:
@@ -18,12 +17,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle notifiche prioritarie nella messaggistica di teams.
-ms.openlocfilehash: d4353ae5a4fbddd5a818dc73e3d7926ee4a8ebf3
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: d5ef07a2aff31281d8d0429c74751bf53ec7e556
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242549"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572444"
 ---
 # <a name="messaging-policies-licensing"></a>Licenze per i criteri di messaggistica
 

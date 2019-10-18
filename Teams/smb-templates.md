@@ -9,18 +9,17 @@ ms.service: msteams
 search.appverid: MET150
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
 ms.reviewer: lavenkat
 description: Introduzione ai modelli di team per le piccole e medie imprese
-ms.openlocfilehash: d9e626dad9bbdde655448d0a2052c394fff2ffb7
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: acde79c2f7ce13088de1f80f968551ead2768fbf
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242965"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568668"
 ---
 # <a name="get-started-with-teams-templates-for-small-and-medium-businesses"></a>Introduzione ai modelli di team per le piccole e medie imprese
 
@@ -175,5 +174,5 @@ Content-Type: application/json
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Introduzione ai modelli di Teams](get-started-with-teams-templates.md)
-- [Creare un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta) (in anteprima)
+- [Crea team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta) (in anteprima)
 

@@ -10,17 +10,16 @@ ms.service: msteams
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 appliesto:
 - Microsoft Teams
 description: Informazioni su come usare il dashboard integrità per monitorare la connessione tra il controller di bordo della sessione e il routing diretto.
-ms.openlocfilehash: b6ec0c04200fac018b721bfe6c94f8d9bd969a2f
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 0424f24e323928f487e8b43ce72e51602f9eab52
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237493"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572202"
 ---
 # <a name="health-dashboard-for-direct-routing"></a>Dashboard integrità per il routing diretto
 
@@ -52,7 +51,7 @@ Il dashboard integrità offre le informazioni seguenti relative all'integrità c
   
    Dato che l'azione da eseguire potrebbe dipendere dal numero di chiamate interessate, il dashboard dell'integrità Mostra quante chiamate sono state analizzate per calcolare un parametro. Se il numero di chiamate è inferiore a 100, l'NER potrebbe essere abbastanza basso, ma comunque normale. 
 
-   La formula usata per calcuate NER è:
+   La formula usata per calcolare NER è:
 
    NER = risposte alle chiamate + utente occupato + squillo nessuna risposta + morsetto di rigetto delle convulsioni x 100
 
@@ -107,7 +106,7 @@ La visualizzazione dettagliata mostra i seguenti parametri aggiuntivi:
 
    - Perdita di pacchetti: è una misura del pacchetto che non è riuscita ad arrivare; viene calcolato tra due endpoint.
 
-   - Latancy-(noto anche come tempo di andata e ritorno) è il periodo di tempo necessario per l'invio di un segnale più il tempo necessario per ricevere il riconoscimento del segnale. Questo ritardo temporale è costituito dai tempi di propagazione tra i due punti di un segnale.
+   - Latenza-(nota anche come tempo di andata e ritorno) è il periodo di tempo necessario per l'invio di un segnale più il tempo necessario per il riconoscimento del segnale da ricevere. Questo ritardo temporale è costituito dai tempi di propagazione tra i due punti di un segnale.
 
    È possibile scorrere i dati in base al numero di giorni e alla direzione delle chiamate (in ingresso/in uscita/tutti i flussi).
 

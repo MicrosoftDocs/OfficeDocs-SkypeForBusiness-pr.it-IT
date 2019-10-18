@@ -14,16 +14,15 @@ description: Microsoft teams installa un componente aggiuntivo in Outlook che co
 ms.custom:
 - NewAdminCenter_Update
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8e2c7bae819037d0140fab1fed3625e250b8a4c1
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 6a8a440859d5bb33dfa5f57fd952f642b0e88dc7
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242064"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569283"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo riunione teams in Outlook
 =======================================
@@ -39,6 +38,7 @@ Il componente aggiuntivo riunione teams viene installato automaticamente per gli
 > [!NOTE]
 > - Se gli utenti non vedono il componente aggiuntivo riunione teams, indicano loro di chiudere Outlook e teams, quindi riavviare prima il client teams, quindi accedere a teams e quindi riavviare il client Outlook in questo ordine specifico.
 > - Gli utenti di Windows 7 devono installare l' [aggiornamento per Universal C Runtime in Windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows) in Windows per il componente aggiuntivo riunione teams per il lavoro.
+> - Se si usa un'installazione di Office Outlook da Microsoft Store, il componente aggiuntivo riunioni teams non è supportato. Gli utenti che richiedono questo componente aggiuntivo si consiglia di installare la versione a portata di clic di Office, come descritto in Office in [Windows 10 in modalità S](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f) . 
 
 ## <a name="teams-meeting-add-in-in-outlook-for-mac"></a>Componente aggiuntivo riunione teams in Outlook per Mac
 

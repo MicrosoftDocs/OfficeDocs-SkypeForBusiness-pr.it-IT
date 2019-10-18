@@ -8,7 +8,8 @@ ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- M365-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -19,16 +20,16 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come ottenere lo stato degli ordini di trasferimento e apprendere le diverse azioni che è possibile eseguire. '
-ms.openlocfilehash: 8725f87fc1bb2afb6e035fca7e9dd3c34d2c8a60
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 34abd630740d654e640818270047d850f34efa2a
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36182428"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568521"
 ---
 # <a name="whats-the-status-of-my-port-orders-in-teams"></a>Qual è lo stato degli ordini di trasferimento in teams?
 
-Per visualizzare lo stato dell'ordine di trasferimento, è possibile accedere agli**ordini di porta****vocale** > legacy del**portale** > di interfaccia di **Amministrazione** > di Microsoft teams. Ogni stato dell'ordine di porta verrà elencato nella colonna **stato** . Se serve assistenza, [contattare il supporto per i prodotti business-Guida per gli amministratori](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json).
+Per visualizzare lo stato dell'ordine di trasferimento, è possibile accedere agli ordini di porta**vocale** > **legacy del portale** > di**interfaccia**di amministrazione > di **Microsoft teams**. Ogni stato dell'ordine di porta verrà elencato nella colonna **stato** . Se serve assistenza, [contattare il supporto per i prodotti business-Guida per gli amministratori](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json).
 
 La tabella seguente elenca gli Stati degli ordini di porta, nonché le azioni che è possibile eseguire, se necessario.
 

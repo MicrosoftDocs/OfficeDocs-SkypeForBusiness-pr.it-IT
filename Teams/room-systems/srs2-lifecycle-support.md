@@ -8,15 +8,16 @@ ms.date: 4/17/2018
 audience: ITPro
 ms.topic: article
 ms.service: msteams
-ms.collection: M365-voice
+ms.collection:
+- M365-collaboration
 localization_priority: Normal
 description: Questo articolo illustra il supporto del ciclo di vita per le sale di Microsoft teams.
-ms.openlocfilehash: ddbca7ce03fb361d591f72571804f547d7062612
-ms.sourcegitcommit: 61deca3fd35142d210ab8307c21a576b3301ec84
+ms.openlocfilehash: 736933c2c47d42073d2f8b90bce6af6755c89338
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37553761"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573540"
 ---
 # <a name="microsoft-teams-rooms-app-version-support"></a>Supporto per la versione dell'app Microsoft teams rooms
  

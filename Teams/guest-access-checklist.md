@@ -12,16 +12,16 @@ description: Usare questo elenco di controllo per configurare l'accesso guest in
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
+- Teams_ITAdmin_GuestAccess
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8418c9386c635d1fc1662ee6df80dfae21908bd0
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: e7f019f2260b1e86b422f8b4238439fbd2f1607a
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244440"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569543"
 ---
 <a name="teams-guest-access-checklist"></a>Elenco di controllo di accesso Guest Teams
 ==========================================
@@ -70,7 +70,7 @@ Alcuni aspetti da ricordare:
 2. Selezionare**** > **le impostazioni utente**di **Azure Active Directory** > Users.
 3. In **utenti esterni**selezionare **Gestisci impostazioni di collaborazione esterna**.
    > [!NOTE]
-   > Le **impostazioni di collaborazione esterna** sono disponibili anche nella pagina **relazioni organizzative** . In Azure Active Directory, in **Gestisci**, passa a**Impostazioni** **relazioni** > organizzative.
+   > Le **impostazioni di collaborazione esterna** sono disponibili anche nella pagina **relazioni organizzative** . In Azure Active Directory, in **Gestisci**, passa a > **Impostazioni** **relazioni organizzative**.
 4. Nella pagina **impostazioni di collaborazione esterna** scegliere i criteri che si desidera abilitare.
 
   - Le **autorizzazioni degli utenti Guest sono limitate**: questo criterio determina le autorizzazioni per gli ospiti nella directory. Selezionare **Sì** per bloccare gli ospiti da determinate attività di directory, come l'enumerazione di utenti, gruppi o altre risorse di directory. Selezionare **No** per offrire agli ospiti lo stesso accesso ai dati della directory come utenti regolari nella directory.
@@ -82,8 +82,9 @@ Alcuni aspetti da ricordare:
    
    - **Gli ospiti possono invitare**: per consentire agli ospiti di invitare altri ospiti, impostare questo criterio su **Sì**.
    - **Abilitare la password unica per gli utenti (anteprima)**: per altre informazioni sulla funzionalità di codice per la sola volta, vedere autenticazione di un codice di accesso unico per la [posta elettronica (anteprima)](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode).
-   - **Limitazioni della collaborazione**: per altre informazioni su come consentire o bloccare gli inviti a specifici domini, vedere [consentire o bloccare gli inviti agli utenti B2B di organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
 
+   - **Limitazioni della collaborazione**: per altre informazioni su come consentire o bloccare gli inviti a specifici domini, vedere [consentire o bloccare gli inviti agli utenti B2B di organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
+    
 ## <a name="-step-2-configure-office-365-groups"></a>□ Passaggio 2: configurare i gruppi di Office 365
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **Impostazioni** > **Servizi &** > gruppi di componenti aggiuntivi di**Office 365**.
@@ -100,7 +101,7 @@ Per istruzioni dettagliate sulla configurazione di queste impostazioni, vedere [
 È necessario attivare l'accesso guest per Microsoft teams sotto l'interfaccia di **amministrazione di Microsoft teams**. 
 
 1. Nell'interfaccia di amministrazione di teams selezionare**l'accesso Guest** **delle impostazioni** > a livello di organizzazione.
-2. Impostare l'opzione **Consenti accesso guest in Microsoft** teams **su**attivato.
+2. Impostare l'opzione **Consenti accesso guest in Microsoft teams** **su**attivato.
 
     ![Screenshot mostra un esempio di attivazione di impostazioni team](media/guest-access-checklist-set-up-guests-image1.png)
 

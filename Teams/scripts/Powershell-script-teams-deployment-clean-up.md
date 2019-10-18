@@ -13,12 +13,12 @@ ms.collection:
 - M365-collaboration
 description: Usa questo script di PowerShell per pulire Microsoft teams su computer mirati o per utenti specifici.
 localization_priority: Normal
-ms.openlocfilehash: aa5ba0c6e94510449e1afd9c2fc03524c1846f9c
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 6e543e31dd926075d83ad0ccf7187ac602ba8065
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243205"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573455"
 ---
 <a name="powershell-script-sample---microsoft-teams-deployment-clean-up"></a>Esempio di script di PowerShell-pulizia della distribuzione di Microsoft Teams
 -------------------------------------------------------------------------

@@ -9,17 +9,16 @@ ms.topic: quickstart
 ms.service: msteams
 localization_priority: Normal
 ms.collection:
-- Strat_SB_Admin
-- M365-voice
+- M365-collaboration
 ms.custom: ''
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
 description: Questo articolo illustra come distribuire la gestione dei dispositivi Microsoft teams rooms in modo integrato e completo con Azure monitor.
-ms.openlocfilehash: 4be57f97ef3b0813afef2aefd70c551ee50422ee
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: 12936113a951f90bb1a3bed72f71d09f1f72ccd9
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36774685"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569941"
 ---
 # <a name="deploy-microsoft-teams-rooms-management-with-azure-monitor"></a>Distribuire Gestione di Microsoft teams Rooms con Azure monitor
 
@@ -29,7 +28,7 @@ Questo articolo illustra come configurare e distribuire la gestione integrata e 
 
 Seguendo questa guida, è possibile usare un dashboard come l'esempio seguente per ottenere report di stato dettagliati per la disponibilità dei dispositivi, l'integrità dell'applicazione e dell'hardware e la distribuzione delle versioni dell'applicazione e del sistema operativo Microsoft teams rooms.
 
-Screenshot ![della visualizzazione analisi log di esempio per le sale di Microsoft teams] (../media/Deploy-Azure-Monitor-1.png "Visualizzazione analisi log di esempio per Microsoft teams Rooms")
+![Screenshot della visualizzazione analisi log di esempio per le sale di Microsoft Teams](../media/Deploy-Azure-Monitor-1.png "Visualizzazione analisi log di esempio per Microsoft teams rooms")
 
 A livello elevato, è necessario eseguire le attività seguenti:
 
@@ -64,7 +63,7 @@ Analisi log raccoglie solo gli eventi dai registri eventi di Windows specificati
 
 Per configurare l'analisi del log per raccogliere gli eventi di Microsoft teams rooms, vedere [origini dati del log eventi di Windows in Azure monitor](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-windows-events)
 
-Screenshot ![delle impostazioni del log eventi] (../media/Deploy-Azure-Monitor-2.png "Impostazioni del log eventi")
+![Screenshot delle impostazioni del log eventi](../media/Deploy-Azure-Monitor-2.png "Impostazioni del log eventi")
 
 > [!IMPORTANT]
 > Configurare le impostazioni del log eventi di Windows e immettere **Skype room System** come nome del log eventi e quindi selezionare le caselle di controllo **errore**, **avviso**e **informazioni** .
@@ -122,7 +121,7 @@ Per estrarre i campi personalizzati dai registri eventi acquisiti, eseguire le o
 3. Selezionare uno dei record, selezionare il pulsante a sinistra e avviare l'estrazione guidata campi.
 4. Evidenziare i dati che si desidera estrarre da RenderedDescription e specificare un titolo di campo. I nomi dei campi da usare sono forniti nella tabella 1.
 
-   ![Definizione di campo personalizzato] (../media/Deploy-Azure-Monitor-4.png "Definizione di campo personalizzato")
+   ![Definizione di campo personalizzato](../media/Deploy-Azure-Monitor-4.png "Definizione di campo personalizzato")
 
 5. Usare i mapping visualizzati nella *tabella 1*. Analisi log aggiungerà automaticamente la ** \_stringa CF** quando si definisce il nuovo campo.
 
@@ -131,7 +130,7 @@ Per estrarre i campi personalizzati dai registri eventi acquisiti, eseguire le o
 > 
 > Prestare attenzione alle query necessarie per ogni campo personalizzato nella tabella seguente. Per estrarre correttamente i valori dei campi personalizzati, è necessario usare le query corrette per l'analisi del log.
 > 
- ![Definizione di campo personalizzato] (../media/Deploy-Azure-Monitor-5.png "Definizione di campo personalizzato")
+ ![Definizione di campo personalizzato](../media/Deploy-Azure-Monitor-5.png "Definizione di campo personalizzato")
 
 **Tabella 1**
 
@@ -412,7 +411,7 @@ Ora hai completato la definizione degli avvisi. Puoi definire altri avvisi usand
 
 Quando viene generato un avviso, viene visualizzato un messaggio di posta elettronica che elenca i dispositivi che hanno rilevato un problema entro l'ultima ora.
 
-![Esempio di messaggio di avviso di Azure monitor] (../media/Deploy-Azure-Monitor-6.png "Esempio di messaggio di avviso di Azure monitor")
+![Esempio di messaggio di avviso di Azure monitor](../media/Deploy-Azure-Monitor-6.png "Esempio di messaggio di avviso di Azure monitor")
 
 ## <a name="configure-all-devices-for-azure-monitoring"></a>Configurare tutti i dispositivi per il monitoraggio di Azure
 <a name="configure_all_devices"></a> Una volta configurati i dashboard e gli avvisi, è possibile impostare e configurare Microsoft Monitoring Agent in tutti i dispositivi Microsoft teams Rooms per completare la distribuzione del monitoraggio.

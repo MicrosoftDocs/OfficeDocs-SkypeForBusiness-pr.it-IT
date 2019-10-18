@@ -7,7 +7,8 @@ ms.reviewer: jastark
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
-ms.collection: Teams_ITAdmin_Help
+ms.collection:
+- M365-collaboration
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -16,12 +17,12 @@ search.appverid: MET150
 f1keywords:
 - ms.teamsadmincenter.messagingpolicies.overview
 description: Informazioni sui criteri di messaggistica e sul modo in cui possono essere usati per controllare la messaggistica di chat in teams.
-ms.openlocfilehash: 0707214a2bff442102dd1481af1f031c1a59703d
-ms.sourcegitcommit: 384e123f3b5cf1600ebd5ddd69bd022f9b8ba0f8
+ms.openlocfilehash: bc69b44b47cf068bdea17ed661a873b90af44de5
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "36185092"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569277"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in teams
 
@@ -89,7 +90,7 @@ Usare le impostazioni seguenti per modificare i criteri di messaggistica globale
 - **Consenti anteprime URL** Usare questa impostazione per attivare o disattivare l'anteprima automatica degli URL nei messaggi.
 - **Consentire agli utenti di tradurre i messaggi** Attivare questa impostazione per consentire agli utenti di tradurre automaticamente i messaggi di teams nella lingua specificata dalle impostazioni della lingua personale per Office 365.
 - **Consentire all'utilità di lettura immersiva di visualizzare i messaggi** Attivare questa impostazione per consentire agli utenti di visualizzare i messaggi in Microsoft immersive Reader. Immersive Reader è uno strumento di apprendimento che offre un'esperienza di lettura a schermo intero per aumentare la leggibilità del testo.
-- **Gli utenti possono <a name="urgent-message"></a> inviare notifiche prioritarie** Se si attiva questa opzione, gli utenti possono inviare un messaggio che usa le notifiche prioritarie. Le notifiche prioritarie avvisano gli utenti ogni 2 minuti per un periodo di 20 minuti o finché i messaggi non vengono raccolti e letti dal destinatario, massimizzando la probabilità che il messaggio venga raccolto e agito in modo tempestivo.   [!INCLUDE [pri-message-offer](includes/pri-message-offer.md)]
+- **Gli utenti possono inviare notifiche <a name="urgent-message">prioritarie</a> ** Se si attiva questa opzione, gli utenti possono inviare un messaggio che usa le notifiche prioritarie. Le notifiche prioritarie avvisano gli utenti ogni 2 minuti per un periodo di 20 minuti o finché i messaggi non vengono raccolti e letti dal destinatario, massimizzando la probabilità che il messaggio venga raccolto e agito in modo tempestivo.   [!INCLUDE [pri-message-offer](includes/pri-message-offer.md)]
 - **Creazione di messaggi vocali** 
     - **Consentito in chat e canali** Ciò significa che gli utenti possono abbandonare i messaggi vocali sia in chat che in canali.
     - **Consentito solo nelle chat** Ciò significa che gli utenti possono abbandonare i messaggi vocali nelle chat, ma non nei canali.

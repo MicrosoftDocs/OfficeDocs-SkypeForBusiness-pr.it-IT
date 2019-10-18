@@ -15,16 +15,15 @@ f1keywords:
 - ms.teamsadmincenter.meetingsettings.qos
 - ms.teamsadmincenter.meetingsettings.network.qosmarkers
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 20a75acd23f818615630ff4f6ca9e1890ae87cc9
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: efa2dfadc760d99f87d8d69137992712c90b32ef
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483532"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572556"
 ---
 # <a name="implement-quality-of-service-qos-in-microsoft-teams"></a>Implementare la qualità del servizio (QoS) in Microsoft Teams
 
@@ -44,7 +43,7 @@ Affinché il QoS sia efficace, le impostazioni QoS coerenti saranno applicate al
 
 _Figura 1. Relazione tra le reti di un'organizzazione e i servizi di Office 365_
 
-![Illustrazione della relazione tra reti e servizi] (media/Qos-in-Teams-Image1.png "Relazione tra le reti di un'organizzazione e i servizi di Office 365: la rete locale e i dispositivi si connettono a una rete di interconnessione, che a sua volta si connette con i servizi di conferenza telefonica cloud e audio di office 365.")
+![Illustrazione della relazione tra reti e servizi](media/Qos-in-Teams-Image1.png "Relazione tra le reti di un'organizzazione e i servizi di Office 365: la rete locale e i dispositivi si connettono a una rete di interconnessione, che a sua volta si connette con i servizi di conferenza telefonica cloud e audio di Office 365.")
 
 Nella maggior parte dei casi, la rete che connette l'azienda al cloud sarà una rete non gestita in cui non sarà possibile impostare in modo affidabile le opzioni QoS. Una scelta disponibile per l'indirizzo QoS end-to-end è [Azure ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/), ma è comunque consigliabile implementare QoS nella rete locale per il traffico in ingresso e in uscita. In questo modo, aumenta la qualità dei carichi di lavoro delle comunicazioni in tempo reale durante la distribuzione e allevia chokepoints.
 
@@ -70,7 +69,7 @@ Quando implementi QoS, Definisci più code usando una delle varie funzionalità 
 
 _Figura 2. Esempi di code QoS_
 
-![Illustrazione delle code QoS e della divisione larghezza di banda] (media/Qos-in-Teams-Image2.png "La larghezza di banda disponibile totale è divisa tra più code, ad esempio audio, video e altro traffico, a cui sono state assegnate priorità diverse.")
+![Illustrazione delle code QoS e della divisione larghezza di banda](media/Qos-in-Teams-Image2.png "La larghezza di banda disponibile totale è divisa tra più code, ad esempio audio, video e altro traffico, a cui sono state assegnate priorità diverse.")
 
 Una semplice analogia consiste nel fatto che QoS crea una "corsia di carpooling" virtuale nella rete dati in modo che alcuni tipi di dati non incontrino mai o raramente un ritardo. Dopo aver creato tali corsie, è possibile modificare le dimensioni relative e gestire in modo più efficace la larghezza di banda della connessione, garantendo comunque esperienze di livello aziendale per gli utenti dell'organizzazione.
 
@@ -143,7 +142,7 @@ A livello molto elevato, l'implementazione di QoS richiede questi passaggi:
       > [!IMPORTANT]
       > È consigliabile implementare questi criteri QoS usando le porte di origine client e un indirizzo IP di origine e di destinazione "any". In questo modo verrà intercettato il traffico multimediale in entrata e in uscita nella rete interna.  
 
-   3. Nell'interfaccia di [Amministrazione](meeting-settings-in-teams.md#set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings) di Teams
+   3. Nell'interfaccia di [amministrazione di teams](meeting-settings-in-teams.md#set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings)
 5. [Convalidare l'implementazione QoS](#validate-the-qos-implementation) analizzando il traffico di team in rete.
 
 Mentre ti prepari ad implementare QoS, tieni presente le linee guida seguenti:
@@ -163,7 +162,7 @@ Per informazioni sulla configurazione delle porte del firewall, vedere [URL e in
 In teams le porte di origine QoS usate dai diversi carichi di lavoro devono essere gestite in modo attivo e modificate in base alle esigenze. Facendo riferimento alla tabella in [Scegli intervalli di porte iniziali per ogni tipo](#choose-initial-port-ranges-for-each-media-type)di elemento multimediale, gli intervalli di porta sono regolabili, ma i contrassegni di DSCP non sono configurabili. Dopo aver implementato queste impostazioni, è possibile che siano necessarie più o meno porte per un tipo di elemento multimediale specifico. Per prendere una decisione per regolare gli intervalli di porte dopo l'implementazione di teams e per modificare periodicamente le esigenze, è consigliabile usare il dashboard per la chiamata [e la qualità](difference-between-call-analytics-and-call-quality-dashboard.md) delle chiamate.
 
 > [!NOTE]
-> Se la QoS è già stata configurata in base a intervalli di porta di origine e contrassegni DSCP per Skype for business online, la stessa configurazione verrà applicata ai team e non saranno necessarie ulteriori modifiche al client o alla rete per il mapping, ma potrebbe essere necessario [impostare gli intervalli usato nell'](meeting-settings-in-teams.md#set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings) interfaccia di amministrazione di teams per corrispondere a quello configurato per Skype for business online.
+> Se la QoS è già stata configurata in base a intervalli di porta di origine e contrassegni DSCP per Skype for business online, la stessa configurazione verrà applicata ai team e non saranno necessarie ulteriori modifiche al client o alla rete per il mapping, ma potrebbe essere necessario [impostare gli intervalli usato nell'interfaccia di amministrazione di teams](meeting-settings-in-teams.md#set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings) per corrispondere a quello configurato per Skype for business online.
 
 Se hai distribuito in precedenza Skype for Business Server in locale, potrebbe essere necessario riesaminare i criteri di QoS e regolarli in base alle esigenze per corrispondere alle impostazioni dell'intervallo di porte che hai verificato per consentire l'utilizzo di un'esperienza utente di qualità per i team.
 
@@ -187,15 +186,15 @@ Network Monitor è uno strumento che puoi [scaricare da Microsoft](https://www.m
 
     Source = = "192.168.137.201" e IPv4. DifferentiatedServicesField = = 0x2E
 
-    ![Filtri schermati nella finestra di dialogo filtro visualizzazione.] Finestra di (media/Qos-in-Teams-Image4.png "dialogo filtro visualizzazione in Network Monitor che mostra i filtri da applicare.")
+    ![Filtri schermati nella finestra di dialogo filtro visualizzazione.](media/Qos-in-Teams-Image4.png "Finestra di dialogo filtro visualizzazione in Network Monitor che mostra i filtri da applicare.")
 
 5. Selezionare **applica** per attivare il filtro.
 
-6. Nella finestra **Riepilogo** dei fotogrammi selezionare il primo pacchetto UDP.
+6. Nella finestra **Riepilogo dei fotogrammi** selezionare il primo pacchetto UDP.
 
 7. Nella finestra **Dettagli fotogrammi** espandere la voce di elenco IPv4 e prendere nota del valore alla fine della riga che inizia con **DSCP**.
 
-    ![Screenshot che mostra le impostazioni di DSCP nella finestra di dialogo Dettagli fotogrammi.] Finestra (media/Qos-in-Teams-Image5.png "di dialogo Dettagli cornice in Network Monitor, che evidenzia le impostazioni di DSCP.")
+    ![Screenshot che mostra le impostazioni di DSCP nella finestra di dialogo Dettagli fotogrammi.](media/Qos-in-Teams-Image5.png "Finestra di dialogo Dettagli cornice in Network Monitor, che evidenzia le impostazioni di DSCP.")
 
 In questo esempio, il valore DSCP è impostato su 46. Questo è corretto, perché la porta di origine usata è 50019, che indica che si tratta di un carico di lavoro vocale.
 

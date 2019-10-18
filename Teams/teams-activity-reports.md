@@ -11,17 +11,16 @@ ms.reviewer: chenle
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni su come usare i report attività per vedere in che modo gli utenti dell'organizzazione usano Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5d7346ef19f70366ec32ad6d7a6bcf24fc98e6e7
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 6f568dfdf51cb34da340e8192336f4c0c8cca19a
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242993"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571220"
 ---
 <a name="use-activity-reports-for-microsoft-teams"></a>Usare i report attività per Microsoft Teams 
 ========================================
@@ -49,7 +48,7 @@ Il report attività utente teams offre una panoramica delle attività più comun
 
 #### <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpretare il report attività utente di Microsoft Teams
 
-Per visualizzare le attività degli utenti in team, è possibile osservare i grafici **attività** e utente. ****
+Per visualizzare le attività **degli utenti in** team, è possibile osservare i grafici **attività** e utente.
 
 ![Screenshot del report attività utente con callout numerati.](media/teams-user-activity-report-with-callouts.png)
 

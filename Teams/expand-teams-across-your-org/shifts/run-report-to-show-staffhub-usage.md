@@ -11,21 +11,21 @@ search.appverid: MET150
 description: Informazioni su come eseguire un report per ottenere un elenco di utenti attivi di StaffHub nell'organizzazione.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
+- Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: eb337fdb79c0977f4bcacd782d6705947b5b8466
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 49091f7d8ada565adea61bf8219c6da828358893
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235387"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569664"
 ---
 # <a name="run-a-report-to-show-active-staffhub-usage"></a>Eseguire un report per mostrare l'utilizzo di Active StaffHub
 
 > [!IMPORTANT]
-> Efficace il 1 ° ottobre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub smetterà di funzionare per tutti gli utenti il 1 ° ottobre 2019. Chiunque tenti di aprire StaffHub verrà visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub per](microsoft-staffhub-to-be-retired.md)ritirarsi.  
+> Efficace 31 dicembre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub smetterà di funzionare per tutti gli utenti il 31 dicembre 2019. Chiunque tenti di aprire StaffHub verrà visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub per ritirarsi](microsoft-staffhub-to-be-retired.md).  
 
 Seguire i passaggi di questo articolo per eseguire un report per ottenere un elenco di utenti attivi di StaffHub nell'organizzazione. Queste informazioni possono essere utili quando si preparano a [trasferire i team di StaffHub a Microsoft teams](move-staffhub-teams-to-shifts-in-teams.md). Nel report è necessario includere le comunicazioni quando si effettua il passaggio da StaffHub a teams.
 
@@ -37,7 +37,7 @@ Per eseguire la procedura descritta in questo articolo, è necessario avere Azur
 4. In **applicazione**digitare **Microsoft StaffHub**.
 5. Impostare l'intervallo di date desiderato per il report e quindi fare clic su **applica**. 
 
-    ![Schermata che mostra i passaggi per visualizzare l'uso di StaffHub attivo](../../media/staffhub-active-usage-report.png)
+    ![Schermata che mostra i passaggi per visualizzare l'uso di Active StaffHub](../../media/staffhub-active-usage-report.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

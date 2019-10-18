@@ -10,18 +10,17 @@ audience: admin
 ms.reviewer: sonua
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare gli eventi dinamici in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1a38fad067f71fff0221a5af2f842ed1e2574d54
-ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
+ms.openlocfilehash: 736d6b8f2000f94806077e8f1739b28be248b136
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36464557"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570180"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare eventi dinamici in Microsoft Teams
 
@@ -115,14 +114,14 @@ Puoi usare gli eventi teams Live in più aree geografiche in tutto il mondo. Le 
 - America
 - Europa/Africa
 - Asia Pacifico
-- Go local Canada
+- Go local Canada, India, Australia, Giappone, UK
 
 **Esclusioni e considerazioni**
-- **Vai ai locali:** Regno Unito e altri teams i locali non sono attualmente supportati.
+- **Vai ai locali:** Le squadre locali, al di fuori di quelle elencate sopra, non sono attualmente supportate.
 - **Cina:** I membri del team dell'evento e i partecipanti non saranno in grado di usare gli eventi live di teams perché Azure CDN non è accessibile in Cina. Una soluzione alternativa consiste nell'usare una connessione VPN aziendale, che consente di ottenere il client connesso alla rete CDN tramite il network aziendale del cliente.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Andare alla [configurazione per gli eventi live](set-up-for-teams-live-events.md)di teams.
+Andare alla [configurazione per gli eventi live di teams](set-up-for-teams-live-events.md).
 
 ### <a name="related-topics"></a>Argomenti correlati
 - [Cosa sono gli eventi teams Live?](what-are-teams-live-events.md)

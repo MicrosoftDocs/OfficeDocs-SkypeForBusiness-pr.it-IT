@@ -14,16 +14,15 @@ search.appverid: MET150
 ms.custom:
 - Devices
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 70398d6718268742205181db3fd21bfc01886c0e
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 37c38577fe3bda9ed2a1c2e224390e89f44de96b
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235041"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570103"
 ---
 <a name="deploy-microsoft-teams-for-surface-hub"></a>Distribuire Microsoft teams per Surface Hub
 ======================================
@@ -69,7 +68,7 @@ I pacchetti si trovano nella pagina di [download](https://1drv.ms/f/s!ArcnbnREun
 2. Aprire l'app **Impostazioni** in un dispositivo Surface Hub. 
 3. Aprire **Gestione account del dispositivo Surface Hub**.
 4. Aprire **Gestione dispositivi**. 
-5. Fare clic su **Aggiungi o Rimuovi un pacchetto di**provisioning. 
+5. Fare clic su **Aggiungi o Rimuovi un pacchetto di provisioning**. 
 6. Fare clic su **Aggiungi pacchetto**.
 7. Selezionare l'opzione **supporto rimovibile** dal menu a discesa. 
 8. Aggiungi il pacchetto <strong>TeamsRTMMode *. ppkg</strong> appropriato copiato in precedenza nella chiave USB. 

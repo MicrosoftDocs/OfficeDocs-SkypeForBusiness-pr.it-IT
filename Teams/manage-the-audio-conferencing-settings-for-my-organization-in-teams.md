@@ -10,9 +10,8 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 - M365-voice
+- M365-collaboration
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -21,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: 'Per assegnare una licenza di conferenza telefonica con accesso esterno a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno, vedere la procedura Microsoft teams. '
-ms.openlocfilehash: d5b3b616d8e3a42f5084d8de424c3fd557271b1d
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: 7cb0e76771563305ce98445818c77364b0849845
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "36184936"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570576"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per l'organizzazione in Microsoft Teams
 
@@ -44,7 +43,7 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
   
 1. Accedere a Microsoft 365 con l'account di lavoro o dell'Istituto di istruzione.
     
-2. Nella barra di spostamento sinistra dell'interfaccia di **amministrazione di Microsoft 365**, **** > accedere a utenti**attivi**degli utenti e quindi selezionare l'utente o gli utenti dall'elenco degli utenti disponibili.
+2. Nella barra di spostamento sinistra dell'interfaccia di **amministrazione di Microsoft 365**, **accedere a** > utenti**attivi**degli utenti e quindi selezionare l'utente o gli utenti dall'elenco degli utenti disponibili.
     
     > [!NOTE]
     > Per assegnare licenze a un massimo di 20 utenti contemporaneamente, puoi ricorrere all'elenco a discesa **Selezionare una visualizzazione** e scegliere una delle opzioni oppure creare una visualizzazione personalizzata. Quindi fai clic su **Modifica**, due volte su **Avanti**, seleziona la licenza e fai clic su **Invia**.  
@@ -120,7 +119,7 @@ See [Send an email to a user with their Audio Conferencing information](send-an-
 
 2. Accanto a servizi di **audioconferenza**fare clic su **modifica**.
  
-3. Nel riquadro **audioconferenza** è possibile impostare il numero verde e **** , se consentito, il **numero verde**.
+3. Nel riquadro **audioconferenza** è possibile impostare **il numero verde e,** se consentito, il **numero verde**.
 
 4. Fai clic su **Salva**.
     

@@ -8,7 +8,8 @@ ms.topic: conceptual
 ms.assetid: e97aeeee-9e43-416f-b433-9cdd63d8874b
 ms.tgt.pltfrm: cloud
 ms.service: msteams
-ms.collection: Teams_ITAdmin_Help
+ms.collection:
+- M365-voice
 search.appverid: MET150
 audience: Admin
 appliesto:
@@ -18,12 +19,12 @@ localization_priority: Normal
 f1keywords: None
 ms.custom: Reporting
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 7683ebdf4743db1ad8798817c24fe926bd959815
-ms.sourcegitcommit: 1f84b0edc4e418259b9f6392370e2cc4dc70df82
+ms.openlocfilehash: 6dcbf7b415e2c337968e5c2c3af09efcb02be0a5
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37328407"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572257"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata
 
@@ -392,8 +393,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Nome prodotto primo endpoint|Stringa|Nome del prodotto del primo endpoint (Skype for business o Microsoft Teams).|
 | Nome prodotto secondo endpoint|Stringa|Nome del prodotto del secondo endpoint (Skype for business o Microsoft Teams).|
 | First UserType|Stringa di enumerazione|Il tipo di utente nel primo endpoint. <br/> **Valori possibili:** Utente, server, Anonimo, applicazione, PSTN, segreteria telefonica, sconosciuto <br/> <br/>**Sconosciuto** : il valore predefinito se UserType non può essere determinato in base alle informazioni ricevute. <br/>**PSTN** -un utente PSTN. <br/>**Anonymous** : un utente di teams o un visitatore Skype for business. <br/>**Applicazione** : un bot. <br/>L' **utente-un utente AAD** può essere un utente di Skype for business o un utente di teams. <br/>**Server** -per le conferenze, almeno un lato è un server. <br/>**Segreteria telefonica** : l'endpoint ha risposto il servizio di segreteria telefonica.||
-| Secondo UserType|Stringa di enumerazione|Il tipo di utente nel secondo endpoint. <br/> **Valori possibili:** Utente, server, Anonimo, applicazione, PSTN, segreteria telefonica, sconosciuto <br/> <br/>**Sconosciuto** : il valore predefinito se UserType non può essere determinato in base alle informazioni ricevute. <br/>**PSTN** -un utente PSTN. <br/>**Anonymous** : un utente di teams o un visitatore Skype for business. <br/>**Applicazione** : un bot. <br/>L' **utente-un utente AAD** può essere un utente di Skype for business o un utente di teams. <br/>**Server** -per le conferenze, almeno un lato è server.
-<br/>**Segreteria telefonica** : il servizio di segreteria telefonica ha risposto l'endpoint.||
+| Secondo UserType|Stringa di enumerazione|Il tipo di utente nel secondo endpoint. <br/> **Valori possibili:** Utente, server, Anonimo, applicazione, PSTN, segreteria telefonica, sconosciuto <br/> <br/>**Sconosciuto** : il valore predefinito se UserType non può essere determinato in base alle informazioni ricevute. <br/>**PSTN** -un utente PSTN. <br/>**Anonymous** : un utente di teams o un visitatore Skype for business. <br/>**Applicazione** : un bot. <br/>L' **utente-un utente AAD** può essere un utente di Skype for business o un utente di teams. <br/>**Server** -per le conferenze, almeno un lato è server. <br/>**Segreteria telefonica** : il servizio di segreteria telefonica ha risposto l'endpoint.||
 |**Coppia di chiavi**|||
 | Network Connection Detail Pair  | Coppia enumerata <br/>**Valori possibili:** <br/> WiFi : WiFi <br/> WiFi : cablata <br/> Cablata : WiFi <br/> Cablata : Cablata <br/> MobileBB : MobileBB <br/> MobileBB : Altro <br/> MobileBB : Tunnel <br/> MobileBB : WiFi <br/> MobileBB : Cablata <br/> Altro : Altro <br/> Altro : WiFi <br/> Altro : Cablata <br/> Tunnel : Tunnel <br/> Tunnel : WiFi <br/> Tunnel : Cablata <br/> : MobileBB <br/> : Altro <br/> : Tunnel <br/> : WiFi <br/> : Cablata <br/> :  | Coppia dei dettagli di connessione di rete del primo e del secondo endpoint.  | &bull;Il tipo di connettività di rete endpoint era sconosciuto. Può accadere se non è stato possibile stabilire la chiamata.   |
 | User Agent Category Pair  | Coppia enumerata  | Coppia della categoria agente utente per il primo e il secondo endpoint. <br/> **Valore di esempio:** MCU AV: OC  | &bull;Il tipo di agente utente endpoint non è noto  |

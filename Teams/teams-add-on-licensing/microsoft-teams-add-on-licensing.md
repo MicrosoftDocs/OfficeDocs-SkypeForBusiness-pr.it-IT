@@ -9,7 +9,6 @@ ms.topic: conceptual
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 audience: Admin
 appliesto:
@@ -19,12 +18,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle licenze per i componenti aggiuntivi, sulle caratteristiche che si ottengono con ogni licenza, su come acquistarle per il prodotto e su come usare il proprio vettore esistente. È possibile ottenere informazioni sui prezzi e sui dettagli del piano per Office 365, i crediti di comunicazione e i piani per le chiamate.
-ms.openlocfilehash: 2c2f3ecb632fda65d92b5c903c698eb9a53fa5ae
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 6b3f850980db71e1347802dd0ab59c38c46e4ebc
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242742"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571203"
 ---
 # <a name="microsoft-teams-add-on-licensing"></a>Licenze per i componenti aggiuntivi Microsoft Teams
 
@@ -87,7 +86,7 @@ If you want to use your existing Calling Plan, buy the **Phone System** add-on a
 --->
 Se si usa la connettività PSTN locale per gli utenti ibridi, è possibile assegnare le licenze di **sistema telefonico** *solo* agli utenti. **NON** assegnare anche un Piano di chiamata.
 
-Per una vasta documentazione sulla pianificazione della distribuzione, incluso il sistema telefonico con connettività PSTN locale, vedere [soluzioni](https://docs.microsoft.com/skypeforbusiness/hybrid/msft-telephony-solutions)per la telefonia Microsoft.
+Per una vasta documentazione sulla pianificazione della distribuzione, incluso il sistema telefonico con connettività PSTN locale, vedere [soluzioni per la telefonia Microsoft](https://docs.microsoft.com/skypeforbusiness/hybrid/msft-telephony-solutions).
 <!---
 [!INCLUDE [LinkedIn Learning Info](../../common/office/linkedin-learning-info.md)]
 --->

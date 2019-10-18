@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
+- M365-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -20,19 +20,19 @@ f1keywords:
 ms.custom:
 - Phone System
 description: L'aspetto della linea condivisa consente a un utente di scegliere un delegato per rispondere o gestire le chiamate per proprio conto.
-ms.openlocfilehash: 67708c05105b83cca80702292a1766a2224681bc
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: aed55d29f2b9fc45c66040390d4d698acaf25258
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483702"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571759"
 ---
 # <a name="shared-line-appearance-in-microsoft-teams"></a>Aspetto della linea condivisa in Microsoft Teams
 
 L'aspetto della linea condivisa fa parte della caratteristica di delega che consente a un utente di scegliere un delegato per rispondere o gestire le chiamate per proprio conto. Questa funzionalità è utile se un utente ha un assistente amministrativo che gestisce regolarmente le chiamate dell'utente. Nel contesto dell'aspetto della linea condivisa, un responsabile è un utente che autorizza un delegato a effettuare o ricevere chiamate per conto di un delegato e può effettuare e ricevere chiamate per conto di un altro utente.
 
 > [!IMPORTANT]
-> Questa caratteristica è disponibile solo in modalità di distribuzione solo teams. Per altre informazioni sulle modalità di distribuzione dei team, vedere comprendere la coesistenza e l'interoperabilità di [Microsoft teams e Skype for business](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
+> Questa caratteristica è disponibile solo in modalità di distribuzione solo teams. Per altre informazioni sulle modalità di distribuzione dei team, vedere [comprendere la coesistenza e l'interoperabilità di Microsoft teams e Skype for business](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 
 ## <a name="license-required"></a>Licenza richiesta
 

@@ -10,9 +10,8 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 - M365-voice
+- M365-collaboration
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -22,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: Informazioni su quali Paesi e aree possiedono numeri telefonici di accesso esterno e come vengono assegnati automaticamente.
-ms.openlocfilehash: e5644ab613fec588a901691632d27ebf25e9e80a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d7de04be8fb02e12b97dc964cd0fe8e1c37c821d
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36182434"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573321"
 ---
 # <a name="phone-numbers-for-audio-conferencing-in-microsoft-teams"></a>Numeri di telefono per i servizi di audioconferenza in Microsoft Teams
 
@@ -72,7 +71,7 @@ Per visualizzare un elenco di Paesi/aree geografiche che hanno numeri di telefon
     
 - È possibile impostare fino a quattro lingue per ogni numero di telefono di audioconferenza-uno principale e tre secondario. È anche possibile impostare le lingue in un numero di telefono dedicato all'audioconferenza.
     
-- Per impostare il numero di telefono di accesso esterno per un utente, vedere [impostare i numeri di telefono inclusi](set-the-phone-numbers-included-on-invites-in-teams.md)negli inviti.
+- Per impostare il numero di telefono di accesso esterno per un utente, vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbers-included-on-invites-in-teams.md).
 
    
 ## <a name="related-topics"></a>Argomenti correlati

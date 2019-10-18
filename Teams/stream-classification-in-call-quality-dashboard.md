@@ -8,8 +8,7 @@ ms.topic: conceptual
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
+- M365-voice
 search.appverid: MET150
 audience: Admin
 appliesto:
@@ -20,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Optimization
 description: Scopri come la qualità della trasmissione è classificata nel Dashboard Qualità della chiamata di Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 6ed59111eea2c14da321cf1467b021980a223ec0
-ms.sourcegitcommit: 1f84b0edc4e418259b9f6392370e2cc4dc70df82
+ms.openlocfilehash: a64a3169087c6a485cd129e2e2214e773ef0c33c
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37328332"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569996"
 ---
 # <a name="stream-classification-in-call-quality-dashboard"></a>Classificazione trasmissione nel Dashboard Qualità della chiamata
 
@@ -41,7 +40,7 @@ Se vengono soddisfatte una o più delle condizioni seguenti, un flusso audio vie
 
 |Metrica|Condizione|Spiegazione|
 |:-----|:-----|:-----|
-|Audio Degradation Avg|> 1,0|Media del Mean Opinion Score di rete per la degradazione dello stream. La quantità di perdite di rete e jitter ha influenzato la qualità dell'audio ricevuto.|
+|Audio Degradation Avg|> 1,0|Media Network valutazione della degradazione del Punteggio di opinione per Stream. La quantità di perdite di rete e jitter ha influenzato la qualità dell'audio ricevuto.|
 |Round Trip|> 500|Media del tempo di propagazione della rete di andata e ritorno, calcolata in millisecondi. Dettagli disponibili in [RFC3550](https://tools.ietf.org/html/rfc3550).|
 |Packet Loss Rate|> 0,1|Percentuale media di perdita pacchetti dello stream.|
 |Jitter|> 30|Jitter medio dello stream in millisecondi.|

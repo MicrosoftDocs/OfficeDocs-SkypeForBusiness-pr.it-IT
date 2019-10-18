@@ -10,8 +10,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 - M365-voice
 audience: Admin
 appliesto:
@@ -21,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare i telefoni per l'area comune per atri, aree di ricezione e sale conferenze "
-ms.openlocfilehash: a62399c1c7b7b27e35fdea1fc52b9531a1fa25cc
-ms.sourcegitcommit: 66213b972920b4e09faf7d7e732c4bfe7b322ac4
+ms.openlocfilehash: fa25de7484d8ac70e924e750c4e7633bfc160c04
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "36184171"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571594"
 ---
 # <a name="set-up-the-common-area-phone-license-for-microsoft-teams"></a>Configurare la licenza telefonica per l'area comune per Microsoft Teams
 > [!NOTE]
@@ -77,7 +75,7 @@ La licenza telefonica per l'area comune supporta:
 
 ## <a name="step-2---create-a-new-user-account-for-the-phone-and-assign-the-licenses"></a>Passaggio 2: crea un nuovo account utente per il telefono e assegna le licenze
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, passa **** > a utenti**attivi** > gli utenti che**aggiungono un utente**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, passa **a utenti** > **attivi** > gli utenti che**aggiungono un utente**.
 
 2. Immettere un nome utente come "Main" per il nome e la "ricezione" per il secondo nome.
 
@@ -85,7 +83,7 @@ La licenza telefonica per l'area comune supporta:
 
 4. Immettere un nome utente come "MainReception" o "Mainlobby".
 
-5. Per i telefoni delle aree comuni, è possibile impostare una password manualmente o avere la stessa password per tutti i telefoni delle aree comuni. Inoltre, potresti pensare di deselezionare la casella di controllo imposta l'utente come modificarne la **password al primo accesso** .
+5. Per i telefoni delle aree comuni, è possibile impostare una password manualmente o avere la stessa password per tutti i telefoni delle aree comuni. Inoltre, potresti pensare di deselezionare la casella di controllo **imposta l'utente come modificarne la password al primo accesso** .
 
 6. Assegnare le licenze all'utente. Nella stessa pagina, fai clic per espandere **Licenze di prodotto**. Attivare il telefono per l'area comune e selezionare un **piano per chiamate nazionali** o un **piano per chiamate nazionali e internazionali**. 
 
@@ -97,7 +95,7 @@ Per altre informazioni, vedere [aggiungere un utente](https://docs.microsoft.com
 
 Usare l'interfaccia di amministrazione di Skype for business per assegnare un numero all'utente.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare teams di **Amministrazione** > **&** > **portale legacy**Skype.
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **** > **Teams di amministrazione &** > **portale legacy**Skype.
 
 2. Nell'interfaccia di amministrazione di Skype for Business seleziona **** > **numeri di telefono**vocali.
 
@@ -105,7 +103,7 @@ Usare l'interfaccia di amministrazione di Skype for business per assegnare un nu
 
 4. Nella casella utente vocale della pagina **assegna** Digitare il nome dell'utente che utilizzerà il telefono e quindi selezionare l'utente nell'elenco a discesa **selezionare un utente vocale** .
 
-5. Mentre sei lì, dovrai aggiungere un indirizzo di emergenza. Scegliere **Cerca**in base alla città, **ricerca per Descrizione**o **Cerca in base alla posizione** dall'elenco a discesa e quindi immettere la città, la descrizione o la posizione nella casella di testo. Una volta eseguita la ricerca, Cerca in **selezionare l'indirizzo di emergenza** per selezionarne uno giusto.
+5. Mentre sei lì, dovrai aggiungere un indirizzo di emergenza. Scegliere **Cerca**in base alla città, **ricerca per Descrizione**o **Cerca in base alla posizione** dall'elenco a discesa e quindi immettere la città, la descrizione o la posizione nella casella di testo. Una volta eseguita la ricerca, Cerca in **selezionare l'indirizzo di emergenza per selezionarne** uno giusto.
 
 6. Clicca su **Salvare** e il tuo utente dovrebbe apparire così:
 

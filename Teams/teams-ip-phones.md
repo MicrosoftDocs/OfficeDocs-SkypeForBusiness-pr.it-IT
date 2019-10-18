@@ -7,7 +7,8 @@ ms.reviewer: dvank, kponnus
 ms.topic: article
 ms.tgt.pltfrm: lync
 ms.service: msteams
-ms.collection: Teams_ITAdmin_Help
+ms.collection:
+- M365-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -17,12 +18,12 @@ ms.custom:
 - Skype for Business Certification
 - dn947482
 description: Telefoni IP desk e conferenze certificati per Microsoft Teams
-ms.openlocfilehash: 887393825d2894f97afa6f811455e349fd91d877
-ms.sourcegitcommit: 1401ee484a2bc8e72d96649b0571bb59198f9dab
+ms.openlocfilehash: 6025b8c3d3db84e085489f52407e4fc63f39b2eb
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36427592"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570202"
 ---
 # <a name="ip-phones-certified-for-microsoft-teams"></a>Telefoni IP certificati per Microsoft Teams
 
@@ -56,7 +57,7 @@ Vedere [set di funzionalità telefoni Microsoft teams](/MicrosoftTeams/phones-fo
 
 Vedere [individuazione della versione del firmware in un dispositivo mobile](/MicrosoftTeams/phones-for-teams#finding-the-firmware-version-on-a-mobile-device) per determinare la versione del firmware del dispositivo nel dispositivo mobile.
 
-Le licenze di Microsoft teams possono essere acquistate come parte degli abbonamenti a [Office 365](/MicrosoftTeams/Office-365-licensing.md). Per altre informazioni sulle licenze necessarie per l'uso di Microsoft teams sui telefoni, vedere [licenze di sistema telefonico](https://products.office.com/microsoft-teams/voice-calling)disponibili.
+Le licenze di Microsoft teams possono essere acquistate come parte degli [abbonamenti a Office 365](/MicrosoftTeams/Office-365-licensing.md). Per altre informazioni sulle licenze necessarie per l'uso di Microsoft teams sui telefoni, vedere [licenze di sistema telefonico](https://products.office.com/microsoft-teams/voice-calling)disponibili.
 
 Per altre informazioni su come ottenere teams, vedere [come si accede a Microsoft teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 

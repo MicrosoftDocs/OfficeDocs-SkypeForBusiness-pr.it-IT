@@ -12,16 +12,15 @@ description: Guida per l'analisi delle prestazioni multimediali in tempo reale p
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ba3ff4eca48ea8f64f6d50d647c05af4f2c76c1e
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 141527e7decdfec2b1070cfdd41897f38a63a458
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243732"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568379"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida alla revisione della qualità dell'esperienza
 
@@ -33,7 +32,7 @@ Questa guida riguarda la fase di valori di unità per Microsoft teams e Skype fo
 Per avere il massimo impatto sul miglioramento dell'esperienza utente, le organizzazioni devono operazionalizzare le aree principali visualizzate nella figura seguente. Altre aree includono l'identificazione di attività operative, la definizione di obiettivi per le metriche di qualità, la determinazione delle metriche da usare per valutare il successo dell'organizzazione e la restrizione delle aree di indagine in base alle esigenze.
 
 
-![Aree principali per la qualità dell'esperienza utente] (media/qerguide-image-keyareas.png "Le aree principali per la qualità dell'esperienza utente includono audio, affidabilità, sondaggi utente, dispositivi e client.")
+![Aree principali per la qualità dell'esperienza utente](media/qerguide-image-keyareas.png "Le aree principali per la qualità dell'esperienza utente includono audio, affidabilità, sondaggi utente, dispositivi e client.")
 
 _Figura 1-aree operative chiave descritte in questa guida_
 
@@ -82,7 +81,7 @@ In alternativa, è possibile assegnare il ruolo seguente a un account utente di 
 Quando si discute di qualità in teams e Skype for business, è importante definire il termine per ottenere una comprensione comune. La qualità, come definita qui, è una combinazione di metriche dei servizi e esperienza utente.
 
 <!-- Note: need to update graphic-->
-![Illustrazione delle metriche dei servizi e dell'esperienza utente] Le (media/qerguide-image-whatisquality.png "metriche dei servizi sono costituite da scarso rapporto flusso, affidabilità, endpoint/dispositivi e versioni client. L'esperienza utente è costituita dalla percezione dell'utente della qualità del servizio.")
+![Illustrazione delle metriche dei servizi e dell'esperienza utente](media/qerguide-image-whatisquality.png "Sle metriche ervice sono costituite da scarso rapporto flusso, affidabilità, endpoint/dispositivi e versioni client. L'esperienza utente è costituita dalla percezione dell'utente della qualità del servizio. ")
 
 _Figura 2-che cos'è la qualità?_
 
@@ -127,7 +126,7 @@ Questa metrica viene calcolata prendendo il numero totale di flussi che non sono
 
 #### <a name="drop-failure-rate"></a>Calo tasso di errore
 
-La percentuale di errore di rientro, altrimenti nota come misura della _percentuale di errore di chiamata totale_ rilasciata in Call Quality dashboard, è quella dei flussi definiti correttamente in cui il percorso del supporto non è stato interrotto normalmente.
+La percentuale di errore di rientro, altrimenti nota come misura della _percentuale di errore di chiamata totale rilasciata_ in Call Quality dashboard, è quella dei flussi definiti correttamente in cui il percorso del supporto non è stato interrotto normalmente.
 
 Rappresenta qualsiasi flusso multimediale terminato in modo imprevisto. Anche se l'impatto di questa operazione non è così grave come un flusso che non è stato configurato, influirà negativamente sull'esperienza utente. Le cadute di media improvvise e frequenti non solo possono avere un impatto grave sull'esperienza utente, ma determinano la necessità di riconnettersi agli utenti, con conseguente perdita di produttività.
 
@@ -215,7 +214,7 @@ Il successo di operationalizing una distribuzione affidabile e di alta qualità 
 
     -   In secondo luogo, le attività che l'organizzazione deve gestire per garantire un accesso affidabile al servizio, ad esempio l'aggiornamento delle informazioni sulla creazione e la gestione dei firewall per i nuovi indirizzi IP di Office 365, quando l'infrastruttura viene aggiunta al servizio.
 
-![Grafico delle categorie di qualità in un'organizzazione] (media/qerguide-image-categories.png "Categorie di qualità in un'organizzazione: gestione dei servizi, endpoint e rete.")
+![Grafico delle categorie di qualità in un'organizzazione](media/qerguide-image-categories.png "Categorie di qualità in un'organizzazione: gestione dei servizi, endpoint e rete.")
 
 _Figura 3-categorie critiche per i team e la distribuzione di Skype for business online_
 
@@ -224,7 +223,7 @@ L'elemento grafico seguente illustra le attività che è necessario eseguire per
 La prima volta che si eseguono queste attività sarà necessario uno sforzo maggiore rispetto alle iterazioni successive, poiché molte di queste categorie richiedono la convalida delle configurazioni di distribuzione. Dopo aver raggiunto lo stato desiderato soddisfando le destinazioni definite, l'esecuzione di queste attività consentirà di mantenere tale stato.
 
 <!--  This is a net new graphic, never was included in the online article. OOPS! -->
-![Elenco delle attività settimanali per categoria di qualità] (media/qerguide-image-tasks.png "Elenco delle attività settimanali per categoria di qualità")
+![Elenco delle attività settimanali per categoria di qualità](media/qerguide-image-tasks.png "List delle attività settimanali per categoria di qualità ")
 
 #### <a name="service-management-tasks"></a>Attività di gestione dei servizi
 
@@ -297,7 +296,7 @@ I report di riepilogo sono suddivisi in quattro categorie:
 
 -   I **report di riepilogo** sono incentrati sull'analisi delle tendenze qualitative con i report giornalieri, mensili e della tabella per facilitare l'identificazione delle subnet con qualità scadente. Questa è la pagina di destinazione predefinita quando si accede per la prima volta a Call Quality dashboard online.
 -   I **report sulla posizione** sono incentrati sull'analisi delle tendenze qualitative in base alle informazioni sulla posizione. Per usare questi report, è necessario aver caricato un file di costruzione.
--   I **report sull'affidabilità** si riferiscono all'analisi delle tendenze di affidabilità per l'audio, il video, la condivisione dello schermo basata su video (VBSS) e la condivisione delle app.
+-   I **report sull'affidabilità si riferiscono** all'analisi delle tendenze di affidabilità per l'audio, il video, la condivisione dello schermo basata su video (VBSS) e la condivisione delle app.
 -   I **report sulla qualità dei** risultati dell'esperienza sono una versione "snella" dei modelli di QER dettagliati, focalizzati sulle aree chiave per analizzare la qualità audio e l'affidabilità.
 
 ### <a name="report-types"></a>Tipi di report
@@ -475,13 +474,13 @@ Per una formazione e risorse più approfondite, vedere l' [appendice](#other-res
 
 -   Accedere all'interfaccia di **amministrazione di Microsoft teams** e selezionare il collegamento a Call Quality dashboard, come illustrato nella figura seguente.
 
-Screenshot ![del dashboard qualità chiamata selezionato.] (media/qerguide-image-mopo.png "Nel riquadro di spostamento sinistro è selezionato il collegamento al dashboard qualità chiamata.")
+![Screenshot del dashboard qualità chiamata selezionato.](media/qerguide-image-mopo.png "Nel riquadro di spostamento sinistro è selezionato il collegamento al dashboard qualità chiamata.")
 
 _Figura 7-accesso a Call Quality dashboard tramite l'interfaccia di amministrazione di Microsoft Teams_
 
 -   Accedere agli > **strumenti**di interfaccia di **amministrazione di Skype for business**legacy e selezionare il collegamento a Call Quality dashboard, come illustrato nella figura seguente.
 
-Screenshot ![di Call Quality dashboard selezionato nel riquadro principale.] Gli (media/qerguide-image-legacyui.png "strumenti sono selezionati nel riquadro di spostamento sinistro e il collegamento a Call Quality dashboard è selezionato nel riquadro principale.")
+![Screenshot di Call Quality dashboard selezionato nel riquadro principale.](media/qerguide-image-legacyui.png "Gli strumenti sono selezionati nel riquadro di spostamento sinistro e il collegamento a Call Quality dashboard è selezionato nel riquadro principale.")
 
 _Figura 8-accesso a Call Quality dashboard tramite l'interfaccia di amministrazione di Skype for business_
 
@@ -500,10 +499,10 @@ La pagina report dettagliati in Call Quality dashboard è simile alla figura seg
 
 |             |           |
 | ------------|-----------|
-| ![Icona del numero 1, che fa riferimento a un callout nella schermata precedente] (media/qerguide-image-callout1.png "uno") | Il riquadro riepilogo Mostra il contesto per il set di report visualizzato a destra. |
-| ![Icona del numero 2, che fa riferimento a un callout nella schermata precedente] (media/qerguide-image-callout2.png "due") | È possibile selezionare **modifica** nel riquadro di riepilogo per impostare le proprietà del rapporto-livello (inclusa l'altezza dell'asse y) e per importare nuovi modelli. |
-| ![Icona del numero 3, che fa riferimento a un callout nella schermata precedente] (media/qerguide-image-callout3.png "tre") | Il percorso di spostamento consente agli utenti di identificare la posizione corrente nella gerarchia dei set di report. |
-| ![Icona del numero 4, che fa riferimento a un callout nella schermata precedente] (media/qerguide-image-callout4.png "quattro") | I report con report figlio vengono visualizzati con un collegamento blu. Selezionando il collegamento, è possibile eseguire il drill-down per i report figlio. |
+| ![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout1.png "una") | Il riquadro riepilogo Mostra il contesto per il set di report visualizzato a destra. |
+| ![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout2.png "due") | È possibile selezionare **modifica** nel riquadro di riepilogo per impostare le proprietà del rapporto-livello (inclusa l'altezza dell'asse y) e per importare nuovi modelli. |
+| ![Icona del numero 3, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout3.png "tre") | Il percorso di spostamento consente agli utenti di identificare la posizione corrente nella gerarchia dei set di report. |
+| ![Icona del numero 4, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout4.png "quattro") | I report con report figlio vengono visualizzati con un collegamento blu. Selezionando il collegamento, è possibile eseguire il drill-down per i report figlio. |
 
 _Figura 10-pagina report dettagliati_
 
@@ -517,10 +516,10 @@ Quando si seleziona **modifica** nel menu azione di un report, è possibile apri
 
 |             |           |
 | ------------|-----------|
-| ![Icona del numero 1, che fa riferimento a un callout nella schermata precedente] (media/qerguide-image-callout1.png "uno") | È possibile scegliere dimensioni, misure e filtri dal riquadro sinistro. Se si punta a un valore esistente, viene visualizzato un pulsante Chiudi (**X**) che è possibile selezionare per rimuovere il valore.<ul><li>Selezionando la quota o la misura, è possibile modificare il titolo modificando il campo **titolo** . È anche possibile modificare l'ordine selezionando le frecce blu in alto o in basso nel riquadro superiore.</li><li>Selezionando**+**() accanto a un titolo si apre la finestra di dialogo per l'aggiunta di una nuova dimensione, misura o filtro.</li><li>Immettere le prime lettere della dimensione, della misura o del filtro nel campo **trova un** per filtrare l'elenco per semplificare la ricerca.</li></ul> |
-| ![Icona del numero 2, che fa riferimento a un callout nella schermata precedente] (media/qerguide-image-callout2.png "due") | Il riquadro superiore mostra le opzioni per la personalizzazione del grafico. |
-| ![Icona del numero 3, che fa riferimento a un callout nella schermata precedente] (media/qerguide-image-callout3.png "tre") | L'editor di query Mostra un'anteprima del report. |
-| ![Icona del numero 4, che fa riferimento a un callout nella schermata precedente] (media/qerguide-image-callout4.png "quattro") | Usare la casella di **modifica** nella parte inferiore dello schermo per creare o modificare una descrizione dettagliata del report. |
+| ![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout1.png "una") | È possibile scegliere dimensioni, misure e filtri dal riquadro sinistro. Se si punta a un valore esistente, viene visualizzato un pulsante Chiudi (**X**) che è possibile selezionare per rimuovere il valore.<ul><li>Selezionando la quota o la misura, è possibile modificare il titolo modificando il campo **titolo** . È anche possibile modificare l'ordine selezionando le frecce blu in alto o in basso nel riquadro superiore.</li><li>Selezionando**+**() accanto a un titolo si apre la finestra di dialogo per l'aggiunta di una nuova dimensione, misura o filtro.</li><li>Immettere le prime lettere della dimensione, della misura o del filtro nel campo **trova un** per filtrare l'elenco per semplificare la ricerca.</li></ul> |
+| ![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout2.png "due") | Il riquadro superiore mostra le opzioni per la personalizzazione del grafico. |
+| ![Icona del numero 3, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout3.png "tre") | L'editor di query Mostra un'anteprima del report. |
+| ![Icona del numero 4, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout4.png "quattro") | Usare la casella di **modifica** nella parte inferiore dello schermo per creare o modificare una descrizione dettagliata del report. |
 
 _Figura 11-editor di query_
 
@@ -603,7 +602,7 @@ Questa guida include [due modelli di Call Quality dashboard curati](https://aka.
 
 5. Dopo il caricamento del modello, nella finestra popup verrà visualizzato il messaggio "l'importazione di report è stata completata". Selezionare **OK.**
 
-   Screenshot ![della notifica di importazione riuscita] (media/qerguide-image-importmessage.png "Notifica che il modello è stato importato correttamente")
+   ![Screenshot della notifica di importazione riuscita](media/qerguide-image-importmessage.png "Notifica che il modello è stato importato correttamente")
 
 6. Ripetere i passaggi 4 e 5 per il secondo modello di Call Quality dashboard.
 
@@ -734,7 +733,7 @@ Il dashboard report di riepilogo di Call Quality dashboard include una pagina di
  
    _Figura 16-errore di caricamento dei dati di compilazione_
 
-7. Se non si verificano errori durante la convalida, il caricamento del file avrà esito positivo. È quindi possibile visualizzare il file di dati caricati nella **** tabella uploads, che mostra l'elenco completo di tutti i file caricati per il tenant corrente nella parte inferiore della pagina.
+7. Se non si verificano errori durante la convalida, il caricamento del file avrà esito positivo. È quindi possibile **visualizzare il file** di dati caricati nella tabella uploads, che mostra l'elenco completo di tutti i file caricati per il tenant corrente nella parte inferiore della pagina.
 
 > [!NOTE]
 > Per completare l'elaborazione del file di costruzione, possono essere necessarie fino a quattro ore. <br><br> Se è già stato caricato un file di costruzione ed è necessario aggiungere subnet che potrebbero essere state perse o escluse, modificare il file originale aggiungendo le nuove subnet, rimuovere il file corrente e caricare di nuovo il file appena modificato. In Call Quality dashboard può essere presente un solo file di dati dell'edificio attivo. 

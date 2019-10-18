@@ -11,18 +11,17 @@ audience: admin
 search.appverid: MET150
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per gli eventi di teams Live che si svolgono nell'organizzazione.
 f1keywords: ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6a1d60ce0e8796d038c6ea8890066c1aee5f0ec6
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: bb2b0f6c29af383061877562e8e6762965937f5f
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243703"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570191"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi dinamici in Microsoft Teams
 
@@ -30,7 +29,7 @@ Usa le impostazioni eventi di teams Live per configurare le impostazioni per gli
 
 Puoi gestire facilmente queste impostazioni nell'interfaccia di amministrazione di Microsoft teams. Nella barra di spostamento sinistra, vai a**Impostazioni eventi live** **riunioni** > . 
 
-![Schermata delle impostazioni di eventi live di teams] Screenshot (../media/teams-live-events-settings.png "delle impostazioni di eventi live di teams che è possibile configurare nell'") interfaccia di amministrazione di Microsoft Teams 
+![Schermata delle impostazioni di eventi live di Teams](../media/teams-live-events-settings.png "Screenshot delle impostazioni di eventi live di teams che è possibile configurare nell'interfaccia di amministrazione di Microsoft Teams") 
 
 ## <a name="set-up-event-support-url"></a>URL del supporto per la configurazione dell'evento
 
@@ -41,7 +40,7 @@ Questo URL viene visualizzato nei partecipanti agli eventi dinamici. Aggiungere 
 1. Nella barra di spostamento sinistra, vai a**Impostazioni eventi live** **riunioni** > .
 2. In **URL di supporto**immettere l'URL di supporto dell'organizzazione. 
 
-    ![Impostazione dell'URL del supporto per eventi dinamici nell'interfaccia di amministrazione] Screenshot (../media/teams-live-events-settings-supporturl.png "dell'impostazione dell'URL del supporto per gli eventi live") di Teams
+    ![Impostazione dell'URL del supporto per eventi dinamici nell'interfaccia di amministrazione](../media/teams-live-events-settings-supporturl.png "Screenshot dell'impostazione dell'URL del supporto per gli eventi live di Teams")
 
 ### <a name="using-windows-powershell"></a>Uso di Windows PowerShell
 Esegui il seguente comando:
@@ -58,7 +57,7 @@ Se è stata acquistata e configurata una soluzione software defined Network (SDN
 1. Nella barra di spostamento sinistra, vai a**Impostazioni eventi live** **riunioni** > .
 2. In **provider di distribuzione video di terze parti**completare le operazioni seguenti: 
 
-    ![Impostazioni del provider di distribuzione video di terze parti nell'interfaccia di amministrazione] Screenshot (../media/teams-live-events-settings-distribution-provider.png "delle impostazioni del provider di distribuzione video di terze parti per eventi dinamici")
+    ![Impostazioni del provider di distribuzione video di terze parti nell'interfaccia di amministrazione](../media/teams-live-events-settings-distribution-provider.png "Screenshot delle impostazioni del provider di distribuzione video di terze parti per eventi dinamici")
 
     - **Usare un provider di distribuzione di terze parti** Attivare questa opzione per abilitare il provider di distribuzione video di terze parti.
     - **Nome provider Sdn** Scegliere il provider che si sta usando.

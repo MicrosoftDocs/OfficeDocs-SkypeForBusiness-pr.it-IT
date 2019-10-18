@@ -10,7 +10,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-- Teams_ITAdmin_Help
 - M365-voice
 search.appverid: MET150
 audience: Admin
@@ -25,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Repubblica Ceca.
-ms.openlocfilehash: eb900fcbbc75225b9bbf9c3537e02f9bde4d4d1f
-ms.sourcegitcommit: 2f8b9c7c8d20f2605d09cae4bbaeb10667f2ddea
+ms.openlocfilehash: 221470cbfa8598de831393b2f82746748f288563
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "36182818"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571159"
 ---
 # <a name="availability-in-the-czech-republic"></a>Disponibilità nella Repubblica Ceca
 
