@@ -1,5 +1,5 @@
 ---
-title: " Interfaccia DSTU2 dell'app pazienti e integrazione di EHR"
+title: Interfaccia DSTU2 dell'app pazienti e integrazione di EHR
 author: jambirk
 ms.author: jambirk
 manager: serdars
@@ -8,17 +8,19 @@ ms.topic: article
 ms.service: msteams
 search.appverid: MET150
 localization_priority: Normal
-ms.collection: Teams_ITAdmin_PracticalGuidance
+ms.collection:
+- M365-collaboration
+- Teams_ITAdmin_Healthcare
 appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: Integrazione dell'app EHR di Microsoft teams patients
-ms.openlocfilehash: 85fd90fb338f8b19762dc9433fa1dc281f3cedff
-ms.sourcegitcommit: cf2cb5b7e03385b33e34a5ff89719adb882525b1
+ms.openlocfilehash: 179cd031b6e32ee3ed32a6d3be1fa4afaae68cc2
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "36182026"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570370"
 ---
 # <a name="dstu2-interface-specification"></a>Specifica dell'interfaccia DSTU2
 

@@ -10,8 +10,7 @@ ms.assetid: 66945036-ae87-4c08-a0bb-984e50d6b009
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
+- M365-voice
 search.appverid: MET150
 audience: Admin
 appliesto:
@@ -24,12 +23,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: Usare i dettagli di analisi delle chiamate su dispositivi, reti e connettività per risolvere i problemi degli utenti con le chiamate e le riunioni di Microsoft teams e Skype for business.
-ms.openlocfilehash: 952cd0f34221f0a7e1203f8ff78edf2abdadb9b1
-ms.sourcegitcommit: b5949233f8080a6cf0edb4b5e27272214feb1c22
+ms.openlocfilehash: 4b2d6a5a18bf0a13f3fd32aecb8ad98192f3851a
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "36183973"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568635"
 ---
 # <a name="use-call-analytics-to-troubleshoot-poor-call-quality"></a>Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
 

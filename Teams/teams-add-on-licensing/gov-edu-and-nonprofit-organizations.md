@@ -8,7 +8,6 @@ ms.topic: reference
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 audience: Admin
 appliesto:
@@ -18,12 +17,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle licenze per i componenti aggiuntivi e le funzionalità per i piani di organizzazione GOV, EDU e no-profit. '
-ms.openlocfilehash: b52fdea992d2b759ad7ae252a179e5f6c771327b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: d63145cf6a8c761b4454fff212bd0e593ac8f395
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242814"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571214"
 ---
 # <a name="gov-edu-and-non-profit-organizations"></a>GOV, EDU e organizzazioni senza scopo di lucro
 

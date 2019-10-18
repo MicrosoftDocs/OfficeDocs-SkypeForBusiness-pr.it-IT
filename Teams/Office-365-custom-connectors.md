@@ -8,19 +8,18 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 ms.reviewer: lucarras
 search.appverid: MET150
 description: I connettori mantengono il team aggiornato fornendo contenuti e aggiornamenti dai servizi usati di frequente direttamente in un canale.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a8235ce9eb950df0c04ab41949500a640376e612
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 4b1dc57bbe3d216ee779f962ef4b2fc1152e2161
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245519"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569841"
 ---
 <a name="use-office-365-and-custom-connectors-in-microsoft-teams"></a>Usare Office 365 e connettori personalizzati in Microsoft Teams
 =======================================================
@@ -55,7 +54,7 @@ Attualmente è possibile aggiungere connettori usando i client desktop e Web di 
 <a name="develop-custom-connectors"></a>Sviluppare connettori personalizzati
 -----------------------------
 
-È molto semplice sviluppare connettori personalizzati che possono essere integrati con le applicazioni line-of-business (LOB). Puoi usare il connettore webhook in **ingresso** incorporato per creare un endpoint per un canale che estrae i dati da qualsiasi applicazione usando i metodi post http.
+È molto semplice sviluppare connettori personalizzati che possono essere integrati con le applicazioni line-of-business (LOB). Puoi usare il connettore **webhook in ingresso** incorporato per creare un endpoint per un canale che estrae i dati da qualsiasi applicazione usando i metodi post http.
 
 1. Aggiungere il **webhook in arrivo** come qualsiasi altro connettore.
 

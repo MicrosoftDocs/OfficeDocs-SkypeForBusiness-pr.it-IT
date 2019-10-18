@@ -8,17 +8,19 @@ ms.topic: article
 ms.service: msteams
 search.appverid: MET150
 localization_priority: Normal
-ms.collection: Teams_ITAdmin_PracticalGuidance
+ms.collection:
+- M365-collaboration
+- Teams_ITAdmin_Healthcare
 appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: Integrazione dell'app EHR di Microsoft teams patients
-ms.openlocfilehash: 34fd6bb1ecaf788a55aca877c671c9a51cb07944
-ms.sourcegitcommit: cf2cb5b7e03385b33e34a5ff89719adb882525b1
+ms.openlocfilehash: 836c28f339a3936f03315b005c0eedfc49e0f2ba
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "36182032"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569244"
 ---
 # <a name="stu3-interface-specification"></a>Specifica dell'interfaccia STU3
 
@@ -32,7 +34,7 @@ La configurazione o la riconfigurazione di un server FHIR per l'utilizzo con l'a
 - [Verificarsi](#encounter)
 - [Intolleranza alle allergie](#allergyintolerance)
 - [Copertura delle](#coverage)
-- [Istruzione del farmaco](#medication-request) sostituisce il MedicationOrder nella versione DSTU2 di PatientsApp.
+- [Istruzione farmaco](#medication-request) (sostituisce il MedicationOrder nella versione DSTU2 di PatientsApp)
 - Posizione (le informazioni necessarie da questa risorsa possono essere incluse in Encounter)
 
 > [!NOTE]

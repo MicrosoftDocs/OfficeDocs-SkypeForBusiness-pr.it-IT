@@ -12,16 +12,15 @@ ms.reviewer: ''
 description: Come accedere a Microsoft teams con l'autenticazione moderna.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: af7ecffc6dbed108fdc3ec68802aac39aa4f54c4
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: a5698058cbfecd62f92cfe9f198657f7c280deff
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243105"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568682"
 ---
 <a name="sign-in-to-microsoft-teams-using-modern-authentication"></a>Accedere a Microsoft teams con l'autenticazione moderna
 ==========================
@@ -49,7 +48,7 @@ Quando gli utenti avviano teams, il loro computer non potrà tirare le proprie c
 Se gli utenti stanno lavorando a un computer collegato al dominio (ad esempio, se il tenant ha abilitato Kerberos), non possono cambiare gli account utente dopo aver completato l'autenticazione moderna. Se gli utenti non stanno lavorando a un computer collegato al dominio, possono cambiare account.
 
 ## <a name="signing-out-of-microsoft-teams-after-completing-modern-authentication"></a>Disconnettersi da Microsoft teams dopo aver completato l'autenticazione moderna
-Per disconnettersi da teams, gli utenti possono fare clic sull'immagine del profilo nella parte superiore dell'app e **** quindi selezionare Disconnetti. È anche possibile fare clic con il pulsante destro del mouse sull'icona dell'app nella barra delle applicazioni e quindi scegliere **Disconnetti**. Dopo aver disconnettersi da teams, è necessario immettere di nuovo le credenziali per avviare l'app.
+Per disconnettersi da teams, gli utenti possono fare clic sull'immagine del profilo nella parte superiore dell'app e **quindi selezionare Disconnetti**. È anche possibile fare clic con il pulsante destro del mouse sull'icona dell'app nella barra delle applicazioni e quindi scegliere **Disconnetti**. Dopo aver disconnettersi da teams, è necessario immettere di nuovo le credenziali per avviare l'app.
 
 ## <a name="troubleshooting-modern-authentication"></a>Risoluzione dei problemi di autenticazione moderna
 

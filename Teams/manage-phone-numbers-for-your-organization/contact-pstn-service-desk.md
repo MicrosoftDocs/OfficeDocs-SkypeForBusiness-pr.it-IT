@@ -9,7 +9,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 audience: Admin
 appliesto:
@@ -23,12 +22,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.custom:
 - Calling Plans
 description: Quando si ottengono numeri di telefono o porting (trasferendo) i numeri per l'organizzazione, potrebbe essere necessario ottenere assistenza e supporto tecnico presso il servizio di assistenza PSTN.
-ms.openlocfilehash: 147bc55a04e2dc28c6ff28d6e2416cd2ff0334ec
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: 72484e6957a17593c6a286505dfce00e051f0762
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483713"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570612"
 ---
 # <a name="pstn-service-desk-help"></a>Guida di Service Desk PSTN
 

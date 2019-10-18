@@ -10,17 +10,16 @@ ms.reviewer: svemu
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni su come usare il report utilizzo teams nell'interfaccia di amministrazione di Microsoft teams per ottenere una panoramica delle attività dei team nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6a31d3a6bf374e512dde0549dbbd59ed90904cd0
-ms.sourcegitcommit: a71ad6762e18267faaaac09533bac80a181102af
+ms.openlocfilehash: 7aba4d3e185052d7c4f5399dd9370a05a4a7dc0a
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439573"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570973"
 ---
 # <a name="microsoft-teams-usage-report"></a>Report sull'utilizzo di Microsoft Teams
 
@@ -31,7 +30,7 @@ Il report sull'utilizzo di teams nell'interfaccia di amministrazione di Microsof
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo teams**.
 2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.
 
-    ![Screenshot del report utilizzo teams nell'interfaccia di amministrazione teams con callout](../media/teams-reports-teams-usage-with-callouts.png "screenshot del report utilizzo teams nell'interfaccia di amministrazione teams con callout")
+    ![Screenshot del report utilizzo teams nell'interfaccia di amministrazione di teams con callout](../media/teams-reports-teams-usage-with-callouts.png "Screenshot del report utilizzo teams nell'interfaccia di amministrazione di teams con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 

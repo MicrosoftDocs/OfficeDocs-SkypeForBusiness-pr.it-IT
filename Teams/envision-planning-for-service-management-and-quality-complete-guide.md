@@ -11,17 +11,14 @@ ms.reviewer: rowille
 description: Offrire un'esperienza utente di team di alta qualità gestendo servizi, reti ed endpoint per l'integrità e definendo i ruoli di campione operativo e qualità.
 localization_priority: Normal
 search.appverid: MET150
-ms.collection:
-- Teams_ITAdmin_PracticalGuidance
-- M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 76bac106b9655e2c7fe9df9984e455a14db46209
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 61ae66b8cbe22cbc81dc5586ad8b5d9ee9c11d62
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236508"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37579672"
 ---
 # <a name="plan-for-service-management-and-quality"></a>Pianificare la gestione e la qualità dei servizi
 
@@ -57,7 +54,7 @@ Ci sono requisiti specifici per la distribuzione che sono di fondamentale import
 
 Un'organizzazione o un partner di supporto dovrebbe iniziare a pianificare tre componenti chiave durante la fase di progettazione di una distribuzione di Team: gestione dei servizi, rete e endpoint. La combinazione di tutte e tre le aree è fondamentale per la qualità dell'esperienza utente.
 
-![Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti.] (media/envision-planning-for-service-management-and-quality-complete-guide-image1.png "Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti.")
+![Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti.](media/envision-planning-for-service-management-and-quality-complete-guide-image1.png "Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti.")
 
 #### <a name="service-management"></a>Gestione dei servizi
 
@@ -95,7 +92,7 @@ La nozione di gestione dei servizi non è probabilmente un nuovo concetto per la
 
 La gestione dei servizi comprende tutte le attività e i processi coinvolti nella gestione di Microsoft teams end to end. Come descritto in precedenza, alcuni componenti della gestione dei servizi, ovvero i componenti dell'infrastruttura che il servizio di Office 365 stesso comporta, sono responsabili di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti dei team, rete e endpoint da essi forniti. Questa sezione del documento consentirà di concentrarsi sulla responsabilità del cliente da una prospettiva di gestione dei servizi.
 
-![Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sulla gestione dei servizi.] (media/envision-planning-for-service-management-and-quality-complete-guide-image2.png "Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sulla gestione dei servizi.")
+![Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sulla gestione dei servizi.](media/envision-planning-for-service-management-and-quality-complete-guide-image2.png "Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sulla gestione dei servizi.")
 
 ### <a name="introduction-to-the-operations-guide"></a>Introduzione alla Guida alle operazioni 
 
@@ -125,7 +122,7 @@ Le attività e le attività associate al ruolo sono state documentate nella Guid
 
 La guida alla revisione dell'esperienza di qualità include una serie di attività che valutano e includono indicazioni per il risanamento in aree chiave che hanno il massimo impatto per migliorare l'esperienza utente, come illustrato nella figura seguente.
 
-![Diagramma che illustra le aree principali esaminate durante una revisione dell'esperienza di qualità.] (media/envision-planning-for-service-management-and-quality-complete-guide-image3.png "Diagramma che illustra le aree principali esaminate durante una revisione dell'esperienza di qualità.")
+![Diagramma che illustra le aree principali esaminate durante una revisione dell'esperienza di qualità.](media/envision-planning-for-service-management-and-quality-complete-guide-image3.png "Diagramma che illustra le aree principali esaminate durante una revisione dell'esperienza di qualità.")
 
 Valutando e rimediando continuamente le aree descritte in questo documento, è possibile ridurre le proprie potenzialità per influire negativamente sull'esperienza utente. La maggior parte dei problemi di esperienza utente incontrati in una distribuzione può essere raggruppata nelle categorie seguenti:
 
@@ -151,7 +148,7 @@ La guida alla revisione dell'esperienza di qualità può essere trovata [qui](ht
 
 La pianificazione della qualità della rete sarà lo stato principale per la sezione seguente.
 
-![Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sulla rete.] (media/envision-planning-for-service-management-and-quality-complete-guide-image4.png "Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sulla rete.")
+![Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sulla rete.](media/envision-planning-for-service-management-and-quality-complete-guide-image4.png "Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sulla rete.")
 
 Come accennato in precedenza, la pianificazione della qualità della rete prima dell'onboarding in Microsoft teams è fondamentale. Per altre indicazioni sulla conformità della rete, vedere [preparare la rete dell'organizzazione per Microsoft teams](prepare-network.md).
 
@@ -266,7 +263,7 @@ La valutazione della rete può essere eseguita usando un partner Microsoft, stru
 
 Come si può vedere dal diagramma seguente, gli endpoint sono un blocco predefinito importante per offrire un'esperienza di alta qualità per gli utenti.
 
-![Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sugli endpoint.] (media/envision-planning-for-service-management-and-quality-complete-guide-image5.png "Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sugli endpoint.")
+![Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sugli endpoint.](media/envision-planning-for-service-management-and-quality-complete-guide-image5.png "Diagramma che illustra i tre componenti della qualità e la gestione dei servizi in sovrapposizione di tutti e tre i componenti. Con lo stato attivo sugli endpoint.")
 
 Gli endpoint di Microsoft teams possono essere eseguiti in molti dispositivi, tra cui PC, Mac, tablet e dispositivi mobili. Parte dell'esperienza non include solo il dispositivo, ma anche il modo in cui un utente si connette al dispositivo, ad esempio usando il microfono/altoparlante incorporato del dispositivo, gli auricolari o un auricolare ottimizzato. L'uso di un auricolare ottimizzato può arricchire l'esperienza utente complessiva.
 

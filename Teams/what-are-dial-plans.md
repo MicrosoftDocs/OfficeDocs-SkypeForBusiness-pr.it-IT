@@ -10,7 +10,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 audience: Admin
 appliesto:
@@ -21,12 +20,12 @@ f1keywords: ms.teamsadmincenter.voice.dialplans.overview
 ms.custom:
 - Calling Plans
 description: "Informazioni sul tipo di piani per chiamate telefoniche con chiamate PSTN disponibili in Office 365 e su come sceglierne uno per l'organizzazione.  "
-ms.openlocfilehash: 71fe659b2dac511b8895689018989e0f9178d1f9
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: 7a7f736ab701f2e87e29ee2a33b4cfbebccd7c21
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483969"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568565"
 ---
 # <a name="what-are-dial-plans"></a>Che cosa sono i piani di chiamata?
 
@@ -38,9 +37,9 @@ Per creare e gestire piani di chiamata di tenant, vedere [creare e gestire piani
 
 ## <a name="tenant-dial-plan-scope"></a>Ambito tenant del piano di chiamata
 
-L'ambito di un piano di chiamata determina il livello gerarchico in cui il piano di chiamata può essere applicato. Gli ambiti sono diversi rispetto a una distribuzione locale di Skype for Business Server. I client ottengono il dial plan appropriato tramite le impostazioni di provisioning fornite automaticamente quando gli utenti accedono a teams o Skype for business online. Come amministratore, puoi gestire e assegnare i livelli di ambito del piano di chiamata utilizzando PowerShell da remoto.
+L'ambito di un dial plan determina il livello gerarchico in cui è possibile applicare il dial plan. Gli ambiti sono diversi rispetto a una distribuzione locale di Skype for Business Server. I client ottengono il dial plan appropriato tramite le impostazioni di provisioning fornite automaticamente quando gli utenti accedono a teams o Skype for business online. Come amministratore, puoi gestire e assegnare livelli di ambito di dial plan usando Remote PowerShell.
 
-In teams e Skype for business online esistono due tipi di dial plan: ambito del servizio e tenant (per la propria organizzazione) con ambito. Viene definito un dial plan con ambito servizio per ogni paese o area geografica in cui è disponibile il sistema telefonico Office 365. A ogni utente viene assegnato automaticamente il dial plan paese di servizio che corrisponde alla posizione di utilizzo di Office 365 assegnata all'utente. Non è possibile modificare il dial plan per il paese di servizio, ma si possono creare piani di dial con ambito tenant, che aumentano il dial plan paese di servizio. Man mano che i clienti hanno effettuato il provisioning, ottengono un "piano di chiamata efficace", che è una combinazione di dial plan del paese di servizio e il dial plan del tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
+In teams e Skype for business online esistono due tipi di dial plan: ambito del servizio e tenant (per la propria organizzazione) con ambito. Viene definito un dial plan con ambito servizio per ogni paese o area geografica in cui è disponibile il sistema telefonico Office 365. A ogni utente viene assegnato automaticamente il dial plan paese di servizio che corrisponde alla posizione di utilizzo di Office 365 assegnata all'utente. Non è possibile modificare il dial plan per il paese di servizio, ma si possono creare piani di dial con ambito tenant, che aumentano il dial plan paese di servizio. Man mano che i clienti hanno effettuato il provisioning, ottengono un "piano di chiamata efficace", che è una combinazione di dial plan del paese di servizio e il dial plan del tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nei piani di chiamata del tenant che potrebbero già esistere nel dial plan paese di servizio.
 
 I piani di chiamata tenant si possono suddividere ulteriormente in due ambiti: l'ambito tenant e l'ambito utente. Se un tenant definisce e assegna un piano di chiamata con ambito utente, quell'utente riceverà in provisioning un piano di chiamata effettivo costituito dal piano di chiamata di servizio del Paese dell'utente e dal piano di chiamata assegnato all'utente. Se un tenant definisce un piano di chiamata con ambito tenant ma non assegna un piano di chiamata con ambito utente, quell'utente riceverà in provisioning un piano di chiamata effettivo costituito dal piano di chiamata di servizio del Paese e dal piano di chiamata tenant.
 

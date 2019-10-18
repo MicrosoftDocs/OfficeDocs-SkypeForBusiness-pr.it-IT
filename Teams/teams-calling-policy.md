@@ -14,18 +14,17 @@ localization_priority: Normal
 ms.custom:
 - NewAdminCenter_Update
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
+- M365-voice
 f1keywords:
 - ms.teamsadmincenter.callingpolicies.overview
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2e97f16097a30172a2ea56eb7fc9808042055f0e
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: 788cc0e93b16585f1d3424d3bfa0a62693528740
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483684"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570271"
 ---
 <a name="calling-policies-in-microsoft-teams"></a>Criteri di chiamata in Microsoft Teams
 ===================================
@@ -38,7 +37,7 @@ Seguire questa procedura per creare un criterio di chiamata personalizzato.
 
 1. Nell'interfaccia di amministrazione di Microsoft teams selezionare criteri per le**chiamate** **vocali** > .
 2. Selezionare **nuovo criterio**.
-3. Attivare le funzionalità che si desidera utilizzare nei criteri di chiamata. Tutte le selezioni sono **** disattivate per impostazione predefinita.
+3. Attivare le funzionalità che si desidera utilizzare nei criteri di chiamata. Tutte le selezioni sono **disattivate** per impostazione predefinita.
 4. Per controllare se gli utenti possono instradare le chiamate in ingresso alla segreteria telefonica, selezionare **sempre abilitato** o **controllato dall'utente**. Per impedire il routing alla segreteria telefonica, selezionare **sempre disabilitato**.
 5. Selezionare **Salva**.
 
@@ -48,7 +47,7 @@ Seguire questa procedura per modificare un criterio di chiamata esistente.
 
 1. Nell'interfaccia di amministrazione di Microsoft teams selezionare criteri per le**chiamate** **vocali** > .
 2. Fare clic su accanto al criterio che si vuole modificare e quindi selezionare **modifica**.
-3. Attivare le funzionalità che si desidera utilizzare nei criteri di chiamata. Tutte le selezioni sono **** disattivate per impostazione predefinita.
+3. Attivare le funzionalità che si desidera utilizzare nei criteri di chiamata. Tutte le selezioni sono **disattivate** per impostazione predefinita.
 4. Per controllare se gli utenti possono instradare le chiamate in ingresso alla segreteria telefonica, selezionare **sempre abilitato** o **controllato dall'utente**. Per impedire il routing alla segreteria telefonica, selezionare **sempre disabilitato**.
 5. Selezionare **Salva**.
 

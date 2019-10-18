@@ -17,15 +17,14 @@ f1keywords:
 - ms.teamsadmincenter.meetingsettings.network.ports
 - ms.teamsadmincenter.meetingsettings.overview
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per le riunioni di team che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 1e5b3fd1c76f4ff925b23b838e2719ec93077f14
-ms.sourcegitcommit: 332817f49ec1e6767334fdd4c2ec3f791020a26c
+ms.openlocfilehash: 36325fe82c8864850da8e92de385752422e02f72
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36767195"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37564934"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni delle riunioni in Microsoft Teams
 
@@ -40,7 +39,7 @@ Con l'aggiunta anonima, chiunque può partecipare alla riunione come utente anon
 1. Nella barra di spostamento sinistra, vai a**Impostazioni riunione** **riunioni** > .
 2. In **partecipanti**, attivare **gli utenti anonimi possono partecipare a una riunione**.
 
-    ![Screenshot delle impostazioni dei partecipanti per le riunioni nell'] interfaccia di amministrazione Screenshot (media/meeting-settings-participants.png "delle impostazioni dei partecipanti per le riunioni di team nell'interfaccia di amministrazione di Microsoft teams")
+    ![Screenshot delle impostazioni dei partecipanti per le riunioni nell'interfaccia di amministrazione](media/meeting-settings-participants.png "Screenshot delle impostazioni dei partecipanti per le riunioni di team nell'interfaccia di amministrazione di Microsoft Teams")
 
 Se non si vuole che gli utenti anonimi partecipino alle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
@@ -63,7 +62,7 @@ Se non si vuole che gli utenti anonimi partecipino alle riunioni pianificate dag
 1. Nella barra di spostamento sinistra, vai a**Impostazioni riunione** **riunioni** > .
 2. In **invito tramite posta elettronica**eseguire le operazioni seguenti:
 
-    ![Screenshot delle impostazioni dell'invito alla riunione che è possibile personalizzare] Screenshot (media/meeting-settings-invitation.png "delle impostazioni dell'invito alla riunione che è possibile personalizzare per le riunioni di teams")
+    ![Screenshot delle impostazioni dell'invito alla riunione che è possibile personalizzare](media/meeting-settings-invitation.png "Screenshot delle impostazioni dell'invito alla riunione che è possibile personalizzare per le riunioni di Teams")
 
     - **URL del logo** Immettere l'URL in cui è archiviato il logo.
     - **URL legale** Se l'organizzazione ha un sito Web legale in cui si vuole che gli utenti possano rivolgersi per eventuali problemi legali, immettere l'URL qui.
@@ -85,7 +84,7 @@ Se si usa la qualità del servizio [(QoS)](qos-in-teams.md) per definire la prio
 1. Nella barra di spostamento sinistra, vai a**Impostazioni riunione** **riunioni** > .
 2. In **rete**eseguire le operazioni seguenti:
 
-    ![Screenshot delle impostazioni di rete per le riunioni nell'] interfaccia di amministrazione Screenshot (media/meeting-settings-network.png "delle impostazioni di rete per le riunioni di team nell'interfaccia di amministrazione di Microsoft teams")
+    ![Screenshot delle impostazioni di rete per le riunioni nell'interfaccia di amministrazione](media/meeting-settings-network.png "Screenshot delle impostazioni di rete per le riunioni di team nell'interfaccia di amministrazione di Microsoft Teams")
 
     - Per consentire l'uso dei contrassegni di DSCP per QoS, attivare l'opzione **Inserisci indicatori di qualità del servizio (QoS) per il traffico multimediale in tempo reale**. Hai solo l'opzione di usare i marcatori o meno; non è possibile impostare indicatori personalizzati per ogni tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method) .
     > [!NOTE] 

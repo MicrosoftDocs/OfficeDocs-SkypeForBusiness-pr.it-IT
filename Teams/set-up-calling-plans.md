@@ -10,7 +10,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 audience: Admin
 appliesto:
@@ -22,12 +21,12 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 description: 'Learn how in Office 365 Calling Plan (PSTN Calling plan) to buy and set up licenses, get phone numbers, add and assign emergency locations and phone numbers to users, and tell your users about their new phone numbers. '
-ms.openlocfilehash: 9f01c73c8374a367beb03db0a14df5dada0c562d
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: 964748a9af9d7a31d7dd4cc4648353b6724fc54e
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "36183814"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571239"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 
@@ -76,7 +75,7 @@ Nell'interfaccia di amministrazione di Skype for business passa a **** > **posiz
 
 ![Icona che mostra il logo](media/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
-Nell'interfaccia di amministrazione di Skype for business passare a **** > Voice Voice**Users** > **location** > per l'emergenza**Assegna numero** > ****. Per altri dettagli, vedere [assegnare o modificare un indirizzo di emergenza per un utente](/skypeforbusiness/what-are-calling-plans-in-office-365/assign-or-change-an-emergency-address-for-a-user) .
+Nell'interfaccia di amministrazione di Skype for business **passare a Voice Voice** > **Users** > **location** > per l'emergenza**Assegna numero** > **.** Per altri dettagli, vedere [assegnare o modificare un indirizzo di emergenza per un utente](/skypeforbusiness/what-are-calling-plans-in-office-365/assign-or-change-an-emergency-address-for-a-user) .
 
    > [!NOTE]
    > È anche possibile assegnare un indirizzo di emergenza quando si assegna un numero di telefono.
@@ -85,7 +84,7 @@ Nell'interfaccia di amministrazione di Skype for business passare a **** > Voice
 
 ![Icona che mostra il logo](media/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
-Nell'interfaccia di amministrazione di Skype for business passare a **** > Voice Voice**Users** > **assign Number** > **Change Location**. Per altri dettagli, vedere [assegnare, modificare o rimuovere un numero di telefono per un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user) .
+Nell'interfaccia di amministrazione di Skype for business **passare a** > Voice Voice**Users** > **assign Number** > **Change Location**. Per altri dettagli, vedere [assegnare, modificare o rimuovere un numero di telefono per un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user) .
 
 ## <a name="step-6-tell-your-users-about-their-new-phone-numbers"></a>Passaggio 6: informare gli utenti sui nuovi numeri di telefono
 <a name="bkmk_add_addresses"> </a>

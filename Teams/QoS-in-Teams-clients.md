@@ -12,16 +12,15 @@ description: Implementare la qualità del servizio (QoS) per i client di Microso
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_PracticalGuidance
-- M365-voice
+- M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 91b761cafa15172ae3fb0126f5059408e1a5f7ca
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 28e6664fa43819493e5b9e02d182bcec44f00905
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36246197"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572564"
 ---
 # <a name="set-qos-on-windows-clients"></a>Impostare QoS nei client Windows
 
@@ -40,7 +39,7 @@ Laddove possibile, configurare le impostazioni QoS basate su criteri all'interno
 
 Per creare criteri audio QoS per i computer Windows 10 aggiunti al dominio, accedere prima a un computer in cui è stata installata la gestione dei criteri di gruppo. Aprire Gestione criteri di gruppo (fare clic sul pulsante Start, scegliere Strumenti di amministrazione e quindi Gestione criteri di gruppo) e quindi completare i passaggi seguenti:
 
-1. In Gestione criteri di gruppo individuare il contenitore in cui deve essere creato il nuovo criterio. Ad esempio, se tutti i computer client si trovano in un'unità organizzativa **** denominata clients, è necessario creare il nuovo criterio nell'unità organizzativa client.
+1. In Gestione criteri di gruppo individuare il contenitore in cui deve essere creato il nuovo criterio. Ad esempio, se tutti i computer client si trovano in un'unità organizzativa denominata **clients**, è necessario creare il nuovo criterio nell'unità organizzativa client.
 
 2. Fare clic con il pulsante destro del mouse sul contenitore appropriato e quindi scegliere **Crea un GPO in questo dominio e collegarlo qui**.
 
@@ -90,7 +89,7 @@ Per verificare che i valori dell'oggetto Criteri di gruppo siano stati impostati
    gpresult /H >gp.html
    ```
 
-   ![Screenshot della finestra della console in cui è in uso il comando gpresult.] (media/Qos-in-Teams-Image3.png "Screenshot della finestra della console in cui è in uso il comando gpresult.")
+   ![Screenshot della finestra della console in cui è in uso il comando gpresult.](media/Qos-in-Teams-Image3.png "Screenshot della finestra della console in cui è in uso il comando gpresult.")
 
 3. Nel file generato cercare gli **oggetti Criteri di gruppo applicati** all'intestazione e verificare che i nomi degli oggetti Criteri di gruppo creati in precedenza si trovino nell'elenco dei criteri applicati.
 

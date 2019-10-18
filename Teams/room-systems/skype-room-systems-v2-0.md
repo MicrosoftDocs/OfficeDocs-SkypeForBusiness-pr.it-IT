@@ -10,14 +10,15 @@ ms.topic: conceptual
 ms.service: msteams
 localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
-ms.collection: M365-voice
+ms.collection:
+- M365-collaboration
 description: Questo articolo illustra le considerazioni relative alla pianificazione per la distribuzione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: 2c47e95eccc8dcb362a10bd1a6980c2b12384711
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: 7225635e1069b880dd78d4d32060f1beb6e7b389
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775107"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573584"
 ---
 # <a name="plan-microsoft-teams-rooms"></a>Pianificare le sale di Microsoft Teams
 
@@ -29,7 +30,7 @@ Le informazioni sulla pianificazione di seguito riguardano l'approccio consiglia
 
 Microsoft teams Rooms offre un'esperienza di riunione completa che consente la condivisione di video, audio e contenuti HD per le riunioni di tutte le dimensioni, dalle piccole aree di calco alle ampie sale riunioni.
 
-![Una console, un microfono e uno schermo grande montato su una parete della sala riunioni illustrano gli elementi di un esempio di configurazione di Microsoft teams rooms.] (../media/room-systems-image1.png "Una console, un microfono e uno schermo grande montato su una parete della sala riunioni illustrano gli elementi di un esempio di configurazione di Microsoft teams rooms.")
+![Una console, un microfono e uno schermo grande montato su una parete della sala riunioni illustrano gli elementi di un esempio di configurazione di Microsoft teams rooms.](../media/room-systems-image1.png "Una console, un microfono e uno schermo grande montato su una parete della sala riunioni illustrano gli elementi di un esempio di configurazione di Microsoft teams rooms.")
 
 La [Guida di Microsoft teams Rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) è un'ottima risorsa per scoprire altre informazioni sulle sale di Microsoft teams e su come può aggiungere valore come parte della distribuzione. In più, ti consigliamo di guardare questo [video introduttivo](https://youtu.be/tNey5KZVCl0). 
 
@@ -65,7 +66,7 @@ Usa l'approccio illustrato di seguito per guidarti alla distribuzione e personal
 
 Prima di tutto, è possibile comprendere le sale riunioni in cui si è in esecuzione e in che modo il lavoro migliore per il futuro, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e adozione degli utenti e sviluppo di operazioni e procedure di manutenzione.
 
-![Prima di tutto, è possibile capire cosa si ha e che cosa avrebbe funzionato meglio, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e l'adozione degli utenti e sviluppo di operazioni e procedure di manutenzione.] (../media/room-systems-image2.png "Prima di tutto, è possibile capire cosa si ha e che cosa avrebbe funzionato meglio, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e l'adozione degli utenti e sviluppo di operazioni e procedure di manutenzione.")
+![Prima di tutto, è possibile capire cosa si ha e che cosa avrebbe funzionato meglio, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e l'adozione degli utenti e sviluppando operazioni e procedure di manutenzione.](../media/room-systems-image2.png "Prima di tutto, è possibile capire cosa si ha e che cosa avrebbe funzionato meglio, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e l'adozione degli utenti e sviluppando operazioni e procedure di manutenzione.")
 
 Potrebbe essere necessario coordinare queste attività in diversi team. Offriamo una visualizzazione di alto livello delle principali attività che è necessario includere e suggerimenti per i team che sono in genere coinvolti nella distribuzione e gestione di sistemi per sale riunioni per decidere chi è necessario collaborare.
 
