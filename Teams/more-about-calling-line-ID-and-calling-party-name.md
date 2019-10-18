@@ -8,7 +8,8 @@ ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: skype-for-business-online
 search.appverid: MET150
-ms.collection: Adm_Skype4B_Online
+ms.collection:
+- M365-voice
 audience: Admin
 appliesto:
 - Skype for Business
@@ -18,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni sui motivi per cui è necessario aggiungere una persona autorizzata che può apportare modifiche all'account quando si usa la procedura guidata nuovo ordine di trasferimento dei numeri locali.
-ms.openlocfilehash: e77176b978cb33df2bc4efebae11fb218c3932a5
-ms.sourcegitcommit: 4bb900228cc55e0cbbce8c5b74b7de8df5a2288f
+ms.openlocfilehash: 833bb27aa34b16601485437be9e25e2e41c2bf4e
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "36183559"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573380"
 ---
 # <a name="more-about-calling-line-id-and-calling-party-name"></a>Ulteriori informazioni su ID linea chiamante e nome del chiamante
 

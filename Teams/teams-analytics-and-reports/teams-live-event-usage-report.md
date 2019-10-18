@@ -10,17 +10,16 @@ ms.reviewer: svemu
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni su come usare il report utilizzo eventi di teams Live nell'interfaccia di amministrazione di Microsoft teams per ottenere una panoramica delle attività dei teams Live Events nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad0ecd27df1f7bccd9a451f2581d55e5c335b1e0
-ms.sourcegitcommit: f1c4255b52576c602d528c580941404eb547bc78
+ms.openlocfilehash: 3c391370e757aedcf9ede889fc46f165cfc636f4
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "37131615"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571148"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Report sull'utilizzo degli eventi di Microsoft teams Live
 
@@ -33,7 +32,7 @@ Il report utilizzo eventi di teams Live nell'interfaccia di amministrazione di M
 3. Opzionale In **Organizer**puoi scegliere di visualizzare solo gli eventi dinamici organizzati da un utente specifico.
 4. Fare clic su **Esegui report**.  
 
-    ![Screenshot del report sull'utilizzo dell'evento teams Live nell'interfaccia di amministrazione di teams con callout] (../media/teams-live-event-usage-report-with-callouts.png "Screenshot del report sull'utilizzo dell'evento teams Live nell'interfaccia di amministrazione di teams con callout")
+    ![Screenshot del report sull'utilizzo dell'evento teams Live nell'interfaccia di amministrazione di teams con callout](../media/teams-live-event-usage-report-with-callouts.png "Screenshot del report sull'utilizzo dell'evento teams Live nell'interfaccia di amministrazione di teams con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 

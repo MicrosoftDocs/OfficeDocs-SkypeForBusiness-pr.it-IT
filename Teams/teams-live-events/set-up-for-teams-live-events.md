@@ -11,18 +11,17 @@ audience: admin
 search.appverid: MET150
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni sui passaggi per configurare Live per gli eventi in teams, tra cui la preparazione della rete, l'assegnazione di licenze, l'uso di criteri per abilitare le caratteristiche e la pianificazione degli eventi dinamici per gli utenti e la configurazione di un provider di distribuzione di terze parti.
 f1keywords: ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 973e079cda665005dac55e466d444b09ecddb7da
-ms.sourcegitcommit: a6e44256c024fc3953cfd6a511ee024c4c7b8408
+ms.openlocfilehash: 8ce126b6e0e7a1bc9efec28f3b7fec5020c2da1e
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37047072"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570158"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi dinamici in Microsoft Teams
 
@@ -53,7 +52,7 @@ I criteri per gli eventi dinamici vengono usati per controllare chi nell'organiz
 
     Ecco le impostazioni che è possibile modificare per adattarsi alle esigenze dell'organizzazione.
 
-    ![Schermata delle impostazioni dei criteri di eventi live](../media/teams-live-events-policies.png "schermata delle impostazioni dei criteri eventi dinamici nell'interfaccia di amministrazione di Microsoft teams") 
+    ![Schermata delle impostazioni dei criteri di eventi dinamici](../media/teams-live-events-policies.png "Screenshot delle impostazioni dei criteri di eventi dinamici nell'interfaccia di amministrazione di Microsoft Teams") 
 
 |Impostazione  |Descrizione  |
 |---------|---------|

@@ -12,16 +12,16 @@ search.appverid: MET150
 description: Informazioni sulla funzionalità Microsoft teams disponibile per gli utenti guest.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_Help
+- Teams_ITAdmin_GuestAccess
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d89150f3e4947ee43b013132ea73ae9d38ff14ea
-ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
+ms.openlocfilehash: e034c7fe8b9e0863bab257b735987ec15c65a3c9
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37434893"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37569540"
 ---
 <a name="what-the-guest-experience-is-like"></a>Aspetto dell'esperienza Guest
 =================================
@@ -32,7 +32,7 @@ Quando un ospite è invitato a partecipare a un team, riceve un messaggio di pos
     
 Tutti i membri del team vedono un messaggio nel thread del canale che annuncia che il proprietario del team ha aggiunto un Guest e fornisce il nome dell'ospite. Tutti gli utenti del team possono identificare facilmente chi è ospite. Come illustrato nello screenshot seguente di un team di esempio, un banner indica "questo team ha Guest" e viene visualizzata un'etichetta "(Guest)" accanto al nome di ogni Guest.
     
-![Schermata che Mostra gli utenti di notifica banner Guest](media/guest-experience-image2.png "screenshot mostra una parte del canale di marketing per Northwind Traders, con la notifica nel banner superiore che indica che il team ha ospiti e utenti che sono Guest sono identificati con il GUEST di Word accanto al nome.")
+![Screenshot che Mostra gli utenti Guest notifica banner](media/guest-experience-image2.png "Lo screenshot mostra una parte del canale di marketing per Northwind Traders, con la notifica nel banner superiore che indica che il team ha GUEST e gli utenti che sono ospiti sono identificati con l'ospite di Word accanto al nome.")
 
 ## <a name="comparison-of-team-member-and-guest-capabilities"></a>Confronto tra i membri del team e le funzionalità Guest
 

@@ -11,17 +11,16 @@ audience: admin
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 description: Informazioni sui diversi modelli di identità in Microsoft teams, ad esempio cloud, Synchronized e federate. Scopri anche l'autenticazione a più fattori.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fabd8a853202f49fb66c9b796a84beff554afdb5
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 5c7b5d619812284bc60aab7bcc2dbea6e9ec0173
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242201"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570742"
 ---
 <a name="identity-models-and-authentication-in-microsoft-teams"></a>Modelli di identità e autenticazione in Microsoft Teams
 ==========================================

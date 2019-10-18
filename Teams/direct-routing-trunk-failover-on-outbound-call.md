@@ -10,17 +10,16 @@ ms.service: msteams
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 appliesto:
 - Microsoft Teams
 description: Leggere questo argomento per informazioni su come gestire i failover trunk sulle chiamate in uscita da Teams a session border controller (SBC).
-ms.openlocfilehash: 5c456aab52159859112b44c19c1b15fe81bc6293
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.openlocfilehash: a5462de971fed32a0618800b257b9c6e37b462af
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36183739"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37572125"
 ---
 # <a name="trunk-failover-on-outbound-calls"></a>Failover trunk sulle chiamate in uscita
 

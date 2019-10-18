@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
+- M365-voice
 - M365-collaboration
 audience: Admin
 appliesto:
@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come abilitare o disabilitare i chiamanti anonimi che partecipano a una riunione dall'interfaccia di amministrazione di teams. "
-ms.openlocfilehash: 522970533565673b3fc68bcd5138006a6f6cf9d0
-ms.sourcegitcommit: 4fb1c691f0f84d47e215c9c1775da9bdba875f61
+ms.openlocfilehash: 78b35b65c1bb27d366e8e9fa27c49ef32864081f
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "36184429"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570007"
 ---
 # <a name="start-an-audio-conference-over-the-phone-without-a-pin-in-microsoft-teams"></a>Avviare una conferenza audio tramite telefono senza PIN in Microsoft Teams
 
@@ -33,7 +33,7 @@ Potrebbe essere frustrante per gli utenti che accedono a una riunione che si ter
   
 Se un organizzatore della riunione chiama alla riunione, per impostazione predefinita è necessario un PIN per avviare una riunione. È possibile configurarlo in modo che chiunque possa effettuare la chiamata a una riunione e non venga richiesto un PIN per avviare la riunione. È possibile usare l'interfaccia di amministrazione per abilitare o disabilitare questa impostazione per un singolo utente.
   
-Un PIN non è necessario per l'organizzatore della riunione se qualcuno ha avviato la riunione dall'app Microsoft teams. Il PIN è necessario solo quando l'organizzatore della riunione partecipa alla riunione tramite telefono. Il PIN per le riunioni viene inviato all'utente audio quando viene assegnata la **** licenza di audioconferenza e abilitata per l'audioconferenza. Vedere [inviare un messaggio di posta elettronica a un utente con le informazioni di audioconferenza e i](send-an-email-to-a-user-with-their-dial-in-information-in-teams.md) [messaggi di posta elettronica inviati automaticamente agli utenti quando cambiano le impostazioni dei](emails-sent-to-users-when-their-settings-change-in-teams.md)servizi di audioconferenza.
+Un PIN non è necessario per l'organizzatore della riunione se qualcuno ha avviato la riunione dall'app Microsoft teams. Il PIN è necessario solo quando l'organizzatore della riunione partecipa alla riunione tramite telefono. Il PIN per le riunioni viene inviato all'utente audio quando viene assegnata la **licenza di audioconferenza e** abilitata per l'audioconferenza. Vedere [inviare un messaggio di posta elettronica a un utente con le informazioni di audioconferenza e i](send-an-email-to-a-user-with-their-dial-in-information-in-teams.md) [messaggi di posta elettronica inviati automaticamente agli utenti quando cambiano le impostazioni dei](emails-sent-to-users-when-their-settings-change-in-teams.md)servizi di audioconferenza.
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]

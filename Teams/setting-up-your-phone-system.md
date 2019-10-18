@@ -9,7 +9,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 audience: Admin
 appliesto:
@@ -20,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare il sistema telefonico (cloud PBX) per l'organizzazione. "
-ms.openlocfilehash: e7d833e6170a442f9e97ff867e979bfd52700969
-ms.sourcegitcommit: 26b3d786da07fde20878b0f4a1656070fe01d918
+ms.openlocfilehash: 429cedb3d8bad25982e4eacdaa82f82cacfc75ae
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36645301"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571536"
 ---
 # <a name="setting-up-phone-system-in-your-organization"></a>Configurazione di Sistema telefonico nella tua organizzazione
 
@@ -41,7 +40,7 @@ The following is a step-by-step guide for setting up Phone System in Office 365.
 
 ## <a name="step-2-buy-and-assign-phone-system-and-calling-plan-licenses"></a>Passaggio 2: acquistare e assegnare licenze relative a Sistema telefonico e Piani di chiamata
 
-Per assegnare una licenza Sistema telefonico e Piani di chiamata a un singolo utente i passaggi sono gli stessi come assegnare una licenza Office 365. Vedere [assegnare le licenze di Microsoft teams](assign-teams-licenses.md). Se si vuole assegnare più utenti in blocco, vedere [assegnare licenze di Microsoft teams](assign-teams-licenses.md).
+Per assegnare un sistema telefonico e una licenza per un piano di chiamata a un singolo utente, la procedura è uguale all'assegnazione di una licenza di Office 365. Vedere [assegnare le licenze di Microsoft teams](assign-teams-licenses.md). Se si vuole assegnare più utenti in blocco, vedere [assegnare licenze di Microsoft teams](assign-teams-licenses.md).
 
 ## <a name="step-3-get-phone-numbers-for-your-users"></a>Passaggio 3: ottenere i numeri di telefono per gli utenti
 
@@ -179,7 +178,7 @@ You only need to set up Audio Conferencing for people who plan to schedule or le
   
 Per le domande frequenti sui servizi di audioconferenza, vedere [Domande frequenti su Audioconferenze](audio-conferencing-common-questions.md).
     
-1. Se avete acquistato licenze per il componente aggiuntivo **Audioconferenza** e licenze Credito per la comunicazione, assegnate pure quelle. Per istruzioni, vedere [assegnare licenze di Microsoft teams](assign-teams-licenses.md).
+1. Se sono state acquistate licenze per i componenti aggiuntivi per i servizi di **audioconferenza** e le licenze per i crediti di comunicazione, assegnarle. Per istruzioni, vedere [assegnare licenze di Microsoft teams](assign-teams-licenses.md).
 
     Decide on your audio conferencing provider. An audio conferencing provider supplies an audio conferencing bridge. The conferencing bridge sets your dial-in phone numbers, PINs, and conference IDs for meetings. Decide whether to use Microsoft or a third-party audio conferencing provider:
 
@@ -194,11 +193,11 @@ Per le domande frequenti sui servizi di audioconferenza, vedere [Domande frequen
 
 3. Set up meeting invitations. The following steps are optional, but a lot of admins like to do them: 
   
-   1. [Personalizzare gli inviti alle riunioni in Skype for business](/skypeforbusiness/set-up-skype-for-business-online/customize-meeting-invitations). I numeri di accesso impostati per l'utente verranno aggiunti automaticamente agli inviti alle riunioni inviati ai partecipanti. Tuttavia, potete aggiungere una guida o collegamenti legali personalizzati, un messaggio di testo e una piccola immagine aziendale.
+   1. [Personalizzare gli inviti alle riunioni in Skype for business](/skypeforbusiness/set-up-skype-for-business-online/customize-meeting-invitations). I numeri di accesso esterno impostati per l'utente verranno aggiunti automaticamente agli inviti alla riunione inviati ai partecipanti. È tuttavia possibile aggiungere una guida e collegamenti legali personalizzati, un messaggio di testo e un elemento grafico aziendale di piccole dimensioni.
     
-   2. Impostare i numeri di telefono per i servizi di audioconferenza per gli organizzatori della riunione inclusi negli inviti [in Skype for business](/skypeforbusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites) o [in Microsoft teams](set-the-phone-numbers-included-on-invites-in-teams.md). Questo è il numero di telefono che verrà visualizzato nelle riunioni pianificate dall'utente.
+   2. Impostare i numeri di telefono per i servizi di audioconferenza per gli organizzatori della riunione inclusi negli inviti [in Skype for business](/skypeforbusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites) o [in Microsoft teams](set-the-phone-numbers-included-on-invites-in-teams.md). Questo è il numero di telefono che verrà visualizzato nella riunione pianificata dall'utente.
     
-   3. Impostare le lingue per gli operatori automatici per i servizi di audioconferenza [in Skype for business](/skypeforbusiness/audio-conferencing-in-office-365/set-auto-attendant-languages-for-audio-conferencing) o [in Microsoft teams](set-auto-attendant-languages-for-audio-conferencing-in-teams.md) che l'operatore automatico di audioconferenza USA per salutare un chiamante quando effettua la chiamata a un numero di telefono di audioconferenza. Questo passaggio si applica solo se si utilizza Microsoft come provider di audio.
+   3. Impostare le lingue per gli operatori automatici per i servizi di audioconferenza [in Skype for business](/skypeforbusiness/audio-conferencing-in-office-365/set-auto-attendant-languages-for-audio-conferencing) o [in Microsoft teams](set-auto-attendant-languages-for-audio-conferencing-in-teams.md) che l'operatore automatico di audioconferenza USA per salutare un chiamante quando effettua la chiamata a un numero di telefono di audioconferenza. Questo passaggio si applica solo se si sta usando Microsoft come provider di audio.
     
    4. Impostare la lunghezza del PIN per le riunioni di audioconferenza [in Microsoft teams](set-the-pin-length-for-audio-conferencing-meetings-in-teams.md).
     
@@ -233,10 +232,10 @@ Per creare un nuovo operatore automatico, nell'interfaccia di amministrazione di
 
 Once you have your service numbers from **Step 4 above**, you need to assign them to each type of service that you want. For example, if you want a dedicated service phone number (toll or toll-free), you will need to assign the number to the conferencing bridge.
 
-- Per i servizi di audioconferenza, è possibile assegnare un numero dedicato a un Bridge di conferenza accedendo all'interfaccia di amministrazione di **Microsoft 365** > **** > per i servizi di**audioconferenza** di**Skype for business** > e facendo clic sul pulsante Bridge di conferenza o vedere [cambiare il numero verde o il numero verde nel Bridge di audioconferenza](change-the-phone-numbers-on-your-audio-conferencing-bridge.md).
+- Per i servizi di audioconferenza, è possibile assegnare un numero dedicato a un Bridge di conferenza accedendo all'interfaccia**di amministrazione di** >  **Microsoft 365** > per i servizi di**audioconferenza** di**Skype for business** > e facendo clic sul pulsante Bridge di conferenza o vedere [cambiare il numero verde o il numero verde nel Bridge di audioconferenza](change-the-phone-numbers-on-your-audio-conferencing-bridge.md).
 
 - Per gli operatori automatici, è possibile assegnare un numero dedicato a un operatore automatico accedendo a **Microsoft 365** > **** > interfaccia di amministrazione dell'interfaccia di amministrazione di**Skype for business** > per gli operatori automatici di**routing** > delle chiamate** **e fai clic sull'operatore automatico. Nella pagina **generale** il numero di servizio già disponibile sarà elencato nell'elenco a discesa **numero di telefono** . Per informazioni dettagliate, vedere [configurare un operatore automatico cloud](https://docs.microsoft.com/microsoftteams/create-a-phone-system-auto-attendant).
-- Per le code di chiamata, è possibile assegnare un numero dedicato a una**** > coda di chiamata accedendo alle**Code** delle chiamate di**routing** > delle chiamate di**Skype for business** > per **Microsoft 365** > e fare clic su nella coda di chiamata. Nella pagina **Generale**, il numero di servizio già impostato viene indicato nel menù a tendina**numero di telefono**. Per informazioni dettagliate, vedere [creare una coda di chiamata cloud](https://docs.microsoft.com/microsoftteams/create-a-phone-system-call-queue).
+- Per le code di chiamata, è possibile assegnare un numero dedicato a una**** > coda di chiamata accedendo alle**Code** delle chiamate di**routing** > delle chiamate di**Skype for business** > per **Microsoft 365** > e fare clic su nella coda di chiamata. Nella pagina **generale** il numero di servizio già disponibile sarà elencato nell'elenco a discesa **numero di telefono** . Per informazioni dettagliate, vedere [creare una coda di chiamata cloud](https://docs.microsoft.com/microsoftteams/create-a-phone-system-call-queue).
 
 **Per informazioni dettagliate su come ottenere nuovi numeri di servizio oppure su come trasferire numeri di servizio esistenti, vedere [Ottenere numeri di telefono di servizio](/microsoftteams/getting-service-phone-numbers).**
 
@@ -251,7 +250,7 @@ You will need to set up Communications Credits if you would like to use toll-fre
 
 1. Accedere a Microsoft 365 con l'account di lavoro o dell'Istituto di istruzione.
 
-2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione accedere ai componenti aggiuntivi per**** > gli**abbonamenti** > per la **fatturazione** > **acquistare i componenti**aggiuntivi e quindi scegliere **Communications Credits** > **Buy Now**.
+2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione accedere**ai componenti aggiuntivi** > per gli**abbonamenti** > per la **fatturazione** > **acquistare i componenti**aggiuntivi e quindi scegliere **Communications Credits** > **Buy Now**.
 
 3. Nella pagina di sottoscrizione **crediti comunicazioni** immettere le informazioni e quindi fare clic su **Avanti**.
 

@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.service: msteams
 audience: admin
 ms.collection:
-- Teams_ITAdmin_Help
+- Teams_ITAdmin_GuestAccess
 - M365-collaboration
 ms.reviewer: sbhatta
 search.appverid: MET150
 description: Ottenere una breve panoramica del modo in cui un ospite è invitato a partecipare a un team in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ff9565cab22dd34251624a39755d322470d2eb04
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: dd21ea186b826a8284a5100e611e0ffc28712dd5
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242262"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570770"
 ---
 <a name="how-a-guest-joins-a-team"></a>Come un Guest si unisce a un team
 ========================

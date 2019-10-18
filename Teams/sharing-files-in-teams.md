@@ -12,16 +12,15 @@ search.appverid: MET150
 description: Microsoft teams USA le impostazioni di OneDrive e SharePoint per controllare la condivisione.
 localization_priority: Normal
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0d9f2060c7b87d58820cf0d90dd8e4dc556297f1
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 8b9eee925a61352ef23b9f7c62fbe6fd58df5122
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243160"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37568690"
 ---
 # <a name="sharing-files-in-microsoft-teams"></a>Condivisione di file in Microsoft Teams
 

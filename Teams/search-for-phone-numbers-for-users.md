@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
+- M365-voice
 audience: Admin
 appliesto:
 - Skype for Business
@@ -20,16 +20,16 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Vedere come cercare i numeri di telefono che è possibile assegnare agli utenti, per paese o area geografica e città e specificare la quantità di numeri necessari.
-ms.openlocfilehash: 59f97e3e2aa7a1c68d4727a06ac0e4f897f9e6b3
-ms.sourcegitcommit: 3abc3dcaa79ebd8e4326fa282874500c4425e64f
+ms.openlocfilehash: b3e7c93fd2759beed7588bda49d0326f018a4ab8
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "36184495"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573438"
 ---
 # <a name="search-for-phone-numbers-for-users"></a>Cercare numeri di telefono per gli utenti
 
-Quando si configurano gli utenti dell'organizzazione per effettuare e ricevere chiamate telefoniche, è necessario usare l'interfaccia di **amministrazione di Microsoft teams** e prima di tutto ottenere i numeri di telefono che è possibile assegnare agli utenti. Questo numero, scelto per l'organizzazione, è disponibile nell'elenco a discesa che compare quando modifichi le proprietà dell'utente e fai clic su **Assegna**.
+Quando si configurano gli utenti dell'organizzazione per effettuare e ricevere chiamate telefoniche, è necessario usare l'interfaccia di **amministrazione di Microsoft teams** e prima di tutto ottenere i numeri di telefono che è possibile assegnare agli utenti. Il numero di telefono assegnato a un utente sarà un numero di telefono scelto per l'organizzazione e sarà elencato nell'elenco a discesa quando si modificano le proprietà dell'utente e si fa clic su **assegna**.
   
 Per poter assegnare numeri di telefono agli utenti, è necessario usare la pagina **Ottieni nuovi numeri** per cercare i numeri disponibili all'interno di un'area. È possibile eseguire una ricerca in base al **paese o all'area geografica**, al **tipo di numero**e alla **posizione**e quindi immettere il numero di numeri di telefono necessari per gli utenti. 
   

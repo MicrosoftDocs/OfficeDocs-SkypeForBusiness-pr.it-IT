@@ -10,7 +10,6 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
-- Teams_ITAdmin_Help
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
@@ -23,24 +22,24 @@ f1keywords:
 - ms.teamsadmincenter.teamsandchannelpolicies.overview
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.discover
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.create
-ms.openlocfilehash: 6a562f9a271a9771796fd73424a94f2820c2f966
-ms.sourcegitcommit: 25c30baec1c969eef95b725251a3f4ad3706a19d
+ms.openlocfilehash: 5edaa21f3d9a2438532f8cc7f45f182c105b2f1e
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622062"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37570136"
 ---
 # <a name="manage-teams-policies-in-microsoft-teams"></a>Gestire i criteri dei team in Microsoft Teams
 
 Come amministratore, puoi usare i criteri di teams in Microsoft teams per controllare gli utenti che possono eseguire in team e canali. Ad esempio, puoi impostare se gli utenti possono scoprire team privati nei risultati della ricerca e nella raccolta team e se gli utenti possono creare canali privati.
 
-Per gestire i criteri dei team, **** > è possibile passare a**criteri** teams teams nell'interfaccia di amministrazione di Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione otterranno automaticamente il criterio globale a meno che non si creino e non si assegnano criteri personalizzati.
+Per gestire i criteri dei team, è possibile **passare a** > **criteri** teams teams nell'interfaccia di amministrazione di Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione otterranno automaticamente il criterio globale a meno che non si creino e non si assegnano criteri personalizzati.
 
 È possibile modificare i criteri globali oppure creare e assegnare criteri personalizzati. Se a un utente viene assegnato un criterio personalizzato, tale criterio si applica all'utente. Se a un utente non viene assegnato un criterio personalizzato, il criterio globale si applica all'utente. Dopo aver modificato il criterio globale o assegnato un criterio, possono essere necessarie fino a 24 ore affinché le modifiche abbiano effetto.
 
 ## <a name="create-a-custom-teams-policy"></a>Creare un criterio teams personalizzato
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **** > , vai a**criteri**teams teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **Vai a** > **criteri**teams teams.
 2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
 
@@ -56,7 +55,7 @@ Per gestire i criteri dei team, **** > è possibile passare a**criteri** teams t
 
 È possibile modificare il criterio globale o i criteri personalizzati creati.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **** > , vai a**criteri**teams teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **Vai a** > **criteri**teams teams.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
 3. Attivare o disattivare le impostazioni desiderate e quindi fare clic su **Salva**.
 
@@ -74,7 +73,7 @@ Per assegnare un criterio teams personalizzato a più utenti alla volta, vedere 
 
 In alternativa, è anche possibile eseguire le operazioni seguenti:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **** > , vai a**criteri**teams teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **Vai a** > **criteri**teams teams.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
 3. Selezionare **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.

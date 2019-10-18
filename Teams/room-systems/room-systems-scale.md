@@ -7,18 +7,19 @@ manager: serdars
 ms.date: 5/10/2018
 audience: ITPro
 ms.topic: quickstart
-ms.prod: skype-for-business-itpro
+ms.service: msteams
 localization_priority: Normal
 ms.custom: Strat_SB_Admin
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
-ms.collection: M365-voice
+ms.collection:
+- M365-collaboration
 description: Leggere questo argomento per informazioni sulla distribuzione di sale Microsoft teams su distribuzioni su larga scala.
-ms.openlocfilehash: 48a2ddbed8ca5909ca527f7db872c6fa74737610
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 2bd78bd737622515ff0722aa3635cf1ebcc83a29
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243422"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573628"
 ---
 # <a name="deploy-microsoft-teams-rooms-by-using-system-center-configuration-manager"></a>Distribuire le sale di Microsoft teams tramite System Center Configuration Manager
 
@@ -388,7 +389,7 @@ Questo pacchetto viene creato per distribuire il certificato radice per i dispos
 
 ### <a name="create-the-sysprep-package"></a>Creare il pacchetto Sysprep
 
-1. Nella cartella **SRS v2-pacchetto Sysprep** creare un nuovo file XML denominato Unattend **. XML** .
+1. Nella cartella **SRS v2-pacchetto Sysprep** creare un nuovo file XML denominato **Unattend. XML** .
 
 2. Copiare il testo seguente nel file **Unattend. XML** . In alternativa, è possibile scaricare il file Unattend. XML da [qui](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/Skype-Room-Systems-v2/SRS-v2-Configuration-Manager-Files.zip?raw=true).
    ```
@@ -490,7 +491,7 @@ Microsoft teams Rooms è supportato sia per Surface Pro che per Surface Pro 4. �
 
 4.  Selezionare **Importa tutti i driver nel percorso di rete seguente (UNC)**, selezionare la cartella di origine, ad esempio C\\:\\_Sources\\driver Surface Pro, quindi selezionare **Avanti**.
 
-5.  Nella pagina **specificare i dettagli per i driver** importati selezionare tutti i driver elencati e quindi selezionare **Abilita questi driver e consentire ai computer di installarli**.
+5.  Nella pagina **specificare i dettagli per i driver importati** selezionare tutti i driver elencati e quindi selezionare **Abilita questi driver e consentire ai computer di installarli**.
 
 6.  Selezionare **categorie**, creare una nuova categoria che corrisponda al modello di superficie, selezionare **OK**e quindi scegliere **Avanti**.
 
@@ -557,7 +558,7 @@ Tutti i pacchetti devono essere distribuiti ai server a cui è stato assegnato i
 
 3.  Distribuire pacchetti di sistemi operativi.
 
-    1.  Nella console di Configuration Manager accedere alle **** \> **Immagini del sistema**operativo della **raccolta** \> software. Selezionare tutte le immagini del sistema operativo che si desidera distribuire e quindi selezionare **Distribuisci contenuto**.
+    1.  Nella console di Configuration Manager accedere alle \> **Immagini del sistema** \> **operativo della** **raccolta software** . Selezionare tutte le immagini del sistema operativo che si desidera distribuire e quindi selezionare **Distribuisci contenuto**.
 
     2.  Esaminare l'elenco dei pacchetti e quindi selezionare **Avanti**.
 
@@ -609,7 +610,7 @@ Puoi usare le sequenze di attività con System Center Configuration Manager per 
 
    4. **Applica sistema operativo**: questo passaggio specifica l'immagine del sistema operativo da distribuire e il file di risposte di Sysprep non presidiato da usare.
       -  Verificare che sia selezionato il file di immagine del sistema operativo Windows 10 corretto.
-      -  Verificare che sia abilitato l' **uso di un file di risposte non presidiato o Sysprep per un'installazione personalizzata** e che sia selezionato il **Pacchetto SRS V2-Sysprep** . Assicurati inoltre che il **nome file** sia impostato su unattend **. XML**.
+      -  Verificare che sia abilitato l' **uso di un file di risposte non presidiato o Sysprep per un'installazione personalizzata** e che sia selezionato il **Pacchetto SRS V2-Sysprep** . Assicurati inoltre che il **nome file** sia impostato su **Unattend. XML**.
 
    5. **Applica impostazioni di Windows**: questo passaggio raccoglie informazioni sull'installazione di Windows.
       -  Fornisci informazioni sulle licenze e la registrazione, tra cui il codice Product Key, la password dell'account di amministratore locale e il fuso orario (a seconda delle esigenze).
@@ -661,7 +662,7 @@ Puoi usare le sequenze di attività con System Center Configuration Manager per 
 
 ### <a name="create-deployment-for-the-task-sequence"></a>Creare la distribuzione per la sequenza di attività
 
-1. Selezionare la sequenza di attività e quindi fare **** clic su Distribuisci.
+1. Selezionare la sequenza di attività e quindi fare clic su **Distribuisci**.
 
 2. Selezionare **Sfoglia** per selezionare la raccolta di destinazione per la distribuzione.
 

@@ -11,17 +11,14 @@ ms.reviewer: lolaj, rowille
 description: Strumenti di pianificazione, laboratori e kit per la Guida introduttiva per aiutare le organizzazioni a iniziare a usare Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
-ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fa67b6f788edfabb361b7390ce460f4af812d305
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 71e864364c089b149f0351570fd673a0bf24068e
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237644"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573233"
 ---
 # <a name="tools-and-workshops-plan-deliver-and-adopt-microsoft-teams"></a>Strumenti e laboratori: pianificare, distribuire e adottare Microsoft Teams
 
@@ -50,5 +47,11 @@ Scaricare questi strumenti per illustrare la pianificazione, la distribuzione e 
 [Disponibilità dell'amministratore IT per i team](ITAdmin-readiness.md)
 
 [Strumenti per l'adozione](adopt-tools-and-downloads.md)
+
+[Workshop di pianificazione dell'aggiornamento di Skype for business to Teams](https://www.microsoft.com/microsoft-365/partners/intelligentcommunications/skype-for-business-teams)
+
+[Trasferire utenti da locale a teams](https://docs.microsoft.com/skypeforbusiness/hybrid/move-users-from-on-premises-to-teams)
+
+[Gestire le impostazioni di Microsoft teams per l'organizzazione](enable-features-office-365.md)
 
 

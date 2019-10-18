@@ -10,7 +10,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-- Teams_ITAdmin_Help
 - M365-voice
 search.appverid: MET150
 audience: Admin
@@ -25,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per il Pakistan.
-ms.openlocfilehash: faa9114fd080b05045bc26c4ff13f8ecc9301893
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: f06a63c51e8b70d0893b3b1216b46982bb2637cf
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775489"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571006"
 ---
 # <a name="availability-in-pakistan"></a>Disponibilità in Pakistan
 

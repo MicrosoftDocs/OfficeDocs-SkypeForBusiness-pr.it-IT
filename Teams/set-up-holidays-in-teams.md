@@ -9,21 +9,19 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-collaboration
-- M365-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1keywords: ms.teamsadmincenter.orgwidesettings.holidays.overview
 description: Informazioni su come configurare le festività in Microsoft teams e connetterle all'operatore automatico.
-ms.openlocfilehash: ae960cddb2c5e8d590e5eb73d9f0763dacd582b6
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: ee07b33325ee436f6f0397a30034f40db819be09
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483255"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571569"
 ---
 # <a name="set-up-holidays-in-microsoft-teams"></a>Configurare le festività in Microsoft Teams
 
@@ -79,7 +77,7 @@ Per altre informazioni sugli operatori automatici, vedere [che cosa sono gli ope
 4. Selezionare **nuova festività**.
 5. Selezionare la festività nell'elenco a discesa.
 6. È possibile aggiungere un messaggio di saluto facoltativo:
-    - Per riprodurre un messaggio di saluto registrato, selezionare Riproduci **un file audio**e quindi selezionare **Carica file**. Passare al percorso del file audio, selezionare il file e quindi selezionare **Apri**.
+    - Per riprodurre un messaggio di saluto registrato, selezionare **Riproduci un file audio**e quindi selezionare **Carica file**. Passare al percorso del file audio, selezionare il file e quindi selezionare **Apri**.
     - Per creare un saluto, selezionare **digitare un messaggio di saluto**e quindi digitare il messaggio. I chiamanti sentiranno questo messaggio se non hai fornito un file audio.
 7. Per terminare la chiamata dopo il messaggio di saluto, in **azioni**selezionare **Disconnetti**. 
 

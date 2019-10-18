@@ -10,7 +10,6 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
 - M365-voice
 audience: Admin
 appliesto:
@@ -23,12 +22,12 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 description: Informazioni utili e operazioni prima di trasferire i numeri di telefono ai team e come creare un ordine di trasferimento per trasferirli.
-ms.openlocfilehash: 4cd270fd01f0ec023181de7847914d8fdc8239b5
-ms.sourcegitcommit: b914c044c43ff8147f35eea684fec1de01a7bcd2
+ms.openlocfilehash: a876309f8404002a76f13913d64926132b315d2b
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36464569"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571514"
 ---
 # <a name="transfer-phone-numbers-to-office-365"></a>Trasferire numeri di telefono in Office 365
 
@@ -47,11 +46,11 @@ Prima di iniziare a trasferire i numeri di telefono, è consigliabile esaminare 
  
 ![Icona che mostra il logo](media/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
-1. Accedere al**portale legacy**dell'interfaccia di **Amministrazione** > di Microsoft teams.
+1. Accedere al > **portale legacy**dell'interfaccia di **amministrazione di Microsoft teams**.
 
 2. Nella barra di spostamento sinistra, vai a**ordini di porta** **vocale** > > fai clic su **Aggiungi**.
 
-3. Nella pagina **nuovo ordine di trasferimento dei numeri locali** leggere le informazioni e quindi fare **** clic su inizia.
+3. Nella pagina **nuovo ordine di trasferimento dei numeri locali** leggere le informazioni e quindi fare **clic su inizia.**
 
 4. Nella pagina **Info account** immettere quanto segue e quindi fare clic su **Avanti**:
 
@@ -80,7 +79,7 @@ Prima di iniziare a trasferire i numeri di telefono, è consigliabile esaminare 
     > [!NOTE]
     > Se si sta eseguendo una porta completa, è necessario includere il numero di telefono per la fatturazione del servizio (BTN) nell'elenco. Se si sta eseguendo una porta parziale, uscire da questo elenco dal numero di telefono di fatturazione del servizio (BTN). 
   
-    Se si sta eseguendo una porta completa, selezionare **trasferirò tutti i miei numeri dal vettore corrente**. Se si sta eseguendo una porta parziale, selezionare **sto solo trasferendo alcuni dei miei numeri**. Dopo aver scelto quella giusta, fare clic su Controlla la portabilità del **numero**.
+    Se si sta eseguendo una porta completa, selezionare **trasferirò tutti i miei numeri dal vettore corrente**. Se si sta eseguendo una porta parziale, selezionare **sto solo trasferendo alcuni dei miei numeri**. Dopo aver scelto quella giusta, fare clic su **Controlla la portabilità del numero**.
 
 7. Fare clic su **continua**.
 

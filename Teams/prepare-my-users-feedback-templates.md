@@ -11,17 +11,14 @@ audience: admin
 description: Raccogliere il feedback degli utenti per migliorare l'implementazione di cloud Voice in Microsoft teams o Skype for business.
 localization_priority: Normal
 search.appverid: MET150
-ms.collection:
-- Teams_ITAdmin_PracticalGuidance
-- M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9c0a18f82eebb926792e7c3450ef1db1eb9f2fad
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 4690321129ef9b57e70ec497161acd863f061ef9
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233244"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37573227"
 ---
 # <a name="user-feedback-surveys"></a>Sondaggi di feedback degli utenti 
 
@@ -44,7 +41,7 @@ Indicare il livello di contratto con le istruzioni seguenti, poiché si riferisc
 | L'uso di teams come telefono consente di semplificare il lavoro.                                          |                      |                    |             |                       |                         |                        |
 | L'esperienza audio con i team è buona o migliore rispetto a quella del vecchio sistema telefonico.                   |                      |                    |             |                       |                         |                        |
 
-Se si è scelto **un po'** in disaccordo o **completamente** in disaccordo per una delle dichiarazioni di cui sopra, spiega. (Testo aperto)
+Se si è scelto **un po' in disaccordo** o **completamente in disaccordo** per una delle dichiarazioni di cui sopra, spiega. (Testo aperto)
 
 Indicare il livello di contratto con le istruzioni seguenti, poiché si riferisce all'esperienza di onboarding con il nuovo telefono.  
 
@@ -54,7 +51,7 @@ Indicare il livello di contratto con le istruzioni seguenti, poiché si riferisc
 | Ho avuto risorse di formazione adeguate per diventare rapidamente a bordo del nuovo sistema telefonico.                                                          |                      |                    |             |                       |                         |                        |
 | Il nostro helpdesk potrebbe rispondere a tutte le mie domande sul nuovo sistema telefonico.                                                           |                      |                    |             |                       |                         |                        |
 
-Se si è scelto **un po'** in disaccordo o **completamente** in disaccordo per una delle dichiarazioni di cui sopra, spiega. (Testo aperto)
+Se si è scelto **un po' in disaccordo** o **completamente in disaccordo** per una delle dichiarazioni di cui sopra, spiega. (Testo aperto)
 
 Come è probabile che si consiglia di usare teams come telefono per un amico o un collega? (0 = non è affatto probabile... 10 = molto probabile)
 

@@ -10,7 +10,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 ms.collection:
-- Teams_ITAdmin_Help
+- M365-voice
 - M365-collaboration
 audience: Admin
 appliesto:
@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni su come configurare le conferenze telefoniche con accesso esterno o audio per gli utenti dell'azienda che hanno bisogno di usare un telefono per partecipare alle conferenze telefoniche. "
-ms.openlocfilehash: 5bf9a4ba1928bd8532a0f97fcb899745ffb65d13
-ms.sourcegitcommit: 3197f3ffca2b2315be9fd0c702ccc8c87383c893
+ms.openlocfilehash: 3b9b0b3f7a684c8db5b7b3d8a326750ed12f2bff
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "36184153"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571261"
 ---
 # <a name="set-up-audio-conferencing-for-microsoft-teams"></a>Configurare servizi di audioconferenza per Microsoft Teams
 
@@ -78,7 +78,7 @@ Seguire questa procedura per assegnare un nuovo numero di telefono al Bridge di 
 
 ![Icona che mostra il logo](media/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business:**
 
- 1. **** > Accedere al**portale legacy**di interfaccia di amministrazione di **Microsoft 365 Admin Center** > **Teams** > .
+ 1. Accedere al**portale legacy**di interfaccia**di amministrazione di** >  **Microsoft 365 Admin Center** > **Teams** > .
  2. Selezionare **** > **numeri di telefono**vocali.
  3. Selezionare il numero di telefono e fare clic su **assegna**.
 
@@ -121,7 +121,7 @@ Per ulteriori informazioni, consulta [Assegnare Microsoft come provider di servi
 ## <a name="step-8-set-up-meeting-invitations-optional"></a>Passo 8: Configurare gli inviti alla riunione (facoltativo)
 <a name="__top"> </a>
  
-I numeri di accesso esterno impostati per l'utente verranno aggiunti automaticamente agli inviti alla riunione inviati ai partecipanti alla riunione. È tuttavia possibile aggiungere una guida e collegamenti legali personalizzati, un messaggio di testo e un elemento grafico aziendale di piccole dimensioni, se si vuole. Vedere [personalizzare](meeting-settings-in-teams.md#customize-meeting-invitations)gli inviti alle riunioni.
+I numeri di accesso esterno impostati per l'utente verranno aggiunti automaticamente agli inviti alla riunione inviati ai partecipanti alla riunione. È tuttavia possibile aggiungere una guida e collegamenti legali personalizzati, un messaggio di testo e un elemento grafico aziendale di piccole dimensioni, se si vuole. Vedere [personalizzare gli inviti alle riunioni](meeting-settings-in-teams.md#customize-meeting-invitations).
    
 ## <a name="related-topics"></a>Argomenti correlati
 

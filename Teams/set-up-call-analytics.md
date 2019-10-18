@@ -9,8 +9,7 @@ ms.assetid: fbf7247a-84ae-46cc-9204-2c45b1c734cd
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
+- M365-voice
 search.appverid: MET150
 audience: Admin
 appliesto:
@@ -21,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: Configurare e usare le analisi delle chiamate per identificare e risolvere i problemi di qualità delle chiamate di Skype for business e Microsoft teams.
-ms.openlocfilehash: 51f28b402fea69f0e5033954018a5f67bf6c90d6
-ms.sourcegitcommit: b92b673e718e34b6ebda6de57ad69eb6651faa98
+ms.openlocfilehash: 7a91bc0d8503d313ae3b3dfa7ddd32b6a8c5207a
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "36183589"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571250"
 ---
 # <a name="set-up-call-analytics"></a>Configurare l'analisi delle chiamate
 
@@ -85,7 +84,7 @@ Se si è un amministratore di teams e Skype for business, è possibile usare un 
 
 - Per scaricare un file di dati esistente, passa a **Microsoft teams Admin Center** > **Call Quality dashboard** > **Upload Now**. Nell'elenco **upload personali** fare clic su **Scarica** accanto al file desiderato.
 
-- Per caricare il nuovo file, accedere alle**posizioni**dell'interfaccia di **Amministrazione** > di Microsoft teams e quindi selezionare **Carica dati posizione** o **Sostituisci dati posizione**.
+- Per caricare il nuovo file, accedere alle > **posizioni**dell'interfaccia di **amministrazione di Microsoft teams**e quindi selezionare **Carica dati posizione** o **Sostituisci dati posizione**.
   
 Se si sta creando il file TSV o CSV da zero, vedere formato di [file di dati tenant e struttura del file di dati dell'edificio](turning-on-and-using-call-quality-dashboard.md#BKMKTenantDataFile).
   

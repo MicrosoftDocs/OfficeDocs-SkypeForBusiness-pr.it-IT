@@ -10,19 +10,20 @@ audience: admin
 search.appverid: MET150
 description: Informazioni su come configurare la funzionalità Chiamami in teams in modo che gli utenti possano partecipare alla parte audio tramite telefono in scenari in cui l'uso del proprio computer per l'audio potrebbe non essere possibile.
 localization_priority: Normal
-ms.collection: Strat_MT_TeamsAdmin
+ms.collection:
+- M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 54e9d90a3380358abd0c1e984b90834455eb44e2
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 8bd9ca9b73d3d2e60b707d0f40ebb1797d4e1a00
+ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36243174"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "37571547"
 ---
 # <a name="set-up-the-call-me-feature-for-your-users"></a>Configurare la funzionalità chiamami per gli utenti
 
-In Microsoft teams, **** la funzionalità chiamami offre agli utenti un modo per partecipare alla parte audio di una riunione tramite telefono. Questa operazione è utile in scenari in cui l'uso di un computer per l'audio potrebbe non essere possibile. Gli utenti ottengono la parte audio della riunione tramite il telefono cellulare o la linea di terra e la parte di contenuto&mdash;della riunione, quando un altro partecipante alla riunione condivide lo schermo&mdash;o riproduce un video nel computer.
+In Microsoft teams, la funzionalità **chiamami** offre agli utenti un modo per partecipare alla parte audio di una riunione tramite telefono. Questa operazione è utile in scenari in cui l'uso di un computer per l'audio potrebbe non essere possibile. Gli utenti ottengono la parte audio della riunione tramite il telefono cellulare o la linea di terra e la parte di contenuto&mdash;della riunione, quando un altro partecipante alla riunione condivide lo schermo&mdash;o riproduce un video nel computer.
 
 ## <a name="the-user-experience"></a>Esperienza utente
 
@@ -34,7 +35,7 @@ Fare clic su **partecipa** per partecipare a una riunione e quindi fare clic su 
 
 **Consentire la chiamata alla riunione Teams**
 
-Nella schermata **Usa telefono per l'audio** l'utente immette il proprio numero di telefono e quindi fa **** clic su Chiamami. La riunione chiama l'utente e li unisce alla riunione.
+Nella schermata **Usa telefono per l'audio** l'utente immette il proprio numero di telefono e quindi fa clic su **chiamami**. La riunione chiama l'utente e li unisce alla riunione.
 
 ![Screenshot dell'opzione chiamami nella schermata Usa telefono per l'audio](media/set-up-the-call-me-feature-for-your-users-call-me.png)
 
@@ -46,9 +47,9 @@ Un altro modo per partecipare consiste nel connettersi direttamente alla riunion
 
 ### <a name="get-a-call-back-when-something-goes-wrong-with-audio-during-a-meeting"></a>Ottenere una chiamata quando si verifica un problema con l'audio durante una riunione
 
-Se un utente avverte problemi di audio quando si usa il proprio computer durante una riunione, l'utente può facilmente passare a usare il telefono per l'audio. Teams rileva quando si verifica un problema di audio o dispositivo e reindirizza l'utente a usare il telefono visualizzando l' **** opzione chiamami.
+Se un utente avverte problemi di audio quando si usa il proprio computer durante una riunione, l'utente può facilmente passare a usare il telefono per l'audio. Teams rileva quando si verifica un problema di audio o dispositivo e reindirizza l'utente a usare il telefono visualizzando l'opzione **chiamami** .
 
-Ecco un esempio del messaggio e l'opzione chiamami di **nuovo** visualizzata quando i team non rilevano un microfono.
+Ecco un esempio del messaggio e l'opzione **chiamami di nuovo** visualizzata quando i team non rilevano un microfono.
 
 ![Schermata dell'opzione chiamami di nuovo](media/set-up-the-call-me-feature-for-your-users-no-mic.PNG)
 
@@ -62,4 +63,4 @@ Per abilitare la funzionalità chiamami per gli utenti dell'organizzazione, è n
 
 - Gli utenti possono effettuare la chiamata fuori dalle riunioni. Per altre informazioni, vedere [gestire le impostazioni di audioconferenza per un utente in teams](manage-the-audio-conferencing-settings-for-a-user-in-teams.md).
 
-Se un utente non ha attivato la chiamata in uscita dalle riunioni **** , l'opzione Chiamami non è disponibile e l'utente non riceverà una chiamata per partecipare alla riunione. L'utente vede invece un elenco di numeri di telefono nella schermata **Usa telefono per l'audio** che possono usare per effettuare la chiamata manualmente alla riunione sul telefono.
+Se un utente non ha attivato la chiamata in uscita dalle riunioni, l'opzione **chiamami** non è disponibile e l'utente non riceverà una chiamata per partecipare alla riunione. L'utente vede invece un elenco di numeri di telefono nella schermata **Usa telefono per l'audio** che possono usare per effettuare la chiamata manualmente alla riunione sul telefono.
