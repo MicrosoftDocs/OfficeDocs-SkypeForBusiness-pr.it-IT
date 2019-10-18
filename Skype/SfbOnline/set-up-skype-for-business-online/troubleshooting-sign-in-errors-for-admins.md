@@ -194,7 +194,7 @@ Per risolvere il problema, eseguire le operazioni seguenti:
 
 1. Aggiornare l'attributo **msRTCSIP-UserEnabled** per tutti gli utenti interessati, impostandolo su **TRUE**.
 
-2. Eseguire nuovamente lo Strumento di sincronizzazione della directory dei Microsoft Online Services. Per informazioni dettagliate, vedere [AIntegrate locale directory con Azure Active Directory](https://technet.microsoft.com/it-IT/library/hh967642.aspx).
+2. Eseguire nuovamente lo Strumento di sincronizzazione della directory dei Microsoft Online Services. Per informazioni dettagliate, vedere [AIntegrate locale directory con Azure Active Directory](https://technet.microsoft.com/en-us/library/hh967642.aspx).
 
 Per risolvere i problemi di accesso a Skype for Business online problemi, è bene iniziare eliminando le cause più comuni dei problemi di accesso. Se necessario, è possibile seguire una procedura di risoluzione specifica in base al tipo di errore. Se non è ancora possibile accedere, raccogliere nuove informazioni e chiedere ulteriore assistenza.
 ## <a name="use-the-microsoft-support-troubleshooting-guide"></a>Usare la guida alla risoluzione dei problemi del supporto tecnico Microsoft
