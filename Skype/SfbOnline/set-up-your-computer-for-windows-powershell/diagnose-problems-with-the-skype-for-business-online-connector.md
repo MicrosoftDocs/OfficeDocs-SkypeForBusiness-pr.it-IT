@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: 44214b93e4a1c555165e8bb2e699b7ff8c4e4599
-ms.sourcegitcommit: 3197f3ffca2b2315be9fd0c702ccc8c87383c893
+ms.openlocfilehash: dac4e2007853b489345f8ea137423cbd71363d56
+ms.sourcegitcommit: 0de27096ea3c9d6f210aeb4aad31c4255c3c0244
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35062209"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37615973"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
 
@@ -49,6 +49,13 @@ ms.locfileid: "35062209"
 
 - [È stato superato il numero massimo di shell simultanee per il tenant in Skype for business online](#the-maximum-number-of-concurrent-shells-for-this-tenant-in-skype-for-business-online-has-been-exceeded)
     
+
+> [!IMPORTANT]
+> Per impostazione predefinita, il timeout delle sessioni di PowerShell è 60 minuti. Per riconnettersi, è necessario chiudere la sessione e avviare una nuova sessione di PowerShell. È stata avviata recentemente una nuova versione di [Skype for business online, modulo di Windows PowerShell (2046,123-Published 10/2/2019)](https://www.microsoft.com/download/details.aspx?id=39366), che include un nuovo cmdlet denominato **Enable-CsOnlineSessionForReconnection** che attenua i 60 minuti problema di timeout.
+> La sessione di PowerShell riconnette e autentica, consentendone la riutilizzo senza dover avviare una nuova istanza per la riconnessione.
+
+
+
 ## <a name="import-module-error-caused-by-windows-powershell-execution-policy"></a>Errore di Import-Module causato dal criterio di esecuzione di Windows PowerShell
 <a name="BKMKPowerShellExecutionPolicy"> </a>
 
@@ -74,7 +81,7 @@ Il Modulo del connettore di Skype for Business Online può essere eseguito solo 
 ## <a name="modern-authentication-fails-when-winrm-basic-authentication-has-been-disabled"></a>L'autenticazione moderna non riesce quando l'autenticazione di base di WinRM è stata disattivata
 <a name="BKMKWinRMBasicAuth"> </a>
 
-La versione più recente del modulo di Skype for Business Online Connector usa l'autenticazione moderna, ma il client di gestione remota di Windows (WinRM) sottostante deve essere configurato per consentire l'autenticazione di base.  L'autenticazione moderna usa i token del portatore di solito passati nell' *autorizzazione:* intestazione del portatore. Windows PowerShell, su cui è stata creata la funzionalità di PowerShell per Skype for business, non consente la manipolazione di questa intestazione.  Invece, Skype for business PowerShell usa l'intestazione *Authorization: Basic* per passare il token del portatore.
+La versione più recente del modulo di Skype for Business Online Connector usa l'autenticazione moderna, ma il client di gestione remota di Windows (WinRM) sottostante deve essere configurato per consentire l'autenticazione di base.  L'autenticazione moderna usa i token del portatore di solito passati nell' *autorizzazione: intestazione del portatore* . Windows PowerShell, su cui è stata creata la funzionalità di PowerShell per Skype for business, non consente la manipolazione di questa intestazione.  Invece, Skype for business PowerShell usa l'intestazione *Authorization: Basic* per passare il token del portatore.
 
 Per istruzioni su come abilitare WinRM per l'autenticazione di base, vedere [scaricare e installare Windows PowerShell](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-5-1) .
 
