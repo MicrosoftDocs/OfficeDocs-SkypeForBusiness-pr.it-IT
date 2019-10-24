@@ -22,10 +22,10 @@ ms.custom:
 - LIL_Placement
 description: 'Learn how in Office 365 Calling Plan (PSTN Calling plan) to buy and set up licenses, get phone numbers, add and assign emergency locations and phone numbers to users, and tell your users about their new phone numbers. '
 ms.openlocfilehash: 964748a9af9d7a31d7dd4cc4648353b6724fc54e
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "37571239"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
@@ -50,7 +50,7 @@ Esistono tre modi per ottenere nuovi numeri utente:
     
 - **Importa i tuoi numeri esistenti.** È possibile convertire o trasferire i numeri esistenti dal provider di servizi o dal gestore di telefonia corrente a Office 365. Per ulteriori informazioni su come eseguire questa operazione, è possibile visualizzare [Trasferire numeri di telefono in Office 365](transfer-phone-numbers-to-office-365.md) o [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).  
   
-- **Utilizzare un modulo di richiesta per nuovi numeri.** A volte, a seconda del paese o dell'area geografica, non potrai ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di Skype for business oppure avrai bisogno di numeri di telefono o codici di area specifici. In questo caso, dovrai scaricare un modulo e inviarcelo. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
+- **Utilizzare un modulo di richiesta per nuovi numeri.** A volte, a seconda del paese o dell'area geografica, non potrai ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di Skype for business oppure avrai bisogno di numeri di telefono o codici di area specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
 
 ## <a name="step-4-add-emergency-addresses-and-locations-for-your-organization"></a>Passaggio 4: aggiungere indirizzi e posizioni di emergenza per l'organizzazione
 <a name="bkmk_add_addresses"></a> Un indirizzo di emergenza deve essere associato a un numero di telefono; Quando questa associazione si verifica può variare tra paese e aree geografiche. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito, è necessario associare un indirizzo di emergenza per il numero di telefono quando si desidera ottenere i numeri di telefono da Office 365 o il trasferimento di numeri di telefono da provider di servizi corrente. 

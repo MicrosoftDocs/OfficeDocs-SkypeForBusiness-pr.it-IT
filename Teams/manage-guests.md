@@ -16,10 +16,10 @@ description: Gli amministratori IT possono aggiungere ospiti a livello di tenant
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 7db3d42a8d4ae44364ee56f6c7f31ce501a34137
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "37573169"
 ---
 <a name="manage-guest-access-in-microsoft-teams"></a>Gestire l'accesso guest in Microsoft Teams

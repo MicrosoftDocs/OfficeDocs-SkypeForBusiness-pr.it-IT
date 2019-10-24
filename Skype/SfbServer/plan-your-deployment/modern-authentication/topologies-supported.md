@@ -13,10 +13,10 @@ ms.custom: tracyp
 ms.assetid: 258430b0-574a-47fb-90b7-54ee8996b2ec
 description: Questo articolo elenca le topologie online e locali supportate con l'autenticazione moderna in Skype for business, nonché le caratteristiche di sicurezza applicabili a ogni topologia.
 ms.openlocfilehash: 0d66790d2c471af29ed5c3f886393b1cd33f2b6a
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "36195868"
 ---
 # <a name="skype-for-business-topologies-supported-with-modern-authentication"></a>Topologie Skype for business supportate con l'autenticazione moderna

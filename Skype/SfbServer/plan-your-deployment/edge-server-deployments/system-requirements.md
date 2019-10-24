@@ -15,10 +15,10 @@ ms.custom: ''
 ms.assetid: ed53a566-0504-46f9-81a7-116a637833af
 description: 'Riepilogo: informazioni sui requisiti di sistema per Edge Server in Skype for Business Server.'
 ms.openlocfilehash: 01a5cce8dd1ccb85d322b6c66615d022c8d6c2df
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "36187808"
 ---
 # <a name="edge-server-system-requirements-in-skype-for-business-server"></a>Requisiti di sistema di Edge Server in Skype for Business Server
@@ -41,7 +41,7 @@ Tenendo presente quanto segue, questi sono i componenti da tenere presenti per l
     
 - [Amministratori](system-requirements.md#Directors) (questi sono facoltativi e, se inclusi, verranno posizionati nella rete interna)
     
-- [Bilanciamento del carico](system-requirements.md#LoadBalancers) (è possibile avere il bilanciamento del carico DNS o un bilanciamento del carico hardware (HLB), ma per un singolo Edge Server non è necessario)
+- [Bilanciamento](system-requirements.md#LoadBalancers) del carico (è possibile avere il bilanciamento del carico DNS o un servizio di bilanciamento del carico hardware (HLB), ma per un singolo Edge Server non è necessario)
     
 Abbiamo più dettagli su ognuno di essi:
   
@@ -171,7 +171,7 @@ Se nell'ambiente **non** è necessaria l'affinità basata su cookie:
   
 - Nella regola di pubblicazione del proxy inverso per la porta 443 impostare **Inoltra intestazione host** su **true**. In questo modo verrà inoltrato l'URL originale.
     
-Per le distribuzioni **** che richiedono affinità basate su cookie:
+Per le distribuzioni **che richiedono** affinità basate su cookie:
   
 - Nella regola di pubblicazione del proxy inverso per la porta 443 impostare **Inoltra intestazione host** su **true**. In questo modo verrà inoltrato l'URL originale.
     

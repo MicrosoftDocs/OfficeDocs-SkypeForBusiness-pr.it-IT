@@ -12,10 +12,10 @@ localization_priority: Normal
 ms.assetid: 330367f2-22b0-43e3-b8fb-3e0d2e3b330e
 description: Il cmdlet Enter-CcUpdate prepara il server host di Skype for Business Cloud Connector Edition per il processo di aggiornamento inserendolo in modalità di manutenzione. L'appliance arresta immediatamente tutti i servizi, terminando qualsiasi chiamata in corso e rifiutando le nuove chiamate.
 ms.openlocfilehash: 3ff4c1543e3e882a7ccbaf0b9a216ce902a77c5f
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "36195878"
 ---
 # <a name="enter-ccupdate"></a>Invio-CcUpdate

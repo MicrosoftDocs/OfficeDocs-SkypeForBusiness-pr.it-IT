@@ -11,10 +11,10 @@ localization_priority: Normal
 ms.assetid: 21507e18-bd79-4019-9c3a-0867fccaa3b4
 description: "Riepilogo: leggere questo argomento per informazioni sulle procedure consigliate per l'implementazione e la gestione di riunioni di grandi dimensioni in Skype for Business Server."
 ms.openlocfilehash: 136896a45be36508af419d84bc5bd684c9d8a429
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
+ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "36195876"
 ---
 # <a name="plan-for-large-meetings-in-skype-for-business-server"></a>Pianificare riunioni di grandi dimensioni in Skype for Business Server
@@ -211,7 +211,7 @@ Fatta eccezione per le **dimensioni massime della riunione** , tutte le altre im
   
 Inoltre, è necessario configurare il pool di grandi riunioni dedicato in modo che ogni utente di Skype for Business Server ospitato nel pool e responsabile della gestione della pianificazione delle riunioni disponga delle autorizzazioni appropriate. Per eseguire questa operazione, eseguire le operazioni seguenti:
   
-- Impostare l'opzione **designa come** relatore su **nessuno**. In genere, uno o pochi utenti di tutti i partecipanti a una riunione di grandi dimensioni sono relatori, quindi i partecipanti non devono essere ammessi automaticamente alle riunioni di grandi dimensioni come relatori. Al contrario, i relatori devono essere designati in modo esplicito al momento della riunione o essere promossi esplicitamente durante la riunione di grandi dimensioni.
+- Impostare l'opzione **designa come relatore** su **nessuno**. In genere, uno o pochi utenti di tutti i partecipanti a una riunione di grandi dimensioni sono relatori, quindi i partecipanti non devono essere ammessi automaticamente alle riunioni di grandi dimensioni come relatori. Al contrario, i relatori devono essere designati in modo esplicito al momento della riunione o essere promossi esplicitamente durante la riunione di grandi dimensioni.
     
 - Verificare che la casella **di controllo tipo di conferenza assegnata per impostazione predefinita** non sia selezionata. Questa impostazione controlla se il componente aggiuntivo riunione online per Skype for business Pianifica sempre le conferenze con la conferenza assegnata dell'organizzatore, in modo che le riunioni pianificate abbiano lo stesso URL di join e le informazioni audio. Negli scenari di collaborazione in piccoli gruppi, il tipo di conferenza assegnata funziona bene perché ognuno ha una propria conferenza assegnata individualmente e l'URL di join costante e le informazioni audio contribuiscono a facilitare l'Unione delle riunioni. Nello scenario della riunione di grandi dimensioni, tuttavia, il personale di supporto per le riunioni di grandi dimensioni pianifica le riunioni di grandi dimensioni con un singolo set di credenziali utente e quindi fornisce URL di join e informazioni audio ai richiedenti della riunione. In questo caso, l'uso di un URL diverso per partecipare a una riunione funziona meglio.
     

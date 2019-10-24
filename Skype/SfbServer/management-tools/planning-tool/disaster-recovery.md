@@ -15,10 +15,10 @@ localization_priority: Normal
 ms.assetid: 88ad1820-d4ef-4eb6-831b-a8574c085bd0
 description: Skype for Business Server 2015 include misure per il ripristino di emergenza, consentendo di associare pool Front-end situati in due centri dati.
 ms.openlocfilehash: bb89116d1cedf4eea5e888c0b8021b009688324f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "36186728"
 ---
 # <a name="disaster-recovery-planning-tool"></a>Ripristino di emergenza (strumento di pianificazione)

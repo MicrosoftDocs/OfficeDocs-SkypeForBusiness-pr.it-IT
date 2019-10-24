@@ -15,10 +15,10 @@ appliesto:
 - Microsoft Teams
 description: Informazioni su cosa è necessario per eseguire la migrazione a routing diretto da una prospettiva di configurazione di Skype for business online e teams.
 ms.openlocfilehash: 9fb644c938c61fd9dd1c78362ad90bfe855e97ec
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 10/18/2019
 ms.locfileid: "37572180"
 ---
 # <a name="migrate-to-direct-routing"></a>Eseguire la migrazione a routing diretto
@@ -39,7 +39,7 @@ La tabella seguente mostra lo stato di fine di un utente con provisioning per le
 |Attributi degli oggetti utente |Sistema telefonico con piani di chiamata|Sistema telefonico con connettività PSTN locale tramite Skype for Business Server|Sistema telefonico con connettività PSTN locale tramite connettore Cloud|Sistema telefonico con connettività PSTN locale tramite routing diretto|
 |---|---|---|---|---|
 |Client|Skype for business o Teams |Skype for business |Skype for business |Squadre|
-|Licenze|Skype business online</br>Piano 2</br></br>MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)</br></br></br>Piani per chiamate</br>Squadre|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD</br></br></br>Sistema telefonico (MCOEV)</br></br>Squadre|
+|Licenze|Skype business online</br>Piano 2</br></br>MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)</br></br></br>Piani di chiamata</br>Squadre|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD</br></br></br>Sistema telefonico (MCOEV)</br></br>Squadre|
 OnPremLineURI |N/D|Il numero di telefono deve essere sincronizzato dall'annuncio locale. |Il numero di telefono può essere gestito sia in Active Directory locale che in Azure Active Directory.|Il numero di telefono può essere gestito sia in Active Directory locale che in Azure Active Directory. Tuttavia, se l'organizzazione ha Skype for business locale, il numero deve essere sincronizzato dall'Active Directory locale.|
 |LineURI|Numero di telefono chiamante PSTN|Imposta automaticamente dal parametro OnPremLineURI|Imposta automaticamente dal parametro OnPremLineURI|Imposta automaticamente dal parametro OnPremLineURI|
 |EnterpriseVoiceEnabled|True|True|True|True|
