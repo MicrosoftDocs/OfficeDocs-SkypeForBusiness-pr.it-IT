@@ -1,1 +1,1 @@
-Stiamo aggiornando spesso il modo in cui è possibile gestire le caratteristiche, quindi la procedura potrebbe essere leggermente diversa da quella visualizzata.
+Le modalità di gestione delle funzionalità vengono aggiornate spesso, quindi la procedura da seguire potrebbe essere leggermente diversa da quella visualizzata.
