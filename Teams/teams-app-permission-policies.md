@@ -20,12 +20,12 @@ f1keywords:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 78271e193cb3e74cf2d9c363517546f61b5587ea
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: ef70fba7c26315e1c66928722c373b383071771b
+ms.sourcegitcommit: d6a0ff7f00defda2b58726f5f0f0fac871f46ab7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570304"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37664975"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione delle app in Microsoft Teams
 
@@ -48,7 +48,7 @@ Usa le impostazioni dell'app a livello di organizzazione per controllare quali a
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di autorizzazione**delle **app teams**.
 2. Selezionare **impostazioni a livello di organizzazione**. È quindi possibile configurare le impostazioni desiderate nel pannello. 
-    ![Schermata dei criteri di autorizzazione per i nuovi app](media/app-permission-policies-org-wide-settings.png)
+    ![Screenshot delle impostazioni dell'app a livello di organizzazione](media/app-permission-policies-org-wide-settings.png)
 3. In **app di terze parti**disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:
 
     - **Consentire app di terze parti o personalizzate in teams**: controlla se gli utenti possono usare app di terze parti o personalizzate.

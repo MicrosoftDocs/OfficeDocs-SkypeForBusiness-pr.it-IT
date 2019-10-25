@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 31aa30401f345d58c4c30cffbc89c618ea94b0cb
-ms.sourcegitcommit: d4e69d46de564c445feb855cbee55954a7063bba
+ms.openlocfilehash: 03f83053e46350cc7a73f92451797553a9c978ad
+ms.sourcegitcommit: d6a0ff7f00defda2b58726f5f0f0fac871f46ab7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36483958"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37664949"
 ---
 <a name="about-upgrade-basic"></a>
 
@@ -41,13 +41,13 @@ Questi dieci semplici passaggi consentono di ottenere tutto il necessario per un
 Cosa succede a Skype for business dopo l'aggiornamento? Dopo l'aggiornamento degli utenti a teams (modalità**solo teams** ):
 
 - Il client Skype for business è disabilitato e tutte le chat e le chiamate vanno in teams. Tieni presente che il client non viene disinstallato sui desktop.
-- Tutte le riunioni Skype for business pianificate prima dell'aggiornamento, ma tutte le nuove riunioni sono programmate in teams.
+- Tutte le riunioni Skype for business pianificate prima dell'aggiornamento, ma tutte le nuove riunioni sono programmate in teams. Il plug-in Skype for business non sarà più disponibile in Outlook. 
 - Se gli utenti provano ad accedere a Skype for business, ricevono una notifica da parte del cliente che è stata aggiornata ai team.
 - Gli utenti devono disinstallare manualmente il client Skype for business nei dispositivi mobili.
 
 Vedere le domande [frequenti](https://aka.ms/SkypeToTeams-FAQ) per altre informazioni sull'aggiornamento.
 
-Non si ha familiarità con le squadre? [Informazioni sul modo](https://products.office.com/microsoft-teams/group-chat-software) in cui teams raggruppa conversazioni, riunioni, file, app di Office e integrazioni di terze parti, fornendo un unico hub per il lavoro di gruppo in Office 365.
+Non si ha familiarità con le squadre? [Informazioni sul modo in cui teams](https://products.office.com/microsoft-teams/group-chat-software) raggruppa conversazioni, riunioni, file, app di Office e integrazioni di terze parti, fornendo un unico hub per il lavoro di gruppo in Office 365.
 
 <!--ENDOFSECTION-->
 
@@ -73,7 +73,7 @@ I leader senior sono responsabili per il successo aziendale; Assicurati di tener
 
 *(Circa quattro-sei settimane prima dell'aggiornamento)*
 
-Teams offre funzionalità compatibili con Skype for business, ad esempio messaggistica istantanea (chat) e riunioni, ma può anche fare molto di più. Come vero hub per il lavoro di gruppo, teams consente ai Workgroup di gestire progetti, file, conversazioni e app in un'unica posizione. Decidere in che modo l'organizzazione utilizzerà teams e configurerà l'ambiente per il successo.
+Teams offre funzionalità compatibili con Skype for business, ad esempio messaggistica istantanea (chat) e riunioni, ma può anche fare molto di più. Come vero hub per il lavoro di gruppo, teams consente ai Workgroup di gestire progetti, file, conversazioni e app in un'unica posizione. Per impostazione predefinita, teams è attivato per tutte le organizzazioni. Decidere in che modo l'organizzazione utilizzerà teams e configurerà l'ambiente per il successo. 
 
 > [!Note]
 > Come cliente esistente di Skype for business, l'infrastruttura di rete corrente è probabilmente già configurata per i team. Per confermare questa operazione, è possibile seguire la guida "pianificazione tecnica completa" collegata al seguente (facoltativo).
@@ -81,9 +81,7 @@ Teams offre funzionalità compatibili con Skype for business, ad esempio messagg
 **Risorse**
 
 - [Panoramica dei team](Teams-overview.md)
-- [Informazioni su team e canali](teams-channels-overview.md)
-- [Pianificazione tecnica completa](deploy-chat-teams-channels-microsoft-teams-landing-page.md)
-- [Gestire le sale di Microsoft Teams](https://aka.ms/MTRDocs)
+- Introduzione a Microsoft Teams (get-started-with-teams-quick-start.md)
 
 [Torna all'inizio](#about-upgrade-basic)
 
