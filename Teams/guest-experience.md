@@ -1,9 +1,8 @@
 ---
-title: Aspetto dell'esperienza Guest
+title: Com'è l'esperienza guest
 author: lanachin
 ms.author: v-lanac
 manager: serdars
-ms.date: 06/20/2019
 ms.topic: conceptual
 audience: admin
 ms.service: msteams
@@ -16,27 +15,27 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e034c7fe8b9e0863bab257b735987ec15c65a3c9
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 9b923a92c9fb8a7475d9424861a7204da7f19780
+ms.sourcegitcommit: 09e719ead5c02b3cfa96828841c4905748d192a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569540"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37753431"
 ---
-<a name="what-the-guest-experience-is-like"></a>Aspetto dell'esperienza Guest
+<a name="what-the-guest-experience-is-like"></a>Com'è l'esperienza guest
 =================================
 
-Quando un ospite è invitato a partecipare a un team, riceve un messaggio di posta elettronica di benvenuto che include alcune informazioni sul team e cosa aspettarsi ora che si tratta di un membro. Il guest deve riscattare l'invito nel messaggio di posta elettronica prima di poter accedere al team e ai relativi canali.
+Quando un ospite è invitato a partecipare a un team, riceve un messaggio di posta elettronica di benvenuto. Questo messaggio include alcune informazioni sul team e cosa aspettarsi ora che siano membri. Il guest deve accettare l'invito selezionando **Apri Microsoft teams** nel messaggio di posta elettronica prima di poter accedere al team e ai relativi canali.
     
 ![Screenshot che mostra un esempio di messaggio di posta elettronica di benvenuto](media/guest-experience-image1.png)
     
-Tutti i membri del team vedono un messaggio nel thread del canale che annuncia che il proprietario del team ha aggiunto un Guest e fornisce il nome dell'ospite. Tutti gli utenti del team possono identificare facilmente chi è ospite. Come illustrato nello screenshot seguente di un team di esempio, un banner indica "questo team ha Guest" e viene visualizzata un'etichetta "(Guest)" accanto al nome di ogni Guest.
+Tutti i membri del team vedono un messaggio nel thread del canale che annuncia che il proprietario del team ha aggiunto un Guest e fornisce il nome dell'ospite. Tutti gli utenti del team possono identificare facilmente chi è ospite. Come illustrato nello screenshot seguente di un team di esempio, un banner indica "questo team ha Guest" e viene visualizzata un'etichetta **(Guest)** accanto al nome di ogni Guest.
     
 ![Screenshot che Mostra gli utenti Guest notifica banner](media/guest-experience-image2.png "Lo screenshot mostra una parte del canale di marketing per Northwind Traders, con la notifica nel banner superiore che indica che il team ha GUEST e gli utenti che sono ospiti sono identificati con l'ospite di Word accanto al nome.")
 
 ## <a name="comparison-of-team-member-and-guest-capabilities"></a>Confronto tra i membri del team e le funzionalità Guest
 
-Nella tabella seguente viene confrontata la funzionalità Microsoft teams disponibile per i membri del team di un'organizzazione per la funzionalità disponibile per un utente Guest nel team.
+Nella tabella seguente vengono confrontate le funzionalità teams disponibili per i membri del team di un'organizzazione e i relativi Guest.
 
 |**Funzionalità in teams**|**Utenti teams nell'organizzazione**|**Utente Guest**|
 |:-----|:-----|:-----|
@@ -56,9 +55,9 @@ Nella tabella seguente viene confrontata la funzionalità Microsoft teams dispon
 |Visualizzazione organigramma  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
 |Usare la traduzione in linea  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
    
-La tabella seguente mostra le funzionalità di chiamata e riunione disponibili per gli utenti guest.
+La tabella seguente mostra le funzionalità di chiamata e riunione disponibili per gli ospiti, rispetto ad altri tipi di utenti.
 
-| Caratteristica chiamante | I | Utenti E1 e E3 | Utenti E5 e EV |
+| Caratteristica chiamante | I | Utenti E1 e E3 | E5 e Enterprise Voice User |
 | --------------- | ----- | -------------- | -------------- |
 | Chiamate VOIP | Sì | Sì | Supporto per più paesi |
 | Chiamata di gruppo | Sì | Sì | Supporto per più paesi |
@@ -91,36 +90,29 @@ La tabella seguente mostra le funzionalità di chiamata e riunione disponibili p
 
 > [!NOTE]
 > Gli amministratori di Office 365 controllano le funzionalità disponibili per gli utenti. 
- 
-## <a name="guest-access-vs-external-access-federation"></a>Accesso guest e accesso esterno (Federazione)
 
-[!INCLUDE [guest-vs-external-access](includes/guest-vs-external-access.md)]
- 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-Q. Come si lascia un'organizzazione a cui si è stati invitati?<br>
-Un. Se si è stati invitati a un'organizzazione di cui non si vuole essere ospiti, è possibile scegliere di uscire dall'organizzazione. Per altre informazioni, vedere uscire da [un'organizzazione come utente Guest](https://docs.microsoft.com/en-us/azure/active-directory/b2b/leave-the-organization). In alternativa, puoi chiedere all'amministratore dell'organizzazione di rimuoverti dal tenant. Tieni presente che in entrambi i casi dovrai essere invitato di nuovo al tenant se vuoi accedere all'organizzazione in futuro.
+### <a name="how-do-i-leave-an-organization-that-ive-been-invited-to"></a>Come si lascia un'organizzazione a cui si è stati invitati?
+Se si è stati invitati a un'organizzazione di cui non si vuole essere ospiti, è possibile scegliere di uscire dall'organizzazione. Per altre informazioni, vedere uscire da [un'organizzazione come utente Guest](https://docs.microsoft.com/azure/active-directory/b2b/leave-the-organization). In alternativa, puoi chiedere all'amministratore dell'organizzazione di rimuoverti dal tenant. Tieni presente che in entrambi i casi dovrai essere invitato di nuovo al tenant se vuoi accedere all'organizzazione in futuro.
 
-Q. Gli utenti hanno le stesse funzionalità dei membri del team?<br>
-Un. Non. Per altre informazioni su ciò che un ospite può o non può fare, vedere il [confronto tra le funzionalità membro del team e Guest](#comparison-of-team-member-and-guest-capabilities) in questo articolo.
+### <a name="do-guests-have-the-same-capabilities-as-team-members"></a>Gli utenti hanno le stesse funzionalità dei membri del team?
+Non. Per altre informazioni su ciò che un ospite può o non può fare, vedere il [confronto tra le funzionalità membro del team e Guest](#comparison-of-team-member-and-guest-capabilities) in questo articolo.
 
-Q. Quanti ospiti posso invitare?<br>
-Un. Puoi aggiungere fino a 5 clienti per ogni utente con licenza.
+### <a name="do-guests-have-access-to-onedrive-for-business"></a>Gli utenti possono accedere a OneDrive for business?
+Non.
 
-Q. Gli utenti possono accedere a OneDrive for business?<br>
-Un. Non.
+### <a name="do-guests-have-access-to-sharepoint-files"></a>Gli utenti possono accedere ai file di SharePoint?
+Sì.
 
-Q. Gli utenti possono accedere ai file di SharePoint?<br>
-Un. Sì.
+### <a name="can-guests-search-within-files"></a>Gli utenti possono eseguire ricerche nei file?
+Non.
 
-Q. Gli utenti possono eseguire ricerche nei file?<br>
-Un. Non.
+### <a name="can-guests-attach-files"></a>I guest possono allegare file?
+Sì, un guest può allegare file in questi due modi:
 
-Q. I guest possono allegare file?<br>
-Un. Sì, un guest può allegare file in questi due modi:
-
-   - Selezionare file nel riquadro sinistro e quindi passare al percorso del file.
+   - Selezionare **file** nel riquadro sinistro e quindi passare al percorso del file.
    - Caricare file dal computer.
 
-Q. Un guest può scaricare un file in una chat privata?<br>
-Un. Sì, possono ricevere un file da un membro in una chat privata e quindi scaricarlo sul desktop.
+### <a name="can-a-guest-download-a-file-in-a-private-chat"></a>Un guest può scaricare un file in una chat privata?
+Sì, possono ricevere un file da un membro in una chat privata e quindi scaricarlo sul desktop.

@@ -20,16 +20,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 03f83053e46350cc7a73f92451797553a9c978ad
-ms.sourcegitcommit: d6a0ff7f00defda2b58726f5f0f0fac871f46ab7
+ms.openlocfilehash: 425ee7d6821a6765e03e2b9f0d9beaab61858bd4
+ms.sourcegitcommit: 25b6bf2c3050390cd668d2495ffcf31c44d0ff62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37664949"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37749284"
 ---
-<a name="about-upgrade-basic"></a>
-
 # <a name="upgrade-basic"></a>Aggiornamento di base
+
+<a name="about-upgrade-basic"></a>
 
 Progettato per organizzazioni di piccole dimensioni o per chi usa Skype for business online per la messaggistica istantanea (chat) e solo per le riunioni, l'elenco di controllo di base per l'aggiornamento è un piano di azione accelerato che include le attività consigliate e le risorse associate per l'implementazione di un passaggio riuscito da Skype for business a teams.
 
@@ -69,7 +69,7 @@ I leader senior sono responsabili per il successo aziendale; Assicurati di tener
 
 <a name="step-2"></a>
 
-## <a name="step-2-prepare-your-organization-for-teams"></a>Passaggio 2. Preparare l'organizzazione per i team
+## <a name="step-2-prepare-your-organization-for-teams"></a>Passaggio 2. Preparare l'organizzazione per Teams
 
 *(Circa quattro-sei settimane prima dell'aggiornamento)*
 
@@ -81,7 +81,7 @@ Teams offre funzionalità compatibili con Skype for business, ad esempio messagg
 **Risorse**
 
 - [Panoramica dei team](Teams-overview.md)
-- Introduzione a Microsoft Teams (get-started-with-teams-quick-start.md)
+- [Introduzione a Microsoft Teams](get-started-with-teams-quick-start.md)
 
 [Torna all'inizio](#about-upgrade-basic)
 
@@ -167,7 +167,7 @@ Dopo aver aggiornato tutti gli utenti, è consigliabile inviare un messaggio di 
 
 **Risorse**
 
-- [Impostare le impostazioni di coesistenza e aggiornamento](setting-your-coexistence-and-upgrade-settings.md)
+- [Configurare le impostazioni di aggiornamento e coesistenza](setting-your-coexistence-and-upgrade-settings.md)
 - [Esempio di posta elettronica: accogliere gli utenti in teams](upgrade-emails-surveys.md#step-7-email)
 
 [Torna all'inizio](#about-upgrade-basic)

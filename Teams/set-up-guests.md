@@ -3,7 +3,6 @@ title: Attivare o disattivare l'accesso Guest a Microsoft Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
-ms.date: 03/06/2019
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -18,38 +17,36 @@ ms.custom:
 f1keywords: ms.teamsadmincenter.orgwidesettings.guestaccess.turnonguestaccessarticle
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 186c83b82c396a21fe0098a561bcd4db13370140
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.openlocfilehash: 20971fd985d4512e8a9bf00db23092f1a6e44702
+ms.sourcegitcommit: 09e719ead5c02b3cfa96828841c4905748d192a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37571575"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37753351"
 ---
 <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
 ===================================================
 
-L'amministratore di Office 365 deve abilitare la funzionalità Guest prima che l'utente o gli utenti dell'organizzazione (in particolare i proprietari del team) possano aggiungere Guest.
+Per impostazione predefinita, l'accesso Guest è disattivato. Come amministratore di Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest. Per attivare l'accesso guest, usare l' [elenco di controllo di accesso Guest](guest-access-checklist.md). 
 
-Le impostazioni Guest sono impostate in Azure Active Directory. Le modifiche possono essere effettive nell'organizzazione di Office 365 in 2 ore e 24 ore. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che la caratteristica Guest non sia stata abilitata o che le impostazioni non siano ancora valide.
+Dopo aver attivato l'accesso guest, sono necessarie 2-24 ore affinché le modifiche abbiano effetto. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora valide.
 
 > [!IMPORTANT]
-> Per consentire l'esperienza completa della funzionalità di accesso guest, è importante comprendere la dipendenza dalle autorizzazioni principali tra Microsoft teams, Azure Active Directory e Office 365. Per altre informazioni, vedere [autorizzare l'accesso guest in Microsoft teams](Teams-dependencies.md).
+> L'attivazione dell'accesso guest dipende dalle impostazioni in Azure Active Directory, Office 365, SharePoint Online e teams. Per altre informazioni, vedere [autorizzare l'accesso guest in teams](Teams-dependencies.md).
 
-## <a name="guest-access-vs-external-access-federation"></a>Accesso guest e accesso esterno (Federazione)
 
-[!INCLUDE [guest-vs-external-access](includes/guest-vs-external-access.md)]
 
-## <a name="configure-guest-access-in-the-microsoft-teams-admin-center"></a>Configurare l'accesso guest nell'interfaccia di amministrazione di Microsoft Teams
+## <a name="configure-guest-access-in-the-teams-admin-center"></a>Configurare l'accesso guest nell'interfaccia di amministrazione di Teams
 
 1.  Accedere all'interfaccia di amministrazione di Microsoft teams.
 
 2.  Selezionare > **l'accesso Guest** **delle impostazioni a livello di organizzazione**.
 
-3. Impostare l'opzione **Consenti accesso guest in Microsoft teams** **su**attivato.
+3. Impostare **Consenti accesso guest in Microsoft teams** **su**attivato.
 
     ![Consenti l'opzione di accesso Guest impostata su attivato ](media/set-up-guests-image1.png)
 
-4.  Impostare i toggle in **chiamata**, **riunione**e **messaggistica** **su** attivato o **disattivato**, a seconda delle funzionalità che si desidera consentire agli utenti guest.
+4.  In **chiamate**, **riunioni**e **messaggistica** **selezionare attivato** o **disattivato** per ogni funzionalità, a seconda di cosa si vuole consentire agli utenti guest.
 
     - **Effettuare chiamate private** : attivare **questa impostazione per consentire agli utenti** di effettuare chiamate peer-to-peer.
     - **Consenti video IP** -attivare questa impostazione per consentire agli utenti di **usare il video** nelle chiamate e nelle riunioni.
@@ -73,45 +70,16 @@ Le impostazioni Guest sono impostate in Azure Active Directory. Le modifiche pos
 5.  Fai clic su **Salva**.
 
 ## <a name="use-powershell-to-turn-guest-access-on-or-off"></a>Usare PowerShell per attivare o disattivare l'accesso Guest
+Leggere [usare PowerShell per attivare o disattivare l'accesso Guest](guest-access-PowerShell.md#use-powershell-to-turn-guest-access-on-or-off)
 
-1.  Scaricare il modulo di PowerShell per Skype for business online dahttps://www.microsoft.com/en-us/download/details.aspx?id=39366
- 
-2.  Connettere una sessione di PowerShell all'endpoint di Skype for business online.
 
-    ```
-    Import-Module SkypeOnlineConnector
-    $Cred = Get-Credential
-    $CSSession = New-CsOnlineSession -Credential $Cred
-    Import-PSSession -Session $CSSession
-    ```
-3.  Controlla la configurazione e, `AllowGuestUser` se `$False`lo è, usa il cmdlet [set-CsTeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps) per impostarlo su `$True`.
-
-    ```
-    Get-CsTeamsClientConfiguration
-
-    Identity                         : Global
-    AllowEmailIntoChannel            : True
-    RestrictedSenderList             :
-    AllowDropBox                     : True
-    AllowBox                         : True
-    AllowGoogleDrive                 : True
-    AllowShareFile                   : True
-    AllowOrganizationTab             : True
-    AllowSkypeBusinessInterop        : True
-    ContentPin                       : RequiredOutsideScheduleMeeting
-    AllowResourceAccountSendMessage  : True
-    ResourceAccountContentAccess     : NoAccess
-    AllowGuestUser                   : True
-    AllowScopedPeopleSearchandAccess : False
-    
-    Set-CsTeamsClientConfiguration -AllowGuestUser $True -Identity Global
-    ```
-È ora possibile avere utenti guest in teams per l'organizzazione.
-
-## <a name="more-information"></a>Ulteriori informazioni
-
-Guardare il video seguente per altre informazioni sull'accesso guest.
+## <a name="video-adding-guests-in-teams"></a>Video: aggiunta di Guest in teams
 
 |  |  |
 |---------|---------|
 | Aggiunta di Guest in Microsoft Teams   | <iframe width="350" height="200" src="https://www.youtube.com/embed/1daMBDyBLZc" frameborder="0" allowfullscreen></iframe>   | 
+
+
+## <a name="external-access-federation-vs-guest-access"></a>Accesso esterno (Federazione) vs Access Guest
+
+[!INCLUDE [guest-vs-external-access](includes/guest-vs-external-access.md)]

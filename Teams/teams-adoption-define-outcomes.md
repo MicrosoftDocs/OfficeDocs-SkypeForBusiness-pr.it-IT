@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Scopri come misurare i risultati e il successo della tua abilitazione su larga scala dei team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9bb0d3e756f746a625e3831c38c6dd41d4c29d6f
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 24b04571a647838ee4890c813e7f3b83f387c12d
+ms.sourcegitcommit: 25b6bf2c3050390cd668d2495ffcf31c44d0ff62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242405"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "37749274"
 ---
 # <a name="define-outcomes-and-success-for-your-microsoft-teams-adoption"></a>Definire i risultati e il successo per l'adozione di Microsoft Teams
 
@@ -75,7 +75,7 @@ Teams è una tecnologia di trasformazione, quindi, a seconda delle dimensioni de
 | Teams First | Core Teams | Teams Go Big | Skype side by side | Migrazione |
 |------------ | ---------- | ------------ | ------------------ | --------- |
 | Distribuzione di lead cloud con teams | Attivazione dello scenario di collaborazione con teams | Tutti i dipendenti di team e team a livello di organizzazione | Abilitare teams e Skype for business | Eseguire la migrazione di utenti da Skype for business a teams |
-| -Applicabile ai clienti di Office 365 nuovi o in basso consumo <br/>-Lead con teams in uno scenario specifico per il cliente <br/>-Evidenziare l'esperienza utente integrata e il tempo accelerato per il valore per Office 365 <br/>-Gestire insieme la pianificazione del carico di lavoro per evitare l'implementazione seriale | -Abilitare teams insieme a OneDrive e SharePoint Online <br/>-Creare una Intranet aziendale per condividere le notizie e i video con Microsoft Stream<br/>**Migliorare insieme**: <br/>Squadre<br/>SharePoint<br/>Yammer<br/>Planner<br/>PowerApps |-Per clienti con meno di 1000 seggi (limitazione corrente)<br/>-Abilitare la collaborazione tra organizzazioni con un team per tutti<br/>-Automatizzare le attività comuni (richieste di ferie, sondaggi dei dipendenti, impegno esecutivo) |-Usare le tattiche di base di teams per accelerare la collaborazione<br/>-Evidenziare le indicazioni dello scenario della riunione in base alle dimensioni e al set di caratteristiche richiesto</br>-Usare Skype for business per le chiamate aziendali, l'interoperabilità e gli scenari ibridi<br/>-Usare la roadmap pubblica per la pianificazione delle funzionalità. |-Pianificare lo stato di trasferimento in teams da Skype for business creando una roadmap di strategia per il cliente<br/>-Allega alla pianificazione del rilascio delle caratteristiche<br/>-Consigliato anche affiancato e teams core per facilitare la transizione
+| -Applicabile ai clienti di Office 365 nuovi o in basso consumo <br/>-Lead con teams in uno scenario specifico per il cliente <br/>-Evidenziare l'esperienza utente integrata e il tempo accelerato per il valore per Office 365 <br/>-Gestire insieme la pianificazione del carico di lavoro per evitare l'implementazione seriale | -Abilitare teams insieme a OneDrive e SharePoint Online <br/>-Creare una Intranet aziendale per condividere le notizie e i video con Microsoft Stream<br/>**Migliorare insieme**: <br/>Squadre<br/>SharePoint<br/>Yammer<br/>Planner<br/>PowerApps |-Per clienti con meno di 5000 seggi (limitazione corrente)<br/>-Abilitare la collaborazione tra organizzazioni con un team per tutti<br/>-Automatizzare le attività comuni (richieste di ferie, sondaggi dei dipendenti, impegno esecutivo) |-Usare le tattiche di base di teams per accelerare la collaborazione<br/>-Evidenziare le indicazioni dello scenario della riunione in base alle dimensioni e al set di caratteristiche richiesto</br>-Usare Skype for business per le chiamate aziendali, l'interoperabilità e gli scenari ibridi<br/>-Usare la roadmap pubblica per la pianificazione delle funzionalità. |-Pianificare lo stato di trasferimento in teams da Skype for business creando una roadmap di strategia per il cliente<br/>-Allega alla pianificazione del rilascio delle caratteristiche<br/>-Consigliato anche affiancato e teams core per facilitare la transizione
 
 Di seguito sono riportate le raccomandazioni per la maggior parte delle organizzazioni di clienti. Tuttavia, esistono eccezioni. Per ottenere indicazioni per qualsiasi scenario non trattato in questo articolo, porre le proprie domande nella community di adoptioni di guida o contattare il team di FastTrack o Microsoft Partner Network.
 
@@ -113,7 +113,7 @@ In un'organizzazione più piccola uno o più di questi ruoli possono essere eseg
 
 ## <a name="expand-your-governance-and-information-management-policies"></a>Espandere i criteri di governance e gestione delle informazioni
 
-Dopo aver selezionato la strategia di abilitazione, sarai pronto per rivedere e ridimensionare le decisioni di governance effettuate nella fase 1. Rivedere le decisioni da 1 a 6 nella [Guida introduttiva](teams-adoption-governance-quick-start.md) alla governance per espandere questi criteri in linea con gli utenti aziendali che useranno teams. 
+Dopo aver selezionato la strategia di abilitazione, sarai pronto per rivedere e ridimensionare le decisioni di governance effettuate nella fase 1. Rivedere le decisioni da 1 a 6 nella [Guida introduttiva alla governance](teams-adoption-governance-quick-start.md) per espandere questi criteri in linea con gli utenti aziendali che useranno teams. 
 
 | Livello team | Ambito/scopo | Appartenenza standard | Durata |
 |----------- | ------------- | ------------------- | -------- |
