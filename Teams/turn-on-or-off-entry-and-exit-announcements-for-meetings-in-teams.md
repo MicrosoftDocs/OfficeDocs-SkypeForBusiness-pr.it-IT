@@ -63,4 +63,4 @@ Per altre informazioni su Windows PowerShell, vedere la pagina di [riferimento d
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Domande ricorrenti sulle audioconferenze](audio-conferencing-common-questions.md)
+[Domande frequenti sul servizio di audioconferenza](audio-conferencing-common-questions.md)
