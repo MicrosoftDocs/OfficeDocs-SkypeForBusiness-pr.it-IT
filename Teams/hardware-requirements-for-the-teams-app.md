@@ -17,12 +17,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7ec568123f92c188d8642f6e5c8907485dc6de05
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 4616b3d78ae8d5e349b4cf29ca9112df77d7a295
+ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570756"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772350"
 ---
 # <a name="hardware-requirements-for-the-microsoft-teams-app"></a>Requisiti hardware per l'app Microsoft Teams
 
@@ -55,13 +55,34 @@ ms.locfileid: "37570756"
 |Segreteria telefonica    |  Microfono e altoparlanti compatibili, auricolare con microfono o dispositivo equivalente       |
 |Videochiamate e riunioni | Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). L'effetto video di sfondo facoltativo Blur richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2), supportato nella maggior parte dei dispositivi Mac di 2013 più tardi e versioni successive. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati.|
 
+## <a name="hardware-requirements-for-the-teams-desktop-app-on-a-linux"></a>Requisiti hardware per l'app desktop teams in un Linux
+
+|**Componente**|**Requisito**  |
+|---------|---------|
+|Computer e processore    | Minimo 1,6 GHz (o superiore) (32 bit o 64 bit).        |
+|Memoria     |    2,0 GB DI RAM     |
+|Disco rigido    | 3,0 GB di spazio disponibile su disco        |
+|Visualizzare    |   risoluzione dello schermo di 1024 x 768 |
+|Hardware grafico |  Minima di 128 MB di memoria grafica
+|Sistema operativo  | Distribuzione Linux in grado di installare DEB, snap o RPM. |
+|Video    |  Videocamera USB 2,0       |
+|Dispositivi    |   Fotocamera, microfono e altoparlanti standard del portatile    | 
+|Segreteria telefonica    |  Microfono e altoparlanti compatibili, auricolare con microfono o dispositivo equivalente       |
+|Videochiamate e riunioni | Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). L'effetto video di sfondo facoltativo Blur richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2), supportato nella maggior parte dei dispositivi Mac di 2013 più tardi e versioni successive. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati.
+
 ## <a name="hardware-requirements-for-the-teams-app-on-mobile-devices"></a>Requisiti hardware per l'app Teams nei dispositivi mobili
 
-È possibile usare Microsoft teams su queste piattaforme mobili:
+È possibile usare teams su queste piattaforme mobili:
 
-- Android-richiede Android 4,4 o versione successiva
+- Android-richiede Android 5,0 o versione successiva. Compatibile con telefoni e Tablet Android.
 
-- iOS: richiede iOS 10,0 o versione successiva. Compatibile con iPhone, iPad e iPod touch.
+  Il supporto è limitato alle ultime quattro versioni principali di Android. Quando viene rilasciata una nuova versione principale di Android, la nuova versione e le tre versioni precedenti sono supportate ufficialmente.
+
+- iOS: richiede iOS 10,0 o versione successiva. Compatibile con iPhone, iPad e iPod touch. 
+
+  Il supporto è limitato alle due versioni principali più recenti di iOS. Quando viene rilasciata una nuova versione principale di iOS, la nuova versione di iOS e la versione precedente sono supportate ufficialmente.
+
+Per un'esperienza ottimale con teams, usa l'ultima versione di iOS e Android.
 
 ## <a name="hardware-requirements-for-the-teams-app-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Requisiti hardware per l'app teams in un ambiente VDI (Virtual Desktop Infrastructure)
 

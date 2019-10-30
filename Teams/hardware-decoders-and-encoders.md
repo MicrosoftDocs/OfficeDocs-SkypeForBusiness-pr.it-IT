@@ -1,5 +1,5 @@
 ---
-title: Suggerimenti per decoder hardware e driver Encoder
+title: Consigli relativi all'hardware per encoder e decoder
 ms.reviewer: ''
 author: LolaJacobsen
 ms.author: lolaj
@@ -16,15 +16,15 @@ description: Elenca le combinazioni di sistema operativo, modello e driver che n
 ms.custom:
 - NewAdminCenter_Update
 appliesto:
-- MicrOperating systemoft Teams
-ms.openlocfilehash: 5210f092993a2ecd52efc56f6953bfab6c2b0d19
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+- Microsoft Teams
+ms.openlocfilehash: b526af86ccf76c5d96694fef655f1e56c33d4d78
+ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570764"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772599"
 ---
-# <a name="hardware-decoder-and-encoder-driver-recommendations"></a>Suggerimenti per decoder hardware e driver Encoder
+# <a name="hardware-decoder-and-encoder-driver-recommendations"></a>Consigli relativi all'hardware per encoder e decoder
 
 Microsoft supporta tutti i decoder e i codificatori, ad eccezione di quelli elencati in questo articolo.
 
@@ -80,7 +80,7 @@ Per i sistemi operativi legacy, solo i seguenti Device_ids sono abilitati per l'
 
 |Sistema operativo           | Model (Device_id) |
 |---------------------------|-------------------|
-|Windows 7/<br>Windows 8/<br>Windows 8,1 | 0x9874, 0x9851, 0x9853, 0x9854, 0x9855, 0x9856, 0x9857, 0x9858, 0x9857, 0x9858, 0x9859, 0x985A, 0x985B, 0x985C, 0x985D, 0x985E, 0x985F, 0x98E4, 0x67DF, 0x67C0, 0x67C2, 0x67C4, 0x67C7, 0x67D0, 0x67EF, 0x67FF, 0x67E0, 0x67E1, 0x67E8, 0x67E9, 0x67EB, 0x67DF, 0x67EF, 0x67FF, 0x6981, 0x6987, 0x6900, 0x694C, 0x694E, 0x694F, 0x6860, 0x6861, 0x6862, 0x6863, 0x6864, 0x6867, 0x6868, 0x6869, 0x686A, 0x686B, 0x686C, 0x686D, 0x686E, 0x687F, 0x69A0, 0x69A1, 0x69A2, 0x69A3, 0x69AF, 0x66A0, 0x66A1, 0x66A2, 0x66AF |
+|Windows 7/<br>Windows 8/<br>Windows 8.1 | 0x9874, 0x9851, 0x9853, 0x9854, 0x9855, 0x9856, 0x9857, 0x9858, 0x9857, 0x9858, 0x9859, 0x985A, 0x985B, 0x985C, 0x985D, 0x985E, 0x985F, 0x98E4, 0x67DF, 0x67C0, 0x67C2, 0x67C4, 0x67C7, 0x67D0, 0x67EF, 0x67FF, 0x67E0, 0x67E1, 0x67E8, 0x67E9, 0x67EB, 0x67DF, 0x67EF, 0x67FF, 0x6981, 0x6987, 0x6900, 0x694C, 0x694E, 0x694F, 0x6860, 0x6861, 0x6862, 0x6863, 0x6864, 0x6867, 0x6868, 0x6869, 0x686A, 0x686B, 0x686C, 0x686D, 0x686E, 0x687F, 0x69A0, 0x69A1, 0x69A2, 0x69A3, 0x69AF, 0x66A0, 0x66A1, 0x66A2, 0x66AF |
 
 Le combinazioni seguenti di sistema operativo, modello e driver non sono abilitate per l'accelerazione hardware a causa di vari problemi di driver.
 

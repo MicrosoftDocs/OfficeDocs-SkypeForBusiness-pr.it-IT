@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 7b22002b-7e6a-4d3f-b600-a733a7e3778a
 description: 'Riepilogo: rivedere questo argomento mentre si prevede di integrare Skype for Business Server con Exchange 2013 o 2016.'
-ms.openlocfilehash: 3b71dd740440aeab37919bb94ef98eaeb83d4d87
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: bed73151b1010dd287c21ea55372e4eb18117665
+ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194932"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772619"
 ---
 # <a name="plan-for-exchange-unified-messaging-integration-in-skype-for-business"></a>Pianificare l'integrazione della messaggistica unificata di Exchange in Skype for business
 
@@ -36,7 +36,6 @@ Per supportare queste funzionalità in una distribuzione di messaggistica unific
 - Microsoft Exchange Server 2010 o Service Pack più recente (solo Skype for Business Server 2015)
 - Microsoft Exchange Server 2013
 - Microsoft Exchange Server 2016
-- Microsoft Exchange Server 2019 (solo Skype for Business Server 2019)
 
 > [!NOTE]
 > La messaggistica unificata di Exchange, come precedentemente nota, non è più disponibile in Skype for Business Server 2019, che usa il sistema telefonico per registrare i messaggi della segreteria telefonica e quindi abbandonare la registrazione nella cassetta postale di Exchange dell'utente. Per altre informazioni, vedere [pianificare il servizio di segreteria cloud](../../../sfbhybrid/hybrid/plan-cloud-voicemail.md) .
@@ -94,7 +93,7 @@ Di seguito sono riportate le linee guida e le procedure consigliate per la distr
 
 - Collaborare con gli amministratori di Exchange per confermare le attività che ognuno di voi eseguirà per garantire un'integrazione corretta e efficace.
 
-- Distribuire i ruoli del server cassette postali di Exchange in ogni foresta di messaggistica unificata di Exchange in cui si vuole abilitare gli utenti per la messaggistica unificata di Exchange. Per informazioni dettagliate sull'installazione dei ruoli di Exchange Server, vedere la documentazione di Microsoft Exchange Server 2013.
+- Distribuire i ruoli del server cassette postali di Exchange in ogni foresta di messaggistica unificata di Exchange in cui si vuole abilitare gli utenti per la messaggistica unificata di Exchange. Per informazioni dettagliate sull'installazione dei ruoli di Exchange Server, vedere la documentazione di Microsoft Exchange Server.
 
     > [!IMPORTANT]
     > Quando è installata la messaggistica unificata di Exchange, è configurata per l'uso di un certificato autofirmato. Il certificato autofirmato non consente a Skype for Business Server e alla messaggistica unificata di Exchange di avere fiducia tra loro, ed è per questo che è necessario richiedere un certificato distinto da un'autorità di certificazione attendibile per entrambi i server.
@@ -129,7 +128,7 @@ Nell'esempio 1 i server di messaggistica unificata di Exchange 1 e 2 sono abilit
 
 Nell'esempio 2, in condizioni operative ordinarie i server Messaggistica unificata di Exchange 1 e 2 sono abilitati nel centro dati Tukwila e i server di messaggistica unificata di Exchange 3 e 4 sono abilitati nel Data Center di Dublino. Tutti e quattro i server sono inclusi nel dial plan URI SIP degli utenti di Tukwila; Tuttavia, i server 3 e 4 sono disabilitati. In caso di interruzione della messaggistica unificata di Exchange in Tukwila, ad esempio, i server di messaggistica unificata di Exchange 1 e 2 devono essere disabilitati e i server di messaggistica unificata di Exchange 3 e 4 devono essere abilitati in modo che il traffico di messaggistica unificata di Exchange venga Tukwila ai server di Dublino.
 
-Per informazioni dettagliate su come abilitare o disabilitare la messaggistica unificata in Exchange 2013, vedere integrare la messaggistica UNIFICAta di [exchange 2013 con Lync Server](https://go.microsoft.com/fwlink/p/?LinkId=265372). Le informazioni fornite si applicano ugualmente a Skype for Business Server.
+Per informazioni dettagliate su come abilitare o disabilitare la messaggistica unificata in Exchange 2013, vedere integrare la messaggistica [unificata di exchange 2013 con Lync Server](https://go.microsoft.com/fwlink/p/?LinkId=265372). Le informazioni fornite si applicano ugualmente a Skype for Business Server.
 
 Per informazioni dettagliate su come abilitare o disabilitare la messaggistica unificata in Microsoft Exchange Server 2010, vedere:
 

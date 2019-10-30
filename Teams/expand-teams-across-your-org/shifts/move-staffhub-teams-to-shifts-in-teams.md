@@ -2,7 +2,7 @@
 title: Spostare i team di StaffHub in turni in Microsoft Teams
 author: LanaChin
 ms.author: v-lanac
-ms.reviewer: lisawu
+ms.reviewer: lisawu, gumariam
 manager: serdars
 ms.topic: article
 audience: admin
@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 03131bd9a89ae5f54fc8318b004385de3e32e26e
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 9468dea64c464b3bfc2f0cec7c53f46e2f388c1f
+ms.sourcegitcommit: 7d5dd650480ca2e55c24ce30408a5058067f6932
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569683"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37775085"
 ---
 # <a name="move-your-microsoft-staffhub-teams-to-shifts-in-microsoft-teams"></a>Spostare i team di Microsoft StaffHub in turni in Microsoft Teams
 
@@ -83,7 +83,7 @@ Prima di trasferire un team di StaffHub in teams, verificare che:
 
 Se questi prerequisiti non sono soddisfatti, la richiesta di trasferimento avrà esito negativo.
 
-### <a name="assign-teams-licenses"></a>Assegnare licenze Teams
+### <a name="assign-teams-licenses"></a>Assegnare licenze di Teams
 
 Ogni utente deve avere una licenza Microsoft 365 o Office 365 attiva da [un piano idoneo](microsoft-staffhub-to-be-retired.md#which-plans-is-shifts-available-in) e deve essere assegnata una licenza di teams. L'assegnazione di una licenza di teams agli utenti consente loro di accedere ai team.
 
@@ -109,17 +109,29 @@ Questi utenti hanno account inattivi e mostrano uno stato utente di sconosciuto,
 
 #### <a name="get-a-list-of-all-inactive-accounts-on-staffhub-teams"></a>Ottenere un elenco di tutti gli account inattivi nei team di StaffHub
 
-Eseguire la procedura seguente per ottenere un elenco di tutti gli account inattivi nei team di StaffHub ed esportare l'elenco in un file CSV.
+Eseguire la serie di comandi seguente per ottenere un elenco di tutti gli account inattivi nei team di StaffHub ed esportare l'elenco in un file CSV. Ogni comando deve essere eseguito separatamente.
 
 ```
 $InvitedUsersObject = @()
-$StaffHubTeams = Get-StaffHubTeamsForTenant $StaffHubTeams[0] = $StaffHubTeams[0] | Where-Object { $_.ManagedBy -eq 'StaffHub' }
-foreach($team in $StaffHubTeams[0]) { write-host $team.name $StaffHubUsers = Get-StaffHubMember -TeamId $team.Id | where {$_.State -eq "Invited"}
-foreach($StaffHubUser in $StaffHubUsers) {
-        $InvitedUsersObject  += New-Object PsObject -Property @{         "TeamID"="$($team.Id)"         "TeamName"="$($team.name)"         "MemberID"="$($StaffHubUser.Id)" }
+
+$StaffHubTeams = Get-StaffHubTeamsForTenant
+
+$StaffHubTeams[0] = $StaffHubTeams[0] | Where-Object { $_.ManagedBy -eq 'StaffHub' }
+
+foreach($team in $StaffHubTeams[0])
+{ 
+    Write-host $team.name
+    $StaffHubUsers = Get-StaffHubMember -TeamId $team.Id | where {$_.State -eq "Invited"}
+    foreach($StaffHubUser in $StaffHubUsers) {
+        $InvitedUsersObject  += New-Object PsObject -Property @{
+          "TeamID"="$($team.Id)"
+          "TeamName"="$($team.name)"
+          "MemberID"="$($StaffHubUser.Id)"
+            }
+    }
 }
-}
-$InvitedUsersObject | SELECT * $InvitedUsersObject | SELECT * | export-csv InvitedUsers.csv -NoTypeInformation  
+
+$InvitedUsersObject | SELECT * | export-csv InvitedUsers.csv -NoTypeInformation  
 ```
 
 #### <a name="link-the-account"></a>Collegare l'account
@@ -255,6 +267,7 @@ Eseguire la procedura seguente per ottenere un elenco di tutti i team di StaffHu
 
 ```
 $StaffHubTeams = Get-StaffHubTeamsForTenant
+
 $StaffHubTeams[0] | Where-Object { $_.ManagedBy -eq ‘StaffHub’ }
 ```
 
@@ -295,6 +308,7 @@ Dopo aver creato il file CSV, eseguire la procedura seguente per trasferire i te
 
 ```
 $StaffHubTeams = Import-Csv .\teams.csv
+
 foreach ($team in $StaffHubTeams[0]) {Move-StaffHubTeam -TeamId $team.Id}
 ```
 
@@ -322,7 +336,9 @@ Eseguire la procedura seguente per ottenere altre informazioni sugli errori di "
 
 ```
 Move-StaffHubTeam -TeamId <TeamId>
+
 $res = Get-TeamMigrationJobStatus -JobId <JobId>
+
 $res.Status
 ```
 
@@ -356,6 +372,6 @@ Eseguire il comando seguente per aggiungere la cartella generale a SharePoint e 
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Come implementare Microsoft Teams](../../How-to-roll-out-teams.md)
-- [Microsoft StaffHub per essere ritirato](microsoft-staffhub-to-be-retired.md)
+- [Ritiro di Microsoft StaffHub](microsoft-staffhub-to-be-retired.md)
 - [Gestire l'app turni per l'organizzazione in Microsoft Teams](manage-the-shifts-app-for-your-organization-in-teams.md)
 - [Riferimento a PowerShell di StaffHub](https://docs.microsoft.com/powershell/module/staffhub/?view=staffhub-ps)

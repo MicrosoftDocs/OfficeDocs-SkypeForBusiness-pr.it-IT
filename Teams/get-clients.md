@@ -17,17 +17,17 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1e8a77a6d03735769e61f679126b3a5aac7f70e3
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.openlocfilehash: b87737aae65493652f3b87de6bbd1369d6982526
+ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37569615"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772360"
 ---
 <a name="get-clients-for-microsoft-teams"></a>Ottenere client per Microsoft Teams 
 ===========================
 
-Microsoft teams include client disponibili per desktop (Windows e Mac), Web e dispositivi mobili (Android e iOS). Questi client richiedono tutti una connessione Internet attiva e non supportano una modalità offline.
+Microsoft teams include client disponibili per il desktop (Windows, Mac e Linux), Web e dispositivi mobili (Android e iOS). Questi client richiedono tutti una connessione Internet attiva e non supportano una modalità offline.
 
 > [!NOTE]
 > Efficace il 29 novembre 2018 non sarà più possibile usare l'app Microsoft teams per Windows 10 S (Preview), disponibile presso Microsoft Store. È ora possibile scaricare e installare il client desktop di Teams nei dispositivi in cui è in uso la modalità Windows 10 S. Per scaricare il client desktop, vai a [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/?linkid=855754). Le build MSI del client desktop teams non sono ancora disponibili per i dispositivi che usano la modalità Windows 10 S.
@@ -40,13 +40,13 @@ Microsoft teams include client disponibili per desktop (Windows e Mac), Web e di
 > [!Tip]
 > Vedere la sessione seguente per informazioni sui vantaggi del client desktop di Windows, su come pianificare la procedura e su come distribuirla: [Team client desktop di Windows](https://aka.ms/teams-clients)
 
-Il client desktop Microsoft teams è un'applicazione autonoma ed è [disponibile anche in Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/teams-install). Teams è disponibile sia per Windows (7 +), sia per le versioni a 32 bit che a 64 bit e macOS (10.10 +). In Windows i team richiedono .NET Framework 4,5 o versioni successive; il programma di installazione di teams offrirà l'installazione per se non è disponibile. 
+Il client desktop Microsoft teams è un'applicazione autonoma ed è [disponibile anche in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/teams-install). Teams è disponibile per Windows (7 +), entrambe le versioni di 32 bit e 64 bit, macOS (10.10 +) e Linux (pacchetto `.deb`Debian, Red Hat Package Manager `.rpm`). In Windows i team richiedono .NET Framework 4,5 o versioni successive; il programma di installazione di teams offrirà l'installazione per se non è disponibile. Su Linux, i gestori di pacchetti come apt e yum cercheranno di installare qualsiasi requisito. Tuttavia, se non è così, dovrai installare i requisiti segnalati prima di installare teams su Linux.
 
 I client desktop supportano il supporto delle comunicazioni in tempo reale (audio, video e condivisione di contenuti) per le riunioni del team, le chiamate di gruppo e quelle private uno-a-uno.
 
 I client desktop possono essere scaricati e installati dagli utenti finali direttamente [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/?linkid=855754) da se hanno le autorizzazioni locali appropriate (i diritti di amministratore non sono necessari per installare il client teams su un PC, ma sono necessari in un Mac).
 
-Gli amministratori IT possono scegliere il metodo preferito per distribuire i file di installazione nei computer dell'organizzazione, ad esempio System Center Configuration Manager (Windows) o grafp Pro (macOS). Per ottenere il pacchetto MSI per la distribuzione di Windows, vedere [installare Microsoft teams con MSI](msi-deployment.md).  
+Gli amministratori IT possono scegliere il metodo preferito per distribuire i file di installazione nei computer dell'organizzazione. Alcuni esempi includono System Center Configuration Manager (Windows) o grafp Pro (macOS). Per ottenere il pacchetto MSI per la distribuzione di Windows, vedere [installare Microsoft teams con MSI](msi-deployment.md).  
 
 > [!NOTE]
 > La distribuzione del client tramite questi meccanismi è solo per l'installazione iniziale dei client di Microsoft Team e non per gli aggiornamenti futuri.
@@ -99,6 +99,30 @@ Gli amministratori IT possono usare la distribuzione gestita di teams per distri
 
 > [!NOTE]
 > Se si verificano problemi durante l'installazione del PKG, avvisaci. Nella sezione **feedback** alla fine di questo articolo fare clic su **feedback prodotto**.
+
+### <a name="linux"></a>Linux
+
+Gli utenti di Linux possono installare teams `.deb` usando un pacchetto Debian o un pacchetto `.rpm`Red Hat. 
+
+[!NOTE] Il client teams on Linux è disponibile in anteprima limitata. Inviare bug usando `Report a Problem` dall'interno del client. Per i problemi noti, vedere [problemi noti](Known-issues.md).
+
+#### <a name="install-teams-using-deb-package"></a>Installare teams usando il pacchetto DEB
+
+1. Scaricare il pacchetto da https://aka.ms/getteams.
+2. Installare utilizzando una delle opzioni seguenti:  
+    - Aprire il pacchetto usando lo strumento software Ubuntu e passare attraverso il processo di installazione dell'app Linux self-guided.
+    - Oppure, se si ama il terminale, digitare:`sudo apt install **teams download file**`
+
+È possibile avviare teams tramite le attività o tramite terminale `Teams`digitando. 
+
+#### <a name="install-teams-using-rpm-package"></a>Installare teams usando il pacchetto RPM
+
+1. Scaricare il pacchetto da https://aka.ms/getteams.
+2. Installare utilizzando una delle opzioni seguenti:
+    - Aprire il pacchetto usando lo strumento di gestione dei pacchetti Red Hat e passare attraverso il processo di installazione dell'app Linux self-guided.
+    - Oppure, se si ama il terminale, digitare:`sudo yum install **teams download file**`
+
+È possibile avviare teams tramite le attività o tramite terminale `Teams`digitando.
 
 <a name="web-client"></a>Client Web 
 ----------

@@ -16,14 +16,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 97b4ec0c46131c1bfae5ca078e59a366a1b64b51
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: f4716eac44880ca149fb757d2f16ebfe80ccab65
+ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236104"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772320"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica] (media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
+![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
 Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggiornamento, un'attività completata in parallelo con la fase di preparazione degli utenti. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
 
@@ -152,7 +152,7 @@ Usare la tabella seguente per acquisire i dettagli dei client e degli endpoint i
 
 > | Domanda | Answer | Commenti |
 > |---|---|---|
-> | Quali sistemi operativi desktop sono utilizzati dagli utenti? | <input type="checkbox">Windows XP <br/> <input type="checkbox">Windows 7 <br/> <input type="checkbox">Windows 8 <br/> <input type="checkbox">Windows 10 <br/> <input type="checkbox">Mac (specificare la versione nella colonna Comments). <br/> <input type="checkbox">Altro (prendere nota dei dettagli nella colonna Comments). | |
+> | Quali sistemi operativi desktop sono utilizzati dagli utenti? | <input type="checkbox">Windows XP <br/> <input type="checkbox">Windows 7 <br/> <input type="checkbox">Windows 8 <br/> <input type="checkbox">Windows 10 <br/> <input type="checkbox">Mac (specificare la versione nella colonna Comments). <br/> <input type="checkbox">Linux (specificare la distribuzione nella colonna Comments) <br/> <input type="checkbox">Altro (prendere nota dei dettagli nella colonna Comments). | |
 > | Quale versione di Microsoft Office viene distribuita <br>a questi dispositivi? | <input type="checkbox">Office 2003 <br/> <input type="checkbox">Office 2007 <br/> <input type="checkbox">Office 2010 <br/> <input type="checkbox">Office 2013 <br/> <input type="checkbox">Office 2016 <br/> <input type="checkbox">Office per Mac 2011 <br/> <input type="checkbox">Office per Mac 2016 <br/> <input type="checkbox">Altro (prendere nota dei dettagli nella colonna Comments). | |
 > | Quale tecnologia di distribuzione di Office è in uso <br>nell'organizzazione? | <input type="checkbox">MSI <br/> <input type="checkbox">A portata di clic | |
 > | Quali sono i dispositivi mobili consentiti e supportati <br>piattaforme in uso? <br/>Selezionare tutto ciò che si applica. | <input type="checkbox">Windows <br/> <input type="checkbox">Mobile <br/> <input type="checkbox">iOS <br/> <input type="checkbox">Android <br/> <input type="checkbox">Altro (prendere nota dei dettagli nella colonna Comments). | |
@@ -168,7 +168,7 @@ Usare la tabella seguente per acquisire i dettagli degli aspetti operativi dell'
 > | Qual è il modello di operazioni per il server Lync <br>Skype for Business Server o distribuzione di Office 365 <br>oggi? | | |
 > | È possibile delineare la disposizione di supporto corrente per <br>Lync Server, Skype for Business Server o Office 365? | | |
 > | Se si sta distribuendo in più paesi o aree geografiche, <br>ogni paese/area geografica ha il proprio IT/telefonia <br>il personale con cui collaborare o verrà gestito in modo centralizzato? | <input type="checkbox">Operazioni e supporto regionali <br/> <input type="checkbox">Operazioni e supporto centralizzato | |
-> | Si segue la metodologia di [qualità delle chiamate](quality-of-experience-review-guide.md)? | <input type="checkbox">Sì <br/> <input type="checkbox">Non | |
+> | Si segue la [metodologia di qualità delle chiamate](quality-of-experience-review-guide.md)? | <input type="checkbox">Sì <br/> <input type="checkbox">Non | |
 > | È stato assegnato un singolo utente o un team al <br>Ruolo di campione di qualità per la piattaforma di collaborazione <br>in uso? | <input type="checkbox">Sì <br/> <input type="checkbox">Non ||
 > | Come si monitora il server Lync, Skype for <br>Server aziendale o distribuzione di Office 365? | | |
 > | Si verificano problemi di qualità delle chiamate? | <input type="checkbox">Sì<br/> <input type="checkbox">Non | |

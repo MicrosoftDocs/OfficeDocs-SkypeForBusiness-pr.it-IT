@@ -3,7 +3,6 @@ title: Barriere informative in Microsoft Teams
 author: MicrosoftHeidi
 ms.author: heidip
 manager: serdars
-ms.date: 07/08/2019
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -14,12 +13,12 @@ ms.reviewer: vikramju
 description: Informazioni sulle barriere informative e sul loro impatto sui team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bd9ac22a45d0e76e8f2d31c3d11be726148b3863
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 2b38a21e9e18bb94809a8c42fba33ab273cfb004
+ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572070"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772589"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -65,6 +64,7 @@ I criteri di barriera delle informazioni vengono controllati quando si verifican
 - **Un utente è invitato a partecipare a una riunione** : quando un utente è invitato a partecipare a una riunione, i criteri dell'utente vengono valutati in base ai criteri di altri membri del team e, se c'è una violazione, l'utente non sarà autorizzato a partecipare alla riunione.
 - **Una schermata viene condivisa tra due o più utenti** : ogni volta che viene condivisa una schermata tra due o più utenti, la condivisione dello schermo deve essere valutata per verificare che non violi i criteri di barriera delle informazioni di altri utenti. Se si violano i criteri di barriera delle informazioni, la condivisione dello schermo non sarà consentita.
 - **Un utente inserisce una chiamata telefonica (VoIP) in teams** : ogni volta che viene avviata una chiamata vocale da un utente a un altro utente o gruppo di utenti, la chiamata viene valutata per assicurarsi che non violi i criteri di barriera delle informazioni di altri membri del team. In caso di violazione, la chiamata vocale è bloccata.
+- **Utenti guest in teams** -i criteri barriera delle informazioni si applicano agli utenti guest anche in teams. Se gli utenti Guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [gestire l'accesso guest nei gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#can-i-make-guest-objects-visible-in-the-global-address-list). Una volta individuabili gli utenti guest, puoi [definire i criteri di barriera delle informazioni](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
 
 ## <a name="what-happens-to-existing-chat-threads-when-a-policy-is-changed"></a>Cosa succede ai thread di chat esistenti quando viene modificato un criterio?
 
@@ -111,10 +111,10 @@ Gli ostacoli alle informazioni stanno per essere implementati e sono inclusi neg
 
 Per altri dettagli, inclusi i piani e i prezzi, Vedi soluzioni per la [conformità](https://products.office.com/business/security-and-compliance/compliance-solutions?rtc=1).
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Per ulteriori informazioni sulle barriere informative, vedere [barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers).
 
 - Per configurare i criteri di barriera delle informazioni, vedere [definire i criteri per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies)
 
-- Per modificare o rimuovere i criteri di barriera delle informazioni, vedere [modificare o rimuovere i criteri di barriera delle informazioni](https://docs.microsoft.com/office365/securitycompliance/information-barriers-edit-segments-policies.md)
+- Per modificare o rimuovere i criteri di barriera delle informazioni, vedere [modificare o rimuovere i criteri di barriera delle informazioni](https://docs.microsoft.com/microsoft-365/compliance/information-barriers-edit-segments-policies.md)

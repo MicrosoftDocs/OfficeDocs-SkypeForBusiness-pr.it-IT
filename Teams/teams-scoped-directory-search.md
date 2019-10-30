@@ -1,5 +1,5 @@
 ---
-title: Usare la ricerca di directory con ambito Microsoft Teams
+title: Usare la ricerca nella directory con ambito di Microsoft Teams
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
@@ -17,14 +17,14 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 094d83f8f6b21fc5e820235b91fa14820f6b407e
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: fca0feadf29ce83a8a6867f0e00b06fc0426a203
+ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570114"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772336"
 ---
-# <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca di directory con ambito Microsoft Teams
+# <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca nella directory con ambito di Microsoft Teams
 
 La ricerca di directory con ambito Microsoft teams consente alle organizzazioni di creare confini virtuali che controllano in che modo gli utenti possono trovare e comunicare con altri utenti all'interno dell'organizzazione. 
 
@@ -56,4 +56,5 @@ Per informazioni su come usare i criteri Rubrica, leggere i [criteri di barriera
     ![Ricerca di directory con ambito nell'interfaccia di amministrazione di Microsoft Teams](media/teams-scoped-directory-search-image1.png)
 
 
-
+> [!IMPORTANT]
+> Questa modifica può richiedere fino a 24 ore per la replica.

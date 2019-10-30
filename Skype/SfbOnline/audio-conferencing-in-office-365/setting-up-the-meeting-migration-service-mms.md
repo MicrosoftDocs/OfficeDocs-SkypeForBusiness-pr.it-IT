@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: Il servizio di migrazione delle riunioni (MMS) è un servizio che viene eseguito in background e aggiorna automaticamente le riunioni di Skype for business e Microsoft teams per gli utenti. MMS è progettato per eliminare la necessità per gli utenti di eseguire lo strumento di migrazione delle riunioni per aggiornare le riunioni di Skype for business e Microsoft teams.
-ms.openlocfilehash: cd7796b600486b672318ecbd67b50ee6d68f43e4
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3f643f20937fd13b0d9576640487da30f17dd7bf
+ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34306291"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "37772280"
 ---
 # <a name="using-the-meeting-migration-service-mms"></a>Uso del servizio di migrazione delle riunioni (MMS)
 
@@ -94,11 +94,11 @@ In entrambi i casi, se all'utente è stata assegnata una licenza di audioconfere
 Nei casi seguenti, MMS aggiornerà le riunioni esistenti di Skype for business e Microsoft teams per aggiungere, rimuovere o modificare le coordinate di accesso esterno:
 
 - Quando si assegna o si rimuove una licenza di servizio di audioconferenza Microsoft per un utente e tale utente non è abilitato per un provider di servizi di audioconferenza di terze parti.
-- Quando si modifica il provider di servizi di audioconferenza di un utente da qualsiasi altro provider in Microsoft, a condizione che all'utente sia assegnata una licenza per Microsoft Audio Conferencing. Per altre informazioni, vedere [assegnare Microsoft come provider di servizi di audioconferenza](https://docs.microsoft.com/en-us/skypeforbusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider). Si noti inoltre che il supporto per i provider di servizi di audioconferenza di terze parti [ACP] è programmato per la fine del ciclo di vita del 1 ° aprile 2019, come [annunciato in precedenza](https://docs.microsoft.com/skypeforbusiness/legal-and-regulatory/end-of-integration-with-3rd-party-providers).
+- Quando si modifica il provider di servizi di audioconferenza di un utente da qualsiasi altro provider in Microsoft, a condizione che all'utente sia assegnata una licenza per Microsoft Audio Conferencing. Per altre informazioni, vedere [assegnare Microsoft come provider di servizi di audioconferenza](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider). Si noti inoltre che il supporto per i provider di servizi di audioconferenza di terze parti [ACP] è programmato per la fine del ciclo di vita del 1 ° aprile 2019, come [annunciato in precedenza](https://docs.microsoft.com/skypeforbusiness/legal-and-regulatory/end-of-integration-with-3rd-party-providers).
 - Quando si abilitano o si disabilitano i servizi di audioconferenza per un utente.
 - Quando si cambia o si reimposta l'ID conferenza per un utente configurato per l'utilizzo di riunioni pubbliche.
 - Quando si trasferisce l'utente in un nuovo Bridge di audioconferenza.
-- Quando un numero di telefono da un Bridge di audioconferenza non è assegnato. Si tratta di uno scenario complesso che richiede passaggi aggiuntivi. Per altre informazioni, vedere [modificare i numeri di telefono nel Bridge di audioconferenza](https://docs.microsoft.com/en-us/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge).
+- Quando un numero di telefono da un Bridge di audioconferenza non è assegnato. Si tratta di uno scenario complesso che richiede passaggi aggiuntivi. Per altre informazioni, vedere [modificare i numeri di telefono nel Bridge di audioconferenza](https://docs.microsoft.com/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge).
 
 Non tutte le modifiche apportate alle impostazioni di audioconferenza di un utente attivano MMS. In particolare, le seguenti due modifiche non faranno aggiornare le riunioni dal servizio MMS:
 
@@ -174,7 +174,7 @@ Se vengono visualizzate eventuali migrazioni non riuscite, eseguire le operazion
 1. Determinare quali utenti sono interessati. Eseguire il seguente comando per ottenere l';elenco degli utenti interessati e l';errore specifico che è stato segnalato:
 
     ```
-    Get-CsMeetingMigrationStatus| Where {$_.State -eq "Failed"}| Format-Table Identity, LastMessage
+    Get-CsMeetingMigrationStatus| Where {$_.State -eq "Failed"}| Format-Table UserPrincipalName, LastMessage
     ```
 2. Per ogni utente interessato, Esegui lo strumento di migrazione delle riunioni per eseguire manualmente la migrazione delle riunioni.
 
@@ -212,4 +212,4 @@ Set-CsOnlineDialInConferencingTenantSettings  -AutomaticallyMigrateUserMeetings 
 
 [Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
 
-[Trasferire utenti tra locale e cloud](https://docs.microsoft.com/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud)
+[Spostare utenti tra locale e cloud](https://docs.microsoft.com/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud)
