@@ -17,12 +17,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b87737aae65493652f3b87de6bbd1369d6982526
-ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
+ms.openlocfilehash: bfc56f9f7b02acda61b0342f28b14da5379bea31
+ms.sourcegitcommit: ced9b584eeceff7ca0109cba5823c7c3ddbd092e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772360"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37886429"
 ---
 <a name="get-clients-for-microsoft-teams"></a>Ottenere client per Microsoft Teams 
 ===========================
@@ -104,11 +104,12 @@ Gli amministratori IT possono usare la distribuzione gestita di teams per distri
 
 Gli utenti di Linux possono installare teams `.deb` usando un pacchetto Debian o un pacchetto `.rpm`Red Hat. 
 
-[!NOTE] Il client teams on Linux è disponibile in anteprima limitata. Inviare bug usando `Report a Problem` dall'interno del client. Per i problemi noti, vedere [problemi noti](Known-issues.md).
+> [!NOTE] 
+> Il client teams on Linux è disponibile in anteprima limitata. Inviare bug usando `Report a Problem` dall'interno del client. Per i problemi noti, vedere [problemi noti](Known-issues.md).
 
 #### <a name="install-teams-using-deb-package"></a>Installare teams usando il pacchetto DEB
 
-1. Scaricare il pacchetto da https://aka.ms/getteams.
+1. Scaricare il pacchetto da https://aka.ms/getteams. Il client Linux è in anteprima limitata e verrà avviato a breve. Se il client Linux non viene visualizzato nella pagina download, non è ancora stato avviato.
 2. Installare utilizzando una delle opzioni seguenti:  
     - Aprire il pacchetto usando lo strumento software Ubuntu e passare attraverso il processo di installazione dell'app Linux self-guided.
     - Oppure, se si ama il terminale, digitare:`sudo apt install **teams download file**`
@@ -117,7 +118,7 @@ Gli utenti di Linux possono installare teams `.deb` usando un pacchetto Debian o
 
 #### <a name="install-teams-using-rpm-package"></a>Installare teams usando il pacchetto RPM
 
-1. Scaricare il pacchetto da https://aka.ms/getteams.
+1. Scaricare il pacchetto da https://aka.ms/getteams. Il client Linux è in anteprima limitata e verrà avviato a breve. Se il client Linux non viene visualizzato nella pagina download, non è ancora stato avviato.
 2. Installare utilizzando una delle opzioni seguenti:
     - Aprire il pacchetto usando lo strumento di gestione dei pacchetti Red Hat e passare attraverso il processo di installazione dell'app Linux self-guided.
     - Oppure, se si ama il terminale, digitare:`sudo yum install **teams download file**`

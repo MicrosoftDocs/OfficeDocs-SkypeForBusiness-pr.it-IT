@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cef0a06ceb37cdfff3e9e4952f10397e7ee9b698
-ms.sourcegitcommit: 876b576db1fee38c09ab3a0092116212e498eda7
+ms.openlocfilehash: dc54251d228a4b496480759d90d850cf000f5aeb
+ms.sourcegitcommit: 2064c94eae82a5453674d38f0b28dcd6dc5c370e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37733121"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37885540"
 ---
 # <a name="upgrade-from-skype-for-business-to-teams-mdash-for-it-administrators"></a>Eseguire l'aggiornamento da Skype for business &mdash; a teams per gli amministratori IT
 
@@ -227,6 +227,8 @@ Quando si assegna la modalità TeamsOnly a livello di tenant, la migrazione dell
 - Se si hanno utenti con account Skype for business in locale, non è consigliabile assegnare la modalità TeamsOnly a livello di tenant, a meno che non si assegni esplicitamente un'altra modalità a tutti gli utenti con account Skype for business locale. 
 
 - Devi assicurarti che gli utenti siano sincronizzati correttamente in Azure AD con gli attributi Skype for business corretti. Questi attributi sono tutti prefissi con "msRTCSIP-". Se gli utenti non vengono sincronizzati correttamente con Azure AD, gli strumenti di gestione in teams non saranno in grado di gestire questi utenti. Per altre informazioni, vedere [configurare Azure ad Connect per Teams e Skype for business](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-azure-ad-connect).
+
+- Per creare un nuovo utente di TeamsOnly o Skype for business online in un'organizzazione ibrida, *è prima di tutto necessario abilitare l'utente in Skype for Business Server locale*e quindi trasferire l'utente dal locale al cloud usando Move-CsUser.  La creazione dell'utente in locale garantisce innanzitutto che tutti gli altri utenti di Skype for business rimanenti saranno in grado di instradare l'utente appena creato. Una volta che tutti gli utenti sono stati spostati online, non è più necessario abilitare prima gli utenti in locale.
 
 - Quando un utente viene spostato dal locale al cloud, le riunioni organizzate dall'utente vengono migrate in Skype for business online o in teams, a seconda che venga specificato o meno l'opzione-MoveToTeams.
 

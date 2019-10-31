@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare un sistema telefonico (cloud PBX) per l'azienda. "
-ms.openlocfilehash: 517083fb4767b54cb79f618875be7572a19faee1
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 397c8b4b42151a726dec25885ed8924cddb9f181
+ms.sourcegitcommit: 2064c94eae82a5453674d38f0b28dcd6dc5c370e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37565224"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37885520"
 ---
 # <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa offre il Sistema telefonico in Office 365
 
@@ -51,7 +51,7 @@ Usando il sistema telefonico, gli utenti di Skype for business otterranno le car
 |Chiamata in attesa/recupero  <br/> | Usare quando si verificano più chiamate contemporaneamente. Quando si risponde alla successiva chiamata in ingresso o si effettua una chiamata in uscita, la chiamata corrente si blocca automaticamente. <br/> |
 |[Trasferire una chiamata Skype for business](https://support.office.com/article/f9f312a3-ccc9-4215-86e8-8928b2df1f97) <br/> |Trasferisce le chiamate a un'altra persona. In alternativa, se è necessario uscire dall'ufficio ma si vuole continuare la conversazione, è possibile trasferire le chiamate dal PC o dal telefono IP al cellulare o al tablet.  <br/> |
 |ID chiamante  <br/> |Le chiamate dall'interno della società visualizzano un ID chiamante dettagliato che estrae le informazioni dalla directory aziendale, mostrando un'immagine e un titolo di lavoro invece di un solo numero di telefono. Per le chiamate da numeri di telefono esterni, viene visualizzato l'ID chiamante fornito dal provider di servizi telefonici. Se i numeri di telefono esterni sono numeri secondari nella directory aziendale, verranno visualizzate le informazioni della directory aziendale.  <br/> |
-|[Creare una coda di chiamata cloud](/skypeforbusiness/what-is-phone-system-in-office-365/create-a-phone-system-call-queue) <br/> |Le code delle chiamate Cloud includono i messaggi di saluto usati quando qualcuno chiama un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano sono ascolto della musica in attesa.  <br/> |
+|[Creare una coda delle chiamate nel cloud](/skypeforbusiness/what-is-phone-system-in-office-365/create-a-phone-system-call-queue) <br/> |Le code delle chiamate Cloud includono i messaggi di saluto usati quando qualcuno chiama un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano sono ascolto della musica in attesa.  <br/> |
 |[Spiegami quando cambia lo stato di un utente](https://support.office.com/article/042a13d8-c815-4101-8b41-1e141b6bf6e9) <br/> | Questa funzionalità consente di contrassegnare le persone che attualmente non sono disponibili e di ricevere una notifica quando la loro presenza cambia e si è pronti a ricevere chiamate telefoniche. <br/> |
 |Client per PC, Mac e dispositivi mobili  <br/> | In questo modo puoi chiamare le caratteristiche dei dispositivi, da tablet e telefoni cellulari a PC e telefoni IP desktop. <br/> |
 |Commutazione di dispositivo  <br/> |Consente di riprodurre una chiamata o una riunione in un altro dispositivo.  <br/> |
@@ -64,7 +64,7 @@ Usando il sistema telefonico, gli utenti di Skype for business otterranno le car
 |[Impostare le opzioni di inoltro di chiamata in Skype for business](https://support.office.com/article/1ec2e7fb-471c-4c35-bc90-a35991b3f532) <br/> |Invia le chiamate al team immediatamente o dopo un determinato periodo di tempo.  <br/> |
 |[Effettuare e ricevere videochiamate con Skype for Business](https://support.office.com/article/abf62493-670f-4b0d-b2cf-fe03b49caf42) <br/> | Puoi vedere il nome e il flusso video del relatore in una piccola finestra mobile, quindi sei sempre pronto a rispondere a qualsiasi domanda. <br/> |
 |[Controllare la segreteria telefonica e le opzioni di Skype for business](https://support.office.com/article/2deea7f8-831f-4e85-a0d4-b34da55945a8) <br/> |Ecco come funziona cloud Voicemail: quando un utente riceve un messaggio vocale, viene recapitato alla propria cassetta postale come messaggio di posta elettronica con la segreteria telefonica come allegato. Possono anche ascoltare i loro messaggi tramite il telefono desktop certificato Skype, tutte le applicazioni Skype for business o Lync per Mac 2011.  <br/> La segreteria telefonica Cloud include il messaggio di saluto personalizzato, l'indicatore di attesa e la risposta tramite chiamata. È possibile avere tutti i messaggi vocali depositati nelle cassette postali e resi disponibili tramite Skype for business nel PC, nel dispositivo mobile e nel telefono IP.  <br/> |
-|Musica in attesa | Disponibile nel 2019 settembre, il sistema telefonico risuonerà la musica predefinita definita dal servizio quando una chiamata esterna dalla rete PSTN (Public Switched Telephone Network) viene inserita in attesa.  Questa funzionalità è compatibile con chiamate da PSTN a team da uno a uno oltre alle chiamate effettuate in una coda di chiamata. Questa caratteristica offre una parità di notifica in attesa con altre piattaforme. (Tutte le altre piattaforme forniscono un segnale visivo quando un utente viene messo in attesa, ma il chiamante PSTN non ha alcun modo di saperlo).  Nella prima versione, questa caratteristica non è configurabile dall'amministratore.| 
+|Musica in attesa | Disponibile nel 2019 settembre, il sistema telefonico risuonerà la musica predefinita definita dal servizio quando una chiamata esterna dalla rete PSTN (Public Switched Telephone Network) viene inserita in attesa.  Questa funzionalità è compatibile con chiamate da PSTN a team da uno a uno oltre alle chiamate effettuate in una coda di chiamata. Questa caratteristica offre una parità di notifica in attesa con altre piattaforme. (Tutte le altre piattaforme forniscono un segnale visivo quando un utente viene messo in attesa, ma il chiamante PSTN non ha alcun modo di saperlo).  Nella prima versione, questa caratteristica non è configurabile dall'amministratore. Anche la musica di blocco non è supportata nel trasferimento consultivo di una chiamata PSTN.| 
 |Ricerca di numeri inversa | Disponibile in settembre 2019, il sistema telefonico visualizzerà ID denominato per un numero di telefono esterno se il numero è associato a un utente in AAD. Se il numero di telefono non è incluso in AAD, il nome visualizzato di Telco verrà visualizzato se disponibile.  |
 
    

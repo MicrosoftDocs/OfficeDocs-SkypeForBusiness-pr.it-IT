@@ -16,16 +16,14 @@ f1keywords: ms.teamsadmincenter.policypackages.overview
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams.
-ms.openlocfilehash: 1caa1606f330b92507342140efbfc144def8c547
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: fb01a7e15d43c18e115ecfbd0edb73b4808c2a59
+ms.sourcegitcommit: 2064c94eae82a5453674d38f0b28dcd6dc5c370e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571946"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37885510"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
-
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 Un pacchetto di criteri in Microsoft teams è una raccolta di criteri predefiniti e di impostazioni dei criteri che è possibile assegnare agli utenti che hanno ruoli simili nell'organizzazione. I pacchetti di criteri sono stati creati per semplificare, snellire e garantire la coerenza della gestione dei criteri per i gruppi di utenti nell'organizzazione.  
 

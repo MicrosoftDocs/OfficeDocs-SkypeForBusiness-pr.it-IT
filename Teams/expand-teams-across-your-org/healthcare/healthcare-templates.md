@@ -1,5 +1,5 @@
 ---
-title: Introduzione ai modelli di team per le organizzazioni sanitarie
+title: Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario
 author: jambirk
 ms.author: jambirk
 manager: serdars
@@ -14,15 +14,15 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: Introduzione ai modelli di team per le organizzazioni sanitarie
-ms.openlocfilehash: df917c3a6f1cbf20c9226dd58e4706c4c0e3bc2c
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+description: Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario
+ms.openlocfilehash: e19c0403f259f400e784faf928738d36df66d618
+ms.sourcegitcommit: ced9b584eeceff7ca0109cba5823c7c3ddbd092e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570348"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "37886439"
 ---
-# <a name="get-started-with-teams-templates-for-healthcare-organizations"></a>Introduzione ai modelli di team per le organizzazioni sanitarie
+# <a name="get-started-with-teams-templates-for-healthcare-organizations"></a>Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario
 
 I modelli di Microsoft teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
@@ -48,6 +48,17 @@ Il modello Hospital è pensato per la comunicazione e la collaborazione tra più
 |Tipo di modello di base |baseTemplateId |Canali del modello previsto|
 |:--- |:---|:---|
 |Healthcare-Hospital | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareHospital')`   | Annunci\* <br> Conformità\* <br> Custodia <br> Risorse umane <br> Farmacia |
+| | |  |
+
+\*Preferiti automaticamente 
+
+## <a name="care-coordination-template"></a>Modello di coordinamento cura
+
+Il modello di coordinamento delle cure ha lo scopo di facilitare la comunicazione all'interno di un team di assistenza paziente, con alcuni esempi tra cui team interdisciplinari e multidisciplinari. L'applicazione per i pazienti proprietari è precaricata in questo modello e si trova nel canale generale. Con l'applicazione patients, è possibile curare elenchi di pazienti e i relativi valori associati e elementi vitali, rendendoli utili per l'arrotondamento e gli scenari di gestione dei pazienti. 
+
+|Tipo di modello di base |baseTemplateId |Canali del modello previsto|
+|:--- |:---|:---|
+|Coordinamento assistenza sanitaria | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareCareCoordination')`   | Revisione post-trattamento\* <br> Pianificazione\* <br> Formazione\* |
 | | |  |
 
 \*Preferiti automaticamente 
@@ -165,4 +176,4 @@ Per usare questi modelli, è sufficiente cambiare la proprietà "template@odata.
 
 [Introduzione ai modelli di Teams](../../get-started-with-teams-templates.md)
 
-[Iniziare a usare team per organizzazioni sanitarie](teams-in-hc.md)
+[Guida introduttiva a Teams per le organizzazioni del settore sanitario](teams-in-hc.md)
