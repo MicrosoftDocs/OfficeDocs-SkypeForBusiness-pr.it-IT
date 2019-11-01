@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9a196fd3de81cf5e68a5fdaf389b3acad9465ef7
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: ae71be1cfed86597f70b6ed7bfec08b42a2ce256
+ms.sourcegitcommit: 800a5c3881d0ebceb505a538fcf7e48f7b6df17e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242317"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37913029"
 ---
 # <a name="governance-quick-start-for-microsoft-teams"></a>Guida introduttiva di governance per Microsoft Teams
 
@@ -31,6 +31,8 @@ Le attività seguenti si verificheranno contemporaneamente e potrebbero coinvolg
 - Quali stakeholder della valutazione precedente sono un buon candidato per partecipare a questo limitato business onboarding?
 - Questo individuo (o gruppo di individui) suggerisce casi di utilizzo che sarebbero buoni candidati per questa fase?  
 - Hanno abbastanza interesse da parte dei dipendenti della loro organizzazione per essere early adopters e darvi feedback significativi e regolari? 
+
+Per altre informazioni, vedere [pianificare la governance in teams](plan-teams-governance.md) e [pianificare la gestione del ciclo di vita in teams](plan-teams-lifecycle.md).
 
 ## <a name="an-icon-representing-a-decision-pointmediateams-adoption-decision-iconpngdecisions"></a>![Icona che rappresenta un punto decisionale](media/teams-adoption-decision-icon.png)Decisioni
 

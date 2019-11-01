@@ -15,14 +15,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2400ef05c65bf69adb820d62e98c93c060641350
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 4ab8f3571ac38273f40cc228c05b51c8f00159a1
+ms.sourcegitcommit: 800a5c3881d0ebceb505a538fcf7e48f7b6df17e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573252"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37913045"
 ---
-# <a name="plan-for-governance-in-teams"></a>Pianificare la governance in teams
+# <a name="plan-for-governance-in-teams"></a>Pianificare la governance in Teams
 
 Teams offre un ricco set di strumenti per implementare le funzionalità di governance che l'organizzazione può richiedere. Questo articolo illustra i professionisti IT per porre le domande giuste per determinare i loro requisiti per la governance e come soddisfarli. 
 
@@ -118,7 +118,7 @@ Teams offre funzionalità granulari per il controllo della messaggistica, delle 
 Per gli elenchi dettagliati di tutte le impostazioni, incluse le indicazioni tecniche su come implementarle per l'organizzazione, vedere gli articoli seguenti:
 
 - [Gestire le impostazioni di Microsoft teams per l'organizzazione](enable-features-office-365.md)
-- [Gestire i team durante la transizione alla nuova interfaccia di amministrazione di Microsoft Teams](manage-teams-skypeforbusiness-admin-center.md)
+- [Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams](manage-teams-skypeforbusiness-admin-center.md).
 - [Gestire i criteri delle riunioni in teams](meeting-policies-in-teams.md)
 - [Gestire i criteri di messaggistica in teams](messaging-policies-in-teams.md)
 
@@ -130,6 +130,10 @@ Teams è basato sulle funzionalità avanzate di sicurezza e conformità di Offic
 
 > [!Important]
 > Se l'organizzazione ha requisiti di conformità e sicurezza, esaminare il contenuto approfondito fornito su questo argomento nell'articolo [Panoramica della sicurezza e della conformità in Microsoft teams](security-compliance-overview.md).
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Guida introduttiva di governance per Teams](teams-adoption-governance-quick-start.md)
 
 <!--
 ## Teams lifecycle management

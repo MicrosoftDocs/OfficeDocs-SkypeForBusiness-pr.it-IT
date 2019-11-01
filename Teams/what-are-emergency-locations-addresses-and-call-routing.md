@@ -1,5 +1,5 @@
 ---
-title: Quali sono le posizioni di emergenza, i luoghi e il routing delle chiamate?
+title: Che cosa sono il routing delle chiamate, le posizioni e i luoghi di emergenza?
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -21,30 +21,30 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: 'Informazioni sulle posizioni di emergenza, sui luoghi e sul routing delle chiamate di emergenza e su come pianificarli e assegnarli agli utenti. '
-ms.openlocfilehash: a6f3051c4902d9fda2f20ca17e4aa501a8922264
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: ff29f807f0766889db8e6be4305e994bdc9637fe
+ms.sourcegitcommit: d0f03b8abccdacb675f1063a7532397fd0e91a58
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568554"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "37901905"
 ---
-# <a name="what-are-emergency-locations-places-and-call-routing"></a>Quali sono le posizioni di emergenza, i luoghi e il routing delle chiamate?
+# <a name="what-are-emergency-locations-places-and-call-routing"></a>Che cosa sono il routing delle chiamate, le posizioni e i luoghi di emergenza?
 
-Quando si configurano i piani di chiamata, è necessario assegnare una posizione di emergenza a ogni numero di telefono quando si ottiene il numero di telefono o lo si assegna a un utente per supportare le chiamate di emergenza. Prima di poter assegnare una posizione di emergenza a un numero di telefono, è necessario aggiungere e convalidare una posizione di emergenza. La convalida garantisce che la posizione di emergenza venga riconosciuta e che sia in un formato corretto che può essere usata dai servizi di risposta di emergenza. Facoltativamente, è possibile aggiungere una posizione all'interno della posizione di emergenza per specificare un percorso più specifico per l'utente. Ad esempio, il luogo può essere un piano, un'ala o un ufficio collegato a una specifica posizione di emergenza. Anche se le posizioni di emergenza sono convalidate, i luoghi non sono.
+Quando si configurano i piani di chiamata, è necessario assegnare una posizione di emergenza a ogni numero di telefono quando si acquisisce il numero di telefono o quando lo si assegna a un utente per supportare le chiamate di emergenza. Prima di poter assegnare una posizione di emergenza a un numero di telefono, è necessario aggiungere e convalidare una posizione di emergenza. La convalida garantisce che la posizione di emergenza venga riconosciuta e che sia in un formato corretto che può essere usata dai servizi di risposta di emergenza. Se si vuole, è possibile aggiungere una posizione all'interno della posizione di emergenza per specificare un percorso più specifico per l'utente. Ad esempio, il luogo può essere un piano, un'ala o un ufficio collegato a una specifica posizione di emergenza. Anche se le posizioni di emergenza sono convalidate, i luoghi non sono.
   
 ## <a name="what-are-emergency-locations"></a>Che cosa sono le posizioni per gli interventi di emergenza?
 
-È necessaria una posizione di emergenza per i numeri di telefono attivi e quando è necessario dipende dal paese/area geografica. Negli Stati Uniti è necessaria una posizione di emergenza quando un numero viene assegnato a un utente. Per altri paesi, ad esempio in Europa, Medio Oriente e Africa (EMEA), è necessaria una posizione di emergenza quando si riceve il numero di telefono da Office 365 o quando viene trasferito da un altro provider o gestore di servizi.
+È necessaria una posizione di emergenza per i numeri di telefono attivi e quando è necessario dipende dal paese/area geografica. Negli Stati Uniti è necessaria una posizione di emergenza quando un numero viene assegnato a un utente. Per altri paesi, ad esempio in Europa, Medio Oriente e Africa (EMEA), è necessaria una posizione di emergenza quando si riceve il numero di telefono da teams o quando viene trasferito da un altro provider di servizi o da un vettore a teams.
   
-Un luogo di emergenza può essere indicato come indirizzo civico, indirizzo stradale o indirizzo fisico. È l'indirizzo civico o urbano di una sede aziendale per l'organizzazione. Ad esempio, l'indirizzo *12345 North Main Street, Redmond, WA 98052* viene usato per instradare le chiamate di emergenza alle autorità di spedizione appropriate e per facilitare l'individuazione del chiamante di emergenza. È probabile che sia necessario più di una posizione di emergenza se l'azienda ha più di un percorso aziendale fisico.
+Un luogo di emergenza può essere indicato come indirizzo civico, indirizzo di strada o indirizzo fisico con la posizione facoltativa. È l'indirizzo civico o urbano di una sede aziendale per l'organizzazione. Ad esempio, l'indirizzo *12345 North Main Street, Redmond, WA 98052* viene usato per instradare le chiamate di emergenza alle autorità di spedizione appropriate e per facilitare l'individuazione del chiamante di emergenza. È probabile che sia necessario più di una posizione di emergenza se l'azienda ha più di un percorso aziendale fisico.
   
-La convalida di una posizione di emergenza implica la certezza che sia corretta e formattata correttamente per i servizi di risposta alle emergenze. È possibile aggiungere e salvare una posizione di emergenza che non viene convalidata, ma solo i percorsi convalidati possono essere associati a un utente. Dopo aver convalidato e salvato un percorso di emergenza, è possibile assegnarlo a un utente. Per modificare un percorso di emergenza salvato e convalidato, sarà necessario crearne uno nuovo.
+La convalida di un indirizzo di emergenza consiste nel verificare che sia legittimo e formattato correttamente per i servizi di emergenza. È possibile aggiungere e salvare una posizione di emergenza che non viene convalidata, ma solo i percorsi convalidati possono essere associati a un utente. Dopo aver convalidato e salvato un percorso di emergenza, è possibile assegnarlo a un utente. Per modificare un percorso di emergenza salvato e convalidato, sarà necessario crearne uno nuovo.
   
 ## <a name="what-are-places"></a>Cosa sono i luoghi?
 
-Una posizione è associata a un luogo di emergenza per dare una posizione più esatta all'interno di un edificio. Una posizione è in genere un piano, un'ala di un edificio o un numero di ufficio in cui si trova l'utente. È possibile avere un numero illimitato di posizioni associate a una posizione di emergenza. 
+Una posizione è associata a un luogo di emergenza per dare una posizione più esatta all'interno di un edificio. Una posizione è in genere un piano, un'ala di un edificio o un numero di ufficio in cui si trova l'utente. È possibile avere un numero illimitato di posizioni associate a un indirizzo di emergenza.
   
-Quando si assegna una posizione di emergenza a un utente, si tratta in realtà di un ID posizione a cui si fa riferimento quando si assegna la posizione. L'ID posizione include la posizione di emergenza a cui si fa riferimento (indirizzo civico o stradale). Una posizione predefinita è inclusa in un luogo di emergenza per i casi in cui le posizioni in costruzione non sono necessarie.
+Quando si assegna una posizione di emergenza a un utente, si tratta in realtà di un ID posizione a cui si fa riferimento quando si assegna la posizione. L'ID posizione include l'indirizzo di emergenza a cui si fa riferimento (indirizzo civico o via). Una posizione predefinita è inclusa in un luogo di emergenza per i casi in cui le posizioni in costruzione non sono necessarie.
   
 ## <a name="what-is-emergency-call-routing"></a>Che cos'è il routing delle chiamate di emergenza?
 
