@@ -25,10 +25,10 @@ ms.custom:
 - LIL_Placement
 description: 'Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization. '
 ms.openlocfilehash: 305416df22353743b891df6c7722bededaae0980
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 11/01/2019
 ms.locfileid: "37516748"
 ---
 # <a name="calling-plans-for-office-365"></a>Piani di chiamata per Office 365
@@ -49,7 +49,7 @@ Minuti mensili disponibili per ogni organizzazione e ogni paese/area geografica 
   
 Per informazioni dettagliate sui limiti di utilizzo e sulle condizioni per l'utilizzo, vedere il [periodo di chiamata gratuita per](complimentary-dial-out-period.md)i servizi di audioconferenza.
   
-## <a name="how-to-buy-a-calling-plan"></a>Come acquistare un piano per le chiamate
+## <a name="how-to-buy-a-calling-plan"></a>Come acquistare un piano di chiamata
 
 1. <strong>Devi prima acquistare una</strong> licenza per il componente aggiuntivo * * Phone System<strong>. A questo scopo, [Accedi all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e scegli * *</strong> > **** >  > **abbonamenti per i componenti aggiuntivi per**l'acquisto di servizi di fatturazione**Acquista ora**.
     
@@ -97,5 +97,5 @@ Ecco altri articoli che spiegano come configurare i piani per le chiamate:
     
 - [Configurare i piani per chiamate](set-up-calling-plans.md)
     
-- [Aggiungere fondi e gestire i crediti per la comunicazione](add-funds-and-manage-communications-credits.md)
+- [Aggiungere fondi e gestire Credito per la comunicazione](add-funds-and-manage-communications-credits.md)
  

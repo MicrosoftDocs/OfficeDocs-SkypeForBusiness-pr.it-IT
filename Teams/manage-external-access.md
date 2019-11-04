@@ -17,19 +17,19 @@ description: I team o l'amministratore IT può configurare l'accesso esterno per
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 071bb1523a0840a798edfe030a1dd52362695df2
-ms.sourcegitcommit: 09e719ead5c02b3cfa96828841c4905748d192a3
+ms.openlocfilehash: e6eb1cab6503c443d3fb312769f9f1e0255c294a
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37753531"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37925047"
 ---
 <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 ======================================================
 
 L'accesso esterno è un modo per gli utenti di team esterni provenienti da un intero dominio per trovare, chiamare, chattare e configurare riunioni con l'utente in teams. È anche possibile usare l'accesso esterno per comunicare con utenti esterni che usano ancora Skype for business (online e locale) e Skype (in arrivo all'inizio di 2020).
 
-Se si vuole che gli utenti esterni possano accedere a team e canali, l'accesso guest potrebbe essere un modo migliore per spostarsi. Per altre informazioni sulle differenze tra l'accesso esterno e l'accesso guest, vedere [confrontare l'accesso esterno e Guest](communicate-with-users-from-other-organizations.md#compare-external-and-guest-access). 
+Se si vuole consentire agli utenti esterni di accedere a team e canali, l’accesso guest potrebbe essere un’opzione migliore. Per altre informazioni sulle differenze tra l'accesso esterno e l'accesso guest, vedere [confrontare l'accesso esterno e Guest](communicate-with-users-from-other-organizations.md#compare-external-and-guest-access). 
 
 Usare l'accesso esterno quando:
   
@@ -132,7 +132,6 @@ Fare in modo che l'amministratore dell'organizzazione faccia questa procedura:
 |Consentire agli **utenti di Skype for business online** di comunicare con **gli utenti di Skype for business online** da un'altra organizzazione di Office 365.    | Gli utenti di Skype for business online possono comunicare con gli utenti di Skype for business online in un'altra organizzazione se gli utenti si trovano in una delle seguenti modalità di aggiornamento: Islands, SfBOnly, SfBWIthTeamsCollab, SfBWithTeamsCollabAndMeetings; e gli utenti di Skype for business online dell'altra organizzazione si trovano in una delle seguenti modalità di aggiornamento: Islands, SfBOnly, SfBWIthTeamsCollab, SfBWithTeamsCollabAndMeetings.<br><br>Attivare gli **utenti possono comunicare con l'impostazione utenti Skype for business e teams** in Access esterno. Quindi, l'amministratore dell'organizzazione di altri team esegue le stesse operazioni.|
 |Consentire **agli utenti di Skype for business online** di comunicare con **utenti Skype for business** da un'organizzazione locale.     |Gli utenti di Skype for business online possono comunicare con utenti Skype for business da un'organizzazione locale se gli utenti si trovano in una delle seguenti modalità di aggiornamento: Islands, SfBOnly, SfBWIthTeamsCollab, SfBWithTeamsCollabAndMeetings; e gli utenti di Skype for business online dell'altra organizzazione si trovano in una delle seguenti modalità di aggiornamento: Islands, SfBOnly, SfBWIthTeamsCollab, SfBWithTeamsCollabAndMeetings.<br><br>Attivare gli **utenti possono comunicare con l'impostazione utenti Skype for business e teams** in Access esterno. Quindi, l'amministratore dell'organizzazione di altri team esegue le stesse operazioni.|
 |Consentire **agli utenti di Skype for business online** di comunicare con **utenti Skype** (all'interno o all'esterno dell'organizzazione).   |Attivare gli **utenti di Skype for business in grado di comunicare con l'impostazione utenti Skype** in Access esterno.|
-|Consentire **agli utenti di teams** dell'organizzazione di comunicare con **Teams gratuitamente agli utenti** esterni all'organizzazione. | Per informazioni su come funziona la versione gratuita dei team con accesso esterno, vedere [differenze tra Microsoft teams e Microsoft teams Free](https://support.office.com/article/differences-between-microsoft-teams-and-microsoft-teams-free-0b69cf39-eb52-49af-b255-60d46fdf8a9c).|
 
 > [!IMPORTANT]
 > Non è necessario aggiungere **domini Skype** come domini consentiti per consentire ai team o agli utenti di Skype for business online di comunicare con utenti Skype all'interno o all'esterno dell'organizzazione. Tutti i **domini Skype** sono in whitelist, quindi tutti i domini sono considerati consentiti.

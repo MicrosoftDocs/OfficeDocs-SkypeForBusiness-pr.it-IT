@@ -1,5 +1,5 @@
 ---
-title: Visualizzare le analisi cross-team e per team in teams
+title: Visualizzare l'analisi tra team e per team in Teams
 author: LanaChin
 ms.author: v-lanac
 manager: serdars
@@ -15,13 +15,13 @@ description: Informazioni su analisi cross-team e analisi per team in teams, che
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 265099706e5c6fd502cabf688d539678d8669717
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 11/01/2019
 ms.locfileid: "37639257"
 ---
-# <a name="view-cross-team-and-per-team-analytics-in-teams"></a>Visualizzare le analisi cross-team e per team in teams
+# <a name="view-cross-team-and-per-team-analytics-in-teams"></a>Visualizzare l'analisi tra team e per team in Teams
 
 In Microsoft teams gli utenti possono visualizzare le analisi per i team di cui sono membri o proprietari. Questa informazione consente agli utenti di comprendere i modelli di utilizzo e le attività nei rispettivi team. Possono visualizzare dati come il numero di utenti attivi, Guest e messaggi in ogni team.
 

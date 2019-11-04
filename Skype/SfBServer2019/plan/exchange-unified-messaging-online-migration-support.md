@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Microsoft sta ritirando il servizio Exchange Unified Messaging online (ExchUMO) entro il 2020 febbraio. In questo articolo vengono riepilogate le informazioni che i clienti interessati dovrebbero conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 0472d142cc9d6b535b950e86e41753c82992bee5
-ms.sourcegitcommit: 26b3d786da07fde20878b0f4a1656070fe01d918
+ms.openlocfilehash: 57a9e6fa688fc17aedde3dbcf5e6b689263c5b4e
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36645249"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37616089"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata di Exchange Online
 
@@ -45,8 +45,8 @@ Microsoft ha identificato varie distribuzioni di clienti che stanno consumando f
 
 |Gruppo di clienti |Sequenza temporale  |Dettagli  |
 |---------|---------|---------|
-|Clienti pronti per la migrazione<br><br>Caratteristiche di migrazione:<br><ul><li>Casella vocale</ul>   |   Marzo-maggio 2019  |Esempi<ul><li>    Clienti con la distribuzione e l'utilizzo della segreteria telefonica semplice<li>Clienti con tutti i requisiti stabiliti per Microsoft per eseguire la migrazione<ul>|
-|Clienti con prerequisiti<br><br>Caratteristiche di migrazione:<br><ul><li>Casella vocale<li>Operatore automatico<li>Coda di chiamata</ul> |  Maggio-dicembre 2019 |Esempi <br><ul><li>La configurazione ibrida non è completa<li>I numeri PSTN ibridi non sono configurati</ul>|
+|Clienti pronti per la migrazione<br><br>Caratteristiche di migrazione:<br><ul><li>Segreteria telefonica</ul>   |   Marzo-maggio 2019  |Esempi<ul><li>    Clienti con la distribuzione e l'utilizzo della segreteria telefonica semplice<li>Clienti con tutti i requisiti stabiliti per Microsoft per eseguire la migrazione<ul>|
+|Clienti con prerequisiti<br><br>Caratteristiche di migrazione:<br><ul><li>Segreteria telefonica<li>Operatore automatico<li>Coda di chiamata</ul> |  Maggio-dicembre 2019 |Esempi <br><ul><li>La configurazione ibrida non è completa<li>I numeri PSTN ibridi non sono configurati</ul>|
 |Clienti che richiedono coinvolgimento dell'amministratore & investimento del cliente<br><br>Caratteristiche di migrazione:<ul><li>segreteria telefonica<li>Operatore automatico<li>Code di chiamata<li>Integrazione fax</ul>| Entro il 2020 febbraio  | Esempi <br><ul><li>Il servizio ExchUMO viene utilizzato da PBX di terze parti<li>Clienti con requisiti di accesso per gli abbonati PSTN<li>Clienti in SFB 2010 (non supportati)<li>Integrazione fax</ul> |
 
 ## <a name="migration-steps"></a>Passaggi di migrazione
@@ -208,3 +208,14 @@ I nuovi utenti di Skype for business verranno automaticamente provisionati per i
 #### <a name="admin-auto-attendant-management-experience"></a>Esperienza di gestione dell'operatore automatico di amministrazione 
 
 Per altre informazioni sugli operatori automatici, vedere [configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant.md). 
+
+#### <a name="known-issues"></a>Problemi noti
+
+**Cassetta postale condivisa:** Una cassetta postale condivisa configurata tramite la messaggistica unificata di Exchange Online continuerà a ricevere i messaggi dopo la migrazione a CVM e continuerà ad essere accessibile agli utenti tramite Outlook. Tuttavia, l'accesso per modificare i messaggi di saluto delle cassette postali non sarà disponibile dopo la migrazione a CVM. I clienti con cassette postali condivise usate per acquisire i chiamanti dell'operatore automatico dovrebbero sfruttare le funzionalità degli operatori automatici e delle code di chiamata condivise delle cassette postali, una volta rilasciate (ETA ottobre 2019).
+  
+**Eseguire l'aggiornamento a banner Teams nel client di SFB:** Il servizio CVM si basa sull'infrastruttura di Microsoft Teams; le chiamate effettuate dal client Skype for business possono causare la visualizzazione di un banner informativo sul client che recita: "il nome utente non usa Skype for business. Per un'esperienza più dettagliata, passa a teams o avvia una riunione Skype.
+Assicurati di aggiornare il client Skype for business degli utenti al più recente aggiornamento client di C2R per evitare che questo banner venga visualizzato. 
+  
+**La configurazione della segreteria telefonica consente di eseguire l'installazione in OWA:** Se si fa clic su "Configura segreteria telefonica", il client continuerà a portare i clienti di Skype for Business Server 2015/2013 alla pagina del portale di Office Web Access (OWA) dopo la migrazione a CVM. Tutte le impostazioni sono state rimosse dalla scheda segreteria telefonica in OWA e un banner verrà visualizzato con un collegamento di reindirizzamento per consentire agli utenti di usare il portale delle impostazioni utente di CVM. 
+ 
+**Modificare l'accesso per dispositivi mobili:** L'accesso del sottoscrittore PSTN non è supportato in CVM. Per gli utenti che devono cambiare il loro saluto in remoto, viene aggiunta un'opzione di menu "cambia saluto" al servizio IVR della segreteria telefonica per i client mobili. Gli utenti possono chiamare questo servizio premendo e tenendo premuto il tasto "1" nella tastiera del client per dispositivi mobili. 

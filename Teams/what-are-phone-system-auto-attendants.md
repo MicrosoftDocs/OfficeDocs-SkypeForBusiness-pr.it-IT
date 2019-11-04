@@ -1,5 +1,5 @@
 ---
-title: Cosa sono gli operatori automatici cloud?
+title: Che cosa sono gli operatori automatici di cloud?
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -21,14 +21,14 @@ f1keywords: ms.teamsadmincenter.autoattendants.overview
 ms.custom:
 - Phone System
 description: Scopri quali sono gli operatori automatici di cloud e come usarli.
-ms.openlocfilehash: 88a9282bc6f16d0fae5f2753b9f6612728eaf9dd
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: d326b707ff94d9d30e26f6da31f12588b083872e
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568543"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37924887"
 ---
-# <a name="what-are-cloud-auto-attendants"></a>Cosa sono gli operatori automatici cloud?
+# <a name="what-are-cloud-auto-attendants"></a>Che cosa sono gli operatori automatici di cloud?
 
 Sistema telefonico in Office 365 fornisce gli operatori automatici, che possono essere usati per consentire ai chiamanti esterni e interni di spostarsi in un sistema di menu per individuare e inserire o trasferire chiamate a utenti o reparti dell'organizzazione.
   
@@ -230,7 +230,7 @@ Per configurare un operatore automatico e le opzioni di menu, [impostare un oper
 
 È possibile assegnare un numero di servizio Microsoft, un numero di routing diretto o un numero ibrido all'account della risorsa collegata dell'operatore automatico (o a più account di risorse se si desidera più di un numero di telefono). Vedere [pianificare il routing diretto](direct-routing-plan.md) per ulteriori dettagli.
 
-Per assegnare un numero di servizio, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Una volta ottenuto il pedaggio o i numeri di telefono del servizio gratuito, questi vengono visualizzati nei**numeri di telefono**della**voce** > dell'interfaccia di >  **amministrazione di Skype for business**. Il **tipo di numero** è elencato come **servizio a pagamento gratuito**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers) oppure, se si vuole trasferire e numero di servizio esistente, vedere [trasferire i numeri di telefono in Office 365](transfer-phone-numbers-to-office-365.md).
+Per assegnare un numero di servizio, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Una volta ottenuto il pedaggio o i numeri di telefono del servizio gratuito, questi vengono visualizzati nei**numeri di telefono**della**voce** > dell'interfaccia di >  **amministrazione di Skype for business**. Il **tipo di numero** è elencato come **servizio a pagamento gratuito**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers) oppure, se si vuole trasferire e numero di servizio esistente, vedere [trasferire i numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
   
 > [!NOTE]
 > Se si è al di fuori degli Stati Uniti, non è possibile usare l'interfaccia di amministrazione di Microsoft teams per ottenere i numeri di servizio. È invece necessario [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per vedere come eseguire questa operazione.

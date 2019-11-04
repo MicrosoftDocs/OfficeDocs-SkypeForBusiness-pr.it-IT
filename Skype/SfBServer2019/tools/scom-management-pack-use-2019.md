@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: "Riepilogo: informazioni su come configurare l'infrastruttura di Skype for Business Server 2019 per l'utilizzo con System Center Operations Manager."
-ms.openlocfilehash: 5a0415c0447127b0da2b7670e857dbf1a6185794
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: e08debc645665d8be69ce062930d64421b093433
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36195906"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37318958"
 ---
 # <a name="manage-skype-for-business-server-2019-using-scom-management-pack"></a>Gestire Skype for Business Server 2019 con SCOM Management Pack
  
@@ -83,7 +83,9 @@ Il pacchetto di monitoraggio per Skype for Business Server 2019 include i file s
 ## <a name="whats-new"></a>Novità
 
 Le caratteristiche seguenti sono nuove per i Management Pack di Skype for Business Server 2019.
-  
+
+- **Modifiche all' [aggiornamento di 2019 settembre](https://www.microsoft.com/download/details.aspx?id=57511) ** Alcuni avvisi hanno avuto caratteri speciali rimossi. In alcuni casi i caratteri speciali interferiscono con la funzionalità di notifica del canale di comando SCOM.
+
 - **Individuazione automatica per l'accesso client** Le applicazioni client che si iscrivono a Skype for Business Server 2019 spesso scoprono automaticamente il server in cui effettuare l'accesso. Le transazioni sintetiche supportano ora la verifica che l'individuazione automatica sia configurata correttamente.
     
 - **Intervalli di esecuzione delle transazioni sintetiche personalizzati** Per semplificare il processo di configurazione dei nodi Watcher, le transazioni sintetiche possono condividere gli account utente. Questo rallenta la frequenza con cui vengono eseguiti i test quando i test vengono serializzati per evitare conflitti. Per impostazione predefinita, le transazioni sintetiche vengono eseguite ogni 15 minuti per garantire che tutti i test abbiano il tempo per l'esecuzione. Gli amministratori che scelgono di usare più utenti o meno test per ogni utente possono ora ridurre anche l'intervallo di esecuzione.

@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come ottenere nuovi numeri di telefono o di trasferimento di dati esistenti per i team e come visualizzare le modifiche apportate agli utenti. '
-ms.openlocfilehash: c605933f91d047d44f191e9d1604e8c8630565fb
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 2b8dcb2f10f4c5e4452a24fbc9fc4230cffbe874
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572092"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37925287"
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 
@@ -34,7 +34,7 @@ Sono disponibili tre modi per ottenere i numeri degli utenti:
 
 - **Usare l'interfaccia di amministrazione di Microsoft teams.** Per alcuni paesi/aree geografiche è possibile ottenere numeri per gli utenti tramite l'interfaccia di amministrazione di Microsoft teams. Vedere [ottenere nuovi numeri di telefono per gli utenti](#get-new-phone-numbers-for-your-users).
     
-- **Importa i tuoi numeri esistenti.** È possibile convertire o trasferire i numeri esistenti dal provider di servizi o dal gestore di telefonia corrente. Per ulteriori informazioni su come eseguire questa operazione, è possibile visualizzare [Trasferire numeri di telefono in Office 365](/microsoftteams/transfer-phone-numbers-to-office-365) o [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).  
+- **Importa i tuoi numeri esistenti.** È possibile convertire o trasferire i numeri esistenti dal provider di servizi o dal gestore di telefonia corrente. Per altre informazioni utili, vedere [trasferire i numeri di telefono in team](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams) o [gestire i numeri di telefono per l'organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization) .  
   
 - **Utilizzare un modulo di richiesta per nuovi numeri.** A volte, a seconda del paese o dell'area geografica, non potrai ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di Microsoft teams oppure avrai bisogno di numeri di telefono o codici di area specifici. In caso affermativo, è necessario scaricare un modulo e inviarlo di nuovo a noi. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).
   
@@ -61,7 +61,7 @@ Sono disponibili tre modi per ottenere i numeri degli utenti:
   
    **Trasferire numeri di telefono dal provider di servizi o dal gestore di telefonia**
   
-- Se sono necessari 999 o meno numeri di telefono per gli utenti, è possibile usare il portale legacy nell'interfaccia di amministrazione di Microsoft teams. Seguire i passaggi descritti in [trasferire i numeri di telefono in Office 365](/microsoftteams/transfer-phone-numbers-to-office-365) per trasferire i numeri di telefono in teams.
+- Se sono necessari 999 o meno numeri di telefono per gli utenti, è possibile usare il portale legacy nell'interfaccia di amministrazione di Microsoft teams. Seguire i passaggi descritti in [trasferire i numeri di telefono in teams](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams) per trasferire i numeri di telefono in teams.
     
 - Se è necessario trasferire più di 999 numeri di telefono, vedere [gestire le richieste di assistenza in Service Manager](https://docs.microsoft.com/system-center/scsm/service-requests) per inviare una richiesta di servizio o un ordine di trasferimento per trasferire tutti i numeri di telefono in Office 365.
     
@@ -75,7 +75,7 @@ Nella barra di spostamento sinistra, vai a**numeri di telefono** **vocale** > pe
     
 - Dopo aver ottenuto i numeri di telefono, è necessario assegnare un numero a ogni utente. Vedere [assegnare, modificare o rimuovere un numero di telefono per un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user).
     
-- È possibile usare la pagina **numeri di telefono** nell'interfaccia di amministrazione di Microsoft Teamd per visualizzare l'elenco dei numeri di telefono disponibili nella colonna numero di **telefono** , verificare se il numero di telefono è stato assegnato nella colonna **stato** e vedere la posizione del numero di telefono nella colonna **posizione** . 
+- È possibile usare la pagina **numeri di telefono** nell'interfaccia di amministrazione di Microsoft teams per visualizzare l'elenco dei numeri di telefono disponibili nella colonna numero di **telefono** , verificare se il numero di telefono è stato assegnato nella colonna **stato** e vedere la posizione del numero di telefono nella colonna **posizione** . 
 
 > [!NOTE]
 > Se è necessario ottenere più numeri di telefono, [contattare il servizio di assistenza PSTN](manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md).

@@ -21,14 +21,14 @@ f1keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare il sistema telefonico per le code delle chiamate cloud con Microsoft teams.
-ms.openlocfilehash: f3eb106c0acb9c79d60f45cc11770f26e3e59a1e
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: fc7cc9558036d30d388a279ac155fe6382e611a8
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516695"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37925097"
 ---
-# <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
+# <a name="create-a-cloud-call-queue"></a>Creare una coda delle chiamate nel cloud
 
 Le code delle chiamate cloud possono essere fornite:
 
@@ -105,7 +105,7 @@ Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto se
 
 ## <a name="step-2--getting-or-transferring-toll-or-toll-free-service-phone-numbers"></a>Passaggio 2: ottenere o trasferire numeri di telefono del servizio a pagamento o a numero verde
 
-Prima di poter creare e configurare le code di chiamata, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Dopo aver ottenuto i numeri di telefono del servizio a pagamento o a pedaggio, verranno visualizzati nei**numeri di telefono**della**voce** > del portale > **** > dell'interfaccia di **amministrazione Microsoft teams**legacy e il **tipo di numero** verrà elencato come **Servizio-numero verde**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono](getting-service-phone-numbers.md) o se si vuole trasferire un numero di servizio esistente, vedere trasferire i [numeri di telefono in Office 365](transfer-phone-numbers-to-office-365.md).
+Prima di poter creare e configurare le code di chiamata, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Dopo aver ottenuto i numeri di telefono del servizio a pagamento o a pedaggio, verranno visualizzati nei**numeri di telefono**della**voce** > del portale > **** > dell'interfaccia di **amministrazione Microsoft teams**legacy e il **tipo di numero** verrà elencato come **Servizio-numero verde**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono](getting-service-phone-numbers.md) o se si vuole trasferire un numero di servizio esistente, vedere trasferire i [numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
 
 > [!NOTE]
 > Se si è al di fuori degli Stati Uniti, non è possibile usare l'interfaccia di amministrazione di Microsoft teams per ottenere i numeri di servizio. Vai a [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per vedere come farlo dall'esterno degli Stati Uniti.
@@ -313,19 +313,19 @@ Puoi anche utilizzare Windows PowerShell per creare e configurare code di chiama
 
   - [Introduzione a Windows PowerShell e Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://docs.microsoft.com/en-us/office365/enterprise/powershell/why-you-need-to-use-office-365-powershell)
+  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://docs.microsoft.com/office365/enterprise/powershell/why-you-need-to-use-office-365-powershell)
 
 - Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività nell'interfaccia di amministrazione di Microsoft teams, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
 
-  - [Gestire Office 365 con Windows PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
+  - [Gestire Office 365 con Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
 
-  - [Configurare il computer per Windows PowerShell](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
+  - [Configurare il computer per Windows PowerShell](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Ecco cosa offre il Sistema telefonico in Office 365](here-s-what-you-get-with-phone-system.md)
 
-[Recupero di numeri di telefono del servizio](getting-service-phone-numbers.md)
+[Recuperare numeri di telefono del servizio](getting-service-phone-numbers.md).
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 

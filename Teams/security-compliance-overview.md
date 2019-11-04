@@ -18,10 +18,10 @@ f1keywords:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: f5780720cfcd5adcf079c0f3d31423949cecea23
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 11/01/2019
 ms.locfileid: "37573430"
 ---
 <a name="overview-of-security-and-compliance-in-microsoft-teams"></a>Panoramica della sicurezza e della conformità in Microsoft Teams
@@ -91,7 +91,7 @@ Nella figura seguente viene indicato il flusso di ingestione delle riunioni di t
 > [!IMPORTANT]
 > Per individuare il contenuto di teams, è possibile attendere fino a 24 ore di ritardo.
 
-<a name="licensing"></a>Licensing
+<a name="licensing"></a>Licenze
 ---------------
 
 Per quanto riguarda le funzionalità di protezione delle informazioni, gli abbonamenti a Office 365 e le licenze autonome associate determineranno il set di caratteristiche disponibile.
@@ -120,7 +120,7 @@ Prima di abilitare una qualsiasi di queste funzionalità, assicurati di avere ac
 
 La ricerca di contenuto e eDiscovery non richiedono l'abilitazione nel centro conformità & sicurezza.
 
-<a name="location-of-data-in-teams"></a>Posizione dei dati in teams
+<a name="location-of-data-in-teams"></a>Posizione dei dati in Teams
 -------------------------
 
 I dati in teams si trovano nell'area geografica associata al tenant di Office 365. Attualmente, teams supporta le aree Australia, Canada, Francia, India, Giappone, Regno Unito, Corea del sud, Sud Africa, Americhe, APAC e EMEA. 

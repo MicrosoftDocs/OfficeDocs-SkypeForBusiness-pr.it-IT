@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare il sistema telefonico (cloud PBX) per l'organizzazione. "
-ms.openlocfilehash: 429cedb3d8bad25982e4eacdaa82f82cacfc75ae
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.openlocfilehash: 402ae5f92e72cd1bc7ab759d3706108480a27a7e
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37571536"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37925297"
 ---
 # <a name="setting-up-phone-system-in-your-organization"></a>Configurazione di Sistema telefonico nella tua organizzazione
 
@@ -69,7 +69,7 @@ Sometimes (depending on your country/region) you won't be able to get your new n
   
 ### <a name="port-or-transfer-phone-numbers-from-your-service-provider-or-phone-carrier"></a>Trasferire numeri di telefono dal provider di servizi o dal gestore di telefonia
   
-- If you need 999 or fewer phone numbers for your users, you can use the **New Local Number Port Order** wizard in the Skype for Business admin center. Follow the steps found in [Transfer phone numbers to Office 365](transfer-phone-numbers-to-office-365.md) to transfer your phone numbers over to Skype for Business Online.
+- Se sono necessari 999 o meno numeri di telefono per gli utenti, è possibile usare la procedura guidata **nuovo ordine di trasferimento** dei numeri locali nell'interfaccia di amministrazione di Skype for business. Seguire i passaggi descritti in [trasferire i numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) per trasferire i numeri di telefono.
     
 - Se è necessario trasferire più di 999 numeri di telefono, vedere [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) in modo da inviare una richiesta di servizio ordini di trasferimento o un ordine per trasferire tutti i numeri di telefono in Office 365. 
 
@@ -187,7 +187,7 @@ Per le domande frequenti sui servizi di audioconferenza, vedere [Domande frequen
 
     - **Microsoft come provider di servizi di audioconferenza**: se desiderate la soluzione più semplice per le Audioconferenze, scegliete Microsoft come provider di servizi di audioconferenza.
     
-    - **Third party as your audio conferencing provider**: If you are in a country where Audio Conferencing in Office 365 isn't available, the service quality isn't great because of its location, or you have an existing contract, choose a third-party audio conferencing provider. To find a provider, go to [Microsoft PinPoint](http://go.microsoft.com/fwlink/?LinkId=797530).
+    - **Third party as your audio conferencing provider**: If you are in a country where Audio Conferencing in Office 365 isn't available, the service quality isn't great because of its location, or you have an existing contract, choose a third-party audio conferencing provider. To find a provider, go to [Microsoft PinPoint](https://go.microsoft.com/fwlink/?LinkId=797530).
  
 2. Assign the audio conferencing provider to people who lead or schedule meetings. See [Assign Microsoft as the audio conferencing provider](/skypeforbusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider).
 
@@ -210,7 +210,7 @@ Per le domande frequenti sui servizi di audioconferenza, vedere [Domande frequen
 
 Le code delle chiamate Cloud includono i messaggi di saluto usati quando qualcuno chiama un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano sono ascolto della musica in attesa. È possibile creare code di chiamata singole o multiple per l'organizzazione.
 
-Before you can create and set up your call queues, you will need to get or transfer your existing toll or toll-free service numbers. After you get the toll or toll-free service phone numbers, they will show up in **Skype for Business admin center** > **Voice** > **Phone numbers**, and the **Number type** listed will be listed as **Service - Toll-Free**. To get your service numbers, see [Getting service phone numbers for Skype for Business and Microsoft Teams](/microsoftteams/getting-service-phone-numbers) or if you want to transfer and existing service number, see [Transfer phone numbers to Office 365](transfer-phone-numbers-to-office-365.md).
+Prima di poter creare e configurare le code di chiamata, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Dopo aver ottenuto i numeri di telefono del servizio a pagamento o a pedaggio gratuito, verranno visualizzati nei**numeri di telefono**della**voce** > dell'interfaccia di amministrazione > di **Skype for business**e il **tipo di numero** elencato verrà elencato come **servizio a pagamento gratuito **. Per ottenere i numeri di servizio, vedere [ottenere i numeri di servizio per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers) oppure se si vuole trasferire un numero di servizio esistente, vedere [trasferire i numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
   
 > [!NOTE]
 > If you are outside the United States, you can't use the Skype for Business admin center to get service numbers. Go to [Manage phone numbers for your organization](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) instead to see how to do it from the outside of the United States.

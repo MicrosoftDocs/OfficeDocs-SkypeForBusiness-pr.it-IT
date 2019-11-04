@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 142caf34-0f20-47f3-9d32-ce25ab622fad
 description: Per il ripristino di emergenza, Skype for Business Server offre l'associazione in pool con il failover nel caso in cui un pool vada in calo.
-ms.openlocfilehash: 15df85790cd7959b88126c5e6bb0e7fd99b836e1
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3999b7b8c2dd9b5eea942779f09924c6b5a79210
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194945"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37341932"
 ---
 # <a name="front-end-pool-disaster-recovery-in-skype-for-business-server"></a>Ripristino di emergenza del pool di front-end in Skype for Business Server
  
@@ -56,7 +56,7 @@ Per il failover del pool e il failback del pool, la destinazione ingegneristica 
   
 Per il failover del pool e il failback del pool, la destinazione ingegneristica per l'obiettivo del punto di ripristino (RPO) è di 5 minuti. Rappresenta la misura temporale dei dati che potrebbero essere persi a causa del disastro causato dalla latenza della replica del servizio di backup. Ad esempio, se un pool scende alle 10:00 A.M. e RPO è di 5 minuti, i dati vengono scritti nel pool tra 9:55 A.M. e 10:00. M. potrebbe non essere stato replicato nel pool di backup e andrebbe perduto.
   
-Tutti i numeri di RTO e RPO in questo documento presuppongono che i due centri dati si trovino all'interno della stessa area geografica con il trasporto ad alta velocità e a bassa latenza tra i due siti. Questi numeri vengono misurati per un pool con 40.000 utenti attivi simultaneamente e 200.000 gli utenti abilitati per Lync rispetto a un modello di utente predefinito in cui non è presente alcun backlog nella replica dei dati. Sono soggetti a modifiche in base al test delle prestazioni e alla convalida.
+Tutti i numeri di RTO e RPO in questo documento presuppongono che i due centri dati si trovino all'interno della stessa area geografica con il trasporto ad alta velocità e a bassa latenza tra i due siti. Questi numeri vengono misurati per un pool con 40.000 utenti attivi simultaneamente e 200.000 utenti abilitati per Skype for business rispetto a un modello di utente predefinito in cui non è presente alcun backlog nella replica dei dati. Sono soggetti a modifiche in base al test delle prestazioni e alla convalida.
   
 ## <a name="central-management-store-failover"></a>Failover dell'archivio di gestione centrale
 

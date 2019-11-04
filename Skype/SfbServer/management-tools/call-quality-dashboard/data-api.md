@@ -10,17 +10,17 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 25c2450a-f7b3-4dd2-987d-64f4246dd019
-description: "Riepilogo: informazioni sull'API rata per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: f74f581a3d46ba7cf75daf92df5ade16dab510d0
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+description: "Riepilogo: informazioni sull'API dati per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 016cc1be9f5cd5506f8ee7d8ddbe2765e0015ffd
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186974"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "36571920"
 ---
 # <a name="data-api-for-call-quality-dashboard-cqd-in-skype-for-business-server"></a>API dati per Call Quality Dashboard (Call Quality Dashboard) in Skype for Business Server
  
-**Riepilogo:** Informazioni sull'API rata per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'API dati per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
   
 L'API dati offre accesso a livello di codice per Call Quality dashboard per Skype for Business Server.
   
@@ -42,7 +42,7 @@ Le operazioni REST sono incluse nella tabella seguente.
    
  **Supporto CORS (Cross-Origin Resource Sharing) per API dati**
   
-L'API dei dati supporta la condivisione delle risorse CORS (Cross-Origin Resource Sharing). CORS è una caratteristica HTTP che consente a un'applicazione Web in uso in un dominio di accedere alle risorse in un altro dominio. I Web browser implementano una restrizione [](https://www.w3.org/Security/wiki/Same_Origin_Policy) di sicurezza nota come criterio di origine della stessa origine che impedisce la chiamata delle API in un dominio diverso da una pagina Web. CORS offre un modo sicuro per consentire a un dominio (il dominio di origine) di chiamare le API in un altro dominio. Vedere la [specifica CORS](https://www.w3.org/TR/cors/) per informazioni dettagliate su CORS.
+L'API dei dati supporta la condivisione delle risorse CORS (Cross-Origin Resource Sharing). CORS è una caratteristica HTTP che consente a un'applicazione Web in uso in un dominio di accedere alle risorse in un altro dominio. I Web browser implementano una restrizione di sicurezza nota come criterio di origine [della stessa origine](https://www.w3.org/Security/wiki/Same_Origin_Policy) che impedisce la chiamata delle API in un dominio diverso da una pagina Web. CORS offre un modo sicuro per consentire a un dominio (il dominio di origine) di chiamare le API in un altro dominio. Vedere la [specifica CORS](https://www.w3.org/TR/cors/) per informazioni dettagliate su CORS.
   
  **Abilitazione di CORS for Data API**
   

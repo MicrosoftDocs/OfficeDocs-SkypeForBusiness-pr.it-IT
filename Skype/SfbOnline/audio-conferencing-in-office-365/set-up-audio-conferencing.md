@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni sulla configurazione del servizio di conferenza telefonica con accesso esterno o del servizio Audioconferenza per gli utenti dell'organizzazione che devono usare il telefono per partecipare alle conferenze telefoniche. "
-ms.openlocfilehash: a36482dc6c58275491c65ac518e98cdc0ac0b787
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
-ms.translationtype: HT
+ms.openlocfilehash: 499a8a8ef05d23c74b030536d33b7a02cd6d9a1a
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "35792174"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37924977"
 ---
 # <a name="set-up-audio-conferencing-for-skype-for-business"></a>Configurare il servizio Audioconferenza per Skype for Business
 
@@ -63,7 +63,7 @@ Non è possibile utilizzare numeri di telefono per gli utenti per l'Audioconfere
   
 - **Usare l'interfaccia di amministrazione di Skype for Business**. In alcuni paesi/aree geografiche è possibile ottenere i numeri del servizio per i bridge di conferenza usando l'interfaccia di amministrazione di Skype for Business. Vedere [Recupero dei numeri di telefono del servizio](/microsoftteams/getting-service-phone-numbers).
     
-- **Trasferire i numeri del servizio esistenti**. È possibile trasferire i numeri di telefono esistenti o eseguirne la portabilità dal provider di servizi o dall'operatore telefonico corrente Office 365. Per ulteriori informazioni su come eseguire questa operazione, è possibile consultare [Trasferire numeri di telefono in Office 365](/microsoftteams/transfer-phone-numbers-to-office-365) o [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).  
+- **Trasferire i numeri del servizio esistenti**. È possibile trasferire i numeri di telefono esistenti o eseguirne la portabilità dal provider di servizi o dall'operatore telefonico corrente Office 365. Per ulteriori informazioni, vedere [trasferire i numeri di telefono in team](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams) o [gestire i numeri di telefono per l'organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization) .  
   
 - **Usare un modulo di richiesta per nuovi numeri**. A seconda del paese/area geografica, talvolta non è possibile ottenere nuovi numeri del servizio tramite l'interfaccia di amministrazione Skype for Business oppure sono necessari numeri di telefono o prefissi specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization). 
     

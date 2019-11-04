@@ -19,16 +19,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7509d0f3d6e3e557f6b7ccd388f7b9b340705bba
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 5de243402cd5694b2e4a498f7ff7650cd8f49f4a
+ms.sourcegitcommit: 2e005b335b1566c99b93fc311498702838466324
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236578"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931644"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la distribuzione e l'implementazione] (media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di distribuzione e implementazione")
+![Aggiornare il diagramma di viaggio, enfatizzando la fase di definizione del progetto](media/upgrade-banner-project-definition.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di definizione del progetto")
 
-Questo articolo fa parte della fase di distribuzione e implementazione del viaggio di aggiornamento. Prima di procedere, verificare di aver completato le attività seguenti:
+Questo articolo fa parte della fase di definizione del progetto del viaggio di aggiornamento. Prima di procedere, verificare di aver completato le attività seguenti:
 
 - [Elenco delle parti interessate del progetto](upgrade-enlist-stakeholders.md)
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope)
@@ -53,57 +53,128 @@ In questo articolo vengono illustrate le varie modalità che consentono di gesti
 
 Per preparare formalmente l'organizzazione per il viaggio in teams, è necessario avviare la pianificazione per gli scenari di aggiornamento che consentiranno alla tua organizzazione di accettare completamente i team come unica soluzione di comunicazione e collaborazione.
 
-Per aiutare a guidare il processo decisionale, familiarizzare con le varie modalità, i concetti e la terminologia pertinenti per l'aggiornamento da Skype for business a teams. Per altre informazioni, vedere coesistenza e interoperabilità di [Microsoft teams e Skype for business](https://aka.ms/SkypeToTeams-Coexist)
+Per aiutare a guidare il processo decisionale, familiarizzare con le varie modalità, i concetti e la terminologia pertinenti per l'aggiornamento da Skype for business a teams. Per altre informazioni, vedere [coesistenza e interoperabilità di Microsoft teams e Skype for business](https://aka.ms/SkypeToTeams-Coexist)
 
-Quando alcuni utenti sono pronti a usare solo team per le comunicazioni quotidiane e le esigenze di collaborazione, è possibile iniziare a eseguire l'aggiornamento di questi utenti ai team abilitando la modalità **solo teams** .
+Un utente che è stato migrato a teams non usa più un client Skype for business tranne che per partecipare a una riunione ospitata in Skype for business. Tutte le chat in arrivo e le chiamate atterrano nel client Teams dell'utente, indipendentemente dal fatto che il mittente usi team o Skype for business. Tutte le nuove riunioni organizzate dall'utente aggiornato verranno programmate come riunioni teams. Se l'utente tenta di usare il client Skype for business, l'avvio delle chat e delle chiamate è bloccato<sup>1</sup>. Tuttavia, l'utente può (e deve) ancora usare il client Skype for business per partecipare alle riunioni a cui sono state invitate.
 
-Se non è possibile che l'intera organizzazione venga spostata in teams, è possibile iniziare pilotando teams insieme a Skype for business in modalità di coesistenza per le **isole** . Le modalità di coesistenza aggiuntive (ad esempio **Skype for business con teams Collaboration** e **Skype for business con la collaborazione e le riunioni**di Teams) diventano progressivamente disponibili nei prossimi mesi, ma è anche possibile iniziare completamente l'adozione di teams come soluzione di collaborazione di gruppo prima di tutto mantenendo Skype for business come soluzione di Unified Communications dell'organizzazione. Questo è il percorso consigliato da Microsoft per i clienti che usano Skype for Business Server (locale o ibrido) e i clienti con una complessità significativa la cui traiettoria per i team includerà un lungo periodo di coesistenza.
+Gli amministratori gestiscono la transizione a teams usando il concetto di [modalità](migration-interop-guidance-for-teams-with-skype.md#coexistence-modes), che è una proprietà di [TeamsUpgradePolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps). Un utente che è stato migrato in teams come descritto in precedenza è in modalità "TeamsOnly". Per un'organizzazione che sta migrando a teams, l'obiettivo finale è quello di trasferire tutti gli utenti alla modalità TeamsOnly.
 
-![Screenshot dell'aggiornamento dei blocchi predefiniti da Skype for business a teams] (media/upgrade_journeys_building_block.png "Screenshot dell'aggiornamento dei blocchi predefiniti da Skype for business a teams, costituito da Skype for business con la&ndash;modalità di collaborazione in teams, Skype for business con la modalità di collaborazione e riunione in teams, modalità Islands, modalità solo teams e Skype for Modalità&ndash;solo business.")
+Esistono due metodi per la migrazione di un'organizzazione esistente con Skype for business (sia online che locale) per i team:
 
-Nella tabella seguente vengono confrontate le modalità di coesistenza e aggiornamento.
+- **Metodo di funzionalità sovrapposte** (usando la modalità isole): gli utenti di un'organizzazione Skype for business esistenti vengono introdotti in teams in modo che possano usare entrambi i client affiancati durante una fase transitoria. Durante questo periodo, la maggior parte--ma non tutte--la funzionalità dei team è disponibile. La modalità per questa configurazione è denominata isole e questa è la modalità predefinita per qualsiasi organizzazione esistente con Skype for business. Quando l'organizzazione è pronta, l'amministratore sposta gli utenti in modalità TeamsOnly.
+- **Selezionare metodo di funzionalità** (usando una o più modalità di Skype for business): l'amministratore gestisce la transizione (da Skype for business a teams) della chat, delle chiamate e della funzionalità di pianificazione delle riunioni per gli utenti dell'organizzazione. Ognuna di queste funzioni è disponibile sia in Skype for business che in teams, ma non in entrambi. Gli amministratori usano TeamsUpgradePolicy per controllare quando spostare questa funzionalità in teams per gli utenti. Gli utenti che non sono ancora in modalità TeamsOnly continuano a usare Skype for business per la chat e le chiamate e i due set di utenti possono comunicare tramite la funzionalità di interoperabilità. Gli amministratori gestiscono la transizione migrando progressivamente più utenti in modalità TeamsOnly.
 
-|Modalità |Situazione |Uso consigliato |Vantaggi |Aspetti |
-|---|---|---|---|---|
-|Isole |Distribuzione Skype for business più piccola o più semplice<br><br>Capacità e disponibilità a gestire una complessità a breve termine per spostarsi in team più rapidamente |Accedere all'esperienza team completa il più rapidamente possibile<br><br>Condurre un proof of Concept (PoC) di Teams<br><br>Percorso di aggiornamento consigliato per le organizzazioni che hanno adottato Skype for business online |Semplice da usare<br><br>Le squadre più ricche hanno esperienza in anticipo per tutte le funzionalità |Richiede una buona comunicazione degli utenti per evitare confusione e guidare l'utilizzo verso i team<br><br>Exit Strategy richiede agli utenti di avere pienamente adottato teams prima di iniziare l'aggiornamento alla fase solo Teams<br><br>Nessuna interoperabilità per gli utenti in modalità Isole; Inoltre nessuna federazione da teams quando l'account Skype for business dell'utente viene ospitato in locale|
-|Collaborazione tra Skype for business e teams |Distribuzione di Skype for business con requisiti non ancora soddisfatti da Teams (ad esempio, conformità avanzata)<br><br>Necessità e/o impegno a lungo termine per Skype for business|Avviare rapidamente l'adozione di Team, concentrandosi innanzitutto sulla collaborazione di gruppo<br><br>Vuoi conservare tutti i carichi di lavoro delle comunicazioni unificate in Skype for business per ora<br><br>Uso consigliato come punto di partenza per l'organizzazione che avvia il viaggio da un locale (o ibrido) Skype for business|Nessuna funzionalità sovrapposta tra teams e Skype for business<br><br>La chat di messaggistica istantanea e la pianificazione delle riunioni si trovano in Skype for business (legato alla chiamata)<br><br>Interoperabilità con gli utenti solo in teams|
-|Skype for business con la collaborazione e le riunioni di Teams |Distribuzione di Skype for business con un uso significativo della voce aziendale e dei requisiti che non sono ancora stati raggiunti da teams Calling<br><br>Necessità e/o impegno a lungo termine per Skype for business<br><br>Potrebbe essere l'uso di un servizio di riunione di terze parti|Avviare rapidamente l'adozione di teams, superando la collaborazione di gruppo<br><br>Migliorare l'esperienza delle riunioni degli utenti<br><br>Uso consigliato per le organizzazioni locali che vogliono sfruttare le riunioni di teams prima di essere pronte per l'aggiornamento completo (in genere a causa di Enterprise Voice locale). |Nessuna funzionalità sovrapposta<br><br>Riunioni superiori in teams. Funzionalità roadmap, UX e Cross Platform, qualità e affidabilità<br><br>Esperienze "Better Together" tra Skype for business e teams<br><br>Utenti di interoperabilità solo in teams.|La messaggistica istantanea e la chat si trovano in Skype for business (legato alla chiamata)|
-|Solo Teams |I team sono solo la destinazione finale per tutti gli utenti, alla fine.<br><br>Alcuni utenti devono rimanere in Skype for business<br><br>Stai aggiornando gli utenti di Skype for business online a teams mantenendo gli utenti locali di Skype for business su Skype for Business Server<br><br>Potresti avere già distribuito utenti in modalità isole e sei pronto per ritirare Skype for business per gruppi di utenti |Ridurre i costi variabili in Skype for business (operazioni server locali, contratto di outsourcing e così via)<br><br>Accedere all'esperienza completa di teams il più rapidamente possibile, almeno per alcuni utenti|Limita la confusione degli utenti fornendo un solo client per lavorare con l'interoperabilità con gli utenti solo in Skype for business, Skype for business con Collaboration teams, Skype for business con la collaborazione e le riunioni di Teams|L'interoperabilità supporta solo la chat di base e le chiamate tra Skype for business e teams e gli scenari di interoperabilità per la condivisione desktop e la chat e le chiamate a più parti|
-|Solo Skype for business |Alcuni utenti devono rimanere in Skype for business<br><br>|Limita la confusione degli utenti fornendo un solo client con cui lavorare<br><br>L'utente può comunque partecipare a riunioni di team a cui sono invitati|Continuare a soddisfare i requisiti aziendali che attualmente possono essere soddisfatti solo da Skype for business<br><br>Interoperabilità con gli utenti solo in teams|L'interoperabilità supporta solo la chat di base e le chiamate tra Skype for business e teams e gli scenari di interoperabilità per la condivisione desktop e la chat e le chiamate a più parti|
+<sup>1</sup> I client Skype for business meno recenti forniti prima di 2017 non onorano TeamsUpgradePolicy. Verificare di usare il client Skype for business più recente disponibile nel canale di Office.
 
-> [!TIP]
-> Per identificare la modalità di aggiornamento consigliata in base alle funzionalità che si vogliono abilitare in teams mentre Skype for business è ancora in uso, sfruttare la [procedura guidata di aggiornamento di Skype to teams](https://aka.ms/SkypeToTeamsWizard).
+Di seguito sono riportati i fattori chiave per determinare il percorso appropriato per l'organizzazione. 
 
-## <a name="upgrade-journeys"></a>Aggiornare i viaggi
+## <a name="overlapping-capabilities-method-using-islands-mode"></a>Metodo di funzionalità sovrapposte (utilizzo della modalità isole)
 
-È possibile adottare più approcci per l'aggiornamento da Skype for business, online o locale, a teams:
+Con il metodo di funzionalità sovrapposte, gli utenti possono usare sia i team che i client Skype for business per la chat, le chiamate VoIP e le riunioni. In questo metodo, le chiamate chat e VOIP in teams sono focalizzate all'interno dell'organizzazione, mentre Skype for business consente la chat e le chiamate VOIP/PSTN con organizzazioni esterne (se configurate). Le riunioni possono essere pianificate e frequentate in entrambi i prodotti.
 
-- In un viaggio di aggiornamento diretto devi prima distribuire teams insieme a Skype for business in **Islands** mode come parte della valutazione e dell'adozione iniziale e quindi aggiornare gli utenti alla modalità **solo teams** con l'obiettivo di ritirare rapidamente Skype for business dal ambiente per tutti gli utenti dell'organizzazione. Questo è il viaggio consigliato per i clienti Skype business online, a meno che non si preoccupi che i loro utenti vengano confusi con due strumenti per eseguire la stessa azione (chat, chiamata, pianificazione delle riunioni).
-- Un viaggio di aggiornamento graduale offre una specifica modalità di coesistenza e aggiornamento a un gruppo specifico di utenti (detto anche *coorte*), a seconda dei requisiti di comunicazione e collaborazione. Nel corso del tempo, l'intera organizzazione può confluire nell'uso di teams only e infine sostituire Skype for business. Tuttavia, se l'organizzazione ha motivi commerciali interessanti per evitare Skype for business, ad esempio una dipendenza da una soluzione basata su Unified Communications Managed API (UCMA), che si integra con le applicazioni line-of-business o da una soluzione di Wall Ethical attualmente disponibile solo per Skype for business o per una distribuzione VoIP aziendale complessa che deve richiedere tempo per l'aggiornamento a **Teams only**, è possibile aggiornare una parte degli utenti alla modalità **solo teams** mantenendo gli utenti di Skype for business in una delle modalità di coesistenza per una parte del popolamento degli utenti. Il percorso di aggiornamento graduale è l'approccio consigliato per i clienti locali (e ibridi) che iniziano con Skype for business con la modalità di coesistenza di teams e si spostano da lì alla modalità solo teams quando i requisiti per gli utenti si incontrano (possibilmente tramite il Skype for business con la modalità di coesistenza di teams e meetings.
+Quando si usa il metodo di funzionalità sovrapposte, il traffico delle comunicazioni per Skype for business e teams rimane separato (anche per lo stesso utente) e i due diversi client non comunicano mai tra loro (per gli utenti all'interno della stessa organizzazione). Le esperienze degli utenti si basano sulla configurazione del destinatario. Supponiamo ad esempio che l'utente destinatario A usi questo metodo di aggiornamento:
 
-> [!IMPORTANT]
-> Per entrambi i tipi di viaggio di aggiornamento, se l'organizzazione è attualmente una distribuzione locale di Skype for business, è necessario iniziare a pianificare l'implementazione di Skype for business Hybrid prima di aggiornare gli utenti alla modalità **solo teams** . Questo aiuterà anche a facilitare l'interoperabilità con i team.
+- Le comunicazioni avviate dal client Skype for business di un altro utente verranno sempre atterrate nel client Skype for business dell'utente.
+- Le comunicazioni avviate dal client Teams da un *utente della stessa organizzazione* sbarcheranno sempre nel client teams di un utente.
+- Le comunicazioni avviate dal client Teams da un *utente di un'organizzazione esterna* verranno sempre atterrate nel client Skype for business di un utente.
+
+Se è stata assegnata una licenza di Office 365 agli utenti, questa sarà l'esperienza di aggiornamento predefinita per l'organizzazione. Quando si assegna una licenza di Office 365, le licenze di Skype for business online vengono assegnate per impostazione predefinita. <sup>2</sup>
+
+Affinché questo metodo funzioni efficacemente, tutti gli utenti devono eseguire entrambi i client contemporaneamente. Le chat in arrivo e le chiamate dall'interno dell'organizzazione a un utente in modalità isole possono atterrare nel client Skype for business o teams e questo non è sotto il controllo del destinatario. Dipende dal client usato dal mittente per avviare la comunicazione. Se il mittente e il destinatario si trovano in organizzazioni diverse, le chiamate in arrivo e le chat di un utente in modalità isole atterrano sempre nel client Skype for business.
+
+Ad esempio, se un destinatario in modalità isole ha eseguito l'accesso a Skype for business, ma non a teams, e qualcuno li invia tramite teams, il destinatario della modalità isole non vedrà il messaggio (ma alla fine riceverà un messaggio di posta elettronica che indica che non è stato ricevuto un SMS in teams). Allo stesso modo, se un utente ha in uso teams, ma non Skype for business, e i messaggi inviati dall'utente da Skype for business, l'utente non vedrà quella chat. Il comportamento in ognuno di questi casi è simile per la chiamata. Se gli utenti non eseguono entrambi i client, può facilmente comportare frustrazione.
+
+La presenza funziona anche in modo indipendente tra teams e Skype for business usando questo metodo di aggiornamento. Questo significa che gli altri utenti possono visualizzare stati di presenza diversi per l'utente A, a seconda del client che usano. Per altre informazioni, Vedi [presenza](upgrade-to-Teams-on-prem-overview.md#presence).
+
+- Altri utenti, quando usano teams, vedranno la presenza in base alle attività dell'utente in teams.
+- Altri utenti, quando usano Skype for business, vedranno la presenza in base alle attività dell'utente in Skype for business.
+
+Quando si è pronti per aggiornare gli utenti alla modalità TeamsOnly, è possibile aggiornare gli utenti singolarmente oppure è possibile aggiornare l'intero tenant in una sola volta usando il criterio a livello di tenant<sup>3</sup>. Quando un utente viene aggiornato alla modalità TeamsOnly, riceve tutte le chat in arrivo e le chiamate in teams.
+
+Tuttavia, i destinatari non aggiornati in modalità isole possono continuare a ricevere chat e chiamate da un utente di TeamsOnly nei client Skype for business o teams. Per le conversazioni esistenti, l'utente di TeamsOnly risponderà al client in cui il mittente ha avviato la chat o la chiamata. 
+
+Per le nuove conversazioni dal punto di vista dell'utente di TeamsOnly, la chat o la chiamata andranno sempre al client teams Mode Islands Users. Questo perché il client teams mantiene i thread di conversazione separati per le comunicazioni team-to-teams e teams-to-Skype for business, anche per lo stesso utente. Per altre informazioni, vedere [conversazioni in teams-interoperabilità rispetto ai thread nativi](upgrade-to-Teams-on-prem-overview.md#teams-conversations---interop-versus-native-threads).
+
+La tabella seguente riepiloga l'esperienza dei team per la modalità Islands e TeamsOnly:
+
+| Esperienza Teams | In modalità Isole | In modalità TeamsOnly |
+|:------------------ | :------------------- | :------------------ |
+| Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Team |
+| Chiamate PSTN ricevute in: | Skype for business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.    | Team |   
+ |Presenza  | La presenza in Skype for business e teams è indipendente. Gli utenti possono visualizzare stati diversi per gli stessi utenti delle isole, a seconda del client che usano. | La presenza si basa esclusivamente sulle attività dell'utente in teams. Tutti gli altri utenti, indipendentemente dal client che usano, vedono quella presenza. | 
+ | Pianificazione delle riunioni   | Gli utenti possono pianificare le riunioni in teams o in Skype for business. Vedranno entrambi i componenti aggiuntivi in Outlook. |   Gli utenti pianificano solo riunioni in teams. Solo il componente aggiuntivo teams è disponibile in Outlook. | 
+
+La tabella seguente riepiloga i pro e i contro dell'uso del metodo di funzionalità sovrapposte per eseguire la migrazione dell'organizzazione a teams.
+
+| I professionisti     |       Contro |
+| :------------------ | :---------------- |
+| Consente l'adozione rapida all'interno di un'organizzazione.| Possibilità di confusione degli utenti finali perché esistono due client con funzionalità simili, ma interfacce utente diverse. Inoltre, non hanno alcun controllo su quale client le chat in arrivo/chiamate atterrano. |
+| Consente agli utenti di acquisire familiarità con i team e di avere ancora accesso completo a Skype for business. | Potenziale per l'insoddisfazione degli utenti finali a causa di messaggi mancanti se l'utente non ha eseguito entrambi i client.|
+| Sforzo di amministrazione minimo per iniziare in teams. | Può essere difficile "uscire dalle isole" e passa alla modalità TeamsOnly se gli utenti e coloro con cui comunicano regolarmente non usano attivamente team.|
+|Consente agli utenti di sfruttare le funzionalità per migliorare il lavoro di gruppo che non sono disponibili in Skype for business.| Un utente che usa Skype for business in locale e in teams non sarà in grado di comunicare da teams con un altro utente che usa Skype for business in locale, ma non ha team.  |
+
+<sup>2</sup> Questo vale anche se l'utente è ospitato in locale in Skype for Business Server. Se l'utente è ospitato in locale o online, lascia la licenza di Skype for business online abilitata, perché è attualmente necessaria per la funzionalità completa di teams.
+
+<sup>3</sup> Tieni presente che la migrazione delle riunioni di Skype for business alle riunioni di teams viene attivata solo quando applichi TeamsUpgradePolicy a singoli utenti, non in base al tenant. Per informazioni dettagliate, vedere [migrazione delle riunioni](upgrade-to-Teams-on-prem-overview.md#meeting-migration) .
+
+## <a name="select-capabilities-method-using-skype-for-business-modes"></a>Metodo di selezione delle funzionalità (utilizzo delle modalità Skype for business)
+
+Alcune organizzazioni preferiscono offrire agli utenti finali un'esperienza più prevedibile per le transizioni dell'organizzazione da Skype for business a teams. In questo modello gli amministratori IT usano una delle modalità Skype for business in TeamsUpgradePolicy per specificare in modo esplicito quali funzionalità restano in Skype for business prima di eseguire la migrazione alla modalità TeamsOnly. Dato che sono pronti a spostare le funzionalità selezionate in modalità TeamsOnly, l'amministratore aggiorna la modalità per gli utenti a TeamsOnly. Durante questa transizione:
+
+- Gli amministratori hanno opzioni per abilitare determinate funzionalità di teams per gli utenti mantenendo le funzionalità di chat e chiamate in Skype for business prima che gli utenti si trasferiscino in TeamsOnly Experience. L'amministrazione può abilitare le funzionalità di collaborazione di teams o le riunioni teams + Collaboration.
+- Gli utenti ancora in Skype for Business ricevono tutte le chat in arrivo e le chiamate nel client Skype for business, indipendentemente dal fatto che la comunicazione sia stata originata dai team di altri utenti o dal client Skype for business. Inoltre, per questi utenti di Skype for business, le funzionalità di chiamata e chat nel client teams sono disabilitate per impedire la confusione degli utenti finali e garantire il routing e la presenza corretti.
+- Gli utenti in modalità TeamsOnly ricevono tutte le chat in arrivo e le chiamate nel client teams e la presenza è fornita da teams, indipendentemente da dove la comunicazione ha avuto origine da: teams, Skype for business o qualsiasi tipo di utente federato.
+
+Diversamente dal metodo delle funzionalità sovrapposte, nel metodo Select capabilities gli utenti che usano Skype for business possono comunicare con gli utenti che si trovano in TeamsOnly. La comunicazione tra un utente di Skype for business e un utente di teams è nota come [interoperabilità](upgrade-to-Teams-on-prem-overview.md#interoperability) o "Interop". Le comunicazioni di interoperabilità sono possibili su base uno-a-uno per le chat e le chiamate tra un utente in Skype for business e un altro utente in teams. Inoltre, gli utenti invitati possono sempre partecipare a una riunione Skype for business o teams, ma devono usare un client che corrisponda al tipo di riunione. Per altre informazioni, vedere [riunioni](upgrade-to-Teams-on-prem-overview.md#meetings).
+
+Per gli utenti in un metodo di selezione delle funzionalità, la presenza per un utente è coerente indipendentemente dal client usato dall'altro utente. Se l'utente si trova in una delle modalità Skype for business, tutti gli altri utenti vedranno la presenza in base alle attività dell'utente in Skype for business. Allo stesso modo, se un utente è in modalità TeamsOnly, tutti gli altri utenti vedranno la presenza in base alle attività dell'utente in teams. Per informazioni dettagliate, vedere [presenza](upgrade-to-Teams-on-prem-overview.md#presence).
+
+Per un'organizzazione che ha scelto di seguire il metodo di selezione delle funzionalità, l'amministratore deve cambiare la modalità a livello di tenant da Islands alla modalità di coesistenza Skype for business appropriata (SfbWithTeamsCollab o SfBWithTeamsCollabAndMeetings).  
+
+Le esperienze degli utenti Guest si atterranno alla modalità di coesistenza assegnata al tenant. Se si imposta una modalità Skype for business a livello di tenant, gli utenti non possono chattare, chiamare o mostrare la propria presenza. Per altre informazioni, vedere [Accesso guest in Teams](guest-access.md).
+
+Quando la modalità cambia da Islands a SfbWithTeamsCollab, un utente che non ha mai usato teams vedrà nessuna differenza nel modo in cui usano Skype for business. Tuttavia, se l'utente inizia a usare teams, verrebbe esposto solo a funzionalità come team & canale e file. La chat, le chiamate e la pianificazione delle riunioni non sarebbero disponibili in teams, poiché l'amministratore ha (per ora) nominato Skype for business come client desiderato per tali funzioni.
 
 > [!NOTE]
-> La modalità **solo teams** richiede che gli utenti che fanno parte di coorti siano ospitati in Skype for business online e che sia necessaria una relazione ibrida tra la distribuzione locale di Skype for business e il tenant di Skype for business online per facilitare l' interoperabilità tra Skype for business e teams. Il passaggio a Skype for business online deve essere completato per gli utenti che fanno parte delle coorti prima di essere aggiornati alla modalità **solo teams** . Skype for Business Server 2019 e Skype for Business Server 2015 con CU8 Update possono semplificare la meccanica dell'aggiornamento degli utenti locali ai team gestendo la migrazione a Skype for business online e aggiornando gli utenti alla modalità **solo teams** in un unico passaggio .
+> Quando l'utente modifica le proprie isole in una delle modalità Skype for business, il client teams di qualsiasi altro utente che comunica con l'utente deve sapere che la modalità di un utente è cambiata in modo che possa instradare la comunicazione al client appropriato per l'utente A. Per tutti gli utenti che hanno già stabilito le chat di teams-to-teams native con l'utente A, può richiedere del tempo per i client di questi altri utenti di essere a conoscenza della modalità di modifica delle isole in qualsiasi modalità Skype for business. Quando gli amministratori sono pronti, possono spostare la chat, le chiamate e la pianificazione delle riunioni per un utente specifico in teams tutti insieme aggiornando la modalità dell'utente in TeamsOnly.
 
-### <a name="direct-upgrade-journey"></a>Percorso di aggiornamento diretto
+In alternativa, l'amministratore può prima di tutto spostare solo la pianificazione della riunione in teams, lasciando le funzioni di chat e chiamate in Skype for business usando la modalità SfBWithTeamsCollabAndMeetings. Questa modalità consente alle organizzazioni di passare ai team per le riunioni, se gli utenti non sono ancora pronti per il passaggio alla modalità TeamsOnly, ad esempio non si è ancora pronti per eseguire la migrazione delle funzionalità PSTN esistenti. Questo scenario di transizione viene indicato per [primo come riunioni](meetings-first.md).
 
-Il percorso di aggiornamento diretto è illustrato nel diagramma seguente.
 
-![Screenshot del percorso di aggiornamento diretto] (media/upgrade_journey_direct_upgrade.png "Screenshot del percorso di aggiornamento diretto. Tutti gli utenti usano inizialmente teams in modalità isole, quindi transizione alla modalità solo teams, con lo stato finale dell'intera organizzazione aggiornata a teams.")
+|Esperienza Teams  |In modalità SfBWithTeamsCollab |In modalità SfBWithTeamsCollabAndMeetings |In modalità TeamsOnly  |
+|---------|---------|---------|---------|
+|Chat in arrivo e chiamate VOIP dagli utenti dell'organizzazione ricevute in:     | Skype for business        | Skype for business       | Team        |
+|Chiamate PSTN ricevute in:     | Skype for business        |Skype for business         | Team        |
+|Presenza     | Skype for business        |Skype for business         | Team        |
+|Pianificazione delle riunioni     | Skype for business         | Team        | Team        |
 
-I team vengono distribuiti a tutti gli utenti dell'organizzazione e configurati in modalità **isole** . Quando l'organizzazione determina che i team sono pronti a soddisfare tutte le esigenze di comunicazione e collaborazione, avvisa gli utenti e aggiornali alla modalità **solo teams** . A questo punto, Skype for business può essere ritirato dall'ambiente.
 
-### <a name="gradual-upgrade-journey"></a>Percorso di aggiornamento graduale
+La tabella seguente riepiloga i pro e i contro dell'uso delle modalità Skype for business come passaggio di transizione verso la modalità TeamsOnly.
 
-Un esempio di percorso di aggiornamento graduale è illustrato nel diagramma seguente.
+| I professionisti     |       Contro |
+| :------------------ | :---------------- |
+| Routing prevedibile per l'utente finale. Tutte le chiamate e le chat si atterrano in Skype for business o in teams (ma non entrambe), in base alla selezione dell'amministratore.|Le conversazioni di interoperabilità mancano del supporto per RTF, condivisione di file e condivisione dello schermo. Questo problema può essere risolto sfruttando la funzionalità incontra ora per avviare una riunione. |
+|Può ridurre la confusione degli utenti finali perché una determinata funzionalità è disponibile solo in un solo client. | Gli utenti non hanno accesso ai team per le attività comuni eseguite in Skype for business, come la chat e la chiamata prima dell'aggiornamento a TeamsOnly.|
+|L'amministratore ha aumentato il controllo del set di funzionalità disponibili per gli utenti durante la transizione da Skype for business a teams. | |
+| Consente a un'organizzazione di usare team per le riunioni, anche se non è ancora pronto per essere completamente in modalità TeamsOnly.||
+|La presenza di un utente specifico visualizzato da altri è la stessa, indipendentemente dal client che usano.||
 
-![Esempio illustrato del percorso di aggiornamento graduale] (media/upgrade_journey_gradual_upgrade.png "Nel percorso di aggiornamento graduale, le coorti degli utenti usano inizialmente teams in modalità Islands per la valutazione e quindi in una varietà di modalità di aggiornamento per l'adozione iniziale, affiancate da Skype for business. Alcune coorti possono passare alla modalità solo teams, mentre un gruppo di utenti rimane con Skype for business con la modalità di collaborazione e riunione teams.")
+## <a name="summary-of-upgrade-methods"></a>Riepilogo dei metodi di aggiornamento
+Nella tabella seguente vengono riepilogati i metodi di aggiornamento:
 
-Teams è distribuito nell'organizzazione in modalità **Islands** per la valutazione e quindi passa a diverse modalità di coesistenza e aggiornamento per diversi gruppi di utenti. Ad esempio, un gruppo di utenti può essere abilitato per la modalità **isole** , un altro abilitato per **Skype for business con la modalità di collaborazione e riunione in teams** , mentre un terzo gruppo di utenti potrebbe inizialmente essere abilitato per **Skype for business con teams modalità di sola collaborazione** .
 
-Nel tempo, i gruppi di utenti possono essere aggiornati alla modalità **solo teams** , seguiti dal resto dell'organizzazione. L'intera organizzazione sarà quindi pronta a ritirare Skype for business e a usare solo team per comunicazioni e collaborazione oppure, se i requisiti aziendali impongono che Skype for business venga mantenuto per un gruppo specifico, la maggior parte degli utenti del l'organizzazione può usare solo teams. <br><br>
+|Funzionalità sovrapposte (con la modalità isole)  |Funzionalità selezionate (con le modalità Skype for business)  |
+|---------|---------|
+|Prima di eseguire l'aggiornamento a TeamsOnly, è necessario che gli utenti eseguano entrambi i client contemporaneamente, poiché le chat in arrivo e le chiamate possono atterrare in entrambi i client.     | Chat e chiamate solo terra in un solo client, in base alla modalità del destinatario. Gli utenti non aggiornati possono eseguire entrambi i client, ma non sono presenti sovrapposizioni funzionali (le chiamate e le chat non sono disponibili in teams).         |
+|Consente agli amministratori di introdurre funzionalità sovrapposte (chat, riunioni, chiamate VOIP) sia in Skype for business che in teams per gli utenti finali, nonché nuove funzionalità (team e canali) in teams.     | Consente agli amministratori di introdurre le funzionalità di selezione dei team per gli utenti finali (team e canali), senza fornire le stesse funzionalità che esistono anche in Skype for business.        |
+|L'interoperabilità tra Skype for business e teams non esiste mentre entrambi gli utenti sono in modalità isole.      |L'interoperabilità è necessaria per la comunicazione tra Skype for business e gli utenti teams.         |
+
+> [!NOTE]
+> Se non si riesce a seguire i metodi supportati per la migrazione degli utenti di Skype for Business Server a teams, è possibile eseguire la transizione degli utenti a teams rimuovendo Skype for Business Server e tutti gli attributi utente correlati in Active Directory. Dopo che gli attributi di Azure Active Directory sono stati eliminati dagli attributi di Skype for Business Server e i record DNS sono stati ripuntati su Office 365, è possibile concedere la licenza agli utenti di Office 365 e aggiornarli a teams. 
+
+> [!IMPORTANT]
+> Con la migrazione completa, i dati di contatto e le riunioni non verranno migrati dall'ambiente locale a Microsoft teams.
+
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting a decision point"/> <br/>Punto decisionale</td><td><ul> Quale viaggio di aggiornamento è adatto ai requisiti aziendali dell'organizzazione?<br><br></ul></td></tr>
 <tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next step"/><br/>Passaggio successivo</td><td><ul> L'identificazione del modello di distribuzione corrente, l'uso di scenari di casi e le considerazioni chiave per l'organizzazione informano il viaggio ai team più adatti per l'organizzazione.<br><br></ul></td></tr>

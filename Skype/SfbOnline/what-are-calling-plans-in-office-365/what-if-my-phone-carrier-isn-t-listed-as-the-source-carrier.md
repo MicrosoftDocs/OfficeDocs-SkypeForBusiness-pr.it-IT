@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Calling Plans
 description: 'Informazioni su cosa fare se il gestore non è elencato in Skype for business. '
-ms.openlocfilehash: e882a376c8f7b0baf07c42e71c03a84acc16b4c4
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 7d1a9c70ffce63ee1a7ff437cb7157c5b8b5aeab
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34290807"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37924917"
 ---
 # <a name="what-if-my-phone-carrier-isnt-listed-as-the-source-carrier"></a>Cosa fare se il gestore di telefonia non è elencato come elemento portante di origine?
 
@@ -36,7 +36,7 @@ Esempio:
   
 - Se si sta trasportando il numero da Skype for business come gestore, è possibile che venga visualizzato Level3 elencato.
     
-  **Per istruzioni dettagliate, vedere [trasferire i numeri di telefono in Office 365](/microsoftteams/transfer-phone-numbers-to-office-365).**
+  **Per istruzioni dettagliate, vedere [trasferire i numeri di telefono in teams](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams).**
 
     > [!NOTE]
     > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

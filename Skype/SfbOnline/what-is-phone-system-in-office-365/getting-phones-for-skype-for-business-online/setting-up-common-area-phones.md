@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni sui passaggi di distribuzione per ottenere il firmware corretto, aggiornarlo se necessario, assegnare licenze e configurare le impostazioni per i telefoni delle aree comuni.
-ms.openlocfilehash: 9f84b8ebbdd9bfab6b146d3f748715a5e0602047
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: a245db1a2033f08d50e9a3c1a32f27981a3eb702
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35792456"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37924897"
 ---
 # <a name="set-up-common-area-phones"></a>Configurare i telefoni di aree comuni
 A common area phone (CAP) is typically placed in an area like a lobby or another area that is available to a lot of people. For example, a reception area phone, door phone or meeting room phone, CAPs are set up as devices rather than users and automatically sign into a network. In the steps below, we’ll help you set up an account for Phone System with Calling Plans so you can deploy these types of phones for your organization.
@@ -61,7 +61,7 @@ Dovrai seguire questi passaggi:
 Per maggiori informazioni sulle licenze, vedi [Licenze aggiuntive per Skype for Business e Microsoft Teams](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
 
 ### <a name="step-2---create-a-new-user-account-for-the-phone-and-assign-the-licenses"></a>Passaggio 2: crea un nuovo account utente per il telefono e assegna le licenze
-1. Nell'interfaccia di amministrazione, passa a **** > utenti**attivi** > gli utenti che**aggiungono un utente**.
+1. Nell'interfaccia di amministrazione, **passa a utenti** > **attivi** > gli utenti che**aggiungono un utente**.
 2. Inserisci come **Nome utente** "Reception" per il nome e "Principale" per il cognome.
 3. Inserisci un **Nome da visualizzare** se non si genera automaticamente uno come "Reception Principale".
 4. Inserisci un **Nome utente** come "ReceptionPrincipale" o "IngressoPrincipale".
@@ -97,7 +97,7 @@ Per maggiori dettagli, vedi [Aggiungere un utente](https://support.office.com/ar
 
 Per ulteriori informazioni, vedi [Ottenere numeri di telefono per i tuoi utenti](/microsoftteams/getting-phone-numbers-for-your-users).
 
-Nel cado te lo stessi chiedendo, puoi anche prendere il tuo numero di telefono che hai con un altro operatore e "*portarlo*"o trasferirlo su Office 365. Vedere [trasferire i numeri di telefono in Office 365](/microsoftteams/transfer-phone-numbers-to-office-365).
+Nel cado te lo stessi chiedendo, puoi anche prendere il tuo numero di telefono che hai con un altro operatore e "*portarlo*"o trasferirlo su Office 365. Vedere [trasferire i numeri di telefono in teams](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams).
 
 ### <a name="step-4---setting-up-your-phone"></a>Passaggio 4: configurazione del telefono
 

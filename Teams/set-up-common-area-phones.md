@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare i telefoni per l'area comune per atri, aree di ricezione e sale conferenze "
-ms.openlocfilehash: fa25de7484d8ac70e924e750c4e7633bfc160c04
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: d00d91d4461a8b197f8629d3dfe9cee6653b2473
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571594"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37925307"
 ---
 # <a name="set-up-the-common-area-phone-license-for-microsoft-teams"></a>Configurare la licenza telefonica per l'area comune per Microsoft Teams
 > [!NOTE]
@@ -114,6 +114,6 @@ Usare l'interfaccia di amministrazione di Skype for business per assegnare un nu
 
 Per altre informazioni, vedere [recupero di numeri di telefono per gli utenti](/microsoftteams/getting-phone-numbers-for-your-users).
 
-È anche possibile prendere il numero di telefono che si ha con un altro vettore e "porta" oppure trasferirlo in Office 365. Vedere [trasferire i numeri di telefono in Office 365](transfer-phone-numbers-to-office-365.md).
+È anche possibile prendere il numero di telefono che si ha con un altro vettore e "porta" oppure trasferirlo in Office 365. Vedere [trasferire i numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
 
 

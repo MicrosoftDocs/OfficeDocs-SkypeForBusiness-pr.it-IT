@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0453aeee-c41f-44e6-a6e0-aaace526ca08
 description: Fare riferimento a topologie per Skype for Business Server, inclusi i diagrammi e le decisioni da apportare alle organizzazioni grandi, medie e piccole.
-ms.openlocfilehash: 9ec00fb6aa8d318a1eddec4b16c902e5f0fca5dd
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 7f284b141da25175e3a41545349a0e61f6036019
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195960"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37028354"
 ---
 # <a name="reference-topologies-for-skype-for-business-server"></a>Topologie di riferimento per Skype for Business Server
 
@@ -71,7 +71,7 @@ La topologia di riferimento con elevata disponibilità e un singolo centro dati 
 
     Se si vuole aggiungere un'abilità di ripristino di emergenza, è possibile valutare la possibilità di creare un altro Data Center e aggiungere un altro pool di front-end e associarlo al pool Front-End nel Data Center corrente. In caso di un disastro che influisce sul pool principale, gli amministratori potrebbero non eseguire il failover degli utenti nel pool di backup.
 
-- **Server back-end** con mirroring Per ottenere una disponibilità più elevata per le funzionalità utente di base, l'organizzazione ha distribuito una coppia speculare di server back-end per ogni pool Front-end.
+- **Server back-end con mirroring** Per ottenere una disponibilità più elevata per le funzionalità utente di base, l'organizzazione ha distribuito una coppia speculare di server back-end per ogni pool Front-end.
 
 - **Opzioni di database del server di monitoraggio.** Questa organizzazione ha implementato il monitoraggio per garantire la qualità delle chiamate vocali aziendali e delle conferenze A/V. Il monitoraggio viene distribuito in tutti i server front-end e il database di monitoraggio è collocato con i server back-end. Supportiamo anche le topologie in cui il database di monitoraggio si trova in un server separato.
 
@@ -79,7 +79,7 @@ La topologia di riferimento con elevata disponibilità e un singolo centro dati 
 
 - **Opzioni di distribuzione del sito di succursale.** L'organizzazione in questa topologia ha distribuito VoIP aziendale come soluzione vocale. Il sito della filiale 1 non ha un collegamento WAN (Wide Area Network) resiliente al sito centrale, quindi ha un Survivable Branch Appliance distribuito per gestire molte caratteristiche di Skype for Business Server nel caso in cui il collegamento WAN al sito centrale vada giù. Il sito della filiale 2 ha tuttavia un collegamento WAN resiliente, quindi è necessario solo un gateway PSTN (Public Switched Telephone Network). Il gateway PSTN distribuito supporta il bypass multimediale, quindi non è necessario alcun Mediation Server nel sito della filiale 2. Per altre informazioni, vedere [pianificare la resilienza di VoIP aziendale in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice-resiliency.md).
 
-- **Bilanciamento del carico DNS.** Il pool Front-end e il pool Edge Server hanno il bilanciamento del carico DNS per il traffico SIP distribuito. In questo modo, viene eliminata la necessità di un bilanciamento del carico hardware per gli Edge Server e si riduce significativamente la configurazione e la manutenzione dei dispositivi di bilanciamento del carico hardware per gli altri pool, poiché i dispositivi di bilanciamento del carico hardware sono necessari solo per il traffico HTTP. Per altre informazioni, vedere (.. /.. /plan-your-deployment/network-requirements/load-balancing.md#BKMK_DNSLoadBalancing).
+- **Bilanciamento del carico DNS.** Il pool Front-end e il pool Edge Server hanno il bilanciamento del carico DNS per il traffico SIP distribuito. In questo modo, viene eliminata la necessità di un bilanciamento del carico hardware per gli Edge Server e si riduce significativamente la configurazione e la manutenzione dei dispositivi di bilanciamento del carico hardware per gli altri pool, poiché i dispositivi di bilanciamento del carico hardware sono necessari solo per il traffico HTTP. Per altre informazioni, Vedi [bilanciamento del carico DNS](../../plan-your-deployment/network-requirements/load-balancing.md#BKMK_DNSLoadBalancing).
 
 - **Distribuzione della messaggistica unificata di Exchange.** Questa topologia di riferimento include un server di messaggistica UNIFICAta di Exchange, che esegue Microsoft Exchange Server e non Skype for Business Server.
 
@@ -115,7 +115,7 @@ Questa topologia è illustrata in più diagrammi, con una panoramica seguita da 
 
 - **I pool Front-End sono associati per consentire il ripristino di emergenza.** I pool Front-end del sito A e del sito B sono associati tra loro per consentire il supporto per il ripristino di emergenza. Se il pool di un sito non riesce, l'amministratore può eseguire il failover degli utenti da tale sito al pool Front-end associato dell'altro sito, con un minimo di interruzioni dei servizi per gli utenti. Ognuno di questi due pool Front-end include sei server, che sono sufficienti per tutti gli utenti di 40.000 in entrambi i pool in caso di failover. Per altre informazioni, Vedi [pianificare l'elevata disponibilità e il ripristino di emergenza in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md).
 
-- **Server back-end** con mirroring Per ottenere una disponibilità più elevata per le funzionalità utente di base, l'organizzazione ha distribuito una coppia speculare di server back-end per ogni pool Front-end. Si tratta di una topologia facoltativa e si può scegliere di distribuire un singolo server back-end. Sono supportati anche i cluster SQL e i gruppi di disponibilità AlwaysOn. Per altre informazioni, vedi la [disponibilità elevata del server back-end in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/back-end-server.md).
+- **Server back-end con mirroring** Per ottenere una disponibilità più elevata per le funzionalità utente di base, l'organizzazione ha distribuito una coppia speculare di server back-end per ogni pool Front-end. Si tratta di una topologia facoltativa e si può scegliere di distribuire un singolo server back-end. Sono supportati anche i cluster SQL e i gruppi di disponibilità AlwaysOn. Per altre informazioni, vedi la [disponibilità elevata del server back-end in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/back-end-server.md).
 
 - **Uso di server standard in un sito di succursale.** Questa organizzazione considera il sito C come sito di succursale perché ha solo 600 dipendenti. Tuttavia, gli utenti hanno molte conferenze A/V tra di loro. Se è stata distribuita in Skype for Business Server come sito di succursale, il supporto per queste conferenze verrebbe eseguito attraverso la rete WAN e da un sito centrale con un server front-end distribuito. Per evitare questo potenziale carico di larghezza di banda, hanno installato una coppia di server standard in questo sito, che ospiterà queste conferenze. E dato che i server standard sono installati in questa pagina, Skype for Business Server per definizione lo considera un sito centrale e viene trattato come tale in Generatore di topologie e nello strumento di pianificazione.
 
@@ -125,7 +125,7 @@ Questa topologia è illustrata in più diagrammi, con una panoramica seguita da 
 
 - **Monitoraggio e archiviazione** Questa organizzazione ha implementato sia il monitoraggio che l'archiviazione. Quando si distribuisce il monitoraggio o l'archiviazione, viene eseguito in ogni server front-end. I database per queste funzionalità possono essere collocati nel database di back-end o in un server separato. Questa organizzazione ha individuato questi database in un server separato dai server back-end, nel sito centrale B. I database qui ricevono il monitoraggio e l'archiviazione dei dati dai server front-end in tutti i siti.
 
-- **Opzioni di distribuzione del sito di succursale.** Questa organizzazione ha in realtà oltre 50 siti di succursale, solo due dei quali sono mostrati nei diagrammi dettagliati. Il sito della filiale 1 non ha un collegamento WAN resiliente al sito centrale, in modo che abbiano gli elettrodomestici Survivable Branch distribuiti per consentire il servizio telefonico nel caso il collegamento WAN al sito centrale vada giù. Il sito della filiale 2 ha tuttavia un collegamento WAN resiliente, quindi necessita solo di un gateway PSTN (Public Switched Telephone Network). Il gateway PSTN distribuito supporta il bypass multimediale, quindi non è necessario alcun Mediation Server nel sito della filiale 2. Per informazioni dettagliate su come decidere cosa installare in un sito di succursale, vedere Pianificare la resilienza di [Enterprise Voice in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice-resiliency.md).
+- **Opzioni di distribuzione del sito di succursale.** Questa organizzazione ha in realtà oltre 50 siti di succursale, solo due dei quali sono mostrati nei diagrammi dettagliati. Il sito della filiale 1 non ha un collegamento WAN resiliente al sito centrale, in modo che abbiano gli elettrodomestici Survivable Branch distribuiti per consentire il servizio telefonico nel caso il collegamento WAN al sito centrale vada giù. Il sito della filiale 2 ha tuttavia un collegamento WAN resiliente, quindi necessita solo di un gateway PSTN (Public Switched Telephone Network). Il gateway PSTN distribuito supporta il bypass multimediale, quindi non è necessario alcun Mediation Server nel sito della filiale 2. Per informazioni dettagliate su come decidere cosa installare in un sito di succursale, vedere [pianificare la resilienza di Enterprise Voice in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice-resiliency.md).
 
 - **Trunking SIP e Mediation Server.** Si noti che nel sito centrale B, Mediation Server non è collocato con i server front-end. Questo avviene perché Mediation Server autonomo è consigliato per i siti che usano il trunking SIP. Nella maggior parte delle altre istanze ti consigliamo di collocare Mediation Server con Front End Server. Per informazioni dettagliate sulle topologie di Mediation Server, vedere [componenti e topologie per Mediation Server](https://technet.microsoft.com/library/71397168-36c3-4d21-b8ef-db6a751634ee.aspx) nella documentazione relativa alla pianificazione.
 
@@ -140,7 +140,7 @@ Questa topologia è illustrata in più diagrammi, con una panoramica seguita da 
 
     Il sito centrale B usa Exchange ospitata, quindi ospita anche la funzionalità del server Messaggistica unificata di Exchange.
 
-    Per informazioni dettagliate sulla messaggistica unificata di Exchange, vedere integrazione della messaggistica unificata di Exchange [locale](https://technet.microsoft.com/library/e7c63a71-2d99-4aa9-b649-36c1a431bdf1.aspx) e [integrazione della messaggistica unificata](https://technet.microsoft.com/library/f4de0165-da3b-499e-98fc-28ddd0db02d5.aspx) di Exchange ospitata nella documentazione relativa alla pianificazione.
+    Per informazioni dettagliate sulla messaggistica unificata di Exchange, vedere integrazione della messaggistica unificata di Exchange [locale](https://technet.microsoft.com/library/e7c63a71-2d99-4aa9-b649-36c1a431bdf1.aspx) e [integrazione della messaggistica unificata di Exchange ospitata](https://technet.microsoft.com/library/f4de0165-da3b-499e-98fc-28ddd0db02d5.aspx) nella documentazione relativa alla pianificazione.
 
 - **Server di Office Web Apps.** È consigliabile distribuire un server di Office Web Apps o una server farm di Office Web Apps in tutte le organizzazioni che usano servizi di conferenza Web. È possibile distribuire una singola farm di Office Web Apps in un sito che serve traffico da tutti i siti o distribuirlo in ogni sito. Office Web Apps Server rende possibile la presentazione di diapositive di PowerPoint in conferenze Web.
 

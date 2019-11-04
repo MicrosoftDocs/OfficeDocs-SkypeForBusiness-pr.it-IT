@@ -13,12 +13,12 @@ ms.reviewer: vikramju
 description: Informazioni sulle barriere informative e sul loro impatto sui team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9a8f67e03ca005ef99a4a2fbfd3c3e05373c53ad
-ms.sourcegitcommit: 2064c94eae82a5453674d38f0b28dcd6dc5c370e
+ms.openlocfilehash: f3d6d8d603d9ff6ccf20a355e374b58fdf46ffa1
+ms.sourcegitcommit: 2e005b335b1566c99b93fc311498702838466324
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37885530"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931804"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -27,7 +27,7 @@ Gli ostacoli alle informazioni sono criteri che possono essere configurati da un
 > [!NOTE]
 > - Non è possibile creare gruppi di barriere informativi tra i tenant.
 > - L'uso dei bot per l'aggiunta di utenti non è supportato nella versione 1.
-> - Barriere informative la versione 1 non include il supporto per SharePoint e OneDrive for business. Stiamo lavorando per abilitare la funzionalità in SharePoint e comunicheremo quando sarà disponibile.
+> - Novità: il supporto delle informazioni barriera per il sito di SharePoint connesso a teams è ora in anteprima privata. Fare clic [qui](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3-O9WDTKhhDtgWfphwS9YhUM0hJNklNRkZKMlhLNDRZNzlEQlVDSjdZVi4u) per partecipare all'anteprima privata. .
 
 I criteri barriera delle informazioni impediscono anche ricerche e individuazione. Questo significa che se tenti di comunicare con qualcuno con cui non devi comunicare, non troverai l'utente nella selezione persone.
 
@@ -76,45 +76,37 @@ Se esiste una chat o altre comunicazioni esistenti tra gli utenti e viene impost
 - **Chat di gruppo** : se la comunicazione di un utente al gruppo non è più consentita (ad esempio, se un utente cambia lavoro), l'utente insieme agli altri utenti che violano il criterio potrebbe essere rimosso dalla chat di gruppo e altre comunicazioni con il gruppo non saranno consentiti. L'utente può ancora vedere le vecchie conversazioni (che saranno di sola lettura), ma non sarà in grado di vedere o partecipare a nuove conversazioni con il gruppo. Se i criteri nuovi o modificati che impediscono la comunicazione vengono applicati a più utenti, gli utenti interessati dal criterio potrebbero essere rimossi da una chat di gruppo. Possono ancora vedere le conversazioni precedenti. 
 - **Team** -tutti gli utenti rimossi dal gruppo vengono rimossi dal team e non saranno in grado di vedere o partecipare a conversazioni esistenti o nuove.
 
+
 ## <a name="what-will-users-experience-if-another-user-is-blocked"></a>Che cosa faranno gli utenti se un altro utente è bloccato?
 
 Attualmente gli utenti avvertono quanto segue se un criterio barriera informativo blocca un altro utente:
 
-- **Scheda persone** -un utente può visualizzare alcuni utenti bloccati nella scheda **persone** . L'utente può selezionare gli utenti bloccati.
-- **Scheda attività** : se un utente visita la scheda **attività** di un utente bloccato, non verranno visualizzati messaggi. La scheda **attività** Visualizza solo i post di canale e non ci sarebbero canali comuni tra i due utenti.
-- **Organigrammi: se** un utente accede a un organigramma in cui viene visualizzato un utente bloccato, l'utente verrà visualizzato nel grafico e sarà possibile fare clic su azioni nel grafico, ma le azioni (ad esempio le chiamate) non verranno passate.
-- **Scheda persone** : se un utente partecipa a una conversazione e viene successivamente bloccato, gli altri utenti possono ancora vedere la scheda persone per l'utente bloccato. Tutte le azioni elencate nella scheda, ad esempio le chiamate e le chat, saranno disponibili, ma le azioni non verranno superate.
-- **Contatti suggeriti** : nell'elenco contatti suggeriti (elenco contatti iniziale visualizzato per i nuovi utenti) gli utenti possono visualizzare tutti i contatti suggeriti (inclusi gli utenti bloccati). Tuttavia, se un utente fa clic sul nome di un utente bloccato per aprire il riquadro chat, il messaggio verrà bloccato.
-- **Contatti chat** : un utente può visualizzare gli utenti bloccati nell'elenco contatti chat.
-- **Chiamate contatti** -un utente può visualizzare gli utenti bloccati nell'elenco di contatti delle chiamate e vengono visualizzate azioni come chiamate e messaggi, ma quando l'utente prova a chiamare o a inviare un messaggio all'utente bloccato, la chiamata o il messaggio non passerà.
-- **Migrazione di Skype to teams** -durante una migrazione di Skype for business a teams, tutti gli utenti, anche quelli bloccati da criteri di barriera delle informazioni, verranno migrati in teams e verranno gestiti come descritto sopra.
-
-In arrivo: gli utenti sperimenteranno quanto segue se un criterio barriera informativo blocca un altro utente:
-
 - **Scheda persone** -un utente non può visualizzare gli utenti bloccati nella scheda **persone** .
+- **Selezione persone** -gli utenti bloccati non saranno visibili nella selezione persone.
 - **Scheda attività** : se un utente visita la scheda **attività** di un utente bloccato, non verranno visualizzati messaggi. La scheda **attività** Visualizza solo i post di canale e non ci sarebbero canali comuni tra i due utenti.
 - **Organigrammi: se** un utente accede a un organigramma in cui viene visualizzato un utente bloccato, l'utente bloccato non verrà visualizzato nell'organigramma e verrà visualizzato un messaggio di errore.
 - **Scheda persone** : se un utente partecipa a una conversazione e l'utente viene bloccato in seguito, gli altri utenti vedranno un messaggio di errore al posto della scheda persone quando passa il puntatore del mouse sul nome dell'utente bloccato. Le azioni elencate nella scheda, ad esempio le chiamate e le chat, non saranno disponibili.
 - **Contatti suggeriti** : gli utenti bloccati non vengono visualizzati nell'elenco dei contatti suggeriti (l'elenco dei contatti iniziale visualizzato per i nuovi utenti).
-- **Contatti chat** -un utente non può visualizzare gli utenti bloccati nell'elenco contatti chat.
+- **Contatti chat** : un utente può visualizzare gli utenti bloccati nell'elenco contatti chat, ma gli utenti bloccati verranno identificati e l'unica azione che l'utente può eseguire è eliminarli. L'utente può anche fare clic su di essi per visualizzare la conversazione passata.
 - **Chiamate contatti** -un utente può vedere gli utenti bloccati nell'elenco contatti chiamate, ma gli utenti bloccati verranno identificati e l'unica azione che l'utente può eseguire è eliminarli.
 - **Migrazione di Skype to teams** -durante una migrazione di Skype for business a teams, tutti gli utenti, anche quelli bloccati da criteri di barriera delle informazioni, verranno migrati in teams e verranno gestiti come descritto sopra.
 
+
+
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
-Gli ostacoli alle informazioni stanno per essere implementati e sono inclusi negli abbonamenti, ad esempio:
+Quando viene creato un team, viene eseguito il provisioning di un sito di SharePoint e viene associato al team per l'esperienza dei file. L'accesso a questo sito e ai file di SharePoint soddisfa i criteri di IB dell'organizzazione, vale a dire solo gli utenti il cui segmento IB corrisponde ai criteri IB sono consentiti. Anche al momento della condivisione di file, viene rispettato il criterio IB.
 
-- Microsoft 365 E5
-- Office 365 E5
-- Conformità avanzata di Office 365
-- Conformità a Microsoft 365 E5
+Ad esempio: in Contoso Bank Corporation, l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento di Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti. Quando l'utente Seshe crea un team per il segmento investment banking, il team e il sito di SharePoint che lo appoggiano saranno accessibili solo agli utenti del segmento investment banking. L'utente Nikita non può accedere al sito anche se ha il collegamento al sito.
 
-Per altri dettagli, inclusi i piani e i prezzi, Vedi soluzioni per la [conformità](https://products.office.com/business/security-and-compliance/compliance-solutions?rtc=1).
+Per altri dettagli, inclusi i piani e i prezzi, vedere indicazioni per le [licenze](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-tenantlevel-services-licensing-guidance).
+
 
 ## <a name="more-information"></a>Altre informazioni
 
 - Per ulteriori informazioni sulle barriere informative, vedere [barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers).
 
-- Per configurare i criteri di barriera delle informazioni, vedere [definire i criteri per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies)
+- Per configurare i criteri di barriera delle informazioni, vedere [definire i criteri per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
 
 - Per modificare o rimuovere i criteri di barriera delle informazioni, vedere [modificare o rimuovere i criteri di barriera delle informazioni](https://docs.microsoft.com/microsoft-365/compliance/information-barriers-edit-segments-policies.md)
+

@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ca03f9ab-a227-4903-85a8-427df6a0a5bb
 description: "Riepilogo: informazioni su come configurare l'infrastruttura di Skype for Business Server 2015 per l'utilizzo con System Center Operations Manager."
-ms.openlocfilehash: a5f676180508898b433953c37656063bd34bd323
-ms.sourcegitcommit: ee6fca44a611acaa8234563c546a3f841bba6e1a
+ms.openlocfilehash: 5622b09b3d55b4d0d3a3fe026f66b28e3c4be75e
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36790893"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "36824549"
 ---
 # <a name="manage-skype-for-business-server-2015-using-scom-management-pack"></a>Gestire Skype for Business Server 2015 con SCOM Management Pack
  
@@ -85,7 +85,7 @@ Il pacchetto di monitoraggio per Skype for Business Server 2015 include i file s
 
 Le caratteristiche seguenti sono nuove per i Management Pack di Skype for Business Server 2015.
 
-- **Modifiche all' [aggiornamento di 2019 giugno](https://www.microsoft.com/en-in/download/details.aspx?id=47364) ** Alcuni avvisi hanno avuto caratteri speciali rimossi. In alcuni casi i caratteri speciali interferiscono con la funzionalità di notifica del canale di comando SCOM.
+- **Modifiche all' [aggiornamento di 2019 settembre](https://www.microsoft.com/en-in/download/details.aspx?id=47364) ** Alcuni avvisi hanno avuto caratteri speciali rimossi. In alcuni casi i caratteri speciali interferiscono con la funzionalità di notifica del canale di comando SCOM.
 
 - **Individuazione automatica per l'accesso client** Le applicazioni client che si iscrivono a Skype for Business Server 2015 spesso scoprono automaticamente il server in cui effettuare l'accesso. Le transazioni sintetiche supportano ora la verifica che l'individuazione automatica sia configurata correttamente.
     

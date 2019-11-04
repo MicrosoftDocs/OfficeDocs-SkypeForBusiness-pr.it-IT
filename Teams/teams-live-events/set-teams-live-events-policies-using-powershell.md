@@ -16,10 +16,10 @@ description: Esempi di come usare PowerShell per impostare i criteri in teams pe
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: d9f96adcf4aa40b93b89b99013b9bc5ca466c25b
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 11/01/2019
 ms.locfileid: "37570169"
 ---
 # <a name="use-powershell-to-set-live-events-policies-in-microsoft-teams"></a>Usare PowerShell per impostare i criteri degli eventi dinamici in Microsoft Teams
@@ -139,6 +139,6 @@ Set-CsTeamsMeetingBroadcastPolicy -Identity Global -AllowBroadcastTranscription 
 ```
 
 ### <a name="related-topics"></a>Argomenti correlati
-- [Configurare gli eventi di teams Live](set-up-for-teams-live-events.md)
+- [Configurare gli eventi live di Teams](set-up-for-teams-live-events.md)
 
 

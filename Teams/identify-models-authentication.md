@@ -15,12 +15,12 @@ ms.collection:
 description: Informazioni sui diversi modelli di identità in Microsoft teams, ad esempio cloud, Synchronized e federate. Scopri anche l'autenticazione a più fattori.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5c7b5d619812284bc60aab7bcc2dbea6e9ec0173
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 3e485cc04be2e7bb5220a539d94cdce8e91cb0ec
+ms.sourcegitcommit: 2e005b335b1566c99b93fc311498702838466324
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570742"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931624"
 ---
 <a name="identity-models-and-authentication-in-microsoft-teams"></a>Modelli di identità e autenticazione in Microsoft Teams
 ==========================================
@@ -61,4 +61,4 @@ Una volta registrati gli utenti per l'AMF, la volta successiva che un utente acc
 |Tipo di tenant  |Opzioni di secondo fattore AMF disponibili  |Note  |
 |---------|---------|---------|
 |**Solo cloud**     |AMF per Office 365 <ul><li>Chiamata telefonica</li><li>Messaggio di testo</li><li>Notifica di app per dispositivi mobili</li><li>Codice di verifica dell'app per dispositivi mobili</li></ul>        |[Pianificare l'autenticazione a più fattori per le distribuzioni di Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)         |
-|**Configurazione ibrida (modello di identità sincronizzato o federato)**     |<ul><li>AMF per Office 365</li><li>Modulo AMF di Azure (ADFS Integrated)</li><li>Smart Card fisica o virtuale (ADFS Integrated)</li></ul>         |Nota: sono disponibili soluzioni AMF aggiuntive con i [provider di identità compatibili con Azure ad Federation](https://go.microsoft.com/fwlink/p/?LinkId=510953)         |
+|**Configurazione ibrida (modello di identità sincronizzato o federato)**     |<ul><li>AMF per Office 365</li><li>Modulo AMF di Azure (ADFS Integrated)</li><li>Smart Card fisica o virtuale (ADFS Integrated)</li></ul>         |Nota: sono disponibili altre soluzioni AMF con i [documenti di compatibilità dei provider di Azure ad Identity](https://www.microsoft.com/en-us/download/details.aspx?id=56843)         |

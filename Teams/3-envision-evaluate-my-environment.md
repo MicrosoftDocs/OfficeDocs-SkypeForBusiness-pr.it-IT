@@ -16,14 +16,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 53424be46dbc857f2a361ec1c3278e2d56fe16d7
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 8ad3700b3b0186ba3e95d8f55ad704f37cf33bc7
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516766"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37925077"
 ---
-# <a name="evaluate-my-environment"></a>Valutare l'ambiente personale
+# <a name="evaluate-my-environment"></a>Valutare il proprio ambiente
 
 Questo articolo offre una panoramica dei requisiti per valutare correttamente l'ambiente corrente per l'utilizzo dei servizi cloud Voice. Valutando l'ambiente, identifichi i rischi e i requisiti che influenzeranno la distribuzione globale della voce cloud. Identificando preventivamente questi elementi, è possibile modificare la pianificazione per guidare il successo.
 
@@ -42,7 +42,7 @@ Dovresti includere queste informazioni nel registro dei rischi.
 
 Come parte della tua individuazione ambientale, Includi tutte le questioni relative al calcolo degli utenti finali, ad esempio una valutazione della conformità di PC e dispositivi mobili per supportare i servizi di audioconferenza e il sistema telefonico con i casi di utilizzo del piano di chiamata, da requisiti hardware a requisiti software.
 
-L'individuazione ambientale può anche scoprire se è necessario [trasferire i numeri di telefono a Microsoft](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/transfer-phone-numbers-to-office-365).
+L'individuazione ambientale può anche scoprire se è necessario [trasferire i numeri di telefono a Microsoft](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
 Questa operazione consentirà all'organizzazione di modificare il piano di progetto e di preparare le informazioni necessarie per la portabilità dei numeri. È possibile usare l' [individuazione ambientale per l'implementazione di Microsoft teams](environmental-discovery-for-microsoft-teams-rollout.md) per eseguire l'individuazione ambientale.
 
 <table>
@@ -74,7 +74,7 @@ Usare le considerazioni seguenti per valutare la preparazione dell'organizzazion
 
 Teams USA la tecnologia audio e video (codec) che può adattarsi e quindi eseguire in modo migliore in più condizioni di rete. Per garantire prestazioni ottimali e coerenti, è consigliabile preparare la rete per i team.
 
-![Diagramma che descrive i]tre componenti del diagramma qualità che(media/evaluate-my-environment-image1.png "descrivono i tre componenti della qualità e come la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sulla rete.")
+![Diagramma che descrive i tre componenti della qualità](media/evaluate-my-environment-image1.png "Diagramma che descrive i tre componenti della qualità e in che modo la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sulla rete.")
 
 ## <a name="key-takeaways"></a>Takeaway chiave
 

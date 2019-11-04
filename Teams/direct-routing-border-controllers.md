@@ -1,5 +1,5 @@
 ---
-title: Elenco dei controller di bordo della sessione certificati per il routing diretto
+title: Elenco di Session Border Controller certificati per Instradamento diretto
 ms.author: crowe
 ms.reviewer: NMuravlyannikov
 author: CarolynRowe
@@ -15,13 +15,13 @@ appliesto:
 - Microsoft Teams
 description: Partner Microsoft con fornitori di SBC selezionati per certificare il lavoro di SBCs con il routing diretto.
 ms.openlocfilehash: 5fa0cb728beed0f308a4d168cd149ef1e75e2809
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 11/01/2019
 ms.locfileid: "37572246"
 ---
-# <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco dei controller di bordo della sessione certificati per il routing diretto
+# <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
 Partner Microsoft con i fornitori SBC (Session Border Controller) selezionati per certificare che il proprio SBCs funziona con il routing diretto. 
 

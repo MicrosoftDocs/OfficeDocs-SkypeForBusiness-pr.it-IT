@@ -17,10 +17,10 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 4fea7081ee66cbd7b103f4292f577aaf5d841e11
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 11/01/2019
 ms.locfileid: "37571935"
 ---
 <a name="manage-teams-in-the-microsoft-teams-admin-center"></a>Gestire team nell'interfaccia di amministrazione di Microsoft Teams
@@ -132,4 +132,4 @@ Sostituire **{GroupID}** nella query per l'effettivo GroupID in questione, che Ã
 
 - [Informazioni di riferimento sui cmdlet Teams](https://docs.microsoft.com/powershell/teams/?view=teams-ps)  
 - [Usare i ruoli di amministratore teams per gestire Teams](using-admin-roles.md)
-- [Pianificare la gestione del ciclo di vita in teams](plan-teams-lifecycle.md)
+- [Pianificare la gestione del ciclo di vita in Teams](plan-teams-lifecycle.md)

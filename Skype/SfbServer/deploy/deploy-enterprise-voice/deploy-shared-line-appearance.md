@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 474a5e4a-9479-4e86-8607-b9f41a0fa648
 description: Leggere questo argomento per informazioni su come distribuire l'aspetto della linea condivisa (SLA) in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015. SLA è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
-ms.openlocfilehash: 0d7bbc62912614cabaea5218225b1fbfb499c691
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 040801c08490edb103fa195098ef8aa3483fc2e0
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233529"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37924857"
 ---
 # <a name="deploy-shared-line-appearance-in-skype-for-business-server-2015"></a>Distribuire l'aspetto della linea condivisa in Skype for Business Server 2015
 
@@ -39,7 +39,7 @@ L'aspetto della linea condivisa (SLA) è una nuova funzionalità di Skype for Bu
     un. Registrare SLA come applicazione server eseguendo il comando seguente per ogni pool:
 
    ```
-   New-CsServerApplication -Identity 'Service:Registrar:%FQDN%/SharedLineAppearance' -Uri   https://www.microsoft.com/LCS/SharedLineAppearance -Critical $false -Enabled                $true -Priority (Get-CsServerApplication -Identity              'Service:Registrar:%FQDN%/UserServices').Priority
+   New-CsServerApplication -Identity 'Service:Registrar:%FQDN%/SharedLineAppearance' -Uri   http://www.microsoft.com/LCS/SharedLineAppearance -Critical $false -Enabled                 $true -Priority (Get-CsServerApplication -Identity              'Service:Registrar:%FQDN%/UserServices').Priority
    ```
 
    dove% FQDN% è il nome di dominio completo del pool.
