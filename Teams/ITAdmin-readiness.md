@@ -18,10 +18,10 @@ description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 55ac7c4adf51e920aba2a8eed0f0d6c5aa83ca36
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 11/01/2019
 ms.locfileid: "37569847"
 ---
 # <a name="admin-training-for-microsoft-teams"></a>Formazione per amministratori per Microsoft Teams
@@ -111,8 +111,8 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 
 <h2>Esercitazioni su</h2>
 
-- [Esercitazione: riunioni in teams](tutorial-meetings-in-teams.yml)
-- [Esercitazione: audioconferenza in teams](tutorial-audio-conferencing.yml)
+- [Esercitazione: riunioni in Teams](tutorial-meetings-in-teams.yml)
+- [Esercitazione: audioconferenza in Teams](tutorial-audio-conferencing.yml)
 - [Esercitazione: informazioni sulla chiamata in teams](tutorial-calling-in-teams.yml)
 
 <h2>Corsi</h2>
