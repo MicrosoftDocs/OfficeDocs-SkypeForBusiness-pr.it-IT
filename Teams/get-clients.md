@@ -17,15 +17,15 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bfc56f9f7b02acda61b0342f28b14da5379bea31
-ms.sourcegitcommit: ced9b584eeceff7ca0109cba5823c7c3ddbd092e
+ms.openlocfilehash: 2fcc0ef8a4fd8dab857fcf4c75af61c2c258b364
+ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37886429"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37971662"
 ---
-<a name="get-clients-for-microsoft-teams"></a>Ottenere client per Microsoft Teams 
-===========================
+# <a name="get-clients-for-microsoft-teams"></a>Ottenere client per Microsoft Teams 
+
 
 Microsoft teams include client disponibili per il desktop (Windows, Mac e Linux), Web e dispositivi mobili (Android e iOS). Questi client richiedono tutti una connessione Internet attiva e non supportano una modalità offline.
 
@@ -34,8 +34,7 @@ Microsoft teams include client disponibili per il desktop (Windows, Mac e Linux)
 >
 > Per altre informazioni sulla modalità Windows 10 S, vedere [Introduzione a Windows 10 in modalità s](https://www.microsoft.com/windows/s-mode). 
 
-<a name="desktop-client"></a>Client desktop
---------------
+## <a name="desktop-client"></a>Client desktop
 
 > [!Tip]
 > Vedere la sessione seguente per informazioni sui vantaggi del client desktop di Windows, su come pianificare la procedura e su come distribuirla: [Team client desktop di Windows](https://aka.ms/teams-clients)
@@ -125,8 +124,7 @@ Gli utenti di Linux possono installare teams `.deb` usando un pacchetto Debian o
 
 È possibile avviare teams tramite le attività o tramite terminale `Teams`digitando.
 
-<a name="web-client"></a>Client Web 
-----------
+## <a name="web-client"></a>Client Web 
 
 Il client Web ([https://teams.microsoft.com](https://go.microsoft.com/fwlink/?linkid=855753)) è un client completo e funzionale che può essere usato da un'ampia varietà di browser. Il client Web supporta le chiamate e le riunioni tramite webRTC, quindi non è necessario alcun plug-in o download per l'esecuzione di team in un Web browser. Il browser deve essere configurato per consentire i cookie di terze parti. 
 
@@ -134,8 +132,7 @@ Il client Web ([https://teams.microsoft.com](https://go.microsoft.com/fwlink/?li
 
 Il client Web esegue il rilevamento della versione del browser [https://teams.microsoft.com](https://go.microsoft.com/fwlink/?linkid=855753)al momento della connessione. Se viene rilevata una versione del browser non supportata, si bloccherà l'accesso all'interfaccia Web e si consiglia che l'utente scarichi il client desktop o l'app per dispositivi mobili.
 
-<a name="mobile-clients"></a>Client per dispositivi mobili
---------------
+## <a name="mobile-clients"></a>Client per dispositivi mobili
 
 Le app Microsoft teams per dispositivi mobili sono disponibili per Android e iOS e sono orientate per gli utenti che partecipano a conversazioni basate su chat e consentono chiamate audio peer-to-peer. Per le app per dispositivi mobili, accedi ai negozi di dispositivi mobili di Google Play e all'App Store Apple. L'app Windows Phone è stata ritirata il 20 luglio 2018 e potrebbe non funzionare più. 
 
@@ -156,25 +153,21 @@ Le app per dispositivi mobili vengono distribuite e aggiornate solo nell'App Sto
 |![Icona che descrive un punto decisionale](media/Get_clients_for_Microsoft_Teams_image4.png)      |Punto decisionale         |Esistono restrizioni per impedire agli utenti di installare il client Microsoft teams appropriato nei propri dispositivi?         |
 |![Icona che descrive i passaggi successivi](media/Get_clients_for_Microsoft_Teams_image5.png)     |Operazioni successive         |Se l'organizzazione limita l'installazione del software, verificare che il processo sia compatibile con Microsoft teams. Nota: i diritti di amministratore non sono necessari per l'installazione del client PC, ma sono necessari per l'installazione in un Mac.         |
 
-<a name="client-update-management"></a>Gestione degli aggiornamenti client
-------------------------
+## <a name="client-update-management"></a>Gestione degli aggiornamenti client
 
 I client sono attualmente aggiornati automaticamente dal servizio Microsoft teams senza l'intervento dell'amministratore IT richiesto. Se è disponibile un aggiornamento, il client scaricherà automaticamente l'aggiornamento e quando l'app verrà inattiva per un periodo di tempo, il processo di aggiornamento inizierà.
 
-<a name="client-side-configurations"></a>Configurazioni lato client
----------------------------
+## <a name="client-side-configurations"></a>Configurazioni lato client
 
 Attualmente non sono disponibili opzioni supportate per configurare il client tramite l'amministratore del tenant, PowerShell, gli oggetti Criteri di gruppo o il registro di sistema.
 
-<a name="notification-settings"></a>Impostazioni di notifica
-----------------------------
+## <a name="notification-settings"></a>Impostazioni di notifica
 
 Al momento non sono disponibili opzioni per gli amministratori IT per configurare le impostazioni di notifica sul lato client. Tutte le opzioni di notifica vengono impostate dall'utente. La figura seguente illustra le impostazioni predefinite del client.
 
 ![Screenshot delle impostazioni delle notifiche.](media/Get_clients_for_Microsoft_Teams_image6.png)
 
-<a name="sample-powershell-script"></a>Esempio di script di PowerShell
-----------------------------
+## <a name="sample-powershell-script"></a>Esempio di script di PowerShell
 
 Questo script di esempio, che deve essere eseguito nei computer client nel contesto di un account di amministratore con privilegi elevati, creerà una nuova regola del firewall in ingresso per ogni cartella utente trovata in c:\Users. Quando teams trova questa regola, impedirà all'applicazione teams di richiedere agli utenti di creare regole del firewall quando gli utenti effettuano la prima chiamata da teams. 
 

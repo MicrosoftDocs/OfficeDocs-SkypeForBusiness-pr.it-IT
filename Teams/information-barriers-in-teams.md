@@ -13,12 +13,12 @@ ms.reviewer: vikramju
 description: Informazioni sulle barriere informative e sul loro impatto sui team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f3d6d8d603d9ff6ccf20a355e374b58fdf46ffa1
-ms.sourcegitcommit: 2e005b335b1566c99b93fc311498702838466324
+ms.openlocfilehash: dfc56ab28be03e0301228eb9220437c2e1ef2673
+ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931804"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968257"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -27,7 +27,8 @@ Gli ostacoli alle informazioni sono criteri che possono essere configurati da un
 > [!NOTE]
 > - Non è possibile creare gruppi di barriere informativi tra i tenant.
 > - L'uso dei bot per l'aggiunta di utenti non è supportato nella versione 1.
-> - Novità: il supporto delle informazioni barriera per il sito di SharePoint connesso a teams è ora in anteprima privata. Fare clic [qui](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3-O9WDTKhhDtgWfphwS9YhUM0hJNklNRkZKMlhLNDRZNzlEQlVDSjdZVi4u) per partecipare all'anteprima privata. .
+> - I canali privati sono conformi ai criteri di barriera delle informazioni configurati.
+> - Novità: il supporto delle informazioni barriera per il sito di SharePoint connesso a teams è ora in anteprima privata. Fare clic [qui](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3-O9WDTKhhDtgWfphwS9YhUM0hJNklNRkZKMlhLNDRZNzlEQlVDSjdZVi4u) per partecipare all'anteprima privata.
 
 I criteri barriera delle informazioni impediscono anche ricerche e individuazione. Questo significa che se tenti di comunicare con qualcuno con cui non devi comunicare, non troverai l'utente nella selezione persone.
 

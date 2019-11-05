@@ -21,11 +21,11 @@ ms.custom:
 - Reporting
 description: Informazioni su Call Analytics e Call Quality dashboard e su come usarli per monitorare e risolvere i problemi di qualità delle chiamate.
 ms.openlocfilehash: 70efd7f17189d9aac2236383a07cfc5fc0a37096
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571770"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37972467"
 ---
 # <a name="call-analytics-and-call-quality-dashboard"></a>Analisi delle chiamate e Dashboard Qualità della chiamata
 
@@ -83,8 +83,8 @@ Se si vuole che gli utenti non amministratori (ad esempio gli agenti dell'helpde
 - Lettore globale
 - Amministratore di Skype for business
 - Amministratore del servizio Teams
-- Amministratore delle comunicazioni di Teams
-- Ingegnere di supporto per Communications Teams
+- Amministratore comunicazioni Teams
+- Tecnico supporto comunicazioni Teams
 - Specialista supporto comunicazioni Teams
 - Lettore di report
 
@@ -101,6 +101,6 @@ Per altre informazioni su Call Quality dashboard, vedere [attivazione e utilizzo
 
 [Configurare l'analisi delle chiamate](set-up-call-analytics.md)
 
-[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
 [Attivazione e utilizzo di Call Quality dashboard per Microsoft teams e Skype for business online](turning-on-and-using-call-quality-dashboard.md)

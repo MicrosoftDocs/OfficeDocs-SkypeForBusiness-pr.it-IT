@@ -22,12 +22,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate. '
-ms.openlocfilehash: a83ebe08ac7cc754cadd59bffa71117f473b470b
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 8d6e97ea5454b8e933424c2e8db595a5af7ac8c8
+ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568510"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37972487"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -60,7 +60,7 @@ Call Quality dashboard versione 3 offre un dashboard di Call Quality dashboard q
 - Versioni client: visualizzare la sessione e gli utenti conta per ogni versione del client oppure eseguire il drill-down in nomi utente per ogni versione del client. I filtri predefiniti per il tipo di prodotto e client consentono di mettere a punto le versioni a specifici client.
 - Endpoint: Mostra gli endpoint del computer mappati per creare/modellare il PC/Mac. Mostra la qualità aggregata per creazione/modello. I dati di mapping vengono caricati in modo simile alla creazione di dati.
 
-La versione 3 offre anche il supporto RBAC, se l'accesso a EUII non è disponibile.  
+Advanced Call Quality Dashboard (v3) offre anche il supporto RBAC, se EUII Access non è disponibile.  
 
 Un amministratore può gestire Skype for Business Server 2019 (non solo Skype for business online e Microsoft Teams) tramite Call Quality dashboard versione 3. Questo richiede un'implementazione ibrida e l'uso del connettore dati chiamata. Per altre informazioni, vedere [pianificare il connettore dati](/SkypeForBusiness/hybrid/plan-call-data-connector) per le chiamate.
 
@@ -84,7 +84,7 @@ Call Quality dashboard versione 1 ha fornito agli amministratori di Skype for Bu
 
 ## <a name="cqd-near-real-time-nrt-data"></a>Dati di Call Quality dashboard near-Real-Time (NRT)
 
-Call Quality dashboard V3 usa un feed di dati quasi in tempo reale. I record di chiamata sono disponibili presso il portale di Call Quality dashboard entro 30 minuti dalla fine della chiamata. I record di chiamata della pipeline NRT sono disponibili solo per alcuni mesi prima di essere rimossi dal set di dati. Call Quality dashboard V3 unisce i dati della pipeline V2 corrente con i dati della NRT della pipeline V3. Le query sui portali V2 e V3 per i dati del periodo di archiviazione producono gli stessi risultati. Le query di dati V2 e V3 per i dati NRT e NRT data + PII periodi saranno diverse.
+Advanced Call Quality Dashboard (v3, rilasciata il 2019 novembre) usa un feed di dati quasi in tempo reale. I record di chiamata sono disponibili presso il portale di Call Quality dashboard entro 30 minuti dalla fine della chiamata. I record di chiamata della pipeline NRT sono disponibili solo per alcuni mesi prima di essere rimossi dal set di dati. Call Quality dashboard V3 unisce i dati della pipeline V2 corrente con i dati della NRT della pipeline V3. Le query sui portali V2 e V3 per i dati del periodo di archiviazione producono gli stessi risultati. Le query di dati V2 e V3 per i dati NRT e NRT data + PII periodi saranno diverse.
 
 ### <a name="piieuii-data"></a>Dati personali/EUII
 
@@ -170,7 +170,7 @@ Dopo aver effettuato l'accesso, una volta attivato, il dashboard qualità chiama
 
 <a name="BKMKFeaturesOfTheCQD"> </a>
 
-<!-- Siunies, this isn't very clear, it doesn't call out v1 and v2. unsure how to elaborate for v3, please comment -->
+
 I report di riepilogo di Call Quality dashboard includono un sottoinsieme delle funzionalità pianificate per i report dettagliati. Di seguito sono riepilogate le differenze tra le edizioni:
   
 |Funzionalità|Report di riepilogo|Report dettagliati|
@@ -211,7 +211,7 @@ Le quattro schede includono:
 - **SLA qualità vocale** : fornisce informazioni sulle chiamate incluse nell'SLA sulla qualità vocale di Skype for business online.
 
 > [!NOTE]
-> Call Quality dashboard versione 3 funziona con Microsoft teams, Skype for business online e Skype for Business Server. Per usare Call Quality Dashboard con Skype for Business Server 2019, sarà necessario configurare il [connettore dati chiamata](https://docs.microsoft.com/skypeforbusiness/hybrid/configure-call-data-connector). Vedere [pianificare il connettore dati chiamata](https://docs.microsoft.com/en-us/skypeforbusiness/hybrid/plan-call-data-connector) prima di iniziare.
+> Call Quality dashboard versione 3 funziona con Microsoft teams, Skype for business online e Skype for Business Server. Per usare Call Quality Dashboard con Skype for Business Server 2019, sarà necessario configurare il [connettore dati chiamata](https://docs.microsoft.com/skypeforbusiness/hybrid/configure-call-data-connector). Vedere [pianificare il connettore dati chiamata](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-call-data-connector) prima di iniziare.
 
 - Qualità delle chiamate per area geografica:
 
@@ -447,12 +447,12 @@ Quando si confrontano i dati per questi due servizi:
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Dimensioni e misure disponibili in Call Quality Dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md)
+[Dimensioni e misure disponibili in Dashboard Qualità della chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md)
 
-[Classificazione del flusso nel Dashboard Qualità della chiamata](stream-classification-in-call-quality-dashboard.md)
+[Classificazione del flusso in Dashboard Qualità della chiamata](stream-classification-in-call-quality-dashboard.md)
 
 [Configurazione di Skype for Business Call Analytics](set-up-call-analytics.md)
 
-[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
 [Analisi delle chiamate e Dashboard Qualità della chiamata](difference-between-call-analytics-and-call-quality-dashboard.md)

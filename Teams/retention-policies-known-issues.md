@@ -15,14 +15,17 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8a7dd5bac7c82814befab66247b1bfa8cf4943f6
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 5565409ea2f3dbb83754ced08a78e12283b1601c
+ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569963"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968337"
 ---
 # <a name="known-issues-for-retention-policies-in-microsoft-teams"></a>Problemi noti per i criteri di conservazione in Microsoft Teams
+
+> [!NOTE]
+> Non è ancora supportata la configurazione per la conservazione dei messaggi del canale privato. È supportata la conservazione dei file condivisi nei canali privati.
 
 Di seguito sono riportati i problemi noti per i criteri di conservazione in team che vengono rilevati e analizzati.
 

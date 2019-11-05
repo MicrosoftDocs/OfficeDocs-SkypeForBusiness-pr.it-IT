@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ec5b841cdb184eb6bbad85ee5456ec8f4470983b
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 516d49c84efc43000597d74756c699012cacf28e
+ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37516723"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968027"
 ---
 <a name="best-practices-for-organizing-teams-in-microsoft-teams"></a>Procedure consigliate per organizzare team in Microsoft Teams
 ======================================================
@@ -45,7 +45,11 @@ Dopo aver creato il team, è consigliabile iniziare a pensare alle diverse aree 
 
 Leggi altre informazioni su come [lavorare in teams](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499#ID0EAABAAA=Work_in_teams) con questi suggerimenti veloci per gli utenti finali. 
 
-Le nostre linee guida per le procedure consigliate sono la creazione di team con un set di membri più ampio e più canali. Per garantire un'esperienza utente di alta qualità, è utile ridurre al minimo il numero di team che richiedono la partecipazione di una persona. I canali all'interno di un team devono essere considerati come argomenti o flussi di lavoro per aiutare il team a organizzare il proprio compito per realizzare gli obiettivi di join. Non esiste un numero specifico di canali da creare. Ogni team deve creare canali basati sul lavoro, le priorità e lo stile. Le organizzazioni più grandi potrebbero voler creare teams come "modelli" per standardizzare le informazioni acquisite in base a specifici tipi di lavoro. Ciò è utile per la gestione strategica dei clienti, la gestione delle aule, gli scenari di assistenza sanitaria, la gestione delle attestazioni, la gestione degli incidenti e altri scenari appropriati per un settore specifico.
+Le nostre linee guida per le procedure consigliate sono la creazione di team con un set di membri più ampio e più canali.  Per garantire un'esperienza utente di alta qualità, è utile ridurre al minimo il numero di team che richiedono la partecipazione di una persona. I canali all'interno di un team devono essere considerati come argomenti o flussi di lavoro per aiutare il team a organizzare il proprio compito per realizzare gli obiettivi di join. Non esiste un numero specifico di canali da creare. Ogni team deve creare canali basati sul lavoro, le priorità e lo stile. 
+
+Usare canali standard per le conversazioni che tutti i membri del team possono contribuire e canali privati quando è necessario uno spazio di collaborazione più mirato per un sottoinsieme di persone del team. Per altre informazioni sui canali privati e quando crearli, vedere [canali privati in teams](private-channels.md).
+
+Le organizzazioni più grandi potrebbero voler creare teams come "modelli" per standardizzare le informazioni acquisite in base a specifici tipi di lavoro.  Questo è utile per la gestione strategica dei clienti, per la gestione delle aule, per gli scenari di assistenza sanitaria, per la gestione delle attestazioni, per la gestione degli incidenti e per altri scenari appropriati
 
 ## <a name="use-the-general-channel"></a>Usare il canale generale
 

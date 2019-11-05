@@ -3,7 +3,6 @@ title: Inserire un utente o un team di Microsoft teams in blocco legale
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 09/25/2017
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -14,12 +13,12 @@ search.appverid: MET150
 description: Imparerai a inserire un utente o un team di Microsoft teams in blocco legale usando il centro conformità & sicurezza e scopri cosa richiede un blocco legale in base ai requisiti dei dati.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fe6418162d95ebfb14665e004c3aeb508c3baaf4
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 25bd8e235be79ed805a854cbda2b4947f1c1269b
+ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570706"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968037"
 ---
 <a name="place-a-microsoft-teams-user-or-team-on-legal-hold"></a>Inserire un utente o un team di Microsoft teams in blocco legale
 ==================================================
@@ -29,10 +28,11 @@ Per inserire un utente o un team in blocco legale, passare al [centro conformit�
 > [!NOTE]
 > L'immissione di un utente in blocco non inserisce automaticamente un gruppo in attesa o viceversa.
 
+> [!NOTE]
+> Non è ancora supportata la configurazione per l'esenzione legale dei messaggi del canale privato. È supportata la riserva legale dei file condivisi nei canali privati.
+
 > [!IMPORTANT]
 > Quando un utente o un gruppo viene messo in attesa, verranno mantenute tutte le copie del messaggio. Esempio: Clay ha inviato un messaggio in un canale e quindi ha modificato il messaggio. In uno scenario di blocco vengono mantenute entrambe le copie del messaggio. Senza blocco legale, viene mantenuto solo il messaggio più recente.
-
-
 
 Nella figura seguente è presente un'indagine che prevede l'uso di argilla. Clay è un membro del team broker-dealer.
 

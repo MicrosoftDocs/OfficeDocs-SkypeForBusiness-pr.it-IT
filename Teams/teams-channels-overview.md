@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: okr_smb
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 604ea944d54e71e72d49505f111606beae5343ea
-ms.sourcegitcommit: 0de27096ea3c9d6f210aeb4aad31c4255c3c0244
+ms.openlocfilehash: f5051028b93b5170e7accde90412dcac6ceca04d
+ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37570263"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968057"
 ---
 > [!NOTE]
 > Per informazioni su chat, team, canali, & app in teams, vedere la pagina seguente. Quindi, passa a [chat, team, canali, & app in teams](deploy-chat-teams-channels-microsoft-teams-landing-page.md) per esaminare un elenco di decisioni importanti per l'implementazione del team.
@@ -38,15 +38,13 @@ Iniziamo a pensare a come Microsoft teams consente ai singoli team di organizzar
 - I **Team** sono una raccolta di persone, contenuti e strumenti che circondano diversi progetti e risultati all'interno di un'organizzazione.
 
     - I team possono essere creati per essere privati solo per gli utenti invitati.
-
     - I team possono essere creati anche per essere pubblici e aperti e tutti gli utenti all'interno dell'organizzazione possono partecipare (fino a 5000 membri).
     
     Un team è progettato per riunire un gruppo di persone che lavorano a stretto contatto per ottenere le operazioni. I team possono essere dinamici per il lavoro basato su progetti (ad esempio, l'avvio di un prodotto, la creazione di una sala di guerra digitale), così come in corso, per riflettere la struttura interna dell'organizzazione (ad esempio, i reparti e le posizioni di Office). Le conversazioni, i file e le note nei canali del team sono visibili solo ai membri del team.
 
 - I **canali** sono sezioni dedicate all'interno di un team per organizzare le conversazioni in base a specifici argomenti, progetti, discipline,-qualsiasi cosa funzioni per il team. I file condivisi in un canale (nella scheda file) sono archiviati in SharePoint. Per altre informazioni, vedere [come interagire con i team in SharePoint Online e OneDrive for business](SharePoint-OneDrive-interact.md).
 
-    - I canali del team sono luoghi in cui tutti i membri del team possono aprire apertamente conversazioni. Le chat private sono visibili solo agli utenti della chat (e i file condivisi in una chat sono archiviati in OneDrive for business). 
-
+    - I canali sono luoghi in cui si verificano le conversazioni e dove il lavoro viene effettivamente eseguito. I canali possono essere aperti a tutti i membri del team oppure, se hai bisogno di un pubblico più selezionato, possono essere privati. I canali standard sono per le conversazioni che tutti i membri di un team possono partecipare e i [canali privati](private-channels.md) limitano la comunicazione a un sottoinsieme di persone in un team.
     - I canali sono più utili quando si estendono le app che includono schede, connettori e bot che aumentano il loro valore per i membri del team. Per altre informazioni, Vedi [app, bot, & connettori in teams](deploy-apps-microsoft-teams-landing-page.md).
 
 Per ulteriori informazioni sulle procedure consigliate per la creazione di team e canali, vedere questo breve video.
@@ -73,9 +71,9 @@ Inoltre, se è stata configurata la moderazione, i proprietari e i membri del te
 
 **Impostazioni del team** 
 
-I proprietari del team possono gestire le impostazioni a livello di Team direttamente in Microsoft teams. Le impostazioni includono la possibilità di aggiungere un'immagine del team, impostare le autorizzazioni tra i membri del team per la creazione di canali, l'aggiunta di schede e connettori, @mentioning l'intero team o canale e l'uso di gif, adesivi e meme. 
+I proprietari del team possono gestire le impostazioni a livello di Team direttamente in Microsoft teams. Le impostazioni includono la possibilità di aggiungere un'immagine del team, impostare le autorizzazioni tra i membri del team per la creazione di canali standard e [privati](private-channels.md), l'aggiunta di schede e connettori, @mentioning l'intero team o canale e l'uso di gif, adesivi e meme.
 
-Tre minuti per vedere questo video di go-to-guide per i proprietari del team: 
+Tre minuti per vedere questo video di go-to-guide per i proprietari del team:
 
    > [!VIDEO https://www.youtube.com/embed/7XcDSuw6NR4]
 

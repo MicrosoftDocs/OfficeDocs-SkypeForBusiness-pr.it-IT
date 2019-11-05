@@ -15,14 +15,17 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dbeab6df377dd898b9c0d424288300ad7f01fbfc
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 9b3d2ed05459c6866c73b0f49b128eea3980605f
+ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37569974"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968307"
 ---
 # <a name="microsoft-teams-retention-policies-faq"></a>Domande frequenti sui criteri di conservazione di Microsoft Teams
+
+> [!NOTE]
+> Non è ancora supportata la configurazione per la conservazione dei messaggi del canale privato. È supportata la conservazione dei file condivisi nei canali privati.
 
 ### <a name="what-types-of-policies-can-i-set-up-in-retention-policies-and-how-do-they-work"></a>Quali tipi di criteri è possibile configurare nei criteri di conservazione e come funzionano?
 
@@ -40,7 +43,7 @@ Sì, lo sono. Se si creano criteri di conservazione per eliminare dati anteceden
 
 ### <a name="what-is-the-default-retention-policy"></a>Qual è il criterio di conservazione predefinito? 
 
-Per impostazione predefinita, i dati di chat, canale e file di team vengono mantenuti per sempre. Un utente può eliminare un elemento, ma in assenza di criteri di conservazione i dati dei team vengono sempre archiviati nelle cassette postali di Exchange Online (utente e gruppo) e restano lì per eDiscovery. 
+Per impostazione predefinita, i dati di chat, canale e file di team vengono mantenuti per sempre.
 
 ### <a name="can-i-target-sets-of-users-or-teams-in-a-policy"></a>È possibile impostare come destinazione set di utenti o team in un criterio? 
 

@@ -17,12 +17,12 @@ search.appverid: MET150
 f1keywords:
 - ms.teamsadmincenter.messagingpolicies.overview
 description: Informazioni sui criteri di messaggistica e sul modo in cui possono essere usati per controllare la messaggistica di chat in teams.
-ms.openlocfilehash: bc69b44b47cf068bdea17ed661a873b90af44de5
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 3ac3e25dfc6f8ec65922d0265664649de6e9f55c
+ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37569277"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968237"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in teams
 
@@ -34,7 +34,7 @@ Per impostazione predefinita, viene creato un criterio denominato globale (impos
 
 ## <a name="change-or-create-a-messaging-policy"></a>Modificare o creare un criterio di messaggistica
 
-È possibile gestire facilmente i criteri di messaggistica nell'interfaccia di amministrazione dihttp://admin.teams.microsoft.com) Microsoft Teams (eseguendo l'accesso con le credenziali di amministratore e scegliendo **criteri di messaggistica** nel riquadro di spostamento sinistro. Per modificare i criteri di messaggistica predefiniti esistenti per l'organizzazione, selezionare la riga **globale (org-Wide default)** e quindi apportare le modifiche desiderate. Per creare un nuovo criterio di messaggistica personalizzato, selezionare **nuovo criterio**, assegnare un nome al nuovo criterio e quindi selezionare le impostazioni. Al termine, scegliere **Salva** .
+È possibile gestire facilmente i criteri di messaggistica nell'interfaccia di amministrazione dihttps://admin.teams.microsoft.com) Microsoft Teams (eseguendo l'accesso con le credenziali di amministratore e scegliendo **criteri di messaggistica** nel riquadro di spostamento sinistro. Per modificare i criteri di messaggistica predefiniti esistenti per l'organizzazione, selezionare la riga **globale (org-Wide default)** e quindi apportare le modifiche desiderate. Per creare un nuovo criterio di messaggistica personalizzato, selezionare **nuovo criterio**, assegnare un nome al nuovo criterio e quindi selezionare le impostazioni. Al termine, scegliere **Salva** .
 
 Ad esempio, supponiamo di voler verificare che i messaggi inviati non vengano eliminati o modificati. Si creerebbe un nuovo criterio personalizzato denominato "Mantieni messaggi inviati" e si spengono le impostazioni seguenti:
 
@@ -97,6 +97,9 @@ Usare le impostazioni seguenti per modificare i criteri di messaggistica globale
     - **Disabilitata** Ciò significa che gli utenti non possono creare messaggi vocali in chat o canali.  
 - **Nei dispositivi mobili, visualizzare i canali preferiti sopra le chat recenti** Abilitare questa impostazione per spostare i canali preferiti nella parte superiore della schermata del dispositivo mobile in modo che l'utente non debba scorrere per trovarli. 
 - **Consentire a un utente di rimuovere utenti da una chat di gruppo** Attivare questa impostazione per consentire a un utente di rimuovere altri utenti da una chat di gruppo. Questa funzionalità consente di continuare una chat con un gruppo di persone più piccolo senza perdere la cronologia chat.
+
+> [!NOTE]
+> Alcune di queste impostazioni, ad esempio l'uso di Giphy, possono essere configurate anche a livello di team dai proprietari del team e a livello di canale privato da proprietari di canali privati.
 
 ### <a name="related-topics"></a>Argomenti correlati
 [Criteri di riunione in teams](meeting-policies-in-teams.md)

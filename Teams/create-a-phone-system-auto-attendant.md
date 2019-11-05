@@ -21,11 +21,11 @@ ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
 ms.openlocfilehash: b1756cc58e485971157c0429e8180a5f5e507ec8
-ms.sourcegitcommit: 61deca3fd35142d210ab8307c21a576b3301ec84
+ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37553783"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37972477"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -426,7 +426,7 @@ Press the **Create** button to finish setup of your new auto attendant. -->
 
 [Ecco cosa offre il Sistema telefonico in Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system)
 
-[Recupero di numeri di telefono del servizio](/microsoftteams/getting-service-phone-numbers)
+[Recuperare numeri di telefono del servizio](/microsoftteams/getting-service-phone-numbers).
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans)
 

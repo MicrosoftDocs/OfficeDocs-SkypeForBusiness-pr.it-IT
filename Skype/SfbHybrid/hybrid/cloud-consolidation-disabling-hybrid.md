@@ -19,23 +19,24 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: In questa appendice sono riportati i passaggi dettagliati per la disabilitazione dell'ibrido come parte del consolidamento cloud per Teams e Skype for business.
-ms.openlocfilehash: f78c5a5cb792ecdb39125292c531097219dc58e3
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: d441d9fcc5e4f2cec495efabdbea423eaaec882c
+ms.sourcegitcommit: 7920c47eb73e665dad4bf7214b28541d357bce25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37924967"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37962055"
 ---
 # <a name="disable-hybrid-to-complete-migration-to-the-cloud"></a>Disabilitare l'ibrido per completare la migrazione al cloud
 
 Dopo aver spostato tutti gli utenti da locale al cloud, è possibile rimuovere le autorizzazioni per la distribuzione di Skype for business locale. Oltre a rimuovere qualsiasi hardware, un passaggio critico consiste nel separare logicamente la distribuzione locale da Office 365 disabilitando l'ambiente ibrido. La disattivazione dell'ibrido è costituita da tre passaggi:
 
 1. Aggiornare i record DNS in modo che puntino a Office 365.
+
 2. Disabilitare il dominio diviso nel tenant di Office 365.
-3. Disabilitare la funzionalità in on-Prem per comunicare con Office 365.
 
+3. Disabilitare l'abilità in locale per comunicare con Office 365.
 
-Questi passaggi devono essere eseguiti insieme come unità. I dettagli sono riportati di seguito. Inoltre, linee guida per la gestione dei numeri di telefono per gli utenti migrati, una volta disconnessa la distribuzione locale.
+Questi passaggi devono essere eseguiti insieme come unità. I dettagli sono riportati di seguito. Inoltre, vengono fornite linee guida per la gestione dei numeri di telefono per gli utenti migrati dopo che la distribuzione locale è stata disconnessa.
 
 > [!Note] 
 > In rari casi, la modifica del DNS dal punto di vista locale a Office 365 per l'organizzazione può causare la Federazione con alcune altre organizzazioni di smettere di funzionare fino a quando l'altra organizzazione non aggiorna la configurazione della Federazione:<ul><li>
@@ -56,19 +57,30 @@ Il DNS esterno dell'organizzazione per l'organizzazione locale deve essere aggio
 2.  *Disabilitare lo spazio degli indirizzi SIP condiviso in Office 365 tenant.*
 Il comando seguente deve essere effettuato da una finestra di PowerShell di Skype for business online.
 
-    `Set-CsTenantFederationConfiguration -SharedSipAddressSpace $false`
+    ```
+    Set-CsTenantFederationConfiguration -SharedSipAddressSpace $false
+    ```
  
 3.  *Disabilitare la funzionalità in on-Prem per comunicare con Office 365.*  
-Il comando seguente deve essere effettuato da una finestra di PowerShell locale.  Se in precedenza è stata importata una sessione di Skype for business online, avviare una nuova sessione di Windows PowerShell per Skype for business.
+Il comando seguente deve essere effettuato da una finestra di PowerShell locale.  Se in precedenza è stata importata una sessione di Skype for business online, avviare una nuova sessione di Skype for business PowerShell come indicato di seguito:
 
-    `Get-CsHostingProvider|Set-CsHostingProvider -Enabled $false`
+```
+    Get-CsHostingProvider|Set-CsHostingProvider -Enabled $false
+```
 
-### <a name="managing-phone-numbers-for-users-who-were-migrated-from-on-premises"></a>Gestione dei numeri di telefono per gli utenti di cui è stata eseguita la migrazione da locale
+### <a name="manage-phone-numbers-for-users-who-were-migrated-from-on-premises"></a>Gestire i numeri di telefono per gli utenti di cui è stata eseguita la migrazione da locale
 
-Gli amministratori possono gestire gli utenti precedentemente spostati da Skype for Business Server locale al cloud, anche dopo che la distribuzione locale è stata disattivata. Esistono 2 diverse possibilità:
-1.  Se l'utente dispone di un lineURI locale prima dello spostamento (presumibilmente perché l'utente è stato abilitato per VoIP aziendale), se si desidera modificare il lineURI, è necessario eseguire questa operazione nell'annuncio locale e lasciare il flusso di valore fino a AAD. Questo non richiede Skype for Business Server locale. È invece possibile modificare questo attributo msRTCSIP-line direttamente in Active Directory locale, utilizzando lo snap-in MMC utenti e computer di Active Directory o tramite PowerShell. Se si utilizza lo snap-in MMC, aprire alla pagina delle proprietà dell'utente e fare clic su Attribute Editor Tab e find msRTCSIP-line.
+Gli amministratori possono gestire gli utenti precedentemente spostati da un server Skype for business locale al cloud, anche dopo che la distribuzione locale è stata disattivata. Sono disponibili due diverse possibilità:
 
-2.  Se l'utente non ha un valore per lineURI on-Prem prima dello spostamento, è possibile modificare la LineURI utilizzando i parametri-onpremLineUri nel cmdlet Set-CsUser nel modulo di PowerShell di Skype for business online.
+- L'utente non dispone di un valore per lineURI in locale prima dello spostamento. 
+
+  In questo caso, è possibile modificare il LineURI utilizzando i parametri-onpremLineUri nel [cmdlet Set-CsUser](https://docs.microsoft.com/powershell/module/skype/set-csuser?view=skype-ps) nel modulo di PowerShell di Skype for business online.
+
+- L'utente dispone di un lineURI locale prima dello spostamento (presumibilmente perché l'utente è stato abilitato per VoIP aziendale). 
+
+  Se si desidera modificare il lineURI, è necessario eseguire questa operazione in Active Directory locale e lasciare il flusso di valore fino a Azure AD. Questo non richiede Skype for Business Server locale. Questo attributo, msRTCSIP-line, può invece essere modificato direttamente in Active Directory locale, utilizzando lo snap-in MMC utenti e computer di Active Directory o tramite PowerShell. Se si utilizza lo snap-in MMC, aprire alla pagina delle proprietà dell'utente, fare clic su Attribute Editor Tab e trovare msRTCSIP-line.
+
+  ![Strumento utenti e computer di Active Directory](../media/disable-hybrid-1.png)
 
 ## <a name="see-also"></a>Vedere anche
 
