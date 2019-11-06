@@ -17,12 +17,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4616b3d78ae8d5e349b4cf29ca9112df77d7a295
-ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
+ms.openlocfilehash: 282f6f7295fe7763462a9298719466033aa335a4
+ms.sourcegitcommit: 2b4fcf2561134b9f1b9a1b49401d97da1286e89d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772350"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37979709"
 ---
 # <a name="hardware-requirements-for-the-microsoft-teams-app"></a>Requisiti hardware per l'app Microsoft Teams
 
@@ -64,7 +64,7 @@ ms.locfileid: "37772350"
 |Disco rigido    | 3,0 GB di spazio disponibile su disco        |
 |Visualizzare    |   risoluzione dello schermo di 1024 x 768 |
 |Hardware grafico |  Minima di 128 MB di memoria grafica
-|Sistema operativo  | Distribuzione Linux in grado di installare DEB, snap o RPM. |
+|Sistema operativo  | Distribuzione Linux in grado di installare DEB o RPM. |
 |Video    |  Videocamera USB 2,0       |
 |Dispositivi    |   Fotocamera, microfono e altoparlanti standard del portatile    | 
 |Segreteria telefonica    |  Microfono e altoparlanti compatibili, auricolare con microfono o dispositivo equivalente       |

@@ -12,12 +12,12 @@ ms.assetid: 6b2b2684-8e9e-49ea-8c46-1c690964f982
 ms.collection:
 - M365-collaboration
 description: Questo articolo riepiloga i requisiti per il supporto delle sale di Microsoft teams.
-ms.openlocfilehash: f9cdb6acd98fed0c20aed74fc5bdce3dff02b3d6
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 9173108fa6c7047e7e10e45b59d8038cf2d3446e
+ms.sourcegitcommit: 15fe483079847d24869e325eead35f252da8c7dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573639"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38001355"
 ---
 # <a name="microsoft-teams-rooms-requirements"></a>Requisiti di Microsoft teams rooms
 
@@ -86,7 +86,7 @@ Questi dispositivi sono disponibili su [aka.ms/teamsdevices](https://aka.ms/team
 |Periferiche Microsoft teams rooms|Versione del firmware certificata | Fotocamera supporta l'uso della fotocamera del contenuto|
 |:--- |:--- | :--- |
 |[Qi Crestron](https://www.crestron.com/en-US/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Accessories/CCS-CAM-USB-F-400)   | 1.02.09.33901  | &#x2714; |
-|[Logitech BRIO](https://www.logitech.com/en-us/product/brio)   |v240| &#x2714; |
+|[Logitech Brio](https://www.logitech.com/en-us/product/brio)   |V 2.2.50| &#x2714; |
 |[Logitech 930E](http://www.logitech.com/en-us/product/c930e-webcam)   | 8.0.914   | &#x2714; |
 |[Logitech Rally](https://www.logitech.com/en-us/product/rally-ultra-hd-conferencecam)   |1.2.4 |
 |[Logitech MeetUp](http://www.logitech.com/en-us/product/meetup-conferencecam)   |Audio-1.0.172 <br/> Video — 1.0.156  |

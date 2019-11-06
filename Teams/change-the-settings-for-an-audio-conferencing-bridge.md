@@ -22,10 +22,10 @@ ms.custom:
 - Audio Conferencing
 description: 'Ecco i passaggi necessari per modificare le impostazioni per un Bridge di conferenza usato per richiedere ai chiamanti e raccogliere nomi e pin per gli organizzatori della riunione quando non usano le app Skype for business o Microsoft teams. '
 ms.openlocfilehash: b7ac85729bafe9d27f9e33cfa22597811b8d3d0b
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.sourcegitcommit: 15fe483079847d24869e325eead35f252da8c7dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
+ms.lasthandoff: 11/06/2019
 ms.locfileid: "37516953"
 ---
 # <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un bridge per audioconferenza

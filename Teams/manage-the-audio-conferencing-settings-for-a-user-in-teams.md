@@ -21,10 +21,10 @@ ms.custom:
 - Audio Conferencing
 description: "In qualità di amministratore di Office 365, è possibile modificare le impostazioni di audioconferenza di Microsoft teams, ad esempio il provider, il numero verde o i numeri verdi, l'ID conferenza o il PIN, per un singolo utente dell'organizzazione. "
 ms.openlocfilehash: 673441acebf9b31893925539471040bffa621f38
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.sourcegitcommit: 15fe483079847d24869e325eead35f252da8c7dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 11/06/2019
 ms.locfileid: "37571924"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-a-user-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per un utente in Microsoft Teams
@@ -58,6 +58,6 @@ In qualità di amministratore di Office 365, puoi modificare le impostazioni di 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Gestire le impostazioni dei servizi di audioconferenza per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization-in-teams.md)
+[Gestire le impostazioni di audioconferenza per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization-in-teams.md)
 
 [Domande ricorrenti sulle audioconferenze](audio-conferencing-common-questions.md)
