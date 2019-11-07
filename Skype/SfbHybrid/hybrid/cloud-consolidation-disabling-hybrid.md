@@ -19,12 +19,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: In questa appendice sono riportati i passaggi dettagliati per la disabilitazione dell'ibrido come parte del consolidamento cloud per Teams e Skype for business.
-ms.openlocfilehash: d441d9fcc5e4f2cec495efabdbea423eaaec882c
-ms.sourcegitcommit: 7920c47eb73e665dad4bf7214b28541d357bce25
+ms.openlocfilehash: 7bd0b4c606a84dea08fb568d42fe403f624c522d
+ms.sourcegitcommit: b9710149ad0bb321929139118b7df0bc4cca08de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37962055"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38010579"
 ---
 # <a name="disable-hybrid-to-complete-migration-to-the-cloud"></a>Disabilitare l'ibrido per completare la migrazione al cloud
 
@@ -47,8 +47,8 @@ Il DNS esterno dell'organizzazione per l'organizzazione locale deve essere aggio
 
     |Tipo di record|Name|TTL|Value|
     |---|---|---|---|
-    |SRV|_sipfederationtls._tcp|3600|100 1 5061 sipfed. online. Lync. <span>com|
-    |SRV|_sip._tls|3600|100 1 443 sipdir. online. Lync. <span>com|
+    |SRV|_sipfederationtls. _tcp|3600|100 1 5061 sipfed. online. Lync. <span>com|
+    |SRV|_sip. _tls|3600|100 1 443 sipdir. online. Lync. <span>com|
     |CNAME| lyncdiscover|   3600|   WEBDIR. online. Lync. <span>com|
     |Record CNAME| sip|    3600|   sipdir. online. Lync. <span>com|
     |Record CNAME| soddisfare|   3600|   WEBDIR. online. Lync. <span>com|
@@ -61,9 +61,8 @@ Il comando seguente deve essere effettuato da una finestra di PowerShell di Skyp
     Set-CsTenantFederationConfiguration -SharedSipAddressSpace $false
     ```
  
-3.  *Disabilitare la funzionalità in on-Prem per comunicare con Office 365.*  
-Il comando seguente deve essere effettuato da una finestra di PowerShell locale.  Se in precedenza è stata importata una sessione di Skype for business online, avviare una nuova sessione di Skype for business PowerShell come indicato di seguito:
-
+3.  *Disabilitare l'abilità in locale per comunicare con Office 365.*  
+Il comando seguente deve essere effettuato da una finestra di PowerShell locale:
 ```
     Get-CsHostingProvider|Set-CsHostingProvider -Enabled $false
 ```
@@ -72,13 +71,13 @@ Il comando seguente deve essere effettuato da una finestra di PowerShell locale.
 
 Gli amministratori possono gestire gli utenti precedentemente spostati da un server Skype for business locale al cloud, anche dopo che la distribuzione locale è stata disattivata. Sono disponibili due diverse possibilità:
 
-- L'utente non dispone di un valore per lineURI in locale prima dello spostamento. 
+- L'utente non dispone di un valore per LineURI in locale prima dello spostamento. 
 
   In questo caso, è possibile modificare il LineURI utilizzando i parametri-onpremLineUri nel [cmdlet Set-CsUser](https://docs.microsoft.com/powershell/module/skype/set-csuser?view=skype-ps) nel modulo di PowerShell di Skype for business online.
 
-- L'utente dispone di un lineURI locale prima dello spostamento (presumibilmente perché l'utente è stato abilitato per VoIP aziendale). 
+- L'utente dispone di un LineURI locale prima dello spostamento (presumibilmente perché l'utente è stato abilitato per VoIP aziendale). 
 
-  Se si desidera modificare il lineURI, è necessario eseguire questa operazione in Active Directory locale e lasciare il flusso di valore fino a Azure AD. Questo non richiede Skype for Business Server locale. Questo attributo, msRTCSIP-line, può invece essere modificato direttamente in Active Directory locale, utilizzando lo snap-in MMC utenti e computer di Active Directory o tramite PowerShell. Se si utilizza lo snap-in MMC, aprire alla pagina delle proprietà dell'utente, fare clic su Attribute Editor Tab e trovare msRTCSIP-line.
+  Se si desidera modificare il LineURI, è necessario eseguire questa operazione in Active Directory locale e lasciare il flusso di valore fino a Azure AD. Questo non richiede Skype for Business Server locale. Questo attributo, msRTCSIP-line, può invece essere modificato direttamente in Active Directory locale, utilizzando lo snap-in MMC utenti e computer di Active Directory o tramite PowerShell. Se si utilizza lo snap-in MMC, aprire alla pagina delle proprietà dell'utente, fare clic su Attribute Editor Tab e trovare msRTCSIP-line.
 
   ![Strumento utenti e computer di Active Directory](../media/disable-hybrid-1.png)
 

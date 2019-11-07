@@ -1,5 +1,5 @@
 ---
-title: Presenza dell'utente in teams
+title: Presenza utente in Teams
 author: jambirk
 ms.author: jambirk
 manager: serdars
@@ -15,19 +15,21 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 054c3a639cc5857fb25a7e211a272868477dcb61
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: b829fbffa728d3449ba19466d0a2cb85f266c9c2
+ms.sourcegitcommit: b9710149ad0bb321929139118b7df0bc4cca08de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573218"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38010599"
 ---
-# <a name="user-presence-in-teams"></a>Presenza dell'utente in teams
+# <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
 La presenza fa parte del profilo di un utente in Microsoft Teams (e in tutto Office 365) che indica la disponibilità e lo stato correnti dell'utente ad altri utenti. Per impostazione predefinita, tutti gli utenti dell'organizzazione che usano team possono vedere (in tempi quasi reali) se sono disponibili online.
 
 > [!IMPORTANT]
 > Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza smette di funzionare in Outlook e in altre app di Office. La presenza funziona correttamente in teams. Soluzione alternativa: per vedere la presenza in Outlook e in altre app di Office, è necessario installare Skype for business, anche se si sta usando teams in modalità **solo teams** . Microsoft è a conoscenza del problema e sta lavorando a una correzione.
+
+La presenza di team in Outlook è supportata nell'app desktop Outlook 2013 e versioni successive.
 
 ## <a name="presence-states-in-teams"></a>Stati presenza in teams
 
@@ -54,9 +56,9 @@ Gli Stati di presenza degli utenti disponibili in teams sono:
 || ![Cerchio viola con freccia, indica fuori sede](media/Presence_OOF.png) Fuori sede|
 |||
  
-Gli utenti possono impostare manualmente lo stato presenza corrente su alcune opzioni e il relativo stato viene riflesso a tutti gli altri utenti. Vengono aggiornati automaticamente anche altri dettagli sulla presenza dell'utente. Le modifiche sono basate su attività utente (disponibile, assente), Stati del calendario di Outlook (in una riunione) o Stati dell'app Teams (in una chiamata, presentazione), agli Stati rientrati nell'elenco.
+Gli utenti possono impostare manualmente lo stato presenza corrente su alcune opzioni e il relativo stato viene riflesso a tutti gli altri utenti. Vengono aggiornati automaticamente anche altri dettagli sulla presenza dell'utente. Le modifiche sono basate su attività utente (disponibile, assente), Stati del calendario di Outlook (in una riunione) o Stati dell'app Teams (in una chiamata, presentazione), agli Stati rientrati nell'elenco. 
 
-Si verifica un timeout di 15 minuti di inattività, dopo il quale viene reimpostato uno stato presenza corrente su assente.
+C'è un timeout di 15 minuti di inattività, dopo il quale viene reimpostato uno stato presenza corrente su assente.
 
 Gli utenti possono specificare chi può sfondare (il che significa mettersi in contatto nonostante uno stato non disturbare). Queste impostazioni sono disponibili nel client teams.
 
@@ -73,6 +75,6 @@ Le seguenti impostazioni di amministratore Skype for business sono diverse in te
 > [!NOTE]
 > La capacità di un amministratore di teams di personalizzare queste impostazioni non è attualmente supportata.
 
-## <a name="coexistence-with-skype-for-business"></a>Coesistenza con Skype for business
+## <a name="coexistence-with-skype-for-business"></a>Coesistenza con Skype for Business
 
 Vedere la [coesistenza con Skype for business](coexistence-chat-calls-presence.md) per informazioni dettagliate su come funziona la presenza di teams quando l'organizzazione usa anche Skype for business.

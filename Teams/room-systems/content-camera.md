@@ -1,7 +1,7 @@
 ---
 title: Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML
-ms.author: jambirk
-author: jambirk
+ms.author: serdars
+author: serdarsoysal
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 description: Questo articolo illustra la gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft teams rooms, incluso l'applicazione di un tema personalizzato.
-ms.openlocfilehash: e127b476920a8086d3502c0583ca58cea95b0e86
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 24dcec21b9bc2fdb65f63fa21412bbf0f5503c1f
+ms.sourcegitcommit: c782999728e8adae51c52d122700d3e8fa651fdb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37639442"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38019949"
 ---
-# <a name="content-cameras"></a>Telecamere di contenuto
+# <a name="content-cameras"></a>Videocamere di contenuto
 
 Ora è possibile usare una videocamera di contenuto con un sistema di chat room Microsoft teams. Una fotocamera soddisfatta interagisce con un software di elaborazione delle immagini speciale e una lavagna per consentire a un relatore di disegnare su una lavagna analogica e condividere il contenuto con partecipanti remoti.
 
