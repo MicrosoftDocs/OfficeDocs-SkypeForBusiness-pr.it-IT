@@ -20,18 +20,18 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle caratteristiche disponibili nelle sale di Microsoft teams. '
-ms.openlocfilehash: 392f2c44e739eb0f9c2bcb80827d52491a0c5a9d
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: d6f08cb45905951eda72845ca8bfb21d77c82e4e
+ms.sourcegitcommit: 5e6eb8286bd5eb318a901e42235e91a58946c3a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573573"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038735"
 ---
 # <a name="teams-meeting-room-licensing-update"></a>Aggiornamento delle licenze della sala riunioni Teams
 
 ## <a name="licensing-solutions-for-shared-communication-devices"></a>Soluzioni di gestione licenze per dispositivi di comunicazione condivisi
 
-Microsoft ha e SKU dedicato per le riunioni di licenza e la chiamata su base per dispositivo per i dispositivi della sala riunioni, ad esempio Microsoft teams Rooms e Microsoft Surface Hub.
+Microsoft ha un SKU dedicato per le riunioni di licenza e la chiamata su base per dispositivo per i dispositivi della sala riunioni, ad esempio Microsoft teams Rooms e Microsoft Surface Hub.
 
 ||SKU Microsoft room |  
 |:--- |:---: |
@@ -57,13 +57,13 @@ La tabella seguente elenca le caratteristiche disponibili nelle sale di Microsof
 > [!NOTE]
 > È necessario che la sala configurata sia un oggetto utente e abbia le licenze assegnate.
 
-|  | Si hanno Microsoft teams o Skype for business online <br/> Ecco cosa occorre acquistare:   |Si ha Skype for Business Server 2015/2019 (locale o ibrido). <br/> Ecco cosa occorre acquistare:|
+|  | Si hanno Microsoft teams o Skype for business online <br/> Ecco cosa è necessario acquistare:   |Si ha Skype for Business Server 2015/2019 (locale o ibrido). <br/> Ecco cosa è necessario acquistare:|
 |:-----|:-----|:-----|
 |Partecipazione a una riunione programmata  | SKU sala riunioni  |Skype for Business Licenza CAL per server Standard  |
-|Avvio di una riunione ad-hoc | SKU sala riunioni  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
-|Avvio di una riunione ad-hoc ed esecuzione di chiamate in uscita dall'interno di una riunione a numeri di telefono |  SKU sala riunioni |Skype for Business Licenza CAL Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
+|Avviare una riunione ad hoc | SKU sala riunioni  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
+|Avviare una riunione ad hoc e effettuare chiamate in uscita da una riunione a numeri di telefono |  SKU sala riunioni |Skype for Business Licenza CAL Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
 |Assegnare un numero di telefono alla sala e effettuare o ricevere chiamate dalla sala o partecipare a una conferenza audio usando un numero di telefono  | SKU sala riunioni  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Plus  |
-|Gestire il dispositivo della sala con Microsoft Intune |SKU sala riunioni  |Abbonamento a Microsoft Intune con [MDM locale](https://docs.microsoft.com/sccm/mdm/plan-design/plan-on-premises-mdm) |
+|Gestire il dispositivo room con Microsoft Intune |SKU sala riunioni  |Abbonamento a Microsoft Intune con [MDM locale](https://docs.microsoft.com/sccm/mdm/plan-design/plan-on-premises-mdm) |
 | |||
 
 > [!NOTE]

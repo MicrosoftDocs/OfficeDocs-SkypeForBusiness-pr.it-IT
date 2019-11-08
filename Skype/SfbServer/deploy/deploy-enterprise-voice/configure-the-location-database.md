@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fb84f5b6-c991-4893-bdbf-f195b4b7d28e
 description: Configurare, popolare e pubblicare il database della posizione E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 36ddd57e39b51171581c0c6316f165f44879e3f9
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 5aad449d8d286fb4bd71373be33baea9cbb2c8f3
+ms.sourcegitcommit: 5e6eb8286bd5eb318a901e42235e91a58946c3a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233892"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038705"
 ---
 # <a name="configure-the-location-database-in-skype-for-business-server"></a>Configurare il database della posizione in Skype for Business Server
  
@@ -49,7 +49,7 @@ Se si usa un gateway ELIN (Emergency Location Identification Number), includere 
 |:-----|:-----|
 |**Punto di accesso wireless** <br/> |\<BSSID\>,\<Description\>,\<location\>,\<CompanyName\>,\<HouseNumber\>,\<HouseNumberSuffix\>,\<Predirectional\>,...  <br/> ... \<StreetName\>,\<StreetSuffix\>,\<Postdirectional\>,\<città\>,\<stato\>,\<Cap\>,\<paese\>  <br/> |
 |**Subnet** <br/> |\<Subnet\>,\<Descrizione\>,\<posizione\>,\<CompanyName\>,\<HouseNumber\>,\<HouseNumberSuffix\>,\<\>,... predirezionali  <br/> ... \<StreetName\>,\<StreetSuffix\>,\<Postdirectional\>,\<città\>,\<stato\>,\<Cap\>,\<paese\>  <br/> |
-|**Porta** <br/> |\<ChassisID\>,\<PortIDSubType\>,\<PortID\>,\<Description\>,\<location\>,\<CompanyName\>,\<HouseNumber\>,\< ,...\>HouseNumberSuffix  <br/> ... \<Predirectional\>,\<StreetName\>,\<StreetSuffix\>,\<Postdirectional\>,\<City\>,\<state\>,\<PostalCode\>,\< Paese\>  <br/> |
+|**Porta** <br/> |\<ChassisID\>,\<PortIDSubType\>,\<PortID\>,\<Description\>,\<location\>,\<CompanyName\>,\<HouseNumber\>,\<HouseNumberSuffix\>,...  <br/> ... \<Predirectional\>,\<StreetName\>,\<StreetSuffix\>,\<Postdirectional\>,\<City\>,\<state\>,\<PostalCode\>,\<Country\>  <br/> |
 |**Interruttore** <br/> |\<ChassisID\>,\<Description\>,\<location\>,\<CompanyName\>,\<HouseNumber\>,\<HouseNumberSuffix\>,\<Predirectional\>,...  <br/> ... \<StreetName\>,\<StreetSuffix\>,\<Postdirectional\>,\<città\>,\<stato\>,\<Cap\>,\<paese\>  <br/> |
    
 ### <a name="to-add-network-elements-to-the-location-database"></a>Per aggiungere elementi di rete al database della posizione
@@ -89,7 +89,7 @@ Se si usa un gateway ELIN (Emergency Location Identification Number), includere 
 3. Eseguire il cmdlet seguente per aggiungere posizioni di cambio al database della posizione.
     
    ```
-   Set-CsLisSwitch-ChassisID 0B-23-CD-16-AA-BB -Description "Switch1" -Location Location1 -CompanyName "Litware" -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
+   Set-CsLisSwitch -ChassisID 0B-23-CD-16-AA-BB -Description "Switch1" -Location Location1 -CompanyName "Litware" -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
    ```
 
    In alternativa, è possibile eseguire i cmdlet seguenti e usare un file denominato "switchs. csv" per le posizioni degli switch di aggiornamento in blocco.
