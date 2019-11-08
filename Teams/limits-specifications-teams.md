@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8cd9cdcd7abe3e86e540548bb735b89fa2c16bfe
-ms.sourcegitcommit: 15fe483079847d24869e325eead35f252da8c7dd
+ms.openlocfilehash: 8de3a1b61d706ba2f85e83ec6290378d47cb20fe
+ms.sourcegitcommit: b9710149ad0bb321929139118b7df0bc4cca08de
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/06/2019
-ms.locfileid: "37615998"
+ms.locfileid: "38010519"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -109,6 +109,10 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 |Eventi live simultanei in un tenant di Office 365 | 15 |
 
 Per altre informazioni sugli eventi live e per un confronto tra gli eventi live di Teams e Skype Meeting Broadcast, passare a [Eventi live di Teams e Skype Meeting Broadcast](teams-live-events/plan-for-teams-live-events.md#teams-live-events-and-skype-meeting-broadcast).
+
+## <a name="presence-in-outlook"></a>Presenza in Outlook
+
+La presenza di Teams in Outlook è supportata nell'app desktop Outlook 2013 e versioni successive. Per altre informazioni sulla presenza in Teams, vedere [Presenza utente in Teams](presence-admins.md).
 
 ## <a name="storage"></a>Archiviazione
 
