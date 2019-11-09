@@ -13,12 +13,12 @@ ms.assetid: df418e25-81fd-474d-be16-5cd1ac8145cc
 ms.collection:
 - M365-collaboration
 description: Questo articolo illustra la gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft teams rooms, incluso l'applicazione di un tema personalizzato.
-ms.openlocfilehash: 928f2ee5bc734aa128faf8af9e47387159666000
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: f00edb0d3d391daaf3cfa7a6f83e5c2951638236
+ms.sourcegitcommit: 1aa98e3865d5a0f7be5e1cba497dea4ac7b9c607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573463"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074618"
 ---
 # <a name="manage-a-microsoft-teams-rooms-console-settings-remotely-with-an-xml-configuration-file"></a>Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML
 
@@ -60,7 +60,7 @@ Qualsiasi editor di testo può essere usato per creare un file di impostazioni. 
     </Devices>
     <Theming>
         <ThemeName>Custom</ThemeName>
-        <CustomThemeImageUrl>folder path</CustomThemeImageUrl>
+        <CustomThemeImageUrl>file name</CustomThemeImageUrl>
         <CustomThemeColor>
             <RedComponent>100</RedComponent>
             <GreenComponent>100</GreenComponent>
@@ -102,7 +102,7 @@ Se un valore variabile è di tipo errato, gli elementi non sono in ordine, gli e
 |\<> ContentCameraEnhancement  | &#x2777; booleani | |Quando è impostato su true (impostazione predefinita), l'immagine della fotocamera del contenuto è migliorata digitalmente: viene rilevato il bordo della lavagna e viene selezionato uno zoom appropriato, le linee di input penna vengono migliorate e la persona che scrive sulla lavagna viene trasformata in modo trasparente.  <br><br> Impostare su false se si vuole inviare un feed video non elaborato ai partecipanti alla riunione per gli spazi in cui una lavagna non è disegnata con una penna e invece la fotocamera viene usata per mostrare note adesive, poster o altri elementi multimediali.  |
 | \<Temi\>  |Contenitore |Primo &#x2776;  |Una delle caratteristiche che è possibile applicare a un file XML è un tema personalizzato per l'organizzazione. È possibile specificare il nome del tema, l'immagine di sfondo e il colore. |
 |\<ThemeName\> |&#x2778; di stringa  || Usato per identificare il tema nel client. Le opzioni relative al nome del tema sono predefinite, uno dei temi preimpostati specificati o personalizzati. <br/>  I nomi dei temi personalizzati usano sempre il nome *Custom*. L'interfaccia utente del client può essere impostata alla console per l'impostazione predefinita o uno dei predefiniti, ma l'uso di un tema personalizzato deve essere impostato in remoto da un amministratore. <br/>  I temi preimpostati includono: <br/>  Predefinita <br/>  Onda blu <br/>  Foresta digitale <br/>  Dreamcatcher <br/>  Limeade <br/>  Pixel perfetti <br/>  Roadmap <br/>  Tramonto <br/>  Per disabilitare il tema corrente, USA "nessun tema" per il Temaname.  |
-|\<CustomThemeImageUrl\> |&#x2778; di stringa  ||Obbligatorio per un tema personalizzato, in caso contrario facoltativo.   |Per altre informazioni sull'immagine del tema personalizzata, vedere la sezione [Immagini tema personalizzate](xml-config-file.md#Themes) .
+|\<CustomThemeImageUrl\> |&#x2778; di stringa  ||Obbligatorio per un tema personalizzato, in caso contrario facoltativo. Immettere solo il nome del file.   |Per altre informazioni sull'immagine del tema personalizzata, vedere la sezione [Immagini tema personalizzate](xml-config-file.md#Themes) .
 |\<CustomThemeColor\> |Contenitore ||Contenitore per i \<valori\>di \<RedComponent\>, GreenComponent \<e\> BlueComponent. Questi valori sono necessari per un tema personalizzato. |
 |\<RedComponent\> |Byte (0-255) ||Rappresenta il componente colore rosso. |
 |\<GreenComponent\> |Byte (0-255) ||Rappresenta il componente colore verde. |
@@ -150,7 +150,7 @@ Per individuare il percorso dell'istanza:
 
 ## <a name="see-also"></a>Vedere anche
 
-[Telecamere di contenuto](content-camera.md)
+[Videocamere di contenuto](content-camera.md)
 
 [Gestire le sale di Microsoft Teams](skype-room-systems-v2.md)
 

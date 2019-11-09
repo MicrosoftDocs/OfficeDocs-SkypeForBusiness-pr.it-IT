@@ -1,5 +1,5 @@
 ---
-title: Routing diretto del sistema telefonico
+title: Instradamento diretto di Sistema telefonico
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -16,14 +16,14 @@ description: Notifica delle chiamate di routing diretto
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 07efe11d304107a5a8606a07f5d1c2a7a130bc0b
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.openlocfilehash: a031af6a7bdfedfebd6d666b717d03259d92f56c
+ms.sourcegitcommit: 1aa98e3865d5a0f7be5e1cba497dea4ac7b9c607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37639380"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074608"
 ---
-# <a name="manage-call-notifications"></a>Gestire le notifiche delle chiamate
+# <a name="manage-call-notifications"></a>Gestire le notifiche di chiamata
 
 Questo articolo descrive come gestire le notifiche delle chiamate per gli utenti. È possibile configurare gli endpoint delle chiamate sia in team che in un PBX (Private Branch Exchange) di terze parti o in SBC (Session Border Controller).  Questa operazione è utile, ad esempio, se si vuole inviare una chiamata ai telefoni mobili e da tavolo di un utente contemporaneamente.   
 
@@ -43,7 +43,7 @@ Se la chiamata viene accettata in fork 2 (da parte di SBC di terze parti), i tea
 
 MOTIVO: SIP; causa = 200; testo "chiamata completata altrove" 
 
-Tieni presente che la chiamata non verrà registrata nei record dettagli chiamata di Microsoft Phone System come chiamata corretta. La chiamata verrà registrata come "tentativo" con il codice SIP finale "487", il sottocodice finale Microsoft "540200" e la frase finale del codice SIP "chiamata completata altrove".   Per visualizzare i record dettagli chiamata, visitare il portale di amministrazione di teams, le analisi e i report, i report sull'utilizzo e selezionare l'uso di PSNT.
+Tieni presente che la chiamata non verrà registrata nei record dettagli chiamata di Microsoft Phone System come chiamata corretta. La chiamata verrà registrata come "tentativo" con il codice SIP finale "487", il sottocodice finale Microsoft "540200" e la frase finale del codice SIP "chiamata completata altrove".   Per visualizzare i record dettagli chiamata, visitare il portale di amministrazione di teams, le analisi e i report, i report sull'utilizzo e selezionare l'utilizzo PSTN.
 
 
 Il diagramma seguente illustra la scala SIP per il fork 1, spiega il flusso delle chiamate e il motivo previsto nel messaggio di annullamento. 

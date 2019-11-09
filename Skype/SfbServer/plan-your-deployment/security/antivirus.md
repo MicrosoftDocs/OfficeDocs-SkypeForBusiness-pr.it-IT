@@ -11,22 +11,16 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 5d742259-ef3b-417a-920b-e1fa0e48f043
 description: Panoramica dell'interoperabilità dello scanner antivirus con Skype for Business Server.
-ms.openlocfilehash: 9ec13b31328744bb154c9eb5e09dff7665c4b540
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 69fb02d04f27b7444a3b8cadaacafc05654a1c9f
+ms.sourcegitcommit: 1aa98e3865d5a0f7be5e1cba497dea4ac7b9c607
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194897"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38074628"
 ---
 # <a name="antivirus-scanning-exclusions-for-skype-for-business-server"></a>Esclusioni di scansione antivirus per Skype for Business Server
 
 Panoramica dell'interoperabilità dello scanner antivirus con Skype for Business Server.
-
-Questo articolo contiene raccomandazioni che possono aiutare un amministratore a determinare la causa di un'instabilità potenziale in un computer che sta usando una versione supportata di Microsoft Windows quando viene usata con il software antivirus in un dominio Active Directory ambiente o in un ambiente aziendale gestito.
-
-Ti consigliamo di applicare temporaneamente queste procedure per valutare un sistema. Se le prestazioni del sistema o la stabilità sono migliorate dalle raccomandazioni apportate in questo articolo, contattare il fornitore del software antivirus per istruzioni o per una versione aggiornata del software antivirus.
-
-Questo articolo contiene informazioni che illustrano come semplificare la riduzione delle impostazioni di sicurezza o come disattivare temporaneamente le caratteristiche di sicurezza in un computer. È possibile apportare queste modifiche per comprendere la natura di un problema specifico. Prima di apportare queste modifiche, è consigliabile valutare i rischi associati all'implementazione di questa soluzione alternativa nell'ambiente specifico. Se si implementa questa soluzione alternativa, eseguire qualsiasi procedura complementare appropriata per proteggere il computer per i file che non vengono più analizzati dal software antivirus.
 
 Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento di Skype for Business Server, è necessario escludere processi e directory specifici per ogni ruolo server o server Skype for Business Server in cui si esegue uno scanner antivirus. I processi e le directory seguenti devono essere esclusi:
 
@@ -127,7 +121,7 @@ Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento d
 
   - %systemroot%\SysWow64\LogFiles
 
-  - %systemroot%\Microsoft.NET\assembly\GAC_MSIL
+  - GAC_MSIL%systemroot%\Microsoft.NET\assembly\
 
     > [!NOTE]
     > Tieni presente che questi percorsi sono specifici della versione di Skype for Business Server.
