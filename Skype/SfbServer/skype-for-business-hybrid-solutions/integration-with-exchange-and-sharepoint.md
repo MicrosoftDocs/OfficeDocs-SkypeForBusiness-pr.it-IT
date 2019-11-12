@@ -15,15 +15,16 @@ ms.collection:
 - IT_Skype16
 - IT_Skype4B_Hybrid
 - Strat_SB_Hybrid
+- SPO_Content
 ms.custom: ''
 ms.assetid: 5d456d6c-ad71-420c-b6d8-4d9cd0324f86
 description: "Riepilogo: informazioni sull'integrazione di Skype for Business Server 2015 con Exchange e SharePoint."
-ms.openlocfilehash: fa4e6d93dd1538dbeafdb05998c4f57482e0f4f5
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 18839125faee2dfd27ad3843e37b723f56581ff3
+ms.sourcegitcommit: ddb4eaf634476680494025a3aa1c91d15fb58413
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194552"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231147"
 ---
 # <a name="integration-with-exchange-and-sharepoint"></a>Integrazione con Exchange e SharePoint
 
@@ -110,7 +111,7 @@ Le tabelle seguenti elencano le caratteristiche supportate in una distribuzione 
 |Delega riunione  <br/> |Supportato solo quando entrambi gli utenti sono ospitati online nella stessa foresta oppure vengono ospitati in locale. Per altre informazioni, Vedi [soluzioni ibride di Skype for business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions). <br/> |
 |Archiviazione del contenuto (messaggistica istantanea e riunione) in Exchange  <br/> ||
 |Cercare contenuto archiviato  <br/> ||
-|Casella vocale  <br/> ||
+|Segreteria telefonica  <br/> ||
 
 ## <a name="integration-with-sharepoint"></a>Integrazione con SharePoint
 

@@ -12,21 +12,22 @@ description: Informazioni su come interagire con SharePoint Online e OneDrive fo
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- SPO_Content
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5b18cf1f97d0798df5cac4881672c0756cc56616
-ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
+ms.openlocfilehash: 0e48c3e156fed45e447ddcbaaba5300537c651ab
+ms.sourcegitcommit: ddb4eaf634476680494025a3aa1c91d15fb58413
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968247"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231107"
 ---
 # <a name="how-sharepoint-online-and-onedrive-for-business-interact-with-microsoft-teams"></a>Come interagire con SharePoint Online e OneDrive for business con Microsoft Teams
 
 > [!Tip]
 > Per informazioni su come interagire con i team con Azure Active Directory (AAD), Office 365 groups, Exchange, SharePoint e OneDrive for business, vedere la sessione seguente: [fondazioni di Microsoft teams](https://aka.ms/teams-foundations)
 
-Ogni team di Microsoft Teams ha un sito del team in SharePoint Online e ogni canale standard in un team ottiene una cartella nella raccolta documenti del sito del team predefinita. I file condivisi all'interno di una conversazione vengono automaticamente aggiunti alla raccolta documenti e le autorizzazioni e le opzioni di sicurezza dei file impostate in SharePoint vengono automaticamente riflesse in teams.
+Ogni team di Microsoft Teams ha un sito del team in SharePoint Online e ogni canale standard in un team ottiene una cartella nella raccolta documenti del sito del team predefinita. I file condivisi in una conversazione vengono aggiunti automaticamente alla raccolta documenti e le autorizzazioni e opzioni di sicurezza per i file impostate in SharePoint vengono applicate automaticamente all'interno di Teams.
 
 > [!NOTE]
 > Questo articolo si applica solo ai canali standard. L'architettura per i canali privati è diversa dai canali standard. Ogni canale privato ha una propria raccolta siti di SharePoint separata dal sito del team padre. Per altre informazioni, vedere [canali privati in Microsoft teams](private-channels.md).
@@ -35,7 +36,7 @@ I file di chat privati sono archiviati nella cartella OneDrive for business del 
 
 Se gli utenti non sono assegnati e abilitati con le licenze di SharePoint Online, non hanno spazio di archiviazione di OneDrive for business in Office 365. La condivisione dei file continuerà a funzionare nei canali standard, ma gli utenti non potranno condividere file in chat senza spazio di archiviazione di OneDrive for business in Office 365.
 
-Archiviando i file nella raccolta documenti di SharePoint Online e in OneDrive for business, verranno seguite tutte le regole di conformità configurate a livello di tenant. 
+Archiviando i file nella raccolta documenti di SharePoint Online e in OneDrive for Business, verranno rispettate tutte le regole di conformità configurate a livello di tenant. 
 
 > [!NOTE]
 > L'integrazione con SharePoint locale non è supportata per Microsoft teams in questo momento.

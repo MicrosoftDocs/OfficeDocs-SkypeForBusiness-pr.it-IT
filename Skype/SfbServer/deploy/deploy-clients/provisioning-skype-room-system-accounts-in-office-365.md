@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c36150bb-461c-4f1c-877b-fac7fb232f7c
 description: Leggere questo argomento per informazioni sul provisioning degli account di Skype room System in Office 365.
-ms.openlocfilehash: d247983647641c91376c99bed3a13606027a7e11
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: 830c0e33a15639f3c78197d084748bb3b2cde600
+ms.sourcegitcommit: ddb4eaf634476680494025a3aa1c91d15fb58413
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775390"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231267"
 ---
 # <a name="provisioning-skype-room-system-accounts-in-office-365"></a>Provisioning degli account di Skype room System in Office 365
  
@@ -91,7 +91,7 @@ Dopo aver creato la cassetta postale, è possibile usare il cmdlet Set-CalendarP
 
 ## <a name="assigning-a-skype-for-business-online-license"></a>Assegnazione di una licenza Skype for business online
 
-Ora è possibile assegnare una licenza di Skype for business online (piano 2) o Skype for business online (piano 3) usando il portale amministrativo di Office 365, come descritto in [assegnare o rimuovere licenze per Office 365 for business](https://support.office.com/en-us/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&amp;rs=en-US&amp;ad=US) o nel [componente aggiuntivo Skype for business licenze](https://support.office.com/en-US/article/Skype-for-Business-add-on-licensing-3ed752b1-5983-43f9-bcfd-760619ab40a7). 
+Ora è possibile assegnare una licenza di Skype for business online (piano 2) o Skype for business online (piano 3) usando il portale amministrativo di Office 365, come descritto in [assegnare o rimuovere licenze per office 365 for business](https://support.office.com/en-us/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&amp;rs=en-US&amp;ad=US) o in licenze per i [componenti aggiuntivi Skype for business](https://support.office.com/en-US/article/Skype-for-Business-add-on-licensing-3ed752b1-5983-43f9-bcfd-760619ab40a7). 
   
 Dopo aver assegnato una licenza per Skype for business online, è possibile effettuare l'accesso e verificare che l'account sia attivo usando qualsiasi client Skype for business.
   
@@ -119,7 +119,9 @@ Dopo aver creato e abilitato un account della cassetta postale della sala risors
    Get-CsOnlineUser -Identity 'alice@contoso.onmicrosoft.com'| fl *registrarpool*
    ```
 
-  
+>[!NOTE] 
+>L'autenticazione a più fattori (AMF) non è supportata per gli account di sistema room Skype. 
+
 ## <a name="password-expiration"></a>Scadenza password
 
 In Office 365 i criteri di scadenza della password predefiniti per tutti gli account utente sono di 90 giorni, a meno che non vengano configurati criteri di scadenza della password diversi. Per gli account di sistema Skype room, è possibile selezionare la password non scade mai con i passaggi seguenti.

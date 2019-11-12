@@ -8,17 +8,18 @@ audience: admin
 ms.service: msteams
 ms.collection:
 - M365-collaboration
+- SPO_Content
 ms.reviewer: anach
 search.appverid: MET150
 description: Informazioni sulla ricerca di contenuto in Microsoft teams e su come eseguire la ricerca in base a conversazioni di canale da Exchange, upload di file e modifiche da SharePoint e OneNote.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: faed09a5fafaec559bc4277b75a60d8cc594fa85
-ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
+ms.openlocfilehash: 3042a39d30ca14ff4eda9be6a1042bfca3484bd2
+ms.sourcegitcommit: ddb4eaf634476680494025a3aa1c91d15fb58413
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968287"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231157"
 ---
 <a name="use-content-search-in-microsoft-teams"></a>Usare la ricerca contenuto in Microsoft Teams
 =====================================
@@ -30,7 +31,7 @@ Ricerca contenuto consente di eseguire query sulle informazioni di Microsoft tea
 
 Per altre informazioni, leggere la [ricerca di contenuto in Office 365](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a).
 
-Ad esempio, usando la **ricerca di contenuto** in base alle specifiche della cassetta postale di produzione e delle specifiche di produzione del sito di SharePoint, è possibile eseguire una ricerca in base alle conversazioni dei canali standard di Teams da Exchange, upload di file e modifiche da SharePoint Online. e OneNote cambia.
+Ad esempio, usando la **ricerca di contenuto** per le specifiche della cassetta postale di produzione e delle specifiche di produzione del sito di SharePoint, è possibile eseguire una ricerca in base alle conversazioni di canale standard di Teams da Exchange, upload di file e modifiche da SharePoint Online e modifiche di OneNote.
 
 È anche possibile aggiungere criteri di query alla **Ricerca contenuto** per restringere i risultati restituiti. Nell'esempio precedente puoi cercare il contenuto in cui sono state usate le parole chiave "**nuove specifiche di fabbrica"** .
 

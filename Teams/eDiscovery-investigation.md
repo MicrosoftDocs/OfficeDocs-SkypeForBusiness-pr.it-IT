@@ -8,17 +8,18 @@ ms.service: msteams
 audience: admin
 ms.collection:
 - M365-collaboration
+- SPO_Content
 ms.reviewer: anach
 search.appverid: MET150
 description: Informazioni su cosa fare quando è necessario preformare un eDiscovery, ad esempio quando è necessario inviare tutte le info archiviate elettronicamente per il procedimento legale.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 27dac8bd72eaac581022431c3786b0f7487d137c
-ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
+ms.openlocfilehash: e645085130b65283a1841661c4e2885e5ea9cba4
+ms.sourcegitcommit: ddb4eaf634476680494025a3aa1c91d15fb58413
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968047"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231117"
 ---
 <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams
 ============================

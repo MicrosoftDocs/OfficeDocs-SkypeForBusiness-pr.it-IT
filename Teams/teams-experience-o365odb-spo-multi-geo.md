@@ -12,19 +12,20 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
+- SPO_Content
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cf2fac5249f2267c7813c1ba12aade279da094f3
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: fe181e7ef55b386d4a6eb40bb7e383ca89a956d9
+ms.sourcegitcommit: ddb4eaf634476680494025a3aa1c91d15fb58413
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570235"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "38231247"
 ---
 <a name="teams-experience-in-an-office-365-onedrive-and-sharepoint-online-multi-geo-enabled-tenancy"></a>Esperienza teams in una locazione di Office 365 OneDrive e SharePoint Online Multi-Geo-Enabled
 ===========================================
 
-Microsoft teams è un software per la chat di gruppo, l'hub per il lavoro in team in Office 365. È alimentato dal servizio gruppi di Office 365 insieme a SharePoint Online e OneDrive for business per l'esperienza dei suoi file. In un OneDrive for business/SharePoint Online Multi-geo-locazione, in cui il tenant è esteso a molte posizioni geografiche come il Nord America, l'Europa e l'Australia, l'esperienza dei file sottostanti è a conoscenza di più Geo, quindi l'esperienza dei team con file la collaborazione è anche multi-Geo-Aware. Questa è una delle principali funzionalità all'avanguardia per i team per la superficie di file ospitati in più GEOS nella sua esperienza di file nativo.
+Microsoft teams è un software per la chat di gruppo, l'hub per il lavoro in team in Office 365. È alimentato dal servizio gruppi di Office 365 insieme a SharePoint Online e OneDrive for business per l'esperienza dei suoi file. In un OneDrive for business/SharePoint Online Multi-geo-locazione, in cui il tenant è esteso a molte posizioni geografiche come il Nord America, l'Europa e l'Australia, l'esperienza dei file sottostanti è a conoscenza di più Geo, quindi l'esperienza di teams con la collaborazione di file è anche a livello geo-consapevole. Questa è una delle principali funzionalità all'avanguardia per i team per la superficie di file ospitati in più GEOS nella sua esperienza di file nativo.
 
 Ad esempio, in un contratto di locazione di Contoso con l'Europa come satellite geo e Nord America come Geo centrale, un utente satellite europeo vedrà i propri file di OneDrive nella scheda file nel riquadro sinistro, anche se i file sono ospitati nella posizione dati in Europa e in United Stat es è la posizione centrale del tenant. Inoltre, l'utente può accedere ai file usati più di recente sotto la lama di visualizzazione recente. I file recenti possono includere file condivisi con l'utente dagli utenti di altri GEOS e potrebbero essere padroneggiati in altre posizioni geografiche a cui il tenant è esteso. 
 
