@@ -15,14 +15,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 141527e7decdfec2b1070cfdd41897f38a63a458
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 56d622a3a8757ca377c75bea79028dc5587b6bb8
+ms.sourcegitcommit: ed7439d03e37c9c0184daf5215a68c5492932a83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568379"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290976"
 ---
-# <a name="quality-of-experience-review-guide"></a>Guida alla revisione della qualità dell'esperienza
+# <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza
 
 <!-- Note that this link to the Word doc is intentionally NOT the aka.ms/qerquide link -->
 Questa guida riguarda la fase di valori di unità per Microsoft teams e Skype for business online. È possibile [scaricare una versione di Word](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/quality-of-experience-review-guide.docx?raw=true) di questa guida.
@@ -62,15 +62,17 @@ Questa guida è destinata anche all'uso da parte dei campioni di qualità design
 
 Prima di usare questa guida, verificare che siano assegnati i [ruoli](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) del tenant appropriati in modo da poter accedere a Call Quality dashboard.
 
--   **Ruolo di amministratore globale di Office 365** 
+-   **Amministratore globale di Office 365** 
 
--   **Ruolo di amministratore di Skype for business** 
+-   **Amministratore di Skype for business** 
 
--   **Ruolo amministratore servizio Teams** 
+-   **Amministratore del servizio Teams** 
 
--   **Ruolo supporto tecnico comunicazioni Teams** 
+-   **Amministratore comunicazioni Teams** 
 
--   **Ruolo di specialista in supporto comunicazioni Teams** 
+-   **Tecnico supporto comunicazioni Teams** 
+
+-   **Specialista supporto comunicazioni Teams** 
 
 In alternativa, è possibile assegnare il ruolo seguente a un account utente di Office 365 per consentire l'accesso solo alle funzionalità di creazione di report.
 
@@ -227,7 +229,7 @@ La prima volta che si eseguono queste attività sarà necessario uno sforzo magg
 
 #### <a name="service-management-tasks"></a>Attività di gestione dei servizi
 
-In un mondo cloud-First è necessario eseguire alcune attività di gestione dei servizi per mantenere le esperienze degli utenti di alta qualità. Queste attività variano da garantire che la larghezza di banda sia sufficiente per raggiungere il servizio senza saturare i collegamenti Internet, convalidando la qualità del servizio (QoS) in tutte le aree di rete gestite e, infine, rimanendo in primo piano sugli [intervalli IP di Office 365 firewall](https://aka.ms/o365ips).
+In un mondo cloud-First è necessario eseguire alcune attività di gestione dei servizi per mantenere le esperienze degli utenti di alta qualità. Queste attività variano da garantire che la larghezza di banda sia sufficiente per raggiungere il servizio senza saturare i collegamenti Internet, convalidando la qualità del servizio (QoS) in tutte le aree di rete gestite e, infine, rimanendo in primo piano sugli [intervalli IP di Office 365 nei firewall](https://aka.ms/o365ips).
 
 #### <a name="network-tasks"></a>Attività di rete
 
@@ -265,9 +267,6 @@ Per una formazione e risorse più approfondite, vedere l' [appendice](#other-res
 
 Si usa il dashboard qualità chiamata (Call Quality Dashboard) per ottenere informazioni sulla qualità delle chiamate effettuate tramite Team e servizi Skype for business. Call Quality dashboard è progettato per aiutare gli amministratori di Skype for business e teams e gli ingegneri di rete a ottimizzare la rete e a tenere d'occhio la qualità, l'affidabilità e l'esperienza utente. Call Quality dashboard analizza la telemetria aggregata per un'intera organizzazione in cui i modelli generali possono diventare evidenti, consentendo al personale di effettuare valutazioni informate e pianificare le attività di bonifica per massimizzare l'impatto. Call Quality dashboard fornisce report di metriche che offrono informazioni generali sulla qualità, l'affidabilità e l'esperienza utente.
 
-> [!Note]
-> Call Quality Dashboard non contiene informazioni personali. PII sono le informazioni che possono essere usate autonomamente o con altre informazioni per identificare, contattare o individuare una singola persona o per identificare un individuo nel contesto.
-
 Questa guida ti aiuterà a comprendere i concetti di base di Call Quality dashboard per massimizzare l'impatto che puoi fare per migliorare l'esperienza degli utenti con team o Skype for business online. Altre risorse di Call Quality dashboard possono essere trovate nell' [appendice](#other-resources).
 
 ### <a name="expectations-using-cqd"></a>Aspettative con Call Quality dashboard
@@ -277,18 +276,15 @@ Call Quality dashboard, anche se utile per analizzare le tendenze e le subnet, n
 -   Call Quality Dashboard non offre la causa radice per ogni scenario.
 -   Call Quality Dashboard non conterrà flussi di sistema telefonico o di audioconferenza.
 -   Call Quality dashboard chiamerà le aree per ulteriori indagini in base alle tendenze.
--   Call Quality Dashboard non contiene informazioni personali.
 
 ### <a name="report-editions"></a>Edizioni di report
 
-In Call Quality dashboard online sono disponibili due edizioni di report: riepilogo e dettagli. Usare il menu a discesa posizionato nella barra blu nella parte superiore della schermata per aprire un'edizione di report. Il nome dell'edizione del report selezionata viene visualizzato nella parte superiore dello schermo.
+In Call Quality dashboard online sono disponibili due edizioni di report: riepilogo e dettagli. Usare il menu a discesa situato nella barra nella parte superiore della schermata per aprire un'edizione di report. Il nome dell'edizione del report selezionata viene visualizzato nella parte superiore dello schermo.
 
 -   I report di riepilogo sono statici e non possono essere modificati, scaricati o esportati. 
 -   I report dettagliati sono completamente personalizzabili e possono essere scaricati in un file CSV, esportati o clonati.
 
 Per una descrizione completa della differenza tra le due edizioni, vedere [questo articolo](turning-on-and-using-call-quality-dashboard.md).
-
-![Schermata del menu a discesa con i report di riepilogo selezionati](media/qerguide-image-reportcategories.png)
 
 _Figura 4-categorie di report Call Quality dashboard_
 
@@ -363,7 +359,7 @@ Call Quality dashboard può segnalare sia in team che in telemetria Skype for bu
 
 Per modificare la pagina dei report di riepilogo per visualizzare solo i team o Skype for business, selezionare il menu a discesa **filtro prodotto** nella parte superiore dello schermo e quindi selezionare il prodotto desiderato.
 
-![Schermata del menu a discesa che mostra le opzioni di filtro](media/qerguide-image-productfilter.png)
+![Screenshot del menu a discesa che mostra le opzioni di filtro](media/qerguide-image-productfilter.png)
 
 _Figura 5-Selezionare un filtro prodotto_
 
@@ -801,36 +797,6 @@ Network Planner determina e organizza i requisiti di rete per la distribuzione d
 
 Anche se Network Planner non automatizza completamente il processo di mapping delle costruzioni, dopo aver immesso le informazioni di rete in Network Planner può quindi essere esportato in un file di costruzione pronto per il caricamento.
 
-## <a name="diagnostic-alerts"></a>Avvisi di diagnostica
-
-Microsoft monitora in modo proattivo Call Quality dashboard la telemetria per creare avvisi diagnostici per problemi noti che influiscono negativamente sull'esperienza utente. Questi avvisi vengono quindi recapitati automaticamente all'amministratore del servizio tramite il centro messaggi. Nella tabella seguente sono illustrati gli avvisi di diagnostica visualizzati nel centro messaggi, oltre a collegamenti ad altre informazioni.
-
-_Tabella 6-avvisi di diagnostica_
-
-| Avviso                                                                | Ulteriori informazioni             |
-|----------------------------------------------------------------------|------------------------------|
-| Le versioni client note con scarsa esecuzione sono in uso                   | [Versioni client](#client-versions)              |
-| I driver audio causano le cadute delle chiamate                                 | [Dispositivi](#devices)                      |
-| Le restrizioni nel firewall causano errori di configurazione delle chiamate         | [Analisi degli errori di installazione](#setup-failure-investigations) |
-| Il controllo approfondito del pacchetto causa errori di configurazione delle chiamate                | [Analisi degli errori di installazione](#setup-failure-investigations) |
-| I dispositivi della sala riunioni sulle reti Wi-Fi causano una scarsa qualità delle chiamate | [Indagini di qualità](#quality-investigations)       |
-| Il traffico UDP è limitato, che causa una scarsa qualità delle chiamate         | [TCP](#tcp)                          |
-| L'utilizzo della VPN influenza la qualità delle chiamate                                  | [Indagini di qualità](#quality-investigations)       |
-
-
-### <a name="message-center"></a>Centro messaggi
-
-Il centro messaggi segnala la disponibilità di nuovi aggiornamenti, funzionalità o problemi. Il centro messaggi è disponibile nell'interfaccia di amministrazione di Microsoft 365 per gli amministratori dei servizi. Ogni post offre una panoramica di alto livello sul modo in cui l'aggiornamento, la funzionalità o il problema interessa gli utenti e fornisce collegamenti a informazioni più dettagliate.
-
-Per aprire il centro messaggi, nell'interfaccia di amministrazione di Microsoft 365 passare al **** > **centro messaggi**di integrità oppure selezionare la scheda centro messaggi nel dashboard **Home** . Nel dashboard vengono visualizzati gli ultimi tre messaggi pubblicati e i collegamenti alla pagina Centro messaggi completo.
- 
-
-![Screenshot del centro messaggi che Mostra gli ultimi tre messaggi pubblicati](media/qerguide-image-messagecentercard.png)
-
-_Figura 18-scheda centro messaggi_
-
-È anche possibile usare l' [app di amministrazione di Office 365](https://go.microsoft.com/fwlink/p/?linkid=627216) nel dispositivo mobile per visualizzare il centro messaggi, che è un ottimo modo per rimanere aggiornati con le notifiche push. Per altre informazioni, vedere [questo articolo](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093).
-
 ## <a name="reliability-investigations"></a>Indagini sull'affidabilità
 
 Il primo passaggio per migliorare la qualità consiste nel valutare lo stato di affidabilità nell'organizzazione. Dato che l'affidabilità è fondamentale per un'esperienza utente positiva, iniziamo con i due componenti che misurano l'affidabilità:
@@ -881,13 +847,9 @@ Questo report riepilogativo viene usato per individuare e isolare eventuali edif
 > Assicurarsi di regolare il filtro rapporto mese-anno nel mese corrente. Selezionare **modifica**e regolare il filtro rapporto **mese-anno** per salvare il nuovo mese predefinito.
 
 
-![Screenshot che Mostra gli errori di configurazione](media/qerguide-image-setupfailuresbysubnet.png)
+![Schermata che Mostra gli errori di configurazione](media/qerguide-image-setupfailuresbysubnet.png)
 
 _Figura 20-errori di configurazione audio per subnet_
-
-##### <a name="diagnostic-alert"></a>Avviso di diagnostica
-
-Se è stato ricevuto un avviso diagnostico "le restrizioni nel firewall causano errori di configurazione delle chiamate" oppure "il controllo approfondito dei pacchetti causa errori di configurazione delle chiamate", concentra prima di tutto gli sforzi di correzione per le subnet identificate. L'avviso ha identificato subnet che influiscono negativamente sull'affidabilità delle chiamate. È possibile usare i report errori di configurazione trovati nella sezione affidabilità per facilitare la correzione.
 
 ##### <a name="remediation"></a>Correzioni 
 
@@ -956,7 +918,7 @@ Cause comuni delle cadute di chiamata:
 -   Versioni client meno recenti
 -   Comportamento degli utenti
 
-Dopo aver individuato le aree problematiche, è possibile usare la [chiamata analitica](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Introducing-Call-Analytics/ba-p/57309) per esaminare ulteriormente gli utenti in tale edificio per problemi specifici. L'analisi delle chiamate contiene dati PII e può essere utile per isolare ulteriormente i possibili motivi per gli errori di rilascio.
+Dopo aver individuato le aree problematiche, è possibile usare la [chiamata analitica](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Introducing-Call-Analytics/ba-p/57309) per esaminare ulteriormente gli utenti in tale edificio per problemi specifici. L'analisi delle chiamate contiene dati PII aggiuntivi e può essere utile per isolare ulteriormente i possibili motivi per gli errori di rilascio.
 
 Indipendentemente dal passaggio successivo, è consigliabile informare l'helpdesk che è stato individuato un problema con edifici o subnet specifiche. In questo modo, possono rispondere rapidamente alle chiamate in arrivo e agli utenti della valutazione in modo più efficiente. Gli utenti contrassegnati possono quindi essere restituiti al team di progettazione per ulteriori indagini.
 
@@ -1025,12 +987,6 @@ Anche se le dimensioni usate potrebbero differire leggermente tra report, ogni r
 ![Schermata che mostra il riepilogo del flusso audio scadente](media/qerguide-image-poorqualitysummary.png)
 
 _Figura 24-Riepilogo del flusso audio scadente tramite la creazione e la subnet-conferenza_
-
-##### <a name="diagnostic-alert"></a>Avviso di diagnostica
-
-Se è stato ricevuto un avviso diagnostico "i dispositivi della sala riunioni sulle reti Wi-Fi causano una qualità di chiamata scadente", includere e assegnare priorità a tali dispositivi negli sforzi di correzione. L'avviso ha identificato sale riunioni su Wi-Fi che contribuiscono attivamente alla qualità di chiamata scadente.
-
-Se si riceve un avviso diagnostico "l'uso di VPN sta interessando la qualità della chiamata," esaminare una soluzione di tunneling diviso per ignorare l'appliance VPN e consentire la connessione diretta del supporto al servizio. L'avviso ha identificato la qualità della chiamata da parte di VPN.
 
 ##### <a name="remediation"></a>Correzioni
 
@@ -1116,10 +1072,6 @@ Nei modelli di Call Quality dashboard forniti passare ai flussi TCP tramite la c
 
 _Figura 27-flussi TCP tramite la creazione e la subnet-conferenza_
 
-##### <a name="diagnostic-alert"></a>Avviso di diagnostica
-
-Se è stato ricevuto un avviso diagnostico "il traffico UDP è limitato, che causa una qualità scadente delle chiamate," attiva innanzitutto gli sforzi di correzione del protocollo TCP su tali subnet. L'avviso ha identificato le subnet in cui l'uso di TCP influenza negativamente la qualità delle chiamate.
-
 ##### <a name="remediation"></a>Correzioni
 
 Questo report identifica edifici e subnet specifici che contribuiscono al volume dell'utilizzo di TCP. Viene inoltre incluso un report aggiuntivo per identificare l'IP di inoltro Microsoft usato nella chiamata per isolare le regole del firewall mancanti. Concentrare gli sforzi di correzione per gli edifici che hanno il volume più alto di flussi TCP per massimizzare l'impatto.
@@ -1159,7 +1111,7 @@ Si vogliono visualizzare i piccoli flussi multimediali HTTP possibili. Se si han
 
 Se si ha un solo proxy Internet nell'organizzazione, verificare gli URL di [Office 365 appropriati e le esclusioni degli intervalli di indirizzi IP](https://aka.ms/o365ips). Se nell'organizzazione sono configurati più proxy Internet, usare il sottoreport HTTP per isolare l'edificio o la subnet interessata.
 
-Per le organizzazioni che non possono ignorare il proxy, assicurati che il client Skype for business sia configurato per l'accesso in modo corretto quando si trova dietro un proxy, come descritto nell'articolo [Skype for business dovrebbe usare il server proxy per accedere invece di provare direttamente connessione](https://support.microsoft.com/help/3207112/skype-for-business-should-use-proxy-server-to-sign-in-instead-of-tryin). 
+Per le organizzazioni che non possono ignorare il proxy, assicurati che il client Skype for business sia configurato per l'accesso in modo corretto quando si trova dietro un proxy, come descritto nell'articolo [Skype for business dovrebbe usare il server proxy per accedere invece di provare a connettersi direttamente](https://support.microsoft.com/help/3207112/skype-for-business-should-use-proxy-server-to-sign-in-instead-of-tryin). 
 
 
 #### <a name="http-proxy-investigations"></a>Indagini proxy HTTP
@@ -1210,10 +1162,6 @@ I report in questo spazio riguardano l'identificazione delle versioni client Sky
 
 _Figura 30-report versione client_
 
-#### <a name="diagnostic-alert"></a>Avviso di diagnostica
-
-Se è stato ricevuto un avviso diagnostico "sono in uso versioni client con scarse prestazioni," è necessario aggiornare prima di tutto i client. L'avviso ha rilevato che questi client incidono negativamente sulla qualità delle chiamate. È possibile usare il report client & Devices (illustrato sopra) per garantire che i client che hanno problemi noti non vengano più aggiornati.
-
 #### <a name="remediation"></a>Correzioni
 
 Una parte fondamentale della gestione delle esperienze degli utenti di alta qualità assicura che i client gestiti eseguano versioni aggiornate di Skype for business, oltre a garantire che i driver audio, video, di rete e USB di supporto siano aggiornati. In questo articolo vengono forniti diversi vantaggi, tra cui: 
@@ -1235,7 +1183,7 @@ I numeri di versione per Skype for business possono essere trovati tramite i col
 
 -   [Rilasciare informazioni per gli aggiornamenti a Office ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 -   [Cronologia degli aggiornamenti per Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
--   [Download e aggiornamenti di Skype for business](/SkypeForBusiness/software-updates)
+-   [Download e aggiornamenti per Skype for Business](/SkypeForBusiness/software-updates)
 
 ### <a name="devices"></a>Dispositivi
 
@@ -1265,10 +1213,6 @@ I report del dispositivo vengono usati per valutare l'uso del dispositivo in bas
 ![Screenshot del report dispositivi (microfono)](media/qerguide-image-devicesmicrophone.png)
 
 _Figura 31-report dispositivi (microfono)_
-
-##### <a name="diagnostic-alert"></a>Avviso di diagnostica
-
-Se è stato ricevuto un avviso diagnostico "i driver audio causano le cadute delle chiamate", è necessario prima di tutto correggere i driver. L'avviso ha identificato che i driver non validi noti causano l'eliminazione delle chiamate e incidono negativamente sull'affidabilità delle chiamate. È possibile usare il report driver microfono (illustrato sopra), disponibile nella sezione client & Devices, per agevolare il processo.
 
 ##### <a name="remediation"></a>Correzioni
 
@@ -1337,7 +1281,7 @@ Per altre informazioni, vedere [questo articolo sulla qualità dei contenuti mul
 
 -   Guida [introduttiva a Call Quality dashboard](https://www.skypeoperationsframework.com/Academy?SOFTrainings=Configuring%20Call%20Quality%20Dashboard%20to%20monitor%20your%20Skype%20for%20Business%20Online%20Environment) e workshop
 
--   [Dimensioni e misure disponibili in Call Quality Dashboard](https://aka.ms/cqd-dm)
+-   [Dimensioni e misure disponibili in Dashboard Qualità della chiamata](https://aka.ms/cqd-dm)
 
 ### <a name="call-analytics-training"></a>Formazione sulle analisi delle chiamate
 
@@ -1347,7 +1291,7 @@ Per altre informazioni, vedere [questo articolo sulla qualità dei contenuti mul
 
 -   [Qual è la differenza tra Call Analytics e Call Quality dashboard?](difference-between-call-analytics-and-call-quality-dashboard.md)
 
--   [Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+-   [Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
 ### <a name="call-analytics-support"></a>Supporto di Call Analytics
 
