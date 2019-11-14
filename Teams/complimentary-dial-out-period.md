@@ -21,12 +21,12 @@ f1keywords: None
 ms.custom:
 - Legal
 description: I clienti possono usare il piano di chiamata di Office 365 e i servizi di audioconferenza di Office 365 consentiti dai termini e dai contratti multilicenza del cliente per Skype for business online e Microsoft teams.
-ms.openlocfilehash: e5f0d49cfd43b04f5c361564adcc05805d04b594
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 10f56c62ccac79fcd20b0ca88fd7d71a8fc7c43a
+ms.sourcegitcommit: b1bf37a96a8faa169d8a32b7478f1e2d1022ebbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516898"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38311231"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 
@@ -37,6 +37,8 @@ Customers may use Office 365 Calling Plan and Office 365 Audio Conferencing as p
 ### <a name="end-of-complimentary-dial-out-period"></a>Fine del periodo di chiamata in uscita gratuito
 
 A partire dal 1 ° dicembre 2019, la funzionalità di accesso esterno gratuita verrà terminata. Vedere l' [abbonamento alla conferenza telefonica con accesso esterno e chiamarmi a beneficio](audio-conferencing-subscription-dial-out.md) per ulteriori dettagli. 
+
+Questa modifica non verrà eseguita per i paesi in cui è disponibile l'abbonamento a servizi di audioconferenza, ma attualmente non è possibile configurare i crediti per le comunicazioni. Questi paesi specifici sono Russia, Corea del sud e Taiwan.
 
 ### <a name="complimentary-dial-out-period-details"></a>Dettagli del periodo di chiamata gratuita
 

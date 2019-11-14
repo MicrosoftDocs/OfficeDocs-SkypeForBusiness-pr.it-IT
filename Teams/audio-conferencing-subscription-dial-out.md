@@ -1,5 +1,5 @@
 ---
-title: Abbonamento a servizi di audioconferenza "chiamata in uscita"/"Chiamami a" vantaggi
+title: Vantaggio del periodo di accesso e della funzionalità Chiamami dell'abbonamento per audioconferenze
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,18 +20,22 @@ f1keywords: None
 ms.custom:
 - Licensing
 description: 'Ai clienti è stata fornita una funzionalità di chiamata in uscita gratuita che si concluderà il 30 novembre 2019.  A partire dal 1 ° dicembre 2019, ogni abbonamento a servizi di audioconferenza offre 60 minuti per utente al mese a qualsiasi zona di un paese come descritto in questo documento. '
-ms.openlocfilehash: 8da1082d0bf7e9a50248e29877309053f706e741
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: e98844a1b3d9b00d489cd32e90add357b4b85b57
+ms.sourcegitcommit: b1bf37a96a8faa169d8a32b7478f1e2d1022ebbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37515882"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38311271"
 ---
 # <a name="audio-conferencing-subscription-dial-outcall-me-at-minutes-benefit"></a>Abbonamento a servizi di audioconferenza "chiamata in uscita"/"Chiamami al" minuti beneficio
 
 ## <a name="microsoft-teams-and-skype-for-business-pstn-audio-conferencing"></a>Conferenze audio PSTN di Microsoft teams e Skype for business
 
 Ai clienti è stata fornita una [funzionalità di chiamata in uscita gratuita](complimentary-dial-out-period.md) che si concluderà il 30 novembre 2019. A partire dal 1 ° dicembre 2019, ogni abbonamento a servizi di audioconferenza offre 60 minuti per utente al mese, che può essere usato per effettuare la chiamata a numeri non Premium in uno dei paesi della zona, come descritto in questo documento. La dimensione del pool di minuti della chiamata del tenant si basa sulle licenze *assegnate* e non sulle licenze acquistate. Questo vantaggio si applica alle licenze di *abbonamento mensile* per i servizi di audioconferenza e non si estende alle licenze pay-per-minute per audioconferenza. 
+
+> [!NOTE]
+> La fine del periodo di chiamata gratuita non avverrà il 30 novembre 2019 per i paesi in cui è disponibile l'abbonamento a servizi di audioconferenza, ma attualmente non è possibile configurare i crediti per le comunicazioni. Questi paesi specifici sono Russia, Corea del sud e Taiwan.
+
 
 ## <a name="audio-conferencing-dial-out-from-a-meeting--call-me-at-details"></a>Audioconferenza "chiamata in uscita da una riunione" & "Chiamami al" dettagli
 
@@ -56,7 +60,7 @@ Per i clienti che adottano il nostro servizio di audioconferenza, Microsoft offr
 
 ## <a name="how-are-minute-pools-calculated"></a>Come vengono calcolati i pool di minuti?
 
-Considera l'esempio seguente. Un cliente ha acquistato licenze per l'abbonamento a servizi di audioconferenza di 115 e ha 10 utenti negli Stati Uniti, 100 utenti del Regno Unito e 5 utenti in Zimbabwe, tutti con licenze di abbonamento a servizi di audioconferenza assegnate. Tutti gli utenti di 115 condividono un pool di (115 utenti x 60 min = 6.900 servizi di conferenza telefonica con accesso esterno a un mese) per inserire le chiamate in uscita a numeri non Premium in uno dei paesi della zona, *indipendentemente* dal luogo in cui l'organizzatore della riunione è concesso in licenza o fisicamente Situato. Ad esempio, un organizzatore della riunione in Zimbabwe sarà in grado di effettuare la chiamata in uscita a qualsiasi paese della zona fino al limite del pool di minuti. 
+Considera l'esempio seguente. Un cliente ha acquistato licenze per l'abbonamento a servizi di audioconferenza di 115 e ha 10 utenti negli Stati Uniti, 100 utenti del Regno Unito e 5 utenti in Zimbabwe, tutti con licenze di abbonamento a servizi di audioconferenza assegnate. Tutti gli utenti di 115 condividono un pool di (115 utenti x 60 min = 6.900 conferenza telefonica con accesso esterno a un mese) per inserire le chiamate in uscita a numeri non Premium in uno dei paesi della zona, *indipendentemente* dalla posizione in cui l'organizzatore della riunione è concesso in licenza o fisicamente. Ad esempio, un organizzatore della riunione in Zimbabwe sarà in grado di effettuare la chiamata in uscita a qualsiasi paese della zona fino al limite del pool di minuti. 
 
 - Tutte le chiamate di chiamata in uscita che superano i 6.900 minuti per mese di calendario vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione. Nota: il cliente deve configurare i crediti per le [comunicazioni](what-are-communications-credits.md) e assegnare la licenza per i crediti di comunicazione all'organizzatore della riunione.
 - Tutte le chiamate in uscita per le destinazioni non presenti nella zona un elenco di paesi vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione (purché il cliente abbia configurato i crediti per le comunicazioni e abbia assegnato la licenza per i crediti di comunicazione all'organizzatore della riunione).

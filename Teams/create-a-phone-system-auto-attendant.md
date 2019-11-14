@@ -1,7 +1,7 @@
 ---
 title: Configurare un operatore automatico cloud
-ms.author: jambirk
-author: jambirk
+ms.author: kenwith
+author: kenwith
 manager: serdars
 ms.reviewer: waseemh
 ms.topic: article
@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: b1756cc58e485971157c0429e8180a5f5e507ec8
-ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
+ms.openlocfilehash: 36725b9c322c5d084fdfc344132f36b9265ce9dd
+ms.sourcegitcommit: b1bf37a96a8faa169d8a32b7478f1e2d1022ebbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37972477"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38318122"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -103,7 +103,7 @@ Sono disponibili diversi modi per impostare l'operatore:
 
 <a name="timezone"> </a>
 
-![Icona del numero 3, un callout nel](media/teamscallout3.png) **fuso orario** precedente dello screenshot necessario per impostare il fuso orario per l'operatore automatico. L'impostazione può essere uguale al fuso orario dell'indirizzo principale elencato per l'organizzazione o a un fuso orario diverso. Ogni operatore automatico può avere un fuso orario diverso. L'orario di ufficio impostato per l'operatore automatico usa anche questo fuso orario.
+![Icona del numero 3, un callout nel](media/teamscallout3.png) **fuso orario** precedente dello screenshot necessario per impostare il fuso orario per l'operatore automatico. L'impostazione può essere uguale al fuso orario dell'indirizzo principale elencato per l'organizzazione o a un fuso orario diverso. Ogni operatore automatico può avere un fuso orario diverso. L'orario di ufficio impostato per l'operatore automatico usa anche questo fuso orario. Assicurarsi di impostare il fuso orario giusto per evitare discrepanze tra le ore lavorative, poiché non tutte le aree hanno l'ora legale. 
 
 * * *
 
@@ -231,7 +231,7 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 >- Un operatore automatico può essere configurato per l'opzione Componi per nome o per chiamata tramite estensione, ma non entrambe.
 
 > [!NOTE]
-> Se si vogliono usare sia le caratteristiche per il **nome** che per il dial by **Extension** , è possibile creare l'operatore automatico principale (abilitato per la **chiamata per nome**) che richiede ai chiamanti di scegliere un'opzione di menu se conosce l'estensione dell'utente e impostare l'opzione su trasferire la chiamata a un operatore automatico abilitato per l'estensione dial by.
+> Se si vogliono usare entrambe le funzionalità di chiamata per **nome** e chiamata per **estensione** , è possibile creare l'operatore automatico principale (abilitato per il **Dial-in per nome**) che richiede ai chiamanti di scegliere un'opzione di menu se conosce l'estensione dell'utente e impostare tale opzione per trasferire la chiamata a un operatore automatico abilitato per l'estensione di dial by.
 
 * * *
 
@@ -249,7 +249,7 @@ Dopo aver completato le selezioni, è possibile fare clic su **Avanti** se si vo
 - Ambito di chiamata
 - Account risorse
 
-Dato che è necessario che l'operatore automatico disponga di un account di risorse, è possibile scegliere di procedere alla pagina dell' **account delle risorse** e associare un account di risorse già configurato oppure creare un account di risorse e associarlo all'auto Attendant come descritto in [gestire gli account delle risorse in Microsoft teams](manage-resource-accounts.md). Non sarà possibile usare questo operatore automatico finché non è stato associato a un account di risorse. a tale scopo, fare clic sul pulsante **Avanti** nella parte inferiore dello schermo e quindi fare clic su **account risorse** nella barra di spostamento sinistra per accedere direttamente alla pagina account risorse e associare l'operatore automatico a un account di risorse.
+Dato che è necessario che l'operatore automatico disponga di un account di risorse, è possibile scegliere di procedere alla pagina dell' **account delle risorse** e associare un account di risorse già configurato oppure creare un account risorse e associarlo all'operatore automatico, come descritto in gestire gli [account delle risorse in Microsoft teams](manage-resource-accounts.md). Non sarà possibile usare questo operatore automatico finché non è stato associato a un account di risorse. a tale scopo, fare clic sul pulsante **Avanti** nella parte inferiore dello schermo e quindi fare clic su **account risorse** nella barra di spostamento sinistra per accedere direttamente alla pagina account risorse e associare l'operatore automatico a un account di risorse.
 
 #### <a name="advanced-settings-optional"></a>Impostazioni avanzate (facoltativo)
 
@@ -273,7 +273,7 @@ Inizialmente, gli orari di ufficio sono definiti per iniziare da 12:00 AM e term
 
 ![Icona del numero 3, un callout nella schermata](media/teamscallout3.png) precedente selezionare **Cancella tutte le ore** per cancellare completamente la programmazione. La selezione di questa opzione e l'impostazione delle ore non impostate non sono consigliate, quindi è consigliabile usare questa funzione solo se si vogliono ripristinare completamente gli orari di ufficio.
 
-![Icona del numero 4, un callout nell'](media/teamscallout4.png)![icona dello screenshot precedente del numero 5, un callout nella schermata](media/teamscallout5.png) precedente per personalizzare l'ora di inizio o di fine per un giorno della settimana, fare clic su **Start at** o **End at** time che si vuole reimpostare e Selezionare la nuova ora nell'elenco visualizzato.   L'elenco consente di selezionare gli orari di ufficio in intervalli di 15 minuti e gli orari di ufficio selezionati in questo punto si basano sul fuso orario impostato nella pagina **informazioni generali** .
+![Icona del numero 4, un callout nell'](media/teamscallout4.png)![icona dello screenshot precedente del numero 5, un callout nella schermata](media/teamscallout5.png) precedente per personalizzare l'ora di inizio o di fine per un giorno della settimana, fare clic su **Start at** o **fine al** momento in cui si vuole reimpostare e selezionare la nuova ora nell'elenco visualizzato.   L'elenco consente di selezionare gli orari di ufficio in intervalli di 15 minuti e gli orari di ufficio selezionati in questo punto si basano sul fuso orario impostato nella pagina **informazioni generali** .
 
  <!-- The **Apply to all days** option can be used to reset all days of the week to match the settings for that day. This makes setting weekdays and weekends to different hours easier.-->
 
@@ -309,7 +309,7 @@ Dopo aver completato le selezioni, fare clic su **Avanti**. È anche possibile f
 
 Un nome di flusso delle chiamate per le festività può essere lungo fino a 64 caratteri e deve essere univoco per l'organizzazione. Ad esempio, non è possibile avere due flussi di chiamate festivi denominati "thanksgiving" nella stessa organizzazione. L'operatore automatico può avere un flusso di chiamata per ogni festività configurata, ma potrebbe essere necessario disporre di un set di comportamenti comune diverso da un saluto personalizzato.
 
-![Icona del numero 3, un callout nello screenshot](media/teamscallout3.png) precedente le opzioni di [saluto](#call-flow) disponibili per un flusso delle chiamate delle festività sono le stesse delle opzioni disponibili durante l'orario di ufficio. Anche le **azioni** eseguite dopo la riproduzione del messaggio di saluto sono simili, tranne per il fatto che l'unica azione disponibile consiste nel **disconnettersi** o **reindirizzare**e quando si sceglie l'opzione **reindirizza a** l'operatore non è una delle opzioni disponibili . Non è possibile configurare un menu specifico per un flusso delle festività.
+![Icona del numero 3, un callout nello screenshot](media/teamscallout3.png) precedente le opzioni di [saluto](#call-flow) disponibili per un flusso delle chiamate delle festività sono le stesse delle opzioni disponibili durante l'orario di ufficio. Anche le **azioni** eseguite dopo la riproduzione del messaggio di saluto sono simili, tranne per il fatto che l'unica azione disponibile consiste nel **disconnettersi** o **reindirizzare**e quando si sceglie l'opzione **reindirizza a** l'operatore non è una delle opzioni disponibili. Non è possibile configurare un menu specifico per un flusso delle festività.
 
 > [!NOTE]
 > Per impostazione predefinita, tutte le chiamate ricevute durante un periodo di festività sono impostate per **disconnettersi** dopo il messaggio di saluto (se presente), quindi devi specificare un redirect se vuoi un comportamento personalizzato.
@@ -414,11 +414,11 @@ Press the **Create** button to finish setup of your new auto attendant. -->
 
   - [Introduzione a Windows PowerShell e Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://docs.microsoft.com/en-us/office365/enterprise/powershell/why-you-need-to-use-office-365-powershell)
+  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://docs.microsoft.com/office365/enterprise/powershell/why-you-need-to-use-office-365-powershell)
 
 - Windows PowerShell offre numerosi vantaggi in velocità, semplicità e produttività solo con l'interfaccia di amministrazione di Microsoft 365, ad esempio per apportare modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
 
-  - [Gestire Office 365 con Office 365 PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
+  - [Gestire Office 365 con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
 
   - [Uso di Windows PowerShell per gestire Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
@@ -430,7 +430,7 @@ Press the **Create** button to finish setup of your new auto attendant. -->
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans)
 
-[New-CsOrganizationalAutoAttendant](https://docs.microsoft.com/en-us/powershell/module/skype/new-csorganizationalautoattendant?view=skype-ps)  
+[New-CsOrganizationalAutoAttendant](https://docs.microsoft.com/powershell/module/skype/new-csorganizationalautoattendant?view=skype-ps)  
 
 [Cosa sono gli operatori automatici cloud?](what-are-phone-system-auto-attendants.md)
 

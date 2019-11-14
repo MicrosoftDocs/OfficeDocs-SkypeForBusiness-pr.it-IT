@@ -1,5 +1,5 @@
 ---
-title: Download e aggiornamenti di Skype for business
+title: Download e aggiornamenti per Skype for Business
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -11,25 +11,25 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: Trovare e gestire gli aggiornamenti per Skype for Business Server o Lync 2013. Usare i collegamenti per ottenere altre informazioni e quindi scaricare gli aggiornamenti.
-ms.openlocfilehash: 121c91b4882eb7509dfd19ca2c6261720a4e7fc3
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.openlocfilehash: 99eadfcc708d13adc7c07d787d58ccb815c7daae
+ms.sourcegitcommit: b1bf37a96a8faa169d8a32b7478f1e2d1022ebbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "36196038"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38311221"
 ---
-# <a name="skype-for-business-downloads-and-updates"></a>Download e aggiornamenti di Skype for business
+# <a name="skype-for-business-downloads-and-updates"></a>Download e aggiornamenti per Skype for Business
 
 La pagina Web _download e aggiornamenti di Skype for business_ che una volta era in TechNet è stata ritirata. Il contenuto è stato riorganizzato in pagine client e server. Seguire questi collegamenti al contenuto necessario:
 
 - [Aggiornamenti per client Skype for business](sfb-client-updates.md) che contiene le sezioni:
     - [Aggiornamenti client di Skype for business 2016](sfb-client-updates.md#skype-for-business-2016-client-updates)
-    - [Aggiornamenti client di Skype for business 2015](sfb-client-updates.md#skype-for-business-2015-client-updates)
-    - [Aggiornamenti del client Skype for business per Mac](sfb-client-updates.md#skype-for-business-on-mac-client-updates)
-    - [Aggiornamenti client di Lync 2013](sfb-client-updates.md#lync-2013-client-updates)
+    - [Aggiornamenti client di Skype for business 2015](sfb-client-updates.md#skype-for-business-2015-lync-2013-client-updates)
+    - [Aggiornamenti del client Skype for business per Mac](sfb-client-updates.md)
+    - [Aggiornamenti client di Lync 2013](sfb-client-updates.md#skype-for-business-2015-lync-2013-client-updates)
         - [Aggiornamenti di Lync Phone Edition](sfb-client-updates.md#lync-phone-edition-updates)
         - [Client di Lync Phone Edition nell'area download](sfb-client-updates.md#lync-phone-edition-clients-on-download-center)
-        - [Software di valutazione di Lync Basic 2013](sfb-client-updates.md#trial-software)
+        - [Software di valutazione di Lync Basic 2013](sfb-client-updates.md)
     - [Aggiornamenti client di Lync per Mac 2011](sfb-client-updates.md#lync-for-mac-2011-client-updates)
     - [Aggiornamenti client di Lync 2010](sfb-client-updates.md#lync-2010-client-updates)
         - [Aggiornamenti del supervisore di Lync 2010](sfb-client-updates.md#lync-2010-attendant-updates)
