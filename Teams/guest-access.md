@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7a0bba0c8893ee706061b989f95d4e22619fa4f9
-ms.sourcegitcommit: 09e719ead5c02b3cfa96828841c4905748d192a3
+ms.openlocfilehash: ad8b75e244efa0d28709d6c5ff225f1e6676200a
+ms.sourcegitcommit: ed7439d03e37c9c0184daf5215a68c5492932a83
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37753281"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38290856"
 ---
 <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 ======================================
@@ -75,6 +75,7 @@ L'esperienza degli utenti guest presenta limitazioni nel design. È importante a
 - Sfogliare i team
 - Caricare file in una chat tra due persone
 - Gli utenti potranno comunque cercare e trovare altri utenti (all'esterno del team), se conoscono l'ID di posta elettronica completo dell'utente. Per evitare questo problema, gli amministratori IT possono usare modelli come [ricerca nella directory con ambito](teams-scoped-directory-search.md), che permettono di limitare gli utenti guest al proprio elenco indirizzi globale virtuale.
+- Attualmente, Teams supporta solo i tipi di utenti guest Stato1 e Stato 2 [come definiti da Azure B2B](https://docs.microsoft.com/azure/active-directory/b2b/user-properties)
 
 Per un elenco completo delle funzionalità di un utente guest in Teams, vedere la tabella di [confronto tra le funzionalità dei membri del team e degli utenti guest](guest-experience.md#comparison-of-team-member-and-guest-capabilities). Per altre informazioni sull'accesso guest a livello di Office 365, vedere [Aggiunta di utenti guest ai Gruppi di Office 365](https://support.office.com/article/guest-access-in-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6).
 
