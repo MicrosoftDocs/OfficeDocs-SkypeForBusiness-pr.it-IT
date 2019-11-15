@@ -17,14 +17,16 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 282f6f7295fe7763462a9298719466033aa335a4
-ms.sourcegitcommit: 2b4fcf2561134b9f1b9a1b49401d97da1286e89d
+ms.openlocfilehash: 68b263dde1637c5caaf9ec800c83ba047d641a53
+ms.sourcegitcommit: 69217fb6d6b71081386364db58083eb5d1932c07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37979709"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38638706"
 ---
 # <a name="hardware-requirements-for-the-microsoft-teams-app"></a>Requisiti hardware per l'app Microsoft Teams
+
+Tutti i requisiti delle sezioni seguenti si applicano all'app desktop teams e a teams Web App.
 
 ## <a name="hardware-requirements-for-the-teams-desktop-app-on-a-windows-pc"></a>Requisiti hardware per l'app desktop teams in un PC Windows
 
@@ -40,7 +42,7 @@ ms.locfileid: "37979709"
 |Video    |  Videocamera USB 2,0       |
 |Dispositivi    |   Fotocamera, microfono e altoparlanti standard del portatile    | 
 |Videochiamate e riunioni | Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). L'effetto di **sfocatura** opzionale video in background richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2). Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati. |
-|Eventi live di Teams | Se si stanno producendo eventi live di teams, è consigliabile usare un computer in cui è installato un processore del lago Core i5 KABY, 4,0 GB di RAM (o superiore) e un codificatore hardware. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati. |
+|Eventi live in Teams | Se si stanno producendo eventi live di teams, è consigliabile usare un computer in cui è installato un processore del lago Core i5 KABY, 4,0 GB di RAM (o superiore) e un codificatore hardware. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati. |
 
 ## <a name="hardware-requirements-for-the-teams-desktop-app-on-a-mac"></a>Requisiti hardware per l'app desktop teams in un Mac
 

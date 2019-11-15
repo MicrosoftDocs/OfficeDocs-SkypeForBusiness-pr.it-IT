@@ -4,7 +4,6 @@ author: ChuckEdmonson
 ms.author: chucked
 manager: serdars
 audience: Admin
-ms.date: 06/25/2019
 ms.topic: article
 ms.service: msteams
 ms.reviewer: sonua
@@ -17,14 +16,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6a8a440859d5bb33dfa5f57fd952f642b0e88dc7
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 89f9ba68dd4fbd1cef271c0dd0a3fb73e10637a7
+ms.sourcegitcommit: 4060f20e8e3ce5a0464c12cfebdf8fe3473733fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569283"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626982"
 ---
-<a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo riunione teams in Outlook
+<a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
 
 Il componente aggiuntivo riunione teams consente agli utenti di pianificare una riunione Teams da Outlook. Il componente aggiuntivo è disponibile per Outlook in Windows, Mac, Web e mobile.
@@ -36,9 +35,11 @@ Il componente aggiuntivo riunione teams viene installato automaticamente per gli
 ![Screenshot del componente aggiuntivo riunione teams sulla barra multifunzione di Outlook](media/Teams-add-in-for-Outlook.png)
 
 > [!NOTE]
+> - Le autorizzazioni utente per l'esecuzione del file Regsvr32. exe sono un requisito minimo per il componente aggiuntivo riunione teams per l'installazione nel computer.
 > - Se gli utenti non vedono il componente aggiuntivo riunione teams, indicano loro di chiudere Outlook e teams, quindi riavviare prima il client teams, quindi accedere a teams e quindi riavviare il client Outlook in questo ordine specifico.
 > - Gli utenti di Windows 7 devono installare l' [aggiornamento per Universal C Runtime in Windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows) in Windows per il componente aggiuntivo riunione teams per il lavoro.
-> - Se si usa un'installazione di Office Outlook da Microsoft Store, il componente aggiuntivo riunioni teams non è supportato. Gli utenti che richiedono questo componente aggiuntivo si consiglia di installare la versione a portata di clic di Office, come descritto in Office in [Windows 10 in modalità S](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f) . 
+> - Se si usa un'installazione di Office Outlook da Microsoft Store, il componente aggiuntivo riunione teams non è supportato. Gli utenti che richiedono questo componente aggiuntivo si consiglia di installare la versione a portata di clic di Office, come descritto in Office in [Windows 10 in modalità S](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f) .
+
 
 ## <a name="teams-meeting-add-in-in-outlook-for-mac"></a>Componente aggiuntivo riunione teams in Outlook per Mac
 
@@ -101,8 +102,8 @@ Quando gli utenti che si trovano in modalità Isola pianificano una riunione in 
 | Isole | Skype for business |
 | Solo Skype for business | Skype for business |
 | Collaborazione tra Skype for business e teams | Skype for business |
-| Skype for business con la collaborazione e le riunioni di Teams | Squadre |
-| Solo Teams | Squadre |
+| Skype for business con la collaborazione e le riunioni di Teams | Team |
+| Solo Teams | Team |
 
 ## <a name="other-considerations"></a>Altre considerazioni
 
@@ -123,7 +124,7 @@ Se non è possibile installare il componente aggiuntivo riunione teams per Outlo
 - Verificare che il nome dell'account utente connesso non contenga spazi. (Si tratta di un problema noto e verrà risolto in un aggiornamento futuro).
 - Verificare che Single Sign-on (SSO) sia abilitato.
 
-Se l'amministratore ha configurato Microsoft Exchange per [controllare l'accesso a Exchange Web Server (EWS)](https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange), un delegato non potrà programmare una riunione di teams per conto del boss. La soluzione per questa configurazione è in fase di sviluppo e verrà rilasciata in futuro. 
+Se l'amministratore ha configurato Microsoft Exchange per [controllare l'accesso a Exchange Web Server (EWS)](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange), un delegato non potrà programmare una riunione di teams per conto del boss. La soluzione per questa configurazione è in fase di sviluppo e verrà rilasciata in futuro. 
 
 Per informazioni generali su come disabilitare i componenti aggiuntivi, vedere [visualizzare, gestire e installare componenti aggiuntivi nelle applicazioni di Office](https://support.office.com/article/View-manage-and-install-add-ins-in-Office-programs-16278816-1948-4028-91E5-76DCA5380F8D).
 

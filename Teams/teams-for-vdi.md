@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4fa560347d7263dafafc4f98e031b3b267f8fb12
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 450fd98d65d092f3cbc684e4efd90691b5e389a1
+ms.sourcegitcommit: 69217fb6d6b71081386364db58083eb5d1932c07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570224"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38638806"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Team per l'infrastruttura desktop virtualizzata
 
@@ -165,6 +165,9 @@ L'app teams è stata convalidata nei principali provider di soluzioni di virtual
 
 ### <a name="virtual-machine-requirements"></a>Requisiti della macchina virtuale
 
+> [!NOTE]
+> I requisiti seguenti si applicano sia all'app desktop di teams che a teams Web App.
+
 Con i diversi carichi di lavoro e le esigenze degli utenti in un ambiente virtualizzato, di seguito è riportata la configurazione minima consigliata per le VM.
 
 |Parametro  |Misura  |
@@ -214,7 +217,7 @@ Di seguito sono riportati i problemi noti e le limitazioni per i team in VDI.
     - Applicando i criteri descritti in questo articolo si ha un impatto sulla possibilità di usare le funzionalità di chiamata e riunione, che a seconda di altri criteri possono influire su altri utenti dell'organizzazione. Se gli utenti dell'organizzazione usano client non VDI, è possibile scegliere di non applicare i criteri.  
 
 - **Partecipare a chiamate e riunioni create da altri utenti**: anche se i criteri impediscono agli utenti di creare riunioni, possono ancora partecipare alle riunioni se un altro utente effettua la chiamata dalla riunione. In queste riunioni, la possibilità dell'utente di condividere video, usare lavagna e altre funzionalità dipende dal fatto che siano state disabilitate le caratteristiche usando TeamsMeetingPolicy.  
-- **Contenuto memorizzato nella cache**: se l'ambiente virtuale in cui il team è in esecuzione non è persistente (e i dati vengono eliminati alla fine di ogni sessione utente), gli utenti potrebbero notare il degrado delle prestazioni a causa dell'aggiornamento del contenuto, indipendentemente dal fatto che l'utente abbia eseguito la stessa operazione contenuto di una sessione precedente.
+- **Contenuto memorizzato nella cache**: se l'ambiente virtuale in cui il team è in esecuzione non è persistente (e i dati vengono eliminati alla fine di ogni sessione utente), gli utenti potrebbero notare il degrado delle prestazioni a causa dell'aggiornamento del contenuto, indipendentemente dal fatto che l'utente abbia eseguito lo stesso contenuto in una sessione precedente.
 - **Aggiornamenti client**: teams on VDI non viene aggiornato automaticamente con l'installazione MSI per computer. È necessario aggiornare l'immagine della VM installando un nuovo MSI, come descritto nella sezione [installare teams in VDI](#install-teams-on-vdi) . Devi disinstallare la versione corrente per eseguire l'aggiornamento a una versione più recente.
 - **Esperienza utente**: l'esperienza utente di teams in un ambiente VDI può essere diversa da un ambiente non VDI. Le differenze potrebbero essere causate dalle impostazioni dei criteri e/o dal supporto delle funzionalità nell'ambiente.
 
