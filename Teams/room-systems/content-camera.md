@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 description: Questo articolo illustra la gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft teams rooms, incluso l'applicazione di un tema personalizzato.
-ms.openlocfilehash: 24dcec21b9bc2fdb65f63fa21412bbf0f5503c1f
-ms.sourcegitcommit: c782999728e8adae51c52d122700d3e8fa651fdb
+ms.openlocfilehash: 21f60c95c556e9fd006d378a0ff7b48dd0b1b6c2
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38019949"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675764"
 ---
 # <a name="content-cameras"></a>Videocamere di contenuto
 
@@ -24,7 +24,7 @@ Ora è possibile usare una videocamera di contenuto con un sistema di chat room 
 
 Vedere il video seguente per esempi di funzionalità della fotocamera del contenuto.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3E7fy]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E7fy]
 
 ## <a name="set-up-a-content-camera"></a>Configurare una videocamera di contenuto
 

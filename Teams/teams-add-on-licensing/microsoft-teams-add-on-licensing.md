@@ -19,10 +19,10 @@ ms.custom:
 - LIL_Placement
 description: Informazioni sulle licenze per i componenti aggiuntivi, sulle caratteristiche che si ottengono con ogni licenza, su come acquistarle per il prodotto e su come usare il proprio vettore esistente. È possibile ottenere informazioni sui prezzi e sui dettagli del piano per Office 365, i crediti di comunicazione e i piani per le chiamate.
 ms.openlocfilehash: 6b3f850980db71e1347802dd0ab59c38c46e4ebc
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37571203"
 ---
 # <a name="microsoft-teams-add-on-licensing"></a>Licenze per i componenti aggiuntivi Microsoft Teams

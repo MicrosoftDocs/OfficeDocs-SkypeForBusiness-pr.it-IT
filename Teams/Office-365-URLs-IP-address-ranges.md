@@ -17,10 +17,10 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 5fc8d5bc41f7cf7a28140b30dd4a488c05b9b876
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37569838"
 ---
 <a name="office-365-urls-and-ip-address-ranges"></a>URL e intervalli di indirizzi IP per Office 365
@@ -32,4 +32,4 @@ L'esperienza teams Calling and meetings si basa sull'infrastruttura basata su cl
 
 Per tutti i carichi di lavoro di Office 365, il metodo di connessione consigliato ai servizi teams sta bypassando il proxy forward, se possibile. Quando un server proxy si trova tra un client e i Data Center di Office 365, l'elemento multimediale potrebbe essere forzato rispetto al protocollo TCP anziché UDP, che influisce sulla qualità del supporto. Scaricare i file di esempio di proxy PAC che possono essere usati per configurare il bypass del traffico dalla [gestione degli endpoint di Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
 
-Se i criteri di rete e di sicurezza richiedono il flusso del traffico di Office 365 in un server proxy, verificare che i requisiti di cui sopra siano già soddisfatti prima di distribuire i team in produzione (rivedere [i server proxy per i team o Skype for business online](proxy-servers-for-skype-for-business-online.md) per indicazioni).
+Se i criteri di rete e di sicurezza richiedono il flusso del traffico di Office 365 in un server proxy, verificare che i requisiti di cui sopra siano già soddisfatti prima di distribuire i team in produzione (rivedere i [server proxy per i team o Skype for business online](proxy-servers-for-skype-for-business-online.md) per le indicazioni).

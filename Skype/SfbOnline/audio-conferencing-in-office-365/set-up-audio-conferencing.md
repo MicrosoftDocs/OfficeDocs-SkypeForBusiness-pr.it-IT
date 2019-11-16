@@ -23,10 +23,10 @@ ms.custom:
 - LIL_Placement
 description: "Informazioni sulla configurazione del servizio di conferenza telefonica con accesso esterno o del servizio Audioconferenza per gli utenti dell'organizzazione che devono usare il telefono per partecipare alle conferenze telefoniche. "
 ms.openlocfilehash: 499a8a8ef05d23c74b030536d33b7a02cd6d9a1a
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37924977"
 ---
 # <a name="set-up-audio-conferencing-for-skype-for-business"></a>Configurare il servizio Audioconferenza per Skype for Business

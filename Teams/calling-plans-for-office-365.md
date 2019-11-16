@@ -25,10 +25,10 @@ ms.custom:
 - LIL_Placement
 description: 'Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization. '
 ms.openlocfilehash: 305416df22353743b891df6c7722bededaae0980
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37516748"
 ---
 # <a name="calling-plans-for-office-365"></a>Piani di chiamata per Office 365
@@ -39,12 +39,12 @@ Ecco le opzioni per i piani di chiamata:
   
 - **Piano per chiamate nazionali**: gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui sono assegnati in Office 365.
     
-- **Piano per chiamate nazionali e internazionali**: gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui la licenza di Office 365 è assegnata all'utente in base alla posizione dell'utente e ai numeri internazionali in [196 paesi/aree geografiche ](country-and-region-availability-for-audio-conferencing-and-calling-plans/users-can-make-outbound-calls-to-these-countries-and-regions.md).
+- **Piano per chiamate nazionali e internazionali**: gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui la licenza di Office 365 è assegnata all'utente in base alla posizione dell'utente e ai numeri internazionali in [196 paesi/aree geografiche](country-and-region-availability-for-audio-conferencing-and-calling-plans/users-can-make-outbound-calls-to-these-countries-and-regions.md).
     
 Minuti mensili disponibili per ogni organizzazione e ogni paese/area geografica si trovano [qui](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
   
 > [!IMPORTANT]
-> Il paese/area geografica si basa sulla posizione della licenza dell'utente nell'interfaccia di **Amministrazione** > di Microsoft 365**utenti attivi** e **non** sull'indirizzo di fatturazione elencato nel **profilo dell'organizzazione** nell'amministratore di **Microsoft 365. centro**.   
+> Il paese/area geografica si basa sulla posizione della licenza dell'utente negli > **utenti attivi** dell'interfaccia di **amministrazione di Microsoft 365**e **non** sull'indirizzo di fatturazione elencato nel **profilo dell'organizzazione** nell'area di **amministrazione di Microsoft 365**.   
 ![Screenshot della posizione della licenza dell'utente](media/cc1e16d1-8a5e-43e0-99a3-dc991efdfbab.png)
   
 Per informazioni dettagliate sui limiti di utilizzo e sulle condizioni per l'utilizzo, vedere il [periodo di chiamata gratuita per](complimentary-dial-out-period.md)i servizi di audioconferenza.
@@ -58,7 +58,7 @@ Per informazioni dettagliate sui limiti di utilizzo e sulle condizioni per l'uti
     > [!NOTE]
     > A seconda del piano, potrebbe essere necessario acquistare altri componenti aggiuntivi prima di poter acquistare licenze per il sistema telefonico. Per altre informazioni, vedere "opzioni di licenza basate sul piano" in [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
   
-2. Dopo aver acquistato le licenze per il sistema telefonico, è possibile acquistare il piano per le chiamate accedendo all'interfaccia di **amministrazione di Microsoft 365**, scegliere**abbonamenti per il componente aggiuntivo**per l'**acquisto di servizi** > di **fatturazione** > e quindi fare clic su **Acquista ora. **. Verranno visualizzati i piani per le chiamate.
+2. Dopo aver acquistato le licenze di sistema telefonico, è possibile acquistare il piano per le chiamate effettuando l'accesso all'interfaccia di **amministrazione di Microsoft 365**, scegliere**abbonamenti per i componenti aggiuntivi**per l'**acquisto di servizi** > di **fatturazione** > e quindi fare clic su **Acquista ora**. Verranno visualizzati i piani per le chiamate.
     
     ![Screenshot che mostra le opzioni del piano per le chiamate vocali.](media/ab2d6dce-56eb-4bbc-ac1a-430b0c065d18.png)
   

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: dae1bfb6-7262-4030-bf53-dc3b3fe971ea
 description: Questo articolo descrive come configurare la console Microsoft teams Rooms e le sue periferiche.
-ms.openlocfilehash: f42f89d25a58ce96308318cc732e85f7080b86e5
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 6172e37b53934bc75ae7f5bdf848fd503ffe2e8a
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569908"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675774"
 ---
 # <a name="configure-a-microsoft-teams-rooms-console"></a>Configurare una console Microsoft teams rooms
 
@@ -99,7 +99,7 @@ Dopo che il sistema è stato arrestato, è sicuro rimuovere il disco di configur
 Nell'aggiornamento di Creator è necessario usare lo script ApplyCurrentRegionAndLanguage. ps1 in scenari in cui la selezione della lingua implicita non offre all'utente la lingua effettiva dell'applicazione desiderata (ad esempio, vogliono che l'app console venga aggiornata in francese, ma è in arrivo in inglese).
   
 > [!NOTE]
-> Le istruzioni seguenti funzionano solo per le console create con l'aggiornamento di Windows Creator. I sistemi legacy/in-Market che non sono stati configurati con il nuovo sistema di provisioning non saranno in grado di usare queste istruzioni, ma dovrebbero anche non risentire del problema iniziale che richiede questo intervento manuale (anniversario Edition consente di selezionare il lingua dell'app in modo esplicito come parte del programma di installazione).
+> Le istruzioni seguenti funzionano solo per le console create con l'aggiornamento di Windows Creator. I sistemi legacy/in-Market che non sono stati configurati con il nuovo sistema di provisioning non saranno in grado di usare queste istruzioni, ma dovrebbero anche non risentire del problema iniziale che richiede questo intervento manuale (Anniversary Edition consente di selezionare la lingua dell'app in modo esplicito nell'ambito del programma di installazione).
   
 ### <a name="to-apply-your-desired-language"></a>Per applicare la lingua desiderata
 
@@ -142,7 +142,7 @@ La lingua desiderata viene ora applicata alla console Microsoft teams rooms.
 
 Dopo l'installazione di Windows, l'app console Microsoft teams Rooms verrà inserita nel processo di configurazione iniziale quando verrà avviata la successiva o se è stata selezionata l'opzione/reboot.
   
-1. Viene visualizzata la schermata dell'account utente. Immettere l'indirizzo di accesso Skype (in formato utente @ dominio) dell'account della sala da usare con la console.
+1. Viene visualizzata la schermata dell'account utente. Immettere l'indirizzo di accesso Skype (in user@domain formato) dell'account della sala da usare con la console.
     
 2. Immettere la password per l'account della sala e immetterla di nuovo per verificarla.
     
@@ -162,7 +162,7 @@ Dopo l'installazione di Windows, l'app console Microsoft teams Rooms verrà inse
     
 6. Fare clic su **fine**.
     
-L'app console Microsoft teams Rooms dovrebbe iniziare immediatamente l'accesso a Skype for Business Server con le credenziali immesse sopra e deve anche iniziare a sincronizzare il calendario con Exchange usando le stesse credenziali. Per informazioni dettagliate sull'uso dell'app console, vedere la [Guida di Microsoft teams Rooms](https://support.office.com/en-US/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).
+L'app console Microsoft teams Rooms dovrebbe iniziare immediatamente l'accesso a Skype for Business Server con le credenziali immesse sopra e deve anche iniziare a sincronizzare il calendario con Exchange usando le stesse credenziali. Per informazioni dettagliate sull'uso dell'app console, vedere la [Guida di Microsoft teams Rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).
   
 > [!IMPORTANT]
 > Microsoft teams Rooms si basa sulla presenza di hardware console certificato. Anche un'immagine creata correttamente che contiene l'app console Microsoft teams Rooms non verrà avviata oltre la procedura di configurazione iniziale, a meno che non venga rilevato l'hardware della console. Per le soluzioni basate su Surface Pro, la superficie Pro deve essere connessa all'hardware Dock associato per superare questo controllo.

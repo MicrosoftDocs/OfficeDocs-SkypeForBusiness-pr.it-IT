@@ -1,7 +1,7 @@
 ---
 title: Telefoni e dispositivi per Teams
-ms.author: jambirk
-author: jambirk
+ms.author: dstrome
+author: dstrome
 manager: serdars
 ms.reviewer: dvank, kponnus
 ms.topic: article
@@ -18,12 +18,12 @@ ms.custom:
 - Skype for Business Certification
 - dn947482
 description: Telefoni IP desk e conferenze certificati per Microsoft Teams
-ms.openlocfilehash: 6025b8c3d3db84e085489f52407e4fc63f39b2eb
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 331c84e9a62b64a1fab33676c296c65f045b53ae
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37570202"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675824"
 ---
 # <a name="ip-phones-certified-for-microsoft-teams"></a>Telefoni IP certificati per Microsoft Teams
 
@@ -44,6 +44,7 @@ I telefoni seguenti sono certificati per Microsoft teams:
 |Modello di telefono|Versione del firmware|Data di rilascio |
 |:---|:---|:---|
 |AudioCodes C450HD | C450HD_TEAMS_0.225 | 2019 marzo|
+|AudioCodes C448HD (solo modalità CAP) | C450HD_TEAMS_0.225 | 2019 marzo|
 |Crestron M100|2.3875.00068|2018 dicembre|
 |Crestron Flex UC-P100-T & UC-P110-T  | 58.15.91.6 |2019 gennaio|
 |Poly Trio 8500/8800 (solo modalità condivisa)| 5.9.0.10869|2019 giugno|
@@ -51,7 +52,7 @@ I telefoni seguenti sono certificati per Microsoft teams:
 |Yealink T55 | 58.15.0.36 |2019 maggio|
 |Yealink CP 960 |73.15.0.20|2018 dicembre|
 |Yealink T58 & serie T56 |58.15.0.20|2018 dicembre|
-||||
+
 
 Vedere [set di funzionalità telefoni Microsoft teams](/MicrosoftTeams/phones-for-teams#microsoft-teams-phones-feature-set) per informazioni sulle caratteristiche supportate da questi dispositivi.
 
@@ -63,10 +64,10 @@ Per altre informazioni su come ottenere teams, vedere [come si accede a Microsof
 
 * * *
 
-Se si è un fornitore che cerca di partecipare al programma di certificazione, vedere [come partecipare](https://docs.microsoft.com/en-us/skypeforbusiness/certification/how-to-join) per i requisiti e i programmi disponibili.
+Se si è un fornitore che cerca di partecipare al programma di certificazione, vedere [come partecipare](https://docs.microsoft.com/skypeforbusiness/certification/how-to-join) per i requisiti e i programmi disponibili.
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
 Informazioni sui [programmi di certificazione di Skype for business e Microsoft teams](https://docs.microsoft.com/SkypeForBusiness/certification/overview).
 
-[Esplorare i telefoni Microsoft teams e i dispositivi certificati.](https://products.office.com/en-us/microsoft-teams/across-devices/devices)
+[Esplorare i telefoni Microsoft teams e i dispositivi certificati.](https://products.office.com/microsoft-teams/across-devices/devices)

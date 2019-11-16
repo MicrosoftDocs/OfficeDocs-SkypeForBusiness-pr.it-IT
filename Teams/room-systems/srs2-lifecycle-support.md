@@ -12,12 +12,12 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 description: Questo articolo illustra il supporto del ciclo di vita per le sale di Microsoft teams.
-ms.openlocfilehash: 736933c2c47d42073d2f8b90bce6af6755c89338
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 55fde6317fe53102b97f752667d540e33a7b8c8c
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573540"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675794"
 ---
 # <a name="microsoft-teams-rooms-app-version-support"></a>Supporto per la versione dell'app Microsoft teams rooms
  
@@ -66,7 +66,7 @@ Quando usi una versione supportata di Windows 10, otterrai sempre gli aggiorname
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida di Microsoft teams rooms](https://support.office.com/en-us/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
+[Guida di Microsoft teams rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
 
 [Note sulla versione di Microsoft teams rooms](srs2-release-note.md)
 

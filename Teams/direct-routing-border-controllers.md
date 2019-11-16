@@ -15,10 +15,10 @@ appliesto:
 - Microsoft Teams
 description: Partner Microsoft con fornitori di SBC selezionati per certificare il lavoro di SBCs con il routing diretto.
 ms.openlocfilehash: 5fa0cb728beed0f308a4d168cd149ef1e75e2809
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37572246"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto

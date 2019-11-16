@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 description: In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di Microsoft teams.
-ms.openlocfilehash: d432d12b8f17f12e49ea0622ce3ec97cefb2e36a
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: e82bd160cf09781605cadaf03245b1cdf31b6908
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573529"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38676114"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -225,7 +225,7 @@ Introdotti in questo aggiornamento:
 Introdotti in questo aggiornamento:
 
 - Supporto per l'hardware Dock della [serie MSR Polycom](http://www.polycom.com/hd-video-conferencing/microsoft-video/msr-series.mdl)
-- Supporto per [Logitech Brio](https://www.logitech.com/en-us/product/brio)
+- Supporto per [Logitech Brio](https://www.logitech.com/product/brio)
 - Risolve un problema in cui le visualizzazioni (console e front-of-room) non riescono ad accedere alla modalità sospensione quando non ci sono attività nella sala
 
 ### <a name="30120-912017"></a>3.0.12.0 (9/1/2017)
@@ -297,9 +297,9 @@ Introdotti in questo aggiornamento:
 <a name="See"> </a> 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida di Microsoft teams rooms](https://support.office.com/en-us/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
+[Guida di Microsoft teams rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
 
-[Preparare l'ambiente](srs-v2-prep.md)
+[Predisporre l'ambiente](srs-v2-prep.md)
 
 [Supporto per Microsoft teams Rooms Current Branch Versions](srs2-lifecycle-support.md)
 

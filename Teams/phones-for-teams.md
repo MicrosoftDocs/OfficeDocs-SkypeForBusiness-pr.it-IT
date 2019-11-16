@@ -1,7 +1,7 @@
 ---
 title: Telefoni per Microsoft Teams
-ms.author: jambirk
-author: jambirk
+ms.author: dstrome
+author: dstrome
 manager: serdars
 ms.reviewer: kponnus
 ms.topic: reference
@@ -14,16 +14,16 @@ ms.collection:
 - M365-voice
 localization_priority: Normal
 description: Questo articolo illustra l'elenco dei telefoni certificati per Microsoft teams e le funzionalità supportate nei telefoni certificati per Microsoft teams.
-ms.openlocfilehash: c73732d999cc775bdf85e33a37fb6dda792d9b8b
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 958836bb3a959b077d0032f58d6b8f287bee407c
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573310"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675390"
 ---
 # <a name="phones-for-microsoft-teams"></a>Telefoni per Microsoft Teams
 
-Microsoft teams supporta un portafoglio di telefoni da tavolo per gli utenti che necessitano di un'esperienza telefonica tradizionale. Questo articolo illustra l'elenco dei telefoni certificati per Microsoft teams e le funzionalità supportate nei telefoni certificati per Microsoft teams. Per ottenere le informazioni più aggiornate sui dispositivi certificati in teams, visitare [Teams Marketplace](http://office.com/teamsdevices).
+Microsoft teams supporta un portafoglio di telefoni da tavolo per gli utenti che necessitano di un'esperienza telefonica tradizionale. Questo articolo illustra l'elenco dei telefoni certificati per Microsoft teams e le funzionalità supportate nei telefoni certificati per Microsoft teams. Per ottenere le informazioni più aggiornate sui dispositivi certificati in teams, visitare [Teams Marketplace](https://office.com/teamsdevices).
 
 ## <a name="teams-certified-ip-phones"></a>Telefoni IP certificati Teams
 
@@ -36,26 +36,26 @@ Nella tabella seguente sono disponibili un set di caratteristiche di alto livell
 |Caratteristiche |Telefono da tavolo (modalità personale) |Telefono della sala riunioni (modalità condivisa)|
 |---------|---------|---------|
 |**Autenticazione** | |  |
-|Accedi con le credenziali utente |  Sì | Supporto per più paesi|
+|Accedi con le credenziali utente |  Sì | Sì|
 |Accedere con PC/smartphone  | Sì |Sì|
-|Autenticazione moderna | Sì |Supporto per più paesi |
+|Autenticazione moderna | Sì |Sì |
 |Blocco telefono/Sblocca | No |No |
 |**Chiamate** |  |  |
-|Chiamate P2P in arrivo/in uscita | Sì  |Supporto per più paesi |
-|Controlli in chiamata tramite interfaccia utente (mute, attesa/ripresa, trasferimento, fine chiamata)| Sì  |Supporto per più paesi |
-|Chiamate PSTN| Sì  |Supporto per più paesi |
+|Chiamate P2P in arrivo/in uscita | Sì  |Sì |
+|Controlli in chiamata tramite interfaccia utente (mute, attesa/ripresa, trasferimento, fine chiamata)| Sì  |Sì |
+|Chiamate PSTN| Sì  |Sì |
 |Casella vocale visuale | No | No |
-|supporto di 911  | Sì  |Supporto per più paesi |
+|supporto di 911  | Sì  |Sì |
 |**Calendario e presenza**|   | |
-|Accesso al calendario e dettagli delle riunioni|Sì |Supporto per più paesi|
-|Integrazioni presenza |Sì|Supporto per più paesi|
-|Integrazione del calendario di Exchange |Sì|Supporto per più paesi|
-|Integrazione immagine contatto  |Sì|Supporto per più paesi|
-|Accesso alla directory aziendale | Sì|Supporto per più paesi|
+|Accesso al calendario e dettagli delle riunioni|Sì |Sì|
+|Integrazioni presenza |Sì|Sì|
+|Integrazione del calendario di Exchange |Sì|Sì|
+|Integrazione immagine contatto  |Sì|Sì|
+|Accesso alla directory aziendale | Sì|Sì|
 |**Riunioni**|   ||
-|Join con un clic per le riunioni  | Sì  |Supporto per più paesi |
-|Partecipare a riunioni Skype for business | Sì  | Supporto per più paesi|
-|Controlli delle chiamate di riunione (silenziamento/riattivazione, attesa/ripresa, blocco, aggiunta/rimozione partecipante)|Sì|Supporto per più paesi|
+|Join con un clic per le riunioni  | Sì  |Sì |
+|Partecipare a riunioni Skype for business | Sì  | Sì|
+|Controlli delle chiamate di riunione (silenziamento/riattivazione, attesa/ripresa, blocco, aggiunta/rimozione partecipante)|Sì|Sì|
 |Dettagli riunione|No|No|
 
 Stiamo lavorando per aggiungere continuamente funzionalità per aiutare gli utenti a migliorare l'esperienza dei team sui telefoni. Le schermate seguenti illustrano alcune delle esperienze che sosteniamo oggi.
@@ -113,7 +113,7 @@ L'utente di Microsoft teams può passare alla scheda riunioni per visualizzare l
 ![Screenshot di una riunione in visualizzazione join](media/meeting-join-view.png)
 
 
-## <a name="voicemail"></a>Casella vocale
+## <a name="voicemail"></a>Segreteria telefonica
 
 L'utente di Microsoft teams può accedere alla segreteria telefonica quando passa alla scheda **segreteria telefonica** .
 
@@ -139,12 +139,12 @@ La versione minima del firmware può essere selezionata nella pagina di accesso 
 
 ## <a name="required-licenses"></a>Licenze necessarie
 
-Le licenze di Microsoft teams possono essere acquistate come parte degli [abbonamenti a Office 365](Office-365-licensing.md). Per altre informazioni sulle licenze necessarie per l'uso di Microsoft teams sui telefoni, vedere [licenze di sistema telefonico](https://products.office.com/en-us/microsoft-teams/voice-calling)disponibili.
+Le licenze di Microsoft teams possono essere acquistate come parte degli [abbonamenti a Office 365](Office-365-licensing.md). Per altre informazioni sulle licenze necessarie per l'uso di Microsoft teams sui telefoni, vedere [licenze di sistema telefonico](https://products.office.com/microsoft-teams/voice-calling)disponibili.
 
 Per altre informazioni su come ottenere teams, vedere [come si accede a Microsoft teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Marketplace Teams](http://office.com/teamsdevices)
+[Marketplace Teams](https://office.com/teamsdevices)
 
 [Telefoni IP certificati per Microsoft Teams](teams-ip-phones.md)

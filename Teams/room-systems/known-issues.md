@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 description: Questo articolo illustra i problemi noti per le sale di Microsoft teams, in base all'area delle caratteristiche.
-ms.openlocfilehash: 79bebf69c0d4fc8dabff3e294166e7ab08b79166
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 56d740cce8960e16e04fffc55bf96b46e3128a0c
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571390"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675430"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -37,14 +37,14 @@ Questo articolo elenca i problemi noti di Microsoft teams rooms, in base all'are
 
 | Titolo del problema |  Sintomo del comportamento \/ | Soluzione alternativa nota | Articolo KB |
 |  ---        |      ---             |   ---            | --- |
-|Tastiera virtuale mancante   | La tastiera virtuale non viene visualizzata quando è necessario immettere le informazioni nelle sale di Microsoft teams. Questo problema si verifica dopo l'installazione di Windows 10 Creators Update (versione 1703) in Surface Pro 4 in cui è in esecuzione Microsoft teams rooms. | Per risolvere il problema, aprire manualmente la tastiera virtuale. A tale scopo, eseguire la procedura seguente:<br><br> **1.** toccare e tenere premuta la barra delle applicazioni e quindi toccare **Mostra pulsante tastiera virtuale** . Sul lato destro della barra delle applicazioni deve essere visualizzata un'icona della tastiera. <br><br> **2.** toccare l'icona della tastiera per aprire la tastiera virtuale. | [KB4037694](https://support.microsoft.com/en-us/help/4037694/virtual-keyboard-missing-in-skype-room-systems-v2) | 
+|Tastiera virtuale mancante   | La tastiera virtuale non viene visualizzata quando è necessario immettere le informazioni nelle sale di Microsoft teams. Questo problema si verifica dopo l'installazione di Windows 10 Creators Update (versione 1703) in Surface Pro 4 in cui è in esecuzione Microsoft teams rooms. | Per risolvere il problema, aprire manualmente la tastiera virtuale. A tale scopo, eseguire la procedura seguente:<br><br> **1.** toccare e tenere premuta la barra delle applicazioni e quindi toccare **Mostra pulsante tastiera virtuale** . Sul lato destro della barra delle applicazioni deve essere visualizzata un'icona della tastiera. <br><br> **2.** toccare l'icona della tastiera per aprire la tastiera virtuale. | [KB4037694](https://support.microsoft.com/help/4037694/virtual-keyboard-missing-in-skype-room-systems-v2) | 
 
 <a name="Hardware"> </a>  
 ## <a name="hardware"></a>Hardware
 
 | Titolo del problema |  Sintomo del comportamento \/ | Soluzione alternativa nota | Articolo KB |
 |  ---        |      ---             |   ---            |   --- |
-| Monitoraggi non rilevati | Quando si eseguono sale di Microsoft teams su un dispositivo Surface Pro (modello 2017), i monitoraggi non vengono rilevati. |  Tenere premuto il pulsante Surface Pro Power per 20 o più secondi. Quando si esegue questa operazione, il dispositivo riavvia e cancella la cache grafica. |[KB4055681](https://support.microsoft.com/en-us/help/4055681/monitors-are-not-detected-when-you-run-skype-room-systems-on-a-surface)       | 
+| Monitoraggi non rilevati | Quando si eseguono sale di Microsoft teams su un dispositivo Surface Pro (modello 2017), i monitoraggi non vengono rilevati. |  Tenere premuto il pulsante Surface Pro Power per 20 o più secondi. Quando si esegue questa operazione, il dispositivo riavvia e cancella la cache grafica. |[KB4055681](https://support.microsoft.com/help/4055681/monitors-are-not-detected-when-you-run-skype-room-systems-on-a-surface)       | 
 
 <a name="Limits"> </a>
 ## <a name="limitations-and-expected-behaviors"></a>Limitazioni e comportamenti previsti
@@ -75,6 +75,6 @@ Windows 10 1903 non è ancora disponibile nei dispositivi Microsoft teams rooms 
 <a name="See"> </a>  
 ## <a name="see-also"></a>Vedere anche
 
-[Guida di Microsoft teams rooms](https://support.office.com/en-us/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
+[Guida di Microsoft teams rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
 
 [Gestire le sale di Microsoft Teams](skype-room-systems-v2.md)

@@ -12,16 +12,16 @@ ms.collection:
 - M365-collaboration
 ms.assetid: ''
 description: Leggere questo argomento per informazioni su come eseguire la migrazione dei dispositivi di Lync room System per l'uso del software Microsoft teams rooms.
-ms.openlocfilehash: 9bf01b334e13de5cb1407443f16223f86c1df929
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 377e901446d69e0956ff981b1b45686c949cf61c
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573661"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675360"
 ---
 # <a name="migrate-lync-room-system-lrs-devices-to-microsoft-teams-rooms"></a>Eseguire la migrazione dei dispositivi LRS (Lync room System) a Microsoft teams rooms
 
-I dispositivi LRS (Lync room System) con il software Skype room System versione 1 (SRS V1) hanno raggiunto [la fine del supporto il 9 ottobre 2018](https://support.microsoft.com/en-us/help/4043450/products-reaching-end-of-support-for-2018). Questo significa che il software Skype room Systems V1 non otterrà più aggiornamenti o correzioni di prodotti. I clienti con i dispositivi di sistema room di Lync con il software Skype room System V1 si consiglia di aggiornare i propri dispositivi alle sale di Microsoft teams.
+I dispositivi LRS (Lync room System) con il software Skype room System versione 1 (SRS V1) hanno raggiunto [la fine del supporto il 9 ottobre 2018](https://support.microsoft.com/help/4043450/products-reaching-end-of-support-for-2018). Questo vuol dire che il software Skype Room Systems v1 non otterrà più aggiornamenti di prodotto o correzioni. I clienti con dispositivi Lync Room System che usano software Skype Room System v1 sono invitati ad aggiornare i dispositivi a Microsoft Teams Rooms.
 
 Il software Microsoft teams Rooms funziona con Microsoft teams oltre a Skype for Business Server e ai servizi online per riunioni e chiamate in tutti i dispositivi supportati da Microsoft teams rooms.
 
@@ -32,7 +32,7 @@ I dispositivi esistenti **possono** continuare a funzionare dopo la fine del sup
 Ecco l'elenco dei dispositivi interessati da questa modifica:
 
 - Crestron RL
-- [Crestron RL2](https://www.crestron.com/en-US/Products/Featured-Solutions/Crestron-RL-2)
+- [Crestron RL2](https://www.crestron.com/Products/Featured-Solutions/Crestron-RL-2)
 - [Sistemi per SMART room](https://support.smarttech.com/en/hardware/room-systems-skype)
 - [Polycom CX8000](http://www.polycom.com/products-services/products-for-microsoft/skype-for-business/cx8000.html)
 
@@ -42,11 +42,11 @@ Sono disponibili più opzioni per l'aggiornamento dei sistemi sala Lync alla nuo
 
 ### <a name="crestron-hardware-trade-in-program"></a>Programma di commercio hardware Crestron
 
-Crestron fornirà un aggiornamento al [sistema Crestron Sr](https://www.crestron.com/en-us/products/featured-solutions/crestron-sr) o equivalente per tutti i clienti non Crestron di Lync room System (ad esempio Smart o Polycom LRS). Vedere i dettagli di questo programma [qui](https://support.crestron.com/app/answers/answer_view/a_id/1000220) o <!-- For details, -->[posta elettronica](mailto:lrsupgrade@crestron.com) Supporto di Crestron LRS.  
+Crestron fornirà un aggiornamento al [sistema Crestron Sr](https://www.crestron.com/products/featured-solutions/crestron-sr) o equivalente per tutti i clienti non Crestron di Lync room System (ad esempio Smart o Polycom LRS). Vedere i dettagli di questo programma [qui](https://support.crestron.com/app/answers/answer_view/a_id/1000220) o <!-- For details, -->[posta elettronica](mailto:lrsupgrade@crestron.com) Supporto di Crestron LRS.  
 
 ### <a name="crestron-rl2-upgrade-to-microsoft-teams-rooms"></a>Crestron RL2 aggiornamento a Microsoft teams rooms
 
-I clienti di Crestron RL2 (noto anche come Crestron RL200) possono acquisire un kit di aggiornamento per aggiornare RL2 corrente in RL3 usando un costo minimo per dispositivo. Vedere i dettagli di questo programma [qui](https://crestron.com/en-US/Products/Workspace-Solutions/Unified-Communications/Crestron-RL-2/CCS-UC-250-KIT).
+I clienti di Crestron RL2 (noto anche come Crestron RL200) possono acquisire un kit di aggiornamento per aggiornare RL2 corrente in RL3 usando un costo minimo per dispositivo. Vedere i dettagli di questo programma [qui](https://crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-RL-2/CCS-UC-250-KIT).
 
 ### <a name="smart-room-systems-upgrade"></a>Aggiornamento dei sistemi SMART room
 

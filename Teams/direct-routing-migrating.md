@@ -15,10 +15,10 @@ appliesto:
 - Microsoft Teams
 description: Informazioni su cosa è necessario per eseguire la migrazione a routing diretto da una prospettiva di configurazione di Skype for business online e teams.
 ms.openlocfilehash: 9fb644c938c61fd9dd1c78362ad90bfe855e97ec
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37572180"
 ---
 # <a name="migrate-to-direct-routing"></a>Eseguire la migrazione a Instradamento diretto

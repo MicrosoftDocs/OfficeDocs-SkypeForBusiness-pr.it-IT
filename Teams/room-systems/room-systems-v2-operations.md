@@ -12,12 +12,12 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: c764490df9912ca464b1f11d56a2cb376b96c388
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 003ede11615e42ec120d618f0a732df58d10f452
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573606"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675340"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft teams rooms 
  
@@ -25,7 +25,7 @@ Leggere questo argomento per informazioni sulla gestione di Microsoft teams room
   
 Microsoft teams Rooms è la soluzione di conferenza più recente di Microsoft progettata per trasformare la sala riunioni in un'esperienza ricca e collaborativa. Gli utenti apprezzeranno l'interfaccia familiare di Microsoft o Skype for business e gli amministratori IT apprezzeranno un'app di Windows 10 Skype meeting facilmente distribuita e gestita. Microsoft teams Rooms è progettato per sfruttare le attrezzature esistenti, come i pannelli LCD, per facilitare l'installazione per consentire a Microsoft teams o Skype for business di accedere alla sala riunioni.
   
-Con la configurazione aggiuntiva, la gestione remota è possibile usando Microsoft Azure monitor come descritto in [pianificare la gestione di Microsoft teams Rooms con Azure monitor](azure-monitor-plan.md), [distribuire Gestione di Microsoft teams Rooms con Azure monitor](azure-monitor-deploy.md), [Manage Dispositivi Microsoft teams Rooms con Azure monitor](azure-monitor-deploy.md). È anche possibile [gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML](xml-config-file.md), che include l'applicazione di un tema di visualizzazione personalizzato. 
+Con la configurazione aggiuntiva, la gestione remota è possibile usando Microsoft Azure monitor come descritto in [pianificare la gestione di Microsoft teams Rooms con Azure monitor](azure-monitor-plan.md), [distribuire Microsoft teams Rooms Management con Azure monitor](azure-monitor-deploy.md), [gestire i dispositivi Microsoft teams Rooms con Azure monitor](azure-monitor-deploy.md). È anche possibile [gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML](xml-config-file.md), che include l'applicazione di un tema di visualizzazione personalizzato. 
   
 ## <a name="collecting-logs-on-microsoft-teams-rooms"></a>Raccolta di registri in Microsoft teams rooms
 <a name="Logs"> </a>
@@ -44,7 +44,7 @@ I log verranno emessi come file ZIP in c:\rigel.
 Configurare il lato anteriore della visualizzazione della sala in modalità estesa. In questo modo si verificherà che l'interfaccia utente della console non sia duplicata in tale visualizzazione quando si esegue il ciclo di alimentazione sullo schermo.
   
 > [!NOTE]
-> Se si desidera che venga visualizzata una parte anteriore della visualizzazione della sala per passare automaticamente a una sorgente video attiva, ad esempio una console MTR, quando la sorgente viene riattivata dalla modalità standby, è necessario che siano soddisfatte determinate condizioni. Questa caratteristica è facoltativa ma supportata dal software Microsoft teams rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore consumer usato come parte anteriore della visualizzazione della sala deve supportare la funzionalità CEC (Consumer Electronics Control) di HDMI.  In base al dock o alla console selezionato (che potrebbe non supportare la CEC, vedere la documentazione del supporto del produttore), è possibile che sia necessario un controller come [HD-RX-201-C-E](https://www.crestron.com/en-US/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [Extron HD CTL 100](https://www.extron.com/article/hdctl100ad) da Extron per abilitare l'opzione desiderata comportamento. 
+> Se si desidera che venga visualizzata una parte anteriore della visualizzazione della sala per passare automaticamente a una sorgente video attiva, ad esempio una console MTR, quando la sorgente viene riattivata dalla modalità standby, è necessario che siano soddisfatte determinate condizioni. Questa caratteristica è facoltativa ma supportata dal software Microsoft teams rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore consumer usato come parte anteriore della visualizzazione della sala deve supportare la funzionalità CEC (Consumer Electronics Control) di HDMI.  In base al dock o alla console selezionato (che potrebbe non supportare la CEC, vedere la documentazione del supporto del produttore), è possibile che sia necessario un controller come [HD-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [Extron HD CTL 100](https://www.extron.com/article/hdctl100ad) da Extron per abilitare il comportamento desiderato. 
   
 ## <a name="microsoft-teams-rooms-reset-factory-restore"></a>Reimpostazione di Microsoft teams Rooms (ripristino di fabbrica)
 <a name="Reset"> </a>
@@ -167,7 +167,7 @@ Per impostazione predefinita, Microsoft teams Rooms cerca di connettersi a Windo
   
 Per impostazione predefinita, Microsoft teams Rooms si connette a Windows Update per recuperare gli aggiornamenti del firmware del sistema operativo e del dispositivo periferico USB e li installa all'esterno degli orari di ufficio configurati. Puoi configurare gli orari di ufficio effettuando l'accesso all'account di amministratore ed eseguendo l'app Impostazioni.
   
-Per gestire manualmente gli aggiornamenti e non è possibile seguire la procedura normale per [Microsoft Store for business](https://businessstore.microsoft.com/store) per [distribuire le app offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps), puoi acquisire il file appx appropriato e le dipendenze dal kit di [distribuzione](https://go.microsoft.com/fwlink/?linkid=851168) (da istruzioni per [configurare una console Microsoft teams Rooms](console.md)che può essere usata con SCCM. La versione del kit di distribuzione è in ritardo rispetto alla versione dello Store, quindi potrebbe non corrispondere sempre alla build più recente disponibile.
+Per gestire manualmente gli aggiornamenti e non è possibile seguire la procedura normale per [Microsoft Store for business](https://businessstore.microsoft.com/store) per [distribuire le app offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps), è possibile acquisire il file appx appropriato e le dipendenze dal [Kit di distribuzione](https://go.microsoft.com/fwlink/?linkid=851168) (dalle istruzioni per [configurare una console di Microsoft teams Rooms](console.md)) che può essere usata con SCCM. La versione del kit di distribuzione è in ritardo rispetto alla versione dello Store, quindi potrebbe non corrispondere sempre alla build più recente disponibile.
   
 ### <a name="to-update-using-powershell"></a>Per eseguire l'aggiornamento usando PowerShell
 

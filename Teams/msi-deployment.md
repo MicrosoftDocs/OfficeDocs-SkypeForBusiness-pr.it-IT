@@ -15,10 +15,10 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 0b80b82a89fc162e33263c784480f619dcd5cf32
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37573372"
 ---
 <a name="install-microsoft-teams-using-msi"></a>Installare Microsoft teams con MSI
@@ -27,7 +27,7 @@ ms.locfileid: "37573372"
 > [!Tip]
 > Vedere la sessione seguente per informazioni sui vantaggi del client desktop di Windows, su come pianificare la distribuzione e su come distribuirla: [Team client desktop di Windows](https://aka.ms/teams-clients)
 
-Per usare System Center Configuration Manager o criteri di gruppo o qualsiasi meccanismo di distribuzione di terze parti per una distribuzione ampia, Microsoft ha fornito file MSI (sia [32 bit](https://aka.ms/teams32bitmsi) che [64 bit](https://aka.ms/teams64bitmsi)) che gli amministratori possono usare per la distribuzione in blocco dei team da selezionare utenti o computer. Gli amministratori possono usare questi file per distribuire in remoto i team in modo che gli utenti non debbano scaricare manualmente l'app teams. Una volta distribuiti, i team verranno avviati automaticamente per tutti gli utenti che accedono a tale computer. Puoi disabilitare l'avvio automatico dopo l'installazione dell'app. [Vedere di seguito](#disable-auto-launch-for-the-msi-installer).) Ti consigliamo di distribuire il pacchetto nel computer, in modo che tutti i nuovi utenti della macchina beneficeranno anche di questa distribuzione. 
+Per usare System Center Configuration Manager o criteri di gruppo o qualsiasi meccanismo di distribuzione di terze parti per una distribuzione ampia, Microsoft ha fornito file MSI (sia [32 bit](https://aka.ms/teams32bitmsi) che [64 bit](https://aka.ms/teams64bitmsi)) che gli amministratori possono usare per la distribuzione in blocco dei team per selezionare utenti o computer. Gli amministratori possono usare questi file per distribuire in remoto i team in modo che gli utenti non debbano scaricare manualmente l'app teams. Una volta distribuiti, i team verranno avviati automaticamente per tutti gli utenti che accedono a tale computer. Puoi disabilitare l'avvio automatico dopo l'installazione dell'app. [Vedere di seguito](#disable-auto-launch-for-the-msi-installer).) Ti consigliamo di distribuire il pacchetto nel computer, in modo che tutti i nuovi utenti della macchina beneficeranno anche di questa distribuzione. 
 
 I team possono anche essere inclusi in una distribuzione di Office 365 ProPlus. Per altre informazioni, vedere [distribuire Microsoft teams con Office 365 ProPlus](https://docs.microsoft.com/deployoffice/teams-install).
  

@@ -17,12 +17,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 68b263dde1637c5caaf9ec800c83ba047d641a53
-ms.sourcegitcommit: 69217fb6d6b71081386364db58083eb5d1932c07
+ms.openlocfilehash: 753e134e34c68ab139819d8eaffb0ebfeac571cd
+ms.sourcegitcommit: aad6c02b172a1412d3523a3cb3b3400423c0c3e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/15/2019
-ms.locfileid: "38638706"
+ms.locfileid: "38670193"
 ---
 # <a name="hardware-requirements-for-the-microsoft-teams-app"></a>Requisiti hardware per l'app Microsoft Teams
 
@@ -71,6 +71,14 @@ Tutti i requisiti delle sezioni seguenti si applicano all'app desktop teams e a 
 |Dispositivi    |   Fotocamera, microfono e altoparlanti standard del portatile    | 
 |Segreteria telefonica    |  Microfono e altoparlanti compatibili, auricolare con microfono o dispositivo equivalente       |
 |Videochiamate e riunioni | Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). L'effetto video di sfondo facoltativo Blur richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2), supportato nella maggior parte dei dispositivi Mac di 2013 più tardi e versioni successive. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati.
+|Distribuzioni Linux supportate | Ubuntu 16,04 LTS *, 18,04 LTS, Fedora 30 workstation, RHEL 8 workstation, CentOS 8
+
+* Procedura prerequisito per l'installazione su Ubuntu 16,04 LTS, che aggiunge un repository con le versioni più recenti di libc + + (e compilatore e così via) e aggiorna libc + +:
+```
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+sudo apt-get upgrade
+```
 
 ## <a name="hardware-requirements-for-the-teams-app-on-mobile-devices"></a>Requisiti hardware per l'app Teams nei dispositivi mobili
 

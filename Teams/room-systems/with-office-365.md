@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Office 365.
-ms.openlocfilehash: 253f25de30d105361f53eeb34d3b6c78e6d41fa2
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 467a7300a2912dcaffe66a44f0f6e181d36ced1c
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573485"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675440"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-office-365"></a>Distribuire le sale di Microsoft teams con Office 365
 
@@ -62,7 +62,7 @@ Per informazioni dettagliate sui piani di Skype for business online, vedere la [
 
      - Account: ProjectRigel01@contoso.onmicrosoft.com
 
-     - Password account: P @ $ $W 0rd5959
+     - Password account: P@ $ $W 0rd5959
 
      ``` PowerShell
      New-Mailbox -Name "Project-Rigel-01" -Alias ProjectRigel01 -Room -EnableRoomMailboxAccount $true -MicrosoftOnlineServicesID ProjectRigel01@contoso.onmicrosoft.com -RoomMailboxPassword (ConvertTo-SecureString -String 'P@$$W0rd5959' -AsPlainText -Force)
@@ -74,7 +74,7 @@ Per informazioni dettagliate sui piani di Skype for business online, vedere la [
      Set-Mailbox -Identity <RoomMailboxIdentity> -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String '<Password>' -AsPlainText -Force)
      ```
 
-     Questo esempio Abilita l'account per la cassetta postale della sala esistente con il valore alias ProjectRigel02 e imposta la password su 9898P @ $ $W 0RD. Tieni presente che l'account verrà ProjectRigel02@contoso.onmicrosoft.com a causa del valore alias esistente.
+     Questo esempio Abilita l'account per la cassetta postale della sala esistente con il valore alias ProjectRigel02 e imposta la password su 9898P@ $ $W 0RD. Tieni presente che l'account verrà ProjectRigel02@contoso.onmicrosoft.com a causa del valore alias esistente.
 
      ``` PowerShell
      Set-Mailbox -Identity ProjectRigel02 -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String '9898P@$$W0rd' -AsPlainText -Force)
@@ -107,10 +107,10 @@ Per informazioni dettagliate sui piani di Skype for business online, vedere la [
 
    Per informazioni dettagliate su sintassi e parametri, vedere [Set-CalendarProcessing](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-calendarprocessing).
 
-4. Connettersi a MS Online PowerShell per impostare le impostazioni di Active Directory eseguendo `Connect-MsolService -Credential $cred` il cmdlet di PowerShell.   Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1,0](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0). 
+4. Connettersi a MS Online PowerShell per impostare le impostazioni di Active Directory eseguendo `Connect-MsolService -Credential $cred` il cmdlet di PowerShell.   Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1,0](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0). 
 
    > [!NOTE]
-   > [Azure Active Directory PowerShell 2,0](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato. 
+   > [Azure Active Directory PowerShell 2,0](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato. 
 
 5. Se non si vuole che la password scada, usare la sintassi seguente:
 
@@ -205,7 +205,7 @@ Dopo aver completato i passaggi precedenti per abilitare l'account Microsoft tea
 
 4. Fare clic sull'opzione **licenze** .
 
-5. Nella sezione **assegnazione licenze** è necessario selezionare Skype for business online (piano 2) o Skype for business online (piano 3), a seconda della licenza e delle operazioni che si sono decisi in termini di necessità di VoIP aziendale. È necessario usare una licenza di piano 3 Se si vuole usare Cloud PBX in Microsoft teams rooms. Sarà necessario CloudPBX per la connettività vocale. Configura quindi la chiamata vocale ibrida o PSTN in base al metodo di connettività PSTN. Per altre informazioni, Vedi [licenze di Microsoft teams Rooms](https://docs.microsoft.com/en-us/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-room-systems-v2) .
+5. Nella sezione **assegnazione licenze** è necessario selezionare Skype for business online (piano 2) o Skype for business online (piano 3), a seconda della licenza e delle operazioni che si sono decisi in termini di necessità di VoIP aziendale. È necessario usare una licenza di piano 3 Se si vuole usare Cloud PBX in Microsoft teams rooms. Sarà necessario CloudPBX per la connettività vocale. Configura quindi la chiamata vocale ibrida o PSTN in base al metodo di connettività PSTN. Per altre informazioni, Vedi [licenze di Microsoft teams Rooms](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-room-systems-v2) .
 
 6. Fare clic su **Salva** per completare l'attività.
 

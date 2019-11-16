@@ -20,10 +20,10 @@ ms.custom:
 - Phone System
 description: "Informazioni sulle operazioni che il sistema telefonico può eseguire per l'utente. "
 ms.openlocfilehash: d6bc3d8265059520e3f8448f800de91331e26e01
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37568532"
 ---
 # <a name="what-is-phone-system-in-office-365"></a>Che cos’è il Sistema telefonico in Office 365?

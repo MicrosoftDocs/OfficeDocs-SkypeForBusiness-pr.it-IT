@@ -12,10 +12,10 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 description: Trovare e gestire gli aggiornamenti per Skype for Business Server o Lync 2013. Usare i collegamenti per ottenere altre informazioni e quindi scaricare gli aggiornamenti.
 ms.openlocfilehash: 99eadfcc708d13adc7c07d787d58ccb815c7daae
-ms.sourcegitcommit: b1bf37a96a8faa169d8a32b7478f1e2d1022ebbb
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38311221"
 ---
 # <a name="skype-for-business-downloads-and-updates"></a>Download e aggiornamenti per Skype for Business

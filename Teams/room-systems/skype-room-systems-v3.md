@@ -1,7 +1,7 @@
 ---
 title: Panoramica della gestione per le sale di Microsoft Teams
-ms.author: jambirk
-author: jambirk
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 ms.date: 5/10/2018
@@ -13,12 +13,12 @@ ms.assetid: 39d7dc65-22c3-400f-91f1-87ed2fd792b6
 ms.collection:
 - M365-collaboration
 description: Panoramica della gestione per le sale di Microsoft teams.
-ms.openlocfilehash: a55741fced90a62316ab8d046a91ee0364b314fd
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: cff0b300dc6cc9f3c15e21163554571d49e6540c
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573562"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38675814"
 ---
 # <a name="management-overview"></a>Panoramica della gestione
 
@@ -43,7 +43,7 @@ Le informazioni sullo stato dell'applicazione Microsoft teams Rooms e delle peri
 |Power Management-\> in AC, disattivare lo schermo dopo 10 minuti  <br/> Power Management-\> su AC, non posizionare mai il sistema in modalità Sleep  <br/> |Consente alle sale di Microsoft teams di disattivare i display allegati e di riattivarsi automaticamente  <br/> |
 |NET account/maxpwage: illimitato  <br/> O un mezzo equivalente per disabilitare la scadenza della password per l'account locale. La mancata esecuzione di questa operazione causerà l'errore di accesso dell'account Skype che lamenta una password scaduta. Tieni presente che questo ha un impatto su tutti gli account locali nel computer e quindi la mancata impostazione di questa operazione causerà anche l'eventuale scadenza dell'account amministrativo nella casella.  <br/> |Consente all'account Skype di accedere sempre  <br/> |
 
-Il trasferimento di file tramite criteri di gruppo è illustrato in [configurare un elemento del file](https://technet.microsoft.com/en-us/library/cc772536%28v=ws.11%29.aspx).
+Il trasferimento di file tramite criteri di gruppo è illustrato in [configurare un elemento del file](https://technet.microsoft.com/library/cc772536%28v=ws.11%29.aspx).
   
 ## <a name="remote-management-using-powershell"></a>Gestione remota tramite PowerShell
 <a name="RemotePS"> </a>
@@ -83,7 +83,7 @@ Per altre informazioni sulla risoluzione dei problemi e sulla modalità amminist
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida di Microsoft teams rooms](https://support.office.com/en-us/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
+[Guida di Microsoft teams rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
 
 [Pianificare le sale di Microsoft Teams](skype-room-systems-v2-0.md)
 
