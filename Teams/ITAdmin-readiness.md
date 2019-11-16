@@ -18,10 +18,10 @@ description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 55ac7c4adf51e920aba2a8eed0f0d6c5aa83ca36
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37569847"
 ---
 # <a name="admin-training-for-microsoft-teams"></a>Formazione per amministratori per Microsoft Teams
@@ -98,11 +98,11 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 | Pianificazione della rete | [Video](https://aka.ms/teams-networking) | [Presentazione](https://aka.ms/teams-networking-deck) |
 | Panoramica sulla qualità delle chiamate | [Video](https://aka.ms/teams-quality) | [Presentazione](https://aka.ms/teams-quality-deck) |
 | Introduzione alle riunioni | [Video](https://aka.ms/teams-meetings-intro) | [Presentazione](https://aka.ms/teams-meetings-intro-deck) |
-| Media |[Video](https://aka.ms/media-in-teams)  | [Presentazione](https://aka.ms/media-in-teams-deck)|
+| Contenuti multimediali |[Video](https://aka.ms/media-in-teams)  | [Presentazione](https://aka.ms/media-in-teams-deck)|
 | Eventi dinamici | [Video](https://aka.ms/teams-live-events-session) | [Presentazione](https://aka.ms/teams-live-events-deck) |
 | Introduzione al sistema telefonico | [Video](https://aka.ms/teams-phone-system) | [Presentazione](https://aka.ms/teams-phone-system-deck) |
 | Routing diretto | [Video](https://aka.ms/teams-direct-routing) | [Presentazione](https://aka.ms/teams-direct-routing-deck) |
-| Eseguire l'aggiornamento da Skype for business a teams | [Video 1: Introduzione all'aggiornamento](https://aka.ms/teams-upgrade-intro)</br>[Video 2: pianificare l'aggiornamento](https://aka.ms/teams-upgrade-plan)</br>[Video 3: coesistenza e interoperabilità](https://aka.ms/teams-upgrade-coexistence-interop)</br>[Video 4: esperienza dell'amministratore](https://aka.ms/teams-upgrade-admin) | [Presentazione](https://aka.ms/teams-upgrade-deck)|
+| Aggiornamento da Skype for Business a Teams | [Video 1: Introduzione all'aggiornamento](https://aka.ms/teams-upgrade-intro)</br>[Video 2: pianificare l'aggiornamento](https://aka.ms/teams-upgrade-plan)</br>[Video 3: coesistenza e interoperabilità](https://aka.ms/teams-upgrade-coexistence-interop)</br>[Video 4: esperienza dell'amministratore](https://aka.ms/teams-upgrade-admin) | [Presentazione](https://aka.ms/teams-upgrade-deck)|
 
 <h2>Guide introduttive</h2>
 
