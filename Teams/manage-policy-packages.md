@@ -3,7 +3,7 @@ title: Gestire i pacchetti di criteri in Microsoft Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
-ms.reviewer: sekrantz
+ms.reviewer: sekrantz, aaglick
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -16,12 +16,12 @@ f1keywords: ms.teamsadmincenter.policypackages.overview
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams.
-ms.openlocfilehash: fb01a7e15d43c18e115ecfbd0edb73b4808c2a59
-ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
+ms.openlocfilehash: ecfc6ae6fb1bb4d9632b8cd04b35dcee6d63359d
+ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37972437"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "38679828"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
 
@@ -41,6 +41,7 @@ I team attualmente includono i seguenti pacchetti di criteri.
 |Pacchetto Education_PrimaryStudent    |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti primari.|
 |Pacchetto Education_SecondaryStudent    |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti secondari.         |
 |Pacchetto Education_HigherEducationStudent    |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti dell'istruzione superiore.|
+|Pacchetto SmallMediumBusiness_BusinessVoice    |Crea un criterio di configurazione dell'app che include le app per un'esperienza di Business Voice.|
 
 > [!NOTE]
 > Aggiungeremo altri pacchetti di criteri nelle versioni future dei team, quindi controlla le informazioni più aggiornate.  
@@ -48,7 +49,7 @@ I team attualmente includono i seguenti pacchetti di criteri.
 A ogni singolo criterio viene assegnato il nome del pacchetto di criteri in modo da poter identificare facilmente i criteri collegati a un pacchetto di criteri.
 Ad esempio, quando si assegna il pacchetto di criteri Education_Teacher agli insegnanti dell'Istituto di istruzione, viene creato un criterio denominato Education_Teacher per ogni criterio nel pacchetto.
 
-![Screenshot del pacchetto di criteri di Education_Teacher](media/policy-packages-education_teacher.png)
+![Screenshot del pacchetto dei criteri di Education_Teacher](media/policy-packages-education_teacher.png)
 
 ## <a name="how-to-use-policy-packages"></a>Come usare i pacchetti di criteri
 
@@ -101,3 +102,7 @@ Ecco i passaggi per visualizzare, assegnare e personalizzare i pacchetti di crit
 **Viene visualizzato un messaggio di errore quando si assegna un pacchetto di criteri**
 
 Questo problema può verificarsi se uno o più criteri del pacchetto non sono stati creati o applicati correttamente. Riassegnare il pacchetto di criteri agli utenti. Il tentativo di riprovare l'operazione in genere risolve questo problema.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Pacchetti dei criteri di Microsoft teams per gli amministratori EDU](policy-packages-edu.md)
