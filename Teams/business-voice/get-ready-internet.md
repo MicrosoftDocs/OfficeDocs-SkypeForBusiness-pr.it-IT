@@ -15,12 +15,12 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4dbfd1bdaec48ebe8c6adbed86da431a6f4ecbfc
-ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
+ms.openlocfilehash: 19f26c0bd7ab4fe89770909d81d60abc97aaa8b0
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37972277"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38653552"
 ---
 # <a name="check-your-internet-connection"></a>Controllare la connessione Internet
 
@@ -57,17 +57,17 @@ Prima di iniziare, è necessario disporre delle informazioni seguenti:
 Ecco cosa fare:
 
 1. Aprire il browser e passare a https://admin.teams.microsoft.com, quindi accedere con un account dotato di autorizzazioni di amministratore globale. L'account usato per iscriversi a Office 365 dispone di queste autorizzazioni.
-1. Aprire le **Impostazioni a livello di organizzazione** e quindi selezionare **Network Planner**.
+1. Aprire **Pianificazione** e poi selezionare **Network planner**.
 1. In **Piani di rete** selezionare **Aggiungi**. Assegnare un nome al piano e quindi selezionare **Applica**. Il piano di rete dovrebbe essere simile a questo:
 
     ![Schermata principale di Network Planner](../media/network-planner-main.png)
 1. Fare clic sul nome del piano di rete, **Ufficio principale** nell'immagine sopra.
 1. Nella pagina successiva selezionare **Aggiungi un sito di rete** nella scheda **Siti di rete**.
-1. Compilare le informazioni seguenti e quindi selezionare **Salva**.
+1. Compilare solo i campi indicati nella schermata seguente e poi selezionare **Salva**. Lasciare vuoti gli altri campi della schermata e non selezionare le opzioni **ExpressRoute** o **Connesso a WAN**.
 
     ![Informazioni sul sito di Network Planner](../media/network-planner-site-info.png)
 1. Nella scheda **Report** selezionare **Avviare un report**.
-1. Compilare le informazioni seguenti e quindi selezionare **Genera report**.
+1. Compilare le informazioni seguenti e poi selezionare **Genera rapporto** per creare un report con i requisiti di larghezza di banda per Teams. Mostreremo come leggere il report nella sezione successiva.
 
     ![Informazioni sul report di Network Planner](../media/network-planner-report-info.png)
 
