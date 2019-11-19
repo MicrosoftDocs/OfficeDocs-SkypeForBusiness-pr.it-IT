@@ -13,12 +13,12 @@ ms.reviewer: vikramju
 description: Informazioni sulle barriere informative e sul loro impatto sui team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dfc56ab28be03e0301228eb9220437c2e1ef2673
-ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
+ms.openlocfilehash: 0772a9599a38afc05520b8dcccba3cb463df3409
+ms.sourcegitcommit: 361ca60a66bab31cd54d8c1f805697460427e44d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968257"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "38696826"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -74,7 +74,7 @@ Quando l'amministratore dei criteri barriera delle informazioni apporta modifich
 Se esiste una chat o altre comunicazioni esistenti tra gli utenti e viene impostato un nuovo criterio o viene modificato un criterio esistente, il servizio valuta le comunicazioni esistenti per verificare che le comunicazioni siano ancora consentite. 
 
 - **chat di 1:1** -se la comunicazione tra i due utenti non è più consentita (se un criterio blocca la comunicazione viene applicato a uno o entrambi gli utenti), viene bloccata un'ulteriore comunicazione e la conversazione della chat diventa di sola lettura.
-- **Chat di gruppo** : se la comunicazione di un utente al gruppo non è più consentita (ad esempio, se un utente cambia lavoro), l'utente insieme agli altri utenti che violano il criterio potrebbe essere rimosso dalla chat di gruppo e altre comunicazioni con il gruppo non saranno consentiti. L'utente può ancora vedere le vecchie conversazioni (che saranno di sola lettura), ma non sarà in grado di vedere o partecipare a nuove conversazioni con il gruppo. Se i criteri nuovi o modificati che impediscono la comunicazione vengono applicati a più utenti, gli utenti interessati dal criterio potrebbero essere rimossi da una chat di gruppo. Possono ancora vedere le conversazioni precedenti. 
+- **Chat di gruppo** : se la comunicazione di un utente al gruppo non è più consentita (ad esempio, se un utente modifica i processi), l'utente, insieme agli altri utenti che violano il criterio, potrebbe essere rimosso dalla chat di gruppo e non sarà possibile comunicare ulteriormente con il gruppo. L'utente può ancora vedere le vecchie conversazioni (che saranno di sola lettura), ma non sarà in grado di vedere o partecipare a nuove conversazioni con il gruppo. Se i criteri nuovi o modificati che impediscono la comunicazione vengono applicati a più utenti, gli utenti interessati dal criterio potrebbero essere rimossi da una chat di gruppo. Possono ancora vedere le conversazioni precedenti. 
 - **Team** -tutti gli utenti rimossi dal gruppo vengono rimossi dal team e non saranno in grado di vedere o partecipare a conversazioni esistenti o nuove.
 
 
@@ -92,16 +92,15 @@ Attualmente gli utenti avvertono quanto segue se un criterio barriera informativ
 - **Chiamate contatti** -un utente può vedere gli utenti bloccati nell'elenco contatti chiamate, ma gli utenti bloccati verranno identificati e l'unica azione che l'utente può eseguire è eliminarli.
 - **Migrazione di Skype to teams** -durante una migrazione di Skype for business a teams, tutti gli utenti, anche quelli bloccati da criteri di barriera delle informazioni, verranno migrati in teams e verranno gestiti come descritto sopra.
 
-
-
-## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
-
+## <a name="will-files-and-sharepoint-site-experiences-connected-to-teams-honor-ib-policy"></a>I file e le esperienze del sito di SharePoint sono connessi ai criteri per i team in onore IB?
+ 
 Quando viene creato un team, viene eseguito il provisioning di un sito di SharePoint e viene associato al team per l'esperienza dei file. L'accesso a questo sito e ai file di SharePoint soddisfa i criteri di IB dell'organizzazione, vale a dire solo gli utenti il cui segmento IB corrisponde ai criteri IB sono consentiti. Anche al momento della condivisione di file, viene rispettato il criterio IB.
 
 Ad esempio: in Contoso Bank Corporation, l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento di Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti. Quando l'utente Seshe crea un team per il segmento investment banking, il team e il sito di SharePoint che lo appoggiano saranno accessibili solo agli utenti del segmento investment banking. L'utente Nikita non può accedere al sito anche se ha il collegamento al sito.
 
-Per altri dettagli, inclusi i piani e i prezzi, vedere indicazioni per le [licenze](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-tenantlevel-services-licensing-guidance).
+## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
+Per altri dettagli, inclusi i piani e i prezzi, vedere indicazioni per le [licenze](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-tenantlevel-services-licensing-guidance).
 
 ## <a name="more-information"></a>Altre informazioni
 

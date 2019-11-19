@@ -1,7 +1,7 @@
 ---
 title: Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario
-author: jambirk
-ms.author: jambirk
+author: kenwith
+ms.author: kenwith
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ''
 description: Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario
-ms.openlocfilehash: e19c0403f259f400e784faf928738d36df66d618
-ms.sourcegitcommit: ced9b584eeceff7ca0109cba5823c7c3ddbd092e
+ms.openlocfilehash: 756f9a50dac14575250a521750f80dbe8d1242b8
+ms.sourcegitcommit: 9ae5dadaab999acd061cc9418dbd55d98b82980e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "37886439"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702317"
 ---
 # <a name="get-started-with-teams-templates-for-healthcare-organizations"></a>Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario
 
@@ -43,7 +43,7 @@ Il modello Ward è concepito per la comunicazione e la collaborazione all'intern
 
 ## <a name="hospital-template"></a>Modello di ospedale
 
-Il modello Hospital è pensato per la comunicazione e la collaborazione tra più rioni, baccelli e reparti all'interno di un ospedale. Sono inclusi in questo modello diversi canali operativi, tra cui *annunci*, *custodia*e *farmacia*, ma forniamo anche uno script sotto il quale estende il modello con un'ampia varietà di servizi aggiuntivi o canali incentrati sulle specialità a cui è possibile aggiungere, eliminare o modificare i propri gusti. Ad esempio, se si ha un reparto di *endocrinologia* , ma non è necessario un canale per l' *Oftalmologia*, lo script può essere adattato per includere un canale di *endocrinologia* e rimuovere il canale di *Oftalmologia* . Per evitare la saturazione delle notifiche, è consigliabile che questi canali con modelli di specialità o di rione non siano preferiti automaticamente. Gli utenti in genere hanno favorito tutti i canali che trovano rilevanti.
+Il modello Hospital è pensato per la comunicazione e la collaborazione tra più rioni, baccelli e reparti all'interno di un ospedale. Sono inclusi in questo modello diversi canali operativi, tra cui *annunci*, *custodia*e *farmacia*, ma forniamo anche uno script sotto il quale estende il modello con un'ampia varietà di canali aggiuntivi di reparto o di specialità che è possibile aggiungere, eliminare o modificare a piacimento. Ad esempio, se si ha un reparto di *endocrinologia* , ma non è necessario un canale per l' *Oftalmologia*, lo script può essere adattato per includere un canale di *endocrinologia* e rimuovere il canale di *Oftalmologia* . Per evitare la saturazione delle notifiche, è consigliabile che questi canali con modelli di specialità o di rione non siano preferiti automaticamente. Gli utenti in genere hanno favorito tutti i canali che trovano rilevanti.
 
 |Tipo di modello di base |baseTemplateId |Canali del modello previsto|
 |:--- |:---|:---|
@@ -52,20 +52,9 @@ Il modello Hospital è pensato per la comunicazione e la collaborazione tra più
 
 \*Preferiti automaticamente 
 
-## <a name="care-coordination-template"></a>Modello di coordinamento cura
-
-Il modello di coordinamento delle cure ha lo scopo di facilitare la comunicazione all'interno di un team di assistenza paziente, con alcuni esempi tra cui team interdisciplinari e multidisciplinari. L'applicazione per i pazienti proprietari è precaricata in questo modello e si trova nel canale generale. Con l'applicazione patients, è possibile curare elenchi di pazienti e i relativi valori associati e elementi vitali, rendendoli utili per l'arrotondamento e gli scenari di gestione dei pazienti. 
-
-|Tipo di modello di base |baseTemplateId |Canali del modello previsto|
-|:--- |:---|:---|
-|Coordinamento assistenza sanitaria | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareCareCoordination')`   | Revisione post-trattamento\* <br> Pianificazione\* <br> Formazione\* |
-| | |  |
-
-\*Preferiti automaticamente 
-
 ## <a name="how-to-use-first-party-templates"></a>Come usare i modelli di First Party
 
-Per usare questi modelli, è sufficiente cambiare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" a TemplateIDs sopra.  Per altre informazioni su come distribuire i modelli di Team, vedere l'articolo su Microsoft Graph su come [creare un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta).
+Per usare questi modelli, è sufficiente modificare la proprietà "template@odata. bind" nel corpo della richiesta da "standard" a TemplateIDs sopra.  Per altre informazioni su come distribuire i modelli di Team, vedere l'articolo su Microsoft Graph su come [creare un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta).
 
 > [!NOTE]
 > I canali nel modello verranno creati automaticamente nella scheda generale.

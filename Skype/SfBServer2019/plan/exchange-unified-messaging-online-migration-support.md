@@ -1,5 +1,5 @@
 ---
-title: Supporto per la migrazione della messaggistica unificata di Exchange Online
+title: Supporto per la migrazione della messaggistica unificata online di Exchange
 ms.author: heidip
 author: MicrosoftHeidi
 manager: serdars
@@ -10,20 +10,20 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Microsoft sta ritirando il servizio Exchange Unified Messaging online (ExchUMO) entro il 2020 febbraio. In questo articolo vengono riepilogate le informazioni che i clienti interessati dovrebbero conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 57a9e6fa688fc17aedde3dbcf5e6b689263c5b4e
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: abaf16996a6d634bac77118e35b30228c2a43e07
+ms.sourcegitcommit: 9ae5dadaab999acd061cc9418dbd55d98b82980e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37616089"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702307"
 ---
-# <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata di Exchange Online
+# <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
 In riferimento all' [annuncio](https://blogs.technet.microsoft.com/exchange/2019/02/08/retiring-unified-messaging-in-exchange-online/) dell'8 febbraio 2019, Microsoft sta ritirando il servizio Exchange Unified Messaging online (ExchUMO) entro il febbraio 2020. Questo articolo offre un riepilogo delle informazioni che i clienti interessati dovrebbero conoscere e fare per pianificare la continuità aziendale. 
  
 ExchUMO è distribuito dai clienti per la segreteria telefonica, l'operatore automatico, la coda delle chiamate e i servizi di integrazione fax. Microsoft prevede di aiutare i clienti a eseguire la migrazione a servizi di sistema telefonico che supportano già migliaia di clienti in Skype for business online e Microsoft teams. 
 
-La segreteria telefonica è principalmente una migrazione basata su Microsoft; il coinvolgimento degli amministratori e/o gli investimenti potrebbero essere necessari per un sottoinsieme di clienti. Operatore automatico è una migrazione guidata dall'amministratore; dovrai ricreare gli alberi di operatore automatico di ExchUMO esistenti nel servizio cloud di operatore automatico cloud. I clienti che usano qualsiasi funzionalità di ExchUMO con un PBX di terze parti non verranno migrati in servizi cloud Skype perché non supportano sistemi PBX di terze parti. In [questo Blog](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853)è stato annunciato un piano pensionistico per il supporto di terze parti e i clienti in questo modello di distribuzione possono eseguire la migrazione degli utenti a una delle piattaforme/servizi Microsoft Unified Communications o acquisire un messaggio vocale di terze parti e/o auto soluzione Attendant per questi utenti. L'integrazione fax non è supportata nei servizi basati sul cloud. i clienti dovranno eseguire la migrazione a una soluzione di terze parti.
+La segreteria telefonica è principalmente una migrazione basata su Microsoft; il coinvolgimento degli amministratori e/o gli investimenti potrebbero essere necessari per un sottoinsieme di clienti. Operatore automatico è una migrazione guidata dall'amministratore; dovrai ricreare gli alberi di operatore automatico di ExchUMO esistenti nel servizio cloud di operatore automatico cloud. I clienti che usano qualsiasi funzionalità di ExchUMO con un PBX di terze parti non verranno migrati in servizi cloud Skype perché non supportano sistemi PBX di terze parti. In [questo Blog](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853)è stato annunciato un piano pensionistico per il supporto di terze parti e i clienti di questo modello di distribuzione possono eseguire la migrazione degli utenti a una delle piattaforme/servizi Microsoft Unified Communications o acquisire una segreteria telefonica di terze parti e/o una soluzione di operatore automatico per questi utenti. L'integrazione fax non è supportata nei servizi basati sul cloud. i clienti dovranno eseguire la migrazione a una soluzione di terze parti.
 
 ### <a name="who-is-affected"></a>Chi è interessato?
 
@@ -156,7 +156,7 @@ Microsoft ha identificato varie distribuzioni di clienti che stanno consumando f
 | AA | Caratteristiche del servizio | Supporto multilingue | Dettagli della lingua qui:https://docs.microsoft.com/en-us/microsoftteams/what-are-phone-system-auto-attendants | Y | Y    |
 | AA | Caratteristiche del servizio | Trasferimento all'operatore, CQ o un utente |  | Y | Y    |
 | AA | Caratteristiche del servizio | Trasferire al numero PSTN internamente (DID RNL)  |  | Y | Y    |
-| AA | Caratteristiche del servizio | Trasferire al numero PSTN esternamente  |  | Q3CY19 | Y    |
+| AA | Caratteristiche del servizio | Trasferire al numero PSTN esternamente  |  | Sezione problemi noti di seguito | Y    |
 | AA | Caratteristiche del servizio | Orari di ufficio |  | Y | Y    |
 | AA | Caratteristiche del servizio | Opzioni di menu | Opzioni del menu IVR  | Y | Y    |
 | AA | Caratteristiche del servizio | Assegnazione di un numero PSTN cloud a AA |  | Y | N    |
@@ -210,6 +210,15 @@ I nuovi utenti di Skype for business verranno automaticamente provisionati per i
 Per altre informazioni sugli operatori automatici, vedere [configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant.md). 
 
 #### <a name="known-issues"></a>Problemi noti
+
+**Trasferimento automatico delle chiamate all'operatore PSTN** I clienti sono invitati a configurare una soluzione temporanea per soddisfare i requisiti per il trasferimento di una chiamata di operatore automatico a un numero PSTN esterno o a un'istanza di RGS. 
+ 
+È stato individuato un problema durante la garanzia della qualità con la caratteristica di trasferimento in numero PSTN, che non verrà fissata in tempo per consentire ai clienti di iniziare la migrazione da Exchange UMO Service prima della data di pensionamento programmata del 1 ° febbraio 2020. Come soluzione alternativa, gli amministratori possono trasferire i chiamanti dell'operatore automatico a un utente virtuale locale con un'impostazione di inoltro di chiamata attiva al numero di telefono PSTN desiderato o al numero di telefono RGS. 
+ 
+Esperienza prevista
+- Gli amministratori non devono concedere la licenza all'utente virtuale, poiché si tratta di una soluzione alternativa 
+- Gli amministratori possono modificare l'ID chiamante che verrà visualizzato dal ricevitore PSTN assegnando il numero desiderato all'utente virtuale oppure usando le funzionalità di manipolazione delle cifre SBC 
+- I chiamanti PSTN non avranno alcun ritardo durante il trasferimento delle chiamate e continueranno a vedere l'ID chiamante dell'operatore automatico dopo il successo del trasferimento  
 
 **Cassetta postale condivisa:** Una cassetta postale condivisa configurata tramite la messaggistica unificata di Exchange Online continuerà a ricevere i messaggi dopo la migrazione a CVM e continuerà ad essere accessibile agli utenti tramite Outlook. Tuttavia, l'accesso per modificare i messaggi di saluto delle cassette postali non sarà disponibile dopo la migrazione a CVM. I clienti con cassette postali condivise usate per acquisire i chiamanti dell'operatore automatico dovrebbero sfruttare le funzionalità degli operatori automatici e delle code di chiamata condivise delle cassette postali, una volta rilasciate (ETA ottobre 2019).
   
