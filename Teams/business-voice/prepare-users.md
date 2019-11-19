@@ -15,12 +15,12 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 571490c07e453c4a33144c01063159cf6ab9d257
-ms.sourcegitcommit: 082f451dd800b92d0b52e37402ecf621a738b4e5
+ms.openlocfilehash: 554ea9b5855a4b177c9f22dd985fc14c4b0e3877
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37973215"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38653542"
 ---
 # <a name="how-do-i-get-my-users-ready-for-business-voice"></a>Come si preparano gli utenti per Business Voice?
 
@@ -51,7 +51,7 @@ Per vedere tutti i dispositivi supportati con Teams, visitare lo [Store dei disp
 
 ## <a name="set-up-voicemail-greetings-and-other-business-voice-features"></a>Configurare i messaggi di saluto della segreteria telefonica e altre funzionalità di Business Voice
 
-Come per i normali telefoni, è possibile configurare i messaggi di saluto della segreteria telefonica e l'inoltro delle chiamate, scegliere la suoneria e così via. Tutti gli elementi che possono essere configurati dagli utenti sono disponibili nell'app Teams in **Impostazioni**. Per altre informazioni sulla configurazione di queste funzionalità, gli utenti possono vedere [Gestire le impostazioni delle chiamate in Teams](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f).
+Come per i normali telefoni, è possibile configurare i messaggi di saluto della segreteria telefonica e l'inoltro delle chiamate, scegliere la suoneria e così via. Tutti gli elementi che possono essere configurati dagli utenti sono disponibili nell'app di Teams facendo clic sull'immagine del profilo nell'angolo in alto a destra e poi selezionando **Impostazioni** > **Chiamate**. Per altre informazioni sulla configurazione di queste funzionalità, gli utenti possono vedere [Gestire le impostazioni delle chiamate in Teams](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f).
 
 ## <a name="learn-what-microsoft-teams-and-business-voice-can-do"></a>Informazioni sulle funzionalità di Microsoft Teams e Business Voice
 

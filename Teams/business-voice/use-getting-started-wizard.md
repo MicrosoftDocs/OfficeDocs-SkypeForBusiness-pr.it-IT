@@ -15,18 +15,18 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 46f6f75ce0ac14193a4f7a8cfccadf8312f92a98
-ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
+ms.openlocfilehash: 8e6ed778af0136516286798b0a7b04602f571de2
+ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37972197"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38653532"
 ---
 # <a name="use-the-getting-started-wizard-to-set-up-business-voice"></a>Usare la procedura guidata Attività iniziali per configurare Business Voice
 
 La procedura guidata Attività iniziali per Microsoft 365 Business Voice offre un modo semplice e veloce per iniziare a ricevere ed effettuare telefonate in Microsoft Teams. Per le aziende di piccole dimensioni che partono da zero, la procedura guidata consente di iniziare a usare il sistema in pochi minuti con numeri di telefono, menu di chiamata, messaggi di saluto e altro ancora. Per le aziende più grandi con una soluzione di telefonia consolidata, la procedura consente di configurare una distribuzione pilota di Business Voice, in modo da poterlo usare con pochi utenti prima di configurarlo per tutti. In entrambi i casi, si può iniziare a usare Business Voice appena terminata la procedura guidata.
 
-È consigliabile leggere questo articolo prima di avviare la procedura guidata. Quando si è pronti, è possibile aprire la procedura guidata dall'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/AdminPortal/Home#/homepage). Assicurarsi di accedere con l'account usato per creare l'abbonamento o un altro account di amministratore globale.
+È consigliabile leggere questo articolo prima di avviare la procedura guidata. Quando si è pronti, aprire la procedura guidata selezionando **Inizia** nella pagina [Introduzione a Microsoft 365 Business Voice](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/apps/SmbVoice). Assicurarsi di accedere con l'account usato per creare l'abbonamento o un altro account di amministratore globale.
 
 > [!IMPORTANT]
 > Business Voice è attualmente disponibile in Canada e nel Regno Unito. Altri paesi e aree geografiche diventeranno disponibili nel 2020.
@@ -56,7 +56,7 @@ Per saperne di più, vedere [Che cosa sono il routing delle chiamate, gli indiri
 
 <table>
     <tr>
-        <td>Oltre a configurare un nuovo numero di telefono locale, si può scegliere di acquistare un numero verde o trasferire un numero esistente in Microsoft 365. Se si sceglie di configurare un numero verde, è necessario acquistare un piano per chiamate. Se si vuole trasferire un numero in Microsoft 365, è possibile farlo nell'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com) al termine della procedura guidata.
+        <td>Oltre a configurare un nuovo numero di telefono locale, si può scegliere di acquistare un numero verde o trasferire un numero esistente in Microsoft 365. Se si sceglie di configurare un numero verde, è necessario acquistare un piano per chiamate. Se si vogliono trasferire uno o più numeri in Microsoft 365, è possibile farlo nell'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com) al termine della procedura guidata.
         </td>
         <td><img src="https://docs.microsoft.com/MicrosoftTeams/media/voice-wizard-choose-number.png" width="400">
         </td>
@@ -64,7 +64,7 @@ Per saperne di più, vedere [Che cosa sono il routing delle chiamate, gli indiri
 </table>
 
 > [!IMPORTANT]
-> Se si sceglie di trasferire un numero di telefono esistente in Microsoft 365, nella procedura guidata verrà comunque visualizzato un numero di telefono temporaneo. Non si tratta di un errore. Dopo aver completato la procedura guidata e completato il processo di portabilità, il numero di telefono temporaneo verrà sostituito con il numero di telefono effettivo.
+> Se si sceglie di trasferire uno o più numeri di telefono esistenti in Microsoft 365, nella procedura guidata verrà comunque visualizzato un numero di telefono temporaneo. Non si tratta di un errore. Dopo aver completato la procedura guidata e completato il processo di portabilità, il numero di telefono temporaneo verrà sostituito con il numero di telefono effettivo.
 
 ## <a name="assigning-licenses-to-users"></a>Assegnazione di licenze agli utenti
 
@@ -96,12 +96,15 @@ Per saperne di più, vedere [Che cosa sono il routing delle chiamate, gli indiri
 <table>
     <tr>
         <td>È possibile inoltrare tutte le chiamate a un utente specifico oppure configurare un menu di chiamata da cui scegliere opzioni. Se si crea un menu di chiamata, è possibile specificare le opzioni che un chiamante può selezionare premendo un numero sul tastierino del telefono o pronunciando l'opzione con un comando vocale. Ogni opzione di menu può essere inoltrata a un utente. <br>
-Si può scegliere di caricare un file audio (MP3 o WAV) fino a un massimo di 5 MB che fornisce istruzioni al chiamante oppure è possibile digitare le istruzioni. Microsoft 365 userà la sintesi vocale per leggere le istruzioni al chiamante. Per ottenere la pronuncia giusta potrebbe essere necessario scrivere le parole così come si pronunciano, usando un'ortografia errata.
+        Si può scegliere di caricare un file audio (MP3 o WAV) fino a un massimo di 5 MB che fornisce istruzioni al chiamante oppure è possibile digitare le istruzioni. Microsoft 365 userà la sintesi vocale per leggere le istruzioni al chiamante. Per ottenere la pronuncia giusta potrebbe essere necessario scrivere le parole così come si pronunciano, usando un'ortografia errata.
         </td>
         <td><img src="https://docs.microsoft.com/MicrosoftTeams/media/voice-wizard-call-forwarding-rules.png" width="400">
         </td>
     </tr>
 </table>
+
+> [!IMPORTANT]
+> Le attività iniziali guidate consentono di configurare un semplice menu di chiamata per diventare subito operativi. Se si hanno più numeri di telefono con i menu di chiamata da configurare o se si vogliono configurare menu di chiamata più complessi, detti anche operatori automatici, è possibile farlo seguendo la procedura descritta in [Configurare un operatore automatico nel cloud](set-up-auto-attendants.md) al termine della procedura guidata.
 
 <table>
     <tr>
