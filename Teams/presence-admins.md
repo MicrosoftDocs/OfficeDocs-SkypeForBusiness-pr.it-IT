@@ -3,7 +3,6 @@ title: Presenza utente in Teams
 author: jambirk
 ms.author: jambirk
 manager: serdars
-ms.date: 08/21/2018
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
@@ -15,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b829fbffa728d3449ba19466d0a2cb85f266c9c2
-ms.sourcegitcommit: b9710149ad0bb321929139118b7df0bc4cca08de
+ms.openlocfilehash: be40c98a66e5f3023ce375d0a00515832280c7c0
+ms.sourcegitcommit: d2bee305a3588f8487bba3396b1825be7a52f6d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38010599"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38714492"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
@@ -29,7 +28,7 @@ La presenza fa parte del profilo di un utente in Microsoft Teams (e in tutto Off
 > [!IMPORTANT]
 > Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza smette di funzionare in Outlook e in altre app di Office. La presenza funziona correttamente in teams. Soluzione alternativa: per vedere la presenza in Outlook e in altre app di Office, è necessario installare Skype for business, anche se si sta usando teams in modalità **solo teams** . Microsoft è a conoscenza del problema e sta lavorando a una correzione.
 
-La presenza di team in Outlook è supportata nell'app desktop Outlook 2013 e versioni successive.
+La presenza di Teams in Outlook è supportata nell'app desktop Outlook 2013 e versioni successive.
 
 ## <a name="presence-states-in-teams"></a>Stati presenza in teams
 
@@ -56,11 +55,13 @@ Gli Stati di presenza degli utenti disponibili in teams sono:
 || ![Cerchio viola con freccia, indica fuori sede](media/Presence_OOF.png) Fuori sede|
 |||
  
-Gli utenti possono impostare manualmente lo stato presenza corrente su alcune opzioni e il relativo stato viene riflesso a tutti gli altri utenti. Vengono aggiornati automaticamente anche altri dettagli sulla presenza dell'utente. Le modifiche sono basate su attività utente (disponibile, assente), Stati del calendario di Outlook (in una riunione) o Stati dell'app Teams (in una chiamata, presentazione), agli Stati rientrati nell'elenco. 
+Gli utenti possono impostare manualmente lo stato presenza corrente su alcune opzioni e il relativo stato viene riflesso a tutti gli altri utenti. Vengono aggiornati automaticamente anche altri dettagli sulla presenza dell'utente. Le modifiche sono basate su attività utente (disponibile, assente), Stati del calendario di Outlook (in una riunione) o Stati dell'app Teams (in una chiamata, presentazione), agli Stati rientrati nell'elenco. C'è un timeout di 15 minuti di inattività, dopo il quale viene reimpostato uno stato presenza corrente su assente.
 
-C'è un timeout di 15 minuti di inattività, dopo il quale viene reimpostato uno stato presenza corrente su assente.
+Gli utenti ricevono tutti i messaggi di chat inviati a loro in teams indipendentemente dallo stato di presenza. Se un utente è offline quando qualcuno invia un messaggio, il messaggio di chat viene visualizzato in teams la volta successiva che l'utente è online. Se un utente si trova in uno stato non disturbare, l'utente riceverà ancora messaggi di chat, ma non verrà visualizzata una notifica banner.
 
-Gli utenti possono specificare chi può sfondare (il che significa mettersi in contatto nonostante uno stato non disturbare). Queste impostazioni sono disponibili nel client teams.
+Gli utenti ricevono chiamate in tutti gli Stati di presenza, ad eccezione degli Stati non disturbanti, in cui le chiamate in arrivo vengono recapitate alla segreteria telefonica. Se il destinatario ha bloccato il chiamante, la chiamata non verrà recapitata e il chiamante vedrà la presenza del destinatario offline.
+
+Gli utenti possono aggiungere persone all'elenco di accesso prioritario accedendo alla**privacy** **delle impostazioni** > in teams. Le persone con accesso prioritario possono contattare l'utente anche quando l'utente si trova in uno stato non disturbare.
 
 ## <a name="admin-settings-in-teams-compared-to-skype-for-business"></a>Impostazioni di amministrazione in teams rispetto a Skype for business
 

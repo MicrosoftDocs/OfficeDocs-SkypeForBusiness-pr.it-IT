@@ -19,16 +19,16 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Activity reports, what it contains, and how to interpret the data. '
-ms.openlocfilehash: 05e3c61a144fb962cfb6c7aca83f2996db17370a
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: bedff059e1295714220ff70a7c97439f4b6aeef8
+ms.sourcegitcommit: 9a6e59c0fa020656ed3e858d43e628c3122fc71a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793245"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746309"
 ---
 # <a name="activity-report"></a>Report attività
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Consente di eseguire il drill-up dei singoli report a livello di prodotto per ottenere informazioni più dettagliate sulle attività all'interno di ogni prodotto. Ad esempio, puoi usare il report **attività di Skype for business** per vedere quanto gli utenti usano sessioni di conferenza peer-to-peer o organizzate, o quanto partecipano alle sessioni di conferenza. 
+Il dashboard di **report** di Office 365 Mostra la panoramica delle attività nei prodotti Office 365 dell'organizzazione. Consente di eseguire il drill-up dei singoli report a livello di prodotto per ottenere informazioni più dettagliate sulle attività all'interno di ogni prodotto. Ad esempio, puoi usare il report **attività di Skype for business** per vedere quanto gli utenti usano sessioni di conferenza peer-to-peer o organizzate, o quanto partecipano alle sessioni di conferenza. 
 
 Per altre informazioni, vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) .
   
@@ -41,12 +41,8 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
 
 1. Accedere all'interfaccia di amministrazione > **segnala** > l'**utilizzo**.
     
-2. Nella pagina **uso** fare clic su **attività Skype for business** nell' **elenco Seleziona un report** a sinistra oppure fare clic sul widget **attività di Skype for business** .
-    
-     ![Skype for Business DashBoard Widget.](../images/3925bc24-18fd-471e-8e93-edf5ccd3cdb7.png)
-  
-    > [!IMPORTANT]
-    > A seconda dell'abbonamento a Office 365, è possibile che non vengano visualizzati tutti i prodotti e i report visualizzati qui. 
+2. Nella pagina **uso** scegliere**attività** **Skype for business** > nell' **elenco Seleziona un report** a sinistra oppure fare clic sul widget **attività di Skype for business** .
+
   
 ## <a name="interpret-the-skype-for-business-activity-report"></a>Interpretazione del report attività in Skype for Business
 
@@ -68,7 +64,7 @@ Ogni report riporta la data in cui è stato generato. I report riflettono in gen
 ![Numero 3](../images/sfbcallout3.png)<br/>Usa i dati del grafico interattivo **Attività** per comprendere le tendenze di utilizzo e vedere il numero delle attività di conferenze tenute nella tua organizzazione. Il grafico mostra il numero totale e i tipi di **Sessioni peer-to-peer**, sessioni di conferenze **Organizzate** e **Frequentate** tenute nella tua organizzazione.  
 ***
 ![Numero 4](../images/sfbcallout4.png)<br/>
-Usa i dati del grafico interattivo **Utenti** per comprendere le tendenze di utilizzo e vedere il numero di utenti univoci che partecipano ad attività di conferenze tenute nella tua organizzazione. Verrà visualizzato il numero totale di utenti insieme ai tipi di **sessioni peer-to-peer**, **organizzati**e partecipato alle sessioni **** di conferenza.
+Usa i dati del grafico interattivo **Utenti** per comprendere le tendenze di utilizzo e vedere il numero di utenti univoci che partecipano ad attività di conferenze tenute nella tua organizzazione. Verrà visualizzato il numero totale di utenti insieme ai tipi di **sessioni peer-to-peer**, **organizzati**e **partecipato** alle sessioni di conferenza.
 ***
 ![Numero 5](../images/sfbcallout5.png)<br/>
 È possibile filtrare la serie visualizzata nel grafico facendo clic su un elemento nella legenda. Ad esempio, nel grafico **attività** fare clic o toccare **sessioni peer-to-peer**, **organizzate**o **partecipate** per visualizzare solo le informazioni relative a ognuna di esse. La modifica di questa selezione non modifica le informazioni nella tabella della griglia. 

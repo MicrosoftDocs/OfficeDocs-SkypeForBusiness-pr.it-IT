@@ -23,12 +23,12 @@ ms.custom:
 - Alchemy
 - LIL_Placement
 description: "Informazioni su come configurare il dominio, gli utenti, la messaggistica Istantanea e la presenza dell'organizzazione per l'installazione di Skype for Business.  Vedere anche Informazioni su come Configurazione di conferenze Audio, Sistema telefonico e Piani di chiamata e Skype Meeting broadcast. "
-ms.openlocfilehash: 239e1c39563594ffe1ff106284bbbf912367fb88
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
-ms.translationtype: HT
+ms.openlocfilehash: ffa82896bcc17127a2125bd37fea7ce03b227516
+ms.sourcegitcommit: 9a6e59c0fa020656ed3e858d43e628c3122fc71a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "35792621"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746319"
 ---
 # <a name="set-up-skype-for-business-online"></a>Configurare Skype for Business online
 
@@ -59,9 +59,7 @@ Skype for Business online fa parte della famiglia di servizi di Office 365. Per 
 
     ![Esempio del messaggio di posta elettronica di benvenuto che si riceve dopo essersi iscritti a Skype for Business online. Contiene l'ID utente di Office 365.](../images/977c5c96-29c5-40c0-a4c4-1ba66ba3a1fb.png)
 
-2. Accedere all'interfaccia di amministrazione e immettere l'ID utente di Office 365 e la password. Dopo l'accesso, verrà visualizzata l'interfaccia di amministrazione di Microsoft 365:
-
-    ![Esempio dell'aspetto dell'interfaccia di amministrazione di quando si ha un piano di Skype for Business online.](../images/ed1d9906-e717-450b-81a3-ce6679bd1be1.png)
+2. Accedere all'interfaccia di [Amministrazione](https://admin.microsoft.com) e immettere l'ID utente e la password di Office 365. 
 
 ## <a name="3-set-up-your-domain-and-users"></a>3. Configurare il dominio e gli utenti
 <a name="bkmk_users"> </a>

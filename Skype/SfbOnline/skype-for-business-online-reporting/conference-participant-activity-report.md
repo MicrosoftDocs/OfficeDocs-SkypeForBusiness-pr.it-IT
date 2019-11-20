@@ -19,12 +19,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Conference Participant Activity report, and how to interpret and customize it. '
-ms.openlocfilehash: 143af6902c30c007d338b102534af2076a86cdcb
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: b79e90a1dc53ab95af314c99d0ffd1c33f2e1181
+ms.sourcegitcommit: 9a6e59c0fa020656ed3e858d43e628c3122fc71a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793159"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746299"
 ---
 # <a name="conference-participant-activity-report"></a>Report attività partecipante di conferenze
 
@@ -41,12 +41,8 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
 
 1. Accedere all'interfaccia di amministrazione > **segnala** > l'**utilizzo**.
     
-2. Nella pagina **uso** fare clic su **attività partecipante conferenza Skype for business** nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività partecipante di conferenze** di Skype for business nell'elenco **attività di Skype for business** .
+2. Nella pagina **utilizzo** selezionare**attività partecipante conferenza** **Skype for business** > nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività partecipante di conferenze** di Skype for business nell'elenco **attività di Skype for business** .
     
-     ![Voce di menu attività partecipante conferenza Skype selezionata](../images/4033059e-dd2d-447d-8ee8-7515a5c26672.PNG)
-  
-    > [!IMPORTANT]
-    > In base all'abbonamento a Office 365 di cui si dispone, alcuni dei report su prodotti e attività illustrati in questo articolo potrebbero non essere disponibili. 
   
 ## <a name="interpret-the-skype-for-business-conference-participant-activity-report"></a>Interpretazione del report Attività partecipante di conferenze in Skype for Business
 
@@ -64,7 +60,7 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
 ***
 ![Numero 4](../images/sfbcallout4.png)<br/>Usare i dati del grafico interattivo **Utenti** per comprendere le tendenze di utilizzo e vedere il numero totale di utenti unici che hanno partecipato a conferenze tenute nella propria organizzazione. Mostra il numero totale di utenti e il tipo di conferenze di **Messaggistica istantanea**, **Audio/video**, **Condivisione applicazioni**, **Web** e **Accesso esterno - terze parti** organizzate. 
 ***
-![Numero 5](../images/sfbcallout5.png)<br/>Usare i dati del grafico interattivo nel grafico **minuti** per comprendere le tendenze di utilizzo e visualizzare il numero di minuti usati dagli utenti quando organizzano una conferenza con audio/video e accesso esterno e chiamata in uscita-Microsoft come conferenza audio provider. Mostra il numero totale di minuti di **Audio/video** utilizzati nelle conferenze a cui hanno partecipato membri dell'organizzazione.
+![Numero 5](../images/sfbcallout5.png)<br/>Usare i dati del grafico interattivo nel grafico **minuti** per comprendere le tendenze di utilizzo e visualizzare il numero di minuti usati dagli utenti quando organizzano una conferenza con audio/video e accesso esterno e chiamata in uscita-Microsoft come provider di servizi di audioconferenza. Mostra il numero totale di minuti di **Audio/video** utilizzati nelle conferenze a cui hanno partecipato membri dell'organizzazione.
 ***
 ![Numero 6](../images/sfbcallout6.png)<br/>È possibile filtrare la serie visualizzata nel grafico facendo clic su un elemento nella legenda. Ad esempio, nel grafico **Attività** toccare o fare clic su **Messaggistica istantanea**, **Audio/video**, **Condivisione applicazioni**, **Web** e **Accesso esterno - terze parti** per visualizzare solo le informazioni pertinenti. La modifica di questa selezione non modifica le informazioni nella tabella della griglia.  
 ***

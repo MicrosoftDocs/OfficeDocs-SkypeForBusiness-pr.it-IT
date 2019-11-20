@@ -20,16 +20,16 @@ f1keywords: None
 ms.custom:
 - Licensing
 description: 'Learn how to set up communication credits (PSTN Consumption) billing licenses for your users and organization. '
-ms.openlocfilehash: f1eb46647facce3a849a249cac1b26b2bb9632c8
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 202a8555b43902e553b8eadfaaa30b5577a8e4fa
+ms.sourcegitcommit: d2bee305a3588f8487bba3396b1825be7a52f6d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571583"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38714242"
 ---
 # <a name="set-up-communications-credits-for-your-organization"></a>Configurare i Crediti comunicazioni per la propria organizzazione
 
-Per usare i numeri verdi con Skype for business e Microsoft teams, sarà necessario configurare i crediti per le comunicazioni. Ti consigliamo inoltre di configurare i crediti per le comunicazioni per i piani di chiamata (nazionali o internazionali) e per gli utenti di servizi di audioconferenza che hanno la possibilità di effettuare chiamate in uscita a **qualsiasi destinazione**. Sono inclusi molti paesi/aree geografiche, ma alcune destinazioni potrebbero non essere incluse negli abbonamenti al piano chiamante o ai servizi di audioconferenza. Se non si configurano i crediti per le comunicazioni e si assegna una licenza per i **crediti di comunicazione** agli utenti e si esauriscono i minuti per l'organizzazione (a seconda del piano di chiamata o del piano di audioconferenza nel proprio paese/area geografica), questi utenti non sarà in grado di effettuare chiamate o chiamare fuori dalle riunioni di audioconferenza. È possibile ottenere altre informazioni, inclusi gli importi dei finanziamenti consigliati, leggendo [i crediti per le comunicazioni?](what-are-communications-credits.md)
+Per usare i numeri verdi con Skype for business e Microsoft teams, sarà necessario configurare i crediti per le comunicazioni. Ti consigliamo inoltre di configurare i crediti per le comunicazioni per i piani di chiamata (nazionali o internazionali) e per gli utenti di servizi di audioconferenza che hanno la possibilità di effettuare chiamate in uscita a **qualsiasi destinazione**. Sono inclusi molti paesi/aree geografiche, ma alcune destinazioni potrebbero non essere incluse negli abbonamenti al piano chiamante o ai servizi di audioconferenza. Se non si configurano i crediti per le comunicazioni e si assegna una licenza per i **crediti di comunicazione** agli utenti e si esauriscono i minuti per l'organizzazione (a seconda del piano di chiamata o del piano di audioconferenza nel proprio paese/area geografica), gli utenti non potranno effettuare chiamate o effettuare la chiamata dalle riunioni di audioconferenza. È possibile ottenere altre informazioni, inclusi gli importi dei finanziamenti consigliati, leggendo [i crediti per le comunicazioni?](what-are-communications-credits.md)
   
 > [!NOTE]
 > Per scoprire quanto costa, [consulta i prezzi qui](https://go.microsoft.com/fwlink/p/?LinkId=799523 ). 
@@ -44,7 +44,7 @@ Per farlo, **occorre assegnare agli utenti una licenza per Audioconferenza o Sis
     
     Dopo aver assegnato la licenza, è necessario impostare i servizi di audioconferenza. Per istruzioni dettagliate, vedere [provare o acquistare servizi di audioconferenza in Office 365](try-or-purchase-audio-conferencing-in-office-365-for-teams.md).
     
-- Assegnare un **sistema telefonico** e una licenza per un piano per chiamate nazionali o nazionali e internazionali agli utenti. Vedere [assegnare le licenze di Microsoft teams](assign-teams-licenses.md).
+- Assegnare un **sistema telefonico** e una licenza per un piano per chiamate **nazionali o nazionali e internazionali** agli utenti. Vedere [assegnare le licenze di Microsoft teams](assign-teams-licenses.md).
     
     > [!NOTE]
     > Anche se non è necessario per i crediti per le comunicazioni, è comunque necessario assegnare anche un **piano per chiamate nazionali** o una licenza per il **piano di chiamate nazionali e internazionali** .
@@ -55,7 +55,7 @@ Per altre informazioni, vedere [licenze per i componenti aggiuntivi Microsoft te
   
 ## <a name="step-2-set-up-communications-credits-for-your-organization"></a>Passaggio 2: configurare i Crediti comunicazioni per la propria organizzazione
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere al nuovo portale di Office 365 con l'account aziendale o dell'Istituto di istruzione.
     
 2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, accedere**agli abbonamenti** > alla **fatturazione** > **Aggiungi abbonamenti**.
 
@@ -121,7 +121,7 @@ Per visualizzare una tabella con la licenza o le licenze necessarie per ogni fun
     
 - [Impostare Piani di chiamata](set-up-calling-plans.md) e [Piani di chiamata per Office 365](calling-plans-for-office-365.md)
     
-- [Aggiungere fondi e gestire i crediti per la comunicazione](add-funds-and-manage-communications-credits.md)
+- [Aggiungere fondi e gestire Credito per la comunicazione](add-funds-and-manage-communications-credits.md)
     
   
  

@@ -20,12 +20,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle caratteristiche disponibili nelle sale di Microsoft teams. '
-ms.openlocfilehash: e02a59d4b1ec99872fd544ab4828e609a1e3ea80
-ms.sourcegitcommit: 9ae5dadaab999acd061cc9418dbd55d98b82980e
+ms.openlocfilehash: 81a1ec8142ba43d17552c220495aae212ba2de04
+ms.sourcegitcommit: d2bee305a3588f8487bba3396b1825be7a52f6d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702327"
+ms.locfileid: "38714452"
 ---
 # <a name="teams-meeting-room-licensing-update"></a>Aggiornamento delle licenze della sala riunioni Teams
 
@@ -33,7 +33,7 @@ ms.locfileid: "38702327"
 
 Microsoft ha un SKU dedicato per le riunioni di licenza e la chiamata su base per dispositivo per i dispositivi della sala riunioni, ad esempio Microsoft teams Rooms e Microsoft Surface Hub.
 
-||SKU Microsoft room |  
+||SKU sala riunioni |  
 |:--- |:---: |
 |Skype for business |&#x2714;|
 |Microsoft Teams|  &#x2714;|
@@ -50,10 +50,10 @@ Microsoft ha un SKU dedicato per le riunioni di licenza e la chiamata su base pe
 
 
 > [!NOTE]
-> Se attualmente si usano gli SKU E1, E3, E4, E5 con Skype for Business Plan 2 con servizi di audioconferenza o con il sistema telefonico Office 365 e un piano per le chiamate, questi continueranno a funzionare. Tuttavia, è consigliabile passare a un modello di licenza più semplice nella tabella precedente dopo la scadenza delle licenze correnti.  
+> Se attualmente si usano gli SKU E1, E3, E4, E5 con Skype for Business Plan 2 con servizi di audioconferenza o con il sistema telefonico Office 365 e un piano per le chiamate, questi continueranno a funzionare. Tuttavia, è consigliabile passare a un modello di licenza più semplice nella tabella precedente dopo la scadenza delle licenze correnti.
 
 > [!IMPORTANT]
-> Se si usa Skype for Business Plan 2, è possibile usare solo le sale di Microsoft teams in modalità solo Skype for business, quindi tutte le riunioni saranno riunioni Skype for business. Per abilitare la sala riunioni per le riunioni di Microsoft teams, ti consigliamo di acquistare la licenza per Microsoft room. 
+> Se si usa Skype for Business Plan 2, è possibile usare solo le sale di Microsoft teams in modalità solo Skype for business, quindi tutte le riunioni saranno riunioni Skype for business. Per abilitare la sala riunioni per le riunioni di Microsoft teams, ti consigliamo di acquistare la licenza della sala riunioni. 
 
 La tabella seguente elenca le caratteristiche disponibili nelle sale di Microsoft teams e le licenze che è necessario acquistare per ottenerle.
   

@@ -19,12 +19,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Learn how to get the Skype for Business Conference Organized Activity report, and how to interpret and customize it. '
-ms.openlocfilehash: 77450c0ffd490e295f09951a1c9db9d04db61673
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: e93b77859c601131efae69b6ef30199accf031e7
+ms.sourcegitcommit: 9a6e59c0fa020656ed3e858d43e628c3122fc71a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793187"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746329"
 ---
 # <a name="conference-organizer-activity-report"></a>Report attività organizzatore di conferenze
 
@@ -41,12 +41,7 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
 
 1. Accedere all'interfaccia di amministrazione > **segnala** > l'**utilizzo**.
     
-2. Nella pagina **uso** fare clic su **attività organizzatore di conferenze di Skype for business** nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività organizzatore di conferenze** di Skype for business nell'elenco **attività di Skype for business** .
-    
-     ![Menu per i report Skype con l'attività dell'organizzatore di conferenze aziendali evidenziata](../images/3fee95f4-efa1-48f2-89af-a705f8f8b732.PNG)
-  
-    > [!IMPORTANT]
-    > In base all'abbonamento a Office 365 di cui si dispone, alcuni dei report su prodotti e attività illustrati in questo articolo potrebbero non essere disponibili. 
+2. Nella pagina **utilizzo** selezionare**attività organizzatore di conferenze** di **Skype for business** >nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività organizzatore di conferenze** di Skype for business nell'elenco **attività di Skype for business** .
   
 ## <a name="interpret-the-skype-for-business-conferences-organizer-report"></a>Interpretare il report organizzatore di conferenze di Skype for Business
 

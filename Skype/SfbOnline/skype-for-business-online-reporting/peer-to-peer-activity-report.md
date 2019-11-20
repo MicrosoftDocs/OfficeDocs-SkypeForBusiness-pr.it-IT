@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Get a Skype for Business Peer-to-peer activity report, and learn how to interpret and customize it for your needs. '
-ms.openlocfilehash: 6564c57cee0821aa0e9204692f160b154ee5513b
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: 1c25fc6d331e538aacbebd350180ec0a65821ef5
+ms.sourcegitcommit: 9a6e59c0fa020656ed3e858d43e628c3122fc71a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35792651"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746339"
 ---
 # <a name="peer-to-peer-activity-report"></a>Report attività peer-to-peer
 
@@ -43,13 +43,8 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
 
 1. Accedere all'interfaccia di amministrazione > **segnala** > l'**utilizzo**.
     
-2. Nella pagina **uso** fare clic su **attività peer-to-peer Skype for business** nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività peer-to-peer Skype for business** nell'elenco **attività di Skype for business** .
-    
-     ![Menu peer-to-peer Skype selezionato](../images/603ec74a-7f39-4e12-8f10-00979f7ee977.PNG)
-  
-    > [!IMPORTANT]
-    > In base all'abbonamento a Office 365 di cui si dispone, alcuni dei report su prodotti e attività illustrati in questo articolo potrebbero non essere disponibili. 
-  
+2. Nella pagina **utilizzo** selezionare**attività peer-to-peer** di **Skype for business** > nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività peer-to-peer Skype for business** nell'elenco **attività di Skype for business** .
+
 ## <a name="interpret-the-skype-for-business-peer-to-peer-activity-report"></a>Interpretare il report Attività peer-to-peer Skype for Business
 
 È possibile consultare il report Attività peer-to-peer Skype for Business leggendo i grafici **Attività**, **Utenti** e **Minuti**.

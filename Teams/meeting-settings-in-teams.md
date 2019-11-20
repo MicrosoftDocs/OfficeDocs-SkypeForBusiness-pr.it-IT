@@ -19,12 +19,12 @@ f1keywords:
 ms.collection:
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per le riunioni di team che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 36325fe82c8864850da8e92de385752422e02f72
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: cba1a51130a9999ca62c70700a387c88ea1ff58e
+ms.sourcegitcommit: 9a6e59c0fa020656ed3e858d43e628c3122fc71a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37564934"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746449"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni delle riunioni in Microsoft Teams
 
@@ -32,7 +32,8 @@ Come amministratore, puoi usare le impostazioni riunioni teams per controllare s
 
 ## <a name="allow-anonymous-users-to-join-meetings"></a>Consentire agli utenti anonimi di partecipare alle riunioni
 
-Con l'aggiunta anonima, chiunque può partecipare alla riunione come utente anonimo facendo clic sul collegamento nell'invito alla riunione.
+Con l'aggiunta anonima, chiunque può partecipare alla riunione come utente anonimo facendo clic sul collegamento nell'invito alla riunione. Per altre informazioni, vedere [partecipare a una riunione senza un account teams](https://support.office.com/article/join-a-meeting-without-a-teams-account-c6efc38f-4e03-4e79-b28f-e65a4c039508).
+
 
 ![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
 

@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 4b32dfba-1af6-4077-9a92-7cec8f220f20
 description: Trovare e gestire gli aggiornamenti per Skype for Business Server 2015/2019 e Lync 2013 in un'unica posizione. Usare i collegamenti in questa pagina per ottenere altre informazioni sugli aggiornamenti e quindi scaricare gli aggiornamenti.
-ms.openlocfilehash: d95776848e27a5d43d273f8ad1caedd40636ab1c
-ms.sourcegitcommit: 77f102a7ca0226c79cf9aa9573e27afb4fba6893
+ms.openlocfilehash: 86a08c798d04942dd517664bbfed0f67ba8ddc46
+ms.sourcegitcommit: d2bee305a3588f8487bba3396b1825be7a52f6d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37276291"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38714132"
 ---
 # <a name="skype-for-business-server-updates"></a>Aggiornamenti di Skype for Business Server
 
@@ -30,8 +30,8 @@ KB 4470124 è la KB master per Skype for Business Server 2019 che contiene tutti
 
 |Nome pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
-|Aggiornamento cumulativo 1 di Skype for Business Server 2019|[KB 4470124](https://support.microsoft.com/kb/4470124)| 2019 luglio |
 |Hotfix per Skype for Business Server 2019 aggiornamento cumulativo 1 |[KB 4470124](https://support.microsoft.com/kb/4470124)| 2019 settembre |
+|Aggiornamento cumulativo 1 di Skype for Business Server 2019|[KB 4470124](https://support.microsoft.com/kb/4470124)| 2019 luglio |
 | | | |
 
 ### <a name="skype-for-business-server-2019-tools"></a>Strumenti di 2019 per Skype for Business Server
@@ -79,7 +79,7 @@ KB 4470124 è la KB master per Skype for Business Server 2019 che contiene tutti
 
 ## <a name="lync-server-2013-update-history"></a>Cronologia degli aggiornamenti di Lync Server 2013
 
-[KB 2809243](http://support.microsoft.com/kb/2809243) contiene tutti gli aggiornamenti cumulativi che sono stati rilasciati.
+[KB 2809243](https://support.microsoft.com/kb/2809243) contiene tutti gli aggiornamenti cumulativi che sono stati rilasciati.
 
 |Nome pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
@@ -164,7 +164,7 @@ Nome/collegamento del pacchetto|Data di rilascio|
 
 ## <a name="lync-server-2010-update-history"></a>Cronologia degli aggiornamenti di Lync Server 2010
 
-[KB 2493736](http://support.microsoft.com/kb/2493736) contiene tutti gli aggiornamenti cumulativi che sono stati rilasciati.
+[KB 2493736](https://support.microsoft.com/kb/2493736) contiene tutti gli aggiornamenti cumulativi che sono stati rilasciati.
 
 |Nome pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
@@ -172,7 +172,7 @@ Nome/collegamento del pacchetto|Data di rilascio|
 |Aggiornamento cumulativo 17 di Lync Server 2010|[KB 3148801](https://support.microsoft.com/kb/3148801) |2016 aprile |
 |Aggiornamento cumulativo 16 di Lync Server 2010|[KB 3057803](https://support.microsoft.com/kb/3057803) |Maggio 2015 |
 |Aggiornamento cumulativo 15 di Lync Server 2010 |[KB 3030726](https://support.microsoft.com/kb/3030726) |2015 febbraio|
-|Aggiornamento cumulativo 13 di Lync Server 2010|[KB 2982385](http://support.microsoft.com/kb/2982385) </br> [KB 2982388](http://support.microsoft.com/kb/2982388)|2014 settembre|
+|Aggiornamento cumulativo 13 di Lync Server 2010|[KB 2982385](https://support.microsoft.com/kb/2982385) </br> [KB 2982388](https://support.microsoft.com/kb/2982388)|2014 settembre|
 |Aggiornamento cumulativo 12 di Lync Server 2010 |[KB 2957044](https://support.microsoft.com/kb/2957044) |2014 aprile |
 |Aggiornamento cumulativo 11 di Lync Server 2010 |[KB 2909888](https://support.microsoft.com/kb/2909888) |2014 gennaio|
 |Aggiornamento cumulativo 10 di Lync Server 2010 |[KB 2889610](https://support.microsoft.com/kb/2889610) |2013 ottobre|
