@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad8b75e244efa0d28709d6c5ff225f1e6676200a
-ms.sourcegitcommit: ed7439d03e37c9c0184daf5215a68c5492932a83
+ms.openlocfilehash: 3ccaf4cae1b82b206ebfd27b185dddaf2ab0eece
+ms.sourcegitcommit: 9a6e59c0fa020656ed3e858d43e628c3122fc71a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38290856"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746289"
 ---
 <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 ======================================
@@ -79,9 +79,6 @@ L'esperienza degli utenti guest presenta limitazioni nel design. È importante a
 
 Per un elenco completo delle funzionalità di un utente guest in Teams, vedere la tabella di [confronto tra le funzionalità dei membri del team e degli utenti guest](guest-experience.md#comparison-of-team-member-and-guest-capabilities). Per altre informazioni sull'accesso guest a livello di Office 365, vedere [Aggiunta di utenti guest ai Gruppi di Office 365](https://support.office.com/article/guest-access-in-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6).
 
-## <a name="how-does-external-access-federation-compare-to-guest-access"></a>Cosa distingue l'accesso esterno (federazione) dall'accesso guest?
-
-[!INCLUDE [guest-vs-external-access](includes/guest-vs-external-access.md)]
 
 ## <a name="more-information"></a>Altre informazioni
 
