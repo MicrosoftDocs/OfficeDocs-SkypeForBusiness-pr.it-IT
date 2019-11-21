@@ -20,12 +20,12 @@ f1keywords:
 ms.custom:
 - Phone System
 description: L'aspetto della linea condivisa consente a un utente di scegliere un delegato per rispondere o gestire le chiamate per proprio conto.
-ms.openlocfilehash: aed55d29f2b9fc45c66040390d4d698acaf25258
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: e668a4d98077eb8d1c2ac3b349e9ba16cb6abcba
+ms.sourcegitcommit: d46e739785595727e2b3e1e5f96f5bff65e78540
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571759"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753423"
 ---
 # <a name="shared-line-appearance-in-microsoft-teams"></a>Aspetto della linea condivisa in Microsoft Teams
 
@@ -36,9 +36,9 @@ L'aspetto della linea condivisa fa parte della caratteristica di delega che cons
 
 ## <a name="license-required"></a>Licenza richiesta
 
-Un utente deve essere un utente di VoIP aziendale per essere un delegato o configurare la delega e consentire ad altri di effettuare o ricevere chiamate per proprio conto.
+Un utente deve avere un sistema telefonico con connettività PSTN (una licenza per un piano di chiamata o un routing diretto OnlineVoiceRoutingPolicy) per essere un delegato o configurare la delega e consentire ad altri di effettuare o ricevere chiamate per proprio conto.
 
-Sia i responsabili che i delegati devono essere abilitati per VoIP aziendale. L'esperienza della linea condivisa fa parte della delega e non richiede licenze aggiuntive. Per altre informazioni sul modello di licenza, vedere [licenze di Office 365 per Microsoft teams](office-365-licensing.md).
+Sia i responsabili che i delegati devono avere un sistema telefonico con connettività PSTN (una licenza per un piano di chiamata o un routing diretto OnlineVoiceRoutingPolicy). L'esperienza della linea condivisa fa parte della delega ed è inclusa nel sistema telefonico. Per altre informazioni sul modello di licenza, vedere [licenze di Office 365 per Microsoft teams](office-365-licensing.md).
 
 ## <a name="configuring-delegation-and-shared-line-appearance"></a>Configurazione della delega e dell'aspetto delle linee condivise
 
@@ -72,6 +72,6 @@ I responsabili possono aggiungere fino a 25 delegati e i delegati possono avere 
  
 Se il delegante e il delegato non si trovano nella stessa posizione geografica, spetta al provider PSTN consentire all'ID chiamante di presentarsi da una posizione geografica diversa per una chiamata delegata (per conto di). 
  
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 [Condividere una linea telefonica con un delegato](https://support.office.com/article/share-a-phone-line-with-a-delegate-16307929-a51f-43fc-8323-3b1bf115e5a8)

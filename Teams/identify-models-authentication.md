@@ -15,12 +15,12 @@ ms.collection:
 description: Informazioni sui diversi modelli di identità in Microsoft teams, ad esempio cloud, Synchronized e federate. Scopri anche l'autenticazione a più fattori.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3e485cc04be2e7bb5220a539d94cdce8e91cb0ec
-ms.sourcegitcommit: 2e005b335b1566c99b93fc311498702838466324
+ms.openlocfilehash: c1aba56bccd78a0492e801299f47199b44c296f2
+ms.sourcegitcommit: d46e739785595727e2b3e1e5f96f5bff65e78540
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931624"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753353"
 ---
 <a name="identity-models-and-authentication-in-microsoft-teams"></a>Modelli di identità e autenticazione in Microsoft Teams
 ==========================================
@@ -55,7 +55,7 @@ I piani di Office 365 supportano l'autenticazione a più fattori (AMF) che aumen
 
 L'autenticazione a più fattori è supportata con qualsiasi piano di Office 365 che include Microsoft teams. I piani di abbonamento a Office 365 che includono Microsoft teams sono discussi più avanti nella sezione Licensing seguente.
 
-Una volta registrati gli utenti per l'AMF, la volta successiva che un utente accede, viene visualizzato un messaggio che chiede di configurare il secondo fattore di autenticazione. I metodi di autenticazione supportati sono:
+Una volta registrati gli utenti per l'AMF, la volta successiva che un utente accede verrà visualizzato un messaggio che chiede di configurare il secondo fattore di autenticazione. I metodi di autenticazione supportati sono:
 
 
 |Tipo di tenant  |Opzioni di secondo fattore AMF disponibili  |Note  |
