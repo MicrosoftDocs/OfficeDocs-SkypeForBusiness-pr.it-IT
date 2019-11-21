@@ -15,17 +15,19 @@ description: Informazioni su come comunicare con utenti di altre organizzazioni 
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: a777baed1d5cc35788b2c4f63741317e34eb7905
-ms.sourcegitcommit: 09e719ead5c02b3cfa96828841c4905748d192a3
+ms.openlocfilehash: 8132fa07445beb9e9d26195a4269d025169ec94f
+ms.sourcegitcommit: d46e739785595727e2b3e1e5f96f5bff65e78540
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37754372"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38753383"
 ---
 <a name="communicate-with-users-from-other-organizations-in-microsoft-teams"></a>Comunicare con utenti di altre organizzazioni in Microsoft Teams
 ======================================================
 
 Se è necessario comunicare e collaborare con persone esterne all'organizzazione, Microsoft Teams offre due modi diversi per farlo. Il primo è l’**accesso esterno** (federazione): consente di trovare, chiamare e chattare con utenti di altri domini, ad esempio contoso.com. Il secondo è l’**accesso guest**: consente di aggiungere singoli utenti al team, come guest, usando il loro indirizzo di posta elettronica. È possibile collaborare con i guest come si farebbe con qualsiasi altro utente dell'organizzazione.
+
+Se si preferisce, si può sia l'accesso esterno che l'accesso guest: uno non preclude l'altro.
 
 A un livello elevato, ecco come scegliere (per un confronto dettagliato, passare a [Confrontare l’accesso esterno e guest](#compare-external-and-guest-access) più in basso):
 
