@@ -20,7 +20,7 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 - LIL_Placement
-description: Informazioni su quali Paesi e aree possiedono numeri telefonici di accesso esterno e come vengono assegnati automaticamente.
+description: Informazioni su quali paesi e aree possiedono numeri telefonici di accesso esterno e come vengono assegnati automaticamente.
 ms.openlocfilehash: 1e988db094b6d49f8fb8da548f6d71b3607975e2
 ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
 ms.translationtype: HT
@@ -40,7 +40,7 @@ When you are setting up **Audio Conferencing** for Skype for Business, dial-in p
   
 ## <a name="audio-conferencing-coverage-and-pricing"></a>Copertura e prezzi per Audioconferenza
 
-For a complete list of all the countries/regions and cities where Audio Conferencing is available, see [Countries and region availability for Audio Conferencing and Calling Plans](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). For pricing information, see [Pricing for Audio Conferencing](https://products.office.com/en-us/skype-for-business/audio-conferencing#Requirements).
+For a complete list of all the countries/regions and cities where Audio Conferencing is available, see [Countries and region availability for Audio Conferencing and Calling Plans](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). For pricing information, see [Pricing for Audio Conferencing](https://products.office.com/it-IT/skype-for-business/audio-conferencing#Requirements).
   
 ## <a name="dial-in-phone-numbers-in-a-meeting-invite"></a>Numeri di telefono con accesso esterno nell’invito alla riunione
 
