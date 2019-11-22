@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5affe464ac300d0084916ad8ec0044ca74f8fa6b
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 42fd9820f6f8ce11b245412a5ae99ed7b43dbc1e
+ms.sourcegitcommit: 0f6321d51b40f06855679c18f7313febfedd419a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570081"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793532"
 ---
 <a name="publish-apps-in-the-microsoft-teams-tenant-apps-catalog"></a>Pubblicare app nel catalogo delle app del tenant di Microsoft Teams
 =======================================================
@@ -45,13 +45,13 @@ Viene creato un pacchetto dell'app teams con [Teams App Studio](https://docs.mic
 
 ### <a name="go-to-the-tenant-apps-catalog"></a>Vai al catalogo delle app tenant
 
-Avviare il client Microsoft teams ed eseguire l'accesso usando le credenziali di amministratore del servizio globale o teams. In Microsoft teams Store selezionare la nuova sezione denominata per l'organizzazione specifica (in questo esempio, contoso). Gli utenti dell'organizzazione possono visualizzare le app nel catalogo e installarle per i team di cui fanno parte.
+Avviare il client Microsoft teams ed eseguire l'accesso usando le credenziali di amministratore del servizio globale o teams. Seleziona **app** sul lato sinistro dell'app e quindi seleziona la nuova sezione denominata per l'organizzazione specifica (in questo esempio, contoso). Gli utenti dell'organizzazione possono visualizzare le app nel catalogo e installarle per i team di cui fanno parte.
 
 ![Screenshot dell'app teams Store che mostra il catalogo app.](media/private-app-store-teams-image01.png)
 
 ### <a name="add-an-app-to-the-tenant-apps-catalog"></a>Aggiungere un'app al catalogo delle app tenant
 
-1. Nello Store selezionare **carica un caricamento di un'app** > personalizzata**per contoso**.
+1. Nella pagina **app** selezionare **carica un caricamento di un'app** > personalizzata**per contoso**.
 
     ![Screenshot dell'app teams Store che mostra il catalogo app.](media/private-app-store-teams-image02.png)
 
@@ -75,7 +75,7 @@ L'app verrà aggiornata alla versione 2,0. Puoi anche eliminare l'app per l'inte
 
 ## <a name="use-the-office-365-admin-portal-to-manage-the-tenant-apps-catalog"></a>Usare il portale di amministrazione di Office 365 per gestire il catalogo delle app tenant
 
-Se si hanno app che necessitano di correzioni di bug, è possibile disabilitare temporaneamente le app tramite il portale di amministrazione di Office 365. Selezionare **** > **servizi di** > impostazioni & componenti aggiuntivi**Microsoft teams**. Oltre alle impostazioni precedenti, ora è disponibile una sezione dedicata alle app della tua azienda. Puoi scegliere le app che vuoi abilitare o disabilitare.
+Se si hanno app che necessitano di correzioni di bug, è possibile disabilitare temporaneamente le app tramite l'interfaccia di amministrazione di Microsoft 365 > i**criteri di autorizzazione** delle**app** > Teams dell'interfaccia di **Amministrazione** > teams > <il nome del criterio, ad esempio "Global (org-Wide default)" > **app tenant** > bloccare app specifiche e consentire a tutti gli altri utenti di aggiungere l'app all'elenco.
 
 ![Screenshot dell'app teams Store che mostra il catalogo app.](media/private-app-store-teams-image05.png)
 

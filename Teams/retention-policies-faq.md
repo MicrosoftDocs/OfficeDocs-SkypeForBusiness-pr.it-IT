@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9b3d2ed05459c6866c73b0f49b128eea3980605f
-ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
+ms.openlocfilehash: fa8e71d167bbb5f5381c66a1a8545a6f94f74e62
+ms.sourcegitcommit: 0f6321d51b40f06855679c18f7313febfedd419a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968307"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793502"
 ---
 # <a name="microsoft-teams-retention-policies-faq"></a>Domande frequenti sui criteri di conservazione di Microsoft Teams
 
@@ -44,6 +44,10 @@ Sì, lo sono. Se si creano criteri di conservazione per eliminare dati anteceden
 ### <a name="what-is-the-default-retention-policy"></a>Qual è il criterio di conservazione predefinito? 
 
 Per impostazione predefinita, i dati di chat, canale e file di team vengono mantenuti per sempre.
+
+### <a name="what-licensing-is-required-for-retention-policies"></a>Quali licenze sono necessarie per i criteri di conservazione?
+
+Il requisito minimo di licenze per i criteri di conservazione è Office 365 E3. Per altre informazioni sulle licenze, leggere [licenze di Office 365 per i team](office-365-licensing.md).
 
 ### <a name="can-i-target-sets-of-users-or-teams-in-a-policy"></a>È possibile impostare come destinazione set di utenti o team in un criterio? 
 

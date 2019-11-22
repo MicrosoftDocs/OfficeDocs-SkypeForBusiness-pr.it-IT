@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo di Office 365.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 96197e7acf067675f3468b122c6fcc8c0386c010
-ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
+ms.openlocfilehash: ee0c5175e3712881b1f51b3c98156ba8f179012d
+ms.sourcegitcommit: 0f6321d51b40f06855679c18f7313febfedd419a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968017"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793382"
 ---
 <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
 ==================================================
@@ -50,7 +50,10 @@ Prima di poter esaminare i dati di controllo, è necessario attivare prima di tu
 
 ## <a name="retrieve-teams-data-from-the-audit-log"></a>Recuperare i dati di teams dal log di controllo
 
-1. Per recuperare i log di controllo, accedere al [centro conformità & sicurezza](https://go.microsoft.com/fwlink/?linkid=855775). In **ricerca &** selezionare **Ricerca log di controllo**.
+
+1.  Per recuperare i log di controllo, accedere al [centro conformità & sicurezza](https://go.microsoft.com/fwlink/?linkid=855775). In **ricerca**selezionare **Ricerca log di controllo**.
+
+
 
 2. Usare la **ricerca** per filtrare in base alle attività, alle date e agli utenti che si desidera controllare.
 

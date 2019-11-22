@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: okr_smb
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f5051028b93b5170e7accde90412dcac6ceca04d
-ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
+ms.openlocfilehash: 6ea246588e6884e7c7dd2755d7d24aa486d193df
+ms.sourcegitcommit: 0f6321d51b40f06855679c18f7313febfedd419a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37968057"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793392"
 ---
 > [!NOTE]
 > Per informazioni su chat, team, canali, & app in teams, vedere la pagina seguente. Quindi, passa a [chat, team, canali, & app in teams](deploy-chat-teams-channels-microsoft-teams-landing-page.md) per esaminare un elenco di decisioni importanti per l'implementazione del team.
@@ -46,6 +46,8 @@ Iniziamo a pensare a come Microsoft teams consente ai singoli team di organizzar
 
     - I canali sono luoghi in cui si verificano le conversazioni e dove il lavoro viene effettivamente eseguito. I canali possono essere aperti a tutti i membri del team oppure, se hai bisogno di un pubblico più selezionato, possono essere privati. I canali standard sono per le conversazioni che tutti i membri di un team possono partecipare e i [canali privati](private-channels.md) limitano la comunicazione a un sottoinsieme di persone in un team.
     - I canali sono più utili quando si estendono le app che includono schede, connettori e bot che aumentano il loro valore per i membri del team. Per altre informazioni, Vedi [app, bot, & connettori in teams](deploy-apps-microsoft-teams-landing-page.md).
+    
+Per informazioni sull'uso di team e canali, vedere [team e canali](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499).
 
 Per ulteriori informazioni sulle procedure consigliate per la creazione di team e canali, vedere questo breve video.
 

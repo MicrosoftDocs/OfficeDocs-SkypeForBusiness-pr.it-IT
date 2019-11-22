@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 81c42bbe4f6bfc9186365d43906fc9b7f31bf8d2
-ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
+ms.openlocfilehash: 6779e9b0fa236b1c239f9e6aa56d97e9437fb422
+ms.sourcegitcommit: 0f6321d51b40f06855679c18f7313febfedd419a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968327"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38793522"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -28,7 +28,7 @@ Le conversazioni dei team sono permanenti e mantenute per sempre per impostazion
 > [!NOTE]
 > Non è ancora supportata la configurazione per la conservazione dei messaggi del canale privato. È supportata la conservazione dei file condivisi nei canali privati.
 
-Per gestire i criteri di conservazione dei team, usare le impostazioni e i cmdlet nel centro conformità & sicurezza di Office 365 in > **conservazione**della **governance dati**.
+Per gestire i criteri di conservazione dei team, usare le impostazioni e i cmdlet nel centro conformità & sicurezza di Office 365 in > **conservazione**della **governance delle informazioni**.
 
 I criteri di conservazione dei team supportano: 
     
@@ -41,7 +41,7 @@ I criteri di conservazione dei team non supportano ancora:
 - I criteri di conservazione avanzati non si applicano alle posizioni dei messaggi del canale chat teams e teams
 - Durata di meno di 30 giorni
 
-Gli amministratori possono configurare criteri di conservazione separati per le chat private di Teams (1:1 o 1: molte chat) e i messaggi del canale teams. In molti casi, le organizzazioni considerano i dati della chat privata come un numero maggiore di passività rispetto ai messaggi del canale, che in genere sono più conversazioni correlate al progetto. Configurare questi criteri nel centro conformità & sicurezza, > **conservazione**della **governance dei dati**. Attivare **i messaggi del canale teams** e le **chat di teams** e quindi definire i criteri di conservazione per queste posizioni (anche illustrato nel diagramma seguente). 
+Gli amministratori possono configurare criteri di conservazione separati per le chat private di Teams (1:1 o 1: molte chat) e i messaggi del canale teams. In molti casi, le organizzazioni considerano i dati della chat privata come un numero maggiore di passività rispetto ai messaggi del canale, che in genere sono più conversazioni correlate al progetto. Configurare questi criteri nel centro conformità & sicurezza, la > **conservazione**della **governance delle informazioni**. Attivare **i messaggi del canale teams** e le **chat di teams** e quindi definire i criteri di conservazione per queste posizioni (anche illustrato nel diagramma seguente). 
 
 Quando si attivano **i messaggi del canale teams**, è possibile specificare i team a cui applicare i criteri. Ad esempio, per i team X, Y e Z, l'amministratore può impostare i criteri di eliminazione per 1 anno (selezionando questi team singolarmente) e applicare un criterio di eliminazione di 3 anni al resto dei team. 
 
