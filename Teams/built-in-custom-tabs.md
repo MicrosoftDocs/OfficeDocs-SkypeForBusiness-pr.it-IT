@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Informazioni su come usare le schede predefinite e personalizzate per includere funzionalità come le conversazioni, i file, le mappe e altro ancora.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9a9a78f2b611bd586b0e465f8e5045484417d07f
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 3cec2b6bef02eaa334bcd50d225edd1f579df038
+ms.sourcegitcommit: 5a7e273a3636322052e4a48a5a75513cbf5abb84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517036"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39209112"
 ---
 <a name="use-built-in-and-custom-tabs-in-microsoft-teams"></a>Usare le schede predefinite e personalizzate in Microsoft Teams
 ==================================================
@@ -53,9 +53,9 @@ I proprietari e i membri del team possono aggiungere schede a un canale, una cha
 
 ## <a name="develop-custom-tabs"></a>Sviluppare schede personalizzate
 
-Oltre alle schede predefinite, puoi progettare e sviluppare le tue schede per integrarti in team o condividere con il resto della community. È possibile [controllare l'accesso alla scheda personalizzata](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/design#streamline-access) configurando i gruppi di Office 365 appropriati.
+Oltre alle schede predefinite, puoi progettare e sviluppare le tue schede per integrarti in team o condividere con il resto della community. È possibile [controllare l'accesso alla scheda personalizzata](https://docs.microsoft.com/microsoftteams/platform/get-started/design#streamline-access) configurando i gruppi di Office 365 appropriati.
 
-Microsoft Developer Network include le [schede di esempio](https://go.microsoft.com/fwlink/?linkid=855787) sviluppate da Microsoft che è possibile scaricare e [istruzioni dettagliate](https://go.microsoft.com/fwlink/?linkid=855786) per la progettazione e la creazione di schede personalizzate.
+Microsoft Developer Network include le [schede di esempio](https://docs.microsoft.com/MicrosoftTeams/platform/samples/code-samples) sviluppate da Microsoft che è possibile scaricare e [istruzioni dettagliate](https://docs.microsoft.com/MicrosoftTeams/platform/tabs/design/tabs) per la progettazione e la creazione di schede personalizzate.
 
 ![Screenshot di una scheda personalizzata di esempio in Microsoft teams.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image5.png)
 

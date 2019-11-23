@@ -20,12 +20,12 @@ f1keywords:
 ms.custom:
 - Phone System
 description: USA Call Park e recupera per effettuare una chiamata in attesa nel servizio Teams nel cloud.
-ms.openlocfilehash: ab70832cde09cf5328e6fa0743c00614c839fc8d
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 9a6f5b6a51a0193625ecd2dab294c2cf454cb21f
+ms.sourcegitcommit: 5a7e273a3636322052e4a48a5a75513cbf5abb84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517030"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39209182"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Chiamare il parcheggio e il recupero in Microsoft Teams
 
@@ -99,10 +99,10 @@ Se gli utenti non riescono a visualizzare il pulsante parcheggia o Recupera:
 Se un utente tenta di recuperare una chiamata e non riesce, verificare quanto segue:
 
 - Verificare che l'utente stia usando il client teams o un dispositivo/telefono abilitato per Teams
-- Raggruppamento: l'utente è un membro del gruppo di parcheggio delle chiamate?
+- Raggruppamento: l'utente è un membro del gruppo Call Park, che si basa sull'assegnazione di criteri di parcheggio per le chiamate a teams. 
 - Modalità Isola-Call Park and retrieve non è disponibile nella modalità Isola di teams.
 - La chiamata è già stata recuperata o terminata.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 [Parcheggiare una chiamata in teams](https://support.office.com/article/park-a-call-in-teams-8538c063-d676-4e9a-8045-fc3b7299bb2f).

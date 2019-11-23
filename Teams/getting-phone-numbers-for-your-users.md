@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come ottenere nuovi numeri di telefono o di trasferimento di dati esistenti per i team e come visualizzare le modifiche apportate agli utenti. '
-ms.openlocfilehash: 2b8dcb2f10f4c5e4452a24fbc9fc4230cffbe874
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 51f436a3b2d462e9984fb9fc09620e7c1a77307d
+ms.sourcegitcommit: 5a7e273a3636322052e4a48a5a75513cbf5abb84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925287"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39209202"
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 
@@ -45,7 +45,7 @@ Sono disponibili tre modi per ottenere i numeri degli utenti:
 
 ![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
     
-1. Nella barra di spostamento sinistra, vai a**numeri di telefono** **vocale** > e quindi fai clic su **Ottieni nuovi numeri**.
+1. Nella barra di spostamento sinistra, vai a**numeri di telefono** **vocale** > e quindi fai clic su **Aggiungi**.
 2. Immettere un nome per l'ordine e, se si vuole, aggiungere una descrizione.
 3. Nella pagina location and quantity eseguire le operazioni seguenti:
     1. In **paese o area geografica**selezionare un paese o un'area geografica.
