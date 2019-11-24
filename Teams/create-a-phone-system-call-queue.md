@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare il sistema telefonico per le code delle chiamate cloud con Microsoft teams.
-ms.openlocfilehash: fc7cc9558036d30d388a279ac155fe6382e611a8
-ms.sourcegitcommit: 15fe483079847d24869e325eead35f252da8c7dd
+ms.openlocfilehash: e55028bb3e77291e6ed69069b09d812907fc35fb
+ms.sourcegitcommit: 5a7e273a3636322052e4a48a5a75513cbf5abb84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "37972497"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39211976"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda delle chiamate nel cloud
 
@@ -105,7 +105,7 @@ Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto se
 
 ## <a name="step-2--getting-or-transferring-toll-or-toll-free-service-phone-numbers"></a>Passaggio 2: ottenere o trasferire numeri di telefono del servizio a pagamento o a numero verde
 
-Prima di poter creare e configurare le code di chiamata, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Dopo aver ottenuto i numeri di telefono del servizio a pagamento o a pedaggio, verranno visualizzati nei**numeri di telefono**della**voce** > del portale > **** > dell'interfaccia di **amministrazione Microsoft teams**legacy e il **tipo di numero** verrà elencato come **Servizio-numero verde**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono](getting-service-phone-numbers.md) o se si vuole trasferire un numero di servizio esistente, vedere trasferire i [numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
+Prima di poter creare e configurare le code di chiamata, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Dopo aver ottenuto il numero di telefono o i numeri di servizio gratuiti, verranno visualizzati nei**numeri** > di telefono della**segreteria** > telefonica di **Microsoft teams** > **Add** > e il **tipo di numero** verrà elencato come **servizio, senza numero verde**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono](getting-service-phone-numbers.md) o se si vuole trasferire un numero di servizio esistente, vedere trasferire i [numeri di telefono in Office 365](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
 
 > [!NOTE]
 > Se si è al di fuori degli Stati Uniti, non è possibile usare l'interfaccia di amministrazione di Microsoft teams per ottenere i numeri di servizio. Vai a [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per vedere come farlo dall'esterno degli Stati Uniti.
@@ -222,6 +222,10 @@ Per accedere all'opzione di esclusione, gli agenti possono eseguire le seguenti 
 
     > [!NOTE]
     > Gli agenti che usano app o endpoint diversi da Skype for business desktop possono accedere all'opzione opt-out dal portale [https://aka.ms/cqsettings](https://aka.ms/cqsettings)delle impostazioni utente.
+    >
+    > Se gli agenti si trovano nei client desktop di Microsoft teams, possono rifiutare l'opt-out usando le impostazioni di chiamata. 
+
+![screenshot delle impostazioni di chiamata opt-out](media/create-a-phone-system-call-queue-image1.png)
 
 ![Icona del numero 2, che fa riferimento a un callout nell'](media/sfbcallout2.png)
 **impostazione di avviso dell'agente** screenshot precedente

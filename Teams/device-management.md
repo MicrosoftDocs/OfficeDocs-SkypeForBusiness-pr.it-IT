@@ -17,12 +17,12 @@ description: Informazioni su come gestire i dispositivi usati con i team dell'or
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d1473acc92113cc8788ae5cc27eecc11ad909124
-ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
+ms.openlocfilehash: 06b85012adbf0967889e74fb5765b02c9b2ea18f
+ms.sourcegitcommit: 5a7e273a3636322052e4a48a5a75513cbf5abb84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37972457"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "39211975"
 ---
 # <a name="manage-your-devices-in-microsoft-teams"></a>Gestire i dispositivi in Microsoft Teams
 
@@ -30,7 +30,7 @@ ms.locfileid: "37972457"
 Come amministratore, puoi gestire tutti i dispositivi usati con i team dell'organizzazione dall'interfaccia di amministrazione di Microsoft teams. È possibile visualizzare e gestire l'inventario dei dispositivi per l'organizzazione e svolgere attività come l'aggiornamento, il riavvio e il monitoraggio della diagnostica per i dispositivi. È anche possibile creare e assegnare profili di configurazione a un dispositivo o a un gruppo di dispositivi. 
 
 ## <a name="what-devices-can-you-manage"></a>Quali dispositivi è possibile gestire?
-I dispositivi devono essere certificati per i team e registrati in teams. Un dispositivo viene automaticamente registrato la prima volta che un utente accede a teams nel dispositivo. Per un elenco dei dispositivi certificati che è possibile gestire, vedere [telefoni per conferenze](https://products.office.com/en-us/microsoft-teams/across-devices/devices/category?devicetype=16) e [telefoni da tavolo](https://products.office.com/en-us/microsoft-teams/across-devices/devices/category?devicetype=34).
+I dispositivi devono essere certificati per i team e registrati in teams. Un dispositivo viene automaticamente registrato la prima volta che un utente accede a teams nel dispositivo. Per un elenco dei dispositivi certificati che è possibile gestire, vedere [telefoni per conferenze](https://products.office.com/microsoft-teams/across-devices/devices/category?devicetype=16) e [telefoni da tavolo](https://products.office.com/microsoft-teams/across-devices/devices/category?devicetype=34).
 
 > [!NOTE]
 > Se si dispone di Microsoft Intune, i dispositivi vengono registrati automaticamente in Intune. Dopo che un dispositivo è stato registrato, la conformità del dispositivo viene confermata e i criteri di accesso condizionale vengono applicati al dispositivo. 
