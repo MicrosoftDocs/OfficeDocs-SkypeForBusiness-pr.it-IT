@@ -821,7 +821,7 @@
 
 <!-- ============================================================ -->
 #       
-#        
+#          
 # [Formazione](training-microsoft-teams-landing-page.md)
 ## [Training con docente per Teams](instructor-led-training-teams-landing-page.md)
 ## [Formazione amministratori per Teams](itadmin-readiness.md)
@@ -836,6 +836,7 @@
 ## Guida all'implementazione di Teams
 ### [Valutare la conformità dell'ambiente per Teams](environment-readiness.md)
 ### [Preparare la rete dell'organizzazione per Teams](prepare-network.md)
+### [Usare Advisor per Teams per distribuire Microsoft Teams](use-advisor-teams-roll-out.md)
 ### [Usare Network Planner per Teams](network-planner.md)
 ### [Procedura dettagliata su Network Planner](tutorial-network-planner-example.yml)
 ### [Server proxy per Teams o Skype for Business Online](proxy-servers-for-skype-for-business-online.md)
