@@ -1,5 +1,5 @@
 ---
-title: Pianificare il routing diretto
+title: Pianificare Instradamento diretto
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -14,14 +14,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Leggere questo argomento per informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente a Microsoft Phone System.
-ms.openlocfilehash: ab76d3ee8a08b6bf109e1cb235b4f0f3a4fbdcc8
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 3fb9fcd8ec8dab78b03b408813d32292879cbec2
+ms.sourcegitcommit: 4c763a3824e6a2271d98a46d25a03c8f04ee2f74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572147"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257475"
 ---
-# <a name="plan-direct-routing"></a>Pianificare il routing diretto
+# <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
 > [!Tip]
 > Vedere la sessione seguente per informazioni sui vantaggi del routing diretto, su come pianificare la procedura e su come distribuirla: [routing diretto in Microsoft teams](https://aka.ms/teams-direct-routing)
@@ -264,7 +264,7 @@ La tabella seguente riepiloga le relazioni tra i centri dati primari, secondari 
 |||||
 
 ## <a name="media-traffic-port-ranges"></a>Traffico multimediale: intervalli di porte
-Tieni presente che i requisiti seguenti si applicano se vuoi distribuire il routing diretto senza bypass multimediale. Per i requisiti del firewall per il bypass multimediale, fare riferimento a [piano per il bypass multimediale con routing diretto](https://docs.microsoft.com/en-us/microsoftteams/direct-routing-plan-media-bypass).
+Tieni presente che i requisiti seguenti si applicano se vuoi distribuire il routing diretto senza bypass multimediale. Per i requisiti del firewall per il bypass multimediale, fare riferimento a [piano per il bypass multimediale con routing diretto](https://docs.microsoft.com/microsoftteams/direct-routing-plan-media-bypass).
 
 
 
@@ -287,9 +287,8 @@ L'intervallo di porte dei processori multimediali è illustrato nella tabella se
 
 |**Traffico**|**Da**|**A**|**Porta di origine**|**Porta di destinazione**|
 |:--- |:--- |:--- |:--- |:--- |
-|UDP/SRTP|Media processor|SBC|49 152-53 247|Definita nell'SBC|
-|UDP/SRTP|SBC|Media processor|Definita nell'SBC|49 152-53 247|
-|
+|UDP/SRTP|Media processor|SBC|49152-53247|Definita nell'SBC|
+|UDP/SRTP|SBC|Media processor|Definita nell'SBC|49152-53247|
 
   > [!NOTE]
   > Microsoft consiglia almeno due porte per chiamata simultanea su SBC.
@@ -322,7 +321,7 @@ Per altre informazioni sulle SBCs supportate, vedere l' [elenco dei controller d
  
 ## <a name="see-also"></a>Vedere anche
 
-[Configurare il routing diretto](direct-routing-configure.md)
+[Configurare Instradamento diretto](direct-routing-configure.md)
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Pianificare il bypass multimediale con routing diretto
+title: Pianificare il bypass multimediale con Instradamento diretto
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -14,14 +14,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Leggere questo argomento per informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico.
-ms.openlocfilehash: cdfeb5313416730c703a1d0f10e2c7ccdddee1cc
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: dbc88f7954708ef3842c0cb7afa67815c70976a6
+ms.sourcegitcommit: 4c763a3824e6a2271d98a46d25a03c8f04ee2f74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572158"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257485"
 ---
-# <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con routing diretto
+# <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
 ## <a name="about-media-bypass-with-direct-routing"></a>Informazioni sul bypass multimediale con routing diretto
 
@@ -145,15 +145,15 @@ L'intervallo IP è 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254).
 
 - I relè di trasporto non sono B2BUA, il che significa che il codec non viene mai modificato tra il client e il SBC, anche se i flussi di traffico tramite Relay.
 
-### <a name="use-of-teams-transport-relays-in-escalation-scenarios-if-trunk-is-configured-for-media-bypass"></a>Uso dei relè di trasporto teams in scenari di escalation se trunk è configurato per il bypass multimediale
+### <a name="use-of-teams-media-processors-if-trunk-is-configured-for-media-bypass"></a>Uso dei processori multimediali di teams se trunk è configurato per il bypass multimediale
 
-I relè di trasporto teams sono sempre nel percorso multimediale negli scenari seguenti:
+I processori multimediali di teams vengono sempre inseriti nel percorso multimediale negli scenari seguenti:
 
 - La chiamata viene escalated da 1:1 a una chiamata di gruppo
 - Chiamata sta per un utente di Team federati
 - La chiamata viene inoltrata o trasferita a un utente di Skype for business
 
-Verificare che il SBC abbia accesso ai relè di trasporto come descritto di seguito.    
+Verificare che SBC abbia accesso ai processori multimediali e ai relè di trasporto, come descritto di seguito.    
 
 
 ## <a name="sip-signaling-fqdns"></a>Segnalazione SIP: FQDN
@@ -243,7 +243,7 @@ I flussi di traffico multimediale tra il client SBC e teams se la connettività 
 
 Il client deve avere accesso alle porte specificate (Vedi tabella) nell'indirizzo IP pubblico di SBC. 
 
-Nota: se il client si trova in una rete interna, il contenuto multimediale passa all'indirizzo IP pubblico di SBC. È possibile configurare hairpinning nel dispositivo NAT in modo che il traffico non lasci mai l'apparecchiatura di rete aziendale.
+Nota: se il client si trova in una rete interna, il contenuto multimediale passa all'indirizzo IP pubblico di SBC. Puoi configurare il blocco dei capelli nel dispositivo NAT in modo che il traffico non lasci mai l'apparecchiatura di rete aziendale.
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|
@@ -358,7 +358,7 @@ Nota per i client Web (teams Web App in Microsoft Edge, Google Chrome o Mozilla 
  
 ## <a name="see-also"></a>Vedere anche
 
-[Configurare il bypass multimediale con routing diretto](direct-routing-configure-media-bypass.md)
+[Configurare il bypass multimediale con Instradamento diretto](direct-routing-configure-media-bypass.md)
 
 
 

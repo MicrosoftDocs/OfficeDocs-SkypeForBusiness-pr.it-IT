@@ -13,93 +13,93 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
 description: Questo articolo illustra come distribuire la gestione dei dispositivi Microsoft teams rooms in modo integrato e completo con Azure monitor.
-ms.openlocfilehash: 12936113a951f90bb1a3bed72f71d09f1f72ccd9
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: a7a71fa9fa87bd8cfb424234d6ffcedf46039115
+ms.sourcegitcommit: 000957709b841ce55a6813ccc2fbe745b1a9295b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569941"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39218043"
 ---
-# <a name="deploy-microsoft-teams-rooms-management-with-azure-monitor"></a>Distribuire Gestione di Microsoft teams Rooms con Azure monitor
+# <a name="deploy-no-loc-textmicrosoft-teams-rooms-management-with-no-loc-textazure-monitor"></a>Distribuire :::no-loc text="Microsoft Teams Rooms"::: la gestione con:::no-loc text="Azure Monitor":::
 
-Questo articolo illustra come configurare e distribuire la gestione integrata e end-to-end dei dispositivi Microsoft teams Rooms usando Azure monitor.
+Questo articolo illustra come configurare e distribuire la gestione integrata e end-to-end dei :::no-loc text="Microsoft Teams Rooms"::: dispositivi tramite. :::no-loc text="Azure Monitor":::
 
-È possibile configurare l'analisi del log in Azure monitor per fornire la telemetria di base e gli avvisi che consentono di gestire i dispositivi della sala riunioni di Microsoft teams rooms. Man mano che la soluzione di gestione è matura, è possibile decidere di distribuire altre funzionalità di gestione e dati per creare una visualizzazione più dettagliata della disponibilità e delle prestazioni dei dispositivi.
+Puoi configurare :::no-loc text="Log Analytics"::: l'interno :::no-loc text="Azure Monitor"::: per fornire la telemetria di base e gli avvisi che :::no-loc text="Microsoft Teams Rooms"::: ti aiuteranno a gestire i dispositivi della sala riunioni. Man mano che la soluzione di gestione è matura, è possibile decidere di distribuire altre funzionalità di gestione e dati per creare una visualizzazione più dettagliata della disponibilità e delle prestazioni dei dispositivi.
 
-Seguendo questa guida, è possibile usare un dashboard come l'esempio seguente per ottenere report di stato dettagliati per la disponibilità dei dispositivi, l'integrità dell'applicazione e dell'hardware e la distribuzione delle versioni dell'applicazione e del sistema operativo Microsoft teams rooms.
+Seguendo questa guida, è possibile usare un dashboard come l'esempio seguente per ottenere report di stato dettagliati per la disponibilità dei dispositivi, l'integrità dell' :::no-loc text="Microsoft Teams Rooms"::: applicazione e dell'hardware e la distribuzione delle versioni delle applicazioni e del sistema operativo.
 
-![Screenshot della visualizzazione analisi log di esempio per le sale di Microsoft Teams](../media/Deploy-Azure-Monitor-1.png "Visualizzazione analisi log di esempio per Microsoft teams rooms")
+! [Screenshot della visualizzazione di :::no-loc text="Log Analytics"::: esempio per :::no-loc text="Microsoft Teams Rooms":::] (.. /media/Deploy-Azure-Monitor-1.png "visualizzazione :::no-loc text="Log Analytics"::: di esempio :::no-loc text="Microsoft Teams Rooms":::per")
 
 A livello elevato, è necessario eseguire le attività seguenti:
 
 
-1. [Convalida configurazione analisi log](azure-monitor-deploy.md#validate_LogAnalytics)
-2. [Configurare i dispositivi di test per la configurazione di gestione analisi log](azure-monitor-deploy.md#configure_test_devices)
+1. [Convalidare :::no-loc text="Log Analytics"::: la configurazione](azure-monitor-deploy.md#validate_LogAnalytics)
+2. [Configurare i dispositivi di :::no-loc text="Log Analytics"::: test per la configurazione della gestione](azure-monitor-deploy.md#configure_test_devices)
 3. [Mappare i campi personalizzati](azure-monitor-deploy.md#Custom_fields)
-4. [Definire le visualizzazioni delle sale di Microsoft teams in analisi log](azure-monitor-deploy.md#Define_Views)
+4. [Definire le :::no-loc text="Microsoft Teams Rooms"::: visualizzazioni in:::no-loc text="Log Analytics":::](azure-monitor-deploy.md#Define_Views)
 5. [Definire gli avvisi](azure-monitor-deploy.md#Alerts)
 6. [Configurare tutti i dispositivi per il monitoraggio](azure-monitor-deploy.md#configure_all_devices)
-7. [Configurare altre soluzioni di Azure monitor](azure-monitor-deploy.md#Solutions)
+7. [Configurare soluzioni :::no-loc text="Azure Monitor"::: aggiuntive](azure-monitor-deploy.md#Solutions)
 
 > [!IMPORTANT]
-> Anche se con una configurazione minima, l'analisi dei log di Azure monitor può monitorare un computer che esegue un sistema operativo Windows, ci sono ancora alcune sale di Microsoft teams: passaggi specifici che è necessario eseguire prima di avviare la distribuzione di agenti in tutti i Microsoft Teams Dispositivi rooms.
+> Anche se con una configurazione :::no-loc text="Azure Monitor"::: :::no-loc text="Log Analytics"::: minima, è possibile monitorare un :::no-loc text="Windows"::: computer che esegue un sistema operativo, :::no-loc text="Microsoft Teams Rooms":::ma è necessario eseguire alcuni passaggi specifici prima di iniziare la distribuzione di agenti in :::no-loc text="Microsoft Teams Rooms"::: tutti i dispositivi.
 > Per questo motivo, ti consigliamo vivamente di eseguire tutti i passaggi di configurazione nell'ordine corretto per una configurazione e un'impostazione controllate. La qualità del risultato finale dipende molto dalla qualità della configurazione iniziale.
 
-## <a name="validate-log-analytics-configuration"></a>Convalida configurazione analisi log
+## <a name="validate-no-loc-textlog-analytics-configuration"></a>Convalidare :::no-loc text="Log Analytics"::: la configurazione
 <a name="validate_LogAnalytics"> </a>
 
-È necessario disporre di un'area di lavoro analisi log per iniziare a raccogliere i log dai dispositivi Microsoft teams rooms. Un'area di lavoro è un ambiente di analisi del log univoco con il proprio archivio dati, origini dati e soluzioni. Se si dispone già di un'area di lavoro analisi log esistente, è possibile usarla per monitorare la distribuzione di Microsoft teams rooms o, in alternativa, per creare un'area di lavoro di analisi del log dedicata specifica delle esigenze di monitoraggio delle sale di Microsoft teams.
+Per iniziare a raccogliere i :::no-loc text="Log Analytics"::: log dai :::no-loc text="Microsoft Teams Rooms"::: dispositivi, è necessario disporre di un'area di lavoro. Un'area di lavoro è :::no-loc text="Log Analytics"::: un ambiente univoco con il proprio archivio dati, origini dati e soluzioni. Se si dispone già di un' :::no-loc text="Log Analytics"::: area di lavoro esistente, è possibile usarla :::no-loc text="Microsoft Teams Rooms"::: per monitorare la distribuzione o, in alternativa, per :::no-loc text="Log Analytics"::: creare un'area di :::no-loc text="Microsoft Teams Rooms"::: lavoro dedicata specifica delle esigenze di monitoraggio.
 
-Se è necessario creare una nuova area di lavoro analisi log, seguire le istruzioni dell'articolo [creare un'area di lavoro analisi log in Azure Portal](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)
+Se è necessario creare una nuova :::no-loc text="Log Analytics"::: area di lavoro, seguire le istruzioni dell'articolo [creare un' :::no-loc text="Log Analytics"::: area di lavoro :::no-loc text="Azure"::: nel portale](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)
 
 > [!NOTE]
-> Per usare log Analytics con Azure monitor, è necessario avere un abbonamento a Azure attivo. Se non si ha un abbonamento a Azure, è possibile creare [un abbonamento di valutazione gratuito](https://azure.microsoft.com/free) come punto di partenza.
+> Per :::no-loc text="Log Analytics"::: usarlo :::no-loc text="Azure Monitor":::, è necessario avere un abbonamento attivo :::no-loc text="Azure"::: . Se non si dispone di :::no-loc text="Azure"::: un abbonamento, è possibile creare [un abbonamento di valutazione gratuito](https://azure.microsoft.com/free) come punto di partenza.
 
-### <a name="configure-log-analytics-to-collect-microsoft-teams-rooms-event-logs"></a>Configurare l'analisi del log per raccogliere i registri eventi di Microsoft teams rooms
+### <a name="configure-no-loc-textlog-analytics-to-collect-no-loc-textmicrosoft-teams-rooms-event-logs"></a>Configurare :::no-loc text="Log Analytics"::: per raccogliere :::no-loc text="Microsoft Teams Rooms"::: i log eventi
 
-Analisi log raccoglie solo gli eventi dai registri eventi di Windows specificati nelle impostazioni. Per ogni log, vengono raccolti solo gli eventi con i severi selezionati.
+:::no-loc text="Log Analytics":::raccoglie solo gli eventi dai registri :::no-loc text="Windows"::: eventi specificati nelle impostazioni. Per ogni log, vengono raccolti solo gli eventi con i severi selezionati.
 
-È necessario configurare log Analytics per raccogliere i log necessari per monitorare lo stato delle applicazioni e del dispositivo Microsoft teams rooms. I dispositivi Microsoft teams Rooms usano il registro eventi di **sistema room Skype** .
+È necessario configurare :::no-loc text="Log Analytics"::: per raccogliere i log necessari per monitorare :::no-loc text="Microsoft Teams Rooms"::: lo stato del dispositivo e dell'applicazione. :::no-loc text="Microsoft Teams Rooms":::i dispositivi usano **:::no-loc text="Skype Room System":::** il log eventi.
 
-Per configurare l'analisi del log per raccogliere gli eventi di Microsoft teams rooms, vedere [origini dati del log eventi di Windows in Azure monitor](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-windows-events)
+Per configurare :::no-loc text="Log Analytics"::: la raccolta degli :::no-loc text="Microsoft Teams Rooms"::: eventi, vedere [ :::no-loc text="Windows"::: origini dati del log eventi :::no-loc text="Azure Monitor"::: in](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources-windows-events)
 
 ![Screenshot delle impostazioni del log eventi](../media/Deploy-Azure-Monitor-2.png "Impostazioni del log eventi")
 
 > [!IMPORTANT]
-> Configurare le impostazioni del log eventi di Windows e immettere **Skype room System** come nome del log eventi e quindi selezionare le caselle di controllo **errore**, **avviso**e **informazioni** .
+> Configurare :::no-loc text="Windows"::: le impostazioni del log eventi **:::no-loc text="Skype Room System":::** e immettere il nome del log eventi e quindi selezionare le caselle di controllo **errore**, **avviso**e **informazioni** .
 
 ## <a name="configure-test-devices-for-azure-monitoring"></a>Configurare i dispositivi di test per il monitoraggio di Azure
 <a name="configure_test_devices"> </a>
 
-Per poter monitorare gli eventi correlati a Microsoft teams, è necessario preparare log Analytics. Per iniziare, è necessario distribuire gli agenti di monitoraggio Microsoft in uno o due dispositivi Microsoft teams Rooms a cui si ha accesso fisico e ottenere questi dispositivi di test per generare alcuni dati e spingerli nell'area di lavoro analisi log.
+È necessario prepararsi :::no-loc text="Log Analytics"::: per poter monitorare :::no-loc text="Microsoft Teams Rooms":::gli eventi correlati. Per iniziare, è necessario distribuire :::no-loc text="Microsoft Monitoring"::: gli agenti in uno o due :::no-loc text="Microsoft Teams Rooms"::: dispositivi a cui si ha accesso fisico e ottenere quei dispositivi di test che generano alcuni dati e lo spingono all' :::no-loc text="Log Analytics"::: area di lavoro.
 
-### <a name="install-microsoft-monitoring-agents-to-test-devices"></a>Installare gli agenti di monitoraggio Microsoft per testare i dispositivi
+### <a name="install-no-loc-textmicrosoft-monitoring-agents-to-test-devices"></a>Installare :::no-loc text="Microsoft Monitoring"::: gli agenti per testare i dispositivi
 
-Distribuire l'agente di monitoraggio Microsoft nei dispositivi di test usando le istruzioni fornite in [connettere i computer Windows al servizio analisi log in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows). Questo articolo fornisce informazioni dettagliate sui passaggi per la distribuzione di Microsoft Monitoring Agent per Windows, le istruzioni per ottenere l' ***ID del Workspace*** log Analytics e la ***chiave primaria*** per ottenere i dispositivi di Microsoft teams Rooms connessi la distribuzione di Azure monitor e i passaggi per verificare la connettività dell'agente all'istanza di analisi del log.
+Distribuire l' :::no-loc text="Microsoft Monitoring"::: agente nei dispositivi di test usando le istruzioni fornite in [connettere :::no-loc text="Windows"::: i computer al :::no-loc text="Log Analytics"::: servizio :::no-loc text="Azure"::: ](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows). In questo articolo vengono fornite informazioni dettagliate sui passaggi per :::no-loc text="Microsoft Monitoring"::: la distribuzione :::no-loc text="Windows":::dell'agente, le istruzioni :::no-loc text="Log Analytics"::: per ottenere l' ***ID area di lavoro*** e la ***chiave primaria*** per ottenere :::no-loc text="Microsoft Teams Rooms"::: i dispositivi connessi alla :::no-loc text="Azure Monitor"::: distribuzione e i passaggi :::no-loc text="Log Analytics"::: per verificare la connettività dell'agente all'istanza.
 
-### <a name="generate-sample-microsoft-teams-rooms-events"></a>Generazione di esempi di eventi di Microsoft teams rooms
+### <a name="generate-sample-no-loc-textmicrosoft-teams-rooms-events"></a>Generare eventi :::no-loc text="Microsoft Teams Rooms"::: di esempio
 
-Dopo aver distribuito l'agente di monitoraggio Microsoft sui dispositivi di test, verificare che i dati del log eventi necessari vengano raccolti da Azure monitor.
+Dopo che :::no-loc text="Microsoft Monitoring"::: l'agente è stato distribuito sui dispositivi di test, verificare che i dati del log eventi necessari :::no-loc text="Azure Monitor":::vengano raccolti da.
 
 > [!NOTE]
-> Riavviare il dispositivo dopo l'installazione dell'agente di monitoraggio Microsoft e verificare che l'app riunione Microsoft teams rooms sia avviata, in modo che possa generare nuovi eventi nel log eventi.
+> Riavviare il dispositivo dopo l'installazione dell' :::no-loc text="Microsoft Monitoring"::: agente e verificare che :::no-loc text="Microsoft Teams Rooms"::: l'app riunione venga avviata, in modo che possa generare nuovi eventi nel log eventi.
 
-1.  Accedere a [Microsoft Azure Portal](https://portal.azure.com) e accedere a log Analytics e selezionare l'area di lavoro.
+1.  Accedere al [ :::no-loc text="Microsoft Azure"::: portale](https://portal.azure.com) e :::no-loc text="Log Analytics"::: selezionare l'area di lavoro.
 
-2.  Elencare gli eventi heartbeat generati da un dispositivo Microsoft teams Rooms:
-    1.  Selezionare l'area di lavoro e accedere ai **registri** e usare una query per recuperare i record heartbeat che avranno i campi personalizzati per le sale di Microsoft teams.
+2.  Elencare gli eventi heartbeat generati da :::no-loc text="Microsoft Teams Rooms"::: un dispositivo:
+    1.  Selezionare l'area di lavoro e accedere ai **registri** e usare una query per recuperare i record heartbeat con i campi personalizzati :::no-loc text="Microsoft Teams Rooms":::.
     2.  Query di esempio:`Event | where Source == "SRS-App" and EventID == 2000`
 
-3.  Verificare che la query restituisca i record di log che includono gli eventi generati dall'app riunioni di Microsoft teams rooms.
+3.  Verificare che la query restituisca i record di log che includono gli eventi :::no-loc text="Microsoft Teams Rooms"::: generati dall'app riunioni.
 
-4.  Generare un problema hardware e verificare che gli eventi necessari vengano registrati in analisi log di Azure.
-    1.  Scollegare uno dei dispositivi periferici nel sistema test Microsoft teams rooms. Potrebbe essere la fotocamera, il vivavoce, il microfono o la visualizzazione della sala anteriore
-    2.  Attendere 10 minuti prima che il log eventi venga popolato in analisi log di Azure.
+4.  Generare un problema hardware e verificare che gli eventi necessari siano connessi :::no-loc text="Azure Log Analytics":::.
+    1.  Scollegare uno dei dispositivi periferici nel sistema di test :::no-loc text="Microsoft Teams Rooms"::: . Potrebbe essere la fotocamera, il vivavoce, il microfono o la visualizzazione della sala anteriore
+    2.  Attendere 10 minuti per il popolamento del log eventi :::no-loc text="Azure Log Analytics":::.
     3.  Usare una query per elencare gli eventi di errore hardware:`Event | where Source == "SRS-App" and EventID == 3001`
 
 5.  Generare un problema di applicazione e verificare che gli eventi necessari vengano registrati.
-    1.  Modificare la configurazione dell'applicazione Microsoft teams Rooms e digitare un indirizzo SIP (Session Initiation Protocol) non corretto o una coppia di password.
-    2.  Attendere 10 minuti prima che il log eventi venga popolato in analisi log di Azure.
+    1.  Modificare :::no-loc text="Microsoft Teams Rooms"::: la configurazione dell'applicazione e digitare un indirizzo SIP (Session Initiation Protocol) non corretto o una coppia di password.
+    2.  Attendere 10 minuti per il popolamento del log eventi :::no-loc text="Azure Log Analytics":::.
     3.  Usare una query per elencare gli eventi di errore dell'applicazione:`Event | where Source == "SRS-App" and EventID == 2001 and EventLevel == 1`
 
 > [!IMPORTANT]
@@ -108,13 +108,13 @@ Dopo aver distribuito l'agente di monitoraggio Microsoft sui dispositivi di test
 ## <a name="map-custom-fields"></a>Mappare i campi personalizzati
 <a name="Custom_fields"> </a>
 
-Si usano campi personalizzati per estrarre dati specifici dai registri eventi. È necessario definire i campi personalizzati che verranno usati in seguito con i riquadri, le visualizzazioni dashboard e gli avvisi. Vedere [campi personalizzati in analisi log](https://docs.microsoft.com/azure/azure-monitor/platform/custom-fields) e acquisire familiarità con i concetti prima di iniziare a creare i campi personalizzati.
+Si usano campi personalizzati per estrarre dati specifici dai registri eventi. È necessario definire i campi personalizzati che verranno usati in seguito con i riquadri, le visualizzazioni dashboard e gli avvisi. Vedere i [campi personalizzati :::no-loc text="Log Analytics"::: ](https://docs.microsoft.com/azure/azure-monitor/platform/custom-fields) e acquisire familiarità con i concetti prima di iniziare a creare i campi personalizzati.
 
 Per estrarre i campi personalizzati dai registri eventi acquisiti, eseguire le operazioni seguenti:
 
-1.  Accedere a [Microsoft Azure Portal](https://portal.azure.com) e accedere a log Analytics e selezionare l'area di lavoro.
+1.  Accedere al [ :::no-loc text="Microsoft Azure"::: portale](https://portal.azure.com) e :::no-loc text="Log Analytics"::: selezionare l'area di lavoro.
 
-2. Elencare gli eventi generati da un dispositivo Microsoft teams Rooms:
+2. Elencare gli eventi generati da :::no-loc text="Microsoft Teams Rooms"::: un dispositivo:
    1.  Accedere a **log** e usare una query per recuperare i record che avranno il campo personalizzato.
    2.  Query di esempio:`Event | where Source == "SRS-App" and EventID == 2000`
 
@@ -123,18 +123,18 @@ Per estrarre i campi personalizzati dai registri eventi acquisiti, eseguire le o
 
    ![Definizione di campo personalizzato](../media/Deploy-Azure-Monitor-4.png "Definizione di campo personalizzato")
 
-5. Usare i mapping visualizzati nella *tabella 1*. Analisi log aggiungerà automaticamente la ** \_stringa CF** quando si definisce il nuovo campo.
+5. Usare i mapping visualizzati nella *tabella 1*. :::no-loc text="Log Analytics":::verrà accodata automaticamente ** \_** la stringa CF quando si definisce il nuovo campo.
 
 > [!IMPORTANT]
-> Tenere presente che tutti i campi di analisi JSON e log sono con distinzione tra maiuscole e minuscole.
+> Ricorda che tutti i campi :::no-loc text="Log Analytics"::: e i JSON sono con distinzione tra maiuscole e minuscole.
 > 
-> Prestare attenzione alle query necessarie per ogni campo personalizzato nella tabella seguente. Per estrarre correttamente i valori dei campi personalizzati, è necessario usare le query corrette per l'analisi del log.
+> Prestare attenzione alle query necessarie per ogni campo personalizzato nella tabella seguente. È necessario usare le query corrette per :::no-loc text="Log Analytics"::: estrarre correttamente i valori dei campi personalizzati.
 > 
  ![Definizione di campo personalizzato](../media/Deploy-Azure-Monitor-5.png "Definizione di campo personalizzato")
 
 **Tabella 1**
 
-| **Campo JSON**                   | **Campo personalizzato analisi log** | **ID evento** | **Query da usare con l'estrazione**                   |
+| **Campo JSON**                   | **:::no-loc text="Log Analytics":::campo personalizzato** | **ID evento** | **Query da usare con l'estrazione**                   |
 |:---------------------------------|:-------------------------------|:-------------|:-------------------------------------------------------|
 | Descrizione                      | SRSEventDescription         | **2000**     | Evento \| where source = = "SRS-app" e EventID = = 2000 |
 | ResourceState                    | SRSResourceState            | **2000**     | Evento \| where source = = "SRS-app" e EventID = = 2000 |
@@ -156,20 +156,20 @@ Per estrarre i campi personalizzati dai registri eventi acquisiti, eseguire le o
 | Stato di ingestione HDMI               | SRSHDMIIngestStatus         | **3001**     | Evento \| where source = = "SRS-app" e EventID = = 3001 |
 
 
-## <a name="define-the-microsoft-teams-rooms-views-in-log-analytics"></a>Definire le visualizzazioni delle sale di Microsoft teams in analisi log
+## <a name="define-the-no-loc-textmicrosoft-teams-rooms-views-in-no-loc-textlog-analytics"></a>Definire le :::no-loc text="Microsoft Teams Rooms"::: visualizzazioni in:::no-loc text="Log Analytics":::
 <a name="Define_Views"> </a>
 
-Dopo la raccolta dei dati e i campi personalizzati, è possibile usare la finestra di progettazione di visualizzazione per sviluppare un dashboard contenente vari riquadri per monitorare gli eventi di Microsoft teams rooms. Usare la finestra di progettazione di visualizzazione per creare i riquadri seguenti. Per altre informazioni, vedere [creare visualizzazioni personalizzate tramite la finestra di progettazione di visualizzazione in analisi log](https://docs.microsoft.com/azure/azure-monitor/platform/view-designer)
+Dopo la raccolta dei dati e i campi personalizzati, è possibile usare la finestra di progettazione di visualizzazione per sviluppare un dashboard contenente :::no-loc text="Microsoft Teams Rooms"::: diversi riquadri per monitorare gli eventi. Usare la finestra di progettazione di visualizzazione per creare i riquadri seguenti. Per altre informazioni, vedere [creare visualizzazioni personalizzate tramite la finestra di progettazione :::no-loc text="Log Analytics"::: di visualizzazione in](https://docs.microsoft.com/azure/azure-monitor/platform/view-designer)
 
 > [!NOTE]
 > I passaggi precedenti di questa guida devono essere stati completati per il corretto funzionamento dei riquadri del dashboard.
 
 ### <a name="create-a-microsoft-teams-rooms-dashboard-by-using-the-import-method"></a>Creare un dashboard di Microsoft teams Rooms usando il metodo Import
 
-È possibile importare un dashboard di Microsoft teams Rooms e avviare il monitoraggio rapido dei dispositivi. Eseguire la procedura seguente per importare il Dashboard:
+È possibile importare un :::no-loc text="Microsoft Teams Rooms"::: dashboard e avviare il monitoraggio rapido dei dispositivi. Eseguire la procedura seguente per importare il Dashboard:
 
-1.  Ottenere il file del dashboard di [SkypeRoomSystems_v2. omsview](https://go.microsoft.com/fwlink/?linkid=835675) .
-2.  Accedere a [Microsoft Azure Portal](https://portal.azure.com) e accedere a log Analytics e selezionare l'area di lavoro.
+1.  Ottenere il file del dashboard [SkypeRoomSystems_v2. omsview](https://go.microsoft.com/fwlink/?linkid=835675) .
+2.  Accedere al [ :::no-loc text="Microsoft Azure"::: portale](https://portal.azure.com) e :::no-loc text="Log Analytics"::: selezionare l'area di lavoro.
 3.  Aprire **Progettazione visualizzazioni**.
 4.  Selezionare **Importa**e quindi selezionare il file **SkypeRoomSystems_v2. omsview** .
 5.  Selezionare **Salva**.
@@ -182,7 +182,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 
 1.  Aprire **Progettazione visualizzazioni**.
 2.  Selezionare **riquadro Panoramica**e quindi selezionare **due numeri** dalla raccolta.
-3.  Assegnare un nome al riquadro **Microsoft teams Rooms**.
+3.  Assegnare un nome **:::no-loc text="Microsoft Teams Rooms":::** al riquadro.
 4.  Definire il **primo riquadro**:<br>
     **Legenda:** Dispositivi che hanno inviato un battito cardiaco almeno una volta nell'ultimo mese<br>
     **Query:**```Event | where EventLog == "Skype Room System" and TimeGenerated > ago(30d) | summarize TotalSRSDevices = dcount(Computer)```
@@ -246,7 +246,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     ```search {selected item} | where EventLog == "Skype Room System" and EventID == 3001 and EventLevelName == "Error" | summarize arg_max(TimeGenerated, *) by Computer | project TimeGenerated, Computer, SRSAlias_CF, SRSAppVersion_CF, SRSOSVersion_CF, SRSOSLongVersion_CF, SRSIPv4Address_CF, SRSIPv6Address_CF, SRSOperationName_CF, SRSOperationResult_CF, SRSResourceState_CF, SRSConfMicrophoneStatus_CF, SRSConfSpeakerStatus_CF, SRSDefaultSpeakerStatus_CF, SRSCameraStatus_CF, SRSFORDStatus_CF, SRSMotionSensorStatus_CF, SRSHDMIIngestStatus_CF, SRSEventDescription_CF | sort by TimeGenerated desc```
 7.  Selezionare **applica**e quindi **Chiudi**.
 
-### <a name="create-a-tile-that-displays-microsoft-teams-rooms-operating-system-versions"></a>Creare un riquadro in cui sono visualizzate le versioni del sistema operativo Microsoft teams rooms
+### <a name="create-a-tile-that-displays-no-loc-textmicrosoft-teams-rooms-operating-system-versions"></a>Creare un riquadro che visualizza :::no-loc text="Microsoft Teams Rooms"::: le versioni del sistema operativo
 
 1.  Selezionare **elenco & ciambella** nella raccolta e quindi aggiungere un nuovo riquadro.
 2.  Definire le proprietà **generali** :<br>
@@ -270,11 +270,11 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     ```search {selected item} | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize arg_max(TimeGenerated, *) by Computer | project TimeGenerated, Computer, SRSDisplayName_CF, SRSAlias_CF, SRSAppVersion_CF, SRSOSVersion_CF, SRSOSLongVersion_CF, SRSIPv4Address_CF, SRSIPv6Address_CF, SRSOperationName_CF, SRSOperationResult_CF, SRSResourceState_CF, SRSEventDescription_CF```
 8.  Selezionare **applica** e quindi **Chiudi**.
 
-### <a name="create-a-tile-that-displays-microsoft-teams-rooms-application-versions"></a>Creare un riquadro che visualizza le versioni delle applicazioni di Microsoft teams rooms
+### <a name="create-a-tile-that-displays-no-loc-textmicrosoft-teams-rooms-application-versions"></a>Creare un riquadro che visualizza :::no-loc text="Microsoft Teams Rooms"::: le versioni delle applicazioni
 
 1.  Selezionare **elenco & ciambella** nella raccolta e quindi aggiungere un nuovo riquadro.
 2.  Definire le proprietà **generali** :<br>
-    **Titolo del gruppo:** Dettagli dell'applicazione Microsoft teams rooms<br>
+    **Titolo del gruppo:** :::no-loc text="Microsoft Teams Rooms"::: dettagli applicazione<br>
     **Nuovo gruppo:** Selezionato
 3.  Definire le proprietà dell' **intestazione** :<br>
     **Titolo:** Versioni delle applicazioni<br>
@@ -333,29 +333,29 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 
 Ora hai completato la creazione delle visualizzazioni.
 
-## <a name="configure-alerts-in-azure-monitor"></a>Configurare gli avvisi in Azure monitor
+## <a name="configure-alerts-in-no-loc-textazure-monitor"></a>Configurare gli avvisi in:::no-loc text="Azure Monitor":::
 <a name="Alerts"> </a>
 
-Azure monitor può generare avvisi per avvisare gli amministratori quando una console di Microsoft teams Rooms incontra un problema.
+:::no-loc text="Azure Monitor":::può generare avvisi per avvisare gli amministratori quando una :::no-loc text="Microsoft Teams Rooms"::: console incontra un problema.
 
-Azure Monitor include un meccanismo di avviso incorporato che viene eseguito tramite ricerche di log pianificate a intervalli regolari. Se i risultati della ricerca del log corrispondono a determinati criteri specifici, viene creato un record di avviso.
+:::no-loc text="Azure Monitor":::include un meccanismo di avviso incorporato che viene eseguito tramite ricerche di log pianificate a intervalli regolari. Se i risultati della ricerca del log corrispondono a determinati criteri specifici, viene creato un record di avviso.
 
 La regola può quindi eseguire automaticamente una o più azioni per avvisare in modo proattivo l'avviso o richiamare un altro processo. Le opzioni possibili con gli avvisi sono:
 -   Invio di un messaggio di posta elettronica
 -   Richiamo di un processo esterno tramite una richiesta POST HTTP
--   Avvio di un Runbook nel servizio di automazione di Azure
+-   Avvio di un Runbook :::no-loc text="Azure Automation"::: in servizio
 
-Per altre informazioni sugli avvisi in Azure monitor, vedere [registrare gli avvisi in Azure monitor](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-unified-log) .
+Per ulteriori informazioni sugli avvisi in :::no-loc text="Azure Monitor":::, vedere registrare gli [avvisi :::no-loc text="Azure Monitor"::: ](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-unified-log) .
 
 > [!NOTE]
-> Gli esempi seguenti inviano avvisi tramite posta elettronica quando un dispositivo Microsoft teams Rooms genera un errore hardware o di un'applicazione.
+> Gli esempi seguenti inviano avvisi tramite posta :::no-loc text="Microsoft Teams Rooms"::: elettronica quando un dispositivo genera un errore hardware o dell'applicazione.
 
-### <a name="configure-an-email-alert-for-microsoft-teams-rooms-hardware-issues"></a>Configurare un avviso di posta elettronica per problemi hardware di Microsoft teams rooms
+### <a name="configure-an-email-alert-for-no-loc-textmicrosoft-teams-rooms-hardware-issues"></a>Configurare un avviso di posta :::no-loc text="Microsoft Teams Rooms"::: elettronica per problemi hardware
 
-Configurare una regola di avviso che controlli i dispositivi Microsoft teams Rooms che hanno riscontrato problemi hardware nell'ultima ora.
-1.  Accedere a [Microsoft Azure Portal](https://portal.azure.com) e accedere a log Analytics e selezionare l'area di lavoro.
+Configurare una regola di avviso che controlli :::no-loc text="Microsoft Teams Rooms"::: i dispositivi che hanno riscontrato problemi hardware nell'ultima ora.
+1.  Accedere al [ :::no-loc text="Microsoft Azure"::: portale](https://portal.azure.com) e :::no-loc text="Log Analytics"::: selezionare l'area di lavoro.
 
-2. Passare all'area di lavoro analisi log e selezionare **avvisi** e quindi **nuova regola di avviso**
+2. Passare all' :::no-loc text="Log Analytics"::: area di lavoro e selezionare **avvisi** e quindi selezionare **nuova regola di avviso**
 
 3. Selezionare **Aggiungi condizione** e quindi **Ricerca log personalizzata**
 
@@ -388,14 +388,14 @@ Configurare una regola di avviso che controlli i dispositivi Microsoft teams Roo
 8. **Personalizzare le azioni** se si vuole ignorare la riga dell'oggetto dei messaggi di posta elettronica di avviso.
 
 9. Specificare un nome e una descrizione della regola.<br>
-    **Nome regola:** Avviso di errore hardware di Microsoft teams rooms<br>
+    **Nome regola:** :::no-loc text="Microsoft Teams Rooms"::: avviso di errore hardware<br>
     **Descrizione:** Elenco dei dispositivi che hanno rilevato un problema hardware nell'ultima ora<br>
 
 10. Selezionare la gravità desiderata e verificare che la regola sia abilitata.
 
 11. Selezionare **Crea regola di avviso**.
 
-### <a name="configure-an-email-alert-for-microsoft-teams-rooms-application-issues"></a>Configurare un avviso di posta elettronica per problemi di applicazione di Microsoft teams rooms
+### <a name="configure-an-email-alert-for-no-loc-textmicrosoft-teams-rooms-application-issues"></a>Configurare un avviso di posta :::no-loc text="Microsoft Teams Rooms"::: elettronica per problemi di applicazione
 
 Ripetere la stessa procedura, ma usare la query seguente per elencare i dispositivi che hanno riscontrato problemi di applicazione nell'ultima ora.
 
@@ -411,43 +411,43 @@ Ora hai completato la definizione degli avvisi. Puoi definire altri avvisi usand
 
 Quando viene generato un avviso, viene visualizzato un messaggio di posta elettronica che elenca i dispositivi che hanno rilevato un problema entro l'ultima ora.
 
-![Esempio di messaggio di avviso di Azure monitor](../media/Deploy-Azure-Monitor-6.png "Esempio di messaggio di avviso di Azure monitor")
+! [Esempio :::no-loc text="Azure Monitor"::: di messaggio di posta elettronica Alert] (.. /media/Deploy-Azure-Monitor-6.png "messaggio :::no-loc text="Azure Monitor"::: di avviso di esempio")
 
-## <a name="configure-all-devices-for-azure-monitoring"></a>Configurare tutti i dispositivi per il monitoraggio di Azure
-<a name="configure_all_devices"></a> Una volta configurati i dashboard e gli avvisi, è possibile impostare e configurare Microsoft Monitoring Agent in tutti i dispositivi Microsoft teams Rooms per completare la distribuzione del monitoraggio.
+## <a name="configure-all-devices-for-no-loc-textazure-monitoring"></a>Configurare tutti i dispositivi per:::no-loc text="Azure Monitoring":::
+<a name="configure_all_devices"></a> Una volta configurati i dashboard e gli avvisi, è possibile impostare e :::no-loc text="Microsoft Monitoring"::: configurare Agent in :::no-loc text="Microsoft Teams Rooms"::: tutti i dispositivi per completare la distribuzione del monitoraggio.
 
-Anche se è possibile installare e configurare manualmente l'agente di monitoraggio Microsoft su ogni dispositivo, è consigliabile sfruttare gli strumenti e i metodi di distribuzione del software esistenti.
+Anche se è possibile installare e configurare :::no-loc text="Microsoft Monitoring"::: l'agente manualmente su ogni dispositivo, è consigliabile sfruttare gli strumenti e i metodi di distribuzione del software esistenti.
 
-Se si stanno costruendo i dispositivi Microsoft teams Rooms per la prima volta, è consigliabile includere i passaggi di configurazione ed esecuzione dell'agente di monitoraggio Microsoft come parte del processo di compilazione. Per altre informazioni, vedere [installare l'agente tramite la riga di comando](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-the-agent-using-the-command-line).
+Se si stanno costruendo i :::no-loc text="Microsoft Teams Rooms"::: dispositivi per la prima volta, è possibile includere la procedura di :::no-loc text="Microsoft Monitoring"::: installazione e configurazione dell'agente come parte del processo di compilazione. Per altre informazioni, vedere [installare l'agente tramite la riga di comando](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#install-the-agent-using-the-command-line).
 
-### <a name="deploying-microsoft-monitoring-agent-by-using-a-group-policy-object-gpo"></a>Distribuzione di agente di monitoraggio Microsoft tramite un oggetto Criteri di gruppo
+### <a name="deploying-no-loc-textmicrosoft-monitoring-agent-by-using-a-group-policy-object-gpo"></a>Distribuzione :::no-loc text="Microsoft Monitoring"::: di un agente tramite un oggetto Criteri di gruppo
 
-Se sono già stati distribuiti i dispositivi di Microsoft teams Rooms prima di implementare il monitoraggio di Azure, è possibile usare lo script fornito per configurare gli agenti e configurarli usando gli oggetti Criteri di gruppo di Active Directory.
+Se i :::no-loc text="Microsoft Teams Rooms"::: dispositivi sono già stati distribuiti prima di :::no-loc text="Azure Monitoring":::implementarli, è possibile usare lo script specificato per configurare gli agenti e configurarli tramite gli oggetti Criteri di :::no-loc text="Active Directory"::: gruppo.
 
 1.  Creare un percorso di rete condiviso e concedere l'accesso in lettura al gruppo **Domain Computers** .
 
-2.  Scaricare la versione a 64 bit dell'agente di monitoraggio Microsoft per Windows da<https://go.microsoft.com/fwlink/?LinkID=517476>
+2.  Scaricare la versione a 64 bit dell' :::no-loc text="Microsoft Monitoring"::: agente da :::no-loc text="Windows":::<https://go.microsoft.com/fwlink/?LinkID=517476>
 
 3.  Estrarre il contenuto del pacchetto di installazione nella condivisione di rete.
     1.  Aprire una finestra del prompt dei comandi e quindi eseguire **MMASetup-amd64. exe/c**
     2.  Specifica la condivisione appena creata ed Estrai il contenuto.
 
-4.  Creare un nuovo oggetto Criteri di gruppo e assegnarlo all'unità organizzativa in cui si trovano gli account del computer di Microsoft teams rooms.
+4.  Creare un nuovo oggetto Criteri di gruppo e assegnarlo all'unità organizzativa in :::no-loc text="Microsoft Teams Rooms"::: cui si trovano gli account del computer.
 
 5.  Configurare i criteri di esecuzione di PowerShell:
-    1.  Modificare l'oggetto Criteri di gruppo appena creato e passare a criteri \\ \\ di configurazione del \\ computer modelli \\ amministrativi di Windows Components Windows PowerShell
+    1.  Modificare l'oggetto Criteri di gruppo appena creato e passare a componenti \\ \\ :::no-loc text="Windows"::: \\ dei \\ modelli amministrativi di criteri di configurazione del computer:::no-loc text="Windows PowerShell":::
     2.  Abilitare l' **esecuzione attiva dello script** e impostare i **criteri di esecuzione** per consentire gli **script locali**.
 
 6.  Configurare lo script di avvio:
     1.  Copiare lo script seguente e salvarlo come Install-MMAgent. ps1.
     2.  Modificare i parametri WorkspaceId, WorkspaceKey e SetupPath in base alla configurazione.
-    3.  Modificare lo stesso oggetto Criteri di gruppo e passare a criteri \\ \\ di configurazione del \\ computer script delle impostazioni di Windows (avvio/arresto)
+    3.  Modificare lo stesso oggetto Criteri di gruppo e passare a script \\ di \\ :::no-loc text="Windows"::: impostazioni \\ dei criteri di configurazione del computer (avvio/arresto)
     4.  Fare doppio clic per selezionare **avvio**e quindi selezionare **script di PowerShell**.
     5.  Selezionare **Mostra file**e quindi copiare il file **Install-mmagent. ps1** in tale cartella.
     6.  Selezionare **Aggiungi**e quindi **Sfoglia**.
     7.  Selezionare lo script ps1 appena copiato.
 
-7.  I dispositivi Microsoft teams Rooms devono installare e configurare l'agente di monitoraggio Microsoft con il secondo riavvio.
+7.  :::no-loc text="Microsoft Teams Rooms":::i dispositivi devono installare e configurare :::no-loc text="Microsoft Monitoring"::: l'agente con il secondo riavvio.
 
 ```
 # Install-MMAgent.ps1
@@ -492,18 +492,18 @@ Stop-Transcript
 ```
 
 > [!NOTE]
-> È possibile fare riferimento all'articolo [gestione e manutenzione dell'agente analisi log](https://docs.microsoft.com/azure/azure-monitor/platform/agent-manage) quando è necessario riconfigurare un agente, spostarlo in un'area di lavoro diversa o modificare le impostazioni del proxy dopo l'installazione iniziale.
+> È possibile fare riferimento all'articolo [gestione e manutenzione dell' :::no-loc text="Log Analytics"::: agente](https://docs.microsoft.com/azure/azure-monitor/platform/agent-manage) quando è necessario riconfigurare un agente, spostarlo in un'area di lavoro diversa o modificare le impostazioni del proxy dopo l'installazione iniziale.
 
 ## <a name="additional-solutions"></a>Soluzioni aggiuntive
 <a name="Solutions"> </a>
 
-Azure monitor offre soluzioni di gestione predefinite tramite la [raccolta](https://docs.microsoft.com/azure/azure-monitor/insights/solutions) soluzioni per aiutarti a monitorare ulteriormente l'ambiente. Ti consigliamo vivamente di aggiungere la [gestione degli avvisi](https://docs.microsoft.com/azure/azure-monitor/platform/alert-management-solution) e le soluzioni per [l'integrità dell'agente analisi di Azure log](https://docs.microsoft.com/azure/azure-monitor/insights/solution-agenthealth) anche all'area di lavoro.
+:::no-loc text="Azure Monitor":::fornisce soluzioni di gestione predefinite tramite la [raccolta](https://docs.microsoft.com/azure/azure-monitor/insights/solutions) soluzioni per consentire di monitorare ulteriormente l'ambiente. Ti consigliamo vivamente di aggiungere soluzioni per la [gestione degli avvisi](https://docs.microsoft.com/azure/azure-monitor/platform/alert-management-solution) e [ :::no-loc text="Azure Log Analytics"::: l'integrità degli agenti](https://docs.microsoft.com/azure/azure-monitor/insights/solution-agenthealth) anche all'area di lavoro.
 
 > [!NOTE]
-> La soluzione per l'integrità dell'agente consente di identificare gli agenti di monitoraggio Microsoft obsoleti o interrotti all'interno dell'ambiente e la soluzione di gestione degli avvisi fornisce informazioni dettagliate sulle segnalazioni che sono state generate entro un determinato periodo.
+> La soluzione per l'integrità dell'agente può aiutare a identificare gli agenti :::no-loc text="Microsoft Monitoring"::: obsoleti o interrotti all'interno dell'ambiente e la soluzione di gestione degli avvisi fornisce informazioni dettagliate sugli avvisi generati entro un determinato periodo.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificare la gestione di Microsoft teams Rooms con Azure monitor](azure-monitor-plan.md)
+[Pianificare :::no-loc text="Microsoft Teams Rooms"::: la gestione con:::no-loc text="Azure Monitor":::](azure-monitor-plan.md)
 
-[Gestire i dispositivi Microsoft teams Rooms con Azure monitor](azure-monitor-manage.md)
+[Gestire :::no-loc text="Microsoft Teams Rooms"::: i dispositivi con:::no-loc text="Azure Monitor":::](azure-monitor-manage.md)

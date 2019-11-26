@@ -14,12 +14,29 @@ ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 ms.collection:
 - M365-collaboration
 description: Leggere questo argomento per informazioni sulla distribuzione di sale Microsoft teams su distribuzioni su larga scala.
-ms.openlocfilehash: 2bd78bd737622515ff0722aa3635cf1ebcc83a29
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+no-loc:
+- Microsoft
+- Microsoft Corporation
+- Microsoft Teams Rooms
+- Microsoft Teams Room
+- System Center
+- Configuration Manager
+- Windows
+- Surface
+- Surface Pro
+- Windows PE
+- Windows 10
+- Windows 10 Enterprise
+- Azure
+- Azure Monitor
+- Log Analytics
+- Operations Management Suite
+ms.openlocfilehash: d116ea000bc18bf0e9c017b67bfa104dcfa29795
+ms.sourcegitcommit: 000957709b841ce55a6813ccc2fbe745b1a9295b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573628"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39218033"
 ---
 # <a name="deploy-microsoft-teams-rooms-by-using-system-center-configuration-manager"></a>Distribuire le sale di Microsoft teams tramite System Center Configuration Manager
 
@@ -633,7 +650,7 @@ Puoi usare le sequenze di attività con System Center Configuration Manager per 
        -   Modificare questo passaggio e aggiornare i parametri della riga di comando per specificare l' **ID area** di lavoro e la **chiave dell'area di lavoro**.
        -   Per altre informazioni su come ottenere l'ID area di lavoro di Operations Management Suite e la chiave primaria, vedere [configurare i dispositivi di test per il monitoraggio di Azure](azure-monitor-deploy.md#configure-test-devices-for-azure-monitoring) .
        -   Verificare che il **Pacchetto SRS V2-Microsoft Monitoring Agent** e **disabilitare il reindirizzamento del file System di 64 bit** siano selezionati.
-       -   Per altre informazioni sul monitoraggio dell'integrità della distribuzione di Microsoft teams rooms, vedere Pianificare la gestione delle sale di Microsoft teams [con Azure monitor](azure-monitor-plan.md), [distribuire Gestione di Microsoft teams Rooms con Azure monitor](azure-monitor-deploy.md) e [gestire Microsoft Dispositivi teams Rooms con Azure monitor](azure-monitor-manage.md).
+       -   Per altre informazioni sul monitoraggio dell'integrità della distribuzione di Microsoft teams rooms, vedere [pianificare la gestione di Microsoft teams Rooms con Azure monitor](azure-monitor-plan.md), [distribuire Gestione di Microsoft teams Rooms con Azure monitor](azure-monitor-deploy.md) e [gestire i dispositivi Microsoft teams Rooms con Azure monitor](azure-monitor-manage.md).
 
    11. **Copiare i file di configurazione di SRS V2**: in questo passaggio vengono copiati i file di installazione e configurazione necessari dal kit di distribuzione di Microsoft teams Rooms nel disco rigido locale. Per questo passaggio non è necessario alcun adattamento.
        -   Verificare che il **pacchetto di applicazione SRS V2-SRS** e **disabilitare il reindirizzamento del file System di 64 bit** siano selezionati.
@@ -742,8 +759,8 @@ Il file SMSTS. log viene archiviato in uno di un certo numero di percorsi, a sec
 | **Fase di distribuzione**                                                            | **Percorso log sequenza attività**                         |
 |---------------------------------------------------------------------------------|----------------------------------------------------|
 | WinPE, prima del formato HDD                                                        | X:\\Windows\\temp\\smstslog\\Smsts. log             |
-| WinPE, dopo il formato HDD                                                         | C:\\_SMSTaskSequence\\logs\\Smstslog\\Smsts. log    |
-| Sistema operativo distribuito prima dell'installazione dell'agente Configuration Manager | c:\\_SMSTaskSequence\\logs\\Smstslog\\Smsts. log    |
+| WinPE, dopo il formato HDD                                                         | C:\\_SMSTaskSequence\\log\\Smstslog\\Smsts. log    |
+| Sistema operativo distribuito prima dell'installazione dell'agente Configuration Manager | c:\\_SMSTaskSequence\\log\\Smstslog\\Smsts. log    |
 | Sistema operativo e agente Configuration Manager distribuito                   | % WINDIR%\\system32\\CCM\\logs\\Smstslog\\Smsts. log |
 | Esecuzione della sequenza di attività completata                                                | % WINDIR%\\system32\\CCM\\logs\\Smsts. log           |
 
