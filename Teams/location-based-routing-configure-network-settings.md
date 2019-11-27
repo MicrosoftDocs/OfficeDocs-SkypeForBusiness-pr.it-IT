@@ -1,9 +1,8 @@
 ---
-title: Configurare le impostazioni di rete per il routing basato sulla posizione
+title: Configurare le impostazioni di rete per l'instradamento basato sulla posizione
 author: LanaChin
 ms.author: v-lanac
 manager: serdars
-ms.date: 2/1/2019
 ms.topic: article
 ms.reviewer: roykuntz
 audience: admin
@@ -15,96 +14,47 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 240bbce48452edf505a61830891d0fcd6a6d199d
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 18df741dad691ba24d6950f132086b1f49b40684
+ms.sourcegitcommit: 021c86bf579e315f15815dcddf232a0c651cbf6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570700"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615846"
 ---
-# <a name="configure-network-settings-for-location-based-routing"></a><span data-ttu-id="41dd8-103">Configurare le impostazioni di rete per il routing basato sulla posizione</span><span class="sxs-lookup"><span data-stu-id="41dd8-103">Configure network settings for Location-Based Routing</span></span>
+# <a name="configure-network-settings-for-location-based-routing"></a><span data-ttu-id="ace2d-103">Configurare le impostazioni di rete per l'instradamento basato sulla posizione</span><span class="sxs-lookup"><span data-stu-id="ace2d-103">Configure network settings for Location-Based Routing</span></span>
 
-> [!INCLUDE [Preview customer token](includes/preview-feature.md)] 
+> [!INCLUDE [Preview customer token](includes/preview-feature.md)]
 
-<span data-ttu-id="41dd8-104">Se non è già stato fatto, leggere il [routing basato sulla posizione del piano per il routing diretto](location-based-routing-plan.md) per esaminare gli altri passaggi che è necessario eseguire prima di configurare le impostazioni di rete per il routing basato sulla posizione.</span><span class="sxs-lookup"><span data-stu-id="41dd8-104">If you haven't already done so, read [Plan Location-Based Routing for Direct Routing](location-based-routing-plan.md) to review other steps you'll need to take before you configure network settings for Location-Based Routing.</span></span>
+<span data-ttu-id="ace2d-104">Se non è già stato fatto, leggere il [routing basato sulla posizione del piano per il routing diretto](location-based-routing-plan.md) per esaminare gli altri passaggi che è necessario eseguire prima di configurare le impostazioni di rete per il routing basato sulla posizione.</span><span class="sxs-lookup"><span data-stu-id="ace2d-104">If you haven't already done so, read [Plan Location-Based Routing for Direct Routing](location-based-routing-plan.md) to review other steps you'll need to take before you configure network settings for Location-Based Routing.</span></span>
 
-<span data-ttu-id="41dd8-105">Questo articolo descrive come configurare le impostazioni di rete per il routing basato sulla posizione.</span><span class="sxs-lookup"><span data-stu-id="41dd8-105">This article describes how to configure network settings for Location-Based Routing.</span></span> <span data-ttu-id="41dd8-106">Dopo aver distribuito il routing diretto del sistema telefonico nell'organizzazione, i passaggi successivi sono la creazione e la configurazione di aree di rete, siti di rete e subnet di rete.</span><span class="sxs-lookup"><span data-stu-id="41dd8-106">After you deploy Phone System Direct Routing in your organization, the next steps are to create and set up network regions, network sites, and network subnets.</span></span> <span data-ttu-id="41dd8-107">Per completare la procedura descritta in questo articolo, è necessario avere familiarità con i cmdlet di PowerShell.</span><span class="sxs-lookup"><span data-stu-id="41dd8-107">To complete the steps in this article, you'll need some familiarity with PowerShell cmdlets.</span></span> <span data-ttu-id="41dd8-108">Per altre informazioni, vedere [Cenni preliminari su teams PowerShell](teams-powershell-overview.md).</span><span class="sxs-lookup"><span data-stu-id="41dd8-108">To learn more, see [Teams PowerShell Overview](teams-powershell-overview.md).</span></span>
+<span data-ttu-id="ace2d-105">Questo articolo descrive come configurare le impostazioni di rete per il routing basato sulla posizione.</span><span class="sxs-lookup"><span data-stu-id="ace2d-105">This article describes how to configure network settings for Location-Based Routing.</span></span> <span data-ttu-id="ace2d-106">Dopo aver distribuito il routing diretto del sistema telefonico nell'organizzazione, i passaggi successivi sono la creazione e la configurazione di aree di rete, siti di rete e subnet di rete.</span><span class="sxs-lookup"><span data-stu-id="ace2d-106">After you deploy Phone System Direct Routing in your organization, the next steps are to create and set up network regions, network sites, and network subnets.</span></span>
 
-## <a name="define-network-regions"></a><span data-ttu-id="41dd8-109">Definire le aree di rete</span><span class="sxs-lookup"><span data-stu-id="41dd8-109">Define network regions</span></span>
- <span data-ttu-id="41dd8-110">Un'area geografica di rete interconnette varie parti di una rete in più aree geografiche.</span><span class="sxs-lookup"><span data-stu-id="41dd8-110">A network region interconnects various parts of a network across multiple geographic areas.</span></span> <span data-ttu-id="41dd8-111">Usa il cmdlet [New-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/module/skype/New-CsTenantNetworkRegion?view=skype-ps) per definire le aree di rete.</span><span class="sxs-lookup"><span data-stu-id="41dd8-111">Use the [New-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/module/skype/New-CsTenantNetworkRegion?view=skype-ps) cmdlet to define network regions.</span></span> <span data-ttu-id="41dd8-112">Tieni presente che il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o &lt;restrizioni e&gt; il parametro ID sito CentralSite è facoltativo.</span><span class="sxs-lookup"><span data-stu-id="41dd8-112">Note that the RegionID parameter is a logical name that represents the geography of the region and has no dependencies or restrictions and the CentralSite &lt;site ID&gt; parameter is optional.</span></span> 
+## <a name="define-network-regions"></a><span data-ttu-id="ace2d-107">Definire le aree di rete</span><span class="sxs-lookup"><span data-stu-id="ace2d-107">Define network regions</span></span>
 
-```
-New-CsTenantNetworkRegion -NetworkRegionID <region ID>  
-```
+<span data-ttu-id="ace2d-108">Un'area di rete contiene una raccolta di siti di rete e interconnette varie parti di una rete in più aree geografiche.</span><span class="sxs-lookup"><span data-stu-id="ace2d-108">A network region contains a collection of network sites and interconnects various parts of a network across multiple geographic areas.</span></span> <span data-ttu-id="ace2d-109">Per istruzioni su come configurare le aree di rete, vedere [gestire la topologia di rete per le caratteristiche del cloud in teams](manage-your-network-topology.md).</span><span class="sxs-lookup"><span data-stu-id="ace2d-109">For steps on how to configure network regions, go to [Manage your network topology for cloud features in Teams](manage-your-network-topology.md).</span></span>
 
-<span data-ttu-id="41dd8-113">In questo esempio creiamo un'area di rete denominata India.</span><span class="sxs-lookup"><span data-stu-id="41dd8-113">In this example, we create a network region named India.</span></span> 
-```
-New-CsTenantNetworkRegion -NetworkRegionID "India"  
-```
+## <a name="define-network-sites"></a><span data-ttu-id="ace2d-110">Definire i siti di rete</span><span class="sxs-lookup"><span data-stu-id="ace2d-110">Define network sites</span></span>
 
-## <a name="define-network-sites"></a><span data-ttu-id="41dd8-114">Definire i siti di rete</span><span class="sxs-lookup"><span data-stu-id="41dd8-114">Define network sites</span></span>
+<span data-ttu-id="ace2d-111">Un sito di rete rappresenta una posizione in cui l'organizzazione ha una sede fisica, ad esempio un ufficio, un set di edifici o un campus.</span><span class="sxs-lookup"><span data-stu-id="ace2d-111">A network site represents a location where your organization has a physical venue, such as an office, a set of buildings, or a campus.</span></span> <span data-ttu-id="ace2d-112">È necessario associare ogni sito di rete della topologia a un'area di rete.</span><span class="sxs-lookup"><span data-stu-id="ace2d-112">You must associate each network site in your topology with a network region.</span></span> <span data-ttu-id="ace2d-113">Per istruzioni su come configurare i siti di rete, vedere [gestire la topologia di rete per le caratteristiche del cloud in teams](manage-your-network-topology.md).</span><span class="sxs-lookup"><span data-stu-id="ace2d-113">For steps on how to configure network sites, see [Manage your network topology for cloud features in Teams](manage-your-network-topology.md).</span></span>
 
-<span data-ttu-id="41dd8-115">Usare il cmdlet [New-CsTenantNetworkSite](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksite?view=skype-ps) per definire i siti di rete.</span><span class="sxs-lookup"><span data-stu-id="41dd8-115">Use the [New-CsTenantNetworkSite](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksite?view=skype-ps) cmdlet to define network sites.</span></span> 
+<span data-ttu-id="ace2d-114">Una procedura consigliata per il routing basato sulla posizione consiste nel creare un sito separato per ogni posizione con connettività PSTN univoca.</span><span class="sxs-lookup"><span data-stu-id="ace2d-114">A best practice for Location-Based Routing is to create a separate site for each location that has unique PSTN connectivity.</span></span> <span data-ttu-id="ace2d-115">È possibile creare un sito abilitato per il routing basato sulla posizione o un sito non abilitato per il routing basato sulla posizione.</span><span class="sxs-lookup"><span data-stu-id="ace2d-115">You can create a site that's enabled for Location-Based Routing or a site that's not enabled for Location-Based Routing.</span></span> <span data-ttu-id="ace2d-116">Ad esempio, potresti voler creare un sito non abilitato per il routing basato sulla posizione per consentire agli utenti abilitati per il routing basato sulla posizione di effettuare chiamate PSTN quando si spostano in tale sito.</span><span class="sxs-lookup"><span data-stu-id="ace2d-116">For example, you may want to create a site that's not enabled for Location-Based Routing to allow users who are enabled for Location-Based Routing to make PSTN calls when they roam to that site.</span></span>
 
-```
-New-CsTenantNetworkSite -NetworkSiteID <site ID> -NetworkRegionID <region ID>
-```
-<span data-ttu-id="41dd8-116">In questo esempio creiamo due nuovi siti di rete, Delhi e Hyderabad, nell'area dell'India.</span><span class="sxs-lookup"><span data-stu-id="41dd8-116">In this example, we create two new network sites, Delhi and Hyderabad, in the India region.</span></span> 
-```
-New-CsTenantNetworkSite -NetworkSiteID "Delhi" -NetworkRegionID "India" 
-New-CsTenantNetworkSite -NetworkSiteID "Hyderabad" -NetworkRegionID "India" 
-```
-<span data-ttu-id="41dd8-117">Nella tabella seguente sono illustrati i siti di rete definiti in questo esempio.</span><span class="sxs-lookup"><span data-stu-id="41dd8-117">The following table shows the network sites defined in this example.</span></span> 
+## <a name="define-network-subnets"></a><span data-ttu-id="ace2d-117">Definire le subnet di rete</span><span class="sxs-lookup"><span data-stu-id="ace2d-117">Define network subnets</span></span>
 
-||<span data-ttu-id="41dd8-118">Sito 1</span><span class="sxs-lookup"><span data-stu-id="41dd8-118">Site 1</span></span> |<span data-ttu-id="41dd8-119">Sito 2</span><span class="sxs-lookup"><span data-stu-id="41dd8-119">Site 2</span></span> |
-|---------|---------|---------|
-|<span data-ttu-id="41dd8-120">ID sito</span><span class="sxs-lookup"><span data-stu-id="41dd8-120">Site ID</span></span>    |    <span data-ttu-id="41dd8-121">Sito 1 (Delhi)</span><span class="sxs-lookup"><span data-stu-id="41dd8-121">Site 1 (Delhi)</span></span>     |  <span data-ttu-id="41dd8-122">Sito 2 (Hyderabad)</span><span class="sxs-lookup"><span data-stu-id="41dd8-122">Site 2 (Hyderabad)</span></span>       |
-|<span data-ttu-id="41dd8-123">ID area</span><span class="sxs-lookup"><span data-stu-id="41dd8-123">Region ID</span></span>  |     <span data-ttu-id="41dd8-124">Regione 1 (India)</span><span class="sxs-lookup"><span data-stu-id="41dd8-124">Region 1 (India)</span></span>    |   <span data-ttu-id="41dd8-125">Regione 1 (India)</span><span class="sxs-lookup"><span data-stu-id="41dd8-125">Region 1 (India)</span></span>      |
+<span data-ttu-id="ace2d-118">Ogni subnet deve essere associata a un sito di rete specifico.</span><span class="sxs-lookup"><span data-stu-id="ace2d-118">Each subnet must be associated with a specific network site.</span></span> <span data-ttu-id="ace2d-119">È possibile associare più subnet allo stesso sito di rete, ma non è possibile associare più siti alla stessa subnet.</span><span class="sxs-lookup"><span data-stu-id="ace2d-119">You can associate multiple subnets with the same network site but you can't associate multiple sites with the same subnet.</span></span> <span data-ttu-id="ace2d-120">Per istruzioni su come configurare le subnet di rete, vedere [gestire la topologia di rete per le caratteristiche del cloud in teams](manage-your-network-topology.md).</span><span class="sxs-lookup"><span data-stu-id="ace2d-120">For steps on how to configure network subnets, go to  [Manage your network topology for cloud features in Teams](manage-your-network-topology.md).</span></span>
 
-## <a name="define-network-subnets"></a><span data-ttu-id="41dd8-126">Definire le subnet di rete</span><span class="sxs-lookup"><span data-stu-id="41dd8-126">Define network subnets</span></span>
+<span data-ttu-id="ace2d-121">Per il routing basato sulla posizione, le subnet IP nella posizione in cui i team endpoint possono connettersi alla rete devono essere definite e associate a una rete definita per applicare il bypass a pedaggio.</span><span class="sxs-lookup"><span data-stu-id="ace2d-121">For Location-Based Routing, IP subnets at the location where Teams endpoints can connect to the network must be defined and associated to a defined network to enforce toll bypass.</span></span> <span data-ttu-id="ace2d-122">Questa associazione di subnet consente il routing basato sulla posizione per individuare gli endpoint geograficamente per determinare se una determinata chiamata PSTN deve essere consentita.</span><span class="sxs-lookup"><span data-stu-id="ace2d-122">This association of subnets enables Location-Based Routing to locate the endpoints geographically to determine whether a given PSTN call should be allowed.</span></span> <span data-ttu-id="ace2d-123">Sono supportate sia le subnet IPv6 che IPv4.</span><span class="sxs-lookup"><span data-stu-id="ace2d-123">Both IPv6 and IPv4 subnets are supported.</span></span> <span data-ttu-id="ace2d-124">Per determinare se un endpoint di teams si trova in un sito, il routing basato sulla posizione controlla prima di tutto un indirizzo IPv6 corrispondente.</span><span class="sxs-lookup"><span data-stu-id="ace2d-124">When determining whether a Teams endpoint is located at a site, Location-Based Routing first checks for a matching IPv6 address.</span></span> <span data-ttu-id="ace2d-125">Se non è presente un indirizzo IPv6, il routing basato sulla posizione controlla l'indirizzo IPv4.</span><span class="sxs-lookup"><span data-stu-id="ace2d-125">If an IPv6 address isn't present, Location-Based Routing checks for an IPv4 address.</span></span>
 
-<span data-ttu-id="41dd8-127">Utilizzare il cmdlet [New-CsTenantNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksubnet?view=skype-ps) per definire le subnet di rete e associarle ai siti di rete.</span><span class="sxs-lookup"><span data-stu-id="41dd8-127">Use the [New-CsTenantNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksubnet?view=skype-ps) cmdlet to define network subnets and associate them to network sites.</span></span> <span data-ttu-id="41dd8-128">Ogni subnet interna può essere associata a un solo sito.</span><span class="sxs-lookup"><span data-stu-id="41dd8-128">Each internal subnet can only be associated with one site.</span></span> 
-```
-New-CsTenantNetworkSubnet -SubnetID <Subnet IP address> -MaskBits <Subnet bitmask> -NetworkSiteID <site ID> 
-```
-<span data-ttu-id="41dd8-129">In questo esempio creiamo un'associazione tra subnet 192.168.0.0 e il sito di rete Delhi e tra subnet 2001:4898: E8:25:844E: 926f: 85AD: dd8e e il sito di rete di Hyderabad.</span><span class="sxs-lookup"><span data-stu-id="41dd8-129">In this example, we create an association between subnet 192.168.0.0 and the Delhi network site and between subnet 2001:4898:e8:25:844e:926f:85ad:dd8e and the Hyderabad network site.</span></span>
-```
-New-CsTenantNetworkSubnet -SubnetID "192.168.0.0" -MaskBits "24" -NetworkSiteID "Delhi" 
-New-CsTenantNetworkSubnet -SubnetID "2001:4898:e8:25:844e:926f:85ad:dd8e" -MaskBits "120" -NetworkSiteID "Hyderabad" 
-```
-<span data-ttu-id="41dd8-130">La tabella seguente mostra le subnet definite in questo esempio.</span><span class="sxs-lookup"><span data-stu-id="41dd8-130">The following table shows the subnets defined in this example.</span></span> 
+## <a name="define-trusted-ip-addresses-external-subnets"></a><span data-ttu-id="ace2d-126">Definire indirizzi IP attendibili (subnet esterne)</span><span class="sxs-lookup"><span data-stu-id="ace2d-126">Define trusted IP addresses (external subnets)</span></span>
 
-||<span data-ttu-id="41dd8-131">Sito 1</span><span class="sxs-lookup"><span data-stu-id="41dd8-131">Site 1</span></span> |<span data-ttu-id="41dd8-132">Sito 2</span><span class="sxs-lookup"><span data-stu-id="41dd8-132">Site 2</span></span> |
-|---------|---------|---------|
-|<span data-ttu-id="41dd8-133">ID subnet</span><span class="sxs-lookup"><span data-stu-id="41dd8-133">Subnet ID</span></span>   |    <span data-ttu-id="41dd8-134">192.168.0.0</span><span class="sxs-lookup"><span data-stu-id="41dd8-134">192.168.0.0</span></span>     |  <span data-ttu-id="41dd8-135">2001:4898: E8:25:844E: 926f: 85AD: dd8e</span><span class="sxs-lookup"><span data-stu-id="41dd8-135">2001:4898:e8:25:844e:926f:85ad:dd8e</span></span>     |
-|<span data-ttu-id="41dd8-136">Maschera</span><span class="sxs-lookup"><span data-stu-id="41dd8-136">Mask</span></span>  |     <span data-ttu-id="41dd8-137">24</span><span class="sxs-lookup"><span data-stu-id="41dd8-137">24</span></span>    |   <span data-ttu-id="41dd8-138">120</span><span class="sxs-lookup"><span data-stu-id="41dd8-138">120</span></span>      |
-|<span data-ttu-id="41dd8-139">ID sito</span><span class="sxs-lookup"><span data-stu-id="41dd8-139">Site ID</span></span>  | <span data-ttu-id="41dd8-140">Sito (Delhi)</span><span class="sxs-lookup"><span data-stu-id="41dd8-140">Site (Delhi)</span></span> | <span data-ttu-id="41dd8-141">Sito 2 (Hyderabad)</span><span class="sxs-lookup"><span data-stu-id="41dd8-141">Site 2 (Hyderabad)</span></span> |
+<span data-ttu-id="ace2d-127">Gli indirizzi IP attendibili sono gli indirizzi IP esterni Internet della rete aziendale e vengono usati per determinare se l'endpoint dell'utente si trova all'interno della rete aziendale.</span><span class="sxs-lookup"><span data-stu-id="ace2d-127">Trusted IP addresses are the internet external IP addresses of the enterprise network and are used to determine whether the user's endpoint is inside the corporate network.</span></span> <span data-ttu-id="ace2d-128">Per istruzioni su come configurare indirizzi IP attendibili, vedere [gestire la topologia di rete per le caratteristiche del cloud in teams](manage-your-network-topology.md).</span><span class="sxs-lookup"><span data-stu-id="ace2d-128">For steps on how to configure trusted IP addresses, go to  [Manage your network topology for cloud features in Teams](manage-your-network-topology.md).</span></span>
 
-<span data-ttu-id="41dd8-142">Per più subnet, è possibile importare un file CSV usando uno script come il seguente.</span><span class="sxs-lookup"><span data-stu-id="41dd8-142">For multiple subnets, you can import a CSV file by using a script such as the following.</span></span>
-```
-Import-CSV C:\subnet.csv | foreach {New-CsTenantNetworkSubnet –SubnetID $_.SubnetID-MaskBits $_.Mask -NetworkSiteID $_.SiteID}  
-```
-<span data-ttu-id="41dd8-143">In questo esempio, il file CSV ha un aspetto simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="41dd8-143">In this example, the CSV file looks something like this:</span></span>
-```
-Identity, Mask, SiteID 
-172.11.12.0, 24, Redmond 
-172.11.13.0, 24, Chicago 
-172.11.14.0, 25, Vancouver 
-172.11.15.0, 28, Paris
-```
-## <a name="define-external-subnets"></a><span data-ttu-id="41dd8-144">Definire subnet esterne</span><span class="sxs-lookup"><span data-stu-id="41dd8-144">Define external subnets</span></span>
-<span data-ttu-id="41dd8-145">Usa il cmdlet [New-CsTenantTrustedIPAddress](https://docs.microsoft.com/powershell/module/skype/new-cstenanttrustedipaddress?view=skype-ps) per definire subnet esterne e assegnarle al tenant.</span><span class="sxs-lookup"><span data-stu-id="41dd8-145">Use the [New-CsTenantTrustedIPAddress](https://docs.microsoft.com/powershell/module/skype/new-cstenanttrustedipaddress?view=skype-ps) cmdlet to define external subnets and assign them to the tenant.</span></span> <span data-ttu-id="41dd8-146">Puoi definire un numero illimitato di subnet per un tenant.</span><span class="sxs-lookup"><span data-stu-id="41dd8-146">You can define an unlimited number of subnets for a tenant.</span></span> 
-```
-New-CsTenantTrustedIPAddress -IPAddress <External IP address> -MaskBits <Subnet bitmask> -Description <description> 
-```
-<span data-ttu-id="41dd8-147">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="41dd8-147">For example:</span></span>
-```
-New-CsTenantTrustedIPAddress -IPAddress 198.51.100.0 -MaskBits 30 -Description "Contoso address"  
-```
+<span data-ttu-id="ace2d-129">Se l'indirizzo IP esterno dell'utente corrisponde a un indirizzo IP presente nell'elenco indirizzi IP attendibili, il routing basato sulla posizione viene controllato per determinare la subnet interna in cui si trova l'endpoint dell'utente.</span><span class="sxs-lookup"><span data-stu-id="ace2d-129">If the user’s external IP address matches an IP address that's in the trusted IP address list, Location-Based Routing checks to determine the internal subnet where the user’s endpoint is located.</span></span> <span data-ttu-id="ace2d-130">Se l'indirizzo IP esterno dell'utente non corrisponde a un indirizzo IP definito nell'elenco di indirizzi IP attendibili, l'endpoint viene classificato come in una posizione sconosciuta e tutte le chiamate PSTN da o verso un utente abilitato per il routing basato sulla posizione sono bloccate.</span><span class="sxs-lookup"><span data-stu-id="ace2d-130">If the user’s external IP address doesn’t match any IP address that's defined in the trusted IP address list, the endpoint is classified as being at an unknown location and any PSTN calls to or from a user who is enabled for Location-Based Routing are blocked.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="41dd8-148">Passaggi successivi</span><span class="sxs-lookup"><span data-stu-id="41dd8-148">Next steps</span></span>
-<span data-ttu-id="41dd8-149">Accedere a [abilitare il routing basato sulla posizione per il routing diretto](location-based-routing-enable.md).</span><span class="sxs-lookup"><span data-stu-id="41dd8-149">Go to [Enable Location-Based Routing for Direct Routing](location-based-routing-enable.md).</span></span>
+## <a name="next-steps"></a><span data-ttu-id="ace2d-131">Passaggi successivi</span><span class="sxs-lookup"><span data-stu-id="ace2d-131">Next steps</span></span>
 
-### <a name="related-topics"></a><span data-ttu-id="41dd8-150">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="41dd8-150">Related topics</span></span>
-- [<span data-ttu-id="41dd8-151">Pianificare il routing basato sulla posizione per il routing diretto</span><span class="sxs-lookup"><span data-stu-id="41dd8-151">Plan Location-Based Routing for Direct Routing</span></span>](location-based-routing-plan.md)
-- [<span data-ttu-id="41dd8-152">Terminologia di routing basata sulla posizione</span><span class="sxs-lookup"><span data-stu-id="41dd8-152">Location-Based Routing terminology</span></span>](location-based-routing-terminology.md)
+<span data-ttu-id="ace2d-132">Accedere a [abilitare il routing basato sulla posizione per il routing diretto](location-based-routing-enable.md).</span><span class="sxs-lookup"><span data-stu-id="ace2d-132">Go to [Enable Location-Based Routing for Direct Routing](location-based-routing-enable.md).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="ace2d-133">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="ace2d-133">Related topics</span></span>
+
+- [<span data-ttu-id="ace2d-134">Impostazioni di rete per le funzionalità vocali di cloud in teams</span><span class="sxs-lookup"><span data-stu-id="ace2d-134">Network settings for cloud voice features in Teams</span></span>](cloud-voice-network-settings.md)
