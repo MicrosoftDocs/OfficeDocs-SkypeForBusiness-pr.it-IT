@@ -1,9 +1,8 @@
 ---
-title: Abilitare il routing basato sulla posizione per il routing diretto
+title: Abilitare l'instradamento basato sulla posizione per Instradamento diretto
 author: LanaChin
 ms.author: v-lanac
 manager: serdars
-ms.date: 2/1/2019
 ms.topic: article
 ms.reviewer: roykuntz
 ms.service: msteams
@@ -15,14 +14,14 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4acd03dfff78d5aae329492014b24e55b2f92ec9
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 615848be1f91f80b0afd06c1eaa44a4f9d7b4f63
+ms.sourcegitcommit: 021c86bf579e315f15815dcddf232a0c651cbf6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572023"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615796"
 ---
-# <a name="enable-location-based-routing-for-direct-routing"></a>Abilitare il routing basato sulla posizione per il routing diretto
+# <a name="enable-location-based-routing-for-direct-routing"></a>Abilitare l'instradamento basato sulla posizione per Instradamento diretto
 
 > [!INCLUDE [Preview customer token](includes/preview-feature.md)]
 
@@ -47,7 +46,7 @@ Questo articolo descrive come abilitare il routing basato sulla posizione per il
     ```
     Set-CsOnlinePstnUsage -Usage "Long Distance", "Local", "Internal" 
     ```
-2. Usa il cmdlet [New-CsOnlineVoiceRoutingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/new-csonlinevoiceroutingpolicy?view=skype-ps) per creare un criterio di routing vocale per associare l'utente agli usi appropriati della rete PSTN.
+2. Usa il cmdlet [New-CsOnlineVoiceRoutingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csonlinevoiceroutingpolicy?view=skype-ps) per creare un criterio di routing vocale per associare l'utente agli usi appropriati della rete PSTN.
 
     ```
     New-CsOnlineVoiceRoutingPolicy -Identity <voice routing policy ID> -Description <voice routing policy name> -OnlinePstnUsages <usages> 
@@ -161,7 +160,6 @@ In questo esempio viene impedito l'esclusione del pedaggio PSTN ai criteri di ch
 Grant-CsTeamsCallingPolicy –PolicyName “AllowCallingPreventTollBypass” -id “User1” 
 ```
 
-### <a name="related-topics"></a>Argomenti correlati
-- [Pianificare il routing basato sulla posizione per il routing diretto](location-based-routing-plan.md)
-- [Configurare le impostazioni di rete per il routing basato sulla posizione](location-based-routing-configure-network-settings.md)
-- [Terminologia di routing basata sulla posizione](location-based-routing-terminology.md)
+## <a name="related-topics"></a>Argomenti correlati
+
+- [Impostazioni di rete per le funzionalità vocali di cloud in teams](cloud-voice-network-settings.md)

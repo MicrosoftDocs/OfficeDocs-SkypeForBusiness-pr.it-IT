@@ -1,9 +1,8 @@
 ---
-title: Pianificare il routing basato sulla posizione per il routing diretto
+title: Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 author: LanaChin
 ms.author: v-lanac
 manager: serdars
-ms.date: 2/1/2019
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
@@ -15,14 +14,14 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3c11d43f8fcf5418d27ca26e648291969779a8bf
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 429ed4dcd2996c404b47839de036972d44cc0d26
+ms.sourcegitcommit: 021c86bf579e315f15815dcddf232a0c651cbf6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570689"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615816"
 ---
-# <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare il routing basato sulla posizione per il routing diretto
+# <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
 > [!INCLUDE [Preview customer token](includes/preview-feature.md)]
 
@@ -32,7 +31,7 @@ In alcuni paesi e aree geografiche è vietato aggirare il provider PSTN (Public 
 
 In questa sezione verrà visualizzata una panoramica del routing basato sulla posizione e delle indicazioni utili per pianificare la pianificazione. Quando si è pronti per applicare e abilitare il routing basato sulla posizione, vedere:
 - [Distribuire le impostazioni di rete per il routing basato sulla posizione](location-based-routing-configure-network-settings.md)
-- [Abilitare il routing basato sulla posizione per il routing diretto](location-based-routing-enable.md)
+- [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
 
 Il routing basato sulla posizione è una caratteristica che consente di limitare l'esclusione dei pedaggi in base ai criteri e alla posizione geografica dell'utente al momento della chiamata PSTN in ingresso o in uscita. 
 
@@ -49,7 +48,7 @@ Quando un utente di teams è abilitato per il routing basato sulla posizione, si
 
 Il routing basato sulla posizione usa le stesse definizioni di area di rete, sito e subnet usate da Skype for Business Server. Quando l'esclusione dei pedaggi è limitata per una posizione, un amministratore associa ogni subnet IP e ogni gateway PSTN per tale posizione a un sito di rete. La posizione di un utente è determinata dalla subnet IP a cui sono connessi gli endpoint del team dell'utente al momento di una chiamata PSTN. Un utente può avere più client di teams situati in siti diversi, in questo caso il routing basato sulla posizione impone il routing di ogni client separatamente a seconda della posizione del relativo endpoint. 
 
-Per familiarizzare con la terminologia di rete usata in questo articolo, Vedi [terminologia di routing basata sulla posizione](location-based-routing-terminology.md).
+Per familiarizzare con alcuni aspetti della terminologia di rete usati in questo articolo, vedere [impostazioni di rete per le funzionalità vocali di cloud in teams](cloud-voice-network-settings.md).
 
 ## <a name="apply-location-based-routing"></a>Applicare il routing basato sulla posizione
 
@@ -72,7 +71,7 @@ I siti di rete devono essere abilitati per il routing basato sulla posizione per
 
 ### <a name="apply-location-based-routing-at-the-pstn-gateway"></a>Applicare il routing basato sulla posizione presso il gateway PSTN 
 
-I gateway sono associati ai siti per determinare dove un utente abilitato per il routing basato sulla posizione può essere individuato quando effettua o riceve una chiamata PSTN. I gateway devono essere abilitati per il routing basato sulla posizione per assicurarsi che siano in restrizioni di esclusione dei pedaggi e che non possano essere usati dagli utenti non abilitati per il routing basato sulla posizione. Lo stesso gateway può essere associato a più siti e può essere configurato per essere abilitato per il routing basato sulla posizione o non abilitato per il routing basato sulla posizione, a seconda del sito. 
+I gateway sono associati ai siti per determinare dove un utente abilitato per il routing basato sulla posizione può essere individuato quando effettua o riceve una chiamata PSTN. I gateway devono essere abilitati per il routing basato sulla posizione per assicurarsi che siano in restrizioni di esclusione dei pedaggi e che non possano essere usati dagli utenti non abilitati per il routing basato sulla posizione. Lo stesso gateway può essere associato a più siti e può essere configurato per essere abilitato per il routing basato sulla posizione o non abilitato per il routing basato sulla posizione, a seconda del sito.
 
 ## <a name="scenarios-for-location-based-routing"></a>Scenari per il routing in base alla posizione
 
@@ -250,8 +249,10 @@ Il routing basato sulla posizione non si applica ai tipi di interazioni seguenti
 Un utente abilitato al routing basato sulla posizione su una chiamata PSTN non è autorizzato ad avviare una conferenza con un altro utente o un numero PSTN. La connessione agli operatori automatici o alle code di chiamata è consentita. Se l'utente ha una licenza per conferenze, l'utente deve avviare una conferenza con gli utenti pertinenti e chiamare la rete PSTN tramite il Bridge conferenza per avviare una conferenza telefonica.  
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 Accedere a [configurare le impostazioni di rete per il routing basato sulla posizione](location-based-routing-configure-network-settings.md).
 
-### <a name="related-topics"></a>Argomenti correlati
-- [Abilitare il routing basato sulla posizione per il routing diretto](location-based-routing-enable.md)
-- [Terminologia di routing basata sulla posizione](location-based-routing-terminology.md)
+## <a name="related-topics"></a>Argomenti correlati
+
+- [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
+- [Impostazioni di rete per le funzionalità vocali di cloud in teams](cloud-voice-network-settings.md)

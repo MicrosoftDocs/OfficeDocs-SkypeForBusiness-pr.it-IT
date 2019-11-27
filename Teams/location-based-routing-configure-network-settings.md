@@ -1,9 +1,8 @@
 ---
-title: Configurare le impostazioni di rete per il routing basato sulla posizione
+title: Configurare le impostazioni di rete per l'instradamento basato sulla posizione
 author: LanaChin
 ms.author: v-lanac
 manager: serdars
-ms.date: 2/1/2019
 ms.topic: article
 ms.reviewer: roykuntz
 audience: admin
@@ -15,96 +14,47 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 240bbce48452edf505a61830891d0fcd6a6d199d
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 18df741dad691ba24d6950f132086b1f49b40684
+ms.sourcegitcommit: 021c86bf579e315f15815dcddf232a0c651cbf6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570700"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615846"
 ---
-# <a name="configure-network-settings-for-location-based-routing"></a>Configurare le impostazioni di rete per il routing basato sulla posizione
+# <a name="configure-network-settings-for-location-based-routing"></a>Configurare le impostazioni di rete per l'instradamento basato sulla posizione
 
-> [!INCLUDE [Preview customer token](includes/preview-feature.md)] 
+> [!INCLUDE [Preview customer token](includes/preview-feature.md)]
 
 Se non è già stato fatto, leggere il [routing basato sulla posizione del piano per il routing diretto](location-based-routing-plan.md) per esaminare gli altri passaggi che è necessario eseguire prima di configurare le impostazioni di rete per il routing basato sulla posizione.
 
-Questo articolo descrive come configurare le impostazioni di rete per il routing basato sulla posizione. Dopo aver distribuito il routing diretto del sistema telefonico nell'organizzazione, i passaggi successivi sono la creazione e la configurazione di aree di rete, siti di rete e subnet di rete. Per completare la procedura descritta in questo articolo, è necessario avere familiarità con i cmdlet di PowerShell. Per altre informazioni, vedere [Cenni preliminari su teams PowerShell](teams-powershell-overview.md).
+Questo articolo descrive come configurare le impostazioni di rete per il routing basato sulla posizione. Dopo aver distribuito il routing diretto del sistema telefonico nell'organizzazione, i passaggi successivi sono la creazione e la configurazione di aree di rete, siti di rete e subnet di rete.
 
 ## <a name="define-network-regions"></a>Definire le aree di rete
- Un'area geografica di rete interconnette varie parti di una rete in più aree geografiche. Usa il cmdlet [New-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/module/skype/New-CsTenantNetworkRegion?view=skype-ps) per definire le aree di rete. Tieni presente che il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o &lt;restrizioni e&gt; il parametro ID sito CentralSite è facoltativo. 
 
-```
-New-CsTenantNetworkRegion -NetworkRegionID <region ID>  
-```
-
-In questo esempio creiamo un'area di rete denominata India. 
-```
-New-CsTenantNetworkRegion -NetworkRegionID "India"  
-```
+Un'area di rete contiene una raccolta di siti di rete e interconnette varie parti di una rete in più aree geografiche. Per istruzioni su come configurare le aree di rete, vedere [gestire la topologia di rete per le caratteristiche del cloud in teams](manage-your-network-topology.md).
 
 ## <a name="define-network-sites"></a>Definire i siti di rete
 
-Usare il cmdlet [New-CsTenantNetworkSite](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksite?view=skype-ps) per definire i siti di rete. 
+Un sito di rete rappresenta una posizione in cui l'organizzazione ha una sede fisica, ad esempio un ufficio, un set di edifici o un campus. È necessario associare ogni sito di rete della topologia a un'area di rete. Per istruzioni su come configurare i siti di rete, vedere [gestire la topologia di rete per le caratteristiche del cloud in teams](manage-your-network-topology.md).
 
-```
-New-CsTenantNetworkSite -NetworkSiteID <site ID> -NetworkRegionID <region ID>
-```
-In questo esempio creiamo due nuovi siti di rete, Delhi e Hyderabad, nell'area dell'India. 
-```
-New-CsTenantNetworkSite -NetworkSiteID "Delhi" -NetworkRegionID "India" 
-New-CsTenantNetworkSite -NetworkSiteID "Hyderabad" -NetworkRegionID "India" 
-```
-Nella tabella seguente sono illustrati i siti di rete definiti in questo esempio. 
-
-||Sito 1 |Sito 2 |
-|---------|---------|---------|
-|ID sito    |    Sito 1 (Delhi)     |  Sito 2 (Hyderabad)       |
-|ID area  |     Regione 1 (India)    |   Regione 1 (India)      |
+Una procedura consigliata per il routing basato sulla posizione consiste nel creare un sito separato per ogni posizione con connettività PSTN univoca. È possibile creare un sito abilitato per il routing basato sulla posizione o un sito non abilitato per il routing basato sulla posizione. Ad esempio, potresti voler creare un sito non abilitato per il routing basato sulla posizione per consentire agli utenti abilitati per il routing basato sulla posizione di effettuare chiamate PSTN quando si spostano in tale sito.
 
 ## <a name="define-network-subnets"></a>Definire le subnet di rete
 
-Utilizzare il cmdlet [New-CsTenantNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksubnet?view=skype-ps) per definire le subnet di rete e associarle ai siti di rete. Ogni subnet interna può essere associata a un solo sito. 
-```
-New-CsTenantNetworkSubnet -SubnetID <Subnet IP address> -MaskBits <Subnet bitmask> -NetworkSiteID <site ID> 
-```
-In questo esempio creiamo un'associazione tra subnet 192.168.0.0 e il sito di rete Delhi e tra subnet 2001:4898: E8:25:844E: 926f: 85AD: dd8e e il sito di rete di Hyderabad.
-```
-New-CsTenantNetworkSubnet -SubnetID "192.168.0.0" -MaskBits "24" -NetworkSiteID "Delhi" 
-New-CsTenantNetworkSubnet -SubnetID "2001:4898:e8:25:844e:926f:85ad:dd8e" -MaskBits "120" -NetworkSiteID "Hyderabad" 
-```
-La tabella seguente mostra le subnet definite in questo esempio. 
+Ogni subnet deve essere associata a un sito di rete specifico. È possibile associare più subnet allo stesso sito di rete, ma non è possibile associare più siti alla stessa subnet. Per istruzioni su come configurare le subnet di rete, vedere [gestire la topologia di rete per le caratteristiche del cloud in teams](manage-your-network-topology.md).
 
-||Sito 1 |Sito 2 |
-|---------|---------|---------|
-|ID subnet   |    192.168.0.0     |  2001:4898: E8:25:844E: 926f: 85AD: dd8e     |
-|Maschera  |     24    |   120      |
-|ID sito  | Sito (Delhi) | Sito 2 (Hyderabad) |
+Per il routing basato sulla posizione, le subnet IP nella posizione in cui i team endpoint possono connettersi alla rete devono essere definite e associate a una rete definita per applicare il bypass a pedaggio. Questa associazione di subnet consente il routing basato sulla posizione per individuare gli endpoint geograficamente per determinare se una determinata chiamata PSTN deve essere consentita. Sono supportate sia le subnet IPv6 che IPv4. Per determinare se un endpoint di teams si trova in un sito, il routing basato sulla posizione controlla prima di tutto un indirizzo IPv6 corrispondente. Se non è presente un indirizzo IPv6, il routing basato sulla posizione controlla l'indirizzo IPv4.
 
-Per più subnet, è possibile importare un file CSV usando uno script come il seguente.
-```
-Import-CSV C:\subnet.csv | foreach {New-CsTenantNetworkSubnet –SubnetID $_.SubnetID-MaskBits $_.Mask -NetworkSiteID $_.SiteID}  
-```
-In questo esempio, il file CSV ha un aspetto simile al seguente:
-```
-Identity, Mask, SiteID 
-172.11.12.0, 24, Redmond 
-172.11.13.0, 24, Chicago 
-172.11.14.0, 25, Vancouver 
-172.11.15.0, 28, Paris
-```
-## <a name="define-external-subnets"></a>Definire subnet esterne
-Usa il cmdlet [New-CsTenantTrustedIPAddress](https://docs.microsoft.com/powershell/module/skype/new-cstenanttrustedipaddress?view=skype-ps) per definire subnet esterne e assegnarle al tenant. Puoi definire un numero illimitato di subnet per un tenant. 
-```
-New-CsTenantTrustedIPAddress -IPAddress <External IP address> -MaskBits <Subnet bitmask> -Description <description> 
-```
-Ad esempio:
-```
-New-CsTenantTrustedIPAddress -IPAddress 198.51.100.0 -MaskBits 30 -Description "Contoso address"  
-```
+## <a name="define-trusted-ip-addresses-external-subnets"></a>Definire indirizzi IP attendibili (subnet esterne)
+
+Gli indirizzi IP attendibili sono gli indirizzi IP esterni Internet della rete aziendale e vengono usati per determinare se l'endpoint dell'utente si trova all'interno della rete aziendale. Per istruzioni su come configurare indirizzi IP attendibili, vedere [gestire la topologia di rete per le caratteristiche del cloud in teams](manage-your-network-topology.md).
+
+Se l'indirizzo IP esterno dell'utente corrisponde a un indirizzo IP presente nell'elenco indirizzi IP attendibili, il routing basato sulla posizione viene controllato per determinare la subnet interna in cui si trova l'endpoint dell'utente. Se l'indirizzo IP esterno dell'utente non corrisponde a un indirizzo IP definito nell'elenco di indirizzi IP attendibili, l'endpoint viene classificato come in una posizione sconosciuta e tutte le chiamate PSTN da o verso un utente abilitato per il routing basato sulla posizione sono bloccate.
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 Accedere a [abilitare il routing basato sulla posizione per il routing diretto](location-based-routing-enable.md).
 
-### <a name="related-topics"></a>Argomenti correlati
-- [Pianificare il routing basato sulla posizione per il routing diretto](location-based-routing-plan.md)
-- [Terminologia di routing basata sulla posizione](location-based-routing-terminology.md)
+## <a name="related-topics"></a>Argomenti correlati
+
+- [Impostazioni di rete per le funzionalità vocali di cloud in teams](cloud-voice-network-settings.md)

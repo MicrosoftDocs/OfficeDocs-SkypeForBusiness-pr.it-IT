@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri delle chiamate di emergenza per la funzionalità E911 dinamica in Microsoft teams.
 f1keywords: ms.teamsadmincenter.voice.emergencycallingpolicies.overview
-ms.openlocfilehash: 4a1846217734142388fdf3466f68ccadea49c829
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 1cd358453aa349fde51e4d66de412e8f9e2b72d5
+ms.sourcegitcommit: 021c86bf579e315f15815dcddf232a0c651cbf6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37639522"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39615746"
 ---
 # <a name="manage-emergency-calling-policies-in-microsoft-teams"></a>Gestire i criteri delle chiamate di emergenza in Microsoft Teams
 
@@ -29,7 +29,7 @@ ms.locfileid: "37639522"
 
 Se l'organizzazione usa i piani di chiamata o il routing diretto del sistema telefonico distribuito, è possibile usare i criteri per le chiamate di emergenza in Microsoft teams per definire cosa succede quando un utente di Teams dell'organizzazione effettua una chiamata di emergenza. Puoi impostare gli utenti a cui inviare una notifica e il modo in cui vengono informati quando un utente a cui viene assegnato il criterio chiama i servizi di emergenza. Ad esempio, è possibile configurare le impostazioni dei criteri per comunicare automaticamente alla scrivania di sicurezza dell'organizzazione e farli ascoltare in chiamate di emergenza.  
 
-Puoi gestire i criteri delle chiamate di emergenza passando ai**criteri di emergenza** **vocale** > nell'interfaccia di amministrazione di Microsoft teams oppure usando Windows PowerShell. I criteri possono essere assegnati a utenti e [siti di rete](location-based-routing-terminology.md).
+Puoi gestire i criteri delle chiamate di emergenza passando ai**criteri di emergenza** **vocale** > nell'interfaccia di amministrazione di Microsoft teams oppure usando Windows PowerShell. I criteri possono essere assegnati a utenti e [siti di rete](cloud-voice-network-settings.md).
 
 Per gli utenti, è possibile usare il criterio globale (predefinito per l'intera organizzazione) oppure creare e assegnare criteri personalizzati. Gli utenti otterranno automaticamente il criterio globale a meno che non si creino e si assegnano criteri personalizzati. Tieni presente che puoi modificare le impostazioni nel criterio globale, ma non puoi rinominarle o eliminarle. Per i siti di rete, è possibile creare e assegnare criteri personalizzati.
 
