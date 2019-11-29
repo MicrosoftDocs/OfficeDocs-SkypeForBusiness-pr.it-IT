@@ -115,6 +115,7 @@
 ## [E-mail inviate automaticamente agli utenti in caso di modifica delle impostazioni](emails-sent-to-users-when-their-settings-change-in-teams.md) 
 ## [Consentire agli utenti di registrare il loro nome quando partecipano a una riunione](enable-users-to-record-their-name-when-they-join-a-meeting-in-teams.md)
 ## [Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni](turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md)
+## [Riunioni di Teams in browser non supportati](unsupported-browsers.md)
 ## [Configurare la condivisione desktop in Teams](configure-desktop-sharing.md)
 ## [Registrazione delle riunioni cloud di Teams](cloud-recording.md)
 ## [Usare il componente aggiuntivo Riunione di Teams in Outlook](teams-add-in-for-outlook.md)
@@ -339,7 +340,6 @@
 ### [Configurare un Session Border Controller per più tenant](direct-routing-sbc-multiple-tenants.md)
 ### [Elenco di Session Border Controller certificati per Instradamento diretto](direct-routing-border-controllers.md)
 ### Instradamento basato sulla posizione
-#### [Terminologia relativa all'instradamento basato sulla posizione](location-based-routing-terminology.md)
 #### [Pianificare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-plan.md)
 #### [Configurare le impostazioni di rete per l'instradamento basato sulla posizione](location-based-routing-configure-network-settings.md)
 #### [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
@@ -374,10 +374,15 @@
 ### [Che cosa sono i piani di chiamata?](what-are-dial-plans.md)
 ### [Creare e impostare piani di chiamata](create-and-manage-dial-plans.md)
 ### [Aggiungere e aggiornare etichette di reporting](learn-more-about-site-upload.md)
+
+## Impostazioni e topologia di rete
+### [Impostazioni di rete per le funzionalità vocali del cloud](cloud-voice-network-settings.md)
+### [Gestire la topologia di rete per le funzionalità vocali del cloud](manage-your-network-topology.md)
+
 ## Chiamate di emergenza
-### [Pianificare e configurare chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md)
+### [Panoramica](what-are-emergency-locations-addresses-and-call-routing.md)
+### [Configurare chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md)
 ### Gestire indirizzi di emergenza
-#### [Che cosa sono il routing delle chiamate, le posizioni e i luoghi di emergenza?](what-are-emergency-locations-addresses-and-call-routing.md)
 #### [Aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md)
 #### [Aggiungere, modificare o rimuovere un luogo per una posizione di emergenza per l'organizzazione](add-change-remove-emergency-place-organization.md)
 #### [Assegnare o modificare una posizione di emergenza per un utente](assign-change-emergency-location-user.md)
