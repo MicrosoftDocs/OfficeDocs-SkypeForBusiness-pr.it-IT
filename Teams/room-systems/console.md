@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: dae1bfb6-7262-4030-bf53-dc3b3fe971ea
 description: Questo articolo descrive come configurare la console Microsoft teams Rooms e le sue periferiche.
-ms.openlocfilehash: 6172e37b53934bc75ae7f5bdf848fd503ffe2e8a
-ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
+ms.openlocfilehash: fd09d7e9d70a5912469d4ed2d79a4dc8f465eeb6
+ms.sourcegitcommit: 486eaa85042670edec2231efaf7dae8fa329e852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38675774"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39665439"
 ---
 # <a name="configure-a-microsoft-teams-rooms-console"></a>Configurare una console Microsoft teams rooms
 
@@ -45,6 +45,9 @@ L'installazione dell'app console Microsoft teams Rooms richiede un dispositivo d
 
 > [!NOTE]
 > Il processo seguente è per la creazione di elementi multimediali di installazione in nuovi dispositivi Microsoft teams rooms. I dispositivi esistenti, per impostazione predefinita, vengono aggiornati automaticamente da Windows Update e Windows Store.
+
+> [!IMPORTANT]
+> Il computer Windows 10 usato per creare il supporto di installazione di Microsoft teams Rooms deve essere nella stessa versione o in quella successiva di Windows come supporto di installazione di destinazione.
   
 1. Scaricare lo [script CreateSrsMedia. ps1](https://go.microsoft.com/fwlink/?linkid=867842).
 2. Eseguire lo script CreateSrsMedia. ps1 da una richiesta elevata in un computer con Windows 10.
