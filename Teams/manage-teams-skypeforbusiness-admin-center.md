@@ -3,7 +3,6 @@ title: Gestire Teams durante la transizione alla nuova Interfaccia di amministra
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 03/08/2019
 ms.topic: article
 audience: admin
 ms.service: msteams
@@ -19,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Skype for Business Online
-ms.openlocfilehash: 0d473ffa67b21c4ec3a160a8687a1688ea1d1cf5
-ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
+ms.openlocfilehash: 3d856e0cb9792e4e83dad9daa3e0716ffd3981c8
+ms.sourcegitcommit: 57304ac641931eed87e649555fd5eb5e58732dc5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37570582"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39679246"
 ---
 <a name="manage-teams-during-the-transition-to-the-new-microsoft-teams-admin-center"></a>Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
 ======================================================
@@ -46,8 +45,8 @@ La tabella seguente identifica le sezioni dell'esperienza teams che sono state m
 |---------|---------|---------|---------|
 |Generale     |Mostra organigramma nel profilo personale        |  [TeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)       |  Tenant       |
 |Generale     |Usare Skype for business per i destinatari che non hanno team         |[TeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)         |Tenant         |
-|Integrazione della posta elettronica     |Consentire agli utenti di inviare messaggi di posta elettronica ai canali         |[TeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)         |Tenant         |
-|Integrazione della posta elettronica     |Consenti elenco mittenti         |[TeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)        |Tenant         |
+|Integrazione di e-mail     |Consentire agli utenti di inviare messaggi di posta elettronica ai canali         |[TeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)         |Tenant         |
+|Integrazione di e-mail     |Consenti elenco mittenti         |[TeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)        |Tenant         |
 |Archiviazione cloud personalizzata     |Casella         |[TeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)         |Tenant         |
 |Archiviazione cloud personalizzata     |Dropbox        |[TeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)         |Tenant         |
 |Archiviazione cloud personalizzata     |Google Drive        |[TeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)         |Tenant         |
@@ -57,7 +56,7 @@ La tabella seguente identifica le sezioni dell'esperienza teams che sono state m
 |Team e canali     |         |Reindirizza alla gestione del gruppo AAD (lo stesso dell'esperienza corrente).             |Utente          |
 |Applicazioni|Abilitare le nuove app esterne per impostazione predefinita|Impostazioni dell'app a livello di organizzazione|Tenant|
 |Applicazioni|Consentire le app esterne|Impostazioni dell'app a livello di organizzazione|Tenant|
-|Applicazioni|Consenti sideload di app esterne<sup>2</sup>|[TeamsAppSetupPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/set-csteamsappsetuppolicy?view=skype-ps)|Utente|
+|Applicazioni|Consenti sideload di app esterne<sup>2</sup>|[TeamsAppSetupPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsappsetuppolicy?view=skype-ps)|Utente|
 |Applicazioni|App predefinite<sup>3</sup>|TeamsAppPermissionPolicy|Utente|
 |Applicazioni|App esterne<sup>3</sup>|TeamsAppPermissionPolicy|Utente|
 |Chiamate e riunioni     |Consentire la pianificazione per riunioni private         |[TeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps)         |Utente          |
@@ -79,7 +78,7 @@ La tabella seguente identifica le sezioni dell'esperienza teams che sono state m
 <br><br>
 <sup>2</sup> sideload è suddiviso nel modo seguente:
 
-- Consentire a un utente di trasferire localmente le app che possono essere gestite a livello di utente in [TeamsAppSetupPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/set-csteamsappsetuppolicy?view=skype-ps).
+- Consentire a un utente di trasferire localmente le app che possono essere gestite a livello di utente in [TeamsAppSetupPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsappsetuppolicy?view=skype-ps).
 - Consenti agli utenti di un tenant di interagire con le app personalizzate che possono essere gestite a livello di tenant nelle impostazioni dell'app per l'intera organizzazione.
  
 <sup>3</sup> le app predefinite e le app esterne possono essere abilitate e disabilitate a livello di utente in TeamsAppPermissionPolicy. Inoltre, le app possono essere bloccate a livello di tenant nelle impostazioni dell'app a livello di organizzazione che sostituisce tutte le impostazioni di utenti e livelli di tenant. 
@@ -113,32 +112,3 @@ La tabella seguente mostra la posizione in cui è possibile gestire le caratteri
 ## <a name="manage-settings-after-the-migration"></a>Gestire le impostazioni dopo la migrazione
 
 Una volta completata la migrazione di queste impostazioni, le disattiveremo nell'interfaccia di amministrazione di Office 365 e nell'interfaccia di amministrazione di Skype for business, che potranno quindi essere gestite nel nuovo centro di amministrazione di Microsoft teams.
-
-
-## <a name="edu-migration-june-july-2019"></a>EDU Migration giugno-luglio 2019
-
-Durante il periodo di giugno e luglio 2019 i restanti tenant EDU verranno migrati dall'esperienza di amministrazione precedente (nell'interfaccia di amministrazione di Microsoft 365) all'interfaccia di amministrazione di teams. Controllare il centro messaggi (nell'interfaccia di amministrazione di Microsoft 365) per sapere quando verrà eseguita la migrazione. Ecco cosa si vedrà dopo la migrazione:
-
-|Sezione di teams nell'interfaccia di amministrazione di Microsoft 365  |Impostazione del nome (livello tenant)  |Criteri dell'interfaccia di amministrazione di Microsoft Teams   |Livello: tenant o utente   |
-|---------|---------|---------|---------|  
-| Messaggistica  |I proprietari possono eliminare i messaggi inviati |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-| Messaggistica | Gli utenti possono eliminare i messaggi inviati |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-| Messaggistica  | Gli utenti possono modificare i messaggi inviati |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps)  |Utente|
-| Messaggistica | Consentire agli utenti di chattare |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-| Messaggistica | Usare Giphy nelle conversazioni | [TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-| Messaggistica | Valutazione del contenuto di Giphy | [TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-| Messaggistica | Usare memi nelle conversazioni  |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-| Messaggistica | Usare gli adesivi nelle conversazioni |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-
-Ecco inoltre le impostazioni disponibili solo nell'interfaccia di amministrazione di Microsoft teams:
-
-|Impostazione del nome | Criteri dell'interfaccia di amministrazione di Microsoft Teams | Livello: tenant o utente
-|-------------|-------------------------------------|---------|
-|Consenti anteprime URL | [TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-|Consentire a un utente di rimuovere utenti da una chat di gruppo |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-|Consentire all'utilità di lettura immersiva di visualizzare i messaggi |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps)| Utente |
-|Consentire agli utenti di tradurre i messaggi |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps)| Utente |
-|Conferme di lettura | [TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-|Gli utenti possono inviare notifiche prioritarie | [TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) | Utente |
-|Creazione di messaggi vocali |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmessagingpolicy?view=skype-ps)| Utente |
-|Nei dispositivi mobili, visualizzare i canali preferiti sopra le chat recenti |[TeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmessagingpolicy?view=skype-ps)| Utente |
