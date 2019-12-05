@@ -14,19 +14,19 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0eb64afd9e226b3e59e3444b0ed15d2463902c5e
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 622a173985d68260b210d844052d3b08dc5b5b88
+ms.sourcegitcommit: b8e16703e4611ca2bde55896ec158b33be4f9ba0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569864"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39842428"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
 > [!Tip]
 > Per informazioni su come interagire con i team con Azure Active Directory (AAD), Office 365 groups, Exchange, SharePoint e OneDrive for business, vedere la sessione seguente: [fondazioni di Microsoft teams](https://aka.ms/teams-foundations)
 
-Per l'esperienza completa in teams, ogni utente deve essere abilitato per la creazione di gruppi di Exchange Online, SharePoint Online e Office 365.
+Per usufruire dell'esperienza completa di Teams, è necessario che ogni utente sia abilitato per la creazione di gruppi di Office 365, Exchange Online e SharePoint Online.
 
 Le cassette postali di Exchange degli utenti possono essere ospitate online o in locale. Alcune funzionalità richiedono tuttavia una distribuzione ibrida per essere in posizione con il tenant di Office 365.
 
@@ -41,10 +41,10 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 **Azioni supportate:**
 
-| La cassetta postale dell'utente è ospitata in: | eDiscovery| Blocco&nbsp;legale | Conservazione| MGMT per team e canali |Creare e visualizzare le riunioni| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Casella vocale |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot| 
+| La cassetta postale dell'utente è ospitata in: | eDiscovery| Blocco&nbsp;legale | Conservazione| MGMT per team e canali |Creare e visualizzare le riunioni| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot| 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
-|**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
+|**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Supporto per più paesi|
+|**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Supporto per più paesi|
 |**Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
 |**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
 
@@ -79,7 +79,7 @@ Microsoft teams funziona con diversi servizi di Office 365 per consentire agli u
 >Per l'integrazione di Exchange locale e teams, è necessario assegnare la licenza necessaria per l'utente sincronizzato di AAD.
 
 > [!IMPORTANT]
-> Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza smette di funzionare in Outlook e in altre app di Office. La presenza funziona correttamente in teams. Soluzione alternativa: per vedere la presenza in Outlook e in altre app di Office, è necessario installare Skype for business, anche se si sta usando teams in modalità **solo teams** . Microsoft è a conoscenza del problema e sta lavorando a una correzione.
+> Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza potrebbe smettere di funzionare in Outlook e in altre app di Office. La presenza funziona correttamente in teams. Per risolvere il problema, selezionare l'immagine del profilo nell'angolo in alto a destra di Microsoft teams e quindi selezionare **Impostazioni**. Nella scheda **generale** in **applicazione**Selezionare **registra teams come app di chat per Office (è necessario riavviare le applicazioni di Office)**. Dopo aver selezionato questa opzione, chiudere e riaprire tutte le app di Office, incluso Outlook. Dopo l'apertura di Outlook, le informazioni sulla presenza saranno disponibili.
 
 ## <a name="additional-considerations"></a>Considerazioni aggiuntive
 

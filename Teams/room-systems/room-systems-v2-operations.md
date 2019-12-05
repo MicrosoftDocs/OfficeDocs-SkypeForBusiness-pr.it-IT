@@ -12,12 +12,12 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: 003ede11615e42ec120d618f0a732df58d10f452
-ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
+ms.openlocfilehash: aeab9235b54138d649cee2f5e67a76a109c36c6a
+ms.sourcegitcommit: b8e16703e4611ca2bde55896ec158b33be4f9ba0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38675340"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39842478"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft teams rooms 
  
@@ -49,10 +49,10 @@ Configurare il lato anteriore della visualizzazione della sala in modalità este
 ## <a name="microsoft-teams-rooms-reset-factory-restore"></a>Reimpostazione di Microsoft teams Rooms (ripristino di fabbrica)
 <a name="Reset"> </a>
 
-Se Microsoft teams Rooms non è in esecuzione bene, potrebbe essere utile eseguire un ripristino di fabbrica. Questa operazione può essere eseguita nell'app Impostazioni nella scheda **ripristino** . sotto **Reimposta questo PC**Selezionare **inizia**e quindi **Rimuovi tutto**. Seguire le istruzioni rimanenti per reimpostare il dispositivo.
-  
+Se Microsoft teams Rooms non è in esecuzione bene, potrebbe essere utile eseguire un ripristino di fabbrica. A questo scopo, USA lo [strumento di ripristino della sala Microsoft teams](recovery-tool.md) e segui le istruzioni per il ripristino di fabbrica.
+
 > [!NOTE]
-> Si è verificato un problema noto in cui le sale di Microsoft teams possono diventare inutilizzabili se la funzione **Mantieni file-rimuove le app e le impostazioni, ma mantiene l'opzione file personali** selezionata durante il processo di ripristino di Windows. Non _usare questa_ opzione.
+> Si è verificato un problema noto in cui le sale di Microsoft teams possono diventare inutilizzabili se la funzione **Mantieni file-rimuove le app e le impostazioni, ma mantiene l'opzione file personali** selezionata durante il processo di ripristino di Windows. Non *usare questa* opzione.
   
 ## <a name="supported-remote-options"></a>Opzioni remote supportate
 <a name="RemoteOptions"> </a>

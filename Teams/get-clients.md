@@ -17,12 +17,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 112ded66b0edb3dd3bd2251663a1081cea8889b6
-ms.sourcegitcommit: 5a7e273a3636322052e4a48a5a75513cbf5abb84
+ms.openlocfilehash: 993b01e1ba362b6990c65f067ff2d63d921a1916
+ms.sourcegitcommit: 9d5a83dcb3d86f37cd7714ca92b197696681748b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39209092"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39831599"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere client per Microsoft Teams 
 
@@ -102,6 +102,11 @@ Gli amministratori IT possono usare la distribuzione gestita di teams per distri
 ### <a name="linux"></a>Linux
 
 Gli utenti saranno in grado di installare pacchetti Linux nativi `.deb` e `.rpm` formati.
+L'installazione del pacchetto DEB o RPM installerà automaticamente il repository del pacchetto
+- DEB`https://packages.microsoft.com/repos/ms-teams stable main`
+- RPM`https://packages.microsoft.com/yumrepos/ms-teams` 
+
+La chiave di firma per abilitare l'aggiornamento automatico con gestione pacchetti del sistema viene installata automaticamente. Tuttavia, può essere trovato anche in: (https://packages.microsoft.com/keys/microsoft.asc). Microsoft teams viene distribuito mensilmente e, se il repository è stato installato correttamente, il gestore di pacchetti di sistema deve gestire l'aggiornamento automatico nello stesso modo degli altri pacchetti nel sistema.
 
 > [!NOTE] 
 > Il client teams on Linux è disponibile in anteprima limitata. Inviare bug usando `Report a Problem` dall'interno del client. Per i problemi noti, vedere [problemi noti](Known-issues.md).
