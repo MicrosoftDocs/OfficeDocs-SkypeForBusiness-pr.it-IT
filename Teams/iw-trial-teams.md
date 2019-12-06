@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 21d0ff8f9cd256010bc4767cf2f6f415b1c808c7
-ms.sourcegitcommit: 57304ac641931eed87e649555fd5eb5e58732dc5
+ms.openlocfilehash: 7274669e4567be02efbd2fdeb4c6524ce6e55f38
+ms.sourcegitcommit: 96d98e145ff300833d827a7d43b4e4b0331b7538
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39679306"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871692"
 ---
 <a name="manage-the-microsoft-teams-commercial-cloud-trial-offer"></a>Gestire l'offerta Microsoft Teams Commercial Cloud Trial
 =======================================================
@@ -27,7 +27,7 @@ ms.locfileid: "39679306"
 Con Microsoft Teams Commercial Cloud Trial, agli utenti di Office 365 esistenti nell'organizzazione, che non hanno una licenza di Microsoft Teams, possono avviare un periodo di valutazione del prodotto di 1 anno. Gli amministratori possono attivare o disattivare questa funzionalità per gli utenti nell'organizzazione. 
 
 > [!IMPORTANT]
-> Microsoft Teams Commercial Cloud Trial è stato aggiornato per includere ulteriori piani di servizio per aumentare le funzionalità di Teams e ora è di proprietà e sotto il controllo dell'amministratore della fatturazione dell'organizzazione. In questo modo, la versione di valutazione è più facile da gestire e coerente con tutte le altre offerte Microsoft 365. 
+> L'offerta Microsoft Teams Commercial Cloud Trial verrà sostituita da quella Microsoft Teams Exploratory a partire da gennaio 2020. Per informazioni su questa nuova offerta, vedere [Gestire la licenza Teams Exploratory](teams-exploratory.md).
 
 ## <a name="whats-in-the-offer"></a>Contenuto dell'offerta
 
