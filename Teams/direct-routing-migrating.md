@@ -14,12 +14,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su cosa è necessario per eseguire la migrazione a routing diretto da una prospettiva di configurazione di Skype for business online e teams.
-ms.openlocfilehash: 9fb644c938c61fd9dd1c78362ad90bfe855e97ec
-ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
+ms.openlocfilehash: dd0b2cd1ac6014ea0f6c79a46314eb4e3d5e0380
+ms.sourcegitcommit: 96d98e145ff300833d827a7d43b4e4b0331b7538
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37572180"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39871712"
 ---
 # <a name="migrate-to-direct-routing"></a>Eseguire la migrazione a Instradamento diretto
 
@@ -89,6 +89,8 @@ Per altre informazioni sulla migrazione da un sistema telefonico a una connettiv
 ```
 Grant-CsVoiceRoutingPolicy -PolicyName $NULL -Identity <UPN> 
 ```
+> Se è configurato un CsVoiceRoutingPolicy globale, è consigliabile rimuovere qualsiasi utilizzo PSTN associato a questo criterio globale. 
+
 ## <a name="migrating-from-office-365-phone-system-with-on-premises-pstn-connectivity-via-cloud-connector-edition"></a>Migrazione da Office 365 Phone System con connettività PSTN locale tramite Cloud Connector Edition 
 
 Per altre informazioni sulla migrazione da un sistema telefonico a una connettività PSTN locale tramite connettore Cloud, vedere quanto segue:
