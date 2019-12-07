@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio Exchange Unified Messaging online (ExchUMO) entro il 2020 febbraio. In questo articolo vengono riepilogate le informazioni che i clienti interessati dovrebbero conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 6fe0436d0ae4df2b4eb56a3c84319770b45f3139
-ms.sourcegitcommit: b8e16703e4611ca2bde55896ec158b33be4f9ba0
+ms.openlocfilehash: 8b8a0590dd53301a93fb9a6b2ed50e0d5dc830ed
+ms.sourcegitcommit: 0f2024740e03af303efc62e7f54aa918a61ca51b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39842468"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39890580"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
@@ -99,7 +99,7 @@ Microsoft ha identificato varie distribuzioni di clienti che stanno consumando f
 
 ## <a name="auto-attendant-migration-guidelines"></a>Linee guida per la migrazione di operatore automatico
 
-Gli amministratori del tenant di Office 365 sono tenuti a ricreare gli operatori automatici di Exchange UM online nel servizio Microsoft Cloud Auto Attendant e a scambiarsi i loro numeri di telefono locali prima del 1 ° febbraio 2020, che si verifica quando il servizio di Exchange UMO sarà ritirato. Ecco le linee guida consigliate per eseguire correttamente la migrazione e testare nuovi operatori automatici cloud. Se si ha un numero elevato di operatori automatici, è possibile usare l' [operatore automatico di messaggistica unificata di Exchange per gli script di migrazione degli operatori](https://github.com/NathanJBennett/ExUMAAMigrationToCloudAA) automatici del cloud per semplificare la migrazione in blocco degli operatori automatici.
+Gli amministratori del tenant di Office 365 sono tenuti a ricreare gli operatori automatici di Exchange UM online nel servizio Microsoft Cloud Auto Attendant e a scambiarsi i loro numeri di telefono locali prima del 28 febbraio 2020, ovvero quando il servizio di Exchange UMO sarà ritirato. Ecco le linee guida consigliate per eseguire correttamente la migrazione e testare nuovi operatori automatici cloud. Se si ha un numero elevato di operatori automatici, è possibile usare l' [operatore automatico di messaggistica unificata di Exchange per gli script di migrazione degli operatori](https://github.com/NathanJBennett/ExUMAAMigrationToCloudAA) automatici del cloud per semplificare la migrazione in blocco degli operatori automatici.
 
 ### <a name="setup"></a>Configurazione
 
