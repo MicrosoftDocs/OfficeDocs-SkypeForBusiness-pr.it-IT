@@ -16,12 +16,12 @@ f1keywords:
 - ms.teamsadmincenter.dashboard.helparticle.quickstartteamsadmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 907155bea3b73252006f17a512a96123da4153e4
-ms.sourcegitcommit: ed7439d03e37c9c0184daf5215a68c5492932a83
+ms.openlocfilehash: c76a50c330a6f67a61edcb29861eecb76312f05a
+ms.sourcegitcommit: 2fd1fcb0e5944f36261e551df04819713d868a11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38290956"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886249"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -31,7 +31,9 @@ Per iniziare, guardare il breve video sulle chat, i team e i canali di Teams (4:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE476Yj]
 
-*Novità di novembre 2019*: ora si può [usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](use-advisor-teams-roll-out.md). Advisor per Teams (anteprima) guida l'implementazione di Teams. Valuta l'ambiente di Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams.
+*Novità di novembre 2019*
+ - È ora possibile [usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](use-advisor-teams-roll-out.md). Advisor per Teams (anteprima) guida l'implementazione di Teams. Valuta l'ambiente di Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams.
+ - [Canale YouTube dedicato a Microsoft Teams Essentials for IT](https://aka.ms/MicrosoftTeamsforIT), che include brevi video (8-10 minuti) per illustrare come distribuire, configurare e gestire Teams.
 
 > [!TIP]
 > È consigliabile includere nell'implementazione iniziale di Teams le app in primo piano, ad esempio Planner. Aggiungere ulteriori [app, bot e connettori](deploy-apps-microsoft-teams-landing-page.md) per incentivare l'adozione di Teams.
