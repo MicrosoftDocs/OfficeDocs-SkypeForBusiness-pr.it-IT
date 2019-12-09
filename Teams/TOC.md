@@ -880,6 +880,7 @@
 ##### [Office 365 Enterprise E5 senza Audioconferenza](teams-add-on-licensing/office-365-enterprise-e5-without-audio-conferencing.md)
 ##### [GOV, EDU e organizzazioni no profit](teams-add-on-licensing/gov-edu-and-nonprofit-organizations.md)
 ### [Gestire l'offerta Teams Commercial Trial](iw-trial-teams.md)
+### [Gestire l'esperienza di Teams Exploratory](teams-exploratory.md)
 ### [Aggiornare Teams gratuitamente alla versione in abbonamento di Office 365](upgrade-freemium.md)
 ### [Gestione delle licenze per i criteri di messaggistica](teams-add-on-licensing/pri-message.md)
 ### [Licenza utente virtuale](teams-add-on-licensing/virtual-user.md)
