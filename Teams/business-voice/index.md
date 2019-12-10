@@ -165,10 +165,10 @@ ms.locfileid: "37972337"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Documentazione della Guida</h3>
-                                                     <P><a href="https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page" target="_blank">Documenti amministrativi di Microsoft Teams</a></p>
+                                                     <P><a href="https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page" target="_blank">Documenti per gli amministratori di Microsoft Teams</a></p>
                                                      <p><a href="https://microsoftteams.uservoice.com/" target="_blank">Feedback UserVoice di Microsoft Teams</a>
                                                      <p><a href="https://support.office.com/teams" target="_blank">Documenti del client di Microsoft Teams</a>
-                                                     <P><a href="https://docs.microsoft.com/office365/admin">Documenti amministrativi di Office 365</a></p>
+                                                     <P><a href="https://docs.microsoft.com/office365/admin">Documenti per gli amministratori di Office 365</a></p>
                                                 </div>
                                             </div>
                                         </div>
