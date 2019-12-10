@@ -16,12 +16,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri di ID chiamante in Microsoft teams per modificare o bloccare l'ID chiamante degli utenti di teams nell'organizzazione.
-ms.openlocfilehash: 95d1a2e836e79158ffc6e9f48d46decca31e01ca
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: b30f2f8650d1d875c56254d99efddb2f5fdbb5d0
+ms.sourcegitcommit: 0dba0ad1f8f00415c6437cadabed0548ce3281b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37639652"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919370"
 ---
 # <a name="manage-caller-id-policies-in-microsoft-teams"></a>Gestire i criteri di ID chiamante in Microsoft Teams
 
@@ -44,7 +44,7 @@ Puoi gestire i criteri ID chiamante accedendo ai**criteri ID chiamante** **vocal
 4. Da qui scegliere le impostazioni desiderate:
 
     - **Bloccare l'ID chiamante in arrivo**: attivare questa impostazione per bloccare l'ID chiamante delle chiamate in arrivo dalla visualizzazione.
-    - **Gli utenti possono eseguire l'override del criterio ID chiamante**: attivare questa impostazione per consentire agli utenti di ignorare le impostazioni del criterio. Ciò significa che gli utenti possono scegliere se visualizzare l'ID chiamante o bloccare l'ID chiamante di una chiamata in arrivo.
+    - **Gli utenti possono eseguire l'override del criterio ID chiamante**: attivare questa impostazione per consentire agli utenti di ignorare le impostazioni dei criteri relativi alla visualizzazione del numero ai chiamanti. Ciò significa che gli utenti possono scegliere se visualizzare l'ID chiamante.
     - **Sostituisci ID chiamante**: impostare l'ID chiamante da visualizzare per gli utenti selezionando una delle opzioni seguenti:
 
         - **Numero dell'utente**: Visualizza il numero dell'utente. 

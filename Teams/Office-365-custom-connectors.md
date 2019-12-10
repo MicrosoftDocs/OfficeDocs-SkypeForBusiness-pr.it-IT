@@ -14,12 +14,12 @@ search.appverid: MET150
 description: I connettori mantengono il team aggiornato fornendo contenuti e aggiornamenti dai servizi usati di frequente direttamente in un canale.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4b1dc57bbe3d216ee779f962ef4b2fc1152e2161
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 05f892791c3f299cbd146d7a34b0062cc957486f
+ms.sourcegitcommit: dc70fd277d9542d831741e14dba9ae22367210ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569841"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909332"
 ---
 <a name="use-office-365-and-custom-connectors-in-microsoft-teams"></a>Usare Office 365 e connettori personalizzati in Microsoft Teams
 =======================================================
@@ -52,24 +52,6 @@ Attualmente è possibile aggiungere connettori usando i client desktop e Web di 
     ![Screenshot dell'interfaccia teams che mostra una conversazione in un canale.](media/Use_Office_365_and_custom_connectors_in_Microsoft_Teams_image4.png)
 
 <a name="develop-custom-connectors"></a>Sviluppare connettori personalizzati
------------------------------
+----------------------------
 
-È molto semplice sviluppare connettori personalizzati che possono essere integrati con le applicazioni line-of-business (LOB). Puoi usare il connettore **webhook in ingresso** incorporato per creare un endpoint per un canale che estrae i dati da qualsiasi applicazione usando i metodi post http.
-
-1. Aggiungere il **webhook in arrivo** come qualsiasi altro connettore.
-
-    ![Screenshot dell'opzione per aggiungere il connettore webhook in arrivo.](media/Use_Office_365_and_custom_connectors_in_Microsoft_Teams_image5.png)
-
-2. Per creare un hook, specificare un **nome**, aggiornare l'immagine di Webhook, se necessario, e fare clic su **Crea**.
-
-    ![Screenshot della pagina di configurazione per il connettore del webhook in arrivo.](media/Use_Office_365_and_custom_connectors_in_Microsoft_Teams_image6.png)
-
-3. Le applicazioni che spingono i dati su questo canale richiedono l'URL del connettore webhook. Quando si crea il webhook viene creato un URL univoco. Condividere questo URL con gli sviluppatori in modo che possano configurare le proprie applicazioni per il push dei dati, in base alle esigenze.
-
-    ![Screenshot dell'URL univoco del webhook.](media/Use_Office_365_and_custom_connectors_in_Microsoft_Teams_image7.png)
-
-4. Quando un'applicazione esterna inserisce i dati in un connettore, il messaggio viene visualizzato nell'elenco di conversazione del canale come messaggio speciale denominato messaggio della **scheda connettore** .
-
-    ![Screenshot dell'interfaccia teams che mostra un messaggio di scheda connettore.](media/Use_Office_365_and_custom_connectors_in_Microsoft_Teams_image8.png)
-
-     Gli sviluppatori possono configurare le proprie applicazioni per creare queste schede inviando una richiesta HTTP con un semplice payload JSON all'indirizzo webhook di un team, che è un URL univoco di tale endpoint fornito dalla procedura guidata. Fare in modo che gli sviluppatori facciano riferimento alla [Guida introduttiva ai connettori di Office 365 per Microsoft teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/connectors/connectors), nella rete Microsoft Developer Network, con istruzioni dettagliate e esempi di connettori. Altre risorse includono le [App Connect per i gruppi in Outlook](https://support.office.com/article/Connect-apps-to-your-groups-in-Outlook-ed0ce547-038f-4902-b9b3-9e518ae6fbab) e [Office Dev Center-Microsoft teams](https://go.microsoft.com/fwlink/?linkid=855784).
+È anche possibile creare connettori personalizzati, oltre a webhook in entrata e in uscita. Per altre informazioni, vedere la documentazione per gli [sviluppatori](/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) .

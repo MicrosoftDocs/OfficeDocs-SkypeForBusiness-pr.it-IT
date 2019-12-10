@@ -5,7 +5,6 @@ ms.author: crowe
 manager: serdars
 ms.reviewer: mikedav, roykuntz
 ms.topic: article
-ms.assetid: 2f0cfb59-1ca1-4e31-84ce-09d0b1a7ce1b
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
@@ -19,13 +18,13 @@ localization_priority: Normal
 f1keywords: ms.teamsadmincenter.voice.dialplans.overview
 ms.custom:
 - Calling Plans
-description: "Informazioni sul tipo di piani per chiamate telefoniche con chiamate PSTN disponibili in Office 365 e su come sceglierne uno per l'organizzazione.  "
-ms.openlocfilehash: 7a7f736ab701f2e87e29ee2a33b4cfbebccd7c21
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+description: "Informazioni sul tipo di piani per chiamate telefoniche (PSTN Calling dial plan) disponibili con teams e su come sceglierne uno per l'organizzazione.  "
+ms.openlocfilehash: f23dd2797f70b41a4bed8fd3ddc4bf467dd459db
+ms.sourcegitcommit: 0dba0ad1f8f00415c6437cadabed0548ce3281b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568565"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919289"
 ---
 # <a name="what-are-dial-plans"></a>Che cosa sono i piani di chiamata?
 
@@ -37,23 +36,23 @@ Per creare e gestire piani di chiamata di tenant, vedere [creare e gestire piani
 
 ## <a name="tenant-dial-plan-scope"></a>Ambito tenant del piano di chiamata
 
-L'ambito di un dial plan determina il livello gerarchico in cui è possibile applicare il dial plan. Gli ambiti sono diversi rispetto a una distribuzione locale di Skype for Business Server. I client ottengono il dial plan appropriato tramite le impostazioni di provisioning fornite automaticamente quando gli utenti accedono a teams o Skype for business online. Come amministratore, puoi gestire e assegnare livelli di ambito di dial plan usando Remote PowerShell.
+L'ambito di un dial plan determina il livello gerarchico in cui è possibile applicare il dial plan. I client ottengono il dial plan appropriato tramite le impostazioni di provisioning fornite automaticamente quando gli utenti accedono a teams. L'amministratore può gestire e assegnare livelli di ambito di dial plan usando l'interfaccia di amministrazione di Microsoft teams o Remote PowerShell.
 
-In teams e Skype for business online esistono due tipi di dial plan: ambito del servizio e tenant (per la propria organizzazione) con ambito. Viene definito un dial plan con ambito servizio per ogni paese o area geografica in cui è disponibile il sistema telefonico Office 365. A ogni utente viene assegnato automaticamente il dial plan paese di servizio che corrisponde alla posizione di utilizzo di Office 365 assegnata all'utente. Non è possibile modificare il dial plan per il paese di servizio, ma si possono creare piani di dial con ambito tenant, che aumentano il dial plan paese di servizio. Man mano che i clienti hanno effettuato il provisioning, ottengono un "piano di chiamata efficace", che è una combinazione di dial plan del paese di servizio e il dial plan del tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nei piani di chiamata del tenant che potrebbero già esistere nel dial plan paese di servizio.
+In teams sono disponibili due tipi di dial plan: con ambito di servizio e a livello di tenant (ovvero per l'organizzazione. Viene definito un dial plan con ambito servizio per ogni paese o area geografica in cui è disponibile il sistema telefonico. A ogni utente viene assegnato automaticamente il dial plan del paese di servizio che corrisponde alla posizione di utilizzo assegnata all'utente. Non è possibile modificare il dial plan per il paese di servizio, ma si possono creare piani di dial con ambito tenant, che aumentano il dial plan paese di servizio. Man mano che i clienti hanno effettuato il provisioning, ottengono un "piano di chiamata efficace", che è una combinazione di dial plan del paese di servizio e il dial plan del tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
 
-I piani di chiamata tenant si possono suddividere ulteriormente in due ambiti: l'ambito tenant e l'ambito utente. Se un tenant definisce e assegna un piano di chiamata con ambito utente, quell'utente riceverà in provisioning un piano di chiamata effettivo costituito dal piano di chiamata di servizio del Paese dell'utente e dal piano di chiamata assegnato all'utente. Se un tenant definisce un piano di chiamata con ambito tenant ma non assegna un piano di chiamata con ambito utente, quell'utente riceverà in provisioning un piano di chiamata effettivo costituito dal piano di chiamata di servizio del Paese e dal piano di chiamata tenant.
+I piani di chiamata del tenant possono essere ulteriormente suddivisi in due ambiti: tenant-scope o User-scope. Se un tenant definisce e assegna un dial plan con ambito utente, verrà eseguito il provisioning di un utente con un piano di chiamata effettivo del dial plan del paese di servizio dell'utente e del dial plan utente assegnato. Se un tenant definisce un dial plan con ambito tenant ma non assegna un dial plan con ambito utente, verrà eseguito il provisioning di un utente con un piano di chiamata effettivo del dial plan del paese di servizio dell'utente e del dial plan del tenant.
 
-Di seguito è riportato il modello di ereditarietà dei dial plan in teams e Skype for business online.
+Di seguito è riportato il modello di ereditarietà dei dial plan in teams.
 
-![Come vengono ereditati i dial plan in teams e Skype for business online](media/b2744f33-ebbd-4c23-bfba-1747312ab178.png)
+![Come vengono ereditati i dial plan in teams](media/b2744f33-ebbd-4c23-bfba-1747312ab178.png)
 
 Di seguito sono riportati i possibili piani di chiamata effettivi.
 
- **Paese di servizio** Se non si definisce un dial plan con ambito tenant e non viene assegnato un dial plan con ambito utente tenant all'utente con provisioning, l'utente riceverà un piano di chiamata effettivo mappato al paese del servizio associato alla posizione di utilizzo di Office 365.
+ **Paese di servizio** Se non si definisce un dial plan con ambito tenant e non viene assegnato un dial plan con ambito utente tenant all'utente con provisioning, l'utente riceverà un piano di chiamata effettivo mappato al paese del servizio associato alla posizione di utilizzo.
 
- **Paese del servizio globale tenant** Se un piano di chiamata utente del tenant è definito ma non è assegnato a un utente, l'utente provisioning riceverà un piano di chiamata effettivo costituito da un dial plan di tenant Unito e dal dial plan del paese di servizio associato alla posizione di utilizzo di Office 365.
+ **Paese del servizio globale tenant** Se un piano di chiamata utente del tenant è definito ma non è assegnato a un utente, l'utente provisioning riceverà un piano di chiamata effettivo costituito da un dial plan di tenant Unito e dal dial plan del paese di servizio associato alla posizione di utilizzo.
 
- **Paese del servizio utente del tenant** Se un piano di chiamata utente del tenant è definito e assegnato a un utente, l'utente provisioning riceverà un piano di chiamata effettivo costituito dal piano di dial User del tenant Unito e dal dial plan del paese di servizio associato alla posizione di utilizzo di Office 365.
+ **Paese del servizio utente del tenant** Se un piano di chiamata utente del tenant è definito e assegnato a un utente, l'utente provisioning riceverà un piano di chiamata effettivo costituito dal piano di dial User del tenant Unito e dal dial plan del paese di servizio associato alla posizione di utilizzo.
 
 Vedere [creare e gestire piani di chiamata](create-and-manage-dial-plans.md) per creare piani di chiamata del tenant.
 
@@ -77,22 +76,24 @@ Quando si crea un nuovo piano di chiamata, è necessario mettere le informazioni
 
 ### <a name="name-and-simple-name"></a>Nome e nome semplice
 
-Per i piani di chiamata utente, devi specificare un nome descrittivo che identifichi gli utenti a cui verrà assegnato il dial plan. Il nome semplice del piano di chiamata precompilato con una stringa derivata dal nome del piano di chiamata. Il campo Nome semplice è modificabile, per creare una convenzione di denominazione più descrittiva per i piani di chiamata. Il valore Nome semplice non può essere vuoto e deve essere unico. L'approccio ideale è sviluppare una convenzione di denominazione per l'intera organizzazione e quindi utilizzare questa convenzione in modo coerente in tutte le sedi e per tutti gli utenti.
+Per i piani di chiamata utente, devi specificare un nome descrittivo che identifichi gli utenti a cui verrà assegnato il dial plan. Il nome semplice dial plan viene prepopolato con una stringa derivata dal nome del dial plan. Il campo Nome semplice è modificabile, per creare una convenzione di denominazione più descrittiva per i piani di chiamata. Il valore Nome semplice non può essere vuoto e deve essere unico. L'approccio ideale è sviluppare una convenzione di denominazione per l'intera organizzazione e quindi utilizzare questa convenzione in modo coerente in tutte le sedi e per tutti gli utenti.
 
 ### <a name="description"></a>Descrizione
 
 Consigliamo di digitare il nome comune riconoscibile della posizione geografica o del gruppo di utenti a cui si applica il piano di chiamata corrispondente.
 
 ### <a name="external-access-prefix"></a>Prefisso di accesso esterno
+<a name="bkexternalprefix"> </a>
 
 È possibile specificare un prefisso di accesso esterno di un massimo di quattro caratteri (#, * e 0-9), se gli utenti hanno bisogno di comporre una o più cifre iniziali (ad esempio 9) per accedere alla linea esterna.
 
 > [!NOTE]
-> Se si specifica un prefisso di accesso esterno, non è necessario creare un'ulteriore regola di normalizzazione che comprenda il prefisso. 
+> Se si specifica un prefisso di accesso esterno, non è necessario creare un'ulteriore regola di normalizzazione che comprenda il prefisso.
 
 Vedere [creare e gestire piani di chiamata](create-and-manage-dial-plans.md) per creare piani di chiamata del tenant.
 
 ## <a name="normalization-rules"></a>Regole di normalizzazione
+<a name="bknormalizationrule"> </a>
 
 Le regole di normalizzazione definiscono come i numeri di telefono espressi in vari formati devono essere convertiti. La stessa stringa numerica può essere interpretata e tradotta in modo diverso, a seconda della posizione da cui viene composta. Le regole di normalizzazione possono essere necessarie se gli utenti devono essere in grado di comporre numeri interni o esterni abbreviati.
 
@@ -103,6 +104,7 @@ Devono essere assegnate una o più regole di normalizzazione al piano di chiamat
 Dato che qualsiasi piano di chiamata tenant viene di fatto unito al piano di chiamata di servizio del Paese di un determinato utente, è probabile che le regole di normalizzazione del piano di chiamata di servizio di un Paese debbano essere valutate per determinare quali regole di normalizzazione sono necessarie nel piano di chiamata tenant. Il cmdlet **Get-CsEffectiveTenantDialPlan** può essere utilizzato per questo scopo. Il cmdlet prende l'identità dell'utente come parametro di input e restituisce tutte le regole di normalizzazione applicabili per l'utente.
 
 ### <a name="creating-normalization-rules"></a>Creazione di regole di normalizzazione
+<a name="createrule"> </a> <a name="regularexpression"> </a>
 
 Le regole di normalizzazione usano le espressioni regolari .NET Framework per specificare modelli numerici di abbinamento che il server utilizza per tradurre le stringhe di composizione in formato E.164 allo scopo di eseguire la ricerca inversa. Possono essere create regole di normalizzazione specificando l'espressione regolare per cercare l'abbinamento e la conversione da eseguire quando si trova l'abbinamento. Terminata l'operazione, è possibile immettere un numero di prova per verificare che la regola di normalizzazione funzioni come previsto.
 
@@ -114,7 +116,7 @@ Per creare e gestire regole di normalizzazione per i piani di chiamata del tenan
 
 La tabella seguente mostra esempi di regole di normalizzazione scritte sotto forma di espressioni regolari .NET Framework. Si tratta solo di esempi, non di regole fisse di riferimento per la creazione di regole di normalizzazione.
 
- **Regole di normalizzazione con le espressioni regolari di .NET Framework**
+ **Regole di normalizzazione con le espressioni regolari di .NET Framework**<a name="#regularexpression"> </a>
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
@@ -130,8 +132,9 @@ La tabella seguente mostra esempi di regole di normalizzazione scritte sotto for
 
  **Piano di chiamata Redmond basato sulle regole di normalizzazione sopra indicate.**
 
+ La tabella seguente illustra un piano di chiamata di esempio per Redmond, Washington, Stati Uniti, in base alle regole di normalizzazione indicate nella tabella precedente.
 
-| La tabella seguente illustra un piano di chiamata di esempio per Redmond, Washington, Stati Uniti, in base alle regole di normalizzazione indicate nella tabella precedente. |
+| |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Piano di chiamata Redmond** <br/>                                                                                                                              |
 | 5digitExtension <br/>                                                                                                                                    |
@@ -140,18 +143,16 @@ La tabella seguente mostra esempi di regole di normalizzazione scritte sotto for
 | RedmondOperator <br/>                                                                                                                                    |
 
 > [!NOTE]
-> I nomi delle regole di normalizzazione mostrati nella tabella precedente non includono spazi, ma questa è solo una scelta. Il primo nome nella tabella, ad esempio, avrebbe potuto essere "5 digit extension" o "5-digit Extension" e sarebbe stato comunque valido. 
-
+> I nomi delle regole di normalizzazione visualizzati nella tabella precedente non includono spazi, ma si tratta di una scelta. Il primo nome nella tabella, ad esempio, avrebbe potuto essere "5 digit extension" o "5-digit Extension" e sarebbe stato comunque valido.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Creare e impostare piani di chiamata](create-and-manage-dial-plans.md)
 
-[Domande comuni sul trasferimento dei numeri di telefono](transferring-phone-numbers-common-questions.md)
-
 [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
 [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
