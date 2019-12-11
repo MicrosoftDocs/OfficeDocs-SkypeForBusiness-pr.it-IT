@@ -18,12 +18,12 @@ f1keywords:
 - ms.teamsadmincenter.deploymentadvisor.overview
 ms.custom: ''
 description: Usare Advisor per Teams (anteprima) per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: f7de348c6f8ca60cc1d062fce79725b4b18d0350
-ms.sourcegitcommit: 5a7e273a3636322052e4a48a5a75513cbf5abb84
+ms.openlocfilehash: 63a3ae01dbe47323fd9227e65fa8c38a2d725ddf
+ms.sourcegitcommit: dc70fd277d9542d831741e14dba9ae22367210ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39209192"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39909472"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
@@ -35,6 +35,8 @@ Advisor per Teams fa parte dell'[interfaccia di amministrazione di Teams](https:
 
 > [!IMPORTANT]
 > Advisor per Teams non è disponibile per le distribuzioni di Microsoft 365 Government - GCC High o DoD.
+
+Altre informazioni sull'Assistente per Teams nel video [Introduzione alla distribuzione e configurazione di Teams](https://youtu.be/o2mlsUubIO4?t=44) (dal minuto 0:50 a 3:15).
 
 ## <a name="using-advisor-for-teams-preview"></a>Usare Advisor per Teams (anteprima)
 
