@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 75d51a6c20593c725863632350d90e2e58626e4d
-ms.sourcegitcommit: 0f2024740e03af303efc62e7f54aa918a61ca51b
+ms.openlocfilehash: 2ac9b520334b29df8f2fc05808b32f2e73db8557
+ms.sourcegitcommit: 1448bb2e66074322b8f4bf234fce36ea9c8f9913
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39890605"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39966779"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Team per l'infrastruttura desktop virtualizzata
 
@@ -131,7 +131,7 @@ Per altre informazioni su teams e Office 365 ProPlus, vedere [come escludere tea
     - [versione a 32 bit](https://statics.teams.microsoft.com/production-windows/1.2.00.32462/Teams_windows.msi)
     - [versione a 64 bit](https://statics.teams.microsoft.com/production-windows-x64/1.2.00.32462/Teams_windows_x64.msi)
 
-    La versione minima dell'app desktop teams necessaria è la versione 1.2.00.31357.
+    La versione minima dell'app desktop teams necessaria è la versione 1.2.00.31357. Il blocco PSTN non è supportato nelle versioni precedenti
 
 2. Installare il file MSI nella VM VDI eseguendo uno dei comandi seguenti:
 

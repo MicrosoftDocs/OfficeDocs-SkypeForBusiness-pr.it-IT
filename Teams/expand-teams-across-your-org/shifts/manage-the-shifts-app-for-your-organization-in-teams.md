@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 52d4410393398e28c1f7ade4af70901703a09418
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 6bd65376be278a3d07e5a7a8c4ba69ccd5408090
+ms.sourcegitcommit: a23f45ab3a2cb7b5c279356edddf61c4030c41bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568720"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39961611"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app turni per l'organizzazione in Microsoft Teams
 
@@ -37,9 +37,7 @@ L'app turni in Microsoft teams mantiene i dipendenti di I FIRSTLINE connessi e s
 
 ## <a name="availability-of-shifts"></a>Disponibilità di turni
 
-Turni è disponibile in tutte le sottoscrizioni di Office 365 che includono teams, con un paio di eccezioni. Le eccezioni sono la community di cloud governative degli Stati Uniti (GCC) e teams free. Turni non è disponibile in Office 365 US Government o teams Free offerings.
-
-Per altre informazioni sulle licenze per i team, incluso un elenco di abbonamenti a Office 365 che includono Team, vedere [licenze di office 365 per i team](../../Office-365-licensing.md).
+Turni è disponibile in tutti gli SKU aziendali in cui è disponibile teams.
 
 ## <a name="location-of-shifts-data"></a>Posizione dei dati di turni
 

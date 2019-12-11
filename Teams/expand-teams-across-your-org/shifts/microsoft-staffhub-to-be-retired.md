@@ -1,5 +1,5 @@
 ---
-title: Microsoft StaffHub per essere ritirato
+title: Ritiro di Microsoft StaffHub
 author: LanaChin
 ms.author: v-lanac
 ms.reviewer: lisawu
@@ -15,14 +15,14 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: eeab39a68827925fa9805380763f2375910ee793
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: c4a0abc9dae0d3c5b7f78106136ceaece3472367
+ms.sourcegitcommit: a23f45ab3a2cb7b5c279356edddf61c4030c41bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568709"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39961601"
 ---
-# <a name="microsoft-staffhub-to-be-retired"></a>Microsoft StaffHub per essere ritirato
+# <a name="microsoft-staffhub-to-be-retired"></a>Ritiro di Microsoft StaffHub
 
 Efficace 31 dicembre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo.
 
@@ -64,14 +64,7 @@ L'app turni in teams è uno strumento di gestione delle pianificazioni che manti
 
 #### <a name="which-plans-is-shifts-available-in"></a>Quali piani sono disponibili in turni?
 
-Turni è disponibile come parte di Teams nei piani seguenti senza alcun costo aggiuntivo:
-
-- Office 365 Business Premium 
-- Office 365 Enterprise F1, E1, E3, E5
-- Office 365 per l'istruzione
-- Microsoft 365 F1, E1, E3, E5
-
-Per altre informazioni, vedere [disponibilità di turni](manage-the-shifts-app-for-your-organization-in-teams.md#availability-of-shifts).
+Turni è disponibile in tutti gli SKU aziendali in cui è disponibile teams.
 
 #### <a name="how-do-i-get-shifts"></a>Come si ottengono I turni? 
 
