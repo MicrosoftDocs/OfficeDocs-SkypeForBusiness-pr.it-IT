@@ -15,12 +15,12 @@ description: Informazioni su come comunicare con utenti di altre organizzazioni 
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: 39fa50868b60ce78da360d97a2fad5dff9fee09b
-ms.sourcegitcommit: 486eaa85042670edec2231efaf7dae8fa329e852
+ms.openlocfilehash: 4d5ed9c5a5a671b3461761ea206edd109df73f22
+ms.sourcegitcommit: 1448bb2e66074322b8f4bf234fce36ea9c8f9913
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39665449"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39966769"
 ---
 <a name="communicate-with-users-from-other-organizations-in-microsoft-teams"></a>Comunicare con utenti di altre organizzazioni in Microsoft Teams
 ======================================================
@@ -84,7 +84,7 @@ Se si vuole attivare l'accesso guest nell'organizzazione, iniziare con l'[Elenco
 <sup>1</sup>A condizione che l'utente sia stato aggiunto come guest e che sia stato eseguito l'accesso come guest al tenant guest.<br>
 <sup>2</sup>Solo tramite posta elettronica o indirizzo SIP (Session Initiation Protocol).<br>
 <sup>3</sup>La chat esterna (federata) è solo 1:1.<br>
-<sup>4</sup>Chat 1:1 supportata per utenti Solo Teams a utenti Solo Teams di due organizzazioni diverse. *Questa è un'anteprima o una funzionalità di rilascio anticipato.*
+<sup>4</sup>Chat 1:1 supportata per utenti Solo Teams a utenti Solo Teams di due organizzazioni diverse. 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
