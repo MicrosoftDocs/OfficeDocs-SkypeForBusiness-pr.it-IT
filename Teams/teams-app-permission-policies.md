@@ -20,12 +20,12 @@ f1keywords:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: ef70fba7c26315e1c66928722c373b383071771b
-ms.sourcegitcommit: d6a0ff7f00defda2b58726f5f0f0fac871f46ab7
+ms.openlocfilehash: 686b0bc48cd2f6df590172d53618d96ca775aae0
+ms.sourcegitcommit: 1bb776e6c03086ca997d45b9b44660c4e426e8a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37664975"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "39984536"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione delle app in Microsoft Teams
 
@@ -130,7 +130,7 @@ $members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-O
 ```
 Assegna tutti gli utenti del gruppo a un determinato criterio di autorizzazione dell'app. In questo esempio si tratta di criteri di autorizzazione delle app HR.
 ```
-$members | ForEach-Object { Grant-CsTeamsAppPermissionPolicy -PolicyName "HR App Permission Policy" -Identity $_.EmailAddress}
+$members | ForEach-Object { Grant-CsTeamsAppPermissionPolicy -PolicyName "HR App Permission Policy" -Identity $_.UserPrincipalName}
 ``` 
 A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.
 
@@ -175,4 +175,4 @@ Il portale Legacy ha consentito il controllo delle app a livello di organizzazio
 Per i criteri di autorizzazione delle app assegnati a utenti specifici, se è stata consentita un'app con un bot o una funzionalità di connessione e quindi bloccata e se l'app è consentita solo per alcuni utenti in un contesto condiviso, i membri di una chat di gruppo o un canale che non hanno l'autorizzazione per l'app  può visualizzare la cronologia e i messaggi inviati dal bot o dal connettore, ma non possono interagire con esso.
 
  ## <a name="related-topics"></a>Argomenti correlati
-- [Impostazioni di amministrazione per le app in teams](admin-settings.md)
+- [Impostazioni di amministrazione per le app in Teams](admin-settings.md)

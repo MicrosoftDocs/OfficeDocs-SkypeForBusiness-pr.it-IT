@@ -14,18 +14,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare e gestire i criteri di routing delle chiamate di emergenza per la funzionalità Dynamic E911 in Microsoft teams.
+description: Informazioni su come usare e gestire i criteri di routing delle chiamate di emergenza in Microsoft teams.
 f1keywords: ms.teamsadmincenter.voice.emergencycallroutingpolicies.overview
-ms.openlocfilehash: aed3b3d3cbd1023a3370c3c271e07a61179447da
-ms.sourcegitcommit: 021c86bf579e315f15815dcddf232a0c651cbf6b
+ms.openlocfilehash: 704becbffc0168c10ab9f357a6f6ffe8431790d2
+ms.sourcegitcommit: 5243494676ffa039fc0a32e6279e5a9a05675eec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615806"
+ms.lasthandoff: 12/12/2019
+ms.locfileid: "39986957"
 ---
 # <a name="manage-emergency-call-routing-policies-in-microsoft-teams"></a>Gestire i criteri di routing delle chiamate di emergenza in Microsoft Teams
-
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 Se è stato distribuito il routing diretto del sistema telefonico nell'organizzazione, è possibile usare i criteri di routing delle chiamate di emergenza in Microsoft teams per configurare i numeri di emergenza e specificare il modo in cui le chiamate di emergenza vengono instradate. I criteri di routing delle chiamate di emergenza determinano se i servizi di emergenza avanzati sono abilitati per gli utenti a cui sono assegnati i criteri, i numeri usati per chiamare i servizi di emergenza, ad esempio 911 negli Stati Uniti, e la modalità di routing delle chiamate ai servizi di emergenza.
 
@@ -45,6 +43,8 @@ Se i criteri di routing delle chiamate di emergenza sono stati assegnati a un si
 4. Per abilitare servizi di emergenza avanzati, attivare **servizi di emergenza avanzati**. Quando sono abilitati i servizi di emergenza avanzati, i team recuperano le informazioni sui criteri e sulla posizione dal servizio e includono tali informazioni come parte della chiamata di emergenza.
 5. Definire uno dei numeri di emergenza. Per eseguire questa operazione, in **numeri di emergenza**eseguire le operazioni seguenti:
     1. **Stringa di chiamata di emergenza**: immettere la stringa di chiamata di emergenza. Questa stringa di chiamata indica che una chiamata è una chiamata di emergenza.
+        > [!NOTE]
+        > Per il routing diretto, ci si sta allontanando dai client di teams inviando chiamate di emergenza con un "+" davanti alla stringa di chiamata di emergenza. Finché la transizione non viene completata, il modello di route vocale in modo che corrisponda a una stringa di chiamata di emergenza dovrebbe garantire che venga eseguita una corrispondenza per le stringhe che hanno e non hanno un "+" precedente, ad esempio 911 e + 911. Ad esempio, ^\+? 911 o. *.
     2. **Maschera di chiamata di emergenza**: per ogni numero di emergenza è possibile specificare zero o più maschere di chiamate di emergenza. Una maschera di chiamata è il numero che si vuole tradurre nel valore della stringa di chiamata di emergenza. In questo modo, i numeri di emergenza alternativi possono essere chiamati e i servizi di emergenza raggiungono ancora la chiamata. <br>Ad esempio, Aggiungi 112 come maschera di chiamata di emergenza, che è il numero del servizio di emergenza per la maggior parte dell'Europa e 911 come stringa di chiamata di emergenza. Un utente di teams proveniente da Europa che sta visitando potrebbe non sapere che 911 è il numero di emergenza negli Stati Uniti e quando chiama 112, viene effettuata la chiamata a 911. Per definire più maschere di chiamata, separare ogni valore con un punto e virgola. Ad esempio, 112; 212.
     3. **Uso PSTN**: selezionare l'utilizzo PSTN (Public Switched Telephone Network). L'utilizzo PSTN viene usato per determinare quale route viene usata per instradare chiamate di emergenza da utenti autorizzati ad usarle. La route associata a questo uso deve puntare a un trunk SIP dedicato alle chiamate di emergenza o a un gateway ELIN (Emergency Location Identification Number) che instrada le chiamate di emergenza al punto di risposta di sicurezza pubblica più vicino (PSAP).
 
