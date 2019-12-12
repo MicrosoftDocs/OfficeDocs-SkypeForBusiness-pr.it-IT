@@ -353,6 +353,7 @@
 #### [Prefisso internazionale per percorso multimediale](direct-routing-country-codes.md)
 #### [Script di PowerShell per testare le connessioni dei Session Border Controller](sip-tester-powershell-script.md)
 #### [Gestire le notifiche di chiamata](direct-routing-call-notifications.md)
+#### [Configurare il bot di richiamata](direct-routing-ringback-bot.md)
 
 ## Numeri di telefono
 ### [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
