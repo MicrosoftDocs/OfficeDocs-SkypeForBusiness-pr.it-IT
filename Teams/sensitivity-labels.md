@@ -15,12 +15,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come definire e usare le etichette di sensitività in Microsoft teams.
-ms.openlocfilehash: 3a0c40a51653a525587a0662949a3fdd4e63faf4
-ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
+ms.openlocfilehash: 899bf8c3dc187df6fa5e035817458a10330c66a6
+ms.sourcegitcommit: c2e315d0fcec742d2e1ba5ad90dffd1a1157a466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38653587"
+ms.lasthandoff: 12/13/2019
+ms.locfileid: "40002320"
 ---
 # <a name="sensitivity-labels-for-microsoft-teams"></a>Etichette di sensitività per Microsoft Teams
 
@@ -34,9 +34,41 @@ Le etichette di sensitività sono diverse dalle etichette di classificazione che
 
 D'altra parte, le etichette di sensitività e i relativi criteri vengono applicati automaticamente da un lato all'altro tramite una combinazione della piattaforma groups, della Security & Compliance Center e dei servizi teams. Le etichette di sensitività includono un potente supporto per l'infrastruttura per proteggere i dati sensibili dell'organizzazione.  
 
-## <a name="create-and-publish-sensitivity-labels-for-teams"></a>Creare e pubblicare etichette di sensitività per Teams
+## <a name="create-manage-and-publish-sensitivity-labels-for-teams"></a>Creare, gestire e pubblicare etichette di sensitività per i team
 
 Per informazioni su come abilitare, creare e pubblicare etichette di sensitività per i team, vedere [usare le etichette di sensitività con Microsoft teams, i gruppi di Office 365 e i siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
+>[!IMPORTANT]
+>La creazione, l'aggiornamento e l'eliminazione di etichette di sensibilità richiedono un'accurata sequenziazione con le etichette di pubblicazione agli utenti. Qualsiasi deviazione nella sequenza può causare errori permanenti per la creazione di team per tutti gli utenti. Pertanto, è fondamentale eseguire le operazioni seguenti quando si <a href="#createpublishlabels">creano e si pubblicano etichette</a>, si <a href="#modifydeletelabels">modificano ed eliminano le etichette pubblicate</a>e si <a href="#manageerrors">gestiscono gli errori di creazione del team</a>.
+
+**Creare e pubblicare etichette** <a name="createpublishlabels"></a>
+
+Quando un'etichetta viene creata e pubblicata nel centro conformità & sicurezza, può richiedere fino a 24 ore affinché l'etichetta diventi visibile nell'interfaccia di creazione di teams. Eseguire la procedura seguente per pubblicare l'etichetta per tutti gli utenti del tenant:
+1. Creare l'etichetta e pubblicarla per alcuni account utente selezionati nel tenant.
+2. Quando l'etichetta viene pubblicata, attendere 24 ore.
+3. Dopo 24 ore, provare a creare un team con l'etichetta utilizzando uno degli account utente che hanno accesso all'etichetta.
+4. Se il team ha creato correttamente il passaggio 3, procedere e pubblicare l'etichetta per gli utenti rimanenti nel tenant.
+
+**Modificare ed eliminare le etichette pubblicate** <a name="modifydeletelabels"></a>
+
+L'eliminazione o la modifica dell'etichetta mentre è associata ai criteri di sensitività può causare errori di creazione del team in tutto il tenant. Di conseguenza, prima di eliminare o modificare un'etichetta, devi prima dissociarla dai criteri associati. Eseguire la procedura seguente  
+per eliminare o modificare un'etichetta:
+1. Rimuovere l'etichetta da tutti i criteri che usano l'etichetta. In alternativa, puoi anche eliminare i criteri stessi.
+2. Quando l'etichetta viene rimossa dai criteri o i criteri vengono eliminati, attendere 48 ore prima di procedere ulteriormente.
+3. Dopo 48 ore, avviare l'interfaccia di creazione del team e verificare che l'etichetta non sia più visibile per gli utenti del tenant.
+4. A questo punto è possibile eliminare o modificare in modo sicuro l'etichetta.
+
+**Gestire gli errori** <a name="manageerrors"></a> di creazione del team
+
+Se la creazione del team inizia a non riuscire in qualsiasi momento durante l'anteprima pubblica, sono disponibili due opzioni:
+ - Assicurarsi che le etichette di sensitività non siano obbligatorie per gli utenti durante la creazione del team.
+ - Disattivare le etichette di sensitività usando gli script in [Enable this Preview](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#enable-this-preview).
+
+Tieni presente che l'impostazione EnableMIPLabels deve essere impostata su false come indicato di seguito:
+
+```
+$setting["EnableMIPLabels"] = "False"
+ ```
 
 ## <a name="using-sensitivity-labels-with-teams"></a>Uso di etichette di sensitività con teams
 

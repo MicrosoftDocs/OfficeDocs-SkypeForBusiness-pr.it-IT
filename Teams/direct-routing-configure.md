@@ -1,5 +1,5 @@
 ---
-title: Configurare il routing diretto
+title: Configurare Instradamento diretto
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -14,14 +14,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come configurare il routing diretto di Microsoft Phone System.
-ms.openlocfilehash: a15b679dfa5ac74c6c78242ac40b00e2f24f75a4
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 55f4fbb0f4faa70f73c742e8e849bc258dbfd481
+ms.sourcegitcommit: c2e315d0fcec742d2e1ba5ad90dffd1a1157a466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572224"
+ms.lasthandoff: 12/13/2019
+ms.locfileid: "40002300"
 ---
-# <a name="configure-direct-routing"></a>Configurare il routing diretto
+# <a name="configure-direct-routing"></a>Configurare Instradamento diretto
 
 > [!Tip]
 > Vedere la sessione seguente per informazioni sui vantaggi del routing diretto, su come pianificare la procedura e su come distribuirla: [routing diretto in Microsoft teams](https://aka.ms/teams-direct-routing)
@@ -485,15 +485,15 @@ La procedura per creare l'utilizzo PSTN "internazionale", la route vocale "inter
    </pre>
 3. Creare quindi un criterio di routing vocale "nessuna restrizione". L'utilizzo PSTN "Redmond 1" e "Redmond" vengono riutilizzati in questo criterio di routing vocale per mantenere una gestione speciale per le chiamate al numero "+ 1 425 XXX XX XX" e "+ 1 206 XXX XX XX" come chiamate locali o in locale.
 
-```
-New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canada", "International"
-```
+   ```
+   New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canada", "International"
+   ```
 
-    Take note of the order of PSTN Usages:
+    Prendere nota dell'ordine degli usi PSTN:
 
-    a. If a call made to number "+1 425 XXX XX XX" with the usages configured as in the following example, the call follows the route set in "US and Canada" usage and the special routing logic is applied. That is, the call is routed using sbc1.contoso.biz and sbc2.contoso.biz first, and then sbc3.contoso.biz and sbc4.contoso.biz as the backup routes. 
+    un. Se una chiamata effettuata al numero "+ 1 425 XXX XX XX" con gli usi configurati come nell'esempio seguente, la chiamata segue la route impostata nell'uso "USA e Canada" e viene applicata la logica di routing speciale. La chiamata viene quindi instradata tramite sbc1.contoso.biz e sbc2.contoso.biz prima, quindi sbc3.contoso.biz e sbc4.contoso.biz come route di backup. 
 
-    b.  If "International" PSTN usage is before "US and Canada," calls to +1 425 XXX XX XX are routed to sbc2.contoso.biz and sbc5.contoso.biz as part of the routing logic. Enter the command:
+    b.  Se l'utilizzo PSTN "internazionale" è prima di "Stati Uniti e Canada", le chiamate a + 1 425 XXX XX XX vengono instradate a sbc2.contoso.biz e sbc5.contoso.biz come parte della logica di routing. Immettere il comando:
 
     ```New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canada", "International"```
 
@@ -534,9 +534,9 @@ Il routing diretto richiede che gli utenti siano in modalità solo teams per gar
 
 ## <a name="configuring-sending-calls-directly-to-voicemail"></a>Configurazione dell'invio di chiamate direttamente alla segreteria telefonica
 
-Il routing diretto consente di terminare la chiamata a un utente e di inviarla direttamente alla segreteria telefonica degli utenti. Se si vuole inviare la chiamata direttamente alla segreteria telefonica, allegare opaque = app: voicemail all'intestazione dell'URI della richiesta. Ad esempio, "SIP: user@yourdomain.com; opaque = app: voicemail".
+Il routing diretto consente di terminare la chiamata a un utente e di inviarla direttamente alla segreteria telefonica degli utenti. Se si vuole inviare la chiamata direttamente alla segreteria telefonica, allegare opaque = app: voicemail all'intestazione dell'URI della richiesta. Ad esempio, "SIP: user@yourdomain. com; opaque = app: voicemail".
 In questo caso, l'utente del team non riceverà la notifica chiamante, la chiamata verrà connessa direttamente alla segreteria telefonica dell'utente.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificare il routing diretto](direct-routing-plan.md)
+[Pianificare Instradamento diretto](direct-routing-plan.md)
