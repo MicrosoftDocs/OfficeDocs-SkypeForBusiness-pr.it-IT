@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 622a173985d68260b210d844052d3b08dc5b5b88
-ms.sourcegitcommit: b8e16703e4611ca2bde55896ec158b33be4f9ba0
+ms.openlocfilehash: b7ca2b091cfe27c1e81d429ac95f085b52c8465d
+ms.sourcegitcommit: c15ab82834005b9a19247e06488f1f21161fc426
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39842428"
+ms.lasthandoff: 12/13/2019
+ms.locfileid: "40019970"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -41,7 +41,7 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 **Azioni supportate:**
 
-| La cassetta postale dell'utente è ospitata in: | eDiscovery| Blocco&nbsp;legale | Conservazione| MGMT per team e canali |Creare e visualizzare le riunioni| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot| 
+| La cassetta postale dell'utente è ospitata in: | eDiscovery| Blocco&nbsp;legale | Conservazione| MGMT per team e canali |Creare e visualizzare riunioni in teams| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot| 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Supporto per più paesi|
 |**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Supporto per più paesi|
@@ -79,7 +79,7 @@ Microsoft teams funziona con diversi servizi di Office 365 per consentire agli u
 >Per l'integrazione di Exchange locale e teams, è necessario assegnare la licenza necessaria per l'utente sincronizzato di AAD.
 
 > [!IMPORTANT]
-> Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza potrebbe smettere di funzionare in Outlook e in altre app di Office. La presenza funziona correttamente in teams. Per risolvere il problema, selezionare l'immagine del profilo nell'angolo in alto a destra di Microsoft teams e quindi selezionare **Impostazioni**. Nella scheda **generale** in **applicazione**Selezionare **registra teams come app di chat per Office (è necessario riavviare le applicazioni di Office)**. Dopo aver selezionato questa opzione, chiudere e riaprire tutte le app di Office, incluso Outlook. Dopo l'apertura di Outlook, le informazioni sulla presenza saranno disponibili.
+> Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza potrebbe smettere di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Per risolvere il problema, selezionare l'immagine del profilo nell'angolo in alto a destra di Microsoft teams e quindi selezionare **Impostazioni**. Nella scheda **generale** in **applicazione**Selezionare **registra teams come app di chat per Office (è necessario riavviare le applicazioni di Office)**. Dopo aver selezionato questa opzione, chiudere e riaprire tutte le app di Office, incluso Outlook. Dopo l'apertura di Outlook, le informazioni sulla presenza saranno disponibili.
 
 ## <a name="additional-considerations"></a>Considerazioni aggiuntive
 

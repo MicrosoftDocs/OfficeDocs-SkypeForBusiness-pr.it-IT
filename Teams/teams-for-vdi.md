@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2ac9b520334b29df8f2fc05808b32f2e73db8557
-ms.sourcegitcommit: 1448bb2e66074322b8f4bf234fce36ea9c8f9913
+ms.openlocfilehash: fd9440ce7c4d35af28e577c9d9e01845f298ef01
+ms.sourcegitcommit: c15ab82834005b9a19247e06488f1f21161fc426
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39966779"
+ms.lasthandoff: 12/13/2019
+ms.locfileid: "40020060"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Team per l'infrastruttura desktop virtualizzata
 
@@ -68,12 +68,14 @@ Le app virtuali e i desktop di Citrix (in precedenza noti come XenApp e XenDeskt
 
 Per i requisiti più recenti per i server e i client, vedere [questo sito Web Citrix](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/opt-ms-teams.html).
 
-## <a name="install-the-teams-desktop-app-on-vdi"></a>Installare l'app desktop teams su VDI
+## <a name="install-or-update-the-teams-desktop-app-on-vdi"></a>Installare o aggiornare l'app desktop teams in VDI
 
 Puoi distribuire l'app desktop teams per VDI usando un'installazione per singolo computer o per utente usando il pacchetto MSI. Decidere l'approccio da usare dipende dal fatto che si usi una configurazione persistente o non persistente e le esigenze di funzionalità associate dell'organizzazione.
 Per una configurazione permanente dedicata, l'approccio funzionerebbe.  Per una configurazione non persistente, tuttavia, per i team è necessario eseguire un'installazione per computer in modo efficiente. Vedere la sezione [configurazione non persistente](#non-persistent-setup) .
 
 Con l'installazione per computer, gli aggiornamenti automatici sono disabilitati. Questo significa che per aggiornare l'app teams devi disinstallare la versione corrente per eseguire l'aggiornamento a una versione più recente. Con l'installazione per utente, è abilitato l'aggiornamento automatico. Per la maggior parte delle distribuzioni VDI, è consigliabile distribuire teams con l'installazione per singolo computer.
+
+Per eseguire l'aggiornamento alla versione più recente di teams, iniziare con la procedura di disinstallazione seguita dalla distribuzione della versione più recente di teams.
 
 Per il corretto funzionamento dell'ottimizzazione AV per i team in ambienti VDI, l'endpoint thin client deve avere accesso a Internet. Se l'accesso a Internet non è disponibile nell'endpoint thin client, l'avvio dell'ottimizzazione non avrà successo. Questo significa che l'utente si trova in uno stato multimediale non ottimizzato.
 
@@ -93,7 +95,7 @@ Di seguito è riportata la configurazione minima consigliata della VM.
 
 In una configurazione non persistente, le modifiche apportate al sistema operativo locale degli utenti non vengono mantenute dopo la disconnessione degli utenti. Tali configurazioni sono in genere sessioni multiutente condivise. La configurazione di VM varia in base al numero di utenti e alle risorse fisiche disponibili nella casella.
 
-Per una configurazione non persistente, l'app desktop Teams deve essere installata per ogni computer nell'immagine dorata. Per altre informazioni, vedere l'articolo [installare l'app desktop teams nella sezione VDI](#install-the-teams-desktop-app-on-vdi) . Questo garantisce un avvio efficiente dell'app teams durante una sessione utente. L'uso di team con una configurazione non persistente richiede anche un responsabile della gestione della cache dei profili per la sincronizzazione dei dati runtime di teams efficient. In questo modo, le informazioni appropriate specifiche per l'utente, ad esempio dati utente, profilo e impostazioni, vengono memorizzate nella cache durante la sessione utente.  Sono disponibili varie soluzioni di gestione della cache. Ad esempio, [FSLogix](https://docs.microsoft.com/fslogix/overview). Consultare il provider di gestione della cache per istruzioni di configurazione specifiche.
+Per una configurazione non persistente, l'app desktop Teams deve essere installata per ogni computer nell'immagine dorata. Per altre informazioni, vedere l'articolo [installare o aggiornare l'app desktop teams nella sezione VDI](#install-or-update-the-teams-desktop-app-on-vdi) . Questo garantisce un avvio efficiente dell'app teams durante una sessione utente. L'uso di team con una configurazione non persistente richiede anche un responsabile della gestione della cache dei profili per la sincronizzazione dei dati runtime di teams efficient. In questo modo, le informazioni appropriate specifiche per l'utente, ad esempio dati utente, profilo e impostazioni, vengono memorizzate nella cache durante la sessione utente.  Sono disponibili varie soluzioni di gestione della cache. Ad esempio, [FSLogix](https://docs.microsoft.com/fslogix/overview). Consultare il provider di gestione della cache per istruzioni di configurazione specifiche.
 
 ##### <a name="teams-cached-content-exclusion-list-for-non-persistent-setup"></a>Elenco di esclusione contenuto memorizzato nella cache dei team per la configurazione non persistente
 
@@ -110,11 +112,11 @@ Quando si distribuiscono team con Office 365 ProPlus in VDI, tenere presente qua
 
 Prima di distribuire teams tramite Office 365 ProPlus, è necessario prima disinstallare le app di Team preesistenti, se distribuite con l'installazione per singolo computer.
 
-Teams through Office 365 ProPlus viene installato per ogni utente. Per altre informazioni, vedere l'articolo [installare l'app desktop teams nella sezione VDI](#install-the-teams-desktop-app-on-vdi) .
+Teams through Office 365 ProPlus viene installato per ogni utente. Per altre informazioni, vedere l'articolo [installare o aggiornare l'app desktop teams nella sezione VDI](#install-or-update-the-teams-desktop-app-on-vdi) .
 
 #### <a name="teams-deployments-through-office-365-proplus-updates"></a>Distribuzioni di teams tramite gli aggiornamenti di Office 365 ProPlus
 
-I team vengono aggiunti anche alle installazioni esistenti di Office 365 ProPlus. Dato che Office 365 ProPlus installa solo teams per solo utente, vedere la sezione [installare l'app desktop teams in VDI](#install-the-teams-desktop-app-on-vdi) .
+I team vengono aggiunti anche alle installazioni esistenti di Office 365 ProPlus. Dato che Office 365 ProPlus installa solo team per solo utente, vedere la sezione [installare o aggiornare l'app desktop teams in VDI](#install-or-update-the-teams-desktop-app-on-vdi) .
 
 #### <a name="using-teams-with-per-machine-installation-and-office-365-proplus"></a>Uso di team con l'installazione per computer e Office 365 ProPlus
 
@@ -331,7 +333,8 @@ Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunio
 
 ### <a name="client-deployment-installation-and-setup"></a>Distribuzione, installazione e configurazione client
 
-- Con l'installazione per computer, teams in VDI non viene aggiornato automaticamente nel modo in cui si trovano i client di team non VDI. È necessario aggiornare l'immagine della VM installando un nuovo MSI, come descritto nella sezione [installare l'app desktop teams in VDI](#install-the-teams-desktop-app-on-vdi) . Devi disinstallare la versione corrente per eseguire l'aggiornamento a una versione più recente.
+- Con l'installazione per computer, teams in VDI non viene aggiornato automaticamente nel modo in cui si trovano i client di team non VDI. È necessario aggiornare l'immagine della VM installando un nuovo MSI, come descritto nella sezione [installare o aggiornare l'app desktop teams in VDI](#install-or-update-the-teams-desktop-app-on-vdi) . Devi disinstallare la versione corrente per eseguire l'aggiornamento a una versione più recente.
+- I team devono essere distribuiti per utente o per computer. La distribuzione di team per ogni utente e per ogni computer non è supportata.  Per eseguire la migrazione da ogni computer o per utente a una di queste modalità, seguire la procedura di disinstallazione e ridistribuire in entrambe le modalità.
 - I client basati su MacOs e Linux non sono supportati da Citrix in questo momento.
 - Citrix non supporta l'uso di proxy HTTP espliciti definiti in un endpoint. 
 

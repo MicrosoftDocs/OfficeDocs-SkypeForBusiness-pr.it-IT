@@ -17,12 +17,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 81fc050df43e6f0c6d179601b1a9186974222276
-ms.sourcegitcommit: 1448bb2e66074322b8f4bf234fce36ea9c8f9913
+ms.openlocfilehash: 1c33a0ed8bf88469e6e9ab41a049a1d566cc686b
+ms.sourcegitcommit: c15ab82834005b9a19247e06488f1f21161fc426
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39966709"
+ms.lasthandoff: 12/13/2019
+ms.locfileid: "40019960"
 ---
 # <a name="hardware-requirements-for-the-microsoft-teams-app"></a>Requisiti hardware per l'app Microsoft Teams
 
@@ -41,7 +41,7 @@ Tutti i requisiti delle sezioni seguenti si applicano all'app desktop teams e a 
 |Versione .NET    |  Richiede .NET 4,5 CLR o versioni successive       |
 |Video    |  Videocamera USB 2,0       |
 |Dispositivi    |   Fotocamera, microfono e altoparlanti standard del portatile    | 
-|Videochiamate e riunioni | Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). L'effetto di **sfocatura** opzionale video in background richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2). Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati. |
+|Videochiamate e riunioni | <ul><li>Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). </li><li>L'effetto di **sfocatura** opzionale video in background richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2). Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati.</li><li>Partecipare a una riunione con il rilevamento di prossimità in una sala Microsoft teams richiede Bluetooth LE, che richiede l'abilitazione di Bluetooth sul dispositivo client e per i client Windows richiede il client teams di 64 bit. Non è disponibile nei client di team di 32 bit.</li></ul> |
 |Eventi live in Teams | Se si stanno producendo eventi live di teams, è consigliabile usare un computer in cui è installato un processore del lago Core i5 KABY, 4,0 GB di RAM (o superiore) e un codificatore hardware. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati. |
 
 ## <a name="hardware-requirements-for-the-teams-desktop-app-on-a-mac"></a>Requisiti hardware per l'app desktop teams in un Mac
@@ -55,7 +55,7 @@ Tutti i requisiti delle sezioni seguenti si applicano all'app desktop teams e a 
 |Sistema operativo  |    Mac OS X 10,11 El Capitan o versioni successive     |
 |Video  |    Webcam compatibile     |
 |Segreteria telefonica    |  Microfono e altoparlanti compatibili, auricolare con microfono o dispositivo equivalente       |
-|Videochiamate e riunioni | Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). L'effetto video di sfondo facoltativo Blur richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2), supportato nella maggior parte dei dispositivi Mac di 2013 più tardi e versioni successive. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati.|
+|Videochiamate e riunioni | Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive).  <ul><li>L'effetto video di **sfondo facoltativo Blur** richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2), supportato nella maggior parte dei dispositivi Mac di 2013 più tardi e versioni successive. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati.</li><li>Partecipare a una riunione con il rilevamento di prossimità in una sala di Microsoft teams non è disponibile in Mac OS.</li></ul> |
 
 ## <a name="hardware-requirements-for-the-teams-desktop-app-on-a-linux"></a>Requisiti hardware per l'app desktop teams in un Linux
 
@@ -70,7 +70,7 @@ Tutti i requisiti delle sezioni seguenti si applicano all'app desktop teams e a 
 |Video    |  Videocamera USB 2,0       |
 |Dispositivi    |   Fotocamera, microfono e altoparlanti standard del portatile    | 
 |Segreteria telefonica    |  Microfono e altoparlanti compatibili, auricolare con microfono o dispositivo equivalente       |
-|Videochiamate e riunioni | Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). L'effetto video di sfondo facoltativo Blur richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2), supportato nella maggior parte dei dispositivi Mac di 2013 più tardi e versioni successive. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati.
+|Videochiamate e riunioni | <ul><li>Per una migliore esperienza con videochiamate e riunioni online, è consigliabile usare un computer con processore a 2,0 GHz e 4,0 GB di RAM (o versioni successive). </li><li>L'effetto video di sfondo facoltativo Blur richiede un processore con il supporto AVX2 (Advanced Vector Extensions 2), supportato nella maggior parte dei dispositivi Mac di 2013 più tardi e versioni successive. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non supportati.</li><li>Partecipare a una riunione con il rilevamento di prossimità in una sala di Microsoft teams non è disponibile su Linux.</li></ul>
 |Distribuzioni Linux supportate | Ubuntu 16,04 LTS, 18,04 LTS, Fedora 30 workstation, RHEL 8 workstation, CentOS 8
 
 

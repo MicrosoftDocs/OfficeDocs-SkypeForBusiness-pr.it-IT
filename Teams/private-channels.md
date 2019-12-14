@@ -16,12 +16,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft teams.
-ms.openlocfilehash: b4937addf861be56a0a90a2c63a0ed6181bdc555
-ms.sourcegitcommit: f3b698379eb663202ce127eeaf6c07328c166556
+ms.openlocfilehash: d7a491a64e32edef61b067c864c21f41e19f267d
+ms.sourcegitcommit: c15ab82834005b9a19247e06488f1f21161fc426
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077429"
+ms.lasthandoff: 12/13/2019
+ms.locfileid: "40020050"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -139,6 +139,12 @@ Per contenere un numero maggiore di raccolte siti per tenant, il limite è aumen
 Teams gestisce il ciclo di vita della raccolta siti di SharePoint del canale privato. Se la raccolta siti viene eliminata all'esterno dei team, un processo in background ripristina il sito entro quattro ore, purché il canale privato sia ancora attivo. Se il sito viene eliminato e eliminato in maniera difficile, viene effettuato il provisioning di una nuova raccolta siti per il canale privato.
 
 Se viene ripristinato un canale privato o un team che contiene un canale privato, le raccolte siti verranno ripristinate. Se viene ripristinata una raccolta siti del canale privato ed è oltre la finestra di eliminazione morbida di 30 giorni per il canale privato, la raccolta siti funziona come raccolta siti autonoma.
+
+## <a name="private-channel-message-compliance-records"></a>Record di conformità dei messaggi del canale privato
+
+I record per i messaggi inviati in un canale privato vengono recapitati alla cassetta postale di tutti i membri del canale privato, invece che a una cassetta postale del gruppo. I titoli dei record sono formattati per indicare il canale privato da cui sono stati inviati.
+
+Per altre informazioni sull'esecuzione di una ricerca di eDiscovery per i messaggi di canale privato, vedere [eDiscovery di canali privati](ediscovery-investigation.md#ediscovery-of-private-channels).
 
 ## <a name="considerations-around-access-in-private-channels"></a>Considerazioni su Access in canali privati
 
