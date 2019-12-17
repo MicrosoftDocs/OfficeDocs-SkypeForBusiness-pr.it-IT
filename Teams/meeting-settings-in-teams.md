@@ -19,12 +19,12 @@ f1keywords:
 ms.collection:
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per le riunioni di team che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: cba1a51130a9999ca62c70700a387c88ea1ff58e
-ms.sourcegitcommit: 9a6e59c0fa020656ed3e858d43e628c3122fc71a
+ms.openlocfilehash: adb1beaa7aff84d2ef51820332bc7f823b124a22
+ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746449"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40069457"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni delle riunioni in Microsoft Teams
 
@@ -52,7 +52,7 @@ Se non si vuole che gli utenti anonimi partecipino alle riunioni pianificate dag
 
 1. Creare un'immagine che non supera i 188 pixel di larghezza per 30 pixel di altezza (è abbastanza piccola).
 2. Salvare l'immagine in formato JPG o PNG.
-3. Archiviare l'immagine in una posizione centrale a cui possono accedere tutti gli utenti dell'organizzazione, ad esempio una condivisione di rete.
+3. Archiviare l'immagine in una posizione a cui possono accedere tutti gli utenti che ricevono l'invito, ad esempio un sito Web pubblico.
 
     A questo punto è possibile aggiungerlo agli inviti alle riunioni. Vedere i passaggi successivi.
 

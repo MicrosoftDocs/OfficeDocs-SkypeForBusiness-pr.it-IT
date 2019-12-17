@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fd9440ce7c4d35af28e577c9d9e01845f298ef01
-ms.sourcegitcommit: c15ab82834005b9a19247e06488f1f21161fc426
+ms.openlocfilehash: 4c63195f4732931083a12a455b79d77d9c1e6b01
+ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/13/2019
-ms.locfileid: "40020060"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40069347"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Team per l'infrastruttura desktop virtualizzata
 
@@ -128,12 +128,12 @@ Per altre informazioni su teams e Office 365 ProPlus, vedere [come escludere tea
 
 ### <a name="deploy-the-teams-desktop-app-to-the-vm"></a>Distribuire l'app desktop teams alla VM
 
-1. Scaricare il pacchetto MSI teams che corrisponde al sistema operativo VDI VM usando uno dei collegamenti seguenti.
+1. Scaricare il pacchetto MSI teams che corrisponde al sistema operativo VDI VM usando uno dei collegamenti seguenti:
 
-    - [versione a 32 bit](https://statics.teams.microsoft.com/production-windows/1.2.00.32462/Teams_windows.msi)
-    - [versione a 64 bit](https://statics.teams.microsoft.com/production-windows-x64/1.2.00.32462/Teams_windows_x64.msi)
+    - [versione a 32 bit](https://statics.teams.cdn.office.net/production-windows/1.2.00.32462/Teams_windows.msi)
+    - [versione a 64 bit](https://statics.teams.cdn.office.net/production-windows-x64/1.2.00.32462/Teams_windows_x64.msi)
 
-    La versione minima dell'app desktop teams necessaria è la versione 1.2.00.31357. Il blocco PSTN non è supportato nelle versioni precedenti
+    La versione minima dell'app desktop teams necessaria è la versione 1.2.00.31357. Il blocco PSTN non è supportato nelle versioni precedenti.
 
 2. Installare il file MSI nella VM VDI eseguendo uno dei comandi seguenti:
 
@@ -155,14 +155,13 @@ Per altre informazioni su teams e Office 365 ProPlus, vedere [come escludere tea
  
         La prossima sessione di accesso interattivo avvia team e richiede le credenziali.
 
-3. Disinstallare il file MSI dalla VM VDI 
+3. Disinstallare il file MSI dalla VM VDI. 
 
-    Esistono due modi per disinstallare teams.  
+    Esistono due modi per disinstallare teams:  
   
     - Script di PowerShell (scelta consigliata): è possibile usare questo [script di PowerShell](scripts/powershell-script-teams-deployment-clean-up.md) per pulire i team da computer o utenti di destinazione. Deve essere eseguito per ogni utente in un computer di destinazione. 
     
-    - Riga di comando: questo approccio rimuove teams, ma impedisce la reinstallazione di teams.  
-    Eseguire il comando seguente:
+    - Riga di comando: questo approccio rimuove teams, ma impedisce la reinstallazione di teams. Eseguire il comando seguente:
   
       ```
       msiexec /passive /x <path_to_msi> /l*v <uninstall_logfile_name>
@@ -218,7 +217,7 @@ Se si esegue la migrazione da Skype for business su VDI a teams su VDI, oltre al
 
 ### <a name="teams-on-chrome-browser-versus-teams-desktop-app-for-vdi"></a>Teams su app desktop Chrome browser versus teams per VDI
 
-Teams on Chrome browser non offre una sostituzione per l'app desktop teams per VDI con l'ottimizzazione AV. L'esperienza di chat e collaborazione funziona come previsto. Quando è necessario un elemento multimediale, esistono alcune esperienze che potrebbero non soddisfare le aspettative degli utenti nel browser Chrome.
+Teams on Chrome browser non offre una sostituzione per l'app desktop teams per VDI con l'ottimizzazione AV. L'esperienza di chat e collaborazione funziona come previsto. Quando è necessario un elemento multimediale, esistono alcune esperienze che potrebbero non soddisfare le aspettative degli utenti nel browser Chrome:
 
 - L'esperienza di streaming audio e video potrebbe non essere ottimale. Gli utenti possono avere ritardi o qualità ridotta.
 - Le impostazioni del dispositivo non sono disponibili nelle impostazioni del browser.

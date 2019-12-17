@@ -13,65 +13,97 @@ ms.collection:
 - M365-voice
 audience: Admin
 appliesto:
-- Skype for Business
 - Microsoft Teams
 localization_priority: Normal
 f1keywords: None
 ms.custom:
 - Calling Plans
-description: 'Impara come creare Piani di chiamata (piani per chiamate PSTN) in Office 365 e come gestirli. '
-ms.openlocfilehash: 3b96c2f504096b3f77c7080feda1dac982f46e9c
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+description: Informazioni su come creare e gestire i dial plan (PSTN Calling dial plans) e su come gestirli.
+ms.openlocfilehash: 7280614d2eab12dff30d17ad71a3ac213e94dcd4
+ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516673"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40069437"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 
-Dopo aver pianificato i piani di chiamata per l'organizzazione e individuato tutte le regole di normalizzazione che devono essere create per il routing delle chiamate, è necessario utilizzare Windows PowerShell per creare i piani di chiamata e modificare le impostazioni.
-  
-> [!NOTE]
-> L'interfaccia di amministrazione di Skype for Business non può essere utilizzato per creare e gestire i piani di chiamata. 
-  
-## <a name="verifying-and-starting-remote-powershell"></a>Verificare e avviare PowerShell remoto
+Dopo aver pianificato i dial plan per l'organizzazione e aver individuato tutte le regole di normalizzazione che devono essere create per il routing delle chiamate, si è pronti per creare i dial plan. È possibile usare l'interfaccia di amministrazione di Microsoft teams o Windows PowerShell per creare e gestire piani di chiamata.  
 
- **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
+## <a name="using-the-microsoft-teams-admin-center"></a>Uso dell'interfaccia di amministrazione di Microsoft Teams
+
+### <a name="create-a-dial-plan"></a>Creare un dial plan
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **Voice** > **dial plan**.
+2. Fare clic su **Aggiungi**e quindi immettere un nome e una descrizione per il dial plan.
+    ![Schermata che mostra la pagina Aggiungi per la creazione di un dial plan](media/create-dial-plan.png)
+3. In **Dettagli dial plan**specificare un prefisso di chiamata esterna se gli utenti devono chiamare una o più cifre iniziali aggiuntive (ad esempio, 9) per ottenere una linea esterna. Procedi come segue.
+    1. Nella casella **prefisso di chiamata esterna** immettere un prefisso per la chiamata esterna. Il prefisso può contenere fino a quattro caratteri (#, * e 0-9).
+    2. Attivare la **chiamata a dispositivi ottimizzati**. Se si specifica un prefisso di chiamata esterna, è necessario attivare anche questa impostazione per applicare il prefisso, in modo che le chiamate possano essere effettuate all'esterno dell'organizzazione.
+4. In **regole di normalizzazione**configurare e associare una o più [regole di normalizzazione](what-are-dial-plans.md#normalization-rules) per il dial plan. A ogni dial plan deve essere associata almeno una regola di normalizzazione.  A questo scopo, eseguire una o più delle operazioni seguenti:
+    - Per creare una nuova regola di normalizzazione e associarla al dial plan, fare clic su **Aggiungi**e quindi definire la regola.
+    - Per modificare una regola di normalizzazione già associata al dial plan, selezionare la regola facendo clic a sinistra del nome della regola, quindi fare clic su **modifica**. Apportare le modifiche desiderate e quindi fare clic su **Salva**.
+    - Per rimuovere una regola di normalizzazione dal dial plan, selezionare la regola facendo clic a sinistra del nome della regola, quindi fare clic su **Rimuovi**.
+5. Disporre le regole di normalizzazione nell'ordine desiderato. Fare clic su spostarsi verso l' **alto** o spostarsi verso il **basso** per modificare la posizione delle regole nell'elenco.
+
+    > [!NOTE]
+    > Teams attraversa l'elenco delle regole di normalizzazione dall'alto verso il basso e usa la prima regola che corrisponde al numero selezionato. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, verificare che le regole più restrittive siano ordinate sopra quelle meno restrittive.
+
+6. Fai clic su **Salva**.
+7. Se si vuole testare il dial plan, in **dial plan di prova**immettere un numero di telefono e quindi fare clic su **test**.
+
+### <a name="edit-a-dial-plan"></a>Modificare un dial plan
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **Voice** > **dial plan**.
+2. Selezionare il dial plan facendo clic a sinistra del nome del dial plan, quindi fare clic su **modifica**.
+3. Apportare le modifiche desiderate e quindi fare clic su **Salva**.
+
+### <a name="add-users-to-a-dial-plan"></a>Aggiungere utenti a un dial plan
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **Voice** > **dial plan**.
+2. Selezionare il dial plan facendo clic a sinistra del nome del dial plan.
+3. Selezionare **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
+5. Al termine dell'aggiunta di utenti, selezionare **applica**.
+
+## <a name="using-powershell"></a>Utilizzo di PowerShell
   
-1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
+### <a name="verify-and-start-remote-powershell"></a>Verificare e avviare Remote PowerShell
+
+ **Verificare che sia in esecuzione Windows PowerShell versione 3,0 o successiva**
+  
+1. Per verificare che sia in esecuzione la versione 3,0 o successiva: **menu** > Start di**Windows PowerShell**.
     
 2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
     
-3. Se non si ha la versione 3,0 o successiva, è necessario scaricare e installare gli aggiornamenti in Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Riavviare il computer quando viene richiesto.
+3. Se non si ha la versione 3,0 o successiva, scaricare e installare gli aggiornamenti in Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Riavviare il computer quando viene richiesto.
     
-4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
+4. È inoltre necessario installare il modulo Windows PowerShell per Skype for business online che consente di creare una sessione remota di Windows PowerShell che si connette a Skype for business online. Puoi scaricare questo modulo, supportato solo in computer a 64 bit, nel [modulo di Windows PowerShell per Skype for business online](https://go.microsoft.com/fwlink/?LinkId=294688). Riavviare il computer se richiesto.
     
-Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx).
+Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
   
  **Avviare una sessione di Windows PowerShell**
   
-1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
+1. Fare clic su **Avvia** > **Windows PowerShell**.
     
 2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
     
     > [!NOTE]
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
   
-> 
->   ```
->     Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
->     $credential = Get-Credential
->     $session = New-CsOnlineSession -Credential $credential
->     Import-PSSession $session
->   ```
 
-Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o connettersi [a Skype for business online tramite Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362795%28v=ocs.15%29.aspx).
+    ```
+    Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
+    $credential = Get-Credential
+    $session = New-CsOnlineSession -Credential $credential
+    Import-PSSession $session
+    ```
   
-## <a name="creating-and-managing-your-dial-plans"></a>Creazione e gestione dei piani di chiamata
+### <a name="create-and-manage-your-dial-plans"></a>Creare e gestire i piani di chiamata
 
 È possibile utilizzare un singolo cmdlet o uno script di PowerShell per creare e gestire i piani di chiamata dei tenant.
   
-### <a name="using-single-cmdlets"></a>Utilizzo di cmdlet singolo
+#### <a name="using-single-cmdlets"></a>Utilizzo di cmdlet singolo
 
 - Per creare un nuovo piano di chiamata, eseguire:
     
@@ -79,16 +111,16 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a t
   New-CsTenantDialPlan -Identity RedmondDialPlan -Description "Dial Plan for Redmond" -NormalizationRules <pslistmodifier> -ExternalAccessPrefix 9 -SimpleName "Dial-Plan-for-Redmond"
   ```
 
-    Per altri esempi e parametri, consultare[New-CsTenantDialPlan](https://technet.microsoft.com/library/mt775026.aspx).
+    Per altri esempi e parametri, consultare[New-CsTenantDialPlan](https://docs.microsoft.com/powershell/module/skype/new-cstenantdialplan).
     
-- Per apportare modifiche alle impostazioni a un piano di chiamata esistente, eseguire:
+- Per modificare le impostazioni di un dial plan esistente, eseguire:
     
   ```
   Set-CsTenantDialPlan -Identity RedmondDialPlan  -NormalizationRules <pslistmodifier> -ExternalAccessPrefix 9
     -SimpleName "Dial-Plan-for-Redmond"
   ```
 
-    Per altri esempi e parametri, consultare[Set-CsTenantDialPlan](https://technet.microsoft.com/library/mt775023.aspx).
+    Per altri esempi e parametri, consultare[Set-CsTenantDialPlan](https://docs.microsoft.com/powershell/module/skype/set-cstenantdialplan).
     
 - Per aggiungere utenti a un piano di chiamata, eseguire:
     
@@ -96,7 +128,7 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a t
   Grant-CsTenantDialPlan -Identity amos.marble@contoso.com -PolicyName RedmondDialPlan
   ```
 
-    Per altri esempi e parametri, consultare [Grant-CsTenantDialPlan](https://technet.microsoft.com/library/mt775021.aspx).
+    Per altri esempi e parametri, consultare [Grant-CsTenantDialPlan](https://docs.microsoft.com/powershell/module/skype/grant-cstenantdialplan).
     
 - Per visualizzare le impostazioni di un piano di chiamata, eseguire:
     
@@ -104,7 +136,7 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a t
   Get-CsTenantDialPlan -Identity RedmondDialPlan
   ```
 
-    Per altri esempi e parametri, consultare [Get-CsTenantDialPlan](https://technet.microsoft.com/library/mt775024.aspx).
+    Per altri esempi e parametri, consultare [Get-CsTenantDialPlan](https://docs.microsoft.com/powershell/module/skype/get-cstenantdialplan?view=skype-ps).
     
 - Per eliminare un piano di chiamata, eseguire:
     
@@ -112,7 +144,7 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a t
   Remove-CsTenantDialPlan -Identity RedmondDialPlan -force
   ```
 
-    Per altri esempi e parametri, consultare [Remove-CsTenantDialPlan](https://technet.microsoft.com/library/mt775020.aspx).
+    Per altri esempi e parametri, consultare [Remove-CsTenantDialPlan](https://docs.microsoft.com/powershell/module/skype/remove-cstenantdialplan?view=skype-ps).
     
 - Per visualizzare le impostazioni dell'effettivo piano di chiamata, eseguire:
     
@@ -120,7 +152,7 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a t
   Get-CsEffectiveTenantDialPlan -Identity amos.marble@contoso.com
   ```
 
-    Per altri esempi e parametri, consultare [Get-CsEffectiveTenantDialPlan](https://technet.microsoft.com/library/mt775022.aspx).
+    Per altri esempi e parametri, consultare [Get-CsEffectiveTenantDialPlan](https://docs.microsoft.com/powershell/module/skype/get-cseffectivetenantdialplan).
     
 - Per testare le impostazioni effettive di un piano di chiamata, eseguire:
     
@@ -128,11 +160,11 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a t
   Test-CsEffectiveTenantDialPlan -DialedNumber 14255550199 -Identity amos.marble@contoso.com
   ```
 
-    Per altri esempi e parametri, consultare [Test-CsEffectiveTenantDialPlan](https://technet.microsoft.com/library/mt775025.aspx).
+    Per altri esempi e parametri, consultare [Test-CsEffectiveTenantDialPlan](https://docs.microsoft.com/powershell/module/skype/test-cseffectivetenantdialplan?view=skype-ps).
     
-### <a name="using-a-powershell-script"></a>Uso di uno script di PowerShell
+#### <a name="using-a-powershell-script"></a>Uso di uno script di PowerShell
 
-Eseguire questa opzione per eliminare una regola di normalizzazione associata a un piano di chiamata del tenant senza dover prima di eliminare il piano di chiamata del tenant:
+Esegui questa operazione per eliminare una regola di normalizzazione associata a un dial plan tenant senza dover eliminare prima di tutto il piano di chiamata del tenant:
 ```
 $b1=New-CsVoiceNormalizationRule -Identity Global/NR4 -InMemory
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{add=$b1}
@@ -148,10 +180,10 @@ Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{add=$nr1}
 Eseguire questa operazione per rimuovere la seguente regola di normalizzazione dal piano di chiamata del tenant denominato RedmondDialPlan.
 ```
 $nr1=New-CsVoiceNormalizationRule -Parent Global/NR1 -InMemory
-Set-CsTenantDialPlan -Identity DP1 -NormalizationRules @{remove=$nr1}
+Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{remove=$nr1}
 ```
 
-Run the following when you want to also examine the existing normalization rules, determine which one you want to delete, and then use its index to remove it. The array of normalization rules starts with index 0. We would like to remove the 3-digit normalization rule, so that is index 1.
+Eseguire quanto segue quando si desidera esaminare anche le regole di normalizzazione esistenti, determinare quale si desidera eliminare e quindi utilizzare l'indice per rimuoverla. Matrice delle regole di normalizzazione inizia con l'indice 0. Si desidera rimuovere la regola di normalizzazione a 3 cifre, in modo che sia indice 1.
   
 ```
 Get-CsTenantDialPlan RedmondDialPlan).NormalizationRules
@@ -167,17 +199,17 @@ Translation         : +14255551$1
 Name                : NR12
 IsInternalExtension : False
 
-$nr1=(Get-CsTenantDialPlan RedmondDialPlan).NormalizationRules[Number 1]
+$nr1=(Get-CsTenantDialPlan RedmondDialPlan).NormalizationRules[1]
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{remove=$nr1}
 ```
 
 Eseguire questa operazione per trovare tutti gli utenti a cui è stato concesso il piano di chiamata del tenant RedmondDialPlan.
   
 ```
-Get-CsOnlineuser | where-Object {$_.TenantDialPlan -eq "RedmondDialPlan"}
+Get-CsOnlineUser | Where-Object {$_.TenantDialPlan -eq "RedmondDialPlan"}
 ```
 
-Esegui questa operazione per eliminare PolicyName per tutti gli utenti che hanno provider dihosting sipfed.online.lync.com.
+Esegui questa operazione per rimuovere eventuali TenantDialPlan assegnati da tutti gli utenti che hanno un provider dihosting di sipfed.online.lync.com.
 ```
 Get-CsOnlineUser -Filter {HostingProvider -eq “sipfed.online.lync.com”} | Grant-CsTenantDialPlan -policyname $null
 ```
@@ -196,42 +228,23 @@ Eseguire questa operazione per creare il nuovo piano di chiamata del tenant.
   
 ```
 $DPFileName = "dialplan.xml"
-$DP = Import-Clixml $DPFileName
+$dp = Import-Clixml $DPFileName
 $NormRules = @()
 ForEach($nr in $dp.NormalizationRules)
 {
- $id1 = "Global/" +$nr.Name
-$nr2 = New-CsVoiceNormalizationRule -Identity $id1 -Description $nr.Description -Pattern $nr.Pattern -Translation $nr.Translation  -IsInternalExtension $nr.IsInternalExtension -InMemory
-$NormRules += $nr2
+ $id1 = "Global/" + $nr.Name
+ $nr2 = New-CsVoiceNormalizationRule -Identity $id1 -Description $nr.Description -Pattern $nr.Pattern -Translation $nr.Translation -IsInternalExtension $nr.IsInternalExtension -InMemory
+ $NormRules += $nr2
 }
 New-CsTenantDialPlan -Identity $dp.SimpleName -ExternalAccessPrefix $dp.ExternalAccessPrefix -Description $dp.Description -OptimizeDeviceDialing $dp.OptimizeDeviceDialing -SimpleName $dp.SimpleName -NormalizationRules $NormRules
 ```
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
-
-- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
-    
-  - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
-    
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
-    
-- Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo usando l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
-    
-  - [Gestire Office 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
-    
-  - [Usare Windows PowerShell per gestire Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525453)
-    
-  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525038)
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Domande comuni sul trasferimento dei numeri di telefono](transferring-phone-numbers-common-questions.md)
 
-[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](different-kinds-of-phone-numbers-used-for-calling-plans.md)
-
-[Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
-
-[Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
-
-[Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
-
-  
- 
+- [Che cosa sono i piani di chiamata?](what-are-dial-plans.md)
+- [Domande comuni sul trasferimento dei numeri di telefono](transferring-phone-numbers-common-questions.md)
+- [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+- [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+- [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
+- [Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+- [Panoramica di PowerShell Teams](teams-powershell-overview.md)

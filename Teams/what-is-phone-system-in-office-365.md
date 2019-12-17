@@ -19,16 +19,16 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: "Informazioni sulle operazioni che il sistema telefonico può eseguire per l'utente. "
-ms.openlocfilehash: d6bc3d8265059520e3f8448f800de91331e26e01
-ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
+ms.openlocfilehash: bd17ff93c2327b63920dc4a180277dfce885de0c
+ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37568532"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40069397"
 ---
 # <a name="what-is-phone-system-in-office-365"></a>Che cos’è il Sistema telefonico in Office 365?
 
-**Phone System** è la tecnologia Microsoft per l'abilitazione delle funzionalità di controllo delle chiamate e PBX nel cloud di Office 365 con Skype for business online e Microsoft teams. Il sistema telefonico consente di sostituire il sistema PBX esistente con un set di funzionalità fornite da Office 365 che è strettamente integrato nell'esperienza cloud. Per altre informazioni sulle funzionalità, vedere [Ecco cosa si ottiene con il sistema telefonico in Office 365](here-s-what-you-get-with-phone-system.md).
+**Phone System** è la tecnologia Microsoft per l'abilitazione delle funzionalità di controllo delle chiamate e PBX nel cloud di Office 365 con Skype for business online e Microsoft teams. Il sistema telefonico consente di sostituire il sistema PBX esistente con un set di funzionalità fornite da Office 365 che è strettamente integrato nell'esperienza cloud. Per altre informazioni sulle caratteristiche, vedere [Ecco cosa si ottiene con il sistema telefonico in Office 365](here-s-what-you-get-with-phone-system.md).
   
 Con il sistema telefonico, gli utenti possono usare Skype for business online e Microsoft teams per effettuare e ricevere chiamate, trasferire chiamate e disattivare o riattivare le chiamate. Gli utenti del sistema telefonico possono fare clic su un nome nella propria rubrica e le chiamate di Skype for business o Microsoft Teams a quella persona. Per effettuare e ricevere chiamate, gli utenti del sistema telefonico possono usare i loro dispositivi mobili, un auricolare con un portatile o un PC o uno dei numerosi telefoni IP che funzionano con Skype for business e Microsoft teams. Gli amministratori del sistema telefonico possono gestire le opzioni e le impostazioni di chiamata dalla stessa console utilizzata per la messaggistica, la collaborazione e così via.
   

@@ -14,12 +14,12 @@ MS.collection:
 description: Informazioni su analisi cross-team e analisi per team in teams, che consentono agli utenti di visualizzare i dati sull'utilizzo per i team di cui fanno parte.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 265099706e5c6fd502cabf688d539678d8669717
-ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
+ms.openlocfilehash: 6914d391d8dfdd1e5a5b5e0e7f826bef78e67678
+ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37639257"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40069447"
 ---
 # <a name="view-cross-team-and-per-team-analytics-in-teams"></a>Visualizzare l'analisi tra team e per team in Teams
 
@@ -39,7 +39,7 @@ Analisi per Team offre agli utenti una visualizzazione più granulare dei dati s
     |Elemento |Descrizione  |
     |--------|-------------|
     |**Nome**   |Nome del team. |
-    |**Utenti attivi**   |Numero di utenti attivi del team e della linea di tendenza dell'attività del team durante il periodo di tempo specificato.
+    |**Utenti attivi**   |Numero di utenti attivi del team e della linea di tendenza dell'attività del team durante il periodo di tempo specificato. Definiamo 
     |**Persone**   |Numero totale di persone del team nel periodo di tempo specificato. Questo include i proprietari del team, i membri del team e gli utenti.|
     |**Ospiti**   |Numero di Guest nel team durante il periodo di tempo specificato. |
     |**Messaggi**   |Numero di messaggi univoci pubblicati in chat del team durante il periodo di tempo specificato. |
@@ -59,6 +59,9 @@ Analisi per Team offre agli utenti una visualizzazione più granulare dei dati s
     |**Ruolo**   |Numero di utenti del team per ruolo, inclusi i proprietari del team, i membri del team e i guest.|
     |Grafico **utenti attivi**  |Numero di utenti attivi nel team per data. Posizionare il puntatore del mouse sul punto in una data specificata per visualizzare il numero di utenti attivi in tale data.|
     |Grafico **messaggi**  |Numero di messaggi univoci pubblicati in chat del team per data. Posizionare il puntatore del mouse sul punto in una data specificata per visualizzare il numero di messaggi univoci pubblicati in tale data.|
+    
+> [!NOTE]
+> Definiamo gli utenti attivi come utenti che eseguono un'azione intenzionale nel client desktop, nel client mobile e nel client Web. Gli esempi di un'azione intenzionale includono l'avvio di una chat, l'immissione di una chiamata, la condivisione di un file, la modifica di un documento in teams, la partecipazione a una riunione e così via. Disponiamo di azioni passive come l'avvio automatico, riducendo al minimo uno schermo o chiudendo l'app. È anche possibile deduplicare tutte le azioni in un singolo ID utente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

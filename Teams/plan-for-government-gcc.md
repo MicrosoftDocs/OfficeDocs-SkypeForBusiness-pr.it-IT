@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b99941cfcd1622a20304ec9fd8d52143c9690ab9
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: e4228210fa7b6d9518fa060b2bdd555f434ed6f2
+ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573274"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40069307"
 ---
 # <a name="plan-for-microsoft-365-government---gcc-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-GCC
 
@@ -49,7 +49,7 @@ La [Descrizione del servizio governativo degli Stati Uniti di Office 365](https:
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive i punti di decisione](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere se Microsoft 365 Government-GCC è appropriato per l'organizzazione.</li><li>Verificare che l'organizzazione soddisfi i requisiti di ammissibilità.</li></ul> |
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere se Microsoft 365 Government-GCC è appropriato per l'organizzazione.</li><li>Verificare che l'organizzazione soddisfi i requisiti di ammissibilità.</li></ul> |
 
 > [!Note]
 > Microsoft 365 Government-GCC è disponibile solo negli Stati Uniti. I clienti di enti pubblici non-americani possono scegliere tra diversi [piani governativi di Office 365](https://products.office.com/en/government/compare-office-365-government-plans).
@@ -74,7 +74,7 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 |                             | Funzionalità                     | GCC            |
 |-----------------------------|-----------------------------|----------------|
 | Base | Accesso | Disponibili |
-| | Presenza | Disponibili |
+| | Icone di presenza | Disponibili |
 | | Presenza unificata (Skype for business e teams Unified) | Disponibili |
 | Attività | Feed | Disponibili |
 |  | Attività personali | Disponibili |
@@ -83,13 +83,13 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 | | Organigramma | Disponibili |
 | | Attività | Disponibili |
 | | Interoperabilità (1:1 Teams-chat Skype for business) | Disponibili |
-| Squadre | Messaggio di canale | Disponibili |
+| Teams | Messaggio di canale | Disponibili |
 | | File di canale | Disponibili |
 | | Scheda OneNote | Nell'arretrato governativo |
 | | Inviare un canale tramite posta elettronica | Non disponibile |
 | | Aggiungi membro | Disponibili |
-| | Accesso Guest | Disponibili |
-|  Riunioni | Pianificare una riunione | Disponibili |
+| | Accesso guest | Disponibili |
+| Riunioni | Pianificare una riunione | Disponibili |
 | | Partecipare a una riunione | Disponibili |
 | | Riunione VoIP | Disponibili |
 | | Condivisione desktop | Disponibili |
@@ -100,7 +100,7 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 | | Note riunione | Disponibili |
 | | Eventi dinamici | Disponibili |
 | | Riunioni federate | Disponibili |
-| | Supporto per Surface Hub | Non disponibile |
+| | Supporto per Surface Hub | Disponibili |
 | Chiamate | Contatti | Disponibili |
 | | Storia | Disponibili |
 | | Casella vocale | Disponibili |

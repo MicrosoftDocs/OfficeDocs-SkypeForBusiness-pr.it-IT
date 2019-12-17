@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 37b74c631bc8194037b332e821b29fa61cb6530b
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 8f12b80fa1914166d48860b15cda7a928ca94ece
+ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516757"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40069197"
 ---
 # <a name="plan-my-users-experience"></a>Pianificare l'esperienza degli utenti
 
@@ -31,7 +31,7 @@ Questo articolo offre una panoramica dei requisiti per identificare correttament
 
 Microsoft teams è disponibile per i client Web, desktop (Windows e Mac) e per dispositivi mobili (Android e iOS). Per informazioni dettagliate su come sono installati i client desktop (Windows e Mac) e i dispositivi mobili, vedere [ottenere client per Microsoft teams](https://docs.microsoft.com/microsoftteams/get-clients).
 
-## <a name="client-updates"></a>Aggiornamenti client
+## <a name="client-updates"></a>Aggiornamenti del client
 
 Uno dei vantaggi principali di teams è che il client è mantenuto aggiornato automaticamente. I client del PC e del Mac vengono aggiornati usando un processo in background che verifica la ricerca di nuove compilazioni e Scarica il nuovo client quando l'app è inattiva.
 
@@ -41,7 +41,7 @@ Uno dei vantaggi principali di teams è che il client è mantenuto aggiornato au
 
 Come si può vedere dal diagramma seguente, gli endpoint sono un blocco predefinito importante per offrire un'esperienza di qualità per gli utenti.
 
-![Diagramma che descrive i]tre componenti del diagramma qualità che(media/plan-my-users-experience-image1.png "descrivono i tre componenti della qualità e come la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sugli endpoint.")
+![Diagramma che descrive i tre componenti della qualità](media/plan-my-users-experience-image1.png "Diagramma che descrive i tre componenti della qualità e in che modo la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sugli endpoint.")
 
 I team endpoint possono essere eseguiti in molti dispositivi, tra cui PC, Mac, tablet e dispositivi mobili. Parte dell'esperienza non include solo il dispositivo, ma anche il modo in cui un utente si connette al dispositivo, ad esempio usando il microfono/altoparlante incorporato del dispositivo, gli auricolari o un auricolare ottimizzato. L'uso di un auricolare ottimizzato può arricchire l'esperienza utente complessiva.
 
@@ -106,7 +106,9 @@ Un esercizio di mapping da persona a dispositivo deve essere completato come par
 Dopo aver selezionato i dispositivi, includerli nel piano di test pilota per la convalida finale. È necessario sfruttare i sondaggi durante il progetto pilota per raccogliere feedback per verificare che la strategia del dispositivo sia ottimale.
 
 > [!NOTE]
-> In questo momento, ti consigliamo di usare i dispositivi audio certificati tramite il programma di certificazione Skype for business. Per trovare i dispositivi certificati in questo programma, vedere i [dispositivi USB certificati per il catalogo di soluzioni Skype for business](http://partnersolutions.skypeforbusiness.com/solutionscatalog/personal-peripherals-pcs) .
+> In questo momento, ti consigliamo di usare i dispositivi audio certificati tramite il programma di certificazione Skype for business. Per trovare i dispositivi certificati in questo programma, vedere i dispositivi [Microsoft teams](https://products.office.com/en-us/microsoft-teams/across-devices/devices) e i [dispositivi audio e video USB](https://docs.microsoft.com/SkypeForBusiness/certification/devices-usb-devices).
+
+
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Scegli la strategia di dispositivo globale dell'organizzazione per le esperienze dell'utente e della sala riunioni.</li></ul></td></tr>

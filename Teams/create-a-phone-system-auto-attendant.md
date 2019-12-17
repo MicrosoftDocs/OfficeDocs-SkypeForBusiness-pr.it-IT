@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: 36725b9c322c5d084fdfc344132f36b9265ce9dd
-ms.sourcegitcommit: b1bf37a96a8faa169d8a32b7478f1e2d1022ebbb
+ms.openlocfilehash: 2cd468b3a4f151d6ad19d2ad430bb94045fb808f
+ms.sourcegitcommit: 89106cfda0d900d8be541943b7d1537bc69ed57f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38318122"
+ms.lasthandoff: 12/16/2019
+ms.locfileid: "40070237"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -218,9 +218,8 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 
 **Chiamata per nome** Se si abilita questa opzione, i chiamanti possono cercare gli utenti dell'organizzazione usando la chiamata in **base al nome**. Si dice che il nome dell'utente e il riconoscimento vocale corrispondano a un utente. È possibile impostare chi è e non è incluso in questi servizi nella pagina dell'ambito di chiamata facoltativa. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con chiamata per nome.
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-**Dial by Extension** (questa funzionalità di anteprima non è ancora disponibile per il pubblico generale) se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione immettendo l'estensione del telefono. È possibile selezionare gli utenti elencati come disponibili o non disponibili per l' **estensione dial by** nella pagina facoltativa dell'ambito di chiamata. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l'estensione dial by.
+**Dial by Extension** Se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione immettendo l'estensione del telefono. È possibile selezionare gli utenti elencati come disponibili o non disponibili per l' **estensione dial by** nella pagina facoltativa dell'ambito di chiamata. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l'estensione dial by.
 
 > [!IMPORTANT]
 > Attenersi alla seguente procedura:
