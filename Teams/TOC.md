@@ -289,21 +289,26 @@
 
 
 # Cloud Voice 
+
 ## [Pianificare la distribuzione](cloud-voice-landing-page.md)
+
 ## Sistema telefonico
 ### [Che cos'è Sistema telefonico](what-is-phone-system-in-office-365.md)
 ### [Vantaggi offerti da Sistema telefonico](here-s-what-you-get-with-phone-system.md)
 ### [Configurare Sistema telefonico](setting-up-your-phone-system.md)
 ### [Configurare telefoni di aree comuni](set-up-common-area-phones.md)
+
 ### Segreteria telefonica
 #### [Configurare Cloud Voicemail](set-up-phone-system-voicemail.md)
 #### [Modificare la lingua predefinita per la segreteria telefonica](change-the-default-language-for-greetings-and-emails.md)
 #### [Lingue per i messaggi e i messaggi di saluto della segreteria telefonica](languages-for-voicemail-greetings-and-messages.md)
+
 ### ID chiamante
 #### [Come usare l'ID chiamante nell'organizzazione](how-can-caller-id-be-used-in-your-organization.md)
 #### [Gestire i criteri dell'ID chiamante](caller-id-policies.md)
 #### [Impostare l'ID chiamante per un utente](set-the-caller-id-for-a-user.md)
 #### [Ulteriori informazioni su ID linea di chiamata e nome del chiamante](more-about-calling-line-id-and-calling-party-name.md)
+
 ### Operatori automatici e code delle chiamate 
 #### [Che cosa sono gli Operatori automatici cloud?](what-are-phone-system-auto-attendants.md)
 #### [Configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md)
@@ -312,6 +317,7 @@
 #### [Gestire gli account di risorsa in Microsoft Teams](manage-resource-accounts.md)
 #### [Creare una coda delle chiamate nel cloud](create-a-phone-system-call-queue.md)
 #### [Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams](answer-auto-attendant-and-call-queue-calls.md)
+
 ### [Parcheggio di chiamata e recupero](call-park-and-retrieve.md)
 ### [Condivisione delle chiamate e risposta alle chiamate di gruppo](call-sharing-and-group-call-pickup.md)
 ### [Criteri di chiamata](teams-calling-policy.md)
@@ -353,7 +359,12 @@
 #### [Prefisso internazionale per percorso multimediale](direct-routing-country-codes.md)
 #### [Script di PowerShell per testare le connessioni dei Session Border Controller](sip-tester-powershell-script.md)
 #### [Gestire le notifiche di chiamata](direct-routing-call-notifications.md)
+#### Protocolli
+##### [Definizioni e standard RFC](direct-routing-protocols.md)
+##### [Protocollo SIP](direct-routing-protocols-SIP.md)
+##### [Protocolli multimediali](direct-routing-protocols-media.md)
 #### [Configurare il bot di richiamata](direct-routing-ringback-bot.md)
+
 
 ## Numeri di telefono
 ### [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
