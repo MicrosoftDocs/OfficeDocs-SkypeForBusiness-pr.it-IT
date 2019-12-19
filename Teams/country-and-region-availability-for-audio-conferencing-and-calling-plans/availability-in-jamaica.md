@@ -1,11 +1,10 @@
 ---
-title: Disponibilità in Honduras
-ms.author: crowe
-author: CarolynRowe
+title: Disponibilità in Giamaica
+author: LanaChin
+ms.author: v-lanac
 manager: serdars
 ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
 ms.topic: reference
-ms.assetid: 3662b214-5798-458d-8dcd-0bd563ad01fd
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
@@ -23,34 +22,34 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Honduras.
-ms.openlocfilehash: 666e162de569aefb163a137e30926cf5b30a6a38
+description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Giamaica.
+ms.openlocfilehash: 2860d014eeca08627e8eb51e168eb593767291fb
 ms.sourcegitcommit: cb394272050d049ebceedb7df835b86362dfd8d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/18/2019
-ms.locfileid: "40741100"
+ms.locfileid: "40741587"
 ---
-# <a name="availability-in-honduras"></a>Disponibilità in Honduras
+# <a name="availability-in-jamaica"></a>Disponibilità in Giamaica
 
 [Trova un altro Paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri di più sulla disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica.
 
-Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Honduras.
+Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Giamaica.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, solo in [pay-per-minute](../audio-conferencing-pay-per-minute.md)  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No  <br/> |
-|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti di comunicazione  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | No |
+|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Richiede crediti di comunicazione <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
-| Operatori automatici <br/> |Disponibili  <br/> |
+|Operatori automatici <br/> |Disponibili  <br/> |
 |Code di chiamata  <br/> |Disponibili  <br/> |
 |Casella vocale  <br/> |Disponibili  <br/> |
    
@@ -62,15 +61,15 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
    
-## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
+## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri a pedaggio e a pagamento gratuito per i servizi
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Tegucigalpa <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì <br/> |
-|Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Non applicabile <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |No <br/> |
+|I numeri verdi sono disponibili?  <br/> |Sì  <br/> |
    
- Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
+ Per ottenere numeri di telefono a pedaggio e a pedaggio gratuito per i servizi di audioconferenza, gli operatori automatici e le code di chiamata, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).
   
 ## <a name="communications-credits"></a>Crediti comunicazioni
 

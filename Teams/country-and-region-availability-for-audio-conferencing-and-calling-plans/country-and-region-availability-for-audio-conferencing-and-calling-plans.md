@@ -25,12 +25,12 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 description: Puoi selezionare un paese/un’area geografica per vedere se sono disponibili o meno Audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e i numeri verdi e a tariffa.
-ms.openlocfilehash: b4ff3d9a760587788a93c459c7888b1972579f89
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: d98e085667c97dbf4b4afc6dfc67fe1eb847d731
+ms.sourcegitcommit: cb394272050d049ebceedb7df835b86362dfd8d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573086"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40741390"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica
 
@@ -39,21 +39,26 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 ## <a name="select-your-country-or-region-to-see-whats-available-for-your-organization"></a>Selezionare il paese o l'area geografica per vedere le informazioni disponibili per l'organizzazione
 
 > [!div class="op_single_selector"]
-> - [Algeria](availability-in-algeria.md)    
+> - [Algeria](availability-in-algeria.md)
+> - [Antigua e Barbuda](availability-in-antigua-and-barbuda.md)
 > - [Argentina](availability-in-argentina.md)
 > - [Australia](availability-in-australia.md)
 > - [Austria](availability-in-austria.md)
+> - [Bahamas](availability-in-the-bahamas.md)
 > - [Bahrein](availability-in-bahrain.md)
+> - [Barbados](availability-in-barbados.md)
 > - [Bielorussia](availability-in-belarus.md)
 > - [Belgio](availability-in-belgium.md)
 > - [Belize](availability-in-belize.md)
 > - [Benin](availability-in-benin.md)
+> - [Bermuda](availability-in-bermuda.md)
 > - [Bosnia ed Herzegovina](availability-in-bosniaherzegovina.md)
 > - [Brasile](availability-in-brazil.md)
 > - [Brunei](availability-in-brunei.md)
 > - [Bulgaria](availability-in-bulgaria.md)
 > - [Cambogia](availability-in-cambodia.md)
 > - [Canada](availability-in-canada.md)
+> - [Cayman Islands](availability-in-the-cayman-islands.md)
 > - [Cile](availability-in-chile.md)
 > - [Cina](availability-in-china.md)
 > - [Colombia](availability-in-colombia.md)
@@ -62,6 +67,7 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Cipro](availability-in-cyprus.md)
 > - [Repubblica Ceca](availability-in-the-czech-republic.md)
 > - [Danimarca](availability-in-denmark.md)
+> - [Dominica](availability-in-dominica.md)
 > - [Repubblica dominicana](availability-in-the-dominican-republic.md)
 > - [Ecuador](availability-in-ecuador.md)
 > - [Egitto](availability-in-egypt.md)
@@ -73,23 +79,26 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Germania](availability-in-germany.md)
 > - [Ghana](availability-in-ghana.md)
 > - [Grecia](availability-in-greece.md)
+> - [Grenada](availability-in-grenada.md)
+> - [Guam](availability-in-guam.md)
 > - [Honduras](availability-in-honduras.md)
-> - [Hong Kong - R.A.S.](availability-in-hong-kong.md)
+> - [RAS di Hong Kong](availability-in-hong-kong.md)
 > - [Ungheria](availability-in-hungary.md)
 > - [India](availability-in-india.md)
 > - [Indonesia](availability-in-indonesia.md)
 > - [Irlanda](availability-in-ireland.md)
 > - [Israele](availability-in-israel.md)
 > - [Italia](availability-in-italy.md)
+> - [Giamaica](availability-in-jamaica.md)
 > - [Giappone](availability-in-japan.md)
 > - [Giordania](availability-in-jordan.md)
-> - [Kazakistan](availability-in-kazakhstan.md)
+> - [Kazakhstan](availability-in-kazakhstan.md)
 > - [Kenya](availability-in-kenya.md)
-> - [Kuwait (الكويت)](availability-in-kuwait.md)
+> - [Kuwait](availability-in-kuwait.md)
 > - [Lettonia](availability-in-latvia.md)
 > - [Lituania](availability-in-lithuania.md)
 > - [Lussemburgo](availability-in-luxembourg.md)
-> - [Macedonia](availability-in-macedonia.md)
+> - [Macedonia del Nord](availability-in-macedonia.md)
 > - [Malaysia](availability-in-malaysia.md)
 > - [Malta](availability-in-malta.md)
 > - [Messico](availability-in-mexico.md)
@@ -112,6 +121,8 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Qatar](availability-in-qatar.md)
 > - [Romania](availability-in-romania.md)
 > - [Russia](availability-in-russia.md)
+> - [Saint Kitts and Nevis](availability-in-saint-kitts-and-nevis.md)
+> - [Saint Lucia](availability-in-saint-lucia.md)
 > - [Arabia Saudita](availability-in-saudi-arabia.md)
 > - [Serbia](availability-in-serbia.md)
 > - [Singapore](availability-in-singapore.md)
@@ -136,7 +147,7 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Venezuela](availability-in-venezuela.md)
 > - [Vietnam](availability-in-vietnam.md)
 
-**Se si sta cercando un foglio di calcolo con tutti i paesi e le aree geografiche, scaricare e salvare il foglio di calcolo per la [disponibilità del paese/area geografica cloud](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/country-and-region-availabilty/country-and-region-availability-(v-09052019)-(en-us).xlsx?raw=true)**.
+**Se si sta cercando un foglio di calcolo con tutti i paesi e le aree geografiche, scaricare e salvare il foglio di calcolo per la [disponibilità del paese/area geografica cloud](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/country-and-region-availabilty/country-and-region-availability-(v-12182019)-(en-us).xlsx?raw=true)**.
 
 ***
 
@@ -188,7 +199,7 @@ Unitamente al Sistema telefonico, un Piano per chiamate consente agli utenti di 
 Per informazioni sulle licenze puoi anche consultare [Licenze per Sistema telefonico e Piani per chiamate](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
 > [!NOTE]
-> Il paese/area geografica si basa sulla posizione della licenza dell'utente nell'interfaccia di **Amministrazione** > di Microsoft 365**utenti attivi** e **non** sull'indirizzo di fatturazione elencato nel **profilo dell'organizzazione** nell'amministratore di **Microsoft 365. centro**. 
+> Il paese/area geografica si basa sulla posizione della licenza dell'utente negli > **utenti attivi** dell'interfaccia di **amministrazione di Microsoft 365**e **non** sull'indirizzo di fatturazione elencato nel **profilo dell'organizzazione** nell'area di **amministrazione di Microsoft 365**. 
   
 ### <a name="toll-and-toll-free-phone-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

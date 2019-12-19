@@ -3,7 +3,7 @@ title: Disponibilità in Cambogia
 author: LanaChin
 ms.author: v-lanac
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
+ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Cambogia.
-ms.openlocfilehash: 6d758a5171ecd8af006a6c8afd466b2a0aab5f2d
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 438ac6dc00ea92c46143df287a4615879300a540
+ms.sourcegitcommit: cb394272050d049ebceedb7df835b86362dfd8d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37639172"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40741370"
 ---
 # <a name="availability-in-cambodia"></a>Disponibilità in Cambogia
 
@@ -40,7 +40,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |No  <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, solo in [pay-per-minute](../audio-conferencing-pay-per-minute.md)  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Richiede crediti di comunicazione <br/> |
    
@@ -65,9 +65,9 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Phnom Penh ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md))  <br/> |
-|I numeri verdi sono disponibili?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Phnom Penh |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì <br/> |
+|I numeri verdi sono disponibili?  <br/> |No <br/> |
    
  Per ottenere numeri di telefono a pedaggio e a pedaggio gratuito per i servizi di audioconferenza, gli operatori automatici e le code di chiamata, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).
   
@@ -75,7 +75,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Sono disponibili i Crediti comunicazioni?  <br/> |No  <br/> |
+|Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
 Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicazioni per la propria organizzazione](../set-up-communications-credits-for-your-organization.md).
   

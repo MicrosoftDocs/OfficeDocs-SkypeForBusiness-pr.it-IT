@@ -20,12 +20,12 @@ f1keywords:
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams.
-ms.openlocfilehash: 1407e18387aac5ae9ad5bdaa894d738f48fb3b42
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: ba44188d978c9109d1ba3d038c5b1f48d0670746
+ms.sourcegitcommit: 43cab5f0fc8692174db09badf3d448e8ff6a50d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37564967"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744870"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri delle riunioni in teams
 
@@ -95,7 +95,7 @@ Quando si seleziona un criterio esistente nella pagina **criteri riunione** o si
 ## <a name="meeting-policy-settings---general"></a>Impostazioni dei criteri riunione-generale
 
 - [Consenti riunione ora nei canali](#allow-meet-now-in-channels)
-- [Consenti riunione privata ora (disponibile a breve)](#allow-private-meet-now-coming-soon)
+- [Consenti riunione privata ora](#allow-private-meet-now)
 - [Consentire il componente aggiuntivo per Outlook](#allow-the-outlook-add-in)
 - [Consentire la programmazione di una riunione di canale](#allow-channel-meeting-scheduling)
 - [Consentire la pianificazione di riunioni private](#allow-scheduling-private-meetings)
@@ -106,7 +106,7 @@ Si tratta di un criterio per utente e si applica prima che venga avviata una riu
 
 ![Screenshot che mostra l'icona incontra ora sotto un messaggio](media/meeting-policies-meet-now.png)
 
-### <a name="allow-private-meet-now-coming-soon"></a>Consenti riunione privata ora (disponibile a breve)
+### <a name="allow-private-meet-now"></a>Consenti riunione privata ora
 
 Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se un utente può avviare una riunione privata ad hoc.  
 
@@ -138,7 +138,7 @@ Tieni presente che se disattivi Consenti la pianificazione di **riunioni private
 
 - [Consenti trascrizione](#allow-transcription)
 - [Consenti registrazione cloud](#allow-cloud-recording)
-- [Consenti video IP](#allow-ip-video)
+- [Consentire video IP](#allow-ip-video)
 - [Velocità in bit media (KBs)](#media-bit-rate-kbs)
 - [Abilitare le didascalie Live (anteprima)](#enable-live-captions-preview)
 
@@ -170,7 +170,7 @@ Le riunioni organizzate da Daniela non possono essere registrate e Amanda, che h
 
 Per altre informazioni sulla registrazione di Cloud Meeting, vedere [registrazione di teams Cloud Meeting](cloud-recording.md).
 
-### <a name="allow-ip-video"></a>Consenti video IP
+### <a name="allow-ip-video"></a>Consentire video IP
 
 Si tratta di una combinazione di criteri per ogni organizzazione e per utente. Video è un componente chiave per le riunioni. In alcune organizzazioni gli amministratori potrebbero volere un maggiore controllo sulle riunioni degli utenti che hanno un video. Questa impostazione controlla se il video può essere attivato in riunioni ospitate da un utente e in chiamate di 1:1 e di gruppo avviate da un utente. Riunioni organizzate da un utente che ha attivato questo criterio, consentire la condivisione di video nella riunione da parte dei partecipanti alla riunione, se i partecipanti alla riunione hanno anche il criterio abilitato. I partecipanti alla riunione che non dispongono di criteri assegnati, ad esempio i partecipanti anonimi e federati, ereditano i criteri dell'organizzatore della riunione.
 
@@ -387,8 +387,6 @@ Ecco il comportamento di join delle persone che effettuano la chiamata tramite t
 |   | Tutti gli utenti dell'organizzazione     |Attendere nella sala di attesa         |
 |   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | Attendere nella sala di attesa         |
 
-
-[Articolo completo](meeting-policies-in-teams.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Criteri di messaggistica in teams](messaging-policies-in-teams.md)

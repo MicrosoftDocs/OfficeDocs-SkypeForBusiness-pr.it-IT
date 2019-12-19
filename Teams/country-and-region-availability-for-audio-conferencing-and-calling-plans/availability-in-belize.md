@@ -3,7 +3,7 @@ title: Disponibilità in Belize
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: mikedav, jastark, oscarr, fafan
 ms.topic: reference
 ms.assetid: 46bce770-7c3c-4813-aa3c-26859989a849
 ms.tgt.pltfrm: cloud
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per Belize.
-ms.openlocfilehash: 0a0f1de71a64c0bd9c1cd11cd7570442626a5073
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 2212d4a95c8541c74c6c4706b3fabd3d271bbb1b
+ms.sourcegitcommit: cb394272050d049ebceedb7df835b86362dfd8d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571115"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40741350"
 ---
 # <a name="availability-in-belize"></a>Disponibilità in Belize
 
@@ -41,7 +41,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |No  <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, solo in [pay-per-minute](../audio-conferencing-pay-per-minute.md) <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti di comunicazione  <br/> |
    
@@ -50,7 +50,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
-| Operatori automatici <br/> |Disponibili  <br/> |
+|Operatori automatici <br/> |Disponibili  <br/> |
 |Code di chiamata  <br/> |Disponibili  <br/> |
 |Casella vocale  <br/> |Disponibili  <br/> |
    
@@ -76,7 +76,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Sono disponibili i Crediti comunicazioni?  <br/> |No  <br/> |
+|Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
 Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicazioni per la propria organizzazione](../set-up-communications-credits-for-your-organization.md).
   

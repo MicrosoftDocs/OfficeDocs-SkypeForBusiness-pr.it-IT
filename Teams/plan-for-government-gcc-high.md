@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 71060818ceb826249cb726264c9533172edd1c39
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 12ef34ed9a4602f747b706c08586ecfe5854dcf4
+ms.sourcegitcommit: 43cab5f0fc8692174db09badf3d448e8ff6a50d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573285"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744860"
 ---
 # <a name="plan-for-microsoft-365-government---gcc-high-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-GCC High
 
@@ -40,7 +40,7 @@ Microsoft 365 Government-GCC High Environment garantisce la conformità con i re
 
 Per altre informazioni sul governo Microsoft 365-GCC High offering for US Government Customers in [Office 365 Government plans](https://products.office.com/government/compare-office-365-government-plans), inclusi i [requisiti di ammissibilità](https://products.office.com/government/compare-office-365-government-plans#EligibilityRequirements).
 
-La [Descrizione del servizio governativo degli Stati Uniti di Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) descrive i vantaggi della piattaforma, che sono centrati sui requisiti di conformità delle riunioni negli Stati Uniti.
+La [Descrizione del servizio governativo degli Stati Uniti di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) descrive i vantaggi della piattaforma, che sono centrati sui requisiti di conformità delle riunioni negli Stati Uniti.
 
 
 > [!Tip]
@@ -49,7 +49,7 @@ La [Descrizione del servizio governativo degli Stati Uniti di Office 365](https:
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive i punti di decisione](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere se Microsoft 365 Government-GCC High è appropriato per l'organizzazione.</li><li>Verificare che l'organizzazione soddisfi i requisiti di ammissibilità.</li></ul> |
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere se Microsoft 365 Government-GCC High è appropriato per l'organizzazione.</li><li>Verificare che l'organizzazione soddisfi i requisiti di ammissibilità.</li></ul> |
 
 > [!Note]
 > Microsoft 365 Government-GCC High è disponibile solo negli Stati Uniti. I clienti di enti pubblici non-americani possono scegliere tra diversi [piani governativi di Office 365](https://products.office.com/en/government/compare-office-365-government-plans).
@@ -75,7 +75,7 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 |                             | Funzionalità                     | GCC High       |
 |-----------------------------|-----------------------------|----------------|
 | Base | Accesso | Disponibili |
-| | Presenza | Disponibili |
+| | Icone di presenza | Disponibili |
 | | Presenza unificata (Skype for business e teams Unified) | Disponibili |
 | Attività | Feed | Disponibili |
 |  | Attività personali | Disponibili |
@@ -84,13 +84,13 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 | | Organigramma | Disponibili |
 | | Attività | Disponibili |
 | | Interoperabilità (1:1 Teams-chat Skype for business) | Disponibili |
-| Squadre | Messaggio di canale | Disponibili |
+| Teams | Messaggio di canale | Disponibili |
 | | File di canale | Disponibili |
 | | Scheda OneNote | Nell'arretrato governativo |
 | | Inviare un canale tramite posta elettronica | Non disponibile |
 | | Aggiungi membro | Disponibili |
-| | Accesso Guest | Nell'arretrato governativo |
-|  Riunioni | Pianificare una riunione | Disponibili |
+| | Accesso guest | Nell'arretrato governativo |
+| Riunioni | Pianificare una riunione | Disponibili |
 | | Partecipare a una riunione | Disponibili |
 | | Riunione VoIP | Disponibili |
 | | Condivisione desktop | Disponibili |
@@ -109,7 +109,7 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 | | Skype for business-teams Calling | Disponibili |
 | | Piani per chiamate | Non disponibile |
 | | Servizi di audioconferenza (per consentire ai partecipanti alla riunione di partecipare tramite PSTN) | Disponibili |
-| | Routing diretto di Microsoft Phone System | Nell'arretrato governativo |
+| | Routing diretto di Microsoft Phone System | Disponibili |
 | | Sala di attesa per i chiamanti PSTN | Nell'arretrato governativo |
 | | Coda di chiamata | Nell'arretrato governativo |
 | | Supporto di boss e delegati | Nell'arretrato governativo |

@@ -1,11 +1,11 @@
 ---
-title: Disponibilità in Honduras
-ms.author: crowe
-author: CarolynRowe
+title: Disponibilità in Dominica
+ms.author: v-lanac
+author: LanaChin
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
+ms.reviewer: mikedav, jastark, oscarr, fafan
 ms.topic: reference
-ms.assetid: 3662b214-5798-458d-8dcd-0bd563ad01fd
+ms.assetid: 1eb066bc-394a-434e-87a2-61d257a7e77d
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
@@ -23,51 +23,52 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Honduras.
-ms.openlocfilehash: 666e162de569aefb163a137e30926cf5b30a6a38
+description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per Dominica.
+ms.openlocfilehash: e6d9cc4ef19e152944c5d1f82adaa81e16c26bb5
 ms.sourcegitcommit: cb394272050d049ebceedb7df835b86362dfd8d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/18/2019
-ms.locfileid: "40741100"
+ms.locfileid: "40741589"
 ---
-# <a name="availability-in-honduras"></a>Disponibilità in Honduras
+# <a name="availability-in-dominica"></a>Disponibilità in Dominica
 
 [Trova un altro Paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri di più sulla disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica.
 
-Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Honduras.
+Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per Dominica.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, solo in [pay-per-minute](../audio-conferencing-pay-per-minute.md)  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No <br> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti di comunicazione  <br/> |
+   
    
 ## <a name="phone-system"></a>Sistema telefonico
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
-| Operatori automatici <br/> |Disponibili  <br/> |
-|Code di chiamata  <br/> |Disponibili  <br/> |
-|Casella vocale  <br/> |Disponibili  <br/> |
+|Il Sistema telefonico è disponibile per l'acquisto?  <br/> | Sì <br/> |
+|Operatori automatici <br/> | Disponibili  <br/> |
+|Code di chiamata  <br/> | Disponibili <br/> |
+|Casella vocale  <br/> | Disponibili <br/> |
    
 ## <a name="calling-plans"></a>Piani per chiamate
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> | No <br/> |
+|Minuti disponibili per i Piani per chiamate  <br/> | Non applicabile<br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Tegucigalpa <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Non applicabile  <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |No  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
@@ -85,4 +86,7 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+
+  
+ 
 
