@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2f12467c-8b90-43e6-831b-a0b096427f17
 description: Si può decidere di usare i pool Front-End associati per ottenere protezione dal ripristino di emergenza, ma non è un requisito.
-ms.openlocfilehash: 4aa24c3a5150efbea87cd3837aca9216f047b11e
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 550c336569b604ae20199b419dc104af0609c775
+ms.sourcegitcommit: e43a66a7f769f855dc45c1bb7f83636d0390949b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240036"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "39254395"
 ---
 # <a name="deploy-paired-front-end-pools-for-disaster-recovery-in-skype-for-business-server"></a>Distribuire pool Front End associati per il ripristino di emergenza in Skype for Business Server
  
@@ -29,35 +29,37 @@ Si può decidere di usare i pool Front-End associati per ottenere protezione dal
     
 2. In Generatore di topologie fare clic con il pulsante destro del mouse su uno dei due pool e quindi scegliere **modifica proprietà**.
     
-3. Fare **** clic su resilienza nel riquadro sinistro e quindi selezionare **pool di backup associato** nel riquadro destro.
+3. Fare clic su **resilienza** nel riquadro sinistro e quindi selezionare **pool di backup associato** nel riquadro destro.
     
 4. Nella casella sotto il **pool di backup associato**selezionare il pool che si vuole associare al pool. Solo i pool esistenti che non sono già associati a un altro pool saranno disponibili per la selezione.
     
 5. Selezionare **failover automatico e failback per la voce**e quindi fare clic su **OK**.
     
-    Quando si visualizzano i dettagli su questo pool, il pool associato ora viene visualizzato nel riquadro destro **** in resilienza. 
+    Quando si visualizzano i dettagli su questo pool, il pool associato ora viene visualizzato nel riquadro destro in **resilienza**. 
     
 6. USA generatore di topologia per pubblicare la topologia.
     
-7. Se i due pool non sono stati ancora distribuiti, distribuirli ora e la configurazione verrà completata. È possibile ignorare i due passaggi finali descritti in questa procedura.
+7. Se i due pool non sono stati ancora distribuiti, distribuirli ora e la configurazione verrà completata. È possibile ignorare i passaggi finali di questa procedura.
     
-    Se tuttavia i pool sono già stati distribuiti prima di definire la relazione associata, è necessario completare i due passaggi finali seguenti.
+    Tuttavia, se i pool sono già stati distribuiti prima di definire la relazione associata, è necessario completare la procedura finale seguente.
     
 8. In tutti i server front-end in entrambi i pool eseguire le operazioni seguenti:
     
    ```
-   <system drive>\Program Files\Skype for Business Server 2015\Deployment\Bootstrapper.exe 
+   <system drive>\Program Files\Skype for Business Server 2019\Deployment\Bootstrapper.exe 
    ```
 
     In questo modo vengono configurati altri servizi necessari per il corretto funzionamento delle associazioni di backup.
     
-9. Da un prompt dei comandi di Skype for Business Server Management Shell eseguire le operazioni seguenti: 
+9. Una volta completata l'installazione dei componenti necessari per l'associazione di backup in tutti i server front-end in entrambi i pool, assicurati di riapplicare tutti gli aggiornamenti cumulativi esistenti applicati in precedenza in questi server front-end in entrambi i pool e quindi continuare con il passaggio successivo.
+
+10. Da un prompt dei comandi di Skype for Business Server Management Shell eseguire le operazioni seguenti: 
     
    ```
    Start-CsWindowsService -Name LYNCBACKUP
    ```
 
-10. Costringere i dati dell'utente e della conferenza di entrambi i pool a essere sincronizzati tra loro, con i cmdlet seguenti:
+11. Costringere i dati dell'utente e della conferenza di entrambi i pool a essere sincronizzati tra loro con i cmdlet seguenti:
     
     ```
     Invoke-CsBackupServiceSync -PoolFqdn <Pool1 FQDN>

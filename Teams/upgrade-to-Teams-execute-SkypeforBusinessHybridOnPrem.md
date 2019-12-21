@@ -1,14 +1,14 @@
 ---
-title: Eseguire l'aggiornamento a teams da una distribuzione ibrida o locale di Skype for Business-Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+title: Eseguire l'aggiornamento a teams da una distribuzione locale di Skype for Business-Microsoft Teams
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.date: 01/09/2019
 ms.topic: article
 ms.service: msteams
 audience: admin
-ms.reviewer: dearbeen
-description: Considerazioni per l'aggiornamento a teams da una distribuzione ibrida o locale di Skype for business.
+ms.reviewer: bjwhalen
+description: Considerazioni per l'aggiornamento a teams da una distribuzione locale di Skype for business.
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Teams-upgrade-guidance
@@ -17,14 +17,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 873e15e5b1f64e82889bfda6fa30c5b9394dcf3a
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: b41e716bb115d84b38aa5f2ead25d6347e2e0f1a
+ms.sourcegitcommit: e43a66a7f769f855dc45c1bb7f83636d0390949b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235873"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "37396422"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la distribuzione e l'implementazione] (media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di distribuzione e implementazione")
+![Aggiornare il diagramma di viaggio, enfatizzando la distribuzione e l'implementazione](media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di distribuzione e implementazione")
 
 Questo articolo fa parte della fase di distribuzione e implementazione del viaggio di aggiornamento. Prima di procedere, verificare di aver completato le attività seguenti:
 
@@ -36,34 +36,43 @@ Questo articolo fa parte della fase di distribuzione e implementazione del viagg
 -   [Preparare l'organizzazione](https://aka.ms/SkypeToTeams-UserReadiness)
 -   [Condotto un pilota](https://aka.ms/SkypeToTeams-Pilot)
 
-# <a name="upgrade-to-teams-from-a-skype-for-business-hybrid-or-on-premises-deployment"></a>Eseguire l'aggiornamento a teams da una distribuzione ibrida o locale di Skype for business
+# <a name="upgrade-from-skype-for-business-on-premises-to-teams"></a>Eseguire l'aggiornamento da Skype for business locale a teams
 
-Seguire le indicazioni di questo articolo se si è distribuito Skype for business o Microsoft Lync locale e l'organizzazione vuole eseguire l'aggiornamento a team in modo selettivo, usando più modalità di coesistenza o all-in. Il primo passaggio consiste nel configurare la connettività ibrida con il tenant di Office 365 e quindi trasferire gli utenti a Skype for business online e assegnare loro la modalità di coesistenza e aggiornamento appropriata. 
+Se si è implementato Skype for Business Server o Microsoft Lync locale e l'organizzazione vuole eseguire l'aggiornamento a teams, seguire le istruzioni in questo articolo. È necessario configurare la connettività ibrida con il tenant di Office 365 e determinare i requisiti di coesistenza se si stanno spostando gli utenti in teams in fasi. 
 
 > [!IMPORTANT]
 > Skype for business online verrà ritirato il 31 luglio 2021, dopodiché non sarà più accessibile o supportato. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, ti invitiamo a iniziare subito il tuo viaggio in Microsoft teams. Tieni presente che un aggiornamento corretto allinea la disponibilità tecnica e degli utenti, quindi assicurati di sfruttare le linee guida qui mentre navighi in Microsoft teams.
 
-## <a name="step-1-deploy-hybrid-connectivity"></a>Passaggio 1: distribuire la connettività ibrida 
+## <a name="step-1-configure-hybrid-connectivity"></a>Passaggio 1: configurare la connettività ibrida 
 
-Il presupposto chiave per aggiornare gli utenti ai team consiste nel distribuire la connettività ibrida. Questo potrebbe comportare la distribuzione di una nuova connettività esterna per la distribuzione di Skype for business o Lync esistente oppure semplicemente la configurazione di una relazione ibrida con il tenant di Office 365. 
+Il presupposto chiave per l'aggiornamento degli utenti locali ai team è la configurazione della connettività ibrida per la distribuzione locale di Skype for Business Server. 
 
-Per altre informazioni, Vedi [distribuire la connettività ibrida tra Skype for Business Server e Skype for business online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/deploy-hybrid-connectivity/deploy-hybrid-connectivity).
+Iniziare leggendo il [piano di connettività ibrida](https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/plan-hybrid-connectivity?toc=/SkypeForBusiness/sfbhybridtoc/toc.json) e quindi seguire le attività descritte in [configurare la connettività ibrida](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/deploy-hybrid-connectivity/deploy-hybrid-connectivity).
 
-## <a name="step-2-move-users-to-skype-for-business-online"></a>Passaggio 2: trasferire gli utenti in Skype for business online 
 
-Dopo aver completato la configurazione ibrida, sposta gli utenti in Skype for business online. 
+## <a name="step-2-set-transitional-coexistence-mode-optional"></a>Passaggio 2: impostare la modalità di coesistenza transitoria (facoltativo)
 
-Per altre informazioni, vedere [trasferire utenti da locali a Skype for business online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/deploy-hybrid-connectivity/move-users-from-on-premises-to-skype-for-business-online). 
+La coesistenza e l'interoperabilità tra i client e gli utenti di Skype for business e teams sono definiti dalle modalità di aggiornamento dei team.  Per impostazione predefinita, le organizzazioni sono in modalità isole, che consente agli utenti di usare entrambi i team e i client Skype for business affiancati.
 
-## <a name="step-3-assign-a-coexistence-and-upgrade-mode"></a>Passaggio 3: assegnare una modalità di coesistenza e aggiornamento
+Per un'organizzazione che si sposta in teams, la modalità TeamsOnly è la destinazione finale per ogni utente, anche se non tutti gli utenti devono essere assegnati TeamsOnly (o qualsiasi altra modalità) allo stesso tempo.
 
-Dopo aver spostato gli utenti in Skype for business online, è possibile assegnare loro la modalità di coesistenza appropriata in base al percorso di aggiornamento scelto dall'organizzazione. Per altre informazioni, vedere [impostazione delle impostazioni di coesistenza e aggiornamento](https://aka.ms/SkypeToTeams-SetCoexistence) e [TeamsUpgradePolicy: gestione della migrazione e](migration-interop-guidance-for-teams-with-skype.md#teamsupgradepolicy-managing-migration-and-co-existence)della coesistenza.
+Prima che gli utenti raggiungano la modalità TeamsOnly, le organizzazioni possono facoltativamente usare una qualsiasi delle modalità di coesistenza di Skype for business per garantire una comunicazione prevedibile tra gli utenti che si trovano in modalità TeamsOnly e gli utenti che non sono ancora stati.  Lo scopo delle modalità di coesistenza di Skype for business (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings) è quello di creare un'esperienza semplice e prevedibile per gli utenti finali come organizzazioni di transizione da Skype for business a teams. 
 
-> [!NOTE]
-> Con Skype for Business Server 2019 e un futuro aggiornamento cumulativo di Skype for Business Server 2015, è possibile eseguire il passaggio 2 (spostamento degli utenti in Skype for business online) e il passaggio 3 (aggiornare gli utenti ai team) in un unico passaggio. Altre informazioni verranno fornite dopo il rilascio di Skype for Business Server 2019.
+Quando un utente si trova in una delle modalità Skype for business, tutte le chat in arrivo e le chiamate vengono instradate al client Skype for business dell'utente. Per evitare confusione per gli utenti finali e garantire un corretto routing, le funzionalità di chiamata e chat nel client teams vengono disabilitate quando un utente si trova in una delle modalità Skype for business. Analogamente, la pianificazione delle riunioni in teams viene disabilitata esplicitamente quando gli utenti si trovano nelle modalità SfBOnly o SfBWithTeamsCollab e abilitata esplicitamente quando un utente si trova in modalità SfBWithTeamsCollabAndMeetings.
+
+A seconda dei requisiti, è possibile assegnare la modalità di coesistenza appropriata in base al percorso di aggiornamento scelto dall'organizzazione. Per altre informazioni, Vedi [linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](migration-interop-guidance-for-teams-with-skype.md) e per [impostare le impostazioni di coesistenza e aggiornamento](https://aka.ms/SkypeToTeams-SetCoexistence).
+
+
+## <a name="step-3-move-users-from-skype-for-business-on-premises-to-teams-only"></a>Passaggio 3: trasferire gli utenti da Skype for business locale a teams only
+
+In definitiva, vorrai trasferire gli utenti in modalità TeamsOnly. Questo potrebbe includere uno o due passaggi a seconda dell'ambiente locale corrente.  
+
+Per altre informazioni, vedere [trasferire gli utenti tra locale e il cloud](https://docs.microsoft.com/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud) e [trasferire gli utenti da locale a teams](https://docs.microsoft.com/SkypeForBusiness/hybrid/move-users-from-on-premises-to-teams). 
+
+
 
 ## <a name="phone-system-and-teams-upgrade"></a>Aggiornamento di sistema telefonico e teams
 
-Se si sta eseguendo la transizione della distribuzione ibrida di Skype for business al sistema telefonico con i piani per le chiamate e Microsoft sarà il provider PSTN (Public Switched Telephone Network) e supponendo di aver completato la portabilità del numero di telefono, aggiornare gli utenti a I team eseguiranno automaticamente la transizione delle chiamate PSTN in ingresso ai team.
+Se si sta passando la distribuzione di Skype for business al sistema telefonico con i piani di chiamata, Microsoft sarà il provider PSTN (Public Switched Telephone Network). Supponendo che tu abbia completato la portabilità del numero di telefono, l'aggiornamento degli utenti a teams eseguirà automaticamente la transizione delle chiamate PSTN in ingresso ai team.
 
-Se i piani per le chiamate non sono disponibili, è necessario eseguire la transizione della distribuzione vocale aziendale al routing diretto di Microsoft Phone System. Per aggiornare gli utenti a teams, vedere le [considerazioni aggiuntive per il routing diretto del sistema telefonico](2-envision-make-my-service-decisions-direct-routing.md).
+Se si sta eseguendo la transizione alla distribuzione di Skype for business al sistema telefonico, ma non si usano i piani di chiamata, è necessario eseguire la transizione della distribuzione vocale aziendale al routing diretto di Microsoft Phone System. Per altre informazioni, Vedi [routing diretto del sistema telefonico](direct-routing-landing-page.md).
