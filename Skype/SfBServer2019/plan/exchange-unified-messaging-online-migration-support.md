@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio Exchange Unified Messaging online (ExchUMO) entro il 2020 febbraio. In questo articolo vengono riepilogate le informazioni che i clienti interessati dovrebbero conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 8b8a0590dd53301a93fb9a6b2ed50e0d5dc830ed
-ms.sourcegitcommit: 0f2024740e03af303efc62e7f54aa918a61ca51b
+ms.openlocfilehash: adef85a59a5d0add990196e5b76587b502f052b5
+ms.sourcegitcommit: 4ccc24dcf61cf9b59224b85757f93f8aceae1771
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39890580"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "40854091"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
@@ -185,7 +185,7 @@ Ti consigliamo vivamente di avviare prima la configurazione dei nuovi operatori 
 | AA | Caratteristiche del servizio | Trattamento after-hours and Holidays  |  | Y | Y    |
 | AA | Caratteristiche del servizio | Messaggio di saluto personalizzato con testo in sintesi vocale  |  | Y | Y    |
 | AA | Caratteristiche del servizio | Chiamata di estensione   | Raggiungimento di un utente tramite la chiamata dell'estensione  | Y   | Y    |
-| AA | Caratteristiche del servizio | Cassetta postale per i chiamanti AA per uscire da un messaggio    |  | CY19   | Y    |
+| AA | Caratteristiche del servizio | Cassetta postale per i chiamanti AA per uscire da un messaggio    |  | Y   | Y    |
 | AA | Caratteristiche del servizio | Più assegnazioni di numeri PSTN a un AA|  | Y | Y    |
 | AA | Caratteristiche di amministratore tenant | Amministrazione portale Web   |  | Y | N    |
 | AA | Caratteristiche di amministratore tenant | Cmdlet di PowerShell  |  | Y | Y    |
