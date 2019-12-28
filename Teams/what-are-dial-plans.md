@@ -19,26 +19,26 @@ f1keywords: ms.teamsadmincenter.voice.dialplans.overview
 ms.custom:
 - Calling Plans
 description: "Informazioni sul tipo di piani per chiamate telefoniche (PSTN Calling dial plan) disponibili con teams e su come sceglierne uno per l'organizzazione.  "
-ms.openlocfilehash: 0dadb0335f622bb297d4299aafc50a40dafcc583
-ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
+ms.openlocfilehash: bd41b257af80a3a21da1013e604214d1e0303edf
+ms.sourcegitcommit: 472909325a47cf0ad00bed949d02ab5766d35832
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40069327"
+ms.lasthandoff: 12/28/2019
+ms.locfileid: "40891215"
 ---
 # <a name="what-are-dial-plans"></a>Che cosa sono i piani di chiamata?
 
 [] Un piano di chiamata è un insieme denominato di regole di normalizzazione che traducono i numeri di telefono composti da un singolo utente in un formato alternativo (in genere E.164) per l'autorizzazione delle chiamate e l'instradamento delle chiamate.
 
-Un dial plan è costituito da una o più regole di normalizzazione che definiscono il modo in cui i numeri di telefono espressi in diversi formati vengono tradotti in un formato alternativo. La stessa stringa di chiamata può essere interpretata e tradotta in modo diverso nei diversi piani di chiamata, quindi, a seconda del tipo di dial plan assegnato a un utente specifico, lo stesso numero di telefono può essere tradotto e instradato in modo diverso.
+Un dial plan è costituito da una o più regole di normalizzazione che definiscono il modo in cui i numeri di telefono espressi in diversi formati vengono tradotti in un formato alternativo. La stessa stringa di chiamata può essere interpretata e tradotta in modo diverso nei diversi piani di chiamata, quindi, a seconda del tipo di dial plan assegnato a un utente specifico, lo stesso numero di telefono può essere tradotto e instradato in modo diverso. Può essere disponibile un massimo di piani di 1.000 tenant.
 
 Per creare e gestire piani di chiamata di tenant, vedere [creare e gestire piani di chiamata](create-and-manage-dial-plans.md) .
 
 ## <a name="tenant-dial-plan-scope"></a>Ambito tenant del piano di chiamata
 
-L'ambito di un dial plan determina il livello gerarchico in cui è possibile applicare il dial plan. I client ottengono il dial plan appropriato tramite le impostazioni di provisioning fornite automaticamente quando gli utenti accedono a teams. L'amministratore può gestire e assegnare livelli di ambito di dial plan usando l'interfaccia di amministrazione di Microsoft teams o Remote PowerShell.
+L'ambito di un piano di chiamata determina il livello gerarchico in cui il piano di chiamata può essere applicato. I client ottengono il dial plan appropriato tramite le impostazioni di provisioning fornite automaticamente quando gli utenti accedono a teams. L'amministratore può gestire e assegnare livelli di ambito di dial plan usando l'interfaccia di amministrazione di Microsoft teams o Remote PowerShell.
 
-In teams sono disponibili due tipi di dial plan: con ambito di servizio e a livello di tenant (ovvero per l'organizzazione). Viene definito un dial plan con ambito servizio per ogni paese o area geografica in cui è disponibile il sistema telefonico. A ogni utente viene assegnato automaticamente il dial plan del paese di servizio che corrisponde alla posizione di utilizzo assegnata all'utente. Non è possibile modificare il dial plan per il paese di servizio, ma si possono creare piani di dial con ambito tenant, che aumentano il dial plan paese di servizio. Man mano che i clienti hanno effettuato il provisioning, ottengono un "piano di chiamata efficace", che è una combinazione di dial plan del paese di servizio e il dial plan del tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
+In teams sono disponibili due tipi di dial plan: con ambito di servizio e a livello di tenant (ovvero per l'organizzazione). Viene definito un dial plan con ambito servizio per ogni paese o area geografica in cui è disponibile il sistema telefonico. A ogni utente viene assegnato automaticamente il dial plan del paese di servizio che corrisponde alla posizione di utilizzo assegnata all'utente. Non è possibile modificare il dial plan per il paese di servizio, ma si possono creare piani di dial con ambito tenant, che aumentano il dial plan paese di servizio. Man mano che i clienti hanno effettuato il provisioning, ottengono un "piano di chiamata efficace", che è una combinazione di dial plan del paese di servizio e il dial plan del tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nei piani di chiamata del tenant che potrebbero già esistere nel dial plan paese di servizio.
 
 I piani di chiamata del tenant possono essere ulteriormente suddivisi in due ambiti: tenant-scope o User-scope. Se un tenant definisce e assegna un dial plan con ambito utente, verrà eseguito il provisioning di un utente con un piano di chiamata effettivo del dial plan del paese di servizio dell'utente e del dial plan utente assegnato. Se un tenant definisce un dial plan con ambito tenant ma non assegna un dial plan con ambito utente, verrà eseguito il provisioning di un utente con un piano di chiamata effettivo del dial plan del paese di servizio dell'utente e del dial plan del tenant.
 
