@@ -3,46 +3,6 @@
 
 
 
-## <a name="week-of-november-18-2019"></a>Settimana del 18 novembre 2019
-
-
-| Pubblicato in |Titolo argomento | Modificare |
-|------|------------|--------|
-| 11/18/2019 | [Barriere informative in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams) | modificato |
-| 11/18/2019 | [Requisiti di Microsoft teams rooms](/MicrosoftTeams/room-systems/requirements) | modificato |
-| 11/18/2019 | [Creare una coda di chiamata](/MicrosoftTeams/create-a-phone-system-call-queue) | modificato |
-| 11/18/2019 | [Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario](/MicrosoftTeams/expand-teams-across-your-org/healthcare/healthcare-templates) | modificato |
-| 11/18/2019 | [Licenze di Microsoft teams rooms](/MicrosoftTeams/room-systems/skype-room-systems-v2) | modificato |
-| 11/19/2019 | [Presenza utente in Teams](/MicrosoftTeams/presence-admins) | modificato |
-| 11/19/2019 | [Gestire il ciclo di vita dei canali privati in Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management) | modificato |
-| 11/19/2019 | [Licenze di Microsoft teams rooms](/MicrosoftTeams/room-systems/skype-room-systems-v2) | modificato |
-| 11/19/2019 | [Configurare Credito per la comunicazione per la propria organizzazione](/MicrosoftTeams/set-up-communications-credits-for-your-organization) | modificato |
-| 11/19/2019 | [Accesso guest in Microsoft Teams](/MicrosoftTeams/guest-access) | modificato |
-| 11/19/2019 | [Gestire le impostazioni delle riunioni](/MicrosoftTeams/meeting-settings-in-teams) | modificato |
-| 11/20/2019 | [Comunicare con utenti di altre organizzazioni in Microsoft Teams](/MicrosoftTeams/communicate-with-users-from-other-organizations) | modificato |
-| 11/20/2019 | [Gestire le impostazioni di Microsoft Teams per l'organizzazione](/MicrosoftTeams/enable-features-office-365) | modificato |
-| 11/20/2019 | [Ottenere client per Microsoft Teams](/MicrosoftTeams/get-clients) | modificato |
-| 11/20/2019 | [Modelli di identità e autenticazione in Microsoft Teams](/MicrosoftTeams/identify-models-authentication) | modificato |
-| 11/20/2019 | [Aspetto della linea condivisa in Microsoft Teams](/MicrosoftTeams/shared-line-appearance) | modificato |
-| 11/21/2019 | [Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams](/MicrosoftTeams/audit-log-events) | modificato |
-| 11/21/2019 | [Effettuare la migrazione da Slack a Microsoft Teams](/MicrosoftTeams/migrate-slack-to-teams) | modificato |
-| 11/21/2019 | [Usare Network Planner per Microsoft Teams](/MicrosoftTeams/network-planner) | modificato |
-| 11/21/2019 | [Domande frequenti sui criteri di conservazione di Microsoft Teams](/MicrosoftTeams/retention-policies-faq) | modificato |
-| 11/21/2019 | [Criteri di conservazione in Microsoft Teams](/MicrosoftTeams/retention-policies) | modificato |
-| 11/21/2019 | [Supporto per la versione](/MicrosoftTeams/room-systems/srs2-lifecycle-support) | modificato |
-| 11/21/2019 | [Panoramica di team e canali in Microsoft Teams](/MicrosoftTeams/teams-channels-overview) | modificato |
-| 11/21/2019 | [Pubblicare app nel catalogo delle app del tenant di Microsoft Teams](/MicrosoftTeams/tenant-apps-catalog-teams) | modificato |
-| 11/22/2019 | [Benvenuto in Microsoft Teams](/MicrosoftTeams/teams-overview) | modificato |
-| 11/22/2019 | [Usare le schede predefinite e personalizzate in Microsoft Teams](/MicrosoftTeams/built-in-custom-tabs) | modificato |
-| 11/22/2019 | [Chiamare il parcheggio e il recupero in Microsoft Teams](/MicrosoftTeams/call-park-and-retrieve) | modificato |
-| 11/22/2019 | [Creare una coda di chiamata](/MicrosoftTeams/create-a-phone-system-call-queue) | modificato |
-| 11/22/2019 | [Gestire i dispositivi in Microsoft Teams](/MicrosoftTeams/device-management) | modificato |
-| 11/22/2019 | [Ottenere client per Microsoft Teams](/MicrosoftTeams/get-clients) | modificato |
-| 11/22/2019 | [Recuperare numeri di telefono per gli utenti](/MicrosoftTeams/getting-phone-numbers-for-your-users) | modificato |
-| 11/22/2019 | [Usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](/MicrosoftTeams/use-advisor-teams-roll-out) | modificato |
-| 11/22/2019 | [Gestire l'accesso degli utenti a Microsoft Teams](/MicrosoftTeams/user-access) | modificato |
-
-
 ## <a name="week-of-november-25-2019"></a>Settimana del 25 novembre 2019
 
 
@@ -173,3 +133,11 @@
 | 12/18/2019 | [Pianificare l'implementazione di Microsoft 365 Government-GCC High Deployment-Microsoft Teams](/MicrosoftTeams/plan-for-government-gcc-high) | modificato |
 | 12/18/2019 | [Telefoni e dispositivi per Teams](/MicrosoftTeams/teams-ip-phones) | modificato |
 | 12/19/2019 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
+
+
+## <a name="week-of-december-23-2019"></a>Settimana del 23 dicembre 2019
+
+
+| Pubblicato in |Titolo argomento | Modificare |
+|------|------------|--------|
+| 12/27/2019 | [Che cosa sono i piani di chiamata?](/MicrosoftTeams/what-are-dial-plans) | modificato |

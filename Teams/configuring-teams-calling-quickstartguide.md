@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 87670ea398150e4895f2d87ccc48f60aba2d1377
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: d0bebe58780456435388f9f5c2b5ef75478dda12
+ms.sourcegitcommit: e59914458b4c22cc12556795468bc019e00a8940
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517059"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910004"
 ---
 <a name="quick-start-guide-configuring-calling-plans-in-microsoft-teams"></a>Guida introduttiva: configurazione di piani di chiamata in Microsoft Teams
 ==============================================================
@@ -44,12 +44,12 @@ Per abilitare la scheda **chiamate** in teams gli utenti devono avere la chiamat
 
 ## <a name="prerequisites-for-enabling-the-dial-pad-in-teams"></a>Prerequisiti per l'abilitazione della **tastiera del telefono** in teams
 Per abilitare la scheda **tastiera** del telefono in teams e consentire agli utenti di effettuare e ricevere chiamate PSTN, è necessario eseguire il provisioning degli utenti per il sistema telefonico e per i piani di chiamata. Per informazioni su come configurare i piani per le chiamate, vedere [configurare i piani](https://docs.microsoft.com/microsoftteams/set-up-calling-plans)per le chiamate.
-
+Inoltre, per gli utenti di teams only, devi assicurarti che "Consenti chiamate private" sia abilitato nei criteri di chiamata dei team. Per altre informazioni, vedere [gestire i team durante la transizione al nuovo centro di amministrazione di Microsoft teams](https://docs.microsoft.com/microsoftteams/manage-teams-skypeforbusiness-admin-center) .
 > [!NOTE]
 > È anche possibile usare il routing diretto per consentire agli utenti di effettuare e ricevere chiamate PSTN. Per informazioni su come configurare il routing diretto, vedere [configurare il routing diretto](https://docs.microsoft.com/microsoftteams/direct-routing-configure).
 
 ## <a name="using-teamsupgradepolicy-to-control-where-calls-land"></a>Uso di TeamsUpgradePolicy per controllare la posizione delle chiamate
-Per controllare se le chiamate in arrivo (e le chat) atterrano in teams o in Skype for business, gli amministratori usano TeamsUpgradePolicy, usando l'interfaccia di [amministrazione di Microsoft teams](https://aka.ms/teamsadmincenter) o usando una sessione remota di Windows PowerShell con [Skype for business](https://docs.microsoft.com/powershell/module/skype) cmdlet.
+Per controllare se le chiamate in arrivo (e le chat) atterrano in teams o in Skype for business, gli amministratori usano TeamsUpgradePolicy, usando l'interfaccia di [amministrazione di Microsoft teams](https://aka.ms/teamsadmincenter) o usando una sessione remota di Windows PowerShell con i cmdlet di [Skype for business](https://docs.microsoft.com/powershell/module/skype) .
 
 
 La configurazione predefinita di TeamsUpgradePolicy è la modalità Islands, progettata per garantire che i flussi di lavoro aziendali esistenti non vengano interrotti durante la distribuzione di team. Per impostazione predefinita, le chiamate VoIP, PSTN e federate agli utenti continueranno a essere instradate a Skype for business finché non si aggiorna il criterio per abilitare la chiamata in ingresso ai team.  Quando i destinatari sono in modalità isole:

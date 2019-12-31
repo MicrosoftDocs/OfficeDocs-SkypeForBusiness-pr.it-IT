@@ -13,12 +13,12 @@ ms.assetid: 24860c05-40a4-436b-a44e-f5fcb9129e98
 ms.collection:
 - M365-collaboration
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams in un ambiente ibrido con Exchange in locale.
-ms.openlocfilehash: 783e5af7f0325ecd78e613b445544c5231db46ab
-ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
+ms.openlocfilehash: cc9b46554bcbef227bc6f721a7af93331d9552ca
+ms.sourcegitcommit: e59914458b4c22cc12556795468bc019e00a8940
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38675410"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "40910054"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-on-premises"></a>Distribuire le sale di Microsoft teams con Exchange in locale
 
@@ -44,11 +44,11 @@ Se si distribuiscono le sale di Microsoft teams con Exchange locale, si utilizze
 
   - È necessario avere Skype for business online (piano 2) o versione successiva nel piano di Office 365. Il piano deve supportare le funzionalità di conferenza.
   
-  - - Se si ha bisogno di VoIP aziendale (telefonia PSTN) con i provider di servizi di telefonia per Microsoft teams Rooms è necessario Skype for business online (piano 3).
+  - Se si ha bisogno di VoIP aziendale (telefonia PSTN) con i provider di servizi di telefonia per Microsoft teams Rooms è necessario Skype for business online (piano 3).
   
-  - - Gli utenti del tenant devono avere cassette postali di Exchange.
+  - Gli utenti del tenant devono avere cassette postali di Exchange.
   
-  - - L'account di Microsoft teams Rooms richiede una licenza di Skype for business online (piano 2) o Skype for business online (piano 3), ma non richiede una licenza di Exchange Online.
+  - L'account di Microsoft teams Rooms richiede una licenza di Skype for business online (piano 2) o Skype for business online (piano 3), ma non richiede una licenza di Exchange Online.
 
 - Assegnare una licenza di Skype for Business Server all'account di Microsoft teams rooms.
 
@@ -144,9 +144,9 @@ Skype for Business Online PowerShell viene usato per gestire i servizi sia per M
 
 2. Ottenere l'indirizzo SIP dell'account:
 
-  ``` Powershell
-   $rm = Get-Csonlineuser -identity <insert SIP address> | select -expandproperty sipaddress
-   ```
+   ``` Powershell
+    $rm = Get-Csonlineuser -identity <insert SIP address> | select -expandproperty sipaddress
+    ```
 
 3. Per abilitare l'account di Microsoft teams rooms, eseguire questo comando:
 
