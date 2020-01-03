@@ -16,12 +16,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft teams.
-ms.openlocfilehash: d7a491a64e32edef61b067c864c21f41e19f267d
-ms.sourcegitcommit: c15ab82834005b9a19247e06488f1f21161fc426
+ms.openlocfilehash: 942070f9c77fb16895dd15e1920198f3604150f9
+ms.sourcegitcommit: 9c743b267b46a475a7da51c0899467960421ad8a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/13/2019
-ms.locfileid: "40020050"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "40929562"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -132,7 +132,7 @@ Per informazioni su come gestire il ciclo di vita dei canali privati nell'organi
 
 ## <a name="private-channel-sharepoint-sites"></a>Siti di SharePoint per canali privati
 
-Ogni canale privato ha una raccolta siti di SharePoint ottimizzata per la condivisione di file e il provisioning rapido. La raccolta siti separata consente di garantire l'accesso ai file di canale privato è limitato solo ai membri del canale privato rispetto al sito del team in cui i proprietari del team hanno accesso a tutti gli asset all'interno della raccolta siti. Queste raccolte siti vengono create con una raccolta documenti per impostazione predefinita e possono essere facilmente migliorate per una raccolta siti completa tramite l' [interfaccia di gestione del sito](https://support.office.com/article/Enable-or-disable-site-collection-features-A2F2A5C2-093D-4897-8B7F-37F86D83DF04). Ogni raccolta siti viene creata nella stessa area geografica della raccolta siti del team padre. Questi siti leggeri hanno un ID modello personalizzato, "TEAMCHANNEL # 0", per semplificare la gestione tramite le API PowerShell e Graph.
+Ogni canale privato ha una raccolta siti di SharePoint ottimizzata per la condivisione di file e il provisioning rapido. La raccolta siti separata consente di garantire l'accesso ai file di canale privato è limitato solo ai membri del canale privato rispetto al sito del team in cui i proprietari del team hanno accesso a tutti gli asset all'interno della raccolta siti. Queste raccolte siti vengono create con una raccolta documenti per impostazione predefinita e possono essere facilmente migliorate per una raccolta siti completa tramite l' [interfaccia di gestione del sito](https://support.office.com/article/Enable-or-disable-site-collection-features-A2F2A5C2-093D-4897-8B7F-37F86D83DF04). Ogni raccolta siti viene creata nella stessa area geografica della raccolta siti del team padre. Questi siti leggeri hanno un ID modello personalizzato, "TEAMCHANNEL # 0", per semplificare la gestione tramite le API PowerShell e Graph.  In base alla progettazione non sono visibili nell'interfaccia di amministrazione di SharePoint.
 
 Per contenere un numero maggiore di raccolte siti per tenant, il limite è aumentato da 500.000 a 2 milioni. Una raccolta siti canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dalla raccolta siti del team padre.  L'appartenenza al proprietario della raccolta siti e ai gruppi di membri viene mantenuta sincronizzata con l'appartenenza del canale privato all'interno di teams. Tutte le modifiche apportate all'appartenenza al proprietario o ai gruppi di membri in SharePoint Online verranno ripristinate automaticamente nell'appartenenza a un canale privato entro quattro ore. In scenari in cui alcuni utenti devono accedere ai documenti senza dover accedere ai messaggi del canale privato, aggiungerli al gruppo visitatori del sito o a un nuovo gruppo separato da proprietari e membri.
 
