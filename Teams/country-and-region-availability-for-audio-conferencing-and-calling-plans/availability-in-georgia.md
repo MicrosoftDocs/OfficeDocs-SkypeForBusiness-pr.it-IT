@@ -3,7 +3,7 @@ title: Disponibilità in Georgia
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: mikedav, jastark, oscarr, fafan
 ms.topic: reference
 ms.assetid: dda0070b-16ec-43ca-ac81-e390aea630d2
 ms.tgt.pltfrm: cloud
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Georgia.
-ms.openlocfilehash: c6745aac2f50e16d973f925e0b0da59744af7324
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: fa419a70674852e47e70bba2da5e922339b3dd33
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572912"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952779"
 ---
 # <a name="availability-in-georgia"></a>Disponibilità in Georgia
 
@@ -41,8 +41,8 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |No  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Tbilisi</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, solo in [pay-per-minute](../audio-conferencing-pay-per-minute.md)  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti di comunicazione  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -76,7 +76,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Sono disponibili i Crediti comunicazioni?  <br/> |No  <br/> |
+|Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
 Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicazioni per la propria organizzazione](../set-up-communications-credits-for-your-organization.md).
   

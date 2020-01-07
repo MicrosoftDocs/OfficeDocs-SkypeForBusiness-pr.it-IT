@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
 description: Questo articolo illustra come distribuire la gestione dei dispositivi Microsoft teams rooms in modo integrato e completo con Azure monitor.
-ms.openlocfilehash: a7a71fa9fa87bd8cfb424234d6ffcedf46039115
-ms.sourcegitcommit: 000957709b841ce55a6813ccc2fbe745b1a9295b
+ms.openlocfilehash: e428b54f1a91c8443000dafa3270d2283dc1d029
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39218043"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952789"
 ---
 # <a name="deploy-no-loc-textmicrosoft-teams-rooms-management-with-no-loc-textazure-monitor"></a>Distribuire :::no-loc text="Microsoft Teams Rooms"::: la gestione con:::no-loc text="Azure Monitor":::
 
@@ -449,7 +449,7 @@ Se i :::no-loc text="Microsoft Teams Rooms"::: dispositivi sono già stati distr
 
 7.  :::no-loc text="Microsoft Teams Rooms":::i dispositivi devono installare e configurare :::no-loc text="Microsoft Monitoring"::: l'agente con il secondo riavvio.
 
-```
+```PowerShell
 # Install-MMAgent.ps1
 <#
 Date:        04/20/2018

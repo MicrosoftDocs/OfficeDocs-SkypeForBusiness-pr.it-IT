@@ -12,12 +12,12 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: aeab9235b54138d649cee2f5e67a76a109c36c6a
-ms.sourcegitcommit: b8e16703e4611ca2bde55896ec158b33be4f9ba0
+ms.openlocfilehash: 4e1c554d5ae21d845fed9a543875feb631e0e264
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39842478"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952729"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft teams rooms 
  
@@ -32,7 +32,7 @@ Con la configurazione aggiuntiva, la gestione remota è possibile usando Microso
 
 Per raccogliere i log, è necessario richiamare lo script di raccolta log fornito con l'app Microsoft teams rooms. In modalità amministratore avviare un prompt dei comandi con privilegi elevati ed eseguire il comando seguente:
   
-```
+```PowerShell
 powershell -ExecutionPolicy unrestricted c:\rigel\x64\scripts\provisioning\ScriptLaunch.ps1 CollectSrsV2Logs.ps1
 ```
 
@@ -116,7 +116,7 @@ Per eseguire un'operazione di gestione:
     
 Per ottenere i dispositivi allegati
   
-```
+```PowerShell
 invoke-command {Write-Host "VIDEO DEVICES:" 
 gwmi -Class Win32_PnPEntity | where {$_.PNPClass -eq "Image"} | Format-Table Name,Status,Present; Write-Host "AUDIO DEVICES:" 
 gwmi -Class Win32_PnPEntity | where {$_.PNPClass -eq "Media"} | Format-Table Name,Status,Present; Write-Host "DISPLAY DEVICES:" 
@@ -125,26 +125,26 @@ gwmi -Class Win32_PnPEntity | where {$_.PNPClass -eq "Monitor"} | Format-Table N
 
 Ottenere lo stato dell'app
   
-```
+```PowerShell
 invoke-command { $package = get-appxpackage -User Skype -Name Microsoft.SkypeRoomSystem; if ($package -eq $null) {Write-host "SkypeRoomSystems not installed."} else {write-host "SkypeRoomSystem Version : " $package.Version}; $process = Get-Process -Name "Microsoft.SkypeRoomSystem" -ErrorAction SilentlyContinue; if ($process -eq $null) {write-host "App not running."} else {$process | format-list StartTime,Responding}}  -ComputerName <Device fqdn>
 ```
 
 Ottenere informazioni di sistema
   
-```
+```PowerShell
 invoke-command {gwmi -Class Win32_ComputerSystem | Format-List PartOfDomain,Domain,Workgroup,Manufacturer,Model
 gwmi -Class Win32_Bios | Format-List SerialNumber,SMBIOSBIOSVersion} -ComputerName <Device fqdn>
 ```
 
 Riavviare il sistema
   
-```
+```PowerShell
 invoke-command { Shutdown /r /t 0 } -ComputerName <Device fqdn>
 ```
 
 Recuperare i registri
   
-```
+```PowerShell
 $targetDevice = "<Device fqdn> "
 $logFile = invoke-command {$output = Powershell.exe -ExecutionPolicy Bypass -File C:\Rigel\x64\Scripts\Provisioning\ScriptLaunch.ps1 CollectSrsV2Logs.ps1
 Get-ChildItem -Path C:\Rigel\*.zip | Sort-Object -Descending -Property LastWriteTime | Select-Object -First 1} -ComputerName $targetDevice
@@ -154,7 +154,7 @@ Copy-Item -Path $logFile.FullName -Destination .\ -FromSession $session; invoke-
 
 Spingere un file di configurazione XML (o un elemento grafico del tema)
   
-```
+```XML
 $movefile = "<path>";
 $targetDevice = "\\<Device fqdn> \Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState\SkypeSettings.xml"; 
 Copy-Item $movefile $targetDevice 
@@ -174,7 +174,7 @@ Per gestire manualmente gli aggiornamenti e non è possibile seguire la procedur
 1. Estrai il pacchetto dal file [MSI](https://go.microsoft.com/fwlink/?linkid=851168) di installazione a una condivisione a cui il dispositivo può accedere.
 2. Eseguire lo script seguente per la destinazione dei dispositivi Microsoft teams Rooms \<,\> modificando la condivisione alla condivisione del dispositivo in base alle esigenze:
     
-```
+```PowerShell
 Add-AppxPackage -Update -ForceApplicationShutdown -Path '\\<share>\$oem$\$1\Rigel\x64\Ship\AppPackages\*\*.appx' -DependencyPath (Get-ChildItem '\\<share>\$oem$\$1\Rigel\x64\Ship\AppPackages\*\Dependencies\x64\*.appx' | Foreach-Object {$_.FullName})
 ```
 

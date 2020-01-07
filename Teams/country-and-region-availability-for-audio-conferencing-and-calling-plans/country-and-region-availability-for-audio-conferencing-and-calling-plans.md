@@ -1,6 +1,5 @@
 ---
 title: Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica
-ms.date: 03/18/2019
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -25,12 +24,12 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 description: Puoi selezionare un paese/un’area geografica per vedere se sono disponibili o meno Audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e i numeri verdi e a tariffa.
-ms.openlocfilehash: d98e085667c97dbf4b4afc6dfc67fe1eb847d731
-ms.sourcegitcommit: cb394272050d049ebceedb7df835b86362dfd8d1
+ms.openlocfilehash: 4d7e1f2f4481baf51c6c3f619f47dc9440d957da
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40741390"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952439"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica
 
@@ -47,7 +46,7 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Bahamas](availability-in-the-bahamas.md)
 > - [Bahrein](availability-in-bahrain.md)
 > - [Barbados](availability-in-barbados.md)
-> - [Bielorussia](availability-in-belarus.md)
+> - [Belarus](availability-in-belarus.md)
 > - [Belgio](availability-in-belgium.md)
 > - [Belize](availability-in-belize.md)
 > - [Benin](availability-in-benin.md)
@@ -58,7 +57,7 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Bulgaria](availability-in-bulgaria.md)
 > - [Cambogia](availability-in-cambodia.md)
 > - [Canada](availability-in-canada.md)
-> - [Cayman Islands](availability-in-the-cayman-islands.md)
+> - [Isole Cayman](availability-in-the-cayman-islands.md)
 > - [Cile](availability-in-chile.md)
 > - [Cina](availability-in-china.md)
 > - [Colombia](availability-in-colombia.md)
@@ -121,7 +120,7 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Qatar](availability-in-qatar.md)
 > - [Romania](availability-in-romania.md)
 > - [Russia](availability-in-russia.md)
-> - [Saint Kitts and Nevis](availability-in-saint-kitts-and-nevis.md)
+> - [Saint Kitts e Nevis](availability-in-saint-kitts-and-nevis.md)
 > - [Saint Lucia](availability-in-saint-lucia.md)
 > - [Arabia Saudita](availability-in-saudi-arabia.md)
 > - [Serbia](availability-in-serbia.md)
@@ -147,7 +146,7 @@ Puoi selezionare un paese o un'area geografica per vedere quali sono le caratter
 > - [Venezuela](availability-in-venezuela.md)
 > - [Vietnam](availability-in-vietnam.md)
 
-**Se si sta cercando un foglio di calcolo con tutti i paesi e le aree geografiche, scaricare e salvare il foglio di calcolo per la [disponibilità del paese/area geografica cloud](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/country-and-region-availabilty/country-and-region-availability-(v-12182019)-(en-us).xlsx?raw=true)**.
+**Se si sta cercando un foglio di calcolo con tutti i paesi e le aree geografiche, scaricare e salvare il foglio di calcolo per la [disponibilità del paese/area geografica cloud](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/country-and-region-availabilty/country-and-region-availability-(v-01012020)-(en-us).xlsx?raw=true)**.
 
 ***
 

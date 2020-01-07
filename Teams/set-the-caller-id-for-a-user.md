@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: The Phone System in Office 365 provides a default caller ID that is the user's assigned telephone number. You can either change or block the caller ID (also called a Calling Line ID) for a user. You can learn more about how to use caller ID in your organization by going How can caller ID be used in your organization.
-ms.openlocfilehash: 10027fa5b1456bd744f14bae763939b395862d4b
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 2bee659567f3863b94fe97d408a78f40613d65df
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571294"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952469"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
 The Phone System in Office 365 provides a default caller ID that is the user's assigned telephone number. You can either change or block the caller ID (also called a Calling Line ID) for a user. You can learn more about how to use caller ID in your organization by going [How can caller ID be used in your organization](how-can-caller-id-be-used-in-your-organization.md).
@@ -71,7 +71,7 @@ Per ulteriori informazioni su queste impostazioni e su come usarle, visita [Come
     
 4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
     
-    Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx).
+    Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx).
     
 - **Avviare una sessione di Windows PowerShell**
     
@@ -82,72 +82,72 @@ Per ulteriori informazioni su queste impostazioni e su come usarle, visita [Come
    > [!NOTE]
    > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
    > 
-   ```
+   ```PowerShell
     Import-Module -Name SkypeOnlineConnector
     $credential = Get-Credential
     $session = New-CsOnlineSession -Credential $credential
     Import-PSSession $session
    ```
 
-Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/EN-US/library/dn568015.aspx) o [configurare il computer per Windows PowerShell](/skypeforbusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
+Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx) o [configurare il computer per Windows PowerShell](/skypeforbusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
     
 ### <a name="see-all-of-the-caller-id-policy-settings-in-your-organization"></a>Consultare tutte le impostazioni dei criteri ID chiamante nella propria organizzazione
 
 - Per visualizzare tutte le impostazioni dei criteri ID chiamante nell'organizzazione, eseguire:
 
-  ```
+  ```PowerShell
   Get-CsCallingLineIdentity |fl
   ```
-  Vedere altri esempi e dettagli per [Get-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793856.aspx).
+  Vedere altri esempi e dettagli per [Get-CsCallingLineIdentity](https://technet.microsoft.com/library/mt793856.aspx).
     
 ### <a name="create-a-new-caller-id-policy-for-your-organization"></a>Creare un nuovo criterio ID chiamante per la propria organizzazione
 
 
 - Per creare un nuovo criterio ID chiamante che imposta l'ID chiamante su Anonimo, eseguire:
     
-  ```
+  ```PowerShell
   New-CsCallingLineIdentity  -Identity Anonymous -Description "Anonymous policy" -CallingIDSubstitute Anonymous -EnableUserOverride $false
   ```
   > [!NOTE]  
   > In qualsiasi caso, il campo "Numero di servizio" non deve iniziare con un "+".
 
-  Vedere altri esempi e dettagli per [New-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793855.aspx).
+  Vedere altri esempi e dettagli per [New-CsCallingLineIdentity](https://technet.microsoft.com/library/mt793855.aspx).
     
 - Per applicare il nuovo criterio creato ad Amos Marble, eseguire:
     
-  ```
+  ```PowerShell
    Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName Anonymous
   ```
-  Altre informazioni sul cmdlet [Grant-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793857.aspx).
+  Altre informazioni sul cmdlet [Grant-CsCallingLineIdentity](https://technet.microsoft.com/library/mt793857.aspx).
     
-Se è già stato creato un criterio, è possibile usare il cmdlet [set-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793854.aspx) per apportare modifiche ai criteri esistenti e quindi utilizzare il cmdlet [Grant-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793857.aspx) per applicare le impostazioni agli utenti.
+Se è già stato creato un criterio, è possibile usare il cmdlet [set-CsCallingLineIdentity](https://technet.microsoft.com/library/mt793854.aspx) per apportare modifiche ai criteri esistenti e quindi utilizzare il cmdlet [Grant-CsCallingLineIdentity](https://technet.microsoft.com/library/mt793857.aspx) per applicare le impostazioni agli utenti.
   
 ### <a name="set-it-so-the-incoming-caller-id-is-blocked"></a>Impostare in modo che l'ID chiamante in entrata venga bloccato
 
 - Per bloccare l'ID chiamante in arrivo, eseguire:
     
-  ```
+  ```PowerShell
   Set-CsCallingLineIdentity  -Identity "Block Incoming" -BlockIncomingPstnCallerID $true -EnableUserOverride $true
   ```
-  Vedere altri esempi e dettagli per [set-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793854.aspx).
+  Vedere altri esempi e dettagli per [set-CsCallingLineIdentity](https://technet.microsoft.com/library/mt793854.aspx).
     
 - Per applicare l'impostazione dei criteri creata a un utente dell'organizzazione, eseguire:
     
-  ```
+  ```PowerShell
   Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName "Block Incoming"
   ```
-    Altre informazioni sul cmdlet [Grant-CsCallingLineIdentity](https://technet.microsoft.com/en-us/library/mt793857.aspx).
+    Altre informazioni sul cmdlet [Grant-CsCallingLineIdentity](https://technet.microsoft.com/library/mt793857.aspx).
     
 ### <a name="remove-a-caller-id-policy"></a>Rimuovere un criterio ID chiamante
 
 Per rimuovere un criterio dalla tua organizzazione, esegui:
   
-```
+```PowerShell
 Remove-CsCallingLineIdentity -Identity "My Caller ID Policy"
 ```
 Per rimuovere un criterio da un utente, esegui:
   
-```
+```PowerShell
 Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName $null
 ```
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
@@ -174,7 +174,7 @@ Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName $nul
 
 [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)
 
-[Ulteriori informazioni su ID linea chiamante e nome del chiamante](/skypeforbusiness/what-are-calling-plans-in-office-365/more-about-calling-line-ID-and-calling-party-name)
+[Ulteriori informazioni su ID linea di chiamata e nome del chiamante](/skypeforbusiness/what-are-calling-plans-in-office-365/more-about-calling-line-ID-and-calling-party-name)
 
 [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 

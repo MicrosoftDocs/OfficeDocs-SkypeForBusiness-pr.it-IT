@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Arabia Saudita.
-ms.openlocfilehash: cd8cd966fddd69f0c1908cbcccecc00272df3ca7
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: ef03d1d0d356c6432b2107dcd668e4b53e1b72cb
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569531"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952409"
 ---
 # <a name="availability-in-saudi-arabia"></a>Disponibilità in Arabia Saudita
 
@@ -41,7 +41,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |No  <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, solo in [pay-per-minute](../audio-conferencing-pay-per-minute.md)  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti di comunicazione  <br/> |
    
@@ -66,9 +66,9 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | Riyadh ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md))  <br/> |
-|Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | Riyadh  <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
+|Sono disponibili numeri verdi gratuiti?  <br/> |No  <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
   
@@ -76,7 +76,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Sono disponibili i Crediti comunicazioni?  <br/> |No  <br/> |
+|Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
 Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicazioni per la propria organizzazione](../set-up-communications-credits-for-your-organization.md).
   
@@ -85,6 +85,3 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
-
-  
- 

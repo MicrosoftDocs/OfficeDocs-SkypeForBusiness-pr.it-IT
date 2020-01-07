@@ -19,12 +19,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 f1keywords:
 - ms.teamsadmincenter.policies.naming.error
 description: Informazioni sui problemi relativi ai caratteri speciali nei nomi dei criteri e sulle operazioni che è possibile eseguire per risolvere il problema.
-ms.openlocfilehash: 169f427cc0efc444adfbc7e0f8056337e615f733
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: a3e7bccc78641a07b7e2f2b02e12b6fe501f2405
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568657"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952759"
 ---
 # <a name="what-are-the-special-character-restrictions-in-teams-policies"></a>Quali sono le restrizioni dei caratteri speciali nei criteri di Teams?
 
@@ -40,7 +40,7 @@ Se si dispone di un criterio con caratteri speciali, sarà necessario modificare
 
 **Passaggio 1: creare una connessione remota con PowerShell.** 
 Se non è ancora stato [configurato, configurare il computer per Windows PowerShell](https://docs.microsoft.com/skypeforbusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell) .
-```
+```PowerShell
  Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
  $credential = Get-Credential
  $session = New-CsOnlineSession -Credential $credential
@@ -53,7 +53,7 @@ Se non è ancora stato [configurato, configurare il computer per Windows PowerSh
 > [!NOTE]
 > Questo esempio è per i criteri di [messaggistica](https://docs.microsoft.com/powershell/module/skype/get-csteamsmessagingpolicy?view=skype-ps) .  La procedura è la stessa per altri tipi di criteri, ma è necessario usare il cmdlet corretto. 
 
-  ```
+  ```PowerShell
   Get-CsTeamsMessagingPolicy -id <old_policy_name>
   ```
 
@@ -64,11 +64,11 @@ Puoi creare il nuovo criterio con la stessa impostazione usando l'interfaccia di
 
 In questo modo verrà creato un nuovo criterio, ma sarà necessario aggiungere le impostazioni corrette visualizzando [set-CsTeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) e quindi eseguendolo:
 
-  ```
+  ```PowerShell
   Set-CsTeamsMessagingPolicy -id <new_policy_name>
  ```
 **Passaggio 4: assegnare il criterio.**
- ```
+ ```PowerShell
 Grant-CsTeamsMessagingPolicy -Policy <new_policy_name>
  ```
 Per altre informazioni su questo cmdlet, vedere [Grant-CsTeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmessagingpolicy?view=skype-ps) .
@@ -76,14 +76,14 @@ Per altre informazioni su questo cmdlet, vedere [Grant-CsTeamsMessagingPolicy](h
 **Passaggio 5-eliminare i vecchi criteri.**
 
 Questo eliminerà il vecchio criterio con i caratteri speciali.
-  ```
+  ```PowerShell
   Remove-CsTeamsMessagingPolicy -identity <old_policy_name>
   ```
 Per altre informazioni su questo cmdlet, vedere [Remove-CsTeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/remove-csteamsmessagingpolicy?view=skype-ps) .
 
 Se il comando ha esito positivo, l'operazione è completata. Se il comando precedente restituisce un errore, è perché il criterio precedente viene assegnato agli utenti, quindi è necessario eseguire per rimuovere tutti gli utenti assegnati dal criterio:
 
-```
+```PowerShell
 Grant-CsMessagingPolicy -Policy <old_policy_name> $null
 ```
 ### <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?

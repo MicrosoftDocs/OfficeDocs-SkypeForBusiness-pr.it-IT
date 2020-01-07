@@ -16,12 +16,12 @@ description: Informazioni su come gestire le impostazioni per gli eventi di team
 f1keywords: ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bb2b0f6c29af383061877562e8e6762965937f5f
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 6ad9d97c6d4dd6b7eb370bda026dbee3e33f2a32
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570191"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952839"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi dinamici in Microsoft Teams
 
@@ -44,7 +44,7 @@ Questo URL viene visualizzato nei partecipanti agli eventi dinamici. Aggiungere 
 
 ### <a name="using-windows-powershell"></a>Uso di Windows PowerShell
 Esegui il seguente comando:
-```
+```PowerShell
 Set-CsTeamsMeetingBroadcastConfiguration -SupportURL “{your URL}” 
 ```
 Per altre informazioni, vedere [set-CsTeamsMeetingBroadcastConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps).
@@ -68,11 +68,11 @@ Se è stata acquistata e configurata una soluzione software defined Network (SDN
 Ottenere l'ID licenza o il token API e il modello di API dal contatto del provider e quindi eseguire una delle operazioni seguenti, a seconda del provider in uso:
 
 **Hive** 
-```
+```PowerShell
 Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $True -SdnProviderName hive -SdnLicenseId {license ID GUID provided by Hive} -SdnApiTemplateUrl “{API template URL provided by Hive}”
 ```
 **Kollective** 
-```
+```PowerShell
 Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $True -SdnProviderName kollective -SdnApiTemplateUrl "{API template URL provided by Kollective}" -SdnApiToken {API token GUID provided by Kollective}
 ```
 Per altre informazioni, vedere [set-CsTeamsMeetingBroadcastConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps).
@@ -81,6 +81,6 @@ Per altre informazioni, vedere [set-CsTeamsMeetingBroadcastConfiguration](https:
 > Se si prevede di creare eventi dinamici usando un'app o un dispositivo esterno, è necessario configurare anche [il provider di eCDN con Microsoft Stream](https://docs.microsoft.com/stream/network-caching). 
 
 ### <a name="related-topics"></a>Argomenti correlati
-- [Cosa sono gli eventi teams Live?](what-are-teams-live-events.md)
-- [Pianificare gli eventi di teams Live](plan-for-teams-live-events.md)
-- [Configurare gli eventi di teams Live](set-up-for-teams-live-events.md)
+- [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)
+- [Pianificare gli eventi live di Teams](plan-for-teams-live-events.md)
+- [Configurare gli eventi live di Teams](set-up-for-teams-live-events.md)

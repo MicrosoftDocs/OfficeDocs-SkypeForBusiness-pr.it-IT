@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 56d622a3a8757ca377c75bea79028dc5587b6bb8
-ms.sourcegitcommit: ed7439d03e37c9c0184daf5215a68c5492932a83
+ms.openlocfilehash: fcf18aa2487527c436b104011140524e6ce4ae5d
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38290976"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952809"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza
 
@@ -83,7 +83,7 @@ In alternativa, è possibile assegnare il ruolo seguente a un account utente di 
 Quando si discute di qualità in teams e Skype for business, è importante definire il termine per ottenere una comprensione comune. La qualità, come definita qui, è una combinazione di metriche dei servizi e esperienza utente.
 
 <!-- Note: need to update graphic-->
-![Illustrazione delle metriche dei servizi e dell'esperienza utente](media/qerguide-image-whatisquality.png "Sle metriche ervice sono costituite da scarso rapporto flusso, affidabilità, endpoint/dispositivi e versioni client. L'esperienza utente è costituita dalla percezione dell'utente della qualità del servizio. ")
+![Illustrazione delle metriche dei servizi e dell'esperienza utente](media/qerguide-image-whatisquality.png "Le metriche dei servizi sono costituite da scarso rapporto flusso, affidabilità, endpoint/dispositivi e versioni client. L'esperienza utente è costituita dalla percezione dell'utente della qualità del servizio.")
 
 _Figura 2-che cos'è la qualità?_
 
@@ -225,7 +225,7 @@ L'elemento grafico seguente illustra le attività che è necessario eseguire per
 La prima volta che si eseguono queste attività sarà necessario uno sforzo maggiore rispetto alle iterazioni successive, poiché molte di queste categorie richiedono la convalida delle configurazioni di distribuzione. Dopo aver raggiunto lo stato desiderato soddisfando le destinazioni definite, l'esecuzione di queste attività consentirà di mantenere tale stato.
 
 <!--  This is a net new graphic, never was included in the online article. OOPS! -->
-![Elenco delle attività settimanali per categoria di qualità](media/qerguide-image-tasks.png "List delle attività settimanali per categoria di qualità ")
+![Elenco delle attività settimanali per categoria di qualità](media/qerguide-image-tasks.png "Elenco delle attività settimanali per categoria di qualità")
 
 #### <a name="service-management-tasks"></a>Attività di gestione dei servizi
 
@@ -323,7 +323,7 @@ Alcuni report di Call Quality Dashboard richiedono l'inserimento di un filtro pe
 
 2. Aprire una finestra di comando di PowerShell di Azure ed eseguire lo script seguente immettendo le credenziali di Office 365 quando richiesto: 
 
-   ```
+   ```PowerShell
    Login-AzureRmAccount
    ```
 
@@ -345,7 +345,7 @@ Alcuni report di Call Quality Dashboard richiedono l'inserimento di un filtro pe
 
 2. Eseguire il comando seguente:
 
-   ```
+   ```PowerShell
    (Get-cstenant).tenantid
    ```
 
@@ -367,7 +367,7 @@ _Figura 5-Selezionare un filtro prodotto_
 
 Per filtrare tutti i report dettagliati, nella barra del browser accodare il codice seguente alla fine dell'URL:
 
-```
+```PowerShell
 /filter/[AllStreams].[Is Teams]|[FALSE]
 ```
 
@@ -531,7 +531,7 @@ L'esclusione di dati federati da report Call Quality dashboard è utile quando s
 
 Per implementare un filtro URL, nella barra degli indirizzi del browser aggiungere la seguente alla fine dell'URL:
 
-```
+```PowerShell
 /filter/[AllStreams].[Second Tenant Id]\|[YOUR TENANT ID HERE]
 ```
 
@@ -541,7 +541,7 @@ Esempio
 
 Per filtrare i report per Teams o Skype for business, aggiungere il codice seguente alla fine dell'URL:
 
-```
+```PowerShell
 /filter/[AllStreams].[Is Teams]|[TRUE | FALSE]
 ```
 
@@ -643,7 +643,7 @@ _Tabella 5-struttura dei file in costruzione_
 | ZipCode            | Stringa    | 98001                     | Consigliato |
 | Paese            | Stringa    | NOI                        | Consigliato |
 | Stato              | Stringa    | WA                        | Consigliato |
-| Area geografica             | Stringa    | MSUS                      | Consigliato |
+| Area             | Stringa    | MSUS                      | Consigliato |
 | InsideCorp         | Bool      | 1                         | Obbligatorio    |
 | ExpressRoute       | Bool      | 0                         | Obbligatorio    |
 
@@ -791,7 +791,7 @@ Questi strumenti sono basati su PowerShell e possono sfruttare i siti e i serviz
 
 Per altre informazioni su questo strumento, vedere [questo post di Blog](https://aka.ms/cqdtools).
 
-#### <a name="network-planner"></a> Network Planner
+#### <a name="network-planner"></a>Network Planner
 
 Network Planner determina e organizza i requisiti di rete per la distribuzione di Voice cloud in pochi semplici passaggi. Fornendo i dettagli di rete dell'organizzazione e l'uso delle voci cloud, è possibile ottenere un calcolo approssimativo dei requisiti di rete per la distribuzione di Voice cloud, gestire ed esportare questi dettagli per la creazione di report e visualizzare le aree per ulteriori indagini e passaggi successivi.
 
@@ -1005,7 +1005,7 @@ _Tabella 10-collaboratori comuni di High PSR_
 | Correzioni                              | Indicazioni                         |
 |------------------------------------------|----------------------------------|
 | **Reti**                                 | **Congestione**: una rete overused o under-provisioning può causare problemi di qualità multimediale. Collaborare con il team di rete per determinare se le connessioni di rete dall'utente al punto di uscita Internet dispongano di larghezza di banda sufficiente per supportare il supporto. <br><br>**Eseguire una valutazione della conformità della rete**: una valutazione della rete fornisce informazioni dettagliate sull'utilizzo previsto della larghezza di banda, su come gestire la larghezza di banda e le modifiche della rete e sulle procedure consigliate per la rete per team e Skype for business. Usando la tabella precedente come origine, è presente un elenco di edifici o sottoreti che sono candidati eccellenti per una valutazione.<ul><li>[Valutazione della conformità della rete di Microsoft Teams](3-envision-evaluate-my-environment.md#test-the-network)</li></ul><br>**Strumento di valutazione della rete Microsoft:** Usare questo strumento per un semplice test delle prestazioni di rete per determinare la modalità di esecuzione della rete per una chiamata di teams o Skype for business online. Lo strumento consente di valutare le prestazioni di una subnet e di convalidare la disponibilità della rete in base [ai requisiti](https://aka.ms/performancerequirements)di prestazioni Microsoft.<ul><li>[Scaricare lo strumento di valutazione della rete](https://www.microsoft.com/download/details.aspx?id=53885)</li></ul><br> |
-| **Qualità del servizio (QoS)**  | QoS è uno strumento collaudato per dare priorità ai pacchetti in una rete congestionata per assicurarsi che arrivino a destinazione intatto e puntuale. Valutare l'implementazione della funzionalità QoS nell'organizzazione per massimizzare la qualità dell'esperienza utente in cui è vincolata la larghezza di banda. QoS consentirà di risolvere i problemi tipicamente associati ad alti livelli di perdita di pacchetti e, in misura minore, a jitter e tempi di andata e ritorno.<ul><li>[Guida QoS di Microsoft Teams](qos-in-teams.md)</li></ul> |
+| **QoS (Quality of Service)**  | QoS è uno strumento collaudato per dare priorità ai pacchetti in una rete congestionata per assicurarsi che arrivino a destinazione intatto e puntuale. Valutare l'implementazione della funzionalità QoS nell'organizzazione per massimizzare la qualità dell'esperienza utente in cui è vincolata la larghezza di banda. QoS consentirà di risolvere i problemi tipicamente associati ad alti livelli di perdita di pacchetti e, in misura minore, a jitter e tempi di andata e ritorno.<ul><li>[Guida QoS di Microsoft Teams](qos-in-teams.md)</li></ul> |
 | **Wi-Fi**               | La rete Wi-Fi può avere un impatto significativo sulla qualità delle chiamate. Le distribuzioni Wi-Fi non prendono in genere in considerazione i requisiti di rete per i servizi VoIP e spesso sono una fonte di scarsa qualità. Per altre informazioni su come ottimizzare l'infrastruttura Wi-Fi, vedere [questo articolo sulla pianificazione Wi-Fi](/skypeforbusiness/certification/plan-wifi).<br><br>**Driver wireless**: verificare che i driver wireless siano aggiornati. Ciò consentirà di mitigare qualsiasi esperienza utente scadente correlata a un driver obsoleto. Molte organizzazioni non includono driver wireless nei loro cicli di patch e questi driver possono non essere inviati per anni. Molti problemi wireless vengono risolti garantendo che i driver wireless siano aggiornati.<br><br>**WMM**: Wireless Multimedia Extensions (WMM), noto anche come Wi-Fi Multimedia, offre funzionalità di base QoS alle reti wireless. Le moderne reti wireless devono supportare molti dispositivi. Questi dispositivi competono per la larghezza di banda e possono determinare problemi di qualità per i servizi VoIP, dove la velocità e la latenza sono essenziali. Consulta il fornitore wireless per informazioni specifiche e valuta l'implementazione di WMM sulla tua rete wireless per dare priorità a Skype for business e a teams media.<br><br>**Densità del punto di accesso**: i punti di accesso possono essere troppo distanti o non in una posizione ideale. Per ridurre al minimo le potenziali interferenze, posizionare punti di accesso aggiuntivi nelle sale riunioni e in posizioni non ostruite da muri o altri oggetti in cui il segnale Wi-Fi è debole.<br><br>**2,4 GHz versus 5 GHz**: 5 GHz fornisce meno interferenze in background e velocità più elevate e dovrebbe essere prioritario quando si distribuisce VoIP tramite Wi-Fi. Tuttavia, 5 GHz non è forte quanto 2,4 GHz e non penetra facilmente nelle pareti. Esaminare il layout dell'edificio per determinare la frequenza su cui si può fare affidamento per la connessione ottimale. |
 |**Dispositivo di rete** | Le organizzazioni più grandi potrebbero avere centinaia di dispositivi distribuiti in rete. Collaborare con il team di rete per verificare che i dispositivi di rete dell'utente a Internet vengano mantenuti e aggiornati. |
 | **VPN**  | Gli apparecchi VPN non sono tradizionalmente progettati per gestire i carichi di lavoro multimediali in tempo reale. Alcune configurazioni VPN vietano l'uso di UDP (che è il protocollo preferito per l'elemento multimediale) e si basano solo su TCP. Valutare l'implementazione di una soluzione per la suddivisione in tunnel VPN per ridurre la VPN come fonte di scarsa qualità. |

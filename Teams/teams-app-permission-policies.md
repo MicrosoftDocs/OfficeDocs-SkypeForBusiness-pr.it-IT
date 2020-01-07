@@ -20,12 +20,12 @@ f1keywords:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 686b0bc48cd2f6df590172d53618d96ca775aae0
-ms.sourcegitcommit: 1bb776e6c03086ca997d45b9b44660c4e426e8a4
+ms.openlocfilehash: bc541b3b1bc7c7aba723d7573224679b5900a550
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "39984536"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952829"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione delle app in Microsoft Teams
 
@@ -121,15 +121,15 @@ In questo esempio, assegniamo un criterio di autorizzazione delle app personaliz
 > Prima di tutto, assicurati di connetterti a Azure Active Directory PowerShell per modulo grafico e modulo di PowerShell per Skype for business seguendo la procedura descritta in [Connetti a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
 
 Ottenere il GroupObjectId del gruppo specifico.
-```
+```PowerShell
 $group = Get-AzureADGroup -SearchString "Contoso Pharmaceuticals HR Project"
 ```
 Ottenere i membri del gruppo specificato.
-```
+```PowerShell
 $members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-Object {$_.ObjectType -eq "User"}
 ```
 Assegna tutti gli utenti del gruppo a un determinato criterio di autorizzazione dell'app. In questo esempio si tratta di criteri di autorizzazione delle app HR.
-```
+```PowerShell
 $members | ForEach-Object { Grant-CsTeamsAppPermissionPolicy -PolicyName "HR App Permission Policy" -Identity $_.UserPrincipalName}
 ``` 
 A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.

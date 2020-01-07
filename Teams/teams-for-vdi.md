@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4c63195f4732931083a12a455b79d77d9c1e6b01
-ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
+ms.openlocfilehash: 2afe86014bcce01d60ceef768f6f888718c3696c
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40069347"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952849"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Team per l'infrastruttura desktop virtualizzata
 
@@ -262,7 +262,7 @@ In alternativa, è anche possibile eseguire le operazioni seguenti:
 
 L'esempio seguente mostra come usare [Grant-CsTeamsCallingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamscallingpolicy) per assegnare i criteri di chiamata di DisallowCalling a un utente.
 
-```
+```PowerShell
 Grant-CsTeamsCallingPolicy -PolicyName DisallowCalling -Identity “user email id”
 ```
 
@@ -270,7 +270,7 @@ Per ulteriori informazioni sull'uso di PowerShell per gestire i criteri di chiam
 
 L'esempio seguente mostra come usare [Grant-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmeetingpolicy) per assegnare i criteri di riunione di AllOff a un utente.
 
-```
+```PowerShell
 Grant-CsTeamsMeetingPolicy -PolicyName AllOff -Identity “user email id”
 ```
 
@@ -314,7 +314,7 @@ In alternativa, è anche possibile eseguire le operazioni seguenti:
 
 L'esempio seguente mostra come usare [Grant-CsTeamsCallingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamscallingpolicy) per assegnare i criteri di chiamata di AllowCalling a un utente.
 
-```
+```PowerShell
 Grant-CsTeamsCallingPolicy -PolicyName AllowCalling -Identity “user email id”
 ```
 
@@ -322,7 +322,7 @@ Per ulteriori informazioni sull'uso di PowerShell per gestire i criteri di chiam
 
 L'esempio seguente mostra come usare [Grant-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmeetingpolicy) per assegnare i criteri di riunione Allon a un utente.
 
-```
+```PowerShell
 Grant-CsTeamsMeetingPolicy -PolicyName AllOn -Identity “user email id”
 ```
 

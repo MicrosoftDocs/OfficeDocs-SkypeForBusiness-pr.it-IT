@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: dae1bfb6-7262-4030-bf53-dc3b3fe971ea
 description: Questo articolo descrive come configurare la console Microsoft teams Rooms e le sue periferiche.
-ms.openlocfilehash: fd09d7e9d70a5912469d4ed2d79a4dc8f465eeb6
-ms.sourcegitcommit: 486eaa85042670edec2231efaf7dae8fa329e852
+ms.openlocfilehash: 2c88dc5ba754e907ab32b41ea1731dc6f367d5a9
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39665439"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952739"
 ---
 # <a name="configure-a-microsoft-teams-rooms-console"></a>Configurare una console Microsoft teams rooms
 
@@ -133,7 +133,7 @@ Nell'aggiornamento di Creator è necessario usare lo script ApplyCurrentRegionAn
 11. Avviare un prompt dei comandi con privilegi elevati.
     
 12. Eseguire il comando seguente: 
-    ```
+    ```PowerShell
     powershell -executionpolicy unrestricted c:\Rigel\x64\scripts\provisioning\scriptlaunch.ps1 ApplyCurrentRegionAndLanguage.ps1
     ```
     
@@ -190,7 +190,7 @@ La console Microsoft teams Rooms deve considerare attendibile i certificati usat
     
 3. Eseguire il comando seguente:
     
-   ```
+   ```PowerShell
    certutil -addstore -f -enterprise root "C:\Skype Room Systems\x64\Scripts\Provisioning\CAcertificate.cer"
    ```
 
@@ -207,13 +207,13 @@ La console Microsoft teams Rooms deve considerare attendibile i certificati usat
     
 3. Immettere il comando seguente in PowerShell:
     
-   ```
+   ```PowerShell
    Add-Computer -DomainName <Fully qualified domain> -OUPath "OU=<Child OU>, … ,OU=<Top level OU>,DC=<child domain>,…,DC=<top level domain>"
    ```
 
 Ad esempio, se il dominio completo è redmond.corp.microsoft.com e si vuole che le console di Microsoft teams Rooms si trovino in un'unità organizzativa "Microsoft teams Rooms" che è un elemento figlio di un'unità organizzativa "Resources", il comando sarà:
   
-```
+```PowerShell
 Add-Computer -DomainName redmond.corp.microsoft.com -OUPath "OU=Microsoft_Teams_Rooms,OU=Resources,DC=redmond,DC=corp,DC=microsoft,DC=com"
 ```
 

@@ -31,12 +31,12 @@ no-loc:
 - Azure Monitor
 - Log Analytics
 - Operations Management Suite
-ms.openlocfilehash: d116ea000bc18bf0e9c017b67bfa104dcfa29795
-ms.sourcegitcommit: 000957709b841ce55a6813ccc2fbe745b1a9295b
+ms.openlocfilehash: c8d460f4ad94adaccce9fb84b12e37ab5adc0cc6
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39218033"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952749"
 ---
 # <a name="deploy-microsoft-teams-rooms-by-using-system-center-configuration-manager"></a>Distribuire le sale di Microsoft teams tramite System Center Configuration Manager
 
@@ -299,7 +299,7 @@ Questo pacchetto viene creato per distribuire il certificato radice per i dispos
 1.  Nella cartella **SRS v2-set-SRSComputerName Package** creare una nuova applicazione HTML denominata **set-SRSComputerName. HTA** .
 
 2.  Copiare lo script seguente nel file **set-SRSComputerName. HTA** . In alternativa, è possibile scaricare il file Set-SRSComputerName. hta da [qui](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/Skype-Room-Systems-v2/SRS-v2-Configuration-Manager-Files.zip?raw=true).
-    ```
+    ```HTML
     <!DOCTYPE HTML>
     <html>
     <head>
@@ -409,7 +409,7 @@ Questo pacchetto viene creato per distribuire il certificato radice per i dispos
 1. Nella cartella **SRS v2-pacchetto Sysprep** creare un nuovo file XML denominato **Unattend. XML** .
 
 2. Copiare il testo seguente nel file **Unattend. XML** . In alternativa, è possibile scaricare il file Unattend. XML da [qui](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/Skype-Room-Systems-v2/SRS-v2-Configuration-Manager-Files.zip?raw=true).
-   ```
+   ```XML
    <?xml version="1.0" encoding="utf-8"?>
    <unattend xmlns="urn:schemas-microsoft-com:unattend">
    <settings pass="specialize">

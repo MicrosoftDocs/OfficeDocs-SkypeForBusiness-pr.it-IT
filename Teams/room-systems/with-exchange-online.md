@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f3ba85b8-442c-4133-963f-76f1c8a1fff9
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Exchange Online.
-ms.openlocfilehash: 8b4974b2da2fabf3230fc54359b041cebdffcdd9
-ms.sourcegitcommit: 2b4fcf2561134b9f1b9a1b49401d97da1286e89d
+ms.openlocfilehash: c9192dad3ffc8cb45a5b4a213865a1daa998075d
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37979789"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952489"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-online"></a>Distribuire le sale di Microsoft teams con Exchange Online
 
@@ -102,7 +102,7 @@ Import-PSSession $Session -DisableNameChecking
 3. Quindi, USA`Get-MsolAccountSku` <!--Get-AzureADSubscribedSku--> per recuperare un elenco di SKU disponibili per il tenant di Office 365.
 4. Quando si elencano gli SKU, è possibile aggiungere una licenza usando l'`Set-MsolUserLicense` <!-- Set-AzureADUserLicense--> cmdlet. In questo caso, $strLicense è il codice SKU visualizzato, ad esempio contoso: STANDARDPACK. 
 
-  ```
+  ```PowerShell
     Set-MsolUser -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -UsageLocation 'US'
    Get-MsolAccountSku
    Set-MsolUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -AddLicenses $strLicense

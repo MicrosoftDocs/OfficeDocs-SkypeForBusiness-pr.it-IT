@@ -3,7 +3,7 @@ title: Disponibilità in Bielorussia
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: mikedav, jastark, oscarr, fafan
 ms.topic: reference
 ms.assetid: 4ace3c1d-c1b6-4f99-bc71-0d1757c8aba9
 ms.tgt.pltfrm: cloud
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Bielorussia.
-ms.openlocfilehash: ce623271b3a619271ba9c89b860b0944e19719de
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 7c5df54c4aec7b621dc8ff2f4cb775268d4efe0b
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571137"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952899"
 ---
 # <a name="availability-in-belarus"></a>Disponibilità in Bielorussia
 
@@ -41,7 +41,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |No  <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, solo in [pay-per-minute](../audio-conferencing-pay-per-minute.md) <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile con i crediti per comunicazioni pay per minute  <br/> |
    
@@ -76,7 +76,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Sono disponibili i Crediti comunicazioni?  <br/> |No  <br/> |
+|Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
 Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicazioni per la propria organizzazione](../set-up-communications-credits-for-your-organization.md).
   

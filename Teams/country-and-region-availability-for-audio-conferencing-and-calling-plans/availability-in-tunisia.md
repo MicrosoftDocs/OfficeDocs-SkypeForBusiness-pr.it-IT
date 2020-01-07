@@ -3,7 +3,7 @@ title: Disponibilità in Tunisia
 author: LanaChin
 ms.author: v-lanac
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
+ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Tunisia.
-ms.openlocfilehash: a106889ba37d07c323918a34acdb24566d9659f0
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 2a5f9085dee44b263c7222cfdab6bfb56f8f2ef9
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37639277"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952869"
 ---
 # <a name="availability-in-tunisia"></a>Disponibilità in Tunisia
 
@@ -40,7 +40,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |No  <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, solo in [pay-per-minute](../audio-conferencing-pay-per-minute.md) <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Richiede crediti di comunicazione <br/> |
    
@@ -66,7 +66,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Non geografica. I numeri di telefono non sono associati a una località o a una città specifica. <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |I numeri verdi sono disponibili?  <br/> |No  <br/> |
    
  Per ottenere numeri di telefono a pedaggio e a pedaggio gratuito per i servizi di audioconferenza, gli operatori automatici e le code di chiamata, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).
@@ -75,7 +75,7 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Sono disponibili i Crediti comunicazioni?  <br/> |No  <br/> |
+|Sono disponibili i Crediti comunicazioni?  <br/> |Sì <br/> |
    
 Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicazioni per la propria organizzazione](../set-up-communications-credits-for-your-organization.md).
   

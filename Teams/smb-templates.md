@@ -14,12 +14,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: lavenkat
 description: Introduzione ai modelli di team per le piccole e medie imprese
-ms.openlocfilehash: acde79c2f7ce13088de1f80f968551ead2768fbf
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 3ca5e78f3a61f1e272960dc1d7338bd06f81d4c6
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568668"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952769"
 ---
 # <a name="get-started-with-teams-templates-for-small-and-medium-businesses"></a>Introduzione ai modelli di team per le piccole e medie imprese
 
@@ -34,7 +34,7 @@ Il modello a livello aziendale è pensato per la comunicazione e la collaborazio
 
 | Tipo di modello di base  | baseTemplateId | Proprietà disponibili con questo modello di base |
 | :------------------ | :-------------- | :----------------------------------------------------- | 
-| SMB <br>A livello aziendale | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessOrgWide')`| Canali <ul><li>Generale\*</li><li>Risorse umane\*</li><li>Cose divertenti\*</li></ul><br> Applicazioni<ul><li>Portale aziendale (sito Web aggiunto al canale **risorse umane** ) </li> </UL><br>Proprietà del team <ul><li>Visibilità del team impostata su privato</li></ul> |
+| SMB <br>A livello aziendale | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessOrgWide')`| Canali <ul><li>Generale\*</li><li>Risorse umane\*</li><li>Cose divertenti\*</li></ul><br> App<ul><li>Portale aziendale (sito Web aggiunto al canale **risorse umane** ) </li> </UL><br>Proprietà del team <ul><li>Visibilità del team impostata su privato</li></ul> |
 
 * Canali preferiti automaticamente 
 
@@ -58,7 +58,7 @@ Il modello Executive Team è ideale per creare un team per i dirigenti aziendali
 
 | Tipo di modello di base  | baseTemplateId | Proprietà disponibili con questo modello di base |
 | :------------------ | :-------------- | :----------------------------------------------------- | 
-| SMB <br>Team Executives | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessExecutive')` | Canali <ul><li>Generale\*</li><li>Privato\*</li></ul> Applicazioni<ul><li>OneNote (aggiunto al canale **privato** )</li> <li>Planner (aggiunto al canale **privato** ) </li></ul><br>Proprietà del team <ul><li>Visibilità del team impostata su privato</li></ul> | 
+| SMB <br>Team Executives | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessExecutive')` | Canali <ul><li>Generale\*</li><li>Privato\*</li></ul> App<ul><li>OneNote (aggiunto al canale **privato** )</li> <li>Planner (aggiunto al canale **privato** ) </li></ul><br>Proprietà del team <ul><li>Visibilità del team impostata su privato</li></ul> | 
 
 * Canali preferiti automaticamente<br>
 
@@ -82,7 +82,7 @@ Il modello del team dipartimentale può essere usato per creare un team per sing
 
 | Tipo di modello di base | baseTemplateId | Proprietà disponibili con questo modello di base |
 |:------------------ | :-------------- | :----------------------------------------------------- | 
-| SMB <br>Finanza  | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessFinance')`| Canali <ul><li>Generale\*</li><li>Privato\*</li></ul><br> Applicazioni<ul><li>OneNote (aggiunto al canale **privato** )</li> <li>Planner (aggiunto al canale **privato** ) </li> </ul><br>Proprietà del team <ul><li>Visibilità del team impostata su privato</li></ul> | 
+| SMB <br>Finanza  | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessFinance')`| Canali <ul><li>Generale\*</li><li>Privato\*</li></ul><br> App<ul><li>OneNote (aggiunto al canale **privato** )</li> <li>Planner (aggiunto al canale **privato** ) </li> </ul><br>Proprietà del team <ul><li>Visibilità del team impostata su privato</li></ul> | 
 
 * Canali preferiti automaticamente
 
@@ -98,11 +98,11 @@ Content-Type: application/json
     "description": "All posts, announcements and daily collaboration and communication within the Finance team members (and exec team members as appropriate).",
     "visibility": "Private"
 }
-``
+```
 
-### Example: Finance Team template extension script
+### <a name="example-finance-team-template-extension-script"></a>Esempio: script di estensione del modello di Team Finance
 
-``` Powershell
+```powershell
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "Finance",

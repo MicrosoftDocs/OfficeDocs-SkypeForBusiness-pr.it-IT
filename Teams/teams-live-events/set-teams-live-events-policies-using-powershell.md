@@ -15,12 +15,12 @@ ms.collection:
 description: Esempi di come usare PowerShell per impostare i criteri in teams per controllare chi può contenere eventi dinamici nell'organizzazione e le caratteristiche disponibili negli eventi creati
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d9f96adcf4aa40b93b89b99013b9bc5ca466c25b
-ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
+ms.openlocfilehash: 0d734cd4a92f3ebd32e2d0e6a24292ae50b456e7
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37570169"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952879"
 ---
 # <a name="use-powershell-to-set-live-events-policies-in-microsoft-teams"></a>Usare PowerShell per impostare i criteri degli eventi dinamici in Microsoft Teams
 
@@ -40,11 +40,11 @@ Ecco alcuni esempi.
 **Consentire a un utente di pianificare eventi dinamici**
 
 Se all'utente viene assegnato il criterio globale, eseguire e verificare che il parametro *AllowBroadcastScheduling* sia impostato su *true*:
-```
+```PowerShell
 Get-CsTeamsMeetingBroadcastPolicy -identity Global
 ```
 Assegnare quindi l'utente al criterio globale, eseguire:
-```
+```PowerShell
 Grant-CsTeamsMeetingBroadcastPolicy -Identity {user} -PolicyName $null -Verbose
 ```
 
@@ -52,73 +52,73 @@ Grant-CsTeamsMeetingBroadcastPolicy -Identity {user} -PolicyName $null -Verbose
 **Si vuole che tutti gli utenti dell'organizzazione possano pianificare eventi dinamici**
 
 Se agli utenti viene assegnato il criterio globale, eseguire e verificare che *AllowBroadcastScheduling* * sia impostato su *true*:
-```
+```PowerShell
 Get-CsTeamsMeetingBroadcastPolicy -identity Global
 ```
 Se agli utenti viene assegnato un criterio diverso dal criterio globale, eseguire e verificare che *-AllowBroadcastScheduling* sia impostato su *true*:
-```
+```PowerShell
 Get-CsTeamsMeetingBroadcastPolicy -identity {policy name}
 ```
 **Si vuole che la programmazione di eventi dinamici venga disabilitata nell'organizzazione**
 
 Disabilitare la programmazione di eventi dinamici, eseguire:
-```
+```PowerShell
 Set-CsTeamsMeetingBroadcastPolicy -identity Global -AllowBroadcastScheduling $false
 ```
 Assegnare tutti gli utenti dell'organizzazione al criterio globale, eseguire:
-```
+```PowerShell
 Grant-CsTeamsMeetingBroadcastPolicy -Identity {user} -PolicyName $null -Verbose
 ```
 
 **Si vuole che un numero elevato di utenti sia in grado di programmare eventi dinamici e impedire a un gruppo di utenti di pianificarli**
 
 Eseguire e verificare che *AllowBroadcastScheduling* sia impostato su *true*:
-```
+```PowerShell
 Get-CsTeamsMeetingBroadcastPolicy -Identity Global
 ```
 Assegnare quindi un utente o utenti al criterio globale, eseguire:
-```
+```PowerShell
 Grant-CsTeamsMeetingBroadcastPolicy -Identity {user} -PolicyName $null -Verbose
 ```
 
 Creare un nuovo criterio che non consenta la pianificazione di eventi dinamici, eseguire:
-```
+```PowerShell
 New-CSTeamsMeetingBroadcastPolicy -Identity DisabledBroadcastSchedulingPolicy
 ```
 Disabilitare la programmazione di eventi dinamici, eseguire:
-```
+```PowerShell
 Set-CsTeamsMeetingBroadcastPolicy -Identity DisabledBroadcastSchedulingPolicy -AllowBroadcastScheduling $false
 ```
 Quindi, assegna gli utenti a questo criterio, Esegui:
-```
+```PowerShell
 Grant-CsTeamsMeetingBroadcastPolicy -Identity {user} -PolicyName DisabledBroadcastSchedulingPolicy -Verbose
 ```
 **Si vuole disabilitare la programmazione di eventi dinamici per un numero elevato di utenti e consentire a un set di utenti di pianificarli**
 
 Disabilitare la programmazione di eventi dinamici, eseguire:
-```
+```PowerShell
 Set-CsTeamsMeetingBroadcastPolicy -identity Global -AllowBroadcastScheduling $false
 ```
 Quindi, assegna gli utenti al criterio globale, Esegui:
-```
+```PowerShell
 Grant-CsTeamsMeetingBroadcastPolicy -Identity {user} -PolicyName $null -Verbose
 ```
 Creare un criterio per consentire la programmazione di eventi dinamici, eseguire:
-```
+```PowerShell
 New-CSTeamsMeetingBroadcastPolicy -identity EnableBroadcastSchedulingpolicy
 ```
 Abilitare la programmazione di eventi dinamici, eseguire:
-```
+```PowerShell
 Set-CsTeamsMeetingBroadcastPolicy -identity EnableBroadcastSchedulingpolicy -AllowBroadcastScheduling $true
 ```
 Quindi, assegna gli utenti a questo criterio, Esegui:
-```
+```PowerShell
 Grant-CsTeamsMeetingBroadcastPolicy -Identity {user} -PolicyName EnableBroadcastSchedulingpolicy -Verbose
 ```
 ## <a name="set-who-can-join-live-events"></a>Impostare gli utenti che possono partecipare agli eventi Live
  
 Impostare il criterio globale per consentire agli utenti di creare eventi che tutti, inclusi gli utenti anonimi, possono partecipare, eseguire:
-```
+```PowerShell
 Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility Everyone  
 ```
 ## <a name="set-the-recording-option-for-live-events"></a>Impostare l'opzione di registrazione per gli eventi dinamici
@@ -126,7 +126,7 @@ Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility 
 > Questa impostazione si applica solo agli eventi prodotti in teams.
 
 Impostare il criterio globale per disabilitare la registrazione per gli eventi Live:
-```
+```PowerShell
 Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastRecordingMode AlwaysDisabled 
 ```
 ## <a name="set-live-captions-and-subtitles-in-live-events"></a>Impostare didascalie e sottotitoli dinamici in eventi dinamici
@@ -134,7 +134,7 @@ Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastRecordingMode Alway
 > Questa impostazione si applica solo agli eventi prodotti in teams. 
 
 Impostare il criterio globale per attivare le didascalie e i sottotitoli Live (trascrizione) per i partecipanti agli eventi:
-```
+```PowerShell
 Set-CsTeamsMeetingBroadcastPolicy -Identity Global -AllowBroadcastTranscription $true 
 ```
 

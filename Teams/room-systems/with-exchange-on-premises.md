@@ -13,12 +13,12 @@ ms.assetid: 24860c05-40a4-436b-a44e-f5fcb9129e98
 ms.collection:
 - M365-collaboration
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams in un ambiente ibrido con Exchange in locale.
-ms.openlocfilehash: cc9b46554bcbef227bc6f721a7af93331d9552ca
-ms.sourcegitcommit: e59914458b4c22cc12556795468bc019e00a8940
+ms.openlocfilehash: 62840e0a28ee1eba2a9b5a94f976f169eab628da
+ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "40910054"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40952719"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-on-premises"></a>Distribuire le sale di Microsoft teams con Exchange in locale
 
@@ -71,7 +71,7 @@ Se si distribuiscono le sale di Microsoft teams con Exchange locale, si utilizze
 
 2. In PowerShell di Exchange, è possibile impostare una cassetta postale per l'account (abilitare la cassetta postale per l'account) eseguendo il comando seguente:
 
-   ``` Powershell
+   ```PowerShell
    Enable-Mailbox PROJECTRIGEL01@contoso.com -Room
    ```
 
@@ -95,7 +95,7 @@ Se si distribuiscono le sale di Microsoft teams con Exchange locale, si utilizze
 
    Questo esempio configura queste impostazioni nella cassetta postale della sala denominata Project-Rigel-01.
 
-   ``` PowerShell
+   ```PowerShell
    Set-CalendarProcessing -Identity "Project-Rigel-01" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This is a Skype Meeting room!"
    ```
 
