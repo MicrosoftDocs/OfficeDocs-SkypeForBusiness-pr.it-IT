@@ -17,16 +17,20 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle notifiche prioritarie nella messaggistica di teams.
-ms.openlocfilehash: d5ef07a2aff31281d8d0429c74751bf53ec7e556
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 4e39af4c400fef5b44e0994d95821ea9005edbba
+ms.sourcegitcommit: 1329ddd54d2a22c493677581c838eb6b3456bacc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572444"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "40947076"
 ---
-# <a name="messaging-policies-licensing"></a>Licenze per i criteri di messaggistica
+# <a name="messaging-policies-licensing"></a>Gestione delle licenze per i criteri di messaggistica
 
-A partire dal 1 ° gennaio 2020, gli utenti con licenza saranno in grado di inviare messaggi urgenti con le notifiche prioritarie in base alle condizioni dell'abbonamento. Agli amministratori IT verrà assegnato un report sull'utilizzo delle notifiche prioritarie per supportare le licenze utente appropriate. Gli utenti saranno in grado di ricevere messaggi urgenti illimitati con le notifiche prioritarie, indipendentemente dalla licenza. 
+Fino al 1 ° aprile 2020 le notifiche prioritarie illimitate in Microsoft teams sono disponibili per tutti gli utenti. Questa promozione viene estesa al 1 ° aprile 2020 dalla data di fine originale del 31 dicembre 2019. Dopo il 1 ° aprile, gli utenti con licenza saranno in grado di inviare notifiche prioritarie in base alle condizioni dell'abbonamento.
+
+Come annunciato in 2019 giugno, gli utenti possono contrassegnare un messaggio di teams come urgente quando hanno accesso alla caratteristica delle notifiche prioritarie. I messaggi urgenti vengono inviati con le notifiche prioritarie che notificano al destinatario ogni due (2) minuti per un periodo di 20 minuti o finché il destinatario non legge il messaggio. Questa caratteristica massimizza la probabilità che un messaggio venga agito in modo tempestivo.
+
+Agli amministratori IT verrà assegnato un report sull'utilizzo delle notifiche prioritarie per supportare le licenze utente appropriate. Gli utenti saranno in grado di ricevere messaggi urgenti illimitati con le notifiche prioritarie, indipendentemente dalla licenza. Leggi [altre informazioni sulle notifiche prioritarie](https://docs.microsoft.com/MicrosoftTeams/messaging-policies-in-teams).
 
 |Segmento| |Invio di un massimo di 5 messaggi inclusi per utente al mese| Invio di messaggi illimitati inclusi per utente al mese|
 |---|---|---|---|
