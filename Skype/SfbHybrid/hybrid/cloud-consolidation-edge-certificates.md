@@ -1,5 +1,5 @@
 ---
-title: Aggiornare il certificato Edge
+title: Aggiornare il certificato del server perimetrale
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -18,27 +18,27 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-description: Questa appendice include i passaggi dettagliati per aggiornare il certificato Edge nell'ambito del consolidamento del cloud per Teams e Skype for business.
-ms.openlocfilehash: 1c3aaa8859db530ceccbebc68ae76f21e8d4a77f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+description: In questa appendice sono riportati i passaggi dettagliati per l'aggiornamento del certificato Edge nell'ambito del consolidamento cloud per Teams e Skype for business.
+ms.openlocfilehash: 52ab646387acb6901798f215f9677f16978e87fb
+ms.sourcegitcommit: afc7edd03f4baa1d75f9642d4dbce767fec69b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36185501"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40963054"
 ---
-# <a name="update-the-edge-certificate"></a>Aggiornare il certificato Edge
+# <a name="update-the-edge-certificate"></a>Aggiornare il certificato del server perimetrale
 
-L'aggiornamento del certificato Edge è il passaggio chiave per garantire che un ambiente su Prem con SipDomain1 sia in grado di partecipare a un ambiente cloud con SipDomain2 e garantire un routing corretto in un ambiente di spazio di indirizzi condiviso tra i due domini SIP. Vedere il passaggio 14 nel consolidamento del [cloud per Teams e Skype for business](cloud-consolidation.md) per il contesto in cui è possibile eseguire questo passaggio. In questo esempio SipDomain1 è AcquiredCompany. <span>com e SipDomain2 è OriginalCompany. <span>com.
+L'aggiornamento del certificato del server perimetrale è il passaggio fondamentale per garantire che un ambiente su Prem con SipDomain1 possa unirsi a un ambiente cloud con SipDomain2 e garantire il routing corretto in un ambiente di spazio degli indirizzi condiviso tra i due domini SIP. Vedere il passaggio 14 nel [consolidamento del cloud per i team e Skype for business](cloud-consolidation.md) per il contesto in cui è possibile eseguire questo passaggio. Negli esempi riportati di seguito, SipDomain1 è AcquiredCompany. <span>com e SipDomain2 è OriginalCompany. <span>com.
 
-Il nome alternativo soggetto (SAN) del certificato in tutti i server perimetrali nell'ambiente locale deve essere aggiornato per includere tutti i domini SIP presenti nel tenant puro online (ad esclusione di qualsiasi onmicrosoft.<span> domini com), nel formato "SIP". \<Domain> ".  In questo esempio si tratta di SIP. OriginalCompany. <span>com. Questo passaggio è fondamentale per eseguire la migrazione degli utenti al cloud.
+Il nome alternativo soggetto (SAN) del certificato su tutti i server perimetrali nell'ambiente locale deve essere aggiornato in modo da includere tutti i domini SIP presenti nel tenant online puro (escludendo qualsiasi onmicrosoft.<span> domini com), nel formato SIP. \<> di dominio ".  In questo esempio, si tratta di SIP. OriginalCompany. <span>com. Questo passaggio è fondamentale per eseguire la migrazione di tutti gli utenti nel cloud.
 
-**Passaggi**
+**Passi**
 
-1.  Ottenere un nuovo certificato perimetrale esterno per il bordo che contiene tutte le voci esistenti e altre voci nella SAN per tutti i domini SIP nell'ambiente cloud (ad eccezione dei domini *. onmicrosoft.com) nel modulo "SIP". <DomainName>".
-2.  Installare il certificato localmente in ogni Edge Server e assegnarlo a Skype Edge service in ogni servizio Edge.  Per la procedura dettagliata, vedere la sezione "certificati di interfaccia Edge esterni" in [Deploy Edge service in Skype for Business Server 2015](https://technet.microsoft.com/en-us/library/dn951368.aspx).
-3.  Riavviare il servizio Edge in ogni server perimetrale. Puoi eseguire questa operazione per una singola casella con i comandi di PowerShell seguenti:
+1.  Ottenere un nuovo certificato perimetrale esterno per il server perimetrale in cui sono presenti tutte le voci esistenti e altre voci nella rete SAN per tutti i domini SIP nell'ambiente cloud (ad eccezione dei domini *. onmicrosoft.com) nel formato SIP. <DomainName>".
+2.  Installare il certificato in locale su ogni server perimetrale e assegnarlo al servizio Edge Skype su ogni servizio Edge.  Per la procedura dettagliata, vedere la sezione "certificati dell'interfaccia perimetrale esterna" in [Deploy Edge service in Skype for Business Server 2015](https://technet.microsoft.com/library/dn951368.aspx).
+3.  Riavviare il servizio Edge in ogni server perimetrale. È possibile eseguire questa operazione per una singola casella con i comandi di PowerShell seguenti:
 
-    ```
+    ```PowerShell
     Stop-CsWindowsService
     Start-CsWindowsService
     ```

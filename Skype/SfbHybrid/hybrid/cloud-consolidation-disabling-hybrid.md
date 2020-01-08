@@ -19,12 +19,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: In questa appendice sono riportati i passaggi dettagliati per la disabilitazione dell'ibrido come parte del consolidamento cloud per Teams e Skype for business.
-ms.openlocfilehash: 7bd0b4c606a84dea08fb568d42fe403f624c522d
-ms.sourcegitcommit: b9710149ad0bb321929139118b7df0bc4cca08de
+ms.openlocfilehash: d3420c1bd40bbdeeff25747153210c2600d929f6
+ms.sourcegitcommit: afc7edd03f4baa1d75f9642d4dbce767fec69b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38010579"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40963074"
 ---
 # <a name="disable-hybrid-to-complete-migration-to-the-cloud"></a>Disabilitare l'ibrido per completare la migrazione al cloud
 
@@ -45,25 +45,25 @@ Qualsiasi organizzazione federata che utilizza il modello di Federazione diretto
 1.  *Aggiornare il DNS in modo che punti a Office 365.*
 Il DNS esterno dell'organizzazione per l'organizzazione locale deve essere aggiornato in modo che i record Skype for business puntino a Office 365 anziché alla distribuzione locale. In particolare:
 
-    |Tipo di record|Name|TTL|Value|
+    |Tipo di record|Nome|TTL|Value|
     |---|---|---|---|
     |SRV|_sipfederationtls. _tcp|3600|100 1 5061 sipfed. online. Lync. <span>com|
     |SRV|_sip. _tls|3600|100 1 443 sipdir. online. Lync. <span>com|
     |CNAME| lyncdiscover|   3600|   WEBDIR. online. Lync. <span>com|
-    |Record CNAME| sip|    3600|   sipdir. online. Lync. <span>com|
-    |Record CNAME| soddisfare|   3600|   WEBDIR. online. Lync. <span>com|
-    |Record CNAME| Dialin  |3600|  WEBDIR. online. Lync. <span>com|
+    |CNAME| sip|    3600|   sipdir. online. Lync. <span>com|
+    |CNAME| soddisfare|   3600|   WEBDIR. online. Lync. <span>com|
+    |CNAME| Dialin  |3600|  WEBDIR. online. Lync. <span>com|
 
 2.  *Disabilitare lo spazio degli indirizzi SIP condiviso in Office 365 tenant.*
 Il comando seguente deve essere effettuato da una finestra di PowerShell di Skype for business online.
 
-    ```
+    ```PowerShell
     Set-CsTenantFederationConfiguration -SharedSipAddressSpace $false
     ```
  
 3.  *Disabilitare l'abilità in locale per comunicare con Office 365.*  
 Il comando seguente deve essere effettuato da una finestra di PowerShell locale:
-```
+```PowerShell
     Get-CsHostingProvider|Set-CsHostingProvider -Enabled $false
 ```
 
