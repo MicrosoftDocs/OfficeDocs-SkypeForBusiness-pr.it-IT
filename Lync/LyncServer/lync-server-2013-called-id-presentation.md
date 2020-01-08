@@ -1,0 +1,95 @@
+---
+title: 'Lync Server 2013: chiamata presentazione ID'
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+TOCTitle: Called ID presentation
+ms:assetid: cf6c6af5-3418-411e-a50b-7a9cf8e100d4
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ721892(v=OCS.15)
+ms:contentKeyID: 49733826
+ms.date: 07/23/2014
+manager: serdars
+mtps_version: v=OCS.15
+ms.openlocfilehash: 30bd84e60118697c94aba6c6088de68fc37d34c1
+ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "40976192"
+---
+<div data-xmlns="http://www.w3.org/1999/xhtml">
+
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+
+<div data-asp="http://msdn2.microsoft.com/asp">
+
+# <a name="called-id-presentation-in-lync-server-2013"></a><span data-ttu-id="5c731-102">Presentazione ID chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5c731-102">Called ID presentation in Lync Server 2013</span></span>
+
+</div>
+
+<div id="mainSection">
+
+<div id="mainBody">
+
+<span> </span>
+
+<span data-ttu-id="5c731-103">_**Argomento Ultima modifica:** 2012-09-21_</span><span class="sxs-lookup"><span data-stu-id="5c731-103">_**Topic Last Modified:** 2012-09-21_</span></span>
+
+<span data-ttu-id="5c731-104">Con Lync Server 2010, il numero di telefono della festa chiamata (ovvero il numero di telefono chiamato) può essere tradotto dal formato E. 164 al formato di chiamata locale richiesto dal peer trunk, ovvero il gateway associato, il PBX (Private Branch Exchange) o il trunk SIP.</span><span class="sxs-lookup"><span data-stu-id="5c731-104">With Lync Server 2010, the called party’s phone number (that is, the phone number called) can be translated from E.164 format to the local dialing format that is required by the trunk peer (that is, the associated gateway, private branch exchange (PBX), or SIP trunk).</span></span> <span data-ttu-id="5c731-105">A tale scopo, è necessario definire una o più regole di traduzione per tradurre l'URI della richiesta prima di instradarlo al peer trunk.</span><span class="sxs-lookup"><span data-stu-id="5c731-105">To do this, you must define one or more translation rules to translate the Request URI before routing it to the trunk peer.</span></span>
+
+<div>
+
+
+> [!IMPORTANT]  
+> <span data-ttu-id="5c731-106">La possibilità di associare una o più regole di traduzione a una configurazione trunk VoIP aziendale è destinata a essere usata come <EM>alternativa</EM> alla configurazione delle regole di traduzione nel trunk peer.</span><span class="sxs-lookup"><span data-stu-id="5c731-106">The ability to associate one or more translation rules with an Enterprise Voice trunk configuration is intended to be used as an <EM>alternative</EM> to configuring translation rules on the trunk peer.</span></span> <span data-ttu-id="5c731-107">Non associare regole di traduzione a una configurazione trunk VoIP aziendale se sono state configurate regole di traduzione nel peer trunk perché le due regole potrebbero essere in conflitto.</span><span class="sxs-lookup"><span data-stu-id="5c731-107">Do not associate translation rules with an Enterprise Voice trunk configuration if you have configured translation rules on the trunk peer because the two rules might conflict.</span></span>
+
+
+
+</div>
+
+<span data-ttu-id="5c731-108">Puoi usare uno dei metodi seguenti per creare o modificare una regola di traduzione:</span><span class="sxs-lookup"><span data-stu-id="5c731-108">You can use either of the following methods to create or modify a translation rule:</span></span>
+
+  - <span data-ttu-id="5c731-109">Usare lo strumento **Costruisci una regola di traduzione** per specificare i valori per le cifre iniziali, la lunghezza, le cifre da rimuovere e le cifre da aggiungere e quindi consentire al pannello di controllo di Lync Server di generare automaticamente il modello corrispondente e la regola di traduzione.</span><span class="sxs-lookup"><span data-stu-id="5c731-109">Use the **Build a Translation Rule** tool to specify values for the starting digits, length, digits to remove and digits to add, and then let Lync Server Control Panel generate the corresponding matching pattern and translation rule for you.</span></span>
+
+  - <span data-ttu-id="5c731-110">Scrivere manualmente le espressioni regolari per definire il modello e la regola di traduzione corrispondenti.</span><span class="sxs-lookup"><span data-stu-id="5c731-110">Write regular expressions manually to define the matching pattern and translation rule.</span></span>
+
+<div>
+
+
+> [!NOTE]  
+> <span data-ttu-id="5c731-111">Per informazioni su come scrivere espressioni regolari, vedere "espressioni regolari di .NET Framework" <A href="http://go.microsoft.com/fwlink/p/?linkid=140927">http://go.microsoft.com/fwlink/p/?linkId=140927</A>.</span><span class="sxs-lookup"><span data-stu-id="5c731-111">For information about how to write regular expressions, see ".NET Framework Regular Expressions" at <A href="http://go.microsoft.com/fwlink/p/?linkid=140927">http://go.microsoft.com/fwlink/p/?linkId=140927</A>.</span></span>
+
+
+
+</div>
+
+<div>
+
+## <a name="in-this-section"></a><span data-ttu-id="5c731-112">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="5c731-112">In This Section</span></span>
+
+  - [<span data-ttu-id="5c731-113">Creare o modificare una regola di traduzione usando lo strumento crea una regola di traduzione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5c731-113">Create or modify a translation rule by using the Build a Translation Rule tool in Lync Server 2013</span></span>](lync-server-2013-create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool.md)
+
+  - [<span data-ttu-id="5c731-114">Creare o modificare manualmente una regola di traduzione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5c731-114">Create or modify a translation rule manually in Lync Server 2013</span></span>](lync-server-2013-create-or-modify-a-translation-rule-manually.md)
+
+</div>
+
+<div>
+
+## <a name="see-also"></a><span data-ttu-id="5c731-115">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="5c731-115">See Also</span></span>
+
+
+[<span data-ttu-id="5c731-116">Presentazione dell'ID chiamante in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5c731-116">Caller ID presentation in Lync Server 2013</span></span>](lync-server-2013-caller-id-presentation.md)  
+  
+
+</div>
+
+</div>
+
+<span> </span>
+
+</div>
+
+</div>
+
+</div>
+
