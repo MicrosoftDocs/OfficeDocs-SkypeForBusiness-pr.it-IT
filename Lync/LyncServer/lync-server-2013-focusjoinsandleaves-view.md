@@ -1,0 +1,153 @@
+---
+title: 'Lync Server 2013: visualizzazione FocusJoinsAndLeaves'
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+TOCTitle: FocusJoinsAndLeaves view
+ms:assetid: 226460ef-766f-4d61-80cb-f332b65a210d
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ687992(v=OCS.15)
+ms:contentKeyID: 49733582
+ms.date: 07/23/2014
+manager: serdars
+mtps_version: v=OCS.15
+ms.openlocfilehash: 3e1302bf744b0954d00eae4f4cc27454b2889745
+ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "40980736"
+---
+<div data-xmlns="http://www.w3.org/1999/xhtml">
+
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+
+<div data-asp="http://msdn2.microsoft.com/asp">
+
+# <a name="focusjoinsandleaves-view-in-lync-server-2013"></a>Visualizzazione FocusJoinsAndLeaves in Lync Server 2013
+
+</div>
+
+<div id="mainSection">
+
+<div id="mainBody">
+
+<span> </span>
+
+_**Argomento Ultima modifica:** 2012-10-01_
+
+La visualizzazione FocusJoinsAndLeaves archivia le informazioni su come partecipare e abbandonare informazioni per una conferenza. Ogni conferenza viene rappresentata in questa visualizzazione da un record scritto ogni volta che un utente si unisce e lascia la conferenza. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
+
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Colonna</th>
+<th>Tipo di dati</th>
+<th>Dettagli</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>SessionIdTime</strong></p></td>
+<td><p>DateTime</p></td>
+<td><p>Ora dell'istanza di conferenza. Usato in combinazione con SessionIdSeq per identificare in modo univoco un'istanza di conferenza. Per altre informazioni, vedere la <a href="lync-server-2013-conferences-table.md">tabella conferenze in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>SessionIdSeq</strong></p></td>
+<td><p>int</p></td>
+<td><p>Numero ID per identificare l'istanza di conferenza. Usato in combinazione con SessionIdTime per identificare in modo univoco un'istanza di conferenza. Per altre informazioni, vedere la <a href="lync-server-2013-conferences-table.md">tabella conferenze in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>UserUri</strong></p></td>
+<td><p>nvarchar (450)</p></td>
+<td><p>URI dell'utente per cui sono state acquisite le informazioni di join/congedo di conferenza.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>UserUriType</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Tipo di URI dell'utente per cui sono state acquisite le informazioni di join/congedo di conferenza. Per altre informazioni, vedere la <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>UserTenant</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Tenant dell'utente per cui sono state acquisite le informazioni di join/congedo di conferenza. Per altre informazioni, vedere la <a href="lync-server-2013-tenants-table.md">tabella tenant in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>UserEndpointId</strong></p></td>
+<td><p>uniqueidentifier</p></td>
+<td><p>Identificatore univoco dell'utente per cui sono state acquisite le informazioni di join/leave di conferenza.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>UserClientVersion</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Versione del client usata dall'utente in cui sono state acquisite le informazioni di join/leave di conferenza.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>UserClientType</strong></p></td>
+<td><p>int</p></td>
+<td><p>Client usato dall'utente per cui sono state acquisite le informazioni di join/congedo di conferenza. Per altri dettagli, vedere la <a href="lync-server-2013-useragentdef-table.md">Tabella UserAgentDef in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>UserClientCategory</strong></p></td>
+<td><p>nvarchar (64)</p></td>
+<td><p>Nome della categoria del client usata dall'utente in cui sono state acquisite le informazioni di join/leave di conferenza.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>FocusUserInstance</strong></p></td>
+<td><p>int</p></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p><strong>IsuserInternal</strong></p></td>
+<td><p>po'</p></td>
+<td><p>Bit che indica se l'utente è un utente interno o meno.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>DialogSessionIdTime</strong></p></td>
+<td><p>DateTime</p></td>
+<td><p>Ora della richiesta della sessione. Usato in combinazione con SessionIdSeq per identificare in modo univoco una sessione. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>DialogSessionIdSeq</strong></p></td>
+<td><p>int</p></td>
+<td><p>Se un utente ha eseguito l'accesso a più computer o dispositivi contemporaneamente, UserInstance viene usato per identificare in modo univoco la combinazione utente/dispositivo.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>DialogId</strong></p></td>
+<td><p>varchar (775)</p></td>
+<td><p>ID finestra di dialogo SIP della sessione. Il formato è: Dialog; from-tag; to-tag.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>UserJoinTime</strong></p></td>
+<td><p>DateTime</p></td>
+<td><p>Ora in cui l'utente ha partecipato alla conferenza.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>UserLeaveTime</strong></p></td>
+<td><p>DateTime</p></td>
+<td><p>Ora in cui l'utente ha lasciato la conferenza.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>UserRole</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Ruolo dell'utente nella conferenza, ad esempio relatore o partecipante.</p></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+
+<span> </span>
+
+</div>
+
+</div>
+
+</div>
+
