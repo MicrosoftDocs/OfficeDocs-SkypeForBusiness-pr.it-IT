@@ -1,0 +1,103 @@
+---
+title: Eliminare una raccolta esistente di impostazioni di configurazione delle riunioni
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+TOCTitle: Delete an existing collection of meeting configuration settings
+ms:assetid: 92ff8a91-05c5-4047-a533-5dff12f22299
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ688136(v=OCS.15)
+ms:contentKeyID: 49733736
+ms.date: 07/23/2014
+manager: serdars
+mtps_version: v=OCS.15
+ms.openlocfilehash: 10d564cf8fbcfb8c66df5e84841aae456913f1dc
+ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "40975181"
+---
+<div data-xmlns="http://www.w3.org/1999/xhtml">
+
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+
+<div data-asp="http://msdn2.microsoft.com/asp">
+
+# <a name="delete-an-existing-collection-of-meeting-configuration-settings-in-lync-server-2013"></a>Eliminare una raccolta esistente di impostazioni di configurazione delle riunioni in Lync Server 2013
+
+</div>
+
+<div id="mainSection">
+
+<div id="mainBody">
+
+<span> </span>
+
+_**Argomento Ultima modifica:** 2013-02-23_
+
+È possibile eliminare una configurazione di un sito o di un utente. La configurazione globale non può essere rimossa. Se elimini la configurazione globale, viene reimpostata automaticamente sui valori predefiniti.
+
+<div>
+
+## <a name="to-delete-a-site-or-user-meeting-configuration"></a>Per eliminare una configurazione di un sito o di una riunione utente
+
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+
+3.  Sulla barra di spostamento sinistra fare clic su **conferenza** e quindi su **Configurazione riunione**.
+
+4.  Nell'elenco delle configurazioni delle riunioni fare clic sulla configurazione del sito o del pool che si desidera eliminare, fare clic su **modifica**e quindi su **Elimina**.
+
+</div>
+
+<div>
+
+## <a name="removing-meeting-configuration-settings-by-using-windows-powershell-cmdlets"></a>Rimozione delle impostazioni di configurazione delle riunioni tramite i cmdlet di Windows PowerShell
+
+Le impostazioni delle riunioni possono essere eliminate tramite Windows PowerShell e il cmdlet Remove-CsMeetingConfiguration. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+
+<div>
+
+## <a name="to-remove-a-specified-collection-of-meeting-configuration-settings"></a>Per rimuovere una raccolta specificata di impostazioni di configurazione della riunione
+
+  - Questo comando rimuove le impostazioni di configurazione delle riunioni applicate al sito Redmond:
+    
+        Remove-CsMeetingConfiguration -Identity "site:Redmond"
+
+</div>
+
+<div>
+
+## <a name="to-remove-all-the-meeting-configuration-settings-applied-to-the-site-scope"></a>Per rimuovere tutte le impostazioni di configurazione delle riunioni applicate all'ambito del sito
+
+  - Questo comando rimuove tutte le impostazioni di configurazione delle riunioni applicate all'ambito del sito:
+    
+        Get-CsMeetingConfiguration -Filter "site:*" | Remove-CsMeetingConfiguration
+
+</div>
+
+<div>
+
+## <a name="to-remove-all-the-meeting-configuration-settings-that-admit-anonymous-users-by-default"></a>Per rimuovere tutte le impostazioni di configurazione della riunione che ammettono utenti anonimi per impostazione predefinita
+
+  - E questo rimuove tutte le impostazioni che consentono agli utenti anonimi di essere ammessi per impostazione predefinita:
+    
+        Get-CsMeetingConfiguration | Where-Object {$_.AdmitAnonymousUsersByDefault -eq $True} | Remove-CsMeetingConfiguration
+
+</div>
+
+Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsMeetingConfiguration](https://technet.microsoft.com/en-us/library/Gg412775(v=OCS.15)) .
+
+</div>
+
+</div>
+
+<span> </span>
+
+</div>
+
+</div>
+
+</div>
+
