@@ -1,0 +1,194 @@
+---
+title: "Lync Server 2013: Configurare criteri per controllare l'accesso utente federato XMPP"
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+TOCTitle: Configure policies to control XMPP federated user access
+ms:assetid: 0fe0ff75-e52a-4e3e-923a-64f6412ac4e4
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ552446(v=OCS.15)
+ms:contentKeyID: 48679557
+ms.date: 07/23/2014
+manager: serdars
+mtps_version: v=OCS.15
+ms.openlocfilehash: 0ec90a1b079935713ce6f13e7b74763e7004dedf
+ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "40981028"
+---
+<div data-xmlns="http://www.w3.org/1999/xhtml">
+
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+
+<div data-asp="http://msdn2.microsoft.com/asp">
+
+# <a name="configure-policies-to-control-xmpp-federated-user-access-in-lync-server-2013"></a><span data-ttu-id="596cd-102">Configurare criteri per controllare l'accesso utente federato XMPP in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="596cd-102">Configure policies to control XMPP federated user access in Lync Server 2013</span></span>
+
+</div>
+
+<div id="mainSection">
+
+<div id="mainBody">
+
+<span> </span>
+
+<span data-ttu-id="596cd-103">_**Argomento Ultima modifica:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="596cd-103">_**Topic Last Modified:** 2012-11-01_</span></span>
+
+<span data-ttu-id="596cd-104">Questa è la documentazione preliminare ed è soggetta a modifiche.</span><span class="sxs-lookup"><span data-stu-id="596cd-104">This is preliminary documentation and is subject to change.</span></span> <span data-ttu-id="596cd-105">Gli argomenti vuoti sono inclusi come segnaposto.</span><span class="sxs-lookup"><span data-stu-id="596cd-105">Blank topics are included as placeholders.</span></span>
+
+<span data-ttu-id="596cd-106">Quando si configurano i criteri per il supporto dei partner federati di Extensible Messaging and Presence Protocol (XMPP), i criteri si applicano agli utenti di domini federati XMPP, ma non agli utenti dei provider di servizi di messaggistica istantanea SIP (Session Initiation Protocol) (ad esempio, Windows Live) o i domini federati SIP.</span><span class="sxs-lookup"><span data-stu-id="596cd-106">When you configure policies for support of extensible messaging and presence protocol (XMPP) federated partners, the policies apply to users of XMPP federated domains, but not to users of session initiation protocol (SIP) instant messaging (IM) service providers (for example, Windows Live), or SIP federated domains.</span></span> <span data-ttu-id="596cd-107">Si configura un **partner federato XMPP** per ogni dominio federato XMPP in cui si vuole consentire agli utenti di aggiungere contatti e comunicare.</span><span class="sxs-lookup"><span data-stu-id="596cd-107">You configure an **XMPP Federated Partner** for each XMPP federated domain that you want to allow your users to add contacts and communicate with.</span></span> <span data-ttu-id="596cd-108">I criteri dei partner federati XMPP sono disponibili solo in un unico ambito, anche se non sono definiti come criteri globali, agiscono come criteri globali.</span><span class="sxs-lookup"><span data-stu-id="596cd-108">XMPP federated partners policies are only available in a single scope, though it is not defined as a global policy, acts as a global policy.</span></span> <span data-ttu-id="596cd-109">Per definire un criterio globale, del sito o dell'utente per i partner federativi XMPP, è possibile configurare l'ambito dei criteri creando e configurando i criteri di accesso esterno per l'ambito richiesto.</span><span class="sxs-lookup"><span data-stu-id="596cd-109">To define a global, site or user policy for XMPP Federation Partners, you configure the policy scope by first creating and configuring the External Access Policy for the scope you require.</span></span> <span data-ttu-id="596cd-110">Per informazioni dettagliate sui tipi di criteri che è possibile configurare per l'accesso esterno e la Federazione, vedere [gestione della Federazione e accesso esterno a Lync Server 2013](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md) nella documentazione delle operazioni.</span><span class="sxs-lookup"><span data-stu-id="596cd-110">For details about the types of policies that you can configure for external access and federation, see [Managing federation and external access to Lync Server 2013](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md) in the Operations documentation.</span></span>
+
+<div>
+
+
+> [!NOTE]  
+> <span data-ttu-id="596cd-111">Tutti i criteri di <STRONG>Federazione e di accesso esterno</STRONG> vengono applicati tramite il provisioning in banda.</span><span class="sxs-lookup"><span data-stu-id="596cd-111">All <STRONG>Federation and External Access</STRONG> policies are applied through in-band provisioning.</span></span> <span data-ttu-id="596cd-112">I criteri che si applicano all'utente, appartengono a un sito oppure l'ambito globale viene comunicato al client durante l'accesso.</span><span class="sxs-lookup"><span data-stu-id="596cd-112">The policies that apply to the user, belong to a site, or are global in scope are communicated to the client during login.</span></span> <span data-ttu-id="596cd-113">È possibile configurare i criteri per il controllo dell'accesso dei partner federati XMPP, anche se non è stata abilitata la Federazione XMPP per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="596cd-113">You can configure policies to control XMPP federated partner access, even if you have not enabled XMPP federation for your organization.</span></span> <span data-ttu-id="596cd-114">Tuttavia, i criteri configurati hanno effetto solo quando la Federazione partner XMPP è stata distribuita, abilitata e configurata per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="596cd-114">However, the policies that you configure take effect only when you have XMPP partner federation deployed, enabled and configured for your organization.</span></span> <span data-ttu-id="596cd-115">Per informazioni dettagliate sulla distribuzione e configurazione della Federazione partner XMPP, vedere Configurazione della federazione <A href="lync-server-2013-configuring-sip-federation-xmpp-federation-and-public-instant-messaging.md">SIP, della Federazione XMPP e della messaggistica istantanea pubblica in Lync Server 2013</A> nella documentazione relativa alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="596cd-115">For details about deploying and configuring XMPP partner federation, see <A href="lync-server-2013-configuring-sip-federation-xmpp-federation-and-public-instant-messaging.md">Configuring SIP federation, XMPP federation and public instant messaging in Lync Server 2013</A> in the Deployment documentation.</span></span> <span data-ttu-id="596cd-116">Inoltre, se specifichi un criterio utente in criteri di accesso esterno per controllare i partner federativi XMPP, il criterio si applica solo agli utenti abilitati per Lync Server 2013 e configurati per l'uso dei criteri.</span><span class="sxs-lookup"><span data-stu-id="596cd-116">Additionally, if you specify a user policy in External Access Policy to control XMPP federated partners, the policy applies only to users that are enabled for Lync Server 2013 and configured to use the policy.</span></span>
+
+
+
+</div>
+
+<div>
+
+## <a name="to-edit-a-global-policy-for-xmpp-federated-partners"></a><span data-ttu-id="596cd-117">Per modificare un criterio globale per i partner federati XMPP</span><span class="sxs-lookup"><span data-stu-id="596cd-117">To edit a global policy for XMPP federated partners</span></span>
+
+1.  <span data-ttu-id="596cd-118">Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="596cd-118">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+
+2.  <span data-ttu-id="596cd-119">Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="596cd-119">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="596cd-120">Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="596cd-120">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+
+3.  <span data-ttu-id="596cd-121">Sulla barra di spostamento sinistra fare clic su **accesso utente esterno**e quindi su **criteri di accesso esterno**.</span><span class="sxs-lookup"><span data-stu-id="596cd-121">In the left navigation bar, click **External User Access**, and then click **External Access Policy**.</span></span>
+
+4.  <span data-ttu-id="596cd-122">Nella pagina **criteri di accesso esterno** eseguire le operazioni seguenti per il criterio globale:</span><span class="sxs-lookup"><span data-stu-id="596cd-122">On the **External Access Policy** page, do the following for the global policy:</span></span>
+
+5.  <span data-ttu-id="596cd-123">Fare clic sul criterio globale, scegliere **modifica**e quindi fare clic su Mostra dettagli.</span><span class="sxs-lookup"><span data-stu-id="596cd-123">Click the global policy, click **Edit**, and then click Show details.</span></span>
+
+6.  <span data-ttu-id="596cd-124">Specificare una descrizione per il criterio globale (facoltativo).</span><span class="sxs-lookup"><span data-stu-id="596cd-124">Provide a description for the Global policy (optional).</span></span>
+
+7.  <span data-ttu-id="596cd-125">Selezionare **Abilita comunicazioni con gli utenti federati**.</span><span class="sxs-lookup"><span data-stu-id="596cd-125">Select **Enable communications with federated users**.</span></span>
+
+8.  <span data-ttu-id="596cd-126">Selezionare **Abilita comunicazioni con utenti federati XMPP**.</span><span class="sxs-lookup"><span data-stu-id="596cd-126">Select **Enable communications with XMPP federated users**.</span></span>
+
+9.  <span data-ttu-id="596cd-127">Fare clic su **conferma** per salvare le modifiche apportate al criterio globale.</span><span class="sxs-lookup"><span data-stu-id="596cd-127">Click **Commit** to save your changes to the Global policy.</span></span>
+
+</div>
+
+<div>
+
+## <a name="to-create-a-site-or-user-policy-for-xmpp-federated-partners"></a><span data-ttu-id="596cd-128">Per creare un sito o un criterio utente per partner federati XMPP</span><span class="sxs-lookup"><span data-stu-id="596cd-128">To create a site or user policy for XMPP federated partners</span></span>
+
+1.  <span data-ttu-id="596cd-129">Fare clic su **nuovo**e quindi su criteri **sito** o **criteri utente**.</span><span class="sxs-lookup"><span data-stu-id="596cd-129">Click **New**, and then click **Site policy** or **User policy**.</span></span> <span data-ttu-id="596cd-130">In **Seleziona un sito**fare clic sul sito appropriato nell'elenco e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="596cd-130">In **Select a Site**, click the appropriate site from the list and then click **OK**.</span></span>
+
+2.  <span data-ttu-id="596cd-131">Specificare una descrizione per il criterio del sito (facoltativo).</span><span class="sxs-lookup"><span data-stu-id="596cd-131">Provide a description for the Site policy (optional).</span></span>
+
+3.  <span data-ttu-id="596cd-132">Nel criterio sito o utente selezionare **Abilita comunicazioni con gli utenti federati**.</span><span class="sxs-lookup"><span data-stu-id="596cd-132">In the site or user policy, select **Enable communications with federated users**.</span></span>
+
+4.  <span data-ttu-id="596cd-133">Selezionare **Abilita comunicazioni con utenti federati XMPP**.</span><span class="sxs-lookup"><span data-stu-id="596cd-133">Select **Enable communications with XMPP federated users**.</span></span>
+
+5.  <span data-ttu-id="596cd-134">Fare clic su **conferma** per salvare le modifiche apportate ai criteri per il sito o per gli utenti.</span><span class="sxs-lookup"><span data-stu-id="596cd-134">Click **Commit** to save your changes to the site or user policy.</span></span>
+
+</div>
+
+<div>
+
+## <a name="to-edit-an-existing-policy-for-xmpp-federated-partners"></a><span data-ttu-id="596cd-135">Per modificare un criterio esistente per i partner federati XMPP</span><span class="sxs-lookup"><span data-stu-id="596cd-135">To edit an existing policy for XMPP federated partners</span></span>
+
+1.  <span data-ttu-id="596cd-136">Per modificare un criterio esistente, selezionare il criterio appropriato nell'elenco, fare clic su **modifica**e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="596cd-136">To change an existing policy, select the appropriate policy in the list, click **Edit**, and then click **Show details**.</span></span>
+
+2.  <span data-ttu-id="596cd-137">Modificare o aggiornare la descrizione per il criterio (facoltativo).</span><span class="sxs-lookup"><span data-stu-id="596cd-137">Change or update the description for the policy (optional).</span></span>
+
+3.  <span data-ttu-id="596cd-138">Selezionare o deselezionare **Abilita comunicazioni con gli utenti federati**.</span><span class="sxs-lookup"><span data-stu-id="596cd-138">Select or unselect **Enable communications with federated users**.</span></span>
+
+4.  <span data-ttu-id="596cd-139">Selezionare o deselezionare **Abilita comunicazioni con utenti federati XMPP**.</span><span class="sxs-lookup"><span data-stu-id="596cd-139">Select or unselect **Enable communications with XMPP federated users**.</span></span>
+
+5.  <span data-ttu-id="596cd-140">Fare clic su **conferma** per salvare le modifiche apportate al criterio.</span><span class="sxs-lookup"><span data-stu-id="596cd-140">Click **Commit** to save your changes to the policy.</span></span>
+
+</div>
+
+<div>
+
+## <a name="to-edit-an-existing-policy-for-xmpp-federated-partners-by-using-windows-powershell"></a><span data-ttu-id="596cd-141">Per modificare un criterio esistente per i partner federati XMPP tramite Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="596cd-141">To edit an existing policy for XMPP federated partners by using Windows PowerShell</span></span>
+
+1.  <span data-ttu-id="596cd-142">Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="596cd-142">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+
+2.  <span data-ttu-id="596cd-143">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="596cd-143">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+
+3.  <span data-ttu-id="596cd-144">Digitare quanto segue in Lync Server Management Shell:</span><span class="sxs-lookup"><span data-stu-id="596cd-144">Type the following in the Lync Server Management Shell:</span></span>
+    
+        Set-CsExternalAccessPolicy -Identity <name of global, site or user policy - policy must exist when using Set-CsExternalAccessPolicy > -Description <descriptive name for policy> -EnableFederationAccess <$true, $false> -EnableXmppAccess <$true, $false>
+    
+    <span data-ttu-id="596cd-145">Un comando di esempio che imposterà il criterio globale per l'accesso degli utenti federati a true (Enabled) e l'accesso al dominio XMPP a true (Enabled):</span><span class="sxs-lookup"><span data-stu-id="596cd-145">An example command that will set the global policy for Federated user access to True (enabled) and XMPP domain access to True (enabled):</span></span>
+    
+        Set-CsExternalAccessPolicy -Identity global -EnableFederationAccess $true -EnableXmppAccess $true
+
+</div>
+
+<div>
+
+## <a name="to-create-a-site-or-user-policy-for-xmpp-federated-partners-using-windows-powershell"></a><span data-ttu-id="596cd-146">Per creare un sito o un criterio utente per partner federati XMPP con Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="596cd-146">To create a site or user policy for XMPP federated partners using Windows PowerShell</span></span>
+
+1.  <span data-ttu-id="596cd-147">Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="596cd-147">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+
+2.  <span data-ttu-id="596cd-148">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="596cd-148">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+
+3.  <span data-ttu-id="596cd-149">Digitare quanto segue in Lync Server Management Shell:</span><span class="sxs-lookup"><span data-stu-id="596cd-149">Type the following in the Lync Server Management Shell:</span></span>
+    
+        New-CsExternalAccessPolicy -Identity <name of global, site or user policy - policy must exist when using Set-CsExternalAccessPolicy > -Description <descriptive name for policy> -EnableFederationAccess <$true, $false> -EnableXmppAccess <$true, $false>
+    
+    <span data-ttu-id="596cd-150">Un comando di esempio che imposterà i criteri del sito per il sito Redmond per l'accesso degli utenti federati all'accesso al dominio abilitato e XMPP a Enabled:</span><span class="sxs-lookup"><span data-stu-id="596cd-150">An example command that will set a site policy for the Redmond site for Federated user access to enabled and XMPP domain access to enabled:</span></span>
+    
+        New-CsExternalAccessPolicy -Identity site:Redmond -EnableFederationAccess $true -EnableXmppAccess $true
+
+</div>
+
+<div>
+
+## <a name="to-delete-an-existing-policy-for-xmpp-federated-partners-by-using-windows-powershell"></a><span data-ttu-id="596cd-151">Per eliminare un criterio esistente per i partner federati XMPP tramite Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="596cd-151">To delete an existing policy for XMPP federated partners by using Windows PowerShell</span></span>
+
+1.  <span data-ttu-id="596cd-152">Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="596cd-152">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+
+2.  <span data-ttu-id="596cd-153">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="596cd-153">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+
+3.  <span data-ttu-id="596cd-154">Digitare quanto segue in Lync Server Management Shell:</span><span class="sxs-lookup"><span data-stu-id="596cd-154">Type the following in the Lync Server Management Shell:</span></span>
+    
+        Remove-CsExternalAccessPolicy -Identity <name of global, site or user policy>
+    
+    <span data-ttu-id="596cd-155">Un comando di esempio che eliminerà un criterio utente:</span><span class="sxs-lookup"><span data-stu-id="596cd-155">An example command that will delete a user policy:</span></span>
+    
+        Remove-CsExternalAccessPolicy -Identity EAPUserPolicySetXMPP
+
+4.  <span data-ttu-id="596cd-156">Comando di esempio che reimposta il criterio globale sui valori predefiniti:</span><span class="sxs-lookup"><span data-stu-id="596cd-156">An example command that will reset the global policy to defaults:</span></span>
+    
+        Remove-CsExternalAccessPolicy -Identity global
+
+</div>
+
+<div>
+
+## <a name="see-also"></a><span data-ttu-id="596cd-157">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="596cd-157">See Also</span></span>
+
+
+[<span data-ttu-id="596cd-158">Assegnare criteri di accesso per gli utenti esterni a un utente abilitato per Lync in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="596cd-158">Assign an external user access policy to a Lync enabled user in Lync Server 2013</span></span>](lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user.md)  
+[<span data-ttu-id="596cd-159">Abilitare o disabilitare la federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="596cd-159">Enable or disable federation and public IM connectivity in Lync Server 2013</span></span>](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md)  
+
+
+[<span data-ttu-id="596cd-160">Gestire i partner federati XMPP per l'organizzazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="596cd-160">Manage XMPP federated partners in Lync Server 2013</span></span>](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)  
+[<span data-ttu-id="596cd-161">Set-CsExternalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="596cd-161">Set-CsExternalAccessPolicy</span></span>](https://docs.microsoft.com/powershell/module/skype/Set-CsExternalAccessPolicy)  
+[<span data-ttu-id="596cd-162">New-CsExternalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="596cd-162">New-CsExternalAccessPolicy</span></span>](https://docs.microsoft.com/powershell/module/skype/New-CsExternalAccessPolicy)  
+[<span data-ttu-id="596cd-163">Get-CsExternalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="596cd-163">Get-CsExternalAccessPolicy</span></span>](https://docs.microsoft.com/powershell/module/skype/Get-CsExternalAccessPolicy)  
+[<span data-ttu-id="596cd-164">Remove-CsExternalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="596cd-164">Remove-CsExternalAccessPolicy</span></span>](https://docs.microsoft.com/powershell/module/skype/Remove-CsExternalAccessPolicy)  
+[<span data-ttu-id="596cd-165">Grant-CsExternalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="596cd-165">Grant-CsExternalAccessPolicy</span></span>](https://docs.microsoft.com/powershell/module/skype/Grant-CsExternalAccessPolicy)  
+  
+
+</div>
+
+</div>
+
+<span> </span>
+
+</div>
+
+</div>
+
+</div>
+
