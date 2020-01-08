@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 ms.reviewer: bjwhalen
-description: Eseguire l'aggiornamento da Skype for business a teams
+description: Aggiornamento da Skype for Business a Teams
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Teams-upgrade-guidance
@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2b801f9dfe27aec4cb35dc6d28b80e9dfbf55390
-ms.sourcegitcommit: b9710149ad0bb321929139118b7df0bc4cca08de
+ms.openlocfilehash: 1d33c0ab186013ca00c18b96dad539bd2af0f5ae
+ms.sourcegitcommit: afc7edd03f4baa1d75f9642d4dbce767fec69b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38010629"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40963084"
 ---
 # <a name="upgrade-from-skype-for-business-to-teams-mdash-for-it-administrators"></a>Eseguire l'aggiornamento da Skype for business &mdash; a teams per gli amministratori IT
 
@@ -73,9 +73,9 @@ La tabella seguente riepiloga l'esperienza dei team per la modalità Islands e T
 
 | Esperienza Teams | In modalità Isole | In modalità TeamsOnly |
 |:------------------ | :------------------- | :------------------ |
-| Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Team |
-| Chiamate PSTN ricevute in: | Skype for business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.    | Team |   
- |Presenza  | La presenza in Skype for business e teams è indipendente. Gli utenti possono visualizzare stati diversi per gli stessi utenti delle isole, a seconda del client che usano. | La presenza si basa esclusivamente sulle attività dell'utente in teams. Tutti gli altri utenti, indipendentemente dal client che usano, vedono quella presenza. | 
+| Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Teams |
+| Chiamate PSTN ricevute in: | Skype for business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.    | Teams |   
+ |Icone di presenza  | La presenza in Skype for business e teams è indipendente. Gli utenti possono visualizzare stati diversi per gli stessi utenti delle isole, a seconda del client che usano. | La presenza si basa esclusivamente sulle attività dell'utente in teams. Tutti gli altri utenti, indipendentemente dal client che usano, vedono quella presenza. | 
  | Pianificazione delle riunioni   | Gli utenti possono pianificare le riunioni in teams o in Skype for business. Vedranno entrambi i componenti aggiuntivi in Outlook. |   Gli utenti pianificano solo riunioni in teams. Solo il componente aggiuntivo teams è disponibile in Outlook. | 
 
 La tabella seguente riepiloga i pro e i contro dell'uso del metodo affiancato per eseguire la migrazione dell'organizzazione a teams.
@@ -148,25 +148,25 @@ Gli utenti con account Skype for business ospitati in locale [devono essere spos
 
 A differenza di altri criteri, non è possibile creare nuove istanze di TeamsUpgradePolicy in Office 365. Tutte le istanze esistenti sono compilate nel servizio.  Tieni presente che la modalità è una proprietà all'interno di TeamsUpgradePolicy, piuttosto che il nome di un'istanza di criteri. In alcuni casi, ma non tutti, il nome dell'istanza di criterio corrisponde alla modalità. In particolare, per assegnare la modalità TeamsOnly a un utente, l'istanza "UpgradeToTeams" di TeamsUpgradePolicy viene assegnata all'utente. Per visualizzare un elenco di tutte le istanze, è possibile eseguire il comando seguente:
 
-```
+```PowerShell
 Get-CsTeamsUpgradePolicy|ft Identity, Mode, NotifySfbUsers
 ```
 
 Per aggiornare un utente online alla modalità TeamsOnly, assegna l'istanza "UpgradeToTeams": 
 
-```
+```PowerShell
 Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams -Identity $user 
 ```
 
 Per aggiornare un utente locale di Skype for business alla modalità TeamsOnly, USA Move-CsUser nel set di strumenti locale:
 
-```
+```PowerShell
 Move-CsUser -identity $user -Target sipfed.online.lync.com -MoveToTeams -credential $cred
 ```
 
 Per modificare la modalità per tutti gli utenti del tenant, ad eccezione di quelli che hanno una concessione esplicita per utente (che ha la precedenza), eseguire il comando seguente:
 
-```
+```PowerShell
 Grant-CsTeamsUpgradePolicy -PolicyName SfbWithTeamsCollab -Global
 ```
 
@@ -185,13 +185,13 @@ Se gli utenti sono ospitati in Skype for business online, è sufficiente assegna
 
 Se gli utenti sono ospitati in Skype for Business Server locale, sarà necessario usare il set di strumenti locale e sarà necessario Skype for Business Server 2019 o CU8 per Skype for Business Server 2015. Nella finestra di PowerShell locale creare una nuova istanza di TeamsUpgradePolicy con NotifySfbUsers = true:
 
-```
+```PowerShell
 New-CsTeamsUpgradePolicy -Identity EnableNotification -NotifySfbUsers $true
 ```
 
 Quindi, usando la stessa finestra di PowerShell locale, assegna il nuovo criterio agli utenti desiderati:
 
-```
+```PowerShell
 Grant-CsTeamsUpgradePolicy -Identity $user -PolicyName EnableNotification
 ```
 
@@ -249,7 +249,7 @@ Di seguito sono riportati i comandi principali:
 
 1. Impostare l'impostazione predefinita a livello di tenant su modalità SfbWithTeamsCollab come indicato di seguito:
 
-   ```
+   ```PowerShell
    Grant-CsTeamsUpgradePolicy -PolicyName SfbWithTeamsCollab -Global
    ```
 
@@ -257,13 +257,13 @@ Di seguito sono riportati i comandi principali:
 
    - Se l'utente è già online:
 
-     ```
+     ```PowerShell
      Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams -Identity $username 
      ```
 
    - Se l'utente è locale:
 
-     ```
+     ```PowerShell
      Move-CsUser -identity $user -Target sipfed.online.lync.com -MoveToTeams -credential $cred 
      ```
 
@@ -290,7 +290,7 @@ Se alcuni utenti dell'organizzazione usano attivamente team in modalità isole, 
 
 2. Per ogni utente di team attivi che si trova nel passaggio 1, assegnare la modalità isole in PowerShell remoto. In questo modo è possibile passare al passaggio successivo e verificare che l'esperienza utente non venga modificata.  
 
-   ```
+   ```PowerShell
    $users=get-content “C:\MyPath\users.txt” 
     foreach ($user in $users){ 
     Grant-CsTeamsUpgradePolicy -identity $user -PolicyName Islands} 
@@ -298,7 +298,7 @@ Se alcuni utenti dell'organizzazione usano attivamente team in modalità isole, 
 
 3. Impostare i criteri a livello di tenant su SfbWithTeamsCollab:
 
-   ```
+   ```PowerShell
    Grant-CsTeamsUpgradePolicy -Global -PolicyName SfbWithTeamsCollab 
    ```
 
@@ -306,13 +306,13 @@ Se alcuni utenti dell'organizzazione usano attivamente team in modalità isole, 
 
    Per gli utenti residenti in Skype for business online:  
 
-   ```
+   ```PowerShell
    Grant-CsTeamsUpgradePolicy -Identity $user -PolicyName UpgradeToTeams 
    ```
 
    Per gli utenti residenti in Skype for Business Server locale:  
 
-   ```
+   ```PowerShell
    Move-CsUser -Identity $user -Target sipfed.online.lync.com -MoveToTeams -credential $cred 
    ```
 
@@ -438,7 +438,7 @@ Se si usa il routing diretto o un piano di chiamata Microsoft, un utente deve av
 
 - Se a un utente esistente di TeamsOnly o Skype for business online viene assegnata una licenza di sistema telefonico, EV-Enabled non è impostato su true per impostazione predefinita.  Questo accade anche se un utente locale viene spostato nel cloud prima di assegnare la licenza per il sistema telefonico. In entrambi i casi, l'amministratore deve specificare il cmdlet seguente: 
 
-  ```
+  ```PowerShell
   Set-CsUser -EnterpriseVoiceEnabled $True 
   ```
 
@@ -449,11 +449,11 @@ Questa sezione riepiloga il comportamento che può essere sperimentato quando si
 - [Riunioni](#meetings)
 - [Interoperabilità](#interoperability)
 - [Conversazioni in teams-interoperabilità contro thread nativi](#teams-conversations---interop-versus-native-threads)
-- [Presenza](#presence)
+- [Icone di presenza](#presence)
 - [Federazione](#federation)
 - [Contatti](#contacts)
 
-### <a name="meetings"></a> Riunioni
+### <a name="meetings"></a>Riunioni
 
 Indipendentemente dalla modalità, gli utenti possono sempre partecipare a qualsiasi tipo di riunione a cui sono invitati, che si tratti di Skype for business o teams.  Gli utenti devono tuttavia partecipare alla riunione con un client corrispondente che corrisponda al tipo di riunione:
 
@@ -510,7 +510,7 @@ Dopo aver creato un thread di conversazione, il tipo non cambia mai. Una volta c
 
 ![Diagramma che mostra una chat con l'utente Skype for business aggiornato](media/teams-upgrade-chat-with-upgraded-sfb-user.png)
 
-### <a name="presence"></a>Presenza
+### <a name="presence"></a>Icone di presenza
 
 La presenza di un utente specifico si basa sulle attività dell'utente nel servizio tramite il client. La presenza viene quindi pubblicata per consentire ad altri utenti di visualizzarla.  Skype for business e teams sono servizi distinti con client distinti, quindi ogni servizio ha un proprio stato di presenza per un utente.   Esiste anche la sincronizzazione tra i servizi di presenza in teams e in Skype for business online.  Ciò consente a un servizio di pubblicare potenzialmente la presenza dell'utente dall'altro servizio, se necessario. 
 

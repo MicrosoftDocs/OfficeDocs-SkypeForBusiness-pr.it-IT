@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Setup
 description: 'Learn how to switch between Skype for Business and Lync client user interfaces using PowerShell in Office 365 '
-ms.openlocfilehash: 2788799f5125aab63938241d737eade25f6cd61a
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: 0f24879c136c98db1a856765cb164d376417ad5a
+ms.sourcegitcommit: afc7edd03f4baa1d75f9642d4dbce767fec69b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35221510"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962884"
 ---
 # <a name="switching-between-the-skype-for-business-and-the-lync-client-user-interfaces"></a>Passaggio tra le interfacce utente del client Skype for Business e del client Lync
 
@@ -43,7 +43,7 @@ Il modulo Windows PowerShell per Skype for Business online consente di creare un
 > [!IMPORTANT]
 > L'impostazione del criterio  _Global_ per il cambio dell'interfaccia utente non verrà applicata a un utente che ha già un criterio personalizzato applicato. Per consentire il cambio dell'interfaccia utente, sarà necessario eseguire il seguente comando per ciascun utente che ha un criterio personalizzato applicato:
   
-```
+```PowerShell
 Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI -Identity <username>
 ```
 
@@ -52,7 +52,7 @@ Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI -Identity <username>
   
 Per abilitare tutti gli utenti dell'organizzazione a utilizzare il client Skype for Business, aprire una sessione remota di PowerShell e digitare quanto segue:
   
-```
+```PowerShell
 Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI
 ```
 
@@ -62,7 +62,7 @@ Se si imposta correttamente il criterio, verrà visualizzato quanto segue:
   
 Per abilitare tutti gli utenti dell'organizzazione a utilizzare il client Skype for Business (Lync), aprire una sessione remota di PowerShell e digitare quanto segue: 
   
-```
+```PowerShell
 Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI
 ```
 
@@ -72,7 +72,7 @@ Se si imposta correttamente il criterio, verrà visualizzato quanto segue:
   
 Per consentire a un singolo utente dell'organizzazione di utilizzare il client Skype for Business, aprire una sessione remota di PowerShell e digitare quanto segue:
   
-```
+```PowerShell
 Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI -Identity <username>
 ```
 
@@ -82,7 +82,7 @@ Se si imposta correttamente il criterio, verrà visualizzato quanto segue:
   
 Per consentire a un singolo utente dell'organizzazione di utilizzare il client Skype for Business (Lync), aprire una sessione remota di PowerShell e digitare quanto segue:
   
-```
+```PowerShell
 Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI -Identity <username>
 ```
 
@@ -93,7 +93,7 @@ Se si imposta correttamente il criterio, verrà visualizzato quanto segue:
 Per consentire a più utenti dell'organizzazione di utilizzare il client Skype for Business, aprire una sessione remota di PowerShell e digitare quanto segue:
   
 
-```
+```PowerShell
 $users = @("sip:bob@contoso.com","sip:fred@contoso.com") 
 
 $users | Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI
@@ -101,7 +101,7 @@ $users | Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI
 
 Per consentire a più utenti dell'organizzazione di utilizzare il client Skype for Business (Lync), aprire una sessione remota di PowerShell e digitare quanto segue:
   
-```
+```PowerShell
 $users = @("sip:bob@contoso.com","sip:fred@contoso.com")
 
 $users | Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI
@@ -109,13 +109,13 @@ $users | Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI
 
 Per consentire a un gruppo di utenti dell'organizzazione di utilizzare il client Skype for Business, aprire una sessione remota di PowerShell e digitare quanto segue:
   
-```
+```PowerShell
 Get-CsOnlineUser -Filter {Department -eq "Sales"} | Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI
 ```
 
 Per consentire a un gruppo di utenti dell'organizzazione di utilizzare il client Skype for Business (Lync), aprire una sessione remota di PowerShell e digitare quanto segue:
   
-```
+```PowerShell
 Get-CsOnlineUser -Filter {Department -eq "Sales"} | Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI
 ```
 
@@ -172,7 +172,7 @@ Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
     
 ## <a name="first-launch-client-behaviors"></a>Comportamenti del client al primo avvio
 
-Per impostazione predefinita, quando gli utenti avviano Skype for business per la prima volta, vedranno sempre l'interfaccia utente di Skype for business, anche se è stata selezionata l'esperienza client di Lync impostando il criterio client su Lync Client Experience (`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`) come descritto precedentemente. Dopo alcuni minuti, all'utente verrà richiesto di passare alla modalità Lync.
+Per impostazione predefinita, quando gli utenti avviano Skype for business per la prima volta, vedranno sempre l'interfaccia utente di Skype for business, anche se è stata selezionata l'esperienza client di Lync impostando il criterio client su Lync Client Experience (`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`) come descritto in precedenza. Dopo alcuni minuti, all'utente verrà richiesto di passare alla modalità Lync.
   
 Se desideri visualizzare l'interfaccia utente di Lync al primo avvio del client Skype for Business da parte dell'utente, segui questa procedura prima che il client venga avviato per la prima volta in seguito all'aggiornamento:
   
@@ -214,7 +214,7 @@ Se non vuoi che gli utenti siano in grado di accedere all'esercitazione, puoi di
   
 Nella chiave **[HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\15.0\\Lync]** crea un nuovo **valore DWORD (32 bit)**. **Nome valore** deve essere **TutorialFeatureEnabled**, mentre **Dati valore** deve essere impostato su **0**.
   
-```
+```PowerShell
 "TutorialFeatureEnabled"=dword:00000000
 ```
 

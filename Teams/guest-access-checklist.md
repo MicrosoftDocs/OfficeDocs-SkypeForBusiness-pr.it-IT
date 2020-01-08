@@ -3,7 +3,6 @@ title: Elenco di controllo di accesso guest di Microsoft Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
-ms.date: 06/21/2019
 ms.topic: article
 audience: admin
 ms.service: msteams
@@ -16,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bcba883166e01bd8a18d6d76b4622df0740500c8
-ms.sourcegitcommit: 000fdb3bc1a0d4dda63fb00bab6a9a9ab0c85ab0
+ms.openlocfilehash: c3354f7b503b2f1ea91c050a751b5d7d9ab0537a
+ms.sourcegitcommit: afc7edd03f4baa1d75f9642d4dbce767fec69b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813776"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40962534"
 ---
 <a name="microsoft-teams-guest-access-checklist"></a>Elenco di controllo di accesso guest di Microsoft Teams
 ==========================================
@@ -84,11 +83,11 @@ Per attivare l'accesso guest, accedere all'interfaccia di **amministrazione di M
 
 ## <a name="step-3-configure-office-365-groups"></a>Passaggio 3: configurare i gruppi di Office 365
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **Impostazioni** > **Servizi &** > gruppi di componenti aggiuntivi di**Office 365**.
-2. Assicurarsi che **i membri del gruppo al di fuori del contenuto del gruppo di Access dell'organizzazione** siano impostati **su**attivato. Se questa impostazione è disattivata, gli utenti non saranno in grado di accedere a qualsiasi contenuto di gruppo.
-3. Assicurarsi che **i proprietari del gruppo aggiungano persone all'esterno dell'organizzazione a gruppi** sia impostato **su**attivato. Se questa impostazione è disattivata, i proprietari del team non saranno in grado di aggiungere nuovi Guest. Questa impostazione deve essere almeno attiva per supportare l'accesso guest.
+1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **Impostazioni** > **Servizi & i componenti**aggiuntivi e quindi selezionare **gruppi di Office 365**.
 
      ![La schermata mostra i gruppi di Office 365](media/guest-access-checklist-office365.png)
+2. Verificare che la casella di controllo **consente ai membri del gruppo all'esterno del contenuto dell'organizzazione di Access Group** sia selezionata. Se questa impostazione non è selezionata, gli utenti non saranno in grado di accedere a qualsiasi contenuto di gruppo.
+3. Verificare che la casella **di controllo Let Group owners Add people outside the Organization to** groups sia selezionata. Se questa impostazione non è selezionata, i proprietari del team non saranno in grado di aggiungere nuovi Guest. Questa impostazione deve essere almeno attiva per supportare l'accesso guest.
 
 Per istruzioni dettagliate sulla configurazione di queste impostazioni, vedere [gestire l'accesso guest nei gruppi di office 365](https://support.office.com/article/manage-guest-access-in-office-365-groups-9de497a9-2f5c-43d6-ae18-767f2e6fe6e0?appver=MOE150) e [controllare l'accesso guest nei gruppi di Office 365](Teams-dependencies.md#control-guest-access-in-office-365-groups).
  
@@ -115,14 +114,16 @@ Assicurarsi che gli utenti possano aggiungere Guest. Ecco come:
 
 ## <a name="step-5-verify-sharing-setting-in-sharepoint"></a>Passaggio 5: verificare l'impostazione di condivisione in SharePoint
 
-Questo è un po' un rompicapo. L'accesso guest in teams non funziona se l'opzione **non consentire la condivisione all'esterno dell'organizzazione** è selezionata nell'interfaccia di amministrazione di SharePoint.
-
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
-2. Fare clic su interfaccia di **Amministrazione**e quindi selezionare **SharePoint**.
-3. Nell'interfaccia di amministrazione di SharePoint selezionare **condivisione**.
-4. Verificare che l'opzione **non consentire la condivisione all'esterno** dell'organizzazione *non* sia selezionata.
+2. In **centri di amministrazione**selezionare **SharePoint**.
+3. Nella nuova interfaccia di amministrazione di SharePoint, in **siti**, selezionare **siti attivi**.
+
+    ![Siti attivi nell'interfaccia di amministrazione di SharePoint](media/guest-access-checklist-SPOSettings0.png)
+
+3. Selezionare il sito e quindi fare clic su **condivisione**.
+4. Verificare che l'opzione sia impostata su **tutti gli utenti** o **gli ospiti nuovi o esistenti**.
  
-     ![La schermata mostra un esempio di attivazione di impostazioni online di SparePoint.](media/guest-access-checklist-SPOSettings1.png)
+     ![Screenshot mostra un esempio di attivazione di impostazioni di SharePoint Online](media/guest-access-checklist-SPOSettings1.png)
 
 
 ## <a name="step-6-set-up-guest-user-permissions"></a>Passaggio 6: configurare le autorizzazioni per gli utenti Guest
