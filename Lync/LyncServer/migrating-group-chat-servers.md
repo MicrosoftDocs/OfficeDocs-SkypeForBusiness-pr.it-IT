@@ -1,0 +1,49 @@
+---
+title: Migrazione dei server di chat di gruppo
+ms.reviewer: ''
+ms.author: kenwith
+author: kenwith
+TOCTitle: Migrating Group Chat servers
+ms:assetid: 34bc98f4-919d-4b6f-be82-55bf766a48d0
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ688020(v=OCS.15)
+ms:contentKeyID: 49733609
+ms.date: 07/23/2014
+manager: serdars
+mtps_version: v=OCS.15
+ms.openlocfilehash: 7d9b5381d182a65d78f0c0155d7ed07e525f89d7
+ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "40982232"
+---
+<div data-xmlns="http://www.w3.org/1999/xhtml">
+
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+
+<div data-asp="http://msdn2.microsoft.com/asp">
+
+# <a name="migrating-group-chat-servers"></a>Migrazione dei server di chat di gruppo
+
+</div>
+
+<div id="mainSection">
+
+<div id="mainBody">
+
+<span> </span>
+
+_**Argomento Ultima modifica:** 2012-09-29_
+
+Se il server di chat di gruppo è stato distribuito nell'ambiente legacy di Lync Server 2010, è necessario distribuire il server di chat persistente di Lync Server 2013. Il server di chat di gruppo e il server di chat persistente possono coesistere, ma il contenuto (ad esempio, chat room e così via) non è condiviso tra questi server. Per accedere al contenuto del server di chat di gruppo legacy dal server di chat persistente, è necessario eseguire la migrazione del server chat di gruppo al server di chat persistente. Per informazioni dettagliate sulla migrazione a un server di chat persistente, vedere [migrazione da Lync server 2010, Group Chat o Office Communications server 2007 R2 Group Chat a Lync server 2013, Persistent Chat Server](migration-from-lync-server-2010-group-chat-or-office-communications-server-2007-r2-group-chat-to-lync-server-2013-persistent-chat-server.md) nella documentazione di migrazione.
+
+</div>
+
+<span> </span>
+
+</div>
+
+</div>
+
+</div>
+

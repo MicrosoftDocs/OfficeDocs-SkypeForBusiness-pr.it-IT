@@ -1,0 +1,69 @@
+---
+title: "Lync Server 2013: usare i risultati della scansione per analizzare e risolvere i problemi segnalati dall'analizzatore delle procedure consigliate"
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+TOCTitle: Using scan results to analyze and resolve issues reported by Best Practices Analyzer
+ms:assetid: cf1154a6-4de3-4d14-b99b-73a88014347b
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg591350(v=OCS.15)
+ms:contentKeyID: 48185581
+ms.date: 07/23/2014
+manager: serdars
+mtps_version: v=OCS.15
+ms.openlocfilehash: e2b776cda22d5570417d0de3fd2e055e9bdc4ed4
+ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "40984809"
+---
+<div data-xmlns="http://www.w3.org/1999/xhtml">
+
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+
+<div data-asp="http://msdn2.microsoft.com/asp">
+
+# <a name="using-scan-results-to-analyze-and-resolve-issues-reported-by-best-practices-analyzer-in-lync-server-2013"></a>Uso dei risultati della scansione per analizzare e risolvere i problemi segnalati dall'analizzatore delle procedure consigliate in Lync Server 2013
+
+</div>
+
+<div id="mainSection">
+
+<div id="mainBody">
+
+<span> </span>
+
+_**Argomento Ultima modifica:** 2012-06-14_
+
+Quando si esegue Lync Server 2013, Best Practices Analyzer nell'ambiente Lync Server 2013, lo strumento usa i risultati della scansione per generare rapporti di problemi con la distribuzione. È possibile usare i report generati da Best Practices Analyzer per identificare e risolvere problemi specifici.
+
+<div>
+
+
+> [!NOTE]  
+> Lync Server 2013, Best Practices Analyzer analizza e segnala i problemi solo con i componenti di Lync Server 2013. Se la distribuzione include componenti di Microsoft Lync Server 2010 o Office Communications Server 2007 R2, usare la versione precedente di Best Practices Analyzer per analizzare questi componenti. Per informazioni dettagliate, vedere <A href="lync-server-2013-requirements-for-running-best-practices-analyzer.md">requisiti per l'uso di Best Practices Analyzer in Lync Server 2013</A>.
+
+
+
+</div>
+
+<div>
+
+## <a name="in-this-section"></a>Contenuto della sezione
+
+  - [Visualizzazione e utilizzo dei report creati da Best Practices Analyzer in Lync Server 2013](lync-server-2013-viewing-and-working-with-reports-created-by-best-practices-analyzer.md)
+
+  - [Analisi e risoluzione dei problemi identificati dall'analizzatore delle procedure consigliate in Lync Server 2013](lync-server-2013-analyzing-and-resolving-issues-identified-by-best-practices-analyzer.md)
+
+</div>
+
+</div>
+
+<span> </span>
+
+</div>
+
+</div>
+
+</div>
+
