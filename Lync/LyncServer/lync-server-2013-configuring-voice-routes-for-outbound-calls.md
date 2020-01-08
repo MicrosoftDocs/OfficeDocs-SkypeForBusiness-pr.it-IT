@@ -1,0 +1,118 @@
+---
+title: 'Lync Server 2013: Configurazione di route vocali per le chiamate in uscita'
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+TOCTitle: Configuring voice routes for outbound calls
+ms:assetid: 3c182cdd-7a4a-4a9d-bdac-4199f0abd947
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg425890(v=OCS.15)
+ms:contentKeyID: 48183875
+ms.date: 07/23/2014
+manager: serdars
+mtps_version: v=OCS.15
+ms.openlocfilehash: 6e91525f5d35110560b28059f774be8d2cb5df6d
+ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "40975156"
+---
+<div data-xmlns="http://www.w3.org/1999/xhtml">
+
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+
+<div data-asp="http://msdn2.microsoft.com/asp">
+
+# <a name="configuring-voice-routes-for-outbound-calls-in-lync-server-2013"></a><span data-ttu-id="f4fe2-102">Configurazione di route vocali per le chiamate in uscita in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f4fe2-102">Configuring voice routes for outbound calls in Lync Server 2013</span></span>
+
+</div>
+
+<div id="mainSection">
+
+<div id="mainBody">
+
+<span> </span>
+
+<span data-ttu-id="f4fe2-103">_**Argomento Ultima modifica:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="f4fe2-103">_**Topic Last Modified:** 2012-11-01_</span></span>
+
+<span data-ttu-id="f4fe2-104">Una route vocale di Lync Server 2013 associa i numeri di telefono di destinazione con uno o più gateway PSTN (Public Switched Telephone Network) o trunk SIP e uno o più record di utilizzo PSTN.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-104">A Lync Server 2013 voice route associates destination phone numbers with one or more public switched telephone network (PSTN) gateways or SIP trunks and one or more PSTN usage records.</span></span>
+
+<span data-ttu-id="f4fe2-105">**Per visualizzare le route vocali tramite il pannello di controllo di Lync Server**</span><span class="sxs-lookup"><span data-stu-id="f4fe2-105">**To view voice routes by using Lync Server Control Panel**</span></span>
+
+1.  <span data-ttu-id="f4fe2-106">Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-106">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="f4fe2-107">Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="f4fe2-107">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+
+2.  <span data-ttu-id="f4fe2-108">Fare clic su **routing vocale**.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-108">Click **Voice Routing**.</span></span>
+
+3.  <span data-ttu-id="f4fe2-109">Fare clic su **Route**.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-109">Click **Route**.</span></span>
+
+4.  <span data-ttu-id="f4fe2-110">Fare doppio clic su una route vocale per visualizzare altre proprietà dall'elenco di route vocali oppure selezionare la route e fare clic su **modifica**.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-110">Double-click a voice route to view additional properties from the list of voice routes, or select the route and click **Edit**.</span></span> <span data-ttu-id="f4fe2-111">Quindi fare clic su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-111">Then click **Show details**.</span></span>
+    
+    <div>
+    
+
+    > [!NOTE]  
+    > <span data-ttu-id="f4fe2-112">È possibile visualizzare informazioni dettagliate solo per una singola route alla volta.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-112">You can only view detailed information for a single route at a time.</span></span>
+
+    
+    </div>
+
+<span data-ttu-id="f4fe2-113">**Per visualizzare le route vocali tramite Windows PowerShell**</span><span class="sxs-lookup"><span data-stu-id="f4fe2-113">**To view voice routes by using Windows PowerShell**</span></span>
+
+  - <span data-ttu-id="f4fe2-114">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-114">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span> <span data-ttu-id="f4fe2-115">Le route vocali possono essere visualizzate usando Windows PowerShell e il cmdlet **Get-CsVoiceRoute** .</span><span class="sxs-lookup"><span data-stu-id="f4fe2-115">Voice routes can be viewed by using Windows PowerShell and the **Get-CsVoiceRoute** cmdlet.</span></span> <span data-ttu-id="f4fe2-116">Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-116">This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="f4fe2-117">Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-117">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
+    
+    <span data-ttu-id="f4fe2-118">Per visualizzare informazioni su tutte le route vocali, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:</span><span class="sxs-lookup"><span data-stu-id="f4fe2-118">To view information about all of your voice routes, type the following command in the Lync Server Management Shell, and then press ENTER:</span></span>
+    
+        Get-CsVoiceRoute
+    
+    <span data-ttu-id="f4fe2-119">Questo restituirà informazioni simili alla seguente:</span><span class="sxs-lookup"><span data-stu-id="f4fe2-119">That will return information similar to this:</span></span>
+    
+        Identity          : global
+        Priority          : -1
+        Description       :
+        NumberPattern     : ^(\+1[0-9]{10})$
+        PstnUsages        : {}
+        PstnGatewayList   : {}
+        Name              : global
+        SuppressCallerId  :
+        AlternateCallerId :
+
+<div>
+
+
+> [!NOTE]  
+> <span data-ttu-id="f4fe2-120">Per informazioni dettagliate, vedere <A href="lync-server-2013-voice-routes.md">route vocali in Lync Server 2013</A> nella documentazione relativa alla pianificazione.</span><span class="sxs-lookup"><span data-stu-id="f4fe2-120">For details, see <A href="lync-server-2013-voice-routes.md">Voice routes in Lync Server 2013</A> in the Planning documentation.</span></span>
+
+
+
+</div>
+
+<div>
+
+## <a name="in-this-section"></a><span data-ttu-id="f4fe2-121">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="f4fe2-121">In This Section</span></span>
+
+  - [<span data-ttu-id="f4fe2-122">Creare una route vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f4fe2-122">Create a voice route in Lync Server 2013</span></span>](lync-server-2013-create-a-voice-route.md)
+
+  - [<span data-ttu-id="f4fe2-123">Modificare una route vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f4fe2-123">Modify a voice route in Lync Server 2013</span></span>](lync-server-2013-modify-a-voice-route.md)
+
+</div>
+
+<div>
+
+## <a name="see-also"></a><span data-ttu-id="f4fe2-124">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="f4fe2-124">See Also</span></span>
+
+
+[<span data-ttu-id="f4fe2-125">Gestione del routing vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f4fe2-125">Managing voice routing in Lync Server 2013</span></span>](lync-server-2013-managing-voice-routing.md)  
+  
+
+</div>
+
+</div>
+
+<span> </span>
+
+</div>
+
+</div>
+
+</div>
+
