@@ -1,0 +1,73 @@
+---
+title: 'Lync Server 2013: Distribuzione di Lync Server'
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+TOCTitle: Deploying Lync Server 2013
+ms:assetid: b76795a4-4e71-4c70-a5c0-d1197fa8028c
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg412892(v=OCS.15)
+ms:contentKeyID: 48185197
+ms.date: 07/23/2014
+manager: serdars
+mtps_version: v=OCS.15
+ms.openlocfilehash: ce62d2cfa3d98bc982ea2ed2fa19ade6205a62ac
+ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "40978753"
+---
+<div data-xmlns="http://www.w3.org/1999/xhtml">
+
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+
+<div data-asp="http://msdn2.microsoft.com/asp">
+
+# <a name="deploying-lync-server-2013"></a>Distribuzione di Lync Server 2013
+
+</div>
+
+<div id="mainSection">
+
+<div id="mainBody">
+
+<span> </span>
+
+_**Argomento Ultima modifica:** 2012-10-18_
+
+Il processo di distribuzione per Lync Server 2013 è determinato dalla topologia e dai componenti di Lync Server che si decide di installare, ad esempio se si vuole distribuire un pool Front end o un server Standard Edition. Gli argomenti di questa sezione consentono di determinare l'ambiente che si vuole distribuire e di guidarlo nel processo di distribuzione.
+
+<div>
+
+## <a name="in-this-section"></a>Contenuto della sezione
+
+  - [Panoramica della distribuzione per Lync Server 2013](lync-server-2013-deployment-overview.md)
+
+  - [Requisiti di sistema per Lync Server 2013](lync-server-2013-system-requirements.md)
+
+  - [Preparazione dell'infrastruttura e dei sistemi per Lync Server 2013](lync-server-2013-preparing-the-infrastructure-and-systems.md)
+
+  - [Definizione e configurazione della topologia in Lync Server 2013](lync-server-2013-defining-and-configuring-the-topology.md)
+
+  - [Finalizzazione e implementazione della progettazione della topologia in Lync Server 2013](lync-server-2013-finalizing-and-implementing-the-topology-design.md)
+
+  - [Configurazione di Front End Server e pool Front End per Lync Server 2013](lync-server-2013-setting-up-front-end-servers-and-front-end-pools.md)
+
+  - [Distribuzione di Lync Server 2013 Standard Edition in un server Lync Server 2013 Enterprise esistente](lync-server-2013-deploying-lync-server-2013-standard-edition-into-an-existing-lync-server-2013-enterprise.md)
+
+  - [Aggiunta di ruoli del server in Lync Server 2013](lync-server-2013-adding-server-roles.md)
+
+  - [Configurazione dell'autenticazione Kerberos in Lync Server 2013](lync-server-2013-setting-up-kerberos-authentication.md)
+
+</div>
+
+</div>
+
+<span> </span>
+
+</div>
+
+</div>
+
+</div>
+

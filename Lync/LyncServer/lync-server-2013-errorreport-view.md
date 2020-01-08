@@ -1,0 +1,221 @@
+---
+title: 'Lync Server 2013: visualizzazione ErrorReport'
+ms.reviewer: ''
+ms.author: v-lanac
+author: lanachin
+TOCTitle: ErrorReport view
+ms:assetid: ca873f7e-b18b-4eaf-8db0-5f9d5a9b60a1
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ721887(v=OCS.15)
+ms:contentKeyID: 49733821
+ms.date: 07/23/2014
+manager: serdars
+mtps_version: v=OCS.15
+ms.openlocfilehash: 6b50a2615fe83ed481d9642ac6895120f20b9fd0
+ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "40979613"
+---
+<div data-xmlns="http://www.w3.org/1999/xhtml">
+
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+
+<div data-asp="http://msdn2.microsoft.com/asp">
+
+# <a name="errorreport-view-in-lync-server-2013"></a>Visualizzazione ErrorReport in Lync Server 2013
+
+</div>
+
+<div id="mainSection">
+
+<div id="mainBody">
+
+<span> </span>
+
+_**Argomento Ultima modifica:** 2013-01-22_
+
+La visualizzazione ErrorReport archivia le informazioni sugli errori segnalati. Ogni record è un'occorrenza di errore. Gli errori vengono acquisiti dall'agente CDR in uso nel server front-end o inviati dal client. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
+
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Colonna</th>
+<th>Tipo di dati</th>
+<th>Dettagli</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>ErrorTime</strong></p></td>
+<td><p>DateTime</p></td>
+<td><p>Periodo di errore. Usato in combinazione con ErrorReportSeq per identificare in modo univoco un errore.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>ErrorReportSeq</strong></p></td>
+<td><p>int</p></td>
+<td><p>Numero ID per identificare l'errore. Usato in combinazione con ErrorTime per identificare in modo univoco un errore.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>MsDiagId</strong></p></td>
+<td><p>int</p></td>
+<td><p>ID di diagnostica per il report degli errori.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>FromUri</strong></p></td>
+<td><p>nvarchar (450)</p></td>
+<td><p>URI dell'utente che ha originato l'errore.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>FromUriType</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Tipo di URI dell'utente che ha originato l'errore. Per altre informazioni, vedere la <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>FromTenant</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Tenant dell'utente che ha originato l'errore. Per altre informazioni, vedere la <a href="lync-server-2013-tenants-table.md">tabella tenant in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>ToUri</strong></p></td>
+<td><p>nvarchar (450)</p></td>
+<td><p>URI dell'utente che era la destinazione della segnalazione errori.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>ToUriType</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Tipo di URI dell'utente che ha la destinazione della segnalazione errori. Per altre informazioni, vedere la tabella UriTypes.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Totenant</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Tenant dell'utente destinatario della segnalazione errori. Per altre informazioni, vedere la <a href="lync-server-2013-tenants-table.md">tabella tenant in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>ConferenceUri</strong></p></td>
+<td><p>nvarchar (450)</p></td>
+<td><p>URI della conferenza che era la destinazione della segnalazione errori.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>ConferenceUriType</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Tipo di URI della conferenza che era la destinazione della segnalazione errori. Per altre informazioni, vedere la <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>SessionIdTime</strong></p></td>
+<td><p>DateTime</p></td>
+<td><p>Ora della richiesta di sessione che ha originato il rapporto di errore. Usato in combinazione con SessionIdSeq per identificare in modo univoco una sessione. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>SessionIdSeq</strong></p></td>
+<td><p>int</p></td>
+<td><p>Numero ID per identificare la richiesta di sessione che ha originato il rapporto di errore. Usato in combinazione con SessionIdTime per identificare in modo univoco una sessione. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>DialogId</strong></p></td>
+<td><p>varstring (775)</p></td>
+<td><p>ID finestra di dialogo SIP della sessione che ha originato l'errore. Il formato è:</p>
+<p>finestra di dialogo; da-tag; to-Tag</p>
+<p>Questi dati possono essere convertiti in formato testo usando la sintassi seguente:</p>
+<p>Cast (ExternalId come varbinary (max)) come varchar (max))</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>ClientVersion</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Versione del client usata dall'utente che ha originato l'errore.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>TipoClient</strong></p></td>
+<td><p>int</p></td>
+<td><p>Client usato dall'utente che ha originato l'errore. Per altri dettagli, vedere la <a href="lync-server-2013-useragentdef-table.md">Tabella UserAgentDef in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>ClientCategory</strong></p></td>
+<td><p>nvarchar (64)</p></td>
+<td><p>Nome della categoria del client usata dall'utente che ha originato l'errore.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Fonte</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Nome del server che ha originato l'errore (se il report è stato inviato da un componente server).</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Applicazione</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Nome dell'applicazione che ha originato l'errore (se il report è stato inviato da un componente server).</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>ResponseCode</strong></p></td>
+<td><p>int</p></td>
+<td><p>Codice di risposta SIP nella sessione del messaggio SIP contenente il report di errore.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>RequestType</strong></p></td>
+<td><p>varchar (max)</p></td>
+<td><p>Tipo di richiesta non riuscita.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>ContentType</strong></p></td>
+<td><p>varchar (max)</p></td>
+<td><p>Tipo di contenuto della richiesta non riuscita.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>CallType</strong></p></td>
+<td><p>nvarchar (256)</p></td>
+<td><p>Tipo di sessione. Per altre informazioni, vedere la <a href="lync-server-2013-calltype-table.md">tabella CallType in Lync Server 2013</a> .</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>TelemetryId</strong></p></td>
+<td><p>uniqueidentifier</p></td>
+<td><p>Identificatore univoco che correla le informazioni sul tempo di join per i diversi componenti coinvolti in una conferenza.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>SetupTime</strong></p></td>
+<td><p>int</p></td>
+<td><p>Ora (in millisecondi) necessaria per un componente specifico per partecipare a una conferenza.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>IsCapturedByServer</strong></p></td>
+<td><p>po'</p></td>
+<td><p>Indica se il report di errore è stato acquisito dall'agente CDR in uso nel server front-end o inviato dal client.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Contrassegno</strong></p></td>
+<td><p>smallint</p></td>
+<td><p>Riservato per un uso futuro.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>MsDiagHeader</strong></p></td>
+<td><p>varchar (max)</p></td>
+<td><p>Altre informazioni sull'errore.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>FrontEnd</strong></p></td>
+<td><p>nvarchar</p></td>
+<td><p>Nome di dominio completo del server front-end che ha inviato il report.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Pool</strong></p></td>
+<td><p>nvarchar</p></td>
+<td><p>Nome di dominio completo del pool che contiene il front end server che ha inviato il report.</p></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+
+<span> </span>
+
+</div>
+
+</div>
+
+</div>
+
