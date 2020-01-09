@@ -9,12 +9,12 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogni directory di conferenza nel pool legacy.
-ms.openlocfilehash: cc989e752e69db31f338b493c403b8b8d4c252cc
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 1cd4a3a3359ec1638c3ae93c6ce81d8ba2227b96
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238081"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40988941"
 ---
 # <a name="move-conference-directories"></a>Spostare le directory conferenze
 
@@ -26,13 +26,13 @@ Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogn
     
 2. Per ottenere l'identità delle directory conferenza nell'organizzazione, eseguire il comando seguente:
     
-   ```
+   ```PowerShell
    Get-CsConferenceDirectory
    ```
 
     Il comando precedente restituisce tutte le directory conferenza dell'organizzazione. Per questo motivo, potresti voler limitare i risultati al pool da rimuovere. Se ad esempio si sta disattivando il pool con il nome di dominio completo (FQDN) pool01.contoso.net, usare questo comando per limitare i dati restituiti alle directory della conferenza da tale pool:
     
-   ```
+   ```PowerShell
    Get-CsConferenceDirectory | Where-Object {$_.ServiceID -match "pool01.contoso.net"}
    ```
 
@@ -40,23 +40,23 @@ Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogn
     
 3. Per trasferire le directory conferenza, eseguire il comando seguente per ogni directory di conferenza nel pool:
     
-   ```
+   ```PowerShell
    Move-CsConferenceDirectory -Identity <Numeric identity of conference directory> -TargetPool <FQDN of pool where ownership is to be transitioned>
    ```
 
     Ad esempio, per trasferire la directory della conferenza 3, usare questo comando specificando un pool di Skype for Business Server 2019 come TargetPool:
     
-   ```
+   ```PowerShell
    Move-CsConferenceDirectory -Identity 3 -TargetPool "pool02.contoso.net"
    ```
 
     Se si desidera trasferire tutte le directory conferenza in un pool, usare un comando simile al seguente:
     
-   ```
+   ```PowerShell
    Get-CsConferenceDirectory | Where-Object {$_.ServiceID -match "pool01.contoso.net"} | Move-CsConferenceDirectory -TargetPool "pool02.contoso.net"
    ```
 
-Scaricare la procedura dettagliata per la disinstallazione di [Microsoft legacy e la rimozione dei ruoli del server](https://go.microsoft.com/fwlink/p/?linkId=246227) per istruzioni dettagliate su come rimuovere i pool legacy.
+Scaricare la procedura dettagliata per la [disinstallazione di Microsoft legacy e la rimozione dei ruoli del server](https://go.microsoft.com/fwlink/p/?linkId=246227) per istruzioni dettagliate su come rimuovere i pool legacy.
   
 Quando si spostano le directory conferenza, è possibile che venga visualizzato il seguente messaggio di errore:
   

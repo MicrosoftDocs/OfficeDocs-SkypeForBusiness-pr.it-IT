@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a0d64779-93de-4d82-ae35-e4454ef8b8f6
 description: 'Riepilogo: informazioni su come gestire i numeri dei servizi di conferenza telefonica con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: e41011c4ba06da7f05d8cb1a52717e707cd2f8bd
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: bd2aff1789c040667062d34b8bc037fd0543c029
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191276"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991921"
 ---
 # <a name="manage-dial-in-conferencing-access-numbers-in-skype-for-business-server"></a>Gestire i numeri dei servizi di conferenza telefonica con accesso esterno in Skype for Business Server
  
@@ -23,7 +23,7 @@ ms.locfileid: "36191276"
   
 Quando si distribuiscono i servizi di conferenza telefonica con accesso esterno, è necessario configurare i numeri di telefono che gli utenti possono effettuare la chiamata dalla rete PSTN (Public Switched Telephone Network) per partecipare alla parte audio delle conferenze. I numeri di accesso per le connessioni in ingresso vengono visualizzati negli inviti alle riunioni e nella pagina Web delle impostazioni di conferenza telefonica con accesso esterno. 
   
-Questo argomento descrive come visualizzare, modificare o eliminare i numeri di accesso ai servizi di conferenza telefonica in ingresso esistenti. Per altre informazioni su come creare numeri di accesso per le connessioni telefoniche iniziali, vedere Configurare le conferenze telefoniche con ingresso [esterno in Skype for Business Server](../../deploy/deploy-conferencing/dial-in-conferencing.md).
+Questo argomento descrive come visualizzare, modificare o eliminare i numeri di accesso ai servizi di conferenza telefonica in ingresso esistenti. Per altre informazioni su come creare numeri di accesso per le connessioni telefoniche iniziali, vedere [configurare le conferenze telefoniche con ingresso esterno in Skype for Business Server](../../deploy/deploy-conferencing/dial-in-conferencing.md).
   
 ## <a name="view-dial-in-conferencing-access-numbers"></a>Visualizzare i numeri di accesso per i servizi di conferenza telefonica
 
@@ -47,7 +47,7 @@ Per visualizzare le informazioni sui numeri di accesso esterno, usare il cmdlet 
   
 Il comando seguente restituisce una raccolta di tutti i numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso configurati per l'uso nell'organizzazione: 
   
-```
+```PowerShell
 Get-CsDialInConferencingAccessNumber
 ```
 
@@ -134,13 +134,13 @@ Per modificare i numeri di accesso esterno, usare il cmdlet **Set-CsDialInConfer
   
 Il comando seguente modifica la proprietà DisplayName per il numero di accesso per i servizi di conferenza telefonica con chiamata in ingresso con Identity sip:RedmondDialIn@litwareinc.com. In questo esempio, il nome visualizzato è impostato su "numero di accesso telefonico di Redmond":
   
-```
+```PowerShell
 Set-CsDialInConferencingAccessNumber -Identity "sip:RedmondDialIn@litwareinc.com" -DisplayName "Redmond Dial-In Access Number"
 ```
 
 Nell'esempio successivo il numero di accesso per i servizi di conferenza telefonica con chiamata in ingresso con identità sip:RedmondDialIn@litwareinc.com viene modificato per includere due aree geografiche: Redmond e Seattle. A questo scopo, viene chiamato il parametro regions, seguito dalle due aree geografiche (due valori stringa separati da virgole). Tieni presente che questo comando avrà esito negativo, a meno che le aree Redmond e Seattle non siano già state definite in dial plan.
   
-```
+```PowerShell
 Set-CsDialInConferencingAccessNumber -Identity "sip:RedmondDialIn@litwareinc.com" -Regions "Redmond", "Seattle"
 ```
 
@@ -168,19 +168,19 @@ Per eliminare un numero di conferenza telefonica con accesso esterno, usare il c
   
 Il comando seguente elimina il numero di accesso per i servizi di conferenza telefonica con chiamata in sip:RedmondDialInAccess@litwareinc.com:
   
-```
+```PowerShell
 Remove-CsDialInConferencingAccessNumber -Identity "sip:RedmondDialInAccess@litwareinc.com"
 ```
 
 Il comando successivo Elimina tutti i numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso associati all'area nord-ovest:
   
-```
+```PowerShell
 Get-CsDialInConferencingAccessNumber -Region "Northwest" | Remove-CsDialInConferencingAccessNumber
 ```
 
 Il comando successivo Elimina tutti i numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso in cui l'italiano è la lingua principale:
   
-```
+```PowerShell
 Get-CsDialInConferencingAccessNumber | Where-Object {$_.PrimaryLanguage -eq "it-IT"} | Remove-CsDialInConferencingAccessNumber
 ```
 

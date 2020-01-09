@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a2d3e08b-511b-4507-abba-8ff71aa27c8e
 description: "Riepilogo: informazioni sull'applicazione Response Group in Skype for Business Server."
-ms.openlocfilehash: 216f07a81beaa962bf091e815c797611f9e236ac
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 2d372f7b57909ee2b926dbf0a8333df5904df0c3
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191399"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992061"
 ---
 # <a name="response-group-call-list-report-in-skype-for-business-server"></a>Report elenco chiamate di Response Group in Skype for Business Server
 
@@ -65,9 +65,9 @@ una domanda simile alla seguente: "quale singolo flusso di lavoro ha ricevuto la
 
 3. Eseguire le analisi con Windows PowerShell.
 
-Ad esempio, se i dati sono stati salvati in un file denominato C:\Data\Response_Group_Call_List_Report.csv, è possibile usare il comando seguente per restituire il numero totale di chiamate ricevute per ogni flusso di lavoro elencato nel report:
+Ad esempio, se i dati sono stati salvati in un file denominato C:\Data\ Response_Group_Call_List_Report. csv, è possibile usare il comando seguente per restituire il numero totale di chiamate ricevute per ogni flusso di lavoro elencato nel report:
 
-```
+```PowerShell
 $calls = Import-Csv -Path "C:\ Data\Response_Group_Call_List_Report.csv"
 $calls | Group-Object Workflow | Select-Object Count, Name | Sort-Object Count -Descending
 ```

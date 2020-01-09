@@ -9,12 +9,12 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Dopo aver eseguito la migrazione a Microsoft Skype for Business Server 2019, è necessario completare alcune attività per configurare Skype for Business Server 2019 per l'utilizzo con System Center Operations Manager.
-ms.openlocfilehash: 098265f5b17ab4d25164495965b3d20a122f61fa
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: aa782f2ef51e3397d465b1cd0f914783d371eded
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239577"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989591"
 ---
 # <a name="configure-scom-monitoring"></a>Configurare il monitoraggio di SCOM
 
@@ -40,11 +40,11 @@ Di seguito sono riportate le istruzioni per l'esecuzione di ciascuna di queste a
     
 2. Nella riga di comando digitare quanto segue:
     
-   ```
+   ```PowerShell
    New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health"
    ```
 
-   ```
+   ```PowerShell
    New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health\CentralDiscoveryCandidate"
    ```
 

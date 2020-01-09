@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8c685326-8356-4075-bf95-32324b16ef81
 description: 'Riepilogo: informazioni su come creare criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 323a50ab779e772ca6149dc4c151f9d42d55df66
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 078c80af0304c796bd3935200764a9ce6e13585b
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195544"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991891"
 ---
 # <a name="create-conferencing-policies-in-skype-for-business-server"></a>Creare criteri di conferenza in Skype for Business Server
  
@@ -82,7 +82,7 @@ Puoi creare criteri di conferenza usando il pannello di controllo di Skype for B
     
     - Per impedire i trasferimenti di file, deselezionare la casella **di controllo Consenti ai partecipanti di trasferire file** . Per impostazione predefinita, gli utenti possono trasferire file.
     
-    - Per evitare l'uso di annotazioni, deselezionare la casella di controllo **Abilita** annotazioni. Per l'uso delle annotazioni nelle presentazioni di PowerPoint condivise, deselezionare l'abilitazione delle annotazioni di **PowerPoint**. Per impostazione predefinita, le annotazioni sono consentite.
+    - Per evitare l'uso di annotazioni, deselezionare la casella di controllo **Abilita annotazioni** . Per l'uso delle annotazioni nelle presentazioni di PowerPoint condivise, deselezionare l' **Abilitazione delle annotazioni di PowerPoint**. Per impostazione predefinita, le annotazioni sono consentite.
     
     - Per evitare l'uso dei sondaggi, deselezionare la casella di controllo **Abilita sondaggi** . Per impostazione predefinita, i sondaggi sono consentiti.
     
@@ -120,7 +120,7 @@ Per creare criteri di conferenza, usare il cmdlet **New-CsConferencingPolicy** .
   
 L'esempio seguente crea un nuovo criterio di conferenza con Identity SalesConferencingPolicy. Questo criterio utilizzerà tutti i valori predefiniti per i criteri di conferenza tranne uno: MaxMeetingSize. In questo esempio, la dimensione massima per una riunione verrà impostata su 50 anziché sul valore predefinito di 250:
   
-```
+```PowerShell
 New-CsConferencingPolicy -Identity SalesConferencingPolicy -MaxMeetingSize 50
 ```
 

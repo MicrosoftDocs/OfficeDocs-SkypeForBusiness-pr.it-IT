@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 975718a0-f3e3-404d-9453-6224e73bfdd0
 description: 'Riepilogo: informazioni sui componenti del servizio e sulle impostazioni di configurazione per il servizio di registrazione centralizzato in Skype for Business Server 2015.'
-ms.openlocfilehash: a02d2a283716dd01572e0cbd8cccf075b29fd9b8
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 1dfdc0de999e79182e5beb57c6d51ecc75359672
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186833"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992603"
 ---
 # <a name="centralized-logging-service-in-skype-for-business-2015"></a>Servizio di registrazione centralizzato in Skype for Business 2015
  
@@ -36,7 +36,7 @@ Il servizio di registrazione centralizzato può:
   - Utilizzare un provider esistente o creare un nuovo provider. Aprovider definisce la raccolta della sessione di registrazione, il livello di dettaglio, i componenti da tracciare e i contrassegni applicati.
     
     > [!TIP]
-    >  Se si ha familiarità con OCSLogger, termproviders fa riferimento alla raccolta di **componenti** (ad esempio, S4, SipStack), a un **tipo di registrazione** (ad esempio, WPP, EventLog o Logfile di IIS), a un livello di **traccia** , ad esempio all, Verbose, debug. e **Contrassegni** (ad esempio, TF_COMPONENT, TF_DIAG). Questi elementi sono definiti nel provider (una variabile di Windows PowerShell) e passati al comando servizio registrazione centralizzato.
+    >  Se si ha familiarità con OCSLogger, termproviders fa riferimento alla raccolta di **componenti** (ad esempio, S4, SipStack), a un **tipo di registrazione** (ad esempio WPP, EventLog o Logfile di IIS), a un livello di **traccia** , ad esempio all, Verbose, debug, e ai **Contrassegni** (ad esempio TF_COMPONENT TF_DIAG). Questi elementi sono definiti nel provider (una variabile di Windows PowerShell) e passati al comando servizio registrazione centralizzato.
   
   - Configurare i registri per computer e pool specifici.
     
@@ -58,14 +58,14 @@ Il servizio di registrazione centralizzato è un potente strumento per la risolu
   
 Puoi emettere comandi usando l'interfaccia della riga di comando di Windows Server o usando Skype for Business Server Management Shell. I comandi vengono eseguiti nel computer in cui è stato effettuato l'accesso e inviati a ClsAgent localmente o agli altri computer e pool della distribuzione.
   
-ClsAgent gestisce un file di indice di tutti. Memorizzare nella CACHE i file presenti nel computer locale. ClsAgent li alloca in modo che siano distribuiti equamente tra i volumi definiti dall'opzione CacheFileLocalFolders, non consumando mai più di 80% di ogni volume (ovvero la posizione della cache locale e la percentuale è configurabile usando il ** Cmdlet Set-CsClsConfiguration** ). ClsAgent è anche responsabile dell'invecchiamento dei vecchi file del log di traccia dell'evento memorizzato nella cache (ETL) dal computer locale. Dopo due settimane, ovvero l'intervallo di tempo configurabile con il cmdlet **Set-CsClsConfiguration** , questi file vengono copiati in una condivisione file ed eliminati dal computer locale. Per informazioni dettagliate, vedere [Set-CsClsConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csclsconfiguration?view=skype-ps). Quando viene ricevuta una richiesta di ricerca, vengono usati i criteri di ricerca per selezionare il set di file ETL memorizzati nella cache per eseguire la ricerca in base ai valori nell'indice gestito dall'agente.
+ClsAgent gestisce un file di indice di tutti. Memorizzare nella CACHE i file presenti nel computer locale. ClsAgent li alloca in modo che siano distribuiti equamente tra i volumi definiti dall'opzione CacheFileLocalFolders, non consumando mai più di 80% di ogni volume (ovvero la posizione della cache locale e la percentuale è configurabile tramite il cmdlet **Set-CsClsConfiguration** ). ClsAgent è anche responsabile dell'invecchiamento dei vecchi file del log di traccia dell'evento memorizzato nella cache (ETL) dal computer locale. Dopo due settimane, ovvero l'intervallo di tempo configurabile con il cmdlet **Set-CsClsConfiguration** , questi file vengono copiati in una condivisione file ed eliminati dal computer locale. Per informazioni dettagliate, vedere [Set-CsClsConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csclsconfiguration?view=skype-ps). Quando viene ricevuta una richiesta di ricerca, vengono usati i criteri di ricerca per selezionare il set di file ETL memorizzati nella cache per eseguire la ricerca in base ai valori nell'indice gestito dall'agente.
   
 > [!NOTE]
 > I file spostati nella condivisione file dal computer locale possono essere cercati da ClsAgent. Quando ClsAgent sposta i file nella condivisione file, l'invecchiamento e la rimozione dei file non viene mantenuta da ClsAgent. Devi definire un'attività amministrativa per monitorare le dimensioni dei file nella condivisione file ed eliminarle o archiviarle. 
   
 I file di log risultanti possono essere letti e analizzati usando una varietà di strumenti, tra cui **Snooper. exe** e qualsiasi strumento in grado di leggere un file di testo, ad esempio **notepad. exe**. Snooper. exe fa parte degli strumenti di debug di Skype for Business Server 2015 ed è disponibile come [download Web](https://go.microsoft.com/fwlink/p/?LinkId=285257).
   
-Come OCSLogger, il servizio di registrazione centralizzato ha diversi componenti a cui eseguire la traccia e fornisce le opzioni per selezionare i contrassegni, ad esempio TF_COMPONENT e TF_DIAG. Il servizio di registrazione centralizzato mantiene anche le opzioni del livello di registrazione di OCSLogger.
+Come OCSLogger, il servizio di registrazione centralizzato contiene diversi componenti da individuare e offre opzioni per selezionare contrassegni, ad esempio TF_COMPONENT e TF_DIAG. Il servizio di registrazione centralizzato mantiene anche le opzioni del livello di registrazione di OCSLogger.
   
 Il vantaggio più importante per l'uso di Skype for Business Server Management Shell sul ClsController della riga di comando è che puoi configurare e definire nuovi scenari usando i provider selezionati che si rivolgono allo spazio dei problemi, ai contrassegni personalizzati e ai livelli di registrazione. Gli scenari disponibili per ClsController sono limitati a quelli definiti per l'eseguibile.
   
@@ -95,7 +95,7 @@ Il servizio di registrazione centralizzato è configurato per definire il modo i
     
 2. Digitare quanto segue al prompt della riga di comando:
     
-   ```
+   ```PowerShell
    Get-CsClsConfiguration
    ```
 

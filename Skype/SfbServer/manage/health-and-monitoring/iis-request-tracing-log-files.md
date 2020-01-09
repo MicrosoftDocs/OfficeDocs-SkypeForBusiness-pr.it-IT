@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b6730e92-6d74-4fa7-a83f-50b7bdadbffa
 description: 'Riepilogo: informazioni sul servizio mobilità (MCX) nel supporto di Skype for Business Server 2015 per i client legacy.'
-ms.openlocfilehash: b8d22146de43f020b62cc249a07990fb9f0cc73c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f519a04f878caf953c54873a6a704232245b344b
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195682"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992181"
 ---
 # <a name="monitoring-iis-request-tracing-log-files-in-skype-for-business-server-2015"></a>Monitoraggio dei file di registro di traccia delle richieste IIS in Skype for Business
  
@@ -32,7 +32,7 @@ Per impostazione predefinita, IIS archivia i file di log in%SystemDrive%\inetpub
   
 Per disattivare la traccia delle richieste di IIS per un intero server, nella riga di comando digitare quanto segue:
   
-```
+```console
 %SystemDrive%\Windows\System32\inetsrv\appcmd set config /section:httpLogging /dontLog:True
 ```
 

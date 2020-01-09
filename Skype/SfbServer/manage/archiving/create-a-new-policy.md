@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 50c39731-ba2f-49c2-a571-6dc373f6aaeb
 description: 'Riepilogo: informazioni su come creare un nuovo criterio di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: d6bf33254feece1fe9f1a4fe848b2601e758faf3
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 8542c31050cf4ca9383c22b39c83b28309d3ea32
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195114"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992733"
 ---
 # <a name="create-a-new-archiving-policy-in-skype-for-business-server"></a>Creare un nuovo criterio di archiviazione in Skype for Business Server
 
@@ -62,7 +62,7 @@ Puoi anche creare nuovi criteri di archiviazione usando il cmdlet **New-CsArchiv
 
 Questo comando crea un nuovo criterio di archiviazione per il sito Redmond:
   
-```
+```PowerShell
 New-CsArchivingPolicy -Identity "site:Redmond"
 ```
 
@@ -70,7 +70,7 @@ New-CsArchivingPolicy -Identity "site:Redmond"
 
 Per creare un nuovo criterio di archiviazione a livello per utente, è sufficiente specificare un'identità univoca quando si creano i criteri:
   
-```
+```PowerShell
 New-CsArchivingPolicy -Identity "RedmondArchivingPolicy"
 ```
 
@@ -78,7 +78,7 @@ New-CsArchivingPolicy -Identity "RedmondArchivingPolicy"
 
 Dato che nei comandi precedenti non sono stati specificati parametri (ad eccezione del parametro di identità obbligatoria), i nuovi criteri utilizzeranno i valori predefiniti per tutte le relative proprietà. Per creare criteri che usano valori di proprietà diversi, includere semplicemente il parametro e il valore del parametro appropriati. Ad esempio, il comando seguente crea un criterio di archiviazione che consente l'archiviazione delle sessioni di messaggistica istantanea interne: 
   
-```
+```PowerShell
 New-CsArchivingPolicy -Identity "site:Redmond" -ArchiveInternal $True
 ```
 
@@ -86,6 +86,6 @@ New-CsArchivingPolicy -Identity "site:Redmond" -ArchiveInternal $True
 
 Più valori di proprietà possono essere modificati includendo più parametri. Questo comando, ad esempio, configura il nuovo criterio per l'archiviazione delle sessioni di messaggistica istantanea interne ed esterne:
   
-```
+```PowerShell
 New-CsArchivingPolicy -Identity "site:Redmond" -ArchiveInternal $True -ArchiveExternal $True
 ```

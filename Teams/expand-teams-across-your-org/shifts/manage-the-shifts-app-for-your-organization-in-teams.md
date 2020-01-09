@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6bd65376be278a3d07e5a7a8c4ba69ccd5408090
-ms.sourcegitcommit: a23f45ab3a2cb7b5c279356edddf61c4030c41bd
+ms.openlocfilehash: f4ed7f4bc282686c31f2f9c2239fbe6326e5151f
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39961611"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992543"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app turni per l'organizzazione in Microsoft Teams
 
@@ -87,15 +87,15 @@ In questo esempio, assegniamo i criteri di configurazione dell'app FirstlineWork
 > Prima di tutto, assicurati di connetterti a Azure Active Directory PowerShell per modulo grafico e modulo di PowerShell per Skype for business seguendo la procedura descritta in [Connetti a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
 
 Ottenere il GroupObjectId del gruppo specifico.
-```
+```PowerShell
 $group = Get-AzureADGroup -SearchString "Contoso Firstline Team"
 ```
 Ottenere i membri del gruppo specificato.
-```
+```PowerShell
 $members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-Object {$_.ObjectType -eq "User"}
 ```
 Assegna tutti gli utenti del gruppo ai criteri di configurazione dell'app FirstlineWorker.
-```
+```PowerShell
 $members | ForEach-Object { Grant-CsTeamsAppSetupPolicy -PolicyName "FirstlineWorker" -Identity $_.EmailAddress}
 ``` 
 A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.

@@ -1,5 +1,5 @@
 ---
-title: Eseguire la migrazione dei gruppi di risposte
+title: Eseguire la migrazione di Response Group
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -9,14 +9,14 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Dopo lo spostamento degli utenti nei pool di Skype for Business Server 2019, è possibile eseguire la migrazione dei gruppi di risposta. La migrazione dei gruppi di risposte include la copia di gruppi di agenti, code, flussi di lavoro, file audio e oggetti contatto del gruppo di risposte in spostamento dalla distribuzione legacy al pool di Skype for Business Server 2019. Dopo la migrazione dei gruppi di risposta legacy, le chiamate ai gruppi di risposta vengono gestite dall'applicazione Response Group nel pool di Skype for Business Server 2019. Le chiamate ai gruppi di risposte non vengono più gestite dal pool legacy.
-ms.openlocfilehash: b8d49205f4f54ca7c00a9aed0b6ac176c11cd617
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 148fbe2ca547c3bd7e3d240e687b37c94d10270b
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238462"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991111"
 ---
-# <a name="migrate-response-groups"></a>Eseguire la migrazione dei gruppi di risposte
+# <a name="migrate-response-groups"></a>Eseguire la migrazione di Response Group
 
 Dopo lo spostamento degli utenti nei pool di Skype for Business Server 2019, è possibile eseguire la migrazione dei gruppi di risposta. La migrazione dei gruppi di risposte include la copia di gruppi di agenti, code, flussi di lavoro, file audio e oggetti contatto del gruppo di risposte in spostamento dalla distribuzione legacy al pool di Skype for Business Server 2019. Dopo la migrazione dei gruppi di risposta legacy, le chiamate ai gruppi di risposta vengono gestite dall'applicazione Response Group nel pool di Skype for Business Server 2019. Le chiamate ai gruppi di risposte non vengono più gestite dal pool legacy.
   
@@ -57,13 +57,13 @@ La procedura seguente per la migrazione delle configurazioni di Response Group p
     
 3. Eseguire
     
-   ```
+   ```PowerShell
    Move-CsRgsConfiguration -Source <source pool FQDN> -Destination <destination pool FQDN>
    ```
 
     Ad esempio:
     
-   ```
+   ```PowerShell
    Move-CsRgsConfiguration -Source skype-old.contoso.net -Destination skype-new.contoso.net
    ```
 
@@ -91,13 +91,13 @@ La procedura seguente per la migrazione delle configurazioni di Response Group p
     
     Per informazioni dettagliate sui cmdlet seguenti, eseguire:
     
-   ```
+   ```PowerShell
    Get-Help <cmdlet name> -Detailed
    ```
 
 3. Eseguire
     
-   ```
+   ```PowerShell
    Get-CsRgsAgentGroup
    ```
 
@@ -105,7 +105,7 @@ La procedura seguente per la migrazione delle configurazioni di Response Group p
     
 5. Eseguire
     
-   ```
+   ```PowerShell
    Get-CsRgsQueue
    ```
 
@@ -113,7 +113,7 @@ La procedura seguente per la migrazione delle configurazioni di Response Group p
     
 7. Eseguire
     
-   ```
+   ```PowerShell
    Get-CsRgsWorkflow
    ```
 

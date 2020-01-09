@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 5d5eb658-7fe0-42e6-acaf-700051d0a823
 description: 'Riepilogo: rivedere questo argomento durante la pianificazione per il servizio di monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: e03fc9714cbb958a9c34bb14db0129a94e49692b
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ebe94d3088e319a0c210c9d169f35f1c783ad5f5
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194916"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991781"
 ---
 # <a name="plan-for-monitoring-in-skype-for-business-server"></a>Pianificare il monitoraggio in Skype for Business Server
 
@@ -80,7 +80,7 @@ Per molte organizzazioni, la capacità del database non sarà il fattore decisiv
 
 Dovresti anche tenere in considerazione che Skype for Business Server supporta l'uso dei database mirror. "Mirroring del database" consente di gestire contemporaneamente due copie di un database, con ogni database che risiede in un server diverso. Ogni volta che i dati vengono scritti in un database primario, anche i dati vengono scritti nel database mirror. Se il database primario deve avere esito negativo o in caso contrario diventa non disponibile, è possibile eseguire il failover del database mirror usando un semplice comando di PowerShell per Skype for Business Server. Ad esempio:
 
-```
+```PowerShell
 Invoke-CsDatabaseFailover -PoolFqdn atl-cs-001.litwareinc.com -DatabaseType "Monitoring" -NewPrincipal "Mirror"
 ```
 

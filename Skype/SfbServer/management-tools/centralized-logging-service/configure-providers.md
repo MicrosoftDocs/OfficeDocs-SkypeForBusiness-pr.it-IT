@@ -12,28 +12,28 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 6a197ecf-b56b-45e0-8e7c-f532ec5164ff
 description: 'Riepilogo: informazioni su come configurare i provider di scenari per il servizio di registrazione centralizzato in Skype for Business Server 2015.'
-ms.openlocfilehash: a9987d99b2caf00acc92de92a8d997845ad8f921
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: dcfa16ffa00e81153172570e67020cf287350cd9
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186824"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991471"
 ---
 # <a name="configure-providers-for-centralized-logging-service-in-skype-for-business-server-2015"></a>Configurare i provider per il servizio di registrazione centralizzato in Skype for Business 2015
  
 **Riepilogo:** Informazioni su come configurare i provider di scenari per il servizio di registrazione centralizzato in Skype for Business Server 2015.
   
-I concetti e la configurazione dei provider in un servizio di registrazione centralizzato è uno dei più importanti da afferrare. Theproviders mappa direttamente ai componenti del ruolo del server Skype for Business Server nel modello di traccia di Skype for Business Server. Il provider definisce i componenti di un server Skype for business 2015 che verrà tracciato, il tipo di messaggi (ad esempio, fatale, errore o avviso) da raccogliere e i contrassegni (ad esempio, TF_Connection o TF_Diag). I provider sono i componenti rintracciabili in ogni ruolo del server Skype for Business Server. Usando i provider, Definisci il livello e il tipo di traccia sui componenti (ad esempio, S4, SIPStack, IM e Presence). Il provider definito viene usato in uno scenario per raggruppare tutti i provider per una determinata raccolta logica che affrontano una specifica condizione di problema.
+I concetti e la configurazione dei provider in un servizio di registrazione centralizzato è uno dei più importanti da afferrare. Theproviders mappa direttamente ai componenti del ruolo del server Skype for Business Server nel modello di traccia di Skype for Business Server. Il provider definisce i componenti di un server Skype for business 2015 che verrà tracciato, il tipo di messaggi (ad esempio, fatale, errore o avviso) da raccogliere e i contrassegni (ad esempio TF_Connection o TF_Diag). I provider sono i componenti rintracciabili in ogni ruolo del server Skype for Business Server. Usando i provider, Definisci il livello e il tipo di traccia sui componenti (ad esempio, S4, SIPStack, IM e Presence). Il provider definito viene usato in uno scenario per raggruppare tutti i provider per una determinata raccolta logica che affrontano una specifica condizione di problema.
   
 Per eseguire le funzioni di servizio di registrazione centralizzata con Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator (RBAC) o di un ruolo RBAC personalizzato che contiene uno di questi due gruppi. Per restituire un elenco di tutti i ruoli di controllo di accesso basati sul ruolo a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati manualmente), eseguire il comando seguente da Skype for Business Server Management Shell o Windows PowerShell prompt
   
-```
+```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
 ```
 
 Ad esempio:
   
-```
+```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 ```
 
@@ -84,19 +84,19 @@ Introdotti in [servizi di registrazione centralizzati in Skype for Business 2015
     
 2. Per esaminare la configurazione dei provider esistenti, digitare quanto segue:
     
-   ```
+   ```PowerShell
    Get-CsClsScenario -Identity <scope and scenario name>
    ```
 
     Ad esempio, per esaminare le informazioni sull'operatore di conferenza globale, digitare:
     
-   ```
+   ```PowerShell
    Get-CsClsScenario -Identity "global/CAA"
    ```
 
     Il comando Visualizza un elenco di provider con i contrassegni, le impostazioni e i componenti associati. Se le informazioni visualizzate non sono sufficienti o l'elenco è troppo lungo per il formato predefinito dell'elenco di Windows PowerShell, è possibile visualizzare altre informazioni definendo un metodo di output diverso. A tale scopo, digitare:
     
-   ```
+   ```PowerShell
    Get-CsClsScenario -Identity "global/CAA" | Select-Object -ExpandProperty Provider
    ```
 
@@ -108,19 +108,19 @@ Introdotti in [servizi di registrazione centralizzati in Skype for Business 2015
     
 2. Un provider di scenari è costituito da un componente da tracciare, da contrassegni da usare e da un livello di dettaglio da raccogliere. Per eseguire questa operazione, digitare:
     
-   ```
+   ```PowerShell
    $<variableName> = New-CsClsProvider -Name <provider component> -Type <log type> -Level <log level detail type> -Flags <provider trace log flags>
    ```
 
     Ad esempio, la definizione di un provider di traccia che definisce cosa raccogliere e il livello di dettaglio del provider Lyss ha l'aspetto seguente:
     
-   ```
+   ```PowerShell
    $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Info" -Flags "All"
    ```
 
 Il livello raccoglie messaggi fatali, di errore, di avviso e di informazioni. I contrassegni usati sono tutti quelli definiti per il provider Lyss e includono TF_Connection, TF_Diag e TF_Protocol. dopo aver definito la variabile $LyssProvider, è possibile usarla con il cmdlet **New-CsClsScenario** per raccogliere le tracce dal provider Lyss. Per completare la creazione e l'assegnazione del provider in un nuovo scenario, digitare:
 
-```
+```PowerShell
 New-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider $LyssProvider
 ```
 
@@ -131,23 +131,23 @@ Dove $LyssProvider è la variabile che contiene lo scenario definito creato con 
     
 2. Per aggiornare o modificare la configurazione di un provider esistente, digitare:
     
-   ```
+   ```PowerShell
    $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Debug" -Flags "TF_Connection, TF_Diag"
    ```
 
     È quindi possibile aggiornare lo scenario per assegnare il provider digitando quanto segue:
     
-   ```
+   ```PowerShell
    Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider $LyssProvider
    ```
 
 Il risultato finale del comando è che il sito scenario: Redmond/RedmondLyssInfo avrà aggiornato i contrassegni e il livello per il provider assegnato. Puoi visualizzare il nuovo scenario usando Get-CsClsScenario. Per informazioni dettagliate, vedere [Get-CsClsScenario](https://docs.microsoft.com/powershell/module/skype/get-csclsscenario?view=skype-ps).
 > [!CAUTION]
-> **New-ClsCsProvider** non controlla per determinare se i contrassegni sono validi. Verificare che l'ortografia dei contrassegni, ad esempio TF_DIAG o TF_CONNECTION, sia stata digitata correttamente. Se i contrassegni non vengono digitati correttamente, il provider non potrà restituire le informazioni di log previste.
+> **New-ClsCsProvider** non controlla per determinare se i contrassegni sono validi. Verificare che l'ortografia dei contrassegni (ad esempio TF_DIAG o TF_CONNECTION) sia stata digitata correttamente. Se i contrassegni non vengono digitati correttamente, il provider non potrà restituire le informazioni di log previste.
   
 Se si vogliono aggiungere altri provider a questo scenario, digitare quanto segue:
 
-```
+```PowerShell
 Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider @{Add=$ABSProvider, $CASProvider, S4Provider}
 ```
 
@@ -156,25 +156,25 @@ Dove ogni provider definito con la direttiva add è già stato definito tramite 
 
 1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
     
-2. I cmdlet forniti consentono di aggiornare i provider esistenti e di creare nuovi provider. Per rimuovere un provider, è necessario usare la direttiva Replace per il parametro provider per **impostare-CsClsScenario**. L'unico modo per rimuovere completamente un provider è sostituirlo con un provider ridefinito con lo stesso nome e usare la direttiva Update. Ad esempio, il nostro provider LyssProvider è definito con WPP come tipo di log, Level set to debug e set di contrassegni sono TF_CONNECTION e TF_DIAG. È necessario modificare i contrassegni in "tutti". Per cambiare il provider, digitare quanto segue:
+2. I cmdlet forniti consentono di aggiornare i provider esistenti e di creare nuovi provider. Per rimuovere un provider, è necessario usare la direttiva Replace per il parametro provider per **impostare-CsClsScenario**. L'unico modo per rimuovere completamente un provider è sostituirlo con un provider ridefinito con lo stesso nome e usare la direttiva Update. Ad esempio, il nostro provider LyssProvider è definito con WPP come tipo di log, Level set to debug e flags set sono TF_CONNECTION e TF_DIAG. È necessario modificare i contrassegni in "tutti". Per cambiare il provider, digitare quanto segue:
     
-   ```
+   ```PowerShell
    $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Debug" -Flags "All"
    ```
 
-   ```
+   ```PowerShell
    Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider @{Replace=$LyssProvider}
    ```
 
 3. Se si vuole rimuovere completamente uno scenario e i provider a esso associati, digitare quanto segue:
     
-   ```
+   ```PowerShell
    Remove-CsClsScenario -Identity <scope and name of scenario>
    ```
 
     Ad esempio:
     
-   ```
+   ```PowerShell
    Remove-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo"
    ```
 

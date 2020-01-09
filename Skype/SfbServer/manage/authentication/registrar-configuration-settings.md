@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: eddfbdd2-cfd0-4c03-986e-443d6728db7d
 description: 'Riepilogo: gestire le impostazioni di configurazione del registrar per Skype for Business Server.'
-ms.openlocfilehash: 4ad7815da0744a78cd72208ef390362bff26c2ce
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 8aac78f782b7a9db23d3bb124943c55cdbd8565a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191864"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992303"
 ---
 # <a name="manage-registrar-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione del registrar in Skype for Business Server
  
@@ -28,7 +28,7 @@ ms.locfileid: "36191864"
     
 - **NTLM** Questa è l'autenticazione basata su password disponibile per i client che usano uno schema di hash per la risposta alla richiesta di verifica sulla password. Questa è l'unica forma di autenticazione disponibile per i client senza connettività a un centro distribuzione chiave (controller di dominio Kerberos), ad esempio utenti remoti. Se un server esegue l'autenticazione solo per gli utenti remoti, è necessario scegliere NTLM.
     
-- **Autenticazione del certificato** Questo è il nuovo metodo di autenticazione quando il server deve ottenere i certificati da client Lync Phone Edition, telefoni area comune, Skype for business e l'app Lync di Windows Store. Nei client di Lync Phone Edition, dopo che un utente ha effettuato l'accesso ed è stato autenticato fornendo un PIN (Personal Identification Number), Skype for Business Server fa quindi predisporre l'URI SIP al telefono e prevede un server Skype for business firmato certificato o un certificato utente che identifica Joe (es: SN=joe@contoso.com) sul telefono. Questo certificato viene usato per l'autenticazione con il registrar e i servizi Web.
+- **Autenticazione del certificato** Questo è il nuovo metodo di autenticazione quando il server deve ottenere i certificati da client Lync Phone Edition, telefoni area comune, Skype for business e l'app Lync di Windows Store. Nei client di Lync Phone Edition, dopo che un utente ha effettuato l'accesso ed è stato autenticato fornendo un PIN (Personal Identification Number), Skype for Business Server applica quindi l'URI SIP al telefono e prevede un certificato firmato Skype for Business Server o un certificato utente che identifica Joe (es: SN=joe@contoso.com) al telefono. Questo certificato viene usato per l'autenticazione con il registrar e i servizi Web.
     
 > [!NOTE]
 > È consigliabile abilitare sia Kerberos che NTLM quando un server supporta l'autenticazione sia per i client remoti che per quelli aziendali. Il server perimetrale e i server interni comunicano per garantire che solo l'autenticazione NTLM venga offerta ai client remoti. Se in questi server è abilitato solo Kerberos, non è possibile eseguire l'autenticazione degli utenti remoti. Se gli utenti aziendali eseguono l'autenticazione anche sul server, viene usato Kerberos. 
@@ -108,7 +108,7 @@ Per eliminare le impostazioni di configurazione del registrar, è possibile usar
 
 - Il comando seguente rimuove le impostazioni di sicurezza del registrar applicate alla atl-edge-011.litwareinc.com di Edge Server:
     
-  ```
+  ```PowerShell
   Remove-CsProxyConfiguration -Identity service:EdgeServer:atl-edge-011.litwareinc.com
   ```
 
@@ -116,7 +116,7 @@ Per eliminare le impostazioni di configurazione del registrar, è possibile usar
 
 - Il comando seguente rimuove tutte le impostazioni di sicurezza del registrar applicate al servizio Registrar:
     
-  ```
+  ```PowerShell
   Get-CsProxyConfiguration -Filter "service:Registrar:*" | Remove-CsProxyConfiguration
   ```
 
@@ -124,7 +124,7 @@ Per eliminare le impostazioni di configurazione del registrar, è possibile usar
 
 - Il comando seguente elimina tutte le impostazioni di sicurezza del registrar che consentono l'uso di NTLM per l'autenticazione client:
     
-  ```
+  ```PowerShell
   Get-CsProxyConfiguration | Where-Object {$_.UseNtlmForClientToProxyAuth -eq $True}| Remove-CsProxyConfiguration
   ```
 

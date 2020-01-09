@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6d8f9ff8-2a04-4175-9bf0-1ec5d78fd015
 description: 'Riepilogo: informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: 3d4f986b850b309d50967da9126b8b4eea08a166
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: bcf32d3e250a3bc8b29d34e4c2fd56173dcfd5a6
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194481"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991881"
 ---
 # <a name="create-meeting-configuration-settings-in-skype-for-business-server"></a>Creare impostazioni di configurazione delle riunioni in Skype for Business Server
  
@@ -39,7 +39,7 @@ Puoi creare le impostazioni di configurazione delle riunioni usando il pannello 
     
 5. Per instradare i partecipanti che effettuano la chiamata tramite la rete PSTN (Public Switched Telephone Network) nella sala di attesa, deselezionare la casella di controllo **Ignora chiamate PSTN** . Per impostazione predefinita, i partecipanti che effettuano la chiamata dalla rete PSTN accedono direttamente alla riunione.
     
-6. Per configurare chi può essere un relatore nella riunione, in **designa come**relatore eseguire una delle operazioni seguenti:
+6. Per configurare chi può essere un relatore nella riunione, in **designa come relatore**eseguire una delle operazioni seguenti:
     
    - Per non consentire a utenti diversi dall'organizzatore di essere relatori, fare clic su **nessuno**.
     
@@ -69,7 +69,7 @@ Per creare le impostazioni di configurazione della riunione, usare il cmdlet **N
   
 Il comando seguente crea un nuovo set di impostazioni di configurazione delle riunioni per il sito Redmond:
   
-```
+```PowerShell
 New-CsMeetingConfiguration -Identity "site:Redmond"
 ```
 
@@ -77,13 +77,13 @@ Poiché non sono stati specificati parametri (ad eccezione del parametro di iden
   
 Per creare impostazioni che usano valori di proprietà diversi, includere semplicemente il parametro e il valore del parametro appropriati. Ad esempio, per creare una raccolta di impostazioni di configurazione della riunione che, per impostazione predefinita, ammettono tutti a una riunione come relatore usare un comando come questo:
   
-```
+```PowerShell
 New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone"
 ```
 
 Più valori di proprietà possono essere impostati includendo più parametri. Ad esempio, il comando seguente ammette tutti i partecipanti a una riunione come relatore e costringe anche gli utenti PSTN ad attendere nella sala di attesa finché non vengono formalmente ammessi alla riunione:
   
-```
+```PowerShell
 New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone" -PSTNUCallersBypassLobby $True
 ```
 

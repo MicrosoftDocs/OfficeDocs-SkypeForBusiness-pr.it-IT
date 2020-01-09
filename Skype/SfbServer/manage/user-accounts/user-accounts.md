@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2fe7e3a7-bc75-4d4b-94af-a8818722b0d3
 description: Le sezioni di questo articolo descrivono come abilitare, disabilitare temporaneamente o rimuovere utenti di Active Directory da Skype for Business Server.
-ms.openlocfilehash: 83ab64415b21d37f12d3768feeb39b11491787af
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 45217593dd010c4daf73d6b5edcbf6f5f4e681a5
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187070"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992403"
 ---
 # <a name="manage-user-accounts-for-skype-for-business-server"></a>Gestire gli account utente per Skype for Business Server
 
@@ -84,7 +84,7 @@ Puoi anche usare un cmdlet, in particolare [Enable-CsUser](https://docs.microsof
 
 5. Nella finestra di dialogo **nuovo utente di Lync Server** fare clic su **Aggiungi**.
 
-6. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome, il nome visualizzato, il nome, il cognome, il nome dell'account SAM (Security Accounts Manager), l'indirizzo di posta elettronica, il nome dell'entità utente (UPN) o il numero di telefono dell'account utente di Active Directory desiderato , quindi fare clic su **trova**.
+6. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome, il nome visualizzato, il nome, il cognome, il nome dell'account SAM (Security Accounts Manager), l'indirizzo di posta elettronica, il nome dell'entità utente (UPN) o il numero di telefono dell'account utente di Active Directory desiderato e quindi fare clic su **trova**.
 
 7. Nella tabella selezionare l'account che si vuole aggiungere a Skype for Business Server e quindi fare clic su **OK**.
 
@@ -101,7 +101,7 @@ Puoi anche usare un cmdlet, in particolare [Enable-CsUser](https://docs.microsof
 
 3. Sulla barra di spostamento sinistra fare clic su **utenti**.
 
-4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di gestione account di sicurezza (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si vuole disabilitare o riabilitare. e quindi fai clic su **trova**.
+4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si desidera disabilitare o riabilitare e quindi fare clic su **trova**.
 
 5. Nella tabella fare clic sull'account utente che si vuole disabilitare o riattivare.
 
@@ -119,7 +119,7 @@ Gli account utente possono essere temporaneamente disabilitati e quindi riattiva
 
 - Per disabilitare temporaneamente un account utente, imposta il valore della proprietà Enabled su false ($False). Ad esempio:
 
-  ```
+  ```PowerShell
   Set-CsUser -Identity "Ken Myer" -Enabled $False
   ```
 
@@ -127,7 +127,7 @@ Gli account utente possono essere temporaneamente disabilitati e quindi riattiva
 
 - Per riattivare un account utente disabilitato, imposta il valore della proprietà Enabled su true ($True). Ad esempio:
 
-  ```
+  ```PowerShell
   Set-CsUser -Identity "Ken Myer" -Enabled $True
   ```
 
@@ -146,7 +146,7 @@ Usare la procedura seguente per disabilitare VoIP aziendale per un account utent
 
 3. Sulla barra di spostamento sinistra fare clic su **utenti**.
 
-4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si vuole abilitare e quindi fare clic su **Trovare**.
+4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si vuole abilitare e quindi fare clic su **trova**.
 
 5. Nella tabella fare clic sull'account utente che si desidera abilitare per VoIP aziendale.
 
@@ -174,7 +174,7 @@ Ora l'utente non è in grado di usare la caratteristica VoIP aziendale. Informaz
 
 3. Sulla barra di spostamento sinistra fare clic su **utenti**.
 
-4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di gestione account di sicurezza (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si vuole disabilitare o riabilitare. e quindi fai clic su **trova**.
+4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si desidera disabilitare o riabilitare e quindi fare clic su **trova**.
 
 5. Nella tabella fare clic sull'account utente che si vuole rimuovere.
 
@@ -189,7 +189,7 @@ Puoi rimuovere gli account utente usando il cmdlet Disable-CsUser. Questo cmdlet
 ### <a name="to-remove-a-user-account"></a>Per rimuovere un account utente
 Per rimuovere un account utente, usare il cmdlet Disable-CsUser. Ad esempio:
 
-  ```
+  ```PowerShell
   Disable-CsUser -Identity "Ken Myer"
   ```
 

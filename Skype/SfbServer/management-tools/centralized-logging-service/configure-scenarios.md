@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 6c3bf826-e7fd-4002-95dc-01020641ef01
 description: 'Riepilogo: informazioni su come creare, modificare e rimuovere scenari per il servizio di registrazione centralizzato in Skype for Business Server 2015.'
-ms.openlocfilehash: 89aa0c37dfb13f7614067b64e37ee9c9fb376331
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 9a6ce9a760255275c3ad265cdd6c58fa964f8e43
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186818"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991601"
 ---
 # <a name="configure-scenarios-for-the-centralized-logging-service-in-skype-for-business-server-2015"></a>Configurare gli scenari per il servizio di registrazione centralizzato in Skype for Business 2015
  
@@ -30,13 +30,13 @@ Gli scenari definiscono l'ambito (ovvero globale, sito, pool o computer) e i pro
   
 Per eseguire le funzioni del servizio di registrazione centralizzato usando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator (RBAC) o di un ruolo RBAC personalizzato che contiene uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet, inclusi i ruoli RBAC personalizzati creati personalmente, eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
   
-```
+```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
 ```
 
 Ad esempio:
   
-```
+```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 ```
 
@@ -63,19 +63,19 @@ Come è stato introdotto in [servizio di registrazione centralizzato in Skype fo
     
     Per creare uno scenario usando le opzioni definite, digitare:
     
-   ```
+   ```PowerShell
    New-CsClsScenario -Identity <scope>/<unique scenario name> -Provider <provider variable>
    ```
 
     Ad esempio:
     
-   ```
+   ```PowerShell
    New-CsClsScenario -Identity "site:Redmond/LyssServiceScenario" -Provider $LyssProvider
    ```
 
     Il formato alternativo using-Name e-Parent:
     
-   ```
+   ```PowerShell
    New-CsClsScenario -Name "LyssServiceScenario" -Parent "site:Redmond" -Provider $LyssProvider
    ```
 
@@ -85,7 +85,7 @@ Come è stato introdotto in [servizio di registrazione centralizzato in Skype fo
     
 2. Si è limitati a due scenari per ogni ambito. Tuttavia, non si è limitati a un determinato numero di provider. In questo esempio, supponiamo di avere creato tre provider e di assegnare tutti e tre allo scenario che stai definendo. I nomi delle variabili del provider sono LyssProvider, ABServerProvider e SIPStackProvider. Per definire e assegnare più provider a uno scenario, digitare quanto segue in un prompt dei comandi di Skype for Business Server Management Shell o Windows PowerShell:
     
-   ```
+   ```PowerShell
    New-CsClsScenario -Identity "site:Redmond/CollectDataScenario" -Provider @{Add=$LyssProvider, $ABServerProvider,  $SIPStackProvider}
    ```
 
@@ -98,31 +98,31 @@ Come è stato introdotto in [servizio di registrazione centralizzato in Skype fo
     
 2. Si è limitati a due scenari per ogni ambito. È possibile modificare gli scenari in esecuzione in qualsiasi momento, anche quando è in corso una sessione di acquisizione di registrazione. Se si ridefiniscono gli scenari in uso, la sessione di registrazione corrente smetterà di usare lo scenario rimosso e quindi inizierà a usare il nuovo scenario. Tuttavia, le informazioni di registrazione acquisite con lo scenario rimosso restano nei registri acquisiti. Per definire un nuovo scenario, eseguire le operazioni seguenti, ad esempio supponendo che l'aggiunta di un provider già definito denominato "S4Provider":
     
-   ```
+   ```PowerShell
    Set-CsClsScenario -Identity <name of scope and scenario defined by New-CsClsScenario> -Provider @{Add=<new provider to add>}
    ```
 
     Ad esempio:
     
-   ```
+   ```PowerShell
    Set-CsClsScenario -Identity "site:Redmond/LyssServiceScenario" -Provider @{Add=$S4Provider}
    ```
 
     Se si vuole sostituire i provider, definire un singolo provider o un elenco di provider separati da virgole per sostituire il set corrente. Se si vuole sostituire solo uno di molti provider, aggiungere i provider correnti con i nuovi provider per creare un nuovo set di provider che contiene sia i nuovi provider che i provider esistenti. Per sostituire tutti i provider con un nuovo set, digitare quanto segue:
     
-   ```
+   ```PowerShell
    Set-CsClsScenario -Identity <name of scope and scenario defined by New-CsClsScenario> -Provider @{Replace=<providers to replace existing provider set>}
    ```
 
     Ad esempio, per sostituire il set corrente di $LyssProvider, $ABServerProvider e $SIPStackProvider con $LyssServiceProvider:
     
-   ```
+   ```PowerShell
    Set-CsClsScenario -Identity "site:Redmond/LyssServiceScenario" -Provider @{Replace=$LyssServiceProvider}
    ```
 
     Per sostituire solo il provider $LyssProvider dal set corrente di $LyssProvider, $ABServerProvider e $SIPStackProvider con $LyssServiceProvider, digitare quanto segue:
     
-   ```
+   ```PowerShell
    Set-CsClsScenario -Identity "site:Redmond/LyssServiceScenario" -Provider @{Replace=$LyssServiceProvider, $ABServerProvider, $SIPStackProvider}
    ```
 
@@ -132,13 +132,13 @@ Come è stato introdotto in [servizio di registrazione centralizzato in Skype fo
     
 2. Se si vuole rimuovere uno scenario definito in precedenza, digitare quanto segue:
     
-   ```
+   ```PowerShell
    Remove-CsClsScenario -Identity <name of scope and scenario>
    ```
 
     Ad esempio, per rimuovere il sito scenario definito: Redmond/LyssServiceScenario:
     
-   ```
+   ```PowerShell
    Remove-CsClsScenario -Identity "site:Redmond/LyssServiceScenario"
    ```
 
@@ -152,7 +152,7 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
   
 2. In Windows PowerShell digitare:
     
-   ```
+   ```PowerShell
    Import-Module "CDBurn\OCO\amd64\Support"
    ```
 
@@ -161,7 +161,7 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
   
 3. Per scaricare i moduli, digitare:
     
-   ```
+   ```PowerShell
    Remove-Module ClsController
    ```
 
@@ -174,7 +174,7 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
     
 2. In Windows PowerShell digitare:
     
-   ```
+   ```PowerShell
    Import-Module "CDBurn\OCO\amd64\Support"
    ```
 
@@ -183,19 +183,19 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
   
 3. Per rimuovere un provider dallo scenario AlwaysOn, digitare:
     
-   ```
+   ```PowerShell
    Edit-CsClsScenario -ScenarioName <string of the scenario to edit> -ProviderName <string of the provider to remove> -Remove
    ```
 
    Per esempio:
     
-   ```
+   ```PowerShell
    Edit-CsClsScenario -ScenarioName AlwaysOn -ProviderName ChatServer -Remove
    ```
 
    I parametri ScenarioName e ProviderName sono posizionali, ovvero devono essere definiti nella posizione prevista nella riga di comando. Il nome del parametro non deve essere definito in modo esplicito se il nome dello scenario è nella posizione due e il provider è nella posizione tre, in relazione al nome del cmdlet come posizione uno. Usando queste informazioni, il comando precedente verrebbe tipizzato come segue:
     
-   ```
+   ```PowerShell
    Edit-CsClsScenario AlwaysOn ChatServer -Remove
    ```
 
@@ -207,13 +207,13 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
     
 2. Per aggiungere un provider allo scenario AlwaysOn, digitare:
     
-   ```
+   ```PowerShell
    Edit-CsClsScenario -ScenarioName <string of the scenario to edit> -ProviderName <string of the provider to add> -Level <string of type level> -Flags <string of type flags>
    ```
 
     Per esempio:
     
-   ```
+   ```PowerShell
    Edit-CsClsScenario -ScenarioName AlwaysOn -ProviderName ChatServer -Level Info -Flags TF_COMPONENT
    ```
 
@@ -221,6 +221,6 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
     
    L'esempio precedente può anche essere digitato usando la caratteristica posizionali del cmdlet. Ad esempio, per aggiungere il provider ChatServer allo scenario AlwaysOn, digitare:
     
-   ```
+   ```PowerShell
    Edit-CsClsScenario AlwaysOn ChatServer -Level Info -Flags ALL
    ```

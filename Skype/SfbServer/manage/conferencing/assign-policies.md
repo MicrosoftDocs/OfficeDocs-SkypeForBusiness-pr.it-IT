@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f384d19b-0950-4ec6-9d93-2c5958b83e71
 description: 'Riepilogo: informazioni su come assegnare criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: acd74262b51000a3f4af5668fb3c9271a8c0978d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f5e88e14c9516785cb3c45b5682bac13865b20ae
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191273"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991911"
 ---
 # <a name="assign-conferencing-policies-in-skype-for-business-server"></a>Assegnare criteri di conferenza in Skype for Business Server
  
@@ -27,13 +27,13 @@ Puoi assegnare criteri di conferenza agli utenti usando Skype for Business Serve
 
 Nell'esempio seguente, il criterio SalesConferencingPolicy viene assegnato all'utente con l'identità "Ken":
   
-```
+```PowerShell
 Grant-CsConferencingPolicy -identity "Ken Myer" -PolicyName SalesConferencingPolicy
 ```
 
 Nell'esempio seguente, il criterio di conferenza FinanceConferencingPolicy viene assegnato a tutti gli utenti che hanno account nell'unità organizzativa Finance. Per assegnare lo stesso criterio a tutti gli utenti di una determinata unità organizzativa, viene usato il cmdlet Get-CsUser per recuperare tutti gli account in tale OU. Dopo aver recuperato gli account utente, le informazioni vengono quindi inviate tramite pipe al cmdlet Grant-CsConferencingPolicy, che assegna i criteri FinanceConferencingPolicy a ogni utente della raccolta:
   
-```
+```PowerShell
 Get-CsUser -OU "ou=Finance,dc=litwareinc,dc=com" | Grant-CsConferencingPolicy -PolicyName FinanceConferencingPolicy
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: Esempi di sviluppo Call Quality dashboard
+title: Esempi di sviluppo in DQC
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 8ca9bf7a-2d6f-48d5-a821-531009726525
 description: 'Riepilogo: esaminare gli esempi di esercitazione e sviluppo per dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: 4eac679950abdff5041bdfb63b633287d06a11e7
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5e650047fefb865f7fe9af84f93a5f57e7bbf086
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186971"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992863"
 ---
-# <a name="cqd-development-samples"></a>Esempi di sviluppo Call Quality dashboard
+# <a name="cqd-development-samples"></a>Esempi di sviluppo in DQC
 
 **Riepilogo:** Esaminare gli esempi di esercitazione e sviluppo per dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
 
@@ -64,7 +64,7 @@ Prendiamo prima di tutto un semplice esempio. Se si vuole visualizzare il flusso
 
 Ciò che serve è inviare una chiamata al servizio dati con i parametri corretti e visualizzare i risultati della query in una tabella HTML. Di seguito è riportato un esempio di codice JavaScript:
 
-```        
+```javascript        
 $($.fn.freeFormReport = function (queries, urlApi, presentation) {
             var query = {
                 Dimensions: [{ DataModelName: '[StartDate].[Month]' }],
@@ -132,7 +132,7 @@ Questo esempio può essere ulteriormente decostruito in tre passaggi:
 
 Racchiudere il codice JavaScript in una pagina HTML e la pagina mostrerà un report come quello mostrato nella figura. Il codice HTML completo è il seguente:
 
-```
+```javascript
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -203,7 +203,7 @@ Per creare lo strumento Visualizzatore definizione report, è necessario inviare
 
 Un esempio rapido è il seguente: il codice contiene un blocco che è un semplice esempio per inviare una query al servizio repository per ottenere il contenuto di un elemento del repository in base al relativo identificatore. E la parte successiva del codice (metodo processReportSetData) sta inviando chiamate AJAX per ottenere la definizione di ogni report all'interno del set di report. Dato che l'ID nel portale Web di Call Quality dashboard è l'ID di un set di report, la chiamata AJAX restituirà un elemento del set di report. Altri dettagli sull'API del repository e in particolare su GetItems possono essere trovati negli [elementi Get](get-items.md). 
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -332,7 +332,7 @@ Ecco la procedura dettagliata per ottenere la pagina della scorecard nella figur
 
 2. Aggiornare i filtri. I dati JSON per i filtri nell'esempio 1 includono un filtro, che è impostato sulla dimensione `[StartDate].[Month]`. Dato che Filters è una matrice JSON, è possibile aggiungere altre dimensioni all'elenco dei filtri. Ad esempio, per ottenere il client-server all'interno delle chiamate cablate per "currentMonth", dovremmo avere i seguenti filtri:
 
-   ```
+   ```javascript
    Filters: [
      { DataModelName: '[StartDate].[Month]', Value: currentMonth, Operand: 0 },
     {
@@ -347,7 +347,7 @@ Ecco la procedura dettagliata per ottenere la pagina della scorecard nella figur
    ],
    ```
 
-   Qui la dimensione `[Scenarios].[ScenarioPair]` è impostata su uguale `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]`. È `[Scenario.][ScenarioPair]` una dimensione speciale creata per semplificare la creazione di report. Sono presenti sei valori corrispondenti a `[FirstIsServer], [SecondIsServer], [FirstInside], [SecondIsServer], [FirstConnectionType], [SecondConnectionType]`. Quindi, invece di usare una combinazione di 6 filtri per definire uno scenario, è necessario usare solo un filtro. In questo esempio, il valore `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]` si traduce nello scenario in cui: First è server, il secondo non è server, il primo è all'interno, il secondo è all'interno, il primo tipo di connessione è cablato e il secondo tipo di connessione è Wired, che è la definizione esatta di " Server-client-inside Wired ".
+   Qui la dimensione `[Scenarios].[ScenarioPair]` è impostata su uguale `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]`. È `[Scenario.][ScenarioPair]` una dimensione speciale creata per semplificare la creazione di report. Sono presenti sei valori corrispondenti a `[FirstIsServer], [SecondIsServer], [FirstInside], [SecondIsServer], [FirstConnectionType], [SecondConnectionType]`. Quindi, invece di usare una combinazione di 6 filtri per definire uno scenario, è necessario usare solo un filtro. In questo esempio, il valore `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]` si traduce nello scenario in cui: First è server, il secondo non è server, il primo è all'interno, il secondo è all'interno, il primo tipo di connessione è cablato e il secondo tipo di connessione è Wired, che è la definizione esatta di "server-client-inside Wired".
 
 3. Creare un set di filtri per ogni scenario. Ogni riga della scorecard, nella figura, rappresenta uno scenario diverso, che sarà un filtro diverso (mentre le dimensioni e le misurazioni rimarranno uguali). 
 
@@ -360,7 +360,7 @@ Ecco la procedura dettagliata per ottenere la pagina della scorecard nella figur
 
 Codice HTML, ad esempio 3 (esempio di scorecard):
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

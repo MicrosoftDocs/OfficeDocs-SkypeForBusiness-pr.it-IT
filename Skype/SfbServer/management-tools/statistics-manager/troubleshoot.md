@@ -1,5 +1,5 @@
 ---
-title: Risolvere i problemi di gestione statistiche per Skype for Business Server
+title: Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 946189fa-521f-455c-9762-904e7e41b791
 description: 'Riepilogo: leggere questo argomento per risolvere i problemi di distribuzione di gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: b85ee6593413cce0aa5b7c76901dbbc6099107fd
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 7d9ea061453998f2df01cd2ec31e792600697ee1
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195087"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992513"
 ---
-# <a name="troubleshoot-statistics-manager-for-skype-for-business-server"></a>Risolvere i problemi di gestione statistiche per Skype for Business Server
+# <a name="troubleshoot-statistics-manager-for-skype-for-business-server"></a>Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per risolvere i problemi di distribuzione di gestione statistiche per Skype for Business Server.
   
@@ -39,13 +39,13 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
     L'agente viene eseguito all'interno di un oggetto processo di Windows per limitare automaticamente l'impronta di memoria. Se l'agente non si avvia e queste voci di evento sono presenti nel log eventi, non è possibile creare un'istanza dell'oggetto processo nel server. Per ovviare a questo problema, è possibile rimuovere il limite di memoria superiore modificando un valore nel file di configurazione:
     
-  ```
+  ```console
   C:\Program Files\Skype for Business Server StatsMan Agent\PerfAgent.exe.config
   ```
 
     Cercare "MaxProcessMemoryMB" e cambiare il valore in "0" come illustrato:
     
-  ```
+  ```console
   <setting name="MaxProcessMemoryMB" serializeAs="String"> <value>300</value> </setting>
   ```
 
@@ -173,8 +173,8 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
 
 Per altre informazioni, vedere quanto segue:
   
-- [Pianificare la gestione delle statistiche per Skype for Business Server](plan.md)
+- [Pianificare il gestore delle statistiche per Skype for Business Server](plan.md)
     
-- [Distribuire Gestione statistiche per Skype for Business Server](deploy.md)
+- [Distribuire il gestore delle statistiche per Skype for Business Server](deploy.md)
     
-- [Aggiornare le statistiche di gestione per Skype for Business Server](upgrade.md)
+- [Aggiornare il gestore delle statistiche per Skype for Business Server](upgrade.md)

@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 93b9a354-9aea-4b3a-a4fe-68a89f436196
 description: 'Riepilogo: informazioni su come recuperare, aggiornare e creare impostazioni di configurazione per il servizio di registrazione centralizzato in Skype for Business Server 2015.'
-ms.openlocfilehash: e6c1f9c893d0b5e745e558ed37570429689259d9
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 20f62a5568bef6f11eab35e13fa4e4f7adf8102e
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186815"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991461"
 ---
 # <a name="manage-centralized-logging-service-configuration-settings-in-skype-for-business-server-2015"></a>Gestire le impostazioni di configurazione del servizio di registrazione centralizzato in Skype for Business 2015
 
@@ -38,20 +38,20 @@ Il servizio di registrazione centralizzato può essere eseguito in un ambito che
 
 Per configurare l'ambito del servizio di registrazione centralizzato tramite Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator (RBAC) o di un ruolo RBAC personalizzato che contiene uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati manualmente), eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
 
-```
+```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "<Skype for Business cmdlet>"}
 ```
 
 Ad esempio:
 
-```
+```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 ```
 
 > [!NOTE]
 > Esistono differenze sostanziali tra i comandi della riga di comando che è possibile eseguire in Windows PowerShell o CLSController. Windows PowerShell offre un metodo RTF per configurare e definire scenari e per riutilizzare questi scenari in modo significativo per gli scenari di risoluzione dei problemi. Mentre CLSController offre un modo rapido ed efficiente per emettere comandi e ottenere risultati, il set di comandi per CLSController è limitato dai comandi finiti disponibili dalla riga di comando. Diversamente dai cmdlet di Windows PowerShell, CLSController non è in grado di definire nuovi scenari, gestire l'ambito a livello di sito o globale e molte altre limitazioni di un set di comandi finito che non può essere configurato in modo dinamico. Mentre CLSController offre un mezzo per l'esecuzione veloce, Windows PowerShell offre un mezzo per estendere la funzionalità del servizio di registrazione centralizzata oltre ciò che è possibile con CLSController.
 
-Un singolo ambito del computer può essere definito durante l'esecuzione di una [Ricerca-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/search-csclslogging?view=skype-ps), [Show-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/show-csclslogging?view=skype-ps), [Start-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/start-csclslogging?view=skype-ps), [Stop-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/stop-csclslogging?view=skype-ps), [Sync-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/sync-csclslogging?view=skype-ps) e [Update-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/update-csclslogging?view=skype-ps) comando usando il parametro-Computers. Il parametro-Computers accetta un elenco delimitato da virgole di nomi di dominio completi (FQDN) per il computer di destinazione.
+Un singolo ambito computer può essere definito durante l'esecuzione di un comando [Cerca-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/search-csclslogging?view=skype-ps), [Show-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/show-csclslogging?view=skype-ps), [Start-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/start-csclslogging?view=skype-ps), [Stop-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/stop-csclslogging?view=skype-ps), [Sync-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/sync-csclslogging?view=skype-ps) e [Update-CsClsLogging](https://docs.microsoft.com/powershell/module/skype/update-csclslogging?view=skype-ps) usando il parametro-Computers. Il parametro-Computers accetta un elenco delimitato da virgole di nomi di dominio completi (FQDN) per il computer di destinazione.
 
 > [!TIP]
 > È anche possibile definire i pool e un elenco di pool separati da virgole per cui si vogliono eseguire i comandi di registrazione.
@@ -67,7 +67,7 @@ Il sito e gli ambiti globali sono definiti nei cmdlet **nuovo-**, **set-** e **R
 
 2. Digitare quanto segue al prompt della riga di comando:
 
-   ```
+   ```PowerShell
    Get-CsClsConfiguration
    ```
 
@@ -81,7 +81,7 @@ Usare i cmdlet **New-CsClsConfiguration** e **Set-CsClsConfiguration** per crear
 
 2. Digitare quanto segue al prompt della riga di comando:
 
-   ```
+   ```PowerShell
    Get-CsClsConfiguration -LocalStore
    ```
 
@@ -92,13 +92,13 @@ Quando si usa il primo esempio in cui **Get-CsClsConfiguration** non specifica p
 
 2. Digitare quanto segue al prompt della riga di comando:
 
-   ```
+   ```PowerShell
    Get-CsClsConfiguration -Identity <scope and name> | Select-Object -ExpandProperty Scenarios
    ```
 
     Ad esempio, per recuperare gli scenari definiti nell'ambito globale:
 
-   ```
+   ```PowerShell
    Get-CsClsConfiguration -Identity "global" | Select-Object -ExpandProperty Scenarios
    ```
 
@@ -109,13 +109,13 @@ Il cmdlet **Get-CsClsConfiguration** Visualizza sempre gli scenari che fanno par
 
 2. Digitare quanto segue al prompt della riga di comando:
 
-   ```
+   ```PowerShell
    Set-CsClsConfiguration -Identity <scope> -EtlFileRolloverSizeMB <size for logging file in megabytes>
    ```
 
    Ad esempio:
 
-   ```
+   ```PowerShell
    Set-CsClsConfiguration -Identity "global" -EtlFileRolloverSizeMB 40
    ```
 
@@ -126,13 +126,13 @@ Il comando indica a CLSAgent su ogni computer e pool della distribuzione di impo
 
 2. Digitare quanto segue al prompt della riga di comando:
 
-   ```
+   ```PowerShell
    Set-CsClsConfiguration -Identity <scope/site name> -EtlFileRolloverSizeMB <size for logging file in megabytes>
    ```
 
    Ad esempio:
 
-   ```
+   ```PowerShell
    Set-CsClsConfiguration -Identity "site/Redmond" -EtlFileRolloverSizeMB 40
    ```
 
@@ -146,7 +146,7 @@ Il comando indica a CLSAgent su ogni computer e pool nel sito Redmond di imposta
 
 2. Digitare quanto segue al prompt della riga di comando:
 
-   ```
+   ```PowerShell
    New-CsClsConfiguration -Identity <scope and name> [CsClsConfiguration options for this site]
    ```
 
@@ -155,7 +155,7 @@ Il comando indica a CLSAgent su ogni computer e pool nel sito Redmond di imposta
 
 Ad esempio, per creare una nuova configurazione che definisce una cartella di rete per i file di cache, il periodo di rollover per i file di log e le dimensioni di rollover per i file di log, digitare:
 
-  ```
+  ```PowerShell
   New-CsClsConfiguration -Identity "site:Redmond" -CacheFileNetworkFolder "\\fs01.contoso.net\filestore\logfiles" -EtlFileRolloverMinutes 120 -EtlFileRolloverSizeMB 40
   ```
 
@@ -166,13 +166,13 @@ Ad esempio, per creare una nuova configurazione che definisce una cartella di re
 
 2. Digitare quanto segue al prompt della riga di comando:
 
-   ```
+   ```PowerShell
    Remove-CsClsConfiguration -Identity <scope and name>
    ```
 
 Ad esempio, per rimuovere una configurazione centralizzata del servizio di registrazione creata per aumentare il tempo di rollover del file di log, aumentare le dimensioni del file di log di rollover e impostare la posizione della cache del file di log su una condivisione di rete come segue:
 
-  ```
+  ```PowerShell
   Remove-CsClsConfiguration -Identity "site:Redmond"
   ```
 

@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b6f3a605-e0c6-461e-b17a-41d8039ace9d
 description: 'Riepilogo: informazioni sul report elenco errori in Skype for Business Server.'
-ms.openlocfilehash: 72637863d7a15d26ea997de8a9c3526279afc57f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d0ba76974d99b123c99e3df40a6850736423ab73
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195684"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992823"
 ---
 # <a name="failure-list-report-in-skype-for-business-server"></a>Report elenco errori in Skype for Business Server 
  
@@ -51,9 +51,9 @@ Nel report elenco errori è possibile visualizzare una descrizione per ogni codi
   
 Errore del server interno che crea elementi multimediali per l'utente.
   
-È importante notare che il report elenco errori non offre un modo semplice per recuperare direttamente un elenco di tutti gli utenti che hanno partecipato ad almeno una sessione non riuscita, né offre un modo per determinare gli utenti più spesso coinvolti in un errore sessione. Per prima cosa, il report elenco errori non ha funzionalità di filtro. Tuttavia, se si esportano i dati e quindi lo si converte in un file con valori delimitati da virgole, è possibile usare Windows PowerShell per trovare le risposte a domande come quelle. Supponiamo ad esempio di salvare i dati in un. File CSV denominato C:\Data\Failure_List.csv. In base ai dati salvati nel file, questo comando elenca tutti gli utenti che hanno partecipato ad almeno una sessione non riuscita: 
+È importante notare che il report elenco errori non offre un modo semplice per recuperare direttamente un elenco di tutti gli utenti che hanno partecipato ad almeno una sessione non riuscita, né offre un modo per determinare gli utenti più spesso coinvolti in un errore sessione. Per prima cosa, il report elenco errori non ha funzionalità di filtro. Tuttavia, se si esportano i dati e quindi lo si converte in un file con valori delimitati da virgole, è possibile usare Windows PowerShell per trovare le risposte a domande come quelle. Supponiamo ad esempio di salvare i dati in un. File CSV denominato C:\Data\ Failure_List. csv. In base ai dati salvati nel file, questo comando elenca tutti gli utenti che hanno partecipato ad almeno una sessione non riuscita: 
   
-```
+```PowerShell
 $failures = Import-Csv -Path " C:\Data\Failure_List.csv"
 $failure |Sort-Object "From user" | Select-Object "From user" -Unique
 ```
@@ -72,7 +72,7 @@ Questo comando restituirà un elenco simile al seguente:
 
 Questi due comandi segnalano il numero totale di sessioni non riuscite in cui ogni utente è coinvolto:
   
-```
+```PowerShell
 $failures = Import-Csv -Path "C:\Data\Failure_List.csv"
 $failures | Group-Object "From user" | Select-Object Count, Name | Sort-Object -Property Count -Descending
 ```

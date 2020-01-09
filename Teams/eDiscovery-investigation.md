@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Informazioni su cosa fare quando è necessario preformare un eDiscovery, ad esempio quando è necessario inviare tutte le info archiviate elettronicamente per il procedimento legale.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 205b10c9fc1576b260e72c145239d56b1c71b643
-ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
+ms.openlocfilehash: 43105db9a4e12d658bf5cf2e9c2c8897fdc918e3
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40069187"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989791"
 ---
 <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams
 ============================
@@ -67,18 +67,18 @@ Prima di eseguire questa procedura, installare [SharePoint Online Management She
 
 1. Eseguire la procedura seguente per ottenere un elenco di tutte le raccolte siti di SharePoint associate a canali privati nel team.
 
-    ```
+    ```PowerShell
     Get-SPOSite
     ```
 2. Eseguire lo script di PowerShell seguente per ottenere un elenco di tutti gli URL della raccolta siti di SharePoint associati a canali privati nel team e nell'ID del gruppo del team padre.
 
-    ```
+    ```PowerShell
     $sites = get-sposite -template "teamchannel#0"
     foreach ($site in $sites) {$x= get-sposite -identity $site.url -detail; $x.relatedgroupID; $x.url} 
     ```
 3. Per ogni ID team o gruppo, Esegui lo script di PowerShell seguente per identificare tutti i siti di canale privati rilevanti, dove $groupID è l'ID del gruppo del team.
 
-    ```
+    ```PowerShell
     $sites = get-sposite -template "teamchannel#0"
     $groupID = “e8195240-4a70-4830-9106-80193cf717cb“
     foreach ($site in $sites) {$x= Get-SpoSite -Identity $site.url -Detail; if ($x.RelatedGroupId -eq $groupID) {$x.RelatedGroupId;$x.url}}
@@ -90,12 +90,12 @@ Prima di eseguire questa procedura, verificare di avere installato la [versione 
 
 1. Eseguire la procedura seguente per ottenere un elenco di canali privati nel team.
 
-    ```
+    ```PowerShell
     Get-TeamChannel -GroupId <GroupID> -MembershipType Private
     ```
 2. Eseguire la procedura seguente per ottenere un elenco dei membri del canale privato.
 
-    ```
+    ```PowerShell
     Get-TeamChannelUser -GroupId <GroupID> -DisplayName "Engineering" -Role Member
     ```
 3. Includere le cassette postali di tutti i membri di ogni canale privato del team come parte della query di ricerca di eDiscovery.

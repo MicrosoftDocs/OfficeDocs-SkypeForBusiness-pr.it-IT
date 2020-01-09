@@ -11,18 +11,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9ff2c8fc-4ae8-4f22-96a8-1f4d5eecbf2d
 description: "La tabella PurgeSettings contiene informazioni che specificano se (e quando) i record dettagli chiamata non aggiornati verranno eliminati automaticamente dal database CDR. Tieni presente che le informazioni correlate all'eliminazione possono essere ottenute anche da Skype for Business Server 2015 eseguendo il comando seguente:"
-ms.openlocfilehash: 6aac92555dda6875f23a177bb09384f453369846
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: fbbd7908446fdb042c8fdfa2f0c8bec2d83b24d9
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194757"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992916"
 ---
 # <a name="purgesettings-table"></a>Tabella PurgeSettings
  
 La tabella PurgeSettings contiene informazioni che specificano se (e quando) i record dettagli chiamata non aggiornati verranno eliminati automaticamente dal database CDR. Tieni presente che le informazioni correlate all'eliminazione possono essere ottenute anche da Skype for Business Server 2015 eseguendo il comando seguente:
   
-```
+```PowerShell
 Get-CsCdrConfiguration
 ```
 

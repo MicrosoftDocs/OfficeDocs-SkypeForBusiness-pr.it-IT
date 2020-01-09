@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c1c0976e-2bfb-475b-9255-ed6b093d8798
 description: 'Riepilogo: informazioni su come visualizzare i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 1f1545761838cf176abd88fa12abd9ef5a1d8136
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 7ea7b5cb9ba54fcf26e5f37b79320466c19d1050
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188915"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992191"
 ---
 # <a name="view-conferencing-policies-in-skype-for-business-server"></a>Visualizzare i criteri di conferenza in Skype for Business Server
  
@@ -43,7 +43,7 @@ Puoi visualizzare i criteri di conferenza usando il pannello di controllo di Sky
 
 Per visualizzare i criteri di conferenza, usare il cmdlet **Get-CsConferencingPolicy** :
   
-```
+```PowerShell
 Get-CsConferencingPolicy
 ```
 

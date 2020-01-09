@@ -14,12 +14,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Partner Microsoft con fornitori di SBC selezionati per certificare il lavoro di SBCs con il routing diretto.
-ms.openlocfilehash: 529b0b550d60123a94b36944e8f1831acb09839a
-ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
+ms.openlocfilehash: 6953828ce3b97598a0173bc344bf7d43d7fe8097
+ms.sourcegitcommit: 9eaa314a9e81a2a56686c035ba0292256ccb2bf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40069427"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995106"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
@@ -55,9 +55,9 @@ Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). In caso di do
 |                                                                                                                     |      SBC 5400       |     &#10004;     |   &#10004;   |       V 6.2       |  Intrado ERS <br>Intrado EGW    |No|    
 |                                                                                                                     |      SBC 7000       |     &#10004;     |   &#10004;    |       V 6.2       |   Intrado ERS <br>Intrado EGW  |  No  |    
 |                                                                                                                     |       SBC SWe       |     &#10004;     |   &#10004;   |       V 6.2       |   Intrado ERS <br>Intrado EGW |   No |    
-|                                                                                                                     |      SBC 1000       |     &#10004;     |   &#10004;    |      v 8.0.1     |     |    |    
-|                                                                                                                     |      SBC 2000       |     &#10004;     |   &#10004;   |     v 8.0.1     |    |    |    
-|                                                                                                                     |    SBC SWe Lite     |     &#10004;     |  &#10004;    |      v 8.0.1    |     |    |    
+|                                                                                                                     |      SBC 1000       |     &#10004;     |   &#10004;    |      v 8.0.1     |  Intrado ERS <br>Intrado EGW   |  In sospeso  |    
+|                                                                                                                     |      SBC 2000       |     &#10004;     |   &#10004;   |     v 8.0.1     |  Intrado ERS <br>Intrado EGW  |  In sospeso  |    
+|                                                                                                                     |    SBC SWe Lite     |     &#10004;     |  &#10004;    |      v 8.0.1    |  Intrado ERS <br>Intrado EGW   |  In sospeso  |    
 |                     [Thinktel](https://www.thinktel.ca/services/think-365/think-365-overview/)                      |    Think 365 SBC    |     &#10004;     |   In sospeso    |       V 1.4       |     |    |    
 |                     [Oracle](https://www.oracle.com/industries/communications/enterprise-session-border-controller/microsoft.html)                      |    AP 1100      |    &#10004;     |    &#10004;    |   8.3.0.0.1 |    |    |    
 |                                                                                                                    |    AP 3900           |    &#10004;     |    &#10004;   |   8.3.0.0.1  |    |    |    

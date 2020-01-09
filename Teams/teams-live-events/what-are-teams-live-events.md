@@ -16,12 +16,12 @@ f1keywords:
 - ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 822483d1475d083ef18213e94d438d5c2a4eb48c
-ms.sourcegitcommit: 69217fb6d6b71081386364db58083eb5d1932c07
+ms.openlocfilehash: c49cf08d7d753e3a05bdcac89105f24621ccf29f
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38638836"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992803"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Che cosa sono gli eventi di Microsoft teams Live?
 
@@ -51,7 +51,7 @@ Puoi vedere dall'immagine precedente che sono presenti quattro componenti chiave
 ### <a name="scheduling"></a>Pianificazione
 Teams offre agli organizzatori la possibilità di creare un evento con le autorizzazioni appropriate per i partecipanti, designare i membri del team dell'evento, selezionare un metodo di produzione e invitare i partecipanti. Se l'evento Live è stato creato dall'interno di un gruppo di Yammer, i partecipanti all'evento Live potranno usare la conversazione di Yammer per interagire con le persone dell'evento. 
 
-![Schermata che mostra la schermata nuovi eventi dinamici](../media/teams-live-events-schedule.png "Schermata che mostra la schermata nuovo evento dinamico per creare e pianificare un nuovo evento Live")
+![Schermata che mostra la nuova schermata eventi dinamici](../media/teams-live-events-schedule.png "Schermata che mostra la schermata nuovo evento dinamico per creare e pianificare un nuovo evento Live")
 
 ### <a name="production"></a>Produzione
 L'input video è il fondamento dell'evento Live e può variare da una singola webcam a una produzione video professionale con più telecamere. Gli eventi dinamici in Microsoft 365 supportano uno spettro di scenari di produzione, includono un evento prodotto in teams usando una webcam o un evento prodotto in un'app o un dispositivo esterno. È possibile scegliere queste opzioni a seconda dei requisiti di progetto e del preventivo. Esistono due modi per produrre eventi:
@@ -77,9 +77,9 @@ L'obiettivo di eCDN è quello di portare il contenuto video da Internet e distri
 - [Rampa](http://www.ramp.com)
 
 ### <a name="attendee-experience"></a>Esperienza partecipante 
-L'esperienza dei partecipanti è l'aspetto più importante degli eventi live ed è fondamentale che i partecipanti possano partecipare all'evento live senza problemi. L'esperienza partecipante USA Azure Media Player (per gli eventi prodotti in teams) e Stream Player (per gli eventi prodotti in un'app o un dispositivo esterno) e funziona su desktop, browser e dispositivi mobili (iOS, Android). Office 365 offre Yammer e teams come due hub di collaborazione e l'esperienza Live partecipanti è integrata in questi strumenti di collaborazione. 
+L'esperienza dei partecipanti è l'aspetto più importante degli eventi live ed è fondamentale che i partecipanti possano partecipare all'evento live senza problemi. L'esperienza partecipante USA Stream Player (per gli eventi prodotti in teams) e Azure Media Player (per gli eventi prodotti in un'app o un dispositivo esterno) e funziona su desktop, browser e dispositivi mobili (iOS, Android). Office 365 offre Yammer e teams come due hub di collaborazione e l'esperienza Live partecipanti è integrata in questi strumenti di collaborazione. 
 
-![Schermata che mostra l'esperienza dei partecipanti agli eventi Live](../media/teams-live-events-attendee.png "Schermata che mostra l'esperienza dei partecipanti agli eventi Live")
+![Screenshot che mostra l'esperienza dei partecipanti al Live Events](../media/teams-live-events-attendee.png "Schermata che mostra l'esperienza dei partecipanti agli eventi Live")
 
 ### <a name="live-event-usage-report"></a>Report sull'utilizzo di eventi dinamici 
 Gli amministratori del tenant possono visualizzare le analisi di utilizzo in tempo reale per gli eventi dinamici nell'interfaccia di amministrazione di Microsoft teams.  Il [report utilizzo eventi dinamici](../teams-analytics-and-reports/teams-live-event-usage-report.md) Mostra la panoramica delle attività degli eventi dinamici nell'organizzazione.  Gli amministratori possono visualizzare le informazioni sull'utilizzo degli eventi, inclusi lo stato dell'evento, l'ora di inizio, le visualizzazioni e il tipo di produzione.  

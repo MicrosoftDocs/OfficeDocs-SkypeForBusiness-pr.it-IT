@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4cf600be-ba3d-4bce-aa22-e158b9ccf8a9
 description: 'Riepilogo: informazioni su come modificare i criteri di archiviazione degli utenti per Skype for Business Server.'
-ms.openlocfilehash: 4a3da0bfe403d1a00807865cd07762111b59b540
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 00f22b9afa5332bd7075b03823d321d35a0e4b8b
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189347"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992773"
 ---
 # <a name="change-an-existing-archiving-policy-in-skype-for-business-server"></a>Modificare i criteri di archiviazione esistenti in Skype for Business Server
  
@@ -58,19 +58,19 @@ Quando si distribuisce Skype for Business Server per la prima volta, si configur
 
 Per abilitare l'archiviazione delle sessioni di comunicazione interne, imposta il valore del parametro ArchiveInternal su true ($True): 
   
-```
+```PowerShell
 Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $True
 ```
 
 Per abilitare l'archiviazione delle sessioni di comunicazione esterne, imposta il valore del parametro ArchiveExternal su true ($True): 
   
-```
+```PowerShell
 Set-CsArchivingPolicy -Identity "global" -ArchiveExternal $True
 ```
 
 Per abilitare l'archiviazione delle sessioni di comunicazione interne ed esterne, imposta il valore dei parametri ArchiveInternal e ArchiveExternal su true: 
   
-```
+```PowerShell
 Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $True -ArchiveExternal $True
 ```
 
@@ -78,6 +78,6 @@ Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $True -ArchiveExternal
 
 Per disabilitare complessivamente l'archiviazione, imposta il valore dei parametri ArchiveInternal e ArchiveExternal su false ($False): 
   
-```
+```PowerShell
 Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $False -ArchiveExternal $False
 ```

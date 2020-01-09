@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8e2f0862-4dfa-4c2b-bf8d-ad71419f15d2
 description: 'Riepilogo: informazioni sul report di riepilogo conferenza PSTN in Skype for Business Server.'
-ms.openlocfilehash: 8b8b108243e257c414e9d6bb101e69fc9701d82e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c0ecb9ae2a5630a8d68b9d22892890617127826a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188726"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992161"
 ---
 # <a name="pstn-conference-summary-report-in-skype-for-business-server"></a>Report di riepilogo conferenza PSTN in Skype for Business Server
  
@@ -35,7 +35,7 @@ Per determinare la percentuale di tutte le conferenze che includono utenti con a
   
 Se non si vedono tutte le conferenze PSTN che si potrebbero prevedere, tenere presente che la possibilità di organizzare una conferenza che consente agli utenti di accesso esterno dipende dal criterio di conferenza assegnato a un utente: se pochissimi utenti sono autorizzati a tenere premuto PS Conferenze TN si vedranno ovviamente pochissime conferenze PSTN. È possibile verificare rapidamente quale dei criteri di conferenza (se presenti) consente agli utenti di pianificare conferenze PSTN eseguendo il comando seguente dall'interno di Skype for Business Server Management Shell:
   
-```
+```PowerShell
 Get-CsConferencingPolicy | Select-Object Identity, EnableDialInConferencing
 ```
 

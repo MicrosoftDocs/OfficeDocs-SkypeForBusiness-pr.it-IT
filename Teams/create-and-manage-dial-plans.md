@@ -19,12 +19,12 @@ f1keywords: None
 ms.custom:
 - Calling Plans
 description: Informazioni su come creare e gestire i dial plan (PSTN Calling dial plans) e su come gestirli.
-ms.openlocfilehash: 7280614d2eab12dff30d17ad71a3ac213e94dcd4
-ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
+ms.openlocfilehash: c9623073cd5660a67bc2ba77b9c07a356d636520
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40069437"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991661"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 
@@ -92,7 +92,7 @@ Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in u
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
   
 
-    ```
+    ```PowerShell
     Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
     $credential = Get-Credential
     $session = New-CsOnlineSession -Credential $credential
@@ -107,7 +107,7 @@ Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in u
 
 - Per creare un nuovo piano di chiamata, eseguire:
     
-  ```
+  ```PowerShell
   New-CsTenantDialPlan -Identity RedmondDialPlan -Description "Dial Plan for Redmond" -NormalizationRules <pslistmodifier> -ExternalAccessPrefix 9 -SimpleName "Dial-Plan-for-Redmond"
   ```
 
@@ -115,7 +115,7 @@ Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in u
     
 - Per modificare le impostazioni di un dial plan esistente, eseguire:
     
-  ```
+  ```PowerShell
   Set-CsTenantDialPlan -Identity RedmondDialPlan  -NormalizationRules <pslistmodifier> -ExternalAccessPrefix 9
     -SimpleName "Dial-Plan-for-Redmond"
   ```
@@ -124,7 +124,7 @@ Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in u
     
 - Per aggiungere utenti a un piano di chiamata, eseguire:
     
-  ```
+  ```PowerShell
   Grant-CsTenantDialPlan -Identity amos.marble@contoso.com -PolicyName RedmondDialPlan
   ```
 
@@ -132,7 +132,7 @@ Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in u
     
 - Per visualizzare le impostazioni di un piano di chiamata, eseguire:
     
-  ```
+  ```PowerShell
   Get-CsTenantDialPlan -Identity RedmondDialPlan
   ```
 
@@ -140,7 +140,7 @@ Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in u
     
 - Per eliminare un piano di chiamata, eseguire:
     
-  ```
+  ```PowerShell
   Remove-CsTenantDialPlan -Identity RedmondDialPlan -force
   ```
 
@@ -148,7 +148,7 @@ Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in u
     
 - Per visualizzare le impostazioni dell'effettivo piano di chiamata, eseguire:
     
-  ```
+  ```PowerShell
   Get-CsEffectiveTenantDialPlan -Identity amos.marble@contoso.com
   ```
 
@@ -156,7 +156,7 @@ Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in u
     
 - Per testare le impostazioni effettive di un piano di chiamata, eseguire:
     
-  ```
+  ```PowerShell
   Test-CsEffectiveTenantDialPlan -DialedNumber 14255550199 -Identity amos.marble@contoso.com
   ```
 
@@ -165,7 +165,7 @@ Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in u
 #### <a name="using-a-powershell-script"></a>Uso di uno script di PowerShell
 
 Esegui questa operazione per eliminare una regola di normalizzazione associata a un dial plan tenant senza dover eliminare prima di tutto il piano di chiamata del tenant:
-```
+```PowerShell
 $b1=New-CsVoiceNormalizationRule -Identity Global/NR4 -InMemory
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{add=$b1}
 (Get-CsTenantDialPlan -Identity RedmondDialPlan).NormalizationRules
@@ -173,19 +173,19 @@ $b2=New-CsVoiceNormalizationRule -Identity Global/NR4 -InMemory
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{remove=$b2}
 ```
 Eseguire questo metodo per aggiungere la seguente regola di normalizzazione al piano di chiamata del tenant denominato RedmondDialPlan.
-```
+```PowerShell
 $nr1=New-CsVoiceNormalizationRule -Parent Global -Description 'Organization extension dialing' -Pattern '^(\\d{3})$' -Translation '+14255551$1' -Name NR1 -IsInternalExtension $false -InMemory
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{add=$nr1}
 ```
 Eseguire questa operazione per rimuovere la seguente regola di normalizzazione dal piano di chiamata del tenant denominato RedmondDialPlan.
-```
+```PowerShell
 $nr1=New-CsVoiceNormalizationRule -Parent Global/NR1 -InMemory
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{remove=$nr1}
 ```
 
 Eseguire quanto segue quando si desidera esaminare anche le regole di normalizzazione esistenti, determinare quale si desidera eliminare e quindi utilizzare l'indice per rimuoverla. Matrice delle regole di normalizzazione inizia con l'indice 0. Si desidera rimuovere la regola di normalizzazione a 3 cifre, in modo che sia indice 1.
   
-```
+```PowerShell
 Get-CsTenantDialPlan RedmondDialPlan).NormalizationRules
 Description         : 4-digit
 Pattern             : ^(\\d{4})$
@@ -205,12 +205,12 @@ Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{remove=$nr1
 
 Eseguire questa operazione per trovare tutti gli utenti a cui è stato concesso il piano di chiamata del tenant RedmondDialPlan.
   
-```
+```PowerShell
 Get-CsOnlineUser | Where-Object {$_.TenantDialPlan -eq "RedmondDialPlan"}
 ```
 
 Esegui questa operazione per rimuovere eventuali TenantDialPlan assegnati da tutti gli utenti che hanno un provider dihosting di sipfed.online.lync.com.
-```
+```PowerShell
 Get-CsOnlineUser -Filter {HostingProvider -eq “sipfed.online.lync.com”} | Grant-CsTenantDialPlan -policyname $null
 ```
 
@@ -218,7 +218,7 @@ Eseguirli per aggiungere il piano di chiamata esistente locale denominato OPDP1 
   
 Eseguire questa operazione per salvare il piano di chiamata del tenant locale nel file .xml.
   
-```
+```PowerShell
 $DPName = "OPDP1"
 $DPFileName = "dialplan.xml"
 Get-CsDialplan $DPName | Export-Clixml $DPFileName
@@ -226,7 +226,7 @@ Get-CsDialplan $DPName | Export-Clixml $DPFileName
 
 Eseguire questa operazione per creare il nuovo piano di chiamata del tenant.
   
-```
+```PowerShell
 $DPFileName = "dialplan.xml"
 $dp = Import-Clixml $DPFileName
 $NormRules = @()

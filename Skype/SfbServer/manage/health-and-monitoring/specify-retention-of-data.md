@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c0fd6056-87bc-4136-902a-f1b37cd3a1ca
 description: 'Riepilogo: informazioni su come gestire i dati di registrazione dei dettagli delle chiamate (CDR) per Skype for Business Server.'
-ms.openlocfilehash: a775098a4c41bccca42fe1d95c5f1dbf0d22f2bd
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ec24b5b1901bec053417c3a938c688cd4692f1c9
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188675"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991721"
 ---
 # <a name="specify-retention-of-cdr-data-in-skype-for-business-server"></a>Specificare la conservazione dei dati CDR in Skype for Business Server
  
@@ -54,7 +54,7 @@ Usare le procedure seguenti per configurare le impostazioni di eliminazione dei 
 
 - Questo comando consente l'eliminazione dei dati CDR per il sito Redmond e configura il sito per la gestione dei dati CDR e dei rapporti di errore per 20 giorni.
     
-  ```
+  ```PowerShell
   Set-CsCdrConfiguration -Identity "site:Redmond" -EnablePurging -KeepCallDetailForDays 20 -KeepErrorReportForDays 20
   ```
 
@@ -62,7 +62,7 @@ Usare le procedure seguenti per configurare le impostazioni di eliminazione dei 
 
 - Questo comando configura la conservazione CDR per tutte le impostazioni di configurazione CDR in uso in un'organizzazione.
     
-  ```
+  ```PowerShell
   Get-CsCdrConfiguration | Set-CsCdrConfiguration-EnablePurging -KeepCallDetailForDays 20 -KeepErrorReportForDays 20
   ```
 

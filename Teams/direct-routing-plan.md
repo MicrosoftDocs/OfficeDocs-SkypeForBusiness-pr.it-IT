@@ -14,12 +14,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Leggere questo argomento per informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente a Microsoft Phone System.
-ms.openlocfilehash: 3fb9fcd8ec8dab78b03b408813d32292879cbec2
-ms.sourcegitcommit: 4c763a3824e6a2271d98a46d25a03c8f04ee2f74
+ms.openlocfilehash: 5b43bad6d0b8828a88ccb3ee48a85cb0c390e6a2
+ms.sourcegitcommit: 9eaa314a9e81a2a56686c035ba0292256ccb2bf5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257475"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995116"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -116,6 +116,14 @@ La combinazione del piano di chiamata e della connettività di routing diretto p
 Per altre informazioni sulle licenze per i sistemi telefonici, vedere [ottenere il massimo da Office con le](https://products.office.com/compare-all-microsoft-office-products?tab=2) opzioni di piano di Office 365 e [Office 365](https://technet.microsoft.com/library/office-365-plan-options.aspx). 
 
 Per altre informazioni sulle licenze per i sistemi telefonici, vedere licenze per i [componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). 
+
+## <a name="supported-end-points"></a>Punti finali supportati 
+
+È possibile usare come punto finale:
+- Qualsiasi teams cleintg. 
+- Telefoni per l'area comune, plese vedere [configurare la licenza per il telefono di area comune per Microsoft teams](https://docs.microsoft.com/en-us/microsoftteams/set-up-common-area-phones). Nota non è necessaria la licenza per il piano di chiamata quando si imposta il telefono per l'area comune con routing diretto.
+- Telefoni 3PIP Skype for business. Leggere il [supporto di Skype for Business Phones (3PIP) con Microsoft teams](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Skype-for-Business-phones-3PIP-support-with-Microsoft-Teams/ba-p/789351)
+
 
 ## <a name="sbc-domain-names"></a>Nomi di dominio SBC
 

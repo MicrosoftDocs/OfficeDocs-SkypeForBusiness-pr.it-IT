@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: fed12cb5-2c80-476a-af3b-d55b450c5fbc
 description: 'Riepilogo: informazioni su come eliminare una configurazione di archiviazione in Skype for Business Server.'
-ms.openlocfilehash: e2a79949da21c9b3b8e94019375ea0e1f0887353
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 22da9464a4bb6b17c6d4b9aa63ad8990a9152c38
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190376"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992373"
 ---
 # <a name="delete-an-archiving-configuration-in-skype-for-business-server"></a>Eliminare una configurazione di archiviazione in Skype for Business Server
 
@@ -46,25 +46,25 @@ Puoi anche eliminare una configurazione di archiviazione usando il cmdlet **Remo
   
 Ad esempio, il comando seguente rimuove le impostazioni di configurazione dell'archiviazione applicate al sito Redmond. Quando un criterio configurato nell'ambito del sito viene eliminato, gli utenti gestiti in precedenza dal criterio del sito verranno regolati automaticamente dal criterio di archiviazione globale:
   
-```
+```PowerShell
 Remove-CsArchivingConfiguration -Identity "site:Redmond"
 ```
 
 Il comando seguente rimuove tutte le impostazioni di configurazione dell'archiviazione applicate all'ambito del servizio:
   
-```
+```PowerShell
 Get-CsArchivingConfiguration -Filter "site:*" | Remove-CsArchivingConfiguration
 ```
 
 Il comando successivo consente di rimuovere tutte le impostazioni di configurazione dell'archiviazione in cui è stato disabilitato l'archiviazione di Exchange:
   
-```
+```PowerShell
 Get-CsArchivingConfiguration | Where-Object {$_.EnableExchangeArchiving -eq $False} | Remove-CsArchivingConfiguration
 ```
 
 Puoi anche usare il cmdlet **Remove-CsArchivingConfiguration** per reimpostare le impostazioni globali su valori predefiniti. Ad esempio, supponiamo di aver abilitato l'archiviazione delle sessioni di messaggistica istantanea a livello globale; con il comando seguente viene reimpostato il valore per l'impostazione predefinita None, che disattiverà l'archiviazione a livello globale:
   
-```
+```PowerShell
 Remove-CsArchivingConfiguration -Identity global
 ```
 

@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: 267580b8a78ce0c0002e6830ba06cc4ae031e42c
-ms.sourcegitcommit: 1336f6c182043016c42660d5f21632d82febb658
+ms.openlocfilehash: 38f6195a6c8e0c2a5f963d476e26abeb46f6ff4f
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34667383"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991321"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
 
@@ -53,10 +53,10 @@ ms.locfileid: "34667383"
 
 Il criterio di esecuzione di PowerShell consente di determinare quali file di configurazione possono essere caricati nella console di PowerShell e quali script possono essere eseguiti da un utente da questa console. Come minimo, il Modulo del connettore di Skype for Business Online non può essere importato a meno che il criterio di esecuzione non sia stato impostato su RemoteSigned. In caso contrario, quando si prova a importare il modulo verrà visualizzato il seguente messaggio di errore:
   
-- **Errore**: <em>Import-Module: file C:\\programmi file\\comuni\\Microsoft Lync Server 2013\\modules\\LyncOnlineConnector\\LyncOnlineConnectorStartup. psm1 non può essere caricato perché è in corso gli script sono disabilitati in questo sistema. Per altre informazioni, Vedi about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170.</em>
+- **Errore**: <em>Import-Module: file C:\\programmi file\\comuni\\Microsoft Lync Server 2013\\modules\\LyncOnlineConnector\\LyncOnlineConnectorStartup. psm1 non può essere caricato perché gli script in uso sono disabilitati in questo sistema. Per altre informazioni, vedere about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170.</em>
 
 - **Risoluzione**: per risolvere il problema, avviare PowerShell come amministratore e quindi eseguire il comando seguente:
-    ```
+    ```PowerShell
     Set-ExecutionPolicy RemoteSigned
     ```
     Per informazioni dettagliate sul criterio di esecuzione, consulta l'argomento all'indirizzo [about_Execution_Policies](https://go.microsoft.com/fwlink/?LinkID=135170).
@@ -78,11 +78,11 @@ Sono in genere tre i motivi della non riuscita di un tentativo di connessione, c
   - **Errore**: *Get-CsWebTicket: Impossibile connettere i server Live ID. Verificare che proxy sia abilitato o che il computer disponga di una connessione di rete ai server Live ID.*
 
 - **Risoluzione**: spesso questo errore indica che l'assistente per l'accesso ai Microsoft Online Services non è in corso. Puoi verificare lo stato di questo servizio eseguendo il comando seguente dal prompt di PowerShell: 
-    ```
+    ```PowerShell
     Get-Service "msoidsvc"
     ```
     Se il servizio non è in esecuzione, avvialo usando il comando seguente:
-    ```
+    ```PowerShell
     Start-Service "msoidsvc"
     ```
 

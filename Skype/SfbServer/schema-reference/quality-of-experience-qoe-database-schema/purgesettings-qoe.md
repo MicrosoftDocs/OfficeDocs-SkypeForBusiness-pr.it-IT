@@ -11,18 +11,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 31b85d1c-3f32-4f67-94bf-9389cdd282c5
 description: "La tabella PurgeSettings contiene informazioni che specificano se (e quando) la qualità obsoleta dei record dell'esperienza verrà eliminata automaticamente dal database QoE. Tieni presente che le informazioni correlate all'eliminazione possono essere ottenute anche da Skype for Business Server Management Shell eseguendo il comando seguente:"
-ms.openlocfilehash: ec957a445c59020e8909beeb8cb3dcd12f662d68
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: db102a84d58f03fb92a69a301b6906c4b146602c
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194594"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992141"
 ---
 # <a name="purgesettings-table-qoe"></a>Tabella PurgeSettings (QoE)
  
 La tabella PurgeSettings contiene informazioni che specificano se (e quando) la qualità obsoleta dei record dell'esperienza verrà eliminata automaticamente dal database QoE. Tieni presente che le informazioni correlate all'eliminazione possono essere ottenute anche da Skype for Business Server Management Shell eseguendo il comando seguente:
   
-```
+```PowerShell
 Get-CsQoEConfiguration
 ```
 

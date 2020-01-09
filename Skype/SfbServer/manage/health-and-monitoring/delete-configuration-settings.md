@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8ebf5da8-c0fc-498c-8d85-527d3be8479a
 description: 'Riepilogo: informazioni su come rimuovere le impostazioni di configurazione CDR in Skype for Business Server.'
-ms.openlocfilehash: 91ee9676b3087c5b125c6cfe935f706bbfb22812
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 16b797fb59e16038411c722ce064e14ab756cdfa
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195699"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992433"
 ---
 # <a name="delete-an-existing-collection-of-cdr-configuration-settings-in-skype-for-business-server"></a>Eliminare una raccolta esistente di impostazioni di configurazione CDR in Skype for Business Server
  
@@ -47,7 +47,7 @@ Puoi eliminare le impostazioni di configurazione della registrazione dei dettagl
 
  Questo comando rimuove le impostazioni di configurazione CDR applicate al sito Redmond:
     
-  ```
+  ```PowerShell
   Remove-CsCdrConfiguration -Identity "site:Redmond"
   ```
 
@@ -55,15 +55,15 @@ Puoi eliminare le impostazioni di configurazione della registrazione dei dettagl
 
  Questo comando rimuove tutte le impostazioni di configurazione CDR applicate all'ambito del sito:
     
-  ```
+  ```PowerShell
   Get-CsCdrConfiguration -Filter "site:*" | Remove-CsCdrConfiguration
-  ```
+  ```PowerShell
 
-### <a name="to-remove-all-the-cdr-configuration-settings-that-disable-call-detail-recording"></a>Per rimuovere tutte le impostazioni di configurazione CDR che disabilitano la registrazione dei dettagli delle chiamate
+### To remove all the CDR configuration settings that disable call detail recording
 
- Questo comando rimuove tutte le impostazioni di configurazione CDR in cui la registrazione dei dettagli delle chiamate è stata disattivata:
+ This command removes all the CDR configuration settings where Call Detail recording has been disabled:
     
-  ```
+  ```PowerShell
   Get-CsCdrConfiguration | Where-Object {$_.EnableCDR -eq $False} | Remove-CsCdrConfiguration
   ```
 

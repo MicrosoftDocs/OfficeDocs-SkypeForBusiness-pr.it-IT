@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 1d48b060-d77f-44ee-b70f-3ce128aedac4
 description: 'Riepilogo: visualizzare le informazioni sui criteri PIN di un utente per Skype for Business Server.'
-ms.openlocfilehash: 5f6269b766748d5027c0a8182dd027754cd5cc00
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c61c55f97abc661558089c1d26ee4f5537fcf36b
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194956"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991951"
 ---
 # <a name="view-pin-policy-information-in-skype-for-business-server"></a>Visualizzare le informazioni sui criteri PIN in Skype for Business Server
  
@@ -44,7 +44,7 @@ Seguire questa procedura per modificare un criterio PIN a livello di utente o a 
 
 Per visualizzare informazioni su tutti i criteri PIN, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
     
-  ```
+  ```PowerShell
   Get-CsPinPolicy
   ```
 

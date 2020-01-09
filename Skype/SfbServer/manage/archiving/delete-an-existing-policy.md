@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8b88bed9-2b37-4caf-b119-48688076e06a
 description: 'Riepilogo: informazioni su come eliminare un criterio di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: 04ea9db10a2f95ba5010471f262d58c269c173d1
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c08b76996b3d54e8be07e731faae87dce0470cc1
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188234"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992363"
 ---
 # <a name="delete-an-existing-archiving-policy-in-skype-for-business-server"></a>Eliminare un criterio di archiviazione esistente in Skype for Business Server
 
@@ -41,19 +41,19 @@ Puoi eliminare un criterio utente o un criterio del sito, ma non il criterio glo
   
 Ad esempio, il comando seguente elimina il criterio con il sito Identity: Redmond. Quando un criterio configurato a livello di sito viene eliminato, gli utenti gestiti in precedenza dal criterio del sito verranno automaticamente regolati dal criterio di archiviazione globale:
   
-```
+```PowerShell
 Remove-CsArchivingPolicy -Identity site:Redmond
 ```
 
 Questo comando rimuove tutti i criteri di archiviazione applicati al livello per utente:
   
-```
+```PowerShell
 Get-CsArchivingPolicy -Filter "tag:*" | Remove-CsArchivingPolicy
 ```
 
 Questo comando rimuove tutti i criteri di archiviazione in cui l'archiviazione interna è stata disattivata:
   
-```
+```PowerShell
 Get-CsArchivingPolicy | Where-Object {$_.ArchiveInternal -eq $False} | Remove-CsArchivingPolicy
 ```
 

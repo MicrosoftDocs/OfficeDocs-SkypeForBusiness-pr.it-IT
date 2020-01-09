@@ -1,5 +1,5 @@
 ---
-title: Migrare Rubrica
+title: Eseguire la migrazione della rubrica
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -9,14 +9,14 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: "In generale, la Rubrica viene migrata insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi di post-migrazione se sono stati personalizzati gli elementi seguenti nell'ambiente legacy:"
-ms.openlocfilehash: 4a3a85715b73c3a6b5996ba677b0647c87a8db1e
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 8c8e66a8182890ee6e3673769ddc620bb04404c6
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238701"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40990101"
 ---
-# <a name="migrate-address-book"></a>Migrare Rubrica
+# <a name="migrate-address-book"></a>Eseguire la migrazione della rubrica
 
 In generale, la Rubrica viene migrata insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi di post-migrazione se sono stati personalizzati gli elementi seguenti nell'ambiente legacy: 
 
@@ -34,7 +34,7 @@ Se le regole di normalizzazione della Rubrica sono personalizzate nell'ambiente 
 
  **UseNormalizationRules impostato su false**
 
-Se si imposta il valore di **UseNormalizationRules** su false in modo che gli utenti possano usare i numeri di telefono come definiti in servizi di dominio Active Directory senza che Skype for Business Server 2019 applichi regole di normalizzazione, è necessario impostare la ** Parametri UseNormalizationRules** e **IgnoreGenericRules** su true. Seguire la procedura più avanti in questa sezione per impostare questi parametri su true. 
+Se si imposta il valore di **UseNormalizationRules** su false in modo che gli utenti possano usare i numeri di telefono come definiti in servizi di dominio Active Directory senza che Skype for Business Server 2019 applichi regole di normalizzazione, è necessario impostare i parametri **UseNormalizationRules** e **IgnoreGenericRules** su true. Seguire la procedura più avanti in questa sezione per impostare questi parametri su true. 
 
 ## <a name="to-migrate-address-book-customized-normalization-rules"></a>Per eseguire la migrazione delle regole di normalizzazione personalizzate della Rubrica
 
@@ -67,13 +67,13 @@ Se si imposta il valore di **UseNormalizationRules** su false in modo che gli ut
 
    - Se la distribuzione include solo Skype for Business Server 2019, eseguire il cmdlet seguente a livello globale per modificare i valori di **UseNormalizationRules** e **IgnoreGenericRules** in true: 
 
-   ```
+   ```PowerShell
    Set-CsAddressBookConfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
    ```
 
    - Se la distribuzione include una combinazione di Skype for Business Server 2019 e di un'installazione legacy, eseguire il cmdlet seguente e assegnarla a ogni pool di Skype for Business Server 2019 nella topologia:
 
-   ```
+   ```PowerShell
    New-CsAddressBookConfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
    ```
 
@@ -85,7 +85,7 @@ Se si imposta il valore di **UseNormalizationRules** su false in modo che gli ut
 
 6. Eseguire il cmdlet seguente in ogni pool di Skype for Business Server 2019 nella distribuzione:
 
-   ```
+   ```PowerShell
    Update-CsAddressBook
    ```
 

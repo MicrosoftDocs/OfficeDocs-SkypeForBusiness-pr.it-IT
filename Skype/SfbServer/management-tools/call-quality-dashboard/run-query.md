@@ -1,5 +1,5 @@
 ---
-title: Esegui query
+title: Run Query
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -11,20 +11,20 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 45a77f7e-b137-462b-9146-3a0f43d8e0c7
 description: "Riepilogo: informazioni sull'operazione Esegui query, che fa parte dell'API dati per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 0b4c44c93009e014579a53872de82297c1486573
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 8d31ea4c597ea3353fdd5da3e863938aababe819
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186869"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991401"
 ---
-# <a name="run-query"></a>Esegui query
+# <a name="run-query"></a>Run Query
 
 **Riepilogo:** Informazioni sull'operazione Esegui query, che fa parte dell'API dati per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
 
 L'operazione Esegui query fa parte dell'API dati per il dashboard della qualità delle chiamate.
 
-## <a name="run-query"></a>Esegui query
+## <a name="run-query"></a>Run Query
 
 L'operazione Esegui query offre la possibilità di eseguire una query sul cubo in base a dimensioni, misure e filtri specificati e restituire i dati.
 
@@ -39,7 +39,7 @@ L'operazione Esegui query offre la possibilità di eseguire una query sul cubo i
 
  **Richiedi corpo** : Ecco un payload di richiesta di esempio in JSON. Contiene dimensioni, filtri e misure necessarie per una query.
 
-```
+```json
 {
 "Filters": [{
 "DataModelName": "[StartDate].[Month]",
@@ -88,7 +88,7 @@ L'operazione Esegui query offre la possibilità di eseguire una query sul cubo i
 
  **Corpo risposta** : di seguito è riportato un payload di risposta di esempio in JSON. Contiene una tabella dati che contiene i dati, inoltre conterrà un meta dati, che mostra il tempo di esecuzione della query e se i dati vengono o meno dalla cache.
 
-```
+```json
 {
 "ExecutionTime": "00:00:00.2102630",
 "DataResult": [["September 2014",

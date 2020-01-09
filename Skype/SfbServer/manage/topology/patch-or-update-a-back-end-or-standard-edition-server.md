@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f95f8d3a-e039-484e-97bd-d727db21a12b
 description: 'Riepilogo: informazioni su come installare un aggiornamento o una patch in un server back-end in Skype for Business Server.'
-ms.openlocfilehash: b8a0280577147e37c52ab11aa3061541bae27610
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: a88224c508426d16217adb87693515314b03e40f
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187088"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991501"
 ---
 # <a name="patch-or-update-a-back-end-server-or-standard-edition-server-in-skype-for-business-server"></a>Patch o aggiornamento di un server di back-end o di un server Standard Edition in Skype for Business Server
  
@@ -35,13 +35,13 @@ Se un server di back-end è in calo per almeno 30 minuti durante l'aggiornamento
     
 4. Interrompere i servizi di Skype for Business Server. Nella riga di comando digitare:
     
-    ```
+    ```PowerShell
     Stop-CsWindowsService
     ```
 
 5. Arrestare il servizio World Wide Web. Nella riga di comando digitare:
     
-    ```
+    ```PowerShell
     net stop w3svc
    ```
 
@@ -53,13 +53,13 @@ Se un server di back-end è in calo per almeno 30 minuti durante l'aggiornamento
     
 9. Interrompi di nuovo i servizi di Skype for Business Server per intercettare assembly della cache globale degli assembly (GAC)-d. Nella riga di comando digitare:
     
-    ```
+    ```PowerShell
     Stop-CsWindowsService
     ```
 
 10. Riavviare il servizio World Wide Web. Nella riga di comando digitare:
     
-    ```
+    ```PowerShell
     net start w3svc
     ```
 
@@ -67,19 +67,19 @@ Se un server di back-end è in calo per almeno 30 minuti durante l'aggiornamento
     
     - Se si tratta di un server back-end Enterprise Edition e non sono presenti database collocati nel server, ad esempio l'archiviazione o il monitoraggio dei database, digitare quanto segue nella riga di comando:
     
-    ```
+    ```PowerShell
     Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn <SQL Server FQDN>
     ```
 
     - Se si tratta di un server back-end Enterprise Edition e in questo server sono presenti database collocati, digitare quanto segue nella riga di comando:
     
-    ```
+    ```PowerShell
     Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn <SQL Server FQDN>  -ExcludeCollocatedStores
     ```
 
     - Se si tratta di un server Standard Edition, digitare quanto segue nella riga di comando:
     
-    ```
+    ```PowerShell
     Install-CsDatabase -Update -LocalDatabases
 
     ```

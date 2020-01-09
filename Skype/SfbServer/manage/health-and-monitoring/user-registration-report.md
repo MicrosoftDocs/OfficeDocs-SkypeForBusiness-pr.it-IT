@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 151d5cc9-cc1b-4cfa-be9c-55ebe321f7a4
 description: 'Riepilogo: informazioni sul report di registrazione degli utenti in Skype for Business Server.'
-ms.openlocfilehash: efdb701a61f527e3dd56c1f1e0662f3f1b7f0f8b
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 721d0b814a970ccb32df8eb83251099d8cb4801d
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188630"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991691"
 ---
 # <a name="user-registration-report-in-skype-for-business-server"></a>Report di registrazione degli utenti in Skype for Business Server
  
@@ -51,7 +51,7 @@ Si noti che esiste un totale di cinque accessi; Tuttavia, esistono solo due uten
   
 Oltre a conoscere il numero di accessi univoci, è necessario conoscere il numero totale di utenti abilitati per Skype for Business Server. Questo valore può essere recuperato aprendo Skype for Business Server Management Shell ed eseguendo il comando di Windows PowerShell seguente:
   
-```
+```PowerShell
 (Get-CsUser).Count
 ```
 

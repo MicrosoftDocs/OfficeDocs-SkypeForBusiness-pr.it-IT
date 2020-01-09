@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: cc2fbf41-a7e0-4ef8-a939-47bc42da5529
 description: 'Riepilogo: informazioni su cosa tenere in considerazione quando si pianifica il dashboard qualità chiamata.'
-ms.openlocfilehash: c98828f8fed3567a892e20dcab8040bb731c91f2
-ms.sourcegitcommit: 1f84b0edc4e418259b9f6392370e2cc4dc70df82
+ms.openlocfilehash: 3a0982f565495740887b6da07dd802de1205dcf8
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37328438"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991411"
 ---
 # <a name="plan-for-call-quality-dashboard-for-skype-for-business-server"></a>Pianificare il dashboard per la qualità delle chiamate per Skype for Business Server 
  
@@ -284,11 +284,11 @@ Di seguito sono riportati i servizi ruolo IIS necessari (in ordine gerarchico):
   
 Per installare questi requisiti con PowerShell, eseguire le operazioni seguenti:
   
-```
+```PowerShell
 import-module servermanager
 ```
 
-```
+```PowerShell
 add-windowsfeature Web-Server, Web-Static-Content, Web-Default-Doc, Web-Asp-Net, Web-Asp-Net45, Web-Net-Ext, Web-Net-Ext45, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Http-Logging, Web-Url-Auth, Web-Windows-Auth, Web-Mgmt-Console
 ```
 
@@ -320,7 +320,7 @@ Per altre informazioni sull'installazione e la configurazione delle funzionalit�
 
 I tre account di servizio del dominio sono consigliati per il principio del privilegio minimo: 
   
-- Uno che ha già sia un'entità di sicurezza di accesso per il database di metriche QoE (con privilegio db_datareader) che un'identità di sicurezza dell'account di accesso nell'istanza di SQL Server di archiviazione QoE (necessaria per creare un oggetto server collegato durante l'installazione). Questo account verrà usato per eseguire il passaggio "dati archivio QoE" del processo di SQL Server Agent.
+- Uno che ha già sia un'entità di sicurezza di accesso per il database di metriche QoE (con db_datareader privilegio) che un'identità di sicurezza dell'account di accesso nell'istanza di SQL Server di archiviazione QoE (necessaria per creare un oggetto server collegato durante l'installazione). Questo account verrà usato per eseguire il passaggio "dati archivio QoE" del processo di SQL Server Agent.
     
 - Uno che verrà usato per eseguire il passaggio "processo cubo" del processo di SQL Server Agent. Il programma di installazione creerà un'identità di sicurezza dell'account di accesso al database di archiviazione QoE (con privilegi di lettura e scrittura) e creerà anche un membro nel ruolo QoE (con privilegi di controllo completo) per il cubo.
     

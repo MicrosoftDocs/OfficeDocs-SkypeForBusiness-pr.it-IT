@@ -17,14 +17,14 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Informazioni su come usare i servizi di conferenza audio con routing diretto in ambienti GCCH e DoD.
-ms.openlocfilehash: 67c8a8b3ec16f36a93eb4561473facacdbd85464
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 6c1403fedbbb47231780916eb8c7acb8014539e9
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37639324"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992896"
 ---
-# <a name="audio-conferencing-with-direct-routing-for-gcc-high-and-dod"></a>Servizi di conferenza audio con routing diretto per GCC High e DoD
+# <a name="audio-conferencing-with-direct-routing-for-gcc-high-and-dod"></a>Audioconferenza con Instradamento diretto per GCC High e DoD
 
 I servizi di audioconferenza con routing diretto per GCC High e DoD consentono ai partecipanti di partecipare a riunioni di teams nell'organizzazione GCC High o DoD usando un dispositivo telefonico. I partecipanti alla riunione possono preferire l'uso di un dispositivo telefonico per partecipare a riunioni di team in scenari come la connettività Internet è limitata o quando gli utenti sono in viaggio e non hanno accesso ai team. I partecipanti possono scegliere di partecipare alle riunioni effettuando la chiamata in un numero di telefono di accesso esterno per l'organizzazione oppure effettuando la chiamata della riunione al dispositivo telefonico.
 
@@ -49,9 +49,9 @@ Per abilitare il servizio, è necessaria una licenza tenant e almeno una licenza
 
 Per configurare il routing diretto, vedere gli articoli seguenti:
 
-- [Pianificare il routing diretto](direct-routing-plan.md)
+- [Pianificare Instradamento diretto](direct-routing-plan.md)
 
-- [Configurare il routing diretto](direct-routing-configure.md)
+- [Configurare Instradamento diretto](direct-routing-configure.md)
 
 > [!NOTE]
 > Quando configuri il routing diretto, ricordati di usare gli FQDN e le porte di dominio elevato o specifico del DoD che sono descritti in questi due articoli.
@@ -64,12 +64,12 @@ I numeri di telefono di accesso esterno sono i numeri di telefono associati al B
 
 Puoi usare il cmdlet di PowerShell New-csHybridTelephoneNumber per definire i numeri di telefono del servizio nel tenant che possono essere usati per instradare le chiamate al servizio di audioconferenza tramite routing diretto. 
 
-  ```
+  ```PowerShell
   New-csHybridTelephoneNumber -TelephoneNumber <Phone number in E.164 format>
   ```
 
 Ad esempio:
-  ```
+  ```PowerShell
   New-csHybridTelephoneNumber -TelephoneNumber “+14250000000”
   ```
 
@@ -77,13 +77,13 @@ Ad esempio:
 
 È possibile assegnare numeri di telefono del servizio al Bridge di audioconferenza dell'organizzazione usando il cmdlet Register-csOnlineDialInConferencingServiceNumber di PowerShell.
 
-  ```
+  ```PowerShell
   Register-csOnlineDialInConferencingServiceNumber -identity <Telephone number in E.164 format> -BridgeId <Identity of the audio conferencing bridge>
   ```
 
 Puoi vedere l'ID del Bridge di audioconferenza usando Get-CsOnlineDialInConferencingBridge. Ad esempio:
 
-  ```
+  ```PowerShell
   $b= Get-CsOnlineDialInConferencingBridge
   Register-csOnlineDialInConferencingServiceNumber -identity 14257048060 -BridgeId $b.identity
   ```

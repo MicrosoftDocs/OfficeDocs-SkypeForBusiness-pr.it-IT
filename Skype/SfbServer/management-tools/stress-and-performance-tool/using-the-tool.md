@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 93f42230-24a2-418d-9770-bf4670a9d78f
 description: Per eseguire lo strumento di stress e prestazioni di Skype for Business Server 2015, è necessario essere in grado di gestire sia gli utenti, i contatti e i profili utente, configurare lo strumento per l'esecuzione e quindi rivedere l'output o i risultati prodotti dallo strumento.
-ms.openlocfilehash: e0cf241417272cfa16b3e332e7bafe7a112af38b
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: af4d0dcb1cc4196f98941799c61dcf29510ba795
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187952"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992483"
 ---
 # <a name="using-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Uso dello strumento di stress e prestazioni di Skype for Business Server 2015
  
@@ -84,7 +84,7 @@ Se si ha un file XML preconfigurato che contiene già le impostazioni personaliz
     
 6. Nel campo prefisso **telefonico** Digitare il codice di area a tre cifre da usare in tutti gli account utente di test. Verificare che il prefisso scelto non sia in conflitto con i codici di area di altri utenti in Active Directory.
     
-7. Fare clic per selezionare la casella di controllo abilitata per la **voce** , se si vuole abilitare gli utenti di test per VoIP aziendale.
+7. Fare clic per selezionare la casella di controllo **abilitata** per la voce, se si vuole abilitare gli utenti di test per VoIP aziendale.
     
 8. Nel campo **numero di utenti** specificare il numero totale di utenti di test che si desidera creare.
     
@@ -133,7 +133,7 @@ Questa scheda consente di fornire i dettagli dei contatti degli utenti per il te
     
 3. Nel campo **media gruppi di contatti per utente** immettere il numero di gruppi di contatti per utente. Questo numero deve essere inferiore ai **contatti medi per ogni utente**.
     
-4. Nel campo **percentuale dei contatti federati/** incrociati del pool assegnare un numero compreso tra 0 e 100. Questa percentuale di contatti verrà creata con gli utenti federati.
+4. Nel campo **percentuale dei contatti federati/incrociati del pool** assegnare un numero compreso tra 0 e 100. Questa percentuale di contatti verrà creata con gli utenti federati.
     
 5. Nel campo **prefisso dell'utente federati/pool** di dati assegnare il nome utente per gli utenti federati che verranno aggiunti agli elenchi di contatti degli utenti locali.
     
@@ -243,7 +243,7 @@ Di seguito è illustrata la scheda **configurazione comune** dello strumento di 
 È possibile configurare i livelli di carico e i parametri per ognuno degli scenari generali offerti determinando gli elementi che si vogliono eseguire o abbandonare disabilitati. Ecco le opzioni generali:
   
 > [!NOTE]
-> I valori del livello di caricamento per tutti i campi, **** ma i servizi di informazione locali sono disabilitati, **Bassi**, **medi**, **alti**o **personalizzati**. Se si seleziona qualsiasi impostazione ma disabilitata, vengono generate configurazioni per ogni client. Risultati elevati nel caricamento massimo supportato nel server; il mezzo è 60% di carico elevato; basso è il 30%. 
+> I valori del livello di caricamento per tutti i campi, ma i servizi di informazione locali sono **disabilitati**, **Bassi**, **medi**, **alti**o **personalizzati**. Se si seleziona qualsiasi impostazione ma disabilitata, vengono generate configurazioni per ogni client. Risultati elevati nel caricamento massimo supportato nel server; il mezzo è 60% di carico elevato; basso è il 30%. 
   
 - **Messaggistica istantanea-** Questa funzionalità include peer-to-peer e conferenze; scegliere il valore appropriato per il livello di carico.
     
@@ -317,7 +317,7 @@ Web App supporta scenari di conferenza tramite il server UCWA (Unified Communica
 - **Conferenza telefonica-** Selezionare un valore per il livello di carico.
     
 > [!NOTE]
-> Ogni scenario contiene un pulsante **avanzato** che si trova accanto. Le finestre di dialogo avanzate contengono valori specifici di ogni scenario che cambierà il comportamento dello strumento di stress e prestazioni e consentirà la personalizzazione. > per ogni scenario dell'app Web, se il livello di carico è **personalizzato**, il valore specificato nella ** **Viene usato il campo ConversationsPerHour al posto dell'impostazione predefinita.
+> Ogni scenario contiene un pulsante **avanzato** che si trova accanto. Le finestre di dialogo avanzate contengono valori specifici di ogni scenario che cambierà il comportamento dello strumento di stress e prestazioni e consentirà la personalizzazione. > per ogni scenario dell'app Web, se il livello di carico è **personalizzato**, viene usato il valore specificato nel campo **ConversationsPerHour** anziché quello predefinito.
   
 #### <a name="mobility-tab"></a>Scheda mobilità
 
@@ -332,7 +332,7 @@ Le opzioni disponibili sono:
 - **Presenza e messaggistica istantanea P2P/audio-** Selezionare un valore per il livello di carico per abilitare la simulazione della mobilità.
     
 > [!NOTE]
-> Ogni scenario contiene un pulsante **avanzato** che si trova accanto. Le finestre di dialogo avanzate contengono valori specifici di ogni scenario che cambierà il comportamento dello strumento di stress e prestazioni e consentirà la personalizzazione. > per ognuno degli scenari di mobilità, se il livello di carico è **personalizzato**, il valore specificato nella ** **Viene usato il campo ConversationsPerHour al posto dell'impostazione predefinita.
+> Ogni scenario contiene un pulsante **avanzato** che si trova accanto. Le finestre di dialogo avanzate contengono valori specifici di ogni scenario che cambierà il comportamento dello strumento di stress e prestazioni e consentirà la personalizzazione. > per ognuno degli scenari di mobilità, se il livello di carico è **personalizzato**, viene usato il valore specificato nel campo **ConversationsPerHour** anziché quello predefinito.
   
 #### <a name="summary-tab"></a>Scheda Riepilogo
 
@@ -365,19 +365,19 @@ Lo strumento di configurazione del carico (UserProfileGenerator. exe) crea un fi
     
 2. Passare alla cartella client ed eseguire lo script batch **RunClient** . È possibile fare doppio clic sul file batch in Esplora risorse e verranno eseguiti tutti i file di configurazione per il client. È anche possibile eseguire lo script da una cartella client usando la sintassi seguente:
     
-   ```
+   ```PowerShell
    RunClient0.bat "C:\Program Files\Skype for Business Server 2015\LyncStressAndPerfTool\LyncStress" 
    ```
 
 Per eseguire direttamente lo strumento stress e prestazioni, aprire un prompt dei comandi e digitare il comando seguente alla riga di comando e, quando si esegue questa operazione per la prima volta, assicurarsi di registrare i `regsvr32 /i /n /s LyncPerfToolPerf.dll`contatori delle prestazioni, come illustrato nella nota più avanti in questo argomento.
   
-```
+```console
 LyncPerfTool.exe /file:IM_client0.xml
 ```
 
 Per visualizzare i valori nel file di configurazione, includere il `/displayfile` parametro nel comando precedente, in modo che abbia l'aspetto seguente:
   
-```
+```console
 LyncPerfTool.exe /file:IM_client0.xml /displayfile
 ```
 

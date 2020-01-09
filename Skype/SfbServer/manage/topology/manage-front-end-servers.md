@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: ab748733-6bad-4c93-8dda-db8d5271653d
 description: 'Riepilogo: informazioni su come aggiungere, rimuovere, patch o aggiornare i server front-end in Skype for Business Server.'
-ms.openlocfilehash: 13af9198dfb83d14ad1d86885419fc9add29e07d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3689b869ba715f431ebcf0b537b4106a66177c62
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187103"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991531"
 ---
 # <a name="manage-front-end-servers-in-skype-for-business-server"></a>Gestire i server front-end in Skype for Business Server
  
@@ -37,7 +37,7 @@ Quando si aggiunge o si rimuove un server front-end, è possibile usare la proce
 
 1. Se si stanno rimuovendo i server front-end, arrestare prima le nuove connessioni a tali server. A questo scopo, puoi usare il cmdlet seguente:
     
-   ```
+   ```PowerShell
    Stop-CsWindowsService -Graceful
    ```
 
@@ -49,11 +49,11 @@ Quando si aggiunge o si rimuove un server front-end, è possibile usare la proce
     > Quando si aggiunge o si rimuove un server nel pool della topologia e quindi si pubblica la topologia aggiornata, tutti i server del pool verranno riavviati simultaneamente. Mentre i server riavviano il pool è offline, il servizio verrà interrotto per gli utenti connessi al pool. Per impedire l'interruzione del servizio agli utenti, pianificare la pubblicazione della topologia con il nuovo server nel pool durante le ore non lavorative. 
   
   > [!NOTE]
-> Inoltre, quando si aggiunge o si rimuove un server nel pool, è necessario eseguire la distribuzione guidata di Skype for Business Server su ogni computer aggiunto o rimosso, per altre informazioni, vedere [installare Skype for Business Server nei server](https://docs.microsoft.com/skypeforbusiness/deploy/install/install-skype-for-business-server) della topologia
+> Inoltre, quando si aggiunge o si rimuove un server nel pool, è necessario eseguire la distribuzione guidata di Skype for Business Server su ogni computer aggiunto o rimosso, per altre informazioni, vedere [installare Skype for Business Server nei server della topologia](https://docs.microsoft.com/skypeforbusiness/deploy/install/install-skype-for-business-server)
   
 4. Se il numero di server nel pool Front-End è stato modificato in uno dei modi seguenti, reimpostare il pool con il cmdlet seguente: Reset-CsPoolRegistrarState-ResetType FullReset-PoolFqdn 
     
-   ```
+   ```PowerShell
     Reset-CsPoolRegistrarState -ResetType FullReset -PoolFqdn  <PoolFQDN>
    ```
 
@@ -67,7 +67,7 @@ Quando si aggiunge o si rimuove un server front-end, è possibile usare la proce
     
 5. Riavviare il pool digitando il cmdlet seguente
     
-   ```
+   ```PowerShell
    Start-CsPool
    ```
 
@@ -79,19 +79,19 @@ Quando si esegue la patch dei server in un pool Front-End, è possibile farlo un
 
 1. Digitare il cmdlet seguente:
     
-   ```
+   ```PowerShell
    Get-CsPoolFabricState -PoolFqdn <PoolFQDN>
    ```
 
      Se questo cmdlet Mostra le eventuali repliche mancanti, eseguire il cmdlet seguente per recuperare il pool prima di applicare eventuali patch.
     
-   ```
+   ```PowerShell
    Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery
    ```
 
 2. Nel primo server che si vuole applicare, eseguire il cmdlet seguente:
     
-   ```
+   ```PowerShell
    Invoke-CsComputerFailOver -ComputerName <Front End Server to be patched>
    ```
 
@@ -101,7 +101,7 @@ Quando si esegue la patch dei server in un pool Front-End, è possibile farlo un
     
 4. Nel server aggiornato eseguire il cmdlet seguente:
     
-   ```
+   ```PowerShell
    Invoke-CsComputerFailBack -ComputerName <Front End Server to be patched>
    ```
 

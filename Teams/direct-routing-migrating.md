@@ -14,12 +14,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su cosa è necessario per eseguire la migrazione a routing diretto da una prospettiva di configurazione di Skype for business online e teams.
-ms.openlocfilehash: dd0b2cd1ac6014ea0f6c79a46314eb4e3d5e0380
-ms.sourcegitcommit: 96d98e145ff300833d827a7d43b4e4b0331b7538
+ms.openlocfilehash: 4c65a8c5d5a28ab5046c23e2743962fe1114c2a4
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871712"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992583"
 ---
 # <a name="migrate-to-direct-routing"></a>Eseguire la migrazione a Instradamento diretto
 
@@ -38,8 +38,8 @@ La tabella seguente mostra lo stato di fine di un utente con provisioning per le
 
 |Attributi degli oggetti utente |Sistema telefonico con piani di chiamata|Sistema telefonico con connettività PSTN locale tramite Skype for Business Server|Sistema telefonico con connettività PSTN locale tramite connettore Cloud|Sistema telefonico con connettività PSTN locale tramite routing diretto|
 |---|---|---|---|---|
-|Client|Skype for business o Teams |Skype for business |Skype for business |Team|
-|Licenze|Skype business online</br>Piano 2</br></br>MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)</br></br></br>Piani di chiamata</br>Team|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD</br></br></br>Sistema telefonico (MCOEV)</br></br>Team|
+|Client|Skype for business o Teams |Skype for business |Skype for business |Teams|
+|Licenze|Skype business online</br>Piano 2</br></br>MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)</br></br></br>Piani di chiamata</br>Teams|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD</br></br></br>Sistema telefonico (MCOEV)</br></br>Teams|
 OnPremLineURI |N/D|Il numero di telefono deve essere sincronizzato dall'annuncio locale. |Il numero di telefono può essere gestito sia in Active Directory locale che in Azure Active Directory.|Il numero di telefono può essere gestito sia in Active Directory locale che in Azure Active Directory. Tuttavia, se l'organizzazione ha Skype for business locale, il numero deve essere sincronizzato dall'Active Directory locale.|
 |LineURI|Numero di telefono chiamante PSTN|Imposta automaticamente dal parametro OnPremLineURI|Imposta automaticamente dal parametro OnPremLineURI|Imposta automaticamente dal parametro OnPremLineURI|
 |EnterpriseVoiceEnabled|True|True|True|True|
@@ -86,7 +86,7 @@ Per altre informazioni sulla migrazione da un sistema telefonico a una connettiv
 
 È consigliabile rimuovere le informazioni di routing vocale configurate in precedenza come indicato di seguito:
 
-```
+```PowerShell
 Grant-CsVoiceRoutingPolicy -PolicyName $NULL -Identity <UPN> 
 ```
 > Se è configurato un CsVoiceRoutingPolicy globale, è consigliabile rimuovere qualsiasi utilizzo PSTN associato a questo criterio globale. 
@@ -101,7 +101,7 @@ Per altre informazioni sulla migrazione da un sistema telefonico a una connettiv
 
 È consigliabile rimuovere le informazioni di routing vocale configurate in precedenza come indicato di seguito:
  
-```
+```PowerShell
 Grant-CsVoiceRoutingPolicy -PolicyName $NULL -Identity <UPN> 
 Set-CsUserPstnSettings -Identity <UPN> -AllowInternationalCalls $false -HybridPSTNSite $null 
 ```

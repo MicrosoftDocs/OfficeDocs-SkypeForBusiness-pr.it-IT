@@ -17,12 +17,12 @@ f1keywords:
 - ms.teamsadmincenter.dashboard.helparticle.securityandcompliance
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: da0e576bf299bcd4c5362e7055cd843805b783dc
-ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
+ms.openlocfilehash: 95f8910005121faceb261a399ed64a4f68e5cad4
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968177"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40988801"
 ---
 <a name="overview-of-security-and-compliance-in-microsoft-teams"></a>Panoramica della sicurezza e della conformità in Microsoft Teams
 ======================================================
@@ -31,7 +31,7 @@ Microsoft teams è basato sul cloud di livello aziendale di Office 365 Hyper-Gra
 
 Teams è conforme a livello D. Sono inclusi i seguenti standard: ISO 27001, ISO 27018, SSAE16 SOC 1 e SOC 2, HIPAA e clausole modello EU (EUMC). In Microsoft Compliance Framework Microsoft classifica le applicazioni e i servizi di Office 365 in quattro categorie. Ogni categoria è definita da specifici impegni di conformità che devono essere soddisfatti per un servizio di Office 365 o un servizio Microsoft correlato, da elencare in tale categoria.
 
-I servizi nelle categorie di conformità C e D che hanno impegni di conformità leader del settore sono abilitati per impostazione predefinita. I servizi nelle categorie A e B sono dotati di controlli per attivare o disattivare questi servizi per un'intera organizzazione. I dettagli sono disponibili nel [Framework conformità per gli standard e le normative del settore](https://download.microsoft.com/download/B/2/7/B27B3EF3-8849-4C18-8BA4-5AD755728620/Compliance%20Framework_customer%20guidance.pdf). Teams supporta anche la conformità a Cloud Security Alliance.
+I servizi nelle categorie di conformità C e D che hanno impegni di conformità leader del settore sono abilitati per impostazione predefinita. I servizi nelle categorie A e B sono dotati di controlli per attivare o disattivare questi servizi per un'intera organizzazione. I dettagli sono disponibili nel [Framework conformità per gli standard e le normative del settore](https://download.microsoft.com/download/1/4/3/1434ABAB-B8E9-412D-8C3A-187B5FCB7A2F/Compliance%20Framework%20document.pdf). Teams supporta anche la conformità a Cloud Security Alliance.
 
 Teams applica anche l'autenticazione a livello di team e a livello di organizzazione a due fattori, Single Sign-on tramite Active Directory e la crittografia dei dati in transito e a riposo. I file sono archiviati in SharePoint e sono supportate dalla crittografia di SharePoint. Le note sono archiviate in OneNote e sono supportate dalla crittografia di OneNote. I dati di OneNote sono archiviati nel sito del team di SharePoint. La scheda wiki può essere usata anche per l'acquisizione di note e il contenuto viene archiviato anche nel sito del team di SharePoint.
 
@@ -44,7 +44,7 @@ Per altre informazioni sulla sicurezza e conformità di Office 365, vedere [conf
 
 ## <a name="auditing-and-reporting"></a>Controllo e creazione di report
 
-La ricerca nel log di controllo si connette direttamente al centro conformità & sicurezza di Office 365 ed espone le abilità per impostare avvisi e/o segnalare l'evento di controllo rendendo disponibile, l'esportazione di set di eventi specifici o generici per i carichi di lavoro per l'uso e l'analisi dell'amministratore, in un sequenza temporale di controllo illimitata. Tutti i dati del log di controllo sono disponibili per la configurazione di avvisi all'interno del centro conformità & sicurezza di Office 365, nonché per l'applicazione di filtri ed esportazioni per ulteriori analisi. Fare riferimento a questo [collegamento](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) per altre informazioni su come eseguire una ricerca nel log di controllo per gli eventi di Microsoft Teams nel centro conformità & sicurezza di Office 365. 
+La ricerca nel log di controllo si connette direttamente al centro conformità & sicurezza di Office 365 ed espone le abilità per impostare avvisi e/o segnalare l'evento di controllo rendendo disponibile, l'esportazione di set di eventi specifici o generici per i carichi di lavoro per l'uso e l'analisi dell'amministratore, in una sequenza temporale di controllo illimitata. Tutti i dati del log di controllo sono disponibili per la configurazione di avvisi all'interno del centro conformità & sicurezza di Office 365, nonché per l'applicazione di filtri ed esportazioni per ulteriori analisi. Fare riferimento a questo [collegamento](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) per altre informazioni su come eseguire una ricerca nel log di controllo per gli eventi di Microsoft Teams nel centro conformità & sicurezza di Office 365. 
 
 ## <a name="compliance-content-search"></a>Ricerca di contenuto di conformità
 
@@ -79,7 +79,7 @@ I clienti possono sfruttare eDiscovery sul posto o [Advanced eDiscovery] per i r
 
 ## <a name="legal-hold"></a>Blocco legale
 
-Durante un contenzioso, è spesso necessario che tutti i dati associati a un utente (custode) o a un team vengano mantenuti preservato in modo che possa essere usato come prova per il caso. Questa operazione viene eseguita inserendo un utente (cassetta postale dell'utente) o un team in attesa legale. Quando un team all'interno di teams viene messo in blocco sul posto (sottoinsieme della raccolta di siti o delle cassette postali tramite query mirate o contenuto filtrato) o blocco per controversia legale (intera cassetta postale o raccolta siti), il blocco viene inserito nella cassetta postale dei gruppi. Ciò assicura che anche se gli utenti finali eliminano o modificano i messaggi di canale che vengono ingeriti nella cassetta postale del gruppo, le copie non modificabili del contenuto vengono mantenute e disponibili nella ricerca di eDiscovery. Le esenzioni legali vengono in genere applicate nel contesto di un caso di eDiscovery. Vedere [questo](https://support.office.com/article/overview-of-preservation-policies-9c3b1d52-40ce-4ba3-a520-9ae0be15538a) articolo della Guida per informazioni più dettagliate sulla conservazione e le detiene nel centro conformità & sicurezza di Office 365. 
+Durante un contenzioso, è spesso necessario che tutti i dati associati a un utente (custode) o a un team vengano mantenuti come non modificabili, in modo che possano essere usati come elementi di prova per il caso. Questa operazione viene eseguita inserendo un utente (cassetta postale dell'utente) o un team in attesa legale. Quando un team all'interno di teams viene messo in blocco sul posto (sottoinsieme della raccolta di siti o delle cassette postali tramite query mirate o contenuto filtrato) o blocco per controversia legale (intera cassetta postale o raccolta siti), il blocco viene inserito nella cassetta postale dei gruppi. Ciò assicura che anche se gli utenti finali eliminano o modificano i messaggi di canale che vengono ingeriti nella cassetta postale del gruppo, le copie non modificabili del contenuto vengono mantenute e disponibili nella ricerca di eDiscovery. Le esenzioni legali vengono in genere applicate nel contesto di un caso di eDiscovery. Vedere [questo](https://support.office.com/article/overview-of-preservation-policies-9c3b1d52-40ce-4ba3-a520-9ae0be15538a) articolo della Guida per informazioni più dettagliate sulla conservazione e le detiene nel centro conformità & sicurezza di Office 365. 
 
 ## <a name="information-protection-architecture-for-microsoft-teams"></a>Architettura di protezione delle informazioni per Microsoft teams. 
 

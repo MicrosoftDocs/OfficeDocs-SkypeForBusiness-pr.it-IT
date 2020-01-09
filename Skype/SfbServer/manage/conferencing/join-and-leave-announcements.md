@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: cb09f9c2-c6dc-4083-b45a-8b6773341373
 description: 'Riepilogo: informazioni su come gestire gli annunci di conferenza e uscire da Skype for Business Server.'
-ms.openlocfilehash: 3d9a14e36dfe6b8df51e5ee91dd329ce34452cda
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5c2bc7175f99ee50e94bee26ef0e6d54a6a8db5a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189662"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991831"
 ---
 # <a name="manage-conference-join-and-leave-announcements-in-skype-for-business-server"></a>Gestire gli annunci di conferenza e lasciarli in Skype for Business Server
  
@@ -40,7 +40,7 @@ Queste impostazioni possono essere configurate nell'ambito globale o nell'ambito
     
 3. Eseguire la procedura seguente al prompt dei comandi:
     
-   ```
+   ```PowerShell
    Get-CsDialinConferencingConfiguration
    ```
 
@@ -48,7 +48,7 @@ Questo cmdlet recupera informazioni sul fatto che i partecipanti siano tenuti a 
     
 4. Eseguire la procedura seguente al prompt dei comandi:
     
-   ```
+   ```PowerShell
    Set-CsDialinConferencingConfiguration -Identity <identity of dial-in conferencing settings to be modified>
    [-EnableNameRecording <$true | $false>]
    [-EntryExitAnnouncementsEnabledByDefault <$true | $false>]
@@ -57,7 +57,7 @@ Questo cmdlet recupera informazioni sul fatto che i partecipanti siano tenuti a 
 
 Nell'esempio seguente le impostazioni sono configurate nell'ambito del sito per Redmond. Gli annunci sono attivati, ma ai partecipanti non viene chiesto di pronunciare il loro nome quando partecipano a una conferenza. Viene riprodotto un tono quando i partecipanti entrano o lasciano una conferenza:
   
-```
+```PowerShell
 Set-CsDialinConferencingConfiguration -Identity site:Redmond
 -EnableNameRecording $false
 -EntryExitAnnouncementsEnabledByDefault $true

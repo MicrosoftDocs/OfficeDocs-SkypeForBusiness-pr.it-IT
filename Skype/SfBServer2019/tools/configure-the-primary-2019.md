@@ -1,5 +1,5 @@
 ---
-title: Configurare il server di gestione principale
+title: Configurare il server di gestione primario
 ms.reviewer: ''
 ms.author: jambirk
 author: jambirk
@@ -11,14 +11,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: 'Riepilogo: configurare il server di gestione principale, installare System Center Operations Manager e importare Management Pack per Skype for Business Server 2019.'
-ms.openlocfilehash: 316931aff5379de10b0301cc65e94443ed0f7675
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b5835f0638231cff6176aa7377d6f7c60e81b6f7
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189755"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989071"
 ---
-# <a name="configure-the-primary-management-server"></a>Configurare il server di gestione principale
+# <a name="configure-the-primary-management-server"></a>Configurare il server di gestione primario
 
 **Riepilogo:** Configurare il server di gestione principale, installare System Center Operations Manager e importare Management Pack per Skype for Business Server 2019.
 
@@ -36,7 +36,7 @@ Quando si installa System Center Operations Manager, sarà necessario installare
 
 - Console Web
 
-- Report
+- Reporting
 
 - Data warehouse
 
@@ -55,12 +55,12 @@ Tieni presente che puoi avere un solo server di gestione radice per la distribuz
 
 Per estendere le funzionalità di System Center Operations Manager, è possibile installare Management Pack, ovvero il software che stabilisce quali elementi possono essere monitorati da System Center Operations Manager, come devono essere monitorati gli elementi e come devono essere attivati gli avvisi e segnalato. Skype for Business Server 2019 include due Management Pack di System Center Operations Manager che fornisce le funzionalità seguenti:
 
-- **Il componente e il Management Pack degli utenti** (Microsoft.LS.2019.Monitoring.ComponentAndUser.mp) tiene traccia dei problemi di Skype for Business Server registrati nei registri eventi, registrati da contatori delle prestazioni oppure registrati nei record di dettagli chiamata (CDRs) o nei database QoE (Quality of Experience). Per problemi critici, System Center Operations Manager può essere configurato per comunicare immediatamente agli amministratori tramite posta elettronica, messaggi istantanei o messaggi SMS. (SMS o Short Message Service) è la tecnologia usata per inviare SMS da un dispositivo mobile a un altro.
+- **Il componente e l'User Management Pack** (Microsoft.ls.2019.Monitoring.ComponentAndUser.MP) registra i problemi di Skype for Business Server registrati nei registri eventi, registrati dai contatori delle prestazioni, oppure registrati nei database dei dettagli delle chiamate (CDRs) o nei dati QoE (Quality of Experience). Per problemi critici, System Center Operations Manager può essere configurato per comunicare immediatamente agli amministratori tramite posta elettronica, messaggi istantanei o messaggi SMS. (SMS o Short Message Service) è la tecnologia usata per inviare SMS da un dispositivo mobile a un altro.
 
     > [!NOTE]
     >  Per informazioni dettagliate sulla configurazione della notifica di Operations Manager, vedere [configurazione della notifica](https://go.microsoft.com/fwlink/p/?LinkID=268785&amp;amp;clcid=0x409).
 
-- **Active Monitoring Management Pack** (Microsoft.LS.2019.Monitoring.ActiveMonitoring.mp) verifica in modo proattivo i componenti principali di Skype for Business Server, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono che si trova nella rete PSTN (Public Switched Telephone Network) ). Questi test vengono condotti usando i cmdlet di transazione sintetica di Skype for Business Server. Ad esempio, il cmdlet **Test-CsIM** viene usato per simulare una conversazione di messaggistica istantanea tra una coppia di utenti di test. Se la conversazione simulata non riesce, viene generato un avviso.
+- **Active Monitoring Management Pack** (Microsoft.ls.2019.Monitoring.ActiveMonitoring.MP) verifica in modo proattivo i componenti principali di Skype for Business Server, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o la chiamata a un telefono che si trova nella rete PSTN (Public Switched Telephone Network). Questi test vengono condotti usando i cmdlet di transazione sintetica di Skype for Business Server. Ad esempio, il cmdlet **Test-CsIM** viene usato per simulare una conversazione di messaggistica istantanea tra una coppia di utenti di test. Se la conversazione simulata non riesce, viene generato un avviso.
 
 L'importazione dei Management Pack è un passaggio cruciale. Se i Management Pack non vengono importati, non sarà possibile usare Operations Manager per monitorare gli eventi di Skype for Business Server o eseguire transazioni sintetiche di Skype for Business Server.
 
@@ -101,12 +101,12 @@ In generale, è più semplice importare i Management Pack tramite la console di 
 
 2. In Operations Manager Shell digitare il comando seguente al prompt dei comandi, usando il percorso effettivo della copia del file Microsoft.LS.2019.Monitoring.ActiveMonitoring.mp e quindi premere INVIO:
 
-   ```
+   ```PowerShell
    Import-SCOMManagementPack -FullName "D:\MP\Microsoft.LS.2019.Monitoring.ActiveMonitoring.mp"
    ```
 
 3. Dopo aver importato il primo Management Pack, ripetere il processo usando il percorso per la copia del file Microsoft.LS.2019.Monitoring.ComponentAndUser.mp:
 
-   ```
+   ```PowerShell
    Import-SCOMManagementPack -FullName "D:\MP\Microsoft.LS.2019.Monitoring.ComponentAndUser.mp"
    ```

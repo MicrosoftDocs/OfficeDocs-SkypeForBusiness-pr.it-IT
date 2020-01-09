@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c99ee134-8294-4481-bb4e-710fe85a39ca
 description: Questo articolo descrive come gestire i servizi in uso in una topologia di Skype for Business Server.
-ms.openlocfilehash: 9d1a79226422da57eee36e27590769f76b89b560
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 76628840c37bdb0eb85d58887d8bfdcedd20f27c
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188618"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991671"
 ---
 # <a name="manage-services-for-skype-for-business-server"></a>Gestire i servizi per Skype for Business Server
 
@@ -30,7 +30,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per visualizzar
 
 1. Da un account utente assegnato a uno dei ruoli amministrativi predefiniti per Skype for Business Server, accedere a qualsiasi computer della distribuzione interna. Per informazioni dettagliate sui ruoli amministrativi predefiniti disponibili in Skype for Business Server, vedere **pianificazione per il controllo dell'accesso basato sui ruoli**.   
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.   
-3. Nella barra di spostamento sinistra fare clic **** su topologia e quindi su **stato**.   
+3. Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.   
 4. Nella pagina **stato** eseguire una delle operazioni seguenti in base alle esigenze:
    - Ordinare l'elenco facendo clic sul titolo del **computer**, del **pool**o della colonna del **sito** , quindi facendo clic sulla freccia su o freccia giù. 
    - Fare clic su **Aggiorna** per visualizzare l'elenco più aggiornato.  
@@ -45,7 +45,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per visualizzar
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
-3. Nella barra di spostamento sinistra fare clic **** su topologia. 
+3. Nella barra di spostamento sinistra fare clic su **topologia**. 
 4. Nella pagina **stato** ordinare o cercare l'elenco, se necessario, per trovare il computer interessato e quindi fare clic sul nome del computer.
 5. Eseguire una delle operazioni seguenti:
    - Per visualizzare lo stato più recente dei servizi in uso nel computer, fare clic su **Ottieni stato servizio**.
@@ -59,7 +59,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per visualizzar
 
 Per visualizzare lo stato del servizio in un computer, digitare un comando simile al seguente in Skype for Business Server Management Shell e quindi premere INVIO:
   
-```
+```PowerShell
 Get-CsWindowsService -ComputerName atl-cs-001.litwareinc.com | Select-Object RoleName, Status
 ```
 
@@ -86,7 +86,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per visualizzar
 
 1. Da un account utente assegnato a uno dei ruoli amministrativi predefiniti per Skype for Business Server, accedere a qualsiasi computer della distribuzione interna. Per informazioni dettagliate sui ruoli amministrativi predefiniti disponibili in Skype for Business Server, vedere **pianificazione per il controllo dell'accesso basato sui ruoli**.
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
-3. Nella barra di spostamento sinistra fare clic **** su topologia e quindi su **stato**.
+3. Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.
 4. Nella pagina **stato** ordinare o eseguire una ricerca nell'elenco e quindi fare clic sul computer che si vuole visualizzare.
 5. Fare clic su **Proprietà**.
 6. Nella finestra **Visualizza dettaglio computer** ordinare l'elenco dei servizi, se necessario, e fare clic sul servizio che si vuole visualizzare.
@@ -104,12 +104,12 @@ Puoi usare il pannello di controllo di Skype for Business Server per avviare o a
 
 1. Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer presente nella rete in cui è stato distribuito Skype for Business Server. . Per determinare se è stato assegnato il ruolo CsServerAdministrator o CsAdministrator RBAC, è possibile eseguire un comando simile al seguente:
     
-   ```
+   ```PowerShell
    Get-CsAdminRoleAssignment -Identity "kenmyer"
    ```
 
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
-3. Nella barra di spostamento sinistra fare clic **** su topologia e quindi su **stato**.
+3. Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.
 4. Nella pagina **stato** ordinare o cercare l'elenco in base alle esigenze per trovare il computer in cui sono in esecuzione i servizi che si desidera avviare o arrestare e quindi fare clic su di esso.
 5. Fare clic su **azione**.
 6. Fare clic su **Avvia tutti i servizi** o **arrestare tutti i servizi**.
@@ -118,7 +118,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per avviare o a
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
-3. Nella barra di spostamento sinistra fare clic **** su topologia e quindi su **stato**.
+3. Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.
 4. Nella pagina **stato** ordinare o cercare l'elenco in base alle esigenze per trovare il computer in cui è in esecuzione il servizio che si vuole avviare o arrestare e quindi fare clic su di esso.
 5. Fare clic su **Proprietà**.
 6. Ordinare l'elenco dei servizi, se necessario, e fare clic sul servizio che si vuole avviare o arrestare.
@@ -126,7 +126,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per avviare o a
 8. Fare clic su **Avvia servizio** o **Interrompi servizio**.
 9. Fare clic su **Chiudi**.
     
-## <a name="prevent-sessions-for-services"></a>Impedire sessioni per i servizi
+## <a name="prevent-sessions-for-services"></a>Impedire le sessioni per i servizi
 <a name="prevent_session"> </a>
 
 Puoi usare il pannello di controllo di Skype for Business Server per evitare nuove sessioni per tutti i servizi di Skype for Business Server in uso in uno specifico computer o per evitare nuove sessioni per un servizio specifico di Skype for Business Server.
@@ -135,7 +135,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per evitare nuo
 
 1. Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer presente nella rete in cui è stato distribuito Skype for Business Server. .
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
-3. Nella barra di spostamento sinistra fare clic **** su topologia e quindi su **stato**.
+3. Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.
 4. Nella pagina **stato** ordinare o cercare l'elenco in base alle esigenze per trovare il computer in cui sono in esecuzione i servizi per cui si vogliono impedire le nuove sessioni e quindi fare clic su di esso.
 5. Fare clic su **azione**.
 6. Fare clic su **Impedisci nuove sessioni per tutti i servizi**.
@@ -144,7 +144,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per evitare nuo
 
 1. Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer presente nella rete in cui è stato distribuito Skype for Business Server. .
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
-3. Nella barra di spostamento sinistra fare clic **** su topologia e quindi su **stato**.
+3. Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.
 4. Nella pagina **stato** ordinare o cercare l'elenco in base alle esigenze per trovare il computer in cui è in esecuzione il servizio che si vuole avviare o arrestare e quindi fare clic su di esso. 
 5. Fare clic su **Proprietà**.
 6. Ordinare l'elenco dei servizi, se necessario, e fare clic sul servizio per cui si vogliono impedire le nuove sessioni.

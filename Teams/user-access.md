@@ -17,12 +17,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 11ec004e98c54f8b8e81594c54407fd2078c7f80
-ms.sourcegitcommit: 5a7e273a3636322052e4a48a5a75513cbf5abb84
+ms.openlocfilehash: 1d5db525054e1233d4532f6a7819735b1415e7cd
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39209072"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989801"
 ---
 <a name="manage-user-access-to-microsoft-teams"></a>Gestire l'accesso degli utenti a Microsoft Teams
 =====================================
@@ -51,7 +51,7 @@ Una licenza per gli utenti di teams può essere disabilitata in qualsiasi moment
 ## <a name="manage-via-powershell"></a>Gestire tramite PowerShell
 
 > [!IMPORTANT]
-> New-MsolLicenseOptions consentirà di abilitare tutti i servizi precedentemente disabilitati, a meno che explictitly non abbia una identità nello script personalizzato. Ad esempio, se si vuole che Exchange & Sway sia disabilitato durante la disattivazione di Additonally teams, è necessario includerlo nello script o entrambi gli Exchange & Sway verranno abilitati per gli utenti identificati. Per usare una GUI per gestire questa funzionalità, vedere [strumenti di gestione e reporting delle licenze di Office 365-assegnare Rimuovi licenze in blocco](https://gallery.technet.microsoft.com/Office365-License-cfd9489c) per altre informazioni.
+> New-MsolLicenseOptions consentirà di abilitare tutti i servizi precedentemente disabilitati, a meno che non siano stati identificati esplicitamente nello script personalizzato. Ad esempio, se si vuole abbandonare entrambi gli Exchange & Sway disabilitando i team, è necessario includerlo nello script o entrambi gli Exchange & Sway verranno abilitati per gli utenti identificati. Per usare una GUI per gestire questa funzionalità, vedere [strumenti di gestione e reporting delle licenze di Office 365-assegnare Rimuovi licenze in blocco](https://gallery.technet.microsoft.com/Office365-License-cfd9489c) per altre informazioni.
 
 L'abilitazione e la disabilitazione dei team come licenza per il carico di lavoro tramite PowerShell viene eseguita come qualsiasi altro carico di lavoro. Il nome del piano di servizio è TEAMS1 per Microsoft teams. Per GCC il nome del piano di servizio è TEAMS_GOV. Per GCC High il nome del piano di servizio è TEAMS_GCCHIGH. Per DoD il nome del piano di servizio è TEAMS_DOD (vedere [disabilitare l'accesso ai servizi con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell) per altre informazioni).
 

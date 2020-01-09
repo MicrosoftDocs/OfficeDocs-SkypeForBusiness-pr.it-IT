@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 24e36ea3-fb8a-45a4-b6b7-38c2e256b218
 description: 'Riepilogo: informazioni su come configurare il servizio di conformità del server di chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 95418a814ac8f4796fbde561c90c5ac051c54725
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: a02384c68c04798ea453b94bf736a2c6ff276397
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36196013"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991991"
 ---
 # <a name="configure-the-compliance-service-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Configurare il servizio Conformità per il server Chat persistente
 
@@ -45,13 +45,13 @@ Queste informazioni possono essere recuperate dal database SQL di conformità in
 
 Dopo che il servizio conformità è stato abilitato usando il generatore di topologie, è possibile configurare il servizio usando il cmdlet **set-CsPersistenChatComplianceConfiguration** :
 
-```
+```PowerShell
 Set-CsPersistentChatComplianceConfiguration [-Identity <XdsIdentity>] <COMMON PARAMETERS>
 ```
 
 o
 
-```
+```PowerShell
 Set-CsPersistentChatComplianceConfiguration [-Instance <PSObject>] <COMMON PARAMETERS>
 ```
 
@@ -77,13 +77,13 @@ L'interfaccia è definita nell'assembly Compliance. dll nello spazio dei `Micros
 
 Il server di conformità della chat persistente chiamerà il metodo seguente quando l'adapter viene caricato per primo. `AdapterConfig` Contiene la configurazione della conformità della chat persistente pertinente per la scheda conformità:
 
-```
+```cpp
 void SetConfig(AdapterConfig config)
 ```
 
 Il server di conformità della chat persistente chiama il metodo seguente a intervalli periodici, purché siano presenti nuovi dati da tradurre. Questo intervallo di tempo è uguale a `RunInterval` quello impostato nella configurazione della conformità della chat persistente:
 
-```
+```cpp
 void Translate(ConversationCollection conversations)
 ```
 
@@ -97,7 +97,7 @@ I dati di conformità vengono recapitati come XML, che è possibile trasformare 
 
 L'output del servizio di conformità è categorizzato per conversazione (l'elemento di conversazione) e quindi per messaggio (elemento Messages), come illustrato nell'esempio di codice seguente:
 
-```
+```XML
 <?xml version="1.0" encoding="utf-8" ?> 
 <Conversations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Conversation>
@@ -114,7 +114,7 @@ L'output del servizio di conformità è categorizzato per conversazione (l'eleme
 
 Un elemento Conversation contiene quattro elementi (Channel, FirstMessage, StartTimeUTC e EndTimeUTC). L'elemento Channel contiene l'URI (Uniform Resource Identifier) della chat room e l'elemento FirstMessage descrive il primo messaggio nell'elemento Messages. Gli elementi StartTimeUTC e EndTimeUTC consentono gli orari di inizio e di fine della conversazione, come illustrato nell'esempio di codice seguente:
 
-```
+```XML
 <<FirstMessage type="JOIN" content="" id="0">
       <Sender UserName="TestUser kazuto" id="10" email="kazuto@litwareinc.com" internal="true" uri="kazuto@litwareinc.com" /> 
       <DateTimeUTC since1970="1212610540953" string="2008-06-04T20:15:40.9535482Z" long="633482073409535482" /> 
@@ -123,7 +123,7 @@ Un elemento Conversation contiene quattro elementi (Channel, FirstMessage, Start
 
 Un elemento Message contiene due elementi (sender e DateTimeUTC) e tre attributi (Type, Content e ID). L'elemento sender rappresenta l'utente che invia il messaggio e l'elemento DateTimeUTC rappresenta quando si verifica un evento, come illustrato nell'esempio di codice seguente:
 
-```
+```XML
 <Message type="JOIN" content="" id="0">
   <Sender UserName="TestUser kazuto" id="10" email="kazuto@litwareinc.com" internal="true" uri="kazuto@litwareinc.com" /> 
   <DateTimeUTC since1970="1206211842612" string="2008-03-22T18:50:42.6127374Z" long="633418086426127374" /> 
@@ -156,7 +156,7 @@ Gli esempi seguenti mostrano i tipi di messaggio che l'elemento Messages può co
 
 Join-un utente partecipa a una chat room.
 
-```
+```XML
 <Message type="JOIN" content="" id="0">
   <Sender UserName="TestUser kazuto" id="10" email="kazuto@litwareinc.com" internal="true" uri="kazuto@litwareinc.com" /> 
   <DateTimeUTC since1970="1206211842612" string="2008-03-22T18:50:42.6127374Z" long="633418086426127374" /> 
@@ -165,7 +165,7 @@ Join-un utente partecipa a una chat room.
 
 Parte-un utente lascia una chat room.
 
-```
+```XML
 <Message type="PART" content="" id="0">
   < Sender UserName="TestUser kazuto" id="10" email="kazuto@litwareinc.com" internal="true" uri="kazuto@litwareinc.com" /> 
   <DateTimeUTC since1970="1212610602532" string="2008-06-04T20:16:42.5324614Z" long="633482074025324614" /> 
@@ -174,7 +174,7 @@ Parte-un utente lascia una chat room.
 
 Chat: l'indirizzo di posta elettronica del mittente.
 
-```
+```XML
 <Message type="CHAT" content="hello" id="1">
   <Sender UserName="TestUser kazuto" id="10" email="kazuto@litwareinc.com" internal="true" uri="kazuto@litwareinc.com" /> 
   <DateTimeUTC since1970="1205351800522" string="2008-03-12T19:56:40.522264Z" long="633409486005222640" /> 
@@ -183,7 +183,7 @@ Chat: l'indirizzo di posta elettronica del mittente.
 
 Backchat-un utente richiede contenuto dalla cronologia chat.
 
-```
+```XML
 <Message type="BACKCHAT" content="backchatcontent" id="0">
   <Sender UserName="TestUser kazuto" id="10" email="kazuto@litwareinc.com" internal="true" uri="kazuto@litwareinc.com" /> 
   <DateTimeUTC since1970="1206034385284" string="2008-03-20T17:33:05.2841594Z" long="633416311852841594" /> 
@@ -192,7 +192,7 @@ Backchat-un utente richiede contenuto dalla cronologia chat.
 
 Upload di file: un utente carica un file.
 
-```
+```XML
 <Message type="FILEUPLOAD" content="0988239a-bb66-4616-90a4-b07771a2097c.txt" id="0">
   <Sender UserName="TestUser kazuto" id="10" email="kazuto@litwareinc.com" internal="true" uri="kazuto@litwareinc.com" /> 
   <DateTimeUTC since1970="1205351828975" string="2008-03-12T19:57:08.9755711Z" long="633409486289755711" /> 
@@ -201,7 +201,7 @@ Upload di file: un utente carica un file.
 
 Download di file: un utente scarica un file.
 
-```
+```XML
 <Message type="FILEDOWNLOAD" content="006074ca-24f0-4b35-8bd8-98006a2d1aa8.txt" id="0">
   <Sender UserName="kazuto@litwareinc.com" id="10" email="" internal="true" uri="kazuto@litwareinc.com" /> 
   <DateTimeUTC since1970="1212611141851" string="2008-06-04T20:25:41.8518646Z" long="633482079418518646" /> 
@@ -212,7 +212,7 @@ Download di file: un utente scarica un file.
 
 L'esempio di codice seguente contiene l'output predefinito del server di conformità:
 
-```
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="Conversations" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
    <xs:simpleType name="ComplianceMessageType">
@@ -311,7 +311,7 @@ L'esempio di codice seguente contiene l'output predefinito del server di conform
 
 L'esempio di codice seguente contiene una trasformazione XSL di esempio:
 
-```
+```XML
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs">
    <xsl:output method="xml" encoding="UTF-8" indent="yes" />
 

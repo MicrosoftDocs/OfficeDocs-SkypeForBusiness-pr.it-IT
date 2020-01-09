@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 505d9619-adab-4cc4-b054-89286e18a19b
 description: È possibile usare le procedure descritte in questa sezione per modificare le singole proprietà degli account utente.
-ms.openlocfilehash: fda11a1b52519f3653c841837af20392383cadd1
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: eca88717d0b81ddd7c27fc140df9bdbf7590c5c6
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36195912"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991431"
 ---
 # <a name="customize-user-account-properties-for-skype-for-business-server"></a>Personalizzare le proprietà degli account utente per Skype for Business Server
  
@@ -50,7 +50,7 @@ Per informazioni dettagliate sulla configurazione della telefonia per un'organiz
     
 3. Sulla barra di spostamento sinistra fare clic su **utenti**.
     
-4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, il nome, il cognome, il nome dell'account SAM (Security Accounts Manager), l'indirizzo SIP o l'URI (Uniform Resource Identifier) della riga dell'account utente desiderato, quindi fare clic su **trova. **.
+4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente desiderato, quindi fare clic su **trova**.
     
 5. Nella tabella fare clic sull'account utente che si vuole modificare.
     
@@ -82,13 +82,13 @@ Puoi usare il pannello di controllo di Skype for Business Server per assegnare g
     
 3. Sulla barra di spostamento sinistra fare clic su **utenti**.
     
-4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, il nome, il cognome, il nome dell'account SAM (Security Accounts Manager), l'indirizzo SIP o l'URI (Uniform Resource Identifier) della riga dell'account utente desiderato, quindi fare clic su **trova. **. 
+4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente desiderato, quindi fare clic su **trova**. 
     
 5. Nella tabella selezionare un utente o utenti specifici nell'elenco. 
     
 6. Nel menu **azione** fare clic su **Trasferisci utenti selezionati in pool**.
     
-7. In **Move users**selezionare il pool in cui si vuole trasferire gli utenti nel pool di registrar di **destinazione**.
+7. In **Move users**selezionare il pool in cui si vuole trasferire gli utenti nel **pool di registrar di destinazione**.
     
 8. Opzionale Se il server o il pool di destinazione non è disponibile, selezionare la casella di controllo **forza** .
     
@@ -107,7 +107,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per assegnare g
     
 5. In **Move users**selezionare il pool che contiene gli account utente che si desidera trasferire nel **pool di registrazione di origine**.
     
-6. Nel **pool**di registrar di destinazione selezionare il pool a cui si vuole trasferire gli utenti.
+6. Nel **pool di registrar di destinazione**selezionare il pool a cui si vuole trasferire gli utenti.
     
 7. Opzionale Se il server o il pool di destinazione non è disponibile, selezionare la casella di controllo **forza** .
     
@@ -133,7 +133,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per assegnare g
   
 7. In **Move users**selezionare il pool che contiene gli account utente che si desidera trasferire nel **pool di registrazione di origine**.
     
-8. Nel **pool**di registrar di destinazione selezionare il pool in cui si desidera trasferire gli utenti.
+8. Nel **pool di registrar di destinazione**selezionare il pool in cui si desidera trasferire gli utenti.
     
 9. Opzionale Se il server o il pool di destinazione non è disponibile, selezionare la casella di controllo **forza** .
     
@@ -144,7 +144,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per assegnare g
 
 1. A seconda di come vengono eseguiti i comandi di Windows PowerShell, ovvero localmente o in remoto, è necessario accedere come membri dei ruoli amministrativi corretti di Skype for Business Server come segue:
     
-   un. Se si esegue il comando nel computer locale (ad esempio, si accede direttamente a un front end Server): accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con il necessario diritti utente come descritto in **autorizzazioni di configurazione**Delegate.
+   un. Se si esegue il comando nel computer locale (ad esempio, si accede direttamente a un front end Server): accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di configurazione per i **delegati**.
     
    b. Se si eseguono i comandi in remoto in un altro computer, ad esempio si accede al computer e si eseguono i comandi in remoto in un server front-end Standard Edition: da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator ruolo, accedere a qualsiasi computer della distribuzione interna.
     
@@ -152,7 +152,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per assegnare g
     
 3. Per trasferire singoli utenti, usare il cmdlet Move-CsUser come indicato di seguito:
     
-    ```
+    ```PowerShell
     Move-CsUser -Identity "Pilar Ackerman" -Target "pool01.contoso.net"
     ```
 
@@ -160,13 +160,13 @@ Puoi usare il pannello di controllo di Skype for Business Server per assegnare g
     
 4. Per trasferire un numero elevato di utenti, usare i filtri con il cmdlet **Get-CsUser** e passare il set di utenti risultante a **Move-CsUser**:
     
-    ```
+    ```PowerShell
     Get-CsUser -Filter {RegistrarPool -eq "CurrentPoolFqdn"} | Move-CsUser -Target "TargetPoolFQDN"
     ```
 
     I comandi combinati di **Get-CsUser** e **Move-CsUser** possono risultare in questo:
     
-    ```
+    ```PowerShell
     Get-CsUser -Filter {RegistrarPool -eq "pool02.contoso.net"} | Move-CsUser -Target "pool01.contoso.net"
     ```
 

@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 50755399-2228-4324-81db-c2bfc824c299
 description: Informazioni sulla pianificazione e la configurazione di Skype for Business Server per la condivisione dello schermo basata su video (VbSS)
-ms.openlocfilehash: ae2cc683148fdb2a2cb80e3fe3cf25a698a56c00
-ms.sourcegitcommit: b5949233f8080a6cf0edb4b5e27272214feb1c22
+ms.openlocfilehash: 00c699f9a26d82506bd13fefe0e6f3e53f7b86bf
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "36195870"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992393"
 ---
 # <a name="video-based-screen-sharing-for-skype-for-business-server"></a>Condivisione dello schermo basata su video per Skype for Business Server 
  
@@ -141,13 +141,13 @@ La cosa più importante è che, dopo aver installato l'aggiornamento cumulativo 
 
 - Puoi assegnare un criterio utente che non consenta a VbSS di usare VbSS eseguendo questo cmdlet in Skype for Business Management Console (Sostituisci [PolicyName] con i criteri per cui stai eseguendo questa operazione):
     
-  ```
+  ```PowerShell
   Set-CsConferencingPolicy -Identity [PolicyName] -ApplicationSharingMode RDP
   ```
 
 - È anche possibile aggiornare i criteri di conferenza globale, che influiranno su tutti gli utenti senza un criterio assegnato:
     
-  ```
+  ```PowerShell
   Set-CsConferencingPolicy -ApplicationSharingMode RDP
   ```
 
@@ -155,7 +155,7 @@ La cosa più importante è che, dopo aver installato l'aggiornamento cumulativo 
     
 - Se è necessario disattivare completamente VbSS, è possibile eseguire questo comando:
     
-  ```
+  ```PowerShell
   Set-CsMediaConfiguration -EnableVideoBasedSharing $false
   ```
 
@@ -168,13 +168,13 @@ La cosa più importante è che, dopo aver installato l'aggiornamento cumulativo 
 
 - Puoi assegnare un criterio utente specifico che consente a VbSS di usare VbSS eseguendo questo cmdlet in Skype for Business Management Console (Sostituisci [PolicyName] con i criteri per cui stai eseguendo questa operazione):
     
-  ```
+  ```PowerShell
   Set-CsConferencingPolicy -Identity [PolicyName] -ApplicationSharingMode VideoWithFallback
   ```
 
 - È anche possibile aggiornare i criteri di conferenza globale, che influiranno su tutti gli utenti senza un criterio assegnato:
     
-  ```
+  ```PowerShell
   Set-CsConferencingPolicy -ApplicationSharingMode VideoWithFallback
   ```
 
@@ -182,7 +182,7 @@ La cosa più importante è che, dopo aver installato l'aggiornamento cumulativo 
     
 - Se devi riattivare VbSS dopo averlo disattivato (è attivato per impostazione predefinita), puoi eseguire questo comando:
     
-  ```
+  ```PowerShell
   Set-CsMediaConfiguration -EnableVideoBasedSharing $true
   ```
 

@@ -13,12 +13,12 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: 'Quando si configurano i criteri per supportare le comunicazioni con partner federati, i criteri si applicano agli utenti di domini federati. '
-ms.openlocfilehash: 00552dfd6e2cb92d1bd50cb851bfb8324122c5ff
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d9192589191590cd96f72323681ef4df6513e36d
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188852"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991761"
 ---
 # <a name="configure-policies-to-control-federated-user-access-in-skype-for-business-server"></a>Configurare i criteri per controllare l'accesso degli utenti federati in Skype for Business Server
 
@@ -69,7 +69,7 @@ Se si tratta di un criterio utente, devi anche applicare il criterio agli utenti
 
 3.  Digitare quanto segue in Skype for Business Server Management Shell:
     
-    ```
+    ```PowerShell
     Set-CsExternalAccessPolicy -Identity <name of global, site or user policy - policy must exist when using Set-CsExternalAccessPolicy > -Description <descriptive name for policy> -EnableFederationAccess <$true, $false> -EnableXmppAccess <$true, $false> -EnablePublicCloudAcess <$true, $false> -EnablePublicCloudAudioVideoAcess <$true, $false> -EnableOutsideAcess <$true, $false>
     ```
        
@@ -86,13 +86,13 @@ Se si tratta di un criterio utente, devi anche applicare il criterio agli utenti
 
 3.  Digitare quanto segue in Skype for Business Server Management Shell:
     
-    ```
+    ```PowerShell
     New-CsExtenalAccessPolicy -Identity <name of site or user policy - you cannot create a new global policy using New-CsExternalAccessPolicy > -Description <descriptive name for policy> -EnableFederationAccess <$true, $false> -EnableXmppAccess <$true, $false> -EnablePublicCloudAccess <$true, $false> -EnablePublicCloudAudioVideoAccess <$true, $false> -EnableOutsideAccess <$true, $false>
     ```
     
     Esempio di creazione di un nuovo criterio di sito:
     
-    ```
+    ```PowerShell
     New-CsExternalAccessPolicy -Identity site:Redmond -EnableFederationAccess $true -EnableXmppAccess $true -EnableOutsideAccess $true -EnablePublicCloudAccess $true -EnablePublicCloudAudioVideoAccess $true
     ```
 
@@ -123,7 +123,7 @@ Se si tratta di un criterio utente, devi anche applicare il criterio agli utenti
 
 [Abilitare o disabilitare la federazione e la connettività per la messaggistica istantanea pubblica](../access-edge/enable-or-disable-federation-and-public-im-connectivity.md) 
 
-[Assegnare un criterio di accesso utente esterno](assign-an-external-user-access-policy.md)
+[Assegnare criteri di accesso per gli utenti esterni](assign-an-external-user-access-policy.md)
 
 [Gestire i domini federati SIP per l'organizzazione](../sip-domains/manage-sip-federated-domains-for-your-organization.md)
  

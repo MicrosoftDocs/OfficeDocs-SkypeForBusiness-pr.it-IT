@@ -1,5 +1,5 @@
 ---
-title: Rimuovere il database di SQL Server per un pool Front-End
+title: Rimuovere il database di SQL Server per un pool Front End
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -9,14 +9,14 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Dopo aver rimosso un pool Front-end o aver riconfigurato il pool per l'uso di un database diverso, è possibile rimuovere i database di SQL Server che ospitavano i dati del pool. Usare le procedure seguenti per rimuovere le definizioni da generatore di topologie e quindi rimuovere il database e i file di log dal server di database.
-ms.openlocfilehash: d22a90401bdfa4a2897a18805e8b9c588892c5fb
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: f26cf1f93abb8538c068a4ab2d6f81c9c36d759d
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36241840"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989091"
 ---
-# <a name="remove-the-sql-server-database-for-a-front-end-pool"></a>Rimuovere il database di SQL Server per un pool Front-End
+# <a name="remove-the-sql-server-database-for-a-front-end-pool"></a>Rimuovere il database di SQL Server per un pool Front End
 
 Dopo aver rimosso un pool Front-end o aver riconfigurato il pool per l'uso di un database diverso, è possibile rimuovere i database di SQL Server che ospitavano i dati del pool. Usare le procedure seguenti per rimuovere le definizioni da generatore di topologie e quindi rimuovere il database e i file di log dal server di database.
   
@@ -36,7 +36,7 @@ Dopo aver rimosso un pool Front-end o aver riconfigurato il pool per l'uso di un
     
 3. Per rimuovere il database per l'archivio utenti del pool, digitare:
     
-   ```
+   ```PowerShell
    Uninstall-CsDataBase -DatabaseType User -SqlServerFqdn <FQDN> [-SqlInstanceName <instance>]
    ```
 
@@ -44,7 +44,7 @@ Dopo aver rimosso un pool Front-end o aver riconfigurato il pool per l'uso di un
     
 4. Per rimuovere il database per l'archivio delle applicazioni del pool, digitare:
     
-   ```
+   ```PowerShell
    Uninstall-CsDataBase -DatabaseType Application -SqlServerFqdn <FQDN> [-SqlInstanceName <instance>]
    ```
 

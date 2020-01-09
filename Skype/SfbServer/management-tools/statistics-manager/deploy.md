@@ -1,5 +1,5 @@
 ---
-title: Distribuire Gestione statistiche per Skype for Business Server
+title: Distribuire il gestore delle statistiche per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 37b2bb9c-c5d4-4fb0-a976-670b7594b82f
 description: 'Riepilogo: leggere questo argomento per informazioni su come distribuire Statistics Manager per Skype for Business Server.'
-ms.openlocfilehash: b16334558fb64223e305effe533addca91683a81
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 57b799079da400389b9e3049406a52bbba4dc1e6
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191207"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40990611"
 ---
-# <a name="deploy-statistics-manager-for-skype-for-business-server"></a>Distribuire Gestione statistiche per Skype for Business Server
+# <a name="deploy-statistics-manager-for-skype-for-business-server"></a>Distribuire il gestore delle statistiche per Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come distribuire Statistics Manager per Skype for Business Server.
   
@@ -76,7 +76,7 @@ Per preparare il computer host, è necessario installare il sistema di Caching i
     
 2. Il servizio listener richiede un certificato. Microsoft consiglia vivamente di avere un certificato firmato da un'autorità di certificazione attendibile. 
     
-    Se si vuole usare un certificato autofirmato, ad esempio per scopi di test in un laboratorio, vedere [creare un certificato](deploy.md#BKMK_SelfCert)autofirmato.
+    Se si vuole usare un certificato autofirmato, ad esempio per scopi di test in un laboratorio, vedere [creare un certificato autofirmato](deploy.md#BKMK_SelfCert).
     
     Tieni presente che l'agente usa la verifica dell'identificazione personale del certificato anziché la verifica della catena. La convalida del certificato non sarà completa perché è possibile usare certificati autofirmati.
     
@@ -98,7 +98,7 @@ Installare il servizio listener nel computer host eseguendo StatsManPerfAgentLis
     
      È possibile trovare l'identificazione personale del certificato usando Gestione certificati o usando il comando di PowerShell seguente:
     
-   ```
+   ```PowerShell
    Get-ChildItem -path cert:\LocalMachine\My
    ```
 
@@ -185,7 +185,7 @@ Per importare la topologia di Skype for Business Server, eseguire le operazioni 
     
     un. Eseguire il comando seguente: 
     
-   ```
+   ```PowerShell
    Get-CsPool | Export-Clixml -Path mypoolinfo.xml
    ```
     b. Copiare il file "mypoolinfo. xml" nel server in cui viene eseguito il listener.
@@ -196,25 +196,25 @@ Per importare la topologia di Skype for Business Server, eseguire le operazioni 
     
    b. Passare alla directory in cui è installato il listener. Il valore predefinito è: 
     
-   ```
+   ```PowerShell
    cd C:\Program Files\Skype for Business Server StatsMan Listener
    ```
 
 3. Per verificare quali server vengono aggiunti e aggiornati, eseguire il comando seguente:
     
-   ```
+   ```PowerShell
     .\Update-StatsManServerInfo.ps1 -CsPoolFile  <path to mypoolinfo.xml>
    ```
 
 Il comando seguente consente di visualizzare tutte le opzioni:
   
-```
+```PowerShell
 Get-Help .\Update-StatsManServerInfo.ps1 -Detailed 
 ```
 
 Per visualizzare le informazioni sul server attualmente importato, eseguire lo script seguente: 
   
-```
+```PowerShell
 .\Get-StatsManServerInfo.ps1
 ```
 
@@ -274,7 +274,7 @@ Microsoft consiglia vivamente di usare un certificato firmato da un'autorità di
   
 1. Da una console di PowerShell durante l'accesso come amministratore, digitare quanto segue:
     
-   ```
+   ```PowerShell
    New-SelfSignedCertificate -DnsName StatsManListener -CertStoreLocation Cert:\LocalMachine\My
    ```
 
@@ -299,8 +299,8 @@ Microsoft consiglia vivamente di usare un certificato firmato da un'autorità di
 
 Per altre informazioni, vedere quanto segue:
   
-- [Pianificare la gestione delle statistiche per Skype for Business Server](plan.md)
+- [Pianificare il gestore delle statistiche per Skype for Business Server](plan.md)
     
-- [Aggiornare le statistiche di gestione per Skype for Business Server](upgrade.md)
+- [Aggiornare il gestore delle statistiche per Skype for Business Server](upgrade.md)
     
 - [Risoluzione dei problemi relativi a gestione statistiche per Skype for Business Server](troubleshoot.md) ß

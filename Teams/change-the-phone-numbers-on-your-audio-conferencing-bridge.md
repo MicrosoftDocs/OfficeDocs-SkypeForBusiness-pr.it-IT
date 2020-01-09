@@ -21,18 +21,18 @@ f1keywords: None
 ms.custom:
 - Audio Conferencing
 description: When you buy Audio Conferencing licenses, Microsoft is hosting your audio conferencing bridge for your organization. The audio conferencing bridge gives out dial-in phone numbers from different locations so meeting organizers and participants can use them to join Skype for Business or Microsoft Teams meetings using a phone.
-ms.openlocfilehash: 9c4d16f3f68e190549b1e8a1d7b6f3f03e8a44c6
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: a37f1d90fc0c960d1e3c1f7ddf4424b3aaec6f98
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516964"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992873"
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Cambiare i numeri di telefono del bridge per i servizi di audioconferenza
 
 Quando si acquistano le licenze per i servizi **di audioconferenza,** Microsoft ospita il Bridge per audioconferenza per l'organizzazione. Il Bridge per i servizi di audioconferenza offre numeri di telefono con accesso esterno provenienti da posizioni diverse in modo che gli organizzatori e i partecipanti possano usarli per partecipare alle riunioni di Skype for business o Microsoft teams con un telefono.
   
-Oltre ai numeri di telefono già assegnati al Bridge per i servizi di conferenza, è possibile [ottenere i numeri di servizio aggiuntivi](/microsoftteams/getting-service-phone-numbers) (numero verde e numeri verdi usati per le conferenze audio) da altre posizioni e quindi assegnarli al Bridge di conferenza in modo da poter espandere la copertura per gli utenti.
+Oltre ai numeri di telefono già assegnati al Bridge per i servizi di conferenza, è possibile [ottenere numeri di servizio aggiuntivi](/microsoftteams/getting-service-phone-numbers) (numeri verdi e numerati usati per le conferenze audio) da altre posizioni e quindi assegnarli al Bridge di conferenza in modo da poter espandere la copertura per gli utenti.
   
 > [!NOTE]
 > Per poter assegnare o annullare l'assegnazione di un numero di telefono per un Bridge per i servizi di conferenza, il numero di telefono deve essere un numero di*servizio*. Per visualizzare il tipo di numero, è possibile spostarsi in numeri di **** > **telefono** vocale nel portale legacy e cercare nella colonna tipo di **numero** . I crediti per le comunicazioni di Office 365 devono essere configurati prima di tutto per consentire agli utenti di effettuare una chiamata in plancia su un numero verde.
@@ -85,13 +85,13 @@ Se sono stati aggiornati i numeri di telefono predefiniti inlcuded nella riunion
   
 - Eseguire il servizio di migrazione delle riunioni (MMS) per gli utenti che avevano i numeri di telefono predefiniti modificati nel passaggio 2. Per farlo, eseguire il comando seguente:
 
-```
+```PowerShell
     Start-CsExMeetingMigration user@contoso.com
 ```
 
 - È inoltre possibile visualizzare lo stato della migrazione della riunione. Tutte le riunioni sono ripianificate una volta che non ci sono più operazioni con lo stato  *In attesa*  o *In corso*  .
 
-```
+```PowerShell
     Get-CsMeetingMigrationStatus -SummaryOnly
 ```
 
@@ -108,7 +108,7 @@ Per i tre passi successivi, è necessario avviare Windows PowerShell. Per inform
 
 Sostituire il numero verde o a pagamento predefinito per tutti gli utenti che hanno il numero da non assegnare come numero predefinito e avviare il processo di ripianificazione delle riunioni. Per farlo, eseguire il comando seguente:
 
-```
+```PowerShell
 Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber <Number to be removed> -ToNumber <Number to be set as new default> -NumberType <"Toll" or "Toll-Free"> -RescheduleMeetings
 ```
  > [!IMPORTANT] 
@@ -123,7 +123,7 @@ Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber <Number to be remove
 
 Tutte le riunioni verranno ripianificate quando non ci sono operazioni in stato in *sospeso* o *in corso* .
 
-```
+```PowerShell
 Get-CsMeetingMigrationStatus -SummaryOnly
 ```
 
@@ -170,7 +170,7 @@ Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in u
 2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
 
 >
-  ```
+  ```PowerShell
     Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
     $credential = Get-Credential
     $session = New-CsOnlineSession -Credential $credential
@@ -189,7 +189,7 @@ Per risparmiare tempo automatizzando questo processo, è possibile usare i cmdle
 
   - Per modificare il numero verde predefinito di un utente, esegui:
 
-  ```
+  ```PowerShell
   Set-CsOnlineDialinConferencingUser -Identity amos.marble@Contoso.com -TollFreeServiceNumber   80045551234
   ```
 
@@ -200,19 +200,19 @@ Per risparmiare tempo automatizzando questo processo, è possibile usare i cmdle
 
   - Per modificare il numero verde predefinito di tutti gli utenti a cui ne manca uno in 8005551234, esegui:
 
-  ```
+  ```PowerShell
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber $null -ToNumber 8005551234 -NumberType TollFree -BridgeId <Bridge Id>
   ```
 
   - Per modificare il numero verde predefinito di tutti gli utenti che hanno 8005551234 come numero verde predefinito in 8005551239 e ripianificare automaticamente le loro riunioni, esegui:
 
-  ```
+  ```PowerShell
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber 8005551234 -ToNumber 8005551239 NumberType TollFree -BridgeId <Bridge Id> -RescheduleMeetings
   ```
 
   - Per modificare il numero verde predefinito di tutti gli utenti con sede negli USA in 8005551234 e ripianificare automaticamente le loro riunioni, esegui:
 
-  ```
+  ```PowerShell
   Set-CsOnlineDialInConferencingUserDefaultNumber -Country US -ToNumber 8005551234 -NumberType TollFree -BridgeId <Bridge Id> -RescheduleMeetings
   ```
 
@@ -226,14 +226,14 @@ Per risparmiare tempo automatizzando questo processo, è possibile usare i cmdle
 Si vuole annullare l'assegnazione di un numero ma il pulsante è in grigio e se durante l'aspirapolvere viene reindirizzato al supporto per il contatto con il messaggio seguente _"i numeri predefiniti o condivisi possono ´ non essere assegnati dal Bridge. Per annullare l'assegnazione di numeri a pedaggio dedicati, contattare il supporto tecnico._".
 
 Per ottenere altre informazioni sui Bridge, eseguire la seguente PowerShell:
-```
+```PowerShell
 Get-CsOnlineDialInConferencingBridge -Name "Conference Bridge"
 ```
 
 Il risultato, oltre ad altre informazioni come l'identità, il nome e l'area geografica, dovrebbe contenere anche il DefaultServiceNumber.
 
 Ad **esempio**, per annullare l'assegnazione, DefaultServiceNumber "8005551234"
-```
+```PowerShell
 Unregister-CsOnlineDialInConferencingServiceNumber -BridgeName “Conference Bridge” -RemoveDefaultServiceNumber 8005551234 
 ```
 

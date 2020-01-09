@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 1b75b218-d84f-47a7-8a0a-b7e016b1cc79
 description: 'Riepilogo: informazioni su come cercare e leggere i registri di acquisizione dei servizi di registrazione centralizzati in Skype for Business Server 2015.'
-ms.openlocfilehash: 81bf539c6a06c52354db23bbeea97fb9525cbbd5
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 563f2c5e08da0830c3bd03e562d0d94052fa359b
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186803"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991451"
 ---
 # <a name="search-capture-logs-created-by-the-centralized-logging-service-in-skype-for-business-server-2015"></a>Cercare i log di acquisizione creati dal servizio di registrazione centralizzato in Skype for Business 2015
  
@@ -39,13 +39,13 @@ Per trarre il massimo vantaggio dal servizio di registrazione centralizzato, è 
   
 Per eseguire le funzioni di ricerca del servizio di registrazione centralizzata usando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator (RBAC) o di un ruolo RBAC personalizzato che contiene uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati manualmente), eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
   
-```
+```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
 ```
 
 Ad esempio:
   
-```
+```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 ```
 
@@ -57,7 +57,7 @@ Il resto di questo argomento illustra come definire una ricerca per ottimizzare 
     
 2. Verificare di avere lo scenario AlwaysOn in uso nella distribuzione in ambito globale e quindi digitare quanto segue al prompt dei comandi:
     
-   ```
+   ```PowerShell
    Search-CsClsLogging -OutputFilePath <string value of path and file to write the output file>
    ```
 
@@ -66,7 +66,7 @@ Il resto di questo argomento illustra come definire una ricerca per ottimizzare 
   
 Ad esempio:
     
-  ```
+  ```PowerShell
   Search-CsClsLogging -OutputFilePath "C:\LogFiles\logfile.txt"
   ```
 
@@ -74,19 +74,19 @@ Ad esempio:
 
 1. Per limitare la ricerca a un pool o un computer specifico, usare il parametro-computers con il computer definito da un nome completo del computer, racchiuso tra virgolette e separato da una virgola come indicato di seguito:
     
-   ```
+   ```PowerShell
    Search-CsClsLogging -Computers <string value of computer names> -OutputFilePath <string value of path and file to write the output file>
    ```
 
 Ad esempio:
     
-  ```
+  ```PowerShell
   Search-CsClsLogging -Computers "fe01.contoso.net" -OutputFilePath "C:\LogFiles\logfile.txt"
   ```
 
 2. Per eseguire ricerche in più computer, digitare più nomi di computer racchiusi tra virgolette e separati da virgole, ad esempio i seguenti:
     
-   ```
+   ```PowerShell
    Search-CsClsLogging -Computers "fe01.contoso.net", "fe02.contoso.net", "fe03.contoso.net" -OutputFilePath "C:\LogFiles\logfile.txt"
    ```
 
@@ -94,7 +94,7 @@ Ad esempio:
     
     Ad esempio:
     
-   ```
+   ```PowerShell
    Search-CsClsLogging -Pools "pool01.contoso.net" -OutputFilePath "C:\Logfiles\logfile.txt"
    ```
 
@@ -102,7 +102,7 @@ Ad esempio:
     
     Ad esempio:
     
-   ```
+   ```PowerShell
    Search-CsClsLogging -Pools "pool01.contoso.net", "pchatpool01.contoso.net", "intedgepool01.contoso.net" -OutputFilePath "C:\Logfiles\logfile.txt"
    ```
 
@@ -114,7 +114,7 @@ Ad esempio:
     
     Ad esempio, usando-StartTime e-EndTime per definire un intervallo di data e ora, è possibile definire una ricerca tra le 8.00 e le 09:00 in 11/20/2012 nel pool. È possibile impostare il percorso di output per scrivere i risultati in un file denominato c:\logfile.txt come indicato di seguito:
     
-   ```
+   ```PowerShell
    Search-CsClsLogging -Pools "pool01.contoso.net" -StartTime "11/20/2012 08:00:00 AM" -EndTime "11/20/2012 09:00:00 AM" -OutputFilePath "C:\Logfiles\logfile.txt"
    ```
 
@@ -125,7 +125,7 @@ Ad esempio:
     
 Ad esempio:
     
-  ```
+  ```PowerShell
   Search-CsClsLogging -Pools "pool01.contoso.net" -StartTime "11/20/2012 11:00:00 AM" -OutputFilePath "C:\Logfiles\logfile.txt"
   ```
 
@@ -143,13 +143,13 @@ Ad esempio:
     
 2. Per eseguire un comando per raccogliere tracce per componenti specifici, digitare quanto segue:
     
-   ```
+   ```PowerShell
    Search-CsClsLogging -Components <components to search on> -OutputFilePath <fully qualified path to output logs>
    ```
 
 Ad esempio:
     
-  ```
+  ```PowerShell
   Search-CsClsLogging -Components "SIPStack","S4","UserServices" -OutputFilePath "C:\Logfiles\logfile.txt"
   ```
 
@@ -157,19 +157,19 @@ La ricerca risultante restituisce tutte le voci di log con componenti di traccia
     
 3. Per limitare la ricerca con gli stessi componenti solo al pool Front-End denominato pool01.contoso.net, digitare:
     
-   ```
+   ```PowerShell
    Search-CsClsLogging -Components "SIPStack","S4","UserServices" -OutputFilePath "C:\Logfiles\logfile.txt"
    ```
 
 4. La logica di ricerca predefinita per i comandi con più parametri consiste nell'usare il valore logico o con ognuno dei parametri definiti. Puoi modificare questo comportamento specificando il parametro **-MatchAll** . A tale scopo, digitare quanto segue:
     
-   ```
+   ```PowerShell
    Search-CsClsLogging -CallId "d0af828e49fa4dcb99f5f80223a634bc" -Components "SIPStack","S4","UserServices" -MatchAll -OutputFilePath "C:\Logfiles\logfile.txt"
    ```
 
 5. Se gli scenari sono impostati per l'esecuzione costante, ad esempio AlwaysOn, oppure è stato definito un log dello scenario a esecuzione prolungata, è possibile che il computer locale venga disattivato nella condivisione file. Puoi definire la condivisione di file usando il parametro CacheFileNetworkFolder usando New-CsClsConfiguration per creare una nuova configurazione o modificare una configurazione esistente con Set-CsClsConfiguration. Se non si vuole che la ricerca includa la condivisione file nella raccolta di log in cui eseguire la ricerca, usare il parametro SkipNetworkLogs nel modo seguente:
     
-   ```
+   ```PowerShell
    Search-CsClsLogging -Components "SIPStack","S4","UserServices" -StartTime "11/1/2012 00:00:01 AM" -EndTime "11/20/2012 2:45:00 PM" -SkipNetworkLogs -OutputFilePath "C:\Logfiles\logfile.txt"
    ```
 

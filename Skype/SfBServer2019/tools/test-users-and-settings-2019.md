@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: 'Riepilogo: configurare gli account utente di test e le impostazioni dei nodi Watcher per le transazioni sintetiche di Skype for Business Server.'
-ms.openlocfilehash: 0da038f90538cce62f2e811471a2ebc8ba685fb2
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 991b78a4581d616e79aaa4f096a76aad8636b632
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189761"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989031"
 ---
 # <a name="configure-watcher-node-test-users-and-settings"></a>Configurare gli utenti e le impostazioni di test del nodo Watcher
  
@@ -35,7 +35,7 @@ Gli account di test non devono rappresentare persone effettive, ma devono essere
   
 Se usi il metodo di autenticazione TrustedServer, devi solo assicurarti che questi account esistano e configurarli come indicato. È consigliabile assegnare almeno tre utenti di test per ogni pool che si vuole testare. Se si usa il metodo di autenticazione Negotiate, è necessario usare anche il cmdlet Set-CsTestUserCredential e Skype for Business Server Management Shell per consentire agli account di test di lavorare con le transazioni sintetiche. Eseguire questa operazione eseguendo un comando simile al seguente (questi comandi presuppongono che siano stati creati i tre account utente di Active Directory e che questi account siano abilitati per Skype for Business Server):
   
-```
+```PowerShell
 Set-CsTestUserCredential -SipAddress "sip:watcher1@litwareinc.com" -UserName "litwareinc\watcher1" -Password "P@ssw0rd"
 Set-CsTestUserCredential -SipAddress "sip:watcher2@litwareinc.com" -UserName "litwareinc\watcher2" -Password "P@ssw0rd"
 Set-CsTestUserCredential -SipAddress "sip:watcher3@litwareinc.com" -UserName "litwareinc\watcher3" -Password "P@ssw0rd"
@@ -45,7 +45,7 @@ Set-CsTestUserCredential -SipAddress "sip:watcher3@litwareinc.com" -UserName "li
   
 Per verificare che le credenziali dell'utente di test siano state create, eseguire questi comandi da Skype for Business Server Management Shell:
   
-```
+```PowerShell
 Get-CsTestUserCredential -SipAddress "sip:watcher1@litwareinc.com"
 Get-CsTestUserCredential -SipAddress "sip:watcher2@litwareinc.com"
 Get-CsTestUserCredential -SipAddress "sip:watcher3@litwareinc.com"
@@ -61,7 +61,7 @@ Le informazioni simili a queste verranno restituite per ogni utente:
 
 Dopo aver creato gli utenti di test, è possibile creare un nodo Watcher usando un comando simile al seguente:
   
-```
+```PowerShell
 New-CsWatcherNodeConfiguration -TargetFqdn "atl-cs-001.litwareinc.com" -PortNumber 5061 -TestUsers @{Add= "sip:watcher1@litwareinc.com","sip:watcher2@litwareinc.com", "sip:watcher3@litwareinc.com"}
 ```
 
@@ -69,7 +69,7 @@ Questo comando crea un nuovo nodo Watcher che usa le impostazioni predefinite ed
   
 Per verificare che l'individuazione automatica del pool di destinazione per l'accesso sia configurata correttamente invece che come destinazione di un pool, usare direttamente questi passaggi:
   
-```
+```PowerShell
 New-CsWatcherNodeConfiguration -UseAutoDiscovery $true -TargetFqdn "atl-cs-001.litwareinc.com" -PortNumber 5061 -TestUsers @{Add= "sip:watcher1@litwareinc.com","sip:watcher2@litwareinc.com", "sip:watcher3@litwareinc.com"}
 ```
 
@@ -77,7 +77,7 @@ New-CsWatcherNodeConfiguration -UseAutoDiscovery $true -TargetFqdn "atl-cs-001.l
 
 Se si vuole abilitare il test PSTN, che verifica la connettività con la rete telefonica pubblica commutata, è necessario eseguire altre configurazioni quando si configura il nodo Watcher. Prima di tutto, devi associare gli utenti di test al tipo di test PSTN eseguendo un comando simile a quello di Skype for Business Server Management Shell:
   
-```
+```PowerShell
 $pstnTest = New-CsExtendedTest -TestUsers "sip:watcher1@litwareinc.com", "sip:watcher2@litwareinc.com", "sip:watcher3@litwareinc.com"  -Name "Contoso Provider Test" -TestType PSTN
 ```
 
@@ -86,7 +86,7 @@ $pstnTest = New-CsExtendedTest -TestUsers "sip:watcher1@litwareinc.com", "sip:wa
   
 Puoi quindi usare il cmdlet **New-CsWatcherNodeConfiguration** per associare il tipo di test (archiviato nella variabile $pstnTest) a un pool di Skype for Business Server. Ad esempio, il comando seguente crea una nuova configurazione di nodi Watcher per il pool atl-cs-001.litwareinc.com, aggiungendo i tre utenti di test creati in precedenza e aggiungendo il tipo di test PSTN:
   
-```
+```PowerShell
 New-CsWatcherNodeConfiguration -TargetFqdn "atl-cs-001.litwareinc.com" -PortNumber 5061 -TestUsers @{Add= "sip:watcher1@litwareinc.com","sip:watcher2@litwareinc.com", "sip:watcher3@litwareinc.com"} -ExtendedTests @{Add=$pstnTest}
 ```
 
@@ -108,7 +108,7 @@ Poiché il cmdlet **New-CsWatcherNodeConfiguration** è stato chiamato senza usa
     
 - AvConference (audio/servizi di conferenza)
     
-- Presenza
+- Icone di presenza
     
 - ABS (servizio Rubrica)
     
@@ -146,13 +146,13 @@ I componenti seguenti non verranno testati per impostazione predefinita:
 
 Dopo aver configurato un nodo Watcher, è possibile usare il cmdlet Set-CsWatcherNodeConfiguration per aggiungere o rimuovere transazioni sintetiche dal nodo. Ad esempio, per aggiungere il test PersistentChatMessage al nodo Watcher, usa il metodo Add e un comando simile al seguente:
   
-```
+```PowerShell
 Set-CsWatcherNodeConfiguration -Identity "atl-cs-001.litwareinc.com" -Tests @{Add="PersistentChatMessage"}
 ```
 
 È possibile aggiungere più test separando i nomi dei test usando le virgole. Ad esempio:
   
-```
+```PowerShell
 Set-CsWatcherNodeConfiguration -Identity "atl-cs-001.litwareinc.com" -Tests @{Add="PersistentChatMessage","DataConference","UnifiedContactStore"}
 ```
 
@@ -164,13 +164,13 @@ Quando si verifica questo errore, non verrà applicata alcuna modifica. Il coman
   
 Per rimuovere una transazione sintetica da un nodo Watcher, usa il metodo Remove. Ad esempio, questo comando rimuove il test ABWQ da un nodo Watcher:
   
-```
+```PowerShell
 Set-CsWatcherNodeConfiguration -Identity "atl-cs-001.litwareinc.com" -Tests @{Remove="ABWQ"}
 ```
 
 Puoi usare il metodo Replace per sostituire tutti i test attualmente abilitati con uno o più nuovi test. Ad esempio, se si vuole che un nodo Watcher esegua solo il test di messaggistica istantanea, è possibile configurarlo usando questo comando:
   
-```
+```PowerShell
 Set-CsWatcherNodeConfiguration -Identity "atl-cs-001.litwareinc.com" -Tests @{Replace="IM"}
 ```
 
@@ -180,7 +180,7 @@ Quando si esegue questo comando, tutte le transazioni sintetiche nel nodo Watche
 
 Se si vogliono visualizzare i test assegnati a un nodo Watcher, usare un comando simile al seguente:
   
-```
+```PowerShell
 Get-CsWatcherNodeConfiguration -Identity "atl-cs-001.litwareinc.com" | Select-Object -ExpandProperty Tests
 ```
 
@@ -190,13 +190,13 @@ Registrazione IM GroupIM P2PAV AvConference presenza PersistentChatMessage datac
 > [!TIP]
 > Per visualizzare le transazioni sintetiche in ordine alfabetico, USA invece questo comando: 
   
-```
+```PowerShell
 Get-CsWatcherNodeConfiguration -Identity "atl-cs-001.litwareinc.com" | Select-Object -ExpandProperty Tests | Sort-Object
 ```
 
 Per verificare che sia stato creato un nodo Watcher, digitare il comando seguente da Skype for Business Server Management Shell:
   
-```
+```PowerShell
 Get-CsWatcherNodeConfiguration
 ```
 
@@ -204,7 +204,7 @@ Le informazioni verranno restituite in modo simile al seguente:
   
 Identità: atl-cs-001.litwareinc.com TestUsers: {sip:watcher1@litwareinc.com, sip:watcher2@litwareinc.com...} ExtendedTests: {TestUsers = IList<System. String>; Name = test PSTN; Te...} TargetFqdn: atl-cs-001.litwareinc.com NumeroPorta: 5061To verificare che il nodo Watcher sia stato configurato correttamente, digitare il comando seguente da Skype for Business Server Management Shell:
   
-```
+```PowerShell
 Test-CsWatcherNodeConfiguration
 ```
 
@@ -223,24 +223,24 @@ Questo comando testerà ogni nodo Watcher nella distribuzione e confermerà se s
 ## <a name="managing-watcher-nodes"></a>Gestione dei nodi Watcher
 <a name="testuser"> </a>
 
-Oltre a modificare le transazioni sintetiche eseguite in un nodo Watcher, puoi anche usare il cmdlet **set-CsWatcherNodeConfiguration** per eseguire altre due attività importanti: abilitare e disabilitare il nodo Watcher e configurare il nodo Watcher per usare URL Web interni o URL Web esterni durante l'uso dei test.
+Oltre a modificare le transazioni sintetiche eseguite in un nodo Watcher, puoi anche usare il cmdlet **set-CsWatcherNodeConfiguration** per eseguire due altre attività importanti: abilitare e disabilitare il nodo Watcher e configurare il nodo Watcher per usare URL Web interni o URL Web esterni durante l'esecuzione dei test.
   
 Per impostazione predefinita, i nodi Watcher sono progettati per eseguire periodicamente tutte le transazioni sintetiche abilitate. A volte, tuttavia, potresti voler sospendere tali transazioni. Ad esempio, se il nodo Watcher è temporaneamente disconnesso dalla rete, non c'è alcun motivo per eseguire le transazioni sintetiche. Senza connettività di rete, le transazioni non riusciranno. Per disabilitare temporaneamente un nodo Watcher, eseguire un comando simile a questo da Skype for Business Server Management Shell:
   
-```
+```PowerShell
 Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -Enabled $False
 ```
 
 Questo comando consente di disabilitare l'esecuzione di transazioni sintetiche nel nodo Watcher watcher 001.litwareinc.com. Per riprendere l'esecuzione delle transazioni sintetiche, impostare di nuovo la proprietà Enabled su true ($True):
   
-```
+```PowerShell
 Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -Enabled $True
 ```
 
 > [!NOTE]
 > La proprietà Enabled può essere usata per attivare o disattivare i nodi Watcher. Se si vuole eliminare definitivamente un nodo Watcher, usare il cmdlet **Remove-CsWatcherNodeConfiguration** :
   
-```
+```PowerShell
 Remove-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com"
 ```
 
@@ -248,13 +248,13 @@ Questo comando rimuove tutte le impostazioni di configurazione del nodo Watcher 
   
 Per impostazione predefinita, i nodi Watcher usano gli URL Web esterni di un'organizzazione durante l'esecuzione di test. Tuttavia, i nodi Watcher possono essere configurati anche per l'uso degli URL Web interni dell'organizzazione. Ciò consente agli amministratori di verificare l'accesso URL per gli utenti che si trovano all'interno della rete perimetrale. Per configurare un nodo Watcher per l'uso di URL interni anziché di URL esterni, imposta la proprietà UseInternalWebURls su true ($True):
   
-```
+```PowerShell
 Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -UseInternalWebUrls $True
 ```
 
 La reimpostazione di questa proprietà sul valore predefinito false ($False) farà sì che il Watcher usi ancora una volta gli URL esterni:
   
-```
+```PowerShell
 Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -UseInternalWebUrls $False
 ```
 
@@ -271,7 +271,7 @@ Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, pro
     
 2. Nella finestra della console digitare il comando seguente e quindi premere INVIO. 
     
-```
+```PowerShell
 bitsadmin /util /SetIEProxy NetworkService NO_PROXY
 ```
 
@@ -297,7 +297,7 @@ Per usare la transazione sintetica della chat persistente, è necessario prima d
   
 È possibile usare la transazione sintetica della chat persistente per configurare questo canale: 
   
-```
+```PowerShell
 $cred1 = Get-Credential "contoso\testUser1"
 $cred2 = Get-Credential "contoso\testUser2"
 
@@ -336,13 +336,13 @@ Per usare questa transazione sintetica, è necessario che siano soddisfatte le c
     
 Una volta soddisfatte queste condizioni, è possibile eseguire il cmdlet di Windows PowerShell seguente per eseguire la migrazione degli elenchi di contatti degli utenti di test a Exchange:
   
-```
+```PowerShell
 Test-CsUnifiedContactStore -TargetFqdn pool0.contoso.com -UserSipAddress sip:testUser1@contoso.com -RegistrarPort 5061 -Authentication TrustedServer -Setup
 ```
 
 Potrebbe essere necessario un po' di tempo prima che gli elenchi di contatti degli utenti di test vengano migrati in Exchange. Per monitorare lo stato di avanzamento della migrazione, è possibile eseguire la stessa riga di comando senza il flag-Setup:
   
-```
+```PowerShell
 Test-CsUnifiedContactStore -TargetFqdn pool0.contoso.com -UserSipAddress sip:testUser1@contoso.com -RegistrarPort 5061 -Authentication TrustedServer
 ```
 
@@ -354,7 +354,7 @@ La transazione sintetica di messaggistica istantanea (XMPP) Extensible Messaging
   
 Per abilitare la transazione sintetica XMPP, devi specificare un parametro XmppTestReceiverMailAddress con un account utente in un dominio XMPP instradabile. Ad esempio:
   
-```
+```PowerShell
 Set-CsWatcherNodeConfiguration -Identity pool0.contoso.com -Tests @{Add="XmppIM"} -XmppTestReceiverMailAddress user1@litwareinc.com
 ```
 
@@ -415,7 +415,7 @@ Queste informazioni vengono generate automaticamente ogni volta che viene esegui
   
 Per recuperare le informazioni sulla risoluzione dei problemi, specificare il parametro OutLoggerVariable, seguito da un nome di variabile scelto:
   
-```
+```PowerShell
 Test-CsRegistration -TargetFqdn atl-cs-001.litwareinc.com -OutLoggerVariable RegistrationTest
 ```
 
@@ -426,13 +426,13 @@ Quando si esegue questo comando, viene visualizzato l'output simile al seguente:
   
 FQDN di destinazione: atl-cs-001.litwareinc.com risultato: latenza errore: messaggio di errore 00:00:00: il computer in cui non sono presenti certificati assegnati. Diagnosi: è possibile accedere a informazioni molto più dettagliate per questo errore che non solo il messaggio di errore visualizzato qui. Per accedere a queste informazioni in formato HTML, usare un comando simile a quello per salvare le informazioni archiviate nella variabile RegistrationTest in un file HTML:
   
-```
+```PowerShell
 $RegistrationTest.ToHTML() | Out-File C:\Logs\Registration.html
 ```
 
 In alternativa, puoi usare il metodo ToXML () per salvare i dati in un file XML:
   
-```
+```PowerShell
 $RegistrationTest.ToXML() | Out-File C:\Logs\Registration.xml
 ```
 

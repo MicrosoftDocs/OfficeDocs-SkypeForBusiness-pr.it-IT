@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c1f7cf91-8434-42ec-b09d-7d9d01e0b357
 description: 'Riepilogo: informazioni su come usare il pannello di controllo o la shell di gestione per abilitare o disabilitare i servizi di conferenza telefonica con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 6723c3501b226d11977ad176a804210540f1a2bc
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: aed5f82678dce89190ba5449ada8eb988e1a1864
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194524"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991841"
 ---
 # <a name="enable-or-disable-dial-in-conferencing-in-skype-for-business-server"></a>Abilitare o disabilitare i servizi di conferenza telefonica con accesso esterno in Skype for Business Server
  
@@ -41,7 +41,7 @@ Puoi abilitare i servizi di conferenza telefonica con accesso esterno usando il 
 
 Per abilitare o disabilitare i servizi di conferenza telefonica con accesso esterno, usare il cmdlet **Set-CsConferencingPolicy** con il parametro EnableDialInConferencing come indicato di seguito:
   
-```
+```PowerShell
 Set-CsConferencingPolicy  [-EnableDialInConferencing <$true | $false>] 
 ```
 

@@ -15,12 +15,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come controllare se i team privati possono essere scoperti dagli utenti di Microsoft teams tramite suggerimenti nella raccolta team e nei risultati della ricerca.
-ms.openlocfilehash: b60c06299f779ebe798db1ff3df465f1683508ed
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: e2e0ec956b40ff5e84bb29874c0dc567edefd034
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572001"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992011"
 ---
 # <a name="manage-discovery-of-private-teams-in-microsoft-teams"></a>Gestire l'individuazione di team privati in Microsoft Teams
 
@@ -65,7 +65,7 @@ In teams, vai al team privato, fai clic su **altre opzioni** > **Gestisci team**
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
 Utilizzare il cmdlet **[set-team](https://docs.microsoft.com/powershell/module/teams/set-team?view=teams-ps)** per disattivare o attivare l'impostazione di individuazione per un team privato esistente. Ecco un esempio di come rendere individuabile un team:
-```
+```PowerShell
     Set-Team -GroupId 0abc123d-e4f5-67gh-i890-jk1m2n345o6p -ShowInTeamsSearchAndSuggestions $true
 ```
 Puoi usare questo cmdlet in uno script per impostare l'impostazione di individuazione dei team privati esistenti in blocco.
@@ -79,7 +79,7 @@ Imposta il parametro **AllowPrivateTeamDiscovery** su **true** per consentire ag
 Per impostazione predefinita, **AllowPrivateTeamDiscovery** è impostato su **true** per tutti gli utenti di un'organizzazione.
 
 In questo esempio creiamo un criterio denominato VendorPolicy che impedisce agli utenti di individuare eventuali team privati resi individuabili e quindi assegniamo i criteri a un utente denominato vendoruser1.
-```
+```PowerShell
      New-CsTeamsChannelsPolicy -Identity VendorPolicy -AllowPrivateTeamDiscovery $false
      Grant-CsTeamsChannelsPolicy -Identity vendoruser1@company.com -PolicyName VendorPolicy
 ```

@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 497e6ca0-7a49-4f3e-9804-14414cf87b57
 description: 'Riepilogo: informazioni su come eliminare i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 2d02fa580acbc11c1b41643ab25cecba618ed09a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 7cf195e53ec159a8999561c0ddb8461ee1bf0ba6
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194525"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991871"
 ---
 # <a name="delete-conferencing-policies-in-skype-for-business-server"></a>Eliminare i criteri di conferenza in Skype for Business Server
  
@@ -39,13 +39,13 @@ Per eliminare i criteri di conferenza, usare il cmdlet **Remove-CsConferencingPo
   
 Il comando seguente rimuove i criteri di conferenza con Identity RedmondConferencingPolicy:
   
-```
+```PowerShell
 Remove-CsConferencingPolicy -Identity "RedmondConferencingPolicy"
 ```
 
 Il comando successivo Elimina i criteri di conferenza che consentono agli utenti esterni di registrare la conferenza:
   
-```
+```PowerShell
 Get-CsConferencingPolicy | Where-Object {$_.AllowExternalUsersToRecordMeetings -eq $True} | Remove-CsConferencingPolicy
 ```
 

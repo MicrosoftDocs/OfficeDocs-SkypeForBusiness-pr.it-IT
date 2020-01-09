@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ea22beb9-c02e-47cb-836d-97a556969052
 description: 'Riepilogo: rivedere questo argomento per informazioni su come integrare Skype for Business Server con Exchange Server 2016 o Exchange Server 2013.'
-ms.openlocfilehash: f62ad2475fe17668e82b06b1b4a0f19b6a2ee7c8
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 54a079a550b1c915d9ffc124b1608a3fd3f2a5ef
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194935"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991481"
 ---
 # <a name="plan-to-integrate-skype-for-business-and-exchange"></a>Piano di integrazione di Skype for Business Server 2015 con Exchange
  
@@ -50,7 +50,7 @@ Dopo aver assegnato i certificati, è necessario configurare il servizio di indi
     
 Il servizio di individuazione automatica deve essere configurato prima di poter integrare Skype for Business Server ed Exchange Server. Puoi verificare se il servizio di individuazione automatica è stato configurato eseguendo il comando seguente da Exchange Server Management Shell e controllando il valore della proprietà AutoDiscoverServiceInternalUri:
   
-```
+```PowerShell
 Get-ClientAccessServer | Select-Object Name, AutoDiscoverServiceInternalUri | Format-List
 ```
 
@@ -58,15 +58,15 @@ Se questo valore è vuoto, devi assegnare un URI al servizio di individuazione a
   
 Puoi assegnare l'URI di individuazione automatica eseguendo un comando simile al seguente:
   
-```
+```PowerShell
 Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri "https://autodiscover.litwareinc.com/autodiscover/autodiscover.xml"
 ```
 
 Per informazioni dettagliate sul servizio di individuazione automatica, vedere [servizio di individuazione automatica](https://go.microsoft.com/fwlink/p/?LinkId=268542).
   
-Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le impostazioni di configurazione OAuth di Skype for Business Server. Questo garantisce che Skype for Business Server sappia dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione OAuth in Skype for Business Server, eseguire il comando seguente dall'interno di Skype for Business Server Management Shell. Quando esegui questo comando, assicurati di specificare l'URI per il servizio di individuazione automatica in uso nel server Exchange e di usare l' **individuazione automatica. svc** per puntare alla posizione del servizio anziché Autodiscover **. XML** (che punta al file XML usato dal servizio):
+Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le impostazioni di configurazione OAuth di Skype for Business Server. Questo garantisce che Skype for Business Server sappia dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione OAuth in Skype for Business Server, eseguire il comando seguente dall'interno di Skype for Business Server Management Shell. Quando esegui questo comando, assicurati di specificare l'URI per il servizio di individuazione automatica in uso nel server Exchange e usi **autodiscover. svc** per puntare alla posizione del servizio invece di **autodiscover. XML** (che punta al file XML usato dal servizio):
   
-```
+```PowerShell
 Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc" 
 ```
 

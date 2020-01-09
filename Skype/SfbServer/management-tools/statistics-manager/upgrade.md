@@ -1,5 +1,5 @@
 ---
-title: Aggiornare le statistiche di gestione per Skype for Business Server
+title: Aggiornare il gestore delle statistiche per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 71f5d0a0-ca81-4ac1-b590-8f854504f21f
 description: 'Riepilogo: leggere questo argomento per informazioni su come aggiornare Statistics Manager per Skype for Business Server.'
-ms.openlocfilehash: 70826776e9dfacdef75c7084a9aba6f4eede940a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: de88257b628256c47b68036852d82fb6715c043f
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195086"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992503"
 ---
-# <a name="upgrade-statistics-manager-for-skype-for-business-server"></a>Aggiornare le statistiche di gestione per Skype for Business Server
+# <a name="upgrade-statistics-manager-for-skype-for-business-server"></a>Aggiornare il gestore delle statistiche per Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come aggiornare Statistics Manager per Skype for Business Server.
   
@@ -50,7 +50,7 @@ Lo script raccoglierà le informazioni sul certificato corrente e la password de
     
 2. Aprire una finestra di PowerShell amministrativa. Aggiornare il componente listener:
     
-   ```
+   ```PowerShell
    .\Update-StatsMan.ps1 -Service Listener
    ```
 
@@ -65,7 +65,7 @@ Lo script raccoglierà le informazioni sul certificato corrente e la password de
     
 4. Aprire una finestra di PowerShell amministrativa. Aggiornare il componente sito Web:
     
-   ```
+   ```PowerShell
    .\Update-StatsMan.ps1 -Service Website
    ```
 
@@ -77,7 +77,7 @@ Lo script raccoglierà le informazioni sul certificato corrente e la password de
     
 8. Aprire una finestra di PowerShell amministrativa. Aggiornare il componente Agent:
     
-   ```
+   ```PowerShell
    .\Update-StatsMan.ps1 -Service Agent
    ```
 
@@ -107,8 +107,8 @@ Se per qualche motivo l'aggiornamento automatico non riesce, è sempre possibile
 
 Per altre informazioni, vedere quanto segue:
   
-- [Pianificare la gestione delle statistiche per Skype for Business Server](plan.md)
+- [Pianificare il gestore delle statistiche per Skype for Business Server](plan.md)
     
-- [Distribuire Gestione statistiche per Skype for Business Server](deploy.md)
+- [Distribuire il gestore delle statistiche per Skype for Business Server](deploy.md)
     
-- [Risolvere i problemi di gestione statistiche per Skype for Business Server](troubleshoot.md)
+- [Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server](troubleshoot.md)

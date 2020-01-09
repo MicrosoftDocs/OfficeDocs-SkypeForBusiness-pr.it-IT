@@ -1,7 +1,7 @@
 ---
 title: Gestire i criteri di messaggistica in teams
-ms.author: tonysmit
-author: tonysmit
+ms.author: lolaj
+author: lolajacobsen
 manager: serdars
 ms.reviewer: jastark
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid: MET150
 f1keywords:
 - ms.teamsadmincenter.messagingpolicies.overview
 description: Informazioni sui criteri di messaggistica e sul modo in cui possono essere usati per controllare la messaggistica di chat in teams.
-ms.openlocfilehash: 3ac3e25dfc6f8ec65922d0265664649de6e9f55c
-ms.sourcegitcommit: 4a22bf77f529cfc2e68a6498a0c4aa9030ee2168
+ms.openlocfilehash: 590b0de09488a1d4e1cdaba3530a9a34894e45d0
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968237"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991561"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in teams
 
@@ -73,9 +73,9 @@ Usare le impostazioni seguenti per modificare i criteri di messaggistica globale
 - **I proprietari possono eliminare i messaggi inviati**  Usare questa impostazione per consentire ai proprietari di eliminare i messaggi inviati dagli utenti in chat.
 - **Gli utenti possono eliminare i messaggi inviati** Usare questa impostazione per consentire agli utenti di eliminare i messaggi inviati in chat.
 - **Gli utenti possono modificare i messaggi inviati** Usare questa impostazione per consentire agli utenti di modificare i messaggi inviati in chat.
-- **Conferme di lettura** Conferme di lettura consentire al mittente di un messaggio di chat di ricevere una notifica quando il messaggio è stato letto dal destinatario in 1:1 e raggruppare le chat di 20 persone o meno. Le conferme di lettura dei messaggi eliminano in maniera non sicura se un messaggio è stato letto e migliorano la comunicazione del team.  
+- **Conferme di lettura** Conferme di lettura consentire al mittente di un messaggio di chat di ricevere una notifica quando il messaggio è stato letto dal destinatario in 1:1 e raggruppare le chat di 20 persone o meno. Le conferme di lettura dei messaggi eliminano in maniera non sicura se un messaggio è stato letto e migliorano la comunicazione del team. Tieni presente che le conferme di lettura non vengono acquisite in eDiscovery Reporting.  
     - **Utente controllato** Ciò significa che gli utenti possono decidere se vogliono ricevere le conferme di lettura. L'impostazione predefinita all'interno dell'app è attivata. Gli utenti possono quindi disattivarli. 
-    - **Attiva per tutti** Questo significa che tutti gli utenti del tenant avranno la funzionalità con nessuna opzione per disattivarla. Tenere presente che quando si usa l'impostazione **attiva per tutti** , l'unico modo per impostare le conferme per l'intero tenant è quello di avere un solo criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "globale (impostazione predefinita per l'intera organizzazione)") o per avere tutti i criteri di messaggistica in il tenant usa le stesse impostazioni per i conferme. La caratteristica delle conferme di lettura è più efficace quando la funzionalità è abilitata per **tutti**.
+    - **Attiva per tutti** Questo significa che tutti gli utenti del tenant avranno la funzionalità con nessuna opzione per disattivarla. Tenere presente che quando si usa l'impostazione **per tutti gli utenti** , l'unico modo per impostare le conferme per l'intero tenant è quello di avere solo un criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "globale (impostazione predefinita)") o per avere tutti i criteri di messaggistica nel tenant usano le stesse impostazioni per le conferme. La caratteristica delle conferme di lettura è più efficace quando la funzionalità è abilitata per **tutti**.
     - **Disattivato per tutti** Questo significa che la caratteristica è disabilitata e che nessuno nel tenant ha conferme di lettura né può attivarlo. 
 <a name="bkchat"> </a>
 
@@ -91,10 +91,10 @@ Usare le impostazioni seguenti per modificare i criteri di messaggistica globale
 - **Consentire agli utenti di tradurre i messaggi** Attivare questa impostazione per consentire agli utenti di tradurre automaticamente i messaggi di teams nella lingua specificata dalle impostazioni della lingua personale per Office 365.
 - **Consentire all'utilità di lettura immersiva di visualizzare i messaggi** Attivare questa impostazione per consentire agli utenti di visualizzare i messaggi in Microsoft immersive Reader. Immersive Reader è uno strumento di apprendimento che offre un'esperienza di lettura a schermo intero per aumentare la leggibilità del testo.
 - **Gli utenti possono inviare notifiche <a name="urgent-message">prioritarie</a> ** Se si attiva questa opzione, gli utenti possono inviare un messaggio che usa le notifiche prioritarie. Le notifiche prioritarie avvisano gli utenti ogni 2 minuti per un periodo di 20 minuti o finché i messaggi non vengono raccolti e letti dal destinatario, massimizzando la probabilità che il messaggio venga raccolto e agito in modo tempestivo.   [!INCLUDE [pri-message-offer](includes/pri-message-offer.md)]
-- **Creazione di messaggi vocali** 
-    - **Consentito in chat e canali** Ciò significa che gli utenti possono abbandonare i messaggi vocali sia in chat che in canali.
-    - **Consentito solo nelle chat** Ciò significa che gli utenti possono abbandonare i messaggi vocali nelle chat, ma non nei canali.
-    - **Disabilitata** Ciò significa che gli utenti non possono creare messaggi vocali in chat o canali.  
+- **Creazione di messaggi audio** -importante: i messaggi audio non vengono acquisiti in eDiscovery Reporting. 
+    - **Consentito in chat e canali** Ciò significa che gli utenti possono uscire da messaggi audio sia in chat che in canali.
+    - **Consentito solo nelle chat** Ciò significa che gli utenti possono abbandonare i messaggi audio in chat, ma non nei canali.
+    - **Disabilitata** Ciò significa che gli utenti non possono creare messaggi audio in chat o canali.  
 - **Nei dispositivi mobili, visualizzare i canali preferiti sopra le chat recenti** Abilitare questa impostazione per spostare i canali preferiti nella parte superiore della schermata del dispositivo mobile in modo che l'utente non debba scorrere per trovarli. 
 - **Consentire a un utente di rimuovere utenti da una chat di gruppo** Attivare questa impostazione per consentire a un utente di rimuovere altri utenti da una chat di gruppo. Questa funzionalità consente di continuare una chat con un gruppo di persone più piccolo senza perdere la cronologia chat.
 

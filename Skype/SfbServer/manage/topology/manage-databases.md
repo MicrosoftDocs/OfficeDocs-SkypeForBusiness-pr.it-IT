@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 026c4469-f471-4e4f-a77d-a7d22a925e5a
 description: "Riepilogo: informazioni su come aggiungere altri database di Skype for Business Server a un gruppo di disponibilità AlwaysOn esistente e informazioni sui passaggi aggiuntivi necessari dopo la patch o l'aggiornamento di un server back-end che fa parte di un gruppo di disponibilità AlwaysOn in Skype for Business Server."
-ms.openlocfilehash: c6d8877448a68aa2331f3c290170418f6dca08ae
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 221964eb7d8dfcbb0303a0e1148de4fcef6cec51
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187106"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991541"
 ---
 # <a name="manage-databases-with-an-alwayson-availability-group-in-skype-for-business-server"></a>Gestire i database con un gruppo di disponibilità AlwaysOn in Skype for Business Server
 
@@ -33,7 +33,7 @@ Seguire i passaggi di questo articolo per aggiungere altri database di Skype for
     
    - Nella parte inferiore della pagina, nella casella **FQDN di SQL Server** , digitare il nome di dominio completo del nodo principale del gruppo di disponibilità AlwaysOn.
     
-3. Pubblicare la topologia. Nel menu **azioni** fare clic **** su topologia e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**.
+3. Pubblicare la topologia. Nel menu **azioni** fare clic su **topologia** e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**.
     
 4. Usare SQL Server Management Studio per aggiungere il nuovo database al gruppo di disponibilità AlwaysOn.
     
@@ -45,7 +45,7 @@ Dopo aver patchato un server back-end che fa parte di un gruppo di disponibilit�
     
 2. Eseguire il comando di PowerShell seguente in Skype for Business Management Shell (effettuato l'accesso con un account autorizzato a applicare le modifiche apportate ai database SQL AlwaysOn) nel modo seguente:
     
-    ```
+    ```PowerShell
     Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn [sqlpool.contoso.com] -Verbose
     ```
 

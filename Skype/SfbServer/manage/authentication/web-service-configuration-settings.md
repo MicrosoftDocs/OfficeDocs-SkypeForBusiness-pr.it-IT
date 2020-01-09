@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: f3f04d81-8a1f-427f-bd0f-fb659024e096
 description: 'Riepilogo: gestire le impostazioni di configurazione dei servizi Web in Skype for Business Server.'
-ms.openlocfilehash: b2a7f287c9386c89d132e03e96aa25e9472f7008
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 383b85e156dfdbc6af7606da49d4cf89bf655698
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194952"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991931"
 ---
 # <a name="manage-web-service-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione dei servizi Web in Skype for Business Server
  
@@ -106,7 +106,7 @@ Per eliminare le impostazioni di configurazione del servizio Web, è possibile u
 
 - Il comando seguente rimuove le impostazioni di sicurezza del servizio Web applicate al sito Redmond:
     
-  ```
+  ```PowerShell
   Remove-CsWebServiceConfiguration -Identity "site:Redmond"
   ```
 
@@ -114,7 +114,7 @@ Per eliminare le impostazioni di configurazione del servizio Web, è possibile u
 
 Il comando seguente rimuove tutte le impostazioni di sicurezza del servizio Web applicate all'ambito del servizio:
     
-  ```
+  ```PowerShell
   Get-CsWebServiceConfiguration -Filter "service:*" | Remove-CsWebServiceConfiguration
   ```
 
@@ -122,7 +122,7 @@ Il comando seguente rimuove tutte le impostazioni di sicurezza del servizio Web 
 
 Il comando seguente rimuove tutte le impostazioni di sicurezza del servizio Web che consentono l'uso dell'autenticazione dei certificati:
     
-  ```
+  ```PowerShell
   Get-CsWebServiceConfiguration | Where-Object {$_.UseCertificateAuth -eq $True} | Remove-CsWebServiceConfiguration
   ```
 

@@ -9,12 +9,12 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: È possibile trasferire più utenti dal pool legacy al pool pilota di Skype for Business Server 2019 usando il pannello di controllo di Skype for Business Server 2019 o Skype for Business Server 2019 Management Shell.
-ms.openlocfilehash: 6c6f61287cfc75b7500317d62de4ea846af1abd3
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: abaffea04ff190b2ae99639484f63b564fd7784a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244820"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40988951"
 ---
 # <a name="move-multiple-users-to-the-pilot-pool"></a>Trasferire più utenti nel pool pilota
 
@@ -40,7 +40,7 @@ ms.locfileid: "36244820"
     
      ![Spostamento di utenti nel pool di registrazione specifico](../media/Migration_LyncServer_CPanel_fromLyncServer2010_MoveMultipleUsersList.JPG)
   
-4. Nel menu **azione** selezionare Trasferisci **utenti selezionati in pool**.
+4. Nel menu **azione** selezionare **Trasferisci utenti selezionati in pool**.
     
 5. Nell'elenco a discesa selezionare il pool di Skype for Business Server 2019.
     
@@ -48,7 +48,7 @@ ms.locfileid: "36244820"
     
      ![Finestra di dialogo per lo spostamento di utenti nel pool di registrazione di destinazione](../media/Migration_LyncServer_from_LyncServer2010_CPanelMoveUserSelectPoolDialog.png)
   
-7. Verificare che la colonna del **pool** di registrar per gli utenti contenga ora il pool di Skype for Business Server 2019, che indica che gli utenti sono stati spostati correttamente. 
+7. Verificare che la colonna del **pool di registrar** per gli utenti contenga ora il pool di Skype for Business Server 2019, che indica che gli utenti sono stati spostati correttamente. 
     
 ## <a name="to-move-multiple-users-by-using-the-skype-for-business-server-2019-management-shell"></a>Per trasferire più utenti usando Skype for Business Server 2019 Management Shell
 <a name="sectionSection1"> </a>
@@ -57,7 +57,7 @@ ms.locfileid: "36244820"
     
 2. Nella riga di comando digitare le opzioni seguenti e sostituire **User1** e **User2** con nomi utente specifici da trasferire e sostituire **pool_FQDN** con il nome del pool di destinazione. In questo esempio verranno spostati gli utenti Hao Chen e Katie Jordan. 
     
-   ```
+   ```PowerShell
    Get-CsUser -Filter {DisplayName -eq "User1" -or DisplayName - eq "User2"} | Move-CsUser -Target "pool_FQDN"
    ```
 
@@ -65,7 +65,7 @@ ms.locfileid: "36244820"
   
 3. Nella riga di comando digitare quanto segue: 
     
-   ```
+   ```PowerShell
    Get-CsUser -Identity "User1"
    ```
 
@@ -82,7 +82,7 @@ In questo esempio tutti gli utenti sono stati restituiti al pool legacy (pool01.
     
 2. Nella riga di comando digitare quanto segue: 
     
-   ```
+   ```PowerShell
    Get-CsUser -OnLyncServer | Move-CsUser -Target "pool_FQDN"
    ```
 
@@ -90,11 +90,11 @@ In questo esempio tutti gli utenti sono stati restituiti al pool legacy (pool01.
   
 3. Eseguire **Get-CsUser** per uno degli utenti pilota. 
     
-   ```
+   ```PowerShell
    Get-CsUser -Identity "Hao Chen"
    ```
 
-4. L'identità del **pool** di registrar per ogni utente ora punta al pool specificato come **pool_FQDN** nel passaggio precedente. La presenza di questa identità conferma che l'utente è stato spostato correttamente. 
+4. L'identità del **pool di registrar** per ogni utente ora punta al pool specificato come **pool_FQDN** nel passaggio precedente. La presenza di questa identità conferma che l'utente è stato spostato correttamente. 
     
 5. Inoltre, è possibile visualizzare l'elenco degli utenti nel pannello di controllo di Skype for Business Server 2019 e verificare che il valore del pool di registrazione punti ora al pool di Skype for Business Server 2019.
     

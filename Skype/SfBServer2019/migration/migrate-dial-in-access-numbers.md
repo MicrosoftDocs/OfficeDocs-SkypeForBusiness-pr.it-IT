@@ -9,12 +9,12 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: La migrazione dei numeri di accesso esterno a Skype for Business Server 2019 richiede l'esecuzione del cmdlet Move-CsApplicationEndpoint per eseguire la migrazione degli oggetti contatto. Durante l'installazione legacy e il periodo di coesistenza di Skype for Business Server 2019, i numeri di accesso esterno creati in Skype for Business Server 2019 si comportano in modo simile ai numeri di accesso per la chiamata in ingresso creati nell'installazione legacy, come descritto in questo sezione.
-ms.openlocfilehash: 81f100979d009f4f9b48cf9a538ec92095a67ad8
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 35c1e665f8affdbf84628f9a7d532405779648f0
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238732"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991141"
 ---
 # <a name="migrate-dial-in-access-numbers"></a>Eseguire la migrazione dei numeri di accesso esterno
 
@@ -50,7 +50,7 @@ I numeri di accesso esterno creati nell'installazione legacy, ma spostati in Sky
 
 2. Per trasferire ogni numero di accesso esterno a un pool ospitato in Skype for Business Server 2019, dalla riga di comando eseguire: 
 
-   ```
+   ```PowerShell
    Move-CsApplicationEndpoint -Identity <SIP URI of the access number to be moved> -Target <FQDN of the pool to which the access number is moving>
    ```
 
@@ -83,7 +83,7 @@ I numeri di accesso esterno creati nell'installazione legacy, ma spostati in Sky
 
 2. Per restituire tutti i numeri di accesso per le conferenze telefoniche con chiamata in ingresso migrati, dalla riga di comando eseguire:
 
-   ```
+   ```PowerShell
    Get-CsDialInConferencingAccessNumber -Filter {Pool -eq "<FQDN of the pool to which the access number is moved>"}
    ```
 

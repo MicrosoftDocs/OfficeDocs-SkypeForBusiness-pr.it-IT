@@ -16,12 +16,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come configurare le impostazioni di rete per le funzionalità vocali di cloud in Microsoft teams.
-ms.openlocfilehash: 72fb40b31b7881f550800bad5a2d2fca304431ae
-ms.sourcegitcommit: 021c86bf579e315f15815dcddf232a0c651cbf6b
+ms.openlocfilehash: 87cdf39e03999a9e249b7ec40af7ea2ad8612e69
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615896"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991641"
 ---
 # <a name="manage-your-network-topology-for-cloud-voice-features-in-microsoft-teams"></a>Gestire la topologia di rete per le funzionalità vocali di cloud in Microsoft Teams
 
@@ -84,12 +84,12 @@ Per completare la procedura descritta in questa sezione, è necessaria una certa
 
  Usa il cmdlet [New-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/module/skype/New-CsTenantNetworkRegion) per definire le aree di rete. Tieni presente che il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o &lt;restrizioni e&gt; il parametro ID sito CentralSite è facoltativo.
 
-```
+```PowerShell
 New-CsTenantNetworkRegion -NetworkRegionID <region ID>  
 ```
 
 In questo esempio creiamo un'area di rete denominata India.
-```
+```PowerShell
 New-CsTenantNetworkRegion -NetworkRegionID "India"  
 ```
 
@@ -99,11 +99,11 @@ Vedere anche [set-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/m
 
 Usare il cmdlet [New-CsTenantNetworkSite](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksite?view=skype-ps) per definire i siti di rete. Ogni sito di rete deve essere associato a un'area di rete.
 
-```
+```PowerShell
 New-CsTenantNetworkSite -NetworkSiteID <site ID> -NetworkRegionID <region ID>
 ```
 In questo esempio creiamo due nuovi siti di rete, Delhi e Hyderabad, nell'area dell'India.
-```
+```PowerShell
 New-CsTenantNetworkSite -NetworkSiteID "Delhi" -NetworkRegionID "India"
 New-CsTenantNetworkSite -NetworkSiteID "Hyderabad" -NetworkRegionID "India"
 ```
@@ -120,13 +120,13 @@ Vedere anche [set-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/m
 
 Utilizzare il cmdlet [New-CsTenantNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksubnet?view=skype-ps) per definire le subnet di rete e associarle ai siti di rete. Ogni subnet di rete può essere associata a un solo sito.
 
-```
+```PowerShell
 New-CsTenantNetworkSubnet -SubnetID <Subnet IP address> -MaskBits <Subnet bitmask> -NetworkSiteID <site ID>
 ```
 
 In questo esempio creiamo un'associazione tra subnet 192.168.0.0 e il sito di rete Delhi e tra subnet 2001:4898: E8:25:844E: 926f: 85AD: dd8e e il sito di rete di Hyderabad.
-```
 
+```PowerShell
 New-CsTenantNetworkSubnet -SubnetID "192.168.0.0" -MaskBits "24" -NetworkSiteID "Delhi"
 New-CsTenantNetworkSubnet -SubnetID "2001:4898:e8:25:844e:926f:85ad:dd8e" -MaskBits "120" -NetworkSiteID "Hyderabad"
 
@@ -140,11 +140,11 @@ La tabella seguente mostra le subnet definite in questo esempio.
 |ID sito  | Sito (Delhi) | Sito 2 (Hyderabad) |
 
 Per più subnet, è possibile importare un file CSV usando uno script come il seguente.
-```
+```PowerShell
 Import-CSV C:\subnet.csv | foreach {New-CsTenantNetworkSubnet –SubnetID $_.SubnetID-MaskBits $_.Mask -NetworkSiteID $_.SiteID}  
 ```
 In questo esempio, il file CSV ha un aspetto simile al seguente:
-```
+```output
 Identity, Mask, SiteID
 172.11.12.0, 24, Redmond
 172.11.13.0, 24, Chicago
@@ -157,11 +157,11 @@ Vedere anche [set-CsTenantNetworkSubnet](hhttps://docs.microsoft.com/powershell/
 ### <a name="define-external-subnets-external-trusted-ip-addresses"></a>Definire subnet esterne (indirizzi IP attendibili esterni)
 
 Usa il cmdlet [New-CsTenantTrustedIPAddress](https://docs.microsoft.com/powershell/module/skype/new-cstenanttrustedipaddress?view=skype-ps) per definire subnet esterne e assegnarle al tenant. Puoi definire un numero illimitato di subnet esterne per un tenant.
-```
+```PowerShell
 New-CsTenantTrustedIPAddress -IPAddress <External IP address> -MaskBits <Subnet bitmask> -Description <description> 
 ```
 Ad esempio:
-```
+```PowerShell
 New-CsTenantTrustedIPAddress -IPAddress 198.51.100.0 -MaskBits 30 -Description "Contoso address"  
 ```
 

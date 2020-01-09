@@ -9,12 +9,12 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Dopo aver rimosso un server di monitoraggio, è possibile rimuovere i database di SQL Server che ospitavano i dati del server. Usare le procedure seguenti per rimuovere le definizioni da generatore di topologie e quindi rimuovere il database e i file di log dal server di database.
-ms.openlocfilehash: 1034abac5b257200504c599fe8655a788d638aa0
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 94081aa7ec4b32797dedaaa2a89dc7221b04bd97
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36241843"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989011"
 ---
 # <a name="remove-the-sql-server-database-for-a-monitoring-server"></a>Rimuovere il database di SQL Server per un server di monitoraggio
 
@@ -36,7 +36,7 @@ Dopo aver rimosso un server di monitoraggio, è possibile rimuovere i database d
     
 3. Nella riga di comando digitare quanto segue:
     
-   ```
+   ```PowerShell
    Uninstall-CsDataBase -DatabaseType Monitoring -SqlServerFqdn <FQDN> [-SqlInstanceName <instance>]
    ```
 

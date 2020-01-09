@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 287f64f5-0f8a-455a-8979-7b34bf0217bb
 description: 'Riepilogo: informazioni sul processo di distribuzione per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: 16877bff7f96bd4d2f6b308b33803c741c2672c2
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: aa7f5d81fd9778e148dcf64f84c757676bd1df2d
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36195894"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992693"
 ---
 # <a name="deploy-call-quality-dashboard-for-skype-for-business-server"></a>Distribuire dashboard qualità chiamata per Skype for Business Server
  
@@ -83,7 +83,7 @@ La distribuzione di Call Quality dashboard include la configurazione dell'infras
   
    - **Directory di file di partizione:** Percorso in cui devono essere posizionate le partizioni per il database di archiviazione QoE. Questa operazione dovrebbe essere su un'unità (HDD3 nella configurazione hardware consigliata) separata dall'unità OS e dai file di log del database SQL. Tieni presente che, dato che i nomi dei file sono corretti nell'installazione, per evitare potenziali conflitti, è consigliabile usare una directory vuota senza file.
     
-   - **Processo agente SQL-password nome &amp; utente:** Nome dell'account del servizio di dominio e password (in maschera) che verranno usati per eseguire il passaggio "dati di archivio QoE" del processo di SQL Server Agent (che eseguirà la stored procedure per recuperare i dati da DB metriche QoE in archivio DB, quindi questo account deve avere accesso in lettura al DB metriche QoE,  come indicato nella sezione account. Questo account deve anche avere un account di accesso nell'istanza di SQL Server di archiviazione QoE.
+   - **Processo agente SQL-password nome &amp; utente:** Nome dell'account del servizio di dominio e password (in maschera) che verranno usati per eseguire il passaggio "dati di archivio QoE" del processo di SQL Server Agent (che eseguirà la stored procedure per recuperare i dati da DB metriche QoE in archivio DB, quindi questo account deve avere accesso in lettura al DB metriche QoE, come indicato nella sezione account. Questo account deve anche avere un account di accesso nell'istanza di SQL Server di archiviazione QoE.
     
      > [!NOTE]
      > L'account in cui è in esecuzione l'istanza di SQL Server, ad esempio NT SERVICE\MSSQLSERVER, deve avere accesso/autorizzazione alle directory indicate in precedenza per avere successo nell'installazione. Per informazioni dettagliate, vedere [configurare le autorizzazioni di file System per l'accesso a motore di database](https://msdn.microsoft.com/en-us/library/jj219062%28v=sql.110%29.aspx)
@@ -155,11 +155,11 @@ Gli amministratori devono prima rimuovere la regola ereditata "Consenti a tutti 
   
 Gli amministratori devono quindi aggiungere nuove regole Allow e concedere agli utenti specifici l'autorizzazione per accedere al portale. È consigliabile creare un gruppo locale denominato "CQDPortalUsers" per gestire gli utenti.
   
-![Distribuire dashboard qualità chiamata](../../media/8cfdc141-ec89-4552-921b-53196f497cbf.png)
+![Distribuire il dashboard Qualità della chiamata](../../media/8cfdc141-ec89-4552-921b-53196f497cbf.png)
   
 I dettagli della configurazione sono archiviati nel file Web. config situato nella directory fisica del portale.
   
-```
+```XML
 <?xml version="1.0" encoding="UTF-8"?> <configuration> <system.webServer> <security> <authorization> <remove users="*" roles="" verbs="" /> <add accessType="Allow" roles="CQDPortalUsers" /> </authorization> </security> </system.webServer> </configuration> 
 ```
 
@@ -172,11 +172,11 @@ Il passaggio successivo consiste nel configurare il dashboard della call Quality
 
 1. Aprire l'editor di configurazione per Call Quality dashboard.
     
-     ![Distribuire dashboard qualità chiamata](../../media/544056eb-3090-434e-bae6-321c984029fa.png)
+     ![Distribuire il dashboard Qualità della chiamata](../../media/544056eb-3090-434e-bae6-321c984029fa.png)
   
 2. In sezione scegliere **System. webserver/ServerRunTime**.
     
-     ![Distribuire dashboard qualità chiamata](../../media/b0af0e56-21b0-45dd-b610-5381b39319d3.png)
+     ![Distribuire il dashboard Qualità della chiamata](../../media/b0af0e56-21b0-45dd-b610-5381b39319d3.png)
   
 3. Cambiare authenticatedUserOverride in **UseWorkerProcessUser**.
     
@@ -211,19 +211,19 @@ In rari casi, il programma di installazione non riesce a creare le impostazioni 
   
 1. Aprire Gestione IIS e passare al sito Web predefinito.
     
-     ![Distribuire dashboard qualità chiamata](../../media/dc6007aa-870b-4d70-867d-32ffd937063b.png)
+     ![Distribuire il dashboard Qualità della chiamata](../../media/dc6007aa-870b-4d70-867d-32ffd937063b.png)
   
 2. Fare clic su "autenticazione". Se l'"autenticazione anonima", "rappresentazione ASP.NET", "autenticazione modulo" e "autenticazione di Windows" non corrispondono alle impostazioni visualizzate di seguito, modificarle manualmente in modo che corrispondano alle impostazioni seguenti. Tutti gli altri meccanismi di autenticazione devono essere disabilitati.
     
-     ![Distribuire dashboard qualità chiamata](../../media/5d9e38fb-8a50-41a2-a423-3ce983a83d0c.png)
+     ![Distribuire il dashboard Qualità della chiamata](../../media/5d9e38fb-8a50-41a2-a423-3ce983a83d0c.png)
   
 3. Per "autenticazione di Windows", fare clic su Impostazioni avanzate sul lato destro.
     
-     ![Distribuire dashboard qualità chiamata](../../media/cad29486-df40-4cc9-82f3-bbdaca52d9ca.png)
+     ![Distribuire il dashboard Qualità della chiamata](../../media/cad29486-df40-4cc9-82f3-bbdaca52d9ca.png)
   
 4. Imposta "protezione estesa" per accettare e selezionare la casella "Abilita autenticazione in modalità kernel".
     
-     ![Distribuire dashboard qualità chiamata](../../media/0ab2dda1-0001-4747-8cfc-072e9368b6cb.png)
+     ![Distribuire il dashboard Qualità della chiamata](../../media/0ab2dda1-0001-4747-8cfc-072e9368b6cb.png)
   
 5. Ripetere i passaggi precedenti per ognuna delle voci "Call Quality Dashboard", "QoEDataService" e "QoERepositoryService" sotto "sito Web predefinito".
     
@@ -282,7 +282,7 @@ Esempi
     
   **Sintassi SQL di esempio**
   
-```
+```SQL
 INSERT INTO
 [dbo].[CqdBuildingType]
 ([BuildingTypeId],
@@ -313,7 +313,7 @@ Esempi
     
   **Sintassi SQL di esempio**
   
-```
+```SQL
 INSERT INTO
 [dbo].[CqdBuildingOwnershipType]
 ([OwnershipTypeId],
@@ -343,7 +343,7 @@ Esempi
     
   **Sintassi SQL di esempio**
   
-```
+```SQL
 INSERT INTO [dbo].[CqdNetworkName] 
 ( [NetworkName]
 ,[NetworkType]
@@ -365,7 +365,7 @@ Prima di importare una nuova struttura, è necessario avere già un BuildingKey 
   
  **Sintassi SQL di esempio**
   
-```
+```SQL
 INSERT INTO [dbo].[CqdBuilding] 
 ( [BuildingKey]
 ,[BuildingName]
@@ -390,7 +390,7 @@ Importare subnet e mapparle agli edifici importati nell'ultimo passaggio. Se si 
   
  **Sintassi SQL di esempio**
   
-```
+```SQL
 INSERT INTO [dbo].[CqdNetwork] 
 ([Network]
 ,[NetworkNameID]
@@ -410,7 +410,7 @@ La compilazione di informazioni BSSID offre una correlazione di flusso WiFi aggi
   
  **Sintassi SQL di esempio**
   
-```
+```SQL
 INSERT INTO [dbo].[CqdBssid]
 ([Ap],
 [Bss],

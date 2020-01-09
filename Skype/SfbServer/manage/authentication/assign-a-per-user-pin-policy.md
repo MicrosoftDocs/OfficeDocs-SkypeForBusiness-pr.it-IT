@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d8211c64-0b63-4193-a074-673da7d14287
 description: 'Riepilogo: certificati per la fase AV e OAuth per Skype for Business Server.'
-ms.openlocfilehash: dafb70239552b9ee2c5e84e7624e881711e8ce6f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 7591464d55970a9aee4fb1f7ddbb28c2efbac601
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188204"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992723"
 ---
 # <a name="assign-a-per-user-pin-policy-in-skype-for-business-server"></a>Assegnare un criterio PIN per utente in Skype for Business Server
 
@@ -84,7 +84,7 @@ Dopo aver creato almeno un criterio PIN per utente, usare le procedure descritte
 
 - Con il comando seguente viene assegnato il criterio PIN per ogni utente RedmondPinPolicy all'utente Ken.
     
-  ```
+  ```PowerShell
   Grant-CsPinPolicy -Identity "Ken Myer" -PolicyName "RedmondPinPolicy"
   ```
 
@@ -92,7 +92,7 @@ Dopo aver creato almeno un criterio PIN per utente, usare le procedure descritte
 
 - Con il comando seguente viene assegnato il criterio PIN per utente RedmondUsersPinPolicy a tutti gli utenti che lavorano nella città di Redmond. Per informazioni dettagliate sul parametro LdapFilter usato in questo comando, vedere [Get-CsUser](https://docs.microsoft.com/powershell/module/skype/get-csuser?view=skype-ps).
     
-  ```
+  ```PowerShell
   Get-CsUser -LdapFilter "l=Redmond" | Grant-CsPinPolicy -PolicyName "RedmondUsersPinPolicy"
   ```
 
@@ -100,7 +100,7 @@ Dopo aver creato almeno un criterio PIN per utente, usare le procedure descritte
 
 - Il comando seguente annulla l'assegnazione di qualsiasi criterio PIN per utente assegnato in precedenza a Ken. Dopo che il criterio per utente non è stato assegnato, Ken è gestito automaticamente tramite il criterio globale oppure, se disponibile, il criterio del sito locale. Un criterio di sito ha la precedenza sui criteri globali.
     
-  ```
+  ```PowerShell
   Grant-CsPinPolicy -Identity "Ken Myer" -PolicyName $Null
   ```
 

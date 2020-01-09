@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 143cf9bd-b935-494d-817c-a8b0ccc61eb8
 description: La topologia di Skype for Business Server 2015 cambia o provisioning per consentire agli utenti di eseguire correttamente lo strumento stress e prestazioni.
-ms.openlocfilehash: c7cdc10b3667ac99376904c81309df739e49844a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e58bfce5e618c6e62f272c0acb0b415cbb471d40
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195079"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992493"
 ---
 # <a name="provisioning-the-topology-to-run-load-in-stress-and-performance-scenarios"></a>Provisioning della topologia per l'esecuzione del caricamento in scenari di stress e prestazioni
  
@@ -27,13 +27,13 @@ A seconda delle impostazioni e della configurazione esistenti per la distribuzio
   
 1. Impostare i criteri di esecuzione di Windows PowerShell su senza restrizioni. Se non si è sicuri di cosa sia impostato al momento, è possibile aprire Skype for Business Server Management Shell ed eseguire questo comando:
     
-   ```
+   ```PowerShell
    Get-ExecutionPolicy
    ```
 
    Se il valore Unrestricted non viene restituito, sarà necessario eseguire il successivo:
     
-   ```
+   ```PowerShell
    Set-ExecutionPolicy -Unrestricted
    ```
 
@@ -45,7 +45,7 @@ A seconda delle impostazioni e della configurazione esistenti per la distribuzio
     
 3. Per eseguire uno script da riga di comando, è possibile usare:
     
-   ```
+   ```PowerShell
    PowerShell.exe -file <path to the file>
    ```
 

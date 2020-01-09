@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0df4fd9e-370b-4b9d-a595-f1199fbc9f81
 description: "Riepilogo: informazioni sul nuovo Skype for business e sui passaggi che è possibile eseguire per preparare l'ambiente e gli utenti per l'aggiornamento, indipendentemente dal fatto che si usi Skype for business online, Skype for Business Server 2019, Skype for Business Server 2015, Lync Server 2013 o Lync Server 2010."
-ms.openlocfilehash: d5224c628624d6d93d8b3a06cd4c59d246523b1e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 21a28af999b285910884241e6e7809a88b943a87
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187871"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989851"
 ---
 # <a name="plan-the-skype-for-business-2015-client-experience-for-your-users"></a>Pianificare l'esperienza client di Skype for business 2015 per gli utenti
  
@@ -84,25 +84,25 @@ Seguire i passaggi descritti in questa sezione se si vuole configurare l'esperie
   
   **Opzione 1:** Impostare l'esperienza client Skype usando un criterio globale. Tieni presente che il criterio globale si applica a tutti gli utenti della distribuzione, ma i criteri per gli utenti e i livelli di sito hanno la precedenza sui criteri globali:
   
-```
+```PowerShell
 Set-CsClientPolicy -Identity Global -EnableSkypeUI $True
 ```
 
  **Opzione 2:** Modificare un criterio client esistente in uso nell'ambiente per includere l'impostazione per abilitare l'esperienza del client Skype. In questo modo è possibile assegnare l'esperienza client Skype solo agli utenti con i criteri esistenti assegnati:
   
-```
+```PowerShell
 Set-CsClientPolicy -Identity ExistingClientPolicyName -EnableSkypeUI $True
 ```
 
  **Opzione 3:** Creare un nuovo criterio da assegnare agli utenti che includono l'impostazione per l'esperienza del client Skype. Prima di tutto, crea il nuovo criterio client e fornisci il nome del criterio come valore del parametro **Identity** :
   
-```
+```PowerShell
 New-CsClientPolicy -Identity UseSkypeUI -EnableSkypeUI $True
 ```
 
-Assegna quindi il criterio agli utenti, usando il nome del criterio (il valore usato per il parametro **Identity** ) come valore del parametro PolicyName: ****
+Assegna quindi il criterio agli utenti, usando il nome del criterio (il valore usato per il parametro **Identity** ) come valore del parametro **PolicyName** :
   
-```
+```PowerShell
 Grant-CsClientPolicy username@contoso.com -PolicyName UseSkypeUI
 ```
 
@@ -130,25 +130,25 @@ Seguire i passaggi descritti in questa sezione se si vuole configurare l'esperie
   
  **Opzione 1:** Impostare l'esperienza del client Lync usando un criterio globale. Tieni presente che il criterio globale si applica a tutti gli utenti della distribuzione, ma i criteri per gli utenti e i livelli di sito hanno la precedenza sui criteri globali:
   
-```
+```PowerShell
 Set-CsClientPolicy -Identity Global -EnableSkypeUI $False
 ```
 
  **Opzione 2:** Modificare un criterio client esistente in uso nell'ambiente per includere l'impostazione per abilitare l'esperienza del client Lync. In questo modo è possibile assegnare l'esperienza client Lync solo agli utenti a cui è assegnato il criterio esistente:
   
-```
+```PowerShell
 Set-CsClientPolicy -Identity ExistingClientPolicyName -EnableSkypeUI $False
 ```
 
  **Opzione 3:** Creare un nuovo criterio da assegnare agli utenti che includono l'impostazione per l'esperienza del client Lync. Prima di tutto, crea il nuovo criterio client e fornisci il nome del criterio come valore del parametro **Identity** :
   
-```
+```PowerShell
 New-CsClientPolicy -Identity UseLyncUI -EnableSkypeUI $False
 ```
 
-Assegna quindi il criterio agli utenti, usando il nome del criterio (il valore usato per il parametro **Identity** ) come valore del parametro PolicyName: ****
+Assegna quindi il criterio agli utenti, usando il nome del criterio (il valore usato per il parametro **Identity** ) come valore del parametro **PolicyName** :
   
-```
+```PowerShell
 Grant-CsClientPolicy username@contoso.com -PolicyName UseLyncUI
 ```
 
@@ -165,25 +165,25 @@ Se si usa Skype for business online, è comunque possibile usare l'esperienza cl
   
  **Opzione 1:** Impostare l'esperienza del client Lync usando un criterio globale. Tieni presente che i criteri client e sito applicati agli utenti avranno la precedenza su un criterio globale.
   
-```
+```PowerShell
 Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI
 ```
 
  **Opzione 2:** Modificare un criterio client esistente in uso nell'ambiente per includere l'impostazione per abilitare l'esperienza del client Lync. In questo modo è possibile assegnare l'esperienza client Lync solo agli utenti a cui è assegnato il criterio esistente:
   
-```
+```PowerShell
 Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI
 ```
 
  **Opzione 3:** Usa un'istanza di criteri personalizzata che include l'impostazione per l'esperienza del client Lync.
   
-```
+```PowerShell
 Grant-CsClientPolicy username@contoso.com -PolicyName ClientPolicyNoIMURLDisableSkypeUI
 ```
 
 Dopo aver configurato i criteri client, distribuire il client Skype for business, Build 4711,1002 (aprile, 2015) o versioni successive.
   
-Per informazioni dettagliate su come configurare l'esperienza client con Skype for business online, inclusi i passaggi su come controllare la prima esperienza di esecuzione e gli script di PowerShell che è possibile usare per configurare l'ambiente, vedere [passaggio tra le Skype for business e le interfacce utente del client Lync](https://aka.ms/SfBOUI).
+Per informazioni dettagliate su come configurare l'esperienza client con Skype for business online, inclusi i passaggi su come controllare la prima esperienza di esecuzione e gli script di PowerShell che è possibile usare per configurare l'ambiente, vedere [commutazione tra le interfacce utente del client Skype for business e Lync](https://aka.ms/SfBOUI).
   
 ## <a name="resources-to-help-you-prepare-your-support-teams-and-your-end-users-for-the-update"></a>Risorse utili per preparare i team di supporto e gli utenti finali per l'aggiornamento
 <a name="support"> </a>

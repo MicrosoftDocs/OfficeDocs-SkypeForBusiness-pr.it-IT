@@ -16,12 +16,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri di ID chiamante in Microsoft teams per modificare o bloccare l'ID chiamante degli utenti di teams nell'organizzazione.
-ms.openlocfilehash: 8a8e235c1adf24e5a11b0b62e7542d5fcae194be
-ms.sourcegitcommit: f2c7626dbef4ed250b9a937a9b56d46fe2e2039e
+ms.openlocfilehash: aed6e3cbe2053ddc16b049608247f56705626249
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39998824"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992886"
 ---
 # <a name="manage-caller-id-policies-in-microsoft-teams"></a>Gestire i criteri di ID chiamante in Microsoft Teams
 
@@ -95,15 +95,15 @@ In questo esempio, assegniamo un criterio lID chiamante personalizzato denominat
 > Prima di tutto, assicurati di connetterti a Azure Active Directory PowerShell per modulo grafico e modulo di PowerShell per Skype for business seguendo la procedura descritta in [Connetti a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
 
 Ottenere il GroupObjectId del gruppo specifico.
-```
+```PowerShell
 $group = Get-AzureADGroup -SearchString "Contoso Support"
 ```
 Ottenere i membri del gruppo specificato.
-```
+```PowerShell
 $members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-Object {$_.ObjectType -eq "User"}
 ```
 Assegnare tutti gli utenti del gruppo a un determinato criterio ID chiamante. In questo esempio è supportato il criterio ID chiamante.
-```
+```PowerShell
 $members | ForEach-Object { Grant-CsCallingLineIdentity -PolicyName "Support Caller ID Policy" -Identity $_.UserPrincipalName}
 ``` 
 A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.

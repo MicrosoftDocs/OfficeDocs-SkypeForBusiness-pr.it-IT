@@ -11,19 +11,19 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: c7413954-2504-47f4-a073-44548aff1c0c
 description: 'Riepilogo: assegnare un certificato di autenticazione da server a server per Skype for Business Server.'
-ms.openlocfilehash: 7198c103a771029ec93e589169fafb652f5d8842
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0332ba66c1cad69470b0007c4d9524a3025e0be7
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188201"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991771"
 ---
 # <a name="assign-a-server-to-server-authentication-certificate-to-skype-for-business-server"></a>Assegnare un certificato di autenticazione da server a server a Skype for Business Server
 **Riepilogo:** Assegnare un certificato di autenticazione da server a server per Skype for Business Server.
   
 Per determinare se un certificato di autenticazione da server a server è già stato assegnato a Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell:
   
-```
+```PowerShell
 Get-CsCertificate -Type OAuthTokenIssuer
 ```
 
@@ -31,7 +31,7 @@ Se non vengono restituite informazioni di certificato, è necessario assegnare u
   
 Se non si dispone di un certificato che può essere usato per l'autenticazione da server a server, è possibile ottenere un nuovo certificato, importare il nuovo certificato e quindi usare tale certificato per l'autenticazione da server a server. Dopo aver richiesto e ottenuto il nuovo certificato, è possibile accedere a uno dei server front-end e usare un comando di Windows PowerShell simile a quello per importare e assegnare il certificato:
   
-```
+```PowerShell
 Import-CsCertificate -Identity global -Type OAuthTokenIssuer -Path C:\Certificates\ServerToServerAuth.pfx  -Password "P@ssw0rd"
 ```
 
@@ -39,7 +39,7 @@ Nel comando precedente il parametro path rappresenta il percorso completo del fi
   
 In alternativa, puoi usare un certificato esistente come certificato di autenticazione da server a server. Come indicato, il certificato predefinito può essere usato come certificato di autenticazione da server a server. La coppia di comandi di Windows PowerShell seguente recupera il valore della proprietà identificazione personale del certificato predefinito, quindi usa questo valore per rendere il certificato predefinito il certificato di autenticazione da server a server:
   
-```
+```PowerShell
 $x = (Get-CsCertificate -Type Default).Thumbprint
 Set-CsCertificate -Identity global -Type OAuthTokenIssuer -Thumbprint $x
 ```
@@ -50,7 +50,7 @@ Il cmdlet Set-CsCertificate accetta il certificato in questione e configura imme
   
 Puoi anche usare il cmdlet Set-CsCertificate per "eseguire il rollback" di un nuovo certificato. "Rotolare" un certificato significa semplicemente configurare un nuovo certificato per diventare il certificato corrente di OAuthTokenIssuer in un determinato momento. Ad esempio, questo comando Recupera il certificato predefinito e quindi configura tale certificato per subentrare come certificato OAuthTokenIssuer corrente al 1 ° luglio 2015:
   
-```
+```PowerShell
 $x = (Get-CsCertificate -Type Default).Thumbprint
 Set-CsCertificate -Identity global -Type OAuthTokenIssuer -Thumbprint $x -EffectiveDate "7/1/2015" -Roll
 ```

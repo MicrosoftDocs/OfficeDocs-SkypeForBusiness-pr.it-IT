@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f91e80ee-a587-4a1b-ac8f-12fa102c098c
 description: 'Riepilogo: informazioni su come gestire il mapping delle chiavi dei comandi DTMF (Dual-Tone Multi-Frequency) in Skype for Business Server.'
-ms.openlocfilehash: 713c72941a8cc147b751c82b9dbbfbc2c2d16837
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3bab799bb116d0ded48002eb91898ffc1587543c
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189653"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991821"
 ---
 # <a name="manage-key-mapping-for-dtmf-commands-in-skype-for-business-server"></a>Gestire il mapping dei tasti per i comandi DTMF in Skype for Business Server
  
@@ -23,7 +23,7 @@ ms.locfileid: "36189653"
   
 Gli utenti dei servizi di conferenza telefonica con accesso esterno possono premere i tasti sul tastierino telefonico per eseguire i comandi DTMF (Dual-Tone Multi-Frequency). I comandi DTMF consentono agli utenti che effettuano la chiamata a una conferenza di controllare le impostazioni della conferenza, ad esempio disattivare e riattivare il segnale, o bloccare o sbloccare la conferenza, usando la tastiera del telefono. 
   
-Per gestire le chiavi usate per i comandi DTMF, usare Skype for Business Server Management Shell con **Get-CsDialInConferencingDtmfConfiguration**, **Set-CsDialInConferencingDtmfConfiguration**e ** Cmdlet New-CsDialinConferencingDtmfConfiguration** .
+Per gestire le chiavi usate per i comandi DTMF, USA Skype for Business Server Management Shell con i cmdlet **Get-CsDialInConferencingDtmfConfiguration**, **Set-CsDialInConferencingDtmfConfiguration**e **New-CsDialInConferencingDtmfConfiguration** .
   
 Quando si creano nuove impostazioni DTMF per i siti, le impostazioni del sito hanno la precedenza sulle impostazioni globali. 
 
@@ -35,13 +35,13 @@ Quando si creano nuove impostazioni DTMF per i siti, le impostazioni del sito ha
     
 3. Per visualizzare le impostazioni DTMF usate per i servizi di conferenza telefonica con accesso esterno, eseguire il comando seguente al prompt dei comandi:
     
-   ```
+   ```PowerShell
    Get-CsDialinConferencingDtmfConfiguration
    ```
 
 4. Per modificare le impostazioni DTMF usate per i servizi di conferenza telefonica con accesso esterno, eseguire il cmdlet seguente e specificare il tasto da premere per ogni opzione che si vuole modificare:
     
-   ```
+   ```PowerShell
    Set-CsDialinConferencingDtmfConfiguration [-Identity <global or site collection to be changed>]
    [-AdmitAll <default key is 8>] [-AudienceMuteCommand <default key is 4>]
    [-CommandCharacter <* (default) | #>] [-EnableDisableAnnouncementsCommand <default key is 9>]
@@ -53,7 +53,7 @@ Quando si creano nuove impostazioni DTMF per i siti, le impostazioni del sito ha
     
 L'esempio seguente scambia il tasto premuto per abilitare o disabilitare gli annunci e la chiave che viene premuta per disattivare e riattivare l'audio di tutti i partecipanti. Poiché non è specificata alcuna identità, le modifiche apportate alle impostazioni DTMF globali sono valide:
   
-```
+```PowerShell
 Set-CsDialinConferencingDtmfConfiguration -EnableDisableAnnouncementsCommand 4 -AudienceMuteCommand 9
 ```
 

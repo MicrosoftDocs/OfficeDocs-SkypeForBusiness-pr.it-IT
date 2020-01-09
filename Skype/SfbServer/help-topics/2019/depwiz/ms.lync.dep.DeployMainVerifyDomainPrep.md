@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4846b787-d55e-4364-bdcd-2dee33f0251c
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per verificare la replica della preparazione del dominio eseguita nel passaggio 1: preparare lo schema, è necessario eseguire un cmdlet da Skype for Business Server Management Shell Lync Server Management Shell. Per eseguire il cmdlet di Windows PowerShell, accedere a un computer che fa parte del dominio che si è preparato e come membro del gruppo Domain Admins. Effettuare le seguenti operazioni:'
-ms.openlocfilehash: 0b853a071116525ad313cf351685124bf92782a8
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c378aabe27ce69351643455c41acfd35a8e950b6
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195464"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992151"
 ---
 # <a name="verify-replication-in-the-domain"></a>Verifica della replica nel dominio
  
@@ -28,13 +28,13 @@ Per verificare la replica della preparazione del dominio eseguita nel **passaggi
     
 2. In Windows PowerShell digitare quanto segue:
     
-   ```
+   ```PowerShell
    Get-CsAdDomain [-Domain <Fqdn>] [-DomainController <Fqdn>] [-GlobalCatalog <Fqdn>] [-GlobalSettingsDomainController <Fqdn>]
    ```
 
     Ad esempio:
     
-   ```
+   ```PowerShell
    Get-CsAdDomain -Domain domain1.contoso.net -GlobalSettingsDomainController dc01.domain1.contoso.com
    ```
 

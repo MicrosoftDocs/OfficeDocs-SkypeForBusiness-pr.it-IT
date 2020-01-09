@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Informazioni sulla funzionalità Skype meeting broadcast di Skype for business online che consente di pianificare, produrre e trasmettere riunioni o eventi a un ampio pubblico online fino a 10.000 partecipanti.
-ms.openlocfilehash: 443810772eeb8bf11721825b06b6a87ccb2c97c8
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: 95ad00be416a53e6e861ce4e9f235bded8e8075a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35792921"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40990981"
 ---
 # <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
@@ -61,27 +61,27 @@ Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
 - Nel **menu Start**fare clic con il pulsante destro del mouse su **Windows PowerShell** e scegliere **Esegui come amministratore**. Nella finestra di **Windows PowerShell** Digitare ogni riga e premere INVIO.
 
-  ```
+  ```PowerShell
   $r = New-CsEdgeDomainPattern -Domain "noammeetings.lync.com"
   ```
 
-  ```
+  ```PowerShell
   $s = New-CsEdgeDomainPattern -Domain "emeameetings.lync.com"
   ```
 
-  ```
+  ```PowerShell
   $t = New-CsEdgeDomainPattern -Domain "apacmeetings.lync.com"
   ```
 
-  ```
+  ```PowerShell
   $n = New-CsEdgeDomainPattern -Domain "resources.lync.com"
   ```
 
-  ```
+  ```PowerShell
   $newAllowList = New-CsEdgeAllowList -AllowedDomain $r,$s,$t,$n
   ```
 
-  ```
+  ```PowerShell
   Set-CsTenantFederationConfiguration -AllowedDomains $newAllowList
   ```
 

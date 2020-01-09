@@ -1,5 +1,5 @@
 ---
-title: Ottenere gli utenti
+title: Ottieni utenti
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -11,20 +11,20 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 87d34baf-4c31-468d-b8f7-4faca0bc7a54
 description: "Riepilogo: informazioni sull'operazione Get Users, che fa parte del servizio utente. Il servizio utente fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 22223c37dad39f171afc27eb9e0520b8b32335c5
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 6cf2248035c780c2efce6b1f4539a39cd2a5829a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186887"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992613"
 ---
-# <a name="get-users"></a>Ottenere gli utenti
+# <a name="get-users"></a>Ottieni utenti
  
 **Riepilogo:** Informazioni sull'operazione Get Users, che fa parte del servizio utente. Il servizio utente fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
   
 L'operazione Get Users fa parte del servizio utente nell'API del repository per il dashboard della qualità delle chiamate.
   
-## <a name="get-users"></a>Ottenere gli utenti
+## <a name="get-users"></a>Ottieni utenti
 
 Ottenere gli utenti restituisce un elenco di utenti nel repository.
   
@@ -49,7 +49,7 @@ Ottenere gli utenti restituisce un elenco di utenti nel repository.
 > [!NOTE]
 > Viene restituita una matrice di oggetti User. Per informazioni dettagliate sull'oggetto utente, vedere ottenere l'utente. 
   
-```
+```json
 [{
 "userId": 0,
 "loginName": "system",

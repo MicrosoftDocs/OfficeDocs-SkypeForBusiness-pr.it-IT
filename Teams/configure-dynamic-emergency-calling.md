@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Configurare chiamate di emergenza dinamiche
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 53af7f64cd7050d3dcd6120f7729cd069a4331d0
-ms.sourcegitcommit: 021c86bf579e315f15815dcddf232a0c651cbf6b
+ms.openlocfilehash: 2d4480e875c37ba2c608c826bb648231c0f6fc23
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615856"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992091"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -61,7 +61,7 @@ Per altre informazioni sulle chiamate di emergenza, incluse informazioni su indi
 
 - [Gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md)
 - [Gestire le impostazioni di rete per le caratteristiche vocali cloud](cloud-voice-network-settings.md)
-- [Gestire la topologia di rete per le funzionalità vocali cloud](manage-your-network-topology.md)
+- [Gestire la topologia di rete per le funzionalità vocali del cloud](manage-your-network-topology.md)
 
 
 ## <a name="supported-clients"></a>Client supportati
@@ -164,25 +164,25 @@ Il criterio TeamsEmergencyCallRouting si applica solo al routing diretto. Anche 
 
 Ad esempio, per abilitare un utente specifico per la notifica di un servizio di sicurezza, usare il comando seguente:
 
-```
+```PowerShell
 Grant-CsTeamsEmergencyCallingPolicy -Identity user1 -PolicyName SecurityDeskNotification
 ```
 
 Per assegnare un criterio denominato "criteri di chiamata di emergenza contoso 1" al sito 1, usare il comando seguente:
 
-```
+```PowerShell
 Set-CsTenantNetworkSite -identity "site1" -EmergencyCallingPolicy "Contoso Emergency Calling Policy 1"
 ```
 
 Per abilitare un utente di routing diretto specifico per le chiamate di emergenza, usare il comando seguente:
 
-```
+```PowerShell
 Grant-CsTeamsEmergencyCallRoutingPolicy -Identity user1 -PolicyName UnitedStates
 ```
 
 Per assegnare un criterio denominato "routing delle chiamate di emergenza di Contoso New York" al sito 1, usare il comando seguente:
 
-```
+```PowerShell
 Set-CsTenantNetworkSite -identity "site1" -EmergencyCallRoutingPolicy "Contoso New York Emergency Call Routing"
 ```
 
@@ -204,5 +204,5 @@ Alcuni provider di servizi di routing di emergenza (ERSPs) negli Stati Uniti off
 - [Gestire i criteri di routing delle chiamate di emergenza](manage-emergency-call-routing-policies.md)
 - [Aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md)
 - [Assegnare o modificare una posizione di emergenza per l'utente](assign-change-emergency-location-user.md)
-- [Impostazioni di rete per le funzionalità vocali cloud](cloud-voice-network-settings.md)
-- [Gestire la topologia di rete per le funzionalità vocali cloud](manage-your-network-topology.md)
+- [Impostazioni di rete per le funzionalità vocali del cloud](cloud-voice-network-settings.md)
+- [Gestire la topologia di rete per le funzionalità vocali del cloud](manage-your-network-topology.md)

@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri di routing delle chiamate di emergenza in Microsoft teams.
 f1keywords: ms.teamsadmincenter.voice.emergencycallroutingpolicies.overview
-ms.openlocfilehash: 4520bc1d9cc6a4e84a3702e32db859b784ae02bc
-ms.sourcegitcommit: f2c7626dbef4ed250b9a937a9b56d46fe2e2039e
+ms.openlocfilehash: 996ac202d837b4cfb253a2809880ce0907b33c6c
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39998804"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992713"
 ---
 # <a name="manage-emergency-call-routing-policies-in-microsoft-teams"></a>Gestire i criteri di routing delle chiamate di emergenza in Microsoft Teams
 
@@ -105,15 +105,15 @@ In questo esempio viene assegnato un criterio denominato criteri di routing dell
 > Prima di tutto, assicurati di connetterti a Azure Active Directory PowerShell per modulo grafico e modulo di PowerShell per Skype for business seguendo la procedura descritta in [Connetti a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
 
 Ottenere il GroupObjectId del gruppo specifico.
-```
+```PowerShell
 $group = Get-AzureADGroup -SearchString "Contoso HR"
 ```
 Ottenere i membri del gruppo specificato.
-```
+```PowerShell
 $members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-Object {$_.ObjectType -eq "User"}
 ```
 Assegnare tutti gli utenti del gruppo a un determinato criterio teams. In questo esempio si tratta di criteri di routing delle chiamate di emergenza HR.
-```
+```PowerShell
 $members | ForEach-Object { Grant-CsTeamsChannelsPolicy -PolicyName "HR Emergency Call Routing Policy" -Identity $_.UserPrincipalName}
 ``` 
 A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.
@@ -124,7 +124,7 @@ Utilizzare il cmdlet [set-CsTenantNetworkSite](https://docs.microsoft.com/powers
 
 Questo esempio Mostra come assegnare un criterio denominato criteri di routing delle chiamate di emergenza 1 al sito di Microsoft1.
 
-```
+```PowerShell
 Set-CsTenantNetworkSite -identity "site1" -EmergencyCallRoutingPolicy "Emergency Call Routing Policy 1"
 ```
 

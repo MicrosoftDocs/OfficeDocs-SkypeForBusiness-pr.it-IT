@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 0512b9ce-7f5b-48eb-a79e-f3498bacf2de
 description: 'Riepilogo: informazioni su come avviare o arrestare una sessione di acquisizione del log del servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: 49c36620cd58bf113ad1ce7823fcc438d88d8724
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b4da74e05a1eb6f6945f44c0c045c2292e7acca7
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186797"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991441"
 ---
 # <a name="start-or-stop-cls-log-capture-in-skype-for-business-server-2015"></a>Avviare o arrestare l'acquisizione dei log CSL in Skype for Business 2015
  
@@ -37,13 +37,13 @@ Il servizio di registrazione centralizzato offre due modi per emettere comandi. 
     
 2. Avviare uno scenario di registrazione con il servizio di registrazione centralizzato digitando quanto segue:
     
-   ```
+   ```PowerShell
    Start-CsClsLogging -Scenario <name of scenario>
    ```
 
     Ad esempio, per avviare lo scenario **AlwaysOn** , digitare:
     
-   ```
+   ```PowerShell
    Start-CsClsLogging -Scenario AlwaysOn
    ```
 
@@ -59,7 +59,7 @@ Il servizio di registrazione centralizzato offre due modi per emettere comandi. 
   
 4. Per avviare un altro scenario, usare il cmdlet **Start-CsClsLogging** con il nome dello scenario aggiuntivo da eseguire come indicato di seguito, ad esempio l' **autenticazione**dello scenario:
     
-   ```
+   ```PowerShell
    Start-CsClsLogging -Scenario Authentication
    ```
 
@@ -74,7 +74,7 @@ Il servizio di registrazione centralizzato offre due modi per emettere comandi. 
     
     Si avvia una sessione di registrazione per lo scenario UserReplicator nel pool "pool01.contoso.net". Puoi anche definire la durata della sessione di registrazione a 8 ore. A tale scopo, digitare:
     
-   ```
+   ```PowerShell
    Start-CsClsLogging -Scenario UserReplicator -Duration 8:00 -Pools "pool01.contoso.net"
    ```
 
@@ -96,13 +96,13 @@ Dopo aver compreso il problema e l'ambito dell'impatto, è consigliabile sceglie
   
 Per controllare le funzioni del servizio di registrazione centralizzato usando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator (RBAC) o di un ruolo RBAC personalizzato che contiene uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati manualmente), eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
   
-```
+```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
 ```
 
 Ad esempio:
   
-```
+```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 ```
 
@@ -115,7 +115,7 @@ Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
     
 2. Eseguire una query sul servizio di registrazione centralizzata per individuare gli scenari in esecuzione digitando quanto segue:
     
-   ```
+   ```PowerShell
    Show-CsClsLogging
    ```
 
@@ -125,12 +125,12 @@ Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
     
 3. Per interrompere una sessione di registrazione attualmente in uso con uno scenario specifico, digitare:
     
-   ```
+   ```PowerShell
    Stop-CsClsLogging -Scenario <scenario name> -Computers <comma separated list of fully qualified computer names> -Pools <comma separated list of fully qualified pool names>
    ```
    Ad esempio:
     
-   ```
+   ```PowerShell
    Stop-CsClsLogging -Scenario UserReplicator -Pools pool01.contoso.net
    ```
 

@@ -9,12 +9,12 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Dopo aver rimosso un server di archiviazione, è possibile rimuovere i database di SQL Server che ospitavano i dati del pool. Usare le procedure seguenti per rimuovere le definizioni da generatore di topologie e quindi rimuovere il database e i file di log dal server di database.
-ms.openlocfilehash: ab76c8ebc629206827be0a4c0a5477eff54a0923
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 149342f49fded4af294f76028140a9f76f190ed1
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36241815"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989001"
 ---
 # <a name="remove-the-sql-server-database-for-an-archiving-server"></a>Rimuovere il database di SQL Server per un server di archiviazione
 
@@ -36,7 +36,7 @@ Dopo aver rimosso un server di archiviazione, è possibile rimuovere i database 
     
 3. Nella riga di comando digitare quanto segue:
     
-   ```
+   ```PowerShell
    Uninstall-CsDataBase -DatabaseType Archiving -SqlServerFqdn <FQDN> [-SqlInstanceName <instance>]
    ```
 

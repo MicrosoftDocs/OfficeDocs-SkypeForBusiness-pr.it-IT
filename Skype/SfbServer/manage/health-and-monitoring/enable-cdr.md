@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3b28e432-596f-45a5-a070-577d6fa748d9
 description: 'Riepilogo: informazioni su come abilitare i record di registrazione dettagli chiamata (CDR) in Skype for Business Server.'
-ms.openlocfilehash: 015ac3b57420401894e82c267e9737990ca7affb
-ms.sourcegitcommit: 332817f49ec1e6767334fdd4c2ec3f791020a26c
+ms.openlocfilehash: 3474a82bfc9ed8e8bad954bb91346989d9181465
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36767058"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992946"
 ---
 # <a name="enable-call-detail-recording-in-skype-for-business-server"></a>Abilitare la registrazione dei dettagli delle chiamate in Skype for Business Server
 
@@ -49,7 +49,7 @@ Usare la procedura seguente per abilitare CDR per l'intera organizzazione o per 
 
  Per disabilitare CDR, imposta il parametro EnableCDR su true ($True).
 
-  ```
+  ```PowerShell
   Set-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $True
   ```
 
@@ -57,7 +57,7 @@ Usare la procedura seguente per abilitare CDR per l'intera organizzazione o per 
 
  Per disabilitare CDR, imposta il parametro EnableCDR su false ($False). La disattivazione di CDR non disinstalla il monitoraggio. Sospende la raccolta e lo spazio di archiviazione dei dati CDR.
 
-  ```
+  ```PowerShell
   Set-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $False
   ```
 
@@ -65,7 +65,7 @@ Usare la procedura seguente per abilitare CDR per l'intera organizzazione o per 
 
  Questo comando consente a CDR di usare tutte le impostazioni di configurazione CDR attualmente in uso nell'organizzazione.
 
-  ```
+  ```PowerShell
   Get-CsCdrConfiguration | Set-CsCdrConfiguration -EnableCDR $True
   ```
 

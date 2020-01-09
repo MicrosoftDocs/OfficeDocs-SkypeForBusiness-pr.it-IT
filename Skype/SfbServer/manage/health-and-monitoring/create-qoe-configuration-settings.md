@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 64f05569-07c7-4f76-a96b-ea4125a510d5
 description: 'Riepilogo: informazioni sulle impostazioni di qualità delle esperienze (QoE) in Skype for Business Server.'
-ms.openlocfilehash: d87938fdab64f3a77b96f427363c846829081f44
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 254e6f1032026f715c30017f984bc2906f46e0df
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195700"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992793"
 ---
 # <a name="create-quality-of-experience-configuration-settings-in-skype-for-business-server"></a>Creare impostazioni di configurazione della qualità delle esperienze in Skype for Business Server
  
@@ -39,7 +39,7 @@ Le impostazioni di configurazione QoE possono essere create usando il pannello d
   
 ### <a name="to-create-qoe-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare impostazioni di configurazione QoE usando il pannello di controllo di Skype for Business Server
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere delegare le **autorizzazioni di configurazione**.
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **delegare le autorizzazioni di configurazione**.
     
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.  
     
@@ -67,7 +67,7 @@ Puoi creare impostazioni di configurazione QoE usando Windows PowerShell e il cm
 
  Questo comando crea una nuova raccolta di impostazioni di configurazione QoE applicate al sito Redmond:
     
-  ```
+  ```PowerShell
   New-CsQoEConfiguration -Identity "site:Redmond"
   ```
 
@@ -75,7 +75,7 @@ Puoi creare impostazioni di configurazione QoE usando Windows PowerShell e il cm
 
  Poiché non sono stati specificati parametri (ad eccezione del parametro di identità obbligatorio) nel comando precedente, la nuova raccolta di impostazioni di configurazione utilizzerà i valori predefiniti per tutte le relative proprietà. Per creare impostazioni che usano valori di proprietà diversi, includere semplicemente il parametro e il valore del parametro appropriati. Ad esempio, per creare una raccolta di impostazioni di configurazione della qualità delle esperienze che, per impostazione predefinita, consentono di disabilitare la registrazione QoE usare un comando simile al seguente:
     
-  ```
+  ```PowerShell
   New-CsQoEConfiguration -Identity "site:Redmond" -EnableQoE $False
   ```
 
@@ -83,7 +83,7 @@ Puoi creare impostazioni di configurazione QoE usando Windows PowerShell e il cm
 
  Puoi includere più valori di proprietà includendo più parametri. Ad esempio, questo comando Configura le nuove impostazioni per conservare i dati QoE per 30 giorni e per eliminare i vecchi dati in 3:00 AM:
     
-  ```
+  ```PowerShell
   New-CsQoEConfiguration -Identity "site:Redmond" -KeepQoEDataForDays 30 -PurgeHourOfDay 3
   ```
 

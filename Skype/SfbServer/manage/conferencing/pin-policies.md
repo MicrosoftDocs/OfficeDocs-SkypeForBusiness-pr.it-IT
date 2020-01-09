@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 459e80bf-5791-49f8-878d-4a5178b3a210
 description: 'Riepilogo: informazioni su come gestire i criteri PIN per i servizi di conferenza telefonica con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: a8db6fc0398d2f577afe54ab2289c3122adcb197
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f5ffef4af17a4337fe600b2059aab1ea106235ae
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188924"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992293"
 ---
 # <a name="manage-pin-policies-for-dial-in-conferencing-in-skype-for-business-server"></a>Gestire i criteri PIN per i servizi di conferenza telefonica con accesso esterno in Skype for Business Server
  
@@ -47,7 +47,7 @@ Puoi visualizzare le informazioni sui criteri PIN usando il pannello di controll
 
 Per visualizzare le informazioni sui criteri PIN, usare il cmdlet **Get-CsPinPolicy** . Ad esempio, il comando seguente restituisce informazioni su un singolo criterio PIN con il sito identità: Redmond:
   
-```
+```PowerShell
 Get-CsPinPolicy -Identity "site:Redmond"
 ```
 
@@ -92,7 +92,7 @@ Per modificare il criterio PIN per i servizi di conferenza telefonica con access
   
 Con il comando seguente viene modificato il valore di MinPasswordLength per tutti i criteri PIN configurati per l'uso nell'organizzazione. A questo scopo, il comando chiama prima il cmdlet **Get-CsPinPolicy** senza parametri per recuperare una raccolta di tutti i criteri PIN esistenti. La raccolta viene quindi inviata tramite pipe al cmdlet **Set-CsPinPolicy** , che modifica il valore della proprietà MinPasswordLength per ogni criterio della raccolta:
   
-```
+```PowerShell
 Get-CsPinPolicy | Set-CsPinPolicy -MinPasswordLength 10
 ```
 
@@ -143,7 +143,7 @@ Per creare un criterio PIN per un utente o un sito, usare il cmdlet **New-CsPinP
   
 Il comando seguente crea un nuovo criterio PIN con il sito Identity: Redmond. Questo comando include solo un parametro facoltativo, MinPasswordLength, usato per impostare la proprietà MinPasswordLength su 7. Tutte le proprietà dei criteri rimanenti verranno configurate usando i valori predefiniti.
   
-```
+```PowerShell
 New-CsPinPolicy -Identity "site:Redmond" -MinPasswordLength 7
 ```
 
@@ -173,7 +173,7 @@ Per modificare il criterio PIN per i servizi di conferenza telefonica con access
   
 Il comando seguente modifica il criterio PIN assegnato al sito Redmond. In questo caso, il comando modifica il valore della proprietà MinPasswordLength su 10; Ciò significa che i nuovi PIN dovranno contenere almeno 10 cifre:
   
-```
+```PowerShell
 Set-CsPinPolicy -Identity site:Redmond -MinPasswordLength 10
 ```
 
@@ -199,7 +199,7 @@ Per eliminare un criterio PIN per un utente o un sito, usare il cmdlet **Remove-
   
 Il comando seguente rimuove tutti i criteri PIN configurati nell'ambito del sito. A questo scopo, usa il cmdlet **Get-CsPinPolicy** insieme al parametro Filter per restituire una raccolta di tutti i criteri con un'identità che inizia con i caratteri "sito:". La raccolta viene quindi inviata tramite pipe al cmdlet **Remove-CsPinPolicy** , che elimina ogni criterio della raccolta:
   
-```
+```PowerShell
 Get-CsPinPolicy -Filter "site:*" | Remove-CsPinPolicy
 ```
 

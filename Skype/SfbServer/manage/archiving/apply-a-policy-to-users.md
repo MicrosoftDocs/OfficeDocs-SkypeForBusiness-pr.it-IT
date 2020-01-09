@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bebd45d1-93c3-4e80-8933-755b699b2209
 description: 'Riepilogo: informazioni su come assegnare un criterio di archiviazione agli utenti in Skype for Business Server.'
-ms.openlocfilehash: 895a7fac34fcac0a4a7e39756796f6b7d2fc6377
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5dbd1624813b187e8c0981aa1a84b6096b79e86a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189359"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992783"
 ---
 # <a name="apply-an-archiving-policy-to-users-in-skype-for-business-server"></a>Applicare un criterio di archiviazione agli utenti in Skype for Business Server
 
@@ -51,19 +51,19 @@ Puoi anche applicare un criterio utente usando il cmdlet **Grant-CsArchivingPoli
   
 Con il comando seguente viene assegnato il criterio di archiviazione per utente RedmondArchivingPolicy all'utente Ken.
   
-```
+```PowerShell
 Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName "RedmondArchivingPolicy"
 ```
 
 Questo comando assegna il criterio di archiviazione per utente RedmondArchivingPolicy a tutti gli utenti che hanno account assegnati nel pool di registrazione atl-cs-001.contoso.com. Per informazioni dettagliate sul parametro Filter usato in questo comando, vedere la documentazione del cmdlet [Get-CsUser](https://docs.microsoft.com/powershell/module/skype/get-csuser?view=skype-ps) .
   
-```
+```PowerShell
 Get-CsUser -Filter {RegistrarPool -eq "atl-cs-001.contoso.com"} | Grant-CsArchivingPolicy -PolicyName "RedmondArchivingPolicy"
 ```
 
 Il comando seguente rimuove tutti i criteri di archiviazione per utente assegnati in precedenza a Ken. Dopo che il criterio per utente viene rimosso, Ken è gestito automaticamente tramite il criterio globale oppure, se disponibile, il criterio del sito locale. Un criterio di sito ha la precedenza sui criteri globali.
   
-```
+```PowerShell
 Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName $Null
 ```
 

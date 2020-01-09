@@ -14,12 +14,12 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 615848be1f91f80b0afd06c1eaa44a4f9d7b4f63
-ms.sourcegitcommit: 021c86bf579e315f15815dcddf232a0c651cbf6b
+ms.openlocfilehash: 48fbd1477194b7523b65ec527686b7304f0c37b2
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39615796"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992021"
 ---
 # <a name="enable-location-based-routing-for-direct-routing"></a>Abilitare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -39,16 +39,16 @@ Questo articolo descrive come abilitare il routing basato sulla posizione per il
 
 1. Usa il cmdlet [set-CsOnlinePstnUsage](https://docs.microsoft.com/powershell/module/skype/set-csonlinepstnusage?view=skype-ps) per impostare gli usi PSTN. Per più usi, separare ogni utilizzo con una virgola.
 
-    ```
+    ```PowerShell
     Set-CsOnlinePstnUsage -Usage <usages> 
     ```
     Ad esempio:
-    ```
+    ```PowerShell
     Set-CsOnlinePstnUsage -Usage "Long Distance", "Local", "Internal" 
     ```
 2. Usa il cmdlet [New-CsOnlineVoiceRoutingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csonlinevoiceroutingpolicy?view=skype-ps) per creare un criterio di routing vocale per associare l'utente agli usi appropriati della rete PSTN.
 
-    ```
+    ```PowerShell
     New-CsOnlineVoiceRoutingPolicy -Identity <voice routing policy ID> -Description <voice routing policy name> -OnlinePstnUsages <usages> 
     ```
     
@@ -58,7 +58,7 @@ Questo articolo descrive come abilitare il routing basato sulla posizione per il
 
     In questo esempio creiamo due nuovi criteri di routing vocale e li assegniamo agli usi PSTN. 
 
-    ```
+    ```PowerShell
     New-CsOnlineVoiceRoutingPolicy -Identity "DelhiVoiceRoutingPolicy" -Description "Delhi voice routing policy" -OnlinePstnUsages "Long Distance" 
     New-CsOnlineVoiceRoutingPolicy -Identity "HyderabadVoiceRoutingPolicy" -Description " Hyderabad voice routing policy" -OnlinePstnUsages "Long Distance", "Local", "Internal" 
     ```
@@ -70,18 +70,18 @@ Questo articolo descrive come abilitare il routing basato sulla posizione per il
     |Usi PSTN online  |Lunga distanza  |Lunga distanza, locale, interno  |
 
 3. Usare il cmdlet [Grant-CsOnlineVoiceRoutingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csonlinevoiceroutingpolicy?view=skype-ps) per associare i criteri di routing vocale online agli utenti che richiedono restrizioni di routing per l'applicazione.
-    ```
+    ```PowerShell
     Grant-CsOnlineVoiceRoutingPolicy -Identity <User> -Tenant <TenantId>
     ```
 ## <a name="enable-location-based-routing-for-network-sites"></a>Abilitare il routing basato sulla posizione per i siti di rete
 1.  Usa il cmdlet [set-CsTenantNetworkSite](https://docs.microsoft.com/powershell/module/skype/set-cstenantnetworksite?view=skype-ps) per abilitare il routing basato sulla posizione e associare i criteri di routing vocale ai siti di rete che devono applicare restrizioni di routing.
-    ```
+    ```PowerShell
     Set-CsTenantNetworkSite -Identity <site ID> -EnableLocationBasedRouting <$true|$false>  
     ```
 
     In questo esempio, consentiamo il routing basato sulla posizione per il sito Delhi e il sito Hyderabad. 
 
-    ```
+    ```PowerShell
     Set-CsTenantNetworkSite -Identity "Delhi" -EnableLocationBasedRouting $true  
     Set-CsTenantNetworkSite -Identity "Hyderabad" -EnableLocationBasedRouting $true 
     ```
@@ -96,13 +96,13 @@ Questo articolo descrive come abilitare il routing basato sulla posizione per il
 ## <a name="enable-location-based-routing-for-gateways"></a>Abilitare il routing basato sulla posizione per i gateway
 1. Usa il cmdlet [New-CsOnlinePSTNGateway](https://docs.microsoft.com/powershell/module/skype/new-csonlinepstngateway?view=skype-ps) per creare una configurazione del gateway per ogni sito di gateway o di rete. 
 
-    ```
+    ```PowerShell
     New-CSOnlinePSTNGateway -Fqdn <FDQN registered for the SBC> -Identity <gateway configuration ID> -SipSignallingPort <listening port used> -Enabled $true 
     ```
     Se più gateway sono associati a un sistema, ad esempio gateway o PBX, modifica ogni gateway per abilitare le restrizioni di routing basate sulla posizione. 
 
     In questo esempio creiamo una configurazione di gateway per ogni gateway. 
-    ```
+    ```PowerShell
     New-CsOnlinePSTNGateway -Fqdn sbc.contoso.com -Enabled $true -SipSignallingPort 5067 
     ```
     Per altre informazioni, vedere [configurare il routing diretto](direct-routing-configure.md).
@@ -111,18 +111,18 @@ Questo articolo descrive come abilitare il routing basato sulla posizione per il
 
     Abilitare il routing basato sulla posizione ai gateway che instradano le chiamate ai gateway PSTN che instradano le chiamate alla rete PSTN e associano il sito in cui si trova il gateway.
 
-    ```
+    ```PowerShell
     Set-CSOnlinePSTNGateway -Identity <gateway configuration ID> -GatewaySiteLbrEnabled $true -GatewaySiteID <site ID> 
     ```
 
     In questo esempio, consentiamo il routing basato sulla posizione per ogni gateway associato ai gateway PSTN nei siti di Delhi e Hyderabad. 
-    ```
+    ```PowerShell
     Set-CSOnlinePSTNGateway -Identity sbc.contoso.com  -GatewaySiteLbrEnabled $true –GatewaySiteID “Delhi”
     Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com  -GatewaySiteLbrEnabled $true -GatewaySiteID “Hyderabad” 
     ```
     Non abilitare il routing basato sulla posizione per i gateway che non instradano le chiamate alla rete PSTN. Tuttavia, devi comunque associare il gateway al sito di rete in cui si trova il sistema. Questo perché le restrizioni di routing basate sul percorso devono essere applicate per le chiamate PSTN raggiungendo endpoint connessi tramite il gateway. In questo esempio, il routing basato sulla posizione non è abilitato per ogni gateway associato ai sistemi PBX nei siti di Delhi e Hyderabad.
 
-    ```
+    ```PowerShell
     Get-CSONlinePSTNGateway -Identity sbc.contoso.com 
  
     Identity: sbc.contoso.com 
@@ -151,12 +151,12 @@ Per applicare il routing basato sulla posizione per gli utenti specifici, config
 
 Usare il cmdlet [Grant-CsTeamsCallingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamscallingpolicy?view=skype-ps) per abilitare il routing basato sulla posizione impedendo l'esclusione di pedaggio PSTN.
 
-```
+```PowerShell
 Grant-CsTeamsCallingPolicy -PolicyName <policy name> -id <user id> 
 ```
 In questo esempio viene impedito l'esclusione del pedaggio PSTN ai criteri di chiamata di Utente1. 
 
-```
+```PowerShell
 Grant-CsTeamsCallingPolicy –PolicyName “AllowCallingPreventTollBypass” -id “User1” 
 ```
 

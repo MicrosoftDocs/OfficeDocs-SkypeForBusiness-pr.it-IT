@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Informazioni sulla ricerca di contenuto in Microsoft teams e su come eseguire la ricerca in base a conversazioni di canale da Exchange, upload di file e modifiche da SharePoint e OneNote.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3042a39d30ca14ff4eda9be6a1042bfca3484bd2
-ms.sourcegitcommit: ddb4eaf634476680494025a3aa1c91d15fb58413
+ms.openlocfilehash: fea6e671a84eec6f064a7ccc1f7f9b3f237a220d
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "38231157"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991081"
 ---
 <a name="use-content-search-in-microsoft-teams"></a>Usare la ricerca contenuto in Microsoft Teams
 =====================================
@@ -54,18 +54,18 @@ Prima di eseguire questa procedura, installare [SharePoint Online Management She
 
 1. Eseguire la procedura seguente per ottenere un elenco di tutte le raccolte siti di SharePoint associate a canali privati nel team.
 
-    ```
+    ```PowerShell
     Get-SPOSite
     ```
 2. Eseguire lo script di PowerShell seguente per ottenere un elenco di tutti gli URL della raccolta siti di SharePoint associati a canali privati nel team e nell'ID del gruppo del team padre.
 
-    ```
+    ```PowerShell
     $sites = get-sposite -template "teamchannel#0"
     foreach ($site in $sites) {$x= get-sposite -identity $site.url -detail; $x.relatedgroupID; $x.url} 
     ```
 3. Per ogni ID team o gruppo, Esegui lo script di PowerShell seguente per identificare tutti i siti di canale privati rilevanti.
 
-    ```
+    ```PowerShell
     $sites = get-sposite -template "teamchannel#0"
     $groupID = “e8195240-4a70-4830-9106-80193cf717cb“
     foreach ($site in $sites) {$x= Get-SpoSite -Identity $site.url -Detail; if ($x.RelatedGroupId -eq $groupID) {$x.RelatedGroupId;$x.url}}
@@ -77,12 +77,12 @@ Prima di eseguire questa procedura, verificare di avere installato la [versione 
 
 1. Eseguire la procedura seguente per ottenere un elenco di canali privati nel team.
 
-    ```
+    ```PowerShell
     Get-TeamChannel -GroupId <GroupID> -MembershipType Private
     ```
 2. Eseguire la procedura seguente per ottenere un elenco dei membri del canale privato.
 
-    ```
+    ```PowerShell
     Get-TeamChannelUser -GroupId <GroupID> -DisplayName "Engineering" -Role Member
     ```
 3. Includere le cassette postali di tutti i membri di ogni canale privato del team come parte della query di ricerca contenuto.

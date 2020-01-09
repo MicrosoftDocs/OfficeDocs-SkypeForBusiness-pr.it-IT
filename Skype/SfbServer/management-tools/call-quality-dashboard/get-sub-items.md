@@ -1,5 +1,5 @@
 ---
-title: Ottenere voci secondarie
+title: Ottieni elementi secondari
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -11,20 +11,20 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 0542eba9-3dda-40de-bba8-095d22825e4e
 description: "Riepilogo: informazioni sull'operazione Get Sub-Items, che fa parte del servizio Item. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 7be427ed4ea90cd46c6f8cea4ffe3a97be98479b
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 75fc4fcd331925c224d8dfb72c681d25e3485eb6
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186911"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992653"
 ---
-# <a name="get-sub-items"></a>Ottenere voci secondarie
+# <a name="get-sub-items"></a>Ottieni elementi secondari
  
 **Riepilogo:** Informazioni sull'operazione Get Sub-Items, che fa parte del servizio Item. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
   
 L'operazione Get Sub-Items fa parte del servizio Item nell'API del repository per Call Quality dashboard.
   
-## <a name="get-sub-items"></a>Ottenere voci secondarie
+## <a name="get-sub-items"></a>Ottieni elementi secondari
 
 Get Sub-Items restituisce gli elementi secondari di un elemento specifico.
   
@@ -50,7 +50,7 @@ Get Sub-Items restituisce gli elementi secondari di un elemento specifico.
 > [!NOTE]
 > Viene restituita una matrice di oggetto Item. 
   
-```
+```json
 [{
 "itemId": 1653,
 "userId": 0,

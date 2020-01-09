@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f42e4d60-699b-4870-8bb5-13b51bb6eb2b
 description: 'Riepilogo: informazioni sul report del dispositivo in Skype for Business Server.'
-ms.openlocfilehash: 2c92faaca47ef78aca403fe436562029f5fde551
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 9b9198d8080c8f1e22e59e2cd496bb7fb318eaae
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195529"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992413"
 ---
 # <a name="device-report-in-skype-for-business-server"></a>Report dispositivo in Skype for Business Server
  
@@ -25,7 +25,7 @@ Il report del dispositivo potrebbe essere meglio intitolato il rapporto microfon
   
 Il report del dispositivo è estremamente utile per gli amministratori per determinare se un determinato tipo di dispositivo sta vivendo alti volumi di chiamate di qualità scadente rispetto ad altri. A sua volta, questo potrebbe influenzare qualsiasi decisione da apportare quando arriva il momento di acquistare nuovi dispositivi o di sostituire i dispositivi esistenti.
   
-Per impostazione predefinita, le informazioni visualizzate nel report del dispositivo si basano anche sul microfono (il dispositivo di acquisizione) e gli altoparlanti/auricolare (il dispositivo di rendering) usati nella chiamata. Supponi ad esempio di avere diversi utenti che usano il dispositivo di acquisizione seguente e il dispositivo di rendering seguente: per impostazione predefinita, le informazioni visualizzate nel report del dispositivo si basano anche sul microfono (il dispositivo di acquisizione) e gli altoparlanti/auricolare (il dispositivo di rendering) ) usato nella chiamata. Supponi ad esempio di avere diversi utenti che usano il dispositivo di acquisizione seguente e il dispositivo di rendering seguente:
+Per impostazione predefinita, le informazioni visualizzate nel report del dispositivo si basano anche sul microfono (il dispositivo di acquisizione) e gli altoparlanti/auricolare (il dispositivo di rendering) usati nella chiamata. Supponi ad esempio di avere diversi utenti che usano il dispositivo di acquisizione seguente e il dispositivo di rendering seguente: per impostazione predefinita, le informazioni visualizzate nel report del dispositivo si basano anche sul microfono (il dispositivo di acquisizione) e gli altoparlanti/auricolare (il dispositivo di rendering) usati nella chiamata. Supponi ad esempio di avere diversi utenti che usano il dispositivo di acquisizione seguente e il dispositivo di rendering seguente:
   
 - Dispositivo di acquisizione: microfono (SoundMAX Integrated Digital HD audio)
     
@@ -107,9 +107,9 @@ Quando si tratta di nomi di dispositivi, il report del dispositivo è estremamen
 > [!NOTE]
 > Tieni presente che i nomi dei dispositivi di acquisizione potrebbero non essere uguali se stai usando versioni localizzate di Skype for Business Server. Un dispositivo denominato Aastra 6725ip Microphone (Aastra 6725ip)-V0 in inglese USA potrebbe avere un nome diverso in francese o spagnolo. 
   
-Spesso si vorrà questo livello di dettaglio; in altri casi, tuttavia, potresti essere interessato al numero di chiamate che usano qualsiasi microfono Aastra, indipendentemente dal tipo di modello. Un modo per ottenere informazioni come questo consiste nell'esportare i dati del report del dispositivo in Microsoft Excel e quindi salvare i dati in un file con valori delimitati da virgole (ad esempio, C:\Data\Devices_Report.csv). Puoi quindi usare un set di comandi simili a questi per importare. File CSV in Windows PowerShell e riportare il numero totale di chiamate effettuate con un dispositivo di acquisizione Aastra:
+Spesso si vorrà questo livello di dettaglio; in altri casi, tuttavia, potresti essere interessato al numero di chiamate che usano qualsiasi microfono Aastra, indipendentemente dal tipo di modello. Un modo per ottenere informazioni come questo consiste nell'esportare i dati del report del dispositivo in Microsoft Excel e quindi salvare i dati in un file con valori delimitati da virgole, ad esempio C:\Data\ Devices_Report. csv. Puoi quindi usare un set di comandi simili a questi per importare. File CSV in Windows PowerShell e riportare il numero totale di chiamate effettuate con un dispositivo di acquisizione Aastra:
   
-```
+```PowerShell
 $devices = Import-Csv "C:\Data\Device_Report.csv
 $sum = $devices | Where-Object {$_."Capture device" -match "Aastra"}
 $sum | foreach-object {[Int]$x = [Int]$x + [Int]$_."call volume"}

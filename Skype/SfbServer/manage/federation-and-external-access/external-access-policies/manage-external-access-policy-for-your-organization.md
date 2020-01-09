@@ -13,12 +13,12 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Dopo aver distribuito uno o più server perimetrali, è necessario abilitare i tipi di accesso esterno che verranno supportati per l'organizzazione.
-ms.openlocfilehash: 014077fb331bc33933d0c673771f7765b9341570
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f1f9798907f70893601a5dfe05b5045e484911e0
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188807"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991751"
 ---
 # <a name="manage-external-access-policy-for-your-organization"></a>Gestire i criteri di accesso esterno per l'organizzazione
 
@@ -62,7 +62,7 @@ Queste opzioni includono i tipi di accesso esterno seguenti:
     
     Questo comando restituisce informazioni simili a quelle seguenti:
     
-    ```
+    ```console
     Identity                          : Global
     Description                       :
     EnableFederationAccess            : False

@@ -1,5 +1,5 @@
 ---
-title: Mancanza di un nuovo pool
+title: Eseguire failover e failback di un pool
 ms.reviewer: ''
 author: lanachin
 ms.author: v-lanac
@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: .
-ms.openlocfilehash: 2848261164ac568d3db4dd05160b7e50ec3981d3
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f2a1970df43aa2fb7becb03319ee6ff5934afe0a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195533"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991801"
 ---
 # <a name="failing-over-and-failing-back-a-pool-in-skype-for-business-server"></a>Mancanza di un pool in Skype for Business Server 
 
@@ -102,8 +102,8 @@ Inoltre, se un pool Front-end non riesce ma il pool di Edge in tale sito è anco
 6.  Installare il Central Management store nel server back-end del pool\_di backup.
     
       - Eseguire prima di tutto il comando seguente:
-        
-        ``` 
+        ```PowerShell
+         
         Install-CsDatabase -CentralManagementDatabase -Clean -SqlServerFqdn <Backup_Pool Back End Server FQDN> -SqlInstanceName rtc  
         ```
     

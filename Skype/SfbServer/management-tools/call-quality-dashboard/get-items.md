@@ -1,5 +1,5 @@
 ---
-title: Ottenere gli elementi
+title: Ottenere elementi
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -11,20 +11,20 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 9e189a48-4944-4f93-88d7-9d56b56770a6
 description: "Riepilogo: informazioni sull'operazione get items, che fa parte del servizio Item. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: a1e7e8525df77cd5aacafb6d41316a985fbe9694
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: be93e16750c1a977a6bc3cfc9651e78a043ef563
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186929"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992663"
 ---
-# <a name="get-items"></a>Ottenere gli elementi
+# <a name="get-items"></a>Ottenere elementi
  
 **Riepilogo:** Informazioni sull'operazione get items, che fa parte del servizio Item. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
   
 L'operazione get items fa parte del servizio Item nell'API del repository per Call Quality dashboard.
   
-## <a name="get-items"></a>Ottenere gli elementi
+## <a name="get-items"></a>Ottenere elementi
 
 Get Items restituisce tutti gli elementi del repository.
   
@@ -49,7 +49,7 @@ Get Items restituisce tutti gli elementi del repository.
 > [!NOTE]
 > Viene restituita una matrice di oggetti Item. Per informazioni dettagliate sull'oggetto elemento, vedere ottenere un elemento. 
   
-```
+```json
 [{
 "itemId": 1652,
 "userId": 0,

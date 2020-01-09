@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: fd0c4c2f-3bfb-42cb-9b6a-f0f8d5aa9e81
 description: 'Riepilogo: informazioni su come eliminare le impostazioni di qualità delle esperienze (QoE) in Skype for Business Server.'
-ms.openlocfilehash: 4b521afd85a97550b27f320b9e49c5439e431681
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 134ebe39f41ca051db4ff79eafb094dcc929b5e8
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195698"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992423"
 ---
 # <a name="delete-quality-of-experience-configuration-settings-in-skype-for-business-server"></a>Eliminare le impostazioni di configurazione della qualità delle esperienze in Skype for Business Server
  
@@ -31,7 +31,7 @@ Puoi rimuovere le impostazioni di configurazione QoE usando il pannello di contr
   
 ### <a name="to-delete-qoe-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per eliminare le impostazioni di configurazione QoE usando il pannello di controllo di Skype for Business Server
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere delegare le **autorizzazioni di configurazione**.
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **delegare le autorizzazioni di configurazione**.
     
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.  
     
@@ -49,7 +49,7 @@ Puoi eliminare le impostazioni di configurazione QoE usando Windows PowerShell e
 
  Questo comando rimuove le impostazioni di configurazione QoE applicate al sito Redmond:
     
-  ```
+  ```PowerShell
   Remove-CsQoEConfiguration -Identity "site:Redmond"
   ```
 
@@ -57,7 +57,7 @@ Puoi eliminare le impostazioni di configurazione QoE usando Windows PowerShell e
 
  Questo comando rimuove tutte le impostazioni di configurazione QoE applicate all'ambito del sito:
     
-  ```
+  ```PowerShell
   Get-CsQoEConfiguration -Filter "site:*" | Remove-CsQoEConfiguration
   ```
 
@@ -65,7 +65,7 @@ Puoi eliminare le impostazioni di configurazione QoE usando Windows PowerShell e
 
  Questo comando rimuove tutte le impostazioni di configurazione QoE in cui è stato disabilitato il monitoraggio QoE:
     
-  ```
+  ```PowerShell
   Get-CsQoEConfiguration | Where-Object {$_.EnableQoE -eq $False} | Remove-CsQoEConfiguration
   ```
 

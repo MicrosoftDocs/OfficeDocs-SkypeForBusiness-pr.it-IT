@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 36bed690-6e22-4e11-88c1-b40a20836c6a
 description: 'Riepilogo: informazioni su come gestire le impostazioni di configurazione del server di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 190cd78e3c81f98859c40fe386fae2c4fd934a8e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: be6ccb094cc19a29534d1ca78eb2cae1457d6512
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191267"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991901"
 ---
 # <a name="manage-conferencing-server-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione del server di conferenza in Skype for Business Server
  
@@ -42,7 +42,7 @@ Per gestire le impostazioni di configurazione dei servizi di conferenza tramite 
    
 Il comando seguente crea una nuova raccolta di impostazioni di configurazione per i servizi di conferenza per il sito Redmond (sito: Redmond). In questo esempio viene incluso un altro parametro (organizzazione) che viene usato per impostare il valore della proprietà Organization su litwareinc: 
   
-```
+```PowerShell
 New-CsConferencingConfiguration -Identity site:Redmond -Organization Litwareinc
 ```
 
@@ -56,7 +56,7 @@ Dopo aver creato la raccolta, il secondo comando imposta il valore della proprie
   
 Infine, il terzo comando usa il cmdlet **Set-CsConferencingConfiguration** per applicare effettivamente le nuove impostazioni al sito Redmond:
   
-```
+```PowerShell
 $x = New-CsConferencingConfiguration -Identity site:Redmond -InMemory
 $x.Organization = "Litwareinc"
 Set-CsConferencingConfiguration -Instance $x

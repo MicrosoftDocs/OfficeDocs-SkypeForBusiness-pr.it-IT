@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 7392e4f8-6e2d-447b-aaa3-878f73995f9d
 description: 'Riepilogo: installare e configurare i nodi Watcher per le transazioni sintetiche di Skype for Business Server.'
-ms.openlocfilehash: f95803f61d527196c97c7a6a17b8e0bfcfdfbc7a
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: 7711c7c2009149fc6dd49ed34b4c55312cb7417a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36195895"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992443"
 ---
 # <a name="install-and-configure-watcher-nodes"></a>Installare e configurare i nodi Watcher
  
@@ -110,9 +110,9 @@ Per installare i file di base di Skype for Business Server 2015 e il database di
   
 1. Nel computer del nodo Watcher fare clic sul pulsante Start, scegliere tutti i programmi, accessori, fare clic con il pulsante destro del mouse su prompt dei comandi e quindi scegliere Esegui come amministratore.
     
-2. Nella finestra della console digitare il comando seguente e premere INVIO. Assicurarsi di immettere il percorso appropriato per i file di installazione di Skype for Business Server: D:\Setup.exe/BootstrapLocalMgmtTo verificare che i componenti principali di Skype for Business Server siano stati installati correttamente, fare clic sul pulsante **Start**, scegliere **tutti i programmi**. fare clic su **Skype for Business server 2015**e quindi su **Skype for Business Server Management Shell**. In Skype for Business Server Management Shell digitare il comando di Windows PowerShell seguente e premere INVIO:
+2. Nella finestra della console digitare il comando seguente e premere INVIO. Assicurarsi di immettere il percorso appropriato per i file di installazione di Skype for Business Server: D:\Setup.exe/BootstrapLocalMgmtTo verificare che i componenti principali di Skype for Business Server siano installati correttamente, fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server 2015**e quindi fare clic su **Skype for Business Server Management Shell**. In Skype for Business Server Management Shell digitare il comando di Windows PowerShell seguente e premere INVIO:
   
-```
+```PowerShell
 Get-CsWatcherNodeConfiguration
 ```
 
@@ -169,26 +169,26 @@ Per configurare l'autenticazione attendibile del server, è necessario prima di 
   
 Per creare un pool di applicazioni attendibili, aprire Skype for Business Server Management Shell ed eseguire un comando simile al seguente:
   
-```
+```PowerShell
 New-CsTrustedApplicationPool -Identity atl-watcher-001.litwareinc.com -Registrar atl-cs-001.litwareinc.com -ThrottleAsServer $True -TreatAsAuthenticated $True -OutboundOnly $False -RequiresReplication $True -ComputerFqdn atl-watcher-001.litwareinc.com -Site Redmond
 ```
 
 > [!NOTE]
 > Per informazioni dettagliate sui parametri del comando precedente, digitare quanto segue dal prompt di Skype for Business Server Management Shell: 
   
-```
+```PowerShell
 Get-Help New-CsTrustedApplicationPool -Full | more
 ```
 
 Dopo aver creato il pool di applicazioni attendibili, è possibile configurare il computer del nodo Watcher per eseguire transazioni sintetiche come applicazione attendibile usando il cmdlet **New-CsTrustedApplication** e un comando simile al seguente:
   
-```
+```PowerShell
 New-CsTrustedApplication -ApplicationId STWatcherNode -TrustedApplicationPoolFqdn atl-watcher-001.litwareinc.com -Port 5061
 ```
 
 Quando questo comando viene completato e viene creata l'applicazione attendibile, è necessario eseguire il cmdlet **Enable-CsTopology** per verificare che le modifiche abbiano effetto:
   
-```
+```PowerShell
 Enable-CsTopology
 ```
 
@@ -196,7 +196,7 @@ Dopo aver eseguito Enable-CsTopology, riavviare il computer.
   
 Per verificare che sia stata creata la nuova applicazione attendibile, digitare quanto segue al prompt di Skype for Business Server Management Shell:
   
-```
+```PowerShell
 Get-CsTrustedApplication -Identity "atl-watcher-001.litwareinc.com/urn:application:STWatcherNode"
 ```
 
@@ -231,7 +231,7 @@ Per installare e configurare un nodo Watcher:
     
 2. In Management Shell digitare il comando seguente e quindi premere INVIO (assicurarsi e specificare il percorso effettivo della copia di WatcherNode. msi):
     
-```
+```PowerShell
 C:\Tools\Watchernode.msi Authentication=TrustedServer
 ```
 
@@ -241,7 +241,7 @@ C:\Tools\Watchernode.msi Authentication=TrustedServer
 > [!IMPORTANT]
 > Nel comando precedente la coppia nome/valore Authentication = TrustedServer fa distinzione tra maiuscole e minuscole. Deve essere digitato esattamente come illustrato. Ad esempio, questo comando non riuscirà perché non usa l'involucro della lettera corretta: 
   
-```
+```PowerShell
 C:\Tools\Watchernode.msi authentication=trustedserver
 ```
 
@@ -282,7 +282,7 @@ Il passaggio successivo consiste nell'eseguire il file WatcherNode. msi:
     
 2. In Skype for Business Server Management Shell digitare il comando seguente e quindi premere INVIO (assicurarsi di specificare il percorso effettivo della copia di WatcherNode. msi):
     
-   ```
+   ```PowerShell
    c:\Tools\Watchernode.msi Authentication=Negotiate
    ```
 

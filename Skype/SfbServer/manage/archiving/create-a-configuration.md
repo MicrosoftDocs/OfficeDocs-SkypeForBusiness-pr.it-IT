@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: dc574afa-0b7d-404f-99b3-c812430b7c70
 description: 'Riepilogo: informazioni su come creare una configurazione di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: 58d817cea4c1caceff37bd132cd4f5a61445cdb0
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: bd2a139e7321542e3b13259ebc2ec1e4ba731caf
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190382"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992743"
 ---
 # <a name="create-an-archiving-configuration-in-skype-for-business-server"></a>Creare una configurazione di archiviazione in Skype for Business Server
 
@@ -55,7 +55,7 @@ Per configurare le opzioni di archiviazione per un sito o un pool specifico:
     
      - Per specificare l'eliminazione dopo un determinato numero di giorni, fare clic su **Elimina dati di archiviazione esportati e archivia dati archiviati dopo la durata massima (giorni)** e quindi specificare il numero di giorni.
     
-     - Per limitare l'eliminazione all'archiviazione dei dati esportati, fare clic su **Elimina solo i dati di archiviazione**esportati.
+     - Per limitare l'eliminazione all'archiviazione dei dati esportati, fare clic su **Elimina solo i dati di archiviazione esportati**.
     
 7. Fare clic su **Commit**.
     
@@ -65,7 +65,7 @@ Per configurare le opzioni di archiviazione per un sito o un pool specifico:
   
 Il comando seguente crea una nuova raccolta di impostazioni di configurazione dell'archiviazione per il sito Redmond:
   
-```
+```PowerShell
 New-CsArchivingConfiguration -Identity "site:Redmond"
 ```
 
@@ -73,13 +73,13 @@ Poiché non sono stati specificati parametri (ad eccezione del parametro di iden
   
 Per creare impostazioni che usano valori di proprietà diversi, includere semplicemente il parametro e il valore del parametro appropriati. L'esempio seguente crea una raccolta di impostazioni di configurazione dell'archiviazione che, per impostazione predefinita, consentono l'archiviazione solo delle sessioni di messaggistica istantanea:
   
-```
+```PowerShell
 New-CsArchivingConfiguration -Identity "site:Redmond" -EnableArchiving "ImOnly"
 ```
 
 Più valori di proprietà possono essere modificati includendo più parametri. Ad esempio, questo comando Configura le nuove impostazioni per l'archiviazione delle sessioni di messaggistica istantanea e per bloccare la messaggistica istantanea del servizio archiviazione non disponibile:
   
-```
+```PowerShell
 New-CsArchivingConfiguration -Identity "site:Redmond" -EnableArchiving "ImOnly" -BlockOnArchiveFailure $True
 ```
 

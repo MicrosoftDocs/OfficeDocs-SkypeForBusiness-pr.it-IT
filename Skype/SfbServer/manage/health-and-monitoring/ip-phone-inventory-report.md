@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: aa7d6b31-cb09-4e68-b020-aa5dd0081c20
 description: "Riepilogo: informazioni sul report sull'inventario dei telefoni IP in Skype for Business Server."
-ms.openlocfilehash: 8d7d7be6b5a677f3df33ebf2e0bb01f31b76eac9
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 51d4a3a7cbd4bf856efa93ae04c25accc5415796
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195680"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992171"
 ---
 # <a name="ip-phone-inventory-report-in-skype-for-business-server"></a>Report sull'inventario dei telefoni IP in Skype for Business Server
  
@@ -38,9 +38,9 @@ Il report inventario IP Phone si accede dalla Home page dei report di monitoragg
   
 ## <a name="making-the-best-use-of-the-ip-phone-inventory-report"></a>Sfruttare al meglio il report inventario IP Phone
 
-Se si è interessati solo alle informazioni sull'uso di un determinato tipo di telefono (ad esempio, "con quale frequenza Gli utenti usano un telefono CX600 Polycom?"), è possibile ottenere queste informazioni direttamente dal report inventario del telefono IP filtrando per quel particolare tipo di telefono. Tuttavia, se vuoi informazioni di riepilogo per tutti i telefoni (quante persone usano un Polycom CX600, quanti usano un IP8540 LG-Nortel e così via), dovrai esportare i dati e usare un'altra applicazione (ad esempio Windows PowerShell) per eseguire questo tipo di analisi. Supponiamo ad esempio di esportare i dati in un file con valori delimitati da virgole (C:\Data\IP_Phone_Inventory_Report.csv). In questo caso, puoi usare questi due comandi per specificare i dati di riepilogo per tutti i telefoni:
+Se si è interessati solo alle informazioni sull'uso di un determinato tipo di telefono (ad esempio, "con quale frequenza Gli utenti usano un telefono CX600 Polycom?"), è possibile ottenere queste informazioni direttamente dal report inventario del telefono IP filtrando per quel particolare tipo di telefono. Tuttavia, se vuoi informazioni di riepilogo per tutti i telefoni (quante persone usano un Polycom CX600, quanti usano un IP8540 LG-Nortel e così via), dovrai esportare i dati e usare un'altra applicazione (ad esempio Windows PowerShell) per eseguire questo tipo di analisi. Si supponga ad esempio di esportare i dati in un file con valori delimitati da virgole (C:\Data\ IP_Phone_Inventory_Report. csv). In questo caso, puoi usare questi due comandi per specificare i dati di riepilogo per tutti i telefoni:
   
-```
+```PowerShell
 $phones = Import-Csv "C:\Data\IP_Phone_Inventory_Report.csv"
 $phones |Group-Object Manufacturer, "Hardware version" | Select-Object Count, Name | Sort-Object Count -Descending
 ```
@@ -65,7 +65,7 @@ Count    Name
 
 Allo stesso modo, questi due comandi indicano i telefoni connessi al sistema, ma che non sono mai stati effettivamente usati per effettuare una chiamata (il valore della metrica Ultima attività è vuoto, che indica che non è stata eseguita alcuna Ultima attività):
   
-```
+```PowerShell
 $phones = Import-Csv "C:\Data\IP_Phone_Inventory_Report.csv"
 $phones | Where-Object {$_."Last activity" -eq ""}
 ```

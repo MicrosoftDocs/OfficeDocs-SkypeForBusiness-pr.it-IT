@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4346e70b-ac48-4ab9-853e-3cdd6dcfe678
 description: 'Riepilogo: informazioni su come gestire la disponibilità elevata e il ripristino di emergenza del server di chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: ff30bcdd99a4c92bd8fbd8f0a5c4bcedd8aa63b0
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: d46e34485f231d313475b4fdc5948a7262b324ed
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36196011"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991981"
 ---
 # <a name="manage-high-availability-and-disaster-recovery-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Gestire la disponibilità elevata e il ripristino di emergenza per il server Chat persistente
  
@@ -55,7 +55,7 @@ Per eseguire il failover del server di chat persistente:
     
    - Usare il comando seguente per eliminare il log shipping:
     
-   ```
+   ```SQL
    exec sp_delete_log_shipping_secondary_database mgc
    ```
 
@@ -67,7 +67,7 @@ Per eseguire il failover del server di chat persistente:
     
    - Terminare tutte le connessioni al database di MGC, se presenti:
     
-   - **Exec sp_who2** per identificare le connessioni al database di MGC.
+   - **sp_who2 EXEC** per identificare le connessioni al database di MGC.
     
    - **uccidere \<SPID\> ** per terminare queste connessioni.
     
@@ -170,7 +170,7 @@ Questi passaggi sono progettati per recuperare la configurazione come esisteva p
   
 Per ripristinare lo stato normale del pool, eseguire il comando di Windows PowerShell seguente:
   
-```
+```PowerShell
 Set-CsPersistentChatState -Identity "service: lyncpc.dci.discovery.com" -PoolState Normal
 ```
 

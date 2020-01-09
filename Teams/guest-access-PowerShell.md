@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Usare PowerShell per consentire o bloccare l'accesso Guest ai team in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 90ca96b6a28b1a94c375af0b4b4166da5bbee9e9
-ms.sourcegitcommit: 09e719ead5c02b3cfa96828841c4905748d192a3
+ms.openlocfilehash: 94b7be4f67906ad5df2fe23b01cc2bdce662a8cb
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37753331"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989841"
 ---
 <a name="use-powershell-to-control-guest-access-to-a-team"></a>Usare PowerShell per controllare l'accesso guest a un team
 ================================================
@@ -45,7 +45,7 @@ Se si vuole bloccare gli ospiti in teams e si vuole comunque consentire loro di 
  
 2.  Connettere una sessione di PowerShell all'endpoint di Skype for business online.
 
-    ```
+    ```PowerShell
     Import-Module SkypeOnlineConnector
     $Cred = Get-Credential
     $CSSession = New-CsOnlineSession -Credential $Cred
@@ -53,7 +53,7 @@ Se si vuole bloccare gli ospiti in teams e si vuole comunque consentire loro di 
     ```
 3.  Controlla la configurazione e, `AllowGuestUser` se `$False`lo è, usa il cmdlet [set-CsTeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps) per impostarlo su `$True`.
 
-    ```
+    ```PowerShell
     Get-CsTeamsClientConfiguration
 
     Identity                         : Global

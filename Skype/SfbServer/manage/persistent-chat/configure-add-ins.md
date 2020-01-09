@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c1037909-0750-411a-98c1-3a327eed4ae8
 description: 'Riepilogo: informazioni su come configurare i componenti aggiuntivi per le chat room del server di chat persistenti in Skype for Business Server 2015.'
-ms.openlocfilehash: 4614387149eb264d5c59ca7a0642408093312a18
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: c7243184f273704335dda3c8709de17e767f6b51
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195926"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992111"
 ---
 # <a name="configure-add-ins-for-persistent-chat-rooms-in-skype-for-business-server-2015"></a>Configurare i componenti aggiuntivi per le chat room di Chat persistente
  
@@ -71,7 +71,7 @@ Puoi creare un nuovo componente aggiuntivo usando il cmdlet **New-CsPersistentCh
   
 Ad esempio, il comando seguente crea un nuovo componente aggiuntivo (con il nome ITPersistentChatAddin) per il pool atl-cs-001.contoso.com. Il parametro URL e il valore http://atl-cs-001.contoso.com/itchat del parametro specificano la posizione della pagina Web del componente aggiuntivo:
   
-```
+```PowerShell
 New-CsPersistentChatAddin -Name "ITPersistentChatAddin" -PersistentChatPoolFqdn "atl-cs-001.contoso.com" -Url "http://atl-cs-001.contoso.com/itchat"
 ```
 
@@ -79,7 +79,7 @@ New-CsPersistentChatAddin -Name "ITPersistentChatAddin" -PersistentChatPoolFqdn 
 
 Puoi configurare le impostazioni per un componente aggiuntivo esistente usando il cmdlet **set-CsPersistentChatAddIn** . Ad esempio, il comando seguente modifica l'URL assegnato al componente aggiuntivo chat persistente ITPersistentChatAddin. In questo caso, l'URL viene modificato inhttp://atl-cs-001.contoso.com/itchat2:
   
-```
+```PowerShell
 Set-CsPersistentChatAddin -Identity "atl-cs-001.contoso.com\ITPersistentChatAddin" -Url "http://atl-cs-001.contoso.com/itchat2"
 ```
 
@@ -87,7 +87,7 @@ Set-CsPersistentChatAddin -Identity "atl-cs-001.contoso.com\ITPersistentChatAddi
 
 Puoi ottenere informazioni sui componenti aggiuntivi usando il cmdlet **Get-CsPersistentChatAddin** . Ad esempio, il comando seguente restituisce informazioni su tutti i componenti aggiuntivi della chat persistente configurati per l'uso nell'organizzazione:
   
-```
+```PowerShell
 Get-CsPersistentChatAddin
 ```
 
@@ -95,7 +95,7 @@ Get-CsPersistentChatAddin
 
 Puoi rimuovere un componente aggiuntivo usando il cmdlet **Remove-CsPersistentChatAddIn** . Ad esempio, il comando seguente rimuove il componente aggiuntivo della chat persistente ITChatAddin trovato nel pool atl-cs-001.contoso.com:
   
-```
+```PowerShell
 Remove-CsPersistentChatAddin -Identity "atl-cs-001.contoso.com\ITChatAddin"
 ```
 

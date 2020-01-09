@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c21e8861-bb75-45e8-8485-38daa3b8121c
 description: "Riepilogo: informazioni su come configurare l'opzione di partecipazione alla riunione senza PIN in Skype for Business Server."
-ms.openlocfilehash: ecd1d2bf184dd6b9e1ff78e16c2ca1eb8da73ef9
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5b8ad452f54785a916ac70acd468458215135934
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188945"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991791"
 ---
 # <a name="configure-pin-less-meeting-join-in-skype-for-business-server"></a>Configurare l'aggiunta di una riunione senza PIN in Skype for Business Server
  
@@ -37,7 +37,7 @@ Quando si configura questa funzionalità, tieni presente quanto segue:
     
   - **Tutti gli utenti dell'organizzazione con i chiamanti entrano direttamente**
     
-  - **Tutti gli utenti (nessuna restrizione) con i chiamanti entrano direttamente** Questa è l'impostazione predefinita.
+  - **Tutti gli utenti (nessuna restrizione) con i chiamanti entrano direttamente** (questa è l'impostazione predefinita).
     
 - Quando è configurato per abilitare l'aggiunta di PIN, il servizio CAA richiede ancora un PIN iniziale. Gli utenti possono partecipare alla riunione indipendentemente dal fatto che venga immesso o meno un PIN. Tuttavia, il mantenimento della possibilità di immettere un PIN di riferimento consente a un chiamante di effettuare l'autenticazione come leader e di gestire la riunione, se necessario.
     
@@ -45,19 +45,19 @@ Quando si configura questa funzionalità, tieni presente quanto segue:
 
 Per abilitare l'aggiunta di una riunione senza PIN per gli utenti, usare il cmdlet [Set-CsDialInConferencingConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csdialinconferencingconfiguration?view=skype-ps) con il parametro AllowAnonymousPstnActivation come indicato di seguito:
   
-```
+```PowerShell
 Set-CsDialInConferencingConfiguration -Identity  < global or site:sitename>  -AllowAnonymousPstnActivation $True
 ```
 
 Ad esempio, con il comando seguente viene abilitato il join di riunione senza PIN per il sito Redmond:
   
-```
+```PowerShell
 Set-CsDialInConferencingConfiguration -Identity site:Redmond -AllowAnonymousPstnActivation $True
 ```
 
 Per motivi di sicurezza, quando è attivata la partecipazione alla riunione senza PIN, è consigliabile limitare l'accesso degli utenti anonimi garantendo che ConferencingPolicy sia impostato come segue:
   
-```
+```PowerShell
 Set-CsConferencingPolicy [-Identity <XdsIdentity>] -AllowAnonymousUsersToDialOut $False
 ```
 

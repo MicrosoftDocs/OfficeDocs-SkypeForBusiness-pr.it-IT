@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a6b41de2-1466-4240-8a70-14ce6f0f3ddc
 description: 'Riepilogo: informazioni su come specificare la conservazione dei dati QoE in Skype for Business Server.'
-ms.openlocfilehash: 89e20b18aa285bd4ee61df12c822e487dd6b37a4
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c597c0e5e3fbd2a8a92304ffd55d866a15c121a9
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188783"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992041"
 ---
 # <a name="modify-quality-of-experience-settings-in-skype-for-business-server"></a>Modificare le impostazioni di qualità delle esperienze in Skype for Business Server
 
@@ -30,7 +30,7 @@ La procedura seguente descrive come configurare le impostazioni di eliminazione 
 
 ### <a name="to-specify-retention-of-qoe-data-by-using-skype-for-business-server-control-panel"></a>Per specificare la conservazione dei dati QoE usando il pannello di controllo di Skype for Business Server
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere delegare le **autorizzazioni di configurazione**.
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **delegare le autorizzazioni di configurazione**.
 
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.
 
@@ -52,7 +52,7 @@ La procedura seguente descrive come configurare le impostazioni di eliminazione 
 
 - Questo comando consente l'eliminazione dei dati QoE per il sito Redmond e configura il sito per la gestione dei dati QoE per 20 giorni.
 
-  ```
+  ```PowerShell
   Set-CsQoeConfiguration -Identity "site:Redmond" -EnablePurging -KeepQoEDataForDays 20
   ```
 
@@ -60,7 +60,7 @@ La procedura seguente descrive come configurare le impostazioni di eliminazione 
 
 - Questo comando configura la conservazione QoE per tutte le impostazioni di configurazione QoE in uso in un'organizzazione.
 
-  ```
+  ```PowerShell
   Get-CsQoEConfiguration | Set-CsQoEConfiguration-EnablePurging -KeepQoEDataForDays 20
   ```
 

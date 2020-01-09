@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: dbebaa0a-f3a2-4dbd-b64e-07a62370f899
 description: 'Riepilogo: informazioni su come modificare le opzioni di archiviazione del database per Skype for Business Server.'
-ms.openlocfilehash: 56aa29ef185176ce3b080572723c566455731dc4
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3e7ae30e012464b6d1f72e323dd60ad397e7430d
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195115"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992763"
 ---
 # <a name="change-archiving-database-options-in-skype-for-business-server"></a>Modificare le opzioni di archiviazione del database in Skype for Business Server
 
@@ -27,14 +27,14 @@ Se si distribuisce l'archiviazione con l'archiviazione di SQL Server per l'archi
     
 - Passare all'integrazione di Microsoft Exchange per archiviare i dati e i file di archiviazione nei server di Exchange. Se tutti gli utenti sono ospitati nei server Exchange e si vuole usare lo spazio di archiviazione di Microsoft Exchange per tutti gli utenti della distribuzione, è consigliabile rimuovere i database di SQL Server Store dalla topologia. 
     
-Per apportare una di queste modifiche, è necessario eseguire Generatore di topologie, apportare le modifiche e quindi pubblicare di nuovo la topologia. Non specificare l' **archiviazione di SQL Server Store** o abilitare le informazioni di mirroring di **SQL Server Store** , a meno che tu non abbia utenti di Skype for business non residenti nei server di Exchange.
+Per apportare una di queste modifiche, è necessario eseguire Generatore di topologie, apportare le modifiche e quindi pubblicare di nuovo la topologia. Non specificare l' **archiviazione di SQL Server Store** o abilitare le informazioni di **mirroring di SQL Server Store** , a meno che tu non abbia utenti di Skype for business non residenti nei server di Exchange.
   
 ## <a name="change-archiving-database-options"></a>Modificare le opzioni del database di archiviazione
 
 1. In un computer che esegue Skype for Business Server o in cui sono installati gli strumenti di amministrazione di Skype for Business Server, accedere utilizzando un account membro del gruppo utenti locali o un account con diritti utente equivalenti.
     
     > [!NOTE]
-    > Puoi definire una topologia usando un account che è un membro del gruppo utenti locali, ma per pubblicare una topologia, necessaria per aggiungere un componente alla topologia, devi usare un account membro del gruppo **Domain Admins** e **RTCUniversalSer gruppo verAdmins** , con autorizzazioni di controllo completo (ovvero, lettura, scrittura e modifica) nella condivisione file in uso per l'archivio file di Skype for Business Server, in modo che il generatore di topologia possa configurare il controllo di accesso discrezionale richiesto elenchi (DACL) o un account con diritti equivalenti.
+    > Puoi definire una topologia usando un account che è un membro del gruppo utenti locali, ma per pubblicare una topologia, necessaria per aggiungere un componente alla topologia. è necessario usare un account che sia un membro del gruppo **Domain Admins** e del gruppo **RTCUniversalServerAdmins** e che disponga delle autorizzazioni di controllo completo (ovvero, lettura, scrittura e modifica) nella condivisione di file in uso per il file Store di Skype for Business Server, in modo che il generatore di topologia possa configurare il controllo di accesso discrezionale richiesto. elenchi (DACL) o un account con diritti equivalenti.
   
 2. Avviare Generatore di topologie.
     
@@ -76,7 +76,7 @@ Per apportare una di queste modifiche, è necessario eseguire Generatore di topo
     
        c. Se l'istanza di SQL Server specificata si trova in una relazione speculare, selezionare la casella **di controllo questa istanza SQL è in relazione di mirroring** e quindi, in **numero di porta speculare**, specificare il numero di porta.
     
-   - Se si Abilita il mirroring di SQL Server e si vuole aggiungere o modificare un witness di mirroring di SQL Server (una terza istanza di SQL Server separata in grado di rilevare l'integrità delle istanze di SQL Server e mirror principali), selezionare l' **uso del witness di SQL Server mirroring per abilitare** la casella di controllo failover automatico e quindi eseguire una delle operazioni seguenti:
+   - Se si Abilita il mirroring di SQL Server e si vuole aggiungere o modificare un witness di mirroring di SQL Server (una terza istanza di SQL Server separata in grado di rilevare l'integrità delle istanze di SQL Server e mirror principali), selezionare la casella di controllo **USA mirroring di SQL Server per abilitare il failover automatico** e quindi eseguire una delle operazioni seguenti:
     
       un. In **FQDN di SQL Server**specificare il nome di dominio completo del server in cui si vuole creare il nuovo witness di mirroring di SQL Server.
     
@@ -100,7 +100,7 @@ Nella maggior parte dei casi non è necessario modificare la posizione del datab
   
 Nell'esempio seguente viene modificata la posizione del database di archiviazione per il server di archiviazione ArchivingServer: atl-cs-001.contoso.com. In questo esempio il nuovo database si trova in ArchivingDatabase: ATL-SQL-001.contoso.com:
   
-```
+```PowerShell
 Set-CsArchivingServer -Identity "ArchivingServer:atl-cs-001.contoso.com" -ArchivingDatabase "ArchivingDatabase:atl-sql-001.contoso.com"
 ```
 

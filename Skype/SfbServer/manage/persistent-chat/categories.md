@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b0c834b9-b5c8-41d5-865b-c8b180e76d13
 description: 'Riepilogo: informazioni su come gestire le categorie di server di chat persistenti in Skype for Business Server 2015.'
-ms.openlocfilehash: 8a8e8060db896a272293df3259091d4f7667a7d3
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: f0c85c2246c85c93f96e6c13cef0a5d4360213cb
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195929"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992001"
 ---
 # <a name="manage-categories-in-persistent-chat-server-in-skype-for-business-server-2015"></a>Gestire le categorie nel server Chat persistente
  
@@ -69,7 +69,7 @@ Prima di configurare le categorie, assicurati di leggere [categorie di chat pers
     
 7. In **Modifica categoria** eseguire le operazioni seguenti:
     
-   - In **appartenenza**, nella sezione **consentiti membri** , aggiungere o rimuovere utenti e altre entità di servizi di dominio Active Directory (utenti, gruppi di distribuzione, unità organizzative e così via) che sono autorizzati ad essere aggiunti come membri delle chat room appartenenza alla categoria. Le entità consentite da una categoria possono cercare le chat della categoria (a meno che la chat non sia nascosta, caso in cui solo i membri della chat possono cercarla nella directory).
+   - In **appartenenza**, nella sezione **consentiti membri** , aggiungere o rimuovere utenti e altre entità di servizi di dominio Active Directory (utenti, gruppi di distribuzione, unità organizzative e così via) che possono essere aggiunti come membri delle chat room appartenenti alla categoria. Le entità consentite da una categoria possono cercare le chat della categoria (a meno che la chat non sia nascosta, caso in cui solo i membri della chat possono cercarla nella directory).
     
    - In **appartenenza**, nella sezione **membri negati** , aggiungere o rimuovere utenti e altre entità Active Directory associate ai membri negati dalla sala.
     
@@ -109,7 +109,7 @@ Per informazioni complete sulla sintassi dei cmdlet, inclusi tutti i parametri, 
 
 Puoi creare una nuova categoria usando il cmdlet **New-CsPersistentChatCategory** . Ad esempio, il comando seguente crea una nuova categoria denominata HelpDesk nel pool atl-cs-001.contoso.com. In questo esempio, il caricamento di file è abilitato:
   
-```
+```PowerShell
 New-CsPersistentChatCategory -Name "HelpDesk" -PersistentChatPoolFqdn "atl-cs-001.contoso.com" -EnableFileUpload 
 ```
 
@@ -119,7 +119,7 @@ Puoi configurare una categoria esistente usando il cmdlet **set-CsPersistentCate
   
 Ad esempio, il comando seguente specifica che User1 è un AllowedMember e un creatore, mentre a User2 viene negato l'accesso alle camere nella categoria:
   
-```
+```PowerShell
 Set-CsPersistentChatCategory -Identity testCat -AllowedMembers @{Add="sip:user1@contoso.com", "CN=container,DC=contoso,DC=com"}  -DeniedMembers @{Add="sip:user2@contoso.com"}
 Set-CsPersistentChatCategory -Identity testCat -Creators @{Add="sip:user1@contoso.com"}
 ```
@@ -128,7 +128,7 @@ Set-CsPersistentChatCategory -Identity testCat -Creators @{Add="sip:user1@contos
 
 Puoi ottenere informazioni sulle categorie usando il cmdlet **Get-CsPersistentChatCategory** . Ad esempio, il comando seguente restituisce informazioni per tutte le categorie di chat persistenti dell'organizzazione:
   
-```
+```PowerShell
 Get-CsPersistentChatCategory
 ```
 
@@ -136,6 +136,6 @@ Get-CsPersistentChatCategory
 
 Puoi rimuovere una categoria usando il cmdlet **Remove-CsPersistentChatCategory** . Prima di rimuovere una categoria, è prima necessario eliminare tutte le chat room o spostarle in una nuova categoria. Ad esempio, con il comando seguente viene rimossa la categoria che contiene l'identità "atl-cs-001. contoso. com\helpdesk":
   
-```
+```PowerShell
 Remove-CsPersistentChatCategory -Identity "atl-cs-001.contoso.com\helpdesk"
 ```

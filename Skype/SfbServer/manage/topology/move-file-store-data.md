@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8d1d5819-add2-4f5d-a436-74c00a281df0
 description: 'Se è necessario rimuovere il file server che sta attualmente agendo come archivio per la distribuzione di Skype for Business Server o se è necessario apportare altre modifiche che rendessero disponibile il file Store corrente, è prima di tutto necessario creare una nuova condivisione. È quindi necessario eseguire la procedura seguente:'
-ms.openlocfilehash: c37a811bc04ab8ef6f69ef823cf30e28209e9821
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 6ae09d2415b24a4337edbee3c66e8b9a8bd2009a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187097"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991511"
 ---
 # <a name="move-file-store-data-to-a-new-file-store-in-skype-for-business-server"></a>Trasferire i dati dell'archivio file in un nuovo archivio di file in Skype for Business Server
 
@@ -37,7 +37,7 @@ Se è necessario rimuovere il file server che sta attualmente agendo come archiv
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.
 
-3. Nella barra di spostamento sinistra fare clic **** su topologia e quindi su **stato**.
+3. Nella barra di spostamento sinistra fare clic su **topologia**e quindi su **stato**.
 
 4. Per ogni pool di Director, Director, server Standard Edition e pool Front end che usa l'archivio di file che si vuole rimuovere, selezionare il server o il pool, fare clic su **azione**e quindi su **Interrompi tutti i servizi**.
 
@@ -68,7 +68,7 @@ Se è necessario rimuovere il file server che sta attualmente agendo come archiv
 
 11. Nella riga di comando digitare quanto segue:
 
-     ```
+     ```console
      Robocopy \\<OldFileServer>\<OldShare> \\<NewFileServer>\<NewShare> /S /R:10 /W:10 /XF Meeting.Active /MT /LOG:<directory path\logname>
 
      ```
@@ -76,7 +76,7 @@ Se è necessario rimuovere il file server che sta attualmente agendo come archiv
     > [!TIP]
     > L'opzione/S copia i file, le directory e le sottodirectory. L'opzione/XF ignora tutti i file denominati meeting. Active. Le versioni correnti di Robocopy. exe con l'opzione/MT aumentano notevolmente la velocità di copia usando più thread. Per l'opzione/LOG, usare un percorso di directory e un nome di file di log sotto forma di C:\Logfiles\log.txt. Questa opzione consente di creare un file di log delle operazioni nella posizione denominata.
 
-12. Al termine della copia dei dati, nel pannello di controllo di Lync Server **** fare clic su topologia e quindi su **stato**.
+12. Al termine della copia dei dati, nel pannello di controllo di Lync Server fare clic su **topologia**e quindi su **stato**.
 
 13. Per ogni server o pool in cui sono stati arrestati i servizi, selezionare il server o il pool, fare clic su **azione**e quindi su **Avvia tutti i servizi**.
 

@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: dac4e2007853b489345f8ea137423cbd71363d56
-ms.sourcegitcommit: 0de27096ea3c9d6f210aeb4aad31c4255c3c0244
+ms.openlocfilehash: 863593c3068136f4b2332a55d8e0c293d2acc1d8
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37615973"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991311"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
 
@@ -51,7 +51,7 @@ ms.locfileid: "37615973"
     
 
 > [!IMPORTANT]
-> Per impostazione predefinita, il timeout delle sessioni di PowerShell è 60 minuti. Per riconnettersi, è necessario chiudere la sessione e avviare una nuova sessione di PowerShell. È stata avviata recentemente una nuova versione di [Skype for business online, modulo di Windows PowerShell (2046,123-Published 10/2/2019)](https://www.microsoft.com/download/details.aspx?id=39366), che include un nuovo cmdlet denominato **Enable-CsOnlineSessionForReconnection** che attenua i 60 minuti problema di timeout.
+> Per impostazione predefinita, il timeout delle sessioni di PowerShell è 60 minuti. Per riconnettersi, è necessario chiudere la sessione e avviare una nuova sessione di PowerShell. È stata avviata recentemente una nuova versione di [Skype for business online, modulo di Windows PowerShell (2046,123-Published 10/2/2019)](https://www.microsoft.com/download/details.aspx?id=39366), che include un nuovo cmdlet denominato **Enable-CsOnlineSessionForReconnection** che attenua il problema del timeout di 60 minuti.
 > La sessione di PowerShell riconnette e autentica, consentendone la riutilizzo senza dover avviare una nuova istanza per la riconnessione.
 
 
@@ -61,10 +61,10 @@ ms.locfileid: "37615973"
 
 Il criterio di esecuzione di PowerShell consente di determinare quali file di configurazione possono essere caricati nella console di PowerShell e quali script possono essere eseguiti da un utente da questa console. Come minimo, il Modulo del connettore di Skype for Business Online non può essere importato a meno che il criterio di esecuzione non sia stato impostato su RemoteSigned. In caso contrario, quando si prova a importare il modulo verrà visualizzato il seguente messaggio di errore:
   
-- **Errore**: <em>Import-Module: file C:\\programmi file\\comuni\\Microsoft Lync Server 2013\\modules\\LyncOnlineConnector\\LyncOnlineConnectorStartup. psm1 non può essere caricato perché è in corso gli script sono disabilitati in questo sistema. Per altre informazioni, Vedi about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170.</em>
+- **Errore**: <em>Import-Module: file C:\\programmi file\\comuni\\Microsoft Lync Server 2013\\modules\\LyncOnlineConnector\\LyncOnlineConnectorStartup. psm1 non può essere caricato perché gli script in uso sono disabilitati in questo sistema. Per altre informazioni, vedere about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170.</em>
 
 - **Risoluzione** Per risolvere il problema, avviare PowerShell come amministratore e quindi eseguire il comando seguente:
-    ```
+    ```PowerShell
     Set-ExecutionPolicy RemoteSigned
     ```
     Per informazioni dettagliate sul criterio di esecuzione, consulta l'argomento all'indirizzo [about_Execution_Policies](https://go.microsoft.com/fwlink/?LinkID=135170).
@@ -93,11 +93,11 @@ Sono in genere tre i motivi della non riuscita di un tentativo di connessione, c
   - **Errore**: *Get-CsWebTicket: Impossibile connettere i server Live ID. Verificare che proxy sia abilitato o che il computer disponga di una connessione di rete ai server Live ID.*
 
 - **Risoluzione**: spesso questo errore indica che l'assistente per l'accesso ai Microsoft Online Services non è in corso. Puoi verificare lo stato di questo servizio eseguendo il comando seguente dal prompt di PowerShell: 
-    ```
+    ```PowerShell
     Get-Service "msoidsvc"
     ```
     Se il servizio non è in esecuzione, avvialo usando il comando seguente:
-    ```
+    ```PowerShell
     Start-Service "msoidsvc"
     ```
 

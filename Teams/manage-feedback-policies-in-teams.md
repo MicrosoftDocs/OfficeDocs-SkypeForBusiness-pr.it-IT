@@ -15,12 +15,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare i criteri di feedback per controllare se gli utenti dei team dell'organizzazione possono inviare commenti e suggerimenti sui team a Microsoft.
-ms.openlocfilehash: 1322023eb7644b84544ac8ca44fba0a63c6b868d
-ms.sourcegitcommit: f2c7626dbef4ed250b9a937a9b56d46fe2e2039e
+ms.openlocfilehash: 78a6f0856d8b973ecfa1c8af52ee50480be0e838
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2019
-ms.locfileid: "39998834"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991421"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
@@ -59,7 +59,7 @@ Per disattivare e attivare le caratteristiche, impostare i parametri seguenti:
 
 In questo esempio creiamo i criteri di feedback denominati nuovi criteri di feedback sul noleggio e disattiviamo la possibilità di fornire feedback tramite **feedback** e il sondaggio.
 
-```
+```PowerShell
 New-CsTeamsFeedbackPolicy -identity "New Hire Feedback Policy" -userInitiatedMode disabled -receiveSurveysMode disabled
 ```
 
@@ -69,7 +69,7 @@ New-CsTeamsFeedbackPolicy -identity "New Hire Feedback Policy" -userInitiatedMod
 
 In questo esempio vengono assegnati criteri personalizzati denominati nuovi criteri di feedback di noleggio a un utente denominato User1.
 
-```
+```PowerShell
 Grant-CsTeamsFeedbackPolicy -Identity user1@contoso.com -PolicyName "New Hire Feedback Policy"
 ```
 ### <a name="assign-a-custom-feedback-policy-to-users-in-a-group"></a>Assegnare criteri di feedback personalizzati agli utenti di un gruppo
@@ -79,15 +79,15 @@ Grant-CsTeamsFeedbackPolicy -Identity user1@contoso.com -PolicyName "New Hire Fe
 In questo esempio, assegniamo i criteri di feedback personalizzati denominati nuovi criteri di feedback di noleggio a tutti gli utenti nel gruppo nuove assunzioni Contoso.  
 
 Ottenere il GroupObjectId del gruppo specifico.
-```
+```PowerShell
 $group = Get-AzureADGroup -SearchString "Contoso New Hires"
 ```
 Ottenere i membri del gruppo specificato.
-```
+```PowerShell
 $members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-Object {$_.ObjectType -eq "User"}
 ```
 Assegnare tutti gli utenti del gruppo a un particolare criterio di feedback. In questo esempio si tratta di nuovi criteri di feedback sulle assunzioni.
-```
+```PowerShell
 $members | ForEach-Object {Grant-CsTeamsFeedbackPolicy -PolicyName "New Hire Feedback Policy" -Identity $_.UserPrincipalName}
 ``` 
 A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.

@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - SMB
 description: Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, è necessario abilitarlo. A questo scopo, devi sapere come usare Windows PowerShell. Se non si conosce Windows PowerShell, è consigliabile assumere un partner Microsoft per eseguire questo passaggio.
-ms.openlocfilehash: 1d96ce1bb234ee319af2eeb11442fc15736b8f54
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: edf9c372a98da9e09d7e9040c6d035e389c8b1ec
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793235"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40989141"
 ---
 # <a name="enable-skype-meeting-broadcast"></a>Abilitare Skype Meeting Broadcast
 
@@ -36,9 +36,9 @@ Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, 
 
 1. Accedere con l'account di amministratore globale di Office 365 o con l'account di [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)amministratore di Skype for business.
     
-2. Nell'interfaccia di amministrazione accedere a teams di interfaccia di **Amministrazione** > ****.
+2. Nell'interfaccia di amministrazione accedere a**Teams**di interfaccia di **Amministrazione** > .
     
-3. Nell'interfaccia **di amministrazione**di teams, passa a**riunioni broadcast** **legacy Portal** > **online** > e quindi seleziona **Abilita Skype meeting broadcast**.
+3. Nell'interfaccia di **amministrazione di teams**, passa a**riunioni broadcast** **legacy Portal** > **online** > e quindi seleziona **Abilita Skype meeting broadcast**.
     
 ## <a name="enable-skype-meeting-broadcast-using-powershell"></a>Abilitare Skype meeting broadcast tramite PowerShell
 
@@ -56,7 +56,7 @@ Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, 
     
 7. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
     
-   ```
+   ```PowerShell
    $Credential = get-credential
    $O365Session = New-CsOnlineSession -Credential $credential
    Import-PSSession $O365Session
@@ -64,7 +64,7 @@ Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, 
 
 8. Conferma la configurazione corrente di Skype meeting broadcast eseguendo:
     
-   ```
+   ```PowerShell
    Get-CsBroadcastMeetingConfiguration
    ```
 
@@ -74,7 +74,7 @@ Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, 
   
 9. Abilitare Skype meeting broadcast per l'organizzazione eseguendo:
     
-   ```
+   ```PowerShell
    Set-CsBroadcastMeetingConfiguration -EnableBroadcastMeeting $True
    ```
 
