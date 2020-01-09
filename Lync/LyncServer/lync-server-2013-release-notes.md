@@ -10,12 +10,12 @@ ms:contentKeyID: 48184930
 ms.date: 12/09/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5a93fabf10355dcc4ba7873921c0aaf35475927c
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: bf5eadb591b7e198ee75ff197b3836673ae0ecc3
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40975778"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992383"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -123,11 +123,11 @@ Quando la configurazione dell'indirizzo IP viene modificata per una distribuzion
 
 Per risolvere il problema, riavviare i servizi Lync Server dopo la modifica della configurazione dell'indirizzo IP per la distribuzione. A questo scopo, eseguire i cmdlet seguenti in Lync Server Management Shell:
 
-   ```
+   ```PowerShell
     Stop-CsWindowsService -graceful
    ```
 
-   ```
+   ```PowerShell
     Start-CsWindowsService
    ```
 
@@ -449,11 +449,11 @@ Per risolvere il problema, aggiornare il registro di sistema prima di installare
 
 1.  Avviare Windows PowerShell ed eseguire i cmdlet seguenti:
     
-       ```
+       ```PowerShell
         New-PSDrive -Name HKU -PSProvider Registry -Root HKEY_USERS
        ```
     
-       ```
+       ```PowerShell
         $a="HKU:\.Default\Control Panel\International"
        ```
 

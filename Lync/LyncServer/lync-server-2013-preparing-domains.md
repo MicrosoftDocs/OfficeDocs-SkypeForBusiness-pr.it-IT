@@ -10,12 +10,12 @@ ms:contentKeyID: 48184816
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9c1f5693a14084627d20ae66fa6ec85f6b6c6c6f
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 6cd8c09346c8f5b562a72e77b9ba40915b480c91
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40981036"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991381"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -43,11 +43,11 @@ Se l'ereditarietà delle autorizzazioni è disabilitata o le autorizzazioni dell
 
 Se l'organizzazione USA unità organizzative (OU) anziché i tre contenitori predefiniti, ovvero utenti, computer e controller di dominio, è necessario concedere l'accesso in lettura alle unità organizzative per il gruppo Authenticated Users. Per la preparazione del dominio è necessaria l'accesso in lettura ai contenitori. Se il gruppo Authenticated Users non ha accesso in lettura all'unità organizzativa, eseguire il cmdlet **Grant-CsOUPermission** come illustrato negli esempi di codice seguenti per concedere le autorizzazioni di lettura per ogni ou.
 
-   ```
+   ```PowerShell
     Grant-CsOuPermission -ObjectType <User | Computer | InetOrgPerson | Contact | AppContact | Device> -OU <DN of the OU > 
    ```
 
-   ```
+   ```PowerShell
     Grant-CsOuPermission -ObjectType "user","contact",inetOrgPerson" -OU "ou=Redmond,dc=contoso,dc=net"
    ```
 

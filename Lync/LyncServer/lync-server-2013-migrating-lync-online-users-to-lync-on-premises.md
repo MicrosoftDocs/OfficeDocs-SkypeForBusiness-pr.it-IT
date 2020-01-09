@@ -10,12 +10,12 @@ ms:contentKeyID: 62258120
 ms.date: 11/13/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d33888069b00eaf8a4d743f1e6ed3937d7a442bc
-ms.sourcegitcommit: 5895afd0d5752a6ea1ace68d613f86c68eae8bdb
+ms.openlocfilehash: 47fb8d24a2bb112ab07d35097414141b9eaaa606
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "40984871"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40991651"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -57,11 +57,11 @@ _**Argomento Ultima modifica:** 2015-11-13_
     
       - Nella distribuzione locale, in Lync Server Management Shell, digitare i cmdlet seguenti per creare il provider di hosting per Lync Online:
         
-           ```
+           ```PowerShell
            Set-CsAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting -EnablePartnerDiscovery $true
            ```
         
-           ```
+           ```PowerShell
             New-CsHostingProvider -Identity LyncOnline -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
            ```
 
@@ -127,11 +127,11 @@ _**Argomento Ultima modifica:** 2015-11-13_
     
     Per trasferire un singolo utente, digitare:
     
-       ```
+       ```PowerShell
        $cred = Get-Credential
        ```
     
-       ```
+       ```PowerShell
        Move-CsUser -Identity <username>@contoso.com -Target "<fe-pool>.contoso.com" -Credential $cred -HostedMigrationOverrideURL <URL>
        ```
     

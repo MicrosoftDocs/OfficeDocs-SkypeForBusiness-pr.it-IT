@@ -10,12 +10,12 @@ ms:contentKeyID: 48184270
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cda79f7b80d6f1bbdf2163ecf987f4a05949bfc4
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 6bad6bf4e2b09296e21aec75e206ba867415754a
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40979795"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992051"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -109,11 +109,11 @@ Per distribuire il proxy XMPP nell'Edge Server, è necessario configurare l'Edge
 
 22. Dopo la ricezione, l'importazione e l'assegnazione del certificato pubblico, è necessario arrestare e riavviare i servizi Edge Server. A tale scopo, digitare la console di gestione di Lync Server:
     
-       ```
+       ```PowerShell
         Stop-CsWindowsService
        ```
     
-       ```
+       ```PowerShell
         Start-CsWindowsService
        ```
 
@@ -130,35 +130,35 @@ Per distribuire il proxy XMPP nell'Edge Server, è necessario configurare l'Edge
 
 24. Configurare un nuovo criterio di accesso esterno per abilitare tutti gli utenti aprendo Lync Server Management Shell sul front-end e digitando:
     
-       ```
+       ```PowerShell
         New-CsExternalAccessPolicy -Identity <name of policy to create.  If site scope, prepend with 'site:'> -EnableFederationAcces $true -EnablePublicCloudAccess $true
        ```
     
-       ```
+       ```PowerShell
         New-CsExternalAccessPolicy -Identity FedPic -EnableFederationAcces $true -EnablePublicCloudAccess $true
        ```
     
-       ```
+       ```PowerShell
         Get-CsUser | Grant-CsExternalAccessPolicy -PolicyName FedPic
        ```
     
     Abilitare l'accesso XMPP per gli utenti esterni digitando:
     
-       ```
+       ```PowerShell
         Set-CsExternalAccessPolicy -Identity <name of the policy being used> EnableXmppAccess $true
        ```
     
-       ```
+       ```PowerShell
         Set-CsExternalAccessPolicy -Identity FedPic -EnableXmppAccess $true
        ```
 
 25. Nell'Edge Server in cui è distribuito il proxy XMPP aprire un prompt dei comandi o un'interfaccia della riga di comando™ di Windows PowerShell e digitare quanto segue:
     
-       ```
+       ```PowerShell
         Netstat -ano | findstr 5269
        ```
     
-       ```
+       ```PowerShell
         Netstat -ano | findstr 23456
        ```
     

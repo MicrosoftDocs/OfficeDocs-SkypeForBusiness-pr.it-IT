@@ -10,12 +10,12 @@ ms:contentKeyID: 48184806
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f030083bc49822f1d41e297388f6ca7dbf66d397
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 372c8d4689a2c594c853819ced6ccb92adfa6944
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40984846"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992703"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -59,21 +59,21 @@ Se è necessario rimuovere l'autenticazione Kerberos da un sito o ritirare un si
 
 3.  Nella riga di comando eseguire i due comandi seguenti:
     
-       ```
+       ```PowerShell
         Remove-CsKerberosAccountAssignment -Identity "site:SiteName"
        ```
     
-       ```
+       ```PowerShell
         Enable-CsTopology
        ```
     
     Ad esempio:
     
-       ```
+       ```PowerShell
         Remove-CsKerberosAccountAssignment -Identity "site:Redmond"
        ```
     
-       ```
+       ```PowerShell
         Enable-CsTopology
        ```
     

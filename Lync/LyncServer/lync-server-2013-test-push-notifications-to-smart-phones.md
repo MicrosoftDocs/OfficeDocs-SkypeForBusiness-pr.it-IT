@@ -10,12 +10,12 @@ ms:contentKeyID: 63969626
 ms.date: 03/15/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3a0d58c79fcd66229ffda43fa60ab99cedc308ab
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 653becc1cc22abc8b3c04e0ab3d2a2d1260a98d9
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40981137"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992081"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -150,7 +150,7 @@ At line: 1 carattere: 27
 
 Il messaggio "richiesta di notifica push è stato rifiutato" in genere si verifica se è stato abilitato il filtro URL e si bloccano i prefissi http: e https:. Puoi determinare quali prefissi vengono bloccati usando un comando simile al seguente:
 
-``` 
+```PowerShell 
  (Get-CsImFilterConfiguration -Identity Global).Prefixes
 ```
 

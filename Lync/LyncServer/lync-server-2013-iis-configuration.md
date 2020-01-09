@@ -10,12 +10,12 @@ ms:contentKeyID: 48185169
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: de2205ad049beb05f30dd58795257b62eca68d46
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 29b9803fdb6c4a048fdf072b5ba2e5722b863640
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978604"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40992101"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -141,11 +141,11 @@ La tabella seguente indica i servizi ruolo di IIS 7,5 necessari.
 
 Nel sistema operativo Windows Server 2008 R2 SP1 x64 è possibile usare Windows PowerShell 2,0. È prima di tutto necessario importare il modulo ServerManager e quindi installare il ruolo e i servizi ruolo di IIS 7,5.
 
-   ```
+   ```PowerShell
     Import-Module ServerManager
    ```
 
-   ```
+   ```PowerShell
     Add-WindowsFeature Web-Server, Web-Static-Content, Web-Default-Doc, Web-Scripting-Tools, Web-Windows-Auth, Web-Asp-Net, Web-Log-Libraries, Web-Http-Tracing, Web-Stat-Compression, Web-Dyn-Compression, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Http-Errors, Web-Http-Logging, Web-Net-Ext, Web-Client-Auth, Web-Filtering, Web-Mgmt-Console
    ```
 
@@ -343,11 +343,11 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 
 In Windows Server 2012 e Windows Server 2012 R2 è possibile usare Windows PowerShell 3,0 per installare i requisiti di IIS. Usando il modulo ServerManager in Windows PowerShell 3,0, digitare:
 
-   ```
+   ```PowerShell
     Import-Module ServerManager
    ```
 
-   ```
+   ```PowerShell
     Add-WindowsFeature Web-Server, Web-Static-Content, Web-Default-Doc, Web-Http-Errors, Web-Asp-Net, Web-Net-Ext, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Http-Logging, Web-Log-Libraries, Web-Request-Monitor, Web-Http-Tracing, Web-Basic-Auth, Web-Windows-Auth, Web-Client-Auth, Web-Filtering, Web-Stat-Compression, Web-Dyn-Compression, NET-Framework-45-Core, NET-WCF-HTTP-Activation45, Web-Asp-Net45, Web-Mgmt-Tools, Web-Scripting-Tools, Web-Mgmt-Console, Web-Mgmt-Compat, Windows-Identity-Foundation, Server-Media-Foundation, BITS -Source D:\sources\sxs
    ```
 
