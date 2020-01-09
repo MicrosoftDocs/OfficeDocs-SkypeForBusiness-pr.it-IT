@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Elenco corrente dei problemi noti riguardanti l’interfaccia di amministrazione e l'app client di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f800fd9e22eb40753a6bd951f548c4bc16499147
-ms.sourcegitcommit: 0dba0ad1f8f00415c6437cadabed0548ce3281b1
+ms.openlocfilehash: 50501c3d5e077deacaf183dd36efce72d295f556
+ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919158"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "40990651"
 ---
 # <a name="known-issues-for-microsoft-teams"></a>Problemi noti di Microsoft Teams
 
@@ -29,15 +29,9 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 ## <a name="administration"></a>Amministrazione
 
-
-
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|Se un utente è stato rimosso da un team, è possibile che i log di controllo riportino un nome utente errato come iniziatore  <br/> |Il team di Teams è un gruppo moderno di AAD. Quando si aggiunge o si rimuove un membro tramite l'interfaccia utente di Teams, il flusso rileva esattamente quale utente ha avviato la modifica e il log di controllo riflette le informazioni corrette. Tuttavia, se un utente aggiunge o rimuove un membro tramite AAD, la modifica viene sincronizzata con il backend dell’applicazione senza informare Teams su chi sia l’iniziatore dell'azione. Microsoft Teams sceglie il primo proprietario del team come iniziatore dell’azione e tale selezione viene poi riportata anche nel log di controllo.    <br/> |  <br/> |11/05/2018  <br/> |
-
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
-|I criteri di EAF di EMET (Enhanced Mitigation Experience Toolkit) possono identificare erroneamente le ottimizzazioni della sandbox di Chromium come minacce. <br/> |È stato riscontrato un problema con la sandbox di Chromium, in cui i criteri di EAF (Export Table Access Filtering) di EMET (Advanced Mitigation Experience Toolkit) e ATP (Advanced Threat Protection) di Windows Defender possono identificare erroneamente le ottimizzazioni della sandbox di Chromium come minacce. A causa di ciò, Teams non funziona correttamente.  <br/> | Per ovviare al problema, si consiglia di disattivare il filtro EAF per Teams. Per maggiori informazioni sul problema, consultare le [linee guida sulle mitigazioni di EMET](https://support.microsoft.com/it-IT/help/2909257/emet-mitigations-guidelines) Per ulteriori informazioni sui criteri di EAF e di ATP di Windows Defender, vedere [Abilitare la protezione da exploit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) <br/> |11/10/2018 <br/> |
+|I criteri di EAF di EMET (Enhanced Mitigation Experience Toolkit) possono identificare erroneamente le ottimizzazioni della sandbox di Chromium come minacce. <br/> |È stato riscontrato un problema con la sandbox di Chromium, in cui i criteri di EAF (Export Table Access Filtering) di EMET (Advanced Mitigation Experience Toolkit) e ATP (Advanced Threat Protection) di Windows Defender possono identificare erroneamente le ottimizzazioni della sandbox di Chromium come minacce. A causa di ciò, Teams non funziona correttamente.  <br/> | Per ovviare al problema, si consiglia di disattivare il filtro EAF per Teams. Per maggiori informazioni sul problema, consultare le [linee guida sulle mitigazioni di EMET](https://support.microsoft.com/help/2909257/emet-mitigations-guidelines) Per ulteriori informazioni sui criteri di EAF e di ATP di Windows Defender, vedere [Abilitare la protezione da exploit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) <br/> |11/10/2018 <br/> |
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
@@ -61,10 +55,6 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |:-----|:-----|:-----|:-----|
 |L'app "Attività" rimane visibile quando è disabilitata  <br/> |Quando l'app "Attività" è disabilitata nell'interfaccia di amministrazione, rimane visibile nel client di Teams per gli utenti con licenza EDU. Se la si seleziona quando è disabilitata, verrà visualizzato il seguente messaggio di errore: "Accidenti! Si è verificato un problema... "  <br/> |Non ci sono soluzioni alternative.  <br/> |29/12/2017  <br/> |
 
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
-|Impossibile eliminare i connettori come proprietario del team  <br/> |Se l'opzione "Consenti ai membri di creare, aggiornare e rimuovere i connettori" è disabilitata, il tentativo di eliminazione di un connettore da parte di un proprietario, in grado comunque di aggiungere un connettore, genera un errore che indica che l'utente non è autorizzato a eseguire tale operazione. <br/> |L'abilitazione temporanea di "Consenti ai membri di creare, aggiornare e rimuovere i connettori" consentirà al proprietario di eliminare il connettore.  <br/> |27/07/2018  <br/> |
-
 ## <a name="audio-conferencing"></a>Audioconferenza
 
 |**Problema**|**Comportamento/sintomi**|**Soluzione alternativa nota**|**Data di scoperta**|
@@ -76,8 +66,7 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |Il controllo per le chiamate esterne a volte non viene visualizzato.  <br/> |Il controllo per le chiamate esterne può non essere visibile nel pannello Info riunione.  <br/> |Non ci sono soluzioni alternative.  <br/> |25/09/2017  <br/> |
 |Gli ID conferenza statici non sono supportati per le riunioni Microsoft Teams.  <br/> |Se l'amministratore sostituisce l'impostazione standard di ID conferenza dinamico con l'impostazione ID conferenza statico, questo non ha effetto per le riunioni di Microsoft Teams. Consulta [Uso degli ID audioconferenza dinamici nella tua organizzazione](/skypeforbusiness/audio-conferencing-in-office-365/using-audio-conferencing-dynamic-ids-in-your-organization.md).  <br/> |Non ci sono soluzioni alternative.  <br/> |25/9/2017  <br/> |
 |Le coordinate riunione PSTN non sono disponibili per Skype for Business per gli utenti locali  <br/> |Se l'utente di Skype for Business è locale, assegnato con Skype for Business online, licenze di Audioconferenza e Teams, tutte le riunioni pianificate con Teams non includeranno le coordinate riunione PSTN. <br/> |Non ci sono soluzioni alternative.  <br/> |1/2/2018  <br/> |
-
-|Informazioni per l'interoperabilità video sul cloud in Riunione immediata  <br/> |Se si crea un'istanza di Riunione immediata per una riunione in Microsoft Teams, con una licenza IVC esistente, le informazioni sulla IVC non verranno inserite. <br/> |Si consiglia di pianificare la riunione per inserire tali informazioni.  <br/> |11/06/2019  <br/> |
+|Informazioni sull'interoperabilità video nel cloud in Riunione immediata  <br/> |Se si crea un'istanza di Riunione immediata per una riunione in Microsoft Teams con una licenza IVC esistente, le informazioni sulla IVC non verranno popolate. <br/> |Si consiglia di pianificare la riunione per popolare tali informazioni.  <br/> |11/06/2019  <br/> |
 
 ## <a name="authentication"></a>Autenticazione
 
@@ -139,8 +128,6 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 ## <a name="client"></a>Client
 
-
-
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
 |Impossibile avviare Teams per Surface Hub da Microsoft Store |Microsoft Teams per Surface Hub non viene avviato, quando si fa clic su **Avvia** in Microsoft Store. | L'avvio dell'app Teams per Surface Hub dall'elenco di Microsoft Store non è supportato da Windows in Surface Hub. <br> <br/> Riavviare Surface Hub dopo aver installato Teams. | 27/02/2018 |
@@ -169,10 +156,6 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |:-----|:-----|:-----|:-----|
 |I clienti EU e APAC ricevono un messaggio di errore quando aggiungono un utente Guest da un altro tenant    <br/> | I clienti in EU e APAC sperimentano un ritardo di replica tra Microsoft Teams e Azure Active Directory. Se un utente di un tenant UE o APAC tenta di aggiungere un utente Guest da qualsiasi altro tenant, riceve il messaggio di errore in cui viene chiesto di riprovare a effettuare l’aggiunta.   <br/> |Fare di nuovo clic sul pulsante Riprova per effettuare l'aggiunta dell'utente Guest.  <br/> |08/11/2017  <br/> |
 
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
-|Wiki non generata in canali creati dagli utenti Guest  <br/> |Quando un utente Guest crea un nuovo canale, non viene generata la scheda **Wiki**. Non esiste un modo per allegare manualmente una scheda **Wiki** al canale. <br/> |Non ci sono soluzioni alternative.  <br/> |20/09/2017  <br/>|
-
 ## <a name="linux"></a>Linux
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
@@ -198,7 +181,7 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|I gestori dei pacchetti non visualizzano l’elenco di modifiche. <br/> |La gestione pacchetti non mostra l’elenco delle modifiche. <br/> | <br/> |05/12/2019  <br/>|
+|I gestori dei pacchetti non visualizzano l’elenco di modifiche. <br/> |La gestione pacchetti non mostra l’elenco delle modifiche. <br/> | <br/> |05/12/19  <br/>|
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
@@ -251,10 +234,6 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|Differenze nel layout dei team del client mobile  <br/> |I team sono elencati in ordine alfabetico e i canali non possono essere compressi nel client mobile.  <br/> |Non ci sono soluzioni alternative.  <br/> |13/03/2017  <br/>|
-
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
 |Problemi verificabili quando si usa iOS 13 Beta  <br/> |1. le notifiche di Teams non vengono inviate.  Il problema riguarda anche le chat, le menzioni e le chiamate.  2. L'anteprima dei file non funziona con la versione build beta.  <br/> |Al momento non ci sono soluzioni alternative disponibili.  Stiamo collaborando con gli sviluppatori Apple per trovare soluzioni a questi problemi.  <br/> | 25/06/2019  <br/>|
 
 
@@ -290,10 +269,6 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
 |Numero di telefono bloccato|Numero di telefono bloccato: l’eliminazione dell’account di risorsa prima della rimozione del corrispettivo numero di telefono comporta il blocco del numero di telefono.|Contattare il supporto Microsoft per sbloccare il numero di telefono.|18/05/2019|
-
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
-|Non è possibile configurare le chiamate senza risposta da inoltrare alla segreteria telefonica nell'app desktop|Quando un utente è in modalità Solo Teams, la cassetta postale di Exchange è disponibile in locale e, se accede alle **Impostazioni** > **Chiamate** nell'app desktop Teams, non può selezionare l'opzione per l'inoltro delle chiamate alla segreteria telefonica (per chiamate senza risposta o per tutte le chiamate). Se una delle due opzioni era stata già configurata, l'apertura della scheda Chiamate in Impostazioni disabiliterà l'inoltro alla segreteria telefonica.|Configurare l'inoltro alla segreteria telefonica usando l'app Teams per dispositivi mobili.|27/05/2019|
 
 ## <a name="presence"></a>Icone di presenza
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
@@ -359,11 +334,8 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|Se un utente è stato rimosso da un team, è possibile che i log di controllo riportino un nome utente errato come iniziatore  <br/> |Il team di Teams è un gruppo moderno di AAD. Quando si aggiunge o si rimuove un membro tramite l'interfaccia utente di Teams, il flusso rileva esattamente quale utente ha avviato la modifica e il log di controllo riflette le informazioni corrette. Tuttavia, se un utente aggiunge o rimuove un membro tramite AAD, la modifica viene sincronizzata con il backend dell’applicazione senza informare Teams su chi sia l’iniziatore dell'azione. Microsoft Teams sceglie il primo proprietario del team come iniziatore dell’azione e tale selezione viene poi riportata anche nel log di controllo.    <br/> |  <br/> |11/05/2018  <br/> |
-
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
 |I messaggi della segreteria telefonica di Teams verranno recapitati con errore SPF se si tratta di una chiamata SIP, con l'attributo FROM senza il valore corretto in caso di chiamata PSTN a un utente, mentre se il cliente ha una regola per l’analisi dei messaggi vocali SPF avrà l'azione in cui decide l'ETR. <br/> | <br/> | La soluzione alternativa del 29/08/2019 prevede l’aggiunta di un'eccezione in ETR se il messaggio è di tipo vocale.
+
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
@@ -376,10 +348,6 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
 |I nomi dei team che contengono caratteri speciali possono generare errori per la creazione di riunioni  <br/> |L’utente riceverà il messaggio **Si è verificato un errore** in rosso, quando prova a creare una riunione per un team contenente caratteri speciali nel nome.   <br/> |Rinominare o ricreare il team con un nome che non contenga una "/".  <br/> |13/07/2017  <br/> |
-
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
-|Se il simbolo &amp; è presente nel nome di un team, la funzionalità del connettore viene compromessa  <br/> |Se il nome del team creato contiene il simbolo &amp;, non è possibile stabilire i connettori all'interno del team o del gruppo.  <br/> |I caratteri speciali non devono essere utilizzati nei nomi dei membri del team.  <br/> |21/06/2017  <br/> |
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
@@ -399,8 +367,8 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|Non è possibile spostare, eliminare o rinominare file dopo la loro modifica  <br/> |Dopo la modifica di un file in Teams, non è possibile spostarlo o rinominarlo o eliminarlo subito <br/> |Si tratta di un problema noto e la soluzione alternativa consiste nell'attendere qualche minuto prima di apportare le modifiche a livello amministrativo.  <br/> |12/03/2019  <br/> |
+|Problema di interoperabilità tra Symantec DLP e Teams <br/> |Le istanze di DLP Endpoint Agent possono interferire con l’esecuzione di Teams e conseguentemente generare un errore di avvio o di uscita.  <br/> |Escludere dalle istanze di DLP Endpoint Agent (o includere nell'elenco elementi consentiti) Teams.exe, come descritto nel seguente <a href="https://support.symantec.com/us/en/article.TECH220322.html">articolo del supporto tecnico di Symantec</a>. <br/> |15/07/2019  <br/> |
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|Problema di interoperabilità tra Symantec DLP e Teams <br/> |Le istanze di DLP Endpoint Agent possono interferire con l’esecuzione di Teams e conseguentemente generare un errore di avvio o di uscita.  <br/> |Escludere dalle istanze di DLP Endpoint Agent (o includere nell'elenco elementi consentiti) Teams.exe, come descritto nel seguente <a href="https://support.symantec.com/us/en/article.TECH220322.html">articolo del supporto tecnico di Symantec</a>. <br/> |15/07/2019  <br/> |
+|La crittografia dell può impedire l’avvio di Teams <br/> |La crittografia dell (in precedenza Crittografia per la protezione dei dati dell) può danneggiare l'installazione di Teams durante il processo di aggiornamento, causando un errore permanente durante l’avvio dell'applicazione. <br/> |Escludere la cartella Teams in %LocalAppData%\Microsoft\Teams dai criteri di crittografia. <br/> |21/11/19  <br/> |
