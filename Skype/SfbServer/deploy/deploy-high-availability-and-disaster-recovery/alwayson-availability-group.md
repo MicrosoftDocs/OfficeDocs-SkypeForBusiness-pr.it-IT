@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: c93c01e6-626c-40ad-92dd-373b0fe9189f
 description: Distribuire (installare) un gruppo sempre disponibile nella distribuzione di Skype for Business Server.
-ms.openlocfilehash: 2cfc75aecd53a82e146feefd944134a4695c21fe
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: eadf3c67f5d2618d7070c2a3540c2a9ad08b5942
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240127"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002916"
 ---
 # <a name="deploy-an-always-on-availability-group-on-a-back-end-server-in-skype-for-business-server"></a>Distribuire un gruppo di disponibilità sempre in un server back-end in Skype for Business Server
  
@@ -40,7 +40,7 @@ La modalità di distribuzione di un AG varia a seconda che la distribuzione veng
     
    - Aprire Server Manager e fare clic su **Aggiungi ruoli e funzionalità**.
     
-   - Fare clic su **Avanti** fino a raggiungere la casella **Seleziona funzionalità** . Selezionare la casella di controllo clustering di **failover** .
+   - Fare clic su **Avanti** fino a raggiungere la casella **Seleziona funzionalità** . Selezionare la casella di controllo **clustering di failover** .
     
    - Nella casella **Aggiungi funzionalità necessarie per il clustering di failover** fare clic su **Aggiungi funzionalità**.
     
@@ -132,13 +132,13 @@ La modalità di distribuzione di un AG varia a seconda che la distribuzione veng
     
      - Nella parte inferiore della pagina, nella casella **FQDN di SQL Server** , cambiare il valore con il nome di dominio completo del listener dell'AG.
     
-   - Pubblicare la topologia. Nel menu **azioni** fare clic **** su topologia e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**. Attendere alcuni minuti per la replica della nuova topologia.
+   - Pubblicare la topologia. Nel menu **azioni** fare clic su **topologia** e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**. Attendere alcuni minuti per la replica della nuova topologia.
     
    - Aprire SQL Server Management Studio e passare all'AG. Fallire in una replica secondaria.
     
    - Aprire Skype for Business Server Management Shell e digitare il cmdlet seguente per creare gli account di accesso SQL in questa replica:
     
-   ```
+   ```powershell
    Install-CsDatabase -Update
    ```
 
@@ -152,13 +152,13 @@ La modalità di distribuzione di un AG varia a seconda che la distribuzione veng
   
 1. Non eseguire il failover di tutti i dati dal mirror al nodo Principal aprendo Skype for Business Server Management Shell e digitando il cmdlet seguente.
     
-   ```
+   ```powershell
    Invoke-CsDatabaseFailover -PoolFqdn <Pool FQDN> -DatabaseType <DatabaseType> -NewPrincipal "Primary"
    ```
 
     Ripetere questo cmdlet per ogni tipo di database nel pool. Puoi usare il cmdlet seguente per trovare tutti i tipi di database archiviati in questo pool.
      
-   ```
+   ```powershell
    Get-CsPool -Identity <Pool FQDN>
    ```
 
@@ -168,7 +168,7 @@ La modalità di distribuzione di un AG varia a seconda che la distribuzione veng
     
    - Per ogni tipo di archivio SQL nel pool, deselezionare la casella di controllo **Abilita mirroring di SQL Store** .
     
-3. Pubblicare la topologia modificata. Nel menu **azioni** fare clic **** su topologia e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**
+3. Pubblicare la topologia modificata. Nel menu **azioni** fare clic su **topologia** e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**
     
 4. Usare SQL Server Management Studio per suddividere lo specchio.
     
@@ -180,7 +180,7 @@ La modalità di distribuzione di un AG varia a seconda che la distribuzione veng
     
    - Aprire Server Manager e fare clic su **Aggiungi ruoli e funzionalità**.
     
-   - Fare clic su **Avanti** fino a raggiungere la casella **Seleziona funzionalità** . Selezionare la casella di controllo clustering di **failover** .
+   - Fare clic su **Avanti** fino a raggiungere la casella **Seleziona funzionalità** . Selezionare la casella di controllo **clustering di failover** .
     
    - Nella casella **Aggiungi funzionalità necessarie per il clustering di failover** fare clic su **Aggiungi funzionalità**.
     
@@ -280,7 +280,7 @@ La modalità di distribuzione di un AG varia a seconda che la distribuzione veng
     
     - Quando si è certi che tutti i database necessari siano impostati su AG, fare clic su **OK**.
     
-13. Pubblicare la topologia. Nel menu **azioni** fare clic **** su topologia e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**.
+13. Pubblicare la topologia. Nel menu **azioni** fare clic su **topologia** e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**.
     
 14. Eseguire alcuni passaggi finali per verificare che gli accessi SQL si trovino in ognuna delle repliche del gruppo di disponibilità AlwaysOn.
     
@@ -290,13 +290,13 @@ La modalità di distribuzione di un AG varia a seconda che la distribuzione veng
     
     - Nella parte inferiore della pagina, nella casella **FQDN di SQL Server** , cambiare il valore con il nome di dominio completo del listener dell'AG.
     
-    - Pubblicare la topologia. Nel menu **azioni** fare clic **** su topologia e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**. Attendere alcuni minuti per la replica della nuova topologia.
+    - Pubblicare la topologia. Nel menu **azioni** fare clic su **topologia** e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**. Attendere alcuni minuti per la replica della nuova topologia.
     
     - Aprire SQL Server Management Studio e passare all'AG. Fallire in una replica secondaria.
     
     - Aprire Skype for Business Server Management Shell e digitare il cmdlet seguente per creare gli account di accesso SQL in questa replica:
     
-    ```
+    ```powershell
     Install-CsDatabase -Update
     ```
 
@@ -312,7 +312,7 @@ La modalità di distribuzione di un AG varia a seconda che la distribuzione veng
     
    - Aprire Server Manager e fare clic su **Aggiungi ruoli e funzionalità**.
     
-   - Fare clic su **Avanti** fino a raggiungere la casella **Seleziona funzionalità** . Selezionare la casella di controllo clustering di **failover** .
+   - Fare clic su **Avanti** fino a raggiungere la casella **Seleziona funzionalità** . Selezionare la casella di controllo **clustering di failover** .
     
    - Nella casella **Aggiungi funzionalità necessarie per il clustering di failover** fare clic su **Aggiungi funzionalità**.
     
@@ -412,7 +412,7 @@ La modalità di distribuzione di un AG varia a seconda che la distribuzione veng
     
    - Quando si è certi che tutti i database necessari siano impostati su AG, fare clic su **OK**.
     
-9. Pubblicare la topologia. Nel menu **azioni** fare clic **** su topologia e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**.
+9. Pubblicare la topologia. Nel menu **azioni** fare clic su **topologia** e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**.
     
 10. Eseguire alcuni passaggi finali per verificare che gli accessi SQL si trovino in ognuna delle repliche dell'AG.
     
@@ -422,13 +422,13 @@ La modalità di distribuzione di un AG varia a seconda che la distribuzione veng
     
     - Nella parte inferiore della pagina, nella casella **FQDN di SQL Server** , cambiare il valore con il nome di dominio completo del listener dell'AG.
     
-    - Pubblicare la topologia. Nel menu **azioni** fare clic **** su topologia e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**. Attendere alcuni minuti per la replica della nuova topologia.
+    - Pubblicare la topologia. Nel menu **azioni** fare clic su **topologia** e quindi su **pubblica**. Nella pagina di conferma fare clic su **Avanti**. Attendere alcuni minuti per la replica della nuova topologia.
     
     - Aprire SQL Server Management Studio e passare all'AG. Fallire in una replica secondaria.
     
     - Aprire Skype for Business Server Management Shell e digitare il cmdlet seguente per creare gli account di accesso SQL in questa replica:
     
-      ```
+      ```powershell
       Install-CsDatabase -Update
       ```
 

@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c8712308-0e2d-4e39-8f90-d1a250487a94
 description: 'Riepilogo: informazioni su come verificare le impostazioni di configurazione del trunk SIP tramite Skype for Business Server Management Shell.'
-ms.openlocfilehash: 1ef034f0b1de187e472fc3049573e9453e5a9505
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 7f0d4f4046a5bffbde4267b5de8ae651a35a2add
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240305"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001976"
 ---
 # <a name="test-sip-trunk-configuration-settings-in-skype-for-business-server"></a>Verificare le impostazioni di configurazione del trunk SIP in Skype for Business Server
  
@@ -41,7 +41,7 @@ Le impostazioni di configurazione trunk possono essere testate solo usando Windo
 
 - Questo comando verifica che le impostazioni di configurazione del trunk per il sito Redmond possano convertire correttamente il numero composto da 4255551212.
     
-  ```
+  ```powershell
   $trunk = Get-CsTrunkConfiguration -Identity "site:Redmond"
   Test-CsTrunkConfiguration -DialedNumber 4255551212 -TrunkConfiguration $trunk
   ```

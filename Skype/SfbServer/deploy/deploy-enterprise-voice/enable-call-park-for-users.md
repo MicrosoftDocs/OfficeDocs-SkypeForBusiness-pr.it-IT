@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 9430763f-3394-467c-9c6d-426bf761604e
 description: Consentire agli utenti di Call Park in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 797b17cb3d9482d9059bedcbbc347c3dd592e478
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: c3ad2bcf70c7b175ba372ba2834e56209de9f664
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240637"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002556"
 ---
 # <a name="enable-call-park-for-users-in-skype-for-business"></a>Abilitare il parcheggio delle chiamate per gli utenti in Skype for business
  
@@ -53,13 +53,13 @@ Per impostazione predefinita, il parcheggio delle chiamate è disabilitato per t
     
 3. Eseguire
     
-   ```
+   ```powershell
    Set-CsVoicePolicy -Identity <VoicePolicy> -EnableCallPark $true
    ```
 
     Ad esempio, per abilitare Call Park per il criterio vocale globale predefinito:
     
-   ```
+   ```powershell
    Set-CsVoicePolicy -EnableCallPark $true
    ```
 

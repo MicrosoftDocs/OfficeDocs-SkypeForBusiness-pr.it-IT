@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: b0714aae-55dc-4587-b718-34a03f596b22
 description: Creare criteri inter-sito di rete, che vengono usati dal controllo di ammissione alle chiamate vocali aziendali in Skype for Business Server.
-ms.openlocfilehash: ac03057de5b6e25e2b9de812f0d53ae02811d456
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: ce1826a1205216791f056a46fa625d26e0362f1f
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233702"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001746"
 ---
 # <a name="create-network-intersite-policies-in-skype-for-business-server"></a>Creare criteri di rete tra siti in Skype for Business Server
  
@@ -38,7 +38,7 @@ Nella topologia di esempio dell'area Nord America esiste un collegamento diretto
     
 2. Eseguire il cmdlet New-CsNetworkInterSitePolicy per creare criteri inter-sito di rete e applicare un profilo dei criteri di larghezza di banda appropriato per due siti che hanno un collegamento incrociato diretto. Ad esempio, eseguire:
     
-   ```
+   ```powershell
    New-CsNetworkInterSitePolicy -InterNetworkSitePolicyID Reno_Albuquerque -NetworkSiteID1 Reno -NetworkSiteID2 Albuquerque -BWPolicyProfileID 20Mb_Link
    ```
 

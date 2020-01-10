@@ -1,5 +1,5 @@
 ---
-title: Preparare l'accessorio Cloud Connector
+title: Predisporre l'appliance di Cloud Connector
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -14,14 +14,14 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6eacfa99-9759-4c13-aca3-8992c2ff2710
 description: Informazioni su come preparare l'accessorio Cloud Connector per la distribuzione e l'uso con il sistema telefonico in Office 365 (cloud PBX).
-ms.openlocfilehash: f2140eb0be25ba0b6935f389e5ae7b27bfc37359
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 779cb53dd19d627d8864da65e3e41f5d6dabee99
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190712"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001946"
 ---
-# <a name="prepare-your-cloud-connector-appliance"></a>Preparare l'accessorio Cloud Connector
+# <a name="prepare-your-cloud-connector-appliance"></a>Predisporre l'appliance di Cloud Connector
 
 Informazioni su come preparare l'accessorio Cloud Connector per la distribuzione e l'uso con il sistema telefonico in Office 365 (cloud PBX).
 
@@ -54,7 +54,7 @@ Questa sezione descrive come ottenere i file di installazione di Skype for Busin
 
 1. Aprire una console di PowerShell come amministratore e verificare che i cmdlet Skype for Business Cloud Connector Edition siano disponibili con il cmdlet seguente:
 
-   ```
+   ```powershell
    Get-Command *-Cc*
    ```
 
@@ -64,7 +64,7 @@ Questa sezione descrive come ottenere i file di installazione di Skype for Busin
 
     È possibile trovare la posizione della **directory del sito** con il cmdlet seguente:
 
-   ```
+   ```powershell
    Get-CcSiteDirectory
    ```
 
@@ -78,7 +78,7 @@ Questa sezione descrive come ottenere i file di installazione di Skype for Busin
 
      Per impostare la **directory del sito** su una posizione diversa da quella predefinita, eseguire il cmdlet seguente:
 
-   ```
+   ```powershell
    Set-CcSiteDirectory <UNC File path>
    ```
 
@@ -90,13 +90,13 @@ Questa sezione descrive come ottenere i file di installazione di Skype for Busin
 
     Per trovare la posizione della **directory appliance**, eseguire il cmdlet seguente:
 
-   ```
+   ```powershell
    Get-CcApplianceDirectory
    ```
 
     Per impostare la **directory appliance** su una posizione diversa da quella predefinita, eseguire il cmdlet seguente:
 
-   ```
+   ```powershell
    Set-CcApplianceDirectory <File path>
    ```
 
@@ -109,7 +109,7 @@ Questa sezione descrive come ottenere i file di installazione di Skype for Busin
 
 - Eseguire il cmdlet seguente per impostare il percorso, incluso il nome del file, sul certificato perimetrale esterno. Ad esempio: C:\certs\cce\ap.contoso.com.pfx. Il certificato deve contenere chiavi private.
 
-  ```
+  ```powershell
   Set-CcExternalCertificateFilePath -Path <Full path to External certificate, including file name> -Target EdgeServer
   ```
 
@@ -125,7 +125,7 @@ Questa sezione descrive come ottenere i file di installazione di Skype for Busin
 
 Se si usa TLS tra il Mediation Server e il gateway/SBC PSTN, eseguire il cmdlet seguente per impostare il percorso, incluso il nome del file, sul certificato del gateway. Ad esempio: C:\certs\cce\sbc.contoso.com.cer. Il certificato deve contenere la CA radice e la catena intermedia per il certificato assegnato al gateway:
 
-```
+```powershell
 Set-CcExternalCertificateFilePath -Path <Full path to gateway certificate, including file name> -Target MediationServer 
 ```
 
@@ -154,7 +154,7 @@ Preparare il file CloudConnector. ini usando le informazioni raccolte in [determ
 
 Per aggiornare il file, eseguire prima di tutto il cmdlet seguente per ottenere il modello di esempio (CloudConnector. Sample. ini):
 
-```
+```powershell
 Export-CcConfigurationSampleFile
 ```
 
@@ -167,9 +167,9 @@ Quando si aggiorna il file ini, tenere presente quanto segue:
 > [!NOTE]
 > Non tutti i valori per il file ini sono discussi in questa sezione, ma solo quelli con una considerazione particolare sono descritti qui. Per un elenco completo, vedi la sezione [determinare i parametri di distribuzione](plan-skype-for-business-cloud-connector-edition.md#BKMK_SiteParams) dell'argomento [piano per Skype for Business Cloud Connector Edition](plan-skype-for-business-cloud-connector-edition.md) . Per altre informazioni sui valori che devono essere modificati per altri dispositivi o nuovi siti, vedere [sito singolo con elevata disponibilità (ha) rispetto alle distribuzioni multisito](deploy-multiple-sites-in-cloud-connector.md#BKMK_SingleSitecomparedtomulti-site) nell'argomento [distribuire più siti in Cloud Connector](deploy-multiple-sites-in-cloud-connector.md). 
 
-- **SiteName:** Il valore predefinito è **Microsoft1**. È necessario aggiornarlo prima di distribuire Cloud Connector, perché quando si esegue **Register-CcAppliance** per registrare un dispositivo in un sito nuovo o esistente, il cmdlet userà nomesito per determinare il sito da registrare. ****
+- **SiteName:** Il valore predefinito è **Microsoft1**. È necessario aggiornarlo prima di distribuire Cloud Connector, perché quando si esegue **Register-CcAppliance** per registrare un dispositivo in un sito nuovo o esistente, il cmdlet userà **nomesito** per determinare il sito da registrare.
 
-     Se si vuole registrare l'appliance in un nuovo sito, il valore di nomesito deve essere univoco e diverso dai siti esistenti. **** Se si vuole registrare l'appliance in un sito esistente, il valore per **siteName** nel file ini deve corrispondere al nome definito nella configurazione del tenant di Office 365. Se si sta copiando un file di configurazione da un sito a un altro, assicurarsi di aggiornare di **** conseguenza il valore per SiteName per ogni sito.
+     Se si vuole registrare l'appliance in un nuovo sito, il valore di **nomesito** deve essere univoco e diverso dai siti esistenti. Se si vuole registrare l'appliance in un sito esistente, il valore per **siteName** nel file ini deve corrispondere al nome definito nella configurazione del tenant di Office 365. Se si sta copiando un file di configurazione da un sito a un altro, assicurarsi di aggiornare di conseguenza il valore per **siteName** per ogni sito.
 
 - **NomeServer:** Il nome del server non deve contenere il nome di dominio e deve essere limitato a 15 caratteri.
 
@@ -227,7 +227,7 @@ Quando si aggiorna il file ini, tenere presente quanto segue:
 
 Eseguire il cmdlet seguente per scaricare i file di informazioni sulla versione e i bit nella **directory del sito**:
 
-```
+```powershell
 Start-CcDownload
 ```
 
@@ -255,7 +255,7 @@ Prima di procedere con questo passaggio, verificare che l'opzione corpnet sia st
 
 Avviare una console di PowerShell come amministratore ed eseguire il cmdlet seguente per convertire l'immagine ISO in un disco rigido virtuale (VHD):
 
-```
+```powershell
 Convert-CcIsoToVhdx -IsoFilePath <Windows ISO File Path, including file name>
 ```
 
@@ -278,13 +278,13 @@ Se si sta distribuendo una distribuzione multisito, non è necessario convertire
 
 Gli script di PowerShell forniti richiedono che il criterio di esecuzione sia impostato su RemoteSigned. Per visualizzare l'impostazione corrente, aprire una console di PowerShell come amministratore e quindi eseguire il cmdlet seguente:
 
-```
+```powershell
 Get-ExecutionPolicy
 ```
 
 Se non è impostato su "RemoteSigned", eseguire il cmdlet seguente per modificarlo:
 
-```
+```powershell
 Set-ExecutionPolicy RemoteSigned
 ```
 

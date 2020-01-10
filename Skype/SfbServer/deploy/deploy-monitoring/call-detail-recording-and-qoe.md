@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 009a0499-4f8c-450d-9c72-a565a08e9f7a
 description: 'Riepilogo: informazioni su come configurare CDR e QoE in Skype for Business Server.'
-ms.openlocfilehash: d2f86654e852a2126fc611e820f95b8ebad5259a
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 93dc0dd5917e476d3c993562dfd06bc3a086f8dc
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239962"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001116"
 ---
 # <a name="configure-call-detail-recording-and-quality-of-experience-settings-in-skype-for-business-server"></a>Configurare la registrazione dei dettagli delle chiamate e la qualità delle impostazioni dell'esperienza in Skype for Business Server
  
@@ -27,7 +27,7 @@ Configurare il monitoraggio CDR e QoE tramite report di SQL Server Reporting Ser
 
 Dopo avere associato un archivio di monitoraggio con un pool Front-End, configurare l'archivio di monitoraggio e quindi installato e configurato SQL Server Reporting Services e monitoraggio dei report è possibile gestire la registrazione dei dettagli delle chiamate (CDR) e la qualità dell'esperienza (QoE) monitoraggio tramite Skype for Business Server Management Shell. I cmdlet di Skype for Business Server Management Shell consentono di abilitare e disabilitare il monitoraggio CDR e/o QoE per un determinato sito o per l'intera distribuzione di Skype for Business Server. Questa operazione può essere eseguita con un comando semplice come questo:
   
-```
+```powershell
 Set-CsQoEConfiguration -Identity "global" -EnableQoE $False
 ```
 
@@ -50,25 +50,25 @@ Allo stesso modo, i valori predefiniti per le impostazioni QoE selezionate sono 
    
 Se è necessario modificare queste impostazioni globali, è possibile usare i cmdlet Set-CsCdrConfiguration e Set-CsQoEConfiguration. Ad esempio, questo comando (eseguito da Skype for Business Server Management Shell) Disabilita il monitoraggio CDR nell'ambito globale; Questa operazione viene eseguita impostando la proprietà EnableCDR su false ($False):
   
-```
+```powershell
 Set-CsCdrConfiguration -Identity "global" -EnableCDR $False
 ```
 
 Tieni presente che la disabilitazione del monitoraggio non dissocia l'archivio di monitoraggio dal pool Front-End, né Disinstalla o influisce in altro modo sul database di monitoraggio del backend. Quando si usa Skype for Business Server Management Shell per disabilitare il monitoraggio CDR o QoE, è possibile interrompere temporaneamente Skype for Business Server dalla raccolta e dall'archiviazione dei dati di monitoraggio. Se si vuole riprendere, in questo caso, la raccolta e l'archiviazione dei dati CDR, è sufficiente impostare la proprietà EnableCDR su true ($True):
   
-```
+```powershell
 Set-CsCdrConfiguration -Identity "global" -EnableCDR $True
 ```
 
 Analogamente, questo comando Disabilita l'eliminazione dei record QoE nell'ambito globale:
   
-```
+```powershell
 Set-CsQoEConfiguration -Identity "global" -EnablePurging $False
 ```
 
 Oltre alle impostazioni globali, le impostazioni delle configurazioni CDR e QoE possono essere assegnate all'ambito del sito. In questo caso è disponibile un'ulteriore flessibilità di gestione per il monitoraggio. ad esempio, un amministratore può abilitare il monitoraggio CDR per il sito Redmond, ma disabilitare il monitoraggio CDR per il sito di Dublino. Per creare nuove impostazioni di configurazione CDR nell'ambito del sito, usare un comando simile al seguente:
   
-```
+```powershell
 New-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $False
 ```
 
@@ -76,13 +76,13 @@ Tieni presente che le impostazioni configurate nell'ambito del sito hanno la pre
   
 Le nuove impostazioni di configurazione QoE possono essere create nell'ambito del sito usando un comando come questo:
   
-```
+```powershell
 New-CsQoEConfiguration -Identity "site:Redmond" -KeepQoEDataForDays 15
 ```
 
 Per altre informazioni, digita i comandi seguenti in Skype for Business Server Management Shell:
   
-```
+```powershell
 Get-Help New-CsCdrConfiguration | more
 Get-Help Set-CsCdrConfiguration | more
 Get-Help New-CsQoEConfiguration | more

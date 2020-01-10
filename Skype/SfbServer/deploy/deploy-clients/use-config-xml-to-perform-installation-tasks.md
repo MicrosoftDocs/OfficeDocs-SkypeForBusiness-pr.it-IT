@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0813184a-ab40-417c-b3a3-c2090766b831
 description: "Riepilogo: come usare il file config. XML per specificare altre istruzioni per l'installazione."
-ms.openlocfilehash: 31ee6c663822c2dab59a21fe5ca80c71cb81abf8
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: d561e4f6e3213ae7dff160b9b43e02f26ecc0522
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234823"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002936"
 ---
 # <a name="use-configxml-to-perform-installation-tasks-in-skype-for-business-clients"></a>USA config. XML per eseguire attività di installazione nei client Skype for business
 
@@ -57,7 +57,7 @@ Gli elementi config. XML usati più comunemente per l'installazione di Skype for
 
 L'esempio seguente mostra un file config. XML per una tipica installazione silenziosa del client Skype for business. 
 
-```
+```xml
 <Configuration Product="Lync"> 
   <OptionState Id="LOBiMain" State="Absent" Children="Force" /> 
   <Display Level="None" CompletionNotice="No" AcceptEula="Yes" /> 

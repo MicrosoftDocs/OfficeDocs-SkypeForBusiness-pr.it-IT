@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1cc20323-ecba-4e87-a861-e54193e64cf0
 description: Leggere questo argomento per informazioni su come configurare Skype room System per i partner federati di Skype for business.
-ms.openlocfilehash: 7bf67a910b2c0d73cf3e068e9524500804ca87f4
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: 8ded7ba9be24cf1ac700be0ead1c7e0c3637becd
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775275"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002996"
 ---
 # <a name="skype-room-system-and-skype-for-business-federated-partners"></a>Skype room System e partner federati di Skype for business
  
@@ -27,7 +27,7 @@ Skype room System si basa sul collegamento partecipa a una riunione Skype for bu
   
 Il motivo di questa limitazione è che Outlook e Microsoft Exchange non usano un metodo speciale per il pacchetto di informazioni per l'invio di messaggi tramite Internet. Questo metodo, denominato TNEF (Transport Neutral Encapsulation Format), è disabilitato per impostazione predefinita per i messaggi inviati esternamente da un'organizzazione di Exchange. Per visualizzare un collegamento a una riunione in un sistema di chat room remota, l'organizzazione di invio deve abilitare il formato TNEF usando il comando seguente:
   
-```
+```powershell
 New-RemoteDomain -DomainName Contoso.com -Name Contoso
 Set-RemoteDomain -Identity Contoso -TNEFEnabled $true
 ```

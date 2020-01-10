@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c4b4a736-3b2e-45b9-a965-19d22161ad57
 description: Configurare un'applicazione SNMP per l'uso con E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 2462c7af4473f8c29cf0e068ddc86b391d7e1df2
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 5941a7fee85b486577df4c79848274528ddab952
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233945"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001376"
 ---
 # <a name="configure-an-snmp-application-in-skype-for-business-server"></a>Configurare un'applicazione SNMP in Skype for Business Server
  
@@ -38,7 +38,7 @@ Se è installata un'applicazione SNMP e il servizio informazioni sulla posizione
     
 2. Eseguire il cmdlet seguente per configurare l'URL per l'applicazione SNMP. 
     
-   ```
+   ```powershell
    Set-CsWebServiceConfiguration -MACResolverUrl "<SNMP application url>" 
    ```
 

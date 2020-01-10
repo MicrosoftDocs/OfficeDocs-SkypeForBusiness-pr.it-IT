@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: aab749a1-fa2d-4ce8-a6c6-ebcfa37ce02a
 description: Gestire le impostazioni del gruppo di risposta a livello di applicazione, ad esempio musica in attesa e risponderie, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: d39569c380abcc22993f7d87fc27143f355e7084
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 4c5964d84e5fb84bf1c20c3e43bb0cc4aa25ae17
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240533"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001276"
 ---
 # <a name="managing-application-level-response-group-settings-in-skype-for-business"></a>Gestione delle impostazioni dei gruppi di risposte a livello di applicazione in Skype for business
  
@@ -37,19 +37,19 @@ La musica predefinita in attesa viene riprodotta quando una chiamata viene inser
     
 3. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    Set-CsRgsConfiguration -Identity <name of service hosting Response Group> [-AgentRingbackGracePeriod <# seconds until call returns to agent after declined>] [-DefaultMusicOnHoldFile <audio file>] [-DisableCallContext <$true | $false>]
    ```
 
     Ad esempio:
     
-   ```
+   ```powershell
    Set-CsRgsConfiguration -Identity "service:ApplicationServer:redmond.contoso.com" -AgentRingbackGracePeriod 30 -DisableCallContext $false
    ```
 
     Per specificare un file audio da usare come musica predefinita in attesa, è necessario importare prima di tutto il file audio. Ad esempio:
     
-   ```
+   ```powershell
    $x = Import-CsRgsAudioFile -Identity "service:ApplicationServer:redmond.contoso.com" -FileName "MusicWhileYouWait.wav" -Content (Get-Content C:\Media\ MusicWhileYouWait.wav -Encoding byte -ReadCount 0)
    Set-CsRgsConfiguration -Identity "service:ApplicationServer:redmond.contoso.com" -DefaultMusicOnHoldFile <$x>
    ```

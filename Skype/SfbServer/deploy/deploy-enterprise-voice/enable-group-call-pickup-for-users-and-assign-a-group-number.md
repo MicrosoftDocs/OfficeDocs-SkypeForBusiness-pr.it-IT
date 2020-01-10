@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c33bb6c2-d43b-4fb6-a0fa-6d82a7b09abe
 description: Abilitare gli utenti per il ritiro delle chiamate di gruppo in Skype for Business Server VoIP aziendale e assegnare un numero di gruppo.
-ms.openlocfilehash: 78bdd78bf7e5bb3a9438a60b54a89664d22666ee
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 8ded9fbf7e9a9c8034684c1477c6aad92bfc9e5f
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240614"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002546"
 ---
 # <a name="enable-group-call-pickup-for-users-and-assign-a-group-number-in-skype-for-business"></a>Abilitare il ritiro delle chiamate di gruppo per gli utenti e assegnare un numero di gruppo in Skype for business
 
@@ -36,13 +36,13 @@ Dopo aver aggiunto i numeri di gruppo di prelievo chiamate alla tabella Orbit di
 
 2. Nella riga di comando eseguire:
 
-   ```
+   ```console
    SEFAUtil.exe sip:<sip address of user> /server:<pool FQDN> /enablegrouppickup:<group number>
    ```
 
     Ad esempio, per assegnare un numero di gruppo 199 a un utente:
 
-   ```
+   ```console
    SEFAUtil.exe katarina@contoso.com /server:pool01.contoso.com /enablegrouppickup:199
    ```
 

@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: a6fd5922-fe46-41ba-94e3-c76b1101a31b
 description: Creare o eliminare annunci per l'applicazione di annunci in Skype for Business Server VoIP aziendale. Ciò influenza il modo in cui vengono gestite le chiamate a numeri non assegnati.
-ms.openlocfilehash: b9f745a4b3b5a85548cc52cc1e883159a01ec1df
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 50a55908e238dfc1e3ce3d9979d554c7115576a2
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233789"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001196"
 ---
 # <a name="create-or-delete-an-announcement-in-skype-for-business-server"></a>Creare o eliminare un annuncio in Skype for Business Server
 
@@ -50,27 +50,27 @@ Per creare un nuovo annuncio, è necessario eseguire la procedura seguente:
 
 1. Per le istruzioni audio, creare il file audio.
 
-2. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione**Delegate.
+2. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione delegate**.
 
 3. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
 
 4. Per le istruzioni audio, eseguire:
 
-   ```
+   ```powershell
    Import-CsAnnouncementFile -Parent <service of the Application Server running the Announcement application> -FileName <name for file in File Store> -Content Byte [<contents of file in byte array>]
    ```
 
 5. Eseguire
 
-   ```
+   ```powershell
    New-CsAnnouncement -Parent <service of Application Server running the Announcement application, in the form: service:ApplicationServer:<fqdn>> -Name <unique name to be used as destination in unassigned number table> [-AudioFilePrompt <FileName specified in Import-CsAnnouncementFile>] [-TextToSpeechPrompt <text string to be converted to speech>] [-Language <Language for playing the TTS prompt (required for PromptTts)>] [-TargetUri sip:SIPAddress for transferring caller after announcement]
    ```
 
-    Per il trasferimento delle chiamate alla segreteria telefonica, digitare SIPAddress nel formato SIP: nomeutente @ nomedominio; opaque = app: voicemail (ad esempio, SIP: bob@contoso.com; opaque = app: voicemail). Per il trasferimento di chiamate a un numero di telefono, digitare SIPAddress nel formato SIP: Number @ NomeDominio; utente = telefono, ad esempio SIP: + 14255550121@contoso.com; utente = telefono.
+    Per il trasferimento delle chiamate alla segreteria telefonica, digitare SIPAddress nel formato SIP: username@domainname; opaque = app: voicemail, ad esempio SIP: bob@contoso. com; opaque = app: voicemail). Per trasferire le chiamate a un numero di telefono, digitare SIPAddress nel formato SIP: number@domainname; utente = telefono, ad esempio SIP: + 14255550121@contoso. com; utente = telefono).
 
     Ad esempio, per specificare un prompt audio:
 
-   ```
+   ```powershell
    $a = Get-Content ".\PromptFile.wav" -ReadCount 0 -Encoding Byte
    Import-CsAnnouncementFile -Parent service:ApplicationServer:pool0@contoso.com -FileName "ChangedNumberMessage.wav" -Content $a
    New-CsAnnouncement -Parent service:ApplicationServer:pool0.contoso.com -Name "Number Changed Announcement" -AudioFilePrompt "ChangedNumberMessage.wav"
@@ -78,7 +78,7 @@ Per creare un nuovo annuncio, è necessario eseguire la procedura seguente:
 
     Ad esempio, per specificare un prompt TTS:
 
-   ```
+   ```powershell
    New-CsAnnouncement -Parent service:ApplicationServer:pool0.contoso.com -Name "Help Desk Announcement" -TextToSpeechPrompt "The Help Desk number has changed. Please dial 5550100." -Language "en-US"
    ```
 
@@ -88,25 +88,25 @@ Per creare un nuovo annuncio, è necessario eseguire la procedura seguente:
 
 ### <a name="to-delete-an-announcement"></a>Per eliminare un annuncio
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione**Delegate.
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione delegate**.
 
 2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
 
 3. Elencare tutti gli annunci dell'organizzazione. Nella riga di comando eseguire:
 
-   ```
+   ```powershell
    Get-CsAnnouncement
    ```
 
 4. Nell'elenco risultante individuare l'annuncio che si vuole eliminare e copiare il GUID. Quindi, alla riga di comando, Esegui:
 
-   ```
+   ```powershell
    Remove-CsAnnouncement -Identity "<Service:service ID/guid>"
    ```
 
     Ad esempio:
 
-   ```
+   ```powershell
    Remove-CsAnnouncement -Identity "ApplicationServer:Redmond.contoso.com/1951f734-c80f-4fb2-965d-51807c792b90"
    ```
 

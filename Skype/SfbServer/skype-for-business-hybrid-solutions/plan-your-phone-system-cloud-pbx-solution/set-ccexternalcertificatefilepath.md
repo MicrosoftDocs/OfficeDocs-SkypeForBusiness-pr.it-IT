@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 443d071e-633e-4337-b20b-f30cdfbd4aaf
 description: Il cmdlet Set-CcExternalCertificateFilePath specifica il percorso in cui è archiviato il certificato per il server di mediazione o il server perimetrale.
-ms.openlocfilehash: bc22771c20277d9de99660551864d600f06b3acc
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e71a50f09a4ce3d085746c30f7591e8a07eb38de
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190643"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003206"
 ---
 # <a name="set-ccexternalcertificatefilepath"></a>Set-CcExternalCertificateFilePath
  
@@ -26,7 +26,7 @@ Questo certificato è necessario durante la distribuzione o quando si aggiungono
   
 Questo cmdlet si applica a Skype for Business Cloud Connector Edition 1.4.1, 1.4.2.
   
-```
+```powershell
 Set-CcExternalCertificateFilePath [-Target] <string> {EdgeServer | MediationServer} [-Path] <string> [-Import]  [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Set-CcExternalCertificateFilePath [-Target] <string> {EdgeServer | MediationServ
 
 L'esempio seguente imposta il percorso del certificato per il server perimetrale:
   
-```
+```powershell
 Set-CcExternalCertificateFilePath -Target EdgeServer -Path C:\CloudConnector\Certificates\AdatumPublicEdge.pfx
 ```
 
@@ -45,7 +45,7 @@ Set-CcExternalCertificateFilePath -Target EdgeServer -Path C:\CloudConnector\Cer
 
 L'esempio seguente imposta il percorso del certificato per il Mediation Server:
   
-```
+```powershell
 Set-CcExternalCertificateFilePath -Target MediationServer -Path C:\CloudConnector\Certificates\AdatumPublicMediation.pfx
 ```
 
@@ -53,7 +53,7 @@ Set-CcExternalCertificateFilePath -Target MediationServer -Path C:\CloudConnecto
 
 Nell'esempio successivo viene aggiornato il certificato per il Mediation Server:
   
-```
+```powershell
 Set-CcExternalCertificateFilePath -Target MediationServer -Path C:\CloudConnector\Certificates\AdatumPublicMediation.pfx -Import
 ```
 

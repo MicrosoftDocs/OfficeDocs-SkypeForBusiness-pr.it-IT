@@ -15,12 +15,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 674c4c43e1fe99639c6e8bfd9665e1bf0755e1ba
-ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
+ms.openlocfilehash: e5cc89afb43149f68dfc068492e1d0163e4b0721
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40069377"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003316"
 ---
 # <a name="setting-your-coexistence-and-upgrade-settings"></a>Impostazione delle impostazioni di coesistenza e aggiornamento
 
@@ -39,7 +39,7 @@ Quando si aggiornano gli utenti di Skype for business per usare teams, sono disp
 
 ![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
 
-1. Nella barra di spostamento sinistra passare a aggiornamento **delle impostazioni** > a livello di organizzazione di**Teams**. 
+1. Nell'interfaccia di [amministrazione di Microsoft teams](https://admin.teams.microsoft.com/), nella barra di spostamento sinistra, passa a aggiornamento a **livello** > di organizzazione di**Teams**. 
 
 2. Nella parte superiore della pagina di **aggiornamento dei team** apportare le modifiche seguenti per il lavoro.
     - Impostare la modalità di **coesistenza** .

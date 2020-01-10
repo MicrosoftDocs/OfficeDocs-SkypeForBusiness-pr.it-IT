@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 9c3a3054-6201-433f-b128-4c49d3341370
 description: "Riepilogo: configurare l'autenticazione da server a server per Exchange Server 2016 o Exchange Server 2013 e Skype for Business Server."
-ms.openlocfilehash: 5a1958db05ea1e4fae37737512368d509b3c62cf
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 004b9c1926f00cd869658ae0b90679897d20516b
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245510"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001256"
 ---
 # <a name="configure-partner-applications-in-skype-for-business-server-and-exchange-server"></a>Configurare le applicazioni partner in Skype for Business Server ed Exchange Server
  
@@ -33,19 +33,19 @@ Per configurare l'autenticazione da server a server tra Skype for Business Serve
 
 Il modo più semplice per configurare Skype for Business Server come applicazione partner con Exchange Server 2016 o Exchange Server 2013 consiste nell'eseguire lo script Configure-EnterprisePartnerApplication. ps1, uno script di Windows PowerShell fornito con Exchange Server. Per eseguire questo script, devi specificare l'URL per il documento di metadati dell'autenticazione di Skype for Business Server. in genere sarà il nome di dominio completo del pool di Skype for Business Server seguito dal suffisso/Metadata/JSON/1. Ad esempio:
   
-```
+```console
 https://atl-cs-001.litwareinc.com/metadata/json/1
 ```
 
 Per configurare Skype for Business Server come applicazione partner, aprire Exchange Management Shell ed eseguire un comando simile a questo (presupponendo che Exchange sia stato installato nell'unità C: e che usi il percorso della cartella predefinito):
   
-```
+```powershell
 "C:\Program Files\Microsoft\Exchange Server\V15\Scripts\Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl 'https://atl-cs-001.litwareinc.com/metadata/json/1' -ApplicationType Lync"
 ```
 
 Dopo aver configurato l'applicazione partner, è consigliabile arrestare e riavviare Internet Information Services (IIS) nella cassetta postale di Exchange e nei server Accesso client. È possibile riavviare IIS usando un comando simile a questo, che riavvia il servizio nel computer ATL-Exchange-001:
   
-```
+```powershell
 iisreset atl-exchange-001
 ```
 
@@ -55,13 +55,13 @@ Questo comando può essere eseguito dall'interno di Exchange Management Shell o 
 
 Dopo aver configurato Skype for Business Server come applicazione partner per Exchange Server 2016 o Exchange Server 2013, è necessario configurare Exchange Server come applicazione partner per Skype for Business Server. Questa operazione può essere eseguita usando Skype for Business Server Management Shell e specificando il documento di metadati di autenticazione per Exchange. si tratta in genere dell'URI del servizio di individuazione automatica di Exchange seguito dal suffisso/Metadata/JSON/1. Ad esempio:
   
-```
+```console
 https://autodiscover.litwareinc.com/autodiscover/metadata/json/1
 ```
 
 In Skype for Business Server le applicazioni partner vengono configurate usando il cmdlet [New-CsPartnerApplication](https://docs.microsoft.com/powershell/module/skype/new-cspartnerapplication?view=skype-ps) . Oltre a specificare l'URI di metadati, devi anche impostare il livello di attendibilità dell'applicazione su completo. Ciò consentirà a Exchange di rappresentare se stesso e qualsiasi utente autorizzato nell'ambito. Ad esempio:
   
-```
+```powershell
 New-CsPartnerApplication -Identity Exchange -ApplicationTrustLevel Full -MetadataUrl "https://autodiscover.litwareinc.com/autodiscover/metadata/json/1"
 ```
 
@@ -71,7 +71,7 @@ Se sono state configurate correttamente le applicazioni partner sia per Skype fo
   
 Per testare l'integrazione di Skype for Business Server ed Exchange Server, eseguire un comando simile al seguente da Skype for Business Server Management Shell:
   
-```
+```powershell
 Test-CsExStorageConnectivity -SipUri "sip:kenmyer@litwareinc.com"
 ```
 

@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d1c9ebd8-af42-42a0-87d9-fc899fbd7c42
 description: "Riepilogo: abilitare l'archivio contatti unificato in Skype for Business Server."
-ms.openlocfilehash: 39317316be6c4590e992c61e91549748f3bf6719
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 6cadba38f40a8ff12501e0fe73f4243dc96a5831
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239318"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003066"
 ---
 # <a name="deploy-unified-contact-store-in-skype-for-business-server"></a>Distribuire l'archivio contatti unificato in Skype for Business Server
  
@@ -44,37 +44,37 @@ Quando si distribuisce Skype for Business Server e si pubblica la topologia, per
     
    - Per abilitare l'archivio contatti unificato a livello globale per tutti gli utenti di Skype for Business Server, tra i seguenti cmdlet dell'interfaccia della riga di comando di Windows PowerShell:
     
-   ```
+   ```powershell
    Set-CsUserServicesPolicy -Identity global -UcsAllowed $True
    ```
 
    - Per abilitare l'archivio contatti unificato per gli utenti di un sito specifico, al prompt digitare:
     
-   ```
+   ```powershell
    New-CsUserServicesPolicy -Identity site:<site name> -UcsAllowed $True
    ```
 
    Ad esempio:
     
-   ```
+   ```powershell
    New-CsUserServicesPolicy -Identity site:Redmond -UcsAllowed $True
    ```
 
    - Per abilitare l'archivio contatti unificato dal tenant, al prompt digitare:
     
-   ```
+   ```powershell
    Set-CsUserServicesPolicy -Tenant <tenantId> -UcsAllowed $True
    ```
 
    Ad esempio:
     
-   ```
+   ```powershell
    Set-CsUserServicesPolicy -Tenant "38aad667-af54-4397-aaa7-e94c79ec2308" -UcsAllowed $True
    ```
 
    - Per abilitare l'archivio contatti unificato per utenti specifici, al prompt digitare:
     
-   ```
+   ```powershell
    New-CsUserServicesPolicy -Identity "<policy name>" -UcsAllowed $True
    Grant-CsUserServicesPolicy -Identity "<user display name>" -PolicyName <"policy name">
    ```
@@ -84,7 +84,7 @@ Quando si distribuisce Skype for Business Server e si pubblica la topologia, per
   
     Ad esempio:
     
-   ```
+   ```powershell
    New-CsUserServicesPolicy -Identity "UCS Enabled Users" -UcsAllowed $True
    Grant-CsUserServicesPolicy -Identity "Ken Myer" -PolicyName "UCS Enabled Users"
    ```
@@ -108,13 +108,13 @@ Puoi determinare se i contatti di un utente sono stati migrati usando uno dei me
   
 - Selezionare la chiave del registro di sistema seguente nel computer client:
     
-    HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Lync\\<URL\>SIP \UCS
+    HKEY_CURRENT_USER \Software\Microsoft\Office\15.0\Lync\\<URL\>SIP \UCS
     
     Se i contatti dell'utente sono archiviati in Exchange 2013, questa chiave contiene un valore di InUCSMode con il valore 2165.
     
 - Eseguire il cmdlet **Test-CsUnifiedContactStore** . Nella riga di comando di Skype for Business Server Management Shell digitare:
     
-  ```
+  ```powershell
   Test-CsUnifiedContactStore -UserSipAddress "sip:kenmyer@litwareinc.com" -TargetFqdn "atl-cs-001.litwareinc.com"
   ```
 
@@ -139,6 +139,6 @@ L'importazione di dati dell'archivio contatti unificati da un database di backup
 > [!IMPORTANT]
 > Prima di trasferire una cassetta postale di Exchange da Exchange 2013 a Exchange 2010, l'amministratore di Exchange deve verificare che l'amministratore di Skype for Business Server abbia prima eseguito il rollback dei contatti degli utenti di Skype for Business Server da Exchange 2013 a Skype for Business Server. Per ripristinare i contatti degli archivi di contatti unificati in Skype for Business Server, vedere procedura "per ripristinare i contatti dell'archivio contatti unificati da Exchange 2013 a Skype for Business Server" più avanti in questa sezione. 
   
- **Come ripristinare i contatti utente:** Se si usa il cmdlet **Move-CsUser** per spostare gli utenti tra Skype for Business Server 2015 e Lync Server 2010, è possibile ignorare questi passaggi perché il cmdlet **Move-CsUser** esegue automaticamente il rollback dell'archivio contatti unificato quando sposta gli utenti da Skype for Business Server 2015 a Lync Server 2010. **Move-CsUser** non Disabilita i criteri dell'archivio contatti unificato, quindi la migrazione all'archivio contatti unificato si ripresenta se l'utente viene spostato di nuovo in Skype for Business Server 2015.
+ **Come ripristinare i contatti utente:** Se si usa il cmdlet **Move-CsUser** per spostare gli utenti tra Skype for business server 2015 e lync Server 2010, è possibile ignorare questi passaggi perché il cmdlet **Move-CsUser** esegue automaticamente il rollback dell'archivio contatti unificato quando sposta gli utenti da skype for Business Server 2015 a Lync Server 2010. **Move-CsUser** non Disabilita i criteri dell'archivio contatti unificato, quindi la migrazione all'archivio contatti unificato si ripresenta se l'utente viene spostato di nuovo in Skype for Business Server 2015.
   
 

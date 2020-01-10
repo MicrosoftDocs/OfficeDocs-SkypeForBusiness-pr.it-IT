@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 083ffbc6-7c18-4141-85f9-8825b62c3d10
 description: Configurare un database di origine della posizione secondaria (SLS) per E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 47dd4015cde79536323cee3edc04ed546459a3f0
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 1743a4c5f49fcc01fe2f0878c596e0d1bb530621
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240400"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001997"
 ---
 # <a name="configure-a-secondary-location-information-service-in-skype-for-business-server"></a>Configurare un servizio di informazioni sulla posizione secondaria in Skype for Business Server
  
@@ -33,7 +33,7 @@ Skype for Business Server offre un'interfaccia di servizio Web che può essere u
     
 2. Eseguire il cmdlet seguente per configurare l'URL per la posizione del database della posizione secondaria. 
     
-   ```
+   ```powershell
    Set-CsWebServiceConfiguration -SecondaryLocationSourceURL "<web service url>" 
    ```
 

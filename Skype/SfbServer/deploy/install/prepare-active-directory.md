@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 985077a4-c8e1-4d5a-9fcf-fef41cf6d61d
 description: "Riepilogo: informazioni su come preparare il dominio Active Directory per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: 85bd8d45cee1144ef355f0a9b0491d24529d6ff3
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 114b2a91491dd440972f589ff45d86835c676bef
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245795"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41000886"
 ---
 # <a name="prepare-active-directory-for-skype-for-business-server"></a>Preparare Active Directory per Skype for Business Server
  
@@ -131,7 +131,7 @@ Guardare la procedura video per **preparare Active Directory**:
     
     b. Usare il comando Get-CsAdDomain per verificare la replica all'interno del dominio.
     
-   ```
+   ```powershell
    Get-CsAdDomain [-Domain <Fqdn>] [-DomainController <Fqdn>] [-GlobalCatalog <Fqdn>] [-GlobalSettingsDomainController <Fqdn>]
    ```
 
@@ -140,7 +140,7 @@ Guardare la procedura video per **preparare Active Directory**:
   
     Esempio di eseguire il comando per il dominio contoso. local:
     
-   ```
+   ```powershell
    Get-CsAdDomain -Domain contoso.local -GlobalSettingsDomainController dc.contoso.local
    ```
 

@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6f417569-b100-442c-ad48-fdd794626cf7
 description: 'Riepilogo: informazioni su come installare un servizio che genererà report di monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: 765c7a13b965b8701de6bc70782a9d7a8963a429
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 4a2d10e8025b2107da8a0b5c3866faf210b77ada
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239982"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001166"
 ---
 # <a name="install-monitoring-reports-in-skype-for-business-server"></a>Installare report di monitoraggio in Skype for Business Server
  
@@ -34,7 +34,7 @@ I report di monitoraggio di Skype for Business Server includono più di 30 repor
   
 - **Nuovi report sulla qualità vocale**. Questi nuovi report includono il [report di confronto qualità multimediale in Skype for Business Server](../../manage/health-and-monitoring/comparison.md), che confronta la qualità tra i diversi tipi di chiamate, ad esempio tra chiamate cablate e chiamate wireless. e il [report tempo di partecipazione alla conferenza in Skype for Business Server](../../manage/health-and-monitoring/join-time-report.md), che fornisce informazioni sull'intervallo di tempo necessario per consentire agli utenti di partecipare a una conferenza. 
     
-- **Report migliorati per l'analisi e la risoluzione dei problemi delle sessioni di condivisione di video e applicazioni.** il [report di riepilogo qualità multimediale in Skype for Business Server](../../manage/health-and-monitoring/summary.md) consente di analizzare le chiamate di condivisione di video e applicazioni, mentre il [report prestazioni server in Skype for business](../../manage/health-and-monitoring/server-performance.md) server descrive in dettaglio le prestazioni dei server che la generano chiamate. Le metriche per la condivisione di video e applicazioni sono ora segnalate anche dal [report Dettagli sessione peer-to-peer di Skype for Business Server](../../manage/health-and-monitoring/peer-to-peer-session-detail-report.md) e dal [report Dettagli conferenza in Skype for Business Server](../../manage/health-and-monitoring/detail-report.md).
+- **Report migliorati per l'analisi e la risoluzione dei problemi delle sessioni di condivisione di video e applicazioni.** il [report di riepilogo qualità multimediale in Skype for Business Server](../../manage/health-and-monitoring/summary.md) consente di analizzare le chiamate di condivisione di video e applicazioni, mentre il [report prestazioni server in Skype for business](../../manage/health-and-monitoring/server-performance.md) server descrive in dettaglio le prestazioni dei server che generano queste chiamate. Le metriche per la condivisione di video e applicazioni sono ora segnalate anche dal [report Dettagli sessione peer-to-peer di Skype for Business Server](../../manage/health-and-monitoring/peer-to-peer-session-detail-report.md) e dal [report Dettagli conferenza in Skype for Business Server](../../manage/health-and-monitoring/detail-report.md).
     
 - **Prestazioni migliorate del report**. Questo include la risposta più rapida e il tempo di recupero dei dati, nonché la navigazione più veloce e più semplice tra i report.
     
@@ -67,7 +67,7 @@ Per installare i report di monitoraggio tramite la distribuzione guidata, esegui
     
 I report di monitoraggio possono essere installati anche da Skype for Business Server Management Shell eseguendo lo script DeployReports. ps1; Questo script di Windows PowerShell si trova nella cartella \<Install Location\>\Skype for Business Server 2015 \ Deployment\Setup. Per installare i report di monitoraggio tramite DeployReports. ps1, digitare un comando simile al seguente al prompt di Management Shell:
   
-```
+```powershell
 C:\Program Files\Skype for Business Server 2015\Deployment\Setup\DeployReports.ps1 -storedUserName "litwareinc\kenmyer" -storedPassword "p@ssw0rd" -readOnlyGroupName "RTCUniversalReadOnlyAdmins" -reportServerSqlInstance "atl-sql-001.litwareinc.com" -monitoringDatabaseId "MonitoringDatabase:atl-sql-001.litwareinc.com"
 ```
 
@@ -83,7 +83,7 @@ I parametri usati nel comando precedente sono descritti nella tabella seguente:
    
 Dopo aver installato i report di monitoraggio, è necessario usare il cmdlet New-CsReportingConfiguration per configurare l'URL usato per accedere a questi report. Questa attività può essere eseguita da Skype for Business Server Management Shell eseguendo il comando di Windows PowerShell seguente. Si noti che è consigliabile, ma non necessario, che si usi il protocollo HTTPS quando si configura l'URL della segnalazione:
   
-```
+```powershell
 New-CsReportingConfiguration -Identity 'service:MonitoringDatabase:atl-sql-001.litwareinc.com' -ReportingURL 'https://atl-sql-001.litwareinc.com:443/Reports_ARCHINST'
 ```
 

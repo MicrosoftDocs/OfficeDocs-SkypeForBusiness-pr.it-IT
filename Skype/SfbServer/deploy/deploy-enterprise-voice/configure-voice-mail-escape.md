@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: a1d19e6c-82ff-4768-8ae5-da981368ce40
 description: 'Riepilogo: informazioni su come configurare la modalità di escape della segreteria telefonica in Skype for Business Server tramite Skype for Business Server Management Shell.'
-ms.openlocfilehash: c9a858ead9261944c162cb10fda63840f8de86d3
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 27f283f4bfb64aa950bd9e72a9d6fdc17df91ba0
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233792"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001216"
 ---
 # <a name="configure-voice-mail-escape-in-skype-for-business"></a>Configurare l'escape della segreteria telefonica in Skype for business
 
@@ -41,7 +41,7 @@ Questa configurazione viene eseguita usando il cmdlet di Skype for Business Serv
 
 ## <a name="example"></a>Esempio
 
-```
+```powershell
 Set-CsVoicePolicy UserVoicePolicy -EnableVoiceMailEscapeTimer $true - PSTNVoicemailEscapeTimer 2000
 Set-CsVoicePolicy -Identity site:SitePolicy -EnableVoiceMailEscapeTimer $true -PSTNVoicemailEscapeTimer 1500
 ```

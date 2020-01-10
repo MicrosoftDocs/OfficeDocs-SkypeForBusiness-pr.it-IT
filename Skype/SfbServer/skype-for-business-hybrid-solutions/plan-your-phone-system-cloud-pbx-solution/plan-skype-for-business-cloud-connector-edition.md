@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6ce0e580-8c4a-45de-a54f-e39e438335d6
 description: Trovare informazioni su Skype for Business Cloud Connector Edition, un set di macchine virtuali in pacchetto (VM) che implementano la connettività PSTN locale con il sistema telefonico in Office 365 (cloud PBX).
-ms.openlocfilehash: 1ef79cc9d50e21dc8b3376901638cd4f34e03f62
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3b95c1cca24b6faac8a6cf2807b6af324fdc57bd
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190718"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002276"
 ---
 # <a name="plan-for-skype-for-business-cloud-connector-edition"></a>Pianificare per Skype for Business Cloud Connector Edition
 
@@ -123,11 +123,11 @@ I componenti del connettore Cloud includono le funzionalità seguenti:
 
 - **Domain controller** -Cloud Connector Active Directory Domain Services per archiviare tutte le impostazioni globali e i gruppi necessari per distribuire i componenti di Cloud Connector. Verrà creata una foresta per ogni accessorio Cloud Connector. Il controller di dominio non deve avere connessioni con la produzione Active Directory. I servizi Active Directory includono:
 
-  - Servizi di dominio Active Directory
+  - Active Directory Domain Services
 
   - Servizi certificati Active Directory per emettere certificati interni
 
-- **Componente** di mediazione: implementa il protocollo di mapping dei gateway SIP e media tra Skype for business e i gateway PSTN. Include una replica CMS che sincronizza la configurazione dal database CMS globale.
+- **Componente di mediazione** : implementa il protocollo di mapping dei gateway SIP e media tra Skype for business e i gateway PSTN. Include una replica CMS che sincronizza la configurazione dal database CMS globale.
 
 ## <a name="cloud-connector-edition-topologies"></a>Topologie a Cloud Connector Edition
 <a name="BKMK_Topologies"> </a>
@@ -244,7 +244,7 @@ Prima di distribuire Cloud Connector Edition, verificare di avere gli elementi s
 
   - Specificare le impostazioni proxy per ogni computer anziché per ogni utente. In caso contrario, il download di Cloud Connector non riesce. È possibile specificare le impostazioni proxy per ogni computer con una modifica del registro di sistema o con l'impostazione di criteri di gruppo come indicato di seguito:
 
-  - **Registro di sistema:** Impostazioni HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet] ProxySettingsPerUser DWORD: 00000000
+  - **Registro di sistema:** HKEY_LOCAL_MACHINE impostazioni \SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet] ProxySettingsPerUser DWORD: 00000000
 
   - **Criteri di gruppo:** Modelli\>\>amministrativi per computer Windows\> Components Internet Explorer: impostare le impostazioni proxy per ogni computer (anziché per ogni utente)
 
@@ -360,13 +360,13 @@ Per motivi di sicurezza, puoi limitare l'intervallo di porte per il componente d
 
 Ad esempio, il comando seguente limita il numero di porte che il componente di mediazione userà per il traffico multimediale in 50 000-51 000 per l'audio (in e out). Il componente di mediazione sarà in grado di gestire le chiamate simultanee di 250 con questa configurazione. Tieni presente che potresti anche voler limitare questo intervallo nel gateway SBC/PSTN:
 
-```
+```powershell
 Set-CSMediationServer -Identity MediationServer:mspool.contoso.com -AudioPortStart 50000 - AudioPortCount 1000
 ```
 
 Per recuperare il nome del componente di mediazione e vedere le porte predefinite, è possibile usare il cmdlet [Get-CsService](https://docs.microsoft.com/powershell/module/skype/get-csservice?view=skype-ps) come indicato di seguito:
 
-```
+```powershell
 Get-CsService -MediationServer | Select-Object Identity, AudioPortStart, AudioPortCount
 ```
 
@@ -442,7 +442,7 @@ Il componente Edge deve risolvere i nomi esterni dei servizi di Office 365 e i n
 
 Ogni componente Edge è un computer multihomed con interfacce esterne e interne. Cloud Connector distribuisce i server DNS nel componente controller di dominio all'interno della rete perimetrale. È possibile puntare il server Edge al server DNS all'interno del perimetro per tutte le risoluzioni dei nomi, ma è necessario abilitare il server DNS per il Cloud Connector per risolvere i nomi esterni impostando una zona DNS contenente uno o più record DNS per le query esterne che fanno riferimento al nome. ricerche ad altri server DNS pubblici.
 
-Nel file ini, se si imposta il nome FQDN per i gateway dallo stesso spazio di dominio del dominio SIP, l'area autorevole per il dominio SIP verrà creata nel server DNS all'interno del perimetro. Se Edge Server fa riferimento a questo server DNS per la risoluzione dei nomi, Edge non risolverà mai il _sipfederationtls. \<record\> DNS di dominio, necessario per il flusso delle chiamate. In questo caso, Microsoft consiglia di specificare un server DNS nell'interfaccia esterna Edge per risolvere le ricerche di nomi Internet e ogni componente Edge deve usare un file HOST per risolvere altri nomi di componenti del connettore Cloud in indirizzi IP.
+Nel file ini, se si imposta il nome FQDN per i gateway dallo stesso spazio di dominio del dominio SIP, l'area autorevole per il dominio SIP verrà creata nel server DNS all'interno del perimetro. Se Edge Server fa riferimento a questo server DNS per la risoluzione dei nomi, Edge non risolverà mai la _sipfederationtls. \<record\> DNS di dominio, necessario per il flusso delle chiamate. In questo caso, Microsoft consiglia di specificare un server DNS nell'interfaccia esterna Edge per risolvere le ricerche di nomi Internet e ogni componente Edge deve usare un file HOST per risolvere altri nomi di componenti del connettore Cloud in indirizzi IP.
 
 > [!NOTE]
 > Per motivi di sicurezza, è consigliabile non puntare il server DNS per il Cloud Connector ai server interni nel dominio di produzione per la risoluzione dei nomi.
@@ -706,7 +706,7 @@ Cloud Connector 2,1 e versioni successive supporta il monitoraggio del connettor
 
 Per altre informazioni, vedere quanto segue:
 
-- [Soluzioni per la telefonia Microsoft](https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions)
+- [Soluzioni di telefonia Microsoft](https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions)
 
 - [Configurare e gestire Skype for Business Cloud Connector Edition](configure-skype-for-business-cloud-connector-edition.md)
 

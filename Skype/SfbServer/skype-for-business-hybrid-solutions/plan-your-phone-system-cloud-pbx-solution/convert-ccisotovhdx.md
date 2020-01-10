@@ -1,5 +1,5 @@
 ---
-title: Convertire-CcIsoToVhdx
+title: Convert-CcIsoToVhdx
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -11,18 +11,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 216abec2-d354-4ee3-9999-0a6b350a4a5f
 description: Il cmdlet Convert-CcIsoToVhdx crea un file di disco rigido virtuale di base (VHDX) usando un file ISO di Windows Server 2012 R2 fornito dal cliente. Il file VHDX verrà usato durante la distribuzione di Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: 7b1426fe3180576e28780aeae96ee8e4913bb399
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 780002c54a77746c51f418cae077ffcc9b1fb608
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190856"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001346"
 ---
-# <a name="convert-ccisotovhdx"></a>Convertire-CcIsoToVhdx
+# <a name="convert-ccisotovhdx"></a>Convert-CcIsoToVhdx
  
 Il cmdlet Convert-CcIsoToVhdx crea un file di disco rigido virtuale di base (VHDX) usando un file ISO di Windows Server 2012 R2 fornito dal cliente. Il file VHDX verrà usato durante la distribuzione di Skype for Business Cloud Connector Edition.
   
-```
+```powershell
 Convert-CcIsoToVhdx [[-IsoFilePath] <string>] [-GeneralizeOnly] [-PauseBeforeUpdate]
 ```
 
@@ -39,9 +39,9 @@ Convert-CcIsoToVhdx [[-IsoFilePath] <string>] [-GeneralizeOnly] [-PauseBeforeUpd
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente prepara il file VHDX di base usando un file ISO di Windows Server 2012 R2 che si trova in "C:\Windows_Server_2012_R2-EN-US-x64.ISO": 
+L'esempio seguente prepara il file VHDX di base usando un file ISO di Windows Server 2012 R2 che si trova in "C:\ Windows_Server_2012_R2-EN-US-x64. ISO": 
   
-```
+```powershell
 Convert-CcIsoToVhdx -IsoFilePath "C:\Windows_Server_2012_R2-EN-US-x64.ISO" 
 ```
 
@@ -49,7 +49,7 @@ Convert-CcIsoToVhdx -IsoFilePath "C:\Windows_Server_2012_R2-EN-US-x64.ISO"
 
 Se il cmdlet Convert-CcIsoToVhdx non riesce durante Windows Update, è probabilmente a causa di una configurazione di rete/proxy non corretta. È possibile seguire le istruzioni nel messaggio di errore e accedere alla macchina virtuale di base per correggere il problema e aggiornare le finestre manualmente. Dopo aver completato il lavoro manuale, eseguire di nuovo il cmdlet con il parametro-GeneralizeOnly per completare i processi rimanenti: 
   
-```
+```powershell
 Convert-CcIsoToVhdx -IsoFilePath "C:\Windows_Server_2012_R2-EN-US-x64.ISO" -GeneralizeOnly
 ```
 
@@ -57,7 +57,7 @@ Convert-CcIsoToVhdx -IsoFilePath "C:\Windows_Server_2012_R2-EN-US-x64.ISO" -Gene
 
 Se è necessaria la configurazione manuale per aggiornare Windows, è possibile usare il parametro-PauseBeforeUpdate. Con questo parametro, il connettore Cloud verrà sospeso prima del processo di Windows Update. È quindi possibile completare la configurazione manuale e riprendere il processo di conversione nel modo seguente:
   
-```
+```powershell
 Convert-CcIsoToVhdx -IsoFilePath "C:\Windows_Server_2012_R2-EN-US-x64.ISO" -PauseBeforeUpdate 
 ```
 

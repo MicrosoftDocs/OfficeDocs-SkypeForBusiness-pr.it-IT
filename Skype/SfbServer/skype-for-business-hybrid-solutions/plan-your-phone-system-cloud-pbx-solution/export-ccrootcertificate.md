@@ -11,18 +11,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1499e33c-6a7c-46b9-b9a1-f78d7853b45d
 description: Il cmdlet Export-CcRootCertificate Esporta il certificato della CA radice in un file locale nel server host Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: 7d6d0978698b4b20b570107b51c9a89ff237b730
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 90eadb257d91a05c05fabbfe1db84b8160ad4a7c
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190796"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003416"
 ---
 # <a name="export-ccrootcertificate"></a>Export-CcRootCertificate
  
 Il cmdlet Export-CcRootCertificate Esporta il certificato della CA radice in un file locale nel server host Skype for Business Cloud Connector Edition. 
   
-```
+```powershell
 Export-CcRootCertificate [[-Path] <string>]
 ```
 
@@ -33,7 +33,7 @@ Export-CcRootCertificate [[-Path] <string>]
 
 L'esempio seguente imposta il parametro Path come percorso di directory, non un percorso di file. Genera il file c:\test\CCERootCertificates.p7b.
   
-```
+```powershell
 Export-CcRootCertificate -Path "C:\test" 
 ```
 

@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4eecb5f7-3ef7-4582-a6cb-9f4aa068338d
 description: 'Riepilogo: informazioni su come attivare la caratteristica elenco contatti Smart nel client Skype for business.'
-ms.openlocfilehash: 17981e13c239241f050704b7c98593f95a29ab27
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 4c867232fd07131666033dc48ff9930dcdf6dccb
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234488"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002686"
 ---
 # <a name="configure-smart-contacts-list-in-skype-for-business-clients"></a>Configurare l'elenco contatti intelligenti nei client Skype for business
 
@@ -41,7 +41,7 @@ Quando si configura questa funzionalità, tieni presente quanto segue:
 
 - Questa funzionalità funziona solo per gli utenti che accedono per la prima volta. Se un utente ha già eseguito l'accesso da qualsiasi dispositivo, ad esempio un dispositivo mobile o un Mac, la funzionalità non è abilitata per l'utente.
 
-## <a name="configure-smart-contacts-list"></a>Configurare l'elenco contatti intelligenti
+## <a name="configure-smart-contacts-list"></a>Configurare l'elenco contatti intelligente
 
 Per abilitare la caratteristica elenco contatti Smart per gli utenti, è necessario eseguire la procedura seguente: 
 
@@ -53,26 +53,26 @@ Per abilitare la caratteristica elenco contatti Smart per gli utenti, è necessa
 
 Per creare una voce di criteri per abilitare la caratteristica elenco contatti intelligenti, usare il cmdlet [New-CsClientPolicyEntry](https://docs.microsoft.com/powershell/module/skype/new-csclientpolicyentry?view=skype-ps) con l'opzione EnableClientAutoPopulateWithTeam come indicato di seguito:
 
-```
+```powershell
 $x=New-CsClientPolicyEntry -Name EnableClientAutoPopulateWithTeam -Value $True
 ```
 
 Utilizzare quindi il cmdlet [Set-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/set-csclientpolicy?view=skype-ps) per scrivere le modifiche apportate al criterio globale nel modo seguente:
 
-```
+```powershell
 Set-CsClientPolicy -Identity Global -PolicyEntry @{Add=$x}
 ```
 
 È possibile creare facoltativamente un criterio per disattivare la codifica automatica come indicato di seguito:
 
-```
+```powershell
 $x=New-CsClientPolicyEntry -Name TagContactsInClientAutoPopulatedGroup -Value $False
 Set-CsClientPolicy -Identity Global -PolicyEntry @{Add=$x}
 ```
 
 Devi anche impostare il parametro AddressBookAvailability per il criterio corrispondente in WebSearchOnly. Per altre informazioni, vedere [Set-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/set-csclientpolicy?view=skype-ps). 
 
-### <a name="troubleshoot"></a>Risolvere i problemi
+### <a name="troubleshoot"></a>Risoluzione dei problemi
 
 Se l'elenco contatti intelligenti non funziona come previsto, verificare quanto segue:
 

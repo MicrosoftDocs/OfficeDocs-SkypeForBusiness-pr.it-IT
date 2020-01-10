@@ -10,18 +10,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 38d9f168-80b8-46f2-a1c0-becd84e58e73
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare i servizi di conferenza telefonica con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 148e9340d705aba87b80d3b4b7f1e0d321cfbe8a
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: ff04637cf077bae4c1408a48a487582a04123b54
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234141"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002926"
 ---
 # <a name="configure-dial-in-conferencing-in-skype-for-business-server"></a>Configurare i servizi di conferenza telefonica con accesso esterno in Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare i servizi di conferenza telefonica con accesso esterno in Skype for Business Server.
   
-Dopo aver creato una topologia che include il carico di lavoro per le conferenze e i servizi di conferenza telefonica con accesso esterno, è necessario eseguire ulteriori operazioni per configurare le conferenze telefoniche con accesso esterno. Prima di leggere questo argomento, assicurati di aver letto [piano per i servizi di conferenza telefonica con accesso esterno in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md), [requisiti hardware e software per le conferenze in Skype for Business Server](../../plan-your-deployment/conferencing/hardware-and-software-requirements.md)e il [diagramma di flusso e l'elenco di controllo per la distribuzione Servizi di conferenza telefonica con accesso esterno](deploy-conferencing.md#deployment-flowchart-and-checklist-for-dial-in-conferencing). 
+Dopo aver creato una topologia che include il carico di lavoro per le conferenze e i servizi di conferenza telefonica con accesso esterno, è necessario eseguire ulteriori operazioni per configurare le conferenze telefoniche con accesso esterno. Prima di leggere questo argomento, assicurati di aver letto [piano per i servizi di conferenza telefonica con accesso esterno in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md), [requisiti hardware e software per le conferenze in Skype for Business Server](../../plan-your-deployment/conferencing/hardware-and-software-requirements.md)e il [diagramma di flusso e l'elenco di controllo della distribuzione per i servizi di conferenza telefonica con accesso esterno](deploy-conferencing.md#deployment-flowchart-and-checklist-for-dial-in-conferencing). 
   
 Per configurare i servizi di conferenza telefonica con accesso esterno, è necessario eseguire le attività seguenti:
   
@@ -83,13 +83,13 @@ Per verificare se l'area è impostata per tutti i piani di conferenza telefonica
     
 3. Eseguire la procedura seguente al prompt dei comandi:
     
-   ```
+   ```powershell
    Get-CsDialPlan [-Identity <Identifier of the dial plans to be retrieved>]
    ```
 
    Ad esempio:
     
-   ```
+   ```powershell
    Get-CsDialPlan
    ```
 
@@ -107,13 +107,13 @@ Per altre informazioni, vedere [Get-CsDialPlan](https://docs.microsoft.com/power
     
 3. Per gli eventuali dial plan mancanti dell'area di conferenza telefonica con accesso esterno, eseguire:
     
-   ```
+   ```powershell
    Set-CsDialPlan [-Identity <Identity of the dial plan to be modified>] -DialinConferencingRegion "<new region>"
    ```
 
    Ad esempio:
     
-   ```
+   ```powershell
    Set-CsDialPlan -Identity Redmond -DialinConferencingRegion "US West Coast"
    ```
 
@@ -215,7 +215,7 @@ La procedura descritta in questo argomento descrive come assegnare un **URI di l
 6. In **telefonia**, nel campo **URI di linea** digitare un numero di telefono normalizzato univoco, ad esempio Tel: + 14255550200.
     
     > [!NOTE]
-    > Puoi specificare l' **URI di linea** solo se la telefonia è impostata solo su **PC-to-PC**, **VoIP aziendale**, **controllo delle chiamate remote** o **controllo delle chiamate remote solo**. **** 
+    > Puoi specificare l' **URI di linea** solo se la **telefonia** è impostata solo su **PC-to-PC**, **VoIP aziendale**, **controllo delle chiamate remote** o **controllo delle chiamate remote solo**. 
   
 7. Fare clic su **Commit**.
     

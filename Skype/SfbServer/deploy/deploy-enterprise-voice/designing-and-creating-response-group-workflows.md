@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: dcb9effb-5d12-4dee-80fc-ab9654222d5a
 description: Progettare e creare flussi di lavoro di Response Group in Skype for Business Server VoIP aziendale. Sono coperti sia i flussi di lavoro di gruppo di ricerca che i flussi di lavoro interattivi.
-ms.openlocfilehash: 9e056070bb01b5ee3cc7f32a8f9d07520fcb2030
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 5b48816a3eb528a1ff96097c135697d8f9cb22d8
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240764"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002586"
 ---
 # <a name="designing-and-creating-response-group-workflows-in-skype-for-business"></a>Progettazione e creazione di flussi di lavoro di Response Group in Skype for business
 
@@ -100,7 +100,7 @@ Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di 
 
 16. In **passaggio 2 Selezionare una lingua**, fare clic sulla lingua che si vuole usare per il riconoscimento vocale e la sintesi vocale.
 
-17. Se si vuole configurare un messaggio di benvenuto, in **passaggio 3 configurare un messaggio di benvenuto**, selezionare la casella di controllo Riproduci **un messaggio** di benvenuto e quindi eseguire una delle operazioni seguenti:
+17. Se si vuole configurare un messaggio di benvenuto, in **passaggio 3 configurare un messaggio di benvenuto**, selezionare la casella di controllo **Riproduci un messaggio** di benvenuto e quindi eseguire una delle operazioni seguenti:
 
     - Per immettere il messaggio di benvenuto come testo convertito in vocale per i chiamanti, fare clic su **USA sintesi vocale**e quindi digitare il messaggio di benvenuto nella casella di testo.
 
@@ -119,7 +119,7 @@ Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di 
 
 19. Selezionare il tipo di pianificazione delle ore lavorative che si vuole usare eseguendo una delle operazioni seguenti:
 
-    - Per usare una programmazione predefinita per le ore lavorative, fare clic su **Usa una programmazione**preimpostata e quindi selezionare la programmazione da usare nell'elenco a discesa.
+    - Per usare una programmazione predefinita per le ore lavorative, fare clic su **Usa una programmazione preimpostata**e quindi selezionare la programmazione da usare nell'elenco a discesa.
 
       > [!NOTE]
       > Per selezionare questa opzione, è necessario aver definito almeno una programmazione preimpostata. Puoi definire le pianificazioni predefinite usando il cmdlet **New-CsRgsHoursOfBusiness** . Per informazioni dettagliate, vedere [(facoltativo) definire le ore lavorative del gruppo di risposte in Skype for business](optional-define-response-group-business-hours.md).
@@ -136,7 +136,7 @@ Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di 
     > [!NOTE]
     > Le ore di **apertura** e **chiusura** devono essere in notazione oraria 24 ore. Ad esempio, se il tuo ufficio lavora a un giorno lavorativo da 9 a 5 e chiude a mezzogiorno per pranzo, gli orari di apertura sono specificati come **apri** 9:00, **Chiudi** 12:00, **Apri** 13:00 e **Chiudi** 17:00.
 
-22. Se si vuole riprodurre un messaggio quando l'ufficio non è aperto, selezionare la casella di controllo Riproduci **un messaggio quando il gruppo di risposte si trova al di fuori degli orari lavorativi** e quindi specificare il messaggio da riprodurre eseguendo una delle operazioni seguenti:
+22. Se si vuole riprodurre un messaggio quando l'ufficio non è aperto, selezionare la casella di controllo **Riproduci un messaggio quando il gruppo di risposte si trova al di fuori degli orari lavorativi** e quindi specificare il messaggio da riprodurre eseguendo una delle operazioni seguenti:
 
     - Per immettere il messaggio come testo convertito in vocale per il chiamante, fare clic su **USA sintesi vocale**e quindi digitare il messaggio nella casella di testo.
 
@@ -158,12 +158,12 @@ Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di 
 
     - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **inoltra al numero di**telefono e quindi digitare il numero di telefono. Il formato per il numero di telefono * \<è\>Number*@*\<NomeDominio\> * , ad esempio + 14255550121@contoso.com. Il nome di dominio viene usato per instradare il chiamante alla destinazione corretta.
 
-24. In **passaggio 5 specificare**le festività, fare clic sulle caselle di controllo relative a uno o più set di festività che definiscono i giorni in cui il gruppo di risposte viene chiuso per le aziende.
+24. In **passaggio 5 specificare le festività**, fare clic sulle caselle di controllo relative a uno o più set di festività che definiscono i giorni in cui il gruppo di risposte viene chiuso per le aziende.
 
     > [!NOTE]
     > Prima di configurare il flusso di lavoro, è necessario definire le festività e i set di festività. Usare i cmdlet **New-CsRgsHoliday** e **New-CsRgsHolidaySet** per definire festività e set di festività. Per informazioni dettagliate, vedere [(facoltativo) definire set di festività di Response Group in Skype for business](optional-define-response-group-holiday-sets.md).
 
-25. Se si vuole riprodurre un messaggio in festività, selezionare la casella di controllo Riproduci **un messaggio durante** le festività e quindi specificare il messaggio da riprodurre eseguendo una delle operazioni seguenti:
+25. Se si vuole riprodurre un messaggio in festività, selezionare la casella di controllo **Riproduci un messaggio durante le festività** e quindi specificare il messaggio da riprodurre eseguendo una delle operazioni seguenti:
 
     - Per immettere il messaggio come testo convertito in vocale per il chiamante, fare clic su **USA sintesi vocale**e quindi digitare il messaggio nella casella di testo.
 
@@ -196,7 +196,7 @@ Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di 
       > [!NOTE]
       > Tutti i file audio forniti dall'utente devono soddisfare determinati requisiti. Per informazioni dettagliate sui formati di file audio supportati, vedere [requisiti tecnici per i gruppi di risposta](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx).
 
-29. Fare **** clic su Distribuisci.
+29. Fare clic su **Distribuisci**.
 
 ### <a name="to-use-skype-for-business-server-management-shell-to-create-or-modify-a-hunt-group-workflow"></a>Per usare Skype for Business Server Management Shell per creare o modificare un flusso di lavoro di gruppo di ricerca
 
@@ -206,13 +206,13 @@ Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di 
 
 3. Creare il prompt da riprodurre per il messaggio di benvenuto e salvarlo in una variabile. Nella riga di comando eseguire:
 
-   ```
+   ```powershell
    $promptWM = New-CsRgsPrompt -TextToSpeechPrompt "<text for TTS prompt>"
    ```
 
     Ad esempio:
 
-   ```
+   ```powershell
    $promptWM = New-CsRgsPrompt -TextToSpeechPrompt "Welcome to Contoso. Please wait for an available agent."
    ```
 
@@ -221,7 +221,7 @@ Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di 
 
 4. Ottenere l'identità della coda o della domanda in cui verranno indirizzate le chiamate. Nella riga di comando eseguire:
 
-   ```
+   ```powershell
    $qid = (Get-CsRgsQueue -Name "Help Desk").Identity
    ```
 
@@ -229,7 +229,7 @@ Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di 
 
 5. Definire l'azione predefinita da intraprendere quando un flusso di lavoro viene aperto durante l'orario di ufficio e salvarlo in una variabile. Nella riga di comando eseguire:
 
-   ```
+   ```powershell
    $actionWM = New-CsRgsCallAction -Prompt <saved prompt from previous step> -Action <action to be taken> -QueueID $qid
    ```
 
@@ -238,7 +238,7 @@ Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di 
 
     Ad esempio:
 
-   ```
+   ```powershell
    $actionWM = New-CsRgsCallAction -Prompt $promptWM -Action TransferToQueue -QueueID $qid.Identity
    ```
 
@@ -248,19 +248,19 @@ Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di 
 
 8. Recuperare il nome del servizio per il servizio Response Group di Lync Server e assegnarlo a una variabile. Al comando eseguire:
 
-   ```
+   ```powershell
    $serviceId = "service:" + (Get-CsService | ?{$_.Applications -like "*RGS*"}).ServiceId;
    ```
 
 9. Creare o modificare il flusso di lavoro. Per creare un flusso di lavoro, USA **New-CsRgsWorkflow**. Per modificare un flusso di lavoro, usare **Set-CsRgsWorkflow**. Nella riga di comando digitare:
 
-   ```
+   ```powershell
    $workflowHG = New-CsRgsWorkflow -Parent <service ID for the Response Group service> -Name "<hunt group name>" [-Description "<hunt group description>"] -PrimaryUri "<SIP address for the workflow>" [-LineUri "<Phone number for the workflow>"] [-DisplayNumber "<Phone number displayed in Lync>"] [-Active <$true | $false>] [-Anonymous <$true | $false>] [-DefaultAction <variable from preceding step>] [-EnabledForFederation <$true | $false>] [-Managed <$true | $false>] [-ManagersByUri <SIP addresses for Response Group Managers who can manage the workflow>]
    ```
 
     Ad esempio:
 
-   ```
+   ```powershell
    $workflowHG = New-CsRgsWorkflow -Parent $serviceID -Name "Human Resources" -Description "Human Resources workflow" -PrimaryUri "sip:humanresources@contoso.com" -LineUri "TEL:+14255551219" -DisplayNumber "555-1219" -Active $true -Anonymous $true -DefaultAction $actionWM -EnabledForFederation $false -Managed $true -ManagersByUri "sip:bob@contoso.com", "mindy@contoso.com"
    ```
 
@@ -430,7 +430,7 @@ Nell'elenco seguente vengono illustrate alcune procedure consigliate per la prog
 
 16. In **passaggio 2 Selezionare una lingua**, fare clic sulla lingua da usare per il riconoscimento vocale e la sintesi vocale.
 
-17. Se si vuole configurare un messaggio di benvenuto, in **passaggio 3 configurare un messaggio di benvenuto**, selezionare la casella di controllo Riproduci **un messaggio** di benvenuto e quindi eseguire una delle operazioni seguenti:
+17. Se si vuole configurare un messaggio di benvenuto, in **passaggio 3 configurare un messaggio di benvenuto**, selezionare la casella di controllo **Riproduci un messaggio** di benvenuto e quindi eseguire una delle operazioni seguenti:
 
     - Per immettere il messaggio di benvenuto come testo convertito in vocale per i chiamanti, fare clic su **USA sintesi vocale**e quindi digitare il messaggio di benvenuto nella casella di testo.
 
@@ -449,7 +449,7 @@ Nell'elenco seguente vengono illustrate alcune procedure consigliate per la prog
 
 19. Selezionare il tipo di pianificazione delle ore lavorative che si vuole usare eseguendo una delle operazioni seguenti:
 
-    - Per usare una programmazione predefinita per le ore lavorative, fare clic su **Usa una programmazione**preimpostata e quindi selezionare la programmazione da usare nell'elenco a discesa.
+    - Per usare una programmazione predefinita per le ore lavorative, fare clic su **Usa una programmazione preimpostata**e quindi selezionare la programmazione da usare nell'elenco a discesa.
 
       > [!NOTE]
       > Per selezionare questa opzione, è necessario aver definito almeno una programmazione preimpostata. Puoi definire le pianificazioni predefinite usando il cmdlet **New-CsRgsHoursOfBusiness** . Per informazioni dettagliate, vedere [(facoltativo) definire le ore lavorative del gruppo di risposte in Skype for business](optional-define-response-group-business-hours.md). Quando si seleziona una programmazione preimpostata, il **giorno**, l' **apertura**e la **chiusura** vengono automaticamente riempiti con i giorni e le ore che il gruppo di risposte è disponibile.
@@ -463,7 +463,7 @@ Nell'elenco seguente vengono illustrate alcune procedure consigliate per la prog
      > [!NOTE]
      > Le ore di **apertura** e **chiusura** devono essere in notazione oraria 24 ore. Ad esempio, se il tuo ufficio lavora a un giorno lavorativo da 9 a 5 e chiude a mezzogiorno per pranzo, gli orari di apertura sono specificati come **apri** 9:00, **Chiudi** 12:00, **Apri** 13:00 e **Chiudi** 17:00.
 
-22. Se si vuole riprodurre un messaggio quando l'ufficio non è aperto, selezionare la casella di controllo Riproduci **un messaggio quando il gruppo di risposte si trova al di fuori degli orari lavorativi** e quindi specificare il messaggio da riprodurre eseguendo una delle operazioni seguenti:
+22. Se si vuole riprodurre un messaggio quando l'ufficio non è aperto, selezionare la casella di controllo **Riproduci un messaggio quando il gruppo di risposte si trova al di fuori degli orari lavorativi** e quindi specificare il messaggio da riprodurre eseguendo una delle operazioni seguenti:
 
     - Per immettere il messaggio come testo convertito in vocale per il chiamante, fare clic su **USA sintesi vocale**e quindi digitare il messaggio nella casella di testo.
 
@@ -485,12 +485,12 @@ Nell'elenco seguente vengono illustrate alcune procedure consigliate per la prog
 
     - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **inoltra al numero di**telefono e quindi digitare il numero di telefono. Il formato per il numero di telefono * \<è\>Number*@*\<NomeDominio\> * , ad esempio + 14255550121@contoso.com. Il nome di dominio viene usato per instradare il chiamante alla destinazione corretta.
 
-24. In **passaggio 5 specificare**le festività, fare clic sulle caselle di controllo relative a uno o più set di festività che definiscono i giorni in cui il gruppo di risposte viene chiuso per le aziende.
+24. In **passaggio 5 specificare le festività**, fare clic sulle caselle di controllo relative a uno o più set di festività che definiscono i giorni in cui il gruppo di risposte viene chiuso per le aziende.
 
     > [!NOTE]
     > Prima di configurare il flusso di lavoro, è necessario definire le festività e i set di festività. Usare i cmdlet **New-CsRgsHoliday** e **New-CsRgsHolidaySet** per definire festività e set di festività. Per informazioni dettagliate, vedere [(facoltativo) definire set di festività di Response Group in Skype for business](optional-define-response-group-holiday-sets.md).
 
-25. Se si vuole riprodurre un messaggio in festività, selezionare la casella di controllo Riproduci **un messaggio durante** le festività e quindi specificare il messaggio da riprodurre eseguendo una delle operazioni seguenti:
+25. Se si vuole riprodurre un messaggio in festività, selezionare la casella di controllo **Riproduci un messaggio durante le festività** e quindi specificare il messaggio da riprodurre eseguendo una delle operazioni seguenti:
 
     - Per immettere il messaggio come testo convertito in vocale per il chiamante, fare clic su **USA sintesi vocale**e quindi digitare il messaggio nella casella di testo.
 
@@ -556,7 +556,7 @@ Nell'elenco seguente vengono illustrate alcune procedure consigliate per la prog
 
 31. Specificare fino a tre risposte più possibili alla domanda originale ripetendo i passaggi 28 e 29 per specificare le possibili risposte e l'azione da eseguire per ogni risposta. Per specificare una terza o quarta risposta possibile, fare clic sulla casella di controllo Rispondi **3** o sulla casella di controllo **risposta 4** .
 
-32. Fare **** clic su Distribuisci.
+32. Fare clic su **Distribuisci**.
 
 ### <a name="to-use-skype-for-business-server-management-shell-to-create-or-modify-an-interactive-workflow"></a>Per usare Skype for Business Server Management Shell per creare o modificare un flusso di lavoro interattivo
 
@@ -566,75 +566,75 @@ Nell'elenco seguente vengono illustrate alcune procedure consigliate per la prog
 
 3. Recuperare il nome del servizio per il servizio Response Group e assegnarlo a una variabile. Nella riga di comando eseguire:
 
-   ```
+   ```powershell
    $serviceId = "service:" + (Get-CsService | ?{$_.Applications -like "*RGS*"}).ServiceId;
    ```
 
 4. Un flusso di lavoro interattivo richiede due o più code e due o più gruppi di agenti. Prima di tutto, crea i gruppi di agenti. Eseguire
 
-   ```
+   ```powershell
    $AGSupport = New-CsRgsAgentGroup -Parent $serviceId -Name "Technical Support" [-AgentAlertTime "20"] [-ParticipationPolicy "Informal"] [-RoutingMethod LongestIdle] [-AgentsByUri("sip:agent1@contoso.com", "sip:agent2@contoso.com")]
    $AGSales = New-CsRgsAgentGroup -Parent $serviceId -Name "Sales Team" [-AgentAlertTime "20"] [-ParticipationPolicy "Informal"] [-RoutingMethod LongestIdle] [-AgentsByUri("sip:bob@contoso.com", "sip:alice@contoso.com")]
    ```
 
 5. Creare le code. Eseguire
 
-   ```
+   ```powershell
    $QSupport = New-CsRgsQueue -Parent $ServiceId -Name "Contoso Support" -AgentGroupIDList($AG-Support.Identity)
    $QSales = New-CsRgsQueue -Parent $ServiceId -Name "Contoso Sales" -AgentGroupIDList($AG-Sales.Identity)
    ```
 
 6. Creare il primo prompt di Response Group. Eseguire
 
-   ```
+   ```powershell
    $SupportPrompt = New-CsRgsPrompt -TextToSpeechPrompt "Please be patient while we connect you with Contoso Technical Support."
    ```
 
 7. Crea quindi l'azione da eseguire dopo il prompt. Eseguire
 
-   ```
+   ```powershell
    $SupportAction = New-CsRgsCallAction -Prompt $SupportPrompt -Action TransferToQueue -QueueID $QSupport.Identity
    ```
 
 8. Creare la risposta al primo Response Group. Eseguire
 
-   ```
+   ```powershell
    $SupportAnswer = New-CsRgsAnswer -Action $SupportAction [-DtmfResponse 1]
    ```
 
 9. Ora crea il secondo messaggio, l'azione chiama e rispondi. Crea prima di tutto il prompt. Eseguire
 
-   ```
+   ```powershell
    $SalesPrompt = New-CsRgsPrompt -TextToSpeechPrompt "Please hold while we connect you with Contoso Sales."
    ```
 
 10. Creare la seconda azione di chiamata. Eseguire
 
-    ```
+    ```powershell
     $SalesAction = New-CsRgsCallAction -Prompt $SalesPrompt -Action TransferToQueue -QueueID $QSales.Identity
     ```
 
 11. Creare la seconda risposta di Response Group. Eseguire
 
-    ```
+    ```powershell
     $SalesAnswer = New-CsRgsAnswer -Action $SalesAction [-DtmfResponse 2]
     ```
 
 12. Creare la richiesta di primo livello. Eseguire
 
-    ```
+    ```powershell
     $TopLevelPrompt = New-CsRgsPrompt -TextToSpeechPrompt "Thank you for calling Contoso. For Technical Support, press 1. For a Sales Representative, press 2."
     ```
 
 13. Creare la domanda di primo livello. Eseguire
 
-    ```
+    ```powershell
     $TopLevelQuestion = New-CsRgsQuestion -Prompt $TopLevelPrompt [-AnswerList ($SupportAnswer, $SalesAnswer)]
     ```
 
 14. Creare ora il flusso di lavoro. Eseguire
 
-    ```
+    ```powershell
     $IVRAction = New-CsRgsCallAction -Action TransferToQuestion [-Question $Question]
     $IVRWorkflow = New-CsRgsWorkflow -Parent $ServiceId -Name "Contoso Helpdesk" [-Description "The Contoso Helpdesk line."] -PrimaryUri "sip:helpdesk@contoso.com" [-LineUri tel:+14255554321] [-DisplayNumber "+1 (425) 555-4321"] [-Active $true] [-Anonymous $true] [-DefaultAction $IVRAction] [-Managed $true] [-ManagersByURI ("sip:mindy@contoso.com", "sip:bob@contoso.com")]
     ```

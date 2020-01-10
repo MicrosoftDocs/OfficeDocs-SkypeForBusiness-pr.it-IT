@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d3a20d5e-3f24-4cff-bc9b-4f84fea30e6b
 description: 'Riepilogo: informazioni su come associare i pool Front-end a un archivio di monitoraggio usato da Skype for Business Server.'
-ms.openlocfilehash: 66d51e89a41c5e6ce2608b4fe8ecd1c4af336b6b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 17f7cbf7d8725fc3d1c23f161060d9bb386cea19
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239992"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001226"
 ---
 # <a name="associate-a-monitoring-store-with-a-front-end-pool-in-skype-for-business-server"></a>Associare un archivio di monitoraggio a un pool di front-end in Skype for Business Server 
 **Riepilogo:** Informazioni su come associare i pool Front-end a un archivio di monitoraggio usato da Skype for Business Server.
@@ -30,7 +30,7 @@ In alternativa, è possibile associare un pool Front end esistente a un archivio
   
 1. Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server 2015**e quindi fare clic su **Generatore di topologia di Skype for Business Server**.
     
-2. Nella finestra di dialogo **Generatore** di topologia selezionare **Scarica topologia da distribuzione esistente** e quindi fare clic su **OK**.
+2. Nella finestra di dialogo **Generatore di topologia** selezionare **Scarica topologia da distribuzione esistente** e quindi fare clic su **OK**.
     
 3. Nella finestra di dialogo **Salva con** nome immettere un file per la topologia corrente e quindi fare clic su **Salva**. La topologia salvata può in seguito essere recuperata e ripubblicata in caso di problemi con la nuova topologia.
     
@@ -40,13 +40,13 @@ In alternativa, è possibile associare un pool Front end esistente a un archivio
     
 6. Nella scheda **generale** della finestra di dialogo **modifica proprietà** selezionare l'opzione **monitoraggio (CdR e QoE Metrics)** e quindi selezionare un database di SQL Server esistente nell'elenco a discesa **monitoraggio di SQL Server Store** . In alternativa, fare clic su **nuovo** per associare il pool a un nuovo archivio di database. Se si sceglie di usare un nuovo archivio di database, nella finestra di dialogo **Definisci nuovo archivio SQL** immettere il nome di dominio completo del computer SQL Server nella casella **FQDN di SQL Server** . Se si vuole usare l'istanza predefinita di SQL Server per lo Store, selezionare **istanza predefinita**. in caso contrario, seleziona **istanza denominata** e immetti il nome dell'istanza nella casella **istanza denominata** .
     
-    La finestra di dialogo **modifica proprietà** offre anche la possibilità di creare un mirror SQL per il database di monitoraggio (un mirror SQL consente di gestire due copie del database di monitoraggio, una copia archiviata nel computer dell'archivio di monitoraggio e l'altra nella Computer mirror SQL). Per abilitare il mirroring, selezionare T **la relativa istanza SQL è in relazione** di mirroring e immettere il numero di porta per il server mirror nella casella **numero porta** di mirroring.
+    La finestra di dialogo **modifica proprietà** offre anche la possibilità di creare un mirror SQL per il database di monitoraggio (un mirror SQL consente di gestire due copie del database di monitoraggio, una copia archiviata nel computer dell'archivio di monitoraggio e l'altra nel computer SQL mirror). Per abilitare il mirroring, selezionare T **la relativa istanza SQL è in relazione di mirroring** e immettere il numero di porta per il server mirror nella casella **numero porta di mirroring** .
     
 7. Nella finestra di dialogo **modifica proprietà** fare clic su **OK**.
     
 Dopo aver associato l'archivio di monitoraggio con un pool Front-End, è necessario pubblicare la nuova topologia prima che le modifiche abbiano effetto. Per pubblicare la nuova topologia, completare i passaggi seguenti in Generatore di topologie:
   
-1. Fare clic su **azione**, **** scegliere topologia e quindi fare clic su **pubblica**.
+1. Fare clic su **azione**, scegliere **topologia**e quindi fare clic su **pubblica**.
     
 2. Nella pagina **Pubblica topologia** della procedura guidata Pubblica topologia fare clic su **Avanti**.
     
@@ -54,7 +54,7 @@ Dopo aver associato l'archivio di monitoraggio con un pool Front-End, è necessa
     
 Una volta pubblicata la topologia, è possibile installare il database di monitoraggio nel computer che ospiterà l'archivio di monitoraggio. Il database di monitoraggio può essere installato usando Skype for Business Server Management Shell e Windows PowerShell. Per installare il database in locale (ovvero, per installare il database nello stesso computer in cui è in uso Skype for Business Server Management Shell), avviare Gestione Shell nel computer appropriato, quindi digitare il comando seguente e premere INVIO:
   
-```
+```powershell
 Install-CsDatabase -LocalDatabases
 ```
 
@@ -64,7 +64,7 @@ Per installare il database in un computer remoto, ovvero un computer diverso dal
   
 Questo comando, ad esempio, installa il database di monitoraggio nel computer atl-sql-001.litwareinc.com:
   
-```
+```powershell
 Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn atl-sql-001.litwareinc.com
 ```
 

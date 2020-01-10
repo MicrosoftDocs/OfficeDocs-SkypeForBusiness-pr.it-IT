@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6933b840-0e7b-4509-ae43-bc9065677547
 description: Configurare le route vocali E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: a8121cc7a7345150e485dc2e2b81e062672f5703
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: c835aa2ab2b20f7877aa6a0deeb70c7459bcd8cc
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233942"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001396"
 ---
 # <a name="configure-an-e9-1-1-voice-route-in-skype-for-business-server"></a>Configurare una route vocale E9-1-1 in Skype for Business Server
  
@@ -40,7 +40,7 @@ Per distribuire E9-1-1, è prima di tutto necessario configurare una route vocal
     
     Deve essere lo stesso nome che verrà usato per l'impostazione **PSTN** nei criteri di posizione. Anche se la distribuzione avrà più record utilizzo telefono, nell'esempio seguente viene aggiunto "utilizzo delle emergenze" all'elenco corrente degli usi PSTN disponibili. Per informazioni dettagliate, vedere [configurare i criteri vocali, i record di utilizzo PSTN e le route vocali in Skype for business](voice-and-pstn.md).
     
-   ```
+   ```powershell
    Set-CsPstnUsage -Usage @{add='EmergencyUsage'}
    ```
 
@@ -48,7 +48,7 @@ Per distribuire E9-1-1, è prima di tutto necessario configurare una route vocal
     
     Il pattern numerico deve essere lo stesso modello di numero usato nell'impostazione della **stringa di chiamata di emergenza** nei criteri di posizione. È necessario un segno "+" perché Skype for business aggiunge "+" alle chiamate di emergenza. "Co1-pstngateway-1" è l'ID del servizio trunk SIP per il provider di servizi E9-1-1 o per l'ID del servizio gateway ELIN. L'esempio seguente usa "EmergencyRoute" come nome della route vocale.
     
-   ```
+   ```powershell
    New-CsVoiceRoute -Name "EmergencyRoute" -NumberPattern "^\+911$" -PstnUsages @{add="EmergencyUsage"} -PstnGatewayList @{add="co1-pstngateway-1"}
    ```
 
@@ -56,7 +56,7 @@ Per distribuire E9-1-1, è prima di tutto necessario configurare una route vocal
     
     L'esempio seguente presuppone che l'utente abbia un uso "locale" nei criteri vocali.
     
-   ```
+   ```powershell
    New-CsVoiceRoute -Name "LocalEmergencyRoute" -NumberPattern "^\+911$" -PstnUsages @{add="Local"} -PstnGatewayList @{add="co1-pstngateway-2"}
    ```
 

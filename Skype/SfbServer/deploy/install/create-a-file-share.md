@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 053076b0-441c-44d9-8dbc-7a36d8ecafe4
 description: "Riepilogo: informazioni su come creare una condivisione file di Windows Server come parte dell'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: 3f539d980d2978ee3be5e8249f869aa234493f32
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 47713c0283c5908605abec31913e104963aea2b0
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235558"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001016"
 ---
 # <a name="create-a-file-share-in-skype-for-business-server"></a>Creare una condivisione file in Skype for Business Server
  
@@ -68,6 +68,7 @@ Avviso: non è possibile accedere alle autorizzazioni di\\<domain>\<condivisione
 
 >Questa operazione è prevista se non si è un amministratore nel file server o se si tratta di una condivisione di file System distribuito (DFS). Se le autorizzazioni di condivisione sono già state configurate, questo avviso può essere ignorato. Se si tratta di una nuova condivisione, vedere la documentazione per informazioni dettagliate sulla configurazione manuale delle autorizzazioni di condivisione.
 
->A causa dell'impossibilità di accedere alle autorizzazioni di condivisione per una condivisione DFS, Skype for Business Server non sarà in grado di impostare esplicitamente i gruppi sulla condivisione file. Per assicurarti che i componenti di Skype for Business Server possano accedere alla condivisione file con le autorizzazioni appropriate, assicurati che i gruppi RTC seguenti vengano aggiunti con le autorizzazioni di condivisione del livello di modifica oltre agli amministratori locali con autorizzazioni di condivisione controllo completo.
-
-RTCHSUniversalServices RTCComponentUniversalServices RTCUniversalServerAdmins
+>A causa dell'impossibilità di accedere alle autorizzazioni di condivisione per una condivisione DFS, Skype for Business Server non sarà in grado di impostare esplicitamente i gruppi sulla condivisione file. Per assicurarti che i componenti di Skype for Business Server possano accedere alla condivisione file con le autorizzazioni appropriate, assicurati che i gruppi RTC seguenti vengano aggiunti con le autorizzazioni leggi e cambia livello di condivisione oltre agli amministratori locali con la condivisione di controllo completo autorizzazioni.
+* RTCHSUniversalServices
+* RTCComponentUniversalServices
+* RTCUniversalServerAdmins

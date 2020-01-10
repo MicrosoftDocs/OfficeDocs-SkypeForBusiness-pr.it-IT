@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 80201105-18f7-4c02-9c71-8df5a952f6c7
 description: Abilitare il controllo di ammissione alle chiamate in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: a1a2259c754af0275e473e6c0d175039450cecf7
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: e88c0e87f9c920420ce2091ac2d75d04db6ca98f
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240682"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002566"
 ---
 # <a name="enable-call-admission-control-in-skype-for-business-server"></a>Abilitare il controllo di ammissione alle chiamate in Skype for Business Server
  
@@ -33,13 +33,13 @@ Dopo aver configurato le impostazioni di rete per la distribuzione del controllo
     
 2. Eseguire il cmdlet Set-CsNetworkConfiguration per abilitare CAC nella rete. Ad esempio, eseguire:
     
-   ```
+   ```powershell
    Set-CsNetworkConfiguration -EnableBandwidthPolicyCheck 1
    ```
 
     Se si vuole disabilitare CAC nella rete, eseguire le operazioni seguenti:
     
-   ```
+   ```powershell
    Set-CsNetworkConfiguration -EnableBandwidthPolicyCheck 0
    ```
 

@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 6aa17ae3-764e-4986-a900-85a3cdb8c1fc
 description: "Riepilogo: configurare l'archivio contatti unificato per Exchange Server e Skype for Business Server."
-ms.openlocfilehash: 2719105478860f0352ae4a4cef75466ec460d475
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 7a52a6bf648632daac416dcf6ffd4fd4149804c0
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244132"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003556"
 ---
 # <a name="configure-skype-for-business-server-to-use-the-unified-contact-store"></a>Configurazione di Skype for Business Server 2015 per l'utilizzo dell'archivio contatti unificato
  
@@ -38,19 +38,19 @@ Quando si installa Skype for Business Server, viene installato anche un criterio
   
 Se si preferisce non eseguire la migrazione di tutti i contatti all'archivio contatti unificato, è possibile disabilitare l'archivio contatti unificato per tutti gli utenti impostando la proprietà UcsAllowed nel criterio globale su false:
   
-```
+```powershell
 Set-CsUserServicesPolicy -Identity global -UcsAllowed $False
 ```
 
 Dopo aver disabilitato l'archivio contatti unificato nel criterio globale, è possibile creare un criterio per utente che consenta l'uso dell'archivio contatti unificato; in questo modo è possibile che alcuni utenti mantengano i propri contatti nell'archivio contatti unificato mentre altri utenti continuano a mantenere i contatti in Skype for Business Server. Puoi creare criteri per i servizi utente per utente usando un comando simile al seguente:
   
-```
+```powershell
 New-CsUserServicesPolicy -Identity "AllowUnifiedContactStore" -UcsAllowed $True
 ```
 
 Dopo aver creato il nuovo criterio, devi assegnare i criteri a qualsiasi utente che deve avere accesso all'archivio contatti unificato. I criteri per utente possono essere assegnati agli utenti usando comandi simili alla seguente:
   
-```
+```powershell
 Grant-CsUserServicesPolicy -Identity "Ken Myer" -PolicyName "AllowUnifiedContactStore"
 ```
 
@@ -58,23 +58,23 @@ Dopo aver assegnato il criterio, Skype for Business Server inizierà a eseguire 
   
 Puoi verificare che i contatti di un utente siano stati correttamente migrati nell'archivio contatti unificato eseguendo il cmdlet [Test-CsUnifiedContactStore](https://docs.microsoft.com/powershell/module/skype/test-csunifiedcontactstore?view=skype-ps) da Skype for Business Server Management Shell:
   
-```
+```powershell
 Test-CsUnifiedContactStore -UserSipAddress "sip:kenmyer@litwareinc.com" -TargetFqdn "atl-cs-001.litwareinc.com"
 ```
 
-Se Test-CsUnifiedContactStore ha esito positivo, significa che i contatti per l'utente SIP:<span></span>kenmyer<span></span>@ litwareinc. com sono stati migrati nell'archivio contatti unificato.
+Se Test-CsUnifiedContactStore ha esito positivo, significa che i contatti per l'utente SIP<span></span>:<span></span>kenmyer@ litwareinc. com sono stati migrati nell'archivio contatti unificato.
   
 ## <a name="rolling-back-the-unified-contact-store"></a>Rollback dell'archivio contatti unificato
 
 Se è necessario rimuovere i contatti di un utente dall'archivio contatti unificato, ad esempio se l'utente deve essere reinstallato in Microsoft Lync Server 2010 e quindi non può più usare l'archivio contatti unificato, è necessario eseguire due operazioni. Prima di tutto, devi assegnare all'utente un nuovo criterio per i servizi utente, uno che impedisce l'archiviazione dei contatti nell'archivio contatti unificato. Ovvero un criterio in cui la proprietà UcsAllowed è stata impostata su $False. Se non si dispone di un criterio di questo tipo, è possibile crearne uno usando un comando simile al seguente:
   
-```
+```powershell
 New-CsUserServicesPolicy -Identity NoUnifiedContactStore -UcsAllowed $False
 ```
 
 Puoi quindi assegnare questo nuovo criterio per utente (NoUnifiedContactStore) usando un comando come questo:
   
-```
+```powershell
 Grant-CsUserServicesPolicy -Identity "Ken Myer" -PolicyName NoUnifiedContactStore
 ```
 
@@ -87,7 +87,7 @@ La terminologia "impedisce la migrazione dei contatti di Ken all'archivio contat
   
 Ciò significa anche che, dopo aver assegnato un nuovo criterio ai servizi utente, devi quindi eseguire il cmdlet [Invoke-CsUcsRollback](https://docs.microsoft.com/powershell/module/skype/invoke-csucsrollback?view=skype-ps) per trasferire i contatti dell'utente da Exchange Server e tornare a Skype for Business Server. Ad esempio, dopo aver assegnato a Ken un nuovo criterio per i servizi utente, è possibile rimuovere i contatti dall'archivio contatti unificato usando il comando seguente:
   
-```
+```powershell
 Invoke-CsUcsRollback -Identity "Ken Myer"
 ```
 

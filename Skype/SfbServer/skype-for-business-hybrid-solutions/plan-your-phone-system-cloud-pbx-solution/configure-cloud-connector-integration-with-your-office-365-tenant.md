@@ -1,5 +1,5 @@
 ---
-title: Configurare l'integrazione del connettore Cloud con il tenant di Office 365
+title: Configurare l'integrazione Cloud Connector con il tenant di Office 365
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -14,14 +14,14 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0e2f2395-b890-4d16-aa2d-99d52438b89c
 description: Informazioni su come configurare l'integrazione con il Cloud Connector con il tenant di Office 365.
-ms.openlocfilehash: b4c70c5698601a2aa69669da3384b6806af98110
-ms.sourcegitcommit: 0d7f3c7a84584ec25a23190187215109c8756189
+ms.openlocfilehash: ed9437026ddbae07aadbe81585886ed0cb5cb0cc
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37508811"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002856"
 ---
-# <a name="configure-cloud-connector-integration-with-your-office-365-tenant"></a>Configurare l'integrazione del connettore Cloud con il tenant di Office 365
+# <a name="configure-cloud-connector-integration-with-your-office-365-tenant"></a>Configurare l'integrazione Cloud Connector con il tenant di Office 365
  
 Informazioni su come configurare l'integrazione con il Cloud Connector con il tenant di Office 365.
   
@@ -69,7 +69,7 @@ Per configurare la connettività ibrida tra la distribuzione di Skype for Busine
   
 Il cmdlet imposta il nome di dominio completo esterno di Access Edge. Nel primo dei comandi l' \<FQDN\> del bordo di accesso esterno deve essere quello per il ruolo di Access Edge SIP. Per impostazione predefinita, questo deve essere il\<nome\>di AP. Domain.
   
-```
+```powershell
 Set-CsTenantHybridConfiguration -PeerDestination <External Access Edge FQDN> -UseOnPremDialPlan $false
 Set-CsTenantFederationConfiguration -SharedSipAddressSpace $True
 ```
@@ -107,7 +107,7 @@ Dopo aver aggiunto gli utenti a Office 365, abilitare gli account per il sistema
   
 - Assegnare i criteri all'utente e configurare il numero di telefono vocale aziendale dell'utente, specificato con il valore del parametro **Identity** :
     
-  ```
+  ```powershell
   Set-CsUser -Identity "<User name>" -EnterpriseVoiceEnabled $true -HostedVoiceMail $true -OnPremLineURI <tel:+phonenumber>
   ```
 
@@ -116,7 +116,7 @@ Dopo aver aggiunto gli utenti a Office 365, abilitare gli account per il sistema
   
 Puoi quindi verificare che gli utenti siano stati aggiunti e abilitati usando lo script seguente:
   
-```
+```powershell
 # Input the user name you want to verify
 $user = Get-CsOnlineUser <User name>
 
@@ -134,7 +134,7 @@ $user.VoicePolicy
   
 Per disabilitare le chiamate internazionali per ogni utente, eseguire il cmdlet seguente in Skype for Business Online PowerShell:
   
-```
+```powershell
 Grant-CsVoiceRoutingPolicy -PolicyName InternationalCallsDisallowed -Identity $user
 ```
 
@@ -144,7 +144,7 @@ Per riabilitare le chiamate internazionali per ogni utente dopo la disattivazion
 
 Usare PowerShell remoto del tenant per assegnare un sito agli utenti anche se è stato distribuito solo un singolo sito. Per informazioni su come stabilire una sessione remota di PowerShell, vedere: [configurare il computer per Windows PowerShell](https://technet.microsoft.com/en-us/library/dn362831%28v=ocs.15%29.aspx).
   
-```
+```powershell
 # Set the site to users
 Set-CsUserPstnSettings -Identity <User Name> -HybridPstnSite <PSTN Site Name>
 
@@ -168,19 +168,19 @@ Quando una chiamata P2P viene escalated in una conferenza PSTN, Skype for busine
     Usa il dominio SIP predefinito di Cloud Connector (il primo dominio SIP nel file ini) come dominio utente.
     
     Tieni presente che l'assegnazione delle licenze è necessaria solo per la propagazione degli utenti nella directory Skype for business online. Assegnare una licenza di Office 365 (ad esempio E5) all'account creato, consentire fino a un'ora per la propagazione delle modifiche, verificare che gli account utente siano stati provisionati correttamente nella directory di Skype for business online eseguendo il cmdlet seguente e quindi rimuovere il licenza da questo account.
-    ```
+    ```powershell
    Get-CsOnlineUser -Identity <UserPrincipalName>
    ```
     
 2. Avviare una sessione remota di PowerShell per tenant Azure AD utilizzando le credenziali di amministratore globale o utente e quindi eseguire il cmdlet seguente per impostare il reparto per l'account utente di Azure AD configurato nel passaggio 1 in "HybridMediationServer":
 
-   ```
+   ```powershell
    Set-MsolUser -UserPrincipalName <UserPrincipalName> -Department "HybridMediationServer"
    ```
 
-3. Avviare una sessione remota di PowerShell per Skype for business con le credenziali di amministratore del tenant di Skype for business e quindi eseguire il cmdlet seguente per impostare il nome di dominio completo di Mediation Server e \<Edge\> server su tale account utente, sostituendo DisplayName con il nome visualizzato dell'utente per l'account creato nel passaggio 1:
+3. Avviare una sessione remota di PowerShell per Skype for business con le credenziali di amministratore del tenant di Skype for business e quindi eseguire il cmdlet seguente per impostare il nome di dominio completo di Mediation Server e \<Edge\> server su tale account utente, sostituendo DisplayName con quello visualizzato per l'account creato nel passaggio 1:
     
-   ```
+   ```powershell
    Set-CsHybridMediationServer -Identity <DisplayName> -Fqdn <MediationServerFQDN> -AccessProxyExternalFqdn <EdgeServerExternalFQDN>
    ```
 

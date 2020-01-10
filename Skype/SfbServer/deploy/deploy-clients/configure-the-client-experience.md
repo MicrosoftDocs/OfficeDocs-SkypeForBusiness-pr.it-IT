@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 66867a96-ff00-497d-889c-2e908cc384ce
 description: "Riepilogo: leggere questo argomento per informazioni su come configurare l'esperienza client per gli utenti di Skype for business."
-ms.openlocfilehash: ea1d38693291ebfa7d7cc4f8893b0aa6ec1c0d83
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 0122e86648a30cf0c4a17957b5d000b742d4c16a
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234453"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003536"
 ---
 # <a name="configure-the-client-experience-with-skype-for-business-2015"></a>Configurare l'esperienza client con Skype for business 2015
  
@@ -35,7 +35,7 @@ Skype for Business Server supporta la nuova esperienza client Skype for business
 
 Puoi specificare l'esperienza client che gli utenti dell'organizzazione vedranno usando il cmdlet **Set-CsClientPolicy** con il parametro EnableSkypeUI:
   
-```
+```powershell
 Set-CsClientPolicy  [-Identity <XdsIdentity] [-EnableSkypeUI <$true | $false>]
 ```
 
@@ -43,33 +43,33 @@ dove XdsIdentity si riferisce al criterio globale o a un criterio del sito denom
   
 Il comando seguente seleziona l'esperienza del client Skype for business per tutti gli utenti dell'organizzazione interessati dal criterio globale (Ricordati che i criteri per il sito o i criteri specifici dell'utente sostituiscono il criterio globale): 
   
-```
+```powershell
 Set-CsClientPolicy -Identity Global -EnableSkypeUI $true
 ```
 
 Il comando successivo seleziona l'esperienza client Lync per tutti gli utenti dell'organizzazione interessati dal criterio globale:
   
-```
+```powershell
 Set-CsClientPolicy -Identity Global -EnableSkypeUI $false
 ```
 
 Il comando successivo seleziona l'esperienza client Skype for business per tutti gli utenti all'interno del sito Redmond:
   
-```
+```powershell
 Set-CsClientPolicy -Identity site:Redmond -EnableSkypeUI $true
 ```
 
-Se si vuole configurare l'esperienza client per utenti specifici all'interno dell'organizzazione, è possibile creare un nuovo criterio utente usando il cmdlet **New-CsClientPolicy** e quindi assegnare il criterio a utenti specifici tramite **Grant-CsClientPolicy** cmdlet.
+Se si vuole configurare l'esperienza client per utenti specifici all'interno dell'organizzazione, è possibile creare un nuovo criterio utente usando il cmdlet **New-CsClientPolicy** e quindi assegnare il criterio a utenti specifici usando il cmdlet **Grant-CsClientPolicy** .
   
 Ad esempio, il comando seguente crea un nuovo criterio client, SalesClientUI, che seleziona l'esperienza del client Skype for business:
   
-```
+```powershell
 New-CsClientPolicy -Identity SalesClientUI -EnableSkypeUI $true
 ```
 
 Il comando successivo assegna il criterio SalesClientUI a tutti i membri del reparto vendite:
   
-```
+```powershell
 Get-CsUser -LDAPFilter "Department=Sales" | Grant-CsClientPolicy -PolicyName SalesClientUI
 ```
 
@@ -83,7 +83,7 @@ Se desideri visualizzare l'interfaccia utente di Lync al primo avvio del client 
     
 2. Aggiorna il Registro di sistema nel computer dell'utente. Esegui l'operazione una sola volta, prima del primo avvio del client Skype for Business da parte dell'utente. Per informazioni su come creare un oggetto Criteri di gruppo per aggiornare il Registro di sistema in un computer che fa parte di un dominio, vedi la sezione presente successivamente nell'argomento.
     
-    Nella chiave **[HKEY_CURRENT_USER\Software\Microsoft\Office\Lync]** creare un nuovo valore **binario** .
+    Nella chiave **[HKEY_CURRENT_USER \software\microsoft\office\lync]** creare un nuovo valore **binario** .
     
     **Nome valore** deve essere **EnableSkypeUI**, mentre **Dati valore** deve essere impostato su **00 00 00 00**.
     
@@ -103,7 +103,7 @@ L'interfaccia utente di Lync verrà visualizzata al primo avvio del client Skype
 
 Quando gli utenti aprono il client Skype for business, il comportamento predefinito prevede la visualizzazione di una schermata iniziale che include *7 suggerimenti veloci che la maggior parte delle persone richiede*. Puoi disattivare la visualizzazione della schermata iniziale ma consentire comunque agli utenti di accedere all'esercitazione aggiungendo il seguente valore del Registro di sistema nel computer client:
   
-Nella chiave **[HKEY_CURRENT_USER\software\microsoft\office\15.0\Lync]** creare un nuovo **valore DWORD (32 bit)**. **Nome valore** deve essere **IsBasicTutorialSeenByUser**, mentre **Dati valore** deve essere impostato su **1**.
+Nella chiave **[HKEY_CURRENT_USER \software\microsoft\office\15.0\lync]** creare un nuovo **valore DWORD (32 bit)**. **Nome valore** deve essere **IsBasicTutorialSeenByUser**, mentre **Dati valore** deve essere impostato su **1**.
   
 La chiave dovrebbe avere un aspetto simile al seguente:
   
@@ -113,11 +113,11 @@ La chiave dovrebbe avere un aspetto simile al seguente:
 
 Se non vuoi che gli utenti siano in grado di accedere all'esercitazione, puoi disattivare l'esercitazione nel client con il seguente valore del Registro di sistema:
   
-Nella chiave **[HKEY_CURRENT_USER\software\microsoft\office\15.0\Lync]** creare un nuovo **valore DWORD (32 bit)**. **Nome valore** deve essere **TutorialFeatureEnabled**, mentre **Dati valore** deve essere impostato su **0**.
+Nella chiave **[HKEY_CURRENT_USER \software\microsoft\office\15.0\lync]** creare un nuovo **valore DWORD (32 bit)**. **Nome valore** deve essere **TutorialFeatureEnabled**, mentre **Dati valore** deve essere impostato su **0**.
   
 Lync
   
-```
+```console
 "TutorialFeatureEnabled"=dword:00000000
 ```
 
@@ -200,7 +200,7 @@ Successivamente dovrai collegare l'oggetto Criteri di gruppo creato al gruppo di
     
 3. Nel computer dell'utente di destinazione apri un prompt dei comandi e digita il seguente comando:
        
-```
+```console
 gpupdate /target:user
 ```
 
@@ -213,6 +213,6 @@ gpupdate /target:user
     
     Di seguito dovresti visualizzare "Oggetti Criteri di gruppo assegnati" con il nome dell'oggetto Criteri di gruppo creato.
     
-Puoi inoltre verificare che l'oggetto Criteri di gruppo abbia aggiornato correttamente il Registro di sistema nel computer di un utente esaminando il Registro di sistema. Aprire l'editor del registro di sistema e passare alla chiave **[HKEY_CURRENT_USER\Software\Microsoft\Office\Lync]** . Se l'oggetto Criteri di gruppo ha aggiornato correttamente il Registro di sistema, visualizzerai un valore denominato EnableSkypeUI con il valore 0.
+Puoi inoltre verificare che l'oggetto Criteri di gruppo abbia aggiornato correttamente il Registro di sistema nel computer di un utente esaminando il Registro di sistema. Aprire Editor del registro di sistema e passare alla chiave **[HKEY_CURRENT_USER \software\microsoft\office\lync]** . Se l'oggetto Criteri di gruppo ha aggiornato correttamente il Registro di sistema, visualizzerai un valore denominato EnableSkypeUI con il valore 0.
   
 

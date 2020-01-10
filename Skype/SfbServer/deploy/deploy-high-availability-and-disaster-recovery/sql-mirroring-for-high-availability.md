@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 70224520-b5c8-4940-a08e-7fb9b1adde8d
 description: 'Per poter distribuire il mirroring SQL, è necessario che i server eseguano un minimo di SQL Server 2008 R2. Questa versione deve essere eseguita su tutti i server coinvolti: il principale, il mirror e il witness. Per informazioni dettagliate, vedere pacchetto di aggiornamento cumulativo 9 per SQL Server 2008 Service Pack 1.'
-ms.openlocfilehash: 61f479adaf5c93833ece65b9781e635d16d696cd
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 19f315d643ea5b9379445bf7571e49e7d658f5ab
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240009"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003586"
 ---
 # <a name="deploy-sql-mirroring-for-back-end-server-high-availability-in-skype-for-business-server-2015"></a>Distribuire il mirroring SQL per l'elevata disponibilità del server back-end in Skype for Business Server 2015
 
@@ -30,7 +30,7 @@ In generale, la configurazione del mirroring SQL tra i due server back-end con u
 
 - Il principale e lo specchio devono avere la stessa edizione di SQL Server. Il testimone può avere una versione diversa.
 
-Per le procedure consigliate SQL in termini di supporto delle versioni SQL per un ruolo di testimone, vedere mirroring del [database](https://go.microsoft.com/fwlink/p/?LinkId=247345).
+Per le procedure consigliate SQL in termini di supporto delle versioni SQL per un ruolo di testimone, vedere [mirroring del database](https://go.microsoft.com/fwlink/p/?LinkId=247345).
 
 Puoi usare generatore di topologia per distribuire il mirroring SQL. È possibile selezionare un'opzione in Generatore di topologia per eseguire il mirroring dei database e generatore di topologia configura il mirroring, inclusa la configurazione di un testimone, se si vuole, quando si pubblica la topologia. Tieni presente che hai configurato o rimosso il testimone contemporaneamente alla configurazione o alla rimozione dello specchio. Non esiste un comando separato per distribuire o rimuovere solo un testimone.
 
@@ -127,13 +127,13 @@ Il modo più semplice per configurare il mirroring consiste nell'usare generator
 
 1. Aprire una finestra di Management Shell di Skype for Business Server 2015 ed eseguire il cmdlet seguente:
 
-   ```
+   ```powershell
    Install-CsMirrorDatabase [-ConfiguredDatabases] [-ForInstance] [-ForDefaultInstance] [-DatabaseType <Application | Archiving | CentralMgmt | Monitoring | User | BIStaging | PersistentChat | PersistentChatCompliance >] -FileShare <fileshare> -SqlServerFqdn <primarySqlserverFqdn> [-SqlInstanceName] [-DatabasePathMap] [-ExcludeDatabaseList] [-DropExistingDatabasesOnMirror] -Verbose
    ```
 
     Ad esempio:
 
-   ```
+   ```powershell
    Install-CsMirrorDatabase -ConfiguredDatabases -FileShare \\PRIMARYBE\csdatabackup -SqlServerFqdn primaryBE.contoso.com -DropExistingDatabasesOnMirror -Verbose
    ```
 
@@ -217,11 +217,11 @@ Il modo più semplice per configurare il mirroring consiste nell'usare generator
 
 2. Verificare quanto segue:
 
-    - La porta 5022 è accessibile tramite il firewall se Windows Firewall è abilitato nel codice SQL Server E04-OCS. Los _A. lsipt. local\rtc.
+    - La porta 5022 è accessibile tramite il firewall se Windows Firewall è abilitato nel E04 SQL Server principale-OCS. los_a. lsipt. local\rtc.
 
-    - La porta 5022 è accessibile tramite il firewall se Windows Firewall è abilitato nel mirror di SQL Server K16-OCS. Los _A. lsipt. local\rtc.
+    - La porta 5022 è accessibile tramite il firewall se Windows Firewall è abilitato nello specchio SQL Server K16-OCS. los_a. lsipt. local\rtc.
 
-    - La porta 7022 è accessibile tramite il firewall se Windows Firewall è abilitato nella finestra di controllo di SQL Server AB14-lct. Los _A. lsipt. local\rtc.
+    - La porta 7022 è accessibile tramite il firewall se Windows Firewall è abilitato nella finestra di controllo di SQL Server AB14-LCT. los_a. lsipt. local\rtc.
 
    - Gli account che utilizzano i server SQL in tutti i server SQL primari e mirror hanno l'autorizzazione di lettura/ \\scrittura per la condivisione file E04-OCS\csdatabackup
 
@@ -249,13 +249,13 @@ Il modo più semplice per configurare il mirroring consiste nell'usare generator
 
 Per rimuovere il mirroring SQL di un pool in Generatore di topologia, è necessario prima di tutto usare un cmdlet per rimuovere il mirror in SQL Server. Puoi quindi usare generatore di topologia per rimuovere il mirror dalla topologia. Per rimuovere il mirror in SQL Server, usare il cmdlet seguente:
 
-```
+```powershell
 Uninstall-CsMirrorDatabase -SqlServerFqdn <SQLServer FQDN> [-SqlInstanceName <SQLServer instance name>] -DatabaseType <Application | Archiving | CentralMgmt | Monitoring | User | BIStaging | PersistentChat | PersistentChatCompliance> [-DropExistingDatabasesOnMirror] [-Verbose]
 ```
 
 Ad esempio, per rimuovere il mirroring e rilasciare i database per i database degli utenti, digitare quanto segue:
 
-```
+```powershell
 Uninstall-CsMirrorDatabase -SqlServerFqdn primaryBE.contoso.com -SqlInstanceName rtc -Verbose -DatabaseType User -DropExistingDatabasesOnMirror
 ```
 
@@ -281,7 +281,7 @@ Usare questa procedura se si vuole rimuovere il testimone da una configurazione 
 
     Dopo aver pubblicato la topologia, generatore di topologie verrà visualizzato un messaggio che include le operazioni seguenti
 
-   ```
+   ```console
    Run the Uninstall-CsMirrorDatabase cmdlet to remove databases that are paired with following primary databases.
    ```
 

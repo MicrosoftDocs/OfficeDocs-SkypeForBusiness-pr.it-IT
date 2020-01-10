@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f252b23b-9641-4160-aa81-bf06dc2eced3
 description: 'Riepilogo: informazioni su come consentire agli utenti di effettuare e ricevere chiamate tramite VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: cf9aab0f104582c57e745c95ae5cf8f24f07b3a5
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 441b7a5705268dedea1feb87e01a48d0ef68b32c
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240611"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002526"
 ---
 # <a name="enable-users-for-enterprise-voice-in-skype-for-business-server"></a>Consentire agli utenti di VoIP aziendale in Skype for Business Server
  
@@ -44,7 +44,7 @@ Dopo aver distribuito VoIP aziendale o chiamata tramite lavoro, è possibile usa
     
 3. Sulla barra di spostamento sinistra fare clic su **utenti**.
     
-4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si vuole abilitare e quindi fare clic su **Trovare**.
+4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si vuole abilitare e quindi fare clic su **trova**.
     
 5. Nella tabella fare clic sull'account utente che si desidera abilitare per VoIP aziendale.
     
@@ -69,13 +69,13 @@ I criteri vocali globali e a livello di sito vengono assegnati automaticamente a
     
 3. Per assegnare un criterio vocale utente esistente a un utente, eseguire le operazioni seguenti al prompt dei comandi:
     
-   ```
+   ```powershell
    Grant-CsVoicePolicy -Identity <UserIdParameter> -PolicyName <String>
    ```
 
     Ad esempio:
     
-   ```
+   ```powershell
    Grant-CsVoicePolicy -Identity "Bob Kelly" -PolicyName VoicePolicyJapan
    ```
 
@@ -94,13 +94,13 @@ Per completare la configurazione dell'account utente per gli utenti di VoIP azie
     
 3. Per assegnare un dial plan specifico per l'utente, eseguire la procedura seguente al prompt dei comandi:
     
-   ```
+   ```powershell
    Grant-CsDialPlan -Identity <UserIdParameter> -PolicyName <String>
    ```
 
     Ad esempio:
     
-   ```
+   ```powershell
    Grant-CsDialPlan -Identity "Bob Kelly" -PolicyName DialPlanJapan
    ```
 

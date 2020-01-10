@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 19338a34-1bfb-4787-b057-5e34a333711d
 description: Il cmdlet Start-CcDownload Scarica in modo sincrono i bit di Skype for Business Cloud Connector Edition e il file MSI.
-ms.openlocfilehash: 184c15d1932a179bb9ae07da515eeacfc115dfae
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5c493862151a308208bf83e142421f3257e476e0
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190622"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003186"
 ---
 # <a name="start-ccdownload"></a>Start-CcDownload
  
@@ -24,7 +24,7 @@ Il cmdlet Start-CcDownload Scarica in modo sincrono i bit di Skype for Business 
   
 Con Cloud Connector versione 2,0 e successive è anche possibile specificare il parametro DownloadBitsOnly.
   
-```
+```powershell
 Start-CcDownload [[-DownloadUrlRoot] <string>] [-DownloadBitsOnly]  [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Start-CcDownload [[-DownloadUrlRoot] <string>] [-DownloadBitsOnly]  [<CommonPara
 
 L'esempio seguente Scarica i bit del connettore Cloud e il file MSI in modo sincrono dal sito di download pubblico di Cloud Connector:
   
-```
+```powershell
 Start-CcDownload
 ```
 
@@ -43,7 +43,7 @@ Start-CcDownload
 
 L'esempio seguente Scarica i bit del connettore Cloud e il file MSI in modo sincrono da un sito di download privato:
   
-```
+```powershell
 Start-CcDownload -DownloadUrlRoot "http://downloadserver/cloudconnector/latest"
 ```
 
@@ -51,7 +51,7 @@ Start-CcDownload -DownloadUrlRoot "http://downloadserver/cloudconnector/latest"
 
 Il terzo esempio Scarica i bit del connettore Cloud e il file MSI in modo sincrono da un sito di download privato.
   
-```
+```powershell
 Start-CcDownload -DownloadBitsOnly
 ```
 

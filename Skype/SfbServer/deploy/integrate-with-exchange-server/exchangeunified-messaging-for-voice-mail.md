@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 1be9c4f4-fd8e-4d64-9798-f8737b12e2ab
 description: 'Riepilogo: configurare la messaggistica unificata di Exchange Server per Skype for Business Server Voice mail.'
-ms.openlocfilehash: 514b2159c3836aee4bd6bcfad2b85311280277c4
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 61df3cb7f57a0fd924188f43374f0309d081b660
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238007"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001206"
 ---
 # <a name="configure-exchange-server-unified-messaging-for-skype-for-business-server-voice-mail"></a>Configurazione della messaggistica unificata di Exchange Server 2013 per la segreteria telefonica di Skype for Business Server 2015
  
@@ -30,7 +30,7 @@ Skype for Business Server consente di archiviare i messaggi della segreteria tel
   
 Se si è già configurata l'autenticazione da server a server tra Skype for Business Server e Exchange Server 2016 o Exchange Server 2013, si è pronti per configurare la messaggistica unificata. A tale scopo, è necessario prima di tutto creare e assegnare un nuovo dial plan di messaggistica unificata nel server Exchange. Ad esempio, questi due comandi (eseguiti da Exchange Management Shell) configurano un nuovo dial plan a 3 cifre per Exchange:
   
-```
+```powershell
 New-UMDialPlan -Name "RedmondDialPlan" -VoIPSecurity "Secured" -NumberOfDigitsInExtension 3 -URIType "SipName" -CountryOrRegionCode 1
 Set-UMDialPlan "RedmondDialPlan" -ConfiguredInCountryOrRegionGroups "Anywhere,*,*,*" -AllowedInCountryOrRegionGroups "Anywhere"
 ```
@@ -52,13 +52,13 @@ Nel secondo comando, il valore del parametro passato al parametro ConfiguredInCo
   
 Dopo aver creato e configurato il nuovo piano di chiamata, è necessario aggiungere il nuovo dial plan al server Messaggistica unificata e quindi modificare la modalità di avvio del server. in particolare, devi impostare la modalità di avvio su "Dual". È possibile eseguire entrambe le attività dall'interno di Exchange Management Shell:
   
-```
+```powershell
 Set-UmService -Identity "atl-exchangeum-001.litwareinc.com" -DialPlans "RedmondDialPlan" -UMStartupMode "Dual"
 ```
 
 Dopo aver configurato il server Messaggistica unificata, è consigliabile eseguire il cmdlet Enable-ExchangeCertificate per verificare che il certificato di Exchange venga applicato al servizio di messaggistica unificata:
   
-```
+```powershell
 Enable-ExchangeCertificate -Server "atl-umserver-001.litwareinc.com" -Thumbprint "EA5A332496CC05DA69B75B66111C0F78A110D22d" -Services "SMTP","IIS","UM"
 ```
 
@@ -66,7 +66,7 @@ Dopo che il certificato è stato assegnato correttamente, è necessario arrestar
   
 Dopo aver terminato la configurazione del server Messaggistica unificata, è possibile configurare il router di chiamata di messaggistica unificata:
   
-```
+```powershell
 Set-UMCallRouterSettings -Server "atl-exchange-001.litwareinc.com" -UMStartupMode "Dual" -DialPlans "RedmondDialPlan" 
 Enable-ExchangeCertificate -Server "atl-umserver-001.litwareinc.com" -Thumbprint "45BAA32496CC891169B75B9811320F78A1075DDA" -Services "IIS","UMCallRouter"
 ```
@@ -75,13 +75,13 @@ Poiché la modalità di avvio è cambiata, è necessario interrompere e riavviar
   
 Per completare la configurazione della messaggistica unificata, è necessario creare un criterio cassetta postale di messaggistica unificata e quindi usare questo criterio per consentire agli utenti la messaggistica unificata. È possibile creare un criterio cassetta postale usando un comando simile al seguente:
   
-```
+```powershell
 New-UMMailboxPolicy -Name "RedmondMailboxPolicy" -AllowedInCountryOrRegionGroups "Anywhere"
 ```
 
 Puoi abilitare un utente per la messaggistica unificata usando un comando simile al seguente:
   
-```
+```powershell
 Enable-UMMailbox -Extensions 100 -SIPResourceIdentifier "kenmyer@litwareinc.com" -Identity "litwareinc\kenmyer" -UMMailboxPolicy "RedmondMailboxPolicy"
 ```
 
@@ -89,14 +89,14 @@ Nel comando precedente il parametro Extensions rappresenta il numero di interno 
   
 Dopo aver abilitato la cassetta postale, l'utente kenmyer@litwareinc.com dovrebbe essere in grado di usare la messaggistica unificata di Exchange. Puoi verificare che l'utente possa connettersi alla messaggistica unificata di Exchange eseguendo il cmdlet [test-CsExUMConnectivity](https://docs.microsoft.com/powershell/module/skype/test-csexumconnectivity?view=skype-ps) da Skype for Business Server Management Shell:
   
-```
+```powershell
 $credential = Get-Credential "litwareinc\kenmyer"
 Test-CsExUMConnectivity -TargetFqdn "atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 ```
 
 Se si ha un secondo utente abilitato per la messaggistica unificata, è possibile usare il cmdlet [test-CsExUMVoiceMail](https://docs.microsoft.com/powershell/module/skype/test-csexumvoicemail?view=skype-ps) per verificare che il secondo utente possa uscire da un messaggio della segreteria telefonica per il primo utente.
   
-```
+```powershell
 $credential = Get-Credential "litwareinc\pilar"
 Test-CsExUMVoiceMail -TargetFqdn "atl-cs-001.litwareinc.com" -ReceiverSipAddress "sip:kenmyer@litwareinc.com" -SenderSipAddress "sip:pilar@litwareinc.com" -SenderCredential $credential
 ```

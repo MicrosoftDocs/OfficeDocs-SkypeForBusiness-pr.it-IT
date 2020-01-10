@@ -1,5 +1,5 @@
 ---
-title: Abilitare gli utenti per Enterprise Voice online e il sistema telefonico in Office 365 Voicemail
+title: Abilitare gli utenti per VoIP aziendale online e Sistema telefonico nella segreteria telefonica di Office 365
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -17,14 +17,14 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 28daebcb-c2dc-4338-b2d1-04345ece9c19
 description: Informazioni su come abilitare il sistema telefonico in Office 365 Voice Services per gli utenti di Skype for business.
-ms.openlocfilehash: 1305f4045d4de86a65e0286938d22490f577507c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 902d2e1bad76c8275bfc8f4ce7ec7b4243b8572a
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190838"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003466"
 ---
-# <a name="enable-users-for-enterprise-voice-online-and-phone-system-in-office-365-voicemail"></a>Abilitare gli utenti per Enterprise Voice online e il sistema telefonico in Office 365 Voicemail
+# <a name="enable-users-for-enterprise-voice-online-and-phone-system-in-office-365-voicemail"></a>Abilitare gli utenti per VoIP aziendale online e Sistema telefonico nella segreteria telefonica di Office 365
  
 Informazioni su come abilitare il sistema telefonico in Office 365 Voice Services per gli utenti di Skype for business.
   
@@ -42,13 +42,13 @@ Per abilitare un utente per il sistema telefonico in Office 365 Voice and voicem
     
 3. Digitare il codice seguente e premere INVIO:
     
-   ```
+   ```powershell
    Import-Module skypeonlineconnector
    ```
 
 4. Digitare il codice seguente e premere INVIO:
     
-   ```
+   ```powershell
    $cred = Get-Credential
    ```
 
@@ -58,13 +58,13 @@ Per abilitare un utente per il sistema telefonico in Office 365 Voice and voicem
     
 6. Nella finestra di PowerShell digitare il codice seguente e premere INVIO:
     
-   ```
+   ```powershell
    $Session = New-CsOnlineSession -Credential $cred -Verbose
    ```
 
 7. Importare la sessione digitando il cmdlet seguente:
     
-   ```
+   ```powershell
    Import-PSSession $Session -AllowClobber
    ```
 
@@ -72,13 +72,13 @@ Per abilitare un utente per il sistema telefonico in Office 365 Voice and voicem
     
 8. Usa il cmdlet Set-CsUser per assegnare le proprietà $EnterpriseVoiceEnabled e $HostedVoiceMail all'utente come indicato di seguito:
     
-   ```
+   ```powershell
    Set-CsUser -Identity "<User name>" -EnterpriseVoiceEnabled $true -HostedVoiceMail $true
    ```
 
     Ad esempio:
     
-   ```
+   ```powershell
    Set-CsUser -Identity "Bob Kelly" -EnterpriseVoiceEnabled $true -HostedVoiceMail $true
    ```
 
@@ -100,7 +100,7 @@ Questa sezione descrive come aggiornare l'URI di linea e il dial plan per gli ut
   
 3. Sulla barra di spostamento sinistra fare clic su **utenti**.
     
-4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si vuole abilitare e quindi fare clic su **Trovare**.
+4. Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si vuole abilitare e quindi fare clic su **trova**.
     
 5. Nella tabella fare clic sull'account utente di Skype for business che si desidera modificare URI di linea.
     
@@ -114,7 +114,7 @@ Questa sezione descrive come aggiornare l'URI di linea e il dial plan per gli ut
 
 - Usare il cmdlet [Grant-CsDialPlan](https://docs.microsoft.com/powershell/module/skype/grant-csdialplan?view=skype-ps) per assegnare il dial plan per utente "RedmondDialPlan" all'utente Ken REQUESTO:
     
-  ```
+  ```powershell
   Grant-CsDialPlan -Identity "Ken Myer" -PolicyName "RedmondDialPlan"
   ```
 
@@ -122,7 +122,7 @@ Questa sezione descrive come aggiornare l'URI di linea e il dial plan per gli ut
 
 - Con il comando seguente viene assegnato il dial plan per utente "RedmondDialPlan" a tutti gli utenti che lavorano nella città di Redmond. Per altre informazioni sul parametro LdapFilter usato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://docs.microsoft.com/powershell/module/skype/get-csuser?view=skype-ps) :
     
-  ```
+  ```powershell
   Get-CsUser -LdapFilter "l=Redmond" | Grant-CsDialPlan -PolicyName "RedmondDialPlan"
   ```
 
@@ -133,7 +133,7 @@ Questa sezione descrive come aggiornare l'URI di linea e il dial plan per gli ut
 
 - Usare il cmdlet [Grant-CsDialPlan](https://docs.microsoft.com/powershell/module/skype/grant-csdialplan?view=skype-ps) per annullare l'assegnazione di un dial plan per utente assegnato in precedenza a Ken. Dopo che il dial plan per utente non è stato assegnato, Ken è gestito automaticamente tramite il dial plan globale o con il dial plan per l'ambito dei servizi assegnato al proprio registrar o gateway PSTN. Un dial plan per l'ambito dei servizi ha la precedenza sul dial plan globale:
     
-  ```
+  ```powershell
   Grant-CsDialPlan -Identity "Ken Myer" -PolicyName $Null
   ```
 
@@ -150,7 +150,7 @@ Sistema telefonico in Office 365 gli utenti devono disporre di un criterio di ro
 
 - Usare il cmdlet [Grant-CsVoiceRoutingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csvoiceroutingpolicy?view=skype-ps) per assegnare il criterio di routing vocale per utente RedmondVoiceRoutingPolicy all'utente Ken request:
     
-  ```
+  ```powershell
   Grant-CsVoiceRoutingPolicy -Identity "Ken Myer" -PolicyName "RedmondVoiceRoutingPolicy"
   ```
 
@@ -158,7 +158,7 @@ Sistema telefonico in Office 365 gli utenti devono disporre di un criterio di ro
 
 - Il comando successivo assegna il criterio di routing vocale per utente RedmondVoiceRoutingPolicy a tutti gli utenti che lavorano nella città di Redmond. Per altre informazioni sul parametro LdapFilter usato in questo comando, vedere [Get-CsUser](https://docs.microsoft.com/powershell/module/skype/get-csuser?view=skype-ps).
     
-  ```
+  ```powershell
   Get-CsUser -LdapFilter "l=Redmond" | Grant-CsVoiceRoutingPolicy -PolicyName "RedmondVoiceRoutingPolicy"
   ```
 
@@ -169,7 +169,7 @@ Sistema telefonico in Office 365 gli utenti devono disporre di un criterio di ro
 
 - Usare Grant-CsVoiceRoutingPolicy per annullare l'assegnazione di criteri di routing vocale per utente assegnati in precedenza a Ken. Dopo che i criteri di routing vocale per utente non sono assegnati, Ken è gestito automaticamente tramite il criterio di routing vocale globale.
     
-  ```
+  ```powershell
   Grant-CsVoiceRoutingPolicy -Identity "Ken Myer" -PolicyName $Null
   ```
 

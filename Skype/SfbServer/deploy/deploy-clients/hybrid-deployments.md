@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: eba70d88-13b3-4598-95d5-8a343c9e7d26
 description: Leggere questo argomento per informazioni su come distribuire Skype room System in un ambiente ibrido.
-ms.openlocfilehash: 80e7efaf5fe3705e052d40606ea5944527d43a61
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: f6364f7bb96ddf2b25aaaef2a341fce5b71372f5
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36774957"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003496"
 ---
 # <a name="skype-room-system-hybrid-deployments"></a>Distribuzioni ibride di Skype room System
 
@@ -29,7 +29,7 @@ Per scopi illustrativi, usiamo LyncSample.com per il dominio locale e LyncSample
   
 1. Creare una cassetta postale delle risorse nell'interfaccia di amministrazione di Exchange (LyncSample.ccsctp.net) connettendosi a Exchange Online Management Shell come descritto in provisioning di Exchange Online.
     
-   ```
+   ```powershell
    New-Mailbox -room -name "LRS Test 5" -RoomMailboxPassword (ConvertTo-SecureString <password> -AsPlainText -Force) -EnableRoomMailboxAccount $true 
    ```
 
@@ -52,7 +52,7 @@ Per scopi illustrativi, usiamo LyncSample.com per il dominio locale e LyncSample
     
 6. Abilitare l'account di sistema room Skype per Skype for business eseguendo il cmdlet seguente in Skype for Business Management Shell:
     
-   ```
+   ```powershell
    Enable-CsMeetingRoom -SipAddress 'sip: lrstest5@LyncSample.com' -RegistrarPool pool1.child.corp.LyncSample.com -Identity lrstest5@LyncSample.com
    Set-CsMeetingRoom -Identity lrstest5@LyncSample.com -EnterpriseVoiceEnabled $true
    ```

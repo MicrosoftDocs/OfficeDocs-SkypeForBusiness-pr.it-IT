@@ -22,12 +22,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate. '
-ms.openlocfilehash: 8d6e97ea5454b8e933424c2e8db595a5af7ac8c8
-ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
+ms.openlocfilehash: 429904020a63b93fefd1adee7ee89d02a47f1d61
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37972487"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41005181"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -35,11 +35,13 @@ Informazioni su come configurare l'organizzazione di Office 365 in modo da usare
   
 Call Quality Dashboard (Call Quality Dashboard) offre informazioni sulla qualità delle chiamate effettuate con i servizi Microsoft teams e Skype for business online. In questo argomento vengono illustrati i passaggi per iniziare a raccogliere i dati che è possibile usare per risolvere i problemi di qualità delle chiamate.
 
-Attualmente, Call Quality dashboard versione 3 e Call Quality dashboard versione 2 sono entrambi disponibili per l'uso. Call Quality dashboard V3 è disponibile all' <span>https://cqd.teams.microsoft.com</span>indirizzo. Accedere con le credenziali di amministratore di Microsoft teams.
+Attualmente, Advanced Call Quality dashboard e Call Quality dashboard sono entrambi disponibili per l'uso. Advanced Call Quality dashboard è disponibile all' <span>https://cqd.teams.microsoft.com</span>indirizzo. Nuovo URL, ma lo stesso accesso con le credenziali di amministratore.
 
 ## <a name="latest-changes-and-updates"></a>Ultime modifiche e aggiornamenti
 
-Call Quality dashboard versione 3 offre un dashboard di Call Quality dashboard quasi in tempo reale (latenza quasi 30 minuti) e usa le informazioni di identificazione dell'utente finale (EUII), offrendo agli amministratori la possibilità di eseguire lo zoom avanti fino al livello di utente. È inoltre possibile segnalare l'interattività per supportare nuovi scenari, ad esempio:
+
+L'aggiornamento di Call Quality Dashboard (a partire dall'inizio di novembre 2019) offre un dashboard di Call Quality dashboard quasi in tempo reale. I dati di Call Quality dashboard sono ora disponibili in media in 30 minuti (in confronto alla Call Quality dashboard precedente, in media 24 ore).  L'aggiornamento di Call Quality dashboard usa le informazioni di identificazione dell'utente finale (EUII), dando agli amministratori la possibilità di eseguire il drill-down e lo zoom avanti fino al livello dell'utente. È inoltre possibile segnalare l'interattività per supportare nuovi scenari, ad esempio:
+
 
 - Qualità delle chiamate per area geografica:
   - Data per area geografica
@@ -355,7 +357,7 @@ Call Quality dashboard usa un file di dati dell'edificio, che consente di ottene
 
 ||||||||||||||||
 |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:---  |:--- |:---|
-|**Nome campo colonna**|NetworkIP  |NetworkName              |NetworkRange|Buildingname  |OwnershipType| BuildingType  |BuildingOfficeType|Città   |ZipCode|Paese|Stato |Area geografica|InsideCorp&dagger;|ExpressRoute&Dagger;|VPN (facoltativo)|
+|**Nome campo colonna**|NetworkIP  |NetworkName              |NetworkRange|Buildingname  |OwnershipType| BuildingType  |BuildingOfficeType|Città   |ZipCode|Paese|Stato |Area|InsideCorp&dagger;|ExpressRoute&Dagger;|VPN (facoltativo)|
 |**Tipo di dati**        | Stringa    | Stringa                  |Numero      | Stringa       | Stringa      | Stringa        |Stringa            |Stringa |Stringa |Stringa |Stringa|Stringa|Boolean   |Boolean     |Boolean|
 |**Valore di esempio**    |192.168.1.0|USA/Seattle/SEATTLE-SEA-1| 26         | SEATTLE-SEA-1| Contoso     | Terminazione IT|Ingegneria       |Seattle|98001  |NOI     |WA    |MSUS  | 1        |0           | 0|
 |||||||||||||||||
@@ -387,11 +389,11 @@ Call Quality dashboard usa un file di dati dell'endpoint. I valori della colonna
 
   **Ordine dei campi:**
 
-EndpointName, EndpointModel, EndpointType, EndpointLabel1, EndpointLabel2, EndpointLabel3
+EndpointName, EndpointMake, EndpointModel, EndpointType, EndpointLabel1, EndpointLabel2, EndpointLabel3
 
   **Riga di esempio:**
 
-`1409W3534, Fabrikam Model 123, Laptop, IT designated 2018 Laptop, Asset Tag 5678, Purchase 2018,`  
+' 1409W3534, 123 Manufacturer, Fabrikam Model 123, laptop, IT designed 2018 laptop, asset tag 5678, Purchase 2018
 
 ## <a name="create-custom-detailed-reports"></a>Creare report dettagliati personalizzati
 

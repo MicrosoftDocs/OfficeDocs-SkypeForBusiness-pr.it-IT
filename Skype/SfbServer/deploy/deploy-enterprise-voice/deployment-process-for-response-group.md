@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d390c8a1-dc6e-44d8-b386-2be1fca9877c
 description: Processo di distribuzione e procedura per il gruppo di risposte in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 12497d143f9ff5c7630f81db8f416e2f7c74d574
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: e15acb5f4750ce1d82cd5f785a9ea38e73b2af30
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233526"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001186"
 ---
 # <a name="deployment-process-for-response-group-in-skype-for-business"></a>Processo di distribuzione per Response Group in Skype for business
 
@@ -85,7 +85,7 @@ Per modificare il file Web. config, eseguire le operazioni seguenti:
 
 3. Aggiungere la sezione `<machineKey>` seguente alla `<system.web>` sezione:
 
-   ```
+   ```xml
    <machineKey validationKey="AutoGenerate,IsolateApps" decryptionKey="AutoGenerate,IsolateApps" validation="3DES" decryption="3DES"/>
    ```
 
@@ -93,7 +93,7 @@ Per modificare il file Web. config, eseguire le operazioni seguenti:
 
 5. Riavviare il servizio Internet Information Services (IIS) eseguendo il comando seguente al prompt dei comandi:
 
-   ```
+   ```console
    iisreset
    ```
 
@@ -144,9 +144,9 @@ Per SQL Server 2008 R2 e SQL Server 2012, usare le regole di confronto Latin_Gen
 
 Quando si creano flussi di lavoro, esistono due scenari possibili:
 
-- **L'amministratore crea e configura il flusso di lavoro** , ovvero il membro del ruolo CsResponseGroupAdministrator (o equivalente) crea e attiva il flusso di lavoro e tutti gli elementi del flusso di lavoro, ad esempio i gruppi di agenti, le code, le festività e gli orari di ufficio, musica in attesa e così via.
+- **L'amministratore crea e configura il flusso di lavoro** , ovvero il membro del ruolo CsResponseGroupAdministrator (o equivalente) crea e attiva il flusso di lavoro e tutti gli elementi del flusso di lavoro, ad esempio i gruppi di agenti, le code, le festività e le ore lavorative, la musica in attesa e così via.
 
-- **L'amministratore crea il flusso di lavoro e il responsabile configura le opzioni** , ovvero il membro del ruolo CsResponseGroupAdministrator (o equivalente) definisce l'URI SIP principale, il nome visualizzato, assegna un membro o i membri del ruolo CsResponseGroupManager e Seleziona una coda e attiva il flusso di lavoro. CsResponseGroupManager può quindi eseguire l'accesso e modificare la configurazione del flusso di lavoro creando gruppi di agenti e assegnando anche il gruppo alla coda, configurando il numero di telefono, le festività e le ore lavorative, la musica in attesa e così via.
+- **L'amministratore crea il flusso di lavoro e il responsabile configura le opzioni** , ovvero il membro del ruolo CsResponseGroupAdministrator (o equivalente) definisce l'URI SIP principale, il nome visualizzato, assegna un membro o i membri del ruolo CsResponseGroupManager e seleziona una coda e attiva il flusso di lavoro. CsResponseGroupManager può quindi eseguire l'accesso e modificare la configurazione del flusso di lavoro creando gruppi di agenti e assegnando anche il gruppo alla coda, configurando il numero di telefono, le festività e le ore lavorative, la musica in attesa e così via.
 
     > [!NOTE]
     > Quando si vuole creare un flusso di lavoro gestito, è necessario creare il flusso di lavoro come attivo. Dopo aver salvato un flusso di lavoro attivo e gestito, è possibile modificare e disattivare il flusso di lavoro.

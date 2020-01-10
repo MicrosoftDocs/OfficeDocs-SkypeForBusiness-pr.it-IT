@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8ec6197a-3d1e-4b42-9465-564044cdab1a
 description: Questo articolo illustra i passaggi per configurare un'installazione di Skype for Business Server esistente per l'uso del servizio di mobilità, consentendo ai dispositivi mobili di sfruttare le caratteristiche di mobilità di Skype for Business Server.
-ms.openlocfilehash: 910e23e8aec18d36c3a7e4bda9e97828fb498802
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 3e39c354fd77d7ac36e3a4c36ed7e36e1d8ffbbf
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234575"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002866"
 ---
 # <a name="deploy-and-configure-mobility-for-skype-for-business-server"></a>Distribuire e configurare la mobilità per Skype for Business Server  
  
@@ -25,7 +25,7 @@ Dopo aver esaminato l'articolo [relativo al piano per la mobilità per Skype for
   
 |**Fase**|**Autorizzazioni**|
 |:-----|:-----|
-|[Creare record DNS](deploy-and-configure-mobility.md#CreateDNSRec) <br/> |Amministratori di dominio  <br/> DNSAdmins  <br/> |
+|[Creare record DNS](deploy-and-configure-mobility.md#CreateDNSRec). <br/> |Amministratori di dominio  <br/> DNSAdmins  <br/> |
 |[Modificare i certificati](deploy-and-configure-mobility.md#ModCerts) <br/> |Amministratore locale  <br/> |
 |[Configurare il proxy inverso](deploy-and-configure-mobility.md#ConfigRP) <br/> |Amministratore locale  <br/> |
 |[Configurare l'individuazione automatica per la mobilità con distribuzioni ibride](deploy-and-configure-mobility.md#ConfigAutoD) <br/> |Amministratori di dominio  <br/> |
@@ -38,7 +38,7 @@ Tutte le sezioni seguenti contengono passaggi che presuppongono che l'argomento 
 > [!NOTE]
 > Il supporto di MCX (servizio mobilità) per i client mobili legacy non è più disponibile in Skype for Business Server 2019. Tutti i client di Skype for business mobile correnti usano già Unified Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
   
-## <a name="create-dns-records"></a>Creare record DNS
+## <a name="create-dns-records"></a>Creare record DNS.
 <a name="CreateDNSRec"> </a>
 
 Potresti averne già una parte nell'ambiente di Skype for Business Server, ma devi creare i record seguenti per il lavoro di individuazione automatica:
@@ -158,7 +158,7 @@ In caso di domande sulla pianificazione dei certificati, è stato documentato l'
     
 3. Sarà essenziale sapere quali certificati sono stati assegnati prima di provare ad aggiungere un certificato aggiornato. Quindi, al comando digitare:
     
-   ```
+   ```powershell
    Get-CsCertificate
    ```
 
@@ -172,13 +172,13 @@ In caso di domande sulla pianificazione dei certificati, è stato documentato l'
     
    - Per un SAN servizio di individuazione automatica mancante (sostituendo il parametro-CA con il percorso dell'autorità di certificazione):
     
-   ```
+   ```powershell
    Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -Ca dc\myca -AllSipDomain -verbose
    ```
 
    - Ora, se si hanno più domini SIP, non è possibile usare il parametro AllSipDomain come illustrato nell'esempio precedente. Devi invece usare il parametro DomainName. Quando si usa il parametro DomainName, è necessario definire il nome di dominio completo per i record LyncdiscoverInternal e lyncdiscover. Un esempio potrebbe essere (sostituendo il parametro-CA con il proprio percorso dell'autorità di certificazione):
     
-   ```
+   ```powershell
    Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -Ca dc\myca -DomainName "LyncdiscoverInternal.contoso.com, LyncdiscoverInternal.contoso.net" -verbose
    ```
 
@@ -186,17 +186,17 @@ In caso di domande sulla pianificazione dei certificati, è stato documentato l'
     
    - Per un SAN servizio di individuazione automatica mancante (sostituendo il parametro-CA con il percorso dell'autorità di certificazione):
     
-   ```
+   ```powershell
    Request-CsCertificate -New -Type WebServicesInternal -Ca dc\myca -AllSipDomain -verbose
    ```
 
    - Ora, se si hanno più domini SIP, non è possibile usare il parametro AllSipDomain come illustrato nell'esempio precedente. Devi invece usare il parametro DomainName. Quando si usa il parametro DomainName, è necessario definire il nome di dominio completo per i record LyncdiscoverInternal e lyncdiscover. Gli esempi potrebbero essere (sostituendo il parametro-CA con il percorso dell'autorità di certificazione):
     
-   ```
+   ```powershell
    Request-CsCertificate -New -Type WebServicesInternal -Ca dc\myca -DomainName "LyncdiscoverInternal.contoso.com, LyncdiscoverInternal.contoso.net" -verbose
    ```
 
-   ```
+   ```powershell
    Request-CsCertificate -New -Type WebServicesExternal -Ca dc\myca -DomainName "Lyncdiscover.contoso.com, Lyncdiscover.contoso.net" -verbose
    ```
 
@@ -208,13 +208,13 @@ In caso di domande sulla pianificazione dei certificati, è stato documentato l'
     
   - Se si dispone di un singolo certificato per tutto (le identificazioni personali sono identiche), è necessario eseguire questa operazione:
     
-  ```
+  ```powershell
   Set-CsCertificate -Type <certificate(s) from the Use parameter> -Thumbprint <unique identifier>
   ```
 
   - Se si hanno certificati diversi per gli elementi (le identificazioni personali sono tutte diverse), eseguire questa operazione:
     
-  ```
+  ```powershell
   Set-CsCertificate -Type Default -Thumbprint <certificate thumbprint>
   Set-CsCertificate -Type WebServicesInternal -Thumbprint <certificate thumbprint>
   Set-CsCertificate -Type WebServicesExternal -Thumbprint <certificate thumbprint>
@@ -224,7 +224,7 @@ In caso di domande sulla pianificazione dei certificati, è stato documentato l'
 
 1. È possibile esaminare i certificati usando lo snap-in certificati per MMC. È sufficiente digitare MMC nella ricerca e dovrebbe essere visualizzata come opzione per l'applicazione.
     
-2. Per aggiungere lo snap-in certificati, è necessario fare clic su **file**e quindi su **Aggiungi/Rimuovi snap-in...** (o anche tasti di scelta rapida **CTRL + M** funzionerebbe). I **certificati** saranno un'opzione nel riquadro sinistro, selezionarla e quindi l'account del **computer** nella finestra popup, quindi fare clic su **Avanti**.
+2. Per aggiungere lo snap-in certificati, è necessario fare clic su **file**e quindi **aggiungere/rimuovere lo snap-in...** (o anche i tasti di scelta rapida **CTRL + M** funzionerebbero). I **certificati** saranno un'opzione nel riquadro sinistro, selezionarla e quindi l'account del **computer** nella finestra popup, quindi fare clic su **Avanti**.
     
 3. Sempre nella finestra popup, con ogni probabilità si sta eseguendo questa operazione nel computer che ospita i certificati che è necessario esaminare, quindi lascia la selezione nel **computer locale** , se è così. Se si sta lavorando a un computer remoto, cambiare il pulsante di opzione in **un altro PC** e quindi immettere il nome di dominio completo del computer o usare il pulsante **Sfoglia** per cercare il computer tramite Active Directory. Dopo aver selezionato il computer, è necessario fare clic su **fine** quando è pronto e quindi su **OK** per aggiungere lo snap-in alla console MMC.
     
@@ -307,7 +307,7 @@ Ci sono due aspetti principali da considerare:
     
    - Questo deve essere **SSL** per l'accesso esterno, scegliere questa opzione.
     
-   - Dovrai pubblicare un percorso per la **pubblicazione interna**e immettere il nome di dominio completo per i servizi Web esterni sul servizio di bilanciamento del carico del pool di front end (o il nome di dominio completo del dispositivo di bilanciamento del carico del pool di Director se ne hai uno), un esempio sarebbe sfb_ pool01. contoso. local.
+   - Dovrai pubblicare un percorso per la **pubblicazione interna**e immettere il nome di dominio completo per i servizi Web esterni sul servizio di bilanciamento del carico del pool di front end (o il nome di dominio completo del dispositivo di bilanciamento del carico del pool di Director se ne hai uno), un esempio sarebbe sfb_pool01. contoso. local.
     
    - È consigliabile digitare ** / *** come percorso da pubblicare, ma è anche necessario **inoltrare l'intestazione host originale**.
     
@@ -353,7 +353,7 @@ Ci sono due aspetti principali da considerare:
     
    - Questa operazione deve essere una **connessione non protetta per la connessione al server Web o alla farm pubblicata**.
     
-   - È necessario pubblicare un percorso per la **pubblicazione interna**e immettere il nome di dominio completo per l' **indirizzo VIP** del dispositivo di bilanciamento del carico del pool Front End, un esempio sarebbe sfb_pool01. contoso. local.
+   - Dovrai pubblicare un percorso per la **pubblicazione interna**e immettere il nome di dominio completo per l' **indirizzo VIP** del dispositivo di bilanciamento del carico del pool di front end, un esempio sarebbe sfb_pool01. contoso. local.
     
    - È consigliabile digitare ** / *** come percorso da pubblicare, ma è anche necessario **inoltrare l'intestazione host originale**.
     
@@ -392,13 +392,13 @@ Per consentire ai client mobili di individuare la posizione di un utente, è nec
     
 2. Eseguire la procedura seguente per ottenere il valore dell'attributo **ProxyFqdn** per l'ambiente di Skype for Business Server:
     
-   ```
+   ```powershell
    Get-CsHostingProvider
    ```
 
 3. Quindi, sempre nella finestra della shell, Esegui:
     
-   ```
+   ```powershell
    Set-CsHostingProvider -Identity [identity] -AutodiscoverUrl https://webdir.online.lync.com/autodiscover/autodiscoverservice.svc/root
    ```
 
@@ -422,13 +422,13 @@ Per i client di Lync Server 2010 in Skype for Business Server 2015, è necessari
     
 3. Nella riga di comando immettere:
     
-   ```
+   ```powershell
    Test-CsUcwaConference -TargetFqdn <FQDN of Front End pool> -Authentication <TrustedServer | Negotiate | ClientCertificate | LiveID> -OrganizerSipAddress sip:<SIP address of test user 1> -OrganizerCredential <test user 1 credentials> -ParticipantSipAddress sip:<SIP address of test user 2> -ParticipantCredential <test user 2 credentials> -v
    ```
 
    È anche possibile impostare le credenziali in uno script e passarle al cmdlet di test. Di seguito è riportato un esempio.
     
-   ```
+   ```powershell
    $passwd1 = ConvertTo-SecureString "Password01" -AsPlainText -Force
    $passwd2 = ConvertTo-SecureString "Password02" -AsPlainText -Force
    $testuser1 = New-Object Management.Automation.PSCredential("contoso\UserName1", $passwd1)
@@ -447,13 +447,13 @@ Per i client di Lync Server 2010 in Skype for Business Server 2015, è necessari
     
 3. Nella riga di comando immettere:
     
-   ```
+   ```powershell
    Test-CsMcxP2PIM -TargetFqdn <FQDN of Front End pool> -Authentication <TrustedServer | Negotiate | ClientCertificate | LiveID> -SenderSipAddress sip:<SIP address of test user 1> -SenderCredential <test user 1 credentials> -ReceiverSipAddress sip:<SIP address of test user 2> -ReceiverCredential <test user 2 credentials> -v
    ```
 
    È anche possibile impostare le credenziali in uno script e passarle al cmdlet di test. Di seguito è riportato un esempio.
     
-   ```
+   ```powershell
    $passwd1 = ConvertTo-SecureString "Password01" -AsPlainText -Force
    $passwd2 = ConvertTo-SecureString "Password02" -AsPlainText -Force
    $tuc1 = New-Object Management.Automation.PSCredential("contoso\UserName1", $passwd1)
@@ -484,13 +484,13 @@ Questa funzionalità è invariata rispetto a Lync Server 2013, ma se si ha un se
     
 3. Aggiungere un provider di hosting di Skype for Business Server online.
     
-   ```
+   ```powershell
    New-CsHostingProvider -Identity <unique identifier for hosting provider> -Enabled $True -ProxyFQDN <FQDN for the Access Server used by the hosting provider> -VerificationLevel UseSourceVerification
    ```
 
    Ad esempio:
     
-   ```
+   ```powershell
    New-CsHostingProvider -Identity "SkypeOnline" -Enabled $True -ProxyFQDN "sipfed.online.lync.com" -VerificationLevel UseSourceVerification
    ```
 
@@ -499,7 +499,7 @@ Questa funzionalità è invariata rispetto a Lync Server 2013, ma se si ha un se
   
 4. Configurare la Federazione del provider di hosting tra l'organizzazione e il servizio di notifica push su Skype for business online. Alla riga di comando è necessario digitare:
     
-   ```
+   ```powershell
     New-CsAllowedDomain -Identity "push.lync.com"
    ```
 
@@ -511,13 +511,13 @@ Questa funzionalità è invariata rispetto a Lync Server 2013, ma se si ha un se
     
 3. Abilitare le notifiche push:
     
-   ```
+   ```powershell
    Set-CsPushNotificationConfiguration -EnableMicrosoftPushNotificationService $True
    ```
 
 4. Abilita federazione:
      
-   ```
+   ```powershell
    Set-CsAccessEdgeConfiguration -AllowFederatedUsers $True
    ```
 
@@ -529,25 +529,25 @@ Questa funzionalità è invariata rispetto a Lync Server 2013, ma se si ha un se
     
 3. Verificare la configurazione della Federazione:
     
-   ```
+   ```powershell
    Test-CsFederatedPartner -TargetFqdn <FQDN of Access Edge server used for federated SIP traffic> -Domain <FQDN of federated domain> -ProxyFqdn <FQDN of the Access Edge server used by the federated organization>
    ```
 
     Ad esempio:
     
-   ```
+   ```powershell
    Test-CsFederatedPartner -TargetFqdn accessproxy.contoso.com -Domain push.lync.com -ProxyFqdn sipfed.online.lync.com
    ```
 
 4. Verificare le notifiche push:
     
-   ```
+   ```powershell
    Test-CsMcxPushNotification -AccessEdgeFqdn <Access Edge service FQDN>
    ```
 
     Ad esempio:
     
-   ```
+   ```powershell
    Test-CsMcxPushNotification -AccessEdgeFqdn accessproxy.contoso.com
    ```
 
@@ -583,7 +583,7 @@ Per consentire agli utenti di usare la chiamata tramite il lavoro, sarà anche n
     
 3. Disattivare l'accesso alla mobilità e chiamare tramite il lavoro a livello globale digitando:
     
-   ```
+   ```powershell
    Set-CsMobilityPolicy -EnableMobility $False -EnableOutsideVoice $False
    ```
 
@@ -600,7 +600,7 @@ Per consentire agli utenti di usare la chiamata tramite il lavoro, sarà anche n
     
 3. È possibile creare criteri a livello di sito, disattivare VoIP e video, abilitare Richiedi WiFi per l'audio IP e richiedere il WiFi per i video IP per sito. Tipo
     
-   ```
+   ```powershell
    New-CsMobilityPolicy -Identity site:<site identifier> -EnableIPAudioVideo $false -RequireWiFiForIPAudio $True -RequireWiFiforIPVideo $True
    ```
 
@@ -614,14 +614,14 @@ Per consentire agli utenti di usare la chiamata tramite il lavoro, sarà anche n
     
 3. Creare criteri di mobilità a livello di utente e disattivare la mobilità e la chiamata tramite il lavoro da parte dell'utente. Tipo
     
-   ```
+   ```powershell
    New-CsMobilityPolicy -Identity <policy name> -EnableMobility $False -EnableOutsideVoice $False
    Grant-CsMobilityPolicy -Identity <user identifier> -PolicyName <policy name>
    ```
 
     Un esempio ulteriore con i dati di esempio:
     
-   ```
+   ```powershell
    New-CsMobilityPolicy "tag:disableOutsideVoice" -EnableOutsideVoice $False
    Grant-CsMobilityPolicy -Identity MobileUser1@contoso.com -PolicyName tag:disableOutsideVoice
    ```

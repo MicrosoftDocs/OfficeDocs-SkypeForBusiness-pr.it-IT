@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fb556e50-88dd-4404-a3d5-be36f5ba41e6
 description: Distribuzione dello strumento SEFAUtil in Skype for Business Server.
-ms.openlocfilehash: 1721f4d611a08a3054366e36b0ec9a3ebccf6c78
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: e36448652f245d1c81a00cc206b6e8047a8f9d28
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245781"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001886"
 ---
 # <a name="deploy-the-sefautil-tool-in-skype-for-business"></a>Distribuire lo strumento SEFAUtil in Skype for business
  
@@ -37,13 +37,13 @@ Per distribuire e gestire il ritiro delle chiamate di gruppo, è necessario usar
   
 ### <a name="to-deploy-sefautil"></a>Per distribuire SEFAUtil
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione**Delegate.
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione delegate**.
     
 2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
     
 3. Lo strumento SEFAUtil può essere eseguito solo in un computer che fa parte di un pool di applicazioni attendibile. Se necessario, definire un pool di applicazioni attendibili per il pool Front-end in cui si prevede di eseguire SEFAUtil. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    New-CsTrustedApplicationPool -id <Pool FQDN> -Registrar <Pool Registrar FQDN> -site Site:<Pool Site>
    ```
     > [!NOTE]
@@ -53,7 +53,7 @@ Per distribuire e gestire il ritiro delle chiamate di gruppo, è necessario usar
 
 4. Definire lo strumento SEFAUtil come applicazione attendibile. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
    ```
 
@@ -62,7 +62,7 @@ Per distribuire e gestire il ritiro delle chiamate di gruppo, è necessario usar
   
 5. Abilitare la topologia con le modifiche apportate. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    Enable-CsTopology
    ```
 
@@ -74,7 +74,7 @@ Per distribuire e gestire il ritiro delle chiamate di gruppo, è necessario usar
     
     b. Visualizzare le impostazioni di inoltro di chiamata di un utente. Nella riga di comando eseguire:
     
-   ```
+   ```console
    SEFAUtil.exe <user SIP address> /server:<Lync Server/Pool FQDN>
    ```
 

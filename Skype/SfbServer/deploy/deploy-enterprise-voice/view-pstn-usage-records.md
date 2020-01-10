@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 65025c78-c263-472c-9ff9-e170588f10b5
 description: 'Riepilogo: informazioni su come visualizzare i record di utilizzo PSTN usando il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.'
-ms.openlocfilehash: bbc9b7f174ff4b6710009af47dbdcd20e12334d4
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 96a96898bf728b4f05ba473bc750635e41be19fa
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240245"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002726"
 ---
 # <a name="view-pstn-usage-records-in-skype-for-business"></a>Visualizzare i record di utilizzo PSTN in Skype for business
 
@@ -42,7 +42,7 @@ Un record di utilizzo PSTN (Public Switched Telephone Network) specifica una cla
 
 - Per visualizzare informazioni su tutti gli usi PSTN, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
 
-  ```
+  ```powershell
   Get-CsPstnUsage
   ```
 

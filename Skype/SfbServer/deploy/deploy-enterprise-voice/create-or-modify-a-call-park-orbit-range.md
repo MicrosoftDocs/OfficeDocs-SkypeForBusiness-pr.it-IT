@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 549ec118-eee5-4333-9416-80929ec057e0
 description: Creare o modificare una tabella di Orbit range di Call Park in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 305404ce74d3aec26741c0e26b999f6227dabe37
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: e4dc9e9384210ec2abcceb652b814aef8c401b05
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233682"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001726"
 ---
 # <a name="create-or-modify-a-call-park-orbit-range-in-skype-for-business"></a>Creare o modificare un intervallo orbit di Call Park in Skype for business
 
@@ -39,7 +39,7 @@ Usare una delle procedure seguenti per creare o modificare un intervallo di orbi
 
 ### <a name="to-use-skype-for-business-server-control-panel-to-create-or-modify-a-range-of-numbers-for-parking-calls"></a>Per usare il pannello di controllo di Skype for Business Server per creare o modificare un intervallo di numeri per le chiamate di parcheggio
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere delegare le **autorizzazioni di configurazione**.
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **delegare le autorizzazioni di configurazione**.
 
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.
 
@@ -74,7 +74,7 @@ Usare una delle procedure seguenti per creare o modificare un intervallo di orbi
 
 ### <a name="to-use-skype-for-business-server-management-shell-to-create-or-modify-a-range-of-numbers-for-parking-calls"></a>Per usare Skype for Business Server Management Shell per creare o modificare un intervallo di numeri per le chiamate di parcheggio
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione**Delegate.
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione delegate**.
 
 2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
 
@@ -82,19 +82,19 @@ Usare una delle procedure seguenti per creare o modificare un intervallo di orbi
 
     Nella riga di comando eseguire:
 
-   ```
+   ```powershell
    New-CsCallParkOrbit -Identity <name of orbit range> -NumberRangeStart <first number in orbit range> -NumberRangeEnd <last number in orbit range> -CallParkService <FQDN or service ID of the Application service that hosts the Call Park application>
    ```
 
     Ad esempio:
 
-   ```
+   ```powershell
    New-CsCallParkOrbit -Identity "Redmond orbit 1" -NumberRangeStart 100 -NumberRangeEnd 199 -CallParkService redmond-applicationserver-1
    ```
 
     L'esempio seguente mostra come modificare i numeri in un intervallo di orbit esistente,
 
-   ```
+   ```powershell
    Set-CsCallParkOrbit -Identity "Redmond orbit 1" -NumberRangeStart 500 -NumberRangeEnd 699
    ```
 

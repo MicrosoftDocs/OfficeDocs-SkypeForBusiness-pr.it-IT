@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3034fdcb-7c89-42c4-9c5e-13400e82d88f
 description: Leggere questo argomento per informazioni su come partecipare a un PC appliance di sistema Skype room al proprio dominio.
-ms.openlocfilehash: 1cf95f416fabcdeabb878b204af25e262427ab07
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: b34161f946b2c79508555145635445214159bd61
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36774664"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003516"
 ---
 # <a name="skype-room-system-domain-joining-considerations"></a>Considerazioni sull'Unione di domini di Skype room System
  
@@ -53,7 +53,7 @@ Leggere questo argomento per informazioni su come partecipare a un PC appliance 
     
 Se si prevede di partecipare al dominio ai computer della sala sistemi Skype, per evitare che l'Unione di Skype room System non venga inavvertitamente in un'unità organizzativa non intenzionale, che potrebbe non essere priva di GPO, verificare di essere entrati nell'OU corretta. Puoi usare il cmdlet seguente dal computer per le chat room Skype per partecipare all'unità organizzativa corretta e non ricevere oggetti Criteri di gruppo che potrebbero bloccare la funzionalità LRS. Contattare l'amministratore di sistema o il partner OEM per eseguire questi cmdlet:
   
-```
+```powershell
 $username = "contso.local\LRS01"
 $password = ConvertTo-SecureString "password123" -AsPlainText -Force
 $myCred = New-Object System.Management.Automation.PSCredential $username, $password

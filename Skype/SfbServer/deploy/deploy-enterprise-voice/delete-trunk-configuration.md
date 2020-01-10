@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3b25f14d-884b-42dd-a866-460d276d3e43
 description: 'Riepilogo: informazioni su come eliminare una raccolta di impostazioni di configurazione trunk usando il pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: 5823c47234f912293c7af2a15bf1fcb87ff23e15
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 97a0820258a837968b88e6840232829f3ad11d21
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233508"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41000996"
 ---
 # <a name="delete-an-existing-collection-of-sip-trunk-configuration-settings-in-skype-for-business-server"></a>Eliminare una raccolta esistente di impostazioni di configurazione del trunk SIP in Skype for Business Server
  
@@ -47,9 +47,9 @@ Gli amministratori possono anche creare impostazioni di configurazione trunk per
     
 2. Nella scheda **configurazione trunk** selezionare la raccolta di impostazioni di configurazione trunk SIP da eliminare, fare clic su **modifica** e quindi su **Elimina**. Per eliminare più raccolte nella stessa operazione, fare clic sulla prima raccolta da eliminare, quindi tenere premuto CTRL e fare clic su eventuali raccolte aggiuntive che si desidera rimuovere.
     
-3. La proprietà **state** per la raccolta verrà aggiornata in UNCOMMITTED. **** Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **commit** e quindi su **commit tutti**.
+3. La proprietà **state** per la raccolta verrà aggiornata in **UNCOMMITTED**. Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **commit** e quindi su **commit tutti**.
     
-4. Nella finestra di dialogo **impostazioni di configurazione vocale** non impegnata fare clic su **OK**.
+4. Nella finestra di dialogo **impostazioni di configurazione vocale non impegnata** fare clic su **OK**.
     
 5. Nella finestra di dialogo **Pannello di controllo di Skype for Business Server** fare clic su **OK**.
     
@@ -63,7 +63,7 @@ Puoi eliminare le impostazioni di configurazione del trunk usando Skype for Busi
 
 - Il comando seguente rimuove le impostazioni di configurazione trunk applicate al sito Redmond:
     
-  ```
+  ```powershell
   Remove-CsTrunkConfiguration -Identity site:Redmond
   ```
 
@@ -71,7 +71,7 @@ Puoi eliminare le impostazioni di configurazione del trunk usando Skype for Busi
 
 - Questo comando rimuove tutte le impostazioni di configurazione trunk applicate all'ambito del servizio:
     
-  ```
+  ```powershell
   Get-CsTrunkConfiguration -Filter "service:*" | Remove-CsTrunkConfiguration
   ```
 
@@ -79,7 +79,7 @@ Puoi eliminare le impostazioni di configurazione del trunk usando Skype for Busi
 
 - Il comando seguente rimuove tutte le impostazioni di configurazione trunk in cui è stato abilitato il bypass multimediale:
     
-  ```
+  ```powershell
   Get-CsTrunkConfiguration | Where-Object {$_.EnableBypass -eq $True} | Remove-CsTrunkConfiguration
   ```
 

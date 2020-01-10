@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: a1309c09-ad9a-4c54-9650-4e3f5b2a4a00
 description: 'Riepilogo: informazioni su come configurare un trunk tra un Mediation Server e i peer per VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: 714c712816709e8f2211e752f87d20c8d2067c7b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 9bd285f1364d54940afd827858248656a6bb9f00
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233852"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001236"
 ---
 # <a name="configure-trunks-in-skype-for-business-server"></a>Configurare Trunks in Skype for Business Server
  
@@ -43,7 +43,7 @@ La funzionalità di Skype for Business Server supporta più associazioni tra gat
     
 Quando viene definito un trunk, deve essere associato a una route. Per associare un trunk a una route, è possibile definire un nome semplice per il trunk in Generatore di topologia. Questo nome semplice viene usato come nome del trunk nel pannello di controllo di Skype for Business Server, dove Trunks può essere associato alle route. Il nome del trunk semplice viene usato come nome del gateway da Skype for Business Server Management Shell. 
   
-```
+```powershell
 New-CsVoiceRoute -Identity <RouteId> -NumberPattern <String> -PstnUsages @{add="<UsageString>"} -PstnGatewayList @{add="<TrunkSimpleName>"}
 ```
 

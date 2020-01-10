@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 5ea18841-afdc-4ccb-8d86-30584c1f5aca
 description: 'Riepilogo: informazioni su come creare, pubblicare ed esportare la topologia di Edge Server in Skype for Business Server.'
-ms.openlocfilehash: b20877f805cb0357f6038a822962ad6eb9cdd5e1
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: c625656f1686b6e72be2f0223d6560464bb9e7bc
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234135"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001476"
 ---
 # <a name="create-your-edge-topology-for-skype-for-business-server"></a>Creare la topologia di Edge per Skype for Business Server
  
@@ -87,9 +87,9 @@ Se non si è sicuri di cosa si ha bisogno, prima di iniziare a seguire questa pr
     
 9. Nella schermata FQDN esterni le opzioni dipendono dalla selezione effettuata nel passaggio 7.
     
-   - Se è stata selezionata la casella di controllo **Usa un solo nome di dominio completo e indirizzo IP** , è necessario immettere il nome di dominio completo esterno singolo nella casella **accesso SIP** . Sarà quindi necessario immettere numeri di porta diversi per ogni servizio Edge per consentire a tutti di connettersi in modo indipendente. È consigliabile 5061 per il servizio Edge **Access SIP** , 444 per il servizio **Web** Conferencing Edge e 443 per il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
+   - Se è stata selezionata la casella di controllo **Usa un solo nome di dominio completo e indirizzo IP** , è necessario immettere il nome di dominio completo esterno singolo nella casella **accesso SIP** . Sarà quindi necessario immettere numeri di porta diversi per ogni servizio Edge per consentire a tutti di connettersi in modo indipendente. È consigliabile 5061 per il servizio Edge **Access SIP** , 444 per il servizio **Web Conferencing** Edge e 443 per il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
     
-   - Se non è stata visualizzata la casella di controllo **Usa un solo nome FQDN e indirizzo IP** , sarà necessario immettere i tre nomi di dominio completi esterni per il servizio **Access Edge SIP** , il servizio **Web** Conferencing Edge e il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
+   - Se non è stata visualizzata la casella di controllo **Usa un solo nome FQDN e indirizzo IP** , sarà necessario immettere i tre nomi di dominio completi esterni per il servizio **Access Edge SIP** , il servizio **Web Conferencing** Edge e il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
     
 10. Si è ora nella schermata **Definisci l'indirizzo IP interno** . Qui digitate l'indirizzo IP del server perimetrale nelle caselle di testo **indirizzo IPv4 interno** e **indirizzo IPv6 interno** , a seconda delle scelte effettuate nel passaggio 8. Quando si è pronti, fare clic su **Avanti** .
     
@@ -97,7 +97,7 @@ Se non si è sicuri di cosa si ha bisogno, prima di iniziare a seguire questa pr
     
     - Potresti usare un singolo FQDN per tutti i servizi. In questo caso, digitare l'indirizzo IPv4 o IPv6 esterno (in base a quale si sta usando) nella casella di testo **accesso SIP** e quindi fare clic su **Avanti**.
     
-    - È possibile che tu abbia scelto di usare tre nomi FQDN e indirizzi IP distinti per i servizi. In questo caso, immettere gli indirizzi IPv4 o IPv6 esterni per il servizio **Access Edge SIP** , il servizio **Web** Conferencing Edge e il servizio **A/V** Edge e quindi fare clic su **Avanti**.
+    - È possibile che tu abbia scelto di usare tre nomi FQDN e indirizzi IP distinti per i servizi. In questo caso, immettere gli indirizzi IPv4 o IPv6 esterni per il servizio **Access Edge SIP** , il servizio **Web Conferencing** Edge e il servizio **A/V** Edge e quindi fare clic su **Avanti**.
     
     > [!NOTE]
     > Se in precedenza non si è scelto di abilitare e assegnare l'indirizzo IPv6, la finestra di dialogo non verrà visualizzata. Questo è normale, basta passare al passaggio successivo. 
@@ -149,9 +149,9 @@ Se non si è sicuri di cosa si ha bisogno, prima di iniziare a seguire questa pr
     
 9. Nella schermata FQDN esterni le opzioni dipendono dalla selezione effettuata nel passaggio 7.
     
-   - Se è stata selezionata la casella di controllo **Usa un solo nome di dominio completo e indirizzo IP** , è necessario immettere il nome di dominio completo esterno singolo nella casella **accesso SIP** . Sarà quindi necessario immettere numeri di porta diversi per ogni servizio Edge per consentire a tutti di connettersi in modo indipendente. È consigliabile 5061 per il servizio Edge **Access SIP** , 444 per il servizio **Web** Conferencing Edge e 443 per il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
+   - Se è stata selezionata la casella di controllo **Usa un solo nome di dominio completo e indirizzo IP** , è necessario immettere il nome di dominio completo esterno singolo nella casella **accesso SIP** . Sarà quindi necessario immettere numeri di porta diversi per ogni servizio Edge per consentire a tutti di connettersi in modo indipendente. È consigliabile 5061 per il servizio Edge **Access SIP** , 444 per il servizio **Web Conferencing** Edge e 443 per il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
     
-   - Se non è stata visualizzata la casella di controllo **Usa un solo nome FQDN e indirizzo IP** , sarà necessario immettere i tre nomi di dominio completi esterni per il servizio **Access Edge SIP** , il servizio **Web** Conferencing Edge e il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
+   - Se non è stata visualizzata la casella di controllo **Usa un solo nome FQDN e indirizzo IP** , sarà necessario immettere i tre nomi di dominio completi esterni per il servizio **Access Edge SIP** , il servizio **Web Conferencing** Edge e il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
     
 10. A questo punto è stata raggiunta la schermata **Definisci i computer in questo pool** . Fare clic sul pulsante **Aggiungi** .
     
@@ -161,7 +161,7 @@ Se non si è sicuri di cosa si ha bisogno, prima di iniziare a seguire questa pr
     
     - Potresti usare un singolo FQDN per tutti i servizi. In questo caso, digitare l'indirizzo IPv4 o IPv6 esterno (in base a quale si sta usando) nella casella di testo **accesso SIP** e quindi fare clic su **Avanti**.
     
-    - È possibile che tu abbia scelto di usare tre nomi FQDN e indirizzi IP distinti per i servizi. In questo caso, immettere gli indirizzi IPv4 o IPv6 esterni per il servizio **Access Edge SIP** , il servizio **Web** Conferencing Edge e il servizio **A/V** Edge e quindi fare clic su **Avanti**.
+    - È possibile che tu abbia scelto di usare tre nomi FQDN e indirizzi IP distinti per i servizi. In questo caso, immettere gli indirizzi IPv4 o IPv6 esterni per il servizio **Access Edge SIP** , il servizio **Web Conferencing** Edge e il servizio **A/V** Edge e quindi fare clic su **Avanti**.
     
     > [!NOTE]
     > Se in precedenza non si è scelto di abilitare e assegnare l'indirizzo IPv6, la finestra di dialogo non verrà visualizzata. Questo è normale, basta passare al passaggio successivo. 
@@ -220,9 +220,9 @@ Se non si è sicuri di cosa si ha bisogno, prima di iniziare a seguire questa pr
   
 9. Nella schermata FQDN esterni le opzioni dipendono dalla selezione effettuata nel passaggio 7.
     
-   - Se è stata selezionata la casella di controllo **Usa un solo nome di dominio completo e indirizzo IP** , è necessario immettere il nome di dominio completo esterno singolo nella casella **accesso SIP** . Sarà quindi necessario immettere numeri di porta diversi per ogni servizio Edge per consentire a tutti di connettersi in modo indipendente. È consigliabile 5061 per il servizio Edge **Access SIP** , 444 per il servizio **Web** Conferencing Edge e 443 per il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
+   - Se è stata selezionata la casella di controllo **Usa un solo nome di dominio completo e indirizzo IP** , è necessario immettere il nome di dominio completo esterno singolo nella casella **accesso SIP** . Sarà quindi necessario immettere numeri di porta diversi per ogni servizio Edge per consentire a tutti di connettersi in modo indipendente. È consigliabile 5061 per il servizio Edge **Access SIP** , 444 per il servizio **Web Conferencing** Edge e 443 per il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
     
-   - Se non è stata visualizzata la casella di controllo **Usa un solo nome FQDN e indirizzo IP** , sarà necessario immettere i tre nomi di dominio completi esterni per il servizio **Access Edge SIP** , il servizio **Web** Conferencing Edge e il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
+   - Se non è stata visualizzata la casella di controllo **Usa un solo nome FQDN e indirizzo IP** , sarà necessario immettere i tre nomi di dominio completi esterni per il servizio **Access Edge SIP** , il servizio **Web Conferencing** Edge e il servizio **a/V** Edge. Fare clic su **Avanti** al termine.
     
 10. A questo punto è stata raggiunta la schermata **Definisci i computer in questo pool** . Fare clic sul pulsante **Aggiungi** .
     
@@ -232,7 +232,7 @@ Se non si è sicuri di cosa si ha bisogno, prima di iniziare a seguire questa pr
     
     - Potresti usare un singolo FQDN per tutti i servizi. In questo caso, digitare l'indirizzo IPv4 o IPv6 esterno (in base a quale si sta usando) nella casella di testo **accesso SIP** e quindi fare clic su **Avanti**.
     
-    - È possibile che tu abbia scelto di usare tre nomi FQDN e indirizzi IP distinti per i servizi. In questo caso, immettere gli indirizzi IPv4 o IPv6 esterni per il servizio **Access Edge SIP** , il servizio **Web** Conferencing Edge e il servizio **A/V** Edge e quindi fare clic su **Avanti**.
+    - È possibile che tu abbia scelto di usare tre nomi FQDN e indirizzi IP distinti per i servizi. In questo caso, immettere gli indirizzi IPv4 o IPv6 esterni per il servizio **Access Edge SIP** , il servizio **Web Conferencing** Edge e il servizio **A/V** Edge e quindi fare clic su **Avanti**.
     
     > [!NOTE]
     > Se in precedenza non si è scelto di abilitare e assegnare l'indirizzo IPv6, la finestra di dialogo non verrà visualizzata. Questo è normale, basta passare al passaggio successivo. 
@@ -256,9 +256,9 @@ Se non si è sicuri di cosa si ha bisogno, prima di iniziare a seguire questa pr
 
 Dopo aver completato la procedura descritta sopra, è il momento di pubblicare questa nuova topologia, che consentirà anche di esportarla in Skype for Business Server Edge Server o Edge pool. Seguire questa procedura:
   
-1. Avviare **Generatore** di topologie (se non è già stato avviato dalla procedura precedente).
+1. Avviare **Generatore di topologie** (se non è già stato avviato dalla procedura precedente).
     
-2. In **Generatore**di topologie, nell'albero della console, fare clic con il pulsante destro del mouse su **Skype for Business Server** e quindi scegliere **Generatore di topologia di Skype for Business Server**.
+2. In **Generatore di topologie**, nell'albero della console, fare clic con il pulsante destro del mouse su **Skype for Business Server** e quindi scegliere **Generatore di topologia di Skype for Business Server**.
     
 3. Nella pagina di **benvenuto** della procedura guidata fare clic su **Avanti**.
     
@@ -278,7 +278,7 @@ Per distribuire correttamente, la distribuzione guidata di Skype for Business Se
     
 2. In **Skype for Business Server Management Shell**eseguire le operazioni seguenti:
     
-   ```
+   ```powershell
    Export-CsConfiguration -FileName <ConfigurationFilePath.zip>
    ```
 

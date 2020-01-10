@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c7f78f23-b74f-402f-bedb-4cc308718f5b
 description: 'Riepilogo: leggere questo argomento per informazioni su come assegnare un criterio vocale per gli utenti che usano il sistema telefonico in Office 365 con connettività PSTN locale.'
-ms.openlocfilehash: 0d310378b77c09b427836f0d9bceb60a14982071
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: fc1bf50eabc1b596ba54e3447c0357cfd304ad2c
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194548"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003036"
 ---
 # <a name="assign-a-voice-routing-policy"></a>Assegnare un criterio di routing vocale
  
@@ -51,13 +51,13 @@ Prima di usare un criterio di routing vocale globale per il sistema telefonico i
     
 3. Aggiungere i record di utilizzo PSTN ai criteri:
     
-   ```
+   ```powershell
    Set-CSVoiceRoutingPolicy -Identity Global -PSTNUsages <PSTNUsagesId> 
    ```
 
     Ad esempio:
     
-   ```
+   ```powershell
    Set-CSVoiceRoutingPolicy -Identity Global -PSTNUsages "Local", "Long Distance" 
    ```
 
@@ -71,13 +71,13 @@ Prima di usare un criterio di routing vocale globale per il sistema telefonico i
     
 3. Creare un nuovo criterio di routing vocale:
     
-   ```
+   ```powershell
    New-CSVoiceRoutingPolicy -Identity <String> -Name <String> -PSTNUsages <PSTNUsagesId>
    ```
 
     Ad esempio:
     
-   ```
+   ```powershell
    New-CSVoiceRoutingPolicy -Identity HybridVoice -Name Hybrid -PSTNUsages "Local", "Long Distance"
    ```
 
@@ -95,13 +95,13 @@ Indipendentemente dal fatto che si usi il criterio di routing vocale globale o u
     
 3. Assegnare un criterio vocale esistente a un utente:
     
-   ```
+   ```powershell
    Grant-CsVoiceRoutingPolicy -Identity <UserIdParameter> -PolicyName <String>
    ```
 
     Ad esempio:
     
-   ```
+   ```powershell
    Grant-CsVoiceRoutingPolicy -Identity "Bob Kelly" -PolicyName HybridVoice
    ```
 

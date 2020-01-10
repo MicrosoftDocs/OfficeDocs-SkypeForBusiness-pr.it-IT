@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c0f44352-fb4a-45d3-85b0-a4320d4b8339
 description: Informazioni su come abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server.
-ms.openlocfilehash: 363f7c54d682dc619417a8d9601c7beafc8283c6
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 02056618aff8a2dcaa6edc2023b67ad38aa9f314
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235549"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003046"
 ---
 # <a name="enable-or-disable-offline-instant-messaging-im-in-skype-for-business-server"></a>Abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server
  
@@ -34,7 +34,7 @@ La messaggistica istantanea offline è una caratteristica lato client integrata 
     
 2. Eseguire il comando seguente per abilitare la messaggistica istantanea offline.
     
-   ```
+   ```powershell
    Set-CsImConfiguration -EnableOfflineIM $True
    ```
 
@@ -43,7 +43,7 @@ La messaggistica istantanea offline è una caratteristica lato client integrata 
   
 3. Eseguire il comando seguente per verificare che sia impostata la possibilità di archiviare i messaggi istantanei offline.
     
-   ```
+   ```powershell
    Get-CsImConfiguration
    ```
 

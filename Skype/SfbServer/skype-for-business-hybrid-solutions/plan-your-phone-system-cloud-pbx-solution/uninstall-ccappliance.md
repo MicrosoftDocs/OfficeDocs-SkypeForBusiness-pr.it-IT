@@ -1,5 +1,5 @@
 ---
-title: Disinstallare-CcAppliance
+title: Uninstall-CcAppliance
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -11,18 +11,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e1b3cdd7-08e9-41a6-843a-3b4baf886cd0
 description: Il cmdlet Uninstall-CcAppliance Disinstalla l'uso di Skype for Business Cloud Connector Edition dal server host.
-ms.openlocfilehash: 337c5c489846facb1da3c177cac7a965d7550ae5
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f37c3092103832c9efd3b24d2efbedf00e8f54ac
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190589"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003146"
 ---
-# <a name="uninstall-ccappliance"></a>Disinstallare-CcAppliance
+# <a name="uninstall-ccappliance"></a>Uninstall-CcAppliance
  
 Il cmdlet Uninstall-CcAppliance Disinstalla l'uso di Skype for Business Cloud Connector Edition dal server host. 
   
-```
+```powershell
 Uninstall-CcAppliance [-Version <string>] [-Force] [-Confirm <bool>] [<CommonParameters>]
 ```
 
@@ -33,7 +33,7 @@ Uninstall-CcAppliance [-Version <string>] [-Force] [-Confirm <bool>] [<CommonPar
 
 Nell'esempio seguente viene svuotato e disinstallato l'accessorio Cloud Connector dal server host:
   
-```
+```powershell
 Uninstall-CcAppliance
 ```
 
@@ -41,7 +41,7 @@ Uninstall-CcAppliance
 
 L'esempio seguente Scarica e Disinstalla forzatamente l'appliance di connessione cloud in esecuzione nel server host anche se il processo di svuotamento non è riuscito:
   
-```
+```powershell
 Uninstall-CcAppliance -Force
 ```
 
@@ -49,7 +49,7 @@ Uninstall-CcAppliance -Force
 
 Nell'esempio successivo viene disinstallata una versione di backup di Cloud Connector senza la conferma dell'utente:
   
-```
+```powershell
 Uninstall-CcAppliance -Version 1.3.8 -Confirm:$false
 ```
 
@@ -84,8 +84,8 @@ Nessuno
   
 [Publish-CcAppliance](publish-ccappliance.md)
   
-[Registro-CcAppliance](register-ccappliance.md)
+[Register-CcAppliance](register-ccappliance.md)
   
-[Annullamento della registrazione-CcAppliance](unregister-ccappliance.md)
+[Unregister-CcAppliance](unregister-ccappliance.md)
   
 

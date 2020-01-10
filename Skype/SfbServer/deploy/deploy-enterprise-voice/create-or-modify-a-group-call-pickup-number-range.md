@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4b442b98-df6b-4e50-8254-b3be9cde21dd
 description: Creare o modificare un intervallo di prelievo delle chiamate di gruppo in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 3098d7cf1554586dd2fd2ace934682ae58a90489
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 546fefd996286678aae77338b4e0867285670a57
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233679"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001716"
 ---
 # <a name="create-or-modify-a-group-call-pickup-number-range-in-skype-for-business"></a>Creare o modificare un intervallo di numeri di raccolta di chiamate di gruppo in Skype for business
 
@@ -48,7 +48,7 @@ Gli intervalli di numeri del gruppo di raccolta chiamate devono essere conformi 
 
 ### <a name="to-create-or-modify-a-call-pickup-group-range"></a>Per creare o modificare l'intervallo di un gruppo di raccolta chiamate
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione**Delegate.
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione delegate**.
 
 2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
 
@@ -56,19 +56,19 @@ Gli intervalli di numeri del gruppo di raccolta chiamate devono essere conformi 
 
     Nella riga di comando eseguire:
 
-   ```
+   ```powershell
    New-CsCallParkOrbit -Identity <name of call pickup group range> -NumberRangeStart <first number in range> -NumberRangeEnd <last number in range> -CallParkService <FQDN or service ID of the Application service that hosts the Call Park application> -Type GroupPickup
    ```
 
     Ad esempio:
 
-   ```
+   ```powershell
    New-CsCallParkOrbit -Identity "Redmond call pickup" -NumberRangeStart 100 -NumberRangeEnd 199 -CallParkService redmond-applicationserver-1 -Type GroupPickup
    ```
 
     L'esempio seguente mostra come modificare un intervallo di numeri dalle orbite di Call Park per chiamare i gruppi di raccolta.
 
-   ```
+   ```powershell
    Set-CsCallParkOrbit -Identity "Redmond call pickup" -Type GroupPickup
    ```
 

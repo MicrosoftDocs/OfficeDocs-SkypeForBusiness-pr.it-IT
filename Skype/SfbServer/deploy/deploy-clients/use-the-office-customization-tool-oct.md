@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 26647cb6-ba84-4ba7-8b6f-2cf86818e530
 description: 'Riepilogo: come usare lo strumento di personalizzazione di Office con il client Skype for business.'
-ms.openlocfilehash: e7eb331c1b63a9e6a94ae3920e65ef57f426fbb0
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: b5c66fee4f6c879c8ded2897b64e63654dd950be
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234842"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001596"
 ---
 # <a name="use-the-office-customization-tool-oct-in-skype-for-business-server"></a>Usare lo strumento di personalizzazione di Office (ott) in Skype for Business Server
  
@@ -25,13 +25,13 @@ Lo strumento di personalizzazione di Office (ott) fa parte del programma di inst
   
 Lo strumento di personalizzazione di ottobre fa parte del programma di installazione e viene usato solo per le versioni con contratto multilicenza del prodotto. Si esegue lo strumento di personalizzazione `setup.exe /admin` di Office digitando la riga di comando dalla radice del punto di installazione di rete che contiene i file di origine. Ad esempio, usare quanto segue:
   
- ```
+ ```console
 \\server\share\Office15\setup.exe /admin
 ```
   
 Gli amministratori usano lo strumento di personalizzazione di ottobre per creare un file msp di personalizzazione della configurazione e possono personalizzare le aree seguenti:
   
-- **Configurazione** Usato per specificare il percorso di installazione predefinito nel client e il nome dell'organizzazione predefinito, altre origini di installazione di rete, codice Product Key, contratto di licenza con l'utente finale, livello di visualizzazione, versioni precedenti di Office da rimuovere, programmi personalizzati da eseguire durante installazioni, impostazioni di sicurezza e proprietà di configurazione.
+- **Configurazione** Usato per specificare il percorso di installazione predefinito nel client e il nome dell'organizzazione predefinito, altre origini di installazione di rete, codice Product Key, contratto di licenza con l'utente finale, livello di visualizzazione, versioni precedenti di Office da rimuovere, programmi personalizzati da eseguire durante l'installazione, le impostazioni di sicurezza e le proprietà di configurazione.
     
 - **Caratteristiche** Consente di configurare le impostazioni utente e di personalizzare la modalità di installazione delle funzionalità di Office. Gli amministratori possono usare lo strumento di personalizzazione di Office per specificare i valori predefiniti iniziali delle impostazioni dell'applicazione per gli utenti. Gli utenti possono modificare la maggior parte delle impostazioni dopo l'installazione.
     

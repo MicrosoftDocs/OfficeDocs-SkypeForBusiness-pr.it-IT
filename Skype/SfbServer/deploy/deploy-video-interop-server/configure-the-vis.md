@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 0fde142b-70b1-46c6-b1f9-f9d70115371d
 description: 'Riepilogo: configurare il ruolo di video Interop Server (VIS) in Skype for Business Server.'
-ms.openlocfilehash: 9ac7b64b33c48bd4010c1431b5c0d658f223599a
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: fb9dc36bcf2f1a6f1346705f74dd3cf2844a973c
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235682"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003056"
 ---
 # <a name="configure-the-video-interop-server-in-skype-for-business-server"></a>Configurare il server di interoperabilità video in Skype for Business Server
  
@@ -34,31 +34,31 @@ Un dial plan con ambito globale viene creato per la distribuzione di Skype for B
 
 1. Creare una nuova configurazione trunk video (una raccolta di impostazioni) da usare nel trunk tra il VIS e Cisco Unified Communications Manager (CallManager o CUCM) usando il cmdlet di Windows PowerShell seguente:
     
-   ```
+   ```powershell
    New-CsVideoTrunkConfiguration -Identity "Service:VideoGateway:CUCMVIS1.CUCMInterop.contoso.com" -GatewaySendsRtcpForActiveCalls $false -GatewaySendsRtcpForCallsOnHold $false -EnableMediaEncryptionForSipOverTls $true(or $false)
    ```
 
     Se è presente un trunk video esistente che deve essere modificato, usare il cmdlet di Windows PowerShell seguente:
     
-   ```
+   ```powershell
    Set-CsVideoTrunkConfiguration -Identity "Service:VideoGateway:CUCMVIS1.CUCMInterop.contoso.com" -GatewaySendsRtcpForActiveCalls $false -GatewaySendsRtcpForCallsOnHold $false -EnableMediaEncryptionForSipOverTls  $true(or $false)
    ```
 
     Per visualizzare le impostazioni associate a una particolare configurazione del trunk video, usare il cmdlet di Windows PowerShell seguente:
     
-   ```
+   ```powershell
    Get-CsVideoTrunkConfiguration -Identity "Service:VideoGateway:CUCMVIS1.CUCMInterop.contoso.com"
    ```
 
     Per rimuovere una particolare configurazione del trunk video, usare il cmdlet di Windows PowerShell seguente (si noti che la configurazione del trunk video con ambito globale verrà applicata se non esiste una configurazione trunk video più specifica per un trunk specifico):
     
-   ```
+   ```powershell
    Remove-CsVideoTrunkConfiguration -Identity "Service:VideoGateway:CUCMVIS1.CUCMInterop.contoso.com"
    ```
 
 2. Stabilire un dial plan da associare al trunk, usando i cmdlet di Windows PowerShell seguenti:
     
-   ```
+   ```powershell
    New-CsDialPlan -Identity "Service:VideoGateway:CUCMVIS1.CUCMInterop.contoso.com" -SimpleName "TrunkTestDialPlan" 
    New-CsVoiceNormalizationRule -Identity "Service:VideoGateway:CUCMVIS1.CUCMInterop.contoso.com/SevenDigitRule" -Pattern '^(\d{7})$' -Translation '+1425$1' 
    Get-CsDialPlan -Identity "Service:CUCMVIS1.CUCMInterop.contoso.com"

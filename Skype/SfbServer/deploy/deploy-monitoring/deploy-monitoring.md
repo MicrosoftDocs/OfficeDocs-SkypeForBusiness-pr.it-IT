@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 244df419-d0a8-4b1d-aedd-a92114172ab6
 description: 'Riepilogo: informazioni su come distribuire il monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: 1eedcaaa30ecf464a5238e274e14de6770858290
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 7f3bd96b814b45b625612aae9b56a706dfff470f
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239952"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001147"
 ---
 # <a name="deploy-monitoring-in-skype-for-business-server"></a>Distribuire il monitoraggio in Skype for Business Server
 
@@ -67,7 +67,7 @@ Per istruzioni dettagliate sull'associazione di server front-end o pool Front-en
 
 Per avviare la raccolta dei dati, è necessario abilitare il monitoraggio CDR e/o QoE. (Si noti che non è necessario abilitare il monitoraggio CDR e QoE, se si preferisce, è possibile abilitare un tipo di monitoraggio lasciando l'altro tipo disabilitato). Per abilitare il monitoraggio CDR nell'ambito globale, eseguire il comando seguente dall'interno di Skype for Business Server Management Shell:
 
-```
+```powershell
 Set-CsCdrConfiguration -Identity "global" -EnableCDR $True
 ```
 
@@ -81,7 +81,7 @@ In alternativa, puoi abilitare il monitoraggio CDR dall'interno del pannello di 
 
 Per abilitare il monitoraggio QoE nell'ambito globale, eseguire questo comando dall'interno di Skype for Business Server Management Shell:
 
-```
+```powershell
 Set-CsQoEConfiguration -Identity "global" -EnableQoE $True
 ```
 

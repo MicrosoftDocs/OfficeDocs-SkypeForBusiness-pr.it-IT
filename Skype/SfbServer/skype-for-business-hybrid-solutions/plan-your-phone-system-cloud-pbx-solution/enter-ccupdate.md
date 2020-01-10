@@ -1,5 +1,5 @@
 ---
-title: Invio-CcUpdate
+title: Enter-CcUpdate
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -11,18 +11,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 330367f2-22b0-43e3-b8fb-3e0d2e3b330e
 description: Il cmdlet Enter-CcUpdate prepara il server host di Skype for Business Cloud Connector Edition per il processo di aggiornamento inserendolo in modalità di manutenzione. L'appliance arresta immediatamente tutti i servizi, terminando qualsiasi chiamata in corso e rifiutando le nuove chiamate.
-ms.openlocfilehash: 3ff4c1543e3e882a7ccbaf0b9a216ce902a77c5f
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.openlocfilehash: 694faf7f03fb672ec61ee97db08fb61bcf0dc532
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "36195878"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003456"
 ---
-# <a name="enter-ccupdate"></a>Invio-CcUpdate
+# <a name="enter-ccupdate"></a>Enter-CcUpdate
 
 Il cmdlet Enter-CcUpdate prepara il server host di Skype for Business Cloud Connector Edition per il processo di aggiornamento inserendolo in modalità di manutenzione. L'appliance arresta immediatamente tutti i servizi, terminando qualsiasi chiamata in corso e rifiutando le nuove chiamate.
   
-```
+```powershell
 Enter-CcUpdate
 ```
 
@@ -37,7 +37,7 @@ Nessuno
 
 L'esempio seguente prepara l'appliance per il processo di aggiornamento immettendo la modalità di manutenzione:
   
-```
+```powershell
 Enter-CcUpdate 
 ```
 

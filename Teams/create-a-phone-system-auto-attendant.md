@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: 2cd468b3a4f151d6ad19d2ad430bb94045fb808f
-ms.sourcegitcommit: 89106cfda0d900d8be541943b7d1537bc69ed57f
+ms.openlocfilehash: 5a018b6c3b193d17bfbabdc5178c095a635e65ea
+ms.sourcegitcommit: 2fab6105dfc4c225de8c09ab79d9c2c273a3e4f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2019
-ms.locfileid: "40070237"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41005184"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -162,6 +162,11 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
   > La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server.
 
   - **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato al servizio.
+  - **Segreteria telefonica** Selezionare il gruppo Office 365 che rappresenta gli utenti dell'organizzazione che hanno bisogno di accedere alla segreteria telefonica. Questo è il punto in cui è possibile attivare la trascrizione della segreteria telefonica. Richiede un gruppo di Office 365.
+
+  > [!NOTE]
+> I messaggi vocali inviati agli utenti dall'account della segreteria telefonica automatica non sono accessibili in teams. Verrà visualizzato come messaggio di posta elettronica.
+
 
 <!-- - **Auto attendant** Select the name of an existing auto attendant.
 - **Call queue** Select the name of an auto attendant that has already been created.
@@ -207,7 +212,9 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 - **Operatore** Se un operatore è già configurato, l'opzione viene automaticamente mappata alla chiave 0, ma può anche essere eliminata o riassegnata a una chiave diversa. Il chiamante che seleziona questa opzione viene inviato all'operatore designato. Se operator non è impostato su un tasto qualsiasi, anche il comando vocale "operator" è disabilitato. 
 - La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server. L'utente deve avere una licenza per il sistema telefonico abilitata per i piani VoIP aziendale o per le chiamate assegnate in Office 365. Cercare la persona nel campo **Cerca in base al nome** .
 
-  - **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato all'applicazione.
+- **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato all'applicazione.
+
+- **Segreteria telefonica** Selezionare il gruppo Office 365 che rappresenta gli utenti dell'organizzazione che hanno bisogno di accedere alla segreteria telefonica. Questo è il punto in cui è possibile attivare la trascrizione della segreteria telefonica. Richiede un gruppo di Office 365.
 
 <!-- - **Auto attendant** Select the name of an existing auto attendant in the **Search by name** field. You will also have to select a resource account associated to the auto attendant. The caller who selects this option is sent to that auto attendant.
 - **Call queue** Select the name of an existing call queue in the **Search by name** field. You will also have to select a resource account associated to the call queue. The caller who selects this option is sent to that call queue, where the call is answered by a call agent.

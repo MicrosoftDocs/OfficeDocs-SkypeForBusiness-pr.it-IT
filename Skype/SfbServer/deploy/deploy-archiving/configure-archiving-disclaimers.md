@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 394ac291-05cd-4fa1-acb3-714af538b47f
 description: "Riepilogo: leggere questo argomento per informazioni su come configurare una dichiarazione di non responsabilità per l'archiviazione per Skype for Business Server."
-ms.openlocfilehash: 5901429918d4cf346cbbf9f1fdad6ff4736817ea
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: d6c08b6fe2eaa6c74231b96346661488c3f8e2b0
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234568"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001056"
 ---
 # <a name="configure-archiving-disclaimers-for-external-users-in-skype-for-business-server"></a>Configurare le esclusioni di archiviazione per utenti esterni in Skype for Business Server
  
@@ -37,7 +37,7 @@ Per consentire agli utenti esterni di collaborare con gli utenti nella distribuz
     
 4. Nella scheda **configurazione di Access Edge** fare clic su **globale**, fare clic su **modifica**e quindi su **Mostra dettagli**.
     
-5. In **modifica configurazione di Access Edge**selezionare o deselezionare la casella di controllo **Invia dichiarazione di non responsabilità per i partner federati** in Abilitazione o disabilitazione dell'archiviazione automatica per abilitare o disabilitare la **connettività di messaggistica istantanea pubblica** Disclaimer.
+5. In **modifica configurazione di Access Edge**selezionare o deselezionare la casella di controllo **Invia dichiarazione di non responsabilità per i partner federati** in **Abilita**o Disabilita l'invio automatico della dichiarazione di non responsabilità per l'archiviazione.
     
 6. Fare clic su **Commit**.
     
@@ -45,13 +45,13 @@ Per consentire agli utenti esterni di collaborare con gli utenti nella distribuz
 
 Per abilitare la dichiarazione di non responsabilità per l'archiviazione, imposta il valore della proprietà **EnableArchivingDisclaimer** su True ($true):
   
-```
+```powershell
 Set-CsAccessEdgeConfiguration -EnableArchivingDisclaimer $True
 ```
 
 Per disabilitare la dichiarazione di non responsabilità per l'archiviazione, imposta il valore della proprietà **EnableArchivingDisclaimer** su False ($false):
   
-```
+```powershell
 Set-CsAccessEdgeConfiguration -EnableArchivingDisclaimer $False
 ```
 

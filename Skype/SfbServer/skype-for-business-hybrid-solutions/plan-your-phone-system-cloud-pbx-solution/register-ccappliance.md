@@ -1,5 +1,5 @@
 ---
-title: Registro-CcAppliance
+title: Register-CcAppliance
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -11,18 +11,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 01eed3c5-af68-4db7-90b3-d28ebe7ffef1
 description: Il cmdlet Register-CcAppliance registra le informazioni sugli apparecchi in un sito PSTN in una configurazione tenant online. Un elettrodomestico deve essere registrato prima che possa essere distribuito e gestito dal servizio di gestione di Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: 9e15d7b8227bf9ee657d197041056703505ca7c8
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 93f1fe59a199214615c5ecdf8445f6c363ce6bbe
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190703"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003306"
 ---
-# <a name="register-ccappliance"></a>Registro-CcAppliance
+# <a name="register-ccappliance"></a>Register-CcAppliance
  
 Il cmdlet Register-CcAppliance registra le informazioni sugli apparecchi in un sito PSTN in una configurazione tenant online. Un elettrodomestico deve essere registrato prima che possa essere distribuito e gestito dal servizio di gestione di Skype for Business Cloud Connector Edition.
   
-```
+```powershell
 Register-CcAppliance [[-SiteName] <string>] [[-ApplianceName] <string>] [-Local]
 ```
 
@@ -33,7 +33,7 @@ Register-CcAppliance [[-SiteName] <string>] [[-ApplianceName] <string>] [-Local]
 
 L'esempio seguente registra le informazioni sull'appliance corrente in una configurazione del tenant online:
   
-```
+```powershell
 Register-CcAppliance
 ```
 
@@ -41,7 +41,7 @@ Register-CcAppliance
 
 L'esempio seguente controlla la configurazione per la registrazione localmente senza connettersi a una configurazione del tenant online:
   
-```
+```powershell
 Register-CcAppliance -Local
 ```
 
@@ -49,7 +49,7 @@ Register-CcAppliance -Local
 
 L'esempio seguente registra l'appliance corrente con il nome "Appliance1" al sito PSTN "Microsoft1":
   
-```
+```powershell
 Register-CcAppliance -SiteName Site1 -ApplianceName Appliance1
 ```
 
@@ -104,12 +104,12 @@ Nessuno
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>
 
-[Annullamento della registrazione-CcAppliance](unregister-ccappliance.md)
+[Unregister-CcAppliance](unregister-ccappliance.md)
   
 [Publish-CcAppliance](publish-ccappliance.md)
   
 [Install-CcAppliance](install-ccappliance.md)
   
-[Disinstallare-CcAppliance](uninstall-ccappliance.md)
+[Uninstall-CcAppliance](uninstall-ccappliance.md)
   
 

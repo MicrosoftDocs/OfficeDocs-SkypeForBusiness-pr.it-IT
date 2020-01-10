@@ -13,18 +13,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 63c7251c-080a-4175-99a6-f86d0266d6bc
 description: "Riepilogo: informazioni su come distribuire Edge Server nell'ambiente di Skype for Business Server."
-ms.openlocfilehash: 70355f6f00e8f38a13d74afd2d13c62a345fa063
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: e912e4c0b75781805a0e691bc81794119f62fe9c
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234104"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001446"
 ---
 # <a name="deploy-edge-servers-in-skype-for-business-server"></a>Distribuire Edge Server in Skype for Business Server
  
 **Riepilogo:** Informazioni su come distribuire Edge Server nell'ambiente di Skype for Business Server.
   
-Le sezioni seguenti contengono passaggi che devono essere seguiti dopo che il piano Skype for Business Server per le distribuzioni di [Edge Server nella documentazione di Skype for Business Server](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md) è stato esaminato. I passaggi di distribuzione sono i seguenti:
+Le sezioni seguenti contengono passaggi che devono essere seguiti dopo che il piano Skype for Business Server [per le distribuzioni di Edge Server nella documentazione di Skype for Business Server](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md) è stato esaminato. I passaggi di distribuzione sono i seguenti:
   
 - Interfacce di rete
     
@@ -119,13 +119,13 @@ I requisiti di certificato per il server perimetrale sono disponibili nella docu
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Aprire **Start**ed **eseguire** (o **cercare** ed **eseguire** ), quindi digitare quanto segue:
     
-  ```
+  ```console
   https://<NAME OF YOUR ISSUING CA SERVER>/certsrv
   ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Per esempio:
     
-  ```
+  ```console
   https://ca01/contoso.com/certsrv
   ```
 
@@ -197,11 +197,11 @@ I requisiti di certificato per il server perimetrale sono disponibili nella docu
     
 &nbsp;&nbsp;&nbsp;f. Nella pagina impostazioni di sicurezza e nome eseguire le operazioni seguenti:
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ho. In **nome**descrittivo immettere un nome visualizzato per il certificato, ad esempio bordo interno.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ho. In **nome descrittivo**immettere un nome visualizzato per il certificato, ad esempio bordo interno.
     
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. In **bit length**scegliere la lunghezza del bit (il valore predefinito è 2048, si può andare più in alto e renderlo più sicuro, ma il rallentamento delle prestazioni).
     
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Se è necessario un certificato esportabile, è necessario selezionare la casella **di controllo contrassegna la chiave privata del certificato come** esportabile.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Se è necessario un certificato esportabile, è necessario selezionare la casella **di controllo contrassegna la chiave privata del certificato come esportabile** .
     
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Fare clic su **Avanti**.
     
@@ -290,7 +290,7 @@ I requisiti di certificato per il server perimetrale sono disponibili nella docu
     
 &nbsp;&nbsp;&nbsp;f. Nella pagina Completamento procedura guidata fare clic su **fine**.
     
-&nbsp;&nbsp;&nbsp;g. Dopo aver completato questa procedura, è una buona idea aprire lo snap-in MMC certificati in ogni Edge Server, espandere i **certificati (computer locale)**, espandere **personale**, fare clic su **certificati**e verificare che il bordo interno il certificato è elencato nel riquadro dei dettagli.
+&nbsp;&nbsp;&nbsp;g. Dopo aver completato questa procedura, è una buona idea aprire lo snap-in MMC certificati in ogni Edge Server, espandere **certificati (computer locale)**, espandere **personale**, fare clic su **certificati**e verificare che il certificato del bordo interno sia elencato nel riquadro dei dettagli.
     
 ### <a name="external-edge-interface-certificates"></a>Certificati di interfaccia esterni per i bordi
 
@@ -311,11 +311,11 @@ I requisiti di certificato per il server perimetrale sono disponibili nella docu
     
 &nbsp;&nbsp;&nbsp;g. Nella pagina impostazioni di sicurezza e nome eseguire le operazioni seguenti:
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ho. In **nome**descrittivo immettere un nome visualizzato per il certificato, ad esempio bordo esterno.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ho. In **nome descrittivo**immettere un nome visualizzato per il certificato, ad esempio bordo esterno.
     
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. In **bit length**scegliere la lunghezza del bit (il valore predefinito è 2048, si può andare più in alto e renderlo più sicuro, ma il rallentamento delle prestazioni).
     
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Se è necessario un certificato esportabile, è necessario selezionare la casella **di controllo contrassegna la chiave privata del certificato come** esportabile.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Se è necessario un certificato esportabile, è necessario selezionare la casella **di controllo contrassegna la chiave privata del certificato come esportabile** .
     
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Fare clic su **Avanti**.
     
@@ -423,7 +423,7 @@ I requisiti di certificato per il server perimetrale sono disponibili nella docu
     
 &nbsp;&nbsp;&nbsp;f. Nella pagina Completamento procedura guidata fare clic su **fine**.
     
-&nbsp;&nbsp;&nbsp;g. Dopo aver completato questa procedura, è una buona idea aprire lo snap-in MMC certificati in ogni server, espandere **certificati (computer locale)**, espandere **personale**, fare clic su **certificati**e verificare che il bordo interno il certificato è elencato nel riquadro dei dettagli.
+&nbsp;&nbsp;&nbsp;g. Dopo aver completato questa procedura, è una buona idea aprire lo snap-in MMC certificati in ogni server, espandere **certificati (computer locale)**, espandere **personale**, fare clic su **certificati**e verificare che il certificato del bordo interno sia elencato nel riquadro dei dettagli.
     
    > [!NOTE]
    > Sarà inoltre necessario configurare i certificati per il server proxy inverso. 

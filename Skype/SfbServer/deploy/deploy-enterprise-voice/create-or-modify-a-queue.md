@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: b9d6366a-839f-4651-a01d-9254546cadeb
 description: Creare o modificare una coda di Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: b58ec9065eea1cc2dd8686b07ea798ac71c460fa
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 9027c239c92c7c04b9de8b5579d7ebb73069b1a3
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233676"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001706"
 ---
 # <a name="create-or-modify-a-queue-in-skype-for-business"></a>Creare o modificare una coda in Skype for business
  
@@ -69,9 +69,9 @@ Usare una delle procedure seguenti per creare o modificare una coda.
     
    - Per disconnettere la chiamata dopo il timeout, fare clic su **Disconnetti**.
     
-   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **inoltra alla**segreteria telefonica e quindi, nel campo **indirizzo SIP** , digitare un indirizzo di segreteria telefonica nel formato SIP: * \<\>nomeutente*@ *\<NomeDominio\> * (per esempio, sip:bob@contoso.com).
+   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **inoltra alla**segreteria telefonica e quindi, nel campo **indirizzo SIP** , digitare un indirizzo di segreteria telefonica nel formato SIP: * \<\>nomeutente*@ *\<NomeDominio\> * (ad esempio, SIP:bob@contoso.com).
     
-   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **inoltra al numero**di telefono e quindi nel campo **indirizzo SIP** digitare il numero di telefono nel formato SIP: * \<\>Number*@ *\<NomeDominio\>* (ad esempio, SIP:+14255550121@contoso.com).
+   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **inoltra al numero**di telefono e quindi, nel campo **indirizzo SIP** , digitare il numero di telefono nel formato SIP: * \<\>Number*@ *\<\> NomeDominio* (ad esempio, SIP:+14255550121@contoso.com).
     
    - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra all'indirizzo SIP**e quindi, nel campo **indirizzo SIP** , digitare l'URI per l'utente nel formato SIP: _ \<\>nomeutente_@ _\<NomeDominio\>_.
     
@@ -87,9 +87,9 @@ Usare una delle procedure seguenti per creare o modificare una coda.
     
    - Per disconnettere la chiamata dopo il timeout, fare clic su **Disconnetti**.
     
-   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **inoltra alla**segreteria telefonica e quindi, nel campo **indirizzo SIP** , digitare un indirizzo di segreteria telefonica nel formato SIP: * \<\>nomeutente*@ *\<NomeDominio\> * (per esempio, sip:bob@contoso.com).
+   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **inoltra alla**segreteria telefonica e quindi, nel campo **indirizzo SIP** , digitare un indirizzo di segreteria telefonica nel formato SIP: * \<\>nomeutente*@ *\<NomeDominio\> * (ad esempio, SIP:bob@contoso.com).
     
-   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **inoltra al numero**di telefono e quindi nel campo **indirizzo SIP** digitare il numero di telefono nel formato SIP: * \<\>Number*@ *\<NomeDominio\>* (ad esempio, SIP:+14255550121@contoso.com).
+   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **inoltra al numero**di telefono e quindi, nel campo **indirizzo SIP** , digitare il numero di telefono nel formato SIP: * \<\>Number*@ *\<\> NomeDominio* (ad esempio, SIP:+14255550121@contoso.com).
     
    - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra all'indirizzo SIP**e quindi, nel campo **indirizzo SIP** , digitare l'URI per l'utente nel formato SIP: _ \<\>nomeutente_@ _\<NomeDominio\>_.
     
@@ -108,13 +108,13 @@ Usare una delle procedure seguenti per creare o modificare una coda.
     
 3. Creare il prompt da riprodurre quando viene soddisfatta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    $promptTO = New-CsRgsPrompt -TextToSpeechPrompt "<text for TTS prompt>"
    ```
 
    Ad esempio:
     
-   ```
+   ```console
    "All agents are currently busy. Please call back later."
    ```
 
@@ -123,7 +123,7 @@ Usare una delle procedure seguenti per creare o modificare una coda.
   
 4. Definire l'azione da intraprendere quando viene soddisfatta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    $actionTO = New-CsRgsCallAction -Prompt <saved prompt from previous step> -Action <action to be taken>
    ```
 
@@ -132,19 +132,19 @@ Usare una delle procedure seguenti per creare o modificare una coda.
   
     Ad esempio:
     
-   ```
+   ```powershell
    $action = New-CsRgsCallAction -Prompt $promptTO -Action Terminate
    ```
 
 5. Creare il prompt da riprodurre quando viene soddisfatta la soglia di overflow della coda e salvarla in una variabile. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    $promptOV = New-CsRgsPrompt -TextToSpeechPrompt "<text for TTS prompt>"
    ```
 
    Ad esempio:
     
-   ```
+   ```powershell
    $promptOV = New-CsRgsPrompt -TextToSpeechPrompt "Too many calls are waiting. Please call back later."
    ```
 
@@ -153,7 +153,7 @@ Usare una delle procedure seguenti per creare o modificare una coda.
   
 6. Definire l'azione da intraprendere quando viene soddisfatta la soglia di overflow della coda e salvarla in una variabile. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    $actionOV = New-CsRgsCallAction -Prompt <saved prompt from previous step> -Action <action to be taken>
    ```
 
@@ -162,19 +162,19 @@ Usare una delle procedure seguenti per creare o modificare una coda.
   
     Ad esempio:
     
-   ```
+   ```powershell
    $action = New-CsRgsCallAction -Prompt $promptOV -Action Terminate
    ```
 
 7. Recuperare il nome del servizio per il servizio Response Group e assegnarlo a una variabile. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    $serviceId="service:"+(Get-CSService | ?{$_.Applications -Like "*RGS*"}).ServiceId;
    ```
 
 8. Ottenere l'identità del gruppo di agenti da assegnare alla coda. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    $agid = (Get-CsRgsAgentGroup -Name "Help Desk").Identity;
    ```
 
@@ -183,19 +183,19 @@ Usare una delle procedure seguenti per creare o modificare una coda.
   
 9. Creare la coda. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    $q = New-CsRgsQueue -Parent <saved service ID from previous step> -Name "<name of queue>" [-Description "<description for queue>"] [-TimeoutThreshold <# seconds before call times out>] [-TimeoutAction <saved timeout action>] [-OverflowThreshold <# calls queue can hold>] [-OverflowCandidate <call to be acted on when overflow threshold met>] [-OverflowAction <saved overflow action>] [-AgentGroupIDList(<agent group identity>)];
    ```
 
    Ad esempio:
     
-   ```
+   ```powershell
    $q = New-CsRgsQueue -Parent $serviceId -Name "Help Desk" -Description "Contoso Help Desk" -TimeoutThreshold 300 -TimeoutAction $actionTO -OverflowThreshold 10 -OverflowCandidate NewestCall -OverflowAction $actionOV -AgentGroupIDList($agid.Identity;
    ```
 
 10. Verificare che la coda sia stata creata. Eseguire
     
-    ```
+    ```powershell
     Get-CsRgsQueue -Name "Help Desk"
     ```
 

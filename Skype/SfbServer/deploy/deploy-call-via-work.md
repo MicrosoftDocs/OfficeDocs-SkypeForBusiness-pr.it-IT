@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4802d733-14ef-4509-92b9-07173614e45f
 description: 'Riepilogo: informazioni su come distribuire la chiamata tramite il lavoro in Skype for Business Server per alcuni o tutti gli utenti.'
-ms.openlocfilehash: d1c55e44cae944664a51eaddb2ad54e758d4f52c
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: d989c05b6b2b3e01a3a96e66133ec314029329e1
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234522"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002706"
 ---
 # <a name="deploy-call-via-work-in-skype-for-business-server"></a>Distribuire una chiamata tramite il lavoro in Skype for Business Server
  
@@ -58,13 +58,13 @@ Dopo aver effettuato i prerequisiti, eseguire le operazioni seguenti:
 
 - Digitare il cmdlet seguente
     
-  ```
+  ```powershell
   Set-CsRoutingConfiguration -CallViaWorkCallerId +<PhoneNumber>
   ```
 
     Ad esempio, il cmdlet seguente imposta il numero di telefono globale su 1-555-123-4567.
     
-  ```
+  ```powershell
   Set-CsRoutingConfiguration -CallViaWorkCallerId +15551234567
   ```
 
@@ -72,13 +72,13 @@ Dopo aver effettuato i prerequisiti, eseguire le operazioni seguenti:
 
 - Digitare il cmdlet seguente
     
-  ```
+  ```powershell
   New-CsCallViaWorkPolicy [-Identity] <XdsIdentity> [-Tenant <guid>] [-Enabled <bool>] [-UseAdminCallbackNumber  <bool>] [-AdminCallbackNumber <string>] [-InMemory] [-Force] [-WhatIf] [-Confirm]  [<CommonParameters>]
   ```
 
     Ad esempio, il cmdlet seguente crea una chiamata tramite il criterio di lavoro denominato ContosoUser1CvWP, richiede all'utente di usare un numero di callback di amministratore e imposta il numero di callback su 1-555-789-1234.
     
-  ```
+  ```powershell
   New-CsCallViaWorkPolicy -Identity Tag:ContosoUser1CvWP -Enabled $true -UseAdminCallbackNumber $true -AdminCallbackNumber +15557891234
   ```
 
@@ -86,13 +86,13 @@ Dopo aver effettuato i prerequisiti, eseguire le operazioni seguenti:
 
 - Digitare il cmdlet seguente
     
-  ```
+  ```powershell
   Grant-CsCallViaWorkPolicy -Identity <UserName> -PolicyName Tag:<PolicyName>
   ```
 
     Ad esempio, il cmdlet seguente assegna la chiamata tramite il criterio di lavoro "ContosoUser1CvWP" all'utente denominato **ContosoUser1**.
     
-  ```
+  ```powershell
   Grant-CsCallViaWorkPolicy -Identity ContosoUser1 -PolicyName Tag:ContosoUser1CvWP
   ```
 

@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f1461fff-51c1-4f4b-9311-8cba02c333fc
 description: Creare o modificare un gruppo di agenti in Response Group, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 09a49acfe1fe86ffa3c1bce3d6ed889c8666a7bc
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: a919c1a25f3f4aa5a2d8648d782ea329f1e70d60
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233579"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001686"
 ---
 # <a name="create-or-modify-an-agent-group-in-skype-for-business"></a>Creare o modificare un gruppo di agenti in Skype for business
  
@@ -72,7 +72,7 @@ Per creare o modificare un gruppo di agenti, usare una delle procedure seguenti.
   
 9. In **metodo di routing**selezionare il metodo per il routing delle chiamate agli agenti nel gruppo, come indicato di seguito:
     
-   - Per offrire una nuova chiamata prima all'agente che è stato inattivo il più lungo (ha avuto una presenza di **disponibile** o **inattivo** in Skype for business il più lungo), fare clic su inattivo più **lungo**. 
+   - Per offrire una nuova chiamata prima all'agente che è stato inattivo il più lungo (ha avuto una presenza di **disponibile** o **inattivo** in Skype for business il più lungo), fare clic su **inattivo più lungo**. 
     
    - Per offrire una nuova chiamata a tutti gli agenti disponibili simultaneamente, fare clic su **parallelo**. La chiamata verrà inviata al primo agente che la accetta.
     
@@ -92,7 +92,7 @@ Per creare o modificare un gruppo di agenti, usare una delle procedure seguenti.
     
     - Per modificare l'ordine in cui gli agenti vengono offerti chiamate in gruppi che usano il routing o l'instradamento seriale di Round Robin, nell'elenco di agenti fare clic su un utente e quindi fare clic sulla freccia su o freccia giù. 
     
-    - Per usare una lista di distribuzione di Microsoft Exchange Server come gruppo di agenti, fare clic su **Usa una lista di distribuzione di posta elettronica esistente**e quindi, nell' **indirizzo della lista di distribuzione**, digitare l'indirizzo di posta elettronica della lista di distribuzione, ad esempio NetworkSupport@contoso.com).
+    - Per usare una lista di distribuzione di Microsoft Exchange Server come gruppo di agenti, fare clic su **Usa una lista di distribuzione di posta elettronica esistente**e quindi, nell' **indirizzo della lista di distribuzione**, digitare l'indirizzo di posta elettronica della lista di distribuzione, ad esempio NetworkSupport@contoso.com.
     
       Se si usa una lista di distribuzione di posta elettronica, si è soggetti ai vincoli seguenti:
     
@@ -123,13 +123,13 @@ Per creare o modificare un gruppo di agenti, usare una delle procedure seguenti.
     
 3. USA **New-CsRgsAgentGroup** per creare un nuovo gruppo di agenti. Usare **Set-CsRgsAgentGroup** per modificare un gruppo di agenti esistente. Nella riga di comando eseguire:
     
-   ```
+   ```powershell
    New-CsRgsAgentGroup -Name "<agent group name>" -Parent $serviceId [-Description "<agent group description>"] -[AgentAlertTime <# seconds until call is routed to next agent>] [-ParticipationPolicy <Formal | Informal>] [-RoutingMethod <method for routing calls>] [-AgentsByUri("<first agent's SIP address>","<second agent's SIP address>")];
    ```
 
     Ad esempio:
     
-   ```
+   ```powershell
    New-CsRgsAgentGroup -Name "Help Desk" -Parent "service:ApplicationServer:atl-cs-001.contoso.com"  -Description "Contoso Help Desk" -AgentAlertTime 20 -ParticipationPolicy Formal -RoutingMethod RoundRobin -AgentsByUri("sip:mindy@contoso.com","sip:bob@contoso.com")
    ```
 
@@ -138,7 +138,7 @@ Per creare o modificare un gruppo di agenti, usare una delle procedure seguenti.
   
 4. Verificare che il gruppo di agenti sia stato creato. Eseguire
     
-   ```
+   ```powershell
    Get-CsRgsAgentGroup -Name "Help Desk"
    ```
 

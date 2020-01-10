@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b6301e98-051c-4e4b-8e10-ec922a8f508a
 description: "Riepilogo: distribuire l'app Skype for Business Web App e le riunioni Skype usate con Skype for business."
-ms.openlocfilehash: 273ffca9ae91973fe9e3953efc914364de382ed4
-ms.sourcegitcommit: 8a20cb7bd1d23e2cf2987f55039748bad60f501b
+ms.openlocfilehash: eb939ddf394ff62b9173939622a8ef3f20faaca9
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "36972877"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003526"
 ---
 # <a name="deploy-web-downloadable-clients-in-skype-for-business-server"></a>Distribuire client scaricabili Web in Skype for Business Server
 
@@ -52,19 +52,19 @@ Skype for Business Web App, app riunioni Skype e Skype for business per Mac supp
 
 3. Dall'interfaccia della riga di comando di Windows PowerShell eseguire il comando seguente:
 
-    ```
+    ```powershell
     add-pssnapin Microsoft.Adfs.powershell
     ```
 
 4. Creare una partnership eseguendo il comando seguente:
 
-    ```
+    ```powershell
     Add-ADFSRelyingPartyTrust -Name ContosoApp -MetadataURL https://lyncpool.contoso.com/passiveauth/federationmetadata/2007-06/federationmetadata.xml
     ```
 
 5. Impostare le regole del componente seguenti:
 
-    ```
+    ```powershell
    $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.contoso.com/authorization/claims/permit", Value = "true");'$IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.contoso.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
    Set-ADFSRelyingPartyTrust -TargetName ContosoApp -IssuanceAuthorizationRules $IssuanceAuthorizationRules -IssuanceTransformRules $IssuanceTransformRules
    Set-CsWebServiceConfiguration -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
@@ -108,7 +108,7 @@ Se l'installazione del plug-in non riesce in un computer che esegue Windows Serv
 
 2. Per accedere all'editor del registro di sistema, digitare **Regedit**.
 
-3. Passare a HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer.
+3. Passare a HKEY_LOCAL_MACHINE \Software\Policies\Microsoft\Windows\Installer.
 
 4. Modificare o aggiungere la chiave del registro di sistema DisableMSI di tipo REG_DWORD e impostarla su 0.
 
@@ -123,13 +123,13 @@ Questa procedura è facoltativa e si applica a Skype for Business Server 2015 CU
 
 1. Quando si Abilita l'accesso alla rete di distribuzione di contenuti (CDN), gli utenti avranno la possibilità di connettersi a CDN online e ottenere l'app riunioni Skype (in Windows) e Skype for business per Mac (su Mac) e utilizzeranno l'esperienza di partecipazione alla riunione semplificata.
 
-   ```
+   ```powershell
    Set-CsWebServiceConfiguration -MeetingUxUseCdn $True
    ```
 
 2. Consenti la telemetria di registrazione lato client dalla pagina Web di riunione o l'app riunioni Skype da inviare ai server Microsoft (il comando viene impostato su false).
 
-   ```
+   ```powershell
    Set-CsWebServiceConfiguration -MeetingUxEnableTelemetry $True
    ```
 
@@ -137,7 +137,7 @@ Questa procedura è facoltativa e si applica a Skype for Business Server 2015 CU
 
 3. Imposta il timeout prima di rientrare nell'esperienza di Skype for business web app ospitata localmente se la rete CDN non è disponibile. Il valore predefinito è 6 secondi. Se questo valore è impostato su 0, non ci sarà alcun timeout.
 
-   ```
+   ```powershell
    Set-CsWebServiceConfiguration -JoinLauncherCdnTimeout (New-TimeSpan -Seconds 10)
    ```
 

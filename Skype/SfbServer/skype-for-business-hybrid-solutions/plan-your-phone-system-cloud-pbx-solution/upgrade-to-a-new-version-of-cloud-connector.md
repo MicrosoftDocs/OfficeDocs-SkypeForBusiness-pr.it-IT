@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: efbe25f2-faf5-41c7-8c95-dbc4a835a4a8
 description: Informazioni su come aggiornare la distribuzione di Cloud Connector Edition.
-ms.openlocfilehash: c2613069f1626f8fc7e28b4fb5a246fc7647cf98
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c340b7325c95d25212c9c1f77f9379a25708cea8
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190571"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002046"
 ---
 # <a name="upgrade-to-a-new-version-of-cloud-connector"></a>Eseguire l'aggiornamento a una nuova versione di Cloud Connector
  
@@ -77,25 +77,25 @@ Se nel sito si vuole aggiornare un solo dispositivo, eseguire le operazioni segu
     
 4. Avviare una console di PowerShell come amministratore ed eseguire il cmdlet seguente per registrare l'accessorio corrente:
     
-   ```
+   ```powershell
    Register-CcAppliance
    ```
 
 5. Eseguire il cmdlet seguente per scaricare la versione più recente:
     
-   ```
+   ```powershell
    Start-CcDownload
    ```
 
 6. Eseguire il cmdlet seguente per avviare l'installazione: 
     
-   ```
+   ```powershell
    Install-CcAppliance -Upgrade
    ```
 
 7. Eseguire il cmdlet seguente per attivare la nuova distribuzione e disattivare la versione precedente:
     
-   ```
+   ```powershell
    Switch-CcVersion
    ```
 
@@ -103,7 +103,7 @@ Se nel sito sono presenti più dispositivi, seguire la procedura descritta in pr
   
 Se si vuole aggiornare l'amministratore di dominio, l'amministratore della macchina virtuale, l'amministratore della modalità provvisoria e le credenziali di amministratore del tenant, è possibile eseguire il cmdlet con il parametro _UpdateAllCredentials_ per reimpostare tutte le credenziali:
   
-```
+```powershell
 Install-CcAppliance -UpdateAllCredentials
 ```
 
@@ -111,13 +111,13 @@ Quando si inizia a eseguire l'aggiornamento a una nuova versione, verrà promoss
   
 Se si vuole reimpostare solo le credenziali di amministratore del tenant, eseguire il cmdlet seguente:
   
-```
+```powershell
 Set-CcCredential -AccountType TenantAdmin
 ```
 
 ## <a name="upgrade-multiple-sites-to-a-new-version"></a>Aggiornare più siti a una nuova versione
 <a name="BKMK_Upgrade"> </a>
 
-Seguire la procedura per l'aggiornamento di un singolo sito, l'aggiornamento di un sito alla volta per ogni sito della distribuzione. Verificare e convalidare [la distribuzione di Cloud Connector](validate-your-cloud-connector-deployment.md) dopo l'aggiornamento di ogni sito.
+Seguire la procedura per l'aggiornamento di un singolo sito, l'aggiornamento di un sito alla volta per ogni sito della distribuzione. Verificare e [convalidare la distribuzione di Cloud Connector](validate-your-cloud-connector-deployment.md) dopo l'aggiornamento di ogni sito.
   
 

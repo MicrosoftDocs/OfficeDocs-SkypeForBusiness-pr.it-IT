@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare gli eventi dinamici in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 736d6b8f2000f94806077e8f1739b28be248b136
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 66054194c197d40c10850582e624b543b4561f42
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570180"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001266"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare eventi dinamici in Microsoft Teams
 
@@ -55,7 +55,7 @@ L'utente deve avere:
 - Autorizzazioni per creare eventi dinamici in Stream (per l'app esterna o la produzione di dispositivi).
 
 > [!IMPORTANT]
-> Gli utenti guest, federati e anonimi di Office 365 non possono essere invitati come produttori o relatori in eventi live di teams. Gli utenti di Office 365 e federati possono guardare solo gli eventi Live in modo anonimo. 
+> Gli utenti anonimi non autenticati non possono essere invitati come produttori o relatori in eventi live di teams. 
  
 ## <a name="who-can-watch-live-events"></a>Chi può guardare gli eventi Live?
 
@@ -124,7 +124,7 @@ Puoi usare gli eventi teams Live in più aree geografiche in tutto il mondo. Le 
 Andare alla [configurazione per gli eventi live di teams](set-up-for-teams-live-events.md).
 
 ### <a name="related-topics"></a>Argomenti correlati
-- [Cosa sono gli eventi teams Live?](what-are-teams-live-events.md)
-- [Configurare gli eventi di teams Live](set-up-for-teams-live-events.md)
+- [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)
+- [Configurare gli eventi live di Teams](set-up-for-teams-live-events.md)
 - [Configurare le impostazioni degli eventi dinamici in teams](configure-teams-live-events.md)
 

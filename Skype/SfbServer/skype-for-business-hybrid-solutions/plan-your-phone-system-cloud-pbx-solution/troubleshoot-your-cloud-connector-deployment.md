@@ -1,5 +1,5 @@
 ---
-title: Risolvere i problemi di distribuzione del Cloud Connector
+title: Risolvere i problemi relativi alla distribuzione di Cloud Connector
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -14,14 +14,14 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e6cf58cc-dbd9-4f35-a51a-3e2fea71b5a5
 description: Risolvere i problemi relativi alla distribuzione di Cloud Connector Edition.
-ms.openlocfilehash: 1049ec2f8f3b85c71c7b9203916b79764e9be161
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3edc67d5887c21543e4cbb01a6057a0c657e95e3
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190592"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002076"
 ---
-# <a name="troubleshoot-your-cloud-connector-deployment"></a>Risolvere i problemi di distribuzione del Cloud Connector
+# <a name="troubleshoot-your-cloud-connector-deployment"></a>Risolvere i problemi relativi alla distribuzione di Cloud Connector
  
 Risolvere i problemi relativi alla distribuzione di Cloud Connector Edition.
   
@@ -76,11 +76,11 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
     **Risoluzione:** Questo problema non può essere risolto automaticamente. Le NIC non possono essere aggiunte alle VM mentre sono in esecuzione. Chiudere e rimuovere queste VM in gestione Hyper-v, quindi eseguire i cmdlet seguenti:
     
-  ```
+  ```powershell
   Uninstall-CcAppliance
   ```
 
-  ```
+  ```powershell
   Install-CcAppliance
   ```
 
@@ -111,7 +111,7 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
     Importare manualmente il certificato della CA radice e tutti i certificati intermedi della CA del certificato esterno nell'Edge Server e quindi riavviare il server perimetrale. Dopo aver visualizzato i servizi RTCMRAUTH e RTCSRV avviati nel server perimetrale, tornare al server host, avviare una console di PowerShell come amministratore ed eseguire il cmdlet seguente per passare alla nuova distribuzione:
     
-  ```
+  ```powershell
   Switch-CcVersion
   ```
 
@@ -123,7 +123,7 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
 1. Nel server host avviare una console di PowerShell come amministratore, quindi eseguire:
     
-   ```
+   ```powershell
    Enter-CcUpdate
    ```
 
@@ -131,7 +131,7 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
 3. Nella console di PowerShell eseguire il cmdlet seguente:
     
-   ```
+   ```powershell
    Exit-CcUpdate
    ```
 
@@ -145,19 +145,19 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
     **Risoluzione:** Avviare una sessione remota di PowerShell del tenant usando le credenziali di amministratore del tenant di Skype for business, quindi eseguire il cmdlet seguente per controllare la configurazione di _EnableAutoUpdate_ del sito:
     
-  ```
+  ```powershell
   Get-CsHybridPSTNSite
   ```
 
     Se _EnableAutoUpdate_ è impostato su **true**, è possibile ignorare il messaggio di avviso in modo sicuro perché il servizio CCEManagement gestirà il download e l'installazione degli aggiornamenti di Windows sia per le macchine virtuali che per il server host. Se _EnableAutoUpdate_ è impostato su **false**, eseguire il cmdlet seguente per impostarlo su **true**.
     
-  ```
+  ```powershell
   Set-CsHybridPSTNSite -EnableAutoUpdate $true
   ```
 
     In alternativa, è possibile cercare e installare manualmente gli aggiornamenti. Vedere la sezione successiva.
     
-- **Problema: viene visualizzato un messaggio di errore: non è possibile registrare l'appliance perché l' \<input\> corrente \<o l'\> indirizzo \<di configurazione di\> nomesito o di appliancename o di mediazione server \< \> conflitti con gli appliance o gli apparecchi esistenti. Rimuovere l'appliance di conflitto o aggiornare le informazioni di input/configurazione e quindi registrarsi di nuovo. ' quando Esegui Register-CcAppliance per registrare l'appliance corrente su online.**
+- **Problema: viene visualizzato un messaggio di errore: non è possibile registrare l'appliance perché l' \<input\> corrente \</la\> configurazione \<di nomesito o di Appliancename o FQDN\> di Mediation Server o \<l'indirizzo\> IP di Mediation Server sono in conflitto con gli apparecchi esistenti. Rimuovere l'appliance di conflitto o aggiornare le informazioni di input/configurazione e quindi registrarsi di nuovo. ' quando Esegui Register-CcAppliance per registrare l'appliance corrente su online.**
     
     **Risoluzione:** I valori per \<l'indirizzo\>\> IP \<di appliancename\> , \<FQDN e Mediation Server devono essere univoci e usati solo per una registrazione Appliance. Per impostazione predefinita \<, appliancename\> deriva dal nome host. \<Indirizzo\> IP di\> Mediation Server FQDN e \<Mediation Server definito nel file ini di configurazione.
     
@@ -167,13 +167,13 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
     In secondo luogo, avvia tenant Remote PowerShell usando le credenziali di amministratore del tenant di Skype for business, quindi Esegui il cmdlet seguente per controllare gli apparecchi o gli elettrodomestici registrati.
     
-  ```
+  ```powershell
   Get-CsHybridPSTNAppliance
   ```
 
     Dopo aver identificato qualsiasi conflitto, è possibile aggiornare il file CloudConnector. ini con le informazioni corrispondenti all'accessorio registrato oppure annullare la registrazione dell'appliance esistente per risolvere i conflitti.
     
-  ```
+  ```powershell
   Unregister-CsHybridPSTNAppliance -Force
   ```
 
@@ -205,7 +205,7 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
 1. Eseguire il cmdlet Enter-CcUpdate per scaricare i servizi e inserire l'appliance in modalità di manutenzione.
    
-   ```
+   ```powershell
    Enter-CcUpdate
    ```
    
@@ -213,7 +213,7 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
     Per i rilasci Cloud Connector prima di 2,0:
     
-    ```
+    ```powershell
     Reset-CcCACertificate 
     Renew-CcServerCertificate 
     Remove-CcLegacyServerCertificate 
@@ -221,7 +221,7 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
 
     Oppure per il rilascio di Cloud Connector 2,0 e versioni successive:
     
-    ```
+    ```powershell
     Reset-CcCACertificate 
     Update-CcServerCertificate 
     Remove-CcLegacyServerCertificate 
@@ -229,13 +229,13 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
 3. Se TLS viene usato tra il gateway e il Mediation Server, eseguire il cmdlet Export-CcRootCertificate dall'appliance e quindi installare il certificato esportato nei gateway PSTN. Potrebbe essere anche necessario inviare di nuovo il certificato nel gateway.
 
-   ```
+   ```powershell
    Export-CcRootCertificate
    ```
 
 4. Eseguire il cmdlet Exit-CcUpdate per avviare i servizi e uscire dalla modalità di manutenzione.
 
-   ```
+   ```powershell
    Exit-CcUpdate
    ```
 
@@ -246,13 +246,13 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
 1. Nel primo appliance eseguire il cmdlet Remove-CcCertificationAuthorityFile per pulire i file di backup della CA nella directory \<SiteRoot.\>
 
-     ```
+     ```powershell
      Remove-CcCertificationAuthorityFile
      ```
     
 2. Eseguire il cmdlet Enter-CcUpdate per scaricare i servizi e inserire ogni appliance in modalità di manutenzione.
 
-     ```
+     ```powershell
      Enter-CcUpdate
      ```
     
@@ -260,7 +260,7 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
      Per i rilasci Cloud Connector prima di 2,0:
     
-     ```
+     ```powershell
      Reset-CcCACertificate
      Renew-CcServerCertificate
      Remove-CcLegacyServerCertificate 
@@ -268,7 +268,7 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
 
      Oppure per il rilascio di Cloud Connector 2,0 e versioni successive:
     
-     ```
+     ```powershell
      Reset-CcCACertificate
      Update-CcServerCertificate
      Remove-CcLegacyServerCertificate 
@@ -276,13 +276,13 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
 
 4. Nel primo appliance eseguire il cmdlet seguente per il backup dei file della CA nella cartella \<SiteRoot.\>
     
-     ```
+     ```powershell
      Backup-CcCertificationAuthority
      ```
    
 5. In tutti gli altri dispositivi nello stesso sito eseguire i comandi seguenti per utilizzare i file di backup della CA, in modo che tutti gli apparecchi usino lo stesso certificato radice e quindi richiedere nuovi certificati. 
    
-     ```
+     ```powershell
      Reset-CcCACertificate
      Update-CcServerCertificate
      Remove-CcLegacyServerCertificate 
@@ -290,22 +290,22 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
      
 6. Se TLS viene usato tra il gateway e il Mediation Server, eseguire il cmdlet Export-CcRootCertificate da qualsiasi appliance del sito e quindi installare il certificato esportato nei gateway PSTN. Potrebbe essere anche necessario inviare di nuovo il certificato nel gateway.
   
-     ```
+     ```powershell
      Export-CcRootCertificate
      ```
      
 7. Eseguire il cmdlet Exit-CcUpdate per avviare i servizi e uscire dalla modalità di manutenzione. 
 
-     ```
+     ```powershell
      Exit-CcUpdate
      ```
     
     
-- **Problema: viene visualizzato il messaggio di errore seguente nel log del servizio di gestione di Cloud Connector, "C:\Program Skype for Business Cloud Connector Edition\ManagementService\CceManagementService.log": errore CceService: 0: eccezione imprevista quando stato della segnalazione su online: System. Management. Automation. CmdletInvocationException: accesso non riuscito per \<l'amministratore\>del tenant globale dell'utente. Creare un nuovo oggetto credenziale, assicurandosi di avere usato il nome utente e la password corretti. ---\>**
+- **Problema: viene visualizzato il messaggio di errore seguente nel log del servizio di gestione di Cloud Connector, "C:\Program Skype for Business Cloud Connector Edition\ManagementService\CceManagementService.log": errore CceService: 0: eccezione imprevista quando si segnala lo stato a online: System. Management. Automation. CmdletInvocationException \<: Logon Failed\>per l'amministratore del tenant globale dell'utente. Creare un nuovo oggetto credenziale, assicurandosi di avere usato il nome utente e la password corretti. ---\>**
     
     **Risoluzione:** Le credenziali di amministratore del tenant globale di Office 365 sono state modificate dopo la registrazione dell'appliance Cloud Connector. Per aggiornare le credenziali archiviate localmente nell'appliance Cloud Connector, eseguire le operazioni seguenti da PowerShell amministratore nell'appliance host:
     
-  ```
+  ```powershell
   Set-CcCredential -AccountType TenantAdmin
   ```
 
@@ -379,7 +379,7 @@ Di seguito sono riportate le soluzioni ai problemi comunemente incontrati:
     
   - Per contrassegnare l'accessorio come distribuito correttamente, eseguire il set-CsCceApplianceDeploymentStatus nel modo seguente:
     
-  ```
+  ```powershell
   Set-CsCceApplianceDeploymentStatus -Identity <Appliance Identity GUID> -Action Deploy -Status Finished
   ```
 
@@ -432,7 +432,7 @@ Per verificare manualmente la disponibilità di aggiornamenti, connettersi a ogn
     
 2. Rimuovere l'istanza da HA con il cmdlet seguente:
     
-   ```
+   ```powershell
    Enter-CcUpdate
    ```
 
@@ -442,7 +442,7 @@ Per verificare manualmente la disponibilità di aggiornamenti, connettersi a ogn
     
 4. Impostare di nuovo l'istanza su HA con il cmdlet seguente:
     
-   ```
+   ```powershell
    Exit-CcUpdate
    ```
 

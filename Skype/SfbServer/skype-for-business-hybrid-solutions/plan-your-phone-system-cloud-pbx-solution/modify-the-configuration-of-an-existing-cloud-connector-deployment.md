@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 90490c65-0e40-4e85-96e1-751f27897e25
 description: Seguire i passaggi descritti in questo argomento per modificare la configurazione di un'esistente versione di Skype for Business Cloud Connector 1.4.1 o versione successiva.
-ms.openlocfilehash: 7e46d614a5aaf3c34d9401e2ec53ba72e8adba71
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ead952c0ba567a8e5d81c52144de597e50d24014
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190730"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002286"
 ---
 # <a name="modify-the-configuration-of-an-existing-cloud-connector-deployment"></a>Modificare la configurazione di una distribuzione di Cloud Connector esistente
  
@@ -32,13 +32,13 @@ Se nel sito è presente un solo dispositivo, quando si vogliono modificare le im
   
 1. Eseguire il cmdlet seguente per disinstallare tutte le macchine virtuali esistenti nel server host: 
     
-   ```
+   ```powershell
    Uninstall-CcAppliance
    ```
 
 2. Eseguire il cmdlet seguente per annullare la registrazione dell'appliance:
     
-   ```
+   ```powershell
    Unregister-CcAppliance
    ```
 
@@ -46,19 +46,19 @@ Se nel sito è presente un solo dispositivo, quando si vogliono modificare le im
     
 4. Eseguire il cmdlet seguente per aggiornare la configurazione: (questo passaggio è applicabile solo alla versione 2, per le versioni precedenti, passare al passaggio successivo).
     
-   ```
+   ```powershell
    Import-CcConfiguration 
    ```
 
 5. Eseguire il cmdlet seguente per registrare di nuovo l'accessorio:
     
-   ```
+   ```powershell
    Register-CcAppliance
    ```
 
 6. Eseguire il cmdlet seguente per installare Skype for Business Cloud Connector Edition:
     
-   ```
+   ```powershell
    Install-CcAppliance
    ```
 
@@ -66,13 +66,13 @@ Se nel sito sono presenti più dispositivi, è necessario seguire questi passagg
   
 1. Eseguire il cmdlet seguente per disinstallare tutte le macchine virtuali esistenti nell'appliance corrente: 
     
-   ```
+   ```powershell
    Uninstall-CcAppliance
    ```
 
 2. Eseguire il cmdlet seguente per annullare la registrazione dell'appliance:
     
-   ```
+   ```powershell
    Unregister-CcAppliance
    ```
 
@@ -80,25 +80,25 @@ Se nel sito sono presenti più dispositivi, è necessario seguire questi passagg
     
 4. Eseguire il cmdlet seguente per aggiornare la configurazione: (questo passaggio è applicabile solo alla versione 2, per le versioni precedenti, passare al passaggio successivo).
     
-   ```
+   ```powershell
    Import-CcConfiguration 
    ```
 
 5. Eseguire il cmdlet seguente per registrare di nuovo l'accessorio:
     
-   ```
+   ```powershell
    Register-CcAppliance
    ```
 
 6. Eseguire il cmdlet seguente in tutti gli altri dispositivi del sito per raccogliere la configurazione più recente:
     
-   ```
+   ```powershell
    Publish-CcAppliance
    ```
 
 7. Eseguire il cmdlet seguente per ridistribuire Cloud Connector nell'appliance corrente:
     
-   ```
+   ```powershell
    Install-CcAppliance
    ```
 
@@ -116,7 +116,7 @@ Se sono stati disabilitati gli aggiornamenti automatici del sistema operativo o 
   
 1. La proprietà EnableAutoUpdate del sito deve essere impostata su true (il valore predefinito). Eseguire il cmdlet seguente per verificare che EnableAutoUpdate sia impostato su true:
     
-   ```
+   ```powershell
    Get-CsHybridPSTNSite -Identity <SiteName>
    ```
 
@@ -132,19 +132,19 @@ Se sono stati disabilitati gli aggiornamenti automatici del sistema operativo o 
     
    - Ogni tenant può avere finestre di 20 ore definite. Verrà creata la finestra ora predefinita per un nuovo tenant come finestra temporale predefinita per l'aggiornamento dei sistemi operativi e l'aggiornamento dei bit. Eseguire i cmdlet seguenti per impostare la finestra temporale giornaliera, settimanale o mensile:
     
-   ```
+   ```powershell
    New-CsTenantUpdateTimeWindow -Identity Night -Daily -StartTime 22:00 -Duration 6:00
    ```
 
-   ```
+   ```powershell
    New-CsTenantUpdateTimeWindow -Identity WeekdayNight -Weekly -DaysOfWeek Monday,Tuesday,Wednesday,Thursday,Friday -StartTime 22:00 -Duration 4:00
    ```
 
-   ```
+   ```powershell
    New-CsTenantUpdateTimeWindow -Identity FirstAndLastWeekend -Monthly -WeeksOfMonth First,Last -DaysOfWeek Sunday,Saturday -StartTime 0:00 -Duration 10:00
    ```
 
-   ```
+   ```powershell
    New-CsTenantUpdateTimeWindow -Identity MidDayOfMonth -Monthly -DayOfMonth 15 -StartTime 0:00 -Duration 1.00:00
    ```
 
@@ -152,7 +152,7 @@ Se sono stati disabilitati gli aggiornamenti automatici del sistema operativo o 
     
      Le finestre tempo di aggiornamento BITS e ora di aggiornamento del sistema operativo vengono configurate separatamente. A entrambe possono essere assegnate finestre singole o multiple. Ogni finestra temporale può essere assegnata a siti diversi e a uno scopo diverso (aggiornamento BITS e aggiornamento del sistema operativo). Eseguire il cmdlet seguente per impostare la finestra temporale per il sito: 
     
-   ```
+   ```powershell
    Set-CsHybridPSTNSite -Identity <SiteName> -BitsUpdateTimeWindow @{add="MidDayOfMonth","WeekdayNight"} -OsUpdateTimeWindow @{replace="Night"}
    ```
 
@@ -163,7 +163,7 @@ Le modifiche amministrative nel tenant di Office 365 per il connettore Cloud ven
   
 Se le credenziali dell'account di amministratore cambiano in Office 365, è necessario aggiornare anche le credenziali memorizzate nella cache locale in Cloud Connector eseguendo il comando di PowerShell dell'amministratore seguente in ogni appliance del Cloud Connector distribuito:
   
-```
+```powershell
 Set-CcCredential -AccountType TenantAdmin
 ```
 
@@ -227,7 +227,7 @@ Per ogni appliance che appartiene allo stesso sito PSTN, sarà necessario specif
   
 1. Eseguire i comandi seguenti per recuperare i nomi e le password degli account che verranno usati in seguito:
     
-   ```
+   ```powershell
    Get-CcCredential -AccountType TenantAdmin -DisplayPassword
    Get-CcCredential -AccountType TenantAdmin
    Get-CcCredential -AccountType OMSWorkspace -DisplayPassword
@@ -269,11 +269,11 @@ Per ogni appliance che appartiene allo stesso sito PSTN, sarà necessario specif
     
     - CcLockFile
     
-    - FQDN\<del pool di SIP esterno di Site_ Edge\>
+    - FQDN\<del pool Sip esterno Site_ Edge\>
     
-    - FQDN\<del pool di SIP esterno di Tenant_ Edge\>
+    - FQDN\<del pool Sip esterno Tenant_ Edge\>
     
-    - FQDN\<del pool di SIP esterno di TenantConfigLock_ Edge\>
+    - FQDN\<del pool Sip esterno TenantConfigLock_ Edge\>
     
 ## <a name="add-a-new-sip-domain"></a>Aggiungere un nuovo dominio SIP
 <a name="BKMK_UpdatePassword"> </a>
@@ -288,7 +288,7 @@ Per aggiungere un nuovo dominio SIP (o più domini SIP) alla distribuzione di Cl
     
 4. Impostare il percorso del nuovo certificato esterno di Edge come indicato di seguito:
     
-   ```
+   ```powershell
    Set-CcExternalCertificateFilePath -Path <Full path to External certificate>
    ```
 
@@ -309,7 +309,7 @@ Se è necessario modificare il dominio SIP principale nella distribuzione di Clo
     
 4. Impostare il percorso del nuovo certificato esterno di Edge come indicato di seguito:
     
-   ```
+   ```powershell
    Set-CcExternalCertificateFilePath -Path <Full path to External certificate>
    ```
 
@@ -317,7 +317,7 @@ Se è necessario modificare il dominio SIP principale nella distribuzione di Clo
     
     Rimuovere la registrazione del tenant per ogni appliance di un sito eseguendo il cmdlet seguente in PowerShell per l'amministratore su cloud Connector:
     
-   ```
+   ```powershell
    Unregister-CcAppliance
    ```
 
@@ -325,7 +325,7 @@ Se è necessario modificare il dominio SIP principale nella distribuzione di Clo
     
     Rimuovere la registrazione del sito per ogni sito eseguendo il cmdlet seguente in Skype for Business Online PowerShell:
     
-   ```
+   ```powershell
    Remove-CsHybridPSTNSite
    ```
 
@@ -333,7 +333,7 @@ Se è necessario modificare il dominio SIP principale nella distribuzione di Clo
     
     Disinstallare ogni appliance eseguendo il cmdlet seguente in PowerShell per l'amministratore su cloud Connector:
     
-   ```
+   ```powershell
    Uninstall-CcAppliance
    ```
 
@@ -341,7 +341,7 @@ Se è necessario modificare il dominio SIP principale nella distribuzione di Clo
     
      Registrare ogni appliance eseguendo il cmdlet seguente in PowerShell per l'amministratore su cloud Connector:
     
-   ```
+   ```powershell
    Register-ccAppliance
    ```
 
@@ -349,7 +349,7 @@ Se è necessario modificare il dominio SIP principale nella distribuzione di Clo
     
      Installare ogni appliance, uno alla volta, eseguendo il cmdlet seguente in PowerShell per l'amministratore su cloud Connector:
     
-   ```
+   ```powershell
    Install-CcAppliance
    ```
 
@@ -362,7 +362,7 @@ Quando è necessario sostituire il certificato perimetrale esterno negli apparec
     
 2. Eseguire il comando seguente: 
     
-   ```
+   ```powershell
    Set-CcExternalCertificateFilePath -Target EdgeServer -Path <Full file path of new certificate including filename> -Import
    ```
 

@@ -11,18 +11,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 95e37b13-525b-4690-be32-839312e4ffe3
 description: Il cmdlet Switch-CcVersion disconnette l'appliance in uso e passa a un'appliance appena distribuita o di backup.
-ms.openlocfilehash: e63c5ea6d74e979f7fc9fe5a4c5eae97a0689e1e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 157d1b677cc6c63d7707c9e1633cd8b6e3ad5927
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190604"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003156"
 ---
 # <a name="switch-ccversion"></a>Switch-CcVersion
  
 Il cmdlet Switch-CcVersion disconnette l'appliance in uso e passa a un'appliance appena distribuita o di backup. 
   
-```
+```powershell
 Switch-CcVersion [-Force]
 ```
 
@@ -33,7 +33,7 @@ Switch-CcVersion [-Force]
 
 L'esempio seguente svuota i servizi dell'appliance corrente in uso e quindi passa a un'appliance appena distribuita o di backup:
   
-```
+```powershell
 Switch-CcVersion
 ```
 
@@ -41,7 +41,7 @@ Switch-CcVersion
 
 L'esempio seguente svuota i servizi dell'appliance corrente e arresta i servizi con forza se lo svuotamento dei servizi non riesce. Il comando passa quindi a un dispositivo appena distribuito o di backup:
   
-```
+```powershell
 Switch-CcVersion -Force
 ```
 

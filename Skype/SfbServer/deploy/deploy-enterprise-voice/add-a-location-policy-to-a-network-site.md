@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 43bfab8a-3d6b-4ca4-8425-879fd910502e
 description: Assegnare i criteri di posizione E9-1-1 ai siti di rete in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 4a74b1ee44d1e2f34a51d7859235e10649d0e2ee
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 36885fadddddd1fd0bf5ba91a6e0c30e79ef8b90
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234058"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001426"
 ---
 # <a name="add-a-location-policy-to-a-network-site-in-skype-for-business-server"></a>Aggiungere un criterio di posizione a un sito di rete in Skype for Business Server
  
@@ -45,7 +45,7 @@ Per informazioni dettagliate sull'uso dei siti di rete, vedere la documentazione
     
     Assegnare i criteri di posizione Tagged **Redmond** a un sito di rete esistente denominato **Redmond**.
     
-   ```
+   ```powershell
    Set-CsNetworkSite -Identity "Redmond" -NetworkRegionID "NorthAmerica" -LocationPolicy "Redmond"
    ```
 
@@ -57,7 +57,7 @@ Per informazioni dettagliate sull'uso dei siti di rete, vedere la documentazione
     
     Creare un nuovo sito di rete nell'area di rete e assegnare il criterio di posizione Tagged **Redmond** .
     
-   ```
+   ```powershell
    New-CsNetworkSite -Identity "Redmond" -NetworkRegionID "NorthAmerica" -LocationPolicy "Redmond"
    ```
 

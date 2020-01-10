@@ -11,18 +11,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 385453cd-3a96-4837-8bb4-513aa97a256b
 description: Il cmdlet Install-CcAppliance installa l'accessorio Cloud Connector Edition di Skype for business, tra cui le macchine virtuali AD, Central Management store, Mediation Server e Edge Server nel server host.
-ms.openlocfilehash: 01c689c4a4639c12292d59def6b698281f402299
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: cccf500c6506c8ba3459631d5c823940907ad213
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190733"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003326"
 ---
 # <a name="install-ccappliance"></a>Install-CcAppliance
  
 Il cmdlet Install-CcAppliance installa l'accessorio Cloud Connector Edition di Skype for business, tra cui le macchine virtuali AD, Central Management store, Mediation Server e Edge Server nel server host. 
   
-```
+```powershell
 Install-CcAppliance [-Steps <array>] [-SkipExistingObjects] [-Upgrade] [-UpdateAllCredentials] [<CommonParameters>]
 Install-CcAppliance [-Steps <array>] [-PrepareOnly]  [<CommonParameters>]
 Install-CcAppliance [-ShowStepsOnly]  [<CommonParameters>]
@@ -35,7 +35,7 @@ Install-CcAppliance [-ShowStepsOnly]  [<CommonParameters>]
 
 L'esempio seguente installa un nuovo accessorio Cloud Connector nel server host:
   
-```
+```powershell
 Install-CcAppliance
 ```
 
@@ -43,7 +43,7 @@ Install-CcAppliance
 
 L'esempio seguente aggiorna Cloud Connector alla versione più recente:
   
-```
+```powershell
 Install-CcAppliance -Upgrade
 ```
 
@@ -51,7 +51,7 @@ Install-CcAppliance -Upgrade
 
 L'esempio seguente rimuove tutte le credenziali di Cloud Connector memorizzate nella cache nel server host, chiede all'utente di specificare di nuovo tutte le informazioni sulle credenziali e quindi installa Cloud Connector:
   
-```
+```powershell
 Install-CcAppliance -UpdateAllCredentials
 ```
 
@@ -59,7 +59,7 @@ Install-CcAppliance -UpdateAllCredentials
 
 L'esempio seguente mostra tutti i passaggi di distribuzione nella console di PowerShell:
   
-```
+```powershell
 Install-CcAppliance -ShowStepsOnly
 ```
 
@@ -69,7 +69,7 @@ Il parametro-ShowStepsOnly è solo per la risoluzione dei problemi.
 
 L'esempio seguente genera i file di configurazione per ogni passaggio di distribuzione nel server host. I file di configurazione vengono salvati \<nella\>cartella\\ ApplianceRoot \Instances\><-default\ExportedConfig nel server host:
   
-```
+```powershell
 Install-CcAppliance -PrepareOnly
 ```
 
@@ -79,7 +79,7 @@ Per determinare la radice dell'accessorio, eseguire il cmdlet Get-CcApplianceDir
 
 Nell'esempio seguente, Cloud Connector esegue i passaggi di distribuzione 1, 2 e 3 per creare switch virtuali, creare una macchina virtuale AD e installare il servizio del dominio nel server degli annunci. Il passaggio viene saltato se il passaggio è già stato eseguito:
   
-```
+```powershell
 Install-CcAppliance -Steps @(1,2,3) -SkipExistingObjects
 ```
 
@@ -110,7 +110,7 @@ Se si ha una distribuzione di Cloud Connector esistente e si vuole eseguire l'ag
 |ShowStepsOnly  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Visualizzare solo i nomi dei passaggi di distribuzione. Questo parametro è solo per la risoluzione dei problemi.  <br/> |
 |SkipExistingObjects  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Questo parametro deve essere usato insieme al parametro Steps. Questo parametro è solo per la risoluzione dei problemi.  <br/> |
 |Passaggi  <br/> |Facoltativo  <br/> |System. Array  <br/> |Eseguire la procedura di distribuzione. Questo parametro è solo per la risoluzione dei problemi.  <br/> |
-|Aggiornamento  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Aggiornare il connettore cloud esistente alla versione più recente.  <br/> |
+|Upgrade  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Aggiornare il connettore cloud esistente alla versione più recente.  <br/> |
 |UpdateAllCredentials  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Rimuovere tutte le credenziali del connettore cloud nella cache. Richiedi all'utente di specificare le nuove informazioni sulle credenziali per l'installazione.  <br/> |
    
 ## <a name="input-types"></a>Tipi di input
@@ -128,10 +128,10 @@ Nessuno
 
 [Publish-CcAppliance](publish-ccappliance.md)
   
-[Registro-CcAppliance](register-ccappliance.md)
+[Register-CcAppliance](register-ccappliance.md)
   
-[Annullamento della registrazione-CcAppliance](unregister-ccappliance.md)
+[Unregister-CcAppliance](unregister-ccappliance.md)
   
-[Disinstallare-CcAppliance](uninstall-ccappliance.md)
+[Uninstall-CcAppliance](uninstall-ccappliance.md)
   
 

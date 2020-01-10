@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare il sistema telefonico per le code delle chiamate cloud con Microsoft teams.
-ms.openlocfilehash: e55028bb3e77291e6ed69069b09d812907fc35fb
-ms.sourcegitcommit: 5a7e273a3636322052e4a48a5a75513cbf5abb84
+ms.openlocfilehash: 95cf9701705950d997e1d200fee117b5f8f9738b
+ms.sourcegitcommit: 2fab6105dfc4c225de8c09ab79d9c2c273a3e4f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "39211976"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "41005182"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda delle chiamate nel cloud
 
@@ -36,6 +36,7 @@ Le code delle chiamate cloud possono essere fornite:
 - Musica mentre le persone sono in attesa.
 - Reindirizzamento delle chiamate per chiamare gli agenti in liste di distribuzione via mail e gruppi di sicurezza.
 - Impostazione di parametri diversi, ad esempio la dimensione massima della coda, il timeout e le opzioni di gestione delle chiamate.
+- Segreteria telefonica condivisa per i chiamanti per l'uscita di un messaggio per un'organizzazione.
 
 Per associare un numero di telefono a una coda di chiamata, è possibile usare un [account di risorse](manage-resource-accounts.md). Una coda di chiamata può essere chiamata direttamente o accessibile tramite una selezione in un operatore automatico.
 
@@ -165,9 +166,11 @@ Il **Saluto** è opzionale. Questo è il messaggio di saluto che viene riprodott
 
 ### <a name="select-the-call-answering-options"></a>Selezionare le opzioni di segreteria telefonica
 
-![Screenshot delle opzioni di segreteria telefonica con callout numerati](media/5d249515-d532-4af2-90da-011404028b89.png)
+![Screenshot delle opzioni di segreteria telefonica](media/5d249515-d532-4af2-90da-011404028b89.png) 
 
-![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
+Per aggiungere direttamente singoli agenti, senza aggiungerli a un gruppo, fare clic su **Aggiungi utenti**. Inserire singoli agenti nell'ordine in cui si vuole che ricevano la chiamata. È possibile aggiungere fino a 20 singoli agenti (per aggiungere più di 20, inserirli in un gruppo).
+
+Le chiamate vengono instradate prima a singoli agenti, quindi agli agenti in gruppi. 
 
 È possibile selezionare fino a 200 gli agenti di chiamata che appartengono a una delle seguenti liste di distribuzione o gruppi:
 

@@ -1,5 +1,5 @@
 ---
-title: Annullamento della registrazione-CcAppliance
+title: Unregister-CcAppliance
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -11,18 +11,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3d516e65-fb9b-4a0b-8296-969fc9eda334
 description: Il cmdlet Unregister-CcAppliance Annulla la registrazione dell'appliance di Skype for Business Cloud Connector corrente da un sito PSTN nella configurazione del tenant online.
-ms.openlocfilehash: fafe374371cd01b2ec7c67ade89dd2a905e16d18
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 2bd8f3a3ef4ac2b29ab9e7d766836d7a3555c0f4
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190586"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41003136"
 ---
-# <a name="unregister-ccappliance"></a>Annullamento della registrazione-CcAppliance
+# <a name="unregister-ccappliance"></a>Unregister-CcAppliance
  
 Il cmdlet Unregister-CcAppliance Annulla la registrazione dell'appliance di Skype for Business Cloud Connector corrente da un sito PSTN nella configurazione del tenant online.
   
-```
+```powershell
 Unregister-CcAppliance [[-SiteName] <string>] [[-ApplianceName] <string>] [-Local]
 ```
 
@@ -33,7 +33,7 @@ Unregister-CcAppliance [[-SiteName] <string>] [[-ApplianceName] <string>] [-Loca
 
 L'esempio seguente annulla la registrazione di un appliance corrente dalla configurazione del tenant online:
   
-```
+```powershell
 Unregister-CcAppliance
 ```
 
@@ -41,7 +41,7 @@ Unregister-CcAppliance
 
 Nell'esempio seguente viene controllata la configurazione per l'annullamento della registrazione localmente senza connettersi alla configurazione del tenant online:
   
-```
+```powershell
 Unregister-CcAppliance -Local
 ```
 
@@ -49,7 +49,7 @@ Unregister-CcAppliance -Local
 
 L'esempio seguente annulla la registrazione dell'appliance corrente con il nome "Appliance1" nel sito PSTN "Microsoft1":
   
-```
+```powershell
 Unregister-CcAppliance -SiteName Site1 -ApplianceName Appliance1
 ```
 
@@ -82,11 +82,11 @@ Nessuno
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>
 
-[Registro-CcAppliance](register-ccappliance.md)
+[Register-CcAppliance](register-ccappliance.md)
   
 [Install-CcAppliance](install-ccappliance.md)
   
-[Disinstallare-CcAppliance](uninstall-ccappliance.md)
+[Uninstall-CcAppliance](uninstall-ccappliance.md)
   
 [Publish-CcAppliance](publish-ccappliance.md)
   
