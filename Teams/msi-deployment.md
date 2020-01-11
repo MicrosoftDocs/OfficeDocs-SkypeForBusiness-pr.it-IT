@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a621c4e1cfcf9e485b68fd96a76d9179cef84a48
-ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
+ms.openlocfilehash: a1e8e74924bac23e2f8067fa5aa4d83a214b63d7
+ms.sourcegitcommit: f238d70aa34cded327ed252b0eb2704cc7f8f5c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952599"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023390"
 ---
 # <a name="install-microsoft-teams-using-msi"></a>Installare Microsoft teams con MSI
 
@@ -81,14 +81,21 @@ Se un utente disinstalla teams dal proprio profilo utente, il programma di insta
 > [!TIP]
 > È possibile usare lo script di [pulizia della distribuzione di Microsoft teams](scripts/Powershell-script-teams-deployment-clean-up.md) per completare i passaggi 1 e 2 tramite SCCM.
 
-## <a name="disable-auto-launch-for-the-msi-installer"></a>Disabilitare l'avvio automatico per il programma di installazione MSI
+## <a name="prevent-teams-from-starting-automatically-after-installation"></a>Impedire l'avvio automatico dei team dopo l'installazione
 
-Il comportamento predefinito di MSI consiste nell'installare il client teams non appena un utente accede e quindi avvia automaticamente teams. È possibile modificare questo comportamento con i parametri seguenti:
+Il comportamento predefinito di MSI consiste nell'installare l'app teams non appena un utente accede e quindi avvia automaticamente teams. Se non si vuole che i team vengano avviati automaticamente per gli utenti dopo l'installazione, è possibile usare criteri di gruppo per impostare un'impostazione di criteri o disabilitare l'avvio automatico per il programma di installazione MSI.
 
-- Quando un utente accede a Windows, i team verranno installati con MSI
-- Tuttavia, il client teams non si avvia finché l'utente non ha avviato manualmente i team
-- Viene aggiunto un collegamento per avviare teams sul desktop dell'utente
-- Una volta avviati manualmente, i team verranno avviati automaticamente ogni volta che l'utente accede
+#### <a name="use-group-policy-recommended"></a>Usare criteri di gruppo (scelta consigliata)
+
+Consentire l' **avvio automatico di Microsoft teams dopo** l'impostazione di criteri di gruppo installazione. Questa impostazione dei criteri può essere trovata in team Configurazione utente\Modelli Amministrativi\microsoft. Questo è il metodo consigliato perché puoi disattivare o attivare l'impostazione dei criteri in base alle esigenze dell'organizzazione.
+
+Quando si abilita questa impostazione per i criteri prima dell'installazione di teams, teams non si avvia automaticamente quando gli utenti accedono a Windows. Dopo che un utente ha eseguito l'accesso a teams per la prima volta, teams avvia automaticamente la volta successiva che l'utente accede.
+
+Per altre informazioni, vedere [usare criteri di gruppo per evitare che i team vengano avviati automaticamente dopo l'installazione](https://docs.microsoft.com/deployoffice/teams-install#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation).
+
+### <a name="disable-auto-launch-for-the-msi-installer"></a>Disabilitare l'avvio automatico per il programma di installazione MSI
+
+È possibile disabilitare l'avvio automatico per il programma di installazione MSI usando il parametro **Options = "noAutoStart = true"** come indicato di seguito.  
 
 Per la versione a 32 bit
 ```PowerShell
@@ -98,6 +105,8 @@ Per la versione a 64 bit
 ```PowerShell
 msiexec /i Teams_windows_x64.msi OPTIONS="noAutoStart=true"
 ```
+
+Quando un utente accede a Windows, teams viene installato con MSI e viene aggiunto un collegamento per avviare teams al desktop dell'utente. I team non si avviano finché l'utente non avvia manualmente teams. Dopo che l'utente ha avviato manualmente teams, teams avvia automaticamente ogni volta che l'utente effettua l'accesso.
 
 > [!Note]
 > Se si esegue manualmente il file MSI, assicurarsi di eseguirlo con autorizzazioni elevate. Anche se viene eseguito come amministratore, senza eseguirlo con autorizzazioni elevate, il programma di installazione non sarà in grado di configurare l'opzione per disabilitare l'avvio automatico.

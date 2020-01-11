@@ -14,12 +14,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come configurare il routing diretto di Microsoft Phone System.
-ms.openlocfilehash: c109dd919ad2842f38d135cba848ad2a7b34914d
-ms.sourcegitcommit: fa20ea88e6a1c5d16ec3a364fc9d2b9a942cec9d
+ms.openlocfilehash: 7a3cd61c3b92482fd402b58734b2af720c21cf3a
+ms.sourcegitcommit: f238d70aa34cded327ed252b0eb2704cc7f8f5c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/11/2020
-ms.locfileid: "41022291"
+ms.locfileid: "41023420"
 ---
 # <a name="configure-direct-routing"></a>Configurare Instradamento diretto
 
@@ -176,15 +176,7 @@ Esistono due opzioni per la creazione di un nuovo utente in Office 365. Tuttavia
 
 Se la distribuzione di Skype for business online è condivisa con Skype for business 2015 o Lync 2010/2013 in locale, l'unica opzione supportata consiste nel creare l'utente in Active Directory locale e sincronizzare l'utente con il cloud (opzione 1). 
 
-Licenze obbligatorie: 
-
-- Office 365 Enterprise E3 (inclusi SfB Plan2, Exchange Plan2 e teams) + sistema telefonico
-- Office 365 Enterprise E5 (inclusi SfB Plan2, Exchange Plan2, teams e Phone System) 
-
-Licenze facoltative: 
-
-- Piano per le chiamate 
-- Audioconferenza 
+Per informazioni sui requisiti di licenza, vedere [licenze e altri requisiti](direct-routing-plan.md#licensing-and-other-requirements) per [pianificare il routing diretto](direct-routing-plan.md).
 
 ### <a name="ensure-that-the-user-is-homed-in-skype-for-business-online"></a>Verificare che l'utente sia ospitato in Skype for business online 
 
