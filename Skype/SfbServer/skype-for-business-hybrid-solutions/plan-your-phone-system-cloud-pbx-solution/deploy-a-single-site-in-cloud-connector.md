@@ -1,5 +1,5 @@
 ---
-title: Distribuire un singolo sito nel connettore Cloud
+title: Distribuire un sito singolo in Cloud Connector
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -14,14 +14,14 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fa8aa499-1188-447e-bc30-89d1f5b198a7
 description: Informazioni sulla distribuzione di un singolo sito PSTN in Cloud Connector Edition.
-ms.openlocfilehash: 10d9e5f286b00af8791097707dc0345e100e55d5
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: a2cc8933276bc85b19ee79559ca4bcf9e88a079f
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190862"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001026"
 ---
-# <a name="deploy-a-single-site-in-cloud-connector"></a>Distribuire un singolo sito nel connettore Cloud
+# <a name="deploy-a-single-site-in-cloud-connector"></a>Distribuire un sito singolo in Cloud Connector
  
 Informazioni sulla distribuzione di un singolo sito PSTN in Cloud Connector Edition.
   
@@ -31,7 +31,7 @@ Informazioni sulla distribuzione di un singolo sito PSTN in Cloud Connector Edit
 
 Per distribuire il primo appliance in un sito, aprire una console di PowerShell come amministratore ed eseguire il cmdlet seguente per registrare l'accessorio:
   
-```
+```powershell
 Register-CcAppliance
 ```
 
@@ -43,7 +43,7 @@ In versione 2,0 e successive seguire anche le istruzioni per specificare la pass
   
 Per avviare l'installazione, aprire una console di PowerShell come amministratore ed eseguire il cmdlet seguente:
   
-```
+```powershell
 Install-CcAppliance
 ```
 
@@ -55,19 +55,19 @@ Install-CcAppliance
     
 2. Eseguire il cmdlet seguente solo nel server host appena aggiunto per aggiornare le informazioni sulla topologia nella configurazione del tenant di Office 365. Se si vogliono aggiungere più dispositivi contemporaneamente, eseguire il cmdlet su ogni server host appena aggiunto uno alla volta:
     
-   ```
+   ```powershell
    Register-CcAppliance
    ```
 
 3. Aggiornare la topologia in dispositivi esistenti eseguendo il cmdlet seguente in ogni server host. Eseguire solo il cmdlet negli elettrodomestici esistenti.
     
-   ```
+   ```powershell
    Publish-CcAppliance
    ```
 
 4. Eseguire il cmdlet seguente solo per i server host appena aggiunti. Non eseguire questo cmdlet nell'appliance esistente. Se si vogliono aggiungere più dispositivi contemporaneamente, eseguire il cmdlet su ogni server host appena aggiunto uno alla volta.
     
-   ```
+   ```powershell
    Install-CcAppliance
    ```
 
@@ -80,13 +80,13 @@ Se si vuole rimuovere un dispositivo da un sito esistente:
   
 1. Eseguire il cmdlet seguente solo nei server host che si desidera rimuovere dal sito per aggiornare le informazioni sulla topologia nella configurazione del tenant di Office 365.
     
-   ```
+   ```powershell
    Unregister-CcAppliance
    ```
 
 2. Eseguire il cmdlet seguente solo nei server host da cui si vogliono rimuovere tutte le macchine virtuali dell'appliance.
     
-   ```
+   ```powershell
    Uninstall-CcAppliance
    ```
 

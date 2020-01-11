@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 2e869df0-5fdb-4e70-bd81-cb012556eb1a
 description: Leggere questo argomento per informazioni su come configurare più numeri di emergenza in Skype for Business Server.
-ms.openlocfilehash: 184a0060ed2383a652928356ab2999aa55b3d7bd
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: a0a16536799024085afcce07d6a2a9a0e4c899e1
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233902"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001316"
 ---
 # <a name="configure-multiple-emergency-numbers-in-skype-for-business"></a>Configurare più numeri di emergenza in Skype for business
 
@@ -29,37 +29,37 @@ Skype for Business Server ora supporta più numeri di emergenza per un client. P
 > [!NOTE]
 > Se l'aggiornamento cumulativo di novembre 2016 non è stato ancora aggiornato, vedere [aggiornamenti di Skype for Business Server 2015](https://support.microsoft.com/en-us/help/3061064/updates-for-skype-for-business-server-2015). Con l'aggiornamento cumulativo di novembre 2016, il numero di numeri di emergenza del supporto aumenta da 5 a 100. 
 
-## <a name="configure-multiple-emergency-numbers"></a>Configurare più numeri di emergenza
+## <a name="configure-multiple-emergency-numbers"></a>Configurare numeri di emergenza multipli
 
 Per configurare più numeri di emergenza, usare il cmdlet New-CsEmergencyNumber e quindi specificare il parametro EmergencyNumbers con i cmdlet [New-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps) e [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps) . Per una descrizione completa di tutti i parametri dei criteri di posizione, ad esempio l'utilizzo e la posizione PSTN necessari, vedere [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps).
 
 Il comando seguente crea un nuovo numero di emergenza con Dial String 911 usando il cmdlet New-CsEmergency:
 
-```
+```powershell
 > $a = New-CsEmergencyNumber -DialString 911 
 ```
 
 Il comando successivo associa il numero con il criterio di posizione specificato specificando il parametro EmergencyNumbers nel cmdlet Set-CsLocationPolicy:
 
-```
+```powershell
 > Set-CsLocationPolicy -Identity <id> -EmergencyNumbers @{add=$a} 
 ```
 
 Nell'esempio successivo viene creato un numero di emergenza con una singola maschera di chiamata, 112:
 
-```
+```powershell
 > $a = New-CsEmergencyNumber -DialString 911 -DialMask 112 
 ```
 
 Il comando successivo crea un numero di emergenza con più maschere di chiamata:
 
-```
+```powershell
 > $a = New-CsEmergencyNumber -DialString 911 -DialMask 112;999 
 ```
 
 L'esempio seguente aggiunge più numeri di emergenza con più maschere di chiamata e quindi associa i numeri di emergenza con i criteri di posizione specificati:
 
-```
+```powershell
 > $a = New-CsEmergencyNumber -DialString 911 -DialMask 112;999 
 > $b = New-CsEmergencyNumber -DialString 500 -DialMask 501;502
 > Set-CsLocationPolicy -Identity <id> -EmergencyNumbers @{add=$a,$b} 
@@ -67,7 +67,7 @@ L'esempio seguente aggiunge più numeri di emergenza con più maschere di chiama
 
 Nell'esempio seguente vengono configurati più numeri di emergenza per i provider di servizi sanitari che usano sia 911 che 450: 
 
-```
+```powershell
 > $a = New-CsEmergencyNumber -DialString 911 
 > $b = New-CsEmergencyNumber -DialString 450
 > Set-CsLocationPolicy -Identity US-Hospital -EmergencyNumbers @{add=$a,$b}
@@ -75,7 +75,7 @@ Nell'esempio seguente vengono configurati più numeri di emergenza per i provide
 
 Nell'esempio seguente vengono configurati più numeri di emergenza per la città di Londra:
 
-```
+```powershell
 > $a = New-CsEmergencyNumber -DialString 999 -DialMask 144
 > $b = New-CsEmergencyNumber -DialString 112 -DialMask 911;117;118
 > Set-CsLocationPolicy -Identity London -EmergencyNumbers @{add=$a,$b}
@@ -83,7 +83,7 @@ Nell'esempio seguente vengono configurati più numeri di emergenza per la città
 
 Nell'esempio seguente vengono configurati più numeri di emergenza per l'India:
 
-```
+```powershell
 > $a = New-CsEmergencyNumber -DialString 100 -DialMask 911
 > $b = New-CsEmergencyNumber -DialString 101 
 > $c = New-CsEmergencyNumber -DialString 102 
@@ -92,7 +92,7 @@ Nell'esempio seguente vengono configurati più numeri di emergenza per l'India:
 
 Nell'esempio successivo viene rimossa una voce esistente con Dial String 911 e maschere di chiamata 112 e 999:
 
-```
+```powershell
 > $a = New-CsEmergencyNumber -DialString 911 -DialMask 112;999
 > Set-CsLocationPolicy -Identity <id> -EmergencyNumbers @{remove=$a} 
 ```

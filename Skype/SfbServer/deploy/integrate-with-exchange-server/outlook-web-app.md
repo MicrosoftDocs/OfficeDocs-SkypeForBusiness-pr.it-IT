@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 95a20117-2064-43c4-94fe-cac892cadb6f
 description: 'Riepilogo: integrare Skype for Business Server e Outlook Web App.'
-ms.openlocfilehash: b7c279dc41515d9613d8c000ab9e81164a1ccaa6
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 2aedd3b5e2399ae2487c0bb6da3e468d56567897
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244210"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41002876"
 ---
 # <a name="configure-integration-between-on-premises-skype-for-business-server-and-outlook-web-app"></a>Configurare l'integrazione tra Skype for Business Server e Outlook Web App locale
 
@@ -37,7 +37,7 @@ Per integrare Skype for Business Server locale con Exchange Online, è necessari
 
 Usando Skype for Business Server Management Shell, configura il server perimetrale per la federazione eseguendo il cmdlet **Set-CsAccessEdgeConfiguration** , usando i parametri visualizzati nell'esempio seguente:
 
-```
+```powershell
 Set-CsAccessEdgeConfiguration -AllowFederatedUsers $True
 ```
 
@@ -49,7 +49,7 @@ Per informazioni dettagliate sull'uso di Skype for Business Server Management Sh
 
 Usando Skype for Business Server Management Shell, configura un provider di hosting nell'Edge Server eseguendo il cmdlet **New-CsHostingProvider** , usando i parametri nell'esempio seguente:
 
-```
+```powershell
 New-CsHostingProvider -Identity "Exchange Online" -Enabled $True -EnabledSharedAddressSpace $True -HostsOCSUsers $False -ProxyFqdn "exap.um.outlook.com" -IsLocal $False -VerificationLevel UseSourceVerification
 ```
 
@@ -76,14 +76,14 @@ Le modifiche apportate tramite i cmdlet nelle sezioni precedenti vengono applica
 
 Per verificare gli aggiornamenti della replica, in un server interno della distribuzione di Skype for Business Server, eseguire il cmdlet seguente:
 
-```
+```powershell
 Get-CsManagementStoreReplicationStatus
 ```
 Controlla se il valore di UpToDate viene visualizzato TRUE per tutte le repliche.
 
 Per verificare che le modifiche siano state applicate, nel server perimetrale eseguire il cmdlet seguente:
 
-```
+```powershell
 Get-CsHostingProvider -LocalStore
 ```
 Verificare che le informazioni visualizzate corrispondano alle modifiche apportate nei passaggi precedenti.

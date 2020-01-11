@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: adfacb74-7ea5-4c53-934e-ba7ec59879eb
 description: 'Riepilogo: Scopri come visualizzare le informazioni sui trunk SIP in Skype for Business Server.'
-ms.openlocfilehash: 3d8ad70428926c26445c6556544a5a363de12f5c
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 366e03c1a3ceef345a52bca6e038c9311fcc3003
+ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240212"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "41001126"
 ---
 # <a name="view-information-about-individual-sip-trunks-in-skype-for-business-server"></a>Visualizzare informazioni sui singoli trunk SIP in Skype for Business Server
  
@@ -33,7 +33,7 @@ In Skype for Business Server, tuttavia, è ora possibile assegnare più trunk a 
 
 - Il comando seguente restituisce informazioni su tutti i trunk SIP in uso nell'organizzazione:
     
-  ```
+  ```powershell
   Get-CsTrunk
   ```
 
@@ -41,7 +41,7 @@ In Skype for Business Server, tuttavia, è ora possibile assegnare più trunk a 
 
 - Questo comando restituisce solo le informazioni per il trunk SIP con Identity PstnGateway: 192.168.0.240:
     
-  ```
+  ```powershell
   Get-CsTrunk -Identity "PstnGateway:192.168.0.240"
   ```
 
@@ -49,6 +49,6 @@ In Skype for Business Server, tuttavia, è ora possibile assegnare più trunk a 
 
 - In questo esempio vengono restituite le informazioni per tutti i trunk SIP assegnati al pool atl-cs-001.litwareinc.com:
     
-  ```
+  ```powershell
   Get-CsTrunk -PoolFqdn "atl-cs-001.litwareinc.com"
   ```
