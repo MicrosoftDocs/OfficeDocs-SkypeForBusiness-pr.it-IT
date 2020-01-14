@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 8d47b242-b93d-4c2e-a658-23b78bca30b1
 description: "Riepilogo: preparare i server di Skype for Business Server 2015 con questo argomento. Hardware, sistema operativo, database, software, tutti i requisiti di sistema e le raccomandazioni sono qui per garantire un'installazione e una distribuzione di successo della server farm."
-ms.openlocfilehash: a028ce7265718c0ce14b103bca8dcdb416e72885
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 8a3771f66a2fe83f8772a8a5a07f643d372d7c1d
+ms.sourcegitcommit: 208179a3dd166f53b5a3058242cb84207909f4ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989281"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41104425"
 ---
 # <a name="server-requirements-for-skype-for-business-server-2015"></a>Requisiti server di Skype for Business Server 2015
  
@@ -72,7 +72,7 @@ Dopo aver installato l'hardware, è necessario installare sistemi operativi (OS)
 |Windows Server 2012 R2 Datacenter OS con tutti gli aggiornamenti necessari installati.  <br/> |Sistema operativo Windows Server 2012 R2 Standard con tutti gli aggiornamenti necessari installati.  <br/> |
 |Sistema operativo Windows Server 2012 Datacenter con tutti gli aggiornamenti necessari installati.  <br/> |Windows Server 2012 standard OS con tutti gli aggiornamenti necessari installati.  <br/> |
    
-Se non è presente nell'elenco, non funziona correttamente, non provarlo per le nuove installazioni di Skype for Business Server 2015.
+Se non è presente nell'elenco, non funziona correttamente, non provarlo per le nuove installazioni di Skype for Business Server 2015. Tieni presente che l'aggiornamento sul posto del sistema operativo non è supportato con Lync Server 2013.  È necessario distribuire un pool separato e eseguire la migrazione degli utenti nel nuovo pool con un sistema operativo diverso.
   
 > [!NOTE]
 > Potresti aver notato che Windows Server 2008 R2 non è presente nell'elenco. Questo perché ti consigliamo di usare Windows Server 2012 R2 per tutti i nuovi server che verranno usati per SFB. È consigliabile usare Windows Server 2008 R2 solo quando sono già installati server esistenti con Lync Server 2013 e si intende eseguire un aggiornamento sul posto... Windows Server 2008 R2 ha raggiunto la fine del ciclo di vita del supporto mainstream su 1/13/2015 e raggiungerà la fine del ciclo di vita del supporto in 1/14/2020.

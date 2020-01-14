@@ -14,12 +14,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come configurare il routing diretto di Microsoft Phone System.
-ms.openlocfilehash: 7a3cd61c3b92482fd402b58734b2af720c21cf3a
-ms.sourcegitcommit: f238d70aa34cded327ed252b0eb2704cc7f8f5c5
+ms.openlocfilehash: 40439fd31db458f8cb306c0e3dbd456aa59a7a21
+ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023420"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111730"
 ---
 # <a name="configure-direct-routing"></a>Configurare Instradamento diretto
 
@@ -453,7 +453,7 @@ Nella tabella seguente vengono riepilogati i criteri di routing "nessuna restriz
 
 #### <a name="example-of-voice-routing-policy-for-user-john-woods"></a>Esempio di criteri di routing vocale per l'utente John Woods
 
-La procedura per creare l'utilizzo PSTN "internazionale", la route vocale "internazionale", "criteri di routing vocale" senza restrizioni "e quindi l'assegnazione all'utente" John Woods "è la seguente.
+La procedura per creare l'utilizzo PSTN "internazionale", la route vocale "internazionale", "criteri di routing vocale" senza restrizioni "e quindi l'assegnazione all'utente" John Woods "è la seguente.   
 
 
 **Passaggio 1**: creare l'utilizzo PSTN "internazionale". 

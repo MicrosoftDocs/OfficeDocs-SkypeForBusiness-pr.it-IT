@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Gli amministratori IT possono aggiungere ospiti a livello di tenant, impostare e gestire i criteri e le autorizzazioni degli utenti guest, determinare gli utenti che possono invitare gli ospiti e tirare i report sulle attività degli utenti guest.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 41630c14c7d1aa9233f53df3c83bd36081d18682
-ms.sourcegitcommit: 09e719ead5c02b3cfa96828841c4905748d192a3
+ms.openlocfilehash: 42910da02c55866e0ce4e04a099b60e55577ab8c
+ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37753291"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111360"
 ---
 <a name="manage-guest-access-in-microsoft-teams"></a>Gestire l'accesso guest in Microsoft Teams
 ======================================
@@ -27,7 +27,7 @@ ms.locfileid: "37753291"
 > [!IMPORTANT]
 > Potrebbe essere necessario attendere fino a 24 ore affinché le modifiche abbiano effetto. 
 
-**Guest** è un tipo di utente in Microsoft teams incluso in tutti gli abbonamenti a Office 365 Business Premium, Office 365 Enterprise e Office 365 Education. Non sono necessarie altre licenze di Office 365. Leggi altre informazioni sulla [gestione delle licenze di accesso Guest](#guest-access-licensing-limits) di seguito.
+**Guest** è un tipo di utente in Microsoft teams incluso in tutti gli abbonamenti a Office 365 Business Premium, Office 365 Enterprise, Office 365 Business Essentials e Office 365 Education. Non sono necessarie altre licenze di Office 365. Leggi altre informazioni sulla [gestione delle licenze di accesso Guest](#guest-access-licensing-limits) di seguito.
 
 L'accesso Guest teams è un'impostazione a livello di tenant ed è disattivata per impostazione predefinita. Per informazioni dettagliate su come attivare l'accesso guest, vedere [attivare o disattivare l'accesso Guest ai team](set-up-guests.md)oppure usare l'elenco di [controllo di accesso Guest](guest-access-checklist.md) per passare alla configurazione.
 
@@ -47,7 +47,7 @@ I proprietari del team possono invitare nuovi ospiti e aggiungere utenti Guest D
 
 ## <a name="guest-access-licensing-limits"></a>Limiti delle licenze di accesso Guest
 
-Teams non limita il numero di Guest che è possibile aggiungere. Tuttavia, il numero totale di utenti che possono essere aggiunti al tenant è basato sulle licenze di Azure AD, in genere 5 ospiti per ogni utente con licenza. Per altre informazioni, Vedi [licenze di collaborazione B2B di Azure ad](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance).
+Teams non impone un numero limite di utenti guest che è possibile aggiungere. Tuttavia, il numero totale di utenti guest che possono essere aggiunti al tenant dipende dal limite imposto dalla licenza di Azure AD, che in genere è di 5 guest per ogni utente con licenza. Per altre informazioni, vedere [Licenze di collaborazione B2B di Azure AD](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance).
 
 A causa di queste limitazioni della licenza (e per mantenere aggiornato il tenant), è consigliabile rivedere periodicamente l'accesso guest per identificare gli utenti che non hanno più bisogno di accedere. Puoi usare Azure AD per creare una revisione di Access per i membri del gruppo o gli utenti assegnati a un'applicazione. La creazione di recensioni di Access periodiche consente di risparmiare tempo. Se è necessario rivedere abitualmente gli utenti che hanno accesso a un'applicazione o sono membri di un gruppo, è possibile definire la frequenza di tali revisioni. 
 
@@ -64,11 +64,11 @@ Le recensioni di Access sono disponibili con l'edizione Premium P2 di Azure AD, 
 Per le impostazioni di accesso guest in Azure Active Directory, sono necessarie 2-24 ore affinché le modifiche abbiano effetto nell'organizzazione di Office 365. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che la caratteristica Guest non sia stata attivata o che le impostazioni non siano ancora valide. Per informazioni sui problemi di configurazione dell'accesso guest, leggere [risolvere i problemi di accesso guest in teams](troubleshoot-guest-access.md).
 
   
-## <a name="external-access-federation-vs-guest-access"></a>Accesso esterno (Federazione) vs Access Guest
+## <a name="external-access-federation-vs-guest-access"></a>Accesso esterno (federazione) e accesso guest
 
 [!INCLUDE [guest-vs-external-access](includes/guest-vs-external-access.md)]
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Per informazioni sull'uso di PowerShell per gestire l'accesso guest, vedere [usare PowerShell per controllare l'accesso Guest a un team](guest-access-powershell.md).
 

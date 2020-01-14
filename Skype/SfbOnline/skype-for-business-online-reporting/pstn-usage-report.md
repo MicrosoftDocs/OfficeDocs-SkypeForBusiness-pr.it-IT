@@ -18,12 +18,12 @@ f1keywords: None
 ms.custom:
 - Reporting
 description: La nuova area report dell'interfaccia di amministrazione di Skype for business Mostra la chiamata e l'attività di conferenza audio nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli di utilizzo PSTN dei servizi di audioconferenza, incluso il costo della chiamata, in modo da poter comprendere l'utilizzo e chiamare i dettagli di fatturazione per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: bb6c2456a103782caea72baef5ac6e8df26a24a2
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: 8f1818a3c80f04676c9e39f424737c3f10cd57e7
+ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793081"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111450"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -40,7 +40,7 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
 
 ![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
-- Accedere all'interfaccia di amministrazione > **** > interfaccia di amministrazione di**Skype for business** > per l'interfaccia di amministrazione**segnala** > **i dettagli sull'utilizzo PSTN**.
+-  > Accedere all'interfaccia di amministrazione > **interfaccia di amministrazione di****Skype for business** > per l'interfaccia di amministrazione**segnala** > **i dettagli sull'utilizzo PSTN**.
     
     > [!NOTE]
     > In base all'abbonamento a Office 365 di cui si dispone, alcuni dei prodotti e report illustrati in questo articolo potrebbero non essere disponibili. 
@@ -104,10 +104,8 @@ Questo è l'aspetto del report.
 ***
 ![Numero 2](../images/sfbcallout2.png)<br/>Fare clic per trascinare una colonna fino a **Per raggruppare per una specifica colonna, trascinare qui l'intestazione di colonna** se si desidera creare una visualizzazione che raggruppi tutti i dati in una o più colonne.
  ***
-![Numero 3](../images/sfbcallout3.png)<br/>È anche possibile esportare i dati del report in un file di Excel delimitato da TABULAzioni, facendo clic o toccando il pulsante **Esporta in Excel** . È possibile esportare dati fino a un anno dalla data corrente.<br/><br/> Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. 
-    > [!Note] 
-    > Despite the export file named as .CSV (which implies a comma delimited export), as there may be commas in the data set, the file is actually delimited with **TABS** and not **COMMAS**.
-
+![Numero 3](../images/sfbcallout3.png)<br/>È anche possibile esportare i dati del report in un file di Excel delimitato da VIRGOLe facendo clic o toccando il pulsante **Esporta in Excel** . È possibile esportare dati fino a un anno dalla data corrente, a meno che il regolamento specifico per paese non vieti la conservazione dei dati per 12 mesi.<br/><br/> Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. 
+    
 ## <a name="want-to-see-other-skype-for-business-reports"></a>Per consultare altri report di Skype for Business
 
 - [Report attività in Skype for Business](activity-report.md) permette di vedere quanto gli utenti usano le conferenze peer-to-peer e organizzate o vi partecipano.

@@ -5,23 +5,23 @@ ms.author: v-lanac
 author: lanachin
 TOCTitle: Managing Archiving configuration options for your organization, sites, and pools
 ms:assetid: 377a6f80-5f2b-4bc1-b507-e930a461fb1d
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204802(v=OCS.15)
+ms:mtpsurl: https://technet.microsoft.com/library/JJ204802(v=OCS.15)
 ms:contentKeyID: 48183830
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 10efbf23a503364de7034651d94ced43a8d7b750
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 4d27ea110c345be8963c5b3be3fa8b761e1b3727
+ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40980511"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111720"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="managing-archiving-configuration-options-in-lync-server-2013-for-your-organization-sites-and-pools"></a>Gestione delle opzioni di configurazione dell'archiviazione in Lync Server 2013 per l'organizzazione, i siti e i pool
 
@@ -55,7 +55,7 @@ Nel pannello di controllo di Lync Server 2013 si usano le configurazioni di arch
 
 **Per visualizzare le informazioni di configurazione dell'archiviazione tramite i cmdlet di Windows PowerShell**
 
-  - È possibile visualizzare le informazioni di configurazione dell'archiviazione tramite Windows PowerShell e il cmdlet **Get-CsArchivingConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+  - È possibile visualizzare le informazioni di configurazione dell'archiviazione tramite Windows PowerShell e il cmdlet **Get-CsArchivingConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
     
     In Lync Server Management Shell usare il comando seguente per visualizzare informazioni su tutte le impostazioni di configurazione dell'archiviazione:
     
@@ -71,7 +71,7 @@ Nel pannello di controllo di Lync Server 2013 si usano le configurazioni di arch
 
   - [Abilitazione o disabilitazione dell'eliminazione dei dati archiviati in Lync Server 2013](lync-server-2013-enabling-or-disabling-the-purging-of-archived-data.md)
 
-  - [Abilitazione o disabilitazione della modalità critica in Lync Server 2013 per bloccare o consentire la messaggistica istantanea e le sessioni di conferenza Web se l'archiviazione non riesce](lync-server-2013-enabling-or-disabling-critical-mode-to-block-or-allow-im-and-web-conferencing-sessions-if-archiving-fails.md)
+  - [Abilitazione o disabilitazione della modalità critica in Lync Server 2013 per bloccare o consentire la messaggistica istantanea e le sessioni di conferenza Web se l'archiviazione non riesce](lync-server-2013-enable-disable-critical-mode.md)
 
   - [Abilitare o disabilitare l'invio di una dichiarazione di non responsabilità relativa all'archiviazione ai partner federati in Lync Server 2013](lync-server-2013-enable-or-disable-sending-an-archiving-disclaimer-to-federated-partners.md)
 

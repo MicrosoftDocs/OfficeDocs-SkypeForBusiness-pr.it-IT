@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 7392e4f8-6e2d-447b-aaa3-878f73995f9d
 description: 'Riepilogo: installare e configurare i nodi Watcher per le transazioni sintetiche di Skype for Business Server.'
-ms.openlocfilehash: 7711c7c2009149fc6dd49ed34b4c55312cb7417a
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 8c7ea0465d9a53bd8972c823ef7bfc7d7ee9b4bc
+ms.sourcegitcommit: 208179a3dd166f53b5a3058242cb84207909f4ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40992443"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41104485"
 ---
 # <a name="install-and-configure-watcher-nodes"></a>Installare e configurare i nodi Watcher
  
@@ -192,7 +192,7 @@ Quando questo comando viene completato e viene creata l'applicazione attendibile
 Enable-CsTopology
 ```
 
-Dopo aver eseguito Enable-CsTopology, riavviare il computer.
+L'account del computer del nodo Watcher richiede la possibilità di eseguire query su CMS per alcune transazioni sintetiche. Per consentire questa funzionalità, aggiungere l'account del computer del nodo Watcher al gruppo di sicurezza RTCUniversalReadOnlyAdmins. Una volta che si è verificata la replica di Active Directory, riavviare il computer.
   
 Per verificare che sia stata creata la nuova applicazione attendibile, digitare quanto segue al prompt di Skype for Business Server Management Shell:
   

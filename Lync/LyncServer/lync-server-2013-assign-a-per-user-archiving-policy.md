@@ -5,17 +5,17 @@ ms.author: v-lanac
 author: lanachin
 TOCTitle: Assign a per-user archiving policy
 ms:assetid: a12ca483-b235-460f-b3fe-130fb3087264
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg182560(v=OCS.15)
+ms:mtpsurl: https://technet.microsoft.com/library/Gg182560(v=OCS.15)
 ms:contentKeyID: 48185014
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f82b2398002a1c2536c9a57b18f9276a9d138903
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 36d23e44e397a77f0d490d8fda27ee711d1c61c5
+ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40981011"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111580"
 ---
 # <a name="assign-a-per-user-archiving-policy-in-lync-server-2013"></a>Assegnare criteri di archiviazione per utente in Lync Server 2013
 
@@ -28,7 +28,7 @@ La distribuzione di uno o più criteri di archiviazione per utente è facoltativ
 
 Dopo aver creato almeno un criterio di archiviazione per utente, usare le procedure descritte in questo argomento per assegnare i criteri che specificano in modo appropriato se le comunicazioni interne di un determinato utente, le comunicazioni esterne o entrambe verranno archiviate dal server.
 
-Per informazioni dettagliate sulla creazione di criteri di archiviazione per utente, vedere [creazione di criteri di archiviazione in Lync Server 2013 per abilitare o disabilitare l'archiviazione di comunicazioni interne o esterne per siti o utenti specifici](lync-server-2013-creating-an-archiving-policy-to-enable-or-disable-archiving-of-internal-or-external-communications-for-specific-sites-or-users.md).
+Per informazioni dettagliate sulla creazione di criteri di archiviazione per utente, vedere [creazione di criteri di archiviazione in Lync Server 2013 per abilitare o disabilitare l'archiviazione di comunicazioni interne o esterne per siti o utenti specifici](lync-server-2013-create-archiving-policy-sites-users.md).
 
 ## <a name="to-assign-a-per-user-archiving-policy"></a>Per assegnare un criterio di archiviazione per utente
 
@@ -90,7 +90,7 @@ Per informazioni dettagliate sulla creazione di criteri di archiviazione per ute
 
 ## <a name="assigning-a-per-user-archiving-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio di archiviazione per utente tramite i cmdlet di Windows PowerShell
 
-È possibile assegnare criteri di archiviazione per utente tramite Windows PowerShell e il cmdlet **Grant-CsArchivingPolicy** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile assegnare criteri di archiviazione per utente tramite Windows PowerShell e il cmdlet **Grant-CsArchivingPolicy** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
 
 ## <a name="to-assign-a-per-user-archiving-policy-to-a-single-user"></a>Per assegnare un criterio di archiviazione per utente a un singolo utente
 
@@ -100,7 +100,7 @@ Per informazioni dettagliate sulla creazione di criteri di archiviazione per ute
 
 ## <a name="to-assign-a-per-user-archiving-policy-to-multiple-users"></a>Per assegnare criteri di archiviazione per utente a più utenti
 
-  - Questo comando assegna il criterio di archiviazione per utente RedmondArchivingPolicy a tutti gli utenti che hanno account assegnati nel pool di registrazione atl-cs-001.litwareinc.com. Per altre informazioni sul parametro Filter usato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://technet.microsoft.com/en-us/library/gg398125\(v=ocs.15\)) .
+  - Questo comando assegna il criterio di archiviazione per utente RedmondArchivingPolicy a tutti gli utenti che hanno account assegnati nel pool di registrazione atl-cs-001.litwareinc.com. Per altre informazioni sul parametro Filter usato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://technet.microsoft.com/library/gg398125\(v=ocs.15\)) .
     
         Get-CsUser -Filter {RegistrarPool -eq "atl-cs-001.litwareinc.com"} | Grant-CsArchivingPolicy -PolicyName "RedmondArchivingPolicy"
 
@@ -110,12 +110,12 @@ Per informazioni dettagliate sulla creazione di criteri di archiviazione per ute
     
         Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName $Null
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Grant-CsArchivingPolicy](https://technet.microsoft.com/en-us/library/gg398475\(v=ocs.15\)) .
+Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Grant-CsArchivingPolicy](https://technet.microsoft.com/library/gg398475\(v=ocs.15\)) .
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Creazione di un criterio di archiviazione in Lync Server 2013 per abilitare o disabilitare l'archiviazione di comunicazioni interne o esterne per siti o utenti specifici](lync-server-2013-creating-an-archiving-policy-to-enable-or-disable-archiving-of-internal-or-external-communications-for-specific-sites-or-users.md)  
+[Creazione di un criterio di archiviazione in Lync Server 2013 per abilitare o disabilitare l'archiviazione di comunicazioni interne o esterne per siti o utenti specifici](lync-server-2013-create-archiving-policy-sites-users.md)  
 
 
 [Assegnazione di criteri per utente in Lync Server 2013](lync-server-2013-assigning-per-user-policies.md)

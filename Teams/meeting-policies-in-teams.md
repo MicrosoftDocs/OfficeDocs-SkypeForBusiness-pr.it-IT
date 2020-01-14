@@ -20,12 +20,12 @@ f1keywords:
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams.
-ms.openlocfilehash: ba44188d978c9109d1ba3d038c5b1f48d0670746
-ms.sourcegitcommit: 43cab5f0fc8692174db09badf3d448e8ff6a50d6
+ms.openlocfilehash: a3978b3615fabbff000a20d53408d4fbc1d98f12
+ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40744870"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111710"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri delle riunioni in teams
 
@@ -262,6 +262,9 @@ Esaminiamo l'esempio seguente.
 |Babek    | Location1MeetingPolicy        | False   |
 
 Daniela può dare il controllo del desktop o della finestra condivisa ad altri partecipanti a una riunione organizzata da Babek, mentre Babek non può dare il controllo ad altri partecipanti.
+
+> [!NOTE]
+> Per dare e assumere il controllo del contenuto condiviso durante la condivisione, entrambe le parti devono usare il client desktop teams. Il controllo non è supportato quando una delle parti sta usando teams in un browser. Questo è dovuto a una limitazione tecnica che stiamo pianificando di risolvere. 
 
 ### <a name="allow-an-external-participant-to-give-or-request-control"></a>Consentire a un partecipante esterno di dare o richiedere il controllo
 

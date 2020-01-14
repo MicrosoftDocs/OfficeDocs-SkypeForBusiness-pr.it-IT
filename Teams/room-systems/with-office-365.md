@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Office 365.
-ms.openlocfilehash: 467a7300a2912dcaffe66a44f0f6e181d36ced1c
-ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
+ms.openlocfilehash: cda552fbc38196751ccdcc105bcf9973fe321edd
+ms.sourcegitcommit: 208179a3dd166f53b5a3058242cb84207909f4ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38675440"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41104475"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-office-365"></a>Distribuire le sale di Microsoft teams con Office 365
 
@@ -205,7 +205,7 @@ Dopo aver completato i passaggi precedenti per abilitare l'account Microsoft tea
 
 4. Fare clic sull'opzione **licenze** .
 
-5. Nella sezione **assegnazione licenze** è necessario selezionare Skype for business online (piano 2) o Skype for business online (piano 3), a seconda della licenza e delle operazioni che si sono decisi in termini di necessità di VoIP aziendale. È necessario usare una licenza di piano 3 Se si vuole usare Cloud PBX in Microsoft teams rooms. Sarà necessario CloudPBX per la connettività vocale. Configura quindi la chiamata vocale ibrida o PSTN in base al metodo di connettività PSTN. Per altre informazioni, Vedi [licenze di Microsoft teams Rooms](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-room-systems-v2) .
+5. Nella sezione **assegnazione licenze** è necessario selezionare Skype for business online (piano 2) o Skype for business online (piano 3), a seconda della licenza e delle operazioni che si sono decisi in termini di necessità di VoIP aziendale. È necessario usare una licenza di piano 3 Se si vuole usare Cloud PBX in Microsoft teams rooms. Sarà necessario CloudPBX per la connettività vocale. Configura quindi la chiamata vocale ibrida o PSTN in base al metodo di connettività PSTN. Per altre informazioni, Vedi [licenze di Microsoft teams Rooms](skype-room-systems-v2.md) .
 
 6. Fare clic su **Salva** per completare l'attività.
 
@@ -263,4 +263,4 @@ Per la convalida, dovresti essere in grado di usare qualsiasi client Skype for b
 
 [Gestire le sale di Microsoft Teams](skype-room-systems-v2.md)
 
-[Licenze di Microsoft teams rooms](/SfbOnline/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-room-systems-v2.md)
+[Licenze di Microsoft teams rooms](skype-room-systems-v2.md)

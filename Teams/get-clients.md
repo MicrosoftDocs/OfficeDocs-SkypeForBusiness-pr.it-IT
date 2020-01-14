@@ -17,12 +17,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5e47e8e4765bc93c2281efc07766f77f173b0fad
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: f698d46be07c60d2034b2e355ad70b488b2d7646
+ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40990851"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41111480"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere client per Microsoft Teams 
 
@@ -39,7 +39,7 @@ Microsoft teams include client disponibili per il desktop (Windows, Mac e Linux)
 > [!TIP]
 > Vedere la sessione seguente per informazioni sui vantaggi del client desktop di Windows, su come pianificare la procedura e su come distribuirla: [Team client desktop di Windows](https://aka.ms/teams-clients)
 
-Il client desktop Microsoft teams è un'applicazione autonoma ed è [disponibile anche in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/teams-install). Teams è disponibile per Windows (7 +), entrambe le versioni a 32 bit e 64 bit, macOS (10.10 +) e Linux (in `.deb` e `.rpm` formati). In Windows i team richiedono .NET Framework 4,5 o versioni successive; il programma di installazione di teams offrirà l'installazione per se non è disponibile. Su Linux, i gestori di pacchetti come apt e yum cercheranno di installare qualsiasi requisito. Tuttavia, se non è così, dovrai installare i requisiti segnalati prima di installare teams su Linux.
+Il client desktop Microsoft teams è un'applicazione autonoma ed è [disponibile anche in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/teams-install). Teams è disponibile per Windows (7 +), Windows Server (2012 R2 +), entrambe le versioni a 32 bit e 64 bit, macOS (10.10 +) e Linux (in `.deb` e `.rpm` formati). In Windows i team richiedono .NET Framework 4,5 o versioni successive; il programma di installazione di teams offrirà l'installazione per se non è disponibile. Su Linux, i gestori di pacchetti come apt e yum cercheranno di installare qualsiasi requisito. Tuttavia, se non è così, dovrai installare i requisiti segnalati prima di installare teams su Linux.
 
 I client desktop supportano il supporto delle comunicazioni in tempo reale (audio, video e condivisione di contenuti) per le riunioni del team, le chiamate di gruppo e quelle private uno-a-uno.
 
@@ -152,7 +152,7 @@ sudo dnf check-update
 sudo dnf install teams
 ```
 
-Aternatively, per usare yum al posto di DNF:
+In alternativa, per usare yum al posto di DNF:
 ```
 yum check-update
 sudo yum install teams
