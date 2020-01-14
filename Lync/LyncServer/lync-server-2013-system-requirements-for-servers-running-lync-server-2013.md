@@ -10,20 +10,22 @@ ms:contentKeyID: 48184564
 ms.date: 07/24/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6ad30b9687c9566adb7936612e71ae9f41e69095
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 301cd234e2218fc806423a9ffe9beb49994402f2
+ms.sourcegitcommit: 208179a3dd166f53b5a3058242cb84207909f4ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40974753"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41104495"
 ---
+# <a name="system-requirements-for-servers-running-lync-server-2013"></a>Requisiti di sistema per i server Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="system-requirements-for-servers-running-lync-server-2013"></a>Requisiti di sistema per i server Lync Server 2013
+
 
 </div>
 
@@ -73,11 +75,13 @@ Standard Edition e Enterprise Edition Server possono usare una delle opzioni seg
 
 Installare il software del sistema operativo nel server Standard Edition o nel front-end di Enterprise Edition. Applica tutti gli aggiornamenti per riportare il sistema operativo all'aggiornamento più recente e al livello di aggiornamento richiesto coerente con gli standard dell'organizzazione. Per altre informazioni sui requisiti operativi, vedere [supporto dei sistemi operativi server e strumenti in Lync server 2013](lync-server-2013-server-and-tools-operating-system-support.md) nella documentazione relativa alla supportabilità.
 
+> [!NOTE] L'aggiornamento sul posto del sistema operativo non è supportato con Lync Server 2013.  È necessario distribuire un pool separato e eseguire la migrazione degli utenti nel nuovo pool con un sistema operativo diverso.
+
 <div>
 
 
 > [!NOTE]  
-> Per Lync Server 2013 per l'utilizzo in Windows Server 2012 R2, potrebbe essere necessario modificare il valore di una chiave del registro di sistema in Windows Server. Questa modifica può essere necessaria affinché i certificati funzionino correttamente e i client vengano registrati con Survivable Branch Appliances. Per altre informazioni, vedere <A class=uri href="http://support.microsoft.com/kb/2901554">http://support.microsoft.com/kb/2901554</A>.
+> Per Lync Server 2013 per l'utilizzo in Windows Server 2012 R2, potrebbe essere necessario modificare il valore di una chiave del registro di sistema in Windows Server. Questa modifica può essere necessaria affinché i certificati funzionino correttamente e i client vengano registrati con Survivable Branch Appliances. Per altre informazioni, vedere <A class=uri href="https://support.microsoft.com/kb/2901554">https://support.microsoft.com/kb/2901554</A>.
 
 
 
