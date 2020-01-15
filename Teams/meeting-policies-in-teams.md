@@ -20,12 +20,12 @@ f1keywords:
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams.
-ms.openlocfilehash: a3978b3615fabbff000a20d53408d4fbc1d98f12
-ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
+ms.openlocfilehash: 20382a41ac8d0a78d56ebcb51e852f5302ea74a7
+ms.sourcegitcommit: 447c5ffc27c5b0928e033f85914810af56e510ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111710"
+ms.locfileid: "41120399"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri delle riunioni in teams
 
@@ -120,7 +120,7 @@ Se si disattiva questa opzione, gli utenti non potranno pianificare le riunioni 
 
 ### <a name="allow-channel-meeting-scheduling"></a>Consentire la programmazione di una riunione di canale
 
-Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di teams.  Se si disattiva questa impostazione, l'opzione **Pianifica una riunione** non sarà disponibile per l'utente quando avvia una riunione in un canale di teams e l'opzione **Seleziona un canale da soddisfare** non sarà disponibile per l'utente quando pianifica una riunione da riunioni in teams.
+Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di teams.  Se si disattiva questa impostazione, l'opzione **Pianifica una riunione** non sarà disponibile per l'utente quando avvia una riunione in un canale di teams e l'opzione **Aggiungi un canale** è disabilitata per gli utenti di teams.
 
 ![Screenshot che mostra l'opzione Pianifica una riunione in teams](media/meeting-policies-schedule-a-meeting.png)
 
@@ -130,7 +130,7 @@ Si tratta di un criterio per utente e si applica prima che venga avviata una riu
 
 Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se gli utenti possono pianificare riunioni private in teams. Una riunione è privata quando non viene pubblicata in un canale di un team.
 
-Tieni presente che se disattivi Consenti la pianificazione di **riunioni private** e **Consenti la pianificazione della riunione di canale**, l'opzione **Pianifica una riunione** non sarà disponibile e gli utenti non potranno pianificare le riunioni in teams.
+Tieni presente che se disattivi **Consenti la pianificazione di riunioni private** e **Consenti la pianificazione delle riunioni di canale**, le opzioni **Aggiungi partecipanti necessari** e **Aggiungi canale** sono disabilitate per gli utenti in teams.
 
 <a name="bkaudioandvideo"> </a>
 
@@ -263,6 +263,8 @@ Esaminiamo l'esempio seguente.
 
 Daniela può dare il controllo del desktop o della finestra condivisa ad altri partecipanti a una riunione organizzata da Babek, mentre Babek non può dare il controllo ad altri partecipanti.
 
+Per usare PowerShell per controllare chi può dare controllo o accettare richieste di controllo, usa il cmdlet AllowParticipantGiveRequestControl.
+
 > [!NOTE]
 > Per dare e assumere il controllo del contenuto condiviso durante la condivisione, entrambe le parti devono usare il client desktop teams. Il controllo non è supportato quando una delle parti sta usando teams in un browser. Questo è dovuto a una limitazione tecnica che stiamo pianificando di risolvere. 
 
@@ -276,6 +278,8 @@ Si tratta di un criterio per utente. Questa impostazione controlla se i partecip
    - Utente federato  
 
 Se gli utenti federati possono dare il controllo agli utenti esterni mentre la condivisione è controllata dal **consentire a un partecipante esterno di dare o richiedere** l'impostazione del controllo nella propria organizzazione.
+
+Per usare PowerShell per controllare se i partecipanti esterni possono dare controllo o accettare richieste di controllo, usare il cmdlet AllowExternalParticipantGiveRequestControl.
 
 ### <a name="allow-powerpoint-sharing"></a>Consentire la condivisione di PowerPoint
 
