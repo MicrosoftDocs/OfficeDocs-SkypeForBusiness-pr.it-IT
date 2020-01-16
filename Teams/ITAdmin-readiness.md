@@ -16,12 +16,12 @@ f1keywords:
 description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse per gli amministratori che spiegano come pianificare, distribuire ed eseguire Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e0fd8f08094549e26612872b73d42b96cbbb0080
-ms.sourcegitcommit: 2fd1fcb0e5944f36261e551df04819713d868a11
+ms.openlocfilehash: 3216327e5977429ca1d794dc719c89a216fe8fb9
+ms.sourcegitcommit: f742ad9ba61d6cc52a9ed6885d1f2893bcfad354
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886183"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41165606"
 ---
 # <a name="admin-training-for-microsoft-teams"></a>Formazione per amministratori per Microsoft Teams
 
@@ -90,7 +90,7 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 
 | Modulo | Video | Deck di PowerPoint |
 | ------------ | -------------------- | -------------------- |
-| [Microsoft Mechanics-teams Essentials per il canale YouTube](https://aka.ms/MicrosoftTeamsforIT) | [Video: teams Essentials for it](https://www.youtube.com/watch?v=MfDB7VenWuA&list=PLXtHYVsvn_b_JeDjgD5XdkyHTDXdYgPGn) (10:13 min)<br>[Video: distribuire & configurare teams-Intro](https://www.youtube.com/watch?v=o2mlsUubIO4&list=PLXtHYVsvn_b_JeDjgD5XdkyHTDXdYgPGn&index=2) (8:22 min)  ||
+| [Microsoft Mechanics-teams Essentials per il canale YouTube](https://aka.ms/MicrosoftTeamsforIT) | [Video: teams Essentials for it](https://www.youtube.com/watch?v=MfDB7VenWuA&list=PLXtHYVsvn_b_JeDjgD5XdkyHTDXdYgPGn) (10:13 min)<br>[Video: distribuire & configurare teams-Intro](https://www.youtube.com/watch?v=o2mlsUubIO4&list=PLXtHYVsvn_b_JeDjgD5XdkyHTDXdYgPGn&index=2) (8:22 min)  <br>[Video: sicurezza e conformità](https://youtu.be/91lHNKVVvQ4) (12:42 min)||
 | Fondazioni-componenti principali | [Video](https://aka.ms/teams-foundations) | [Presentazione](https://aka.ms/teams-foundations-deck) |
 | Client desktop di Windows | [Video](https://aka.ms/teams-clients) | [Presentazione](https://aka.ms/teams-clients-deck) |
 | Governance, gestione e ciclo di vita | [Video](https://aka.ms/teams-governance) | [Presentazione](https://aka.ms/teams-governance-deck) |
