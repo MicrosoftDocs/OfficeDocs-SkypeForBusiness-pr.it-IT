@@ -16,12 +16,12 @@ f1keywords: ms.teamsadmincenter.policypackages.overview
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams.
-ms.openlocfilehash: ecfc6ae6fb1bb4d9632b8cd04b35dcee6d63359d
-ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
+ms.openlocfilehash: 87fda86d1dbe09858c3850dc92ee5085666d8ba7
+ms.sourcegitcommit: 52d924e654909a2017ce42ba9d1b4bbc3efa9262
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38679828"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "41205293"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
 
@@ -37,19 +37,20 @@ I team attualmente includono i seguenti pacchetti di criteri.
 
 |**Nome pacchetto**  |**Descrizione** |
 |---------|---------|
-|Pacchetto Education_Teacher     |Crea un set di criteri e impostazioni dei criteri applicabili agli insegnanti.      |
-|Pacchetto Education_PrimaryStudent    |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti primari.|
-|Pacchetto Education_SecondaryStudent    |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti secondari.         |
-|Pacchetto Education_HigherEducationStudent    |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti dell'istruzione superiore.|
-|Pacchetto SmallMediumBusiness_BusinessVoice    |Crea un criterio di configurazione dell'app che include le app per un'esperienza di Business Voice.|
+|Istruzione (studente di istruzione superiore)    |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti dell'istruzione superiore.|
+|Istruzione (studente di scuola elementare)   |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti primari.|
+|Istruzione (studente di scuola secondaria)    |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti secondari.         |
+|Istruzione (insegnante)    |Crea un set di criteri e impostazioni dei criteri applicabili agli insegnanti.      |
+|Business Voice |Crea un criterio di configurazione dell'app che include le app per un'esperienza di Business Voice.|
+|Addetto alla sicurezza pubblica   |Crea un set di criteri e impostazioni dei criteri applicabili agli addetti alla sicurezza pubblica dell'organizzazione.|
 
 > [!NOTE]
 > Aggiungeremo altri pacchetti di criteri nelle versioni future dei team, quindi controlla le informazioni più aggiornate.  
 
 A ogni singolo criterio viene assegnato il nome del pacchetto di criteri in modo da poter identificare facilmente i criteri collegati a un pacchetto di criteri.
-Ad esempio, quando si assegna il pacchetto di criteri Education_Teacher agli insegnanti dell'Istituto di istruzione, viene creato un criterio denominato Education_Teacher per ogni criterio nel pacchetto.
+Ad esempio, quando si assegna il pacchetto di criteri Education (Teacher) agli insegnanti dell'Istituto di istruzione, viene creato un criterio denominato Education_Teacher per ogni criterio nel pacchetto.
 
-![Screenshot del pacchetto dei criteri di Education_Teacher](media/policy-packages-education_teacher.png)
+![Screenshot del pacchetto di criteri Education (Teacher)](media/policy-packages-education_teacher.png)
 
 ## <a name="how-to-use-policy-packages"></a>Come usare i pacchetti di criteri
 
@@ -105,4 +106,4 @@ Questo problema può verificarsi se uno o più criteri del pacchetto non sono st
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Pacchetti dei criteri di Microsoft teams per gli amministratori EDU](policy-packages-edu.md)
+[Pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori](policy-packages-edu.md)

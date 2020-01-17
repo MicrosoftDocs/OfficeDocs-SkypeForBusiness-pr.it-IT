@@ -1,5 +1,5 @@
 ---
-title: Registrazione delle riunioni cloud Teams
+title: Registrazione delle riunioni cloud di Teams
 author: tonysmit
 ms.author: tonysmit
 manager: serdars
@@ -14,16 +14,19 @@ search.appverid: MET150
 description: Linee guida pratiche per la distribuzione di funzionalità cloud Voice in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9feaffd1677d96c53dee57b03f9061c6fa8184ce
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 7c2a3cac9c61851f9b4c7a6026d94058568b1667
+ms.sourcegitcommit: f1df996a7368fb8f447af877bc2e9f4d4d925f2c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516942"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41217699"
 ---
-# <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni cloud Teams
+# <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni cloud di Teams
 
-In Microsoft teams gli utenti possono registrare le riunioni del team e le chiamate di gruppo per acquisire attività audio, video e condivisione dello schermo. Esiste anche un'opzione per le registrazioni per la trascrizione automatica, in modo che gli utenti possano riprodurre le registrazioni delle riunioni con sottotitoli chiusi e cercare elementi di discussione importanti nella trascrizione. La registrazione si verifica nel cloud e viene salvata in [Microsoft Stream](https://docs.microsoft.com/stream/), in modo che gli utenti possano condividerla in tutta sicurezza nell'organizzazione.
+> [!IMPORTANT]
+> **In futuro, stiamo effettuando una modifica della configurazione** in cui la caratteristica di registrazione delle riunioni di team sarà attivata per i clienti i cui dati del team sono archiviati in paese anche se Microsoft Stream non è disponibile nell'area di residenza dati in paese. Quando questa modifica ha effetto, le registrazioni delle riunioni verranno archiviate per impostazione predefinita nell'area di flusso Microsoft più vicina. Se i dati del team sono archiviati in paese e si preferisce archiviare le registrazioni delle riunioni nel paese, è consigliabile disattivare le registrazioni delle riunioni e quindi attivarle dopo la distribuzione di Microsoft Stream nell'area del paese. Per altre informazioni, vedere [dove sono archiviate le registrazioni delle riunioni](#where-your-meeting-recordings-are-stored).
+
+In Microsoft teams gli utenti possono registrare le riunioni del team e le chiamate di gruppo per acquisire attività audio, video e condivisione dello schermo. È anche disponibile un'opzione per la trascrizione automatica delle registrazioni, che consente agli utenti di riprodurre le registrazioni delle riunioni con sottotitoli e cercare gli elementi di discussione importanti nella trascrizione. La registrazione si verifica nel cloud e viene salvata in [Microsoft Stream](https://docs.microsoft.com/stream/), in modo che gli utenti possano condividerla in tutta sicurezza nell'organizzazione.
 
 Correlato: [documentazione dell'utente finale di teams Meeting recording](https://aka.ms/recordmeeting)
 
@@ -64,15 +67,19 @@ Se un amministratore di Microsoft Stream ha configurato i criteri per le [linee 
 
 ### <a name="turn-on-or-turn-off-cloud-recording"></a>Attivare o disattivare la registrazione cloud
 
-Usare l'impostazione AllowCloudRecording in TeamsMeetingPolicy in teams PowerShell per controllare se le riunioni di un utente possono essere registrate o meno. Per ulteriori informazioni sulla gestione di TeamsMeetingPolicy con Office 365 PowerShell, vedere [qui](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell).
+Puoi usare l'interfaccia di amministrazione di Microsoft teams o PowerShell per impostare un criterio per la riunione di teams per controllare se le riunioni dell'utente possono essere registrate.
 
-Tieni presente che sia l'organizzatore della riunione che l'iniziatore della registrazione devono avere le autorizzazioni di registrazione per registrare la riunione. A meno che non siano stati assegnati criteri personalizzati agli utenti, gli utenti ottengono un criterio globale, che ha AllowTranscription disabilitato per impostazione predefinita.
+Nell'interfaccia di amministrazione di Microsoft teams attivare o disattivare l'impostazione **Consenti registrazione cloud** nel criterio riunione. Per altre informazioni, vedere [gestire i criteri delle riunioni in teams](meeting-policies-in-teams.md#allow-cloud-recording).
+
+Usando PowerShell, configuri l'impostazione AllowCloudRecording in TeamsMeetingPolicy. Per altre informazioni, vedere [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy).
+
+Tieni presente che sia l'organizzatore della riunione che l'iniziatore della registrazione devono avere le autorizzazioni di registrazione per registrare la riunione. A meno che non siano stati assegnati criteri personalizzati agli utenti, gli utenti ottengono il criterio globale, che ha AllowCloudRecording disabilitato per impostazione predefinita.
 
 Affinché un utente rientri nei criteri globali, usare il cmdlet seguente per rimuovere una specifica assegnazione di criteri per un utente:
 
 `Grant-CsTeamsMeetingPolicy -Identity {user} -PolicyName $null -Verbose`
 
-Per modificare il valore di AllowCloudRecording nei criteri globali, usare il cmdlet seguente:
+Per modificare il valore di AllowCloudRecording nel criterio globale, usare il cmdlet seguente:
 
 `Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $false`
 </br>
@@ -85,21 +92,43 @@ Per modificare il valore di AllowCloudRecording nei criteri globali, usare il cm
 | Voglio che la maggior parte degli utenti sia in grado di registrare le proprie riunioni, ma disabilitare selettivamente utenti specifici che non sono autorizzati a registrare |        <ol><li>Conferma GlobalCsTeamsMeetingPolicy ha AllowCloudRecording = true<li>La maggior parte degli utenti ha il CsTeamsMeetingPolicy globale o uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = true<li>A tutti gli altri utenti è stato concesso uno dei criteri di CsTeamsMeetingPolicy con AllowCloudRecording = false</ol>         |
 |                                                   Voglio che la registrazione sia disattivata per 100%                                                   |                                                                <ol><li>Conferma CsTeamsMeetingPolicy globale ha AllowCloudRecording = false<li>A tutti gli utenti è stato concesso il CsTeamsMeetingPolicy globale o uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = false                                                                 |
 |      Voglio che la registrazione venga disabilitata per la maggior parte degli utenti, ma in modo selettivo consente agli utenti specifici autorizzati a registrare       | <ol><li>Conferma CsTeamsMeetingPolicy globale ha AllowCloudRecording = false<li>Alla maggior parte degli utenti è stato concesso il CsTeamsMeetingPolicy globale o uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = false<li>A tutti gli altri utenti è stato concesso uno dei criteri di CsTeamsMeetingPolicy con AllowCloudRecording = true <ol> |
-|                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                        |
+|                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                  |
+#### <a name="where-your-meeting-recordings-are-stored"></a>Dove sono archiviate le registrazioni delle riunioni
+
+Le registrazioni delle riunioni sono archiviate nello spazio di archiviazione cloud di Microsoft Stream. Attualmente, la caratteristica di registrazione della riunione è disattivata per i clienti i cui dati del team sono archiviati nel paese se Microsoft Stream non è disponibile nell'area di residenza dati in paesi in cui sono archiviati i dati. In futuro, la funzionalità di registrazione della riunione verrà attivata per i clienti i cui dati sono archiviati in paese anche se Microsoft Stream non è disponibile nell'area di residenza dati in paese.
+
+Quando questa modifica avrà effetto, le registrazioni delle riunioni verranno archiviate per impostazione predefinita nell'area geografica più vicina per Microsoft Stream. Se i dati del team sono archiviati in paese e si preferisce archiviare le registrazioni delle riunioni nel paese, è consigliabile disattivare la caratteristica e quindi attivarla dopo la distribuzione di Microsoft Stream nell'area di residenza dati in paese. Per disattivare la funzionalità per tutti gli utenti dell'organizzazione, nell'interfaccia di amministrazione di Microsoft teams disattivare l'impostazione **Consenti registrazione cloud** nei criteri riunione globale teams.
+
+Ecco un riepilogo delle operazioni che si verificano quando si attiva la registrazione delle riunioni quando questa modifica ha effetto:
+
+|Se si attiva la registrazione delle riunioni... |Le registrazioni delle riunioni sono archiviate...  |
+|---------|---------|
+|prima che Microsoft Stream sia disponibile nell'area di residenza dati in paese    |nell'area del flusso Microsoft più vicina         |
+|dopo che Microsoft Stream è disponibile nell'area di residenza dati in paese    | nell'area di residenza dati in paese        |
+
+Per gli inquilini nuovi ed esistenti che non hanno ancora attivato la registrazione delle riunioni, le nuove registrazioni vengono archiviate nel paese dopo che Microsoft Stream è disponibile nell'area di residenza dei dati nazionali. Tuttavia, qualsiasi tenant che Abilita la registrazione delle riunioni prima che Microsoft Stream sia disponibile nell'area di residenza dati in-paese continuerà a usare lo spazio di archiviazione Microsoft Stream per le registrazioni esistenti e quelle nuove anche dopo che Microsoft Stream è disponibile nella pagina area di residenza dati in paese.
+
+Per trovare l'area geografica in cui sono archiviati i dati di Microsoft Stream, fare clic su Microsoft Stream **?** nell'angolo in alto a destra fare clic **su informazioni su Microsoft Stream**, quindi fare clic sui **dati archiviati**.  Per altre informazioni sulle aree geografiche in cui Microsoft Stream archivia i dati, vedere [domande frequenti su Microsoft Stream](https://docs.microsoft.com/stream/faq#which-regions-does-microsoft-stream-host-my-data-in).
+
+Per altre informazioni sulla posizione di archiviazione dei dati tra i vari servizi in Office 365, vedere [dove si trovano i dati?](https://products.office.com/en-us/where-is-your-data-located?rtc=1)
 
 ### <a name="turn-on-or-turn-off-recording-transcription"></a>Attivare o disattivare la trascrizione della registrazione
 
-Quando gli utenti registrano le riunioni dei team, possono verificare se una trascrizione deve essere generata automaticamente dopo la registrazione della riunione. Se gli amministratori hanno disabilitato la funzionalità di trascrizione per l'organizzatore della riunione e l'iniziatore della registrazione, l'iniziatore della registrazione non otterrà una scelta per trascrivere le registrazioni delle riunioni.
+Quando gli utenti registrano le riunioni dei team, possono verificare se una trascrizione deve essere generata automaticamente dopo la registrazione della riunione. Se è stata disabilitata la funzionalità di trascrizione per l'organizzatore della riunione e l'iniziatore della registrazione, l'iniziatore della registrazione non otterrà la possibilità di trascrivere le registrazioni delle riunioni.
 
-Usare l'impostazione AllowTranscription in TeamsMeetingPolicy in teams PowerShell per controllare se un iniziatore di registrazione può scegliere di trascrivere la registrazione della riunione. Per ulteriori informazioni sulla gestione di TeamsMeetingPolicy con Office 365 PowerShell, vedere [qui](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell).
+Puoi usare l'interfaccia di amministrazione di Microsoft teams o PowerShell per impostare un criterio per la riunione di teams per controllare se l'iniziatore della registrazione riceve una scelta per trascrivere la registrazione della riunione.
 
-A meno che non siano stati assegnati criteri personalizzati agli utenti, ottengono criteri globali, con AllowTranscription disabilitato per impostazione predefinita.
+Nell'interfaccia di amministrazione di Microsoft teams attivare o disattivare l'impostazione **Consenti trascrizione** nei criteri della riunione. Per altre informazioni, vedere [gestire i criteri delle riunioni in teams](meeting-policies-in-teams.md#allow-transcription).
+
+Usando PowerShell, configuri l'impostazione AllowTranscription in TeamsMeetingPolicy. Per altre informazioni, vedere [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy).
+
+A meno che non siano stati assegnati criteri personalizzati agli utenti, gli utenti ottengono il criterio globale, che ha AllowTranscription disabilitato per impostazione predefinita.
 
 Affinché un utente rientri nei criteri globali, usare il cmdlet seguente per rimuovere una specifica assegnazione di criteri per un utente:
 
 `Grant-CsTeamsMeetingPolicy -Identity {user} -PolicyName $null -Verbose`
 
-Per modificare il valore di AllowCloudRecording nei criteri globali, usare il cmdlet seguente:
+Per modificare il valore di AllowCloudRecording nel criterio globale, usare il cmdlet seguente:
 
 `Set-CsTeamsMeetingPolicy -Identity Global -AllowTranscription $false`
 </br>
@@ -118,15 +147,13 @@ Per modificare il valore di AllowCloudRecording nei criteri globali, usare il cm
 Le dimensioni di una registrazione di 1 ora sono di 400 MB. Verificare di aver compreso la capacità necessaria per i file registrati e di avere sufficiente spazio di archiviazione disponibile in Microsoft Stream.  Leggere [questo articolo](https://docs.microsoft.com/stream/license-overview) per comprendere lo spazio di archiviazione di base incluso nell'abbonamento e come acquistare ulteriore spazio di archiviazione.
 
 ## <a name="manage-meeting-recordings"></a>Gestire le registrazioni delle riunioni
+
 Le registrazioni delle riunioni sono considerate contenuto di proprietà del tenant. Se il proprietario della registrazione lascia la società, l'amministratore può aprire l'URL del video di registrazione in Microsoft Stream in modalità amministratore. L'amministratore può eliminare la registrazione, aggiornare i metadati della registrazione o modificare le autorizzazioni per il video di registrazione. Leggi altre informazioni sulle [funzionalità di amministrazione in Stream](https://docs.microsoft.com/stream/manage-content-permissions).
 
 ## <a name="compliance-and-ediscovery-for-meeting-recordings"></a>Conformità e eDiscovery per le registrazioni delle riunioni
+
 Le registrazioni delle riunioni sono archiviate in Microsoft Stream, che è conforme a Office 365 Tier-C. Per supportare le richieste di rilevamento e-individuazione per gli amministratori di conformità che sono interessati alle registrazioni delle riunioni o delle chiamate per i flussi Microsoft, il messaggio di registrazione completata è disponibile nella funzionalità di ricerca del contenuto per Microsoft teams. Gli amministratori della conformità possono cercare la parola chiave "registrazione" nella riga dell'oggetto dell'elemento nell'anteprima della ricerca di contenuto di conformità e individuare le registrazioni delle riunioni e delle chiamate nell'organizzazione. Un prerequisito per consentire loro di visualizzare tutte le registrazioni è che dovranno essere configurate in Microsoft Stream con l'accesso tramite amministratore. Leggi altre informazioni sull' [assegnazione di autorizzazioni di amministratore in Stream](https://docs.microsoft.com/stream/assign-administrator-user-role).
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
+## <a name="related-topics"></a>Argomenti correlati
 
-Windows PowerShell is all about managing users and what users are allowed or not allowed to do. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo con l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
-
-- [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
-- [Configurare il computer per Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525038)
-
+- [Panoramica di PowerShell Teams](teams-powershell-overview.md)
