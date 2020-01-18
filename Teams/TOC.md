@@ -244,7 +244,6 @@
 ### [Condivisione delle chiamate e risposta alle chiamate di gruppo](call-sharing-and-group-call-pickup.md)
 ### [Criteri di chiamata](teams-calling-policy.md)
 ### [Modalità di linea condivisa](shared-line-appearance.md)
-### [Informazioni su come gli utenti possono bloccare le chiamate PSTN nei client di Teams](block-pstn-calls-on-Teams-clients.md)
 
 
 ## Piani di chiamata

@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b7ca2b091cfe27c1e81d429ac95f085b52c8465d
-ms.sourcegitcommit: c15ab82834005b9a19247e06488f1f21161fc426
+ms.openlocfilehash: 6c3f0b5c545f1a7e8900c01a79544079ea4fedcc
+ms.sourcegitcommit: bcac0d94f6eb7132fc17b0ace62e7028f77b0ee6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/13/2019
-ms.locfileid: "40019970"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41230316"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -43,8 +43,8 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 | La cassetta postale dell'utente è ospitata in: | eDiscovery| Blocco&nbsp;legale | Conservazione| MGMT per team e canali |Creare e visualizzare riunioni in teams| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot| 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Supporto per più paesi|
-|**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Sì|Supporto per più paesi|
+|**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Sì|Sì|Sì|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Sì|Sì|Supporto per più paesi|
+|**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Sì|Sì|Sì|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Sì|Sì|Supporto per più paesi|
 |**Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
 |**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
 
@@ -60,8 +60,7 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 <sup>6</sup> se uno dei proprietari di un team può aggiungere connettori, tutti gli altri membri del team saranno in grado di farlo, anche se le cassette postali vengono ospitate in locale.
 
-
-Altre informazioni:
+<sup>7</sup> solo contatti nella cartella Contatti predefinita. L'accesso ad altri contatti o cartelle secondarie non è supportato.
 
 ## <a name="requirements-to-get-the-most-out-of-microsoft-teams"></a>Requisiti per ottenere il massimo da Microsoft Teams
 
