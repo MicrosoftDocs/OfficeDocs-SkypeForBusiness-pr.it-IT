@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2aa6a4f4a498f5b694e3ff23d4043374def6fbff
-ms.sourcegitcommit: 70323d648e9ae3b20a710120b9dcdc452afc462b
+ms.openlocfilehash: b6b36f38ce2c72c085a7d52f403eba4bde7e8670
+ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37698029"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41268482"
 ---
 # <a name="faq--upgrading-from-skype-for-business-to-microsoft-teams"></a>Domande frequenti - Aggiornamento da Skype for Business a Microsoft Teams
 
@@ -200,7 +200,7 @@ Oltre alla possibilità per gli utenti di identificare le sale riunioni di Micro
 
 ### <a name="will-skype-room-systems-v1-be-updated-to-support-teams-meetings"></a>Skype Room Systems v1 verrà aggiornato per supportare le riunioni di Teams?
 
-I dispositivi Lync Room System (LRS) con software Skype Room System versione 1 (SRS v1) hanno raggiunto la fine del supporto il 9 ottobre 2018. Questo vuol dire che il software Skype Room Systems v1 non otterrà più aggiornamenti di prodotto o correzioni. I clienti con dispositivi Lync Room System che usano software Skype Room System v1 sono invitati ad aggiornare i dispositivi a Microsoft Teams Rooms. [Altre informazioni](room-systems/lrs-migration.md).
+I dispositivi Lync Room System (LRS) con software Skype Room System versione 1 (SRS v1) hanno raggiunto la fine del supporto il 9 ottobre 2018. Questo vuol dire che il software Skype Room Systems v1 non otterrà più aggiornamenti di prodotto o correzioni. I clienti con dispositivi Lync Room System che usano software Skype Room System v1 sono invitati ad aggiornare i dispositivi a Microsoft Teams Rooms. [Altre informazioni](rooms/lrs-migration.md).
 
 ## <a name="management-capabilities"></a>Funzionalità di gestione
 
