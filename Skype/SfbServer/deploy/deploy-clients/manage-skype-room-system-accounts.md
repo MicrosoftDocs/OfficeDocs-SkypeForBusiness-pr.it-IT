@@ -11,19 +11,19 @@ localization_priority: Normal
 ms.assetid: 7b389efc-9685-42e9-9504-be437d20ff57
 ms.collection: M365-voice
 description: Leggi questo argomento per informazioni su come gestire gli account di Skype room System.
-ms.openlocfilehash: 7594532e5da42ac9f1b41444052ec51c3779ee2b
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: d1cd40b12da89eed651152dd3b7b91914826d62e
+ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41001486"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41268472"
 ---
 # <a name="manage-skype-room-system-accounts"></a>Gestire gli account di sistema per Skype room
  
 Leggi questo argomento per informazioni su come gestire gli account di Skype room System. 
 
 > [!NOTE]
-> Microsoft teams Rooms è un prodotto diverso con diverse dipendenze e procedure di distribuzione. Per informazioni su Microsoft teams rooms, vedere la panoramica sulla [gestione](../../manage/skype-room-systems-v2/skype-room-systems-v2.md)di Microsoft teams rooms.
+> Microsoft teams Rooms è un prodotto diverso con diverse dipendenze e procedure di distribuzione. Per informazioni su Microsoft teams rooms, vedere la panoramica sulla [gestione](https://docs.microsoft.com/microsoftteams/rooms/rooms-manage)di Microsoft teams rooms.
   
 ## <a name="move-the-skype-room-system-account-between-pools"></a>Trasferire l'account di sistema room Skype tra i pool
 
