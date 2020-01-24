@@ -1,5 +1,5 @@
 ---
-title: Trasferire numeri di telefono
+title: Trasferire numeri di telefono in Business Voice
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -15,24 +15,29 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 39890cc28d113d76d647d4c2dbc30b242fdd8ab1
-ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
+ms.openlocfilehash: 05c9ebb3e61d50cd3bf82ad64e5f509dc5ffa4ee
+ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37972057"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41268702"
 ---
 # <a name="move-port-phone-numbers-to-business-voice"></a>Trasferire numeri di telefono in Business Voice
 
-Quando la procedura guidata Attività iniziali configura Business Voice, assegna numeri di telefono per la linea telefonica principale dell'azienda e per tutti gli utenti a cui è stata assegnata una licenza di Business Voice. Se si hanno già numeri di telefono che si vogliono mantenere nel passaggio a Business Voice, è possibile trasferirli con un processo denominato portabilità del numero di telefono. Quando si trasferiscono numeri di telefono in Business Voice, è possibile assegnarli a utenti e servizi, sostituendo i numeri temporanei configurati dalla procedura guidata Attività iniziali.
+Quando la procedura guidata Attività iniziali consente di configurare Business Voice, assegna numeri di telefono per la linea principale dell'azienda e per tutti gli utenti a cui è stata assegnata una licenza di Business Voice. Se si hanno già numeri di telefono che si vogliono mantenere nel passaggio a Business Voice, è possibile trasferirli con un processo denominato portabilità del numero di telefono. Dopo aver trasferito i numeri di telefono in Business Voice, è possibile assegnarvi utenti e servizi. I vecchi numeri sostituiscono i numeri temporanei assegnati dalla procedura guidata Attività iniziali.
 
-Prima di spostare i numeri in Business Voice, vedere [Domande comuni sul trasferimento dei numeri di telefono](../transferring-phone-numbers-common-questions.md). L'articolo include risposte a domande sui paesi o le aree geografiche supportate, sui numeri che possono e non possono essere trasferiti, sulle informazioni necessarie e così via.
+Prima di trasferire i numeri in Business Voice, vedere [Domande comuni sul trasferimento dei numeri di telefono](../transferring-phone-numbers-common-questions.md). L'articolo include risposte a domande sui paesi e le aree geografiche supportate, sui numeri che possono e non possono essere trasferiti e sulle informazioni necessarie.
 
-Quando si è pronti per trasferire i numeri di telefono in Business Voice, seguire la procedura descritta in [Trasferire numeri di telefono in Office 365](../transfer-phone-numbers-to-office-365.md) per creare un ordine di trasferimento. Un ordine di trasferimento include tutte le informazioni necessarie per spostare i numeri dal gestore telefonico corrente a Business Voice.
+Quando si è pronti per trasferire i numeri di telefono in Business Voice, seguire la procedura descritta in [Trasferire numeri di telefono in Office 365](../transfer-phone-numbers-to-office-365.md) per creare un ordine di portabilità. Un ordine di portabilità include le informazioni necessarie per trasferire i numeri dal gestore del servizio telefonico corrente a Business Voice.
 
-Dopo aver trasferito i numeri di telefono in Business Voice, è necessario assegnarli alle persone. Per farlo, seguire la procedura descritta in [Cambiare un numero di telefono per un utente](../assign-change-or-remove-a-phone-number-for-a-user.md#change-a-phone-number-for-a-user). Seguendo questa procedura, si sostituirà il numero di telefono temporaneamente assegnato all'utente con il numero di telefono originale.
+Dopo aver trasferito i numeri di telefono in Business Voice, è necessario assegnarli alle persone. Per farlo, seguire la procedura descritta in [Cambiare un numero di telefono per un utente](../assign-change-or-remove-a-phone-number-for-a-user.md#change-a-phone-number-for-a-user). Seguendo questa procedura, si sostituirà il numero di telefono temporaneamente assegnato all'utente con il numero di telefono originale trasferito.
 
-Se occorre aiuto, richiedere assistenza. Siamo qui per aiutare i clienti a trasferire i numeri di telefono in Business Voice nel modo più semplice possibile. Quando si invia una richiesta di assistenza, assicurarsi di indicare l'ID organizzazione, ad esempio. ***contoso***.onmicrosoft.com), i tipi e la quantità di numeri per cui serve assistenza, il responsabile dell'autorizzazione per l'account e una descrizione del problema o della domanda.
+Se occorre aiuto, richiedere assistenza. Siamo qui per aiutare i clienti a trasferire i numeri di telefono in Business Voice nel modo più semplice possibile. Assicurarsi di includere le seguenti informazioni:
+- ID dell'organizzazione, ad esempio ***contoso***.onmicrosoft.com
+- Il tipo e la quantità di numeri per i quali serve assistenza
+- L'utente incaricato dell'autorizzazione sull'account
+- Una descrizione del problema o della domanda
 
-- Per assistenza con i numeri di telefono in Canada e Stati Uniti, inviare la richiesta a [ptn@microsoft.com](mailto:ptn@microsoft.com).
-- Per assistenza con i numeri di telefono in Europe, inviare la richiesta a [ptneu@microsoft.com](mailto:ptneu@microsoft.com).
+Per assistenza con i numeri di telefono in Canada e Stati Uniti, inviare la richiesta a [ptn@microsoft.com](mailto:ptn@microsoft.com).
+
+Per assistenza con i numeri di telefono in Europe, inviare la richiesta a [ptneu@microsoft.com](mailto:ptneu@microsoft.com).
