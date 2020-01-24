@@ -132,7 +132,7 @@
 ## [Usare il componente aggiuntivo Riunione di Teams in Outlook](teams-add-in-for-outlook.md)
 ## [Configurare la funzionalità Chiamami per gli utenti](set-up-the-call-me-feature-for-your-users.md)
 ## [Configurazione del servizio MMS (Meeting Migration Service)](/SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
-## [Microsoft Teams Rooms](room-systems/index.md)
+## [Microsoft Teams Rooms](rooms/index.md)
 ## [Gestire la Lavagna in Teams](manage-whiteboard.md)
 
 
@@ -604,8 +604,8 @@
 #### [Integrare cartelle cliniche elettroniche in Microsoft Teams](expand-teams-across-your-org/healthcare/patients-app.md)
 ##### [Specifica dell'interfaccia DSTU2](expand-teams-across-your-org/healthcare/dstu2-interface.md)
 ##### [Specifica dell'interfaccia STU3](expand-teams-across-your-org/healthcare/stu3-interface.md)
+##### [Connettere l'app Pazienti all'API di Azure per FHIR](expand-teams-across-your-org/healthcare/patients-app-connect-azure-api-fhir.md)
 #### [Log di controllo per l'app Pazienti](expand-teams-across-your-org/healthcare/patients-audit.md)
-
 ## [Teams per l'istruzione](expand-teams-across-your-org/teams-for-education-landing-page.md)
 ### [Guida introduttiva per amministratori - Teams per l'istruzione](teams-quick-start-edu.yml)
 ### [Assegnare attività in Teams per l'istruzione](expand-teams-across-your-org/assignments-in-teams.md)
