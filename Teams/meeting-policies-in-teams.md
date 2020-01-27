@@ -20,12 +20,12 @@ f1keywords:
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams.
-ms.openlocfilehash: 20382a41ac8d0a78d56ebcb51e852f5302ea74a7
-ms.sourcegitcommit: 447c5ffc27c5b0928e033f85914810af56e510ef
+ms.openlocfilehash: 41d1bf8c68ef96f3a657113864c21a993dfc3826
+ms.sourcegitcommit: a6e051c5c5c100dbf2ff3ca8fc7babc4415babf3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41120399"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "41554343"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri delle riunioni in teams
 
@@ -105,10 +105,10 @@ Quando si seleziona un criterio esistente nella pagina **criteri riunione** o si
 Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se un utente può avviare una riunione ad hoc in un canale di teams. Se si attiva questa opzione, quando un utente inserisce un messaggio in un canale di teams, l'utente può fare clic su riunione **ora** sotto la casella di composizione per avviare un incontro ad hoc nel canale.
 
 ![Screenshot che mostra l'icona incontra ora sotto un messaggio](media/meeting-policies-meet-now.png)
-
 ### <a name="allow-private-meet-now"></a>Consenti riunione privata ora
 
 Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se un utente può avviare una riunione privata ad hoc.  
+
 
 ### <a name="allow-the-outlook-add-in"></a>Consentire il componente aggiuntivo per Outlook
 
@@ -140,7 +140,6 @@ Tieni presente che se disattivi **Consenti la pianificazione di riunioni private
 - [Consenti registrazione cloud](#allow-cloud-recording)
 - [Consentire video IP](#allow-ip-video)
 - [Velocità in bit media (KBs)](#media-bit-rate-kbs)
-- [Abilitare le didascalie Live (anteprima)](#enable-live-captions-preview)
 
 ### <a name="allow-transcription"></a>Consenti trascrizione
 
@@ -197,20 +196,6 @@ Se non è disponibile una larghezza di banda sufficiente per una riunione, i par
 
 Per le riunioni che richiedono un'esperienza video di altissima qualità, ad esempio riunioni di CEO e teams Live Events, è consigliabile impostare la larghezza di banda su 10 Mbps. Anche quando viene impostata l'esperienza massima, lo stack multimediale di teams si adatta alle condizioni di larghezza di banda ridotta quando vengono rilevate determinate condizioni di rete, a seconda dello scenario. 
 
-### <a name="enable-live-captions-preview"></a>Abilitare le didascalie Live (anteprima)
-
-Si tratta di un criterio per utente e si applica durante una riunione. Questa impostazione controlla se l'opzione **Attiva didascalie Live** è disponibile per consentire all'utente di attivare e disattivare le didascalie Live nelle riunioni che l'utente partecipa.  
-
-![Screenshot che mostra l'opzione Attiva didascalie Live](media/meeting-policies-live-captions.png)
-
-|Valore di impostazione |Comportamento  |
-|---------|---------|
-|**Disabilitato e l'utente può eseguire l'override**     | Le didascalie Live non vengono attivate automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Attiva didascalie Live** nel menu di overflow (**...**) per attivarle. Questa è l'impostazione predefinita. |
-|**Disabilitata**     | Le didascalie Live sono disabilitate per l'utente durante una riunione. L'utente non ha l'opzione per attivarli.          |
-
-
-<a name="bkcontentsharing"> </a>
-
 ## <a name="meeting-policy-settings---content-sharing"></a>Impostazioni dei criteri riunione-condivisione contenuto
 
 - [Modalità di condivisione dello schermo](#screen-sharing-mode)
@@ -219,7 +204,6 @@ Si tratta di un criterio per utente e si applica durante una riunione. Questa im
 - [Consentire la condivisione di PowerPoint](#allow-powerpoint-sharing)
 - [Consenti lavagna](#allow-whiteboard)
 - [Consenti note condivise](#allow-shared-notes)
-- [Consentire la chat in riunioni (disponibile a breve)](#allow-chat-in-meetings-coming-soon)
 
 ### <a name="screen-sharing-mode"></a>Modalità di condivisione dello schermo
 
@@ -266,7 +250,7 @@ Daniela può dare il controllo del desktop o della finestra condivisa ad altri p
 Per usare PowerShell per controllare chi può dare controllo o accettare richieste di controllo, usa il cmdlet AllowParticipantGiveRequestControl.
 
 > [!NOTE]
-> Per dare e assumere il controllo del contenuto condiviso durante la condivisione, entrambe le parti devono usare il client desktop teams. Il controllo non è supportato quando una delle parti sta usando teams in un browser. Questo è dovuto a una limitazione tecnica che stiamo pianificando di risolvere. 
+> Per dare e assumere il controllo del contenuto condiviso durante la condivisione, entrambe le parti devono usare il client desktop teams. Il controllo non è supportato se una delle parti esegue Teams in un browser. Ciò è dovuto a una limitazione tecnica che si prevede di risolvere. 
 
 ### <a name="allow-an-external-participant-to-give-or-request-control"></a>Consentire a un partecipante esterno di dare o richiedere il controllo
 
@@ -320,19 +304,16 @@ Esaminiamo l'esempio seguente.
 
 Daniela può prendere appunti nelle riunioni di Amanda e Amanda non può prendere appunti in nessuna riunione.
 
-### <a name="allow-chat-in-meetings-coming-soon"></a>Consentire la chat in riunioni (disponibile a breve)
-
-Si tratta di un criterio per organizzatore. Questa impostazione controlla se la chat riunione è consentita nella riunione dell'utente. 
-
-<a name="bkparticipantsandguests"> </a>
-
 ## <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione-partecipanti & Guest
 
 Queste impostazioni controllano quali partecipanti alla riunione attendono nella sala di attesa prima di essere ammessi alla riunione e del livello di partecipazione consentiti in una riunione.
 
 - [Ammettere automaticamente le persone](#automatically-admit-people)
 - [Consentire agli utenti anonimi di avviare una riunione](#allow-anonymous-people-to-start-a-meeting)
-- [Consenti agli utenti con accesso esterno di ignorare la sala d'attesa](#allow-dial-in-users-to-bypass-the-lobby-coming-soon)
+- [Consenti agli utenti con accesso esterno di ignorare la sala d'attesa](#allow-dial-in-users-to-bypass-the-lobby)
+- [Consenti riunione privata ora](#allow-private-meet-now)
+- [Abilitare le didascalie Live](#enable-live-captions)
+- [Consentire la chat in riunioni](#allow-chat-in-meetings)
 
 > [!NOTE]
 >Le opzioni per partecipare a una riunione variano a seconda delle impostazioni per ogni gruppo di team e del metodo di connessione. Se il gruppo dispone di servizi di audioconferenza e lo usa per la connessione, vedere Servizi di audioconferenza [in Office 365](https://docs.microsoft.com/microsoftteams/audio-conferencing-in-office-365). Se il gruppo teams non dispone di servizi di audioconferenza, vedere [partecipare a una riunione in teams](https://support.office.com/article/join-a-meeting-in-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9).
@@ -379,7 +360,7 @@ Ecco il comportamento di join di persone anonime quando nella riunione non sono 
 |   | Tutti gli utenti dell'organizzazione     |Attendere nella sala di attesa         |
 |   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | Attendere nella sala di attesa         |
 
-### <a name="allow-dial-in-users-to-bypass-the-lobby-coming-soon"></a>Consenti agli utenti con accesso esterno di ignorare la sala d'attesa (disponibile a breve)
+### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti con accesso esterno di ignorare la sala d'attesa
 
 Si tratta di un criterio per organizzatore. Questa impostazione controlla se le persone che effettuano la chiamata tramite telefono accedono direttamente alla riunione o attendono la sala di attesa indipendentemente dall'impostazione di **ammetti automaticamente persone** .
 
@@ -394,6 +375,29 @@ Ecco il comportamento di join delle persone che effettuano la chiamata tramite t
 |   | Tutti gli utenti dell'organizzazione     |Attendere nella sala di attesa         |
 |   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | Attendere nella sala di attesa         |
 
+### <a name="allow-private-meet-now"></a>Consenti riunione privata ora
+
+Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se un utente può avviare una riunione privata ad hoc. 
+
+### <a name="enable-live-captions"></a>Abilitare le didascalie Live
+
+Si tratta di un criterio per utente e si applica durante una riunione. Questa impostazione controlla se l'opzione **Attiva didascalie Live** è disponibile per consentire all'utente di attivare e disattivare le didascalie Live nelle riunioni che l'utente partecipa.  
+
+![Screenshot che mostra l'opzione Attiva didascalie Live](media/meeting-policies-live-captions.png)
+
+|Valore di impostazione |Comportamento  |
+|---------|---------|
+|**Disabilitato e l'utente può eseguire l'override**     | Le didascalie Live non vengono attivate automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Attiva didascalie Live** nel menu di overflow (**...**) per attivarle. Questa è l'impostazione predefinita. |
+|**Disabilitata**     | Le didascalie Live sono disabilitate per l'utente durante una riunione. L'utente non ha l'opzione per attivarli.          |
+
+
+<a name="bkcontentsharing"> </a>
+
+### <a name="allow-chat-in-meetings"></a>Consentire la chat in riunioni
+
+Si tratta di un criterio per organizzatore. Questa impostazione controlla se la chat riunione è consentita nella riunione dell'utente. 
+
+<a name="bkparticipantsandguests"> </a>
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Criteri di messaggistica in teams](messaging-policies-in-teams.md)

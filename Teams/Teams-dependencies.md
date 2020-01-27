@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Gestire le funzionalità dell'accesso guest di Microsoft Teams tramite quattro diversi livelli di autorizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 200e0d94948d735786fd1775fc803c6017bd3100
-ms.sourcegitcommit: c15ab82834005b9a19247e06488f1f21161fc426
+ms.openlocfilehash: 0d37ed8412e30c20d676c29507451500e5f0c9d2
+ms.sourcegitcommit: a6e051c5c5c100dbf2ff3ca8fc7babc4415babf3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/13/2019
-ms.locfileid: "40019980"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "41554043"
 ---
 <a name="authorize-guest-access-in-microsoft-teams"></a>Autorizzare l'accesso guest in Microsoft Teams
 ===========================================
@@ -60,10 +60,7 @@ Azure AD include le seguenti impostazioni per la configurazione degli utenti est
 
 - **Le autorizzazioni degli utenti guest sono limitate**: **Sì** significa che gli utenti guest non dispongono dell'autorizzazione per determinate attività della directory, come enumerare utenti, gruppi o altre risorse della directory. Inoltre, non è possibile assegnare agli utenti guest ruoli amministrativi nella directory. **No** significa che gli utenti guest hanno lo stesso accesso degli utenti standard ai dati della directory.
 - **Amministratori e utenti nel ruolo mittente dell'invito guest possono invitare **: **Sì** significa che gli amministratori e gli utenti nel ruolo mittente invito possono invitare guest nel tenant. **No** significa che gli amministratori e gli utenti non possono invitare guest nel tenant.
-- **I membri possono invitare**: **Sì** significa che i membri della directory diversi dagli amministratori possono invitare guest a collaborare sulle risorse protette di Azure AD, come i siti SharePoint o le risorse di Azure. **No** significa che solo gli amministratori possono invitare guest nella directory.</br>
-      
-    > [!IMPORTANT]
-    > Per il pieno funzionamento dell'accesso guest in Teams, è necessario impostare **I membri possono invitare** su **Sì**.
+- **I membri possono invitare**: per consentire ai membri non amministratori della directory di invitare utenti guest, impostare questo criterio su **Yes** (scelta consigliata). Se si preferisce che solo gli amministratori siano autorizzati ad aggiungere utenti guest, è possibile impostare questo criterio su **No**. Tenere presente che l'opzione **No** limiterà l'esperienza guest per i proprietari di team non amministratori, che potranno aggiungere in Teams solo utenti guest già aggiunti in Azure AD dall'amministratore.
 - **I guest possono invitare**: **Sì** significa che gli utenti guest della directory possono invitare altri guest a collaborare sulle risorse protette di Azure AD, come i siti SharePoint o le risorse di Azure. **No** significa che gli utenti guest non possono invitare altri guest a collaborare con l'organizzazione.
     > [!IMPORTANT]
     > Al momento Teams non supporta il ruolo mittente dell'invito, pertanto se si imposta **I guest possono invitare** su **Sì**, gli utenti guest non possono invitare altri guest in Teams.

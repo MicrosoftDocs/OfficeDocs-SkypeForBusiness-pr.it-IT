@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 985077a4-c8e1-4d5a-9fcf-fef41cf6d61d
 description: "Riepilogo: informazioni su come preparare il dominio Active Directory per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: 114b2a91491dd440972f589ff45d86835c676bef
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: a7b9a22042cecae76a5a5390b0778119363043b5
+ms.sourcegitcommit: a6e051c5c5c100dbf2ff3ca8fc7babc4415babf3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41000886"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "41554053"
 ---
 # <a name="prepare-active-directory-for-skype-for-business-server"></a>Preparare Active Directory per Skype for Business Server
  
@@ -35,7 +35,7 @@ Skype for Business Server lavora in stretta collaborazione con Active Directory.
 Skype for Business Server è strettamente integrato con Active Directory Domain Services (AD DS). Prima di poter installare Skype for Business Server per la prima volta, è necessario preparare Active Directory. La sezione della distribuzione guidata intitolata **preparare Active Directory** prepara l'ambiente Active Directory per l'uso con Skype for Business Server.
   
 > [!NOTE]
-> Skype for Business Server USA (AD DS) per tenere traccia e comunicare con tutti i server di una topologia. Ogni server deve essere unito al dominio in modo che Skype for Business Server possa funzionare correttamente. 
+> Skype for Business Server USA (AD DS) per tenere traccia e comunicare con tutti i server di una topologia. La maggior parte di questi server deve essere associata al dominio in modo che Skype for Business Server possa funzionare correttamente. Tieni presente che i server, ad esempio Edge e proxy inverso, non devono essere Uniti al dominio.
   
 > [!IMPORTANT]
 > La procedura di preparazione di Active Directory deve essere eseguita una sola volta per ogni dominio della distribuzione. 

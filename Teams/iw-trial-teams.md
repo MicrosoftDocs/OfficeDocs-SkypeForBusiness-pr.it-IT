@@ -14,17 +14,17 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7274669e4567be02efbd2fdeb4c6524ce6e55f38
-ms.sourcegitcommit: 96d98e145ff300833d827a7d43b4e4b0331b7538
+ms.openlocfilehash: aaf2a4aeeb5a3320d30ed261307aa074defecb84
+ms.sourcegitcommit: a6e051c5c5c100dbf2ff3ca8fc7babc4415babf3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871692"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "41554223"
 ---
 <a name="manage-the-microsoft-teams-commercial-cloud-trial-offer"></a>Gestire l'offerta Microsoft Teams Commercial Cloud Trial
 =======================================================
 
-Con Microsoft Teams Commercial Cloud Trial, agli utenti di Office 365 esistenti nell'organizzazione, che non hanno una licenza di Microsoft Teams, possono avviare un periodo di valutazione del prodotto di 1 anno. Gli amministratori possono attivare o disattivare questa funzionalità per gli utenti nell'organizzazione. 
+Con Microsoft Teams Commercial Cloud Trial, agli utenti di Office 365 esistenti nell'organizzazione, che non hanno una licenza di Microsoft Teams, possono avviare un periodo di valutazione del prodotto di 1 anno. Gli amministratori possono attivare o disattivare questa funzionalità per gli utenti nell'organizzazione.
 
 > [!IMPORTANT]
 > L'offerta Microsoft Teams Commercial Cloud Trial verrà sostituita da quella Microsoft Teams Exploratory a partire da gennaio 2020. Per informazioni su questa nuova offerta, vedere [Gestire la licenza Teams Exploratory](teams-exploratory.md).
@@ -78,13 +78,13 @@ Gli amministratori possono impedire che gli utenti finali richiedano app e servi
 
 È possibile disabilitare l'installazione delle versioni di valutazione di app e servizi per un utente.
 
-1. Nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home) passare a **Impostazioni** > **Servizi e componenti aggiuntivi** > **App e servizi di proprietà degli utenti**.
+1. Nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home), passare a **Impostazioni** > **Impostazioni**, selezionare **Servizi** e quindi selezionare **App e servizi di proprietà degli utenti**.
 
-    ![Screenshot della pagina Servizi e componenti aggiuntivi nell'interfaccia di amministrazione](media/iw-trial-enable-1.png)
+    ![Screenshot della pagina Servizi nell'interfaccia di amministrazione](media/iw-trial-services.png)
 
-2. Deselezionare **Consenti agli utenti di installare le versioni di valutazione di app e servizi**.
+2. Deselezionare la casella di controllo **Consenti agli utenti di installare le versioni di valutazione di app e servizi**.
 
-    ![Screenshot della pagina App e servizi di proprietà degli utenti nell'interfaccia di amministrazione](media/iw-trial-enable-2.png)
+    ![Screenshot della pagina App e servizi di proprietà degli utenti nell'interfaccia di amministrazione](media/iw-trial-user-owned-apps-services.png)
 
 
 ### <a name="manage-trial-availability-for-a-user-with-a-license-that-includes-teams"></a>Gestire la disponibilità della versione di valutazione per un utente con una licenza che include Teams
@@ -119,8 +119,8 @@ Per disattivare la licenza di valutazione:
 
     ![Screenshot dell'impostazione relativa alla licenza di valutazione di Teams nel riquadro delle licenze](media/iW-trial-enable-4.png)
     
->[!Note]
->L'interruttore Microsoft Teams - Versione di valutazione verrà visualizzato quando il primo utente dell'organizzazione si sarà iscritto per la versione di valutazione.
+    >[!Note]
+    >L'interruttore Microsoft Teams - Versione di valutazione verrà visualizzato quando il primo utente dell'organizzazione si sarà iscritto per la versione di valutazione.
 
 ### <a name="manage-teams-for-users-who-have-the-trial-license"></a>Gestire Teams per gli utenti che hanno la licenza di valutazione
 
