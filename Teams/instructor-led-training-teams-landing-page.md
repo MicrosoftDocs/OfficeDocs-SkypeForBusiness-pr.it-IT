@@ -13,12 +13,12 @@ ms.service: msteams
 f1keywords: ms.teamsadmincenter.dashboard.trainingvideos.instructorled
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: 9983b61f28e4bfb37b0f6673503e3a982e40da5a
-ms.sourcegitcommit: 2557331f72bd0d8637c9f1b2a9606ca48a1c9954
+ms.openlocfilehash: a4f18ee6f2237748c44385a06ac74625f89d9015
+ms.sourcegitcommit: f017e38095098d4d28c71241dddac53538be79d7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39621274"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "41506868"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -38,12 +38,12 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/whats-new-megaphone-teams.svg" alt="What's new megaphone symbol" />
+                            <img src="https://docs.microsoft.com/office/media/icons/whats-new-megaphone-teams.svg" alt="What's new megaphone symbol" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Introduzione a Microsoft Teams</h3>
-                        <p>Che cos'è Microsoft Teams? Unisciti a noi per questo orientamento di 30 minuti e scopri che cos’è Teams e come funziona.</p>
+                        <p>Che cos'è Microsoft Teams? Partecipa a questa sessione di orientamento della durata di 30 minuti e scopri che cos'è Teams e come funziona.</p>
                         <p><i>Gruppo di destinatari: tutti</i></p>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/get-started-teams.svg" alt="Get started symbol" />
+                            <img src="https://docs.microsoft.com/office/media/icons/get-started-teams.svg" alt="Get started symbol" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -78,12 +78,32 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/tasks-teams.svg" alt="Tasks clipboard symbol" />
+                            <img src="https://docs.microsoft.com/office/media/icons/tasks-teams.svg" alt="Tasks clipboard symbol" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Organizza riunioni efficaci con Teams</h3>
                         <p>Scopri come sfruttare al meglio Teams prima, durante e dopo le riunioni.</p>
+                        <p><i>Gruppo di destinatari: utenti finali</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://aka.ms/LearnTeamsApps"target="_blank">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/office/media/icons/blocks-teams.svg" alt="Blocks" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Scopri come usare le app in Teams</h3>
+                        <p>Impara a migliorare il lavoro di gruppo grazie alle app.</p>
                         <p><i>Gruppo di destinatari: utenti finali</i></p>
                     </div>
                 </div>
@@ -98,7 +118,7 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/best-practices-teams.svg" alt="Best practices window" data-linktype="external"/>
+                            <img src="https://docs.microsoft.com/office/media/icons/best-practices-teams.svg" alt="Best practices window" data-linktype="external"/>
                         </div>
                     </div>
                     <div class="cardText">
@@ -112,53 +132,13 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
         </a>
     </li>
     <li>
-        <a href="https://microsoftteams.eventbuilder.com/From%20Skype%20for%20Business%20to%20Teams"target="_blank">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/users-people.svg" alt="Users/people" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Passa da Skype for Business a Teams</h3>
-                        <p>Ottieni tutte le informazioni necessarie per iniziare subito a usare Teams durante la transizione da Skype for Business a Teams.</p>
-                        <p><i>Gruppo di destinatari: utenti finali</i></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://aka.ms/TeamsForGov"target="_blank">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/globe-internet.svg" alt="Globe symbol" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Teams for US Government (GCC)</h3>
-                        <p>Unisciti a noi per una panoramica interattiva di Teams in Office 365 GCC, che presenta le procedure consigliate per la collaborazione.</p>
-                    <p><i>Gruppo di destinatari: tutti</i></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
         <a href="https://aka.ms/TeamsEduWebinars"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/education-tutorial-teams.svg" alt="Education symbol" />
+                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg" alt="Education symbol" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -172,33 +152,13 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
         </a>
     </li>
     <li>
-        <a href="https://aka.ms/LearnTeamsApps"target="_blank">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/blocks-teams.svg" alt="Blocks" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Scopri come usare le app in Teams</h3>
-                        <p>Impara a migliorare il lavoro di gruppo grazie alle app.</p>
-                        <p><i>Gruppo di destinatari: utenti finali</i></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
         <a href="https://docs.microsoft.com/MicrosoftTeams/upgrade-workshops-landing-page"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/migration-teams.svg" alt="Migration arrow symbol" />
+                            <img src="https://docs.microsoft.com/office/media/icons/migration-teams.svg" alt="Migration arrow symbol" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -218,7 +178,7 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/clock-teams.svg" alt="Clock symbol" />
+                            <img src="https://docs.microsoft.com/office/media/icons/clock-teams.svg" alt="Clock symbol" />
                         </div>
                     </div>
                     <div class="cardText">
