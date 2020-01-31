@@ -16,7 +16,7 @@
 ### [Con Exchange Online (ibrido)](with-exchange-online.md)
 ### [Con Exchange locale (ibrido)](with-exchange-on-premises.md)
 ### [Configurare una console](console.md)
-### [Tramite System Center Configuration Manager](rooms-scale.md)
+### [Con Microsoft endpoint Configuration Manager](rooms-scale.md)
 ### [Gestione con Monitoraggio di Azure](azure-monitor-deploy.md)
 ### [Eseguire la migrazione di SRS V1 o LRS](lrs-migration.md)
 ### [Videocamere di contenuto](content-camera.md)
