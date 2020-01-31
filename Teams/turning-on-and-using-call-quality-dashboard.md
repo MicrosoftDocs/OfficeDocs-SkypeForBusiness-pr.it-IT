@@ -22,12 +22,12 @@ f1keywords:
 ms.custom:
 - Reporting
 description: 'Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate. '
-ms.openlocfilehash: 429904020a63b93fefd1adee7ee89d02a47f1d61
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: 4aea268e2c25e655b7f2dee914497ae3154f0008
+ms.sourcegitcommit: 43a17ce6fea3951719b55bfbda03c500cef4816c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41005181"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41620007"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -188,13 +188,15 @@ I report di riepilogo di Call Quality dashboard includono un sottoinsieme delle 
 |Personalizzazione del set di report (aggiunta, eliminazione, modifica di report)   | No   | Sì   |
 |Metriche di condivisione dello schermo basate su video   | No   | Sì   |
 |Metriche video   | No   | Sì   |
-|Quantità di dati disponibili   | Ultimi 6 mesi   | Ultimi 6 mesi   |
+|Quantità di dati disponibili   | Ultimi 12 mesi   | Ultimi 12 mesi   |
 |Dati di Microsoft Teams   | Sì   | Supporto per più paesi   |
 | | | |
 
 ### <a name="out-of-the-box-reports"></a>Report di out-of-the-box
 
 Tutte le edizioni di Call Quality dashboard offrono un'esperienza che consente di definire le metriche di qualità senza la necessità di creare nuovi report. Una volta elaborati i dati nel back-end, vengono visualizzati i dati relativi alla qualità delle chiamate nei report.
+
+Novità di gennaio 2020: [scaricare i modelli di query di Power BI per Call Quality dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD Power BI query templates.zip?raw=true). Modelli di Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati di Call Quality dashboard.
   
 ### <a name="overview-reports"></a>Report generali
 
@@ -395,6 +397,17 @@ EndpointName, EndpointMake, EndpointModel, EndpointType, EndpointLabel1, Endpoin
 
 ' 1409W3534, 123 Manufacturer, Fabrikam Model 123, laptop, IT designed 2018 laptop, asset tag 5678, Purchase 2018
 
+## <a name="migrate-reports-from-previous-version-of-cqd"></a>Eseguire la migrazione dei report da una versione precedente di Call Quality dashboard
+
+Se hai creato report o caricato i file dei dati del tenant (mapping) in Call Quality dashboard per Skypehttps://cqd.lync.com) for business (e vuoi eseguire la migrazione a Call Quality dashboardhttps://cqd.teams.microsoft.com)for teams, ecco come:
+
+1.  Passare a [https://cqd.lync.com/cqd/](https://cqd.lync.com/cqd/) e passare al set di report che si vuole esportare. 
+2.  Posizionare il puntatore del mouse sul report e, nel "..." scegliere **Esporta albero report**. Salvare il file di esportazione.
+3.  [https://cqd.teams.microsoft.com/cqd/](https://cqd.teams.microsoft.com/cqd/) Passare al percorso in cui si vogliono importare i report.
+4.  Dai collegamenti a sinistra fare clic su **Importa** e selezionare il file esportato. 
+5.  Dopo aver importato i report, verrà visualizzato questo messaggio: "il rapporto di importazione è riuscito. Il nuovo report è stato aggiunto alla fine del set di report. 
+
+
 ## <a name="create-custom-detailed-reports"></a>Creare report dettagliati personalizzati
 
 Se si vuole creare un report specifico che si concentri su una dimensione dei dati in modo che i report dettagliati forniti non siano disponibili, creare un report personalizzato.
@@ -445,7 +458,17 @@ Quando si confrontano i dati per questi due servizi:
   - Cablata : WiFi
   - Rete aziendale: rete domestica
   
+### <a name="why-cant-i-see-euii-in-cqd"></a>Perché non è possibile visualizzare EUII in Call Quality dashboard?
 
+Questi ruoli di amministratore possono accedere a Call Quality dashboard, ma non possono visualizzare EUII (informazioni identificabili per gli utenti finali):
+- Lettore di report di Office 365
+- Specialista supporto comunicazioni Teams
+
+Per altre informazioni sui ruoli che possono accedere a Call Quality dashboard, incluso EUII, vedere [assegnare ruoli per l'accesso a Call Quality dashboard](quality-of-experience-review-guide.md#assign-roles-for-accessing-cqd).
+
+### <a name="why-am-i-seeing-skype-for-business-information-in-cqd-when-ive-filtered-for-teams-only"></a>Perché è possibile visualizzare le informazioni di Skype for business in Call Quality dashboard quando è stato filtrato solo per i team?
+
+Quando si filtrano solo i team in report di Call Quality Dashboard (teams = 1), si filtrano tutte le chiamate in cui il *primo endpoint* è teams. Se il *secondo endpoint* è Skype for business, le informazioni verranno visualizzate nel report di Call Quality dashboard.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f3ba85b8-442c-4133-963f-76f1c8a1fff9
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Exchange Online.
-ms.openlocfilehash: fc403e2553fce157737b1bdda75c821563e6b0dd
-ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
+ms.openlocfilehash: e53fd2ebd25ef6b625ada84b60d58e42e8c13a28
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269039"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628422"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-online"></a>Distribuire le sale di Microsoft teams con Exchange Online
 
@@ -41,13 +41,13 @@ Per distribuire le sale di Microsoft teams con Exchange Online, eseguire la proc
 
 1. Avviare una sessione remota di Windows PowerShell in un PC e connettersi a Exchange Online nel modo seguente:
 
-``` Powershell
-Set-ExecutionPolicy Unrestricted
-$org='contoso.microsoft.com'
-$cred=Get-Credential $admin@$org
-$sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic  -AllowRedirection
-Import-PSSession $Session -DisableNameChecking
-```
+    ``` Powershell
+    Set-ExecutionPolicy Unrestricted
+    $org='contoso.microsoft.com'
+    $cred=Get-Credential $admin@$org
+    $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic  -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    ```
 
 2. Dopo aver stabilito una sessione, è possibile creare una nuova cassetta postale e abilitarla come RoomMailboxAccount o modificare le impostazioni per una cassetta postale della sala esistente. In questo modo l'account verrà autenticato nelle sale di Microsoft teams.
 
@@ -91,27 +91,27 @@ Import-PSSession $Session -DisableNameChecking
    > [!NOTE]
    > [Azure Active Directory PowerShell 2,0](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato. 
 
-  ``` PowerShell
- Connect-MsolService -Credential $cred
-  ```
-<!--   ``` Powershell
-   Connect-AzureAD -Credential $cred
-   ``` -->
+    ``` PowerShell
+   Connect-MsolService -Credential $cred
+    ```
+  <!--   ``` Powershell
+     Connect-AzureAD -Credential $cred
+     ``` -->
 
 2. L'account utente deve avere una licenza di Office 365 valida per garantire che Exchange e Skype for Business Server funzionino. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account utente, determinando gli SKU di licenza disponibili per il proprio account. Eseguire l'assegnazione in un passaggio successivo.
 3. Quindi, USA`Get-MsolAccountSku` <!--Get-AzureADSubscribedSku--> per recuperare un elenco di SKU disponibili per il tenant di Office 365.
 4. Quando si elencano gli SKU, è possibile aggiungere una licenza usando l'`Set-MsolUserLicense` <!-- Set-AzureADUserLicense--> cmdlet. In questo caso, $strLicense è il codice SKU visualizzato, ad esempio contoso: STANDARDPACK. 
 
-  ```PowerShell
-    Set-MsolUser -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -UsageLocation 'US'
-   Get-MsolAccountSku
-   Set-MsolUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -AddLicenses $strLicense
-  ```
-<!--   ``` Powershell
-   Set-AzureADUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -UsageLocation 'US'
-   Get-AzureADSubscribedSku
-   Set-AzureADUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -AddLicenses $strLicense
-   ``` -->
+    ```PowerShell
+      Set-MsolUser -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -UsageLocation 'US'
+     Get-MsolAccountSku
+     Set-MsolUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -AddLicenses $strLicense
+    ```
+  <!--   ``` Powershell
+     Set-AzureADUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -UsageLocation 'US'
+     Get-AzureADSubscribedSku
+     Set-AzureADUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -AddLicenses $strLicense
+     ``` -->
 
 ### <a name="enable-the-user-account-with-skype-for-business-server"></a>Abilitare l'account utente con Skype for Business Server
 
@@ -145,6 +145,12 @@ Import-PSSession $Session -DisableNameChecking
 6. Fai clic su **Salva**.
 
 Per la convalida, dovresti essere in grado di usare qualsiasi client Skype for business per accedere a questo account.
+
+> [!NOTE]
+> Se attualmente si usano SKU E1, E3, E4 o E5 con Skype for Business Plan 2 con servizi di audioconferenza o con il sistema telefonico Office 365 e un piano per le chiamate, questi continueranno a funzionare. Tuttavia, è consigliabile passare a un modello di licenze più semplice, come descritto in [Teams Meeting Room Update Licensing](rooms-licensing.md), dopo la scadenza delle licenze correnti.
+
+> [!IMPORTANT]
+> Se si usa Skype for Business Plan 2, è possibile usare solo le sale di Microsoft teams in modalità solo Skype for business, quindi tutte le riunioni saranno riunioni Skype for business. Per abilitare la sala riunioni per le riunioni di Microsoft teams, ti consigliamo di acquistare la licenza della sala riunioni.
   
 ## <a name="see-also"></a>Vedere anche
 

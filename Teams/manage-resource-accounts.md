@@ -1,7 +1,7 @@
 ---
 title: Gestire gli account delle risorse in teams
-ms.author: jambirk
-author: jambirk
+ms.author: dstrome
+author: dstrome
 manager: serdars
 ms.reviewer: jastark, wasseemh
 ms.topic: article
@@ -17,12 +17,12 @@ localization_priority: Normal
 f1keywords:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
 description: Informazioni sulla gestione degli account delle risorse in Microsoft Teams
-ms.openlocfilehash: a89fe9df7cc878369a06b9c959609dd435bcbd8c
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: e7e7e644d64aeb043e6403fd60d22ebcef155ebe
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925467"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628362"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account di risorsa in Microsoft Teams
 
@@ -107,24 +107,34 @@ Dopo aver acquistato una licenza di sistema telefonico, l'interfaccia di amminis
 
 ![Screenshot della pagina account risorse](media/r-a-master.png)
 
-![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
+![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/teamscallout1.png)
 
-Per creare un nuovo account di risorse, fare clic su **+ nuovo account**. Nella finestra popup compilare il nome visualizzato e il nome utente per l'account delle risorse (il nome di dominio deve essere popolato automaticamente), quindi fare clic su **Salva**.
+Per creare un nuovo account di risorse, fare clic su **+ Aggiungi**. Nella finestra popup compilare il **nome visualizzato**, il nome **utente** (il dominio deve essere popolato automaticamente) e il **tipo di account delle risorse** per l'account delle risorse. Il tipo di account delle risorse può essere un **operatore automatico** o una **coda di chiamata** , a seconda dell'app che intendi associare all'account delle risorse. Quando si è pronti, fare clic su **Salva**.
 
 ![Screenshot delle nuove opzioni dell'account delle risorse](media/res-acct.png)
 
 Applicare quindi una licenza all'account delle risorse nell'interfaccia di amministrazione di Office 365, come descritto in [assegnare licenze agli utenti in Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide)
 
-### <a name="edit-resource-account-name"></a>Modificare il nome dell'account risorse
+### <a name="edit-resource-account"></a>Modificare l'account delle risorse 
 
-![Icona del numero 2, facendo riferimento a un callout nello screenshot](media/sfbcallout2.png) precedente è possibile modificare il nome visualizzato dell'account delle risorse usando l'opzione **modifica** . Al termine, fare clic su **Salva** .
+![Icona del](media/teamscallout2.png) numero 2, facendo riferimento a un callout nello screenshot precedente è possibile modificare il **nome visualizzato** dell'account delle risorse e il tipo di account delle **risorse** usando l'opzione **modifica** . Al termine, fare clic su **Salva** .
+
 ![Screenshot dell'opzione modifica account risorse](media/r-a-edit.png)
 
 <a name="phonenumber"> </a>
 
 ### <a name="assignunassign-phone-numbers-and-services"></a>Assegnare/annullare l'assegnazione di numeri di telefono e servizi
 
-![Icona del numero 3, facendo riferimento a un callout nello screenshot](media/sfbcallout3.png) precedente dopo aver creato l'account delle risorse e assegnato la licenza, è possibile fare clic su **assegna/Annulla assegnazione** per assegnare un numero di servizio all'account della risorsa oppure assegnare la risorsa account per un operatore automatico o una coda di chiamata già esistente. L'assegnazione di un numero di routing diretto può essere eseguita solo tramite cmdlet. Se è ancora necessario creare la coda di chiamata o l'operatore automatico, è possibile collegare l'account delle risorse durante la creazione. Al termine, fare clic su **Salva** .
+![Icona del numero 3, facendo riferimento a un callout nello screenshot](media/teamscallout3.png) precedente dopo aver creato l'account delle risorse e assegnato la licenza, è possibile fare clic su **assegna/Annulla assegnazione** per assegnare un numero di servizio all'account della risorsa, impostare il tipo di numero di telefono oppure assegnare l'account di risorse a un operatore automatico o una coda di chiamata già esistente. L'assegnazione di un numero di routing diretto può essere eseguita solo tramite cmdlet. Se non è ancora stata creata la coda di chiamata o l'operatore automatico che si associa all'account della risorsa, lasciarlo vuoto. Puoi collegare l'account delle risorse mentre lo crei. Al termine, fare clic su **Salva** .
+
+Le opzioni per il **tipo di numero di telefono** sono:
+
+- Nessuno
+- Online
+- Numeri verdi
+- Locale
+
+![Screenshot delle opzioni di assegnazione/disassegnazione](media/r-a-assign.png)
 
 Per assegnare un routing diretto o un numero ibrido a un account di risorse, è necessario usare PowerShell, vedere la sezione seguente.
 
@@ -134,11 +144,11 @@ Per assegnare un routing diretto o un numero ibrido a un account di risorse, è 
 > [!IMPORTANT]
 > Un numero di telefono non viene assegnato direttamente all'operatore automatico o alla coda di chiamata, bensì all'account delle risorse associato all'operatore automatico o alla coda di chiamata.
 
-![Screenshot delle opzioni di assegnazione/disassegnazione](media/r-a-assign.png)
+
 
 ## <a name="change-an-existing-resource-account-to-use-a-virtual-user-license"></a>Cambiare un account di risorse esistente per usare una licenza utente virtuale
 
-Se si decide di cambiare le licenze per l'account delle risorse esistenti da una licenza di sistema telefonico a una licenza per gli utenti virtuali, è necessario acquisire la licenza per gli utenti virtuali gratuita, quindi seguire i passaggi collegati nell'interfaccia di amministrazione di Microsoft 365 per [spostare gli utenti in un abbonamento diverso](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?redirectSourcePath=%252farticle%252f997596b5-4173-4627-b915-36abac6786dc&view=o365-worldwide#move-users-to-a-different-subscription). 
+Se si decide di cambiare le licenze per l'account delle risorse esistenti da una licenza di sistema telefonico a una licenza per gli utenti virtuali, è necessario acquisire la licenza per gli utenti virtuali gratuita, quindi seguire i passaggi collegati nell'interfaccia di amministrazione di Microsoft 365 per [spostare gli utenti in un altro abbonamento](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?redirectSourcePath=%252farticle%252f997596b5-4173-4627-b915-36abac6786dc&view=o365-worldwide#move-users-to-a-different-subscription). 
 
 > [!WARNING]
 > Rimuovere sempre una licenza per il sistema telefonico completo e assegnare la licenza utente virtuale nella stessa attività di licenza. Se si rimuove la vecchia licenza, si salvano le modifiche dell'account, si aggiunge la nuova licenza e quindi si salvano di nuovo le impostazioni dell'account, l'account delle risorse potrebbe non funzionare più come previsto. In questo caso, è consigliabile creare un nuovo account risorse per la licenza per gli utenti virtuali e rimuovere l'account delle risorse interrotte. 
@@ -149,7 +159,7 @@ A seconda che il proprio account di risorse si trovi online o in Skype for Busin
 
 - Gli esempi di cmdlet di PowerShell seguenti mostrano la creazione di un account delle risorse ospitato online con [New-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/new-CsOnlineApplicationInstance?view=skype-ps). 
 
-- Per gli account delle risorse ospitati in Skype for Business Server 2019 che possono essere usati con le code delle chiamate cloud e gli operatori automatici del cloud, vedere [configurare le code di chiamata cloud](/skypeforbusiness/hybrid/configure-call-queue.md) o [configurare gli operatori automatici del cloud](/skypeforbusiness/hybrid/configure-cloud-auto-attendant.md). Le implementazioni ibride (numeri assegnati al routing diretto) useranno [New-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps).
+- Per gli account delle risorse ospitati in Skype for Business Server 2019 che possono essere usati con le code delle chiamate cloud e gli operatori automatici del cloud, vedere [configurare le code di chiamata cloud](/skypeforbusiness/hybrid/configure-call-queue.md) o [configurare gli operatori automatici del cloud](/skypeforbusiness/hybrid/configure-cloud-auto-attendant.md). Le implementazioni ibride (numeri assegnati al routing diretto) vengono configurate usando il cmdlet [New-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps) in un server di Skype for Business Server 2019 locale.
 
 L'ID applicazione che devi usare durante la creazione delle istanze dell'applicazione è:
 
@@ -234,7 +244,7 @@ Set-MsolUser -ObjectId -Department "Microsoft Communication Application Instance
 
 Per le implementazioni ibride con Skype for Business Server:
 
-   [Pianificare gli operatori automatici del cloud](/SkypeForBusiness/hybrid/plan-cloud-auto-attendant)
+   [Pianificare gli operatori automatici cloud](/SkypeForBusiness/hybrid/plan-cloud-auto-attendant)
   
    [Pianificare le code delle chiamate cloud](/SkypeforBusiness/hybrid/plan-call-queue)
    

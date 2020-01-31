@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad0344d07fe9ea77e0970ca6ea11fdf62886098b
-ms.sourcegitcommit: 800a5c3881d0ebceb505a538fcf7e48f7b6df17e
+ms.openlocfilehash: 3a0e055305cc994730b22507b5ce0cf1823e43f0
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37913044"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628372"
 ---
 # <a name="plan-for-lifecycle-management-in-teams"></a>Pianificare la gestione del ciclo di vita in Teams
 
@@ -55,7 +55,7 @@ Determinano chi può partecipare al team:
 Il tipo degli utenti del team ne determina il livello di controllo:
 
 -   Il _creatore del team_ ha le autorizzazioni necessarie per creare un gruppo o un team nella directory. L'amministratore può vincolare questo tipo di utente a un subset di amministratori o utenti. Per altre informazioni, vedere [Gestire chi può creare gruppi di Office 365](https://support.office.com/article/Manage-who-can-create-Office-365-Groups-4c46c8cb-17d0-44b5-9776-005fced8e618). 
--   Il _proprietario del team_ gestisce l'appartenenza e le impostazioni del team. Ogni team può avere fino a 10 proprietari.
+-   Il _proprietario del team_ gestisce l'appartenenza e le impostazioni del team. Ogni team può avere fino a 100 proprietari.
 -   Il _membro del team_ è un membro dell'organizzazione che partecipa a un team.
 -   Un _guest_ è un utente esterno all'organizzazione. Chiunque abbia un indirizzo di posta elettronica può essere invitato come guest, se l'organizzazione ha abilitato l'[accesso guest](guest-access.md).
 

@@ -14,19 +14,19 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: be40c98a66e5f3023ce375d0a00515832280c7c0
-ms.sourcegitcommit: d2bee305a3588f8487bba3396b1825be7a52f6d2
+ms.openlocfilehash: b7660cc35986b8b0debc449bacde686bb9e2694b
+ms.sourcegitcommit: 43a17ce6fea3951719b55bfbda03c500cef4816c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38714492"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41580923"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
 La presenza fa parte del profilo di un utente in Microsoft Teams (e in tutto Office 365) che indica la disponibilità e lo stato correnti dell'utente ad altri utenti. Per impostazione predefinita, tutti gli utenti dell'organizzazione che usano team possono vedere (in tempi quasi reali) se sono disponibili online.
 
 > [!IMPORTANT]
-> Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza smette di funzionare in Outlook e in altre app di Office. La presenza funziona correttamente in teams. Soluzione alternativa: per vedere la presenza in Outlook e in altre app di Office, è necessario installare Skype for business, anche se si sta usando teams in modalità **solo teams** . Microsoft è a conoscenza del problema e sta lavorando a una correzione.
+> Se si disinstalla il client di Skype for Business dopo aver spostato un utente in modalità **Solo Teams**, l’icona di presenza smetterà di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Soluzione alternativa: per vedere la presenza in Outlook e in altre app di Office, è necessario installare Skype for business, anche se si sta usando teams in modalità **solo teams** . Microsoft è a conoscenza del problema e sta lavorando per risolverlo.
 
 La presenza di Teams in Outlook è supportata nell'app desktop Outlook 2013 e versioni successive.
 

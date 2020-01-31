@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 89f9ba68dd4fbd1cef271c0dd0a3fb73e10637a7
-ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
+ms.openlocfilehash: 52bc712798a1412a1c7c2c510c92af090608865d
+ms.sourcegitcommit: 5932ec62a42d7b392fa31c6a2a3462389ac24b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38626982"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573622"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -40,10 +40,9 @@ Il componente aggiuntivo riunione teams viene installato automaticamente per gli
 > - Gli utenti di Windows 7 devono installare l' [aggiornamento per Universal C Runtime in Windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows) in Windows per il componente aggiuntivo riunione teams per il lavoro.
 > - Se si usa un'installazione di Office Outlook da Microsoft Store, il componente aggiuntivo riunione teams non è supportato. Gli utenti che richiedono questo componente aggiuntivo si consiglia di installare la versione a portata di clic di Office, come descritto in Office in [Windows 10 in modalità S](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f) .
 
-
 ## <a name="teams-meeting-add-in-in-outlook-for-mac"></a>Componente aggiuntivo riunione teams in Outlook per Mac
 
-Il pulsante riunione teams in Outlook per Mac verrà visualizzato nella barra multifunzione di Outlook per Mac se Outlook è in uso per la build di produzione 16.24.414.0 e versioni successive.
+Il pulsante riunione teams in Outlook per Mac verrà visualizzato nella barra multifunzione di Outlook per Mac se Outlook è in uso per la build di produzione 16.24.414.0 e versioni successive e viene attivato con un abbonamento client di Office 365.
 
 Le coordinate della riunione (i numeri di collegamento e di accesso esterno per i team) verranno aggiunte all'invito alla riunione dopo che l'utente ha fatto clic su **Invia**.  
 
@@ -100,10 +99,10 @@ Quando gli utenti che si trovano in modalità Isola pianificano una riunione in 
 | Modalità di coesistenza nell'interfaccia di amministrazione di Teams | Provider di riunioni predefinito in Outlook Mobile |
 | --------------------------------------|---------------------------------------------|
 | Isole | Skype for business |
-| Solo Skype for business | Skype for business |
+| Solo Skype for Business | Skype for business |
 | Collaborazione tra Skype for business e teams | Skype for business |
-| Skype for business con la collaborazione e le riunioni di Teams | Team |
-| Solo Teams | Team |
+| Skype for business con la collaborazione e le riunioni di Teams | Teams |
+| Solo Teams | Teams |
 
 ## <a name="other-considerations"></a>Altre considerazioni
 

@@ -3,85 +3,6 @@
 
 
 
-## <a name="week-of-december-09-2019"></a>Settimana di dicembre 09, 2019
-
-
-| Pubblicato in |Titolo argomento | Modificare |
-|------|------------|--------|
-| 12/9/2019 | [Usare Office 365 e connettori personalizzati in Microsoft Teams](/MicrosoftTeams/office-365-custom-connectors) | modificato |
-| 12/9/2019 | Aggiungere bot per chat e canali privati in Microsoft Teams | rimosso |
-| 12/9/2019 | [Usare le schede predefinite e personalizzate in Microsoft Teams](/MicrosoftTeams/built-in-custom-tabs) | modificato |
-| 12/9/2019 | [App, bot, connettori & in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | modificato |
-| 12/9/2019 | [Usare lo strumento di ripristino di Microsoft teams rooms](/MicrosoftTeams/room-systems/recovery-tool) | modificato |
-| 12/9/2019 | [Requisiti di Microsoft teams rooms](/MicrosoftTeams/room-systems/requirements) | modificato |
-| 12/9/2019 | [Usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](/MicrosoftTeams/use-advisor-teams-roll-out) | modificato |
-| 12/9/2019 | [Problemi noti di Microsoft Teams](/MicrosoftTeams/known-issues) | modificato |
-| 12/9/2019 | [Gestire i criteri di ID chiamante in Microsoft Teams](/MicrosoftTeams/caller-id-policies) | modificato |
-| 12/9/2019 | [Creare e impostare piani di chiamata](/MicrosoftTeams/create-and-manage-dial-plans) | modificato |
-| 12/9/2019 | [Ottenere client per Microsoft Teams](/MicrosoftTeams/get-clients) | modificato |
-| 12/9/2019 | Roadmap di Upgrade Pro per \| Microsoft Teams | rimosso |
-| 12/9/2019 | [Che cosa sono i piani di chiamata?](/MicrosoftTeams/what-are-dial-plans) | modificato |
-| 12/10/2019 | [Gestire l'app turni per l'organizzazione in Microsoft Teams](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams) | modificato |
-| 12/10/2019 | [Ritiro di Microsoft StaffHub](/MicrosoftTeams/expand-teams-across-your-org/shifts/microsoft-staffhub-to-be-retired) | modificato |
-| 12/10/2019 | [Comunicare con utenti di altre organizzazioni in Microsoft Teams](/MicrosoftTeams/communicate-with-users-from-other-organizations) | modificato |
-| 12/10/2019 | [Requisiti hardware per l'app Microsoft Teams](/MicrosoftTeams/hardware-requirements-for-the-teams-app) | modificato |
-| 12/10/2019 | [Esperienza di chat nativa per utenti esterni (federati) in Microsoft Teams](/MicrosoftTeams/native-chat-for-external-users) | modificato |
-| 12/10/2019 | [Team per l'infrastruttura desktop virtualizzata](/MicrosoftTeams/teams-for-vdi) | modificato |
-| 12/11/2019 | [Gestire i criteri di autorizzazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies) | modificato |
-| 12/11/2019 | [Gestire i criteri di routing delle chiamate di emergenza in Microsoft Teams](/MicrosoftTeams/manage-emergency-call-routing-policies) | modificato |
-| 12/11/2019 | [Gestire i criteri delle chiamate di emergenza in Microsoft Teams](/MicrosoftTeams/manage-emergency-calling-policies) | modificato |
-| 12/11/2019 | [Note sulla versione](/MicrosoftTeams/room-systems/srs2-release-note) | modificato |
-| 12/12/2019 | [Gestire i criteri di ID chiamante in Microsoft Teams](/MicrosoftTeams/caller-id-policies) | modificato |
-| 12/12/2019 | [Gestire i criteri di routing delle chiamate di emergenza in Microsoft Teams](/MicrosoftTeams/manage-emergency-call-routing-policies) | modificato |
-| 12/12/2019 | [Gestire i criteri delle chiamate di emergenza in Microsoft Teams](/MicrosoftTeams/manage-emergency-calling-policies) | modificato |
-| 12/12/2019 | [Gestire i criteri di feedback in Microsoft Teams](/MicrosoftTeams/manage-feedback-policies-in-teams) | modificato |
-| 12/12/2019 | [Installare Microsoft teams con MSI tramite SCCM](/MicrosoftTeams/msi-deployment) | modificato |
-| 12/12/2019 | [Etichette di sensitività per Microsoft Teams](/MicrosoftTeams/sensitivity-labels) | modificato |
-| 12/12/2019 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | modificato |
-| 12/12/2019 | [Gestire i criteri dei team in Microsoft Teams](/MicrosoftTeams/teams-policies) | modificato |
-| 12/12/2019 | [Configurare Instradamento diretto](/MicrosoftTeams/direct-routing-configure) | modificato |
-| 12/12/2019 | [Ottenere client per Microsoft Teams](/MicrosoftTeams/get-clients) | modificato |
-| 12/13/2019 | [Interazione tra Exchange e Microsoft Teams](/MicrosoftTeams/exchange-teams-interact) | modificato |
-| 12/13/2019 | [Autorizzare l'accesso guest in Microsoft Teams](/MicrosoftTeams/teams-dependencies) | modificato |
-| 12/13/2019 | [Configurare Instradamento diretto](/MicrosoftTeams/direct-routing-configure) | modificato |
-| 12/13/2019 | [Requisiti hardware per l'app Microsoft Teams](/MicrosoftTeams/hardware-requirements-for-the-teams-app) | modificato |
-| 12/13/2019 | [Canali privati in Microsoft Teams](/MicrosoftTeams/private-channels) | modificato |
-| 12/13/2019 | [Team per l'infrastruttura desktop virtualizzata](/MicrosoftTeams/teams-for-vdi) | modificato |
-| 12/13/2019 | [Usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](/MicrosoftTeams/use-advisor-teams-roll-out) | modificato |
-
-
-## <a name="week-of-december-16-2019"></a>Settimana del 16 dicembre 2019
-
-
-| Pubblicato in |Titolo argomento | Modificare |
-|------|------------|--------|
-| 12/16/2019 | [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant) | modificato |
-| 12/16/2019 | [Pianificare l'esperienza degli utenti in Microsoft Teams](/MicrosoftTeams/5-envision-plan-my-users-experience) | modificato |
-| 12/16/2019 | [Creare e impostare piani di chiamata](/MicrosoftTeams/create-and-manage-dial-plans) | modificato |
-| 12/16/2019 | [Elenco di Session Border Controller certificati per Instradamento diretto](/MicrosoftTeams/direct-routing-border-controllers) | modificato |
-| 12/16/2019 | [Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams](/MicrosoftTeams/ediscovery-investigation) | modificato |
-| 12/16/2019 | [Gestire le impostazioni delle riunioni](/MicrosoftTeams/meeting-settings-in-teams) | modificato |
-| 12/16/2019 | [Flussi di chiamata in Microsoft Teams](/MicrosoftTeams/microsoft-teams-online-call-flows) | modificato |
-| 12/16/2019 | [Pianificare Microsoft 365 Government-distribuzioni di GCC-Microsoft Teams](/MicrosoftTeams/plan-for-government-gcc) | modificato |
-| 12/16/2019 | [Note sulla versione](/MicrosoftTeams/room-systems/srs2-release-note) | modificato |
-| 12/16/2019 | [Impostazione delle impostazioni di coesistenza e aggiornamento](/MicrosoftTeams/setting-your-coexistence-and-upgrade-settings) | modificato |
-| 12/16/2019 | [Visualizzare l'analisi tra team e per team in Teams](/MicrosoftTeams/teams-analytics-and-reports/cross-team-per-team-analytics) | modificato |
-| 12/16/2019 | [Team per l'infrastruttura desktop virtualizzata](/MicrosoftTeams/teams-for-vdi) | modificato |
-| 12/16/2019 | [Che cosa sono i piani di chiamata?](/MicrosoftTeams/what-are-dial-plans) | modificato |
-| 12/16/2019 | [Che cos’è il Sistema telefonico in Office 365?](/MicrosoftTeams/what-is-phone-system-in-office-365) | modificato |
-| 12/17/2019 | [Implementare la qualità del servizio nei client di Microsoft Teams](/MicrosoftTeams/qos-in-teams-clients) | modificato |
-| 12/18/2019 | [Disponibilità in Belize](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-belize) | modificato |
-| 12/18/2019 | [Disponibilità in Cambogia](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-cambodia) | modificato |
-| 12/18/2019 | [Disponibilità in El Salvador](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-el-salvador) | modificato |
-| 12/18/2019 | [Disponibilità in Honduras](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-honduras) | modificato |
-| 12/18/2019 | [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) | modificato |
-| 12/18/2019 | [Configurare Instradamento diretto](/MicrosoftTeams/direct-routing-configure) | modificato |
-| 12/18/2019 | [Gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | modificato |
-| 12/18/2019 | [Pianificare l'implementazione di Microsoft 365 Government-GCC High Deployment-Microsoft Teams](/MicrosoftTeams/plan-for-government-gcc-high) | modificato |
-| 12/18/2019 | [Telefoni e dispositivi per Teams](/MicrosoftTeams/teams-ip-phones) | modificato |
-| 12/19/2019 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
-
-
 ## <a name="week-of-december-23-2019"></a>Settimana del 23 dicembre 2019
 
 
@@ -148,3 +69,30 @@
 | 1/9/2020 | [Cosa sono gli operatori automatici cloud?](/MicrosoftTeams/what-are-phone-system-auto-attendants) | modificato |
 | 1/10/2020 | [Configurare Instradamento diretto](/MicrosoftTeams/direct-routing-configure) | modificato |
 | 1/10/2020 | [Installare Microsoft teams con MSI tramite SCCM](/MicrosoftTeams/msi-deployment) | modificato |
+
+
+## <a name="week-of-january-13-2020"></a>Settimana del 13 gennaio 2020
+
+
+| Pubblicato in |Titolo argomento | Modificare |
+|------|------------|--------|
+| 1/14/2020 | [Gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | modificato |
+| 1/14/2020 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | modificato |
+| 1/15/2020 | [Formazione per amministratori per Microsoft Teams](/MicrosoftTeams/itadmin-readiness) | modificato |
+| 1/15/2020 | [Panoramica della sicurezza e della conformità in Microsoft Teams](/MicrosoftTeams/security-compliance-overview) | modificato |
+| 1/15/2020 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
+| 1/16/2020 | [Registrazione delle riunioni cloud di Teams](/MicrosoftTeams/cloud-recording) | modificato |
+| 1/17/2020 | [Interazione tra Exchange e Microsoft Teams](/MicrosoftTeams/exchange-teams-interact) | modificato |
+| 1/17/2020 | Capire in che modo gli utenti possono bloccare le chiamate PSTN nei client desktop e mobili di Microsoft Teams | rimosso |
+| 1/17/2020 | [Installare Microsoft teams con MSI tramite SCCM](/MicrosoftTeams/msi-deployment) | modificato |
+
+
+## <a name="week-of-january-20-2020"></a>Settimana del 20 gennaio 2020
+
+
+| Pubblicato in |Titolo argomento | Modificare |
+|------|------------|--------|
+| 1/21/2020 | [Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](/MicrosoftTeams/migration-interop-guidance-for-teams-with-skype) | modificato |
+| 1/21/2020 | [Attivare e usare il dashboard qualità chiamata](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard) | modificato |
+| 1/21/2020 | [App pazienti per amministratori Teams](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) | modificato |
+| 1/21/2020 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |

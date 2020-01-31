@@ -17,12 +17,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f698d46be07c60d2034b2e355ad70b488b2d7646
-ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
+ms.openlocfilehash: ed6b86aacf13b577d45ee982d32fae7565d37314
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111480"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628542"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere client per Microsoft Teams 
 
@@ -45,7 +45,7 @@ I client desktop supportano il supporto delle comunicazioni in tempo reale (audi
 
 I client desktop possono essere scaricati e installati dagli utenti finali direttamente [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/?linkid=855754) da se hanno le autorizzazioni locali appropriate (i diritti di amministratore non sono necessari per installare il client teams su un PC, ma sono necessari in un Mac).
 
-Gli amministratori IT possono scegliere il metodo preferito per distribuire i file di installazione nei computer dell'organizzazione. Alcuni esempi includono System Center Configuration Manager (Windows) o grafp Pro (macOS). Per ottenere il pacchetto MSI per la distribuzione di Windows, vedere [installare Microsoft teams con MSI](msi-deployment.md).  
+Gli amministratori IT possono scegliere il metodo preferito per distribuire i file di installazione nei computer dell'organizzazione. Alcuni esempi includono Microsoft endpoint Configuration Manager (Windows) o grafp Pro (macOS). Per ottenere il pacchetto MSI per la distribuzione di Windows, vedere [installare Microsoft teams con MSI](msi-deployment.md).  
 
 > [!NOTE]
 > La distribuzione del client tramite questi meccanismi è solo per l'installazione iniziale dei client di Microsoft Team e non per gli aggiornamenti futuri.

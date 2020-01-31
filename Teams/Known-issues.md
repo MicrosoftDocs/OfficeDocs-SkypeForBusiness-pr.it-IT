@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Elenco corrente dei problemi noti riguardanti l’interfaccia di amministrazione e l'app client di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 50501c3d5e077deacaf183dd36efce72d295f556
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 9c613f2116b5ad9f97426f60466d71d4ffaddba1
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40990651"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628532"
 ---
 # <a name="known-issues-for-microsoft-teams"></a>Problemi noti di Microsoft Teams
 
@@ -313,6 +313,14 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
 |Integrazione di Planner in Teams con Planner online <br/> |I contenitori di attività in Planner non vengono visualizzati online in Planner per il Web.  <br/> |Non ci sono soluzioni alternative. <br/> |28/02/2017  <br/>|
+
+
+|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
+|:-----|:-----|:-----|:-----|
+|Integrazione di Planner in Teams con Planner online <br/> |I proprietari non riescono a creare un piano da un team di creato da un gruppo di Office 365 esistente.  <br/> |Assegnare le autorizzazioni di membro al proprietario del gruppo. <br/> |14/1/20  <br/>|
+
+
+
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: Distribuire le sale di Microsoft teams tramite System Center Configuration Manager
+title: Distribuire le sale di Microsoft teams usando Microsoft endpoint Configuration Manager
 author: lanachin
 ms.author: v-lanac
 ms.reviewer: Turgayo
@@ -30,18 +30,18 @@ no-loc:
 - Azure Monitor
 - Log Analytics
 - Operations Management Suite
-ms.openlocfilehash: fe6ea140f15c5234117aabe6612e0190e47ddc4d
-ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
+ms.openlocfilehash: 3735553c1d2c0cc1b0d7e6065be606b69337e9cc
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269045"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628642"
 ---
-# <a name="deploy-microsoft-teams-rooms-by-using-system-center-configuration-manager"></a>Distribuire le sale di Microsoft teams tramite System Center Configuration Manager
+# <a name="deploy-microsoft-teams-rooms-by-using-microsoft-endpoint-configuration-manager"></a>Distribuire le sale di Microsoft teams usando Microsoft endpoint Configuration Manager
 
-In questo articolo vengono fornite tutte le informazioni necessarie per creare le distribuzioni di Microsoft teams Rooms tramite System Center Configuration Manager.
+In questo articolo vengono fornite tutte le informazioni necessarie per creare le distribuzioni delle sale di Microsoft teams usando Microsoft endpoint Configuration Manager.
 
-Con i metodi di facile utilizzo forniti da System Center Configuration Manager, è possibile distribuire il sistema operativo e altre applicazioni in più dispositivi di destinazione.
+Con i metodi di facile utilizzo forniti da Configuration Manager, è possibile distribuire il sistema operativo e altre applicazioni in più dispositivi di destinazione.
 
 Usare l'approccio illustrato di seguito per guidarvi alla configurazione di Configuration Manager e personalizzare i pacchetti di esempio e gli script forniti in tutte le linee guida necessarie per l'organizzazione.
 
@@ -54,17 +54,17 @@ Usare l'approccio illustrato di seguito per guidarvi alla configurazione di Conf
 
 Per distribuire le sale di Microsoft teams con Configuration Manager, verificare di soddisfare i requisiti e i prerequisiti seguenti.
 
-### <a name="system-center-configuration-manager-requirements"></a>Requisiti di System Center Configuration Manager
+### <a name="microsoft-endpoint-configuration-manager-requirements"></a>Requisiti di Microsoft endpoint Configuration Manager
 
--   La versione di System Center Configuration Manager deve essere almeno 1706 o superiore. È consigliabile usare 1710 o versione successiva. Per informazioni sulle versioni di Windows 10 supportate da Configuration Manager, vedere [supporto per Windows 10 in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client) .
+-   La versione di Microsoft endpoint Configuration Manager deve essere almeno 1706 o superiore. È consigliabile usare 1710 o versione successiva. Per informazioni sulle versioni di Windows 10 supportate da Configuration Manager, vedere [supporto per Windows 10 in Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client) .
 
--   È necessario installare una versione supportata di Windows Assessment and Deployment Kit (ADK) per Windows 10. Vedere le versioni di [Windows 10 ADK](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk) che è possibile usare con versioni diverse di Configuration Manager e verificare che la distribuzione includa la versione corretta.
+-   È necessario installare una versione supportata di Windows Assessment and Deployment Kit (ADK) per Windows 10. Vedere le versioni di [Windows 10 ADK](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-adk) che è possibile usare con versioni diverse di Configuration Manager e verificare che la distribuzione includa la versione corretta.
 
--   Ai server di sistema del sito deve essere stato assegnato il ruolo del punto di distribuzione e le immagini di avvio devono essere abilitate per il [supporto PXE (Preboot Execution Environment)](https://docs.microsoft.com/sccm/osd/deploy-use/use-pxe-to-deploy-windows-over-the-network) per abilitare le distribuzioni avviate dalla rete. Se il supporto PXE non è abilitato, è possibile usare i [supporti di avvio](https://docs.microsoft.com/sccm/osd/deploy-use/use-bootable-media-to-deploy-windows-over-the-network) per le distribuzioni.
+-   Ai server di sistema del sito deve essere stato assegnato il ruolo del punto di distribuzione e le immagini di avvio devono essere abilitate per il [supporto PXE (Preboot Execution Environment)](https://docs.microsoft.com/configmgr/osd/deploy-use/use-pxe-to-deploy-windows-over-the-network) per abilitare le distribuzioni avviate dalla rete. Se il supporto PXE non è abilitato, è possibile usare i [supporti di avvio](https://docs.microsoft.com/configmgr/osd/deploy-use/use-bootable-media-to-deploy-windows-over-the-network) per le distribuzioni.
 
--   Un account di accesso alla rete deve essere configurato per supportare scenari di distribuzione di nuovi computer (Bare Metal). Per ulteriori informazioni sulla configurazione di un account di accesso alla rete, vedere [gestire gli account per accedere al contenuto in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#bkmk_NAA).
+-   Un account di accesso alla rete deve essere configurato per supportare scenari di distribuzione di nuovi computer (Bare Metal). Per ulteriori informazioni sulla configurazione di un account di accesso alla rete, vedere [account usati in Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/manage-accounts-to-access-content#bkmk_NAA).
 
--   È consigliabile abilitare il [supporto multicast](https://docs.microsoft.com/sccm/osd/deploy-use/use-multicast-to-deploy-windows-over-the-network), se è probabile che si stia distribuendo la stessa immagine di Microsoft teams rooms in più unità contemporaneamente.
+-   È consigliabile abilitare il [supporto multicast](https://docs.microsoft.com/configmgr/osd/deploy-use/use-multicast-to-deploy-windows-over-the-network), se è probabile che si stia distribuendo la stessa immagine di Microsoft teams rooms in più unità contemporaneamente.
 
 ### <a name="networking-requirements"></a>Requisiti di rete
 
@@ -73,14 +73,14 @@ Per distribuire le sale di Microsoft teams con Configuration Manager, verificare
     > [!NOTE]
     > La durata del lease DHCP deve essere impostata su un valore superiore alla durata della distribuzione delle immagini. In caso contrario, la distribuzione potrebbe non riuscire.
 
--   La rete, inclusi gli interruttori e le LAN virtuali (VLAN), deve essere configurata per supportare PXE. Per altre informazioni sull'helper IP e la configurazione PXE, vedere il fornitore di rete. In alternativa, puoi usare il supporto di [avvio](https://docs.microsoft.com/sccm/osd/deploy-use/use-bootable-media-to-deploy-windows-over-the-network) per le distribuzioni, se il supporto PXE non è abilitato.
+-   La rete, inclusi gli interruttori e le LAN virtuali (VLAN), deve essere configurata per supportare PXE. Per altre informazioni sull'helper IP e la configurazione PXE, vedere il fornitore di rete. In alternativa, puoi usare il supporto di [avvio](https://docs.microsoft.com/configmgr/osd/deploy-use/use-bootable-media-to-deploy-windows-over-the-network) per le distribuzioni, se il supporto PXE non è abilitato.
 
     > [!NOTE]
     > Per i dispositivi Surface Pro, l'avvio dalla rete (avvio PXE) è supportato solo quando si usa un adattatore Ethernet o una stazione di ancoraggio da Microsoft. Le schede Ethernet di terze parti non supportano l'avvio PXE con Surface Pro. Per altre informazioni, vedere [schede Ethernet e distribuzione di superfici](https://docs.microsoft.com/surface/ethernet-adapters-and-surface-device-deployment) .
 
-## <a name="configure-system-center-configuration-manager-for-operating-system-deployment"></a>Configurazione di System Center Configuration Manager per la distribuzione del sistema operativo
+## <a name="configure-microsoft-endpoint-configuration-manager-for-operating-system-deployment"></a>Configurare Microsoft endpoint Configuration Manager per la distribuzione del sistema operativo
 
-Questo articolo presuppone che tu abbia già una distribuzione di System Center Configuration Manager in modo sano e non dettagli tutti i passaggi necessari per la distribuzione e la configurazione di Configuration Manager da zero. La [documentazione e le indicazioni](https://docs.microsoft.com/sccm/) per la configurazione di System Center Configuration Manager sono un'ottima risorsa. Se non è stato ancora distribuito Configuration Manager, è consigliabile iniziare con queste risorse.
+Questo articolo presuppone che tu abbia già una distribuzione di Configuration Manager sano e non dettagli tutti i passaggi necessari per la distribuzione e la configurazione di Configuration Manager da zero. La [documentazione e le indicazioni](https://docs.microsoft.com/configmgr/) per la configurazione di Microsoft endpoint Configuration Manager sono un'ottima risorsa. Se non è stato ancora distribuito Configuration Manager, è consigliabile iniziare con queste risorse.
 
 Seguire le istruzioni seguenti per verificare che le caratteristiche OSD (Operating System Deployment) siano configurate correttamente.
 
@@ -90,7 +90,7 @@ Seguire le istruzioni seguenti per verificare che le caratteristiche OSD (Operat
 
 2.  Controllare la build installata e gli aggiornamenti applicabili che non sono ancora stati installati.
 
-3.  Rivedere il [supporto per Windows 10 in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client); Se è necessario aggiornare la distribuzione, selezionare l'aggiornamento che si vuole installare e quindi selezionare **Scarica**.
+3.  Rivedere il [supporto per Windows 10 in Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client); Se è necessario aggiornare la distribuzione, selezionare l'aggiornamento che si vuole installare e quindi selezionare **Scarica**.
 
 4.  Al termine del download, selezionare l'aggiornamento e quindi selezionare **Installa Update Pack**.
 
@@ -118,7 +118,7 @@ Seguire le istruzioni seguenti per verificare che le caratteristiche OSD (Operat
 3.  Selezionare la scheda **account di accesso alla rete** . configurare uno o più account e quindi scegliere **OK**.
 
 > [!NOTE]
-> Gli account non necessitano di diritti speciali, ad eccezione del fatto che il **computer di Access si** trova direttamente sul server del punto di distribuzione. Un account utente di dominio generico sarà appropriato. Per altre informazioni, vedere [gestire gli account per accedere al contenuto in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#bkmk_NAA).
+> Gli account non necessitano di diritti speciali, ad eccezione del fatto che il **computer di Access si** trova direttamente sul server del punto di distribuzione. Un account utente di dominio generico sarà appropriato. Per altre informazioni, vedere [account usati in Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/manage-accounts-to-access-content#bkmk_NAA).
 
 ### <a name="configure-a-boot-image"></a>Configurare un'immagine di avvio
 
@@ -140,15 +140,15 @@ Seguire le istruzioni seguenti per verificare che le caratteristiche OSD (Operat
 
 6.  Quando richiesto, selezionare **Sì** e distribuire l'immagine di avvio aggiornata ai punti di distribuzione.
 
-Per altre informazioni, vedere [gestire le immagini di avvio con System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/get-started/manage-boot-images).
+Per altre informazioni, vedere [gestire le immagini di avvio con Configuration Manager](https://docs.microsoft.com/configmgr/osd/get-started/manage-boot-images).
 
 > [!NOTE]
-> Puoi creare un supporto USB avviabile per avviare distribuzioni basate su Sequence Manager di configurazione per gli ambienti che non hanno supporto PXE. Il supporto di avvio contiene solo l'immagine di avvio, i comandi di preavvio facoltativi e i file necessari e i binari di Configuration Manager per supportare l'avvio in Windows PE e la connessione a Gestione configurazione per il resto del processo di distribuzione. Per altre informazioni, vedere [come creare elementi multimediali avviabili](https://docs.microsoft.com/sccm/osd/deploy-use/create-bootable-media#BKMK_CreateBootableMedia).
+> Puoi creare un supporto USB avviabile per avviare distribuzioni basate su Sequence Manager di configurazione per gli ambienti che non hanno supporto PXE. Il supporto di avvio contiene solo l'immagine di avvio, i comandi di preavvio facoltativi e i file necessari e i binari di Configuration Manager per supportare l'avvio in Windows PE e la connessione a Gestione configurazione per il resto del processo di distribuzione. Per altre informazioni, vedere [creare elementi multimediali avviabili](https://docs.microsoft.com/configmgr/osd/deploy-use/create-bootable-media#BKMK_CreateBootableMedia).
 
 ## <a name="create-configuration-manager-packages"></a>Creare pacchetti di Configuration Manager
 
 > [!IMPORTANT]
-> La versione del sistema operativo necessaria per ogni versione del programma di installazione di SRS cambia con ogni rilascio MSI. Per determinare la versione del sistema operativo migliore per un determinato MSI, eseguire lo script di configurazione della console una sola volta. Per altre informazioni, vedere [distribuire le sale di Microsoft teams tramite System Center Configuration Manager](rooms-scale.md).
+> La versione del sistema operativo necessaria per ogni versione del programma di installazione di SRS cambia con ogni rilascio MSI. Per determinare la versione del sistema operativo migliore per un determinato MSI, eseguire lo script di configurazione della console una sola volta. Per altre informazioni, vedere [distribuire le sale di Microsoft teams usando Microsoft endpoint Configuration Manager](rooms-scale.md).
 
 Configuration Manager richiede un certo numero di pacchetti per la distribuzione e la configurazione delle unità di Microsoft teams rooms.
 
@@ -168,13 +168,13 @@ Configuration Manager richiede un certo numero di pacchetti per la distribuzione
 | Surface Pro                          | Pacchetto del driver         | Pacchetto per i driver di dispositivo e il firmware per Microsoft Surface Pro                     |
 | Surface Pro 4                        | Pacchetto del driver         | Pacchetto per i driver di dispositivo e il firmware per Microsoft Surface Pro 4                   |
 
-Per altre informazioni, vedere [pacchetti e programmi in System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
+Per altre informazioni, vedere [pacchetti e programmi in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
 
 ### <a name="create-folders-for-the-package-source-files"></a>Creare cartelle per i file di origine del pacchetto
 
 Configuration Manager richiede che i file di origine del pacchetto vengano organizzati in una struttura di cartelle specifica quando vengono creati e aggiornati.
 
-Creare la struttura di cartelle seguente nel sito di amministrazione centrale di System Center Configuration Manager o nel sito principale oppure in una condivisione server che si sta usando per ospitare i file di origine del pacchetto:
+Creare la struttura di cartelle seguente nel sito di amministrazione centrale o nel sito principale di Microsoft endpoint Configuration Manager oppure in una condivisione server che si sta usando per ospitare i file di origine del pacchetto:
 
 -   SRS v2-pacchetto agente di monitoraggio Microsoft
 -   Pacchetto aggiornamenti di SRS V2-OS
@@ -486,7 +486,7 @@ Questo pacchetto viene creato per distribuire il certificato radice per i dispos
 
 6.  Selezionare **Chiudi**.
 
-Per altre informazioni, vedere [gestire le immagini del sistema operativo con System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/get-started/manage-operating-system-images).
+Per altre informazioni, vedere [gestire le immagini del sistema operativo con Configuration Manager](https://docs.microsoft.com/configmgr/osd/get-started/manage-operating-system-images).
 
 ### <a name="create-surface-pro-device-driver-packages"></a>Creare pacchetti di driver di dispositivo Surface Pro
 
@@ -524,7 +524,7 @@ Microsoft teams Rooms è supportato sia per Surface Pro che per Surface Pro 4. �
 12. Sposta tutti i driver importati nella cartella appena creata per semplificare l'esplorazione e l'operazione.
 
 > [!NOTE]
-> Ripetere gli stessi passaggi per altri modelli di Surface Pro che si potrebbero avere. Per altre informazioni, vedere [gestire i driver in System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/get-started/manage-drivers).
+> Ripetere gli stessi passaggi per altri modelli di Surface Pro che si potrebbero avere. Per altre informazioni, vedere [gestire i driver in Configuration Manager](https://docs.microsoft.com/configmgr/osd/get-started/manage-drivers).
 
 ### <a name="create-microsoft-teams-rooms-configuration-package"></a>Creare un pacchetto di configurazione di Microsoft teams rooms
 
@@ -591,7 +591,7 @@ Tutti i pacchetti devono essere distribuiti ai server a cui è stato assegnato i
 
 ## <a name="configuration-manager-task-sequences"></a>Sequenze di attività di gestione configurazione
 
-Puoi usare le sequenze di attività con System Center Configuration Manager per automatizzare i passaggi per la distribuzione di un'immagine del sistema operativo in un computer di destinazione. Per distribuire un'unità Microsoft teams rooms in modo automatico, è possibile creare una sequenza di attività che faccia riferimento all'immagine di avvio usata per avviare il computer di Microsoft teams rooms, l'immagine del sistema operativo Windows 10 Enterprise che si vuole installare e qualsiasi altri contenuti aggiuntivi, ad esempio altre applicazioni o aggiornamenti software.
+Puoi usare le sequenze di attività con Configuration Manager per automatizzare i passaggi per la distribuzione di un'immagine del sistema operativo in un computer di destinazione. Per distribuire un'unità Microsoft teams rooms in modo automatico, è possibile creare una sequenza di attività che faccia riferimento all'immagine di avvio usata per avviare il computer di Microsoft teams rooms, l'immagine del sistema operativo Windows 10 Enterprise che si vuole installare e qualsiasi altri contenuti aggiuntivi, ad esempio altre applicazioni o aggiornamenti software.
 
 ### <a name="import-the-sample-task-sequence"></a>Importare la sequenza di attività di esempio
 
@@ -708,9 +708,9 @@ Puoi usare le sequenze di attività con System Center Configuration Manager per 
 <a name="validate-and-troubleshoot-the-solution"></a>Convalidare e risolvere i problemi della soluzione
 --------------------------------------
 
-Dopo aver completato le sequenze di attività di System Center Configuration Manager, è necessario eseguire un'esecuzione di test per verificare che la sequenza di attività sia in grado di distribuire e configurare le unità di Microsoft teams rooms.
+Dopo aver completato le sequenze di attività di Microsoft endpoint Configuration Manager, è necessario eseguire un'esecuzione di test per verificare che la sequenza di attività sia in grado di distribuire e configurare le unità di Microsoft teams rooms.
 
-1.  Connettere il dispositivo di test alla rete cablata usando una delle schede Ethernet supportate o usando Surface Dock. Se la funzionalità di avvio PXE non è stata configurata per l'ambiente in uso, è possibile usare l'immagine di avvio dell'unità flash USB [creata in precedenza](https://docs.microsoft.com/sccm/osd/deploy-use/create-bootable-media) per l'avvio da USB e la connessione a Gestione configurazione.
+1.  Connettere il dispositivo di test alla rete cablata usando una delle schede Ethernet supportate o usando Surface Dock. Se la funzionalità di avvio PXE non è stata configurata per l'ambiente in uso, è possibile usare l'immagine di avvio dell'unità flash USB [creata in precedenza](https://docs.microsoft.com/configmgr/osd/deploy-use/create-bootable-media) per l'avvio da USB e la connessione a Gestione configurazione.
 
 2.  Accedere al firmware e avviare l'avvio PXE:
 
@@ -772,4 +772,4 @@ Per risolvere i problemi di avvio PXE, controllare i due file di log nel server 
 
 -   **SMSPXE. log**, situato nella directory dei registri di Configuration Manager Management Point (MP)
 
-Per un elenco completo dei file di log che è possibile usare per risolvere ulteriormente la procedura di installazione di Configuration Manager, vedere [file di log in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files).
+Per un elenco completo dei file di log che è possibile usare per risolvere ulteriormente la procedura di installazione di Configuration Manager, vedere il [riferimento al file di log](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/log-files)di Microsoft endpoint Configuration Manager.

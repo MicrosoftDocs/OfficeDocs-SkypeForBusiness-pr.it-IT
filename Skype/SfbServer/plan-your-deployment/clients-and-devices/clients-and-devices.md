@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 95f0852e-391d-4345-985f-0a2da50491fa
 description: 'Riepilogo: revisione dei client e delle app supportati per Skype for business.'
-ms.openlocfilehash: bda5ca2a9694b87e3bc8a6684770e7efcfc224d4
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d1ee70e39595d5891736dcd4e4830a9a7ef67213
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187901"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628272"
 ---
 # <a name="plan-for-clients-and-devices"></a>Pianificare client e dispositivi
 
@@ -54,7 +54,7 @@ Il client [Skype for business per Mac](https://www.microsoft.com/en-us/download/
 
 ### <a name="skype-for-business-for-mobile-devices"></a>Skype for business per dispositivi mobili
 
-I client sono disponibili per Windows Phone, iPhone/iPad e Android. Gli utenti possono scaricarli in [Skype for business in tutti i tuoi dispositivi](https://products.office.com/en-us/skype-for-business/download-app?tab=tabs-3). Il supporto delle funzionalità per questi client è dettagliato nel [confronto delle caratteristiche dei client mobili per Skype for business](mobile-feature-comparison.md).
+I client sono disponibili per Windows Phone, iPhone/iPad e Android. Gli utenti possono [scaricarli in Skype for business in tutti i tuoi dispositivi](https://products.office.com/en-us/skype-for-business/download-app?tab=tabs-3). Il supporto delle funzionalità per questi client è dettagliato nel [confronto delle caratteristiche dei client mobili per Skype for business](mobile-feature-comparison.md).
 
 > [!NOTE]
 > Il supporto di MCX (servizio mobilità) per i client mobili legacy non è più disponibile in Skype for Business Server 2019. Tutti i client di Skype for business mobile correnti usano già Unified Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
@@ -76,7 +76,7 @@ Se Skype for business non è installato nel computer di un utente e l'utente fa 
 
 In alcune organizzazioni viene usato un ambiente VDI (Virtual Desktop Infrastructure) in cui i problemi di sicurezza e conformità sono particolarmente sensibili. L'uso di Skype for business con l'audio e il video completo su una connessione come quella richiede pesanti carichi di elaborazione audio e video nel client ospitato su un desktop virtuale. È disponibile un ulteriore software di plug-in VDI che consente di scaricare l'elaborazione nel computer locale dell'utente finale e di ridurre il carico sul desktop virtuale. Per informazioni dettagliate sull'uso di questi plug-in, vedere [pianificare Skype for business in ambienti VDI](vdi-environments.md) .
 
-### <a name="microsoft-teams-rooms"></a>Sale di Microsoft Teams
+### <a name="microsoft-teams-rooms"></a>Microsoft Teams Rooms
 
 Microsoft teams Rooms è la soluzione di conferenza più recente di Microsoft che usa un'interfaccia familiare ed è facilmente distribuita e gestita, sfruttando attrezzature esistenti come i pannelli LCD per facilitare l'installazione. Microsoft teams Rooms usa un'app UWP creata appositamente in esecuzione su Surface Pro 4 o Surface Pro in una modalità console (una volta distribuita l'app UWP è l'unica app che verrà eseguita nel dispositivo) e richiederà un proprio account di dispositivo nella tua implementazione. Il software viene aggiornato tramite Windows Store e Windows Update. Vedere https://aka.ms/MTRDocs per informazioni dettagliate sull'uso di queste console della sala nella distribuzione. 
 
@@ -91,7 +91,7 @@ Se l'organizzazione ha acquistato le licenze appropriate, scegliere il client co
 
 Gli utenti possono installare il client da [scaricare Skype for business in tutti i dispositivi](https://products.office.com/en-us/skype-for-business/download-app?tab=tabs-3). Il client viene installato anche quando gli utenti installano Office 365 in Windows. Se alcuni utenti hanno un Mac, gli utenti avranno un set di funzionalità diverso come descritto nelle sezioni precedenti.
 
-Alcune caratteristiche disponibili con Skype for Business Server 2015 non sono disponibili in Skype for business online o in Skype for Business Server 2019, vedere [limitazioni degli account utente online o ibride per](desktop-feature-comparison.md#Online-Hybrid) le limitazioni di 2015 o [online o ibridi per gli account utente per 2019 ](desktop-feature-comparison.md#Online-Hybrid)per le specifiche. Gli amministratori di Skype for business online potrebbero voler fare riferimento alla [Descrizione del servizio Skype for business online](https://technet.microsoft.com/library/skype-for-business-online-service-description.aspx) per informazioni sui diversi piani a loro disposizione.
+Alcune caratteristiche disponibili con Skype for Business Server 2015 non sono disponibili in Skype for business online o in Skype for Business Server 2019, vedere [limitazioni degli account utente online o ibride per](desktop-feature-comparison.md#Online-Hybrid) le limitazioni di 2015 o [online o ibride degli account utente per 2019](desktop-feature-comparison.md#Online-Hybrid) per specifiche. Gli amministratori di Skype for business online potrebbero voler fare riferimento alla [Descrizione del servizio Skype for business online](https://technet.microsoft.com/library/skype-for-business-online-service-description.aspx) per informazioni sui diversi piani a loro disposizione.
 
  Prima di distribuire o eseguire l'aggiornamento a Skype for business, controlla quali clienti sono già in uso nell'organizzazione. Usare il [confronto delle caratteristiche client desktop per Skype for business](desktop-feature-comparison.md) per comprendere l'impatto del supporto delle caratteristiche su tali client. Questo può aiutare a comunicare le modifiche agli utenti, a gestire il processo di implementazione e a comprendere pienamente i vantaggi dell'aggiornamento al client più recente.
 
@@ -128,7 +128,7 @@ Le versioni di base e del client completo (con la scelta delle versioni di 32 e 
 
 ### <a name="msi"></a>MSI
 
-MSI è un metodo di installazione più tradizionale, usato nei client Skype for business 2015 e 2016. Consente di installare manualmente gli aggiornamenti e le patch, usare contratti multilicenza e attivazione ed è personalizzabile tramite lo [strumento di personalizzazione di Office](https://www.microsoft.com/en-us/download/details.aspx?id=49030). È possibile distribuire i client applicando criteri di gruppo tramite System Center Configuration Manager o usando uno strumento di terze parti.
+MSI è un metodo di installazione più tradizionale, usato nei client Skype for business 2015 e 2016. Consente di installare manualmente gli aggiornamenti e le patch, usare contratti multilicenza e attivazione ed è personalizzabile tramite lo [strumento di personalizzazione di Office](https://www.microsoft.com/en-us/download/details.aspx?id=49030). È possibile distribuire i client applicando criteri di gruppo usando Microsoft endpoint Configuration Manager o usando uno strumento di terze parti.
 
 
 
@@ -137,7 +137,7 @@ MSI è un metodo di installazione più tradizionale, usato nei client Skype for 
 
 Skype for Business Server 2019 e Skype for business online supportano i seguenti client rilasciati in precedenza: Skype for business 2016, Skype for business 2015, Lync 2013.
 
-Skype for Business Server 2015 supporta i seguenti client rilasciati in precedenza: Lync 2013, Lync 2010, Lync 2010 mobile, Lync Phone Edition e Lync 2010 Attendant. Per informazioni su questi client quando vengono usati con altri server, vedere le [tabelle di confronto dei client per Lync server 2013](https://technet.microsoft.com/en-us/library/gg425836%28v=ocs.15%29.aspx) e le [tabelle di confronto dei client per Lync Server 2010](https://technet.microsoft.com/en-us/library/gg425836%28v=ocs.14%29.aspx).
+Skype for Business Server 2015 supporta i seguenti client rilasciati in precedenza: Lync 2013, Lync 2010, Lync 2010 mobile, Lync Phone Edition e Lync 2010 Attendant. Per informazioni su questi client quando vengono usati con altri server, vedere le [tabelle di confronto dei client per Lync server 2013](https://technet.microsoft.com/library/gg425836%28v=ocs.15%29.aspx) e le [tabelle di confronto dei client per Lync Server 2010](https://technet.microsoft.com/library/gg425836%28v=ocs.14%29.aspx).
 
 
 ## <a name="client-system-requirements"></a>Requisiti di sistema client

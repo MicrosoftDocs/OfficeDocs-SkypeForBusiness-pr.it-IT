@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d89c2238e1956c4e51cbef72ce89347cec98a9e4
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 716e3daa33b28d874460fa53562875450002ed3e
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40990121"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628142"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -32,7 +32,8 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 |-----------|---------------|
 |Numero di team che un utente può creare | Soggetto a un limite di 250 oggetti&sup1;         |
 |Numero di team di cui un utente può essere membro|1.000|
-|Numero di membri in un team | 5.000       |
+|Numero di membri in un team | 5,000       |
+|Numero di proprietari per Ttam | 100   |
 |Numero di team di tutta l'organizzazione consentiti in un tenant | 5     |
 |Numero di membri in un [team di tutta l'organizzazione](create-an-org-wide-team.md) | 5.000       |
 |Numero di team che possono essere creati da un amministratore globale        |  500.000   |

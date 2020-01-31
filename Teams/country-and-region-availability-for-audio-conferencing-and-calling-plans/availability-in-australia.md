@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Australia.
-ms.openlocfilehash: 984450b96747db74966ae9f0880cd96b9eedb2b4
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 2ce9e45a4f2addbe35c0a853c6c009d58998d336
+ms.sourcegitcommit: 5932ec62a42d7b392fa31c6a2a3462389ac24b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37562707"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573742"
 ---
 # <a name="availability-in-australia"></a>Disponibilità in Australia
 
@@ -55,8 +55,6 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |Casella vocale  <br/> |Disponibili  <br/> |
 
 ## <a name="calling-plans"></a>Piani per chiamate
-> [!IMPORTANT]
-> Disponibile solo tramite Telstra per i tenant basati sull'Australia. Per ulteriori informazioni, consulta [Chiamate Telstra per Office 365](https://aka.ms/TelstraVoicePlan).
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
@@ -66,8 +64,20 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 
 > [!IMPORTANT]
 > Per eliminare i numeri di abbonati australiani (forniti da Telstra), contattare direttamente Telstra.
-> Per aggiornare le informazioni sull'indirizzo di emergenza per i numeri di abbonati australiani (forniti da Telstra) contattare direttamente Telstra.
+> Per aggiornare le informazioni sull'indirizzo di emergenza per i numeri di abbonati australiani (forniti da Telstra), contattare direttamente Telstra.
 > Per ulteriori informazioni, consulta [Chiamate Telstra per Office 365](https://aka.ms/TelstraVoicePlan).
+
+### <a name="if-your-tenant-is-located-outside-australia"></a>Se il tenant si trova all'esterno dell'Australia
+
+A partire dal 1 ° settembre 2019, se il tenant si trova all'esterno dell'Australia, è possibile acquistare piani di chiamata per gli utenti che si trovano in Australia. Questa operazione è disponibile per i paesi e le aree geografiche seguenti.
+
+|||
+|---------|---------|
+|America    |Stati Uniti, isole esterne statunitensi      |
+|APAC     |Bangladesh, Bhutan, Brunei, Cambogia, Hong Kong, Indonesia, Laos, Macao, Malesia, Maldive, Myanmar, Nepal, Filippine, Singapore, Sri Lanka, Thailandia, Timor Est, Vietnam|
+|EMEA    |Isole Åland, Andorra, Austria, Belgio, isola di Bouvet, Bulgaria, Croazia, Cipro, Repubblica Ceca, Danimarca, Estonia, Isole Faroe, Finlandia, Francia, Germania, Gibilterra, Grecia, Groenlandia, Guernsey, Ungheria, Islanda, Irlanda, isola di Man, Italia, Jan Mayen, Jersey, Lettonia, Liechtenstein, Lituania, Lussemburgo, Malta, Monaco, Paesi Bassi, Norvegia, Polonia, Portogallo, Romania, San Marino, Slovacchia, Slovenia, Spagna, Svalbard, Svezia, Svizzera, Regno Unito, città del Vaticano  |
+
+Tieni presente che la chiamata di Telstra per Office 365 verrà visualizzata come componente aggiuntivo solo per gli utenti che si trovano in Australia e i paesi e le aree geografiche elencati sopra, una volta provisionati da Telstra. Per gli utenti di altre aree geografiche, continueranno ad allegare piani di chiamata Microsoft o routing diretto, se applicabile. Per ulteriori informazioni, consulta [Chiamate Telstra per Office 365](https://aka.ms/TelstraVoicePlan).
 
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

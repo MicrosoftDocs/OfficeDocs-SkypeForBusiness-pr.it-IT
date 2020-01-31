@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 244df419-d0a8-4b1d-aedd-a92114172ab6
 description: 'Riepilogo: informazioni su come distribuire il monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: 7f3bd96b814b45b625612aae9b56a706dfff470f
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: c6ccf371d07dfa7d4fbee582a47c7d1306d6c509
+ms.sourcegitcommit: 013190ad10cdc02ce02e583961f433d024d5d370
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41001147"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41634849"
 ---
 # <a name="deploy-monitoring-in-skype-for-business-server"></a>Distribuire il monitoraggio in Skype for Business Server
 
@@ -29,7 +29,7 @@ In genere verranno implementati i servizi di monitoraggio all'interno della topo
 
 2. Associazione di un archivio di monitoraggio (ovvero un database di monitoraggio) con il nuovo pool. Tieni presente che un singolo archivio di monitoraggio può essere associato a più pool. A seconda del numero di utenti ospitati nei pool di registrar, significa che non è necessario configurare un database di monitoraggio separato per ogni pool. Un singolo archivio di monitoraggio può invece essere usato da più pool.
 
-Anche se spesso è più semplice abilitare il monitoraggio quando si crea un nuovo pool, è anche possibile creare un nuovo pool con il monitoraggio disabilitato. In questo caso, puoi usare il generatore di topologie in seguito per abilitare il servizio: generatore di topologie consente di abilitare o disabilitare il monitoraggio per un pool o di associare un pool a un altro archivio di monitoraggio. Tenere presente che, anche se non è più presente un ruolo di monitoraggio del server, sarà comunque necessario creare uno o più archivi di monitoraggio: i database back-end usati per archiviare i dati raccolti dal servizio di monitoraggio. Questi database back-end possono essere creati con Microsoft SQL Server 2008 R2, Microsoft SQL Server 2012. o Microsoft SQL Server 2014.
+Anche se spesso è più semplice abilitare il monitoraggio quando si crea un nuovo pool, è anche possibile creare un nuovo pool con il monitoraggio disabilitato. In questo caso, puoi usare il generatore di topologie in seguito per abilitare il servizio: generatore di topologie consente di abilitare o disabilitare il monitoraggio per un pool o di associare un pool a un altro archivio di monitoraggio. Tenere presente che, anche se non è più presente un ruolo di monitoraggio del server, sarà comunque necessario creare uno o più archivi di monitoraggio: i database back-end usati per archiviare i dati raccolti dal servizio di monitoraggio. Questi database back-end possono essere creati con Microsoft SQL Server 2008 R2, Microsoft SQL Server 2012, Microsoft SQL Server 2014 o Microsoft SQL Server 2019.
 
 > [!NOTE]
 > Se il monitoraggio è stato abilitato per un pool, è possibile disabilitare il processo di raccolta dei dati di monitoraggio senza dover modificare la topologia: Skype for Business Server offre la possibilità di disabilitare (e quindi riabilitare) la registrazione dei dettagli delle chiamate (CDR) o la qualità di Raccolta di dati Experience (QoE). Per altre informazioni, vedere la sezione configurazione della registrazione dei dettagli delle chiamate e della qualità delle impostazioni dell'esperienza di questo documento.

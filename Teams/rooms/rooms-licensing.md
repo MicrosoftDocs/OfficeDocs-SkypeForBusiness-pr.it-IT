@@ -20,12 +20,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle caratteristiche disponibili nelle sale di Microsoft teams. '
-ms.openlocfilehash: 81a1ec8142ba43d17552c220495aae212ba2de04
-ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
+ms.openlocfilehash: 9358eafd4b4e4c9f556a6cca350afa2a5fa4b6fc
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41268997"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628252"
 ---
 # <a name="teams-meeting-room-licensing-update"></a>Aggiornamento delle licenze della sala riunioni Teams
 
@@ -66,7 +66,7 @@ La tabella seguente elenca le caratteristiche disponibili nelle sale di Microsof
 |Avviare una riunione ad hoc | SKU sala riunioni  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
 |Avviare una riunione ad hoc e effettuare chiamate in uscita da una riunione a numeri di telefono |  SKU sala riunioni |Skype for Business Licenza CAL Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
 |Assegnare un numero di telefono alla sala e effettuare o ricevere chiamate dalla sala o partecipare a una conferenza audio usando un numero di telefono  | SKU sala riunioni  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Plus  |
-|Gestire il dispositivo room con Microsoft Intune |SKU sala riunioni  |Abbonamento a Microsoft Intune con [MDM locale](https://docs.microsoft.com/sccm/mdm/plan-design/plan-on-premises-mdm) |
+|Gestire il dispositivo room con Microsoft Intune |SKU sala riunioni  |Abbonamento a Microsoft Intune con [MDM locale](https://docs.microsoft.com/configmgr/mdm/plan-design/plan-on-premises-mdm) |
 | |||
 
 > [!NOTE]

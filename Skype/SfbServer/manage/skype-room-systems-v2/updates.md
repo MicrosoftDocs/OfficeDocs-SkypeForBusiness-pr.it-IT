@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: M365-voice
 ms.assetid: ''
 description: Gestire gli aggiornamenti di Windows per Microsoft teams rooms
-ms.openlocfilehash: 09be03b0308dfcf00a39421e2e84b75fe94a9fae
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: 346747d3d5731f5b4504c45066a39a28f5289e70
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775317"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628682"
 ---
 # <a name="manage-windows-updates"></a>Gestire gli aggiornamenti di Windows
 
@@ -33,11 +33,11 @@ Gli aggiornamenti di Windows possono essere gestiti in diversi modi:
 
 ## <a name="windows-updates-for-businesshttpsdocsmicrosoftcomwindowsdeploymentupdatewaas-manage-updates-wufb-gpo-or-intune"></a>[Aggiornamenti di Windows per le aziende](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) (GPO o Intune)   
 - Gli aggiornamenti vengono scaricati da WU o da WSUS, ma con ritardi configurati oltre la data di rilascio originale della Knowledge base. 
-- In combinazione con più criteri per le UO o i filtri filtrati, questo consente la creazione di "anelli" di distribuzione, in cui gli amministratori possono specificare i dispositivi prima di installare gli aggiornamenti di qualità e quelli che verranno installati in un secondo momento. In questo modo è possibile eseguire test di affidabilità e prestazioni su un sottoinsieme di sistemi prima di distribuire gli aggiornamenti in tutta la distribuzione senza l'overhead di gestire gli aggiornamenti di Windows in SCCM ad esempio.
+- In combinazione con più criteri per le UO o i filtri filtrati, questo consente la creazione di "anelli" di distribuzione, in cui gli amministratori possono specificare i dispositivi prima di installare gli aggiornamenti di qualità e quelli che verranno installati in un secondo momento. In questo modo è possibile eseguire test di affidabilità e prestazioni su un sottoinsieme di sistemi prima di distribuire gli aggiornamenti in tutta la distribuzione senza l'overhead della gestione degli aggiornamenti di Windows in Microsoft endpoint Configuration Manager, ad esempio.
 - Gli aggiornamenti di WSUS e Windows per le aziende possono essere [configurati contemporaneamente](https://docs.microsoft.com/windows/deployment/update/waas-integrate-wufb) se si vuole consentire la gestione della larghezza di banda e il controllo degli aggiornamenti di Windows per le aziende.
 - Aggiornamenti delle caratteristiche. Vedere altre note seguenti.
 
-## <a name="wsussccmhttpsdocsmicrosoftcomwindowsdeploymentupdatewaas-manage-updates-configuration-manager"></a>[WSUS/SCCM](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
+## <a name="wsusconfiguration-managerhttpsdocsmicrosoftcomwindowsdeploymentupdatewaas-manage-updates-configuration-manager"></a>[WSUS/Configuration Manager](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 - Molto simile a Windows Update for business, ma con l'opzione aggiuntiva di destinazione di KB specifici all'interno di ogni "Ring" o dell'intera distribuzione. Ogni aggiornamento può essere distribuito e testato singolarmente, anziché basarsi solo su un ritardo. 
 - Aggiornamenti delle caratteristiche. Vedere altre note seguenti.
 
@@ -48,4 +48,4 @@ A differenza degli aggiornamenti di qualità e non rinviabili, Windows 10 "aggio
 
 Microsoft teams room "out-of-box", con l'approccio hands off, non installa un Windows Update o riavvia un dispositivo automaticamente a causa di un Windows Update. I sistemi possono tuttavia scaricare un aggiornamento e attendere il riavvio successivo per installarlo. A meno che non venga riavviato manualmente, l'installazione deve avvenire durante il riavvio automatico notturno. Gli aggiornamenti di Windows devono essere trasparenti nella sala, ma l'interfaccia utente non deve mai essere interrotta dagli aggiornamenti di Windows.
 
-Se si sceglie di partecipare al dominio, usare SCCM o WSUS e prestare particolare attenzione ai criteri o alle azioni che potrebbero portare il dispositivo a installare un aggiornamento o a forzare un riavvio durante l'orario di ufficio. Se si hanno sistemi nel riavvio della distribuzione durante l'uso o l'avviso sugli aggiornamenti di Windows nell'interfaccia utente, è necessario esaminare la configurazione.
+Se si sceglie di partecipare al dominio, usare Microsoft endpoint Configuration Manager o WSUS e prestare particolare attenzione ai criteri o alle azioni che possono comportare il dispositivo durante l'installazione di un aggiornamento o la forzatura di un riavvio durante l'orario di ufficio. Se si hanno sistemi nel riavvio della distribuzione durante l'uso o l'avviso sugli aggiornamenti di Windows nell'interfaccia utente, è necessario esaminare la configurazione.

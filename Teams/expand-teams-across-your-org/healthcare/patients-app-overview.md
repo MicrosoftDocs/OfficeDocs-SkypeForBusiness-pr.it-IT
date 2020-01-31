@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: App pazienti per amministratori Teams
-ms.openlocfilehash: 550a92ac638f1d83cf8bca9a89e0e29d323247e0
-ms.sourcegitcommit: d7fab927e96954f294f28dfb33c0889f736b3ab5
+ms.openlocfilehash: 38750974ce2d4763cad79b9b4cf50a32f403c7a8
+ms.sourcegitcommit: 013190ad10cdc02ce02e583961f433d024d5d370
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "41259065"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41634839"
 ---
 # <a name="patients-app-overview"></a>Panoramica dell'app Pazienti
 
@@ -28,8 +28,8 @@ L'applicazione patients è un'app Store di Microsoft teams disponibile per tutti
 
 L'app ha due modalità:
 
-- La modalità connessa EMR che si connette a EMR tramite FHIR. L'app modalità connessa EMR rimane in anteprima privata e i clienti interessati o gli amministratori possono richiedere l'accesso all'app eliminando Microsoft un messaggio di posta elettronica su teamsforhealthcare@service.microsoft.com con le informazioni sul tenant di Office 365.
-- La modalità manuale che consente ai team di assistenza di aggiungere/apportare manualmente le informazioni sul paziente. L'applicazione è disponibile nell'app teams Store per gli utenti finali da scaricare per impostazione predefinita ed è in anteprima pubblica. L'app può essere limitata a determinate sezioni di utenti che usano [criteri di configurazione delle app in Microsoft teams](../../teams-app-setup-policies.md)
+- La modalità connessa EMR che si connette a EMR tramite FHIR. L'app modalità connessa EMR rimane in anteprima privata e i clienti interessati o gli amministratori possono richiedere l'accesso all'app eliminando Microsoft un messaggio di posta elettronica su [teamsforhealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) con le informazioni sul tenant di Office 365.
+- La modalità manuale che consente ai team di assistenza di aggiungere/apportare manualmente le informazioni sul paziente. L'applicazione è disponibile nell'app store teams per gli utenti finali da scaricare in anteprima privata. L'app può essere limitata a determinate sezioni di utenti che usano [criteri di configurazione delle app](../../teams-app-setup-policies.md) in teams. Per accedere all'app, il tenant deve far parte del programma di adozione della tecnologia (TAP). Invia un messaggio di posta elettronica su [teamsforhealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) per avviare il processo per richiedere l'accesso.
 
 ## <a name="usage-example"></a>Esempio di utilizzo
 

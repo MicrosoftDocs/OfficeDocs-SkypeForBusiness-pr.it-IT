@@ -11,12 +11,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Istruzioni per l'implementazione della segreteria telefonica basata su cloud per gli utenti ospitati in Skype for Business Server.
-ms.openlocfilehash: 754d69a9b76497f8776667b6ac97498a151c7e4e
-ms.sourcegitcommit: bcac0d94f6eb7132fc17b0ace62e7028f77b0ee6
+ms.openlocfilehash: 5dee8259cd994e4d83b92aa2f68c7f6b4a11df27
+ms.sourcegitcommit: 43a17ce6fea3951719b55bfbda03c500cef4816c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41230356"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41580833"
 ---
 # <a name="configure-cloud-voicemail-service-for-on-premises-users"></a>Configurare il servizio di segreteria cloud per gli utenti locali
 
@@ -100,7 +100,7 @@ Ad esempio, il comando seguente consente di assegnare un criterio di segreteria 
 
 
 ```PowerShell
-Get-CsUser -Identity "User1" | Grant-CsHostedVoicemailPolicy -Identity "Tag:CloudVoiceMailUsers" 
+Get-CsUser -Identity "User1" | Grant-CsHostedVoicemailPolicy -PolicyName "Tag:CloudVoiceMailUsers" 
 ```
 
 ## <a name="enable-a-user-for-cloud-voicemail"></a>Abilitare un utente per la segreteria telefonica cloud

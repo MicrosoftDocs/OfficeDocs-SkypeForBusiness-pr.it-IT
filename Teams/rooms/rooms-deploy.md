@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni sulla distribuzione delle sale di Microsoft teams.
-ms.openlocfilehash: abe9b49febe313bb3b8d503b31562d6ae99128a0
-ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
+ms.openlocfilehash: 0511455516c1dd5ac011a15344bc8a576006fc70
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269003"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628262"
 ---
 # <a name="deployment-overview"></a>Panoramica della distribuzione
 
@@ -133,7 +133,8 @@ Quando si pianifica di distribuire le sale di Microsoft teams, è possibile pren
 |-------------------------|-----------------------|   
 |Distribuzione di un numero limitato di dispositivi Microsoft teams Rooms (<10). | Se si usano le sale Microsoft teams di Surface Pro, seguire le [istruzioni per l'installazione di un'installazione per dispositivo](console.md). [Questo pratico video illustra il processo.](https://content.cloudguides.com/guides/Configure%20the%20Skype%20Room%20Systems%20console) Se si usa una soluzione integrata, eseguire la distribuzione usando l'immagine del fornitore e configurare le impostazioni in base alle esigenze. |
 | Distribuzione tra i dispositivi 10 e 50 da un singolo fornitore.     | Creare un'immagine basata su WIM, sospendere [il passaggio 6 nelle linee guida](console.md)e acquisire un'immagine di distribuzione da usare con la tecnologia di distribuzione della clonazione.    |
-| Distribuire più di 50 dispositivi Microsoft teams rooms, distribuire dispositivi da più fornitori o richiedere agli agenti specifici dell'organizzazione come parte della distribuzione. | Usare una piattaforma di distribuzione e creazione di software basato su sequencer, ad esempio [System Center Configuration Manager](rooms-scale.md).  |
+| Distribuire più di 50 dispositivi Microsoft teams rooms, distribuire dispositivi da più fornitori o richiedere agli agenti specifici dell'organizzazione come parte della distribuzione. | Usare una piattaforma di distribuzione e creazione di software basato su sequencer, ad esempio [Microsoft endpoint Configuration Manager](rooms-scale.md).  |
+
 
 **Suggerimento PRO** : ogni sala di Microsoft Teams deve avere un nome di computer valido e univoco nella rete. Molti sistemi di monitoraggio e avviso visualizzano il nome del computer come identificatore chiave, quindi è importante sviluppare una convenzione di denominazione per le distribuzioni di Microsoft teams Rooms che consente al personale di supporto di individuare facilmente le sale di Microsoft teams contrassegnate che richiedono un'azione. Un esempio potrebbe essere l'uso di un modello di**-*nome della sala* MTR-sito (MTR-Lon-Curie). 
 

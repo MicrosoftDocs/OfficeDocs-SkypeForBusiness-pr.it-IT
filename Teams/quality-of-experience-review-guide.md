@@ -3,7 +3,6 @@ title: Guida alla revisione della qualità dell'esperienza per Microsoft Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
-ms.date: 09/05/2018
 ms.topic: article
 ms.service: msteams
 ms.reviewer: rowille
@@ -15,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fcf18aa2487527c436b104011140524e6ce4ae5d
-ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
+ms.openlocfilehash: 91a4cda0cb7f16363f3fa90deb0358bf5600330a
+ms.sourcegitcommit: 43a17ce6fea3951719b55bfbda03c500cef4816c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952809"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41580903"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza
 
@@ -58,25 +57,28 @@ Questa guida è destinata a essere usata dalle parti interessate partner e clien
 
 Questa guida è destinata anche all'uso da parte dei campioni di qualità designati. Per altre informazioni, Vedi [il ruolo campione di qualità](4-envision-plan-my-service-management.md#the-quality-champion-role).
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="assign-roles-for-accessing-cqd"></a>Assegnare ruoli per l'accesso a Call Quality dashboard
 
 Prima di usare questa guida, verificare che siano assegnati i [ruoli](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) del tenant appropriati in modo da poter accedere a Call Quality dashboard.
 
--   **Amministratore globale di Office 365** 
+Questa tabella Mostra gli elementi che ogni ruolo può eseguire in Call Quality Dashboard:
 
--   **Amministratore di Skype for business** 
 
--   **Amministratore del servizio Teams** 
+|  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Caricare i dati dell'edificio  |
+|---------|:-------:|:-------:|:-------:|:-------:|
+|Amministratore globale di Office 365     |Sì         |Sì         |Sì         |Supporto per più paesi         |
+|Amministratore del servizio Teams     |Sì         |Sì         |Sì         |Supporto per più paesi         |
+|Amministratore comunicazioni Teams     |Sì         |Sì         |Sì         |Supporto per più paesi         |
+|Tecnico supporto comunicazioni Teams     |Sì         |Sì         |Sì         |No         |
+|Specialista supporto comunicazioni Teams     |Sì         |No         |Sì         |No         |
+|Amministratore di Skype for business     |Sì         |Sì         |Sì         |Supporto per più paesi         |
+|Lettore globale di Azure AD |Sì         |Sì         |Sì         |No         |
+|Lettore di report di Office 365<sup>1</sup>     |Sì         |No         |Sì         |No         |
 
--   **Amministratore comunicazioni Teams** 
+<sup>1</sup> oltre a leggere i report di Call Quality dashboard, il lettore di report di Office 365 può visualizzare tutti i [report attività](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) nell'interfaccia di amministrazione e tutti i report del [pacchetto di contenuto adoption di Microsoft 365](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f).
 
--   **Tecnico supporto comunicazioni Teams** 
-
--   **Specialista supporto comunicazioni Teams** 
-
-In alternativa, è possibile assegnare il ruolo seguente a un account utente di Office 365 per consentire l'accesso solo alle funzionalità di creazione di report.
-
--   **Lettore report:** Può visualizzare tutti i [report attività](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) nell'interfaccia di amministrazione, i report di [Microsoft 365 adoption Content Pack](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)e i report di Call Quality dashboard.
+> [!NOTE]
+> Se non si vedono EUII (informazioni identificative per gli utenti finali) e si ha uno dei ruoli consentiti per vedere queste informazioni, tenere presente che Call Quality dashboard mantiene solo EUII per 30 giorni. Viene eliminato qualsiasi valore antecedente di 30 giorni.
 
 ## <a name="what-is-quality"></a>Che cos'è la qualità?
 
@@ -286,6 +288,8 @@ In Call Quality dashboard online sono disponibili due edizioni di report: riepil
 
 Per una descrizione completa della differenza tra le due edizioni, vedere [questo articolo](turning-on-and-using-call-quality-dashboard.md).
 
+Novità di gennaio 2020: [scaricare i modelli di query di Power BI per Call Quality dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD Power BI query templates.zip?raw=true). Modelli di Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati di Call Quality dashboard.
+
 _Figura 4-categorie di report Call Quality dashboard_
 
 I report di riepilogo sono suddivisi in quattro categorie:
@@ -331,7 +335,7 @@ Alcuni report di Call Quality Dashboard richiedono l'inserimento di un filtro pe
 
 #### <a name="skype-for-business-online-admin-center"></a>Interfaccia di amministrazione di Skype for business online
 
-1.  Vai a <https://portal.office.com>.
+1.  Passare a <https://portal.office.com>.
 
 2.  Accedere con l'account dell'organizzazione dell'amministratore del tenant.
 
@@ -466,7 +470,7 @@ Per una formazione e risorse più approfondite, vedere l' [appendice](#other-res
 
 È possibile accedere a Call Quality dashboard uno dei tre modi seguenti:
 
--   Vai a <https://cqd.lync.com>.
+-   Passare a <https://cqd.lync.com>.
 
 -   Accedere all'interfaccia di **amministrazione di Microsoft teams** e selezionare il collegamento a Call Quality dashboard, come illustrato nella figura seguente.
 
@@ -585,7 +589,7 @@ Questa guida include [due modelli di Call Quality dashboard curati](https://aka.
 
 **Per importare i modelli (. CQDX) in Call Quality dashboard online**
 
-1. Vai a <https://cqd.lync.com>.
+1. Passare a <https://cqd.lync.com>.
 
 2. Eseguire l'autenticazione usando le credenziali amministrative di Office 365.
 

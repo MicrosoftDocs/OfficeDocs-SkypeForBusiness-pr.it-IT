@@ -1,5 +1,5 @@
 ---
-title: Installare Microsoft teams con MSI tramite SCCM
+title: Installare Microsoft teams tramite MSI tramite Microsoft endpoint Configuration Manager
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -14,19 +14,19 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dd934c601b45258dd7a2e2c15ef49f19ffee9201
-ms.sourcegitcommit: 416a2d404a2ea15b484cd7579035e7f2282ac2cf
+ms.openlocfilehash: 2f6902ae52c04d0087bb6718b119ae66dd920ced
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41233275"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628132"
 ---
-# <a name="install-microsoft-teams-using-msi"></a>Installare Microsoft teams con MSI
+# <a name="install-microsoft-teams-using-microsoft-endpoint-configuration-manager"></a>Installare Microsoft teams con Microsoft endpoint Configuration Manager
 
 > [!Tip]
 > Vedere la sessione seguente per informazioni sui vantaggi del client desktop di Windows, su come pianificare la distribuzione e su come distribuirla: [Team client desktop di Windows](https://aka.ms/teams-clients)
 
-Per usare System Center Configuration Manager o criteri di gruppo o qualsiasi meccanismo di distribuzione di terze parti per una distribuzione ampia, Microsoft ha fornito file MSI (sia 32 bit che 64 bit) che gli amministratori possono usare per la distribuzione in blocco dei team per selezionare utenti o computer. Gli amministratori possono usare questi file per distribuire in remoto i team in modo che gli utenti non debbano scaricare manualmente l'app teams. Una volta distribuiti, i team verranno avviati automaticamente per tutti gli utenti che accedono a tale computer. Puoi disabilitare l'avvio automatico dopo l'installazione dell'app. [Vedere di seguito](#disable-auto-launch-for-the-msi-installer).) Ti consigliamo di distribuire il pacchetto nel computer, in modo che tutti i nuovi utenti della macchina beneficeranno anche di questa distribuzione.
+Per usare Microsoft endpoint Configuration Manager o criteri di gruppo o qualsiasi meccanismo di distribuzione di terze parti per una distribuzione ampia, Microsoft ha fornito file MSI (sia 32 bit che 64 bit) che gli amministratori possono usare per la distribuzione in blocco dei team per selezionare gli utenti o computer. Gli amministratori possono usare questi file per distribuire in remoto i team in modo che gli utenti non debbano scaricare manualmente l'app teams. Una volta distribuiti, i team verranno avviati automaticamente per tutti gli utenti che accedono a tale computer. Puoi disabilitare l'avvio automatico dopo l'installazione dell'app. [Vedere di seguito](#disable-auto-launch-for-the-msi-installer).) Ti consigliamo di distribuire il pacchetto nel computer, in modo che tutti i nuovi utenti della macchina beneficeranno anche di questa distribuzione.
 
 Questi sono i collegamenti ai file MSI:
 
@@ -41,7 +41,7 @@ Questi sono i collegamenti ai file MSI:
 I team possono anche essere inclusi in una distribuzione di Office 365 ProPlus. Per altre informazioni, vedere [distribuire Microsoft teams con Office 365 ProPlus](https://docs.microsoft.com/deployoffice/teams-install).
 
 > [!Note]
-> Per altre informazioni su SCCM, vedere [Introduzione a System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction).
+> Per altre informazioni su Microsoft endpoint Configuration Manager, vedere [che cos'è Configuration Manager?](https://docs.microsoft.com/configmgr/core/understand/introduction).
 
 ## <a name="deployment-procedure-recommended"></a>Procedura di distribuzione (scelta consigliata)
 
@@ -80,7 +80,7 @@ Se un utente disinstalla teams dal proprio profilo utente, il programma di insta
 3. Ridistribuire il pacchetto MSI in quel particolare computer.
 
 > [!TIP]
-> È possibile usare lo script di [pulizia della distribuzione di Microsoft teams](scripts/powershell-script-teams-deployment-clean-up.md) per completare i passaggi 1 e 2 tramite SCCM.
+> Per eseguire i passaggi 1 e 2 tramite Configuration Manager, è possibile usare lo script di [pulizia della distribuzione di Microsoft teams](scripts/Powershell-script-teams-deployment-clean-up.md) .
 
 ## <a name="prevent-teams-from-starting-automatically-after-installation"></a>Impedire l'avvio automatico dei team dopo l'installazione
 

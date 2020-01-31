@@ -12,12 +12,12 @@ ms.collection: IT_Skype16
 ms.custom: tracyp
 ms.assetid: ''
 description: In questo articolo vengono illustrati i cmdlet che consentono agli amministratori un maggiore controllo dei metodi di autenticazione usati all'interno e all'esterno di un'azienda. Gli amministratori possono attivare o disattivare i metodi di autenticazione internamente o esternamente alla rete.
-ms.openlocfilehash: aaee46b04832cc114f895f905c180fe089d7349d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: bfbcc8a3b7d6ff6be270853b2da7c9f91df63e2e
+ms.sourcegitcommit: 5932ec62a42d7b392fa31c6a2a3462389ac24b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194920"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573732"
 ---
 # <a name="planning-to-turn-off-legacy-authentication-methods-internally-and-externally-to-your-network"></a>Pianificazione per disattivare i metodi di autenticazione legacy internamente e esternamente alla rete.
 
@@ -58,13 +58,13 @@ Questi cmdlet verranno installati solo dopo l'aggiornamento cumulativo di luglio
 
 __Descrizione tipo 1:__ Questo è lo scenario predefinito __in__ cui ma è attivato per Skype for Business Server. In altre parole, questo è il *punto di partenza* in cui è configurato ma.
 
-__Descrizione tipo 2:__ Questa topologia blocca ** l'autenticazione NTLM esternamente, ma consente l'utilizzo *interno*di NTLM o Kerberos (per i client che non supportano adal). Se i client supportano ADAL, utilizzeranno MA internamente.
+__Descrizione tipo 2:__ Questa topologia blocca l'autenticazione NTLM *esternamente*, ma consente l'utilizzo *interno*di NTLM o Kerberos (per i client che non supportano adal). Se i client supportano ADAL, utilizzeranno MA internamente.
 
 __Digitare 3 Descrizione:__ Questa topologia richiede MA per tutti gli utenti. Tutti i client in grado di ADAL funzioneranno in questa topologia e le password non verranno sfruttate se, ad esempio, si disattiva l'uso di password con l'autenticazione basata su certificati.
 
-__Digitare 4 Descrizione:__ Questa topologia blocca ** l'autenticazione NTLM esternamente e ma internamente. Consente a *tutti i client* di usare internamente ** i metodi di autenticazione legacy (anche client in grado di adal).
+__Digitare 4 Descrizione:__ Questa topologia blocca l'autenticazione NTLM *esternamente* e ma internamente. Consente a *tutti i client* di usare *internamente* i metodi di autenticazione legacy (anche client in grado di adal).
 
-__Digitare 5 Descrizione:__ *Esternamente*, i clienti di adal moderni useranno ma e tutti i client che non supportano adal utilizzeranno i metodi di autenticazione legacy. Ma, *internamente* *tutti i client* useranno l'autenticazione legacy (inclusi tutti i client in grado di adal).
+__Tipo 5 Descrizione:__ *esternamente*, i clienti di adal moderni useranno ma e tutti i client che non supportano adal utilizzeranno i metodi di autenticazione legacy. Ma, *internamente* *tutti i client* useranno l'autenticazione legacy (inclusi tutti i client in grado di adal).
 
 È abbastanza facile perdere le tracce dell'obiettivo di proteggere le password nelle opzioni disponibili. Tieni presente che la situazione ideale consiste nell'usare MA esternamente, ad esempio configurando l'autenticazione basata su certificati, per evitare attacchi DOS. Se si sfrutta internamente per i clienti moderni, è anche possibile usare la rete per gli attacchi DOS di Skype for Business Server.
 
@@ -91,14 +91,19 @@ Potrebbe essere più saggio eseguire un Get-per questi valori e screenshot o reg
 > [!IMPORTANT]
 > Se si usa Lync Web Access (LWA) e si deve usare l'accesso basato su moduli (FBA) per l'accesso esterno, riconfigurare LWA in modo che i client possano accedervi con l'accesso anonimo per supportare questi scenari. Allo stesso modo, se si usa il pin di accesso esterno, FBA verrà bloccato solo per gli utenti esterni. Se è necessario modificare il PIN, sarà necessario accedere alla propria società per farlo, internamente.
 
+> [!NOTE]
+> 
+> Se si usa il parametro BlockWindowsAuthExternally per bloccare esternamente NTLM, tenere presente che questa operazione blocca anche l'autenticazione NTLM internamente per il canale SIP. Tuttavia, i client di Skype for business e Lync più recenti di 2010 saranno ancora in grado di accedere perché useranno NTLM su HTTP per SignIn, internally e quindi recupereranno un certificato per l'accesso tramite SIP. Tuttavia, i client di età superiore a 2010 non saranno in grado di eseguire l'accesso internamente in questa circostanza e potresti voler valutare l'aggiornamento di queste applicazioni in modo che gli utenti possano riprendere la funzionalità sicura.
+
+
 ## <a name="links"></a>Collegamenti 
 - Per altre informazioni su PowerShell:
     -  [Get-CsAuthConfig](https://docs.microsoft.com/powershell/module/skype/get-csauthconfig?view=skype-ps)
-    -  [Set-CsAuthConfig](https://docs.microsoft.com/en-us/powershell/module/skype/set-csauthconfig?view=skype-ps)
+    -  [Set-CsAuthConfig](https://docs.microsoft.com/powershell/module/skype/set-csauthconfig?view=skype-ps)
 
 - Per altre indicazioni su come usare i comandi o sul CU necessario per installarli:
     - [Briefing cmdlet](https://support.microsoft.com/en-us/help/4346673/new-cmdlets-to-manage-skype-for-business-server-2015-authentication)
-    - [Aggiornamenti per Skype for Business Server 2015](https://support.microsoft.com/en-us/help/3061064/updates-for-skype-for-business-server-2015) Generale
+    - [Aggiornamenti per Skype for Business Server 2015](https://support.microsoft.com/en-us/help/3061064/updates-for-skype-for-business-server-2015) (generale)
     - [2018 di luglio Skype for Business Server 2015, componenti principali cu](https://support.microsoft.com/en-us/help/4340903/july-2018-cumulative-update-6-0-9319-534-for-skype-for-business-server) (6.0.9319.534)
 
 

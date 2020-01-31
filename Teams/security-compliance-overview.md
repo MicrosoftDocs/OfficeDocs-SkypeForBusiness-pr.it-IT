@@ -3,7 +3,6 @@ title: Panoramica della sicurezza e della conformità in Microsoft Teams
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 09/11/2018
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: anach
@@ -17,19 +16,21 @@ f1keywords:
 - ms.teamsadmincenter.dashboard.helparticle.securityandcompliance
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 56491fdde5dbd47e91f8c6f2386564b9e78160d3
-ms.sourcegitcommit: f742ad9ba61d6cc52a9ed6885d1f2893bcfad354
+ms.openlocfilehash: 8e0f6424770e2a0ccbe7367d2786949ef4ef2f6d
+ms.sourcegitcommit: 5932ec62a42d7b392fa31c6a2a3462389ac24b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41165616"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573642"
 ---
 <a name="overview-of-security-and-compliance-in-microsoft-teams"></a>Panoramica della sicurezza e della conformità in Microsoft Teams
 ======================================================
 
 Microsoft teams è basato sul cloud di livello aziendale di Office 365 Hyper-Grade, offrendo le funzionalità avanzate di sicurezza e conformità che i nostri clienti si aspettano.
 
-Per una breve introduzione (12:42 min) per la sicurezza e la conformità dei team, guardare questo video: [Microsoft teams Essentials for it: sicurezza e conformità](https://youtu.be/91lHNKVVvQ4).
+Non perdere questi video di Microsoft Mechanics sulla sicurezza e la conformità:
+- [Elementi essenziali di Microsoft teams per it: sicurezza e conformità](https://youtu.be/91lHNKVVvQ4) (12:42 min)
+- [Controlli Microsoft teams per la sicurezza e la conformità](https://www.youtube.com/watch?v=Km4T4hMM__k) (10:54 min)
 
 Teams è conforme a livello D. Sono inclusi i seguenti standard: ISO 27001, ISO 27018, SSAE16 SOC 1 e SOC 2, HIPAA e clausole modello EU (EUMC). In Microsoft Compliance Framework Microsoft classifica le applicazioni e i servizi di Office 365 in quattro categorie. Ogni categoria è definita da specifici impegni di conformità che devono essere soddisfatti per un servizio di Office 365 o un servizio Microsoft correlato, da elencare in tale categoria.
 

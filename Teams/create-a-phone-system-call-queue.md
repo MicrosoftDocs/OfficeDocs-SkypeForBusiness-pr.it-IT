@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare il sistema telefonico per le code delle chiamate cloud con Microsoft teams.
-ms.openlocfilehash: be307c79330e324c7a5673cc4e636bf311f96289
-ms.sourcegitcommit: a6e051c5c5c100dbf2ff3ca8fc7babc4415babf3
+ms.openlocfilehash: c33baabdce8366ed9a4027c0b1e030f54eef543b
+ms.sourcegitcommit: 43a17ce6fea3951719b55bfbda03c500cef4816c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "41557848"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41620003"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda delle chiamate nel cloud
 
@@ -202,9 +202,9 @@ Gli agenti di chiamata selezionati devono essere:
 **Metodo di routing** È possibile scegliere **Supervisore**, **seriale**o **Round Robin** come metodo di distribuzione. Tutte le code di chiamata nuove ed esistenti hanno il routing di Attendant selezionato per impostazione predefinita. Quando viene usato il routing di Attendant, la prima chiamata nella coda squilla tutti gli agenti di chiamata contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
 
 - Il **routing degli assistenti** fa sì che la prima chiamata nella coda squilli tutti gli agenti di chiamata contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
-- **Routing seriale** chiamate in arrivo chiama gli agenti di chiamata uno alla volta, dall'inizio dell'elenco agente chiamate. Non è possibile ordinare gli agenti nell'elenco agente chiamate. Se un agente respinge o non prende una chiamata, la chiamata suonerà l'agente successivo e proverà tutti gli agenti finché non viene prelevato o non viene ritirato.
+- **Routing seriale** le chiamate in arrivo squillano tutti gli agenti di chiamata uno alla volta, dall'inizio dell'elenco agente chiamate. Non è possibile ordinare gli agenti nell'elenco agente chiamate. Se un agente respinge o non prende una chiamata, la chiamata suonerà l'agente successivo e proverà tutti gli agenti finché non viene prelevato o non viene ritirato.
   > [!NOTE]
-  > L'instradamento seriale ignorerà gli agenti che sono **Non in linea**, che hanno impostato la presenza su **Non disturbare**o hanno **Rinunciato** scegliendo di non ricevere chiamate da questa coda.
+  > Con il routing seriale, per gli agenti **offline** o che hanno impostato la loro presenza su **non disturbare**, la chiamata verrà instradata a tali utenti e non riesce a connettere l'utente non disponibile, il routing all'agente successivo nell'elenco degli agenti. Questo non è il caso se l'agente ha **scelto** di ricevere chiamate dalla coda di chiamata. Per ridurre l'intervallo di tempo che la chiamata instrada all'agente successivo in linea, il tempo di avviso dell'agente può essere ridotto.
 - **Round Robin** bilancia il routing delle chiamate in arrivo in modo che ogni agente di chiamata ottenga lo stesso numero di chiamate dalla coda. Questo potrebbe essere auspicabile in un ambiente di vendita in entrata per assicurare la parità di opportunità tra tutti gli agenti di chiamata.
 
 ### <a name="select-an-agent-opt-out-option"></a>Selezionare un'opzione di opt-out per l'agente

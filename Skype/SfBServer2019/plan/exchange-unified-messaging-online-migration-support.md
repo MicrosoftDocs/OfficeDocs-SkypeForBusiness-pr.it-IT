@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio Exchange Unified Messaging online (ExchUMO) entro il 2020 febbraio. In questo articolo vengono riepilogate le informazioni che i clienti interessati dovrebbero conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: adef85a59a5d0add990196e5b76587b502f052b5
-ms.sourcegitcommit: 4ccc24dcf61cf9b59224b85757f93f8aceae1771
+ms.openlocfilehash: 55382780fe6ef1c67cbecc1f6c997809f9173b8a
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "40854091"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628672"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
@@ -233,7 +233,7 @@ Per altre informazioni sugli operatori automatici, vedere [configurare un operat
 
 **Trasferimento automatico delle chiamate all'operatore PSTN** I clienti sono invitati a configurare una soluzione temporanea per soddisfare i requisiti per il trasferimento di una chiamata di operatore automatico a un numero PSTN esterno o a un'istanza di RGS. 
  
-È stato individuato un problema durante la garanzia della qualità con la caratteristica di trasferimento in numero PSTN, che non verrà fissata in tempo per consentire ai clienti di iniziare la migrazione da Exchange UMO Service prima della data di pensionamento programmata del 1 ° febbraio 2020. Come soluzione alternativa, gli amministratori possono trasferire i chiamanti dell'operatore automatico a un utente virtuale locale con un'impostazione di inoltro di chiamata attiva al numero di telefono PSTN desiderato o al numero di telefono RGS. 
+È stato individuato un problema durante la garanzia della qualità con la caratteristica trasferimento in uscita a un numero PSTN, che non verrà fissata in tempo per consentire ai clienti di iniziare la migrazione dal servizio UMO di Exchange prima della data di pensionamento prevista del 28 febbraio 2020. Come soluzione alternativa, gli amministratori possono trasferire i chiamanti dell'operatore automatico a un utente virtuale locale con un'impostazione di inoltro di chiamata attiva al numero di telefono PSTN desiderato o al numero di telefono RGS. 
  
 Esperienza prevista
 - Gli amministratori non devono concedere la licenza all'utente virtuale, poiché si tratta di una soluzione alternativa 

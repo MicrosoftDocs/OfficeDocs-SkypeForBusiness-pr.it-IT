@@ -3,7 +3,7 @@ title: Gestire i criteri di configurazione delle app in Microsoft Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
-ms.reviewer: lajin
+ms.reviewer: lajin,rarang
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -17,21 +17,21 @@ search.appverid: MET150
 description: Informazioni sui criteri di configurazione delle app in Microsoft teams e su come usarli per aggiungere le app per personalizzare i team per gli utenti dell'organizzazione.
 f1keywords:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 3cc794829df70fcbadc8a461a6a953d381536365
-ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
+ms.openlocfilehash: e80cacb952bd456e742aa6da0fec32d50c5f3188
+ms.sourcegitcommit: 5932ec62a42d7b392fa31c6a2a3462389ac24b73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40955310"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573794"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
 > [!NOTE]
 > Se è stata abilitata l'impostazione di criteri per le autorizzazioni dell'app a livello di organizzazione, **Consenti l'interazione con**le app personalizzate, potresti non vedere i criteri di configurazione delle app nell'interfaccia di amministrazione di Microsoft teams. Attualmente viene implementato e sarà presto disponibile nell'organizzazione.
 
-Come amministratore, puoi usare i criteri di configurazione delle app per personalizzare Microsoft teams per evidenziare le app più importanti per gli utenti. Scegli le app da aggiungere e imposta l'ordine in cui vengono visualizzate. I criteri di configurazione delle app consentono di mostrare le app necessarie agli utenti dell'organizzazione, inclusi quelli creati da terze parti o dagli sviluppatori dell'organizzazione. Puoi anche usare i criteri di configurazione delle app per gestire la modalità di visualizzazione delle funzionalità predefinite.
+Come amministratore, puoi usare i criteri di configurazione delle app per personalizzare Microsoft teams per evidenziare le app più importanti per gli utenti. Scegli le app da aggiungere e imposta l'ordine in cui vengono visualizzate. I criteri di configurazione delle app consentono di mostrare le app necessarie agli utenti dell'organizzazione, inclusi quelli creati da terze parti o dagli sviluppatori dell'organizzazione. Puoi anche usare i criteri di configurazione delle app per controllare se gli utenti possono aggiungere le app ai team e gestire la modalità di visualizzazione delle funzionalità predefinite.
 
-Le app vengono aggiunte alla barra dell'app. Questa è la barra sul lato del client desktop teams e nella parte inferiore dei client per dispositivi mobili Teams (iOS e Android). 
+Le app vengono aggiunte alla barra dell'app. Questa è la barra sul lato del client desktop teams e nella parte inferiore dei client per dispositivi mobili Teams (iOS e Android).
 
 |Client desktop Teams  |Client per dispositivi mobili Teams |
 |---------|---------|
@@ -52,13 +52,16 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams per creare criter
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di configurazione**delle **app teams**.
 2. Fare clic su **Aggiungi**.
-3. Immettere un nome e una descrizione per il criterio e quindi fare clic su **Aggiungi app**.
-4. Attivare o disattivare Consenti il **caricamento di app personalizzate**, a seconda che si voglia consentire agli utenti di caricare app personalizzate in teams. Non potrai modificare questa impostazione se Consenti le app di **terze parti o personalizzate** è disattivata nelle [impostazioni dell'app a livello di organizzazione](teams-app-permission-policies.md#manage-org-wide-app-settings) nei criteri di autorizzazione dell'app.
-5. Nel riquadro **Aggiungi app** aggiunte cercare le app da aggiungere e quindi fare clic su **Aggiungi**. Puoi anche filtrare le app per i criteri di autorizzazione dell'app. Dopo aver scelto l'elenco di app, fare clic su **Aggiungi**.
+    ![Schermata che mostra la pagina Aggiungi criteri di configurazione dell'app](media/app-setup-policies-add.png)
+3. Immettere un nome e una descrizione per il criterio.
+4. Attivare o disattivare **carica app personalizzate**, a seconda che si voglia consentire agli utenti di caricare app personalizzate in teams. Non potrai modificare questa impostazione se Consenti le app di **terze parti** è disattivata nelle [impostazioni dell'app a livello di organizzazione](teams-app-permission-policies.md#manage-org-wide-app-settings) nei criteri di autorizzazione dell'app.
+5. Attivare o disattivare Consenti il **blocco dell'utente**, a seconda che si voglia consentire agli utenti di personalizzare la barra dell'app per bloccare le app.
+6. Fare clic su **Aggiungi app**.
+7. Nel riquadro **Aggiungi app** aggiunte cercare le app da aggiungere e quindi fare clic su **Aggiungi**. Puoi anche filtrare le app per i criteri di autorizzazione dell'app. Dopo aver scelto l'elenco di app, fare clic su **Aggiungi**.
 
      ![Screenshot che mostra il riquadro Aggiungi app aggiunte](media/app-setup-policies-add-apps.png)
 
-6. Disporre le app nell'ordine in cui si vuole che vengano visualizzate in teams e quindi fare clic su **Salva**.
+8. Disporre le app nell'ordine in cui si vuole che vengano visualizzate in teams e quindi fare clic su **Salva**.
 
     ![Schermata che mostra la sezione app appuntata](media/app-setup-policies-new-policy-setup.png)
 

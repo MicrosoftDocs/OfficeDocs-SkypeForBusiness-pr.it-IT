@@ -14,23 +14,23 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Partner Microsoft con fornitori di SBC selezionati per certificare il lavoro di SBCs con il routing diretto.
-ms.openlocfilehash: 32ba55ec9cd7fb95c527d8cab16f18af7ef2fbb5
-ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
+ms.openlocfilehash: a63a9d11e21d477bbb1e6c9e9872fff526046475
+ms.sourcegitcommit: 013190ad10cdc02ce02e583961f433d024d5d370
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111750"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41634869"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
 Partner Microsoft con i fornitori SBC (Session Border Controller) selezionati per certificare che il proprio SBCs funziona con il routing diretto. 
 
-Con ogni fornitore, Microsoft: 
+Microsoft collabora con ogni fornitore per: 
 
-- Funziona in collaborazione con i fornitori SBC nei protocolli di interconnessione SIP.
-- Esegue test intensi tramite un laboratorio di terze parti; solo i dispositivi che hanno superato i test sono certificati. 
-- Esegue test giornalieri con tutti i dispositivi certificati negli ambienti di produzione e di pre-produzione. La convalida dei dispositivi in ambienti di pre-produzione garantisce che le nuove versioni del codice di routing diretto nel cloud funzioneranno con i SBCs certificati. 
-- Ha un processo di supporto congiunto con i fornitori SBC.
+- Lavorare in collaborazione con i protocolli di interconnessione SIP.
+- Eseguire test intensi usando un laboratorio di terze parti. Solo i dispositivi che superano i test sono certificati. 
+- Eseguire test giornalieri con tutti i dispositivi certificati negli ambienti di produzione e di pre-produzione. La convalida dei dispositivi in ambienti di pre-produzione garantisce che le nuove versioni del codice di routing diretto nel cloud funzioneranno con i SBCs certificati. 
+- Creare un processo di supporto congiunto con i fornitori SBC.
 
 
   > [!NOTE]
@@ -38,10 +38,10 @@ Con ogni fornitore, Microsoft:
 
 La tabella seguente elenca i dispositivi certificati per il routing diretto. 
 
-Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). In caso di domande sul programma di certificazione SBC per l'instradamento diretto, inviare un messaggio di posta elettronica a drsbccertification@microsoft.com
+Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). In caso di domande sul programma di certificazione SBC per il routing diretto, contattare drsbccertification@microsoft.com.
 
 
-|                                                       Fornitore                                                        |       Prodotto       | Bypass non multimediale | Bypass multimediale | Versione software | Vaidated con provider E911 | In grado di ELIN
+|                                                       Fornitore                                                        |       Prodotto       | Bypass non multimediale | Bypass multimediale | Versione software | Convalidati con i provider di E911 | In grado di ELIN
 |---------------------------------------------------------------------------------------------------------------------|---------------------|------------------|--------------|------------------|-----------------|------------------|
 | [AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams) |   SBC 500 medium   |     &#10004;     |   &#10004;    |  7.20 a. 250   |
 |                                                                                                                     |   SBC 800 Medium   |     &#10004;     |   &#10004;     |  7.20 a. 250   |    |    |
@@ -55,9 +55,9 @@ Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). In caso di do
 |                                                                                                                     |      SBC 5400       |     &#10004;     |   &#10004;   |       V 7.2       |  Intrado ERS <br>Intrado EGW    |No|    
 |                                                                                                                     |      SBC 7000       |     &#10004;     |   &#10004;    |       V 7.2       |   Intrado ERS <br>Intrado EGW  |  No  |    
 |                                                                                                                     |       SBC SWe       |     &#10004;     |   &#10004;   |       V 7.2       |   Intrado ERS <br>Intrado EGW |   No |    
-|                                                                                                                     |      SBC 1000       |     &#10004;     |   &#10004;    |      v 8.0.1     |  Intrado ERS <br>Intrado EGW   |  In sospeso  |    
-|                                                                                                                     |      SBC 2000       |     &#10004;     |   &#10004;   |     v 8.0.1     |  Intrado ERS <br>Intrado EGW  |  In sospeso  |    
-|                                                                                                                     |    SBC SWe Lite     |     &#10004;     |  &#10004;    |      v 8.0.1    |  Intrado ERS <br>Intrado EGW   |  In sospeso  |    
+|                                                                                                                     |      SBC 1000       |     &#10004;     |   &#10004;    |      v 8.0.3 (Build 537)     |  Intrado ERS <br>Intrado EGW   |  In sospeso  |    
+|                                                                                                                     |      SBC 2000       |     &#10004;     |   &#10004;   |     v 8.0.3 (Build 537)     |  Intrado ERS <br>Intrado EGW  |  In sospeso  |    
+|                                                                                                                     |    SBC SWe Lite     |     &#10004;     |  &#10004;    |      v 8.0.3 (Build 216)    |  Intrado ERS <br>Intrado EGW   |  In sospeso  |    
 |                     [Thinktel](https://www.thinktel.ca/services/think-365/think-365-overview/)                      |    Think 365 SBC    |     &#10004;     |   In sospeso    |       V 1.4       |     |    |    
 |                     [Oracle](https://www.oracle.com/industries/communications/enterprise-session-border-controller/microsoft.html)                      |    AP 1100      |    &#10004;     |    &#10004;    |   8.3.0.0.1 |    |    |    
 |                                                                                                                    |    AP 3900           |    &#10004;     |    &#10004;   |   8.3.0.0.1  |    |    |    
@@ -67,4 +67,4 @@ Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). In caso di do
 |                                                                                                                    |      VME           |    &#10004;    |    &#10004;    |     8.3.0.0.1   |    |    |    
 |                     [TE-SYSTEMS](https://www.anynode.de/anynode-and-microsoft-teams/)                               |     anynode         |     &#10004;   |  &#10004;   |      v 3.16.2      |     |    |    
 
-Per darci feedback sui prodotti sui team, ad esempio idee per le nuove caratteristiche, visita [UserVoice](https://microsoftteams.uservoice.com) nota la certificazione concessa a una versione principale. Ciò significa che il firmware con qualsiasi numero nel firmware SBC successivo alla versione principale è supportato.
+Per darci feedback sui prodotti sui team, ad esempio le idee per le nuove funzionalità, Vedi [UserVoice](https://microsoftteams.uservoice.com) nota la certificazione concessa a una versione principale. Ciò significa che il firmware con qualsiasi numero nel firmware SBC successivo alla versione principale è supportato.

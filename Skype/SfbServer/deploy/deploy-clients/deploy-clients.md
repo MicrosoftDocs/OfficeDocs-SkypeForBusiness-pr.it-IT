@@ -10,12 +10,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3d10abf2-d484-4fa0-8f10-4a5f9dfba4f5
 description: 'Riepilogo: Panoramica dei metodi di installazione client aziendali per Skype for business.'
-ms.openlocfilehash: f40a4948deb495998debd033f449d9439fd8329b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: b791a4f460eaeac86345eae8896046d90d88831b
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234413"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628292"
 ---
 # <a name="deploy-clients-for-skype-for-business-server"></a>Distribuire client per Skype for Business Server
  
@@ -23,7 +23,7 @@ ms.locfileid: "36234413"
   
 La modalità di distribuzione di Skype for business agli utenti dipende dal fatto che sia stato acquistato Skype for business come parte di un piano di Office 365 oppure che sia stata acquistata una versione con contratto multilicenza di Skype for business. 
   
-- **Office 365** Se si ha un piano di Office 365 che include Skype for business, la tecnologia di installazione usata viene chiamata a portata di clic. Con Office 365 puoi consentire agli utenti di installare Skype for business dal portale di Office 365. In alternativa, è possibile distribuire Skype for business agli utenti scaricando il software nella rete locale e usando gli strumenti di distribuzione del software esistenti, ad esempio con Microsoft System Center Configuration Manager. Per informazioni sull'installazione di Skype for business incluso in Office 365, vedere [distribuire il client Skype for business in office 365](https://support.office.com/article/8c563b81-22c9-4024-9efe-9fe28c7bbc96).
+- **Office 365** Se si ha un piano di Office 365 che include Skype for business, la tecnologia di installazione usata viene chiamata a portata di clic. Con Office 365 puoi consentire agli utenti di installare Skype for business dal portale di Office 365. In alternativa, è possibile distribuire Skype for business agli utenti scaricando il software nella rete locale e usando gli strumenti di distribuzione del software esistenti, ad esempio con Microsoft endpoint Configuration Manager. Per informazioni sull'installazione di Skype for business incluso in Office 365, vedere [distribuire il client Skype for business in office 365](https://support.office.com/article/8c563b81-22c9-4024-9efe-9fe28c7bbc96).
     
 - **Contratti multilicenza** Se si ha una versione con contratto multilicenza del client Skype for business 2015 o 2016, la tecnologia di installazione usata è Windows Installer (MSI). Un pacchetto di installazione basato su Windows Installer è costituito da più file MSI. Un pacchetto MSI di base indipendente dalla lingua viene combinato con uno o più pacchetti specifici della lingua per creare un prodotto completo. La configurazione assembla i singoli pacchetti ed esegue le attività di personalizzazione e manutenzione durante e dopo l'installazione di Office nei computer degli utenti. Il client Skype for business 2019 usa programmi di installazione a portata di clic.
     

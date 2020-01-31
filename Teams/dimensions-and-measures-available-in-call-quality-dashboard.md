@@ -19,12 +19,12 @@ localization_priority: Normal
 f1keywords: None
 ms.custom: Reporting
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 6dcbf7b415e2c337968e5c2c3af09efcb02be0a5
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 82602565d0589e55cb76bffa6bece218bc02a295
+ms.sourcegitcommit: 43a17ce6fea3951719b55bfbda03c500cef4816c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572257"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41580893"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata
 
@@ -123,8 +123,8 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | First Pool  | Stringa  | FQDN pool Skype for Business Online assegnato al primo endpoint. <br/> **Valore di esempio:** pool1<span></span>.<span></span>Lync. com  | <br/>&bull;Indica che l'endpoint è stato effettuato l'accesso a Microsoft teams o Skype for business. Questo campo viene popolato solo per i flussi usando le distribuzioni locali di Skype for Business Server. |
 | Second Pool  | Stringa  | FQDN pool Skype for Business Online assegnato al secondo endpoint. <br/> **Valore di esempio:** <span>pool1.Lync.com</span>   | &bull;Non è stato possibile determinare il pool di Skype for business online per il secondo endpoint. Questo potrebbe indicare che l'endpoint è stato connesso a una distribuzione locale di Skype for Business Server.  |
 | Is Federated  | Boolean  | True se i flussi sono stati tra due tenant federati, false in caso contrario.   | <br/>&bull;Non è stato possibile determinare se si trattava di un flusso federato <br/>&bull;Alcuni dati di segnalazione non sono stati raccolti   |
-|Area geografica | Stringa   |  Area geografica in cui si trovava la distribuzione in base all'area Home del tenant. <br/> **Valore di esempio:** America del Nord | <br/>&bull;Dati di rete non segnalati <br/>&bull;La rete non è all'interno della rete aziendale <br/>&bull;La rete non ha la regione definita nei dati di mappatura subnet. |
-|**Flusso**| | | |
+|Area | Stringa   |  Area geografica in cui si trovava la distribuzione in base all'area Home del tenant. <br/> **Valore di esempio:** America del Nord | <br/>&bull;Dati di rete non segnalati <br/>&bull;La rete non è all'interno della rete aziendale <br/>&bull;La rete non ha la regione definita nei dati di mappatura subnet. |
+|**Stream**| | | |
 | QoE Record Available  | Boolean  | Ha valore True se era disponibile almeno un report di qualità percepita dagli utenti per la chiamata/sessione. Molte dimensioni e misure sono disponibili solo se è disponibile un record QoE. Se l'installazione della chiamata non riesce, un record QoE non sarà disponibile.    |   |
 | CDR Record Available  | Boolean  | Ha valore True se almeno una registrazione dettagli chiamata era disponibile per la chiamata/sessione.     | |
 | Media Line Label  | Numero intero  | Etichetta in SDP per la linea supporto. Usa Tipo supporto per determinare se vengono usate etichette per video, audio, condivisione app o condivisione dello schermo basata su video.<br/> **Valore di esempio:** 0  | &bull;Questi dati non sono stati segnalati dall'endpoint.  |
@@ -167,7 +167,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | First User Agent  | Stringa  | Stringa agente utente del primo endpoint. <br/> **Valore di esempio:** UCCAPI/16.0.7766.5281 OC/16.0.7766.2047 (Skype for business) | &bull;Nessun agente utente segnalato dal primo endpoint   |
 | Second User Agent  | Stringa  | Stringa agente utente del secondo endpoint. <br/> **Valore di esempio:** UCCAPI/16.0.7766.5281 OC/16.0.7766.2047 (Skype for business) | &bull;Nessun agente utente è stato segnalato dal secondo endpoint   |
 | Conference Type  | Enumerazione <br/>**Valori possibili:** <br/>&bull;conf: ApplicationSharing <br/>&bull;conf: audio-video <br/>&bull;conf: stato attiva | URI del tipo di conferenza.  <br/> **Valore di esempio:** conf: audio-video | &bull;Scenario non congressuale.   |
-| Conference Id  | Stringa  | ID conferenza associato agli stream. Questa dimensione può contenere un numero eccessivo di righe da usare come dimensione in un report. Può invece essere usata come filtro.  <br/> **Valore di esempio:** 0001P6GK  | &bull;Scenario non congressuale. |
+| ID conferenza (in lync.cqd.com)<br/>ID chiamata (in cqd.teams.microsoft.com)  | Stringa  | ID conferenza (o ID chiamata) associato ai flussi. In cqd.teams.microsoft.com tutte le chiamate hanno ID chiamata indipendentemente dal fatto che si tratti di una chiamata da persona a persona (P2P) o una conferenza telefonica.  Questa dimensione può contenere un numero eccessivo di righe da usare come dimensione in un report. Può invece essere usata come filtro.  <br/> **Valore di esempio:** 0001P6GK  | &bull;Scenario non congressuale. |
 | First Client App Version  | Stringa  | Versione dell'applicazione utilizzata dal primo endpoint. I dati sono ricavati dalla stringa agente utente.<br/> **Valore di esempio:** 16.0.7766.2047 | &bull;Non è stato possibile analizzare la stringa della versione <br/>&bull;Il valore non è stato segnalato.   |
 | Second Client App Version  | Stringa  | Versione dell'applicazione utilizzata dal secondo endpoint. I dati sono ricavati dalla stringa agente utente.<br/> **Valore di esempio:** 16.0.7766.2047 | &bull;Non è stato possibile analizzare la stringa della versione <br/>&bull;Il valore non è stato segnalato. |
 |ID riunione|Stringa |Identificatore della riunione, generato al momento della creazione della riunione. | |
@@ -191,7 +191,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Second Subnet  | Stringa  | Subnet utilizzata per lo stream multimediale dal secondo endpoint, con trattini che separano gli ottetti. <br/> **Valore di esempio:** 104.43.195.0 | &bull;Dati non segnalati dall'endpoint <br/>&bull;Il percorso multimediale non è stato stabilito <br/>&bull;IPv6 è stato usato |
 | First VPN  | Boolean  | True se la scheda di rete utilizzata dal primo endpoint indica che si trattava di una connessione VPN, false in caso contrario. Alcune VPN non riportano questi dati in modo corretto.   | &bull;Il tipo di trasporto non è stato segnalato <br/>&bull;Il percorso multimediale non è stato stabilito   |
 | Second VPN  | Boolean  | True se la scheda di rete utilizzata dal secondo endpoint indica che si tratta di una connessione VPN, false in caso contrario. Alcune VPN non riportano questi dati in modo corretto.    | &bull;Il tipo di trasporto non è stato segnalato <br/>&bull;Il percorso multimediale non è stato stabilito   |
-| Applied Bandwidth Source  | Enumerazione <br/>**Valori possibili:** <br/>&bull;Max statico <br/>&bull;Modalità API <br/>&bull;API Modality_All <br/>&bull;API SendSide BWLimit <br/>&bull;Valore preferenza <br/>&bull;GIRARE <br/>&bull;ReceiveSide TURN <br/>&bull;Modalità SDP API <br/>&bull;Ricezione remota <br/>&bull;BWLimit laterale <br/>&bull;API ServiceQuality <br/>&bull;API SDP <br/>&bull;Ricevere SidePDP | Identifica la fonte della larghezza di banda applicata allo stream. | &bull;Il tipo di trasporto non è stato segnalato <br/>&bull;Il percorso multimediale non è stato stabilito   |
+| Applied Bandwidth Source  | Enumerazione <br/>**Valori possibili:** <br/>&bull;Max statico <br/>&bull;Modalità API <br/>&bull;Modality_All API <br/>&bull;API SendSide BWLimit <br/>&bull;Valore preferenza <br/>&bull;GIRARE <br/>&bull;ReceiveSide TURN <br/>&bull;Modalità SDP API <br/>&bull;Ricezione remota <br/>&bull;BWLimit laterale <br/>&bull;API ServiceQuality <br/>&bull;API SDP <br/>&bull;Ricevere SidePDP | Identifica la fonte della larghezza di banda applicata allo stream. | &bull;Il tipo di trasporto non è stato segnalato <br/>&bull;Il percorso multimediale non è stato stabilito   |
 | Bandwidth Est | Intervallo intero  | Larghezza di banda media stimata a disposizione tra il primo e il secondo endpoint in bit al secondo.  <br/> **Valore di esempio:** 026: [260000-270000)  | &bull;Il tipo di trasporto non è stato segnalato <br/>&bull;Il percorso multimediale non è stato stabilito  |
 | Mediation Server Bypass Flag  | Boolean  | True se il flusso multimediale bypassa il Mediation Server e passa direttamente tra il client e il gateway PSTN/PBX, altrimenti false.   | &bull;Il tipo di trasporto non è stato segnalato <br/>&bull;Il percorso multimediale non è stato stabilito    |
 | Primo tipo di connettività CDR  | Enumerazione <br/>**Valori possibili:** <br/>&bull;OS <br/>&bull;PeerDerived <br/>&bull;Stun <br/>&bull;Girare  | Identifica il percorso di connettività ICE scelto dal primo endpoint per l'uso di questo stream. <br/> **Valore di esempio:** OS  | &bull;Il tipo di trasporto non è stato segnalato <br/>&bull;Il percorso multimediale non è stato stabilito   |
@@ -319,7 +319,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Livello di rumorosità ricevuto per primo  | Intervallo (dB decibel)  | Livello medio di energia del rumore Mono o del canale stereo sinistro ricevuto dal primo endpoint. I valori sono raggruppati per intervalli. <br/> **Valore di esempio:** 048: [-50--45)  | &bull;Si trattava di un flusso non audio <br/>&bull;I dati non sono stati segnalati dal primo endpoint |
 | Livello di rumore ricevuto secondo  | Intervallo (dB decibel)  | Livello medio di energia del rumore Mono o dei rumori di canale sinistro stereo ricevuti dal secondo endpoint. I valori sono raggruppati per intervalli. <br/> **Valore di esempio:** 048: [-50--45)  | &bull;Indica un flusso non audio <br/>&bull;I dati non sono stati segnalati dal secondo endpoint |
 |Primo livello di segnale iniziale RMS | Intervallo (dB decibel) | Radice-Mean-Square (RMS) del segnale ricevuto per i primi 30 secondi della chiamata del primo endpoint. Vedere [elementi figlio di 2.2.1.28.1](https://docs.microsoft.com/openspecs/office_protocols/ms-qoe/3c78f383-73fe-49f6-89cb-614e7aa8b2e7)  | |
-| Secondo livello di segnale iniziale RMS |Intervallo (dB decibel) | Radice-Mean-Square (RMS) del segnale ricevuto per i primi 30 secondi della chiamata per il secondo endpoint. Per altre informazioni, Vedi [elementi figlio di 2.2.1.28.1](https://docs.microsoft.com/en-us/openspecs/office_protocols/ms-qoe/3c78f383-73fe-49f6-89cb-614e7aa8b2e7) .||
+| Secondo livello di segnale iniziale RMS |Intervallo (dB decibel) | Radice-Mean-Square (RMS) del segnale ricevuto per i primi 30 secondi della chiamata per il secondo endpoint. Per altre informazioni, Vedi [elementi figlio di 2.2.1.28.1](https://docs.microsoft.com/openspecs/office_protocols/ms-qoe/3c78f383-73fe-49f6-89cb-614e7aa8b2e7) .||
 | Primo livello di segnale RxAGC |Intervallo (dB decibel)| Livello di segnale ricevuto presso il controllo di guadagno automatico (AGC) per il primo flusso audio in ingresso.| |
 | Secondo livello di segnale RxAGC |Intervallo (dB decibel)|Livello di segnale ricevuto presso il controllo di guadagno automatico (AGC) per il secondo flusso audio in ingresso.|| 
 | Primo livello di rumore RxAGC|Intervallo (dB decibel)|Livello di rumore ricevuto presso il controllo di guadagno automatico (AGC) per il primo flusso audio in ingresso. ||
@@ -550,7 +550,7 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 |Avg Second Echo Percent Mic In |Percentuale |Percentuale media di tempo durante il flusso in cui i secondi endpoint hanno rilevato eco nell'audio proveniente dal dispositivo di acquisizione o dal microfono prima che l'eco fosse eliminata. |
 |Avg First Echo Percent Send |Percentuale |Percentuale media di tempo durante il flusso in cui i primi endpoint hanno rilevato eco nell'audio proveniente dal dispositivo di acquisizione o dal microfono dopo che l'eco era stata eliminata. |
 |Avg Second Echo Percent Send |Percentuale |Percentuale media di tempo durante il flusso in cui i secondi endpoint hanno rilevato eco nell'audio proveniente dal dispositivo di acquisizione o dal microfono dopo che l'eco era stata eliminata. |
-| AVG primo livello di segnale iniziale RMS| Intervallo (decibel) |Media della radice-media-quadrata (RMS) del segnale ricevuto per i primi 30 secondi della chiamata del primo endpoint.  Per altre informazioni, Vedi [elementi figlio di 2.2.1.28.1](https://docs.microsoft.com/en-us/openspecs/office_protocols/ms-qoe/3c78f383-73fe-49f6-89cb-614e7aa8b2e7)|
+| AVG primo livello di segnale iniziale RMS| Intervallo (decibel) |Media della radice-media-quadrata (RMS) del segnale ricevuto per i primi 30 secondi della chiamata del primo endpoint.  Per altre informazioni, Vedi [elementi figlio di 2.2.1.28.1](https://docs.microsoft.com/openspecs/office_protocols/ms-qoe/3c78f383-73fe-49f6-89cb-614e7aa8b2e7)|
 | AVG secondo livello di segnale iniziale RMS|Intervallo (decibel) |Media della radice-media-quadrata (RMS) del segnale ricevuto per i primi 30 secondi della chiamata per il secondo endpoint.||
 | AVG primo livello di segnale RxAGC|Intervallo (decibel)  |Livello di segnale medio ricevuto al controllo di guadagno automatico per il primo flusso audio in ingresso. | |
 | AVG secondo livello di segnale RxAGC|Intervallo (decibel) |Livello di segnale medio ricevuto al controllo guadagno automatico per il secondo flusso audio in ingresso.| |
@@ -637,6 +637,6 @@ Molti valori di dimensione e misura possono essere usati anche come filtri. È p
 
 [Configurazione di Skype for Business Call Analytics](set-up-call-analytics.md)
 
-[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
 [Analisi delle chiamate e Dashboard Qualità della chiamata](difference-between-call-analytics-and-call-quality-dashboard.md)

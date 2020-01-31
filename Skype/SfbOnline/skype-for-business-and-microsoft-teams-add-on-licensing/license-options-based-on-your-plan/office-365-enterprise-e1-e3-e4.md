@@ -20,12 +20,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: "Informazioni sulle licenze di componenti aggiuntivi, sulle caratteristiche e sull'acquisto di piani E1, E3 ed E4 per Office 365 Enterprise. "
-ms.openlocfilehash: a6cdfdac5aaa56d9e1bc87df8f33b1143517f1ac
-ms.sourcegitcommit: ca1ac291ab6394f050b9b517d9f3906f3a970b04
-ms.translationtype: HT
+ms.openlocfilehash: afc20061171962a8887e37aae0b85783d617cc85
+ms.sourcegitcommit: 5932ec62a42d7b392fa31c6a2a3462389ac24b73
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "35792883"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41573632"
 ---
 # <a name="office-365-enterprise-e1-e3-and-e4"></a>Office 365 Enterprise E1, E3 e E4
 
@@ -40,6 +40,8 @@ Se è stato già acquistato il piano [Office 365 Enterprise E1](https://products
 |**Cloud Voicemail** <br/> |Per i piani E1 e E4, acquistare Exchange Online (Piano 2). <br/>Oppure, passare a una suite Office fornita con Exchange Online (Piano 2), come Office 365 E3. |
 |**Piani di chiamata** <br/> |1. Componente aggiuntivo **Sistema telefonico** <br/> 2. [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365): è possibile acquistarlo solo dopo l'acquisto del componente aggiuntivo **Sistema telefonico**. <br/> |
    
+ > [!IMPORTANT]
+ > Le licenze di Office 365 E4 sono state ufficialmente ritirate. Per altri dettagli, vedere [informazioni importanti per i clienti di Office 365 Enterprise E4](https://support.office.com/article/important-information-for-office-365-enterprise-e4-customers-f9572348-43a2-43fa-a3d8-3b6c9c042147) .
   
 ## <a name="e1-and-e3-customers-how-to-see-prices-and-buy"></a>Clienti E1 e E3: come visualizzare i prezzi e acquistare
 <a name="bkmk_buypremium"> </a>

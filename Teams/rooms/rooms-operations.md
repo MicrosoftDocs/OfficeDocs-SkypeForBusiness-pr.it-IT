@@ -11,12 +11,12 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: 626190406cf90cdbf09f2ab27d2b31f648f073c9
-ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
+ms.openlocfilehash: 0eb68e74368a9ae4463ab5f6a9721a844b151152
+ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269026"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41628662"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft teams rooms 
  
@@ -61,9 +61,9 @@ La tabella seguente riepiloga le possibili operazioni remote e i metodi che è p
 
 |Gruppo|Non è stato aggiunto un dominio|Dominio Unito|
 |:-----|:-----|:-----|
-|Riavviare  <br/> |Desktop remoto  <br/> PowerShell remoto  <br/> |Desktop remoto (richiede ulteriore configurazione)  <br/> PowerShell remoto (richiede ulteriore configurazione)  <br/> SCCM  <br/> |
+|Riavviare  <br/> |Desktop remoto  <br/> PowerShell remoto  <br/> |Desktop remoto (richiede ulteriore configurazione)  <br/> PowerShell remoto (richiede ulteriore configurazione)  <br/> Configuration Manager  <br/> |
 |Aggiornare il sistema operativo  <br/> |Windows Update  <br/> |Windows Update  <br/> WSUS  <br/> |
-|Aggiornamento dell'app  <br/> |Windows Store  <br/> |Windows Store  <br/> SCCM  <br/> |
+|Aggiornamento dell'app  <br/> |Windows Store  <br/> |Windows Store  <br/> Configuration Manager  <br/> |
 |Configurazione dell'account Skype  <br/> |Attualmente non supportato  <br/> |Attualmente non supportato  <br/> |
 |Registri di Access  <br/> |Attualmente non supportato  <br/> |Attualmente non supportato  <br/> |
    
@@ -166,7 +166,7 @@ Per impostazione predefinita, Microsoft teams Rooms cerca di connettersi a Windo
   
 Per impostazione predefinita, Microsoft teams Rooms si connette a Windows Update per recuperare gli aggiornamenti del firmware del sistema operativo e del dispositivo periferico USB e li installa all'esterno degli orari di ufficio configurati. Puoi configurare gli orari di ufficio effettuando l'accesso all'account di amministratore ed eseguendo l'app Impostazioni.
   
-Per gestire manualmente gli aggiornamenti e non è possibile seguire la procedura normale per [Microsoft Store for business](https://businessstore.microsoft.com/store) per [distribuire le app offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps), è possibile acquisire il file appx appropriato e le dipendenze dal [Kit di distribuzione](https://go.microsoft.com/fwlink/?linkid=851168) (dalle istruzioni per [configurare una console di Microsoft teams Rooms](console.md)) che può essere usata con SCCM. La versione del kit di distribuzione è in ritardo rispetto alla versione dello Store, quindi potrebbe non corrispondere sempre alla build più recente disponibile.
+Per gestire gli aggiornamenti manualmente e non è possibile seguire la procedura normale per [Microsoft Store for business](https://businessstore.microsoft.com/store) per [distribuire app offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps), è possibile acquisire il file appx appropriato e le dipendenze dal kit di [distribuzione](https://go.microsoft.com/fwlink/?linkid=851168) (dalle istruzioni per [configurare una console Microsoft teams Rooms](console.md)) che può essere usata con Configuration Manager. La versione del kit di distribuzione è in ritardo rispetto alla versione dello Store, quindi potrebbe non corrispondere sempre alla build più recente disponibile.
   
 ### <a name="to-update-using-powershell"></a>Per eseguire l'aggiornamento usando PowerShell
 
