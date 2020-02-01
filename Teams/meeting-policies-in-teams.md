@@ -20,68 +20,70 @@ f1keywords:
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams.
-ms.openlocfilehash: 41d1bf8c68ef96f3a657113864c21a993dfc3826
-ms.sourcegitcommit: a6e051c5c5c100dbf2ff3ca8fc7babc4415babf3
+ms.openlocfilehash: 9199be5eced7faee3e72f7b94c1f9e3be3c9573c
+ms.sourcegitcommit: a47bd5194672820380d30722b60779ce2d8a8f78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "41554343"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41649102"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri delle riunioni in teams
 
 ::: zone target="docs"
-I criteri per le riunioni vengono usati per controllare le caratteristiche disponibili per i partecipanti alla riunione per le riunioni pianificate dagli utenti dell'organizzazione. Dopo aver creato un criterio e aver apportato le modifiche, è possibile assegnare gli utenti ai criteri. Puoi gestire i criteri delle riunioni nell'interfaccia di amministrazione di Microsoft teams oppure [usando PowerShell](teams-powershell-overview.md).
+I criteri per le riunioni vengono usati per controllare le caratteristiche disponibili per i partecipanti alla riunione per le riunioni pianificate dagli utenti dell'organizzazione. Dopo aver creato un criterio e aver apportato le modifiche, è possibile assegnare gli utenti ai criteri. Puoi gestire i criteri delle riunioni nell'interfaccia di amministrazione di Microsoft teams oppure usando [PowerShell](teams-powershell-overview.md).
 
 È possibile implementare i criteri nei modi seguenti, che influiscono sull'esperienza di riunione per gli utenti prima che venga avviata una riunione, durante una riunione o dopo una riunione.
 
 |Tipo di implementazione  |Descrizione  |
 |---------|---------|
 |Per-Organizer    |Quando si implementa un criterio per ogni organizzazione, tutti i partecipanti alla riunione erediteranno i criteri dell'organizzatore. Ad esempio, **ammetti automaticamente che people** sia un criterio per Organizzatore e controlla se gli utenti partecipano alla riunione direttamente o attendono nella sala di attesa per le riunioni pianificate dall'utente a cui è assegnato il criterio.          |
-|Per utente    |Quando si implementa un criterio per utente, solo i criteri per utente si applicano per limitare determinate funzionalità per l'Organizzatore e/o i partecipanti alla riunione. Ad esempio, **Consenti riunione ora** è un criterio per utente.     |
-|Per-Organizer e per utente     |Quando si implementa una combinazione di criteri per ogni organizzazione e per utente, alcune caratteristiche sono limitate per i partecipanti alla riunione in base ai criteri e ai criteri dell'organizzatore. Ad esempio, **Consenti la registrazione cloud** è un criterio per ogni organizzazione e per utente. Attivare questa impostazione per consentire all'organizzatore della riunione e ai partecipanti di avviare e arrestare una registrazione. 
+|Per utente    |Quando si implementa un criterio per utente, solo i criteri per utente si applicano per limitare determinate funzionalità per l'Organizzatore e/o i partecipanti alla riunione. Ad esempio, **Consenti riunione ora in canali** è un criterio per utente.     |
+|Per-Organizer e per utente     |Quando si implementa una combinazione di criteri per ogni organizzazione e per utente, alcune caratteristiche sono limitate per i partecipanti alla riunione in base ai criteri e ai criteri dell'organizzatore. Ad esempio, **Consenti la registrazione cloud** è un criterio per ogni organizzazione e per utente. Attivare questa impostazione per consentire all'organizzatore della riunione e ai partecipanti di avviare e arrestare una registrazione.
 
-Per impostazione predefinita, viene creato un criterio denominato globale (impostazione predefinita a livello di organizzazione). Per impostazione predefinita, a tutti gli utenti dell'organizzazione verrà assegnato questo criterio di riunione. È possibile apportare modifiche a questo criterio o creare uno o più criteri personalizzati e assegnarvi gli utenti. Quando si creano criteri personalizzati, è possibile consentire o impedire che determinate funzionalità siano disponibili per gli utenti e quindi assegnarla a uno o più utenti a cui saranno applicate le impostazioni. 
+Per impostazione predefinita, viene creato un criterio denominato globale (impostazione predefinita a livello di organizzazione). Per impostazione predefinita, tutti gli utenti dell'organizzazione hanno assegnato il criterio riunione globale. È possibile apportare modifiche o creare uno o più criteri personalizzati e assegnarvi gli utenti. Gli utenti otterranno i criteri globali a meno che non si creino e si assegnano criteri personalizzati. Quando si creano criteri personalizzati, è possibile consentire o impedire che determinate funzionalità siano disponibili per gli utenti e quindi assegnarla a uno o più utenti a cui saranno applicate le impostazioni.
 
 ## <a name="change-or-create-a-meeting-policy"></a>Modificare o creare un criterio per la riunione
 
-Per modificare o creare un criterio per la riunione, passare all'interfaccia di amministrazione di Microsoft teams >**criteri riunione** **riunioni** > . Selezionare un criterio nell'elenco o selezionare **nuovo criterio**. Se si sta creando un nuovo criterio, aggiungere un nome e una descrizione. Il nome non può contenere caratteri speciali o avere più di 64 caratteri. Scegliere le impostazioni e quindi fare clic su **Salva**.
+Per modificare o creare un criterio per la riunione, passare all'interfaccia di amministrazione di Microsoft teams >**criteri riunione** **riunioni** > . Selezionare un criterio nell'elenco o selezionare **Aggiungi**. Se si sta creando un nuovo criterio, aggiungere un nome e una descrizione. Il nome non può contenere caratteri speciali o avere più di 64 caratteri. Scegliere le impostazioni e quindi fare clic su **Salva**.
 
 Ad esempio, supponiamo di avere un gruppo di utenti e di voler limitare la larghezza di banda necessaria per la riunione. Si creerebbe un nuovo criterio personalizzato denominato "larghezza di banda limitata" e si disabilitano le impostazioni seguenti:
 
 In **Audio & video**:
-- Disattivare la registrazione cloud
-- Disattivare Consenti video IP
+- Disattivare Consenti registrazione cloud.
+- Disattivare Consenti video IP.
 
 In **condivisione contenuto**:
-- Disabilitare la modalità di condivisione dello schermo
-- Disattivare la lavagna
-- Disattivare le note condivise
+- Disabilitare la modalità di condivisione dello schermo.
+- Disattivare Consenti lavagna.
+- Disattivare Consenti note condivise.
 
 Assegna quindi il criterio agli utenti.
 
-> [!NOTE] 
-> A un utente possono essere assegnati solo i criteri di una riunione alla volta. 
+> [!NOTE]
+> A un utente possono essere assegnati solo i criteri di una riunione alla volta.
 
 ## <a name="assign-a-meeting-policy-to-users"></a>Assegnare un criterio di riunione agli utenti
 
-Se si applicano i criteri a un solo utente, selezionare **utenti** nel riquadro di spostamento sinistro e quindi fare clic sul nome visualizzato dell'utente. Nella pagina dell'utente, accanto a **criteri assegnati**, selezionare **modifica**. Nel riquadro **modifica criteri utente** , quindi, in **criteri riunione**Selezionare i criteri riunione nell'elenco a discesa e quindi selezionare **Salva**. È anche possibile assegnare criteri dall'elenco di utenti. A questo scopo, seleziona l'utente facendo clic a sinistra del nome visualizzato dell'utente. Selezionare **Modifica impostazioni**. Nel riquadro **Modifica impostazioni** , in **criteri riunione**, selezionare il criterio nell'elenco a discesa e quindi selezionare **Salva**. 
- 
-Se si applica un criterio a più utenti, selezionare **utenti** nel riquadro di spostamento sinistro e quindi selezionare ogni utente facendo clic a sinistra del nome utente e quindi su **Modifica impostazioni**. Nel riquadro **Modifica impostazioni** , in **criteri riunione**, selezionare il criterio nell'elenco a discesa e quindi selezionare **Salva**.
- 
-È anche possibile assegnare un criterio di riunione a uno o più utenti, come indicato di seguito:
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi fai clic sull'utente.
+2. Selezionare l'utente facendo clic a sinistra del nome utente, quindi fare clic su **Modifica impostazioni**.
+3. In **criteri riunione**selezionare il criterio che si vuole assegnare e quindi fare clic su **applica**.
 
-1. Accedere ai**criteri di riunione**delle**riunioni** > dell'interfaccia di amministrazione > di **Microsoft teams**.
+Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
+
+In alternativa, è anche possibile eseguire le operazioni seguenti:
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams scegliere**criteri riunione** **riunioni** > .
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
 3. Selezionare **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
-5. Al termine dell'aggiunta di utenti, selezionare **Salva**.
- 
-> [!NOTE] 
+5. Dopo aver completato l'aggiunta di utenti, selezionare **Salva**.
+
+> [!NOTE]
 > Non è possibile eliminare un criterio se gli utenti sono assegnati. Devi prima assegnare un criterio diverso a tutti gli utenti interessati, quindi puoi eliminare il criterio originale.
- 
+
 ## <a name="meeting-policy-settings"></a>Impostazioni dei criteri per le riunioni
 
-Quando si seleziona un criterio esistente nella pagina **criteri riunione** o si seleziona **nuovo criterio** per aggiungere un nuovo criterio, è possibile configurare le impostazioni seguenti.
+Quando si seleziona un criterio esistente nella pagina **criteri riunione** o si seleziona **Aggiungi** per aggiungere un nuovo criterio, è possibile configurare le impostazioni seguenti.
 
 - [Generale](#meeting-policy-settings---general)
 - [Video & audio](#meeting-policy-settings---audio--video)
@@ -95,7 +97,6 @@ Quando si seleziona un criterio esistente nella pagina **criteri riunione** o si
 ## <a name="meeting-policy-settings---general"></a>Impostazioni dei criteri riunione-generale
 
 - [Consenti riunione ora nei canali](#allow-meet-now-in-channels)
-- [Consenti riunione privata ora](#allow-private-meet-now)
 - [Consentire il componente aggiuntivo per Outlook](#allow-the-outlook-add-in)
 - [Consentire la programmazione di una riunione di canale](#allow-channel-meeting-scheduling)
 - [Consentire la pianificazione di riunioni private](#allow-scheduling-private-meetings)
@@ -105,10 +106,6 @@ Quando si seleziona un criterio esistente nella pagina **criteri riunione** o si
 Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se un utente può avviare una riunione ad hoc in un canale di teams. Se si attiva questa opzione, quando un utente inserisce un messaggio in un canale di teams, l'utente può fare clic su riunione **ora** sotto la casella di composizione per avviare un incontro ad hoc nel canale.
 
 ![Screenshot che mostra l'icona incontra ora sotto un messaggio](media/meeting-policies-meet-now.png)
-### <a name="allow-private-meet-now"></a>Consenti riunione privata ora
-
-Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se un utente può avviare una riunione privata ad hoc.  
-
 
 ### <a name="allow-the-outlook-add-in"></a>Consentire il componente aggiuntivo per Outlook
 
@@ -120,7 +117,7 @@ Se si disattiva questa opzione, gli utenti non potranno pianificare le riunioni 
 
 ### <a name="allow-channel-meeting-scheduling"></a>Consentire la programmazione di una riunione di canale
 
-Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di teams.  Se si disattiva questa impostazione, l'opzione **Pianifica una riunione** non sarà disponibile per l'utente quando avvia una riunione in un canale di teams e l'opzione **Aggiungi un canale** è disabilitata per gli utenti di teams.
+Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di teams.  Se si disattiva questa impostazione, l'opzione **Pianifica una riunione** non sarà disponibile per l'utente quando avvia una riunione in un canale di teams e l'opzione **Aggiungi canale** è disabilitata per gli utenti in teams.
 
 ![Screenshot che mostra l'opzione Pianifica una riunione in teams](media/meeting-policies-schedule-a-meeting.png)
 
@@ -256,10 +253,10 @@ Per usare PowerShell per controllare chi può dare controllo o accettare richies
 
 Si tratta di un criterio per utente. Questa impostazione controlla se i partecipanti esterni a una riunione possono dare il controllo del desktop o della finestra condivisa ad altri partecipanti alla riunione. I partecipanti esterni alle riunioni di team possono essere categorizzati come segue:  
 
-   - Utente anonimo
-   - Utenti Guest  
-   - Utenti B2B
-   - Utente federato  
+- Utente anonimo
+- Utenti Guest  
+- Utenti B2B
+- Utente federato  
 
 Se gli utenti federati possono dare il controllo agli utenti esterni mentre la condivisione è controllata dal **consentire a un partecipante esterno di dare o richiedere** l'impostazione del controllo nella propria organizzazione.
 
@@ -293,7 +290,7 @@ Amanda non può condividere la lavagna in una riunione, anche se è l'organizzat
 
 ### <a name="allow-shared-notes"></a>Consenti note condivise
 
-Si tratta di un criterio per utente. Questa impostazione controlla se un utente può creare e condividere note in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, B2B e federati, ereditano i criteri dell'organizzatore della riunione. La scheda **Note riunione** è attualmente supportata solo nelle riunioni con meno di 20 partecipanti. 
+Si tratta di un criterio per utente. Questa impostazione controlla se un utente può creare e condividere note in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, B2B e federati, ereditano i criteri dell'organizzatore della riunione. La scheda **Note riunione** è attualmente supportata solo nelle riunioni con meno di 20 partecipanti.
 
 Esaminiamo l'esempio seguente.
 
@@ -308,31 +305,17 @@ Daniela può prendere appunti nelle riunioni di Amanda e Amanda non può prender
 
 Queste impostazioni controllano quali partecipanti alla riunione attendono nella sala di attesa prima di essere ammessi alla riunione e del livello di partecipazione consentiti in una riunione.
 
+- [Consentire agli utenti anonimi di avviare una riunione](#let-anonymous-people-start-a-meeting)
 - [Ammettere automaticamente le persone](#automatically-admit-people)
-- [Consentire agli utenti anonimi di avviare una riunione](#allow-anonymous-people-to-start-a-meeting)
 - [Consenti agli utenti con accesso esterno di ignorare la sala d'attesa](#allow-dial-in-users-to-bypass-the-lobby)
-- [Consenti riunione privata ora](#allow-private-meet-now)
+- [Consenti riunione ora in riunioni private](#allow-meet-now-in-private-meetings)
 - [Abilitare le didascalie Live](#enable-live-captions)
 - [Consentire la chat in riunioni](#allow-chat-in-meetings)
 
 > [!NOTE]
 >Le opzioni per partecipare a una riunione variano a seconda delle impostazioni per ogni gruppo di team e del metodo di connessione. Se il gruppo dispone di servizi di audioconferenza e lo usa per la connessione, vedere Servizi di audioconferenza [in Office 365](https://docs.microsoft.com/microsoftteams/audio-conferencing-in-office-365). Se il gruppo teams non dispone di servizi di audioconferenza, vedere [partecipare a una riunione in teams](https://support.office.com/article/join-a-meeting-in-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9).
 
-### <a name="automatically-admit-people"></a>Ammettere automaticamente le persone
-
-Si tratta di un criterio per organizzatore. Questa impostazione controlla se gli utenti partecipano a una riunione direttamente o attendono nella sala di attesa finché non vengono ammessi da un utente autenticato.
-
-![Schermata che mostra una riunione con un utente nella sala di attesa](media/meeting-policies-lobby.png)
-
- Gli organizzatori della riunione possono fare clic su **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata. **(presto disponibile)**
-  
-|Valore di impostazione  |Comportamento di join |
-|---------|---------|
-|**Tutti**   |Tutti i partecipanti alla riunione partecipano direttamente alla riunione senza attendere nella sala di attesa. Ciò include gli utenti autenticati, gli utenti federati, gli ospiti, gli utenti anonimi e le persone che effettuano la chiamata tramite telefono.       |
-|**Tutti gli utenti dell'organizzazione e delle organizzazioni federate**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti provenienti da organizzazioni federate, partecipano direttamente alla riunione senza attendere nella sala di attesa.  Utenti anonimi e utenti che effettuano la chiamata tramite telefono attendono nella sala di attesa.   |
-|**Tutti gli utenti dell'organizzazione**    |Gli utenti autenticati dall'interno dell'organizzazione, inclusi gli utenti guest, partecipano direttamente alla riunione senza attendere nella sala di attesa.  Gli utenti federati, gli utenti anonimi e gli utenti che effettuano la chiamata tramite telefono attendono nella sala di attesa.           |
-
-### <a name="allow-anonymous-people-to-start-a-meeting"></a>Consentire agli utenti anonimi di avviare una riunione
+### <a name="let-anonymous-people-start-a-meeting"></a>Consentire agli utenti anonimi di avviare una riunione
 
 Si tratta di un criterio per organizzatore. Questa impostazione controlla se gli utenti anonimi, inclusi quelli B2B e federati, possono partecipare alla riunione dell'utente senza un utente autenticato dall'organizzazione in presenza. 
 
@@ -360,13 +343,27 @@ Ecco il comportamento di join di persone anonime quando nella riunione non sono 
 |   | Tutti gli utenti dell'organizzazione     |Attendere nella sala di attesa         |
 |   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | Attendere nella sala di attesa         |
 
+### <a name="automatically-admit-people"></a>Ammettere automaticamente le persone
+
+Si tratta di un criterio per organizzatore. Questa impostazione controlla se gli utenti partecipano a una riunione direttamente o attendono nella sala di attesa finché non vengono ammessi da un utente autenticato.
+
+![Schermata che mostra una riunione con un utente nella sala di attesa](media/meeting-policies-lobby.png)
+
+ Gli organizzatori della riunione possono fare clic su **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata. **(presto disponibile)**
+  
+|Valore di impostazione  |Comportamento di join |
+|---------|---------|
+|**Tutti**   |Tutti i partecipanti alla riunione partecipano direttamente alla riunione senza attendere nella sala di attesa. Ciò include gli utenti autenticati, gli utenti federati, gli ospiti, gli utenti anonimi e le persone che effettuano la chiamata tramite telefono.       |
+|**Tutti gli utenti dell'organizzazione e delle organizzazioni federate**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti provenienti da organizzazioni federate, partecipano direttamente alla riunione senza attendere nella sala di attesa.  Utenti anonimi e utenti che effettuano la chiamata tramite telefono attendono nella sala di attesa.   |
+|**Tutti gli utenti dell'organizzazione**    |Gli utenti autenticati dall'interno dell'organizzazione, inclusi gli utenti guest, partecipano direttamente alla riunione senza attendere nella sala di attesa.  Gli utenti federati, gli utenti anonimi e gli utenti che effettuano la chiamata tramite telefono attendono nella sala di attesa.           |
+
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti con accesso esterno di ignorare la sala d'attesa
 
 Si tratta di un criterio per organizzatore. Questa impostazione controlla se le persone che effettuano la chiamata tramite telefono accedono direttamente alla riunione o attendono la sala di attesa indipendentemente dall'impostazione di **ammetti automaticamente persone** .
 
 Ecco il comportamento di join delle persone che effettuano la chiamata tramite telefono.
 
-|Consenti agli utenti con accesso esterno di ignorare la sala d'attesa  |Ammettere automaticamente gli utenti  |Comportamento di join degli utenti con accesso esterno |
+|Consenti agli utenti con accesso esterno di ignorare la sala d'attesa  |Ammettere automaticamente le persone  |Comportamento di join degli utenti con accesso esterno |
 |---------|---------|---------|
 |True    | Tutti      | Partecipare direttamente         |
 |   | Tutti gli utenti dell'organizzazione       | Partecipare direttamente        |
@@ -375,7 +372,7 @@ Ecco il comportamento di join delle persone che effettuano la chiamata tramite t
 |   | Tutti gli utenti dell'organizzazione     |Attendere nella sala di attesa         |
 |   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | Attendere nella sala di attesa         |
 
-### <a name="allow-private-meet-now"></a>Consenti riunione privata ora
+### <a name="allow-meet-now-in-private-meetings"></a>Consenti riunione ora in riunioni private
 
 Si tratta di un criterio per utente e si applica prima che venga avviata una riunione. Questa impostazione controlla se un utente può avviare una riunione privata ad hoc. 
 
@@ -387,17 +384,17 @@ Si tratta di un criterio per utente e si applica durante una riunione. Questa im
 
 |Valore di impostazione |Comportamento  |
 |---------|---------|
-|**Disabilitato e l'utente può eseguire l'override**     | Le didascalie Live non vengono attivate automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Attiva didascalie Live** nel menu di overflow (**...**) per attivarle. Questa è l'impostazione predefinita. |
+|**Disabilitato ma l'organizzatore può eseguire l'override**     | Le didascalie Live non vengono attivate automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Attiva didascalie Live** nel menu di overflow (**...**) per attivarle. Questa è l'impostazione predefinita. |
 |**Disabilitata**     | Le didascalie Live sono disabilitate per l'utente durante una riunione. L'utente non ha l'opzione per attivarli.          |
-
 
 <a name="bkcontentsharing"> </a>
 
 ### <a name="allow-chat-in-meetings"></a>Consentire la chat in riunioni
 
-Si tratta di un criterio per organizzatore. Questa impostazione controlla se la chat riunione è consentita nella riunione dell'utente. 
+Si tratta di un criterio per organizzatore. Questa impostazione controlla se la chat riunione è consentita nella riunione dell'utente.
 
 <a name="bkparticipantsandguests"> </a>
 
 ## <a name="related-topics"></a>Argomenti correlati
+
 [Criteri di messaggistica in teams](messaging-policies-in-teams.md)
