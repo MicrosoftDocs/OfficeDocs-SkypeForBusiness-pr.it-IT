@@ -20,12 +20,12 @@ f1keywords: None
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: 5a018b6c3b193d17bfbabdc5178c095a635e65ea
-ms.sourcegitcommit: 2fab6105dfc4c225de8c09ab79d9c2c273a3e4f6
+ms.openlocfilehash: be7e62bdad1fb0d9ed2d2d5e610c8eed5c49ae7f
+ms.sourcegitcommit: a47bd5194672820380d30722b60779ce2d8a8f78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "41005184"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41664382"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -162,22 +162,9 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
   > La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server.
 
   - **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato al servizio.
-  - **Segreteria telefonica** Selezionare il gruppo Office 365 che rappresenta gli utenti dell'organizzazione che hanno bisogno di accedere alla segreteria telefonica. Questo è il punto in cui è possibile attivare la trascrizione della segreteria telefonica. Richiede un gruppo di Office 365.
+  - **Segreteria telefonica** Selezionare il gruppo Office 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dall'operatore automatico. I messaggi della segreteria telefonica vengono inviati al gruppo Office 365 specificato. Per accedere ai messaggi della segreteria telefonica, i membri del gruppo possono aprirli passando al gruppo in Outlook.
 
-  > [!NOTE]
-> I messaggi vocali inviati agli utenti dall'account della segreteria telefonica automatica non sono accessibili in teams. Verrà visualizzato come messaggio di posta elettronica.
-
-
-<!-- - **Auto attendant** Select the name of an existing auto attendant.
-- **Call queue** Select the name of an auto attendant that has already been created.
-- **External phone number** routes the caller to a phone number outside your local system.
-- **Operator** directs the call to a user you designate as an Operator. If you haven't previously set up an operator, an option to create one now shows up. The 0 key is assigned to Operator by default. Options for setting an Operator are:
-
-  - **No operator** disables the "Operator" and "Press 0" options.
-  - **Person in your organization** can be an Online user or a user hosted on-premises using Skype for Business Server. They must have a Phone System license that is enabled for Enterprise Voice or assigned Calling Plans in Office 365. Search for the operator in the **Destination for your operator** field.
-  - **Auto attendant** lets you choose the name of an existing auto attendant.
-  - **Call queue** lets you select an existing call queue.
-  - **Group Voicemail** routes the call to a voicemail box that you select. -->
+      Cambiare la **trascrizione** **su** attivato per abilitare la trascrizione vocale dei messaggi della segreteria telefonica.
 
  * * *
 
@@ -214,7 +201,9 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 
 - **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato all'applicazione.
 
-- **Segreteria telefonica** Selezionare il gruppo Office 365 che rappresenta gli utenti dell'organizzazione che hanno bisogno di accedere alla segreteria telefonica. Questo è il punto in cui è possibile attivare la trascrizione della segreteria telefonica. Richiede un gruppo di Office 365.
+- **Segreteria telefonica** Selezionare il gruppo Office 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dall'operatore automatico. I messaggi della segreteria telefonica vengono inviati al gruppo Office 365 specificato. Per accedere ai messaggi della segreteria telefonica, i membri del gruppo possono aprirli passando al gruppo in Outlook.
+
+    Cambiare la **trascrizione** **su** attivato per abilitare la trascrizione vocale dei messaggi della segreteria telefonica.
 
 <!-- - **Auto attendant** Select the name of an existing auto attendant in the **Search by name** field. You will also have to select a resource account associated to the auto attendant. The caller who selects this option is sent to that auto attendant.
 - **Call queue** Select the name of an existing call queue in the **Search by name** field. You will also have to select a resource account associated to the call queue. The caller who selects this option is sent to that call queue, where the call is answered by a call agent.

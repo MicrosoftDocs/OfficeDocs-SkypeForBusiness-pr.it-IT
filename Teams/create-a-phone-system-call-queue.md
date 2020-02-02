@@ -21,12 +21,12 @@ f1keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare il sistema telefonico per le code delle chiamate cloud con Microsoft teams.
-ms.openlocfilehash: c33baabdce8366ed9a4027c0b1e030f54eef543b
-ms.sourcegitcommit: 43a17ce6fea3951719b55bfbda03c500cef4816c
+ms.openlocfilehash: 2744a989225098b47814c53cb089de7a0ee6cfe4
+ms.sourcegitcommit: a47bd5194672820380d30722b60779ce2d8a8f78
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41620003"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41664375"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda delle chiamate nel cloud
 
@@ -130,16 +130,15 @@ Nell'interfaccia di **amministrazione di Microsoft teams**,**code di chiamata** 
 
 * * *
 
-![Icona del numero 1, fa riferimento a un callout nel](media/sfbcallout1.png)
+![Icona del numero 1, fa riferimento a un callout nel](media/teamscallout1.png)
 **nome** dello screenshot precedente immettere un nome visualizzato descrittivo per la coda di chiamata. Questo nome è obbligatorio e può contenere fino a 64 caratteri, inclusi gli spazi.
 
  Questo nome viene visualizzato nella notifica per la chiamata in arrivo.
 
 * * *
 
-![Icona del numero 2, fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
-
-**Aggiungere account** Selezionare un account di risorse. Per avere un account delle risorse sono necessarie tutte le code di chiamata. Gli account delle risorse non sono obbligatori per avere un numero di telefono a pagamento o senza pedaggio.
+![Icona del numero 2, fa riferimento a un callout nello screenshot](media/teamscallout2.png)
+precedente**Aggiungi account** Selezionare un account di risorse. Per avere un account delle risorse sono necessarie tutte le code di chiamata. Gli account delle risorse non sono obbligatori per avere un numero di telefono a pagamento o senza pedaggio.
 
 Se non sono presenti elenchi, ottenere i numeri di servizio e assegnarli a un account di risorse prima di creare la coda di chiamata, come descritto in precedenza. Per ottenere i numeri di servizio, vedere [ottenere i numeri di telefono del servizio](getting-service-phone-numbers.md). Vedere [gestire gli account delle risorse in teams](manage-resource-accounts.md) per informazioni specifiche su come assegnare un numero di telefono.
 
@@ -152,15 +151,13 @@ Se non sono presenti elenchi, ottenere i numeri di servizio e assegnarli a un ac
 
 * * *
 
-![Icona del numero 1, fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
-
-**Saluto** il messaggio di saluto facoltativo riprodotto per le persone che chiamano il numero della coda di chiamata.
+![Icona del numero 1, fa riferimento a un callout nello screenshot](media/teamscallout1.png)
+precedente che**saluta** il messaggio di saluto facoltativo riprodotto per le persone che chiamano il numero della coda di chiamata.
 
 È possibile caricare un file audio (formati. wav,. mp3 o. WMA).
 
-![Icona del numero 2, fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
-
-**Musica in attesa** È possibile usare la musica predefinita in attesa fornita con la coda di chiamata. È anche possibile caricare un file audio in formato WAV, MP3 o WMA da usare come musica personalizzata in attesa.
+![Icona del numero 2, fa riferimento a un callout nella schermata](media/teamscallout2.png)
+precedente musica in**attesa** è possibile usare la musica predefinita in attesa fornita con la coda di chiamata. È anche possibile caricare un file audio in formato WAV, MP3 o WMA da usare come musica personalizzata in attesa.
 
 * * *
 
@@ -168,9 +165,8 @@ Se non sono presenti elenchi, ottenere i numeri di servizio e assegnarli a un ac
 
 ![Screenshot delle opzioni di segreteria telefonica](media/5d249515-d532-4af2-90da-011404028b89.png) 
 
-![Icona del numero 1, fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
-
-Per aggiungere direttamente singoli agenti, senza aggiungerli a un gruppo, fare clic su **Aggiungi utenti**. Inserire singoli agenti nell'ordine in cui si vuole che ricevano la chiamata. È possibile aggiungere fino a 20 singoli agenti (per aggiungere più di 20, inserirli in un gruppo).
+![Icona del numero 1, fa riferimento a un callout nello screenshot](media/teamscallout1.png)
+precedente**chiamare agenti e gruppi** per aggiungere singoli agenti direttamente, senza aggiungerli a un gruppo, fare clic su **Aggiungi utenti**. Inserire singoli agenti nell'ordine in cui si vuole che ricevano la chiamata. È possibile aggiungere fino a 20 singoli agenti (per aggiungere più di 20, inserirli in un gruppo).
 
 Le chiamate vengono instradate prima a singoli agenti, quindi agli agenti in gruppi. 
 
@@ -195,11 +191,8 @@ Gli agenti di chiamata selezionati devono essere:
 
 - Se gli agenti usano l'app Microsoft teams per le chiamate alla coda di chiamata, devono essere in modalità TeamsOnly.
 
-![Screenshot del riquadro Aggiungi agenti chiamata](media/skype-for-business-add-agents-to-call-queue.png)
-
-![Icona del numero 2, fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
-
-**Metodo di routing** È possibile scegliere **Supervisore**, **seriale**o **Round Robin** come metodo di distribuzione. Tutte le code di chiamata nuove ed esistenti hanno il routing di Attendant selezionato per impostazione predefinita. Quando viene usato il routing di Attendant, la prima chiamata nella coda squilla tutti gli agenti di chiamata contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
+![Icona del numero 2, fa riferimento a un callout nel metodo di](media/teamscallout2.png)
+**routing** dello screenshot precedente è possibile **scegliere Attendant**, **seriale**o **Round Robin** come metodo di distribuzione. Tutte le code di chiamata nuove ed esistenti hanno il routing di Attendant selezionato per impostazione predefinita. Quando viene usato il routing di Attendant, la prima chiamata nella coda squilla tutti gli agenti di chiamata contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
 
 - Il **routing degli assistenti** fa sì che la prima chiamata nella coda squilli tutti gli agenti di chiamata contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
 - **Routing seriale** le chiamate in arrivo squillano tutti gli agenti di chiamata uno alla volta, dall'inizio dell'elenco agente chiamate. Non è possibile ordinare gli agenti nell'elenco agente chiamate. Se un agente respinge o non prende una chiamata, la chiamata suonerà l'agente successivo e proverà tutti gli agenti finché non viene prelevato o non viene ritirato.
@@ -213,9 +206,8 @@ Gli agenti di chiamata selezionati devono essere:
 
 * * *
 
-![Icona del numero 1, fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
-
-**L'agente può rifiutare di ricevere chiamate** È possibile scegliere di consentire agli agenti della coda di chiamata di rifiutare l'annullamento delle chiamate da una coda specifica abilitando questa opzione.
+![Icona del numero 1, fa riferimento a un callout nell'agente di](media/teamscallout1.png)
+screenshot precedente**può rifiutare di ricevere chiamate** per consentire agli agenti della coda di chiamata di rifiutare di accettare chiamate da una coda specifica abilitando questa opzione.
 
 L'abilitazione di questa opzione consente a tutti gli agenti in questa coda di avviare o interrompere la ricezione delle chiamate da questa coda di chiamata. Puoi revocare il privilegio di esclusione dell'agente in qualsiasi momento, deselezionando la casella di controllo, includendo nuovamente automaticamente tutti gli agenti a questa coda (impostazione predefinita per tutti gli agenti).
 
@@ -230,9 +222,8 @@ Per accedere all'opzione opt-out, gli agenti possono:
     >
     > Se gli agenti si trovano nei client desktop di Microsoft teams, possono rifiutare l'opt-out usando le impostazioni di chiamata. 
 
-![Icona del numero 2, fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
-
-**Impostazione avviso agente**
+![Icona del numero 2, fa riferimento a un callout nell'impostazione di](media/teamscallout2.png)
+**avviso dell'agente** screenshot precedente
 
 In questo modo viene definita la durata di un agente notificato di una chiamata prima che i metodi di routing seriale o Round Robin vengano spostati nell'agente successivo.
 
@@ -246,15 +237,13 @@ L'impostazione predefinita è 30 secondi, ma può essere impostata per un massim
 
 * * *
 
-![Icona del numero 1, fa riferimento a un callout nella schermata precedente](media/sfbcallout1.png)
-
-**Chiamate massime in coda** Consente di impostare il numero massimo di chiamate che possono aspettare in coda contemporaneamente. Il valore predefinito è 50, ma può variare da 0 a 200. Quando viene raggiunto questo limite, la chiamata viene gestita nel modo in cui viene impostata la posizione in **cui viene raggiunto il numero massimo di chiamate** .
+![Icona del numero 1, fa riferimento a un callout nelle](media/teamscallout1.png)
+**chiamate massime** dello screenshot precedente nella coda usare questa impostazione per impostare le chiamate massime che possono essere attese contemporaneamente nella coda. Il valore predefinito è 50, ma può variare da 0 a 200. Quando viene raggiunto questo limite, la chiamata viene gestita nel modo in cui viene impostata la posizione in **cui viene raggiunto il numero massimo di chiamate** .
 
 * * *
 
-![Icona del numero 2, fa riferimento a un callout nella schermata precedente](media/sfbcallout2.png)
-
-**Quando viene raggiunto il numero massimo di chiamate** Quando la coda di chiamata raggiunge le dimensioni massime (impostate usando le **chiamate massime nell'impostazione della coda** ), è possibile scegliere cosa succede alle nuove chiamate in arrivo.
+![Icona del numero 2, fa riferimento a un callout nello screenshot](media/teamscallout2.png)
+precedente**quando il numero massimo di chiamate viene raggiunto** quando la coda di chiamata raggiunge la dimensione massima (impostata con le **chiamate massime nell'impostazione della coda** ), è possibile scegliere cosa succede alle nuove chiamate in arrivo.
 
 - **Disconnetti** La chiamata è disconnessa.
 - **Reindirizza a** Quando si sceglie questo pulsante, selezionare una delle opzioni seguenti:
@@ -267,15 +256,13 @@ L'impostazione predefinita è 30 secondi, ma può essere impostata per un massim
 
 * * *
 
-![Icona del numero 3, fa riferimento a un callout nella schermata precedente](media/sfbcallout3.png)
-
-**Timeout chiamata: tempo massimo di attesa** Puoi anche decidere quanto tempo può rimanere in attesa di una chiamata nella coda prima che venga interrotto e debba essere reindirizzato o disconnesso. Il punto in cui viene reindirizzato si basa su come impostare l'impostazione quando viene impostato il timeout **di una chiamata** . Puoi impostare un tempo da 0 a 45 minuti.
+![Icona del numero 3, fa riferimento a un callout nello screenshot](media/teamscallout3.png)
+precedente**chiamata timeout: periodo di attesa massimo** è anche possibile decidere la quantità di tempo in cui una chiamata può essere mandata nella coda prima che venga interrotta e debba essere reindirizzata o disconnessa. Il punto in cui viene reindirizzato si basa su come impostare l'impostazione quando viene impostato il timeout **di una chiamata** . Puoi impostare un tempo da 0 a 45 minuti.
 
 Puoi impostare il valore di timeout in secondi, a intervalli di 15 secondi. In questo modo è possibile modificare il flusso delle chiamate con maggiore granularità. Ad esempio, puoi specificare che le chiamate non risposte da un agente entro 30 secondi passa a un operatore automatico di ricerca della directory.
 
-![Icona del numero 4, fa riferimento a un callout nella schermata precedente](media/sfbcallout4.png)
-
-**Timeout chiamata** Quando la chiamata raggiunge il limite impostato sul periodo di **attesa di una chiamata nell'** impostazione della coda, è possibile scegliere cosa succede alla chiamata:
+![Icona del numero 4, fa riferimento a un callout nello screenshot](media/teamscallout4.png)
+precedente**quando** la chiamata supera il limite impostato nel periodo di **tempo in cui una chiamata può attendere nell'** impostazione della coda, è possibile scegliere cosa accade alla chiamata:
 
 - **Disconnetti** La chiamata è disconnessa.
 - **Reindirizzare la chiamata a** Quando si sceglie questa opzione, sono disponibili le opzioni seguenti:
