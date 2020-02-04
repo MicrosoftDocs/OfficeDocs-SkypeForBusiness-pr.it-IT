@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddPersistentChatNextHopPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a47c824d-a76a-413b-9335-bfe5ffef15db
 ROBOTS: NOINDEX, NOFOLLOW
 description: Usare questa pagina per definire l'hop successivo del server di chat persistente nella distribuzione. Per altre informazioni su come distribuire il server di chat persistente, vedere distribuire il server di chat persistente in Skype for Business Server 2015.
-ms.openlocfilehash: ee5908731382a0d0fc346933cbc7426bc9842b50
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 5071cf2df1e2227814db403a82843aceda40e8f2
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195971"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41689095"
 ---
 # <a name="add-persistent-chat-next-hop-page"></a>Pagina Aggiungere l'hop successivo di Chat persistente
 

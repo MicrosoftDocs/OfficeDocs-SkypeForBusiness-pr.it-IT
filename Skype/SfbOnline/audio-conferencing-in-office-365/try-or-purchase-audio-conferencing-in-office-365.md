@@ -16,17 +16,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords:
+f1.keywords:
 - ms.lync.lac.CpcGettingStarted
 ms.custom:
 - Audio Conferencing
 description: 'Vedi come provare o acquistare le licenze di Audioconferenza (conferenze PSTN) per Office 365 per configurare le conferenze telefoniche a cui gli utenti possono connettersi. '
-ms.openlocfilehash: 1a96e8866671c6a6a268113b4b8ca89c67bed8fa
-ms.sourcegitcommit: ba5ee891e5b16c8bece475133a0b6cd1d1f9c145
+ms.openlocfilehash: 5a2c797b1e31dd98d09ee8773396f599f070c3c2
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34813050"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680333"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365-for-skype-for-business-online"></a>Provare o acquistare Audioconferenza in Office 365 per Skype for Business Online
 
@@ -82,7 +82,7 @@ Quando si assegna una licenza di **Audioconferenza** agli utenti dell'organizzaz
 
 La procedura seguente è **facoltativa**, ma molti amministratori preferiscono eseguirla:
 
-1. [Personalizzare](../set-up-skype-for-business-online/customize-meeting-invitations.md)gli inviti alle riunioni. I numeri di accesso impostati per l'utente verranno aggiunti automaticamente agli inviti alle riunioni inviati ai partecipanti. Tuttavia, puoi aggiungere una guida o collegamenti legali personalizzati, un messaggio di testo e una piccola immagine aziendale.
+1. [Personalizzare gli inviti alle riunioni](../set-up-skype-for-business-online/customize-meeting-invitations.md). I numeri di accesso impostati per l'utente verranno aggiunti automaticamente agli inviti alle riunioni inviati ai partecipanti. Tuttavia, puoi aggiungere una guida o collegamenti legali personalizzati, un messaggio di testo e una piccola immagine aziendale.
 
 2. [Impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbers-included-on-invites.md). Questo è il numero di telefono che verrà visualizzato nelle riunioni pianificate dall'utente.
 
@@ -96,8 +96,8 @@ La procedura seguente è **facoltativa**, ma molti amministratori preferiscono e
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
+[Configurare Skype for Business Online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
 
-[Numeri di telefono per i servizi di audioconferenza](phone-numbers-for-audio-conferencing.md)
+[Numeri di telefono per Audioconferenza](phone-numbers-for-audio-conferencing.md)
 
 [Impostare le opzioni per riunioni online e conferenze telefoniche](https://support.office.com/article/DCD1CA39-0C1F-466C-9573-F04138FEF5E2)

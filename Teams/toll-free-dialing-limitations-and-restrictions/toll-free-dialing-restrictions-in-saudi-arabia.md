@@ -18,16 +18,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: 2c49ab6d2d0216164ff702d277faa160cb3ae9aa
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: bc87d582979b81fc51714b5c278ad978214a9661
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569790"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41682293"
 ---
 # <a name="toll-free-dialing-restrictions-in-saudi-arabia"></a>Restrizioni di chiamata gratuita in Arabia Saudita
 
@@ -47,7 +48,7 @@ ms.locfileid: "37569790"
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Limitazioni e restrizioni di chiamata senza pedaggio](../toll-free-dialing-limitations-and-restrictions.md)
+[Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 

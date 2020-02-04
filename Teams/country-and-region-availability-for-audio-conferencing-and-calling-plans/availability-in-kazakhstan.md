@@ -17,18 +17,19 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per il Kazakistan.
-ms.openlocfilehash: fed105a529bf8864e8687781b011c7d1e803f923
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 90ae7766e2af490dd4fc1e9d3367f42521b8ab77
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37639445"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41683779"
 ---
 # <a name="availability-in-kazakhstan"></a>Disponibilità in Kazakistan
 

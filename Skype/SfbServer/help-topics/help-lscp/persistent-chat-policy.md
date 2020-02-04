@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.PersistentChatPolicy
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: eb9e95b9-f69d-4545-970f-9dfdd93b0eff
 description: È possibile usare la pagina Criteri di Chat persistente del gruppo Chat persistente per gestire criteri a livello globale, di pool, sito o utente, incluse la configurazione dei criteri globali predefiniti e la creazione di uno o più criteri di sito e utente aggiuntivi per la distribuzione. Se il server di chat persistente è abilitato per un utente in base ai criteri, l'ambiente del server di chat persistente viene visualizzato nel client.
-ms.openlocfilehash: f08f0af3c2f553f1acc980c64be1602519ffa898
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 957956ce8537dd9f3ce08dd0919c7392a0c20810
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191813"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41686189"
 ---
 # <a name="persistent-chat-policy"></a>Criteri di Chat persistente
  

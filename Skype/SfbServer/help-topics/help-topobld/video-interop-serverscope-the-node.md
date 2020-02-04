@@ -1,5 +1,5 @@
 ---
-title: Video Interop server-ambito del nodo
+title: Video Interop Server - Definire l'ambito
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.VideoInteropServerScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8c01299a-e832-45a1-8fd9-af432f36a8d4
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in creare un pool di VIS in Skype for Business Server 2015.
-ms.openlocfilehash: 99aa62a29dff4c651fc97c3c087feec33d695902
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: adeb15811b0c33f6d298e1a4df2194c62ef6dba7
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189374"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684279"
 ---
-# <a name="video-interop-server---scope-the-node"></a>Video Interop server-ambito del nodo
+# <a name="video-interop-server---scope-the-node"></a>Video Interop Server - Definire l'ambito
  
 I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in [creare un pool di Vis in Skype for Business Server 2015](../../deploy/deploy-video-interop-server/create-a-vis-pool.md).
   

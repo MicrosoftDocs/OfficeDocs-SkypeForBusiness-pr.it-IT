@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployMainForestPrep
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 11f5e359-97eb-45f7-a730-9ddbbaa40b83
 description: Per preparare la foresta di servizi di dominio Active Directory, è necessario estendere lo schema, come descritto nell'argomento eseguire la preparazione dello schema e verificare che lo schema sia stato replicato.
-ms.openlocfilehash: 3d22b2a2cbe69132d7c84cbcced3090fd4ade266
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 4286ff0bd9b3291f631e3466b0e790174807a8bf
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189692"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41687399"
 ---
 # <a name="prepare-current-forest"></a>Preparare la foresta corrente
 
@@ -35,7 +35,7 @@ Dopo aver completato queste operazioni preliminari, è possibile iniziare con il
 
 3. Nella pagina **Esecuzione comandi in corso** ricercare **Stato attività: Operazione completata** e quindi fare clic su **Visualizza registro**. Verificare che non vi siano errori. Esaminare gli avvisi per stabilire se siano previsti e normali per l'infrastruttura di cui si dispone.
 
-4. Nella colonna **azione** del log espandere **Forest Prep**, cercare un ** \<\> ** risultato di esecuzione di successo alla fine di ogni attività per verificare che la preparazione della foresta sia stata completata correttamente, chiudere il log e quindi fare clic su **fine. **.
+4. Nella colonna **azione** del log espandere **Forest Prep**, cercare un ** \<\> ** risultato di esecuzione di successo alla fine di ogni attività per verificare che la preparazione della foresta sia stata completata correttamente, chiudere il log e quindi fare clic su **fine**.
 
 5. Attendere il completamento della replica di servizi di dominio Active Directory oppure forzare la replica a tutti i controller di dominio elencati nello snap-in **siti e servizi di Active** directory per il controller di dominio radice della foresta, prima di eseguire la preparazione del dominio. Forzare la replica tra i controller di dominio in tutti i siti di Active Directory per provocare la replica nei siti in pochi minuti.
 

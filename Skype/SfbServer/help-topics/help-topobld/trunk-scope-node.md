@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.TrunkScopdeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6561236d-fe30-451d-ac74-7545eb98267a
 description: 'Fare clic con il pulsante destro del mouse su un trunk SIP esistente in Generatore di topologia per eseguire le operazioni seguenti:'
-ms.openlocfilehash: 6b0db3a7a37c510d5340bd2e9da7a1273f7197e3
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d5095170ff3820f430e6093ceab926529e5b38be
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195097"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684319"
 ---
 # <a name="trunk-scope-node"></a>Nodo dell'ambito del trunk
  

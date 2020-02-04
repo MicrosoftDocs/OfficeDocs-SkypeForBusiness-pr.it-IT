@@ -18,18 +18,19 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Repubblica Ceca.
-ms.openlocfilehash: 221470cbfa8598de831393b2f82746748f288563
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 0c92b896627fd8cfaf294a86e3606b2d2f3afcac
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571159"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41683499"
 ---
 # <a name="availability-in-the-czech-republic"></a>Disponibilità nella Repubblica Ceca
 

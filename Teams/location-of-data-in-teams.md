@@ -3,11 +3,10 @@ title: Posizione dei dati in Microsoft Teams
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 05/09/2019
 ms.topic: reference
 audience: admin
 ms.service: msteams
-ms.reviewer: anach
+ms.reviewer: anach, kehardy
 description: Informazioni sulla posizione di archiviazione dei dati in Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
@@ -15,34 +14,103 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 559d711fa157397752c4bc3aa5b9f0d4a41a31f4
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 24432b0854ac0c4256f5d097bacfca5f1a392d72
+ms.sourcegitcommit: 2cb46af39a0d116e8fd020aa04bd2ecbd6998a5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570678"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41679046"
 ---
 # <a name="location-of-data-in-microsoft-teams"></a>Posizione dei dati in Microsoft Teams
 
-I dati in teams si trovano nell'area geografica associata al tenant di Office 365. Attualmente, teams supporta le aree Australia, Canada, Francia, India, Giappone, Regno Unito, Corea del sud, Sud Africa, Americhe, APAC e EMEA. 
+I dati in teams si trovano nell'area geografica associata al tenant di Office 365. Attualmente, teams supporta l'Australia, il Canada, la Francia, la Germania, l'India, il Giappone, il Sud Africa, la Corea del sud, la Svizzera (che include Liechtenstein), gli Emirati Arabi Uniti, il Regno Unito, le Americhe, l'APAC e le aree EMEA. 
 
 > [!IMPORTANT]
-> I team attualmente offrono la residenza dati in Australia, Canada, Francia, India, Giappone, Regno Unito, Corea del sud e Sud Africa solo per i nuovi inquilini.
-> Un nuovo tenant viene definito come un tenant che non ha un singolo utente del tenant che accede a teams. I tenant esistenti provenienti da Australia, India, Giappone e Corea del sud continueranno ad avere i dati dei team archiviati nell'area APAC. I tenant esistenti in Canada continueranno ad avere i loro dati archiviati nelle Americhe. I tenant esistenti in Francia, Regno Unito e Sud Africa avranno i loro dati archiviati nell'area EMEA.
+> I team attualmente offrono la residenza dati in Australia, Canada, Francia, Germania, India, Giappone, Emirati Arabi Uniti, Regno Unito, Corea del sud, Sudafrica e Svizzera (che include Liechtenstein) solo per i nuovi inquilini.
+> Un nuovo tenant viene definito come un tenant che non ha un singolo utente del tenant che accede a teams. I tenant esistenti provenienti da Australia, India, Giappone e Corea del sud continueranno ad avere i dati dei team archiviati nell'area APAC. I tenant esistenti in Canada continueranno ad avere i loro dati archiviati nelle Americhe. I residenti esistenti in Francia, Germania, Liechtenstein, Emirati Arabi Uniti, Regno Unito, Sudafrica e Svizzera avranno i loro dati archiviati nella regione EMEA.
 
-Per altre informazioni su South African data Residency per Teams è possibile trovare il post di Blog di Antonio Sagar, [Microsoft teams lancia il South African data Residency](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-launches-South-Africa-Data-Residency/ba-p/776611).
+## <a name="where-your-teams-data-is-stored"></a>Dove sono archiviati i dati del team
 
-Altre informazioni sulla residenza di dati in Corea del sud per i team viene fornita per gentile concessione del post di Blog di Antonio Sagar, [Microsoft teams lancia il sud coreano data Residency](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-launches-South-Korea-Data-Residency/ba-p/789171).
-
-Per saperne di più sul lancio di data Residency per i team in India e Regno Unito, leggere il post di Blog di Anla Maria, [Microsoft teams avvia l'India data Residency, altro GEOS presto disponibile](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-Launches-Australia-and-Japan-Data-Residency/ba-p/237827). 
-
-Per altre informazioni su Canada data Residency per Teams, leggere il post di Blog di Antonio Sagar, [Microsoft teams avvia Canada data Residency, Australia e Giappone presto disponibile](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-Launches-Canada-Data-Residency-Australia-and/ba-p/227178). 
-
-Per saperne di più sul lancio di data Residency in Australia e Giappone per i team, leggere il post di Blog di Antonio Sagar, [Microsoft teams avvia l'Australia e Japan data Residency](https://go.microsoft.com/fwlink/?linkid=867773). 
-
-Per altre informazioni sul lancio di France data Residency per Teams, leggere il post di Blog di Antonio Sagar, [Microsoft teams lancia France data Residency](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-launches-France-Data-Residency/ba-p/364466). 
-
-Per visualizzare l'area geografica contenente i dati per il tenant, accedere al**profilo dell'organizzazione****delle impostazioni** > dell'interfaccia di [Amministrazione](https://portal.office.com/adminportal/home) > di Microsoft 365. Scorrere verso il basso fino a **posizione dati**. 
+Per visualizzare l'area geografica contenente i dati per il tenant, accedere al**profilo dell'organizzazione****delle impostazioni** > dell'interfaccia di [Amministrazione](https://portal.office.com/adminportal/home) > di Microsoft 365. Scorrere verso il basso fino a **posizione dati**.
 
 ![Screenshot della tabella della posizione dei dati, inclusi i team nell'interfaccia di amministrazione](media/Overview_of_security_and_compliance_in_Microsoft_Teams_image5.png)
 
+## <a name="location-of-teams-data-at-rest"></a>Posizione dei dati di Teams a riposo
+
+I dati dei team vengono archiviati in modo diverso a seconda del tipo di contenuto. 
+
+![Diagramma che mostra i tipi di contenuto dei team e dove sono archiviati a riposo](media/location-of-data-storage-at-rest.png)
+
+Per una discussione approfondita, vedere la [sessione Ignite di breakout in Microsoft teams Architecture](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) .
+
+### <a name="core-teams-customer-data"></a>Dati dei clienti di core Teams
+
+Se il tenant viene provisioning in Australia, Canada, Unione europea, Francia, Germania, India, Giappone, Sud Africa, Corea del sud, Svizzera (che include Liechtenstein), Emirati Arabi Uniti, Regno Unito o Stati Uniti, Microsoft Stores i dati del cliente seguenti a riposo solo all'interno di tale percorso:
+
+- Chat Team, conversazioni di team e Channel, immagini, messaggi della segreteria telefonica e contatti
+- Contenuto del sito di SharePoint Online e i file archiviati in tale sito
+- File caricati in OneDrive for business
+
+#### <a name="chat-channel-messages-team-structure"></a>Chat, messaggi di canale, struttura del team
+
+Ogni team in teams è supportato da un gruppo di Office 365 e dal sito di SharePoint e dalla cassetta postale di Exchange. Chat private (incluse le chat di gruppo), messaggi inviati come parte di una conversazione in un canale e la struttura di team e canali è archiviata in un servizio di chat in uso in Azure. I dati vengono archiviati anche in una cartella nascosta nelle cassette postali di utenti e gruppi per abilitare le funzionalità di protezione delle informazioni.
+
+#### <a name="voicemail-and-contacts"></a>Segreteria telefonica e contatti
+
+I messaggi vocali sono archiviati in Exchange. I contatti sono archiviati nell'archivio dati cloud basato su Exchange. Exchange e il cloud Store basato su Exchange offrono già la residenza dei dati in ognuno dei centri di vendita a livello mondiale di GEOS. Per tutti i team, la segreteria telefonica e i contatti vengono archiviati in paese per Australia, Canada, Francia, Germania, India, Giappone, Emirati Arabi Uniti, Regno Unito, Sud Africa, Corea del sud, Svizzera (incluso il Liechtenstein) e Stati Uniti. Per tutti gli altri paesi, i file vengono archiviati nella posizione Stati Uniti, Europa o Asia-Pacifico in base all'affinità del tenant.
+
+#### <a name="images-and-media"></a>Immagini e elementi multimediali
+
+Elementi multimediali usati nelle chat (ad eccezione di Giphy gif che non sono archiviate ma sono un collegamento di riferimento all'URL del servizio Giphy originale, Giphy è un servizio non Microsoft) è archiviato in un servizio multimediale basato su Azure distribuito nelle stesse posizioni del servizio chat.
+
+#### <a name="files"></a>File
+
+I file (inclusi OneNote e wiki) condivisi da una persona in un canale sono archiviati nel sito di SharePoint del team. I file condivisi in una chat privata o in una chat durante una riunione o una chiamata vengono caricati e archiviati in OneDrive per l'account aziendale dell'utente che condivide il file. Exchange, SharePoint e OneDrive offrono già una residenza di dati in ognuno di essi. Quindi, per i clienti esistenti, tutti i file, i blocchi appunti di OneNote, il contenuto wiki di teams e le cassette postali che fanno parte dell'esperienza teams sono già archiviati nella posizione in base all'affinità del tenant. I file sono archiviati nel paese per l'Australia, il Canada, la Francia, la Germania, l'India, il Giappone, gli Emirati Arabi Uniti, il Regno Unito, il Sud Africa, la Corea del sud e la Svizzera (che include il Liechtenstein). Per tutti gli altri paesi, i file vengono archiviati nella posizione Stati Uniti, Europa o Asia Pacifico in base all'affinità del tenant.
+
+### <a name="datacenter-locations"></a>Posizioni del centro dati
+
+I servizi Team descritti in questa sezione archiviano i dati in Rest nei percorsi seguenti:
+
+|Paese o area geografica  |Posizione Datacenter |
+|---------|---------|
+|Australia   |New South Wales e Victoria         |
+|Canada    |Quebec City e Toronto         |
+|Francia    |Marsiglia e Parigi         |
+|Germania    |Berlino e Francoforte      |
+|India   |Chennai e Pune        |
+|Giappone    |Tokyo (Saitama) e Osaka         |
+|Liechtenstein   |Ginevra e Zurigo       |
+|Sudafrica     |Johannesburg e Cape Town         |
+|Corea del Sud     |Seoul e Busan         |
+|Svizzera    |Ginevra e Zurigo       |
+|Emirati Arabi Uniti     |Abu Dhabi e Dubai         |
+|Regno Unito     | Cardiff e Londra        |
+|Americhe-Nord e Sud (AMER) |Bay, CA e Boydton, VA       |
+|Asia Pacifico (APAC)  |Singapore e Hong Kong        |
+|Europa, Medio Oriente e Asia (EMEA)   |Dublino e Amsterdam        |
+
+> [!NOTE]
+> Per il Liechtenstein, i dati vengono archiviati a riposo nei data center della Svizzera a Ginevra e Zurigo.
+
+### <a name="data-stored-with-a-third-party-storage-provider"></a>Dati archiviati con un provider di archiviazione di terze parti
+
+Le organizzazioni che consentono agli utenti di archiviare i file con un provider di archiviazione di terze parti dipendono dalla posizione di archiviazione di tali servizi e devono quindi rivedere la posizione dei dati a riposo per tali servizi separatamente.
+
+- **Schede**: le schede consentono agli utenti di aggiungere informazioni da app e servizi a un canale. In questo modo, varia in base al tipo di tabulazione in cui vengono archiviati i dati. La scheda stessa non archivia i dati. Ad esempio, una scheda di SharePoint archivierà i dati in base alla posizione di provisioning della raccolta siti di SharePoint. Una scheda che include informazioni di un partner archivierà i dati direttamente nel sistema usato dal partner e ne presenta solo una visualizzazione.
+- **Altre app partner**: Microsoft non offre il supporto per le app e i servizi dei partner che potresti usare all'interno dell'esperienza teams. Esaminare direttamente le informazioni da queste soluzioni per conoscere la posizione in cui vengono archiviati i dati.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Microsoft teams avvia l'United Arab Emirates data Residency](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-launches-United-Arab-Emirates-Data-Residency/ba-p/980330)
+
+- [Microsoft teams avvia la residenza di dati in Corea del sud](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-launches-South-Korea-Data-Residency/ba-p/789171)
+
+- [Microsoft teams lancia il South African data Residency](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-launches-South-Africa-Data-Residency/ba-p/776611)
+
+- [Microsoft teams avvia France data Residency](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-launches-France-Data-Residency/ba-p/364466)
+
+- [Microsoft teams avvia l'India data Residency, altro GEOS presto disponibile](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-Launches-India-Data-Residency-other-geos-coming/ba-p/154083)
+
+- [Microsoft teams avvia l'Australia e la Japan data Residency](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-Launches-Australia-and-Japan-Data-Residency/ba-p/237827)
+
+- [Microsoft teams avvia Canada data Residency, Australia e Giappone presto disponibile](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-Launches-Canada-Data-Residency-Australia-and/ba-p/227178)

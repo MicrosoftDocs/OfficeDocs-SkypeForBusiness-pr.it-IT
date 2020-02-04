@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.SharedComponentsScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: dc8238a0-24aa-47a0-b871-4465ada1761e
 description: Fare clic con il pulsante destro del mouse sui componenti condivisi nell'albero della gerarchia del generatore di topologia per creare nuovi componenti condivisi o accedere alle opzioni del livello di topologia.
-ms.openlocfilehash: 019609145621a882da632aa945623ca49822cf33
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 4a1a00265f4c5c53df2a1d045a1ac31eaef2d48d
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191927"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684389"
 ---
 # <a name="shared-components-scope-node"></a>Nodo dell'ambito dei componenti condivisi
  

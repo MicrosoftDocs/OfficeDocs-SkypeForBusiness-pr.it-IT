@@ -18,18 +18,19 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Argentina.
-ms.openlocfilehash: 2a804d565ecf1fa41bdb4bc7bb5df5056fee2b4e
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 67c117c1e6e9cbd0cbfddff21ee0e76a0e15d659
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570921"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684079"
 ---
 # <a name="availability-in-argentina"></a>Disponibilità in Argentina
 

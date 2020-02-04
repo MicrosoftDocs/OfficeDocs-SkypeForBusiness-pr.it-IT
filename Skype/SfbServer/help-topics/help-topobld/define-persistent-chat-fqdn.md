@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddPersistentChatFqdnPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e0123fa6-008b-430e-a68b-61f0cc3fb12e
 description: Si crea un nuovo server di chat persistente o un pool di server di chat persistente usando la procedura guidata Definisci nuovo pool di Persistent Chat. Selezionare l'opzione desiderata tra Pool di più computer o Pool computer singolo. Se si seleziona un pool con un singolo computer e successivamente si vuole definire un pool di più computer, sarà necessario rimuovere il primo pool e poi definire un pool di più computer.
-ms.openlocfilehash: 247645e5cc87d23db25784d31c2727d56fab2681
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0a30073d4b4df28eadaa206778adeb59651b1a48
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195708"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684829"
 ---
 # <a name="define-persistent-chat-fqdn"></a>Definire l'FQDN di Chat persistente
  

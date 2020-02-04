@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.WebServicesSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: aefc9f51-a171-4a58-be65-7accb470cb2a
 description: Dall'interno di generatore di topologie è possibile modificare le impostazioni della porta usate per i servizi Web interni ed esterni. Inoltre, se si sta distribuendo il bilanciamento del carico DNS (Domain Name System), è possibile usare generatore di topologie per configurare il nome di dominio completo (FQDN) del pool che viene risolto negli indirizzi IP fisici di tutti i server del pool.
-ms.openlocfilehash: 8b68a2318434c8849c180bdde188e0fe69dfd61f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3304be3e4e8442e3ce100bd57c8ea75bd8a6c7ea
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189365"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684269"
 ---
 # <a name="web-services-settings-expander"></a>Espansione delle impostazioni dei servizi Web
  

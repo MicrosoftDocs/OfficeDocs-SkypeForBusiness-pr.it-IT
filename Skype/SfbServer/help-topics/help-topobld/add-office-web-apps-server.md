@@ -1,5 +1,5 @@
 ---
-title: Aggiungere Office Web Apps Server
+title: Aggiungere Office Online Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddOfficeWebAppsServerPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8825dfb1-4b3d-4e01-ba4a-2bd800c6de3b
 description: 'La procedura guidata Definisci nuovo server di Office Web Apps definisce un nuovo server di Office Web Apps nella distribuzione. Si compilano le informazioni seguenti:'
-ms.openlocfilehash: d1b36a2146d6be0addd9b66fd02665eee8de907d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 2af737d2579fb4d89c6670e016ff89a8d24f3743
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187121"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41685089"
 ---
-# <a name="add-office-web-apps-server"></a>Aggiungere Office Web Apps Server
+# <a name="add-office-web-apps-server"></a>Aggiungere Office Online Server
 
 La procedura guidata **Definisci nuovo server di Office Web Apps** definisce un nuovo server di Office Web Apps nella distribuzione. Si compilano le informazioni seguenti:
 
@@ -31,7 +31,7 @@ La procedura guidata **Definisci nuovo server di Office Web Apps** definisce un 
 > [!TIP]
 > Il comportamento predefinito dell' **URL di individuazione del server di Office Web Apps** consiste nel creare l'URL in base al nome di dominio completo del server Office Web Apps `https://<FQDN of the Office Web Apps Server/hosting/discovery` nel formato:. Nella maggior parte dei casi non sarà necessario modificare il formato predefinito. Potrebbe essere necessario modificare il formato predefinito, se il server Office Web Apps e l'URL di individuazione del server di Office Web Apps devono essere diversi. Ad esempio, il server Office Web Apps viene posizionato nella rete perimetrale e avrà un URL diverso in base alla posizione.
 
- **Office Web Apps Server è distribuito in una rete esterna (ovvero perimetro/Internet)**: selezionare la casella di controllo se il server Office Web Apps è posizionato all'esterno del firewall interno, ad esempio la rete perimetrale, la rete esterna o un'altra area di rete Questa operazione non è uguale alla rete interna.
+ **Office Web Apps Server è distribuito in una rete esterna (ovvero perimetro/Internet)**: selezionare la casella di controllo se il server Office Web Apps è posizionato all'esterno del firewall interno, ad esempio la rete perimetrale, la rete esterna o un'altra area di rete diversa da quella della rete interna.
 
 ## <a name="see-also"></a>Vedere anche
 

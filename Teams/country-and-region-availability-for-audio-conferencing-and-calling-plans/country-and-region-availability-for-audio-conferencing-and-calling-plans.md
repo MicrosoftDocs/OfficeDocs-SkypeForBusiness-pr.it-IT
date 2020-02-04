@@ -17,19 +17,20 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
 - LIL_Placement
 description: Puoi selezionare un paese/un’area geografica per vedere se sono disponibili o meno Audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e i numeri verdi e a tariffa.
-ms.openlocfilehash: 4d7e1f2f4481baf51c6c3f619f47dc9440d957da
-ms.sourcegitcommit: 1de5e4d829405b75c0a87918cc7c8fa7227e0ad6
+ms.openlocfilehash: cc1acc2e112477c441b9bfb492dff49183e5dc3d
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952439"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41682523"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica
 

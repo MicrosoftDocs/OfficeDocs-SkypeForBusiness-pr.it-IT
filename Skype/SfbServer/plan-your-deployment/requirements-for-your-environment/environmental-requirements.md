@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4812c444-2546-48d7-9ca7-b71fce508ed8
 description: 'Riepilogo: configurare i requisiti non server per Skype for Business Server 2015. Prima di eseguire la distribuzione è possibile configurare una varietà di elementi, inclusi Active Directory, DNS, certs e fileshares.'
-ms.openlocfilehash: 59f7bed17c217eda46314d2a133c0d5671682824
-ms.sourcegitcommit: ab259764dc50bdd52efed3abb1d065ee19486946
+ms.openlocfilehash: 60244391a04b1bab31464bd0ef0b804510e40955
+ms.sourcegitcommit: 2cb46af39a0d116e8fd020aa04bd2ecbd6998a5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393428"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678960"
 ---
 # <a name="environmental-requirements-for-skype-for-business-server-2015"></a>Requisiti ambientali di Skype for Business Server 2015
  
@@ -250,6 +250,9 @@ Quindi la pianificazione del certificato è un must. Esaminiamo ora un elenco di
   
 > [!NOTE]
 > L'uso dell'algoritmo di firma RSASSA-PSS non è supportato e può comportare errori per i problemi di accesso e inoltro di chiamata, tra gli altri. 
+
+> [!NOTE]
+> Skype for Business Server 2015 non supporta i certificati CNG.
   
 - Sono supportate le lunghezze della chiave di crittografia di 1024, 2048 e 4096. Sono consigliate le lunghezze delle chiavi di 2048 e superiori.
     
@@ -362,7 +365,7 @@ Questa SAN deve essere assegnata al certificato assegnato al listener SSL nel pr
 
 Skype for Business Server 2015 è in grado di usare la stessa condivisione di file per tutti gli archivi di file. È necessario tener presente quanto segue:
   
-- Una condivisione file deve essere inserita nell'archiviazione (DAS) Direct Attached Storage Network (SAN), che include il file System distribuito (DFS), nonché una matrice ridondante di dischi indipendenti (RAID) per gli archivi di file. Per altre informazioni su DFS per Windows Server 2012, vedere [Questa pagina DFS](https://technet.microsoft.com/en-us/library/jj127250.aspx).
+- Una condivisione file deve essere inserita nell'archiviazione (DAS) Direct Attached Storage Network (SAN), che include il file System distribuito (DFS), nonché una matrice ridondante di dischi indipendenti (RAID) per gli archivi di file. Per altre informazioni su DFS per Windows Server 2012, vedere [Questa pagina DFS](https://technet.microsoft.com/library/jj127250.aspx).
     
 - È consigliabile un cluster condiviso per la condivisione file. Se si usa uno, è consigliabile eseguire il cluster Windows Server 2012 o Windows Server 2012 R2. Anche Windows Server 2008 R2 è accettabile. Perché le finestre più recenti? Le versioni precedenti potrebbero non avere le autorizzazioni appropriate per abilitare tutte le funzionalità. Puoi usare l'amministratore del cluster per creare le condivisioni di file e questo [come creare condivisioni di file in un](https://support.microsoft.com/en-us/help/224967/how-to-create-file-shares-on-a-cluster) articolo di cluster ti aiuterà in questi dettagli.
     

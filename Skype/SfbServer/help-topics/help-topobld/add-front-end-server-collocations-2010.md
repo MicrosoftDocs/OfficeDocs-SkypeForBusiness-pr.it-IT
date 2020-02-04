@@ -1,5 +1,5 @@
 ---
-title: Aggiungere le collocazioni del server front-end 2010
+title: Aggiungere collocazioni di Front End Server 2010
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddFrontEndCollocationsPage2010
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4d328bf4-85bc-4870-8d6f-008c0e46520e
 description: Per una distribuzione di Enterprise Edition, è possibile collocare il servizio di conferenza A/V, il Mediation Server o entrambi nel pool Front-end oppure è possibile distribuirli singolarmente come server autonomi. Per la distribuzione di un server Standard Edition, il servizio di conferenza A/V è sempre collocato se è abilitata la conferenza.
-ms.openlocfilehash: 8a8191f29a30052fec837ee9136203eb5db1ee0d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 371643491438b7f1711c2a023f1b8a6d7a39525c
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187184"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41685149"
 ---
-# <a name="add-front-end-server-collocations-2010"></a>Aggiungere le collocazioni del server front-end 2010
+# <a name="add-front-end-server-collocations-2010"></a>Aggiungere collocazioni di Front End Server 2010
 
 Per una distribuzione di Enterprise Edition, è possibile collocare il servizio di conferenza A/V, il Mediation Server o entrambi nel pool Front-end oppure è possibile distribuirli singolarmente come server autonomi. Per la distribuzione di un server Standard Edition, il servizio di conferenza A/V è sempre collocato se è abilitata la conferenza.
 
@@ -35,6 +35,6 @@ Per una distribuzione di Enterprise Edition, è possibile collocare il servizio 
 
 È possibile usare Microsoft Lync Server 2013, strumento di pianificazione per valutare se il pool di front end in cui si vuole collocare il Mediation Server può gestire il carico. Se l'ambiente non soddisfa questi requisiti, è necessario distribuire un pool di Mediation Server autonomo.
 
-In generale, la collocazione di un/V Conferencing Server o Mediation Server non è consigliata se l'organizzazione ha disponibilità elevata e scalabilità requirementsFor dettagli sulla collocazione di questi ruoli del server in un pool di front end in un'edizione Enterprise distribuzione, vedere [definire e configurare un pool Front-End](https://technet.microsoft.com/library/713fc263-23dd-414a-b001-82932e4fe966.aspx) nella documentazione relativa alla distribuzione. Per informazioni dettagliate sulla funzionalità e i componenti di conferenza A/V, vedere [pianificazione per](https://technet.microsoft.com/library/983a272a-e1b3-4d70-8f84-836b092fe526.aspx) i servizi di conferenza nella documentazione relativa alla pianificazione. Per informazioni dettagliate sulle caratteristiche e i componenti di VoIP aziendale, incluso Mediation Server, vedere [pianificare l'organizzazione di VoIP aziendale in Skype for Business server 2015](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md) nella documentazione relativa alla pianificazione.
+In generale, la collocazione di un/V Conferencing Server o Mediation Server non è consigliata se l'organizzazione ha una disponibilità elevata e la scalabilità requirementsFor dettagli sulla collocazione di questi ruoli del server in un pool di front end in una distribuzione di Enterprise Edition, vedere [definire e configurare un pool di front end](https://technet.microsoft.com/library/713fc263-23dd-414a-b001-82932e4fe966.aspx) nella documentazione relativa alla distribuzione. Per informazioni dettagliate sulla funzionalità e i componenti di conferenza A/V, vedere [pianificazione per](https://technet.microsoft.com/library/983a272a-e1b3-4d70-8f84-836b092fe526.aspx) i servizi di conferenza nella documentazione relativa alla pianificazione. Per informazioni dettagliate sulle caratteristiche e i componenti di VoIP aziendale, incluso Mediation Server, vedere [pianificare l'organizzazione di VoIP aziendale in Skype for Business server 2015](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md) nella documentazione relativa alla pianificazione.
 
 

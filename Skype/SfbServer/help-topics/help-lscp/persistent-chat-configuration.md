@@ -7,25 +7,25 @@ manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.PersistentChatConfig
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3f2891e6-bad3-4a23-a345-b7de4cae3bd9
 description: La distribuzione del server di chat persistente può ospitare molte chat room persistenti simultanee. Le chat room possono essere organizzate in un set di categorie nel server. Ogni chat room appartiene a una sola categoria ed eredita alcune impostazioni da tale categoria. In questo modo viene creata una struttura utile per identificare le conversazioni in base alle esigenze aziendali e per facilitare l'amministrazione delegata e la gestione semplificata.
-ms.openlocfilehash: 75665a9a3dfb25f6c70abb0c5a425d6ce69e5d62
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 07c1043a67d5f1a64dbb53540fbd902341067b32
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195392"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41686229"
 ---
 # <a name="persistent-chat-configuration"></a>Configurazione di Chat persistente
  
 La distribuzione del server di chat persistente può ospitare molte chat room persistenti simultanee. Le chat room possono essere organizzate in un set di categorie nel server. Ogni chat room appartiene a una sola categoria ed eredita alcune impostazioni da tale categoria. In questo modo viene creata una struttura utile per identificare le conversazioni in base alle esigenze aziendali e per facilitare l'amministrazione delegata e la gestione semplificata.
   
 > [!NOTE]
-> Anche se molte delle caratteristiche di gestione delle chat room sono disponibili nei computer che eseguono la chat persistente per l'utente, gli amministratori della chat persistente (nel ruolo **CsPersistentChatAdministrator** ) devono usare il pannello di controllo o la shell di gestione cmdlet per creare o gestire categorie.
+> Anche se molte delle caratteristiche di gestione delle chat room sono disponibili nei computer che eseguono la chat persistente per l'utente, gli amministratori della chat persistente (nel ruolo **CsPersistentChatAdministrator** ) devono usare il pannello di controllo o i cmdlet di Management Shell per creare o gestire categorie.
   
 Gli amministratori della chat persistente usano il pannello di controllo di Skype for Business Server o i cmdlet di Windows PowerShell per creare e gestire categorie e per progettare l'accesso per le chat room per gli utenti dell'organizzazione.
   

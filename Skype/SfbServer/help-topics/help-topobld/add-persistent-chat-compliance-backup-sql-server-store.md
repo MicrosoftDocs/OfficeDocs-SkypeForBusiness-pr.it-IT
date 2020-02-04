@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddPersistentChatBackupComplianceStorePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 358b74bd-a97d-4f28-9bed-af633ea0099e
 description: Si configurano gli archivi di SQL Server per la conformità del backup che forniranno database di backup per il server di chat persistente o per gli archivi di SQL Server di Persistent Chat
-ms.openlocfilehash: 457874f87266453939c75cdef50d30231d8610bf
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b40f749b59e6b389513a16277bfdc75624628d36
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187958"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41685079"
 ---
 # <a name="add-persistent-chat-compliance-backup-sql-server-store"></a>Aggiungere l'archivio SQL Server di backup per Conformità chat persistente
  
@@ -30,7 +30,7 @@ Fare clic su **nuovo** per definire un nuovo SQL Server e facoltativamente una n
   
 Selezionare la casella di controllo **Abilita mirroring di SQL Server Store** per configurare un database di SQL Server e un'istanza facoltativa che fornirà un database con mirroring per i dati di conformità del backup della chat persistente.
   
-Selezionare nell'elenco mirroring di **SQL Server archiviare** un'istanza di SQL Server e facoltativa per fungere da mirror di SQL Server per la conformità a SQL Server per il backup della chat persistente.
+Selezionare nell'elenco **mirroring di SQL Server archiviare** un'istanza di SQL Server e facoltativa per fungere da mirror di SQL Server per la conformità a SQL Server per il backup della chat persistente.
   
 Fare clic su **nuovo** per definire un nuovo SQL Server e, facoltativamente, una nuova istanza per il mirroring della chat persistente in SQL Server.
   

@@ -17,18 +17,19 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per Guam.
-ms.openlocfilehash: 062149661a8fb4281bfc6cf3f35c4a1803e350eb
-ms.sourcegitcommit: cb394272050d049ebceedb7df835b86362dfd8d1
+ms.openlocfilehash: 9f4e76932ae12235845eb1302362a05ac8972cf1
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40741592"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41683849"
 ---
 # <a name="availability-in-guam"></a>Disponibilità in Guam
 

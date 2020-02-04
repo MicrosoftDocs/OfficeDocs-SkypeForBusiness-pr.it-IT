@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.MonitoringServerGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b45e4b2f-a6e8-4919-979e-1ba74fd46028
 description: "In Generatore di topologie è possibile modificare le proprietà di un singolo Monitoring Server facendo clic con il pulsante destro del mouse su Monitoring Server nell'albero della console e poi su Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e su Modifica proprietà e poi modificando una di queste opzioni:"
-ms.openlocfilehash: b50ace9cd220264dfc50414328753a5eee6fbed3
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 23e6a1c4e1db0fd01ce5b6043a795e9abb4070b1
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190121"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684519"
 ---
 # <a name="monitoring-server-general-settings-expander"></a>Espansione delle impostazioni generali di Monitoring Server
  

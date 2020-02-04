@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddPersistentChatSqlStorePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c8e6064a-8127-4c25-8685-06f49d8bbfce
 ROBOTS: NOINDEX, NOFOLLOW
 description: Si configurano gli archivi di SQL Server che offrono database per il server di chat persistente o per il pool di server di chat persistente.
-ms.openlocfilehash: 018ff710d67de8047ffac3a6f4f1892e0f374174
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 1c8f3fce6a54eff2f5c3e9160da7b717d88d7859
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195970"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41689005"
 ---
 # <a name="add-persistent-chat-sql-server-store"></a>Aggiungere l'archivio SQL Server per Chat persistente
 

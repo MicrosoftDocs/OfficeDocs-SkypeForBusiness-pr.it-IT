@@ -1,26 +1,26 @@
 ---
-title: Espansione impostazioni della porta di interoperabilità del server video
+title: Espansione delle impostazioni della porta di Video Interop Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.VideoInteropServerPortSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 416ba609-5a32-4c60-b346-ef3119932c91
 ROBOTS: NOINDEX, NOFOLLOW
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in creare un pool VIS in Skype for Business Server.
-ms.openlocfilehash: 572be5baa563b7d3fe76fdea6e6cc64831d32672
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 37939e1f1f8cff103758651246374dda0d374897
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195817"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41687899"
 ---
-# <a name="video-interop-server-port-settings-expander"></a>Espansione impostazioni della porta di interoperabilità del server video
+# <a name="video-interop-server-port-settings-expander"></a>Espansione delle impostazioni della porta di Video Interop Server
  
 I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in [creare un pool Vis in Skype for Business Server](../../../deploy/deploy-video-interop-server/create-a-vis-pool.md).
   

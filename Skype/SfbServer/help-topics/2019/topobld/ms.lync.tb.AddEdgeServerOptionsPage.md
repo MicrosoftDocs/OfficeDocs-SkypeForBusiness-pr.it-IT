@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddEdgeServerOptionsPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2405f227-4297-40d0-a117-55427a9e4052
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Selezionare tutte le funzionalità che si desidera abilitare per il pool di server perimetrali. Per impostazione predefinita, il pool di server perimetrali supporta gli utenti remoti nell'organizzazione che accedono dall'esterno del firewall tramite rete privata virtuale (VPN). Sono disponibili le opzioni seguenti per le funzionalità del pool di server perimetrali:"
-ms.openlocfilehash: e7ec8e7b20c63e9842957373206130d000944b40
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 049a4a6835e506e550f9f7d81401d71bd3737e5a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188288"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41689395"
 ---
 # <a name="add-edge-server-options"></a>Aggiungere opzioni per il server perimetrale
 

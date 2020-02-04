@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.PersistentChatGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 275ee1ae-ca58-4963-bc95-523319f90d96
 description: 'È possibile modificare le impostazioni generali per il server di chat persistente o il pool di server di chat persistente configurando o definendo queste proprietà:'
-ms.openlocfilehash: c79ef61e2b7609aa344766c37cf38adaa195f23d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 184ee58f5b79547434281e073cf99a30d72b7bbc
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191642"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684489"
 ---
 # <a name="persistent-chat-general-settings-expander"></a>Espansione delle impostazioni generali di Persistent Chat
  
@@ -42,7 +42,7 @@ ms.locfileid: "36191642"
     
 - Selezionare la casella di controllo **Abilita mirroring di SQL Server Store** se si vuole abilitare il mirroring per l'archivio principale di SQL Server.
     
-    Se si è scelto di abilitare il mirroring di SQL Server Store, selezionare lo Store e l'istanza dall'elenco mirroring di **SQL Server Store**.
+    Se si è scelto di abilitare il mirroring di SQL Server Store, selezionare lo Store e l'istanza dall'elenco **mirroring di SQL Server Store**.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa.
     

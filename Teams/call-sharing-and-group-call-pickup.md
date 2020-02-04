@@ -15,18 +15,18 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-f1keywords:
+f1.keywords:
 - ms.teamsadmincenter.users.voice.groupcallpickup.tooltip
 - ms.teamsadmincenter.users.voice.callorderanddelay.tooltip
 ms.custom:
 - Phone System
 description: Condivisione chiamate e raccolta chiamate di gruppo consente agli utenti di condividere le chiamate in arrivo con i colleghi in modo che le chiamate possano essere acquisite quando l'utente non è disponibile.
-ms.openlocfilehash: 0f61039fc2027da83472f042c723a43d249da080
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: a39ed0a606b38a159473fbab9c35d21ae461c34b
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517019"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684119"
 ---
 # <a name="call-sharing-and-group-call-pickup-in-microsoft-teams"></a>Condivisione delle chiamate e ritiro delle chiamate di gruppo in Microsoft Teams
 
@@ -57,6 +57,6 @@ Importante: quando gli amministratori disattivano i gruppi di chiamate per gli u
 
 Un tenant può contenere un massimo di 32.768 gruppi di chiamate. In ogni gruppo di chiamate può essere disponibile un massimo di 25 utenti. 
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 [Inoltro di chiamata e squillo simultaneo in teams](https://support.office.com/article/call-forwarding-and-simultaneous-ring-in-teams-a88da9e8-1343-4d3c-9bda-4b9615e4183e)

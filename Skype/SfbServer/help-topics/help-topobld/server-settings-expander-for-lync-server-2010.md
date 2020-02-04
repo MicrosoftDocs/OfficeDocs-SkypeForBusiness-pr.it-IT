@@ -1,5 +1,5 @@
 ---
-title: Expander di impostazioni server per Lync Server 2010
+title: Espansione delle impostazioni del server per Lync Server 2010
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.MachineSettingsExpander2010
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e2309ade-f9c7-4cd1-b135-45bf73b0441f
 description: 'Per modificare le proprietà di questo computer, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 28261b3637040acda70218f23101b4337b1f90c3
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: da1029b6298d85aab8a80af1c52b152e040fbd80
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194965"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684409"
 ---
-# <a name="server-settings-expander-for-lync-server-2010"></a>Expander di impostazioni server per Lync Server 2010
+# <a name="server-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni del server per Lync Server 2010
  
 Per modificare le proprietà di questo computer, eseguire le operazioni seguenti:
   
@@ -28,7 +28,7 @@ Per modificare le proprietà di questo computer, eseguire le operazioni seguenti
     
 - Si seleziona una delle opzioni seguenti:
     
-    **Usare tutti gli indirizzi IP**configurati: selezionare questa funzionalità per usare tutti gli indirizzi IP configurati nel computer.
+    **Usare tutti gli indirizzi IP configurati**: selezionare questa funzionalità per usare tutti gli indirizzi IP configurati nel computer.
     
     > [!IMPORTANT]
     > Se nel computer sono presenti più indirizzi IP, è necessario tenere presente che i servizi associati al computer utilizzeranno tutti gli indirizzi IP per tutti i servizi. Se un server o un servizio di ascolto si aspetta la comunicazione di un determinato indirizzo IP e una porta, il servizio potrebbe non eseguire la selezione ottimale dell'indirizzo IP da ascoltare. 

@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployMainDomainPrep
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bfcb37ca-34eb-4d0d-9694-6edd2e7fe0f3
 description: "Per preparare un dominio per ospitare server che eseguono Skype for Business Server 2015 o Skype for Business Server gli utenti, è necessario completare il passaggio 5: preparare il dominio corrente, come descritto nell'argomento uso del programma di installazione per eseguire la preparazione del dominio. Per poter completare tale passaggio, è necessario essere connessi come membri del gruppo Domain Admins nel dominio che si sta preparando oppure come membri del gruppo Enterprise Admins della foresta a cui appartiene il dominio. Per preparare il dominio, eseguire le operazioni seguenti:"
-ms.openlocfilehash: 93fef28bdcaa720f1adcf893ec634dbe8f373780
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 58ff8ff515d171f7d0d1b0c2fb7d653e25c3ad31
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189710"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41687409"
 ---
 # <a name="prepare-current-domain"></a>Preparare il dominio corrente
 

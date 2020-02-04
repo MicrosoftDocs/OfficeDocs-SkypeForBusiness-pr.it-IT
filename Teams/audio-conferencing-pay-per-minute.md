@@ -1,5 +1,5 @@
 ---
-title: Audioconferenze con tariffe al minuto
+title: Audioconferenza con tariffa al minuto
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -17,18 +17,19 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Licensing
 description: Oltre alla licenza per l'utente standard per i servizi di audioconferenza, le organizzazioni che usano Microsoft multilicenza possono anche scegliere un'offerta pay-per-minute per abilitare le funzionalità di conferenza audio per le loro organizzazioni.
-ms.openlocfilehash: 0f31d5b79c8b298dbd13c516856446ee2ead977a
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 7f0f0775ea6d3beef7dcd590f04c40845448a71b
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37515893"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684139"
 ---
-# <a name="audio-conferencing-pay-per-minute"></a>Audioconferenze con tariffe al minuto
+# <a name="audio-conferencing-pay-per-minute"></a>Audioconferenza con tariffa al minuto
 
 Oltre alla licenza per l'utente standard per i servizi di audioconferenza, il volume e le organizzazioni di licenze possono anche scegliere un'offerta pay-per-minute per abilitare le funzionalità di conferenza audio per le loro organizzazioni.
   
@@ -41,7 +42,7 @@ Puoi scoprire se il tuo [paese/area geografica è supportato](country-and-region
   
 ## <a name="need-some-details"></a>Occorrono alcuni dettagli?
 
-Mentre l'offerta di licenza per utente per l'audioconferenza include l'utilizzo di accesso esterno e un certo utilizzo della chiamata in uscita, la modalità pay-per-minute per i servizi **di audioconferenza consente di pagare tutti i dati dell'uso delle conferenze audio in base al minuto, senza pagare un mensile per utente licenza**. In questo modo, tutte le chiamate di accesso esterno e chiamata in uscita verranno addebitate in base al minuto, tra cui:
+Mentre l'offerta di licenza per ogni utente per l'audioconferenza include l'utilizzo di accesso esterno e un certo utilizzo della chiamata in uscita, la modalità pay-per-minute per i servizi **di audioconferenza consente di pagare tutti i dati dell'uso delle conferenze audio per ogni minuto senza pagare una licenza mensile per utente**. In questo modo, tutte le chiamate di accesso esterno e chiamata in uscita verranno addebitate in base al minuto, tra cui:
   
 - Chiamate in ingresso per i numeri per i servizi di audioconferenza dell'organizzazione.
     

@@ -16,18 +16,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords:
-- O365P_DialInConfDesc
+f1.keywords:
+- CSH
 ms.custom:
 - Audio Conferencing
 - LIL_Placement
+- O365P_DialInConfDesc
 description: "Informazioni sulla configurazione del servizio di conferenza telefonica con accesso esterno o del servizio Audioconferenza per gli utenti dell'organizzazione che devono usare il telefono per partecipare alle conferenze telefoniche. "
-ms.openlocfilehash: 499a8a8ef05d23c74b030536d33b7a02cd6d9a1a
-ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
+ms.openlocfilehash: ea254da1f742db602d396868aad36a0c20951128
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37924977"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41680363"
 ---
 # <a name="set-up-audio-conferencing-for-skype-for-business"></a>Configurare il servizio Audioconferenza per Skype for Business
 

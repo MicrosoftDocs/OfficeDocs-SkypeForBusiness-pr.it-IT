@@ -1,26 +1,26 @@
 ---
-title: Impostazioni generali di video Interop server
+title: Impostazioni generali di Video Interop Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.VideoInteropServerGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 5c508eab-0b08-4fb2-b2b2-eca2eaf2053a
 ROBOTS: NOINDEX, NOFOLLOW
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in creare un pool VIS in Skype for Business Server.
-ms.openlocfilehash: a574012b462db8741a7a2ff6ebaff9bf7fa54428
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: a44f85e1a6fb1d72586dd574d00f5fc37ee865d4
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195822"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41687919"
 ---
-# <a name="video-interop-server-general-settings"></a>Impostazioni generali di video Interop server
+# <a name="video-interop-server-general-settings"></a>Impostazioni generali di Video Interop Server
  
 I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in [creare un pool Vis in Skype for Business Server](../../../deploy/deploy-video-interop-server/create-a-vis-pool.md).
   

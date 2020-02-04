@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.PstnGatewayScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 85a52bf7-98cb-4dd4-892e-2d1ba5669593
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Questo nodo Mostra il nome di dominio completo (FQDN), il Mediation Server associato e altre informazioni di base su questo gateway PSTN (Public Switched Telephone Network). È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 2130d22a1fac820c8e092e43244f3b1075f3de27
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 43d30600ab9dbccf3d73b8fb70daa5b76527a80e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195843"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41688079"
 ---
 # <a name="pstn-gateway-scope-node"></a>Nodo dell'ambito del gateway PSTN
  

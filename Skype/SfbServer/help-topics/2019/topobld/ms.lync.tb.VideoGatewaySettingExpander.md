@@ -1,26 +1,26 @@
 ---
-title: Impostazione del gateway video
+title: Impostazione di gateway video
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.VideoGatewaySettingExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8dcd4168-60ed-4787-b6de-2b04268d6d0f
 ROBOTS: NOINDEX, NOFOLLOW
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in creare un pool VIS in Skype for Business Server.
-ms.openlocfilehash: 69514ba25c28954fe297f3ff19450539147bb69d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e37fa12b669d1df34b93ecdb9e7757dd18182cef
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195828"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41687909"
 ---
-# <a name="video-gateway-setting"></a>Impostazione del gateway video
+# <a name="video-gateway-setting"></a>Impostazione di gateway video
  
 I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in [creare un pool Vis in Skype for Business Server](../../../deploy/deploy-video-interop-server/create-a-vis-pool.md).
   

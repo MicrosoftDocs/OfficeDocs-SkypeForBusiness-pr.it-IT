@@ -18,18 +18,19 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per Brunei.
-ms.openlocfilehash: 904d8a585a7203c8ffed8ab0378ad87f84b23f33
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 2e4167ee0ac58a035d13f9be51450b8a6067c79a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571074"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684009"
 ---
 # <a name="availability-in-brunei"></a>Disponibilità in Brunei
 

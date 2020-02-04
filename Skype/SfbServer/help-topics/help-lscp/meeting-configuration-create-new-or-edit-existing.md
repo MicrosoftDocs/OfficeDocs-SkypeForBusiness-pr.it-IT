@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.ConfMeetingSettingEdit
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e8fc19fa-6cd7-4f68-b90a-1c7e1b649abd
 description: Le impostazioni di configurazione della riunione definiscono l'esperienza di partecipazione dell'utente per le conferenze pianificate dagli utenti. Queste impostazioni si applicano solo alle riunioni pianificate. Non si applicano invece alle riunioni ad hoc create facendo clic sull'opzione Riunione immediata nel client.
-ms.openlocfilehash: baf8912e90d68dc175e6cd278cc7a13eff82ae33
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e98ee52ccab9dbb541d8f09e448f9ac098501ca5
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194428"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41686369"
 ---
 # <a name="meeting-configuration-create-new-or-edit-existing"></a>Configurazione riunione: crearne una nuova o modificarne una esistente
 
@@ -32,9 +32,9 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Nome** Le configurazioni delle riunioni sono denominate per impostazione predefinita e il nome non può essere modificato.
 
-- **Ingresso di bypass** per i chiamanti PSTN Selezionare questa casella di controllo per ammettere automaticamente gli utenti che effettuano la chiamata alla conferenza tramite una linea telefonica pubblica con Switched Telephone Network (PSTN). Deselezionare la casella di controllo per instradare i chiamanti PSTN alla sala di attesa della conferenza, dove rimangono in attesa fino a quando un relatore non concede loro l'accesso alla conferenza.
+- **Ingresso di bypass per i chiamanti PSTN** Selezionare questa casella di controllo per ammettere automaticamente gli utenti che effettuano la chiamata alla conferenza tramite una linea telefonica pubblica con Switched Telephone Network (PSTN). Deselezionare la casella di controllo per instradare i chiamanti PSTN alla sala di attesa della conferenza, dove rimangono in attesa fino a quando un relatore non concede loro l'accesso alla conferenza.
 
-- **Designa come** relatore Selezionare la categoria di utenti (oltre all'organizzatore della riunione) che vengono automaticamente designati come relatori quando partecipano a una conferenza. Indipendentemente da questa impostazione, i relatori possono essere designati in modo esplicito come tali quando viene pianificata la conferenza oppure possono essere promossi in modo esplicito a relatori durante la conferenza. Le opzioni sono:
+- **Designa come relatore** Selezionare la categoria di utenti (oltre all'organizzatore della riunione) che vengono automaticamente designati come relatori quando partecipano a una conferenza. Indipendentemente da questa impostazione, i relatori possono essere designati in modo esplicito come tali quando viene pianificata la conferenza oppure possono essere promossi in modo esplicito a relatori durante la conferenza. Le opzioni sono:
 
   - **Nessuno** Selezionare questa opzione se non si vuole che l'organizzatore venga indicato automaticamente come relatore.
 

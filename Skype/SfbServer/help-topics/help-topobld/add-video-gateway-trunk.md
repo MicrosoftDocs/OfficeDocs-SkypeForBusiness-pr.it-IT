@@ -1,5 +1,5 @@
 ---
-title: Aggiungere il trunk del gateway video
+title: Aggiungere il nome di dominio completo (FQDN) per trunk video
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddVideoGatewayTrunkPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9485bea9-c646-4eb7-b3d0-dcbc57cdfbda
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in creare un pool di VIS in Skype for Business Server 2015.
-ms.openlocfilehash: ed676416f8f66eb7394db04366fbba6c4e42dfab
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: cda9c6366a5f5b16e21bc8a4fd56342978e0b13b
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195495"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684999"
 ---
-# <a name="add-video-gateway-trunk"></a>Aggiungere il trunk del gateway video
+# <a name="add-video-gateway-trunk"></a>Aggiungere il nome di dominio completo (FQDN) per trunk video
  
 I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in [creare un pool di Vis in Skype for Business Server 2015](../../deploy/deploy-video-interop-server/create-a-vis-pool.md).
   

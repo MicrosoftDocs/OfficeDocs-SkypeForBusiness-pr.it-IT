@@ -14,14 +14,15 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 description: Informazioni su come assegnare o modificare la posizione di un luogo di emergenza per gli utenti dell'organizzazione.
-ms.openlocfilehash: 4179992476faa800684e29343227e03b563d7575
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 5fc4f9ceeb8fc602ae28831ba48fcf37191608b9
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37639229"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41684169"
 ---
 # <a name="assign-or-change-the-place-for-an-emergency-location-for-a-user"></a>Assegnare o modificare la posizione di un luogo di emergenza per un utente
 
@@ -42,9 +43,9 @@ Per informazioni su come ottenere piani per le chiamate in Office 365 e quanto c
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Quali sono le posizioni di emergenza, i luoghi e il routing delle chiamate?](what-are-emergency-locations-addresses-and-call-routing.md)
+- [Che cosa sono il routing delle chiamate, le posizioni e i luoghi di emergenza?](what-are-emergency-locations-addresses-and-call-routing.md)
 - [Aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md)
-- [Aggiungere, modificare o rimuovere una posizione per un luogo di emergenza nell'organizzazione](add-change-remove-emergency-place-organization.md)
+- [Aggiungere, modificare o rimuovere un luogo per una posizione di emergenza per l'organizzazione](add-change-remove-emergency-place-organization.md)
 - [Assegnare o modificare una posizione di emergenza per un utente](assign-change-emergency-location-user.md)
 - [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)
 - [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
