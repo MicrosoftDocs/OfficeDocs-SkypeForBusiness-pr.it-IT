@@ -14,20 +14,21 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Setup
-description: È possibile allegare file a una riunione Skype for business, che i partecipanti possono aprire e scaricare. I file allegati alle riunioni Skype for business vengono conservati nelle cassette postali di qualsiasi partecipante la cui cassetta postale viene inserita nel blocco per controversia legale, ha un criterio di conservazione di Office 365 applicato o viene inserito in un blocco associato a un caso di eDiscovery nella sicurezza di Office 365 &amp; Centro conformità. Questo contenuto viene salvato nelle cartelle elementi ripristinabili dei partecipanti nelle cassette postali.
-ms.openlocfilehash: 4a8022b522f933ff8897586f632764eda77c6a67
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+description: È possibile allegare file a una riunione Skype for business, che i partecipanti possono aprire e scaricare. I file allegati alle riunioni Skype for business vengono conservati nelle cassette postali di qualsiasi partecipante la cui cassetta postale è inserita nel blocco per controversia legale, ha un criterio di conservazione di Office 365 applicato o viene inserito in un blocco associato a un &amp; caso di eDiscovery nel centro conformità di sicurezza di Office 365. Questo contenuto viene salvato nelle cartelle elementi ripristinabili dei partecipanti nelle cassette postali.
+ms.openlocfilehash: fdd6786cb9b7e5535abee47eb1f0b538b6a22b45
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34297760"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41706651"
 ---
 # <a name="retaining-large-files-attached-to-a-skype-for-business-meeting"></a>Mantenere file di grandi dimensioni allegati a una riunione Skype for business
 
-È possibile allegare file a una riunione Skype for business, che i partecipanti possono aprire e scaricare. I file allegati alle riunioni Skype for business vengono conservati nelle cassette postali di qualsiasi partecipante la cui cassetta postale viene inserita nel blocco per controversia legale, ha un criterio di conservazione di Office 365 applicato o viene inserito in un blocco associato a un caso di eDiscovery nella sicurezza di Office 365 &amp; Centro conformità. Questo contenuto viene salvato nelle cartelle **elementi ripristinabili** dei partecipanti nelle cassette postali.
+È possibile allegare file a una riunione Skype for business, che i partecipanti possono aprire e scaricare. I file allegati alle riunioni Skype for business vengono conservati nelle cassette postali di qualsiasi partecipante la cui cassetta postale è inserita nel blocco per controversia legale, ha un criterio di conservazione di Office 365 applicato o viene inserito in un blocco associato a un &amp; caso di eDiscovery nel centro conformità di sicurezza di Office 365. Questo contenuto viene salvato nelle cartelle **elementi ripristinabili** dei partecipanti nelle cassette postali.
   
 I file conservati nelle cassette postali in blocco vengono indicizzati e possono quindi essere cercati durante l'esecuzione di una ricerca &amp; contenuto nel centro conformità della sicurezza durante la ricerca nella cassetta postale di un partecipante. Tuttavia, i file allegati di dimensioni maggiori di 30 MB vengono divisi in due o più file più piccoli e salvati come file compressi (con estensione zip). Il *contenuto* di questi file più piccoli non viene indicizzato per la ricerca e potrebbe non essere restituito in una ricerca contenuto. Tuttavia, i *metadati* di questi file, ad esempio il nome e l'autore del file, vengono indicizzati per la ricerca e potrebbero essere restituiti in una ricerca contenuto.
   

@@ -14,15 +14,15 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-f1keywords:
+f1.keywords:
 - ms.teamsadmincenter.messagingpolicies.overview
 description: Informazioni sui criteri di messaggistica e sul modo in cui possono essere usati per controllare la messaggistica di chat in teams.
-ms.openlocfilehash: 590b0de09488a1d4e1cdaba3530a9a34894e45d0
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 676217cbd9101884e01cef1afd39203efc090f16
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40991561"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41707281"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in teams
 

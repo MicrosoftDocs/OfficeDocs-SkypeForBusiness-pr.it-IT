@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.BranchOfficeApplianceGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 86860416-7c9b-49af-b9d2-658c172852de
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni per un Survivable Branch Appliance o un Survivable Branch Server esistente, vengono presentate le sezioni seguenti:'
-ms.openlocfilehash: bcd1022c964a252ca08d4a8c000b224f61c42763
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 97f12828a8513ce284f4cd14c06de3496100c313
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194529"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41702391"
 ---
 # <a name="branch-office-appliance-general-settings-expander"></a>Espansione delle impostazioni generali di Survivable Branch Appliance
 
@@ -72,6 +72,6 @@ Puoi definire i gateway PSTN associati al Mediation Server collocato. Se sono gi
 Se si ha più di un gateway associato a un Mediation Server, il primo gateway associato sarà il gateway predefinito. Se è necessario scegliere un altro gateway come predefinito, selezionare il gateway desiderato e fare clic su **Rendi predefinito**.
 
 
-Per informazioni dettagliate su come definire e configurare le impostazioni per Survivable Branch Appliance o Survivable Branch Server, vedere soluzioni di resilienza dei [siti](https://technet.microsoft.com/library/1700f99b-709c-4e47-88eb-c0a5490e26e2.aspx)di succursale.
+Per informazioni dettagliate su come definire e configurare le impostazioni per Survivable Branch Appliance o Survivable Branch Server, vedere [soluzioni di resilienza dei siti di succursale](https://technet.microsoft.com/library/1700f99b-709c-4e47-88eb-c0a5490e26e2.aspx).
 
 

@@ -1,26 +1,26 @@
 ---
-title: Coda di Response Groups
+title: Coda di Response Group
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.RgsQueueMain
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 29bde940-6107-494f-9bee-b6ebfa135e41
 ROBOTS: NOINDEX, NOFOLLOW
 description: I gruppi di risposte sono costituiti da gruppi di agenti, code e flussi di lavoro. Le code dei gruppi di risposte contengono le chiamate a un gruppo di risposte finché un agente non risponde alla chiamata.
-ms.openlocfilehash: 3ab0e8d8aaf44c5debece47a0507ae47c3d661f0
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: fcd0e916cf57fa1ee1830e9d64c540b2dca3a20d
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194314"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41704389"
 ---
-# <a name="response-groups-queue"></a>Coda di Response Groups
+# <a name="response-groups-queue"></a>Coda di Response Group
 
 I gruppi di risposte sono costituiti da gruppi di agenti, code e flussi di lavoro. Le code dei gruppi di risposte contengono le chiamate a un gruppo di risposte finché un agente non risponde alla chiamata.
 

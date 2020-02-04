@@ -10,18 +10,18 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-voice
-f1keywords: ms.teamsadmincenter.networktopology.overview
+f1.keywords: ms.teamsadmincenter.networktopology.overview
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come configurare le impostazioni di rete per le funzionalità vocali di cloud in Microsoft teams.
-ms.openlocfilehash: 87cdf39e03999a9e249b7ec40af7ea2ad8612e69
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: d7ed6780edf578c15580f1f9690fcbf5d9e9658e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40991641"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708502"
 ---
 # <a name="manage-your-network-topology-for-cloud-voice-features-in-microsoft-teams"></a>Gestire la topologia di rete per le funzionalità vocali di cloud in Microsoft Teams
 

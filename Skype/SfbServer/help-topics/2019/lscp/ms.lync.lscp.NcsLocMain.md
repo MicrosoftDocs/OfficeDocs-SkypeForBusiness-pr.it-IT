@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.NcsLocMain
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 5530cf17-4520-40b5-ba70-c62692685048
 ROBOTS: NOINDEX, NOFOLLOW
 description: I criteri percorso determinano se il servizio Enhanced 9-1-1 (E9-1-1) è abilitato e come viene usato, nonché come vengono usate le informazioni sulla posizione per utenti e contatti.
-ms.openlocfilehash: e86bf3c37350f0e7e571068eb276aa0b237dc86c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 82126acf09ed4e0cd1b98b20f22760f23038226c
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36192131"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41704611"
 ---
 # <a name="location-policy"></a>Criteri percorso
 

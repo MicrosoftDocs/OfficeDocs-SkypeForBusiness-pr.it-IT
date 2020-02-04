@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployForestPrepIntro
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 71314efe-136b-4970-a411-6282d1cb5b87
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per avviare l'attività Prepara foresta, fare clic su Avanti. L'attività prepara Forest consente di creare impostazioni globali e di creare gruppi universali per l'uso da Skype for Business Server.
-ms.openlocfilehash: e12cf6c3f2182d4f5fb0dc874f5809b5d7bb5d46
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 7a96a0a0ef50d627ff462ed79fd3259046e1da6e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187520"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41705521"
 ---
 # <a name="prepare-current-forrest-intro"></a>Preparare la foresta corrente (Intro)
  

@@ -14,7 +14,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1_keywords:
+f1.keywords:
 - ms.lync.lac.UsersExternalAccess
 - ms.lync.lac.UsersGeneralOptions
 - ms.lync.lac.UsersLyncToPhoneMoreInfo
@@ -22,12 +22,12 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: 'Informazioni su come modificare le impostazioni di Skype for business per singoli utenti, ad esempio: conferenze audio e video, registrazione di chiamate e riunioni. '
-ms.openlocfilehash: 8fa6af4099238f9ab908de2ea8c37340f93c3dff
-ms.sourcegitcommit: 75b2cd0d2d39c50dc1e1513860841e2ae3f84324
+ms.openlocfilehash: a384acdadb6ca4df621d45abdde4157df2029619
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34494170"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41706511"
 ---
 # <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti
 
@@ -99,7 +99,7 @@ Per configurare queste impostazioni in blocco, usare PowerShell. Vedere [configu
 |**Nome del provider** <br/> |Scegliere il provider dall'elenco.  <br/> |
 |**Numero a pagamento** (obbligatorio) <br/> |Per gli ACP di terze parti, questi numeri di telefono sono quelli ricevuti dal provider di servizi di audioconferenza. Se l'utente sta utilizzando Microsoft come provider di servizi di audioconferenza, questi saranno i numeri impostati sul ponte per audioconferenza. Formattare i numeri che si desidera vengano visualizzati in richieste di riunione di Skype for business e Microsoft teams.  <br/> |
 |**Numero verde** <br/> |Per gli ACP di terze parti, questi numeri di telefono sono quelli ricevuti dal provider di servizi di audioconferenza. Se l'utente sta utilizzando Microsoft come provider di servizi di audioconferenza, questi saranno i numeri impostati sul ponte per audioconferenza. Formattare i numeri che si desidera vengano visualizzati in richieste di riunione di Skype for business e Microsoft teams.  <br/> |
-|**ID conferenza e pin** necessaria <br/> |Il PIN partecipante o il codice conferenza usato per partecipare alle riunioni pianificate da questo utente e fornite da un provider di servizi di audioconferenza di terze parti. Se l'utente usa Microsoft come provider di servizi di audioconferenza, non sarà necessario.  <br/> |
+|**ID conferenza e pin** (obbligatorio) <br/> |Il PIN partecipante o il codice conferenza usato per partecipare alle riunioni pianificate da questo utente e fornite da un provider di servizi di audioconferenza di terze parti. Se l'utente usa Microsoft come provider di servizi di audioconferenza, non sarà necessario.  <br/> |
    
 Per configurare queste impostazioni in blocco, usare PowerShell. Vedere [impostare i numeri di telefono inclusi in invita](../audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites.md) [configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
 

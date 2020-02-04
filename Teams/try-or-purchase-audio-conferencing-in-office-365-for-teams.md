@@ -16,17 +16,17 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-f1keywords:
+f1.keywords:
 - ms.lync.lac.CpcGettingStarted
 ms.custom:
 - Audio Conferencing
 description: 'Vedi come provare o acquistare le licenze di Audioconferenza (conferenze PSTN) per Office 365 per configurare le conferenze telefoniche a cui gli utenti possono connettersi. '
-ms.openlocfilehash: ce20d72ff7d4d797c8e0689472cd483c5f06036b
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 527455cc0f4d1a818c18271e3cf9bbafb04e2794
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571492"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708642"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365-for-microsoft-teams"></a>Provare o acquistare servizi di audioconferenza in Office 365 per Microsoft Teams
 
@@ -98,6 +98,6 @@ La procedura seguente è **facoltativa**, ma molti amministratori preferiscono e
 
 [Abilitare i team nell'organizzazione](office-365-set-up.md)
 
-[Numeri di telefono per i servizi di audioconferenza](phone-numbers-for-audio-conferencing-in-teams.md)
+[Numeri di telefono per Audioconferenza](phone-numbers-for-audio-conferencing-in-teams.md)
 
 [Impostare le opzioni per riunioni online e conferenze telefoniche](https://support.office.com/article/DCD1CA39-0C1F-466C-9573-F04138FEF5E2)

@@ -12,18 +12,18 @@ description: Informazioni su come gestire le impostazioni dell'utente e dell'int
 localization_priority: Normal
 ms.custom:
 - NewAdminCenter_Update
-f1keywords: ms.teamsadmincenter.dashboard.helparticle.manageteamsnewadmincenter
+f1.keywords: ms.teamsadmincenter.dashboard.helparticle.manageteamsnewadmincenter
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
 - Skype for Business Online
-ms.openlocfilehash: 3d856e0cb9792e4e83dad9daa3e0716ffd3981c8
-ms.sourcegitcommit: 57304ac641931eed87e649555fd5eb5e58732dc5
+ms.openlocfilehash: 1a914fbfe393c01d7f2024c2890e11e0d8678e23
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39679246"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708374"
 ---
 <a name="manage-teams-during-the-transition-to-the-new-microsoft-teams-admin-center"></a>Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
 ======================================================
@@ -54,11 +54,11 @@ La tabella seguente identifica le sezioni dell'esperienza teams che sono state m
 |Impostazioni per tipo di utente/licenza     |Attivare o disattivare Microsoft teams per tutti gli utenti          |Deprecato<sup>1</sup>        |         |
 |Team e canali     |         |Reindirizza alla gestione dei gruppi di Azure Active Directory (lo stesso dell'esperienza corrente).              |Utente         |
 |Team e canali     |         |Reindirizza alla gestione del gruppo AAD (lo stesso dell'esperienza corrente).             |Utente          |
-|Applicazioni|Abilitare le nuove app esterne per impostazione predefinita|Impostazioni dell'app a livello di organizzazione|Tenant|
-|Applicazioni|Consentire le app esterne|Impostazioni dell'app a livello di organizzazione|Tenant|
-|Applicazioni|Consenti sideload di app esterne<sup>2</sup>|[TeamsAppSetupPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsappsetuppolicy?view=skype-ps)|Utente|
-|Applicazioni|App predefinite<sup>3</sup>|TeamsAppPermissionPolicy|Utente|
-|Applicazioni|App esterne<sup>3</sup>|TeamsAppPermissionPolicy|Utente|
+|App|Abilitare le nuove app esterne per impostazione predefinita|Impostazioni dell'app a livello di organizzazione|Tenant|
+|App|Consentire le app esterne|Impostazioni dell'app a livello di organizzazione|Tenant|
+|App|Consenti sideload di app esterne<sup>2</sup>|[TeamsAppSetupPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsappsetuppolicy?view=skype-ps)|Utente|
+|App|App predefinite<sup>3</sup>|TeamsAppPermissionPolicy|Utente|
+|App|App esterne<sup>3</sup>|TeamsAppPermissionPolicy|Utente|
 |Chiamate e riunioni     |Consentire la pianificazione per riunioni private         |[TeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps)         |Utente          |
 |Chiamate e riunioni     |Consenti Meetup canale ad-hoc         |[TeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps)         |Utente          |
 |Chiamate e riunioni     |Consentire la pianificazione per le riunioni di canale         |[TeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps)         |Utente          |

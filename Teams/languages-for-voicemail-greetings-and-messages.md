@@ -16,16 +16,17 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Phone System
 description: 'Scopri quali lingue puoi impostare in Skype for Business per i messaggi di sistema predefiniti. '
-ms.openlocfilehash: bae2fccadea6a001c78a8d1f4a1ffabf2f91bae8
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 65b17d13ba0e7c1091b3f55d56a90b4100a4746b
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570714"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41707832"
 ---
 # <a name="languages-for-voicemail-greetings-and-messages"></a>Lingua per i messaggi e i saluti della segreteria telefonica
 
@@ -38,7 +39,7 @@ Per cambiare la lingua usata da Skype for Business per i messaggi di saluto dell
 |**Lingua** <br/> |**Paese/area geografica** <br/> |**Codice della lingua** <br/> |**Disponibile da mostrare agli utenti in una e-mail?** <br/> |**Disponibile quando l'utente chiama?** <br/> |**Trascrizione disponibile?** <br/> |
 |Arabo <br/> |Egitto  <br/> |ar-EG  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Catalano  <br/> |Catalano  <br/> |ca-ES  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Cinese (semplificato)  <br/> |Cina  <br/> |zh-hans  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
+|Cinese (semplificato)  <br/> |Cina  <br/> |zh-hans  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Cinese (Hong Kong)  <br/> |Cina  <br/> |zh-hk  <br/> |Sì, ma viene utilizzato il cinese (tradizionale) (zh-hant).  <br/> | Sì <br/> |Sì, ma viene utilizzato il cinese (tradizionale) (zh-hant).  <br/> |
 |Cinese (tradizionale)  <br/> |Taiwan  <br/> |zh-hant  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Croato<br/> |Croazia  <br/> |HR-HR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
@@ -52,28 +53,28 @@ Per cambiare la lingua usata da Skype for Business per i messaggi di saluto dell
 |Inglese  <br/> |Stati Uniti  <br/> |en-US  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Finlandese  <br/> |Finlandia  <br/> |fi-FL  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Francese  <br/> |Canada  <br/> |fr-CA  <br/> |Sì, ma viene utilizzato il francese continentale (fr-FR).  <br/> |Sì  <br/> |Sì, ma viene utilizzato il francese continentale (fr-FR).  <br/> |
-|Francese  <br/> |Francia  <br/> |fr-FR  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Tedesco  <br/> |Germania  <br/> |de-DE  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
+|Francese  <br/> |Francia  <br/> |fr-FR  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Tedesco  <br/> |Germania  <br/> |de-DE  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Greco <br/> |Grecia  <br/> |El-GR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Ungherese <br/> |Ungheria  <br/> |HU-HU  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Indonesiano <br/> |Indonesia  <br/> |ID-ID  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Italiano  <br/> |Italia  <br/> |it-IT  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Giapponese  <br/> |Giappone  <br/> |ja-JP  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
+|Giapponese  <br/> |Giappone  <br/> |ja-JP  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Coreano  <br/> |Coreano  <br/> |ko-KR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Norvegese (Bokmål)  <br/> |Norvegia  <br/> |nb-NO  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |No  <br/> |
 |Polacco  <br/> |Polonia  <br/> |pl-PL  <br/> |Sì  <br/> | Sì <br/> |No  <br/> |
-|Portoghese  <br/> |Brasile  <br/> |pt-BR  <br/> |Sì, ma viene utilizzato il portoghese continentale (pt-PT).  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Portoghese  <br/> |Portogallo  <br/> |pt-PT  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Sì, ma viene utilizzato il portoghese brasiliano (pt-BR).  <br/> |
-|Rumeno<br/> |Romania  <br/> |ro-RO  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Russo  <br/> |Russia  <br/> |ru-RU  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Slovacco <br/> |Slovacchia  <br/> |SK-SK  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Sloveno <br/> |Slovenia  <br/> |SL-SI  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Spagnolo  <br/> |Spagna  <br/> |es-ES  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Portoghese  <br/> |Brasile  <br/> |pt-BR  <br/> |Sì, ma viene utilizzato il portoghese continentale (pt-PT).  <br/> |Sì  <br/> |Sì  <br/> |
+|Portoghese  <br/> |Portogallo  <br/> |pt-PT  <br/> |Sì  <br/> |Sì  <br/> |Sì, ma viene utilizzato il portoghese brasiliano (pt-BR).  <br/> |
+|Rumeno<br/> |Romania  <br/> |ro-RO  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Russo  <br/> |Russia  <br/> |ru-RU  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Slovacco <br/> |Slovacchia  <br/> |SK-SK  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Sloveno <br/> |Slovenia  <br/> |SL-SI  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Spagnolo  <br/> |Spagna  <br/> |es-ES  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Spagnolo  <br/> |Messico  <br/> |es-MX  <br/> |Sì, ma viene utilizzato lo spagnolo continentale (es-ES).  <br/> |Sì  <br/> |Sì, ma viene utilizzato lo spagnolo continentale (es-ES).  <br/> |
-|Svedese  <br/> |Svezia  <br/> |sv-SE  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Tailandese <br/> |Thailandia  <br/> |th-TH  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Turco  <br/> |Turchia  <br/> |TR-TR  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Vietnamita <br/> |Vietnam  <br/> |vi-VN  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
+|Svedese  <br/> |Svezia  <br/> |sv-SE  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Tailandese <br/> |Thailandia  <br/> |th-TH  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Turco  <br/> |Turchia  <br/> |TR-TR  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Vietnamita <br/> |Vietnam  <br/> |vi-VN  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)

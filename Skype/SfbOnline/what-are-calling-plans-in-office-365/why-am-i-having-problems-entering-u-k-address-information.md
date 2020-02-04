@@ -16,17 +16,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords:
+f1.keywords:
 - ms.lync.lac.CivicAddressGBSyntaxError
 ms.custom:
 - Calling Plans
 description: Ecco alcuni motivi per cui potresti avere problemi a ottenere l'indirizzo o gli indirizzi da convalidare correttamente nel Regno Unito (UK).
-ms.openlocfilehash: e710f2ef502bb264677bc89d5cdebb2584d48679
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0d854f41c13f2f34a0582b70d85ca841b4ccc53a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34290689"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41705861"
 ---
 # <a name="why-am-i-having-problems-entering-uk-address-information"></a>Perché si verificano problemi con l'immissione in UK informazioni sull'indirizzo?
 
@@ -99,8 +99,8 @@ In caso di problemi con l'immissione del codice postale, tenere presente quanto 
     
 |**Formato**|**Esempio**|
 |:-----|:-----|
-|AA # _ # AA #  <br/> |EC3B 2BD  <br/> |
-|A # _ # AA #  <br/> |E1W 1AP  <br/> |
+|AA # A_ # AA  <br/> |EC3B 2BD  <br/> |
+|UN # A_ # AA  <br/> |E1W 1AP  <br/> |
 |A # _ # AA  <br/> |2AG F1  <br/> |
 |UN # #_ # AA  <br/> |C44 8HT  <br/> |
 |AA # _ # AA  <br/> |DR3 6HG  <br/> |

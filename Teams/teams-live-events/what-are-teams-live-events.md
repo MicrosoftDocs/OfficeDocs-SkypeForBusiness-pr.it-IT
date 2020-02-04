@@ -11,17 +11,17 @@ ms.reviewer: sonua
 audience: admin
 search.appverid: MET150
 description: Scopri come gli eventi dinamici consentono agli utenti di trasmettere video e contenuti a un vasto pubblico online in teams, Yammer e Stream.
-f1keywords:
+f1.keywords:
 - ms.teamsadmincenter.dashboard.helparticle.liveevents
 - ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad278fe758c07c734d71f9179386db167ad8f4fc
-ms.sourcegitcommit: 013190ad10cdc02ce02e583961f433d024d5d370
+ms.openlocfilehash: 9f0e94ef7a0f71930c2ae840a19db03f4844ba34
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41634879"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708342"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Che cosa sono gli eventi di Microsoft teams Live?
 

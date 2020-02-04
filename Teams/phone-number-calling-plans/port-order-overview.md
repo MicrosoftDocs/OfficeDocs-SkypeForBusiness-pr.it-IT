@@ -1,5 +1,5 @@
 ---
-title: Cos'è un ordine di trasferimento?
+title: Cos'è un ordine di portabilità?
 ms.author: v-lanac
 author: lanachin
 manager: serdars
@@ -12,18 +12,18 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: ms.teamsadmincenter.voice.phonenumbers.porting.overview
+f1.keywords: ms.teamsadmincenter.voice.phonenumbers.porting.overview
 ms.custom:
 - Calling Plans
 description: Informazioni generali sugli ordini di trasferimento e su come trasferire i numeri di telefono dal provider di servizi in teams.
-ms.openlocfilehash: 4edaac3722e8fc37ca856b240171f923a0a99f66
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 3f75acf8711838b159bacfe11169e500273eaf01
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925663"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708762"
 ---
-# <a name="whats-a-port-order"></a>Cos'è un ordine di trasferimento?
+# <a name="whats-a-port-order"></a>Cos'è un ordine di portabilità?
 
 Se si ha un provider o un gestore di servizi telefonici e si hanno già numeri di telefono per gli utenti o i servizi, è necessario creare un "*ordine*di trasferimento" per trasferire i numeri di telefono a Microsoft teams. Quando i numeri vengono convertiti, è possibile assegnare i numeri di telefono agli utenti e ai servizi, ad esempio le conferenze audio (per i Bridge di conferenza), gli operatori automatici e le code di chiamata.
   
@@ -161,7 +161,7 @@ Ecco gli errori più comuni che i clienti fanno quando i numeri di porta. Salvar
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Qual è lo stato degli ordini di trasferimento?](port-order-status.md)
+- [Qual è lo stato degli ordini di portabilità?](port-order-status.md)
 - [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 - [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 - [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)

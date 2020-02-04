@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.PersistentChatMachinesExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 15bc1c8f-71bd-4d66-bba1-cac0f2fe90bf
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile attivare o disattivare un server di chat persistente distribuito o un pool di server di chat persistente usando i server o i pool elencati nelle impostazioni dello stato del computer. Selezionare un server o pool dall'elenco e fare clic sul pulsante Rendi attivo per impostare un server o pool come attivo.
-ms.openlocfilehash: 9d5c886b253e5e71cec9ee9c9d10e49dc95df464
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 036083f71a439c5a4720522d247353d83d9047e0
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36196029"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41701751"
 ---
 # <a name="persistent-chat-machines-expander"></a>Espansione dei computer Persistent Chat
 

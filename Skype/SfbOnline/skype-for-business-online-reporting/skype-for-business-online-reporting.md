@@ -14,22 +14,23 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Reporting
 description: 'Use this reference guide to learn about Skype for Business Online reporting and what info is available. '
-ms.openlocfilehash: 77a3068ef1bf8038d2d433fce483e53824668684
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: 24574fdc572eeca323487b40ff9a1d5874f4f5ea
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793043"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41705951"
 ---
 # <a name="skype-for-business-online-reporting"></a>Creazione di report di Skype for Business Online
 
-Come amministratore per l'organizzazione, sarebbe utile avere un elenco completo di tutti i diversi report disponibili in Skype for business online. Include tutti i report e le informazioni che è possibile ottenere con ciascun report.
+Come amministratore per l'organizzazione, sarebbe utile avere un elenco completo di tutti i diversi report disponibili in Skype for business online. Sono inclusi tutti i diversi report e le informazioni che è possibile ottenere con ogni report.
   
-Per accedere ai report di Skype for business online, accedere all'interfaccia di amministrazione di Microsoft 365 usando l'account utente e la password. Per visualizzare i report, è necessario che all'account utilizzato per l'accesso sia assegnato il ruolo Amministratore globale o Amministratore dei servizi Skype for Business delegato.
+Per accedere ai report di Skype for business online, accedere all'interfaccia di amministrazione di Microsoft 365 usando l'account utente e la password. L'account usato per accedere deve essere assegnato al ruolo di amministratore globale oppure delegare il ruolo di amministratore del servizio Skype for business per visualizzare i report.
   
 > [!NOTE]
 > Per verificare le autorizzazioni, nell'interfaccia di amministrazione > utenti**attivi**degli **utenti** > . Fare clic sul nome visualizzato dell'utente e quindi fare clic su **modifica** e una pagina delle proprietà dell'account, fare clic su **ruoli**

@@ -1,5 +1,5 @@
 ---
-title: Limitazioni e restrizioni di chiamata senza pedaggio
+title: Restrizioni e limitazioni per le chiamate verso numeri verdi
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -16,19 +16,20 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: d9cf7bf601237552b397413c65875707157a73c9
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 41bc08f37d96674a88ad4d180198cba189780846
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571652"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708212"
 ---
-# <a name="toll-free-dialing-limitations-and-restrictions"></a>Limitazioni e restrizioni di chiamata senza pedaggio
+# <a name="toll-free-dialing-limitations-and-restrictions"></a>Restrizioni e limitazioni per le chiamate verso numeri verdi
 
 Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese o area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina che contiene la posizione in cui è disponibile il servizio a pagamento gratuito, inclusi dettagli, restrizioni e limiti specifici. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
   
@@ -60,7 +61,7 @@ Se si è pronti, selezionare un paese o un'area geografica:
 > - [Francia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-france.md)
 > - [Germania](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-germany.md)
 > - [Honduras](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-honduras.md)
-> - [Hong Kong - R.A.S.](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-hong-kong.md)
+> - [RAS di Hong Kong](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-hong-kong.md)
 > - [Ungheria](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-hungary.md)
 > - [India](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-india.md)
 > - [Indonesia](toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-indonesia.md)

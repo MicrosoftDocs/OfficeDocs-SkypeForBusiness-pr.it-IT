@@ -11,7 +11,7 @@ description: Informazioni dettagliate sulle opzioni e le modalità di coesistenz
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Teams-upgrade-guidance
-f1keywords:
+f1.keywords:
 - ms.teamsadmincenter.orgwidesettings.teamsfeatures.upgradetoteamsarticle
 - ms.teamsadmincenter.upgradeoverride.learnmore
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5de243402cd5694b2e4a498f7ff7650cd8f49f4a
-ms.sourcegitcommit: 2e005b335b1566c99b93fc311498702838466324
+ms.openlocfilehash: 6d9f4583e3ea15a073e0dbbebbebaee9db64678d
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931644"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41707531"
 ---
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di definizione del progetto](media/upgrade-banner-project-definition.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di definizione del progetto")
 
@@ -99,9 +99,9 @@ La tabella seguente riepiloga l'esperienza dei team per la modalità Islands e T
 
 | Esperienza Teams | In modalità Isole | In modalità TeamsOnly |
 |:------------------ | :------------------- | :------------------ |
-| Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Team |
-| Chiamate PSTN ricevute in: | Skype for business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.    | Team |   
- |Presenza  | La presenza in Skype for business e teams è indipendente. Gli utenti possono visualizzare stati diversi per gli stessi utenti delle isole, a seconda del client che usano. | La presenza si basa esclusivamente sulle attività dell'utente in teams. Tutti gli altri utenti, indipendentemente dal client che usano, vedono quella presenza. | 
+| Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Teams |
+| Chiamate PSTN ricevute in: | Skype for business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.    | Teams |   
+ |Icone di presenza  | La presenza in Skype for business e teams è indipendente. Gli utenti possono visualizzare stati diversi per gli stessi utenti delle isole, a seconda del client che usano. | La presenza si basa esclusivamente sulle attività dell'utente in teams. Tutti gli altri utenti, indipendentemente dal client che usano, vedono quella presenza. | 
  | Pianificazione delle riunioni   | Gli utenti possono pianificare le riunioni in teams o in Skype for business. Vedranno entrambi i componenti aggiuntivi in Outlook. |   Gli utenti pianificano solo riunioni in teams. Solo il componente aggiuntivo teams è disponibile in Outlook. | 
 
 La tabella seguente riepiloga i pro e i contro dell'uso del metodo di funzionalità sovrapposte per eseguire la migrazione dell'organizzazione a teams.
@@ -143,10 +143,10 @@ In alternativa, l'amministratore può prima di tutto spostare solo la pianificaz
 
 |Esperienza Teams  |In modalità SfBWithTeamsCollab |In modalità SfBWithTeamsCollabAndMeetings |In modalità TeamsOnly  |
 |---------|---------|---------|---------|
-|Chat in arrivo e chiamate VOIP dagli utenti dell'organizzazione ricevute in:     | Skype for business        | Skype for business       | Team        |
-|Chiamate PSTN ricevute in:     | Skype for business        |Skype for business         | Team        |
-|Presenza     | Skype for business        |Skype for business         | Team        |
-|Pianificazione delle riunioni     | Skype for business         | Team        | Team        |
+|Chat in arrivo e chiamate VOIP dagli utenti dell'organizzazione ricevute in:     | Skype for business        | Skype for business       | Teams        |
+|Chiamate PSTN ricevute in:     | Skype for business        |Skype for business         | Teams        |
+|Icone di presenza     | Skype for business        |Skype for business         | Teams        |
+|Pianificazione delle riunioni     | Skype for business         | Teams        | Teams        |
 
 
 La tabella seguente riepiloga i pro e i contro dell'uso delle modalità Skype for business come passaggio di transizione verso la modalità TeamsOnly.

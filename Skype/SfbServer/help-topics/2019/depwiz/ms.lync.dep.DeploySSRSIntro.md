@@ -1,26 +1,26 @@
 ---
-title: SQL Server Reporting Services (introduzione)
+title: SQL Server Reporting Services (Intro)
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeploySSRSIntro
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f3cda686-6301-419c-af68-b49cc785e5fc
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ogni pool di front end e Survivable Branch Appliance possono avere un solo server di monitoraggio associato. Quando il monitoraggio è abilitato per il sito, il server di monitoraggio fornisce la raccolta e la creazione di dati della registrazione dei dettagli delle chiamate (CDR) e della qualità delle esperienze (QoE).
-ms.openlocfilehash: a12f5fd970552cb319f3f67a6e8d2ad7587c496c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e9815ce9ea47e1050cc3e26d9add10d11caab030
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188075"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41705291"
 ---
-# <a name="sql-server-reporting-services-intro"></a>SQL Server Reporting Services (introduzione)
+# <a name="sql-server-reporting-services-intro"></a>SQL Server Reporting Services (Intro)
  
 Ogni pool di front end e Survivable Branch Appliance possono avere un solo server di monitoraggio associato. Quando il monitoraggio è abilitato per il sito, il server di monitoraggio fornisce la raccolta e la creazione di dati della registrazione dei dettagli delle chiamate (CDR) e della qualità delle esperienze (QoE).
   

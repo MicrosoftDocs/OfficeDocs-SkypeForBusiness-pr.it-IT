@@ -18,16 +18,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: 66c16b5b8afc7f040639f3f6f0450bffe129fe9a
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: b4fa22ef2e396233b0be3b2d6aec71a336531b7e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572967"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41707964"
 ---
 # <a name="toll-free-dialing-restrictions-in-cyprus"></a>Restrizioni di connessione gratuita a Cipro
 
@@ -47,7 +48,7 @@ ms.locfileid: "37572967"
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Limitazioni e restrizioni di chiamata senza pedaggio](../toll-free-dialing-limitations-and-restrictions.md)
+[Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 

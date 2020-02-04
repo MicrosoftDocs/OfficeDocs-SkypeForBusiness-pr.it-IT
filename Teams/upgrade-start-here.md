@@ -14,18 +14,30 @@ ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
+f1.keywords:
+- ms.teamsadmincenter.dashboard.helparticle.journeyskypeforbusinessteams
+- ms.teamsadmincenter.dashboard.trainingvideos.journeytoteams
+- ms.teamsadmincenter.dashboard.widget.upgrade.planning
+- ms.teamsadmincenter.dashboard.widget.upgrade.pause
+- ms.teamsadmincenter.dashboard.widget.upgrade.rolledback
+- ms.teamsadmincenter.users.teamsupgradestatuscolumn
+- ms.teamsadmincenter.users.teamsupgradepage
+- ms.teamsadmincenter.dashboard.helparticle.quickstartteamsadmin
+- ms.teamsadmincenter.dashboard.helparticle.upgradetoteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 102572c8ef25ff93ca66a92c94e4ff244918ad31
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: cdaed37210283152d35d2b4d73b9cc03b884ec07
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236049"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41707702"
 ---
 # <a name="getting-started-with-your-microsoft-teams-upgrade"></a>Introduzione all'aggiornamento di Microsoft Teams
 
 Congratulazioni per l'aggiornamento in sospeso da Skype for business a Microsoft teams. Sia che tu abbia appena iniziato con teams, che usi già teams insieme a Skype for business o che sia pronto per l'aggiornamento, desideriamo assicurarti di avere tutto ciò che ti serve per passare a un viaggio di successo in teams.
+
+Se si esegue l'aggiornamento da Skype for business online a teams o da un ambiente locale di Skype for business a teams, il Framework di aggiornamento guiderà l'utente nel processo basato sullo scenario aziendale.
 
 ## <a name="why-upgrade-to-microsoft-teams"></a>Perché eseguire l'aggiornamento a Microsoft Teams?
 
@@ -41,7 +53,7 @@ Sì, Microsoft offre diverse opzioni per l'uso di Skype for business online e te
  
 ## <a name="how-is-microsoft-helping-customers-with-their-upgrade-to-teams"></a>In che modo Microsoft sta aiutando i clienti a eseguire l'aggiornamento a teams? 
 
-Microsoft si impegna ad aiutare la transizione da Skype for business a teams il successo. Microsoft fornisce indicazioni robuste basate su un Framework di successo di aggiornamento end-to-end, progettato per facilitare la pianificazione e l'esecuzione dell'aggiornamento a teams. Le nostre linee guida sono progettate per ogni fase del viaggio di aggiornamento, sia che tu abbia appena iniziato a pianificare, che abbia già eseguito teams insieme a Skype for business o sia pronto per l'aggiornamento ai team.
+Microsoft si impegna a migliorare la transizione da Skype for business a teams. Microsoft fornisce indicazioni robuste basate su un Framework di successo di aggiornamento end-to-end, progettato per facilitare la pianificazione e l'esecuzione dell'aggiornamento a teams. Le nostre linee guida sono progettate per ogni fase del viaggio di aggiornamento, sia che tu abbia appena iniziato a pianificare, che abbia già eseguito teams insieme a Skype for business o sia pronto per l'aggiornamento ai team.
 
 Per facilitare la pianificazione e l'implementazione dell'aggiornamento, Microsoft ospita laboratori di pianificazione dell'aggiornamento interattivo e dinamici, progettati per familiarizzare con il Framework di aggiornamento, condividere informazioni dettagliate sulla preparazione degli utenti per il eseguire l'aggiornamento e identificare il percorso corretto per l'organizzazione durante il viaggio in teams. Unisciti a noi per una sessione panoramica sulla [https://aka.ms/SkypeToTeamsPlanning](https://aka.ms/SkypeToTeamsPlanning)pianificazione dell'aggiornamento:.
  

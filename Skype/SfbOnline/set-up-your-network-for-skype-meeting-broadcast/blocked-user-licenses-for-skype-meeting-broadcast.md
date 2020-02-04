@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - SMB
 description: Purtroppo, ci sono alcune licenze utente bloccate quando l'utente passa a https://broadcast.skype.com Skype meeting broadcast e vuole usarlo. Se un utente vede questo messaggio, è stata assegnata una delle licenze bloccate. Se si vuole ancora usarla, assegnarle un'altra licenza di Office 365.
-ms.openlocfilehash: 52e6936e0dd91c896d0eea397f6352ab3b453c64
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: a1284cbb6126a0a6d31ab64942f04f9e40c04fe6
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34299583"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41706141"
 ---
 # <a name="blocked-user-licenses-for-hosting-skype-meeting-broadcast"></a>Licenze utente bloccate per l'hosting di Skype meeting broadcast
 

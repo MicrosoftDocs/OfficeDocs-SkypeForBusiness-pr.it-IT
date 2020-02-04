@@ -1,26 +1,26 @@
 ---
-title: Associa Mediation Server con Edge
+title: Associare Mediation Server con Edge
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AssociateMediationServerWithEdgePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 65c5d93c-9f0d-4a60-8bd1-d05eb6bc2088
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per definire un Mediation Server, specificare le impostazioni che associano il Mediation Server a un server front-end e a un server perimetrale o a un pool. Per associare il server o il pool di mediazione a un server perimetrale o a un pool di Edge Server, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 5fb1c23fc53e0352c42360aac1dd38115209d739
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: a575586ba31a92b81da47e4e0fe1014b290570e7
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189191"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41702461"
 ---
-# <a name="associate-mediation-server-with-edge"></a>Associa Mediation Server con Edge
+# <a name="associate-mediation-server-with-edge"></a>Associare Mediation Server con Edge
  
 Per definire un Mediation Server, specificare le impostazioni che associano il Mediation Server a un server front-end e a un server perimetrale o a un pool. Per associare il server o il pool di mediazione a un server perimetrale o a un pool di Edge Server, eseguire le operazioni seguenti:
   

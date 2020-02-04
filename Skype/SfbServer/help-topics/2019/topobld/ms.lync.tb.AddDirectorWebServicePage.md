@@ -1,26 +1,26 @@
 ---
-title: Aggiungere un servizio Web Director
+title: Aggiungere il servizio Web Director
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddDirectorWebServicePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3ed3bdde-c3b5-4fe9-a96b-37099cbd6234
 ROBOTS: NOINDEX, NOFOLLOW
 description: L'URL di base è l'identità dei servizi Web per l'URL, meno il https://. Ad esempio, se l'URL completo per i servizi Web del pool è https://pool01.contoso.net, l'URL di base è pool01.contoso.NET.
-ms.openlocfilehash: 99307086b33b7a3b300fb32d48df51af5de3ad1e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 140012c548152f9473308b3be17f95adf53e918b
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195653"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41703181"
 ---
-# <a name="add-director-web-service"></a>Aggiungere un servizio Web Director
+# <a name="add-director-web-service"></a>Aggiungere il servizio Web Director
  
 L'URL di base è l'identità dei servizi Web per l'URL, meno il https://. Ad esempio, se l'URL completo per i servizi Web del pool è https://pool01.contoso.net, l'URL di base è pool01.contoso.NET.
   

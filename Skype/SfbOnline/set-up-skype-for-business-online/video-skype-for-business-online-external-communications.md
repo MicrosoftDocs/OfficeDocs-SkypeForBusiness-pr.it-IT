@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Setup
 description: 'Informazioni su come configurare le comunicazioni esterne di Skype for business online per gli utenti in grado di comunicare con contatti Skype esterni. '
-ms.openlocfilehash: b3f6af94e68042af220079dad23cdefad8209f02
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 65def1712c916ff670457a99dd114dcc405683be
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35418078"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41706281"
 ---
 # <a name="video-skype-for-business-online-external-communications"></a>Video: Comunicazioni esterne di Skype for Business online
 
@@ -39,7 +40,7 @@ Configurare le comunicazioni esterne di Skype for business online in modo che gl
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare le comunicazioni esterne di Skype for business online](https://support.microsoft.com/en-us/help/10041/set-up-lync-online-external-communications) (procedura guidata)
 
-[Consentire agli utenti di contattare utenti Skype for Business esterni](allow-users-to-contact-external-skype-for-business-users.md)
+[Permettere agli utenti di contattare utenti di Skype for Business esterni](allow-users-to-contact-external-skype-for-business-users.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
 

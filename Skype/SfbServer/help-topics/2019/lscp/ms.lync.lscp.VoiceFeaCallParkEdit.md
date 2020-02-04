@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.VoiceFeaCallParkEdit
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e834d485-d25a-4eec-9090-2b8534ecf65d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli intervalli di numeri di parcheggio per le chiamate definiscono i numeri temporanei in cui vengono mantenute le chiamate parcheggiate finché qualcuno non li recupera o ne esce fuori.
-ms.openlocfilehash: 7257327081be46f343ef8aeb6076ad9a788f46bb
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5f32cccf70593ffe480cbcba028974cc1dc91046
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191690"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41703931"
 ---
 # <a name="call-park-create-new-or-edit-existing"></a>Parcheggio di chiamata: creare un nuovo intervallo di codici orbit o modificarne uno esistente
 

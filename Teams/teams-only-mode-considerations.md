@@ -12,18 +12,18 @@ description: Preparare l'aggiornamento alla modalità solo Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Teams-upgrade-guidance
-f1keywords: ms.teamsadmincenter.orgwidesettings.teamsupgrade.upgradetoteams
+f1.keywords: ms.teamsadmincenter.orgwidesettings.teamsupgrade.upgradetoteams
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 81609298a580594e8c54d185d7dea3be86824139
-ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
+ms.openlocfilehash: 89aded4747bc0a3f41fd78ce1bdced7b3363775b
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435112"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708312"
 ---
 # <a name="teams-only-mode-considerations"></a>Considerazioni sulla modalità solo Teams
 
@@ -31,7 +31,7 @@ Se si è un amministratore del tenant di Office 365, si vedrà ora l'opzione per
 
 L'aggiornamento alla modalità solo teams offre agli utenti tutti i vantaggi di Microsoft teams, l'hub per il lavoro in team in Office 365, tramite una singola esperienza client. Inoltre, gli utenti in modalità solo team riceveranno tutte le chiamate e le chat in teams, indipendentemente dal fatto che il mittente usi Skype for business o teams e tragga vantaggio dal supporto per l'interoperabilità e la Federazione.
 
-Mentre migliaia di clienti hanno eseguito l'aggiornamento a Microsoft teams, esistono considerazioni che possono influenzare la sequenza temporale dell'aggiornamento dell'organizzazione e l'esperienza utente lungo il percorso. In particolare, la possibilità di eseguire l'aggiornamento non significa necessariamente che l'organizzazione sia pronta per questa modifica. Per un'esperienza utente ottimale, verifica che i team soddisfino i requisiti di collaborazione e comunicazione, assicurati che la rete sia pronta per supportare i team e implementare il piano di preparazione degli utenti prima di aggiornare i partecipanti ai team. 
+Mentre migliaia di clienti hanno eseguito l'aggiornamento a Microsoft teams, esistono considerazioni che possono influenzare la sequenza temporale dell'aggiornamento dell'organizzazione e l'esperienza utente lungo il percorso. In particolare, la possibilità di eseguire l'aggiornamento non significa necessariamente che l'organizzazione sia pronta per questa modifica. Per un'esperienza utente ottimale, verificare che Teams soddisfi i requisiti interni di collaborazione e comunicazione, assicurarsi che la rete sia pronta per supportare Teams e implementare il piano di preparazione degli utenti prima di aggiornarli a Teams. 
 
 > [!IMPORTANT]
 > Se si sta solo avviando la pianificazione dell'aggiornamento, assicurarsi di esaminare le risorse di pianificazione e le informazioni complete sull'aggiornamento. [Iniziare da qui](upgrade-start-here.md). 

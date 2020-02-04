@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.PersistentChatAddinMain
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0c0ecf64-258d-4b43-8fac-fa5ffa4e7646
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile usare la sezione componente aggiuntivo della pagina della chat persistente per associare gli URL alle chat room permanenti. Questi URL verranno visualizzati nel riquadro di estendibilità delle conversazioni della chat room del client. Perché gli utenti possano visualizzare questo aggiornamento nel proprio client, l'amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati, mentre i responsabili/creatori della chat room devono associare chat a uno dei componenti aggiuntivi registrati.
-ms.openlocfilehash: 953bb95d6ad0ac0960ce2121dd92eec36486f594
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 422c0c569087bf752b65794eb4acc85dc00c06cb
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36196018"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41704521"
 ---
 # <a name="persistent-chat-add-in-main-page"></a>Pagina principale del componente aggiuntivo Chat persistente
 

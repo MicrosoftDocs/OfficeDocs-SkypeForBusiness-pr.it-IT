@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 description: Informazioni sui passaggi per configurare Live per gli eventi in teams, tra cui la preparazione della rete, l'assegnazione di licenze, l'uso di criteri per abilitare le caratteristiche e la pianificazione degli eventi dinamici per gli utenti e la configurazione di un provider di distribuzione di terze parti.
-f1keywords: ms.teamsadmincenter.liveevents.policies
+f1.keywords: ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8ce126b6e0e7a1bc9efec28f3b7fec5020c2da1e
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: ebc72d8238e5551c7a09cae3d617e8f6a187befb
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570158"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708332"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi dinamici in Microsoft Teams
 
@@ -107,9 +107,9 @@ Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate pe
 
 - **Hive streaming** offre una soluzione semplice e potente per la distribuzione di video aziendali Live e su richiesta. Hive è una soluzione basata sul software che non richiede hardware o larghezza di banda aggiuntivi e offre un modo sicuro per consentire a migliaia di videospettatori simultanei senza impatto sulla rete. Per i clienti che cercano di comprendere il video di impatto che sta avendo sulla loro rete prima di acquistare una soluzione SDN/eCDN, hive streaming offre anche una soluzione di analisi basata su browser per i clienti Microsoft. [Altre informazioni](https://www.hivestreaming.com/partners/integration-partners/microsoft/).
  
-- **Kollective** è una piattaforma di distribuzione Smart peer basata sul cloud che sfrutta l'infrastruttura di rete esistente per distribuire contenuto, in molte forme, (video in streaming live, video su richiesta, aggiornamenti software, patch di sicurezza e così via) più velocemente, più in modo affidabile e con meno larghezza di banda. La nostra piattaforma sicura è considerata attendibile dalle più grandi istituzioni finanziarie del mondo e senza hardware aggiuntivo, la configurazione e la manutenzione sono semplici. [Altre informazioni](https://kollective.com/microsoft-pilot/).
+- **Kollective** è una piattaforma di distribuzione di peering intelligente basata su cloud che sfrutta l'infrastruttura di rete esistente per distribuire contenuto, in molte forme, (video in streaming live, video su richiesta, aggiornamenti software, patch di sicurezza e così via) più velocemente, in modo più affidabile e con meno larghezza di banda. La nostra piattaforma sicura è considerata attendibile dalle più grandi istituzioni finanziarie del mondo e senza hardware aggiuntivo, la configurazione e la manutenzione sono semplici. [Altre informazioni](https://kollective.com/microsoft-pilot/).
  
-- **Ramp OmniCache** offre la distribuzione di rete di nuova generazione e assicura il recapito continuo dei contenuti video in WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare trasmissioni di eventi live e su richiesta streaming. Il supporto per la rampa OmniCache per gli eventi dinamici prodotti in teams sarà disponibile a breve. [Altre informazioni](http://www.ramp.com). 
+- **Ramp OmniCache** offre la distribuzione di rete di nuova generazione e assicura il recapito continuo dei contenuti video in WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare trasmissioni di eventi live di successo e streaming su richiesta. Il supporto per la rampa OmniCache per gli eventi dinamici prodotti in teams sarà disponibile a breve. [Altre informazioni](http://www.ramp.com). 
  
 > [!NOTE] 
 > La soluzione scelta di SDN o eCDN è soggetta alle **condizioni di servizio e alla politica di privacy del provider**di terze parti selezionato, che disciplinerà l'uso della soluzione del provider. L'uso della soluzione del provider non sarà soggetto alle condizioni di contratto multilicenza Microsoft o ai servizi online. Se non si accettano i termini del **provider di terze parti**, non abilitare la soluzione in teams. 
@@ -120,7 +120,7 @@ Dopo aver configurato la soluzione SDN o eCDN, si è pronti per configurare il p
 Vedere [configurare le impostazioni degli eventi dinamici in teams](configure-teams-live-events.md).
 
 ### <a name="related-topics"></a>Argomenti correlati
-- [Cosa sono gli eventi teams Live?](what-are-teams-live-events.md)
-- [Pianificare gli eventi di teams Live](plan-for-teams-live-events.md)
+- [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)
+- [Pianificare gli eventi live di Teams](plan-for-teams-live-events.md)
 - [Configurare le impostazioni degli eventi dinamici in teams](configure-teams-live-events.md)
 

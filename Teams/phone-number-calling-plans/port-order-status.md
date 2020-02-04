@@ -1,5 +1,5 @@
 ---
-title: Qual è lo stato degli ordini di trasferimento?
+title: Qual è lo stato degli ordini di portabilità?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -12,18 +12,18 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: ''
+f1.keywords: ''
 ms.custom:
 - Calling Plans
 description: 'Learn how to get the status of your port orders, and what the different actions you can take on them. '
-ms.openlocfilehash: 7c7b0c745ac4af01b58771463f348f5ac0f3dac7
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 3ad816e9dcedc18fe13d45db0bec36285d4f090f
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925667"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708632"
 ---
-# <a name="whats-the-status-of-your-port-orders"></a>Qual è lo stato degli ordini di trasferimento?
+# <a name="whats-the-status-of-your-port-orders"></a>Qual è lo stato degli ordini di portabilità?
 
 Per visualizzare lo stato dell'ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai a >**ordini di porta** **vocale** > e quindi fai clic su **cronologia**ordini. Ogni stato dell'ordine di porta è elencato nella colonna **stato** .
 
@@ -45,7 +45,7 @@ Se è necessaria assistenza o se è necessario ottenere altri numeri di telefono
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Cos'è un ordine di trasferimento?](port-order-overview.md)
+- [Cos'è un ordine di portabilità?](port-order-overview.md)
 - [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 - [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 - [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)

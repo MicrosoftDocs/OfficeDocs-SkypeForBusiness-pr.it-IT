@@ -1,26 +1,26 @@
 ---
-title: Pagina di pubblicazione di selezione CMS per la topologia
+title: Pagina Selezionare CMS per la pubblicazione della topologia
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.PublishTopologySelectCmsPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: df447066-2840-431b-bc4e-acf8aa692d71
 ROBOTS: NOINDEX, NOFOLLOW
 description: Viene pubblicata la topologia configurata con generatore di topologia. Viene richiesto di selezionare un elenco da un server front-end o da un pool Front-end che assumerà il ruolo di Holding The Central Management store. Solo un server front-end o un pool Front-end può contenere questo ruolo in un momento specifico.
-ms.openlocfilehash: e56597a1380f908c7abdb49b9b88edd7ad249870
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 9cecdc170934f7359597484e56299e2fe76499b9
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188039"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41701671"
 ---
-# <a name="publish-topology-select-cms-page"></a>Pagina di pubblicazione di selezione CMS per la topologia
+# <a name="publish-topology-select-cms-page"></a>Pagina Selezionare CMS per la pubblicazione della topologia
  
 Viene pubblicata la topologia configurata con generatore di topologia. Viene richiesto di selezionare un elenco da un server front-end o da un pool Front-end che assumerà il ruolo di Holding The Central Management store. Solo un server front-end o un pool Front-end può contenere questo ruolo in un momento specifico. 
   

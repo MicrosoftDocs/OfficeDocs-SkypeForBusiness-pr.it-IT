@@ -1,26 +1,26 @@
 ---
-title: Nuova regola di traduzione del numero chiamante
+title: Nuova regola di traduzione dei numeri di telefono
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.VoiceTrunkCallingRuleEdit
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2b6493f1-1be5-45b4-841a-09425cb302e1
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per creare una nuova regola di traduzione, è possibile usare la nuova regola di conversione trunk: nuovo numero chiamante. Per informazioni dettagliate sulle regole di conversione, vedere gli argomenti seguenti:'
-ms.openlocfilehash: 87247e641826615f030f1204dac83bb678cd4d9d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 95e96825d4fa81839dac44d0f644ae8694c8d62c
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191786"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41703831"
 ---
-# <a name="new-calling-number-translation-rule"></a>Nuova regola di traduzione del numero chiamante
+# <a name="new-calling-number-translation-rule"></a>Nuova regola di traduzione dei numeri di telefono
 
 Per creare una nuova regola di traduzione, è possibile usare la nuova regola di conversione **trunk**: **nuovo numero chiamante** . Per informazioni dettagliate sulle regole di conversione, vedere gli argomenti seguenti:
 

@@ -15,14 +15,14 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sui criteri di configurazione delle app in Microsoft teams e su come usarli per aggiungere le app per personalizzare i team per gli utenti dell'organizzazione.
-f1keywords:
+f1.keywords:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: e80cacb952bd456e742aa6da0fec32d50c5f3188
-ms.sourcegitcommit: 5932ec62a42d7b392fa31c6a2a3462389ac24b73
+ms.openlocfilehash: 93b687bffb536295e758fb6d7c1baf43710901e9
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "41573794"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708492"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 

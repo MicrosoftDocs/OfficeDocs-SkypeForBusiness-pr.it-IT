@@ -9,18 +9,18 @@ ms.service: msteams
 ms.reviewer: svemu
 localization_priority: Normal
 search.appverid: MET150
-f1keywords: ms.teamsadmincenter.analyticsandreports.overview
+f1.keywords: ms.teamsadmincenter.analyticsandreports.overview
 ms.collection:
 - M365-collaboration
 description: Informazioni sui report Team disponibili nell'interfaccia di amministrazione di Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 43d31c24745bb0ceba26160c09a3d11b5db0905b
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 3b0bcf2fe9d45d9ec2a4c574e9683688d58eb4a7
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570984"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708482"
 ---
 # <a name="microsoft-teams-analytics-and-reporting"></a>Analisi e creazione di report di Microsoft Teams
 
@@ -42,9 +42,9 @@ Stiamo migliorando continuamente l'esperienza di creazione di report in teams e 
 |Report  |Cosa viene misurato? |
 |---------|---------|
 |[Report sull'utilizzo di Teams](teams-usage-report.md)  |  Utenti attivi<br/>Utenti attivi in team e canali<br/>Canali attivi<br/>Messaggi<br/>Impostazione della privacy di Teams<br/>Guest in un team   |
-|[Report attività utente Teams](user-activity-report.md)  |  1:1 chiama un utente a cui ha partecipato<br/>Messaggi inviati da un utente in una chat del team<br/>Messaggi inviati da un utente in una chat privata<br/>Data ultima attività di un utente     |
-|[Report sull'utilizzo di dispositivi Teams](device-usage-report.md)   |  Utenti di Windows:<br/>Utenti Mac<br/>utenti iOS<br/>Utenti di telefoni Android     |
-|[Report sull'utilizzo dell'evento teams Live](teams-live-event-usage-report.md)   |  Visualizzazioni totali<br>Ora di inizio<br>Stato evento<br>Organizzatore<br>Relatore<br>Produttore<br>Impostazione di registrazione<br>Tipo di produzione    |
+|[Report sulle attività degli utenti di Teams](user-activity-report.md)  |  1:1 chiama un utente a cui ha partecipato<br/>Messaggi inviati da un utente in una chat del team<br/>Messaggi inviati da un utente in una chat privata<br/>Data ultima attività di un utente     |
+|[Report sull'uso dei dispositivi di Teams](device-usage-report.md)   |  Utenti di Windows:<br/>Utenti Mac<br/>utenti iOS<br/>Utenti di telefoni Android     |
+|[Report sull'uso degli eventi live di Teams](teams-live-event-usage-report.md)   |  Visualizzazioni totali<br>Ora di inizio<br>Stato evento<br>Organizzatore<br>Relatore<br>Produttore<br>Impostazione di registrazione<br>Tipo di produzione    |
 |[Report utenti bloccati PSTN di Teams](pstn-blocked-users-report.md)   |  Nome visualizzato<br>Numero di telefono<br>Motivo<br>Tipo di azione<br>Data e ora di azione   |
 |[Report pool di minuti PSTN di Teams](pstn-minute-pools-report.md) |  Paese o area geografica<br>Funzionalità (licenza) <br>Minuti totali<br>Minuti usati<br>Minuti disponibili|
 |[Report utilizzo PSTN teams-piani per chiamate](pstn-usage-report.md#calling-plans)|  Indicatore di data e ora<br>Nome utente<br>Numero di telefono<br>Tipo di chiamata <br>Chiamata a<br>In un paese o in un'area geografica <br>Chiamata da <br>Da paese o area geografica<br>Addebito<br>Valuta<br>Durata<br>Nazionali/internazionali<br>ID chiamata<br>Tipo di numero<br>Paese o area geografica<br>ID conferenza<br>Funzionalità (licenza)|

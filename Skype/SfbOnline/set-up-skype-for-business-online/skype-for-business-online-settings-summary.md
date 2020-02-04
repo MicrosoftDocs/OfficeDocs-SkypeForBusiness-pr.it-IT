@@ -15,23 +15,24 @@ ms.appliesto:
 - Skype for Business
 localization_priority: Normal
 ROBOTS: NOIDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Setup
 description: "Questo riepilogo delle impostazioni dell'organizzazione e degli utenti di Skype for business può essere utile per altre informazioni sulla connettività di messaggistica istantanea pubblica, sugli inviti alle riunioni, le chiamate e le riunioni di registrazione e altro ancora.  "
-ms.openlocfilehash: b039a97aea20fb4914deb077bd4aa76dbf13c1b3
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: fd8db122b1e0ec8ef205c07f68826dea83a833c7
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34285095"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41706461"
 ---
 # <a name="skype-for-business-online-settings-summary"></a>Riepilogo delle impostazioni di Skype for Business online
 
 L'interfaccia di **amministrazione di Skype for business** include le impostazioni per l'intera organizzazione e per i singoli utenti. 
   
 > [!NOTE]
->  A seconda della posizione, potresti non avere accesso a tutte le funzionalità di Skype for Business online. Per informazioni dettagliate, vedere [limitazioni della licenza per Office 365](https://go.microsoft.com/fwlink/?LinkId=529483). 
+>  A seconda della tua posizione, potresti non avere accesso a tutte le funzionalità di Skype for business online. Per informazioni dettagliate, vedere [limitazioni della licenza per Office 365](https://go.microsoft.com/fwlink/?LinkId=529483). 
   
 ## <a name="skype-for-business-online-organization-settings"></a>Impostazioni aziendali di Skype for Business online
 <a name="__top"> </a>

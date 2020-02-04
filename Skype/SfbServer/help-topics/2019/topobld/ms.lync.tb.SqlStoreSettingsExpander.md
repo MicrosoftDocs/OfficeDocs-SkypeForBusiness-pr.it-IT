@@ -1,26 +1,26 @@
 ---
-title: Expander delle impostazioni di SQL Store
+title: Espansione delle impostazioni dell'archivio SQL
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.SqlStoreSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bd269d52-6f87-4433-b9b0-2b543fea845d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per modificare le proprietà di un database di SQL Server, è necessario modificare l'istanza di database di SQL Server. Non è possibile usare la finestra di dialogo Modifica proprietà per eseguire attività come lo spostamento del database del server di archiviazione da un computer a un altro. Inoltre, non è possibile usare la finestra di dialogo Modifica proprietà per modificare l'istanza di SQL Server che ospita l'Central Management store.
-ms.openlocfilehash: 816733627bcaf1156e5ad34955bb8aa9cf580642
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ccaa6d2ceedfdef3f180de93e763c28b7167d45a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195430"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41701461"
 ---
-# <a name="sql-store-settings-expander"></a>Expander delle impostazioni di SQL Store
+# <a name="sql-store-settings-expander"></a>Espansione delle impostazioni dell'archivio SQL
  
 Per modificare le proprietà di un database di SQL Server, è necessario modificare l'istanza di database di SQL Server. Non è possibile usare la finestra di dialogo **modifica proprietà** per eseguire attività come lo spostamento del database del server di archiviazione da un computer a un altro. Inoltre, non è possibile usare la finestra di dialogo **modifica proprietà** per modificare l'istanza di SQL Server che ospita l'Central Management store.
   

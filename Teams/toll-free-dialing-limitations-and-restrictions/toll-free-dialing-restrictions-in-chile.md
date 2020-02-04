@@ -18,16 +18,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: c1f924b86ef4236e6ecef2cf5d4a156a5ee6d8b5
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: eb0e167923c93fa17a3756a439ab101eac80d2cc
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573022"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41707942"
 ---
 # <a name="toll-free-dialing-restrictions-in-chile"></a>Restrizioni di chiamata gratuita in Cile
 
@@ -46,7 +47,7 @@ ms.locfileid: "37573022"
 |Commenti, limitazioni e problemi di accesso  <br/> |La numerazione 188 800 XXX XXX è accessibile dalla rete Telefonica. Il formato numerico di 123 XXXX XXXX è accessibile solo dalla rete entel. L'accesso via mobile è possibile per entrambe le numerazioni.  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
-[Limitazioni e restrizioni di chiamata senza pedaggio](../toll-free-dialing-limitations-and-restrictions.md)
+[Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 

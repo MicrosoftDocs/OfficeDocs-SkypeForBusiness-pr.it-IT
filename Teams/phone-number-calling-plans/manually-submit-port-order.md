@@ -1,5 +1,5 @@
 ---
-title: Invio manuale di un ordine di trasferimento
+title: Inviare manualmente un ordine di portabilità
 ms.author: v-lanac
 author: lanachin
 manager: serdars
@@ -13,18 +13,18 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: ''
+f1.keywords: ''
 ms.custom:
 - Calling Plans
 description: Informazioni su come inviare manualmente una richiesta di un ordine di trasferimento.
-ms.openlocfilehash: 90864afc9923f6977dfcfc9376d1191b740f242a
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 6844865159da4df084bb8ecfb5d324b19fbfebb5
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925665"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708742"
 ---
-# <a name="manually-submit-a-port-order"></a>Invio manuale di un ordine di trasferimento
+# <a name="manually-submit-a-port-order"></a>Inviare manualmente un ordine di portabilità
 
 In alcuni paesi e aree geografiche potrebbe essere necessario inviare manualmente una richiesta di servizio per ottenere numeri di telefono, trasferire numeri di telefono, rilasciare numeri di telefono o modificare gli indirizzi. Per visualizzare le informazioni necessarie per ogni paese o area geografica, vedere [gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
@@ -60,7 +60,7 @@ Scaricare la [LOA](../manage-phone-numbers-for-your-organization/manage-phone-nu
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Cos'è un ordine di trasferimento?](port-order-overview.md)
+- [Cos'è un ordine di portabilità?](port-order-overview.md)
 - [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 - [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 - [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)

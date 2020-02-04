@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.ExternalApplicationScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: dfd21945-331a-4058-97b6-d17690353702
 ROBOTS: NOINDEX, NOFOLLOW
 description: "In questo nodo vengono visualizzati il nome di dominio completo (FQDN) del pool, l'impostazione di replica e il pool di hop successivi per questo pool di applicazioni attendibili. È possibile eseguire queste azioni:"
-ms.openlocfilehash: 15f3bc3c17024552f376c85abecf3adff4729c9f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 61f10cc9fdbb7b8af83d7f8742ed0675d887ad56
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194333"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41702191"
 ---
 # <a name="external-application-scope-node"></a>Nodo dell'ambito dell'applicazione esterna
  

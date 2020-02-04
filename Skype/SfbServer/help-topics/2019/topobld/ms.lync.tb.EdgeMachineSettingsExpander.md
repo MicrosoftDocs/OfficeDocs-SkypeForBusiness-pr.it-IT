@@ -1,26 +1,26 @@
 ---
-title: Expander di impostazioni computer Edge
+title: Espansione delle impostazioni per il computer perimetrale
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.EdgeMachineSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 747456dd-d237-44e6-9e64-63b0e7212a08
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le proprietà di un server in un pool di Edge Server, eseguire le operazioni seguenti:'
-ms.openlocfilehash: a6683766ddbfd11cd38d2d50b80a25c057b302bb
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 22f1e46481ce2392a806eadd6029ab51292d5585
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188975"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41702291"
 ---
-# <a name="edge-machine-settings-expander"></a>Expander di impostazioni computer Edge
+# <a name="edge-machine-settings-expander"></a>Espansione delle impostazioni per il computer perimetrale
  
 Per modificare le proprietà di un server in un pool di Edge Server, eseguire le operazioni seguenti:
   
@@ -35,7 +35,7 @@ Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per l'access
 > [!NOTE]
 > Se l'impostazione **Abilita il nome di dominio completo e l'indirizzo IP separato per le conferenze Web e a/V** nella pagina Impostazioni pool è abilitato, solo l'indirizzo IP per l'accesso SIP sarà disponibile per la modifica.
   
-## <a name="web-conferencing"></a>Web Conferencing
+## <a name="web-conferencing"></a>Conferenze Web
 
 Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per i servizi di conferenza Web. Questo indirizzo IP può essere un indirizzo IP pubblico o un indirizzo nell'intervallo di indirizzi IP privati.
   

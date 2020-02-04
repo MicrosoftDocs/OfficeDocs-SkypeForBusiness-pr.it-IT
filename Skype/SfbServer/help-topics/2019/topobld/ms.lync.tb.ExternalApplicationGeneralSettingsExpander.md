@@ -1,26 +1,26 @@
 ---
-title: Expander impostazioni generali applicazioni esterne
+title: Espansione delle impostazioni generali delle applicazioni esterne
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.ExternalApplicationGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: aa7268ac-b9e3-4d25-bff4-e59d305120f2
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per modificare le proprietà di un server delle applicazioni attendibile già definito, seguire queste istruzioni.
-ms.openlocfilehash: 96118d968a5c9fdf54a78df24019426e562220dd
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: dffeb52ab1633a936a73cb2270a204d26ccf1056
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194337"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41702171"
 ---
-# <a name="external-application-general-settings-expander"></a>Expander impostazioni generali applicazioni esterne
+# <a name="external-application-general-settings-expander"></a>Espansione delle impostazioni generali delle applicazioni esterne
  
 Per modificare le proprietà di un server delle applicazioni attendibile già definito, seguire queste istruzioni.
   

@@ -1,5 +1,5 @@
 ---
-title: Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
+title: Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
@@ -17,20 +17,20 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords:
+f1.keywords:
 - ms.teamsadmincenter.directrouting.callanalytics
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 ms.custom:
 - Reporting
 description: Usare i dettagli di analisi delle chiamate su dispositivi, reti e connettività per risolvere i problemi degli utenti con le chiamate e le riunioni di Microsoft teams e Skype for business.
-ms.openlocfilehash: 4b2d6a5a18bf0a13f3fd32aecb8ad98192f3851a
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: e8b1fe4bbad2b744310d0b609fdc6c6d5a23fea2
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568635"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41707722"
 ---
-# <a name="use-call-analytics-to-troubleshoot-poor-call-quality"></a>Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
+# <a name="use-call-analytics-to-troubleshoot-poor-call-quality"></a>Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate
 
 L'analisi delle chiamate consente di risolvere i problemi di chiamata o di connessione con Microsoft teams e Skype for business. Chiamata analitica Mostra informazioni dettagliate sui dispositivi, le reti e la connettività per le chiamate e le riunioni di ogni utente nell'account di Office 365. Se le informazioni relative a compilazione, sito e tenant sono state aggiunte all'analisi delle chiamate, verranno visualizzate anche per ogni chiamata e sessione. Le informazioni disponibili tramite le funzionalità di analisi delle chiamate consentono di individuare il motivo per cui un utente ha ricevuto una chiamata o un'esperienza di riunione scadente. 
   

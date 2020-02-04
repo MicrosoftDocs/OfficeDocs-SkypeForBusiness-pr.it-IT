@@ -11,7 +11,7 @@ description: Piano d'azione accelerato in dieci passaggi per l'aggiornamento da 
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Teams-upgrade-guidance
-f1keywords:
+f1.keywords:
 - ms.teamsadmincenter.dashboard.widget.upgrade.opt-in
 - ms.teamsadmincenter.dashboard.widget.upgrade.opt-out
 - ms.teamsadmincenter.dashboard.widget.upgrade.scheduled
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 425ee7d6821a6765e03e2b9f0d9beaab61858bd4
-ms.sourcegitcommit: 25b6bf2c3050390cd668d2495ffcf31c44d0ff62
+ms.openlocfilehash: b992c9870ef49847af3a82f3844f691584f97768
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37749284"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41707712"
 ---
 # <a name="upgrade-basic"></a>Aggiornamento di base
 
@@ -116,7 +116,7 @@ La disponibilità di un ampio preavviso agli utenti darà loro tempo per familia
 
 **Risorse**
 
-- [Gestire le impostazioni di Microsoft teams per l'organizzazione](enable-features-office-365.md)
+- [Gestire le impostazioni di Microsoft Teams per l'organizzazione](enable-features-office-365.md)
 - [Esempio di messaggio di posta elettronica: annuncio agli utenti di Skype for business](upgrade-emails-surveys.md#step-4-email)
 
 [Torna all'inizio](#about-upgrade-basic)

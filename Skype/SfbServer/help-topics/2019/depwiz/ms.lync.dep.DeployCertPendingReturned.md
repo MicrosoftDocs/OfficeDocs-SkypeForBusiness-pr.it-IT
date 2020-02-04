@@ -1,26 +1,26 @@
 ---
-title: Certificato in sospeso (restituito)
+title: Certificato in sospeso (Returned)
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployCertPendingReturned
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3ee3f595-947a-41c4-acb8-036336b4f17e
 ROBOTS: NOINDEX, NOFOLLOW
 description: La pagina di stato della richiesta di certificato online restituisce lo stato corrente del certificato. Se il certificato si trova ancora in uno stato di approvazione in sospeso con l'amministratore dell'autorità di certificazione, ovvero se non è ancora stato approvato, lo stato indicherà che il certificato è ancora in fase di elaborazione.
-ms.openlocfilehash: 217b4372ee5086b7dc9fd20744b616c193894f65
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 4505258bb46f2475dc43bc3b3446e04ccfac1a86
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187217"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41705741"
 ---
-# <a name="pending-certificate-returned"></a>Certificato in sospeso (restituito)
+# <a name="pending-certificate-returned"></a>Certificato in sospeso (Returned)
  
 La pagina di **stato della richiesta di certificato online** restituisce lo stato corrente del certificato. Se il certificato si trova ancora in uno stato di approvazione in sospeso con l'amministratore dell'autorità di certificazione, ovvero se non è ancora stato approvato, lo stato indicherà che il certificato è ancora in fase di elaborazione.
   

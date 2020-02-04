@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployCertsMain
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6ab661d7-5741-4cad-bbe4-62cf862ded85
 description: Per richiedere, assegnare, rimuovere o visualizzare i certificati, è possibile utilizzare la Configurazione guidata certificati. A tale scopo, è necessario essere connessi come membri del gruppo RTCUniversalServerAdmins. Per richiedere un certificato a un'Autorità di certificazione (CA) pubblica, non è necessario appartenere ad altri gruppi. Per richiedere un certificato dall'infrastruttura a chiave pubblica (PKI) dell'organizzazione, è necessario confermare le altre appartenenze ai gruppi di cui si ha bisogno. Durante l'attività di richiesta, è possibile immettere credenziali alternative che verranno usate per richiedere il certificato dalla CA emittente della PKI.
-ms.openlocfilehash: 0ae4a9f5bf80cc33cd743349c5353f40f2fdb986
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 75f324415bbf0af96f79b0e6e5f00e1ee3faaab5
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195302"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41701141"
 ---
 # <a name="certificate-wizard"></a>Configurazione guidata certificati
  

@@ -1,5 +1,5 @@
 ---
-title: Pacchetti dei criteri di Microsoft teams per gli amministratori EDU
+title: Pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori
 author: jambirk
 ms.author: jambirk
 manager: serdars
@@ -13,18 +13,18 @@ ms.collection:
 - Teams_ITAdmin_Help
 appliesto:
 - Microsoft Teams
-f1keywords: ms.teamsadmincenter.policypackages.overview
+f1.keywords: ms.teamsadmincenter.policypackages.overview
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams.
-ms.openlocfilehash: a49ab725ff0042b75afca9b1f9b4d7d9655c34b7
-ms.sourcegitcommit: 70bf1669442bbb50cb293c86d6a0c80fb3b2b55a
+ms.openlocfilehash: 922481747e83b8885641185b8a7e4fa65bb2a1bd
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "38676254"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708662"
 ---
-# <a name="microsoft-teams-policy-packages-for-edu-admins"></a>Pacchetti dei criteri di Microsoft teams per gli amministratori EDU
+# <a name="microsoft-teams-policy-packages-for-edu-admins"></a>Pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori
 
 Un pacchetto di criteri in Microsoft teams raccoglie i criteri predefiniti e le impostazioni dei criteri che è possibile assegnare agli utenti con ruoli simili nell'istituzione. I pacchetti di criteri semplificano, semplificano e aiutano a fornire coerenza durante la gestione dei criteri. Nella pratica normale assegna a ogni utente un pacchetto di criteri e, se necessario, ridefini i criteri in ogni pacchetto in base alle esigenze del gruppo di utenti. Quando si aggiornano le impostazioni in un pacchetto, tutti gli utenti assegnati al pacchetto vengono modificati come aggiornamento in blocco.
 
@@ -36,7 +36,7 @@ I pacchetti di criteri consentono di controllare le caratteristiche di Microsoft
 
 I pacchetti di criteri predefiniscono i criteri per:
 - Messaggistica
--  Riunioni
+- Riunioni
 - Configurazione dell'app
 - Chiamate
 - Eventi live

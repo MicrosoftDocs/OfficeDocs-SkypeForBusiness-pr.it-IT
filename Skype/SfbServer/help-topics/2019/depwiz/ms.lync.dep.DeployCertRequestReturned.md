@@ -1,26 +1,26 @@
 ---
-title: Richiesta di certificato (restituita)
+title: Richiesta di certificato (restituito)
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployCertRequestReturned
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4ada9045-0fdf-4470-8574-2fa08bab9392
 ROBOTS: NOINDEX, NOFOLLOW
 description: "La pagina di stato della richiesta di certificato online presenta informazioni importanti che derivano dalla creazione e dall'emissione di una richiesta di certificato online. Questa pagina fornisce l'identificazione personale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella di controllo assegna questo certificato agli usi dei certificati Skype for Business Server è selezionata. Se si fa clic su fine, il certificato verrà assegnato automaticamente a Skype for Business Server per gli scopi definiti durante la procedura di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi che il certificato verrà assegnato sono i seguenti:"
-ms.openlocfilehash: 02d114ff55360f3e88a866485759510ce5f107c4
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0afc23baacc3430edaf1868e9fbe22e2e04455d7
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188093"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41705611"
 ---
-# <a name="certificate-request-returned"></a>Richiesta di certificato (restituita)
+# <a name="certificate-request-returned"></a>Richiesta di certificato (restituito)
  
 La pagina di **stato della richiesta di certificato online** presenta informazioni importanti che derivano dalla creazione e dall'emissione di una richiesta di certificato online. Questa pagina fornisce l'identificazione personale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella **di controllo assegna questo certificato agli usi dei certificati Skype for Business Server** è selezionata. Se si fa clic su **fine**, il certificato verrà assegnato automaticamente a Skype for Business Server per gli scopi definiti durante la procedura di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi che il certificato verrà assegnato sono i seguenti:
   

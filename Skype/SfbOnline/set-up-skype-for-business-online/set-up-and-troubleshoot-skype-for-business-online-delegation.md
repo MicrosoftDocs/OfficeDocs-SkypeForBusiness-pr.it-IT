@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Setup
 description: Questo articolo spiega come configurare e risolvere i problemi di delega di Skype for business online. In questo articolo vengono fornite indicazioni per suggerimenti per la configurazione, procedure consigliate e procedure per la risoluzione dei problemi.
-ms.openlocfilehash: 0528bbb3dc25e085d38f86c040eb5129c9d039c1
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: fac2b68deec94825d57fd06b436d00feaa924a5c
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34285245"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41706481"
 ---
 # <a name="set-up-and-troubleshoot-skype-for-business-online-delegation"></a>Configurare le deleghe e risolvere i problemi relativi alle deleghe in Skype for Business online
 
@@ -86,13 +87,13 @@ Per configurare la delega di Skype for business online, eseguire le operazioni s
   
 1. Selezionare **** > **** opzioni > strumenti**inoltro di chiamata impostazioni**.
     
-2. Selezionare **Modifica membri**delegati.
+2. Selezionare **Modifica membri delegati**.
     
 3. Selezionare **Aggiungi**, selezionare il delegato che si vuole aggiungere e quindi scegliere **OK**.
     
  **Scheda inoltro di chiamata**
   
-1. In Outlook selezionare**Aggiungi****accesso** > delegati**Impostazioni** > account **file** > .
+1. In > Outlook selezionare**Aggiungi****accesso delegati****Impostazioni** > account **file** > .
     
 2. Individuare e quindi aggiungere il nome della persona che sta per essere il delegato.
     
@@ -102,11 +103,11 @@ Per configurare la delega di Skype for business online, eseguire le operazioni s
 
  **Scheda inoltro di chiamata**
   
-- Se il client non ha una scheda **inoltro di chiamata** con il collegamento **modifica i membri** delegati e il delegante si trova in un computer Mac, il delegante deve accedere a un computer basato su Windows per configurare la delega. Questo perché i client Mac non possono eseguire connessioni MAPI e questo è un requisito per stabilire la delega di Skype for business da Outlook.
+- Se il client non ha una scheda **inoltro di chiamata** con il collegamento **modifica i membri delegati** e il delegante si trova in un computer Mac, il delegante deve accedere a un computer basato su Windows per configurare la delega. Questo perché i client Mac non possono eseguire connessioni MAPI e questo è un requisito per stabilire la delega di Skype for business da Outlook.
     
 ### <a name="verify-success"></a>Verificare il successo
 
-Se il programma di installazione ha esito positivo, il delegato deve vedere il messaggio **che è stato aggiunto come delegato per _LT_ Name>** e che vengono create anche le **persone che gestiscono le chiamate per** il gruppo. Il delegante deve verificare che **** il gruppo delegati sia stato creato.
+Se il programma di installazione ha esito positivo, il delegato deve vedere l' **utente che è stato aggiunto come delegato per < nome>** messaggio e che vengono create anche le **persone che gestiscono le chiamate per** il gruppo. Il delegante deve verificare che il gruppo **delegati** sia stato creato.
   
 > [!NOTE]
 > Le autorizzazioni di delega vengono in genere visualizzate entro 30 minuti dal processo di configurazione. Tuttavia, questo processo può richiedere fino a 24 ore per il completamento. 
@@ -117,7 +118,7 @@ Se il programma di installazione ha esito positivo, il delegato deve vedere il m
 
 - > **Problema 1** La voce del delegato continua a essere visualizzata nelle **persone che gestiscono le chiamate per** il gruppo dopo che il delegante ha rimosso il delegato dal client di Outlook.
     
-  - > **Risoluzione 1** Nel client Skype for business fare clic con il pulsante destro del mouse sul **** delegato nel gruppo delegati e quindi scegliere **Rimuovi dal gruppo**.
+  - > **Risoluzione 1** Nel client Skype for business fare clic con il pulsante destro del mouse sul delegato nel gruppo **delegati** e quindi scegliere **Rimuovi dal gruppo**.
     
 - > **Problema 2** Dopo aver concesso l'accesso al delegato tramite il client Outlook, non viene visualizzato il messaggio di conferma né le **persone che gestiscono le chiamate per** il gruppo per il delegato.
     
