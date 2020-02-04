@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.UserEdit
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e687e12e-efae-4b8c-a716-c29c41ee7b75
 description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 7dc2aae1cb99d0c6307ce0889373cfef2526e639
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e1859b3a436b149b51a0d808b9a47f447bfc0d7a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194265"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41685639"
 ---
-# <a name="users-edit-user"></a>Utenti: modificare l'utente
+# <a name="users-edit-user"></a>Utenti: modificare utente
 
 Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
 

@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/23/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.ClientCVSettingEdit
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 07fec57c-5cd3-422a-829a-0b62cb0092c4
 description: Le impostazioni di configurazione della versione client vengono utilizzate per attivare o disattivare il controllo della versione client. La configurazione della versione client globale viene installata con Skype for Business Server e viene usata per abilitare o disabilitare il controllo della versione client per l'intera distribuzione del server. Se la configurazione globale è abilitata, tutti i criteri relativi alla versione client disponibili verranno applicati quando gli utenti tentano l'accesso. Se non si desidera che venga eseguito il controllo della versione client, è possibile disabilitare la configurazione globale della versione client.
-ms.openlocfilehash: 1a42f2a355ead1d98e7e8031b43db879f271dced
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f970053cb359fb0735535720da7c8310e015ac37
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195123"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41686960"
 ---
 # <a name="client-version-configuration-create-new-or-edit-existing"></a>Configurazione versione client: crearne una nuova o modificarne una esistente
 

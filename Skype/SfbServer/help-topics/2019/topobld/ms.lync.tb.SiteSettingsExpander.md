@@ -1,26 +1,26 @@
 ---
-title: Expander Impostazioni sito di Lync Server
+title: Espansione delle impostazioni per Lync Server Lite
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.SiteSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 940bd9c0-bfcf-4d15-a5c1-a09f1cd692b6
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le proprietà di un sito esistente, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 1f15ed4230d7a72b67b8df804748f9b732278293
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 20c74cd3842137df5dce35647bdb5ad28b89b4e0
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195437"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41687969"
 ---
-# <a name="lync-server-site-settings-expander"></a>Expander Impostazioni sito di Lync Server
+# <a name="lync-server-site-settings-expander"></a>Espansione delle impostazioni per Lync Server Lite
 
 Per modificare le proprietà di un sito esistente, eseguire le operazioni seguenti:
 

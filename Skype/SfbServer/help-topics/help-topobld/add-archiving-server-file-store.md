@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddArchivingServerFileStorePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e95f938e-4dd2-48b8-95a3-05b4c63d4810
 description: Per abilitare l'archiviazione del contenuto dei messaggi istantanei e delle conferenze Web (riunioni), è necessario specificare una condivisione file da usare come archivio file delle copie di tutto il contenuto delle conferenze Web. È possibile usare una condivisione file esistente per l'archivio file oppure specificare una nuova condivisione file indicando il nome di dominio completo (FQDN) del file server in cui deve trovarsi la condivisione file e un nome di cartella per la nuova condivisone file.
-ms.openlocfilehash: 99527455af38211ab788676b1072069924da9935
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 72f8ad131d016d9e14e556b6618ba837a02c7d27
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195629"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41685379"
 ---
 # <a name="add-archiving-server-file-store"></a>Aggiungere l'archivio file per il server di archiviazione
 

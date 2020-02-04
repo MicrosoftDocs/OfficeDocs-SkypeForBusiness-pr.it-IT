@@ -1,26 +1,26 @@
 ---
-title: Nodo ambito trunk video SIP
+title: Nodo di ambito per trunk video SIP
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.SipVideoTrunkScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1dc894e5-e2db-4c4d-9946-1d5f92090113
 ROBOTS: NOINDEX, NOFOLLOW
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in creare un pool VIS in Skype for Business Server.
-ms.openlocfilehash: b7b2feb8c3f6797ffa1610263d39ac8567dd514f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 1a155bf713eccda06e5157857a178b2365dcd7ac
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195444"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41687989"
 ---
-# <a name="sip-video-trunk-scope-node"></a>Nodo ambito trunk video SIP
+# <a name="sip-video-trunk-scope-node"></a>Nodo di ambito per trunk video SIP
  
 I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in [creare un pool Vis in Skype for Business Server](../../../deploy/deploy-video-interop-server/create-a-vis-pool.md).
   

@@ -1,26 +1,26 @@
 ---
-title: Expander delle impostazioni della route federativo
+title: Espansione delle impostazioni della route di federazione
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.FederationRouteSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 22aa11b8-80ba-4c6a-9396-d11166903066
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per impostare un'assegnazione della route Federation del sito, è necessario prima di tutto abilitare la Federazione nel pool di Edge Server o Edge Server. Se Federation non è abilitato nell'Edge Server o nel pool, le impostazioni di assegnazione della route federativo per il sito non saranno disponibili per la modifica.
-ms.openlocfilehash: 6e68bc7cb2f5a9f04e208dc2f27ce7724aa7e793
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: a9679d5ddfe4652a79f58596940af7f450e4b470
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194326"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41688562"
 ---
-# <a name="federation-route-settings-expander"></a>Expander delle impostazioni della route federativo
+# <a name="federation-route-settings-expander"></a>Espansione delle impostazioni della route di federazione
  
 Per impostare un'assegnazione della route Federation del sito, è necessario prima di tutto abilitare la Federazione nel pool di Edge Server o Edge Server. Se Federation non è abilitato nell'Edge Server o nel pool, le impostazioni di assegnazione della route federativo per il sito non saranno disponibili per la modifica.
 

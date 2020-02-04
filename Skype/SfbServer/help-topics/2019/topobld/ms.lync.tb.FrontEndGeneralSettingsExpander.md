@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.FrontEndGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8a5f21d0-f6c8-4907-9958-5ca36f702542
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni per un pool Front End o un server Standard Edition esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: 4f8b9ac5a2291ae579dbc2a43e884132da325020
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 76992a6d88c25a1907e4bb2cc1f6dee69a418f01
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195072"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41688515"
 ---
 # <a name="front-end-general-settings-expander"></a>Espansione delle impostazioni generali di Front End Server
 

@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 4/13/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployMainInstallReplica
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d9c4bcc2-11a7-4d4d-858d-224db217ad32
 description: Per iniziare l'installazione di un nuovo server di ruoli di Skype for Business Server 2015, è necessario prima di tutto installare il server SQL locale che ospiterà l'archivio di configurazione locale. L'archivio di configurazione locale fungerà da replica di sola lettura di Skype for Business Server Central Management store (CMS). È necessario essere connessi al server in cui si sta eseguendo il passaggio Installa archivio di configurazione locale come amministratori locali e appartenere al gruppo RTCUniversalServerAdmins o RTCUniversalGlobalReadOnlyGroup. Se si sta eseguendo l'installazione in un Edge Server, non è necessario essere membri del gruppo RTCUniversalServerAdmins o RTCUniversalGlobalReadOnlyGroup. Il documento di definizione del generatore di topologia verrà letto dal documento di definizione esportato anziché dall'Central Management store. Per esportare il documento di definizione del generatore di topologia e renderlo disponibile per gli Edge Server, vedere l'argomento esportare la topologia e copiarla in elementi multimediali esterni per l'installazione di Edge.
-ms.openlocfilehash: c3da29e6c9630b22e7ae947f9b23ab5dbeebd13c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 83412bbef1305dab51cbb35ad9044f756154905c
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195242"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41687641"
 ---
 # <a name="install-local-configuration-store"></a>Installare un archivio di configurazione locale
 
