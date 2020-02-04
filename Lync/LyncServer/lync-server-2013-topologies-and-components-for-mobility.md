@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Componenti e topologie per dispositivi mobili'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Topologies and components for mobility
 ms:assetid: be3cae7a-095d-4785-91ba-6fac99eba92a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Hh690037(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48185282
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 537eda14f2587e06bd8a1112f2a6a44299b0b78e
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 739deecf47e25e57ca0175c29a2721e509f8dbe2
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40980806"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41745226"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -106,11 +108,11 @@ I servizi che supportano la mobilità sono i seguenti:
 
 Il diagramma seguente illustra il modo in cui il servizio di notifica push rientra in una topologia di Lync Server 2013 che usa client mobili di UCWA e Lync 2013.
 
-![166d60fd-ff71-4FFE-9f66-3c8bbde0b5ae](images/Hh690037.166d60fd-ff71-4ffe-9f66-3c8bbde0b5ae(OCS.15).jpg "166d60fd-ff71-4FFE-9f66-3c8bbde0b5ae")
+![166d60fd-ff71-4ffe-9f66-3c8bbde0b5ae](images/Hh690037.166d60fd-ff71-4ffe-9f66-3c8bbde0b5ae(OCS.15).jpg "166d60fd-ff71-4ffe-9f66-3c8bbde0b5ae")
 
 Introdotta in aggiornamento cumulativo per Lync Server 2010: novembre 2011, il servizio MCX offre servizi ai client mobili Lync 2010. Il diagramma seguente illustra il servizio di notifica push applicato a una topologia usando i client mobili di MCX e Lync 2010.
 
-![3081634e-60E7-4348-b24e-bbbf05a90f5f](images/Hh690037.3081634e-60e7-4348-b24e-bbbf05a90f5f(OCS.15).jpg "3081634e-60E7-4348-b24e-bbbf05a90f5f")
+![3081634e-60e7-4348-b24e-bbbf05a90f5f](images/Hh690037.3081634e-60e7-4348-b24e-bbbf05a90f5f(OCS.15).jpg "3081634e-60e7-4348-b24e-bbbf05a90f5f")
 
 </div>
 

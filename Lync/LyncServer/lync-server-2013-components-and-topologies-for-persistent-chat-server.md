@@ -3,6 +3,8 @@ title: 'Lync Server 2013: componenti e topologie per il server di chat persisten
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Components and topologies for Persistent Chat Server
 ms:assetid: 6a0a14a0-baad-44e9-b26e-4d192c0a0e70
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398500(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184420
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 14ae22b2afed27109fb6e2c514211293cef42a46
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 862635d091a216df61058c0f0ff00eaa9d32a0c2
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40976502"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41742576"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -153,7 +155,7 @@ La figura seguente mostra tutti i componenti obbligatori e facoltativi di una to
 
 **Singolo server di chat persistente**
 
-![Topologia a server singolo con](images/Gg398500.9168fa52-61e0-4d17-a14d-45fd32e81456(OCS.15).jpg "topologia del servizio conformità Single Server con servizio conformità")
+![Topologia a un solo server con Compliance Service](images/Gg398500.9168fa52-61e0-4d17-a14d-45fd32e81456(OCS.15).jpg "Topologia a un solo server con Compliance Service")
 
 </div>
 
@@ -167,7 +169,7 @@ La figura seguente mostra tutti i componenti di una topologia a più server con 
 
 **Più server di chat persistenti**
 
-Topologia multiple server(images/Gg398500.19aea898-28df-4d9b-903c-f72ef062d919(OCS.15).jpg "multiple") ![topologia]server
+![Topologia a più server](images/Gg398500.19aea898-28df-4d9b-903c-f72ef062d919(OCS.15).jpg "Topologia a più server")
 
 Le topologie con più server consentono di creare pool di funzionalità del server. In un pool di server i servizi di chat persistenti comunicano e condividono i dati. Ad esempio, la cronologia delle chat pubblicata in origine in un servizio di chat persistente è disponibile presso qualsiasi servizio di chat persistente nel sistema. Un file caricato tramite un servizio di chat persistente può essere accessibile da qualsiasi servizio di chat persistente. Gli utenti possono essere connessi a diversi server front end del server di chat persistente e possono essere chattati e comunicanti tra loro.
 

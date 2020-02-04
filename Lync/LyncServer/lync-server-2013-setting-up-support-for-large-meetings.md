@@ -3,6 +3,8 @@ title: 'Lync Server 2013: configurazione del supporto per riunioni di grandi dim
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Setting up support for large meetings
 ms:assetid: 8e22d34b-b395-408d-9d48-8f2a3abe9513
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205074(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184763
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 03196c705253320e31e2483cc89b2aca386ff1af
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 0e8331c28d5bd06e6a3f7d9dab2fba7db334cd00
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40975168"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41764562"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -49,7 +51,7 @@ La gestione di un pool con esattamente due server front-end richiede alcune cons
 
 Inoltre, se si vuole specificare facoltativamente il backup e il failover del ripristino di emergenza per il pool usato per riunioni di grandi dimensioni, è possibile associarlo a un pool di dati in un altro Data Center. Per informazioni dettagliate, vedere [pianificazione per l'elevata disponibilità e il ripristino di emergenza in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md).
 
-Configurazione del(images/JJ205074.ee00e1c0-c3b2-464d-aa89-a1e877cd034d(OCS.15).jpg "pool di riunioni") di grandi dimensioni con ![riunioni]di grandi dimensioni
+![Configurazione di pool per riunioni di grandi dimensioni](images/JJ205074.ee00e1c0-c3b2-464d-aa89-a1e877cd034d(OCS.15).jpg "Configurazione di pool per riunioni di grandi dimensioni")
 
 Altre note sulla topologia includono:
 

@@ -3,6 +3,8 @@ title: "Lync Server 2013: Verificare o configurare l'autenticazione e la certifi
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Verify or configure authentication and certification on IIS virtual directories
 ms:assetid: 3ca90be0-1d64-447c-807a-3a2ee3bf625e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg429702(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183883
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0ae692f788d906d01852990490ace01f67eebe63
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 48399ed2a6eba53707218295adcd1cbd11a5e32c
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40979588"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41742156"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -74,7 +76,7 @@ Usare la procedura seguente per configurare il certificato nelle directory virtu
     
     L'output è un elenco dei certificati attualmente presenti nel server nell'archivio certificati del computer personale. Tieni presente che nel certificato combinato (ovvero in cui i servizi Web predefiniti interni e Web Services esterni usano lo stesso certificato) vedrai che la proprietà Use verrà popolata con default, WebServicesInternal e WebServicesExternal. La proprietà identificazione personale sarà inoltre uguale per ogni tipo di utilizzo. In questo esempio viene illustrato un output di esempio di Get-CsCertificate:
     
-    ![Get-CsCertificate info sullo stato SCERT corrente](images/Gg429702.664f6326-6cd5-48e2-8235-fc3950ea43b4(OCS.15).jpg "Get-CsCertificate info sullo stato di SCERT corrente")
+    ![Informazioni Get-CsCertificate sullo stato del certificato corrente](images/Gg429702.664f6326-6cd5-48e2-8235-fc3950ea43b4(OCS.15).jpg "Informazioni Get-CsCertificate sullo stato del certificato corrente")
 
 6.  In Lync Server Management Shell digitare quanto segue:
     
@@ -93,7 +95,7 @@ Usare la procedura seguente per configurare il certificato nelle directory virtu
     
     </div>
     
-    ![Output da cert request using request-CsCertifica](images/Gg429702.9e59a657-fa75-4454-8fd3-57c81e829f7b(OCS.15).jpg "output da cert request using request-CsCertifica")
+    ![Output della richiesta di certificato tramite Request-CsCertifica](images/Gg429702.9e59a657-fa75-4454-8fd3-57c81e829f7b(OCS.15).jpg "Output della richiesta di certificato tramite Request-CsCertifica")
 
 7.  In Lync Server Management Shell digitare quanto segue:
     
@@ -105,7 +107,7 @@ Usare la procedura seguente per configurare il certificato nelle directory virtu
     
     L'output del cmdlet Set-CsCertificate mostrerà che viene assegnato lo stesso certificato (identificato dall'identificazione personale del certificato) per l'utilizzo predefinito, WebServicesExternal e WebServicesInternal.
     
-    ![Output di Set-CsCertificate nell'output di IIS webext](images/Gg429702.dd451c9d-7b49-4408-8071-c868cb1e678c(OCS.15).jpg "da Set-CsCertificate in IIS webext")
+    ![Output di Set-CsCertificate su IIS WebExt](images/Gg429702.dd451c9d-7b49-4408-8071-c868cb1e678c(OCS.15).jpg "Output di Set-CsCertificate su IIS WebExt")
 
 </div>
 

@@ -3,6 +3,8 @@ title: Verificare la coesistenza del pool pilota con il pool legacy
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Verify pilot pool coexistence with legacy pool
 ms:assetid: 597d0fa6-ca04-4521-b1c2-72d7f35ecd08
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204914(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184209
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f67b113a4619d90345df9858f348d663383066d7
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 7585970a53ffd94959653555dad8a02724ba2f03
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978812"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41730886"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,7 +47,7 @@ _**Argomento Ultima modifica:** 2012-09-28_
 
 3.  Verificare che i servizi Office Communications Server 2007 R2 siano in uso nel pool.
     
-    Console di amministrazione di ![Office Communications server 2007 R2], console di amministrazione di(images/JJ721906.76897b6d-f433-47d2-930d-0816fc30a3c2(OCS.15).jpg "office Communications Server 2007 R2")  
+    ![Console di amministrazione di Office Communications Server 2007 R2](images/JJ721906.76897b6d-f433-47d2-930d-0816fc30a3c2(OCS.15).jpg "Console di amministrazione di Office Communications Server 2007 R2")  
 
 </div>
 
@@ -61,7 +63,7 @@ _**Argomento Ultima modifica:** 2012-09-28_
 
 4.  Verificare che i server distribuiti siano presenti nel pool di piloti.
     
-    Pagina ![topologia](images/JJ204914.a3d1ba5f-c1a7-45e8-b9a5-7cb07b01af8c(OCS.15).jpg "") del pannello di controllo di Lync Server  
+    ![Pagina della topologia nel Pannello di controllo di Lync Server](images/JJ204914.a3d1ba5f-c1a7-45e8-b9a5-7cb07b01af8c(OCS.15).jpg "Pagina della topologia nel Pannello di controllo di Lync Server")  
 
 </div>
 
@@ -73,7 +75,7 @@ _**Argomento Ultima modifica:** 2012-09-28_
 
 2.  Verificare che i servizi elencati corrispondano all'elenco nella figura seguente.
     
-    ![Pagina Servizi]con la pagina servizi avviati di Lync che(images/JJ204914.fd35d54a-2ab6-4c09-b5e9-fd5bf10f6f51(OCS.15).jpg "Mostra i servizi di Lync avviati")  
+    ![Pagina Servizi in cui sono indicati i servizi di Lync avviati](images/JJ204914.fd35d54a-2ab6-4c09-b5e9-fd5bf10f6f51(OCS.15).jpg "Pagina Servizi in cui sono indicati i servizi di Lync avviati")  
 
 </div>
 

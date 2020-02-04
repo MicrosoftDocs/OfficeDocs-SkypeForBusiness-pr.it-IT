@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Topologie di Active Directory supportate'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Supported Active Directory topologies
 ms:assetid: 0c76b778-7652-4eb0-b161-86f2d4a94ccf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398173(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183391
 ms.date: 10/02/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3dc15cea3d07dc4e00f1d2a5527c862d90a078c6
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 3e4aca368f6ea7d5b31a1cfe74273dfbd42a6594
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40977444"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41764362"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -53,7 +55,7 @@ La figura seguente identifica le icone usate nelle illustrazioni in questa sezio
 
 **Legenda per le illustrazioni relative alle topologie**
 
-![Chiave per le illustrazioni della topologia](images/Gg398173.0c3cc89f-6c43-4bc8-b2ec-61d89e391ee9(OCS.15).jpg "")
+![Legenda per le illustrazioni relative alle topologie](images/Gg398173.0c3cc89f-6c43-4bc8-b2ec-61d89e391ee9(OCS.15).jpg "Legenda per le illustrazioni relative alle topologie")
 
 <div>
 
@@ -65,7 +67,7 @@ Nella figura seguente viene illustrata una distribuzione di Lync Server in una s
 
 **Topologia a un solo dominio**
 
-![]Topologia a(images/Gg398173.258b3b3f-0558-4a36-a4c2-031be7299668(OCS.15).jpg "dominio") singolo
+![Topologia a un solo dominio](images/Gg398173.258b3b3f-0558-4a36-a4c2-031be7299668(OCS.15).jpg "Topologia a un solo dominio")
 
 </div>
 
@@ -85,7 +87,7 @@ Nella figura seguente viene illustrata una distribuzione in una singola foresta 
 
 **Foresta singola con più domini**
 
-![Foresta singola con più domini con]una(images/Gg398173.2b809c72-c3cd-4fad-afe6-8c2dae779750(OCS.15).jpg "sola foresta con più domini")
+![Foresta singola con più domini](images/Gg398173.2b809c72-c3cd-4fad-afe6-8c2dae779750(OCS.15).jpg "Foresta singola con più domini")
 
 </div>
 
@@ -105,7 +107,7 @@ Nella figura seguente viene illustrata una singola foresta con più alberi. In q
 
 **Foresta singola con più alberi**
 
-![Foresta singola con più]alberi(images/Gg398173.db30fa49-174a-4974-8695-41dd78e39432(OCS.15).jpg "foresta singola con più alberi")
+![Foresta singola con più alberi](images/Gg398173.db30fa49-174a-4974-8695-41dd78e39432(OCS.15).jpg "Foresta singola con più alberi")
 
 </div>
 
@@ -129,7 +131,7 @@ Nella figura seguente viene illustrata una topologia di foresta centrale. In que
 
 **Topologia a foresta centralizzata**
 
-Topologia della(images/Gg398173.7feb049a-453b-4134-9128-873b83ee1755(OCS.15).jpg "foresta centrale") della ![topologia foresta centrale]
+![Topologia a foresta centralizzata](images/Gg398173.7feb049a-453b-4134-9128-873b83ee1755(OCS.15).jpg "Topologia a foresta centralizzata")
 
 </div>
 
@@ -147,7 +149,7 @@ Il diagramma seguente illustra una topologia di foresta di risorse.
 
 **Topologia della foresta di risorse**
 
-Topologia della(images/Gg398173.54ab82f1-e9e5-40f0-a54e-86e340b65c2a(OCS.15).jpg "foresta della risorsa Active") directory della foresta di ![Active Directory]
+![Topologia con foresta delle risorse di Active Directory](images/Gg398173.54ab82f1-e9e5-40f0-a54e-86e340b65c2a(OCS.15).jpg "Topologia con foresta delle risorse di Active Directory")
 
 </div>
 

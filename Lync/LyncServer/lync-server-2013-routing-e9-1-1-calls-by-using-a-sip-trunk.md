@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Routing delle chiamate di emergenza tramite un trunk S
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Routing E9-1-1 calls by using a SIP trunk
 ms:assetid: 157753c3-fe74-4e2c-81da-ee06911d4cc2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204701(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183492
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c537b66883ab786bc28e3cc808874c0fcb79b92d
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 918aaf97b1567f012a2b41de7128db23aa383acb
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40977409"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41732855"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -41,7 +43,7 @@ Il diagramma seguente mostra il modo in cui una chiamata di emergenza viene inst
 
 **Routing di chiamate E9-1-1 tramite trunk SIP**
 
-![Routing delle chiamate di emergenza da Lync Server a PSAP](images/JJ204701.0637a9d4-2ca7-438a-8ed0-19090a4b992d(OCS.15).jpg "routing delle chiamate di emergenza da Lync Server a PSAP")
+![Routing delle chiamate di emergenza da Lync Server a PSAP](images/JJ204701.0637a9d4-2ca7-438a-8ed0-19090a4b992d(OCS.15).jpg "Routing delle chiamate di emergenza da Lync Server a PSAP")
 
 Quando una chiamata di emergenza viene inserita da un client Lync Server compatibile:
 

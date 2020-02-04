@@ -3,6 +3,8 @@ title: "Lync Server 2013: Scenari per l'accesso degli utenti esterni"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Scenarios for external user access
 ms:assetid: 25697446-b045-4d12-9b1c-47f694b4f224
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg425727(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183640
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 27e4f7410d7038971c6ddefe1af1c7b3ecd97ab9
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: eab8323744615dc3f5d0b68f4325fbfb85bf911e
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40981883"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41764974"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -43,7 +45,7 @@ Questa sezione definisce gli scenari per le distribuzioni di Edge Server e assoc
 
 **Processo di selezione dello scenario di distribuzione di Edge Server**
 
-![](images/Gg425727.007100b5-6923-4909-bfd7-897d8867205f(OCS.15).jpg "Diagramma") di flusso distribuzione di esempio
+![Esempio di diagramma di flusso della distribuzione](images/Gg425727.007100b5-6923-4909-bfd7-897d8867205f(OCS.15).jpg "Esempio di diagramma di flusso della distribuzione")
 
 Usando questo processo, puoi pianificare e documentare la configurazione di tutte le funzionalità potenziali che intendi distribuire per gli utenti. È tuttavia possibile aggiungere servizi di Federazione e mobilità dopo avere distribuito il server perimetrale e aver confermato l'operazione corretta prima di aggiungere altre funzionalità. Il processo di aggiunta di funzionalità a una distribuzione di Edge Server esistente è incluso nella sezione distribuzione. Per informazioni dettagliate sulla distribuzione, vedere [distribuzione dell'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) includendo la pianificazione per queste funzionalità durante il processo di pianificazione iniziale, è possibile prepararsi per i requisiti DNS, firewall e certificato per le funzionalità aggiunte, che consentono di acquisire i certificati e configurare preventivamente i requisiti DNS e di protocollo.
 

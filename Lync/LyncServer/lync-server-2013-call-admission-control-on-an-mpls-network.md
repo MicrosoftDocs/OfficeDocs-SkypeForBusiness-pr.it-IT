@@ -3,6 +3,8 @@ title: 'Lync Server 2013: controllo di ammissione di chiamata in una rete MPLS'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Call admission control on an MPLS network
 ms:assetid: 0beec6be-2431-4255-a3d2-512dd030e66a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398168(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183387
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ee138a0f61bace067db12c9df4f06338aa13ac8b
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 23ff730e64b7c7a63e277e73fa082f6d9d4e1ca3
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40981324"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41742376"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -39,13 +41,13 @@ In una rete di commutazione di etichette Multiprotocol (MPLS), tutti i siti sono
 
 **Esempio di rete MPLS**
 
-![CAC con MPLS](images/Gg398168.54602e6e-ec11-4dae-936d-b01acda8a179(OCS.15).jpg "CAC con MPLS")
+![Controllo di ammissione di chiamata con MPLS](images/Gg398168.54602e6e-ec11-4dae-936d-b01acda8a179(OCS.15).jpg "Controllo di ammissione di chiamata con MPLS")
 
 Per distribuire il controllo di ammissione di chiamata (CAC) in una rete MPLS, è possibile creare un'area di rete per rappresentare il cloud MPLS e creare un sito di rete per rappresentare ogni sito satellite MPLS. Nella figura seguente viene illustrato il modo in cui i siti della rete e della rete devono essere configurati per rappresentare la rete MPLS di esempio nella figura precedente. I limiti generali della larghezza di banda e i limiti della sessione di larghezza di banda si basano sulla capacità del collegamento WAN da ogni sito di rete all'area di rete che rappresenta il cloud MPLS.
 
 **Area geografica e siti di rete per una rete MPLS**
 
-![Controllo di ammissione alle chiamate (CAC) con]il controllo di ammissione al diagramma MPLS(images/Gg398168.f8f76283-5c0c-4133-8a78-3fbbfd016dc4(OCS.15).jpg "(CAC) con il diagramma MPLS")
+![Diagramma del controllo di ammissione di chiamata con MPLS](images/Gg398168.f8f76283-5c0c-4133-8a78-3fbbfd016dc4(OCS.15).jpg "Diagramma del controllo di ammissione di chiamata con MPLS")
 
 </div>
 

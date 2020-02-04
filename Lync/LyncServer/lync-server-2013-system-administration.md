@@ -3,6 +3,8 @@ title: 'Lync Server 2013: amministrazione di sistema'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: System administration
 ms:assetid: 063eb962-b96a-4699-8579-bb7125112df4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn720318(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 63969577
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d62526daf43308b4ed38538e5ea16e15b271fc9a
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 8e10f0d340ec0d291d0b184b8649f8f132683e08
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40979709"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41764282"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -55,7 +57,7 @@ Il diagramma seguente mostra il processo di risoluzione dei problemi del sistema
 
 **Diagramma di flusso di risoluzione dei problemi di sistema**
 
-![](images/Dn720318.869d0b89-6473-4b1f-9d90-59604b4b8e98(OCS.15).jpg "Diagramma") di flusso per la risoluzione dei problemi del sistema
+![Diagramma di flusso per la risoluzione dei problemi del sistema](images/Dn720318.869d0b89-6473-4b1f-9d90-59604b4b8e98(OCS.15).jpg "Diagramma di flusso per la risoluzione dei problemi del sistema")
 
   - **Classificazione e assegnazione delle priorità**   questa attività viene in genere eseguita dal Service Desk. Ad esempio, un problema può essere raggruppato come problema software o hardware. Il problema viene quindi indirizzato al team di supporto appropriato per l'analisi. Le regole per determinare la priorità di un problema, insieme al tempo necessario per rispondere e il tempo di risoluzione, sono in genere definite nell'SLA.
 

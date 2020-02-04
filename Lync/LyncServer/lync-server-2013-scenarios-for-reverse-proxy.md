@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Scenari per i proxy inversi'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Scenarios for reverse proxy
 ms:assetid: 13108f59-a660-4ff1-8404-079d1cb646f2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204691(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183468
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1621e8bb0241e82f9f4678d4fe39a4f66f6bcf9b
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 82e1dffa55d6af8d131d3a94710c76277cfa75d9
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40985061"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41764964"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -39,7 +41,7 @@ I proxy inversi sono necessari in Lync Server 2013 per consentire l'accesso a se
 
 **Proxy inverso e servizi Web esterni**
 
-![13142405-d5c9-45b7-a8b7-a8c89f09c97c](images/JJ204932.13142405-d5c9-45b7-a8b7-a8c89f09c97c(OCS.15).jpg "13142405-d5c9") -45b7-a8b7-a8c89f09c97c
+![13142405-d5c9-45b7-a8b7-a8c89f09c97c](images/JJ204932.13142405-d5c9-45b7-a8b7-a8c89f09c97c(OCS.15).jpg "13142405-d5c9-45b7-a8b7-a8c89f09c97c")
 
 Durante la fase di pianificazione, è possibile definire i requisiti per il proxy inverso in una distribuzione di Lync Server 2013. Il proxy inverso consente l'accesso alle funzionalità per i client esterni seguenti:
 

@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Topologia di riferimento per organizzazioni di grandi 
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Reference topology for large organizations with multiple data centers
 ms:assetid: 9a6aeae6-629b-49e6-9804-7ef369d7c3dc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398797(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184887
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2460378d19f8edb4e845778cacaf01c7141204c3
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 56d9edde5ab097f3244919d6dd2c572b4a1dc112
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978578"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41746886"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -43,7 +45,7 @@ Questa topologia è illustrata in più diagrammi, con una panoramica seguita da 
 
 **Panoramica della topologia di riferimento per le organizzazioni di grandi dimensioni con più centri dati**
 
-![Topologia di riferimento per la](images/Gg398797.471e1ce9-be11-44b9-9f4a-59e0551b7b30(OCS.15).jpg "topologia di riferimento") per più centri dati per più centri dati
+![Topologia di riferimento per più data center](images/Gg398797.471e1ce9-be11-44b9-9f4a-59e0551b7b30(OCS.15).jpg "Topologia di riferimento per più data center")
 
 **Topologia di riferimento per le organizzazioni di grandi dimensioni: visualizzazione dettagliata del sito centrale A**
 
@@ -51,11 +53,11 @@ Questa topologia è illustrata in più diagrammi, con una panoramica seguita da 
 
 **Topologia di riferimento per le organizzazioni di grandi dimensioni: visualizzazione dettagliata del sito centrale B**
 
-![5ccaf1d4-BD53-4cb7-96fe-723147334e7f](images/Gg398797.5ccaf1d4-bd53-4cb7-96fe-723147334e7f(OCS.15).jpg "5ccaf1d4-BD53-4cb7-96fe-723147334e7f")
+![5ccaf1d4-bd53-4cb7-96fe-723147334e7f](images/Gg398797.5ccaf1d4-bd53-4cb7-96fe-723147334e7f(OCS.15).jpg "5ccaf1d4-bd53-4cb7-96fe-723147334e7f")
 
 **Topologia di riferimento per le organizzazioni di grandi dimensioni: visualizzazione dettagliata del sito centrale C**
 
-![7238ca40-340c-491f-B497-ddc2665dadb6](images/Gg398797.7238ca40-340c-491f-b497-ddc2665dadb6(OCS.15).jpg "7238ca40-340c-491f-B497-ddc2665dadb6")
+![7238ca40-340c-491f-b497-ddc2665dadb6](images/Gg398797.7238ca40-340c-491f-b497-ddc2665dadb6(OCS.15).jpg "7238ca40-340c-491f-b497-ddc2665dadb6")
 
   - **I pool Front-End sono associati per consentire il ripristino di emergenza.**    I pool Front-end del sito a e del sito B sono associati tra loro per consentire il supporto per il ripristino di emergenza. Se il pool di un sito non riesce, l'amministratore può eseguire il failover degli utenti da tale sito al pool Front-end associato dell'altro sito, con un minimo di interruzioni dei servizi per gli utenti. Ognuno di questi due pool Front-end include sei server, che sono sufficienti per tutti gli utenti di 40.000 in entrambi i pool in caso di failover. Per altre informazioni, vedere [pianificazione per la disponibilità elevata e il ripristino di emergenza in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md).
 

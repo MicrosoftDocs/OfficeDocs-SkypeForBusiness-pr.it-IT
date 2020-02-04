@@ -3,6 +3,8 @@ title: Distribuire Edge Server pilota
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Deploy pilot Edge Server
 ms:assetid: dab345c0-8577-4c11-ac73-fe8b2a75f4cf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205306(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48185559
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bd8fddd611422562c9384a52748623623d4e6f68
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: cc9f88d731873a16535e80eb0726aec8335e447b
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40976636"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41729946"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,25 +47,25 @@ Mentre ci si sposta nella procedura guidata **Definisci nuovo pool Edge** , rive
 
 2.  Passare al nodo Lync Server 2013. Fare clic con il pulsante destro del mouse su pool **Edge**e scegliere **nuovo pool di bordi**.
     
-    ![Definire la finestra di dialogo nuovo pool di bordi](images/JJ205306.a90d388c-49ff-4620-a19d-42e2f1bb559c(OCS.15).jpg "definire la finestra di dialogo nuovo pool di bordi")
+    ![Finestra di dialogo Definire il nuovo pool di server perimetrali](images/JJ205306.a90d388c-49ff-4620-a19d-42e2f1bb559c(OCS.15).jpg "Finestra di dialogo Definire il nuovo pool di server perimetrali")
 
 3.  Un pool di Edge può essere un pool di **computer multipli** o un pool di **computer singolo**.
     
-    ![Definire la finestra di dialogo FQDN pool Edge](images/JJ205306.4904fe8f-537c-4e66-a399-1bd8a316dc10(OCS.15).jpg "Definisci la finestra di dialogo FQDN pool di Edge")
+    ![Finestra di dialogo Definire l'FQDN del pool di server perimetrali](images/JJ205306.4904fe8f-537c-4e66-a399-1bd8a316dc10(OCS.15).jpg "Finestra di dialogo Definire l'FQDN del pool di server perimetrali")
 
 4.  Nella pagina **Seleziona funzionalità** non abilitare la Federazione o la Federazione XMPP. Federazione e Federazione XMPP sono entrambi attualmente instradati attraverso il server perimetrale Lync Server 2010 legacy. Queste caratteristiche verranno configurate in una fase successiva della migrazione.
     
-    Finestra di dialogo ![Seleziona caratteristiche]selezionare la finestra di(images/JJ205306.cb0b45a4-2856-45ba-bd97-e49fafbb077e(OCS.15).jpg "dialogo caratteristiche")
+    ![Finestra di dialogo Selezionare funzionalità](images/JJ205306.cb0b45a4-2856-45ba-bd97-e49fafbb077e(OCS.15).jpg "Finestra di dialogo Selezionare funzionalità")
 
 5.  Continuare quindi a completare le pagine della procedura guidata seguenti: **FQDN esterni**, **definire l'indirizzo IP interno**e **definire l'indirizzo IP esterno**.
 
 6.  Nella pagina **Definisci l'hop successivo** selezionare il Director per l'hop successivo del pool di Edge di Lync Server 2010.
     
-    ![Definire la finestra di dialogo hop successivo]per(images/JJ205306.11baf3ea-74f5-4eb7-8650-b03b3b190416(OCS.15).jpg "definire la finestra di dialogo hop successivo")
+    ![Finestra di dialogo Definire l'hop successivo](images/JJ205306.11baf3ea-74f5-4eb7-8650-b03b3b190416(OCS.15).jpg "Finestra di dialogo Definire l'hop successivo")
 
 7.  Nella pagina **Associa pool di mediazione o front-end** non associare un pool a questo pool di Edge in questo momento. Il traffico multimediale esterno è attualmente instradato attraverso il server perimetrale Lync Server 2010 legacy. Questa impostazione verrà configurata in una fase successiva della migrazione.
     
-    Finestra di ![dialogo Associa pool Front-End]per associare la finestra di dialogo(images/JJ205306.fe0da887-7b51-4564-afc5-d57da95a2eb6(OCS.15).jpg "pool Front-End")
+    ![Finestra di dialogo Associare pool Front End](images/JJ205306.fe0da887-7b51-4564-afc5-d57da95a2eb6(OCS.15).jpg "Finestra di dialogo Associare pool Front End")
 
 8.  Fare clic su **fine** e quindi **pubblicare** la topologia.
 

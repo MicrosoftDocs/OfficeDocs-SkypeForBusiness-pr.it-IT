@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Riepilogo delle porte - proxy inverso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Port summary - Reverse proxy
 ms:assetid: 59b9ac3c-3e6f-4776-b366-174f0dd1f2eb
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204932(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184251
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3a86b993a35210934f5ebef61464c11a153bf297
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: f2944cde932413f00b5a4dcb75cd4a37bd5b3a3a
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40982250"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41747596"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,7 +47,7 @@ Il proxy inverso ha requisiti minimi per il firewall e la porta/protocollo.
 
   - La porta 4443 viene usata per il traffico dall'interfaccia interna del proxy inverso al server front-end, all'IP virtuale del pool Front End (VIP) o al pool di Director o Director facoltativo VIP
     
-    ![13142405-d5c9-45b7-a8b7-a8c89f09c97c](images/JJ204932.13142405-d5c9-45b7-a8b7-a8c89f09c97c(OCS.15).jpg "13142405-d5c9") -45b7-a8b7-a8c89f09c97c  
+    ![13142405-d5c9-45b7-a8b7-a8c89f09c97c](images/JJ204932.13142405-d5c9-45b7-a8b7-a8c89f09c97c(OCS.15).jpg "13142405-d5c9-45b7-a8b7-a8c89f09c97c")  
     
     <div>
     

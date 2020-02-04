@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Revisione del report certificati'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Reviewing the Certificates Report
 ms:assetid: 549cfc9b-3cc5-4483-a93c-fc0738c7f622
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg558651(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 51541477
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4a83167576746d3f90d96658b0dd3d65815f5375
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 410e9e99fccae7378b5260c9aa3a2281a3004cd5
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40984309"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41733036"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +39,7 @@ _**Argomento Ultima modifica:** 2013-02-21_
 
 Il report certificati contiene tutti i certificati necessari nella distribuzione di Lync Server 2013 consigliata. Lo strumento di pianificazione rappresenta i nomi di oggetto e i nomi alternativi oggetto immessi. Il testo predefinito lasciato inedito può rappresentare una potenziale sfida per il team responsabile per richiedere e rilasciare i certificati. Le informazioni sui certificati contengono anche informazioni sulla posizione in cui il certificato può in genere essere emesso. Se l'infrastruttura non ha un'infrastruttura a chiave pubblica (PKI) interna, tutti i certificati possono essere richiesti tramite un provider di certificati pubblici. Gli utilizzi delle chiavi estese (EKU) e i campi assegna ai nel report sono molto utili per capire qual è lo scopo e la posizione per ogni certificato.
 
-![](images/Gg558651.63a29335-d9e4-41ae-97ec-3c9d9fd30d8a(OCS.15).jpg "Report") Amministrazione certificati certificati rapporto di amministrazione
+![Rapporto di amministrazione certificati](images/Gg558651.63a29335-d9e4-41ae-97ec-3c9d9fd30d8a(OCS.15).jpg "Rapporto di amministrazione certificati")
 
 Esaminare con attenzione e assicurarsi di comprendere l'uso e lo scopo di ogni certificato nella distribuzione. In caso di domande su cosa fa un certificato, determinare il server o il servizio a cui si sta parlando. I certificati in Lync Server 2013 vengono usati per due scopi principali:
 

@@ -3,6 +3,8 @@ title: 'Lync Server 2013: modificare il diagramma di configurazione della rete'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Editing the network configuration diagram
 ms:assetid: 47425ab1-5645-4d6f-b202-64bcce43e3ef
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg558643(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 51541469
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2772cad1d1a16aa0363b1ab50d0bcaadacb91a08
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: dc199098d27364c3bc5f512a48d2e512c7c9d984
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40976890"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41729386"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +39,7 @@ _**Argomento Ultima modifica:** 2013-02-21_
 
 La maggior parte del lavoro svolto da un progettista in Lync Server 2013 è costituito dalla definizione delle voci relative agli indirizzi IP e ai nomi di dominio completi (FQDN) per le voci del diagramma reticolare. Le informazioni immesse in questa pagina vengono riportate nei report e in altre informazioni contenute nello strumento di pianificazione.
 
-![](images/Gg558643.eeabee2d-698c-4b79-baa5-caa4cfb7edb3(OCS.15).jpg "Diagramma reticolare") strumento pianificazione diagramma reticolare
+![Diagramma di rete dello strumento di pianificazione](images/Gg558643.eeabee2d-698c-4b79-baa5-caa4cfb7edb3(OCS.15).jpg "Diagramma di rete dello strumento di pianificazione")
 
 Lo strumento di pianificazione crea un diagramma reticolare con testo predefinito per gli indirizzi IP e i nomi di dominio completi.
 

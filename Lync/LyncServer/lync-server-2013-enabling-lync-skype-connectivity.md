@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Abilitazione della connettività Lync-Skype'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Enabling Lync-Skype connectivity
 ms:assetid: 34c4db3e-582f-41fb-85c4-3438ae02f09f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn440170(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 57793361
 ms.date: 12/16/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 794d2a71c07e742a3ab5597d4bd2aff77157d675
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 0125ff4719cd3dfeb65353df747395e596b45dac
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978555"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41735816"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,7 +47,7 @@ Per preparare l'ambiente Lync Server per la connettività Lync-Skype, l'amminist
 
 La Federazione è necessaria per consentire agli utenti Skype di comunicare con gli utenti di Lync dell'organizzazione. La connettività di messaggistica istantanea pubblica (PIC) è una classe di Federazione e deve essere configurata per consentire agli utenti di Lync di comunicare con gli utenti Skype. La Federazione e il PIC vengono configurati tramite il pannello di controllo di Lync Server, illustrato di seguito.
 
-![Visualizzazione]di PIC con(images/Dn440170.451b94e3-0b38-488c-835f-1f25690e8074(OCS.15).jpg "pic")
+![Visualizzazione di PIC](images/Dn440170.451b94e3-0b38-488c-835f-1f25690e8074(OCS.15).jpg "Visualizzazione di PIC")
 
 <div>
 
@@ -65,7 +67,7 @@ La Federazione è necessaria per consentire agli utenti Skype di comunicare con 
 
 Usando il pannello di controllo di Lync Server, un amministratore deve configurare uno o più criteri di accesso degli utenti esterni per controllare se gli utenti Skype possono collaborare con gli utenti interni di Lync Server.
 
-![](images/Dn440170.8fd46ad1-9749-422c-8c47-c16ac9032cdb(OCS.15).jpg "Criteri") per i criteri
+![Criteri](images/Dn440170.8fd46ad1-9749-422c-8c47-c16ac9032cdb(OCS.15).jpg "Criteri")
 
 </div>
 
@@ -119,7 +121,7 @@ Usando Lync Server Management Shell, un amministratore deve configurare i criter
 
 3.  Da un client Lync è ora possibile selezionare Skype come provider PIC e aggiungere un client Skype specificando il proprio account Microsoft. Inoltre, un utente Skype che si è Unito e ha effettuato l'accesso con il proprio account Microsoft può inviare una richiesta di contatto agli utenti di Lync. Per altre informazioni sugli account Microsoft, vedere [che cos'è un account Microsoft?](https://support.skype.com/en/faq/fa12059/what-is-a-microsoft-account). Per altre informazioni sull'aggiunta di client a Lync, vedere [uso della connettività Lync-Skype in Lync Server 2013 come utente finale](lync-server-2013-using-lync-skype-connectivity-as-an-end-user.md).
     
-    ![Aggiungere]contatto Skype(images/Dn440170.df0e6ed9-2374-4dfa-a815-87281989487c(OCS.15).jpg "Add Skype contact")
+    ![Aggiungere un contatto Skype](images/Dn440170.df0e6ed9-2374-4dfa-a815-87281989487c(OCS.15).jpg "Aggiungere un contatto Skype")
 
 4.  Per informazioni dettagliate sulla modifica di provider ospitati, vedere la pagina relativa alla creazione o modifica di [http://go.microsoft.com/fwlink/p/?LinkId=306065](http://go.microsoft.com/fwlink/p/?linkid=306065)provider federati SIP ospitati.
 

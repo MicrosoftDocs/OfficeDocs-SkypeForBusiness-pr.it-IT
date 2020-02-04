@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Testare il server Director'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Test the Director
 ms:assetid: 9627a7e2-28cc-429c-b79b-7c7a27573bb7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398767(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184856
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f889d548ddc9b177113aa3e395ac181095de8008
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: b82b8b7e494a66cf38fd27e37f322c79e95f801c
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40984226"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41746076"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,7 +47,7 @@ A questo punto, è configurato un pool di Director o Director, ma le voci SRV di
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Nel riquadro di spostamento fare clic su **topologia**e nella colonna **stato** verificare che sia presente un server verde con una freccia, ovvero l'icona del server con l'icona del server ![freccia verde](images/Gg398767.2263cdb7-7e60-457a-a528-a3a082bd051b(OCS.15).jpg "con freccia verde"), per il pool di Director o Director.
+3.  Nel riquadro di spostamento fare clic su **topologia**e nella colonna **stato** verificare che sia presente un server verde con una freccia, ovvero l' ![icona del server con freccia verde](images/Gg398767.2263cdb7-7e60-457a-a528-a3a082bd051b(OCS.15).jpg "Icona del server con la freccia verde"), per il pool di Director o Director.
 
 4.  Connettere due computer client con il client Lync Server 2013 installato e accedere con un account utente diverso abilitato per Lync Server 2013 a ogni computer.
 
