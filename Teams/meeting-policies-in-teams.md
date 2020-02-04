@@ -13,19 +13,19 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-f1keywords:
+f1.keywords:
 - ms.teamsadmincenter.meetingpolicies.overview
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - ms.teamsadmincenter.meetingpolicies.contentsharing
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams.
-ms.openlocfilehash: 9199be5eced7faee3e72f7b94c1f9e3be3c9573c
-ms.sourcegitcommit: a47bd5194672820380d30722b60779ce2d8a8f78
+ms.openlocfilehash: 2223882020bf9ea045e18d42c6591eceba628999
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41649102"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41708842"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri delle riunioni in teams
 
