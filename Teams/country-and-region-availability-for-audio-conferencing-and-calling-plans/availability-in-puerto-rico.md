@@ -18,18 +18,19 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per Puerto Rico.
-ms.openlocfilehash: 1e3606e48a235d3208d429581b23ce2b78bf03c2
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 7bfb3bb0e715606584026affe672040a5b82cb6a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37562825"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41694731"
 ---
 # <a name="availability-in-puerto-rico"></a>Disponibilità in Puerto Rico
 

@@ -17,18 +17,19 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per le isole Cayman.
-ms.openlocfilehash: b2f29f1f987dff54e9e4c2b3afbbf08bed4d0045
-ms.sourcegitcommit: cb394272050d049ebceedb7df835b86362dfd8d1
+ms.openlocfilehash: b519511ba09f8e51c19208cc8aa5caf9b38d7a7e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40741598"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41694541"
 ---
 # <a name="availability-in-the-cayman-islands"></a>Disponibilità nelle Isole Cayman
 

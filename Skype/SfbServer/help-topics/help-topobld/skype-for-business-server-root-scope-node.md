@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 8/10/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.RootScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d190f1f0-7741-432a-84ac-9530bb00abef
 description: 'Il nodo Lync Server elenca i siti centrali della topologia. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: b8b42ac2997d734e7c87584ce94090e0341911f9
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c61bfae684de1f883fc63dc8e6a5a0adf4af4e8a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191897"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41696621"
 ---
 # <a name="skype-for-business-server-root-scope-node"></a>Nodo dell'ambito radice di Lync Server
  
@@ -30,13 +30,13 @@ Il nodo **Lync Server** elenca i siti centrali della topologia. È possibile ese
     
 - **Nuova topologia**. Consente di iniziare a creare una nuova topologia per la distribuzione. Questa opzione è utile per la pianificazione della distribuzione, prima di installare i server. Non fare clic su questa opzione se è già stata usata la topologia corrente per installare la distribuzione.
     
-- **Aprire**la topologia. Apre un file di topologia salvato.
+- **Aprire la topologia**. Apre un file di topologia salvato.
     
-- **Scaricare**la topologia. Carica la topologia distribuita corrente dall'Central Management store. Se è già stata definita una topologia e è stata stabilita l'Central Management store, è sempre consigliabile scegliere questa opzione per caricare la topologia.
+- **Scaricare la topologia**. Carica la topologia distribuita corrente dall'Central Management store. Se è già stata definita una topologia e è stata stabilita l'Central Management store, è sempre consigliabile scegliere questa opzione per caricare la topologia.
     
 - **Salvare una copia della topologia con nome**. Salva la topologia corrente in un file che è possibile caricare più avanti in Generatore di topologia.
     
-- **Pubblicare**la topologia. Usare questa opzione per pubblicare questa topologia in Central Management store, in modo da poter iniziare a distribuire i server.
+- **Pubblicare la topologia**. Usare questa opzione per pubblicare questa topologia in Central Management store, in modo da poter iniziare a distribuire i server.
     
 - **Installare database**. Consente di creare i database necessari per la distribuzione.
     

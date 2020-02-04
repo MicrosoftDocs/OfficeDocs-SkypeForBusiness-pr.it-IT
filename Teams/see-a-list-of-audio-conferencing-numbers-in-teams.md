@@ -16,16 +16,17 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come cercare i numeri dei servizi di conferenza telefonica con accesso esterno da Microsoft teams. '
-ms.openlocfilehash: cc18194c8a0eea6dbf7c995bb5c661007d33ec1e
-ms.sourcegitcommit: 15fe483079847d24869e325eead35f252da8c7dd
+ms.openlocfilehash: 693012a2417e6fc828d2ff5be9b22e255a3bc810
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "37573424"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41694151"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers-in-microsoft-teams"></a>Visualizzare un elenco di numeri di servizi di audioconferenza in Microsoft Teams
 

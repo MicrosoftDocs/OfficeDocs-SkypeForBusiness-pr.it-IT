@@ -16,17 +16,18 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Calling Plans
 - LIL_Placement
 description: Per il piano di chiamate di Office 365, informazioni su come acquistare e configurare licenze, ottenere numeri di telefono, aggiungere e assegnare posizioni di emergenza e numeri di telefono agli utenti e informare gli utenti sui nuovi numeri di telefono.
-ms.openlocfilehash: b77db0169eedf1250ff7ddc8ea83c208e2b91849
-ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
+ms.openlocfilehash: 6c43408c09edaa220a6d3f030680a48fe321e6dd
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628412"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41693931"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 

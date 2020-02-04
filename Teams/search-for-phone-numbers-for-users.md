@@ -16,16 +16,17 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Calling Plans
 description: Vedere come cercare i numeri di telefono che è possibile assegnare agli utenti, per paese o area geografica e città e specificare la quantità di numeri necessari.
-ms.openlocfilehash: b3e7c93fd2759beed7588bda49d0326f018a4ab8
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 1229f74473ff5f12bf137011dcdc9ad6a87d44f0
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573438"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41694201"
 ---
 # <a name="search-for-phone-numbers-for-users"></a>Cercare numeri di telefono per gli utenti
 

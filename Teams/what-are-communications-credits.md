@@ -16,16 +16,17 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Licensing
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: 284c4b04ad1652b7a9ab3cb5d6d9bcb2f0902550
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 5da6f5807f5fd2868097525f1abe6ecd5def6d5f
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568576"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41694281"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
@@ -69,9 +70,9 @@ Per usare i numeri verdi in Skype for Business, sono necessari Crediti comunicaz
   
 Negli > **** > **abbonamenti**all'interfaccia di **amministrazione di Microsoft 365**è possibile aggiungere il credito manualmente in qualsiasi momento. È possibile anche abilitare l'opzione **Autoricarica**, che consente di ricaricare automaticamente l'account quando il saldo scende al di sotto della soglia impostata. Se si sceglie di pagare i Crediti comunicazioni versando l'importo in un'unica soluzione e il saldo scende a zero, i servizi di chiamata aggiuntivi illustrati in precedenza non saranno più disponibili. Per questo, è consigliabile utilizzare la funzione " **Autoricarica** " per evitare qualsiasi interruzione del servizio, nel caso in cui i Crediti comunicazioni arrivino a 0 (zero). Verrà inviata un'e-mail al completamento della transazione di ricarica, quando essa non va a buon fine (ad esempio una carta di credito scaduta) e anche quando i Crediti comunicazioni arrivano a 0 (zero).
   
-## <a name="communications-credits"></a>Crediti comunicazioni
+## <a name="communications-credits"></a>Credito per la comunicazione
 
-Ogni organizzazione farà un diverso uso dei piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Per le organizzazioni che usano Skype for business già come provider di servizi, è possibile ottenere i dati di utilizzo tramite la revisione in**report** dell'interfaccia di **Amministrazione** > di Microsoft 365 o nei report dell'interfaccia di >  **amministrazione di Skype for business**** **Dettagli sull' **utilizzo PSTN.**  > 
+Ogni organizzazione farà un diverso uso dei piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Per le organizzazioni che usano Skype for business già come provider di servizi, è possibile ottenere i dati di utilizzo tramite la revisione in**report** dell'**** > interfaccia di **Amministrazione** > di Microsoft 365 o nell'interfaccia di amministrazione > di **Skype for business**per**i dettagli sull'utilizzo PSTN**.
   
 Quando si impostano i Crediti comunicazioni è necessario analizzare l'uso delle chiamate nella propria organizzazione per determinare gli importi da considerare. Per ottenere informazioni sull'uso delle chiamate, esaminare il report **Dettagli dell'utilizzo della rete PSTN**. Questo report permette di esportare i record dei dati di chiamata su Excel e di creare report personalizzati.
 

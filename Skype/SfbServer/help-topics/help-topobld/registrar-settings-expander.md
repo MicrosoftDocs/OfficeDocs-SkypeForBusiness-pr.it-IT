@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.RegistrarSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c7486ab3-61fd-45c6-9edc-a15535f273ff
 description: La resilienza garantisce l'elevata disponibilità e il ripristino di emergenza per il pool di registrar. Fornendo un registrar di backup in caso di errore del registrar principale, il registrar di backup può subentrare per il registrar non riuscito, consentendo agli utenti di accedere e comunicare. Gli utenti possono potenzialmente provare funzionalità ridotte, a seconda dei sistemi non riusciti con il registrar principale.
-ms.openlocfilehash: d23258e0573136843b4efab19f92ff0a3190c405
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: bac382486b45acbb2e25d3be26d23ea67f1aa15b
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194968"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41696731"
 ---
 # <a name="registrar-settings-expander"></a>Espansione delle impostazioni del servizio di registrazione
  

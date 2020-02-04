@@ -18,18 +18,19 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per il Pakistan.
-ms.openlocfilehash: f06a63c51e8b70d0893b3b1216b46982bb2637cf
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: bf0c3eca9d440ac5967875d83b9fe4f75b1f3313
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571006"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41694821"
 ---
 # <a name="availability-in-pakistan"></a>Disponibilità in Pakistan
 
