@@ -7,21 +7,21 @@ manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeploySchemaPrepIntro
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e74f0ef5-4ced-489e-9509-e0464dad5c24
 description: Per avviare l'attività per estendere lo schema per Skype for Business Server 2015, iniziare nella pagina Prepara schema. Fare clic su Avanti per proseguire con la preparazione dello schema.
-ms.openlocfilehash: e30d51fbc57e1efaf6a060fba0f0a61a162b1797
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ad0abea86ca4b1688d2e4028cc6a473a9ab76a3b
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190085"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41700831"
 ---
-# <a name="prepare-schema-intro"></a><span data-ttu-id="9c32f-104">Preparare uno schema (Intro)</span><span class="sxs-lookup"><span data-stu-id="9c32f-104">Prepare Schema (Intro)</span></span>
+# <a name="prepare-schema-intro"></a><span data-ttu-id="98025-104">Preparare uno schema (Intro)</span><span class="sxs-lookup"><span data-stu-id="98025-104">Prepare Schema (Intro)</span></span>
  
-<span data-ttu-id="9c32f-105">Per avviare l'attività per estendere lo schema per Skype for Business Server 2015, iniziare nella pagina **Prepara schema** .</span><span class="sxs-lookup"><span data-stu-id="9c32f-105">To start the task to extend the schema for Skype for Business Server 2015, you begin on the **Prepare Schema** page.</span></span> <span data-ttu-id="9c32f-106">Fare clic su **Avanti** per proseguire con la preparazione dello schema.</span><span class="sxs-lookup"><span data-stu-id="9c32f-106">Click **Next** to continue with the schema preparation.</span></span>
+<span data-ttu-id="98025-105">Per avviare l'attività per estendere lo schema per Skype for Business Server 2015, iniziare nella pagina **Prepara schema** .</span><span class="sxs-lookup"><span data-stu-id="98025-105">To start the task to extend the schema for Skype for Business Server 2015, you begin on the **Prepare Schema** page.</span></span> <span data-ttu-id="98025-106">Fare clic su **Avanti** per proseguire con la preparazione dello schema.</span><span class="sxs-lookup"><span data-stu-id="98025-106">Click **Next** to continue with the schema preparation.</span></span>
   
 
