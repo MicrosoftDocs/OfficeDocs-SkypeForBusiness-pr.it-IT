@@ -3,6 +3,8 @@ title: "Lync Server 2013: pubblicazione della topologia aggiornata per l'aggiunt
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Publishing the updated topology to add Archiving databases
 ms:assetid: 454c68df-2ef5-4b5f-a44c-4eee02635d45
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204860(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184034
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7f39e5f35dbd088543456f09ddd49f6aa2f9325c
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: d0d12b1b4195e57fc289d11eb54f24903d05ea26
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40979400"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41747046"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -23,7 +25,7 @@ ms.locfileid: "40979400"
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="publishing-the-updated-topology-to-add-archiving-databases-in-lync-server-2013"></a><span data-ttu-id="36302-102">Pubblicazione della topologia aggiornata per l'aggiunta di database di archiviazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="36302-102">Publishing the updated topology to add Archiving databases in Lync Server 2013</span></span>
+# <a name="publishing-the-updated-topology-to-add-archiving-databases-in-lync-server-2013"></a><span data-ttu-id="ff460-102">Pubblicazione della topologia aggiornata per l'aggiunta di database di archiviazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ff460-102">Publishing the updated topology to add Archiving databases in Lync Server 2013</span></span>
 
 </div>
 
@@ -33,49 +35,49 @@ ms.locfileid: "40979400"
 
 <span> </span>
 
-<span data-ttu-id="36302-103">_**Argomento Ultima modifica:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="36302-103">_**Topic Last Modified:** 2012-10-01_</span></span>
+<span data-ttu-id="ff460-103">_**Argomento Ultima modifica:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="ff460-103">_**Topic Last Modified:** 2012-10-01_</span></span>
 
-<span data-ttu-id="36302-104">Dopo l'aggiornamento della topologia in Generatore di topologie, è necessario pubblicare la topologia in Central Management Store prima di poter configurare e usare l'archiviazione.</span><span class="sxs-lookup"><span data-stu-id="36302-104">After updating your topology in Topology Builder, you must publish the topology to the Central Management store before you can configure and use Archiving.</span></span> <span data-ttu-id="36302-105">Le copie di sola lettura dei dati vengono replicate in tutti i server della topologia per garantire la sincronizzazione di tutti i server con la topologia e altre modifiche alla configurazione.</span><span class="sxs-lookup"><span data-stu-id="36302-105">Read-only copies of the data are replicated to all servers in the topology to keep all servers in sync with topology and other configuration changes.</span></span>
+<span data-ttu-id="ff460-104">Dopo l'aggiornamento della topologia in Generatore di topologie, è necessario pubblicare la topologia in Central Management Store prima di poter configurare e usare l'archiviazione.</span><span class="sxs-lookup"><span data-stu-id="ff460-104">After updating your topology in Topology Builder, you must publish the topology to the Central Management store before you can configure and use Archiving.</span></span> <span data-ttu-id="ff460-105">Le copie di sola lettura dei dati vengono replicate in tutti i server della topologia per garantire la sincronizzazione di tutti i server con la topologia e altre modifiche alla configurazione.</span><span class="sxs-lookup"><span data-stu-id="ff460-105">Read-only copies of the data are replicated to all servers in the topology to keep all servers in sync with topology and other configuration changes.</span></span>
 
 <div>
 
-## <a name="to-publish-your-updated-topology"></a><span data-ttu-id="36302-106">Per pubblicare la topologia aggiornata</span><span class="sxs-lookup"><span data-stu-id="36302-106">To publish your updated topology</span></span>
+## <a name="to-publish-your-updated-topology"></a><span data-ttu-id="ff460-106">Per pubblicare la topologia aggiornata</span><span class="sxs-lookup"><span data-stu-id="ff460-106">To publish your updated topology</span></span>
 
-1.  <span data-ttu-id="36302-107">In un computer che esegue Lync Server 2013 o in cui sono installati gli strumenti di amministrazione di Lync Server, accedere con un account membro del gruppo utenti locali o un account con diritti utente equivalenti.</span><span class="sxs-lookup"><span data-stu-id="36302-107">On a computer that is running Lync Server 2013, or on which the Lync Server administrative tools are installed, log on using an account that is a member of the local Users group (or an account with equivalent user rights).</span></span>
+1.  <span data-ttu-id="ff460-107">In un computer che esegue Lync Server 2013 o in cui sono installati gli strumenti di amministrazione di Lync Server, accedere con un account membro del gruppo utenti locali o un account con diritti utente equivalenti.</span><span class="sxs-lookup"><span data-stu-id="ff460-107">On a computer that is running Lync Server 2013, or on which the Lync Server administrative tools are installed, log on using an account that is a member of the local Users group (or an account with equivalent user rights).</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="36302-108">Puoi definire una topologia usando un account che è un membro del gruppo utenti locali, ma per pubblicare una topologia, necessaria per aggiungere un server alla topologia. è necessario usare un account che sia un membro del gruppo <STRONG>Domain Admins</STRONG> e del gruppo <STRONG>RTCUniversalServerAdmins</STRONG> e che disponga delle autorizzazioni di controllo completo (ovvero, lettura, scrittura e modifica) nella condivisione di file in uso per l'archivio di file di Lync Server 2013, in modo che il generatore di topologia possa configurare l'elenco di controllo di accesso discrezionale richiesto (DACL). o un account con diritti equivalenti.</span><span class="sxs-lookup"><span data-stu-id="36302-108">You can define a topology by using an account that is a member of the local Users group, but to publish a topology, which is required to add a server to the topology, you must use an account that is a member of the <STRONG>Domain Admins</STRONG> group and the <STRONG>RTCUniversalServerAdmins</STRONG> group, and that has full control permissions (that is, read, write, and modify) on the file share that you are using for the Lync Server 2013 file store (that is, so that Topology Builder can configure the required discretionary access control list (DACLs), or an account with equivalent rights.</span></span>
+    > <span data-ttu-id="ff460-108">Puoi definire una topologia usando un account che è un membro del gruppo utenti locali, ma per pubblicare una topologia, necessaria per aggiungere un server alla topologia. è necessario usare un account che sia un membro del gruppo <STRONG>Domain Admins</STRONG> e del gruppo <STRONG>RTCUniversalServerAdmins</STRONG> e che disponga delle autorizzazioni di controllo completo (ovvero, lettura, scrittura e modifica) nella condivisione di file in uso per l'archivio di file di Lync Server 2013, in modo che il generatore di topologia possa configurare l'elenco di controllo di accesso discrezionale richiesto (DACL). o un account con diritti equivalenti.</span><span class="sxs-lookup"><span data-stu-id="ff460-108">You can define a topology by using an account that is a member of the local Users group, but to publish a topology, which is required to add a server to the topology, you must use an account that is a member of the <STRONG>Domain Admins</STRONG> group and the <STRONG>RTCUniversalServerAdmins</STRONG> group, and that has full control permissions (that is, read, write, and modify) on the file share that you are using for the Lync Server 2013 file store (that is, so that Topology Builder can configure the required discretionary access control list (DACLs), or an account with equivalent rights.</span></span>
 
     
     </div>
 
-2.  <span data-ttu-id="36302-109">Aprire la topologia creata nella sezione precedente usando generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="36302-109">Open the topology you created in the previous section using Topology Builder.</span></span>
+2.  <span data-ttu-id="ff460-109">Aprire la topologia creata nella sezione precedente usando generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="ff460-109">Open the topology you created in the previous section using Topology Builder.</span></span>
 
-3.  <span data-ttu-id="36302-110">Nell'albero della console fare clic con il pulsante destro del mouse su **Lync Server 2013**e quindi scegliere **Pubblica topologia**.</span><span class="sxs-lookup"><span data-stu-id="36302-110">In the console tree, right-click **Lync Server 2013**, and then click **Publish Topology**.</span></span>
+3.  <span data-ttu-id="ff460-110">Nell'albero della console fare clic con il pulsante destro del mouse su **Lync Server 2013**e quindi scegliere **Pubblica topologia**.</span><span class="sxs-lookup"><span data-stu-id="ff460-110">In the console tree, right-click **Lync Server 2013**, and then click **Publish Topology**.</span></span>
 
-4.  <span data-ttu-id="36302-111">Nella pagina **pubblica la topologia** fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="36302-111">On the **Publish the topology** page, click **Next**.</span></span>
+4.  <span data-ttu-id="ff460-111">Nella pagina **pubblica la topologia** fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="ff460-111">On the **Publish the topology** page, click **Next**.</span></span>
 
-5.  <span data-ttu-id="36302-112">Nella pagina **Crea database** verificare che il database sia selezionato e quindi fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="36302-112">On the **Create databases** page, verify that the database is selected, and then click **Next**.</span></span>
+5.  <span data-ttu-id="ff460-112">Nella pagina **Crea database** verificare che il database sia selezionato e quindi fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="ff460-112">On the **Create databases** page, verify that the database is selected, and then click **Next**.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="36302-113">Se non si dispone delle autorizzazioni appropriate per la creazione di database, è possibile annullare la selezione del database e un utente con le autorizzazioni appropriate può creare il database.</span><span class="sxs-lookup"><span data-stu-id="36302-113">If you do not have the appropriate permissions to create databases, you can cancel the selection of the database and someone with appropriate permissions can create the database.</span></span> <span data-ttu-id="36302-114">Per informazioni dettagliate sulle autorizzazioni e i diritti di amministratore necessari, vedere <A href="lync-server-2013-deployment-permissions-for-sql-server.md">autorizzazioni di distribuzione per SQL Server in Lync server 2013</A> nella documentazione relativa alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="36302-114">For details about the required administrator rights and permissions, see <A href="lync-server-2013-deployment-permissions-for-sql-server.md">Deployment permissions for SQL Server in Lync Server 2013</A> in the Deployment documentation.</span></span><BR><span data-ttu-id="36302-115">Solo i database su server SQL dedicati possono essere installati tramite Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="36302-115">Only databases on dedicated SQL Server servers can be installed by using Topology Builder.</span></span> <span data-ttu-id="36302-116">I database di SQL Server che sono collocati con altri componenti server devono essere installati eseguendo la configurazione locale nel computer in uso.</span><span class="sxs-lookup"><span data-stu-id="36302-116">Databases on SQL Server servers that are collocated with other server components must be installed by running local setup on that computer.</span></span>
+    > <span data-ttu-id="ff460-113">Se non si dispone delle autorizzazioni appropriate per la creazione di database, è possibile annullare la selezione del database e un utente con le autorizzazioni appropriate può creare il database.</span><span class="sxs-lookup"><span data-stu-id="ff460-113">If you do not have the appropriate permissions to create databases, you can cancel the selection of the database and someone with appropriate permissions can create the database.</span></span> <span data-ttu-id="ff460-114">Per informazioni dettagliate sulle autorizzazioni e i diritti di amministratore necessari, vedere <A href="lync-server-2013-deployment-permissions-for-sql-server.md">autorizzazioni di distribuzione per SQL Server in Lync server 2013</A> nella documentazione relativa alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="ff460-114">For details about the required administrator rights and permissions, see <A href="lync-server-2013-deployment-permissions-for-sql-server.md">Deployment permissions for SQL Server in Lync Server 2013</A> in the Deployment documentation.</span></span><BR><span data-ttu-id="ff460-115">Solo i database su server SQL dedicati possono essere installati tramite Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="ff460-115">Only databases on dedicated SQL Server servers can be installed by using Topology Builder.</span></span> <span data-ttu-id="ff460-116">I database di SQL Server che sono collocati con altri componenti server devono essere installati eseguendo la configurazione locale nel computer in uso.</span><span class="sxs-lookup"><span data-stu-id="ff460-116">Databases on SQL Server servers that are collocated with other server components must be installed by running local setup on that computer.</span></span>
 
     
     </div>
 
-6.  <span data-ttu-id="36302-117">Nella pagina **completamento pubblicazione guidata** verificare che la topologia sia stata pubblicata correttamente e quindi fare clic su **fine**.</span><span class="sxs-lookup"><span data-stu-id="36302-117">On the **Publishing wizard complete** page, verify that the topology was successfully published, and then click **Finish**.</span></span>
+6.  <span data-ttu-id="ff460-117">Nella pagina **completamento pubblicazione guidata** verificare che la topologia sia stata pubblicata correttamente e quindi fare clic su **fine**.</span><span class="sxs-lookup"><span data-stu-id="ff460-117">On the **Publishing wizard complete** page, verify that the topology was successfully published, and then click **Finish**.</span></span>
     
     <div>
     
 
     > [!IMPORTANT]  
-    > <span data-ttu-id="36302-118">Dopo aver pubblicato la topologia, è necessario configurare le opzioni e i criteri per l'archiviazione prima che sia possibile archiviare qualsiasi contenuto.</span><span class="sxs-lookup"><span data-stu-id="36302-118">After publishing the topology, you must configure options and policies for Archiving before any content can be archived.</span></span> <span data-ttu-id="36302-119">Per informazioni dettagliate, vedere <A href="lync-server-2013-configuring-support-for-archiving.md">configurazione del supporto per l'archiviazione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="36302-119">For details, see <A href="lync-server-2013-configuring-support-for-archiving.md">Configuring support for Archiving in Lync Server 2013</A> in the Deployment documentation.</span></span>
+    > <span data-ttu-id="ff460-118">Dopo aver pubblicato la topologia, è necessario configurare le opzioni e i criteri per l'archiviazione prima che sia possibile archiviare qualsiasi contenuto.</span><span class="sxs-lookup"><span data-stu-id="ff460-118">After publishing the topology, you must configure options and policies for Archiving before any content can be archived.</span></span> <span data-ttu-id="ff460-119">Per informazioni dettagliate, vedere <A href="lync-server-2013-configuring-support-for-archiving.md">configurazione del supporto per l'archiviazione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="ff460-119">For details, see <A href="lync-server-2013-configuring-support-for-archiving.md">Configuring support for Archiving in Lync Server 2013</A> in the Deployment documentation.</span></span>
 
     
     </div>
