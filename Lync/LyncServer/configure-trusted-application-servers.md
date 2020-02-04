@@ -4,6 +4,8 @@ ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
 audience: Admin
+f1.keywords:
+- NOCSH
 TOCTitle: Configure trusted application servers
 ms:assetid: 20c3815f-3048-4940-8c0f-cdfcd0801d5d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204735(v=OCS.15)
@@ -11,12 +13,12 @@ ms:contentKeyID: 48183592
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cab126429fc5ec77a2308fdc1e1f8965fdfccb5b
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: fee8a8894285a321a4a0bc51a7cdf0462be7af85
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "40981385"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41729086"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -24,7 +26,7 @@ ms.locfileid: "40981385"
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-trusted-application-servers"></a><span data-ttu-id="f83f4-102">Configurare i server applicazioni attendibili</span><span class="sxs-lookup"><span data-stu-id="f83f4-102">Configure trusted application servers</span></span>
+# <a name="configure-trusted-application-servers"></a><span data-ttu-id="76a36-102">Configurare i server applicazioni attendibili</span><span class="sxs-lookup"><span data-stu-id="76a36-102">Configure trusted application servers</span></span>
 
 </div>
 
@@ -34,27 +36,27 @@ ms.locfileid: "40981385"
 
 <span> </span>
 
-<span data-ttu-id="f83f4-103">_**Argomento Ultima modifica:** 2012-10-11_</span><span class="sxs-lookup"><span data-stu-id="f83f4-103">_**Topic Last Modified:** 2012-10-11_</span></span>
+<span data-ttu-id="76a36-103">_**Argomento Ultima modifica:** 2012-10-11_</span><span class="sxs-lookup"><span data-stu-id="76a36-103">_**Topic Last Modified:** 2012-10-11_</span></span>
 
-<span data-ttu-id="f83f4-104">In un ambiente misto, se si crea un nuovo server applicazioni attendibile, è necessario impostare il pool di hop successivo come pool di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f83f4-104">In a mixed environment, if you create a new trusted application server, you must set the next hop pool to be a Lync Server 2013 pool.</span></span> <span data-ttu-id="f83f4-105">In un ambiente misto sia il pool legacy Lync Server 2010 che il pool Lync Server 2013 vengono visualizzati nell'elenco a discesa.</span><span class="sxs-lookup"><span data-stu-id="f83f4-105">In a mixed environment, both the legacy Lync Server 2010 pool and the Lync Server 2013 pool appear in the drop down list.</span></span> <span data-ttu-id="f83f4-106">La selezione del pool legacy non è supportata.</span><span class="sxs-lookup"><span data-stu-id="f83f4-106">Selecting the legacy pool is not supported.</span></span>
+<span data-ttu-id="76a36-104">In un ambiente misto, se si crea un nuovo server applicazioni attendibile, è necessario impostare il pool di hop successivo come pool di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="76a36-104">In a mixed environment, if you create a new trusted application server, you must set the next hop pool to be a Lync Server 2013 pool.</span></span> <span data-ttu-id="76a36-105">In un ambiente misto sia il pool legacy Lync Server 2010 che il pool Lync Server 2013 vengono visualizzati nell'elenco a discesa.</span><span class="sxs-lookup"><span data-stu-id="76a36-105">In a mixed environment, both the legacy Lync Server 2010 pool and the Lync Server 2013 pool appear in the drop down list.</span></span> <span data-ttu-id="76a36-106">La selezione del pool legacy non è supportata.</span><span class="sxs-lookup"><span data-stu-id="76a36-106">Selecting the legacy pool is not supported.</span></span>
 
-<span data-ttu-id="f83f4-107">**Selezionare Lync Server 2013 come hop successivo quando si crea un server applicazioni attendibile**</span><span class="sxs-lookup"><span data-stu-id="f83f4-107">**Select Lync Server 2013 as next hop when creating a Trusted application server**</span></span>
+<span data-ttu-id="76a36-107">**Selezionare Lync Server 2013 come hop successivo quando si crea un server applicazioni attendibile**</span><span class="sxs-lookup"><span data-stu-id="76a36-107">**Select Lync Server 2013 as next hop when creating a Trusted application server**</span></span>
 
-1.  <span data-ttu-id="f83f4-108">Aprire Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="f83f4-108">Open Topology Builder.</span></span>
+1.  <span data-ttu-id="76a36-108">Aprire Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="76a36-108">Open Topology Builder.</span></span>
 
-2.  <span data-ttu-id="f83f4-109">Nel riquadro sinistro fare clic con il pulsante destro del mouse su **server applicazioni attendibili** e scegliere **nuovo pool di applicazioni attendibili**.</span><span class="sxs-lookup"><span data-stu-id="f83f4-109">In the left pane, right click **Trusted application servers** and click **New Trusted Application Pool**.</span></span>
+2.  <span data-ttu-id="76a36-109">Nel riquadro sinistro fare clic con il pulsante destro del mouse su **server applicazioni attendibili** e scegliere **nuovo pool di applicazioni attendibili**.</span><span class="sxs-lookup"><span data-stu-id="76a36-109">In the left pane, right click **Trusted application servers** and click **New Trusted Application Pool**.</span></span>
 
-3.  <span data-ttu-id="f83f4-110">Immettere il **nome di dominio completo del pool** di applicazioni attendibili e selezionare se si tratta di un server singolo o multiplo.</span><span class="sxs-lookup"><span data-stu-id="f83f4-110">Enter the **Pool FQDN** of the trusted application pool and select whether it will be a single-server or multiple-server.</span></span>
+3.  <span data-ttu-id="76a36-110">Immettere il **nome di dominio completo del pool** di applicazioni attendibili e selezionare se si tratta di un server singolo o multiplo.</span><span class="sxs-lookup"><span data-stu-id="76a36-110">Enter the **Pool FQDN** of the trusted application pool and select whether it will be a single-server or multiple-server.</span></span>
 
-4.  <span data-ttu-id="f83f4-111">Fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="f83f4-111">Click **Next**.</span></span>
+4.  <span data-ttu-id="76a36-111">Fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="76a36-111">Click **Next**.</span></span>
 
-5.  <span data-ttu-id="f83f4-112">Nella pagina **selezionare l'hop successivo** , nell'elenco, selezionare il pool di front end di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f83f4-112">On the **Select the next hop** page, from the list, select the Lync Server 2013 Front End pool.</span></span>
+5.  <span data-ttu-id="76a36-112">Nella pagina **selezionare l'hop successivo** , nell'elenco, selezionare il pool di front end di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="76a36-112">On the **Select the next hop** page, from the list, select the Lync Server 2013 Front End pool.</span></span>
 
-6.  <span data-ttu-id="f83f4-113">Fare clic su **fine**.</span><span class="sxs-lookup"><span data-stu-id="f83f4-113">Click **Finish**.</span></span>
+6.  <span data-ttu-id="76a36-113">Fare clic su **fine**.</span><span class="sxs-lookup"><span data-stu-id="76a36-113">Click **Finish**.</span></span>
 
-7.  <span data-ttu-id="f83f4-114">Selezionare il nodo superiore **Lync Server** e scegliere **pubblica**dal menu **azione** .</span><span class="sxs-lookup"><span data-stu-id="f83f4-114">Select the top node **Lync Server** and from the **Action** menu, select **Publish**.</span></span>
+7.  <span data-ttu-id="76a36-114">Selezionare il nodo superiore **Lync Server** e scegliere **pubblica**dal menu **azione** .</span><span class="sxs-lookup"><span data-stu-id="76a36-114">Select the top node **Lync Server** and from the **Action** menu, select **Publish**.</span></span>
     
-    <span data-ttu-id="f83f4-115">Verificare che il **pool di applicazioni attendibili** sia stato creato correttamente ed è associato al pool Front-end corretto.</span><span class="sxs-lookup"><span data-stu-id="f83f4-115">Verify the **Trusted Application Pool** has been created successfully and is associated with the correct Front End pool.</span></span>
+    <span data-ttu-id="76a36-115">Verificare che il **pool di applicazioni attendibili** sia stato creato correttamente ed è associato al pool Front-end corretto.</span><span class="sxs-lookup"><span data-stu-id="76a36-115">Verify the **Trusted Application Pool** has been created successfully and is associated with the correct Front End pool.</span></span>
 
 </div>
 
