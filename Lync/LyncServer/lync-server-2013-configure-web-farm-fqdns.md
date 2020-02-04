@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Configurare i nomi di dominio completi (FQDN) delle We
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Configure web farm FQDNs
 ms:assetid: cb25dbbd-dcea-4997-8e14-e5007dd7d3ca
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg429722(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48185481
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 517e00baef63e3597c2f5b2b6621e62efb02ca62
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 4bd01b02cef8d806f390b6b700fa42acd37e27d8
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40975247"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41733766"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -23,7 +25,7 @@ ms.locfileid: "40975247"
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-web-farm-fqdns-for-lync-server-2013"></a><span data-ttu-id="12fc7-102">Configurare i nomi di dominio completi (FQDN) delle Web farm per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="12fc7-102">Configure web farm FQDNs for Lync Server 2013</span></span>
+# <a name="configure-web-farm-fqdns-for-lync-server-2013"></a><span data-ttu-id="9d838-102">Configurare i nomi di dominio completi (FQDN) delle Web farm per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9d838-102">Configure web farm FQDNs for Lync Server 2013</span></span>
 
 </div>
 
@@ -33,42 +35,42 @@ ms.locfileid: "40975247"
 
 <span> </span>
 
-<span data-ttu-id="12fc7-103">_**Argomento Ultima modifica:** 2013-03-29_</span><span class="sxs-lookup"><span data-stu-id="12fc7-103">_**Topic Last Modified:** 2013-03-29_</span></span>
+<span data-ttu-id="9d838-103">_**Argomento Ultima modifica:** 2013-03-29_</span><span class="sxs-lookup"><span data-stu-id="9d838-103">_**Topic Last Modified:** 2013-03-29_</span></span>
 
-<span data-ttu-id="12fc7-104">Quando è stata definita la configurazione del server Standard Edition, del pool di front-end, del pool di Director o Director in Generatore di topologie, è possibile configurare un nome di dominio completo (FQDN) dei servizi Web esterni.</span><span class="sxs-lookup"><span data-stu-id="12fc7-104">When you defined the configuration of the Standard Edition server, Front End pool, Director or Director pool in Topology Builder, you configure an external web services fully qualified domain name (FQDN).</span></span> <span data-ttu-id="12fc7-105">Durante il processo di accesso di un client ospitato nel server standard o nel pool Front-End, i nomi FQDN dei servizi Web configurati vengono inviati tramite provisioning in banda.</span><span class="sxs-lookup"><span data-stu-id="12fc7-105">During the log on process of a client homed in the Standard Edition server or Front End pool, the configured web services FQDNs are sent by way of in-band provisioning.</span></span> <span data-ttu-id="12fc7-106">Se è necessario aggiungere o modificare l'URL dei servizi Web esterni, usare generatore di topologie per configurare o riconfigurare la configurazione dei servizi Web usando la procedura descritta in questo argomento.</span><span class="sxs-lookup"><span data-stu-id="12fc7-106">If you need to add or change the external web services URL, you use Topology Builder to configure or reconfigure the web services configuration using the procedure in this topic.</span></span>
+<span data-ttu-id="9d838-104">Quando è stata definita la configurazione del server Standard Edition, del pool di front-end, del pool di Director o Director in Generatore di topologie, è possibile configurare un nome di dominio completo (FQDN) dei servizi Web esterni.</span><span class="sxs-lookup"><span data-stu-id="9d838-104">When you defined the configuration of the Standard Edition server, Front End pool, Director or Director pool in Topology Builder, you configure an external web services fully qualified domain name (FQDN).</span></span> <span data-ttu-id="9d838-105">Durante il processo di accesso di un client ospitato nel server standard o nel pool Front-End, i nomi FQDN dei servizi Web configurati vengono inviati tramite provisioning in banda.</span><span class="sxs-lookup"><span data-stu-id="9d838-105">During the log on process of a client homed in the Standard Edition server or Front End pool, the configured web services FQDNs are sent by way of in-band provisioning.</span></span> <span data-ttu-id="9d838-106">Se è necessario aggiungere o modificare l'URL dei servizi Web esterni, usare generatore di topologie per configurare o riconfigurare la configurazione dei servizi Web usando la procedura descritta in questo argomento.</span><span class="sxs-lookup"><span data-stu-id="9d838-106">If you need to add or change the external web services URL, you use Topology Builder to configure or reconfigure the web services configuration using the procedure in this topic.</span></span>
 
 <div>
 
-## <a name="to-configure-an-external-pool-fqdn-for-web-services"></a><span data-ttu-id="12fc7-107">Per configurare un nome di dominio completo del pool esterno per i servizi Web</span><span class="sxs-lookup"><span data-stu-id="12fc7-107">To configure an external pool FQDN for web services</span></span>
+## <a name="to-configure-an-external-pool-fqdn-for-web-services"></a><span data-ttu-id="9d838-107">Per configurare un nome di dominio completo del pool esterno per i servizi Web</span><span class="sxs-lookup"><span data-stu-id="9d838-107">To configure an external pool FQDN for web services</span></span>
 
-1.  <span data-ttu-id="12fc7-108">Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Generatore di topologia di Lync Server**.</span><span class="sxs-lookup"><span data-stu-id="12fc7-108">Start Topology Builder: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Topology Builder**.</span></span>
+1.  <span data-ttu-id="9d838-108">Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Generatore di topologia di Lync Server**.</span><span class="sxs-lookup"><span data-stu-id="9d838-108">Start Topology Builder: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Topology Builder**.</span></span>
 
-2.  <span data-ttu-id="12fc7-109">In Generatore di topologia, nell'albero della console, in **front ends Standard Edition**, i Front ends e gli **amministratori**di **Enterprise Edition**, fare clic con il pulsante destro del mouse sul nome del pool che è necessario modificare e quindi scegliere **modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="12fc7-109">In Topology Builder, in the console tree under **Standard Edition Front Ends**, **Enterprise Edition Front Ends**, and **Directors**, right-click the pool name that you need to edit, and then click **Edit Properties**.</span></span>
+2.  <span data-ttu-id="9d838-109">In Generatore di topologia, nell'albero della console, in **front ends Standard Edition**, i Front ends e gli **amministratori**di **Enterprise Edition**, fare clic con il pulsante destro del mouse sul nome del pool che è necessario modificare e quindi scegliere **modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="9d838-109">In Topology Builder, in the console tree under **Standard Edition Front Ends**, **Enterprise Edition Front Ends**, and **Directors**, right-click the pool name that you need to edit, and then click **Edit Properties**.</span></span>
 
-3.  <span data-ttu-id="12fc7-110">Nella sezione **servizi Web** aggiungere o modificare il nome di **dominio completo dei servizi Web esterni**.</span><span class="sxs-lookup"><span data-stu-id="12fc7-110">In the **Web services** section, add or edit the **External web services FQDN**.</span></span>
+3.  <span data-ttu-id="9d838-110">Nella sezione **servizi Web** aggiungere o modificare il nome di **dominio completo dei servizi Web esterni**.</span><span class="sxs-lookup"><span data-stu-id="9d838-110">In the **Web services** section, add or edit the **External web services FQDN**.</span></span>
 
-4.  <span data-ttu-id="12fc7-111">Rivedere e modificare le **porte in attesa** sia per http che per HTTPS.</span><span class="sxs-lookup"><span data-stu-id="12fc7-111">Review and adjust the **Listening ports** for both HTTP and HTTPS.</span></span> <span data-ttu-id="12fc7-112">Le impostazioni predefinite saranno:</span><span class="sxs-lookup"><span data-stu-id="12fc7-112">The defaults will be:</span></span>
+4.  <span data-ttu-id="9d838-111">Rivedere e modificare le **porte in attesa** sia per http che per HTTPS.</span><span class="sxs-lookup"><span data-stu-id="9d838-111">Review and adjust the **Listening ports** for both HTTP and HTTPS.</span></span> <span data-ttu-id="9d838-112">Le impostazioni predefinite saranno:</span><span class="sxs-lookup"><span data-stu-id="9d838-112">The defaults will be:</span></span>
     
-      - <span data-ttu-id="12fc7-113">**Porte in ascolto:** HTTP 8080, HTTPS 4443</span><span class="sxs-lookup"><span data-stu-id="12fc7-113">**Listening ports:** HTTP 8080, HTTPS 4443</span></span>
+      - <span data-ttu-id="9d838-113">**Porte in ascolto:** HTTP 8080, HTTPS 4443</span><span class="sxs-lookup"><span data-stu-id="9d838-113">**Listening ports:** HTTP 8080, HTTPS 4443</span></span>
     
-      - <span data-ttu-id="12fc7-114">**Porte pubblicate:** HTTP 80, HTTPS 443</span><span class="sxs-lookup"><span data-stu-id="12fc7-114">**Published ports:** HTTP 80, HTTPS 443</span></span>
+      - <span data-ttu-id="9d838-114">**Porte pubblicate:** HTTP 80, HTTPS 443</span><span class="sxs-lookup"><span data-stu-id="9d838-114">**Published ports:** HTTP 80, HTTPS 443</span></span>
     
-    <span data-ttu-id="12fc7-115">Dove le **porte in attesa** sono la porta che i servizi Web esterni verranno configurati per ricevere richieste dal proxy inverso e le porte **pubblicate** sono le porte pubblicate esternamente dal proxy inverso e vengono comunicate ai client durante il provisioning in banda.</span><span class="sxs-lookup"><span data-stu-id="12fc7-115">Where the **Listening ports** is the port that the external web services will be configured to receive requests from the reverse proxy, and the **Published ports** is the ports that are published externally by the reverse proxy and is communicated to clients during in-band provisioning.</span></span>
+    <span data-ttu-id="9d838-115">Dove le **porte in attesa** sono la porta che i servizi Web esterni verranno configurati per ricevere richieste dal proxy inverso e le porte **pubblicate** sono le porte pubblicate esternamente dal proxy inverso e vengono comunicate ai client durante il provisioning in banda.</span><span class="sxs-lookup"><span data-stu-id="9d838-115">Where the **Listening ports** is the port that the external web services will be configured to receive requests from the reverse proxy, and the **Published ports** is the ports that are published externally by the reverse proxy and is communicated to clients during in-band provisioning.</span></span>
 
-5.  <span data-ttu-id="12fc7-116">Dopo aver completato le aggiunte e gli aggiornamenti, fare clic su **OK** per continuare.</span><span class="sxs-lookup"><span data-stu-id="12fc7-116">When you have completed your additions and updates, click **OK** to continue.</span></span>
+5.  <span data-ttu-id="9d838-116">Dopo aver completato le aggiunte e gli aggiornamenti, fare clic su **OK** per continuare.</span><span class="sxs-lookup"><span data-stu-id="9d838-116">When you have completed your additions and updates, click **OK** to continue.</span></span>
 
-6.  <span data-ttu-id="12fc7-117">Fare clic con il pulsante destro del mouse su **Lync Server 2013**e quindi scegliere **pubblica**.</span><span class="sxs-lookup"><span data-stu-id="12fc7-117">Right-click **Lync Server 2013**, and then click **Publish**.</span></span>
+6.  <span data-ttu-id="9d838-117">Fare clic con il pulsante destro del mouse su **Lync Server 2013**e quindi scegliere **pubblica**.</span><span class="sxs-lookup"><span data-stu-id="9d838-117">Right-click **Lync Server 2013**, and then click **Publish**.</span></span>
     
     <div>
     
 
     > [!IMPORTANT]  
-    > <span data-ttu-id="12fc7-118">Una volta completata la pubblicazione, è possibile che venga presentato un collegamento che informa che è necessario eseguire ulteriori operazioni.</span><span class="sxs-lookup"><span data-stu-id="12fc7-118">After publishing successfully completes, a link may be presented that informs you that there are additional steps that need to be taken.</span></span> <span data-ttu-id="12fc7-119">Il collegamento, se selezionato, apre un elenco di server interessati dalle modifiche apportate in Generatore di topologia che richiedono la ripetizione della distribuzione guidata di Lync Server in ogni server elencato per aggiornare la configurazione per i componenti aggiunti, rimossi o modificati.</span><span class="sxs-lookup"><span data-stu-id="12fc7-119">The link, if clicked, opens a list of servers affected by the changes made in Topology Builder that will require you to re-run the Lync Server Deployment Wizard on each listed server to update the configuration for added, removed, or changed components.</span></span>
+    > <span data-ttu-id="9d838-118">Una volta completata la pubblicazione, è possibile che venga presentato un collegamento che informa che è necessario eseguire ulteriori operazioni.</span><span class="sxs-lookup"><span data-stu-id="9d838-118">After publishing successfully completes, a link may be presented that informs you that there are additional steps that need to be taken.</span></span> <span data-ttu-id="9d838-119">Il collegamento, se selezionato, apre un elenco di server interessati dalle modifiche apportate in Generatore di topologia che richiedono la ripetizione della distribuzione guidata di Lync Server in ogni server elencato per aggiornare la configurazione per i componenti aggiunti, rimossi o modificati.</span><span class="sxs-lookup"><span data-stu-id="9d838-119">The link, if clicked, opens a list of servers affected by the changes made in Topology Builder that will require you to re-run the Lync Server Deployment Wizard on each listed server to update the configuration for added, removed, or changed components.</span></span>
 
     
     </div>
 
-7.  <span data-ttu-id="12fc7-120">Ripetere questi passaggi per ogni server Standard Edition, pool Front-End, pool di Director o Director nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="12fc7-120">Repeat these steps for each Standard Edition server, Front End pool, Director or Director pool in the organization.</span></span>
+7.  <span data-ttu-id="9d838-120">Ripetere questi passaggi per ogni server Standard Edition, pool Front-End, pool di Director o Director nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="9d838-120">Repeat these steps for each Standard Edition server, Front End pool, Director or Director pool in the organization.</span></span>
 
 </div>
 
