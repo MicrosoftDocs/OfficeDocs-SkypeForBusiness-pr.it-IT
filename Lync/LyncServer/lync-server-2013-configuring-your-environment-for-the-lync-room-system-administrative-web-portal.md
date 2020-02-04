@@ -3,6 +3,8 @@ title: "Lync Server 2013: Configurazione dell'ambiente per il portale Web di amm
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Configuring your environment for the Lync Room System Administrative Web Portal
 ms:assetid: 1bf3cc55-cfa8-46ee-a8bc-6dab3bff76b2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn436325(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 56737623
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0ef7596e65c44f871da8c26a0526a389dde72a45
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 4f0f415cfeca5b798a1e29ac6ebe09105fbf08b4
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40981847"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41740586"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -65,19 +67,19 @@ Per usare il portale Web amministrativo di Lync room System (LRS), sarà necessa
     
      
     
-    ![Elenco di gruppi di amministratori con il ruolo gruppo](images/Dn436325.5d432819-a2e2-452c-bc2a-5d4ee79d8c33(OCS.15).png "di sicurezza di gruppi di amministratori con il ruolo gruppo di sicurezza")  
+    ![Elenco dei gruppi di amministratori con il ruolo gruppo di sicurezza](images/Dn436325.5d432819-a2e2-452c-bc2a-5d4ee79d8c33(OCS.15).png "Elenco dei gruppi di amministratori con il ruolo gruppo di sicurezza")  
     
      
 
 5.  Aggiungi LRSFullAccessAdminGroup come membro di LRSSupportAdminGroup.
     
-    Pagina membri ![Proprietà LRSSupportAdminGroup]pagina membri proprietà(images/Dn436325.91a4a28a-cacf-4ef6-aac1-915ec41c9648(OCS.15).png "LRSSupportAdminGroup")  
+    ![Pagina dei membri del gruppo LRSSupportAdminGroup](images/Dn436325.91a4a28a-cacf-4ef6-aac1-915ec41c9648(OCS.15).png "Pagina dei membri del gruppo LRSSupportAdminGroup")  
     
      
 
 6.  Creare un utente abilitato per SIP Active Directory con il nome LRSSupport. Aggiungere l'utente a LRSSupportAdminGroup.
     
-    Pagina membri ![Proprietà LRSSupportAdminGroup]pagina membri proprietà(images/Dn436325.7638055d-22ac-4909-914d-1966f5623909(OCS.15).png "LRSSupportAdminGroup")  
+    ![Pagina dei membri del gruppo LRSSupportAdminGroup](images/Dn436325.7638055d-22ac-4909-914d-1966f5623909(OCS.15).png "Pagina dei membri del gruppo LRSSupportAdminGroup")  
     
      
 

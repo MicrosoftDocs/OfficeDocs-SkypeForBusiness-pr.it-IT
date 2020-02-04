@@ -3,6 +3,8 @@ title: "Lync Server 2013: Linee guida per l'integrazione della messaggistica uni
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Guidelines for integrating on-premises Unified Messaging and Lync Server
 ms:assetid: 829ac017-6907-40f9-be22-787a28eae0ac
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398656(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184681
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 15973bf2055339e375e4aecc7cfd1f61ac205dbb
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 3f3e57245f0a8edf5b545f9a67547e6be6f63399
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40980742"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41739616"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -88,7 +90,7 @@ Le configurazioni di esempio seguenti garantiscono la resilienza della messaggis
 
 **Esempio 1: resilienza della messaggistica unificata di Exchange**
 
-![Esempio di messaggistica unificata di Exchange 1](images/Gg398656.3644b847-0847-4550-a989-e3fc51de5c4b(OCS.15).jpg "esempio di um Exchange 1")
+![Esempio 1 di messaggistica unificata di Exchange](images/Gg398656.3644b847-0847-4550-a989-e3fc51de5c4b(OCS.15).jpg "Esempio 1 di messaggistica unificata di Exchange")
 
 Nell'esempio 1 i server di messaggistica unificata di Exchange 1 e 2 sono abilitati nel centro dati di Tukwila e i server di messaggistica unificata di Exchange 3 e 4 sono abilitati nel Data Center di Dublino. In caso di interruzione della messaggistica unificata di Exchange in Tukwila, il DNS (Domain Name System) record per i server 1 e 2 deve essere configurato in modo che punti rispettivamente ai server 3 e 4. In caso di interruzione della messaggistica unificata di Exchange in Dublin, è necessario configurare i record DNS per i server 3 e 4 in modo che puntino rispettivamente ai server 1 e 2.
 
@@ -109,7 +111,7 @@ Nell'esempio 1 i server di messaggistica unificata di Exchange 1 e 2 sono abilit
 
 **Esempio 2: resilienza della messaggistica unificata di Exchange**
 
-![Esempio di messaggistica unificata di Exchange 2](images/Gg398656.15754273-306e-448d-b258-84bc2936a2e8(OCS.15).jpg "esempio di um") di Exchange 2
+![Esempio 2 di messaggistica unificata di Exchange](images/Gg398656.15754273-306e-448d-b258-84bc2936a2e8(OCS.15).jpg "Esempio 2 di messaggistica unificata di Exchange")
 
 Nell'esempio 2, in condizioni operative ordinarie i server Messaggistica unificata di Exchange 1 e 2 sono abilitati nel centro dati Tukwila e i server di messaggistica unificata di Exchange 3 e 4 sono abilitati nel Data Center di Dublino. Tutti e quattro i server sono inclusi nel dial plan URI SIP degli utenti di Tukwila; Tuttavia, i server 3 e 4 sono disabilitati. In caso di interruzione della messaggistica unificata di Exchange in Tukwila, ad esempio, i server di messaggistica unificata di Exchange 1 e 2 devono essere disabilitati e i server di messaggistica unificata di Exchange 3 e 4 devono essere abilitati in modo che il traffico di messaggistica unificata di Exchange venga Tukwila ai server di Dublino.
 

@@ -3,6 +3,8 @@ title: 'Lync Server 2013: poster: indicatori di integrità chiave'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: 'Poster: Key Health Indicators'
 ms:assetid: 8367dccf-adaa-4a0b-a4ed-bc9570cc5e24
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn593599(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 61084873
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9454197642ac87f5d8bc0d768795854d792f9a31
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 812ce68c84f86250fd25cc646bbcd5faddf0e566
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40980940"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41747446"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +39,7 @@ _**Argomento Ultima modifica:** 2014-02-10_
 
 Questo articolo è un complemento per gli [indicatori di integrità chiave: la base per il mantenimento](http://go.microsoft.com/fwlink/?linkid=391838) di un poster di Lync Server sani, che è possibile scaricare dall'area download.
 
-![Poster che descrive la risoluzione dei problemi con KHI data](images/Dn594589.b6fe82bd-d70f-4c1f-a812-b615ac5fa7d7(OCS.15).jpg "poster che descrive la risoluzione dei problemi usando i dati di KHI")
+![Poster relativo alla risoluzione dei problemi con i dati KHI](images/Dn594589.b6fe82bd-d70f-4c1f-a812-b615ac5fa7d7(OCS.15).jpg "Poster relativo alla risoluzione dei problemi con i dati KHI")
 
 Puoi usare questo poster per informazioni sugli indicatori di integrità chiave (KHIs), sui contatori delle prestazioni con soglie mirate a rivelare i problemi di esperienza utente. La raccolta dei dati di KHI è in genere il primo passaggio per implementare la metodologia di qualità delle chiamate (CQM), focalizzata sulla garanzia di un'esperienza audio di qualità per gli utenti di Lync.
 
