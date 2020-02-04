@@ -10,18 +10,18 @@ audience: admin
 search.appverid: MET150
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
 localization_priority: Priority
-f1keywords: ms.teamsadmincenter.orgwidesettings.guestaccess.overview
+f1.keywords: ms.teamsadmincenter.orgwidesettings.guestaccess.overview
 ms.collection:
 - Teams_ITAdmin_GuestAccess
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3ccaf4cae1b82b206ebfd27b185dddaf2ab0eece
-ms.sourcegitcommit: 9a6e59c0fa020656ed3e858d43e628c3122fc71a
+ms.openlocfilehash: e3490d208f95138d9aad57d69f55957dafb8734e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746289"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41707551"
 ---
 <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 ======================================
@@ -74,7 +74,6 @@ L'esperienza degli utenti guest presenta limitazioni nel design. È importante a
 - Creare o aggiornare un team
 - Sfogliare i team
 - Caricare file in una chat tra due persone
-- Gli utenti potranno comunque cercare e trovare altri utenti (all'esterno del team), se conoscono l'ID di posta elettronica completo dell'utente. Per evitare questo problema, gli amministratori IT possono usare modelli come [ricerca nella directory con ambito](teams-scoped-directory-search.md), che permettono di limitare gli utenti guest al proprio elenco indirizzi globale virtuale.
 - Attualmente, Teams supporta solo i tipi di utenti guest Stato1 e Stato 2 [come definiti da Azure B2B](https://docs.microsoft.com/azure/active-directory/b2b/user-properties)
 
 Per un elenco completo delle funzionalità di un utente guest in Teams, vedere la tabella di [confronto tra le funzionalità dei membri del team e degli utenti guest](guest-experience.md#comparison-of-team-member-and-guest-capabilities). Per altre informazioni sull'accesso guest a livello di Office 365, vedere [Aggiunta di utenti guest ai Gruppi di Office 365](https://support.office.com/article/guest-access-in-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6).
