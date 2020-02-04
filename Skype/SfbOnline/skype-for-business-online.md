@@ -14,13 +14,13 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.author: tonysmit
-f1keywords: ms.teamsadmincenter.dashboard.helparticle.sfboadmindocumentation
-ms.openlocfilehash: d2d2d647d200d6b043dbf131102fba402af6bf1f
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
-ms.translationtype: HT
+f1.keywords: ms.teamsadmincenter.dashboard.helparticle.sfboadmindocumentation
+ms.openlocfilehash: e99816442b6cde308765c1b5fef9bc8a1599434f
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35418339"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41705921"
 ---
 # <a name="skype-for-business-online-admin"></a>Amministratore Skype for Business Online
 
