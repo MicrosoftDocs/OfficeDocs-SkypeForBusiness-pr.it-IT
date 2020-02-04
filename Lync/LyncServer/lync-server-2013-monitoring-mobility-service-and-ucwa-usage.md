@@ -3,6 +3,8 @@ title: 'Lync Server 2013: monitoraggio del servizio di mobilità e uso di UCWA'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Monitoring Mobility Service and UCWA usage
 ms:assetid: 8389b37a-ca3e-4047-8b51-85bc07da87e8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Hh690025(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184683
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 758fef9e3f2c31bec88927c75b271808d5bbc43c
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: d4968c1a3b3dc30bdab2a3c19fd8e930da6122cb
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40979467"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41756810"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 

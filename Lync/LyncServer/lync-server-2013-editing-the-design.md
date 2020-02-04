@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Modifica della progettazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Editing the design
 ms:assetid: 08f639ba-0e5f-4ae7-9191-c3d96c25b169
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg558608(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 51541445
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 601c313231a26341c3c4cf8a4897d11872dec9a2
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: dfce3bc4242140364005a9a981282ecb90a42d3b
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978600"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41739456"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -39,7 +41,7 @@ Dopo aver completato le domande di colloquio iniziale, è possibile modificare i
 
 Lo strumento di pianificazione Visualizza la topologia di sito per il sito selezionato. Nella parte inferiore della pagina del sito sono presenti quattro schede:
 
-(images/Gg558608.e6189c20-360a-42bd-ba90-11bdb5b7551b(OCS.15).jpg "Topologia sito") strumento pianificazione ![topologia sito]strumento
+![Topologia del sito dello strumento di pianificazione](images/Gg558608.e6189c20-360a-42bd-ba90-11bdb5b7551b(OCS.15).jpg "Topologia del sito dello strumento di pianificazione")
 
   - Topologia sito: la pagina attualmente visualizzata con una panoramica visiva della topologia, come consigliato.
 
@@ -47,7 +49,7 @@ Lo strumento di pianificazione Visualizza la topologia di sito per il sito selez
 
   - Report amministratore Edge-il report amministratore Edge contiene un totale di quattro report:
     
-    ![](images/Gg558608.0019cc5e-af39-4cb9-82ce-58f6388242ff(OCS.15).jpg "Pagina") rapporto amministratore bordo pagina report amministratore  
+    ![Pagina del rapporto di amministrazione della rete perimetrale](images/Gg558608.0019cc5e-af39-4cb9-82ce-58f6388242ff(OCS.15).jpg "Pagina del rapporto di amministrazione della rete perimetrale")  
     
       - Report di riepilogo: un report generale delle impostazioni per la configurazione di rete perimetrale. Se si modificano i valori nella pagina del **diagramma reticolare** alla topologia TCP/IP e i valori FQDN di che verranno usati nella distribuzione effettiva, questi indirizzi e nomi verranno rappresentati qui. In caso contrario, verrà visualizzato il testo predefinito.
     
