@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Riepilogo dei certificati - proxy inverso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Certificate summary - Reverse proxy
 ms:assetid: f2b9a53f-aead-413d-81e9-4a294a010fbb
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205381(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48185820
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b9a10259ac4a0beb6d79897b26bf446b109801a8
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 42e52fa8522de53404fee3f3b5798f159361dbf5
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40982178"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41736616"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -39,7 +41,7 @@ I requisiti di certificato per il proxy inverso sono molto più semplici di quel
 
 **Diagramma di flusso certificati per proxy inverso**
 
-![Diagramma di flusso certificati per]il(images/JJ205381.026045d7-1b4b-4651-b32f-2d43a7161198(OCS.15).jpg "diagramma di flusso certificati Edge Server per Edge Server")
+![Diagramma di flusso Certificati per Edge Server](images/JJ205381.026045d7-1b4b-4651-b32f-2d43a7161198(OCS.15).jpg "Diagramma di flusso Certificati per Edge Server")
 
 ### <a name="reverse-proxy-external-interface"></a>Proxy inverso: interfaccia esterna
 

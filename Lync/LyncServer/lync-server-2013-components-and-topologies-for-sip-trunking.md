@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Componenti e topologie per il trunking SIP'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Components and topologies for SIP trunking
 ms:assetid: 8ed9a9d0-517e-4f36-a131-22cdafa257fa
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398720(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184775
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dc1b80078f942f3f70957a7af6b27b7dd9210046
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: d30c589ff02717ad49ce89d0d4e3324f6fe993e9
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40981921"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41742566"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -39,7 +41,7 @@ Nella figura seguente viene illustrata la topologia di trunking SIP in Lync Serv
 
 **Topologia di trunking SIP**
 
-(images/Gg398720.669fb55d-7c81-4e21-9421-fabc43d6e064(OCS.15).jpg "Topologia di trunking") SIP ![topologia]trunking SIP
+![Topologia basata sul trunking SIP](images/Gg398720.669fb55d-7c81-4e21-9421-fabc43d6e064(OCS.15).jpg "Topologia basata sul trunking SIP")
 
 Come illustrato nel diagramma, per la connettività tra la rete aziendale e il provider di servizi PSTN (Public Switched Telephone Network) viene usata una rete privata virtuale IP (VPN). Lo scopo di questa rete privata è offrire connettività IP, migliorare la sicurezza e, facoltativamente, ottenere garanzie di qualità del servizio (QoS). A causa della natura di una VPN, non è necessario usare Transport Layer Security (TLS) per il traffico di segnalazione SIP o il protocollo di trasporto in tempo reale (SRTP) sicuro per il traffico multimediale. Le connessioni tra l'organizzazione e il provider di servizi sono quindi costituite da connessioni TCP semplici per SIP e per il protocollo RTP (Plain Real-Time Transport Protocol) (tramite UDP) per i contenuti multimediali tramite una rete VPN IP. Assicurarsi che tutti i firewall tra i router VPN dispongano delle porte aperte per consentire ai router VPN di comunicare e che gli indirizzi IP sui bordi esterni dei router VPN siano instradabili pubblicamente.
 

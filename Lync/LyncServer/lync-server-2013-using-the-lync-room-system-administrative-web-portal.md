@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Uso del portale Web amministrativo di Lync Room System
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Using the Lync Room System Administrative Web Portal
 ms:assetid: c387b2a3-3e42-4642-af72-88126ed2820f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn743660(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 62268951
 ms.date: 11/13/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2369cdde9d14275fddf007b5e073c748ce5a8906
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: c891309d76dda20f875592841925c852fe2e3351
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40984263"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41743936"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -47,7 +49,7 @@ Dopo la distribuzione di LRS nel server, è possibile controllare lo stato di tu
 
 2.  Immettere le credenziali per l'account di LRSSupport o un account aggiunto al gruppo di sicurezza di LRSSupportAdminGroup.
 
-Schermata ![di accesso al portale di amministrazione di Lync room System](images/Dn436326.050bcf70-2f3b-46b2-9b96-ebd12679b713(OCS.15).png "")
+![Schermata di accesso al portale di amministrazione di Lync Room System](images/Dn436326.050bcf70-2f3b-46b2-9b96-ebd12679b713(OCS.15).png "Schermata di accesso al portale di amministrazione di Lync Room System")
 
 </div>
 
@@ -67,7 +69,7 @@ Nella pagina di riepilogo sono disponibili le informazioni seguenti per tutte le
 
   - **L'ultimo aggiornamento**   Visualizza l'ultima volta che è stata aggiornata la pagina Web.
 
-Interfaccia di ![amministrazione di Lync room System-visualizzazione]Riepilogo del portale di amministrazione di(images/Dn743660.f829ce90-dd95-4725-bd94-6870c5dcf046(OCS.15).png "Lync room System")
+![Visualizzazione di riepilogo del portale di amministrazione di Lync Room System](images/Dn743660.f829ce90-dd95-4725-bd94-6870c5dcf046(OCS.15).png "Visualizzazione di riepilogo del portale di amministrazione di Lync Room System")
 
 </div>
 
@@ -83,7 +85,7 @@ La sezione informazioni sala del portale consente di visualizzare e configurare 
 
 Nella sezione Impostazioni puoi impostare la password, il tag room e i livelli di volume predefiniti per la chat room. Se si configurano queste impostazioni, le modifiche verranno replicate solo dopo aver riavviato la console LRS. Verranno visualizzate solo le impostazioni di aggiornamenti di sistema per i sistemi room Lync versione 15,12 e successive.
 
-Impostazioni della sala di ![amministrazione di Lync room System Portal Settings]di(images/Dn743660.ab162e19-41ac-4991-9b2a-92575aa53eda(OCS.15).png "Lync room System")
+![Impostazioni della sala nel portale di amministrazione di Lync Room System](images/Dn743660.ab162e19-41ac-4991-9b2a-92575aa53eda(OCS.15).png "Impostazioni della sala nel portale di amministrazione di Lync Room System")
 
 </div>
 
@@ -93,7 +95,7 @@ Impostazioni della sala di ![amministrazione di Lync room System Portal Settings
 
 La sezione dettagli offre un riepilogo di sola lettura delle impostazioni della sala LRS, tra cui: l'ora dell'ultimo aggiornamento; riunione successiva; ultimi aggiornamenti, manutenzione e calibrazione; impostazioni predefinite altoparlante, microfono e suoneria; versione URI SIP; numero di schermate e dettagli su ogni schermata; stato e attività.
 
-![Informazioni dettagliate sul portale di amministrazione di Lync]room System per la visualizzazione dei(images/Dn743660.2958bbba-db74-4670-a920-87fdfb2fc22d(OCS.15).png "Dettagli del portale di amministrazione")
+![Visualizzazione dettagliata del portale di amministrazione di Lync Room System](images/Dn743660.2958bbba-db74-4670-a920-87fdfb2fc22d(OCS.15).png "Visualizzazione dettagliata del portale di amministrazione di Lync Room System")
 
 </div>
 
@@ -103,7 +105,7 @@ La sezione dettagli offre un riepilogo di sola lettura delle impostazioni della 
 
 La sezione risoluzione dei problemi può essere usata per raccogliere i log in remoto e salvarli in una posizione specifica. È anche possibile riavviare la console LRS (interfaccia utente di LRS) o riavviare l'intero sistema. Per raccogliere i log, specificare un percorso di cartella nel formato specificato e verificare che la cartella disponga delle autorizzazioni di scrittura assegnate all'account del computer LRS. Se le dimensioni del log sono troppo grandi, possono essere necessarie fino a 5 minuti per completare la raccolta dei log. L'aggiornamento della pagina ti darà lo stato più recente.
 
-Interfaccia di ![amministrazione di Lync room System Portal Login]sala di(images/Dn743660.749aee71-deaa-4ace-a146-fe2b349f0f42(OCS.15).png "amministrazione di Lync room System")
+![Registrazione della sala nel portale di amministrazione di Lync Room System](images/Dn743660.749aee71-deaa-4ace-a146-fe2b349f0f42(OCS.15).png "Registrazione della sala nel portale di amministrazione di Lync Room System")
 
 </div>
 
@@ -113,7 +115,7 @@ Interfaccia di ![amministrazione di Lync room System Portal Login]sala di(images
 
 La sezione integrità offre un'indicazione visiva dell'integrità della connessione Lync Server, del dispositivo audio, del dispositivo video, dello stato di resilienza e del dispositivo schermo.
 
-Interfaccia di ![amministrazione di Lync room System Portal]per l'integrità della sala di(images/Dn743660.8cc644f8-8e3e-42d5-9079-045d8fe9daa7(OCS.15).png "Amministrazione") dell'ambiente
+![Integrità della sala nel portale di amministrazione di Lync Room System](images/Dn743660.8cc644f8-8e3e-42d5-9079-045d8fe9daa7(OCS.15).png "Integrità della sala nel portale di amministrazione di Lync Room System")
 
 </div>
 

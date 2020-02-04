@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Soluzioni di resilienza dei siti di succursale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Branch-site resiliency solutions
 ms:assetid: 1700f99b-709c-4e47-88eb-c0a5490e26e2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398234(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183517
 ms.date: 12/11/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ce14328aed7ae4769d2f2aff18edb9c6135fe025
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 16261d4add87462991c877e85cc6a0ff1e7fdfd4
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978987"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41741836"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -86,7 +88,7 @@ La figura seguente mostra le topologie consigliate per la resilienza del sito di
 
 **Opzioni di resilienza del sito filiale**
 
-![](images/Gg398234.47eecd19-08ae-4d82-acbe-61f0de760306(OCS.15).jpg "Opzioni di") resilienza del ramo vocale
+![Opzioni di resilienza vocale dei siti di succursale (o siti derivati)](images/Gg398234.47eecd19-08ae-4d82-acbe-61f0de760306(OCS.15).jpg "Opzioni di resilienza vocale dei siti di succursale (o siti derivati)")
 
 </div>
 

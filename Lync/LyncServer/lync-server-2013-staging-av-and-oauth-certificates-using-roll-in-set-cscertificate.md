@@ -3,6 +3,8 @@ title: Gestione di certificati AV e OAuth con-roll in Set-CsCertificate
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Staging AV and OAuth certificates using -Roll in Set-CsCertificate
 ms:assetid: 22dec3cc-4b6b-4df2-b269-5b35df4731a7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ660292(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 49354387
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4acdf759181dee3df872c7803ec595c63fb07016
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 583ab13e50cac7c7a8b345a2ea2cf4c4e1e38d7f
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40977689"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41764432"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -117,7 +119,7 @@ Per comprendere ulteriormente il processo che Set-CsCertificate,-roll e-Effectiv
 
 Nell'esempio seguente l'amministratore determina che il certificato del servizio A/V Edge è scaduto a 2:00:00 PM su 07/22/2012. Richiede e riceve un nuovo certificato e lo importa in ogni Edge Server nel suo pool. Alle 2 di 07/22/2012, inizia a eseguire Get-CsCertificate con-roll,-identificazione personale uguale alla stringa di identificazione personale del nuovo certificato e-EffectiveTime impostato su 07/22/2012 6:00:00 AM. Esegue questo comando in ogni server perimetrale.
 
-![Uso dei parametri roll e EffectiveDate.] (images/JJ660292.21d51a76-0d03-4ed7-a37e-a7c14940265f(OCS.15).jpg "Uso dei parametri roll e EffectiveDate.")
+![Uso dei parametri Roll ed EffectiveDate.](images/JJ660292.21d51a76-0d03-4ed7-a37e-a7c14940265f(OCS.15).jpg "Uso dei parametri Roll ed EffectiveDate.")
 
 Quando viene raggiunto il tempo effettivo (7/22/2012 6:00:00 AM), tutti i nuovi token vengono emessi dal nuovo certificato. Quando si convalidano i token, i token verranno prima convalidati in base al nuovo certificato. Se la convalida non riesce, viene provato il vecchio certificato. Il processo per provare il nuovo e il ritorno al vecchio certificato continuerà fino all'ora di scadenza del vecchio certificato. Dopo la scadenza del certificato precedente (7/22/2012 2:00:00 PM), i token verranno convalidati solo dal nuovo certificato. Il vecchio certificato può essere rimosso in modo sicuro usando il cmdlet Remove-CsCertificate con il parametro – Previous.
 
