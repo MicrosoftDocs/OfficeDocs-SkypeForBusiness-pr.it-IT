@@ -7,23 +7,23 @@ manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployCertRequestOnlineOffline
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 83697d4c-320b-4797-beb0-dd0bc4f1d0d6
 description: Per creare una richiesta ritardata o offline, selezionare Prepara la richiesta per l'invio posticipato (richiesta di certificato non in linea). Per creare una richiesta immediata a un'autorità di certificazione online (in genere un sistema interno nell'infrastruttura a chiave pubblica dell'organizzazione), selezionare Invia immediatamente la richiesta a un'autorità di certificazione online.
-ms.openlocfilehash: 51463baabfb7bfc57151366c4938012bd5dbad5a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d3c86032879d2dd956adff981de3395cd83d0111
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195314"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41687759"
 ---
-# <a name="certificate-request-online-offline"></a><span data-ttu-id="d4e1c-104">Richiesta di certificato (Online Offline)</span><span class="sxs-lookup"><span data-stu-id="d4e1c-104">Certificate Request (Online Offline)</span></span>
+# <a name="certificate-request-online-offline"></a><span data-ttu-id="a6a96-104">Richiesta di certificato (Online Offline)</span><span class="sxs-lookup"><span data-stu-id="a6a96-104">Certificate Request (Online Offline)</span></span>
  
-<span data-ttu-id="d4e1c-105">Per creare una richiesta ritardata o offline, selezionare **Prepara la richiesta per l'invio posticipato (richiesta di certificato non in linea)**.</span><span class="sxs-lookup"><span data-stu-id="d4e1c-105">To create a delayed request or an offline request, select **Prepare the request now, but send it later (offline certificate request)**.</span></span> <span data-ttu-id="d4e1c-106">Per creare una richiesta immediata a un'autorità di certificazione online (in genere un sistema interno nell'infrastruttura a chiave pubblica dell'organizzazione), selezionare **Invia immediatamente la richiesta a un'autorità di certificazione online**.</span><span class="sxs-lookup"><span data-stu-id="d4e1c-106">To create an immediate request to an online certification authority (typically an internal system in your organization's public key infrastructure), select **Send the request immediately to an online certification authority**.</span></span>
+<span data-ttu-id="a6a96-105">Per creare una richiesta ritardata o offline, selezionare **Prepara la richiesta per l'invio posticipato (richiesta di certificato non in linea)**.</span><span class="sxs-lookup"><span data-stu-id="a6a96-105">To create a delayed request or an offline request, select **Prepare the request now, but send it later (offline certificate request)**.</span></span> <span data-ttu-id="a6a96-106">Per creare una richiesta immediata a un'autorità di certificazione online (in genere un sistema interno nell'infrastruttura a chiave pubblica dell'organizzazione), selezionare **Invia immediatamente la richiesta a un'autorità di certificazione online**.</span><span class="sxs-lookup"><span data-stu-id="a6a96-106">To create an immediate request to an online certification authority (typically an internal system in your organization's public key infrastructure), select **Send the request immediately to an online certification authority**.</span></span>
   
-<span data-ttu-id="d4e1c-p103">Dopo aver effettuato una selezione, fare clic su **Avanti** per continuare. Se si desidera annullare senza apportare modifiche, fare clic su **Annulla**. Per tornare al passaggio precedente, fare clic su **Indietro**.</span><span class="sxs-lookup"><span data-stu-id="d4e1c-p103">After you have made a selection, click **Next** to continue. If you want to cancel without making changes, click **Cancel**. To go back to the previous step, click **Back**.</span></span>
+<span data-ttu-id="a6a96-p103">Dopo aver effettuato una selezione, fare clic su **Avanti** per continuare. Se si desidera annullare senza apportare modifiche, fare clic su **Annulla**. Per tornare al passaggio precedente, fare clic su **Indietro**.</span><span class="sxs-lookup"><span data-stu-id="a6a96-p103">After you have made a selection, click **Next** to continue. If you want to cancel without making changes, click **Cancel**. To go back to the previous step, click **Back**.</span></span>
   
 

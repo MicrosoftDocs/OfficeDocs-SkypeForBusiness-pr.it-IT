@@ -1,25 +1,25 @@
 ---
-title: Nodo Lync di generatore di topologia
+title: Nodo di Lync per Generatore di topologie
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.None
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 20c61a2a-4955-42b9-897f-b180ffc226d6
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ec4379b712ebe239656eb1244c6da7c0a3020577
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 693b079a65722f0ddfe70e859e6fbea133b90fcc
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191306"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41688169"
 ---
-# <a name="topology-builder-skype-for-business-server-node"></a><span data-ttu-id="54dfc-102">Nodo di generatore di topologia Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="54dfc-102">Topology Builder Skype for Business Server Node</span></span>
+# <a name="topology-builder-skype-for-business-server-node"></a><span data-ttu-id="91be6-102">Nodo di generatore di topologia Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="91be6-102">Topology Builder Skype for Business Server Node</span></span>
  
 
 

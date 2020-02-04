@@ -6,23 +6,23 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddPersistentChatNextHopPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a47c824d-a76a-413b-9335-bfe5ffef15db
 ROBOTS: NOINDEX, NOFOLLOW
 description: Usare questa pagina per definire l'hop successivo del server di chat persistente nella distribuzione. Per altre informazioni su come distribuire il server di chat persistente, vedere distribuire il server di chat persistente in Skype for Business Server 2015.
-ms.openlocfilehash: ee5908731382a0d0fc346933cbc7426bc9842b50
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 5071cf2df1e2227814db403a82843aceda40e8f2
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195971"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41689095"
 ---
-# <a name="add-persistent-chat-next-hop-page"></a><span data-ttu-id="4bcd3-104">Pagina Aggiungere l'hop successivo di Chat persistente</span><span class="sxs-lookup"><span data-stu-id="4bcd3-104">Add Persistent Chat Next Hop Page</span></span>
+# <a name="add-persistent-chat-next-hop-page"></a><span data-ttu-id="e3daa-104">Pagina Aggiungere l'hop successivo di Chat persistente</span><span class="sxs-lookup"><span data-stu-id="e3daa-104">Add Persistent Chat Next Hop Page</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="4bcd3-105">La chat persistente è disponibile in Skype for Business Server 2015 ma non è più supportata in Skype for Business Server 2019.</span><span class="sxs-lookup"><span data-stu-id="4bcd3-105">Persistent chat is available in Skype for Business Server 2015 but is no longer supported in Skype for Business Server 2019.</span></span> <span data-ttu-id="4bcd3-106">La stessa funzionalità è disponibile in teams.</span><span class="sxs-lookup"><span data-stu-id="4bcd3-106">The same functionality is available in Teams.</span></span> <span data-ttu-id="4bcd3-107">Per altre informazioni, Vedi [aggiornamento di Skype for business a Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here).</span><span class="sxs-lookup"><span data-stu-id="4bcd3-107">For more information, see [Skype for Business to Microsoft Teams upgrade](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here).</span></span> <span data-ttu-id="4bcd3-108">Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità ai team o continuare a usare Skype for Business Server 2015.</span><span class="sxs-lookup"><span data-stu-id="4bcd3-108">If you need to use Persistent chat, your choices are to either migrate users requiring this functionality to Teams or continue using Skype for Business Server 2015.</span></span>
+> <span data-ttu-id="e3daa-105">La chat persistente è disponibile in Skype for Business Server 2015 ma non è più supportata in Skype for Business Server 2019.</span><span class="sxs-lookup"><span data-stu-id="e3daa-105">Persistent chat is available in Skype for Business Server 2015 but is no longer supported in Skype for Business Server 2019.</span></span> <span data-ttu-id="e3daa-106">La stessa funzionalità è disponibile in teams.</span><span class="sxs-lookup"><span data-stu-id="e3daa-106">The same functionality is available in Teams.</span></span> <span data-ttu-id="e3daa-107">Per altre informazioni, Vedi [aggiornamento di Skype for business a Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here).</span><span class="sxs-lookup"><span data-stu-id="e3daa-107">For more information, see [Skype for Business to Microsoft Teams upgrade](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here).</span></span> <span data-ttu-id="e3daa-108">Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità ai team o continuare a usare Skype for Business Server 2015.</span><span class="sxs-lookup"><span data-stu-id="e3daa-108">If you need to use Persistent chat, your choices are to either migrate users requiring this functionality to Teams or continue using Skype for Business Server 2015.</span></span>
   
 
