@@ -3,6 +3,8 @@ title: Riepilogo DNS - singola topologia perimetrale consolidata con indirizzi I
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: DNS summary - Single consolidated edge with private IP addresses using NAT
 ms:assetid: a7e5d792-f397-45e5-af85-20d0f4bf405f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg412787(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48185025
 ms.date: 03/09/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 156757dbb3afd671d15618e8d3fceb0dfa7a04ca
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 3276219fb4c2227cde75cf9a5d3a47616c03336d
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40981420"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41736256"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -23,7 +25,7 @@ ms.locfileid: "40981420"
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="dns-summary---single-consolidated-edge-with-private-ip-addresses-using-nat-in-lync-server-2013"></a><span data-ttu-id="a686e-102">Riepilogo DNS - singola topologia perimetrale consolidata con indirizzi IP privati tramite NAT in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a686e-102">DNS summary - Single consolidated edge with private IP addresses using NAT in Lync Server 2013</span></span>
+# <a name="dns-summary---single-consolidated-edge-with-private-ip-addresses-using-nat-in-lync-server-2013"></a><span data-ttu-id="42a8d-102">Riepilogo DNS - singola topologia perimetrale consolidata con indirizzi IP privati tramite NAT in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="42a8d-102">DNS summary - Single consolidated edge with private IP addresses using NAT in Lync Server 2013</span></span>
 
 </div>
 
@@ -33,60 +35,60 @@ ms.locfileid: "40981420"
 
 <span> </span>
 
-<span data-ttu-id="a686e-103">_**Argomento Ultima modifica:** 2017-03-09_</span><span class="sxs-lookup"><span data-stu-id="a686e-103">_**Topic Last Modified:** 2017-03-09_</span></span>
+<span data-ttu-id="42a8d-103">_**Argomento Ultima modifica:** 2017-03-09_</span><span class="sxs-lookup"><span data-stu-id="42a8d-103">_**Topic Last Modified:** 2017-03-09_</span></span>
 
-<span data-ttu-id="a686e-104">I requisiti dei record DNS per l'accesso remoto a Lync Server 2013 sono abbastanza semplici rispetto a quelli per i certificati e le porte.</span><span class="sxs-lookup"><span data-stu-id="a686e-104">DNS record requirements for remote access to Lync Server 2013 are fairly straightforward compared to those for certificates and ports.</span></span> <span data-ttu-id="a686e-105">Inoltre, molti record sono facoltativi, a seconda di come si configurano i client che usano Lync 2013 e se si Abilita la Federazione.</span><span class="sxs-lookup"><span data-stu-id="a686e-105">Also, many records are optional, depending on how you configure clients running Lync 2013 and whether you enable federation.</span></span>
+<span data-ttu-id="42a8d-104">I requisiti dei record DNS per l'accesso remoto a Lync Server 2013 sono abbastanza semplici rispetto a quelli per i certificati e le porte.</span><span class="sxs-lookup"><span data-stu-id="42a8d-104">DNS record requirements for remote access to Lync Server 2013 are fairly straightforward compared to those for certificates and ports.</span></span> <span data-ttu-id="42a8d-105">Inoltre, molti record sono facoltativi, a seconda di come si configurano i client che usano Lync 2013 e se si Abilita la Federazione.</span><span class="sxs-lookup"><span data-stu-id="42a8d-105">Also, many records are optional, depending on how you configure clients running Lync 2013 and whether you enable federation.</span></span>
 
-<span data-ttu-id="a686e-106">Per informazioni dettagliate sui requisiti DNS di Lync 2013, vedere [determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a686e-106">For details about Lync 2013 DNS requirements, see [Determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md).</span></span>
+<span data-ttu-id="42a8d-106">Per informazioni dettagliate sui requisiti DNS di Lync 2013, vedere [determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="42a8d-106">For details about Lync 2013 DNS requirements, see [Determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md).</span></span>
 
-<span data-ttu-id="a686e-107">Per informazioni dettagliate sulla configurazione automatica dei client in cui è in uso Lync 2013 se non è configurato il DNS split-brain, vedere "configurazione automatica senza DNS split-brain" in [determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="a686e-107">For details about automatic configuration of clients running Lync 2013 if split-brain DNS is not configured, see “Automatic Configuration without Split-Brain DNS” in [Determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md).</span></span>
+<span data-ttu-id="42a8d-107">Per informazioni dettagliate sulla configurazione automatica dei client in cui è in uso Lync 2013 se non è configurato il DNS split-brain, vedere "configurazione automatica senza DNS split-brain" in [determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md).</span><span class="sxs-lookup"><span data-stu-id="42a8d-107">For details about automatic configuration of clients running Lync 2013 if split-brain DNS is not configured, see “Automatic Configuration without Split-Brain DNS” in [Determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md).</span></span>
 
-<span data-ttu-id="a686e-108">La tabella seguente contiene un riepilogo dei record DNS necessari per supportare la singola topologia perimetrale consolidata visualizzata nella figura singola topologia perimetrale consolidata.</span><span class="sxs-lookup"><span data-stu-id="a686e-108">The following table contains a summary of the DNS records that are required to support the single consolidated edge topology shown in the Single Consolidated Edge Topology figure.</span></span> <span data-ttu-id="a686e-109">Tieni presente che alcuni record DNS sono necessari solo per la configurazione automatica dei client Lync 2013 e Lync 2010.</span><span class="sxs-lookup"><span data-stu-id="a686e-109">Note that certain DNS records are required only for automatic configuration of Lync 2013 and Lync 2010 clients.</span></span> <span data-ttu-id="a686e-110">Se si prevede di usare gli oggetti Criteri di gruppo per configurare i client Lync, i record di configurazione automatica associati non sono necessari.</span><span class="sxs-lookup"><span data-stu-id="a686e-110">If you plan to use group policy objects (GPOs) to configure Lync clients, the associated automatic configuration records are not necessary.</span></span>
+<span data-ttu-id="42a8d-108">La tabella seguente contiene un riepilogo dei record DNS necessari per supportare la singola topologia perimetrale consolidata visualizzata nella figura singola topologia perimetrale consolidata.</span><span class="sxs-lookup"><span data-stu-id="42a8d-108">The following table contains a summary of the DNS records that are required to support the single consolidated edge topology shown in the Single Consolidated Edge Topology figure.</span></span> <span data-ttu-id="42a8d-109">Tieni presente che alcuni record DNS sono necessari solo per la configurazione automatica dei client Lync 2013 e Lync 2010.</span><span class="sxs-lookup"><span data-stu-id="42a8d-109">Note that certain DNS records are required only for automatic configuration of Lync 2013 and Lync 2010 clients.</span></span> <span data-ttu-id="42a8d-110">Se si prevede di usare gli oggetti Criteri di gruppo per configurare i client Lync, i record di configurazione automatica associati non sono necessari.</span><span class="sxs-lookup"><span data-stu-id="42a8d-110">If you plan to use group policy objects (GPOs) to configure Lync clients, the associated automatic configuration records are not necessary.</span></span>
 
 <div>
 
-## <a name="important-edge-server-network-adapter-requirements"></a><span data-ttu-id="a686e-111">IMPORTANTE: requisiti della scheda di rete Edge Server</span><span class="sxs-lookup"><span data-stu-id="a686e-111">IMPORTANT: Edge Server Network Adapter Requirements</span></span>
+## <a name="important-edge-server-network-adapter-requirements"></a><span data-ttu-id="42a8d-111">IMPORTANTE: requisiti della scheda di rete Edge Server</span><span class="sxs-lookup"><span data-stu-id="42a8d-111">IMPORTANT: Edge Server Network Adapter Requirements</span></span>
 
-<span data-ttu-id="a686e-112">Per evitare problemi di routing, verificare che siano presenti almeno due schede di rete negli Edge Server e che il gateway predefinito sia impostato solo sulla scheda di rete associata all'interfaccia esterna.</span><span class="sxs-lookup"><span data-stu-id="a686e-112">To avoid routing issues, verify that there are at least two network adapters in your Edge Servers and that the default gateway is set only on the network adapter associated with the external interface.</span></span> <span data-ttu-id="a686e-113">Ad esempio, come illustrato nella singola figura della topologia perimetrale consolidata in un [unico bordo consolidato con indirizzi IP privati e NAT in Lync Server 2013](lync-server-2013-single-consolidated-edge-with-private-ip-addresses-and-nat.md), il gateway predefinito punta al firewall esterno (10.45.16.1).</span><span class="sxs-lookup"><span data-stu-id="a686e-113">For example, as shown in the Single Consolidated Edge Topology figure in [Single consolidated edge with private IP addresses and NAT in Lync Server 2013](lync-server-2013-single-consolidated-edge-with-private-ip-addresses-and-nat.md), the default gateway would point to the external firewall (10.45.16.1).</span></span>
+<span data-ttu-id="42a8d-112">Per evitare problemi di routing, verificare che siano presenti almeno due schede di rete negli Edge Server e che il gateway predefinito sia impostato solo sulla scheda di rete associata all'interfaccia esterna.</span><span class="sxs-lookup"><span data-stu-id="42a8d-112">To avoid routing issues, verify that there are at least two network adapters in your Edge Servers and that the default gateway is set only on the network adapter associated with the external interface.</span></span> <span data-ttu-id="42a8d-113">Ad esempio, come illustrato nella singola figura della topologia perimetrale consolidata in un [unico bordo consolidato con indirizzi IP privati e NAT in Lync Server 2013](lync-server-2013-single-consolidated-edge-with-private-ip-addresses-and-nat.md), il gateway predefinito punta al firewall esterno (10.45.16.1).</span><span class="sxs-lookup"><span data-stu-id="42a8d-113">For example, as shown in the Single Consolidated Edge Topology figure in [Single consolidated edge with private IP addresses and NAT in Lync Server 2013](lync-server-2013-single-consolidated-edge-with-private-ip-addresses-and-nat.md), the default gateway would point to the external firewall (10.45.16.1).</span></span>
 
-<span data-ttu-id="a686e-114">È possibile configurare due schede di rete nel server perimetrale nel modo seguente:</span><span class="sxs-lookup"><span data-stu-id="a686e-114">You can configure two network adapters in your Edge Server as follows:</span></span>
+<span data-ttu-id="42a8d-114">È possibile configurare due schede di rete nel server perimetrale nel modo seguente:</span><span class="sxs-lookup"><span data-stu-id="42a8d-114">You can configure two network adapters in your Edge Server as follows:</span></span>
 
-  - <span data-ttu-id="a686e-115">**Scheda di rete 1 (interfaccia interna)**</span><span class="sxs-lookup"><span data-stu-id="a686e-115">**Network adapter 1 (Internal Interface)**</span></span>
+  - <span data-ttu-id="42a8d-115">**Scheda di rete 1 (interfaccia interna)**</span><span class="sxs-lookup"><span data-stu-id="42a8d-115">**Network adapter 1 (Internal Interface)**</span></span>
     
-    <span data-ttu-id="a686e-116">Interfaccia interna con 172.25.33.10 assegnati.</span><span class="sxs-lookup"><span data-stu-id="a686e-116">Internal interface with 172.25.33.10 assigned.</span></span>
+    <span data-ttu-id="42a8d-116">Interfaccia interna con 172.25.33.10 assegnati.</span><span class="sxs-lookup"><span data-stu-id="42a8d-116">Internal interface with 172.25.33.10 assigned.</span></span>
     
-    <span data-ttu-id="a686e-117">Nessun gateway predefinito è definito.</span><span class="sxs-lookup"><span data-stu-id="a686e-117">No default gateway is defined.</span></span>
+    <span data-ttu-id="42a8d-117">Nessun gateway predefinito è definito.</span><span class="sxs-lookup"><span data-stu-id="42a8d-117">No default gateway is defined.</span></span>
     
-    <span data-ttu-id="a686e-118">Verificare che esista una route dalla rete che contiene l'interfaccia interna di Edge a tutte le reti che contengono server che includono client Lync Server 2013 o Lync Server 2013, ad esempio da 172.25.33.0 a 192.168.10.0.</span><span class="sxs-lookup"><span data-stu-id="a686e-118">Ensure that there is a route from the network containing the Edge internal interface to any networks that contain servers running Lync Server 2013 or Lync Server 2013 clients (for example, from 172.25.33.0 to 192.168.10.0).</span></span>
+    <span data-ttu-id="42a8d-118">Verificare che esista una route dalla rete che contiene l'interfaccia interna di Edge a tutte le reti che contengono server che includono client Lync Server 2013 o Lync Server 2013, ad esempio da 172.25.33.0 a 192.168.10.0.</span><span class="sxs-lookup"><span data-stu-id="42a8d-118">Ensure that there is a route from the network containing the Edge internal interface to any networks that contain servers running Lync Server 2013 or Lync Server 2013 clients (for example, from 172.25.33.0 to 192.168.10.0).</span></span>
 
-  - <span data-ttu-id="a686e-119">**Scheda di rete 2 (interfaccia esterna)**</span><span class="sxs-lookup"><span data-stu-id="a686e-119">**Network adapter 2 (External Interface)**</span></span>
+  - <span data-ttu-id="42a8d-119">**Scheda di rete 2 (interfaccia esterna)**</span><span class="sxs-lookup"><span data-stu-id="42a8d-119">**Network adapter 2 (External Interface)**</span></span>
     
-    <span data-ttu-id="a686e-120">Alla scheda di rete vengono assegnati tre indirizzi IP privati, ad esempio 10.45.16.10 for Access Edge, 10.45.16.20 for Web Conferencing Edge, 10.45.16.30 for AV Edge</span><span class="sxs-lookup"><span data-stu-id="a686e-120">Three private IP addresses are assigned to this network adapter, for example 10.45.16.10 for Access Edge, 10.45.16.20 for Web Conferencing Edge, 10.45.16.30 for AV Edge</span></span>
+    <span data-ttu-id="42a8d-120">Alla scheda di rete vengono assegnati tre indirizzi IP privati, ad esempio 10.45.16.10 for Access Edge, 10.45.16.20 for Web Conferencing Edge, 10.45.16.30 for AV Edge</span><span class="sxs-lookup"><span data-stu-id="42a8d-120">Three private IP addresses are assigned to this network adapter, for example 10.45.16.10 for Access Edge, 10.45.16.20 for Web Conferencing Edge, 10.45.16.30 for AV Edge</span></span>
     
     <div>
     
 
     > [!NOTE]
-    > <span data-ttu-id="a686e-121">È comunque possibile usare un singolo indirizzo IP per tutte le tre interfacce del servizio Edge.</span><span class="sxs-lookup"><span data-stu-id="a686e-121">It is possible, though not recommended, to use a single IP address for all three Edge service interfaces.</span></span> <span data-ttu-id="a686e-122">Anche se questo Salva gli indirizzi IP, richiede numeri di porta diversi per ogni servizio.</span><span class="sxs-lookup"><span data-stu-id="a686e-122">Though this does save IP addresses, it requires different port numbers for each service.</span></span> <span data-ttu-id="a686e-123">Il numero di porta predefinito è 443/TCP, che garantisce che la maggior parte dei firewall remoti consentirà il traffico.</span><span class="sxs-lookup"><span data-stu-id="a686e-123">The default port number is 443/TCP, which ensures that most remote firewalls will allow the traffic.</span></span> <span data-ttu-id="a686e-124">La modifica dei valori della porta in (ad esempio) 5061/TCP per l'Access Edge, 444/TCP per il Web Conferencing Edge e 443/TCP per il Edge AV può causare problemi per gli utenti remoti in cui un firewall che si trovano dietro non consente il traffico su 5061/TCP e 444/TCP.</span><span class="sxs-lookup"><span data-stu-id="a686e-124">Changing the port values to (for example) 5061/TCP for the Access Edge, 444/TCP for the Web Conferencing Edge and 443/TCP for the AV Edge might cause problems for remote users where a firewall that they are behind does not allow the traffic over 5061/TCP and 444/TCP.</span></span> <span data-ttu-id="a686e-125">Inoltre, tre indirizzi IP distinti semplificano la risoluzione dei problemi grazie alla possibilità di filtrare in base all'indirizzo IP.</span><span class="sxs-lookup"><span data-stu-id="a686e-125">Additionally, three distinct IP addresses makes troubleshooting easier due to being able to filter on IP address.</span></span>
+    > <span data-ttu-id="42a8d-121">È comunque possibile usare un singolo indirizzo IP per tutte le tre interfacce del servizio Edge.</span><span class="sxs-lookup"><span data-stu-id="42a8d-121">It is possible, though not recommended, to use a single IP address for all three Edge service interfaces.</span></span> <span data-ttu-id="42a8d-122">Anche se questo Salva gli indirizzi IP, richiede numeri di porta diversi per ogni servizio.</span><span class="sxs-lookup"><span data-stu-id="42a8d-122">Though this does save IP addresses, it requires different port numbers for each service.</span></span> <span data-ttu-id="42a8d-123">Il numero di porta predefinito è 443/TCP, che garantisce che la maggior parte dei firewall remoti consentirà il traffico.</span><span class="sxs-lookup"><span data-stu-id="42a8d-123">The default port number is 443/TCP, which ensures that most remote firewalls will allow the traffic.</span></span> <span data-ttu-id="42a8d-124">La modifica dei valori della porta in (ad esempio) 5061/TCP per l'Access Edge, 444/TCP per il Web Conferencing Edge e 443/TCP per il Edge AV può causare problemi per gli utenti remoti in cui un firewall che si trovano dietro non consente il traffico su 5061/TCP e 444/TCP.</span><span class="sxs-lookup"><span data-stu-id="42a8d-124">Changing the port values to (for example) 5061/TCP for the Access Edge, 444/TCP for the Web Conferencing Edge and 443/TCP for the AV Edge might cause problems for remote users where a firewall that they are behind does not allow the traffic over 5061/TCP and 444/TCP.</span></span> <span data-ttu-id="42a8d-125">Inoltre, tre indirizzi IP distinti semplificano la risoluzione dei problemi grazie alla possibilità di filtrare in base all'indirizzo IP.</span><span class="sxs-lookup"><span data-stu-id="42a8d-125">Additionally, three distinct IP addresses makes troubleshooting easier due to being able to filter on IP address.</span></span>
 
     
     </div>
     
-    <span data-ttu-id="a686e-126">L'indirizzo IP di Access Edge è primario con il gateway predefinito impostato su Integrated router (10.45.16.1).</span><span class="sxs-lookup"><span data-stu-id="a686e-126">Access Edge IP address is primary with default gateway set to integrated router (10.45.16.1).</span></span>
+    <span data-ttu-id="42a8d-126">L'indirizzo IP di Access Edge è primario con il gateway predefinito impostato su Integrated router (10.45.16.1).</span><span class="sxs-lookup"><span data-stu-id="42a8d-126">Access Edge IP address is primary with default gateway set to integrated router (10.45.16.1).</span></span>
     
-    <span data-ttu-id="a686e-127">Web Conferencing e indirizzi IP A/V Edge secondari.</span><span class="sxs-lookup"><span data-stu-id="a686e-127">Web conferencing and A/V Edge IP addresses secondary.</span></span>
+    <span data-ttu-id="42a8d-127">Web Conferencing e indirizzi IP A/V Edge secondari.</span><span class="sxs-lookup"><span data-stu-id="42a8d-127">Web conferencing and A/V Edge IP addresses secondary.</span></span>
 
 <div>
 
 
 > [!TIP]
-> <span data-ttu-id="a686e-128">La configurazione di Edge Server con due schede di rete è una delle due opzioni.</span><span class="sxs-lookup"><span data-stu-id="a686e-128">Configuring the Edge Server with two network adapters is one of two options.</span></span> <span data-ttu-id="a686e-129">L'altra opzione consiste nell'usare una scheda di rete per il lato interno e tre schede di rete per il lato esterno del server perimetrale.</span><span class="sxs-lookup"><span data-stu-id="a686e-129">The other option is to use one network adapter for the internal side and three network adapters for the external side of the Edge Server.</span></span> <span data-ttu-id="a686e-130">Il vantaggio principale di questa opzione è una scheda di rete distinta per ogni servizio Edge Server e una raccolta di dati potenzialmente più concisa quando è necessaria la risoluzione dei problemi</span><span class="sxs-lookup"><span data-stu-id="a686e-130">The main benefit of this option is a distinct network adapter per Edge Server service, and potentially more concise data collection when troubleshooting is necessary</span></span>
+> <span data-ttu-id="42a8d-128">La configurazione di Edge Server con due schede di rete è una delle due opzioni.</span><span class="sxs-lookup"><span data-stu-id="42a8d-128">Configuring the Edge Server with two network adapters is one of two options.</span></span> <span data-ttu-id="42a8d-129">L'altra opzione consiste nell'usare una scheda di rete per il lato interno e tre schede di rete per il lato esterno del server perimetrale.</span><span class="sxs-lookup"><span data-stu-id="42a8d-129">The other option is to use one network adapter for the internal side and three network adapters for the external side of the Edge Server.</span></span> <span data-ttu-id="42a8d-130">Il vantaggio principale di questa opzione è una scheda di rete distinta per ogni servizio Edge Server e una raccolta di dati potenzialmente più concisa quando è necessaria la risoluzione dei problemi</span><span class="sxs-lookup"><span data-stu-id="42a8d-130">The main benefit of this option is a distinct network adapter per Edge Server service, and potentially more concise data collection when troubleshooting is necessary</span></span>
 
 
 
 </div>
 
-### <a name="dns-records-required-for-single-consolidated-edge-with-private-ip-addresses-using-nat-example"></a><span data-ttu-id="a686e-131">Record DNS necessari per un singolo bordo consolidato con indirizzi IP privati tramite NAT (esempio)</span><span class="sxs-lookup"><span data-stu-id="a686e-131">DNS Records Required for Single Consolidated Edge with Private IP Addresses Using NAT (Example)</span></span>
+### <a name="dns-records-required-for-single-consolidated-edge-with-private-ip-addresses-using-nat-example"></a><span data-ttu-id="42a8d-131">Record DNS necessari per un singolo bordo consolidato con indirizzi IP privati tramite NAT (esempio)</span><span class="sxs-lookup"><span data-stu-id="42a8d-131">DNS Records Required for Single Consolidated Edge with Private IP Addresses Using NAT (Example)</span></span>
 
 <table>
 <colgroup>
@@ -97,48 +99,48 @@ ms.locfileid: "40981420"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="a686e-132">Posizione/tipo/porta</span><span class="sxs-lookup"><span data-stu-id="a686e-132">Location/TYPE/Port</span></span></th>
-<th><span data-ttu-id="a686e-133">Record FQDN/DNS</span><span class="sxs-lookup"><span data-stu-id="a686e-133">FQDN/DNS Record</span></span></th>
-<th><span data-ttu-id="a686e-134">Indirizzo IP/FQDN</span><span class="sxs-lookup"><span data-stu-id="a686e-134">IP Address/FQDN</span></span></th>
-<th><span data-ttu-id="a686e-135">Mapping a/commenti</span><span class="sxs-lookup"><span data-stu-id="a686e-135">Maps to/Comments</span></span></th>
+<th><span data-ttu-id="42a8d-132">Posizione/tipo/porta</span><span class="sxs-lookup"><span data-stu-id="42a8d-132">Location/TYPE/Port</span></span></th>
+<th><span data-ttu-id="42a8d-133">Record FQDN/DNS</span><span class="sxs-lookup"><span data-stu-id="42a8d-133">FQDN/DNS Record</span></span></th>
+<th><span data-ttu-id="42a8d-134">Indirizzo IP/FQDN</span><span class="sxs-lookup"><span data-stu-id="42a8d-134">IP Address/FQDN</span></span></th>
+<th><span data-ttu-id="42a8d-135">Mapping a/commenti</span><span class="sxs-lookup"><span data-stu-id="42a8d-135">Maps to/Comments</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="a686e-136">DNS esterno/A</span><span class="sxs-lookup"><span data-stu-id="a686e-136">External DNS/A</span></span></p></td>
-<td><p><span data-ttu-id="a686e-137">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="a686e-137">sip.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-138">131.107.155.10</span><span class="sxs-lookup"><span data-stu-id="a686e-138">131.107.155.10</span></span></p></td>
-<td><p><span data-ttu-id="a686e-139">Ripetizione dell'interfaccia esterna di Access Edge (contoso), se necessario per tutti i domini SIP con gli utenti abilitati a Lync</span><span class="sxs-lookup"><span data-stu-id="a686e-139">Access Edge external interface (Contoso)Repeat as necessary for all SIP domains with Lync enabled users</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-136">DNS esterno/A</span><span class="sxs-lookup"><span data-stu-id="42a8d-136">External DNS/A</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-137">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="42a8d-137">sip.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-138">131.107.155.10</span><span class="sxs-lookup"><span data-stu-id="42a8d-138">131.107.155.10</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-139">Ripetizione dell'interfaccia esterna di Access Edge (contoso), se necessario per tutti i domini SIP con gli utenti abilitati a Lync</span><span class="sxs-lookup"><span data-stu-id="42a8d-139">Access Edge external interface (Contoso)Repeat as necessary for all SIP domains with Lync enabled users</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="a686e-140">DNS esterno/A</span><span class="sxs-lookup"><span data-stu-id="a686e-140">External DNS/A</span></span></p></td>
-<td><p><span data-ttu-id="a686e-141">webcon.contoso.com</span><span class="sxs-lookup"><span data-stu-id="a686e-141">webcon.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-142">131.107.155.20</span><span class="sxs-lookup"><span data-stu-id="a686e-142">131.107.155.20</span></span></p></td>
-<td><p><span data-ttu-id="a686e-143">Interfaccia esterna di Web Conferencing Edge</span><span class="sxs-lookup"><span data-stu-id="a686e-143">Web Conferencing Edge external interface</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-140">DNS esterno/A</span><span class="sxs-lookup"><span data-stu-id="42a8d-140">External DNS/A</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-141">webcon.contoso.com</span><span class="sxs-lookup"><span data-stu-id="42a8d-141">webcon.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-142">131.107.155.20</span><span class="sxs-lookup"><span data-stu-id="42a8d-142">131.107.155.20</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-143">Interfaccia esterna di Web Conferencing Edge</span><span class="sxs-lookup"><span data-stu-id="42a8d-143">Web Conferencing Edge external interface</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="a686e-144">DNS esterno/A</span><span class="sxs-lookup"><span data-stu-id="a686e-144">External DNS/A</span></span></p></td>
-<td><p><span data-ttu-id="a686e-145">av.contoso.com</span><span class="sxs-lookup"><span data-stu-id="a686e-145">av.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-146">131.107.155.30</span><span class="sxs-lookup"><span data-stu-id="a686e-146">131.107.155.30</span></span></p></td>
-<td><p><span data-ttu-id="a686e-147">Interfaccia esterna Edge A/V</span><span class="sxs-lookup"><span data-stu-id="a686e-147">A/V Edge external interface</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-144">DNS esterno/A</span><span class="sxs-lookup"><span data-stu-id="42a8d-144">External DNS/A</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-145">av.contoso.com</span><span class="sxs-lookup"><span data-stu-id="42a8d-145">av.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-146">131.107.155.30</span><span class="sxs-lookup"><span data-stu-id="42a8d-146">131.107.155.30</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-147">Interfaccia esterna Edge A/V</span><span class="sxs-lookup"><span data-stu-id="42a8d-147">A/V Edge external interface</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="a686e-148">DNS esterno/SRV/443</span><span class="sxs-lookup"><span data-stu-id="a686e-148">External DNS/SRV/443</span></span></p></td>
-<td><p><span data-ttu-id="a686e-149">_sip. _tls. contoso. com</span><span class="sxs-lookup"><span data-stu-id="a686e-149">_sip._tls.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-150">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="a686e-150">sip.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-151">Interfaccia esterna di Access Edge.</span><span class="sxs-lookup"><span data-stu-id="a686e-151">Access Edge external interface.</span></span> <span data-ttu-id="a686e-152">Necessario per la configurazione automatica dei client Lync 2013 e Lync 2010 per l'utilizzo esterno.</span><span class="sxs-lookup"><span data-stu-id="a686e-152">Required for automatic configuration of Lync 2013 and Lync 2010 clients to work externally.</span></span> <span data-ttu-id="a686e-153">Ripetere le esigenze per tutti i domini SIP con gli utenti abilitati a Lync.</span><span class="sxs-lookup"><span data-stu-id="a686e-153">Repeat as necessary for all SIP domains with Lync enabled users.</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-148">DNS esterno/SRV/443</span><span class="sxs-lookup"><span data-stu-id="42a8d-148">External DNS/SRV/443</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-149">_sip. _tls. contoso. com</span><span class="sxs-lookup"><span data-stu-id="42a8d-149">_sip._tls.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-150">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="42a8d-150">sip.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-151">Interfaccia esterna di Access Edge.</span><span class="sxs-lookup"><span data-stu-id="42a8d-151">Access Edge external interface.</span></span> <span data-ttu-id="42a8d-152">Necessario per la configurazione automatica dei client Lync 2013 e Lync 2010 per l'utilizzo esterno.</span><span class="sxs-lookup"><span data-stu-id="42a8d-152">Required for automatic configuration of Lync 2013 and Lync 2010 clients to work externally.</span></span> <span data-ttu-id="42a8d-153">Ripetere le esigenze per tutti i domini SIP con gli utenti abilitati a Lync.</span><span class="sxs-lookup"><span data-stu-id="42a8d-153">Repeat as necessary for all SIP domains with Lync enabled users.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="a686e-154">DNS esterno/SRV/5061</span><span class="sxs-lookup"><span data-stu-id="a686e-154">External DNS/SRV/5061</span></span></p></td>
-<td><p><span data-ttu-id="a686e-155">_sipfederationtls. _tcp. contoso. com</span><span class="sxs-lookup"><span data-stu-id="a686e-155">_sipfederationtls._tcp.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-156">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="a686e-156">sip.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-157">Interfaccia esterna di Access Edge SIP necessaria per l'individuazione automatica di DNS dei partner federati noti come "dominio SIP consentito" (chiamata federazione avanzata nelle versioni precedenti). Ripetere la procedura necessaria per tutti i domini SIP con gli utenti abilitati a Lync</span><span class="sxs-lookup"><span data-stu-id="a686e-157">SIP Access Edge external interface Required for automatic DNS discovery of federated partners known as “Allowed SIP Domain” (called enhanced federation in previous releases).Repeat as necessary for all SIP domains with Lync enabled users</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-154">DNS esterno/SRV/5061</span><span class="sxs-lookup"><span data-stu-id="42a8d-154">External DNS/SRV/5061</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-155">_sipfederationtls. _tcp. contoso. com</span><span class="sxs-lookup"><span data-stu-id="42a8d-155">_sipfederationtls._tcp.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-156">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="42a8d-156">sip.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-157">Interfaccia esterna di Access Edge SIP necessaria per l'individuazione automatica di DNS dei partner federati noti come "dominio SIP consentito" (chiamata federazione avanzata nelle versioni precedenti). Ripetere la procedura necessaria per tutti i domini SIP con gli utenti abilitati a Lync</span><span class="sxs-lookup"><span data-stu-id="42a8d-157">SIP Access Edge external interface Required for automatic DNS discovery of federated partners known as “Allowed SIP Domain” (called enhanced federation in previous releases).Repeat as necessary for all SIP domains with Lync enabled users</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="a686e-158">DNS interno/A</span><span class="sxs-lookup"><span data-stu-id="a686e-158">Internal DNS/A</span></span></p></td>
-<td><p><span data-ttu-id="a686e-159">lsedge.contoso.net</span><span class="sxs-lookup"><span data-stu-id="a686e-159">lsedge.contoso.net</span></span></p></td>
-<td><p><span data-ttu-id="a686e-160">172.25.33.10</span><span class="sxs-lookup"><span data-stu-id="a686e-160">172.25.33.10</span></span></p></td>
-<td><p><span data-ttu-id="a686e-161">Interfaccia interna del bordo consolidato</span><span class="sxs-lookup"><span data-stu-id="a686e-161">Consolidated Edge internal interface</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-158">DNS interno/A</span><span class="sxs-lookup"><span data-stu-id="42a8d-158">Internal DNS/A</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-159">lsedge.contoso.net</span><span class="sxs-lookup"><span data-stu-id="42a8d-159">lsedge.contoso.net</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-160">172.25.33.10</span><span class="sxs-lookup"><span data-stu-id="42a8d-160">172.25.33.10</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-161">Interfaccia interna del bordo consolidato</span><span class="sxs-lookup"><span data-stu-id="42a8d-161">Consolidated Edge internal interface</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -148,7 +150,7 @@ ms.locfileid: "40981420"
 
 
 > [!IMPORTANT]
-> <span data-ttu-id="a686e-162">I record elencati nella tabella precedente vengono visualizzati con un'estensione <EM>.NET</EM> o con estensione <EM>com</EM> per evidenziare la zona in cui devono trovarsi se non si usa il DNS split-brain.</span><span class="sxs-lookup"><span data-stu-id="a686e-162">The records listed in the previous table are shown with either a <EM>.net</EM> extension or a <EM>.com</EM> extension to highlight which zone they need to reside in if you are not using split-brain DNS.</span></span> <span data-ttu-id="a686e-163">Se si usa il DNS split-brain, tutti i record si troverebbero nella stessa area <EM>. com</EM> , con l'unica distinzione che si verifica se si trovano nella versione di zona DNS interna o esterna.</span><span class="sxs-lookup"><span data-stu-id="a686e-163">If you are using split-brain DNS, all records would be in the same <EM>.com</EM> zone, with the only distinction being whether they are in the internal or external DNS zone version.</span></span> <span data-ttu-id="a686e-164">Per informazioni dettagliate, vedere "DNS con suddivisione del cervello" in <A href="lync-server-2013-determine-dns-requirements.md">determinare i requisiti DNS per Lync Server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="a686e-164">For details, see “Split-Brain DNS” in <A href="lync-server-2013-determine-dns-requirements.md">Determine DNS requirements for Lync Server 2013</A>.</span></span>
+> <span data-ttu-id="42a8d-162">I record elencati nella tabella precedente vengono visualizzati con un'estensione <EM>.NET</EM> o con estensione <EM>com</EM> per evidenziare la zona in cui devono trovarsi se non si usa il DNS split-brain.</span><span class="sxs-lookup"><span data-stu-id="42a8d-162">The records listed in the previous table are shown with either a <EM>.net</EM> extension or a <EM>.com</EM> extension to highlight which zone they need to reside in if you are not using split-brain DNS.</span></span> <span data-ttu-id="42a8d-163">Se si usa il DNS split-brain, tutti i record si troverebbero nella stessa area <EM>. com</EM> , con l'unica distinzione che si verifica se si trovano nella versione di zona DNS interna o esterna.</span><span class="sxs-lookup"><span data-stu-id="42a8d-163">If you are using split-brain DNS, all records would be in the same <EM>.com</EM> zone, with the only distinction being whether they are in the internal or external DNS zone version.</span></span> <span data-ttu-id="42a8d-164">Per informazioni dettagliate, vedere "DNS con suddivisione del cervello" in <A href="lync-server-2013-determine-dns-requirements.md">determinare i requisiti DNS per Lync Server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="42a8d-164">For details, see “Split-Brain DNS” in <A href="lync-server-2013-determine-dns-requirements.md">Determine DNS requirements for Lync Server 2013</A>.</span></span>
 
 
 
@@ -158,7 +160,7 @@ ms.locfileid: "40981420"
 
 <div>
 
-## <a name="records-required-for-federation"></a><span data-ttu-id="a686e-165">Record necessari per la Federazione</span><span class="sxs-lookup"><span data-stu-id="a686e-165">Records Required for Federation</span></span>
+## <a name="records-required-for-federation"></a><span data-ttu-id="42a8d-165">Record necessari per la Federazione</span><span class="sxs-lookup"><span data-stu-id="42a8d-165">Records Required for Federation</span></span>
 
 
 <table>
@@ -170,23 +172,23 @@ ms.locfileid: "40981420"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="a686e-166">Posizione/tipo/porta</span><span class="sxs-lookup"><span data-stu-id="a686e-166">Location/TYPE/Port</span></span></th>
-<th><span data-ttu-id="a686e-167">FQDN</span><span class="sxs-lookup"><span data-stu-id="a686e-167">FQDN</span></span></th>
-<th><span data-ttu-id="a686e-168">Indirizzo IP/record host FQDN</span><span class="sxs-lookup"><span data-stu-id="a686e-168">IP address/FQDN host record</span></span></th>
-<th><span data-ttu-id="a686e-169">Mapping a/commenti</span><span class="sxs-lookup"><span data-stu-id="a686e-169">Maps to/Comments</span></span></th>
+<th><span data-ttu-id="42a8d-166">Posizione/tipo/porta</span><span class="sxs-lookup"><span data-stu-id="42a8d-166">Location/TYPE/Port</span></span></th>
+<th><span data-ttu-id="42a8d-167">FQDN</span><span class="sxs-lookup"><span data-stu-id="42a8d-167">FQDN</span></span></th>
+<th><span data-ttu-id="42a8d-168">Indirizzo IP/record host FQDN</span><span class="sxs-lookup"><span data-stu-id="42a8d-168">IP address/FQDN host record</span></span></th>
+<th><span data-ttu-id="42a8d-169">Mapping a/commenti</span><span class="sxs-lookup"><span data-stu-id="42a8d-169">Maps to/Comments</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="a686e-170">DNS esterno/SRV/5061</span><span class="sxs-lookup"><span data-stu-id="a686e-170">External DNS/SRV/5061</span></span></p></td>
-<td><p><span data-ttu-id="a686e-171">_sipfederationtls. _tcp. contoso. com</span><span class="sxs-lookup"><span data-stu-id="a686e-171">_sipfederationtls._tcp.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-172">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="a686e-172">sip.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-173">Interfaccia esterna di Access Edge SIP necessaria per l'individuazione automatica del DNS della Federazione ad altri potenziali partner federativi ed è nota come "domini SIP consentiti" (chiamata federazione avanzata nelle versioni precedenti). Ripetere la procedura necessaria per tutti i domini SIP con gli utenti abilitati a Lync</span><span class="sxs-lookup"><span data-stu-id="a686e-173">SIP Access Edge external interface Required for automatic DNS discovery of your federation to other potential federation partners, and is known as “Allowed SIP Domains” (called enhanced federation in previous releases).Repeat as necessary for all SIP domains with Lync enabled users</span></span></p>
+<td><p><span data-ttu-id="42a8d-170">DNS esterno/SRV/5061</span><span class="sxs-lookup"><span data-stu-id="42a8d-170">External DNS/SRV/5061</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-171">_sipfederationtls. _tcp. contoso. com</span><span class="sxs-lookup"><span data-stu-id="42a8d-171">_sipfederationtls._tcp.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-172">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="42a8d-172">sip.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-173">Interfaccia esterna di Access Edge SIP necessaria per l'individuazione automatica del DNS della Federazione ad altri potenziali partner federativi ed è nota come "domini SIP consentiti" (chiamata federazione avanzata nelle versioni precedenti). Ripetere la procedura necessaria per tutti i domini SIP con gli utenti abilitati a Lync</span><span class="sxs-lookup"><span data-stu-id="42a8d-173">SIP Access Edge external interface Required for automatic DNS discovery of your federation to other potential federation partners, and is known as “Allowed SIP Domains” (called enhanced federation in previous releases).Repeat as necessary for all SIP domains with Lync enabled users</span></span></p>
 
 
 
 > [!IMPORTANT]
-> <span data-ttu-id="a686e-174">Questo record SRV è necessario per la mobilità e la camera di compensazione delle notifiche push</span><span class="sxs-lookup"><span data-stu-id="a686e-174">This SRV record is required for mobility and the push notification clearing house</span></span>
+> <span data-ttu-id="42a8d-174">Questo record SRV è necessario per la mobilità e la camera di compensazione delle notifiche push</span><span class="sxs-lookup"><span data-stu-id="42a8d-174">This SRV record is required for mobility and the push notification clearing house</span></span>
 
 </td>
 </tr>
@@ -198,7 +200,7 @@ ms.locfileid: "40981420"
 
 <div>
 
-## <a name="dns-summary-for-extensible-messaging-and-presence-protocol"></a><span data-ttu-id="a686e-175">Riepilogo DNS per il protocollo di messaggistica e presenza estensibile</span><span class="sxs-lookup"><span data-stu-id="a686e-175">DNS Summary for Extensible Messaging and Presence Protocol</span></span>
+## <a name="dns-summary-for-extensible-messaging-and-presence-protocol"></a><span data-ttu-id="42a8d-175">Riepilogo DNS per il protocollo di messaggistica e presenza estensibile</span><span class="sxs-lookup"><span data-stu-id="42a8d-175">DNS Summary for Extensible Messaging and Presence Protocol</span></span>
 
 
 <table>
@@ -210,24 +212,24 @@ ms.locfileid: "40981420"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="a686e-176">Posizione/tipo/porta</span><span class="sxs-lookup"><span data-stu-id="a686e-176">Location/TYPE/Port</span></span></th>
-<th><span data-ttu-id="a686e-177">FQDN</span><span class="sxs-lookup"><span data-stu-id="a686e-177">FQDN</span></span></th>
-<th><span data-ttu-id="a686e-178">Indirizzo IP/record host FQDN</span><span class="sxs-lookup"><span data-stu-id="a686e-178">IP address/FQDN host record</span></span></th>
-<th><span data-ttu-id="a686e-179">Mapping a/commenti</span><span class="sxs-lookup"><span data-stu-id="a686e-179">Maps to/Comments</span></span></th>
+<th><span data-ttu-id="42a8d-176">Posizione/tipo/porta</span><span class="sxs-lookup"><span data-stu-id="42a8d-176">Location/TYPE/Port</span></span></th>
+<th><span data-ttu-id="42a8d-177">FQDN</span><span class="sxs-lookup"><span data-stu-id="42a8d-177">FQDN</span></span></th>
+<th><span data-ttu-id="42a8d-178">Indirizzo IP/record host FQDN</span><span class="sxs-lookup"><span data-stu-id="42a8d-178">IP address/FQDN host record</span></span></th>
+<th><span data-ttu-id="42a8d-179">Mapping a/commenti</span><span class="sxs-lookup"><span data-stu-id="42a8d-179">Maps to/Comments</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="a686e-180">DNS esterno/SRV/5269</span><span class="sxs-lookup"><span data-stu-id="a686e-180">External DNS/SRV/5269</span></span></p></td>
-<td><p><span data-ttu-id="a686e-181">_xmpp-server. _tcp. contoso. com</span><span class="sxs-lookup"><span data-stu-id="a686e-181">_xmpp-server._tcp.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-182">xmpp.contoso.com</span><span class="sxs-lookup"><span data-stu-id="a686e-182">xmpp.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="a686e-183">Interfaccia esterna proxy XMPP nel pool di servizi o Edge di Access. Ripetere l'impostazione necessaria per tutti i domini SIP interni con gli utenti abilitati a Lync in cui è consentito il contatto con i contatti XMPP tramite la configurazione dei criteri di accesso esterno tramite un criterio globale, il criterio del sito in cui si trova l'utente o i criteri degli utenti applicati alla Utenti abilitati per Lync.</span><span class="sxs-lookup"><span data-stu-id="a686e-183">XMPP proxy external interface on the Access Edge service or Edge pool.Repeat as necessary for all internal SIP domains with Lync enabled users where contact with XMPP contacts is allowed through the configuration of the External Access Policy through a global policy, site policy where the user is located, or user policy applied to the Lync-enabled user.</span></span> <span data-ttu-id="a686e-184">Un dominio XMPP consentito deve essere configurato anche nei criteri dei partner federati XMPP.</span><span class="sxs-lookup"><span data-stu-id="a686e-184">An allowed XMPP domain must also be configured in the XMPP Federated Partners policy.</span></span> <span data-ttu-id="a686e-185">Vedere gli argomenti in <strong>vedere anche</strong> per ulteriori dettagli</span><span class="sxs-lookup"><span data-stu-id="a686e-185">See topics in <strong>See Also</strong> for additional details</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-180">DNS esterno/SRV/5269</span><span class="sxs-lookup"><span data-stu-id="42a8d-180">External DNS/SRV/5269</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-181">_xmpp-server. _tcp. contoso. com</span><span class="sxs-lookup"><span data-stu-id="42a8d-181">_xmpp-server._tcp.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-182">xmpp.contoso.com</span><span class="sxs-lookup"><span data-stu-id="42a8d-182">xmpp.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-183">Interfaccia esterna proxy XMPP nel pool di servizi o Edge di Access. Ripetere l'impostazione necessaria per tutti i domini SIP interni con gli utenti abilitati a Lync in cui è consentito il contatto con i contatti XMPP tramite la configurazione dei criteri di accesso esterno tramite un criterio globale, il criterio del sito in cui si trova l'utente o i criteri degli utenti applicati alla Utenti abilitati per Lync.</span><span class="sxs-lookup"><span data-stu-id="42a8d-183">XMPP proxy external interface on the Access Edge service or Edge pool.Repeat as necessary for all internal SIP domains with Lync enabled users where contact with XMPP contacts is allowed through the configuration of the External Access Policy through a global policy, site policy where the user is located, or user policy applied to the Lync-enabled user.</span></span> <span data-ttu-id="42a8d-184">Un dominio XMPP consentito deve essere configurato anche nei criteri dei partner federati XMPP.</span><span class="sxs-lookup"><span data-stu-id="42a8d-184">An allowed XMPP domain must also be configured in the XMPP Federated Partners policy.</span></span> <span data-ttu-id="42a8d-185">Vedere gli argomenti in <strong>vedere anche</strong> per ulteriori dettagli</span><span class="sxs-lookup"><span data-stu-id="42a8d-185">See topics in <strong>See Also</strong> for additional details</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="a686e-186">DNS esterno/A</span><span class="sxs-lookup"><span data-stu-id="a686e-186">External DNS/A</span></span></p></td>
-<td><p><span data-ttu-id="a686e-187">xmpp.contoso.com (ad esempio)</span><span class="sxs-lookup"><span data-stu-id="a686e-187">xmpp.contoso.com (for example)</span></span></p></td>
-<td><p><span data-ttu-id="a686e-188">Indirizzo IP del servizio Access Edge nell'Edge Server o nel pool di Edge che ospita il proxy XMPP</span><span class="sxs-lookup"><span data-stu-id="a686e-188">IP address of Access Edge service on your Edge Server or Edge pool hosting XMPP proxy</span></span></p></td>
-<td><p><span data-ttu-id="a686e-189">Punta al servizio di Access Edge o al pool di Edge che ospita il servizio proxy XMPP.</span><span class="sxs-lookup"><span data-stu-id="a686e-189">Points to the Access Edge service or Edge pool that hosts the XMPP proxy service.</span></span> <span data-ttu-id="a686e-190">In genere, il record SRV creato punterà al record host (A o AAAA)</span><span class="sxs-lookup"><span data-stu-id="a686e-190">Typically, the SRV record that you create will point to this host (A or AAAA) record</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-186">DNS esterno/A</span><span class="sxs-lookup"><span data-stu-id="42a8d-186">External DNS/A</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-187">xmpp.contoso.com (ad esempio)</span><span class="sxs-lookup"><span data-stu-id="42a8d-187">xmpp.contoso.com (for example)</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-188">Indirizzo IP del servizio Access Edge nell'Edge Server o nel pool di Edge che ospita il proxy XMPP</span><span class="sxs-lookup"><span data-stu-id="42a8d-188">IP address of Access Edge service on your Edge Server or Edge pool hosting XMPP proxy</span></span></p></td>
+<td><p><span data-ttu-id="42a8d-189">Punta al servizio di Access Edge o al pool di Edge che ospita il servizio proxy XMPP.</span><span class="sxs-lookup"><span data-stu-id="42a8d-189">Points to the Access Edge service or Edge pool that hosts the XMPP proxy service.</span></span> <span data-ttu-id="42a8d-190">In genere, il record SRV creato punterà al record host (A o AAAA)</span><span class="sxs-lookup"><span data-stu-id="42a8d-190">Typically, the SRV record that you create will point to this host (A or AAAA) record</span></span></p></td>
 </tr>
 </tbody>
 </table>

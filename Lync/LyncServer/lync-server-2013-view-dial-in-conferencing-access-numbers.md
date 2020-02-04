@@ -3,6 +3,8 @@ title: 'Lync Server 2013: visualizzare i numeri di accesso per le conferenze tel
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: View dial-in conferencing access numbers
 ms:assetid: 41a7dfb4-0c89-4650-b61b-0e1bf875c62b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ688037(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 49733628
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0b9d9e6ca8d4f388edf6f04f4012726f6abee9e9
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 7e86127c2a945bcd9154df0456545f5783fd1a34
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40976892"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41731086"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -23,7 +25,7 @@ ms.locfileid: "40976892"
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="view-dial-in-conferencing-access-numbers-in-lync-server-2013"></a><span data-ttu-id="c93f8-102">Visualizzare i numeri di accesso per i servizi di conferenza telefonica con chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c93f8-102">View dial-in conferencing access numbers in Lync Server 2013</span></span>
+# <a name="view-dial-in-conferencing-access-numbers-in-lync-server-2013"></a><span data-ttu-id="7b30a-102">Visualizzare i numeri di accesso per i servizi di conferenza telefonica con chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7b30a-102">View dial-in conferencing access numbers in Lync Server 2013</span></span>
 
 </div>
 
@@ -33,41 +35,41 @@ ms.locfileid: "40976892"
 
 <span> </span>
 
-<span data-ttu-id="c93f8-103">_**Argomento Ultima modifica:** 2013-02-23_</span><span class="sxs-lookup"><span data-stu-id="c93f8-103">_**Topic Last Modified:** 2013-02-23_</span></span>
+<span data-ttu-id="7b30a-103">_**Argomento Ultima modifica:** 2013-02-23_</span><span class="sxs-lookup"><span data-stu-id="7b30a-103">_**Topic Last Modified:** 2013-02-23_</span></span>
 
-<span data-ttu-id="c93f8-104">Nel pannello di controllo di Lync Server 2013 fornisci i numeri di accesso esterno agli utenti in modo che possano partecipare a una riunione esternamente.</span><span class="sxs-lookup"><span data-stu-id="c93f8-104">In Lync Server 2013 Control Panel, you provide dial-in access numbers to users so that they can join a meeting externally.</span></span>
+<span data-ttu-id="7b30a-104">Nel pannello di controllo di Lync Server 2013 fornisci i numeri di accesso esterno agli utenti in modo che possano partecipare a una riunione esternamente.</span><span class="sxs-lookup"><span data-stu-id="7b30a-104">In Lync Server 2013 Control Panel, you provide dial-in access numbers to users so that they can join a meeting externally.</span></span>
 
 <div>
 
-## <a name="to-view-dial-in-access-numbers"></a><span data-ttu-id="c93f8-105">Per visualizzare i numeri di accesso per la chiamata in ingresso</span><span class="sxs-lookup"><span data-stu-id="c93f8-105">To view dial-in access numbers</span></span>
+## <a name="to-view-dial-in-access-numbers"></a><span data-ttu-id="7b30a-105">Per visualizzare i numeri di accesso per la chiamata in ingresso</span><span class="sxs-lookup"><span data-stu-id="7b30a-105">To view dial-in access numbers</span></span>
 
-1.  <span data-ttu-id="c93f8-106">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="c93f8-106">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1.  <span data-ttu-id="7b30a-106">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="7b30a-106">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
 
-2.  <span data-ttu-id="c93f8-107">Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="c93f8-107">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="c93f8-108">Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="c93f8-108">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="7b30a-107">Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="7b30a-107">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="7b30a-108">Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="7b30a-108">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="c93f8-109">Sulla barra di spostamento sinistra fare clic su servizi di conferenza e quindi su **numero di accesso** **esterno** .</span><span class="sxs-lookup"><span data-stu-id="c93f8-109">In the left navigation bar, click **Conferencing** and then click **Dial-in Access Number**.</span></span>
+3.  <span data-ttu-id="7b30a-109">Sulla barra di spostamento sinistra fare clic su servizi di conferenza e quindi su **numero di accesso** **esterno** .</span><span class="sxs-lookup"><span data-stu-id="7b30a-109">In the left navigation bar, click **Conferencing** and then click **Dial-in Access Number**.</span></span>
 
-4.  <span data-ttu-id="c93f8-110">Nella pagina **numero di accesso** esterno, fare clic sul numero di accesso che si vuole visualizzare.</span><span class="sxs-lookup"><span data-stu-id="c93f8-110">On the **Dial-in Access Number** page, click the access number that you would like to view.</span></span>
+4.  <span data-ttu-id="7b30a-110">Nella pagina **numero di accesso** esterno, fare clic sul numero di accesso che si vuole visualizzare.</span><span class="sxs-lookup"><span data-stu-id="7b30a-110">On the **Dial-in Access Number** page, click the access number that you would like to view.</span></span>
 
-5.  <span data-ttu-id="c93f8-111">In **modifica**selezionare la **visualizzazione dettagli..** .</span><span class="sxs-lookup"><span data-stu-id="c93f8-111">In **Edit**, select the **Show Details…**</span></span> <span data-ttu-id="c93f8-112">casella di controllo.</span><span class="sxs-lookup"><span data-stu-id="c93f8-112">check box.</span></span>
+5.  <span data-ttu-id="7b30a-111">In **modifica**selezionare la **visualizzazione dettagli..** .</span><span class="sxs-lookup"><span data-stu-id="7b30a-111">In **Edit**, select the **Show Details…**</span></span> <span data-ttu-id="7b30a-112">casella di controllo.</span><span class="sxs-lookup"><span data-stu-id="7b30a-112">check box.</span></span>
 
 </div>
 
 <div>
 
-## <a name="viewing-dial-in-conferencing-access-numbers-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="c93f8-113">Visualizzazione dei numeri di accesso ai servizi di conferenza telefonica con chiamata in ingresso con i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="c93f8-113">Viewing Dial-in Conferencing Access Numbers by Using Windows PowerShell Cmdlets</span></span>
+## <a name="viewing-dial-in-conferencing-access-numbers-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="7b30a-113">Visualizzazione dei numeri di accesso ai servizi di conferenza telefonica con chiamata in ingresso con i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="7b30a-113">Viewing Dial-in Conferencing Access Numbers by Using Windows PowerShell Cmdlets</span></span>
 
-<span data-ttu-id="c93f8-114">I numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso possono essere visualizzati usando Windows PowerShell e il cmdlet Get-CsDialInConferencingAccessNumber.</span><span class="sxs-lookup"><span data-stu-id="c93f8-114">Dial-in conferencing access numbers can be viewed by using Windows PowerShell and the Get-CsDialInConferencingAccessNumber cmdlet.</span></span> <span data-ttu-id="c93f8-115">Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="c93f8-115">This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="c93f8-116">Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="c93f8-116">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
+<span data-ttu-id="7b30a-114">I numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso possono essere visualizzati usando Windows PowerShell e il cmdlet Get-CsDialInConferencingAccessNumber.</span><span class="sxs-lookup"><span data-stu-id="7b30a-114">Dial-in conferencing access numbers can be viewed by using Windows PowerShell and the Get-CsDialInConferencingAccessNumber cmdlet.</span></span> <span data-ttu-id="7b30a-115">Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="7b30a-115">This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="7b30a-116">Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="7b30a-116">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
 
 <div>
 
-## <a name="to-view-dial-in-conferencing-access-numbers"></a><span data-ttu-id="c93f8-117">Per visualizzare i numeri di accesso per i servizi di conferenza telefonica</span><span class="sxs-lookup"><span data-stu-id="c93f8-117">To view dial-in conferencing access numbers</span></span>
+## <a name="to-view-dial-in-conferencing-access-numbers"></a><span data-ttu-id="7b30a-117">Per visualizzare i numeri di accesso per i servizi di conferenza telefonica</span><span class="sxs-lookup"><span data-stu-id="7b30a-117">To view dial-in conferencing access numbers</span></span>
 
-  - <span data-ttu-id="c93f8-118">Per visualizzare informazioni su tutti i numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:</span><span class="sxs-lookup"><span data-stu-id="c93f8-118">To view information about all your dial-in conferencing access numbers, type the following command in the Lync Server Management Shell and then press ENTER:</span></span>
+  - <span data-ttu-id="7b30a-118">Per visualizzare informazioni su tutti i numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:</span><span class="sxs-lookup"><span data-stu-id="7b30a-118">To view information about all your dial-in conferencing access numbers, type the following command in the Lync Server Management Shell and then press ENTER:</span></span>
     
         Get-CsDialInConferencingAccessNumber
     
-    <span data-ttu-id="c93f8-119">Questo restituirà informazioni simili alla seguente:</span><span class="sxs-lookup"><span data-stu-id="c93f8-119">That will return information similar to this:</span></span>
+    <span data-ttu-id="7b30a-119">Questo restituirà informazioni simili alla seguente:</span><span class="sxs-lookup"><span data-stu-id="7b30a-119">That will return information similar to this:</span></span>
     
         Identity           : CN={20ca8dc8-5ff8-41f4-b5bb-22ba9972ae2e},
                              CN=Application Contacts,CN=RTCService=Services,
@@ -84,7 +86,7 @@ ms.locfileid: "40976892"
 
 </div>
 
-<span data-ttu-id="c93f8-120">Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsDialInConferencingAccessNumber](https://docs.microsoft.com/powershell/module/skype/Get-CsDialInConferencingAccessNumber) .</span><span class="sxs-lookup"><span data-stu-id="c93f8-120">For more information, see the help topic for the [Get-CsDialInConferencingAccessNumber](https://docs.microsoft.com/powershell/module/skype/Get-CsDialInConferencingAccessNumber) cmdlet.</span></span>
+<span data-ttu-id="7b30a-120">Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsDialInConferencingAccessNumber](https://docs.microsoft.com/powershell/module/skype/Get-CsDialInConferencingAccessNumber) .</span><span class="sxs-lookup"><span data-stu-id="7b30a-120">For more information, see the help topic for the [Get-CsDialInConferencingAccessNumber](https://docs.microsoft.com/powershell/module/skype/Get-CsDialInConferencingAccessNumber) cmdlet.</span></span>
 
 </div>
 
