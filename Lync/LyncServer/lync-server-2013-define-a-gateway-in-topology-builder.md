@@ -3,6 +3,8 @@ title: 'Lync Server 2013: definire un gateway in Generatore di topologia'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Define a gateway in Topology Builder
 ms:assetid: 456e5a96-d9f6-42a6-862c-a69464391628
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg425945(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184036
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0c9e57ad4e3d8c1692731bcfd4a56dc5c3d05bda
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 18f257648ba24930eaab0d314e34178ffd67a0c2
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40976190"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41733656"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -55,11 +57,11 @@ Seguire questa procedura per usare generatore di topologia per definire un *peer
 
 2.  In Lync Server 2013, il nome del sito, i componenti condivisi, fare clic con il pulsante destro del mouse sul nodo **gateway PSTN** e quindi scegliere **nuovo gateway PSTN**.
     
-    ![d898c3c1-8798-4b74-8F02-b994ef3db4c1](images/Gg425945.d898c3c1-8798-4b74-8f02-b994ef3db4c1(OCS.15).png "d898c3c1-8798-4b74-8F02-b994ef3db4c1")
+    ![d898c3c1-8798-4b74-8f02-b994ef3db4c1](images/Gg425945.d898c3c1-8798-4b74-8f02-b994ef3db4c1(OCS.15).png "d898c3c1-8798-4b74-8f02-b994ef3db4c1")
 
 3.  In **Definisci nuovo gateway IP/PSTN**Digitare il nome di dominio completo (FQDN) o l'indirizzo IP del peer e fare clic su **Avanti**.
     
-    ![8017ba5e-41bc-48D4-97d9-fd306cd322b8](images/Gg425945.8017ba5e-41bc-48d4-97d9-fd306cd322b8(OCS.15).png "8017ba5e-41bc-48D4-97d9-fd306cd322b8")
+    ![8017ba5e-41bc-48d4-97d9-fd306cd322b8](images/Gg425945.8017ba5e-41bc-48d4-97d9-fd306cd322b8(OCS.15).png "8017ba5e-41bc-48d4-97d9-fd306cd322b8")
     
     <div>
     
@@ -72,7 +74,7 @@ Seguire questa procedura per usare generatore di topologia per definire un *peer
 
 4.  Definire la modalità di ascolto (IPv4 o IPv6) dell'indirizzo IP del nuovo gateway PSTN e fare clic su **Avanti**.
     
-    ![c7fc0d12-adc8-45A7-ACA1-b376e1d2fcec](images/Gg425945.c7fc0d12-adc8-45a7-aca1-b376e1d2fcec(OCS.15).png "c7fc0d12-adc8-45A7-ACA1-b376e1d2fcec")
+    ![c7fc0d12-adc8-45a7-aca1-b376e1d2fcec](images/Gg425945.c7fc0d12-adc8-45a7-aca1-b376e1d2fcec(OCS.15).png "c7fc0d12-adc8-45a7-aca1-b376e1d2fcec")
 
 5.  Definire un *trunk radice* per il gateway PSTN. Un trunk è una connessione logica tra un Mediation Server e un gateway identificato in modo univoco dalla tupla.
     
@@ -82,7 +84,7 @@ Seguire questa procedura per usare generatore di topologia per definire un *peer
     
       - Il trunk radice non può essere rimosso finché non viene rimosso il gateway PSTN associato.
     
-    ![3b030757-EB35-4616-bb6b-74ee67507e3d](images/Gg425945.3b030757-eb35-4616-bb6b-74ee67507e3d(OCS.15).png "3b030757-EB35-4616-bb6b-74ee67507e3d")
+    ![3b030757-eb35-4616-bb6b-74ee67507e3d](images/Gg425945.3b030757-eb35-4616-bb6b-74ee67507e3d(OCS.15).png "3b030757-eb35-4616-bb6b-74ee67507e3d")
 
 6.  In **porta di ascolto per gateway IP/PSTN**Digitare la porta di attesa che il gateway, il PBX o il SBC utilizzerà per i messaggi SIP provenienti dal server di mediazione che verranno associati al trunk radice del gateway PSTN. Per impostazione predefinita, le porte sono 5066 per TCP (Transmission Control Protocol) e 5067 per Transport Layer Security (TLS) in un gateway PSTN, un PBX o un SBC. In un Survivable Branch Appliance in un sito di succursale, le porte predefinite sono 5081 per TCP e 5082 per TLS.
 

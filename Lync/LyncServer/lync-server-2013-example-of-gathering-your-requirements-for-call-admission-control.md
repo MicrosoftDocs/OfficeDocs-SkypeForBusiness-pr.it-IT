@@ -3,6 +3,8 @@ title: Esempio di raccolta dei requisiti per il controllo dell'ammissione alle c
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Example of gathering your requirements for call admission control
 ms:assetid: 3363ac53-b7c4-4a59-aea1-b2f3ee016ae1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg425827(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183820
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e17d9abb0387f0d77c696487558dec0c915b1651
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 345f5d7e41dd9da3e6d68c59ce9656d3052c57b5
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40984279"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41756270"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -67,7 +69,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     
     **Esempio di rete aziendale divisa in tre aree di rete**
     
-    ![Esempio di topologia di rete con 3](images/Gg425827.08937347-250f-488f-ba5f-c256e6afcd8b(OCS.15).jpg "esempio di topologia di rete con 3 aree di") rete  
+    ![Esempio di topologia di rete con tre aree di rete](images/Gg425827.08937347-250f-488f-ba5f-c256e6afcd8b(OCS.15).jpg "Esempio di topologia di rete con tre aree di rete")  
     
     <div>
     
@@ -193,7 +195,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     
     **Area di rete CAC Nord America con tre siti di rete non vincolati per larghezza di banda (Chicago, New York e Detroit) e tre siti di rete vincolati dalla larghezza di banda WAN (Portland, Reno e Albuquerque)**
     
-    ![Siti di rete di esempio vincolati da siti di rete di esempio di larghezza di banda WAN](images/Gg425827.d9d1f231-db4d-4dd7-8fbc-eb0b6d1e705d(OCS.15).jpg "vincolati da larghezza di banda WAN")  
+    ![Siti di rete di esempio vincolati dalla larghezza di banda WAN](images/Gg425827.d9d1f231-db4d-4dd7-8fbc-eb0b6d1e705d(OCS.15).jpg "Siti di rete di esempio vincolati dalla larghezza di banda WAN")  
 
 5.  Per ogni collegamento WAN con larghezza di banda limitata, determinare le operazioni seguenti:
     
@@ -414,7 +416,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     
     **Collegamenti all'area di rete con limiti di larghezza di banda associati**
     
-    ![Esempio di limitazioni tra 3 aree](images/Gg425827.25259afa-ee7c-4d26-bc41-92ba9cb56dec(OCS.15).jpg "esempio di limitazioni tra 3 aree geografiche")  
+    ![Esempio di limitazioni fra tre aree](images/Gg425827.25259afa-ee7c-4d26-bc41-92ba9cb56dec(OCS.15).jpg "Esempio di limitazioni fra tre aree")  
     
     ### <a name="region-link-bandwidth-information-bandwidth-in-kbps"></a>Informazioni sulla larghezza di banda del collegamento geografica (larghezza di banda in Kbps)
     
@@ -529,7 +531,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     
     **Area di rete CAC Nord America che mostra le capacità di larghezza di banda e i limiti di larghezza di banda per il collegamento tra siti tra Reno e Albuquerque**
     
-    ![Siti di rete vincolati da siti di rete di esempio di larghezza di banda WAN](images/Gg425827.063e5e1d-b6c8-4e8c-98db-c227c78f671d(OCS.15).jpg "vincolati da un esempio di larghezza di banda WAN")  
+    ![Esempio di siti di rete vincolati dalla larghezza di banda WAN](images/Gg425827.063e5e1d-b6c8-4e8c-98db-c227c78f671d(OCS.15).jpg "Esempio di siti di rete vincolati dalla larghezza di banda WAN")  
     
     ### <a name="bandwidth-information-for-an-inter-site-link-between-two-network-sites-bandwidth-in-kbps"></a>Informazioni sulla larghezza di banda per un collegamento intersito tra due siti di rete (larghezza di banda in Kbps)
     

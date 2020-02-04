@@ -3,6 +3,8 @@ title: 'Lync Server 2013: trasferimenti di routing e di chiamata consultiva basa
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Location-Based Routing and consultative call transfers
 ms:assetid: b12460c2-36c8-481f-b867-fe10dc1c0bdf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn362836(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 56335089
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d7c7b73efb670c5569b8c4600c1759e981cda211
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 4e433baf180b8e4abf50ec374848204bf6628eb0
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40980876"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41765334"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -39,7 +41,7 @@ Oltre a applicare il routing basato sulla posizione alle riunioni Lync, l'applic
 
 **Flusso delle chiamate di trasferimento chiamate consultive**
 
-Routing ![basato sul percorso per il diagramma di conferenza](images/Dn362836.e4d43d6f-23d2-49c9-b12b-15248a743f92(OCS.15).jpg "basato sulla posizione del routing per i servizi di conferenza")
+![Diagramma del routing in base alla posizione per le conferenze](images/Dn362836.e4d43d6f-23d2-49c9-b12b-15248a743f92(OCS.15).jpg "Diagramma del routing in base alla posizione per le conferenze")
 
 Quando un utente abilitato per il routing basato sulla posizione avvia un trasferimento di chiamata consultiva di un endpoint PSTN (come illustrato nella figura precedente), vengono create due chiamate attive, una chiamata tra l'utente PSTN e l'utente di Lync A e l'altra tra l'utente di Lync e l'utente di Lync B. il comportamento seguente viene applicato dall'applicazione di conferenza di routing basata sulla posizione:
 

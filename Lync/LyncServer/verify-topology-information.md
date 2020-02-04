@@ -3,6 +3,8 @@ title: Verificare le informazioni sulla topologia
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Verify topology information
 ms:assetid: aa4c424e-f87c-4be6-8df6-a0cd193b11fc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205151(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48185046
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7657bb80d7acb6d48a4027c665fae70e469bb236
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: ec6c73f274cb67b527aaf1147f20e83959487255
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40976884"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41730836"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -56,7 +58,7 @@ Il primo passaggio per verificare l'Unione completata correttamente consiste nel
     
     </div>
 
-Finestra di dialogo Generatore di topologia della finestra di ![BackCompatSite]generatore di topologia(images/JJ205243.62751c76-f018-4c6d-bb48-c61ef8974d31(OCS.15).jpg "BackCompatSite")
+![Finestra di dialogo per BackCompatSite in Generatore di topologie](images/JJ205243.62751c76-f018-4c6d-bb48-c61ef8974d31(OCS.15).jpg "Finestra di dialogo per BackCompatSite in Generatore di topologie")
 
 È anche possibile usare il pannello di controllo di Lync Server 2013 per visualizzare la topologia unita. Nel pannello di controllo di Lync Server 2013 è possibile visualizzare ogni nome di dominio completo del server, FQDN del pool e sito per la topologia unita. I server Uniti hanno un nome di **sito** di **BackCompatSite**.
 
@@ -72,7 +74,7 @@ Finestra di dialogo Generatore di topologia della finestra di ![BackCompatSite]g
 
 3.  Nella scheda **stato** verificare che i server e i pool conglobati vengano visualizzati cercando **BackCompatSite** nella colonna **sito** .
 
-![Pannello di controllo di Lync Server che mostra la topologia unita](images/JJ205151.f986ddd4-2040-454d-9389-7f6154b59cc9(OCS.15).jpg "Pannello di controllo di Lync Server con topologia unita")
+![Pannello di controllo di Lync Server con unione di topologie](images/JJ205151.f986ddd4-2040-454d-9389-7f6154b59cc9(OCS.15).jpg "Pannello di controllo di Lync Server con unione di topologie")
 
 Per visualizzare altri dettagli su un pool Unito, usare il cmdlet **Get-CsPool** . Oltre alle informazioni disponibili in Generatore di topologia e nel pannello di controllo di Lync Server 2013, questo cmdlet Visualizza i servizi eseguiti nel pool di Lync Server 2013.
 
