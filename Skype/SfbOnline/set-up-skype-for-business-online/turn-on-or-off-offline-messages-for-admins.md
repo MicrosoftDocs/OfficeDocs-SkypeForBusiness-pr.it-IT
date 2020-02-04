@@ -14,57 +14,58 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Setup
 description: Learn how to send Skype for Business instant messages even when your contacts aren't signed in using PowerShell.
-ms.openlocfilehash: 3e083f7bf0d4f83ba5e904452721eaa92ed9e652
-ms.sourcegitcommit: afc7edd03f4baa1d75f9642d4dbce767fec69b00
+ms.openlocfilehash: 2b9cea6e7a4bcb3f7fc34bdf67e77353412d9e13
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962834"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41706311"
 ---
-# <a name="turn-on-or-off-offline-messages-for-admins"></a><span data-ttu-id="8c5c0-103">Attivare o disattivare i messaggi offline per gli amministratori</span><span class="sxs-lookup"><span data-stu-id="8c5c0-103">Turn on or off Offline Messages for admins</span></span>
+# <a name="turn-on-or-off-offline-messages-for-admins"></a><span data-ttu-id="fdb29-103">Attivare o disattivare i messaggi offline per gli amministratori</span><span class="sxs-lookup"><span data-stu-id="fdb29-103">Turn on or off Offline Messages for admins</span></span>
 
-<span data-ttu-id="8c5c0-p101">È possibile inviare messaggi istantanei di Skype for business ai contatti anche se non sono stati registrati. Questa caratteristica consente ai tuoi contatti di sapere che hai cercato di raggiungerli. Non è necessario attendere che qualcuno sia online prima di inviare un messaggio.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-p101">You can send Skype for Business IMs to your contacts even if they aren't signed in. This feature lets your contacts know that you have been trying to reach them. You don't have to wait until someone is online before sending them a message.</span></span>
+<span data-ttu-id="fdb29-p101">È possibile inviare messaggi istantanei di Skype for business ai contatti anche se non sono stati registrati. Questa caratteristica consente ai tuoi contatti di sapere che hai cercato di raggiungerli. Non è necessario attendere che qualcuno sia online prima di inviare un messaggio.</span><span class="sxs-lookup"><span data-stu-id="fdb29-p101">You can send Skype for Business IMs to your contacts even if they aren't signed in. This feature lets your contacts know that you have been trying to reach them. You don't have to wait until someone is online before sending them a message.</span></span>
 
-<span data-ttu-id="8c5c0-107">Per i messaggi offline, è importante sapere:</span><span class="sxs-lookup"><span data-stu-id="8c5c0-107">For Offline messages, it's important to know:</span></span>
+<span data-ttu-id="fdb29-107">Per i messaggi offline, è importante sapere:</span><span class="sxs-lookup"><span data-stu-id="fdb29-107">For Offline messages, it's important to know:</span></span>
 
-- <span data-ttu-id="8c5c0-108">I messaggi offline non verranno archiviati nella cassetta postale dell'utente.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-108">Offline messages won't be archived in the user's mailbox.</span></span>
+- <span data-ttu-id="fdb29-108">I messaggi offline non verranno archiviati nella cassetta postale dell'utente.</span><span class="sxs-lookup"><span data-stu-id="fdb29-108">Offline messages won't be archived in the user's mailbox.</span></span>
 
-- <span data-ttu-id="8c5c0-109">I messaggi offline verranno inviati alla cassetta postale dell'utente e l'utente riceverà una notifica quando accederà a Skype for business.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-109">Offline messages will be sent to the user's mailbox, and the user will be notified when they log in to Skype for Business.</span></span>
+- <span data-ttu-id="fdb29-109">I messaggi offline verranno inviati alla cassetta postale dell'utente e l'utente riceverà una notifica quando accederà a Skype for business.</span><span class="sxs-lookup"><span data-stu-id="fdb29-109">Offline messages will be sent to the user's mailbox, and the user will be notified when they log in to Skype for Business.</span></span>
 
-- <span data-ttu-id="8c5c0-110">Se lo stato del destinatario del messaggio è impostato su **non disturbare** o **presentare**, riceverà un messaggio perso inviato dal client Skype for business del destinatario.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-110">If the message recipient's status is set to **Do Not Disturb** or **Presenting**, they will receive a missed message that is sent from the recipient's Skype for Business client.</span></span>
+- <span data-ttu-id="fdb29-110">Se lo stato del destinatario del messaggio è impostato su **non disturbare** o **presentare**, riceverà un messaggio perso inviato dal client Skype for business del destinatario.</span><span class="sxs-lookup"><span data-stu-id="fdb29-110">If the message recipient's status is set to **Do Not Disturb** or **Presenting**, they will receive a missed message that is sent from the recipient's Skype for Business client.</span></span>
 
-<span data-ttu-id="8c5c0-111">Per altre informazioni, vedere [usare la messaggistica offline in Skype for business](https://support.office.com/article/ffdc6a43-71a1-40ee-bfcc-640d21324a3d).</span><span class="sxs-lookup"><span data-stu-id="8c5c0-111">For more information, see [Use offline messaging in Skype for Business](https://support.office.com/article/ffdc6a43-71a1-40ee-bfcc-640d21324a3d).</span></span>
+<span data-ttu-id="fdb29-111">Per altre informazioni, vedere [usare la messaggistica offline in Skype for business](https://support.office.com/article/ffdc6a43-71a1-40ee-bfcc-640d21324a3d).</span><span class="sxs-lookup"><span data-stu-id="fdb29-111">For more information, see [Use offline messaging in Skype for Business](https://support.office.com/article/ffdc6a43-71a1-40ee-bfcc-640d21324a3d).</span></span>
 
-## <a name="to-get-you-started"></a><span data-ttu-id="8c5c0-112">Per iniziare</span><span class="sxs-lookup"><span data-stu-id="8c5c0-112">To get you started</span></span>
-
-## #
-
- <span data-ttu-id="8c5c0-113">**Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**</span><span class="sxs-lookup"><span data-stu-id="8c5c0-113">**Check that you are running Windows PowerShell version 3.0 or higher**</span></span>
-
-1. <span data-ttu-id="8c5c0-114">A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-114">To verify that you are running version 3.0 or higher: **Start Menu** > **Windows PowerShell**.</span></span>
-
-2. <span data-ttu-id="8c5c0-115">Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-115">Check the version by typing  _Get-Host_ in the **Windows PowerShell** window.</span></span>
-
-3. <span data-ttu-id="8c5c0-116">Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-116">If you don't have version 3.0 or higher, you need to download and install updates to Windows PowerShell.</span></span> <span data-ttu-id="8c5c0-117">Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-117">See [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/?LinkId=716845) to download and update Windows PowerShell to version 4.0.</span></span> <span data-ttu-id="8c5c0-118">Quando richiesto, riavviare il computer.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-118">Restart your computer when you are prompted.</span></span>
-
-4. <span data-ttu-id="8c5c0-p103">Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-p103">You will also need to install the Windows PowerShell module for Skype for Business Online that enables you to create a remote Windows PowerShell session that connects to Skype for Business Online. This module, which is supported only on 64-bit computers, can be downloaded from the Microsoft Download Center at [Windows PowerShell Module for Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Restart your computer if you are prompted.</span></span>
-
-<span data-ttu-id="8c5c0-122">Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx).</span><span class="sxs-lookup"><span data-stu-id="8c5c0-122">If you need to know more, see [Connect to all Office 365 services in a single Windows PowerShell window](https://technet.microsoft.com/library/dn568015.aspx).</span></span>
+## <a name="to-get-you-started"></a><span data-ttu-id="fdb29-112">Per iniziare</span><span class="sxs-lookup"><span data-stu-id="fdb29-112">To get you started</span></span>
 
 ## #
 
- <span data-ttu-id="8c5c0-123">**Avviare una sessione di Windows PowerShell**</span><span class="sxs-lookup"><span data-stu-id="8c5c0-123">**Start a Windows PowerShell session**</span></span>
+ <span data-ttu-id="fdb29-113">**Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**</span><span class="sxs-lookup"><span data-stu-id="fdb29-113">**Check that you are running Windows PowerShell version 3.0 or higher**</span></span>
 
-1. <span data-ttu-id="8c5c0-124">Fare clic sul pulsante **Start** > **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-124">From the **Start Menu** > **Windows PowerShell**.</span></span>
+1. <span data-ttu-id="fdb29-114">A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="fdb29-114">To verify that you are running version 3.0 or higher: **Start Menu** > **Windows PowerShell**.</span></span>
 
-2. <span data-ttu-id="8c5c0-125">Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:</span><span class="sxs-lookup"><span data-stu-id="8c5c0-125">In the **Windows PowerShell** window, connect to your Office 365 organization by running:</span></span>
+2. <span data-ttu-id="fdb29-115">Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="fdb29-115">Check the version by typing  _Get-Host_ in the **Windows PowerShell** window.</span></span>
+
+3. <span data-ttu-id="fdb29-116">Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="fdb29-116">If you don't have version 3.0 or higher, you need to download and install updates to Windows PowerShell.</span></span> <span data-ttu-id="fdb29-117">Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0.</span><span class="sxs-lookup"><span data-stu-id="fdb29-117">See [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/?LinkId=716845) to download and update Windows PowerShell to version 4.0.</span></span> <span data-ttu-id="fdb29-118">Quando richiesto, riavviare il computer.</span><span class="sxs-lookup"><span data-stu-id="fdb29-118">Restart your computer when you are prompted.</span></span>
+
+4. <span data-ttu-id="fdb29-p103">Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.</span><span class="sxs-lookup"><span data-stu-id="fdb29-p103">You will also need to install the Windows PowerShell module for Skype for Business Online that enables you to create a remote Windows PowerShell session that connects to Skype for Business Online. This module, which is supported only on 64-bit computers, can be downloaded from the Microsoft Download Center at [Windows PowerShell Module for Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Restart your computer if you are prompted.</span></span>
+
+<span data-ttu-id="fdb29-122">Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx).</span><span class="sxs-lookup"><span data-stu-id="fdb29-122">If you need to know more, see [Connect to all Office 365 services in a single Windows PowerShell window](https://technet.microsoft.com/library/dn568015.aspx).</span></span>
+
+## #
+
+ <span data-ttu-id="fdb29-123">**Avviare una sessione di Windows PowerShell**</span><span class="sxs-lookup"><span data-stu-id="fdb29-123">**Start a Windows PowerShell session**</span></span>
+
+1. <span data-ttu-id="fdb29-124">Fare clic sul pulsante **Start** > **Windows PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="fdb29-124">From the **Start Menu** > **Windows PowerShell**.</span></span>
+
+2. <span data-ttu-id="fdb29-125">Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:</span><span class="sxs-lookup"><span data-stu-id="fdb29-125">In the **Windows PowerShell** window, connect to your Office 365 organization by running:</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="8c5c0-126">Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-126">You only have to run the **Import-Module** command the first time you use the Skype for Business Online Windows PowerShell module.</span></span>
+    > <span data-ttu-id="fdb29-126">Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.</span><span class="sxs-lookup"><span data-stu-id="fdb29-126">You only have to run the **Import-Module** command the first time you use the Skype for Business Online Windows PowerShell module.</span></span>
 
 >
   ```PowerShell
@@ -74,22 +75,22 @@ ms.locfileid: "40962834"
   Import-PSSession $session
   ```
 
-<span data-ttu-id="8c5c0-127">Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx) o [configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="8c5c0-127">If you want more information about starting Windows PowerShell, see [Connect to all Office 365 services in a single Windows PowerShell window](https://technet.microsoft.com/library/dn568015.aspx) or [Set up your computer for Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).</span></span>
+<span data-ttu-id="fdb29-127">Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx) o [configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="fdb29-127">If you want more information about starting Windows PowerShell, see [Connect to all Office 365 services in a single Windows PowerShell window](https://technet.microsoft.com/library/dn568015.aspx) or [Set up your computer for Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).</span></span>
 
-## <a name="turning-on-or-off-offline-im"></a><span data-ttu-id="8c5c0-128">Attivazione o disattivazione della messaggistica offline</span><span class="sxs-lookup"><span data-stu-id="8c5c0-128">Turning on or off Offline IM</span></span>
+## <a name="turning-on-or-off-offline-im"></a><span data-ttu-id="fdb29-128">Attivazione o disattivazione della messaggistica offline</span><span class="sxs-lookup"><span data-stu-id="fdb29-128">Turning on or off Offline IM</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8c5c0-129">I messaggi offline sono disponibili **solo** nella versione più recente del client Skype for business a portata di clic e non sono disponibili quando viene usato un file \*. msi o un vecchio click-to-Run per installare il client Skype for business.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-129">Offline Messages are **only** available in the latest version of the Click-to-Run Skype for Business client and aren't available when an older Click-to-Run Skype for Business is used or an \*.msi file was used to install the Skype for Business client.</span></span>
+> <span data-ttu-id="fdb29-129">I messaggi offline sono disponibili **solo** nella versione più recente del client Skype for business a portata di clic e non sono disponibili quando viene usato un file \*. msi o un vecchio click-to-Run per installare il client Skype for business.</span><span class="sxs-lookup"><span data-stu-id="fdb29-129">Offline Messages are **only** available in the latest version of the Click-to-Run Skype for Business client and aren't available when an older Click-to-Run Skype for Business is used or an \*.msi file was used to install the Skype for Business client.</span></span>
 
-<span data-ttu-id="8c5c0-130">Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per gli utenti dell'organizzazione __ , impostare `True` EnableIMAutoArchiving `False`su or.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-130">To enable or disable Offline Messages send Offline Messages for users in your organization, set  _EnableIMAutoArchiving_ to `True` or `False`.</span></span> <span data-ttu-id="8c5c0-131">Per impostazione predefinita, questa opzione è `True`impostata su.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-131">By default, this is set to `True`.</span></span>
+<span data-ttu-id="fdb29-130">Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per gli utenti dell'organizzazione __ , impostare `True` EnableIMAutoArchiving `False`su or.</span><span class="sxs-lookup"><span data-stu-id="fdb29-130">To enable or disable Offline Messages send Offline Messages for users in your organization, set  _EnableIMAutoArchiving_ to `True` or `False`.</span></span> <span data-ttu-id="fdb29-131">Per impostazione predefinita, questa opzione è `True`impostata su.</span><span class="sxs-lookup"><span data-stu-id="fdb29-131">By default, this is set to `True`.</span></span>
 
-<span data-ttu-id="8c5c0-132">Per disattivarli, utilizzare il cmdlet **Set-CsClientPolicy** ed eseguire:</span><span class="sxs-lookup"><span data-stu-id="8c5c0-132">To turn it off, use the **Set-CsClientPolicy** cmdlet and run:</span></span>
+<span data-ttu-id="fdb29-132">Per disattivarli, utilizzare il cmdlet **Set-CsClientPolicy** ed eseguire:</span><span class="sxs-lookup"><span data-stu-id="fdb29-132">To turn it off, use the **Set-CsClientPolicy** cmdlet and run:</span></span>
 
 ```PowerShell
 Set-CsClientPolicy -Identity Global -EnableIMAutoArchiving $False
 ```
 
-<span data-ttu-id="8c5c0-133">Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per un utente __ , impostare `True` EnableIMAutoArchiving `False`su or.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-133">To enable or disable Offline Messages send Offline Messages for a user, set  _EnableIMAutoArchiving_ to `True` or `False`.</span></span> <span data-ttu-id="8c5c0-134">Per impostazione predefinita, è impostato su  `True`.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-134">By default, this is set to  `True`.</span></span> <span data-ttu-id="8c5c0-135">Puoi usare un criterio esistente o crearne uno simile all'esempio seguente.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-135">You can use an existing policy or create one like the example below.</span></span>
+<span data-ttu-id="fdb29-133">Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per un utente __ , impostare `True` EnableIMAutoArchiving `False`su or.</span><span class="sxs-lookup"><span data-stu-id="fdb29-133">To enable or disable Offline Messages send Offline Messages for a user, set  _EnableIMAutoArchiving_ to `True` or `False`.</span></span> <span data-ttu-id="fdb29-134">Per impostazione predefinita, è impostato su  `True`.</span><span class="sxs-lookup"><span data-stu-id="fdb29-134">By default, this is set to  `True`.</span></span> <span data-ttu-id="fdb29-135">Puoi usare un criterio esistente o crearne uno simile all'esempio seguente.</span><span class="sxs-lookup"><span data-stu-id="fdb29-135">You can use an existing policy or create one like the example below.</span></span>
 
 
   ```PowerShell
@@ -98,25 +99,25 @@ Set-CsClientPolicy -Identity Global -EnableIMAutoArchiving $False
   Grant -CsClientPolicy -Identity "Tony Smith" - PolicyName OfflineIM
   ```
 
-## <a name="want-to-know-more-about-windows-powershell"></a><span data-ttu-id="8c5c0-136">Per saperne di più su Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="8c5c0-136">Want to know more about Windows PowerShell?</span></span>
+## <a name="want-to-know-more-about-windows-powershell"></a><span data-ttu-id="fdb29-136">Per saperne di più su Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="fdb29-136">Want to know more about Windows PowerShell?</span></span>
 
-- <span data-ttu-id="8c5c0-137">Windows PowerShell is all about managing users and what users are allowed or not allowed to do.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-137">Windows PowerShell is all about managing users and what users are allowed or not allowed to do.</span></span> <span data-ttu-id="8c5c0-138">È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-138">With Windows PowerShell, you can manage Office 365 and Skype for Business Online using a single point of administration that can simplify your daily work, when you have multiple tasks to do.</span></span> <span data-ttu-id="8c5c0-139">Per iniziare a usare Windows PowerShell, vedere questi argomenti:</span><span class="sxs-lookup"><span data-stu-id="8c5c0-139">To get started with Windows PowerShell, see these topics:</span></span>
+- <span data-ttu-id="fdb29-137">Windows PowerShell is all about managing users and what users are allowed or not allowed to do.</span><span class="sxs-lookup"><span data-stu-id="fdb29-137">Windows PowerShell is all about managing users and what users are allowed or not allowed to do.</span></span> <span data-ttu-id="fdb29-138">È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere.</span><span class="sxs-lookup"><span data-stu-id="fdb29-138">With Windows PowerShell, you can manage Office 365 and Skype for Business Online using a single point of administration that can simplify your daily work, when you have multiple tasks to do.</span></span> <span data-ttu-id="fdb29-139">Per iniziare a usare Windows PowerShell, vedere questi argomenti:</span><span class="sxs-lookup"><span data-stu-id="fdb29-139">To get started with Windows PowerShell, see these topics:</span></span>
 
-  - [<span data-ttu-id="8c5c0-140">Introduzione a Windows PowerShell e Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="8c5c0-140">An introduction to Windows PowerShell and Skype for Business Online</span></span>](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [<span data-ttu-id="fdb29-140">Introduzione a Windows PowerShell e Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="fdb29-140">An introduction to Windows PowerShell and Skype for Business Online</span></span>](https://go.microsoft.com/fwlink/?LinkId=525039)
 
-  - [<span data-ttu-id="8c5c0-141">Sei motivi per cui potresti voler usare Windows PowerShell per gestire Office 365</span><span class="sxs-lookup"><span data-stu-id="8c5c0-141">Six Reasons Why You Might Want to Use Windows PowerShell to Manage Office 365</span></span>](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [<span data-ttu-id="fdb29-141">Sei motivi per cui potresti voler usare Windows PowerShell per gestire Office 365</span><span class="sxs-lookup"><span data-stu-id="fdb29-141">Six Reasons Why You Might Want to Use Windows PowerShell to Manage Office 365</span></span>](https://go.microsoft.com/fwlink/?LinkId=525041)
 
-- <span data-ttu-id="8c5c0-142">Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo usando l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente.</span><span class="sxs-lookup"><span data-stu-id="8c5c0-142">Windows PowerShell has many advantages in speed, simplicity, and productivity over only using the Microsoft 365 admin center such as when you are making setting changes for many users at one time.</span></span> <span data-ttu-id="8c5c0-143">Per informazioni su questi vantaggi, vedere gli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="8c5c0-143">Learn about these advantages in the following topics:</span></span>
+- <span data-ttu-id="fdb29-142">Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo usando l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente.</span><span class="sxs-lookup"><span data-stu-id="fdb29-142">Windows PowerShell has many advantages in speed, simplicity, and productivity over only using the Microsoft 365 admin center such as when you are making setting changes for many users at one time.</span></span> <span data-ttu-id="fdb29-143">Per informazioni su questi vantaggi, vedere gli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="fdb29-143">Learn about these advantages in the following topics:</span></span>
 
-  - [<span data-ttu-id="8c5c0-144">Gestire Office 365 con Windows PowerShell nel modo migliore</span><span class="sxs-lookup"><span data-stu-id="8c5c0-144">Best ways to manage Office 365 with Windows PowerShell</span></span>](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [<span data-ttu-id="fdb29-144">Gestire Office 365 con Windows PowerShell nel modo migliore</span><span class="sxs-lookup"><span data-stu-id="fdb29-144">Best ways to manage Office 365 with Windows PowerShell</span></span>](https://go.microsoft.com/fwlink/?LinkId=525142)
 
-  - [<span data-ttu-id="8c5c0-145">Usare Windows PowerShell per gestire Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="8c5c0-145">Using Windows PowerShell to manage Skype for Business Online</span></span>](https://go.microsoft.com/fwlink/?LinkId=525453)
+  - [<span data-ttu-id="fdb29-145">Usare Windows PowerShell per gestire Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="fdb29-145">Using Windows PowerShell to manage Skype for Business Online</span></span>](https://go.microsoft.com/fwlink/?LinkId=525453)
 
-  - [<span data-ttu-id="8c5c0-146">Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="8c5c0-146">Using Windows PowerShell to do common Skype for Business Online management tasks</span></span>](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [<span data-ttu-id="fdb29-146">Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="fdb29-146">Using Windows PowerShell to do common Skype for Business Online management tasks</span></span>](https://go.microsoft.com/fwlink/?LinkId=525038)
 
-## <a name="related-topics"></a><span data-ttu-id="8c5c0-147">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="8c5c0-147">Related topics</span></span>
-[<span data-ttu-id="8c5c0-148">Configurare Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="8c5c0-148">Set up Skype for Business Online</span></span>](set-up-skype-for-business-online.md)
+## <a name="related-topics"></a><span data-ttu-id="fdb29-147">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="fdb29-147">Related topics</span></span>
+[<span data-ttu-id="fdb29-148">Configurare Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="fdb29-148">Set up Skype for Business Online</span></span>](set-up-skype-for-business-online.md)
 
-[<span data-ttu-id="8c5c0-149">Consentire agli utenti di Skype for Business di aggiungere contatti Skype</span><span class="sxs-lookup"><span data-stu-id="8c5c0-149">Let Skype for Business users add Skype contacts</span></span>](let-skype-for-business-users-add-skype-contacts.md)
+[<span data-ttu-id="fdb29-149">Consentire agli utenti di Skype for Business di aggiungere contatti Skype</span><span class="sxs-lookup"><span data-stu-id="fdb29-149">Let Skype for Business users add Skype contacts</span></span>](let-skype-for-business-users-add-skype-contacts.md)
 
 
