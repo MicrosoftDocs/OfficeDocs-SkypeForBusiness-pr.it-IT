@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Risorse necessarie per il server Chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Required resources
 ms:assetid: bce50b95-f3c8-407e-963a-d8896ee77fbc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205211(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48185255
 ms.date: 02/05/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ac51432de0a6ca261e42f77d64ef1aa1a615cb6d
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 31683641e50a3e3bc898841b0cf4b0911e046262
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40980952"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41723826"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -69,13 +71,13 @@ La figura seguente mostra una topologia di pool di server di chat persistente al
 
 **Pool di server di chat persistente allungato quando i Data Center sono ubicati geograficamente con larghezza di banda elevata/bassa latenza.**
 
-![](images/JJ205211.55d10910-c824-41e6-bed2-08d13a2abd65(OCS.15).jpg "Esame di configurazione") del pool di HBW PERSISTEnt chat server HBW
+![Esame della configurazione HBW del pool di server Chat persistente](images/JJ205211.55d10910-c824-41e6-bed2-08d13a2abd65(OCS.15).jpg "Esame della configurazione HBW del pool di server Chat persistente")
 
 La figura seguente mostra una topologia di pool di server di chat persistente allungata in cui i centri dati sono ubicati geograficamente con larghezza di banda ridotta/elevata.
 
 **Pool di server di chat persistente allungato quando i Data Center sono ubicati geograficamente con larghezza di banda ridotta/alta latenza.**
 
-![](images/JJ205211.586b0a3a-3767-4991-944f-ee54389512aa(OCS.15).jpg "Esame di configurazione") del pool di LBW PERSISTEnt chat server LBW
+![Esame della configurazione LBW del pool di server Chat persistente](images/JJ205211.586b0a3a-3767-4991-944f-ee54389512aa(OCS.15).jpg "Esame della configurazione LBW del pool di server Chat persistente")
 
 </div>
 

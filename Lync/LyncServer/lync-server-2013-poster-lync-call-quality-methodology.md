@@ -3,6 +3,8 @@ title: 'Lync Server 2013: poster: metodologia di qualità delle chiamate di Lync
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: 'Poster: Lync Call Quality Methodology'
 ms:assetid: a069f4e5-4f80-4f0f-8657-2e07276b6b41
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn593600(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 61084874
 ms.date: 06/24/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e18dc59e0b8669bb48962874291e63523f37eb48
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 95105501d0403600e88d01ad5fa84363c1e81785
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40982128"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41724976"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +39,7 @@ _**Argomento Ultima modifica:** 2016-06-24_
 
 Questo articolo è un compagno del poster della [metodologia di qualità delle chiamate di Lync](http://go.microsoft.com/fwlink/?linkid=391841) , che è possibile scaricare dall'area download.
 
-![Poster che descrive il]manifesto del processo di CQM che(images/Dn594589.d239e04a-1c3b-4f0e-93af-88b85198615a(OCS.15).jpg "descrive il processo di CQM")
+![Poster in cui viene descritto il processo CQM](images/Dn594589.d239e04a-1c3b-4f0e-93af-88b85198615a(OCS.15).jpg "Poster in cui viene descritto il processo CQM")
 
 Puoi usare questo poster per informazioni su CQM, la metodologia di qualità delle chiamate per Lync 2013 e 2010 che ti aiuta a trovare ed eliminare i problemi che interessano la qualità delle chiamate e l'esperienza utente per le implementazioni di Lync che includono le funzionalità VoIP aziendale. La metodologia per la qualità delle chiamate è un nuovo Framework per la risoluzione dei problemi e servizi che consente di migliorare lo stato di miglioramento dei servizi VoIP aziendale in Lync. In questo articolo è possibile ottenere ulteriori informazioni su CQM, sui tipi di server e sulle soluzioni monitorate e su cosa fare con i dati di telemetria raccolti.
 

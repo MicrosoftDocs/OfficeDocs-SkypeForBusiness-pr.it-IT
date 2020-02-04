@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Acquisizione di una posizione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Acquiring a location
 ms:assetid: 9bf069aa-d240-4d95-be3a-e795537f8e70
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205110(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184903
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6fb123cf2f38d935bc0cc641c67e6d0ff1d54e4e
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: e54c7032973f75922f6c6893a0c758409ec945be
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978874"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41723366"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -41,7 +43,7 @@ Il client Lync Server include i dati di PIDF-LO come parte di una chiamata di em
 
 Il diagramma seguente mostra il modo in cui un client Lync Server acquisisce una posizione (ad eccezione del metodo di posizione basato su indirizzo MAC del client di terze parti):
 
-![Come il client acquisisce un diagramma di posizione]in(images/JJ205110.4438f5fc-f1b2-444b-8565-09035363ed43(OCS.15).jpg "che modo il cliente acquisisce un diagramma di posizione")
+![Diagramma della modalità con cui il client acquisisce una posizione](images/JJ205110.4438f5fc-f1b2-444b-8565-09035363ed43(OCS.15).jpg "Diagramma della modalità con cui il client acquisisce una posizione")
 
 Affinché un client acquisisca una posizione, è necessario eseguire la procedura seguente:
 

@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Routing tra trunk'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Intertrunk routing
 ms:assetid: d3a33b4a-8bf4-4a8c-a371-8ef79e740780
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205272(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48185442
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3c1b66ea04ed72bab6d33114f52fa9fe96364b48
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: eaa41fe229e9246506fd92eb9f48767994997e4e
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40975195"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41725676"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,13 +47,13 @@ Il diagramma seguente illustra Lync Server 2013 che fornisce l'interconnettivit√
 
 **Routing intertrunk tra gateway e IP PBX**
 
-![Lync Server che connette il gateway PSTN/IP-PBX schema](images/JJ721940.cc3858ca-2ee3-4d51-8a51-db078366b50b(OCS.15).jpg "Lync Server che connette il portale PSTN/IP-PBX")
+![Diagramma delle connessioni tra Lync Server e gateway PSTN/IP-PBX](images/JJ721940.cc3858ca-2ee3-4d51-8a51-db078366b50b(OCS.15).jpg "Diagramma delle connessioni tra Lync Server e gateway PSTN/IP-PBX")
 
 Il diagramma seguente illustra Lync Server 2013 che interconnette due sistemi IP-PBX.
 
 **Routing intertrunk tra due IP PBX**
 
-![Lync Server Interconnecting IP-Pax System Diagram](images/JJ721940.6ba18ec9-df70-498a-9cf7-7fc41e5ec432(OCS.15).jpg "Lync Server Interconnecting IP-Pax System Diagram")
+![Diagramma delle interconnessioni tra Lync Server e sistemi IP-PAX](images/JJ721940.6ba18ec9-df70-498a-9cf7-7fc41e5ec432(OCS.15).jpg "Diagramma delle interconnessioni tra Lync Server e sistemi IP-PAX")
 
 </div>
 

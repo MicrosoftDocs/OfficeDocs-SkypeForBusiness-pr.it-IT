@@ -3,6 +3,8 @@ title: Rimuovere BackCompatSite
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Remove BackCompatSite
 ms:assetid: 039650e3-541b-45c2-a682-c4fa08423118
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204637(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183265
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fe6a3d1dc92e45bc99892e7827394376b6f28b12
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: ccfcd48c575e300b12fe08611d6f898749041478
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40975773"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41727196"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -49,7 +51,7 @@ Dopo che tutti i pool sono stati disattivati e tutti i server perimetrali sono s
 
 4.  Nella pagina **specifica legacy Edge** verificare che l'elenco di Edge Server sia vuoto. Se l'elenco non è vuoto, usare il pulsante **Rimuovi** per rimuovere tutti i server perimetrali legacy e quindi fare clic su **Avanti**.
     
-    ![Creazione guidata topologia Unione, specificare]la configurazione(images/JJ204637.fb35a59a-711e-4259-b177-7311df1fed3c(OCS.15).jpg "guidata della topologia di Unione, specificare la pagina di configurazione del bordo")  
+    ![Procedura guidata per l'unione delle topologie - Pagina Specificare installazione server perimetrale](images/JJ204637.fb35a59a-711e-4259-b177-7311df1fed3c(OCS.15).jpg "Procedura guidata per l'unione delle topologie - Pagina Specificare installazione server perimetrale")  
 
 5.  Nella pagina **specificare l'impostazione della porta SIP interna** fare clic su **Avanti**.
 

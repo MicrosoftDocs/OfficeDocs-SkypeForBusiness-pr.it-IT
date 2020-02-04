@@ -3,6 +3,8 @@ title: 'Lync Server 2013: funzionamento del server di chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: How Persistent Chat Server works
 ms:assetid: 3d04e9a1-3f0c-458e-bcbe-d27c8c464276
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ683096(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 49684643
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0bf6179e1ce24264c2079b3096fa9bb8c539ca1c
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 692f9a40bc2c0fd885fc251a4a792d480a69c57d
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978651"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41722396"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -59,11 +61,11 @@ I diagrammi seguenti includono prospettive di alto livello per l'architettura e 
 
 **Architettura di alto livello del server di chat persistente**
 
-![Architettura del server di chat persistente.] (images/JJ683096.5db6f36f-4461-4d87-ba77-463b7ffe609b(OCS.15).jpg "Architettura del server di chat persistente.")
+![Architettura del server Chat persistente.](images/JJ683096.5db6f36f-4461-4d87-ba77-463b7ffe609b(OCS.15).jpg "Architettura del server Chat persistente.")
 
 **Servizi di alto livello del server Chat persistente**
 
-![Componenti del server di chat permanenti.] (images/JJ683096.b6d743aa-3a86-4081-aaef-4fe3257db4e7(OCS.15).jpg "Componenti del server di chat permanenti.")
+![Componenti del server Chat persistente.](images/JJ683096.b6d743aa-3a86-4081-aaef-4fe3257db4e7(OCS.15).jpg "Componenti del server Chat persistente.")
 
 Due servizi vengono eseguiti nei server front end del server di chat persistente:
 
@@ -141,7 +143,7 @@ Il diagramma di flusso delle chiamate e i passaggi seguenti descrivono il proces
 
 **Flusso delle chiamate di accesso al client di chat persistente**
 
-![Diagramma di flusso delle chiamate Persistent Chat Server.] (images/JJ683096.9b3b3c61-caca-42b6-853c-6a09e6ff5c44(OCS.15).jpg "Diagramma di flusso delle chiamate Persistent Chat Server.")
+![Diagramma del flusso di chiamate del server Chat persistente.](images/JJ683096.9b3b3c61-caca-42b6-853c-6a09e6ff5c44(OCS.15).jpg "Diagramma del flusso di chiamate del server Chat persistente.")
 
 1.  Il client di chat persistente invia prima una sottoscrizione SIP per recuperare il documento di provisioning in banda dal server. Questo documento indica se la chat persistente è abilitata o disabilitata per l'utente e l'elenco degli URI SIP per il pool del server di chat persistente.
 
@@ -167,7 +169,7 @@ Il diagramma di flusso delle chiamate e i passaggi seguenti descrivono uno scena
 
 **Abbonamento al client Chat persistente e flusso delle chiamate di invio messaggi**
 
-![Scenario di abbonamento a room e post messaggio.] (images/JJ683096.2d3c417e-c91b-42bd-964e-285b72bb2e44(OCS.15).jpg "Scenario di abbonamento a room e post messaggio.")
+![Scenario di inserimento di messaggi e sottoscrizione a una chat.](images/JJ683096.2d3c417e-c91b-42bd-964e-285b72bb2e44(OCS.15).jpg "Scenario di inserimento di messaggi e sottoscrizione a una chat.")
 
 1.  Dal client di chat persistente, User1 fa clic su **partecipa a una chat room**, fa clic su **Cerca**e quindi immette alcuni criteri di ricerca. Il client di chat persistente invia un messaggio di informazioni SIP contenente il comando XCCOS **chansrch** (sala di ricerca), insieme ai criteri di ricerca. Il server di chat persistente esegue una query nel database back-end e risponde in un nuovo messaggio di informazioni SIP che contiene un elenco di sale disponibili che soddisfano i criteri di ricerca.
 

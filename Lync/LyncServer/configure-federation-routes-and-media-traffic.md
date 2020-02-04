@@ -3,6 +3,8 @@ title: Configurare le route di federazione e il traffico multimediale
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Configure federation routes and media traffic
 ms:assetid: 8b2f5f81-a955-4ad1-ad74-397322ff9521
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ688121(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 49733720
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ed16ac6b8aceea6828b600ce18da8b9a72827846
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 9cd9cf1c7c61261e4e1a6974498f9f9dff980169
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40980812"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41723246"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -83,7 +85,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
 
 5.  In **assegnazione della route federativo di sito**deselezionare la casella di controllo **Abilita federazione SIP** per disabilitare la route federativo nell'ambiente legacy di Lync Server 2010.
     
-    Finestra ![di dialogo Modifica proprietà, pagina Route federativo pagina](images/JJ688121.8d755ae0-fc7d-4253-b0db-0cf31b863c55(OCS.15).jpg "modifica proprietà, Route federativo")
+    ![Finestra di dialogo Modifica proprietà - Pagina Route di federazione](images/JJ688121.8d755ae0-fc7d-4253-b0db-0cf31b863c55(OCS.15).jpg "Finestra di dialogo Modifica proprietà - Pagina Route di federazione")
 
 6.  Fare clic su **OK** per chiudere la pagina Modifica proprietà.
 
@@ -107,7 +109,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
 
 4.  Deselezionare la casella di controllo **Abilita federazione per questo pool di bordi (porta 5061)** e scegliere **OK** per chiudere la pagina.
     
-    ![Modificare le proprietà, generale, deselezionare Abilita](images/JJ688121.3be2c8c0-9ed9-4544-bafd-b7694271fafc(OCS.15).jpg "proprietà modifica Federazione, generale, Cancella Abilita federazione")
+    ![Modifica proprietà, Generale, deselezione di Abilita federazione](images/JJ688121.3be2c8c0-9ed9-4544-bafd-b7694271fafc(OCS.15).jpg "Modifica proprietà, Generale, deselezione di Abilita federazione")
 
 5.  Scegliere **Pubblica topologia**dal menu **azione** e quindi fare clic su **Avanti**.
 
@@ -115,7 +117,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
 
 7.  Verificare che la Federazione per il server perimetrale legacy sia disabilitata.
     
-    ![Generatore di topologia, pool di bordi, generatore di topologia disabilitato federativo](images/JJ688121.a2948438-d51a-4aeb-9eaa-d899ca950758(OCS.15).jpg ", pool Edge, Federazione disabilitata")
+    ![Generatore di topologie, pool di server perimetrali, federazione disabilitata](images/JJ688121.a2948438-d51a-4aeb-9eaa-d899ca950758(OCS.15).jpg "Generatore di topologie, pool di server perimetrali, federazione disabilitata")
 
 </div>
 
@@ -145,7 +147,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
 
 4.  Selezionare la voce della casella di controllo per **abilitare la Federazione per questo pool di bordi (porta 5061)** e quindi fare clic su **OK** per chiudere la pagina.
     
-    ![Finestra di dialogo Modifica proprietà,](images/JJ688121.cc79a88c-cce4-4cab-80ad-4f70325dc7c4(OCS.15).jpg "finestra di dialogo Modifica proprietà") generale pagina generale
+    ![Finestra di dialogo Modifica proprietà - Pagina Generale](images/JJ688121.cc79a88c-cce4-4cab-80ad-4f70325dc7c4(OCS.15).jpg "Finestra di dialogo Modifica proprietà - Pagina Generale")
 
 5.  Scegliere **Pubblica topologia**dal menu **azione** e quindi fare clic su **Avanti**.
 
@@ -153,7 +155,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
 
 7.  Verifica **Federazione (la porta 5061)** è impostata su **Enabled**.
     
-    ![Generatore di topologia, pool di bordi,](images/JJ688121.e8ccdada-23f4-47e5-a99d-5bf795fefc48(OCS.15).jpg "Generatore di topologie abilitato alla Federazione, pool Edge, Federazione abilitata")
+    ![Generatore di topologie, pool di server perimetrali, federazione abilitata](images/JJ688121.e8ccdada-23f4-47e5-a99d-5bf795fefc48(OCS.15).jpg "Generatore di topologie, pool di server perimetrali, federazione abilitata")
 
 </div>
 
@@ -167,7 +169,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
 
 3.  Nella pagina **generale** , in **selezione hop successivo**, selezionare nell'elenco a discesa il pool di Lync Server 2013.
     
-    Finestra ![di dialogo Modifica proprietà, pagina hop successiva]pagina(images/JJ688121.5741b9a8-e729-4457-9f62-38f08a2c5b02(OCS.15).jpg "modifica proprietà, pagina hop successivo")
+    ![Finestra di dialogo Modifica proprietà - Pagina Hop successivo](images/JJ688121.5741b9a8-e729-4457-9f62-38f08a2c5b02(OCS.15).jpg "Finestra di dialogo Modifica proprietà - Pagina Hop successivo")
 
 4.  Fare clic su **OK** per chiudere la pagina Modifica proprietà.
 
@@ -187,7 +189,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
 
 3.  Nella sezione **associazioni** selezionare la casella **di controllo Associa pool Edge (per componenti multimediali)** .
     
-    Proprietà ![modifica, generale, associa proprietà modifica pool Edge](images/JJ688121.fd9b18ca-fda2-4764-9bf0-726bf39f6a12(OCS.15).jpg ", generale, pool Edge associato")
+    ![Modifica proprietà, Generale - Associa pool di server perimetrali](images/JJ688121.fd9b18ca-fda2-4764-9bf0-726bf39f6a12(OCS.15).jpg "Modifica proprietà, Generale - Associa pool di server perimetrali")
 
 4.  Nella casella a discesa selezionare il server Edge di Lync Server 2013.
 
@@ -214,7 +216,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
 
 3.  Nella pagina **generale** verificare che l'impostazione **Abilita federazione per questo pool di Edge (porta 5061)** sia selezionata.
     
-    ![Finestra di dialogo Modifica proprietà,](images/JJ688121.cc79a88c-cce4-4cab-80ad-4f70325dc7c4(OCS.15).jpg "finestra di dialogo Modifica proprietà") generale pagina generale
+    ![Finestra di dialogo Modifica proprietà - Pagina Generale](images/JJ688121.cc79a88c-cce4-4cab-80ad-4f70325dc7c4(OCS.15).jpg "Finestra di dialogo Modifica proprietà - Pagina Generale")
 
 4.  Fare clic su **OK** per chiudere la pagina Modifica proprietà.
 
@@ -226,7 +228,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
 
 8.  In **assegnazione percorso federativo di sito**selezionare **Abilita federazione SIP**e quindi nell'elenco selezionare il server Edge di Lync Server 2013 elencato.
     
-    Modificare le proprietà, le proprietà della ![pagina Route federativo](images/JJ688121.c50c13b8-0859-4e3e-8793-45c431a5b4b5(OCS.15).jpg ", la pagina della route federativo")
+    ![Modifica proprietà - Pagina Route di federazione](images/JJ688121.c50c13b8-0859-4e3e-8793-45c431a5b4b5(OCS.15).jpg "Modifica proprietà - Pagina Route di federazione")
 
 9.  Fare clic su **OK** per chiudere la pagina **modifica proprietà** .
     
