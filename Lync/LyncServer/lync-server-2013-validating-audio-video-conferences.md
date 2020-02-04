@@ -3,6 +3,8 @@ title: 'Lync Server 2013: convalida di conferenze audio/video'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Validating audio/video conferences
 ms:assetid: 6c8c422a-d501-42cb-820b-b002f9b2250b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn720915(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 63969615
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b0e608f0c765c4dd552645320ec947c7e8a54ac4
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 89bb8f38ea650bf64179b917b227d7ccaaf10791
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40980777"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41763650"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -23,7 +25,7 @@ ms.locfileid: "40980777"
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="validating-audiovideo-conferences-in-lync-server-2013"></a><span data-ttu-id="38065-102">Convalida di conferenze audio/video in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="38065-102">Validating audio/video conferences in Lync Server 2013</span></span>
+# <a name="validating-audiovideo-conferences-in-lync-server-2013"></a><span data-ttu-id="890ce-102">Convalida di conferenze audio/video in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="890ce-102">Validating audio/video conferences in Lync Server 2013</span></span>
 
 </div>
 
@@ -33,7 +35,7 @@ ms.locfileid: "40980777"
 
 <span> </span>
 
-<span data-ttu-id="38065-103">_**Argomento Ultima modifica:** 2014-06-05_</span><span class="sxs-lookup"><span data-stu-id="38065-103">_**Topic Last Modified:** 2014-06-05_</span></span>
+<span data-ttu-id="890ce-103">_**Argomento Ultima modifica:** 2014-06-05_</span><span class="sxs-lookup"><span data-stu-id="890ce-103">_**Topic Last Modified:** 2014-06-05_</span></span>
 
 
 <table>
@@ -47,17 +49,17 @@ ms.locfileid: "40980777"
 <td></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="38065-104">Pianificazione della verifica</span><span class="sxs-lookup"><span data-stu-id="38065-104">Verification schedule</span></span></p></td>
-<td><p><span data-ttu-id="38065-105">Quotidiana</span><span class="sxs-lookup"><span data-stu-id="38065-105">Daily</span></span></p></td>
+<td><p><span data-ttu-id="890ce-104">Pianificazione della verifica</span><span class="sxs-lookup"><span data-stu-id="890ce-104">Verification schedule</span></span></p></td>
+<td><p><span data-ttu-id="890ce-105">Quotidiana</span><span class="sxs-lookup"><span data-stu-id="890ce-105">Daily</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="38065-106">Strumento di test</span><span class="sxs-lookup"><span data-stu-id="38065-106">Testing tool</span></span></p></td>
-<td><p><span data-ttu-id="38065-107">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="38065-107">Windows PowerShell</span></span></p></td>
+<td><p><span data-ttu-id="890ce-106">Strumento di test</span><span class="sxs-lookup"><span data-stu-id="890ce-106">Testing tool</span></span></p></td>
+<td><p><span data-ttu-id="890ce-107">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="890ce-107">Windows PowerShell</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="38065-108">Autorizzazioni necessarie</span><span class="sxs-lookup"><span data-stu-id="38065-108">Permissions required</span></span></p></td>
-<td><p><span data-ttu-id="38065-109">Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</span><span class="sxs-lookup"><span data-stu-id="38065-109">When run locally using the Lync Server Management Shell, users must be members of the RTCUniversalServerAdmins security group.</span></span></p>
-<p><span data-ttu-id="38065-110">Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet Test-CsAVConference.</span><span class="sxs-lookup"><span data-stu-id="38065-110">When run using a remote instance of Windows PowerShell, users must be assigned an RBAC role that has permission to run the Test-CsAVConference cmdlet.</span></span> <span data-ttu-id="38065-111">Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="38065-111">To see a list of all RBAC roles that can use this cmdlet, run the following command from the Windows PowerShell prompt:</span></span></p>
+<td><p><span data-ttu-id="890ce-108">Autorizzazioni necessarie</span><span class="sxs-lookup"><span data-stu-id="890ce-108">Permissions required</span></span></p></td>
+<td><p><span data-ttu-id="890ce-109">Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</span><span class="sxs-lookup"><span data-stu-id="890ce-109">When run locally using the Lync Server Management Shell, users must be members of the RTCUniversalServerAdmins security group.</span></span></p>
+<p><span data-ttu-id="890ce-110">Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet Test-CsAVConference.</span><span class="sxs-lookup"><span data-stu-id="890ce-110">When run using a remote instance of Windows PowerShell, users must be assigned an RBAC role that has permission to run the Test-CsAVConference cmdlet.</span></span> <span data-ttu-id="890ce-111">Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="890ce-111">To see a list of all RBAC roles that can use this cmdlet, run the following command from the Windows PowerShell prompt:</span></span></p>
 <pre><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsAVConference&quot;}</code></pre></td>
 </tr>
 </tbody>
@@ -66,127 +68,127 @@ ms.locfileid: "40980777"
 
 <div>
 
-## <a name="description"></a><span data-ttu-id="38065-112">Descrizione</span><span class="sxs-lookup"><span data-stu-id="38065-112">Description</span></span>
+## <a name="description"></a><span data-ttu-id="890ce-112">Descrizione</span><span class="sxs-lookup"><span data-stu-id="890ce-112">Description</span></span>
 
-<span data-ttu-id="38065-113">Il cmdlet Test-CsAVConference verifica se due utenti di test possono partecipare a una conferenza audio/video (A/V).</span><span class="sxs-lookup"><span data-stu-id="38065-113">The Test-CsAVConference cmdlet checks whether two test users can participate in an audio/video (A/V) conference.</span></span> <span data-ttu-id="38065-114">Quando il cmdlet viene eseguito, i due utenti hanno effettuato l'accesso al sistema.</span><span class="sxs-lookup"><span data-stu-id="38065-114">When the cmdlet runs, the two users are logged on to the system.</span></span> <span data-ttu-id="38065-115">Dopo aver eseguito l'accesso, il primo utente crea una conferenza A/V e quindi attende che il secondo utente partecipi alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="38065-115">After they face successfully logged on, the first user creates an A/V conference, and then waits for the second user to join that conference.</span></span> <span data-ttu-id="38065-116">Dopo un breve scambio di dati, la conferenza viene eliminata e i due test gli utenti vengono disconnessi.</span><span class="sxs-lookup"><span data-stu-id="38065-116">After a brief exchange of data, the conference is deleted and the two tests users are logged off.</span></span>
+<span data-ttu-id="890ce-113">Il cmdlet Test-CsAVConference verifica se due utenti di test possono partecipare a una conferenza audio/video (A/V).</span><span class="sxs-lookup"><span data-stu-id="890ce-113">The Test-CsAVConference cmdlet checks whether two test users can participate in an audio/video (A/V) conference.</span></span> <span data-ttu-id="890ce-114">Quando il cmdlet viene eseguito, i due utenti hanno effettuato l'accesso al sistema.</span><span class="sxs-lookup"><span data-stu-id="890ce-114">When the cmdlet runs, the two users are logged on to the system.</span></span> <span data-ttu-id="890ce-115">Dopo aver eseguito l'accesso, il primo utente crea una conferenza A/V e quindi attende che il secondo utente partecipi alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="890ce-115">After they face successfully logged on, the first user creates an A/V conference, and then waits for the second user to join that conference.</span></span> <span data-ttu-id="890ce-116">Dopo un breve scambio di dati, la conferenza viene eliminata e i due test gli utenti vengono disconnessi.</span><span class="sxs-lookup"><span data-stu-id="890ce-116">After a brief exchange of data, the conference is deleted and the two tests users are logged off.</span></span>
 
-<span data-ttu-id="38065-117">Tieni presente che Test-CsAVConference non esegue una conferenza A/V effettiva tra i due utenti di test.</span><span class="sxs-lookup"><span data-stu-id="38065-117">Note that Test-CsAVConference does not conduct an actual A/V conference between the two test users.</span></span> <span data-ttu-id="38065-118">Il cmdlet verifica invece che i due utenti possano eseguire tutte le connessioni necessarie per eseguire una conferenza di questo tipo.</span><span class="sxs-lookup"><span data-stu-id="38065-118">Instead, the cmdlet verifies that the two users can make all the connections necessary to conduct such a conference.</span></span>
+<span data-ttu-id="890ce-117">Tieni presente che Test-CsAVConference non esegue una conferenza A/V effettiva tra i due utenti di test.</span><span class="sxs-lookup"><span data-stu-id="890ce-117">Note that Test-CsAVConference does not conduct an actual A/V conference between the two test users.</span></span> <span data-ttu-id="890ce-118">Il cmdlet verifica invece che i due utenti possano eseguire tutte le connessioni necessarie per eseguire una conferenza di questo tipo.</span><span class="sxs-lookup"><span data-stu-id="890ce-118">Instead, the cmdlet verifies that the two users can make all the connections necessary to conduct such a conference.</span></span>
 
-<span data-ttu-id="38065-119">Altri esempi per questo comando sono disponibili in [Test-CsAVConference](https://docs.microsoft.com/powershell/module/skype/Test-CsAVConference).</span><span class="sxs-lookup"><span data-stu-id="38065-119">Further examples for this command can be found at [Test-CsAVConference](https://docs.microsoft.com/powershell/module/skype/Test-CsAVConference).</span></span>
+<span data-ttu-id="890ce-119">Altri esempi per questo comando sono disponibili in [Test-CsAVConference](https://docs.microsoft.com/powershell/module/skype/Test-CsAVConference).</span><span class="sxs-lookup"><span data-stu-id="890ce-119">Further examples for this command can be found at [Test-CsAVConference](https://docs.microsoft.com/powershell/module/skype/Test-CsAVConference).</span></span>
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a><span data-ttu-id="38065-120">Eseguire il test</span><span class="sxs-lookup"><span data-stu-id="38065-120">Running the test</span></span>
+## <a name="running-the-test"></a><span data-ttu-id="890ce-120">Eseguire il test</span><span class="sxs-lookup"><span data-stu-id="890ce-120">Running the test</span></span>
 
-<span data-ttu-id="38065-121">Il cmdlet Test-CsAVConference può essere eseguito usando una coppia di account di test preconfigurati (vedere Configurazione degli account di test per l'esecuzione di test Lync Server) o degli account di due utenti abilitati per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="38065-121">The Test-CsAVConference cmdlet can be run using either a pair of preconfigured test accounts (see Setting Up Test Accounts for Running Lync Server Tests) or the accounts of any two users who are enabled for Lync Server.</span></span> <span data-ttu-id="38065-122">Per eseguire questo controllo usando gli account di prova, devi solo specificare il nome di dominio completo del pool di Lync Server da testare.</span><span class="sxs-lookup"><span data-stu-id="38065-122">To run this check using test accounts, you just have to specify the FQDN of the Lync Server pool being tested.</span></span> <span data-ttu-id="38065-123">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="38065-123">For example:</span></span>
+<span data-ttu-id="890ce-121">Il cmdlet Test-CsAVConference può essere eseguito usando una coppia di account di test preconfigurati (vedere Configurazione degli account di test per l'esecuzione di test Lync Server) o degli account di due utenti abilitati per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="890ce-121">The Test-CsAVConference cmdlet can be run using either a pair of preconfigured test accounts (see Setting Up Test Accounts for Running Lync Server Tests) or the accounts of any two users who are enabled for Lync Server.</span></span> <span data-ttu-id="890ce-122">Per eseguire questo controllo usando gli account di prova, devi solo specificare il nome di dominio completo del pool di Lync Server da testare.</span><span class="sxs-lookup"><span data-stu-id="890ce-122">To run this check using test accounts, you just have to specify the FQDN of the Lync Server pool being tested.</span></span> <span data-ttu-id="890ce-123">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="890ce-123">For example:</span></span>
 
     Test-CsAVConference -TargetFqdn "atl-cs-001.litwareinc.com"
 
-<span data-ttu-id="38065-124">Per eseguire questo controllo usando gli account utente effettivi, devi creare due oggetti delle credenziali di Windows PowerShell (oggetti che contengono il nome dell'account e la password) per ogni account.</span><span class="sxs-lookup"><span data-stu-id="38065-124">To run this check using actual user accounts, you must create two Windows PowerShell credentials objects (objects that contain the account name and password) for each account.</span></span> <span data-ttu-id="38065-125">È quindi necessario includere tali oggetti Credentials e gli indirizzi SIP dei due account quando chiamano Test-CsAVConference:</span><span class="sxs-lookup"><span data-stu-id="38065-125">You must then include those credentials objects and the SIP addresses of the two accounts when they call Test-CsAVConference:</span></span>
+<span data-ttu-id="890ce-124">Per eseguire questo controllo usando gli account utente effettivi, devi creare due oggetti delle credenziali di Windows PowerShell (oggetti che contengono il nome dell'account e la password) per ogni account.</span><span class="sxs-lookup"><span data-stu-id="890ce-124">To run this check using actual user accounts, you must create two Windows PowerShell credentials objects (objects that contain the account name and password) for each account.</span></span> <span data-ttu-id="890ce-125">È quindi necessario includere tali oggetti Credentials e gli indirizzi SIP dei due account quando chiamano Test-CsAVConference:</span><span class="sxs-lookup"><span data-stu-id="890ce-125">You must then include those credentials objects and the SIP addresses of the two accounts when they call Test-CsAVConference:</span></span>
 
     $credential1 = Get-Credential "litwareinc\kenmyer"
     $credential2 = Get-Credential "litwareinc\davidlongmire"
     Test-CsAVConference -TargetFqdn "atl-cs-001.litwareinc.com" -SenderSipAddress "sip:kenmyer@litwareinc.com" -SenderCredential $credential1 -ReceiverSipAddress "sip:davidlongmire@litwareinc.com" -ReceiverCredential $credential2
 
-<span data-ttu-id="38065-126">Per altre informazioni, vedere la documentazione della Guida relativa al cmdlet [Test-CsAVConference](https://docs.microsoft.com/powershell/module/skype/Test-CsAVConference) .</span><span class="sxs-lookup"><span data-stu-id="38065-126">For more information, see the Help documentation for the [Test-CsAVConference](https://docs.microsoft.com/powershell/module/skype/Test-CsAVConference) cmdlet.</span></span>
+<span data-ttu-id="890ce-126">Per altre informazioni, vedere la documentazione della Guida relativa al cmdlet [Test-CsAVConference](https://docs.microsoft.com/powershell/module/skype/Test-CsAVConference) .</span><span class="sxs-lookup"><span data-stu-id="890ce-126">For more information, see the Help documentation for the [Test-CsAVConference](https://docs.microsoft.com/powershell/module/skype/Test-CsAVConference) cmdlet.</span></span>
 
 </div>
 
 <div>
 
-## <a name="determining-success-or-failure"></a><span data-ttu-id="38065-127">Determinare l'esito positivo o negativo</span><span class="sxs-lookup"><span data-stu-id="38065-127">Determining Success or Failure</span></span>
+## <a name="determining-success-or-failure"></a><span data-ttu-id="890ce-127">Determinare l'esito positivo o negativo</span><span class="sxs-lookup"><span data-stu-id="890ce-127">Determining Success or Failure</span></span>
 
-<span data-ttu-id="38065-128">Se gli utenti specificati possono completare correttamente una conferenza A/V, si riceverà un output simile al seguente, con la proprietà Result contrassegnata come **riuscita:**</span><span class="sxs-lookup"><span data-stu-id="38065-128">If the specified users can successfully complete an A/V conference, you'll receive output similar to this, with the Result property marked as **Success:**</span></span>
+<span data-ttu-id="890ce-128">Se gli utenti specificati possono completare correttamente una conferenza A/V, si riceverà un output simile al seguente, con la proprietà Result contrassegnata come **riuscita:**</span><span class="sxs-lookup"><span data-stu-id="890ce-128">If the specified users can successfully complete an A/V conference, you'll receive output similar to this, with the Result property marked as **Success:**</span></span>
 
-<span data-ttu-id="38065-129">TargetFqdn: atl-cs-001.litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="38065-129">TargetFqdn : atl-cs-001.litwareinc.com</span></span>
+<span data-ttu-id="890ce-129">TargetFqdn: atl-cs-001.litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="890ce-129">TargetFqdn : atl-cs-001.litwareinc.com</span></span>
 
-<span data-ttu-id="38065-130">Risultato: successo</span><span class="sxs-lookup"><span data-stu-id="38065-130">Result : Success</span></span>
+<span data-ttu-id="890ce-130">Risultato: successo</span><span class="sxs-lookup"><span data-stu-id="890ce-130">Result : Success</span></span>
 
-<span data-ttu-id="38065-131">Latenza: 00:00:02.6841765</span><span class="sxs-lookup"><span data-stu-id="38065-131">Latency : 00:00:02.6841765</span></span>
+<span data-ttu-id="890ce-131">Latenza: 00:00:02.6841765</span><span class="sxs-lookup"><span data-stu-id="890ce-131">Latency : 00:00:02.6841765</span></span>
 
-<span data-ttu-id="38065-132">Errore</span><span class="sxs-lookup"><span data-stu-id="38065-132">Error :</span></span>
+<span data-ttu-id="890ce-132">Errore</span><span class="sxs-lookup"><span data-stu-id="890ce-132">Error :</span></span>
 
-<span data-ttu-id="38065-133">Diagnosi</span><span class="sxs-lookup"><span data-stu-id="38065-133">Diagnosis :</span></span>
+<span data-ttu-id="890ce-133">Diagnosi</span><span class="sxs-lookup"><span data-stu-id="890ce-133">Diagnosis :</span></span>
 
-<span data-ttu-id="38065-134">Se gli utenti non riescono a completare la conferenza, il risultato verrà visualizzato come errore e verranno registrate altre informazioni nelle proprietà di errore e diagnosi:</span><span class="sxs-lookup"><span data-stu-id="38065-134">If the users can not complete the conference, then the Result will be shown as Failure, and additional information will be recorded in the Error and Diagnosis properties:</span></span>
+<span data-ttu-id="890ce-134">Se gli utenti non riescono a completare la conferenza, il risultato verrà visualizzato come errore e verranno registrate altre informazioni nelle proprietà di errore e diagnosi:</span><span class="sxs-lookup"><span data-stu-id="890ce-134">If the users can not complete the conference, then the Result will be shown as Failure, and additional information will be recorded in the Error and Diagnosis properties:</span></span>
 
-<span data-ttu-id="38065-135">TargetFqdn: atl-cs-001.litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="38065-135">TargetFqdn : atl-cs-001.litwareinc.com</span></span>
+<span data-ttu-id="890ce-135">TargetFqdn: atl-cs-001.litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="890ce-135">TargetFqdn : atl-cs-001.litwareinc.com</span></span>
 
-<span data-ttu-id="38065-136">Risultato: errore</span><span class="sxs-lookup"><span data-stu-id="38065-136">Result : Failure</span></span>
+<span data-ttu-id="890ce-136">Risultato: errore</span><span class="sxs-lookup"><span data-stu-id="890ce-136">Result : Failure</span></span>
 
-<span data-ttu-id="38065-137">Latenza: 00:00:00</span><span class="sxs-lookup"><span data-stu-id="38065-137">Latency : 00:00:00</span></span>
+<span data-ttu-id="890ce-137">Latenza: 00:00:00</span><span class="sxs-lookup"><span data-stu-id="890ce-137">Latency : 00:00:00</span></span>
 
-<span data-ttu-id="38065-138">Errore: 404, non trovato</span><span class="sxs-lookup"><span data-stu-id="38065-138">Error : 404, Not Found</span></span>
+<span data-ttu-id="890ce-138">Errore: 404, non trovato</span><span class="sxs-lookup"><span data-stu-id="890ce-138">Error : 404, Not Found</span></span>
 
-<span data-ttu-id="38065-139">Diagnosi: ErrorCode = 4005, source = atl-cs-001.litwareinc.com,</span><span class="sxs-lookup"><span data-stu-id="38065-139">Diagnosis : ErrorCode=4005,Source=atl-cs-001.litwareinc.com,</span></span>
+<span data-ttu-id="890ce-139">Diagnosi: ErrorCode = 4005, source = atl-cs-001.litwareinc.com,</span><span class="sxs-lookup"><span data-stu-id="890ce-139">Diagnosis : ErrorCode=4005,Source=atl-cs-001.litwareinc.com,</span></span>
 
-<span data-ttu-id="38065-140">Reason = URI di destinazione non abilitato per SIP o non</span><span class="sxs-lookup"><span data-stu-id="38065-140">Reason=Destination URI either not enabled for SIP or does not</span></span>
+<span data-ttu-id="890ce-140">Reason = URI di destinazione non abilitato per SIP o non</span><span class="sxs-lookup"><span data-stu-id="890ce-140">Reason=Destination URI either not enabled for SIP or does not</span></span>
 
-<span data-ttu-id="38065-141">esiste.</span><span class="sxs-lookup"><span data-stu-id="38065-141">exist.</span></span>
+<span data-ttu-id="890ce-141">esiste.</span><span class="sxs-lookup"><span data-stu-id="890ce-141">exist.</span></span>
 
-<span data-ttu-id="38065-142">Microsoft. Rtc. signaling. DiagnosticHeader</span><span class="sxs-lookup"><span data-stu-id="38065-142">Microsoft.Rtc.Signaling.DiagnosticHeader</span></span>
+<span data-ttu-id="890ce-142">Microsoft. Rtc. signaling. DiagnosticHeader</span><span class="sxs-lookup"><span data-stu-id="890ce-142">Microsoft.Rtc.Signaling.DiagnosticHeader</span></span>
 
-<span data-ttu-id="38065-143">Ad esempio, l'output precedente indica che il test non è riuscito perché almeno uno dei due account utente non è valido, perché l'account non esiste o perché l'account non è stato abilitato per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="38065-143">For example, the previous output states that the test failed because at least one of the two user accounts was not valid, either because the account does not exist or because the account has not been enabled for Lync Server.</span></span> <span data-ttu-id="38065-144">È possibile verificare l'esistenza dei due account di test e se sono stati abilitati per Lync Server eseguendo un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="38065-144">You can verify the existence of the two test accounts, and whether they were enabled for Lync Server, by running a command similar to the following:</span></span>
+<span data-ttu-id="890ce-143">Ad esempio, l'output precedente indica che il test non è riuscito perché almeno uno dei due account utente non è valido, perché l'account non esiste o perché l'account non è stato abilitato per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="890ce-143">For example, the previous output states that the test failed because at least one of the two user accounts was not valid, either because the account does not exist or because the account has not been enabled for Lync Server.</span></span> <span data-ttu-id="890ce-144">È possibile verificare l'esistenza dei due account di test e se sono stati abilitati per Lync Server eseguendo un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="890ce-144">You can verify the existence of the two test accounts, and whether they were enabled for Lync Server, by running a command similar to the following:</span></span>
 
     "sip:kenmyer@litwareinc.com","sip:davidlongmire@litwareinc.com" | Get-CsUser | Select-Object SipAddress, enabled
 
-<span data-ttu-id="38065-145">Se Test-CsAVConference non riesce, potrebbe essere necessario rieseguire il test, questa volta includendo il parametro Verbose:</span><span class="sxs-lookup"><span data-stu-id="38065-145">If Test-CsAVConference fails, then you might want to rerun the test, this time including the Verbose parameter:</span></span>
+<span data-ttu-id="890ce-145">Se Test-CsAVConference non riesce, potrebbe essere necessario rieseguire il test, questa volta includendo il parametro Verbose:</span><span class="sxs-lookup"><span data-stu-id="890ce-145">If Test-CsAVConference fails, then you might want to rerun the test, this time including the Verbose parameter:</span></span>
 
     Test-CsAVConference -TargetFqdn "atl-cs-001.litwareinc.com" -Verbose
 
-<span data-ttu-id="38065-146">Quando il parametro Verbose è incluso Test-CsAVConference restituirà un account dettagliato di ogni azione provata quando ha verificato la possibilità per gli utenti specificati di partecipare a una conferenza AV.</span><span class="sxs-lookup"><span data-stu-id="38065-146">When the Verbose parameter is included Test-CsAVConference will return a step-by-step account of each action it tried when it checked the ability of the specified users to participate in an AV conference.</span></span> <span data-ttu-id="38065-147">Supponiamo ad esempio che il test non riesca e che venga ricevuta la diagnosi seguente:</span><span class="sxs-lookup"><span data-stu-id="38065-147">For example, suppose that your test fails and you receive the following Diagnosis:</span></span>
+<span data-ttu-id="890ce-146">Quando il parametro Verbose è incluso Test-CsAVConference restituirà un account dettagliato di ogni azione provata quando ha verificato la possibilità per gli utenti specificati di partecipare a una conferenza AV.</span><span class="sxs-lookup"><span data-stu-id="890ce-146">When the Verbose parameter is included Test-CsAVConference will return a step-by-step account of each action it tried when it checked the ability of the specified users to participate in an AV conference.</span></span> <span data-ttu-id="890ce-147">Supponiamo ad esempio che il test non riesca e che venga ricevuta la diagnosi seguente:</span><span class="sxs-lookup"><span data-stu-id="890ce-147">For example, suppose that your test fails and you receive the following Diagnosis:</span></span>
 
-<span data-ttu-id="38065-148">ErrorCode = 1008, source = accessproxy. litwareinc. com, Reason = non è possibile risolvere il record SRV DNS</span><span class="sxs-lookup"><span data-stu-id="38065-148">ErrorCode=1008,Source=accessproxy.litwareinc.com,Reason=Unable to resolve DNS SRV record</span></span>
+<span data-ttu-id="890ce-148">ErrorCode = 1008, source = accessproxy. litwareinc. com, Reason = non è possibile risolvere il record SRV DNS</span><span class="sxs-lookup"><span data-stu-id="890ce-148">ErrorCode=1008,Source=accessproxy.litwareinc.com,Reason=Unable to resolve DNS SRV record</span></span>
 
-<span data-ttu-id="38065-149">Se Riesegui il test usando il parametro Verbose, le informazioni dettagliate restituite includeranno l'output simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="38065-149">If you rerun the test using the Verbose parameter, the step-by-step information returned will include output similar to this:</span></span>
+<span data-ttu-id="890ce-149">Se Riesegui il test usando il parametro Verbose, le informazioni dettagliate restituite includeranno l'output simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="890ce-149">If you rerun the test using the Verbose parameter, the step-by-step information returned will include output similar to this:</span></span>
 
-<span data-ttu-id="38065-150">VERBOse: è stata avviata l'attività "Register".</span><span class="sxs-lookup"><span data-stu-id="38065-150">VERBOSE: 'Register' activity started.</span></span>
+<span data-ttu-id="890ce-150">VERBOse: è stata avviata l'attività "Register".</span><span class="sxs-lookup"><span data-stu-id="890ce-150">VERBOSE: 'Register' activity started.</span></span>
 
-<span data-ttu-id="38065-151">Invio della richiesta di registrazione:</span><span class="sxs-lookup"><span data-stu-id="38065-151">Sending Registration request:</span></span>
+<span data-ttu-id="890ce-151">Invio della richiesta di registrazione:</span><span class="sxs-lookup"><span data-stu-id="890ce-151">Sending Registration request:</span></span>
 
-<span data-ttu-id="38065-152">FQDN di destinazione = atl-cs-001.litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="38065-152">Target Fqdn = atl-cs-001.litwareinc.com</span></span>
+<span data-ttu-id="890ce-152">FQDN di destinazione = atl-cs-001.litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="890ce-152">Target Fqdn = atl-cs-001.litwareinc.com</span></span>
 
-<span data-ttu-id="38065-153">Indirizzo SIP utente = sip:davidlongmire@litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="38065-153">User Sip Address = sip:davidlongmire@litwareinc.com</span></span>
+<span data-ttu-id="890ce-153">Indirizzo SIP utente = sip:davidlongmire@litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="890ce-153">User Sip Address = sip:davidlongmire@litwareinc.com</span></span>
 
-<span data-ttu-id="38065-154">Porta registrar = 5061.</span><span class="sxs-lookup"><span data-stu-id="38065-154">Registrar Port = 5061.</span></span>
+<span data-ttu-id="890ce-154">Porta registrar = 5061.</span><span class="sxs-lookup"><span data-stu-id="890ce-154">Registrar Port = 5061.</span></span>
 
-<span data-ttu-id="38065-155">È selezionato il tipo di autenticazione "attendibile".</span><span class="sxs-lookup"><span data-stu-id="38065-155">Auth Type 'Trusted' is selected.</span></span>
+<span data-ttu-id="890ce-155">È selezionato il tipo di autenticazione "attendibile".</span><span class="sxs-lookup"><span data-stu-id="890ce-155">Auth Type 'Trusted' is selected.</span></span>
 
-<span data-ttu-id="38065-156">Attività "Registra" iniziata.</span><span class="sxs-lookup"><span data-stu-id="38065-156">'Register' activity started.</span></span>
+<span data-ttu-id="890ce-156">Attività "Registra" iniziata.</span><span class="sxs-lookup"><span data-stu-id="890ce-156">'Register' activity started.</span></span>
 
-<span data-ttu-id="38065-157">Invio della richiesta di registrazione:</span><span class="sxs-lookup"><span data-stu-id="38065-157">Sending Registration request:</span></span>
+<span data-ttu-id="890ce-157">Invio della richiesta di registrazione:</span><span class="sxs-lookup"><span data-stu-id="890ce-157">Sending Registration request:</span></span>
 
-<span data-ttu-id="38065-158">FQDN di destinazione = atl-cs-001.litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="38065-158">Target Fqdn = atl-cs-001.litwareinc.com</span></span>
+<span data-ttu-id="890ce-158">FQDN di destinazione = atl-cs-001.litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="890ce-158">Target Fqdn = atl-cs-001.litwareinc.com</span></span>
 
-<span data-ttu-id="38065-159">Indirizzo SIP utente = sip:kenmyer@litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="38065-159">User Sip Address = sip:kenmyer@litwareinc.com</span></span>
+<span data-ttu-id="890ce-159">Indirizzo SIP utente = sip:kenmyer@litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="890ce-159">User Sip Address = sip:kenmyer@litwareinc.com</span></span>
 
-<span data-ttu-id="38065-160">Porta registrar = 5061.</span><span class="sxs-lookup"><span data-stu-id="38065-160">Registrar Port = 5061.</span></span>
+<span data-ttu-id="890ce-160">Porta registrar = 5061.</span><span class="sxs-lookup"><span data-stu-id="890ce-160">Registrar Port = 5061.</span></span>
 
-<span data-ttu-id="38065-161">È selezionato il tipo di autenticazione "attendibile".</span><span class="sxs-lookup"><span data-stu-id="38065-161">Auth Type 'Trusted' is selected.</span></span>
+<span data-ttu-id="890ce-161">È selezionato il tipo di autenticazione "attendibile".</span><span class="sxs-lookup"><span data-stu-id="890ce-161">Auth Type 'Trusted' is selected.</span></span>
 
-<span data-ttu-id="38065-162">Eccezione "l'endpoint non è stato in grado di eseguire la registrazione.</span><span class="sxs-lookup"><span data-stu-id="38065-162">An exception 'The endpoint was unable to register.</span></span> <span data-ttu-id="38065-163">Vedere il ErrorCode per un motivo specifico.</span><span class="sxs-lookup"><span data-stu-id="38065-163">See the ErrorCode for specific reason.'</span></span> <span data-ttu-id="38065-164">si è verificato durante il flusso di lavoro</span><span class="sxs-lookup"><span data-stu-id="38065-164">occurred during Workflow</span></span>
+<span data-ttu-id="890ce-162">Eccezione "l'endpoint non è stato in grado di eseguire la registrazione.</span><span class="sxs-lookup"><span data-stu-id="890ce-162">An exception 'The endpoint was unable to register.</span></span> <span data-ttu-id="890ce-163">Vedere il ErrorCode per un motivo specifico.</span><span class="sxs-lookup"><span data-stu-id="890ce-163">See the ErrorCode for specific reason.'</span></span> <span data-ttu-id="890ce-164">si è verificato durante il flusso di lavoro</span><span class="sxs-lookup"><span data-stu-id="890ce-164">occurred during Workflow</span></span>
 
-<span data-ttu-id="38065-165">L'ultima riga di tale output indica che l'utente sip:kenmyer@litwareinc.com non è riuscito a eseguire la registrazione con Lync Server.</span><span class="sxs-lookup"><span data-stu-id="38065-165">The last line in that output indicates that the user sip:kenmyer@litwareinc.com was unable to register with Lync Server.</span></span> <span data-ttu-id="38065-166">Questo significa che devi verificare che l'indirizzo SIP sip:kenmyer@litwareinc.com sia valido e che l'utente associato sia abilitato per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="38065-166">That means that you should verify that the SIP address sip:kenmyer@litwareinc.com is valid, and that the associated user is enabled for Lync Server.</span></span>
+<span data-ttu-id="890ce-165">L'ultima riga di tale output indica che l'utente sip:kenmyer@litwareinc.com non è riuscito a eseguire la registrazione con Lync Server.</span><span class="sxs-lookup"><span data-stu-id="890ce-165">The last line in that output indicates that the user sip:kenmyer@litwareinc.com was unable to register with Lync Server.</span></span> <span data-ttu-id="890ce-166">Questo significa che devi verificare che l'indirizzo SIP sip:kenmyer@litwareinc.com sia valido e che l'utente associato sia abilitato per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="890ce-166">That means that you should verify that the SIP address sip:kenmyer@litwareinc.com is valid, and that the associated user is enabled for Lync Server.</span></span>
 
 </div>
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a><span data-ttu-id="38065-167">Motivi per cui il test potrebbe non essere riuscito</span><span class="sxs-lookup"><span data-stu-id="38065-167">Reasons why the test might have failed</span></span>
+## <a name="reasons-why-the-test-might-have-failed"></a><span data-ttu-id="890ce-167">Motivi per cui il test potrebbe non essere riuscito</span><span class="sxs-lookup"><span data-stu-id="890ce-167">Reasons why the test might have failed</span></span>
 
-<span data-ttu-id="38065-168">Ecco alcuni motivi comuni per cui Test-CsAVConference potrebbe non riuscire:</span><span class="sxs-lookup"><span data-stu-id="38065-168">Here are some common reasons why Test-CsAVConference might fail:</span></span>
+<span data-ttu-id="890ce-168">Ecco alcuni motivi comuni per cui Test-CsAVConference potrebbe non riuscire:</span><span class="sxs-lookup"><span data-stu-id="890ce-168">Here are some common reasons why Test-CsAVConference might fail:</span></span>
 
-  - <span data-ttu-id="38065-169">È stato specificato un account utente non valido.</span><span class="sxs-lookup"><span data-stu-id="38065-169">You specified a user account that is not valid.</span></span> <span data-ttu-id="38065-170">È possibile verificare che esista un account utente eseguendo un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="38065-170">You can verify that a user account exists by running a command similar to this:</span></span>
+  - <span data-ttu-id="890ce-169">È stato specificato un account utente non valido.</span><span class="sxs-lookup"><span data-stu-id="890ce-169">You specified a user account that is not valid.</span></span> <span data-ttu-id="890ce-170">È possibile verificare che esista un account utente eseguendo un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="890ce-170">You can verify that a user account exists by running a command similar to this:</span></span>
     
         Get-CsUser "sip:kenmyer@litwareinc.com"
 
-  - <span data-ttu-id="38065-171">L'account utente è valido, ma l'account non è attualmente abilitato per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="38065-171">The user account is valid, but the account is currently not enabled for Lync Server.</span></span> <span data-ttu-id="38065-172">Per verificare che un account utente sia abilitato per Lync Server, eseguire un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="38065-172">To verify that a user account is enabled for Lync Server, run a command similar to the following:</span></span>
+  - <span data-ttu-id="890ce-171">L'account utente è valido, ma l'account non è attualmente abilitato per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="890ce-171">The user account is valid, but the account is currently not enabled for Lync Server.</span></span> <span data-ttu-id="890ce-172">Per verificare che un account utente sia abilitato per Lync Server, eseguire un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="890ce-172">To verify that a user account is enabled for Lync Server, run a command similar to the following:</span></span>
     
         Get-CsUser "sip:kenmyer@litwareinc.com" | Select-Object Enabled
     
-    <span data-ttu-id="38065-173">Se la proprietà Enabled è impostata su false, significa che l'utente non è attualmente abilitato per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="38065-173">If the Enabled property is set to False that means that the user is currently not enabled for Lync Server.</span></span>
+    <span data-ttu-id="890ce-173">Se la proprietà Enabled è impostata su false, significa che l'utente non è attualmente abilitato per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="890ce-173">If the Enabled property is set to False that means that the user is currently not enabled for Lync Server.</span></span>
 
 </div>
 
