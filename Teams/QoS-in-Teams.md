@@ -11,19 +11,19 @@ audience: admin
 description: Preparare la rete dell'organizzazione per la qualità del servizio (QoS) in Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
-f1keywords:
+f1.keywords:
 - ms.teamsadmincenter.meetingsettings.qos
 - ms.teamsadmincenter.meetingsettings.network.qosmarkers
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: efa2dfadc760d99f87d8d69137992712c90b32ef
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 83275f7fbcec60727ed75c0a56ffda113b36fd26
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572556"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41695641"
 ---
 # <a name="implement-quality-of-service-qos-in-microsoft-teams"></a>Implementare la qualità del servizio (QoS) in Microsoft Teams
 
@@ -65,7 +65,7 @@ Per specificare il QoS, i dispositivi di rete devono avere la possibilità di cl
 
 Quando il traffico di rete entra in un router, il traffico viene inserito in una coda. Se un criterio QoS non è configurato, esiste una sola coda e tutti i dati vengono trattati come First-in, First-out con la stessa priorità. Questo significa che il traffico vocale (molto sensibile ai ritardi) potrebbe rimanere bloccato dietro il traffico in cui un ritardo di alcuni millisecondi aggiuntivi non è un problema.
 
-Quando implementi QoS, Definisci più code usando una delle varie funzionalità di gestione della congestione, ad esempio l'accodamento prioritario di Cisco e le caratteristiche di evasione ponderata di [CBWFQ](https://www.cisco.com/en/US/docs/ios/12_0t/12_0t5/feature/guide/cbwfq.html#wp17641)per la classe e la prevenzione della congestione, ad esempio i primi ponderati rilevamento [WRED](https://en.wikipedia.org/wiki/Weighted_random_early_detection)).
+Quando implementi QoS, Definisci più code usando una delle varie funzionalità di gestione della congestione, ad esempio l'accodamento prioritario di Cisco e le caratteristiche di evasione ponderata di [CBWFQ](https://www.cisco.com/en/US/docs/ios/12_0t/12_0t5/feature/guide/cbwfq.html#wp17641)per la classe e la prevenzione della congestione, ad esempio i [WRED](https://en.wikipedia.org/wiki/Weighted_random_early_detection)di rilevamento rapido ponderato.
 
 _Figura 2. Esempi di code QoS_
 
@@ -77,7 +77,7 @@ Una semplice analogia consiste nel fatto che QoS crea una "corsia di carpooling"
 
 Puoi implementare il QoS tramite tagging basato su porta, usando gli elenchi di controllo di accesso (ACL) nei router della rete. La codifica basata su porta è il metodo più affidabile perché funziona in ambienti Windows e Mac misti ed è la soluzione più semplice da implementare. I client mobili non offrono un meccanismo per contrassegnare il traffico usando i valori DSCP, quindi richiedono questo metodo.  
 
-Usando questo metodo, il router della rete esamina un pacchetto in arrivo e, se il pacchetto è arrivato usando una determinata porta o intervallo di porte, lo identifica come un determinato tipo di elemento multimediale e lo inserisce nella coda per quel tipo, aggiungendo un contrassegno [DSCP](https://tools.ietf.org/html/rfc2474) predeterminato all'IP Intestazione pacchetto in modo che altri dispositivi possano riconoscere il tipo di traffico e assegnargli la priorità nella coda.
+Usando questo metodo, il router della rete esamina un pacchetto in arrivo e, se il pacchetto è arrivato usando una determinata porta o intervallo di porte, lo identifica come un determinato tipo di elemento multimediale e lo inserisce nella coda per il tipo, aggiungendo un contrassegno di [DSCP](https://tools.ietf.org/html/rfc2474) predeterminato all'intestazione del pacchetto IP in modo che altri dispositivi possano riconoscere il tipo di traffico e assegnargli la priorità nella coda.
 
 Anche se questo funziona in tutte le piattaforme, contrassegna solo il traffico sul bordo WAN (non fino al computer client) e crea un sovraccarico di gestione. Devi fare riferimento alla documentazione fornita dal produttore del router per istruzioni sull'implementazione di questo metodo.
 
@@ -162,7 +162,7 @@ Per informazioni sulla configurazione delle porte del firewall, vedere [URL e in
 In teams le porte di origine QoS usate dai diversi carichi di lavoro devono essere gestite in modo attivo e modificate in base alle esigenze. Facendo riferimento alla tabella in [Scegli intervalli di porte iniziali per ogni tipo](#choose-initial-port-ranges-for-each-media-type)di elemento multimediale, gli intervalli di porta sono regolabili, ma i contrassegni di DSCP non sono configurabili. Dopo aver implementato queste impostazioni, è possibile che siano necessarie più o meno porte per un tipo di elemento multimediale specifico. Per prendere una decisione per regolare gli intervalli di porte dopo l'implementazione di teams e per modificare periodicamente le esigenze, è consigliabile usare il dashboard per la chiamata [e la qualità](difference-between-call-analytics-and-call-quality-dashboard.md) delle chiamate.
 
 > [!NOTE]
-> Se la QoS è già stata configurata in base a intervalli di porta di origine e contrassegni DSCP per Skype for business online, la stessa configurazione verrà applicata ai team e non saranno necessarie ulteriori modifiche al client o alla rete per il mapping, ma potrebbe essere necessario [impostare gli intervalli usato nell'interfaccia di amministrazione di teams](meeting-settings-in-teams.md#set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings) per corrispondere a quello configurato per Skype for business online.
+> Se la funzionalità QoS è già stata configurata in base a intervalli di porta di origine e contrassegni DSCP per Skype for business online, la stessa configurazione verrà applicata ai team e non saranno necessarie ulteriori modifiche al client o alla rete, ma potrebbe essere necessario [impostare gli intervalli usati nell'interfaccia di amministrazione di teams](meeting-settings-in-teams.md#set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings) in modo che corrispondano a quelli configurati per Skype for business online.
 
 Se hai distribuito in precedenza Skype for Business Server in locale, potrebbe essere necessario riesaminare i criteri di QoS e regolarli in base alle esigenze per corrispondere alle impostazioni dell'intervallo di porte che hai verificato per consentire l'utilizzo di un'esperienza utente di qualità per i team.
 
@@ -200,7 +200,7 @@ In questo esempio, il valore DSCP è impostato su 46. Questo è corretto, perch�
 
 Ripetere la verifica per ogni carico di lavoro contrassegnato dall'oggetto Criteri di ricerca.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 [Video: pianificazione della rete](https://aka.ms/teams-networking)
 

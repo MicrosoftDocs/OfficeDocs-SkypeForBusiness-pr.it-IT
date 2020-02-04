@@ -16,16 +16,17 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Licensing
 description: 'Ai clienti è stata fornita una funzionalità di chiamata in uscita gratuita che si concluderà il 30 novembre 2019.  A partire dal 1 ° dicembre 2019, ogni abbonamento a servizi di audioconferenza offre 60 minuti per utente al mese a qualsiasi zona di un paese come descritto in questo documento. '
-ms.openlocfilehash: e98844a1b3d9b00d489cd32e90add357b4b85b57
-ms.sourcegitcommit: b1bf37a96a8faa169d8a32b7478f1e2d1022ebbb
+ms.openlocfilehash: 6309bc48d07c767aa9babb9139f6ad885689cb38
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38311271"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41695651"
 ---
 # <a name="audio-conferencing-subscription-dial-outcall-me-at-minutes-benefit"></a>Abbonamento a servizi di audioconferenza "chiamata in uscita"/"Chiamami al" minuti beneficio
 

@@ -16,15 +16,16 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom: Reporting
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 82602565d0589e55cb76bffa6bece218bc02a295
-ms.sourcegitcommit: 43a17ce6fea3951719b55bfbda03c500cef4816c
+ms.openlocfilehash: 9e2dc32802b2a13d9d0a24824a083702c2f2d27c
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41580893"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41696041"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata
 
@@ -167,10 +168,10 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | First User Agent  | Stringa  | Stringa agente utente del primo endpoint. <br/> **Valore di esempio:** UCCAPI/16.0.7766.5281 OC/16.0.7766.2047 (Skype for business) | &bull;Nessun agente utente segnalato dal primo endpoint   |
 | Second User Agent  | Stringa  | Stringa agente utente del secondo endpoint. <br/> **Valore di esempio:** UCCAPI/16.0.7766.5281 OC/16.0.7766.2047 (Skype for business) | &bull;Nessun agente utente è stato segnalato dal secondo endpoint   |
 | Conference Type  | Enumerazione <br/>**Valori possibili:** <br/>&bull;conf: ApplicationSharing <br/>&bull;conf: audio-video <br/>&bull;conf: stato attiva | URI del tipo di conferenza.  <br/> **Valore di esempio:** conf: audio-video | &bull;Scenario non congressuale.   |
-| ID conferenza (in lync.cqd.com)<br/>ID chiamata (in cqd.teams.microsoft.com)  | Stringa  | ID conferenza (o ID chiamata) associato ai flussi. In cqd.teams.microsoft.com tutte le chiamate hanno ID chiamata indipendentemente dal fatto che si tratti di una chiamata da persona a persona (P2P) o una conferenza telefonica.  Questa dimensione può contenere un numero eccessivo di righe da usare come dimensione in un report. Può invece essere usata come filtro.  <br/> **Valore di esempio:** 0001P6GK  | &bull;Scenario non congressuale. |
+| ID conferenza  | Stringa | ID conferenza (o ID chiamata) associato ai flussi. In cqd.teams.microsoft.com tutte le chiamate hanno un ID chiamata, indipendentemente dal fatto che si tratti di una chiamata da persona a persona (P2P) o di una conferenza telefonica. In cqd.lync.com questo valore è solo avialble per le conferenze telefoniche Skype for business.  Questa dimensione può contenere un numero eccessivo di righe da usare come dimensione in un report. Può invece essere usata come filtro.  <br/> **Valore di esempio (CQD.Lync.com):** 0001P6GK <br/> **Valore di esempio (CQD.teams.Microsoft.com):** 5a962ccf-b9cb-436A-A433-f28bf5404ad8  | |
 | First Client App Version  | Stringa  | Versione dell'applicazione utilizzata dal primo endpoint. I dati sono ricavati dalla stringa agente utente.<br/> **Valore di esempio:** 16.0.7766.2047 | &bull;Non è stato possibile analizzare la stringa della versione <br/>&bull;Il valore non è stato segnalato.   |
 | Second Client App Version  | Stringa  | Versione dell'applicazione utilizzata dal secondo endpoint. I dati sono ricavati dalla stringa agente utente.<br/> **Valore di esempio:** 16.0.7766.2047 | &bull;Non è stato possibile analizzare la stringa della versione <br/>&bull;Il valore non è stato segnalato. |
-|ID riunione|Stringa |Identificatore della riunione, generato al momento della creazione della riunione. | |
+|ID riunione (in cqd.teams.microsoft.com) <br/> ID conferenza (in cqd.lync.com) |Stringa |Identificatore della riunione, generato al momento della creazione della riunione. <br/> **Valore di esempio (Skype for business):** 0001P6GK  <br/> **Valore di esempio (Teams):** 19: meeting_MzB... zIw@thread. V2| |
 |**Rete**||| 
 | Transport  | Enumerazione <br/>**Valori possibili:** <br/>&bull;UDP <br/>&bull;TCP <br/>&bull;Riconosciuto  | Tipo di trasporto di rete utilizzato dallo stream.  Non riconosciuta indica che il sistema non è in grado di determinare se il tipo di trasporto è TCP o UDP.  | &bull;Il tipo di trasporto non è stato segnalato <br/>&bull;Il percorso multimediale non è stato stabilito  |
 | First Connectivity Ice  | Enumerazione <br/>**Valori possibili:** <br/>&bull;DIRECT = percorso di rete diretto <br/>&bull;INOLTRO = tramite inoltro <br/>&bull;HTTP = tramite proxy HTTP <br/>&bull;FAILED = connettività non riuscita | Tipo di connettività ICE utilizzata dal primo endpoint.  |&bull;Il tipo di trasporto non è stato segnalato <br/>&bull;Il percorso multimediale non è stato stabilito   |

@@ -17,16 +17,17 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Audio Conferencing
 description: Di seguito sono elencate alcune delle principali domande che si ottengono dai clienti che vogliono usare i servizi di audioconferenza.
-ms.openlocfilehash: 7779a732a10f8a55f8bbdbb977ac9850cd2307bd
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 2dd772a9a6488b09092ac0687ca125409accf85b
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516989"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41695721"
 ---
 # <a name="audio-conferencing-common-questions"></a>Domande ricorrenti sulle audioconferenze
 
@@ -90,7 +91,7 @@ Per informazioni sui limiti delle riunioni, vedere [limiti per Skype for busines
   
 ## <a name="why-did-users-start-receiving-emails-with-their-audio-conferencing-information"></a>Perché gli utenti iniziano a ricevere messaggi di posta elettronica con le informazioni relative ai servizi di audioconferenza?
 
-È stata aggiunta una nuova funzionalità che consente all' [amministratore](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)di inviare e aggiornare le informazioni relative alle conferenze audio e di aggiungere messaggi di posta elettronica. Per altre informazioni, ad esempio su come disabilitarlo, vedere [abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza vengono modificate in Microsoft teams](enable-or-disable-sending-emails-when-their-settings-change-in-teams.md) o [abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni dei servizi di audioconferenza cambiano in Skype for business Online](/SkypeForBusiness/audio-conferencing-in-office-365/enable-or-disable-sending-emails-when-their-settings-change).
+È stata aggiunta una nuova funzionalità che consente all' [amministratore](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)di inviare e aggiornare le informazioni relative alle conferenze audio e di aggiungere messaggi di posta elettronica. Per altre informazioni, ad esempio come disabilitarlo, vedere [abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni dei servizi di audioconferenza cambiano in Microsoft teams](enable-or-disable-sending-emails-when-their-settings-change-in-teams.md) o [abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza vengono modificate in Skype for business online](/SkypeForBusiness/audio-conferencing-in-office-365/enable-or-disable-sending-emails-when-their-settings-change).
   
 ## <a name="can-audio-conferencing-be-used-by-the-users-who-are-part-of-an-on-premises-deployment-of-skype-for-business-server"></a>I servizi di conferenza audio possono essere usati dagli utenti che fanno parte di una distribuzione locale di Skype for Business Server?
 
@@ -146,7 +147,7 @@ La pianificazione di una riunione a cui verranno aggiunti tutti i partecipanti c
 
 - **Opzione #1**: per impostazione predefinita, se l'organizzatore della riunione e tutti i partecipanti partecipano a una riunione con un telefono, l'organizzatore della riunione deve inserire il proprio PIN per la conferenza audio per avviarlo. I chiamanti vengono chiesti se desiderano eseguire l'autenticazione come organizzatore di una riunione specifica quando effettuano la chiamata al numero di telefono di una riunione online. Tutti i partecipanti che partecipano alla riunione tramite chiamata in ingresso prima dell'inizio dell'organizzatore verranno inseriti nella sala di attesa e ascolteranno la musica in sospeso. Per le riunioni Skype for business, una volta che l'organizzatore lo avvia immettendo il PIN per i servizi di audioconferenza, tutti i partecipanti alla sala di attesa si uniranno automaticamente alla riunione. Per le riunioni di Microsoft teams, i partecipanti si uniranno alla riunione in base al valore dell'impostazione di ammetti automaticamente persone nei criteri della riunione dell'organizzatore.
 
-- **Opzione #2**: se l'impostazione "Consenti ai chiamanti non autenticati di essere i primi utenti di una riunione" (disabilitata per impostazione predefinita) è abilitata per un organizzatore specifico, tutte le riunioni pianificate dall'utente potranno essere avviate senza che l'organizzatore abbia inserito il suo o il PIN di conferenza audio. Quando questa impostazione è abilitata, la riunione verrà avviata non appena il primo partecipante lo raggiunge tramite un numero di telefono con accesso esterno e non verrà inserito nella sala di attesa. Per altre informazioni, vedere [gestire le impostazioni di audioconferenza per un utente in Microsoft teams](manage-the-audio-conferencing-settings-for-a-user-in-teams.md) o [gestire le impostazioni dei servizi di audioconferenza per un utente in Skype for business online](/SkypeForBusiness/audio-conferencing-in-office-365/manage-the-audio-conferencing-settings-for-a-user).
+- **Opzione #2**: se l'impostazione "Consenti ai chiamanti non autenticati di essere i primi utenti di una riunione" (disabilitata per impostazione predefinita) è abilitata per un organizzatore specifico, tutte le riunioni pianificate dall'utente potranno essere avviate senza che l'organizzatore abbia inserito il proprio PIN di conferenza audio. Quando questa impostazione è abilitata, la riunione verrà avviata non appena il primo partecipante lo raggiunge tramite un numero di telefono con accesso esterno e non verrà inserito nella sala di attesa. Per altre informazioni, vedere [gestire le impostazioni di audioconferenza per un utente in Microsoft teams](manage-the-audio-conferencing-settings-for-a-user-in-teams.md) o [gestire le impostazioni dei servizi di audioconferenza per un utente in Skype for business online](/SkypeForBusiness/audio-conferencing-in-office-365/manage-the-audio-conferencing-settings-for-a-user).
    
 ## <a name="related-topics"></a>Argomenti correlati
 

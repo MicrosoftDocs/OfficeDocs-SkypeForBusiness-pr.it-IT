@@ -14,14 +14,15 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 description: "Informazioni su come aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione nell'interfaccia di amministrazione di Microsoft teams. "
-ms.openlocfilehash: ddef21811f4317f1ac10d5eb7d94bd67f1faaaad
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 2471f13f67555eeff4e0a1b130c416dbbe97b0c7
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37639656"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41695831"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
@@ -61,6 +62,6 @@ Per informazioni su come ottenere un piano per le chiamate e sulla quantità di 
 ## <a name="related-topics"></a>Argomenti correlati
 
 -[Quali sono le posizioni di emergenza, i luoghi e il routing delle chiamate?](what-are-emergency-locations-addresses-and-call-routing.md)
-- [Aggiungere, modificare o rimuovere una posizione per un luogo di emergenza nell'organizzazione](add-change-remove-emergency-place-organization.md)
+- [Aggiungere, modificare o rimuovere un luogo per una posizione di emergenza per l'organizzazione](add-change-remove-emergency-place-organization.md)
 - [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)
 - [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)

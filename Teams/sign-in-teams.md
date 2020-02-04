@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a5698058cbfecd62f92cfe9f198657f7c280deff
-ms.sourcegitcommit: 4a4ed872eff22663720296ae29c0e644286857f2
+ms.openlocfilehash: d266799bf2bc2cab9cd107836f9017bd7dc369bf
+ms.sourcegitcommit: 2cb46af39a0d116e8fd020aa04bd2ecbd6998a5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37568682"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41678970"
 ---
 <a name="sign-in-to-microsoft-teams-using-modern-authentication"></a>Accedere a Microsoft teams con l'autenticazione moderna
 ==========================
@@ -38,6 +38,11 @@ L'autenticazione moderna è un processo che consente ai team di sapere che gli u
 - Se gli utenti non hanno eseguito l'accesso al proprio account di Office 365 Enterprise in qualsiasi altro punto, quando avviano teams, viene chiesto di specificare l'autenticazione a singolo fattore o a più fattori (SFA o AMF), a seconda di come l'organizzazione ha deciso che desidera processo da richiedere.
 
 - Se gli utenti hanno eseguito l'accesso a un computer collegato a un dominio, quando avviano teams, potrebbe essere richiesto di passare a un altro passaggio di autenticazione, a seconda che l'organizzazione abbia scelto di richiedere l'AMF o se il proprio computer richiede già l'accesso a Mae. Se il proprio computer richiede già l'accesso a Mae, quando aprono teams, l'app viene avviata automaticamente.
+
+- Se gli utenti hanno eseguito l'accesso a un computer collegato a un dominio e non si vuole che il nome utente venga prepopolato nella schermata di accesso a teams, gli amministratori possono impostare il seguente registro di sistema di Windows per disattivare la prepopolazione del nome utente: computer \ HKEY_CURRENT_USER \software\ Microsoft\Office\Teams DisableUpnSuffixCheck (REG_DWORD) 0x00000001 (1)
+
+  Nota: per impostazione predefinita, non è necessario impostare una chiave del registro di sistema per disattivare i nomi utente che terminano con ". local" o ". Corp". 
+
 
 ### <a name="mac-users"></a>Utenti Mac 
 

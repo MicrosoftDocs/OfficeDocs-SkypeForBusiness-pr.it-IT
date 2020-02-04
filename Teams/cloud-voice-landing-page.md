@@ -11,22 +11,22 @@ ms.collection:
 - M365-collaboration
 - M365-voice
 ms.reviewer: crowe
-f1keywords:
+f1.keywords:
 - ms.teamsadmincenter.dashboard.helparticle.cloudvoice
 search.appverid: MET150
 description: Pagina di destinazione per la distribuzione di cloud Voice in teams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 969d55f41226d1c6effaf4c183992f15bf48e385
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: b1c172de4e29b5246e17bd6cd280679b7f3ef8a2
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925577"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41695481"
 ---
 # <a name="cloud-voice-in-microsoft-teams"></a>Cloud Voice in Microsoft Teams
 
-È stato completato per [iniziare](get-started-with-teams-quick-start.md). Sono stati distribuiti team con [chat, team, canali, & app](deploy-chat-teams-channels-microsoft-teams-landing-page.md) in tutta l'organizzazione. Forse hai distribuito [riunioni & conferenze](deploy-meetings-microsoft-teams-landing-page.md). Ora si è pronti ad aggiungere funzionalità di cloud Voice per gli utenti. 
+L'[Introduzione](get-started-with-teams-quick-start.md) è stata completata. Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). Forse hai distribuito [riunioni & conferenze](deploy-meetings-microsoft-teams-landing-page.md). Ora si è pronti ad aggiungere funzionalità di cloud Voice per gli utenti. 
 
 Cloud Voice offre funzionalità PBX (Private Branch Exchange) e opzioni per la connessione alla rete PSTN (Public Switched Telephone Network).
 
@@ -44,13 +44,13 @@ Gli articoli seguenti includono ulteriori informazioni sulla distribuzione e l'u
 - [Sistema telefonico con piani di chiamata](calling-plan-landing-page.md)
 - [Instradamento diretto di Sistema telefonico](direct-routing-landing-page.md)
 - [Distribuzione di cloud Voice](cloud-voice-deployment.md)
-- [Soluzioni per la telefonia Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)
+- [Soluzioni di telefonia Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)
 - Per altre informazioni sul sistema telefonico, vedere la sessione seguente: [Introduzione al sistema telefonico in Microsoft teams](https://aka.ms/teams-phone-system)
 
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
 
-Queste sono le impostazioni che la maggior parte delle organizzazioni vuole modificare (se le impostazioni predefinite di teams non funzionano per l'organizzazione).
+Di seguito sono illustrate le impostazioni che la maggior parte delle organizzazioni vorrà modificare se le impostazioni predefinite di Teams non sono adeguate.
 
 ## <a name="phone-system-office-365"></a>Sistema telefonico (Office 365)
 
@@ -106,7 +106,7 @@ Per impostazione predefinita, tutte le chiamate in uscita usano il numero di tel
 
 ### <a name="phone-numbers-from-microsoft"></a>Numeri di telefono da Microsoft
 
-Microsoft ha due tipi di numeri di telefono disponibili: i numeri di *abbonato* (utente), che possono essere assegnati agli utenti dell'organizzazione e i numeri di *servizio* , disponibili come numeri di servizio a pedaggio e a numero verde, che hanno una chiamata simultanea più alta capacità rispetto ai numeri di abbonato e può essere assegnata a servizi come audioconferenza, operatori automatici o code di chiamata.
+Microsoft ha due tipi di numeri di telefono disponibili: i numeri di *abbonato* (utente), che possono essere assegnati agli utenti dell'organizzazione e i numeri di *servizio* , disponibili come numeri di servizio a pedaggio e a numero verde, che hanno una maggiore capacità di chiamata simultanea rispetto ai numeri di abbonati e che possono essere assegnati a servizi come audioconferenza, operatori automatici o code di chiamata.
 
 |Chiedersi|Azione |
 | :------------|:-------|
@@ -119,12 +119,12 @@ Come si trasferiscono I numeri di telefono esistenti in teams?|Per altre informa
 
 Un dial plan nella caratteristica sistema telefonico di Office 365 è un set di regole di normalizzazione che traducono i numeri di telefono composti in un formato alternativo (in genere E. 164) per l'autorizzazione alle chiamate e il routing delle chiamate.
 
-Per altre informazioni sui dial plan, vedere [cosa sono i dial plan?](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/what-are-dial-plans)
+Per altre informazioni sui dial plan, vedere [Che cosa sono i dial plan?](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/what-are-dial-plans)
 
 |Chiedersi|Azione |
 |:------------|:-------|
 | L'organizzazione ha bisogno di un dial plan personalizzato? | Per determinare se è necessario un piano di chiamata personalizzato, vedere [pianificazione per i piani di chiamata del tenant](what-are-dial-plans.md#planning-for-tenant-dial-plans)|
-Quali utenti richiedono un dial plan personalizzato e quale piano di dial tenant deve essere assegnato a ogni utente? | Per aggiungere utenti a un dial plan personalizzato in PowerShell, vedere [creare e gestire piani di chiamata](create-and-manage-dial-plans.md). |
+Quali utenti devono avere un dial plan personalizzato e quale dial plan del tenant occorre assegnare a ogni utente? | Per aggiungere utenti a un dial plan personalizzato in PowerShell, vedere [creare e gestire piani di chiamata](create-and-manage-dial-plans.md). |
 |||
 
 ### <a name="call-queues"></a>Code di chiamata
