@@ -3,6 +3,8 @@ title: Trasferire un singolo utente nel pool pilota
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Move a single user to the pilot pool
 ms:assetid: e9de81a8-40dd-4446-81e7-a2b810eaea50
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205401(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48185905
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e9ee58a49afaa9c1e57689b6a3a87fac1a6a4502
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: c14c4a772ced3939d979bd8d4cd053207b0c5613
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40979003"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41765304"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -43,7 +45,7 @@ _**Argomento Ultima modifica:** 2012-09-26_
 
 **Elenco di utenti nel pannello di controllo di Lync Server 2013**
 
-![Pannello di controllo di Lync Server,](images/JJ721870.a2bce284-0392-4db3-9bb2-9f12699738e7(OCS.15).jpg "Pannello di controllo") della finestra di dialogo spostati utente
+![Pannello di controllo di Lync Server - Finestra di dialogo Spostare un utente](images/JJ721870.a2bce284-0392-4db3-9bb2-9f12699738e7(OCS.15).jpg "Pannello di controllo di Lync Server - Finestra di dialogo Spostare un utente")
 
 1.  Accedere al server front-end con un account che sia un membro del gruppo RTCUniversalServerAdmins o un membro del ruolo di amministratore di CsAdministrator o CsUserAdministrator.
 
@@ -59,7 +61,7 @@ _**Argomento Ultima modifica:** 2012-09-26_
 
 7.  Fare clic su **azione** e quindi su **Trasferisci utenti selezionati in pool**. Fare clic su **OK**.
     
-    ![Trasferire utenti, finestra di dialogo pool di registrar di destinazione](images/JJ205401.8a375003-dc00-4541-b578-4d88f2010601(OCS.15).png ", finestra di dialogo pool Registrar di destinazione")  
+    ![Finestra di dialogo per lo spostamento di utenti nel pool di registrazione di destinazione](images/JJ205401.8a375003-dc00-4541-b578-4d88f2010601(OCS.15).png "Finestra di dialogo per lo spostamento di utenti nel pool di registrazione di destinazione")  
 
 8.  Verificare che la colonna del **pool di registrar** per l'utente contenga ora il pool di Lync Server 2013, che indica che l'utente è stato spostato correttamente.
 
@@ -81,7 +83,7 @@ _**Argomento Ultima modifica:** 2012-09-26_
 
 4.  L'identità **RegistrarPool** punta ora sul pool di Lync Server 2013. La presenza di questa identità conferma che l'utente è stato spostato correttamente.
     
-    ![Output del cmdlet Get-CsUser con]l'output del filtro di identità(images/JJ205401.bc5d4672-8068-4475-b882-dbd305c801a9(OCS.15).jpg "dal cmdlet Get-CsUser con il filtro delle identità")  
+    ![Output del cmdlet Get-CsUser con filtro Identity](images/JJ205401.bc5d4672-8068-4475-b882-dbd305c801a9(OCS.15).jpg "Output del cmdlet Get-CsUser con filtro Identity")  
     
     <div>
     

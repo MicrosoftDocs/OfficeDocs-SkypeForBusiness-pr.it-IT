@@ -3,6 +3,8 @@ title: 'Lync Server 2013: pianificazione della capacità per il server di chat p
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Capacity planning for Persistent Chat Server
 ms:assetid: 7a850cd5-c789-4795-a8ff-083be21ae784
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg615006(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184580
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7af60947a1132d26d5e8ba015d54cdbea80b8b54
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: dde4bcb499e38e729850f06bb08590bf537696e5
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40980773"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41737026"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -82,7 +84,7 @@ La figura seguente mostra tutti i componenti obbligatori e facoltativi di una to
 
 **Singolo server di chat persistente**
 
-![Topologia a server singolo con](images/Gg398500.9168fa52-61e0-4d17-a14d-45fd32e81456(OCS.15).jpg "topologia del servizio conformità Single Server con servizio conformità")
+![Topologia a un solo server con Compliance Service](images/Gg398500.9168fa52-61e0-4d17-a14d-45fd32e81456(OCS.15).jpg "Topologia a un solo server con Compliance Service")
 
 </div>
 
@@ -96,7 +98,7 @@ La figura seguente mostra tutti i componenti di una topologia a più server con 
 
 **Più server di chat persistenti**
 
-Topologia multiple server(images/Gg398500.19aea898-28df-4d9b-903c-f72ef062d919(OCS.15).jpg "multiple") ![topologia]server
+![Topologia a più server](images/Gg398500.19aea898-28df-4d9b-903c-f72ef062d919(OCS.15).jpg "Topologia a più server")
 
 In una distribuzione di server di chat persistente con quattro server, in cui gli utenti di 80.000 possono essere connessi simultaneamente e usando la chat persistente, il carico viene distribuito uniformemente in 20.000 utenti per server. Se un server non è disponibile, gli utenti connessi al server perderanno l'accesso al server di chat persistente. Gli utenti disconnessi verranno trasferiti automaticamente ai server rimanenti finché non viene ripristinato il server non disponibile. A seconda della quantità di traffico di chat persistente nella rete, questo trasferimento può richiedere qualche minuto o più. Poiché ognuno dei server rimanenti può ospitare fino a 30.000 utenti, è consigliabile ripristinare il server non disponibile il più rapidamente possibile per evitare problemi di prestazioni. In caso contrario, è possibile rendere disponibile un altro server di chat persistente usando il generatore di topologia o il cmdlet di Windows PowerShell, **Set-CsPersistentChatActiveServer**.
 

@@ -3,6 +3,8 @@ title: Topologia perimetrale consolidata con scalabilità implementata, bilancia
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Scaled consolidated edge, DNS load balancing with public IP addresses
 ms:assetid: 2b854f6d-3d3f-4961-a5f8-a03f47740df0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204761(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183698
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f7145ae98a57523293d9d7d0d872c81a5e33e847
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 11da1e2b514c200ec82f1c6cb07c5c5b6cc79857
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40977976"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41765004"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -67,7 +69,7 @@ Esistono le tecnologie NAT (Network Address Translation Technologies) per IPv6 c
 
 </div>
 
-![7c1e3e6b-9b1b-4ac6-B0E7-9c256dbc2537](images/JJ204761.7c1e3e6b-9b1b-4ac6-b0e7-9c256dbc2537(OCS.15).jpg "7c1e3e6b-9b1b-4ac6-B0E7-9c256dbc2537")
+![7c1e3e6b-9b1b-4ac6-b0e7-9c256dbc2537](images/JJ204761.7c1e3e6b-9b1b-4ac6-b0e7-9c256dbc2537(OCS.15).jpg "7c1e3e6b-9b1b-4ac6-b0e7-9c256dbc2537")
 
 <div>
 
