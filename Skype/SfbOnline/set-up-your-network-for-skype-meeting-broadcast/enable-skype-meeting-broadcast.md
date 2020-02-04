@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - SMB
 description: Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, è necessario abilitarlo. A questo scopo, devi sapere come usare Windows PowerShell. Se non si conosce Windows PowerShell, è consigliabile assumere un partner Microsoft per eseguire questo passaggio.
-ms.openlocfilehash: edf9c372a98da9e09d7e9040c6d035e389c8b1ec
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 6ad681972bb62fa1790290a90d4281fe4ccd8571
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989141"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692631"
 ---
 # <a name="enable-skype-meeting-broadcast"></a>Abilitare Skype Meeting Broadcast
 

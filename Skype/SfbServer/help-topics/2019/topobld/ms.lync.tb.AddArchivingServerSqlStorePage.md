@@ -1,26 +1,26 @@
 ---
-title: Aggiungere l'archiviazione di SQL Server Store
+title: Aggiungere un archivio di SQL Server di archiviazione
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddArchivingServerSqlStorePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 26e0a748-e31d-4c66-b225-b37e0a45408f
 ROBOTS: NOINDEX, NOFOLLOW
 description: Il server di archiviazione richiede una versione di 64 bit supportata del software di database di SQL Server per archiviare i dati di archiviazione. È possibile selezionare un database SQL Server definito in precedenza da usare per l'archiviazione o la definizione di un nuovo database di SQL Server specificando un nome di dominio completo (FQDN) del server in cui risiede il database di SQL Server e l'istanza di SQL Server che che si vuole usare per il nuovo database di SQL Server (che può essere l'istanza predefinita o un'istanza denominata specificata).
-ms.openlocfilehash: 9d9d5af7e769a22c7742029d786826e3d2b3c998
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 14a104a28c28c5ea78ab97fd73f7eb7312fffd87
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195558"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41689711"
 ---
-# <a name="add-archiving-server-sql-server-store"></a>Aggiungere l'archiviazione di SQL Server Store
+# <a name="add-archiving-server-sql-server-store"></a>Aggiungere un archivio di SQL Server di archiviazione
 
 Il server di archiviazione richiede una versione di 64 bit supportata del software di database di SQL Server per archiviare i dati di archiviazione. È possibile selezionare un database SQL Server definito in precedenza da usare per l'archiviazione o la definizione di un nuovo database di SQL Server specificando un nome di dominio completo (FQDN) del server in cui risiede il database di SQL Server e l'istanza di SQL Server che che si vuole usare per il nuovo database di SQL Server (che può essere l'istanza predefinita o un'istanza denominata specificata).
 

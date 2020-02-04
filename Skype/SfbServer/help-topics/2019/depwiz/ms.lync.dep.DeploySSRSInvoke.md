@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeploySSRSInvoke
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4a4ba8d6-ba43-45b3-b834-372d092561e7
 ROBOTS: NOINDEX, NOFOLLOW
 description: Dopo aver fornito le informazioni necessarie per la distribuzione dei report del server di monitoraggio a Microsoft SQL Server 2008 R2 o a Microsoft SQL Server 2012 Report Services, i comandi di esecuzione della pagina visualizzano un riepilogo dei comandi emessi per installare il report di SQL Server Reporting Services.
-ms.openlocfilehash: d0b57f6a7df4f1de9d8e46e24d7cbde744d2a13e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 970b570c2fba75cf1afe4f4a217e809eb62a7411
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195045"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41691671"
 ---
 # <a name="sql-server-reporting-services-invoke"></a>SQL Server Reporting Services (Invoke)
  

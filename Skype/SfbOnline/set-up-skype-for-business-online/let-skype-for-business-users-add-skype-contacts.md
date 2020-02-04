@@ -14,17 +14,18 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Setup
 - LIL_Placement
 description: "Informazioni su come consentire alle persone che usano Skype for business di contattare utenti Skype for business all'esterno dell'organizzazione e aggiungerli al proprio elenco di contatti. "
-ms.openlocfilehash: 3ba92977fa45686a900a78cfcf231a3c0985a933
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: d6251e8e86527172e6818d11b1e07da892b4b0ef
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35792144"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692881"
 ---
 # <a name="let-skype-for-business-users-add-skype-contacts"></a>Consentire agli utenti di Skype for Business di aggiungere contatti Skype
 
@@ -46,7 +47,7 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
     
     ![Scegli consentire agli utenti di usare Skype for business per comunicare con Skype.](../images/333789f8-2ea6-4bbd-805b-18130f427999.png)
   
-    Se vuoi che gli utenti possano chattare con gli utenti Skype, ma non vuoi che vengano chattati con altri che usano Skype for business, scegli **solo per i domini**consentiti. Quando si Abilita il contatto con utenti Skype, skype.com viene automaticamente aggiunto come dominio consentito dietro le quinte. 
+    Se vuoi che gli utenti possano chattare con gli utenti Skype, ma non vuoi che vengano chattati con altri che usano Skype for business, scegli **solo per i domini consentiti**. Quando si Abilita il contatto con utenti Skype, skype.com viene automaticamente aggiunto come dominio consentito dietro le quinte. 
     
     Se vuoi consentire il contatto di tutte le altre aziende del mondo usando Skype for business, eccetto quelle specifiche, scegli attivato **eccetto i domini bloccati**e scegli **+** di aggiungere tali domini. Tutti saranno in grado di contattare l'utente, eccetto gli utenti di questi specifici domini. Alcune aziende potrebbero scegliere questa opzione, ad esempio se sono in contenzioso ed è necessario assicurarsi che non ci siano contatti con l'altra azienda.
     
@@ -96,7 +97,7 @@ I contatti di Skype che hanno effettuato l'accesso con il proprio account Micros
   
 |**Disponibile con i contatti Skype**|**Non disponibile con i contatti Skype**|
 |:-----|:-----|
-| Conversazioni video <br/>  Messaggistica istantanea da persona a persona <br/>  Presenza <br/> | Conversazioni di messaggistica istantanea con più partecipanti <br/>  Conversazioni audio e video con tre o più persone <br/>  Condivisione di desktop e programmi <br/> |
+| Conversazioni video <br/>  Messaggistica istantanea da persona a persona <br/>  Icone di presenza <br/> | Conversazioni di messaggistica istantanea con più partecipanti <br/>  Conversazioni audio e video con tre o più persone <br/>  Condivisione di desktop e programmi <br/> |
    
 [!INCLUDE [LinkedIn Learning Info](../../common/office/linkedin-learning-info.md)]
    

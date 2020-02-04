@@ -18,16 +18,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: 2b7b9a63f7d4cadfd77079d983ba842f17b12049
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: bcec32c632b7c17358d4ac8cbea147fb446b7d61
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571412"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41693561"
 ---
 # <a name="toll-free-dialing-restrictions-in-malaysia"></a>Restrizioni di chiamata gratuita in Malesia
 
@@ -47,7 +48,7 @@ ms.locfileid: "37571412"
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Limitazioni e restrizioni di chiamata senza pedaggio](../toll-free-dialing-limitations-and-restrictions.md)
+[Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 

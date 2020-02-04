@@ -6,7 +6,7 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.plan.FeatureOverview
 - ms.lync.plan.FeatureOverview
 ms.prod: skype-for-business-itpro
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
 ROBOTS: NOINDEX, NOFOLLOW
 description: Strumento di pianificazione di Skype for Business Server
-ms.openlocfilehash: 90970dd3e82ffe401294307c09f356beca883c3b
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 6b90f29e37b64bfe2b1b808a23e11f66a8758760
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36196002"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41689831"
 ---
 # <a name="feature-overview-planning-tool"></a>Panoramica delle caratteristiche (strumento di pianificazione)
  
@@ -37,7 +37,7 @@ Per completare la definizione del sito centrale, è prima di tutto necessario sp
     
 ## <a name="ui-elements"></a>Elementi dell'interfaccia utente
 
-Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande presentate nella procedura guidata **** Guida introduttiva oppure, se la procedura guidata è stata ignorata, popolata automaticamente dallo strumento di pianificazione.
+Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande presentate nella procedura guidata Guida **introduttiva** oppure, se la procedura guidata è stata ignorata, popolata automaticamente dallo strumento di pianificazione.
   
 ### <a name="online-collaboration"></a>Collaborazione online
 
@@ -51,11 +51,11 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
     I servizi di conferenza audio/video (A/V) consentono conferenze audio e video in tempo reale.
     
-- **Servizi di conferenza telefonica con accesso esterno**
+- **Chiamate in conferenza**
     
     I servizi di conferenza telefonica con accesso esterno consentono agli utenti di partecipare a un/V da un telefono della rete PSTN. I servizi di conferenza telefonica con accesso esterno richiedono la distribuzione delle applicazioni del servizio di conferenza e dell'annuncio.
     
-- **Web Conferencing**
+- **Conferenze Web**
     
     I servizi di conferenza Web consentono agli utenti aziendali interni ed esterni al firewall di creare e partecipare a conferenze in tempo reale ospitate nei server interni.
     
@@ -116,7 +116,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
     La disponibilità elevata consente ai server di standby di supportare il failover.
     
-- **Ripristino di emergenza**
+- **Ripristino d'emergenza**
     
     Le misure per il ripristino di emergenza consentono di associare i pool Front-end situati in due centri dati.
     
@@ -168,7 +168,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
     L'applicazione di annunci per conferenze produce toni che segnalano quando gli utenti entrano o lasciano una conferenza, nonché le notifiche agli utenti del telefono quando sono attivati o disattivati.
     
-- **Controllo ammissione chiamata**
+- **Servizio Controllo di ammissione di chiamata**
     
     Il controllo di ammissione di chiamata (CAC), noto anche come gestione della larghezza di banda WAN, consente di evitare una qualità scadente dell'esperienza per gli utenti sulle reti congestionate determinando, in base alla larghezza di banda disponibile, se consentire e nuove sessioni di comunicazioni in tempo reale stabilito. 
     

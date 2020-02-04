@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployMainSchemaPrep
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 337aa234-c5f3-4468-a047-2023848e942c
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per preparare lo schema per i servizi di dominio Active Directory, eseguire il passaggio Prepara schema nella distribuzione guidata di Skype for Business Server. Fare clic su Esegui per avviare la preparazione dello schema.
-ms.openlocfilehash: e48ae4ff28cf0423d3a29ae9f7d637cb8a58297c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 4b0d24ff89badf1b026e6c57a4fbb75f2d46936f
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191021"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41691801"
 ---
 # <a name="prepare-schema"></a>Preparare uno schema
  

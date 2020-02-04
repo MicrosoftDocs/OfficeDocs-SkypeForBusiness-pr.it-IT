@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.MonArchSettingEdit
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 49096960-c442-4846-be8f-03c167acea41
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Le configurazioni di archiviazione consentono di controllare le opzioni di archiviazione per la propria distribuzione e includono la configurazione globale e, facoltativamente, una o più configurazioni sito e pool:'
-ms.openlocfilehash: 68d5de88fc56441989e8ffc9ceabfd3236179d1f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0c387095f40078246a1391af5968925a7b28caf2
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194239"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41691141"
 ---
 # <a name="archiving-configuration-create-new-or-edit-existing"></a>Configurazione archiviazione: crearne una nuova o modificarne una esistente
  
@@ -71,5 +71,5 @@ Per definire le impostazioni di una configurazione di archiviazione nuova o esis
     > [!NOTE]
     > Se si Abilita l'integrazione di Microsoft Exchange, l'eliminazione per gli utenti ospitati in Exchange e le cassette postali inserite sul blocco sul posto è controllata da Exchange. L'unica eccezione è per i file di conferenza, archiviati nella condivisione file di Lync Server. Questi file vengono eliminati dalla condivisione file solo dopo l'esportazione (il caricamento in Exchange), se si seleziona l'opzione per l'eliminazione dei dati dopo l'esportazione dei dati di archiviazione, o dopo il numero massimo di giorni specificato, se si specifica un numero massimo di giorni di conservazione. 
   
-Per informazioni dettagliate sulla funzionalità e le funzionalità di archiviazione, inclusa l'integrazione di Exchange, vedere [pianificare l'archiviazione in Skype for Business Server](../../../plan-your-deployment/archiving/archiving.md), [distribuire l'archiviazione per Skype for Business Server](../../../deploy/deploy-archiving/deploy-archiving.md)e [gestire l'archiviazione in Skype for business Server](../../../manage/archiving/archiving.md).
+Per informazioni dettagliate sulla funzionalità e le funzionalità di archiviazione, inclusa l'integrazione di Exchange, vedere [pianificare l'archiviazione in Skype for Business Server](../../../plan-your-deployment/archiving/archiving.md), [distribuire l'archiviazione per Skype for Business Server](../../../deploy/deploy-archiving/deploy-archiving.md)e [gestire l'archiviazione in Skype for Business Server](../../../manage/archiving/archiving.md).
 

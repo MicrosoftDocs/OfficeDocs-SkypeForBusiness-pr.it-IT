@@ -13,17 +13,18 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: None
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Legal
 hideEdit: true
 description: Come sospirare per un account di inoltro IP per il Canada.
-ms.openlocfilehash: a0d87822874f9a26f9778adbe9b9a9d6ca7edf5b
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 9dda43f5489b63918142aff4c2c111f4471b958b
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34304123"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41693111"
 ---
 # <a name="ip-relay-in-canada---sign-up"></a>IP Relay in Canada - registrazione
 
@@ -36,7 +37,7 @@ Per ottenere un account IP Relay configurato per il Canada, completare le inform
 |Numero di telefono dell'utente di Office 365: <br/>Esempio: + 1 XXX XXX XXXX) ||
 |Password (da 8 a 16 caratteri): ||
 |Indirizzo fisico più probabile <br/>in caso di emergenza:||
-|Nome & numero civico:||
+|Numero civico & nome:||
 |Appartamento/Suite:||
 |Città||
 |Provincia/stato:||

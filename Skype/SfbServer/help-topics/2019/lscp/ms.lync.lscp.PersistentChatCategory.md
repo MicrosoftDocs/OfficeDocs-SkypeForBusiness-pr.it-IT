@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.PersistentChatCategory
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6875d930-7502-4e47-bdb3-45eaeb065350
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile usare la sezione Categoria della pagina Chat persistente per configurare le categorie. Una categoria di chat room persistente è una struttura logica per l'organizzazione di chat room. Una categoria definisce un insieme predefinito di elenchi di controllo di accesso (ACL) per controllare gli utenti e i gruppi di utenti che possono creare o unirsi alle chat room. È possibile usare le categorie per applicare ethical wall tra diverse suddivisioni delle organizzazioni.
-ms.openlocfilehash: da436c152290645d99d872b56ff05283eb1e1ca9
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: f945b5f241097e126af8921bfb97400b4f68f079
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195995"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41690866"
 ---
 # <a name="persistent-chat-category"></a>Categoria Chat persistente
 

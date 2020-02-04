@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AvMcuScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 45e90203-2da3-44c3-beaf-02456fa970a1
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'In questo nodo vengono visualizzati il nome di dominio completo (FQDN) e i pool Front End associati di questo pool A/V Conferencing. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: cabc51c56237c853ffa99f9dd9f5926bb6f78569
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 6a0458f9537eafdce7e3aff25ad5e21dd15b7185
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194534"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41688789"
 ---
 # <a name="av-mcu-scope-node"></a>Nodo dell'ambito di MCU AV
  

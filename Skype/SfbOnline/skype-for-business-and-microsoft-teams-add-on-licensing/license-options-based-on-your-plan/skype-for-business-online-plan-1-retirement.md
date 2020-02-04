@@ -15,16 +15,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Licensing
 description: Il piano 1 di Skype for business online è stato ritirato. Tuttavia, se si ha un abbonamento corrente a Skype for business online Plan 1, questa modifica non verrà applicata immediatamente. Quando si è pronti per il passaggio a un nuovo piano, ora o durante il rinnovo, è possibile scegliere tra tre opzioni.
-ms.openlocfilehash: 6e3ede1a6c01fe48384faf92048e502c393a346a
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: d0d553946ddbde84ede48b715332e66aea75dac4
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793139"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692661"
 ---
 # <a name="skype-for-business-online-plan-1-retirement"></a>Ritiro di Skype for Business online (Piano 1) 
 

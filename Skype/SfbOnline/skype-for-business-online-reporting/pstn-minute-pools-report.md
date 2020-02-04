@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Reporting
 description: La nuova area report dell'interfaccia di amministrazione di Skype for business Mostra la chiamata e l'attività di conferenza audio nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile usare il report pool di minuti PSTN di Skype for business per visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
-ms.openlocfilehash: 8d7441f74600557ac93051daf206af3f1f1842f9
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: 2777b4f32b99a086110b75ca527eda29b0842b6e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793091"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692431"
 ---
 # <a name="pstn-minute-pools-report"></a>Report pool minuti PSTN
 
@@ -43,7 +44,7 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
 
 ![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
-- Accedere all'interfaccia di amministrazione > **** > interfaccia di amministrazione di**Skype for business** > per i**report** > di**pool di minuti PSTN**.
+-  > Accedere all'interfaccia di amministrazione > **interfaccia di amministrazione di****Skype for business** > per i**report** > di**pool di minuti PSTN**.
     
 > [!NOTE]
 > A seconda dell'abbonamento a Office 365, potresti non vedere tutti gli stessi dettagli visualizzati qui. 

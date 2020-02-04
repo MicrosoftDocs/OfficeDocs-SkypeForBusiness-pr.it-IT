@@ -14,7 +14,10 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
+- Setup
 - For O365M_ShareLync
 - ms.lync.lac.OrgExternalAccess
 - ms.lync.lac.skypefederation
@@ -23,16 +26,14 @@ f1_keywords:
 - O365M_ShareLync
 - O365P_ExternalCommDesc
 - O365P_ShareLync
-ms.custom:
-- Setup
 - LIL_Placement
 description: "Scopri come configurare Skype for business per consentire agli utenti di parlare con gli utenti di un'altra organizzazione o di consentire loro di accedere ai contatti esterni. "
-ms.openlocfilehash: 570861f532371dc8eca253956ffdd200e60f5990
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: bc0a59487d3cfd3e5721d60213d367c750349604
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35792685"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692941"
 ---
 # <a name="allow-users-to-contact-external-skype-for-business-users"></a>Permettere agli utenti di contattare utenti Skype for Business esterni
 
@@ -56,7 +57,7 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
   
 1. Accedere con l'account di amministratore di Office 365. 
     
-2. Nell'interfaccia di amministrazione accedere a teams di interfaccia di **Amministrazione** > ****.
+2. Nell'interfaccia di amministrazione accedere a**Teams**di interfaccia di **Amministrazione** > .
     
     ![Scegliere l'amministratore di teams.](../images/MS-Teams-Admin.png)
   
@@ -64,13 +65,13 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
  ![scegliere il portale legacy di SFB.](../images/SFBlegacy-size65.png)
  
 4. Nell'interfaccia di **amministrazione di Skype for business** scegli **** > **comunicazioni esterne**dell'organizzazione.
-5. Per configurare la comunicazione con un'azienda specifica o con utenti di un altro dominio, nella casella a discesa scegliere **solo per i domini**consentiti.
+5. Per configurare la comunicazione con un'azienda specifica o con utenti di un altro dominio, nella casella a discesa scegliere **solo per i domini consentiti**.
     
     In alternativa, se vuoi abilitare la comunicazione con tutti gli altri utenti del mondo che hanno aperto i criteri di Skype for business, scegli attivato **eccetto i domini bloccati**. Questa è l'impostazione predefinita.
     
-6. In **domini bloccati o**consentiti **+** scegliere e aggiungere il nome del dominio che si vuole consentire.
+6. In **domini bloccati o consentiti**scegliere **+** e aggiungere il nome del dominio che si vuole consentire.
     
-7. Verificare che l'amministratore dell'altra organizzazione effettui gli stessi passaggi nell'interfaccia di **amministrazione di Skype for business**. Nell'elenco dei **domini** consentiti, ad esempio, l'amministratore deve immettere il dominio per l'azienda.
+7. Verificare che l'amministratore dell'altra organizzazione effettui gli stessi passaggi nell'interfaccia di **amministrazione di Skype for business**. Nell'elenco dei **domini consentiti** , ad esempio, l'amministratore deve immettere il dominio per l'azienda.
     
 8. Se si usa Windows Firewall, Skype for Business apre automaticamente le porte necessarie.
     

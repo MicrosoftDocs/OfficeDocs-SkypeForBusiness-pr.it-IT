@@ -1,26 +1,26 @@
 ---
-title: Aggiungere IP Edge server NAT
+title: Aggiungere Edge Server NAT IP
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddEdgeServerNatIpPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: aa97fd0e-48b9-4a66-b55a-12291641c967
 ROBOTS: NOINDEX, NOFOLLOW
 description: L'indirizzo IP pubblico è l'indirizzo IP usato da NAT (Network Address Translation). L'indirizzo IP deve essere instradabile pubblicamente. Questa operazione è necessaria perché è stato selezionato l'indirizzo IP esterno di questo pool di bordi viene tradotto dall'opzione NAT nella pagina Seleziona caratteristiche della procedura guidata.
-ms.openlocfilehash: ee70d335c4c8819b7c8b9661315646c98816bd9c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f06d9b61d5ffad29d24e143cf3afbbc4501a67d4
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188303"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41689415"
 ---
-# <a name="add-edge-server-nat-ip"></a>Aggiungere IP Edge server NAT
+# <a name="add-edge-server-nat-ip"></a>Aggiungere Edge Server NAT IP
 
 L'indirizzo IP pubblico è l'indirizzo IP usato da NAT (Network Address Translation). L'indirizzo IP deve essere instradabile pubblicamente. Questa operazione è necessaria perché è stato selezionato **l'indirizzo IP esterno di questo pool di bordi viene tradotto dall'opzione NAT** nella pagina **Seleziona caratteristiche** della procedura guidata.
 

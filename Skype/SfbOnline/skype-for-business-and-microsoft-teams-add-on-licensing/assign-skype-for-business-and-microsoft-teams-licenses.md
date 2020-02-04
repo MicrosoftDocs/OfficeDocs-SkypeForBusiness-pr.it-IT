@@ -16,23 +16,24 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Licensing
 description: 'Impara come assegnare le licenze di Skype for Business per Sistema telefonico, Audioconferenza, Piani di chiamata e Credito per la comunicazione. '
-ms.openlocfilehash: 997cffce5b98ed992371a0f43e701b2efc1ae128
-ms.sourcegitcommit: 6d5f09acdcdc8d5a36f7ac785349209e7496f17d
+ms.openlocfilehash: 9aa423683160c064b13be140c4226b2327dd9b69
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34768776"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692521"
 ---
 # <a name="assign-skype-for-business-licenses"></a>Assegnare licenze di Skype for Business
 
 This article gives you tips about assigning licenses to your users for features like Audio Conferencing, Phone System, and Calling Plans. It also provides scripts for assigning licenses in bulk.
 
 > [!IMPORTANT]
-> Vedere [licenze per i componenti aggiuntivi Skype for business](skype-for-business-and-microsoft-teams-add-on-licensing.md) per informazioni sulle licenze che è necessario acquistare e su **come acquistarle** , a seconda del piano di Office 365, in modo che gli utenti ottengano servizi di audioconferenza, numeri verdi e la possibilità di chiamare i numeri di telefono all'esterno la tua azienda.
+> Vedere [licenze per i componenti aggiuntivi Skype for business](skype-for-business-and-microsoft-teams-add-on-licensing.md) per informazioni sulle licenze che è necessario acquistare e su **come acquistarle** , a seconda del piano di Office 365, in modo che gli utenti ottengano servizi di audioconferenza, numeri verdi e la possibilità di chiamare i numeri di telefono all'esterno della propria azienda.
 
 
 ## <a name="phone-system-and-calling-plans-tips-and-scripts-for-assigning-licenses"></a>Sistema telefonico e Piani per chiamate: suggerimenti e script per l'assegnazione delle licenze
@@ -110,7 +111,7 @@ I passaggi sono uguali a quelli seguiti per l'assegnazione di una licenza di Off
 |Piano per chiamate nazionali (3000 min US/1200 min EU plans)  <br/> |MCOPSTN1  <br/> |
 |Piano per chiamate nazionali (piano per le chiamate di 120 min)  <br/> |MCOPSTN5  <br/> |
 |Piano per chiamate nazionali (piano per le chiamate di 240 min)  <br/> |MCOPSTN6  <br/> |
-|Crediti comunicazioni  <br/> |MCOPSTNC  <br/> |
+|Credito per la comunicazione  <br/> |MCOPSTNC  <br/> |
 
 ## <a name="audio-conferencing-tips-and-scripts-for-assigning-licenses"></a>Servizi di audioconferenza: suggerimenti e script per l'assegnazione delle licenze
 
@@ -203,7 +204,7 @@ Guarda lo script di esempio per l'assegnazione delle licenze di **Audioconferenz
   
 [Configurare i piani per chiamate](/microsoftteams/set-up-calling-plans)
   
-[Aggiungere fondi e gestire i crediti per la comunicazione](/microsoftteams/add-funds-and-manage-communications-credits)
+[Aggiungere fondi e gestire Credito per la comunicazione](/microsoftteams/add-funds-and-manage-communications-credits)
   
   
  

@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Calling Plans
 description: 'Informazioni sui problemi noti relativi al piano chiamante per Office 365 (chiamate PSTN) e sulle operazioni che è possibile eseguire. '
-ms.openlocfilehash: 9a6f97a93aa6c7b4e847ba1cb3280a21c473db0c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3441969133c8f67b63b620aff25545b89085858f
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34299525"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692311"
 ---
 # <a name="calling-plans-known-issues"></a>Problemi noti relativi ai piani di chiamata
 
@@ -33,7 +34,7 @@ I piani per le chiamate in Office 365 sono una nuova funzionalità trovata in Sk
 
 |**Problema noto**|**Commenti**|
 |:-----|:-----|
-|La transizione dalle licenze dell'anteprima tecnica alle licenze di produzione per i piani di chiamata non aggiorna automaticamente la licenza.  <br/> |Acquistare prima le nuove licenze in modo che siano pronte per essere assegnate agli utenti. Rimuovere la licenza promo (Tech Preview) da un utente e quindi assegnare **immediatamente** il nuovo piano per le **chiamate nazionali** e/o le licenze del **piano per chiamate nazionali e internazionali** all'utente. <br/> Se si stanno rimuovendo e aggiungendo licenze per più utenti, è estremamente importante rimuovere le licenze da tutti gli utenti che usano Windows PowerShell e quindi assegnare **immediatamente** le licenze per tutti gli utenti che usano anche Windows PowerShell. Questa operazione garantirà che il servizio non presenti interruzioni durante la gestione di grandi volumi di assegnazioni di licenze utente. Per gli script di PowerShell di esempio, Vedi [assegnare le licenze di Skype for business e Microsoft teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).  <br/> **Nota:** Se si usa la connettività PSTN locale per gli utenti ibridi, è sufficiente ** assegnare una licenza per il **sistema telefonico** . **Non** devi anche assegnare un piano per chiamate vocali. Tuttavia, se si abilitano i piani per le chiamate in Office 365 per gli utenti di Office 365, è comunque necessario assegnare un piano per le chiamate **nazionali** o una licenza per un **piano per chiamate nazionali e internazionali** per gli utenti. Vedi [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).
+|La transizione dalle licenze dell'anteprima tecnica alle licenze di produzione per i piani di chiamata non aggiorna automaticamente la licenza.  <br/> |Acquistare prima le nuove licenze in modo che siano pronte per essere assegnate agli utenti. Rimuovere la licenza promo (Tech Preview) da un utente e quindi assegnare **immediatamente** il nuovo piano per le **chiamate nazionali** e/o le licenze del **piano per chiamate nazionali e internazionali** all'utente. <br/> Se si stanno rimuovendo e aggiungendo licenze per più utenti, è estremamente importante rimuovere le licenze da tutti gli utenti che usano Windows PowerShell e quindi assegnare **immediatamente** le licenze per tutti gli utenti che usano anche Windows PowerShell. Questa operazione garantirà che il servizio non presenti interruzioni durante la gestione di grandi volumi di assegnazioni di licenze utente. Per gli script di PowerShell di esempio, Vedi [assegnare le licenze di Skype for business e Microsoft teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).  <br/> **Nota:** Se si usa la connettività PSTN locale per gli utenti ibridi *, è sufficiente* assegnare una licenza per il **sistema telefonico** . **Non** devi anche assegnare un piano per chiamate vocali. Tuttavia, se si abilitano i piani per le chiamate in Office 365 per gli utenti di Office 365, è comunque necessario assegnare un piano per le chiamate **nazionali** o una licenza per un **piano per chiamate nazionali e internazionali** per gli utenti. Vedi [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md).
 
 > [!NOTE]
 > Per ottenere più numeri di telefono, [contattare il supporto per i prodotti business-Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)         |

@@ -15,16 +15,17 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Optimization
 description: "Informazioni sull'uso di Azure ExpressRoute per avere una rete con requisiti di larghezza di banda e qualità della funzionalità di servizio per un'esperienza utente di business class. "
-ms.openlocfilehash: e42cf42caafbb5ecd43b3660608a23d20cf8814e
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: f638a154e379d065d355010160bf8dff0ecc1b78
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35221248"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41693081"
 ---
 # <a name="expressroute-and-qos-in-skype-for-business-online"></a>ExpressRoute e QoS in Skype for Business Online
 
@@ -91,7 +92,7 @@ Per offrire servizi in tempo reale coerenti e di alta qualità per Dewey Law LLC
     
 Ora che le nozioni di base sono coperte, per offrire servizi vocali di qualità aziendale per Dewey Law LLC., è consigliabile usare il servizio IP MPLS (Multi-Protocol Label Switching) da un partner di servizio di rete che si connette al servizio Azure ExpressRoute. MPLS offre un servizio IP con garanzie sulle prestazioni per il ritardo, il jitter e la perdita di pacchetti. Tuttavia, se MPLS non è disponibile, è possibile usare Ethernet connessa a uno dei nostri partner di scambio dati di ExpressRoute.
   
-I provider MPLS offrono diverse classi di livelli di servizio, ma ognuno usa termini diversi per identificarli. Sarà necessario collaborare in stretta collaborazione con il provider per verificare che siano in grado di comprendere i dati di input nella calcolatrice della [larghezza di banda di Lync 2010 e 2013](https://go.microsoft.com/fwlink/?LinkID=690282) e le opzioni disponibili e consigliate per i diversi carichi di lavoro in tempo reale di Office 365 applicazioni.
+I provider MPLS offrono diverse classi di livelli di servizio, ma ognuno usa termini diversi per identificarli. Sarà necessario collaborare in stretta collaborazione con il provider per verificare che siano in grado di comprendere i dati di input nella [calcolatrice della larghezza di banda di Lync 2010 e 2013](https://go.microsoft.com/fwlink/?LinkID=690282) e le opzioni disponibili e sono consigliate per le diverse applicazioni di workload in tempo reale di Office 365.
   
 Sono disponibili due opzioni per il mapping dei dati delle applicazioni Skype for business alle classi di servizio MPLS appropriate:
   
@@ -225,7 +226,7 @@ Il servizio ExpressRoute di Microsoft offre una connessione dedicata a Azure clo
   
 Lo scopo di questa sezione è aiutare a comprendere le sfide quando si supporta il traffico in tempo reale in una rete IP e la configurazione e il supporto di una distribuzione ExpressRoute efficace dei workload di Office 365 in tempo reale con Microsoft Exchange ExpressRoute Provider o partner del provider di servizi di rete.
   
-La QoS viene accettata dalle reti esclusivamente su circuiti di rete ExpressRoute e viene usata all'interno della rete Microsoft per il traffico Skype for business. Oggi parti di alcune connessioni in uscita da Microsoft presentano valori DSCP mancanti per Skype for business. Fino a quando il traffico in uscita è completamente contrassegnato con i valori DSCP, si consiglia di seguire le linee guida per l'aggiunta di contrassegni QoS al traffico al limite di rete, come descritto in **implementazione QoS con l'elenco di controllo di accesso di rete (ACL)** di questa sezione articolo.
+La QoS viene accettata dalle reti esclusivamente su circuiti di rete ExpressRoute e viene usata all'interno della rete Microsoft per il traffico Skype for business. Oggi parti di alcune connessioni in uscita da Microsoft presentano valori DSCP mancanti per Skype for business. Fino a quando il traffico in uscita è completamente contrassegnato con i valori DSCP, si consiglia di seguire le linee guida per l'aggiunta di contrassegni QoS al traffico al limite di rete, come descritto nella sezione **implementazione QoS con l'elenco di controllo di accesso di rete (ACL)** di questo articolo.
   
 ### <a name="the-real-time-problem"></a>Problema in tempo reale
 
@@ -391,7 +392,7 @@ Quando viene inviato un pacchetto nella rete MPLS, il router Edge del provider d
   
 Oltre a semplificare il processo di inoltro, l'altro vantaggio disponibile in MPLS consiste nel fatto che il sistema di gestione della rete saprà quali connessioni vengono trasportate su ogni collegamento della rete. Controllando il modo in cui il traffico viene instradato attraverso la rete, l'operatore può garantire il QoS che ogni percorso fornirà. A differenza delle prestazioni ottimali degli IP tradizionali o di base, gli operatori MPLS possono ottenere un servizio IP con prestazioni prevedibili. Questo LSP rende anche i MPLS più sicuri dei servizi Internet tradizionali. Quindi, con il servizio IP di base possiamo sperare che la rete si svolga abbastanza bene per garantire una buona qualità della voce e usare tecniche come FEC e la codifica vocale più resiliente per migliorare le probabilità, ma usando MPLS, possiamo essere sicuri.
   
-I provider MPLS offrono diverse classi di gradienti di servizio che usano purtroppo termini diversi per identificarle. Sarà necessario collaborare in stretta collaborazione con il provider per verificare che siano in contatto con gli output della calcolatrice della [larghezza di banda Lync 2010 e 2013](https://go.microsoft.com/fwlink/?LinkID=690282) e le opzioni consigliate per le diverse applicazioni di carichi di lavoro in tempo reale di Office 365.
+I provider MPLS offrono diverse classi di gradienti di servizio che usano purtroppo termini diversi per identificarle. Sarà necessario collaborare in stretta collaborazione con il provider per verificare che siano in contatto con gli output della [calcolatrice della larghezza di banda Lync 2010 e 2013](https://go.microsoft.com/fwlink/?LinkID=690282) e le opzioni consigliate per le diverse applicazioni di carichi di lavoro in tempo reale di Office 365.
   
 ## <a name="conclusion"></a>Conclusione
 

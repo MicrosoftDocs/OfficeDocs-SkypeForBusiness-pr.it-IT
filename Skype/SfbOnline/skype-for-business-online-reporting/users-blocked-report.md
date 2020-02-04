@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Reporting
 description: "Questo report, insieme ad altri report di Skype for business, fornisce informazioni dettagliate sull'attività, incluso l'utilizzo PSTN nell'organizzazione. "
-ms.openlocfilehash: 95269dc08806ab09a44f47153748d45a63fedbc2
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: d5fa69d096f5dc5f2af6f8b5a3c04a3155b8cd9e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793015"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692331"
 ---
 # <a name="users-blocked-report"></a>Report utenti bloccati
 
@@ -38,7 +39,7 @@ Il nuovo dashboard **report** di Skype for business Mostra la panoramica delle a
 
 ![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
 
-- Accedere all'interfaccia di amministrazione > **** > interfaccia di amministrazione di**Skype for business** > per i**report** > **degli utenti bloccati**.
+-  > Accedere all'interfaccia di amministrazione > **interfaccia di amministrazione di****Skype for business** > per i**report** > **degli utenti bloccati**.
     
 ## <a name="interpret-the-skype-for-business-users-blocked-report"></a>Interpretare il report degli utenti di Skype for business bloccati
 

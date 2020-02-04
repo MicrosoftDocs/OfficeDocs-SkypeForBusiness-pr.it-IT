@@ -1,26 +1,26 @@
 ---
-title: Richiesta di certificato (nomi alternativi oggetto)
+title: Richiesta di certificato (nomi soggetto alternativi)
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployCertRequestSanDesc
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3485f663-e114-43d7-8fe3-fcc4e5ae71ce
 ROBOTS: NOINDEX, NOFOLLOW
 description: Nella pagina nome oggetto/nomi alternativi oggetto viene presentato un riepilogo del nome dell'oggetto e di tutti i nomi alternativi oggetto che popolano il certificato. I nomi presentati per nome soggetto e nomi alternativi oggetto vengono raccolti dal documento di definizione, come è stato creato quando è stata definita la distribuzione in Generatore di topologie.
-ms.openlocfilehash: 43bc61a0a67a00c681b9d8a56331340c7d65369d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e731d0cebf405150a1bdbb2674d4f411193b83d1
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195064"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41691991"
 ---
-# <a name="certificate-request-subject-alternate-names"></a>Richiesta di certificato (nomi alternativi oggetto)
+# <a name="certificate-request-subject-alternate-names"></a>Richiesta di certificato (nomi soggetto alternativi)
  
 Nella pagina **nome oggetto/nomi alternativi oggetto** viene presentato un riepilogo del nome dell'oggetto e di tutti i nomi alternativi oggetto che popolano il certificato. I nomi presentati per nome soggetto e nomi alternativi oggetto vengono raccolti dal documento di definizione, come è stato creato quando è stata definita la distribuzione in Generatore di topologie.
   

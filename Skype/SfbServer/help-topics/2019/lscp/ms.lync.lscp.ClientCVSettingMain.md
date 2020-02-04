@@ -1,26 +1,26 @@
 ---
-title: Configurazione della versione client
+title: Configurazione delle versioni client
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.ClientCVSettingMain
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: cb17314e-b89e-4821-8855-12f8fd2edc9b
 ROBOTS: NOINDEX, NOFOLLOW
 description: Oltre a specificare la versione dei client che si vuole supportare nell'ambiente, è anche possibile specificare un'azione predefinita per i client che non hanno già un criterio di versione definito. In questo modo puoi limitare le versioni client usate nell'ambiente, che possono aiutarti a controllare i costi associati al supporto di più versioni client.
-ms.openlocfilehash: 8234d1463c207361f3336a695fea1110a598e2c2
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d19eb77fd86020f01785ef77bd6651a83c748b55
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195186"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41691571"
 ---
-# <a name="client-version-configuration"></a>Configurazione della versione client
+# <a name="client-version-configuration"></a>Configurazione delle versioni client
 
 Oltre a specificare la versione dei client che si vuole supportare nell'ambiente, è anche possibile specificare un'azione predefinita per i client che non hanno già un criterio di versione definito. In questo modo puoi limitare le versioni client usate nell'ambiente, che possono aiutarti a controllare i costi associati al supporto di più versioni client.
 
@@ -53,5 +53,5 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
 - **Aggiornare** È possibile aggiornare l'elenco di configurazione della versione client per verificare lo stato delle opzioni di tutte le configurazioni della versione client.
 
-Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere interoperabilità [client](https://technet.microsoft.com/library/0f126571-91a2-45d5-855c-1e4ddb45fc04.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle configurazioni delle versioni client, vedere [Modify the Default Action for Clients Not Explicitly Supported or Restricted](https://technet.microsoft.com/library/548dd0f5-62fe-4c3f-8952-2b9fd4c5fff3.aspx) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [interoperabilità client](https://technet.microsoft.com/library/0f126571-91a2-45d5-855c-1e4ddb45fc04.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle configurazioni delle versioni client, vedere [Modify the Default Action for Clients Not Explicitly Supported or Restricted](https://technet.microsoft.com/library/548dd0f5-62fe-4c3f-8952-2b9fd4c5fff3.aspx) nella documentazione relativa alle operazioni.
 

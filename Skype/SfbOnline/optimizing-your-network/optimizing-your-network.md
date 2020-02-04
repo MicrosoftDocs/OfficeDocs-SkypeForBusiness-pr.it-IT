@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Optimization
 description: I seguenti requisiti sono molto importanti per garantire il corretto funzionamento e il successo a lungo termine di tutte le funzioni di Skype for Business online che stai configurando per l'organizzazione. Se sei tra le persone che hanno molta dimestichezza con gli aspetti tecnici, questo documento è per te. Ma ci sono altri che non sono altrettanto a proprio agio. Se hai bisogno di aiuto per l'impostazione di Skype for Business online, leggi questo documento per prendere coscienza degli aspetti che dovrai considerare. Vi insegnerà anche che linguaggio usare quando interagite con Microsoft FastTrack Center, i vostri team di account e di servizi Microsoft o con i partner Microsoft per capire come è possibile soddisfare questi requisiti.
-ms.openlocfilehash: f81b2bebded33bf65ff391909dea4e6f638390fb
-ms.sourcegitcommit: 30995da65ff6a9b33534c3818833cf0ae1952ab9
+ms.openlocfilehash: f4721ddc7db936e0351f78ba6bfc7033b8cd10d0
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34344551"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41693061"
 ---
 # <a name="optimizing-your-network-for-skype-for-business-online"></a>Ottimizzare la rete per Skype for Business online
 
@@ -51,7 +52,7 @@ Con Skype for Business puoi:
 
 La qualità della connettività di rete end-to-end influisce notevolmente sulla qualità dei supporti multimediali in tempo reale (condivisione di audio, video e applicazioni) su IP. Per una qualità ottimale dei supporti multimediali di Skype for Business Online, è importante assicurarsi che vi sia una connessione di alta qualità tra la rete aziendale e Skype for Business Online. Il modo migliore per offrire tale qualità è configurare la propria rete interna e la connettività cloud in base alla capacità della rete di contenere picchi di traffico per Skype for Business Online su tutte le connessioni.
   
-Per collaborare con un [partner Microsoft](https://partnercenter.microsoft.com/en-us/pcv/search), è possibile connettere una vasta gamma di applicazioni di Office 365, tra cui Skype for business online nel cloud alla rete e le funzionalità di comunicazione vocale e video in tempo reale per Skype for business richiedono la rete i servizi devono essere configurati in modo specifico per supportare questi carichi di lavoro in tempo reale di Office 365. Ciò comprende una rete che abbia una larghezza di banda sufficiente per supportare il volume di traffico richiesto e che sia in grado di supportare la qualità del servizio (QoS, Quality of Service) per offrire agli utenti un'esperienza di livello aziendale.
+Per collaborare con un [partner Microsoft](https://partnercenter.microsoft.com/en-us/pcv/search), è possibile connettere una vasta gamma di applicazioni di Office 365, tra cui Skype for business online nel cloud alla rete e le funzionalità di comunicazione vocale e video in tempo reale per Skype for business richiedono servizi di rete devono essere configurati in modo specifico per supportare i carichi di lavoro di Office 365 in tempo reale. Ciò comprende una rete che abbia una larghezza di banda sufficiente per supportare il volume di traffico richiesto e che sia in grado di supportare la qualità del servizio (QoS, Quality of Service) per offrire agli utenti un'esperienza di livello aziendale.
   
 Oltre alle informazioni fornite qui, ci sono altre risorse che possono aiutare a pianificare e implementare i servizi e le funzionalità di Skype for Business online e garantire che i servizi di rete soddisfino tali requisiti:
   
@@ -139,7 +140,7 @@ Consulta quanto segue per ulteriori informazioni sui dispositivi supportati e ce
     
 L'ambiente e l'area circostante il punto in cui gli utenti si incontrano e usano dispositivi audio e video rappresentano un altro fattore importante che influisce sulla qualità. Gli utenti che chiamano da ambienti rumorosi dovranno fare i conti con l'eco e suoni soffocati e poco chiari. Gli utenti in ambienti bui o di scarsa illuminazione non potranno produrre immagini chiare e luminose. In una sala riunioni, la posizione del microfono e del dispositivo video hanno un impatto diretto sulla qualità del suono e dell'immagine che riceveranno i partecipanti.
   
-Per ottenere un quadro più chiaro dell'esperienza audio e video di un utente, usa il**** > **dispositivo audio** o il dispositivo **video** di Skype for business app **Tools** > per modificare il dispositivo in uso e personalizzare le impostazioni. È anche possibile controllare la qualità audio di una chiamata facendo clic su **Controlla qualità chiamata**. Se gli utenti fanno clic su **Controllo qualità chiamata**, possono segnalare li livello di qualità e i problemi riscontrati con una chiamata di prova.
+Per ottenere un quadro più chiaro dell'**esperienza audio e** > video di un utente, usa il**dispositivo audio** o il dispositivo **video** di Skype for business app **Tools** > per modificare il dispositivo in uso e personalizzare le impostazioni. È anche possibile controllare la qualità audio di una chiamata facendo clic su **Controlla qualità chiamata**. Se gli utenti fanno clic su **Controllo qualità chiamata**, possono segnalare li livello di qualità e i problemi riscontrati con una chiamata di prova.
   
 ![Testing audio in the Skype for Business client.](../images/1730a71e-a09d-4702-8eb6-ef1346a091fa.png)
   

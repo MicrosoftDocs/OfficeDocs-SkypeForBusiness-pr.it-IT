@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Reporting
 description: '[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto.'
-ms.openlocfilehash: faee3d0a4f2228ddc32121bf85cc2f6b3018f2cc
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: 58f3c42c0a0188d4a2858e6b6b0a5bed93dfc72d
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793063"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692351"
 ---
 # <a name="session-details-report"></a>Report dettagli della sessione.
 
@@ -45,7 +46,7 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
 3. Nell'elenco in **selezionare un report**fare clic su **Dettagli sessione di Skype for business**.
     
     > [!TIP]
-    > Se questo report non è visualizzato, accedere ai**** > **Dettagli della sessione**nell'interfaccia di amministrazione > di **Skype for business**. 
+    > Se > **questo report non** > è visualizzato, accedere ai dettagli della**sessione**nell'interfaccia di **amministrazione di Skype for business**. 
   
     > [!IMPORTANT]
     > In base all'abbonamento a Office 365 di cui si dispone, alcuni dei prodotti e report illustrati in questo articolo potrebbero non essere disponibili. 

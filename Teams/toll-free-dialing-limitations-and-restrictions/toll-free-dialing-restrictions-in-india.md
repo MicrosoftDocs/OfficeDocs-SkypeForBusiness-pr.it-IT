@@ -18,16 +18,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: bb37794cbf034c05c6e0bd856fbd42695ee508b5
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 492d484074687c1aff3cb59716091a4502cbba6a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570822"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41693591"
 ---
 # <a name="toll-free-dialing-restrictions-in-india"></a>Restrizioni di chiamata gratuita in India
 
@@ -43,10 +44,10 @@ ms.locfileid: "37570822"
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
 |Disponibilità di linee cablate/fisse  <br/> |Parziale. Vedere i commenti.  <br/> |
 |Disponibilità rete mobile  <br/> |Parziale. Vedere i commenti.  <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |Accesso disponibile dalle reti seguenti: Loop Mobile, BSNL-risolto (tutte le regioni, ma Bhopal), Vodafone, IDEA/Spezia (tutte le regioni, ma il Punjab Spice), MTS India/Mara (risolto), MTNL &amp; -Fixed Mobile, Reliance (tutte le regioni, ma Ahmedabad, Bhopal, Bhuneswer , Jaipur, Lucknow, Meerut), TTML &amp; ttsl (fixed &amp; postpaid), Tata Docomo, HFCL Infotel/ping mobile, S-Tel Mobile, Uninor, Videocon mobile, BSNL-mobile, Bartali/Airtel Network.  <br/> L'accesso non è disponibile nelle reti seguenti: TTSL (prepagato), Etisalat DB Telecom e Jio.  <br/> |
+|Commenti, limitazioni e problemi di accesso  <br/> |Accesso disponibile dalle reti seguenti: Loop Mobile, BSNL-risolto (tutte le regioni, ma Bhopal), Vodafone, IDEA/Spezia (tutte le regioni ma la spezia del Punjab) MTS India/Lilli (risolto), MTNL- &amp; Fixed Mobile, Reliance (tutte le regioni, ma Ahmedabad, Bhopal, Bhuneswer, Jaipur, Lucknow, Meerut &amp; ), TTML &amp; ttsl (fixed postpaid), Tata Docomo, HFCL Infotel/ping mobile, S-Tel Mobile, Uninor, Videocon mobile, BSNL-mobile, bartari/Airtel Network.  <br/> L'accesso non è disponibile nelle reti seguenti: TTSL (prepagato), Etisalat DB Telecom e Jio.  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
-[Limitazioni e restrizioni di chiamata senza pedaggio](../toll-free-dialing-limitations-and-restrictions.md)
+[Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 

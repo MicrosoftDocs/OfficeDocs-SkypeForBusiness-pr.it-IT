@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Setup
 description: 'Learn to save time, support calls and increase satisfaction by setting up test accounts and computers, and testing dial-in conferencing, online features such as person-to-person calls, conferencing, and sign in and out. '
-ms.openlocfilehash: b7bce3818de3ae2a096330b11a7bb779bb62ec10
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b8ebf8f82ad4706282d9feca5cdf21f27df90adb
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34285075"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692821"
 ---
 # <a name="test-your-skype-for-business-online-installation"></a>Testare l'installazione di Skype for Business online
 
@@ -50,7 +51,7 @@ Ecco quello che occorre:
 ## <a name="set-up-test-accounts"></a>Configurare gli account di prova
 <a name="__toc328126910"> </a>
 
-1. Passare a **** > **utenti e gruppi**di**Office 365** > e quindi selezionare Aggiungi![](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) e immettere le informazioni richieste.
+1. Passare a **** > **utenti e gruppi**di![**Office 365** > e quindi selezionare Aggiungi](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) e immettere le informazioni richieste.
 
 2. Al passaggio 4 (Posta elettronica) immettere il proprio indirizzo di posta elettronica. Verrà creato un record che contiene il nome utente e la password per il nuovo utente.
 

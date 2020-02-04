@@ -14,16 +14,17 @@ audience: Admin
 appliesto:
 - Skype for Business
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Setup
 description: I criteri client aiutano a determinare le funzioni di Skype for Business online messe a disposizione degli utenti; per esempio, si potrebbe dare ad alcuni utenti il diritto di trasferire i file negando lo stesso diritto ad altri utenti.
-ms.openlocfilehash: d43094e8fbdbb25276b617f005cd71ce859d1362
-ms.sourcegitcommit: afc7edd03f4baa1d75f9642d4dbce767fec69b00
+ms.openlocfilehash: 0d92e9d4aab477cdcb010b4840d43a622f28b8cf
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40962564"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41693001"
 ---
 # <a name="set-up-client-policies-for-your-organization"></a>Impostazione dei criteri client per la propria organizzazione
 

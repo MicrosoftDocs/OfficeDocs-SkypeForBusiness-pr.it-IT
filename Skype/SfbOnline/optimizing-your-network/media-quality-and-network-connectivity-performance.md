@@ -15,16 +15,17 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Optimization
 description: Questo argomento definisce il set di requisiti di prestazioni di rete per i servizi Skype for business online e come si può scegliere di usare Internet o ExpressRoute per la connettività tra la rete e Skype for business online in base alla valutazione della rete connettività. Se si è deciso di distribuire Azure ExpressRoute per la connettività dedicata a Office 365, questo documento fornisce anche indicazioni su come pianificare le connessioni di ExpressRoute in diversi scenari di distribuzione di Skype for business online.
-ms.openlocfilehash: de093cee8981a50e376a29eda3a38bae396e5ba3
-ms.sourcegitcommit: 0119af282f53f49c4ab6e01c3319d01bc6fdad2c
+ms.openlocfilehash: 2d9192f4dfb27de97527ff584c0ab0a204e20cca
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41111500"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41693071"
 ---
 # <a name="media-quality-and-network-connectivity-performance-in-skype-for-business-online"></a>Qualità multimediale e prestazioni della connettività di rete in Skype for Business online
 

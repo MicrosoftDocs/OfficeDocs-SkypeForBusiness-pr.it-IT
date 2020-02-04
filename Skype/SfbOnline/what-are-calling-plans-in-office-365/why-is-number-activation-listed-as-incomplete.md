@@ -16,21 +16,21 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1keywords:
+f1.keywords:
 - ms.lync.lac.NumberActivationStateIncomplete
 ms.custom:
 - Calling Plans
 description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: 48a0d06241af18b1d36d9bc23293f2a2cd3de004
-ms.sourcegitcommit: 4c041e8a7c39bd6517605ed7fc9aab18cf466596
+ms.openlocfilehash: 0fd510ecd3d465407668f47dbc233d51b35a5735
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35793385"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692271"
 ---
 # <a name="why-is-number-activation-listed-as-incomplete"></a>Perché l'attivazione del numero è elencata come incompleta?
 
-La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Se per qualche motivo un numero di telefono non è attivato ed è **** elencato come incompleto a causa della convalida degli indirizzi, è necessario creare e inviare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
+La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Se per qualche motivo un numero di telefono non è attivato ed è elencato come **incompleto** a causa della convalida degli indirizzi, è necessario creare e inviare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
   
 ## <a name="for-organizations-150-or-less-follow-these-steps"></a>Per le organizzazioni da 150 persone o meno segui questi passaggi
 1. Nell'interfaccia di amministrazione scegliere **serve assistenza**?

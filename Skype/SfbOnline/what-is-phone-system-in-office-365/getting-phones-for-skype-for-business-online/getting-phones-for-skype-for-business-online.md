@@ -17,16 +17,17 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords: None
+f1.keywords:
+- NOCSH
 ms.custom:
 - Phone System
 description: 'Informazioni su quali telefoni di Polycom, HP e Mitel utilizzano Skype for Business e sulle licenze necessarie. '
-ms.openlocfilehash: ac3b262a9888acb95eef4e2e8822abc3441617c4
-ms.sourcegitcommit: 2f12e0d4dc2ef8e848a63bf3a9c63e07e4439cf5
+ms.openlocfilehash: e852d54a1189ed8de7561e64809b1fc782fa644a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35587935"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692251"
 ---
 # <a name="getting-phones-for-skype-for-business-online"></a>Ottenere telefoni per Skype for Business online
 
@@ -91,32 +92,32 @@ Per le funzionalità e le funzionalità del dispositivo completo, controllare le
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Funzionalità** <br/> |**Polycom 3PIP** <br/> |**Yealink 3PIP** <br/> |**AudioCodes 3PIP** <br/> |**LPE** <br/> |
-|Accedi con le credenziali utente  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |No  <br/> |No  <br/> |
-|Accesso tramite PC (accoppiamento), solo per Windows  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
-|Accedi con (accesso Web)  <br/>  <br/> **Nota:** Verificare la matrice di supporto nella Guida alla distribuzione.           |Sì  <br/> |Supporto per più paesi  <br/> |No  <br/> |No  <br/> |
-|Partecipa a una riunione con un singolo clic  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
-|Clic per comporre (accoppiamento)  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
-|Controlli per le riunioni  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
-|Casella vocale visuale  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
-|Blocco telefono  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Sì  <br/> |
-|Aggiornamento del dispositivo  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
-|Provisioning in banda  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
-|QoE  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Invio registro  <br/> <br/> **Nota:** Attualmente tutti i registri vengono caricati solo nel team di supporto Microsoft; l'accesso dei clienti ai registri telefonici non è ancora disponibile.           |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
-|Autenticazione moderna  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Numero di emergenza multiplo  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |Pagina della convocazione di riunione con numeri di telefono di accesso esterno predefiniti  <br/> |Sì  <br/> |
-|Integrazione calendario Exchange*  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> <br/> **Nota:** Richiede il tethering del PC           |
-|Integrazioni presenza  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
-|Elenco aziendale  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Sì  <br/> |
-|Delega  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |No  <br/> |No  <br/> |
-|Integrazione immagine contatto  <br/> |No  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |Sì  <br/> |
+|Accedi con le credenziali utente  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Accesso tramite PC (accoppiamento), solo per Windows  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Accedi con (accesso Web)  <br/>  <br/> **Nota:** Verificare la matrice di supporto nella Guida alla distribuzione.           |Sì  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Partecipa a una riunione con un singolo clic  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Clic per comporre (accoppiamento)  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Controlli per le riunioni  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Casella vocale visuale  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Blocco telefono  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Aggiornamento del dispositivo  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
+|Provisioning in banda  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
+|QoE  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Invio registro  <br/> <br/> **Nota:** Attualmente tutti i registri vengono caricati solo nel team di supporto Microsoft; l'accesso dei clienti ai registri telefonici non è ancora disponibile.           |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
+|Autenticazione moderna  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Numero di emergenza multiplo  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |No  <br/> |Sì  <br/> |
+|Integrazione calendario Exchange*  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> <br/> **Nota:** Richiede il tethering del PC           |
+|Integrazioni presenza  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
+|Elenco aziendale  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Delega  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
+|Integrazione immagine contatto  <br/> |No  <br/> |Sì  <br/> |No  <br/> |Sì  <br/> |
 ||||||
 
      
 > [!NOTE]
 > CX 600 oppure ogni altro telefono Aries non supporta l'autenticazione a più fattori (MFA). Se si forza l'MFA, questi dispositivi non saranno in grado di effettuare l'accesso. Questi dispositivi devono utilizzare solo l'Org ID come forma di autenticazione.
  
-## <a name="what-else-should-you-know"></a>Quali altre informazioni devi conoscere?
+## <a name="what-else-should-you-know"></a>Informazioni aggiuntive
 Per le istruzioni dettagliate di configurazione, vedi la sezione [Distribuzione dei telefoni per Skype for Business Online](deploying-skype-for-business-online-phones.md).
 
 ## <a name="related-topics"></a>Argomenti correlati

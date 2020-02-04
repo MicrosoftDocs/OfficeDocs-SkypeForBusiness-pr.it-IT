@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.ConfMeetingPolicyEdit
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: ebd2f120-b57a-4c94-9509-20e098f4b0f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: I criteri di conferenza definiscono le caratteristiche e le funzionalità disponibili per gli utenti durante una conferenza, detta anche riunione.
-ms.openlocfilehash: 137802662241c4348f65ddb33e96d59a6c42a286
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0a82ba29db52affab2371d6ce880c120487396c6
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195154"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41691391"
 ---
 # <a name="conferencing-policy-create-new-or-edit-existing"></a>Criteri conferenza: crearne di nuovi o modificare quelli esistenti
 
@@ -76,9 +76,9 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Consentire ai partecipanti di trasferire file** Se si consente la collaborazione con i dati, selezionare questa casella di controllo per consentire i trasferimenti di file a tutti i partecipanti durante una conferenza.
 
-  - **Abilitare** le annotazioni Se si consente la collaborazione con i dati, selezionare questa casella di controllo per consentire ai partecipanti di effettuare annotazioni su schermo sul contenuto condiviso durante la conferenza.
+  - **Abilitare le annotazioni** Se si consente la collaborazione con i dati, selezionare questa casella di controllo per consentire ai partecipanti di effettuare annotazioni su schermo sul contenuto condiviso durante la conferenza.
 
-  - **Abilitare** le annotazioni di PowerPoint Se si consente l'annotazione, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni nelle diapositive di PowerPoint condivise durante la conferenza.
+  - **Abilitare le annotazioni di PowerPoint** Se si consente l'annotazione, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni nelle diapositive di PowerPoint condivise durante la conferenza.
 
   - **Abilitare i sondaggi** Se si consente la collaborazione con i dati, selezionare questa casella di controllo per consentire ai partecipanti di tenere un sondaggio durante una conferenza.
 

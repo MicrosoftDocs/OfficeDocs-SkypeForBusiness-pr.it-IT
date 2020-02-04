@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.ClientCVPolicyEdit
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e32c6712-6dc9-4de9-8d74-9fdccf3de1ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile specificare la versione dei client supportati nell'ambiente. Quando due client che eseguono versioni diverse interagiscono, le caratteristiche disponibili per uno dei due client possono essere limitate dalle funzionalità dell'altro client.
-ms.openlocfilehash: 6a0f8db06f3e4e4283cd5c574f5e5f1dd566633c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c08c709d4a8db20a23580c5a5bfd2ceaf823e028
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195194"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41691621"
 ---
 # <a name="client-version-policy-create-new-or-edit-existing"></a>Criteri versione client: crearne di nuovi o modificare quelli esistenti
 
@@ -53,5 +53,5 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
 - **Frecce su e giù** Questa opzione Sposta la regola della versione del client selezionata in alto o in basso in priorità. Le regole vengono elaborate nell'ordine in cui sono elencate.
 
-Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere interoperabilità [client](https://technet.microsoft.com/library/0f126571-91a2-45d5-855c-1e4ddb45fc04.aspx). Per informazioni dettagliate sull'uso dei criteri versione client, vedere [Specify the Client Versions Supported in Your Organization](https://technet.microsoft.com/library/d256a581-9a48-4d1a-82cc-2e1f520d7d2e.aspx) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [interoperabilità client](https://technet.microsoft.com/library/0f126571-91a2-45d5-855c-1e4ddb45fc04.aspx). Per informazioni dettagliate sull'uso dei criteri versione client, vedere [Specify the Client Versions Supported in Your Organization](https://technet.microsoft.com/library/d256a581-9a48-4d1a-82cc-2e1f520d7d2e.aspx) nella documentazione relativa alle operazioni.
 

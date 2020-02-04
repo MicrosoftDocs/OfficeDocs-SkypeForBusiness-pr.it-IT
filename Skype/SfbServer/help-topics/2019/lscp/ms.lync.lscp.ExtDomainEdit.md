@@ -6,19 +6,19 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.ExtDomainEdit
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 90979ccd-7439-4a66-b82d-222df1554d66
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 1834f59a2141ac27bcac2ec3a3ead765d72678dd
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: faf2d5cee16c02acf1bb40d6eccf1b88d6597b2e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190961"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41691371"
 ---
 # <a name="federated-domains-create-new-or-edit-existing"></a>Domini federati: crearne di nuovi o modificare quelli esistenti
 
