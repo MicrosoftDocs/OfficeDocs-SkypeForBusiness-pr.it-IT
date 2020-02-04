@@ -3,6 +3,8 @@ title: Configurare le route di federazione e il traffico multimediale
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Configure federation routes and media traffic
 ms:assetid: ed6cb922-7863-453a-adce-2ce0ba761d74
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ721925(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 49733860
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4542ae02cc72dfbac05dfa982e2fbda7f2924919
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 7af8228a7537f1bbef4e92af852834459281a817
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40982590"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41728176"
 ---
 # <a name="configure-federation-routes-and-media-traffic"></a>Configurare le route di federazione e il traffico multimediale
 
@@ -63,7 +65,7 @@ Per pubblicare, abilitare o disabilitare correttamente una topologia durante l'a
 
 5.  In assegnazione della route federativo di sito deselezionare la casella di controllo accanto a **Consenti federazione SIP** per disabilitare la route federativo tramite **BackCompatSite**.
     
-    Finestra ![di dialogo Modifica proprietà, Route federativo](images/JJ721925.2a80c103-c0cc-43ed-ba00-420f9add006a(OCS.15).jpg "modifica proprietà, Route federativo")
+    ![Finestra di dialogo Modifica proprietà - Route di federazione](images/JJ721925.2a80c103-c0cc-43ed-ba00-420f9add006a(OCS.15).jpg "Finestra di dialogo Modifica proprietà - Route di federazione")
 
 6.  Fare clic su **OK** per chiudere la pagina Modifica proprietà.
 
@@ -79,11 +81,11 @@ Per pubblicare, abilitare o disabilitare correttamente una topologia durante l'a
 
 3.  Nella **configurazione specifica bordo**selezionare il nome di **dominio completo interno del server perimetrale** attualmente configurato per la Federazione e quindi fare clic su **Cambia**.
     
-    ![Unire la topologia ocs 2007 R2, specificare]la(images/JJ721925.42c15aaf-c1ac-4fb1-a086-665835c57b23(OCS.15).jpg "topologia merge OCS 2007 R2, specificare la configurazione di Edge")
+    ![Unisci topologia 2007 R2 - Specificare installazione server perimetrale](images/JJ721925.42c15aaf-c1ac-4fb1-a086-665835c57b23(OCS.15).jpg "Unisci topologia 2007 R2 - Specificare installazione server perimetrale")
 
 4.  Fare clic su **Avanti** e accettare le impostazioni predefinite fino a raggiungere la pagina **specifica bordi esterni** :
     
-    ![Generatore di topologia specificare]il(images/JJ721925.e36f3a1f-3655-456e-9e6d-4814c37da0bf(OCS.15).jpg "Generatore di topologia") della pagina perimetrale esterno
+    ![Pagina Specificare il perimetro esterno in Generatore di topologie](images/JJ721925.e36f3a1f-3655-456e-9e6d-4814c37da0bf(OCS.15).jpg "Pagina Specificare il perimetro esterno in Generatore di topologie")
 
 5.  In **specifica bordo esterno**deselezionare la casella **di controllo questo pool di bordi viene usato per la Federazione e la connettività di messaggistica istantanea pubblica** . Verrà rimosso l'associazione di federazione con BackCompatSite.
     
@@ -103,7 +105,7 @@ Per pubblicare, abilitare o disabilitare correttamente una topologia durante l'a
 
 10. Al termine della **pubblicazione guidata** , fare clic su **fine** per chiudere la procedura guidata.
     
-    ![Generatore di topologia con il sito visualizzato dopo]il(images/JJ721925.92b679ad-332f-49aa-b4e2-19f939b711ca(OCS.15).jpg "Generatore di topologia Unione con il sito visualizzato dopo l'Unione")
+    ![Generatore di topologie con sito visualizzato dopo l'unione](images/JJ721925.92b679ad-332f-49aa-b4e2-19f939b711ca(OCS.15).jpg "Generatore di topologie con sito visualizzato dopo l'unione")
     
     Come illustrato nella figura precedente, la **federazione SIP** situata in **assegnazione Route federativo di sito** è impostata su **disabled**.
 
@@ -129,7 +131,7 @@ Per pubblicare, abilitare o disabilitare correttamente una topologia durante l'a
 
 5.  Immettere il nome di dominio completo di Lync Server 2013 Edge Server e quindi fare clic su **OK**.
     
-    ![Proprietà globali OCS, scheda Federazione](images/JJ721925.da633f72-43c6-4dac-8d37-ccd0dcde79c9(OCS.15).jpg "proprietà globali OCS, scheda Federazione")
+    ![Proprietà globali di Office Communications Server - Scheda Federazione](images/JJ721925.da633f72-43c6-4dac-8d37-ccd0dcde79c9(OCS.15).jpg "Proprietà globali di Office Communications Server - Scheda Federazione")
 
 ## <a name="to-turn-on-lync-server-2013-edge-server-federation"></a>Per attivare Lync Server 2013 Edge Server Federation
 
@@ -145,7 +147,7 @@ Per pubblicare, abilitare o disabilitare correttamente una topologia durante l'a
 
 3.  Nella pagina **generale** selezionare la casella **di controllo Abilita federazione per questo pool di bordi (porta 5061)** .
     
-    ![Modificare le proprietà, generale, abilitare]le proprietà di modifica della federazione(images/JJ721925.2aeb5958-da55-4910-b3d7-2124e144a2f0(OCS.15).jpg "di Edge, generale, Enable Edge Federation")
+    ![Modifica proprietà, Generale - Abilitazione della federazione perimetrale](images/JJ721925.2aeb5958-da55-4910-b3d7-2124e144a2f0(OCS.15).jpg "Modifica proprietà, Generale - Abilitazione della federazione perimetrale")
 
 4.  Fare clic su **OK** per chiudere la pagina Modifica proprietà.
 
@@ -159,7 +161,7 @@ Per pubblicare, abilitare o disabilitare correttamente una topologia durante l'a
 
 9.  Fare clic su **OK** per chiudere la pagina **modifica proprietà** .
     
-    Proprietà ![modifica, generale, associa proprietà modifica pool Edge](images/JJ721925.33d43297-10cd-412e-bf4a-a1d9a84b9009(OCS.15).jpg ", generale, pool Edge associato")
+    ![Modifica proprietà, Generale - Associa pool di server perimetrali](images/JJ721925.33d43297-10cd-412e-bf4a-a1d9a84b9009(OCS.15).jpg "Modifica proprietà, Generale - Associa pool di server perimetrali")
     
     Per le distribuzioni multisito, completare questa procedura in ogni sito.
 
@@ -173,7 +175,7 @@ Per pubblicare, abilitare o disabilitare correttamente una topologia durante l'a
 
 4.  Nella casella a discesa selezionare il server Edge di Lync Server 2013.
     
-    ![Finestra di dialogo Modifica proprietà,](images/JJ721925.0cb76b08-5923-4972-8d7a-a829cb77136b(OCS.15).jpg "finestra di dialogo Associa proprietà modifica") bordo pool
+    ![Finestra di dialogo Modifica proprietà - Associa pool di server perimetrali](images/JJ721925.0cb76b08-5923-4972-8d7a-a829cb77136b(OCS.15).jpg "Finestra di dialogo Modifica proprietà - Associa pool di server perimetrali")
 
 5.  Fare clic su **OK** per chiudere la pagina **modifica proprietà** .
 

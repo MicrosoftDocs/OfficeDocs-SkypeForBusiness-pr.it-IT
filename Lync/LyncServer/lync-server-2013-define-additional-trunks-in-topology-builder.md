@@ -3,6 +3,8 @@ title: 'Lync Server 2013: definire trunk aggiuntivi in Generatore di topologie'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Define additional trunks in Topology Builder
 ms:assetid: e68b8377-50a2-452a-bf5c-910929e34236
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ721915(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 49733849
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b18d12762566258051d5fe0e7c71921b9fff160c
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: c55e8073bd1ad1bb2db69096e4e58aa2b148e775
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40977978"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41728486"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -69,7 +71,7 @@ Un trunk è una connessione logica tra un Mediation Server e un gateway identifi
 
 2.  In Lync Server 2013, il nome del sito, i **componenti condivisi**, fare clic con il pulsante destro del mouse sul nodo **Trunks** e quindi scegliere **nuovo trunk**.
     
-    (images/JJ721915.90d5b349-aa1e-407a-87ed-fa112f478560(OCS.15).png "Schermata della") ![struttura di file del generatore di topologia di Lync Server]
+    ![Schermata della struttura di file di Generatore di topologie di Lync Server](images/JJ721915.90d5b349-aa1e-407a-87ed-fa112f478560(OCS.15).png "Schermata della struttura di file di Generatore di topologie di Lync Server")
 
 3.  In **Definisci nuovo trunk**specificare un nome descrittivo per identificare in modo univoco il trunk. Non è possibile avere due trunk con lo stesso nome.
     
@@ -84,7 +86,7 @@ Un trunk è una connessione logica tra un Mediation Server e un gateway identifi
 
 4.  In **gateway PSTN associato**selezionare il peer del gateway PSTN da associare al trunk.
     
-    ![Impostazioni delle proprietà per il peer gateway PSTN per](images/JJ721915.7c3fe8ee-8f4c-4413-8462-8347228e61bb(OCS.15).png "le impostazioni delle proprietà trunk per il peer del gateway PSTN per trunk")
+    ![Impostazioni delle proprietà del peer gateway PSTN per trunk](images/JJ721915.7c3fe8ee-8f4c-4413-8462-8347228e61bb(OCS.15).png "Impostazioni delle proprietà del peer gateway PSTN per trunk")
 
 5.  In **porta di attesa per gateway PSTN**Digitare la porta di attesa che il peer (gateway PSTN, IP-PBX o SBC) riceva i messaggi SIP dal Mediation Server che deve essere associato a questo trunk. Le porte peer predefinite sono 5066 per TCP (Transmission Control Protocol) e 5067 per Transport Layer Security (TLS). Le porte predefinite Survivable Branch Appliance sono 5081 per TCP e 5082 per TLS.
 

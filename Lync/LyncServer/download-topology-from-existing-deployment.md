@@ -3,6 +3,8 @@ title: Scarica topologia dalla distribuzione esistente
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Download topology from existing deployment
 ms:assetid: e39065a2-d4b0-4f27-8c49-f56be78fa55b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ721913(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 49733847
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 26c47e6d78d3bd9522b8f0369924f05f8f939037
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 29a8bd95af99b6b79b91f84231120c6981eeedb7
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40979445"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41723026"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -47,13 +49,13 @@ Quando si crea un pool di Lync Server 2013, si utilizzerà l'Central Management 
 
 4.  Selezionare **Scarica topologia dalla distribuzione esistente**.
     
-    (images/JJ721913.d5b39fd9-3c13-422e-a06c-25d2568fe781(OCS.15).jpg "Impostazioni del generatore di topologia") della distribuzione guidata di distribuzione ![delle impostazioni]
+    ![Impostazioni del Generatore di topologie per la Distribuzione guidata](images/JJ721913.d5b39fd9-3c13-422e-a06c-25d2568fe781(OCS.15).jpg "Impostazioni del Generatore di topologie per la Distribuzione guidata")
 
 5.  Scegliere un nome file e salvare la topologia con il tipo di file default. tbxml.
 
 6.  Espandere il nodo Lync Server, come illustrato, per rivelare i vari ruoli del server nella distribuzione.
     
-    Ruolo del server generatore topologia ![Proprietà]generali ruolo del server Builder topologia(images/JJ721913.af99ead3-676b-47fd-8369-5a5f9717383f(OCS.15).jpg "Proprietà generali")
+    ![Proprietà generali del ruolo server del Generatore di topologie](images/JJ721913.af99ead3-676b-47fd-8369-5a5f9717383f(OCS.15).jpg "Proprietà generali del ruolo server del Generatore di topologie")
 
 </div>
 

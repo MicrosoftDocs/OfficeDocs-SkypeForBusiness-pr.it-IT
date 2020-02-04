@@ -3,6 +3,8 @@ title: Configurare il profilo utente
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Configure User Profile
 ms:assetid: 52713245-e502-4539-a238-66ff1aca26b1
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ945594(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 51541419
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e982156928cf36b4e20eaf86175d7acbdf048b6c
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: a2441fe97bb57ffdf0f6200f1201e192bfc6bf14
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978509"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41727706"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -61,7 +63,7 @@ Compilare i campi di ogni scheda dello strumento di configurazione del carico di
 
 Nella figura seguente è illustrata la scheda **configurazione comune** dello strumento di configurazione del carico di Lync Server 2013. Compilare i campi della scheda **configurazione comune** , come descritto nella procedura seguente.
 
-![Scheda di configurazione comune.] (images/JJ945594.c68dcc8f-10f2-499e-95a2-fccbcc206c2f(OCS.15).jpg "Scheda di configurazione comune.")
+![Scheda Common Configuration.](images/JJ945594.c68dcc8f-10f2-499e-95a2-fccbcc206c2f(OCS.15).jpg "Scheda Common Configuration.")
 
 1.  In **numero di macchine disponibili**Digitare o fare clic sul numero di computer che si desidera utilizzare per eseguire LyncPerfTool. exe. Ti consigliamo di avere un computer per ogni utente di 4.500 che dovrai simulare. Questo numero può variare se si riduce il livello di carico o se si usa solo un sottoinsieme delle funzionalità disponibili. (I livelli di carico sono impostati nella scheda **scenari generali** ).
 
@@ -95,7 +97,7 @@ Nella figura seguente è illustrata la scheda **scenari generali** dello strumen
 
 Configurare i livelli di carico e i parametri per ognuno degli scenari generali che si desidera eseguire o uscire da Disabled.
 
-![Scheda scenari generali.] (images/JJ945594.4f046d39-b532-4baf-99a6-c89d1d6d1fcc(OCS.15).jpg "Scheda scenari generali.")
+![Scheda General Scenarios.](images/JJ945594.4f046d39-b532-4baf-99a6-c89d1d6d1fcc(OCS.15).jpg "Scheda General Scenarios.")
 
 1.  Nella **messaggistica istantanea**, che include peer-to-peer e conferenze, specificare il valore appropriato per il livello di carico.
     
@@ -142,7 +144,7 @@ Nella figura seguente è illustrata la scheda **scenari vocali** dello strumento
 
 Usare la scheda **scenari vocali** per configurare tutti gli scenari relativi alla voce.
 
-![Scheda scenari vocali.] (images/JJ945594.28edf664-da59-40b0-9a0e-196f01e9ca86(OCS.15).jpg "Scheda scenari vocali.")
+![Scheda Voice Scenarios.](images/JJ945594.28edf664-da59-40b0-9a0e-196f01e9ca86(OCS.15).jpg "Scheda Voice Scenarios.")
 
 1.  In **VoIP**fare clic sul pulsante **Avanzate** e quindi specificare i valori per i campi **PhoneAreaCode** e **LocationProfile** (dial plan). Devi anche specificare un valore per il **livello di carico**. Se il livello di carico per **VoIP** e **gateway UC/PSTN** è abilitato, viene sempre generato un file di configurazione PSTN (Public Switched Telephone Network) to Unified Communications (UC) che simula le chiamate esterne.
 
@@ -183,7 +185,7 @@ REACH è una nuova esperienza in Lync Server 2013 che supporta scenari di confer
 
 Usare la scheda **REACH** per configurare tutti gli scenari correlati a REACH.
 
-![Scheda REACH.] (images/JJ945594.65ccf6de-0e8d-47ba-93f3-9dcb39d3fd62(OCS.15).jpg "Scheda REACH.")
+![Scheda Reach.](images/JJ945594.65ccf6de-0e8d-47ba-93f3-9dcb39d3fd62(OCS.15).jpg "Scheda Reach.")
 
 1.  Fare clic sul pulsante **Avanzate** accanto a **Impostazioni generali di REACH**. Impostare il campo **UcwaTargetServerUrl** sul Virtual IP del pool di Director (VIP) o sul pool VIP di front-end.
 
@@ -201,7 +203,7 @@ Usare la scheda **REACH** per configurare tutti gli scenari correlati a REACH.
 
 Usare la scheda **mobilità** per configurare tutti gli scenari relativi alla mobilità.
 
-![Scheda mobilità.] (images/JJ945594.4dd8f3e0-921c-48a5-8b23-2a0330d3c334(OCS.15).jpg "Scheda mobilità.")
+![Scheda Mobility.](images/JJ945594.4dd8f3e0-921c-48a5-8b23-2a0330d3c334(OCS.15).jpg "Scheda Mobility.")
 
 1.  Fare clic sul pulsante **Avanzate** accanto a **mobilità (UCWA)**. Impostare il campo **UcwaTargetServerUrl** sul Virtual IP del pool di Director (VIP) o sul pool VIP di front-end.
 
@@ -225,11 +227,11 @@ Usare la scheda **mobilità** per configurare tutti gli scenari relativi alla mo
 
 La scheda **Riepilogo** dello strumento di configurazione del carico di Lync Server 2013 è illustrata nella figura seguente.
 
-![Scheda Riepilogo.] (images/JJ945594.c675e869-8ded-4195-8c2a-68d844fc96ad(OCS.15).jpg "Scheda Riepilogo.")
+![Scheda Summary.](images/JJ945594.c675e869-8ded-4195-8c2a-68d844fc96ad(OCS.15).jpg "Scheda Summary.")
 
 La scheda **Riepilogo** indica gli utenti da usare per ogni scenario. È possibile configurare manualmente gli intervalli di numeri degli utenti selezionando la casella di controllo Abilita generazione di intervalli di **utenti personalizzati** e facendo doppio clic sullo scenario nella tabella che contiene l' **intervallo di utenti** che si vuole personalizzare. Selezionare (RunClient. bat) il ritardo di accesso per includere i ritardi nei file batch generati in modo che corrispondano alla frequenza di accesso. Questa operazione è utile per impedire l'overload del server quando si esegue l'accesso a un numero elevato di utenti. Fare clic su **genera file**e selezionare la cartella in cui si vuole generare la configurazione. Quando i file sono stati creati correttamente, verrà visualizzata una finestra di dialogo simile alla figura seguente.
 
-![Conferma che i file sono stati creati.] (images/JJ945594.00dc1e92-bfba-48e7-9568-b97ad864491e(OCS.15).jpg "Conferma che i file sono stati creati.")
+![Conferma della creazione dei file.](images/JJ945594.00dc1e92-bfba-48e7-9568-b97ad864491e(OCS.15).jpg "Conferma della creazione dei file.")
 
 </div>
 

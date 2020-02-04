@@ -3,6 +3,8 @@ title: 'Lync Server 2013: Topologia di riferimento per le organizzazioni di medi
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Reference topology for medium-size organizations
 ms:assetid: 446b0914-2198-445e-ab6e-94802acebd5c
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg425939(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48184026
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 41a003bd87e4dc8b85e78946a5ce870f3f6dd045
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: da4c29107a6ca3d33e76708be9eec07297eeaf93
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40981056"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41724406"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -39,7 +41,7 @@ La topologia di riferimento con elevata disponibilità e un singolo centro dati 
 
 **Topologia di riferimento per le organizzazioni medie**
 
-![Topologia di riferimento per la]topologia di riferimento del diagramma centro dati singolo(images/Gg425939.12b574fd-0b14-4563-a88c-3c8b0809bb90(OCS.15).jpg "per il diagramma centro dati")
+![Diagramma della topologia di riferimento per un singolo data center](images/Gg425939.12b574fd-0b14-4563-a88c-3c8b0809bb90(OCS.15).jpg "Diagramma della topologia di riferimento per un singolo data center")
 
   - **Accogliere più utenti aggiungendo altri server front-end.**    La topologia esatta in questo diagramma include tre server front-end per consentire il supporto per gli utenti di 20.000. Se si dispone di un singolo sito centrale e di più utenti, è possibile aggiungere semplicemente altri server front-end al pool. Il numero massimo di utenti per pool è 80.000, con dodici server front-end.
     

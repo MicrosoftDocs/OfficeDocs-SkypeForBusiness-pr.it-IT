@@ -3,6 +3,8 @@ title: Creare utenti e contatti
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Create Users and Contacts
 ms:assetid: 04b24d07-2864-463d-b508-544c2674c4ab
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ945587(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 51541412
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6f09ac6fd667b77b47e27ec9fb9caac44b9a13e1
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: b1463a7caaad2bcf36996eaac4bd47e2bab25e6f
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40984265"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41727576"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -77,7 +79,7 @@ Per creare utenti e contatti per la simulazione di caricamento, devi usare lo st
 
 Quando si apre lo strumento di provisioning degli utenti di Lync Server, fare clic su **configurazione** e selezionare **Carica configurazione**. Per iniziare a configurare utenti e contatti, caricare il file predefinito incluso nel pacchetto SampleData. XML. Verranno precompilati i campi con dati di esempio che è necessario rivedere per il sistema. Se si ha un file XML preconfigurato che contiene già impostazioni personalizzate, caricare il file. Compilare i campi dello strumento di provisioning degli utenti di Lync Server, come descritto nelle sezioni seguenti.
 
-![Scheda Creazione utente.] (images/JJ945587.80d3c17b-7482-4818-8381-1eff8717d2fe(OCS.15).jpg "Scheda Creazione utente.")
+![Scheda User Creation.](images/JJ945587.80d3c17b-7482-4818-8381-1eff8717d2fe(OCS.15).jpg "Scheda User Creation.")
 
 Per configurare le opzioni del server, eseguire la procedura seguente.
 
@@ -149,7 +151,7 @@ Quando si fa clic sul pulsante Elimina utenti, verranno convalidati tutti i para
 
 La scheda creazione contatti consente di specificare i dettagli per i contatti degli utenti.
 
-![Scheda creazione contatti.] (images/JJ945587.7508726e-83e6-4878-8edd-114543d9af24(OCS.15).jpg "Scheda creazione contatti.")
+![Scheda Contacts Creation.](images/JJ945587.7508726e-83e6-4878-8edd-114543d9af24(OCS.15).jpg "Scheda Contacts Creation.")
 
 Per configurare i contatti degli utenti, seguire questa procedura.
 
@@ -195,7 +197,7 @@ Per configurare i contatti degli utenti, seguire questa procedura.
 
 Una delle caratteristiche dello strumento di sviluppo dello stress e delle prestazioni di Lync Server 2013 consiste nel simulare la caratteristica di espansione della lista di distribuzione (DL) in Lync 2013. Se non si vuole abilitare l'espansione DL in UserProvisioningTool, è possibile ignorare questo passaggio.
 
-![Scheda Creazione elenco di distribuzione.] (images/JJ945587.0a1d681b-2aea-4724-90d8-efa8a526f600(OCS.15).jpg "Scheda Creazione elenco di distribuzione.")
+![Scheda Distribution List Creation.](images/JJ945587.0a1d681b-2aea-4724-90d8-efa8a526f600(OCS.15).jpg "Scheda Distribution List Creation.")
 
 La scheda lista di distribuzione consente di creare un DLs che lo strumento stress e prestazioni userà per la caratteristica di espansione della lista di distribuzione. Prima di creare DLs, Lync Server 2013 deve essere già installato. È necessario che sia stato eseguito Lync Server 2013 ForestPrep. In caso contrario, gli attributi DL non sono presenti nello schema Servizi di dominio Active Directory e lo strumento non sarà in grado di creare DLs.
 
@@ -225,7 +227,7 @@ Quando si fa clic sul pulsante Crea liste di distribuzione, lo strumento esegue 
 
 Una delle caratteristiche dello strumento di esecuzione dello stress e delle prestazioni di Lync Server 2013 è la creazione di file di configurazione fittizi per il servizio informazioni sulla posizione. Il servizio informazioni sulla posizione in genere non ha un impatto significativo sulle prestazioni nei server.
 
-![Scheda configurazione del servizio info posizione.] (images/JJ945587.52ea4e9e-d50a-4dc9-982b-31ee5ace4578(OCS.15).jpg "Scheda configurazione del servizio info posizione.")
+![Scheda Location Info Service Config.](images/JJ945587.52ea4e9e-d50a-4dc9-982b-31ee5ace4578(OCS.15).jpg "Scheda Location Info Service Config.")
 
 Se si sceglie di testare questa caratteristica, è possibile inserire i valori menzionati nel modulo e quindi fare clic sul pulsante genera file di configurazione LIS. Genererà file CSV denominati\_LIS subnet. csv,\_LIS switches. csv\_, LIS Ports. csv\_e LIS WAP. csv. È quindi possibile importare questi file CSV nel database LIS usando il cmdlet **Set-CsLisSubnet** , il cmdlet **Set-CsLisSwitch** , il cmdlet **Set-CsLisPort** e il cmdlet **set-CsWirelessAccessPoint** , rispettivamente.
 
