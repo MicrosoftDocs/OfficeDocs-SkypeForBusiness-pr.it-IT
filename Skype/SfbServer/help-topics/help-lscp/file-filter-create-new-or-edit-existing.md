@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.ImpFileEdit
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2f6e54ef-2ff5-4cac-a3d4-80a101e8d177
 description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: c1ca72944ae6b6d780dc6c8c136ef1779d867a5f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 4a4a6d66efc15ce62360d03bd77561aec3b892d7
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190211"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41700171"
 ---
-# <a name="file-filter-create-new-or-edit-existing"></a>Filtro file: Crea nuovo o modifica esistente
+# <a name="file-filter-create-new-or-edit-existing"></a>Filtro file: crearne uno nuovo o modificarne uno esistente
 
 Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
 

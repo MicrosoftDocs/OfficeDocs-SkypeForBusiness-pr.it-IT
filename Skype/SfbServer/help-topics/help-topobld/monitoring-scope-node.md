@@ -7,22 +7,22 @@ manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.MonitoringServerScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 05867db5-ad62-41e3-b1ac-f21f43d1e90b
 description: "In Generatore di topologia di Lync Server 2013 è possibile eseguire attività correlate a un singolo server che esegue il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue il monitoraggio nell'albero della console, facendo clic su azione nella barra degli strumenti o facendo clic su un'attività nel riquadro azioni e quindi facendo clic su una delle opzioni seguenti per il server che gestisce il monitoraggio:"
-ms.openlocfilehash: ac099710bfd33effdf490a41d1b3e735894ceee1
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 7fc5905ba8a0f98df0ee548642050806b4b801dc
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190127"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41696951"
 ---
 # <a name="monitoring-scope-node"></a>Nodo dell'ambito di monitoraggio
  
-In Generatore di topologia di Lync Server 2013 è possibile eseguire attività correlate a un singolo server che esegue il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue il monitoraggio nell'albero della console, facendo clic su **azione** nella barra degli strumenti o facendo clic su un'attività nelle azioni e quindi facendo clic su una delle opzioni seguenti per il server che sta eseguendo il monitoraggio:
+In Generatore di topologia di Lync Server 2013 è possibile eseguire attività correlate a un singolo server che esegue il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue il monitoraggio nell'albero della console, facendo clic su **azione** nella barra degli strumenti o facendo clic su un'attività nel riquadro azioni e scegliendo una delle opzioni seguenti per il server che esegue il monitoraggio:
   
 - **Modifica proprietà**. Apre la pagina **modifica proprietà** per il server che gestisce il monitoraggio, in cui è possibile modificare il nome di dominio completo (FQDN) del server che gestisce il monitoraggio o il database di SQL Server di monitoraggio.
     

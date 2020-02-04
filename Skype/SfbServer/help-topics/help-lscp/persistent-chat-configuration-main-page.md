@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.PersistentChatConfigMain
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1e75d352-12cf-4548-9301-5d4c0e1c8f46
 description: La distribuzione del server di chat persistente può ospitare molte chat room persistenti simultanee. Le chat room possono essere organizzate in un set di categorie nel server. Ogni chat room appartiene a una sola categoria ed eredita alcune impostazioni da tale categoria. In questo modo viene creata una struttura utile per identificare le conversazioni in base alle esigenze aziendali e per facilitare l'amministrazione delegata e la gestione semplificata.
-ms.openlocfilehash: de5ce1825a31f37dadbe36e7bcedaa5ec52542dc
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 2de93fc5dfe85f9ab6b16d66f62df12faccde5e2
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188243"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41699941"
 ---
 # <a name="persistent-chat-configuration-main-page"></a>Pagina principale Configurazione di Chat persistente
  

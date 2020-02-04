@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddBranchSiteDetailsPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 5eab6090-094e-4260-b501-61309f1cff67
 description: 'Per specificare i dettagli di un sito, eseguire le operazioni seguenti:'
-ms.openlocfilehash: a0b528a054c1cd2a378bda951593340c6e4fa2ee
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 552596b9fbd7908443d33cc7322774f5ffe93b21
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195621"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41698661"
 ---
 # <a name="add-branch-site-details"></a>Aggiungere i dettagli del sito di succursale
 

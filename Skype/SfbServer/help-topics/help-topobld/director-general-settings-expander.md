@@ -1,5 +1,5 @@
 ---
-title: Espansione impostazioni generali Director
+title: Espansione delle impostazioni generali di Director
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.DirectorGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2026d0dd-6745-4e53-8b44-acdc378b47d1
 description: 'Per modificare le impostazioni di un amministratore esistente, è possibile presentarle con le sezioni seguenti:'
-ms.openlocfilehash: 46dabc9fae3f2b1cbb3a6acf9db0e7ac6344b951
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e9260b3b5caa8b5f8d788927f8d54f405f236631
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195356"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41697501"
 ---
-# <a name="director-general-settings-expander"></a>Espansione impostazioni generali Director
+# <a name="director-general-settings-expander"></a>Espansione delle impostazioni generali di Director
  
 Per modificare le impostazioni di un amministratore esistente, è possibile presentarle con le sezioni seguenti:
   

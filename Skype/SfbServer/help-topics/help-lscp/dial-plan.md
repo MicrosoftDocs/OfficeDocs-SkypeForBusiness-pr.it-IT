@@ -1,5 +1,5 @@
 ---
-title: Dial plan
+title: Dial Plan
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.VoiceDialPlanMain
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: eeb31bd9-688e-4767-a47d-6fda1a55f094
 description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: fb935f3266b62d0ee2090f7e40a18303a67b8188
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: eb56774cf117305463bf437c6598f8af33669b2a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190241"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41700211"
 ---
-# <a name="dial-plan"></a>Dial plan
+# <a name="dial-plan"></a>Dial Plan
 
 Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
 

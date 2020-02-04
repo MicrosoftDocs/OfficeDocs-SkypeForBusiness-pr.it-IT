@@ -1,5 +1,5 @@
 ---
-title: Aggiungere servizi Web front-end
+title: Aggiungere servizi Web di Front End
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddFrontEndWebServicesPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 99626970-1613-41ca-a36e-24bed1f459d7
 description: L'URL di base è l'identità dei servizi Web per l'URL, meno il https://. Ad esempio, se l'URL completo per i servizi Web del pool è https://pool01.contoso.net, l'URL di base è pool01.contoso.NET.
-ms.openlocfilehash: 3317df51fcacd17de8c1ce3f40163f2ce63dc13f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 10749cc746cf1f3d039a89fd351be6de77eafaee
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187163"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41698201"
 ---
-# <a name="add-front-end-web-services"></a>Aggiungere servizi Web front-end
+# <a name="add-front-end-web-services"></a>Aggiungere servizi Web di Front End
  
 L'URL di base è l'identità dei servizi Web per l'URL, meno il https://. Ad esempio, se l'URL completo per i servizi Web del pool è https://pool01.contoso.net, l'URL di base è pool01.contoso.NET.
   

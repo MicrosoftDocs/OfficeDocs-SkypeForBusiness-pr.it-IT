@@ -1,5 +1,5 @@
 ---
-title: Selezionare estensioni per il tipo di file
+title: Selezionare estensioni del tipo di file
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.ImpChooseFileType
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3638cdc8-71dd-4a22-8613-83859af97387
 description: Usare la finestra di dialogo Seleziona estensioni del tipo di file per selezionare le estensioni di file da bloccare o consentire selezionando (per bloccare) o cancellando (per consentire) le caselle di controllo accanto alle estensioni in estensioni di file. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le estensioni dei tipi di file per tale categoria. Se si desidera selezionare tutte le estensioni di file per una categoria, selezionare il nome della categoria.
-ms.openlocfilehash: e3efb425d70ec5497b53af1d43336b7e304d6c53
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 1cb8b4bc9486a97e0f55004079d440bf0a360a65
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194497"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41699601"
 ---
-# <a name="select-file-type-extensions"></a>Selezionare estensioni per il tipo di file
+# <a name="select-file-type-extensions"></a>Selezionare estensioni del tipo di file
  
 Usare la finestra di dialogo **Seleziona estensioni del tipo** di file per selezionare le estensioni di file da bloccare o consentire selezionando (per bloccare) o cancellando (per consentire) le caselle di controllo accanto alle estensioni in **estensioni di file**. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le estensioni dei tipi di file per tale categoria. Se si desidera selezionare tutte le estensioni di file per una categoria, selezionare il nome della categoria. 
   

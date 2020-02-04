@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.SelectSite
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 09472310-a40f-4360-b6f1-1a9ac8888965
 description: Utilizzare la finestra di dialogo Seleziona un sito per trovare i siti disponibili nel proprio ambiente. Per utilizzare un sito esistente, selezionare un sito nell'elenco e quindi fare clic su OK.
-ms.openlocfilehash: cb70574d19d186042806665bba9305ad47ead2c4
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 8ca8b8df7564dc491a0160786868014a5713a7bb
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191801"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41699721"
 ---
 # <a name="select-a-site"></a>Selezionare un sito
 

@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.ConfMeetingSettingMain
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 24e8f749-d54c-4315-a8fe-bb9303b356ef
 description: Le impostazioni di configurazione della riunione definiscono il tipo di conferenze (anche calledmeetings) che gli utenti possono creare e controllano in che modo gli utenti anonimi e i servizi di conferenza telefonica con accesso esterno possono partecipare a queste conferenze. Queste impostazioni si applicano solo alle riunioni pianificate. Non si applicano invece alle riunioni ad hoc create facendo clic sull'opzione Riunione immediata nel client.
-ms.openlocfilehash: 82619b255f99dc5a82d6a9cb704fe5443fe83d23
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5e4d0b11bc169b7658061e33fdfb8ddf0bd4b044
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194427"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41700041"
 ---
 # <a name="meeting-configuration"></a>Configurazione riunione
 

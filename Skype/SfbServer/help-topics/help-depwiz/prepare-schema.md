@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployMainSchemaPrep
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 337aa234-c5f3-4468-a047-2023848e942c
 description: Per preparare lo schema per i servizi di dominio Active Directory, eseguire il passaggio Prepara schema nella distribuzione guidata di Skype for Business Server. Fare clic su Esegui per avviare la preparazione dello schema. Il passaggio Preparazione schema legge i file di definizione dello schema forniti nella directory/Program Files/Microsoft Lync Server 2013/Deployment/Setup nel sistema in cui è in corso la distribuzione guidata. Questi file sono disponibili anche nel supporto di installazione nella directory Support/schema. Nel corso del passaggio di preparazione dello schema, quest'ultimo verrà esteso e verrà segnalato lo stato del processo. Verrà inoltre notificato il completamento del processo. La schermata di riepilogo consentirà di visualizzare i registri del processo. Esaminare tali registri per accertarsi che la preparazione sia stata completata correttamente.
-ms.openlocfilehash: 12b4bcbe93bd1ed55e0a2c2c1a133db41b30cd00
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: fd1e79411c9820013954be0add7b68c326188e9e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194254"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41700821"
 ---
 # <a name="prepare-schema"></a>Preparare uno schema
  

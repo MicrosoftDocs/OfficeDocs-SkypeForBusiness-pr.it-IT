@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.NcsGlobalMain
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 93a17c91-816e-4de0-8065-7dec45203355
 description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: acd37fe3834e027983766ff3473ed57cd1f79b0e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ec3482cbd25d7adf005d1dd23c85557e91cd8054
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190544"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41699994"
 ---
-# <a name="network-configuration-global-setting"></a>Configurazione di rete: impostazione globale
+# <a name="network-configuration-global-setting"></a>Configurazione rete: impostazione globale
 
 Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
 

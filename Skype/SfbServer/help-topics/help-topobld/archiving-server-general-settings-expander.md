@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.ArchivingGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0b820af7-8d00-42e2-979c-dbae17159a08
 description: "In Generatore di topologie è possibile modificare le proprietà per un singolo server che esegue il server di archiviazione, facendo clic con il pulsante destro del mouse sul server che esegue il server di archiviazione nell'albero della console e selezionando Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni, quindi selezionando Modifica proprietà e modificando una delle opzioni seguenti:"
-ms.openlocfilehash: 224b149dd7ff3d0a1398bf7cb644ebb259d5b949
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 2de8465be3f9a650aad3dd9b44b995a7dc6a7a67
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191174"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41697871"
 ---
 # <a name="archiving-server-general-settings-expander"></a>Espansione delle impostazioni generali del server di archiviazione
  

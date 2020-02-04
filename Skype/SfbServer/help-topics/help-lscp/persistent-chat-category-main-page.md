@@ -7,24 +7,24 @@ manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.PersistentChatCategoryMain
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b71c6e6f-681c-4230-954d-3e95ab64ca00
 description: È possibile usare la sezione Categoria della pagina Chat persistente per configurare le categorie. Una categoria di chat room persistente è una struttura logica per l'organizzazione di chat room. Una categoria definisce un insieme predefinito di elenchi di controllo di accesso (ACL) per controllare gli utenti e i gruppi di utenti che possono creare o unirsi alle chat room. È possibile usare le categorie per applicare ethical wall tra diverse suddivisioni delle organizzazioni.
-ms.openlocfilehash: f080a71c7949d32fa3e72e902113be0d5dc88455
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 039286382e83d07bfa0c3aa2f88908748fb31ff2
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195394"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41699951"
 ---
 # <a name="persistent-chat-category-main-page"></a>Pagina principale della categoria Chat persistente
  
 È possibile usare la sezione **Categoria** della pagina **Chat persistente** per configurare le categorie. Una categoria di chat room persistente è una struttura logica per l'organizzazione di chat room. Una categoria definisce un insieme predefinito di elenchi di controllo di accesso (ACL) per controllare gli utenti e i gruppi di utenti che possono creare o unirsi alle chat room. È possibile usare le categorie per applicare ethical wall tra diverse suddivisioni delle organizzazioni.
   
-Le categorie di chat room possono contenere chat room, ma non altre categorie. Ogni categoria descrive il suo contenuto con metadati, ad esempio _nome_ e _Descrizione_. Inoltre, la categoria contiene proprietà che possono essere impostate per controllare il comportamento delle chat room ad essa appartenenti, come se le chat room consentissero __ gli inviti o gli _upload di file_o contengano la _cronologia delle chat_.
+Le categorie di chat room possono contenere chat room, ma non altre categorie. Ogni categoria descrive il suo contenuto con metadati, ad esempio _nome_ e _Descrizione_. Inoltre, la categoria contiene proprietà che possono essere impostate per controllare il comportamento delle chat room ad essa appartenenti, come se le chat room consentissero gli _inviti_ o gli _upload di file_o contengano la cronologia delle _chat_.
   
 Per creare una nuova categoria, vedere [gestire le categorie nel server di chat persistente in Skype for Business server 2015](../../manage/persistent-chat/categories.md). Se si è un amministratore della chat persistente, è possibile creare categorie usando il pannello di controllo o i cmdlet di Windows PowerShell.
   
@@ -66,7 +66,7 @@ Nella pagina **Categoria** è possibile eseguire le attività seguenti:
     
 12. In **Modifica categoria** eseguire le operazioni seguenti:
     
-    - In **appartenenza**, nella sezione **consentiti membri** , aggiungere o rimuovere utenti e altre entità di servizi di dominio Active Directory (utenti, gruppi di distribuzione, unità organizzative e così via) che sono autorizzati ad essere aggiunti come membri delle chat room appartenenza alla categoria. Le entità consentite da una categoria possono cercare le chat della categoria (a meno che la chat non sia nascosta, caso in cui solo i membri della chat possono cercarla nella directory).
+    - In **appartenenza**, nella sezione **consentiti membri** , aggiungere o rimuovere utenti e altre entità di servizi di dominio Active Directory (utenti, gruppi di distribuzione, unità organizzative e così via) che possono essere aggiunti come membri delle chat room appartenenti alla categoria. Le entità consentite da una categoria possono cercare le chat della categoria (a meno che la chat non sia nascosta, caso in cui solo i membri della chat possono cercarla nella directory).
     
     - In **appartenenza**, nella sezione **membri negati** , aggiungere o rimuovere utenti e altre entità Active Directory associate ai membri negati dalla sala.
     

@@ -1,5 +1,5 @@
 ---
-title: Nodo ambito server di monitoraggio
+title: Nodo di ambito dei server di monitoraggio
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.MonitoringServersScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 16fa839b-8eb5-4b81-82c5-65fe9a00614b
 description: 'Il nodo server di monitoraggio elenca i server di monitoraggio della topologia. È possibile eseguire questa operazione:'
-ms.openlocfilehash: 00af542dec356a64984bcfd148827f91b1374e0d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: bb92b2b9a3efc45cfa150a22e4de86e0fd91885a
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190118"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41696931"
 ---
-# <a name="monitoring-servers-scope-node"></a>Nodo ambito server di monitoraggio
+# <a name="monitoring-servers-scope-node"></a>Nodo di ambito dei server di monitoraggio
  
 Il nodo **server di monitoraggio** elenca i server di monitoraggio della topologia. È possibile eseguire questa operazione:
   

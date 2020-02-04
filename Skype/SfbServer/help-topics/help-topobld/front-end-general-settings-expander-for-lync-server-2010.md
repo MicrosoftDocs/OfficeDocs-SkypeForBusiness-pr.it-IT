@@ -1,5 +1,5 @@
 ---
-title: Expander per le impostazioni generali di front-end per Lync Server 2010
+title: Espansione delle impostazioni generali di Front End per Lync Server 2010
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.FrontEndGeneralSettingsExpander2010
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 58269c38-98d9-499f-ab69-6a63a6e5530e
 description: 'Modificare le proprietà del server front-end o del pool Front-End modificando o configurando gli attributi seguenti. La pagina di configurazione è suddivisa nelle sezioni seguenti:'
-ms.openlocfilehash: b0ee8a2d0081d937bf93d4a638e4f56b1cc79134
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 1e7fa730745c3eab20288b5b4bfbb9c0d781be83
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189920"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41697291"
 ---
-# <a name="front-end-general-settings-expander-for-lync-server-2010"></a>Expander per le impostazioni generali di front-end per Lync Server 2010
+# <a name="front-end-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni generali di Front End per Lync Server 2010
 
 Modificare le proprietà del server front-end o del pool Front-End modificando o configurando gli attributi seguenti. La pagina di configurazione è suddivisa nelle sezioni seguenti:
 
@@ -28,7 +28,7 @@ Modificare le proprietà del server front-end o del pool Front-End modificando o
 
 - **FQDN**: il nome di dominio completo del server front-end o del pool Front-end.
 
-- Selezionare **Usa tutti gli indirizzi IP** configurati per usare tutti gli indirizzi configurati nel server front-end o nel pool Front-end.
+- Selezionare **Usa tutti gli indirizzi IP configurati** per usare tutti gli indirizzi configurati nel server front-end o nel pool Front-end.
 
     > [!IMPORTANT]
     > Non selezionare questa opzione se si colloca il Mediation Server nel server front-end o nel pool Front-end. I server di mediazione e i server front-end richiedono indirizzi IP dedicati su cui comunicare.
@@ -41,7 +41,7 @@ Modificare le proprietà del server front-end o del pool Front-End modificando o
 
 - Se è stata selezionata l'opzione conferenza, è possibile selezionare conferenze telefoniche **con accesso esterno (PSTN)** . Selezionare la casella di controllo per abilitare le caratteristiche dei servizi di conferenza telefonica con accesso esterno.
 
-- Selezionare la casella di controllo VoIP **aziendale** se si vuole distribuire le caratteristiche per consentire a Lync Server 2013 di fungere da sistema telefonico vocale usando le tecnologie Voice over IP, tra cui l'opzione di distribuzione di telefoni cellulari, trunk SIP o pubblica connettività di rete telefonica commutata tramite Mediation Server, gateway PSTN e IP-PBX, in combinazione o da solo, in base alla progettazione e ai requisiti. Per informazioni dettagliate su Enterprise Voice, vedere [VoIP](https://technet.microsoft.com/library/c9da8099-6f4f-4346-ac67-f041bb96072c.aspx) aziendale e [piano per VoIP aziendale in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md)
+- Selezionare la casella di controllo VoIP **aziendale** se si intende distribuire le caratteristiche per consentire a Lync Server 2013 di fungere da sistema telefonico vocale usando le tecnologie Voice over IP. includendo l'opzione di distribuzione di telefoni cellulari, trunk SIP o connettività di rete telefonica pubblica commutata tramite Mediation Server, gateway PSTN e IP-PBX, in combinazione o da solo, in base alla progettazione e ai requisiti. Per informazioni dettagliate su Enterprise Voice, vedere [VoIP](https://technet.microsoft.com/library/c9da8099-6f4f-4346-ac67-f041bb96072c.aspx) aziendale e [piano per VoIP aziendale in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md)
 
     **Associazioni**
 
@@ -57,7 +57,7 @@ Modificare le proprietà del server front-end o del pool Front-End modificando o
 
   **Resilienza**
 
-- Selezionare la casella di controllo **pool Registrar di backup associato** per selezionare nell'elenco un server front-end o un pool Front-end che sarà il registrar, ovvero il front end server o il pool Front-End designato come registrar secondario nel caso in cui il principale non
+- Selezionare la casella di controllo **pool Registrar di backup associato** per selezionare dall'elenco un server front-end o un pool Front-end che sarà il registrar, ovvero il front end server o il pool Front-End designato come registrar secondario, se il principale non riesce.
 
 - Se è stato selezionato pool di registrar di backup associato e si è scelto un registrar di backup, è possibile selezionare la casella di controllo per il **failover automatico e il failback per voce**. Ora puoi definire le proprietà numeriche per il **rilevamento del failover vocale interno (sec)** e l' **intervallo di failback vocale (sec)**. Per informazioni dettagliate, vedere [pianificazione della resilienza di Enterprise Voice](https://technet.microsoft.com/library/ca116700-1055-4ca5-9b87-4c7f380c3655.aspx)
 

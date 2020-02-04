@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.lscp.SelectCreators
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f8d9ed6f-22ba-470e-b0b4-0da3cea5e961
 description: La creazione e la gestione di chat room persistenti è molto più semplice con l'uso corretto delle categorie. Un amministratore della chat persistente può definire AllowedMembers e creatori per ogni categoria e può anche definire le impostazioni e i comportamenti predefiniti della chat room che verranno applicati a tutte le chat room create nella categoria. Gli amministratori della chat persistente creano e gestiscono categorie usando il pannello di controllo di Skype for Business Server o i cmdlet di Windows PowerShell.
-ms.openlocfilehash: 6fc3feb4465f1ad55d369ed736ea277853aadc13
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: cfaa7531f4f2a401dd90dc9473409d301a2fbfa6
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194504"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41699641"
 ---
 # <a name="select-creators"></a>Selezionare i creatori
 

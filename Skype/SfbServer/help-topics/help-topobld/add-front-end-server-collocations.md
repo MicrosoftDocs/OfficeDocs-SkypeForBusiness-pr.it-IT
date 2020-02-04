@@ -1,5 +1,5 @@
 ---
-title: Aggiungere le collocazioni del server front-end
+title: Aggiungere collocazioni di Front End Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddFrontEndCollocationsPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 23e3bda7-a8bf-4da4-88e5-098ae2aa268f
 description: Per una distribuzione di Enterprise Edition, il servizio di conferenza A/V è collocato nel pool Front-end. È anche possibile collocare il Mediation Server nel pool Front-end oppure distribuirlo come server autonomo. Il servizio di conferenza A/V è sempre collocato se è abilitata la conferenza.
-ms.openlocfilehash: 620f76232f909a8bbeb52138cbdeec74b097b448
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0d246e91549f5ff27a2e3681aae4d73c064eb67c
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191987"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41698211"
 ---
-# <a name="add-front-end-server-collocations"></a>Aggiungere le collocazioni del server front-end
+# <a name="add-front-end-server-collocations"></a>Aggiungere collocazioni di Front End Server
 
 Per una distribuzione di Enterprise Edition, il servizio di conferenza A/V è collocato nel pool Front-end. È anche possibile collocare il Mediation Server nel pool Front-end oppure distribuirlo come server autonomo. Il servizio di conferenza A/V è sempre collocato se è abilitata la conferenza.
 

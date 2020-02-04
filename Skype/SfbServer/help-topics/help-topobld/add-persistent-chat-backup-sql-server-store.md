@@ -7,18 +7,18 @@ manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddPersistentChatBackupSqlStorePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 106698e4-ce73-4a34-8fc7-e9d3208a17dc
 description: Si configurano gli archivi di SQL Server di backup che forniranno database di backup per il server di chat persistente o il pool di server di chat persistente
-ms.openlocfilehash: 39e5e1ead6ed3cb089545406852de16170d782dc
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 05baf1760b1f7a4f8c30d964b55811d56a2830a8
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195589"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41698081"
 ---
 # <a name="add-persistent-chat-backup-sql-server-store"></a>Aggiungere l'archivio SQL Server di backup per Chat persistente
  
@@ -30,7 +30,7 @@ Fare clic su **nuovo** per definire un nuovo SQL Server e facoltativamente una n
   
 Selezionare la casella di controllo **Abilita mirroring di SQL Server Store** per configurare un database di SQL Server e un'istanza facoltativa che fornirà un database con mirroring per i dati di backup della chat persistente.
   
-Selezionare nell'elenco mirroring di **SQL Server archiviare** un'istanza di SQL Server e facoltativa per fungere da mirror di SQL Server per il backup della chat persistente in SQL Server.
+Selezionare nell'elenco **mirroring di SQL Server archiviare** un'istanza di SQL Server e facoltativa per fungere da mirror di SQL Server per il backup della chat persistente in SQL Server.
   
 Fare clic su **nuovo** per definire un nuovo SQL Server e, facoltativamente, una nuova istanza per il mirroring della chat persistente in SQL Server.
   

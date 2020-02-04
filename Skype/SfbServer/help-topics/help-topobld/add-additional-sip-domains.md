@@ -1,5 +1,5 @@
 ---
-title: Aggiungere altri domini SIP
+title: Aggiungere ulteriori domini SIP
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,20 +7,20 @@ manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.tb.AddAdditionalSipDomainsPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: ece37fc3-365a-439e-ad03-800f8e7a33eb
 description: Specificare il nome di dominio di ogni dominio aggiuntivo che si vuole supportare nella distribuzione. Se ad esempio è stato specificato contoso.net come dominio SIP (Primary Session Initiation Protocol) e si vuole anche supportare fabrikam.net per il traffico SIP nella distribuzione, specificare fabrikam.net come ulteriore dominio supportato.
-ms.openlocfilehash: a855c9c1db23211b47427df28ea0126364da4799
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c7b60e2c5715fe6341597fde0e7aaca2bc3291f9
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195632"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41698691"
 ---
-# <a name="add-additional-sip-domains"></a>Aggiungere altri domini SIP
+# <a name="add-additional-sip-domains"></a>Aggiungere ulteriori domini SIP
  
 Specificare il nome di dominio di ogni dominio aggiuntivo che si vuole supportare nella distribuzione. Se ad esempio è stato specificato contoso.net come dominio SIP (Primary Session Initiation Protocol) e si vuole anche supportare fabrikam.net per il traffico SIP nella distribuzione, specificare fabrikam.net come ulteriore dominio supportato.
   
