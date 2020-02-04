@@ -6,25 +6,25 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - ms.lync.dep.DeployCertRequestOrgInfo
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1ca030ad-82bd-40b2-9b2a-67d80e516f9c
 ROBOTS: NOINDEX, NOFOLLOW
 description: Il riquadro informazioni organizzazione consente di specificare il nome dell'organizzazione e un'unità organizzativa (in genere la divisione o il reparto) che richiede il certificato. Le informazioni digitate nelle caselle di testo dell'organizzazione e delle unità organizzative vengono visualizzate nel certificato e vengono usate per identificare chi ha richiesto il certificato, quando il certificato viene visualizzato da altri.
-ms.openlocfilehash: b4d448fb99c98371e364d15bb18c16a91ab0f3d5
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 25704c5eb4a07102b2cf9cd9c96b8cf3e9ddfece
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194338"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41692011"
 ---
-# <a name="certificate-request-organization-information"></a><span data-ttu-id="ce12a-104">Richiesta di certificato (informazioni sull'organizzazione)</span><span class="sxs-lookup"><span data-stu-id="ce12a-104">Certificate Request (Organization Information)</span></span>
+# <a name="certificate-request-organization-information"></a><span data-ttu-id="d1d72-104">Richiesta di certificato (informazioni sull'organizzazione)</span><span class="sxs-lookup"><span data-stu-id="d1d72-104">Certificate Request (Organization Information)</span></span>
  
-<span data-ttu-id="ce12a-105">Il riquadro **informazioni organizzazione** consente di specificare il nome dell'organizzazione e un'unità organizzativa (in genere la divisione o il reparto) che richiede il certificato.</span><span class="sxs-lookup"><span data-stu-id="ce12a-105">The **Organization Information** pane enables you to specify the name of your organization and an organizational unit (OU) (usually the division or department) that requests the certificate.</span></span> <span data-ttu-id="ce12a-106">Le informazioni digitate nelle caselle di testo dell' **organizzazione** e delle **unità organizzative** vengono visualizzate nel certificato e vengono usate per identificare chi ha richiesto il certificato, quando il certificato viene visualizzato da altri.</span><span class="sxs-lookup"><span data-stu-id="ce12a-106">The information that you type in the **Organization** and the **Organizational Unit** text boxes appears on the certificate and is used to identify who requested the certificate, when the certificate is viewed by others.</span></span>
+<span data-ttu-id="d1d72-105">Il riquadro **informazioni organizzazione** consente di specificare il nome dell'organizzazione e un'unità organizzativa (in genere la divisione o il reparto) che richiede il certificato.</span><span class="sxs-lookup"><span data-stu-id="d1d72-105">The **Organization Information** pane enables you to specify the name of your organization and an organizational unit (OU) (usually the division or department) that requests the certificate.</span></span> <span data-ttu-id="d1d72-106">Le informazioni digitate nelle caselle di testo dell' **organizzazione** e delle **unità organizzative** vengono visualizzate nel certificato e vengono usate per identificare chi ha richiesto il certificato, quando il certificato viene visualizzato da altri.</span><span class="sxs-lookup"><span data-stu-id="d1d72-106">The information that you type in the **Organization** and the **Organizational Unit** text boxes appears on the certificate and is used to identify who requested the certificate, when the certificate is viewed by others.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="ce12a-107">Il nome dell'unità organizzativa in un certificato non è necessariamente uguale a un'unità organizzativa in servizi di dominio Active Directory.</span><span class="sxs-lookup"><span data-stu-id="ce12a-107">The OU name on a certificate is not necessarily the same as an OU in Active Directory Domain Services.</span></span> <span data-ttu-id="ce12a-108">A seconda di come è stato configurato Active Directory, il nome usato potrebbe essere uguale o diverso.</span><span class="sxs-lookup"><span data-stu-id="ce12a-108">Depending on how you have configured Active Directory, the name that you use may or may not be the same.</span></span> 
+> <span data-ttu-id="d1d72-107">Il nome dell'unità organizzativa in un certificato non è necessariamente uguale a un'unità organizzativa in servizi di dominio Active Directory.</span><span class="sxs-lookup"><span data-stu-id="d1d72-107">The OU name on a certificate is not necessarily the same as an OU in Active Directory Domain Services.</span></span> <span data-ttu-id="d1d72-108">A seconda di come è stato configurato Active Directory, il nome usato potrebbe essere uguale o diverso.</span><span class="sxs-lookup"><span data-stu-id="d1d72-108">Depending on how you have configured Active Directory, the name that you use may or may not be the same.</span></span> 
   
 
