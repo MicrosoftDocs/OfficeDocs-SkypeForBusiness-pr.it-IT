@@ -1,5 +1,5 @@
 ---
-title: Aggiornare AAD Connect per includere più di una foresta
+title: Update AAD Connect per includere più di una foresta
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -14,25 +14,27 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 audience: ITPro
+f1.keywords:
+- NOCSH
 appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-description: Questa appendice include i passaggi dettagliati per l'aggiornamento di AAD Connect per includere più foreste come parte del consolidamento del cloud per Teams e Skype for business.
-ms.openlocfilehash: cbb4811d999601524557e7106840a66682565e5f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+description: In questa appendice sono riportati i passaggi dettagliati per l'aggiornamento di AAD Connect per includere più foreste nell'ambito del consolidamento del cloud per i team e per Skype for business.
+ms.openlocfilehash: 3d3d72c14957f0ed8932d95fcd2dbe9ec9c1e37e
+ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36185489"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "41696061"
 ---
-# <a name="update-aad-connect-to-include-more-than-one-forest"></a>Aggiornare AAD Connect per includere più di una foresta
+# <a name="update-aad-connect-to-include-more-than-one-forest"></a>Update AAD Connect per includere più di una foresta
 
-Azure AD Connect supporta la [sincronizzazione da più foreste](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-topologies). Supporta tuttavia una sola istanza di Azure AD Connect syncing to AAD. Di conseguenza, nei casi in cui Azure AD è già installato in un'unica foresta, l'istanza esistente di AAD Connect deve essere aggiornata per la sincronizzazione dalla foresta aggiuntiva.
+Azure AD Connect supporta la [sincronizzazione da più foreste](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-topologies). Tuttavia, supporta solo un'istanza di Azure AD Connect syncing to AAD. Pertanto, nei casi in cui Azure AD è già installato in una foresta, è necessario aggiornare l'istanza esistente di AAD Connect per eseguire la sincronizzazione dalla foresta aggiuntiva.
 
- - Se tutte le identità sono rappresentate una sola volta in entrambe le foreste, ovvero se non sono stati apportati contatti abilitati per la posta elettronica, è possibile rieseguire semplicemente la procedura guidata di connessione AAD, scegliere "Personalizza opzioni di sincronizzazione" e quindi nella **directory Connetti **pagina, immettere il nome della foresta aggiuntiva e creds.<br><br>
- ![Pagina Connetti le tue directory](../media/cloud-consolidation-connect-your-directories.png)
- - Tuttavia, se gli utenti possono esistere in più directory e si uniscono i dati, ad esempio se gli oggetti contatto sono presenti in una foresta corrispondente agli utenti di un'altra foresta, sarà necessario disinstallare Azure AD Connect e reinstallarlo.  Il motivo è che la condizione delle regole di join tra foreste può essere configurata solo durante la prima installazione. Questa operazione viene eseguita nella pagina seguente:<br><br>
+ - Se tutte le identità sono rappresentate solo una volta in entrambe le foreste (ovvero se non sono stati apportati contatti abilitati alla posta elettronica), è possibile rieseguire la procedura guidata per la connessione di AAD, scegliere "Personalizza opzioni di sincronizzazione" e quindi nella pagina **Connetti le directory** immettere il nome della foresta aggiuntiva e creds.<br><br>
+ ![Pagina Connetti le directory](../media/cloud-consolidation-connect-your-directories.png)
+ - Tuttavia, se gli utenti possono esistere in più di una directory e si intende unire i dati (ad esempio, se gli oggetti contatto sono presenti in una foresta corrispondente agli utenti di un'altra foresta), sarà necessario disinstallare Azure AD Connect e reinstallarlo.  Ciò è dovuto al fatto che la condizione per le regole di join tra foreste può essere configurata solo durante la prima installazione. Questa operazione viene fatta nella pagina seguente:<br><br>
  ![La pagina di identificazione univoca degli utenti](../media/cloud-consolidation-uniquely-identifying-your-users.png)
 
 
