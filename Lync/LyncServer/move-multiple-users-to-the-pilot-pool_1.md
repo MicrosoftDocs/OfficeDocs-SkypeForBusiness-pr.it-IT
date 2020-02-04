@@ -3,6 +3,8 @@ title: Trasferire più utenti nel pool pilota
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Move multiple users to the pilot pool
 ms:assetid: 9492797f-2a26-4773-8ad2-97cb53fa68fc
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ688143(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 49733745
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2ffc3e01df30f4a8e1b9c9b9aeca2b2013003980
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 70d031481746f9f7408cc7b5e36081bb977b189d
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40979857"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41743766"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -53,7 +55,7 @@ _**Argomento Ultima modifica:** 2012-10-02_
 
 6.  Selezionare due utenti che si desidera trasferire nel pool di Lync Server 2013. In questo esempio verranno spostati gli utenti Chen Yang e Claus Hansen.
     
-    ![Elenco di utenti visualizzato dalla ricerca di utenti OCS](images/JJ688143.76beb4fa-72e0-41ef-b96e-3553e96645c0(OCS.15).jpg "elenco utente visualizzato dalla ricerca di utenti OCS")  
+    ![Elenco utenti visualizzato durante la ricerca degli utenti OCS](images/JJ688143.76beb4fa-72e0-41ef-b96e-3553e96645c0(OCS.15).jpg "Elenco utenti visualizzato durante la ricerca degli utenti OCS")  
 
 7.  Nel menu **azione** selezionare **Trasferisci utenti selezionati in pool**.
 
@@ -61,7 +63,7 @@ _**Argomento Ultima modifica:** 2012-10-02_
 
 9.  Fare clic su **azione** e quindi su **Trasferisci utenti selezionati in pool**. Fare clic su OK.
     
-    ![Trasferire utenti, finestra di dialogo pool di registrar di destinazione](images/JJ205401.8a375003-dc00-4541-b578-4d88f2010601(OCS.15).png ", finestra di dialogo pool Registrar di destinazione")  
+    ![Finestra di dialogo per lo spostamento di utenti nel pool di registrazione di destinazione](images/JJ205401.8a375003-dc00-4541-b578-4d88f2010601(OCS.15).png "Finestra di dialogo per lo spostamento di utenti nel pool di registrazione di destinazione")  
 
 10. Verificare che la colonna del **pool di registrar** per gli utenti contenga ora il pool di Lync Server 2013, che indica che gli utenti sono stati spostati correttamente.
 
@@ -77,7 +79,7 @@ _**Argomento Ultima modifica:** 2012-10-02_
     
         Get-CsUser -Filter {DisplayName -eq "User1" -or DisplayName - eq "User2"} | Move-CsLegacyUser -Target "pool_FQDN"
     
-    ![Cmdlet di esempio per trasferire]un(images/JJ688143.57cfc28e-3df5-459f-83ef-8b0edf182a25(OCS.15).jpg "cmdlet di esempio utente legacy per trasferire un utente legacy")  
+    ![Cmdlet di esempio per spostare un utente legacy](images/JJ688143.57cfc28e-3df5-459f-83ef-8b0edf182a25(OCS.15).jpg "Cmdlet di esempio per spostare un utente legacy")  
 
 3.  Nella riga di comando digitare la seguente
     
@@ -85,7 +87,7 @@ _**Argomento Ultima modifica:** 2012-10-02_
 
 4.  L'identità del **pool di registrazione** deve ora puntare al pool specificato come **FQDN\_del pool** nel passaggio precedente. La presenza di questa identità conferma che l'utente è stato spostato correttamente. Ripetere il passaggio per verificare che **User2** sia stato spostato.
     
-    ![Output di PowerShell Get-UsUser-cmdlet Identity]-(images/JJ205096.8ff04c67-37a0-4156-bfbc-28f9f7b137c8(OCS.15).jpg "output di PowerShell Get-UsUser-cmdlet Identity")  
+    ![Output di PowerShell Get-UsUser-cmdlet Identity](images/JJ205096.8ff04c67-37a0-4156-bfbc-28f9f7b137c8(OCS.15).jpg "Output del cmdlet Get-UsUser-Identity di PowerShell")  
 
 </div>
 
@@ -101,7 +103,7 @@ In questo esempio tutti gli utenti sono stati restituiti al pool di Office Commu
     
         Get-CsUser -OnOfficeCommunicationServer | Move-CsLegacyUser -Target "pool_FQDN"
     
-    ![Cmdlet di esempio per trasferire tutti gli utenti legacy in un](images/JJ688143.e6a2d578-296e-476c-bd45-d757917ea853(OCS.15).jpg "cmdlet di esempio di pool per trasferire tutti gli utenti legacy in un pool")  
+    ![Cmdlet di esempio per spostare tutti gli utenti legacy di un pool](images/JJ688143.e6a2d578-296e-476c-bd45-d757917ea853(OCS.15).jpg "Cmdlet di esempio per spostare tutti gli utenti legacy di un pool")  
 
 3.  Esegui quindi **Get-CsUser** per uno degli utenti pilota.
     
@@ -111,7 +113,7 @@ In questo esempio tutti gli utenti sono stati restituiti al pool di Office Commu
 
 5.  Inoltre, è possibile visualizzare l'elenco degli utenti nel pannello di controllo di Lync Server 2013 e verificare che il valore del pool di registrazione punti ora al pool di Lync Server 2013.
     
-    ![Lync server 2013 elenco utenti del pannello di controllo]di(images/JJ205096.3f2e87a7-ec59-43c5-82cb-e770108bfb04(OCS.15).jpg "Lync Server 2013 elenco utenti del pannello di controllo")  
+    ![Elenco utenti nel Pannello di controllo di Lync Server 2013](images/JJ205096.3f2e87a7-ec59-43c5-82cb-e770108bfb04(OCS.15).jpg "Elenco utenti nel Pannello di controllo di Lync Server 2013")  
 
 </div>
 

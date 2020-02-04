@@ -3,6 +3,8 @@ title: Configurazione dei vari criteri
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
+f1.keywords:
+- NOCSH
 TOCTitle: Configuring the Various Policies
 ms:assetid: e3b3cbda-7c17-470b-acb0-82fdcc473184
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ945610(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 51541436
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a105ea62b82d904007a2faa0493fd17092b84462
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 6316a1027de963cefea6c0c76051f09cb5d33538
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40980035"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41727686"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -87,7 +89,7 @@ Vedere l'esempio BandwidthPolicy. ps1. Per informazioni dettagliate, vedere la p
 
 Vedere l'esempio RoutingRules. ps1. Quando si configurano le regole di routing vocale, prendere nota del contesto telefonico (ovvero/location profile o/SimpleName) e dei codici di area interni/esterni, in modo da poterli specificare quando si creano utenti e durante la configurazione di LyncPerfTool (in particolare per PSTN-UC e UC-PSTN). Ad esempio, il parametro SimpleName nella chiamata al cmdlet **New-CsDialPlan** nell'esempio RoutingRules. ps1 deve essere usato per il valore LocationProfile nella figura seguente di UserProfileGenerator. exe.
 
-![Esempio di regola di routing vocale.] (images/JJ945610.9f34d971-4ed0-4a4c-b101-086a91c4578c(OCS.15).jpg "Esempio di regola di routing vocale.")
+![Regola per le route vocali di esempio.](images/JJ945610.9f34d971-4ed0-4a4c-b101-086a91c4578c(OCS.15).jpg "Regola per le route vocali di esempio.")
 
 Per informazioni dettagliate, vedere la documentazione di Lync Server 2013 e la guida per i [cmdlet Enterprise Voice in Lync server 2013](https://technet.microsoft.com/en-us/library/gg415658\(v=ocs.15\)).
 
@@ -99,7 +101,7 @@ Per informazioni dettagliate, vedere la documentazione di Lync Server 2013 e la 
 
 Vedere l'esempio ConferenceAutoAttendantConfiguration. ps1. Prendere nota del numero di telefono di ConferencingAutoAttendant (1121111111, per impostazione predefinita), in modo da poterlo digitare nello strumento di configurazione dello strumento LyncPerf per la generazione della configurazione.
 
-![Configurazione dell'applicazione]per i servizi di conferenza che(images/JJ945610.0618a22f-27a9-423a-9085-d2bf71e82db6(OCS.15).jpg "Configura l'applicazione Supervisore conferenza")
+![Configurazione dell'applicazione Operatore Conferenza](images/JJ945610.0618a22f-27a9-423a-9085-d2bf71e82db6(OCS.15).jpg "Configurazione dell'applicazione Operatore Conferenza")
 
 Per informazioni dettagliate, vedere la documentazione di Lync Server 2013 e la guida per i cmdlet per i servizi di [conferenza Web in Lync server 2013](https://technet.microsoft.com/en-us/library/gg415675\(v=ocs.15\)) e i [cmdlet di conferenza telefonica con accesso esterno in Lync Server 2013](https://technet.microsoft.com/en-us/library/gg415630\(v=ocs.15\)).
 
@@ -132,7 +134,7 @@ Eseguire la procedura seguente per configurare i test di stress e prestazioni pe
 
 2.  Configurare gli indirizzi compilando i valori della scheda **LIS** in UserProvisioningTool, come illustrato nella figura seguente.
     
-    ![Configurazione del servizio informazioni sulla posizione.] (images/JJ945610.8ac1faa1-e9f9-40d0-b8b7-b159f4f459f7(OCS.15).jpg "Configurazione del servizio informazioni sulla posizione.")  
+    ![Configurazione del servizio Informazioni percorso.](images/JJ945610.8ac1faa1-e9f9-40d0-b8b7-b159f4f459f7(OCS.15).jpg "Configurazione del servizio Informazioni percorso.")  
 
 3.  Fare clic su **genera file di configurazione LIS**.
 
@@ -154,7 +156,7 @@ Prima di eseguire gli script seguenti, è consigliabile creare tutti gli utenti.
 
 Vedere l'esempio ResponseGroupConfiguration. ps1. Per informazioni dettagliate, vedere la documentazione di Lync Server 2013 e la guida per i [cmdlet delle applicazioni di Response Group in Lync server 2013](https://technet.microsoft.com/en-us/library/gg415654\(v=ocs.15\)). Per esaminare la configurazione dell'applicazione Response Group, `https://<poolfqdn>/RgsConfig/`vedere, come illustrato nella figura seguente.
 
-![Strumento di configurazione Response Group.] (images/JJ945610.480a9440-2283-4533-98f8-86daaab4781c(OCS.15).jpg "Strumento di configurazione Response Group.")
+![Strumento di configurazione di Response Group.](images/JJ945610.480a9440-2283-4533-98f8-86daaab4781c(OCS.15).jpg "Strumento di configurazione di Response Group.")
 
 </div>
 

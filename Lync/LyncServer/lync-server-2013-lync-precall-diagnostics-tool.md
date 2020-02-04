@@ -3,6 +3,8 @@ title: 'Lync Server 2013: strumento di diagnostica prechiamata di Lync'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Lync PreCall Diagnostics Tool
 ms:assetid: 0ff291ec-cfb4-43eb-b5d6-a7a325681e3f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn451255(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 56708404
 ms.date: 11/04/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1e22b542a5840714455d4abdb0a7163e6a8ba748
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 004d3b30dc2c2886eb7a2d8977f1da062277cc92
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978971"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41742336"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -121,17 +123,17 @@ Lync PCD include le caratteristiche seguenti:
 
   - Diagnosticare gli errori di accesso (solo Lync PCD per Windows 8)
 
-![Funzionalità di accesso di Lync PCD schermata di stato](images/Dn451255.7e0eb891-1481-47ae-8d63-164468f69c96(OCS.15).png "")
+![Cattura di schermata di accesso in corso alle funzionalità di Lync PCD](images/Dn451255.7e0eb891-1481-47ae-8d63-164468f69c96(OCS.15).png "Cattura di schermata di accesso in corso alle funzionalità di Lync PCD")
 
   - Visualizzazione grafica delle metriche di rete: MOS di rete, perdita di pacchetti e jitter di interarrivo a schermo intero e visualizzazione in blocco.
 
 **Visualizzazione a schermo intero**
 
-![PreCall strumento di diagnostica del risultato del test]degli strumenti di diagnostica di(images/Dn451255.5d01fd94-9e59-4823-96c7-7a1c83dd7d31(OCS.15).png "prechiamata") per i grafici del risultato
+![Grafici dei risultati del test eseguito con lo strumento PreCall Diagnostic](images/Dn451255.5d01fd94-9e59-4823-96c7-7a1c83dd7d31(OCS.15).png "Grafici dei risultati del test eseguito con lo strumento PreCall Diagnostic")
 
 **Visualizzazione bloccata**
 
-![PreCall test di utilizzo degli strumenti di diagnostica]PreCall risultati del(images/Dn451255.30501ba7-22d1-4db1-9297-56cf7dc6721c(OCS.15).png "test di utilizzo degli strumenti di diagnostica")
+![Risultati del test di utilizzo dello strumento PreCall Diagnostic](images/Dn451255.30501ba7-22d1-4db1-9297-56cf7dc6721c(OCS.15).png "Risultati del test di utilizzo dello strumento PreCall Diagnostic")
 
 </div>
 
@@ -149,7 +151,7 @@ Lync PCD include le caratteristiche seguenti:
     
     Per avviare il PCD in un sistema Windows 8, selezionare l'icona nella schermata Start oppure cercare "diagnostica prechiamata".
     
-    (images/Dn451255.c9800fde-54f6-4efe-bb35-1a38064ec380(OCS.15).png "Icona dello") strumento di diagnostica ![prechiamata]
+    ![Icona dello strumento PreCall Diagnostic](images/Dn451255.c9800fde-54f6-4efe-bb35-1a38064ec380(OCS.15).png "Icona dello strumento PreCall Diagnostic")
 
 2.  Quando lo strumento viene avviato, selezionare il metodo preferito per fornire le credenziali e selezionare la modalità di funzionamento della rete nella finestra di dialogo **Opzioni strumento di diagnostica prechiamata** , quindi scegliere **OK**:
 
