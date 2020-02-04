@@ -3,6 +3,8 @@ title: 'Lync Server 2013: cmdlet di interoperabilità'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
+f1.keywords:
+- NOCSH
 TOCTitle: Interoperability cmdlets
 ms:assetid: 18444a0b-7b66-4540-a262-775ea10b3b7d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204714(v=OCS.15)
@@ -10,12 +12,12 @@ ms:contentKeyID: 48183527
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f9360a9366c5358c30dbf2cb007af990125dcb15
-ms.sourcegitcommit: bb53f131fabb03a66f0d000f8ba668fbad190778
+ms.openlocfilehash: 4fba07f35836e6b8ac5025b887c69bea283846b7
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "40978323"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41725796"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -23,7 +25,7 @@ ms.locfileid: "40978323"
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="interoperability-cmdlets-in-lync-server-2013"></a><span data-ttu-id="8d17f-102">Cmdlet di interoperabilità in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8d17f-102">Interoperability cmdlets in Lync Server 2013</span></span>
+# <a name="interoperability-cmdlets-in-lync-server-2013"></a><span data-ttu-id="b389d-102">Cmdlet di interoperabilità in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b389d-102">Interoperability cmdlets in Lync Server 2013</span></span>
 
 </div>
 
@@ -33,41 +35,41 @@ ms.locfileid: "40978323"
 
 <span> </span>
 
-<span data-ttu-id="8d17f-103">_**Argomento Ultima modifica:** 2012-06-27_</span><span class="sxs-lookup"><span data-stu-id="8d17f-103">_**Topic Last Modified:** 2012-06-27_</span></span>
+<span data-ttu-id="b389d-103">_**Argomento Ultima modifica:** 2012-06-27_</span><span class="sxs-lookup"><span data-stu-id="b389d-103">_**Topic Last Modified:** 2012-06-27_</span></span>
 
-<span data-ttu-id="8d17f-104">I cmdlet di interoperabilità vengono usati per configurare l'autenticazione da server a server e l'autorizzazione tra Microsoft Lync Server 2013 e altri prodotti server, ad esempio Microsoft Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="8d17f-104">The interoperability cmdlets are used to configure server-to-server authentication and authorization between Microsoft Lync Server 2013 and other server products such as Microsoft Exchange Server 2013.</span></span> <span data-ttu-id="8d17f-105">L'autenticazione e l'autorizzazione da server a server consentono a questi server di scambiare e condividere dati senza problemi.</span><span class="sxs-lookup"><span data-stu-id="8d17f-105">Server-to-server authentication and authorization enables these servers to seamless exchange and share data.</span></span>
+<span data-ttu-id="b389d-104">I cmdlet di interoperabilità vengono usati per configurare l'autenticazione da server a server e l'autorizzazione tra Microsoft Lync Server 2013 e altri prodotti server, ad esempio Microsoft Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="b389d-104">The interoperability cmdlets are used to configure server-to-server authentication and authorization between Microsoft Lync Server 2013 and other server products such as Microsoft Exchange Server 2013.</span></span> <span data-ttu-id="b389d-105">L'autenticazione e l'autorizzazione da server a server consentono a questi server di scambiare e condividere dati senza problemi.</span><span class="sxs-lookup"><span data-stu-id="b389d-105">Server-to-server authentication and authorization enables these servers to seamless exchange and share data.</span></span>
 
 <div>
 
-## <a name="interoperability-cmdlets"></a><span data-ttu-id="8d17f-106">Cmdlet di interoperabilità</span><span class="sxs-lookup"><span data-stu-id="8d17f-106">Interoperability Cmdlets</span></span>
+## <a name="interoperability-cmdlets"></a><span data-ttu-id="b389d-106">Cmdlet di interoperabilità</span><span class="sxs-lookup"><span data-stu-id="b389d-106">Interoperability Cmdlets</span></span>
 
-<span data-ttu-id="8d17f-107">Di seguito è riportato un elenco di cmdlet correlati direttamente alla configurazione e alla gestione dell'interoperabilità tra Microsoft Lync Server 2013 e altri prodotti server:</span><span class="sxs-lookup"><span data-stu-id="8d17f-107">The following is a list of cmdlets that relate directly to configuring and managing interoperability between Microsoft Lync Server 2013 and other server products:</span></span>
+<span data-ttu-id="b389d-107">Di seguito è riportato un elenco di cmdlet correlati direttamente alla configurazione e alla gestione dell'interoperabilità tra Microsoft Lync Server 2013 e altri prodotti server:</span><span class="sxs-lookup"><span data-stu-id="b389d-107">The following is a list of cmdlets that relate directly to configuring and managing interoperability between Microsoft Lync Server 2013 and other server products:</span></span>
 
-<span data-ttu-id="8d17f-108">**Cmdlet di interoperabilità**</span><span class="sxs-lookup"><span data-stu-id="8d17f-108">**Interoperability Cmdlets**</span></span>
+<span data-ttu-id="b389d-108">**Cmdlet di interoperabilità**</span><span class="sxs-lookup"><span data-stu-id="b389d-108">**Interoperability Cmdlets**</span></span>
 
-  - <span data-ttu-id="8d17f-109">[Get-CsOAuthConfiguration](https://technet.microsoft.com/en-us/library/JJ205155(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="8d17f-109">[Get-CsOAuthConfiguration](https://technet.microsoft.com/en-us/library/JJ205155(v=OCS.15))</span></span>
+  - <span data-ttu-id="b389d-109">[Get-CsOAuthConfiguration](https://technet.microsoft.com/en-us/library/JJ205155(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="b389d-109">[Get-CsOAuthConfiguration](https://technet.microsoft.com/en-us/library/JJ205155(v=OCS.15))</span></span>
 
-  - <span data-ttu-id="8d17f-110">[Set-CsOAuthConfiguration](https://technet.microsoft.com/en-us/library/JJ204841(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="8d17f-110">[Set-CsOAuthConfiguration](https://technet.microsoft.com/en-us/library/JJ204841(v=OCS.15))</span></span>
-
-<!-- end list -->
-
-  - <span data-ttu-id="8d17f-111">[Get-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205238(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="8d17f-111">[Get-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205238(v=OCS.15))</span></span>
-
-  - <span data-ttu-id="8d17f-112">[New-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205206(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="8d17f-112">[New-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205206(v=OCS.15))</span></span>
-
-  - <span data-ttu-id="8d17f-113">[Remove-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205408(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="8d17f-113">[Remove-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205408(v=OCS.15))</span></span>
-
-  - <span data-ttu-id="8d17f-114">[Set-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ204896(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="8d17f-114">[Set-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ204896(v=OCS.15))</span></span>
+  - <span data-ttu-id="b389d-110">[Set-CsOAuthConfiguration](https://technet.microsoft.com/en-us/library/JJ204841(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="b389d-110">[Set-CsOAuthConfiguration](https://technet.microsoft.com/en-us/library/JJ204841(v=OCS.15))</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="8d17f-115">[Get-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ205128(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="8d17f-115">[Get-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ205128(v=OCS.15))</span></span>
+  - <span data-ttu-id="b389d-111">[Get-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205238(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="b389d-111">[Get-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205238(v=OCS.15))</span></span>
 
-  - <span data-ttu-id="8d17f-116">[New-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204628(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="8d17f-116">[New-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204628(v=OCS.15))</span></span>
+  - <span data-ttu-id="b389d-112">[New-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205206(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="b389d-112">[New-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205206(v=OCS.15))</span></span>
 
-  - <span data-ttu-id="8d17f-117">[Remove-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204820(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="8d17f-117">[Remove-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204820(v=OCS.15))</span></span>
+  - <span data-ttu-id="b389d-113">[Remove-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205408(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="b389d-113">[Remove-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ205408(v=OCS.15))</span></span>
 
-  - <span data-ttu-id="8d17f-118">[Set-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204755(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="8d17f-118">[Set-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204755(v=OCS.15))</span></span>
+  - <span data-ttu-id="b389d-114">[Set-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ204896(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="b389d-114">[Set-CsOAuthServer](https://technet.microsoft.com/en-us/library/JJ204896(v=OCS.15))</span></span>
+
+<!-- end list -->
+
+  - <span data-ttu-id="b389d-115">[Get-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ205128(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="b389d-115">[Get-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ205128(v=OCS.15))</span></span>
+
+  - <span data-ttu-id="b389d-116">[New-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204628(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="b389d-116">[New-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204628(v=OCS.15))</span></span>
+
+  - <span data-ttu-id="b389d-117">[Remove-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204820(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="b389d-117">[Remove-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204820(v=OCS.15))</span></span>
+
+  - <span data-ttu-id="b389d-118">[Set-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204755(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="b389d-118">[Set-CsPartnerApplication](https://technet.microsoft.com/en-us/library/JJ204755(v=OCS.15))</span></span>
 
 </div>
 
