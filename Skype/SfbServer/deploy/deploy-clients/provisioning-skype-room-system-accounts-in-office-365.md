@@ -7,15 +7,17 @@ audience: ITPro
 ms.reviewer: sohailta
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: c36150bb-461c-4f1c-877b-fac7fb232f7c
 description: Leggere questo argomento per informazioni sul provisioning degli account di Skype room System in Office 365.
-ms.openlocfilehash: 66686af36e3f71f91114d10eb448dd0a77ad1a57
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: 33c3acf2f0fffc69da55468e8c16902ec7fa4f88
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41003016"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41768749"
 ---
 # <a name="provisioning-skype-room-system-accounts-in-office-365"></a>Provisioning degli account di Skype room System in Office 365
  

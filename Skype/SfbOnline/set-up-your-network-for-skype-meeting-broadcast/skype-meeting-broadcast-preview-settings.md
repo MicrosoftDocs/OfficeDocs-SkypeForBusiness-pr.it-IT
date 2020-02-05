@@ -16,16 +16,17 @@ appliesto:
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
-- ms.lync.lac.BroadcastMeetingsPreview
+- CSH
 ms.custom:
 - SMB
+- ms.lync.lac.BroadcastMeetingsPreview
 description: Il programma di anteprima dei clienti di Skype for business offre l'accesso anticipato a nuovi prodotti e funzionalità. Consente all'organizzazione di ottenere una sbirciatina in anteprima su ciò che sta per succedere, testare le nuove funzionalità del proprio ambiente e inviare commenti e suggerimenti prima di rilasciare le build di prodotto al pubblico in generale. Per saperne di più, Vedi anteprima di Skype for business.
-ms.openlocfilehash: 16cfbfd05c5d1e54ba9613e088c99f7eece4f67a
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 7f3550db7259e1606e4ac4e5e4b766c73f61566a
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692561"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41769439"
 ---
 # <a name="skype-meeting-broadcast-preview-settings"></a>Impostazioni di Skype meeting broadcast Preview
 

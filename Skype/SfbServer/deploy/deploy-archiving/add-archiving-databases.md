@@ -5,17 +5,19 @@ ms.author: v-lanac
 author: lanachin
 manager: serdars
 audience: ITPro
+f1.keywords:
+- NOCSH
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3b67df85-181d-45ca-ba48-bb74a439f242
 description: 'Riepilogo: leggere questo argomento per informazioni su come aggiungere database di archiviazione alla distribuzione di Skype for Business Server.'
-ms.openlocfilehash: b7d429206e003042922b9b9cae6de420fdf517bb
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 26cdd1befb695fbaf0656611ed65c7afa778af6c
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234581"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41769049"
 ---
 # <a name="add-archiving-databases-to-an-existing-deployment-in-skype-for-business-server"></a>Aggiungere database di archiviazione a una distribuzione esistente in Skype for Business Server
  
@@ -28,7 +30,7 @@ ms.locfileid: "36234581"
 - Pubblicare la topologia aggiornata per aggiungere il database di archiviazione alla distribuzione di Skype for Business Server.
     
 > [!NOTE]
-> Se si vuole usare l'integrazione di Microsoft Exchange per archiviare i dati e i file di archiviazione nei server di Exchange per tutti gli utenti della distribuzione, non specificare l' **archiviazione di SQL Server Store** o usare le informazioni di mirroring di **SQL Server Store** .
+> Se si vuole usare l'integrazione di Microsoft Exchange per archiviare i dati e i file di archiviazione nei server di Exchange per tutti gli utenti della distribuzione, non specificare l' **archiviazione di SQL Server Store** o usare le informazioni di **mirroring di SQL Server Store** .
   
 ### <a name="add-an-archiving-database-to-your-topology"></a>Aggiungere un database di archiviazione alla topologia
 
@@ -70,7 +72,7 @@ ms.locfileid: "36234581"
     
      c. Se l'istanza di SQL Server specificata si trova in una relazione speculare, selezionare la casella **di controllo questa istanza SQL è in relazione di mirroring** e quindi, in **numero di porta speculare**, specificare il numero di porta.
     
-   - Se si Abilita il mirroring di SQL Server e si vuole includere un witness di mirroring di SQL Server (una terza istanza di SQL Server separata in grado di rilevare lo stato delle istanze principali di SQL Server e mirror), selezionare l' **uso di witness di mirroring di SQL Server per abilitare l'attivazione automatica **casella di controllo failover e quindi eseguire una delle operazioni seguenti:
+   - Se si Abilita il mirroring di SQL Server e si vuole includere un witness di mirroring di SQL Server (una terza istanza di SQL Server separata in grado di rilevare lo stato delle istanze principali di SQL Server e mirror), selezionare la casella di controllo **USA mirroring di SQL Server per abilitare il failover automatico** e quindi eseguire una delle operazioni seguenti:
     
      un. In **FQDN di SQL Server**specificare il nome di dominio completo del server in cui si vuole creare il nuovo witness di mirroring di SQL Server.
     
@@ -85,7 +87,7 @@ ms.locfileid: "36234581"
 1. In un computer che esegue Skype for Business Server o in cui sono installati gli strumenti di amministrazione di Skype for Business Server, accedere usando un account membro del gruppo utenti locali o un account con diritti utente equivalenti.
     
     > [!NOTE]
-    > Puoi definire una topologia usando un account che è un membro del gruppo utenti locali, ma per pubblicare una topologia, necessaria per aggiungere un server alla topologia, devi usare un account membro del gruppo **Domain Admins** e **RTCUniversalServer Gruppo amministratori** e con autorizzazioni di controllo completo (lettura, scrittura e modifica) sulla condivisione di file in uso per l'archivio file di Skype for Business Server (in modo che generatore di topologia possa configurare l'elenco di controllo di accesso discrezionale richiesto (DACL) o un account con diritti equivalenti.
+    > Puoi definire una topologia usando un account che è un membro del gruppo utenti locali, ma per pubblicare una topologia, necessaria per aggiungere un server alla topologia. è necessario usare un account che sia membro del gruppo **Domain Admins** e del gruppo **RTCUniversalServerAdmins** e che disponga delle autorizzazioni di controllo completo (lettura, scrittura e modifica) nella condivisione file in uso per l'archivio file di Skype for Business Server (in modo che il generatore di topologia possa configurare l'elenco di controllo di accesso discrezionale richiesto o un account con diritti equivalenti.
   
 2. Aprire la topologia creata nella sezione precedente usando generatore di topologie.
     

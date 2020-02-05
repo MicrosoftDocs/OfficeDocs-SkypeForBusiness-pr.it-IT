@@ -15,19 +15,20 @@ appliesto:
 - Skype for Business
 localization_priority: Normal
 f1.keywords:
-- ms.lync.lac.UsersExternalAccess
-- ms.lync.lac.UsersGeneralOptions
-- ms.lync.lac.UsersLyncToPhoneMoreInfo
+- CSH
 ms.custom:
 - Setup
 - LIL_Placement
+- ms.lync.lac.UsersExternalAccess
+- ms.lync.lac.UsersGeneralOptions
+- ms.lync.lac.UsersLyncToPhoneMoreInfo
 description: 'Informazioni su come modificare le impostazioni di Skype for business per singoli utenti, ad esempio: conferenze audio e video, registrazione di chiamate e riunioni. '
-ms.openlocfilehash: a384acdadb6ca4df621d45abdde4157df2029619
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: d6054db4bfdd8b161dca427237a10d70ba558fcb
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706511"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41769689"
 ---
 # <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti
 

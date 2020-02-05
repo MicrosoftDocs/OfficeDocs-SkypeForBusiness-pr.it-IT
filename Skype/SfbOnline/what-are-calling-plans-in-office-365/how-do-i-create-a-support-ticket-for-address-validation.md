@@ -16,16 +16,18 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-f1.keywords: ms.lync.lac.CivicAddressValidationOpenSupportTicket
+f1.keywords:
+- CSH
 ms.custom:
 - Calling Plans
+- ms.lync.lac.CivicAddressValidationOpenSupportTicket
 description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: 010191a3e70e9f4d9be6ec34d57118d9b79dfec4
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: dd748a532957790d977b10fc0ec94f7f8af7b910
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41705901"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41769319"
 ---
 # <a name="how-do-i-create-a-support-ticket-for-address-validation"></a>Come faccio a creare un ticket di supporto per la convalida dell'indirizzo?
 

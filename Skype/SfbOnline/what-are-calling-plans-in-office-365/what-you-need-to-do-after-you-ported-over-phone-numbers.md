@@ -17,16 +17,17 @@ appliesto:
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
-- ms.lync.lac.PortOrderFinish
+- CSH
 ms.custom:
 - Calling Plans
+- ms.lync.lac.PortOrderFinish
 description: Dopo aver convertito i numeri di telefono in Skype for business, vedere cosa è necessario fare.
-ms.openlocfilehash: effddc74a74f72b4f167b793a09b8ee903fc0d2a
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: b96a0f62dc6c31de744786a47a7a7ef6d26c0937
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692291"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41769229"
 ---
 # <a name="what-do-you-need-to-do-after-you-have-ported-over-your-phone-numbers"></a>Cosa occorre fare dopo aver effettuato il porting sui numeri di telefono?
 
