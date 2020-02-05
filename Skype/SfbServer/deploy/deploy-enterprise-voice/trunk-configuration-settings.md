@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4ebd710c-38cd-4cff-9a45-df029d424580
 description: 'Riepilogo: informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk usando il pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: f724526f35a530c19e709e7faa62369e454ea6a4
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 9e208355f02d97802b2e1de2457e542fc0bb12c3
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240302"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41766949"
 ---
 # <a name="create-a-new-collection-of-trunk-configuration-settings-in-skype-for-business-server"></a>Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server 
 
@@ -67,13 +69,13 @@ Quando si creano le impostazioni di configurazione del trunk SIP tramite il pann
     
 2. Nella scheda **configurazione trunk** fare clic su **nuovo**e quindi su **Trunk sito** per creare le nuove impostazioni nell'ambito del sito o trunk del **pool** per creare le nuove impostazioni nell'ambito del servizio.
     
-3. Nella finestra di dialogo **Seleziona un sito** o **Seleziona un servizio** (la finestra di dialogo visualizzata dipende dal fatto che si stiano creando impostazioni con ambito del sito o con ambito servizio) selezionare la posizione per le nuove impostazioni di configurazione e quindi fare clic su **OK** . . Se la finestra di dialogo è vuota, significa che non è disponibile alcuna posizione per creare le nuove impostazioni. ad esempio, se la finestra di dialogo **Seleziona sito** è vuota, significa che tutti i siti sono già stati assegnati a una raccolta di siti di configurazione trunk e ogni sito (e ogni servizio) può ospitare solo una di queste raccolte. In questo caso, puoi eliminare la raccolta esistente e creare una nuova raccolta oppure semplicemente modificare la raccolta esistente.
+3. Nella finestra di dialogo **Seleziona un sito** o **Seleziona un servizio** (la finestra di dialogo visualizzata dipende dal fatto che si stiano creando impostazioni con ambito del sito o con ambito servizio) selezionare la posizione per le nuove impostazioni di configurazione e quindi fare clic su **OK**. Se la finestra di dialogo è vuota, significa che non è disponibile alcuna posizione per creare le nuove impostazioni. ad esempio, se la finestra di dialogo **Seleziona sito** è vuota, significa che tutti i siti sono già stati assegnati a una raccolta di siti di configurazione trunk e ogni sito (e ogni servizio) può ospitare solo una di queste raccolte. In questo caso, puoi eliminare la raccolta esistente e creare una nuova raccolta oppure semplicemente modificare la raccolta esistente.
     
 4. Nella finestra di dialogo **nuova configurazione trunk** eseguire le selezioni appropriate e quindi fare clic su **OK**.
     
-5. La proprietà **state** per la raccolta verrà aggiornata in UNCOMMITTED. **** Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **commit** e quindi su **commit tutti**.
+5. La proprietà **state** per la raccolta verrà aggiornata in **UNCOMMITTED**. Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **commit** e quindi su **commit tutti**.
     
-6. Nella finestra di dialogo **impostazioni di configurazione vocale** non impegnata fare clic su **OK**.
+6. Nella finestra di dialogo **impostazioni di configurazione vocale non impegnata** fare clic su **OK**.
     
 7. Nella finestra di dialogo **Pannello di controllo di Skype for Business Server** fare clic su **OK**.
     

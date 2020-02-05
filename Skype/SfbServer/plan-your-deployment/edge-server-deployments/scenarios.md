@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 7b9c211b-deb0-479d-b184-973f08b96d07
 description: 'Riepilogo: rivedere questi scenari per pianificare la topologia di Edge Server in Skype for Business Server.'
-ms.openlocfilehash: f978d3ac5da0611808b09c7556302f52478d95ee
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 64d38b5c9b4a32991bf87bd6ba8af87c92db115f
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187811"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41754166"
 ---
 # <a name="edge-server-scenarios-in-skype-for-business-server"></a>Scenari di Edge Server in Skype for Business Server
  
@@ -93,11 +93,4 @@ Con questo scenario puoi avere una disponibilità elevata nella distribuzione di
 Con questo scenario puoi avere una disponibilità elevata nella distribuzione di Edge, che ti offre i vantaggi della scalabilità e del supporto per il failover.
   
 ![Scenario Edge per il bordo consolidato in scala con HLB](../../media/Plan_LyncServer_Edge_Scenario_ScaledConsolidatedEdgeHLB.jpg)
-  
-### <a name="port-diagram"></a>Diagramma di porta
-
-È inoltre presente un diagramma per i pool di bordi consolidati in scala con bilanciamento del carico hardware
-  
-![Porte e protocolli della rete perimetrale del server perimetrale](../../media/Plan_LyncServer_Edge_NetPerimeter_ScaledConsolidatedEdgeHLB.jpg)
-  
-
+ 

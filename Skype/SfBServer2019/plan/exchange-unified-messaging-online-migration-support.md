@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio Exchange Unified Messaging online (ExchUMO) entro il 2020 febbraio. In questo articolo vengono riepilogate le informazioni che i clienti interessati dovrebbero conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 55382780fe6ef1c67cbecc1f6c997809f9173b8a
-ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
+ms.openlocfilehash: 1518bf9d5c45b4d53ee2934bb996978b82159617
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628672"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41737126"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
-In riferimento all' [annuncio](https://blogs.technet.microsoft.com/exchange/2019/02/08/retiring-unified-messaging-in-exchange-online/) dell'8 febbraio 2019, Microsoft sta ritirando il servizio Exchange Unified Messaging online (ExchUMO) entro il febbraio 2020. Questo articolo offre un riepilogo delle informazioni che i clienti interessati dovrebbero conoscere e fare per pianificare la continuità aziendale.
+In riferimento all' [annuncio](https://blogs.technet.microsoft.com/exchange/2019/02/08/retiring-unified-messaging-in-exchange-online/) dell'8 febbraio 2019, Microsoft sta ritirando il servizio Exchange Unified Messaging online (ExchUMO) entro il 28 febbraio 2020. Questo articolo offre un riepilogo delle informazioni che i clienti interessati dovrebbero conoscere e fare per pianificare la continuità aziendale.
  
 ExchUMO è distribuito dai clienti per la segreteria telefonica, l'operatore automatico, la coda delle chiamate e i servizi di integrazione fax. Microsoft prevede di aiutare i clienti a eseguire la migrazione a servizi di sistema telefonico che supportano già migliaia di clienti in Skype for business online e Microsoft teams.
 
@@ -77,7 +77,7 @@ Microsoft ha identificato varie distribuzioni di clienti che stanno consumando f
     Cercare un avviso nel centro notifiche di amministrazione con ulteriori dettagli e sequenza temporale per quanto riguarda la migrazione degli utenti. Le notifiche vengono inviate almeno 30 giorni prima del periodo di migrazione. 
 
     > [!Note]
-    > Se è stata ricevuta una notifica con la sequenza temporale di migrazione degli utenti e si vuole rinviare la migrazione per motivi aziendali, è possibile contattare il supporto tecnico Microsoft. Tieni presente che non puoi rinviare la migrazione oltre la data di pensionamento, 2020 febbraio. Per i clienti che potrebbero avere altre domande, contattare il team dell'account o il supporto tecnico Microsoft. I clienti che usano già Office 365 possono inviare un caso di supporto tramite il portale di amministrazione di Office 365. 
+    > Se è stata ricevuta una notifica con la sequenza temporale di migrazione degli utenti e si vuole rinviare la migrazione per motivi aziendali, è possibile contattare il supporto tecnico Microsoft. Si noti che non è possibile rinviare la migrazione oltre la data di pensionamento, il 28 febbraio 2020. Per i clienti che potrebbero avere altre domande, contattare il team dell'account o il supporto tecnico Microsoft. I clienti che usano già Office 365 possono inviare un caso di supporto tramite il portale di amministrazione di Office 365. 
 
 6. **Valutare la possibilità di optare per una migrazione pianificata**
 

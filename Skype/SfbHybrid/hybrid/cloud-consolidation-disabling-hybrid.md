@@ -14,17 +14,19 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 audience: ITPro
+f1.keywords:
+- NOCSH
 appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
 description: In questa appendice sono riportati i passaggi dettagliati per la disabilitazione dell'ibrido come parte del consolidamento cloud per Teams e Skype for business.
-ms.openlocfilehash: d3420c1bd40bbdeeff25747153210c2600d929f6
-ms.sourcegitcommit: afc7edd03f4baa1d75f9642d4dbce767fec69b00
+ms.openlocfilehash: 8fc9745c75f9b449751164065f974ccd8088218f
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40963074"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41726976"
 ---
 # <a name="disable-hybrid-to-complete-migration-to-the-cloud"></a>Disabilitare l'ibrido per completare la migrazione al cloud
 

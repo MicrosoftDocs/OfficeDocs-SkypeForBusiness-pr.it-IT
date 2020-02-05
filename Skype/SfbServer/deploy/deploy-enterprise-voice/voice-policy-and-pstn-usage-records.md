@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e6ff27e0-e2d1-4445-840f-08f738200c20
 description: 'Riepilogo: creare o modificare i criteri vocali e configurare i record di utilizzo PSTN tramite il pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: 76ce531eab2eb88b9a62c4bc38aae1e899802084
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 6fe67c9c3764196559740e114419dc427cdeadf3
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240206"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41766969"
 ---
 # <a name="create-or-modify-a-voice-policy-and-configure-pstn-usage-records-in-skype-for-business"></a>Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for business
 
@@ -66,7 +68,7 @@ ms.locfileid: "36240206"
 
    - La **chiamata del team** consente agli utenti di un team definito di rispondere alle chiamate per gli altri membri del team. Abilitato per impostazione predefinita.
 
-   - La reinstradazione **PSTN** consente alle chiamate effettuate dagli utenti a cui è assegnato questo criterio ad altri utenti dell'organizzazione di essere reinstradati sulla rete PSTN se la rete WAN è congestionata o non disponibile. Abilitato per impostazione predefinita.
+   - La **reinstradazione PSTN** consente alle chiamate effettuate dagli utenti a cui è assegnato questo criterio ad altri utenti dell'organizzazione di essere reinstradati sulla rete PSTN se la rete WAN è congestionata o non disponibile. Abilitato per impostazione predefinita.
 
    - **L'override dei criteri di larghezza di banda** consente agli amministratori di ignorare le decisioni sui criteri di controllo ammissione chiamata per un determinato utente. Disabilitata per impostazione predefinita.
 
@@ -116,7 +118,7 @@ ms.locfileid: "36240206"
 
    - Per definire una nuova route e associarla a questo record di utilizzo PSTN, fare clic su **nuovo**. Per informazioni dettagliate, vedere [creare o modificare una route vocale in Skype for business](create-or-modify-a-voice-route.md).
 
-   - Per modificare una route già associata a questo record di utilizzo PSTN, evidenziare la route e Lick **show**details.
+   - Per modificare una route già associata a questo record di utilizzo PSTN, evidenziare la route e Lick **Show Details**.
 
      c. Fare clic su **OK**.
 
@@ -217,7 +219,7 @@ ms.locfileid: "36240206"
 
    - La **chiamata del team** consente agli utenti di un team definito di rispondere alle chiamate per gli altri membri del team. Abilitato per impostazione predefinita.
 
-   - La reinstradazione **PSTN** consente alle chiamate effettuate dagli utenti a cui è assegnato questo criterio ad altri utenti dell'organizzazione di essere reinstradati sulla rete PSTN se la rete WAN è congestionata o non disponibile. Abilitato per impostazione predefinita.
+   - La **reinstradazione PSTN** consente alle chiamate effettuate dagli utenti a cui è assegnato questo criterio ad altri utenti dell'organizzazione di essere reinstradati sulla rete PSTN se la rete WAN è congestionata o non disponibile. Abilitato per impostazione predefinita.
 
    - **L'override dei criteri di larghezza di banda** consente agli amministratori di ignorare le decisioni del criterio CAC per un determinato utente. Disabilitata per impostazione predefinita.
 

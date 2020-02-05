@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d2fef3d0-7e78-4591-b712-d62ac71d71a5
 description: 'Riepilogo: informazioni su come creare o modificare un dial plan tramite il pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: 456bd4c46b371da260340fab4e2b7152d14f7924
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 44917b45180abe02926aa0905b5fd20cbed0ccec
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240728"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41767349"
 ---
 # <a name="create-or-modify-a-dial-plan-in-skype-for-business-server"></a>Creare o modificare un dial plan in Skype for Business Server
 
@@ -66,7 +68,7 @@ ms.locfileid: "36240728"
 
 9. Associare e configurare le regole di normalizzazione per il dial plan nel modo seguente:
 
-    - Per scegliere una o più regole da un elenco di tutte le regole di normalizzazione disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. In **Seleziona regole**di normalizzazione evidenziare le regole da associare al dial plan e quindi fare clic su **OK**.
+    - Per scegliere una o più regole da un elenco di tutte le regole di normalizzazione disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. In **Seleziona regole di normalizzazione**evidenziare le regole da associare al dial plan e quindi fare clic su **OK**.
 
    - Per definire una nuova regola di normalizzazione e associarla al dial plan, fare clic su **nuovo**. Per informazioni dettagliate sulla definizione di una nuova regola, vedere [creare o modificare una regola di normalizzazione in Skype for business](normalization-rules.md).
 
@@ -95,7 +97,7 @@ ms.locfileid: "36240728"
 
 ### <a name="to-modify-a-dial-plan"></a>Per modificare un dial plan
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere delegare le **autorizzazioni di configurazione**.
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **delegare le autorizzazioni di configurazione**.
 
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.
 
@@ -125,7 +127,7 @@ ms.locfileid: "36240728"
 
 9. Associare e configurare le regole di normalizzazione per il dial plan:
 
-   - Per scegliere una o più regole da un elenco di tutte le regole di normalizzazione disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. Nella finestra di dialogo **Seleziona regole** di normalizzazione evidenziare le regole da associare al dial plan e quindi fare clic su **OK**.
+   - Per scegliere una o più regole da un elenco di tutte le regole di normalizzazione disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. Nella finestra di dialogo **Seleziona regole di normalizzazione** evidenziare le regole da associare al dial plan e quindi fare clic su **OK**.
 
    - Per definire una nuova regola di normalizzazione e associarla al dial plan, fare clic su **nuovo**. Per informazioni dettagliate sulla definizione di una nuova regola, vedere [creare o modificare una regola di normalizzazione in Skype for business](normalization-rules.md).
 

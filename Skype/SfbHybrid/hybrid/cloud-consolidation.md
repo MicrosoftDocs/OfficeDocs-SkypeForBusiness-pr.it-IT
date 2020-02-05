@@ -14,173 +14,175 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 audience: ITPro
+f1.keywords:
+- NOCSH
 appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-description: Questo articolo descrive come ottenere il consolidamento per le organizzazioni con distribuzioni locali di Skype for business (o Lync) che vogliono trasferirsi per trasferire il carico di lavoro UC in teams e/o Skype for business online.
-ms.openlocfilehash: 33cbc823fd7aeece1591810d63d2ebf4a348237a
-ms.sourcegitcommit: 6b73b89f29a0eabbd9cdedf995d5325291594bac
+description: In questo articolo viene descritto come ottenere tale consolidamento per le organizzazioni con distribuzioni locali di Skype for business (o Lync) in cerca di spostamento per spostare il carico di lavoro UC nei team e/o in Skype for business online.
+ms.openlocfilehash: 7f3ad27404ec80e0592baa7174b01363f1aa0ed1
+ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37018845"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41726956"
 ---
 # <a name="cloud-consolidation-for-teams-and-skype-for-business"></a>Consolidamento cloud per Teams e Skype for business
 
-Molte aziende di grandi dimensioni hanno più di una foresta di annunci locale e, in alcuni casi, i clienti hanno più di una distribuzione di Exchange e/o Skype for Business Server (o Lync Server). Inoltre, anche le organizzazioni con una sola foresta locale potrebbero trovarsi in una situazione simile tramite una fusione o un'acquisizione aziendale. Dato che questi clienti si trasferiscono nel cloud, vogliono consolidare le istanze multiple di un carico di lavoro locale nel cloud in un unico tenant di Office 365. Questo articolo descrive come ottenere il consolidamento per le organizzazioni con più distribuzioni locali di Skype for business (o Lync) che vogliono trasferire il carico di lavoro UC al cloud Microsoft, ad esempio Microsoft teams e/o Skype for business online.
+Molte aziende di grandi dimensioni hanno più di una foresta di AD locale e, in alcuni casi, i clienti hanno più di una distribuzione di Exchange e/o Skype for Business Server (o Lync Server). Inoltre, anche le organizzazioni con una sola foresta locale possono trovarsi in una situazione analoga tramite una fusione o un'acquisizione aziendale. Poiché questi clienti si spostano nel cloud, desiderano consolidare più istanze di un determinato carico di lavoro locale nel cloud in un unico tenant di Office 365. In questo articolo viene descritto come ottenere tale consolidamento per le organizzazioni con più distribuzioni locali di Skype for business (o Lync) che desiderano spostare il carico di lavoro UC verso Microsoft Cloud, ad esempio Microsoft teams e/o Skype for business online.
 
-Storicamente, le linee guida per i clienti in questa situazione consolidano le distribuzioni locali e poi si muovono nel cloud. Anche se si tratta di un'opzione, questo articolo descrive una soluzione basata sulle nuove funzionalità che consente alle organizzazioni con più distribuzioni di Skype for business di eseguire la migrazione di una distribuzione alla volta in un unico tenant di Office 365, senza fare locale consolidamento. Tieni presente che, anche con questa nuova funzionalità, Skype for business online e Microsoft teams non supportano più foreste di Skype for business/Lync in modalità ibrida con un unico tenant di Office 365. 
+La guida è stata storicamente conforme ai clienti in questa situazione per consolidare le distribuzioni in locale e quindi passare al cloud. Anche se si tratta di un'opzione, in questo articolo viene descritta una soluzione basata su nuove funzionalità che consentono alle organizzazioni con più distribuzioni di Skype for business di migrare una distribuzione alla volta in un unico tenant di Office 365, senza effettuare operazioni locali consolidamento. Si noti che anche con questa nuova funzionalità, Skype for business online e Microsoft teams non supportano più foreste di Skype for business/Lync in modalità ibrida con un singolo tenant di Office 365. 
 
 > [!Important]
-> Prima di usare questa guida per la configurazione, assicurati di rivedere e comprendere le [limitazioni](#limitations), perché potrebbero influire sull'organizzazione.
+> Prima di utilizzare questa guida per la configurazione, assicurarsi di esaminare e comprendere le [limitazioni](#limitations), in quanto potrebbero influire sull'organizzazione.
 
 ## <a name="overview-of-cloud-consolidation"></a>Panoramica del consolidamento del cloud
 
-Il consolidamento di tutti gli utenti dal locale al cloud in un unico tenant di Office 365 può essere realizzato per qualsiasi organizzazione con più distribuzioni di Skype for business, a condizione che siano soddisfatti i requisiti chiave seguenti:
+Il consolidamento di tutti gli utenti provenienti da locali nel cloud in un unico tenant di Office 365 può essere raggiunto per qualsiasi organizzazione con più distribuzioni di Skype for business, purché vengano soddisfatti i requisiti chiave seguenti:
 
-- È necessario che al massimo un tenant di Office 365 sia coinvolto. Il consolidamento in scenari con più di un tenant di Office 365 non è supportato.
-- In qualsiasi momento, una sola foresta Skype for business locale può essere in modalità ibrida (spazio di indirizzi SIP condiviso). Tutte le altre foreste di Skype for business locali devono rimanere in locale (e presumibilmente federate tra loro). Tieni presente che queste altre organizzazioni locali *possono* eseguire la sincronizzazione con AAD, se necessario, con [nuove funzionalità per disabilitare i domini SIP online](https://docs.microsoft.com/en-us/powershell/module/skype/disable-csonlinesipdomain?view=skype-ps) disponibili a partire da dicembre 2018.
+- La maggior parte dei tenant di Office 365 è coinvolta. Il consolidamento in scenari con più di un tenant di Office 365 non è supportato.
+- In un determinato momento, solo una foresta Skype for business locale può essere in modalità ibrida (spazio di indirizzi SIP condiviso). Tutte le altre foreste di Skype for business locali devono rimanere in locale (e presumibilmente federata tra loro). Si noti che queste altre organizzazioni locali *possono* sincronizzarsi con AAD, se lo si desidera, con [nuove funzionalità per disabilitare i domini SIP online](https://docs.microsoft.com/en-us/powershell/module/skype/disable-csonlinesipdomain?view=skype-ps) disponibili al 2018 dicembre.
 
-I clienti con distribuzioni di Skype for business in più foreste devono eseguire la migrazione completa di tutti gli utenti di una singola foresta ibrida di Skype for business individualmente nel tenant di Office 365 usando la funzionalità di spazio di indirizzi SIP condiviso e quindi disabilitare Hybrid con tale distribuzione locale, prima di passare alla migrazione della nuova distribuzione locale di Skype for business. Prima di essere migrati nel cloud, gli utenti locali restano in uno stato federato con tutti gli utenti che non sono rappresentati nella stessa directory locale dell'utente.  
+I clienti con distribuzioni di Skype for business in più foreste devono migrare completamente tutti gli utenti di una singola foresta ibrida di Skype for business singolarmente nel tenant di Office 365 utilizzando la funzionalità dello spazio di indirizzi SIP condiviso e quindi disabilitare l'ibrido con tale distribuzione locale, prima di procedere alla migrazione della successiva distribuzione di Skype for business locale. Prima di essere migrati nel cloud, gli utenti locali restano in uno stato federato con tutti gli utenti che non sono rappresentati nella stessa directory locale dell'utente.  
 
 ## <a name="canonical-example-of-cloud-consolidation"></a>Esempio canonico di consolidamento del cloud
 
-Si consideri un'organizzazione con due distribuzioni federate locali separate di Skype for business che vuole consolidarle online in Microsoft teams o Skype for business online.
+Si consideri un'organizzazione con due distribuzioni federate locali separate di Skype for business che voglia consolidarle online in Microsoft teams o Skype for business online.
 
 
-|Dettagli dello stato originale |Dettagli dello stato desiderati |
+|Dettagli sullo stato originali |Dettagli sullo stato desiderati |
 |---------|---------|
-|<ul><li>2 distribuzioni locali Skype for business indipendenti in foreste di annunci separate<li>Al massimo 1 Forest è in Hybrid con Skype for business online <li> Org sono federati tra loro <li>Gli utenti non vengono sincronizzati tra questi insiemi di foreste<li> L'organizzazione potrebbe avere un tenant di Office 365 e può sincronizzare la propria directory in Azure AD</ul>|<ul> <li>1 Office 365 tenant<li>Non più distribuzioni locali, quindi nessun ibrido rimanente<li>Tutti gli utenti provenienti da locale sono ospitati in Skype for business online e facoltativamente possono essere utenti solo Teams <li>Nessuna impronta locale di Skype for business ovunque <li>Gli utenti hanno ancora l'autenticazione locale</ul> |
+|<ul><li>2 distribuzioni indipendenti di Skype for business locali in insiemi di strutture di Active Directory separati<li>Al massimo 1 la foresta è in ibrido con Skype for business online <li> Org sono federati tra loro <li>Gli utenti non vengono sincronizzati tra queste foreste<li> L'organizzazione può disporre di un tenant di Office 365 e può sincronizzare la propria directory in Azure AD</ul>|<ul> <li>1 Office 365 tenant<li>Non ci sono altre distribuzioni locali, quindi nessuna soluzione ibrida restante<li>Tutti gli utenti provenienti da locale sono ospitati in Skype for business online e, facoltativamente, possono essere utenti solo di Teams <li>Nessuna impronta locale di Skype for business via Internet <li>Gli utenti hanno ancora l'autenticazione locale</ul> |
 
 ![Consolidamento di due distribuzioni locali federate separate](../media/cloudconsolidationfig1.png)  
 
-Di seguito vengono illustrati i passaggi di base per ottenere dallo stato originale allo stato finale desiderato.  Tieni presente che alcune organizzazioni potrebbero scoprire che il loro punto di partenza è da qualche parte nel mezzo di questi passaggi. Vedere [altri punti di partenza](#other-starting-points), più avanti in questo articolo. Infine, in alcuni casi l'ordine può essere regolato, a seconda delle esigenze. I [vincoli e le limitazioni principali](#limitations) vengono descritti in seguito.
+Di seguito sono riportati i passaggi di base da recuperare dallo stato originale allo stato finale desiderato.  Si noti che alcune organizzazioni potrebbero scoprire che il punto di partenza è da qualche parte nel mezzo di questi passaggi. Vedere [altri punti di partenza](#other-starting-points), più avanti in questo articolo. Infine, in alcuni casi, l'ordine può essere regolato, a seconda delle esigenze. I [vincoli e i limiti principali](#limitations) vengono descritti in un secondo momento.
 
-1.  Ottenere un tenant di Office 365 se non ne esiste ancora uno.
-2.  Verificare che tutti i domini SIP rilevanti in entrambe le distribuzioni locali vengano verificati i domini di Office 365.
-3.  Selezionare una distribuzione Skype for business che sarà ibrida con Office 365. In questo esempio useremo OriginalCompany. <span>com.
-4.  [Abilitare AAD Connect per la foresta](configure-azure-ad-connect.md) che prima o poi diventa ibrida (OriginalCompany<span> . com). 
-5.  Se si introdurranno team nell'organizzazione, impostare i criteri a livello di tenant per [TeamsUpgradePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/grant-csteamsupgradepolicy) in SfBWithTeamsCollab o in una delle altre modalità di SFB (SfBOnly o SfBWithTeamsCollabAndMeetings). Questo è fondamentale per garantire il routing delle chiamate e delle chat dagli utenti che si trasferiscono in teams solo agli utenti che rimangono in locale.
-6.  A questo punto è consigliabile (ma non ancora richiesto fino al passaggio 11) per [abilitare la connessione AAD per l'altra foresta](cloud-consolidation-aad-connect.md) (AcquiredCompany<span> . com). Supponendo che AAD Connect sia abilitato in entrambe le foreste, l'organizzazione ha l'aspetto della **[Figura A](#figure-a)**, che può essere un punto di partenza comune per alcuni org. 
-7.  Per tutti i domini SIP ospitati da altre distribuzioni locali (in questo caso, AcquiredCompany.<span> com), [Disabilita questi domini SIP in Skype for business online](https://docs.microsoft.com/en-us/powershell/module/skype/disable-csonlinesipdomain) usando `Disable-CsOnlineSipDomain` in PowerShell. (Si tratta di nuove funzionalità del 2018 dicembre)
-8.  [Configurare Skype for business Hybrid](configure-federation-with-skype-for-business-online.md) per OriginalCompany. <span>com (l'unica distribuzione che ha ancora attivato i domini SIP online).
-9.  Nella distribuzione ibrida (OriginalCompany.<span> com), iniziare [a spostare gli utenti da Skype for business in locale al cloud](move-users-between-on-premises-and-cloud.md) (solo per i team o meno) in modo che l'account venga ospitato in Skype for business online. A questo punto l'organizzazione ha l'aspetto della **[Figura B](#figure-b)**. Le modifiche chiave della figura A sono:
-    - Gli utenti di entrambe le directory locali si trovano ora in AAD.
-    - AcquiredCompany. <span>com è un dominio SIP disabilitato online.
-    - Alcuni utenti sono stati spostati online in Skype for business online o in teams. (Vedi l'utente viola A.)
-10. Dopo aver spostato tutti gli utenti nel cloud, [disabilitare Hybrid con la distribuzione locale di Skype for business](cloud-consolidation-disabling-hybrid.md) per OriginalCompany. <span>com da Office 365:  
+1.  Se uno ancora non esiste, ottenere un tenant di Office 365.
+2.  Verificare che tutti i domini SIP rilevanti nelle distribuzioni locali siano verificati come domini di Office 365.
+3.  Scegliere una distribuzione Skype for business che sarà ibrida con Office 365. In questo esempio verrà utilizzato OriginalCompany. <span>com.
+4.  [Abilitare AAD Connect per la foresta](configure-azure-ad-connect.md) che prima diventerà ibrida (OriginalCompany<span> . com). 
+5.  Se si intende introdurre team nell'organizzazione, impostare il criterio a livello di tenant per [TeamsUpgradePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/grant-csteamsupgradepolicy) su SfBWithTeamsCollab oppure su una delle altre modalità di questo (SfBOnly o SfBWithTeamsCollabAndMeetings). Questo è fondamentale per garantire il routing di chiamate e chat da parte di utenti che si spostano in team solo per gli utenti che rimangono in locale.
+6.  È consigliabile, a questo punto, ma non ancora necessario fino al passaggio 11, per [abilitare AAD Connect per l'altra foresta](cloud-consolidation-aad-connect.md) (AcquiredCompany<span> . com). Presupponendo che AAD Connect sia abilitato in entrambe le foreste, l'organizzazione ha l'aspetto di **[una figura a](#figure-a)**, che può essere un punto di partenza comune per alcuni org. 
+7.  Per tutti i domini SIP ospitati da altre distribuzioni locali (in questo caso, AcquiredCompany.<span> com), [disabilitare questi domini SIP in Skype for business online](https://docs.microsoft.com/en-us/powershell/module/skype/disable-csonlinesipdomain) utilizzando `Disable-CsOnlineSipDomain` in PowerShell. (Questa è una nuova funzionalità del 2018 dicembre).
+8.  [Configurare Skype for business ibrido](configure-federation-with-skype-for-business-online.md) per OriginalCompany. <span>com (la distribuzione che ha ancora abilitato i domini SIP online).
+9.  Nella distribuzione ibrida (OriginalCompany.<span> com), avviare [lo spostamento degli utenti da Skype for business in locale al cloud](move-users-between-on-premises-and-cloud.md) (solo se solo team o meno) in modo che account sia ospitato in Skype for business online. A questo punto l'organizzazione ha l'aspetto di **[Figura B](#figure-b)**. Le modifiche alla chiave della figura A sono le seguenti:
+    - Gli utenti di entrambe le directory locali sono ora presenti in AAD.
+    - AcquiredCompany. <span>com è un dominio SIP disabilitato in linea.
+    - Alcuni utenti sono stati spostati online in Skype for business online o in teams. (Vedere l'utente viola A.)
+10. Dopo che tutti gli utenti sono stati spostati nel cloud, [disabilitare l'ambiente ibrido con la distribuzione locale di Skype for business](cloud-consolidation-disabling-hybrid.md) per OriginalCompany. <span>com da Office 365:  
     - Disabilitare il dominio diviso nel tenant di Office 365.
     - Disabilitare la possibilità di comunicare con Office 365 in OriginalCompany. <span>com locale.
     - Aggiornare i record DNS per OriginalCompany. <span>com per puntare a Office 365.
-11. Se non è già stato fatto, [abilitare AAD Connect per la foresta successiva](cloud-consolidation-aad-connect.md) che verrà ibrida (AcquiredCompany<span> . com). A questo punto, l'organizzazione ha un aspetto simile alla **[Figura C](#figure-c)**. Questo potrebbe essere un altro punto di partenza comune per alcune organizzazioni. 
-12. In PowerShell [abilitare i domini SIP per la prossima distribuzione locale](https://docs.microsoft.com/en-us/powershell/module/skype/enable-csonlinesipdomain?view=skype-ps) che sarà ibrida, AcquiredCompany. <span>com. Questa operazione viene eseguita `Enable-CsOnlineSipDomain`con le nuove funzionalità disponibili al 2018 dicembre.
-13. Se si usa la federazione chiusa, è necessario aggiungere tutti i domini SIP (ad eccezione *. microsoftonline.com) del tenant online puro come domini consentiti nello **stesso** Office 365. Tieni presente che può essere necessario un po' di tempo prima che la modifica abbia effetto e che non ci siano problemi a farlo in anticipo, quindi ti consigliamo di farlo prima di passare al passaggio 14.
+11. Se non è già stato fatto, [abilitare AAD Connect per la foresta successiva](cloud-consolidation-aad-connect.md) che passerà a un<span> ambiente ibrido (AcquiredCompany. com). A questo punto, l'organizzazione ha l'aspetto di **[Figura C](#figure-c)**. Può trattarsi di un altro punto di partenza comune per alcune organizzazioni. 
+12. In PowerShell, [abilitare i domini SIP per la successiva distribuzione locale](https://docs.microsoft.com/en-us/powershell/module/skype/enable-csonlinesipdomain?view=skype-ps) che andrà a un ambiente ibrido, AcquiredCompany. <span>com. Questa operazione viene fatta `Enable-CsOnlineSipDomain`usando, che è una nuova funzionalità disponibile al 2018 dicembre.
+13. Se si utilizza la federazione chiusa, è necessario aggiungere qualsiasi dominio SIP (escluso *. microsoftonline.com) del tenant puro online come domini consentiti nello **stesso** Ufficio 365. Si noti che è possibile richiedere un certo tempo prima che la modifica abbia effetto e che non vi siano danni in questo modo in anticipo, quindi si consiglia di procedere bene prima di passare al passaggio 14.
 14. Aggiornare l'ambiente locale per accettare qualsiasi dominio SIP dal tenant online, in modo che corrispondano.
-    - [Aggiornare la San in tutti i certificati Edge](cloud-consolidation-edge-certificates.md) per avere lo stesso valore di prima, oltre ai valori per tutti i domini SIP esistenti online (eccetto *. microsoftonline.com), in questo caso SIP. OriginalCompany. <span>com.
-    - Verificare che OriginalCompany. <span>com è un [dominio consentito](https://docs.microsoft.com/en-us/powershell/module/skype/new-csalloweddomain) nella distribuzione locale, AcquiredCompany. Aggiungere domini consentiti.
-15. [Abilitare Skype for business Hybrid](configure-federation-with-skype-for-business-online.md) tra AcquiredCompany locale. <span>com e il cloud.
-16. Come desiderato, [eseguire la migrazione degli utenti dal locale al cloud](move-users-between-on-premises-and-cloud.md). Puoi eseguire la migrazione degli utenti direttamente alla modalità [TeamsOnly](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability) oppure puoi eseguire la migrazione prima a Skype for business online. Durante questo stato, l'organizzazione ha un aspetto simile a **[Figura D](#figure-d)**.
-17. Dopo la migrazione di tutti gli utenti, [disabilitare Hybrid con l'ambiente locale](cloud-consolidation-disabling-hybrid.md) per *rendere l'organizzazione cloud puro*.
+    - [Aggiornare la rete San in tutti i certificati Edge](cloud-consolidation-edge-certificates.md) in modo che corrisponda allo stesso valore di prima, oltre ai valori per i domini SIP esistenti in linea (eccetto *. microsoftonline.com), in questo caso SIP. OriginalCompany. <span>com.
+    - Assicurarsi che OriginalCompany. <span>com è un [dominio consentito](https://docs.microsoft.com/en-us/powershell/module/skype/new-csalloweddomain) nella distribuzione locale, AcquiredCompany. Aggiungere domini consentiti.
+15. [Abilitare l'ambiente ibrido Skype for business](configure-federation-with-skype-for-business-online.md) tra AcquiredCompany locale. <span>com e il cloud.
+16. Come desiderato, [eseguire la migrazione degli utenti da locale al cloud](move-users-between-on-premises-and-cloud.md). È possibile eseguire la migrazione degli utenti direttamente alla modalità [TeamsOnly](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability) oppure è possibile eseguirne la migrazione prima a Skype for business online. Durante questo stato, l'organizzazione ha l'aspetto di **[Figura D](#figure-d)**.
+17. Dopo la migrazione di tutti gli utenti, disabilitare la modalità [ibrida con l'ambiente locale](cloud-consolidation-disabling-hybrid.md) per *rendere l'organizzazione cloud puro*.
 
-I diagrammi seguenti mostrano la configurazione in diversi punti chiave durante questo processo.
+Nei diagrammi riportati di seguito viene illustrata la configurazione in vari punti chiave durante questo processo.
 
 ##### <a name="figure-a"></a>Figura A:
 
-- Entrambe le organizzazioni vengono sincronizzate tramite AAD Connect, pertanto AAD include tutti gli utenti di entrambe le distribuzioni locali.
+- Entrambe le organizzazioni eseguono la sincronizzazione tramite AAD Connect, pertanto AAD ha tutti gli utenti da entrambe le distribuzioni locali.
 - Tutti gli utenti ospitati in locale.  
-- Skype for business Hybrid *non* è ancora configurato.
-- Se gli utenti di una distribuzione usano team, non saranno in grado di federarsi tra loro (o qualsiasi organizzazione), né avranno l'interoperabilità con gli utenti di Skype for business. In questa fase, Microsoft consiglia di usare teams solo per i canali.<br><br>
-    ![Figura di un diagramma](../media/cloudconsolidationfiga.png)
+- L'ambiente ibrido di Skype for business *non* è stato ancora configurato.
+- Se gli utenti di entrambe le distribuzioni utilizzano i team, non saranno in grado di eseguire la Federazione tra loro (o qualsiasi organizzazione), né avranno interoperabilità con gli utenti di Skype for business. Anche se in questa fase, Microsoft consiglia di utilizzare Team solo per i canali.<br><br>
+    ![Figura A diagramma](../media/cloudconsolidationfiga.png)
 
 ##### <a name="figure-b"></a>Figura B:
 
-- AcquiredCompany. <span>com è un dominio SIP [disabilitato](https://docs.microsoft.com/en-us/powershell/module/skype/disable-csonlinesipdomain) online. Tutti gli utenti sono locali. Se usano teams, non hanno la Federazione o l'interoperabilità. In questa fase, Microsoft consiglia di usare teams solo per i canali.
-- Skype for business Hybrid è stato abilitato per una delle organizzazioni locali.
-- Alcuni utenti dell'organizzazione ibrida sono stati spostati nel cloud (utente A come indicato da ombreggiatura viola). Questi utenti possono essere utenti di Skype for business online o solo teams con l'interoperabilità completa e il supporto federativo.<br><br>
+- AcquiredCompany. <span>com è un dominio SIP [disabilitato](https://docs.microsoft.com/en-us/powershell/module/skype/disable-csonlinesipdomain) in linea. Tutti gli utenti sono in locale. Se utilizzano Team non dispongono di una federazione o di un'interoperabilità. Anche se in questa fase, Microsoft consiglia di utilizzare Team solo per i canali.
+- Skype for business ibrido è stato abilitato per una delle organizzazioni locali.
+- Alcuni utenti nell'organizzazione ibrida sono stati spostati nel cloud (utente A come indicato dall'ombreggiatura viola). Questi utenti possono essere utenti di Skype for business online o solo per i team che dispongono di un supporto di interoperabilità completo e federativo.<br><br>
     ![Figura B diagramma](../media/cloudconsolidationfigb.png)
 
 ##### <a name="figure-c"></a>Figura C:
 
-- Tutti gli utenti di OriginalCompany. <span>com ora sono nel cloud (Homer in Skype for business online). È consigliabile che siano anche solo teams.
-- Configurazione ibrida di Skype for business con OriginalCompany. <span>la distribuzione com è stata disattivata. La distribuzione locale non è più disponibile.
-- Se AcquiredCompany. <span>com non è stata precedentemente sincronizzata con AAD, per continuare da qui è necessario sincronizzarla ora. Ma non è ancora ibrido (spazio di indirizzi SIP condiviso) e finché l'organizzazione non è pronta per il passaggio a Hybrid, il dominio SIP online per l'organizzazione locale pura (AcquiredCompany.com) deve rimanere disabilitato, in modo che gli utenti di Team online possano comunicare con utenti locali.<br><br>
+- Tutti gli utenti di OriginalCompany. <span>com sono ora presenti nel cloud (in Skype for business online). È consigliabile che siano anche solo squadre.
+- Configurazione ibrida di Skype for business con OriginalCompany. <span>la distribuzione com è stata disattivata. La distribuzione locale è andata.
+- Se AcquiredCompany. <span>com non è stata precedentemente sincronizzata con AAD, per continuare da qui è necessario sincronizzarla adesso. Tuttavia, non è ancora ibrido (spazio di indirizzi SIP condiviso) e finché l'organizzazione non è pronta per il passaggio a un ambiente ibrido, il dominio SIP online per l'organizzazione pura locale (AcquiredCompany.com) deve rimanere disabilitato, in modo che gli utenti di Team online possano comunicare con utenti locali.<br><br>
     ![Figura C diagramma](../media/cloudconsolidationfigc.png)
 
 ##### <a name="figure-d"></a>Figura D:
 
 - AcquiredCompany. <span>com è ora abilitato come dominio SIP online.
-- La versione locale viene aggiornata per accettare OriginalCompany. <span>com. (Sia il dominio consentito che i certificati Edge vengono aggiornati).
-- Lo spazio di indirizzi SIP condiviso è abilitato tra AcquiredCompany. <span>tenant di com e Office 365.
-- Alcuni utenti dell'organizzazione ibrida potrebbero essere stati spostati nel cloud, ad esempio l'utente D seguente (indicato da ombreggiatura viola).<br><br>
+- L'ambiente locale viene aggiornato per accettare OriginalCompany. <span>com. (Entrambi i domini consentiti e i certificati Edge vengono aggiornati).
+- Lo spazio degli indirizzi SIP condiviso è abilitato tra AcquiredCompany. <span>tenant com e Office 365.
+- Alcuni utenti nell'organizzazione ibrida potrebbero essere stati spostati nel cloud, ad esempio l'utente D seguente (indicato da ombreggiatura viola).<br><br>
     ![Figura D diagramma](../media/cloudconsolidationfigd.png)
 
 ## <a name="other-starting-points"></a>Altri punti di partenza
 
-I passaggi dell'esempio canonico precedente presuppongono che l'organizzazione inizi con due distribuzioni locali federate senza presenza di Office 365. Alcune organizzazioni potrebbero tuttavia avere un'impronta di Office 365 esistente e possono essere presenti diversi punti di ingresso nella sequenza precedente. Sono disponibili quattro configurazioni tipiche:
+La procedura descritta nell'esempio canonico precedente presuppone che l'organizzazione inizi con due distribuzioni locali federate senza presenza di Office 365. Tuttavia, alcune organizzazioni possono disporre di un footprint di Office 365 esistente e possono essere presenti diversi punti di ingresso nella sequenza precedente. Sono disponibili quattro configurazioni tipiche:
 
 - Più organizzazioni locali federate con nessun tenant di Office 365. In questo caso, iniziare dal passaggio 1.
-- Più organizzazioni locali federate che stanno già sincronizzando più insiemi di strutture Skype for business in un unico tenant di Azure AD. Tale organizzazione è simile all'organizzazione ipotetica nella figura A, che ha completato i passaggi 1-6 e dovrebbe iniziare al passaggio 7.
-- Un'organizzazione ibrida che federa con 1 o più altre organizzazioni locali pure, nessuna delle quali viene sincronizzata con AAD. Tale organizzazione assomiglierà all'organizzazione ipotetica nella **Figura E**, illustrata di seguito.
+- Più organizzazioni locali federate che già eseguono la sincronizzazione di più foreste Skype for business in un unico tenant Azure AD. Tale organizzazione assomiglia all'organizzazione ipotetica nella figura A, che ha completato i passaggi 1-6 e deve iniziare al passaggio 7.
+- Un'organizzazione ibrida che federa una o più organizzazioni locali pure, nessuna delle quali è sincronizzata con AAD. Tale organizzazione assomiglierà all'ipotetica organizzazione della **Figura E**, illustrata di seguito.
     - Questa organizzazione è simile alla figura B, che ha completato i passaggi 1-9, tranne:
-        - Le distribuzioni non ibride di Skype for business *non* sono ancora state sincronizzate con Azure ad.
+        - Le distribuzioni non ibride di Skype for business *non* sono ancora sincronizzate con Azure ad.
         -  I domini SIP online non sono ancora disabilitati. 
-    - Queste organizzazioni devono essere:
-        - Completare la migrazione dell'organizzazione ibrida esistente e immettere la sequenza precedente al passaggio 10.  O
-        - Se si vuole sincronizzare tutti gli altri insiemi di strutture Skype for business in AAD prima di completare la migrazione dell'organizzazione ibrida, l'organizzazione deve eseguire il passaggio 7 (disabilitare tutti i domini SIP online in qualsiasi altra distribuzione Skype for business locale che verrà sincronizzarsi con AAD) e quindi abilitare AAD Connect e quindi continuare con il passaggio 10 (rimuovere la distribuzione ibrida originale).       
+    - Queste organizzazioni dovrebbero:
+        - Completare la migrazione dell'organizzazione ibrida esistente e immettere la sequenza di cui sopra al passaggio 10.  O
+        - Se si desidera sincronizzare tutti gli altri insiemi di strutture di Skype for business in AAD prima del completamento della migrazione dell'organizzazione ibrida, l'organizzazione deve eseguire il passaggio 7 (disabilitare tutti i domini SIP online in qualsiasi altra distribuzione Skype for business locale che consentirà di sincronizzazione in AAD), quindi abilitare AAD Connect e quindi continuare con il passaggio 10 (rimuovere le autorizzazioni per la distribuzione ibrida originale).       
                 **Figura E**<br>
                 ![Figura E diagramma](../media/cloudconsolidationfige.png)
-- Un'organizzazione pura di Skype for business online (che può o non può usare Teams) che federa con un'organizzazione separata di Skype for business locale. Dopo che l'organizzazione ha disabilitato il dominio SIP online per l'organizzazione locale e abilitato AAD Connect per l'organizzazione locale di Skype for business, è simile all'ipotetica organizzazione illustrata nella **[Figura C](#figure-c)** che contiene i passaggi completati 1-11.
+- Un'organizzazione di Skype for business online pura (che può o meno usare Teams) che viene federata con un'organizzazione di Skype for business locale separata. Una volta che l'organizzazione disattiva il dominio SIP online per l'organizzazione locale e Abilita AAD Connect per l'organizzazione di Skype for business locale, assomiglia all'organizzazione ipotetica illustrata nella **[Figura C](#figure-c)** che ha completato i passaggi 1-11.
 
 ## <a name="limitations"></a>Limitazioni
 
-- È necessario che al massimo un tenant di Office 365 sia coinvolto. Il consolidamento in scenari con più di un tenant di Office 365 non è supportato.
-- Una sola foresta Skype for business locale può essere in modalità ibrida (spazio di indirizzi SIP condiviso) alla volta. Tutte le altre foreste di Skype for business locali devono rimanere solo in locale e devono essere federate tra loro e il tenant di Office 365.
-- Prima di essere migrati nel cloud, esiste un'esperienza asimmetrica per gli utenti in questa distribuzione, perché non tutti gli utenti in online sono rappresentati in locale:
-    - L'esperienza può essere riassunta come segue:
-        - Qualsiasi utente di Homer online interagirà con gli utenti locali nell'ambiente ibrido, come se l'utente fosse ibrido.
-        - Gli utenti locali nella distribuzione ibrida interagiranno con gli utenti online rappresentati nella directory locale come se fossero ibridi. 
-        - Gli utenti locali nella distribuzione ibrida interagiranno con gli utenti online che non sono rappresentati in un annuncio locale come federati.
-    - Nella **[Figura D](#figure-d)** sopra, l'utente E è locale in AcquiredCompany. <span>com.  L'utente E interagirà con l'utente D (homed online) usando l'esperienza ibrida standard, ma l'utente E avrà un'esperienza federata con gli utenti A, B e C, perché non sono rappresentati nella directory locale. Tuttavia, gli utenti A, B e C interagiranno con l'utente E come se l'utente fosse in Hybrid.
-    - Implicazioni dell'interazione tra ibridi e federazioni:
+- La maggior parte dei tenant di Office 365 è coinvolta. Il consolidamento in scenari con più di un tenant di Office 365 non è supportato.
+- Solo una foresta Skype for business locale può essere in modalità ibrida (spazio di indirizzi SIP condiviso) alla volta. Tutte le altre foreste di Skype for business locali devono rimanere solo in locale e devono essere federate tra loro e il tenant di Office 365.
+- Prima di eseguire la migrazione nel cloud, è presente un'esperienza asimmetrica per gli utenti in questa distribuzione, perché non tutti gli utenti in linea sono rappresentati in locale:
+    - L'esperienza può essere riassunta come indicato di seguito:
+        - Qualsiasi utente ospitato online interagirà con gli utenti locali nell'ambiente ibrido come se l'utente fosse ibrido.
+        - Gli utenti locali nella distribuzione ibrida interagiscono con gli utenti online che sono rappresentati nella loro directory locale come se fossero ibridi. 
+        - Gli utenti locali nella distribuzione ibrida interagiscono con gli utenti online che non sono rappresentati in un annuncio locale come federato.
+    - Nella **[Figura D](#figure-d)** sopra, l'utente E è in locale in AcquiredCompany. <span>com.  L'utente E interagirà con l'utente D (Homes online) utilizzando l'esperienza ibrida standard, ma l'utente E avrà un'esperienza federata con gli utenti A, B e C, perché non sono rappresentati nella directory locale. Tuttavia, gli utenti A, B e C interagiscono con l'utente E come se si trattasse di un utente ibrido.
+    - Implicazioni dell'interazione tra ibrido e Federazione:
         - La presenza non viene sottoscritta automaticamente per gli utenti federati, a meno che l'utente non sia contrassegnato come contatto.
-        - L'inoltro di chiamata non funziona tra domini federati.
+        - L'inoltro di chiamata non funziona tra i domini federati.
         - Gli scenari di trasferimento delle chiamate sono più limitati.
-        - La limitazione può essere applicata al traffico federativo.
-- In base a questa esperienza asimmetrica, il supporto ufficiale per la funzionalità di chiamata in scenari interlocali tra un utente locale e un utente cloud che non si trova nella directory locale è limitato solo al peer to peer. 
+        - La limitazione può essere applicata al traffico federato.
+- Data questa esperienza asimmetrica, il supporto ufficiale per la funzionalità di chiamata in scenari cross-premise tra un utente locale e un utente cloud che non si trova nella directory locale è limitato al solo peer-to-peer. 
     - L'inoltro di chiamata, il trasferimento, le code di chiamata e così via tra questi utenti non è supportato.
-    - Questi scenari di chiamata non supportati continueranno a essere abilitati, ma in molti casi non saranno più disponibili in modo imprevedibile. 
-    - Nella **[Figura D](#figure-d)** sopra, l'utente e è locale e le chiamate con gli utenti a, B o C saranno supportate solo come peer-to-peer. Le chiamate con l'utente D non avrebbero limitazioni di supporto.  Tuttavia, dopo che l'utente locale E viene spostato nel cloud, questa restrizione non si applica più.
-- Se si hanno più distribuzioni di Skype for Business Server 2019 nell'ambiente, è possibile configurare solo una di queste distribuzioni per l'uso dell'operatore automatico aziendale, poiché tale funzionalità richiede la configurazione ibrida di Skype for Business Server. 
-- L'ordine di alcuni passaggi precedenti può essere regolato. Il requisito chiave che deve essere soddisfatta è che, se tutte queste condizioni sono vere:
-    - Più di una foresta Skype for business in locale che si sincronizza con un singolo tenant di AAD
+    - Questi scenari di chiamata non supportati continueranno a essere attivati, ma in molti casi avranno esito negativo in modi imprevedibili. 
+    - Nella **[Figura D](#figure-d)** sopra, l'utente e è in locale e le chiamate con gli utenti a, B o C saranno supportate solo come peer to peer. Le chiamate con l'utente D non avrebbero limitazioni di supporto.  Tuttavia, dopo che l'utente locale E viene spostato nel cloud, questa restrizione non si applica più.
+- Se si dispone di più di una distribuzione di Skype for Business Server 2019 nell'ambiente, solo 1 di tali distribuzioni può essere configurata per l'utilizzo dell'operatore automatico aziendale, poiché tale caratteristica richiede la configurazione ibrida di Skype for Business Server. 
+- È possibile modificare l'ordine di alcuni dei passaggi precedenti. Il requisito fondamentale che deve soddisfare è che se tutti questi sono veri:
+    - Più di una foresta di Skype for business in locale per la sincronizzazione con un singolo tenant di AAD
     - Il dominio diviso è abilitato con una foresta locale
-    - Almeno un utente nell'organizzazione ibrida è stato migrato nel cloud<br>   *Devi quindi disabilitare tutti* gli altri domini SIP online da qualsiasi altra foresta Skype for business locale. In caso contrario, la Federazione tra gli utenti online nell'organizzazione ibrida e gli utenti locali in altre organizzazioni si spezzerà in una direzione.
+    - Almeno un utente nell'organizzazione ibrida è stato migrato nel cloud<br>   Successivamente, è *necessario* disabilitare tutti gli altri domini SIP online da qualsiasi altra foresta Skype for business locale. In caso contrario, la Federazione tra gli utenti online nell'organizzazione ibrida e gli utenti locali in altre organizzazioni si romperà in una direzione.
 
 ## <a name="implications"></a>Implicazioni
 
-- Poiché esistono limitazioni nel supporto della funzionalità per le chiamate avanzate come descritto in precedenza, **le organizzazioni dovrebbero trattare questi stati asimmetrici come transitori come parte della migrazione e non perseguirli come stato stabile**.  
-- Le organizzazioni con più distribuzioni di Skype for business locali dovrebbero in genere iniziare con una distribuzione che può essere completamente migrata nel cloud, in modo che il consolidamento possa continuare. Si comprende che in alcuni casi ci saranno holdouts di determinati gruppi di utenti per i quali non è ancora possibile trasferirsi in teams. Quando si tratta di una considerazione in scenari che coinvolgono più foreste Skype for business, iniziare a eseguire la migrazione con un'altra foresta che non ha queste limitazioni, se possibile.
-- Quando si passa dal locale al cloud, gli utenti che hanno relazioni di delega e/o sono in genere coinvolti in scenari di inoltro di chiamata devono essere spostati insieme come unità.
+- Poiché vi sono limitazioni del supporto per la funzionalità di chiamata avanzata, come descritto in alto, **le organizzazioni devono considerare tali Stati asimmetrici come transitori come parte della migrazione e non inseguirli come stato stabile**.  
+- Le organizzazioni con più distribuzioni di Skype for business locali dovrebbero in genere iniziare con una distribuzione che può essere completamente migrata nel cloud, in modo che il consolidamento possa continuare. Si capisce che in alcuni casi vi sarà holdouts di alcuni gruppi di utenti per i quali non è ancora possibile passare ai team. Quando si tratta di una considerazione negli scenari che coinvolgono più foreste Skype for business, avviare la migrazione con un'altra foresta che non dispone di queste limitazioni, se possibile.
+- Quando si passa da un ambiente locale al cloud, gli utenti che dispongono di relazioni di delega e/o sono in genere coinvolti in scenari di inoltro di chiamata devono essere spostati insieme come unità.
 
-## <a name="considerations-for-moving-to-teamsonly-mode"></a>Considerazioni per passare alla modalità TeamsOnly
+## <a name="considerations-for-moving-to-teamsonly-mode"></a>Considerazioni su come passare alla modalità TeamsOnly
 
-Quando si spostano gli utenti dal locale al cloud in un ambiente ibrido, è possibile spostarli in modalità solo Skype for business o TeamsOnly. *Se si prevede di trasferire gli utenti in modalità TeamsOnly, assicurarsi di leggere prima di tutto questa sezione.*
+Quando si spostano gli utenti da locale al cloud in un ambiente ibrido, è possibile spostarli in modalità solo Skype for business o TeamsOnly. *Se si prevede di spostare gli utenti in modalità TeamsOnly, assicurarsi di leggere prima questa sezione.*
 
-- Quando si assegna la modalità TeamsOnly a un utente, tutte le chat e le chiamate di qualsiasi altro utente sbarcheranno nel client teams di tale utente. 
-- Se gli utenti con Skype for business locale usano principalmente client Skype for business e non teams, è consigliabile impostare TeamsUpgradePolicy in modo che il routing verso gli utenti locali venga sempre atterrato in Skype for business invece che in teams. Per garantire un corretto routing delle chat e delle chiamate tra gli utenti TeamsOnly e gli utenti che stanno ancora usando Skype for business in locale, gli utenti locali devono avere un valore effettivo di TeamsUpgradePolicy con una delle modalità di SfB, anziché le isole (che è la impostazione predefinita). 
-    - A questo scopo, *devi prima impostare l'istanza globale del tenant di TeamsUpgradePolicy su uno di questi valori*:
+- Quando si assegna la modalità TeamsOnly a un utente, tutte le chat e le chiamate provenienti da qualsiasi altro utente sbarcheranno nel client teams di tale utente. 
+- Se gli utenti di Skype for business in locale utilizzano principalmente client Skype for business e non team, è consigliabile impostare TeamsUpgradePolicy in modo che il routing per gli utenti locali sia sempre in Skype for business invece che in teams. Per garantire il corretto routing delle chat e delle chiamate tra gli utenti che sono TeamsOnly e gli utenti che continuano a usare Skype for business in locale, gli utenti locali devono avere un valore effettivo di TeamsUpgradePolicy con una delle modalità di questo, anziché le isole (che è la impostazione predefinita). 
+    - A tale scopo, *è necessario prima di tutto impostare l'istanza globale del tenant di TeamsUpgradePolicy su uno dei valori seguenti*:
         - SfBWithTeamsCollab (scelta consigliata)
         - SfBWithTeamsCollabAndMeetings
         - SfBOnly
-    - È possibile concedere criteri a livello di tenant usando questo comando:<br>`Grant-CsTeamsUpgradePolicy -PolicyName SfBWithTeamsCollab -Global`
-    - Nota: è necessario eseguire questa operazione a livello di tenant perché non è possibile assegnare i criteri a singoli utenti che non hanno un indirizzo SIP nella directory online. Mentre sono stati disabilitati i domini SIP online per le distribuzioni locali, gli utenti di tali domini non avranno indirizzi SIP nella directory online in base alla progettazione. L'unico modo per applicare criteri agli utenti locali è quindi l'assegnazione a livello di tenant. Al contrario, nella distribuzione ibrida gli utenti avranno un indirizzo SIP nella directory online in modo che possano essere assegnati in modo esplicito a un criterio, se si vuole che abbiano un valore diverso rispetto al criterio globale del tenant.
-- Il client teams UX non rispetta ancora le modalità SfB di TeamsUpgradePolicy. Ad esempio, quando in queste modalità, l'avvio delle chiamate e delle chat in team è attualmente possibile, anche se in futuro non sarà così. Ciò può causare confusione tra gli utenti perché le risposte possono talvolta atterrare in team e, a volte, Skype for business, a seconda delle circostanze. È consigliabile disabilitare separatamente la chiamata e la chat tramite TeamsMessagingPolicy e TeamsCallingPolicy per gli utenti che sono ancora in locale.
+    - È possibile concedere criteri a livello di tenant utilizzando il comando seguente:<br>`Grant-CsTeamsUpgradePolicy -PolicyName SfBWithTeamsCollab -Global`
+    - Nota: è necessario eseguire questa operazione a livello di tenant, perché non è possibile assegnare il criterio a singoli utenti che non dispongono di un indirizzo SIP nella directory online. Anche se sono stati disabilitati i domini SIP online per le distribuzioni locali, gli utenti di tali domini non avranno indirizzi SIP nella directory online in base alla progettazione. Di conseguenza, l'unico modo per applicare i criteri agli utenti locali è l'assegnazione a livello di tenant. Al contrario, nella distribuzione ibrida gli utenti avranno un indirizzo SIP nella directory online in modo che possano essere assegnati in modo esplicito a un criterio, se si desidera che dispongano di un valore diverso da quello del tenant Global.
+- Il client teams UX non rispetta ancora le modalità di questo di TeamsUpgradePolicy. Ad esempio, quando in queste modalità, l'avvio di chiamate e chat nei team è attualmente possibile, anche se in futuro non sarà così. Ciò può causare confusione tra gli utenti, perché le risposte a volte possono atterrare in team e, a volte, Skype for business, a seconda delle circostanze. Si consiglia di disabilitare separatamente le chiamate e le chat tramite TeamsMessagingPolicy e TeamsCallingPolicy per gli utenti che sono ancora in locale.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Aggiornare il certificato Edge](cloud-consolidation-edge-certificates.md)
+[Aggiornare il certificato del server perimetrale](cloud-consolidation-edge-certificates.md)
 
-[Aggiornare AAD Connect per includere più di una foresta](cloud-consolidation-aad-connect.md)
+[Update AAD Connect per includere più di una foresta](cloud-consolidation-aad-connect.md)
 
 [Disabilitare l'ibrido per completare la migrazione al cloud](cloud-consolidation-disabling-hybrid.md)

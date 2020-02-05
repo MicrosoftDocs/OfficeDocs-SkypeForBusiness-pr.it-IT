@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d189057d-cc9d-4622-9d10-f5385d703faf
 description: 'Riepilogo: informazioni su come creare o modificare una route vocale in Skype for Business Server tramite il pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: e5b8fcb5617d1f5abcbbda0826c3366ab4f73cd8
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 8732a07e835e6888efbc132da8dc99a0b4263f29
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233582"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41767799"
 ---
 # <a name="create-or-modify-a-voice-route-in-skype-for-business"></a>Creare o modificare una route vocale in Skype for business
  
@@ -49,7 +51,7 @@ ms.locfileid: "36233582"
     
    - **Eccezioni**: se si desidera specificare una o più eccezioni per un valore di prefisso, evidenziare il prefisso e fare clic su **eccezioni**. Digitare uno o più valori per i criteri di corrispondenza che *non* si vuole includere in questa route. Ad esempio, per escludere i numeri che iniziano con + 425237 dalla Route, immettere il valore + 425237 nel campo **eccezioni** e quindi fare clic su **OK**.
     
-   - Per definire il modello di corrispondenza manualmente, fare clic su **modifica** nello strumento **Crea modello** in modo che corrisponda e quindi digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui è applicata la route. Per informazioni dettagliate su come scrivere espressioni regolari, vedere ["espressioni regolari di .NET Framework"](https://go.microsoft.com/fwlink/p/?linkId=140927). 
+   - Per definire il modello di corrispondenza manualmente, fare clic su **modifica** nello strumento Crea modello in modo che **corrisponda** e quindi digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui è applicata la route. Per informazioni dettagliate su come scrivere espressioni regolari, vedere ["espressioni regolari di .NET Framework"](https://go.microsoft.com/fwlink/p/?linkId=140927). 
     
 9. Selezionare **Elimina ID chiamante** se non si vuole che l'ID del telefono che effettua la chiamata in uscita venga visualizzato nel destinatario della chiamata. Se si seleziona questa opzione, è necessario specificare un **ID chiamante alternativo** che verrà visualizzato nella visualizzazione ID chiamante del destinatario.
     
@@ -96,7 +98,7 @@ ms.locfileid: "36233582"
     
    - **Eccezioni**: se si desidera specificare una o più eccezioni per un valore di prefisso, evidenziare il prefisso e fare clic su **eccezioni**. Digitare uno o più valori per i criteri di corrispondenza che *non* si vuole includere in questa route. Ad esempio, per escludere i numeri che iniziano con + 425237 dalla Route, immettere il valore + 425237 nel campo **eccezioni** e quindi fare clic su **OK**.
     
-   - Per definire il modello di corrispondenza manualmente, fare clic su **modifica** nello strumento **Crea modello** in modo che corrisponda e quindi digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui è applicata la route. Per informazioni dettagliate su come scrivere espressioni regolari, vedere ["espressioni regolari di .NET Framework"](https://go.microsoft.com/fwlink/p/?linkId=140927). 
+   - Per definire il modello di corrispondenza manualmente, fare clic su **modifica** nello strumento Crea modello in modo che **corrisponda** e quindi digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui è applicata la route. Per informazioni dettagliate su come scrivere espressioni regolari, vedere ["espressioni regolari di .NET Framework"](https://go.microsoft.com/fwlink/p/?linkId=140927). 
     
 7. Selezionare **Elimina ID chiamante** se non si vuole che l'ID del telefono che sta effettuando la chiamata in uscita venga visualizzato nel destinatario della chiamata. Se si seleziona questa opzione, è necessario specificare un **ID chiamante alternativo** che verrà visualizzato nella visualizzazione ID chiamante del destinatario.
     

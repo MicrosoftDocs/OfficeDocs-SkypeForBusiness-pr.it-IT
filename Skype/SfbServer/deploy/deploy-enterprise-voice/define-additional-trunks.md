@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e68b8377-50a2-452a-bf5c-910929e34236
 description: 'Riepilogo: informazioni su come definire un trunk aggiuntivo tra un Mediation Server e un peer gateway in Generatore di topologie in Skype for Business Server.'
-ms.openlocfilehash: eeaddf6b5b150298e7a77b819464b3c0ef653b70
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: afd8a37272d7450115f688bafe3627fb2689903c
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245861"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41767719"
 ---
 # <a name="define-additional-trunks-in-topology-builder-in-skype-for-business-server"></a>Definire trunk aggiuntivi in Generatore di topologia in Skype for Business Server
  
@@ -36,7 +38,7 @@ Un trunk è una connessione logica tra un Mediation Server e un gateway.
 
 1. Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server 2015**e quindi su **Skype for Business Server 2015Topology Builder**.
     
-2. In Skype for Business Server, il nome del sito, i **componenti condivisi**, fare clic **** con il pulsante destro del mouse sul nodo Trunks e quindi scegliere **nuovo trunk**.
+2. In Skype for Business Server, il nome del sito, i **componenti condivisi**, fare clic con il pulsante destro del mouse sul nodo **Trunks** e quindi scegliere **nuovo trunk**.
    1. In **Definisci nuovo trunk**specificare un nome descrittivo per identificare in modo univoco il trunk. Non è possibile avere due trunk con lo stesso nome.
     
       > [!NOTE]

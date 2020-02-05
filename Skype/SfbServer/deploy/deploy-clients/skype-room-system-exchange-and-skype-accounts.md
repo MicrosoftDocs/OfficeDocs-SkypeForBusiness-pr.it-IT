@@ -7,16 +7,18 @@ audience: ITPro
 ms.reviewer: sohailta
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: fa71a2da-2cc9-4ad1-8ec9-08d1c9c5247a
 ms.collection: M365-voice
 description: Leggere questi argomenti per informazioni su come eseguire il provisioning degli account di Exchange e Skype per Skype room System.
-ms.openlocfilehash: 5c713a417c35147fbcd3e49a1f841a01ab18fe4d
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: 685909d8a698e6520798d017156514a371c883f1
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775223"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41768469"
 ---
 # <a name="provisioning-of-skype-room-system-exchange-and-skype-accounts"></a>Provisioning di Skype room System Exchange e Skype account
  

@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: aab749a1-fa2d-4ce8-a6c6-ebcfa37ce02a
 description: Gestire le impostazioni del gruppo di risposta a livello di applicazione, ad esempio musica in attesa e risponderie, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 4c5964d84e5fb84bf1c20c3e43bb0cc4aa25ae17
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: 99a3d6bc82cffd39608d2da0be013d4fbb8389e8
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41001276"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41767109"
 ---
 # <a name="managing-application-level-response-group-settings-in-skype-for-business"></a>Gestione delle impostazioni dei gruppi di risposte a livello di applicazione in Skype for business
  

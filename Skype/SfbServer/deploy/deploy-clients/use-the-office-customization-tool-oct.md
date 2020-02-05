@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 26647cb6-ba84-4ba7-8b6f-2cf86818e530
 description: 'Riepilogo: come usare lo strumento di personalizzazione di Office con il client Skype for business.'
-ms.openlocfilehash: b5c66fee4f6c879c8ded2897b64e63654dd950be
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: d5b9e5363f56842675831c4b3c0fe3582fb6d02a
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41001596"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41768449"
 ---
 # <a name="use-the-office-customization-tool-oct-in-skype-for-business-server"></a>Usare lo strumento di personalizzazione di Office (ott) in Skype for Business Server
  

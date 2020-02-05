@@ -8,6 +8,8 @@ ms.date: 2/7/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 59d8f5ba-5064-4ea5-b4bf-2b9736e0fedd
 description: 'Riepilogo: informazioni su come definire e distribuire un Mediation Server in Generatore di topologie in Skype for Business Server.'
-ms.openlocfilehash: 23d1567816c56408b276672fdd0330b0aa3d635c
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: c651ff3e254165161642c4e729d0d4e3f2983023
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245812"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41767689"
 ---
 # <a name="deploy-a-mediation-server-in-topology-builder-in-skype-for-business-server"></a>Distribuire un Mediation Server in Generatore di topologia in Skype for Business Server
  
@@ -72,9 +74,9 @@ La connessione tra Skype for Business Server (un Mediation Server collocato in u
     
 2. Nell'albero della console di generatore di topologia espandere il nome del sito per il quale si desidera definire un Mediation Server.
     
-3. Nell'albero della console fare clic con il pulsante destro del mouse sul nodo **pool** di mediazione e quindi scegliere **pool di Mediation Server**.
+3. Nell'albero della console fare clic con il pulsante destro del mouse sul nodo **pool di mediazione** e quindi scegliere **pool di Mediation Server**.
     
-4. In **Definisci nuovo pool**di mediazione digitare il nome di dominio completo (FQDN) del pool di Mediation Server.
+4. In **Definisci nuovo pool di mediazione**Digitare il nome di dominio completo (FQDN) del pool di Mediation Server.
     
 5. Eseguire quindi una delle operazioni seguenti:
     
@@ -85,13 +87,13 @@ La connessione tra Skype for Business Server (un Mediation Server collocato in u
   
    - Se si vuole distribuire un solo Mediation Server nel pool perché non è necessaria una disponibilità elevata, selezionare **Single computer pool**. Ignorare il passaggio seguente.
     
-6. Se nel passaggio precedente è stato selezionato **più pool di computer** , nell'elemento Definisci **i computer in questo pool** fare clic su **FQDN computer**, digitare il nome di dominio completo di ogni server nel pool e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per tutti gli altri Mediation Server che si vuole aggiungere al pool. Dopo aver definito tutti i computer nel pool, fare clic su **Avanti**.
+6. Se nel passaggio precedente è stato selezionato **più pool di computer** , nell' **elemento Definisci i computer in questo pool** fare clic su **FQDN computer**, digitare il nome di dominio completo di ogni server nel pool e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per tutti gli altri Mediation Server che si vuole aggiungere al pool. Dopo aver definito tutti i computer nel pool, fare clic su **Avanti**.
     
 7. Nella pagina **selezionare l'hop successivo** fare clic su **pool hop successivo**, fare clic sul nome di dominio completo del pool Front-end che utilizzerà questo pool di Mediation Server e quindi fare clic su **Avanti**.
     
 8. Nella pagina **selezionare un server perimetrale** eseguire una delle operazioni seguenti:
     
-   - Se si vuole consentire la connettività PSTN agli utenti esterni abilitati per VoIP aziendale, in **selezionare pool Edge usato da questo Mediation Server**fare clic sul nome di dominio completo del pool di Edge Server che utilizzerà questo pool di Mediation Server per consentire la connettività PSTN Gli utenti esterni e quindi fare clic su **Avanti**.
+   - Se si vuole consentire la connettività PSTN agli utenti esterni abilitati per VoIP aziendale, in **selezionare pool Edge usato da questo Mediation Server**fare clic sul nome di dominio completo del pool di Edge Server che utilizzerà questo pool di Mediation Server per consentire la connettività PSTN a tali utenti esterni e quindi fare clic su **Avanti**.
     
    - Se non si prevede di abilitare gli utenti esterni per VoIP aziendale o se non si vuole concedere connettività PSTN agli utenti quando si trovano all'esterno della rete interna, fare clic su **Avanti**.
     
@@ -105,13 +107,13 @@ Seguire i passaggi descritti in questo argomento per usare generatore di topolog
 
 1. Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server 2015**e quindi su **Skype for Business Server 2015Topology Builder**.
     
-2. Nell'albero della console di generatore di topologia espandere il nodo **pool** di mediazione e fare clic con il pulsante destro del mouse sul server di mediazione creato in precedenza.
+2. Nell'albero della console di generatore di topologia espandere il nodo **pool di mediazione** e fare clic con il pulsante destro del mouse sul server di mediazione creato in precedenza.
     
 3. Per impostazione predefinita, le porte di ascolto SIP sul Mediation Server sono 5070 per il traffico TLS da Skype for Business Server e 5067 per il traffico TLS da peer (ad esempio gateway, sistemi PBX o SBCs). La porta TCP è disabilitata per impostazione predefinita. È necessario abilitare la porta TCP se sono presenti gateway che non supportano TLS.
     
 4. Specificare l'intervallo di porte di ascolto TLS o TCP desiderato il server di mediazione accetterà le connessioni in ingresso dai gateway PSTN.
     
     > [!NOTE]
-    > L'immissione di un intervallo di porte TCP non è necessaria se l'abilitazione della **porta TCP** non è selezionata. Questa impostazione è facoltativa.
+    > L'immissione di un intervallo di porte TCP non è necessaria se l' **Abilitazione della porta TCP** non è selezionata. Questa impostazione è facoltativa.
   
 

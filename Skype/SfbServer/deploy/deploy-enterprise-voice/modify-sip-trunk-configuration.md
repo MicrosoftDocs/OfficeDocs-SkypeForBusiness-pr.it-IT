@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 7d68b09c-9ea0-43bd-997c-df887869d607
 description: 'Riepilogo: informazioni su come modificare le impostazioni di configurazione del trunk SIP tramite il pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: 6db2ddcf0155a599d8604bce2e3d5b5d34d6df20
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 137407525319f729eae28d91cfac8cd3aa1b456d
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240510"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41767099"
 ---
 # <a name="modify-sip-trunk-configuration-settings-in-skype-for-business-server"></a>Modificare le impostazioni di configurazione del trunk SIP in Skype for Business Server
  
@@ -69,9 +71,9 @@ Quando si modificano le impostazioni di configurazione del trunk SIP tramite il 
     
 3. Nella finestra di dialogo **modifica configurazione trunk** eseguire le selezioni appropriate e quindi fare clic su **OK**.
     
-4. La proprietà **state** per la raccolta verrà aggiornata in UNCOMMITTED. **** Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **commit** e quindi su **commit tutti**.
+4. La proprietà **state** per la raccolta verrà aggiornata in **UNCOMMITTED**. Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **commit** e quindi su **commit tutti**.
     
-5. Nella finestra di dialogo **impostazioni di configurazione vocale** non impegnata fare clic su **OK**.
+5. Nella finestra di dialogo **impostazioni di configurazione vocale non impegnata** fare clic su **OK**.
     
 6. Nella finestra di dialogo **Pannello di controllo di Skype for Business Server** fare clic su **OK**.
     

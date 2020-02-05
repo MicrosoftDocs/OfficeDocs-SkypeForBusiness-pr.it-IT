@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: b5b593a6-ac30-461c-8c8c-0041e2c9ab04
 description: 'Riepilogo: informazioni su come distribuire Enterprise Voice per Skype for Business Server in un sito centrale.'
-ms.openlocfilehash: 3e85ac96415788e8e15ba1ed11786864b6fc3124
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 1b1b1d0f79d1730bd491314f4f4e97b43b0acb62
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245775"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41767549"
 ---
 # <a name="deploy-enterprise-voice-in-skype-for-business-server"></a>Distribuire VoIP aziendale in Skype for Business Server
 
 **Riepilogo:** Informazioni su come distribuire Enterprise Voice per Skype for Business Server in un sito centrale.
 
-Usare questo argomento per distribuire Enterprise Voice in un sito centrale. Per distribuire VoIP aziendale in un sito di succursale, passare alla sezione [distribuzione dei siti](https://technet.microsoft.com/library/1475dee0-66ae-4ee5-b6f1-7409b4bbff45.aspx)di succursale.
+Usare questo argomento per distribuire Enterprise Voice in un sito centrale. Per distribuire VoIP aziendale in un sito di succursale, passare alla sezione [distribuzione dei siti di succursale](https://technet.microsoft.com/library/1475dee0-66ae-4ee5-b6f1-7409b4bbff45.aspx).
 
 Questa sezione include procedure per le distribuzioni in cui un Mediation Server è collocato in ogni server front-end o Standard Edition, come raccomandato e anche per le distribuzioni con un pool di Mediation Server autonomo. È possibile ignorare il contenuto seguente se è stato usato generatore di topologie per definire e pubblicare una topologia che colloca un Mediation Server in ogni server front-end o Standard Edition, perché la distribuzione guidata ha già installato automaticamente i file per Mediation Server quando i file sono stati installati per il pool di front end server o per il server Standard Edition:
 ## <a name="in-this-section"></a>In questa sezione

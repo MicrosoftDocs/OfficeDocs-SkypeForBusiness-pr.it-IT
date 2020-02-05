@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: b7e9149e-bf16-4120-afe0-3ee09c88f5eb
 description: "Riepilogo: leggere questo argomento per informazioni su come configurare l'integrazione tra Office Web Apps Server e Skype for Business Server per abilitare le presentazioni di PowerPoint per i servizi di conferenza Web."
-ms.openlocfilehash: 99b0ab34af655b95fab3d92973f948d30e3e51f8
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: b20646f31a7925ca66180c1580751574152047e5
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234146"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41768349"
 ---
 # <a name="configure-integration-with-office-web-apps-server-in-skype-for-business-server"></a>Configurare l'integrazione con Office Web Apps Server in Skype for Business Server
  
@@ -36,7 +38,7 @@ Per aggiungere Office Web Apps Server alla topologia, eseguire la procedura segu
   
 1. Aprire Generatore di topologia di Skype for Business Server.
     
-2. Nella finestra di dialogo **Generatore** di topologia selezionare **Scarica topologia da distribuzione esistente** e quindi fare clic su **OK**.
+2. Nella finestra di dialogo **Generatore di topologia** selezionare **Scarica topologia da distribuzione esistente** e quindi fare clic su **OK**.
     
 3. Nella finestra di dialogo **Salva topologia come** Digitare un nome per il documento della topologia, ad esempio **PreWebAppsServerTopology**, nella casella **nome file** e quindi fare clic su **Salva**. Questa topologia può essere recuperata e ripubblicata in seguito se si verificano problemi con la nuova topologia.
     

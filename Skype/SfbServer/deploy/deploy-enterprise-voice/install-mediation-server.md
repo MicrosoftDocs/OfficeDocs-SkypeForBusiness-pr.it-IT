@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f0f7dd15-58e1-40fd-aa7e-6db50ceafacd
 description: 'Riepilogo: informazioni su come installare i file per Mediation Server in Skype for Business Server.'
-ms.openlocfilehash: b73832586ba4a09cc51f67bddcaf30c2f85fcca1
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 4dc4c9971b74bf27d0f516ed70484646b666a845
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240530"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41767119"
 ---
 # <a name="install-the-files-for-mediation-server-in-skype-for-business-server"></a>Installare i file per Mediation Server in Skype for Business Server
  
@@ -58,7 +60,7 @@ Usare la procedura descritta in questo argomento per eseguire la distribuzione g
     
 12. Quando il **passaggio 4** è stato completato correttamente, riavviare il server e accedere al server come membro del gruppo DomainAdmins.
     
-13. Nel computer in cui è installato il pannello di controllo di Skype for Business Server verificare nella **** pagina topologia del pannello di controllo di Skype for Business Server che lo stato del servizio di Mediation Server sia visualizzato come segno di spunta verde. Se invece viene visualizzata una X rossa, selezionare il Mediation Server. Nel menu **azione** fare clic su **Avvia tutti i servizi**. 
+13. Nel computer in cui è installato il pannello di controllo di Skype for Business Server verificare nella pagina **topologia** del pannello di controllo di Skype for Business Server che lo stato del servizio di Mediation Server sia visualizzato come segno di spunta verde. Se invece viene visualizzata una X rossa, selezionare il Mediation Server. Nel menu **azione** fare clic su **Avvia tutti i servizi**. 
     
-Se sono stati aggiunti più computer al pool di Mediation Server, eseguire i passaggi descritti in questa procedura in tutti gli altri computer del pool di Mediation Server. Se non è necessario installare file per Mediation Server per altri computer, seguire le procedure descritte in [configurare Trunks in Skype for Business Server](configure-trunks.md) per configurare le impostazioni per la connessione trunk tra questo pool di Mediation Server (o tutta la mediazione Server in un sito) e il relativo peer.
+Se sono stati aggiunti più computer al pool di Mediation Server, eseguire i passaggi descritti in questa procedura in tutti gli altri computer del pool di Mediation Server. Se non è necessario installare file per Mediation Server per altri computer, seguire le procedure descritte in [configurare Trunks in Skype for Business Server](configure-trunks.md) per configurare le impostazioni per la connessione trunk tra questo pool di Mediation Server (o tutti i Mediation Server di un sito) e il relativo peer.
 

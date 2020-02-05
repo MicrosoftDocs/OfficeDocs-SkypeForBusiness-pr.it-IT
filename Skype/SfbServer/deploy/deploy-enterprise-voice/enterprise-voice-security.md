@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 15354abe-733e-466b-bcd4-a6cfbf58caf8
 description: 'Riepilogo: informazioni sui prerequisiti per la sicurezza e la configurazione di VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: 70acac97bd2a3554c0613f64bdbf93f64811a0b0
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 314c25429dbf346a5f62705afa4f19a5b518452a
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240590"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41767239"
 ---
 # <a name="security-and-configuration-prerequisites-for-enterprise-voice-in-skype-for-business-server"></a>Prerequisiti per la sicurezza e la configurazione di VoIP aziendale in Skype for Business Server
  
@@ -53,13 +55,13 @@ Se il Mediation Server è stato collocato con ogni pool Front end o server Stand
 Se si sta distribuendo di nuovo il carico di lavoro VoIP aziendale in questo momento, prima di iniziare il processo di distribuzione, designare un numero di telefono principale per ogni utente che si prevede di abilitare per VoIP aziendale. Come amministratore, sei responsabile per verificare che questo numero sia univoco. Prima dell'implementazione, tutti i numeri di telefono primari devono essere normalizzati (formattati correttamente) e copiati nella proprietà **URI della linea** di ogni utente usando il pannello di controllo di Skype for Business Server.
   
 > [!NOTE]
-> Per esempi di numeri di telefono primari necessari per la distribuzione di VoIP aziendale, Vedi regole di normalizzazione di [esempio](../../plan-your-deployment/enterprise-voice-solution/outbound-voice-routing.md#BKMK_SampleNormalizationRules). 
+> Per esempi di numeri di telefono primari necessari per la distribuzione di VoIP aziendale, Vedi [regole di normalizzazione di esempio](../../plan-your-deployment/enterprise-voice-solution/outbound-voice-routing.md#BKMK_SampleNormalizationRules). 
   
 ## <a name="next-steps-install-files-or-configure-pstn-connectivity"></a>Passaggi successivi: installare i file o configurare la connettività PSTN
 
 Dopo aver verificato il software e i prerequisiti ambientali per Enterprise Voice, è possibile:
   
-- Installare il Mediation Server, come descritto in [distribuire un Mediation Server in Generatore di topologia in Skype for Business Server](deploy-a-mediation-server.md), ma solo se si vuole distribuire un server di mediazione autonomo o un pool perché i server di mediazione vengono installati come parte del front-end processo di distribuzione del server del pool o Standard Edition durante la collocazione.
+- Installare il Mediation Server, come descritto in [distribuire un Mediation Server in Generatore di topologia in Skype for Business Server](deploy-a-mediation-server.md), ma solo se si vuole distribuire un server o un pool di mediazione autonomo perché i server di mediazione vengono installati come parte del pool di front-end o del processo di distribuzione del server Standard Edition durante la collocazione.
     
 - In alternativa, iniziare a configurare le impostazioni per instradare le chiamate per gli utenti di VoIP aziendale, come descritto in [configurare Trunks in Skype for Business Server](configure-trunks.md).
     

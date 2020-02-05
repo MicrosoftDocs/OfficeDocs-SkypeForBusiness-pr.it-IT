@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ff941d0b-fb4b-47d2-b866-6d990ac66b81
 description: 'Riepilogo: informazioni su come rivedere, pubblicare o annullare le modifiche alla configurazione del routing vocale in Skype for Business Server tramite il pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: 6a13c2a2b2b1221203fbed84948b803a6c2ea1db
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 12cf80c2a14d3bad532aaf21a942536f44537300
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240193"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41766959"
 ---
 # <a name="publish-pending-changes-to-the-voice-routing-configuration-in-skype-for-business"></a>Pubblicare le modifiche in sospeso nella configurazione del routing vocale in Skype for business
  
@@ -56,7 +58,7 @@ Dopo aver apportato le modifiche alle impostazioni di configurazione nelle pagin
     
 7. Dopo aver esaminato tutte le modifiche in sospeso e annullato qualsiasi che non si vuole pubblicare, fare clic su **commit**e quindi su **commit tutti**.
     
-8. Nella finestra di dialogo **impostazioni di configurazione vocale** non impegnata, in cui viene visualizzato un elenco di tutte le modifiche in sospeso, fare clic su **OK**. 
+8. Nella finestra di dialogo **impostazioni di configurazione vocale non impegnata** , in cui viene visualizzato un elenco di tutte le modifiche in sospeso, fare clic su **OK**. 
     
     Quando il pannello di controllo di Skype for Business Server ha eseguito il commit delle modifiche, viene visualizzato il messaggio di **configurazione del routing vocale pubblicato correttamente** .
     
