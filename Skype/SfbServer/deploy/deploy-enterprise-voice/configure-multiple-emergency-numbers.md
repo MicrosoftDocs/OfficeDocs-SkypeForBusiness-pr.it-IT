@@ -7,57 +7,59 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 2e869df0-5fdb-4e70-bd81-cb012556eb1a
 description: Leggere questo argomento per informazioni su come configurare più numeri di emergenza in Skype for Business Server.
-ms.openlocfilehash: a0a16536799024085afcce07d6a2a9a0e4c899e1
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: 9805462d8c9498af3e3cf1cb743e2af9e08ec285
+ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41001316"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41768119"
 ---
-# <a name="configure-multiple-emergency-numbers-in-skype-for-business"></a><span data-ttu-id="7ec28-103">Configurare più numeri di emergenza in Skype for business</span><span class="sxs-lookup"><span data-stu-id="7ec28-103">Configure multiple emergency numbers in Skype for Business</span></span>
+# <a name="configure-multiple-emergency-numbers-in-skype-for-business"></a><span data-ttu-id="01398-103">Configurare più numeri di emergenza in Skype for business</span><span class="sxs-lookup"><span data-stu-id="01398-103">Configure multiple emergency numbers in Skype for Business</span></span>
 
-<span data-ttu-id="7ec28-104">Leggere questo argomento per informazioni su come configurare più numeri di emergenza in Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="7ec28-104">Read this topic to learn how to configure multiple emergency numbers in Skype for Business Server.</span></span>
+<span data-ttu-id="01398-104">Leggere questo argomento per informazioni su come configurare più numeri di emergenza in Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="01398-104">Read this topic to learn how to configure multiple emergency numbers in Skype for Business Server.</span></span>
 
-<span data-ttu-id="7ec28-105">Skype for Business Server ora supporta più numeri di emergenza per un client.</span><span class="sxs-lookup"><span data-stu-id="7ec28-105">Skype for Business Server now supports multiple emergency numbers for a client.</span></span> <span data-ttu-id="7ec28-106">Più numeri di emergenza è una nuova funzionalità introdotta nell'aggiornamento cumulativo di giugno 2016.</span><span class="sxs-lookup"><span data-stu-id="7ec28-106">Multiple emergency numbers is a new feature introduced in the June 2016 Cumulative Update.</span></span> <span data-ttu-id="7ec28-107">Prima di configurare l'ambiente in modo da supportare più numeri di emergenza, leggere [piano per più numeri di emergenza in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md).</span><span class="sxs-lookup"><span data-stu-id="7ec28-107">Before you configure your environment to support multiple emergency numbers, be sure to read [Plan for multiple emergency numbers in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md).</span></span>
+<span data-ttu-id="01398-105">Skype for Business Server ora supporta più numeri di emergenza per un client.</span><span class="sxs-lookup"><span data-stu-id="01398-105">Skype for Business Server now supports multiple emergency numbers for a client.</span></span> <span data-ttu-id="01398-106">Più numeri di emergenza è una nuova funzionalità introdotta nell'aggiornamento cumulativo di giugno 2016.</span><span class="sxs-lookup"><span data-stu-id="01398-106">Multiple emergency numbers is a new feature introduced in the June 2016 Cumulative Update.</span></span> <span data-ttu-id="01398-107">Prima di configurare l'ambiente in modo da supportare più numeri di emergenza, leggere [piano per più numeri di emergenza in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md).</span><span class="sxs-lookup"><span data-stu-id="01398-107">Before you configure your environment to support multiple emergency numbers, be sure to read [Plan for multiple emergency numbers in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="7ec28-108">Se l'aggiornamento cumulativo di novembre 2016 non è stato ancora aggiornato, vedere [aggiornamenti di Skype for Business Server 2015](https://support.microsoft.com/en-us/help/3061064/updates-for-skype-for-business-server-2015).</span><span class="sxs-lookup"><span data-stu-id="7ec28-108">If you have not yet upgraded to the November 2016 Cumulative Update, see [Updates to Skype for Business Server 2015](https://support.microsoft.com/en-us/help/3061064/updates-for-skype-for-business-server-2015).</span></span> <span data-ttu-id="7ec28-109">Con l'aggiornamento cumulativo di novembre 2016, il numero di numeri di emergenza del supporto aumenta da 5 a 100.</span><span class="sxs-lookup"><span data-stu-id="7ec28-109">With the November 2016 Cumulative Update, the number of support emergency numbers increases from 5 to 100.</span></span> 
+> <span data-ttu-id="01398-108">Se l'aggiornamento cumulativo di novembre 2016 non è stato ancora aggiornato, vedere [aggiornamenti di Skype for Business Server 2015](https://support.microsoft.com/en-us/help/3061064/updates-for-skype-for-business-server-2015).</span><span class="sxs-lookup"><span data-stu-id="01398-108">If you have not yet upgraded to the November 2016 Cumulative Update, see [Updates to Skype for Business Server 2015](https://support.microsoft.com/en-us/help/3061064/updates-for-skype-for-business-server-2015).</span></span> <span data-ttu-id="01398-109">Con l'aggiornamento cumulativo di novembre 2016, il numero di numeri di emergenza del supporto aumenta da 5 a 100.</span><span class="sxs-lookup"><span data-stu-id="01398-109">With the November 2016 Cumulative Update, the number of support emergency numbers increases from 5 to 100.</span></span> 
 
-## <a name="configure-multiple-emergency-numbers"></a><span data-ttu-id="7ec28-110">Configurare numeri di emergenza multipli</span><span class="sxs-lookup"><span data-stu-id="7ec28-110">Configure multiple emergency numbers</span></span>
+## <a name="configure-multiple-emergency-numbers"></a><span data-ttu-id="01398-110">Configurare numeri di emergenza multipli</span><span class="sxs-lookup"><span data-stu-id="01398-110">Configure multiple emergency numbers</span></span>
 
-<span data-ttu-id="7ec28-111">Per configurare più numeri di emergenza, usare il cmdlet New-CsEmergencyNumber e quindi specificare il parametro EmergencyNumbers con i cmdlet [New-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps) e [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps) .</span><span class="sxs-lookup"><span data-stu-id="7ec28-111">To configure multiple emergency numbers, you use the New-CsEmergencyNumber cmdlet, and then you specify the EmergencyNumbers parameter with the [New-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps) and [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps) cmdlets.</span></span> <span data-ttu-id="7ec28-112">Per una descrizione completa di tutti i parametri dei criteri di posizione, ad esempio l'utilizzo e la posizione PSTN necessari, vedere [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="7ec28-112">For a complete description of all the location policy parameters, such as PSTN usage and Location required, see [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps).</span></span>
+<span data-ttu-id="01398-111">Per configurare più numeri di emergenza, usare il cmdlet New-CsEmergencyNumber e quindi specificare il parametro EmergencyNumbers con i cmdlet [New-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps) e [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps) .</span><span class="sxs-lookup"><span data-stu-id="01398-111">To configure multiple emergency numbers, you use the New-CsEmergencyNumber cmdlet, and then you specify the EmergencyNumbers parameter with the [New-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps) and [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps) cmdlets.</span></span> <span data-ttu-id="01398-112">Per una descrizione completa di tutti i parametri dei criteri di posizione, ad esempio l'utilizzo e la posizione PSTN necessari, vedere [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="01398-112">For a complete description of all the location policy parameters, such as PSTN usage and Location required, see [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps).</span></span>
 
-<span data-ttu-id="7ec28-113">Il comando seguente crea un nuovo numero di emergenza con Dial String 911 usando il cmdlet New-CsEmergency:</span><span class="sxs-lookup"><span data-stu-id="7ec28-113">The following command creates a new emergency number with dial string 911 by using the New-CsEmergency cmdlet:</span></span>
+<span data-ttu-id="01398-113">Il comando seguente crea un nuovo numero di emergenza con Dial String 911 usando il cmdlet New-CsEmergency:</span><span class="sxs-lookup"><span data-stu-id="01398-113">The following command creates a new emergency number with dial string 911 by using the New-CsEmergency cmdlet:</span></span>
 
 ```powershell
 > $a = New-CsEmergencyNumber -DialString 911 
 ```
 
-<span data-ttu-id="7ec28-114">Il comando successivo associa il numero con il criterio di posizione specificato specificando il parametro EmergencyNumbers nel cmdlet Set-CsLocationPolicy:</span><span class="sxs-lookup"><span data-stu-id="7ec28-114">The next command associates the number with the specified location policy by specifying the EmergencyNumbers parameter in the Set-CsLocationPolicy cmdlet:</span></span>
+<span data-ttu-id="01398-114">Il comando successivo associa il numero con il criterio di posizione specificato specificando il parametro EmergencyNumbers nel cmdlet Set-CsLocationPolicy:</span><span class="sxs-lookup"><span data-stu-id="01398-114">The next command associates the number with the specified location policy by specifying the EmergencyNumbers parameter in the Set-CsLocationPolicy cmdlet:</span></span>
 
 ```powershell
 > Set-CsLocationPolicy -Identity <id> -EmergencyNumbers @{add=$a} 
 ```
 
-<span data-ttu-id="7ec28-115">Nell'esempio successivo viene creato un numero di emergenza con una singola maschera di chiamata, 112:</span><span class="sxs-lookup"><span data-stu-id="7ec28-115">In the next example, an emergency number is created with a single dial mask, 112:</span></span>
+<span data-ttu-id="01398-115">Nell'esempio successivo viene creato un numero di emergenza con una singola maschera di chiamata, 112:</span><span class="sxs-lookup"><span data-stu-id="01398-115">In the next example, an emergency number is created with a single dial mask, 112:</span></span>
 
 ```powershell
 > $a = New-CsEmergencyNumber -DialString 911 -DialMask 112 
 ```
 
-<span data-ttu-id="7ec28-116">Il comando successivo crea un numero di emergenza con più maschere di chiamata:</span><span class="sxs-lookup"><span data-stu-id="7ec28-116">The next command creates an emergency number with multiple dial masks:</span></span>
+<span data-ttu-id="01398-116">Il comando successivo crea un numero di emergenza con più maschere di chiamata:</span><span class="sxs-lookup"><span data-stu-id="01398-116">The next command creates an emergency number with multiple dial masks:</span></span>
 
 ```powershell
 > $a = New-CsEmergencyNumber -DialString 911 -DialMask 112;999 
 ```
 
-<span data-ttu-id="7ec28-117">L'esempio seguente aggiunge più numeri di emergenza con più maschere di chiamata e quindi associa i numeri di emergenza con i criteri di posizione specificati:</span><span class="sxs-lookup"><span data-stu-id="7ec28-117">The next example adds multiple emergency numbers with multiple dial masks, and then associates the emergency numbers with the specified location policy:</span></span>
+<span data-ttu-id="01398-117">L'esempio seguente aggiunge più numeri di emergenza con più maschere di chiamata e quindi associa i numeri di emergenza con i criteri di posizione specificati:</span><span class="sxs-lookup"><span data-stu-id="01398-117">The next example adds multiple emergency numbers with multiple dial masks, and then associates the emergency numbers with the specified location policy:</span></span>
 
 ```powershell
 > $a = New-CsEmergencyNumber -DialString 911 -DialMask 112;999 
@@ -65,7 +67,7 @@ ms.locfileid: "41001316"
 > Set-CsLocationPolicy -Identity <id> -EmergencyNumbers @{add=$a,$b} 
 ```
 
-<span data-ttu-id="7ec28-118">Nell'esempio seguente vengono configurati più numeri di emergenza per i provider di servizi sanitari che usano sia 911 che 450:</span><span class="sxs-lookup"><span data-stu-id="7ec28-118">The next example configures multiple emergency numbers for health care providers that use both 911 and 450:</span></span> 
+<span data-ttu-id="01398-118">Nell'esempio seguente vengono configurati più numeri di emergenza per i provider di servizi sanitari che usano sia 911 che 450:</span><span class="sxs-lookup"><span data-stu-id="01398-118">The next example configures multiple emergency numbers for health care providers that use both 911 and 450:</span></span> 
 
 ```powershell
 > $a = New-CsEmergencyNumber -DialString 911 
@@ -73,7 +75,7 @@ ms.locfileid: "41001316"
 > Set-CsLocationPolicy -Identity US-Hospital -EmergencyNumbers @{add=$a,$b}
 ```
 
-<span data-ttu-id="7ec28-119">Nell'esempio seguente vengono configurati più numeri di emergenza per la città di Londra:</span><span class="sxs-lookup"><span data-stu-id="7ec28-119">The next example configures multiple emergency numbers for the city of London:</span></span>
+<span data-ttu-id="01398-119">Nell'esempio seguente vengono configurati più numeri di emergenza per la città di Londra:</span><span class="sxs-lookup"><span data-stu-id="01398-119">The next example configures multiple emergency numbers for the city of London:</span></span>
 
 ```powershell
 > $a = New-CsEmergencyNumber -DialString 999 -DialMask 144
@@ -81,7 +83,7 @@ ms.locfileid: "41001316"
 > Set-CsLocationPolicy -Identity London -EmergencyNumbers @{add=$a,$b}
 ```
 
-<span data-ttu-id="7ec28-120">Nell'esempio seguente vengono configurati più numeri di emergenza per l'India:</span><span class="sxs-lookup"><span data-stu-id="7ec28-120">The next example configures multiple emergency numbers for India:</span></span>
+<span data-ttu-id="01398-120">Nell'esempio seguente vengono configurati più numeri di emergenza per l'India:</span><span class="sxs-lookup"><span data-stu-id="01398-120">The next example configures multiple emergency numbers for India:</span></span>
 
 ```powershell
 > $a = New-CsEmergencyNumber -DialString 100 -DialMask 911
@@ -90,7 +92,7 @@ ms.locfileid: "41001316"
 > Set-CsLocationPolicy -Identity India -EmergencyNumbers @{add=$a,$b,$c}
 ```
 
-<span data-ttu-id="7ec28-121">Nell'esempio successivo viene rimossa una voce esistente con Dial String 911 e maschere di chiamata 112 e 999:</span><span class="sxs-lookup"><span data-stu-id="7ec28-121">The next example removes an existing entry with Dial string 911 and Dial masks 112 and 999:</span></span>
+<span data-ttu-id="01398-121">Nell'esempio successivo viene rimossa una voce esistente con Dial String 911 e maschere di chiamata 112 e 999:</span><span class="sxs-lookup"><span data-stu-id="01398-121">The next example removes an existing entry with Dial string 911 and Dial masks 112 and 999:</span></span>
 
 ```powershell
 > $a = New-CsEmergencyNumber -DialString 911 -DialMask 112;999
