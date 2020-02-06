@@ -1,5 +1,5 @@
 ---
-title: Configurare le route federative e il traffico multimediale
+title: Configurare le route di federazione e il traffico multimediale
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Federation è una relazione di trust tra due o più domini SIP che consente agli utenti di organizzazioni separate di comunicare tra loro attraverso i confini della rete. Dopo la migrazione al pool pilota, è necessario eseguire la transizione dalla Route federativo delle versioni precedenti dei server Edge alla route federativo dei server Edge di Skype for Business Server 2019.
-ms.openlocfilehash: 50c10a4dced237e59c8dad12b5bdee1ef7d970fe
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 71417307fd46c2c29535cea3a52f0286ad6dc951
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239588"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41813814"
 ---
-# <a name="configure-federation-routes-and-media-traffic"></a>Configurare le route federative e il traffico multimediale
+# <a name="configure-federation-routes-and-media-traffic"></a>Configurare le route di federazione e il traffico multimediale
 
 Federation è una relazione di trust tra due o più domini SIP che consente agli utenti di organizzazioni separate di comunicare tra loro attraverso i confini della rete. Dopo la migrazione al pool pilota, è necessario eseguire la transizione dalla Route federativo della versione precedente di Edge Server alla route federativo di Skype for Business Server 2019 Edge Servers.
   
@@ -45,7 +47,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
   
 6. Fare clic su **OK** per chiudere la pagina Modifica proprietà. 
     
-7. In **Generatore**di topologie selezionare il nodo principale **di Skype for Business Server**.
+7. In **Generatore di topologie**selezionare il nodo principale **di Skype for Business Server**.
     
 8. Nel menu **azione** fare clic su **Pubblica topologia**.
     
@@ -104,7 +106,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
   
 4. Fare clic su **OK** per chiudere la pagina Modifica proprietà. 
     
-5. In **Generatore**di topologie selezionare il nodo principale **di Skype for Business Server**. 
+5. In **Generatore di topologie**selezionare il nodo principale **di Skype for Business Server**. 
     
 6. Nel menu **azione** fare clic su **Pubblica topologia** e completare la procedura guidata. 
     
@@ -147,7 +149,7 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
     
 ## <a name="to-publish-edge-server-configuration-changes"></a>Per pubblicare le modifiche alla configurazione di Edge Server
 
-1. In **Generatore**di topologie selezionare il nodo principale **di Skype for Business Server**. 
+1. In **Generatore di topologie**selezionare il nodo principale **di Skype for Business Server**. 
     
 2. Nel menu **azione** selezionare **Pubblica topologia** e completare la procedura guidata. 
     
@@ -171,9 +173,9 @@ Usare le procedure seguenti per eseguire la transizione della route federativa e
     
 5. Nell'elenco servizi individuare **Edge Access per Skype for Business Server**.
     
-6. Fare clic con il pulsante destro del mouse sul nome **** dei servizi e quindi scegliere Interrompi per arrestare il servizio. 
+6. Fare clic con il pulsante destro del mouse sul nome dei servizi e quindi scegliere **Interrompi** per arrestare il servizio. 
     
-7. Impostare il tipo di avvio **** su Disabled. 
+7. Impostare il tipo di avvio su **disabled**. 
     
 8. Fare clic su **OK** per chiudere la finestra **Proprietà** . 
     

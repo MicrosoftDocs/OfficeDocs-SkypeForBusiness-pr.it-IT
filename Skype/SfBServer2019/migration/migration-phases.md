@@ -1,5 +1,5 @@
 ---
-title: Fasi di migrazione
+title: Fasi della migrazione
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: In Skype for Business Server 2019 si definiscono i siti della rete che contengono componenti di Skype for Business Server 2019. Un sito è un set di computer ben connessi da una rete a bassa latenza ad alta velocità, ad esempio una rete LAN (Local Area Network) o due reti connesse da una rete a fibre ottiche ad alta velocità.
-ms.openlocfilehash: 1ad93a512a1aab596e08744f76d74e2e41a9faa5
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: b7d7fbddfe77c1303f0f6bde95827d94d7483f32
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238140"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41813424"
 ---
-# <a name="migration-phases"></a>Fasi di migrazione
+# <a name="migration-phases"></a>Fasi della migrazione
 
 In Skype for Business Server 2019 si definiscono i siti della rete che contengono componenti di Skype for Business Server 2019. Un sito è un set di computer ben connessi da una rete a bassa latenza ad alta velocità, ad esempio una rete LAN (Local Area Network) o due reti connesse da una rete a fibre ottiche ad alta velocità. 
   
@@ -34,10 +36,10 @@ Le fasi seguenti descrivono il processo di migrazione del pool a Skype for Busin
     
 5. [Fase 5: aggiungere Skype for Business Server 2019 Edge Server al pool pilota](phase-5-add-edge-server-to-pilot-pool.md)
     
-6. [Fase 6: passaggio dalla distribuzione pilota alla produzione](phase-6-move-from-pilot-deployment-into-production.md)
+6. [Fase 6: passare dalla distribuzione pilota alla produzione](phase-6-move-from-pilot-deployment-into-production.md)
     
 7. [Fase 7: completare le attività successive alla migrazione](phase-7-complete-post-migration-tasks.md)
     
-8. [Fase 8: rimuovere i pool legacy](phase-8-decommission-legacy-pools.md)
+8. [Fase 8: rimuovere le autorizzazioni dei pool legacy](phase-8-decommission-legacy-pools.md)
     
 

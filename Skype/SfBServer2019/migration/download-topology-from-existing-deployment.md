@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Quando crei un pool di Skype for Business Server 2019, userai l'Central Management Store associato all'installazione legacy. Quando si avvia il generatore di topologia al primo utilizzo e alle successive sessioni di modifica, viene richiesto il percorso in cui si vuole che il generatore di topologia carichi il documento di configurazione corrente. Dato che è già stata definita una topologia e che è stata stabilita l'Central Management store, è consigliabile scegliere di scaricare una topologia da una distribuzione esistente. Generatore di topologia leggerà il database e recupererà la definizione corrente.
-ms.openlocfilehash: 33dc190bae5bd5d983d13932b4a9933fe5f74976
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 19c6072917e6fb8a0ec96ad22f89a0baab716f85
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238738"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41813634"
 ---
 # <a name="download-topology-from-existing-deployment"></a>Scarica topologia dalla distribuzione esistente
 

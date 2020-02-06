@@ -8,6 +8,8 @@ ms.date: 1/26/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - Ent_O365_Hybrid
@@ -18,18 +20,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 021a4c0b-d5de-4155-a506-650d758624aa
 description: Informazioni sulle considerazioni sulla pianificazione per il sistema telefonico in Office 365 (cloud PBX) con connettività PSTN locale.
-ms.openlocfilehash: 1ca12d1680b56612c2e6f3a1785ee615138294ce
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: a134b4dbe48d302ee8be8df528e6bbebac336b8e
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36195890"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41814484"
 ---
 # <a name="plan-phone-system-in-office-365-with-on-premises-pstn-connectivity-in-skype-for-business-server"></a>Pianificare il sistema telefonico in Office 365 con connettività PSTN locale in Skype for Business Server
 
 Informazioni sulle considerazioni sulla pianificazione per il sistema telefonico in Office 365 (cloud PBX) con connettività PSTN locale.
 
-Questo contenuto è pertinente se si dispone già di Skype for Business Server o Lync Server 2013 distribuito in locale. Per altri scenari, vedere [soluzioni](https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions)per la telefonia Microsoft.
+Questo contenuto è pertinente se si dispone già di Skype for Business Server o Lync Server 2013 distribuito in locale. Per altri scenari, vedere [soluzioni per la telefonia Microsoft](https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions).
 
  Il sistema telefonico in Office 365 con connettività PSTN locale consente di sfruttare le funzionalità del sistema telefonico (cloud PBX) per gli utenti. Ciò può essere utile per gli scenari seguenti:
 
@@ -106,7 +108,7 @@ Prima di configurare il sistema telefonico in Office 365 con connettività PSTN 
     > [!NOTE]
     > La versione di AAD Connect usata deve essere la versione 1.0.9125.0 o successiva. Se si usa una versione precedente degli strumenti AAD Connect o DirSync, eseguire l'aggiornamento alla versione supportata. È possibile aggiornare l'installazione corrente e gestire le regole personalizzate definite nell'ambiente. 
 
-- **Configurare la distribuzione ibrida** Se tutti gli utenti di Skype for business sono attualmente ospitati online o in locale oppure se si ha una combinazione, è necessario completare la procedura per configurare una distribuzione ibrida di Skype for Business Server o Lync Server 2013, come descritto in [deploy Hybrid connettività tra Skype for Business Server e Office 365](../../skype-for-business-hybrid-solutions/deploy-hybrid-connectivity/deploy-hybrid-connectivity.md). Per altre informazioni di base sulle distribuzioni ibride, vedere [pianificare la connettività ibrida tra Skype for Business Server e Office 365](../../skype-for-business-hybrid-solutions/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json). 
+- **Configurare la distribuzione ibrida** Se tutti gli utenti di Skype for business sono attualmente ospitati online o in locale oppure se si ha una combinazione, è necessario completare la procedura per configurare una distribuzione ibrida di Skype for Business Server o Lync Server 2013, come descritto in [distribuire la connettività ibrida tra Skype for Business Server e Office 365](../../skype-for-business-hybrid-solutions/deploy-hybrid-connectivity/deploy-hybrid-connectivity.md). Per altre informazioni di base sulle distribuzioni ibride, vedere [pianificare la connettività ibrida tra Skype for Business Server e Office 365](../../skype-for-business-hybrid-solutions/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json). 
 
     Se si usa Lync Server 2013, vedere [Lync server 2013 Hybrid](https://technet.microsoft.com/EN-US/library/jj204805%28v=ocs.15%29.aspx).
 

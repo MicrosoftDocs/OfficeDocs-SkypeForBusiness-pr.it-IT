@@ -7,14 +7,16 @@ manager: serdars
 audience: End User
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Quando un utente fa clic su un collegamento a una riunione in una convocazione di riunione, la pagina di partecipazione alla riunione rileva quale client è già installato nel computer dell'utente. Se un client è già installato, tale client si apre e si unisce alla riunione. Se un client non è installato, per impostazione predefinita viene aperto l'app Web.
-ms.openlocfilehash: 5c9e6653783d90411e0f701b5d3395c569d8bdff
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 35b8b816d5c01f3061dc697cf7f37a4314a5f083
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989561"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41813794"
 ---
 # <a name="configure-the-meeting-join-page"></a>Configurare la pagina di partecipazione alle riunioni
 

@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: "Ogni Survivable Branch Appliance (SBA) è associato a un pool Front-end che funge da registrar di backup per l'SBA. Quando viene eseguita la migrazione del pool Front-end a Skype for Business Server 2019, l'SBA deve essere dissociato dal pool Front-end mentre il pool viene aggiornato, dopo la migrazione del pool a Skype for Business Server 2019, l'SBA può essere riassociato all'aggiornamento anteriore E pool ND. Questo comporta l'eliminazione della SBA dalla topologia legacy in Generatore di topologie e l'aggiunta della SBA alla topologia di Skype for Business Server 2019. Gli utenti residenti nell'ASB legacy devono prima essere spostati in un altro pool Front end prima di rimuovere l'SBA dalla topologia. Dopo aver aggiunto l'SBA alla topologia di Skype for Business Server 2019, questi utenti possono quindi essere spostati di nuovo nella SBA. Questi passaggi sono riepilogati di seguito:"
-ms.openlocfilehash: e5545a2de4eddd65790f425ab888b8fd07faf970
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: daeb061936ece02767e3299d2358d8e16ba09218
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239549"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41813734"
 ---
 # <a name="connect-a-survivable-branch-appliance"></a>Connettere un Survivable Branch Appliance
 
@@ -30,9 +32,9 @@ Ogni Survivable Branch Appliance (SBA) è associato a un pool Front end che fung
     
 ### <a name="add-legacy-sba-branch-site-to-your-topology"></a>Aggiungere il sito della filiale SBA legacy alla topologia
 
-1. Aprire **Generatore**di topologie.
+1. Aprire **Generatore di topologie**.
     
-2. Nel riquadro sinistro fare clic con il pulsante destro del mouse su **siti**di succursale e quindi scegliere **nuovo sito filiale**.
+2. Nel riquadro sinistro fare clic con il pulsante destro del mouse su **siti di succursale**e quindi scegliere **nuovo sito filiale**.
     
 3. Nella finestra di dialogo **Definisci nuovo sito succursale** fare clic su **nome**e quindi digitare il nome del sito della filiale.
     

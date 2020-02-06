@@ -8,17 +8,19 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- NOCSH
+ms.custom:
 - ms.lync.tb.AddFrontEndCollocationsPage2010
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4d328bf4-85bc-4870-8d6f-008c0e46520e
 description: Per una distribuzione di Enterprise Edition, è possibile collocare il servizio di conferenza A/V, il Mediation Server o entrambi nel pool Front-end oppure è possibile distribuirli singolarmente come server autonomi. Per la distribuzione di un server Standard Edition, il servizio di conferenza A/V è sempre collocato se è abilitata la conferenza.
-ms.openlocfilehash: 371643491438b7f1711c2a023f1b8a6d7a39525c
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 4a488aeca543d95042f9dfeec860934f472b94c3
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41685149"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41820838"
 ---
 # <a name="add-front-end-server-collocations-2010"></a>Aggiungere collocazioni di Front End Server 2010
 

@@ -8,17 +8,19 @@ ms.date: 3/23/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.dep.DeployAIOIntro
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: fe11d380-54c9-47e7-a676-02b9a59dc93f
 description: Per iniziare l'installazione di un server di Skype for Business Server 2015 Standard Edition che conterrà l'Central Management store e altri servizi collocati selezionati, è necessario avere effettuato l'accesso come membro del gruppo Administrators locale nel server in cui verrà diventa il server Standard Edition. Nella pagina Prepara singolo server Standard sono illustrati i requisiti per l'installazione iniziale. Il computer deve essere membro del dominio in cui verrà distribuito ed è necessario aver completato per la foresta la preparazione dello schema, della foresta e del dominio.
-ms.openlocfilehash: ed7c353f602d97842e654faa5b539a6dcae01133
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: a426d734c7644511d31a5b53d3a4939c95f979f3
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41687349"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41823470"
 ---
 # <a name="prepare-single-standard-edition-server-intro"></a>Preparare un singolo server Standard Edition (Intro)
  

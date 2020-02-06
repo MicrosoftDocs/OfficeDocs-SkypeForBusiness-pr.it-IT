@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: overview
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono state rimosse da Skype for Business Server 2019.'
-ms.openlocfilehash: 9fd6ddc28a3b75b8d4c411aa7909516d4b5c0ab8
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: f77ccecd0ab963c0707a7b1dc1d24083ed0c3729
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195994"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41813984"
 ---
 # <a name="whats-deprecated-from-skype-for-business-server-2019"></a>Cosa è deprecato da Skype for Business Server 2019
 
@@ -75,4 +77,4 @@ Gli strumenti seguenti non sono supportati con Skype for Business Server 2019:
 
 [Novità di Skype for Business Server 2019](whats-new.md)
 
-[Migrazione della Federazione XMPP](migration/migrating-xmpp-federation.md)
+[Migrazione della federazione di XMPP](migration/migrating-xmpp-federation.md)

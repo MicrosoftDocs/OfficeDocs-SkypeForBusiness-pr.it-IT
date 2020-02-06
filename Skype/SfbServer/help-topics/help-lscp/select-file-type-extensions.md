@@ -8,17 +8,19 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.lscp.ImpChooseFileType
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3638cdc8-71dd-4a22-8613-83859af97387
 description: Usare la finestra di dialogo Seleziona estensioni del tipo di file per selezionare le estensioni di file da bloccare o consentire selezionando (per bloccare) o cancellando (per consentire) le caselle di controllo accanto alle estensioni in estensioni di file. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le estensioni dei tipi di file per tale categoria. Se si desidera selezionare tutte le estensioni di file per una categoria, selezionare il nome della categoria.
-ms.openlocfilehash: 1cb8b4bc9486a97e0f55004079d440bf0a360a65
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: ea03218092425fea164c744d03e1c931b9e9740b
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41699601"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41822219"
 ---
 # <a name="select-file-type-extensions"></a>Selezionare estensioni del tipo di file
  

@@ -8,17 +8,19 @@ ms.date: 4/1/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.dep.DeployCertRequestReturned
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4ada9045-0fdf-4470-8574-2fa08bab9392
 description: "La pagina di stato della richiesta di certificato online presenta informazioni importanti che derivano dalla creazione e dall'emissione di una richiesta di certificato online. Questa pagina fornisce l'identificazione personale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella di controllo assegna questo certificato agli usi dei certificati Skype for Business Server è selezionata. Se si fa clic su fine, il certificato verrà assegnato automaticamente a Lync Server 2013 per gli scopi definiti durante la procedura di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi che il certificato verrà assegnato sono i seguenti:"
-ms.openlocfilehash: 885de54ec8deeef1d326e39b5a35e7b08c633973
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 7b4ee3d615de0d0d58e041ba1860cc1cd2d34219
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41687749"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41823810"
 ---
 # <a name="certificate-request-returned"></a>Richiesta di certificato (restituito)
  

@@ -8,17 +8,19 @@ ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.dep.DeployReplicaConfig
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 92dccbca-7a5b-4064-9f2e-964b8e62433c
 description: Per avviare l'installazione del database che conterrà la copia locale di sola lettura di Central Management store, è possibile selezionare tra il recupero della configurazione definita pubblicata tramite Generatore di topologia dalla centrale già installata e configurata Management Store oppure leggendo la configurazione definita da altri elementi multimediali. Per un computer che si trova nella rete interna dell'organizzazione, selezionare Recupera automaticamente la configurazione dall'Central Management store.
-ms.openlocfilehash: dcbcbea9b941c83c28ebce5ba9b65cad1c38be9d
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 7638ab56e2ddcc8951ae989de11e72e0817a20bc
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41687629"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41823640"
 ---
 # <a name="install-local-configuration-store-invoke-configure"></a>Installare una archivio di configurazione locale (Configure)
  

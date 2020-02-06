@@ -8,18 +8,20 @@ ms.date: 4/8/2016
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.plan.EdgeNetwork
 - ms.lync.plan.EdgeNetwork
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d7f85abf-2045-4b08-ba29-c6211a3f6ff6
 description: 'La maggior parte dei componenti Edge viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia di Edge della rete perimetrale. Eccetto dove indicato, i componenti fanno parte degli scenari di Edge Server in Skype for Business Server 2015 e si trovano nella rete perimetrale. I componenti Edge includono i seguenti:'
-ms.openlocfilehash: 34fc5663554c953ffc29c930962192dcaf51772c
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 49c5715612524ac994cf040ee0acb639c19daec3
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41685479"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41821498"
 ---
 # <a name="edge-network-planning-tool"></a>Rete Edge (strumento di pianificazione)
  

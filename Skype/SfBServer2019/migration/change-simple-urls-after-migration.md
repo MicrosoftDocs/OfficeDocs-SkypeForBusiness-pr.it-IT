@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Skype for Business Server supporta URL semplici.
-ms.openlocfilehash: 806003a2639d3861c066248657521ceb58a4e986
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: ab820c1b24eb9b2e8befc85a34e82d068c9083ea
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239704"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41813884"
 ---
 # <a name="change-simple-urls-after-migration"></a>Modificare gli URL semplici dopo la migrazione
 
@@ -22,7 +24,7 @@ Skype for Business Server supporta tre semplici URL:
   
 - L' **incontro** viene usato come URL di base per tutte le conferenze nel sito o nell'organizzazione. Con l'URL semplice Meet, i collegamenti alle riunioni di partecipazione sono facili da comprendere e facili da comunicare e distribuire. 
     
-- **** L'accesso esterno consente di accedere alla pagina Web delle impostazioni dei servizi di conferenza telefonica con chiamata in ingresso. L'URL semplice per la chiamata in ingresso è incluso in tutti gli inviti alle riunioni, in modo che gli utenti che vogliono connettersi alla riunione possano accedere al numero di telefono e alle informazioni PIN necessarie. 
+- L'accesso esterno consente di accedere alla pagina Web delle impostazioni dei servizi di conferenza telefonica con **chiamata in ingresso** . L'URL semplice per la chiamata in ingresso è incluso in tutti gli inviti alle riunioni, in modo che gli utenti che vogliono connettersi alla riunione possano accedere al numero di telefono e alle informazioni PIN necessarie. 
     
 - L' **amministratore** consente l'accesso rapido al pannello di controllo di Skype for Business Server. L'URL semplice amministratore è interno dell'organizzazione. 
     

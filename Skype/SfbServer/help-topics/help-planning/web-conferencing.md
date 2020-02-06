@@ -8,18 +8,20 @@ ms.date: 4/8/2016
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.plan.WebConferencing
 - ms.lync.plan.WebConferencing
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4e4425c1-4a7b-4706-a4cd-155fd903acd5
 description: Le conferenze Web di Skype for Business Server 2015 includono la collaborazione tra documenti, la condivisione di applicazioni e la condivisione desktop.
-ms.openlocfilehash: a516e39833496361bccfdc1d990950c492aee2dc
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 3458f66ceda99c720201cea6bdd229bef2f81492
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41698741"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41821348"
 ---
 # <a name="web-conferencing-planning-tool"></a>Web Conferencing (strumento di pianificazione)
  

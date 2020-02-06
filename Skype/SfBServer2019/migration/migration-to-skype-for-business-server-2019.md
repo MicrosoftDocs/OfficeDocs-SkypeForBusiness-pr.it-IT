@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Gli argomenti di questa sezione illustrano il processo di migrazione a Skype for Business Server 2019.
-ms.openlocfilehash: 8e58eaa3870e8149e874a1ec196a728976f429f3
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 51c3be10b90198e1abe24172aa35ab167e871739
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238087"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41813404"
 ---
 # <a name="migration-to-skype-for-business-server-2019"></a>Migrazione a Skype for Business Server 2019
 
@@ -40,22 +42,22 @@ Questo articolo definisce i termini specificati nell'elenco seguente.
     
 ## <a name="in-this-section"></a>In questa sezione
 
-- [Prima di iniziare la migrazione](before-you-begin-the-migration.md)
+- [Operazioni preliminari alla migrazione](before-you-begin-the-migration.md)
     
 - [Fase 1: pianificare la migrazione](phase-1-plan-your-migration.md)
     
 - [Fase 2: preparare la migrazione](phase-2-prepare-for-migration.md)
     
-- [Fase 3: distribuire il pool di piloti](phase-3-deploy-pilot-pool.md)
+- [Fase 3: distribuire il pool pilota](phase-3-deploy-pilot-pool.md)
     
 - [Fase 4: trasferire gli utenti di test nel pool pilota](phase-4-move-test-users-to-the-pilot-pool.md)
     
-- [Fase 5: aggiungere Edge Server al pool di piloti](phase-5-add-edge-server-to-pilot-pool.md)
+- [Fase 5: aggiungere Edge Server al pool pilota](phase-5-add-edge-server-to-pilot-pool.md)
     
-- [Fase 6: passaggio dalla distribuzione pilota alla produzione](phase-6-move-from-pilot-deployment-into-production.md)
+- [Fase 6: passare dalla distribuzione pilota alla produzione](phase-6-move-from-pilot-deployment-into-production.md)
     
 - [Fase 7: completare le attività successive alla migrazione](phase-7-complete-post-migration-tasks.md)
     
-- [Fase 8: rimuovere i pool legacy](phase-8-decommission-legacy-pools.md)
+- [Fase 8: rimuovere le autorizzazioni dei pool legacy](phase-8-decommission-legacy-pools.md)
     
 

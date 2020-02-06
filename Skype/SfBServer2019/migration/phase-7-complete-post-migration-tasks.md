@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Negli argomenti di questa sezione vengono descritte le attività che è necessario eseguire dopo aver completato la migrazione a Skype for Business Server 2019.
-ms.openlocfilehash: 9ac11178132ef08157e08bec63cd20127e9582b1
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 72b89831f2b3e0811e4dce810ccad9f02e35424f
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244625"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41813114"
 ---
 # <a name="phase-7-complete-post-migration-tasks"></a>Fase 7: completare le attività successive alla migrazione
 
@@ -22,21 +24,21 @@ Negli argomenti di questa sezione vengono descritte le attività che è necessar
   
 ## <a name="in-this-section"></a>In questa sezione
 
-- [Eseguire la migrazione di riunioni e contenuto delle riunioni esistenti](migrate-existing-meetings-and-meeting-content.md)
+- [Eseguire la migrazione di riunioni e di contenuto di riunioni esistenti](migrate-existing-meetings-and-meeting-content.md)
     
 - [Eseguire la migrazione dei numeri di accesso esterno](migrate-dial-in-access-numbers.md)
     
-- [Eseguire la migrazione delle impostazioni delle applicazioni di Call Park](migrate-call-park-application-settings.md)
+- [Eseguire la migrazione delle impostazioni dell'applicazione Parcheggio di chiamata](migrate-call-park-application-settings.md)
     
-- [Eseguire la migrazione dei gruppi di risposte](migrate-response-groups.md)
+- [Eseguire la migrazione di Response Group](migrate-response-groups.md)
     
-- [Migrare Rubrica](migrate-address-book.md)
+- [Eseguire la migrazione della rubrica](migrate-address-book.md)
     
-- [Configurare la pagina di partecipazione alla riunione](configure-the-meeting-join-page.md)
+- [Configurare la pagina di partecipazione alle riunioni](configure-the-meeting-join-page.md)
     
-- [Rimuovere i server di archiviazione e monitoraggio legacy](remove-legacy-archiving-and-monitoring-servers.md)
+- [Rimuovere server di archiviazione e di monitoraggio legacy](remove-legacy-archiving-and-monitoring-servers.md)
     
-- [Configurare i server delle applicazioni attendibili](configure-trusted-application-servers.md)
+- [Configurare i server applicazioni attendibili](configure-trusted-application-servers.md)
     
 - [Distribuire i client di Skype for Business Server 2019](deploy-clients.md)
     
@@ -44,7 +46,7 @@ Negli argomenti di questa sezione vengono descritte le attività che è necessar
     
 - [Configurare il monitoraggio di SCOM](configure-scom-monitoring.md)
     
-- [Eseguire la migrazione dei telefoni delle aree comuni](migrate-common-area-phones.md)
+- [Eseguire la migrazione dei telefoni di aree comuni](migrate-common-area-phones.md)
     
 - [Eseguire la migrazione dei dispositivi analogici](migrate-analog-devices.md)
     

@@ -8,17 +8,19 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- NOCSH
+ms.custom:
 - ms.lync.tb.AddDirectorPoolPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 751ead48-b97f-4c6f-ba6b-14d446473658
 description: Per definire il nome di dominio completo del pool di Director, selezionare un pool di computer multipli costituito da due o più direttori in un pool con bilanciamento del carico o da un singolo pool di computer. Devi anche digitare il nome di dominio completo (FQDN) che verrà usato per la connessione al pool di Director o l'FQDN del singolo amministratore. Per un pool di computer Director, questa sarebbe la voce Domain Name System (DNS) per l'IP virtuale di un dispositivo di bilanciamento del carico hardware o della voce DNS condivisa per il bilanciamento del carico DNS.
-ms.openlocfilehash: 150975cedf09c19acac1afffab25f5becf053fe3
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 1a419c6a27118cbdf7ffe841a39b9b60e6e84577
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41698571"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41821188"
 ---
 # <a name="add-director-pool"></a>Aggiungere pool di Director
  
