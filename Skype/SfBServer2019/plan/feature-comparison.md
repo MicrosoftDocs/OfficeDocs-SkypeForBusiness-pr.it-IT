@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 16b14d59-7737-4f9d-aa4d-83765a18ea07
 description: 'Riepilogo: gli amministratori di Skype for Business Server 2019 o Skype for business online possono usare queste tabelle per comprendere quali funzionalità sono supportate dai client.'
-ms.openlocfilehash: e26c5020f780542a890b9016057171c59a3eee32
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 351158dde052039ad60e796fb528af48e923dfd2
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189047"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41812604"
 ---
 # <a name="desktop-client-feature-comparison-for-skype-for-business-server-2019"></a>Confronto tra funzionalità client desktop per Skype for Business Server 2019
 

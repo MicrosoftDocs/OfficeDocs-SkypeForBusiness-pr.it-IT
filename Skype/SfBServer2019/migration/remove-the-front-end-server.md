@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Le procedure descritte in questo argomento sono progettate per guidare l'utente nel processo di rimozione di un pool Front-end Enterprise Edition o di un server front-end Standard Edition. Dopo la migrazione a Skype for Business Server 2019, questo è uno dei primi passaggi per la disattivazione dell'ambiente legacy.
-ms.openlocfilehash: 611f9c3129b46026c55c2184ea8416bbe8a1f26c
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 6c402035823a10e2c6e823c7558bd8a57a97b915
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244431"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41812924"
 ---
-# <a name="remove-the-front-end-server"></a>Rimuovere il server front-end
+# <a name="remove-the-front-end-server"></a>Rimuovere il Front End Server
 
 Le procedure descritte in questa sezione sono progettate per guidare l'utente nel processo di rimozione di un pool Front-end Enterprise Edition o di un server front-end Standard Edition. Dopo la migrazione a Skype for Business Server 2019, questo è uno dei primi passaggi per la disattivazione dell'ambiente legacy.
   
@@ -24,12 +26,12 @@ Le procedure descritte in questa sezione sono progettate per guidare l'utente ne
 
 - [Reimpostare il controllo di ammissione di chiamata](reset-call-admission-control.md)
     
-- [Impedire sessioni per i servizi](prevent-sessions-for-services.md)
+- [Impedire le sessioni per i servizi](prevent-sessions-for-services.md)
     
-- [Arrestare i servizi legacy](stop-services.md)
+- [Interrompere i servizi legacy](stop-services.md)
     
-- [Rimuovere un server front-end da un pool](remove-a-front-end-server-from-a-pool.md)
+- [Rimuovere un Front End Server da un pool](remove-a-front-end-server-from-a-pool.md)
     
-- [Rimuovere il pool Front-end o il server Standard Edition](remove-front-end-pool-or-standard-edition-server.md)
+- [Rimuovere pool Front End o server Standard Edition](remove-front-end-pool-or-standard-edition-server.md)
     
 

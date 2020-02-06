@@ -1,5 +1,5 @@
 ---
-title: Rimuovere le istanze e i database di SQL Server nel server back-end
+title: Rimuovere database e istanze di SQL Server nel server back-end
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Si rimuovono i database e le istanze di Microsoft SQL Server dopo aver rimosso i server in uso, oppure dopo aver riconfigurato i server per l'utilizzo di un altro database. È necessario eseguire la procedura descritta in questo argomento quando si ritira il server SQL corrente o si riconfigura il server corrente in modo che esegua il rendering dei database obsoleti o non disponibili.
-ms.openlocfilehash: 6c526499e3036c9a10b8dc92ccc519f21ae8bc96
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 01552fcd494514802fffb35de7db7643f8cc26fd
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244434"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41812984"
 ---
-# <a name="remove-sql-server-instances-and-databases-on-the-back-end-server"></a>Rimuovere le istanze e i database di SQL Server nel server back-end
+# <a name="remove-sql-server-instances-and-databases-on-the-back-end-server"></a>Rimuovere database e istanze di SQL Server nel server back-end
 
 Si rimuovono i database e le istanze di Microsoft SQL Server dopo aver rimosso i server in uso, oppure dopo aver riconfigurato i server per l'utilizzo di un altro database. È necessario eseguire la procedura descritta in questo argomento quando si ritira il server SQL corrente o si riconfigura il server corrente in modo che esegua il rendering dei database obsoleti o non disponibili.
   
@@ -24,7 +26,7 @@ Per rimuovere i database o le istanze per il server di archiviazione o il server
   
 ## <a name="in-this-section"></a>In questa sezione
 
-- [Rimuovere il database di SQL Server per un pool Front-End](remove-the-sql-server-database-for-a-front-end-pool.md)
+- [Rimuovere il database di SQL Server per un pool Front End](remove-the-sql-server-database-for-a-front-end-pool.md)
     
 - [Rimuovere il database di SQL Server per un server di monitoraggio](remove-the-sql-server-database-for-a-monitoring-server.md)
     

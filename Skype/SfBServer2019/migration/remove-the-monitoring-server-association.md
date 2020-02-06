@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Per rimuovere il server di monitoraggio, è necessario modificare o deselezionare la dipendenza dal pool Front-end associato, Front End Server, Survivable Branch Appliance e Survivable Branch Server. Si modificano le proprietà del pool Front-End, Front End Server, Survivable Branch Appliance e Survivable Branch Server per rimuovere la dipendenza. Dopo aver cancellato la dipendenza ed eliminato il server in Generatore di topologia, viene segnalato che verrà eliminato anche l'oggetto archivio database associato in Generatore di topologia.
-ms.openlocfilehash: ecad0a447bacacf2a894bdb735b97b3a8593b1c8
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: aed16d60fbdae2413cb7890e38895bf6930cd4fd
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244437"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41812864"
 ---
 # <a name="remove-the-monitoring-server-association"></a>Rimuovere l'associazione del server di monitoraggio
 
@@ -26,9 +28,9 @@ Per rimuovere il server di monitoraggio, è necessario modificare o deselezionar
     
 2. Passare al nodo installazioni legacy.
     
-3. In Generatore di topologie espandere i **pool Front End di Enterprise Edition**, i **server front-end Standard Edition**o i **siti**di succursale, a seconda di dove è definito il server di monitoraggio.
+3. In Generatore di topologie espandere i **pool Front End di Enterprise Edition**, i **server front-end Standard Edition**o i **siti di succursale**, a seconda di dove è definito il server di monitoraggio.
     
-4. Se si ha un Survivable Branch Server associato, espandere **siti**di succursale, espandere il nome del sito della filiale e quindi espandere **Survivable Branch Appliances**.
+4. Se si ha un Survivable Branch Server associato, espandere **siti di succursale**, espandere il nome del sito della filiale e quindi espandere **Survivable Branch Appliances**.
     
     > [!NOTE]
     > Gli **elettrodomestici Survivable Branch** nell'interfaccia utente si applicano sia a Survivable Branch Server che Survivable Branch Appliance. 

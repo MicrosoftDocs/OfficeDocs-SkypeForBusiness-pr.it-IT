@@ -1,5 +1,5 @@
 ---
-title: Arrestare i servizi legacy
+title: Interrompere i servizi legacy
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Puoi usare il pannello di controllo di Skype for Business Server per avviare o arrestare tutti i servizi legacy in uso in un computer specifico oppure per avviare o arrestare un servizio legacy specifico.
-ms.openlocfilehash: e7cde5a947d9822106223216f1f826d6ebac036f
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 8e0ae8532330861cbdb153083072b582d757351c
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36241760"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41812794"
 ---
-# <a name="stop-legacy-services"></a>Arrestare i servizi legacy
+# <a name="stop-legacy-services"></a>Interrompere i servizi legacy
 
 Puoi usare il pannello di controllo di Skype for Business Server per avviare o arrestare tutti i servizi legacy in uso in un computer specifico oppure per avviare o arrestare un servizio legacy specifico.
   
@@ -24,7 +26,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per avviare o a
 
 1. Aprire il pannello di controllo di Skype for Business Server.
     
-2. Nella barra di spostamento sinistra fare clic **** su topologia e quindi su **stato**.
+2. Nella barra di spostamento sinistra fare clic su **topologia**e quindi su **stato**.
     
 3. Nella pagina **stato** ordinare o cercare l'elenco in base alle esigenze per trovare il computer in cui sono in esecuzione i servizi che si desidera avviare o arrestare e quindi fare clic su di esso. 
     
@@ -36,7 +38,7 @@ Puoi usare il pannello di controllo di Skype for Business Server per avviare o a
 
 1. Aprire il pannello di controllo di Skype for Business Server.
     
-2. Nella barra di spostamento sinistra fare clic **** su topologia e quindi su **stato**.
+2. Nella barra di spostamento sinistra fare clic su **topologia**e quindi su **stato**.
     
 3. Nella pagina **stato** ordinare o cercare l'elenco in base alle esigenze per trovare il computer in cui è in esecuzione il servizio che si vuole avviare o arrestare e quindi fare clic su di esso. 
     

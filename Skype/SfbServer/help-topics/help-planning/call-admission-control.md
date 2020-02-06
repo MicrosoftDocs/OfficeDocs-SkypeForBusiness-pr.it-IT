@@ -8,18 +8,20 @@ ms.date: 4/6/2016
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.plan.CallAdmissionControl
 - ms.lync.plan.CallAdmissionControl
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7b73e678-3e5c-491c-bef1-0eb72cf60398
 description: Il controllo di ammissione di chiamata (CAC) determina, in base alla larghezza di banda della rete disponibile, se consentire la creazione di sessioni di comunicazioni in tempo reale, ad esempio chiamate vocali o videochiamate.
-ms.openlocfilehash: 9ecd73a478064449f1956e57f13eeb3abf0f3287
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: c48bebaf85a2ea57cfda88ea92d68586f7304ab9
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41698711"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41809864"
 ---
 # <a name="call-admission-control-planning-tool"></a>Controllo ammissione chiamata (strumento di pianificazione)
  
