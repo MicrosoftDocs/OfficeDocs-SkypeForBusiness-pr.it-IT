@@ -8,6 +8,8 @@ ms.date: 2/15/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 451c41a1-b8c5-4dc3-9e48-0da9ed5381a1
 description: "Riepilogo: informazioni su come creare, pubblicare e verificare una nuova topologia prima di installare Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: c62e2ae061f02f195d0a9560d08234c452543d88
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 631b0e44dfc632cbcc07f4fa6020e39b8dd292e0
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245007"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41791804"
 ---
 # <a name="create-and-publish-new-topology-in-skype-for-business-server"></a>Creare e pubblicare una nuova topologia in Skype for Business Server
  
@@ -88,7 +90,7 @@ Puoi usare il generatore di topologia di Skype for Business Server per progettar
   
 5. Nella pagina **Selezione ruoli server collocato** è possibile scegliere di collocare il Mediation Server nel server front-end oppure scegliere di distribuirlo come server autonomo.
     
-    Se si intende collocare il Mediation Server nel pool Enterprise Edition front-end, verificare che la casella di controllo sia selezionata. Il ruolo del server verrà distribuito nei server del pool. Se si intende distribuire il server di mediazione come server autonomo, deselezionare la casella di controllo appropriata. Si distribuirà il server Mediation in un passaggio di distribuzione distinto dopo aver distribuito completamente il server front-end. Per informazioni sulla pianificazione di una collocazione, vedere Nozioni di [base sulla topologia per Skype for Business Server](../../plan-your-deployment/topology-basics/topology-basics.md).
+    Se si intende collocare il Mediation Server nel pool Enterprise Edition front-end, verificare che la casella di controllo sia selezionata. Il ruolo del server verrà distribuito nei server del pool. Se si intende distribuire il server di mediazione come server autonomo, deselezionare la casella di controllo appropriata. Si distribuirà il server Mediation in un passaggio di distribuzione distinto dopo aver distribuito completamente il server front-end. Per informazioni sulla pianificazione di una collocazione, vedere [nozioni di base sulla topologia per Skype for Business Server](../../plan-your-deployment/topology-basics/topology-basics.md).
     
 6. Utilizzando i **ruoli del server associato con questa pagina del pool Front-End** , è possibile definire e associare ruoli del server al pool Front-end. Il ruolo seguente è disponibile:
     
@@ -110,7 +112,7 @@ Puoi usare il generatore di topologia di Skype for Business Server per progettar
     
    - Per usare un archivio di SQL Server esistente già definito nella topologia, selezionare un'istanza da **SQL Store**.
     
-   - Per definire una nuova istanza di SQL Server per archiviare le informazioni sul pool, fare clic su **nuovo**e quindi specificare il **nome di dominio completo di SQL Server** nella finestra di dialogo Definisci **nuovo archivio SQL** .
+   - Per definire una nuova istanza di SQL Server per archiviare le informazioni sul pool, fare clic su **nuovo**e quindi specificare il **nome di dominio completo di SQL Server** nella finestra di dialogo **Definisci nuovo archivio SQL** .
     
    - Per specificare il nome di un'istanza di SQL Server, selezionare **istanza denominata**e quindi specificare il nome dell'istanza.
     
@@ -145,10 +147,10 @@ Puoi usare il generatore di topologia di Skype for Business Server per progettar
     > [!IMPORTANT]
     > L'URL di base è l'identità dei servizi Web per l'URL, meno il https://. Ad esempio, se l'URL completo per i servizi Web del pool è https://webint.contoso.local, l'URL di base è webint. contoso. local. 
   
-    - Se si sta configurando il bilanciamento del carico DNS, come in questo esempio, selezionare la casella di controllo Sostituisci il **nome completo del pool di servizi Web interni** e immettere l'URL di base interno (che deve essere diverso dal nome FQDN del pool) nell' **URL di base interno**. 
+    - Se si sta configurando il bilanciamento del carico DNS, come in questo esempio, selezionare la casella di controllo **Sostituisci il nome completo del pool di servizi Web interni** e immettere l'URL di base interno (che deve essere diverso dal nome FQDN del pool) nell' **URL di base interno**. 
     
     > [!CAUTION]
-    > Se si decide di ignorare i servizi Web interni con un nome di dominio completo definito autonomamente, ogni FQDN deve essere univoco da qualsiasi altro pool di front end, Director o Director. **Usare solo caratteri standard** (inclusi gli A-Z, a-z, 0-9 e i trattini) quando si definiscono URL o nomi di dominio completi. Non usare caratteri Unicode o carattere di sottolineatura. I caratteri non standard in un URL o FQDN spesso non sono supportati da autorità di certificazione pubbliche e DNS esterne (CAs), ovvero quando l'URL o il nome di dominio completo deve essere assegnato al nome dell'oggetto o all'oggetto alternativo nel certificato.
+    > Se si decide di ignorare i servizi Web interni con un nome di dominio completo definito autonomamente, ogni FQDN deve essere univoco da qualsiasi altro pool di front end, Director o Director. Quando Definisci URL o nomi di dominio completi, **Usa solo caratteri standard** (inclusi a-z, a-z, 0-9 e segni meno). Non usare caratteri Unicode o carattere di sottolineatura. I caratteri non standard in un URL o FQDN spesso non sono supportati da autorità di certificazione pubbliche e DNS esterne (CAs), ovvero quando l'URL o il nome di dominio completo deve essere assegnato al nome dell'oggetto o all'oggetto alternativo nel certificato.
   
     - Facoltativamente, immettere l'URL della base esterna nell' **URL di base esterno**. Immettere l'URL della base esterna per differenziarlo dal nome di dominio interno. Ad esempio, il dominio interno è contoso. local, ma il nome di dominio esterno è contoso.com. Definiresti l'URL usando il nome di dominio contoso.com perché deve essere risolvibile da DNS pubblico. Questo è importante anche nel caso di un proxy inverso. Il nome di dominio dell'URL di base esterno corrisponde al nome di dominio dell'FQDN del proxy inverso. L'accesso HTTP al pool Front-End è necessario per la messaggistica istantanea e la presenza nei client mobili.
     

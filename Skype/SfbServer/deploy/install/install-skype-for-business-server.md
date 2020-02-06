@@ -8,6 +8,8 @@ ms.date: 2/15/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: defd6b2c-f267-4f8c-bc94-8894e2a429b6
 description: "Riepilogo: informazioni su come installare i componenti di sistema di Skype for Business Server in ogni server della topologia. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: 35ad1914dced8d8937de0f56a19c2709551a2893
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 8ecf298809a6c4c37b5c075e7ac16623f1669ff9
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245806"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41791754"
 ---
 # <a name="install-skype-for-business-server-on-servers-in-the-topology"></a>Installare Skype for Business Server nei server della topologia
  
@@ -140,7 +142,7 @@ Dopo aver pubblicato una topologia, è possibile installare i componenti di Skyp
     > [!NOTE]
     > Se l'organizzazione ha creato un modello da usare come alternativa per il modello di CA del server Web predefinito, selezionare la casella di controllo e quindi immettere il nome del modello alternativo. Sarà necessario il nome del modello definito dall'amministratore della CA. 
   
-8. Nella pagina **Impostazioni nome e sicurezza** specificare un **nome**descrittivo. Usando un nome descrittivo, puoi identificare rapidamente il certificato e lo scopo. Se si lascia vuoto, verrà generato automaticamente un nome. Impostare la **lunghezza del bit** della chiave o accettare l'impostazione predefinita di 2048 bit. Selezionare il **contrassegno della chiave privata del certificato come** esportabile se si determina che il certificato e la chiave privata devono essere spostati o copiati in altri sistemi e quindi fare clic su **Avanti**.
+8. Nella pagina **Impostazioni nome e sicurezza** specificare un **nome descrittivo**. Usando un nome descrittivo, puoi identificare rapidamente il certificato e lo scopo. Se si lascia vuoto, verrà generato automaticamente un nome. Impostare la **lunghezza del bit** della chiave o accettare l'impostazione predefinita di 2048 bit. Selezionare il **contrassegno della chiave privata del certificato come esportabile** se si determina che il certificato e la chiave privata devono essere spostati o copiati in altri sistemi e quindi fare clic su **Avanti**.
     
     > [!NOTE]
     > Skype for Business Server offre requisiti minimi per una chiave privata esportabile. Una di queste posizioni si trova negli Edge Server in un pool, in cui il servizio di autenticazione dell'inoltro multimediale USA copie del certificato, invece dei singoli certificati per ogni istanza del pool. 

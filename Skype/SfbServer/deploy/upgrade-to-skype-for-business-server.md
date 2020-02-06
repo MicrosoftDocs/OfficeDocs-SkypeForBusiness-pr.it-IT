@@ -8,6 +8,8 @@ ms.date: 7/14/2016
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 74ce73bc-356b-4705-83b1-341ee010fd19
 description: "Riepilogo: informazioni su come eseguire l'aggiornamento da Lync Server 2013 a Skype for Business Server 2015. Scaricare una versione di valutazione gratuita di Skype for Business Server 2015 presso Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: d9ce950ead8b8a3a8857c53d421470a0e647ea23
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: c024cde12ce30f3d143bf5f3e34400cc49cb46b5
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41001876"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41791554"
 ---
 # <a name="upgrade-to-skype-for-business-server-2015"></a>Aggiornamento a Skype for Business Server 2015
  

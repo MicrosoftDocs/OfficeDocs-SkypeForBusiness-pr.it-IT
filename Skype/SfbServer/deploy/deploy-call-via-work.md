@@ -7,18 +7,20 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 4802d733-14ef-4509-92b9-07173614e45f
 description: 'Riepilogo: informazioni su come distribuire la chiamata tramite il lavoro in Skype for Business Server per alcuni o tutti gli utenti.'
-ms.openlocfilehash: d989c05b6b2b3e01a3a96e66133ec314029329e1
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: 9b77207d6618e4a869ae369697bc8395aba81673
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41002706"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41791084"
 ---
 # <a name="deploy-call-via-work-in-skype-for-business-server"></a>Distribuire una chiamata tramite il lavoro in Skype for Business Server
  

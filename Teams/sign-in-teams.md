@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d266799bf2bc2cab9cd107836f9017bd7dc369bf
-ms.sourcegitcommit: 2cb46af39a0d116e8fd020aa04bd2ecbd6998a5f
+ms.openlocfilehash: 9911a014fe3bd3e3ede151e2a85e8181c399e463
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41678970"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41790614"
 ---
 <a name="sign-in-to-microsoft-teams-using-modern-authentication"></a>Accedere a Microsoft teams con l'autenticazione moderna
 ==========================
@@ -54,6 +54,9 @@ Se gli utenti stanno lavorando a un computer collegato al dominio (ad esempio, s
 
 ## <a name="signing-out-of-microsoft-teams-after-completing-modern-authentication"></a>Disconnettersi da Microsoft teams dopo aver completato l'autenticazione moderna
 Per disconnettersi da teams, gli utenti possono fare clic sull'immagine del profilo nella parte superiore dell'app e **quindi selezionare Disconnetti**. È anche possibile fare clic con il pulsante destro del mouse sull'icona dell'app nella barra delle applicazioni e quindi scegliere **Disconnetti**. Dopo aver disconnettersi da teams, è necessario immettere di nuovo le credenziali per avviare l'app.
+
+## <a name="urls-and-ip-address-ranges"></a>URL e intervalli di indirizzi IP
+I team richiedono la connettività a Internet. Per informazioni sugli endpoint che devono essere raggiungibili per i clienti che usano team in piani di Office 365, governi e altre nubi, leggere le [indicazioni disponibili qui](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). Oltre a questo, devi consentire anche l'accesso https://ssl.gstatic.com.
 
 ## <a name="troubleshooting-modern-authentication"></a>Risoluzione dei problemi di autenticazione moderna
 

@@ -8,6 +8,8 @@ ms.date: 7/14/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: a4f4bad1-fc59-47ce-a3ea-b1b893769db6
 description: "Riepilogo: informazioni su come verificare che la topologia di Skype for Business Server e i server Active Directory funzionino come previsto. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: 6c7d7a67cab2cbd383ee26eb64f478985bcc4b27
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: aa631e5b08ff8cbe9cb6db17009f286dcc975679
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245516"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41791714"
 ---
 # <a name="verify-the-topology-in-skype-for-business-server"></a>Verificare la topologia in Skype for Business Server
  
@@ -50,7 +52,7 @@ Il passaggio finale consiste nel testare il pool Front-end e verificare che i cl
     
 4. Avviare il pannello di controllo di Skype for Business Server e quindi specificare le credenziali, se richiesto. Il pannello di controllo di Skype for Business Server Visualizza le informazioni sulla distribuzione.
     
-5. Nella barra di spostamento sinistra fare clic **** su topologia e quindi verificare che lo stato del servizio visualizzi un computer con una freccia verde e che un segno di spunta verde per lo stato di replica sia accanto a ogni ruolo di Skype for Business Server distribuito e portato online. 
+5. Nella barra di spostamento sinistra fare clic su **topologia**e quindi verificare che lo stato del servizio visualizzi un computer con una freccia verde e che un segno di spunta verde per lo stato di replica sia accanto a ogni ruolo di Skype for Business Server distribuito e portato online. 
     
 6. Sulla barra di spostamento sinistra fare clic su **utenti**e quindi su **Abilita utenti**. 
     

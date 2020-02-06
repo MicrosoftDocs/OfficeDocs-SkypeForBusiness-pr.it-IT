@@ -8,16 +8,18 @@ ms.date: 12/20/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 795dc1c6-524f-4012-8b66-103b55198044
 description: 'Riepilogo: rivedere i passaggi di integrazione per Exchange Server 2016 o Exchange Server 2013 e Skype for Business Server.'
-ms.openlocfilehash: 398ded1c138743c79de0e372b930dacef08fd94f
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: ad8921c9c4c5c54809aa8323f60314dfc0826061
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244330"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41791654"
 ---
 # <a name="integrate-skype-for-business-server-with-exchange-server"></a>Integrare Skype for Business Server con Exchange Server
 
@@ -51,4 +53,4 @@ Se si sta integrando Skype for business online con Exchange Server in locale, ve
 
 ## <a name="see-also"></a>Vedere anche
 
-[Piano di integrazione di Skype for Business Server 2015 con Exchange](../../plan-your-deployment/integrate-with-exchange/integrate-with-exchange.md)
+[Pianificare l'integrazione di Skype for Business ed Exchange](../../plan-your-deployment/integrate-with-exchange/integrate-with-exchange.md)

@@ -8,6 +8,8 @@ ms.date: 2/15/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 798a663c-0b63-4f75-b0a3-9c553cef8c5f
 description: "Riepilogo: informazioni su come configurare DNS e creare record DNS per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: f5f5c40805388d6a1c861a53bae0a85c27537056
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 573d39c44bb4b4067d1030a957b1447ad62266c7
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245004"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41791794"
 ---
 # <a name="create-dns-records-for-skype-for-business-server"></a>Creare record DNS per Skype for Business Server
  
@@ -56,7 +58,7 @@ Questo esempio usa un FQDN con bilanciamento del carico DNS denominato pool. con
 |URL semplice di amministrazione  <br/> |A  <br/> |admin. contoso. local  <br/> |VIP per servizi Web interni  <br/> |Software e hardware supportati  <br/> |
 |Individuazione legacy  <br/> |SRV  <br/> |_sipinternaltls. _tcp. contoso. local  <br/> |FQDN del pool (porta 5061)  <br/> |N/D  <br/> |
    
-### <a name="create-dns-records"></a>Creare record DNS
+### <a name="create-dns-records"></a>Creare record DNS.
 
 1. Accedere al server DNS e aprire **Server Manager**.
     
@@ -121,7 +123,7 @@ Questo esempio usa un FQDN con bilanciamento del carico DNS denominato pool. con
     
 5. Se si supportano client legacy e si crea il record SRV, verificarlo digitando **set type = srv** al prompt di **nslookup** e quindi premere INVIO.
     
-6. Digitare **_sipinternaltls. _tcp. *dominio* ** (ad esempio, _sipinternaltls. _tcp. contoso. local) e quindi premere INVIO.
+6. Digitare **_sipinternaltls. _tcp. *dominio* ** ad esempio, _sipinternaltls. _tcp. contoso. local) e quindi premere INVIO.
     
 7. L'output previsto dovrebbe essere simile a quello mostrato nella figura. Tieni presente che non tutti i record DNS vengono visualizzati nell'output di esempio, ma tutti i record devono essere verificati. 
     
