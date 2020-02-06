@@ -8,82 +8,84 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: c22d4a76-da50-49de-9038-e0ed7b8e1b58
 description: Gli argomenti seguenti illustrano in dettaglio le colonne in ognuna delle tabelle dello schema del database della chat persistente.
-ms.openlocfilehash: 3ac401577bae294324b0f0feb82e611522b2610b
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f9dbc6a4633b48c384cbea36eaffb3c7f1d074f8
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194711"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41814734"
 ---
-# <a name="persistent-chat-server-table-details"></a><span data-ttu-id="02583-103">Dettagli sulle tabelle del server Chat persistente</span><span class="sxs-lookup"><span data-stu-id="02583-103">Persistent Chat Server table details</span></span>
+# <a name="persistent-chat-server-table-details"></a><span data-ttu-id="34d07-103">Dettagli sulle tabelle del server Chat persistente</span><span class="sxs-lookup"><span data-stu-id="34d07-103">Persistent Chat Server table details</span></span>
  
-<span data-ttu-id="02583-104">Gli argomenti seguenti illustrano in dettaglio le colonne in ognuna delle tabelle dello schema del database della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="02583-104">The following topics detail the columns in each of the Persistent Chat database schema tables.</span></span>
+<span data-ttu-id="34d07-104">Gli argomenti seguenti illustrano in dettaglio le colonne in ognuna delle tabelle dello schema del database della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="34d07-104">The following topics detail the columns in each of the Persistent Chat database schema tables.</span></span>
   
-## <a name="in-this-section"></a><span data-ttu-id="02583-105">In questa sezione</span><span class="sxs-lookup"><span data-stu-id="02583-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="34d07-105">In questa sezione</span><span class="sxs-lookup"><span data-stu-id="34d07-105">In this section</span></span>
 
-- [<span data-ttu-id="02583-106">tblADCookie</span><span class="sxs-lookup"><span data-stu-id="02583-106">tblADCookie</span></span>](tbladcookie.md)
+- [<span data-ttu-id="34d07-106">tblADCookie</span><span class="sxs-lookup"><span data-stu-id="34d07-106">tblADCookie</span></span>](tbladcookie.md)
     
-- [<span data-ttu-id="02583-107">tblPrincipalMemberDifference</span><span class="sxs-lookup"><span data-stu-id="02583-107">tblPrincipalMemberDifference</span></span>](tblprincipalmemberdifference.md)
+- [<span data-ttu-id="34d07-107">tblPrincipalMemberDifference</span><span class="sxs-lookup"><span data-stu-id="34d07-107">tblPrincipalMemberDifference</span></span>](tblprincipalmemberdifference.md)
     
-- [<span data-ttu-id="02583-108">tblADUpdates</span><span class="sxs-lookup"><span data-stu-id="02583-108">tblADUpdates</span></span>](tbladupdates.md)
+- [<span data-ttu-id="34d07-108">tblADUpdates</span><span class="sxs-lookup"><span data-stu-id="34d07-108">tblADUpdates</span></span>](tbladupdates.md)
     
-- [<span data-ttu-id="02583-109">tblPrincipalMembers</span><span class="sxs-lookup"><span data-stu-id="02583-109">tblPrincipalMembers</span></span>](tblprincipalmembers.md)
+- [<span data-ttu-id="34d07-109">tblPrincipalMembers</span><span class="sxs-lookup"><span data-stu-id="34d07-109">tblPrincipalMembers</span></span>](tblprincipalmembers.md)
     
-- [<span data-ttu-id="02583-110">tblPrincipalMeta</span><span class="sxs-lookup"><span data-stu-id="02583-110">tblPrincipalMeta</span></span>](tblprincipalmeta.md)
+- [<span data-ttu-id="34d07-110">tblPrincipalMeta</span><span class="sxs-lookup"><span data-stu-id="34d07-110">tblPrincipalMeta</span></span>](tblprincipalmeta.md)
     
-- [<span data-ttu-id="02583-111">tblSkippedAffiliations</span><span class="sxs-lookup"><span data-stu-id="02583-111">tblSkippedAffiliations</span></span>](tblskippedaffiliations.md)
+- [<span data-ttu-id="34d07-111">tblSkippedAffiliations</span><span class="sxs-lookup"><span data-stu-id="34d07-111">tblSkippedAffiliations</span></span>](tblskippedaffiliations.md)
     
-- [<span data-ttu-id="02583-112">tblPrincipalType</span><span class="sxs-lookup"><span data-stu-id="02583-112">tblPrincipalType</span></span>](tblprincipaltype.md)
+- [<span data-ttu-id="34d07-112">tblPrincipalType</span><span class="sxs-lookup"><span data-stu-id="34d07-112">tblPrincipalType</span></span>](tblprincipaltype.md)
     
-- [<span data-ttu-id="02583-113">tblPrincipal</span><span class="sxs-lookup"><span data-stu-id="02583-113">tblPrincipal</span></span>](tblprincipal.md)
+- [<span data-ttu-id="34d07-113">tblPrincipal</span><span class="sxs-lookup"><span data-stu-id="34d07-113">tblPrincipal</span></span>](tblprincipal.md)
     
-- [<span data-ttu-id="02583-114">tblPrincipalAffiliations</span><span class="sxs-lookup"><span data-stu-id="02583-114">tblPrincipalAffiliations</span></span>](tblprincipalaffiliations.md)
+- [<span data-ttu-id="34d07-114">tblPrincipalAffiliations</span><span class="sxs-lookup"><span data-stu-id="34d07-114">tblPrincipalAffiliations</span></span>](tblprincipalaffiliations.md)
     
-- [<span data-ttu-id="02583-115">tblNode</span><span class="sxs-lookup"><span data-stu-id="02583-115">tblNode</span></span>](tblnode.md)
+- [<span data-ttu-id="34d07-115">tblNode</span><span class="sxs-lookup"><span data-stu-id="34d07-115">tblNode</span></span>](tblnode.md)
     
-- [<span data-ttu-id="02583-116">tblRoleType</span><span class="sxs-lookup"><span data-stu-id="02583-116">tblRoleType</span></span>](tblroletype.md)
+- [<span data-ttu-id="34d07-116">tblRoleType</span><span class="sxs-lookup"><span data-stu-id="34d07-116">tblRoleType</span></span>](tblroletype.md)
     
-- [<span data-ttu-id="02583-117">tblScopePrincipal</span><span class="sxs-lookup"><span data-stu-id="02583-117">tblScopePrincipal</span></span>](tblscopeprincipal.md)
+- [<span data-ttu-id="34d07-117">tblScopePrincipal</span><span class="sxs-lookup"><span data-stu-id="34d07-117">tblScopePrincipal</span></span>](tblscopeprincipal.md)
     
-- [<span data-ttu-id="02583-118">tblPrincipalRole</span><span class="sxs-lookup"><span data-stu-id="02583-118">tblPrincipalRole</span></span>](tblprincipalrole.md)
+- [<span data-ttu-id="34d07-118">tblPrincipalRole</span><span class="sxs-lookup"><span data-stu-id="34d07-118">tblPrincipalRole</span></span>](tblprincipalrole.md)
     
-- [<span data-ttu-id="02583-119">tblSiopWhiteList</span><span class="sxs-lookup"><span data-stu-id="02583-119">tblSiopWhiteList</span></span>](tblsiopwhitelist.md)
+- [<span data-ttu-id="34d07-119">tblSiopWhiteList</span><span class="sxs-lookup"><span data-stu-id="34d07-119">tblSiopWhiteList</span></span>](tblsiopwhitelist.md)
     
-- [<span data-ttu-id="02583-120">tblEnumAttribute</span><span class="sxs-lookup"><span data-stu-id="02583-120">tblEnumAttribute</span></span>](tblenumattribute.md)
+- [<span data-ttu-id="34d07-120">tblEnumAttribute</span><span class="sxs-lookup"><span data-stu-id="34d07-120">tblEnumAttribute</span></span>](tblenumattribute.md)
     
-- [<span data-ttu-id="02583-121">tblEnumValue</span><span class="sxs-lookup"><span data-stu-id="02583-121">tblEnumValue</span></span>](tblenumvalue.md)
+- [<span data-ttu-id="34d07-121">tblEnumValue</span><span class="sxs-lookup"><span data-stu-id="34d07-121">tblEnumValue</span></span>](tblenumvalue.md)
     
-- [<span data-ttu-id="02583-122">tblPrincipalInvites</span><span class="sxs-lookup"><span data-stu-id="02583-122">tblPrincipalInvites</span></span>](tblprincipalinvites.md)
+- [<span data-ttu-id="34d07-122">tblPrincipalInvites</span><span class="sxs-lookup"><span data-stu-id="34d07-122">tblPrincipalInvites</span></span>](tblprincipalinvites.md)
     
-- [<span data-ttu-id="02583-123">tblChat</span><span class="sxs-lookup"><span data-stu-id="02583-123">tblChat</span></span>](tblchat.md)
+- [<span data-ttu-id="34d07-123">tblChat</span><span class="sxs-lookup"><span data-stu-id="34d07-123">tblChat</span></span>](tblchat.md)
     
-- [<span data-ttu-id="02583-124">tblLastInviteId</span><span class="sxs-lookup"><span data-stu-id="02583-124">tblLastInviteId</span></span>](tbllastinviteid.md)
+- [<span data-ttu-id="34d07-124">tblLastInviteId</span><span class="sxs-lookup"><span data-stu-id="34d07-124">tblLastInviteId</span></span>](tbllastinviteid.md)
     
-- [<span data-ttu-id="02583-125">tblLastChatId</span><span class="sxs-lookup"><span data-stu-id="02583-125">tblLastChatId</span></span>](tbllastchatid.md)
+- [<span data-ttu-id="34d07-125">tblLastChatId</span><span class="sxs-lookup"><span data-stu-id="34d07-125">tblLastChatId</span></span>](tbllastchatid.md)
     
-- [<span data-ttu-id="02583-126">tblPreference</span><span class="sxs-lookup"><span data-stu-id="02583-126">tblPreference</span></span>](tblpreference.md)
+- [<span data-ttu-id="34d07-126">tblPreference</span><span class="sxs-lookup"><span data-stu-id="34d07-126">tblPreference</span></span>](tblpreference.md)
     
-- [<span data-ttu-id="02583-127">tblFileToken</span><span class="sxs-lookup"><span data-stu-id="02583-127">tblFileToken</span></span>](tblfiletoken.md)
+- [<span data-ttu-id="34d07-127">tblFileToken</span><span class="sxs-lookup"><span data-stu-id="34d07-127">tblFileToken</span></span>](tblfiletoken.md)
     
-- [<span data-ttu-id="02583-128">tblServerIdentity</span><span class="sxs-lookup"><span data-stu-id="02583-128">tblServerIdentity</span></span>](tblserveridentity.md)
+- [<span data-ttu-id="34d07-128">tblServerIdentity</span><span class="sxs-lookup"><span data-stu-id="34d07-128">tblServerIdentity</span></span>](tblserveridentity.md)
     
-- [<span data-ttu-id="02583-129">tblAdminLock</span><span class="sxs-lookup"><span data-stu-id="02583-129">tblAdminLock</span></span>](tbladminlock.md)
+- [<span data-ttu-id="34d07-129">tblAdminLock</span><span class="sxs-lookup"><span data-stu-id="34d07-129">tblAdminLock</span></span>](tbladminlock.md)
     
-- [<span data-ttu-id="02583-130">tblSystemRevision</span><span class="sxs-lookup"><span data-stu-id="02583-130">tblSystemRevision</span></span>](tblsystemrevision.md)
+- [<span data-ttu-id="34d07-130">tblSystemRevision</span><span class="sxs-lookup"><span data-stu-id="34d07-130">tblSystemRevision</span></span>](tblsystemrevision.md)
     
-- [<span data-ttu-id="02583-131">tblActivePeers</span><span class="sxs-lookup"><span data-stu-id="02583-131">tblActivePeers</span></span>](tblactivepeers.md)
+- [<span data-ttu-id="34d07-131">tblActivePeers</span><span class="sxs-lookup"><span data-stu-id="34d07-131">tblActivePeers</span></span>](tblactivepeers.md)
     
-- [<span data-ttu-id="02583-132">tblConfig</span><span class="sxs-lookup"><span data-stu-id="02583-132">tblConfig</span></span>](tblconfig.md)
+- [<span data-ttu-id="34d07-132">tblConfig</span><span class="sxs-lookup"><span data-stu-id="34d07-132">tblConfig</span></span>](tblconfig.md)
     
-- [<span data-ttu-id="02583-133">tblComplianceData</span><span class="sxs-lookup"><span data-stu-id="02583-133">tblComplianceData</span></span>](tblcompliancedata.md)
+- [<span data-ttu-id="34d07-133">tblComplianceData</span><span class="sxs-lookup"><span data-stu-id="34d07-133">tblComplianceData</span></span>](tblcompliancedata.md)
     
-- [<span data-ttu-id="02583-134">tblComplianceFanout</span><span class="sxs-lookup"><span data-stu-id="02583-134">tblComplianceFanout</span></span>](tblcompliancefanout.md)
+- [<span data-ttu-id="34d07-134">tblComplianceFanout</span><span class="sxs-lookup"><span data-stu-id="34d07-134">tblComplianceFanout</span></span>](tblcompliancefanout.md)
     
-- [<span data-ttu-id="02583-135">tblComplianceParticipant</span><span class="sxs-lookup"><span data-stu-id="02583-135">tblComplianceParticipant</span></span>](tblcomplianceparticipant.md)
+- [<span data-ttu-id="34d07-135">tblComplianceParticipant</span><span class="sxs-lookup"><span data-stu-id="34d07-135">tblComplianceParticipant</span></span>](tblcomplianceparticipant.md)
     
-- [<span data-ttu-id="02583-136">tblComplianceState</span><span class="sxs-lookup"><span data-stu-id="02583-136">tblComplianceState</span></span>](tblcompliancestate.md)
+- [<span data-ttu-id="34d07-136">tblComplianceState</span><span class="sxs-lookup"><span data-stu-id="34d07-136">tblComplianceState</span></span>](tblcompliancestate.md)
     
 
