@@ -7,49 +7,51 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 932c7e2d-6de3-4176-ac6e-ec230f8230f2
 description: 'Riepilogo: informazioni su come visualizzare le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: 13d91bc4c0335d8c069e0b0d9bc41efd8714f112
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 858d1a3d786cb9fe3c6b33daaca8667cab2390f8
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188918"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41818457"
 ---
-# <a name="view-meeting-configuration-settings-in-skype-for-business-server"></a><span data-ttu-id="58d2a-103">Visualizzare le impostazioni di configurazione delle riunioni in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="58d2a-103">View meeting configuration settings in Skype for Business Server</span></span>
+# <a name="view-meeting-configuration-settings-in-skype-for-business-server"></a><span data-ttu-id="33eef-103">Visualizzare le impostazioni di configurazione delle riunioni in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="33eef-103">View meeting configuration settings in Skype for Business Server</span></span>
  
-<span data-ttu-id="58d2a-104">**Riepilogo:** Informazioni su come visualizzare le impostazioni di configurazione delle riunioni in Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="58d2a-104">**Summary:** Learn how to view meeting configuration settings in Skype for Business Server.</span></span>
+<span data-ttu-id="33eef-104">**Riepilogo:** Informazioni su come visualizzare le impostazioni di configurazione delle riunioni in Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="33eef-104">**Summary:** Learn how to view meeting configuration settings in Skype for Business Server.</span></span>
   
-<span data-ttu-id="58d2a-105">Puoi visualizzare le impostazioni di configurazione delle riunioni usando il pannello di controllo di Skype for Business Server o usando Skype for Business Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="58d2a-105">You can view meeting configuration settings by using Skype for Business Server Control Panel or by using Skype for Business Server Management Shell.</span></span>
+<span data-ttu-id="33eef-105">Puoi visualizzare le impostazioni di configurazione delle riunioni usando il pannello di controllo di Skype for Business Server o usando Skype for Business Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="33eef-105">You can view meeting configuration settings by using Skype for Business Server Control Panel or by using Skype for Business Server Management Shell.</span></span>
   
-## <a name="view-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a><span data-ttu-id="58d2a-106">Visualizzare le impostazioni di configurazione delle riunioni tramite il pannello di controllo di Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="58d2a-106">View meeting configuration settings by using Skype for Business Server Control Panel</span></span>
-<span data-ttu-id="58d2a-107"><a name="BKMK_ViewJoinSettings"> </a></span><span class="sxs-lookup"><span data-stu-id="58d2a-107"></span></span>
+## <a name="view-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a><span data-ttu-id="33eef-106">Visualizzare le impostazioni di configurazione delle riunioni tramite il pannello di controllo di Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="33eef-106">View meeting configuration settings by using Skype for Business Server Control Panel</span></span>
+<span data-ttu-id="33eef-107"><a name="BKMK_ViewJoinSettings"> </a></span><span class="sxs-lookup"><span data-stu-id="33eef-107"><a name="BKMK_ViewJoinSettings"> </a></span></span>
 
-1. <span data-ttu-id="58d2a-108">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="58d2a-108">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1. <span data-ttu-id="33eef-108">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="33eef-108">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
     
-2.  <span data-ttu-id="58d2a-109">Aprire il pannello di controllo di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="58d2a-109">Open Skype for Business Server Control Panel.</span></span>
+2.  <span data-ttu-id="33eef-109">Aprire il pannello di controllo di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="33eef-109">Open Skype for Business Server Control Panel.</span></span>
     
-3. <span data-ttu-id="58d2a-110">Sulla barra di spostamento sinistra fare clic su servizi di **conferenza**e quindi su **Configurazione riunione**.</span><span class="sxs-lookup"><span data-stu-id="58d2a-110">In the left navigation bar, click **Conferencing**, and then click **Meeting Configuration**.</span></span>
+3. <span data-ttu-id="33eef-110">Sulla barra di spostamento sinistra fare clic su servizi di **conferenza**e quindi su **Configurazione riunione**.</span><span class="sxs-lookup"><span data-stu-id="33eef-110">In the left navigation bar, click **Conferencing**, and then click **Meeting Configuration**.</span></span>
     
-4. <span data-ttu-id="58d2a-111">Nella pagina **Configurazione riunione** fare clic sulla configurazione della riunione che si desidera visualizzare.</span><span class="sxs-lookup"><span data-stu-id="58d2a-111">On the **Meeting Configuration** page, click the meeting configuration that you would like to view.</span></span>
+4. <span data-ttu-id="33eef-111">Nella pagina **Configurazione riunione** fare clic sulla configurazione della riunione che si desidera visualizzare.</span><span class="sxs-lookup"><span data-stu-id="33eef-111">On the **Meeting Configuration** page, click the meeting configuration that you would like to view.</span></span>
     
-5. <span data-ttu-id="58d2a-112">In **Modifica filtro file**selezionare la casella di controllo **Mostra dettagli** .</span><span class="sxs-lookup"><span data-stu-id="58d2a-112">In **Edit File Filter**, select the **Show Details** check box.</span></span>
+5. <span data-ttu-id="33eef-112">In **Modifica filtro file**selezionare la casella di controllo **Mostra dettagli** .</span><span class="sxs-lookup"><span data-stu-id="33eef-112">In **Edit File Filter**, select the **Show Details** check box.</span></span>
     
-    <span data-ttu-id="58d2a-113">**Modificare la configurazione delle \<riunioni\> :** verrà visualizzata la visualizzazione delle impostazioni per il criterio selezionato.</span><span class="sxs-lookup"><span data-stu-id="58d2a-113">**Edit Meeting Configuration - \<policy\>** opens displaying the settings for the selected policy.</span></span>
+    <span data-ttu-id="33eef-113">**Modificare la configurazione delle \<riunioni\> :** verrà visualizzata la visualizzazione delle impostazioni per il criterio selezionato.</span><span class="sxs-lookup"><span data-stu-id="33eef-113">**Edit Meeting Configuration - \<policy\>** opens displaying the settings for the selected policy.</span></span>
     
-    <span data-ttu-id="58d2a-114">Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [creare impostazioni di configurazione delle riunioni in Skype for Business Server](create-settings.md).</span><span class="sxs-lookup"><span data-stu-id="58d2a-114">For details about configuring the settings, see [Create meeting configuration settings in Skype for Business Server](create-settings.md).</span></span>
+    <span data-ttu-id="33eef-114">Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [creare impostazioni di configurazione delle riunioni in Skype for Business Server](create-settings.md).</span><span class="sxs-lookup"><span data-stu-id="33eef-114">For details about configuring the settings, see [Create meeting configuration settings in Skype for Business Server](create-settings.md).</span></span>
     
-## <a name="view-meeting-configuration-settings-by-using-skype-for-business-server-management-shell"></a><span data-ttu-id="58d2a-115">Visualizzare le impostazioni di configurazione delle riunioni con Skype for Business Server Management Shell</span><span class="sxs-lookup"><span data-stu-id="58d2a-115">View meeting configuration settings by using Skype for Business Server Management Shell</span></span>
-<span data-ttu-id="58d2a-116"><a name="BKMK_ViewJoinSettings"> </a></span><span class="sxs-lookup"><span data-stu-id="58d2a-116"></span></span>
+## <a name="view-meeting-configuration-settings-by-using-skype-for-business-server-management-shell"></a><span data-ttu-id="33eef-115">Visualizzare le impostazioni di configurazione delle riunioni con Skype for Business Server Management Shell</span><span class="sxs-lookup"><span data-stu-id="33eef-115">View meeting configuration settings by using Skype for Business Server Management Shell</span></span>
+<span data-ttu-id="33eef-116"><a name="BKMK_ViewJoinSettings"> </a></span><span class="sxs-lookup"><span data-stu-id="33eef-116"><a name="BKMK_ViewJoinSettings"> </a></span></span>
 
-<span data-ttu-id="58d2a-117">Per visualizzare informazioni su tutte le impostazioni di configurazione della riunione, usare il cmdlet **Get-CsMeetingConfiguration** :</span><span class="sxs-lookup"><span data-stu-id="58d2a-117">To view information about all your meeting configuration settings, use the **Get-CsMeetingConfiguration** cmdlet:</span></span>
+<span data-ttu-id="33eef-117">Per visualizzare informazioni su tutte le impostazioni di configurazione della riunione, usare il cmdlet **Get-CsMeetingConfiguration** :</span><span class="sxs-lookup"><span data-stu-id="33eef-117">To view information about all your meeting configuration settings, use the **Get-CsMeetingConfiguration** cmdlet:</span></span>
   
 ```
 Get-CsMeetingConfiguration
 ```
 
-<span data-ttu-id="58d2a-118">Questo comando restituirà informazioni simili a quelle seguenti:</span><span class="sxs-lookup"><span data-stu-id="58d2a-118">This command will return information similar to the following:</span></span>
+<span data-ttu-id="33eef-118">Questo comando restituirà informazioni simili a quelle seguenti:</span><span class="sxs-lookup"><span data-stu-id="33eef-118">This command will return information similar to the following:</span></span>
   
 <pre>
 Identity                        : Global
@@ -66,6 +68,6 @@ CustomFooterText                :
 AllowConferenceRecording        : True
 </pre>
 
-<span data-ttu-id="58d2a-119">Per altre informazioni, incluso un elenco completo dei parametri, vedere [Get-CsMeetingConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csmeetingconfiguration?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="58d2a-119">For more information, including a complete list of parameters, see [Get-CsMeetingConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csmeetingconfiguration?view=skype-ps).</span></span>
+<span data-ttu-id="33eef-119">Per altre informazioni, incluso un elenco completo dei parametri, vedere [Get-CsMeetingConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csmeetingconfiguration?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="33eef-119">For more information, including a complete list of parameters, see [Get-CsMeetingConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csmeetingconfiguration?view=skype-ps).</span></span>
   
 

@@ -8,32 +8,34 @@ ms.date: 3/26/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- NOCSH
+ms.custom:
 - ms.lync.tb.SqlInstanceScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bd270488-ceb9-4920-bef3-ed9fe8eff36c
 description: "Questo nodo Mostra il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che usano questo SQL Server. È possibile eseguire le operazioni seguenti:"
-ms.openlocfilehash: c7ceecaa032d4cd6ad7032ee210a765f21f38212
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: ab13624b6d018ee2d62d6dcbb1d2b092a83e1c8b
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41684359"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41819218"
 ---
-# <a name="sql-instance-scope-node"></a><span data-ttu-id="aefae-104">Nodo dell'ambito dell'istanza SQL</span><span class="sxs-lookup"><span data-stu-id="aefae-104">SQL Instance Scope Node</span></span>
+# <a name="sql-instance-scope-node"></a><span data-ttu-id="31263-104">Nodo dell'ambito dell'istanza SQL</span><span class="sxs-lookup"><span data-stu-id="31263-104">SQL Instance Scope Node</span></span>
  
-<span data-ttu-id="aefae-105">Questo nodo Mostra il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che usano questo SQL Server.</span><span class="sxs-lookup"><span data-stu-id="aefae-105">This node shows the fully qualified domain name (FQDN) of this Microsoft SQL Server and the instance of SQL Server on that server, and the pools or servers that use this SQL Server.</span></span> <span data-ttu-id="aefae-106">È possibile eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="aefae-106">You can perform the following actions:</span></span>
+<span data-ttu-id="31263-105">Questo nodo Mostra il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che usano questo SQL Server.</span><span class="sxs-lookup"><span data-stu-id="31263-105">This node shows the fully qualified domain name (FQDN) of this Microsoft SQL Server and the instance of SQL Server on that server, and the pools or servers that use this SQL Server.</span></span> <span data-ttu-id="31263-106">È possibile eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="31263-106">You can perform the following actions:</span></span>
   
-- <span data-ttu-id="aefae-107">**Modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="aefae-107">**Edit Properties**.</span></span> <span data-ttu-id="aefae-108">Apre la pagina **modifica proprietà** per il server, in cui è possibile modificare il nome di dominio completo del server (se la topologia non è già pubblicata) e l'istanza di SQL Server da usare.</span><span class="sxs-lookup"><span data-stu-id="aefae-108">Opens the **Edit Properties** page for this server, where you can change the FQDN of the server (if the topology is not already published), and the instance of SQL Server to be used.</span></span>
+- <span data-ttu-id="31263-107">**Modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="31263-107">**Edit Properties**.</span></span> <span data-ttu-id="31263-108">Apre la pagina **modifica proprietà** per il server, in cui è possibile modificare il nome di dominio completo del server (se la topologia non è già pubblicata) e l'istanza di SQL Server da usare.</span><span class="sxs-lookup"><span data-stu-id="31263-108">Opens the **Edit Properties** page for this server, where you can change the FQDN of the server (if the topology is not already published), and the instance of SQL Server to be used.</span></span>
     
-- <span data-ttu-id="aefae-p104">**Elimina**. Consente di eliminare il server dalla topologia.</span><span class="sxs-lookup"><span data-stu-id="aefae-p104">**Delete**. Deletes the server from the topology.</span></span>
+- <span data-ttu-id="31263-p104">**Elimina**. Consente di eliminare il server dalla topologia.</span><span class="sxs-lookup"><span data-stu-id="31263-p104">**Delete**. Deletes the server from the topology.</span></span>
     
-<span data-ttu-id="aefae-111">Oltre a queste opzioni, ecco le attività generali che è possibile eseguire:</span><span class="sxs-lookup"><span data-stu-id="aefae-111">In addition to these options, you can perform the following general tasks:</span></span>
+<span data-ttu-id="31263-111">Oltre a queste opzioni, ecco le attività generali che è possibile eseguire:</span><span class="sxs-lookup"><span data-stu-id="31263-111">In addition to these options, you can perform the following general tasks:</span></span>
   
-- <span data-ttu-id="aefae-p105">**Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database oppure rimuovere la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="aefae-p105">**Topology**. You can use this option to define a new topology, open an existing topology, download the current topology, save a copy of the topology, publish the topology, install a database, or remove the deployment.</span></span>
+- <span data-ttu-id="31263-p105">**Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database oppure rimuovere la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="31263-p105">**Topology**. You can use this option to define a new topology, open an existing topology, download the current topology, save a copy of the topology, publish the topology, install a database, or remove the deployment.</span></span>
     
-- <span data-ttu-id="aefae-p106">**Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.</span><span class="sxs-lookup"><span data-stu-id="aefae-p106">**View**. You can use this option to customize the view of in Topology Builder by selecting the items to show and hide in the console tree views.</span></span>
+- <span data-ttu-id="31263-p106">**Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.</span><span class="sxs-lookup"><span data-stu-id="31263-p106">**View**. You can use this option to customize the view of in Topology Builder by selecting the items to show and hide in the console tree views.</span></span>
     
-- <span data-ttu-id="aefae-p107">**?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.</span><span class="sxs-lookup"><span data-stu-id="aefae-p107">**Help**. You can use this option to access Help for the active node.</span></span>
+- <span data-ttu-id="31263-p107">**?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.</span><span class="sxs-lookup"><span data-stu-id="31263-p107">**Help**. You can use this option to access Help for the active node.</span></span>
     
 
