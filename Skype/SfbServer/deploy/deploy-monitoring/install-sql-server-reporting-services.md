@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 638a1d0c-1ac7-4735-83f2-4df3d03c7cf9
 description: 'Riepilogo: informazioni su dove andare per trovare informazione su SQL Server Reporting Services usato da Skype for Business Server.'
-ms.openlocfilehash: 3513b0a9da99147862fa207e26cbbb6a775d8a93
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 1e15ce0d05675f4e448f49424be375d574429cd4
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239972"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41789974"
 ---
 # <a name="install-sql-server-reporting-services-in-skype-for-business-server"></a>Installare SQL Server Reporting Services in Skype for Business Server 
  

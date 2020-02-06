@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 70224520-b5c8-4940-a08e-7fb9b1adde8d
 description: 'Per poter distribuire il mirroring SQL, è necessario che i server eseguano un minimo di SQL Server 2008 R2. Questa versione deve essere eseguita su tutti i server coinvolti: il principale, il mirror e il witness. Per informazioni dettagliate, vedere pacchetto di aggiornamento cumulativo 9 per SQL Server 2008 Service Pack 1.'
-ms.openlocfilehash: 19f315d643ea5b9379445bf7571e49e7d658f5ab
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: 2be6b59d294db6a74ffe902648511658a07242ca
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41003586"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41790064"
 ---
 # <a name="deploy-sql-mirroring-for-back-end-server-high-availability-in-skype-for-business-server-2015"></a>Distribuire il mirroring SQL per l'elevata disponibilità del server back-end in Skype for Business Server 2015
 

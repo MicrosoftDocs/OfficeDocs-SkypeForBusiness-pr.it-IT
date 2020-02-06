@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: 'Informazioni su quali telefoni di Polycom, HP e Mitel utilizzano Skype for Business e sulle licenze necessarie. '
-ms.openlocfilehash: e852d54a1189ed8de7561e64809b1fc782fa644a
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: f779462ad6def85cee43139d450d19b5d70195a3
+ms.sourcegitcommit: a61d33fe15982bd8a34f1759b6b89be5aa699fe3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692251"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784763"
 ---
 # <a name="getting-phones-for-skype-for-business-online"></a>Ottenere telefoni per Skype for Business online
 
@@ -51,7 +51,7 @@ Quando si ordinano nuovi telefoni per Skype for business, è importante acquista
 |Yealink  <br/> |SIP-TXXG Skype for Business Edition  <br/> |
 |AudioCodes  <br/> |UCXXXHDEG (SfB)  <br/> |
    
-Per maggiori dettagli sui telefoni Polycom, consulta [Soluzioni vocali per Microsoft](http://www.polycom.com/voice-conferencing-solutions/desktop-ip-phones.html).
+Per altre informazioni sui telefoni Polycom, Vedi [raccolta documentazione di Poly](https://documents.polycom.com/category/voice).
   
 Per maggiori dettagli sui telefoni Yealink, consulta [Telefoni IP per Skype for Business](http://www.yealink.com/products_list_10.html#filter2).
   

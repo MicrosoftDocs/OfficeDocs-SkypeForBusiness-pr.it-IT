@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 42b797c6-8db8-4ad7-886e-8ddf8deb06f9
 description: 'Riepilogo: informazioni su come associare i report di monitoraggio a un database mirror usato da Skype for Business Server.'
-ms.openlocfilehash: 522ed5f9bd6e437a83e9cb3575ca92c0bd049e44
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 77e852860239ae6f87fce2b49fb6fa9f9d7c0834
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239887"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41789934"
 ---
 # <a name="associate-monitoring-reports-with-a-mirror-database-in-skype-for-business-server"></a>Associare i report di monitoraggio a un database mirror in Skype for Business Server 
  
@@ -33,7 +35,7 @@ Per ottenere i report di monitoraggio per il failover automatico nel database mi
     
    - Il nome di dominio completo (FQDN) del computer in cui sono installati i servizi di Reporting (ad esempio, **ATL-SQL-001.litwareinc.com**).
     
-   - La stringa di caratteri **/reports_**.
+   - Stringa di caratteri **/reports_**.
     
    - Nome dell'istanza del database in cui sono installati i report di monitoraggio, ad esempio **ARCHINST**.
     

@@ -1,5 +1,5 @@
 ---
-title: Distribuire elevata disponibilità e ripristino di emergenza
+title: Distribuire disponibilità elevata e ripristino di emergenza
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,17 +7,19 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 21007bad-62ce-4553-98e0-02aaa1345781
 description: Skype for Business Server offre una disponibilità elevata con il pooling dei server, il ripristino di emergenza con l'associazione di pool e diverse modalità di disponibilità elevata del server back-end, inclusi gruppi di disponibilità AlwaysOn, mirroring del database e clustering di failover SQL.
-ms.openlocfilehash: cb4d39df7f6a12a14c25533d8c6fb1ae95da24d4
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 68c6a12f80ac2d915c678f69146d0001daedbe5c
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36240063"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41790124"
 ---
-# <a name="deploy-high-availability-and-disaster-recovery"></a>Distribuire elevata disponibilità e ripristino di emergenza
+# <a name="deploy-high-availability-and-disaster-recovery"></a>Distribuire disponibilità elevata e ripristino di emergenza
  
 Skype for Business Server offre una disponibilità elevata con il pooling dei server, il ripristino di emergenza con l'associazione di pool e diverse modalità di disponibilità elevata del server back-end, inclusi gruppi di disponibilità AlwaysOn, mirroring del database e clustering di failover SQL. 
   

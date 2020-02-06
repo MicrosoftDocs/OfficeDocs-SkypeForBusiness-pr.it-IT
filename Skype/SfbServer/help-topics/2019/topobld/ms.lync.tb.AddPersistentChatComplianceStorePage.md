@@ -7,18 +7,20 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.tb.AddPersistentChatComplianceStorePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b9771b53-e19a-4a12-bf01-24bae6f7e482
 ROBOTS: NOINDEX, NOFOLLOW
 description: Si configurano gli archivi SQL Server di conformità che forniranno i database per il server di chat persistente o la funzionalità di conformità del server Chat persistente.
-ms.openlocfilehash: 6750e7bc655801bc200270d3215e3c458f621085
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 30dc482ee326bd98d7785df5aab2bcbcb1ed8c35
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41689115"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41787786"
 ---
 # <a name="add-persistent-chat-compliance-sql-server-store"></a>Aggiungere l'archivio SQL Server per Conformità chat persistente
 

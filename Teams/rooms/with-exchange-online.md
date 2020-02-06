@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f3ba85b8-442c-4133-963f-76f1c8a1fff9
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Exchange Online.
-ms.openlocfilehash: e53fd2ebd25ef6b625ada84b60d58e42e8c13a28
-ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
+ms.openlocfilehash: e07d8ed3e7d04122a2a084803ad72c3bdb541918
+ms.sourcegitcommit: a61d33fe15982bd8a34f1759b6b89be5aa699fe3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628422"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41784803"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-online"></a>Distribuire le sale di Microsoft teams con Exchange Online
 
@@ -36,6 +36,8 @@ Per distribuire le sale di Microsoft teams con Exchange Online, eseguire la proc
 
    > [!NOTE]
    >  I [cmdlet di Azure Active Directory per Windows PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0) in questa sezione, ad esempio set-MsolUser, sono stati testati in configurazione degli account per i dispositivi Microsoft teams rooms. Tuttavia, è possibile che altri cmdlet possano funzionare, ma non sono stati testati in questo scenario specifico.
+
+Se si è distribuito Active Directory Federation Services (ADFS), potrebbe essere necessario convertire l'account utente in un utente gestito prima di eseguire questa procedura e quindi riconvertire l'utente in un utente federato dopo aver completato questi passaggi.
   
 ### <a name="create-an-account-and-set-exchange-properties"></a>Creare un account e impostare le proprietà di Exchange
 
@@ -54,23 +56,21 @@ Per distribuire le sale di Microsoft teams con Exchange Online, eseguire la proc
    Se si sta modificando una cassetta postale di risorse esistente:
 
    ``` Powershell
-   Set-Mailbox -Identity 'PROJECTRIGEL01' -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+   Set-Mailbox -Identity 'PROJECT01' -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
    ```
 
     Se si sta creando una nuova cassetta postale per le risorse:
 
    ``` Powershell
-   New-Mailbox -MicrosoftOnlineServicesID 'PROJECTRIGEL01@contoso.com' -Alias PROJECTRIGEL01 -Name "Project-Rigel-01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+   New-Mailbox -MicrosoftOnlineServicesID 'PROJECT01@contoso.com' -Alias PROJECT01 -Name "Project--01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
    ```
 
 3. Per migliorare l'esperienza della riunione, è necessario impostare le proprietà di Exchange nell'account utente nel modo seguente:
 
    ``` Powershell
-   Set-CalendarProcessing -Identity 'PROJECTRIGEL01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -AllowConflicts $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-   Set-CalendarProcessing -Identity 'PROJECTRIGEL01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Skype Meeting room!"
+   Set-CalendarProcessing -Identity 'PROJECT01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -AllowConflicts $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+   Set-CalendarProcessing -Identity 'PROJECT01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Skype Meeting room!"
    ```
-
-
 
 ### <a name="add-an-email-address-for-your-on-premises-domain-account"></a>Aggiungere un indirizzo di posta elettronica per l'account di dominio locale
 
@@ -86,10 +86,10 @@ Per distribuire le sale di Microsoft teams con Exchange Online, eseguire la proc
 
 ### <a name="assign-an-office-365-license"></a>Assegnare una licenza di Office 365
 
-1. Prima di tutto, Connetti ad Azure AD per applicare alcune impostazioni dell'account. Puoi eseguire questo cmdlet per la connessione. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1,0](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0). 
+1. Prima di tutto, Connetti ad Azure AD per applicare alcune impostazioni dell'account. Puoi eseguire questo cmdlet per la connessione. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1,0](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
 
    > [!NOTE]
-   > [Azure Active Directory PowerShell 2,0](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato. 
+   > [Azure Active Directory PowerShell 2,0](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato.
 
     ``` PowerShell
    Connect-MsolService -Credential $cred
@@ -103,14 +103,14 @@ Per distribuire le sale di Microsoft teams con Exchange Online, eseguire la proc
 4. Quando si elencano gli SKU, è possibile aggiungere una licenza usando l'`Set-MsolUserLicense` <!-- Set-AzureADUserLicense--> cmdlet. In questo caso, $strLicense è il codice SKU visualizzato, ad esempio contoso: STANDARDPACK. 
 
     ```PowerShell
-      Set-MsolUser -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -UsageLocation 'US'
+    Set-MsolUser -UserPrincipalName 'PROJECT01@contoso.com' -UsageLocation 'US'
      Get-MsolAccountSku
-     Set-MsolUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -AddLicenses $strLicense
+     Set-MsolUserLicense -UserPrincipalName 'PROJECT01@contoso.com' -AddLicenses $strLicense
     ```
   <!--   ``` Powershell
-     Set-AzureADUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -UsageLocation 'US'
+     Set-AzureADUserLicense -UserPrincipalName 'PROJECT01@contoso.com' -UsageLocation 'US'
      Get-AzureADSubscribedSku
-     Set-AzureADUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -AddLicenses $strLicense
+     Set-AzureADUserLicense -UserPrincipalName 'PROJECT01@contoso.com' -AddLicenses $strLicense
      ``` -->
 
 ### <a name="enable-the-user-account-with-skype-for-business-server"></a>Abilitare l'account utente con Skype for Business Server
