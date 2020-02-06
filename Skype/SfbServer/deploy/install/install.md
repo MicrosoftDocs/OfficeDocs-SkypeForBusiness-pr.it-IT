@@ -8,17 +8,19 @@ ms.date: 7/14/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.custom: Strat_SB_Admin
 ms.assetid: 71299b34-8783-4384-9949-0d3162c8a36e
 description: "Riepilogo: informazioni su come preparare l'ambiente per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: f15a305a660586e017984a171db217636e2e09ff
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: cac618aba9f97237e585ffc57b99c71a8a5c8645
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244337"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41797087"
 ---
 # <a name="install-skype-for-business-server"></a>Installare Skype for Business Server
  
@@ -56,7 +58,7 @@ L'accesso e l'esecuzione di Skype for Business Server per la prima volta comport
     
 - [Creare e pubblicare una nuova topologia in Skype for Business Server](create-and-publish-new-topology.md) : prima di installare il sistema Skype for Business Server in ognuno dei server della topologia, è necessario creare una topologia e pubblicarla. Quando si pubblica una topologia, si caricano le informazioni sulla topologia nel database Central Management store. Se si tratta di un pool di Enterprise Edition, la prima volta che si pubblica una nuova topologia si crea il database Central Management store. Se si tratta di Standard Edition, è necessario eseguire il processo di preparazione del primo server Standard Edition dalla distribuzione guidata prima di pubblicare una topologia. Questa operazione viene preparata per la versione standard con l'installazione di un'istanza di SQL Server Express Edition e la creazione di Central Management store.
     
-- [Installare Skype for Business Server nei server](install-skype-for-business-server.md) della topologia: dopo aver caricato la topologia in Central Management store e Active Directory sa quali server eseguiranno i ruoli, è necessario installare il sistema di Skype for Business Server in ognuno dei i server della topologia.
+- [Installare Skype for Business Server nei server della topologia](install-skype-for-business-server.md) : dopo aver caricato la topologia in Central Management store e Active Directory sa quali server eseguiranno i ruoli, è necessario installare il sistema Skype for Business Server in ognuno dei server della topologia.
     
 - [Verificare la topologia in Skype for Business Server](verify-the-topology.md) : dopo aver pubblicato la topologia e i componenti di sistema di Skype for Business Server installati in ognuno dei server della topologia, si è pronti per verificare che la topologia funzioni come previsto. Ciò include verificare che la configurazione si sia propagata a tutti i server di Active Directory in modo che l'intero dominio sappia che Skype for business è disponibile nel dominio.
     

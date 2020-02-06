@@ -7,18 +7,20 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.tb.InstallDatabaseCreateDatabasePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 515754ad-1344-42dc-8219-ee973de2e4c4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Selezionare i database che si desidera creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel server SQL definito nel sito definito e distribuirà e configurerà automaticamente i file di database in base a SQL Server in cui si inseriscono i database.
-ms.openlocfilehash: 884043cc1197c60b98c455882740d09157ab3228
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 4bd69f1caa3322dbbf2d91a67caef54b72ece200
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41688539"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41793614"
 ---
 # <a name="install-and-create-databases"></a>Installare e creare database
 

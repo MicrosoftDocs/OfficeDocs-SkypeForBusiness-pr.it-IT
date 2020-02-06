@@ -7,18 +7,20 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.tb.TrunksScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4ee527fa-ebec-40a9-a6bf-0cabd098aaa9
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Fare clic con il pulsante destro del mouse su Trunks in Builder topologia per eseguire le operazioni seguenti:'
-ms.openlocfilehash: 48b82e9fb0d9e69dd1eb045e7352248532969c86
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 0eecf29f8037f78ee35fe392d375d388b448ff75
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41701411"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41797397"
 ---
 # <a name="trunks-scope-node"></a>Nodo dell'ambito dei trunk
  

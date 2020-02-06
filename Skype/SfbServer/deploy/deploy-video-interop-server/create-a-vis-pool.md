@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: abd8c4f7-057f-4360-8e3e-ec29b58f16a8
 description: 'Riepilogo: creare un pool di video Interop server in Skype for Business Server tramite Generatore di topologie.'
-ms.openlocfilehash: dc97fde4447778be20cb60d86cddac65b663c321
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 474752253312b58b87a3d01f445bd93eabdaf203
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235662"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41798053"
 ---
 # <a name="create-a-vis-pool-in-skype-for-business-server"></a>Creare un pool VIS in Skype for Business Server
  
@@ -24,9 +26,9 @@ ms.locfileid: "36235662"
   
 ### <a name="create-a-vis-or-vis-pool-using-topology-builder"></a>Creare un pool VIS o VIS tramite Generatore di topologie
 
-1. Aprire Generatore di topologia nel server front-end. Dal riquadro sinistro di generatore di topologia, fare clic con il pulsante destro del mouse sui **pool di video Interop server** e scegliere **nuovo pool**di interoperabilità video. 
+1. Aprire Generatore di topologia nel server front-end. Dal riquadro sinistro di generatore di topologia, fare clic con il pulsante destro del mouse sui **pool di video Interop server** e scegliere **nuovo pool di interoperabilità video**. 
     
-2. Verrà aperta una procedura guidata **Crea un nuovo pool di** interoperabilità per il video. Specificare il nome di dominio completo del pool per il nuovo server di interoperabilità video e selezionare **questo pool ha un server** o il **pool ha più server** in base al requisito, quindi premere **Avanti**.
+2. Verrà aperta una procedura guidata **Crea un nuovo pool di interoperabilità** per il video. Specificare il nome di dominio completo del pool per il nuovo server di interoperabilità video e selezionare **questo pool ha un server** o il **pool ha più server** in base al requisito, quindi premere **Avanti**.
     
     Se si vuole distribuire un pool di interoperabilità video per ottenere una disponibilità elevata, selezionare **questo pool include più server**. Tieni presente che questa opzione: 
     
@@ -60,7 +62,7 @@ ms.locfileid: "36235662"
 11. Pubblicare il documento della topologia come descritto in [creare e pubblicare una nuova topologia in Skype for Business Server 2015](../../deploy/install/create-and-publish-new-topology.md).
     
     > [!NOTE]
-    > Per migliorare la resilienza, è consigliabile configurare un secondo server di interoperabilità video o un pool VIS oppure un pool Front-End di backup. Per altre informazioni, Vedi [meccanismi](../../plan-your-deployment/video-interop-server.md#resiliency) di resilienza.
+    > Per migliorare la resilienza, è consigliabile configurare un secondo server di interoperabilità video o un pool VIS oppure un pool Front-End di backup. Per altre informazioni, Vedi [meccanismi di resilienza](../../plan-your-deployment/video-interop-server.md#resiliency) .
   
 Ora tutte le attività eseguite con generatore di topologie devono essere completate. Procedere con l'installazione del software nel nuovo server o server VIS.
 ## <a name="see-also"></a>Vedere anche

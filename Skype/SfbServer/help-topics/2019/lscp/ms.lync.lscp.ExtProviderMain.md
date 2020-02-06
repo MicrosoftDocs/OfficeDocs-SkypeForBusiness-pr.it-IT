@@ -6,19 +6,21 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1.keywords:
+ms.custom:
 - ms.lync.lscp.ExtProviderMain
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- CSH
 localization_priority: Normal
 ms.assetid: 0e875ac6-8afb-45bc-bcaa-3c7451125fae
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 115b6a164a2316f31d9592b3c2c3d2ec7c2af6a5
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: f3b8d9028548b941fbd53cd9197db61a4543df24
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41704981"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41797667"
 ---
 # <a name="sip-federated-providers"></a>Provider federati SIP
 

@@ -6,19 +6,21 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1.keywords:
+ms.custom:
 - ms.lync.lscp.ClientPushNotificationCfgEdit
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- CSH
 localization_priority: Normal
 ms.assetid: fb39af60-c999-42fb-9538-0bd87098f508
 ROBOTS: NOINDEX, NOFOLLOW
 description: La notifica Push e il fornitore di servizi di accesso a terze parti per notifiche Push sono due elementi chiave della funzionalità per dispositivi mobili. La notifica Push è il processo di invio di un messaggio a un fornitore di servizi di accesso a terze parti per notifiche Push, che trattiene i messaggi fino a quando sarà possibile recapitarli al client mobile o fino allo scadere del periodo di timeout.
-ms.openlocfilehash: eb2fae5e6016fa0e8a28aa2bb750739fd2876f5e
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 803bc61d12263e98efe5e74764f9f60f392af95f
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41691461"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41796485"
 ---
 # <a name="mobile-client-create-or-edit-push-notification-configuration"></a>Client mobile: creare o modificare la configurazione di notifiche Push
  

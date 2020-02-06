@@ -8,15 +8,17 @@ ms.date: 3/28/2016
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 61370aa6-9708-4ff8-b531-b258a928806f
 description: 'Riepilogo: leggere questo argomento per informazioni su come usare la distribuzione guidata di Skype for Business Server per installare i componenti e i servizi di Skype for Business Server 2015.'
-ms.openlocfilehash: 5b8205cb2ab828001eae76eeaab8cd4f697c9315
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 019700b169c3507540c93a3a152c3741de2681fb
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36234746"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41795687"
 ---
 # <a name="install-persistent-chat-components-in-skype-for-business-server-2015"></a>Installare i componenti di Chat Persistente
  
@@ -39,6 +41,6 @@ Usando la distribuzione guidata di Skype for Business Server, scegliere Install 
     
 4. Avviare i servizi
     
-Per informazioni dettagliate su come usare la distribuzione guidata per installare i componenti, assegnare certificati e avviare i servizi, vedere [installare Skype for Business server 2015](../../deploy/install/install.md) e [installare Skype for Business Server 2015 nei server](../../deploy/install/install-skype-for-business-server.md)della topologia.
+Per informazioni dettagliate su come usare la distribuzione guidata per installare i componenti, assegnare certificati e avviare i servizi, vedere [installare Skype for Business server 2015](../../deploy/install/install.md) e [installare Skype for Business Server 2015 nei server della topologia](../../deploy/install/install-skype-for-business-server.md).
   
 

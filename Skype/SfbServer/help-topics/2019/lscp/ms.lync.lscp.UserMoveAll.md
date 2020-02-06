@@ -6,19 +6,21 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1.keywords:
+ms.custom:
 - ms.lync.lscp.UserMoveAll
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- CSH
 localization_priority: Normal
 ms.assetid: 48bf9dad-bc51-4996-9417-8f15c1d476ad
 ROBOTS: NOINDEX, NOFOLLOW
 description: Nella finestra di dialogo Sposta utenti è possibile selezionare i pool di origine e di destinazione per lo spostamento degli account utente da un pool a un altro nella distribuzione.
-ms.openlocfilehash: c020a54bcbd3398efe86d782f87826a241a94103
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 9566405c6c088270168368855c88bedece9595dd
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41704081"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41794975"
 ---
 # <a name="move-all-users"></a>Spostare tutti gli utenti
 

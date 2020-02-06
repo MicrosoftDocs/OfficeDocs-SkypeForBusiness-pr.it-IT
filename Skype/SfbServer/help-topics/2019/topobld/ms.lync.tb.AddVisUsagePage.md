@@ -7,18 +7,20 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.tb.AddVisUsagePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: db402ac4-4c30-405e-b322-6aae5df81f46
 ROBOTS: NOINDEX, NOFOLLOW
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologia sono descritti online in creare un pool VIS in Skype for Business Server.
-ms.openlocfilehash: 5101d4a4b8046c7dc5c6f9c06faa68938837cacd
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 18a1df1553cc0bc5764104b97298e7a373c70fab
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41702561"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41795207"
 ---
 # <a name="add-vis-usage"></a>Aggiungere l'utilizzo VIS
  

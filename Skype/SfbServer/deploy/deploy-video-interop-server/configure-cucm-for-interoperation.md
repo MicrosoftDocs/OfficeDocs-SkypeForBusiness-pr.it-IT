@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: eab3d9f6-ec40-49bf-9162-1a7f5a59451f
 description: "Riepilogo: configurare CUCM per l'utilizzo con Skype for Business Server."
-ms.openlocfilehash: 8324e146147480bb682c2cc18c62a96e95a130e3
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 0f8b5321b482d78d9dc833471323ae842c247246
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235652"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41798073"
 ---
 # <a name="configure-cucm-for-interoperation-with-skype-for-business-server"></a>Configurare CUCM per l'interoperabilità con Skype for Business Server
  
@@ -62,7 +64,7 @@ Per l'interoperabilità con il VIS è necessario confermare o modificare alcune 
    
 9. Nella stessa schermata scorrere verso il basso fino alla sezione informazioni sul profilo SDP. Il **modificatore della larghezza di banda a livello di sessione SDP per l'opzione offerta anticipata e ri-invita** è impostato per impostazione predefinita su Tias e così via. Modificare questa opzione solo in TIAS. Se si omette questa opzione per impostazione predefinita, Skype for Business Server non comprenderà le informazioni sul modificatore della larghezza di banda nel messaggio SIP. TIAS indica un'applicazione indipendente per il trasporto, mentre specifica l'applicazione. Queste sono le opzioni SIP specificate in RFC3890.
     
-10. Nella stessa schermata scorrere verso il basso ulteriormente. Sotto la configurazione specifica del trunk del profilo SIP selezionare **supporto preventivo per le chiamate vocali e** videochiamate e impostarlo sull'opzione **obbligatorio (inserire MTP se necessario)** . Ciò consentirà a CUCM di configurare una chiamata SIP in uscita con offerta anticipata. Una nuova funzionalità in CUCM 8,5 e oltre è che supporta la configurazione delle chiamate in uscita con offerta anticipata senza richiedere il punto di terminazione multimediale (MTP).
+10. Nella stessa schermata scorrere verso il basso ulteriormente. Sotto la configurazione specifica del trunk del profilo SIP selezionare **supporto preventivo per le chiamate vocali e videochiamate** e impostarlo sull'opzione **obbligatorio (inserire MTP se necessario)** . Ciò consentirà a CUCM di configurare una chiamata SIP in uscita con offerta anticipata. Una nuova funzionalità in CUCM 8,5 e oltre è che supporta la configurazione delle chiamate in uscita con offerta anticipata senza richiedere il punto di terminazione multimediale (MTP).
     
 11. Verificare che nella sezione ping opzioni SIP la casella sia selezionata accanto a "attiva opzioni ping per monitorare lo stato di destinazione per i trunk con il tipo di servizio" Nessuna (impostazione predefinita) "."
     
@@ -129,7 +131,7 @@ Per l'interoperabilità con il VIS è necessario confermare o modificare alcune 
     
     |**Parametro**|**Impostazione consigliata**|
     |:-----|:-----|
-    |Area geografica  <br/> |Predefinita  <br/> |
+    |Area  <br/> |Predefinita  <br/> |
     |Elenco preferenze codec audio  <br/> |Impostazione predefinita del sistema  <br/> |
     |Velocità in bit audio massima  <br/> |64 Kbps (G. 722, G. 711)  <br/> |
     |Velocità in bit massima della sessione per le videochiamate  <br/> |200000 Kbps  <br/> |
@@ -137,7 +139,7 @@ Per l'interoperabilità con il VIS è necessario confermare o modificare alcune 
    
 A questo punto il gateway video di CUCM è configurato per l'utilizzo con il VIS. La configurazione corrispondente deve essere eseguita su ogni VTC che si vuole integrare.
 > [!NOTE]
-> Per migliorare la resilienza, è consigliabile configurare il gateway di CUCM per l'utilizzo con un secondo video Interop server o il pool VIS. Per altre informazioni, Vedi [meccanismi](../../plan-your-deployment/video-interop-server.md#resiliency) di resilienza.
+> Per migliorare la resilienza, è consigliabile configurare il gateway di CUCM per l'utilizzo con un secondo video Interop server o il pool VIS. Per altre informazioni, Vedi [meccanismi di resilienza](../../plan-your-deployment/video-interop-server.md#resiliency) .
   
 ## <a name="see-also"></a>Vedere anche
 

@@ -8,16 +8,18 @@ ms.date: 1/29/2019
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ec69a6cb-07f2-4057-9544-55035f83eeae
 description: "Riepilogo: configurare l'archivio contatti personale usato dai client legacy."
-ms.openlocfilehash: 26352517ea31b5556784f6f1ea8d1ce661cfe184
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: a80af6ca575b53e5a2b8f77a109fd6929f0db704
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244193"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41797027"
 ---
 # <a name="configure-the-personal-contacts-store-on-lync-2010-client-computers"></a>Configurare l'archivio dei contatti personali nei computer client di Lync 2010
   
@@ -30,7 +32,7 @@ Per configurare questo valore in un singolo computer, eseguire la procedura segu
   
 1. Nel computer client fare clic su **Start** e quindi su **Esegui**.
 2. Nella finestra di dialogo **Esegui** Digitare regedit e quindi premere INVIO.
-3. In Editor del registro di sistema, Espandi **HKEY_LOCAL_MACHINE**, Espandi **software**, Espandi **criteri**, Espandi **Microsoft**e quindi Espandi **Communicator**.
+3. In Editor del registro di sistema Espandi **HKEY_LOCAL_MACHINE**, Espandi **software**, Espandi **criteri**, Espandi **Microsoft**e quindi Espandi **Communicator**.
 4. Fare clic con il pulsante destro del mouse su **Communicator**, scegliere **nuovo**e quindi fare clic su **valore DWORD (32 bit)**.
 5. Dopo la creazione del nuovo valore, digitare PersonalContactStoreOverride e quindi premere INVIO per rinominare il valore.
 6. Verificare che il valore di PersonalContactStoreOverride sia impostato su 0 e quindi chiudere l'editor del registro di sistema.

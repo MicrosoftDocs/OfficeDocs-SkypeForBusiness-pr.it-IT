@@ -6,19 +6,21 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1.keywords:
+ms.custom:
 - ms.lync.lscp.ClientDeviceCfgMain
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- CSH
 localization_priority: Normal
 ms.assetid: c9b81f20-ce8c-40f1-8bed-50775cc35e58
 ROBOTS: NOINDEX, NOFOLLOW
 description: Il servizio Web aggiornamento dispositivi crea automaticamente file di log in cui viene registrata l'attività di aggiornamento dei dispositivi. Come parte della strategia di gestione dei dati dell'organizzazione, è consigliabile impostare le soglie per la dimensione della cache dei dati del log, le dimensioni dei file di log o il periodo di tempo in cui un file di log viene mantenuto prima che venga eliminato. È possibile modificare queste impostazioni in base ai requisiti dell'organizzazione. Se non si desidera che il servizio Web aggiornamento dispositivi elimini automaticamente i file di log, è possibile eliminarli manualmente, se necessario. Le impostazioni dei log possono essere modificate a livello globale o per singoli siti.
-ms.openlocfilehash: d726b1daa8dece14d645501130c988690b30cd17
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 43fc784113a81038469099807770945ee2fbcc3b
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41705181"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41794555"
 ---
 # <a name="device-log-configuration"></a>Configurazione registro dispositivo
 

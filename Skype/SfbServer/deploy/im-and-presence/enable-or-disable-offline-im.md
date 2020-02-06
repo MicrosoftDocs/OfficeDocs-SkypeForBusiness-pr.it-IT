@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: c0f44352-fb4a-45d3-85b0-a4320d4b8339
 description: Informazioni su come abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server.
-ms.openlocfilehash: 02056618aff8a2dcaa6edc2023b67ad38aa9f314
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: d96c7fc0de51cbdcfb6ba3acde3bf854c874f05b
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41003046"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41795327"
 ---
 # <a name="enable-or-disable-offline-instant-messaging-im-in-skype-for-business-server"></a>Abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server
  

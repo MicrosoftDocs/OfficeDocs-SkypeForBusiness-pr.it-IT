@@ -6,19 +6,21 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1.keywords:
+ms.custom:
 - ms.lync.lscp.ClientPhoneCfgEdit
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- CSH
 localization_priority: Normal
 ms.assetid: aac152bf-80e9-408a-9dbb-60d0843484ab
 ROBOTS: NOINDEX, NOFOLLOW
 description: Nella pagina Configurazione nuovo dispositivo o modifica dispositivo è possibile creare o modificare una raccolta di impostazioni usate per gestire Skype for Business Phone Edition. Queste impostazioni consentono di configurare aspetti come la modalità di sicurezza richiesta, il livello di registrazione dei dispositivi, le impostazioni di Qualità del servizio (QoS) e il blocco automatico dei telefoni dopo un periodo di inattività specificato.
-ms.openlocfilehash: fce3ad1410dc16cc6a238823f11cdba0f4c4c391
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 772463b5816c4ce40b70be8cb38af2fee8daa0bf
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41691481"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41794485"
 ---
 # <a name="device-configuration-create-new-or-edit-existing"></a>Configurazione dispositivo: crearne una nuova o modificarne una esistente
  

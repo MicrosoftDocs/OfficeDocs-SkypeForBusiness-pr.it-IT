@@ -6,19 +6,21 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1.keywords:
+ms.custom:
 - ms.lync.lscp.RgsGroupMain
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- CSH
 localization_priority: Normal
 ms.assetid: b8bd4c3f-3d32-42b2-9712-2d0f159577d8
 ROBOTS: NOINDEX, NOFOLLOW
 description: I gruppi di risposte sono costituiti da gruppi di agenti, code e flussi di lavoro. Un gruppo di agenti è un gruppo di persone designate per rispondere alle chiamate di Response Group.
-ms.openlocfilehash: f9caf3ec7296ace681a753c401e0a55da874f559
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 1c42f34028d944a7390925df6157c8ef8fd0509d
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41704384"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41797517"
 ---
 # <a name="response-groups-group"></a>Response Group: gruppo
 

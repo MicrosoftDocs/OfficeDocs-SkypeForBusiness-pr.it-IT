@@ -7,18 +7,20 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.tb.AddEdgeServerNextHopPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8ef7235d-626c-4cc9-b6ec-9dfeab495cc0
 ROBOTS: NOINDEX, NOFOLLOW
 description: L'hop successivo per il pool di bordi è un pool Front-End (che può essere un pool aziendale o un server Standard Edition) oppure, se la distribuzione include un amministratore, l'hop successivo è il Director.
-ms.openlocfilehash: 63b74c13130d22e177c6c45b053ad78bd93ba45e
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 500e867402fd5dbe91feeaa04fef389048c382dd
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41703041"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41798163"
 ---
 # <a name="add-edge-server-next-hop"></a>Aggiungere Edge Server Next Hop
 

@@ -7,18 +7,20 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.tb.ArchivingServersScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0c5f46c7-67bf-4daa-b7a9-4b59fd7792a0
 ROBOTS: NOINDEX, NOFOLLOW
 description: In Generatore di topologie è possibile eseguire attività relative a un singolo server di archiviazione, facendo clic con il pulsante destro del mouse su Server di archiviazione nell'albero della console, scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e infine selezionando l'opzione seguente del server di archiviazione.
-ms.openlocfilehash: 46bd2ec34ccd6a1e4004acb14c9718120529eb66
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 899b2d52dd37f9768d0e46613bff7fd87d2c8148
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41688869"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41794054"
 ---
 # <a name="archiving-servers-scope-node"></a>Nodo dell'ambito dei server di archiviazione
  

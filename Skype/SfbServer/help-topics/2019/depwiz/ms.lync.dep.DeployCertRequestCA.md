@@ -6,19 +6,21 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1.keywords:
+ms.custom:
 - ms.lync.dep.DeployCertRequestCA
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- CSH
 localization_priority: Normal
 ms.assetid: a609f1b0-ae13-44ca-a467-b7fb14ff18a1
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Quando si effettua una richiesta di certificato a un'Autorità di certificazione (CA) online (in genere server presenti nella rete interna) nella pagina Scegli Autorità di certificazione (CA), vengono visualizzate due opzioni:"
-ms.openlocfilehash: 86da1e55cb43af86d28593dd8a76563b7d0a5a44
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 6c52a46bf40211d05ea47205d2573627910d3ba6
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692071"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41796757"
 ---
 # <a name="certificate-request-certificate-authority"></a>Richiesta di certificato (Certificate Authority)
  

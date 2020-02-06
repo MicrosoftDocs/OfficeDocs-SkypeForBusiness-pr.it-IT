@@ -7,18 +7,20 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.tb.AddAvMcuPoolPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e201875e-1e81-4756-942f-c17d177e997b
 ROBOTS: NOINDEX, NOFOLLOW
 description: Tutti i server front-end Enterprise Edition di un sito centrale che non dispongono di un servizio A/V Conferencing collocato possono usare lo stesso pool di servizi di conferenza A/V autonomo. Per ogni pool di servizi di conferenza A/V, è necessario specificare un nome di dominio completo (FQDN) per il pool e se avrà un solo server A/V Conferencing o più server di conferenza A/V con bilanciamento del carico.
-ms.openlocfilehash: 0cef8dd5c99859f03018d959f0d2d5a9d0523681
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: b2fd57f0a6c9f39638f62a9bae7c9ed29a73a779
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41689686"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41794835"
 ---
 # <a name="add-av-mcu-pool"></a>Aggiungere pool A/V MCU
  

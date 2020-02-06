@@ -6,19 +6,21 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1.keywords:
+ms.custom:
 - ms.lync.dep.DeployCertPendingReturned
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- CSH
 localization_priority: Normal
 ms.assetid: 3ee3f595-947a-41c4-acb8-036336b4f17e
 ROBOTS: NOINDEX, NOFOLLOW
 description: La pagina di stato della richiesta di certificato online restituisce lo stato corrente del certificato. Se il certificato si trova ancora in uno stato di approvazione in sospeso con l'amministratore dell'autorità di certificazione, ovvero se non è ancora stato approvato, lo stato indicherà che il certificato è ancora in fase di elaborazione.
-ms.openlocfilehash: 4505258bb46f2475dc43bc3b3446e04ccfac1a86
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 16950c61193051b9ae590ef3bc61c40b298cdb21
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41705741"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41796807"
 ---
 # <a name="pending-certificate-returned"></a>Certificato in sospeso (Returned)
  

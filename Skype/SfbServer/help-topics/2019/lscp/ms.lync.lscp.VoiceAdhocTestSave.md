@@ -6,19 +6,21 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1.keywords:
+ms.custom:
 - ms.lync.lscp.VoiceAdhocTestSave
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- CSH
 localization_priority: Normal
 ms.assetid: 7874119d-d92b-484e-bbda-62f65241debd
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile usare la finestra di dialogo Salva informazioni per il routing vocale per salvare un test case temporaneo. In Salva informazioni sul test del routing vocale digitare il nome che si vuole assegnare al test case in nome e quindi fare clic su OK.
-ms.openlocfilehash: 1f481683c79838e3893e50b3e2a5b49fb0f99370
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 46c70c426a27b598c3048543cfb6e7a9f764dd01
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41703951"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41797883"
 ---
 # <a name="save-voice-routing-test-case-information"></a>Salvare le informazioni sui test case del routing vocale
  
