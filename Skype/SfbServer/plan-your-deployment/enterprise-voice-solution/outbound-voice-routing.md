@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fde45195-6eb4-403c-9094-57df7fc0bd2a
 description: Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
-ms.openlocfilehash: bb57d824d9d44886973f60b3061b2e86e949f071
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 26bea8452db00657ae87b5acbdd3f986c637d6fe
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187586"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802576"
 ---
 # <a name="plan-for-outbound-voice-routing-in-skype-for-business-server"></a>Pianificare il routing vocale in uscita in Skype for Business Server
  
@@ -31,7 +33,7 @@ Il routing delle chiamate in uscita si applica alle chiamate vocali aziendali de
 
 |**Oggetto**|**Descrizione**|
 |:-----|:-----|
-|Dial plan  <br/> |Un dial plan è un set denominato di regole di normalizzazione che converte i numeri di telefono per una posizione denominata, un singolo utente o un oggetto contatto in un unico formato standard (E. 164) per scopi di autorizzazione del telefono e routing delle chiamate.  <br/> |
+|Dial Plan  <br/> |Un dial plan è un set denominato di regole di normalizzazione che converte i numeri di telefono per una posizione denominata, un singolo utente o un oggetto contatto in un unico formato standard (E. 164) per scopi di autorizzazione del telefono e routing delle chiamate.  <br/> |
 |Regola di normalizzazione  <br/> |Le regole di normalizzazione definiscono il modo in cui i numeri di telefono espressi in diversi formati devono essere instradati per ogni posizione, utente o oggetto contatto specificato. La stessa stringa di chiamata può essere interpretata e tradotta in modo diverso, a seconda della posizione in cui è stata chiamata e della persona o dell'oggetto contatto che effettua la chiamata. Un set di regole di normalizzazione associato a una determinata posizione costituisce un dial plan.  <br/> |
 |Criteri vocali  <br/> |Un criterio vocale associa uno o più record di utilizzo PSTN a un utente o a un gruppo di utenti. Un criterio vocale offre anche un elenco delle funzionalità di chiamata che è possibile abilitare o disabilitare.  <br/> |
 |Record utilizzo PSTN  <br/> |Un record di utilizzo PSTN specifica una classe di chiamata, ad esempio Internal, local o Long Distance, che può essere eseguita da vari utenti o gruppi di utenti in un'organizzazione.  <br/> |
@@ -225,7 +227,7 @@ L'ambito dei criteri vocali determina il livello gerarchico in cui è possibile 
     
 - La **chiamata del team** consente agli utenti di un team definito di rispondere alle chiamate per gli altri membri del team. Abilitato per impostazione predefinita.
     
-- La reinstradazione **PSTN** consente alle chiamate effettuate dagli utenti a cui è assegnato questo criterio ad altri utenti aziendali di essere reinstradati nella rete PSTN (Public Switched Telephone Network) se la WAN è congestionata o non disponibile. Abilitato per impostazione predefinita.
+- La **reinstradazione PSTN** consente alle chiamate effettuate dagli utenti a cui è assegnato questo criterio ad altri utenti aziendali di essere reinstradati nella rete PSTN (Public Switched Telephone Network) se la WAN è congestionata o non disponibile. Abilitato per impostazione predefinita.
     
 - **L'override dei criteri di larghezza di banda** consente agli amministratori di ignorare le decisioni sui criteri di controllo ammissione chiamata per un determinato utente. Disabilitata per impostazione predefinita.
     
@@ -233,7 +235,7 @@ L'ambito dei criteri vocali determina il livello gerarchico in cui è possibile 
     
 - La funzione di **escape della segreteria telefonica** impedisce che le chiamate vengano immediatamente indirizzate al sistema di segreteria telefonica dell'utente quando è configurato lo squillo simultaneo e che il telefono sia disattivato, fuori batteria o fuori portata e sia basato su un valore timer. Questa impostazione Abilita e Disabilita il timer e imposta il valore del timer. La configurazione può essere configurata solo con Skype for Business Server Management Shell. Disabilitata per impostazione predefinita.
     
-- L' **inoltro di chiamata e l'uso simultaneo di chiamate PSTN** consentono agli amministratori di specificare lo stesso utilizzo PSTN dei criteri vocali per l'inoltro di chiamata e lo squillo simultaneo, limitare l'inoltro di chiamata e lo squillo simultaneo all'interno di Skype for Solo per gli utenti aziendali o specificare un uso PSTN personalizzato diverso dall'uso PSTN del criterio vocale. L'impostazione predefinita consiste nell'usare lo stesso utilizzo PSTN del criterio vocale per l'inoltro di chiamata e lo squillo simultaneo.
+- L' **inoltro di chiamata e l'uso simultaneo di chiamate PSTN** consentono agli amministratori di specificare lo stesso utilizzo PSTN dei criteri vocali per l'inoltro di chiamata e la suoneria simultanea, limitare l'inoltro di chiamata e lo squillo simultaneo agli utenti di Skype for business interni oppure specificare un uso PSTN personalizzato diverso dall'uso PSTN del criterio vocale. L'impostazione predefinita consiste nell'usare lo stesso utilizzo PSTN del criterio vocale per l'inoltro di chiamata e lo squillo simultaneo.
     
 ### <a name="pstn-usage-records"></a>Record utilizzo PSTN
 

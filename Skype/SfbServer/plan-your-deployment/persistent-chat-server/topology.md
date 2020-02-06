@@ -8,15 +8,17 @@ ms.date: 5/17/2016
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 6a0a14a0-baad-44e9-b26e-4d192c0a0e70
 description: 'Riepilogo: leggere questo argomento per informazioni sui componenti e le topologie dei server di chat persistenti in Skype for Business Server 2015.'
-ms.openlocfilehash: c31cb8b0ada280b52d902e975f1bacf947fd19e7
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: afcdf7ed85cca6b54652dcf5170316258a6b5551
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195961"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815724"
 ---
 # <a name="plan-persistent-chat-server-topology"></a>Pianificazione della topologia del server Chat persistente
  
@@ -62,7 +64,7 @@ Anche se è possibile distribuire il server di chat persistente in un server Sta
   
 Skype for Business Server 2015 supporta diversi scenari di collocazione, offrendo la flessibilità necessaria per salvare i costi hardware eseguendo più componenti in un server (se si ha una piccola organizzazione) o per eseguire singoli componenti in server diversi ( Se si dispone di un'organizzazione più grande che richiede scalabilità e prestazioni). È consigliabile considerare i fattori di scalabilità prima di decidere se collocare i componenti. Gli scenari di collocazione sono diversi per i server Skype for Business Server 2015 Enterprise Edition e Standard Edition. 
   
-Le sezioni seguenti descrivono le topologie in modo più dettagliato, inclusi scenari di collocazione e opzioni per i server di database back-end. Per informazioni dettagliate sulla collocazione di tutti i ruoli e i database del server, vedere Nozioni di base sulla topologia di [Skype for Business server 2015](../../plan-your-deployment/topology-basics/topology-basics.md).
+Le sezioni seguenti descrivono le topologie in modo più dettagliato, inclusi scenari di collocazione e opzioni per i server di database back-end. Per informazioni dettagliate sulla collocazione di tutti i ruoli e i database del server, vedere [nozioni di base sulla topologia di Skype for Business server 2015](../../plan-your-deployment/topology-basics/topology-basics.md).
   
 ### <a name="standard-edition-server-with-persistent-chat-server-collocated-on-the-front-end-server"></a>Server Standard Edition con il server di chat persistente collocato nel server front-end
 

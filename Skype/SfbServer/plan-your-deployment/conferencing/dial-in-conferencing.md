@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: ea024a26-37b3-410e-961b-83ab85c07540
 description: 'Riepilogo: leggere questo argomento per informazioni sulla pianificazione per i servizi di conferenza telefonica con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: e5c058f614ca7201815cb623d45fd28c18520b85
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 90fe1ff1770d34b9fe0671de1a2fc0f9382acae5
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187844"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815994"
 ---
 # <a name="plan-for-dial-in-conferencing-in-skype-for-business-server"></a>Pianificare i servizi di conferenza telefonica con accesso esterno in Skype for Business Server
  
@@ -48,7 +50,7 @@ I servizi di conferenza telefonica con accesso esterno richiedono almeno un serv
   
 È possibile distribuire un gateway PSTN in un sito centrale o in un sito di succursale. In un sito di succursale il gateway PSTN può essere autonomo o un componente dell'appliance Survivable Branch.
   
-Per informazioni dettagliate sui requisiti di Mediation Server e gateway PSTN, vedere [Componente Mediation Server in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/mediation-server.md), [distribuire un Mediation Server in Generatore di topologie in Skype for Business Server](../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md)e [definire un gateway in topologia Builder in Skype for Business Server](../../deploy/deploy-enterprise-voice/define-a-gateway.md).
+Per informazioni dettagliate sui requisiti di Mediation Server e gateway PSTN, vedere [Componente Mediation Server in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/mediation-server.md), [distribuire un Mediation Server in Generatore di topologie in Skype for Business Server](../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md)e [definire un gateway in Generatore di topologia in Skype for Business Server](../../deploy/deploy-enterprise-voice/define-a-gateway.md).
   
 ## <a name="plan-for-dial-plans-access-numbers-and-conferencing-regions"></a>Pianificare piani di chiamata, numeri di accesso e aree di conferenza
 

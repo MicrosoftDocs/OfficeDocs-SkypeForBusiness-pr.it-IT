@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: 'Le impostazioni di configurazione trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (IP-Public Branch Exchange) o un SBC (Session Border Controller) presso il provider di servizi. '
-ms.openlocfilehash: fec64de813a9e4b0686e257ccfed7cb9c034467c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 76196df2cf0bd74ef804a082862891c326048408
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187013"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816956"
 ---
 # <a name="modify-sip-trunk-configuration-settings-in-skype-for-business-server"></a>Modificare le impostazioni di configurazione del trunk SIP in Skype for Business Server
 
@@ -59,5 +61,5 @@ Quando si modificano le impostazioni di configurazione del trunk SIP tramite il 
 2. Nella scheda **configurazione trunk** fare doppio clic sulle impostazioni di configurazione trunk da modificare. Tieni presente che puoi modificare solo una raccolta di impostazioni alla volta. Se si desidera apportare le stesse modifiche in più insiemi, utilizzare invece Windows PowerShell.
 3. Nella finestra di dialogo **modifica configurazione trunk** eseguire le selezioni appropriate e quindi fare clic su **OK**.
 4. La proprietà state per la raccolta verrà aggiornata in UNCOMMITTED. Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **commit**e quindi su **commit tutti**.
-5. Nella finestra di dialogo **impostazione configurazione vocale**non impegnata fare clic su **OK**.
+5. Nella finestra di dialogo **impostazione configurazione vocale non impegnata**fare clic su **OK**.
 6. Nella finestra di dialogo **Pannello di controllo di Skype for Business Server** fare clic su **OK**.

@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 17e756c0-6652-4cd5-b185-4b25929e3a42
 description: 'Riepilogo: esaminare le considerazioni di tipo indirizzo IP seguenti prima di implementare Skype for Business Server.'
-ms.openlocfilehash: 21e6254255766874872a342a2316dc8cddd5f9d2
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 74cb0738c7c6eb0518d8ab4ed4fae7db66921bfb
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194913"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802116"
 ---
 # <a name="configure-ip-address-types-in-skype-for-business"></a>Configurare i tipi di indirizzi IP in Skype for Business
 
@@ -39,7 +41,7 @@ Usando generatore di topologie, eseguire i passaggi descritti nella procedura se
 
    **Finestra di dialogo Modifica proprietà per il pool del server front-end**
 
-   - **Usare tutti gli indirizzi IP**configurati. Selezionare questa opzione se si vuole consentire l'uso di qualsiasi indirizzo IP definito nel computer.
+   - **Usare tutti gli indirizzi IP configurati**. Selezionare questa opzione se si vuole consentire l'uso di qualsiasi indirizzo IP definito nel computer.
 
      > [!NOTE]
      > Questa è l'opzione consigliata per le configurazioni IP versione 6 (IPv6).
@@ -59,13 +61,13 @@ Usando generatore di topologie, eseguire i passaggi descritti nella procedura se
 
 ### <a name="to-deploy-ip-address-types-on-a-mediation-server"></a>Per distribuire i tipi di indirizzo IP in un Mediation Server
 
-- In Generatore di topologia, in **pool**di mediazione, fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi scegliere **modifica proprietà**. In alternativa, selezionare il server e quindi fare clic su **modifica proprietà** dal menu **azione** .
+- In Generatore di topologia, in **pool di mediazione**, fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi scegliere **modifica proprietà**. In alternativa, selezionare il server e quindi fare clic su **modifica proprietà** dal menu **azione** .
 
 - Nella finestra di dialogo **modifica proprietà** selezionare il tipo di indirizzo IP che si vuole configurare. Per una configurazione a doppio stack, selezionare **Abilita IPv4** e **Abilita IPv6**, come illustrato nella figura seguente.
 
    **Finestra di dialogo Modifica proprietà per il pool di Mediation Server**
 
-  - **Usare tutti gli indirizzi IP**configurati. Selezionare questa opzione se si vuole consentire l'uso di qualsiasi indirizzo IP definito nel computer.
+  - **Usare tutti gli indirizzi IP configurati**. Selezionare questa opzione se si vuole consentire l'uso di qualsiasi indirizzo IP definito nel computer.
 
     > [!NOTE]
     > Questa è l'opzione consigliata per le configurazioni IP versione 6 (IPv6).

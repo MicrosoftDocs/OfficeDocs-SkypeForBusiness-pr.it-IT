@@ -8,15 +8,17 @@ ms.date: 8/17/2015
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 343a0563-9ca5-4ad0-b4f3-a72f1d7f1a81
 description: 'Riepilogo: leggere questo argomento per informazioni sulle categorie, le chat room e i ruoli utente e amministratore per il server di chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: bffdebdf6bbb57165b902026083de5628cdbc404
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 03a7b68a9728b60ebae25081e3e974bb61b0fc5b
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195990"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815764"
 ---
 # <a name="persistent-chat-categories-chat-rooms-and-user-roles-in-skype-for-business-server-2015"></a>Categorie di Chat persistente, chat room e ruoli utente
  
@@ -60,7 +62,7 @@ Oltre a membri consentiti e negati per le categorie, puoi anche controllare l'ac
   
 - **Membro**: utenti membri di una chat room. Questi utenti possono vedere le chat room nella directory (anche se la chat room è segreta), nonché abbonarsi alla chat room (incluse le opzioni per i metadati, ad esempio i messaggi non letti, i filtri ego e i filtri per le parole chiave), e partecipare alla chat room (può pubblicare, a meno che la sala è una sala auditorium in cui possono essere pubblicati solo relatori, ottenere contenuti e cercare. Gli utenti che non sono membri della chat room possono cercare la chat room se si trovano nell'elenco dei membri consentiti della categoria, ma devono richiedere l'accesso per partecipare a queste chat room per accedere al contenuto. (Non esiste alcuna richiesta di accesso o approvazione incorporata nel sistema; questi vengono eseguiti esternamente tramite posta elettronica, telefono o altre forme di contatto).
     
-- **** Relatore: utenti che possono inserire un post in una sala auditorium.
+- **Relatore**: utenti che possono inserire un post in una sala auditorium.
     
 ## <a name="administrator-roles"></a>Ruoli di amministratore
 

@@ -8,15 +8,17 @@ ms.date: 10/20/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: d760cb93-77d4-4d64-adb7-416b808f36f8
 description: Prima di distribuire e gestire Skype for Business Server, è necessario preparare i servizi di dominio Active Directory estendendo lo schema. Le estensioni dello schema aggiungono le classi e gli attributi richiesti da Skype for Business Server.
-ms.openlocfilehash: 34f97f7a37adc23635f938fb12c9a72e22429538
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0c3765fe36b252cc03218a3fa4365c5cc36c7f48
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194859"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815484"
 ---
 # <a name="schema-changes-in-skype-for-business-server"></a>Modifiche allo schema in Skype for Business Server
  
@@ -33,7 +35,7 @@ Skype for Business Server richiede diverse nuove classi e attributi e modifica a
     
   - Estensioni per le classi per mantenere la compatibilità con le versioni precedenti supportate di Lync Server.
     
-- **Dati** (archiviato in Skype for Business Server Extended schema e nelle classi dello schema esistenti):
+- **Dati** (archiviati in Skype for Business Server Extended schema e nelle classi dello schema esistenti):
     
   - URI (Uniform Resource Identifier) SIP dell'utente e altre impostazioni utente
     

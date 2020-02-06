@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Un'applicazione attendibile è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3,0 Core SDK, considerato attendibile da Skype for Business Server.
-ms.openlocfilehash: 272785cd1dcfe0bf21f7ac2b5ab64f36646237eb
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b2a257ad197d573beccb187ef49e41b3864c1a58
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187073"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817077"
 ---
 # <a name="manage-trusted-applications-in-skype-for-business-server"></a>Gestire le applicazioni attendibili in Skype for Business Server
 
@@ -68,7 +70,7 @@ Nel pannello di controllo di Skype for Business Server puoi vedere il nome delle
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.
 
-3.  Nella barra di spostamento sinistra fare clic **** su topologia e quindi su **applicazione attendibile**.
+3.  Nella barra di spostamento sinistra fare clic su **topologia**e quindi su **applicazione attendibile**.
 
 4.  Nella pagina dell' **applicazione attendibile** fare clic su un'intestazione di colonna per ordinare le applicazioni, se necessario.
 

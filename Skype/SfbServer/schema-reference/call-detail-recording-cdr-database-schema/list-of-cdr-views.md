@@ -8,15 +8,17 @@ ms.date: 7/15/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 2f72aead-d1da-4185-b75c-f6c31d76a6b3
 description: Le visualizzazioni consentono di accedere in modo semplice alle informazioni sugli scenari più comuni usati per la restituzione dei dati dal database CDR. È consigliabile usare le visualizzazioni per creare report personalizzati invece di usare le tabelle di database CDR effettive. Questo perché le visualizzazioni del database hanno più probabilità di mantenere la compatibilità con le versioni precedenti.
-ms.openlocfilehash: e1a7926108c2e27ecc69c5717867b9c18f8b47ad
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 78bf18fe51cea8937de44c72b39f7c1b81c75544
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194787"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815124"
 ---
 # <a name="list-of-cdr-views"></a>Elenco di visualizzazioni CDR
  

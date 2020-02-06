@@ -8,6 +8,8 @@ ms.date: 2/15/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c94063f1-e802-4a61-be90-022fc185335e
 description: "Riepilogo: esaminare le considerazioni sull'utilizzo della porta prima di implementare Skype for Business Server."
-ms.openlocfilehash: 613067d90da4fb06811ca1497c83237019b3c021
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ca790f2ca4ff1504ab4851fedfbba086e251d91a
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194909"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802016"
 ---
 # <a name="port-and-protocol-requirements-for-servers"></a>Requisiti per la porta e il protocollo per i server
  
@@ -30,7 +32,7 @@ Skype for Business Server richiede che siano aperte porte specifiche sui firewal
   
 Anche se all'inizio può sembrare un po' scoraggiante, il sollevamento di carichi pesanti per la pianificazione può essere eseguito usando lo [strumento di pianificazione di Skype for Business Server 2015](https://go.microsoft.com/fwlink/p/?LinkID=282725). Dopo aver eseguito le domande della procedura guidata sulle caratteristiche che si prevede di usare, per ogni sito che si definisce è possibile visualizzare il report del firewall nel report amministratore Edge e usare le informazioni elencate per creare regole di yourfirewall. È anche possibile apportare modifiche a molti dei nomi e degli indirizzi IP usati, per informazioni dettagliate vedere [rivedere il report del firewall](../../management-tools/planning-tool/review-the-administrator-reports.md#Firewall_report). Tieni presente che puoi esportare il report amministratore Edge in un foglio di calcolo di Excel e il report del firewall sarà uno dei fogli di lavoro nel file. 
   
-È anche possibile trovare le informazioni in queste tabelle in formato diagramma rivedendo il poster dei workload di protocollo collegato ai diagrammi [tecnici per l'articolo di Skype for Business Server 2015](../../technical-diagrams.md) .
+È anche possibile trovare le informazioni in queste tabelle in formato diagramma rivedendo il poster dei workload di protocollo collegato ai [diagrammi tecnici per l'articolo di Skype for Business Server 2015](../../technical-diagrams.md) .
 > [!NOTE]
 > - Se stai implementando Skype for business online (Office 365), consulta gli [URL e gli intervalli di indirizzi IP di Office 365](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;amp;rs=en-US&amp;amp;ad=US). In ambienti ibridi sarà necessario fare riferimento a questo argomento e pianificare anche la [connettività ibrida](../../skype-for-business-hybrid-solutions/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json).
 > - Si possono avere firewall hardware o software, ma non sono necessari modelli o versioni specifiche. Ciò che conta è ciò che le porte sono whitelist in modo che il firewall non comprometta il funzionamento di Skype for Business Server.

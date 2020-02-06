@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: eafeb54a-2574-415b-b991-a0ff0470d8c3
 description: "Riepilogo: informazioni sul servizio impostazioni utente, che fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: e5e068d66adb325900b055a19aedcfaeabf4f2bc
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 1eef869523bf1590a00ca199727b33ec9e13ccba
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186848"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816645"
 ---
 # <a name="user-settings-service-for-call-quality-dashboard-cqd"></a>Servizio impostazioni utente per dashboard qualità chiamata (Call Quality Dashboard)
  
@@ -38,7 +40,7 @@ Le operazioni REST sono incluse nella tabella seguente.
 
 |**Operazione**|**Descrizione**|
 |:-----|:-----|
-|[Ottenere le impostazioni utente](get-user-settings.md) <br/> |Ottieni impostazioni utente restituisce un elenco di impostazioni per un utente specificato.  <br/> |
-|[Ottenere l'impostazione utente](get-user-setting.md) <br/> |Per ottenere l'impostazione utente viene restituita una singola impostazione utente.  <br/> |
+|[Ottieni impostazioni utente](get-user-settings.md) <br/> |Ottieni impostazioni utente restituisce un elenco di impostazioni per un utente specificato.  <br/> |
+|[Ottieni impostazione utente](get-user-setting.md) <br/> |Per ottenere l'impostazione utente viene restituita una singola impostazione utente.  <br/> |
    
 

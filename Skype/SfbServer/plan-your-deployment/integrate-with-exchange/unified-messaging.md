@@ -8,16 +8,18 @@ ms.date: 2/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 7b22002b-7e6a-4d3f-b600-a733a7e3778a
 description: 'Riepilogo: rivedere questo argomento mentre si prevede di integrare Skype for Business Server con Exchange 2013 o 2016.'
-ms.openlocfilehash: bed73151b1010dd287c21ea55372e4eb18117665
-ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
+ms.openlocfilehash: 1ae6ad10f1e817b9ace0240c79d09251a23dd61c
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772619"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815864"
 ---
 # <a name="plan-for-exchange-unified-messaging-integration-in-skype-for-business"></a>Pianificare l'integrazione della messaggistica unificata di Exchange in Skype for business
 
@@ -61,7 +63,7 @@ Skype for Business Server, Enterprise Voice usa l'infrastruttura di messaggistic
 
 ### <a name="exchange-server-components"></a>Componenti di Exchange Server
 
-Per specificare le caratteristiche e i servizi di messaggistica unificata di Exchange descritti in [funzionalità di messaggistica unificata integrata e Skype for Business Server](#features-of-integrated-unified-messaging-and-skype-for-business-server) per gli utenti di VoIP aziendale dell'organizzazione, è necessario distribuire un server cassette postali di Microsoft Exchange e un accesso client Server, che ospita le cassette postali degli utenti e offre una posizione di archiviazione unica per la posta elettronica e la segreteria telefonica. La messaggistica unificata di Exchange viene eseguita come servizio nella cassetta postale di Exchange e nei server Accesso client.
+Per fornire le caratteristiche e i servizi di messaggistica unificata di Exchange descritti in [funzionalità di messaggistica unificata integrata e Skype for Business Server](#features-of-integrated-unified-messaging-and-skype-for-business-server) per gli utenti di VoIP aziendale dell'organizzazione, è necessario distribuire un server cassette postali di Microsoft Exchange e un server Accesso client, che ospita le cassette postali degli utenti e offre una posizione di archiviazione unica per posta elettronica e segreteria telefonica. La messaggistica unificata di Exchange viene eseguita come servizio nella cassetta postale di Exchange e nei server Accesso client.
 
 Per informazioni dettagliate sui componenti di messaggistica unificata di Exchange in Microsoft Exchange Server 2010, vedere [distribuzione della messaggistica unificata di Exchange locale per consentire l'anteprima della segreteria telefonica di Lync Server 2013](https://technet.microsoft.com/library/9673bd73-a3a3-425d-870f-04d801c6d0d5.aspx) .
 

@@ -7,6 +7,8 @@ audience: ITPro
 ms.topic: conceptual
 manager: serdars
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 67435465-b4d0-4e38-8e03-56a60b844a34
 description: 'Riepilogo: informazioni sui requisiti ambientali per Edge Server in Skype for Business Server.'
-ms.openlocfilehash: 25584c10c8359cb4a3e695cee4838b80bc9643f5
-ms.sourcegitcommit: bd50c6239cee414ea9933e9d569fa5a24bc05544
+ms.openlocfilehash: 15cc6c54d420cd95962afb1faa219a3a370056a6
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "36195919"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41803376"
 ---
 # <a name="edge-server-environmental-requirements-in-skype-for-business-server"></a>Requisiti ambientali di Edge Server in Skype for Business Server
  
@@ -51,7 +53,7 @@ Se si scelgono indirizzi IP privati non instradabili con NAT, ricordare questi p
   
 - È necessario usare indirizzi IP privati instradabili su **tutte e tre le** interfacce esterne.
     
-- È necessario configurare il **** NAT simmetrico per il traffico in entrata e in uscita. La NAT simmetrica è l'unica NAT supportata che puoi usare con Skype for Business Server Edge Server.
+- È necessario configurare il NAT **simmetrico** per il traffico in entrata e in uscita. La NAT simmetrica è l'unica NAT supportata che puoi usare con Skype for Business Server Edge Server.
     
 - Configurare il NAT per non modificare gli indirizzi di origine in arrivo. Il servizio a/V Edge deve essere in grado di ricevere l'indirizzo di origine in entrata per trovare il percorso multimediale ottimale.
     

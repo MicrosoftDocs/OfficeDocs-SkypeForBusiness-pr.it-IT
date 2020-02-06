@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: " Dopo aver configurato la rete di controllo di ammissione chiamata (CAC), è necessario abilitare CAC per applicare le limitazioni della larghezza di banda."
-ms.openlocfilehash: cbe3ad690f7061611a91474ce6df1fe39d84b0fd
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 4f9f3f09f943b417ec589f26dc5c6505d30831f9
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188588"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817535"
 ---
-# <a name="enabling-call-admission-control-in-skype-for-business-server"></a>Abilitazione del controllo di ammissione alle chiamate in Skype for Business Server
+# <a name="enabling-call-admission-control-in-skype-for-business-server"></a>Abilitazione del controllo di ammissione di chiamata in Skype for Business Server
 
 Il servizio Controllo di ammissione di chiamata è una rete di aree, siti e subnet che consentono di applicare restrizioni alle trasmissioni audio e video in base alla larghezza di banda disponibile. Dopo aver configurato la rete CAC, è necessario abilitare CAC per applicare le limitazioni della larghezza di banda. Per eseguire questa operazione, è possibile usare il pannello di controllo di Skype for Business Server.
 
@@ -46,7 +48,7 @@ Se si apportano modifiche alla configurazione di rete, è possibile eseguire di 
 
 [Pianificazione del servizio Controllo di ammissione di chiamata](../../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md) 
  
-[Configurare il controllo di ammissione di chiamata](../../../deploy/deploy-enterprise-voice/deploy-call-admission-control.md) 
+[Distribuire il controllo di ammissione di chiamata](../../../deploy/deploy-enterprise-voice/deploy-call-admission-control.md) 
 
 [Get-CsNetworkConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkConfiguration)  
 

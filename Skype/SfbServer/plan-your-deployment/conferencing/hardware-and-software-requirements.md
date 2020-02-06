@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: bfa31b24-a02f-410f-a8ec-206ca4d5b620
 description: 'Riepilogo: leggere questo argomento per informazioni sui requisiti hardware e software per i servizi di conferenza in Skype for Business Server.'
-ms.openlocfilehash: c4efb85c7ae1674cab7ee123833df779a835e14c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0d09e0e85e7059e0a761b2822f963765751623e0
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187826"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815984"
 ---
 # <a name="hardware-and-software-requirements-for-conferencing-in-skype-for-business-server"></a>Requisiti hardware e software per i servizi di conferenza in Skype for Business Server
 
@@ -107,7 +109,7 @@ L'applicazione per i servizi di conferenza e l'applicazione per le conferenze ri
 
 Skype for Business Server non supporta la personalizzazione delle richieste vocali e della musica per i servizi di conferenza telefonica con accesso esterno. Tuttavia, se si ha bisogno di cambiare i file audio predefiniti, vedere l'articolo 961177 della Microsoft Knowledge base [su come personalizzare le richieste vocali o i file musicali per i servizi di conferenza telefonica con accesso esterno](https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=961177).
 
-È anche possibile usare l'utilità per la gestione delle [richieste vocali personalizzate di Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?LinkId=396880) Conferencing, che consente agli amministratori di sostituire le richieste vocali predefinite usate quando un chiamante di telefono si unisce a una riunione Skype for business con istruzioni personalizzate per creare un'esperienza di partecipazione a una riunione diversa. Le istruzioni vocali personalizzate possono essere installate in un server Enterprise o Standard Edition.
+È anche possibile usare l'utilità per la gestione delle [richieste vocali personalizzate di Microsoft Lync Server Conferencing](https://go.microsoft.com/fwlink/p/?LinkId=396880) , che consente agli amministratori di sostituire le richieste vocali predefinite usate quando un chiamante di telefono si unisce a una riunione Skype for business con istruzioni personalizzate per ottenere una diversa esperienza di partecipazione alla riunione. Le istruzioni vocali personalizzate possono essere installate in un server Enterprise o Standard Edition.
 
 Applicazione per i servizi di conferenza e l'applicazione di annuncio di conferenza sono i requisiti seguenti per la musica in attesa, il nome registrato e i file di prompt audio:
 

@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 737c8a25-23e9-4494-ab76-5a7b729b44ca
 description: Skype for Business Server si basa su certificati per l'autenticazione del server e per stabilire una catena di trust tra client e server e tra i diversi ruoli del server. Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 e l'infrastruttura a chiave pubblica (PKI) di Windows Server 2008 forniscono l'infrastruttura per stabilire e convalidare questa catena di trust.
-ms.openlocfilehash: 381afce84c1a58d15187547c9cb8fd6f98e84790
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ec2ae6e94d9cf00a6193c45d6cefd7db6d5a5b62
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194885"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815634"
 ---
 # <a name="public-key-infrastructure-for-skype-for-business-server"></a>Infrastruttura a chiave pubblica per Skype for Business Server
  
@@ -29,7 +31,7 @@ Anche se le informazioni sul certificato sono valide, ci deve essere un modo per
 Ogni certificato è collegato a una chiave pubblica. Il server indicato sul certificato contiene una chiave privata corrispondente di sua esclusiva conoscenza. Un client o un server che si connette utilizza la chiave pubblica per crittografare una parte di informazioni casuali e la invia al server. Se il server decrittografa le informazioni e le restituisce come testo normale, l'entità che si connette può essere certa che il server detenga la chiave privata corrispondente al certificato e pertanto sia il server indicato sul certificato.
   
 > [!NOTE]
-> Non tutte le CA pubbliche soddisfano i requisiti dei certificati di Skype for Business Server. Ti consigliamo di fare riferimento all'elenco dei fornitori di CA pubblici certificati per le tue esigenze per i certificati pubblici. Per informazioni dettagliate, vedere [partner certificati](https://go.microsoft.com/fwlink/p/?LinkId=140898)per le comunicazioni unificate. 
+> Non tutte le CA pubbliche soddisfano i requisiti dei certificati di Skype for Business Server. Ti consigliamo di fare riferimento all'elenco dei fornitori di CA pubblici certificati per le tue esigenze per i certificati pubblici. Per informazioni dettagliate, vedere [partner certificati per le comunicazioni unificate](https://go.microsoft.com/fwlink/p/?LinkId=140898). 
   
 ## <a name="crl-distribution-points"></a>Punti di distribuzione CLR
 

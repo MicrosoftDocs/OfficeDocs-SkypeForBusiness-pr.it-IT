@@ -8,15 +8,17 @@ ms.date: 7/19/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 692b7d99-1bc9-4c99-a050-2bc2be8688b2
 description: 'Riepilogo: leggere questo argomento per informazioni sui requisiti hardware e software per il server di chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: e700b76c8af29a0c877c1dc594244a299b8a3904
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: cba3b340710e4c5ed041c085f39f1a4cc209a789
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195988"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815754"
 ---
 # <a name="hardware-and-software-requirements-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Requisiti hardware e software per il server Chat persistente
  

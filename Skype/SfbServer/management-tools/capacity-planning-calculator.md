@@ -8,16 +8,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: bc4d93b1-0c38-4bf8-8b65-692ff3e2446d
 description: 'Riepilogo: come usare lo strumento Calcolatrice capacità.'
-ms.openlocfilehash: 24e268c6ecc3cc48fbfb4405f1e5e6b008639944
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f83cde759c6e7b755af3766c342cdea19892425f
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186836"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816635"
 ---
 # <a name="skype-for-business-server-capacity-planning-calculator"></a>Calcolatore di pianificazione della capacità di Skype for Business Server
  
@@ -28,7 +30,7 @@ ms.locfileid: "36186836"
 > - Skype for Business Server 2019.
 > - Skype for Business Server 2015.
   
-Il calcolatore di [capacità di Skype for Business server 2015](https://www.microsoft.com/en-us/download/details.aspx?id=51196) e il calcolatore di capacità di Skype for [Business Server 2019](https://www.microsoft.com/en-us/download/details.aspx?id=57509) aumentano lo [strumento di pianificazione di Skype for business](https://www.microsoft.com/en-us/download/details.aspx?id=50357) e la documentazione di distribuzione ([piano per Skype for business Distribuzione](../plan-your-deployment/plan-your-deployment.md) e pianificazione del server 2015 [per la distribuzione di Skype for Business Server 2019](../../SfBServer2019/plan/plan-your-deployment-2019.md) , rispettivamente). Usare la calcolatrice dopo aver esaminato la guida e aver creato una topologia consigliata usando lo strumento pianificazione.
+Il calcolatore di [capacità di Skype for Business server 2015](https://www.microsoft.com/en-us/download/details.aspx?id=51196) e il [calcolatore di capacità di Skype for Business Server 2019](https://www.microsoft.com/en-us/download/details.aspx?id=57509) aumentano lo [strumento di pianificazione di Skype for business](https://www.microsoft.com/en-us/download/details.aspx?id=50357) e la documentazione di distribuzione ([piano per la distribuzione](../plan-your-deployment/plan-your-deployment.md) e il piano di Skype for Business Server 2015 [per la distribuzione di Skype for Business Server 2019](../../SfBServer2019/plan/plan-your-deployment-2019.md) rispettivamente). Usare la calcolatrice dopo aver esaminato la guida e aver creato una topologia consigliata usando lo strumento pianificazione.
   
 La calcolatrice della capacità di Skype for Business Server ti aiuta a determinare i requisiti del server in base al numero di utenti e agli strumenti di comunicazione usati dall'organizzazione. Dopo aver determinato il profilo utente e le funzioni che si desidera abilitare per gli utenti, usare la calcolatrice per determinare il numero di server, la memoria e la larghezza di banda necessarie. Questa versione della calcolatrice non fornisce indicazioni per I requisiti di I/O su disco.
   
@@ -76,7 +78,7 @@ Il modello di utilizzo contiene le sezioni seguenti. Per calcolare i requisiti d
     
   - Se 50% delle conferenze vocali includerà anche la condivisione delle applicazioni, selezionare la casella di controllo **Includi condivisione applicazioni** .
     
-  - Se il 20% delle conferenze vocali include i caricamenti dei dati, ad esempio le presentazioni di PowerPoint, selezionare la casella di controllo **Includi Web** Conferencing.
+  - Se il 20% delle conferenze vocali include i caricamenti dei dati, ad esempio le presentazioni di PowerPoint, selezionare la casella di controllo **Includi Web Conferencing** .
     
   **Mobilità**
   
@@ -92,7 +94,7 @@ Dopo aver immesso tutte le informazioni necessarie, il calcolatore della capacit
     
 Le celle verdi mostrano le raccomandazioni per il modello di utilizzo immesso. 
   
-- **Total Front End Servers**: il numero di server fisici necessari si basa su server dedicati che usano Skype for Business Server 2015 con processore duale, hex-core, con 2.260 megacicli o Skype for Business Server 2019 con Intel Xeon E5-2673 V3, Dual processore, hex-core.
+- **Total Front End Servers**: il numero di server fisici necessari si basa su server dedicati che usano Skype for Business Server 2015 con processore duale, hex-core, con 2.260 megacicli o Skype for Business Server 2019 con Intel Xeon E5-2673 V3, Dual Processor, hex-core.
     
     Tieni presente che è consigliabile abilitare l'hyperthreading ed è stato dimostrato che migliora le prestazioni per i server che supportano l'audio/video.
     

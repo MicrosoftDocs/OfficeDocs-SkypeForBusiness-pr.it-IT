@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Eseguire un ripristino di sistema per un server pool di Skype for Business Server per testare il processo di ripristino di emergenza documentato
-ms.openlocfilehash: d65f8bfa512a3954728e09d659b571335d32a379
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f3eba25d59c56f085b9bd6d347fcde910f11a00d
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188498"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817302"
 ---
 # <a name="disaster-recovery-testing-in-skype-for-business-server"></a>Test di ripristino di emergenza in Skype for Business Server
 

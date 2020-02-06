@@ -8,15 +8,17 @@ ms.date: 10/26/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: "Riepilogo: informazioni su come configurare l'infrastruttura di Skype for Business Server 2019 per l'utilizzo con System Center Operations Manager."
-ms.openlocfilehash: e08debc645665d8be69ce062930d64421b093433
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 3308662bb2a819718368c68bdaff16dd9e73d13a
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37318958"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41799666"
 ---
 # <a name="manage-skype-for-business-server-2019-using-scom-management-pack"></a>Gestire Skype for Business Server 2019 con SCOM Management Pack
  
@@ -127,7 +129,7 @@ I Management Pack di Skype for Business Server 2019 offrono una maggiore copertu
 |1  <br/> |Registrazione (accesso utente)  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
 |2  <br/> |Servizio Rubrica (download file)  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
 |3  <br/> |Query Web Rubrica  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
-|4  <br/> |Presenza  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
+|4  <br/> |Icone di presenza  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
 |5  <br/> |Archivio contatti unificato  <br/> |Disponibile Lync Server 2013 e oltre  <br/> |
    
 **Transazioni sintetiche supportate per i servizi peer-to-peer**
@@ -145,7 +147,7 @@ I Management Pack di Skype for Business Server 2019 offrono una maggiore copertu
 
 ||||
 |:-----|:-----|:-----|
-|9  <br/> |Video conferenza audio  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
+|9  <br/> |Conferenze audio e video  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
 |10  <br/> |Conferenza dati  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 |11  <br/> |Conferenza di messaggistica istantanea  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
 |12  <br/> | Chat persistente <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
@@ -162,7 +164,7 @@ I Management Pack di Skype for Business Server 2019 offrono una maggiore copertu
 |18  <br/> |Connettività di messaggistica unificata di Exchange (Voicemail) per AV Edge  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 |19  <br/> |Chiamata peer-to-peer PSTN  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
 |20  <br/> |Messaggistica istantanea XMPP (Federazione)  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
-|21  <br/> |Video Interop server  <br/> |Disponibile in Skype for Business Server 2015 e oltre  <br/> |
+|21  <br/> |Server di interoperabilità video  <br/> |Disponibile in Skype for Business Server 2015 e oltre  <br/> |
    
 ## <a name="how-health-rolls-up"></a>Come viene arrotolato l'integrità
 

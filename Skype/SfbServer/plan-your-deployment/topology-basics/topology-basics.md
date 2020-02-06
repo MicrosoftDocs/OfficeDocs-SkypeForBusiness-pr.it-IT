@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 113e8c3f-71de-435c-bc4a-918ac7b50008
 description: 'Riepilogo: scegliere la topologia per Skype for Business Server. Informazioni sulla collocazione del server per Skype for Business Server.'
-ms.openlocfilehash: 00154c754292fd960942f0f0da7f95bb6b5b1c19
-ms.sourcegitcommit: da87a3c4c781223ab7de2fb539bb0796dc27ea9e
+ms.openlocfilehash: b3f45a37bde409dcda38f3047e60776ebc8560e6
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "36196060"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41801696"
 ---
 # <a name="topology-basics-for-skype-for-business-server"></a>Nozioni di base sulla topologia per Skype for Business Server
 
@@ -171,13 +173,13 @@ Mediation Server è un componente necessario per l'implementazione di VoIP azien
 
 Per informazioni dettagliate, vedere [Componente Mediation Server in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/mediation-server.md).
 
-### <a name="video-interop-server"></a>Video Interop server
+### <a name="video-interop-server"></a>Server di interoperabilità video
 
 Video Interop server è un nuovo ruolo di Skype for Business Server 2015. Consente di integrare la distribuzione di Skype for Business Server con alcune soluzioni di terze parti di VTC (video teleconferenza System). Un VIS funge da intermediario tra un sistema di teleconferenza di terze parti e una distribuzione di Skype for Business Server. Per questa versione, VIS è focalizzata sull'interoperabilità con i sistemi video Cisco/Tandberg.
 
 Per informazioni dettagliate, vedere [pianificare il video Interop server in Skype for Business Server](../../plan-your-deployment/video-interop-server.md).
 
-### <a name="director"></a>Direttore
+### <a name="director"></a>Director
 
 Gli amministratori possono autenticare le richieste degli utenti di Skype for Business Server, ma non gli account degli utenti privati o offre servizi di conferenza o presenza. Gli amministratori sono più utili per migliorare la sicurezza nelle distribuzioni che consentono l'accesso degli utenti esterni. Il Director può eseguire l'autenticazione delle richieste prima di inviarle ai server interni. Nel caso di un attacco di negazione del servizio, l'attacco termina con il direttore e non raggiunge i server front-end.
 
@@ -222,11 +224,11 @@ Il server Standard Edition include il ruolo seguente (è necessaria una configur
 
 Questi ruoli del server devono essere distribuiti in un server distinto:
 
-- Direttore
+- Director
 
 - Bordo
 
-- Video Interop server
+- Server di interoperabilità video
 
 - Office Web Apps
 

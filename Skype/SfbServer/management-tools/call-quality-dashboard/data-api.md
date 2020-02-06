@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 25c2450a-f7b3-4dd2-987d-64f4246dd019
 description: "Riepilogo: informazioni sull'API dati per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 016cc1be9f5cd5506f8ee7d8ddbe2765e0015ffd
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: e302c04dee298f9e5d2f33c908b5421ecff4de9a
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "36571920"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816865"
 ---
 # <a name="data-api-for-call-quality-dashboard-cqd-in-skype-for-business-server"></a>API dati per Call Quality Dashboard (Call Quality Dashboard) in Skype for Business Server
  
@@ -33,12 +35,12 @@ Le operazioni REST sono incluse nella tabella seguente.
 
 |**Operazione**|**Descrizione**|
 |:-----|:-----|
-|[Ottieni cubo](get-cube.md) <br/> |Ottenere l'elenco delle dimensioni e delle misure disponibili.  <br/> |
-|[Ottenere i membri della dimensione](get-dimension-members.md) <br/> |L'operazione get Members Dimension restituisce l'elenco dei membri di una dimensione specifica. È anche possibile filtrare l'elenco dei membri e ottenere un sottoinsieme, per ridurre il costo del bonifico bancario.  <br/> |
-|[Esegui query](run-query.md) <br/> |L'operazione Esegui query offre la possibilità di eseguire una query sul cubo in base a dimensioni, misure e filtri specificati e restituire i dati.  <br/> |
-|[Cancellare la cache](clear-cache.md) <br/> |Cancella operazione cache Elimina la cache sul server per query e dati. In questo modo verrà reimpostata la cache e in seguito verranno riprodotti nuovi dati dal cubo QoE per le nuove richieste.  <br/> |
-|[Ottenere il log di integrazione](get-integration-log.md) <br/> |Get Integration log Operation restituisce un elenco delle voci di log che descrivono le attività nell'elaborazione dei cubi QoE.  <br/> |
-|[Ottenere gli ultimi dati di integrazione](get-last-integration-data.md) <br/> |Ottenere gli ultimi dati di integrazione dal cubo.  <br/> |
+|[Get Cube](get-cube.md) <br/> |Ottenere l'elenco delle dimensioni e delle misure disponibili.  <br/> |
+|[Get Dimension Members](get-dimension-members.md) <br/> |L'operazione get Members Dimension restituisce l'elenco dei membri di una dimensione specifica. È anche possibile filtrare l'elenco dei membri e ottenere un sottoinsieme, per ridurre il costo del bonifico bancario.  <br/> |
+|[Run Query](run-query.md) <br/> |L'operazione Esegui query offre la possibilità di eseguire una query sul cubo in base a dimensioni, misure e filtri specificati e restituire i dati.  <br/> |
+|[Clear Cache](clear-cache.md) <br/> |Cancella operazione cache Elimina la cache sul server per query e dati. In questo modo verrà reimpostata la cache e in seguito verranno riprodotti nuovi dati dal cubo QoE per le nuove richieste.  <br/> |
+|[Get Integration Log](get-integration-log.md) <br/> |Get Integration log Operation restituisce un elenco delle voci di log che descrivono le attività nell'elaborazione dei cubi QoE.  <br/> |
+|[Get Last Integration Data](get-last-integration-data.md) <br/> |Ottenere gli ultimi dati di integrazione dal cubo.  <br/> |
    
  **Supporto CORS (Cross-Origin Resource Sharing) per API dati**
   

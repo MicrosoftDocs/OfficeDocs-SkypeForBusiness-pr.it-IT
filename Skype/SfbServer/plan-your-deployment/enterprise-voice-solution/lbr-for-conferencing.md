@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 8b86740e-db95-4304-bb83-64d0cbb91d47
 description: Pianificazione del routing basato sulla posizione per i servizi di conferenza in Skype for Business Server VoIP aziendale, inclusi i trasferimenti delle chiamate consultive.
-ms.openlocfilehash: d9ca03920fe361cf4d7692fd80031bef01b03b17
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d03bab835556bf0cea4dffb33bcfbcc48ba7fa42
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187661"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802846"
 ---
 # <a name="location-based-routing-for-conferencing-in-skype-for-business-server"></a>Routing basato sulla posizione per i servizi di conferenza in Skype for Business Server
 

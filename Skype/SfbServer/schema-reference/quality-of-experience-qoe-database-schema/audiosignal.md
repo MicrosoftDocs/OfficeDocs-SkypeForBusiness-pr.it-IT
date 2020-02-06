@@ -8,15 +8,17 @@ ms.date: 2/1/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 0013c8c6-cdf9-4d70-bc2a-cddd1560f66b
 description: Ogni record rappresenta le metriche del segnale audio per un endpoint. In genere, ogni chiamata ha due record, uno è per il chiamante e uno per il chiamato.
-ms.openlocfilehash: f8d617e96fe3427493bcb9e4cc70008fedae72e7
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d1b35aa4111feb77ae905e833d7bb1f4d4acd01e
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194636"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41810674"
 ---
 # <a name="audiosignal-table"></a>Tabella AudioSignal
  

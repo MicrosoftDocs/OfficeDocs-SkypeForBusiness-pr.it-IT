@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 44aff88d-536c-4613-a81e-5398c9c6a648
 description: Probabilmente hai già adottato misure per progettare la tolleranza di errore nel sistema, usando procedure come la garanzia di ridondanza hardware, la protezione contro la perdita di corrente, l'installazione di routine degli aggiornamenti della sicurezza e delle misure antivirus e il monitoraggio delle attività del server. Queste procedure non sono utili solo per l'infrastruttura di Skype for Business Server, ma anche per l'intera rete. Se non sono state implementate queste procedure, è consigliabile eseguire questa operazione prima di distribuire Skype for Business Server.
-ms.openlocfilehash: c1f6a6ebe31276b8dbcd9037fa373baffc055fde
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 62200fc1ac45e1d647761af24d176a00d18693e4
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194896"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815684"
 ---
 # <a name="best-practices-for-your-core-infrastructure-in-skype-for-business-server"></a>Procedure consigliate per l'infrastruttura principale in Skype for Business Server
  

@@ -1,5 +1,5 @@
 ---
-title: Ottenere i membri della dimensione
+title: Get Dimension Members
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,24 +7,26 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: bd89bbf7-cb98-4cd8-bbfa-0484663d14db
 description: "Riepilogo: informazioni sull'operazione get Members Dimension. L'operazione get Members Dimension fa parte dell'API Data per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: c457e7f3b42aaeb11c35180bc4c1ae6ee42b914e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ba80e14c011d6cecb9b70f8a8faf32764b5b433d
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186947"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816825"
 ---
-# <a name="get-dimension-members"></a>Ottenere i membri della dimensione
+# <a name="get-dimension-members"></a>Get Dimension Members
  
 **Riepilogo:** Informazioni sull'operazione get Members Dimension. L'operazione get Members Dimension fa parte dell'API Data per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
   
 L'operazione get Members Dimension fa parte dell'API Data per il dashboard della qualità delle chiamate.
   
-## <a name="get-dimension-members"></a>Ottenere i membri della dimensione
+## <a name="get-dimension-members"></a>Get Dimension Members
 
 L'operazione get Members Dimension restituisce l'elenco dei membri di una dimensione specifica. È anche possibile filtrare l'elenco dei membri e ottenere un sottoinsieme, per ridurre il costo del bonifico bancario.
   

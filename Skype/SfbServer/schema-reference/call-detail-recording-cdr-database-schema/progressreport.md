@@ -8,15 +8,17 @@ ms.date: 10/20/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 38e5f060-5e9b-4185-87b2-7ef61c4bb75f
 description: I report sullo stato di avanzamento si basano sui dati caricati dal client nel database dopo il completamento di una chiamata o di una sessione. I report sullo stato di avanzamento verranno scritti solo per le chiamate e le sessioni che Skype for Business Server 2015 determina può essere utile per scopi diagnostici.
-ms.openlocfilehash: 9022c7707e0d2f0a4346ed629bf51420c312b10a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: a6cd89d7ba7f8cc03b25dc9310bdb408c85b50cb
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194755"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41814974"
 ---
 # <a name="progressreport-table"></a>Tabella ProgressReport
  

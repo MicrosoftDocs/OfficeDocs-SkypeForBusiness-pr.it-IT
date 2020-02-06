@@ -7,15 +7,17 @@ ms.reviewer: qingy
 audience: ITPro
 ms.topic: reference
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: Fornisce ai professionisti IT i collegamenti alle informazioni aggiornate sugli aggiornamenti per le versioni permanenti di Skype for business 2016, Skype for business 2015 e i client Lync 2013
-ms.openlocfilehash: 717a1235622a8c2356797a765cd4d292ce0c68e6
-ms.sourcegitcommit: 43a17ce6fea3951719b55bfbda03c500cef4816c
+ms.openlocfilehash: 2bb0656d891cf8744e7a22e3eda6278e839aaab3
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41580913"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41804106"
 ---
 # <a name="latest-updates-for-versions-of-skype-for-business-that-use-windows-installer-msi"></a>Aggiornamenti più recenti per le versioni di Skype for business che usano Windows Installer (MSI)
 

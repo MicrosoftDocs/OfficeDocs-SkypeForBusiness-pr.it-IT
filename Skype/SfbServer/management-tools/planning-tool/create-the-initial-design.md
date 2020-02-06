@@ -8,16 +8,18 @@ ms.date: 4/5/2016
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: f3131153-de14-41be-b1e6-7d4bb0191af1
 description: Dopo aver completato l'installazione dello strumento di pianificazione di Skype for Business Server, si è pronti per avviare lo strumento di pianificazione e iniziare a progettare l'infrastruttura di Skype for Business Server 2015 proposta.
-ms.openlocfilehash: 47a3725c1307bd6efe57fa07a955004bd6e5ff29
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 8c19551d2273b992b5148646e28d726f5aea5900
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186749"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816495"
 ---
 # <a name="create-the-initial-topology-design-for-skype-for-business-server-2015"></a>Creare la progettazione della topologia iniziale per Lync Server 2013
 
@@ -32,13 +34,13 @@ Dopo aver completato l'installazione dello strumento di pianificazione di Skype 
 
 2. Dopo l'avvio dello strumento di pianificazione, viene visualizzata la pagina **Benvenuto nello strumento di pianificazione per Skype for Business Server 2015** . Per iniziare la progettazione, scegliere una delle opzioni seguenti:
 
-   - **Opzione 1:** iniziare Se **si fa** clic su inizia, viene fornita una serie specifica di domande di interviste con le relative selezioni per definire i criteri. Dopo aver completato la sezione iniziale **** dell'intervista introduttiva, si procede in **siti di progettazione** per definire l'architettura del sito. Per completare questa opzione, procedere con il passaggio 3.
+   - **Opzione 1:** iniziare Se **si fa** clic su inizia, viene fornita una serie specifica di domande di interviste con le relative selezioni per definire i criteri. Dopo aver completato la sezione iniziale dell'intervista **introduttiva** , si procede in **siti di progettazione** per definire l'architettura del sito. Per completare questa opzione, procedere con il passaggio 3.
 
    - **Opzione 2: progettare siti** Facendo clic su **siti di progettazione** nella pagina di benvenuto, vengono ignorate le domande relative alle interviste presentate nella sezione **Introduzione** . Le informazioni che sarebbero state raccolte rispondendo alle domande sull'intervista nella sezione **Introduzione** sono impostate su valori predefiniti con questa opzione. Facendo clic su **siti di progettazione**, il progettista esperto può ignorare l'intervista iniziale e modificare i valori predefiniti, se necessario, nella pagina iniziale dei **siti centrali** . Per completare questa opzione, saltare i passaggi 3-5 e iniziare dal passaggio 6.
 
    - **Opzione 3: visualizzare la topologia salvata** Se è già stata completata e salvata una topologia con l'uso precedente dello strumento di pianificazione, è possibile ignorare la maggior parte di questi passaggi e iniziare aprendo e visualizzando la topologia. È anche possibile apportare modifiche e aggiornamenti alla topologia, salvarla e quindi esportarla in Microsoft Excel o Microsoft Visio. Per completare questa opzione, saltare i passaggi 3-12 e iniziare dal passaggio 13.
 
-3. Fare **** clic su inizia per iniziare a progettare la topologia di Skype for Business Server 2015.
+3. Fare **clic su inizia per** iniziare a progettare la topologia di Skype for Business Server 2015.
 
 4. Rispondere a ogni sezione selezionando i criteri appropriati per la struttura e quindi fare clic su **Avanti** per passare alla pagina successiva della procedura guidata. Fare clic su **indietro** per apportare modifiche alle pagine precedenti.
 

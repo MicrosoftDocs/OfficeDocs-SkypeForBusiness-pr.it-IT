@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 5483afd5-d8af-4825-ae95-a82dbe941dbf
 description: Active Directory Domain Services funziona come servizio directory per le reti Windows Server 2003, Windows Server 2008, Windows Server 2012 e Windows Server 2012 R2. Servizi di dominio Active Directory funge anche da fondamento in cui è stata creata l'infrastruttura di sicurezza di Skype for Business Server. Lo scopo di questa sezione è descrivere in che modo Skype for Business Server usa i servizi di dominio Active Directory per creare un ambiente affidabile per la messaggistica istantanea, le conferenze Web, i contenuti multimediali e la voce. Per informazioni dettagliate sulla preparazione dell'ambiente per i servizi di dominio Active Directory, vedere Installare Skype for Business Server nella documentazione relativa alla distribuzione. Per informazioni dettagliate sul ruolo dei servizi di dominio Active Directory nelle reti Windows Server, vedere la documentazione relativa alla versione del sistema operativo in uso.
-ms.openlocfilehash: 4458d49bf2f57284ac29c68bb40f3979761d5c50
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ec3a09e2203b6f862d87403818b43ab6daae33ed
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194901"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815714"
 ---
 # <a name="active-directory-domain-services-for-skype-for-business-server"></a>Servizi di dominio Active Directory per Skype for Business Server
  
@@ -52,7 +54,7 @@ Durante la preparazione della foresta, Skype for Business Server crea diversi gr
     
 - **Gruppi di infrastrutture**. Questi gruppi conferiscono l'autorizzazione per accedere ad aree specifiche dell'infrastruttura di Skype for Business Server. Funzionano come componenti di gruppi amministrativi e non devono essere modificati o aggiunti direttamente agli utenti. Durante la preparazione della foresta, i gruppi di servizi e di amministrazione specifici vengono aggiunti ai gruppi di infrastruttura appropriati.
     
-Per informazioni dettagliate sui gruppi universali specifici creati durante la preparazione di annunci per Skype for Business Server, nonché i gruppi di servizi e di amministrazione aggiunti ai gruppi di infrastrutture, vedere [modifiche apportate dalla preparazione della foresta in Skype for business Server](../../schema-reference/active-directory-schema-extensions-classes-and-attributes/changes-made-by-forest-preparation.md) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate sui gruppi universali specifici creati durante la preparazione di annunci per Skype for Business Server, nonché i gruppi di servizi e di amministrazione aggiunti ai gruppi di infrastrutture, vedere [modifiche apportate dalla preparazione della foresta in Skype for Business Server](../../schema-reference/active-directory-schema-extensions-classes-and-attributes/changes-made-by-forest-preparation.md) nella documentazione relativa alla distribuzione.
   
 > [!NOTE]
 > Skype for Business Server supporta i gruppi universali in Windows Server 2012, nonché i sistemi operativi Windows Server 2003 per i controller di dominio. I membri dei gruppi universali possono includere altri gruppi e account da qualsiasi dominio nell'albero di dominio o nella foresta e possono essere assegnate autorizzazioni in qualsiasi dominio nell'albero o nella foresta del dominio. Il supporto del gruppo universale, combinato con la delega dell'amministratore, semplifica la gestione di una distribuzione di Skype for Business Server. Ad esempio, non è necessario aggiungere un dominio a un altro per consentire a un amministratore di gestire entrambe le proprie esigenze. 
@@ -67,7 +69,7 @@ La preparazione della foresta crea sia gli assi privati che quelli pubblici e, a
   
 Il passaggio preparazione del dominio aggiunge le voci di controllo di accesso (ACE) necessarie ai gruppi universali che assegnano le autorizzazioni per ospitare e gestire gli utenti all'interno del dominio. La preparazione del dominio crea ACE nella radice del dominio e tre contenitori predefiniti: User, computer e Domain controller.
   
-Per informazioni dettagliate sulle ACE pubbliche create e aggiunte dalla preparazione della foresta e dalla preparazione del dominio, vedere [modifiche apportate dalla preparazione della foresta in Skype for Business Server](../../schema-reference/active-directory-schema-extensions-classes-and-attributes/changes-made-by-forest-preparation.md) e [modifiche apportate dalla preparazione del dominio in Skype for Business Server](../../schema-reference/active-directory-schema-extensions-classes-and-attributes/changes-made-by-domain-preparation.md) nella pagina Documentazione di distribuzione.
+Per informazioni dettagliate sulle ACE pubbliche create e aggiunte dalla preparazione della foresta e dalla preparazione del dominio, vedere [modifiche apportate dalla preparazione della foresta in Skype for Business Server](../../schema-reference/active-directory-schema-extensions-classes-and-attributes/changes-made-by-forest-preparation.md) e [modifiche apportate dalla preparazione del dominio in Skype for Business Server](../../schema-reference/active-directory-schema-extensions-classes-and-attributes/changes-made-by-domain-preparation.md) nella documentazione relativa alla distribuzione.
   
 Le organizzazioni spesso bloccano i servizi di dominio Active Directory (AD DS) per ridurre i rischi per la sicurezza. Tuttavia, un ambiente Active Directory bloccato può limitare le autorizzazioni richieste da Skype for Business Server. Questa operazione può includere la rimozione di Ace da contenitori e unità organizzative e la disabilitazione dell'ereditarietà delle autorizzazioni per gli oggetti utente, contatto, InetOrgPerson o computer. In un ambiente Active Directory bloccato è necessario impostare manualmente le autorizzazioni sui contenitori e le UO che le richiedono.
   

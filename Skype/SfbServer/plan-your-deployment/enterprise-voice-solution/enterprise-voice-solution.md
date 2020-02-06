@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f9c6fd1d-c379-47d1-8447-19274ace9951
 description: 'Riepilogo: informazioni sulle opzioni per la pianificazione di una soluzione vocale e di comunicazione unificata in Skype for Business Server.'
-ms.openlocfilehash: ec2e4710f238529b448a0388a3347e40611ee7d4
-ms.sourcegitcommit: 9751f34318119991b1bd32b384b8e1479c83cb0e
+ms.openlocfilehash: ddf133c1efa5876437bce751cbb5020906153909
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "36196048"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802916"
 ---
 # <a name="plan-your-enterprise-voice-solution-in-skype-for-business-server"></a>Pianificare la soluzione VoIP aziendale in Skype for Business Server
  
@@ -27,7 +29,7 @@ ms.locfileid: "36196048"
   
 Skype for Business Server offre due opzioni vocali aziendali locali: VoIP aziendale e chiamata tramite lavoro, che consente di integrare il sistema telefonico della propria organizzazione con la distribuzione di Skype for Business Server, per creare una vera e propria comunicazione unificata soluzione. Entrambe le opzioni consentono agli utenti di usare il client Skype for business per avviare chiamate vocali con altri utenti, sia all'interno che all'esterno dell'organizzazione.
   
-Puoi anche sfruttare i servizi cloud PBX Microsoft, inclusi i servizi PBX e le chiamate PSTN, collegando l'infrastruttura di telefonia locale ai servizi forniti da Skype for business online. Per altre informazioni, vedere [soluzioni](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)per la telefonia Microsoft.
+Puoi anche sfruttare i servizi cloud PBX Microsoft, inclusi i servizi PBX e le chiamate PSTN, collegando l'infrastruttura di telefonia locale ai servizi forniti da Skype for business online. Per altre informazioni, vedere [soluzioni per la telefonia Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
 È anche possibile usare le funzioni VoIP aziendale e chiamata tramite il lavoro insieme.
   

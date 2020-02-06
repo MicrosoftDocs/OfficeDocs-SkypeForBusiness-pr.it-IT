@@ -8,16 +8,18 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 7117eff5-6860-4673-b366-afe0756c4bb2
 description: Pianificare l'implementazione della mobilità per Skype for Business Server.
-ms.openlocfilehash: 8b0ba8dd4ae07d3330a8ca722a1101c6b41a7cec
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: dd57da19a935ce1a8713cc856d553b81f4f7cd6b
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194930"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815854"
 ---
 # <a name="plan-for-mobility-for-skype-for-business-server"></a>Pianificare la mobilità per Skype for Business Server
  
@@ -121,7 +123,7 @@ Per la pianificazione della topologia sono supportate le applicazioni Skype for 
     
 Dovresti essere in grado di usare questa funzionalità con Skype for Business Server Edge Servers o Lync Server 2013 Edge Servers.
   
-Il servizio di mobilità è supportato nei server front-end quando è collocato con il ruolo di Mediation Server, con due interfacce di rete, ma è necessario eseguire le operazioni appropriate per configurare tali interfacce. Sarà necessario assegnare indirizzi IP all'interfaccia specifica che comunicherà come Mediation Server e l'interfaccia IP di rete che comunicherà come server front-end. Puoi eseguire questa operazione in Generatore di topologia selezionando l'indirizzo IP corretto per ogni servizio, invece di usare la selezione predefinita di **tutti gli indirizzi IP** configurati.
+Il servizio di mobilità è supportato nei server front-end quando è collocato con il ruolo di Mediation Server, con due interfacce di rete, ma è necessario eseguire le operazioni appropriate per configurare tali interfacce. Sarà necessario assegnare indirizzi IP all'interfaccia specifica che comunicherà come Mediation Server e l'interfaccia IP di rete che comunicherà come server front-end. Puoi eseguire questa operazione in Generatore di topologia selezionando l'indirizzo IP corretto per ogni servizio, invece di usare la selezione predefinita di **tutti gli indirizzi IP configurati** .
   
 ## <a name="technical-requirements"></a>Requisiti tecnici
 <a name="TechRequirements"> </a>
@@ -187,7 +189,7 @@ La maggior parte di questi documenti è stata trattata in un'altra documentazion
 
 Se si usa l'individuazione automatica per i client di Skype for business per dispositivi mobili, è necessario modificare gli elenchi SAN (nome alternativo oggetto) nei certificati per supportare connessioni sicure dai client mobili. Se sono già presenti certificati sul posto, è necessario richiedere e assegnare nuovi certificati con le voci SAN descritte qui. Questa operazione deve essere eseguita per ogni server front-end e Director (se nell'ambiente) che esegue il servizio di individuazione automatica. Consigliamo anche di modificare gli elenchi SAN nei certificati di proxy inverso, aggiungendo le voci SAN per ogni dominio SIP dell'organizzazione.
   
-Questo dovrebbe essere un processo semplice se si richiede che i nuovi CERT vengano disattivati da una CA interna (autorità di certificazione), ma i certificati pubblici sono più complessi e potenzialmente molto più costosi da ripetere, per non parlare che potrebbe essere costoso aggiungere molto SIP domini a un nuovo CERT pubblico. In questa situazione esiste un approccio supportato, ma **non consigliato**. Puoi configurare il proxy inverso per eseguire la richiesta di servizio di individuazione automatica tramite la porta 80, che utilizzerà HTTP, invece della porta 443, che è HTTPS (e 443 è la configurazione predefinita). La richiesta in arrivo verrà reindirizzata alla porta 8080 nel pool o nel Director di front-end. In questo modo, non dovrai apportare modifiche al certificato, perché il traffico non usa HTTPS per le richieste. Ma ancora una volta, non è consigliabile, anche se funzionerà per l'utente.
+Questo dovrebbe essere un processo semplice se si richiede che i nuovi CERT vengano disattivati da una CA interna (autorità di certificazione), ma i certificati pubblici sono più complessi e potenzialmente molto più costosi da ripetere, per non parlare che potrebbero essere costosi per aggiungere molti domini SIP a un nuovo CERT pubblico. In questa situazione esiste un approccio supportato, ma **non consigliato**. Puoi configurare il proxy inverso per eseguire la richiesta di servizio di individuazione automatica tramite la porta 80, che utilizzerà HTTP, invece della porta 443, che è HTTPS (e 443 è la configurazione predefinita). La richiesta in arrivo verrà reindirizzata alla porta 8080 nel pool o nel Director di front-end. In questo modo, non dovrai apportare modifiche al certificato, perché il traffico non usa HTTPS per le richieste. Ma ancora una volta, non è consigliabile, anche se funzionerà per l'utente.
   
 ### <a name="windows-and-iis-requirements"></a>Requisiti di Windows e IIS
 
@@ -197,7 +199,7 @@ Dovresti avere una versione di Windows Server supportata per l'ambiente di Skype
 
 Se si usa una topologia per Skype for Business Server che include un HLB per il pool Front-End (che sarebbe qualsiasi topologia che include più di un server front-end), è necessario configurare l'IPs virtuale (VIP) dei servizi Web esterni per il traffico di servizi Web per l'origine. L'affinità di origine consente di garantire che più connessioni da un singolo client vengano inviate allo stesso server per mantenere lo stato della sessione.
   
-Se si prevede di supportare i client per dispositivi mobili Skype for business solo tramite la rete Wi-Fi interna, è consigliabile configurare i VIP dei servizi Web interni per l'origine, come descritto per i VIP dei servizi Web esterni. In questa situazione dovresti usare l'affinità di Source_addr (o TCP) per i VIP dei servizi Web interni su HLB.
+Se si prevede di supportare i client per dispositivi mobili Skype for business solo tramite la rete Wi-Fi interna, è consigliabile configurare i VIP dei servizi Web interni per l'origine, come descritto per i VIP dei servizi Web esterni. In questa situazione dovresti usare l'affinità source_addr (o TCP) per i VIP dei servizi Web interni di HLB.
   
 Per informazioni dettagliate su tutto questo, vedere i [requisiti di bilanciamento del carico per la documentazione di Skype for business](network-requirements/load-balancing.md) .
   
@@ -207,7 +209,7 @@ Per supportare l'individuazione automatica per i client per dispositivi mobili S
   
 - Se si decide di aggiornare gli elenchi SAN nei certificati di proxy inverso e si usa HTTPS per la richiesta di servizio di individuazione automatica iniziale, è necessario aggiornare la regola di pubblicazione Web per lyncdiscover. \<SipDomain\>. Questa operazione viene in genere combinata con il RUL di pubblicazione per l'URL dei servizi Web esterni nel pool Front-end.
     
-- Se si è deciso di usare HTTP per la richiesta di servizio di individuazione automatica per evitare di dover aggiornare l'elenco SAN per i certificati del proxy inverso (che non è consigliabile), è necessario creare una nuova regola di pubblicazione Web per la porta HTTP/TCP 80, se non è presente uno già. Se tale regola esiste, aggiornarla per includere un lyncdiscover. \<voce\> SipDomain.
+- Se si è deciso di usare HTTP per la richiesta di servizio di individuazione automatica per evitare di dover aggiornare l'elenco SAN per i certificati del proxy inverso, che non è consigliabile, è necessario creare una nuova regola di pubblicazione Web per la porta HTTP/TCP 80, se non è già presente. Se tale regola esiste, aggiornarla per includere un lyncdiscover. \<voce\> SipDomain.
     
 ## <a name="defining-your-mobility-needs"></a>Definizione delle esigenze di mobilità
 <a name="MobilityNeeds"> </a>

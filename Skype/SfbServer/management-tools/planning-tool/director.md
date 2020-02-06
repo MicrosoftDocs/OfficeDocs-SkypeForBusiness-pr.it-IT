@@ -8,18 +8,17 @@ ms.date: 4/8/2016
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- ms.lync.plan.Director
-- ms.lync.plan.Director
+- NOCSH
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 02795b46-21ec-4a85-9890-959c91d97df3
 description: Un amministratore è un server che esegue Skype for Business Server 2015 Communications software che può autenticare le richieste degli utenti, ma non ospita gli account utente.
-ms.openlocfilehash: 48b691262dc638faf6f0aa9910a5adac3c1f0e46
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 7ce22dadf636d4e7b5e609fc5b3fea9a1891fadd
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41684249"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816475"
 ---
 # <a name="director-planning-tool"></a>Director (strumento di pianificazione)
  

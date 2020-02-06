@@ -8,15 +8,17 @@ ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 32e1c1d6-80f4-4624-bf4e-b4c77d3982fa
 description: tblPrincipalType contiene i tipi Principal per categorizzare il contenuto della tabella tblPrincipal.
-ms.openlocfilehash: 473b718a8a863432a71ff04d709bef4c0ac1327f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 1aacfdf34689bebc2c7e012c926731ae1f4a8349
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194659"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41812934"
 ---
 # <a name="tblprincipaltype"></a>tblPrincipalType
  

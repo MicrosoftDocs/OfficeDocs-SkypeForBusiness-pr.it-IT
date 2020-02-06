@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 10add1ea-d693-406c-9dc9-853df0ab05da
 description: 'Riepilogo: leggere questo argomento per informazioni sulle funzionalità e le funzionalità dei servizi di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 9b46271e4381e2d2e11f00e3d936660626fbe5cf
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f91c815cf0b5d0b69ad5815157cba7a56bb28307
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187847"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816004"
 ---
 # <a name="plan-for-conferencing-in-skype-for-business-server"></a>Pianificare i servizi di conferenza in Skype for Business Server
  
@@ -29,7 +31,7 @@ Questo argomento include le sezioni seguenti:
     
 - Componenti di conferenza
     
-- Criteri di conferenza
+- Criteri conferenza
     
 - Supporto per le riunioni di grandi dimensioni
     
@@ -83,13 +85,13 @@ Le conferenze audio e video consentono l'audio e il video nella riunione. L'audi
     
 - **Video in evidenza.** I relatori possono configurare la riunione in modo che solo il video di un partecipante selezionato che è un'origine video sia visibile dagli altri partecipanti alla conferenza. Questa modalità si applica anche ai video acquisiti e forniti dai dispositivi RoundTable per il video panoramico.
     
-### <a name="dial-in-conferencing"></a>Servizi di conferenza telefonica con accesso esterno
+### <a name="dial-in-conferencing"></a>Chiamate in conferenza
 
 Le conferenze telefoniche con accesso esterno consentono ai partecipanti alla riunione di partecipare alla parte audio di una riunione chiamando la riunione da un telefono. Le conferenze telefoniche con accesso esterno sono un sottoinsieme di servizi di audioconferenza e richiedono una configurazione aggiuntiva. Per altre informazioni sui servizi di conferenza telefonica con accesso esterno, vedere Pianificare i servizi di conferenza telefonica con accesso esterno [in Skype for Business Server](dial-in-conferencing.md) e [configurare i servizi di conferenza telefonica con accesso esterno in Skype for Business Server](../../deploy/deploy-conferencing/dial-in-conferencing.md). 
   
 ### <a name="instant-messaging-conferencing"></a>Conferenza di messaggistica istantanea
 
-I servizi di conferenza di messaggistica istantanea (IM) consentono a più di due parti di comunicare in una singola sessione di messaggistica istantanea. Per informazioni dettagliate sulle conferenze istantanee, vedere [pianificare la messaggistica istantanea e la presenza in Skype for Business Server](../../plan-your-deployment/instant-messaging-and-presence.md).
+I servizi di conferenza di messaggistica istantanea (IM) consentono a più di due parti di comunicare in una singola sessione di messaggistica istantanea. Per informazioni dettagliate sulle conferenze [istantanee, vedere Pianificare la messaggistica istantanea e la presenza in Skype for Business Server](../../plan-your-deployment/instant-messaging-and-presence.md).
   
 ## <a name="conferencing-components"></a>Componenti di conferenza
 
@@ -120,7 +122,7 @@ I componenti che supportano le funzionalità di conferenza includono i seguenti:
     
 - **Server di Office Web Apps.** Per usare le funzionalità di conferenza Web, gli amministratori devono installare Office Web Apps Server e devono configurare Skype for Business Server per comunicare con Office Web Apps Server.
     
-## <a name="conferencing-policies"></a>Criteri di conferenza
+## <a name="conferencing-policies"></a>Criteri conferenza
 
 Per applicare i criteri dell'organizzazione e controllare l'utilizzo della larghezza di banda, è possibile impostare i criteri per i tipi di riunioni che gli utenti possono organizzare. Puoi definire una vasta gamma di criteri di conferenza e assegnarli a singoli utenti e gruppi di utenti. È anche possibile impostare i criteri che governano le conversazioni peer-to-peer. Per informazioni dettagliate sull'impostazione dei criteri di conferenza, vedere [gestire i criteri di conferenza in Skype for Business Server](../../manage/conferencing/conferencing-policies.md). Per informazioni dettagliate sulla gestione della larghezza di banda, vedere [pianificare il controllo dell'ammissione alle chiamate in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md).
   

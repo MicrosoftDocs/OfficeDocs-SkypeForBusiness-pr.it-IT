@@ -8,15 +8,17 @@ ms.date: 2/1/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 783d2508-e31f-4b54-be0c-63aa5ec21c04
 description: Ogni record rappresenta una sessione peer-to-peer, che potrebbe essere una chiamata telefonica VoIP-VoIP, una sessione di messaggistica istantanea a due parti o un altro tipo di sessione. È possibile eseguire un join di tabella con la tabella media per trovare i dettagli di ogni elemento multimediale coinvolto in questa sessione.
-ms.openlocfilehash: d6c0d68cf5b8efd83cc764e74a56621cdd591ac1
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 1a211598e7771c5637af191f19ad2926e3cc803e
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194743"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41814904"
 ---
 # <a name="sessiondetails-table"></a>Tabella SessionDetails
  

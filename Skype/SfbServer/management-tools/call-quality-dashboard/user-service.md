@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: abd5c828-42dd-4f48-bf87-29993193cb3a
 description: "Riepilogo: informazioni sul servizio utente, che fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 6e0a6a58be98469458a8c8e7063402ff6477c35f
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: 439df99c1c9d66547e681fdea90b33c6295344db
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36195888"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816655"
 ---
 # <a name="user-service-for-cqd"></a>Servizio utente per Call Quality dashboard
  
@@ -49,7 +51,7 @@ Le operazioni REST sono incluse nella tabella seguente.
   
 |**Operazione**|**Descrizione**|
 |:-----|:-----|
-|[Ottenere gli utenti](get-users.md) <br/> |Restituisce un elenco di utenti nel repository.  <br/> |
-|[Ottenere l'utente](get-user.md) <br/> |Restituisce un record utente.  <br/> |
+|[Ottieni utenti](get-users.md) <br/> |Restituisce un elenco di utenti nel repository.  <br/> |
+|[Ottieni utente](get-user.md) <br/> |Restituisce un record utente.  <br/> |
    
 

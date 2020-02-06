@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 5ed45a22-ddf0-419f-84da-895a73df855f
 description: Leggere questo argomento per informazioni su come pianificare più numeri di emergenza in Skype for Business Server.
-ms.openlocfilehash: 43214e42e4fd998aef673ad8d0fbd57ec2d3b498
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 6f10b5c22a26a42f33f2a3b453dd2e244c9f32ee
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187622"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815964"
 ---
 # <a name="plan-for-multiple-emergency-numbers-in-skype-for-business-server"></a>Pianificare più numeri di emergenza in Skype for Business Server
  
@@ -57,11 +59,11 @@ Quando si pianificano più numeri di emergenza, tieni presente quanto segue:
   
 Prima di configurare più numeri di emergenza, tieni presente quanto segue:
   
-- Per configurare più numeri di emergenza, è necessario usare il cmdlet New-CsEmergencyNumber ed è necessario definire i criteri di posizione che supportano più di un numero di emergenza specificando il parametro EmergencyNumbers con il [nuovo CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps) e Cmdlet [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps) .
+- Per configurare più numeri di emergenza, è necessario utilizzare il cmdlet New-CsEmergencyNumber ed è necessario definire i criteri di posizione che supportano più di un numero di emergenza specificando il parametro EmergencyNumbers con i cmdlet [New-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps) e [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps) .
     
 - Se i numeri esistenti sono definiti usando il cmdlet Set-CsLocationPolicy o New-CsLocationPolicy con i parametri EmergencyDialString e EmergencyDialMask, i valori specificati con il parametro EmergencyNumbers avranno la precedenza sui vecchi valori. I valori dei parametri EmergencyDialString e EmergencyDialMask verranno ignorati.
     
-- Se i numeri esistenti sono definiti usando il cmdlet Set-CsLocationPolicy o New-CsLocationPolicy con i parametri EmergencyDialString e EmergencyDialMask *e non vengono configurati nuovi numeri di emergenza* , i numeri esistenti continueranno a essere usato.
+- Se i numeri esistenti sono definiti usando il cmdlet Set-CsLocationPolicy o New-CsLocationPolicy con i parametri EmergencyDialString e EmergencyDialMask *e non vengono configurati nuovi numeri di emergenza* , i numeri esistenti continueranno a essere usati.
     
 - Per il funzionamento della funzionalità numeri di emergenza multipli, le versioni client in uso devono essere in grado di supportare la nuova funzionalità. I client meno recenti continueranno a usare i vecchi valori specificati dai cmdlet Set-CsLocationPolicy o New-CsLocationPolicy con i parametri EmergencyDialString e EmergencyDialMask. 
     

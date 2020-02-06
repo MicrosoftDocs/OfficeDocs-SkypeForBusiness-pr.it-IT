@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ec62b70f-885e-4272-b9d2-a574ea434b64
 description: 'Riepilogo: informazioni su come usare il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: 09eb8bdae508ff9a5fe39fec67b0f440859efad0
-ms.sourcegitcommit: a2deac5e8308fc58aba34060006bffad2b19abed
+ms.openlocfilehash: 61b20062925f59474d387a022a92663e0ffcd6ba
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36774706"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816665"
 ---
 # <a name="use-call-quality-dashboard-for-skype-for-business-server"></a>Usare il dashboard qualità chiamata per Skype for Business Server
 
@@ -34,7 +36,7 @@ Call Quality dashboard è un portale Web per creare e organizzare rapidamente re
 
 Inoltre, Call Quality dashboard espone le API Web che offrono agli utenti l'accesso a livello di codice ai dati del cubo per l'uso nei dashboard personalizzati.
 
-### <a name="feature-overview"></a>Panoramica delle caratteristiche
+### <a name="feature-overview"></a>Panoramica delle funzionalità
 
 Quando si visita il dashboard qualità chiamata, viene visualizzata la schermata seguente:
 
@@ -116,7 +118,7 @@ I dati usati per queste tabelle sono definiti come segue:
 |StateProvinceCode |varchar (3) |Sì |Abbreviazione di tre lettere per lo stato o la provincia in cui si trova l'edificio. |
 |InsideCorp |po' |Sì |Bit indica se l'edificio fa parte della rete aziendale. |
 |BuildingOfficeType |nvarchar (150) |Sì |Descrizione del tipo di Office Building. |
-|Area geografica |varchar (25) |Sì |Area geografica in cui si trova l'edificio. |
+|Area |varchar (25) |Sì |Area geografica in cui si trova l'edificio. |
 |||||
 
 **CqdNetwork**

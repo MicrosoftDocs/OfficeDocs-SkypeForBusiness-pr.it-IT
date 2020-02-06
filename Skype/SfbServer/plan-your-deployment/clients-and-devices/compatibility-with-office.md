@@ -8,18 +8,20 @@ ms.date: 2/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: ac3a1046-b438-4e21-9d4f-3b0057dd685d
 description: Informazioni sui modi in cui è possibile accedere alle funzionalità di Skype for business da Outlook e altre applicazioni di Microsoft Office.
-ms.openlocfilehash: c24c6b08e21db357d52b1cc130e53f23b6123ff6
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: e91174850cb82d325eb9a3f75577d3aaeb3b90f6
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187898"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41803686"
 ---
 # <a name="skype-for-business-compatibility-with-office-apps"></a>Compatibilità con Skype for business con le app di Office
  
@@ -40,10 +42,10 @@ La tabella seguente descrive le caratteristiche di Skype for business supportate
 |Configurare l'opzione riunione per disattivare l'audio e il video dei partecipanti per impostazione predefinita    |No    |Sì    |No    |
 |Archivio contatti unificato per la gestione degli elenchi di contatti in Office e Skype for business    |No    |Sì (richiede Exchange 2013 o versione successiva)    |Sì    |
 |Immagini del profilo ad alta risoluzione    |No    |Sì (richiede Exchange 2013 o versione successiva)    |Sì    |
-|Stato presenza nei campi Microsoft Outlook da, a e CC    |Sì    |Supporto per più paesi    |Supporto per più paesi    |
+|Stato presenza nei campi Microsoft Outlook da, a e CC    |Sì    |Sì    |Supporto per più paesi    |
 |Rispondere con un messaggio istantaneo o una chiamata dal menu disponibilità    |Sì (dalla scheda contatto)    |Sì (dalla scheda contatto)    |Sì (dalla scheda contatto)    |
 |Stato presenza in una convocazione di riunione nella scheda Assistente pianificazione    |Sì    |Sì    |No    |
-|Rispondere con messaggi ISTANTANEi o chiamate dalla barra degli strumenti o dalla barra multifunzione in un messaggio di posta elettronica ricevuto    |Sì    |Supporto per più paesi    |Supporto per più paesi    |
+|Rispondere con messaggi ISTANTANEi o chiamate dalla barra degli strumenti o dalla barra multifunzione in un messaggio di posta elettronica ricevuto    |Sì    |Sì    |Supporto per più paesi    |
 |**Altre app di Office**   ||||
 |Note condivise di OneNote    |No    |Sì    |No    |
 |Configurazione integrata nel programma di installazione di Office    |No    |Sì    |No    |

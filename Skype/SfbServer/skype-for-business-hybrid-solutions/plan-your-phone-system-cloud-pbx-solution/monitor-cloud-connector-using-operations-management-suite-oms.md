@@ -1,5 +1,5 @@
 ---
-title: Monitorare il connettore cloud tramite le Operations Management Suite (OMS)
+title: Monitorare Cloud Connector mediante Operations Management Suite (OMS)
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -8,17 +8,19 @@ ms.date: 1/31/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: edf4a04c-d4c9-4c05-aacc-9e084618bb55
 description: Leggere questo argomento per informazioni su come monitorare il Cloud Connector versione 2,1 e successiva usando Microsoft Operations Management Suite (OMS).
-ms.openlocfilehash: 6258ad9386b895f97a6f6dc0a1b40ce1076568aa
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 1dcac3519624cef898622f915b08b24363453b84
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36190727"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41799626"
 ---
-# <a name="monitor-cloud-connector-using-operations-management-suite-oms"></a>Monitorare il connettore cloud tramite le Operations Management Suite (OMS)
+# <a name="monitor-cloud-connector-using-operations-management-suite-oms"></a>Monitorare Cloud Connector mediante Operations Management Suite (OMS)
 
 Leggere questo argomento per informazioni su come monitorare il Cloud Connector versione 2,1 e successiva usando Microsoft Operations Management Suite (OMS).
 
@@ -114,15 +116,15 @@ Nel portale OMS è necessario specificare le informazioni sui registri eventi e 
 
      Totale chiamate attive:
 
-   - LS: MediationServer-chiamate in ingresso (_ Total\- ) Current 
+   - LS: MediationServer-chiamate in ingresso (_Total)\- Current 
 
-   - LS: MediationServer-chiamate in uscita (_ Total\- ) Current 
+   - LS: MediationServer-chiamate in uscita (_Total)\- Current 
 
      Totale chiamate di bypass multimediali attivi:
 
-   - LS: MediationServer-chiamate in ingresso (_ Total\- ) chiamate di bypass multimediali attive 
+   - LS: MediationServer-chiamata in ingresso (_Total)\- chiamate di bypass multimediali attive 
 
-   - LS: MediationServer-chiamate in uscita (_ Total\- ) chiamate di bypass multimediali attive 
+   - LS: MediationServer-chiamate in uscita (_Total)\- chiamate di bypass multimediali attive 
 
      > [!NOTE]
      > È necessario immettere manualmente i contatori delle prestazioni nella casella di testo. Non vengono visualizzate come opzioni nell'elenco a discesa. 
@@ -233,13 +235,13 @@ Nella tabella seguente sono elencati i problemi di rete consigliati da Microsoft
 
 Di seguito sono elencati i contatori delle capacità delle chiamate da monitorare. Questi numeri devono essere inferiori a 500 per Cloud Connector Standard Edition; minore di 50 per il Cloud Connector Minimum Edition.
 
-- LS: MediationServer-chiamate in ingresso (_ Total\- ) Current 
+- LS: MediationServer-chiamate in ingresso (_Total)\- Current 
 
-- LS: MediationServer-chiamate in uscita (_ Total\- ) Current 
+- LS: MediationServer-chiamate in uscita (_Total)\- Current 
 
-- LS: MediationServer-chiamate in ingresso (_ Total\- ) chiamate di bypass multimediali attive
+- LS: MediationServer-chiamata in ingresso (_Total)\- chiamate di bypass multimediali attive
 
-- LS: MediationServer-chiamate in uscita (_ Total\- ) chiamate di bypass multimediali attive
+- LS: MediationServer-chiamate in uscita (_Total)\- chiamate di bypass multimediali attive
 
 ## <a name="see-also"></a>Vedere anche
 

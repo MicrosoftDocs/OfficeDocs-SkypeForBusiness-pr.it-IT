@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 7cc22b87-18d9-45e6-8402-015abd20f2e5
 description: Questo argomento descrive le linee guida per la pianificazione della distribuzione di Mediation Server.
-ms.openlocfilehash: fdfc18871e4aa9ea30d7a02063e7d1a0bc05b6ca
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 806886b7c7c5e8ae367a6e104f7fd9127f25c099
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187913"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816055"
 ---
 # <a name="deployment-guidelines-for-mediation-server-in-skype-for-business-server"></a>Linee guida per la distribuzione di Mediation Server in Skype for Business Server
  
@@ -32,7 +34,7 @@ Mediation Server è, per impostazione predefinita, collocato nel server Standard
     
 - La percentuale di chiamate che sono chiamate di cui il media Ignora il Mediation Server.
     
-Durante la pianificazione, tenere presente i requisiti per l'elaborazione multimediale per le chiamate PSTN e le conferenze A/V che non supportano il bypass multimediale, nonché l'elaborazione necessaria per gestire le interazioni di segnalazione per il numero di chiamate in orario occupato che devono essere supportati. Se non si dispone di una CPU sufficiente, è necessario distribuire un pool autonomo di Mediation Server. Inoltre, i gateway PSTN, IP-PBX e SBCs dovranno essere divisi in subset controllati dai server di mediazione collocati in un pool e i Mediation Server autonomi in uno o più pool autonomi.
+Durante la pianificazione, tenere presente i requisiti per l'elaborazione multimediale per le chiamate PSTN e le conferenze A/V che non supportano il bypass multimediale, nonché l'elaborazione necessaria per gestire le interazioni di segnalazione per il numero di chiamate in orario occupato che è necessario supportare. Se non si dispone di una CPU sufficiente, è necessario distribuire un pool autonomo di Mediation Server. Inoltre, i gateway PSTN, IP-PBX e SBCs dovranno essere divisi in subset controllati dai server di mediazione collocati in un pool e i Mediation Server autonomi in uno o più pool autonomi.
   
 Se sono stati distribuiti gateway PSTN, IP-PBX o Session Border Controller (SBCs) che non hanno la possibilità di interagire con un pool di server di mediazione, è necessario che siano associati a un pool autonomo costituito da un singolo Mediation Server. Alcune delle operazioni che i gateway PSTN, i PBX IP o SBCs devono includere:
   

@@ -8,15 +8,17 @@ ms.date: 2/1/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: e8ab963b-fe1d-45b3-b9bd-66a5f44c1629
 description: Ogni record contiene l'evento client per un endpoint in una videochiamata. In genere, una chiamata ha due record, uno per il chiamante e uno per il chiamato.
-ms.openlocfilehash: b8e93206ea30622baa82adcec5ee9a80235521c5
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 9acd7277fd6bc32074487be1db9874ef6a5c91aa
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194559"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41804994"
 ---
 # <a name="videoclientevent-table"></a>Tabella VideoClientEvent
  

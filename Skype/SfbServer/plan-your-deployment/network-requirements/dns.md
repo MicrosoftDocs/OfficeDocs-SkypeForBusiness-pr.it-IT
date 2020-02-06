@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c50e38d2-b1e4-4ebd-8dc3-85d4ae7a76ee
 description: 'Riepilogo: rivedere le considerazioni DNS in questo argomento prima di implementare Skype for Business Server.'
-ms.openlocfilehash: 5e6bb5866cfc52dc02a1fc48c19b1f43af6077f7
-ms.sourcegitcommit: 208321bb45f7fb228757b9958a13f7e0bca91687
+ms.openlocfilehash: 52984c0813fb96c78ff5a1581c0722a691501ccb
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "36195892"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802126"
 ---
 # <a name="dns-requirements-for-skype-for-business-server"></a>Requisiti DNS per Skype for Business Server
 
@@ -31,7 +33,7 @@ Un server DNS (Domain Name Service) mappa i nomi host (come www<span> </span> . 
 
 Anche se all'inizio può sembrare un po' scoraggiante, il sollevamento di carichi pesanti per la pianificazione può essere eseguito usando lo [strumento di pianificazione di Skype for Business Server 2015](https://www.microsoft.com/en-us/download/details.aspx?id=50357). Dopo aver eseguito le domande della procedura guidata sulle caratteristiche che si prevede di usare, per ogni sito che si definisce è possibile visualizzare il report DNS nel report amministratore Edge e usare le informazioni elencate per creare i record DNS. È anche possibile apportare modifiche a molti dei nomi e degli indirizzi IP usati, per informazioni dettagliate vedere [rivedere il report DNS](../../management-tools/planning-tool/review-the-administrator-reports.md#DNS_Report). Tieni presente che puoi esportare il report amministratore Edge in un foglio di calcolo di Excel e il report DNS sarà uno dei fogli di lavoro nel file. Anche se questo strumento include funzionalità [deprecate da Skype for Business Server 2019](../../../SfBServer2019/deprecated.md), può comunque essere usato per creare un piano iniziale se queste caratteristiche non sono selezionate
 
-Quando si installa una nuova implementazione come descritto in [creare record DNS per Skype for Business Server](../../deploy/install/create-dns-records.md) e si crea la topologia per Skype for Business Server, è possibile scegliere di usare le funzionalità DNS predefinite in Windows Server 2016 o un pacchetto DNS di terze parti, in modo da conservare le discussioni in questo articolo generali piuttosto che specifiche. Stiamo specificando le informazioni necessarie e il modo in cui è necessario prendere una decisione.
+Quando si installa una nuova implementazione come descritto in [creare record DNS per Skype for Business Server](../../deploy/install/create-dns-records.md) e si crea la topologia per Skype for Business Server, è possibile scegliere di usare le funzionalità DNS predefinite in Windows Server 2016 o in un pacchetto DNS di terze parti, in modo da rendere più specifiche le discussioni in questo articolo. Stiamo specificando le informazioni necessarie e il modo in cui è necessario prendere una decisione.
 
 Gli amministratori di Skype for business, Lync e Office Communications Suite esperti potranno probabilmente trovare le tabelle seguenti utili. Se la tabella è confusa con l'utente, le sezioni o gli articoli successivi consentiranno di chiarire i concetti seguenti:
 
@@ -114,7 +116,7 @@ Il diagramma seguente mostra un esempio che include sia i record DNS interni che
 > Skype for Business Server supporta l'uso di indirizzi IPv6. Per altre informazioni, Vedi [piano per IPv6 in Skype for business](ipv6.md) .
 
 > [!IMPORTANT]
-> Per altre informazioni sui nomi di dominio completi, vedere Nozioni di [base su DNS](basics.md).
+> Per altre informazioni sui nomi di dominio completi, vedere [nozioni di base su DNS](basics.md).
 
 **Split Brain DNS** 
  <a name="BK_split"> </a>
@@ -139,7 +141,7 @@ Skype for Business Server supporta l'uso di tre URL "semplici" per i servizi di 
 
     Con l'URL semplice Meet, i collegamenti alle riunioni di partecipazione sono facili da comprendere e semplici da comunicare.
 
-- **** L'accesso esterno consente di accedere alla pagina Web delle impostazioni dei servizi di conferenza telefonica con chiamata in ingresso. In questa pagina vengono visualizzati i numeri di accesso esterno per conferenze con le lingue disponibili, le informazioni sulla conferenza assegnate, ovvero per le riunioni che non devono essere pianificate, e i controlli DTMF in conferenza e supportano la gestione del numero di identificazione personale ( PIN) e informazioni di conferenza assegnate. L'URL semplice per la chiamata in ingresso è incluso in tutti gli inviti alle riunioni, in modo che gli utenti che vogliono connettersi alla riunione possano accedere al numero di telefono e alle informazioni PIN necessarie. Un esempio dell'URL semplice con accesso esterno è https://<span></span>dialin. <span> </span>Contoso<span></span>. com.
+- L'accesso esterno consente di accedere alla pagina Web delle impostazioni dei servizi di conferenza telefonica con **chiamata in ingresso** . In questa pagina vengono visualizzati i numeri di accesso esterno per conferenze con le lingue disponibili, le informazioni sulla conferenza assegnate, ovvero per le riunioni che non devono essere pianificate, e i controlli DTMF in conferenza e supportano la gestione del numero di identificazione personale ( PIN) e informazioni di conferenza assegnate. L'URL semplice per la chiamata in ingresso è incluso in tutti gli inviti alle riunioni, in modo che gli utenti che vogliono connettersi alla riunione possano accedere al numero di telefono e alle informazioni PIN necessarie. Un esempio dell'URL semplice con accesso esterno è https://<span></span>dialin. <span> </span>Contoso<span></span>. com.
 
 - L' **amministratore** consente l'accesso rapido al pannello di controllo di Skype for Business Server. Da qualsiasi computer all'interno del firewall dell'organizzazione, un amministratore può aprire il pannello di controllo di Skype for Business Server digitando l'URL semplice amministratore in un browser. L'URL semplice amministratore è interno dell'organizzazione. Un esempio dell'URL semplice di amministrazione è https://<span></span>admin. <span> </span>Contoso<span></span>. com.
 

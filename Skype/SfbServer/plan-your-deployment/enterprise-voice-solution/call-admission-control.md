@@ -8,6 +8,8 @@ ms.date: 2/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6fda0195-4c89-4dea-82e8-624f03e3d062
 description: Informazioni sul controllo dell'ammissione alle chiamate, che può impedire che le chiamate avvengano se hanno una qualità media scadente, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 3942c3d50267593f393655e19d0cc80b5f5028f8
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 33aad955d0d1c592900683213a13e50433265a10
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187775"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41803236"
 ---
 # <a name="plan-for-call-admission-control-in-skype-for-business-server"></a>Pianificare il controllo dell'ammissione alle chiamate in Skype for Business Server
 
@@ -84,7 +86,7 @@ Se l'organizzazione supporta i contenuti multimediali tramite VPN, verificare ch
 
 ### <a name="call-admission-control-of-outside-users"></a>Controllo dell'ammissione delle chiamate degli utenti esterni
 
-Il controllo dell'ammissione alle chiamate non viene applicato oltre i limiti dell'organizzazione di Skype for Business Server. Non è possibile applicare CAC al traffico multimediale che attraversa Internet, che non è gestito da Skype for Business Server. I controlli CAC verranno eseguiti nella parte della chiamata che passa attraverso la rete aziendale se l'endpoint chiamato appartiene all'organizzazione e il server perimetrale è stato aggiunto alla configurazione di rete, come descritto in [controllo di ammissione di chiamata distribuzione: elenco di controllo finale per Skype for Business Server](../../deploy/deploy-enterprise-voice/final-checklist.md). Se l'endpoint chiamato non appartiene all'organizzazione, ad esempio un utente federato o PIC, non vengono eseguiti controlli dei criteri di larghezza di banda e la chiamata in uscita ignorerà le eventuali restrizioni di CAC.
+Il controllo dell'ammissione alle chiamate non viene applicato oltre i limiti dell'organizzazione di Skype for Business Server. Non è possibile applicare CAC al traffico multimediale che attraversa Internet, che non è gestito da Skype for Business Server. I controlli CAC verranno eseguiti nella parte della chiamata che passa attraverso la rete aziendale se l'endpoint chiamato appartiene all'organizzazione e l'Edge Server è stato aggiunto alla configurazione di rete, come descritto in distribuzione del controllo di [ammissione alle chiamate: elenco di verifica finale per Skype for Business Server](../../deploy/deploy-enterprise-voice/final-checklist.md). Se l'endpoint chiamato non appartiene all'organizzazione, ad esempio un utente federato o PIC, non vengono eseguiti controlli dei criteri di larghezza di banda e la chiamata in uscita ignorerà le eventuali restrizioni di CAC.
 
 ### <a name="call-admission-control-of-pstn-connections"></a>Controllo ammissione chiamata delle connessioni PSTN
 
@@ -180,7 +182,7 @@ I criteri di larghezza di banda CAC possono definire uno o tutti gli elementi se
 - Larghezza di banda massima allocata per una singola chiamata video (sessione).
 
 > [!NOTE]
-> Tutti i valori di larghezza di banda ** CAC rappresentano i limiti massimi di larghezza di banda unidirezionali.
+> Tutti i valori di larghezza di banda CAC rappresentano i limiti massimi di larghezza di banda *unidirezionali* .
 
 > [!NOTE]
 > Le caratteristiche dei criteri vocali di Skype for Business Server consentono di ignorare i controlli dei criteri di larghezza di banda per le chiamate in arrivo all'utente (non per le chiamate in uscita inserite dall'utente). Dopo la creazione della sessione, il consumo di larghezza di banda verrà contabilizzato in modo accurato. Questa impostazione deve essere usata con parsimonia. Per informazioni dettagliate, vedere [creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for business](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md) o [modificare un criterio vocale e configurare i record di utilizzo PSTN](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx) nella documentazione relativa alla distribuzione.

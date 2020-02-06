@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Usare le procedure descritte in questo articolo per abilitare o disabilitare il bypass multimediale tramite il pannello di controllo di Skype for Business Server.
-ms.openlocfilehash: acfa963e71f3c3b89d0e79648d00871b1ab44616
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d1c0a5eb409c6bb5c07c530b4799ab8a53a9fddb
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188603"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817545"
 ---
-# <a name="enabling-and-disabling-media-bypass-in-skype-for-business-server"></a>Attivazione e disattivazione del bypass multimediale in Skype for Business Server
+# <a name="enabling-and-disabling-media-bypass-in-skype-for-business-server"></a>Abilitazione e disabilitazione del bypass multimediale in Skype for Business Server
 
 Usare le procedure descritte in questo articolo per abilitare o disabilitare il bypass multimediale tramite il pannello di controllo di Skype for Business Server.
 
@@ -51,7 +53,7 @@ Le impostazioni di bypass multimediale si applicano globalmente in una distribuz
         
           - Esiste una connettività completa tra gateway e client.
     
-      - **Usare i siti e la configurazione**   dell'area se è abilitato CAC, questa opzione è selezionata per impostazione predefinita e non può essere modificata. Quando questa opzione è selezionata, i siti e le aree di configurazione della rete verranno usati per determinare quando il bypass multimediale è possibile. Se si seleziona questa opzione, è possibile scegliere di abilitare il bypass per i siti non mappati. Fare clic sulla casella di controllo **Abilita bypass per i siti non mappati** solo se si hanno uno o più siti di grandi dimensioni associati alla stessa area geografica che non hanno vincoli di larghezza di banda, ad esempio un sito centrale di grandi dimensioni, e si hanno anche alcuni siti di succursale associati alla stessa area geografica con vincoli di larghezza di banda. Quando si Abilita l'esclusione per i siti non mappati, la configurazione viene semplificata perché si specificano solo le subnet associate ai siti di succursale e non è necessario specificare tutte le subnet associate a tutti i siti. È consigliabile non selezionare la casella di controllo **Abilita esclusione per i siti non mappati** se è abilitato CAC.
+      - **Usare i siti e la configurazione**   dell'area se è abilitato CAC, questa opzione è selezionata per impostazione predefinita e non può essere modificata. Quando questa opzione è selezionata, i siti e le aree di configurazione della rete verranno usati per determinare quando il bypass multimediale è possibile. Se si seleziona questa opzione, è possibile scegliere di abilitare il bypass per i siti non mappati. Fare clic sulla casella **di controllo Abilita esclusione per i siti non mappati** solo se si hanno uno o più siti di grandi dimensioni associati alla stessa area geografica che non hanno vincoli di larghezza di banda, ad esempio un sito centrale di grandi dimensioni, e si hanno anche alcuni siti di succursale associati alla stessa area geografica con vincoli di larghezza di banda. Quando si Abilita l'esclusione per i siti non mappati, la configurazione viene semplificata perché si specificano solo le subnet associate ai siti di succursale e non è necessario specificare tutte le subnet associate a tutti i siti. È consigliabile non selezionare la casella di controllo **Abilita esclusione per i siti non mappati** se è abilitato CAC.
 
 8.  Fare clic su **conferma** per salvare le modifiche.
 

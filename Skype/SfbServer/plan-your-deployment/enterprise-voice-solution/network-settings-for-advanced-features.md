@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 7f6de9e4-c8a4-44e4-8d14-21fe8c45283a
 description: Informazioni sulle aree di rete, i siti di rete e le subnet IP. Tutti questi elementi devono essere configurati per distribuire il piano per il bypass multimediale in Skype for business, pianificare il controllo dell'ammissione alle chiamate in Skype for Business Server o pianificare i servizi di emergenza in Skype for Business Server in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 1c652edd2d3f1898742656c9e12448386e680675
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 25987630ae2082ca8805d87a988760296637d3f7
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187583"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802596"
 ---
 # <a name="network-settings-for-the-advanced-enterprise-voice-features-in-skype-for-business-server"></a>Impostazioni di rete per le funzionalità vocali avanzate di VoIP aziendale in Skype for Business Server
 
-Informazioni sulle aree di rete, i siti di rete e le subnet IP. Tutti questi elementi devono essere configurati per distribuire il [piano per il bypass multimediale in Skype for business](media-bypass.md), [pianificare il controllo dell'ammissione alle chiamate in Skype for Business Server](call-admission-control.md)o [pianificare i servizi di emergenza in Skype for business](emergency-services.md) server in Skype for Business Server Enterprise Voice.
+Informazioni sulle aree di rete, i siti di rete e le subnet IP. Tutti questi elementi devono essere configurati per distribuire il [piano per il bypass multimediale in Skype for business](media-bypass.md), [pianificare il controllo dell'ammissione alle chiamate in Skype for Business Server](call-admission-control.md)o [pianificare i servizi di emergenza in Skype for business](emergency-services.md) server in Skype for Business Server VoIP aziendale.
 
-Skype for Business Server offre tre funzionalità vocali avanzate: [pianificare il controllo dell'ammissione alle chiamate in Skype for Business Server](call-admission-control.md), [pianificare i servizi di emergenza in Skype for Business Server](emergency-services.md)e [pianificare il bypass multimediale in Skype for business ](media-bypass.md). Queste caratteristiche condividono determinati requisiti di configurazione per le aree di rete, i siti di rete e l'associazione di ogni subnet nella topologia di Skype for Business Server con un sito di rete.
+Skype for Business Server offre tre funzionalità avanzate per la voce aziendale: [pianificare il controllo dell'ammissione alle chiamate in Skype for Business Server](call-admission-control.md), [pianificare i servizi di emergenza in Skype for Business Server](emergency-services.md)e [pianificare il bypass multimediale in Skype for business](media-bypass.md). Queste caratteristiche condividono determinati requisiti di configurazione per le aree di rete, i siti di rete e l'associazione di ogni subnet nella topologia di Skype for Business Server con un sito di rete.
 
 Questo argomento offre una panoramica dei requisiti di configurazione comuni a tutte e tre le funzionalità vocali avanzate di Enterprise.
 
@@ -38,11 +40,11 @@ Un'area di rete è un hub di rete o backbone di rete usato solo nella configuraz
 
 Il CAC richiede che ogni area di rete disponga di un sito centrale Skype for Business Server associato, che gestisce il traffico multimediale all'interno dell'area geografica, ovvero prende decisioni in base a criteri configurati, per quanto riguarda la possibilità di un audio in tempo reale o la sessione video può essere stabilita). I siti centrali di Skype for Business Server non rappresentano posizioni geografiche, bensì gruppi logici di server configurati come pool o set di pool.
 
-Per configurare un'area di rete, è possibile usare la scheda **aree** nella sezione **configurazione di rete** del pannello di controllo di Skype for Business Server oppure eseguire il **nuovo CsNetworkRegion** o **Set-CsNetworkRegion** Skype for business Cmdlet di Server Management Shell. Per istruzioni, vedere [distribuire aree di rete, siti e subnet in Skype for business](../../deploy/deploy-enterprise-voice/deploy-network.md) nella documentazione di distribuzione oppure fare riferimento alla documentazione relativa a Skype for Business Server Management Shell.
+Per configurare un'area di rete, è possibile usare la scheda **aree** nella sezione **configurazione di rete** del pannello di controllo di Skype for Business Server oppure eseguire i cmdlet **New-CsNetworkRegion** o **Set-CsNetworkRegion** di Skype for Business Server Management Shell. Per istruzioni, vedere [distribuire aree di rete, siti e subnet in Skype for business](../../deploy/deploy-enterprise-voice/deploy-network.md) nella documentazione di distribuzione oppure fare riferimento alla documentazione relativa a Skype for Business Server Management Shell.
 
 Le stesse definizioni di area di rete sono condivise da tutte e tre le funzionalità vocali avanzate di Enterprise. Se sono già state create aree di rete per una caratteristica, non è necessario creare nuove aree di rete per le altre funzionalità. Può tuttavia essere necessario modificare una definizione di area di rete esistente per applicare impostazioni specifiche delle caratteristiche. Ad esempio, se sono state create aree di rete per E9-1-1 (che non richiedono un sito centrale associato) e, in seguito, si distribuisce il controllo di ammissione di chiamata, è necessario modificare ogni definizione di area di rete per specificare un sito centrale.
 
-Per associare un sito centrale di Skype for Business Server a un'area di rete, devi specificare il nome del sito centrale usando la sezione **configurazione di rete** del pannello di controllo di Skype for Business Server oppure eseguendo il comando **New-CsNetworkRegion** o cmdlet **Set-CsNetworkRegion** . Per istruzioni, vedere [distribuire aree di rete, siti e subnet in Skype for business](../../deploy/deploy-enterprise-voice/deploy-network.md) nella documentazione di distribuzione oppure fare riferimento alla documentazione relativa a Skype for Business Server Management Shell.
+Per associare un sito centrale di Skype for Business Server a un'area di rete, devi specificare il nome del sito centrale usando la sezione **configurazione di rete** del pannello di controllo di Skype for Business Server oppure eseguendo i cmdlet **New-CsNetworkRegion** o **Set-CsNetworkRegion** . Per istruzioni, vedere [distribuire aree di rete, siti e subnet in Skype for business](../../deploy/deploy-enterprise-voice/deploy-network.md) nella documentazione di distribuzione oppure fare riferimento alla documentazione relativa a Skype for Business Server Management Shell.
 
 ## <a name="network-sites"></a>Siti di rete
 
@@ -51,7 +53,7 @@ Un sito di rete rappresenta una posizione geografica, ad esempio una filiale, un
 > [!NOTE]
 > I siti di rete vengono usati solo dalle funzionalità vocali avanzate di Enterprise. Non sono uguali ai siti della filiale configurati nella topologia di Skype for Business Server.
 
-Per configurare un sito di rete e associarlo a un'area di rete, è possibile usare la sezione **configurazione di rete** del pannello di controllo di Skype for Business Server oppure eseguire Skype for Business Server Management Shell **New-CsNetworkSite** o ** Cmdlet Set-CsNetworkSite** . Per informazioni dettagliate, vedere [creare o modificare un sito di rete](https://technet.microsoft.com/library/14e24856-9996-4da4-9f31-300940bdf5aa.aspx) nella documentazione di distribuzione oppure fare riferimento alla documentazione di Skype for Business Server Management Shell.
+Per configurare un sito di rete e associarlo a un'area di rete, è possibile usare la sezione **configurazione di rete** del pannello di controllo di Skype for Business Server oppure eseguire i cmdlet **New-CsNetworkSite** o **Set-CsNetworkSite** di Skype for Business Server Management Shell. Per informazioni dettagliate, vedere [creare o modificare un sito di rete](https://technet.microsoft.com/library/14e24856-9996-4da4-9f31-300940bdf5aa.aspx) nella documentazione di distribuzione oppure fare riferimento alla documentazione di Skype for Business Server Management Shell.
 
 ## <a name="identify-ip-subnets"></a>Identificare le subnet IP
 

@@ -8,18 +8,20 @@ ms.date: 2/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 8f68f4c2-3194-487c-bd2f-fbe71ba8ad70
 description: 'Riepilogo: rivedere i requisiti del client video durante la pianificazione per Skype for Business Server.'
-ms.openlocfilehash: 15fd424f7ad2e11d473e49e271c7fbf1db83b45c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f51e9369cfba636ae37205a6e56e27c7622f12e6
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187868"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41803496"
 ---
 # <a name="skype-for-business-client-video-resolutions"></a>Risoluzioni video client Skype for business
  

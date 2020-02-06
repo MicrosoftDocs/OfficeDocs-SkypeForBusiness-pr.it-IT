@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: bf2a3b8f-73c6-47e1-8c9e-ca1dc1a502bf
 description: Skype for Business Server include diverse funzionalità di sicurezza, tra cui l'autenticazione da server a server, il controllo dell'accesso basato sui ruoli e lo spazio di archiviazione centralizzato dei dati di configurazione.
-ms.openlocfilehash: cd86d1ac404cd2fe487f6f9369cc73df0d72c52f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ac1891194d231c4d494ba4014e4abd8bd7f1185b
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194888"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815654"
 ---
 # <a name="key-security-features-in-skype-for-business-server"></a>Caratteristiche di sicurezza chiave in Skype for Business Server
  
@@ -32,9 +34,9 @@ La sicurezza è un argomento molto ampio. La sicurezza raggiunge tutte le funzio
 
 Skype for Business Server offre due strumenti per facilitare la pianificazione e la progettazione e per ridurre la possibilità di configurare in modo errato i componenti di Skype for Business Server. 
   
-- **Lo strumento di pianificazione** della topologia automatizza gran parte del processo di progettazione della topologia. È possibile esportare i risultati dello strumento di pianificazione in Generatore di topologia, che è lo strumento necessario per installare ogni server che utilizza Skype for Business Server.
+- **Lo strumento di pianificazione della topologia** automatizza gran parte del processo di progettazione della topologia. È possibile esportare i risultati dello strumento di pianificazione in Generatore di topologia, che è lo strumento necessario per installare ogni server che utilizza Skype for Business Server.
     
-- **Generatore** di topologie archivia tutte le informazioni di configurazione nell'Central Management store.
+- **Generatore di topologie** archivia tutte le informazioni di configurazione nell'Central Management store.
     
 Per informazioni dettagliate su questi strumenti, Vedi [strumenti di gestione di Skype for Business Server](../../management-tools/management-tools.md).
   
@@ -58,10 +60,10 @@ Skype for Business Server fornisce il controllo di accesso basato sui ruoli (RBA
   
 ## <a name="network-address-translation-nat"></a>NAT (Network Address Translation)
 
-Skype for Business Server non supporta l'uso di NAT (Network Address Translation) nell'interfaccia interna di Edge Server, ma supporta l'inserimento dell'interfaccia esterna di Access Edge service, Web Conferencing Edge service e A/V Edge Services dietro un router o un firewall che esegue NAT (Network Address Translation) sia per le topologie di server Edge consolidate singole che in scala. Più Edge Server dietro un bilanciamento del carico hardware non può usare NAT. Se più Edge Server usano NAT sulle loro interfacce esterne, è necessario il bilanciamento del carico DNS (Domain Name System). A sua volta, l'uso del bilanciamento del carico DNS consente di ridurre il numero di indirizzi IP pubblici per ogni server perimetrale in un pool di Edge Server. Per informazioni dettagliate, vedere [scenari di Edge Server in Skype for Business Server](../../plan-your-deployment/edge-server-deployments/scenarios.md).
+Skype for Business Server non supporta l'uso di NAT (Network Address Translation) nell'interfaccia interna di Edge Server, ma supporta l'inserimento dell'interfaccia esterna di Access Edge service, Web Conferencing Edge service e A/V Edge service dietro un router o un firewall che esegue la traduzione di indirizzi di rete per le topologie di server perimetrale consolidate singole e in scala. Più Edge Server dietro un bilanciamento del carico hardware non può usare NAT. Se più Edge Server usano NAT sulle loro interfacce esterne, è necessario il bilanciamento del carico DNS (Domain Name System). A sua volta, l'uso del bilanciamento del carico DNS consente di ridurre il numero di indirizzi IP pubblici per ogni server perimetrale in un pool di Edge Server. Per informazioni dettagliate, vedere [scenari di Edge Server in Skype for Business Server](../../plan-your-deployment/edge-server-deployments/scenarios.md).
   
 > [!NOTE]
-> Se si federa con le aziende che hanno una distribuzione di Microsoft Office Communications Server 2007 ed è necessario usare audio/video tra l'organizzazione e l'organizzazione federata, i requisiti della porta saranno quelli per la versione precedente di Edge Server distribuite. Ad esempio, gli intervalli di porta necessari per le versioni meno recenti devono essere aperti per entrambe le aziende fino a quando il partner federativo non aggiorna i propri Edge Server in Skype for Business Server. A questo punto, i requisiti della porta possono essere rivisti e ridotti in base alla nuova configurazione. 
+> Se si esegue la Federazione con le aziende che hanno una distribuzione di Microsoft Office Communications Server 2007 ed è necessario usare audio/video tra l'organizzazione e l'organizzazione federata, i requisiti della porta saranno quelli della versione precedente di Edge Server distribuiti. Ad esempio, gli intervalli di porta necessari per le versioni meno recenti devono essere aperti per entrambe le aziende fino a quando il partner federativo non aggiorna i propri Edge Server in Skype for Business Server. A questo punto, i requisiti della porta possono essere rivisti e ridotti in base alla nuova configurazione. 
   
 ## <a name="simplified-certificates-for-edge-servers"></a>Certificati semplificati per Edge Server
 

@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: conceptual
 manager: serdars
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 25e68396-96dc-4e4b-8a65-d30ea80d1bc9
 description: Argomenti di pianificazione per l'autenticazione e l'autorizzazione per Skype for Business Server, inclusa l'integrazione con altri prodotti
-ms.openlocfilehash: 922b53b26bd77be4f7d49e7c594d337f7961703d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f732e4afa6b82554c4248a244276e5e5b60c71cc
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194927"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815844"
 ---
 # <a name="discussing-authentication-and-authorization-in-skype-for-business"></a>Discutere di autenticazione e autorizzazione in Skype for business
 

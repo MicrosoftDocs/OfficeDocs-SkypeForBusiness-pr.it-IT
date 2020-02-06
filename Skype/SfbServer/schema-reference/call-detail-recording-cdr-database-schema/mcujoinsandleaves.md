@@ -8,15 +8,17 @@ ms.date: 7/15/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 4e073366-0b5d-45b4-a3f6-d63dd5fd9f25
 description: Ogni record in questa tabella contiene i dettagli delle chiamate su una combinazione di un utente che partecipa o abbandona e Conferencing Server. Ad esempio, se un utente partecipa a una conferenza che include Web Conferencing e audio/video Elements, verrà creato un record per il Web Conferencing di tale utente e verrà creato un altro record per la partecipazione a conferenze audio/video dell'utente.
-ms.openlocfilehash: d61b3c1ef1aa6fe481a4022f7bc434b523b68213
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 7eb2e8bccafcbd585c66cb77f2ba18a96c842d60
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194780"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815084"
 ---
 # <a name="mcujoinsandleaves-table-in-skype-for-business-server-2015"></a>Tabella McuJoinsAndLeaves in Skype for Business Server 2015
  

@@ -8,15 +8,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 50755399-2228-4324-81db-c2bfc824c299
 description: Informazioni sulla pianificazione e la configurazione di Skype for Business Server per la condivisione dello schermo basata su video (VbSS)
-ms.openlocfilehash: 00c699f9a26d82506bd13fefe0e6f3e53f7b86bf
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: f0d474772b94389c1d69264be61b3bee2b46a385
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40992393"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817046"
 ---
 # <a name="video-based-screen-sharing-for-skype-for-business-server"></a>Condivisione dello schermo basata su video per Skype for Business Server 
  

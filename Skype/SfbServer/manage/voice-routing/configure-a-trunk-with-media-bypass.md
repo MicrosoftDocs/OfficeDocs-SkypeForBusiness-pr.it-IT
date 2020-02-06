@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: 'Seguire questa procedura per configurare un trunk con il bypass multimediale abilitato. '
-ms.openlocfilehash: c807aeab3c9300428aabcf57c0ab2886451b5e4b
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 3628c0ea38c0692b313ee37ca7b836c159a5a2dd
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187058"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817036"
 ---
 # <a name="configure-a-trunk-with-media-bypass-in-skype-for-business-server"></a>Configurare un trunk con il bypass multimediale in Skype for Business Server
 
@@ -59,7 +61,7 @@ Una configurazione trunk come descritto di seguito raggruppa un set di parametri
 9. Se il peer trunk supporta la ricezione delle richieste SIP REFER dal Mediation Server, selezionare la casella **di controllo Consenti invio di riferimento al gateway** . 
 
     > [!NOTE] 
-    > Se si disattiva questa opzione mentre è selezionata l'opzione **Abilita bypass multimediale** , sono necessarie altre impostazioni. Se il peer trunk non supporta la ricezione delle richieste SIP REFER dal Mediation Server e il bypass multimediale è abilitato, è necessario eseguire anche il cmdlet **Set-CsTrunkConfiguration** per disabilitare RTCP per le chiamate attive e detenute al fine di supportare le condizioni appropriate per bypass multimediale. In alternativa, è possibile selezionare **Abilita riferimento tramite il controllo** delle chiamate di terze parti se si vuole che le chiamate trasferite vengano ignorate da elementi multimediali e il gateway non supporta le richieste di riferimento SIP. 
+    > Se si disattiva questa opzione mentre è selezionata l'opzione **Abilita bypass multimediale** , sono necessarie altre impostazioni. Se il peer trunk non supporta la ricezione delle richieste SIP REFER dal Mediation Server e il bypass multimediale è abilitato, è necessario eseguire anche il cmdlet **Set-CsTrunkConfiguration** per disabilitare RTCP per le chiamate attive e detenute, al fine di supportare le condizioni appropriate per il bypass multimediale. In alternativa, è possibile selezionare **Abilita riferimento tramite il controllo delle chiamate di terze parti** se si vuole che le chiamate trasferite vengano ignorate da elementi multimediali e il gateway non supporta le richieste di riferimento SIP. 
 
 10. Opzionale Per abilitare il routing tra trunk, associa e configura i record di utilizzo PSTN alla configurazione del trunk. Gli usi PSTN associati alla configurazione del trunk verranno applicati per tutte le chiamate in arrivo tramite il trunk non proveniente da un endpoint di Skype for Business Server. Per gestire i record di utilizzo PSTN associati a una configurazione trunk, usare uno dei metodi seguenti:
     - Per selezionare uno o più record da un elenco di tutti i record di utilizzo PSTN disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. Evidenziare i record che si desidera associare alla configurazione del trunk e quindi fare clic su **OK**.
@@ -118,7 +120,7 @@ Una configurazione trunk come descritto di seguito raggruppa un set di parametri
 18. Verificare che le regole di traduzione del trunk siano disposte nell'ordine corretto. Per modificare la posizione di una regola nell'elenco, evidenziare il nome della regola e quindi fare clic sulla freccia in su o in giù.
 
     >[!Important] 
-    > Skype for Business Server attraversa l'elenco delle regole di traduzione dall'alto verso il basso e usa la prima regola che corrisponde al numero selezionato. Se si configura un trunk in modo che un numero composto possa corrispondere a più regole di traduzione, assicurarsi che le regole più restrittive siano ordinate al di sopra delle regole meno restrittive. Ad esempio, se è stata inclusa una regola di traduzione che corrisponde a qualsiasi numero di 11 cifre e a una regola di traduzione che corrisponde a solo numeri a 11 cifre che iniziano con + 1425, assicurarsi che la regola che corrisponde a qualsiasi numero di 11 cifre sia ordinata *sotto* quella più restrittiva. regola. 
+    > Skype for Business Server attraversa l'elenco delle regole di traduzione dall'alto verso il basso e usa la prima regola che corrisponde al numero selezionato. Se si configura un trunk in modo che un numero composto possa corrispondere a più regole di traduzione, assicurarsi che le regole più restrittive siano ordinate al di sopra delle regole meno restrittive. Se ad esempio è stata inclusa una regola di traduzione che corrisponde a qualsiasi numero di 11 cifre e a una regola di traduzione che corrisponde a solo numeri a 11 cifre che iniziano con + 1425, assicurarsi che la regola che corrisponde a qualsiasi numero di 11 cifre sia ordinata *sotto* la regola più restrittiva. 
 
 19. Al termine della configurazione del trunk, fare clic su **OK**.
 20. Nella pagina **trunk Configuration** fare clic su **commit**e quindi su **Commit all**. 

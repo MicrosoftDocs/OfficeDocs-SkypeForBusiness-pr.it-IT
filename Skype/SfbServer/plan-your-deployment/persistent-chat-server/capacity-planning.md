@@ -8,15 +8,17 @@ ms.date: 2/23/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 7a850cd5-c789-4795-a8ff-083be21ae784
 description: 'Riepilogo: leggere questo argomento per informazioni sulla pianificazione della capacità per il server di chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 7aa76aecf183fc0872adf6f6040132310d54a989
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 9f5571be81fbda47150bbde7edf5757ebdea8a4c
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195991"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815774"
 ---
 # <a name="capacity-planning-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificazione della capacità del server Chat persistente
  
@@ -26,7 +28,7 @@ Il server di chat persistente può eseguire chat multiutente e in tempo reale ch
   
 La pianificazione della capacità è una parte importante della preparazione alla distribuzione del server di chat persistente. Questo argomento fornisce le tabelle di pianificazione della capacità che è possibile usare per determinare la configurazione migliore per la distribuzione. Descrive anche come gestire al meglio le distribuzioni del server della chat persistente che richiedono maggiore capacità nelle ore di punta.
   
-Prima di leggere questa sezione, dovresti avere familiarità con le topologie della chat persistente. Per altre informazioni, vedere [pianificare](topology.md)la topologia del server di chat persistente.
+Prima di leggere questa sezione, dovresti avere familiarità con le topologie della chat persistente. Per altre informazioni, vedere [pianificare la topologia del server di chat persistente](topology.md).
 
 > [!NOTE] 
 > La chat persistente è disponibile in Skype for Business Server 2015 ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in teams. Per altre informazioni, vedere [Introduzione all'aggiornamento di Microsoft teams](/microsoftteams/upgrade-start-here). Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità ai team o continuare a usare Skype for Business Server 2015. 
@@ -57,7 +59,7 @@ Usare la tabella di esempio seguente per determinare il numero di utenti che sar
 |Totale utenti con provisioning  <br/> |150.000  <br/> |
 |Numero di endpoint  <br/> |120.000  <br/> |
    
-Nell'esempio precedente il piano consiste nel supportare il numero massimo di utenti che il server di chat persistente consente: quattro server/istanze del servizio di chat persistente (può avere quattro server più passivi in cui è in uso il server di chat persistente per l'elevata disponibilità e Disaster Recovery) e 20.000 utenti per server, per un totale di 80.000 utenti attivi.
+Nell'esempio precedente il piano consiste nel supportare il numero massimo di utenti che il server di chat persistente consente: quattro server/istanze del servizio di chat persistente (può avere quattro server più passivi che gestiscono il server di chat persistente per l'elevata disponibilità e il ripristino di emergenza) e gli utenti di 20.000 per server, per un totale di 80.000 utenti attivi.
   
 ### <a name="plan-capacity-for-chat-room-access"></a>Pianificare la capacità per l'accesso alle chat room
 
@@ -115,7 +117,7 @@ Per ogni chat room, la tabella di pianificazione della capacità precedente spec
 
 È possibile usare la tabella di pianificazione della capacità seguente per comprendere il numero di inviti che il server di chat persistente crea e archivia nel database della chat persistente quando è configurato per l'invio di inviti. Puoi gestire gli inviti per la categoria usando la pagina **delle impostazioni della categoria chat room** nel pannello di controllo di Skype for Business Server oppure usando il cmdlet di Windows PowerShell, **set-csPersistentChatCategory**. Puoi gestire gli inviti in una chat room (in linea con ciò che la categoria consente) usando la pagina **gestione sala** avviata dal client Skype for business o usando un cmdlet di Windows PowerShell, **set-csPersistentChatRoom**.
   
-I dati di esempio nella tabella seguente presuppongono che, nella pagina **delle impostazioni della chat room** per 50% di tutte le **** chat room, l'opzione inviti sia impostata su **Sì**.
+I dati di esempio nella tabella seguente presuppongono che, nella pagina **delle impostazioni della chat room** per 50% di tutte le chat room, l'opzione **inviti** sia impostata su **Sì**.
   
 > [!IMPORTANT]
 > Se il valore calcolato per il numero di inviti generati dal server supera 1 milione, le prestazioni del server potrebbero peggiorare in modo significativo. Per evitare questo problema, assicurati di ridurre al minimo il numero di chat room configurate per l'invio di inviti o per limitare il numero di utenti che possono partecipare alle chat room configurate per l'invio di inviti. 

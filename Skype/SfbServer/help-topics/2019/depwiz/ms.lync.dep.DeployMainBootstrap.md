@@ -6,19 +6,21 @@ author: lanachin
 manager: serdars
 audience: ITPro
 ms.topic: article
-f1.keywords:
+ms.custom:
 - ms.lync.dep.DeployMainBootstrap
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- CSH
 localization_priority: Normal
 ms.assetid: f8813f25-eafa-4006-a186-94e4ebcc5ac7
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per installare e attivare o disattivare o disinstallare i componenti di Skype for Business Server, è possibile usare il passaggio 2: configurare o rimuovere i componenti del server Skype. È necessario avere effettuato l'accesso come amministratore locale nel computer che si sta installando o modificando e deve essere in grado di leggere gli utenti e i gruppi di servizi di dominio Active Directory nel dominio corrente. Per iniziare, fare clic su Esegui. In questo modo verrà letta la definizione della topologia basata sull'archivio di gestione centrale. I componenti software necessari vengono installati e configurati in base al ruolo secondo quanto definito nell'archivio di gestione centrale. Al termine dell'installazione, leggere il riepilogo e fare clic su Fine."
-ms.openlocfilehash: a02c1aa99de32e42fd7d8352efc561b557ab91bc
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: d19d4946af48f96066d01cea33f0a5c04c22f816
+ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41705431"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41798363"
 ---
 # <a name="setup-or-remove-skype-for-business-server-components"></a>Installare o rimuovere componenti di Skype for Business Server
  

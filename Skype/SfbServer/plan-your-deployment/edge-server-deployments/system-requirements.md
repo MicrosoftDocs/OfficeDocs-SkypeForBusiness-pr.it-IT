@@ -7,6 +7,8 @@ audience: ITPro
 ms.topic: conceptual
 manager: serdars
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ed53a566-0504-46f9-81a7-116a637833af
 description: 'Riepilogo: informazioni sui requisiti di sistema per Edge Server in Skype for Business Server.'
-ms.openlocfilehash: 01a5cce8dd1ccb85d322b6c66615d022c8d6c2df
-ms.sourcegitcommit: 9fd23cf0e03dd8fcf7ed04ef09dcdac048ebb44a
+ms.openlocfilehash: 4ef2feeb2b486bc9be9f4eb59136d74ef542dd31
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "36187808"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41803316"
 ---
 # <a name="edge-server-system-requirements-in-skype-for-business-server"></a>Requisiti di sistema di Edge Server in Skype for Business Server
  
@@ -193,7 +195,7 @@ Se stai distribuendo dispositivi mobili, il tuo HLB deve essere in grado di cari
   
 Ecco i requisiti di HLB per il Director (facoltativo) e i servizi Web del pool di front end (obbligatorio):
   
-- Per i VIP dei servizi Web interni, imposta Source_addr persistenza (Internal Port 80, 443) in HLB. Per Skype for Business Server, la persistenza di Source_addr indica che più connessioni provenienti da un singolo indirizzo IP vengono sempre inviate a un server, per mantenere lo stato della sessione.
+- Per i VIP dei servizi Web interni, imposta Source_addr persistenza (porta interna 80, 443) in HLB. Per Skype for Business Server, Source_addr persistenza indica che più connessioni provenienti da un singolo indirizzo IP vengono sempre inviate a un server, per mantenere lo stato della sessione.
     
 - Usare un timeout di inattività TCP di 1800 secondi.
     
@@ -213,8 +215,8 @@ Puoi definire il monitoraggio della porta nei dispositivi di bilanciamento del c
   
 |**IP virtuale/porta**|**Porta nodi**|**Nodo macchina/monitor**|**Profilo di persistenza**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|
-|\<pool\>web_mco_443_vs  <br/> 443  <br/> |4443  <br/> |Front-end  <br/> 5061  <br/> |Nessuno  <br/> |HTTPS  <br/> |
-|\<pool\>web_mco_80_vs  <br/> 80  <br/> |8080  <br/> |Front-end  <br/> 5061  <br/> |Nessuno  <br/> |HTTP  <br/> |
+|\<web_mco_443_vs\>del pool  <br/> 443  <br/> |4443  <br/> |Front-end  <br/> 5061  <br/> |Nessuno  <br/> |HTTPS  <br/> |
+|\<web_mco_80_vs\>del pool  <br/> 80  <br/> |8080  <br/> |Front-end  <br/> 5061  <br/> |Nessuno  <br/> |HTTP  <br/> |
    
 ## <a name="hardware-and-software-requirements"></a>Requisiti hardware e software
 

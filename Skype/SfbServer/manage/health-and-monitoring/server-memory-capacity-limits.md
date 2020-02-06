@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 1697ea71-6fcf-480d-b4e9-cd79f94d247e
 description: 'Riepilogo: informazioni su come monitorare i limiti di capacità di memoria del server in Skype for Business Server.'
-ms.openlocfilehash: f089ab9b5be693872754691050133ad27e992896
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 4f56fec8f3ed6900f4c4f1a97286dc14b66bb7c8
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188693"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817705"
 ---
 # <a name="monitor-for-server-memory-capacity-limits-in-skype-for-business-server"></a>Monitorare i limiti di capacità di memoria del server in Skype for Business Server
  
@@ -33,13 +35,13 @@ Due contatori delle prestazioni della mobilità possono aiutarti a determinare l
     
 - **Conteggio delle sessioni attualmente attivo**, ovvero il numero corrente di endpoint registrati tramite UCWA o il servizio mobilità
     
-Se la differenza tra il conteggio delle sessioni attive con gli abbonamenti alla **presenza attiva** e il **conteggio delle sessioni** attive è ridotta nel tempo, significa che la maggior parte degli utenti di dispositivi mobili ha un dispositivo sempre connesso, ad esempio Android o Dispositivo mobile Nokia (solo per MCX). I dispositivi UCWA sempre connessi includono dispositivi Apple e Android con client mobili Lync 2013. Se il **conteggio delle sessioni attualmente attivo** è molto più elevato del **conteggio delle sessioni attive con gli abbonamenti alla presenza attiva**, questo indica che più utenti usano un dispositivo endpoint in background, ad esempio un dispositivo iOS di Apple o un Windows Phone in MCX. Windows Phone è l'unico client per dispositivi mobili Lync 2013 che verrà registrato come questo.
+Se la differenza tra il **conteggio delle sessioni attive con gli abbonamenti alla presenza attiva** e il conteggio delle **sessioni** attive è ridotta nel tempo, significa che la maggior parte degli utenti di dispositivi mobili ha un dispositivo sempre connesso, ad esempio un dispositivo mobile Android o Nokia (solo per MCX). I dispositivi UCWA sempre connessi includono dispositivi Apple e Android con client mobili Lync 2013. Se il **conteggio delle sessioni attualmente attivo** è molto più elevato del **conteggio delle sessioni attive con gli abbonamenti alla presenza attiva**, questo indica che più utenti usano un dispositivo endpoint in background, ad esempio un dispositivo iOS di Apple o un Windows Phone in MCX. Windows Phone è l'unico client per dispositivi mobili Lync 2013 che verrà registrato come questo.
   
-È necessario impostare un limite per il **conteggio delle sessioni attivo con gli abbonamenti alla presenza attiva** e i contatori delle prestazioni del **conteggio delle sessioni** attive in base all'utilizzo previsto, ai risultati della pianificazione della capacità e al monitoraggio continuo della Servizio di mobilità e altri contatori del server front-end. I limiti impostati devono consentire di valutare la capacità del server e generare avvisi quando viene superata la capacità.
+È necessario impostare un limite per il **conteggio delle sessioni attivo con gli abbonamenti alla presenza attiva** e i contatori delle prestazioni **attualmente attivi** , in base ai risultati previsti per l'uso, alla pianificazione della capacità e al monitoraggio continuo del servizio di mobilità e di altri contatori del server front-end. I limiti impostati devono consentire di valutare la capacità del server e generare avvisi quando viene superata la capacità.
   
 Per determinare i limiti appropriati, è prima di tutto necessario determinare la quantità di memoria disponibile nel server front-end per il servizio di mobilità. Monitorare i contatori per determinare quando è necessario pianificare la capacità aggiuntiva, in base alla formula seguente:
   
-Memoria totale usata dal servizio di mobilità MCX (MB) = 164 + (400 + 134)/1024 * **numero di sessioni attualmente attivo con abbonamenti alla presenza attiva** + 400/ **** - 1024 * (il conteggio delle sessioni attive attualmente attivo** Abbonamenti alla presenza attiva**)
+Memoria totale usata dal servizio di mobilità MCX (MB) = 164 + (400 + 134)/1024 * **numero di sessioni attualmente attivo con abbonamenti alla presenza attiva** + 400/1024 *** (** - il conteggio delle sessioni attualmente attivo è attualmente attivo**con gli abbonamenti alla presenza attiva**)
   
 > [!IMPORTANT]
 > Il calcolatore di capacità di Microsoft Lync Server 2010 è un foglio di calcolo prepopolato con tutte le formule che consentono a un planner di determinare quali sono i requisiti per i server Skype for business, tra cui CPU, memoria e disco rigido. È possibile [scaricare il foglio di calcolo e un documento associato](https://go.microsoft.com/fwlink/p/?LinkID=212657). 

@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 8a51fd13-1487-4632-b5ec-f7ae2abe8ed4
 description: 'Riepilogo: informazioni sul report sulle tendenze del supporto per la qualità del server in Skype for Business Server.'
-ms.openlocfilehash: 0ed819c40088c03ca1882ed035b416bf1427e840
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: eca6aa75d7b831356da15a86692658019b3c0d54
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188696"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817715"
 ---
 # <a name="server-media-quality-trend-report-in-skype-for-business-server"></a>Report trend qualità media del server in Skype for Business Server
  
@@ -29,7 +31,7 @@ Il report tendenze per la qualità dei contenuti multimediali consente di confro
   
 - [Report sulle prestazioni del server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica di tendenza)
     
-- [Report dettagli chiamata in Skype for Business Server](call-detail-report.md) facendo clic sulla metrica A/V Edge Server. Se il chiamante o il visitatore è un server, è anche possibile raggiungere il report trend media per la qualità del server facendo clic sul nome dell'endpoint.
+- [Report dettagli chiamata in Skype for Business Server](call-detail-report.md) (facendo clic sulla metrica a/V Edge Server. Se il chiamante o il visitatore è un server, è anche possibile raggiungere il report trend media per la qualità del server facendo clic sul nome dell'endpoint.
     
 ## <a name="making-the-best-use-of-server-media-quality-trend-report"></a>Sfruttare al meglio il report trend di qualità media del server
 

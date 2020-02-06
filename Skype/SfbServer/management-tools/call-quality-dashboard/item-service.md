@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: b6d7b02a-a34e-4fef-986c-ca442e18fa0c
 description: "Riepilogo: informazioni sul servizio elementi, che fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 585ba97d9dedbfcbbd572069a792a121e6156afe
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5fdf2aedcb1a5e8d7d1929d7af70c5911cae46f0
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186881"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816715"
 ---
 # <a name="item-service-for-call-quality-dashboard-cqd"></a>Servizio voce per dashboard qualità chiamata (Call Quality Dashboard)
  
@@ -50,10 +52,10 @@ Le operazioni REST sono incluse nella tabella seguente.
 
 |**Operazione**|**Descrizione**|
 |:-----|:-----|
-|[Ottenere gli elementi](get-items.md) <br/> |Get Items restituisce tutti gli elementi del repository.  <br/> |
+|[Ottenere elementi](get-items.md) <br/> |Get Items restituisce tutti gli elementi del repository.  <br/> |
 |[Ottieni elemento](get-item.md) <br/> |Ottieni elemento restituisce un elemento specifico.  <br/> |
-|[Ottenere voci secondarie](get-sub-items.md) <br/> |Get Sub-Items restituisce gli elementi secondari di un elemento specifico.  <br/> |
-|[Ottenere gli antenati degli elementi](get-item-ancestors.md) <br/> |Ottenere gli antenati degli elementi restituisce gli antenati di un elemento specifico.  <br/> |
+|[Ottieni elementi secondari](get-sub-items.md) <br/> |Get Sub-Items restituisce gli elementi secondari di un elemento specifico.  <br/> |
+|[Ottieni predecessori elemento](get-item-ancestors.md) <br/> |Ottenere gli antenati degli elementi restituisce gli antenati di un elemento specifico.  <br/> |
 |[Aggiorna elemento](update-item.md) <br/> |Aggiornare un elemento specifico nel repository.  <br/> |
    
 

@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 142caf34-0f20-47f3-9d32-ce25ab622fad
 description: Per il ripristino di emergenza, Skype for Business Server offre l'associazione in pool con il failover nel caso in cui un pool vada in calo.
-ms.openlocfilehash: 3999b7b8c2dd9b5eea942779f09924c6b5a79210
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: cacc1609094cba06c311a40f2502b4453013941e
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37341932"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815944"
 ---
 # <a name="front-end-pool-disaster-recovery-in-skype-for-business-server"></a>Ripristino di emergenza del pool di front-end in Skype for Business Server
  

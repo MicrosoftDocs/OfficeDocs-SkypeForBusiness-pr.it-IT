@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 01131e28-b38e-40d9-8524-06725b9c6608
 description: Questa sezione offre una panoramica degli elementi fondamentali che costituiscono il Framework di sicurezza per Skype for Business Server. È essenziale comprendere il modo in cui questi elementi collaborano per prendere decisioni informate su come proteggere la distribuzione di Skype for Business Server in particolare.
-ms.openlocfilehash: 8b82b09a8220139abe62ac4503ad8a7eddc28e99
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 432d4cda013e5bdec2613e3c9052f10b7d619302
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194883"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815614"
 ---
 # <a name="security-framework-for-skype-for-business-server"></a>Framework di sicurezza per Skype for Business Server
  

@@ -8,15 +8,17 @@ ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 487a430b-af66-4ea6-b28e-4e33cfdb7f9e
 description: La tabella Dialogs è una tabella di supporto in cui sono archiviate le informazioni su DialogIDs per le sessioni peer-to-peer.
-ms.openlocfilehash: 61230cf7f72405c4c5f27ff7b159afe4e5a7842e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f6cfc3e078ee8f4492d6f5baf65f66df77d7aedf
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194817"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815274"
 ---
 # <a name="dialogs-table-in-skype-for-business-server-2015"></a>Tabella finestre di dialogo in Skype for Business Server 2015
  

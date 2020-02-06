@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ed843ed7-371f-46cc-969a-f8062c06fc55
 description: Informazioni sui servizi avanzati di 9-1-1 (E9-1-1) in Skype for Business Server VoIP aziendale, incluso l'acquisizione della posizione e il routing delle chiamate.
-ms.openlocfilehash: 20d1a258b022b8369f59aaa74a2b95de45f931e2
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f09729bc6fdbd2fa64dee5b30af88494cd618915
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187703"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802986"
 ---
 # <a name="plan-for-emergency-services-in-skype-for-business-server"></a>Pianificare i servizi di emergenza in Skype for Business Server
 
@@ -41,7 +43,7 @@ Skype for Business Server supporta due metodi per il routing delle chiamate di e
 
 - Un gateway ELIN (Emergency Location Identification Number) a un provider di servizi E9-1-1 Basato su PSTN (Public Switched Telephone)
 
-Quando si usa un provider di servizi E9-1-1 trunk SIP, è possibile aggiungere posizioni ERL al database del servizio informazioni sulla posizione e quindi convalidare le posizioni in base a una guida all'indirizzo Master Street (stradario) gestita dal provider di servizi E9-1-1. Se un provider di servizi E9-1-1 riceve una chiamata che non ha informazioni sulla posizione o ha una posizione che non è stata convalidata rispetto a stradario, il provider di servizi E9-1-1 instrada la chiamata a un centro di risposta alle chiamate di emergenza nazionale/regionale (ECRC), che è personale qualificato con personale specializzato che ottiene verbalmente la posizione del chiamante, se possibile, e instrada manualmente la chiamata al PSAP appropriato. Alcuni provider di servizi E9-1-1 del trunk SIP forniscono anche ai clienti un numero di chiamate PSTN Direct inwarding (DID) per il ECRC, che fornisce un mezzo alternativo per il routing delle telefonate di 9-1-1, se il trunk SIP non riesce per qualsiasi motivo.
+Quando si usa un provider di servizi E9-1-1 trunk SIP, è possibile aggiungere posizioni ERL al database del servizio informazioni sulla posizione e quindi convalidare le posizioni in base a una guida all'indirizzo Master Street (stradario) gestita dal provider di servizi E9-1-1. Se un provider di servizi E9-1-1 riceve una chiamata che non ha informazioni sulla posizione o ha una posizione che non è stata convalidata rispetto a stradario, il provider di servizi E9-1-1 instrada la chiamata a un centro di risposta alle chiamate di emergenza nazionale/regionale (ECRC), con personale specializzato che ottiene verbalmente la posizione del chiamante, se possibile, e instrada manualmente la chiamata al PSAP appropriato. Alcuni provider di servizi E9-1-1 del trunk SIP forniscono anche ai clienti un numero di chiamate PSTN Direct inwarding (DID) per il ECRC, che fornisce un mezzo alternativo per il routing delle telefonate di 9-1-1, se il trunk SIP non riesce per qualsiasi motivo.
 
 A differenza del TDM (Time Division Multiplexing) e dei telefoni PBX (Private Branch Exchange) basati su IP, che hanno posizioni fisse, un endpoint di Skype for business può essere molto mobile. Quando si distribuisce la funzionalità E9-1-1, Skype for Business Server garantisce che non importa dove si trova un chiamante, la chiamata di emergenza può essere instradata al PSAP che serve la posizione del chiamante. Ad esempio, se l'ufficio principale di un utente si trova a Redmond, Washington, ma l'utente inserisce una chiamata di emergenza da un computer in una filiale di Wichita, Kansas, il trunk SIP o il provider di servizi E9-1-1 Basato su PSTN instradano la chiamata a PSAP in Wichita , non al PSAP di Redmond.
 

@@ -8,6 +8,8 @@ ms.date: 2/15/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4812c444-2546-48d7-9ca7-b71fce508ed8
 description: 'Riepilogo: configurare i requisiti non server per Skype for Business Server 2015. Prima di eseguire la distribuzione è possibile configurare una varietà di elementi, inclusi Active Directory, DNS, certs e fileshares.'
-ms.openlocfilehash: 60244391a04b1bab31464bd0ef0b804510e40955
-ms.sourcegitcommit: 2cb46af39a0d116e8fd020aa04bd2ecbd6998a5f
+ms.openlocfilehash: 7af4587dfef237a6449dbfa9a271910398ec8a41
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41678960"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41801906"
 ---
 # <a name="environmental-requirements-for-skype-for-business-server-2015"></a>Requisiti ambientali di Skype for Business Server 2015
  

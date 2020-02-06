@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6cc333e7-4029-4372-86b2-016040c415fb
 description: Pianificazione dei gruppi di risposta in Skype for Business Server VoIP aziendale, che consente di configurare il routing delle chiamate a gruppi di utenti. Include i requisiti per i file audio.
-ms.openlocfilehash: b1c8a2ab1a7dc42fd290df4bdc1ccf69b52db43a
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ec0bbe0e02fd7b4f027f8c2e57784c402aa0f039
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187568"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802486"
 ---
 # <a name="plan-for-the-response-group-application-in-skype-for-business-server"></a>Pianificare l'applicazione Response Group in Skype for Business Server
 
@@ -187,11 +189,11 @@ L'applicazione Response Group supporta i client seguenti:
 
 Il client specifico che puoi usare dipende dal tipo di utente di Response Group che sei:
 
-- **** I chiamanti possono chiamare un Response Group usando uno dei client elencati in precedenza e usando un telefono standard sulla rete PSTN (Public Switched Telephone Network).
+- I **chiamanti** possono chiamare un Response Group usando uno dei client elencati in precedenza e usando un telefono standard sulla rete PSTN (Public Switched Telephone Network).
 
-- **Agenti** informali gli agenti che non accedono ai loro gruppi per accettare le chiamate possono accettare le chiamate tramite Attendant, Lync o Lync Phone Edition. Gli agenti informali vengono automaticamente registrati nei loro gruppi quando accedono a Skype for Business Server usando uno di questi client.
+- Gli **agenti informali** (gli agenti che non accedono ai loro gruppi per accettare le chiamate) possono accettare le chiamate tramite Attendant, Lync o Lync Phone Edition. Gli agenti informali vengono automaticamente registrati nei loro gruppi quando accedono a Skype for Business Server usando uno di questi client.
 
-- **Agenti formali** gli agenti che devono eseguire l'accesso e disconnettersi da gruppi per accettare le chiamate possono accettare le chiamate tramite Skype for business e accedere alla console dell'agente dalla voce di menu oppure tramite Attendant e accedendo alla console agente direttamente da Internet Explorer.
+- Gli **agenti formali** (gli agenti che devono accedere e disconnettersi dai loro gruppi per accettare le chiamate) possono accettare le chiamate usando Skype for business e accedendo alla console dell'agente dalla voce di menu oppure usando Attendant e accedendo alla console dell'agente direttamente da Internet Explorer.
 
 ## <a name="capacity-planning"></a>Pianificazione della capacità
 

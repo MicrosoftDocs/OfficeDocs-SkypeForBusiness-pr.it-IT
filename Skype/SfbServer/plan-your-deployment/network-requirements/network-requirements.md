@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 35c7bb3f-8e0f-48b7-8a2c-857d4b42a4c4
 description: 'Riepilogo: esaminare le considerazioni del componente di rete seguenti prima di implementare Skype for Business Server.'
-ms.openlocfilehash: 56e8b00a4b662d19fd928b439ae8fafb7bcbdb3d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b7b9c7e239aab5d395fcdadf0cb254df4e13cecd
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194911"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802026"
 ---
 # <a name="plan-network-requirements-for-skype-for-business"></a>Pianificare i requisiti di rete per Skype for business
 
@@ -188,7 +190,7 @@ Oltre alla larghezza di banda necessaria per il traffico RTP (Real-Time Transpor
 
 **Larghezza di banda RTCP**
 
-|**Media**|**Larghezza di banda massima RTCP (Kbps)**|
+|**Contenuti multimediali**|**Larghezza di banda massima RTCP (Kbps)**|
 |:-----|:-----|
 |Audio  <br/> |5  <br/> |
 |Video (solo H. 264 o RTVideo inviati/ricevuti)  <br/> |10  <br/> |
@@ -206,7 +208,7 @@ Le tabelle seguenti includono valori per i vari scenari.
 
 **Pianificazione della capacità audio/video per le sessioni peer-to-peer**
 
-|**Media**|**Codec**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
+|**Contenuti multimediali**|**Codec**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
 |:-----|:-----|:-----|:-----|:-----|
 |Audio  <br/> |RTAudio a banda larga  <br/> |39,8  <br/> |62  <br/> |91  <br/> |
 |Audio  <br/> |RTAudio stretta  <br/> |29,3  <br/> |44,8  <br/> |56,6  <br/> |
@@ -218,7 +220,7 @@ Le tabelle seguenti includono valori per i vari scenari.
 
 **Pianificazione della capacità audio/video per le conferenze**
 
-|**Media**|**Codec tipico**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
+|**Contenuti multimediali**|**Codec tipico**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
 |:-----|:-----|:-----|:-----|:-----|
 |Audio  <br/> |G. 722  <br/> |46,1  <br/> |100,6  <br/> |164,6  <br/> |
 |Audio  <br/> |Sirena  <br/> |25,5  <br/> |52,6  <br/> |68,6  <br/> |
@@ -245,7 +247,7 @@ La tipica larghezza di banda del flusso per il video panoramico si basa su dispo
 
 **Pianificazione della capacità audio per PSTN**
 
-|**Media**|**Codec tipico**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
+|**Contenuti multimediali**|**Codec tipico**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
 |:-----|:-----|:-----|:-----|:-----|
 |Audio  <br/> |G. 711 (inclusi i partecipanti PSTN nelle conferenze)  <br/> |64,8  <br/> |97  <br/> |161  <br/> |
 |Audio  <br/> |RTAudio stretta  <br/> |30,9  <br/> |44,8  <br/> |56,6  <br/> |

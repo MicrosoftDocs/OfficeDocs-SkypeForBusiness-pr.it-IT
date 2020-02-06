@@ -8,6 +8,8 @@ ms.date: 2/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 31e95e16-f79f-46c6-b123-973fa56a824e
 description: "Riepilogo: i professionisti IT devono rivedere i requisiti di supporto per l'app Skype for Business Web App e riunioni Skype durante la pianificazione di Skype for Business Server. Questo articolo non è destinato agli utenti di queste app."
-ms.openlocfilehash: a2bc418b9179a63452c5d4fdd1990676f9db4b14
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 126d8ffc71a2ff1a0bcbf26c744301736d2b47b2
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187877"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41803556"
 ---
 # <a name="plan-for-meetings-clients-web-app-and-meetings-app"></a>Pianificare i client delle riunioni (app Web e riunioni)
  
@@ -38,7 +40,7 @@ In seguito, gli utenti possono creare riunioni e invitare utenti esterni all'org
   
 Per impostazione predefinita, il server che ospita la riunione indirizza l'utente a scaricare e installare Skype for Business Web App per partecipare alla riunione. L'app web Skype for business è archiviata nel server front-end e viene inviata al partecipante alla riunione. 
   
-Per Skype for Business Server, l'app riunioni Skype (su Windows) e Skype for business per Mac (su Mac) sono disponibili come sostituzioni per Skype for Business Web App che iniziano con CU5, ma le app di sostituzione richiedono la configurazione aggiuntiva descritto in [abilitare l'app riunioni Skype per sostituire Skype for Business Web App (facoltativo)](../../deploy/deploy-clients/deploy-web-downloadable-clients.md#SMA_Enable).  Se le app riunioni Skype e Skype for business per Mac sono abilitate, gli utenti scaricheranno la versione più recente delle app dalla rete di distribuzione dei contenuti di Office 365 invece che da Skype for Business Server. Per Skype for Business Server 2019, l'uso dell'app riunioni Skype e Skype for business per Mac è l'unica opzione.
+Per Skype for Business Server, l'app riunioni Skype (su Windows) e Skype for business per Mac (su Mac) sono disponibili come sostituzioni per Skype for Business Web App che iniziano con CU5, ma le app di sostituzione richiedono la configurazione aggiuntiva descritta in [abilitare l'app riunioni Skype per sostituire Skype for Business Web App (facoltativo)](../../deploy/deploy-clients/deploy-web-downloadable-clients.md#SMA_Enable).  Se le app riunioni Skype e Skype for business per Mac sono abilitate, gli utenti scaricheranno la versione più recente delle app dalla rete di distribuzione dei contenuti di Office 365 invece che da Skype for Business Server. Per Skype for Business Server 2019, l'uso dell'app riunioni Skype e Skype for business per Mac è l'unica opzione.
   
 L'app riunioni Skype offre un'esperienza di browser semplificata per il download e l'installazione dell'app e l'Unione delle riunioni, incluso il join con un clic per gli utenti di Internet Explorer. L'app riunioni Skype offre anche numerosi miglioramenti rispetto all'app web Skype for business per l'affidabilità e l'esperienza di riunione. 
   

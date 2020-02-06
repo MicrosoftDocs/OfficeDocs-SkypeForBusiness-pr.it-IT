@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: Questo articolo illustra l'autenticazione moderna, basata sulla libreria di autenticazione di Active Directory (ADAL) e OAuth 2,0.
-ms.openlocfilehash: c984e2468e1735a46c5246806afc57dd67327990
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 239dd6a49ecbec043a661e622a66eb5cb4665e96
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194926"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815834"
 ---
 # <a name="how-to-use-modern-authentication-adal-with-skype-for-business"></a>Come usare l'autenticazione moderna (ADAL) con Skype for business
  
@@ -33,7 +35,7 @@ Le conversazioni di autenticazione moderna basate su ADAL e OAuth 2,0 hanno alcu
     
 - Esiste una risorsa a cui il client ha bisogno di un livello di accesso specifico e questa risorsa è protetta da un servizio directory, in questo caso la risorsa è Skype for Business Server.
     
-- C'è una connessione OAuth, in altre parole, una connessione dedicata a autorizzare ** un utente ad accedere a una risorsa. (OAuth è noto anche per il nome più descrittivo, "server-to-server", ed è spesso abbreviato in S2S.)
+- C'è una connessione OAuth, in altre parole, una connessione dedicata a *autorizzare* un utente ad accedere a una risorsa. (OAuth è noto anche per il nome più descrittivo, "server-to-server", ed è spesso abbreviato in S2S.)
     
 Nelle conversazioni di Skype for Business Server Modern Authentication (ADAL), Skype for Business Server comunica tramite ADFS (ADFS 3,0 in Windows Server 2012 R2). L'autenticazione può essere eseguita usando un altro provider di identità (IdP), ma è necessario configurare Skype for Business Server per comunicare direttamente con ADFS. Se ADFS non è stato configurato per l'utilizzo con Skype for Business Server, completare l' [installazione di ADFS](https://technet.microsoft.com/en-us/library/adfs2-step-by-step-guides%28v=ws.10%29.aspx).
   

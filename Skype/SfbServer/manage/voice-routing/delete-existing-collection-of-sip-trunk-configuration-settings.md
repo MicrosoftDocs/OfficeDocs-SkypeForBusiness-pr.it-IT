@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: 'Le impostazioni di configurazione trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (IP-Public Branch Exchange) o un SBC (Session Border Controller) presso il provider di servizi. '
-ms.openlocfilehash: 55636cc34df4b05ccdd4b9035ef3aa4bb169e9a0
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5be81bccdb5df94cff4e8a2a13aaabb20dfdce29
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187025"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816976"
 ---
 # <a name="delete-an-existing-collection-of-sip-trunk-configuration-settings-in-skype-for-business-server"></a>Eliminare una raccolta esistente di impostazioni di configurazione del trunk SIP in Skype for Business Server
 
@@ -35,8 +37,8 @@ Gli amministratori possono anche creare impostazioni di configurazione trunk per
 
 1. Nel pannello di controllo di Skype for Business Server fare clic su **routing vocale**e quindi su **configurazione trunk**.
 2. Nella scheda **configurazione trunk** selezionare la raccolta di impostazioni di configurazione trunk SIP da eliminare, fare clic su **modifica**e quindi fare clic su **Elimina**. Per eliminare più raccolte nella stessa operazione, fare clic sulla prima raccolta da eliminare, quindi tenere premuto CTRL e fare clic su eventuali raccolte aggiuntive che si desidera rimuovere.
-3. La proprietà **state** per la raccolta verrà aggiornata in UNCOMMITTED. **** Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **commit** e quindi su **commit tutti**.
-4. Nella finestra di dialogo **impostazioni di configurazione vocale** non impegnata fare clic su **OK**.
+3. La proprietà **state** per la raccolta verrà aggiornata in **UNCOMMITTED**. Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **commit** e quindi su **commit tutti**.
+4. Nella finestra di dialogo **impostazioni di configurazione vocale non impegnata** fare clic su **OK**.
 5. Nella finestra di dialogo **Pannello di controllo di Skype for Business Server** fare clic su **OK**.
 6. Se si cambia idea e si decide di non eliminare la raccolta, fare clic su **commit**e quindi su **Annulla tutte le modifiche non salvate**. Quando viene visualizzata la finestra **di dialogo Pannello di controllo di Skype for Business Server** , fare clic su **OK**.
 

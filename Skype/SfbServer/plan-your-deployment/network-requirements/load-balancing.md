@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 84489328-64a4-486c-9384-a3e5c8ed9c8b
 description: 'Riepilogo: rivedere le considerazioni di bilanciamento del carico prima di implementare Skype for Business Server.'
-ms.openlocfilehash: 2db9b7aa37f71d445feb3cfd9a09e49f44ca48f0
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 199c93528d89786573bdac16077f1e32feb1fe6f
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194914"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802046"
 ---
 # <a name="load-balancing-requirements-for-skype-for-business"></a>Requisiti per il bilanciamento del carico per Skype for Business
  
@@ -89,7 +91,7 @@ Per le distribuzioni che **non useranno** l'affinità basata su cookie:
   
 - Nella regola di pubblicazione del proxy inverso per la porta 4443 impostare **Inoltra intestazione host** su true. In questo modo verrà inoltrato l'URL originale.
     
-Per le distribuzioni **** che utilizzeranno l'affinità basata su cookie:
+Per le distribuzioni **che** utilizzeranno l'affinità basata su cookie:
   
 - Nella regola di pubblicazione del proxy inverso per la porta 4443 impostare **Inoltra intestazione host** su true. In questo modo verrà inoltrato l'URL originale.
     
@@ -114,7 +116,7 @@ Se si distribuiscono dispositivi mobili, il dispositivo di bilanciamento del car
   
 Di seguito sono riportati i requisiti di bilanciamento del carico hardware per i servizi Web Director e front end pool:
   
-- Per i VIP dei servizi Web interni, impostare la persistenza Source_addr (porta interna 80, 443) nel servizio di bilanciamento del carico hardware. Per Skype for Business Server, la persistenza di Source_addr indica che più connessioni provenienti da un singolo indirizzo IP vengono sempre inviate a un server per mantenere lo stato della sessione.
+- Per i VIP dei servizi Web interni, imposta Source_addr persistenza (porta interna 80, 443) sul servizio di bilanciamento del carico hardware. Per Skype for Business Server, Source_addr persistenza indica che più connessioni provenienti da un singolo indirizzo IP vengono sempre inviate a un server per mantenere lo stato della sessione.
     
 - Usare il timeout di inattività TCP di 1800 secondi.
     
@@ -143,8 +145,8 @@ Puoi definire il monitoraggio della porta sui dispositivi di bilanciamento del c
 
 |**IP virtuale/porta**|**Porta nodi**|**Nodo macchina/monitor**|**Profilo di persistenza**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|
-|\<pool\>web_mco_443_vs  <br/> 443  <br/> |4443  <br/> |Front-end  <br/> 5061  <br/> |Nessuno  <br/> |HTTPS  <br/> |
-|\<pool\>web_mco_80_vs  <br/> 80  <br/> |8080  <br/> |Front-end  <br/> 5061  <br/> |Nessuno  <br/> |HTTP  <br/> |
+|\<web_mco_443_vs\>del pool  <br/> 443  <br/> |4443  <br/> |Front-end  <br/> 5061  <br/> |Nessuno  <br/> |HTTPS  <br/> |
+|\<web_mco_80_vs\>del pool  <br/> 80  <br/> |8080  <br/> |Front-end  <br/> 5061  <br/> |Nessuno  <br/> |HTTP  <br/> |
    
 ## <a name="dns-load-balancing"></a>Bilanciamento del carico DNS
 <a name="BKMK_DNSLoadBalancing"> </a>
@@ -233,7 +235,7 @@ La distribuzione di bilanciamento del carico DNS nei pool di front end e nei poo
   
 - Un pool che usa il bilanciamento del carico DNS deve avere due nomi di dominio completi: il nome di dominio completo del pool normale usato dal bilanciamento del carico DNS, ad esempio pool01.contoso.com, e viene risolto nell'IPs fisico dei server del pool e un altro nome di dominio completo per i servizi Web del pool, ad esempio web01.contoso.com), che viene risolto nell'indirizzo IP virtuale del pool. 
     
-    In Generatore di topologia, se si vuole distribuire il bilanciamento del carico DNS per un pool, per creare il nome di dominio completo aggiuntivo per i servizi Web del pool, è necessario selezionare la casella di controllo Sostituisci il nome FQDN del **pool di servizi Web interni** e digitare il nome di dominio completo nell' **URL di servizi Web per **pagina del pool.
+    In Generatore di topologia, se si vuole distribuire il bilanciamento del carico DNS per un pool, per creare il nome di dominio completo aggiuntivo per i servizi Web del pool, è necessario selezionare la casella di controllo **Sostituisci il nome FQDN del pool di servizi Web interni** e digitare il nome di dominio completo nella pagina **specifica gli URL dei servizi Web per questo pool** .
     
 - Per supportare il nome di dominio completo usato dal bilanciamento del carico DNS, è necessario eseguire il provisioning del DNS per risolvere il nome di dominio completo del pool, ad esempio pool01.contoso.com, agli indirizzi IP di tutti i server del pool (ad es. 192.168.1.1, 192.168.1.2 e così via). Dovresti includere solo gli indirizzi IP dei server attualmente distribuiti.
     

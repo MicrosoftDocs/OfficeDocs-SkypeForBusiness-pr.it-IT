@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Area di rete * sono gli hub di rete o i backbone usati nella configurazione del controllo di ammissione alle chiamate, E9-1-1 e bypass multimediale.
-ms.openlocfilehash: 8d1d60389fe910e2b5c2b8b1c357520aad30db96
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c08232e455edb4388a052c2859b35e6c137b890a
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188564"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817485"
 ---
 # <a name="managing-network-regions-in-skype-for-business-server"></a>Gestione delle aree di rete in Skype for Business Server
 
@@ -33,7 +35,7 @@ Un'area geografica di rete interconnette varie parti di una rete in più aree ge
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
 
 4.  Nella pagina **area geografica** fare clic sull'area che si vuole visualizzare.
   
@@ -76,7 +78,7 @@ Un'area geografica di rete interconnette varie parti di una rete in più aree ge
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
 
 4.  Nella pagina **area** fare clic su **nuovo**.
 
@@ -100,7 +102,7 @@ La tabella **siti associati** non viene usata per la creazione di un'area di ret
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
 
 4.  Nella pagina **area** fare clic sull'area che si vuole modificare.
 
@@ -123,7 +125,7 @@ Un'area geografica di rete interconnette varie parti di una rete in più aree ge
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
 
 4.  Nella pagina **area** fare clic sull'area che si desidera eliminare.
   

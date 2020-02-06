@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: e9f0dcf7-66b4-4196-9e8c-b14721b1fb84
 description: "Riepilogo: leggere questo argomento per informazioni su come pianificare l'archiviazione in Skype for Business Server."
-ms.openlocfilehash: 9d24457d8345aa6b496489b68347a98c069abc69
-ms.sourcegitcommit: d4248fefd706616bd3ccc5b510a6696303fa88e1
+ms.openlocfilehash: 92658ef139464cacaa7f66abb2cf3aa6294b463b
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "36195933"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816085"
 ---
 # <a name="plan-for-archiving-in-skype-for-business-server"></a>Pianificare l'archiviazione in Skype for Business Server
  
@@ -136,7 +138,7 @@ Quando si aggiungono database di archiviazione di SQL Server alla topologia, è 
   
 Se si colloca il database di archiviazione con il database di monitoraggio, il database back-end o entrambi i database, è possibile usare una singola istanza di SQL per uno o tutti i database oppure è possibile usare un'istanza SQL separata per ogni database, con le operazioni seguenti limitazione: ogni istanza SQL può contenere solo un database back-end, un singolo database di monitoraggio e un singolo database di archiviazione.
   
-Per informazioni dettagliate sulla collocazione di tutti i ruoli e i database del server, vedere Nozioni di base sulla topologia di [Skype for Business Server](../../plan-your-deployment/topology-basics/topology-basics.md). Per informazioni dettagliate sull'aggiornamento della topologia per includere i database di archiviazione, vedere [creare e pubblicare una nuova topologia in Skype for Business Server](../../deploy/install/create-and-publish-new-topology.md).
+Per informazioni dettagliate sulla collocazione di tutti i ruoli e i database del server, vedere [nozioni di base sulla topologia di Skype for Business Server](../../plan-your-deployment/topology-basics/topology-basics.md). Per informazioni dettagliate sull'aggiornamento della topologia per includere i database di archiviazione, vedere [creare e pubblicare una nuova topologia in Skype for Business Server](../../deploy/install/create-and-publish-new-topology.md).
   
 ### <a name="determine-archiving-options-and-user-policies"></a>Determinare le opzioni di archiviazione e i criteri degli utenti
 

@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d53e990f-1c5f-46d1-9eb1-8396782c2753
 description: "Riepilogo: informazioni sull'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 723b7a9340737e3f1cec47112b33ff1175597cd0
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: a027cc7402bad7524343391f9bf7039dd077a46c
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186872"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816695"
 ---
 # <a name="repository-api-for-call-quality-dashboard-cqd-in-skype-for-business-server"></a>API del repository per Call Quality Dashboard (Call Quality Dashboard) in Skype for Business Server
  
@@ -48,7 +50,7 @@ Call Quality dashboard usa l'API del repository per gestire le informazioni segu
     
   **Supporto CORS (Cross-Origin Resource Sharing) per l'API del repository**
   
-L'API del repository supporta la condivisione delle risorse CORS (Cross-Origin Resource Sharing). CORS è una caratteristica HTTP che consente a un'applicazione Web in uso in un dominio di accedere alle risorse in un altro dominio. I Web browser implementano una restrizione [](https://www.w3.org/Security/wiki/Same_Origin_Policy) di sicurezza nota come criterio di origine della stessa origine che impedisce la chiamata delle API in un dominio diverso da una pagina Web. CORS offre un modo sicuro per consentire a un dominio (il dominio di origine) di chiamare le API in un altro dominio. Vedere la [specifica CORS](https://www.w3.org/TR/cors/) per informazioni dettagliate su CORS.
+L'API del repository supporta la condivisione delle risorse CORS (Cross-Origin Resource Sharing). CORS è una caratteristica HTTP che consente a un'applicazione Web in uso in un dominio di accedere alle risorse in un altro dominio. I Web browser implementano una restrizione di sicurezza nota come criterio di origine [della stessa origine](https://www.w3.org/Security/wiki/Same_Origin_Policy) che impedisce la chiamata delle API in un dominio diverso da una pagina Web. CORS offre un modo sicuro per consentire a un dominio (il dominio di origine) di chiamare le API in un altro dominio. Vedere la [specifica CORS](https://www.w3.org/TR/cors/) per informazioni dettagliate su CORS.
   
  **Abilitazione di CORS per l'API del repository**
   

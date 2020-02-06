@@ -8,15 +8,17 @@ ms.date: 11/7/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: "Riepilogo: installare i file dell'agente di Operations Manager nel computer Skype for Business Server 2019 per il monitoraggio e configurare il computer in modo che funga da proxy del centro di sistema."
-ms.openlocfilehash: 3fbe75b50faa0896d2458525734239317d21e49e
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 162b2dc0b50b7da5246d69d64b0bdb307212c139
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40988971"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41799646"
 ---
 # <a name="configure-the-skype-for-business-server-computers-that-will-be-monitored"></a>Configurare i computer di Skype for Business Server che verranno monitorati
 

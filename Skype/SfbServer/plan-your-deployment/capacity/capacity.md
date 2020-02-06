@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: e557ed2c-9cb2-4c90-8fd1-96a814c47c19
 description: Gli argomenti di questa sezione consentono di capire come pianificare e distribuire Skype for Business Server in modo che sia possibile pianificare adeguatamente il numero di utenti dell'organizzazione e pianificare il carico del server che le proprie attività generano.
-ms.openlocfilehash: 121424e449ef6e960443b8ec56a1112181d3eb53
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 1d6148d12ad546e0a1120652054fb21fd3858381
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187928"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816075"
 ---
 # <a name="capacity-planning-for-skype-for-business-server"></a>Pianificazione della capacità per Skype for Business Server
  

@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: dc4c5d66-297c-48a5-91b9-b9b8ce44a6e0
 description: Skype for Business Server VoIP Enterprise Voice supporta il trunking di M:N tra Mediation Server e componenti come gateway PSTN, controller Border sessione e IP-PBX.
-ms.openlocfilehash: 24be86c3b174eff70632ddd85a71b5ee7016b990
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d9a4a4f08f71cf00e079a5fe9fc5598380936474
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187640"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802736"
 ---
 # <a name="mn-trunk-in-skype-for-business-server"></a>Trunk M:N in Skype for Business Server
  
@@ -27,7 +29,7 @@ Skype for Business Server VoIP Enterprise Voice supporta il trunking di M:N tra 
   
 Skype for Business Server supporta una maggiore flessibilità nella definizione di un trunk per scopi di routing delle chiamate da versioni precedenti. Un trunk è un'associazione logica tra un Mediation Server e un numero di porta in ascolto con un gateway e un numero di porta in ascolto. Questo implica diversi elementi: un Mediation Server può avere più Trunks nello stesso gateway; un Mediation Server può avere più Trunks in Gateway diversi; viceversa, un gateway può avere più Trunks in diversi server di mediazione.
   
-È comunque necessario creare un trunk radice ogni volta che si usa generatore di topologie per Adde un gateway alla topologia. Il numero di gateway che un server di mediazione specifico può gestire dipende dalla capacità di elaborazione del server durante le ore di punta occupato. Se si distribuisce un Mediation Server su hardware che supera i requisiti hardware minimi per Skype for Business Server, come descritto in [requisiti del server per Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md), viene stimato il numero di chiamate non di bypass attive a il server di mediazione autonomo può gestire circa 1000 chiamate. Una volta distribuite su hardware che soddisfano queste specifiche, è previsto che il Mediation Server esegua la transcodifica, ma continui a eseguire chiamate per più gateway, anche se i gateway non supportano il bypass multimediale.
+È comunque necessario creare un trunk radice ogni volta che si usa generatore di topologie per Adde un gateway alla topologia. Il numero di gateway che un server di mediazione specifico può gestire dipende dalla capacità di elaborazione del server durante le ore di punta occupato. Se si distribuisce un Mediation Server su hardware che supera i requisiti hardware minimi per Skype for Business Server, come descritto in [requisiti del server per Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md), la stima del numero di chiamate non di bypass attive in un server di mediazione autonomo può essere gestito in base a circa 1000 chiamate. Una volta distribuite su hardware che soddisfano queste specifiche, è previsto che il Mediation Server esegua la transcodifica, ma continui a eseguire chiamate per più gateway, anche se i gateway non supportano il bypass multimediale.
   
 Quando si definisce una route di chiamata, è necessario specificare i trunk associati alla route, ma non si specificano i server di mediazione associati alla route. Puoi invece usare generatore di topologia per associare Trunks a Mediation Servers. In altre parole, il routing determina il trunk da usare per una chiamata e, successivamente, il Mediation Server associato a tale trunk viene inviato alla segnalazione per la chiamata.
   

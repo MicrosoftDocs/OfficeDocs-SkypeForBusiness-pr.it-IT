@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 26cb409d-f4e4-43c7-873f-b694702d491d
 description: 'Riepilogo: informazioni su Unified Communications Web API (UCWA) in Skype for Business Server.'
-ms.openlocfilehash: bbded70318190fb4fa68ab524a696183c97ff07d
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: db6aee15564fe9fca05c33ec5a6dd37988195956
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188645"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817625"
 ---
 # <a name="ucwa-events-in-skype-for-business-server"></a>Eventi UCWA in Skype for Business Server
  

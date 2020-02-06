@@ -8,15 +8,17 @@ ms.date: 10/20/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 2e12613e-59f2-4810-a32d-24a9789a4a6e
 description: Questa sezione descrive le impostazioni globali e gli oggetti e i gruppi di servizi e di amministrazione universali creati dal passaggio di preparazione della foresta.
-ms.openlocfilehash: ece4a9bd1db5f43b52a96265dee41ee3a0a30b22
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 26917915d89aff721e74f094eb8ad5bb72db3cf6
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194869"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815534"
 ---
 # <a name="changes-made-by-forest-preparation-in-skype-for-business-server"></a>Modifiche apportate dalla preparazione della foresta in Skype for Business Server
 
@@ -24,7 +26,7 @@ Questa sezione descrive le impostazioni globali e gli oggetti e i gruppi di serv
 
 ## <a name="active-directory-global-settings-and-objects"></a>Impostazioni globali e oggetti di Active Directory
 
-Se si archiviano le impostazioni globali nel contenitore di configurazione (come nel caso di tutte le nuove distribuzioni di Skype for Business Server), la preparazione della foresta usa il contenitore di servizi esistente e aggiunge un oggetto **RTC Service** in Configuration\Services. oggetto. Sotto l'oggetto servizio RTC, la preparazione della foresta aggiunge un oggetto **Impostazioni globali** di tipo msRTCSIP-GlobalContainer. L'oggetto impostazioni globali contiene tutte le impostazioni applicabili alla distribuzione di Skype for Business Server. Se si archiviano le impostazioni globali nel contenitore di sistema, la preparazione della foresta usa un contenitore Microsoft nel contenitore di sistema del dominio radice e un oggetto servizio RTC sotto l'oggetto System\microsoft..
+Se si archiviano le impostazioni globali nel contenitore di configurazione (come nel caso di tutte le nuove distribuzioni di Skype for Business Server), la preparazione della foresta usa il contenitore di servizi esistente e aggiunge un oggetto **RTC Service** sotto l'oggetto Configuration\Services.. Sotto l'oggetto servizio RTC, la preparazione della foresta aggiunge un oggetto **Impostazioni globali** di tipo msRTCSIP-GlobalContainer. L'oggetto impostazioni globali contiene tutte le impostazioni applicabili alla distribuzione di Skype for Business Server. Se si archiviano le impostazioni globali nel contenitore di sistema, la preparazione della foresta usa un contenitore Microsoft nel contenitore di sistema del dominio radice e un oggetto servizio RTC sotto l'oggetto System\microsoft..
 
 La preparazione della foresta aggiunge anche un nuovo oggetto **msRTCSIP-Domain** per il dominio radice in cui viene eseguita la procedura.
 
@@ -123,14 +125,14 @@ La preparazione della foresta crea sia gli assi privati che quelli pubblici. Cre
 
 Nel contenitore di configurazione, in contesto dei nomi di configurazione, la preparazione della foresta esegue le attività seguenti:
 
-- Aggiunge una voce **{AB255F23-2DBD-4bb6-891D-38754AC280EF}** per la pagina delle **proprietà RTC** in attributi adminContextMenu e adminPropertyPages dello specificatore di visualizzazione della lingua per utenti, contatti e INETORGPERSON, ad esempio CN = User-display, CN = 409, CN = DisplaySpecifiers).
+- Aggiunge una voce **{AB255F23-2DBD-4bb6-891D-38754AC280EF}** per la pagina delle **proprietà RTC** in attributi adminContextMenu e adminPropertyPages dello specificatore di visualizzazione della lingua per utenti, contatti e INETORGPERSON, ad esempio CN = user-Display, CN = 409, CN = DisplaySpecifiers.
 
 - Aggiunge un oggetto **RTCPropertySet** di tipo **controlAccessRight** in **Extended-Rights** che si applica alle classi User e Contact.
 
 - Aggiunge un oggetto **RTCUserSearchPropertySet** di tipo **controlAccessRight** in **Extended-Rights** che si applica alle classi User, Contact, ou e DomainDNS.
 
-- Aggiunge **msRTCSIP-PrimaryUserAddress** nell'attributo **Columns** di ogni specificatore di visualizzazione dell'unità organizzativa (ad esempio, CN = ORGANIZATIONALUNIT-display, CN = 409, CN = DisplaySpecifiers) e copia i valori della **** attributo Columns della visualizzazione predefinita, ad esempio CN = default-display, CN = 409, CN = DisplaySpecifiers).
+- Aggiunge **msRTCSIP-PrimaryUserAddress** nell'attributo **Columns** di ogni specificatore di visualizzazione dell'unità organizzativa (ad esempio, CN = ORGANIZATIONALUNIT-display, CN = 409, CN = DisplaySpecifiers) e copia i valori dell'attributo **Columns** della visualizzazione predefinita, ad esempio CN = default-display, CN = 409, CN = DisplaySpecifiers.
 
-- Aggiunge gli attributi di filtro msRTCSIP **-PrimaryUserAddress**, **msRTCSIP-PrimaryHomeServer**e **msRTCSIP-UserEnabled** nell'attributo **nell'attributeDisplayNames** di ogni identificatore di visualizzazione della lingua per utenti, contatti, e gli oggetti InetOrgPerson, ad esempio in inglese: CN = user-Display, CN = 409, CN = DisplaySpecifiers).
+- Aggiunge gli attributi di filtro msRTCSIP **-PrimaryUserAddress**, **msRTCSIP-PrimaryHomeServer**e **msRTCSIP-UserEnabled** nell'attributo **nell'attributeDisplayNames** di ogni identificatore di visualizzazione della lingua per gli utenti, i contatti e gli oggetti InetOrgPerson, ad esempio in inglese: CN = user-Display, CN = 409, CN = DisplaySpecifiers.
 
 

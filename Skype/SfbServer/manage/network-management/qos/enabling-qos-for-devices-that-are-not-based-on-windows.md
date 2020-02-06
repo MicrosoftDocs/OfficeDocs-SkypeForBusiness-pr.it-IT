@@ -1,5 +1,5 @@
 ---
-title: Abilitazione di QoS per i dispositivi non basati su Windows
+title: Abilitazione di QoS per dispositivi non basati su Windows
 ms.reviewer: ''
 ms:assetid: 26f793df-aef8-4028-9e3b-6c2c37ea61b9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204750(v=OCS.15)
@@ -11,14 +11,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Informazioni su come abilitare QoS per i dispositivi usati nell'organizzazione che usano un sistema operativo diverso da Windows.
-ms.openlocfilehash: 956fff0e7fc69b1950e35261c02f9f44977510ce
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 74f964f6156c8b2f2d7a7359193b5dbffe95a011
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37341942"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817415"
 ---
 # <a name="enabling-qos-in-skype-for-business-server-for-devices-that-are-not-based-on-windows"></a>Abilitazione di QoS in Skype for Business Server per dispositivi non basati su Windows
 

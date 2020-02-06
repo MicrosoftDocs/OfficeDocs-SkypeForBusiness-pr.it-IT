@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 2abee804-2599-48bb-90b2-15df0bae5e20
 description: Pianificazione dell'applicazione di annunci in Skype for Business Server VoIP aziendale, che configura le operazioni da eseguire con le chiamate telefoniche a numeri di telefono non assegnati nelle organizzazioni. Include i requisiti per i file audio.
-ms.openlocfilehash: af7ce9fdcfa78daa875a4748eafac5020246b74b
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: d160878030fad30dd3e91b78f54ffcdab722299f
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187802"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41803266"
 ---
 # <a name="plan-for-the-announcement-application-in-skype-for-business"></a>Pianificare l'applicazione di annunci in Skype for business
 

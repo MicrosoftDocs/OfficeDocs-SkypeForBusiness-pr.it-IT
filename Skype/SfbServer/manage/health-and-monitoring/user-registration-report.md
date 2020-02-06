@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 151d5cc9-cc1b-4cfa-be9c-55ebe321f7a4
 description: 'Riepilogo: informazioni sul report di registrazione degli utenti in Skype for Business Server.'
-ms.openlocfilehash: 721d0b814a970ccb32df8eb83251099d8cb4801d
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 7923db1ceac936825508f438d5d0437071e89c62
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40991691"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817605"
 ---
 # <a name="user-registration-report-in-skype-for-business-server"></a>Report di registrazione degli utenti in Skype for Business Server
  

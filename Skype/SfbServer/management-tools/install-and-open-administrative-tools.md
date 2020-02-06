@@ -1,5 +1,5 @@
 ---
-title: Installare e aprire gli strumenti di amministrazione
+title: Installare e aprire strumenti di amministrazione
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Questo argomento descrive come installare e aprire gli strumenti di amministrazione necessari per la distribuzione e la gestione di Skype for business.
-ms.openlocfilehash: 612ea46fe8870944fa4b460b034bb9a7386a88bc
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: c720aba3998df8742406f4c9954f523b20e9af5f
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36186785"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816555"
 ---
-# <a name="install-and-open-administrative-tools"></a>Installare e aprire gli strumenti di amministrazione
+# <a name="install-and-open-administrative-tools"></a>Installare e aprire strumenti di amministrazione
 
 Questo argomento descrive come installare gli strumenti di amministrazione necessari per la distribuzione e la gestione di Skype for Business Server. Gli strumenti di amministrazione vengono installati per impostazione predefinita in ogni server che esegue Skype for Business Server. È inoltre possibile installare gli strumenti di amministrazione in altri computer, ad esempio le console amministrative dedicate. Ti consigliamo vivamente di installare gli strumenti di amministrazione in un computer che si trova nello stesso dominio o foresta della distribuzione di Skype for Business Server che stai creando, per assicurarti che la procedura di preparazione dei servizi di dominio Active Directory sia già completata. che consente di usare gli strumenti di amministrazione nel computer in un secondo momento per pubblicare la topologia. Assicurati anche di esaminare i requisiti necessari prima di installare o usare gli strumenti di amministrazione di Skype for Business Server. Vedere la documentazione relativa ai requisiti in [Skype for Business server 2019](../../SfBServer2019/plan/system-requirements.md) o [Skype for Business Server 2015](../plan-your-deployment/requirements-for-your-environment/requirements-for-your-environment.md).
  

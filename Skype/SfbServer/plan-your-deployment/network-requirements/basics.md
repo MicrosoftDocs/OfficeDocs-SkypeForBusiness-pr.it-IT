@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 2618cfa1-2e2c-4f1d-a5e5-70a0286591a7
 description: Windows Server 2016 include un software incorporato in grado di fornirvi servizi DNS, quindi è consigliabile rivedere la documentazione disponibile, ad esempio la Guida allo scenario dei criteri DNS. Se si preferisce, è possibile scegliere una soluzione di terze parti.
-ms.openlocfilehash: c1084a756a79ebcf15b8e99eef049690b5dcd9af
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5438ee6ccedda6e840ca706cf285af49326a3bf4
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194915"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815794"
 ---
 # <a name="dns-basics"></a>Nozioni di base sul DNS
  
@@ -28,9 +30,9 @@ Ti consigliamo di usare una procedura consigliata per dedicare un server specifi
 Ogni mapping di un nome a un indirizzo IP (che potrebbe essere un indirizzo IPv4 o IPv6) viene archiviato in un record DNS nel server DNS. Il nome è descritto nel report DNS in modo specifico come FQDN, un nome di dominio completo. Mentre *contoso.com* è un nome di dominio valido, è una scorciatoia per * \*. contoso.com* , quindi è ambiguo e potrebbe riferirsi a qualsiasi server nel dominio. Un esempio di FQDN che fa riferimento a un singolo server nel dominio può essere **meeting01.contoso.com**.
   
 > [!IMPORTANT]
-> Per impostazione predefinita, il nome del computer di un computer che non è associato a un dominio è un nome host e non un nome di dominio completo (FQDN). Generatore di topologie USA FQDN e non i nomi host. Devi quindi configurare un suffisso DNS sul nome del computer da distribuire come server perimetrale che non è associato a un dominio. **Usare solo caratteri standard** (inclusi A-Z, a-z, 0-9 e segni meno) durante l'assegnazione di nomi di dominio completi ai server che utilizzano Skype for Business Server. Non usare caratteri Unicode o carattere di sottolineatura. I caratteri non standard di un nome di dominio completo spesso non sono supportati dal DNS esterno e dalle CA pubbliche, ovvero quando il nome di dominio completo deve essere assegnato a SN nel certificato.
+> Per impostazione predefinita, il nome del computer di un computer che non è associato a un dominio è un nome host e non un nome di dominio completo (FQDN). Generatore di topologie USA FQDN e non i nomi host. Devi quindi configurare un suffisso DNS sul nome del computer da distribuire come server perimetrale che non è associato a un dominio. Quando si assegnano FQDN ai server che usano Skype for Business Server, è necessario **usare solo caratteri standard** (inclusi a-z, a-z, 0-9 e segni meno). Non usare caratteri Unicode o carattere di sottolineatura. I caratteri non standard di un nome di dominio completo spesso non sono supportati dal DNS esterno e dalle CA pubbliche, ovvero quando il nome di dominio completo deve essere assegnato a SN nel certificato.
   
-Oltre a un indirizzo IP, il nome di dominio completo può essere **** mappato a un indirizzo IP virtuale. Un VIP è un indirizzo IP che non corrisponde a un'interfaccia di rete fisica effettiva. Un VIP spesso punta a un pool di server che eseguono un ruolo del server o a una coppia di server configurati per la ridondanza e la tolleranza d'errore.
+Oltre a un indirizzo IP, il nome di dominio completo può essere mappato **a un indirizzo** IP virtuale. Un VIP è un indirizzo IP che non corrisponde a un'interfaccia di rete fisica effettiva. Un VIP spesso punta a un pool di server che eseguono un ruolo del server o a una coppia di server configurati per la ridondanza e la tolleranza d'errore.
   
 Esistono diversi tipi di record DNS, quelli più rilevanti per la discussione: 
   

@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: "È possibile configurare i collegamenti tra due aree di rete nell'ambito del controllo di ammissione di chiamata (CAC). "
-ms.openlocfilehash: b9ffa45c8a0a09ba4a7f9f0ebf6402b87116f01f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 4a643f34b9525b53168b9015b77a7f8292abd417
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188585"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817525"
 ---
 # <a name="linking-network-regions-in-skype-for-business-server"></a>Collegamento delle aree di rete in Skype for Business Server
 
@@ -31,7 +33,7 @@ ms.locfileid: "36188585"
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su collegamento all'area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su collegamento all' **area geografica**.
 
 4.  Nella pagina **collegamento all'area geografica** fare clic sul collegamento all'area che si desidera visualizzare.
     
@@ -73,7 +75,7 @@ Per informazioni dettagliate, vedere [Get-CsNetworkRegionLink](https://docs.micr
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su collegamento all'area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su collegamento all' **area geografica**.
 
 4.  Nella pagina **collegamento all'area geografica** fare clic su **nuovo**.
 
@@ -96,7 +98,7 @@ Per informazioni dettagliate, vedere [Get-CsNetworkRegionLink](https://docs.micr
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su collegamento all'area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su collegamento all' **area geografica**.
 
 4.  Nella pagina **collegamento all'area geografica** fare clic sul collegamento all'area che si desidera modificare.
 
@@ -117,7 +119,7 @@ Per informazioni dettagliate, vedere [Get-CsNetworkRegionLink](https://docs.micr
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su collegamento all'area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su collegamento all' **area geografica**.
 
 4.  Nella pagina **collegamento all'area geografica** fare clic sul collegamento all'area che si desidera eliminare.
  

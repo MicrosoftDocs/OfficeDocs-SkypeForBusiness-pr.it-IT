@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Una route dell'area di rete definisce la route tra una coppia di aree della rete. Ogni coppia di aree della rete nella distribuzione del controllo di ammissione alle chiamate richiede una route dell'area di rete.
-ms.openlocfilehash: 174fdd021655f3e338001582a1409107b266582e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5e0c099b8c461873b96963c721d835f1ccdf4705
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188567"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817495"
 ---
-# <a name="managing-network-region-routes-in-skype-for-business-server"></a>Gestione delle route dell'area di rete in Skype for Business Server
+# <a name="managing-network-region-routes-in-skype-for-business-server"></a>Gestione delle route delle aree di rete in Skype for Business Server
 
 Una *route dell'area di rete* definisce la route tra una coppia di aree della rete. Ogni coppia di aree della rete nella distribuzione del controllo di ammissione alle chiamate richiede una route dell'area di rete. In questo modo ogni area di rete della distribuzione consente di accedere a tutte le altre aree geografiche. Usare le procedure descritte in questo artilce per visualizzare, creare, modificare o eliminare le route dell'area di rete.
 
@@ -30,7 +32,7 @@ Ogni area geografica in una configurazione di controllo di ammissione chiamata (
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
 
 4.  Nella pagina **route dell'area geografica** fare clic sulla route dell'area geografica che si desidera visualizzare.
 
@@ -73,7 +75,7 @@ Ogni area geografica in una configurazione di controllo di ammissione chiamata (
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
 
 4.  Nella pagina **Route Region** fare clic su **nuovo**.
 
@@ -100,7 +102,7 @@ Ogni area geografica in una configurazione di controllo di ammissione chiamata (
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
 
 4.  Nella pagina **Route Region** fare clic sulla route dell'area geografica che si desidera modificare.
 
@@ -121,7 +123,7 @@ Ogni area geografica in una configurazione di controllo di ammissione chiamata (
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su area geografica. ****
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
 
 4.  Nella pagina **route dell'area geografica** fare clic sulla route di area che si desidera eliminare.
 

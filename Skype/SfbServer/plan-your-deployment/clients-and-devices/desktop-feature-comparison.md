@@ -8,6 +8,8 @@ ms.date: 2/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 16b14d59-7737-4f9d-aa4d-83765a18ea07
 description: 'Riepilogo: gli amministratori di Skype for Business Server 2015 o Skype for business online possono usare queste tabelle per comprendere quali funzionalità sono supportate dai client.'
-ms.openlocfilehash: a1df39ed3a426c7e01e753222526b0f18f260f19
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b2a5bd1f0544713501bfce2fc0dffc9776ec64e2
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187886"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41803676"
 ---
 # <a name="desktop-client-feature-comparison-for-skype-for-business-server-2015"></a>Confronto tra funzionalità client desktop per Skype for Business Server 2015
 
@@ -38,7 +40,7 @@ Le tabelle seguenti mostrano le caratteristiche disponibili per ogni client che 
 > Skype for Business Server 2015 e Skype for business online supportano i seguenti client rilasciati in precedenza: Lync 2013, Lync 2010, Lync 2010 mobile, Lync Phone Edition e Lync 2010 Attendant. Per informazioni su questi client quando vengono usati con altri server, vedere le [tabelle di confronto dei client per Lync server 2013](https://technet.microsoft.com/en-us/library/gg425836%28v=ocs.15%29.aspx) e le [tabelle di confronto dei client per Lync Server 2010](https://technet.microsoft.com/en-us/library/gg425836%28v=ocs.14%29.aspx).
 
 > [!NOTE]
-> Il client di supervisore di **Lync 2010** non è supportato in Skype for business online.
+> Il client di **Supervisore di Lync 2010** non è supportato in Skype for business online.
 
 > [!NOTE]
 > L'app client browser Skype for Business Web App e riunioni Skype app Windows 10 offre solo [supporto](desktop-feature-comparison.md#BKMK_Conferencing)per le riunioni. Vedere [piano per i client di riunioni (app Web e riunioni)](meetings-clients.md) per altre informazioni su questi client.

@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Skype for Business Server Enterprise Voice instrada le chiamate in base ai numeri di telefono normalizzati in formato E. 164. Questo significa che tutte le stringhe con chiamata devono essere normalizzate in formato E. 164 allo scopo di eseguire la ricerca di numeri inversa (RNL) in modo che possano essere convertite nell'URI SIP corrispondente. Skype for Business Server offre la possibilità di modificare l'ID chiamato e la presentazione dell'ID chiamante.
-ms.openlocfilehash: 633b0c16fefb66d1ea44f96b5f32c2ca91f357f2
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: cdcfe3a847e148461b97abed33df070057dcd00b
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187037"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816986"
 ---
 # <a name="defining-translation-rules-in-skype-for-business-server"></a>Definizione delle regole di traduzione in Skype for Business Server
 
@@ -28,7 +30,7 @@ Skype for Business Server offre la possibilità di tradurre anche il numero di t
 
 **Per configurare l'ID chiamante tramite il pannello di controllo di Skype for Business Server**
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere delegare le [autorizzazioni di configurazione](https://technet.microsoft.com/en-us/library/gg412735(v=ocs.15).aspx).
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione](https://technet.microsoft.com/en-us/library/gg412735(v=ocs.15).aspx).
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Skype for business, vedere [installare e aprire strumenti di amministrazione](../../management-tools/install-and-open-administrative-tools.md).
 3. Sulla barra di spostamento sinistra fare clic su **routing vocale**e quindi su **configurazione trunk**.
 4. Nella pagina trunk Configuration fare doppio clic su un trunk esistente, ad esempio il trunk **globale** , per visualizzare la finestra di dialogo **modifica configurazione trunk** .
@@ -61,14 +63,14 @@ Seguire questa procedura se si vuole definire una regola di traduzione immettend
 
 **Per definire una regola usando lo strumento crea una regola di traduzione**
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere delegare le [autorizzazioni di configurazione](https://technet.microsoft.com/en-us/library/gg412735(v=ocs.15).aspx).
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione](https://technet.microsoft.com/en-us/library/gg412735(v=ocs.15).aspx).
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Skype for business, vedere [installare e aprire strumenti di amministrazione](../../management-tools/install-and-open-administrative-tools.md).
 3. Per iniziare a definire una regola di traduzione, seguire i passaggi descritti in [configurare un trunk con il bypass multimediale](GET LINK AFTER MIGRATION)tramite il passaggio 10 o [configurare un trunk senza bypass multimediale](GET LINK AFTER MIGRATION) tramite il passaggio 9.
 4. In **nome** nella pagina **nuova** regola di traduzione o **Modifica regola di traduzione** digitare un nome che descriva il modello di numero da tradurre.
 5. Opzionale In **Descrizione**Digitare una descrizione della regola di traduzione, ad esempio le **chiamate interurbane internazionali degli Stati Uniti**.
 6. Nella sezione **genera una regola di traduzione** della finestra di dialogo immettere i valori nei campi seguenti:
     - **Cifre iniziali**: (facoltativo) specificare le cifre iniziali dei numeri a cui si vuole che corrisponda il motivo. Ad esempio, immettere + in questo campo per abbinare i numeri nel formato E. 164 (che iniziano con +).
-    - **Length**: specificare il numero di cifre nel criterio di corrispondenza e selezionare se si vuole che il pattern corrisponda a numeri di lunghezza uguale a quella specificata, almeno questa lunghezza o qualsiasi lunghezza. Ad esempio, immetti **11** e **** seleziona almeno nell'elenco a discesa per abbinare i numeri di almeno 11 cifre in lunghezza.
+    - **Length**: specificare il numero di cifre nel criterio di corrispondenza e selezionare se si vuole che il pattern corrisponda a numeri di lunghezza uguale a quella specificata, almeno questa lunghezza o qualsiasi lunghezza. Ad esempio, immetti **11** e **Seleziona almeno nell'elenco a discesa** per abbinare i numeri di almeno 11 cifre in lunghezza.
     - **Cifre da rimuovere**: (facoltativo) specificare il numero di cifre iniziali da eliminare. Ad esempio, immettere **1** per eliminare il + dall'inizio del numero.
     - **Cifre da aggiungere**: (facoltativo) specificare le cifre da anteporre ai numeri tradotti. Ad esempio, immetti **011** se vuoi che 011 venga anteposto ai numeri tradotti quando viene applicata la regola.
     
@@ -96,7 +98,7 @@ Seguire questa procedura se si vuole definire una regola di traduzione scrivendo
 
 **Per definire manualmente una regola di traduzione**
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere delegare le [autorizzazioni di configurazione](https://technet.microsoft.com/en-us/library/gg412735(v=ocs.15).aspx).
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione](https://technet.microsoft.com/en-us/library/gg412735(v=ocs.15).aspx).
 2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Skype for business, vedere [installare e aprire strumenti di amministrazione](../../management-tools/install-and-open-administrative-tools.md).
 3. Per iniziare a definire una regola di traduzione, seguire i passaggi descritti in [configurare un trunk con il bypass multimediale](GET LINK AFTER MIGRATION)tramite il passaggio 10 o [configurare un trunk senza bypass multimediale](GET LINK AFTER MIGRATION) tramite il passaggio 9.
 4. Nel campo **nome** della pagina **nuova** regola di traduzione o **Modifica regola di traduzione** digitare un nome che descriva il modello di numero da tradurre.

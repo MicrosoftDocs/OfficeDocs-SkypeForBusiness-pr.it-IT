@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: I siti di rete sono gli uffici o le posizioni all'interno di ogni area di rete delle distribuzioni di controllo di ammissione di chiamata (CAC), E9-1-1 e bypass multimediale.
-ms.openlocfilehash: a90781eae38d92d560dd1bf34db3b6918e8aeaf5
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ec2a3dda70bdd4b952169ca663ca271b76f98481
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188582"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817515"
 ---
-# <a name="managing-call-admission-control-for-sites-in-skype-for-business-server"></a>Gestione del controllo dell'ammissione delle chiamate per i siti in Skype for Business Server
+# <a name="managing-call-admission-control-for-sites-in-skype-for-business-server"></a>Gestione del controllo di ammissione di chiamata per i siti in Skype for Business Server
 
 I siti di rete sono gli uffici o le posizioni all'interno di ogni area di rete delle distribuzioni di controllo di ammissione di chiamata (CAC), E9-1-1 e bypass multimediale. Usare le procedure descritte in questo articolo per configurare il controllo di ammissione delle chiamate per i siti di rete.
 

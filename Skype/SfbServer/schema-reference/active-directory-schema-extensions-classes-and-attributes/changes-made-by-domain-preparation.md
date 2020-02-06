@@ -8,15 +8,17 @@ ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 9191221e-6166-4c2b-837e-fa73d90fdf80
 description: Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) create dalla preparazione del dominio nella radice del dominio. Tutte le voci ACE vengono ereditate se non diversamente specificato.
-ms.openlocfilehash: afd6747590e09b0b86b42119ad34eb26eaf9d8db
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 8a087dfbbd8b670467727803f996694a816cc065
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194870"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41815544"
 ---
 # <a name="changes-made-by-domain-preparation-in-skype-for-business-server"></a>Modifiche apportate dalla preparazione del dominio in Skype for Business Server
  

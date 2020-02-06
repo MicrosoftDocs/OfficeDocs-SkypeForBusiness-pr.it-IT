@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: c551371c-d740-4372-bada-f0d713ec0d33
 description: I modelli di utenti descritti in questa sezione costituiscono la base per le misure e le raccomandazioni per la pianificazione della capacità descritte nell'uso del modello di capacità di pianificazione degli utenti per Skype for Business Server.
-ms.openlocfilehash: 9ce4bddcb4b058861230aeb78fd9363e2c8b8ac6
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f1bf079fa425d98b3619eb4ccd975253784f4fbe
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187904"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41816035"
 ---
 # <a name="user-models-in-skype-for-business-server"></a>Modelli utente in Skype for Business Server
  

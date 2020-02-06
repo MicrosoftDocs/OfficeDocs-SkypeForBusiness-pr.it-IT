@@ -11,14 +11,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Questo articolo descrive come configurare gli intervalli di porte per i clienti e configurare i criteri di qualità dei servizi in Skype for Business Server per i client in Windows 10.
-ms.openlocfilehash: 4d7999634864e222dd627ea3b46a3a3da5c67fe5
-ms.sourcegitcommit: 67282b5f2f1aac3e675c4a485f4846deba15deb4
+ms.openlocfilehash: 9a82a254ab5a01982e9f1d4bd3a994fd67c03615
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "36196066"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817425"
 ---
 # <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-clients-in-skype-for-business-server"></a>Configurazione di intervalli di porte e di criteri di qualità dei servizi per i clienti in Skype for Business Server
 
