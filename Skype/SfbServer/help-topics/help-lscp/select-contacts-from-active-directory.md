@@ -8,22 +8,24 @@ ms.date: 3/24/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- CSH
+ms.custom:
 - ms.lync.lscp.UserSelContact
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8732867c-4f78-454a-a4cc-49c3e76ce40c
 description: Usare la finestra di dialogo Seleziona da Active Directory per trovare i contatti che si desidera abilitare per Skype for business. Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato del contatto che si desidera trovare. Per recuperare tutti i contatti disponibili, lasciare vuota la casella di ricerca.
-ms.openlocfilehash: e21e7a728292a1681503b409b0ef159ff037ef75
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: ad36cbe1577d0e8594bf41dba4e6512988b2ac24
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41685949"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41822269"
 ---
-# <a name="select-contacts-from-active-directory"></a><span data-ttu-id="0a017-105">Selezionare contatti da Active Directory</span><span class="sxs-lookup"><span data-stu-id="0a017-105">Select Contacts from Active Directory</span></span>
+# <a name="select-contacts-from-active-directory"></a><span data-ttu-id="8f045-105">Selezionare contatti da Active Directory</span><span class="sxs-lookup"><span data-stu-id="8f045-105">Select Contacts from Active Directory</span></span>
  
-<span data-ttu-id="0a017-106">Usare la finestra di dialogo **Seleziona da Active Directory** per trovare i contatti che si desidera abilitare per Skype for business.</span><span class="sxs-lookup"><span data-stu-id="0a017-106">Use the **Select from Active Directory** dialog box to find contacts who you want to enable for Skype for Business.</span></span> <span data-ttu-id="0a017-107">Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato del contatto che si desidera trovare.</span><span class="sxs-lookup"><span data-stu-id="0a017-107">In the search box, type the SIP address or display name of the contact you want to find.</span></span> <span data-ttu-id="0a017-108">Per recuperare tutti i contatti disponibili, lasciare vuota la casella di ricerca.</span><span class="sxs-lookup"><span data-stu-id="0a017-108">To retrieve all available contacts, do not type anything in the search box.</span></span>
+<span data-ttu-id="8f045-106">Usare la finestra di dialogo **Seleziona da Active Directory** per trovare i contatti che si desidera abilitare per Skype for business.</span><span class="sxs-lookup"><span data-stu-id="8f045-106">Use the **Select from Active Directory** dialog box to find contacts who you want to enable for Skype for Business.</span></span> <span data-ttu-id="8f045-107">Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato del contatto che si desidera trovare.</span><span class="sxs-lookup"><span data-stu-id="8f045-107">In the search box, type the SIP address or display name of the contact you want to find.</span></span> <span data-ttu-id="8f045-108">Per recuperare tutti i contatti disponibili, lasciare vuota la casella di ricerca.</span><span class="sxs-lookup"><span data-stu-id="8f045-108">To retrieve all available contacts, do not type anything in the search box.</span></span>
   
-<span data-ttu-id="0a017-109">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="0a017-109">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="8f045-109">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="8f045-109">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
   
 

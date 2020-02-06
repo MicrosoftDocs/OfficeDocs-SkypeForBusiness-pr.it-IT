@@ -8,33 +8,35 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- NOCSH
+ms.custom:
 - ms.lync.tb.AddEdgeServerOptionsPage2010
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0b059af5-e83f-4564-90b2-d7ebb9e551c2
 description: 'Si definisce un nuovo Edge Server o un pool di Edge e si presenta la possibilità di definire le caratteristiche per il nuovo server o pool. Le opzioni che è possibile scegliere sono:'
-ms.openlocfilehash: 953aa6c0bcb5d5bf65f0ba649545aef909d3b647
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 983a8a6e4fdeea34930cc9adf2b2cb29e4c75759
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41698361"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41820988"
 ---
-# <a name="add-edge-server-options-for-lync-server-2010"></a><span data-ttu-id="dd5ee-104">Aggiungere opzioni per il server perimetrale per Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="dd5ee-104">Add Edge Server Options for Lync Server 2010</span></span>
+# <a name="add-edge-server-options-for-lync-server-2010"></a><span data-ttu-id="66e16-104">Aggiungere opzioni per il server perimetrale per Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="66e16-104">Add Edge Server Options for Lync Server 2010</span></span>
 
-<span data-ttu-id="dd5ee-105">Si definisce un nuovo Edge Server o un pool di Edge e si presenta la possibilità di definire le caratteristiche per il nuovo server o pool.</span><span class="sxs-lookup"><span data-stu-id="dd5ee-105">You define a new Edge Server or Edge pool and are presented with the opportunity to define features for the new server or pool.</span></span> <span data-ttu-id="dd5ee-106">Le opzioni che è possibile scegliere sono:</span><span class="sxs-lookup"><span data-stu-id="dd5ee-106">The options that you can choose are:</span></span>
+<span data-ttu-id="66e16-105">Si definisce un nuovo Edge Server o un pool di Edge e si presenta la possibilità di definire le caratteristiche per il nuovo server o pool.</span><span class="sxs-lookup"><span data-stu-id="66e16-105">You define a new Edge Server or Edge pool and are presented with the opportunity to define features for the new server or pool.</span></span> <span data-ttu-id="66e16-106">Le opzioni che è possibile scegliere sono:</span><span class="sxs-lookup"><span data-stu-id="66e16-106">The options that you can choose are:</span></span>
 
-- <span data-ttu-id="dd5ee-107">**Usare un singolo FQDN e un indirizzo IP**: selezionare la casella di controllo per usare un singolo IPv4 o IPv6 (se si sceglie di usare sia IPv4 che IPv6, sarà necessario definire uno dei singoli indirizzi IP) e il nome di dominio completo (FQDN) per le interfacce di Edge esterne.</span><span class="sxs-lookup"><span data-stu-id="dd5ee-107">**Use a single FQDN and IP address**: Select the check box to use a single IPv4 or IPv6 (if you choose to use both IPv4 and IPv6, then you will need to define one of each IP address type) address and fully qualified domain name (FQDN) for the external Edge interfaces.</span></span>
+- <span data-ttu-id="66e16-107">**Usare un singolo FQDN e un indirizzo IP**: selezionare la casella di controllo per usare un singolo IPv4 o IPv6 (se si sceglie di usare sia IPv4 che IPv6, sarà necessario definire uno dei singoli indirizzi IP) e il nome di dominio completo (FQDN) per le interfacce di Edge esterne.</span><span class="sxs-lookup"><span data-stu-id="66e16-107">**Use a single FQDN and IP address**: Select the check box to use a single IPv4 or IPv6 (if you choose to use both IPv4 and IPv6, then you will need to define one of each IP address type) address and fully qualified domain name (FQDN) for the external Edge interfaces.</span></span>
 
     > [!IMPORTANT]
-    > <span data-ttu-id="dd5ee-108">Se si sceglie questa opzione, si utilizzerà un solo indirizzo IP o uno IPv4 e un IPv6, ma è necessario assegnare numeri di porta diversi a ogni interfaccia Edge.</span><span class="sxs-lookup"><span data-stu-id="dd5ee-108">If you choose this option, you will use only one IP address, or one IPv4 and one IPv6, but you must assign different port numbers to each Edge interface.</span></span>
+    > <span data-ttu-id="66e16-108">Se si sceglie questa opzione, si utilizzerà un solo indirizzo IP o uno IPv4 e un IPv6, ma è necessario assegnare numeri di porta diversi a ogni interfaccia Edge.</span><span class="sxs-lookup"><span data-stu-id="66e16-108">If you choose this option, you will use only one IP address, or one IPv4 and one IPv6, but you must assign different port numbers to each Edge interface.</span></span>
 
-- <span data-ttu-id="dd5ee-109">**Enable Federation (porta 5061)**: selezionare questa casella di controllo se si vuole eseguire la Federazione con altre federazioni SIP, provider o offerte ospitate che usano il protocollo SIP (Session Initiation Protocol).</span><span class="sxs-lookup"><span data-stu-id="dd5ee-109">**Enable federation (port 5061)**: Select this check box if you will federate with other SIP federations, providers, or hosted offerings that use the session initiation protocol (SIP).</span></span>
+- <span data-ttu-id="66e16-109">**Enable Federation (porta 5061)**: selezionare questa casella di controllo se si vuole eseguire la Federazione con altre federazioni SIP, provider o offerte ospitate che usano il protocollo SIP (Session Initiation Protocol).</span><span class="sxs-lookup"><span data-stu-id="66e16-109">**Enable federation (port 5061)**: Select this check box if you will federate with other SIP federations, providers, or hosted offerings that use the session initiation protocol (SIP).</span></span>
 
-- <span data-ttu-id="dd5ee-110">**L'indirizzo IP esterno di questo pool di bordi viene tradotto da NAT**: selezionare questa casella di controllo se si usano indirizzi IP privati per le interfacce esterne di Edge e viene fornito un dispositivo NAT (Network Address Translation) per posizionare il pool di Edge o Edge in modo logico dietro.</span><span class="sxs-lookup"><span data-stu-id="dd5ee-110">**The external IP address of this Edge pool is translated by NAT**: Select this check box if you use private IP addresses for the Edge external interfaces and will provide a network address translation (NAT) device to place the Edge Server or Edge pool logically behind.</span></span>
+- <span data-ttu-id="66e16-110">**L'indirizzo IP esterno di questo pool di bordi viene tradotto da NAT**: selezionare questa casella di controllo se si usano indirizzi IP privati per le interfacce esterne di Edge e viene fornito un dispositivo NAT (Network Address Translation) per posizionare il pool di Edge o Edge in modo logico dietro.</span><span class="sxs-lookup"><span data-stu-id="66e16-110">**The external IP address of this Edge pool is translated by NAT**: Select this check box if you use private IP addresses for the Edge external interfaces and will provide a network address translation (NAT) device to place the Edge Server or Edge pool logically behind.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="dd5ee-111">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="dd5ee-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="66e16-111">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="66e16-111">See also</span></span>
 
-[<span data-ttu-id="dd5ee-112">Pianificazione per l'accesso degli utenti esterni</span><span class="sxs-lookup"><span data-stu-id="dd5ee-112">Planning for External User Access</span></span>](https://technet.microsoft.com/library/ea098933-eff5-461e-aba3-e7f128784dc2.aspx)
+[<span data-ttu-id="66e16-112">Pianificazione per l'accesso degli utenti esterni</span><span class="sxs-lookup"><span data-stu-id="66e16-112">Planning for External User Access</span></span>](https://technet.microsoft.com/library/ea098933-eff5-461e-aba3-e7f128784dc2.aspx)
 
-[<span data-ttu-id="dd5ee-113">Distribuzione dell'accesso degli utenti esterni</span><span class="sxs-lookup"><span data-stu-id="dd5ee-113">Deploying External User Access</span></span>](https://technet.microsoft.com/library/d40c9574-c16b-4fe6-b848-21ae0b7e4f0e.aspx)
+[<span data-ttu-id="66e16-113">Distribuzione dell'accesso degli utenti esterni</span><span class="sxs-lookup"><span data-stu-id="66e16-113">Deploying External User Access</span></span>](https://technet.microsoft.com/library/d40c9574-c16b-4fe6-b848-21ae0b7e4f0e.aspx)

@@ -7,58 +7,60 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogni directory di conferenza nel pool legacy.
-ms.openlocfilehash: 1cd4a3a3359ec1638c3ae93c6ce81d8ba2227b96
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: bdcb816a91f6bc4a4372141595e46ba2369618a6
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40988941"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41813284"
 ---
-# <a name="move-conference-directories"></a><span data-ttu-id="54ad7-103">Spostare le directory conferenze</span><span class="sxs-lookup"><span data-stu-id="54ad7-103">Move Conference Directories</span></span>
+# <a name="move-conference-directories"></a><span data-ttu-id="0e03a-103">Spostare le directory conferenze</span><span class="sxs-lookup"><span data-stu-id="0e03a-103">Move Conference Directories</span></span>
 
-<span data-ttu-id="54ad7-104">Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogni directory di conferenza nel pool legacy.</span><span class="sxs-lookup"><span data-stu-id="54ad7-104">Before decommissioning a pool, you must perform the following procedure for each conference directory in your legacy pool.</span></span>
+<span data-ttu-id="0e03a-104">Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogni directory di conferenza nel pool legacy.</span><span class="sxs-lookup"><span data-stu-id="0e03a-104">Before decommissioning a pool, you must perform the following procedure for each conference directory in your legacy pool.</span></span>
   
-### <a name="to-move-a-conference-directory-to-skype-for-business-server-2019"></a><span data-ttu-id="54ad7-105">Per trasferire una directory di conferenza in Skype for Business Server 2019</span><span class="sxs-lookup"><span data-stu-id="54ad7-105">To Move a Conference Directory to Skype for Business Server 2019</span></span>
+### <a name="to-move-a-conference-directory-to-skype-for-business-server-2019"></a><span data-ttu-id="0e03a-105">Per trasferire una directory di conferenza in Skype for Business Server 2019</span><span class="sxs-lookup"><span data-stu-id="0e03a-105">To Move a Conference Directory to Skype for Business Server 2019</span></span>
 
-1. <span data-ttu-id="54ad7-106">Aprire Skype for Business Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="54ad7-106">Open the Skype for Business Server Management Shell.</span></span>
+1. <span data-ttu-id="0e03a-106">Aprire Skype for Business Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="0e03a-106">Open the Skype for Business Server Management Shell.</span></span>
     
-2. <span data-ttu-id="54ad7-107">Per ottenere l'identità delle directory conferenza nell'organizzazione, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="54ad7-107">To obtain the identity of the conference directories in your organization, run the following command:</span></span>
+2. <span data-ttu-id="0e03a-107">Per ottenere l'identità delle directory conferenza nell'organizzazione, eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="0e03a-107">To obtain the identity of the conference directories in your organization, run the following command:</span></span>
     
    ```PowerShell
    Get-CsConferenceDirectory
    ```
 
-    <span data-ttu-id="54ad7-108">Il comando precedente restituisce tutte le directory conferenza dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="54ad7-108">The preceding command returns all the conference directories in your organization.</span></span> <span data-ttu-id="54ad7-109">Per questo motivo, potresti voler limitare i risultati al pool da rimuovere.</span><span class="sxs-lookup"><span data-stu-id="54ad7-109">Because of that, you might want to limit the results to the pool being decommissioned.</span></span> <span data-ttu-id="54ad7-110">Se ad esempio si sta disattivando il pool con il nome di dominio completo (FQDN) pool01.contoso.net, usare questo comando per limitare i dati restituiti alle directory della conferenza da tale pool:</span><span class="sxs-lookup"><span data-stu-id="54ad7-110">For example, if you are decommissioning the pool with the fully qualified domain name (FQDN) pool01.contoso.net, use this command to limit the returned data to conference directories from that pool:</span></span>
+    <span data-ttu-id="0e03a-108">Il comando precedente restituisce tutte le directory conferenza dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="0e03a-108">The preceding command returns all the conference directories in your organization.</span></span> <span data-ttu-id="0e03a-109">Per questo motivo, potresti voler limitare i risultati al pool da rimuovere.</span><span class="sxs-lookup"><span data-stu-id="0e03a-109">Because of that, you might want to limit the results to the pool being decommissioned.</span></span> <span data-ttu-id="0e03a-110">Se ad esempio si sta disattivando il pool con il nome di dominio completo (FQDN) pool01.contoso.net, usare questo comando per limitare i dati restituiti alle directory della conferenza da tale pool:</span><span class="sxs-lookup"><span data-stu-id="0e03a-110">For example, if you are decommissioning the pool with the fully qualified domain name (FQDN) pool01.contoso.net, use this command to limit the returned data to conference directories from that pool:</span></span>
     
    ```PowerShell
    Get-CsConferenceDirectory | Where-Object {$_.ServiceID -match "pool01.contoso.net"}
    ```
 
-    <span data-ttu-id="54ad7-111">Questo comando restituisce solo le directory della conferenza in cui la proprietà ServiceID contiene il nome FQDN pool01.contoso.net.</span><span class="sxs-lookup"><span data-stu-id="54ad7-111">That command returns only the conference directories where the ServiceID property contains the FQDN pool01.contoso.net.</span></span>
+    <span data-ttu-id="0e03a-111">Questo comando restituisce solo le directory della conferenza in cui la proprietà ServiceID contiene il nome FQDN pool01.contoso.net.</span><span class="sxs-lookup"><span data-stu-id="0e03a-111">That command returns only the conference directories where the ServiceID property contains the FQDN pool01.contoso.net.</span></span>
     
-3. <span data-ttu-id="54ad7-112">Per trasferire le directory conferenza, eseguire il comando seguente per ogni directory di conferenza nel pool:</span><span class="sxs-lookup"><span data-stu-id="54ad7-112">To move conference directories, run the following command for each conference directory in the pool:</span></span>
+3. <span data-ttu-id="0e03a-112">Per trasferire le directory conferenza, eseguire il comando seguente per ogni directory di conferenza nel pool:</span><span class="sxs-lookup"><span data-stu-id="0e03a-112">To move conference directories, run the following command for each conference directory in the pool:</span></span>
     
    ```PowerShell
    Move-CsConferenceDirectory -Identity <Numeric identity of conference directory> -TargetPool <FQDN of pool where ownership is to be transitioned>
    ```
 
-    <span data-ttu-id="54ad7-113">Ad esempio, per trasferire la directory della conferenza 3, usare questo comando specificando un pool di Skype for Business Server 2019 come TargetPool:</span><span class="sxs-lookup"><span data-stu-id="54ad7-113">For example, to move conference directory 3, use this command, specifying a Skype for Business Server 2019 pool as the TargetPool:</span></span>
+    <span data-ttu-id="0e03a-113">Ad esempio, per trasferire la directory della conferenza 3, usare questo comando specificando un pool di Skype for Business Server 2019 come TargetPool:</span><span class="sxs-lookup"><span data-stu-id="0e03a-113">For example, to move conference directory 3, use this command, specifying a Skype for Business Server 2019 pool as the TargetPool:</span></span>
     
    ```PowerShell
    Move-CsConferenceDirectory -Identity 3 -TargetPool "pool02.contoso.net"
    ```
 
-    <span data-ttu-id="54ad7-114">Se si desidera trasferire tutte le directory conferenza in un pool, usare un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="54ad7-114">If you want to move all the conference directories on a pool, use a command similar to the following:</span></span>
+    <span data-ttu-id="0e03a-114">Se si desidera trasferire tutte le directory conferenza in un pool, usare un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="0e03a-114">If you want to move all the conference directories on a pool, use a command similar to the following:</span></span>
     
    ```PowerShell
    Get-CsConferenceDirectory | Where-Object {$_.ServiceID -match "pool01.contoso.net"} | Move-CsConferenceDirectory -TargetPool "pool02.contoso.net"
    ```
 
-<span data-ttu-id="54ad7-115">Scaricare la procedura dettagliata per la [disinstallazione di Microsoft legacy e la rimozione dei ruoli del server](https://go.microsoft.com/fwlink/p/?linkId=246227) per istruzioni dettagliate su come rimuovere i pool legacy.</span><span class="sxs-lookup"><span data-stu-id="54ad7-115">Download [Uninstalling Microsoft legacy and Removing Server Roles](https://go.microsoft.com/fwlink/p/?linkId=246227) for comprehensive, step-by-step instructions on decommissioning legacy pools.</span></span>
+<span data-ttu-id="0e03a-115">Scaricare la procedura dettagliata per la [disinstallazione di Microsoft legacy e la rimozione dei ruoli del server](https://go.microsoft.com/fwlink/p/?linkId=246227) per istruzioni dettagliate su come rimuovere i pool legacy.</span><span class="sxs-lookup"><span data-stu-id="0e03a-115">Download [Uninstalling Microsoft legacy and Removing Server Roles](https://go.microsoft.com/fwlink/p/?linkId=246227) for comprehensive, step-by-step instructions on decommissioning legacy pools.</span></span>
   
-<span data-ttu-id="54ad7-116">Quando si spostano le directory conferenza, è possibile che venga visualizzato il seguente messaggio di errore:</span><span class="sxs-lookup"><span data-stu-id="54ad7-116">When moving conference directories, you might encounter the following error:</span></span>
+<span data-ttu-id="0e03a-116">Quando si spostano le directory conferenza, è possibile che venga visualizzato il seguente messaggio di errore:</span><span class="sxs-lookup"><span data-stu-id="0e03a-116">When moving conference directories, you might encounter the following error:</span></span>
   
 ```
 WARNING: Move operation failed for conference directory with ID "5". Cannot perform a rollback because data migration might have already started. Retry the operation.
@@ -67,6 +69,6 @@ Move-CsConferenceDirectory : Unable to cast COM object of type 'System._ComObjec
 This operation failed because the QueryInterface call on the COM component for the interface with SID '{4262B886-503F-4BEA-868C-04E8DF562CEB}' failed due to the following error: The specified module could not be found.
 ```
 
-<span data-ttu-id="54ad7-117">Questo errore si verifica in genere quando Skype for Business Server Management Shell richiede un set aggiornato di autorizzazioni di Active Directory per completare un'attività.</span><span class="sxs-lookup"><span data-stu-id="54ad7-117">This error typically occurs when the Skype for Business Server Management Shell requires an updated set of Active Directory permissions in order to complete a task.</span></span> <span data-ttu-id="54ad7-118">Per risolvere il problema, chiudere l'istanza corrente di Management Shell, quindi aprire una nuova istanza della shell ed eseguire di nuovo il comando per passare alla directory della conferenza.</span><span class="sxs-lookup"><span data-stu-id="54ad7-118">To resolve the problem, close the current instance of the Management Shell, then open a new instance of the shell and re-run the command to move the conference directory.</span></span>
+<span data-ttu-id="0e03a-117">Questo errore si verifica in genere quando Skype for Business Server Management Shell richiede un set aggiornato di autorizzazioni di Active Directory per completare un'attività.</span><span class="sxs-lookup"><span data-stu-id="0e03a-117">This error typically occurs when the Skype for Business Server Management Shell requires an updated set of Active Directory permissions in order to complete a task.</span></span> <span data-ttu-id="0e03a-118">Per risolvere il problema, chiudere l'istanza corrente di Management Shell, quindi aprire una nuova istanza della shell ed eseguire di nuovo il comando per passare alla directory della conferenza.</span><span class="sxs-lookup"><span data-stu-id="0e03a-118">To resolve the problem, close the current instance of the Management Shell, then open a new instance of the shell and re-run the command to move the conference directory.</span></span>
   
 
