@@ -8,6 +8,8 @@ ms.date: 2/21/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -15,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fefd4fff-57cc-4019-b3eb-3535ad3729a8
 description: 'Riepilogo: esplorare questi collegamenti per informazioni su come sviluppare progetti concettuali, logici e fisici per la configurazione di funzionalità, server e topologie di Skype for Business Server 2015.'
-ms.openlocfilehash: 7b4167695c04a34fe967705fd8c06af7b3e15c0e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: ff299e6dc441ca5cbfaf1efffa8cf80acb53f205
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194903"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41801926"
 ---
 # <a name="plan-for-your-skype-for-business-server-2015-deployment"></a>Pianificare la distribuzione di Skype for Business Server 2015
  

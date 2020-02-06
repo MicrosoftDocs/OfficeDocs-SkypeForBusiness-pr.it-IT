@@ -11,14 +11,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Se si Abilita l'accesso remoto agli utenti remoti, gli utenti remoti supportati si connettono tramite Internet e non devono connettersi tramite una VPN per collaborare con utenti interni tramite Skype for Business Server.
-ms.openlocfilehash: dde2bbb2d71d84bc9102683afc37208e3c4616bd
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: b562dbe7a849ca4266a45303008ff9081903658d
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188867"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41818377"
 ---
 # <a name="enable-or-disable-remote-user-access-in-skype-for-business-server"></a>Abilitare o disabilitare l'accesso remoto agli utenti in Skype for Business Server
 

@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 9c831c63-9a7d-48ec-9118-f8a7e80ddd04
 description: "Riepilogo: informazioni sul servizio di mobilità (MCX) e sull'API Web Unified Communications (UCWA) in Skype for Business Server."
-ms.openlocfilehash: 7b8340d90b5e1fa18c4dfaa7d61f986344ccbb33
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 4d604c46704881a055385336f8b1ff32862d929a
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188771"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41817835"
 ---
 # <a name="monitor-mobility-for-performance-in-skype-for-business-server"></a>Monitorare la mobilità per le prestazioni in Skype for Business Server
  

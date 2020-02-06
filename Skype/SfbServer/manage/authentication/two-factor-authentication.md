@@ -7,16 +7,18 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 16f08710-8961-4659-acbf-ebb95a198fb4
 description: "Riepilogo: gestire l'autenticazione a due fattori in Skype for Business Server."
-ms.openlocfilehash: ccda6795fa5033c792c293701d951e3111666e82
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 90dc286e247c0c6eeb75bb884071b85e57663278
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36194957"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41818718"
 ---
 # <a name="manage-two-factor-authentication-in-skype-for-business-server"></a>Gestire l'autenticazione a due fattori in Skype for Business Server
  
@@ -38,7 +40,7 @@ I clienti sono fortemente incoraggiati a distribuire l'autenticazione a due fatt
   
 |**Tipo di configurazione**|**Tipo di servizio**|**Ruolo del server**|**Tipo di autenticazione da disabilitare**|
 |:-----|:-----|:-----|:-----|
-|Servizio Web  <br/> |WebServer  <br/> |Direttore  <br/> |Kerberos, NTLM e certificato  <br/> |
+|Servizio Web  <br/> |WebServer  <br/> |Director  <br/> |Kerberos, NTLM e certificato  <br/> |
 |Servizio Web  <br/> |WebServer  <br/> |Front-end  <br/> |Kerberos, NTLM e certificato  <br/> |
 |Proxy  <br/> |EdgeServer  <br/> |Bordo  <br/> |Kerberos e NTLM  <br/> |
 |Proxy  <br/> |Registrar  <br/> |Front-end  <br/> |Kerberos e NTLM  <br/> |
@@ -69,7 +71,7 @@ Sono disponibili diverse considerazioni sulla distribuzione che includono creden
   
 ### <a name="deleting-saved-credentials"></a>Eliminazione delle credenziali salvate
 
-Gli utenti devono usare l'opzione **Elimina le informazioni di accesso** nel client Skype for business ed eliminare la cartella del profilo SIP da%LocalAppData%\Microsoft\Office\15.0\Skype for business prima di provare a firmare per la prima volta con due fattori autenticazione.
+Gli utenti devono usare l'opzione **Elimina le informazioni di accesso** nel client Skype for business ed eliminare la cartella del profilo SIP da%LocalAppData%\Microsoft\Office\15.0\Skype for business prima di provare a firmare per la prima volta con l'autenticazione a due fattori.
   
 ### <a name="disablentcredentials"></a>DisableNTCredentials
 

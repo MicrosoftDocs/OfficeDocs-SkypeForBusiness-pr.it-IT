@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 5b19edef-4a54-43c9-aa12-5643b8108355
 description: Informazioni su Mediation Servers in Skype for Business Server, incluse le topologie supportate e le sue relazioni con i trunk M:N, il bypass multimediale e il controllo di ammissione alle chiamate.
-ms.openlocfilehash: 8c58e0b866d62e7dd1ea60888ba611d78328489f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 5a8e9d7728f8c78643869a6f816ade9431229751
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187625"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802696"
 ---
 # <a name="mediation-server-component-in-skype-for-business-server"></a>Componente Mediation Server in Skype for Business Server
  
@@ -64,7 +66,7 @@ Nella figura seguente vengono illustrati i protocolli di segnalazione e multimed
 
 Skype for Business Server supporta la flessibilità nella definizione di un trunk per scopi di routing delle chiamate. Un trunk è un'associazione logica tra un Mediation Server e un numero di porta in ascolto, con un gateway e un numero di porta in ascolto. Questo implica diversi elementi: un Mediation Server può avere più Trunks nello stesso gateway; un Mediation Server può avere più Trunks in Gateway diversi; viceversa, un gateway può avere più Trunks in diversi server di mediazione.
   
-È comunque necessario creare un trunk radice quando si aggiunge un gateway alla topologia di Skype for business tramite Generatore di topologie. Il numero di gateway che un server di mediazione specifico può gestire dipende dalla capacità di elaborazione del server durante le ore di punta occupato. Se si distribuisce un Mediation Server su hardware che soddisfa i requisiti hardware minimi per Skype for Business Server, come descritto in [requisiti server per Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md), un Mediation Server autonomo può gestire approssimativamente 1000 chiamate. Il Mediation Server esegue la transcodifica, ma continua a eseguire chiamate per più gateway anche se i gateway non supportano il bypass multimediale.
+È comunque necessario creare un trunk radice quando si aggiunge un gateway alla topologia di Skype for business tramite Generatore di topologie. Il numero di gateway che un server di mediazione specifico può gestire dipende dalla capacità di elaborazione del server durante le ore di punta occupato. Se si distribuisce un Mediation Server su hardware che soddisfa i requisiti hardware minimi per Skype for Business Server, come descritto in [requisiti del server per Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md), il server di mediazione autonomo può gestire circa 1000 chiamate. Il Mediation Server esegue la transcodifica, ma continua a eseguire chiamate per più gateway anche se i gateway non supportano il bypass multimediale.
   
 Quando si definisce una route di chiamata, è necessario specificare i trunk associati alla route, ma non si specificano i server di mediazione associati alla route. Puoi invece usare generatore di topologia per associare Trunks a Mediation Servers. In altre parole, il routing determina il trunk da usare per una chiamata e, successivamente, il Mediation Server associato a tale trunk viene inviato alla segnalazione per la chiamata.
   
@@ -144,7 +146,7 @@ Mediation Server è collocato per impostazione predefinita nel server Standard E
     
 - Percentuale di chiamate che vengono chiamate il cui elemento multimediale ignora il Mediation Server
     
-Quando si pianifica, tenere presente che i requisiti di elaborazione dei contenuti multimediali per le chiamate PSTN e le conferenze A/V non sono configurati per il bypass multimediale, nonché l'elaborazione necessaria per gestire le interazioni di segnalazione per il numero di chiamate in orario occupato che è necessario essere supportato. Se la CPU non è sufficiente, è necessario distribuire un pool autonomo di Mediation Server; i gateway PSTN, IP-PBX e SBCs dovranno essere divisi in subset controllati dai server di mediazione collocati in un pool e i Mediation Server autonomi in uno o più pool autonomi.
+Durante la pianificazione, assicurati di tenere conto dei requisiti per l'elaborazione dei contenuti multimediali per le chiamate PSTN e le conferenze A/V non configurate per il bypass multimediale, nonché l'elaborazione necessaria per gestire le interazioni di segnalazione per il numero di chiamate in orario occupato che devono essere supportate. Se la CPU non è sufficiente, è necessario distribuire un pool autonomo di Mediation Server; i gateway PSTN, IP-PBX e SBCs dovranno essere divisi in subset controllati dai server di mediazione collocati in un pool e i Mediation Server autonomi in uno o più pool autonomi.
   
 Se sono stati distribuiti gateway PSTN, IP-PBX o Session Border Controller (SBCs) che non supportano le funzionalità corrette per interagire con un pool di server di mediazione, inclusi i seguenti, sarà necessario associarli a un pool autonomo costituito da di un singolo Mediation Server:
   

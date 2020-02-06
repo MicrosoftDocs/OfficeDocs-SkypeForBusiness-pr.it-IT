@@ -11,14 +11,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Puoi configurare uno o più criteri di accesso degli utenti esterni per controllare se gli utenti remoti possono collaborare con gli utenti di Skype for Business Server interni. Per controllare l'accesso degli utenti remoti, è possibile configurare i criteri a livello globale, sito e utente.
-ms.openlocfilehash: 96d91179e7b99910182ff360920f3d46b80aa6f4
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 7735f15e61654f55a70f18ca032cd6b1613fec58
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188843"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41818297"
 ---
 # <a name="configure-policies-to-control-remote-user-access-in-skype-for-business-server"></a>Configurare i criteri per il controllo dell'accesso degli utenti remoti in Skype for Business Server
 

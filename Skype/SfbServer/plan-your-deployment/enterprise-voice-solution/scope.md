@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 2c572dfd-e901-471d-b5a0-18bc8d1d5328
 description: Decisioni necessarie per la pianificazione di una distribuzione E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 648713ce3474779a588d638e3e81272fbd62e2f0
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: fa300ac2f4ba1c0d847abec138b6882e4f240831
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36187565"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802466"
 ---
 # <a name="define-the-scope-of-the-e9-1-1-deployment-in-skype-for-business-server"></a>Definire l'ambito della distribuzione di E9-1-1 in Skype for Business Server
 
@@ -37,7 +39,7 @@ Prima di configurare Skype for business per E9-1-1, è necessario pianificare la
 
  **Come si distribuisce E9-1-1 a siti di succursale?**
 
- La resilienza vocale è un concetto importante da comprendere quando si distribuisce E9-1-1 in un sito di succursale. Se sono presenti trunk SIP e-9-1-1 centralizzati e si verifica un'interruzione WAN, i client che accedono potrebbero non essere in grado di ottenere un percorso dal servizio informazioni sulla posizione o connettersi al provider di servizi di emergenza. Skype for business offre diverse strategie per gestire la resilienza vocale nelle filiali, tra cui: avere reti di dati resilienti, distribuire un trunk SIP in ogni filiale o spingere le chiamate di emergenza al gateway locale durante le interruzioni. Per informazioni dettagliate, vedere [pianificazione della resilienza vocale del sito](https://technet.microsoft.com/library/67713f57-3ded-4127-ac37-57d8099bf384.aspx)di succursale.
+ La resilienza vocale è un concetto importante da comprendere quando si distribuisce E9-1-1 in un sito di succursale. Se sono presenti trunk SIP e-9-1-1 centralizzati e si verifica un'interruzione WAN, i client che accedono potrebbero non essere in grado di ottenere un percorso dal servizio informazioni sulla posizione o connettersi al provider di servizi di emergenza. Skype for business offre diverse strategie per gestire la resilienza vocale nelle filiali, tra cui: avere reti di dati resilienti, distribuire un trunk SIP in ogni filiale o spingere le chiamate di emergenza al gateway locale durante le interruzioni. Per informazioni dettagliate, vedere [pianificazione della resilienza vocale del sito di succursale](https://technet.microsoft.com/library/67713f57-3ded-4127-ac37-57d8099bf384.aspx).
 
  **Si Abilita E9-1-1 per gli utenti che lavorano all'esterno della rete?**
 

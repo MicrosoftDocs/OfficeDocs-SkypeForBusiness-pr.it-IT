@@ -11,14 +11,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Puoi abilitare e configurare l'accesso degli utenti esterni per controllare se gli utenti esterni supportati possono collaborare con gli utenti di Skype for Business Server interni.
-ms.openlocfilehash: 555fa5ca08a707f09c9e33d8b98294b7bb584046
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 366b65b53135388f4163154001f6400cc9fa2963
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188810"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41818247"
 ---
 # <a name="managing-federation-and-external-access-to-skype-for-business-server"></a>Gestione della Federazione e dell'accesso esterno a Skype for Business Server
 

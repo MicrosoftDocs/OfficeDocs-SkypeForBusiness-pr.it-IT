@@ -7,14 +7,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Skype for Business Server supporta le chiamate avanzate di 9-1-1 (E9-1-1) dai client Skype for business. Quando si configura Skype for Business Server per E9-1-1, le chiamate di emergenza effettuate da Skype for business includono le informazioni sulla posizione di risposta alle emergenze dal database del servizio informazioni sulla posizione.
-ms.openlocfilehash: a0cf7254e12f00a01082b7aad71ce350cb382b9c
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: de02c4a9a3210220e368d87d4ae8e21a80f3dbac
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188909"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41818427"
 ---
 # <a name="manage-enhanced-9-1-1-and-the-location-service-in-skype-for-busines-server"></a>Gestire le funzionalità avanzate di 9-1-1 e il servizio posizione in Skype for busines server
 
@@ -91,7 +93,7 @@ In Skype for Business Server è possibile ignorare la quantità di tempo predefi
         > Verificare che il valore della maschera di chiamata specificata non sia uguale a un numero in un intervallo di orbit del parcheggio delle chiamate. Il routing di Call Park avrà la precedenza sulla conversione delle stringhe di chiamata di emergenza. Per visualizzare gli intervalli di Orbit di Call Park esistenti, fare clic su **funzionalità vocali** nella barra di spostamento sinistra e quindi su **Call Park**. 
 
     
-      - **URI di notifica**   uno o più identificatori URI (Uniform Resource Identifier) SIP per ricevere una notifica quando viene effettuata una chiamata di emergenza. Ad esempio, l'ufficio sicurezza aziendale può essere avvisato tramite un messaggio istantaneo ogni volta che viene effettuata una chiamata di emergenza. Se la posizione del chiamante è disponibile, tale posizione verrà inclusa nella notifica. Più URI SIP possono essere inclusi come elenco delimitato da virgole. Ad esempio, "SIP: security@litwareinc.com", "SIP: kmyer@litwareinc.com". Le liste di distribuzione sono supportate. La stringa deve essere da 1 a 256 caratteri di lunghezza e deve iniziare con il prefisso "SIP:". Prima di fare clic nel campo URI di notifica viene visualizzato un esempio.
+      - **URI di notifica**   uno o più identificatori URI (Uniform Resource Identifier) SIP per ricevere una notifica quando viene effettuata una chiamata di emergenza. Ad esempio, l'ufficio sicurezza aziendale può essere avvisato tramite un messaggio istantaneo ogni volta che viene effettuata una chiamata di emergenza. Se la posizione del chiamante è disponibile, tale posizione verrà inclusa nella notifica. Più URI SIP possono essere inclusi come elenco delimitato da virgole. Ad esempio, "SIP: security@litwareinc. com", "SIP: kmyer@litwareinc. com". Le liste di distribuzione sono supportate. La stringa deve essere da 1 a 256 caratteri di lunghezza e deve iniziare con il prefisso "SIP:". Prima di fare clic nel campo URI di notifica viene visualizzato un esempio.
     
       - **URI conferenza l'**   URI SIP, in questo caso il numero di telefono, di una terza persona che verrà convocata per le chiamate di emergenza effettuate. Ad esempio, l'ufficio sicurezza aziendale può ricevere una chiamata quando viene effettuata una chiamata di emergenza e ascoltare o partecipare a tale chiamata (a seconda del valore fornito nel campo **modalità conferenza** ). La stringa deve avere una lunghezza compresa tra 1 e 256 caratteri e deve iniziare con il prefisso sip:. Viene visualizzato un esempio finché non si fa clic all'interno di questo campo.
     

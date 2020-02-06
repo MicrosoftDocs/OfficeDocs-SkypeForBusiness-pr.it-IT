@@ -1,5 +1,5 @@
 ---
-title: Configurazione del supporto federativo per un cliente Skype for business online
+title: Configurazione del supporto della federazione per un cliente Skype for Business Online
 ms.reviewer: ''
 ms:assetid: e5f7f38d-ede5-4af3-88c2-026e8a78df12
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Hh202193(v=OCS.15)
@@ -11,14 +11,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: "Se si distribuisce Skype for business nell'organizzazione, è possibile eseguire la Federazione con i domini di uno o più clienti Skype for business online. "
-ms.openlocfilehash: c6cf36abbbf8876a8aa349d4576b45220517b89e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: f6b0cbb439910b97d6fcbb0fee78825b0aff9dce
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188792"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41818257"
 ---
 # <a name="configuring-federation-support-for-a-skype-for-business-online-customer-in-skype-for-business-server"></a>Configurazione del supporto federativo per un cliente Skype for business online in Skype for Business Server 
 

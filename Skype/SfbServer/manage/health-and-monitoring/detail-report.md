@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 1d61cd81-dcfe-40b4-9a41-a73b038bc216
 description: 'Riepilogo: informazioni sul report Dettagli conferenza usato in Skype for Business Server.'
-ms.openlocfilehash: 17337624c955dfa174f7b98772fdd836e82891d0
-ms.sourcegitcommit: 6cbdcb8606044ad7ab49a4e3c828c2dc3d50fcc4
+ms.openlocfilehash: 73ca72bbfb7b003aaaa894a5bc9e417312d96caa
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36271397"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41818006"
 ---
 # <a name="conference-detail-report-in-skype-for-business-server"></a>Report Dettagli conferenza in Skype for Business Server
 
@@ -48,7 +50,7 @@ Nella tabella seguente sono elencate le informazioni fornite nella sezione infor
 
 | **Nome**                 | **Descrizione**                                                                                                            |
 |:-------------------------|:---------------------------------------------------------------------------------------------------------------------------|
-| **URI conferenza** <br/> | URI assegnato alla conferenza. Ad esempio:  <br/> SIP: kmyer@litwareinc.com; GRUU; opaque = app: conf: stato attiva: ID: drg2y8v4  <br/> |
+| **URI conferenza** <br/> | URI assegnato alla conferenza. Ad esempio:  <br/> SIP: kmyer@litwareinc. com; GRUU; opaque = app: conf: stato attiva: ID: drg2y8v4  <br/> |
 | **FQDN del pool** <br/>      | Nome di dominio completo del pool di registrazione o del server perimetrale coinvolto in una sessione.  <br/>                             |
 | **Ora di inizio** <br/>     | Data e ora in cui è stata avviata la conferenza.  <br/>                                                                          |
 | **Organizzatore** <br/>      | Indirizzo SIP dell'utente che ha organizzato la conferenza.  <br/>                                                               |

@@ -8,17 +8,19 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
+- NOCSH
+ms.custom:
 - ms.lync.tb.SimpleUrlSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9fd2087a-3c3a-4863-aa7f-e532a18e77af
 description: 'Per specificare nuovo, Rimuovi esistente o per cambiare gli URL semplici attivi, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 8d26c5eaecd96ea1d4980e3f2b2a593707fe84bc
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: a90b6e4bd5ffca4887f57906c901a429725133c9
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41696681"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41819268"
 ---
 # <a name="simple-url-settings-expander"></a>Espansione delle impostazioni dell'URL semplice
 

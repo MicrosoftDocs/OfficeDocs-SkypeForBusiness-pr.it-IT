@@ -11,14 +11,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Dopo la distribuzione di uno o più server perimetrali, è necessario abilitare i tipi di accesso esterno al dominio o al provider, l'accesso remoto agli utenti e l'accesso degli utenti anonimi alle conferenze tramite gli Edge Server che verranno supportati per l'organizzazione.
-ms.openlocfilehash: b79560d2cb0e570ab2b4fcf061a5b91c6a74a8bf
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 7308d6914f3f6d79cd217a31c0246c6f2d189516
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36188858"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41818347"
 ---
 # <a name="manage-access-edge-configuration-for-your-organization"></a>Gestire la configurazione Access Edge per l'organizzazione
 
@@ -30,7 +32,7 @@ Queste opzioni includono i seguenti tipi di Access che possono essere configurat
     
     Esistono due opzioni che sono impostazioni facoltative per il modo in cui vengono individuati i partner federati e se l'archiviazione delle dichiarazioni di non conformità (notifica ai contatti federati con cui si comunica che la distribuzione ha l'archiviazione abilitata e che le comunicazioni i dettagli verranno archiviati) verranno inviati ai contatti:
     
-      - **Abilitare l'individuazione**   di un dominio partner selezionando questa opzione è possibile individuare automaticamente i domini con cui si può usare la Federazione. Skype for Business Server usa i record DNS (Domain Name System) per cercare di individuare i domini non elencati nell'elenco dei domini consentiti, valutando automaticamente il traffico in entrata da partner federati individuati e limitando o bloccando il traffico basato sull'attendibilità livello, quantità di traffico e impostazioni di amministratore. Se non si seleziona questa opzione, l'accesso degli utenti federati è abilitato solo per gli utenti nei domini inclusi nell'elenco dei domini consentiti. Indipendentemente dal fatto che questa opzione sia selezionata, è possibile specificare che i singoli domini vengano bloccati o consentiti, incluso il limitare l'accesso a server specifici che gestiscono il servizio Access Edge nel dominio federato. Per informazioni dettagliate, vedere [configurare il supporto per i domini esterni](../sip-domains/manage-sip-federated-domains-for-your-organization.md#configure-support-for-allowed-external-domains-in-skype-for-business-server)consentiti.
+      - **Abilitare l'individuazione**   di un dominio partner selezionando questa opzione è possibile individuare automaticamente i domini con cui si può usare la Federazione. Skype for Business Server usa i record DNS (Domain Name System) per cercare di individuare i domini non elencati nell'elenco dei domini consentiti, valutando automaticamente il traffico in entrata da partner federati individuati e limitando o bloccando il traffico basato sull'attendibilità livello, quantità di traffico e impostazioni di amministratore. Se non si seleziona questa opzione, l'accesso degli utenti federati è abilitato solo per gli utenti nei domini inclusi nell'elenco dei domini consentiti. Indipendentemente dal fatto che questa opzione sia selezionata, è possibile specificare che i singoli domini vengano bloccati o consentiti, incluso il limitare l'accesso a server specifici che gestiscono il servizio Access Edge nel dominio federato. Per informazioni dettagliate, vedere [configurare il supporto per i domini esterni consentiti](../sip-domains/manage-sip-federated-domains-for-your-organization.md#configure-support-for-allowed-external-domains-in-skype-for-business-server).
     
       - **Inviare una dichiarazione di non responsabilità per i partner**   federati selezionare questa opzione consente l'invio di un messaggio di dichiarazione di non responsabilità per i partner federati che consigliano di registrare i dettagli delle comunicazioni. Se si archiviano comunicazioni esterne con domini partner federati, è necessario abilitare la notifica di dichiarazione di non responsabilità per l'archiviazione per avvisare i partner che i messaggi e i dettagli delle comunicazioni vengono archiviati dalla distribuzione. Per informazioni dettagliate sull'archiviazione, vedere [abilitare o disabilitare l'invio di una dichiarazione di non responsabilità per l'archiviazione a partner federati](enable-or-disable-sending-an-archiving-disclaimer-to-federated-partners.md).
 

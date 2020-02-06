@@ -7,6 +7,8 @@ audience: ITPro
 manager: serdars
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f3a5895f-f64f-44eb-9a5e-8d606ac1fc38
 description: 'Riepilogo: scenari di revisione per le opzioni di distribuzione di Skype for Business Server. Questo argomento dovrebbe essere utile se si vuole un singolo server o si preferisce un pool di server con DNS o HLB.'
-ms.openlocfilehash: 6507f0ae0cae0712b261bfb772d5da9e528d3994
-ms.sourcegitcommit: c554b09527817dc3e06b10509f6668b42ccc5cb9
+ms.openlocfilehash: e0fef305a29f753b9293593e7e1eb70b936f1a19
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "36196043"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41802166"
 ---
 # <a name="advanced-edge-server-dns-planning-for-skype-for-business-server"></a>Pianificazione DNS avanzata di Edge Server per Skype for Business Server
  
@@ -50,11 +52,11 @@ I client Skype for business sono simili alle versioni precedenti dei client Lync
     
      *Si tratta di un record host per il servizio di individuazione automatica dei servizi Web esterni.* 
     
-3. _sipinternaltls._tcp. \<dominio\>
+3. _sipinternaltls. _tcp. \<dominio\>
     
      *Si tratta di un record SRV per le connessioni TLS interne.* 
     
-4. _sip._tls. \<dominio\>
+4. _sip. _tls. \<dominio\>
     
      *Si tratta di un record SRV per le connessioni TLS esterne.* 
     
@@ -203,7 +205,7 @@ Quindi, ora che sappiamo tutto questo, se hai bisogno di requisiti automatici pe
 
 Per configurare il DNS per reindirizzare il traffico Web di Skype for Business Server ai siti di disaster recover (DR) e failover, è necessario usare un provider DNS che supporti GeoDNS. È possibile configurare i record DNS per supportare il ripristino di emergenza, in modo che le caratteristiche che usano i servizi Web continuino anche se un intero pool Front-End scende. Questa funzionalità DR supporta gli URL semplici di individuazione, riunione e accesso esterno.
   
-Si definiscono e si configurano altri record host DNS a (AAAA If using IPv6) per la risoluzione interna ed esterna dei servizi Web presso il provider di GeoDNS. I dettagli seguenti presumono che i pool associati, distribuiti geograficamente e che il GeoDNS supportato dal provider **** dispongano di Round Robin DNS **o** siano configurati per l'uso di pool1 come primari e non vengano riportati in Pool2 in caso di comunicazioni perdita o interruzione di corrente.
+Si definiscono e si configurano altri record host DNS a (AAAA If using IPv6) per la risoluzione interna ed esterna dei servizi Web presso il provider di GeoDNS. I dettagli seguenti presumono che i pool associati, distribuiti geograficamente e che il GeoDNS supportato **dal provider** dispongano di Round Robin DNS **o** siano configurati per l'uso di pool1 come primari e non vengano rientrati in Pool2 in caso di perdita di comunicazioni o di interruzioni di corrente.
   
 Tutti i record DNS in questa tabella sono esempi.
   

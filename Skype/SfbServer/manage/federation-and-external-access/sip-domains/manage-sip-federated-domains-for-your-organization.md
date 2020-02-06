@@ -11,14 +11,16 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Informazioni su come gestire e configurare i domini SIP con cui è possibile eseguire la Federazione,
-ms.openlocfilehash: 1a2f76f7f465401bae04b4defa2e0a1f5300ab0f
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: af014c6c24d3655612846e97cfa7ff5c7b9c816b
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36195543"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41818237"
 ---
 # <a name="manage-sip-federated-domains-for-your-organization-in-skype-for-business-server"></a>Gestire i domini federati SIP per l'organizzazione in Skype for Business Server
 
@@ -95,6 +97,6 @@ Inoltre, è necessario configurare e applicare il criterio agli utenti che si vu
 
 [Abilitare o disabilitare la federazione e la connettività per la messaggistica istantanea pubblica](../access-edge/enable-or-disable-federation-and-public-im-connectivity.md)
 
-[Abilitare o disabilitare l'individuazione dei partner federativi](../access-edge/enable-or-disable-discovery-of-federation-partners.md)
+[Abilitare o disabilitare l'individuazione di partner federativi](../access-edge/enable-or-disable-discovery-of-federation-partners.md)
   
 

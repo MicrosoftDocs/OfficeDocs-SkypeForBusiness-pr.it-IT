@@ -7,6 +7,8 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - IT_Skype16
@@ -14,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0453aeee-c41f-44e6-a6e0-aaace526ca08
 description: Fare riferimento a topologie per Skype for Business Server, inclusi i diagrammi e le decisioni da apportare alle organizzazioni grandi, medie e piccole.
-ms.openlocfilehash: 7f284b141da25175e3a41545349a0e61f6036019
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: f207e69dceea4c2959e5cf81ddcf359266ed1604
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37028354"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41801706"
 ---
 # <a name="reference-topologies-for-skype-for-business-server"></a>Topologie di riferimento per Skype for Business Server
 
@@ -134,7 +136,7 @@ Questa topologia è illustrata in più diagrammi, con una panoramica seguita da 
     > [!NOTE]
     > La chat persistente è disponibile in Skype for Business Server 2015 ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in teams. Per altre informazioni, vedere [Introduzione all'aggiornamento di Microsoft teams](/microsoftteams/upgrade-start-here). Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità ai team o continuare a usare Skype for Business Server 2015.
 
-- **Bilanciamento del carico DNS.** Il pool Front-end e il pool Edge Server usano il bilanciamento del carico DNS. In questo modo, viene eliminata l'esigenza di usare il bilanciamento del carico hardware per l'interfaccia interna di Edge Server e si riduce significativamente la quantità di tempo necessario per la configurazione e la manutenzione dei dispositivi di bilanciamento del carico hardware per gli altri pool, come il caricamento hardware Gli equilibristi sono necessari solo per il traffico HTTP. Per altre informazioni, vedere (.. /.. /plan-your-deployment/network-requirements/load-balancing.md#BKMK_DNSLoadBalancing).
+- **Bilanciamento del carico DNS.** Il pool Front-end e il pool Edge Server usano il bilanciamento del carico DNS. In questo modo, viene eliminata l'esigenza di usare il bilanciamento del carico hardware per l'interfaccia interna di Edge Server e si riduce significativamente la quantità di tempo necessario per la configurazione e la manutenzione dei dispositivi di bilanciamento del carico hardware per gli altri pool, come il caricamento hardware Gli equilibristi sono necessari solo per il traffico HTTP. Per altre informazioni, vedere (.. /.. /Plan-Your-Deployment/Network-requirements/Load-Balancing.MD # BKMK_DNSLoadBalancing).
 
 - **Distribuzione della messaggistica unificata di Exchange.** Skype for Business Server funziona sia con le distribuzioni locali della messaggistica unificata di Exchange che con la messaggistica unificata di Exchange ospitata. Il sito centrale A include un server di messaggistica UNIFICAta di Exchange, che esegue Microsoft Exchange Server e non Skype for Business Server. La funzionalità di messaggistica unificata di Exchange per Skype for Business Server viene eseguita nel pool Front-end.
 
