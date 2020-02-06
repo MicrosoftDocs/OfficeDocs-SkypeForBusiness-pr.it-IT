@@ -8,15 +8,17 @@ ms.date: 3/20/2017
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 3600af8d-04de-4b9a-88ac-2491ca06494d
 description: Il cmdlet Remove-CcCertificationAuthorityFile rimuove il file di backup del servizio autorità di certificazione nella cartella CA nella directory della condivisione del sito per Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: d7036633eaf092130fc6e4acaebda39d04ff17df
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: 49a8f0f313b4153288ebdf037a41dc92f30e60d6
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41003296"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41824292"
 ---
 # <a name="remove-cccertificationauthorityfile"></a>Remove-CcCertificationAuthorityFile
  

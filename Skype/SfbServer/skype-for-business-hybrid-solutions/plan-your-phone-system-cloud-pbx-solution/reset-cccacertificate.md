@@ -8,15 +8,17 @@ ms.date: 6/22/2017
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: 5ada7e55-df9b-4b4e-b752-2468f4e28b8a
 description: Il cmdlet Reset-CcCACertificate reinstalla il server degli annunci del servizio autorità di certificazione per creare un nuovo certificato della CA radice.
-ms.openlocfilehash: 50c3b1afc29503b2b292ce578ea01b03aeeba368
-ms.sourcegitcommit: fe274303510d07a90b506bfa050c669accef0476
+ms.openlocfilehash: 6a7f377642ca8aa8722933e503a6c0c2f2613544
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "41003256"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41824252"
 ---
 # <a name="reset-cccacertificate"></a>Reset-CcCACertificate
  

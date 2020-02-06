@@ -8,16 +8,18 @@ ms.date: 12/20/2017
 audience: ITPro
 ms.topic: overview
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: e62c9229-b738-45ef-b637-0b58ca8225a4
 description: 'Riepilogo: leggere questo argomento per informazioni sulle nuove funzionalità di Skype for Business Server 2015. Per informazioni dettagliate sulla nuova esperienza client, vedere Lync è ora Skype for business-Ecco le novità.'
-ms.openlocfilehash: e59d158242a5d2dd4b129da3a531749b22e3eadc
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 0a11c94f7c31b0140a256ab350f5dad6112bc71e
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36191981"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41824080"
 ---
 # <a name="whats-new-in-skype-for-business-server-2015"></a>Novità di Skype for Business Server 2015
 

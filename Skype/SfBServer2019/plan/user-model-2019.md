@@ -7,15 +7,17 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection: ''
 description: Gli argomenti di questa sezione consentono di capire come pianificare e distribuire Skype for Business Server in modo che sia possibile pianificare adeguatamente il numero di utenti dell'organizzazione e pianificare il carico del server che le proprie attività generano.
-ms.openlocfilehash: 4dca5470b5512bb8a6310a60442478c761c7411e
-ms.sourcegitcommit: ab47ff88f51a96aaf8bc99a6303e114d41ca5c2f
+ms.openlocfilehash: 15f59d2052a4d73f6e1b1c09b10525b503958fea
+ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "36189770"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41824030"
 ---
 # <a name="capacity-planning-for-skype-for-business-server-2019"></a>Pianificazione della capacità per Skype for Business Server 2019
 
@@ -53,7 +55,7 @@ La tabella seguente riepiloga le nostre raccomandazioni.
 > [!NOTE]
 > I pool allungati non sono supportati per questo ruolo del server.
 
-In un pool Front-End è necessario disporre di un server front-end per ogni utente di 6.660 ospitato nel pool, presupponendo che l'Hyper-Threading sia abilitato in tutti i server del pool, che si stia usando SQL Server Express Edition e che l'hardware del server soddisfi le raccomandazioni nei [requisiti del server per Skype for Business server 2019](system-requirements.md). Il numero massimo di utenti in un pool Front-End è 106.000, sempre supponendo che l'Hyper-Threading sia abilitato e SQL Server Express Edition venga usato in tutti i server del pool. Se si hanno più di 106.000 utenti in un sito, è possibile distribuire più di un pool Front-end.
+In un pool Front-End è necessario disporre di un server front-end per ogni utente di 6.660 ospitato nel pool, presupponendo che l'Hyper-Threading sia abilitato in tutti i server del pool, che si stia usando SQL Server Express Edition e che l'hardware del server soddisfi le raccomandazioni dei [requisiti del server per Skype for Business Server 2019](system-requirements.md). Il numero massimo di utenti in un pool Front-End è 106.000, sempre supponendo che l'Hyper-Threading sia abilitato e SQL Server Express Edition venga usato in tutti i server del pool. Se si hanno più di 106.000 utenti in un sito, è possibile distribuire più di un pool Front-end.
 
 Quando si tiene conto del numero di utenti in un pool Front-End, includere eventuali utenti ospitati in Survivable Branch Appliances e Survivable Branch Server presso succursali associate a questo pool Front-end.
 
@@ -104,7 +106,7 @@ Quando si tiene conto del numero di utenti per gli Edge Server, includere gli ut
 > [!NOTE]
 > Per migliorare le prestazioni del servizio A/V Conferencing Edge in un server perimetrale, è consigliabile abilitare l'RSS (Receive-Side Scaling) sulle schede di rete degli Edge Server. RSS consente ai pacchetti in arrivo di essere gestiti in parallelo da più processori nel server. Per informazioni dettagliate, selezionare [RSS (Receive Side Scaling) in Windows Server 2012](https://go.microsoft.com/fwlink/p/?linkId=268731). Per informazioni dettagliate su come abilitare l'RSS, è necessario fare riferimento alla documentazione della scheda di rete.
 
-## <a name="director"></a>Direttore
+## <a name="director"></a>Director
 
 > [!NOTE]
 > I pool allungati non sono supportati per questo ruolo del server.
