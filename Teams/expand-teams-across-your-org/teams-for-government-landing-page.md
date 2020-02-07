@@ -7,18 +7,20 @@ author: lanachin
 ms.author: v-lanac
 manager: serdars
 audience: admin
+f1.keywords:
+- NOCSH
 ms.service: msteams
 ms.collection:
 - M365-collaboration
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ed301d7791dfffdb5da365d7131b5c114180e920
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 8dbce000bd42abc7a06c708d47c1af5a9bccbd24
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569634"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826644"
 ---
 # <a name="teams-for-government"></a>Teams per enti pubblici
 
@@ -54,7 +56,7 @@ Usare queste risorse per informazioni su considerazioni specifiche per la distri
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Pianificare Microsoft 365 Government-GCC High</h3>
+                        <h3>Pianificare Microsoft 365 Government - GCC High</h3>
                     </div>
                 </div>
             </div>
@@ -90,7 +92,7 @@ Usare queste risorse per informazioni su considerazioni specifiche per la distri
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Servizi di conferenza audio con routing diretto per GCC High e DoD</h3>
+                        <h3>Audioconferenza con Instradamento diretto per GCC High e DoD</h3>
                     </div>
                 </div>
             </div>

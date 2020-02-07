@@ -7,6 +7,8 @@ author: lanachin
 ms.author: v-lanac
 audience: admin
 manager: serdars
+f1.keywords:
+- NOCSH
 ms.date: 03/29/2019
 ms.service: msteams
 ms.collection:
@@ -15,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fb63e908e1331977d5da02a7c8bada11313d986c
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: b4a63f9b46d2431f5851734eb45c6b8067c780d8
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569222"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827604"
 ---
 # <a name="shifts-for-teams"></a>Turni per Teams
 
@@ -57,7 +59,7 @@ Teams offre agli operatori I FIRSTLINE dell'organizzazione gli strumenti necessa
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Pianificare la spostamento dei team di StaffHub in turni in teams</h3>
+                        <h3>Pianificare il passaggio dei team di StaffHub a Turni in Teams</h3>
                     </div>
                 </div>
             </div>

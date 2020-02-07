@@ -1,5 +1,5 @@
 ---
-title: Team per l'assistenza sanitaria
+title: Teams per il settore sanitario
 description: Usare queste risorse per ottenere il massimo dai team dell'organizzazione sanitaria.
 layout: LandingPage
 ms.topic: landing-page
@@ -7,6 +7,8 @@ author: lanachin
 ms.author: v-lanac
 manager: serdars
 audience: admin
+f1.keywords:
+- NOCSH
 ms.date: 03/01/2019
 ms.service: msteams
 ms.collection:
@@ -15,14 +17,14 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4cc058a0d23008ebb827f3a661baed3611207f24
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 4944dd2f48f56032a0c3a54e3c2cacabd210520d
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570326"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826664"
 ---
-# <a name="teams-for-healthcare"></a>Team per l'assistenza sanitaria
+# <a name="teams-for-healthcare"></a>Teams per il settore sanitario
 
 Teams offre a team di assistenza e professionisti sanitari un modo sicuro per comunicare, coordinare le cure del paziente e migliorare l'efficienza operativa. In questa sezione sono disponibili le risorse di amministrazione necessarie per gestire team per i team di assistenza sanitaria nell'organizzazione.
 
@@ -38,7 +40,7 @@ Teams offre a team di assistenza e professionisti sanitari un modo sicuro per co
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Iniziare a usare team per organizzazioni sanitarie</h3>
+                        <h3>Guida introduttiva a Teams per le organizzazioni del settore sanitario</h3>
                     </div>
                 </div>
             </div>
@@ -56,7 +58,7 @@ Teams offre a team di assistenza e professionisti sanitari un modo sicuro per co
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Introduzione ai modelli di team per le organizzazioni sanitarie</h3>
+                        <h3>Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario</h3>
                     </div>
                 </div>
             </div>
@@ -74,7 +76,7 @@ Teams offre a team di assistenza e professionisti sanitari un modo sicuro per co
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Introduzione alla messaggistica sicura per le organizzazioni sanitarie</h3>
+                        <h3>Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario</h3>
                     </div>
                 </div>
             </div>
