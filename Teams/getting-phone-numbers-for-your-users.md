@@ -16,16 +16,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come ottenere nuovi numeri di telefono o di trasferimento di dati esistenti per i team e come visualizzare le modifiche apportate agli utenti. '
-ms.openlocfilehash: caba9206ab4c1f12250085a8323b22fabf57cc9e
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 0f4688287df090ca4b293af7f4b1466c7e666f7d
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41707872"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837006"
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 

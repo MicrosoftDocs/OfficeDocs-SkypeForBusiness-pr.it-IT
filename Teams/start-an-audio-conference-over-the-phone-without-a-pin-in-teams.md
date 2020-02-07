@@ -17,16 +17,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come abilitare o disabilitare i chiamanti anonimi che partecipano a una riunione dall'interfaccia di amministrazione di teams. "
-ms.openlocfilehash: c971b73aade62c0ef9e34c0467a956477e80ca7c
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 87588bc8edfcc4d50b5589339f92f56829ec38ef
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41707561"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837916"
 ---
 # <a name="start-an-audio-conference-over-the-phone-without-a-pin-in-microsoft-teams"></a>Avviare una conferenza audio tramite telefono senza PIN in Microsoft Teams
 

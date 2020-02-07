@@ -17,17 +17,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni sulla configurazione del servizio di conferenza telefonica con accesso esterno o del servizio Audioconferenza per gli utenti dell'organizzazione che devono usare il telefono per partecipare alle conferenze telefoniche. "
-ms.openlocfilehash: 0a483dba984799a3c9e0f1a63ed908dde9a9ca08
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: e14cf924d039b461df3fc84d7b600d96d515be58
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41693951"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41838066"
 ---
 # <a name="set-up-audio-conferencing-for-microsoft-teams"></a>Configurare servizi di audioconferenza per Microsoft Teams
 

@@ -10,17 +10,19 @@ audience: admin
 description: Linee guida per i professionisti IT per guidare le distribuzioni di Office 365 in entità che gestiscono i dati soggetti al regolamento della difesa del governo degli Stati Uniti.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 33495b8a4122df6c0c5d380b835dbfb3a9271eb2
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: be952d838135a03a873d7193118febf5639bd415
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573296"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836856"
 ---
 # <a name="plan-for-microsoft-365-government---dod-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-DoD
 
@@ -49,7 +51,7 @@ La [Descrizione del servizio governativo degli Stati Uniti di Office 365](https:
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive i punti di decisione](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere se Microsoft 365 Government-DoD è appropriato per l'organizzazione.</li><li>Verificare che l'organizzazione soddisfi i requisiti di ammissibilità.</li></ul> |
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere se Microsoft 365 Government-DoD è appropriato per l'organizzazione.</li><li>Verificare che l'organizzazione soddisfi i requisiti di ammissibilità.</li></ul> |
 
 > [!Note]
 > Microsoft 365 Government-DoD è disponibile solo negli Stati Uniti. I clienti di enti pubblici non-americani possono scegliere tra diversi [piani governativi di Office 365](https://products.office.com/en/government/compare-office-365-government-plans).
@@ -75,7 +77,7 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 |                             | Funzionalità                     | Dipartimento della difesa       |
 |-----------------------------|-----------------------------|----------------|
 | Base | Accesso | Disponibili |
-| | Presenza | Disponibili |
+| | Icone di presenza | Disponibili |
 | | Presenza unificata (Skype for business e teams Unified) | Nell'arretrato governativo |
 | Attività | Feed | Disponibili |
 |  | Attività personali | Disponibili |
@@ -84,13 +86,13 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 | | Organigramma | Disponibili |
 | | Attività | Disponibili |
 | | Interoperabilità (1:1 Teams-chat Skype for business) | Nell'arretrato governativo |
-| Squadre | Messaggio di canale | Disponibili |
+| Teams | Messaggio di canale | Disponibili |
 | | File di canale | Disponibili |
 | | Scheda OneNote | Nell'arretrato governativo |
 | | Inviare un canale tramite posta elettronica | Non disponibile |
 | | Aggiungi membro | Disponibili |
-| | Accesso Guest | Nell'arretrato governativo |
-|  Riunioni | Pianificare una riunione | Disponibili |
+| | Accesso guest | Nell'arretrato governativo |
+| Riunioni | Pianificare una riunione | Disponibili |
 | | Partecipare a una riunione | Disponibili |
 | | Riunione VoIP | Disponibili |
 | | Condivisione desktop | Disponibili |

@@ -13,15 +13,17 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: rowille
 description: Informazioni sulle app per i dati e le autorizzazioni richieste dall'organizzazione.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4a5efc1ec447d1aeda3c42841752b6fd6e1f1938
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 5d7548d4d162310bc239c752e2bce38e725008f9
+ms.sourcegitcommit: 8e2fa7b744d0a174b699ae7298d4688b971eeff3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516785"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845227"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Autorizzazioni e considerazioni sulle app di Microsoft Teams
 
@@ -34,7 +36,7 @@ Le app di Microsoft teams sono un modo per aggregare una o più funzionalità in
 
 Le app vengono consentite dagli utenti e gestite da una prospettiva politica. Tuttavia, per la maggior parte, le autorizzazioni e il profilo di rischio di un'app sono definiti dalle autorizzazioni e dai profili di rischio delle funzionalità contenute nell'app. Questo articolo si basa quindi sulle autorizzazioni e sulle considerazioni a livello di funzionalità.
 
-Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_MESSAGE e REPLYTO_MESSAGE, non vengono visualizzate in nessuna posizione nella [documentazione dello sviluppatore di Microsoft teams](https://aka.ms/teamsdevdocs) o nelle [autorizzazioni per Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/permissions_reference). Sono semplicemente una scorciatoia descrittiva ai fini di questo articolo.
+Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_MESSAGE e REPLYTO_MESSAGE, non vengono visualizzate in un punto qualsiasi della [documentazione dello sviluppatore di Microsoft teams](https://aka.ms/teamsdevdocs) o delle [autorizzazioni per Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/permissions_reference). Sono semplicemente una scorciatoia descrittiva ai fini di questo articolo.
 
 
 |    |     |
@@ -72,11 +74,11 @@ Un'app deve rivelare i dati che usa e i dati usati per i collegamenti alle condi
 
 - POST_MESSAGE_TEAM. Consente ai bot di un'app di inviare messaggi diretti (proattivi) a qualsiasi membro del team in qualsiasi momento, anche se l'utente non ha mai parlato con il bot prima.
 
-- Le autorizzazioni seguenti non sono esplicite, ma sono implicite in base a RECEIVE_MESSAGE e REPLYTO_MESSAGE e agli ambiti in cui è possibile usare i bot, dichiarati nel manifesto:
+- Le autorizzazioni seguenti non sono esplicite, ma sono implicite in RECEIVE_MESSAGE e REPLYTO_MESSAGE e gli ambiti in cui possono essere usati i bot, dichiarati nel manifesto:
  
-    - RECEIVE_MESSAGE_PERSONAL, REPLYTO_MESSAGE_PERSONAL
-    - RECEIVE_MESSAGE_GROUPCHAT, REPLYTO_MESSAGE_GROUPCHAT
-    - RECEIVE_MESSAGE_TEAM, REPLYTO_MESSAGE_TEAM
+    - RECEIVE_MESSAGE_PERSONAL REPLYTO_MESSAGE_PERSONAL
+    - RECEIVE_MESSAGE_GROUPCHAT REPLYTO_MESSAGE_GROUPCHAT
+    - RECEIVE_MESSAGE_TEAM REPLYTO_MESSAGE_TEAM
 
 - SEND_FILES, RECEIVE_FILES. <sup>2</sup> controlla se un bot può inviare e ricevere file in chat personali (non ancora supportati per la chat di gruppo o i canali).
 
@@ -106,7 +108,7 @@ Un'app deve rivelare i dati che usa e i dati usati per i collegamenti alle condi
 
 - Le estensioni della messaggistica, invece, vedono gli indirizzi IP degli utenti e le informazioni sul referrer.
 
-- Le linee guida per le app (e il processo di revisione di AppSource) richiedono discrezionalità nella pubblicazione di messaggi di chat personali per gli utenti (tramite l'autorizzazione POST_MESSAGE_TEAM) per scopi validi. In caso di abuso, gli utenti possono bloccare il bot, gli amministratori del tenant possono bloccare l'app e Microsoft può bloccare i bot centralmente, se necessario.
+- Le linee guida per le app (e il processo di revisione di AppSource) richiedono discrezionalità nella pubblicazione di messaggi di chat personali agli utenti (tramite l'autorizzazione POST_MESSAGE_TEAM) per scopi validi. In caso di abuso, gli utenti possono bloccare il bot, gli amministratori del tenant possono bloccare l'app e Microsoft può bloccare i bot centralmente, se necessario.
 
 <sup>1</sup> alcuni bot inviano solo messaggi (POST_MESSAGE_USER). Si chiamano bot "solo notifica", ma il termine non fa riferimento a ciò che un bot è autorizzato o non può fare, ma significa che il bot non vuole esporre un'esperienza di conversazione. Teams USA questo campo per disabilitare la funzionalità nell'interfaccia utente che verrebbe normalmente abilitata; il bot non è limitato in ciò che è consentito eseguire rispetto ai bot che espongono un'esperienza di conversazione.
 
@@ -153,7 +155,7 @@ REPLYTO_CONNECTOR_MESSAGE. Alcuni connettori supportano i messaggi di azione, ch
 
 - Nessun dato esce dalla rete aziendale quando i messaggi del connettore vengono inseriti in un canale.
 
-- I connettori che supportano i messaggi actionable (autorizzazione REPLYTO_CONNECTOR_MESSAGE) non vedono inoltre l'indirizzo IP e le informazioni sul referrer; Queste informazioni vengono inviate a Microsoft e quindi instradate agli endpoint HTTP precedentemente registrati con Microsoft nel portale dei connettori.
+- I connettori che supportano i messaggi actionable (REPLYTO_CONNECTOR_MESSAGE autorizzazione) non vedono inoltre l'indirizzo IP e le informazioni sul referrer; Queste informazioni vengono inviate a Microsoft e quindi instradate agli endpoint HTTP precedentemente registrati con Microsoft nel portale dei connettori.
 
 - Ogni volta che un connettore è configurato per un canale, viene creato un URL univoco per l'istanza del connettore. Se l'istanza del connettore viene eliminata, l'URL non può più essere usato.
 
@@ -164,11 +166,11 @@ REPLYTO_CONNECTOR_MESSAGE. Alcuni connettori supportano i messaggi di azione, ch
 - Se il servizio che invia i messaggi del connettore dovesse essere compromesso e iniziare a inviare collegamenti di posta indesiderata/phishing/malware, un amministratore del tenant può impedire la creazione di nuove istanze di connettori e Microsoft può bloccarle centralmente.
 
 > [!NOTE]
-> Attualmente non è possibile sapere quali connettori supportano i messaggi actionable (autorizzazione REPLYTO_CONNECTOR_MESSAGE).
+> Attualmente non è possibile sapere quali connettori supportano i messaggi di azione (REPLYTO_CONNECTOR_MESSAGE autorizzazione).
 
 ## <a name="outgoing-webhooks"></a>Webhook in uscita
 
-I *webhook in uscita* vengono creati al volo dai proprietari del team o dai membri del team se sideload è abilitato per un tenant. Non sono funzionalità delle app Teams; Queste informazioni sono incluse per la completezza.
+I *webhook in uscita* vengono creati al volo dai proprietari o dai membri del team. Non sono funzionalità delle app Teams; Queste informazioni sono incluse per la completezza.
 
 ### <a name="required-permissions"></a>Autorizzazioni necessarie
 

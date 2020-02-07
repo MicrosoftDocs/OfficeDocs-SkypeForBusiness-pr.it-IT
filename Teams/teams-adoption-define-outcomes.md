@@ -14,15 +14,17 @@ ms.collection:
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 description: Scopri come misurare i risultati e il successo della tua abilitazione su larga scala dei team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 24b04571a647838ee4890c813e7f3b83f387c12d
-ms.sourcegitcommit: 25b6bf2c3050390cd668d2495ffcf31c44d0ff62
+ms.openlocfilehash: 51f1af667e7cf4e387b9e05eec40d17bb48a550d
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "37749274"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837856"
 ---
 # <a name="define-outcomes-and-success-for-your-microsoft-teams-adoption"></a>Definire i risultati e il successo per l'adozione di Microsoft Teams
 
@@ -75,7 +77,7 @@ Teams è una tecnologia di trasformazione, quindi, a seconda delle dimensioni de
 | Teams First | Core Teams | Teams Go Big | Skype side by side | Migrazione |
 |------------ | ---------- | ------------ | ------------------ | --------- |
 | Distribuzione di lead cloud con teams | Attivazione dello scenario di collaborazione con teams | Tutti i dipendenti di team e team a livello di organizzazione | Abilitare teams e Skype for business | Eseguire la migrazione di utenti da Skype for business a teams |
-| -Applicabile ai clienti di Office 365 nuovi o in basso consumo <br/>-Lead con teams in uno scenario specifico per il cliente <br/>-Evidenziare l'esperienza utente integrata e il tempo accelerato per il valore per Office 365 <br/>-Gestire insieme la pianificazione del carico di lavoro per evitare l'implementazione seriale | -Abilitare teams insieme a OneDrive e SharePoint Online <br/>-Creare una Intranet aziendale per condividere le notizie e i video con Microsoft Stream<br/>**Migliorare insieme**: <br/>Squadre<br/>SharePoint<br/>Yammer<br/>Planner<br/>PowerApps |-Per clienti con meno di 5000 seggi (limitazione corrente)<br/>-Abilitare la collaborazione tra organizzazioni con un team per tutti<br/>-Automatizzare le attività comuni (richieste di ferie, sondaggi dei dipendenti, impegno esecutivo) |-Usare le tattiche di base di teams per accelerare la collaborazione<br/>-Evidenziare le indicazioni dello scenario della riunione in base alle dimensioni e al set di caratteristiche richiesto</br>-Usare Skype for business per le chiamate aziendali, l'interoperabilità e gli scenari ibridi<br/>-Usare la roadmap pubblica per la pianificazione delle funzionalità. |-Pianificare lo stato di trasferimento in teams da Skype for business creando una roadmap di strategia per il cliente<br/>-Allega alla pianificazione del rilascio delle caratteristiche<br/>-Consigliato anche affiancato e teams core per facilitare la transizione
+| -Applicabile ai clienti di Office 365 nuovi o in basso consumo <br/>-Lead con teams in uno scenario specifico per il cliente <br/>-Evidenziare l'esperienza utente integrata e il tempo accelerato per il valore per Office 365 <br/>-Gestire insieme la pianificazione del carico di lavoro per evitare l'implementazione seriale | -Abilitare teams insieme a OneDrive e SharePoint Online <br/>-Creare una Intranet aziendale per condividere le notizie e i video con Microsoft Stream<br/>**Migliorare insieme**: <br/>Teams<br/>SharePoint<br/>Yammer<br/>Planner<br/>PowerApps |-Per clienti con meno di 5000 seggi (limitazione corrente)<br/>-Abilitare la collaborazione tra organizzazioni con un team per tutti<br/>-Automatizzare le attività comuni (richieste di ferie, sondaggi dei dipendenti, impegno esecutivo) |-Usare le tattiche di base di teams per accelerare la collaborazione<br/>-Evidenziare le indicazioni dello scenario della riunione in base alle dimensioni e al set di caratteristiche richiesto</br>-Usare Skype for business per le chiamate aziendali, l'interoperabilità e gli scenari ibridi<br/>-Usare la roadmap pubblica per la pianificazione delle funzionalità. |-Pianificare lo stato di trasferimento in teams da Skype for business creando una roadmap di strategia per il cliente<br/>-Allega alla pianificazione del rilascio delle caratteristiche<br/>-Consigliato anche affiancato e teams core per facilitare la transizione
 
 Di seguito sono riportate le raccomandazioni per la maggior parte delle organizzazioni di clienti. Tuttavia, esistono eccezioni. Per ottenere indicazioni per qualsiasi scenario non trattato in questo articolo, porre le proprie domande nella community di adoptioni di guida o contattare il team di FastTrack o Microsoft Partner Network.
 
@@ -85,7 +87,7 @@ Di seguito sono riportate le raccomandazioni per la maggior parte delle organizz
 
     Teams Go Big è anche la strategia di abilitazione preferita per le organizzazioni in 1.000 dipendenti che vogliono semplificare la comunicazione e l'impegno dei dipendenti. L'uso del team a livello di organizzazione può riunire le persone per esaminare le attività e le iniziative comuni su qualsiasi dispositivo. 
 
-- **Scegliere affiancato**: per le organizzazioni che usano Skype for business per i servizi di audioconferenza, il supporto per i dispositivi della sala riunioni o le funzionalità cloud Voice, è consigliabile eseguire Team e Skype affiancati per familiarizzare i dipendenti con il caratteristiche di collaborazione di base, mentre si pianifica la migrazione da Skype for business in un momento conveniente per l'azienda. Tieni presente che l'uso di entrambi i client affiancati può introdurre confusione degli utenti sugli strumenti da usare, quindi ti consigliamo di tenere in breve questa fase del viaggio di adozione. 
+- **Scegliere affiancato**: per le organizzazioni che usano Skype for business per i servizi di audioconferenza, il supporto per i dispositivi della sala riunioni o le funzionalità cloud Voice, è consigliabile eseguire Team e Skype affiancati per familiarizzare i dipendenti con le caratteristiche di collaborazione principali, mentre si pianifica la migrazione da Skype for business in un momento conveniente per l'azienda. Tieni presente che l'uso di entrambi i client affiancati può introdurre confusione degli utenti sugli strumenti da usare, quindi ti consigliamo di tenere in breve questa fase del viaggio di adozione. 
 
 - **Scegliere migrazione**: la migrazione da Skype for business a teams include componenti aggiuntivi da un punto di vista tecnico, ma il percorso di adozione degli utenti ha gli stessi componenti di un'implementazione di teams di grandi dimensioni. Inoltre, dovrai informare gli utenti dell'esperienza e dell'interfaccia di riunione dei team, del nuovo comportamento della chat persistente e di altri elementi dell'esperienza diversa da Skype for business.
 

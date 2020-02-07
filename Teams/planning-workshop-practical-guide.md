@@ -11,14 +11,16 @@ ms.reviewer: lolaj, rowille
 description: Strumenti di pianificazione, laboratori e kit per la Guida introduttiva per aiutare le organizzazioni a iniziare a usare Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 71e864364c089b149f0351570fd673a0bf24068e
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: a5d7423dfd0493af0e780b81f96d840f422d4833
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573233"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41834656"
 ---
 # <a name="tools-and-workshops-plan-deliver-and-adopt-microsoft-teams"></a>Strumenti e laboratori: pianificare, distribuire e adottare Microsoft Teams
 
@@ -50,8 +52,8 @@ Scaricare questi strumenti per illustrare la pianificazione, la distribuzione e 
 
 [Workshop di pianificazione dell'aggiornamento di Skype for business to Teams](https://www.microsoft.com/microsoft-365/partners/intelligentcommunications/skype-for-business-teams)
 
-[Trasferire utenti da locale a teams](https://docs.microsoft.com/skypeforbusiness/hybrid/move-users-from-on-premises-to-teams)
+[Spostare utenti da ambiente locale a Teams](https://docs.microsoft.com/skypeforbusiness/hybrid/move-users-from-on-premises-to-teams)
 
-[Gestire le impostazioni di Microsoft teams per l'organizzazione](enable-features-office-365.md)
+[Gestire le impostazioni di Microsoft Teams per l'organizzazione](enable-features-office-365.md)
 
 

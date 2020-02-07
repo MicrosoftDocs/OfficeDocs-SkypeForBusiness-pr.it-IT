@@ -13,14 +13,16 @@ description: Come accedere a Microsoft teams con l'autenticazione moderna.
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+f1.keywords:
+- NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9911a014fe3bd3e3ede151e2a85e8181c399e463
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+ms.openlocfilehash: 79f04161c070ff4818fdb2dfc212e5c3fc98b2b0
+ms.sourcegitcommit: 8e2fa7b744d0a174b699ae7298d4688b971eeff3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41790614"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845137"
 ---
 <a name="sign-in-to-microsoft-teams-using-modern-authentication"></a>Accedere a Microsoft teams con l'autenticazione moderna
 ==========================
@@ -39,9 +41,14 @@ L'autenticazione moderna è un processo che consente ai team di sapere che gli u
 
 - Se gli utenti hanno eseguito l'accesso a un computer collegato a un dominio, quando avviano teams, potrebbe essere richiesto di passare a un altro passaggio di autenticazione, a seconda che l'organizzazione abbia scelto di richiedere l'AMF o se il proprio computer richiede già l'accesso a Mae. Se il proprio computer richiede già l'accesso a Mae, quando aprono teams, l'app viene avviata automaticamente.
 
-- Se gli utenti hanno eseguito l'accesso a un computer collegato a un dominio e non si vuole che il nome utente venga prepopolato nella schermata di accesso a teams, gli amministratori possono impostare il seguente registro di sistema di Windows per disattivare la prepopolazione del nome utente: computer \ HKEY_CURRENT_USER \software\ Microsoft\Office\Teams DisableUpnSuffixCheck (REG_DWORD) 0x00000001 (1)
+- Se gli utenti hanno eseguito l'accesso a un computer collegato a un dominio e non si vuole che il nome utente venga prepopolato nella schermata di accesso a teams, gli amministratori possono impostare il seguente registro di sistema di Windows per disattivare la prepopolazione del nome utente (UPN):
 
-  Nota: per impostazione predefinita, non è necessario impostare una chiave del registro di sistema per disattivare i nomi utente che terminano con ". local" o ". Corp". 
+  Computer \ HKEY_CURRENT_USER \Software\Microsoft\Office\Teams<br/>
+  SkipUpnPrefill (REG_DWORD)<br/>
+  0x00000001 (1)
+
+    > [!NOTE]
+    > Per impostazione predefinita, non è necessario impostare una chiave del registro di sistema per disattivare i nomi utente che terminano con ". local" o ". Corp". 
 
 
 ### <a name="mac-users"></a>Utenti Mac 
@@ -62,5 +69,5 @@ I team richiedono la connettività a Internet. Per informazioni sugli endpoint c
 
 L'autenticazione moderna è disponibile per ogni organizzazione che usa teams, quindi se gli utenti non riescono a completare il processo, potrebbe esserci qualcosa che non va nel dominio o nell'account aziendale di Office 365 dell'organizzazione. 
 
-Per altre informazioni, vedere [perché si verificano problemi di accesso a Microsoft teams?](https://support.office.com/article/why-am-i-having-trouble-signing-in-to-microsoft-teams-a02f683b-61a3-4008-9447-ee60c5593b0f).
+Per altre informazioni, vedere [perché si verificano problemi di accesso a Microsoft teams?](https://support.office.com/article/why-am-i-having-trouble-signing-in-to-microsoft-teams-a02f683b-61a3-4008-9447-ee60c5593b0f)
 

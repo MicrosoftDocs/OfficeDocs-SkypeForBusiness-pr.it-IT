@@ -10,20 +10,22 @@ audience: admin
 description: Pianificare la comunicazione, la formazione e il supporto degli utenti durante il pilota, il bordo e l'aggiornamento ai team
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 71ee20ae80fa9fc7f8916efbc5a4736f50bd56f8
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: ad51dd4b269652ec1899b2af6ace6a9b7b9f713a
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235920"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836796"
 ---
-![Fasi del viaggio di aggiornamento, evidenziando la fase di preparazione degli utenti] (media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione degli utenti")
+![Fasi del viaggio di aggiornamento, evidenziando la fase di preparazione degli utenti](media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione degli utenti")
 
 Questo articolo fa parte della fase di preparazione degli utenti del viaggio di aggiornamento, un'attività completata in parallelo alla fase di preparazione tecnica. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
 
@@ -32,16 +34,16 @@ Questo articolo fa parte della fase di preparazione degli utenti del viaggio di 
 - [Coesistenza e interoperabilità intesa di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist)
 - [Scelto il viaggio di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-# <a name="prepare-a-user-readiness-plan"></a>Preparare un piano di preparazione degli utenti
+# <a name="prepare-a-user-readiness-plan"></a>Preparare un piano di idoneità degli utenti
 
-Un piano ottimale per la preparazione degli utenti incorpora il modo in cui comunicare, formare e supportare gli utenti durante il pilota, il bordo e l'aggiornamento ai team. Come si è scoperto in [valutare la disponibilità del cambiamento organizzativo](https://aka.ms/OrgReadiness), la disponibilità non è adatta a una sola dimensione. Per garantire una ricettività ottimale alla nuova tecnologia, usa una combinazione di messaggistica a portata di mano (che incorpora la messaggistica Vision/value e i casi di utilizzo universale) e la messaggistica, la formazione e il supporto personalizzati per gli utenti e le coorti che hai definito e anche per il tuo ritardatari, in base alle esigenze. Questo piano personalizzato consentirà di semplificare l'adozione degli utenti, consentendo all'utente di correlarsi più rapidamente ai team, dimostrando di comprendere le proprie esigenze.
+Un piano ottimale per la preparazione degli utenti incorpora il modo in cui comunicare, formare e supportare gli utenti durante il pilota, il bordo e l'aggiornamento ai team. Come si è scoperto in [valutare la disponibilità del cambiamento organizzativo](https://aka.ms/OrgReadiness), la disponibilità non è adatta a una sola dimensione. Per garantire un ricettività ottimale alla nuova tecnologia, usa una combinazione di messaggistica a portata di mano (che incorpora i casi di visione/valore e di uso universale) e messaggistica, formazione e supporto personalizzati per gli utenti e le coorti che hai definito e anche per i tuoi ritardatari, in base alle esigenze. Questo piano personalizzato consentirà di semplificare l'adozione degli utenti, consentendo all'utente di correlarsi più rapidamente ai team, dimostrando di comprendere le proprie esigenze.
 
 > [!Tip]
 > Scaricare il [Kit di aggiornamento di successo](https://aka.ms/UpgradeSuccessKit) per i materiali di conformità degli utenti del modello, ad esempio le comunicazioni e i sondaggi degli utenti, oltre a un piano di progetto di aggiornamento di esempio e un piano di test pilota.
 
 | | |
 |---|---|
-| ![Icona che descrive i punti di decisione](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Come si può creare un piano di preparazione per facilitare e accelerare l'adozione da parte degli utenti della nuova soluzione?</li><li>Sono disponibili le risorse giuste per la sensibilizzazione, la formazione e il supporto che si allineano alla capacità degli utenti di gestire le modifiche e le persone che hanno definito l'utente?</li></ul> |
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Come si può creare un piano di preparazione per facilitare e accelerare l'adozione da parte degli utenti della nuova soluzione?</li><li>Sono disponibili le risorse giuste per la sensibilizzazione, la formazione e il supporto che si allineano alla capacità degli utenti di gestire le modifiche e le persone che hanno definito l'utente?</li></ul> |
 | ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Usare l'elenco seguente per creare idee per il piano di preparazione. Selezionare le attività più rilevanti o aggiungere le proprie, per progettare un piano di preparazione ottimizzato per l'organizzazione. Ricordarsi di usare una combinazione di campagne a portata di mano (per l'intera organizzazione) e mirate (per ritardatari o specifiche personas) per ottenere i risultati massimi.</li></ul>|
 
 <div class="mx-tableFixed">

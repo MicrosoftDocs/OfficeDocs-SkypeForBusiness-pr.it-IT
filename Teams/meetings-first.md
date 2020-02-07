@@ -10,19 +10,21 @@ ms.reviewer: francoid
 description: Informazioni sulle riunioni prima, in cui gli utenti possono creare la riunione in teams, continuando a usare Skype for business per la chat, le chiamate e la presenza.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3207a7e7f460cb2941dd4c46df2a215df7997ed4
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 10321d02398c6c2b0ffc2143a9bafa406fbec637
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37639626"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836456"
 ---
-# <a name="meetings-first"></a>Riunioni per primo
+# <a name="meetings-first"></a>Riunioni al primo posto
 
 "Meetings First" è mirato e ottimizzato per le organizzazioni di Skype for Business Server con VoIP aziendale nei locali che vogliono iniziare a usare le riunioni teams il più rapidamente possibile. Per queste organizzazioni, la prima riunione è un'alternativa all'uso della modalità **isole** che privilegia l'esperienza delle riunioni di teams.
 
@@ -103,7 +105,7 @@ In questa fase potresti considerare l'uso di un pilota pronto per la produzione 
 
 Dopo aver concesso la licenza agli utenti e aver preparato l'organizzazione per le riunioni di teams, è il momento di abilitare prima gli utenti per le riunioni. È stato semplificato: un'unica impostazione consente di eseguire tutte le operazioni seguenti.
 
-Tutte le funzionalità e le esperienze degli utenti nelle riunioni prima, tra cui la configurazione del client teams e la [conformità automatica](teams-client-experience-and-conformance-to-coexistence-modes.md) dell'esperienza utente, del servizio di migrazione delle riunioni e delle migliori funzionalità insieme, vengono configurate concedendo all'utente (o gruppo di utenti o tenant default) la [modalità di coesistenza SfBWithTeamsCollabAndMeetings](setting-your-coexistence-and-upgrade-settings.md) nell'interfaccia di [amministrazione di Microsoft teams](manage-teams-in-modern-portal.md) oppure usando [PowerShell](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps).
+Tutte le funzionalità e le esperienze degli utenti nelle riunioni prima, inclusa la configurazione del client teams e la [conformità automatica](teams-client-experience-and-conformance-to-coexistence-modes.md) dell'esperienza utente, del servizio di migrazione delle riunioni e delle migliori funzionalità insieme, vengono configurate concedendo all'utente (o al gruppo di utenti o al tenant) la [modalità di coesistenza di SfBWithTeamsCollabAndMeetings](setting-your-coexistence-and-upgrade-settings.md) nell'interfaccia di [amministrazione di Microsoft teams](manage-teams-in-modern-portal.md) oppure usando [PowerShell](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps).
 
 ![Screenshot delle impostazioni di amministrazione per abilitare prima le riunioni](media/teams-meeting-admin-settings.png)
 

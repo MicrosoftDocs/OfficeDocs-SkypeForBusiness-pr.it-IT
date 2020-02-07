@@ -11,18 +11,20 @@ ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
 description: Determinare se l'organizzazione è pronta per la transizione ai team.
+f1.keywords:
+- CSH
 ms.custom: Adopt
 ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: da70e1207165a9034749382dbbf0ff4444bd9311
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 8e7f1261857905cea3c849654fdbcf926c36026d
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36242451"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837876"
 ---
 # <a name="how-ready-is-your-organization-for-microsoft-teams"></a>In che modo è pronta l'organizzazione per Microsoft Teams?
 
@@ -81,7 +83,7 @@ Ogni approccio dell'organizzazione cambia in modo diverso, a seconda dell'area g
    > I primi adottanti fanno grandi collaudatori pilota e campioni peer. Gli utenti con lentezza nell'adozione di nuovi strumenti richiedono ulteriore incoraggiamento e più tempo per la modifica. 
 
 2. Qual è la competenza degli utenti per la modifica? (*Formazione*)
-    - I **self** -Starter richiedono solo un collegamento a un video.
+    - I **self-starter** richiedono solo un collegamento a un video.
     - I **costruttori di Team** fanno bene con formazione di gruppo.
     - Gli **studenti uno-a-uno** richiedono il supporto personale.
 
@@ -100,4 +102,4 @@ Combinare questi dati con i profili delle parti interessate e i dipendenti che d
 
 Puoi usare i campioni interni per risolvere il problema di avere tipi di modifica diversi. In questo caso, il feedback è la chiave per il successo: incoraggiare le persone a condividere le proprie sfide e le proprie esigenze. Abbracciare i disgregatori e i dissenzienti dando a questi individui o gruppi un seggio al tavolo durante la sperimentazione. Questa procedura consigliata consente di spianare la strada a una distribuzione più agevole dei miglioramenti della collaborazione.  
 
-![Icona che rappresenta il passaggio](media/teams-adoption-next-icon.png) successivo: Microsoft teams adoption [fase 2: esperimento](teams-adoption-phase2-experiment.md) 
+![Icona che rappresenta il passaggio](media/teams-adoption-next-icon.png) successivo: [Microsoft teams adoption fase 2: esperimento](teams-adoption-phase2-experiment.md) 

@@ -10,15 +10,17 @@ audience: admin
 ms.service: msteams
 ms.collection:
 - M365-collaboration
+f1.keywords:
+- NOCSH
 description: Informazioni su come usare i controlli di PowerShell per la gestione di Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a83e8114020ef400ba983f483727436bbd383736
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: d22eb0b14d25bec57949bb804e8bb8098ee33510
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570125"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836956"
 ---
 # <a name="teams-powershell-overview"></a>Panoramica di PowerShell Teams
 
@@ -120,7 +122,7 @@ Le configurazioni sono contenitori di impostazioni gestite nel servizio che non 
 
 ## <a name="other-powershell-tools"></a>Altri strumenti di PowerShell
 
-Per informazioni dettagliate su come usare tutti i controlli di PowerShell per la gestione di Microsoft teams e Skype for business, incluse descrizioni dettagliate delle impostazioni di ogni criterio, [fare riferimento al cmdlet Microsoft teams](https://docs.microsoft.com/powershell/teams/?view=teams-ps) e [Skype for Riferimento ai cmdlet business](https://docs.microsoft.com/powershell/skype/intro?view=skype-ps).
+Per informazioni dettagliate su come usare tutti i controlli di PowerShell per la gestione di Microsoft teams e Skype for business, incluse descrizioni dettagliate delle impostazioni di ogni criterio, nella Guida di riferimento ai cmdlet di [Microsoft teams](https://docs.microsoft.com/powershell/teams/?view=teams-ps) e nella Guida [di riferimento a Skype for business](https://docs.microsoft.com/powershell/skype/intro?view=skype-ps).
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 

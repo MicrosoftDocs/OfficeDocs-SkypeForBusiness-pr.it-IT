@@ -10,18 +10,20 @@ audience: admin
 description: Panoramica degli aggiornamenti automatici da Skype for business a teams
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4f6e994f41f44c2895d394b432b37bed617ad2eb
-ms.sourcegitcommit: 70323d648e9ae3b20a710120b9dcdc452afc462b
+ms.openlocfilehash: 1ed959f74be1074ab8ed60b3fe54f06384b7990a
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37698054"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836168"
 ---
 # <a name="automated-upgrades-from-skype-for-business-online-to-microsoft-teams"></a>Aggiornamenti automatici da Skype for business online a Microsoft Teams
 
@@ -63,7 +65,7 @@ Consentiamo il downgrade di una tantum da Teams a SfBO, per consentire ai tenant
 ## <a name="related-content"></a>Contenuti correlati
 
 - [Introduzione all'aggiornamento di Microsoft Teams](upgrade-start-here.md)
-- [Pensionamento Skype for business online](skype-for-business-online-retirement.md)
+- [Ritiro di Skype for Business Online](skype-for-business-online-retirement.md)
 - [Get-CsTeamsUpgradeStatus](https://docs.microsoft.com/powershell/module/skype/get-csteamsupgradestatus?view=skype-ps)
 - [Considerazioni sulla modalità solo Teams](teams-only-mode-considerations.md)
 

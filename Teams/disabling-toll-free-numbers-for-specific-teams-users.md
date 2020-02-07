@@ -16,16 +16,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Audio Conferencing
 description: Gli amministratori possono controllare come gli organizzatori utilizzano i numeri gratuiti per le riunioni.
-ms.openlocfilehash: e6a62473c2db2e2a36a0b0302831afe0b4877f8f
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 7bc830529fc24a61be914998e923ad2d5288b7c5
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41707271"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837266"
 ---
 # <a name="disabling-toll-free-numbers-for-specific-teams-users"></a>Disabilitazione dei numeri verdi per gli utenti di team specifici
 

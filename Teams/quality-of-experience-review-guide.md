@@ -12,14 +12,16 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
+f1.keywords:
+- NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8a25b7db3a254c4bc1c1266b6b9be48ed798f331
-ms.sourcegitcommit: 013190ad10cdc02ce02e583961f433d024d5d370
+ms.openlocfilehash: ff4fe3a0a8a43c23978345461b0d32fe5182a6dd
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41634889"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41838256"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza
 
@@ -634,7 +636,7 @@ Il formato del file di dati caricato deve soddisfare i requisiti seguenti per su
 
 _Tabella 5-struttura dei file in costruzione_
 
-| Nome colonna        | Tipo di dati | Esempio                   | Indicazioni    |
+| Nome colonna        | Tipo di dati | Esempio                   | Linee guida    |
 |--------------------|-----------|---------------------------|-------------|
 | Rete            | Stringa    | 192.168.1.0               | Obbligatorio    |
 | NetworkName        | Stringa    | USA/Seattle/SEATTLE-SEA-1 | Obbligatorio\*  |
@@ -871,7 +873,7 @@ Ora, quando si inizia la correzione, è possibile concentrare gli sforzi su un d
 _Tabella 8-passaggi successivi per la risoluzione dei problemi di installazione delle chiamate_
 
 
-|      Correzioni      |                                                                                                                                                                                                                                                                                                                                                                   Indicazioni                                                                                                                                                                                                                                                                                                                                                                   |
+|      Correzioni      |                                                                                                                                                                                                                                                                                                                                                                   Linee guida                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configurare i firewall | Collaborare con il team di rete e verificare la configurazione del firewall con [l'elenco di indirizzi IP di Office 365](https://aka.ms/o365ips).<br><br>Verificare che le [subnet](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_teams) e le porte multimediali siano incluse nelle regole del firewall. <br><br>Verificare che nel firewall siano aperte le porte necessarie (elencate di seguito). UDP deve avere la priorità perché TCP è considerato un protocollo di failback per la condivisione dello schermo audio, video e video e il suo uso influirà sulla qualità della chiamata. La condivisione di applicazioni RDP legacy usa solo TCP.<br><ul><li>**TCP:** porta 443</li><li>**UDP:** porte 3478-3481</li><ul> |
 |        Verificare         |                                                                                                                                                                                                                                                                 Usare lo [strumento di valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per verificare la connettività dall'edificio o dalla subnet interessata tramite la funzione controllo connettività.                                                                                                                                                                                                                                                                  |
@@ -930,7 +932,7 @@ Nella tabella seguente sono elencati alcuni metodi comuni per gestire e corregge
 
 _Tabella 9-passaggi successivi per il risanamento delle chiamate in calo_
 
-| Correzioni                              | Indicazioni                      |
+| Correzioni                              | Linee guida                      |
 |------------------------------------------|-------------------------------|
 | **Rete/Internet**                         | **Congestione**: collaborare con il team di rete per monitorare la larghezza di banda in edifici/subnet specifici per verificare che siano presenti problemi di sovrautilizzo. Se si conferma la congestione della rete, valutare la possibilità di aumentare la larghezza di banda in tale edificio o di applicare QoS. Usare i [report di riepilogo del flusso di qualità](#quality-investigations) inclusi nei poveri per esaminare le subnet dei problemi per problemi di jitter, latenza e perdita di pacchetti, perché spesso precedono un flusso abbandonato.<br><br>**QoS**: se la larghezza di banda crescente non è pratica o costi-proibitivi, valutare l'implementazione di QoS. Questo strumento è molto efficace per gestire il traffico congestionato e può garantire che i pacchetti multimediali della rete gestita siano prioritari sopra il traffico non multimediale. In alternativa, se non ci sono prove chiare che la larghezza di banda è il colpevole, considera queste soluzioni:<ul><li>[Guida QoS di Microsoft Teams](qos-in-teams.md)</li></ul><br>**Eseguire una valutazione della conformità della rete**: una valutazione della rete fornisce informazioni dettagliate sull'utilizzo previsto della larghezza di banda, su come gestire la larghezza di banda e le modifiche della rete e sulle procedure consigliate per la rete per team e Skype for business. Usando la tabella precedente come origine, è presente un elenco di edifici o sottoreti che sono candidati eccellenti per una valutazione.<ul><li>[Valutazione della conformità della rete di Microsoft Teams](3-envision-evaluate-my-environment.md#test-the-network)</li></ul><br>**Strumento di valutazione della rete Microsoft:** Usare questo strumento per un semplice test delle prestazioni di rete per determinare la modalità di esecuzione della rete per una chiamata di teams o Skype for business online. Lo strumento consente di valutare le prestazioni di una subnet e di convalidare la disponibilità della rete in base [ai requisiti](https://aka.ms/performancerequirements)di prestazioni Microsoft.<ul><li>[Scaricare lo strumento di valutazione della rete](https://www.microsoft.com/download/details.aspx?id=53885)</li></ul> |
 | **Client (solo Skype for business online)** | Alcuni client meno recenti hanno problemi noti e documentati con l'affidabilità dei contenuti multimediali. Esaminare i report di analisi delle chiamate da più utenti interessati oppure creare un report della tabella della versione client personalizzata in Call Quality dashboard filtrato in edifici o subnet specifiche con l'errore totale delle chiamate perse% Measure. Queste informazioni ti aiuteranno a capire se esiste una relazione tra le cadute delle chiamate in quell'edificio specifico e una versione specifica del client.     |
@@ -1006,7 +1008,7 @@ Non dimenticare di informare l'helpdesk che queste reti sperimentano problemi di
 
 _Tabella 10-collaboratori comuni di High PSR_
 
-| Correzioni                              | Indicazioni                         |
+| Correzioni                              | Linee guida                         |
 |------------------------------------------|----------------------------------|
 | **Reti**                                 | **Congestione**: una rete overused o under-provisioning può causare problemi di qualità multimediale. Collaborare con il team di rete per determinare se le connessioni di rete dall'utente al punto di uscita Internet dispongano di larghezza di banda sufficiente per supportare il supporto. <br><br>**Eseguire una valutazione della conformità della rete**: una valutazione della rete fornisce informazioni dettagliate sull'utilizzo previsto della larghezza di banda, su come gestire la larghezza di banda e le modifiche della rete e sulle procedure consigliate per la rete per team e Skype for business. Usando la tabella precedente come origine, è presente un elenco di edifici o sottoreti che sono candidati eccellenti per una valutazione.<ul><li>[Valutazione della conformità della rete di Microsoft Teams](3-envision-evaluate-my-environment.md#test-the-network)</li></ul><br>**Strumento di valutazione della rete Microsoft:** Usare questo strumento per un semplice test delle prestazioni di rete per determinare la modalità di esecuzione della rete per una chiamata di teams o Skype for business online. Lo strumento consente di valutare le prestazioni di una subnet e di convalidare la disponibilità della rete in base [ai requisiti](https://aka.ms/performancerequirements)di prestazioni Microsoft.<ul><li>[Scaricare lo strumento di valutazione della rete](https://www.microsoft.com/download/details.aspx?id=53885)</li></ul><br> |
 | **QoS (Quality of Service)**  | QoS è uno strumento collaudato per dare priorità ai pacchetti in una rete congestionata per assicurarsi che arrivino a destinazione intatto e puntuale. Valutare l'implementazione della funzionalità QoS nell'organizzazione per massimizzare la qualità dell'esperienza utente in cui è vincolata la larghezza di banda. QoS consentirà di risolvere i problemi tipicamente associati ad alti livelli di perdita di pacchetti e, in misura minore, a jitter e tempi di andata e ritorno.<ul><li>[Guida QoS di Microsoft Teams](qos-in-teams.md)</li></ul> |
@@ -1085,7 +1087,7 @@ La causa più comune dell'utilizzo di TCP mancano le regole di eccezione nei fir
 
 _Tabella 11-linee guida per la correzione dei flussi TCP tramite la creazione e la subnet_
 
-| Correzioni        | Indicazioni     |
+| Correzioni        | Linee guida     |
 |--------------------|--------------------------------------|
 | Configurare il firewall | Verificare che le [porte e gli indirizzi IP di Office 365](https://aka.ms/o365ips) siano esclusi dal firewall. Per i problemi TCP correlati ai contenuti multimediali, concentrare gli sforzi iniziali sui seguenti:<ul><li>Verificare che le subnet multimediali client 13.107.64.0/18 e 52.112.0.0/14 siano presenti nelle regole del firewall.</li><li>Porte UDP 3478 – 3481 sono le porte multimediali necessarie e devono essere aperte, in caso contrario il client non tornerà alla porta TCP 443.</li></ul> |
 | Verificare             | Usare lo [strumento di valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per verificare la connettività a determinati indirizzi IP e porte di Office 365 dall'edificio o dalla subnet interessata.    |

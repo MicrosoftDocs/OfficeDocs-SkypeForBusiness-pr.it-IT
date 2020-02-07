@@ -10,15 +10,17 @@ ms.reviewer: rowille
 audience: admin
 description: Seguire le attività di base di questo elenco di controllo quando si configura la rete per i team.
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6cf45acd7053864dbb92e58444cdcc4b162cec9b
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 489857d1109230339a051712db374040800275fd
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573341"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41835956"
 ---
 # <a name="configure-networking"></a>Configurare la rete
 

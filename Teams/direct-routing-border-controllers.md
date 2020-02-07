@@ -14,13 +14,15 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 hideEdit: true
+f1.keywords:
+- NOCSH
 description: Partner Microsoft con fornitori di SBC selezionati per certificare il lavoro di SBCs con il routing diretto.
-ms.openlocfilehash: dfd5474ac0e70353823be48b44e0d5e2e2f39f1d
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: b574911c2d819e665f088ec8be12f24e1830daf2
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823990"
+ms.locfileid: "41837586"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
@@ -60,12 +62,12 @@ Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). In caso di do
 |                                                                                                                     |      SBC 2000       |     &#10004;     |   &#10004;   |     v 8.0.3 (Build 537)     |  Intrado ERS <br>Intrado EGW  |  In sospeso  |    
 |                                                                                                                     |    SBC SWe Lite     |     &#10004;     |  &#10004;    |      v 8.0.3 (Build 216)    |  Intrado ERS <br>Intrado EGW   |  In sospeso  |    
 |                     [Thinktel](https://www.thinktel.ca/services/think-365/think-365-overview/)                      |    Think 365 SBC    |     &#10004;     |   In sospeso    |       V 1.4       |     |    |    
-|                     [Oracle](https://www.oracle.com/industries/communications/enterprise-session-border-controller/microsoft.html)                      |    AP 1100      |    &#10004;     |    &#10004;    |   8.3.0.0.1 |    |    |    
-|                                                                                                                    |    AP 3900           |    &#10004;     |    &#10004;   |   8.3.0.0.1  |    |    |    
-|                                                                                                                    |      AP 4600         |    &#10004;   |    &#10004;     |     8.3.0.0.1  |   |    |    
-|                                                                                                                    |      AP 6300         |    &#10004;   |    &#10004;     |     8.3.0.0.1  |   |    |    
-|                                                                                                                   |      AP 6350           |    &#10004;   |    &#10004;    |     8.3.0.0.1  |        |    |                                            
-|                                                                                                                    |      VME           |    &#10004;    |    &#10004;    |     8.3.0.0.1   |    |    |    
+|                     [Oracle](https://www.oracle.com/industries/communications/enterprise-session-border-controller/microsoft.html)                      |    AP 1100      |    &#10004;     |    &#10004;    |   8.3.0.0.1 |   Intrado ERS <br>Intrado EGW  |    |    
+|                                                                                                                    |    AP 3900           |    &#10004;     |    &#10004;   |   8.3.0.0.1  |   Intrado ERS <br>Intrado EGW  |    |    
+|                                                                                                                    |      AP 4600         |    &#10004;   |    &#10004;     |     8.3.0.0.1  |   Intrado ERS <br>Intrado EGW |    |    
+|                                                                                                                    |      AP 6300         |    &#10004;   |    &#10004;     |     8.3.0.0.1  |  Intrado ERS <br>Intrado EGW  |    |    
+|                                                                                                                   |      AP 6350           |    &#10004;   |    &#10004;    |     8.3.0.0.1  |   Intrado ERS <br>Intrado EGW |    |                                            
+|                                                                                                                    |      VME           |    &#10004;    |    &#10004;    |     8.3.0.0.1   |   Intrado ERS <br>Intrado EGW  |    |    
 |                     [TE-SYSTEMS](https://www.anynode.de/anynode-and-microsoft-teams/)                               |     anynode         |     &#10004;   |  &#10004;   |      v 3.16.2      |     |    |    
 
 Per darci feedback sui prodotti sui team, ad esempio le idee per le nuove funzionalità, Vedi [UserVoice](https://microsoftteams.uservoice.com) nota la certificazione concessa a una versione principale. Ciò significa che il firmware con qualsiasi numero nel firmware SBC successivo alla versione principale è supportato.

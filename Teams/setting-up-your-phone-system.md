@@ -16,16 +16,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare il sistema telefonico (cloud PBX) per l'organizzazione. "
-ms.openlocfilehash: 8c2b65bf1a9b209ca64d2a8b915f04cfc9669971
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 71e12447d0a6951ef787bf7c7cd82024375e11fd
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706881"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837986"
 ---
 # <a name="set-up-phone-system-in-your-organization"></a>Configurare il sistema telefonico nell'organizzazione
 

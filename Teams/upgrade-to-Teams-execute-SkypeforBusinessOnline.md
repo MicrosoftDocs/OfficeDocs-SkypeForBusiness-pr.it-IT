@@ -10,20 +10,22 @@ ms.reviewer: dearbeen
 description: Considerazioni per l'aggiornamento a teams da Skype for business online
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4f4a7076a5911798664ea1b7668e7dee8c820ff1
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 3a9cedd0a169fc43e81dfdc131f98b0a90d9cd9e
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36235862"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836228"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la distribuzione e l'implementazione] (media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di distribuzione e implementazione")
+![Aggiornare il diagramma di viaggio, enfatizzando la distribuzione e l'implementazione](media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di distribuzione e implementazione")
 
 Questo articolo fa parte della fase di distribuzione e implementazione del viaggio di aggiornamento. Prima di procedere, verificare di aver completato le attività seguenti:
 
@@ -46,7 +48,7 @@ Seguire le indicazioni di questo articolo se si è completamente distribuito Sky
 
 Puoi aggiornare gli utenti alla modalità TeamsOnly assegnando l'istanza di UpgradeToTeams di TeamsUpgradePolicy, che può essere eseguita usando l'interfaccia di amministrazione di Microsoft teams o una sessione remota di Windows PowerShell per Skype for business. Puoi eseguire questa operazione per ogni utente o in base a un tenant, se vuoi aggiornare l'intero tenant in un solo passaggio. 
 
-Per altre informazioni, vedere [impostazione delle impostazioni di coesistenza e aggiornamento](https://aka.ms/SkypeToTeams-SetCoexistence) e [TeamsUpgradePolicy: gestione della migrazione e](migration-interop-guidance-for-teams-with-skype.md#teamsupgradepolicy-managing-migration-and-co-existence)della coesistenza.
+Per altre informazioni, vedere [impostazione delle impostazioni di coesistenza e aggiornamento](https://aka.ms/SkypeToTeams-SetCoexistence) e [TeamsUpgradePolicy: gestione della migrazione e della coesistenza](migration-interop-guidance-for-teams-with-skype.md#teamsupgradepolicy-managing-migration-and-co-existence).
 
 ## <a name="upgrade-all-users-to-teams-at-one-time"></a>Aggiornare tutti gli utenti a teams in una sola volta
 
@@ -55,12 +57,12 @@ Seguire questa procedura per aggiornare tutti gli utenti ai team contemporaneame
 ### <a name="step-1-notify-the-users-of-the-change-optional"></a>Passaggio 1: notificare agli utenti la modifica (facoltativo)
 
 1. Nell'interfaccia di amministrazione di Microsoft teams selezionare l'**aggiornamento dei team**di **Impostazioni** > a livello di organizzazione.
-2. In **modalità**di coesistenza cambiare gli **utenti di Notify Skype for business che è disponibile un aggiornamento a teams** **su**attivato.
+2. In **modalità di coesistenza**cambiare gli **utenti di Notify Skype for business che è disponibile un aggiornamento a teams** **su**attivato.
 
 ### <a name="step-2-set-the-coexistence-mode-to-teamsonly-for-the-organization"></a>Passaggio 2: impostare la modalità di coesistenza su TeamsOnly per l'organizzazione
 
 1. Nell'interfaccia di amministrazione di Microsoft teams selezionare **impostazioni a livello di organizzazione**.
-2. Selezionare modalità **solo teams** nell'elenco a discesa **modalità** di coesistenza.
+2. Selezionare modalità **solo teams** nell'elenco a discesa **modalità di coesistenza** .
 
 ## <a name="upgrade-users-in-stages"></a>Aggiornare gli utenti in fasi
 

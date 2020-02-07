@@ -11,16 +11,18 @@ audience: admin
 description: Informazioni su come pianificare l'implementazione delle funzionalità di governance in teams.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4ab8f3571ac38273f40cc228c05b51c8f00159a1
-ms.sourcegitcommit: 800a5c3881d0ebceb505a538fcf7e48f7b6df17e
+ms.openlocfilehash: afd990c0a49b1f61bb5be717cc3bf2ad7bc70935
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37913045"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836188"
 ---
 # <a name="plan-for-governance-in-teams"></a>Pianificare la governance in Teams
 
@@ -75,7 +77,7 @@ L'organizzazione potrebbe avere altri requisiti per l'impostazione di criteri pe
 
 |           |            |
 |-----------|------------|
-| ![Icona che descrive i punti di decisione](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>L'organizzazione richiede di specificare una data di scadenza per i team?</li><li>L'organizzazione richiede criteri specifici per la conservazione dei dati da applicare ai team?</li><li>L'organizzazione prevede di richiedere la possibilità di archiviare team inattivi per preservare il contenuto in uno stato di sola lettura?</li></ul>|
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>L'organizzazione richiede di specificare una data di scadenza per i team?</li><li>L'organizzazione richiede criteri specifici per la conservazione dei dati da applicare ai team?</li><li>L'organizzazione prevede di richiedere la possibilità di archiviare team inattivi per preservare il contenuto in uno stato di sola lettura?</li></ul>|
 | ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per la scadenza del team, la conservazione dei dati e l'archiviazione.</li><li>Pianificare l'implementazione di questi requisiti come parte dell'implementazione di teams.</li><li>Comunicare e pubblicare i criteri per informare gli utenti dei team del comportamento che possono attendersi.</li></ul>|
 
 > [!TIP]
@@ -108,7 +110,7 @@ Un altro aspetto importante della gestione della governance e del ciclo di vita 
 
 |         |         |
 |---------|---------|
-| ![Icona che descrive i punti di decisione](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>L'organizzazione richiede la limitazione delle caratteristiche dei team per l'intero tenant?</li><li>L'organizzazione richiede la limitazione delle caratteristiche dei team per utenti specifici?</li></ul>|
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>L'organizzazione richiede la limitazione delle caratteristiche dei team per l'intero tenant?</li><li>L'organizzazione richiede la limitazione delle caratteristiche dei team per utenti specifici?</li></ul>|
 | ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per limitare le caratteristiche dei team a livello di tenant e utente.</li><li>Pianificare l'implementazione dei requisiti specifici come parte dell'implementazione del team.</li><li>Comunicare e pubblicare i criteri per informare gli utenti dei team del comportamento che possono attendersi.</li></ul>|
 
 ### <a name="teams-feature-management-focus-areas"></a>Aree di interesse per la gestione delle funzionalità Teams
@@ -117,7 +119,7 @@ Teams offre funzionalità granulari per il controllo della messaggistica, delle 
 
 Per gli elenchi dettagliati di tutte le impostazioni, incluse le indicazioni tecniche su come implementarle per l'organizzazione, vedere gli articoli seguenti:
 
-- [Gestire le impostazioni di Microsoft teams per l'organizzazione](enable-features-office-365.md)
+- [Gestire le impostazioni di Microsoft Teams per l'organizzazione](enable-features-office-365.md)
 - [Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams](manage-teams-skypeforbusiness-admin-center.md).
 - [Gestire i criteri delle riunioni in teams](meeting-policies-in-teams.md)
 - [Gestire i criteri di messaggistica in teams](messaging-policies-in-teams.md)
@@ -133,7 +135,7 @@ Teams è basato sulle funzionalità avanzate di sicurezza e conformità di Offic
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Guida introduttiva di governance per Teams](teams-adoption-governance-quick-start.md)
+[Guida introduttiva sulla governance per Teams](teams-adoption-governance-quick-start.md)
 
 <!--
 ## Teams lifecycle management

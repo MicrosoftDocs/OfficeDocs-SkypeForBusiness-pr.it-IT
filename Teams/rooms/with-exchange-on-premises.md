@@ -7,18 +7,20 @@ audience: ITPro
 ms.reviewer: sohailta
 ms.topic: quickstart
 ms.service: msteams
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.custom: Strat_SB_Admin
 ms.assetid: 24860c05-40a4-436b-a44e-f5fcb9129e98
 ms.collection:
 - M365-collaboration
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams in un ambiente ibrido con Exchange in locale.
-ms.openlocfilehash: c8309f4d7007bcd249334c554d284e5be00bfa16
-ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
+ms.openlocfilehash: eb399eea64707e07d796ee36e85036e662ce8de1
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269040"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41838186"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-on-premises"></a>Distribuire le sale di Microsoft teams con Exchange in locale
 
@@ -69,7 +71,7 @@ Se si distribuiscono le sale di Microsoft teams con Exchange locale, si utilizze
 
 1. [Aprire Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) o [connettersi al server Exchange usando Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell).
 
-2. In PowerShell di Exchange, è possibile impostare una cassetta postale per l'account (abilitare la cassetta postale per l'account) eseguendo il comando seguente:
+2. In PowerShell di Exchange creare una cassetta postale per l'account (abilitare la cassetta postale per l'account) eseguendo il comando seguente:
 
    ```PowerShell
    Enable-Mailbox PROJECTRIGEL01@contoso.com -Room

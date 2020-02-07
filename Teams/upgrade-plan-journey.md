@@ -9,6 +9,8 @@ ms.reviewer: dearbeen
 audience: admin
 description: Pianificare l'aggiornamento con l'elenco delle parti interessate e quindi l'ambito del progetto.
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 search.appverid: MET150
 ms.collection:
@@ -16,14 +18,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8a72e32fc363d00c2da85be70a567551440ba942
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: a3226dd3887a4d289b810bb866d96dba704dd448
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236060"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837116"
 ---
-![Diagramma del viaggio di aggiornamento di teams] (media/upgrade-banner-main.png "Verificare che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Confermare sia la disponibilità tecnica che l'utente. Eseguire il piano di implementazione. Mantenere lo slancio per massimizzare i risultati.")
+![Diagramma del viaggio di aggiornamento di Teams](media/upgrade-banner-main.png "Verificare che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Confermare sia la disponibilità tecnica che l'utente. Eseguire il piano di implementazione. Mantenere lo slancio per massimizzare i risultati.")
 
 # <a name="plan-for-your-upgrade"></a>Pianificare l'aggiornamento
 
@@ -31,7 +33,7 @@ Un ambiente tecnico sano, l'adozione sostenibile degli utenti e la realizzazione
 
 - [Elenco delle parti interessate del progetto](upgrade-enlist-stakeholders.md).
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope).
-- Informazioni sulla coesistenza e sull'interoperabilità [di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist).
+- [Informazioni sulla coesistenza e sull'interoperabilità di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist).
 
 > [!TIP]
 > Unisciti a noi per laboratori interattivi e dinamici in cui condivideremo le linee guida, le procedure consigliate e le risorse progettate per avviare la pianificazione e l'implementazione dell'aggiornamento.

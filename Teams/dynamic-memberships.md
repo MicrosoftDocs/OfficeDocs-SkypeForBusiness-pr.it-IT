@@ -1,5 +1,5 @@
 ---
-title: Panoramica dell'appartenenza dinamica per i team
+title: Panoramica sull'appartenenza dinamica per i team
 author: jambirk
 ms.author: jambirk
 manager: serdars
@@ -9,19 +9,21 @@ ms.service: msteams
 audience: admin
 search.appverid: MET150
 description: Informazioni sull'appartenenza a un team dinamico basato su AAD.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3d22c7f068617cd4c5c73c850a37eaa89a0c8efa
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 04ac33bdd87b8bd7566e7588a3353a2f49920286
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569897"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836846"
 ---
-# <a name="overview-of-dynamic-membership-for-teams"></a>Panoramica dell'appartenenza dinamica per i team
+# <a name="overview-of-dynamic-membership-for-teams"></a>Panoramica sull'appartenenza dinamica per i team
 
 Microsoft teams supporta i team associati ai gruppi di Office 365 tramite *l'appartenenza dinamica*. L'appartenenza dinamica consente di definire l'appartenenza a un team da una o più regole che controllano alcuni attributi utente in Azure Active Directory (Azure AD). Gli utenti vengono aggiunti o rimossi automaticamente ai team corretti quando gli attributi dell'utente cambiano o gli utenti partecipano e lasciano il tenant.
 

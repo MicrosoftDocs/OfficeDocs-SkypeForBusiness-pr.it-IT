@@ -10,20 +10,22 @@ ms.reviewer: dearbeen
 description: Ambito del progetto di aggiornamento affinando la visione e gli obiettivi.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d8f1fb718ae254f3239153acd5664c4e1709de40
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 13da1a583d5aa0abaad4e981e5fc68d3aa913ce9
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236473"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837246"
 ---
-![Aggiornare il diagramma di viaggio, evidenziando la fase di definizione del progetto] (media/upgrade-banner-project-definition.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di definizione del progetto")
+![Aggiornare il diagramma di viaggio, evidenziando la fase di definizione del progetto](media/upgrade-banner-project-definition.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di definizione del progetto")
 
 Questo articolo fa parte della fase di definizione del progetto del viaggio di aggiornamento, un'attività che si completa dopo aver creato una coalizione di sponsorizzazione e un team di progetto dagli stakeholder identificati sono la chiave per il successo del progetto. Prima di procedere, verificare di aver completato le attività seguenti:
 
@@ -35,7 +37,7 @@ Il tempo necessario per definire la visione, l'ambito, gli obiettivi e la govern
 
 | | |
 |---|---|
-| ![Icona che descrive i punti di decisione](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Cosa si vuole realizzare con questo progetto (in altre parole, perché lo si esegue)?</li><li>Come si presenta il successo?</li><li>Quali sono i rischi e qual è il piano per attenuare tali rischi?</li></ul> |
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Cosa si vuole realizzare con questo progetto (in altre parole, perché lo si esegue)?</li><li>Come si presenta il successo?</li><li>Quali sono i rischi e qual è il piano per attenuare tali rischi?</li></ul> |
 | ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Discutere le sezioni seguenti con il team di progetto e gli sponsor.</li><li>Documentare la visione, l'ambito, gli obiettivi e i rischi per questo progetto.</li><li>Rivedere il team di progetto per convalidare l'impegno del team corretto.</li></ul>|
 
 ## <a name="project-vision"></a>Visione del progetto
@@ -62,7 +64,7 @@ Tieni presente che i punti di discussione seguenti consentono di affinare la tua
 
 La tua visione può essere realizzata solo nel tempo, attraverso varie fasi. L'ambito del progetto definisce _in questo momento_ lo stato attivo del progetto e serve a tenere il team di progetto incentrato sulle attività correnti, consentendo di realizzare una visione a lungo termine. Ad esempio, l'ambito può richiedere l'esecuzione di un pilota, distribuire un carico di lavoro specifico come Voice o meetings o abilitare teams insieme a Skype for business man mano che si prevede di eseguire l'aggiornamento nel tempo. Come parte dell'ambito del progetto, è necessario valutare:
 
-- [Le varie modalità](https://aka.ms/SkypeToTeams-Coexist)di coesistenza e che sarebbero ottimali per l'organizzazione.
+- [Le varie modalità di coesistenza](https://aka.ms/SkypeToTeams-Coexist)e che sarebbero ottimali per l'organizzazione.
 - Il modo migliore per far coesistere Skype for business e teams prima di trasferirsi in teams.
 - Se è consigliabile eseguire un [progetto pilota](https://aka.ms/SkypeToTeams-Pilot) per convalidare la disponibilità tecnica e degli utenti nell'organizzazione.
 

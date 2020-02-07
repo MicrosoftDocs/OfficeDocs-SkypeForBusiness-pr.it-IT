@@ -10,20 +10,22 @@ audience: admin
 description: Convalidare l'ambiente e la disponibilità della rete prima di iniziare l'aggiornamento da Skype for business a teams.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 481c32dd7b41f377d1d16c7e8d3fc068f86d8391
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 6c5287db10067ad26feac8b3074de97a977646cf
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236082"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837096"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica] (media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
+![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
 Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggiornamento, un'attività completata in parallelo con la fase di preparazione degli utenti. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
 

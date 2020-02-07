@@ -10,20 +10,22 @@ ms.reviewer: dearbeen
 description: Valutare regolarmente le opportunità per migliorare il servizio teams dopo l'aggiornamento, monitorare la roadmap teams per eventuali miglioramenti interessanti delle funzionalità.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ff5cbba5f66e409a1c079f7a5f24170adb5c3e41
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 02772dddf435e8c3dc2bc0fe243e453e387cd244
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236458"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837206"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la fase di eccellenza operativa] (media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
+![Aggiornare il diagramma di viaggio, enfatizzando la fase di eccellenza operativa](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
 
 Questo articolo fa parte della fase di eccellenza operativa del viaggio di aggiornamento, che inizia non appena hai completato l'aggiornamento da Skype for business a teams.
 

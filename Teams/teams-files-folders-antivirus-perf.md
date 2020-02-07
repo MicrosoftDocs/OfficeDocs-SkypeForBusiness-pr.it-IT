@@ -1,5 +1,5 @@
 ---
-title: File e cartelle di Teams da escludere dalla scansione antivirus
+title: File e cartelle di Teams da escludere dall'analisi antivirus
 author: msdmaguire
 ms.author: dmaguire
 manager: serdars
@@ -10,18 +10,20 @@ audience: admin
 description: Migliorare le prestazioni dei team escludendo determinati file e cartelle dalla normale analisi antivirus.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - Teams_ITAdmin_PracticalGuidance
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4b4a4591bf25d7ef1a5b6efb9ab83c4508e26110
-ms.sourcegitcommit: bcebe833d5ff4fcd3d6246fc5ed80980c6f31d0c
+ms.openlocfilehash: 2dbb4b31fc3cddd8c434eb5c94e4f8801ff0633b
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37639584"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837676"
 ---
-<a name="teams-files-and-folders-to-exclude-from-antivirus-scanning"></a>File e cartelle di Teams da escludere dalla scansione antivirus
+<a name="teams-files-and-folders-to-exclude-from-antivirus-scanning"></a>File e cartelle di Teams da escludere dall'analisi antivirus
 =================================
 
 Puoi migliorare le prestazioni complessive della distribuzione dei team impedendo ai programmi antivirus di analizzare file e cartelle di determinati team. In questo modo, eviterai le spese delle risorse di sistema per la digitalizzazione di file e cartelle che non devono essere analizzati.

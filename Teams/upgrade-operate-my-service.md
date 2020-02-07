@@ -10,20 +10,22 @@ ms.reviewer: dearbeen
 description: Attività e attività necessarie per la gestione dei servizi di teams, incluso il monitoraggio dell'integrità dei servizi e la valutazione e garanzia della qualità e dell'uso della rete
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b7be47504bab7c12803dee3728fcc872ce3a73ca
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: eab5673c1b4dcbc1810c96588577e6ee53938609
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236495"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837146"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la fase di eccellenza operativa] (media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
+![Aggiornare il diagramma di viaggio, enfatizzando la fase di eccellenza operativa](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
 
 Questo articolo fa parte della fase di eccellenza operativa del viaggio di aggiornamento, che inizia non appena hai completato l'aggiornamento da Skype for business a teams.
 
@@ -43,7 +45,7 @@ La gestione dei servizi comprende tutte le attività e i processi coinvolti nell
 
 Le attività e le attività in questa guida sono raggruppate in otto categorie, come illustrato nel diagramma seguente. Ognuna di queste categorie verrà espansa nelle sezioni seguenti.
 
-![Diagramma che illustra un elenco di categorie di attività e attività] (media/operate-my-service-image1.png "Diagramma che descrive un elenco di categorie di attività e attività che la gestione dei servizi per i team include. Il diagramma descrive anche la gestione dei servizi in gran parte un'attività del cliente.")
+![Diagramma che illustra un elenco di categorie di attività e attività](media/operate-my-service-image1.png "Diagramma che descrive un elenco di categorie di attività e attività che la gestione dei servizi per i team include. Il diagramma descrive anche la gestione dei servizi in gran parte un'attività del cliente.")
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Decidere in che modo verranno implementate le operazioni per i team.</li></ul></td></tr>
@@ -253,7 +255,7 @@ Gli altri due report sono specifici per i team e contengono ulteriori dettagli s
 
 #### <a name="required-permissions"></a>Autorizzazioni necessarie
 
-I report sull'utilizzo nell'interfaccia di amministrazione possono essere raggiunti da persone a cui è stato assegnato un ruolo di **amministratore globale** o da un ruolo di amministratore specifico del prodotto (**amministratore di Exchange**, **amministratore di Skype for business**, **SharePoint Administrator**).
+I report sull'utilizzo nell'interfaccia di amministrazione possono essere raggiunti da persone a cui è stato assegnato un ruolo di **amministratore globale** o da un ruolo di amministratore specifico del prodotto (**amministratore di Exchange**, **amministratore di Skype for business**, **amministratore di SharePoint**).
 
 Inoltre, il ruolo **lettore report** è disponibile per gli utenti che richiedono l'accesso ai report, ma non eseguono attività che richiedono autorizzazioni a livello di amministratore. Si assegna questo ruolo per specificare i report sull'utilizzo per tutti i soggetti interessati, per monitorare e guidare l'adozione. Per altre informazioni sui diversi ruoli disponibili, vedere [informazioni sui ruoli di amministratore di Office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
@@ -300,7 +302,7 @@ La comprensione del sentimento degli utenti può fungere da indicatore chiave pe
 
 - **Conclusione del progetto**: valutare il sentimento degli utenti alla fine di un progetto ti dirà quanto hai fatto e dove deve essere ancora fatto il lavoro e ti permettono di confrontare i risultati con il sondaggio precedente.
 
-- **** Continuo: continuare a misurare il sentimento degli utenti a tempo indeterminato. Le modifiche apportate ai sentimenti degli utenti potrebbero essere dovute alle modifiche apportate all'ambiente dell'organizzazione o alle modifiche nel servizio teams. Misurando i sentimenti degli utenti a intervalli regolari, è possibile capire in che modo i team di gestione dei servizi stanno eseguendo e in che modo l'organizzazione risponde alle modifiche apportate al servizio teams.
+- **Continuo: continuare**a misurare il sentimento degli utenti a tempo indeterminato. Le modifiche apportate ai sentimenti degli utenti potrebbero essere dovute alle modifiche apportate all'ambiente dell'organizzazione o alle modifiche nel servizio teams. Misurando i sentimenti degli utenti a intervalli regolari, è possibile capire in che modo i team di gestione dei servizi stanno eseguendo e in che modo l'organizzazione risponde alle modifiche apportate al servizio teams.
 
 Il sentimento degli utenti può essere valutato tramite molti metodi diversi. Possono includere sondaggi tramite posta elettronica, interviste di tipo in-persona o telefono oppure semplicemente creare un canale di feedback in teams o Yammer. Per altre informazioni, vedere [procedure consigliate per i metodi di feedback degli utenti in Microsoft teams](best-practices-feedback.md).
 
@@ -318,7 +320,7 @@ NPS è un indice che va da-100 a 100 che misura la volontà del cliente di consi
 
 - Da 1 a 6 sono detrattori: clienti insoddisfatti che possono danneggiare il servizio e impedire la crescita.
 
-![Diagramma che illustra la scala NPS] (media/operate-my-service-image2.png "Questo diagramma mostra la scala NPS. Mostra che le classifiche da 0 a 6 sono detrattori, da 7 a 8 passivi e da 9 a 10 promotori.")
+![Diagramma che illustra la scala NPS](media/operate-my-service-image2.png "Questo diagramma mostra la scala NPS. Mostra che le classifiche da 0 a 6 sono detrattori, da 7 a 8 passivi e da 9 a 10 promotori.")
 
 Anche se il numero di NPS di base è utile, otterrai il valore massimo analizzando i commenti degli utenti. Ti aiuteranno a comprendere il motivo per cui l'utente non consiglia i team ad altri. Questi commenti possono fornire un valido feedback per consentire ai team di gestione di progetti o servizi di comprendere le modifiche necessarie per fornire un servizio di qualità.
 
@@ -396,7 +398,7 @@ Ti consigliamo vivamente di nominare il campione di qualità in anticipo. Dopo e
 
 [Caricare informazioni sulle costruzioni](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard#upload-building-information)
 
-[Guida alla revisione della qualità dell'esperienza](https://aka.ms/qerguide)
+[Guida sul controllo della qualità dell'esperienza](https://aka.ms/qerguide)
 
 <!--ENDOFSECTION-->
 
@@ -429,7 +431,7 @@ Anche se sono state seguite le indicazioni precedenti, gli utenti dell'organizza
 
 1. **Convalida integrità del servizio:** Il problema che un utente potrebbe provare può essere correlato a un evento che influisce negativamente sul servizio teams o sui servizi itsdependent. Come primo passo, ti consigliamo di confermare che non ci sono problemi di servizio attivo. Consultare [come controllare l'integrità dei servizi di Office 365](https://support.office.com/article/How-to-check-Office-365-service-health-932AD3AD-533C-418A-B938-6E44E8BC33B0). Ricordarsi di controllare lo stato dei servizi dipendenti, ad esempio Exchange, SharePoint, OneDrive for business. Il monitoraggio dell'integrità dei servizi viene illustrato in modo più dettagliato nella sezione precedente, [monitora l'integrità dei servizi](#monitor-service-health).
 
-2. Convalidare la **connettività client:** I problemi di connettività causano problemi di funzionalità o di accesso in teams. È consigliabile (soprattutto per i nuovi siti o posizioni) che si convalida la connettività al servizio. Verificare che per ogni sito siano seguite le indicazioni seguenti per gli [URL e gli intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips) . Puoi sfruttare lo strumento di [valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per eseguire un test di connettività per verificare che le porte multimediali siano state aperte correttamente per le funzionalità teams. I passaggi dettagliati su come eseguire i test di connettività vengono forniti nelle linee guida per la [conformità della rete](upgrade-prepare-environment-prepare-network.md) .
+2. **Convalidare la connettività client:** I problemi di connettività causano problemi di funzionalità o di accesso in teams. È consigliabile (soprattutto per i nuovi siti o posizioni) che si convalida la connettività al servizio. Verificare che per ogni sito siano seguite le indicazioni seguenti per gli [URL e gli intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips) . Puoi sfruttare lo strumento di [valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per eseguire un test di connettività per verificare che le porte multimediali siano state aperte correttamente per le funzionalità teams. I passaggi dettagliati su come eseguire i test di connettività vengono forniti nelle linee guida per la [conformità della rete](upgrade-prepare-environment-prepare-network.md) .
 
 3. **Selezionare l'elenco dei problemi noti:** Consulta l' [elenco dei problemi noti per i team](known-issues.md) per determinare se l'utente è stato influenzato negativamente da uno di questi problemi. Seguire la soluzione alternativa fornita (se disponibile) per risolvere il problema.
 

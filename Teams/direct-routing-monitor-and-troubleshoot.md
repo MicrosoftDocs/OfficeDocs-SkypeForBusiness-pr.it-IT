@@ -1,5 +1,5 @@
 ---
-title: Monitorare e risolvere i problemi di routing diretto
+title: Monitorare e risolvere i problemi di Instradamento diretto
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -13,15 +13,17 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
+f1.keywords:
+- NOCSH
 description: Questo articolo descrive come monitorare e risolvere i problemi di configurazione del routing diretto.
-ms.openlocfilehash: b2afef2a8f02f6823be10d127c8efc7b4cd5d72d
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 5dcae4d734c146c92c0cda4ac988d6010f90cc6f
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572169"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836046"
 ---
-# <a name="monitor-and-troubleshoot-direct-routing"></a>Monitorare e risolvere i problemi di routing diretto
+# <a name="monitor-and-troubleshoot-direct-routing"></a>Monitorare e risolvere i problemi di Instradamento diretto
 
 Questo articolo descrive come monitorare e risolvere i problemi di configurazione del routing diretto. 
 
@@ -71,7 +73,7 @@ In alcuni casi, soprattutto durante l'associazione iniziale, potrebbero esserci 
 
 Per monitorare la configurazione, è possibile usare gli strumenti seguenti:  
  
-- Dashboard qualità chiamata 
+- Dashboard qualità delle chiamate 
 - Registri SBC 
 
 Il servizio di routing diretto contiene codici di errore molto descrittivi segnalati per l'analisi delle chiamate o per i registri SBC. 

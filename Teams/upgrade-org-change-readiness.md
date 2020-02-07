@@ -10,20 +10,22 @@ ms.reviewer: dearbeen
 description: Verificare che l'organizzazione e gli utenti siano pronti per Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 716e5342d29bca21ea2963a28244ae6d766c0392
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: e3f569cfc225c1933b978e9a0a7d9e9bf95be783
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236440"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837133"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione degli utenti] (media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione degli utenti")
+![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione degli utenti](media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione degli utenti")
 
 Questo articolo fa parte della fase di preparazione degli utenti del viaggio di aggiornamento, un'attività completata in parallelo alla fase di preparazione tecnica. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
 
@@ -32,7 +34,7 @@ Questo articolo fa parte della fase di preparazione degli utenti del viaggio di 
 - [Coesistenza e interoperabilità intesa di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist)
 - [Scelto il viaggio di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-# <a name="assess-organizational-change-readiness"></a>Valutare la disponibilità del cambiamento organizzativo
+# <a name="assess-organizational-change-readiness"></a>Valutare l'idoneità dell'organizzazione
 
 Dopo avere assicurato il team di progetto e definito la visione, l'ambito e gli obiettivi, il passaggio successivo per il viaggio di aggiornamento consiste nel garantire che l'organizzazione e gli utenti siano pronti per i team, un'attività che si completa in parallelo, garantendo la disponibilità tecnica. Per realizzare il valore di teams, gli utenti devono effettivamente usarlo. Semplicemente l'attivazione di teams non garantisce che si raggiunga l'obiettivo. Gli utenti hanno casi di utilizzo diversi e stili di apprendimento variabili e si adattano alle nuove tecnologie a velocità diverse. La buona notizia è che la gestione del cambiamento non è poi così complicata, ma ci vuole uno sforzo mirato. Le discussioni guidate di seguito sono progettate per facilitare la comprensione della base utente in modo da poter preparare il livello di istruzione appropriato per semplificare e accelerare l'adozione. È possibile esaminare la base utente in due modi:
 
@@ -44,7 +46,7 @@ Dopo avere assicurato il team di progetto e definito la visione, l'ambito e gli 
 
 | | |
 |---|---|
-| ![Icona che descrive i punti di decisione](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Quali sono le impostazioni cultura dell'organizzazione quando si tratta di modifiche?</li><li>In che modo la nuova tecnologia può ottimizzare il funzionamento degli utenti?</li><li>Quali utenti possono richiedere particolare attenzione per cambiare il modo in cui lavorano?</li></ul> |
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Quali sono le impostazioni cultura dell'organizzazione quando si tratta di modifiche?</li><li>In che modo la nuova tecnologia può ottimizzare il funzionamento degli utenti?</li><li>Quali utenti possono richiedere particolare attenzione per cambiare il modo in cui lavorano?</li></ul> |
 | ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Usare le linee guida e le attività associate seguenti per acquisire il profilo di conformità degli utenti dell'organizzazione.</li></ul>|
 
 ## <a name="organizational-change-readiness"></a>Preparazione del cambiamento organizzativo
@@ -97,19 +99,19 @@ Al suo interno, il lavoro di gruppo è il modo in cui le persone collaborano per
 
 Il modo in cui l'utente lavora e il modo in cui si incontrano può aiutare gli utenti a visualizzare il modo in cui possono usare i team, facilitando il trasferimento da Skype for business. Esistono due modi principali per riflettere sugli scenari di lavoro in Team: people-centric e Project-centric.
 
-- I centri di lavoro incentrati sul **progetto** su un progetto o un'iniziativa specifica, ad esempio pianificare un evento di avvio del prodotto. Dalla pianificazione degli ambiti alla gestione del budget alle attività di marketing, il lavoro di gruppo basato sul progetto consente di allineare i flussi di lavoro del progetto, mantenendo tutti
-- Il **lavoro di squadra** incentrato sulle persone ruota attorno a persone con responsabilità o attributi simili che potrebbero lavorare nello stesso team (ad esempio il team di vendita, i guerrieri della strada) o in Team (ad esempio, campioni peer). Dalla chat con un collega per ottenere una risposta a una domanda per partecipare a una riunione del team, le attività incentrate sulle persone includono la condivisione delle informazioni e la creazione di rapporti.
+- I centri di **lavoro incentrati sul progetto** su un progetto o un'iniziativa specifica, ad esempio pianificare un evento di avvio del prodotto. Dalla pianificazione degli ambiti alla gestione del budget alle attività di marketing, il lavoro di gruppo basato sul progetto consente di allineare i flussi di lavoro del progetto, mantenendo tutti
+- Il **lavoro di squadra incentrato sulle persone** ruota attorno a persone con responsabilità o attributi simili che potrebbero lavorare nello stesso team (ad esempio il team di vendita, i guerrieri della strada) o in Team (ad esempio, campioni peer). Dalla chat con un collega per ottenere una risposta a una domanda per partecipare a una riunione del team, le attività incentrate sulle persone includono la condivisione delle informazioni e la creazione di rapporti.
 
 Per ottenere il massimo dai team, Costruisci una strategia di lavoro di gruppo che includa entrambi gli scenari, aiutando gli utenti a capire come possono lavorare i team.
 
 | | |
 |---|---|
-| ![Icona che descrive i punti di decisione](media/audio_conferencing_image7.png) <br/>Punto decisionale|<ul><li>Quali sono gli scenari di lavoro di gruppo di Relatable per velocizzare l'adozione di team e facilitare l'aggiornamento da Skype for business?</li></ul> |
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punto decisionale|<ul><li>Quali sono gli scenari di lavoro di gruppo di Relatable per velocizzare l'adozione di team e facilitare l'aggiornamento da Skype for business?</li></ul> |
 | ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>USA gli esempi seguenti per creare scenari di Teaming personalizzati. Documentarli nella [cartella di lavoro aggiornamento](https://aka.ms/upgradesuccesskit).</li><li>Per altri scenari ed esempi, vedere la [raccolta produttività](https://www.microsoft.com/en-us/microsoft-365/success/)</li></ul>|
 
 ### <a name="examples"></a>Esempi
 
-**Team Project-Centric: evento di avvio del prodotto** ad esempio, la tua organizzazione si prepara a lanciare un nuovo prodotto sul mercato e sta progettando un ampio evento promozionale per guidare la consapevolezza, generare lead e incoraggiare le vendite.
+**Lavoro di squadra incentrato sul progetto: evento di avvio del prodotto** (ad esempio: la tua organizzazione si prepara a lanciare un nuovo prodotto sul mercato e sta progettando un ampio evento promozionale per guidare la consapevolezza, generare lead e incoraggiare le vendite).
 
 | Considerazione | Note |
 |----|---|
@@ -120,7 +122,7 @@ Per ottenere il massimo dai team, Costruisci una strategia di lavoro di gruppo c
 
 <sup>1</sup> supportare l'integrazione o l'allineamento delle app in teams.
 
-**Lavoro di squadra incentrato sulle persone: team di vendita** ad esempio, il team di vendita con dispersione regionale deve rimanere connesso dalla strada, rimanere allineato sulla pipeline e comprendere le offerte e le iniziative chiave che possono aiutare a raggiungere gli obiettivi di quota annuali.
+**Lavoro di squadra incentrato sulle persone: team di vendita** (ad esempio, il team di vendita con dispersione regionale deve rimanere connesso dalla strada, rimanere allineato sulla pipeline e comprendere le offerte e le iniziative chiave che possono aiutare a raggiungere gli obiettivi di quota annuali)
 
 | Considerazione | Note |
 |----|---|

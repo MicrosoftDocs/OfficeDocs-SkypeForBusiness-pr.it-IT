@@ -11,24 +11,26 @@ ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
 description: Altre informazioni sulla strutturazione di team e canali in Microsoft teams.
+f1.keywords:
+- CSH
 ms.custom: Adopt
 ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c077d49a09210862936d94d46708db95efe4585b
-ms.sourcegitcommit: 6ba9eeb81b7d55ffc319d6d6658d0ecac83c2159
+ms.openlocfilehash: 3ff198dcc7898f463c5b2c299ab9b9fb411f3382
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "37142057"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837726"
 ---
 # <a name="understand-teams-and-channels-in-microsoft-teams"></a>Informazioni su team e canali in Microsoft Teams
 
 I concetti di team e canali sono fondamentali per un'implementazione sana e produttiva di Microsoft teams. 
 
-- Un team è una raccolta di persone, contenuti e strumenti che collaborano per produrre un risultato aziendale per la società. I team sono basati su gruppi di Office 365 e le modifiche apportate alla sincronizzazione dell'appartenenza al gruppo di Office 365 al team. 
+- Un team è una raccolta di persone, contenuti e strumenti che collaborano per produrre un risultato aziendale per la società. I team sono basati sui gruppi di Office 365 e le modifiche apportate all'appartenenza al gruppo di Office 365 vengono sincronizzate con il team. 
 
 - I canali sono gli spazi di collaborazione all'interno di un team in cui è stato eseguito il lavoro effettivo. 
 
@@ -43,9 +45,9 @@ Per saperne di più su team e canali, vedere la [Panoramica di team e canali in 
 
 I tipi di accesso al team determinano chi può partecipare a un team:
 
-- I team *privati* sono limitati ai membri del team approvati dal proprietario o dai proprietari del team. Si tratta di un'impostazione tipica per team di progetto e team virtuali in un'organizzazione di grandi dimensioni.
+- I team *privati* sono riservati ai membri del team autorizzati dai proprietari del team. Si tratta di un'impostazione tipica per i team di progetto e i team virtuali in un'organizzazione di grandi dimensioni.
 
-- I team *pubblici* sono aperti a chiunque nell'organizzazione e gli utenti possono accedervi direttamente. I team pubblici sono utili per la collaborazione su argomenti di interesse generale per gli utenti di reparti diversi o per gli utenti che lavorano su progetti diversi. Si tratta di una buona impostazione predefinita per le organizzazioni più piccole.
+- I team *pubblici* sono aperti a chiunque nell'organizzazione e gli utenti possono accedervi direttamente. I team pubblici sono utili per la collaborazione su argomenti di interesse generale per gli utenti di reparti diversi o per gli utenti che lavorano su progetti diversi. Si tratta di un'impostazione predefinita ideale per le organizzazioni di piccole dimensioni.
 
 ## <a name="use-teams-to-drive-cross-organization-collaboration"></a>Usare teams per guidare la collaborazione tra organizzazioni
 

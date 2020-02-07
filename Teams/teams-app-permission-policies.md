@@ -16,16 +16,18 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sui criteri di autorizzazione delle app in Microsoft teams e su come usarli per controllare quali app sono disponibili per gli utenti dell'organizzazione.
 f1.keywords:
+- CSH
+ms.custom:
 - ms.teamsadmincenter.apppermspolicies.overview
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 86896da4d42d39f06f3fbf3f2b902aaaac08ce4f
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: ed568fe0354f009656e3837d36701a94f0765340
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41708472"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837406"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione delle app in Microsoft Teams
 

@@ -11,18 +11,20 @@ audience: admin
 search.appverid: MET150
 description: Informazioni su come eseguire l'aggiornamento della versione gratuita di Microsoft Teams
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom:
 - NewAdminCenter_Update
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fd0de5ba0901b77ef42e40ca0b18228d5d78e6fb
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: a0c86a22449fef5563b531558d45188c74ea8280
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37568488"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837166"
 ---
 <a name="upgrade-microsoft-teams-free-to-office-365-subscription-version"></a>Aggiornare Microsoft teams gratuitamente alla versione dell'abbonamento a Office 365
 ======================================================
@@ -38,7 +40,7 @@ Teams Free è progettato per piccole e medie imprese ed ha le caratteristiche se
 
 - 300 massimo utenti
 - Messaggi di chat illimitati e ricerca
-- Accesso Guest
+- Accesso guest
 - Integrazione con app e servizi, incluse le versioni online di Word, Excel, PowerPoint e OneNote
 - 2 GB di spazio di archiviazione per utente e 10 GB di spazio di archiviazione condiviso
 - chiamate audio e video online di 1:1 e di gruppo
@@ -89,7 +91,7 @@ Immettere l'indirizzo di posta elettronica che si usa per accedere a teams e qui
 
 Al termine dell'aggiornamento, vedere [Introduzione a Microsoft teams](get-started-with-teams-quick-start.md) per i primi passaggi e [adottare Microsoft teams](adopt-microsoft-teams-landing-page.md) per un approccio graduale all'adozione di team nell'organizzazione.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Per altre informazioni sulle versioni di team e sulle relative funzionalità, vedere [confrontare i piani di teams](https://products.office.com/microsoft-teams/free).
 - Per altre informazioni sull'aggiornamento alla versione completa dei team, vedere [aggiornamento da teams Free to teams](https://support.office.com/article/Upgrade-from-Teams-free-to-Teams-29475bbd-a34f-4175-9b33-d44430f8ad39).

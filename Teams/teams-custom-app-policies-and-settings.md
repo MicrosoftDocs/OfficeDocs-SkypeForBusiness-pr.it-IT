@@ -16,16 +16,18 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire i criteri e le impostazioni delle app personalizzate per controllare chi nell'organizzazione può caricare app personalizzate in Microsoft teams.
 f1.keywords:
+- CSH
+ms.custom:
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.allowsideloading
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
-ms.openlocfilehash: 5357f368d6c5716c5af30e110a9193c4b4c2ad5f
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: c86e140c917300d1d9a05a42e81cf8095ed3a670
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41708462"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837706"
 ---
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire i criteri e le impostazioni dell'app personalizzata in Microsoft Teams
 

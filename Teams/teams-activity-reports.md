@@ -13,19 +13,21 @@ search.appverid: MET150
 ms.collection:
 - M365-collaboration
 description: Informazioni su come usare i report attività per vedere in che modo gli utenti dell'organizzazione usano Microsoft teams.
+f1.keywords:
+- NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f30e44b08abdd6ed6cf6bf2edbdb70de5eea058c
-ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
+ms.openlocfilehash: ddbfd37754ed5ab1347fb198936c1df3f43b356c
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772380"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41835476"
 ---
 <a name="use-activity-reports-for-microsoft-teams"></a>Usare i report attività per Microsoft Teams 
 ========================================
 
-È possibile usare i report attività nell'interfaccia di amministrazione di Microsoft 365 per vedere in che modo gli utenti dell'organizzazione usano Microsoft teams. Ad esempio, se alcuni utenti non usano ancora Microsoft teams, potrebbero non sapere come iniziare o capire come usare i team per essere più produttivi e collaborativi. L'organizzazione può usare i report attività per decidere dove assegnare la priorità agli sforzi di formazione e comunicazione.
+È possibile usare i report attività nell'interfaccia di amministrazione di Microsoft 365 per vedere in che modo gli utenti dell'organizzazione usano Microsoft teams. Ad esempio, se alcuni utenti non usano ancora Microsoft teams, potrebbero non sapere come iniziare o capire come usare i team per essere più produttivi e collaborativi. L'organizzazione può usare i report attività per stabilire come assegnare la priorità alle attività di formazione e comunicazione.
 
 ## <a name="how-to-view-the-teams-reports-in-the-reports-dashboard"></a>Come visualizzare i report Teams nel dashboard report
 

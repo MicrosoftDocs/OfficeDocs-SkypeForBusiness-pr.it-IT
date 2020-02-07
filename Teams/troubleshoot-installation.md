@@ -9,17 +9,19 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
+f1.keywords:
+- NOCSH
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come risolvere i problemi di installazione e aggiornamento per l'app client desktop teams in Windows.
-ms.openlocfilehash: 812beb3471a1d4ee2cbc1e8e7f7b36b2a42e0e2d
-ms.sourcegitcommit: 0dba0ad1f8f00415c6437cadabed0548ce3281b1
+ms.openlocfilehash: f47edf351d6a55f57977fee823d670b749896049
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39920152"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837626"
 ---
 # <a name="troubleshoot-microsoft-teams-installation-and-update-issues-on-windows"></a>Risolvere i problemi di installazione e aggiornamento di Microsoft teams in Windows
 
@@ -37,7 +39,7 @@ Seguire questa procedura per verificare se un aggiornamento di teams è stato in
 
 Se viene visualizzato un messaggio di errore o se il numero di versione è uguale a quello del passaggio 4, il processo di aggiornamento non è riuscito.
 
-## <a name="troubleshoot-installation-and-update-issues"></a>Risolvere i problemi di installazione e aggiornamento
+## <a name="troubleshoot-installation-and-update-issues"></a>Risoluzione dei problemi di installazione e aggiornamento
 
 ### <a name="troubleshoot-installation-issues"></a>Risolvere i problemi di installazione
 

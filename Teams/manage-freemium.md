@@ -11,18 +11,20 @@ ms.reviewer: daryav
 search.appverid: MET150
 description: Informazioni sulle caratteristiche di amministratore in teams free.
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom:
 - NewAdminCenter_Update
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e2a1d22b5e19a89b873e8961676274f655f35738
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 046a1e0a728b0b92a90c00ee51b1130708aa3cfb
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570623"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837536"
 ---
 <a name="manage-the-free-version-of-microsoft-teams"></a>Gestire la versione gratuita di Microsoft Teams
 ==========================================
@@ -33,7 +35,7 @@ Per ottenere il set completo di funzionalità Team, inclusa l'amministrazione av
 
 Per altre informazioni sulle versioni di team e sulle relative funzionalità, vedere [confrontare i piani di teams](https://products.office.com/microsoft-teams/free).
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Per un breve riepilogo delle differenze tra team e teams Free, vedere [differenze tra Microsoft teams e Microsoft teams Free](https://support.office.com/article/0b69cf39-eb52-49af-b255-60d46fdf8a9c). 
 - Per altre informazioni sull'aggiornamento alla versione completa dei team, vedere [eseguire l'aggiornamento da teams Free to teams](https://support.office.com/article/29475bbd-a34f-4175-9b33-d44430f8ad39) e [aggiornare Microsoft teams gratuitamente alla versione di sottoscrizione di Office 365](upgrade-freemium.md).

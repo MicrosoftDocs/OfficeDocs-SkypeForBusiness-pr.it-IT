@@ -10,18 +10,20 @@ ms.reviewer: dearbeen
 description: Usare queste indicazioni per informazioni sui requisiti per valutare correttamente l'ambiente corrente per l'aggiornamento ai team.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f4716eac44880ca149fb757d2f16ebfe80ccab65
-ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
+ms.openlocfilehash: 5000ecb5195654e902c06f329c910c0a5edb7d55
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772320"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837130"
 ---
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
@@ -182,7 +184,7 @@ Usare la tabella seguente per acquisire lo stato di approvazione e preparazione 
 > | Domanda | Answer | Commenti |
 > |---|---|---|
 > | Qual è l'uso attivo corrente di <br>Skype for business? | **** totale di utenti attivi e utenti abilitati | |
-> | Modalità di utilizzo dell'organizzazione <br>Skype for business? | conversazioni di 1:1 <br>&nbsp;&nbsp; &nbsp; Messaggistica <input type="checkbox"> istantanea <br>&nbsp;&nbsp; Chiamata &nbsp; <input type="checkbox"> <br>&nbsp;&nbsp; Condivisione &nbsp; <input type="checkbox"><br>  Riunioni <br>&nbsp;&nbsp; &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Condivisione &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Chiamata &nbsp; <input type="checkbox"> | |
+> | Modalità di utilizzo dell'organizzazione <br>Skype for business? | conversazioni di 1:1 <br>&nbsp;&nbsp; &nbsp; Messaggistica <input type="checkbox"> istantanea <br>&nbsp;&nbsp; Chiamata &nbsp; <input type="checkbox"> <br>&nbsp;&nbsp; Condivisione &nbsp; <input type="checkbox"><br> Riunioni <br>&nbsp;&nbsp; &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Condivisione &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Chiamata &nbsp; <input type="checkbox"> | |
 > | L'organizzazione ha un'adozione da parte dell'utente <br>e cambiare il team di gestione? | <input type="checkbox">Sì<br/> <input type="checkbox">Non | |
 > | Come si fa a misurare il successo della tecnologia attualmente <br>Rollout come Skype for business? | | |
 > | Qual è la percentuale della base utente che si vuole dire <br>adottato Skype for business? | | |

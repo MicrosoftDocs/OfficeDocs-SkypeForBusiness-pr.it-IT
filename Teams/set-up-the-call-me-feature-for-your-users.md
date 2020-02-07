@@ -1,5 +1,5 @@
 ---
-title: Configurare la funzionalità chiamami per gli utenti
+title: Configurare la funzionalità Chiamami per gli utenti
 author: LanaChin
 ms.author: v-lanac
 ms.reviewer: macai, phedry
@@ -12,16 +12,18 @@ description: Informazioni su come configurare la funzionalità Chiamami in teams
 localization_priority: Normal
 ms.collection:
 - M365-voice
+f1.keywords:
+- NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8bd9ca9b73d3d2e60b707d0f40ebb1797d4e1a00
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: fe895fee4f3bc0872d277429289b5d04d6c9161d
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571547"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837996"
 ---
-# <a name="set-up-the-call-me-feature-for-your-users"></a>Configurare la funzionalità chiamami per gli utenti
+# <a name="set-up-the-call-me-feature-for-your-users"></a>Configurare la funzionalità Chiamami per gli utenti
 
 In Microsoft teams, la funzionalità **chiamami** offre agli utenti un modo per partecipare alla parte audio di una riunione tramite telefono. Questa operazione è utile in scenari in cui l'uso di un computer per l'audio potrebbe non essere possibile. Gli utenti ottengono la parte audio della riunione tramite il telefono cellulare o la linea di terra e la parte di contenuto&mdash;della riunione, quando un altro partecipante alla riunione condivide lo schermo&mdash;o riproduce un video nel computer.
 

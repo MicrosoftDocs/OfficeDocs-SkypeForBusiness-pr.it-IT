@@ -11,16 +11,18 @@ audience: admin
 description: Elenco delle risorse teams utili per gli amministratori IT in Education.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6eb86cd3679b6cd90b646add994760c4d41aa46d
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: dc9413690f98afeab9bb96baefd3d73e8b56d3f8
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569985"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41838246"
 ---
 <a name="microsoft-teams-resources-for-education-admins"></a>Risorse di Microsoft teams per gli amministratori dell'istruzione
 ==============================================
@@ -45,7 +47,7 @@ Creare messaggi di posta elettronica, poster e volantini personalizzati con le i
 |---------|---------|
 |**Introduzione a Microsoft teams per l'istruzione: suggerimenti e trucchi**<br>[Scaricare il file PDF pronto per la stampa](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/teams-edu-packet-get-started.pdf?raw=true)<br>![Screenshot del pacchetto introduttivo di Microsoft teams for Education.](media/package-teams-edu-get-started.png)    |
 
-## <a name="call-to-action"></a>Chiamata all'azione
+## <a name="call-to-action"></a>Invito all'azione
 
 - Consulta la [demo interattiva di Microsoft teams](https://teamsdemo.office.com/) (5 minuti per il completamento)
 - Attivare Microsoft teams nell'interfaccia di [amministrazione di microsoft 365](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) (accedere come amministratore di Office 365)

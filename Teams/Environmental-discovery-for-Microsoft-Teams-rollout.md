@@ -8,6 +8,8 @@ audience: admin
 ms.service: msteams
 ms.reviewer: dearbeen
 description: Come eseguire una scoperta ambientale dettagliata quando si pianifica il viaggio da Skype for business a Microsoft teams.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
@@ -15,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 029d4870a6826866ddff9b712c5acd2b59897b75
-ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
+ms.openlocfilehash: 7f49626f6526fe05aed81f39574a094347e0a3ae
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772400"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41834526"
 ---
 <a name="environmental-discovery-for-a-microsoft-teams-rollout"></a>Individuazione ambientale per l'implementazione di Microsoft Teams
 ===================================================
@@ -203,7 +205,7 @@ Usare la tabella seguente per acquisire lo stato di approvazione e preparazione 
 > | Domanda | Answer | Commenti |
 > |---|---|---|
 > | Qual è l'uso attivo corrente di <br>Skype for business? | **** totale di utenti attivi e utenti abilitati | |
-> | Modalità di utilizzo dell'organizzazione <br>Skype for business? | conversazioni di 1:1 <br>&nbsp;&nbsp; &nbsp; Messaggistica <input type="checkbox"> istantanea <br>&nbsp;&nbsp; Chiamata &nbsp; <input type="checkbox"> <br>&nbsp;&nbsp; Condivisione &nbsp; <input type="checkbox"><br>  Riunioni <br>&nbsp;&nbsp; &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Condivisione &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Chiamata &nbsp; <input type="checkbox"> | |
+> | Modalità di utilizzo dell'organizzazione <br>Skype for business? | conversazioni di 1:1 <br>&nbsp;&nbsp; &nbsp; Messaggistica <input type="checkbox"> istantanea <br>&nbsp;&nbsp; Chiamata &nbsp; <input type="checkbox"> <br>&nbsp;&nbsp; Condivisione &nbsp; <input type="checkbox"><br> Riunioni <br>&nbsp;&nbsp; &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Condivisione &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Chiamata &nbsp; <input type="checkbox"> | |
 > | L'organizzazione ha un'adozione da parte dell'utente <br>e cambiare il team di gestione? | <input type="checkbox">Sì<br/> <input type="checkbox">Non | |
 > | Come si fa a misurare il successo della tecnologia attualmente <br>Rollout come Skype for business? | | |
 > | Qual è la percentuale della base utente che si vuole dire <br>adottato Skype for business? | | |

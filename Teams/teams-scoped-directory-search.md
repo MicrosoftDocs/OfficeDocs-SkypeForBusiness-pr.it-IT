@@ -13,16 +13,18 @@ search.appverid: MET150
 ms.collection:
 - M365-collaboration
 description: Informazioni su come usare la ricerca di directory con ambito Microsoft teams per creare visualizzazioni personalizzate della directory.
+f1.keywords:
+- CSH
 ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fca0feadf29ce83a8a6867f0e00b06fc0426a203
-ms.sourcegitcommit: 8db50c46992dccf54c1d4be58d8a0d21ec64ddd0
+ms.openlocfilehash: ca20e7293f20d68ea98f61a98090f7892ba294e8
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "37772336"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836946"
 ---
 # <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca nella directory con ambito di Microsoft Teams
 
@@ -37,8 +39,8 @@ Microsoft teams consente alle organizzazioni di creare visualizzazioni personali
 
 Gli scenari che traggono vantaggio dalle ricerche di directory con ambito sono simili a quelli degli scenari dei criteri Rubrica. Ad esempio, potresti voler usare la ricerca di directory con ambito nelle situazioni seguenti:
 
-- L'organizzazione ha più società all'interno del tenant che si desidera conservare separate. 
-- La tua scuola vuole limitare le chat tra docenti e studenti. 
+- L'organizzazione ha più società all'interno del tenant che si vogliono mantenere separate. 
+- L'istituto di istruzione vuole limitare le chat tra docenti e studenti. 
  
 Per informazioni su come usare i criteri Rubrica, leggere i [criteri di barriera delle informazioni in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/information-barriers).
 

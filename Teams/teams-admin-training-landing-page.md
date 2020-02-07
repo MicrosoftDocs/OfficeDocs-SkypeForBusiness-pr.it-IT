@@ -13,14 +13,16 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.collection:
 - M365-collaboration
+f1.keywords:
+- NOCSH
 ms.topic: landing-page
 ms.author: v-lanac
-ms.openlocfilehash: 7c1a264a3a286dec464af8d3389262fdfbb56f33
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 483b8d6d3770f37bdac5c28f35b2f34ccf5043e8
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572433"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837886"
 ---
 # <a name="admin-training-for-microsoft-teams"></a>Formazione per amministratori per Microsoft Teams
 
@@ -110,7 +112,7 @@ Informazioni su come gestire i team per l'organizzazione.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Viaggio da Skype for business a teams</h3>
+                        <h3>Percorso da Skype for Business a Teams</h3>
                     </div>
                 </div>
             </div>
@@ -136,7 +138,7 @@ Informazioni su come gestire i team per l'organizzazione.
                     <div class="cardText">
                         <h3>Articoli</h3>
                         <p><a 
-                        href="/SkypeForBusiness/what-is-phone-system-in-office-365/setting-up-your-phone-system">Configurazione di Sistema telefonico nella tua organizzazione</a></p>
+                        href="/SkypeForBusiness/what-is-phone-system-in-office-365/setting-up-your-phone-system">Configurazione del Sistema telefonico nell’organizzazione</a></p>
                         <p><a href="/SkypeForBusiness/legal-and-regulatory/end-of-integration-with-3rd-party-providers">Integrazione di terze parti con Audioconferenza</a></p>
                     </div>
                 </div>
@@ -171,7 +173,7 @@ Informazioni su come gestire i team per l'organizzazione.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Aggiornamenti importanti</h3>
+                        <h3>Aggiornamenti principali</h3>
                         <p><a href="/SkypeForBusiness/audio-conferencing-in-office-365/set-up-audio-conferencing">Configurare l’audioconferenza</a></p>
                     </div>
                 </div>

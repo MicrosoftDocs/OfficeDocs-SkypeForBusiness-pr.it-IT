@@ -16,16 +16,18 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1.keywords: ms.teamsadmincenter.voice.phonenumbers.searchacquire.tooltip.quantity
+f1.keywords:
+- CSH
 ms.custom:
 - Calling Plans
+- ms.teamsadmincenter.voice.phonenumbers.searchacquire.tooltip.quantity
 description: Se per la tua organizzazione hai bisogno di numeri di telefono aggiuntivi, puoi ottenere una quantità di numeri di telefono maggiore rispetto al numero di licenze assegnate. Tutto dipende, però, dal tipo di numeri di telefono e di licenze acquistate e assegnate. È possibile fare clic su diversi tipi di numeri di telefono usati per chiamare i piani per scoprire i diversi numeri di telefono usati in Microsoft teams.
-ms.openlocfilehash: 2ffb2d0ee80dffa52ff092d20348455458d8beca
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: d620e10c90474857325b15201d3b899d728ed815
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680503"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836288"
 ---
 # <a name="how-many-phone-numbers-can-you-get"></a>Quanti numeri di telefono è possibile ottenere?
 

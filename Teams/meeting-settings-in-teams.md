@@ -13,18 +13,20 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
+- CSH
+ms.custom:
 - ms.teamsadmincenter.meetingsettings.invitationurls
 - ms.teamsadmincenter.meetingsettings.network.ports
 - ms.teamsadmincenter.meetingsettings.overview
 ms.collection:
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per le riunioni di team che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 6d5e4d4235eceda3821a34a039625730d11d9fff
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: bed367c9c40bb7124235abf204bbfa0395859685
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41707301"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836466"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni delle riunioni in Microsoft Teams
 

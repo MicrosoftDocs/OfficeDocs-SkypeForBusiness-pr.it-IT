@@ -17,16 +17,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- ms.lync.lac.CpcGettingStarted
+- CSH
 ms.custom:
 - Audio Conferencing
+- ms.lync.lac.CpcGettingStarted
 description: 'Vedi come provare o acquistare le licenze di Audioconferenza (conferenze PSTN) per Office 365 per configurare le conferenze telefoniche a cui gli utenti possono connettersi. '
-ms.openlocfilehash: 527455cc0f4d1a818c18271e3cf9bbafb04e2794
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 6c2b7583dcf286ba3b761a3445e3eff241896194
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41708642"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837616"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365-for-microsoft-teams"></a>Provare o acquistare servizi di audioconferenza in Office 365 per Microsoft Teams
 

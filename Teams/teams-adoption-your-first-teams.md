@@ -11,18 +11,20 @@ ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come guidare l'adozione di teams usando il prodotto.
+f1.keywords:
+- CSH
 ms.custom: Adopt
 ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ce2cec58d96e5c812cf63a9af1ebf6dfeffa7c13
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: c8cf33a5ac4c498e6d6996f6096fbf9599b5ad2e
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36244814"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837716"
 ---
 # <a name="create-your-first-teams-in-microsoft-teams"></a>Creare i primi team in Microsoft Teams
 

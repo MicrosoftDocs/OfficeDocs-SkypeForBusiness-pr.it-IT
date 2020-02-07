@@ -1,5 +1,5 @@
 ---
-title: Esperienza e conformità del client teams alle modalità di coesistenza
+title: Esperienza del client di Teams e conformità alle modalità di coesistenza
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -7,25 +7,27 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: bjwhalen
 audience: admin
-description: Esperienza e conformità del client teams alle modalità di coesistenza
+description: Esperienza del client di Teams e conformità alle modalità di coesistenza
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6e05a95871dbe36f969c048f32d9bca99fec5d45
-ms.sourcegitcommit: de7e0afbd40bbe52994ab99d85cf9e95ecbc4a6c
+ms.openlocfilehash: eea9d83a582bfe463233cfafe9564a238e00e198
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435240"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837376"
 ---
 <a name="about-upgrade-basic"></a>
 
-# <a name="teams-client-experience-and-conformance-to-coexistence-modes"></a>Esperienza e conformità del client teams alle modalità di coesistenza
+# <a name="teams-client-experience-and-conformance-to-coexistence-modes"></a>Esperienza del client di Teams e conformità alle modalità di coesistenza
 
 
 Lo scopo delle modalità di coesistenza di Skype for business (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings) è quello di creare un'esperienza semplice e prevedibile per gli utenti finali come organizzazioni di transizione da Skype for business a teams.  Per un'organizzazione che si sposta in teams, la modalità **solo teams** è la destinazione finale per ogni utente, anche se non tutti gli utenti devono essere assegnati **solo a teams** (o qualsiasi altra modalità) allo stesso tempo.  Prima che gli utenti raggiungano la modalità TeamsOnly, le organizzazioni possono usare una qualsiasi delle modalità di coesistenza di Skype for business per garantire una comunicazione prevedibile tra gli utenti **solo team** e quelli che non sono ancora stati. 
@@ -76,7 +78,7 @@ Gli amministratori *non* devono impostare in modo esplicito queste impostazioni 
 |SfBWithTeamsCollab o SfBOnly|Disabilitata|Disabilitata|Disabilitata|Disabilitata|
 ||||||
 
-Quando si usa PowerShell, `Grant-CsTeamsUpgradePolicy` il cmdlet controlla la configurazione delle impostazioni corrispondenti in TeamsMessagingPolicy, TeamsCallingPolicy e TeamsMeetingPolicy per determinare se tali impostazioni verrebbero sostituite da TeamsUpgradePolicy e, in caso affermativo, un il messaggio informativo viene fornito in PowerShell.  Come indicato sopra, non è più necessario impostare queste altre impostazioni dei criteri. Di seguito è riportato un esempio di come appare l'avviso di PowerShell:
+Quando si usa PowerShell, `Grant-CsTeamsUpgradePolicy` il cmdlet controlla la configurazione delle impostazioni corrispondenti in TeamsMessagingPolicy, TeamsCallingPolicy e TeamsMeetingPolicy per determinare se tali impostazioni verrebbero sostituite da TeamsUpgradePolicy e, in caso affermativo, viene fornito un messaggio informativo in PowerShell.  Come indicato sopra, non è più necessario impostare queste altre impostazioni dei criteri. Di seguito è riportato un esempio di come appare l'avviso di PowerShell:
 
 `Grant-CsTeamsUpgradePolicy -Identity user1@contoso.com -PolicyName SfBWithTeamsCollab`
 

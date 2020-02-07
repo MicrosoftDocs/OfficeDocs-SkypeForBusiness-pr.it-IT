@@ -14,17 +14,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Skype for Business Certification
 - dn947482
 description: Telefoni IP desk e conferenze certificati per Microsoft Teams
-ms.openlocfilehash: 4dbacc0804b7981a990d9401113965b4cb01ba4c
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 83305c4d4d60c3347e7c55cab312311ddb014ebf
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41708442"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837656"
 ---
 # <a name="ip-phones-certified-for-microsoft-teams"></a>Telefoni IP certificati per Microsoft Teams
 

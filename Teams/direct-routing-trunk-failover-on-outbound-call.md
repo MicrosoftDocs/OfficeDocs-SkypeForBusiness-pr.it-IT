@@ -13,13 +13,15 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
+f1.keywords:
+- NOCSH
 description: Leggere questo argomento per informazioni su come gestire i failover trunk sulle chiamate in uscita da Teams a session border controller (SBC).
-ms.openlocfilehash: a5462de971fed32a0618800b257b9c6e37b462af
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: c88394cba0a98316ac272901a6ab2972e9eaf3c8
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572125"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836178"
 ---
 # <a name="trunk-failover-on-outbound-calls"></a>Failover trunk sulle chiamate in uscita
 

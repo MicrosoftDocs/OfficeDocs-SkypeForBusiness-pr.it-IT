@@ -10,20 +10,22 @@ ms.reviewer: dearbeen
 description: Usare queste linee guida per preparare la rete per la distribuzione e l'implementazione di Teams
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0ede6e6ce211393211e7c1d31365c2f22c26751a
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: ec47733accfe9973887cd9f3f7019ac368e8e970
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236137"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837216"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica] (media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
+![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
 Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggiornamento, un'attività completata in parallelo con la fase di preparazione degli utenti. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
 
@@ -39,7 +41,7 @@ Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggio
 
 Se si sta distribuendo audio, video o riunioni, è possibile eseguire alcuni passaggi aggiuntivi per ottimizzare la rete per tale funzionalità. Teams USA la tecnologia audio e video (codec) che può adattarsi e quindi eseguire in modo migliore in più condizioni di rete. Per garantire prestazioni ottimali e coerenti, è consigliabile preparare la rete per i team.
 
-![Diagramma che descrive i tre componenti della qualità] (media/evaluate-my-environment-image1.png "Diagramma che descrive i tre componenti della qualità e in che modo la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sulla rete.")
+![Diagramma che descrive i tre componenti della qualità](media/evaluate-my-environment-image1.png "Diagramma che descrive i tre componenti della qualità e in che modo la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sulla rete.")
 
 ## <a name="why-should-you-prepare-your-network"></a>Perché preparare la rete?
 

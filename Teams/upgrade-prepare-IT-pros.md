@@ -10,20 +10,22 @@ ms.reviewer: dearbeen
 description: Preparare il personale IT dell'organizzazione per la distribuzione e il supporto di Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b561af2fd5b29dd66f00f75634a660cfb08cf7e6
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: c11b7fa80940ad45d4462510e8fa46531f10f1e9
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236126"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41836126"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica] (media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
+![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
 Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggiornamento, un'attività completata in parallelo con la fase di preparazione degli utenti. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
 
@@ -47,7 +49,7 @@ Condividere le risorse seguenti con i membri del personale IT e verificare che s
 
 | | |
 |---|---|
-| ![Icona che descrive i punti di decisione](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Coinvolgere tutti i membri del personale di supporto che possono partecipare alla distribuzione e al supporto dei team?</li><li>È stato sviluppato un piano di formazione per l'onboarding di personale aggiuntivo durante l'avanzamento dell'aggiornamento?</li></ul> |
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Coinvolgere tutti i membri del personale di supporto che possono partecipare alla distribuzione e al supporto dei team?</li><li>È stato sviluppato un piano di formazione per l'onboarding di personale aggiuntivo durante l'avanzamento dell'aggiornamento?</li></ul> |
 | ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Verificare che il personale IT disponga delle informazioni necessarie.</li><li>Rivedere i piani di formazione e preparazione Man mano che vengono rilasciate nuove funzionalità.</li></ul>|
 
 Dopo aver preparato il personale IT per i team, verificare che l'ambiente soddisfi tutti i [prerequisiti](upgrade-plan-journey-prerequisites.md).
