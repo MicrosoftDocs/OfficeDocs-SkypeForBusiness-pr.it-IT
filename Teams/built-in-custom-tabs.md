@@ -10,23 +10,25 @@ audience: admin
 ms.collection:
 - M365-collaboration
 ms.reviewer: lucarras
+f1.keywords:
+- NOCSH
 search.appverid: MET150
 description: Informazioni su come usare le schede predefinite e personalizzate per includere funzionalità come le conversazioni, i file, le mappe e altro ancora.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a4a07a8e6469de812dfc440119e5f53bcf393c03
-ms.sourcegitcommit: dc70fd277d9542d831741e14dba9ae22367210ae
+ms.openlocfilehash: e542b1370cdd03fb0c39c5bf471df58ec0c7e989
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39909362"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41824694"
 ---
 <a name="use-built-in-and-custom-tabs-in-microsoft-teams"></a>Usare le schede predefinite e personalizzate in Microsoft Teams
 ==================================================
 
 Le schede consentono ai membri del team di accedere a servizi e contenuti in uno spazio dedicato all'interno di un canale o in una chat. In questo modo il team può lavorare direttamente con gli strumenti e i dati e avere conversazioni sugli strumenti e i dati, tutto nel contesto del canale o della chat.
 
-I proprietari e i membri del team possono aggiungere schede a un canale, una chat privata e una chat di gruppo per facilitare l'integrazione dei servizi cloud. Le schede possono essere aggiunte per consentire agli utenti di accedere e gestire facilmente i dati necessari o interagire con i più. Può trattarsi di un report di Power BI, un dashboard o anche un canale video [Microsoft Stream](https://go.microsoft.com/fwlink/?linkid=855785) in cui pubblicare video di formazione.
+I proprietari e i membri del team possono aggiungere schede a un canale, una chat privata e una chat di gruppo per integrare i propri servizi cloud. Le schede possono essere aggiunte per consentire agli utenti di accedere e gestire facilmente i dati necessari o interagire con i più. Può trattarsi di un report di Power BI, un dashboard o anche un canale video [Microsoft Stream](https://go.microsoft.com/fwlink/?linkid=855785) in cui pubblicare video di formazione.
 
 ![Tre screenshot di vari contenuti nelle schede.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image4.png)
 
@@ -53,7 +55,7 @@ I proprietari e i membri del team possono aggiungere schede a un canale, una cha
 
 ## <a name="develop-custom-tabs"></a>Sviluppare schede personalizzate
 
-Oltre alle schede predefinite, puoi progettare e sviluppare le tue schede per integrarti in team o condividere con il resto della community. Per altre informazioni, vedere la documentazione per gli [sviluppatori](/microsoftteams/platform/tabs/what-are-tabs) .
+Oltre alle schede predefinite, puoi progettare e sviluppare le tue schede per integrarti in team o condividere con il resto della community. Per altre informazioni, vedere la [documentazione per sviluppatori](/microsoftteams/platform/tabs/what-are-tabs).
 
 ![Screenshot di una scheda personalizzata di esempio in Microsoft teams.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image5.png)
 

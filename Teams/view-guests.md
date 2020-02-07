@@ -12,16 +12,18 @@ ms.collection:
 - M365-collaboration
 ms.reviwer: sbhatta
 search.appverid: MET150
-f1.keywords: ms.teamsadmincenter.orgwidesettings.guestaccess.viewguestusersarticle
+f1.keywords:
+- CSH
+ms.custom: ms.teamsadmincenter.orgwidesettings.guestaccess.viewguestusersarticle
 description: Scopri come un amministratore può visualizzare informazioni sugli utenti guest in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8724343fed602b33160798fd5badf707cb0b7dec
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 5a499d1f5317f06ff09bd54697b128488c423d08
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41694111"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41833616"
 ---
 <a name="view-guest-users-in-a-team"></a>Visualizzare gli utenti guest in un team
 ==========================

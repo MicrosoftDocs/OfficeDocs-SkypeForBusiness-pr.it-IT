@@ -10,18 +10,20 @@ ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
 description: Usare gli elenchi di controllo onboarding per preparare Office 365 per i team e configurare le funzionalità di base di teams, le reti e i workload vocali cloud.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 653b5cf46e0b079af47c282b4110b181e76be915
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 418496b5dd86fb9720393721854c0fcf68daf52a
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517065"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825144"
 ---
 # <a name="prepare-my-service"></a>Preparare il servizio
 
@@ -121,9 +123,9 @@ Per altre informazioni, vedere:
 
 - [Configurare piani per chiamate per Skype for business e Microsoft Teams](https://docs.microsoft.com/skypeforbusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
 
-- [Pianificare il routing diretto](https://docs.microsoft.com/microsoftteams/direct-routing-plan)
+- [Pianificare Instradamento diretto](https://docs.microsoft.com/microsoftteams/direct-routing-plan)
 
-- [Configurare il routing diretto](https://docs.microsoft.com/microsoftteams/direct-routing-configure)
+- [Configurare Instradamento diretto](https://docs.microsoft.com/microsoftteams/direct-routing-configure)
 
 ### <a name="execute-the-test-plan"></a>Eseguire il piano di test
 

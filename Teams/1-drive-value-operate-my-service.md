@@ -10,20 +10,22 @@ ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
 description: Attività e attività necessarie per la gestione dei servizi di teams, incluso il monitoraggio dell'integrità dei servizi e la valutazione e garanzia della qualità e dell'uso della rete.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 61d0bc220de81b67c27d21d3ea22c7974a4c84d1
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: a63ce726a3a09fb820a6008aa0edf50a0e88ea95
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517085"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826984"
 ---
-# <a name="operate-my-service"></a>Gestire il servizio personale
+# <a name="operate-my-service"></a>Gestire il servizio
 
 Questo articolo offre una panoramica dei requisiti per il corretto funzionamento dei servizi vocali cloud per l'organizzazione. Con il corretto funzionamento dei servizi cloud Voice, puoi essere certo di offrire un'esperienza di alta qualità ed affidabile per l'organizzazione.
 
@@ -39,7 +41,7 @@ La gestione dei servizi comprende tutte le attività e i processi coinvolti nell
 
 Le attività e le attività in questa guida sono raggruppate in otto categorie, come illustrato nel diagramma seguente. Ognuna di queste categorie verrà espansa nelle sezioni seguenti.
 
-![Diagramma che illustra un elenco di categorie di attività e attività](media/operate-my-service-image1.png "un diagramma che descrive un elenco di categorie di attività e attività che la gestione dei servizi per i team include. Il diagramma descrive anche la gestione dei servizi in gran parte un'attività del cliente.")
+![Diagramma che illustra un elenco di categorie di attività e attività](media/operate-my-service-image1.png "Diagramma che descrive un elenco di categorie di attività e attività che la gestione dei servizi per i team include. Il diagramma descrive anche la gestione dei servizi in gran parte un'attività del cliente.")
 
 
 <table>
@@ -251,7 +253,7 @@ Gli altri due report sono specifici per i team e contengono ulteriori dettagli s
 
 #### <a name="required-permissions"></a>Autorizzazioni necessarie
 
-I report sull'utilizzo nell'interfaccia di amministrazione possono essere raggiunti da persone a cui è stato assegnato un ruolo di **amministratore globale** o da un ruolo di amministratore specifico del prodotto (**amministratore di Exchange**, **amministratore di Skype for business**, **SharePoint Administrator**).
+I report sull'utilizzo nell'interfaccia di amministrazione possono essere raggiunti da persone a cui è stato assegnato un ruolo di **amministratore globale** o da un ruolo di amministratore specifico del prodotto (**amministratore di Exchange**, **amministratore di Skype for business**, **amministratore di SharePoint**).
 
 Inoltre, il ruolo **lettore report** è disponibile per gli utenti che richiedono l'accesso ai report, ma non eseguono attività che richiedono autorizzazioni a livello di amministratore. Si assegna questo ruolo per specificare i report sull'utilizzo per tutti i soggetti interessati, per monitorare e guidare l'adozione. Per altre informazioni sui diversi ruoli disponibili, vedere [informazioni sui ruoli di amministratore di Office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
@@ -316,7 +318,7 @@ NPS è un indice, che va da-100 a 100, che misura la volontà del cliente di con
 
 -   Da 1 a 6 sono detrattori: clienti insoddisfatti che possono danneggiare il servizio e impedire la crescita.
 
-![Diagramma che illustra la scala NPS]in(media/operate-my-service-image2.png "questo diagramma viene illustrata la scala NPS. Mostra che le classifiche da 0 a 6 sono detrattori, da 7 a 8 passivi e da 9 a 10 promotori.")
+![Diagramma che illustra la scala NPS](media/operate-my-service-image2.png "Questo diagramma mostra la scala NPS. Mostra che le classifiche da 0 a 6 sono detrattori, da 7 a 8 passivi e da 9 a 10 promotori.")
 
 Anche se il numero di NPS di base è utile, otterrai il valore massimo analizzando i commenti degli utenti. Ti aiuteranno a comprendere il motivo per cui l'utente non consiglia i team ad altri. Questi commenti possono fornire un valido feedback per consentire ai team di gestione di progetti o servizi di comprendere le modifiche necessarie per fornire un servizio di qualità.
 
@@ -397,7 +399,7 @@ Ti consigliamo vivamente di nominare il campione di qualità in anticipo. Dopo e
 
 [Caricare informazioni sui dati del tenant](turning-on-and-using-call-quality-dashboard.md#upload-tenant-data-information)
 
-[Guida alla revisione della qualità dell'esperienza](https://aka.ms/qerguide)
+[Guida sul controllo della qualità dell'esperienza](https://aka.ms/qerguide)
 
 <!--ENDOFSECTION-->
 
@@ -544,11 +546,11 @@ Per impostazione predefinita, tutti gli utenti con una cassetta postale in Excha
 
 <!--ENDOFSECTION-->
 
-## <a name="quality-of-experience-review-guide"></a>Guida alla revisione della qualità dell'esperienza
+## <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza
 
 La [Guida alla revisione della qualità della](https://aka.ms/qerguide) funzionalità include un set di attività che valutano e includono indicazioni per il risanamento in aree chiave che hanno un impatto maggiore sul miglioramento dell'esperienza utente, come illustrato di seguito.
 
-![Diagramma delle aree da esaminare durante una qualità dell'esperienza]esaminare(media/plan-my-service-management-image2.png "le aree principali da esaminare durante una revisione di qualità dell'esperienza: audio, affidabilità e risultati del sondaggio degli utenti.")
+![Diagramma delle aree da esaminare durante una revisione della qualità dell'esperienza](media/plan-my-service-management-image2.png "Le aree principali da esaminare durante una revisione di qualità dell'esperienza: audio, affidabilità e risultati del sondaggio degli utenti.")
 
 Valutando e rimediando continuamente le aree descritte nella Guida, è possibile ridurre le proprie potenzialità per influire negativamente sull'esperienza utente. La maggior parte dei problemi di esperienza utente incontrati in una distribuzione può essere raggruppata nelle categorie seguenti:
 

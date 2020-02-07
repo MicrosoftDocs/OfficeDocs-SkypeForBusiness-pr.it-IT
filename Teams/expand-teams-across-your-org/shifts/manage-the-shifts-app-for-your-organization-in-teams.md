@@ -9,18 +9,20 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni su come configurare e gestire l'app turni in teams per gli operatori di I FIRSTLINE dell'organizzazione.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f4ed7f4bc282686c31f2f9c2239fbe6326e5151f
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 7514ef06248eb4685558c3a327a8de1cea12bb62
+ms.sourcegitcommit: ac922addbc1422b5c41273a2e03196efb2ed7770
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40992543"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41831168"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app turni per l'organizzazione in Microsoft Teams
 
@@ -77,11 +79,11 @@ Per visualizzare i criteri di FirstlineWorker, nella barra di spostamento sinist
 2. Accanto a **criteri assegnati**scegliere **modifica**.
 3. In **criteri di configurazione dell'app teams**selezionare **FirstlineWorker**e quindi scegliere **Salva**.
 
-#### <a name="assign-the-firstlineworker-app-setup-policy-to-users-in-a-group"></a>Assegnare i criteri di configurazione dell'app FirstlineWorker agli utenti di un gruppo
+#### <a name="assign-the-firstlineworker-app-setup-policy-to-user-members-of-a-group"></a>Assegnare i criteri di configurazione dell'app FirstlineWorker ai membri di un gruppo
 
-Puoi assegnare i criteri di configurazione dell'app FirstlineWorker agli utenti di un gruppo, ad esempio un gruppo di sicurezza, connettendosi al modulo di PowerShell per il grafico di Azure Active Directory e al modulo di PowerShell di Skype for business. Per altre informazioni sull'uso di PowerShell per la gestione dei team, vedere [Cenni preliminari su teams PowerShell](../../teams-powershell-overview.md).
+Puoi assegnare i criteri di configurazione dell'app FirstlineWorker ai membri di un gruppo, ad esempio un gruppo di sicurezza, connettendosi al modulo di PowerShell per il grafico di Azure Active Directory e al modulo di PowerShell di Skype for business. Per altre informazioni sull'uso di PowerShell per la gestione dei team, vedere [Cenni preliminari su teams PowerShell](../../teams-powershell-overview.md).
 
-In questo esempio, assegniamo i criteri di configurazione dell'app FirstlineWorker a tutti gli utenti nel gruppo di team Contoso I FIRSTLINE.
+In questo esempio, assegniamo i criteri di configurazione dell'app FirstlineWorker a tutti i membri dell'utente del gruppo di team Contoso I FIRSTLINE.
 
 > [!NOTE]
 > Prima di tutto, assicurati di connetterti a Azure Active Directory PowerShell per modulo grafico e modulo di PowerShell per Skype for business seguendo la procedura descritta in [Connetti a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
@@ -94,9 +96,9 @@ Ottenere i membri del gruppo specificato.
 ```PowerShell
 $members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-Object {$_.ObjectType -eq "User"}
 ```
-Assegna tutti gli utenti del gruppo ai criteri di configurazione dell'app FirstlineWorker.
+Assegnare i criteri di configurazione dell'app FirstlineWorker a tutti i membri del gruppo.
 ```PowerShell
-$members | ForEach-Object { Grant-CsTeamsAppSetupPolicy -PolicyName "FirstlineWorker" -Identity $_.EmailAddress}
+$members | ForEach-Object {Grant-CsTeamsAppSetupPolicy -PolicyName "FirstlineWorker" -Identity $_.EmailAddress}
 ``` 
 A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.
 

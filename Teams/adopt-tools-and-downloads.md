@@ -10,6 +10,8 @@ layout: LandingPage
 ms.date: 11/20/2018
 audience: admin
 ms.service: msteams
+f1.keywords:
+- CSH
 ms.custom: Adopt
 ms.collection:
 - Teams_ITAdmin_Adopt
@@ -17,12 +19,12 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 211ea38343c2bb62a8dec479c62a2c8c4d1ace9d
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: a4de926de9fe56bb4ca5c5068a3b5dcb335e09f2
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236655"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827134"
 ---
 # <a name="tools-for-driving-adoption"></a>Strumenti per l'adozione della Guida 
 
@@ -150,7 +152,7 @@ Usare gli strumenti seguenti per supportare ogni fase del piano di adozione del 
 Office 365 Champions Program è un programma gratuito che consente alle persone che vogliono ottenere di più da Microsoft teams e altri servizi di Office 365. Combiniamo la nostra community online nella [community tecnica Microsoft](https://aka.ms/DriveAdoption) con chiamate comunitarie mensili che evidenziano tutti i componenti dell'adozione della guida dalla governance alle procedure consigliate per le nuove caratteristiche. Partecipa alla community https://aka.ms/O365Champions e accedi a Early Release, ascolta da altri clienti e impara da Microsoft Experts.  
 
 ### <a name="teams-adoption-guide"></a>Guida all'adozione di Teams
-Vedere la [sequenza animata](https://aka.ms/teamstoolkit)di teams adoption, una guida online che ti aiuterà a distribuire Team nella tua azienda. Include molti strumenti, modelli e altre risorse scaricabili per aiutarti a seguire il viaggio di adozione dei team.
+Vedere la [sequenza animata di teams adoption](https://aka.ms/teamstoolkit), una guida online che ti aiuterà a distribuire Team nella tua azienda. Include molti strumenti, modelli e altre risorse scaricabili per aiutarti a seguire il viaggio di adozione dei team.
 
 ### <a name="teams-customer-success-kit"></a>Kit di successo del cliente Teams
-Il [Kit di successo](https://download.microsoft.com/download/A/E/9/AE984CD4-CF4B-41E7-9ABD-6735E3F01897/MicrosoftTeamsCustomerSuccessKit.zip) per il cliente teams offre strumenti che consentono di implementare teams nell'organizzazione. Include modelli di posta elettronica per annunci, volantini, poster, Countdown e suggerimenti & trucchi. Include anche le guide introduttive per i team leader e gli amministratori IT.
+Il [Kit di successo per il cliente teams](https://download.microsoft.com/download/A/E/9/AE984CD4-CF4B-41E7-9ABD-6735E3F01897/MicrosoftTeamsCustomerSuccessKit.zip) offre strumenti che consentono di implementare teams nell'organizzazione. Include modelli di posta elettronica per annunci, volantini, poster, Countdown e suggerimenti & trucchi. Include anche le guide introduttive per i team leader e gli amministratori IT.

@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: msteams
 ms.collection:
 - M365-collaboration
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 description: Questo articolo illustra come usare lo strumento di ripristino per le sale di Microsoft teams, che userai per creare un sistema fuori data in uno stato supportato.
-ms.openlocfilehash: 3a62256a5e39d93033588ca2be779e9c3b76a4f5
-ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
+ms.openlocfilehash: 452f5d9d15375bec7ac25c07c865add8a01b0345
+ms.sourcegitcommit: ac922addbc1422b5c41273a2e03196efb2ed7770
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269009"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41831178"
 ---
 # <a name="use-the-microsoft-teams-rooms-recovery-tool"></a>Usare lo strumento di ripristino di Microsoft teams rooms
 
@@ -27,7 +29,7 @@ Questo articolo illustra come usare lo strumento di ripristino per le sale di Mi
 Scaricare il pacchetto di installazione più recente di [Microsoft teams Rooms](https://go.microsoft.com/fwlink/?linkid=851168) ed estrarlo in una Memory Stick USB o in una condivisione di rete accessibile al dispositivo Microsoft teams rooms.
 
 > [!NOTE]
-> L'estrazione dei file dall'MSI può essere eseguita con molti mezzi. Qualsiasi meccanismo che estrae tutti i file e mantiene la struttura della directory è accettabile. Uno di questi modi consiste nell'usare il `msiexec /qn PathToMsi /qb TARGETDIR=PathToTarget` comando `PathToMsi` dove rappresenta il percorso completo del pacchetto di installazione della sala Microsoft teams e `PathToTarget` rappresenta il percorso completo della cartella a cui si vogliono estrarre i file.
+> L'estrazione dei file dall'MSI può essere eseguita con molti mezzi. Qualsiasi meccanismo che estrae tutti i file e mantiene la struttura della directory è accettabile. Uno di questi modi consiste nell'usare il `msiexec /a PathToMsi /qb TARGETDIR=PathToTarget` comando `PathToMsi` dove rappresenta il percorso completo del pacchetto di installazione della sala Microsoft teams e `PathToTarget` rappresenta il percorso completo della cartella a cui si vogliono estrarre i file.
 
 ## <a name="running-the-tool"></a>Eseguire lo strumento
 

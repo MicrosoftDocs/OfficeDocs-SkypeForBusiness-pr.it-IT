@@ -17,16 +17,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Audio Conferencing
 description: Scopri cosa ti serve e come gli organizzatori della riunione possono chiamare altri utenti tramite teams.
-ms.openlocfilehash: 5a4a3c0d90bbf07e336dd9ec32c61f99192389a5
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: f0c8ca62c5e985ecae4bc5a0f373a95b0d1ce69e
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680473"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826974"
 ---
 # <a name="dialing-out-from-a-microsoft-teams-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione di Microsoft teams in modo che gli altri utenti possano accedervi
 

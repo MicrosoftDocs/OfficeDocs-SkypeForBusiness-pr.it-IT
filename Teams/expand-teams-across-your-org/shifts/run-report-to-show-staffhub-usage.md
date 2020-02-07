@@ -1,5 +1,5 @@
 ---
-title: Eseguire un report per mostrare l'utilizzo di Active StaffHub
+title: Eseguire un report per mostrare l'utilizzo di StaffHub attivo
 author: LanaChin
 ms.author: v-lanac
 ms.reviewer: lisawu
@@ -9,20 +9,22 @@ ms.service: msteams
 audience: admin
 search.appverid: MET150
 description: Informazioni su come eseguire un report per ottenere un elenco di utenti attivi di StaffHub nell'organizzazione.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 49091f7d8ada565adea61bf8219c6da828358893
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: fe7851e57cd6d812d0b8904668ca5fd67fd5999d
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569664"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826694"
 ---
-# <a name="run-a-report-to-show-active-staffhub-usage"></a>Eseguire un report per mostrare l'utilizzo di Active StaffHub
+# <a name="run-a-report-to-show-active-staffhub-usage"></a>Eseguire un report per mostrare l'utilizzo di StaffHub attivo
 
 > [!IMPORTANT]
 > Efficace 31 dicembre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub smetterà di funzionare per tutti gli utenti il 31 dicembre 2019. Chiunque tenti di aprire StaffHub verrà visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub per ritirarsi](microsoft-staffhub-to-be-retired.md).  

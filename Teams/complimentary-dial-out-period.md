@@ -18,16 +18,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: None
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Legal
 description: I clienti possono usare il piano di chiamata di Office 365 e i servizi di audioconferenza di Office 365 consentiti dai termini e dai contratti multilicenza del cliente per Skype for business online e Microsoft teams.
-ms.openlocfilehash: 65d1426fd74a219206a725a33a52646ab6058337
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 59a885f53d23f5297d6730e718ac1a95801d6a30
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695441"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825504"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 

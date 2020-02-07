@@ -18,16 +18,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Audio Conferencing
 description: Trovare la lingua dei servizi di conferenza telefonica con accesso esterno per ogni paese o area geografica e l'ID della lingua assegnati (en-US, da-DK, de-DE e così via)
-ms.openlocfilehash: c9f4abcb7a4149baa1d3de7d51f45cfc75d0be06
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 061458585854cf9a80113dce9877779806c7c418
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41684129"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826224"
 ---
 # <a name="audio-conferencing-supported-languages"></a>Lingue supportate per i servizi di audioconferenza
 

@@ -12,14 +12,16 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-voice
+f1.keywords:
+- NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 19e97053120f5f28dcd634fd2047fed0abd2dd57
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 8899316d24616bf61918b93c9edd7118b89f5347
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37573391"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41832674"
 ---
 # <a name="implement-qos-and-monitor-call-quality-in-microsoft-teams"></a>Implementare QoS e monitorare la qualità delle chiamate in Microsoft Teams
 
@@ -27,7 +29,7 @@ ms.locfileid: "37573391"
 
 Man mano che gli utenti iniziano a usare team per effettuare chiamate e organizzare riunioni, possono verificare che la voce di un chiamante si rompa o tagli dentro e fuori una chiamata o una riunione. Il video condiviso può bloccare o pixelare o non completamente. Ciò è dovuto ai pacchetti IP che rappresentano il traffico vocale e video che incontrano la congestione della rete e che arrivano fuori sequenza o per niente. Esistono diversi modi per identificare questi problemi quando emergono e ne impediscono il ritorno, soprattutto la qualità del servizio (QoS).
 
-La **qualità del servizio (QoS)** è un modo per consentire il traffico di rete in tempo reale (come i flussi di voce o video) che è sensibile ai ritardi di rete per "tagliare in linea" davanti al traffico meno sensibile (come scaricare una nuova app, in cui è possibile scaricare un secondo extra non è un problema). QoS identifica e contrassegna tutti i pacchetti in flussi in tempo reale usando gli oggetti Criteri di gruppo di Windows e una caratteristica di routing denominata elenchi di controllo di accesso basati su porta, che consente quindi alla rete di fornire ai flussi di condivisione di voce, video e schermo le proprie parti dedicate di larghezza di banda della rete.
+La **qualità del servizio (QoS)** è un modo per consentire il traffico di rete in tempo reale (come i flussi di voce o video) che è sensibile ai ritardi di rete per "tagliare in linea" davanti al traffico meno sensibile (come scaricare una nuova app, dove un altro secondo da scaricare non è un problema). QoS identifica e contrassegna tutti i pacchetti in flussi in tempo reale usando gli oggetti Criteri di gruppo di Windows e una caratteristica di routing denominata elenchi di controllo di accesso basati su porta, che consente quindi alla rete di fornire ai flussi di condivisione di voce, video e schermo le proprie parti dedicate di larghezza di banda della rete.
 
  Per il momento, dobbiamo solo dire che è molto simile all'invio di una lettera tramite posta elettronica: se si invia il tasso di prenotazione viene visualizzato molto presto e questo è abbastanza buono, se si invia prima classe diventa molto più veloce e se si invia la posta prioritaria , arriva entro due giorni. Naturalmente, le reti corrono più velocemente della posta, ma è comunque vero che la velocità è fondamentale per alcune applicazioni e non è così critica per gli altri. Questo argomento è intrinsecamente dettagliato e difficile da comprendere all'inizio, ma fa una grande differenza nell'esperienza utente, quindi vale la pena investire tempo ed energia in anticipo. Leggere [implementare la qualità del servizio (QoS) in Microsoft teams](QoS-in-Teams.md) per una discussione più dettagliata.
 
@@ -47,10 +49,10 @@ Per trovare e risolvere i problemi che si verificano durante l'operazione in cor
 
 [Configurare l'analisi delle chiamate](set-up-call-analytics.md)
 
-[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
-[Attivazione e utilizzo di Call Quality Dashboard](turning-on-and-using-call-quality-dashboard.md)
+[Attivazione e utilizzo di Dashboard Qualità della chiamata](turning-on-and-using-call-quality-dashboard.md)
 
-[Dimensioni e misure disponibili in Call Quality Dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md)
+[Dimensioni e misure disponibili in Dashboard Qualità della chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md)
 
-[Classificazione del flusso nel Dashboard Qualità della chiamata](stream-classification-in-call-quality-dashboard.md)
+[Classificazione del flusso in Dashboard Qualità della chiamata](stream-classification-in-call-quality-dashboard.md)

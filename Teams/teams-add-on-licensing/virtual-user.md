@@ -12,17 +12,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle licenze gratuite degli utenti virtuali.
-ms.openlocfilehash: ebf98f852610dd5acfea2bcd65daca7b7541b5aa
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 0b580a396dedfab81ab207fa0b1d6fee5caa705b
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571170"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826514"
 ---
 # <a name="phone-systemvirtual-user-license"></a>Sistema telefonico-licenza utente virtuale 
 
@@ -74,4 +76,4 @@ Se si decide di cambiare la licenza per l'account delle risorse da una licenza d
 
 [Aggiornamento del servizio di operatore automatico e code di chiamata](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Auto-Attendant-and-Call-Queues-Service-Update/ba-p/564521)
 
-[Gestire gli account delle risorse in Microsoft Teams](../manage-resource-accounts.md)
+[Gestire gli account di risorsa in Microsoft Teams](../manage-resource-accounts.md)

@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: svemu
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
@@ -14,12 +16,12 @@ ms.collection:
 description: Informazioni su come usare il report utilizzo eventi di teams Live nell'interfaccia di amministrazione di Microsoft teams per ottenere una panoramica delle attività dei teams Live Events nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3c391370e757aedcf9ede889fc46f165cfc636f4
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: af8a7d0225c3098f48de689a15921cd6f1f2f1c9
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571148"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827244"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Report sull'utilizzo degli eventi di Microsoft teams Live
 
@@ -55,4 +57,4 @@ Se l'organizzazione è abilitata per [hive](https://www.hivestreaming.com/partne
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Analisi e creazione di report in teams](teams-reporting-reference.md)
-- [Cosa sono gli eventi teams Live?](../teams-live-events/what-are-teams-live-events.md)
+- [Cosa sono gli eventi live di Teams?](../teams-live-events/what-are-teams-live-events.md)

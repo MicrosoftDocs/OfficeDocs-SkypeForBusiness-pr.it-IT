@@ -7,6 +7,8 @@ audience: ITPro
 ms.topic: article
 ms.service: msteams
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
@@ -15,12 +17,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: Integrazione dell'app EHR di Microsoft teams patients
-ms.openlocfilehash: 836c28f339a3936f03315b005c0eedfc49e0f2ba
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 6c7638436f35a1e460c176964dfc63624985b12e
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569244"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827634"
 ---
 # <a name="stu3-interface-specification"></a>Specifica dell'interfaccia STU3
 
@@ -92,16 +94,16 @@ Vedere l'esempio seguente della chiamata:
 
 * * *
 
-    Richiesta: POST <Fhir-Server>/patient/_search della richiesta: given = Ruth&Family = black
+    Richiesta: POST <Fhir-Server>/patient/_search richiedere il corpo: given = Ruth&Family = black
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "meta": {"lastUpdated": "2019-01-14T23:44:45.052 + 00:00"}, "tipo": "searchset", "Total": 1, "link": [{"relation": "self", "URL": <Fhir-server>/patient/_search "}]," entry ": [{" fullUrl ": <Fhir-server>/patient/<patient-ID>", "Resource": {"resourceType": "patient", "ID": "<patient-ID>", "meta": {"VersionId": "1", "lastUpdated": "2017-10-18T18:32:37.000 + 00:00"}, "Text": {"status": "generated", "div": "<div>\n        <p>Ruth Black</p>\n      </div>"}," identificatore ": [{" use ":" usual "," Type ": {" coding ": [{" System ":"http://hl7.org/fhir/v2/0203"," codice ":" Mr "," display ":" numero di record medico "," userSelected ": false}]," testo ":" numero di record medico "}," sistema "http://hospital.smarthealthit.org:" "," "," valore ":" 1234567 "}]," attivo ": vero" nome ": [{" USA ":" ufficiale "," famiglia ":" nero "," assegnato ": [" Ruth "," C ".
-    ]}], "Telecom": [{"sistema": "telefono", "valore": "800-599-2739", "USA": "Home"}, {"sistema": "telefono", "valore": "800-808-7785", "use": "mobile"}, {"System": "mail", "value": "ruth.black@example.com"}], "gender": "femmina", "DataNascita": "1951-08-23", " Address ": [{" use ":" Home "," line ": [" 26 South RdApt 22 "]," City ":" Sapulpa "," state ":" OK "," postalCode ":" 74066 "," Country ":" USA "}]}," Search "
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "meta": {"lastUpdated": "2019-01-14T23:44:45.052 + 00:00"}, "tipo": "searchset", "Total": 1, "link": [{"relation": "self", "URL": <Fhir-server>/patient/_search "}]," entry ": [{" fullUrl ": <Fhir-server>/patient/<patient-ID>", "risorsa": {"resourceType": "patient", "ID": "<patient-ID>", "meta": {"VersionId": "1", "lastUpdated": "2017-10-18T18:32:37.000 + 00:00"}, "Text": {"status": "generated", "div": "<div>\n        <p>Ruth Black</p>\n      </div>"}," identificatore ": [{" USA ":" usuale "," tipo ": {" codifica ": [{" System ":http://hl7.org/fhir/v2/0203" "," codice ":" Mr "," display ":" numero di record medico "," userSelected ": false}]," testo ":" numero di record medico "}," sistemahttp://hospital.smarthealthit.org":" "," valore ":" 1234567 "}]," attivo ": vero", "nome": [{"USA": "ufficiale", "famiglia": "nero", "assegnato": ["Ruth", "C".
+    ]}], "Telecom": [{"System": "telefono", "valore": "800-599-2739", "use": "Home"}, {"System": "Phone", "value": "800-808-7785", "use": "mobile"}, {"System": "mail", "value": "ruth.black@example.com"}], "gender": "femmina", "DataNascita": "1951-08-23", "indirizzo": [{"use": "Home", "line": ["26 South RdApt 22"], "City": "Sapulpa", "stato": "OK", "postalCode": "74066", "paese": "USA"}]}, "ricerca": {"modalità": "Confronta"}}]}
 
 * * *
 
     Richiesta: ottenere <Fhir-Server>/patient/<ID paziente>
     
-    Response: {"resourceType": "paziente", "ID": "<ID paziente>", "identificatore": [{"use": "usual", "Type": {"coding": [{"System": "http://hl7.org/fhir/v2/0203", "code": "Mr",}], "Text": "numero di record medico"}, "valore": "1234567"}], "nome": [{"use": "Official", " famiglia ":" Adams "," assegnato ": [" Daniele "," X ". ]}], "sesso": "maschio", "DataNascita": "1925-12-23",}
+    Response: {"resourceType": "patient", "ID": "<patient-ID>", "identificatore": [{"use": "usual", "Type": {"coding": [{"System": "http://hl7.org/fhir/v2/0203", "code": "Mr",}], "Text": "numero di record medico"}, "valore": "1234567"}], "nome": [{"use": "ufficiale", "famiglia": "Adams", "assegnato": ["Daniele", "X". ]}], "sesso": "maschio", "DataNascita": "1925-12-23",}
 
 * * *
 
@@ -132,7 +134,7 @@ Fare riferimento a questo esempio di chiamata:
 
     Richiesta: ottenere <Fhir-Server>/Observation? patient =<patient-ID>&Category = Vital-Signs
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 20, "entry": [{"Resource", "ID": "" <Resource-ID> "," Category ": [{" coding ": [{" System ":"http://hl7.org/fhir/observation-category"," code ":" Vital-Signs "}],}]," code ": {" coding ": [{" System ":http://loinc.org" "," codice ":" 8867-4 "," display ":" heart_rate "}]}," effectiveDateTime ":" 2009-04-08T00:00:00-06:00 "," valueQuantity ": {" valore ": 72,0," Unit ":" {Beats}/min "," System "http://unitsofmeasure.org:" ",}}},.
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "totale": 20, "voce": [{"risorsa": {"resourceType": "osservazione", "ID": "<Resource-ID>", "Category": [{"coding": [{"System": "http://hl7.org/fhir/observation-category", "codice" codice ": {" coding ": [{" System ":"http://loinc.org"," code ":" 8867-4 "," display ":" heart_rate "}]}," effectiveDateTime ":" 2009-04-08T00:00:00-06:00 "," valueQuantity ": {" valore ": 72,0," Unit ":" {Beats}/min "," System ":"http://unitsofmeasure.org",}}},.
         .
         .
       ] }
@@ -163,7 +165,7 @@ Vedere l'esempio seguente di questa chiamata:
 
     Richiesta: ottenere <Fhir-Server>/Condition? patient =<patient-ID>&_count = 10
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "digitare": "searchset", "Total": 2, "entry": [{"risorsa": {"resourceType": "Condition", "ID": "<Resource-ID>", "code": {"coding": [{"System": "http://snomed.info/sct", "codice": "185903001", " display ":" necessita dell'immunizzazione dell'influenza ",}]}," gravità ": {" codifica ": [{" Systemhttp://snomed.info/sct":" "", "codice": "24484000", "display": "grave"}]}, "assertedDate": "2018-04-04"}},.
+    Risposta: {"resourceType": "bundle", "ID": "<Bundle-ID>", "tipo": "searchset", "Total": 2, "entry": [{"Resource", "resourceType": "Condition", "ID": "<Resource-ID>", "codice": {"codifica": [{"System": "http://snomed.info/sct" "," codice ":" 185903001 "," visualizzazione ":" richiede l'immunizzazione dell'influenza ",}]}," gravità ": {" codifica ": [{" Systemhttp://snomed.info/sct":" "", "codice": "24484000", "display": "grave"}]}, "assertedDate": "2018-04-04"}},.
         .
         .
       ] }
@@ -219,7 +221,7 @@ Vedere l'esempio seguente della chiamata:
 
     Richiesta: ottenere <Fhir-Server>/AllergyIntolerance? patient =<ID paziente>
     
-    Risposta: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource": {"resourceType", "AllergyIntolerance", "ID": "<Resource-ID>", "clinicalStatus": "Active", "ve" rificationStatus ":" confermato "," codice ": {" codifica ": [{" System ":"http://rxnav.nlm.nih.gov/REST/Ndfrt"", "code": "N0000175503", "display": "solfonammide antibatterico",}], "testo": "solfonammide Ant ibacterial "}," assertedDate ":" 2018-01-01T00:00:00-07:00 "," reazione ": [{" manifestazione ": [{" codifica ": [{" System ":"http://snomed.info/sct"", "codice":  "271807003", "Visualizza": "eruzione cutanea",}], "testo": "rash cutaneo"}],}]}}]}
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"risorsa": {"resourceType": "AllergyIntolerance", "ID": "<Resource-ID>", "clinicalStatus": "attivo", "verificationStatus": "confermato", "codice": {"codifica": [{"System": "http://rxnav.nlm.nih.gov/REST/Ndfrt" "," codice ":" N0000175503 "," visualizzazione ":" solfonammide antibatterico ",}]," testo ":" solfonammide Ant ibacterial "}," assertedDate ":" 2018-01-01T00:00:00-07:00 "," reazione ": [{" manifestazione ": [{" codifica ": [{" System ":"http://snomed.info/sct"," codice ":" 271807003 "," display ":" rash cutaneo ",}]," testo ":" eruzione cutanea "}]
 
 * * *
 

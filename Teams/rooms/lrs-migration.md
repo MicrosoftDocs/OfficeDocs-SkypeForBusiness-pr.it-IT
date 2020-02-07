@@ -7,17 +7,19 @@ manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.service: msteams
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
 ms.assetid: ''
 description: Leggere questo argomento per informazioni su come eseguire la migrazione dei dispositivi di Lync room System per l'uso del software Microsoft teams rooms.
-ms.openlocfilehash: 2a324e426368722cf261554b09298f098644d5ba
-ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
+ms.openlocfilehash: 4aad70c0a91824f0b1eff892aa1940760fc39d39
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41269010"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826004"
 ---
 # <a name="migrate-lync-room-system-lrs-devices-to-microsoft-teams-rooms"></a>Eseguire la migrazione dei dispositivi LRS (Lync room System) a Microsoft teams rooms
 

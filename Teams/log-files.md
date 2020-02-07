@@ -8,18 +8,20 @@ ms.date: 09/25/2017
 audience: admin
 ms.topic: troubleshooting
 ms.service: msteams
+f1.keywords:
+- NOCSH
 ms.collection:
 - M365-collaboration
 search.appverid: MET150
 description: Informazioni sui registri di debug, multimediali e desktop prodotti da Microsoft teams, dove possono essere trovati e come possono essere utili per la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ba40d1d3694666f8fd0b4612ffe53c49808f7297
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 2c8da7e60e785d765e77e17935b60382e864a83b
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570670"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41833376"
 ---
 <a name="use-log-files-in-troubleshooting-microsoft-teams"></a>Usare i file di log in risoluzione dei problemi di Microsoft Teams
 =================================================
@@ -37,7 +39,7 @@ Quando si crea una richiesta di supporto con il supporto Microsoft, il tecnico d
 La tabella seguente descrive i diversi client e i registri associati. I file di log sono archiviati in posizioni specifiche per il client e il sistema operativo.
 
 
-|Client |Debug|Desktop|Media|
+|Client |Debug|Desktop|Contenuti multimediali|
 |---------|---------|---------|---------|
 |Web    |X         |-         |-         |
 |Windows     |X         |X         |X         |

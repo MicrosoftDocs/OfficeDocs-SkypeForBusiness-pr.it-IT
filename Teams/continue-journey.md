@@ -11,19 +11,21 @@ search.appverid: MET150
 description: Linee guida per continuare il viaggio da Skype for business a Microsoft Teams
 localization_priority: Normal
 ms.custom: Teams-upgrade-guidance
+f1.keywords:
+- NOCSH
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 74471d45e99742774133477f6b978939864aab2e
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: 7453743407696a0ba8c41cb401caf4f22ba7b78f
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36236816"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825304"
 ---
-![Aggiornare il diagramma di viaggio, enfatizzando la fase di eccellenza operativa] (media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
+![Aggiornare il diagramma di viaggio, enfatizzando la fase di eccellenza operativa](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
 
 Questo articolo fa parte della fase di eccellenza operativa del viaggio di aggiornamento, che inizia non appena hai completato l'aggiornamento da Skype for business a teams.
 
@@ -45,7 +47,7 @@ Per realizzare il massimo beneficio e i risultati aziendali con i team, gli uten
 
 - Arruolare campioni peer per aiutare l'evangelizzazione e incoraggiare gli altri utenti.
 - Controllo della [Guida all'adozione di Office 365](https://go.microsoft.com/fwlink/?linkid=859045) per suggerimenti su come aumentare l'impegno e l'adozione della guida.
-- Sfruttando il [Kit di successo](https://download.microsoft.com/download/A/E/9/AE984CD4-CF4B-41E7-9ABD-6735E3F01897/MicrosoftTeamsCustomerSuccessKit.zip) per il cliente teams per migliorare la consapevolezza e condividere le procedure consigliate.
+- Sfruttando il [Kit di successo per il cliente teams](https://download.microsoft.com/download/A/E/9/AE984CD4-CF4B-41E7-9ABD-6735E3F01897/MicrosoftTeamsCustomerSuccessKit.zip) per migliorare la consapevolezza e condividere le procedure consigliate.
 - Implementazione di una [strategia di adozione formale e di gestione delle modifiche](http://www.successwithteams.com/) per favorire la crescita dell'adozione.
 
 ## <a name="prepare-for-new-functionality"></a>Preparare le nuove funzionalità
@@ -56,4 +58,4 @@ Il ciclo di vita di una determinata tecnologia si è spostato in un ciclo di cre
 - Implementare un modulo di pianificazione delle modifiche (come illustrato di seguito) per preparare e implementare nuove funzionalità. Assicurati di includere sia le attività tecniche che quelle di preparazione degli utenti.
 
 
-![Modulo di esempio che mostra le date e le note di rilascio previste] (media/upgrade-change-plan-form.png "Modulo di esempio che mostra le date di rilascio previste e le note sulle nuove funzionalità, elencate con i passaggi successivi e i proprietari")
+![Modulo di esempio che mostra le date e le note di rilascio previste](media/upgrade-change-plan-form.png "Modulo di esempio che mostra le date di rilascio previste e le note sulle nuove funzionalità, elencate con i passaggi successivi e i proprietari")

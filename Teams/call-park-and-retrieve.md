@@ -16,16 +16,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- ms.teamsadmincenter.callparkpolicies.overview
+- CSH
 ms.custom:
 - Phone System
+- ms.teamsadmincenter.callparkpolicies.overview
 description: USA Call Park e recupera per effettuare una chiamata in attesa nel servizio Teams nel cloud.
-ms.openlocfilehash: 4bd77fcd90cb17f0ca5b09f784d6532d552df473
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: b4b5200f139f5610ff1109b97742607d3b633ff6
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695621"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41824594"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Chiamare il parcheggio e il recupero in Microsoft Teams
 

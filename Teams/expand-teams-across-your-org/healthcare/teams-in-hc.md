@@ -1,5 +1,5 @@
 ---
-title: Iniziare a usare team per organizzazioni sanitarie
+title: Guida introduttiva a Teams per le organizzazioni del settore sanitario
 author: jambirk
 ms.author: jambirk
 manager: serdars
@@ -7,6 +7,8 @@ audience: ITPro
 ms.topic: article
 ms.service: msteams
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
@@ -14,15 +16,15 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: Iniziare a usare team per organizzazioni sanitarie
-ms.openlocfilehash: e8c41249da52ce9a5e19471954de6d71db3df1b3
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+description: Guida introduttiva a Teams per le organizzazioni del settore sanitario
+ms.openlocfilehash: f246e0ab5abd412947ceeb871b16f464001b89bb
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569233"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827624"
 ---
-# <a name="get-started-with-teams-for-healthcare-organizations"></a>Iniziare a usare team per organizzazioni sanitarie
+# <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
 Microsoft teams offre una serie di funzionalità utili per ospedali e altre organizzazioni sanitarie. Le caratteristiche dei team sono in fase di sviluppo per aiutare gli ospedali:
 
@@ -38,7 +40,7 @@ Il contenuto di questa sezione si basa sulle funzionalità fondamentali dei team
 
 [!INCLUDE [preview-feature](../../includes/preview-feature.md)]
 
-Microsoft Teams ha ora una soluzione di coordinamento delle cure specifiche per le organizzazioni sanitarie per aiutarli a fornire la migliore assistenza per i pazienti. Il punto cruciale della soluzione di coordinamento delle cure, l'app Microsoft teams patients, è un'app per la scheda First party che si integra con i sistemi di EHR (Electronic Health Record) che usano un'interfaccia[FHIR](https://www.hl7.org/fhir/)(Fast Healthcare Resources) per fornire preziose funzionalità informazioni mediche in Microsoft Teams nel contesto per consentire la collaborazione e la comunicazione clinica.  
+Microsoft Teams ha ora una soluzione di coordinamento delle cure specifiche per le organizzazioni sanitarie per aiutarli a fornire la migliore assistenza per i pazienti. Il nocciolo della soluzione di coordinamento delle cure, l'app Microsoft teams patients, è un'app per la scheda First party che si integra con i sistemi Electronic Health record (EHR) che usano un'interfaccia[FHIR](https://www.hl7.org/fhir/)(Fast Healthcare Resources) per fornire preziose informazioni mediche in Microsoft teams in contesto per consentire la collaborazione e la comunicazione clinica.  
 
 La soluzione di coordinamento delle cure può interfacciarsi con fornitori di software indipendenti leader (ISV) che possono connettere l'app patients ai sistemi EHR usando standard di dati sanitari esistenti come HL7v2 e FHIR. Partner Microsoft con i seguenti leader del settore per stabilire l'integrazione elettronica dei record sanitari con i team:
 

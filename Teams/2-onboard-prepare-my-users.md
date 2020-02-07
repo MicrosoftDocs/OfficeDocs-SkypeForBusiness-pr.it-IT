@@ -10,18 +10,20 @@ ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
 description: Creare un piano per guidare l'adozione degli utenti definendo gli obiettivi, comprendendo l'aspetto dell'accettazione e fornendo formazione e supporto tecnico.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 026edba5c85fa010ee583b501d1ecc1f18308518
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 7e4404d27b1e3b7e32d6c4b53558fd17e30ef4ae
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516915"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825084"
 ---
 # <a name="prepare-my-users"></a>Preparare gli utenti
 
@@ -46,7 +48,7 @@ L'impostazione della visione del progetto consente ai principali stakeholder di 
 
 L'immagine seguente è un esempio di un'istruzione di visione-valore per un cliente che esegue l'aggiornamento da Skype for business a teams.
 
-![Tabella a due colonne](media/prepare-my-users-new-image1.png "con la visualizzazione di una tabella di due colonne con visione e valore-perché lo facciamo? (livello organizzazione) a sinistra e valore-cosa contiene? (livello utente) a destra")
+![Tabella con due colonne che mostra la visualizzazione e il valore](media/prepare-my-users-new-image1.png "Tabella con due colonne con visione-perché lo facciamo? (livello organizzazione) a sinistra e valore-cosa contiene? (livello utente) a destra")
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>È stato articolato il vantaggio e il valore per gli utenti in modo da ottenere il buy-in per questa nuova soluzione?</li></ul></td></tr>
@@ -126,7 +128,7 @@ Per ogni gruppo di persona, discutere le operazioni seguenti con il team di prog
 
 L'immagine seguente è un esempio di tabella persona.
 
-![Tabella dei valori che elenca](media/prepare-my-users-image2.png "le persone con i loro ruoli comuni e le dipendenze della soluzione di comunicazione e collaborazione. La persona Executive viene evidenziata con i dettagli sul profilo (giorno nella vita) e le caratteristiche, i dispositivi e le esigenze di formazione per i dirigenti.")
+![Tabella valori che elenca i dettagli persona](media/prepare-my-users-image2.png "Tabella che elenca gli utenti con i loro ruoli comuni e le dipendenze della soluzione di comunicazione e collaborazione. La persona Executive viene evidenziata con i dettagli sul profilo (giorno nella vita) e le caratteristiche, i dispositivi e le esigenze di formazione per i dirigenti.")
 
 Per ogni caso di utilizzo, discutere le operazioni seguenti con il team di progetto:
 

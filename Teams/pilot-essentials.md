@@ -11,19 +11,21 @@ description: Linee guida per l'avvio di Microsoft teams Pilot per esplorare tutt
 localization_priority: Normal
 ms.custom: Teams-upgrade-guidance
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fa6f433c3888a9d3b3e20b098562592ea90b5e6f
-ms.sourcegitcommit: e1c8a62577229daf42f1a7bcfba268a9001bb791
+ms.openlocfilehash: ec60beb606224a5b202a03187027b8e3e002dfd1
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36237856"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41833896"
 ---
-![Aggiornare il diagramma di viaggio, evidenziando la distribuzione e l'implementazione] (media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di distribuzione e implementazione")
+![Aggiornare il diagramma di viaggio, evidenziando la distribuzione e l'implementazione](media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di distribuzione e implementazione")
 
 Questo articolo fa parte della fase di distribuzione e implementazione del viaggio di aggiornamento e condivide gli approfondimenti per l'esecuzione di un pilota efficace. Prima di procedere, verificare di aver completato le attività seguenti:
 
@@ -34,7 +36,7 @@ Questo articolo fa parte della fase di distribuzione e implementazione del viagg
 - [Preparare l'ambiente](https://aka.ms/SkypeToTeams-TechnicalReadiness)
 - [Preparare l'organizzazione](https://aka.ms/SkypeToTeams-UserReadiness)
 
-# <a name="conduct-a-user-pilot"></a>Eseguire un pilota utente
+# <a name="conduct-a-user-pilot"></a>Condurre un progetto pilota per gli utenti
 
 Distribuendo le nuove tecnologie, l'organizzazione può realizzare un valore aziendale come il risparmio dei costi, la conformità della sicurezza, la soddisfazione dei dipendenti e l'efficienza operativa, ma può anche influenzare la produttività e l'infrastruttura organizzativa degli utenti ( rete). Prima di abilitare la nuova tecnologia in tutta l'organizzazione, eseguire un pilota formale dell'utente. Proprio come si dipinge una piccola chiazza di colore su un muro prima di dipingere l'intera sala, è possibile testare una distribuzione ampia su scala più ridotta eseguendo un progetto pilota per convalidare la disponibilità tecnica e degli utenti, identificare e mitigare i problemi e garantire un successo implementazione a livello di organizzazione.
 

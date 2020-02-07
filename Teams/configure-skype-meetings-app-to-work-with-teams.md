@@ -1,5 +1,5 @@
 ---
-title: Configurare l'app riunioni Skype per l'utilizzo con i team
+title: Configurare l'app Riunioni Skype per Teams
 ms.reviewer: ''
 author: LolaJacobsen
 ms.author: Lolaj
@@ -9,19 +9,21 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 description: Gli amministratori possono usare l'interfaccia di amministrazione di Microsoft teams per configurare l'app riunioni Skype per l'utilizzo con i team
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1f478eaaa1248e7738026f32ae0ccfb7ee03480f
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: a6d2725b3419283d5588882356c7334bb3d33405
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516923"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825524"
 ---
-<a name="configure-the-skype-meetings-app-to-work-with-teams"></a>Configurare l'app riunioni Skype per l'utilizzo con i team
+<a name="configure-the-skype-meetings-app-to-work-with-teams"></a>Configurare l'app Riunioni Skype per Teams
 ===================================================
 
 Dopo l'aggiornamento di un utente a Microsoft teams, gli amministratori possono usare l'interfaccia di amministrazione di Microsoft teams per specificare l'app preferita che gli utenti useranno per partecipare alle riunioni Skype for business.
@@ -41,7 +43,7 @@ Gli utenti che usano l'app riunioni Skype con teams sono soggetti alle limitazio
 - Gli utenti non hanno alcuna opzione per cambiare il dispositivo video.
 - Dopo l'aggiornamento di un utente a teams, se l'utente partecipa a una riunione con l'app riunioni Skype e riceve una chiamata in teams, la riunione nell'app riunioni Skype non viene messa in attesa. L'utente è invece connesso a entrambe le chiamate.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - [Cos'è l'app riunioni Skype (Skype for Business Web App)](https://support.office.microsoft.com/article/what-is-skype-meetings-app-skype-for-business-web-app-1ff3d412-718a-4982-8ff2-a4992608cdb5)
-- [Requisiti di rete minimi dell'app riunioni Skype](https://technet.microsoft.com/library/mt845808.aspx)
+- [Requisiti minimi di rete per l’app Riunioni Skype](https://technet.microsoft.com/library/mt845808.aspx)

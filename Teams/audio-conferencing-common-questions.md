@@ -18,16 +18,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Audio Conferencing
 description: Di seguito sono elencate alcune delle principali domande che si ottengono dai clienti che vogliono usare i servizi di audioconferenza.
-ms.openlocfilehash: 2dd772a9a6488b09092ac0687ca125409accf85b
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: bc8ec039cff2be47f0912f2e52bbdb56ce694a4e
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695721"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826304"
 ---
 # <a name="audio-conferencing-common-questions"></a>Domande ricorrenti sulle audioconferenze
 

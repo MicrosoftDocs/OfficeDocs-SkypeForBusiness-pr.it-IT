@@ -11,15 +11,17 @@ ms.collection:
 - SPO_Content
 ms.reviewer: anach
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 description: Informazioni su cosa fare quando è necessario preformare un eDiscovery, ad esempio quando è necessario inviare tutte le info archiviate elettronicamente per il procedimento legale.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 43105db9a4e12d658bf5cf2e9c2c8897fdc918e3
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: d85bef224966d15a6c383163d9ac4a5dd5ed126c
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40989791"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41833796"
 ---
 <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams
 ============================

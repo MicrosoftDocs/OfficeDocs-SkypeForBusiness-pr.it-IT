@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: v-rifer
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 search.appverid: MET150
 MS.collection:
@@ -14,12 +16,12 @@ MS.collection:
 description: Informazioni su analisi cross-team e analisi per team in teams, che consentono agli utenti di visualizzare i dati sull'utilizzo per i team di cui fanno parte.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6914d391d8dfdd1e5a5b5e0e7f826bef78e67678
-ms.sourcegitcommit: dc240b123efb03d5ab0545d650a973bf60d04506
+ms.openlocfilehash: 436d78bc52fae316a7c5ac61a7f42d7d74988ee0
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40069447"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827374"
 ---
 # <a name="view-cross-team-and-per-team-analytics-in-teams"></a>Visualizzare l'analisi tra team e per team in Teams
 

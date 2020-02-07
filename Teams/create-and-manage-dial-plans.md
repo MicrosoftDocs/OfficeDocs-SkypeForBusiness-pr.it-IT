@@ -16,16 +16,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - Calling Plans
 description: Informazioni su come creare e gestire i dial plan (PSTN Calling dial plans) e su come gestirli.
-ms.openlocfilehash: e61fb8c2ffd5c13816ff0093fc117dfadb251594
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 774b0a78f39b91b634ed0833be3497935cb25c4f
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41707261"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826924"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 

@@ -11,15 +11,17 @@ ms.collection:
 - SPO_Content
 ms.reviewer: anach
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 description: Informazioni sulla ricerca di contenuto in Microsoft teams e su come eseguire la ricerca in base a conversazioni di canale da Exchange, upload di file e modifiche da SharePoint e OneNote.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fea6e671a84eec6f064a7ccc1f7f9b3f237a220d
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 222b57021a259795823031d9855304d1ecf27f4f
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40991081"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825344"
 ---
 <a name="use-content-search-in-microsoft-teams"></a>Usare la ricerca contenuto in Microsoft Teams
 =====================================

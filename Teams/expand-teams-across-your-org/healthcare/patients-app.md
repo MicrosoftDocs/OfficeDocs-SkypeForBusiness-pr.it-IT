@@ -1,5 +1,5 @@
 ---
-title: Panoramica delle app pazienti
+title: Panoramica dell'app Pazienti
 author: jambirk
 ms.author: jambirk
 manager: serdars
@@ -7,6 +7,8 @@ audience: ITPro
 ms.topic: article
 ms.service: msteams
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
@@ -15,14 +17,14 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: Integrazione dell'app EHR di Microsoft teams patients
-ms.openlocfilehash: d3869d8646a417ec681a48321610b7cfffd50e5a
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 8d5723f90fe56c2af342f1cfd76e3ab9bde04c60
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37569291"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827654"
 ---
-# <a name="integrating-electronic-healthcare-records-into-microsoft-teams"></a>Integrazione di record sanitari elettronici in Microsoft Teams
+# <a name="integrating-electronic-healthcare-records-into-microsoft-teams"></a>Integrare cartelle cliniche elettroniche in Microsoft Teams
 
 [!INCLUDE [preview-feature](../../includes/preview-feature.md)]
 
@@ -61,7 +63,7 @@ Le sezioni seguenti illustrano i requisiti del livello di accesso ai dati di FHI
 
 ### <a name="authentication"></a>Autenticazione  
 
-L'autorizzazione a livello di app *senza supporto per l'autorizzazione a livello utente* è il modo più comune per eseguire trasformazioni dei dati ed esporre le connessioni ai dati di EHR tramite FHIR, anche se il sistema EHR potrebbe implementare l'autorizzazione a livello utente . Il servizio di interoperabilità (partner) Ottiene l'accesso elevato ai dati di EHR e quando espongono gli stessi dati delle risorse FHIR appropriate non esiste alcun contesto di autorizzazione passato al consumer del servizio di interoperabilità (l'app patients) che si integra con l'interoperabilità Servizio o piattaforma. L'app patients non sarà in grado di applicare l'autorizzazione a livello di utente, ma supporta l'applicazione per l'autenticazione delle applicazioni tra l'app patients e il servizio del partner di interoperabilità.
+L'autorizzazione a livello di app *senza supporto per l'autorizzazione a livello utente* è il modo più comune per eseguire trasformazioni dei dati ed esporre le connessioni ai dati di EHR tramite FHIR, anche se il sistema EHR potrebbe implementare l'autorizzazione a livello di utente. Il servizio di interoperabilità (partner) Ottiene l'accesso elevato ai dati di EHR e quando espongono gli stessi dati delle risorse FHIR appropriate non esiste alcun contesto di autorizzazione passato al consumer del servizio di interoperabilità (l'app patients) che si integra con l'interoperabilità Servizio o piattaforma. L'app patients non sarà in grado di applicare l'autorizzazione a livello di utente, ma supporta l'applicazione per l'autenticazione delle applicazioni tra l'app patients e il servizio del partner di interoperabilità.
 
 Il modello di autenticazione dell'applicazione per l'applicazione è descritto di seguito:
 
@@ -77,7 +79,7 @@ Il servizio per l'autenticazione del servizio deve essere eseguito tramite il [f
     {"resourceType": "CapabilityStatement",.
         .
         .
-        "Rest": [{"Mode": "Server", "Security": {"extension": [{"extension": [{"URL": "token", "valueUri": "https://login.contoso.com/145f4184-1b0b-41c7-ba24-b3c1291bfda1/oauth2/token"}, {"URL": "Autorizzo", "valueUri":https://login.contoso.com/145f4184-1b0b-41c7-ba24-b3c1291bfda1/oauth2/authorize""}], "URL":http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris""}], "Service": "" "," codifica ":http://hl7.org/fhir/ValueSet/restful-security-service" "," "", "codice": "OAuth" } ] } ] }, .
+        "Rest": [{"Mode": "Server", "Security": {"extension": [{"extension": [{"URL": "token", "valueUri": "https://login.contoso.com/145f4184-1b0b-41c7-ba24-b3c1291bfda1/oauth2/token"}, {"URL": "Autorizzo", "valueUri":https://login.contoso.com/145f4184-1b0b-41c7-ba24-b3c1291bfda1/oauth2/authorize""}], "URL":http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris""}], "Service": [{"coding": [{"System":http://hl7.org/fhir/ValueSet/restful-security-service"" "," "," codice ":" OAuth "}]}]},.
                 .
                 .
             } ] }
@@ -94,7 +96,7 @@ Una richiesta di un token di accesso è costituita dai parametri seguenti:
 
 * * *
 
-Il servizio partner offre l'app client_id e client_secret per i pazienti, gestita tramite un portale di registrazione auth sul lato del partner. Il servizio partner fornisce l'endpoint per richiedere il token di accesso usando un flusso di credenziali client. Una risposta corretta deve includere i parametri TOKEN_TYPE, ACCESS_TOKEN e expires_in.
+Il servizio partner offre la client_id e client_secret per l'app patients, gestita tramite un portale di registrazione auth sul lato del partner. Il servizio partner fornisce l'endpoint per richiedere il token di accesso usando un flusso di credenziali client. Una risposta corretta deve includere i parametri token_type, access_token e expires_in.
 
 ### <a name="routing-mapping-aad-tenant-to-the-provider-endpoint"></a>Routing: mapping del tenant di AAD all'endpoint del provider
 
@@ -164,6 +166,6 @@ Dopo aver creato il server open source FHIR, è molto semplice connettersi all'a
 
     ![Screenshot delle impostazioni dei server delle app per i pazienti](../../media/patients-server.png)
 
-5. Iniziare a usare l'app per cercare i pazienti dal server FHIR/EHR e aggiungerli a un elenco e inviare [commenti e suggerimenti](mailto:Teamsforhealthcare@service.microsoft.com?subject=Microsoft%20Teams%20Patients%20App%20feedback) se qualcosa non funziona. Inoltre, per stabilire una versione completamente autenticata del flusso del server app-> FHIR del paziente, avviare un dialogo offline con Microsoft teams for Healthcare Product Engineering, tramite la richiesta di posta elettronica menzionata in precedenza per chiarire i requisiti e verrà Aiutaci a abilitare questa procedura per i requisiti di autenticazione descritti in precedenza nel documento di interfaccia di FHIR.  
+5. Iniziare a usare l'app per cercare i pazienti dal server FHIR/EHR e aggiungerli a un elenco e inviare [commenti e suggerimenti](mailto:Teamsforhealthcare@service.microsoft.com?subject=Microsoft%20Teams%20Patients%20App%20feedback) se qualcosa non funziona. Inoltre, per stabilire una versione completamente autenticata del flusso dei pazienti app-> FHIR, è necessario avviare un dialogo offline con Microsoft teams for Healthcare Product Engineering, tramite la richiesta di posta elettronica menzionata in precedenza per chiarire i requisiti e ti aiuteremo a abilitare questa procedura per i requisiti di autenticazione descritti nel documento di interfaccia di FHIR.  
 
 

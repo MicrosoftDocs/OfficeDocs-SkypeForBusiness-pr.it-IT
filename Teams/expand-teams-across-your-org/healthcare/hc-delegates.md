@@ -1,5 +1,5 @@
 ---
-title: Delega del messaggio
+title: Delega messaggi
 author: jambirk
 ms.author: jambirk
 manager: serdars
@@ -7,6 +7,8 @@ audience: ITPro
 ms.topic: article
 ms.service: msteams
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
@@ -15,14 +17,14 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: acolonna
 description: Un utente può impostare in modo esplicito un altro utente come delegato nel messaggio di stato.
-ms.openlocfilehash: 56c0e9bd5394e738170130bab15803e5cb4d741c
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: ec1f590cad4ada605b4a487d982b3a2459ecb5f2
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570359"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827784"
 ---
-# <a name="message-delegation"></a>Delega del messaggio
+# <a name="message-delegation"></a>Delega messaggi
 
 Un utente può già impostare esplicitamente lo stato su away o non disturbare e specificare il testo personalizzato. La caratteristica delega messaggio funziona nel modo seguente:
 
@@ -63,4 +65,4 @@ La migrazione delle note da Skype for business a teams non è supportata quando 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Coesistenza con Skype for business](../../coexistence-chat-calls-presence.md)
+[Coesistenza con Skype for Business](../../coexistence-chat-calls-presence.md)

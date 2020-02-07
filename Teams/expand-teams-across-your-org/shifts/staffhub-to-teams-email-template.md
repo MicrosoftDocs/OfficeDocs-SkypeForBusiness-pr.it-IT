@@ -9,18 +9,20 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Usare questo modello di posta elettronica per comunicare agli utenti di tutta l'organizzazione la transizione da Microsoft StaffHub a Microsoft teams.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a7b78940590d6c81422f09002685d7911055dfc4
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 1baea026c70d3132e1753e334341b89e261a1493
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37639443"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825774"
 ---
 # <a name="staffhub-to-teams-sample-email-to-users"></a>StaffHub alla posta elettronica di esempio in teams agli utenti
 
@@ -58,5 +60,5 @@ Se si ha bisogno di assistenza immediata, contattare &lt;il servizio di&gt;posta
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Pianificare la spostamento dei team di StaffHub in turni in teams](plan-to-move-staffhub-teams-to-shifts-in-teams.md)
-- [Spostare i team di Microsoft StaffHub in turni in teams](move-staffhub-teams-to-shifts-in-teams.md)
+- [Pianificare il passaggio dei team di StaffHub a Turni in Teams](plan-to-move-staffhub-teams-to-shifts-in-teams.md)
+- [Spostare i team di Microsoft StaffHub in Turni in Teams](move-staffhub-teams-to-shifts-in-teams.md)

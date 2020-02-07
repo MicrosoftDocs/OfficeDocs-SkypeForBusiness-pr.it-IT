@@ -12,23 +12,25 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle licenze per i componenti aggiuntivi, le funzionalità e su come acquistare i piani di Office 365 Enterprise E5. '
-ms.openlocfilehash: 14aa5e8a4c368b5e759a9248d625e4d1a32ba82d
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: c5c205a6084b017a1085bf49a10df04e139bfc56
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572477"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826534"
 ---
 # <a name="office-365-enterprise-e5"></a>Office 365 Enterprise E5
 
 Il piano [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) include la maggior parte delle caratteristiche di Microsoft teams. Sono disponibili solo alcune opzioni aggiuntive.
   
-|Per aggiungere questa funzionalità|Ecco cosa devi fare |
+|Per aggiungere questa caratteristica|Ecco cosa devi fare |
 |:------------------|:--------------------------|
 |Sono inclusi i servizi di audioconferenza. <br/> |Una volta acquistate le licenze, Microsoft sarà il provider di servizi di audioconferenza.<br/> |
 |Numeri verdi per l'accesso esterno alle riunioni e la possibilità di effettuare chiamate in uscita da una riunione per aggiungere qualcuno chiamando qualsiasi numero di telefono nel mondo.<br/> | Acquistare [crediti per comunicazioni](../set-up-communications-credits-for-your-organization.md).|

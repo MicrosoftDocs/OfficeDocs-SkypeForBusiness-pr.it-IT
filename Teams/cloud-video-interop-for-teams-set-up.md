@@ -8,6 +8,8 @@ ms.service: msteams
 audience: admin
 search.appverid: MET150
 ms.reviewer: srividhc
+f1.keywords:
+- NOCSH
 description: Questo articolo illustra come pianificare e configurare l'interoperabilità cloud video per gli utenti dell'organizzazione.
 localization_priority: Normal
 ms.collection:
@@ -15,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a94292719f8f93b818cbc52dd312859611940e3b
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 1e937e7825000d02156c1f5ede2671711006cbdd
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516662"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825104"
 ---
 # <a name="set-up-cloud-video-interop-for-microsoft-teams"></a>Configurare l'interoperabilità cloud video per Microsoft Teams
 
@@ -100,10 +102,10 @@ Pianificare quindi la riunione teams con le coordinate di interoperabilità vide
 Puoi partecipare alle riunioni di teams con i tuoi dispositivi VTC nei modi seguenti:
  
 - IVR (risposta vocale interattiva)
-    - Puoi effettuare la chiamata al IVR del partner usando il tenantkey @ Domain. 
+    - Puoi effettuare l'accesso al IVR del partner usando la tenantkey@domain. 
     - Una volta entrati nell'IVR del partner, verrà richiesto di immettere il VTC conferenceId, che consentirà quindi di connettersi alla riunione teams.
 - Chiamata diretta
-    - Puoi effettuare direttamente la chiamata alla riunione teams senza interagire con il IVR del partner usando la funzionalità di chiamata diretta usando la stringa completa di tenantkey. VTC ConferenceId @ Domain.
+    - Puoi effettuare direttamente la chiamata alla riunione teams senza interagire con il IVR del partner usando la funzionalità di chiamata diretta usando la stringa completa di tenantkey. ConferenceId@domain VTC.
 - Dial-One-Touch
     - Se si dispone di una sala teams integrata, è possibile usare le funzionalità di dial-up con un solo tocco offerte dal partner (senza dover digitare una stringa di chiamata).
 

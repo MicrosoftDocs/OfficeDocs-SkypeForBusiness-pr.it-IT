@@ -9,6 +9,8 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni su come spostare i team di Microsoft StaffHub e pianificare i dati in turni in Microsoft teams.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
@@ -16,12 +18,12 @@ ms.collection:
 - SPO_Content
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4a14c7cbca85be266347cd6777ea1108cc63d065
-ms.sourcegitcommit: 2cc98fcecd753e6e8374fc1b5a78b8e3d61e0cf7
+ms.openlocfilehash: 4060dae11ad90793c6124b1b37971b15437caf39
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "40992843"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825754"
 ---
 # <a name="move-your-microsoft-staffhub-teams-to-shifts-in-microsoft-teams"></a>Spostare i team di Microsoft StaffHub in turni in Microsoft Teams
 
@@ -163,8 +165,8 @@ Puoi anche creare criteri di configurazione delle app personalizzati e modificar
 
 Come parte della strategia di onboarding, fornisci formazione e indicazioni agli utenti per aiutarli a familiarizzare con i team. Condividere le risorse seguenti con gli utenti in modo che sappiano dove ottenere i client, la formazione e il supporto per i team:
 
-- [Client Web Teams](https://teams.microsoft.com)
-- [Collegamenti per il download di client desktop e per dispositivi mobili](https://teams.microsoft.com/downloads)
+- [Client Web di Teams](https://teams.microsoft.com)
+- [Collegamenti per il download dei client desktop e per dispositivi mobili](https://teams.microsoft.com/downloads)
 - [Video di formazione su Teams](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)
 - [Documentazione della Guida di Teams](https://support.office.com/teams)
 

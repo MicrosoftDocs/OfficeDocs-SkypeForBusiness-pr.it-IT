@@ -7,17 +7,19 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: msteams
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 ms.collection:
 - M365-collaboration
 description: Questo articolo illustra le considerazioni relative alla pianificazione per la distribuzione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: 61ecabb722db6fc0fb8fa9e9405185622629e167
-ms.sourcegitcommit: 9bead87a7f4c4e71f19f8980e9dce2b979735055
+ms.openlocfilehash: 1d5236c522a0f3da6f2c2686e34db9d665a93d15
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41268999"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825894"
 ---
 # <a name="plan-microsoft-teams-rooms"></a>Pianificare le sale di Microsoft Teams
 

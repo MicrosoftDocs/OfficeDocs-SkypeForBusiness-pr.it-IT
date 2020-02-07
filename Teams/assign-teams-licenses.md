@@ -1,5 +1,5 @@
 ---
-title: Assegnare licenze Teams
+title: Assegnare licenze di Teams
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
@@ -10,16 +10,18 @@ ms.service: msteams
 ms.collection:
 - M365-collaboration
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 ms.reviewer: mikedav
 description: Informazioni su come assegnare licenze per funzionalità come audioconferenza, sistema telefonico e piani di chiamata.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1e5783a2fa0c6479d59e563b9001b736015f20fa
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 967b67c1d8bc92009e1319260373c9b8abc52b99
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37515781"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826314"
 ---
 # <a name="assign-microsoft-teams-licenses"></a>Assegnare licenze di Microsoft Teams
 
@@ -103,7 +105,7 @@ for each ($user in $users)
 | Piano per chiamate nazionali (3000 minuti per utente/mese per US/PR/CA, 1200 minuti per utente/mese per i paesi dell'UE) | MCOPSTN1 |
 | Piano per chiamate nazionali (120 minuti per utente/mese per ogni paese) </br>*Nota: questo piano non è disponibile negli Stati Uniti*. | MCOPSTN5 |
 | Piano per chiamate nazionali (240 minuti per utente/mese per ogni paese) </br>*Nota: questo piano non è disponibile negli Stati Uniti*. | MCOPSTN6 |
-| Crediti comunicazioni | MCOPSTNPP | 
+| Credito per la comunicazione | MCOPSTNPP | 
 
 ## <a name="audio-conferencing-tips-and-scripts-for-assigning-licenses"></a>Servizi di conferenza audio: suggerimenti e script per l'assegnazione di licenze
 
@@ -194,4 +196,4 @@ Guarda lo script di esempio per l'assegnazione delle licenze di Audioconferenza.
 
 [Configurare i piani per chiamate](set-up-calling-plans.md)
 </br>
-[Aggiungere fondi e gestire i crediti per la comunicazione](add-funds-and-manage-communications-credits.md)
+[Aggiungere fondi e gestire Credito per la comunicazione](add-funds-and-manage-communications-credits.md)

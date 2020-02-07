@@ -7,6 +7,8 @@ audience: ITPro
 ms.topic: article
 ms.service: msteams
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
@@ -15,12 +17,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: Integrazione dell'app EHR di Microsoft teams patients
-ms.openlocfilehash: 179cd031b6e32ee3ed32a6d3be1fa4afaae68cc2
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: d7acea1002d80a397469d242cfbbb1adfba07a24
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570370"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827804"
 ---
 # <a name="dstu2-interface-specification"></a>Specifica dell'interfaccia DSTU2
 
@@ -80,7 +82,7 @@ Oltre ai campi Argonaut, per una grande esperienza utente l'app patients legge a
     Response: {"resourceType": "patient", "ID": "<patient-ID>",.
       .
       .
-      "nome": [{"use": "Official", "prefix": ["Mr"], "Family": ["Chau"], "given": ["Hugh"]}], "identificatore": [{"USA": "ufficiale", "tipo": {"codifica": [{"System":http://hl7.org/fhir/v2/0203"", "codice": "Mr"}]}, "value": "1234567"}], "gender": "maschio" 1957-06-05 "," careProvider ": [{" visualizzazione ":" Jane Doe "}],}
+      "nome": [{"use": "Official", "prefix": ["Mr"], "Family": ["Chau"], "given": ["Hugh"]}], "Identifier": [{"use": "ufficiale", "tipo": {"codifica": [{"System":http://hl7.org/fhir/v2/0203"" "," codice ":" Mr "}]}," valore ":" 1234567 "}]," sesso ":" maschio "," DataNascita ":" 1957-06-05 "," careProvider ": [{" display ":" Jane Doe "}],}
 
 * * *
 
@@ -105,7 +107,7 @@ Vedere l'esempio seguente di questa chiamata.
 
 * * *
 
-    Richiesta: POST <Fhir-Server>/patient/_search della richiesta: given = Hugh&Family = Chau
+    Request: POST <Fhir-Server>/patient/_search request body: given = Hugh&Family = Chau
     
     Response: {"resourceType": "bundle", "ID": "<Bundle-ID>",.
       .
@@ -142,7 +144,7 @@ L'obiettivo è quello di riuscire a recuperare gli ultimi segni vitali per un pa
 
     Richiesta: ottenere <Fhir-Server>/Observation? patient =<patient-ID>&_sort:d ESC = data&Category = Vital-Signs
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "digitare": "searchset", "Total": 20, "entry": [{"risorsa": {"resourceType": "osservazione", "ID": "<Resource-ID>", "Category": {"coding": [{code ":" Vital-Signs "}],}," code ": {" coding " ": [{" sistema ":"http://loinc.org"," codice ":" 39156-5 "," visualizzazione ":" BMI "}],}," effectiveDateTime ":" 2009-12-01 "," valueQuantity ": {" valore ": 34,4," unità ":" kg/m2 "," sistema ":"http://unitsofmeasure.org"," codice ":" kg/m2 "},},.
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "digitare": "searchset", "Total": 20, "entry": [{"risorsa": {"resourceType": "osservazione", "ID": "<Resource-ID>", "Category": {"coding": [{code ":" Vital-Signs "}],}," code ": {" coding ": [{" System ":http://loinc.org" "," code ":" 39156-5 "," display ":" BMI "}],}," effectiveDateTime ":" 2009-12-01 "," valueQuantity ": {" valore ": 34,4," unità ":" kg/m2 "," sistema ":http://unitsofmeasure.org" "," codice ":" kg/m2 "}},},.
         .
         .
       ] }
@@ -173,7 +175,7 @@ Vedere l'esempio seguente di questa chiamata:
 
     Richiesta: ottenere <Fhir-Server>/Condition? patient =<patient-ID>&_count = 10
     
-    Risposta: {"resourceType": "bundle", "ID": "<Bundle-ID>", "tipo": "searchset", "Total": 1, "entry": [{"Resource": {"resourceType": "Condition", "ID": "<Resource-ID>", "code": {"coding": [{               "sistema": "http://snomed.info/sct", "codice": "386033004", "visualizzazione": "neuropatia (danni nervosi)"}]}, "dateRecorded": "2018-09-17", "gravità": {"codifica": [{"SYST em ":"http://snomed.info/sct"," codice ":" 24484000 "," visualizzazione ":" grave "}]}},}]}
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"risorsa": {"resourceType": "condizione", "ID": "<Resource-ID>", "codice": {"codifica": [{"System": "http://snomed.info/sct" "," codice ":" 386033004 "," Visualizza ":" neuropatia (nervo) "}]}," dateRecorded ":" 2018-09-17 "," gravità ":" codifica ": [{") syst em ":"http://snomed.info/sct"," codice ":" 24484000 "," visualizzazione ":" grave "}]}},}]}
 
 * * *
 
@@ -202,7 +204,7 @@ L'obiettivo è quello di riuscire a recuperare l'ultima posizione nota del pazie
 
     Richiesta: ottenere <Fhir-Server>/Encounter? patient =<ID paziente>&_sort:d ESC = data&_count = 1
     
-    Risposta: {"ResourceType": "bundle", "Type": "searchset", "Total": 1, "entry": [{"" Resource ": {" ResourceType ":" Encounter "," ID ":" <Resource-ID> "," identificatore ": [{" use ":" Official "," value ":<id>" "}]," status " : "arrivata", "tipo": [{"coding": [{"display": "appuntamento"}],}], "paziente": {"riferimento": "paziente/<paziente-ID>"}, "periodo": {"Start": "09/17/2018 1:00:00 PM"}, "location": [{              "location": {"display": "Clinic-ENT"},}]}}]}
+    Response: {"ResourceType": "bundle", "Type": "searchset", "Total": 1, "entry": [{"risorsa": "" ResourceType ":" Encounter "," ID ":" <Resource-ID> "," Identifier ": [{" use ":" Official "," value ":"<id>"}]," stato ":" arrivato "," tipo ": [{" codifica ": [{" visualizzazione ":" appuntamento "}],}]," paziente ": {" riferimento ":" paziente/<paziente-ID> "}," periodo ":" inizio ":" 09/17/2018 1:00:00 PM "}," location ": [{              "location": {"display": "Clinic-ENT"},}]}}]}
 
 * * *
 
@@ -234,7 +236,7 @@ Vedere l'esempio seguente di questa chiamata:
 
     Richiesta: ottenere <Fhir-Server>/AllergyIntolerance? patient =<ID paziente>
     
-    Risposta: {"resourceType": "bundle", "ID": "<Bundle-ID>", "tipo": "searchset", "Total": 1, "entry": [{"Resource": {"resourceType": "AllergyIntolerance", "ID": "<Resource-ID>", "recordedDate": "2018-09-17T07:00:00.00 0Z "," sostanza ": {" testo ":" anacardi Nuts "}," stato ":" confermato "," reazione ": [{" sostanza ": {" testo ":" Estratto di anacardio allergenico prodotto iniettabile "}," manifestati on ": [{" testo ":" reazione anafilattica "}]}]}}]}
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource": {"resourceType": "AllergyIntolerance", "ID": "<Resource-ID>", "recordedDate": "2018-09-17T07:00:00.000 Z", "sostanza": {"testo": "anacardio"}, "stato": "confermato", "reazione": [{"sostanza": {"testo": "Estratto del dado allergenico prodotto iniettabile"}, "manifestati on ": [{" testo ":" reazione anafilattica "}]}]}}]}
 
 * * *
 
@@ -266,7 +268,7 @@ Vedere l'esempio seguente di questa chiamata:
 
     Richiesta: ottenere <Fhir-Server>/MedicationOrder? patient =<patient-ID>&_count = 10
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource", "", "MedicationOrder", "ID": "<Resource-ID>", "dateWritten": "2018-09-17", "medi cationCodeableConcept ": {" testo ":" Lisinopril 20 MG Oral Tablet "}," Prescriber ": {" display ":" Jane Doe "}," dosageInstruction ": [{" Text ":" 1 Daily "}]}}]}
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource": {"resourceType": "MedicationOrder", "ID": "<Resource-ID>", "dateWritten": "2018-09-17", "medicationCodeableConcept": {"Text": "Lisinopril 20 MG Oral Tablet"}, "Prescriber": {"display": "Jane Doe"}, "dosageInstruction": [{"testo": "1 Daily"}]}}]}
 
 * * *  
 
@@ -288,7 +290,7 @@ Vedere l'esempio seguente di questa chiamata:
 
     Richiesta: ottenere <Fhir-Server>/coverage? patient =<ID paziente>
     
-    Response: {"resourceType": "bundle", "Type": "searchset", "Total": 1, "entry": [{"Resource", "ID": "<Resource-ID>", "piano": "nessuna assicurazione primaria", "sottoscrittore": {"riferimento": "paziente/ <ID paziente> "}}}]}
+    Response: {"resourceType": "bundle", "digitare": "searchset", "Total": 1, "entry": [{"risorsa": {"resourceType": "coverage", "ID": "<Resource-ID>", "piano": "nessuna assicurazione primaria", "sottoscrittore": {"riferimento": "paziente/<-ID>"}}}]}
 
 * * *
 

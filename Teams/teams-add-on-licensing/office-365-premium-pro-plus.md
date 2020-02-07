@@ -12,17 +12,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle licenze per i componenti aggiuntivi, le caratteristiche e su come acquistare per Office 365 ProPlus.
-ms.openlocfilehash: 99fbbe549a41ed139dbf044e93f065bf1412b023
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 06281461de1a36e1eced52e03e4ae5019e742129
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37572455"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826494"
 ---
 # <a name="office-365-proplus"></a>Office 365 ProPlus
 
@@ -32,7 +34,7 @@ Se è già stato acquistato il piano [Office 365 ProPlus](https://products.offic
 > Anche se è possibile acquistare i piani di audioconferenza, sistema telefonico e chiamate per abilitare le funzionalità di chiamata vocale, è consigliabile valutare un piano Enterprise E5 per verificare se è più conveniente.
 
 
-|Per aggiungere questa funzionalità |Ecco cosa devi fare |
+|Per aggiungere questa caratteristica |Ecco cosa devi fare |
 |:---------------------------|:--------------------------------|
 |Audioconferenza <br/> |Acquistare il componente aggiuntivo audioconferenza. <br/>Acquistare 1 licenza di audioconferenza per ogni persona che sta per pianificare o ospitare una riunione di accesso esterno. I partecipanti non hanno bisogno di una licenza. <br/>Una volta acquistate le licenze, Microsoft sarà il provider di servizi di audioconferenza. |
 |Numeri verdi per l'accesso esterno alle conferenze e la possibilità di effettuare chiamate in uscita da una conferenza per aggiungere qualcuno chiamando qualsiasi numero di telefono nel mondo <br/> |Acquistare [crediti per comunicazioni](../set-up-communications-credits-for-your-organization.md).|

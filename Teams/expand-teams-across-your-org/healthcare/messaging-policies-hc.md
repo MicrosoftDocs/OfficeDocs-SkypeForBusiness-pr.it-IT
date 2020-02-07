@@ -1,5 +1,5 @@
 ---
-title: Introduzione alla messaggistica sicura per le organizzazioni sanitarie
+title: Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario
 author: jambirk
 ms.author: jambirk
 manager: serdars
@@ -7,6 +7,8 @@ audience: ITPro
 ms.topic: article
 ms.service: msteams
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
@@ -14,21 +16,21 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: Introduzione alla messaggistica sicura per le organizzazioni sanitarie
-ms.openlocfilehash: 1b4048dc168de0c36c3c322cc9bb7d4e2d9c3958
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+description: Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario
+ms.openlocfilehash: ff4f9089d7fba87678345d37f8c9d85949fb478e
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570337"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827734"
 ---
-# <a name="get-started-with-secure-messaging-for-healthcare-organizations"></a>Introduzione alla messaggistica sicura per le organizzazioni sanitarie
+# <a name="get-started-with-secure-messaging-for-healthcare-organizations"></a>Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario
 
 I criteri di messaggistica vengono usati per controllare quali funzionalità di messaggistica chat e canale sono disponibili per gli utenti di Microsoft teams e fanno parte della distribuzione complessiva di messaggistica sicura per organizzazioni sanitarie come ospedali, cliniche o uffici medici, dove è fondamentale avere un messaggio prelevato e agito in modo tempestivo, così come si sa quando vengono letti messaggi cruciali.
 
 È possibile usare i criteri predefiniti o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. Dopo aver creato un criterio, verrà assegnato a un utente o a un gruppo di utenti dell'organizzazione. Ad esempio, puoi scegliere di consentire solo a determinati ruoli di lavoro di usare queste funzionalità (solo medici e infermieri) e altri lavoratori (come gli addetti alle pulizie o il personale della cucina) per ottenere un set di caratteristiche più limitato. Per decidere autonomamente ciò che serve alla propria organizzazione, le indicazioni sono al massimo un suggerimento.
 
-I criteri possono essere facilmente gestiti nell'interfaccia di [amministrazione di Microsoft teams](http://admin.teams.microsoft.com) accedendo con le credenziali di amministratore e scegliendo i **criteri di messaggistica** nel riquadro di spostamento sinistro.
+I criteri possono essere facilmente gestiti nell'interfaccia di [amministrazione di Microsoft teams](https://admin.teams.microsoft.com) accedendo con le credenziali di amministratore e scegliendo i **criteri di messaggistica** nel riquadro di spostamento sinistro.
 
  ![Screenshot della pagina Criteri di messaggistica](../../media/messaging-policies-image1.png)
 
@@ -42,7 +44,7 @@ Le impostazioni seguenti sono di particolare interesse per le applicazioni sanit
 
 - ![Icona del numero 1, facendo riferimento a un callout nello screenshot](../../media/sfbcallout1.png) precedente **leggere** le conferme di lettura consente al mittente di un messaggio di chat di sapere quando il messaggio è stato letto dal destinatario in 1:1 e raggruppare le chat di 20 persone o meno. Usare questa impostazione per specificare se le conferme di lettura sono controllate dall'utente, attivate per tutti o disattivate per tutti. Le conferme di lettura dei messaggi sono importanti per le organizzazioni sanitarie perché eliminano in maniera non sicura se un messaggio è stato letto.
 
-  Per le applicazioni sanitarie, scegliere **utente controllato** o attivato **per tutti**. Tenere presente che quando si usa l'impostazione **attiva per tutti** , l'unico modo per impostare le conferme per l'intero tenant è quello di avere un solo criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "globale (impostazione predefinita per l'intera organizzazione)") o per avere tutti i criteri di messaggistica in il tenant usa le stesse impostazioni per i conferme. La caratteristica delle conferme di lettura è più efficace quando la funzionalità è abilitata per **tutti**.
+  Per le applicazioni sanitarie, scegliere **utente controllato** o attivato **per tutti**. Tenere presente che quando si usa l'impostazione **per tutti gli utenti** , l'unico modo per impostare le conferme per l'intero tenant è quello di avere solo un criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "globale (impostazione predefinita)") o per avere tutti i criteri di messaggistica nel tenant usano le stesse impostazioni per le conferme. La caratteristica delle conferme di lettura è più efficace quando la funzionalità è abilitata per **tutti**.
 
     *Esempio di utilizzo senza conferme di lettura:* Jakob Roth, un paziente ad alto rischio, è ammesso in ospedale.Sofia Krause è un'infermiera che lavora come parte del team interdisciplinare (IDT) di operatori sanitari, inclusi diversi specialisti, viene assegnato come coordinatore di assistenza primaria responsabile di questo paziente.  Sofia invia posta elettronica e altri messaggi istantanei a gruppi di infermieri e medici che usano diversi client e app di messaggistica e spesso non riceve alcuna risposta o indica se un messaggio è stato letto dai membri del team. A causa di processi di comunicazione aggrovigliati, il farmaco di Jakob viene applicato in stato di malessere e il suo soggiorno in ospedale viene esteso.
 
@@ -63,4 +65,4 @@ Le impostazioni seguenti sono di particolare interesse per le applicazioni sanit
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Gestire i criteri di messaggistica in teams](../../messaging-policies-in-teams.md)
-- [Iniziare a usare team per organizzazioni sanitarie](teams-in-hc.md)
+- [Guida introduttiva a Teams per le organizzazioni del settore sanitario](teams-in-hc.md)

@@ -9,18 +9,20 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Ottenere indicazioni su come pianificare la procedura per spostare i team di StaffHub in turni in Microsoft teams.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 78b31bb0c17db9ef379b54c02433569ba4d46aff
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: b5a6079924803f7dbdde0c49bb5bd5d1f1aa2c4b
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37639582"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825705"
 ---
 # <a name="plan-to-move-your-staffhub-teams-to-shifts-in-microsoft-teams"></a>Pianificare la spostamento dei team di StaffHub in turni in Microsoft Teams
 
@@ -33,15 +35,15 @@ Usare la sequenza temporale come indicazioni per pianificare il passaggio da Sta
 
 ## <a name="prepare-to-move-your-staffhub-teams-to-teams"></a>Preparare per trasferire i team di StaffHub in teams
 
-|Passaggio |Indicazioni  |Risorsa |
+|Passaggio |Linee guida  |Risorsa |
 |---------|---------|---------|
 |1    |Preparare e identificare gli stakeholder         |         |
-|2     |Esaminare la documentazione relativa alla transizione da StaffHub a teams e teams onboarding         |[StaffHub da ritirarsi](microsoft-staffhub-to-be-retired.md)<br><br>[Spostare i team di StaffHub in turni in teams](move-staffhub-teams-to-shifts-in-teams.md)<br><br>[Iniziare a usare Teams](../../get-started-with-teams-quick-start.md)         |
+|2     |Esaminare la documentazione relativa alla transizione da StaffHub a teams e teams onboarding         |[StaffHub da ritirarsi](microsoft-staffhub-to-be-retired.md)<br><br>[Spostare i team di StaffHub in turni in teams](move-staffhub-teams-to-shifts-in-teams.md)<br><br>[Inizia a usare Teams](../../get-started-with-teams-quick-start.md)         |
 |3    |Abilitare i gruppi di Office 365 per l'organizzazione        |[Gruppi e team di Office 365](../../Office-365-groups.md)      |
 |4    |Verificare che i prerequisiti siano soddisfatti         |[Verificare che i prerequisiti vengano soddisfatti](move-staffhub-teams-to-shifts-in-teams.md#check-that-prerequisites-are-met)       |
-|5   |Assegnare licenze teams agli utenti di StaffHub nell'organizzazione|[Assegnare licenze Teams](move-staffhub-teams-to-shifts-in-teams.md#assign-teams-licenses)<br><br>[Gestire l'accesso degli utenti ai team](../../user-access.md)      |
+|5   |Assegnare licenze teams agli utenti di StaffHub nell'organizzazione|[Assegnare licenze di Teams](move-staffhub-teams-to-shifts-in-teams.md#assign-teams-licenses)<br><br>[Gestire l'accesso degli utenti a Teams](../../user-access.md)      |
 |6    |Installare il modulo di PowerShell StaffHub        |[Installare il modulo di PowerShell StaffHub](install-the-staffhub-powershell-module.md)        |
-|7     |Determinare la sequenza temporale e identificare gli utenti di StaffHub per il passaggio a teams       |[Eseguire un report per mostrare l'utilizzo di Active StaffHub](run-report-to-show-staffhub-usage.md) |
+|7     |Determinare la sequenza temporale e identificare gli utenti di StaffHub per il passaggio a teams       |[Eseguire un report per mostrare l'utilizzo di StaffHub attivo](run-report-to-show-staffhub-usage.md) |
 |8     |Identificare gli utenti di StaffHub che non hanno un account di Azure AD (come "inattivo" in StaffHub) e collegarne un account     |[Collegare un account di Azure AD per i membri del team di StaffHub che non ne hanno uno](move-staffhub-teams-to-shifts-in-teams.md#link-an-azure-ad-account-for-staffhub-team-members-who-dont-have-one)        |
 |9    |Creare contenuto di formazione per gli utenti personalizzati per l'organizzazione         |[Preparare un piano di preparazione degli utenti per i team](../../upgrade-user-readiness.md)     |
 |10    |Comunicare agli utenti di StaffHub la transizione ai turni in teams         |[StaffHub alla comunicazione tramite posta elettronica di esempio in teams agli utenti](staffhub-to-teams-email-template.md)         |
@@ -52,7 +54,7 @@ Usare la sequenza temporale come indicazioni per pianificare il passaggio da Sta
 
 ## <a name="move-your-organizations-staffhub-teams-to-teams"></a>Trasferire i team di StaffHub dell'organizzazione in teams
 
-|Passaggio |Indicazioni |Risorsa  |
+|Passaggio |Linee guida |Risorsa  |
 |---------|---------|---------|
 |1  |Identificare un team pilota e cambiare un team          |[Trasferire un team di StaffHub](move-staffhub-teams-to-shifts-in-teams.md#move-a-staffhub-team)          |
 |2    |Convalidare il team pilota e individuare eventuali problemi di trasferimento. Aggiornare la documentazione di formazione in base alle esigenze.         |         |

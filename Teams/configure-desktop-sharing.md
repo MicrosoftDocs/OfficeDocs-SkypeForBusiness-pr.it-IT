@@ -9,17 +9,19 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 description: Configurare un criterio di riunione per consentire agli utenti di condividere i loro desktop in chat o riunioni di Teams
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bb3340da960728b1a261efc510573702c5a17076
-ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
+ms.openlocfilehash: 366aaeb4f48670ae04d4b53d21196ef2d9e81fb4
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628712"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825544"
 ---
 <a name="configure-desktop-sharing-in-microsoft-teams"></a>Configurare la condivisione desktop in Microsoft Teams
 ============================================

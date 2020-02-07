@@ -7,18 +7,20 @@ author: lanachin
 ms.author: v-lanac
 manager: serdars
 audience: admin
+f1.keywords:
+- NOCSH
 ms.service: msteams
 ms.collection:
 - M365-collaboration
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0efee84379feef72831e2a443a75d6df0f5dc87b
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: fdca563e731c751797f972730270f62ce490eaf0
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37570381"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827794"
 ---
 # <a name="expand-microsoft-teams-across-your-organization"></a>Espandere Microsoft teams nell'organizzazione
 
@@ -54,7 +56,7 @@ Queste risorse si basano sulle linee guida per la distribuzione di team standard
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Team per l'assistenza sanitaria</h3>
+                        <h3>Teams per il settore sanitario</h3>
                     </div>
                 </div>
             </div>
@@ -90,7 +92,7 @@ Queste risorse si basano sulle linee guida per la distribuzione di team standard
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Teams for Retail</h3>
+                        <h3>Teams per la vendita al dettaglio</h3>
                     </div>
                 </div>
             </div>

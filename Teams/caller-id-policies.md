@@ -10,18 +10,20 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-voice
-f1.keywords: ms.teamsadmincenter.voice.callinglineid.overview
+f1.keywords:
+- CSH
+ms.custom: ms.teamsadmincenter.voice.callinglineid.overview
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri di ID chiamante in Microsoft teams per modificare o bloccare l'ID chiamante degli utenti di teams nell'organizzazione.
-ms.openlocfilehash: f5a1d52f10bb60ced33b05339f81ecd0a6a363f5
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: ff2f9a02bdf91eb6296dce03e426be673f83495a
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695591"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41824544"
 ---
 # <a name="manage-caller-id-policies-in-microsoft-teams"></a>Gestire i criteri di ID chiamante in Microsoft Teams
 

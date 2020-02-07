@@ -11,15 +11,17 @@ audience: admin
 ms.collection:
 - M365-collaboration
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 description: Risolvere i problemi di connettività con il client Microsoft teams, causato principalmente dal firewall o dalla connessione proxy, e come risolverlo.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7779e46fc0a1c8a282c5cde38ecac6389824a268
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: a12be097d0609f3631b6761f31350603b283faa2
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517056"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825354"
 ---
 <a name="troubleshoot-connectivity-issues-with-the-microsoft-teams-client"></a>Risolvere i problemi di connettività con il client Microsoft Teams
 ==============================================================
@@ -32,7 +34,7 @@ La maggior parte dei problemi individuati con il client Microsoft teams può ess
 
 -   Collaborazione
 
--   Media
+-   Contenuti multimediali
 
 -   Servizi condivisi
 

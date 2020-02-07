@@ -8,6 +8,8 @@ ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
+f1.keywords:
+- NOCSH
 ms.collection:
 - M365-voice
 appliesto:
@@ -15,18 +17,18 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: ''
-ms.openlocfilehash: 9794a1690fb0cbbe529816c9d8a5f855d393c6f2
-ms.sourcegitcommit: 100ba1409bf0af58e4430877c1d29622d793d23f
+ms.openlocfilehash: 53c17cdd3a1b6726e0219147e4dadd1cba7b25ff
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37925659"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41827934"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire i numeri di telefono in Microsoft Teams
 
 Usare la conversione guidata nell'interfaccia di amministrazione di Microsoft teams per trasferire i numeri di telefono dal provider di servizi corrente in teams. Dopo aver convertito i numeri di telefono in teams, Microsoft diventerà il proprio provider di servizi e gli verrà addebitato il numero di telefono.
 
-Prima di iniziare, ti consigliamo di rivedere le informazioni in [un ordine di trasferimento?](port-order-overview.md). Se si dispone di numeri di servizio per i Bridge di conferenza telefonica con accesso esterno, gli operatori automatici o altri numeri di servizio, i numeri verdi 999 o i numeri di telefono degli utenti (abbonati) che è necessario trasferire in teams, vedere [gestire i numeri di telefono per l' organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per scaricare i moduli corretti e inviarli a noi.
+Prima di iniziare, ti consigliamo di rivedere le informazioni in [un ordine di trasferimento?](port-order-overview.md). Se si hanno numeri di servizio per i Bridge di conferenza telefonica con accesso esterno, gli operatori automatici o altri numeri di servizio, i numeri verdi 999 o i numeri di telefono degli utenti (abbonati) che è necessario trasferire in teams, vedere [gestire i numeri di telefono dell'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per scaricare i moduli corretti e inviarli a noi.
 
   > [!NOTE]
   > Elaboriamo gli ordini di trasferimento per trasferire i numeri di telefono solo nei giorni lavorativi degli Stati Uniti e non in festività pubbliche o nei fine settimana.
@@ -89,7 +91,7 @@ Per visualizzare lo stato dell'ordine di trasferimento, nella barra di spostamen
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Cos'è un ordine di trasferimento?](port-order-overview.md)
+- [Cos'è un ordine di portabilità?](port-order-overview.md)
 - [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 - [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 - [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)

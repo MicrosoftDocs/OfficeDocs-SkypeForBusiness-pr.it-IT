@@ -10,18 +10,20 @@ ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
 description: Offrire e gestire una distribuzione di alta qualità pianificando i ruoli operativi e assegnando un campione di qualità.
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.collection:
 - M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bab0026b14514114f9c6e975046ee561dade6f40
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: c44d1b35c19abb224f40bf71c81c61b91967c182
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516760"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825154"
 ---
 # <a name="plan-my-service-management"></a>Pianificare la gestione dei servizi
 
@@ -36,7 +38,7 @@ La nozione di gestione dei servizi non è probabilmente un nuovo concetto per la
 La gestione dei servizi comprende tutte le attività e i processi coinvolti nella gestione di Microsoft teams end to end. Alcuni componenti della gestione dei servizi, ovvero i componenti dell'infrastruttura che il servizio Office 365 stesso comporta, sono responsabili di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti dei team, della rete e endpoint da essi forniti.
 Per una descrizione completa della responsabilità del cliente per la gestione del servizio Team e per quanto riguarda i componenti chiave che sostengono la qualità dell'esperienza utente, vedere Pianificare la [gestione e la qualità del servizio](https://docs.microsoft.com/MicrosoftTeams/envision-planning-for-service-management-and-quality-complete-guide).
 
-![Diagramma dei tre componenti del](media/plan-my-service-management-image1.png "diagramma di qualità dei tre componenti di qualità--servizio, rete e endpoint di Office 365--e come la gestione dei servizi si sovrappone a tutti e tre.")
+![Diagramma dei tre componenti di qualità](media/plan-my-service-management-image1.png "Diagramma dei tre componenti di qualità--servizio, rete e endpoint di Office 365--e in che modo la gestione dei servizi si sovrappone a tutte e tre le.")
 
 <!--ENDOFSECTION-->
 
@@ -91,7 +93,7 @@ Le attività e le attività associate al ruolo sono documentate nella Guida alle
 
 La guida alla revisione dell'esperienza di qualità include una serie di attività che valutano e includono indicazioni per il risanamento in aree chiave che hanno il massimo impatto per migliorare l'esperienza utente, come illustrato nella figura seguente.
 
-![Illustrazione delle aree chiave da esaminare durante l'esperienza di qualità]esaminare(media/plan-my-service-management-image2.png "le aree principali da esaminare durante una revisione dell'esperienza di qualità: audio, affidabilità e risultati del sondaggio degli utenti.")
+![Illustrazione delle aree chiave da esaminare durante la revisione dell'esperienza di qualità](media/plan-my-service-management-image2.png "Le aree principali da esaminare durante una revisione dell'esperienza di qualità: audio, affidabilità e risultati del sondaggio degli utenti.")
 
 Valutando e rimediando continuamente le aree descritte in questo documento, è possibile ridurre le proprie potenzialità per influire negativamente sull'esperienza utente. La maggior parte dei problemi di esperienza utente incontrati in una distribuzione può essere raggruppata nelle categorie seguenti:
 

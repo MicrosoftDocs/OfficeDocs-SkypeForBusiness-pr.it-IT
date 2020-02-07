@@ -1,5 +1,5 @@
 ---
-title: GOV, EDU e organizzazioni senza scopo di lucro
+title: Organizzazioni GOV, EDU e no-profit
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -12,19 +12,21 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle licenze per i componenti aggiuntivi e le funzionalità per i piani di organizzazione GOV, EDU e no-profit. '
-ms.openlocfilehash: d63145cf6a8c761b4454fff212bd0e593ac8f395
-ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+ms.openlocfilehash: 9d33cbb7367a1608b0ff7c9fdd05447a98edba8b
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "37571214"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41826684"
 ---
-# <a name="gov-edu-and-non-profit-organizations"></a>GOV, EDU e organizzazioni senza scopo di lucro
+# <a name="gov-edu-and-non-profit-organizations"></a>Organizzazioni GOV, EDU e no-profit
 
 La maggior parte delle caratteristiche dei team è disponibile per le organizzazioni governative degli Stati Uniti, istruzione e organizzazione no profit. Per informazioni dettagliate, vedere la tabella seguente.
 

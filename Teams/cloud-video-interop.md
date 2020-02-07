@@ -8,6 +8,8 @@ ms.service: msteams
 audience: admin
 search.appverid: MET150
 ms.reviewer: srividhc
+f1.keywords:
+- NOCSH
 description: L'interoperabilità cloud video consente ai dispositivi della sala riunioni di terze parti di partecipare a riunioni Microsoft teams.
 localization_priority: Normal
 ms.collection:
@@ -15,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c44f945304bd6e21e0c572ad17afe165fe6eedcd
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: e3a8d3d41d974e78a708fdf91ee6aac13beb6b7b
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37516684"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825064"
 ---
 # <a name="cloud-video-interop-for-microsoft-teams"></a>Interoperabilità cloud video per Microsoft Teams
 
@@ -92,10 +94,10 @@ Dopo l'abilitazione di un utente per l'interoperabilità del cloud video, qualsi
 A seconda della soluzione partner, esistono diversi modi per partecipare a una riunione abilitata per l'interoperabilità cloud video. Gli scenari di partecipazione esatta alle riunioni verranno forniti dal partner di interoperabilità cloud video. Di seguito sono elencati alcuni esempi:
 
 - IVR (risposta vocale interattiva) 
-  - Puoi effettuare la chiamata al IVR del partner usando il tenantkey @ Domain.
+  - Puoi effettuare l'accesso al IVR del partner usando la tenantkey@domain.
   - Quando ci si trova nell'IVR del partner, verrà richiesto di immettere il VTC conferenceId, che verrà quindi collegato alla riunione teams.
 - Chiamata diretta 
-  - Puoi effettuare direttamente la chiamata alla riunione teams senza interagire con il IVR del partner usando la caratteristica Direct Dial, usando la stringa completa di tenantkey. VTC ConferenceId @ Domain.
+  - Puoi effettuare direttamente la chiamata alla riunione teams senza interagire con il IVR del partner usando la caratteristica Direct Dial, usando la stringa completa di tenantkey. ConferenceId@domain VTC.
 - Dial-One-Touch 
   - Se si dispone di una sala teams integrata, è possibile usare le funzionalità di dial-up con un solo tocco offerte dal partner (senza dover digitare una stringa di chiamata).
 

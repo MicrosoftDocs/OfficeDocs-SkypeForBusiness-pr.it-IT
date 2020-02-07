@@ -11,15 +11,17 @@ ms.collection:
 ms.reviewer: roykuntz
 localization_priority: Normal
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 description: Configurare chiamate di emergenza dinamiche
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a282d8c5cd923f6881a04da7f2569a5dca11421b
-ms.sourcegitcommit: 013190ad10cdc02ce02e583961f433d024d5d370
+ms.openlocfilehash: 0cd5f3320896c823eb81a9147a1b1b1adb36dbac
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41634809"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825514"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -70,7 +72,7 @@ I client seguenti sono attualmente supportati.  Controlla spesso per vedere gli 
 
 - Client desktop teams per Windows
 - Client desktop teams per Mac
-- Team client per dispositivi mobili per client IOS versione 1.0.92.2019121004 e App Store versione 1.0.92 e versioni successive
+- Client di teams mobile per client IOS versione 1.0.92.2019121004 e App Store versione 1.0.92 e versioni successive
 - Client di teams per dispositivi mobili per client Android e versione Store 1416/1.0.0.2019121201 e versioni successive
 - Telefono teams versione 1449/1.0.94.2019110802 e versioni successive
 

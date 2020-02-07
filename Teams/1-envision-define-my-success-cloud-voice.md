@@ -13,23 +13,25 @@ description: Misurare i risultati dei servizi di audioconferenza, del sistema te
 ms.collection:
 - M365-voice
 - M365-collaboration
+f1.keywords:
+- NOCSH
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 918869697b5cd63580a654b9d0051fdac35c44f4
-ms.sourcegitcommit: 5695ce88d4a6a8fb9594df8dd1c207e45be067be
+ms.openlocfilehash: 3c3669e904db7dbea805daa5737b0bfb81e931d7
+ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37517076"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41825424"
 ---
-# <a name="define-my-success"></a>Definire il successo
+# <a name="define-my-success"></a>Definizione del successo
 
 Questo articolo offre una panoramica dei requisiti per la definizione del successo per la distribuzione di servizi di audioconferenza, sistema telefonico con piani di chiamata o routing diretto del sistema telefonico per l'organizzazione. Definendo correttamente l'aspetto del successo, è possibile misurare i risultati man mano che si procede alla distribuzione e verificare che gli esiti raggiunti siano quelli desiderati.
 
 <!--ENDOFSECTION-->
 
-I servizi di **audioconferenza** includono le organizzazioni con punti di ingresso aggiuntivi per le riunioni (ad hoc o pianificate) consentendo ai partecipanti alla riunione di partecipare tramite PSTN (Public Switched Telephone Network) tramite la chiamata tramite telefono fisso tradizionale, privato PBX (Branch Exchange) o telefoni cellulari. Ciò è utile quando l'organizzatore o i partecipanti non si trovano davanti a un computer o quando le connessioni dati non sono disponibili o troppo inaffidabili per supportare le comunicazioni vocali, ad esempio in un'area remota con una copertura dati mobile spotty o connessa a una rete Wi-Fi pubblica gratuita. servizio con larghezza di banda limitata o quando i partecipanti alla riunione preferiscono connettersi alla riunione usando un endpoint di telefonia facilmente accessibile.
+I servizi di **audioconferenza** includono le organizzazioni con punti di ingresso aggiuntivi per le riunioni (ad hoc o pianificate) consentendo ai partecipanti alla riunione di partecipare tramite PSTN (Public Switched Telephone Network) tramite la chiamata tramite telefono fisso tradizionale, PBX (Private Branch Exchange) o telefoni cellulari. Ciò è utile quando l'organizzatore o i partecipanti non si trovano davanti a un computer o quando le connessioni dati non sono disponibili o troppo inaffidabili per supportare le comunicazioni vocali, ad esempio in un'area remota con una copertura dati mobile spotty o connessa a una rete Wi-Fi pubblica gratuita. servizio con larghezza di banda limitata o quando i partecipanti alla riunione preferiscono connettersi alla riunione usando un endpoint di telefonia facilmente accessibile.
 
 Il **sistema telefonico con piani di chiamata ("piani di chiamata")** offre alle organizzazioni un modo per modernizzare il proprio ambiente di lavoro, consentendo agli utenti di effettuare chiamate telefoniche aziendali da computer e dispositivi mobili. L'ammodernamento del luogo di lavoro può essere incluso in un numero qualsiasi di scenari, ovvero un'implementazione di lavoro basata su attività, uno dei principali movimenti di Office, un aggiornamento di Office fit-out, un ritiro di una soluzione PBX legacy, la conclusione di un contratto di provider di servizi PSTN e così via. Con i piani per le chiamate, Microsoft semplifica la connettività alla rete PSTN.
 
@@ -202,7 +204,7 @@ Quando si definisce KSIs, è consigliabile usare i criteri "specifici, misurabil
 > |Uso/adozione|La qualità delle chiamate è uguale o migliore della soluzione precedente|Sondaggio|80% degli utenti concordano o sono fortemente concordi|Dopo l'abilitazione e il trimestrale|Team Information Technology|
 > |Uso/adozione|Microsoft Teams ha semplificato il processo di comunicazione|Sondaggio|80% degli utenti concordano o sono fortemente concordi|Dopo l'abilitazione e il trimestrale|Team di gestione delle modifiche|
 > |Uso/adozione|Gli utenti usano attivamente la soluzione|Report di Office 365, dashboard qualità chiamata|80% degli utenti sono utenti quotidiani attivi|Quotidiana|Team di gestione delle modifiche|
-> |Uso/qualità|La percentuale di chiamate/conferenze non consentite dovrebbe essere minima|Dashboard qualità chiamata|< 5% delle chiamate scadenti per mese|Quotidiana|Team Information Technology|
+> |Uso/qualità|La percentuale di chiamate/conferenze non consentite dovrebbe essere minima|Dashboard qualità delle chiamate|< 5% delle chiamate scadenti per mese|Quotidiana|Team Information Technology|
 > |Uso/supporto|So come ottenere supporto tecnico|Sondaggio|90% degli utenti concordano o sono fortemente concordi|Dopo l'abilitazione e il trimestrale|Team di gestione delle modifiche|
 > |Uso/supporto|Sono soddisfatto della qualità del supporto tecnico|Sondaggio|80% degli utenti concordano o sono fortemente concordi|Dopo ogni incidente|Team Information Technology|
 > |Finanziario|Riduzione dei minuti per i servizi di conferenza legacy|Sistema finanziario|Soddisfare il ROI definito|Basato su ROI|Team di gestione delle modifiche|
