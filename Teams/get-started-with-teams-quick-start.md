@@ -1,0 +1,61 @@
+---
+title: Introduzione a Microsoft Teams
+author: LolaJacobsen
+ms.author: lolaj
+manager: serdars
+ms.date: 01/28/2019
+ms.topic: article
+audience: admin
+ms.service: msteams
+ms.reviewer: lolaj
+description: Iniziare a usare Microsoft Teams distribuendo i primi team e i canali, in modo da ottimizzare l'esperienza con Teams prima di distribuirlo in tutta l'organizzazione.
+localization_priority: Priority
+search.appverid: MET150
+f1.keywords:
+- NOCSH
+ms.collection:
+- M365-collaboration
+appliesto:
+- Microsoft Teams
+ms.openlocfilehash: e07ec04ba567963662d7f83bdba3fe9f788abd9e
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862836"
+---
+# <a name="get-started-with-microsoft-teams"></a><span data-ttu-id="878d6-103">Introduzione a Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="878d6-103">Get started with Microsoft Teams</span></span>
+
+<span data-ttu-id="878d6-104">Per iniziare rapidamente a usare Teams, è consigliabile creare due o tre team e canali per un gruppo selezionato di early adopter.</span><span class="sxs-lookup"><span data-stu-id="878d6-104">To get started quickly on Teams, we recommend you create two or three teams and channels for a select group of early adopters.</span></span> <span data-ttu-id="878d6-105">Implementando inizialmente Teams su scala ridotta, si imparerà a usarlo e si acquisiranno informazioni preziose per la successiva distribuzione a livello di organizzazione.</span><span class="sxs-lookup"><span data-stu-id="878d6-105">By first rolling out Teams on a small scale, you'll learn Teams by using Teams and gain valuable insights to inform how you deploy Teams across your whole organization.</span></span> <span data-ttu-id="878d6-106">Per le piccole aziende, questa Guida introduttiva è tutto ciò che serve per distribuire Teams nell'intera organizzazione.</span><span class="sxs-lookup"><span data-stu-id="878d6-106">If you're a small business, this Quick start guide is all you need to roll out Teams to your whole organization.</span></span>
+
+
+<span data-ttu-id="878d6-107">Teams consente di formare rapidamente un team con persone interne ed esterne all'organizzazione, chattare con altri utenti per condurre conversazioni veloci e inclusive, condividere in modo sicuro e creare documenti in modalità condivisa ed eseguire iterazioni sui progetti.</span><span class="sxs-lookup"><span data-stu-id="878d6-107">Teams lets you quickly pull together a team with people inside and outside your organization, chat with others to drive fast and inclusive conversations, securely share and coauthor documents, and iterate on projects.</span></span> <span data-ttu-id="878d6-108">È possibile personalizzare Teams aggiungendo l'accesso rapido a note condivise, pagine Web e app.</span><span class="sxs-lookup"><span data-stu-id="878d6-108">Customize Teams by adding fingertip access to shared notes, webpages, and apps.</span></span> <span data-ttu-id="878d6-109">Usare riunioni e chiamate per collaborare in tempo reale ovunque ci si trovi.</span><span class="sxs-lookup"><span data-stu-id="878d6-109">Use meetings and calling to collaborate in real time from wherever users are.</span></span> <span data-ttu-id="878d6-110">Teams semplificherà l'accesso ai servizi di Office 365 e alle app di terze parti, diventando il nuovo centro di gravità per le esigenze di collaborazione e di comunicazione.</span><span class="sxs-lookup"><span data-stu-id="878d6-110">Teams will simplify your access to Office 365 services and  third-party apps to be the new center of gravity for your collaboration and communication needs.</span></span> <span data-ttu-id="878d6-111">Incoraggiare gli early adopter a installare sia l'applicazione desktop che quella per dispositivi mobili per un'esperienza ottimale e un feedback più accurato.</span><span class="sxs-lookup"><span data-stu-id="878d6-111">Encourage your early adopters to install both the desktop and mobile applications for the best experience and most accurate feedback.</span></span>
+
+<span data-ttu-id="878d6-112">![Screenshot che mostra le interfacce utente dei client desktop e per dispositivi mobili](media/get-started-microsoft-teams.png "Screenshot che mostra le interfacce utente dei client desktop e per dispositivi mobili di Teams" )</span><span class="sxs-lookup"><span data-stu-id="878d6-112">![Screen shot showing the desktop and mobile client user interfaces](media/get-started-microsoft-teams.png "Screen shot showing the Teams desktop client and mobile client user interface" )</span></span> 
+
+<span data-ttu-id="878d6-113">Ecco come implementare il primo set di team e canali in modo che gli early adopter possano iniziare a chattare, condividere file e collaborare.</span><span class="sxs-lookup"><span data-stu-id="878d6-113">Here's how to roll out your first set of teams and channels so your early adopters can start chatting, sharing files, and collaborating.</span></span>
+
+- <span data-ttu-id="878d6-114">Passaggio 1: [Creare i primi team e canali](get-started-with-teams-create-your-first-teams-and-channels.md)</span><span class="sxs-lookup"><span data-stu-id="878d6-114">Step 1: [Create your first teams and channels](get-started-with-teams-create-your-first-teams-and-channels.md)</span></span>
+- <span data-ttu-id="878d6-115">Passaggio 2: [Eseguire l'onboarding degli early adopter](get-started-with-teams-onboard-early-adopters.md)</span><span class="sxs-lookup"><span data-stu-id="878d6-115">Step 2: [Onboard early adopters](get-started-with-teams-onboard-early-adopters.md)</span></span>
+- <span data-ttu-id="878d6-116">Passaggio 3: [Monitorare l'utilizzo e i feedback](get-started-with-teams-monitor-usage-and-feedback.md)</span><span class="sxs-lookup"><span data-stu-id="878d6-116">Step 3: [Monitor usage and feedback](get-started-with-teams-monitor-usage-and-feedback.md)</span></span>
+- <span data-ttu-id="878d6-117">Passaggio 4: [Raccogliere le risorse per pianificare l'implementazione a livello di organizzazione](get-started-with-teams-resources-for-org-wide-rollout.md)</span><span class="sxs-lookup"><span data-stu-id="878d6-117">Step 4: [Get resources to plan your organization-wide rollout](get-started-with-teams-resources-for-org-wide-rollout.md)</span></span>
+
+<span data-ttu-id="878d6-118">Se si ha un'organizzazione di grandi dimensioni, si ha una configurazione locale o ibrida di Skype for Business, si hanno rigidi requisiti normativi o di conformità oppure se si vogliono implementare riunioni o funzionalità vocali, ad esempio piani di chiamata o sistemi di telefonia, iniziare leggendo [Come implementare Teams](how-to-roll-out-teams.md).</span><span class="sxs-lookup"><span data-stu-id="878d6-118">If you're a large organization, have a hybrid or on-premises Skype for Business configuration, have strict regulatory or compliance requirements, or if you want to roll out meetings or voice features (such as calling plans or phone system), start by reading [How to roll out Teams](how-to-roll-out-teams.md).</span></span> <span data-ttu-id="878d6-119">È consigliabile partire da questa sezione **Per iniziare** per sviluppare le proprie competenze e iniziare a pianificare la distribuzione a livello di organizzazione.</span><span class="sxs-lookup"><span data-stu-id="878d6-119">We recommend you still begin with this **Get started** section to build your skills and start planning your org-wide deployment.</span></span> <span data-ttu-id="878d6-120">"Pianificare Teams con Teams".</span><span class="sxs-lookup"><span data-stu-id="878d6-120">"Plan Teams with Teams."</span></span> <span data-ttu-id="878d6-121">Iniziare su scala limitata, implementando Teams con chat, team, canali e app e costruire su questa base.</span><span class="sxs-lookup"><span data-stu-id="878d6-121">Start small by rolling out Teams with chat, teams, channels, & apps and build from there.</span></span> <span data-ttu-id="878d6-122">Queste esperienze iniziali aiuteranno a promuovere l'adozione di Teams, generando entusiasmo nell'organizzazione per la successiva fase di lancio.</span><span class="sxs-lookup"><span data-stu-id="878d6-122">These initial experiences will help you spread the word about Teams, generating excitement throughout the organization for your next launch phase.</span></span> 
+
+<span data-ttu-id="878d6-123">Per le piccole imprese, questa Guida introduttiva potrebbe contenere tutte le informazioni necessarie per la distribuzione completa di Teams a livello di organizzazione.</span><span class="sxs-lookup"><span data-stu-id="878d6-123">If you're a small business, you may be able to use this Get started guidance to fully roll out Teams in your organization.</span></span> <span data-ttu-id="878d6-124">Nelle aziende di piccole dimensioni, infatti, potrebbe non essere necessario eseguire una distribuzione in fasi di Teams.</span><span class="sxs-lookup"><span data-stu-id="878d6-124">Small businesses might not need to do a phased Teams deployment.</span></span> <span data-ttu-id="878d6-125">Assicurarsi di esaminare i modelli disponibili specificamente per le piccole imprese, per semplificare la distribuzione nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="878d6-125">Be sure to check out the templates that are available specifically for small business to make deployment in your organization easier and more streamlined.</span></span> <span data-ttu-id="878d6-126">Vedere [Introduzione ai modelli di Teams per piccole e medie imprese](https://docs.microsoft.com/microsoftteams/smb-templates).</span><span class="sxs-lookup"><span data-stu-id="878d6-126">See [Get started with Teams templates for Small and Medium Businesses](https://docs.microsoft.com/microsoftteams/smb-templates).</span></span>
+
+## <a name="before-you-get-started"></a><span data-ttu-id="878d6-127">Nozioni preliminari</span><span class="sxs-lookup"><span data-stu-id="878d6-127">Before you get started</span></span>
+
+<span data-ttu-id="878d6-128">Prima di iniziare, è consigliabile pianificare l'implementazione di Teams leggendo gli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="878d6-128">Before you get started, you'll want to plan for your Teams rollout by reviewing the following:</span></span>
+
+- [<span data-ttu-id="878d6-129">Preparare la rete dell'organizzazione per Teams</span><span class="sxs-lookup"><span data-stu-id="878d6-129">Prepare your organization's network for Teams</span></span>](prepare-network.md)
+- [<span data-ttu-id="878d6-130">Vantaggi offerti dall'installazione dei client desktop, Web e per dispositivi mobili</span><span class="sxs-lookup"><span data-stu-id="878d6-130">Learn about the benefits of installing the desktop, web, and mobile clients</span></span>](get-clients.md)
+
+<span data-ttu-id="878d6-131">È anche necessario verificare di avere licenze di Teams per tutti.</span><span class="sxs-lookup"><span data-stu-id="878d6-131">You'll also need to make sure you've got Teams licenses for everybody.</span></span> <span data-ttu-id="878d6-132">Vedere [Confronta i piani di Teams](https://products.office.com/microsoft-teams/free) e [Licenze di Office 365 per Teams](office-365-licensing.md).</span><span class="sxs-lookup"><span data-stu-id="878d6-132">Check out [Compare Teams plans](https://products.office.com/microsoft-teams/free) and [Office 365 licensing for Teams](office-365-licensing.md).</span></span> 
+
+
+
+## <a name="next-steps"></a><span data-ttu-id="878d6-133">Passaggi successivi</span><span class="sxs-lookup"><span data-stu-id="878d6-133">Next steps</span></span>
+<span data-ttu-id="878d6-134">Passare a [Creare i primi team e canali](get-started-with-teams-create-your-first-teams-and-channels.md).</span><span class="sxs-lookup"><span data-stu-id="878d6-134">Go to [Create your first teams and channels](get-started-with-teams-create-your-first-teams-and-channels.md).</span></span>
+
+<span data-ttu-id="878d6-135">Per altre informazioni, vedere la [Guida all'adozione di Teams interattiva](https://aka.ms/teamstoolkit).</span><span class="sxs-lookup"><span data-stu-id="878d6-135">Learn more with our interactive [Teams Adoption Guide](https://aka.ms/teamstoolkit).</span></span>

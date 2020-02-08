@@ -21,46 +21,42 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Questo articolo fornisce informazioni sull'uso di un server proxy con team o Skype for business.
-ms.openlocfilehash: 7eeb319c9c352f4f04abef581b88c1eddf46951d
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: ca81c32064406af0e5bc3d614566a96ec5646a91
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837306"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863187"
 ---
-# <a name="proxy-servers-for-teams-or-skype-for-business-online"></a><span data-ttu-id="d15c5-103">Server proxy per Teams o Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="d15c5-103">Proxy servers for Teams or Skype for Business Online</span></span>
+# <a name="proxy-servers-for-teams-or-skype-for-business-online"></a><span data-ttu-id="8a21c-103">Server proxy per Teams o Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="8a21c-103">Proxy servers for Teams or Skype for Business Online</span></span>
 
-<span data-ttu-id="d15c5-104">Questo articolo fornisce indicazioni sull'uso di un server proxy con team o Skype for business.</span><span class="sxs-lookup"><span data-stu-id="d15c5-104">This article provides guidance about using a proxy server with Teams or Skype for Business.</span></span>
+<span data-ttu-id="8a21c-104">Questo articolo fornisce indicazioni sull'uso di un server proxy con team o Skype for business.</span><span class="sxs-lookup"><span data-stu-id="8a21c-104">This article provides guidance about using a proxy server with Teams or Skype for Business.</span></span>
   
-## <a name="not-using-a-proxy-server-is-recommended"></a><span data-ttu-id="d15c5-105">Consigliamo di non usare un server proxy</span><span class="sxs-lookup"><span data-stu-id="d15c5-105">Not using a proxy server is recommended</span></span>
+## <a name="not-using-a-proxy-server-is-recommended"></a><span data-ttu-id="8a21c-105">Consigliamo di non usare un server proxy</span><span class="sxs-lookup"><span data-stu-id="8a21c-105">Not using a proxy server is recommended</span></span>
 
-<span data-ttu-id="d15c5-p101">Per quanto riguarda i team o il traffico di Skype for business sui proxy, Microsoft consiglia di ignorare i proxy. I proxy non rendono più sicure le squadre o Skype for business perché il traffico è già crittografato.</span><span class="sxs-lookup"><span data-stu-id="d15c5-p101">When it comes to Teams or Skype for Business traffic over proxies, Microsoft recommends bypassing proxies. Proxies don't make Teams or Skype for Business more secure because the traffic is already encrypted.</span></span>
+<span data-ttu-id="8a21c-p101">Per quanto riguarda i team o il traffico di Skype for business sui proxy, Microsoft consiglia di ignorare i proxy. I proxy non rendono più sicure le squadre o Skype for business perché il traffico è già crittografato.</span><span class="sxs-lookup"><span data-stu-id="8a21c-p101">When it comes to Teams or Skype for Business traffic over proxies, Microsoft recommends bypassing proxies. Proxies don't make Teams or Skype for Business more secure because the traffic is already encrypted.</span></span>
   
-<span data-ttu-id="d15c5-p102">E avere un proxy può causare problemi. I problemi relativi alle prestazioni possono essere introdotti nell'ambiente attraverso la latenza e la perdita di pacchetti. I problemi come questi generano un'esperienza negativa in tali team o scenari di Skype for business come audio e video, dove i flussi in tempo reale sono essenziali.</span><span class="sxs-lookup"><span data-stu-id="d15c5-p102">And having a proxy can cause issues. Performance-related problems can be introduced to the environment through latency and packet loss. Issues such as these will result in a negative experience in such Teams or Skype for Business scenarios as audio and video, where real-time streams are essential.</span></span>
+<span data-ttu-id="8a21c-p102">E avere un proxy può causare problemi. I problemi relativi alle prestazioni possono essere introdotti nell'ambiente attraverso la latenza e la perdita di pacchetti. I problemi come questi generano un'esperienza negativa in tali team o scenari di Skype for business come audio e video, dove i flussi in tempo reale sono essenziali.</span><span class="sxs-lookup"><span data-stu-id="8a21c-p102">And having a proxy can cause issues. Performance-related problems can be introduced to the environment through latency and packet loss. Issues such as these will result in a negative experience in such Teams or Skype for Business scenarios as audio and video, where real-time streams are essential.</span></span>
   
-## <a name="if-you-need-to-use-a-proxy-server"></a><span data-ttu-id="d15c5-111">Se devi usare un server proxy</span><span class="sxs-lookup"><span data-stu-id="d15c5-111">If you need to use a proxy server</span></span>
+## <a name="if-you-need-to-use-a-proxy-server"></a><span data-ttu-id="8a21c-111">Se devi usare un server proxy</span><span class="sxs-lookup"><span data-stu-id="8a21c-111">If you need to use a proxy server</span></span>
 
-<span data-ttu-id="d15c5-p103">Alcune organizzazioni non hanno alcuna possibilità di ignorare un proxy per il traffico di teams o Skype for business. In questo caso, i problemi menzionati sopra devono essere tenuti in considerazione.</span><span class="sxs-lookup"><span data-stu-id="d15c5-p103">Some organizations have no option to bypass a proxy for Teams or Skype for Business traffic. If that's the case for you, the problems mentioned above need to be kept in mind.</span></span>
+<span data-ttu-id="8a21c-p103">Alcune organizzazioni non hanno alcuna possibilità di ignorare un proxy per il traffico di teams o Skype for business. In questo caso, i problemi menzionati sopra devono essere tenuti in considerazione.</span><span class="sxs-lookup"><span data-stu-id="8a21c-p103">Some organizations have no option to bypass a proxy for Teams or Skype for Business traffic. If that's the case for you, the problems mentioned above need to be kept in mind.</span></span>
   
-<span data-ttu-id="d15c5-114">Microsoft inoltre consiglia:</span><span class="sxs-lookup"><span data-stu-id="d15c5-114">Microsoft also strongly recommends:</span></span>
+<span data-ttu-id="8a21c-114">Microsoft inoltre consiglia:</span><span class="sxs-lookup"><span data-stu-id="8a21c-114">Microsoft also strongly recommends:</span></span>
   
-- <span data-ttu-id="d15c5-115">Utilizzare la risoluzione DNS esterna</span><span class="sxs-lookup"><span data-stu-id="d15c5-115">Using external DNS resolution</span></span>
+- <span data-ttu-id="8a21c-115">Utilizzare la risoluzione DNS esterna</span><span class="sxs-lookup"><span data-stu-id="8a21c-115">Using external DNS resolution</span></span>
     
-- <span data-ttu-id="d15c5-116">Utilizzare l'instradamento diretto basato su UDP</span><span class="sxs-lookup"><span data-stu-id="d15c5-116">Using direct UDP based routing</span></span>
+- <span data-ttu-id="8a21c-116">Utilizzare l'instradamento diretto basato su UDP</span><span class="sxs-lookup"><span data-stu-id="8a21c-116">Using direct UDP based routing</span></span>
     
-- <span data-ttu-id="d15c5-117">Consentire il traffico UDP</span><span class="sxs-lookup"><span data-stu-id="d15c5-117">Allowing UDP traffic</span></span>
+- <span data-ttu-id="8a21c-117">Consentire il traffico UDP</span><span class="sxs-lookup"><span data-stu-id="8a21c-117">Allowing UDP traffic</span></span>
     
-- <span data-ttu-id="d15c5-118">Seguire le altre raccomandazioni nelle nostre linee guida per la rete:</span><span class="sxs-lookup"><span data-stu-id="d15c5-118">Following the other recommendations in our networking guidelines:</span></span>
-    
-  - [<span data-ttu-id="d15c5-119">Qualità degli elementi multimediali e prestazioni della connessione di rete in Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="d15c5-119">Media Quality and Network Connectivity Performance in Skype for Business Online</span></span>](https://support.office.com/en-us/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
-    
-  - [<span data-ttu-id="d15c5-120">Ottimizzare la rete per Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="d15c5-120">Optimizing your network for Skype for Business Online</span></span>](https://support.office.com/en-us/article/Optimizing-your-network-for-Skype-for-Business-Online-b363bdca-b00d-4150-96c3-ec7eab5a8a43)
-    
-<span data-ttu-id="d15c5-121">Seguire queste indicazioni dovrebbe ridurre al minimo i potenziali problemi.</span><span class="sxs-lookup"><span data-stu-id="d15c5-121">Following this guidance should minimize potential problems.</span></span>
+- <span data-ttu-id="8a21c-118">Seguire le altre raccomandazioni nelle nostre linee guida per la rete: [preparare la rete dell'organizzazione per i team](prepare-network.md)</span><span class="sxs-lookup"><span data-stu-id="8a21c-118">Following the other recommendations in our networking guidelines: [Prepare your organization's network for Teams](prepare-network.md)</span></span>
   
-## <a name="related-topics"></a><span data-ttu-id="d15c5-122">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="d15c5-122">Related topics</span></span>
+    
+<span data-ttu-id="8a21c-119">Seguire queste indicazioni dovrebbe ridurre al minimo i potenziali problemi.</span><span class="sxs-lookup"><span data-stu-id="8a21c-119">Following this guidance should minimize potential problems.</span></span>
+  
+## <a name="related-topics"></a><span data-ttu-id="8a21c-120">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="8a21c-120">Related topics</span></span>
 
-[<span data-ttu-id="d15c5-123">Ottimizzare la rete per Skype for Business online</span><span class="sxs-lookup"><span data-stu-id="d15c5-123">Optimizing your network for Skype for Business Online</span></span>](https://support.office.com/en-us/article/Optimizing-your-network-for-Skype-for-Business-Online-b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[<span data-ttu-id="8a21c-121">Principi di connettività di rete di Office 365</span><span class="sxs-lookup"><span data-stu-id="8a21c-121">Office 365 Network Connectivity Principles</span></span>](https://aka.ms/pnc)
 
-  
- 
+[<span data-ttu-id="8a21c-122">Preparare la rete dell'organizzazione per Teams</span><span class="sxs-lookup"><span data-stu-id="8a21c-122">Prepare your organization's network for Teams</span></span>](prepare-network.md)
