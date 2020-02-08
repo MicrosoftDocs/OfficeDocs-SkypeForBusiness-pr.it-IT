@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per il Brasile.
-ms.openlocfilehash: 8414e87d74d1d88cf9a05dd780c24eadbab66edc
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: d07ed05218f878ebf80502099fdb4a1b0b0a3913
+ms.sourcegitcommit: eb2182617d8f72f8a7ea95f7af101d10c6f4e9a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695321"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41853791"
 ---
 # <a name="availability-in-brazil"></a>Disponibilità in Brasile
 
@@ -62,6 +62,8 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
+
+Se i piani di chiamata non sono disponibili per l'acquisto, provare a usare il [routing diretto del sistema telefonico](../direct-routing-landing-page.md). Con il routing diretto, puoi usare il sistema telefonico con virtualmente qualsiasi gestore di telefonia.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

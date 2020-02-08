@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 65a9c79dd29656b7bdc8563f0444d90133399f2b
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 86e9fd1b26bebd120136c3c33abf0a44ffa03e0d
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825174"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862816"
 ---
 # <a name="deploy-my-service"></a>Implementare il servizio
 
@@ -44,7 +44,7 @@ Completando le attività in questo PlayBook, l'organizzazione può:
 -   Ridurre le esigenze di supporto e aumentare la soddisfazione degli utenti.
 
 > [!NOTE]
-> Questo articolo e il PlayBook associato non sono progettati per descrivere ogni passaggio di configurazione tecnica necessario per l'abilitazione del servizio o per fornire un tono di chiamata a un sito specifico. Si occupano invece delle attività e delle attività consigliate per gli utenti a bordo in modo semplice e consentono di iniziare a usare i carichi di lavoro vocali di teams attraverso una transizione veloce e fluida con un tasso di adozione elevato, riducendo al minimo i requisiti di supporto. Per informazioni tecniche su come configurare al meglio l'ambiente per i team Voice, vedere gli elenchi di controllo onboarding per [configurare i carichi di lavoro vocali di teams](onboarding-checklist-configure-cloud-voice-workloads-in-Microsoft-Teams.md), [configurare il routing diretto in team](onboarding-checklist-configure-direct-routing-in-Microsoft-Teams.md), [funzionalità di base di teams](onboarding-checklist-configure-microsoft-teams-core-capabilities.md), [networking per Teams](onboarding-checklist-configure-networking.md)e l' [Abilitazione di Office 365](onboarding-checklist-enable-office-365.md).
+> Questo articolo e il PlayBook associato non sono progettati per descrivere ogni passaggio di configurazione tecnica necessario per l'abilitazione del servizio o per fornire un tono di chiamata a un sito specifico. Si occupano invece delle attività e delle attività consigliate per gli utenti a bordo in modo semplice e consentono di iniziare a usare i carichi di lavoro vocali di teams attraverso una transizione veloce e fluida con un tasso di adozione elevato, riducendo al minimo i requisiti di supporto. Per informazioni tecniche su come configurare al meglio l'ambiente per i team Voice, vedere gli elenchi di controllo onboarding per [configurare i carichi di lavoro vocali di teams](onboarding-checklist-configure-cloud-voice-workloads-in-Microsoft-Teams.md), [configurare il routing diretto in team](onboarding-checklist-configure-direct-routing-in-Microsoft-Teams.md), [funzionalità di base di teams](onboarding-checklist-configure-microsoft-teams-core-capabilities.md), [networking per Teams](prepare-network.md)e l' [Abilitazione di Office 365](onboarding-checklist-enable-office-365.md).
 
 <!--ENDOFSECTION-->
 
@@ -54,7 +54,7 @@ Lo scopo del PlayBook è quello di affrontare i fattori che influenzano la perce
 
 -   Convalida della disponibilità del servizio
     - Audioconferenza
-    - Piani di chiamata
+    - Piani per chiamate
     - Routing diretto
 
 -   Abilitazione dell'utente

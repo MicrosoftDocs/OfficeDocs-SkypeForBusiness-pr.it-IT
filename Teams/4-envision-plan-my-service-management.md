@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c44d1b35c19abb224f40bf71c81c61b91967c182
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 1268a87e5e5ae48547e1f2489641ac13cd3bae64
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825154"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41862716"
 ---
 # <a name="plan-my-service-management"></a>Pianificare la gestione dei servizi
 
@@ -36,7 +36,7 @@ La gestione dei servizi è un argomento ampio che include le operazioni quotidia
 La nozione di gestione dei servizi non è probabilmente un nuovo concetto per la maggior parte delle organizzazioni. Probabilmente hai già implementato processi e attività associati ai servizi esistenti. Ciò detto, è probabile che sia possibile aumentare le informazioni disponibili quando si prevede di gestire i servizi Microsoft teams in futuro.
 
 La gestione dei servizi comprende tutte le attività e i processi coinvolti nella gestione di Microsoft teams end to end. Alcuni componenti della gestione dei servizi, ovvero i componenti dell'infrastruttura che il servizio Office 365 stesso comporta, sono responsabili di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti dei team, della rete e endpoint da essi forniti.
-Per una descrizione completa della responsabilità del cliente per la gestione del servizio Team e per quanto riguarda i componenti chiave che sostengono la qualità dell'esperienza utente, vedere Pianificare la [gestione e la qualità del servizio](https://docs.microsoft.com/MicrosoftTeams/envision-planning-for-service-management-and-quality-complete-guide).
+Per una descrizione completa della responsabilità del cliente per la gestione del servizio Team e per quanto riguarda i componenti chiave che sostengono la qualità dell'esperienza utente, vedere Pianificare la [gestione e la qualità del servizio](https://docs.microsoft.com/MicrosoftTeams/prepare-network).
 
 ![Diagramma dei tre componenti di qualità](media/plan-my-service-management-image1.png "Diagramma dei tre componenti di qualità--servizio, rete e endpoint di Office 365--e in che modo la gestione dei servizi si sovrappone a tutte e tre le.")
 

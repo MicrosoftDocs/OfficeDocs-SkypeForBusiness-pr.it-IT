@@ -1,0 +1,63 @@
+---
+title: Server proxy per Teams o Skype for Business Online
+ms.author: tonysmit
+author: tonysmit
+manager: serdars
+ms.reviewer: jastark
+ms.topic: reference
+ms.assetid: 7acaf2c2-35fa-490f-84cd-822e446e0fc7
+ms.tgt.pltfrm: cloud
+ms.service: msteams
+search.appverid: MET150
+ms.collection:
+- M365-collaboration
+audience: Admin
+appliesto:
+- Skype for Business
+localization_priority: Normal
+f1.keywords:
+- CSH
+ms.custom:
+- Optimization
+description: Questo articolo fornisce informazioni sull'uso di un server proxy con Skype for business.
+ms.openlocfilehash: a154b36fc03dc84916d5cb4bd383ff80bef901cd
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863752"
+---
+# <a name="proxy-servers-for-skype-for-business-online"></a>Server proxy per Skype for business online
+
+Questo articolo fornisce indicazioni sull'uso di un server proxy con Skype for business.
+  
+## <a name="not-using-a-proxy-server-is-recommended"></a>Consigliamo di non usare un server proxy
+
+Per quanto riguarda il traffico di Skype for business sui proxy, Microsoft consiglia di ignorare i proxy. I proxy non rendono Skype for business più sicuro perché il traffico è già crittografato.
+  
+E avere un proxy può causare problemi. I problemi relativi alle prestazioni possono essere introdotti nell'ambiente attraverso la latenza e la perdita di pacchetti. I problemi come questi generano un'esperienza negativa in tali team o scenari di Skype for business come audio e video, dove i flussi in tempo reale sono essenziali.
+  
+## <a name="if-you-need-to-use-a-proxy-server"></a>Se devi usare un server proxy
+
+Alcune organizzazioni non hanno la possibilità di bypassare il proxy per il traffico di Skype for Business. Se questo è il tuo caso, dovrai tenere in considerazione i problemi di cui abbiamo parlato.
+  
+Microsoft inoltre consiglia:
+  
+- Utilizzare la risoluzione DNS esterna
+    
+- Utilizzare l'instradamento diretto basato su UDP
+    
+- Consentire il traffico UDP
+    
+- Seguire le altre raccomandazioni nelle nostre linee guida per la rete:
+    
+  - [Qualità degli elementi multimediali e prestazioni della connessione di rete in Skype for Business online](media-quality-and-network-connectivity-performance.md)
+    
+  - [Ottimizzare la rete per Skype for Business online](optimizing-your-network.md)
+    
+Seguire queste indicazioni dovrebbe ridurre al minimo i potenziali problemi.
+  
+## <a name="related-topics"></a>Argomenti correlati
+
+[Ottimizzare la rete per Skype for Business online](optimizing-your-network.md)
+ 

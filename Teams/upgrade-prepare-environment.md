@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6c5287db10067ad26feac8b3074de97a977646cf
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 82b9418f2e87550667cbc163f8f37a0989ec2b30
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837096"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863437"
 ---
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
@@ -43,5 +43,5 @@ Completare queste attività in parallelo con la preparazione degli utenti:
 - [Preparare il personale it](upgrade-prepare-IT-pros.md) per assicurarsi di avere ciò che serve per un viaggio di aggiornamento riuscito.
 - Verificare che l'ambiente soddisfi tutti i [prerequisiti](upgrade-plan-journey-prerequisites.md)e comprendere le dipendenze tra i servizi e i team di Office 365.
 - [Valutare l'ambiente](upgrade-plan-journey-evaluate-environment.md) eseguendo l'individuazione ambientale usando un questionario di esempio per confermare la disponibilità dell'organizzazione a eseguire un viaggio di aggiornamento riuscito ai team.
-- [Preparare la rete](upgrade-prepare-environment-prepare-network.md) attraverso la pianificazione, la preparazione e l'esecuzione di tutti i passaggi necessari per il risanamento della rete per supportare i carichi di lavoro dei team.
+- [Preparare la rete](prepare-network.md) attraverso la pianificazione, la preparazione e l'esecuzione di tutti i passaggi necessari per il risanamento della rete per supportare i carichi di lavoro dei team.
 - [Preparare il servizio](upgrade-prepare-environment-prepare-service.md) per l'implementazione tramite elenchi di controllo onboarding per assicurarsi che la configurazione dei team sia pronta per supportare la migrazione degli utenti da Skype for business a teams.

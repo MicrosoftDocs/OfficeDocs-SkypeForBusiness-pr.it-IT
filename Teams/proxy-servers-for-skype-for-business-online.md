@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Questo articolo fornisce informazioni sull'uso di un server proxy con team o Skype for business.
-ms.openlocfilehash: 7eeb319c9c352f4f04abef581b88c1eddf46951d
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: ca81c32064406af0e5bc3d614566a96ec5646a91
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837306"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863187"
 ---
 # <a name="proxy-servers-for-teams-or-skype-for-business-online"></a>Server proxy per Teams o Skype for Business Online
 
@@ -50,17 +50,13 @@ Microsoft inoltre consiglia:
     
 - Consentire il traffico UDP
     
-- Seguire le altre raccomandazioni nelle nostre linee guida per la rete:
-    
-  - [Qualità degli elementi multimediali e prestazioni della connessione di rete in Skype for Business online](https://support.office.com/en-us/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
-    
-  - [Ottimizzare la rete per Skype for Business online](https://support.office.com/en-us/article/Optimizing-your-network-for-Skype-for-Business-Online-b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+- Seguire le altre raccomandazioni nelle nostre linee guida per la rete: [preparare la rete dell'organizzazione per i team](prepare-network.md)
+  
     
 Seguire queste indicazioni dovrebbe ridurre al minimo i potenziali problemi.
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Ottimizzare la rete per Skype for Business online](https://support.office.com/en-us/article/Optimizing-your-network-for-Skype-for-Business-Online-b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Principi di connettività di rete di Office 365](https://aka.ms/pnc)
 
-  
- 
+[Preparare la rete dell'organizzazione per Teams](prepare-network.md)

@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.quickstartteamsadmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 51fd22257635502e92b89482f320b6bd68987cfe
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 2acb9d1734bb04c4db522417064c3d99fd660d89
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826704"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863217"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -53,7 +53,7 @@ Prima di implementare Teams nell'organizzazione, è necessario verificare che l'
 
 |Chiedersi|Azione |
 |------------|-------|
-|L'organizzazione è pronta per la distribuzione di Teams?|Per rispondere a questa domanda, vedere: <ul><li> [Valutazione della conformità dell'ambiente per Teams](environment-readiness.md)</li><li>[Preparare la rete dell'organizzazione per Teams](prepare-network.md)</li><li>[URL e intervalli di indirizzi IP per Office 365](office-365-urls-ip-address-ranges.md)</li><li>[Pianificare i gruppi di Office 365 durante la creazione di team](plan-office-365-groups.md)</li></ul>|
+|L'organizzazione è pronta per la distribuzione di Teams?|Per rispondere a questa domanda, vedere: <ul><li>[Preparare la rete dell'organizzazione per Teams](prepare-network.md)</li><li>[URL e intervalli di indirizzi IP per Office 365](office-365-urls-ip-address-ranges.md)</li><li>[Pianificare i gruppi di Office 365 durante la creazione di team](plan-office-365-groups.md)</li></ul>|
 |||
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione

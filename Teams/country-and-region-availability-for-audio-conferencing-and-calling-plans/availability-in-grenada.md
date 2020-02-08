@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per Grenada.
-ms.openlocfilehash: be8219847bbd3c37681d814b3012fd6a8583bf6f
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: a828293e7a469a6cecc56847499881486f50a8cb
+ms.sourcegitcommit: eb2182617d8f72f8a7ea95f7af101d10c6f4e9a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695091"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41853441"
 ---
 # <a name="availability-in-grenada"></a>Disponibilità in Grenada
 
@@ -61,6 +61,8 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
+
+Se i piani di chiamata non sono disponibili per l'acquisto, provare a usare il [routing diretto del sistema telefonico](../direct-routing-landing-page.md). Con il routing diretto, puoi usare il sistema telefonico con virtualmente qualsiasi gestore di telefonia.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri a pedaggio e a pagamento gratuito per i servizi
 

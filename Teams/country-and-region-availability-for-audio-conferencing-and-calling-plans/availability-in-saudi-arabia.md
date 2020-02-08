@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Arabia Saudita.
-ms.openlocfilehash: 48a8319220e315131b9a1d6a1dcc6cdc5c02b344
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: e5fc2b21e25bd1a69a73b3319065ad2de5030af1
+ms.sourcegitcommit: eb2182617d8f72f8a7ea95f7af101d10c6f4e9a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41694671"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41852513"
 ---
 # <a name="availability-in-saudi-arabia"></a>Disponibilità in Arabia Saudita
 
@@ -62,6 +62,8 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
+
+Se i piani di chiamata non sono disponibili per l'acquisto, provare a usare il [routing diretto del sistema telefonico](../direct-routing-landing-page.md). Con il routing diretto, puoi usare il sistema telefonico con virtualmente qualsiasi gestore di telefonia.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

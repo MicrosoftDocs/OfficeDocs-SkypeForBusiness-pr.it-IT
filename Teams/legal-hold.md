@@ -1,6 +1,6 @@
 ---
 title: Inserire un utente o un team di Microsoft teams in blocco legale
-author: LolaJacobsen
+author: MicrosoftHeidi
 ms.author: heidip
 manager: serdars
 ms.topic: article
@@ -15,38 +15,56 @@ f1.keywords:
 description: Imparerai a inserire un utente o un team di Microsoft teams in blocco legale usando il centro conformità & sicurezza e scopri cosa richiede un blocco legale in base ai requisiti dei dati.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0526ed2d5b0aa48ab7229c8fa40dbb13413c3139
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 6c46de971a63a212c0773f5048aeded697d05e0c
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41833466"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863027"
 ---
 <a name="place-a-microsoft-teams-user-or-team-on-legal-hold"></a>Inserire un utente o un team di Microsoft teams in blocco legale
 ==================================================
 
-Per inserire un utente o un team in blocco legale, passare al [centro conformità & sicurezza](https://go.microsoft.com/fwlink/?linkid=854628). Quando si crea un nuovo caso, viene visualizzata l'opzione per posizionare le cassette postali o i siti in attesa.
+Quando esiste una ragionevole aspettativa di controversia, le organizzazioni sono tenute a conservare le informazioni archiviate elettronicamente (ESI), inclusi i messaggi di chat in team che sono rilevanti per il caso. Le organizzazioni possono essere necessarie per mantenere tutti i messaggi correlati a un argomento specifico o a determinati utenti. Questo articolo riguarderà il blocco legale in Microsoft Teams (per indirizzare l'implementazione di blocco nello spazio M365, vedere [gestire i casi di eDiscovery: posizionare i percorsi di contenuto in attesa](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-cases#step-4-place-content-locations-on-hold)).
+
+> [!NOTE]
+> In 2020 febbraio è stato attivato un blocco legale o un blocco di casi su canali privati (le chat di canale privato sono archiviate nelle cassette postali degli utenti, le chat di canale normale sono archiviate nelle cassette postali del gruppo dei team). Se esiste già un blocco legale per una cassetta postale dell'utente, il criterio di blocco verrà applicato automaticamente ai messaggi del canale privato archiviati nella cassetta postale. Non è necessaria alcuna ulteriore azione per attivare l'amministratore. È supportato anche il blocco legale dei file condivisi nei canali privati.
+
+All'interno di Microsoft teams, un intero team o gli utenti selezionati possono essere messi in attesa o in attesa legale. In questo modo si verificherà che tutti i messaggi scambiati in questi team (inclusi i canali privati) o i messaggi scambiati da tali utenti siano individuabili dai responsabili della conformità dell'organizzazione o dagli amministratori di teams.
 
 > [!NOTE]
 > L'immissione di un utente in blocco non inserisce automaticamente un gruppo in attesa o viceversa.
 
-> [!NOTE]
-> Il supporto per la riserva legale dei messaggi di canale privato sarà disponibile a breve. È supportata la riserva legale dei file condivisi nei canali privati.
+Per inserire un utente o un team in attesa legale:
+
+1. Passare al [centro conformità & sicurezza](https://go.microsoft.com/fwlink/?linkid=854628). Quando si crea un nuovo caso, viene visualizzata l'opzione per posizionare le cassette postali o i siti in attesa.
+1. Accedere a eDiscovery o Advanced eDiscovery e creare un caso facendo clic su "+ crea un caso". Una volta creato il caso, aprirlo.
+![È selezionata la scheda Microsoft teams eDiscovery, che mostra il pulsante Crea un caso.](media/LegalHold1.png)
+1. Vai alla sezione "detiene" dal menu in alto e fai clic su "+ Crea" per creare un blocco per l'inserimento di un utente o di un team in blocco salva tutti i messaggi scambiati da tali utenti o messaggi quando crei un nuovo caso, ti viene presentato l'opzione per posizionare le cassette postali o i siti in attesa.
+![Immagine che mostra la scheda detiene selezionata e il pulsante Crea sotto.](media/LegalHold2.png)
+    1. **Assegnare un nome al blocco**. Selezionare un nome descrittivo e univoco per il blocco che si vuole creare.
+![Questa schermata mostra il nome della scheda blocco, in cui è possibile immettere un nome e una descrizione per il blocco da creare.](media/LegalHold3.png)
+    1. **Scegliere posizione**. Scegliere se si vuole che il blocco venga applicato a un utente o a un intero team (il blocco non può essere applicato ai singoli canali per ora). Nota: se un utente è in attesa, tutti i loro messaggi rimarranno in attesa, incluso quello inviato in una chat di 1:1, 1: molti o chat di gruppo o una conversazione di canale (inclusi i canali privati).
+    ![Di seguito è disponibile la sezione scegliere percorsi per creare un nuovo blocco, in cui è possibile prendere decisioni sulle opzioni di M365, tra cui Microsoft teams, a cui si desidera applicare il blocco.](media/LegalHold4.png)
+    1. **Crea query**. È possibile personalizzare il blocco se si vuole maggiore granularità nel criterio di blocco. Ad esempio, puoi specificare le parole chiave da cercare oppure aggiungere altre condizioni che devono essere soddisfatte perché l'esenzione abbia effetto.
+    1. **Esaminare le impostazioni** prima di pubblicarle nell'organizzazione.
+
+Dopo aver impostato il blocco legale, è possibile scoprire tutto il contenuto mantenuto da qualsiasi criterio di blocco dopo l'articolo [eDiscovery teams](eDiscovery-investigation.md) .
 
 > [!IMPORTANT]
-> Quando un utente o un gruppo viene messo in attesa, verranno mantenute tutte le copie del messaggio. Esempio: Clay ha inviato un messaggio in un canale e quindi ha modificato il messaggio. In uno scenario di blocco vengono mantenute entrambe le copie del messaggio. Senza blocco legale, viene mantenuto solo il messaggio più recente.
+> Quando un utente o un gruppo viene messo in attesa, verranno mantenute tutte le copie del messaggio. Ad esempio, se un utente ha inviato un messaggio in un canale e quindi ha modificato il messaggio, in uno scenario di blocco vengono mantenute entrambe le copie del messaggio. Senza il blocco legale sul posto, viene mantenuto solo il messaggio più recente.
 
-Nella figura seguente è presente un'indagine che prevede l'uso di argilla. Clay è un membro del team broker-dealer.
-
-Se avevamo bisogno di tenere legale tutte le posizioni che Clay avrebbe potuto discutere dei piani di brokeraggio, assicurati che il sito di SharePoint del team venga aggiunto all'elenco dei siti di blocco legale, oltre al sito di OneDrive for business di Clay.
-
-![Screenshot della finestra di dialogo Crea un nuovo blocco.](media/Place_a_Microsoft_Teams_user_or_team_on_legal_hold_image3.png)
-
-Per ricapitolare, usare la tabella seguente per capire cosa occorre inserire in blocco legale in base ai requisiti dei dati:
+Come guida utile, è possibile usare la tabella seguente per capire cosa occorre inserire in blocco legale in base ai requisiti dei dati:
 
 |Scenario  |Cosa posizionare in blocco  |
 |---------|---------|
-|**Chat private di Microsoft Teams**     |Cassetta postale dell'utente         |
-|**Chat di canale di Microsoft Teams**    |Cassetta postale del gruppo usata per il team         |
+|**Contenuto della chat di Microsoft Teams da un utente (in chat di 1:1, 1: molti o chat di gruppo, conversazioni con canali privati e così via)**     |Cassetta postale dell'utente         |
+|**Chat di canale di Microsoft Teams (esclusi i canali privati**    |Cassetta postale del gruppo usata per il team         |
 |**Contenuto di Microsoft Teams (ad esempio wiki, file)**     |Sito di SharePoint usato dal team         |
-|**Contenuto privato**     |Sito di OneDrive for business dell'utente         |
+|**File di canale privato di Microsoft Teams**     |Sito di SharePoint canale privato dedicato     |
+|**Contenuto privato dell'utente**     |Sito di OneDrive for business dell'utente         |
+
+> [!NOTE]
+> Per mantenere le comunicazioni nei canali privati, è necessario inserire le cassette postali utente (utenti del canale privato) in attesa e quando si usa lo strumento eDiscovery per eseguire una ricerca, è necessario eseguire una ricerca nella cassetta postale dell'utente. Come indicato in precedenza, le chat di canale private sono archiviate nelle cassette postali degli utenti e non nella cassetta postale del gruppo di un team.
+
+Per altre informazioni su questo argomento per le aree non teams in M365, vedere gestire i casi di [eDiscovery: posizionare i percorsi di contenuto in blocco](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-cases#step-4-place-content-locations-on-hold).

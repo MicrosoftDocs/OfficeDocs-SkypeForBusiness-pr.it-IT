@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: eea9d83a582bfe463233cfafe9564a238e00e198
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 94126a5d49c9573751279c645024dcb9d164bd90
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837376"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863297"
 ---
 <a name="about-upgrade-basic"></a>
 
@@ -86,9 +86,9 @@ Quando si usa PowerShell, `Grant-CsTeamsUpgradePolicy` il cmdlet controlla la co
 
 
 
-# <a name="related-topics"></a>Argomenti correlati
+## <a name="related-topics"></a>Argomenti correlati
 
-[Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](https://docs.microsoft.com/en-us/microsoftteams/migration-interop-guidance-for-teams-with-skype)
+[Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
 
 

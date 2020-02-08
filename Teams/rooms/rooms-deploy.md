@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni sulla distribuzione delle sale di Microsoft teams.
-ms.openlocfilehash: 3cc8df810989163b622a96dc5f16c8aa883447cd
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 650302d6d952a59c1cc460e2cdf8758cfb0fcd41
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825964"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863347"
 ---
 # <a name="deployment-overview"></a>Panoramica della distribuzione
 
@@ -45,7 +45,7 @@ Per altre informazioni su queste dipendenze, vedere i collegamenti alle linee gu
 -   [Certificati](rooms-prep.md#certificates)
 -   [Proxy](rooms-prep.md#proxy)
 
-**Suggerimento PRO** : se si intende usare i server proxy per consentire l'accesso a Microsoft teams o Skype for business online, vedere prima di [tutto questo articolo](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/proxy-servers-for-skype-for-business-online). Tieni presente che quando si tratta di traffico di Skype for business sui server proxy, ti consigliamo di ignorare completamente i server proxy. Il traffico di Skype for business è già crittografato, quindi i server proxy non lo rendono più sicuro. Come parte della distribuzione più ampia, ti consigliamo di seguire le indicazioni in valutare l' [ambiente](https://docs.microsoft.com/MicrosoftTeams/3-envision-evaluate-my-environment#network-readiness) per la pianificazione della larghezza di banda e valutare l'idoneità della rete per il traffico in tempo reale.
+**Suggerimento PRO** : se si intende usare i server proxy per consentire l'accesso a teams o Skype for business online, vedere prima di [tutto questo articolo](../proxy-servers-for-skype-for-business-online.md). Tieni presente che quando si tratta di traffico di Skype for business sui server proxy, ti consigliamo di ignorare completamente i server proxy. Il traffico di Skype for business è già crittografato, quindi i server proxy non lo rendono più sicuro. Come parte della distribuzione più ampia, ti consigliamo di seguire le indicazioni per [preparare la rete per i team](../prepare-network.md) per pianificare la pianificazione della larghezza di banda e valutare l'idoneità della rete per il traffico in tempo reale.
 
 |    |     |
 |-----------|------------|

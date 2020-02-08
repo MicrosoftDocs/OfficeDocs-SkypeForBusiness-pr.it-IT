@@ -1,11 +1,11 @@
 ---
 title: Guida alla revisione della qualità dell'esperienza per Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: lolajacobsen
+ms.author: lolaj
 manager: serdars
 ms.topic: article
 ms.service: msteams
-ms.reviewer: rowille
+ms.reviewer: siunies
 audience: admin
 description: Guida per l'analisi delle prestazioni multimediali in tempo reale per Microsoft teams tramite Call Quality Dashboard (Call Quality Dashboard).
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ff4fe3a0a8a43c23978345461b0d32fe5182a6dd
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 6e11c7d479aeac6eef39fb38588a61c0c7be25a6
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838256"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863397"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza
 
@@ -1142,8 +1142,6 @@ La causa più comune dell'utilizzo HTTP mancano le regole di eccezione nei proxy
 
 Verificare che i nomi di [dominio completi di Office 365](https://aka.ms/o365ips) necessari siano presenti in whitelist nel proxy.
 
-Per altre informazioni sull'uso di proxy con Skype for business online e teams, vedere [questo articolo](proxy-servers-for-skype-for-business-online.md).
-
 ## <a name="endpoint-investigations"></a>Indagini endpoint
 
 Questa sezione è incentrata sulle attività per la creazione di report sulle versioni client e sull'uso di dispositivi certificati. I report sono disponibili per strutturare l'utilizzo per le versioni client, il tipo di client, i dispositivi di acquisizione e i driver (microfono), i dispositivi di acquisizione video e il fornitore e le versioni del driver Wi-Fi.
@@ -1311,7 +1309,7 @@ Per altre informazioni, vedere [questo articolo sulla qualità dei contenuti mul
 
 -   [Office 365 adoption Content Pack](https://www.microsoft.com/microsoft-365/blog/2017/05/22/announcing-the-public-preview-of-the-office-365-adoption-content-pack-in-powerbi/)
 
--   [Analisi dell'utilizzo di Microsoft 365](https://support.office.com/article/Microsoft-365-usage-analytics-77ff780d-ab19-4553-adea-09cb65ad0f1f)
+-   [Analisi di utilizzo di Microsoft 365](https://support.office.com/article/Microsoft-365-usage-analytics-77ff780d-ab19-4553-adea-09cb65ad0f1f)
 
 -   [Creazione di report di Skype for Business online](/SkypeForBusiness/skype-for-business-online-reporting/skype-for-business-online-reporting)
 

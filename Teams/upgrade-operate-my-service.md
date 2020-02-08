@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: eab5673c1b4dcbc1810c96588577e6ee53938609
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 2e3ef345df2696cd0d450f8b16d93508d0eed545
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837146"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863517"
 ---
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di eccellenza operativa](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
 
@@ -345,7 +345,7 @@ Per creare sondaggi NPS per l'organizzazione, è possibile sfruttare lo strument
 
 ## <a name="manage-network-quality"></a>Gestire la qualità della rete
 
-Molti elementi di pianificazione di base vengono ottimizzati, dimensionati a destra e correttivi nell'infrastruttura di rete per garantire un percorso efficiente di alta qualità per il servizio Microsoft teams. Le attività di pianificazione e i requisiti sono coperti dalle indicazioni per la [conformità della rete](upgrade-prepare-environment-prepare-network.md) . Le reti si evolvono spesso nel tempo a causa di aggiornamenti, espansioni o altri requisiti aziendali. È importante tenere conto dei requisiti per i team nelle attività di pianificazione della rete.
+Molti elementi di pianificazione di base vengono ottimizzati, dimensionati a destra e correttivi nell'infrastruttura di rete per garantire un percorso efficiente di alta qualità per il servizio Microsoft teams. Le attività di pianificazione e i requisiti sono coperti dalle indicazioni per la [conformità della rete](prepare-network.md) . Le reti si evolvono spesso nel tempo a causa di aggiornamenti, espansioni o altri requisiti aziendali. È importante tenere conto dei requisiti per i team nelle attività di pianificazione della rete.
 
 Anche se la pianificazione della rete è un aspetto cruciale della distribuzione di teams, è ugualmente importante garantire che la rete rimanga in buona salute e rimanga aggiornata, in base alla modifica dei requisiti aziendali o tecnici.
 
@@ -431,7 +431,7 @@ Anche se sono state seguite le indicazioni precedenti, gli utenti dell'organizza
 
 1. **Convalida integrità del servizio:** Il problema che un utente potrebbe provare può essere correlato a un evento che influisce negativamente sul servizio teams o sui servizi itsdependent. Come primo passo, ti consigliamo di confermare che non ci sono problemi di servizio attivo. Consultare [come controllare l'integrità dei servizi di Office 365](https://support.office.com/article/How-to-check-Office-365-service-health-932AD3AD-533C-418A-B938-6E44E8BC33B0). Ricordarsi di controllare lo stato dei servizi dipendenti, ad esempio Exchange, SharePoint, OneDrive for business. Il monitoraggio dell'integrità dei servizi viene illustrato in modo più dettagliato nella sezione precedente, [monitora l'integrità dei servizi](#monitor-service-health).
 
-2. **Convalidare la connettività client:** I problemi di connettività causano problemi di funzionalità o di accesso in teams. È consigliabile (soprattutto per i nuovi siti o posizioni) che si convalida la connettività al servizio. Verificare che per ogni sito siano seguite le indicazioni seguenti per gli [URL e gli intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips) . Puoi sfruttare lo strumento di [valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per eseguire un test di connettività per verificare che le porte multimediali siano state aperte correttamente per le funzionalità teams. I passaggi dettagliati su come eseguire i test di connettività vengono forniti nelle linee guida per la [conformità della rete](upgrade-prepare-environment-prepare-network.md) .
+2. **Convalidare la connettività client:** I problemi di connettività causano problemi di funzionalità o di accesso in teams. È consigliabile (soprattutto per i nuovi siti o posizioni) che si convalida la connettività al servizio. Verificare che per ogni sito siano seguite le indicazioni seguenti per gli [URL e gli intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips) . Puoi sfruttare lo strumento di [valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per eseguire un test di connettività per verificare che le porte multimediali siano state aperte correttamente per le funzionalità teams. I passaggi dettagliati su come eseguire i test di connettività vengono forniti nelle linee guida per la [conformità della rete](prepare-network.md) .
 
 3. **Selezionare l'elenco dei problemi noti:** Consulta l' [elenco dei problemi noti per i team](known-issues.md) per determinare se l'utente è stato influenzato negativamente da uno di questi problemi. Seguire la soluzione alternativa fornita (se disponibile) per risolvere il problema.
 

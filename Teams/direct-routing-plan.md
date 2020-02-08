@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Leggere questo argomento per informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente a Microsoft Phone System.
-ms.openlocfilehash: f1d6c914a2ed95a073fdf900628ad96fa10b7428
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 4e6e26f0beaa74806ebc52ca31c007f5ec085fdc
+ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41835146"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41863177"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -249,17 +249,15 @@ Il nome FQDN sip.pstnhub.gov.teams.microsoft.us verrà risolto in uno degli indi
 
 ## <a name="sip-signaling-ports"></a>Segnalazione SIP: porte
 
-I requisiti della porta sono gli stessi per tutti gli ambienti di Office 365 in cui viene offerto il routing diretto:
+È necessario usare le porte seguenti per gli ambienti di Office 365 in cui è disponibile il routing diretto:
 - Office 365
 - Office 365 GCC
 - Office 365 GCC High
 - Office 365 DoD
 
-È necessario usare le porte seguenti:
-
 |**Traffico**|**Da**|**A**|**Porta di origine**|**Porta di destinazione**|
 |:--- |:--- |:--- |:--- |:--- |
-|SIP/TLS|Proxy SIP|SBC|1024-65535|Definita nell'SBC|
+|SIP/TLS|Proxy SIP|SBC|1024-65535 (per Office 365 GCC High/DoD solo le porte 5061 e 5062 devono essere usate)|Definita nell'SBC|
 SIP/TLS|SBC|Proxy SIP|Definita nell'SBC|5061|
 ||||||
 

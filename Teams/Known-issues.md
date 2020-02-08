@@ -13,15 +13,17 @@ ms.reviewer: marcl
 audience: admin
 localization_priority: Priority
 search.appverid: MET150
+f1.keywords:
+- NOCSH
 description: Elenco corrente dei problemi noti riguardanti l’interfaccia di amministrazione e l'app client di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9c613f2116b5ad9f97426f60466d71d4ffaddba1
-ms.sourcegitcommit: ed3a6789dedf54275e0b1ab41d4a4230eed6eb72
+ms.openlocfilehash: 1f18bd8fa85ce07596fe36106ea97ef36e698a78
+ms.sourcegitcommit: 8e2fa7b744d0a174b699ae7298d4688b971eeff3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41628532"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845147"
 ---
 # <a name="known-issues-for-microsoft-teams"></a>Problemi noti di Microsoft Teams
 
@@ -42,6 +44,10 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |La gestione amministratore dei connettori a livello di tenant non è più disponibile  <br/> |Quando si prova ad aggiungere un connettore sia nel client che nella versione online, viene visualizzato il messaggio di errore: Si è verificato un errore imprevisto. Riprovare. Eseguire: Set-OrganizationConfig -ConnectorsEnabled=True   <br/> |Disabilitare con le impostazioni di Teams. Consultare il seguente articolo del supporto tecnico: https://answers.microsoft.com/en-us/msoffice/forum/msoffice_o365admin-mso_teams-mso_o365b/how-to-enable-or-disable-connectors-in-office-365/33d4b2c1-00eb-420a-ad83-01a2b42ad098    <br/> |21/06/2017  <br/> |
 
 ## <a name="apps"></a>App
+
+|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
+|:-----|:-----|:-----|:-----|
+|Gli utenti di Chrome versione 80 non possono accedere ad alcune app nella piattaforma di Teams.<br/>|Dopo che gli utenti hanno immesso correttamente le credenziali nella pagina di accesso di un'app, inizia un ciclo continuo in cui l'utente non viene riconosciuto e viene reindirizzato alla pagina di accesso dell'app. <br/>|Indicare agli utenti di usare il client desktop di Teams. |15/11/19<br/> |
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
@@ -317,7 +323,7 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|Integrazione di Planner in Teams con Planner online <br/> |I proprietari non riescono a creare un piano da un team di creato da un gruppo di Office 365 esistente.  <br/> |Assegnare le autorizzazioni di membro al proprietario del gruppo. <br/> |14/1/20  <br/>|
+|Integrazione di Planner in Teams con Planner online <br/> |I proprietari non riescono a creare un piano per un team creato da un gruppo di Office 365 esistente.  <br/> |Assegnare le autorizzazioni di membro al proprietario del gruppo. <br/> |14/1/20  <br/>|
 
 
 
