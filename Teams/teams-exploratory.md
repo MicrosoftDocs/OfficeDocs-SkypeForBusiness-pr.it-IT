@@ -10,16 +10,18 @@ ms.service: msteams
 search.appverid: MET150
 localization_priority: Priority
 description: Gli utenti di Office 365 che non hanno una licenza di Microsoft Teams possono iniziare a usare una licenza Teams Exploratory.
+f1.keywords:
+- NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6777dfbafac89c798955245b93f1e4537093b0cf
-ms.sourcegitcommit: 96d98e145ff300833d827a7d43b4e4b0331b7538
+ms.openlocfilehash: 7aa3969d3943598c8e5657e1fcb94730179f57fe
+ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39871787"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "41837686"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
@@ -79,15 +81,16 @@ Gli amministratori possono impedire agli utenti finali di eseguire l'esperienza 
 
 È possibile disattivare l'opzione per installare le versioni di valutazione di app e servizi per evitare che gli utenti eseguano l'esperienza Teams Exploratory.
 
-1. Nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home) passare a **Impostazioni** > **Servizi e componenti aggiuntivi** > **App e servizi di proprietà degli utenti**.
+1. Nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home), passare a **Impostazioni** > **Impostazioni**, selezionare **Servizi** e quindi selezionare **App e servizi di proprietà degli utenti**.
 
-    ![Screenshot della pagina Servizi e componenti aggiuntivi nell'interfaccia di amministrazione](media/iw-trial-enable-1.png)
+    ![Screenshot della pagina Servizi nell'interfaccia di amministrazione](media/iw-trial-services.png)
 
-2. Deselezionare **Consenti agli utenti di installare le versioni di valutazione di app e servizi**.
+2. Deselezionare la casella di controllo **Consenti agli utenti di installare le versioni di valutazione di app e servizi**.
 
-    ![Screenshot della pagina App e servizi di proprietà degli utenti nell'interfaccia di amministrazione](media/iw-trial-enable-2.png)
-> [!NOTE]
-> Se l'organizzazione non è idonea per l'esperienza Teams Exploratory, l'interruttore **Consenti agli utenti di installare le versioni di valutazione di app e servizi** non è disponibile.
+    ![Screenshot della pagina App e servizi di proprietà degli utenti nell'interfaccia di amministrazione](media/iw-trial-user-owned-apps-services.png)
+
+    > [!NOTE]
+    > Se l'organizzazione non è idonea per l'esperienza Teams Exploratory, l'opzione **Consenti agli utenti di installare le versioni di valutazione di app e servizi** non è disponibile.
 
 ### <a name="manage-availability-for-a-user-with-a-license-that-includes-teams"></a>Gestire la disponibilità per un utente con una licenza che include Teams
 
@@ -118,10 +121,9 @@ Per disattivare la licenza dell'esperienza Teams Exploratory:
 3. A destra, nella riga **Licenze di prodotto**, scegliere **Modifica**.
 
 4. Nel riquadro **Licenze di prodotto** spostare l'interruttore relativo alla licenza Exploratory nella posizione **No**.
-
-    
->[!Note]
->L'interruttore Teams Exploratory verrà visualizzato dopo che il primo utente dell'organizzazione ha avviato l'esperienza Teams Exploratory.
+   
+    >[!Note]
+    >L'interruttore Teams Exploratory verrà visualizzato dopo che il primo utente dell'organizzazione ha avviato l'esperienza Teams Exploratory.
 
 ### <a name="manage-teams-for-users-who-have-the-teams-exploratory-license"></a>Gestire Teams per gli utenti che hanno la licenza di Teams Exploratory
 

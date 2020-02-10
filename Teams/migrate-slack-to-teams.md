@@ -14,14 +14,15 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.custom: ''
+f1.keywords:
+- NOCSH
 description: Indicazioni complete per effettuare la migrazione da Slack a Microsoft Teams.
-ms.openlocfilehash: 56278359062bb7f154b5e3248c343f98c62cb916
-ms.sourcegitcommit: 0f6321d51b40f06855679c18f7313febfedd419a
+ms.openlocfilehash: 15ef6203fa2cf27d081865e3966198f033b1bd80
+ms.sourcegitcommit: 8e2fa7b744d0a174b699ae7298d4688b971eeff3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793472"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845213"
 ---
 # <a name="migrate-from-slack-to-microsoft-teams"></a>Effettuare la migrazione da Slack a Microsoft Teams
 
@@ -43,7 +44,7 @@ Per altre informazioni sulle opzioni di esportazione di Slack, visitare il sito 
 
 Il diagramma che segue offre una panoramica generale della migrazione di Slack illustrata in questo articolo. 
 
-:::image type="content" source="media/migrate-slack-to-teams-image2.png" alt-text="Diagramma che mostra una panoramica dell'esportazione di Slack.":::
+![Diagramma che mostra una panoramica dell'esportazione di Slack.](media/migrate-slack-to-teams-image2.png)
 
 Al termine di questa sezione, il lettore sarà in grado di comprendere i seguenti concetti:
 - Il livello di servizio delle aree di lavoro di Slack
@@ -80,7 +81,7 @@ Le app in Slack sono come le app in Teams. Una volta ottenuto un elenco di app e
 
 Accedere a <your Slack workspace>.slack.com/apps/manage per ottenere un elenco di app e integrazioni personalizzate. In questa pagina viene riportato anche il numero di configurazioni utilizzate da ciascuna app. Le integrazioni personalizzate variano in base alla capacità di migrazione. Se si tratta di un hook Web, in genere è possibile inviarlo a un connettore di Office 365 per spostare il flusso di lavoro in Teams. Valutare bot e altre app caso per caso, per pianificarne il passaggio a Teams.
 
-*Se l'amministratore ha limitato l'utilizzo delle app, è possibile che l'elenco completo delle app disponibili non sia visibile.
+\*Se l'amministratore ha limitato l'utilizzo delle app, è possibile che l'elenco completo delle app disponibili non sia visibile.
 
 ### <a name="users"></a>Utenti
 Gli schemi di identità utilizzati in Slack potrebbero non essere direttamente corrispondenti a Office 365. Ad esempio, gli indirizzi e-mail degli utenti di Slack potrebbero non essere associati agli account aziendali o dell'istituto di istruzione di Office 365. Per iniziare a pianificare l'implementazione di Teams, è consigliabile creare una mappa di ID utente.
@@ -162,10 +163,10 @@ Write-Host "`n $(Get-Timestamp) Generated SlackToAzureADIdentityMapping.csv. Exi
 ```
 
 Al termine di questa sezione, il lettore avrà acquisito i seguenti elementi:
-- Un elenco di canali per ciascuna area di lavoro con statistiche di utilizzo
-- Un elenco di app di Slack con configurazioni per ciascun canale
-- Avrà stabilito quale tipo di cronologia dei messaggi di Slack esportare (se disponibile)
-- Un elenco di utenti i cui account Slack sono associati agli account aziendali o dell'istituto di formazione Microsoft e le licenze Teams di cui dispongono
+- Un elenco di canali per ciascuna area di lavoro con statistiche di utilizzo.
+- Un elenco di app di Slack con configurazioni per ciascun canale.
+- Avrà stabilito quale tipo di cronologia dei messaggi di Slack esportare (se disponibile).
+- Un elenco di utenti i cui account Slack sono associati agli account aziendali o dell'istituto di formazione Microsoft e le licenze Teams di cui dispongono.
 
 ## <a name="plan-your-teams-deployment"></a>Pianificare la distribuzione di Teams
 Gli elementi necessari di Slack sono stati esportati tralasciando tutto ciò di cui non si ha bisogno. Ora è il momento di pianificare come distribuire Teams e importare i dati di Slack. Si tratta di una grande opportunità per valutare gli elementi che hanno funzionato per il team in base all'utilizzo e includere tali elementi nel piano di distribuzione di Teams. Al termine di questa sezione, sarà disponibile un progetto per gli utenti, i canali e le app di Teams. 
