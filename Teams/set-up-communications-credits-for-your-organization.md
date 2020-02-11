@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Licensing
 description: 'Learn how to set up communication credits (PSTN Consumption) billing licenses for your users and organization. '
-ms.openlocfilehash: 426ca88cb25aad988960add812595f89eed17595
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: e1672c2d3c66690393e34b90fbeb1b2be4d54042
+ms.sourcegitcommit: 5e2dc3430e63bc0a17b87a63fa36ac93d96d8134
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838026"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41889415"
 ---
 # <a name="set-up-communications-credits-for-your-organization"></a>Configurare i Crediti comunicazioni per la propria organizzazione
 
@@ -58,9 +58,9 @@ Per altre informazioni, vedere [licenze per i componenti aggiuntivi Microsoft te
 
 1. Accedere al nuovo portale di Office 365 con l'account aziendale o dell'Istituto di istruzione.
     
-2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, accedere**agli abbonamenti** > alla **fatturazione** > **Aggiungi abbonamenti**.
+2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, vedere**servizi di acquisto**di **fatturazione** > . Scorrere verso il basso e selezionare **componenti**aggiuntivi.
 
-3. Espandi **abbonamenti a componenti aggiuntivi**e quindi scegli **Communications Credits** > **Buy Now**.
+3. Selezionare **crediti per comunicazioni**.
     
 4. Nella pagina di sottoscrizione **crediti comunicazioni** immettere le informazioni e quindi fare clic su **Avanti**:
     
@@ -93,9 +93,9 @@ Quando si configurano i crediti per le comunicazioni, è necessario esaminare l'
     
 2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, accedere a utenti**attivi**degli **utenti** > e quindi selezionare un utente o utenti dall'elenco.
     
-3. Nel riquadro Azioni, in **Licenze prodotti**, fai clic su **Modifica**.
+3. Scegliere **licenze e app**.
     
-4. Nella pagina **licenze di prodotto** attivare l'opzione **crediti comunicazioni** **su** attivo per assegnare questa licenza e quindi fare clic su **Salva**.
+4. Attivare o disattivare i **crediti di comunicazione** **su** attivato per assegnare la licenza e quindi selezionare **Salva**.
     
     > [!NOTE]
     > Anche se ad alcuni utenti è assegnata una licenza **Enterprise E5**, è consigliabile comunque procedere in questo modo.
@@ -122,7 +122,7 @@ Per visualizzare una tabella con la licenza o le licenze necessarie per ogni fun
     
 - [Impostare Piani di chiamata](set-up-calling-plans.md) e [Piani di chiamata per Office 365](calling-plans-for-office-365.md)
     
-- [Aggiungere fondi e gestire Credito per la comunicazione](add-funds-and-manage-communications-credits.md)
+- [Aggiungere fondi e gestire i crediti per la comunicazione](add-funds-and-manage-communications-credits.md)
     
   
  

@@ -17,12 +17,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5fc90ace7a2b1bd8a6984c7268903a1a6063e137
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 6b93ea469a1a27e796b5cc2016fd63c9cfd3acdd
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41835036"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888565"
 ---
 # <a name="direct-routing---sip-protocol"></a>Routing diretto-protocollo SIP
 
@@ -92,7 +92,7 @@ Per tutte le chiamate in arrivo, l'URI della richiesta viene usato per corrispon
 
 Attualmente il numero di telefono deve contenere un segno più (+), come illustrato nell'esempio seguente. 
 
-```
+```console
 INVITE sip:+18338006777@sip.pstnhub.microsoft.com SIP /2.0
 ```
 
@@ -204,7 +204,7 @@ Il proxy SIP seleziona il metodo in base alle funzionalità segnalate da SBC. Se
 
 Di seguito è riportato un esempio di un SBC che invia il messaggio che indica che il metodo refer è supportato:
 
-```
+```console
 ALLOW: INVITE, OPTIONS, INFO, BYE, CANCEL, ACK, PRACK, UPDATE, REFER, SUBSCRIBE, NOTIFY
 ```
 
@@ -212,7 +212,7 @@ Se il SBC non indica che si riferisce a un metodo supportato, il routing diretto
 
 Esempio di SBC che indica che il metodo refer non è supportato:
 
-```
+```console
 ALLOW: INVITE, ACK, CANCEL, BYE, INFO, NOTIFY, PRACK, UPDATE, OPTIONS
 ```
 
@@ -292,7 +292,7 @@ Se si invia l'invio, le informazioni sulla cronologia sono abilitate nel modo se
 
 Di seguito è riportato il formato dell'intestazione History-info inviata dal proxy SIP:
 
-```
+```console
 <sip:UserB@sip.pstnhub.microsoft.com?Privacy=history&Reason=SIP%3B\cause%3D486>;index=1.2,
 ```
 
@@ -301,7 +301,7 @@ Se la chiamata è stata reindirizzata più volte, le informazioni su ogni redire
 
 Esempio di intestazione:
 
-```
+```console
 History-info: 
 <sip:+14257123456@sip.pstnhub.microsoft.com;user=phone?Reason=SIP;cause=302;text=”Move Temporarily”>;index=1
 <sip:+14257123457@sip.pstnhub.microsoft.com;user=phone?Reason=SIP;cause=496;text=”User Busy”>;index=1.1

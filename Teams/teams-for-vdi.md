@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e412f6f45fabda12ca01df0f50c46f3989b0afd1
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 7abe63551eee449afd507a786cd2efbf70e89afa
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837666"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888645"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Team per l'infrastruttura desktop virtualizzata
 
@@ -141,7 +141,7 @@ Per altre informazioni su teams e Office 365 ProPlus, vedere [come escludere tea
 
     - Installazione per utente (impostazione predefinita)
   
-        ```
+        ```console
         msiexec /i <path_to_msi> /l*v <install_logfile_name>
         ```
     
@@ -149,7 +149,7 @@ Per altre informazioni su teams e Office 365 ProPlus, vedere [come escludere tea
     
     - Installazione per computer
 
-        ```
+        ```console
         msiexec /i <path_to_msi> /l*v <install_logfile_name> ALLUSER=1
         ```
 
@@ -165,7 +165,7 @@ Per altre informazioni su teams e Office 365 ProPlus, vedere [come escludere tea
     
     - Riga di comando: questo approccio rimuove teams, ma impedisce la reinstallazione di teams. Eseguire il comando seguente:
   
-      ```
+      ```console
       msiexec /passive /x <path_to_msi> /l*v <uninstall_logfile_name>
       ```
       In questo modo, i team vengono disinstallati dalla cartella programmi (x86) o dai file di programma, a seconda dell'ambiente del sistema operativo.

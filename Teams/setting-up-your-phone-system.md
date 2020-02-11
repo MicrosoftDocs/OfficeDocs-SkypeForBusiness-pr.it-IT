@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare il sistema telefonico (cloud PBX) per l'organizzazione. "
-ms.openlocfilehash: 71e12447d0a6951ef787bf7c7cd82024375e11fd
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: e1ae56200132ab4468b6db8d490c12d11b7a6deb
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837986"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888725"
 ---
 # <a name="set-up-phone-system-in-your-organization"></a>Configurare il sistema telefonico nell'organizzazione
 
@@ -116,7 +116,7 @@ Per altre informazioni sulle code di chiamata, vedere [creare una coda di chiama
 
 ## <a name="step-8-if-you-want-to-set-up-a-cloud-auto-attendant"></a>Passaggio 8: se si vuole configurare un operatore automatico cloud
 
-Gli operatori automatici consentono agli utenti che chiamano l'organizzazione e spostano un sistema di menu per accedervi al reparto di destra, alla coda di chiamata, alla persona o all'operatore. Puoi creare un operatore automatico per l'organizzazione usando l'interfaccia di amministrazione di Skype for business.
+Gli operatori automatici consentono agli utenti che chiamano l'organizzazione e spostano un sistema di menu per accedervi al reparto di destra, alla coda di chiamata, alla persona o all'operatore. Puoi creare un operatore automatico per l'organizzazione usando l'interfaccia di amministrazione di teams.
 
 Per informazioni sulla configurazione di un cloud auto attendendant, vedere [configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md).
 

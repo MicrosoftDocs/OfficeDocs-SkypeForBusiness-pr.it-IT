@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare il routing diretto di Microsoft Phone System.
-ms.openlocfilehash: 22cb8e289cd78d1736bb594280c6ebfc248c02a0
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 86406af88648d367f02fd420c9ba278bdfd47185
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836086"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888595"
 ---
 # <a name="configure-direct-routing"></a>Configurare Instradamento diretto
 
@@ -49,9 +49,9 @@ Questo articolo descrive come configurare il routing diretto di Microsoft Phone 
 
 Di seguito sono riportati i tre passaggi di alto livello per consentire di connettersi o associare l'SBC all'interfaccia di routing diretto: 
 
-- Connettersi all'interfaccia di amministrazione di **Skype for business online** con PowerShell 
-- Associare il SBC 
-- Convalidare l'associazione 
+1. Connettersi all'interfaccia di amministrazione di **Skype for business online** con PowerShell 
+2. Associare il SBC 
+3. Convalidare l'associazione 
 
 ### <a name="connect-to-skype-for-business-online-by-using-powershell"></a>Connettersi a Skype for business online tramite PowerShell 
 
@@ -204,16 +204,16 @@ Per aggiungere il numero di telefono e abilitare per la segreteria telefonica:
     Set-CsUser -Identity "<User name>" -EnterpriseVoiceEnabled $true -HostedVoiceMail $true -OnPremLineURI tel:<E.164 phone number>
     ```
 
-Ad esempio, per aggiungere un numero di telefono per l'utente "Spencer low", è necessario immettere quanto segue: 
+    Ad esempio, per aggiungere un numero di telefono per l'utente "Spencer low", è necessario immettere quanto segue: 
 
-```PowerShell
-Set-CsUser -Identity "Spencer Low" -OnPremLineURI tel:+14255388797 -EnterpriseVoiceEnabled $true -HostedVoiceMail $true
-```
+    ```PowerShell
+    Set-CsUser -Identity "Spencer Low" -OnPremLineURI tel:+14255388797 -EnterpriseVoiceEnabled $true -HostedVoiceMail $true
+    ```
 
-Il numero di telefono usato deve essere configurato come numero di telefono E. 164 completo con prefisso nazionale. 
+    Il numero di telefono usato deve essere configurato come numero di telefono E. 164 completo con prefisso nazionale. 
 
-  > [!NOTE]
-  > Se il numero di telefono dell'utente viene gestito in locale, USA Skype for Business Management Shell locale o pannello di controllo per configurare il numero di telefono dell'utente. 
+      > [!NOTE]
+      > Se il numero di telefono dell'utente viene gestito in locale, USA Skype for Business Management Shell locale o pannello di controllo per configurare il numero di telefono dell'utente. 
 
 ### <a name="configure-voice-routing"></a>Configurare il routing vocale 
 
@@ -286,7 +286,7 @@ Verificare che l'utilizzo sia stato creato immettendo:
 Get-CSOnlinePSTNUsage
 ``` 
 Che restituisce un elenco di nomi che possono essere troncati:
-```output
+```console
 Identity    : Global
 Usage       : {testusage, US and Canada, International, karlUsage. . .}
 ```
@@ -487,28 +487,28 @@ Name                      : International
 
 L'utilizzo PSTN "Redmond 1" e "Redmond" vengono riutilizzati in questo criterio di routing vocale per mantenere una gestione speciale per le chiamate al numero "+ 1 425 XXX XX XX" e "+ 1 206 XXX XX XX" come chiamate locali o in locale.
 
-   ```PowerShell
-   New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canada", "International"
-   ```
+  ```PowerShell
+  New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canada", "International"
+  ```
 
 Prendere nota dell'ordine degli usi PSTN:
 
-un. Se una chiamata effettuata al numero "+ 1 425 XXX XX XX" con gli usi configurati come nell'esempio seguente, la chiamata segue la route impostata nell'uso "USA e Canada" e viene applicata la logica di routing speciale. La chiamata viene quindi instradata tramite sbc1.contoso.biz e sbc2.contoso.biz prima, quindi sbc3.contoso.biz e sbc4.contoso.biz come route di backup.
+  un. Se una chiamata effettuata al numero "+ 1 425 XXX XX XX" con gli usi configurati come nell'esempio seguente, la chiamata segue la route impostata nell'uso "USA e Canada" e viene applicata la logica di routing speciale. La chiamata viene quindi instradata tramite sbc1.contoso.biz e sbc2.contoso.biz prima, quindi sbc3.contoso.biz e sbc4.contoso.biz come route di backup.
 
-b. Se l'utilizzo PSTN "internazionale" è prima di "Stati Uniti e Canada", le chiamate a + 1 425 XXX XX XX vengono instradate a sbc2.contoso.biz e sbc5.contoso.biz come parte della logica di routing. Immettere il comando:
+  b. Se l'utilizzo PSTN "internazionale" è prima di "Stati Uniti e Canada", le chiamate a + 1 425 XXX XX XX vengono instradate a sbc2.contoso.biz e sbc5.contoso.biz come parte della logica di routing. Immettere il comando:
 
-```PowerShell
-New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canada", "International"
-```
+  ```PowerShell
+  New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canada", "International"
+  ```
 
-Che restituisce
+Che restituisce:
 
-<pre>
-Identity              : International 
-OnlinePstnUsages : {US and Canada, International}    
-Description      :  
-RouteType             : BYOT
-</pre>
+    <pre>
+    Identity              : International 
+    OnlinePstnUsages : {US and Canada, International}    
+    Description      :  
+    RouteType             : BYOT
+    </pre>
 
 **Passaggio 4**: assegnare il criterio di routing vocale all'utente "John Woods" usando il comando seguente.
 

@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su cosa è necessario per eseguire la migrazione a routing diretto da una prospettiva di configurazione di Skype for business online e teams.
-ms.openlocfilehash: 85b53bf33cd8f9015ea9294876a06da3532ad085
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: fa7a3e09d4f79328545bff29b2f440ba0bfe6990
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836056"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888585"
 ---
 # <a name="migrate-to-direct-routing"></a>Eseguire la migrazione a Instradamento diretto
 
@@ -31,7 +31,7 @@ Questo articolo descrive le informazioni necessarie per eseguire la migrazione a
 - Sistema telefonico Office 365 con connettività PSTN locale in Skype for Business Server (per Skype for business online)  
 - Sistema telefonico Office 365 con connettività PSTN locale tramite Cloud Connector Edition (per Skype for business online)
 
-  
+
 Oltre a questi passaggi di configurazione, la configurazione è necessaria anche per il controller Border Session (SBC) per instradare le chiamate alla nuova route. Che esula dall'ambito di questo documento. Per altre informazioni, vedere la documentazione del fornitore SBC.  
 
 ## <a name="user-provisioning-end-state-for-various-pstn-connectivity-options"></a>Stato finale di provisioning degli utenti per varie opzioni di connettività PSTN 
@@ -55,7 +55,7 @@ OnPremLineURI |N/D|Il numero di telefono deve essere sincronizzato dall'annuncio
 |TeamsCallingPolicy</br>AllowGroupCalling|True|N/D|N/D|True|
 ||||||
 
-<sup>1</sup> La scelta della modalità corretta di TeamsUpgradePolicy dipende dallo scenario. Leggere l'esperienza vocale in diverse modalità nelle [linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](migration-interop-guidance-for-teams-with-skype.md).
+<sup>1</sup> la scelta della modalità corretta della TeamsUpgradePolicy dipende dallo scenario. Leggere l'esperienza vocale in diverse modalità nelle [linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](migration-interop-guidance-for-teams-with-skype.md).
 
 Come parte di questo sforzo, Microsoft ha recentemente aggiornato l'"interfaccia di amministrazione di Microsoft Teams" (noto anche come Modern Portal) per riflettere il nuovo modello di gestione basato sulle modalità di coesistenza. In Modern Portal la configurazione di TeamsUpgradePolicy ora imposta automaticamente anche TeamsInteropPolicy su un valore uniforme, quindi TeamsInteropPolicy non viene più esposto nell'interfaccia utente. Tuttavia, gli amministratori che usano PowerShell devono comunque impostare sia TeamsUpgradePolicy che TeamsInteropPolicy insieme per garantire il routing corretto. Una volta completata la transizione a TeamsUpgradePolicy, non sarà più necessario impostare anche TeamsInteropPolicy.
 
@@ -72,7 +72,7 @@ Per altre informazioni sulla migrazione dai piani di chiamata, vedere:
  
 È consigliabile rimuovere le informazioni del piano di licenza configurate in precedenza nel modo seguente:
  
-```
+```powershell
 $companyname = “contoso” 
 $lic1 = $companyname + “:MCOPSTN1” 
 $lic2 = $companyname + “:MCOPSTN2” 
@@ -91,6 +91,7 @@ Per altre informazioni sulla migrazione da un sistema telefonico a una connettiv
 ```PowerShell
 Grant-CsVoiceRoutingPolicy -PolicyName $NULL -Identity <UPN> 
 ```
+> [!NOTE]
 > Se è configurato un CsVoiceRoutingPolicy globale, è consigliabile rimuovere qualsiasi utilizzo PSTN associato a questo criterio globale. 
 
 ## <a name="migrating-from-office-365-phone-system-with-on-premises-pstn-connectivity-via-cloud-connector-edition"></a>Migrazione da Office 365 Phone System con connettività PSTN locale tramite Cloud Connector Edition 
@@ -109,7 +110,7 @@ Set-CsUserPstnSettings -Identity <UPN> -AllowInternationalCalls $false -HybridPS
 ```
 
 
-## <a name="related-links"></a>COLLEGAMENTI CORRELATI
+## <a name="related-links"></a>Collegamenti correlati
 
 [Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](migration-interop-guidance-for-teams-with-skype.md)
 

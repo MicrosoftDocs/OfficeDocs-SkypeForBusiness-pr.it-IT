@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come definire e usare le etichette di sensitività in Microsoft teams.
-ms.openlocfilehash: 446bd222ce29ed627eb3229b244228665bbff6c0
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: e9f007fd174027443191cd7d2dbb8f8321c7424f
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838116"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888735"
 ---
 # <a name="sensitivity-labels-for-microsoft-teams"></a>Etichette di sensitività per Microsoft Teams
 
@@ -68,9 +68,9 @@ Se la creazione del team inizia a non riuscire in qualsiasi momento durante l'an
 
 Tieni presente che l'impostazione EnableMIPLabels deve essere impostata su false come indicato di seguito:
 
-```
+```console
 $setting["EnableMIPLabels"] = "False"
- ```
+```
 
 ## <a name="using-sensitivity-labels-with-teams"></a>Uso di etichette di sensitività con teams
 
