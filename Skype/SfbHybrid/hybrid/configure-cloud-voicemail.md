@@ -13,12 +13,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Istruzioni per l'implementazione della segreteria telefonica basata su cloud per gli utenti ospitati in Skype for Business Server.
-ms.openlocfilehash: df76051081baaae412c36acf4e73171f2ebce220
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f99286d4a3495d0214c46d28b105ad9076d238b2
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726916"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888535"
 ---
 # <a name="configure-cloud-voicemail-service-for-on-premises-users"></a>Configurare il servizio di segreteria cloud per gli utenti locali
 
@@ -102,7 +102,7 @@ Ad esempio, il comando seguente consente di assegnare un criterio di segreteria 
 
 
 ```PowerShell
-Get-CsUser -Identity "User1" | Grant-CsHostedVoicemailPolicy -PolicyName "Tag:CloudVoiceMailUsers" 
+Get-CsUser -Identity "User1" | Grant-CsHostedVoicemailPolicy -Identity "Tag:CloudVoiceMailUsers" 
 ```
 
 ## <a name="enable-a-user-for-cloud-voicemail"></a>Abilitare un utente per la segreteria telefonica cloud
@@ -111,13 +111,17 @@ Per consentire alle chiamate vocali di un utente di essere instradate alla segre
 
 Ad esempio, il comando seguente consente di abilitare un account utente per la segreteria telefonica cloud: 
 
-```Set-CsUser -Identity "User1" -HostedVoiceMail $True```
+```powershell
+Set-CsUser -Identity "User1" -HostedVoiceMail $True
+```
 
 Il cmdlet verifica che un criterio di segreteria telefonica cloud, a livello globale, sito o utente, si applichi a questo utente. Se nessun criterio è applicabile il cmdlet non riesce.  
 
 Nell'esempio seguente viene disabilitato un account utente per la segreteria telefonica cloud:
 
-```Set-CsUser -Identity "User1" -HostedVoiceMail $False```
+```powershell
+Set-CsUser -Identity "User1" -HostedVoiceMail $False
+```
 
 Il cmdlet verifica che nessun criterio di segreteria telefonica ospitata, a livello globale, sito o utente, si applichi a questo utente. Se un criterio è applicabile il cmdlet non riesce.
 

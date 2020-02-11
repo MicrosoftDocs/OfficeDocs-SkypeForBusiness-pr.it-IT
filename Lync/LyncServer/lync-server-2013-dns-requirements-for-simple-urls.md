@@ -12,18 +12,18 @@ ms:contentKeyID: 48183912
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bfc827a1cd48bdc6a7a15b8ba54f7ac451d1b352
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2a05b5e5afc645c9219d02c8a551e4c0af9d93b0
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737376"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888715"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="https://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="dns-requirements-for-simple-urls-in-lync-server-2013"></a>Requisiti DNS per gli URL semplici in Lync Server 2013
 
@@ -182,13 +182,13 @@ Se si hanno più siti che contengono pool Front-end e il provider DNS supporta G
 
 Per configurare la configurazione, creare due indirizzi di GeoDNS. Ogni indirizzo contiene due record DNS A o CNAME che vengono risolti in due pool combinati per scopi di ripristino di emergenza. Un indirizzo GeoDNS viene usato per l'accesso interno e viene risolto nell'indirizzo IP di FQDN Web interno o di bilanciamento del carico per i due pool. L'altro indirizzo GeoDNS viene usato per l'accesso esterno e si risolve nell'FQDN Web esterno o nell'indirizzo IP del bilanciamento del carico per i due pool. Di seguito è riportato un esempio per l'URL semplice Meet, che usa i nomi di dominio completi per i pool.
 
-   ```
+   ```console
     Meet-int.geolb.contoso.com
          Pool1InternalWebFQDN.contoso.com
          Pool2InternalWebFQDN.contoso.com
    ```
 
-   ```
+   ```console
    Meet-ext.geolb.contoso.com
          Pool1ExternalWebFQDN.contoso.com
          Pool2ExternalWebFQDN.contoso.com
@@ -212,8 +212,10 @@ Quando usi questo metodo, puoi configurare ogni indirizzo di GeoDNS in modo da u
 
 Una volta configurata questa configurazione, è necessario usare un'applicazione di monitoraggio per configurare il monitoraggio HTTP per la visualizzazione degli errori. Per l'accesso esterno, monitorare per assicurarsi che HTTPS ottenere le richieste di individuazione automatica per l'FQDN Web esterno o l'indirizzo IP del bilanciamento del carico per i due pool abbia successo. Ad esempio, le richieste seguenti non devono contenere alcuna intestazione **Accept** e devono restituire **200 OK**.
 
+```console
     HTTPS GET Pool1ExternalWebFQDN.contoso.com/autodiscover/autodiscoverservice.svc/root
     HTTPS GET Pool2ExternalWebFQDN.contoso.com/autodiscover/autodiscoverservice.svc/root
+```
 
 Per l'accesso interno, è necessario monitorare la porta 5061 nell'FQDN Web interno o nell'indirizzo IP del bilanciamento del carico per i due pool. Se vengono rilevati errori di connettività, il VIP per questi pool deve chiudere le porte 80, 443 e 444.
 
