@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d53e990f-1c5f-46d1-9eb1-8396782c2753
 description: "Riepilogo: informazioni sull'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: a027cc7402bad7524343391f9bf7039dd077a46c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 283ef7544435c3954898b2d5ae9e5f5b38762f3c
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816695"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888785"
 ---
 # <a name="repository-api-for-call-quality-dashboard-cqd-in-skype-for-business-server"></a>API del repository per Call Quality Dashboard (Call Quality Dashboard) in Skype for Business Server
  
@@ -58,7 +58,7 @@ L'API del repository supporta la condivisione delle risorse CORS (Cross-Origin R
   
 Ricordarsi di includere l'esatto protocollo, il nome host e la porta (se presenti). Non inserire alcun carattere barra (/) alla fine. È possibile specificare più voci separandoli con una virgola.
   
-```
+```xml
 <repositoryConfiguration>
     <service corsTrustedOrigin="https://<trusted-server>,http://<another-trusted-domain>:8080"" />
     <diagnostics eventLevel="Verbose" systemLoggedEventLevel="Error">

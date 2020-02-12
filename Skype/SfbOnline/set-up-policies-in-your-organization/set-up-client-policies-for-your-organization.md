@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: I criteri client aiutano a determinare le funzioni di Skype for Business online messe a disposizione degli utenti; per esempio, si potrebbe dare ad alcuni utenti il diritto di trasferire i file negando lo stesso diritto ad altri utenti.
-ms.openlocfilehash: 0d92e9d4aab477cdcb010b4840d43a622f28b8cf
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 4c3434a1649c7bce01557ab97c6c6d9f977c0ab4
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41693001"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41887905"
 ---
 # <a name="set-up-client-policies-for-your-organization"></a>Impostazione dei criteri client per la propria organizzazione
 
@@ -41,51 +41,50 @@ Le impostazioni dei criteri client possono essere configurate al momento della c
 
 - **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
     
-1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
-    
-2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
-    
-3. Se non si ha la versione 3,0 o successiva, è necessario scaricare e installare gli aggiornamenti in Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Riavviare il computer quando viene richiesto.
-    
-4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
+    1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
+        
+    2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
+        
+    3. Se non si ha la versione 3,0 o successiva, è necessario scaricare e installare gli aggiornamenti in Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Riavviare il computer quando viene richiesto.
+        
+    4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
     
     Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx).
     
 - **Avviare una sessione di Windows PowerShell**
     
-1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
+    1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
+        
+    2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
     
-2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
-    
-    > [!NOTE]
-    > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
+        > [!NOTE]
+        > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
 
-   ```PowerShell      
-    Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
-    $credential = Get-Credential
-    $session = New-CsOnlineSession -Credential $credential
-    Import-PSSession $session
-   ```
-
-   Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx) o [configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
+       ```powershell
+        Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
+        $credential = Get-Credential
+        $session = New-CsOnlineSession -Credential $credential
+        Import-PSSession $session
+       ```
+Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx) o [configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
     
 ### <a name="disable-emoticons-and-presence-notifications-and-prevent-saving-of-ims"></a>Disabilitare emoticon e notifiche di presenza e impedire il salvataggio di messaggi istantanei
 
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
     
-> 
->   ```PowerShell
->   New-CsClientPolicy -Identity ClientPolicy -DisableEmoticons $true -DisablePresenceNote -$true -DisableSavingIM $true
->   ```
+ 
+   ```powershell
+   New-CsClientPolicy -Identity ClientPolicy -DisableEmoticons $true -DisablePresenceNote -$true -DisableSavingIM $true
+   ```
 
   Per altre informazioni, vedere il cmdlet [New-CsClientPolicy](https://technet.microsoft.com/library/mt779155.aspx) .
     
 - Per assegnare il criterio creato a tutti gli utenti dell'organizzazione, eseguire:
     
-> 
->   ```PowerShell
->   Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName ClientPolicy
->   ```
+ 
+   ```powershell
+   Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName ClientPolicy
+   ```
 
   Per altre informazioni, vedere il cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/library/mt779152.aspx) .
     
@@ -95,19 +94,19 @@ Se è già stato creato un criterio, è possibile usare il cmdlet [Set-CsClientP
 
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
     
-> 
->   ```PowerShell
->   New-CsClientPolicy -Identity URLClientPolicy -EnableURL $true
->   ```
+ 
+   ```powershell
+   New-CsClientPolicy -Identity URLClientPolicy -EnableURL $true
+   ```
 
   Per altre informazioni, vedere il cmdlet [New-CsClientPolicy](https://technet.microsoft.com/library/mt779155.aspx) .
     
 - Per assegnare il criterio creato a tutti gli utenti dell'organizzazione, eseguire:
     
-> 
->   ```PowerShell
->   Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName URLClientPolicy
->   ```
+ 
+   ```powershell
+   Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName URLClientPolicy
+   ```
 
   Per altre informazioni, vedere il cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/library/mt779152.aspx) .
     
@@ -116,18 +115,18 @@ Se è già stato creato un criterio, è possibile usare il cmdlet [Set-CsClientP
 ### <a name="prevent-showing-recent-contacts"></a>Impedire di mostrare i contatti recenti
 
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
-  > 
-  > ```PowerShell
-  > New-CsClientPolicy -Identity ContactsClientPolicy -ShowRecentContacts $false 
-  > ```
+   
+   ```powershell
+   New-CsClientPolicy -Identity ContactsClientPolicy -ShowRecentContacts $false 
+   ```
 
   Per altre informazioni, vedere il cmdlet [New-CsClientPolicy](https://technet.microsoft.com/library/mt779155.aspx) .
     
 - Per assegnare il criterio creato ad Amos Marble, eseguire:
-  > 
-  > ```PowerShell
-  > Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName ContactsClientPolicy
-  > ```
+   
+   ```powershell
+   Grant-CsClientPolicy -identity "amos.marble@contoso.com" -PolicyName ContactsClientPolicy
+   ```
 
   Per altre informazioni, vedere il cmdlet [Grant-CsClientPolicy](https://technet.microsoft.com/library/mt779152.aspx) .
     

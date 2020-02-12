@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 946189fa-521f-455c-9762-904e7e41b791
 description: 'Riepilogo: leggere questo argomento per risolvere i problemi di distribuzione di gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: a787297b25b983303e65f398dfb7b275ae044944
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 12b6176e64d034d94e8a6ad86e748c1906f9c0c5
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816215"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888875"
 ---
 # <a name="troubleshoot-statistics-manager-for-skype-for-business-server"></a>Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
  
@@ -47,7 +47,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
 
     Cercare "MaxProcessMemoryMB" e cambiare il valore in "0" come illustrato:
     
-  ```console
+  ```xml
   <setting name="MaxProcessMemoryMB" serializeAs="String"> <value>300</value> </setting>
   ```
 
@@ -60,13 +60,13 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
     Se l'agente non riesce a connettersi al computer del listener, verificare quanto segue:
     
-1. Verificare che il servizio listener sia in uso nel computer listener. In caso contrario, assicurati che Redis sia in uso nel server e quindi riavvia il servizio listener.
-    
-    Controllare il log eventi di gestione statistiche nel computer listener per verificare che non ci siano problemi con il servizio listener di gestione statistiche.
-    
-2. Usare uno strumento di connettività come Telnet per verificare la connettività dal computer dell'agente al listener nella porta corretta.
-    
-    In caso contrario, verificare che la regola del firewall in arrivo sia abilitata nel computer del listener per il tipo di rete a cui è connesso il computer listener (privato/pubblico/dominio). Se il computer listener non è collegato a un dominio, la rete potrebbe essere elencata come pubblica e in questo caso le regole del firewall installate con gestione statistiche non verranno applicate per impostazione predefinita.
+    1. Verificare che il servizio listener sia in uso nel computer listener. In caso contrario, assicurati che Redis sia in uso nel server e quindi riavvia il servizio listener.
+        
+        Controllare il log eventi di gestione statistiche nel computer listener per verificare che non ci siano problemi con il servizio listener di gestione statistiche.
+        
+    2. Usare uno strumento di connettività come Telnet per verificare la connettività dal computer dell'agente al listener nella porta corretta.
+        
+        In caso contrario, verificare che la regola del firewall in arrivo sia abilitata nel computer del listener per il tipo di rete a cui è connesso il computer listener (privato/pubblico/dominio). Se il computer listener non è collegato a un dominio, la rete potrebbe essere elencata come pubblica e in questo caso le regole del firewall installate con gestione statistiche non verranno applicate per impostazione predefinita.
     
 - **4000** — mancato download delle informazioni sul server da listener (motivo sconosciuto)
     

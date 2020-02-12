@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 287f64f5-0f8a-455a-8979-7b34bf0217bb
 description: 'Riepilogo: informazioni sul processo di distribuzione per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: ccfb19bf8069bf72d52d7399b012d81af72e4110
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 3ab7ea5130b33578169505969ee8f43a73a2ac32
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816855"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888835"
 ---
 # <a name="deploy-call-quality-dashboard-for-skype-for-business-server"></a>Distribuire dashboard qualità chiamata per Skype for Business Server
  
@@ -88,7 +88,7 @@ La distribuzione di Call Quality dashboard include la configurazione dell'infras
    - **Processo agente SQL-password nome &amp; utente:** Nome dell'account del servizio di dominio e password (in maschera) che verranno usati per eseguire il passaggio "dati di archivio QoE" del processo di SQL Server Agent (che eseguirà la stored procedure per recuperare i dati da DB metriche QoE in archivio DB, quindi questo account deve avere accesso in lettura al DB metriche QoE, come indicato nella sezione account. Questo account deve anche avere un account di accesso nell'istanza di SQL Server di archiviazione QoE.
     
      > [!NOTE]
-     > L'account in cui è in esecuzione l'istanza di SQL Server, ad esempio NT SERVICE\MSSQLSERVER, deve avere accesso/autorizzazione alle directory indicate in precedenza per avere successo nell'installazione. Per informazioni dettagliate, vedere [configurare le autorizzazioni di file System per l'accesso a motore di database](https://msdn.microsoft.com/en-us/library/jj219062%28v=sql.110%29.aspx)
+     > L'account in cui è in esecuzione l'istanza di SQL Server, ad esempio NT SERVICE\MSSQLSERVER, deve avere accesso/autorizzazione alle directory indicate in precedenza per avere successo nell'installazione. Per informazioni dettagliate, vedere [configurare le autorizzazioni di file System per l'accesso a motore di database](https://msdn.microsoft.com/library/jj219062%28v=sql.110%29.aspx)
   
 7. Dopo aver fatto clic su Avanti, il programma di installazione eseguirà i controlli pre-requisiti e riferirà se si verificano problemi. Quando vengono superati tutti i controlli prerequisiti, il programma di installazione passa alla pagina di configurazione del cubo. 
     
@@ -104,7 +104,7 @@ La distribuzione di Call Quality dashboard include la configurazione dell'infras
    - **Server analisi cubo:** Nome dell'istanza del servizio di SQL Server Analysis per la posizione in cui deve essere creato il cubo. Può trattarsi di un computer diverso, ma l'utente che esegue l'installazione deve essere un membro degli amministratori del server dell'istanza di SQL Server Analysis Service di destinazione.
     
      > [!NOTE]
-     >  Per altre informazioni sulla configurazione delle autorizzazioni di amministratore del server di Analysis Services, vedere [concedere le autorizzazioni di amministratore del server (Analysis Services)](https://msdn.microsoft.com/en-us/library/ms174561.aspx)
+     >  Per altre informazioni sulla configurazione delle autorizzazioni di amministratore del server di Analysis Services, vedere [concedere le autorizzazioni di amministratore del server (Analysis Services)](https://msdn.microsoft.com/library/ms174561.aspx)
   
    - **Usare più partizioni:** L'impostazione predefinita è impostata su "più partizioni", che richiede Business Intelligence Edition o Enterprise Edition di SQL Server. Per Standard Edition selezionare l'opzione "singola partizione". Tieni presente che le prestazioni di elaborazione del cubo potrebbero avere un impatto se si usa una singola partizione.
     
@@ -135,7 +135,7 @@ Al termine del programma di installazione, probabilmente il processo di SQL Serv
   
 I messaggi di log dettagliati verranno visualizzati se è abilitata la modalità debug. Per abilitare la modalità debug, passa a **%SystemDrive%\Program Skype for Business 2015 CQD\QoEDataService\web.config**e aggiorna la riga seguente in modo che il valore sia impostato su **true**:
 
-```
+```xml
 <add key="QoEDataLib.DebugMode" value="True" /> 
 ```
 
@@ -161,7 +161,7 @@ Gli amministratori devono quindi aggiungere nuove regole Allow e concedere agli 
   
 I dettagli della configurazione sono archiviati nel file Web. config situato nella directory fisica del portale.
   
-```XML
+```xml
 <?xml version="1.0" encoding="UTF-8"?> <configuration> <system.webServer> <security> <authorization> <remove users="*" roles="" verbs="" /> <add accessType="Allow" roles="CQDPortalUsers" /> </authorization> </security> </system.webServer> </configuration> 
 ```
 
@@ -233,7 +233,7 @@ Per i binding della porta HTTP e HTTPS, il programma di installazione creerà i 
   
 Per abilitare SSL/TLS in IIS e imporre agli utenti di connettersi tramite HTTPS sicuro anziché HTTP:
   
-1. Configurare Secure Sockets Layer in IIS, vedere [configurazione di Secure Sockets Layer in IIS 7](https://technet.microsoft.com/en-us/library/cc771438%28v=ws.10%29.aspx). Una volta terminato, `http` Sostituisci con `https`.
+1. Configurare Secure Sockets Layer in IIS, vedere [configurazione di Secure Sockets Layer in IIS 7](https://technet.microsoft.com/library/cc771438%28v=ws.10%29.aspx). Una volta terminato, `http` Sostituisci con `https`.
     
 2. Per istruzioni sull'abilitazione di TLS nelle connessioni di SQL Server, vedere [come abilitare la crittografia SSL per un'istanza di SQL Server tramite Microsoft Management Console](https://support.microsoft.com/en-us/kb/316898/).
     

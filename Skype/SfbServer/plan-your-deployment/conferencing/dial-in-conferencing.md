@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: ea024a26-37b3-410e-961b-83ab85c07540
 description: 'Riepilogo: leggere questo argomento per informazioni sulla pianificazione per i servizi di conferenza telefonica con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 90fe1ff1770d34b9fe0671de1a2fc0f9382acae5
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: f78f5dcea5ce26bdfeb0ba52a6eeaf046ae6965b
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815994"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888545"
 ---
 # <a name="plan-for-dial-in-conferencing-in-skype-for-business-server"></a>Pianificare i servizi di conferenza telefonica con accesso esterno in Skype for Business Server
  
@@ -92,9 +92,9 @@ Per altre informazioni sulla creazione di un dial plan, vedere [creare o modific
 
 Le directory conferenza mantengono una mappatura tra l'ID riunione alfanumerico usato da un partecipante per partecipare a una conferenza quando si usa Skype for business e l'ID conferenza numerico che viene usato da un partecipante di conferenza telefonica con accesso esterno per partecipare alla conferenza. Il formato dell'ID conferenza è il seguente:
   
-```
-<housekeeping digit (1 digit)><conference directory (usually 1-2 digits)><conference number (variable number of digits><check digit (1 digit)>
-```
+
+\<servizio di pulizia (1 cifra\>\<) (\>\<in genere 1-2 cifre) numero di conferenza (numero variabile di\>\<cifre di controllo digit (1 cifra)\>
+
 
 La creazione di più directory conferenza garantirà che gli ID conferenza rimarranno invariati finché non verrà creata una quantità significativa di conferenze. In un'organizzazione con un numero tipico di conferenze per ogni utente, è consigliabile creare una directory conferenza per ogni utenti di 999 nel pool. Usando questa linea guida, gli ID conferenza possono in genere essere mantenuti piccoli. Tuttavia, una volta che il numero di directory conferenza (tra i pool) supera 9, il numero dell'ID conferenza crescerà per supportare altre conferenze.
   

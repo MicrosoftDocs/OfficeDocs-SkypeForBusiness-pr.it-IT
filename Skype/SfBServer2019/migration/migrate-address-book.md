@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: "In generale, la Rubrica viene migrata insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi di post-migrazione se sono stati personalizzati gli elementi seguenti nell'ambiente legacy:"
-ms.openlocfilehash: 73c491a538e6bce95779533b88513321c674f018
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 976717679a5a2f1dbdd1e2045cc5d5dfe43911e3
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41813604"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888165"
 ---
 # <a name="migrate-address-book"></a>Eseguire la migrazione della rubrica
 
@@ -51,13 +51,13 @@ Se si imposta il valore di **UseNormalizationRules** su false in modo che gli ut
 
     Le stringhe che includono gli spazi vuoti o la punteggiatura necessari causano l'errore delle regole di normalizzazione perché questi caratteri vengono rimossi dalla stringa che viene immessa nelle regole di normalizzazione. Se sono presenti stringhe che includono spazi vuoti o segni di punteggiatura necessari, è necessario modificare le stringhe. Ad esempio, la stringa seguente causerà l'errore della regola di normalizzazione:
 
-   ```
+   ```console
    \s*\(\s*\d\d\d\s*\)\s*\-\s*\d\d\d\s*\-\s*\d\d\d\d
    ```
 
     La stringa seguente non provocherebbe l'errore della regola di normalizzazione:
 
-   ```
+   ```console
    \s*\(?\s*\d\d\d\s*\)?\s*\-?\s*\d\d\d\s*\-?\s*\d\d\d\d
    ```
 

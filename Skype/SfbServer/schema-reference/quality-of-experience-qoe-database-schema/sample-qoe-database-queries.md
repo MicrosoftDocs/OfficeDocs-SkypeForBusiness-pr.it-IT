@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 04e6bdd3-bbd1-47ca-8114-94a3db6beeeb
 description: Questa sezione contiene query di esempio per il database QoE (Quality of Experience).
-ms.openlocfilehash: 46286f23a2f687d8c7464c2e131e4cef943a57c2
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 099e0ed179ab22e3610aaf8b00d3745a315bb734
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41806204"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888655"
 ---
 # <a name="sample-qoe-database-queries"></a>Query del database QoE di esempio
  
@@ -26,13 +26,13 @@ Questa sezione contiene query di esempio per il database QoE (Quality of Experie
   
 Usare l'esempio seguente per ottenere la media del jitter e della perdita di pacchetti per tutti i flussi audio.
   
-```
+```SQL
 select avg(cast(JitterInterArrival as bigint)) as JitterAvg, avg(PacketLossRate) as PacketLossRateAvg from AudioStream
 ```
 
 Usare l'esempio seguente per trovare il numero totale di conferenze che hanno usato la console riunione.
   
-```
+```SQL
 select avg(ConversationalMOS)
 from SessionView s
 inner join MediaLineView m
@@ -45,7 +45,7 @@ on s.ConferenceDateTime = m.ConferenceDateTime
 
 Usa l'esempio seguente per ottenere ConversstionalMOS, SendingMOS e ListendingMOS per dispositivo di acquisizione.
   
-```
+```SQL
 select t.DeviceName as Device, count(*) as SampleNum, avg(ConversationalMOS) as ConversationalMOS, avg(SendListenMOS) SendingMOS, avg(RecvListenMOS) as ListendingMOS
 from
 (

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 25c2450a-f7b3-4dd2-987d-64f4246dd019
 description: "Riepilogo: informazioni sull'API dati per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: e302c04dee298f9e5d2f33c908b5421ecff4de9a
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: b8ff4823fad320ae57b8f06104afbb354c09b4eb
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816865"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888435"
 ---
 # <a name="data-api-for-call-quality-dashboard-cqd-in-skype-for-business-server"></a>API dati per Call Quality Dashboard (Call Quality Dashboard) in Skype for Business Server
  
@@ -52,7 +52,7 @@ L'API dei dati supporta la condivisione delle risorse CORS (Cross-Origin Resourc
   
 Ricordarsi di includere l'esatto protocollo, il nome host e la porta (se presenti). Non inserire alcun carattere barra (/) alla fine. È possibile specificare più voci separandoli con una virgola.
   
-```
+```xml
 <configuration>
   <appSettings>
     <add key="corsTrustedOrigin" value="https://<trusted-server>,http://<another-trusted-domain>:8080" /> <!-- Domains which are trusted to get the data -->

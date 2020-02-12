@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ab2e0d93-cf52-4a4e-b5a4-fd545df7a1a9
 description: 'Riepilogo: configurare gli account utente di test e le impostazioni dei nodi Watcher per le transazioni sintetiche di Skype for Business Server.'
-ms.openlocfilehash: ce0c82f6f850c7a2b632c828f938979747d99e97
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 877e7256c31bf5bf66f25e80c9625078cfc15b02
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816115"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888855"
 ---
 # <a name="configure-watcher-node-test-users-and-settings"></a>Configurare gli utenti e le impostazioni di test del nodo Watcher
  
@@ -278,19 +278,21 @@ Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, pro
     
 2. Nella finestra della console digitare il comando seguente e quindi premere INVIO. 
     
-```console
-bitsadmin /util /SetIEProxy NetworkService NO_PROXY
-```
+    ```console
+    bitsadmin /util /SetIEProxy NetworkService NO_PROXY
+    ```
 
-Nella finestra di comando verrà visualizzato il messaggio seguente:
+    Nella finestra di comando verrà visualizzato il messaggio seguente:
+
+    ```console
+    BITSAdmin is deprecated and is not guaranteed to be available in future versions of Windows. Administration tools for the BITS service are now provided by BITS PowerShell cmdlets.
   
-BITSAdmin è deprecato e non è garantito per essere disponibile nelle versioni future di Windows. Gli strumenti di amministrazione per il servizio BITS sono ora forniti dai cmdlet di PowerShell BITS.
-  
-Impostazioni proxy Internet per l'account NetworkService impostato su NO_PROXY. 
-  
-(Connection = default)
-  
-Questo messaggio indica che sono state disabilitate le impostazioni proxy di Internet Explorer per l'account del servizio di rete.
+    Internet proxy settings for account NetworkService set to NO_PROXY. 
+      
+    (connection = default)
+    ```
+      
+    Questo messaggio indica che sono state disabilitate le impostazioni proxy di Internet Explorer per l'account del servizio di rete.
   
 ### <a name="exchange-unified-messaging-synthetic-transaction"></a>Transazione sintetica di messaggistica unificata di Exchange
 
@@ -304,7 +306,7 @@ Per usare la transazione sintetica della chat persistente, è necessario prima d
   
 È possibile usare la transazione sintetica della chat persistente per configurare questo canale: 
   
-```
+```powershell
 $cred1 = Get-Credential "contoso\testUser1"
 $cred2 = Get-Credential "contoso\testUser2"
 
@@ -376,7 +378,7 @@ La transazione sintetica video Interop Server (VIS) richiede il download e l'ins
   
 Per installare VISSTSupportPackage. msi, verificare che le dipendenze (in requisiti di sistema) per MSI siano già installate. Eseguire VISSTSupportPackage. msi per eseguire un'installazione semplice. Msi installa tutti i file nel percorso seguente: "pacchetto di supporto per le transazioni sintetiche%ProgramFiles%\VIS".
   
-Per altre informazioni su come eseguire la transazione sintetica di VIS, vedere la documentazione relativa al cmdlet [test-CsP2PVideoInteropServerSipTrunkAV](https://technet.microsoft.com/en-us/library/dn985894.aspx) .
+Per altre informazioni su come eseguire la transazione sintetica di VIS, vedere la documentazione relativa al cmdlet [test-CsP2PVideoInteropServerSipTrunkAV](https://technet.microsoft.com/library/dn985894.aspx) .
   
 ## <a name="changing-the-run-frequency-for-synthetic-transactions"></a>Modifica della frequenza di esecuzione per le transazioni sintetiche
 <a name="special_synthetictrans"> </a>

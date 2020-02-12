@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 8d1d5819-add2-4f5d-a436-74c00a281df0
 description: 'Se è necessario rimuovere il file server che sta attualmente agendo come archivio per la distribuzione di Skype for Business Server o se è necessario apportare altre modifiche che rendessero disponibile il file Store corrente, è prima di tutto necessario creare una nuova condivisione. È quindi necessario eseguire la procedura seguente:'
-ms.openlocfilehash: e1c4338e33e736c04dbb1a2a2e81a7233df65763
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 91ba8393a958188e368ff3f8f5d2a85bcfcc1396
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817107"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888455"
 ---
 # <a name="move-file-store-data-to-a-new-file-store-in-skype-for-business-server"></a>Trasferire i dati dell'archivio file in un nuovo archivio di file in Skype for Business Server
 
@@ -37,7 +37,7 @@ Se è necessario rimuovere il file server che sta attualmente agendo come archiv
 
 1. Accedere a un computer come membro del gruppo RTCUniversersalServerAdmins o CsServerAdministrator in cui sono installati gli strumenti di amministrazione di Skype for Business Server.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.
 
 3. Nella barra di spostamento sinistra fare clic su **topologia**e quindi su **stato**.
 
@@ -55,8 +55,8 @@ Se è necessario rimuovere il file server che sta attualmente agendo come archiv
 
    c. In **Definisci nuovo archivio file**, in **FQDN file server**, digitare il nome di dominio completo (FQDN) del file server. In **condivisione file**Digitare il nome della cartella per la nuova condivisione file e quindi fare clic su **OK**.
 
-    > [!IMPORTANT]
-    > Questo passaggio definisce un nuovo archivio di file da usare in Generatore di topologie. Puoi definirla una sola volta, non per ogni server. Prima di pubblicare la topologia, è necessario creare la condivisione file definita nel file server definito. Per informazioni dettagliate, vedere [definire l'archivio di file per il front-end](https://technet.microsoft.com/library/90994400-c4e5-4509-af41-121ac716fbca.aspx).
+     > [!IMPORTANT]
+     > Questo passaggio definisce un nuovo archivio di file da usare in Generatore di topologie. Puoi definirla una sola volta, non per ogni server. Prima di pubblicare la topologia, è necessario creare la condivisione file definita nel file server definito. Per informazioni dettagliate, vedere [definire l'archivio di file per il front-end](https://technet.microsoft.com/library/90994400-c4e5-4509-af41-121ac716fbca.aspx).
 
 8. Per ogni server o pool che usa l'archivio di file, eseguire le operazioni seguenti:
 
@@ -70,10 +70,9 @@ Se è necessario rimuovere il file server che sta attualmente agendo come archiv
 
 11. Nella riga di comando digitare quanto segue:
 
-     ```console
-     Robocopy \\<OldFileServer>\<OldShare> \\<NewFileServer>\<NewShare> /S /R:10 /W:10 /XF Meeting.Active /MT /LOG:<directory path\logname>
-
-     ```
+    ```console
+    Robocopy \\<OldFileServer>\<OldShare> \\<NewFileServer>\<NewShare> /S /R:10 /W:10 /XF Meeting.Active /MT /LOG:<directory path\logname>
+    ```
 
     > [!TIP]
     > L'opzione/S copia i file, le directory e le sottodirectory. L'opzione/XF ignora tutti i file denominati meeting. Active. Le versioni correnti di Robocopy. exe con l'opzione/MT aumentano notevolmente la velocità di copia usando più thread. Per l'opzione/LOG, usare un percorso di directory e un nome di file di log sotto forma di C:\Logfiles\log.txt. Questa opzione consente di creare un file di log delle operazioni nella posizione denominata.
@@ -88,8 +87,6 @@ Se è necessario rimuovere il file server che sta attualmente agendo come archiv
 
 ## <a name="see-also"></a>Vedere anche
 
-
 [Riassegnare un server a un altro archivio di file](https://technet.microsoft.com/library/18509cce-a4d2-4537-a822-f99de6d7598e.aspx)
 
 [Rimuovere un archivio di file](https://technet.microsoft.com/library/1ba7eb15-5c87-4357-b4d8-f59409ac7f71.aspx)
-

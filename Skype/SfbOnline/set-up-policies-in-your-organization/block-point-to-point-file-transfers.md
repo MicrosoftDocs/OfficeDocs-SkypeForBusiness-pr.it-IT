@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: In Skype for business online hai la possibilità di controllare i trasferimenti di file Point-to-Point (P2P) come parte delle impostazioni dei criteri di conferenza esistenti. Tuttavia, questo consente o blocca i trasferimenti di file per gli utenti che trasferiscono o meno i file a un utente che si trova all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguendo i passaggi seguenti, è possibile bloccare i trasferimenti di file P2P con organizzazioni o partner federati.
-ms.openlocfilehash: 8c2cc90af2642a9094076c1569eee8b0ec4b15ff
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 7983ae72cd3b06a21fd4947883a3043d2506b92e
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41693041"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41887965"
 ---
 # <a name="block-point-to-point-file-transfers"></a>Bloccare i trasferimenti di file “punto a punto”
 
@@ -55,31 +55,31 @@ Per ottenere questo lavoro, l'utente deve usare una versione supportata di un'ap
 
 - **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
     
-1. A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.
-    
-2. Controlla la versione digitando _Get-host_ nella finestra di **Windows PowerShell** .
-    
-3. Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Quando richiesto, riavviare il computer.
-    
-4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
+    1. A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.
+        
+    2. Controlla la versione digitando _Get-host_ nella finestra di **Windows PowerShell** .
+        
+    3. Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Quando richiesto, riavviare il computer.
+        
+    4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
     
     Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx).
     
 - **Avviare una sessione di Windows PowerShell**
     
-1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
+    1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
+        
+    2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
     
-2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
-    
-    > [!NOTE]
-    > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
+        > [!NOTE]
+        > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
 
-   ```PowerShell      
-    Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
-    $credential = Get-Credential
-    $session = New-CsOnlineSession -Credential $credential
-    Import-PSSession $session
-   ```
+       ```PowerShell      
+        Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
+        $credential = Get-Credential
+        $session = New-CsOnlineSession -Credential $credential
+        Import-PSSession $session
+       ```
 
    Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx) o [configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
     
@@ -96,14 +96,14 @@ Per consentire i trasferimenti P2P per l'interno dell'organizzazione, ma bloccar
 ## <a name="disable-p2p-file-transfers-for-a-user"></a>Disabilitare i trasferimenti di file P2P per un utente
 
 Puoi applicarlo a un utente creando un nuovo criterio e conferendolo a tale utente. Per farlo, Esegui: 
-> 
->   ```PowerShell
->   New-CsExternalUserCommunicationPolicy -Identity BlockExternalFT -EnableP2PFileTransfer $False
->   ```
-> 
->   ```PowerShell
->   Grant-CsExternalUserCommunicationPolicy -PolicyName BlockExternalFT -Identity amosm@contoso.com
->   ```
+
+```powershell
+New-CsExternalUserCommunicationPolicy -Identity BlockExternalFT -EnableP2PFileTransfer $False
+```
+
+```powershell
+Grant-CsExternalUserCommunicationPolicy -PolicyName BlockExternalFT -Identity amosm@contoso.com
+```
 
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 

@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: Skype for business online consente di creare altri criteri di accesso esterno. A differenza dei criteri per i client o i servizi di conferenza, in cui è possibile avere più combinazioni, esistono tre criteri di accesso esterno predefiniti in grado di coprire la maggior parte degli scenari.
-ms.openlocfilehash: 49572dc1aaef3d595bd0de41fd6359d90e8d803a
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 19b022bac8a43c595b07085db921da6a404d9ac7
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706661"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41887915"
 ---
 # <a name="create-custom-external-access-policies"></a>Creare criteri di accesso esterno personalizzato
 
@@ -85,15 +85,15 @@ Per fare questo lavoro, l'utente deve usare una versione supportata di 2016 a po
 
 Per farlo, eseguire quanto segue:
   
-> 
->   ```PowerShell
->   New-CsExternalAccessPolicy -Identity BlockSkypeVideo -EnablePublicCloudAccess $True -EnablePublicCloudAudioVideoAccess $False -EnableFederationAccess $True -EnableOutsideAccess $True
->   ```
-> 
-> 
->   ```PowerShell
->   Grant-CsExternalAccessPolicy -PolicyName BlockSkypeVideo -Identity amosm@contoso.com
->   ```
+ 
+```powershell
+New-CsExternalAccessPolicy -Identity BlockSkypeVideo -EnablePublicCloudAccess $True -EnablePublicCloudAudioVideoAccess $False -EnableFederationAccess $True -EnableOutsideAccess $True
+```
+
+
+```powershell
+Grant-CsExternalAccessPolicy -PolicyName BlockSkypeVideo -Identity amosm@contoso.com
+```
 
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 

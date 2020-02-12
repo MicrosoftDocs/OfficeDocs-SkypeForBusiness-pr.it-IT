@@ -13,18 +13,18 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: edf4a04c-d4c9-4c05-aacc-9e084618bb55
 description: Leggere questo argomento per informazioni su come monitorare il Cloud Connector versione 2,1 e successiva usando Microsoft Operations Management Suite (OMS).
-ms.openlocfilehash: 1dcac3519624cef898622f915b08b24363453b84
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 6c63baf078dc865a4e3aef574cff30bedabf3819
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41799626"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888635"
 ---
 # <a name="monitor-cloud-connector-using-operations-management-suite-oms"></a>Monitorare Cloud Connector mediante Operations Management Suite (OMS)
 
 Leggere questo argomento per informazioni su come monitorare il Cloud Connector versione 2,1 e successiva usando Microsoft Operations Management Suite (OMS).
 
-Ora è possibile monitorare il Cloud Connector versione 2,1 e la distribuzione successiva tramite Operations Management Suite (OMS), una soluzione di gestione IT cloud Microsoft. Analisi del log OMS consente di monitorare e analizzare la disponibilità e le prestazioni delle risorse, incluse le macchine fisiche e virtuali. Per altre informazioni su OMS e analisi dei log, vedere [cos'è Operations Management Suite (OMS)?](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview).
+Ora è possibile monitorare il Cloud Connector versione 2,1 e la distribuzione successiva tramite Operations Management Suite (OMS), una soluzione di gestione IT cloud Microsoft. Analisi del log OMS consente di monitorare e analizzare la disponibilità e le prestazioni delle risorse, incluse le macchine fisiche e virtuali. Per altre informazioni su OMS e analisi dei log, vedere [cos'è Operations Management Suite (OMS)?](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview)
 
 Questo argomento contiene le sezioni seguenti:
 
@@ -58,28 +58,28 @@ La modalità di configurazione del connettore Cloud per l'uso di OMS dipende dal
 
 - **Se si sta installando un nuovo accessorio Cloud Connector o si vuole ridistribuire un accessorio**, seguire questa procedura prima di eseguire Install-CcAppliance:
 
-1. Nella sezione file CloudConnector. ini [Common] imposta il parametro OMSEnabled su true.
+    1. Nella sezione file CloudConnector. ini [Common] imposta il parametro OMSEnabled su true.
 
-    Ogni volta che il connettore Cloud viene distribuito o aggiornato, tenterà di installare automaticamente l'agente OMS nella VM. Abilita questa funzionalità in modo che l'agente OMS possa sopravvivere all'aggiornamento automatico di Cloud Connector.
+        Ogni volta che il connettore Cloud viene distribuito o aggiornato, tenterà di installare automaticamente l'agente OMS nella VM. Abilita questa funzionalità in modo che l'agente OMS possa sopravvivere all'aggiornamento automatico di Cloud Connector.
 
-2. Per configurare l'ID e la chiave OMS, eseguire set-CcCredential-AccountType OMSWorkspace. 
+    2. Per configurare l'ID e la chiave OMS, eseguire set-CcCredential-AccountType OMSWorkspace. 
 
 - **Se si sta installando un agente OMS in un dispositivo Cloud Connector esistente**, seguire questa procedura:
 
-1. Nella sezione file CloudConnector. ini [Common] imposta OMSEnabled = true. 
+    1. Nella sezione file CloudConnector. ini [Common] imposta OMSEnabled = true. 
 
-2. Eseguire Import-CcConfiguration. 
+    2. Eseguire Import-CcConfiguration. 
 
-3. Eseguire Install-CcOMSAgent. 
+    3. Eseguire Install-CcOMSAgent. 
 
-    > [!NOTE]
-    > Se la credenziale OMSWorkspace non è mai stata impostata, vengono richieste le credenziali quando si esegue Install-CcOMSAgent. 
+        > [!NOTE]
+        > Se la credenziale OMSWorkspace non è mai stata impostata, vengono richieste le credenziali quando si esegue Install-CcOMSAgent. 
 
 - **Se si vuole aggiornare l'ID o la chiave dell'area di lavoro OMS in un appliance di connessione cloud che ha già installato un agente OMS:**
 
-1. Per configurare l'ID e la chiave OMS, eseguire set-CcCredential-AccountType OMSWorkspace. 
+    1. Per configurare l'ID e la chiave OMS, eseguire set-CcCredential-AccountType OMSWorkspace. 
 
-2. Per applicare gli aggiornamenti, eseguire Install-CcOMSAgent. 
+    2. Per applicare gli aggiornamenti, eseguire Install-CcOMSAgent. 
 
 - **Per tutti gli scenari, verificare che gli agenti siano connessi come segue:**
 
@@ -116,15 +116,15 @@ Nel portale OMS è necessario specificare le informazioni sui registri eventi e 
 
      Totale chiamate attive:
 
-   - LS: MediationServer-chiamate in ingresso (_Total)\- Current 
+       - LS: MediationServer-chiamate in ingresso (_Total)\- Current 
 
-   - LS: MediationServer-chiamate in uscita (_Total)\- Current 
+       - LS: MediationServer-chiamate in uscita (_Total)\- Current 
 
      Totale chiamate di bypass multimediali attivi:
 
-   - LS: MediationServer-chiamata in ingresso (_Total)\- chiamate di bypass multimediali attive 
+       - LS: MediationServer-chiamata in ingresso (_Total)\- chiamate di bypass multimediali attive 
 
-   - LS: MediationServer-chiamate in uscita (_Total)\- chiamate di bypass multimediali attive 
+       - LS: MediationServer-chiamate in uscita (_Total)\- chiamate di bypass multimediali attive 
 
      > [!NOTE]
      > È necessario immettere manualmente i contatori delle prestazioni nella casella di testo. Non vengono visualizzate come opzioni nell'elenco a discesa. 
@@ -155,7 +155,7 @@ Per creare questa coppia di avvisi:
 
 - La query per l'avviso di errore è:
 
-  ```
+  ```Kusto
   Event | where Computer contains "MediationServer" | where EventLog == "Lync Server" and (EventID == 25002 or EventID == 25003)  | summarize arg_max(TimeGenerated, EventID) by Computer | where EventID == 25003
   ```
 
@@ -167,19 +167,19 @@ Per creare questa coppia di avvisi:
 
 - La query per l'avviso di reimpostazione è:
 
-  ```
+  ```Kusto
   Event | where Computer contains "MediationServer" | where EventLog == "Lync Server" and (EventID == 25002 or EventID == 25003) | summarize arg_max(TimeGenerated, EventID) by Computer  | where EventID == 2500
   ```
 
     La query di reimpostazione fa esattamente la cosa opposta della query di errore. Per ogni computer, ne restituirà uno se l'ultimo evento è l'evento Start del servizio; restituirà Nothing se l'ultimo evento è l'evento di interruzione del servizio.
 
-  **Creare una coppia di avvisi: "troppe chiamate simultanee in Mediation Server" e "chiamate simultanee ricadono al carico normale"**
+**Creare una coppia di avvisi: "troppe chiamate simultanee in Mediation Server" e "chiamate simultanee ricadono al carico normale"**
 
 Per creare questo avviso:
 
 - La query per l'avviso di errore è:
 
-  ```
+  ```Kusto
   Perf | where Computer contains "MediationServer" | where (ObjectName == "LS:MediationServer - Outbound Calls" or ObjectName == "LS:MediationServer - Inbound Calls") | summarize arg_max(TimeGenerated, CounterValue) by ObjectName, Computer | summarize  TotalCalls = sum(CounterValue) by Computer| where TotalCalls >= 500
   ```
 
@@ -187,17 +187,17 @@ Per creare questo avviso:
 
 - La query per l'avviso di reimpostazione è:
 
-  ```
+  ```Kusto
   Perf  | where Computer contains "MediationServer" | where (ObjectName == "LS:MediationServer - Outbound Calls" or ObjectName ==  "LS:MediationServer - Inbound Calls") | summarize arg_max(TimeGenerated, CounterValue) by ObjectName, Computer | summarize  TotalCalls = sum(CounterValue) by Computer| where TotalCalls < 500
   ```
 
     La query di reimpostazione fa esattamente la cosa opposta della query di errore. Per ogni computer, la query otterrà gli ultimi contatori per la chiamata in ingresso e la chiamata in uscita e somma questi due valori. Verrà restituito un log se il valore somma è minore di 500; non restituirà altro.
 
-  **Creare un avviso: avviso "utilizzo \> della CPU 90 o RTCMEDIARELAY interrotto nei server"**
+**Creare un avviso: avviso "utilizzo \> della CPU 90 o RTCMEDIARELAY interrotto nei server"**
 
 Per creare questo avviso, la query è:
 
-```
+```Kusto
 search *| where Computer contains "MediationServer" | where (Type == "Perf" or Type == "Event") | where ((ObjectName ==  "Processor" and CounterName == "% Processor Time") or EventLog == "Lync Server") | where (CounterValue > 90 or EventID == 22003)
 ```
 

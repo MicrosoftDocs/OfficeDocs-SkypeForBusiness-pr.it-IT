@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: Puoi configurare il modo in cui gli utenti si connettono a Skype for business online con l'app Skype for business su dispositivi mobili, ad esempio una funzionalità che consente agli utenti di effettuare e ricevere chiamate telefoniche sul proprio telefono cellulare usando il proprio numero di telefono aziendale anziché il telefono cellulare nu Mbera. I criteri di mobilità possono essere usati anche per richiedere connessioni Wi-Fi durante la creazione o la ricezione di chiamate.
-ms.openlocfilehash: 7457b89014395a5ee833b8a35bde68751ade9cfd
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 2d608356e08ae989d0be79bd61f14a4d6ba3b9f0
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692951"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41887855"
 ---
 # <a name="set-up-mobile-policies-for-your-organization"></a>Impostazione dei criteri per dispositivi mobili per la propria organizzazione
 
@@ -41,49 +41,49 @@ Le impostazioni dei criteri per dispositivi mobili possono essere configurate al
 
 - **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
     
-1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
-    
-2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
-    
-3. Se non si ha la versione 3,0 o successiva, è necessario scaricare e installare gli aggiornamenti in Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Riavviare il computer quando viene richiesto.
-    
-4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
+    1. A questo scopo: Fare clic sul pulsante **Start** > **Windows PowerShell**.
+        
+    2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
+        
+    3. Se non si ha la versione 3,0 o successiva, è necessario scaricare e installare gli aggiornamenti in Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Riavviare il computer quando viene richiesto.
+        
+    4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
     
     Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx).
     
 - **Avviare una sessione di Windows PowerShell**
     
-1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
-    
-2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
-    
-    > [!NOTE]
-    > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
+    1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
+        
+    2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
+        
+        > [!NOTE]
+        > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
 
-   ```PowerShell      
-    Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
-    $credential = Get-Credential
-    $session = New-CsOnlineSession -Credential $credential
-    Import-PSSession $session
-   ```
+       ```PowerShell      
+        Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
+        $credential = Get-Credential
+        $session = New-CsOnlineSession -Credential $credential
+        Import-PSSession $session
+       ```
 
    Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx) o [configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
 
 ### <a name="require-a-wifi-connection-for-video-for-a-user"></a>Richiedere una connessione Wi-Fi per il video per un utente
 
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
-  > 
-  > ```PowerShell
-  > New-CsMobilityPolicy -Identity MobilityPolicy -RequireWIFIForIPVideo $true
-  > ```
-  > Per altre informazioni, vedere il cmdlet [New-CsMobilityPolicy](https://technet.microsoft.com/library/mt779150.aspx) .
+   
+   ```powershell
+   New-CsMobilityPolicy -Identity MobilityPolicy -RequireWIFIForIPVideo $true
+   ```
+   Per altre informazioni, vedere il cmdlet [New-CsMobilityPolicy](https://technet.microsoft.com/library/mt779150.aspx) .
     
 - Per assegnare il criterio creato a tutti gli utenti dell'organizzazione, eseguire:
-  > 
-  > ```PowerShell
-  > Grant-CsMobilityPolicy -Identity"amos.marble@contoso.com" -PolicyName MobilityPolicy
-  > ```
-  > Per altre informazioni, vedere il cmdlet [Grant-CsMobilityPolicy](https://technet.microsoft.com/library/mt779149.aspx) .
+   
+   ```powershell
+   Grant-CsMobilityPolicy -Identity"amos.marble@contoso.com" -PolicyName MobilityPolicy
+   ```
+   Per altre informazioni, vedere il cmdlet [Grant-CsMobilityPolicy](https://technet.microsoft.com/library/mt779149.aspx) .
     
   Se è già stato creato un criterio, è possibile usare il cmdlet [Set-CsMobilityPolicy](https://technet.microsoft.com/library/mt779147.aspx) per apportare modifiche ai criteri esistenti e quindi utilizzare il cmdlet[Grant-CsMobilityPolicy](https://technet.microsoft.com/library/mt779149.aspx) per applicare l'impostazione agli utenti.
   
@@ -96,28 +96,28 @@ Le impostazioni dei criteri per dispositivi mobili possono essere configurate al
   Per altre informazioni, vedere il cmdlet [New-CsMobilityPolicy](https://technet.microsoft.com/library/mt779150.aspx) .
     
 - Per assegnare il criterio creato ad Amos Marble, eseguire:  
-  > 
-  > ```PowerShell
-  > Grant-CsMobilityPolicy -Identity "amos.marble@contoso.com"-PolicyName NoAppClientPolicy
-  > ```
-  > Per altre informazioni, vedere il cmdlet [Grant-CsMobilityPolicy](https://technet.microsoft.com/library/mt779149.aspx) .
+   
+   ```powershell
+   Grant-CsMobilityPolicy -Identity "amos.marble@contoso.com"-PolicyName NoAppClientPolicy
+   ```
+   Per altre informazioni, vedere il cmdlet [Grant-CsMobilityPolicy](https://technet.microsoft.com/library/mt779149.aspx) .
     
   Se è già stato creato un criterio, è possibile usare il cmdlet [Set-CsMobilityPolicy](https://technet.microsoft.com/library/mt779147.aspx) per apportare modifiche ai criteri esistenti e quindi utilizzare il cmdlet [Grant-CsMobilityPolicy](https://technet.microsoft.com/library/mt779149.aspx) per applicare l'impostazione agli utenti.
   
 ### <a name="prevent-a-user-from-making-voice-over-ip-calls-using-a-mobile-device"></a>Impedire a un utente di effettuare chiamate voice over IP utilizzando un dispositivo mobile
 
 - Per creare un nuovo criterio per queste impostazioni, eseguire:
-  > 
-  > ```PowerShell
-  > New-CsMobilityPolicy -Identity VoIPClientPolicy -EnableIPAudioVideo  $false
-  > ```
-  > Per altre informazioni, vedere il cmdlet [New-CsMobilityPolicy](https://technet.microsoft.com/library/mt779150.aspx) .
+   
+   ```powershell
+   New-CsMobilityPolicy -Identity VoIPClientPolicy -EnableIPAudioVideo  $false
+   ```
+   Per altre informazioni, vedere il cmdlet [New-CsMobilityPolicy](https://technet.microsoft.com/library/mt779150.aspx) .
     
 - Per assegnare il criterio creato a tutti gli utenti dell'organizzazione, eseguire:
-  > 
-  > ```PowerShell
-  > Grant-CsMobilityPolicy -Identity "amos.marble@contoso.com" -PolicyName VoIPClientPolicy
-  > ```
+   
+   ```powershell
+   Grant-CsMobilityPolicy -Identity "amos.marble@contoso.com" -PolicyName VoIPClientPolicy
+   ```
 
   Per altre informazioni, vedere il cmdlet [Grant-CsMobilityPolicy](https://technet.microsoft.com/library/mt779149.aspx) .
     

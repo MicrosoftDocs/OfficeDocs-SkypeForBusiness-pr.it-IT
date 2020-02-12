@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b124b229-7df5-4b7e-8c11-6661c8c8c051
 description: 'Riepilogo: informazioni su come creare directory conferenza in Skype for Business Server.'
-ms.openlocfilehash: 368248f18291b049b3478f20d3de4a11d4ae6f1c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: be8983b25937b2a1c068c9629a0f44fd06d494d6
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818567"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888675"
 ---
 # <a name="create-conference-directories-in-skype-for-business-server"></a>Creare directory conferenza in Skype for Business Server
  
@@ -33,7 +33,7 @@ In un'organizzazione con un numero tipico di conferenze per ogni utente, è cons
   
 Il formato di un ID conferenza è il seguente: 
   
-```
+```console
   <housekeeping digit (1 digit)><conference directory (usually 1-2 digits> 
   <conference number (variable number of digits><check digit (1 digit)>
 ```

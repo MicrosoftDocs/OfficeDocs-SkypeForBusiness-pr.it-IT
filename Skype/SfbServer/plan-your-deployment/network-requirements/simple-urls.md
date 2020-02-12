@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 3a3c9b22-892f-45a7-b05c-539d358a1a86
 description: "Riepilogo: esaminare le semplici considerazioni sull'URL in questo argomento prima di implementare i record DNS per Skype for Business Server."
-ms.openlocfilehash: 7eb734fb4a9005f833f27efd3b0d180593155f39
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 3296e3678d1d38f021b792a2362f61de66796d0f
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815784"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888475"
 ---
 # <a name="dns-requirements-for-simple-urls-in-skype-for-business-server"></a>Requisiti DNS per gli URL semplici in Skype for Business Server
 
@@ -102,13 +102,13 @@ Se si hanno più siti che contengono pool Front-end e il provider DNS supporta G
 
 Per configurare la configurazione, creare due indirizzi di GeoDNS. Ogni indirizzo contiene due record DNS A o CNAME che vengono risolti in due pool combinati per scopi di ripristino di emergenza. Un indirizzo GeoDNS viene usato per l'accesso interno e viene risolto nell'indirizzo IP di FQDN Web interno o di bilanciamento del carico per i due pool. L'altro indirizzo GeoDNS viene usato per l'accesso esterno e si risolve nell'FQDN Web esterno o nell'indirizzo IP del bilanciamento del carico per i due pool. Di seguito è riportato un esempio per l'URL semplice Meet, che usa i nomi di dominio completi per i pool. 
 
-```
+```console
 Meet-int.geolb.contoso.com
      Pool1InternalWebFQDN.contoso.com
      Pool2InternalWebFQDN.contoso.com
 ```
 
-```
+```console
 Meet-ext.geolb.contoso.com
      Pool1ExternalWebFQDN.contoso.com
      Pool2ExternalWebFQDN.contoso.com
@@ -125,7 +125,7 @@ Quando usi questo metodo, puoi configurare ogni indirizzo di GeoDNS in modo da u
 
 Una volta configurata questa configurazione, è necessario usare un'applicazione di monitoraggio per configurare il monitoraggio HTTP per la visualizzazione degli errori. Per l'accesso esterno, monitorare per verificare che HTTPS OTTENGa lyncdiscover.<sipdomain> le richieste per l'FQDN Web esterno o per l'indirizzo IP del bilanciamento del carico per i due pool hanno esito positivo. Ad esempio, le richieste seguenti non devono contenere alcuna intestazione **Accept** e devono restituire **200 OK**.
 
-```
+```console
 HTTPS GET Pool1ExternalWebFQDN.contoso.com/autodiscover/autodiscoverservice.svc/root
 HTTPS GET Pool2ExternalWebFQDN.contoso.com/autodiscover/autodiscoverservice.svc/root
 ```

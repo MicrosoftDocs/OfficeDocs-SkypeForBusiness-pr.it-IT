@@ -11,22 +11,22 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: "La migrazione dell'applicazione Call Park include il provisioning del pool di Skype for Business Server 2019 con qualsiasi musica personalizzata su file in attesa caricati nell'installazione legacy, il ripristino delle impostazioni del livello di servizio e la destinazione di tutte le orbite di Call Park Pool di Skype for Business Server 2019. Se i file personalizzati per la musica in attesa sono stati configurati nel pool, questi file devono essere copiati nel nuovo pool di Skype for Business Server 2019. Inoltre, è consigliabile eseguire il backup di qualsiasi parcheggio di chiamata personalizzato per la musica in attesa di file da a un'altra destinazione per mantenere una copia di backup separata di qualsiasi file di musica in attesa personalizzato caricato per Call Park. I file personalizzati per la musica in blocco per l'applicazione Parcheggio di chiamata sono archiviati nell'archivio di file del pool. Per copiare i file audio da un file di pool in un archivio di file di Skype for Business Server 2019, usare il comando xcopy con i parametri seguenti:"
-ms.openlocfilehash: b9e55bc76e718d499482fb21e029a0a74e8f207f
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 058f2f1652dcb7c05730fd058e9867a4c2dee8af
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41813584"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888135"
 ---
 # <a name="migrate-call-park-application-settings"></a>Eseguire la migrazione delle impostazioni dell'applicazione Parcheggio di chiamata
 
 La migrazione dell'applicazione Call Park include il provisioning del pool di Skype for Business Server 2019 con tutti i file musicali personalizzati che sono stati caricati nell'installazione legacy, il ripristino delle impostazioni a livello di servizio e la destinazione di tutte le orbite di Call Park al pool di Skype for Business Server 2019. Se i file personalizzati per la musica in attesa sono stati configurati nel pool, questi file devono essere copiati nel nuovo pool di Skype for Business Server 2019. Inoltre, è consigliabile eseguire il backup di qualsiasi parcheggio di chiamata personalizzato per la musica in attesa di file in un'altra destinazione per mantenere una copia di backup separata di tutti i file di musica in attesa personalizzati caricati per Call Park. I file personalizzati per la musica in blocco per l'applicazione Parcheggio di chiamata sono archiviati nell'archivio di file del pool. Per copiare i file audio da un file di pool in un archivio di file di Skype for Business Server 2019, usare il comando **xcopy** con i parametri seguenti: 
 
-```
+```console
 Xcopy <Source: legacy Pool CPS File Store Path> <Destination: Skype for Business Server 2019 Pool CPS File Store Path>
 ```
 
-```
+```console
 Example usage:  Xcopy "<legacy File Store Path>\OcsFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\"  "<Skype for Business Server 2019 File Store Path>\OcsFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\" 
 ```
 

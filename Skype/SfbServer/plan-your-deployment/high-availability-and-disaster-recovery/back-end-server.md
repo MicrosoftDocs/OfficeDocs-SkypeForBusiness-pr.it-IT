@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: c559aacb-4e1d-4e78-9582-41f966ad418d
 description: Informazioni sulle opzioni di disponibilità elevata del server back-end supportate in Skype for Business Server, inclusi i gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn, il mirroring del database e il clustering di failover SQL.
-ms.openlocfilehash: a0aeb53aea0ee2eab25875de0fddbfd0fc26d90a
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 4c814e525b3a1d0900e7162255ec4d7e86d79605
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815954"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41888615"
 ---
 # <a name="back-end-server-high-availability-in-skype-for-business-server"></a>Disponibilità elevata del server back-end in Skype for Business Server
  
@@ -56,7 +56,7 @@ Skype for Business Server supporta il mirroring con il software di database segu
     
 
 > [!NOTE]
-> Il mirroring SQL è disponibile in Skype for Business Server 2015 ma non è più supportato in Skype for Business Server 2019. I gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn (FCI) e i metodi di clustering di failover SQL sono preferiti con Skype for Business Server 2019.
+> Il mirroring SQL è disponibile in Skype for Business Server 2015 ma non è più supportato in Skype for Business Server 2019. I gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn (FCI) e i metodi di clustering di failover SQL sono le uniche opzioni supportate con Skype for Business Server 2019.
     
 Il mirroring asincrono del database non è supportato per la disponibilità elevata del server back-end in Skype for Business Server. Nel resto del documento, il mirroring del database indica il mirroring sincrono del database, a meno che non sia specificato diversamente esplicitamente. 
   

@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Licensing
 description: 'Impara come assegnare le licenze di Skype for Business per Sistema telefonico, Audioconferenza, Piani di chiamata e Credito per la comunicazione. '
-ms.openlocfilehash: 9aa423683160c064b13be140c4226b2327dd9b69
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: f2b2e2ad4952b55fade7e0b8eddb1755ea3f2cea
+ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692521"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41887815"
 ---
 # <a name="assign-skype-for-business-licenses"></a>Assegnare licenze di Skype for Business
 
@@ -64,7 +64,7 @@ I passaggi sono uguali a quelli seguiti per l'assegnazione di una licenza di Off
 
    Il nome delle licenze o i nomi dei prodotti nello script sono elencati in corsivo (consulta la sezione **Nomi di prodotto di Sistema telefonico e Piani per chiamate o SKU usati per gli script**, dopo l'esempio).
 
-   ```
+   ```powershell
    #Create a text file with a single row containing list of UserPrincipalName (UPN) of users to license. The MSOLservice uses UPN to license user accounts in Office 365.
 
    #Example of text file:
@@ -137,40 +137,40 @@ I passaggi sono uguali a quelli seguiti per l'assegnazione di una licenza di Off
 
     In questo esempio vengono assegnate una licenza di Enterprise E3 e una licenza per i servizi Audioconferenza.
 
-```
-#Create a text file with a single row containing list of UserPrincipalName(UPN) of users to license. The MSOLservice uses UPN to license user accounts in Office 365.
-#Example of text file:
-#user1@domain.com
-#user2@domain.com
+    ```powershell
+    #Create a text file with a single row containing list of UserPrincipalName(UPN) of users to license. The MSOLservice uses UPN to license user accounts in Office 365.
+    #Example of text file:
+    #user1@domain.com
+    #user2@domain.com
 
-#Import Module
-ipmo MSOnline
+    #Import Module
+    ipmo MSOnline
 
-#Authenticate to MSOLservice
-Connect-MSOLService
-#File prompt to select the userlist txt file
-[System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
-  $OFD = New-Object System.Windows.Forms.OpenFileDialog
-  $OFD.filter = "text files (*.*)| *.txt"
-  $OFD.ShowDialog() | Out-Null
-  $OFD.filename
+    #Authenticate to MSOLservice
+    Connect-MSOLService
+    #File prompt to select the userlist txt file
+    [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
+      $OFD = New-Object System.Windows.Forms.OpenFileDialog
+      $OFD.filter = "text files (*.*)| *.txt"
+      $OFD.ShowDialog() | Out-Null
+      $OFD.filename
 
-If ($OFD.filename -eq '')
-{
-Write-Host "You did not choose a file. Try again" -ForegroundColor White -BackgroundColor Red
-}
-
-#Create a variable of all users
-$users = Get-Content $OFD.filename
-
-#License each user in the $users variable
-foreach ($user in $users)
+    If ($OFD.filename -eq '')
     {
-    Write-host "Assigning License: $user"
-    Set-MsolUserLicense -UserPrincipalName $user -AddLicenses "companyname:ENTERPRISEPACK " -ErrorAction SilentlyContinue
-    Set-MsolUserLicense -UserPrincipalName $user -AddLicenses "companyname:MCOMEETADV " -ErrorAction SilentlyContinue
+    Write-Host "You did not choose a file. Try again" -ForegroundColor White -BackgroundColor Red
     }
-```
+
+    #Create a variable of all users
+    $users = Get-Content $OFD.filename
+
+    #License each user in the $users variable
+    foreach ($user in $users)
+        {
+        Write-host "Assigning License: $user"
+        Set-MsolUserLicense -UserPrincipalName $user -AddLicenses "companyname:ENTERPRISEPACK " -ErrorAction SilentlyContinue
+        Set-MsolUserLicense -UserPrincipalName $user -AddLicenses "companyname:MCOMEETADV " -ErrorAction SilentlyContinue
+        }
+    ```
 
 ### <a name="audio-conferencing-product-names-or-skus-used-for-scripting"></a>Nomi di prodotto delle audioconferenze o SKU usati per gli script
 <a name="sku"> </a>
@@ -204,7 +204,7 @@ Guarda lo script di esempio per l'assegnazione delle licenze di **Audioconferenz
   
 [Configurare i piani per chiamate](/microsoftteams/set-up-calling-plans)
   
-[Aggiungere fondi e gestire Credito per la comunicazione](/microsoftteams/add-funds-and-manage-communications-credits)
+[Aggiungere fondi e gestire i crediti per la comunicazione](/microsoftteams/add-funds-and-manage-communications-credits)
   
   
  
