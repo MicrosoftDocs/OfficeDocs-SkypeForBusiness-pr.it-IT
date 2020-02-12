@@ -18,12 +18,12 @@ f1.keywords:
 description: Elenco corrente dei problemi noti riguardanti l’interfaccia di amministrazione e l'app client di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1f18bd8fa85ce07596fe36106ea97ef36e698a78
-ms.sourcegitcommit: 8e2fa7b744d0a174b699ae7298d4688b971eeff3
+ms.openlocfilehash: b90c2ab7b204964082c05cbc657c4945f5730fde
+ms.sourcegitcommit: f859843003b34feab18a3d2df34fdbb9858e7148
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845147"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "41889449"
 ---
 # <a name="known-issues-for-microsoft-teams"></a>Problemi noti di Microsoft Teams
 
@@ -75,6 +75,10 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |Informazioni sull'interoperabilità video nel cloud in Riunione immediata  <br/> |Se si crea un'istanza di Riunione immediata per una riunione in Microsoft Teams con una licenza IVC esistente, le informazioni sulla IVC non verranno popolate. <br/> |Si consiglia di pianificare la riunione per popolare tali informazioni.  <br/> |11/06/2019  <br/> |
 
 ## <a name="authentication"></a>Autenticazione
+
+|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
+|:-----|:-----|:-----|:-----|
+|Teams richiede l'accesso a Google Gstatic <br/> |Attualmente Teams richiede l'accesso sulla porta TCP 443 al servizio Google ssl.gstatic.com (https://ssl.gstatic.com)) per tutti gli utenti. Questo avviene anche se non si usa Gstatic. Teams rimuoverà questo requisito presto (inizio 2020). <br/> | Non ci sono soluzioni alternative. <br/> |10/2/20  <br/> |
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
