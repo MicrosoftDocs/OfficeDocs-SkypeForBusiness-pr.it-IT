@@ -65,7 +65,7 @@ Per disconnettersi da Teams, gli utenti possono fare clic sull'immagine del prof
 Teams richiede la connettività a Internet. Per informazioni sugli endpoint che devono essere raggiungibili per i clienti che usano Teams nei piani di Office 365, nel cloud per enti pubblici e in altri cloud, vedere [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). 
 
 > [!IMPORTANT]
-> Attualmente Teams richiede l'accesso sulla porta TCP 443 al servizio Google ssl.gstatic.com (https://ssl.gstatic.com)) per tutti gli utenti. Questo avviene anche se non si usa Gstatic. Teams rimuoverà il requisito presto (all'inizio del 2020) e questo articolo verrà aggiornato di conseguenza.
+> Attualmente Teams richiede l'accesso sulla porta TCP 443 al servizio Google ssl.gstatic.com (https://ssl.gstatic.com) per tutti gli utenti. Questo avviene anche se non si usa Gstatic. Teams rimuoverà il requisito presto (all'inizio del 2020) e questo articolo verrà aggiornato di conseguenza.
 
 ## <a name="troubleshooting-modern-authentication"></a>Risoluzione dei problemi relativi all'autenticazione moderna
 
