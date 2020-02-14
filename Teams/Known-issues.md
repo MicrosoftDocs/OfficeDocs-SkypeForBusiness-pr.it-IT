@@ -18,12 +18,12 @@ f1.keywords:
 description: Elenco corrente dei problemi noti riguardanti l’interfaccia di amministrazione e l'app client di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b90c2ab7b204964082c05cbc657c4945f5730fde
-ms.sourcegitcommit: f859843003b34feab18a3d2df34fdbb9858e7148
+ms.openlocfilehash: d0aafe4bcceca731825726d084e41fab37bb9931
+ms.sourcegitcommit: 93a8bd330c9a8ced81cd3eafb7b7236e9ed2066f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41889449"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "41962095"
 ---
 # <a name="known-issues-for-microsoft-teams"></a>Problemi noti di Microsoft Teams
 
@@ -78,7 +78,7 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|Teams richiede l'accesso a Google Gstatic <br/> |Attualmente Teams richiede l'accesso sulla porta TCP 443 al servizio Google ssl.gstatic.com (https://ssl.gstatic.com)) per tutti gli utenti. Questo avviene anche se non si usa Gstatic. Teams rimuoverà questo requisito presto (inizio 2020). <br/> | Non ci sono soluzioni alternative. <br/> |10/2/20  <br/> |
+|Teams richiede l'accesso a Google Gstatic <br/> |Attualmente Teams richiede l'accesso sulla porta TCP 443 al servizio Google ssl.gstatic.com per tutti gli utenti. Questo avviene anche se non si usa Gstatic. Teams rimuoverà questo requisito presto (inizio 2020). <br/> | Non ci sono soluzioni alternative. <br/> |30/01/2020  <br/> |
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
