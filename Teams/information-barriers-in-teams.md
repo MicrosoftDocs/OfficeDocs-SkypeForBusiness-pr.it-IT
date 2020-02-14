@@ -15,16 +15,16 @@ f1.keywords:
 description: Informazioni sulle barriere informative e sul loro impatto sui team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f516c01bed0dfca0363602aa131a9da22bd916f6
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 0d5b5964f3fcf0f4d24fee44121f868d573eb6e9
+ms.sourcegitcommit: 93a8bd330c9a8ced81cd3eafb7b7236e9ed2066f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836646"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "41962135"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
-Gli ostacoli alle informazioni sono criteri che possono essere configurati da un amministratore per impedire agli utenti o ai gruppi di comunicare tra loro. Ciò è utile se, ad esempio, un reparto sta gestendo informazioni che non devono essere condivise con altri reparti o un gruppo deve essere impedito, o isolato, di comunicare con chiunque all'esterno di tale gruppo.
+Le informazioni barriere (IB) sono criteri che possono essere configurati da un amministratore per impedire a singoli o gruppi di comunicare tra loro. Ciò è utile se, ad esempio, un reparto sta gestendo informazioni che non devono essere condivise con altri reparti o un gruppo deve essere impedito, o isolato, di comunicare con chiunque all'esterno di tale gruppo.
 
 > [!NOTE]
 > - Non è possibile creare gruppi di barriere informativi tra i tenant.
@@ -96,7 +96,7 @@ Attualmente gli utenti avvertono quanto segue se un criterio barriera informativ
 
 ## <a name="will-files-and-sharepoint-site-experiences-connected-to-teams-honor-ib-policy"></a>I file e le esperienze del sito di SharePoint sono connessi ai criteri per i team in onore IB?
  
-Quando viene creato un team, viene eseguito il provisioning di un sito di SharePoint e viene associato al team per l'esperienza dei file. L'accesso a questo sito e ai file di SharePoint soddisfa i criteri di IB dell'organizzazione, vale a dire solo gli utenti il cui segmento IB corrisponde ai criteri IB sono consentiti. Anche al momento della condivisione di file, viene rispettato il criterio IB.
+Quando viene creato un team, viene eseguito il provisioning di un sito di SharePoint e viene associato al team per l'esperienza dei file. L'accesso a questo sito e ai file di SharePoint rende omaggio alla IB dell'organizzazione, ovvero solo gli utenti il cui segmento IB corrisponde al criterio IB sono autorizzati ad accedere. Anche al momento della condivisione di file, viene rispettato il criterio IB.
 
 Ad esempio: in Contoso Bank Corporation, l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento di Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti. Quando l'utente Seshe crea un team per il segmento investment banking, il team e il sito di SharePoint che lo appoggiano saranno accessibili solo agli utenti del segmento investment banking. L'utente Nikita non può accedere al sito anche se ha il collegamento al sito.
 
