@@ -1,5 +1,5 @@
 ---
-title: Rimuovere database e istanze di SQL Server nel server back-end
+title: Rimuovere le istanze e i database di SQL Server nel server back-end
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733606
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 11439dd9fd339c3620b3e6288526459f45a2a542
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c400fb6e7e206c43a81cdf6b14b2da0d01486447
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727106"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008892"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="remove-sql-server-instances-and-databases-on-the-back-end-server"></a>Rimuovere database e istanze di SQL Server nel server back-end
+# <a name="remove-sql-server-instances-and-databases-on-the-back-end-server"></a>Rimuovere le istanze e i database di SQL Server nel server back-end
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41727106"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-19_
+_**Ultimo argomento modificato:** 2012-10-19_
 
-Si rimuovono i database e le istanze di Microsoft SQL Server dopo aver rimosso i server in cui è in uso Lync Server 2010, o dopo aver riconfigurato i server che usano Lync Server 2010 per usare un altro database. È necessario eseguire la procedura descritta in questo argomento quando si ritira il server SQL corrente o si riconfigura il server corrente che esegue Lync Server 2010 in modo che esegua il rendering dei database obsoleti o non disponibili.
+È possibile rimuovere i database e le istanze di Microsoft SQL Server dopo aver rimosso i server che eseguono Lync Server 2010 che dipendono da essi o dopo aver riconfigurato i server che eseguono Lync Server 2010 per utilizzare un altro database. È necessario eseguire la procedura descritta in questo argomento quando si ritira l'oggetto SQL Server corrente o si riconfigura il server corrente che esegue Lync Server 2010 in modo che esegua il rendering dei database obsoleti o non disponibili.
 
-Per rimuovere i database o le istanze per il server di archiviazione o il server di monitoraggio, è necessario prima di tutto rimuovere il ruolo del server. Allo stesso modo, per rimuovere le istanze o i database per il pool Front-End, devi prima rimuovere o riconfigurare il ruolo del server dipendente. Queste procedure non fanno distinzione tra database collocati o istanze separate per i server. Le procedure non sono influenzate dalla collocazione dei database.
+Per rimuovere i database o le istanze per il server di archiviazione o il Monitoring Server, è innanzitutto necessario rimuovere il ruolo del server. Analogamente, per rimuovere le istanze o i database per il pool Front End, è necessario prima rimuovere o riconfigurare il ruolo del server dipendente. Per queste procedure non viene fatta distinzione tra database collocati o istanze separate dei server. La collocazione dei database non incide sulle procedure.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Rimuovere il database di SQL Server per un pool Front End](remove-the-sql-server-database-for-a-front-end-pool.md)
 
-  - [Rimuovere il database di SQL Server per un server di monitoraggio](remove-the-sql-server-database-for-a-monitoring-server.md)
+  - [Rimuovere il database di SQL Server per un Monitoring Server](remove-the-sql-server-database-for-a-monitoring-server.md)
 
   - [Rimuovere il database di SQL Server per un server di archiviazione](remove-the-sql-server-database-for-an-archiving-server.md)
 

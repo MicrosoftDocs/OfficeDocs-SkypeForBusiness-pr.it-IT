@@ -12,16 +12,16 @@ ms:contentKeyID: 48183608
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c92a51ed9b775990d048bf45bfa54a893ba15856
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b58f43c696a6218d0dd9b670615cc0f73b0b7ae3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764172"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42024727"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41764172"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-tblLastInviteId contiene l'ultimo ID invite generato (e usato nella tabella tblPrincipalInvites) per ogni utente.
+tblLastInviteId contiene l'ultimo ID invito generato per ogni utente e utilizzato nella tabella tblPrincipalInvites.
 
 ### <a name="columns"></a>Colonne
 
@@ -57,19 +57,19 @@ tblLastInviteId contiene l'ultimo ID invite generato (e usato nella tabella tblP
 <tbody>
 <tr class="odd">
 <td><p>prinID</p></td>
-<td><p>int, not null</p></td>
+<td><p>int, non null</p></td>
 <td><p>ID entità.</p></td>
 </tr>
 <tr class="even">
 <td><p>lastInviteID</p></td>
 <td><p>int, not null</p></td>
-<td><p>Ultimo ID invito usato.</p></td>
+<td><p>Ultimo ID invito utilizzato.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a>Tasti
+### <a name="keys"></a>Chiavi
 
 <table>
 <colgroup>
@@ -89,7 +89,7 @@ tblLastInviteId contiene l'ultimo ID invite generato (e usato nella tabella tblP
 </tr>
 <tr class="even">
 <td><p>prinID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblPrincipal. prinID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</p></td>
 </tr>
 </tbody>
 </table>

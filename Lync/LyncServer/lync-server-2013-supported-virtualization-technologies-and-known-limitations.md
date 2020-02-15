@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tecnologie di virtualizzazione supportate e limitazioni note'
+title: 'Lync Server 2013: tecnologie di virtualizzazione supportate e limitazioni note'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184428
 ms.date: 02/07/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cf513e9dee4e6a27708c8882519099c825f903f2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 387290f8fb7ab88dcb7bc987c38c4a2e3e71ec5e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731646"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006798"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41731646"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2017-02-06_
+_**Ultimo argomento modificato:** 2017-02-06_
 
-Il plug-in Lync VDI consente le chiamate audio e video per le tecnologie di virtualizzazione supportate. In questo modo si estende la funzionalità delineata per Microsoft Lync Server 2010 nella [virtualizzazione client in Microsoft lync 2010](https://go.microsoft.com/fwlink/?linkid=330447) white paper. In conformità con le normative telefoniche standard, è incluso anche il supporto per E911. Le sezioni seguenti descrivono le tecnologie di virtualizzazione supportate dal plug-in di Lync VDI e dalle limitazioni note delle funzionalità.
+Il plug-in VDI di Lync consente la chiamata audio e video per le tecnologie di virtualizzazione supportate. In questo articolo viene estesa la funzionalità delineata per Microsoft Lync Server 2010 nella [virtualizzazione client in Microsoft lync 2010](https://go.microsoft.com/fwlink/?linkid=330447) white paper. In conformità con le normative telefoniche standard, è incluso anche il supporto per E911. Nelle sezioni seguenti vengono descritte le tecnologie di virtualizzazione supportate dal plug-in VDI di Lync e le limitazioni note delle funzionalità.
 
 <div>
 
 ## <a name="support-for-virtualization-technologies"></a>Supporto per le tecnologie di virtualizzazione
 
-Il plug-in Lync VDI supporta i servizi remoti desktop completi nello scenario desktop virtuale personale, ma non nello scenario di sessione Desktop remoto. Questi scenari possono essere descritti come segue:
+Il plug-in VDI di Lync supporta le funzionalità remote desktop complete nello scenario di desktop virtuale personale, ma non nello scenario di sessione Desktop remoto. Questi scenari possono essere descritti nel modo seguente:
 
-  - **Supportati: desktop virtuali personalizzati o VDI (Virtual Desktop Infrastructure).**    In questo scenario ogni utente accede a un desktop virtuale personalizzabile ed è in grado di salvare i file sul desktop che persistono in più sessioni. I Servizi Desktop remoto Microsoft, VMware Horizon View e Citrix XenDesktop sono implementazioni testate per l'uso con Lync. Per informazioni sugli ambienti VDI specifici del fornitore e sull'hardware client testati da Microsoft, vedere [infrastruttura qualificata per Microsoft Lync](https://go.microsoft.com/fwlink/?linkid=313435).
+  - **Supportato: desktop virtuali personalizzati o VDI (Virtual Desktop Infrastructure).**    In questo scenario, ogni utente esegue l'accesso a un desktop virtuale personalizzabile ed è in grado di salvare i file sul desktop che persistono tra le sessioni. Servizi Desktop remoto Microsoft, VMware Horizon View e Citrix XenDesktop sono implementazioni che sono state testate per l'utilizzo con Lync. Per informazioni sugli ambienti VDI specifici del fornitore e sull'hardware client che sono stati testati da Microsoft, vedere [Infrastructure qualified for Microsoft Lync](https://go.microsoft.com/fwlink/?linkid=313435).
 
-  - **Non supportata: sessioni desktop remoto.**    In questo scenario ogni utente accede a una sessione desktop virtuale generica che non può essere personalizzata. Le implementazioni di esempio includono sessione desktop remoto Microsoft e Citrix XenApp combinato con Citrix Receiver.
+  - **Non supportata: sessioni di desktop remoto.**    In questo scenario, ogni utente esegue l'accesso a una sessione desktop virtuale generica che non può essere personalizzata. Le implementazioni di esempio includono Microsoft Remote Desktop Sessions (RDSH) e Citrix XenApp in combinazione con Citrix Receiver.
 
-Il plug-in di Lync VDI non supporta altre tecnologie di virtualizzazione, come la virtualizzazione delle applicazioni, che consente l'uso di un'applicazione senza richiedere l'installazione dell'applicazione completa localmente. Le implementazioni di esempio includono Citrix XenApp e Microsoft Application Virtualization (App-V). Lo streaming di applicazioni, la comunicazione remota applicazioni e le modalità miste di virtualizzazione (ad esempio, la comunicazione remota applicazioni in una comunicazione remota desktop completa) non sono supportati.
+Il plug-in VDI di Lync non supporta altre tecnologie di virtualizzazione, ad esempio la virtualizzazione dell'applicazione, che consente l'utilizzo di un'applicazione senza richiedere l'installazione dell'applicazione completa localmente. Le implementazioni di esempio includono Citrix XenApp e Microsoft Application Virtualization (App-V). Le modalità di flusso applicazioni, comunicazione remota applicazioni e virtualizzazione mista, ad esempio la comunicazione remota applicazioni in Desktop remoto completo, non sono supportate.
 
-Per consentire l'estensibilità, il plug-in di Lync VDI è stato progettato per usare API indipendenti dalla piattaforma, denominate Dynamic Virtual Channels (DVCs). Per gli scenari non esplicitamente supportati da Lync, fare riferimento alle istruzioni del supporto del provider di soluzioni VDI.
+Per consentire l'estensibilità, il plug-in VDI di Lync è stato creato per l'utilizzo di API indipendenti dalla piattaforma denominate Dynamic Virtual Channels (dinamici). Per gli scenari non supportati in modo esplicito da Lync, fare riferimento alle istruzioni di supporto del provider di soluzioni VDI.
 
 </div>
 
@@ -59,29 +59,29 @@ Per consentire l'estensibilità, il plug-in di Lync VDI è stato progettato per 
 
 ## <a name="known-feature-limitations"></a>Limitazioni note delle funzionalità
 
-Di seguito sono riportate le limitazioni note quando si usa Lync 2013 in un ambiente VDI:
+Quando si utilizza Lync 2013 in un ambiente VDI, sono note le limitazioni seguenti:
 
-  - È disponibile un supporto limitato per le funzionalità di delega delle chiamate e dell'agente di Response Group anonimato dell'.
+  - È disponibile un supporto limitato per le funzionalità di delega chiamata e agente di Response Group Anonymization.
 
   - Non è previsto supporto per le seguenti caratteristiche:
     
       - Pagine di regolazione dispositivi audio e video integrati.
     
-      - Video con visualizzazioni multiple.
+      - Video con più visualizzazioni.
     
       - Registrazione delle conversazioni.
     
       - Servizi Desktop remoto (RDS).
     
-      - Partecipare a riunioni in forma anonima, ovvero partecipare a riunioni Lync ospitate da un'organizzazione che non è stata associata alla propria organizzazione.
+      - Partecipare a riunioni in forma anonima, ovvero partecipare a riunioni di Lync ospitate da un'organizzazione non federata con la propria organizzazione.
     
-      - Usare il plug-in di Lync VDI insieme a un dispositivo Lync Phone Edition.
+      - Utilizzo del plug-in VDI di Lync insieme a un dispositivo Lync Phone Edition.
     
       - Continuità di chiamata in caso di problemi di rete.
     
-      - Suonerie personalizzate e musica di attesa.
+      - Suonerie personalizzate e funzionalità di musica in attesa.
 
-  - Il plug-in Lync VDI non è supportato in un ambiente di Office 365.
+  - Il plug-in VDI di Lync non è supportato in un ambiente di Office 365.
 
 </div>
 

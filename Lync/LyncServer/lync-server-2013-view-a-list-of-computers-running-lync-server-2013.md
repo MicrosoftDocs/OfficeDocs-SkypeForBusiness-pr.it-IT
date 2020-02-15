@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: visualizzare un elenco dei computer che eseguono Lync Server 2013'
+title: 'Lync Server 2013: visualizzazione di un elenco di computer che eseguono Lync Server 2013'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184030
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b11c6234cbe646888946313df8dd77abc60837fd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 05193ab70846918bd4106883583e42da03b541fc
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41741966"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007225"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,27 +35,27 @@ ms.locfileid: "41741966"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-È possibile usare il pannello di controllo di Lync Server 2013 per visualizzare un elenco di tutti i computer che eseguono Lync Server 2013 nella topologia e vedere lo stato del servizio di ognuno di essi. È possibile ordinare l'elenco in base al computer, al pool o al sito.
+È possibile utilizzare il pannello di controllo di Lync Server 2013 per visualizzare un elenco di tutti i computer in cui è in esecuzione Lync Server 2013 nella topologia e visualizzare lo stato del servizio di ognuno di essi. È possibile ordinare l'elenco in base al computer, al pool o al sito.
 
 <div>
 
 ## <a name="to-view-a-list-of-computers-running-lync-server"></a>Per visualizzare un elenco di computer che eseguono Lync Server
 
-1.  Da un account utente assegnato a uno dei ruoli amministrativi predefiniti per Lync Server 2013, accedere a qualsiasi computer della distribuzione interna. Per informazioni dettagliate sui ruoli amministrativi predefiniti disponibili in Lync Server 2013, vedere [pianificazione per il controllo dell'accesso basato sui ruoli in Lync server 2013](lync-server-2013-planning-for-role-based-access-control.md).
+1.  Da un account utente assegnato a uno dei ruoli amministrativi predefiniti per Lync Server 2013, accedere a un computer nella distribuzione interna. Per informazioni dettagliate sui ruoli amministrativi predefiniti disponibili in Lync Server 2013, vedere [pianificazione del controllo di accesso basato sui ruoli in Lync server 2013](lync-server-2013-planning-for-role-based-access-control.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.
+3.  Nella barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
 
-4.  Nella pagina **stato** eseguire una delle operazioni seguenti in base alle esigenze:
+4.  Nella pagina **Stato** eseguire le operazioni seguenti in base alle esigenze:
     
-      - Ordinare l'elenco facendo clic sul titolo del **computer**, del **pool**o della colonna del **sito** , quindi facendo clic sulla freccia su o freccia giù.
+      - Ordinare l'elenco facendo clic sull'intestazione di colonna **Computer**, **Pool** o **Sito** e quindi sulla freccia verso l'alto o verso il basso.
     
       - Fare clic su **Aggiorna** per visualizzare l'elenco più aggiornato.
     
-      - Cercare un computer specifico digitando il nome del computer nel campo di ricerca.
+      - Cercare un computer specifico digitando il relativo nome nel campo di ricerca.
 
 </div>
 

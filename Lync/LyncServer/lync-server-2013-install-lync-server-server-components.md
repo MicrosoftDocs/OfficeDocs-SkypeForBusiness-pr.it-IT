@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Installazione dei componenti server di Lync Server'
+title: 'Lync Server 2013: installare i componenti server di Lync Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183528
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4f039f9363469663410f08f078a3b7e17a170075
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 180e9c1892b1c296247cfc9dd3ab7a67972e9606
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763720"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008298"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="install-server-components-for-lync-server-2013"></a>Installazione dei componenti server per Lync Server 2013
+# <a name="install-server-components-for-lync-server-2013"></a>Installare componenti server per Lync Server 2013
 
 </div>
 
@@ -35,35 +35,35 @@ ms.locfileid: "41763720"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-05_
+_**Ultimo argomento modificato:** 2014-05-05_
 
-Prima di eseguire questa procedura, verificare di aver effettuato l'accesso al server con un account utente di dominio che sia un amministratore locale e un membro del gruppo RTCUniversalReadOnlyAdmins in Active Directory.
+Prima di eseguire la procedura seguente, verificare di aver eseguito l'accesso al server con un account utente di dominio che sia un amministratore locale e un membro del gruppo RTCUniversalReadOnlyAdmins in Active Directory.
 
-La distribuzione guidata di Lync Server viene usata per installare i componenti necessari per ogni ruolo di Lync Server e per attivare il server. In questo articolo vengono illustrati i passaggi della distribuzione di un server Standard Edition o di un server front-end nell'infrastruttura Lync.
+La distribuzione guidata di Lync Server viene utilizzata per installare i componenti necessari per ogni ruolo di Lync Server e per attivare il server. In questo articolo vengono illustrati i passaggi per la distribuzione di un server Standard Edition o di un front end server nell'infrastruttura di Lync.
 
 <div>
 
 ## <a name="to-install-lync-server-components"></a>Per installare i componenti di Lync Server
 
-1.  Se la distribuzione guidata di Lync Server non è in corso, avviarla nel server in cui si vuole installare Lync.
+1.  Se la distribuzione guidata di Lync Server non è in esecuzione, avviarla nel server in cui si desidera installare Lync.
 
-2.  Fare clic su **Installa o aggiorna Lync Server System**.
+2.  Fare clic su **Installa o aggiorna il sistema Lync Server**.
 
-3.  Nella distribuzione guidata verificare che il **passaggio 1: install Local Configuration Store** contenga un segno di spunta verde, il che significa che il server ha una copia locale dello Store installata correttamente. Se non è selezionata, è necessario installare l'archivio di configurazione locale nel server. Seguire i passaggi descritti in [installare l'archivio di configurazione locale in Lync Server 2013](lync-server-2013-install-the-local-configuration-store.md) e quindi tornare qui.
+3.  Nella distribuzione guidata, verificare che il **passaggio 1: installazione dell'archivio di configurazione locale** disponga di un segno di spunta verde, il che significa che questo server dispone di una copia locale dell'archivio installato correttamente. Se non è selezionata, è necessario installare l'archivio di configurazione locale sul server. Eseguire la procedura seguente per [installare l'archivio di configurazione locale in Lync Server 2013](lync-server-2013-install-the-local-configuration-store.md) e quindi tornare qui.
 
-4.  Quando si è pronti per installare i componenti di Lync Server 2013 nel server, fare clic su **Esegui** accanto al **passaggio 2: configurare o rimuovere i componenti di Lync Server**.
+4.  Quando si è pronti per installare i componenti di Lync Server 2013 nel server, fare clic su **Esegui** accanto a **passaggio 2: installazione o rimozione componenti di Lync Server**.
 
-5.  Nella pagina **configurare i componenti di Lync Server** fare clic su **Avanti** per configurare i componenti come definiti nella topologia pubblicata.
+5.  Nella pagina **Configura componenti di Lync Server** fare clic su **Avanti** per configurare i componenti come definito nella topologia pubblicata.
 
-6.  Nella pagina **comandi in esecuzione** viene visualizzato un riepilogo dei comandi e delle informazioni di installazione Man mano che viene eseguita la configurazione. Al termine, è possibile usare l'elenco per selezionare un log da visualizzare e quindi fare clic su **Visualizza log**.
+6.  Nella pagina **esecuzione comandi** in corso viene visualizzato un riepilogo dei comandi e delle informazioni di installazione come avviene il set up. Al termine, è possibile utilizzare l'elenco per selezionare un registro da visualizzare e quindi fare clic su **Visualizza registro**.
 
-7.  Quando è stata eseguita la configurazione dei componenti di Lync Server 2013 e i registri sono stati esaminati in base alle esigenze, fare clic su **fine** per completare questo passaggio nell'installazione.
+7.  Quando viene eseguito il programma di installazione dei componenti di Lync Server 2013 e i registri sono stati esaminati in base alle esigenze, fare clic su **fine** per completare questo passaggio nell'installazione.
     
     <div>
     
 
     > [!NOTE]  
-    > Se viene richiesto di riavviare il server (che potrebbe verificarsi se l'esperienza desktop di Windows dovesse essere installata), eseguire definitivamente questa operazione. Quando il computer viene eseguito il backup e l'esecuzione, è necessario eseguire di nuovo questi passaggi, a partire dal passaggio tre elencato sopra (in pratica eseguire il passaggio 2 nella distribuzione guidata).
+    > Se viene richiesto di riavviare il server (operazione che potrebbe verificarsi se è necessario installare Windows Desktop Experience), farlo definitivamente. Quando si esegue il backup e l'esecuzione del computer, è necessario eseguire di nuovo questi passaggi, a partire dal passaggio tre elencato sopra (in pratica eseguire il passaggio 2 nella distribuzione guidata un'altra volta).
 
     
     </div>

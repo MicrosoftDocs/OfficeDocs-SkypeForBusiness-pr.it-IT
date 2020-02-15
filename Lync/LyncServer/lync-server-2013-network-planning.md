@@ -1,5 +1,5 @@
 ---
-title: Pianificazione della rete di Lync Server 2013
+title: Lync Server 2013 pianificazione della rete
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733817
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6084fdb6a73566c14185e5b39d1064aa7d5d3647
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: eed16a295e678ea2df169fc2d1ec9ddb2eb33d90
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765907"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008208"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41765907"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-10_
+_**Ultimo argomento modificato:** 2012-09-10_
 
-È possibile usare gli argomenti in questa sezione per verificare che la rete sia pronta per Lync Server.
+È possibile utilizzare gli argomenti di questa sezione per verificare che la rete sia pronta per Lync Server.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Requisiti per l'infrastruttura di rete per Lync Server 2013](lync-server-2013-network-infrastructure-requirements.md)
+  - [Requisiti dell'infrastruttura di rete per Lync Server 2013](lync-server-2013-network-infrastructure-requirements.md)
 
   - [Pianificazione e configurazione di IPv6 in Lync Server 2013](lync-server-2013-planning-for-and-configuring-ipv6.md)
 
-  - [Requisiti di bilanciamento del carico per Lync Server 2013](lync-server-2013-load-balancing-requirements.md)
+  - [Requisiti per il bilanciamento del carico per Lync Server 2013](lync-server-2013-load-balancing-requirements.md)
 
   - [Requisiti DNS (Domain Name System) per Lync Server 2013](lync-server-2013-domain-name-system-dns-requirements.md)
 
-  - [Requisiti della porta per Lync Server 2013](lync-server-2013-port-requirements.md)
+  - [Requisiti relativi alle porte per Lync Server 2013](lync-server-2013-port-requirements.md)
 
   - [Requisiti di larghezza di banda di rete per il traffico multimediale in Lync Server 2013](lync-server-2013-network-bandwidth-requirements-for-media-traffic.md)
 

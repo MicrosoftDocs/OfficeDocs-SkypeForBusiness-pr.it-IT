@@ -12,16 +12,16 @@ ms:contentKeyID: 51803954
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5355ae418e53c44cc61340b57910993ac2afea2c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: aeac19510f69eed8798c92c2d45b727cf5882978
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757450"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007155"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,34 +35,34 @@ ms.locfileid: "41757450"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-20_
+_**Ultimo argomento modificato:** 2013-02-20_
 
-Per visualizzare le informazioni sui dispositivi di conferenza configurati per l'uso nell'organizzazione, è possibile usare Windows PowerShell e il cmdlet **Get-CsMeetingRoom** . Eseguire il cmdlet **Get-CsMeetingRoom** da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
+È possibile visualizzare informazioni sui dispositivi di conferenza configurati per l'utilizzo nell'organizzazione tramite Windows PowerShell e il cmdlet **Get-CsMeetingRoom** . Eseguire il cmdlet **Get-CsMeetingRoom** da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Lync Server 2010 con Remote PowerShell" at.
+> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Server 2010 using Remote PowerShell" at.
 
 
 
 </div>
 
-Se si usa il cmdlet **Get-CsMeetingRoom** senza parametri, vengono restituite informazioni su tutti i dispositivi di conferenza. I parametri facoltativi consentono di filtrare le informazioni in modo diverso. Per informazioni dettagliate, vedere la sezione parametri di [Get-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Get-CsMeetingRoom).
+Se si utilizza il cmdlet **Get-CsMeetingRoom** senza parametri, vengono restituite informazioni su tutti i dispositivi per conferenze. I parametri facoltativi consentono di filtrare le informazioni in modi diversi. Per informazioni dettagliate, vedere la sezione Parameters di [Get-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Get-CsMeetingRoom).
 
 <div>
 
 
 <div>
 
-## <a name="viewing-information-about-all-your-conferencing-devices"></a>Visualizzazione di informazioni su tutti i dispositivi di conferenza
+## <a name="viewing-information-about-all-your-conferencing-devices"></a>Visualizzazione di informazioni su tutti i dispositivi per conferenze
 
-  - Per visualizzare i dettagli su tutti i dispositivi di conferenza, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
+  - Per visualizzare i dettagli su tutti i dispositivi per conferenze, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
     
         Get-CsMeetingRoom
     
-    Questo cmdlet restituisce informazioni simili a quelle seguenti per ogni dispositivo di conferenza. Tieni presente che questo esempio Mostra solo alcune delle informazioni che vedrai quando Esegui questo cmdlet:
+    Questo cmdlet restituisce informazioni simili alle seguenti per ogni dispositivo per conferenze. Si noti che in questo esempio vengono mostrate solo alcune delle informazioni che verranno visualizzate quando si esegue questo cmdlet:
     
         ContactOptionFlags                : 64
         OwnerUrn                          : urn:device:roomsystem
@@ -86,15 +86,15 @@ Se si usa il cmdlet **Get-CsMeetingRoom** senza parametri, vengono restituite in
 
 <div>
 
-## <a name="viewing-information-about-a-specific-conferencing-device"></a>Visualizzazione di informazioni su un dispositivo di conferenza specifico
+## <a name="viewing-information-about-a-specific-conferencing-device"></a>Visualizzazione di informazioni su uno specifico dispositivo per i servizi di conferenza
 
-  - Per visualizzare le informazioni relative a un dispositivo di conferenza specifico, includere il parametro Identity seguito dall'identità del dispositivo di conferenza (in genere il nome visualizzato di Active Directory). Ad esempio:
+  - Per visualizzare le informazioni relative a un dispositivo Conferencing specifico, includere il parametro Identity seguito dall'identità del dispositivo per i servizi di conferenza (in genere, il nome visualizzato di Active Directory). Ad esempio:
     
         Get-CsMeetingRoom -Identity "Room 1219"
 
 </div>
 
-Per informazioni dettagliate, vedere l'argomento della Guida relativo al cmdlet [Get-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Get-CsMeetingRoom) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Get-CsMeetingRoom) .
 
 </div>
 

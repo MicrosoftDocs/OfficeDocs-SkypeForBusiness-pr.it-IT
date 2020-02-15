@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Requisiti tecnici per IPv6'
+title: Lync Server 2013 requisiti tecnici per IPv6
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185465
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e0688319a1b37dbd609a2f2051b3b8c6dfc6a2d4
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 88e0d822e14ea1792751338bd3606766cc98ab96
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746536"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006702"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41746536"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-30_
+_**Ultimo argomento modificato:** 2012-10-30_
 
-Se si prevede di configurare Lync Server 2013 per IPv6, tieni presente quanto segue:
+Se si prevede di configurare Lync Server 2013 per IPv6, tenere presente quanto segue:
 
-  - Per usare gli indirizzi IPv6 con Lync Server, è necessario creare record DNS (Domain Name System) per i record che devono essere individuati e risolti in un indirizzo IPv6. DNS IPv6 usa record AAAA (Quad-A) host. Se si usano sia IPv4 che IPv6 nella distribuzione, è consigliabile configurare e gestire sia l'host di un record per IPv4 che i record AAAA host per IPv6. Anche quando si passa completamente la distribuzione a IPv6, è possibile che siano ancora necessari record host DNS IPv4 per gli utenti esterni che usano ancora IPv4.
+  - Per utilizzare gli indirizzi IPv6 con Lync Server, è necessario creare record DNS (Domain Name System) per i record che devono essere individuati e risolti in un indirizzo IPv6. Il DNS IPv6 utilizza record AAAA (A quadrupla) dell'host. Se si utilizzano entrambi gli indirizzamenti IPv4 e IPv6 nella distribuzione, è consigliabile configurare e gestire sia i record A dell'host per IPv4 che i record AAAA dell'host per IPv6. Anche in caso di transizione completa della distribuzione a IPv6, è possibile che siano comunque necessari record dell'host DNS IPv4 per gli utenti esterni che continuano a utilizzare IPv4.
     
-    È possibile distribuire record host DNS IPv6 prima di iniziare a usare IPv6. Se il client o il server non usa IPv6, non verrà fatto riferimento al record. Le tecnologie di transizione consentiranno di decidere quale record usare, in base alla configurazione e ai criteri di tecnologia di transizione.
+    È possibile distribuire record DNS IPv6 prima di iniziare a utilizzare IPv6. Se il client o il server non utilizza IPv6, il record non verrà utilizzato come riferimento. Le tecnologie transitorie sceglieranno quale record utilizzare in base alla configurazione e ai criteri della tecnologia.
 
-  - Ogni indirizzo IPv6 ha un ambito. I tre ambiti che è possibile usare per l'indirizzamento IPv6 sono indirizzi globali IPv6 (in modo simile agli indirizzi IPv4 pubblici), indirizzi locali univoci di IPv6 (in modo simile agli intervalli di indirizzi IPv4 privati) e indirizzi locali del collegamento IPv6 (in modo simile agli indirizzi IP privati automatici in Windows Server per IPv4). Tutti i server all'interno di un pool devono avere indirizzi IPv6 con lo stesso ambito.
+  - Ogni indirizzo IPv6 prevede un ambito. I tre ambiti che è possibile utilizzare per l'indirizzamento IPv6 sono gli indirizzi globali IPv6 (simili agli indirizzi IPv4 pubblici), gli indirizzi locali univoci IPv6 (simili agli intervalli di indirizzi IPv4 privati) e gli indirizzi del collegamento IPv6 (simili agli indirizzi IP privati automatici in Windows Server per IPv4). Tutti i server di un pool devono disporre di indirizzi IPv6 con lo stesso ambito.
 
 <div>
 
 
 > [!IMPORTANT]  
-> IPv6 è un argomento complesso e richiede una pianificazione accurata con il team di rete e il provider Internet per assicurarti che gli indirizzi assegnati a livello di Windows Server e a livello di Lync Server 2013 funzionino come previsto. Vedere i collegamenti alla fine di questo argomento per altre risorse sull'indirizzamento e la pianificazione IPv6.
+> IPv6 è un argomento complesso che richiede una pianificazione accurata con il team di rete e il provider di servizi Internet per garantire che gli indirizzi assegnati a livello di Windows Server e al livello di Lync Server 2013 funzionino come previsto. Vedere i collegamenti alla fine dell'argomento per risorse aggiuntive sull'indirizzamento IPv6 e la pianificazione.
 
 
 

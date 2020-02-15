@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Novità per i dispositivi'
+title: 'Lync Server 2013: novità per i dispositivi'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185477
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 86a50f6e0fa1b2a4a3860ea51c2b2d67a8dcef11
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4365862f1c093622fa447bdceb3a326c9e18d11c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758476"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41983091"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41758476"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-22_
+_**Ultimo argomento modificato:** 2012-06-22_
 
-Lync Server 2013 include Lync Phone Edition, software che viene eseguito su dispositivi qualificati e offre funzionalità di telefonia tradizionali e avanzate, sicurezza integrata, gestibilità e altro ancora. Lync Phone Edition funziona allo stesso modo con Lync Server 2013 come avviene con Lync Server 2010. Per informazioni dettagliate sulle caratteristiche più recenti correlate ai dispositivi, vedere [novità per i dispositivi](http://go.microsoft.com/fwlink/p/?linkid=256490) nella raccolta TechNet di Lync Server 2010.
+Lync Server 2013 include Lync Phone Edition, software che viene eseguito su dispositivi qualificati e fornisce funzionalità di telefonia tradizionali e avanzate, sicurezza integrata, gestibilità e altro ancora. Lync Phone Edition è compatibile con Lync Server 2013 come avviene con Lync Server 2010. Per informazioni dettagliate sulle funzionalità più recenti relative ai dispositivi, vedere [What ' s New for Devices](http://go.microsoft.com/fwlink/p/?linkid=256490) in the Lync Server 2010 TechNet Library.
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Pianificazione per i dispositivi](http://go.microsoft.com/fwlink/p/?linkid=256483)  
-[Distribuzione di dispositivi](http://go.microsoft.com/fwlink/p/?linkid=256484)  
+[Pianificazione dei dispositivi](http://go.microsoft.com/fwlink/p/?linkid=256483)  
+[Distribuzione dei dispositivi](http://go.microsoft.com/fwlink/p/?linkid=256484)  
   
 
 </div>

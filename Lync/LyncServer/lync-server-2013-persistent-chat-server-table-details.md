@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Dettagli sulle tabelle del server Chat persistente'
+title: 'Lync Server 2013: dettagli della tabella del server Chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185323
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cd738a423744257968eb029abdd29e5964c0c623
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3caf59185bc3fbe985ea8b7d4371d464b515e3fe
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755216"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006894"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="persistent-chat-server-table-details-in-lync-server-2013"></a>Dettagli sulle tabelle del server Chat persistente in Lync Server 2013
+# <a name="persistent-chat-server-table-details-in-lync-server-2013"></a>Dettagli della tabella del server Chat persistente in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41755216"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-25_
+_**Ultimo argomento modificato:** 2012-06-25_
 
-Gli argomenti seguenti illustrano in dettaglio le colonne in ognuna delle tabelle dello schema del database della chat persistente.
+Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema del database di chat persistente.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [tblADCookie in Lync Server 2013](lync-server-2013-tbladcookie.md)
 
@@ -55,9 +55,9 @@ Gli argomenti seguenti illustrano in dettaglio le colonne in ognuna delle tabell
 
   - [tblSkippedAffiliations in Lync Server 2013](lync-server-2013-tblskippedaffiliations.md)
 
-  - [tblPrincipalType in Lync Server 2013](lync-server-2013-tblprincipaltype.md)
+  - [PrincipalType in Lync Server 2013](lync-server-2013-tblprincipaltype.md)
 
-  - [tblPrincipal in Lync Server 2013](lync-server-2013-tblprincipal.md)
+  - [Tabella tblPrincipal in Lync Server 2013](lync-server-2013-tblprincipal.md)
 
   - [tblPrincipalAffiliations in Lync Server 2013](lync-server-2013-tblprincipalaffiliations.md)
 
@@ -73,7 +73,7 @@ Gli argomenti seguenti illustrano in dettaglio le colonne in ognuna delle tabell
 
   - [tblEnumAttribute in Lync Server 2013](lync-server-2013-tblenumattribute.md)
 
-  - [tblEnumValue in Lync Server 2013](lync-server-2013-tblenumvalue.md)
+  - [Nella in Lync Server 2013](lync-server-2013-tblenumvalue.md)
 
   - [tblPrincipalInvites in Lync Server 2013](lync-server-2013-tblprincipalinvites.md)
 
@@ -81,13 +81,13 @@ Gli argomenti seguenti illustrano in dettaglio le colonne in ognuna delle tabell
 
   - [tblLastInviteId in Lync Server 2013](lync-server-2013-tbllastinviteid.md)
 
-  - [tblLastChatId in Lync Server 2013](lync-server-2013-tbllastchatid.md)
+  - [LastChatId in Lync Server 2013](lync-server-2013-tbllastchatid.md)
 
   - [tblPreference in Lync Server 2013](lync-server-2013-tblpreference.md)
 
   - [tblFileToken in Lync Server 2013](lync-server-2013-tblfiletoken.md)
 
-  - [tblServerIdentity in Lync Server 2013](lync-server-2013-tblserveridentity.md)
+  - [Tabella tblServerIdentity in Lync Server 2013](lync-server-2013-tblserveridentity.md)
 
   - [tblAdminLock in Lync Server 2013](lync-server-2013-tbladminlock.md)
 
@@ -99,7 +99,7 @@ Gli argomenti seguenti illustrano in dettaglio le colonne in ognuna delle tabell
 
   - [tblComplianceData in Lync Server 2013](lync-server-2013-tblcompliancedata.md)
 
-  - [tblComplianceFanout in Lync Server 2013](lync-server-2013-tblcompliancefanout.md)
+  - [ComplianceFanout in Lync Server 2013](lync-server-2013-tblcompliancefanout.md)
 
   - [tblComplianceParticipant in Lync Server 2013](lync-server-2013-tblcomplianceparticipant.md)
 

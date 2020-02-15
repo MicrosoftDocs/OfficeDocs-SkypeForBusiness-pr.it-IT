@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Dettagli sulle tabelle di registrazione dettagli chiamata (CDR)'
+title: 'Lync Server 2013: dettagli della tabella CDR'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184730
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 650caa5244eaf796c066f1388f2fcbb5d3b0703a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 32b48f6a03c0663277404876f538ae2f15d1bc38
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736946"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008508"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="cdr-table-details-in-lync-server-2013"></a>Dettagli sulle tabelle di registrazione dettagli chiamata (CDR) in Lync Server 2013
+# <a name="cdr-table-details-in-lync-server-2013"></a>Dettagli della tabella CDR in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41736946"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-18_
+_**Ultimo argomento modificato:** 2012-10-18_
 
-Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle tabelle dello schema del database CDR (Call Detail Records).
+Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema di database di registrazione dettagli chiamata.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Tabella Application in Lync Server 2013](lync-server-2013-application-table.md)
 
@@ -81,7 +81,7 @@ Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle 
 
   - [Tabella FocusJoinsAndLeaves in Lync Server 2013](lync-server-2013-focusjoinsandleaves-table.md)
 
-  - [Tabella FrontEnd in Lync Server 2013](lync-server-2013-frontend-table.md)
+  - [Tabella front-end in Lync Server 2013](lync-server-2013-frontend-table.md)
 
   - [Tabella Gateways in Lync Server 2013](lync-server-2013-gateways-table.md)
 
@@ -95,11 +95,11 @@ Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle 
 
   - [Tabella McuJoinsAndLeaves in Lync Server 2013](lync-server-2013-mcujoinsandleaves-table.md)
 
-  - [Tabella Mcus in Lync Server 2013](lync-server-2013-mcus-table.md)
+  - [Tabella MCU in Lync Server 2013](lync-server-2013-mcus-table.md)
 
-  - [Tabella Media in Lync Server 2013](lync-server-2013-media-table.md)
+  - [Tabella multimediale in Lync Server 2013](lync-server-2013-media-table.md)
 
-  - [Tabella MediaList in Lync Server 2013](lync-server-2013-medialist-table.md)
+  - [Tabella media in Lync Server 2013](lync-server-2013-medialist-table.md)
 
   - [Tabella MediationServers in Lync Server 2013](lync-server-2013-mediationservers-table.md)
 
@@ -113,7 +113,7 @@ Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle 
 
   - [Tabella PurgeSettings in Lync Server 2013](lync-server-2013-purgesettings-table.md)
 
-  - [Tabella Registration in Lync Server 2013](lync-server-2013-registration-table.md)
+  - [Tabella di registrazione in Lync Server 2013](lync-server-2013-registration-table.md)
 
   - [Tabella Roles in Lync Server 2013](lync-server-2013-roles-table.md)
 
@@ -123,7 +123,7 @@ Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle 
 
   - [Tabella SIPResponseMetaData in Lync Server 2013](lync-server-2013-sipresponsemetadata-table.md)
 
-  - [Tabella sindacati in Lync Server 2013](lync-server-2013-syndicators-table.md)
+  - [Tabella Syndicates in Lync Server 2013](lync-server-2013-syndicators-table.md)
 
   - [Tabella SyndicatorsTenantMap in Lync Server 2013](lync-server-2013-syndicatorstenantmap-table.md)
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48184239
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 363b277003d7ca1581475ec7c1197bb0f60ccfaa
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 82d540d37dee0de37d3986c02ac2243a95fe4404
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41766077"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008258"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,51 +35,51 @@ ms.locfileid: "41766077"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-È necessario distribuire Lync Server 2013, Mediation Server se si distribuisce il carico di lavoro VoIP aziendale. Questa sezione descrive le funzionalità di base, le dipendenze, le topologie base e le linee guida per la pianificazione.
+Se si distribuisce il carico di lavoro VoIP aziendale, è necessario distribuire Lync Server 2013, Mediation Server. In questa sezione vengono descritte la funzionalità di base, le dipendenze, le topologie di base e le linee guida per la pianificazione.
 
-Il Mediation Server traduce la segnalazione e, in alcune configurazioni, il supporto tra l'infrastruttura di Lync Server 2013, le infrastrutture VoIP aziendale e un gateway PSTN (Public Switched Telephone Network) o un trunk SIP (Session Initiation Protocol). Sul lato Lync Server 2013, Mediation Server è in ascolto su un unico indirizzo di trasporto Mutual TLS (MTLS). Sul lato del gateway, Mediation Server è in ascolto su tutte le porte di ascolto associate associate ai trunk definiti nel documento di topologia. Tutti i gateway qualificati devono supportare TLS, ma possono abilitare anche TCP. TCP è supportato per i gateway che non supportano TLS.
+Il Mediation Server converte la segnalazione e, in alcune configurazioni, i supporti tra il Lync Server 2013, l'infrastruttura VoIP aziendale e un gateway PSTN (Public Switched Telephone Network) o un trunk SIP (Session Initiation Protocol). Sul fianco di Lync Server 2013, Mediation Server è in attesa su un singolo indirizzo di trasporto Mutual TLS (MTLS). Sul lato del gateway, Mediation Server si pone in attesa su tutte le porte di attesa associate ai trunk definiti nel documento della topologia. Tutti i gateway qualificati devono supportare TLS, ma possono abilitare anche TCP. TCP è supportato per i gateway che non supportano TLS.
 
-Se si ha anche un PBX (Public Branch Exchange) esistente nell'ambiente, Mediation Server gestisce le chiamate tra gli utenti di VoIP aziendale e il PBX. Se il PBX è un IP-PBX, è possibile creare una connessione SIP diretta tra il PBX e il Mediation Server. Se il PBX è un PBX TDM (Time Division Multiplex), è necessario distribuire anche un gateway PSTN tra Mediation Server e il PBX.
+Se nel proprio ambiente è presente anche un PBX (Public Branch Exchange), Mediation Server gestisce le chiamate tra gli utenti di VoIP aziendale e il sistema PBX. Se il sistema PBX è un IP-PBX, è possibile creare una connessione SIP diretta tra il PBX e il Mediation Server. Se il PBX è un PBX TDM (Time Division Multiplex), è necessario distribuire anche un gateway PSTN tra Mediation Server e il sistema PBX.
 
-Il Mediation Server è collocato con il front end server per impostazione predefinita. Il Mediation Server può essere distribuito anche in un pool autonomo per motivi di prestazioni oppure se si distribuisce il trunking SIP, in questo caso è consigliabile usare il pool autonomo.
+Il Mediation Server è collocato con il front end server per impostazione predefinita. Il Mediation Server può anche essere distribuito in un pool autonomo per motivi di prestazioni oppure se si distribuisce il trunking SIP, nel qual caso è consigliabile utilizzare il pool autonomo.
 
-Se si distribuiscono connessioni SIP dirette a un gateway PSTN qualificato che supporta il bypass multimediale e il bilanciamento del carico DNS, non è necessario disporre di un pool di Mediation Server autonomo. Un pool di Mediation Server autonomo non è necessario perché i gateway qualificati sono in grado di bilanciamento del carico DNS in un pool di server di mediazione e possono ricevere traffico da qualsiasi Mediation Server in un pool.
+Se si distribuiscono connessioni SIP dirette a un gateway PSTN qualificato che supporta il bypass multimediale e il bilanciamento del carico DNS, non è necessario disporre di un pool Mediation Server autonomo. Ciò è dovuto al fatto che i gateway qualificati possono effettuare il bilanciamento del carico DNS in un pool di Mediation Server e ricevere traffico da qualsiasi Mediation Server di un pool.
 
-È anche consigliabile collocare il Mediation Server in un pool Front-end quando si sono distribuiti IP-PBX o connettersi a un SBC (Session Border Controller) di un provider di telefonia Internet, purché siano soddisfatte le condizioni seguenti:
+È inoltre consigliabile collocare il Mediation Server in un pool Front End se sono stati distribuiti sistemi IP-PBX o si effettua la connessione al Session Border Controller (SBC) di un provider di servizi di telefonia Internet, purché vengano soddisfatte una o più delle condizioni seguenti:
 
-  - IP-PBX o SBC è configurato per ricevere il traffico da qualsiasi Mediation Server nel pool e può instradare il traffico uniformemente a tutti i server di mediazione nel pool.
+  - Il sistema IP-PBX o SBC è configurato per la ricezione di traffico da qualsiasi server Mediation Server nel pool e può eseguire il routing del traffico in modo uniforme a tutti i server Mediation Server nel pool.
 
-  - IP-PBX non supporta il bypass multimediale, ma il pool Front-end che ospita il Mediation Server può gestire la transcodifica vocale per le chiamate a cui il bypass multimediale non si applica.
+  - Il sistema IP-PBX non supporta il bypass multimediale, ma il pool Front end che ospita il Mediation Server è in grado di gestire la transcodifica vocale per le chiamate a cui non si applica il bypass multimediale.
 
-È possibile usare Microsoft Lync Server 2013, strumento di pianificazione per valutare se il pool di front end in cui si vuole collocare il Mediation Server può gestire il carico. Se l'ambiente non soddisfa questi requisiti, è necessario distribuire un pool di Mediation Server autonomo.
+È possibile utilizzare Microsoft Lync Server 2013, strumento di pianificazione per valutare se il pool Front end in cui si desidera collocare il Mediation Server è in grado di gestire il carico. Se l'ambiente non soddisfa questi requisiti, è necessario distribuire un pool di Mediation Server autonomo.
 
-Di seguito sono riportate le funzioni principali di Mediation Server:
+Di seguito sono riportate le funzioni principali del Mediation Server:
 
-  - Crittografia e decrittografia di SRTP sul lato server Lync
+  - Crittografia e decrittografia di SRTP sul server di Lync
 
-  - Traduzione di SIP su TCP (per i gateway che non supportano TLS) per il SIP tramite Mutual TLS
+  - Conversione di SIP su TCP (per i gateway che non supportano TLS) in SIP su Mutual TLS
 
-  - Traduzione di flussi multimediali tra Lync Server e il peer del gateway del Mediation Server
+  - Conversione di flussi multimediali tra Lync Server e il peer gateway del Mediation Server
 
-  - Connettere i client esterni alla rete ai componenti ICE interni, che consentono l'attraversamento multimediale di NAT e firewall
+  - Connessione di client esterni alla rete a componenti ICE interni per consentire l'attraversamento multimediale di NAT e firewall
 
-  - Fungendo da intermediario per i flussi di chiamata non supportati da un gateway, ad esempio le chiamate di operatori remoti in un client VoIP aziendale
+  - Fungere da intermediario per i flussi di chiamata che un gateway non supporta, ad esempio le chiamate provenienti da utenti remoti su un client VoIP aziendale
 
-  - Nelle distribuzioni che includono il trunking SIP, che collabora con il provider di servizi di trunking SIP per ottenere il supporto PSTN, che elimina la necessità di un gateway PSTN
+  - Utilizzo del provider di servizi trunking SIP, nelle distribuzioni che includono il trunking SIP, per fornire il supporto PSTN eliminando la necessità di un gateway PSTN
 
-Nella figura seguente vengono illustrati i protocolli di segnalazione e multimediali usati dal Mediation Server quando si comunica con un gateway PSTN di base e con l'infrastruttura VoIP aziendale.
+Nella figura seguente vengono illustrati i protocolli di segnalazione e multimediali utilizzati dal Mediation Server per la comunicazione con un gateway PSTN di base e l'infrastruttura VoIP aziendale.
 
-**Segnalazioni e protocolli multimediali usati dal Mediation Server**
+**Protocolli di segnalazione e multimediali utilizzati dal Mediation Server**
 
-![Diagramma dei protocolli del Mediation Server](images/Gg398399.c3d39ba0-e323-4a58-8f07-4e80d3278af2(OCS.15).jpg "Diagramma dei protocolli del Mediation Server")
+![Diagramma protocolli Mediation Server](images/Gg398399.c3d39ba0-e323-4a58-8f07-4e80d3278af2(OCS.15).jpg "Diagramma protocolli Mediation Server")
 
 <div>
 
 
 > [!NOTE]  
-> Se si usa TCP o RTP/RTCP (invece di SRTP o SRTCP) nella rete tra il gateway PSTN e il Mediation Server, è consigliabile adottare misure per garantire la sicurezza e la privacy della rete.
+> Se si utilizza TCP o RTP/RTCP (invece di SRTP o SRTCP) sulla rete tra il gateway PSTN e il Mediation Server, è consigliabile adottare misure per garantire la sicurezza e la privacy della rete.
 
 
 
@@ -87,13 +87,13 @@ Nella figura seguente vengono illustrati i protocolli di segnalazione e multimed
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Trunk M:N in Lync Server 2013](lync-server-2013-m-n-trunk.md)
 
   - [Controllo di ammissione di chiamata e Mediation Server in Lync Server 2013](lync-server-2013-call-admission-control-and-mediation-server.md)
 
-  - [Servizi di emergenza avanzati e Mediation Server in Lync Server 2013](lync-server-2013-enhanced-9-1-1-e9-1-1-and-mediation-server.md)
+  - [Enhanced 9-1-1 (E9-1-1) e Mediation Server in Lync Server 2013](lync-server-2013-enhanced-9-1-1-e9-1-1-and-mediation-server.md)
 
   - [Bypass multimediale e Mediation Server in Lync Server 2013](lync-server-2013-media-bypass-and-mediation-server.md)
 

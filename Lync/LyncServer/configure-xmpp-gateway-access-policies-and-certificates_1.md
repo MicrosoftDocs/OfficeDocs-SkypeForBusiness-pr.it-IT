@@ -1,5 +1,5 @@
 ---
-title: Configurare criteri di accesso e certificati del gateway XMPP
+title: Configurare i certificati e i criteri di accesso del gateway XMPP
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -13,20 +13,20 @@ ms:contentKeyID: 49733819
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f3f1aabeeb49ecc413107d5cd346f310c0d2d294
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9f622ed573a6d30d35b55d2c07ec21ef79b46424
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723206"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006572"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-xmpp-gateway-access-policies-and-certificates"></a>Configurare criteri di accesso e certificati del gateway XMPP
+# <a name="configure-xmpp-gateway-access-policies-and-certificates"></a>Configurare i certificati e i criteri di accesso del gateway XMPP
 
 </div>
 
@@ -36,21 +36,21 @@ ms.locfileid: "41723206"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-15_
+_**Ultimo argomento modificato:** 2012-10-15_
 
-La Federazione XMPP definisce una distribuzione esterna basata sul protocollo XMPP (eXtensible Messaging and Presence Protocol). Una configurazione XMPP consente agli utenti di Lync di accedere agli utenti del dominio XMPP:
+La federazione XMPP definisce una distribuzione esterna basata sul protocollo XMPP (eXtensible Messaging and Presence Protocol). Una configurazione XMPP consente agli utenti di Lync di comunicare con gli utenti di domini XMPP mediante:
 
-  - Messaggistica istantanea e presenza: solo persona a persona
+  - Messaggistica istantanea e informazioni sulla presenza: solo da persona a persona.
 
-  - Creazione di contatti federati XMPP nel client Lync
+  - Creazione di contatti federati XMPP nel client Lync.
 
-Quando si configurano i criteri per il supporto dei partner federati di Extensible Messaging and Presence Protocol (XMPP), i criteri si applicano agli utenti di domini federati XMPP, ma non agli utenti dei provider di servizi di messaggistica istantanea SIP (Session Initiation Protocol) (ad esempio, Windows Live) o i domini federati SIP. Si configura un partner federato XMPP per ogni dominio federato XMPP in cui si vuole consentire agli utenti di aggiungere contatti e comunicare. Dopo aver inserito i criteri, è necessario configurare i certificati del gateway XMPP.
+Quando si configurano i criteri per il supporto di partner federati XMPP, tali criteri si applicano agli utenti di domini federati XMPP, ma non agli utenti di provider di servizi di messaggistica istantanea SIP (Session Initiation Protocol), ad esempio Windows Live, o di domini federati SIP. Configurare un partner federato XMPP per ogni dominio federato XMPP di cui si desidera consentire agli utenti di aggiungere contatti e con cui possono comunicare. Dopo aver configurato i criteri, è necessario configurare i certificati del gateway XMPP.
 
 <div>
 
 
 > [!NOTE]  
-> Per avviare la migrazione del gateway XMPP, è necessario distribuire il gateway XMPP di Lync Server 2013 e configurare i criteri di accesso per consentire agli utenti il gateway XMPP di Lync Server 2013. Prima di eseguire questa procedura, tutti gli utenti devono essere spostati nella distribuzione di Lync Server 2013. Per informazioni dettagliate, vedere <A href="configure-xmpp-gateway-on-lync-server-2013_1.md">configurare il gateway XMPP in Lync Server 2013</A>.
+> Per avviare la migrazione del gateway XMPP, è necessario distribuire il gateway XMPP di Lync Server 2013 e configurare i criteri di accesso per abilitare gli utenti per il gateway XMPP di Lync Server 2013. Prima di eseguire questa procedura, è necessario spostare tutti gli utenti nella distribuzione di Lync Server 2013. Per ulteriori informazioni, vedere <A href="configure-xmpp-gateway-on-lync-server-2013_1.md">configurare il gateway XMPP in Lync Server 2013</A>.
 
 
 
@@ -58,23 +58,23 @@ Quando si configurano i criteri per il supporto dei partner federati di Extensib
 
 <div>
 
-## <a name="configure-an-external-access-policy-to-enable-users-for-lync-server-2013-xmpp-gateway"></a>Configurare un criterio di accesso esterno per consentire agli utenti il gateway XMPP di Lync Server 2013
+## <a name="configure-an-external-access-policy-to-enable-users-for-lync-server-2013-xmpp-gateway"></a>Configurare criteri di accesso esterno in modo da abilitare gli utenti per il gateway XMPP di Lync Server 2013
 
-1.  Aprire il pannello di controllo di Lync Server.
+1.  Aprire il Pannello di controllo di Lync Server.
 
-2.  Nella barra di spostamento sinistra fare clic su **Federazione e accesso esterno**, quindi fare clic su **criteri di accesso esterno**.
+2.  Sulla barra di spostamento sinistra fare clic su **Federazione e accesso esterno** e quindi su **Criteri di accesso esterno**.
 
-3.  Fare clic su **nuovo** e quindi su **criteri utente**.
+3.  Fare clic su **Nuovo** e quindi su **Criteri utente**.
 
-4.  Immettere un nome per il criterio utente di accesso esterno.
+4.  Immettere un nome per l'impostazione dei criteri utente di accesso esterno.
 
-5.  Specificare una descrizione per i criteri degli utenti di Access esterni.
+5.  Specificare una descrizione per l'impostazione dei criteri utente di accesso esterno.
 
-6.  Selezionare **Abilita comunicazioni con gli utenti federati**.
+6.  Selezionare **Abilita comunicazioni con utenti federati**.
 
-7.  Selezionare **Abilita comunicazioni con utenti federati XMPP**.
+7.  Selezionare **Abilita le comunicazioni con gli utenti federati XMPP**.
 
-8.  Fare clic su **conferma** per salvare le modifiche apportate ai criteri per il sito o per gli utenti.
+8.  Fare clic su **Commit** per salvare le modifiche apportate ai criteri utente o sito.
 
 </div>
 

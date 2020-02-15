@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: verificare la capacità degli utenti mobili di scambiare messaggi istantanei'
+title: 'Lync Server 2013: testare la possibilità per gli utenti di dispositivi mobili di scambiare messaggi istantanei'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 63969638
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: db5af113c6ea87a700ca824bcef09b525338f4e6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 84e4a79f511247b3c335872b7a1ec31fb9f2201e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746236"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42021327"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="test-mobile-users-ability-to-exchange-instant-messages-in-lync-server-2013"></a>Testare la capacità degli utenti mobili di scambiare messaggi istantanei in Lync Server 2013
+# <a name="test-mobile-users-ability-to-exchange-instant-messages-in-lync-server-2013"></a>Testare la possibilità per gli utenti di dispositivi mobili di scambiare messaggi istantanei in Lync Server 2013
 
 </div>
 
@@ -35,7 +35,7 @@ ms.locfileid: "41746236"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-06-07_
+_**Ultimo argomento modificato:** 2014-06-07_
 
 
 <table>
@@ -49,13 +49,13 @@ _**Argomento Ultima modifica:** 2014-06-07_
 <td><p>Mensile</p></td>
 </tr>
 <tr class="even">
-<td><p>Strumento di test</p></td>
+<td><p>Strumento di testing</p></td>
 <td><p>Windows PowerShell</p></td>
 </tr>
 <tr class="odd">
 <td><p>Autorizzazioni necessarie</p></td>
-<td><p>Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
-<p>Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet Test-CsMcxP2PIM. Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</p>
+<td><p>Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
+<p>Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Test-CsMcxP2PIM. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</p>
 <pre><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsMcxP2PIM&quot;}</code></pre></td>
 </tr>
 </tbody>
@@ -66,44 +66,44 @@ _**Argomento Ultima modifica:** 2014-06-07_
 
 ## <a name="description"></a>Descrizione
 
-Il servizio di mobilità consente agli utenti di dispositivi mobili di eseguire operazioni come:
+Il servizio per dispositivi mobili consente agli utenti del dispositivo mobile di eseguire operazioni quali:
 
 1.  Scambiare messaggi istantanei e informazioni sulla presenza.
 
-2.  Archiviare e recuperare i messaggi vocali internamente anziché con il provider wireless.
+2.  Archiviare e recuperare i messaggi vocali internamente anziché con il provider di servizi di rete.
 
 3.  Sfruttare le funzionalità di Lync Server, ad esempio la chiamata tramite il lavoro e le conferenze telefoniche con accesso esterno.
 
-Il cmdlet test-CsMxcP2PIM offre un modo semplice e rapido per verificare che gli utenti possano usare il servizio mobilità per scambiare messaggi istantanei.
+Il cmdlet test-CsMxcP2PIM consente di verificare in modo semplice e rapido che gli utenti possano utilizzare il servizio per dispositivi mobili per scambiare messaggi istantanei.
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a>Eseguire il test
+## <a name="running-the-test"></a>Esecuzione del test
 
-Per eseguire questo test, è necessario creare due oggetti delle credenziali di Windows PowerShell (oggetti che contengono il nome dell'account e la password) per ogni account. È quindi necessario includere tali oggetti Credentials e gli indirizzi SIP dei due account quando si chiama Test-CsMcxP2PIM:
+Per eseguire questo test, è necessario creare due oggetti credenziali di Windows PowerShell (oggetti che contengono il nome e la password dell'account) per ogni account. Quando si chiama Test-CsMcxP2PIM, è necessario includere gli oggetti Credential e gli indirizzi SIP dei due account:
 
     $credential1 = Get-Credential "litwareinc\kenmyer"
     $credential2 = Get-Credential "litwareinc\pilar"
     
     Test-CsMcxP2PIM -TargetFqdn "atl-cs-001.litwareinc.com" -Authentication Negotiate -SenderSipAddres "sip:kenmyer@litwareinc.com" -SenderCredential $credential1 -ReceiverSipAddress "sip:packerman@litwareinc.com" -ReceiverCredential $credential2
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Test-CsMcxP2PIM](https://docs.microsoft.com/powershell/module/skype/Test-CsMcxP2PIM) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Test-CsMcxP2PIM](https://docs.microsoft.com/powershell/module/skype/Test-CsMcxP2PIM) .
 
 </div>
 
 <div>
 
-## <a name="determining-success-or-failure"></a>Determinare l'esito positivo o negativo
+## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
-Se i due utenti di test possono scambiare messaggi istantanei usando il servizio mobilità, Test-CsMcxP2PIM restituirà il risultato del test:
+Se i due utenti di test possono scambiare messaggi istantanei utilizzando il servizio per dispositivi mobili, Test-CsMcxP2PIM restituirà il risultato del test:
 
-Nome di dominio completo di destinazione: atl-cs-001.litwareinc.com
+FQDN di destinazione: atl-cs-001.litwareinc.com
 
 URI di destinazione:http://atl-cs-001.litwareinc.com:443/mcx
 
-Risultato: successo
+Risultato: esito positivo
 
 Latenza: 00:00:00
 
@@ -111,9 +111,9 @@ Messaggio di errore:
 
 Diagnosi
 
-Se il test ha esito negativo, il risultato verrà impostato su errore e verrà visualizzato un messaggio di errore e una diagnosi dettagliati:
+Se il test ha esito negativo, il risultato verrà impostato su errore e verrà visualizzato un messaggio di errore dettagliato e la diagnosi:
 
-Nome di dominio completo di destinazione: atl-cs-001.litwareinc.com
+FQDN di destinazione: atl-cs-001.litwareinc.com
 
 URI di destinazione:https://atl-cs-001.litwareinc.com:443/mcx
 
@@ -121,11 +121,11 @@ Risultato: errore
 
 Latenza: 00:00:00
 
-Messaggio di errore: nessuna risposta ricevuta per il servizio Ticket Web.
+Messaggio di errore: nessuna risposta ricevuta per il servizio Web-Ticket.
 
-Eccezione interna: la richiesta di HHTP non è autorizzata con
+Eccezione interna: la richiesta di HHTP non è stata autorizzata con
 
-schema di negoziazione client "NTLM". L'autenticazione
+schema di negoziazione client ' NTLM '. L'autenticazione
 
 l'intestazione ricevuta dal server è "Negotiate, NTLM".
 
@@ -145,13 +145,13 @@ Content-Type: text/html; charset = UTF-8.
 
 Server: Microsoft-IIS/8.5
 
-Autenticazione WWW: negozia, NTLM
+WWW-Authenticate: Negotiate, NTLM
 
 X-Powered-by: ASP.NET
 
-X-Content-Type-Options: nosniffing
+X-Content-Type-Options: nosniff
 
-Data: Mer, 28 mag 2014 19:16:05 GMT
+Data: Mer, 28 May 2014 19:16:05 GMT
 
 Content-length: 6305
 
@@ -159,27 +159,27 @@ Content-length: 6305
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non essere riuscito
+## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Se Test-CsMcxP2PIM non riesce, il primo passaggio deve essere verificare che il servizio di mobilità sia attivo e funzionante. Questa operazione può essere eseguita usando un Web browser per verificare che sia possibile accedere all'URL del servizio di mobilità per il pool di Lync Server. Questo comando, ad esempio, verifica l'URL per il pool atl-cs-001.litwareinc.com:
+Se Test-CsMcxP2PIM ha esito negativo, il primo passaggio consiste nel verificare che il servizio per dispositivi mobili sia attivo e in esecuzione. Che è possibile eseguire utilizzando un Web browser per verificare che sia possibile accedere all'URL del servizio per dispositivi mobili per il pool di Lync Server. Ad esempio, questo comando consente di verificare l'URL per il pool atl-cs-001.litwareinc.com:
 
     https://atl-cs-001.litwareinc.com/mcx/mcxservice.svc
 
-Se il servizio di mobilità sembra essere in corso, verificare che i due utenti di test dispongano di account di Lync Server validi. Puoi recuperare le informazioni dell'account usando un comando simile al seguente:
+Se il servizio per dispositivi mobili sembra essere in esecuzione, verificare che i due utenti di test dispongano di account di Lync Server validi. È possibile recuperare le informazioni dell'account utilizzando un comando simile al seguente:
 
     Get-CsUser -Identity "sip:kenmyer@litwareinc.com" | Select-Object Enabled
 
-Se la proprietà Enabled non è uguale a true o se il comando non riesce, significa che l'utente non ha un account di Lync Server valido.
+Se la proprietà Enabled non è uguale a true o se il comando ha esito negativo, significa che l'utente non dispone di un account Lync Server valido.
 
-Dovresti anche verificare che l'utente sia abilitato per la mobilità. A questo scopo, determina prima di tutto i criteri di mobilità assegnati all'account:
+È inoltre necessario verificare che l'utente sia abilitato per la mobilità. A tale scopo, determinare innanzitutto i criteri per dispositivi mobili assegnati all'account:
 
     Get-CsUser -Identity "sip:kenmyer@litwareinc.com" | Select-Object MobilityPolicy
 
-Dopo aver conosciuto il nome del criterio, usare il cmdlet Get-CsMobilityPolicy per verificare che il criterio in questione (ad esempio RedmondMobilityPolicy) disponga della proprietà EnableMobility impostata su true:
+Una volta che si conosce il nome del criterio, utilizzare il cmdlet Get-CsMobilityPolicy per verificare che il criterio in questione (ad esempio RedmondMobilityPolicy) la proprietà EnableMobility sia impostata su true:
 
     Get-CsMobilityPolicy -Identity "RedmondMobilityPolicy"
 
-Se viene visualizzato un messaggio di errore con le intestazioni di autenticazione, significa che spesso non è stato specificato un account utente valido. Verificare il nome utente e la password e quindi riprovare il test. Se si è certi che l'account utente sia valido, usare il cmdlet Get-CsWebServiceConfiguration e controllare il valore della Proprietà UseWindowsAuth. In questo modo verranno spiegati i metodi di autenticazione abilitati nell'organizzazione. Per altre informazioni su come risolvere i problemi relativi al servizio di mobilità, vedere il post di Blog risoluzione dei problemi relativi alla [connettività per dispositivi mobili esterni di Lync](http://blogs.technet.com/b/nexthop/archive/2012/02/21/troubleshooting-external-lync-mobility-connectivity-issues-step-by-step.aspx).
+Se viene visualizzato un messaggio di errore con intestazioni di autenticazione, significa che spesso non è stato specificato un account utente valido. Verificare il nome utente e la password e quindi provare a eseguire di nuovo il test. Se si è certi che l'account utente sia valido, utilizzare il cmdlet Get-CsWebServiceConfiguration e controllare il valore della Proprietà UseWindowsAuth. Che vi dirà quali metodi di autenticazione sono abilitati nell'organizzazione. Per ulteriori suggerimenti su come risolvere i problemi relativi al servizio per dispositivi mobili, vedere il post di Blog per la risoluzione dei problemi relativi alla [connettività per dispositivi mobili esterni di Lync](http://blogs.technet.com/b/nexthop/archive/2012/02/21/troubleshooting-external-lync-mobility-connectivity-issues-step-by-step.aspx).
 
 </div>
 

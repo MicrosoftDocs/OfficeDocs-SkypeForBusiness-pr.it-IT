@@ -12,16 +12,16 @@ ms:contentKeyID: 48183736
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 93dc2fd539ccc24717939ccfa2ca93032fd9f25b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9ffd2c289917c5ccf0ec3a484284fecca3323810
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41741986"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007255"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41741986"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-La tabella VideoMetricsThreshold contiene valori ottimali e accettabili per la qualità delle metriche delle esperienze usate con le videochiamate.
+Nella tabella VideoMetricsThreshold sono contenuti valori ottimali e accettabili per le metriche Quality of Experience usate con le chiamate video.
 
 
 <table>
@@ -60,79 +60,79 @@ La tabella VideoMetricsThreshold contiene valori ottimali e accettabili per la q
 <td><p><strong>CallType</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>Tipo di chiamata inserita.</p></td>
+<td><p>Tipo di chiamata effettuata.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>VideoPostFECPLROptimal</strong></p></td>
-<td><p>decimale (5; 2)</p></td>
+<td><p>Decimal (5, 2)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 0,05.</p></td>
+<td><p>Il valore predefinito è 0.05.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VideoPostFECPLRAcceptable</strong></p></td>
-<td><p>decimale (5; 2)</p></td>
+<td><p>Decimal (5, 2)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 0,10.</p></td>
+<td><p>Il valore predefinito è 0.10.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>VideoLocalFrameLostPercentageAverageOptimal</strong></p></td>
-<td><p>decimale (5; 2)</p></td>
+<td><p>Decimal (5, 2)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 5,0.</p></td>
+<td><p>Il valore predefinito è 5.0.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VideoLocalFrameLostPercentageAverageAcceptable</strong></p></td>
-<td><p>decimale (5; 2)</p></td>
+<td><p>Decimal (5, 2)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 10,0.</p></td>
+<td><p>Il valore predefinito è 10.0.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RecvFrameRateAverageOptimal</strong></p></td>
-<td><p>decimale (9; 4)</p></td>
+<td><p>decimale (9, 4)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 12,0000.</p></td>
+<td><p>Il valore predefinito è 12.0000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RecvFramerateAverageAcceptable</strong></p></td>
-<td><p>decimale (9; 4)</p></td>
+<td><p>decimale (9, 4)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 7,0000.</p></td>
+<td><p>Il valore predefinito è 7.0000.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LowFrameRateCallPercentOptimal</strong></p></td>
-<td><p>decimale (5; 2)</p></td>
+<td><p>Decimal (5, 2)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 5,0.</p></td>
+<td><p>Il valore predefinito è 5.0.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LowFrameRateCallPercentAcceptable</strong></p></td>
-<td><p>decimale (5; 2)</p></td>
+<td><p>Decimal (5, 2)</p></td>
 <td></td>
 <td><p>Il valore predefinito è 10.0/</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LowResolutionCallPercentOptimal</strong></p></td>
-<td><p>decimale (5; 2)</p></td>
+<td><p>Decimal (5, 2)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 5,0.</p></td>
+<td><p>Il valore predefinito è 5.0.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LowResolutionCallPercentAcceptable</strong></p></td>
-<td><p>decimale (5; 2)</p></td>
+<td><p>Decimal (5, 2)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 10,0.</p></td>
+<td><p>Il valore predefinito è 10.0.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>VideoPacketLossRateOptimal</strong></p></td>
 <td><p>foat</p></td>
 <td></td>
-<td><p>Il valore predefinito è 0,05.</p></td>
+<td><p>Il valore predefinito è 0.05.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VideoPacketLossRateAcceptable</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Il valore predefinito è 0,10.</p></td>
+<td><p>Il valore predefinito è 0.10.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>VideoFrameRateAvgOptimal</strong></p></td>
@@ -148,15 +148,15 @@ La tabella VideoMetricsThreshold contiene valori ottimali e accettabili per la q
 </tr>
 <tr class="even">
 <td><p><strong>DynamicCapabilityPercentOptimal</strong></p></td>
-<td><p>decimale (5; 2)</p></td>
+<td><p>Decimal (5, 2)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 5,00.</p></td>
+<td><p>Il valore predefinito è 5.00.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DynamicCapabilityPercentAcceptable</strong></p></td>
-<td><p>decimale (5; 2)</p></td>
+<td><p>Decimal (5, 2)</p></td>
 <td></td>
-<td><p>Il valore predefinito è 10,00.</p></td>
+<td><p>Il valore predefinito è 10.00.</p></td>
 </tr>
 </tbody>
 </table>

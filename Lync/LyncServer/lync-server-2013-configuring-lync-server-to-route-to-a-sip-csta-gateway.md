@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurazione di Lync Server per il routing a un gateway SIP/CSTA'
+title: 'Lync Server 2013: configurazione di Lync Server per il routing a un gateway SIP/CSTA'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185605
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 626ce85fec80508f4411e92c2a2ce469da5a0b2a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1d816ae391154a5d1024e65fb09e82f37d41b053
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762794"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008468"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41762794"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-05_
+_**Ultimo argomento modificato:** 2012-10-05_
 
-Un gateway SIP/CSTA è un gateway tra SIP e un'applicazione di telecomunicazioni supportata dal computer (CSTA). Un gateway SIP/CSTA fornisce l'interfaccia tra un PBX (Private Branch Exchange) esistente e un server Lync per il routing delle richieste di controllo delle chiamate remote al PBX. Dopo l'installazione di un gateway SIP/CSTA, è necessario eseguire le procedure seguenti in ogni pool di Lync Server per cui si vuole configurare il controllo delle chiamate remote:
+Un gateway SIP/CSTA è un gateway tra SIP e CSTA (Computer-Supported Telecommunications Application). Un gateway SIP/CSTA fornisce l'interfaccia tra un sistema PBX (Private Branch Exchange) e Lync Server per instradare le richieste di controllo delle chiamate remote al sistema PBX. Dopo aver installato un gateway SIP/CSTA, è necessario eseguire le procedure seguenti in ogni pool di Lync Server per il quale si desidera configurare il controllo delle chiamate remote:
 
   - [Configurare una route statica per il controllo delle chiamate remote in Lync Server 2013](lync-server-2013-configure-a-static-route-for-remote-call-control.md)
 
-  - [Configurare una voce applicazione attendibile per il controllo delle chiamate remote in Lync Server 2013](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md)
+  - [Configurare una voce di applicazione attendibile per il controllo delle chiamate remote in Lync Server 2013](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md)
 
 </div>
 

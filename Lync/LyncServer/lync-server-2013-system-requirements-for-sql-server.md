@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Requisiti di sistema per SQL Server'
+title: 'Lync Server 2013: requisiti di sistema per SQL Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184904
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c798194cd921bcf2576bc2d9199ea28f7eaeb7ab
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 95c4e57d6376928b99346a9c9de5017e41df9b81
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764262"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006788"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41764262"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-10-25_
+_**Ultimo argomento modificato:** 2013-10-25_
 
-Prima di distribuire il server Enterprise Edition, installare Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 in un computer dedicato che soddisfi i requisiti hardware. Per informazioni dettagliate sui requisiti hardware, vedere [piattaforme hardware server per Lync server 2013](lync-server-2013-server-hardware-platforms.md) nella documentazione relativa alla supportabilità. Per informazioni dettagliate sui requisiti software, vedere [supporto software per database in Lync Server 2013](lync-server-2013-database-software-support.md) nella documentazione relativa al supporto tecnico. Per informazioni sulle autorizzazioni necessarie per la distribuzione, vedere [autorizzazioni di distribuzione per SQL Server in Lync server 2013](lync-server-2013-deployment-permissions-for-sql-server.md).
+Prima di distribuire il server Enterprise Edition, installare Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 in un computer dedicato che soddisfi i requisiti hardware. Per informazioni dettagliate sui requisiti hardware, vedere [server hardware Platforms for Lync server 2013](lync-server-2013-server-hardware-platforms.md) nella documentazione relativa alla supportabilità. Per informazioni dettagliate sui requisiti software, vedere [database software support in Lync Server 2013](lync-server-2013-database-software-support.md) nella documentazione relativa alla supportabilità. Per informazioni sulle autorizzazioni necessarie per la distribuzione, vedere [Deployment Permissions for SQL Server in Lync server 2013](lync-server-2013-deployment-permissions-for-sql-server.md).
 
-Prima di creare il pool Front-End, è necessario configurare anche Windows Firewall per consentire l'accesso di Lync Server 2013 a SQL Server su porte specifiche definendo le porte del server tramite Gestione configurazione SQL Server e aprendo le porte in Windows Firewall con Sicurezza avanzata.
+Prima di creare il pool Front End, è inoltre necessario configurare Windows Firewall per consentire l'accesso di Lync Server 2013 a SQL Server su porte specifiche definendo le porte per il server mediante Gestione configurazione SQL Server e aprendo le porte in Windows Firewall con Sicurezza avanzata.
 
 </div>
 

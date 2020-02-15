@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: esecuzione e monitoraggio di backup'
+title: 'Lync Server 2013: esecuzione e monitoraggio dei backup'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 63969595
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3181a266e5792d190186e9f09b2cab5852156cbe
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 631ec1c7c383bf6200e44378b37db7273bbf125d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755266"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008198"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="performing-and-monitoring-backups-in-lync-server-2013"></a>Esecuzione e monitoraggio di backup in Lync Server 2013
+# <a name="performing-and-monitoring-backups-in-lync-server-2013"></a>Esecuzione e monitoraggio dei backup in Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41755266"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-15_
+_**Ultimo argomento modificato:** 2014-05-15_
 
-Le priorità aziendali dovrebbero guidare la specifica dei requisiti di backup e ripristino per l'organizzazione. L'esecuzione di backup dei server e dei dati è la prima linea di difesa nella pianificazione di un disastro.
+Le priorità aziendali devono guidare la specifica dei requisiti di backup e ripristino per l'organizzazione. L'esecuzione di backup dei server e dei dati è la prima linea di difesa nella pianificazione di un evento di emergenza.
 
-I computer che eseguono i servizi o i ruoli del server Lync Server 2013 devono avere una copia della topologia corrente, le impostazioni di configurazione correnti e i criteri correnti prima di poter funzionare nel loro ruolo nominato. Lync Server è responsabile per verificare che queste informazioni vengano passate a ogni computer che ne ha bisogno.
+I computer che eseguono i servizi o i ruoli del server Lync Server 2013 devono disporre di una copia della topologia corrente, delle impostazioni di configurazione correnti e dei criteri correnti prima che possano funzionare nel ruolo nominato. Lync Server è responsabile di garantire che tali informazioni vengano passate a ogni computer che ne ha bisogno.
 
-I cmdlet **Export-CsConfiguration** e **Import-CsConfiguration** vengono usati per eseguire il backup e il ripristino della topologia, delle impostazioni di configurazione e dei criteri di Lync Server durante un aggiornamento di Central Management store. I cmdlet **Export-CsConfiguration** consentono di esportare i dati in un. File ZIP. Puoi quindi usare il cmdlet **Import-CsConfiguration** per leggerlo. File ZIP e ripristinare la topologia, le impostazioni di configurazione e i criteri per l'Central Management store. In seguito, i servizi di replica di Lync Server riplicheranno le informazioni ripristinate in altri computer che eseguono i servizi Lync Server.
+I cmdlet **Export-CsConfiguration** e **Import-CsConfiguration** vengono utilizzati per eseguire il backup e il ripristino della topologia, delle impostazioni di configurazione e dei criteri di Lync Server durante un aggiornamento dell'archivio di gestione centrale. I cmdlet **Export-CsConfiguration** consentono di esportare i dati in un. File ZIP. È quindi possibile utilizzare il cmdlet **Import-CsConfiguration** per leggerlo. File ZIP e ripristino della topologia, delle impostazioni di configurazione e dei criteri nell'archivio di gestione centrale. Successivamente, i servizi di replica di Lync Server riplicheranno le informazioni ripristinate ad altri computer che eseguono i servizi di Lync Server.
 
-La possibilità di esportare e importare dati di configurazione viene usata anche durante la configurazione iniziale dei computer che si trovano nella rete perimetrale (ad esempio, Edge Server). Quando si configura un computer nella rete perimetrale, è necessario eseguire prima di tutto una replica manuale usando i cmdlet CsConfiguration: è necessario esportare i dati di configurazione tramite **Export-CsConfiguration** e quindi copiare il. File ZIP nel computer della rete perimetrale. In seguito, puoi usare **Import-CsConfiguration** e il parametro LocalStore per importare i dati. Devi solo eseguire questa operazione una sola volta. In seguito, la replica si verificherà automaticamente.
+La possibilità di esportare e importare i dati di configurazione viene utilizzata anche durante la configurazione iniziale dei computer che si trovano nella rete perimetrale (ad esempio, server perimetrali). Quando si configura un computer nella rete perimetrale, è innanzitutto necessario eseguire una replica manuale utilizzando i cmdlet di CsConfiguration: è necessario esportare i dati di configurazione utilizzando **Export-CsConfiguration** e quindi copiare il. File ZIP nel computer della rete perimetrale. Poi sarà possibile utilizzare **Import-CsConfiguration** ed il parametro LocalStore per importare i dati. È sufficiente eseguire questa operazione una sola volta. Successivamente, la replica verrà eseguita automaticamente.
 
-Utenti che possono eseguire questo cmdlet: per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire localmente il cmdlet **Export-CsConfiguration** : RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli RBAC, questo cmdlet viene assegnato (inclusi eventuali ruoli RBAC personalizzati creati manualmente), eseguire il comando seguente dal prompt di Windows PowerShell:
+Utenti autorizzati a utilizzare questo cmdlet: per impostazione predefinita, il cmdlet **Export-CsConfiguration** può essere utilizzato localmente dai membri dei seguenti gruppi: RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli RBAC, questo cmdlet è assegnato a (compresi eventuali ruoli RBAC personalizzati creati personalmente), eseguire il comando seguente dal prompt di Windows PowerShell:
 
 `Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Export-CsConfiguration"}`
 
-È necessario eseguire il backup di tutti i database di SQL 2012 back-end in base alle [procedure consigliate SQL](http://go.microsoft.com/fwlink/p/?linkid=290716).
+È consigliabile eseguire il backup di tutti i database di SQL 2012 back-end secondo le [procedure consigliate di SQL](http://go.microsoft.com/fwlink/p/?linkid=290716).
 
-Il normale test del piano di ripristino di emergenza per l'infrastruttura di Lync Server 2013 deve essere eseguito in un ambiente lab che simula l'ambiente di produzione il più vicino possibile. Per altre informazioni sui test di ripristino di emergenza, vedere le attività mensili.
+I test regolari del piano di ripristino di emergenza per l'infrastruttura di Lync Server 2013 devono essere eseguiti in un ambiente lab che simula l'ambiente di produzione il più fedelmente possibile. Fare riferimento alle attività mensili per ulteriori informazioni sui test di ripristino di emergenza.
 
-Tieni presente che la frequenza di backup può essere regolata in base agli obiettivi del punto di ripristino e del punto di ripristino. Come procedura consigliata, eseguire istantanee periodiche regolari durante tutta la giornata. In genere, è consigliabile eseguire backup completi ogni 24 ore.
+Si noti che la frequenza di backup può essere regolata, in base agli obiettivi del punto di ripristino e del punto di ripristino. Come procedura consigliata, prendere periodicamente istantanee periodiche durante la giornata. In generale, è consigliabile eseguire backup completi ogni 24 ore.
 
 <div>
 

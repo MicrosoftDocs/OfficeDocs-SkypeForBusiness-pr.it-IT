@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Componenti e topologie per la messaggistica unificata locale'
+title: 'Lync Server 2013: componenti e topologie per la messaggistica unificata locale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183619
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1739dbb7d603f112af72c78032c46b94470302bb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 94a22348ca5b0f17415edf0a4f259d5c58d473a9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742586"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007986"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41742586"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-25_
+_**Ultimo argomento modificato:** 2012-09-25_
 
-In questo argomento vengono descritti i componenti di Microsoft Exchange Server 2013 necessari per la distribuzione delle funzionalità di messaggistica UNIFICAta di Exchange a distribuzioni di Lync Server 2013. Vengono inoltre descritte le topologie supportate per l'integrazione della messaggistica unificata di Exchange locale.
+In questo argomento vengono descritti i componenti di Microsoft Exchange Server 2013 necessari per fornire le funzionalità di messaggistica unificata di Exchange alla distribuzione di Lync Server 2013. Vengono inoltre descritte le topologie supportate per l'integrazione della messaggistica unificata di Exchange locale.
 
 <div>
 
 ## <a name="exchange-server-components"></a>Componenti di Exchange Server
 
-Per fornire le caratteristiche e i servizi di messaggistica unificata di Exchange descritti in [funzionalità di messaggistica unificata integrata e Lync Server 2013](lync-server-2013-features-of-integrated-unified-messaging.md) per gli utenti di VoIP aziendale dell'organizzazione, è necessario distribuire un server cassette postali di Microsoft Exchange e un server Accesso client, che ospita cassette postali degli utenti e offre una posizione di archiviazione unica per la posta elettronica e la segreteria telefonica. La messaggistica unificata di Exchange viene eseguita come servizio nella cassetta postale di Exchange e nei server Accesso client.
+Per fornire le funzionalità e i servizi di messaggistica unificata di Exchange descritti in [funzionalità di messaggistica unificata integrata e Lync Server 2013](lync-server-2013-features-of-integrated-unified-messaging.md) per gli utenti di VoIP aziendale nell'organizzazione, è necessario distribuire un server cassette postali di Microsoft Exchange e un server Accesso client che ospita le cassette postali degli utenti e fornisce un singolo percorso di archiviazione per la posta elettronica e la segreteria telefonica. La messaggistica unificata di Exchange viene eseguita come servizio nei server cassette postali e accesso client di Exchange.
 
-Per informazioni dettagliate sui componenti di messaggistica unificata di Exchange in Microsoft Exchange Server 2007 e Microsoft Exchange Server 2010, vedere [distribuzione della messaggistica unificata locale di Exchange per specificare la segreteria telefonica di Lync Server 2013](lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate sui componenti di messaggistica unificata di Exchange in Microsoft Exchange Server 2007 e Microsoft Exchange Server 2010, vedere [Deploying on-premises Exchange Messaggistica unificata per fornire Lync Server 2013](lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md) segreteria telefonica nella documentazione relativa alla distribuzione.
 
 </div>
 
@@ -53,23 +53,23 @@ Per informazioni dettagliate sui componenti di messaggistica unificata di Exchan
 
 ## <a name="supported-topologies"></a>Topologie supportate
 
-È possibile distribuire Lync Server 2013 e messaggistica UNIFICAta di Exchange nella stessa foresta o in più foreste. Se la distribuzione si estende su più foreste, è necessario eseguire la procedura di integrazione di Exchange per ogni foresta di messaggistica unificata di Exchange. È inoltre necessario configurare ogni foresta di Microsoft Exchange per considerare attendibile la foresta Lync Server 2013 e la foresta Lync Server 2013 per considerare attendibile ogni foresta di messaggistica unificata di Exchange. Oltre a questo trust tra insiemi di strutture, le impostazioni di messaggistica unificata di Exchange per tutti gli utenti devono essere impostate sugli oggetti utente nella foresta di Lync Server 2013.
+È possibile distribuire Lync Server 2013 e la messaggistica unificata di Exchange nella stessa foresta o più foreste. Se la distribuzione si estende su più insiemi di strutture, è necessario eseguire i passaggi di integrazione di Exchange per ogni foresta di messaggistica unificata di Exchange. Inoltre, è necessario configurare ogni foresta di Microsoft Exchange affinché consideri attendibile la foresta Lync Server 2013 e la foresta Lync Server 2013 per considerare attendibile ogni foresta di messaggistica unificata di Exchange. Oltre a questo trust tra foreste, è necessario che le impostazioni di messaggistica unificata di Exchange per tutti gli utenti siano impostate sugli oggetti utente nella foresta di Lync Server 2013.
 
 Lync Server 2013 supporta le topologie seguenti per l'integrazione della messaggistica unificata di Exchange:
 
-  - Singola foresta
+  - Foresta singola
 
-  - Singolo dominio, ovvero una singola foresta con un singolo dominio. Lync Server 2013, Microsoft Exchange e tutti gli utenti si trovano nello stesso dominio.
+  - Singolo dominio, ovvero foresta singola con un solo dominio. Lync Server 2013, Microsoft Exchange e tutti gli utenti risiedono nello stesso dominio.
 
-  - Più domini, ovvero un dominio radice con uno o più domini figlio. Lync Server 2013 e i server di Microsoft Exchange vengono distribuiti in domini diversi dal dominio in cui si creano utenti. I server di messaggistica unificata di Exchange possono essere distribuiti in domini diversi dal pool di Lync Server 2013 supportati.
+  - Dominio multiplo, ovvero un dominio radice con uno o più domini figlio. Lync Server 2013 e i server di Microsoft Exchange vengono distribuiti in domini diversi dal dominio in cui vengono creati gli utenti. I server di messaggistica unificata di Exchange possono essere distribuiti in domini diversi dal pool Lync Server 2013 che supportano.
 
-  - Più insiemi di strutture, ovvero foresta delle risorse. Lync Server 2013 è distribuito in una singola foresta e quindi gli utenti vengono distribuiti in più foreste. Gli attributi di messaggistica unificata di Exchange degli utenti devono essere replicati nella foresta di Lync Server 2013.
+  - Foresta multipla, ovvero foresta di risorse. Lync Server 2013 è distribuito in una singola foresta e quindi gli utenti vengono distribuiti tra più foreste. Gli attributi di messaggistica unificata di Exchange per gli utenti devono essere replicati nella foresta di Lync Server 2013.
     
     <div>
     
 
     > [!NOTE]  
-    > Exchange può essere distribuito in più foreste. Ogni organizzazione di Exchange può specificare la messaggistica unificata di Exchange per gli utenti oppure la messaggistica unificata di Exchange può essere distribuita nella stessa foresta di Lync Server 2013.
+    > Exchange può essere distribuito in più foreste. Ogni organizzazione di Exchange può fornire la messaggistica unificata di Exchange ai propri utenti oppure è possibile distribuire la messaggistica unificata di Exchange nella stessa foresta di Lync Server 2013.
 
     
     </div>

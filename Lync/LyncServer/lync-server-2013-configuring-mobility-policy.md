@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurazione dei criteri per dispositivi mobili'
+title: 'Lync Server 2013: configurazione di criteri per dispositivi mobili'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184204
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 39a7f0791def99e0b42a57b1f13aae88abbfafa4
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6410e50a5e7d84de152b9a4e4bd1f962c5a3c9bd
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763400"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008408"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-mobility-policy-in-lync-server-2013"></a>Configurazione dei criteri per dispositivi mobili in Lync Server 2013
+# <a name="configuring-mobility-policy-in-lync-server-2013"></a>Configurazione di criteri per dispositivi mobili in Lync Server 2013
 
 </div>
 
@@ -35,49 +35,49 @@ ms.locfileid: "41763400"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-13_
+_**Ultimo argomento modificato:** 2013-02-13_
 
     Some information in this topic pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
-Lync Server 2013 offre criteri per la mobilità che determinano chi può usare le caratteristiche di mobilità, chiama tramite lavoro, Voice over IP (VoIP) o video e se il WiFi sarà necessario per il VoIP o il video. La caratteristica chiamata tramite lavoro consente a un utente mobile di effettuare e ricevere chiamate su un telefono cellulare usando un numero di telefono dell'ufficio invece del numero di cellulare. Questa caratteristica impedisce alla persona chiamata di visualizzare il numero di cellulare del chiamante e consente a un utente di evitare oneri per le chiamate in uscita. La configurazione di VoIP e video consente agli utenti di ricevere e effettuare chiamate VoIP e video. Le impostazioni per l'utilizzo di WiFi definiscono se il dispositivo di un utente deve usare una rete WiFi tramite una rete dati cellulare.
+Lync Server 2013 fornisce i criteri per dispositivi mobili che determinano gli utenti che possono utilizzare le funzionalità per dispositivi mobili, la chiamata tramite lavoro, il VoIP (Voice over IP) o il video e se la connessione WiFi sarà necessaria per VoIP o video. La funzionalità di chiamata tramite lavoro consente a un utente di telefonia mobile di effettuare e ricevere chiamate su un telefono cellulare utilizzando un numero di telefono di lavoro invece del numero di cellulare. Questa funzionalità impedisce alla parte chiamata di visualizzare il numero di telefono cellulare del chiamante e di evitare che i costi di chiamata in uscita vengano configurati da un utente. La configurazione di VoIP e video rende possibile agli utenti di ricevere e fare chiamate VoIP e video. Le impostazioni per l'utilizzo di Wi-Fi definiscono se il dispositivo di un utente dovrà utilizzare una rete WiFi su una rete di dati cellulare.
 
-Per impostazione predefinita, la mobilità, la chiamata tramite lavoro e le funzionalità VoIP e video sono abilitate. Le impostazioni per richiedere il WiFi per VoIp e video sono disabilitate. Gli amministratori possono determinare chi ha accesso a queste funzionalità eseguendo un cmdlet. È possibile disattivare le opzioni a livello globale, per sito o per utente.
+Per impostazione predefinita, la mobilità, la chiamata tramite lavoro e le funzionalità VoIP e video sono abilitate. Le impostazioni per richiedere il WiFi per VoIp e video sono disattivate. Gli amministratori possono stabilire chi ha accesso a tali funzionalità eseguendo un cmdlet. È possibile disattivare le opzioni globalmente, a livello di sito o a livello di singoli utenti.
 
-Per poter usare le caratteristiche di mobilità e la chiamata tramite lavoro, gli utenti devono soddisfare i prerequisiti seguenti:
+Per poter utilizzare le funzionalità di mobilità e Chiama da ufficio, gli utenti devono soddisfare i prerequisiti seguenti:
 
   - Gli utenti devono essere abilitati per Lync Server 2013.
 
   - Gli utenti devono essere abilitati per VoIP aziendale.
 
-  - Agli utenti deve essere assegnato un criterio di mobilità con l'opzione **EnableMobility** impostata su true.
+  - Agli utenti devono essere assegnati criteri di mobilità con l'opzione **EnableMobility** impostata su True.
 
-Affinché gli utenti possano usare la chiamata tramite il lavoro, devono soddisfare i due prerequisiti aggiuntivi seguenti:
+Affinché gli utenti siano in grado di utilizzare Chiama da ufficio, è necessario che soddisfino i due prerequisiti aggiuntivi seguenti:
 
-  - Agli utenti deve essere assegnato un criterio vocale con l'opzione **Abilita squillo simultaneo dei telefoni** selezionata.
+  - Agli utenti devono essere assegnati criteri vocali con l'opzione **Abilita squillo simultaneo dei telefoni** selezionata.
 
-  - Agli utenti deve essere assegnato un criterio di mobilità con l'opzione **EnableOutsideVoice** impostata su true.
+  - Agli utenti devono essere assegnati criteri di mobilità con l'opzione **EnableOutsideVoice** impostata su True.
 
 <div>
 
 
 > [!NOTE]  
-> Gli utenti che non sono abilitati per Enterprise Voice possono usare i loro dispositivi mobili per consentire a Lync di eseguire chiamate VoIP (Voice over IP) di Lync o possono partecipare a conferenze usando il collegamento fare clic per partecipare ai loro dispositivi mobili, se si assegnano gli utenti le opzioni appropriate per il criterio vocale. Per informazioni dettagliate, vedere <A href="lync-server-2013-defining-your-mobility-requirements.md">definizione dei requisiti di mobilità per Lync Server 2013</A>.
+> Gli utenti che non sono abilitati per VoIP aziendale possono utilizzare i propri dispositivi mobili per consentire a Lync di chiamare Lync Voice over IP, oppure possono partecipare a conferenze usando il collegamento fare clic per partecipare ai propri dispositivi mobili, se si assegnano a tali utenti le opzioni appropriate per i criteri vocali. Per informazioni dettagliate, vedere <A href="lync-server-2013-defining-your-mobility-requirements.md">definizione dei requisiti per dispositivi mobili per Lync Server 2013</A>.
 
 
 
 </div>
 
-Per informazioni dettagliate sull'abilitazione degli utenti per Lync Server 2013, vedere [disabilitare o riattivare l'account utente per Lync server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md). Per informazioni dettagliate sull'abilitazione degli utenti per VoIP aziendale, vedere [abilitare gli utenti per VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md). Per informazioni dettagliate sull'impostazione delle opzioni dei criteri vocali, vedere [modificare un criterio vocale e configurare i record di utilizzo PSTN in Lync Server 2013](lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md).
+Per informazioni dettagliate sull'abilitazione degli utenti per Lync Server 2013, vedere [disabilitare o riabilitare l'account utente per Lync server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md). Per informazioni dettagliate sull'abilitazione degli utenti per VoIP aziendale, vedere [abilitare gli utenti per VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md). Per informazioni dettagliate sull'impostazione delle opzioni per i criteri vocali, vedere [Modify a Voice Policy e Configure PSTN Usage Records in Lync Server 2013](lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md).
 
 <div>
 
-## <a name="to-modify-global-mobility-policy"></a>Per modificare i criteri di mobilità globale
+## <a name="to-modify-global-mobility-policy"></a>Per modificare i criteri di mobilità globali
 
-1.  Accedere a qualsiasi computer in cui sono installati Lync Server Management Shell e OCSCore come membro del ruolo CsAdministrator.
+1.  Accedere a qualsiasi computer in cui sono installati Lync Server Management Shell e OCSCore come membri del ruolo CsAdministrator.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Disattivare l'accesso alla mobilità e chiamare tramite lavoro a livello globale. Nella riga di comando digitare:
+3.  Disattivare globalmente l'accesso alle funzionalità di mobilità e Chiama da ufficio. Nella riga di comando digitare:
     
         Set-CsMobilityPolicy -EnableMobility $False -EnableOutsideVoice $False
     
@@ -85,7 +85,7 @@ Per informazioni dettagliate sull'abilitazione degli utenti per Lync Server 2013
     
 
     > [!NOTE]  
-    > È possibile disattivare la chiamata tramite lavoro senza disattivare l'accesso alla mobilità. Tuttavia, non è possibile disattivare la mobilità senza disattivare la chiamata anche tramite lavoro.
+    > È possibile disattivare Chiama da ufficio senza disattivare l'accesso alla funzionalità di mobilità. Non è tuttavia possibile disattivare le funzionalità di mobilità senza disattivare anche Chiama da ufficio.
 
     
     </div>
@@ -94,13 +94,13 @@ Per informazioni dettagliate sull'abilitazione degli utenti per Lync Server 2013
 
 <div>
 
-## <a name="to-modify-mobility-policy-by-site"></a>Per modificare i criteri di mobilità per sito
+## <a name="to-modify-mobility-policy-by-site"></a>Per modificare i criteri di mobilità a livello di sito
 
-1.  Accedere a qualsiasi computer in cui sono installati Lync Server Management Shell e OCSCore come membro del ruolo CsAdministrator.
+1.  Accedere a qualsiasi computer in cui sono installati Lync Server Management Shell e OCSCore come membri del ruolo CsAdministrator.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Creare un criterio a livello di sito e disattivare VoIP e video e abilitare Richiedi WiFi per l'audio IP e per il video IP per sito. Nella riga di comando digitare:
+3.  Creare criteri a livello di sito e disattivare VoIP e video e abilitare Richiedi WiFi per l'audio IP e per il video IP per sito. Nella riga di comando digitare il comando seguente:
     
         New-CsMobilityPolicy -Identity site:<site identifier> -EnableIPAudioVideo $False -RequireWiFiForIPAudio $True -RequireWiFiForIPVideo $True
 
@@ -108,18 +108,18 @@ Per informazioni dettagliate sull'abilitazione degli utenti per Lync Server 2013
 
 <div>
 
-## <a name="to-modify-mobility-policy-by-user"></a>Per modificare i criteri di mobilità per utente
+## <a name="to-modify-mobility-policy-by-user"></a>Per modificare i criteri di mobilità a livello di utente
 
-1.  Accedere a qualsiasi computer in cui sono installati Lync Server Management Shell e OCSCore come membro del ruolo CsAdministrator.
+1.  Accedere a qualsiasi computer in cui sono installati Lync Server Management Shell e OCSCore come membri del ruolo CsAdministrator.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Creare criteri di mobilità a livello di utente e disattivare la mobilità e la chiamata tramite il lavoro da parte dell'utente. Nella riga di comando digitare:
+3.  Creare nuovi criteri di mobilità a livello di utente e disattivare le funzionalità di mobilità e Chiama da ufficio per un utente specifico. Nella riga di comando digitare:
     
         New-CsMobilityPolicy -Identity <policy name> -EnableMobility $False -EnableOutsideVoice $False
         Grant-CsMobilityPolicy -Identity <user identifier> -PolicyName <policy name>
     
-    È possibile disattivare la chiamata tramite lavoro senza disattivare l'accesso alla mobilità. Tuttavia, non è possibile disattivare la mobilità senza disattivare la chiamata anche tramite lavoro.
+    È possibile disattivare Chiama da ufficio senza disattivare l'accesso alla funzionalità di mobilità. Non è tuttavia possibile disattivare le funzionalità di mobilità senza disattivare anche Chiama da ufficio.
     
     Ad esempio:
     
@@ -133,8 +133,8 @@ Per informazioni dettagliate sull'abilitazione degli utenti per Lync Server 2013
 ## <a name="see-also"></a>Vedere anche
 
 
-[Disabilitare o riattivare l'account utente per Lync Server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md)  
-[Consentire agli utenti di VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md)  
+[Disabilitare o riabilitare l'account utente per Lync Server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md)  
+[Abilitare gli utenti per VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md)  
 [Modificare un criterio vocale e configurare i record di utilizzo PSTN in Lync Server 2013](lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md)  
 
 

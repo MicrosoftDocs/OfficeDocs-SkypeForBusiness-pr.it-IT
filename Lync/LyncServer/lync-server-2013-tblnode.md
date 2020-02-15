@@ -12,16 +12,16 @@ ms:contentKeyID: 48184960
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 24ba45d9ba650a9de4359d64e3281fb488b6a279
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 81a57d54663b1adf837a4ca38896dd7da3eff883
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731486"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42009579"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731486"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-tblNode contiene l'albero di oggetti (con nodi Category o chat room) come gestito nel pannello di controllo di Lync Server 2013 e nei cmdlet amministrativi.
+tblNode contiene l'albero degli oggetti (con nodi categoria o chat room) come gestito nel pannello di controllo di Lync Server 2013 e nei cmdlet amministrativi.
 
 ### <a name="columns"></a>Colonne
 
@@ -62,13 +62,13 @@ tblNode contiene l'albero di oggetti (con nodi Category o chat room) come gestit
 </tr>
 <tr class="even">
 <td><p>nodeGuid</p></td>
-<td><p>GUID, non null</p></td>
-<td><p>GUID del nodo.</p></td>
+<td><p>GUID, not null</p></td>
+<td><p>GUID nodo.</p></td>
 </tr>
 <tr class="odd">
 <td><p>parentID</p></td>
 <td><p>int</p></td>
-<td><p>ID nodo dell'elemento padre. Il nodo radice (con ID 1) si include anche come padre.</p></td>
+<td><p>ID nodo del padre. Il nodo radice (con ID 1) contiene se stesso come padre.</p></td>
 </tr>
 <tr class="even">
 <td><p>nodeType</p></td>
@@ -79,36 +79,36 @@ tblNode contiene l'albero di oggetti (con nodi Category o chat room) come gestit
 <tr class="odd">
 <td><p>nodeName</p></td>
 <td><p>nvarchar (256), not null</p></td>
-<td><p>Nome del nodo.</p></td>
+<td><p>Nome nodo.</p></td>
 </tr>
 <tr class="even">
 <td><p>nodeDesc</p></td>
 <td><p>nvarchar (256), not null</p></td>
-<td><p>Descrizione del nodo.</p></td>
+<td><p>Descrizione nodo.</p></td>
 </tr>
 <tr class="odd">
 <td><p>invitare</p></td>
 <td><p>po'</p></td>
 <td><p>Per le categorie:</p>
 <ul>
-<li><p>True se gli inviti sono attivati.</p></li>
-<li><p>False se gli inviti sono spenti.</p></li>
+<li><p>True se gli inviti sono attivi.</p></li>
+<li><p>False se gli inviti sono inattivi.</p></li>
 </ul>
-<p>Per le camere:</p>
+<p>Per le chat room:</p>
 <ul>
-<li><p>False se gli inviti sono disattivati (esegue l'override della categoria padre).</p></li>
-<li><p>Null se l'impostazione invita viene ereditata dalla categoria padre.</p></li>
+<li><p>False se gli inviti sono disattivati (la categoria padre viene ignorata).</p></li>
+<li><p>Null se l'impostazione degli inviti viene ereditata dalla categoria padre.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>connessi</p></td>
+<td><p>registrato</p></td>
 <td><p>po'</p></td>
 <td><p>Per le categorie:</p>
 <ul>
-<li><p>True se la cronologia chat è attivata.</p></li>
-<li><p>False se la cronologia chat è disinserita.</p></li>
+<li><p>True se la cronologia della chat è attiva.</p></li>
+<li><p>False se la cronologia della chat è inattiva.</p></li>
 </ul>
-<p>Per le camere:</p>
+<p>Per le chat room:</p>
 <ul>
 <li><p>Null.</p></li>
 </ul></td>
@@ -118,18 +118,18 @@ tblNode contiene l'albero di oggetti (con nodi Category o chat room) come gestit
 <td><p>po'</p></td>
 <td><p>Per le categorie:</p>
 <ul>
-<li><p>True se gli upload di file sono consentiti.</p></li>
-<li><p>False se gli upload di file non sono consentiti.</p></li>
+<li><p>True se i caricamenti di file sono consentiti.</p></li>
+<li><p>False se i caricamenti di file non sono consentiti.</p></li>
 </ul>
-<p>Per le camere:</p>
+<p>Per le chat room:</p>
 <ul>
 <li><p>Null.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>disabilitato</p></td>
+<td><p>disabili</p></td>
 <td><p>bit, not null</p></td>
-<td><p>True se la chat room è disabilitata. Si applica solo alle chat room. (False per le categorie)</p></td>
+<td><p>True se la chat room è disabilitata. Si applica solo alle chat room. False per le categorie.</p></td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -138,30 +138,30 @@ tblNode contiene l'albero di oggetti (con nodi Category o chat room) come gestit
 </tr>
 <tr class="even">
 <td><p>comportamento</p></td>
-<td><p>smallint e non null</p></td>
-<td><p>Comportamento (ricercato nella tabella EnumValue):</p>
+<td><p>smallint, not null</p></td>
+<td><p>Comportamento (cercato nella tabella EnumValue):</p>
 <ul>
-<li><p>4: normale (normale chat room).</p></li>
-<li><p>5: Auditorium (auditorium chat room, solo i relatori possono collaborare).</p></li>
+<li><p>4: Normale (chat room normali)</p></li>
+<li><p>5: Auditorium (chat room in modalità auditorium, solo i relatori possono contribuire)</p></li>
 </ul>
 <p>Si applica solo alle chat room.</p></td>
 </tr>
 <tr class="odd">
 <td><p>visibilità</p></td>
-<td><p>smallint e non null</p></td>
-<td><p>Visibilità (ricercata nella tabella EnumValue):</p>
+<td><p>smallint, not null</p></td>
+<td><p>Visibilità (cercata nella tabella EnumValue):</p>
 <ul>
-<li><p>2: privato</p></li>
-<li><p>3: ambito</p></li>
-<li><p>6: aprire</p></li>
+<li><p>2: Privato</p></li>
+<li><p>3: Con ambito</p></li>
+<li><p>6: Aperto</p></li>
 </ul>
 <p>Si applica solo alle chat room.</p></td>
 </tr>
 <tr class="even">
 <td><p>siopID</p></td>
 <td><p>GUID</p></td>
-<td><p>GUID del componente aggiuntivo se un componente aggiuntivo è associato a questa chat room. (Le categorie non hanno componenti aggiuntivi)</p>
-<p>Le informazioni del componente aggiuntivo sono ricercate nella tabella SiopWhiteList.</p></td>
+<td><p>GUID del componente aggiuntivo, se alla chat room è associato un componente aggiuntivo. Le categorie non hanno componenti aggiuntivi.</p>
+<p>Le informazioni relative al componente aggiuntivo vengono cercate nella tabella SiopWhiteList.</p></td>
 </tr>
 <tr class="odd">
 <td><p>nodeAddedBy</p></td>
@@ -170,29 +170,29 @@ tblNode contiene l'albero di oggetti (con nodi Category o chat room) come gestit
 </tr>
 <tr class="even">
 <td><p>nodeAddedOn</p></td>
-<td><p>bigint e non null</p></td>
-<td><p>Indicatore di data e ora della creazione di nodi.</p></td>
+<td><p>bigint, non null</p></td>
+<td><p>Indicatore di data e ora della creazione del nodo.</p></td>
 </tr>
 <tr class="odd">
 <td><p>nodeUpdatedBy</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID dell'entità che ha eseguito l'aggiornamento più recente di questo nodo.</p></td>
+<td><p>ID dell'entità che ha eseguito l'ultimo aggiornamento del nodo.</p></td>
 </tr>
 <tr class="even">
 <td><p>nodeUpdatedOn</p></td>
-<td><p>bigint e non null</p></td>
-<td><p>Indicatore di data e ora dell'ultimo aggiornamento di questo nodo.</p></td>
+<td><p>bigint, not null</p></td>
+<td><p>Indicatore di data e ora dell'ultimo aggiornamento del nodo.</p></td>
 </tr>
 <tr class="odd">
 <td><p>purgedOn</p></td>
-<td><p>DateTime</p></td>
-<td><p>Ora dell'ultima operazione di eliminazione dei ripulimenti (rimozione degli ambiti da tabella tblScopedPrincipal e ruoli della tabella tblPrincipalRole) che hanno interessato questo nodo. Viene usato dal meccanismo di aggiornamento della cache interno del servizio chat.</p></td>
+<td><p>datetime</p></td>
+<td><p>Ora dell'ultima operazione di eliminazione (rimozione degli ambiti dalla tabella tblScopedPrincipal e dei ruoli dalla tabella tblPrincipalRole) che ha interessato il nodo. Utilizzata dal meccanismo di aggiornamento della cache interna del servizio Chat.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a>Tasti
+### <a name="keys"></a>Chiavi
 
 <table>
 <colgroup>
@@ -212,19 +212,19 @@ tblNode contiene l'albero di oggetti (con nodi Category o chat room) come gestit
 </tr>
 <tr class="even">
 <td><p>comportamento</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblEnumValue. valueID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblEnumValue.valueID.</p></td>
 </tr>
 <tr class="odd">
 <td><p>visibilità</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblEnumValue. valueID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblEnumValue.valueID.</p></td>
 </tr>
 <tr class="even">
 <td><p>parentID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblNode. nodeID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblNode.nodeID.</p></td>
 </tr>
 <tr class="odd">
 <td><p>siopID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblSiopWhiteList. siopId.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblSiopWhiteList.siopId.</p></td>
 </tr>
 </tbody>
 </table>

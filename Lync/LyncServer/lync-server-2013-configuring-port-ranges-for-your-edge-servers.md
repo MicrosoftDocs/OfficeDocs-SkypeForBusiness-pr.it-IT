@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurazione degli intervalli di porte per gli Edge Server'
+title: 'Lync Server 2013: configurazione degli intervalli di porte per i server perimetrali'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184469
 ms.date: 07/24/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b6eddf59f6fe4b2575e0e7d70adddb2e94c90e05
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b526611e2e29f1b8d11e731381898a7db5e71aa8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742346"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008398"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-port-ranges-for-your-edge-servers-in-lync-server-2013"></a>Configurazione degli intervalli di porte per gli Edge Server in Lync Server 2013
+# <a name="configuring-port-ranges-for-your-edge-servers-in-lync-server-2013"></a>Configurazione degli intervalli di porte per i server perimetrali in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41742346"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-07-24_
+_**Ultimo argomento modificato:** 2015-07-24_
 
-Con Edge Server non è necessario configurare intervalli di porte distinti per l'audio, il video e la condivisione di applicazioni; allo stesso modo, gli intervalli di porte usati per i server perimetrali non devono corrispondere agli intervalli di porte usati con i server di conferenza, applicazione e mediazione. Prima di procedere con il nostro esempio, è importante sottolineare che, mentre questa opzione esiste, ti consigliamo di non modificare gli intervalli di porte, perché questo potrebbe influire negativamente su alcuni scenari, se ci si sposta fuori dall'intervallo di porte di 50000.
+Con i server perimetrali non è necessario configurare intervalli di porte separati per la condivisione di audio, video e applicazioni. Analogamente, gli intervalli di porte utilizzati per i server perimetrali non devono corrispondere agli intervalli di porte utilizzati con le conferenze, l'applicazione e i Mediation Server. Prima di procedere con l'esempio, è importante sottolineare che, sebbene esista questa opzione, si consiglia di non modificare gli intervalli di porte, in quanto ciò potrebbe influire negativamente su alcuni scenari se si esce dall'intervallo di porte 50000.
 
-Si supponga ad esempio di avere configurato i servizi di conferenza, applicazione e mediazione per l'uso di questi intervalli di porte:
+Si supponga, ad esempio, che siano stati configurati i servizi di conferenza, applicazione e Mediation Server per l'utilizzo di questi intervalli di porte:
 
 
 <table>
@@ -51,7 +51,7 @@ Si supponga ad esempio di avere configurato i servizi di conferenza, applicazion
 <thead>
 <tr class="header">
 <th>Tipo di pacchetto</th>
-<th>Porta di avvio</th>
+<th>Numero di porta iniziale</th>
 <th>Numero di porte riservate</th>
 </tr>
 </thead>
@@ -80,19 +80,19 @@ Si supponga ad esempio di avere configurato i servizi di conferenza, applicazion
 </table>
 
 
-Come si può vedere, gli intervalli di porte per la condivisione di audio, video e applicazioni iniziano alla porta 40803 e includono un totale di 24732 porte. Se si preferisce, è possibile configurare un server perimetrale specifico per l'uso di questi valori di porta complessivi eseguendo un comando simile a quello di Lync Server Management Shell:
+Come si può notare, gli intervalli di porte per la condivisione di audio, video e applicazioni partono dalla porta 40803 e comprendono un totale di 24732 porte. Se lo si desidera, è possibile configurare un server perimetrale specifico affinché utilizzi questi valori generali, eseguendo un comando simile al seguente da Lync Server Management Shell:
 
     Set-CsEdgeServer -Identity EdgeServer:atl-edge-001.litwareinc.com -MediaCommunicationPortStart 40803 -MediaCommunicationPortCount 24730
 
-In alternativa, usare il comando seguente per configurare contemporaneamente tutti i server perimetrali dell'organizzazione:
+Alternativamente, è possibile utilizzare il comando seguente per configurare simultaneamente tutti i server perimetrali all'interno dell'organizzazione:
 
     Get-CsService -EdgeServer | ForEach-Object {Set-CsEdgeServer -Identity $_.Identity -MediaCommunicationPortStart 40803 -MediaCommunicationPortCount 24730}
 
-Puoi verificare le impostazioni della porta corrente per gli Edge Server usando il comando Lync Server Management Shell:
+È possibile verificare le impostazioni correnti delle porte per i server perimetrali utilizzando il comando Lync Server Management Shell:
 
     Get-CsService -EdgeServer | Select-Object Identity, MediaCommunicationPortStart, MediaCommunicationPortCount
 
-Anche in questo caso, quando forniamo queste opzioni, ti consigliamo vivamente di abbandonare gli elementi per la configurazione della porta.
+Anche in questo caso, se si forniscono queste opzioni, si consiglia vivamente di lasciare le cose così come sono per la configurazione della porta.
 
 </div>
 

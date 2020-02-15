@@ -1,5 +1,5 @@
 ---
-title: Connettere il pool pilota ai server legacy di Edge Server
+title: Connettere il pool pilota ai server perimetrali legacy
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733808
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 447a0ead887b8283aa2701963a0107ef318bb312
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: cc9213dbf5d75b80ccbfc67d03cfb3c02ef87145
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723226"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006512"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="connect-pilot-pool-to-legacy-edge-servers"></a>Connettere il pool pilota ai server legacy di Edge Server
+# <a name="connect-pilot-pool-to-legacy-edge-servers"></a>Connettere il pool pilota ai server perimetrali legacy
 
 </div>
 
@@ -35,45 +35,45 @@ ms.locfileid: "41723226"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-29_
+_**Ultimo argomento modificato:** 2012-09-29_
 
-Dopo la distribuzione di Lync Server 2013, è necessario configurare una route federativo per il sito. Per usare la route federata usata da Lync Server 2010, è necessario configurare Lync Server 2013 per usare questa route.
+Dopo aver distribuito Lync Server 2013, è necessario configurare una route di federazione per il sito. Per utilizzare la route federata utilizzata da Lync Server 2010, è necessario che Lync Server 2013 sia configurato per l'utilizzo di questa route.
 
-Per consentire al sito di Lync Server 2013 di usare il Director e il server perimetrale della distribuzione di Lync Server 2010, usare generatore di topologie per associare il pool di Edge legacy.
+Per abilitare il sito Lync Server 2013 per l'utilizzo del server Director e Edge della distribuzione di Lync Server 2010, utilizzare Generatore di topologie per associare il pool perimetrale legacy.
 
 <div>
 
-## <a name="to-associate-the-legacy-edge-pool-by-using-topology-builder"></a>Per associare il pool di Edge legacy tramite Generatore di topologia
+## <a name="to-associate-the-legacy-edge-pool-by-using-topology-builder"></a>Per associare il pool di server perimetrali legacy tramite Generatore di topologie
 
 1.  Aprire **Generatore di topologie**.
 
-2.  Selezionare il sito, che si trova direttamente sotto il nodo **Lync Server** .
+2.  Selezionare il sito, disponibile direttamente sotto il nodo **Lync Server**.
 
-3.  Nel menu **azioni** fare clic su **modifica proprietà**.
+3.  Scegliere **Modifica proprietà** dal menu **Azioni**.
 
-4.  Nel riquadro sinistro selezionare **Route federativo**.
+4.  Nel riquadro sinistro selezionare **Route di federazione**.
 
-5.  In **assegnazione percorso federativo di sito**selezionare **Abilita federazione SIP**e quindi selezionare il director di Lync Server 2010 o Lync Server 2010 Edge Server se non è elencato alcun amministratore.
+5.  In **Assegnazione route federazione sito**selezionare **Abilita federazione SIP**e quindi selezionare Lync Server 2010 Director o il server perimetrale di Lync Server 2010 se non è elencato alcun Director.
     
-    ![Modifica proprietà - Pagina Route di federazione](images/JJ721875.5f1d04c3-c724-426d-b27d-3fe89c6c5cfb(OCS.15).jpg "Modifica proprietà - Pagina Route di federazione")  
+    ![Modifica proprietà, pagina Route di Federazione](images/JJ721875.5f1d04c3-c724-426d-b27d-3fe89c6c5cfb(OCS.15).jpg "Modifica proprietà, pagina Route di Federazione")  
 
-6.  Fare clic su **OK** per chiudere la pagina **modifica proprietà** .
+6.  Fare clic su  **OK ** per chiudere la pagina  **Modifica proprietà **.
 
-7.  In Generatore di topologia, nel nodo Lync Server 2013, passare al pool **Standard Edition server** o **Enterprise Edition front-end**, fare clic con il pulsante destro del mouse sul pool e quindi scegliere **modifica proprietà**.
+7.  In Generatore di topologie, nel nodo Lync Server 2013, passare al **Server Standard Edition** o **pool Enterprise Edition front end**, fare clic con il pulsante destro del mouse sul pool e quindi scegliere **modifica proprietà**.
 
-8.  In **associazioni**selezionare la casella di controllo accanto a **associa Edge pool (per i componenti multimediali)**.
+8.  In **Associazioni** selezionare la casella di controllo accanto ad **Associa pool di server perimetrali (per componenti multimediali)**.
 
-9.  Nell'elenco selezionare il server perimetrale legacy.
+9.  Selezionare il server perimetrale legacy nell'elenco.
     
-    ![Finestra di dialogo Modifica proprietà - Selezione del server perimetrale legacy](images/JJ721875.feae8156-540e-4804-bb0a-2b5736ec2900(OCS.15).jpg "Finestra di dialogo Modifica proprietà - Selezione del server perimetrale legacy")  
+    ![Finestra di dialogo Modifica proprietà, selezione del perimetro legacy](images/JJ721875.feae8156-540e-4804-bb0a-2b5736ec2900(OCS.15).jpg "Finestra di dialogo Modifica proprietà, selezione del perimetro legacy")  
 
-10. Fare clic su **OK** per chiudere la pagina **modifica proprietà** .
+10. Fare clic su  **OK ** per chiudere la pagina  **Modifica proprietà **.
 
-11. In **Generatore di topologie**selezionare il nodo di primo livello, **Lync Server**.
+11. In  **Generatore di topologie ** selezionare il nodo di primo livello  **Lync Server**.
 
-12. Nel menu **azione** fare clic su **Pubblica topologia**e quindi su **Avanti**.
+12. Scegliere **Pubblica topologia** dal menu **Azione** e quindi scegliere **Avanti**.
 
-13. Al termine della **pubblicazione guidata** , fare clic su **fine**.
+13. Al termine della Pubblicazione guidata **** fare clic su  **Fine **.
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48184860
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 952f065c5377a4d4e94677f9088569ffca681151
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0996abb7098ba636fc31d27388257f570a549ce2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744376"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007595"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41744376"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-03-25_
+_**Ultimo argomento modificato:** 2014-03-25_
 
-La Tabella UserAgentDef esegue il mapping degli identificatori dell'agente utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software usati per la connessione a Microsoft Lync Server 2013. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+Nella tabella UserAgentDef viene eseguito il mapping tra gli identificatori degli agenti utente e i nomi descrittivi degli agenti. Gli agenti utente sono client software utilizzati per la connessione a Microsoft Lync Server 2013. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 
 
 <table>
@@ -55,27 +55,27 @@ La Tabella UserAgentDef esegue il mapping degli identificatori dell'agente utent
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>1</p></td>
+<td><p>1 </p></td>
 <td><p>MediationServer</p></td>
 <td><p>MediationServer</p></td>
 </tr>
 <tr class="even">
-<td><p>2</p></td>
+<td><p>2 </p></td>
 <td><p>AV-MCU</p></td>
 <td><p>AV-MCU</p></td>
 </tr>
 <tr class="odd">
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>OC</p></td>
 <td><p>OC</p></td>
 </tr>
 <tr class="even">
-<td><p>8</p></td>
+<td><p>8 </p></td>
 <td><p>OCPhone</p></td>
 <td><p>OCPhone</p></td>
 </tr>
 <tr class="odd">
-<td><p>16</p></td>
+<td><p>16 </p></td>
 <td><p>LMC</p></td>
 <td><p>LMC</p></td>
 </tr>

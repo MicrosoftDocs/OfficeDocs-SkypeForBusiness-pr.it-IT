@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Avviare servizi nei server'
+title: 'Lync Server 2013: avviare i servizi nei server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185912
 ms.date: 09/03/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1e6474071e7f95228f3c04c4931b4f899df68b40
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ee5e58f316acde9e1aadeee80cfccb6ee1b189be
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764412"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007705"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,27 +35,27 @@ ms.locfileid: "41764412"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-09-03_
+_**Ultimo argomento modificato:** 2014-09-03_
 
-Per completare correttamente questa procedura, è necessario avere effettuato l'accesso come utente membro del gruppo RTCUniversalServerAdmins o avere le autorizzazioni corrette Delegate. Per informazioni dettagliate sulla delega delle autorizzazioni, vedere l'argomento [autorizzazioni di configurazione per i delegati in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+Per eseguire questa procedura, è necessario accedere come utente membro del gruppo RTCUniversalServerAdmins o disporre della delega delle autorizzazioni appropriate. Per informazioni dettagliate su come delegare le autorizzazioni, vedere l'argomento [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-Dopo l'installazione dell'archivio di configurazione locale nei server, installare i componenti di Lync Server 2013 e configurare i certificati in un front end server o front end server, è necessario avviare i servizi di Lync Server 2013 nel server. Usare la procedura seguente per avviare i servizi in ogni server front-end della distribuzione.
+Dopo l'installazione dell'archivio di configurazione locale nei server, l'installazione dei componenti di Lync Server 2013 e la configurazione dei certificati in un front end server o front end server, è necessario avviare i servizi Lync Server 2013 sul server. Utilizzare la procedura seguente per avviare i servizi in ogni front end server della distribuzione.
 
 <div>
 
-## <a name="to-start-services-on-a-standard-edition-or-front-end-server"></a>Per avviare i servizi in una versione standard o front end server
+## <a name="to-start-services-on-a-standard-edition-or-front-end-server"></a>Per avviare i servizi in un server Standard Edition o front end
 
-1.  Nella pagina **Lync server 2013** della distribuzione guidata di Lync Server fare clic su **Esegui** accanto al **passaggio 4: avviare i servizi**.
+1.  Nella distribuzione guidata di Lync Server, nella pagina **Lync server 2013** , fare clic su **Esegui** accanto a **passaggio 4: Avvia servizi**.
 
-2.  Nella pagina **Start Services** fare clic su **Avanti** per avviare i servizi di Lync Server nel server.
+2.  Nella pagina **Avvia servizi** fare clic su **Avanti** per avviare i servizi Lync Server nel server.
 
-3.  Nella pagina **esecuzione dei comandi** , dopo aver avviato tutti i servizi, fare clic su **fine**.
+3.  Nella pagina **Esecuzione comandi in corso**, dopo l'avvio di tutti i servizi, fare clic su **Fine**.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Il comando per avviare i servizi sul server è un metodo di sforzo ottimale per segnalare che i servizi sono effettivamente stati avviati. Potrebbe non corrispondere allo stato effettivo del servizio. È consigliabile usare lo stato del servizio di passaggio <STRONG>(facoltativo)</STRONG> subito dopo i <STRONG>Servizi Start</STRONG> per aprire Microsoft Management Console (MMC) e verificare che i servizi siano stati avviati correttamente. Se un servizio di Lync Server non è stato avviato, è possibile fare clic con il pulsante destro del mouse su tale servizio in MMC e quindi scegliere <STRONG>Avvia</STRONG>.
+    > Il comando per avviare i servizi nel server è un metodo di sforzo ottimale per segnalare che i servizi sono stati effettivamente avviati. Potrebbe non rispecchiare lo stato effettivo del servizio. È consigliabile utilizzare lo stato del servizio di passaggio <STRONG>(facoltativo)</STRONG> subito dopo l' <STRONG>avvio dei servizi</STRONG> per aprire Microsoft Management Console (MMC) e verificare che i servizi siano stati avviati correttamente. Se un servizio di Lync Server non è stato avviato, è possibile fare clic con il pulsante destro del mouse su tale servizio in MMC e quindi scegliere <STRONG>Avvia</STRONG>.
 
     
     </div>

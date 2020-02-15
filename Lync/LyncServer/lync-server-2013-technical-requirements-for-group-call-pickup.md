@@ -12,16 +12,16 @@ ms:contentKeyID: 51541501
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2a24f9e5b3950f45804a816e44e13382fc7d3cc3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7fff6c8fa2d058d5e9ee2df0beb26f97508798f2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746566"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006712"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41746566"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-30_
+_**Ultimo argomento modificato:** 2013-01-30_
 
-Il pick-up di chiamata di gruppo ha lo stesso hardware, il software e i requisiti di porta dell'applicazione Call Park. Il pick-up delle chiamate di gruppo non usa i file audio.
+Il prelievo delle chiamate di gruppo ha gli stessi requisiti hardware, software e di porta dell'applicazione Parcheggio di chiamata. Il prelievo delle chiamate di gruppo non utilizza i file audio.
 
 <div>
 

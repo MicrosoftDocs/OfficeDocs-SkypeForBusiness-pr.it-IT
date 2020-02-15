@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Verifica della distribuzione dei componenti perimetrali'
+title: 'Lync Server 2013: verifica della distribuzione di Edge'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183290
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1e6e3bf4e2fb1004c1e0312b4ef43f3f6f6ba690
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ac4c4ad1b6bddcdc44383f0be8e2c05e00de7b52
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742026"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007285"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="verifying-your-edge-deployment-in-lync-server-2013"></a>Verifica della distribuzione dei componenti perimetrali in Lync Server 2013
+# <a name="verifying-your-edge-deployment-in-lync-server-2013"></a>Verifica della distribuzione di Edge in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41742026"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2010-11-07_
+_**Ultimo argomento modificato:** 2010-11-07_
 
-Dopo aver completato l'installazione e la configurazione dei componenti di Edge, è necessario verificare la configurazione e la connettività dei server e verificare la connettività per ogni tipo di utente esterno supportato.
+Dopo avere completato l'installazione e la configurazione dei componenti perimetrali, è necessario verificare la configurazione e la connettività dei server e verificare la connettività di ogni tipo di utente esterno supportato.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Verificare la connettività tra server interni e server perimetrali in Lync Server 2013](lync-server-2013-verify-connectivity-between-internal-servers-and-edge-servers.md)
 

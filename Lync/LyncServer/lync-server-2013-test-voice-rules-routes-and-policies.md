@@ -12,16 +12,16 @@ ms:contentKeyID: 63969661
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0c3b2d98846e537a9a416eaabaf6b02627c7273f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 689f591b416cdab6eb5d325a7dade2c54659d072
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746026"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42017887"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41746026"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-20_
+_**Ultimo argomento modificato:** 2014-05-20_
 
 
 <table>
@@ -49,13 +49,13 @@ _**Argomento Ultima modifica:** 2014-05-20_
 <td><p>Mensile</p></td>
 </tr>
 <tr class="even">
-<td><p>Strumento di test</p></td>
+<td><p>Strumento di testing</p></td>
 <td><p>Windows PowerShell</p></td>
 </tr>
 <tr class="odd">
 <td><p>Autorizzazioni necessarie</p></td>
-<td><p>Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
-<p>Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet test-CsVoiceUser. Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</p>
+<td><p>Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
+<p>Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet test-CsVoiceUser. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</p>
 <p><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsVoiceUser&quot;}</code></p></td>
 </tr>
 </tbody>
@@ -66,47 +66,47 @@ _**Argomento Ultima modifica:** 2014-05-20_
 
 ## <a name="description"></a>Descrizione
 
-Quando un utente effettua una chiamata telefonica, la route che la chiamata richiede per raggiungere la destinazione dipende sia dai criteri che dai dial plan assegnati all'utente. In base all'indirizzo SIP e a un numero di telefono di un utente, il cmdlet test-CsVoiceUser verifica se l'utente in questione può completare una chiamata a tale numero. Se il test ha esito positivo, test-CsVoiceUser restituisce quanto segue:
+Quando un utente effettua una chiamata telefonica, la route che la chiamata richiede per raggiungere la destinazione dipende sia dai criteri che dai dial plan assegnati a quell'utente. Dato un indirizzo SIP e un numero di telefono di un utente, il cmdlet test-CsVoiceUser verifica se l'utente in questione può completare una chiamata a tale numero. Se il test ha esito positivo, test-CsVoiceUser restituisce quanto segue:
 
-  - Il numero tradotto in formato E. 164 (in base al dial plan dell'utente)
+  - Il numero convertito nel formato E. 164 (in base al dial plan dell'utente)
 
-  - Regola di normalizzazione che ha fornito tale traduzione
+  - Regola di normalizzazione che ha fornito la traduzione
 
-  - Route vocale usata (in base alla priorità del percorso);
+  - La route vocale utilizzata (in base alla priorità del percorso);
 
-  - L'uso del telefono che ha collegato il criterio vocale dell'utente alla route vocale.
+  - Utilizzo del telefono che ha collegato il criterio vocale dell'utente alla route vocale.
 
-Test-CsVoiceUser consente di determinare se un numero di telefono specifico verrà instradato e tradotto come previsto e può aiutare a risolvere i problemi relativi alle chiamate sperimentati dai singoli utenti.
+Test-CsVoiceUser consente di determinare se il numero di telefono specifico viene instradato e tradotto come previsto e può essere utile per risolvere i problemi relativi alle chiamate che sono stati sperimentati da singoli utenti.
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a>Eseguire il test
+## <a name="running-the-test"></a>Esecuzione del test
 
-Quando si utilizza il cmdlet test-CsVoiceUser, è necessario fornire due informazioni: il numero da chiamare (DialedNumber) e l'identità dell'account utente testato. Ad esempio, questo comando verifica la capacità dell'utente che ha l'indirizzo SIP sip:kenmyer@litwareinc.com di effettuare una chiamata al numero di telefono + 1206555-1219:
+Quando si esegue il cmdlet test-CsVoiceUser, è necessario fornire due informazioni: il numero da comporre (DialedNumber) e l'identità dell'account utente da testare. Ad esempio, questo comando verifica la capacità dell'utente che ha l'indirizzo SIP sip:kenmyer@litwareinc.com di effettuare una chiamata al numero di telefono + 1206555-1219:
 
 `Test-CsVoiceUser -DialedNumber "12065551219" -SipUri "sip:kenmyer@litwareinc.com"`
 
-Il numero di telefono deve essere formattato nel modo previsto per la chiamata. Ad esempio, se gli utenti in genere non chiamano l'1 prima di effettuare una chiamata a lunga distanza, è consigliabile usare questo formato:
+Il numero di telefono deve essere formattato in modo da prevederne la composizione. Ad esempio, se gli utenti in genere non eseguono la chiamata 1 prima di effettuare chiamate interurbane, è necessario utilizzare questo formato:
 
 `-DialedNumber "2065551219"`
 
-Naturalmente, in questo caso, il test non riuscirà se non si dispone di una regola di normalizzazione che può tradurre correttamente il numero 2065551219 nel formato telefonico E. 164 usato da Lync Server. Per altre informazioni, vedere l'argomento della Guida cmdlet New-CsVoiceNormalizationRule.
+Naturalmente, in tal caso, il test avrà esito negativo se non si dispone di una regola di normalizzazione che può tradurre correttamente il numero 2065551219 nel formato del telefono E. 164 utilizzato da Lync Server. Per ulteriori informazioni, vedere l'argomento della Guida New-CsVoiceNormalizationRule cmdlet.
 
-Se si vuole eseguire lo stesso test in ognuno degli account utente, è possibile usare un comando simile al seguente:
+Se si desidera eseguire lo stesso test su ciascuno degli account utente, è possibile utilizzare un comando simile al seguente:
 
 `Get-CsUser | ForEach-Object {$_.DisplayName; Test-CsVoiceUser -DialedNumber "+12065551219" -SipUri $_.SipAddress} | Format-List`
 
-Per altre informazioni, vedere la documentazione della Guida relativa al cmdlet test-CsVoiceUser.
+Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmdlet test-CsVoiceUser.
 
 </div>
 
 <div>
 
-## <a name="determining-success-or-failure"></a>Determinare l'esito positivo o negativo
+## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
-Se il test viene completato correttamente (ovvero, se l'utente può effettuare una chiamata telefonica al numero specificato), l'output visualizzerà le informazioni come il numero di telefono tradotto e la regola di normalizzazione e la route vocale corrispondenti:
+Se il test viene completato correttamente (ovvero se l'utente può effettuare una chiamata al numero specificato), l'output mostrerà informazioni come il numero di telefono convertito e la regola di normalizzazione corrispondente e la route vocale:
 
 TranslatedNumber MatchingRule FirstMatchingRoute MatchingUsage
 
@@ -114,15 +114,15 @@ TranslatedNumber MatchingRule FirstMatchingRoute MatchingUsage
 
 \+12065551219 descripti...    LocalRoute local
 
-A causa delle limitazioni della schermata di Windows PowerShell, potrebbe non essere visualizzata sullo schermo almeno alcune informazioni restituite (in particolare la descrizione completa della regola di normalizzazione corrispondente). Se si è interessati solo al successo o al fallimento del test, potrebbe non essere importante. Se si preferisce visualizzare tutti i dettagli dei dati restituiti, inviare l'output al cmdlet Format-List durante l'uso del test:
+A causa delle limitazioni della schermata di Windows PowerShell, almeno alcune informazioni restituite, in particolare la descrizione completa della regola di normalizzazione corrispondente, potrebbero non essere visualizzate sullo schermo. Se si è interessati solo all'esito positivo o negativo del test, potrebbe non essere importante. Se si preferisce visualizzare tutti i dettagli dei dati restituiti, eseguire il piping dell'output al cmdlet Format-List durante l'esecuzione del test:
 
 `Test-CsVoiceUser -DialedNumber "+12065551219" -SipUri "sip:kenmyer@litwareinc.com" -Verbose | Format-List`
 
-Questo visualizzerà l'output in un formato più intuitivo:
+Che visualizzerà l'output in un formato più facile da usare per i lettori:
 
 TranslatedNumber: + 12065551219
 
-MatchingRule: Description =; Pattern = ^ (\\d{11}) $; Traduzione = + $1;
+MatchingRule: Description =; Pattern = ^ (\\d{11}) $; Translation = + $1;
 
 Name = prefix all; IsInternalExtension = false
 
@@ -130,7 +130,7 @@ FirsMatchingRoute : LocalRoute
 
 MatchingUsage: local
 
-Se il test non riesce, test-CsVoiceUser restituirà un set vuoto di valori di proprietà:
+Se il test ha esito negativo, test-CsVoiceUser restituirà un set vuoto di valori della proprietà:
 
 TranslatedNumber MatchingRule FirstMatchingRoute MatchingUsage
 
@@ -140,19 +140,19 @@ TranslatedNumber MatchingRule FirstMatchingRoute MatchingUsage
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non essere riuscito
+## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Esistono diversi motivi per cui il cmdlet test-CsVoiceUser potrebbe non riuscire: potrebbe non essere presente una regola di normalizzazione che può tradurre il numero di telefono specificato. Potrebbero esserci problemi con la route vocale. Potrebbe essersi verificato un problema di configurazione con il dial plan assegnato all'utente in questione. Per questo motivo, potrebbe essere necessario includere il parametro Verbose quando si esegue il cmdlet test-CsVoiceUser:
+Esistono diversi motivi per cui il cmdlet test-CsVoiceUser potrebbe avere esito negativo: potrebbe non essere una regola di normalizzazione che può tradurre il numero di telefono specificato. Potrebbero verificarsi problemi con la route vocale. Potrebbe esserci un problema di configurazione con il dial plan assegnato all'utente in questione. Per questo motivo, potrebbe essere necessario includere il parametro Verbose quando si esegue il cmdlet test-CsVoiceUser:
 
 `Test-CsVoiceUser -DialedNumber "+12065551219" -SipUri "sip:kenmyer@litwareinc.com" -Verbose`
 
-Quando viene incluso il cmdlet Verbose, test-CsVoiceUser emetterà un account dettagliato di tutti i passaggi necessari per eseguire i controlli. Ad esempio, potresti vedere i passaggi simili a questi: 
+Quando viene incluso il cmdlet Verbose, test-CsVoiceUser rilascerà un account dettagliato di tutti i passaggi necessari per l'esecuzione dei controlli. Ad esempio, è possibile che vengano visualizzati passaggi analoghi a quelli riportati di seguito: 
 
-VERBOse: individuazione dell'utente con identità "sip:kenmyer@litwareinc.com"
+VERBOse: individuazione di un utente con identità "sip:kenmyer@litwareinc.com"
 
-VERBOse: caricamento di dial plan: "" RedmondDialPlan ""
+VERBOse: Loading dial plan: "RedmondDialPlan"
 
-Queste informazioni aggiuntive possono dare suggerimenti sui passaggi che è possibile eseguire per individuare la causa dell'errore. Ad esempio, l'output dettagliato illustrato qui indica che all'utente in fase di test è stato assegnato il dial plan "RedmondDialPlan". Se il test ha esito negativo, un passaggio successivo logico consiste nel verificare che "RedmondDialPlan" possa tradurre il numero di telefono fornito.
+Queste informazioni aggiuntive possono fornire suggerimenti per i passaggi che è possibile eseguire per individuare la causa dell'errore. Ad esempio, l'output dettagliato mostrato di seguito indica che all'utente che è stato sottoposto a test è stato assegnato il dial plan RedmondDialPlan. Se il test non ha avuto esito positivo, si verificherà che RedmondDialPlan può tradurre il numero di telefono specificato.
 
 </div>
 

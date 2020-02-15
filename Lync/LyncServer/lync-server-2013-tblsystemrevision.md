@@ -12,16 +12,16 @@ ms:contentKeyID: 48184901
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 834ee6650e6bedfe76b1e46943f05e0aa713095d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4cf06b283221202943399f71ecf7b19224d29a3e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42024687"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41764056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-tblSystemRevision contiene il numero di revisione usato con la tabella tblAdminLock per ottenere la coerenza tra più client di amministratore.
+tblSystemRevision contiene il numero di revisione utilizzato con la tabella tblAdminLock per garantire la coerenza tra più client di amministratore.
 
 ### <a name="columns"></a>Colonne
 
@@ -57,8 +57,8 @@ tblSystemRevision contiene il numero di revisione usato con la tabella tblAdminL
 <tbody>
 <tr class="odd">
 <td><p>sysRevision</p></td>
-<td><p>bigint e non null</p></td>
-<td><p>Numero di revisione.</p></td>
+<td><p>bigint, non null</p></td>
+<td><p>Numero revisione.</p></td>
 </tr>
 </tbody>
 </table>

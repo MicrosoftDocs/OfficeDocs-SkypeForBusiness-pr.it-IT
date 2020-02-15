@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurazione di Microsoft SharePoint Server 2013 per la ricerca di dati archiviati di Lync Server 2013'
+title: 'Lync Server 2013: configurazione di Microsoft SharePoint Server 2013 per la ricerca di dati di Lync Server 2013 archiviati'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733566
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1e000f6116b112b3de9840c22c29510745303035
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8debab39073bf31f509ec504f944c8e4c7a9dfc3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755920"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008418"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41755920"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-02-04_
+_**Ultimo argomento modificato:** 2014-02-04_
 
-Uno dei vantaggi principali per l'archiviazione delle trascrizioni di messaggistica istantanea e conferenze Web in Microsoft Exchange Server 2013 anziché in Microsoft Lync Server 2013 è il fatto che l'archiviazione dei dati nella stessa posizione consente agli amministratori di usare un singolo strumento per cercare dati di Exchange archiviati e/o i dati di Lync Server archiviati. Poiché tutti i dati sono archiviati nella stessa posizione (Exchange), qualsiasi strumento che può cercare dati di Exchange archiviati può cercare anche dati archiviati in Lync Server.
+Uno dei principali vantaggi per l'archiviazione delle trascrizioni di messaggistica istantanea e Web Conferencing in Microsoft Exchange Server 2013 anziché Microsoft Lync Server 2013 è il fatto che l'archiviazione dei dati nello stesso percorso consente agli amministratori di utilizzare un singolo strumento per cercare i dati di Exchange archiviati e/o i dati di Lync Server archiviati. Poiché tutti i dati vengono archiviati nello stesso luogo (Exchange), qualsiasi strumento in grado di eseguire la ricerca di dati di Exchange archiviati può anche cercare i dati archiviati di Lync Server.
 
-Uno strumento che facilita la ricerca di dati archiviati è Microsoft SharePoint Server 2013. Se si vuole usare SharePoint per cercare i dati di Lync Server, è prima di tutto necessario completare tutti i passaggi necessari per la configurazione dell'archiviazione di Exchange in Lync Server. Dopo aver integrato correttamente Exchange 2013 e Lync Server 2013, è necessario installare l'API gestita di Exchange Web Services versione 2,0 in SharePoint Server. il programma di installazione per l'API può essere scaricato dall'area download Microsoft ([http://go.microsoft.com/fwlink/p/?LinkId=258305](http://go.microsoft.com/fwlink/p/?linkid=258305)). Il file scaricato (EWSManagedAPI. msi) può essere salvato in qualsiasi cartella di SharePoint Server.
+Uno strumento che facilita la ricerca dei dati archiviati è Microsoft SharePoint Server 2013. Se si desidera utilizzare SharePoint per cercare i dati di Lync Server, è necessario prima completare tutti i passaggi necessari per la configurazione dell'archiviazione di Exchange in Lync Server. Dopo aver completato l'integrazione di Exchange 2013 e Lync Server 2013, è necessario installare l'API gestita di servizi Web Exchange versione 2,0 sul server di SharePoint. il programma di installazione per l'API può essere scaricato dall'area download Microsoft ([http://go.microsoft.com/fwlink/p/?LinkId=258305](http://go.microsoft.com/fwlink/p/?linkid=258305)). Il file scaricato (EWSManagedAPI. msi) può essere salvato in una cartella qualsiasi del server di SharePoint.
 
-Dopo aver scaricato il file, completare la procedura seguente in SharePoint Server:
+Al termine del download del file, eseguire la procedura seguente in SharePoint Server:
 
-1.  Aprire una finestra di comando facendo clic sul pulsante **Start**, scegliere **tutti i programmi**, **Accessori**, fare clic con il **pulsante destro del mouse e**quindi scegliere **Esegui come amministratore**.
+1.  Aprire una finestra dei comandi facendo clic su **Start**, scegliere **Tutti i programmi**, **Accessori**, fare clic con il pulsante destro del mouse su **Prompt dei comandi** e quindi fare clic su **Esegui come amministratore**.
 
-2.  Nella finestra di comando usare il comando **CD** per cambiare la directory corrente nella cartella in cui è stato salvato il file EWSManagedAPI. msi. Ad esempio, se il file è stato salvato in C:\\download, digitare il comando seguente nella finestra di comando e quindi premere INVIO:
+2.  Nella finestra dei comandi passare dalla directory corrente alla cartella in cui è stato salvato il file EWSManagedAPI.msi utilizzando il comando **cd**. Ad esempio, se il file è stato salvato in C:\\Downloads, digitare il comando seguente nella finestra di comando e quindi premere INVIO:
     
         cd C:\Downloads
 
@@ -53,11 +53,11 @@ Dopo aver scaricato il file, completare la procedura seguente in SharePoint Serv
     
         msiexec /I EwsManagedApi.msi addlocal="ExchangeWebServicesApi_Feature,ExchangeWebServicesApi_Gac"
 
-4.  Dopo aver installato l'API, reimpostare IIS digitando il comando seguente e premendo INVIO:
+4.  Al termine dell'installazione dell'API, riavviare IIS digitando questo comando seguito da INVIO:
     
         iisreset
 
-Dopo aver installato i servizi Web di Exchange, è necessario configurare l'autenticazione da server a server tra SharePoint Server 2013 ed Exchange 2013. A tale scopo, aprire prima di tutto SharePoint 2013 Management Shell ed eseguire il set di comandi seguente:
+Dopo l'installazione dei servizi Web di Exchange, è necessario configurare l'autenticazione da server a server tra SharePoint Server 2013 ed Exchange 2013. A tale scopo, aprire innanzitutto SharePoint 2013 Management Shell ed eseguire il seguente set di comandi:
 
     New-SPTrustedSecurityTokenIssuer -Name "Exchange" -MetadataEndPoint "https://autodiscover.litwareinc.com/autodiscover/metadata/json/1"
     $service = Get-SPSecurityTokenServiceConfig
@@ -70,34 +70,34 @@ Dopo aver installato i servizi Web di Exchange, è necessario configurare l'aute
 
 
 > [!NOTE]  
-> Assicurati e usa l'URI per il servizio di individuazione automatica. Non usare l'URI https://autodiscover.litwareinc.com/autodiscover/metadata/json/1di esempio.
+> Verificare e utilizzare l'URI del servizio di individuazione automatica. Non utilizzare l'URI https://autodiscover.litwareinc.com/autodiscover/metadata/json/1di esempio.
 
 
 
 </div>
 
-Dopo aver creato l'emittente del token e configurato il servizio token, eseguire questi comandi, assicurandosi di sostituire l'URL del sito di SharePoint per l'URL di esempiohttp://atl-sharepoint-001:
+Dopo aver creato l'autorità emittente di token e aver configurato il servizio token, eseguire questi comandi, assicurandosi di sostituire l'URL del sito di SharePoint per l'URL di esempio.http://atl-sharepoint-001:
 
     $exchange = Get-SPTrustedSecurityTokenIssuer "Exchange"
     $app = Get-SPAppPrincipal -Site "https://atl-sharepoint-001" -NameIdentifier $exchange.NameID
     $site = Get-SPSite  "https://atl-sharepoint-001"
     Set-SPAppPrincipalPermission -AppPrincipal $app -Site $site.RootWeb -Scope "SiteSubscription" -Right "FullControl" -EnableAppOnlyPolicy
 
-Per configurare l'autenticazione da server a server per Exchange 2013, aprire Exchange Management Shell ed eseguire un comando simile a questo (presupponendo che Exchange sia stato installato nell'unità C: e che usi il percorso della cartella predefinito):
+Per configurare l'autenticazione da server a server per Exchange 2013, aprire Exchange Management Shell ed eseguire un comando simile a questo (presupponendo che Exchange sia stato installato nell'unità C: e che utilizzi il percorso della cartella predefinito):
 
     "C:\Program Files\Microsoft\Exchange Server\V15\Scripts\Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl 'https://atl-sharepoint-001/_layouts/15/metadata/json/1' -ApplicationType SharePoint"
 
-Dopo aver configurato l'applicazione partner, è consigliabile arrestare e riavviare Internet Information Services (IIS) in tutti i server di cassette postali e accesso client di Exchange. È possibile riavviare IIS usando un comando simile a questo, che riavvia il servizio nel computer ATL-Exchange-001:
+Dopo aver configurato l'applicazione partner, è consigliabile arrestare e riavviare Internet Information Services (IIS) su tutti i server cassette postali e accesso client di Exchange. Per riavviare IIS è possibile utilizzare un comando simile al seguente, che riavvia il servizio sul computer atl-exchange-001:
 
     iisreset atl-exchange-001
 
 Questo comando può essere eseguito dall'interno di Exchange Management Shell o da qualsiasi altra finestra di comando.
 
-Esegui quindi un comando simile al seguente, che assegna all'utente specificato (in questo esempio kenmyer) il diritto di eseguire l'individuazione in Exchange:
+Successivamente, eseguire un comando simile al seguente, che fornisce all'utente specificato (in questo esempio, kenmyer) il diritto all'individuazione su Exchange:
 
     Add-RoleGroupMember "Discovery Management" -Member "kenmyer"
 
-Dopo aver stabilito l'autenticazione da server a server tra Exchange e SharePoint, il passaggio successivo consiste nel creare un sito di eDiscovery in SharePoint. Questa operazione può essere eseguita eseguendo comandi simili a quelli di SharePoint Management Shell:
+Dopo che è stata stabilita l'autenticazione da server a server tra Exchange e SharePoint, il passaggio successivo consiste nel creare un sito di eDiscovery in SharePoint. Questa operazione può essere eseguita eseguendo comandi simili a quelli di SharePoint Management Shell:
 
     $template = Get-SPWebTemplate | Where-Object {$_.Title -eq "eDiscovery Center"}
     New-SPSite -Url "https://atl-sharepoint-001/sites/discovery" -OwnerAlias "kenmyer" -Template $Template -Name "Discovery Center"
@@ -106,45 +106,45 @@ Dopo aver stabilito l'autenticazione da server a server tra Exchange e SharePoin
 
 
 > [!NOTE]  
-> "eDiscovery" è l'abbreviazione di "Electronic Discovery" e in genere si riferisce al processo di ricerca di archivi elettronici per gli elementi che possono essere "ragionevolmente calcolati per portare ad una prova ammissibile" in tribunale.
+> "eDiscovery" è l'abbreviazione di "individuazione elettronica" e in genere si riferisce al processo di ricerca in archivi elettronici di elementi che possano essere "considerati ragionevolmente ammissibili come prova" in un tribunale.
 
 
 
 </div>
 
-Quando il nuovo sito è pronto, il passaggio successivo consiste nel configurare Exchange 2013 come origine dei risultati per SharePoint. Per eseguire questa operazione, è possibile completare la procedura seguente dalla pagina Amministrazione centrale di SharePoint 2013:
+Quando il nuovo sito è pronto, il passaggio successivo consiste nel configurare Exchange 2013 affinché funga da origine dei risultati per SharePoint. È possibile eseguire questa operazione eseguendo la procedura seguente dalla pagina Amministrazione centrale SharePoint 2013:
 
-1.  Nella pagina Amministrazione centrale fare clic su **Gestisci applicazioni di servizio** e quindi su **applicazione del servizio di ricerca**.
+1.  Nella pagina Amministrazione centrale fare clic su **Gestisci applicazioni di servizio**, quindi su **Applicazione servizio di ricerca**.
 
-2.  Nell'applicazione servizio di ricerca: pagina Amministrazione ricerca fare clic su **origini risultati** , quindi fare clic su **nuova origine dei risultati**.
+2.  In Applicazione servizio di ricerca: nella pagina Amministrazione ricerca fare clic su **Origini di risultati** e quindi su **Nuova origine dei risultati**.
 
-3.  Nel riquadro dell' **origine del nuovo risultato** immettere un nome per la nuova origine dei risultati, ad esempio **Microsoft Exchange**, nella casella **nome** . Selezionare **Exchange** come **protocollo**di origine dei risultati e quindi immettere l'URL di origine dei servizi Web per il server Exchange nella casella **URL di origine di Exchange** . L'URL di origine dovrebbe avere un aspetto simile al seguente:
+3.  Nel riquadro **Nuova origine dei risultati** specificare un nome per la nuova origine dei risultati, ad esempio **Microsoft Exchange**, nella casella **Nome**. Selezionare **Exchange** come **protocollo**dell'origine dei risultati e quindi immettere l'URL di origine dei servizi Web per il server Exchange nella casella **URL di origine di Exchange** . L'URL di origine avrà un aspetto simile al seguente:
     
     https://atl-exchange-001.litwareinc.com/ews/exchange.asmx
 
-4.  Verificare che l'opzione **Usa individuazione automatica** non sia selezionata e quindi fare clic su **OK**.
+4.  Verificare che l'opzione **Usa individuazione automatica** non sia selezionata, quindi fare clic su **OK**.
 
 Infine, creare un nuovo caso di eDiscovery e un nuovo set di eDiscovery completando la procedura seguente dal sito di individuazione di SharePoint, ad esempiohttps://atl-sharepoint-001/sites/discovery):
 
-1.  Nella pagina contenuto del sito fare clic su **Crea un nuovo caso**.
+1.  Nella pagina Contenuto del sito fare clic su **Crea un nuovo caso**.
 
-2.  Nella pagina contenuto del sito: nuovo sito di SharePoint immettere l'alias di posta elettronica dell'utente, ad esempio **kenmyer**, nella casella **titolo** e quindi aggiungere lo stesso URL alla casella **Indirizzo sito Web** . Ciò comporterà un URL simile al seguente:
+2.  In Contenuto del sito: nella pagina Nuovo sito di SharePoint inserire l'alias di posta elettronica dell'utente, ad esempio **kenmyer**, nella casella **Titolo**, quindi aggiungere lo stesso URL nella casella **Indirizzo sito Web**. Verrà creato un URL simile a questo:
     
     https://atl-sharepoint-001/sites/eDiscovery/kenmyer
 
 3.  Fare clic su **Crea**.
 
-4.  Quando viene visualizzata la pagina set di eDiscovery, fare clic su **nuovo elemento** in **identità e Mantieni: set di individuazione**.
+4.  Quando viene visualizzata la pagina Set eDiscovery, fare clic su **nuovo elemento** in **Identity and Preserve: Discovery Sets**.
 
-5.  Nella pagina New: Discovery set immettere l'alias di posta elettronica dell'utente nella casella **nome set di individuazione** . Immettere **eDiscovery Lync\* ** nella casella **filtro** e quindi fare clic su **Aggiungi & Gestisci origini**.
+5.  Nella pagina New: Discovery Set inserire l'alias di posta elettronica dell'utente nella casella **Discovery Set Name**. Immettere **eDiscovery Lync\* ** nella casella **filtro** e quindi fare clic su **Aggiungi & Gestisci origini**.
 
-6.  Nella pagina Add & Manage Sources immettere l'alias di posta elettronica dell'utente nella prima casella di testo in **cassette postali**. Fare clic sull'icona di controllo della cassetta postale situata accanto al manuale per verificare che SharePoint possa connettersi alla cassetta postale specificata.
+6.  Nella pagina Aggiungi e gestisci origini inserire l'alias di posta elettronica dell'utente nella prima casella di testo sotto **Cassette postali**. Fare clic sull'icona Controlla cassetta postale accanto alla casella di testo per verificare che SharePoint sia in grado di connettersi alla cassetta postale specificata.
 
 7.  Fare clic su **OK**.
 
-8.  Nella pagina set eDiscovery fare clic su **Salva** per salvare il nuovo set di eDiscovery.
+8.  Nella pagina Set eDiscovery fare clic su **Salva** per salvare il nuovo set eDiscovery.
 
-A questo punto è possibile eseguire una ricerca nella cassetta postale specificata (kenmyer) e/o abilitare il blocco sul posto nello stesso modo per qualsiasi altro contenuto o origine dei risultati di SharePoint.
+A questo punto è possibile eseguire una ricerca nella cassetta postale specificata (kenmyer) e/o abilitare la conserva sul posto allo stesso modo per qualsiasi altro contenuto o origine dei risultati di SharePoint.
 
 </div>
 

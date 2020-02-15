@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: test del ripristino di emergenza'
+title: 'Lync Server 2013: test di ripristino di emergenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 63969571
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f7c6c3b7c3b5d78324fe9c674650dd94338baea4
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4fc04381e315375fe0d5858c9a12ad577f6c8baf
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739196"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007825"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="disaster-recovery-test-in-lync-server-2013"></a>Test del ripristino di emergenza in Lync Server 2013
+# <a name="disaster-recovery-test-in-lync-server-2013"></a>Test di ripristino di emergenza in Lync Server 2013
 
 </div>
 
@@ -35,16 +35,16 @@ ms.locfileid: "41739196"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-01-26_
+_**Ultimo argomento modificato:** 2015-01-26_
 
-Eseguire un ripristino di sistema per un server di pool di Lync Server 2013 per testare il processo di ripristino di emergenza documentato. Il test consente di simulare un errore hardware completo per un server e ha lo scopo di garantire la disponibilità dei dati, dei piani e delle risorse per il ripristino. Provare ad avvicendare ogni mese un campo d'azione diverso, così da sottoporre un server diverso o di un'altra attrezzatura al test.
+Eseguire un ripristino del sistema per un server pool di Lync Server 2013 per testare il processo di ripristino di emergenza documentato. Questo test simula un errore hardware completo per un server e contribuisce a garantire che le risorse, i piani e i dati siano disponibili per il ripristino. Provare a ruotare lo stato attivo del test ogni mese in modo che l'organizzazione verifichi ogni volta l'errore di un server o di un altro dispositivo diverso.
 
-La pianificazione in base alla quale le organizzazioni svolgono il test del ripristino di emergenza è soggetta a variazioni. È molto importante non ignorare o trascurare l'esecuzione del test del ripristino di emergenza.
+Si noti che la pianificazione in base alla quale le organizzazioni eseguono i test di ripristino di emergenza variano. È molto importante che i test di ripristino di emergenza non vengano ignorati o trascurati.
 
 <div>
 
 
-Esportare la topologia, i criteri e le impostazioni di configurazione di Lync Server 2013 in un file. Questo file, tra le altre cose, può essere utilizzato per ripristinare le informazioni incluse nell'archivio di gestione centrale dopo una perdita di dati conseguente a un aggiornamento, un errore hardware o altri problemi.
+Esportare la topologia, i criteri e le impostazioni di configurazione di Lync Server 2013 in un file. Tra le altre cose, questo file può essere utilizzato per ripristinare queste informazioni nell'archivio di gestione centrale dopo un aggiornamento, un errore hardware o un altro problema che ha provocato la perdita di dati.
 
 Importare la topologia, i criteri e le impostazioni di configurazione di Lync Server 2013 nell'archivio di gestione centrale o nel computer locale, come illustrato nei comandi seguenti:
 
@@ -54,41 +54,41 @@ Importare la topologia, i criteri e le impostazioni di configurazione di Lync Se
 
 Per eseguire il backup dei dati di Lync Server 2013 di produzione:
 
-  - Eseguire il backup dei database RTC e LCSLog usando il processo di backup standard di SQL Server per scaricare il database in un file o un dispositivo di dump del nastro.
+  - Eseguire il backup dei database RTC e LCSLog utilizzando il processo di backup standard di SQL Server per eseguire il dump del database in un dispositivo di dump di file o nastri.
 
-  - Utilizzare applicazioni di terze parti per eseguire il backup dei dati in file o su nastro.
+  - Utilizzare un'applicazione di backup di terze parti per eseguire il backup dei dati in file o su nastro.
 
-  - Creare un file di esportazione XML dell'intero database RTC utilizzando il cmdlet Export-CsUserData.
+  - Utilizzare il cmdlet Export-CsUserData per creare un'esportazione XML dell'intero database RTC.
 
-  - Utilizzare il backup del file system o ricorrere a terze parti per eseguire il backup del contenuto delle riunioni e dei registri di conformità.
+  - Utilizzare il backup del file System o di terze parti per eseguire il back up del contenuto delle riunioni e dei registri di conformità.
 
-  - Usare lo strumento della riga di comando Export-CsConfiguration per eseguire il backup delle impostazioni di Lync Server 2013.
+  - Utilizzare lo strumento da riga di comando Export-CsConfiguration per eseguire il backup delle impostazioni di Lync Server 2013.
 
-Il primo passaggio della procedura di failover prevede lo spostamento forzato di utenti dal pool di produzione al pool del ripristino di emergenza.
+Il primo passaggio della procedura di failover include uno spostamento forzato degli utenti dal pool di produzione al pool di ripristino di emergenza.
 
-Lo spostamento è forzato poiché il pool di produzione non ammette il riposizionamento degli utenti.
+Si tratta di uno spostamento forzato poiché il pool di produzione non è disponibile per accettare la rilocazione dell'utente.
 
-Il processo utente di trasferimento di Lync Server 2013 è effettivamente una modifica a un attributo dell'oggetto account utente oltre a un aggiornamento di record nel database SQL RTC.
+Il processo utente di spostamento di Lync Server 2013 è in effetti una modifica a un attributo dell'oggetto account utente oltre a un aggiornamento dei record sul database SQL RTC.
 
-Per il ripristino dei dati è possibile attenersi a due procedure.
+Questi dati possono essere ripristinati mediante i due processi seguenti:
 
-  - Il database RTC può essere ripristinato dal dispositivo di dump del backup originale da SQL Server di produzione usando il processo di ripristino standard di SQL Server oppure usando un'utilità di backup/ripristino di terze parti.
+  - Il database RTC può essere ripristinato dal dispositivo di dump del backup originale da SQL Server di produzione utilizzando il processo di ripristino di SQL Server standard oppure utilizzando un'utilità di backup/ripristino di terze parti.
 
-  - I dati di contatto degli utenti possono essere ripristinati con l'utility DBIMPEXP.exe, utilizzando il file XML generato dall'esportazione di SQL Server di produzione.
+  - I dati dei contatti utente possono essere ripristinati con l'utilità DBIMPEXP. exe utilizzando il file XML creato dall'esportazione SQL Server di produzione.
 
-Dopo il ripristino dei dati, gli utenti possono connettersi efficacemente al pool di ripristino di emergenza Lync Server 2013 e operare come di consueto.
+Dopo aver ripristinato i dati, gli utenti possono connettersi efficacemente al pool di ripristino di emergenza Lync Server 2013 e funzionare come di consueto.
 
-Per consentire agli utenti di connettersi al pool di ripristino di emergenza Lync Server 2013, sarà necessaria una modifica del record DNS.
+Per consentire agli utenti di connettersi al pool di ripristino di emergenza Lync Server 2013, sarà necessaria una modifica di record DNS.
 
-I client utilizzano la configurazione automatica e i record SRV DNS di cui viene fatto riferimento al pool di produzione Lync Server 2013:
+Il pool di produzione Lync Server 2013 verrà referenziato dai client che utilizzano la configurazione automatica e i record DNS SRV di:
 
   - SRV: \_SIP. \_TLS. \<domain\> /CNAME: SIP. \<dominio\>
 
-  - CNAME: SIP. \<dominio\> /CVC-pool-1. \<dominio\>
+  - CNAME: SIP. \</CVC-pool-1.\> di dominio \<dominio\>
 
-Per agevolare il failover, il record CNAME deve essere aggiornato in modo che faccia riferimento all'FQDN DROCSPool:
+Per semplificare il failover, è necessario che il record CNAME sia aggiornato per fare riferimento al nome di dominio completo di DROCSPool:
 
-  - CNAME: SIP. \<dominio\> /DROCSPool. \<dominio\>
+  - CNAME: SIP. \</DROCSPool.\> di dominio \<dominio\>
 
   - SIP. \<dominio\>
 
@@ -102,7 +102,7 @@ Per agevolare il failover, il record CNAME deve essere aggiornato in modo che fa
 
 
 > [!IMPORTANT]  
-> Per procedure dettagliate per l'amministrazione e la gestione, vedere <A href="lync-server-2013-backing-up-and-restoring-lync-server.md">backup e ripristino di Lync Server 2013</A>.
+> Per le procedure dettagliate per l'amministrazione e la gestione, vedere <A href="lync-server-2013-backing-up-and-restoring-lync-server.md">backup e ripristino di Lync Server 2013</A>.
 
 
 
@@ -116,7 +116,7 @@ Per agevolare il failover, il record CNAME deve essere aggiornato in modo che fa
 
 
 [Pianificazione per la disponibilità elevata e il ripristino di emergenza in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md)  
-[Cmdlet di backup e disponibilità elevata in Lync Server 2013](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)  
+[Cmdlet per backup e disponibilità elevata in Lync Server 2013](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)  
 
 
 [Import-CsConfiguration](https://docs.microsoft.com/powershell/module/skype/Import-CsConfiguration)  

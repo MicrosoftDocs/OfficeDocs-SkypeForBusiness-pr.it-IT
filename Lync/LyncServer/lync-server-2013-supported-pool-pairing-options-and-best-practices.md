@@ -1,5 +1,5 @@
 ---
-title: Opzioni di associazione e procedure consigliate per il raggruppamento supportate in Lync Server 2013
+title: Opzioni di abbinamento e procedure consigliate per il pool di Lync Server 2013 supportate
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183478
 ms.date: 03/09/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9090fefba4b80f14382b9b43b5e9ced7cb36b2e0
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 963f1532ca7a1aa5402a54936909a22727ab9716
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764332"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006844"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="supported-pool-pairing-options-and-best-practices-for-lync-server-2013"></a>Opzioni di associazione e procedure consigliate per la combinazione di pool supportate per Lync Server 2013
+# <a name="supported-pool-pairing-options-and-best-practices-for-lync-server-2013"></a>Opzioni di abbinamento del pool supportate e procedure consigliate per Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41764332"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2017-03-09_
+_**Ultimo argomento modificato:** 2017-03-09_
 
-Non esiste alcuna restrizione sulla distanza tra due centri dati che includono i pool Front-End associati tra loro. Ti consigliamo di usare due centri dati nella stessa area geografica mondiale, con collegamenti ad alta velocità tra di essi. È preferibile che i due centri dati siano abbastanza separati per evitare che un singolo disastro colpisca contemporaneamente.
+La distanza tra due data center che devono contenere pool Front End abbinati tra loro può essere illimitata. Si consiglia di utilizzare due data center situati nella stessa area internazionale con collegamenti ad alta velocità. La situazione ottimale prevede che i due data center siano sufficientemente distanti per evitare che un'emergenza interessi entrambi contemporaneamente.
 
-È possibile avere due centri dati in tutte le aree del mondo, ma potrebbe causare una perdita di dati più elevata a causa della latenza nella replicazione dei dati.
+L'implementazione di due data center in aree internazionali diverse è possibile, ma può causare una perdita di dati più elevata a causa della latenza nella replica dei dati.
 
-Quando si pianificano i pool da associare, è necessario ricordare che sono supportate solo le associazioni seguenti:
+Quando si pianificano i pool da associare, è necessario tenere presente che sono supportate solo le associazioni seguenti:
 
-  - I pool Enterprise Edition possono essere accoppiati solo con altri pool di Enterprise Edition. Allo stesso modo, i pool Standard Edition possono essere abbinati solo agli altri pool di Standard Edition.
+  - I pool Enterprise Edition possono essere abbinati solo ad altri pool Enterprise Edition. Analogamente, i pool Standard Edition sono abbinabili solo ad altri pool Standard Edition.
 
-  - I pool fisici possono essere accoppiati solo con altri pool fisici. Allo stesso modo, i pool virtuali possono essere abbinati solo ad altri pool virtuali.
+  - I pool fisici possono essere abbinati solo ad altri pool fisici. Analogamente, i pool virtuali sono abbinabili solo ad altri pool virtuali.
 
-  - I pool combinati devono eseguire lo stesso sistema operativo.
+  - I pool associati insieme devono eseguire lo stesso sistema operativo.
 
-Né il generatore di topologie né la convalida della topologia impediscono l'associazione di due pool in modo da non seguire questi suggerimenti. Ad esempio, generatore di topologie consente di associare un pool Enterprise Edition a un pool di Standard Edition. Tuttavia, questi tipi di associazione non sono supportati.
+È possibile abbinare due pool in un modo diverso da quanto consigliato sia nel Generatore di topologie sia durante la convalida della topologia. Il Generatore di topologie, ad esempio, consente di abbinare un pool Enterprise Edition a un pool Standard Edition. Tuttavia, questi tipi di abbinamenti non sono supportati.
 
-Ogni pool in una coppia deve avere la capacità di servire tutti gli utenti da entrambi i pool in caso di emergenza.
+Ogni pool di una coppia deve essere in grado di servire tutti gli utenti di entrambi i pool in caso di emergenza.
 
-Se si abbinano pool Enterprise Edition, è anche possibile implementare una disponibilità elevata nei server back-end, ma per le coppie di pool standard solo le misure di ripristino di emergenza sono disponibili.
+Se si abbinano pool Enterprise Edition, è anche possibile implementare la disponibilità elevata nei server Back End, ma per coppie di pool Standard Edition sono disponibili solo le misure per il ripristino di emergenza.
 
 </div>
 

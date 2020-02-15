@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: visualizzare le regole dei criteri per la versione client'
+title: 'Lync Server 2013: visualizzare le regole dei criteri di versione client'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 50675350
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b64dce1b74be8ed1aed0c5d1f515910341f57c52
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 480e3002c6c6a22564c23bf4225d49cbd044f3c1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757470"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007175"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41757470"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Un criterio di versione client è costituito da un set di regole dei criteri di versione client. Queste regole definiscono le azioni che devono essere eseguite quando gli utenti tentano di accedere con client e versioni client specifici. È possibile visualizzare le regole dei criteri di versione client dal pannello di controllo di Lync Server 2013 o Lync Server 2013 Management Shell.
+Un criterio di versione client è costituito da un insieme di regole dei criteri di versione client. Queste regole definiscono le azioni da eseguire quando gli utenti tentano di accedere con client e versioni client specifici. È possibile visualizzare le regole dei criteri di versione client dal pannello di controllo di Lync Server 2013 o Lync Server 2013 Management Shell.
 
 <div>
 
-## <a name="to-view-client-version-policy-rules-by-using-lync-server-control-panel"></a>Per visualizzare le regole dei criteri di versione client tramite il pannello di controllo di Lync Server
+## <a name="to-view-client-version-policy-rules-by-using-lync-server-control-panel"></a>Per visualizzare le regole dei criteri di versione client utilizzando il pannello di controllo di Lync Server
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **client**e quindi sul pulsante di spostamento dei **criteri di versione client** .
+3.  Sulla barra di spostamento sinistra fare clic su **client**e quindi sul pulsante di spostamento **criteri versione client** .
 
-4.  Nella pagina **criteri di versione client** fare doppio clic su un criterio di versione client che si vuole visualizzare.
+4.  Nella pagina **criteri versione client** fare doppio clic su un criterio di versione client che si desidera visualizzare.
 
-5.  Le regole vengono visualizzate nella pagina **modifica criteri di versione client** . Per visualizzare i dettagli di una regola, selezionare la regola e quindi fare clic su **Mostra dettagli**.
+5.  Le regole vengono visualizzate nella pagina **modifica criteri versione client** . Per visualizzare i dettagli di una regola, selezionare la regola, quindi fare clic su **Mostra dettagli**.
 
 </div>
 
 <div>
 
-## <a name="viewing-client-version-policy-rules-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle regole dei criteri di versione client con i cmdlet di Windows PowerShell
+## <a name="viewing-client-version-policy-rules-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle regole dei criteri di versione client tramite i cmdlet di Windows PowerShell
 
-È possibile visualizzare le regole dei criteri di versione client tramite Lync Server Management Shell e il cmdlet **Get-CsClientVersionPolicyRule** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile visualizzare le regole dei criteri di versione client utilizzando Lync Server Management Shell e il cmdlet **Get-CsClientVersionPolicyRule** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
@@ -69,7 +69,7 @@ Un criterio di versione client è costituito da un set di regole dei criteri di 
     
         Get-CsClientVersionPolicyRule
     
-    Questo restituirà informazioni simili a quelle per ogni regola configurata:
+    Che restituirà informazioni simili a queste per ogni regola configurata:
     
         Identity          : Global/2336c611-a243-4c5d-994b-eea8a524d0e4
         Priority          : 0
@@ -88,7 +88,7 @@ Un criterio di versione client è costituito da un set di regole dei criteri di 
 
 </div>
 
-Per informazioni dettagliate, vedere l'argomento della Guida relativo al cmdlet [Get-CsClientVersionPolicyRule](https://docs.microsoft.com/powershell/module/skype/Get-CsClientVersionPolicyRule) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsClientVersionPolicyRule](https://docs.microsoft.com/powershell/module/skype/Get-CsClientVersionPolicyRule) .
 
 </div>
 

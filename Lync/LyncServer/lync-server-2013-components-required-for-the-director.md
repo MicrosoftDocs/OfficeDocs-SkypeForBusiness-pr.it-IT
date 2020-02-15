@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Componenti richiesti per il server Director'
+title: 'Lync Server 2013: componenti necessari per il Director'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183502
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 12db97a72a9882964727edd3084e0bd598527358
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e4409632afc61aea4606864e7dd230ad4d295935
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757090"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007946"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="components-required-for-the-director-in-lync-server-2013"></a>Componenti richiesti per il server Director in Lync Server 2013
+# <a name="components-required-for-the-director-in-lync-server-2013"></a>Componenti necessari per il Director in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41757090"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-08_
+_**Ultimo argomento modificato:** 2012-09-08_
 
-L'unico componente necessario per creare e configurare un amministratore consiste nel distribuire il ruolo del server Director. A tale scopo, USA generatore di topologia e Definisci un singolo pool di computer o un pool di computer multipli nel nodo del pool di Director. Dopo avere definito il pool di Director o Director, eseguire la distribuzione guidata di Lync Server nel computer che sarà un amministratore. Nel caso di un pool di Director, eseguire la distribuzione guidata di Lync Server in ogni server che sarà membro del pool.
+L'unico componente necessario per la creazione e la configurazione di un Director è la distribuzione del ruolo server Director. A tale scopo, utilizzare Generatore di topologie e definire un pool di computer singolo o un pool di più computer nel nodo Pool di server Director. Dopo aver definito il Director o il pool di Director, eseguire la distribuzione guidata di Lync Server nel computer che sarà un Director. Nel caso di un pool di server Director, è possibile eseguire la distribuzione guidata di Lync su ogni server che sarà membro del pool.
 
 <div>
 
-## <a name="topologies"></a>Tecnologie
+## <a name="topologies"></a>Topologie
 
 È possibile implementare un singolo server Director o un pool di Director. Il Director è sempre un server o un pool separato, non collocato con qualsiasi altro ruolo del server in Lync Server 2013.
 
@@ -49,21 +49,21 @@ L'unico componente necessario per creare e configurare un amministratore consist
 
 
 > [!NOTE]  
-> Se non si distribuiscono gli amministratori, il server front-end o il pool Front-End assumerà il ruolo di Director.
+> Se non si distribuiscono i direttori, il front end server o il pool Front End assumerà il ruolo di amministratore.
 
 
 
 </div>
 
-Un pool di amministratori deve essere carico bilanciato. È possibile eseguire una delle operazioni seguenti:
+Un pool di Director deve essere bilanciato con bilanciamento del carico. È possibile effettuare una delle operazioni seguenti:
 
-  - Creare una topologia che usa un dispositivo di bilanciamento del carico hardware per i servizi Web e il bilanciamento del carico DNS (Domain Name System) per gli altri tipi di traffico.
+  - Creare una topologia che usa un servizio di bilanciamento del carico hardware per i servizi Web e un bilanciamento del carico DNS (Domain Name System) per le altre tipologie di traffico.
     
-    [Pool di server Director con scalabilità implementata - bilanciamento del carico DNS e bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-scaled-director-pool-dns-load-balancing-and-hardware-load-balancer.md)
+    [Pool di server Director con scalabilità orizzontale-bilanciamento del carico DNS e bilanciamento del carico hardware in Lync 2013](lync-server-2013-scaled-director-pool-dns-load-balancing-and-hardware-load-balancer.md)
 
-  - Creare una topologia che usa un bilanciamento del carico hardware per il bilanciamento del carico necessario per il pool di Director.
+  - Creare una topologia che utilizza un dispositivo di bilanciamento del carico hardware per il bilanciamento del carico necessario per il pool di server Director.
     
-    [Pool di server Director con scalabilità implementata, servizio di bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-scaled-director-pool-hardware-load-balancer.md)
+    [Pool di server Director con scalabilità orizzontale-bilanciamento del carico hardware in Lync 2013](lync-server-2013-scaled-director-pool-hardware-load-balancer.md)
 
 </div>
 

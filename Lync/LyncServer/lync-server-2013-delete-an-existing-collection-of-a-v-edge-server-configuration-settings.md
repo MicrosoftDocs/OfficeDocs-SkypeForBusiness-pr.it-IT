@@ -1,5 +1,5 @@
 ---
-title: Eliminare una raccolta esistente di impostazioni di configurazione di un/V Edge Server
+title: Eliminare una raccolta esistente di impostazioni di configurazione di A/V Edge Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733673
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7cc085cd6ac39c4712647795c5baf06eaa68f77a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 901562812e7847a6c205f042922dca6383ad6254
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737546"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007074"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="delete-an-existing-collection-of-av-edge-server-configuration-settings-in-lync-server-2013"></a>Eliminare una raccolta esistente di impostazioni di configurazione di un/V Edge Server in Lync Server 2013
+# <a name="delete-an-existing-collection-of-av-edge-server-configuration-settings-in-lync-server-2013"></a>Eliminare una raccolta esistente di impostazioni di configurazione di A/V Edge Server in Lync Server 2013
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41737546"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Il servizio A/V Edge consente agli utenti interni (utenti che hanno effettuato l'accesso alla rete organizzativa) di condividere audio e video con utenti esterni (utenti che non hanno eseguito l'accesso alla rete organizzativa). Il servizio A/V Edge viene gestito principalmente con le impostazioni di configurazione di Edge A/V, che possono essere configurate nell'ambito del sito o nell'ambito del servizio, ovvero possono essere configurate per un singolo server A/V Edge.
+Il servizio A/V Edge consente agli utenti interni, ovvero gli utenti connessi alla rete dell'organizzazione, di condividere audio e video con gli utenti esterni, ovvero gli utenti non connessi alla rete dell'organizzazione. Il servizio A/V Edge viene gestito principalmente tramite le impostazioni di configurazione di A/V Edge, configurabili nell'ambito del sito o nell'ambito del servizio, ovvero per un singolo server A/V Edge.
 
-Quando si installa Lync Server, viene creata una raccolta globale di impostazioni di configurazione di Edge A/V. Questa raccolta globale non può essere eliminata. Puoi tuttavia usare Windows PowerShell e il cmdlet Remove-CsAVEdgeConfiguration per "reimpostare" la raccolta globale; Questo significa semplicemente che tutti i valori di proprietà nella raccolta globale verranno reimpostati sul valore predefinito. Se ad esempio è stata impostata la proprietà MaxTokenLifetime per 16 ore, tale proprietà verrà reimpostata sul valore predefinito di 8 ore.
+Quando si installa Lync Server, viene creata una raccolta globale delle impostazioni di configurazione di A/V Edge. Questa raccolta globale non può essere eliminata. Tuttavia, è possibile utilizzare Windows PowerShell e il cmdlet Remove-CsAVEdgeConfiguration per "reimpostare" la raccolta globale. Ciò significa semplicemente che tutti i valori della proprietà nella raccolta globale verranno reimpostati sul valore predefinito. Se la proprietà MaxTokenLifetime è impostata su 16 ore, ad esempio, con l'esecuzione del cmdlet verrebbe ripristinato il valore predefinito di 8 ore.
 
-Tuttavia, le raccolte di impostazioni personalizzate create nell'ambito del sito o nell'ambito del servizio possono essere eliminate usando il cmdlet Remove-CsAVEdgeConfiguration. Se si eliminano le impostazioni dei siti, i server a/V Edge in tale sito verranno gestiti dalle impostazioni globali. Se si eliminano le impostazioni per l'ambito del servizio, tale server verrà gestito dalle impostazioni del sito, se esistenti o dalle impostazioni globali, se non sono disponibili impostazioni del sito.
+È comunque possibile utilizzare il cmdlet Remove-CsAVEdgeConfiguration per eliminare le raccolte di impostazioni personalizzate create con ambito sito o con ambito servizio. Se si eliminano le impostazioni a livello di sito, i server A/V Edge in tale sito verranno gestiti dalle impostazioni globali. Se si eliminano le impostazioni con ambito servizio, il server verrà gestito dalle impostazioni a livello sito, se esistenti, o dalle impostazioni globali se non sono disponibili impostazioni a livello di sito.
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsAVEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg398786(v=OCS.15)) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsAVEdgeConfiguration](https://technet.microsoft.com/library/Gg398786(v=OCS.15)) .
 
 <div>
 
 ## <a name="to-reset-the-global-collection"></a>Per reimpostare la raccolta globale
 
-  - Il comando seguente reimposta la raccolta globale delle impostazioni di configurazione di un/V Edge:
+  - Il comando seguente consente di reimpostare la raccolta globale delle impostazioni di configurazione di A/V Edge:
     
         Remove-CsAVEdgeConfiguration -Identity "global"
 
@@ -59,7 +59,7 @@ Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Remov
 
 ## <a name="to-remove-a-collection-from-the-site-scope"></a>Per rimuovere una raccolta dall'ambito del sito
 
-  - Questo comando rimuove le impostazioni di configurazione del bordo A/V applicate al sito Redmond:
+  - Questo comando consente di rimuovere le impostazioni di configurazione di A/V Edge applicate al sito Redmond:
     
         Remove-CsAVEdgeConfiguration -Identity "site:Redmond"
 
@@ -69,7 +69,7 @@ Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Remov
 
 ## <a name="to-remove-a-collection-from-the-service-scope"></a>Per rimuovere una raccolta dall'ambito del servizio
 
-  - Questo comando rimuove le impostazioni applicate all'atl-edge-001.litwareinc.com A/V Edge Server:
+  - Questo comando consente di rimuovere le impostazioni applicate al server A/V Edge atl-edge-001.litwareinc.com:
     
         Remove-CsAVEdgeConfiguration -Identity "service:EdgeServer:atl-edge-001.litwareinc.com"
 
@@ -80,12 +80,12 @@ Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Remov
 ## <a name="see-also"></a>Vedere anche
 
 
-[Restituire le informazioni di configurazione A/V Edge Server in Lync Server 2013](lync-server-2013-return-a-v-edge-server-configuration-information.md)  
-[Creare o modificare una raccolta di impostazioni di configurazione di un/V Edge Server in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-a-v-edge-server-configuration-settings.md)  
+[Restituire le informazioni di configurazione di A/V Edge Server in Lync Server 2013](lync-server-2013-return-a-v-edge-server-configuration-information.md)  
+[Creare o modificare una raccolta di impostazioni di configurazione di A/V Edge Server in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-a-v-edge-server-configuration-settings.md)  
 
 
-[Audio/video (A/V) Edge Server in Lync Server 2013](lync-server-2013-audio-video-a-v-edge-servers.md)  
-[Remove-CsAVEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg398786(v=OCS.15))  
+[Audio/video (A/V) server perimetrali in Lync Server 2013](lync-server-2013-audio-video-a-v-edge-servers.md)  
+[Remove-CsAVEdgeConfiguration](https://technet.microsoft.com/library/Gg398786(v=OCS.15))  
   
 
 </div>

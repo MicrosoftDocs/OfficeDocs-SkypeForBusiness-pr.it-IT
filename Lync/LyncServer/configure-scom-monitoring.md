@@ -13,16 +13,16 @@ ms:contentKeyID: 49733624
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7904edf9723dacdd28f69a75bec17cb5db3c2061
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8266097035a284c966ad62672515cb2a64444339
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728141"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006642"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -36,29 +36,29 @@ ms.locfileid: "41728141"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-04_
+_**Ultimo argomento modificato:** 2012-10-04_
 
-Dopo aver eseguito la migrazione a Microsoft Lync Server 2013, è necessario completare alcune attività per configurare Lync Server 2013 per l'utilizzo con System Center Operations Manager.
+Dopo aver eseguito la migrazione a Microsoft Lync Server 2013, è necessario completare alcune attività per configurare Lync Server 2013 in modo che funzioni con System Center Operations Manager.
 
   - Applicare gli aggiornamenti di Lync Server 2010 a un server scelto per gestire la logica di individuazione centrale.
 
-  - Aggiornare la chiave del registro di sistema del server di individuazione centrale.
+  - Aggiornare la chiave del Registro di sistema del server candidato all'individuazione centrale.
 
-  - Configurare il server di gestione di System Center Operations Manager principale per eseguire l'override del nodo di individuazione centrale candidata.
+  - Configurare il server di gestione di System Center Operations Manager principale per eseguire l'override del nodo di individuazione centrale candidato.
 
-Di seguito sono riportate le istruzioni per l'esecuzione di ciascuna di queste attività.
+Di seguito sono riportate le istruzioni per l'esecuzione di ognuna di tali attività.
 
 **Applicare gli aggiornamenti di Lync Server 2010 a un server scelto per gestire la logica di individuazione centrale.**
 
-1.  Eleggere un server in cui sono installati i file dell'agente di System Center Operations Manager ed è configurato come nodo di individuazione candidata.
+1.  Scegliere un server in cui siano installati i file dell'agente System Center Operations Manager e che sia configurato come nodo di individuazione candidato.
 
-2.  Applicare gli aggiornamenti di Lync Server 2010 al server. Vedere l'argomento [applicare gli aggiornamenti di Lync Server 2010](apply-lync-server-2010-updates.md).
+2.  Applicare gli aggiornamenti di Lync Server 2010 a questo server. Per ulteriori informazioni, vedere l'argomento [Apply Lync Server 2010 Updates](apply-lync-server-2010-updates.md).
 
-**Aggiornare la chiave del registro di sistema del server di individuazione centrale.**
+**Aggiornare la chiave del Registro di sistema del server candidato all'individuazione centrale.**
 
 1.  Nel server scelto per gestire la logica di individuazione centrale aprire una finestra di comando di Windows PowerShell.
 
-2.  Nella riga di comando digitare quanto segue:
+2.  Digitare quanto segue alla riga di comando:
     
        ```PowerShell
         New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health"
@@ -72,22 +72,22 @@ Di seguito sono riportate le istruzioni per l'esecuzione di ciascuna di queste a
     
 
     > [!NOTE]  
-    > Ogni volta che si modifica il registro di sistema, potrebbe verificarsi un errore che indica che il comando non è riuscito se la chiave del registro di sistema esiste già. Se si verifica questo problema, è possibile ignorare in modo sicuro l'errore.
+    > Quando si modifica il Registro di sistema, è possibile che si verifichi un errore dovuto alla mancata riuscita del comando se la chiave del Registro di sistema già esiste. In tal caso, è possibile ignorare l'errore.
 
     
     </div>
 
-**Configurare il server di gestione di System Center Operations Manager principale per eseguire l'override del nodo di Watcher individuazione centrale candidato.**
+**Configurare il server di gestione di System Center Operations Manager principale per sostituire il nodo Watcher di individuazione centrale candidato.**
 
-1.  In un computer in cui è installata la console di System Center Operations Manager, espandere **oggetti Management Pack** e quindi selezionare individuazioni **oggetti**.
+1.  In un computer in cui è stata installata la console System Center Operations Manager espandere **Oggetti Management Pack** e selezionare **Individuazioni oggetti**.
 
-2.  Fare clic su **Cambia ambito.** ..
+2.  Fare clic su **Cambia ambito**
 
-3.  Nella pagina **oggetti Management Pack di ambito** selezionare **ls Discovery candidate**.
+3.  Nella pagina **Crea ambito oggetti Management Pack** selezionare **Candidato individuazione LS**.
 
-4.  Eseguire l'override del **valore effettivo del candidato di individuazione LS** per il nome del server candidato eletto nella procedura precedente.
+4.  Sostituire il **Valore effettivo candidato individuazione LS** con il nome del server candidato scelto nella procedura precedente.
 
-Infine, per finalizzare le modifiche, riavviare il servizio integrità nel server di gestione radice di System Center Operations Manager.
+Infine, per finalizzare le modifiche, riavviare il servizio di integrità nel server di gestione radice di System Center Operations Manager.
 
 </div>
 

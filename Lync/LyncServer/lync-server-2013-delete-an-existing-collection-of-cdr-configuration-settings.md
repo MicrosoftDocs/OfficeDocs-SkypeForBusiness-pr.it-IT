@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: eliminare una raccolta esistente di impostazioni di configurazione CDR'
+title: 'Lync Server 2013: eliminare una raccolta esistente di impostazioni di configurazione di registrazione dettagli chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733726
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c50df73d59c588094693009ab4c84f2a7809ba5f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 82170cf695136694588721a0b4e7e63c5c7dd618
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737436"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007064"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="delete-an-existing-collection-of-cdr-configuration-settings-in-lync-server-2013"></a>Eliminare una raccolta esistente di impostazioni di configurazione CDR in Lync Server 2013
+# <a name="delete-an-existing-collection-of-cdr-configuration-settings-in-lync-server-2013"></a>Eliminare una raccolta esistente di impostazioni di configurazione di registrazione dettagli chiamata in Lync Server 2013
 
 </div>
 
@@ -35,41 +35,41 @@ ms.locfileid: "41737436"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-La registrazione dei dettagli delle chiamate (CDR) consente di tenere traccia dell'uso di elementi come sessioni di messaggistica istantanea peer-to-peer, chiamate telefoniche VoIP (Voice over Internet Protocol) e chiamate in conferenza. Questo dati di utilizzo include informazioni su chi ha chiamato chi, quando ha chiamato, e per quanto tempo ha parlato.
+La registrazione dettagli chiamata consente di tenere traccia dell'utilizzo delle sessioni di messaggistica istantanea peer-to-peer, delle chiamate telefoniche VoIP (Voice over Internet Protocol) e delle conferenze telefoniche. Questi dati sull'utilizzo includono informazioni sui chiamanti, sugli utenti chiamati, sulla data della chiamata e sulla durata della conversazione.
 
-Quando si installa Microsoft Lync Server 2013, viene creata una singola raccolta globale di impostazioni di configurazione CDR. Gli amministratori hanno anche la possibilità di creare raccolte di impostazioni personalizzate che possono essere applicate a singoli siti. In base alla progettazione, le impostazioni configurate nell'ambito del sito hanno la precedenza sulle impostazioni configurate nell'ambito globale. Se si eliminano le impostazioni con ambito sito, il CDR verrà gestito in tale sito usando le impostazioni globali.
+Quando si installa Microsoft Lync Server 2013, viene creata per l'utente una singola raccolta globale di impostazioni di configurazione di registrazione dettagli chiamata. Gli amministratori hanno inoltre la possibilità di creare raccolte di impostazioni personalizzate da applicare ai siti individuali. Le impostazioni configurate nell'ambito del sito hanno precedenza su quelle configurate nell'ambito globale. Se si eliminano le impostazioni con ambito a livello di sito, la Registrazione dettagli chiamata viene gestita nel sito in base alle impostazioni globali.
 
-Tieni presente che puoi anche "eliminare" le impostazioni globali. Tuttavia, le impostazioni globali non verranno effettivamente rimosse. Tutte le proprietà della raccolta verranno invece reimpostate sui rispettivi valori predefiniti. Ad esempio, per impostazione predefinita, l'eliminazione è abilitata in una raccolta di impostazioni di configurazione CDR. Supponiamo che tu modifichi la raccolta globale in modo che l'eliminazione sia disabilitata. Se in seguito si eliminano le impostazioni globali, tutte le proprietà verranno reimpostate sui valori predefiniti. In questo caso, ciò significa che l'eliminazione sarà ancora una volta abilitata.
+Tenere presente che è anche possibile "eliminare" le impostazioni globali. Tuttavia, le impostazioni globali non vengono effettivamente rimosse. Invece, tutte le proprietà nella raccolta vengono reimpostate sui valori predefiniti. Ad esempio, per impostazione predefinita la rimozione è abilitata in una raccolta delle impostazioni di configurazione di Registrazione dettagli chiamata. Supponiamo di modificare la raccolta globale in modo da disabilitare la rimozione. Se successivamente si eliminano le impostazioni globali, tutte le proprietà verranno reimpostate sui valori predefiniti. In questo caso, ciò significa che l'eliminazione verrà riabilitata.
 
-È possibile rimuovere le impostazioni di configurazione CDR usando il pannello di controllo di Lync Server o il cmdlet [Remove-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsCdrConfiguration) .
+È possibile rimuovere le impostazioni di configurazione di registrazione dettagli chiamata utilizzando il pannello di controllo di Lync Server o il cmdlet [Remove-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsCdrConfiguration) .
 
 <div>
 
-## <a name="to-remove-cdr-configuration-settings-with-lync-server-control-panel"></a>Per rimuovere le impostazioni di configurazione CDR con il pannello di controllo di Lync Server
+## <a name="to-remove-cdr-configuration-settings-with-lync-server-control-panel"></a>Per rimuovere le impostazioni di configurazione di CDR con il pannello di controllo di Lync Server
 
-1.  Nel pannello di controllo di Lync Server fare clic su **monitoraggio e archiviazione**.
+1.  Nel pannello di controllo di Lync Server, fare clic su **monitoraggio e archiviazione**.
 
-2.  Nella scheda **registrazione dettagli chiamata** selezionare la raccolta (o le raccolte) delle impostazioni CDR da rimuovere. Per selezionare più raccolte, fare clic sulla prima raccolta, tenere premuto il tasto CTRL e fare clic su altre raccolte.
+2.  Nella scheda **Registrazione dettagli chiamata** selezionare la raccolta (o le raccolte) delle impostazioni di Registrazione dettagli chiamata da rimuovere. Per selezionare più raccolte, fare clic sulla prima raccolta, tenere premuto il tasto CTRL e fare clic sulle raccolte aggiuntive.
 
-3.  Fare clic su **modifica**e quindi su **Elimina**.
+3.  Fare clic su **Modifica** e quindi scegliere **Elimina**.
 
-4.  Nella finestra di dialogo Pannello di controllo di Lync Server fare clic su **OK**.
+4.  Nella finestra di dialogo del pannello di controllo di Lync Server fare clic su **OK**.
 
 </div>
 
 <div>
 
-## <a name="removing-cdr-configuration-settings-by-using-windows-powershell-cmdlets"></a>Rimozione delle impostazioni di configurazione CDR con i cmdlet di Windows PowerShell
+## <a name="removing-cdr-configuration-settings-by-using-windows-powershell-cmdlets"></a>Rimozione delle impostazioni di configurazione di registrazione dettagli chiamata tramite i cmdlet di Windows PowerShell
 
-Puoi eliminare le impostazioni di configurazione della registrazione dei dettagli delle chiamate usando Windows PowerShell e il cmdlet **Remove-CsCdrConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile eliminare le impostazioni di configurazione della registrazione dettagli chiamata utilizzando Windows PowerShell e il cmdlet **Remove-CsCdrConfiguration** . È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-remove-a-specified-collection-of-cdr-configuration-settings"></a>Per rimuovere una raccolta specificata di impostazioni di configurazione CDR
+## <a name="to-remove-a-specified-collection-of-cdr-configuration-settings"></a>Per rimuovere una raccolta specificata delle impostazioni di configurazione di Registrazione dettagli chiamata
 
-  - Questo comando rimuove le impostazioni di configurazione CDR applicate al sito Redmond:
+  - Questo comando rimuove le impostazioni di configurazione di Registrazione dettagli chiamata applicate al sito Redmond:
     
         Remove-CsCdrConfiguration -Identity "site:Redmond"
 
@@ -77,9 +77,9 @@ Puoi eliminare le impostazioni di configurazione della registrazione dei dettagl
 
 <div>
 
-## <a name="to-remove-all-the-cdr-configuration-settings-applied-to-the-site-scope"></a>Per rimuovere tutte le impostazioni di configurazione CDR applicate all'ambito del sito
+## <a name="to-remove-all-the-cdr-configuration-settings-applied-to-the-site-scope"></a>Per rimuovere tutte le impostazioni di configurazione di registrazione dettagli chiamata applicate all'ambito del sito
 
-  - Questo comando rimuove tutte le impostazioni di configurazione CDR applicate all'ambito del sito:
+  - Questo comando rimuove tutte le impostazioni di configurazione di Registrazione dettagli chiamata applicate all'ambito del sito:
     
         Get-CsCdrConfiguration -Filter "site:*" | Remove-CsCdrConfiguration
 
@@ -87,15 +87,15 @@ Puoi eliminare le impostazioni di configurazione della registrazione dei dettagl
 
 <div>
 
-## <a name="to-remove-all-the-cdr-configuration-settings-that-disable-call-detail-recording"></a>Per rimuovere tutte le impostazioni di configurazione CDR che disabilitano la registrazione dei dettagli delle chiamate
+## <a name="to-remove-all-the-cdr-configuration-settings-that-disable-call-detail-recording"></a>Per rimuovere tutte le impostazioni di configurazione della Registrazione dettagli chiamata che disabilitano la registrazione dei dettagli:
 
-  - Questo comando rimuove tutte le impostazioni di configurazione CDR in cui la registrazione dei dettagli delle chiamate è stata disattivata:
+  - Questo comando rimuove tutte le impostazioni di configurazione della Registrazione dettagli chiamata per cui la registrazione dei dettagli è stata disabilitata:
     
         Get-CsCdrConfiguration | Where-Object {$_.EnableCDR -eq $False} | Remove-CsCdrConfiguration
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsCdrConfiguration) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsCdrConfiguration) .
 
 </div>
 

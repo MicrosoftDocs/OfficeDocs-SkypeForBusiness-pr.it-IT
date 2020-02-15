@@ -12,16 +12,16 @@ ms:contentKeyID: 48184294
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2b4cc704a77f824cbf7b2ec8ab4920c25454f3c2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 703362f34c367d301e7d47e1bdc65f16a497ce88
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744776"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007675"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41744776"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-20_
+_**Ultimo argomento modificato:** 2012-06-20_
 
-Se è stata installata la versione di valutazione di Microsoft Lync Server 2013, sarà necessario aggiornare l'installazione di una copia concessa in licenza del software; il motivo è che la versione di valutazione scade 180 giorni dopo l'installazione. Tuttavia, non dovrai disinstallare completamente la versione di valutazione e quindi installare la versione con licenza. Dopo aver ottenuto un codice di licenza valido, è invece possibile aggiornare la versione di valutazione di Lync Server 2013 eseguendo la procedura seguente in tutti i computer che agiscono come server front-end di Lync Server, Director o Edge Server. Si noti che non è necessario aggiornare i computer che eseguono altri ruoli del server, ad esempio un server di monitoraggio o un server di archiviazione.
+Se è stata installata la versione di valutazione di Microsoft Lync Server 2013, sarà necessario aggiornare l'installazione di una copia con licenza del software. Ciò è dovuto al fatto che la versione di valutazione scade 180 giorni dopo l'installazione. Non sarà tuttavia necessario disinstallare completamente la versione di valutazione e quindi installare la versione con licenza. Al contrario, dopo aver ottenuto un codice di licenza valido, è possibile aggiornare la versione di valutazione di Lync Server 2013 eseguendo la procedura seguente in ogni computer che funge da server front-end di Lync Server, Director o server perimetrale. Si noti che non è necessario aggiornare i computer che svolgono altri ruoli del server, ad esempio Monitoring Server o server di archiviazione.
 
 <div>
 
@@ -49,31 +49,31 @@ Per aggiornare un computer dalla versione di valutazione di Lync Server 2013 all
 
 1.  Accedere al computer come amministratore locale.
 
-2.  Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Microsoft Lync Server 2013**e quindi su **Lync Server Management Shell**.
+2.  Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi **Lync Server Management Shell**.
 
-3.  In Lync Server Management Shell digitare il comando seguente e quindi premere INVIO:
+3.  In Lync Server Management Shell, digitare il comando seguente e quindi premere INVIO:
     
         msiexec.exe /fvomus server.msi EVALTOFULL=1 /qb
     
-    Tieni presente che potresti dover specificare il percorso completo del file server. msi. Questo file può essere trovato nella cartella Setup dei file di installazione del volume media di Lync Server.
+    Si noti che potrebbe essere necessario specificare il percorso completo del file server.msi. Questo file può essere trovato nella cartella Setup dei file di installazione del volume multimediale di Lync Server.
 
-4.  Al termine dell'esecuzione della configurazione, digitare quanto segue dal prompt dei comandi e quindi premere INVIO:
+4.  Al termine dell'esecuzione del programma di installazione, digitare il comando seguente al prompt dei comandi e quindi premere INVIO:
     
         Enable-CsComputer
 
-5.  Ripetere questa procedura in qualsiasi altro server front-end, Director o Edge Server che esegua una copia di valutazione di Lync Server. Questa procedura deve essere eseguita anche in tutti i server di succursale distribuiti tramite i file di installazione di Lync Server media.
+5.  Ripetere questa procedura in qualsiasi altro server front-end, Director o server perimetrale che esegua una copia di valutazione di Lync Server. Questa procedura deve essere eseguita anche su tutti i server di succursale distribuiti mediante i file di installazione dei supporti di Lync Server.
 
-Se non si è certi che la versione di valutazione di Lync Server sia in esecuzione in un computer specifico, è possibile verificare che eseguendo il comando seguente all'interno di Lync Server Management Shell:
+Se non si è certi che la versione di valutazione di Lync Server sia in esecuzione in un determinato computer, è possibile verificare che eseguendo il comando seguente da Lync Server Management Shell:
 
     Get-CsServerVersion
 
-Il cmdlet [Get-CsServerVersion](https://docs.microsoft.com/powershell/module/skype/Get-CsServerVersion) analizza il computer locale e riporta una delle opzioni seguenti:
+Il cmdlet [Get-CsServerVersion](https://docs.microsoft.com/powershell/module/skype/Get-CsServerVersion) analizzerà il computer locale e fornirà una delle indicazioni seguenti:
 
-  - Che il codice di licenza del volume di Lync Server è stato installato nel computer, quindi non è necessario alcun aggiornamento.
+  - Che il codice di licenza del volume di Lync Server è stato installato nel computer, il che significa che non è necessario alcun aggiornamento.
 
-  - Che il codice di licenza di valutazione di Lync Server è stato installato, quindi il computer deve essere aggiornato.
+  - Che è stato installato il codice di licenza di valutazione di Lync Server, il che significa che il computer deve essere aggiornato.
 
-  - Non è necessario alcun codice di licenza volume nel computer. L'aggiornamento dalla versione di valutazione alla versione con licenza è richiesto solo nei server front-end, nei direttori e nei server perimetrali.
+  - Non è necessario alcun codice di contratto multilicenza nel computer. L'aggiornamento dalla versione di valutazione a quella con licenza è necessaria solo nei Front End Server, nei server Director e nei server perimetrali.
 
 </div>
 

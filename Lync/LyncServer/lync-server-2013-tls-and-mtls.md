@@ -12,16 +12,16 @@ ms:contentKeyID: 59893873
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 06938cfb6c37a84de5256feb6e4b370eb36f3702
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7681b3394a640a64966e3b9c739ea085e6c0f2f9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745256"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008638"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41745256"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-11-07_
+_**Ultimo argomento modificato:** 2013-11-07_
 
-I protocolli Transport Layer Security (TLS) e Mutual Transport Layer Security (MTLS) garantiscono comunicazioni crittografate e autenticazione endpoint su Internet. Microsoft Lync Server 2013 usa questi due protocolli per creare la rete di server attendibili e per assicurarsi che tutte le comunicazioni tramite la rete siano crittografate. Tutte le comunicazioni SIP tra server si verificano su MTLS. Le comunicazioni SIP da client a server si verificano su TLS.
+Transport Layer Security (TLS) e i protocolli MTLS (Mutual Transport Layer Security) forniscono comunicazioni crittografate e autenticazione endpoint su Internet. Microsoft Lync Server 2013 utilizza questi due protocolli per creare la rete di server attendibili e garantire che tutte le comunicazioni sulla rete siano crittografate. Tutte le comunicazioni SIP tra server avvengono tramite MTLS. Le comunicazioni SIP da client a server avvengono tramite TLS.
 
-TLS consente agli utenti, tramite il loro software client, di autenticare i server di Lync Server 2013 a cui si connettono. Su una connessione TLS, il client richiede un certificato valido dal server. Per essere valido, il certificato deve essere stato emesso da una CA che sia anche considerata affidabile dal client e il nome DNS del server deve corrispondere al nome DNS sul certificato. Se il certificato è valido, il client utilizza la chiave pubblica nel certificato per crittografare le chiavi di crittografia simmetriche da utilizzare per la comunicazione, quindi solo il proprietario originale del certificato può utilizzare la propria chiave privata per decrittografare il contenuto della comunicazione. La connessione risultante è affidabile e da quel momento non viene contestata da altri server o client affidabili. In questo contesto, il Secure Sockets Layer (SSL) utilizzato con i servizi web può essere associato come basato su TLS.
+TLS consente agli utenti, tramite il software client, di autenticare i server Lync Server 2013 a cui si connettono. In una connessione TLS, il client richiede al server un certificato valido. Per essere valido, il certificato deve essere stato emesso da una CA considerata attendibile anche dal client e il nome DNS del server deve corrispondere al nome DNS nel certificato. Se il certificato è valido, il client utilizza la chiave pubblica del certificato per crittografare le chiavi di crittografia simmetrica da utilizzare nella comunicazione, in modo che solo il proprietario originale del certificato possa utilizzare la sua chiave privata per decrittografare il contenuto. La connessione risultante è considerata attendibile e, da questo punto di vista, non riceve richieste di autenticazione da altri client o server trusted. In questo contesto, SSL (Secure Sockets Layer), utilizzato con i servizi Web, può essere associato come basato su TLS.
 
-Le connessioni da server a server si basano su MTLS per l'autenticazione reciproca. Su una connessione MTLS, il server che genera un messaggio e il server che lo riceve si scambiano i certificati da una CA reciprocamente attendibile. I certificati dimostrano l'identità di ciascun server all'altro. Nelle distribuzioni di Lync Server 2013 i certificati emessi dalla CA dell'organizzazione che si trovano durante il periodo di validità e non revocati dalla CA emittente vengono considerati automaticamente validi da tutti i client e i server interni, poiché tutti i membri di un dominio Active Directory considerare attendibile la CA aziendale in tale dominio. Negli scenari federati la CA emittente deve essere considerata attendibile da entrambi i partner federati. Ogni partner può usare una CA diversa, se lo si desidera, purché tale CA sia attendibile anche per l'altro partner. Questo tipo di attendibilità è più semplice per gli Edge Server che hanno il certificato della CA radice del partner nelle rispettive autorità di certificazione radice attendibili oppure per l'uso di una CA di terze parti considerata attendibile da entrambe le entità.
+Le connessioni da server a server si basano su MTLS per l'autenticazione reciproca. In una connessione a MTLS, il server che ha creato un messaggio e il server che lo riceve ricevono i certificati di Exchange da una CA mutuamente attendibile. I certificati dimostrano l'identità di ogni server all'altro. Nelle distribuzioni di Lync Server 2013 i certificati emessi dall'autorità di certificazione dell'organizzazione che si trovano durante il periodo di validità e non revocati dall'autorità di certificazione di emissione vengono considerati automaticamente validi da tutti i client e i server interni, poiché tutti i membri di un dominio di Active Directory considerare attendibile l'autorità di certificazione aziendale del dominio. Negli scenari federati, è necessario che la CA di emissione sia considerata attendibile da entrambi i partner federati. Ogni partner può utilizzare una CA diversa, se lo si desidera, purché tale CA sia anche considerata attendibile dall'altro partner. Questa relazione di trust è più semplice per i server perimetrali che dispongono del certificato CA radice del partner nelle rispettive autorità di certificazione radice attendibili o per l'utilizzo di una CA di terze parti considerata attendibile da entrambi gli interlocutori.
 
-TLS e MTLS contribuiscono a prevenire attacchi di intercettazione e attacchi man-in-the-middle. In un attacco man-in-the-middle, l'utente malintenzionato dirige le comunicazioni tra due entità di rete attraverso il computer dell'utente malintenzionato all'insaputa delle due parti. La specifica TLS e Lync Server 2013 dei server attendibili (solo quelli specificati in Generatore di topologia) mitiga il rischio di un attacco di tipo man-in-Middle parzialmente sul livello dell'applicazione usando la crittografia end-to-end coordinata tramite la crittografia a chiave pubblica tra i due endpoint e un utente malintenzionato dovrebbe avere un certificato valido e attendibile con la chiave privata corrispondente e rilasciato al nome del servizio a cui il client comunica per decrittografare la comunicazione. In definitiva, tuttavia, devi seguire le procedure di sicurezza ottimali con l'infrastruttura di rete (in questo caso il DNS aziendale). Lync Server 2013 presuppone che il server DNS sia attendibile nello stesso modo in cui i controller di dominio e i cataloghi globali sono considerati attendibili, ma il DNS garantisce un livello di protezione dagli attacchi di hijack del DNS impedendo al server di un aggressore di rispondere correttamente a un richiedere il nome contraffatto.
+TLS e MTLS aiutano a impedire sia gli attacchi di intercettazione che di tipo man-in-the-Middle. In un attacco man-in-the-Middle, l'utente malintenzionato reindirizza le comunicazioni tra due entità di rete nel computer dell'utente malintenzionato senza la conoscenza di entrambe le parti. Le specifiche di TLS e Lync Server 2013 dei server attendibili (solo quelle specificate in Generatore di topologie) attenuano il rischio di un attacco man-in-the Middle parzialmente sul livello dell'applicazione utilizzando la crittografia end-to-end coordinata mediante la crittografia a chiave pubblica tra i due endpoint e un utente malintenzionato deve disporre di un certificato valido e attendibile con la chiave privata corrispondente e inviato al nome del servizio al quale il client comunica per decrittografare la comunicazione. In definitiva, tuttavia, è necessario attenersi alle migliori procedure di sicurezza con l'infrastruttura di rete (in questo caso DNS aziendale). Lync Server 2013 presuppone che il server DNS sia considerato attendibile nello stesso modo in cui i controller di dominio e i cataloghi globali sono attendibili, ma il DNS fornisce un livello di protezione contro gli attacchi del dirottamento DNS impedendo al server di un utente malintenzionato di rispondere correttamente a un richiesta al nome falsificato.
 
-La figura seguente mostra a livello elevato il modo in cui Lync Server 2013 USA MTLS per creare una rete di server attendibili.
+Nella figura seguente viene illustrato un livello elevato di come Lync Server 2013 utilizza MTLS per creare una rete di server attendibili.
 
-**Connessioni attendibili in una rete Lync Server**
+**Connessioni trusted in una rete di Lync Server**
 
 ![437749da-c372-4f0d-ac72-ccfd5191696b](images/Dn481133.437749da-c372-4f0d-ac72-ccfd5191696b(OCS.15).jpg "437749da-c372-4f0d-ac72-ccfd5191696b")
 

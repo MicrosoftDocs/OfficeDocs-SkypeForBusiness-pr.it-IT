@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella VideoStream'
+title: 'Lync Server 2013: tabella VideoStream'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184014
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 674d013faca3b43db04d2c5b4802103def83dbd8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 00abc61fc7ba83b94f3228de91eb9fa6810fc93c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757920"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007245"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41757920"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-12-13_
+_**Ultimo argomento modificato:** 2013-12-13_
 
-Ogni record rappresenta un flusso video. Una linea media video in genere contiene due flussi video.
+Ogni record rappresenta un flusso video. Una linea video multimediale in genere contiene due flussi video.
 
 
 <table>
@@ -58,9 +58,9 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <tbody>
 <tr class="odd">
 <td><p><strong>ConferenceDateTime</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td><p>Principale</p></td>
-<td><p>A cui si fa riferimento dalla <a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a>.</p></td>
+<td><p>A cui viene fatto riferimento dalla <a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SessionSeq</strong></p></td>
@@ -72,37 +72,37 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <td><p><strong>MediaLineLabel</strong></p></td>
 <td><p>tinyint</p></td>
 <td><p>Principale</p></td>
-<td><p>A cui si fa riferimento dalla <a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a>.</p></td>
+<td><p>A cui viene fatto riferimento dalla <a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>StreamID</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>ID univoco all'interno di una linea media.</p></td>
+<td><p>ID univoco in una linea multimediale.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VideoPayloadDescription</strong></p></td>
 <td><p>smallint</p></td>
 <td><p>Estero, primario</p></td>
-<td><p>Descrizione payload. Per altre informazioni, vedere la <a href="lync-server-2013-payloaddescription-table.md">Tabella PayloadDescription in Lync Server 2013</a> .</p></td>
+<td><p>Descrizione payload. Per ulteriori informazioni, vedere la <a href="lync-server-2013-payloaddescription-table.md">Tabella PayloadDescription in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>JitterInterArrival</strong></p></td>
 <td><p>int</p></td>
 <td><p> </p></td>
-<td><p>Jitter medio della rete dalle statistiche RTCP (Real Time Control Protocol).</p></td>
+<td><p>Instabilità di rete media dalle statistiche RTCP (Real Time Control Protocol).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>JitterInterArrivalMax</strong></p></td>
 <td><p>int</p></td>
 <td><p> </p></td>
-<td><p>Jitter della rete massimo durante la sessione video.</p></td>
+<td><p>Instabilità massima della rete durante la sessione video.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RoundTrip</strong></p></td>
 <td><p>int</p></td>
 <td><p> </p></td>
-<td><p>Tempo di andata e ritorno dalle statistiche di RTCP.</p></td>
+<td><p>Tempo di round trip dalle statistiche RTCP.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RoundTripMax</strong></p></td>
@@ -112,33 +112,33 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 </tr>
 <tr class="even">
 <td><p><strong>PacketLossRate</strong></p></td>
-<td><p>decimale (5; 4)</p></td>
+<td><p>decimale (5, 4)</p></td>
 <td><p> </p></td>
-<td><p>Tasso medio di perdita di pacchetti durante la chiamata.</p></td>
+<td><p>Frequenza media di perdita di pacchetti durante la chiamata.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PacketLossRateMax</strong></p></td>
-<td><p>decimale (5; 4)</p></td>
+<td><p>decimale (5, 4)</p></td>
 <td><p> </p></td>
-<td><p>Perdita massima del pacchetto osservata durante la chiamata.</p></td>
+<td><p>Perdita di pacchetti massima rilevata durante la chiamata.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>PacketUtilization</strong></p></td>
 <td><p>int</p></td>
 <td><p> </p></td>
-<td><p>Numero di pacchetti per il flusso video (protocollo di trasporto in tempo reale, RTP).</p></td>
+<td><p>Numero di pacchetti per il flusso video (Real Time Transport Protocol, RTP).</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Larghezza di banda più ampia</strong></p></td>
+<td><p><strong>Larghezza di banda</strong></p></td>
 <td><p>int</p></td>
 <td><p> </p></td>
 <td><p>Stime della larghezza di banda per il flusso video.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>VideoResolution</strong></p></td>
-<td><p>codice.caratt(9</p></td>
+<td><p>char (9)</p></td>
 <td><p> </p></td>
-<td><p>Risoluzione del video in larghezza in pixel moltiplicata per l'altezza dei pixel. Segnalato come stringa.</p></td>
+<td><p>Risoluzione del video in larghezza pixel moltiplicata per altezza pixel. Riportata come stringa.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VideoBitRateAvg</strong></p></td>
@@ -148,13 +148,13 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 </tr>
 <tr class="even">
 <td><p><strong>InboundVideoFrameRateAvg</strong></p></td>
-<td><p>decimale (9; 4)</p></td>
+<td><p>decimale (9, 4)</p></td>
 <td><p> </p></td>
-<td><p>Frequenza fotogrammi video ricevuta.</p></td>
+<td><p>La frequenza fotogrammi video ricevuta.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>OutboundVideoFrameRateAvg</strong></p></td>
-<td><p>decimale (9; 4)</p></td>
+<td><p>decimale (9, 4)</p></td>
 <td><p> </p></td>
 <td><p>Frequenza fotogrammi video inviata.</p></td>
 </tr>
@@ -162,13 +162,13 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <td><p><strong>VideoBitRateMax</strong></p></td>
 <td><p>int</p></td>
 <td><p> </p></td>
-<td><p>Velocità in bit massima video durante la sessione video.</p></td>
+<td><p>Velocità in bit video massima durante la sessione video.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VideoFrameLossRate</strong></p></td>
-<td><p>decimale (9; 4)</p></td>
+<td><p>decimale (9, 4)</p></td>
 <td><p> </p></td>
-<td><p>Percentuale di fotogrammi video totali persi.</p></td>
+<td><p>La percentuale di frame video totali persi.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>VideoFEC</strong></p></td>
@@ -177,83 +177,83 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <td><p>Non disponibile.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Flussi</strong></p></td>
-<td><p>decimale (9; 4)</p></td>
+<td><p><strong>VideoLocalFrameLossPercentageAvg</strong></p></td>
+<td><p>decimale (9, 4)</p></td>
 <td></td>
-<td><p>Percentuale di fotogrammi video totali persi.</p></td>
+<td><p>La percentuale di frame video totali persi.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CIFQualityRatio</strong></p></td>
 <td><p>tinyint</p></td>
 <td></td>
-<td><p>Percentuale della chiamata alla risoluzione CIF (Common Interchange Format).</p></td>
+<td><p>La percentuale della chiamata che si trovava nella risoluzione CIF (Common Interchange Format).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>VGAQualityRatio</strong></p></td>
 <td><p>tinyint</p></td>
 <td></td>
-<td><p>Percentuale della chiamata con risoluzione VGA.</p></td>
+<td><p>La percentuale della chiamata che si trovava sulla risoluzione VGA.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>HD720QualityRatio</strong></p></td>
 <td><p>tinyint</p></td>
 <td></td>
-<td><p>Percentuale della chiamata alla risoluzione di HD720.</p></td>
+<td><p>La percentuale della chiamata che si trovava alla risoluzione di HD720.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NoneDropRatio</strong></p></td>
 <td><p>tinyint</p></td>
 <td></td>
-<td><p>Percentuale della durata della chiamata senza drop frame.</p></td>
+<td><p>Percentuale di durata della chiamata senza frame drop.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BDropRatio</strong></p></td>
 <td><p>tinyint</p></td>
 <td></td>
-<td><p>Percentuale della durata della chiamata con la riduzione del fotogramma B.</p></td>
+<td><p>Percentuale di durata della chiamata con B frame drop.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>BPDropRatio</strong></p></td>
 <td><p>tinyint</p></td>
 <td></td>
-<td><p>Percentuale della durata della chiamata con il frame drop di BP.</p></td>
+<td><p>Percentuale di durata della chiamata con drop frame BP.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BPSPDropRatio</strong></p></td>
 <td><p>tinyint</p></td>
 <td></td>
-<td><p>Percentuale della durata della chiamata con il frame drop di BPSP.</p></td>
+<td><p>Percentuale di durata della chiamata con BPSP frame drop.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>BPSPIDropRatio</strong></p></td>
 <td><p>tinyint</p></td>
 <td></td>
-<td><p>Percentuale della durata della chiamata con il frame drop di BPSPI.</p></td>
+<td><p>Percentuale di durata della chiamata con BPSPI frame drop.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>In ingresso</strong></p></td>
+<td><p><strong>Inbound</strong></p></td>
 <td><p>po'</p></td>
 <td><p> </p></td>
-<td><p>Il flusso di dati sul lato ricevitore viene ricevuto.</p></td>
+<td><p>I dati del flusso sul ricevitore vengono ricevuti.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Outbound</strong></p></td>
+<td><p><strong>In uscita</strong></p></td>
 <td><p>po'</p></td>
 <td><p> </p></td>
-<td><p>Il flusso di dati sul lato mittente viene ricevuto.</p></td>
+<td><p>I dati del flusso sul mittente vengono ricevuti.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SenderIsCallerPAI</strong></p></td>
 <td><p>po'</p></td>
 <td><p> </p></td>
-<td><p>1 indica che la direzione del flusso è dal chiamante al chiamato.</p>
-<p>0 indica che la direzione del flusso è dal chiamato al chiamante.</p></td>
+<td><p>1 indica che la direzione del flusso va dal chiamante al destinatario della chiamata.</p>
+<p>0 indica che la direzione del flusso va dal destinatario della chiamata al chiamante.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LossCongestionPercent</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Indica la percentuale di tempo in cui la chiamata era in stato di congestione della perdita.</p>
+<td><p>Indica la percentuale di tempo in cui la chiamata si trovava in uno stato di congestione delle perdite.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
@@ -267,7 +267,7 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <td><p><strong>ContentionDetectedPercent</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Indica la percentuale di tempo in cui la chiamata era in competizione per le risorse di rete.</p>
+<td><p>Indica la percentuale di tempo in cui la chiamata è stata in competizione per le risorse di rete.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
@@ -295,84 +295,84 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <td><p><strong>BandwidthEstAvge</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Importo medio della stima della larghezza di banda misurata durante la chiamata.</p>
+<td><p>Quantità media di stima della larghezza di banda misurata durante la chiamata.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LowBandwidthForMultiview</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Percentuale della chiamata in cui l'endpoint ha determinato che la connessione di rete non supporta il video MultiView.</p>
+<td><p>Percentuale della chiamata in cui l'endpoint ha stabilito che la connessione di rete non è in grado di supportare il video MultiView.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RelativeOneWayTotal</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Importo totale della latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.</p>
+<td><p>Quantità complessiva di latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RelativeOneWayAverage</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Importo medio della latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.</p>
+<td><p>Quantità complessiva di latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RelativeOneWayMax</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Importo massimo della latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.</p>
+<td><p>Quantità massima di latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RelativeOneWayBurstOccurrences</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Occorrenze totali di burst unidirezionale. Una trasmissione "bursty" è una trasmissione in cui i flussi di dati in esplosioni imprevedibili si oppongono a un flusso costante. Questa metrica misura il flusso di dati tra il client e il server.</p>
+<td><p>Occorrenze burst unidirezionali totali. In una trasmissione di tipo burst il flusso di dati non è prevedibile, diversamente dal flusso stabile. Questa metrica misura il flusso di dati tra il client e il server.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RelativeOneWayBurstDensity</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Densità totale burst unidirezionale. Una trasmissione "bursty" è una trasmissione in cui i flussi di dati in esplosioni imprevedibili si oppongono a un flusso costante. Questa metrica misura il flusso di dati tra il client e il server.</p>
+<td><p>Densità burst unidirezionale totale. In una trasmissione di tipo burst il flusso di dati non è prevedibile, diversamente dal flusso stabile. Questa metrica misura il flusso di dati tra il client e il server.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RelativeOneWayBurstDuration</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Totale durata burst unidirezionale. Una trasmissione "bursty" è una trasmissione in cui i flussi di dati in esplosioni imprevedibili si oppongono a un flusso costante. Questa metrica misura il flusso di dati tra il client e il server.</p>
+<td><p>Durata burst unidirezionale totale. In una trasmissione di tipo burst il flusso di dati non è prevedibile, diversamente dal flusso stabile. Questa metrica misura il flusso di dati tra il client e il server.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RelativeOneWayGapOccurrences</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Occorrenze totali unidirezionali Gap. Una trasmissione "bursty" è una trasmissione in cui i flussi di dati in esplosioni imprevedibili si oppongono a un flusso costante; gli spazi vuoti indicano i ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.</p>
+<td><p>Occorrenze gap unidirezionali totali. In una trasmissione di tipo burst il flusso di dati non è prevedibile, diversamente dal flusso stabile. Questa metrica misura il flusso di dati tra il client e il server.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RelativeOneWayGapDensity</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Densità totale gap unidirezionale. Una trasmissione "bursty" è una trasmissione in cui i flussi di dati in esplosioni imprevedibili si oppongono a un flusso costante; gli spazi vuoti indicano i ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.</p>
+<td><p>Densità gap unidirezionale totale. In una trasmissione di tipo burst il flusso di dati non è prevedibile, diversamente dal flusso stabile. I gap indicano i ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RelativeOneWayGapDuration</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Durata totale del gap unidirezionale. Una trasmissione "bursty" è una trasmissione in cui i flussi di dati in esplosioni imprevedibili si oppongono a un flusso costante; gli spazi vuoti indicano i ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.</p>
+<td><p>Durata gap unidirezionale totale. In una trasmissione di tipo burst il flusso di dati non è prevedibile, diversamente dal flusso stabile. I gap indicano i ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Flussi</strong></p></td>
-<td><p>decimale (9; 4)</p></td>
+<td><p><strong>VideoPacketLossRate</strong></p></td>
+<td><p>decimale (9, 4)</p></td>
 <td></td>
-<td><p>Frequenza con cui sono stati persi i pacchetti video.</p>
+<td><p>Frequenza di perdita dei pacchetti video.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
@@ -385,29 +385,29 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <tr class="even">
 <td><p><strong>SendCodecTypes</strong></p></td>
 <td><p>smallint</p></td>
-<td><p>Esterna</p></td>
-<td><p>Tipo di codec video usati dal mittente. Per altre informazioni, vedere la <a href="lync-server-2013-codecdescription-table.md">tabella CodecDescription in Lync Server 2013</a> .</p>
+<td><p>Stranieri</p></td>
+<td><p>Tipo di codec video utilizzati dal mittente. Per ulteriori informazioni, vedere la <a href="lync-server-2013-codecdescription-table.md">tabella CodecDescription in Lync Server 2013</a> .</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SendResolutionWidth</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Larghezza di risoluzione usata dal mittente.</p>
+<td><p>Larghezza della risoluzione utilizzata dal mittente.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SendResolutionHeight</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Altezza di risoluzione usata dal mittente.</p>
+<td><p>Altezza della risoluzione utilizzata dal mittente.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SendFrameRateAverage</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Trasmissione media della frequenza dei fotogrammi video usata dal mittente.</p>
+<td><p>Velocità media della trasmissione dei fotogrammi video utilizzata dal mittente.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
@@ -427,35 +427,35 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <td><p><strong>SendVideoStreamsMax</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Numero massimo di flussi video usati dal mittente.</p>
+<td><p>Numero massimo di flussi video utilizzati dal mittente.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RecvCodecTypes</strong></p></td>
 <td><p>smallint</p></td>
-<td><p>Esterna</p></td>
-<td><p>Codici video usati dal destinatario. Per altre informazioni, vedere la <a href="lync-server-2013-codecdescription-table.md">tabella CodecDescription in Lync Server 2013</a> .</p>
+<td><p>Stranieri</p></td>
+<td><p>Codici video utilizzati dal destinatario. Per ulteriori informazioni, vedere la <a href="lync-server-2013-codecdescription-table.md">tabella CodecDescription in Lync Server 2013</a> .</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RecvResolutionWidth</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Larghezza di risoluzione usata dal destinatario.</p>
+<td><p>Larghezza della risoluzione utilizzata dal destinatario.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RecvResolutionHeight</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Altezza di risoluzione usata dal destinatario.</p>
+<td><p>Altezza della risoluzione utilizzata dal destinatario.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Flussi</strong></p></td>
+<td><p><strong>RecvFrameRateAverage</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Frequenza fotogrammi video media usata dal destinatario.</p>
+<td><p>Frequenza media dei fotogrammi video utilizzata dal destinatario.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
@@ -476,7 +476,7 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <td><p><strong>RecvVideoStreamsMax</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Flussi video massimo per il destinatario.</p>
+<td><p>Massimi flussi video per il destinatario.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
@@ -494,14 +494,14 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Flussi</strong></p></td>
+<td><p><strong>VideoPostFECPLR</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Tasso di perdita di pacchetti dopo l'applicazione della correzione degli errori in avanti.</p>
+<td><p>Velocità di perdita di pacchetti dopo l'applicazione della correzione degli errori di inoltro.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Flussi</strong></p></td>
+<td><p><strong>DynamicCapabilityPercent</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
 <td><p>Percentuale di tempo in cui il flag di funzionalità dinamica era attivo.</p>
@@ -509,7 +509,7 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 </tr>
 <tr class="even">
 <td><p><strong>ResolutionMin</strong></p></td>
-<td><p>codice.caratt(9</p></td>
+<td><p>char (9)</p></td>
 <td></td>
 <td><p>Risoluzione minima misurata durante la chiamata.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
@@ -518,18 +518,18 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <td><p><strong>LowBitRateCallPercent</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Percentuale della chiamata sotto la soglia di velocità in bit ridotta (70 kilobit al secondo).</p>
+<td><p>Percentuale della chiamata al di sotto della soglia di velocità in bit bassa (70 kilobit al secondo).</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Flussi</strong></p></td>
+<td><p><strong>LowFrameRateCallPercent</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Percentuale della chiamata sotto la soglia bassa della frequenza dei fotogrammi (7,5 fotogrammi al secondo, in ingresso).</p>
+<td><p>Percentuale della chiamata al di sotto della soglia bassa della frequenza dei fotogrammi (7,5 fotogrammi al secondo, in ingresso).</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Causa</strong></p></td>
+<td><p><strong>LowResolutionCallPercent</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
 <td><p>Percentuale della chiamata che si è verificata alla risoluzione più bassa.</p>
@@ -540,7 +540,7 @@ Ogni record rappresenta un flusso video. Una linea media video in genere contien
 <td><p><strong>DurationSeconds</strong></p></td>
 <td><p>galleggiante</p></td>
 <td></td>
-<td><p>Lunghezza della chiamata in secondi.</p>
+<td><p>Durata della chiamata in secondi.</p>
 <p>Questa colonna è stata introdotta in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">

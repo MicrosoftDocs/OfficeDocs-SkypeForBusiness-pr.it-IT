@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: gestire il ritiro delle chiamate di gruppo durante il ripristino di emergenza'
+title: 'Lync Server 2013: gestione del prelievo delle chiamate di gruppo durante il ripristino di emergenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51541455
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 45ebe93ebc1711f49d4578a2a5d908104ca2a411
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 83a0abe6c64b0e6d5cba80c0adb6a01c5dbacb4c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733376"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007785"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41733376"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-30_
+_**Ultimo argomento modificato:** 2013-01-30_
 
-Quando un pool Front-end diventa non disponibile a causa di un problema non pianificato, il servizio non viene superato nel pool di backup. Durante il failover nel pool di backup, gli utenti vengono reindirizzati al pool di backup e si trovano in modalità resilienza. Mentre si è in modalità di resilienza, gli utenti non possono raccogliere le chiamate di altri utenti o ricevere le chiamate raccolte da altri utenti. Al termine del failover, gli utenti possono usare di nuovo il pick-up delle chiamate di gruppo come di consueto.
+Quando un pool Front end diventa non disponibile a causa di un incidente non pianificato, il servizio non viene eseguito nel pool di backup. Durante il failover per il pool di backup, gli utenti vengono reindirizzati al pool di backup e sono in modalità di resilienza. Durante la modalità di resilienza, gli utenti non possono prendere le chiamate di altri utenti o fare in modo che le chiamate vengano raccolte da altri utenti. Al termine del failover, gli utenti possono utilizzare di nuovo il pick-up di chiamata di gruppo come al solito.
 
-Durante il failback nel pool principale, gli utenti vengono reindirizzati al pool principale e sono di nuovo in modalità di resilienza. La funzionalità di prelievo delle chiamate di gruppo non è disponibile finché gli utenti non sono in modalità resilienza.
+Durante il failback al pool primario, gli utenti vengono reindirizzati al pool primario e sono di nuovo in modalità di resilienza. La funzionalità di prelievo delle chiamate di gruppo non è disponibile finché gli utenti non sono in modalità di resilienza.
 
-In questa sezione vengono illustrate alcune considerazioni relative al ritiro delle chiamate di gruppo durante il ripristino di emergenza e descrive anche l'esperienza utente.
+In questa sezione vengono illustrate alcune considerazioni relative al ritiro delle chiamate di gruppo durante il ripristino di emergenza e viene descritta anche l'esperienza utente.
 
 <div>
 
 ## <a name="considerations-for-group-call-pickup-during-disaster-recovery"></a>Considerazioni per il ritiro delle chiamate di gruppo durante il ripristino di emergenza
 
-Durante il ripristino di emergenza, gli utenti che sono stati reindirizzati al pool di backup come parte del processo di failover usano l'applicazione Call Park in esecuzione nel pool di backup per i numeri dei gruppi di raccolta chiamate. Pertanto, il supporto per il ritiro delle chiamate di gruppo durante il ripristino di emergenza richiede che l'applicazione Call Park venga distribuita e abilitata sia nel pool principale che nel pool di backup.
+Durante il ripristino di emergenza, gli utenti che sono stati reindirizzati al pool di backup come parte del processo di failover utilizzano l'applicazione Parcheggio di chiamata in esecuzione nel pool di backup per i numeri del gruppo di prelievo delle chiamate. Pertanto, il supporto per il ritiro delle chiamate di gruppo durante il ripristino di emergenza richiede che l'applicazione Parcheggio di chiamata venga distribuita e abilitata sia nel pool primario che nel pool di backup.
 
-Gli intervalli di numeri di prelievo delle chiamate di gruppo nella tabella Orbit di parcheggio delle chiamate devono essere reindirizzati al pool di backup dopo il completamento del processo di failover nel pool di backup. Gli intervalli di numeri devono essere reindirizzati al pool principale dopo il completamento del processo di failback al pool primario. Per reindirizzare gli intervalli di prelievo delle chiamate di gruppo, usare il cmdlet **set-CsCallParkOrbit** .
+Gli intervalli di numeri di prelievo delle chiamate di gruppo nella tabella orbit del parcheggio di chiamata devono essere reindirizzati al pool di backup dopo il completamento del processo di failover del pool di backup. Gli intervalli di numeri devono essere reindirizzati al pool primario dopo il completamento del processo di failback del pool primario. Per reindirizzare gli intervalli di prelievo delle chiamate di gruppo, utilizzare il cmdlet **set-CsCallParkOrbit** .
 
-Se si distribuisce un nuovo pool con un nome di dominio completo diverso (FQDN) per sostituire il pool principale, è necessario riassegnare tutti gli intervalli di numeri di raccolta delle chiamate di gruppo associati al pool primario al nome di dominio completo del nuovo pool. Per riassegnare intervalli di numeri al nuovo pool, è possibile usare il cmdlet **set-CsCallParkOrbit** . Per informazioni dettagliate sul cmdlet **set-CsCallParkOrbit** , vedere [set-CsCallParkOrbit](https://docs.microsoft.com/powershell/module/skype/Set-CsCallParkOrbit).
+Se si distribuisce un nuovo pool con un nome di dominio completo (FQDN) diverso per sostituire il pool primario, è necessario riassegnare tutti gli intervalli di numeri di prelievo delle chiamate di gruppo che sono stati associati al pool primario all'FQDN del nuovo pool. Per riassegnare gli intervalli di numeri al nuovo pool, è possibile utilizzare il cmdlet **set-CsCallParkOrbit** . Per informazioni dettagliate sul cmdlet **set-CsCallParkOrbit** , vedere [set-CsCallParkOrbit](https://docs.microsoft.com/powershell/module/skype/Set-CsCallParkOrbit).
 
 </div>
 
@@ -59,7 +59,7 @@ Se si distribuisce un nuovo pool con un nome di dominio completo diverso (FQDN) 
 
 ## <a name="group-call-pickup-experience-during-pool-failure"></a>Esperienza di ritiro delle chiamate di gruppo durante l'errore del pool
 
-La tabella seguente riepiloga l'esperienza di raccolta delle chiamate di gruppo tramite le fasi del ripristino di emergenza.
+Nella tabella seguente viene riepilogata l'esperienza di prelievo delle chiamate di gruppo tramite le fasi del ripristino di emergenza.
 
 ### <a name="user-experience-during-disaster-recovery"></a>Esperienza utente durante il ripristino di emergenza
 
@@ -73,7 +73,7 @@ La tabella seguente riepiloga l'esperienza di raccolta delle chiamate di gruppo 
 <tr class="header">
 <th>Stato chiamata</th>
 <th>Failover per il pool di backup</th>
-<th>Failback nel pool primario</th>
+<th>Failback al pool primario</th>
 </tr>
 </thead>
 <tbody>
@@ -81,26 +81,26 @@ La tabella seguente riepiloga l'esperienza di raccolta delle chiamate di gruppo 
 <td><p>Nuove chiamate</p></td>
 <td><p><strong>Durante il processo di failover:</strong></p>
 <ul>
-<li><p>Raccolta chiamate di gruppo non disponibile per gli utenti in modalità di resilienza</p></li>
+<li><p>Raccolta di chiamate di gruppo non disponibile per gli utenti in modalità di resilienza</p></li>
 </ul>
 <p><strong>Dopo il completamento del failover:</strong></p>
 <ul>
-<li><p>Raccolta di chiamate di gruppo disponibile quando gli utenti fuori dalla resilienza e dagli intervalli di numeri di raccolta chiamate di gruppo vengono reindirizzati al pool di backup</p></li>
+<li><p>Raccolta di chiamate di gruppo disponibile quando gli utenti fuori dalla resilienza e gli intervalli di numeri di prelievo delle chiamate di gruppo vengono reindirizzati al pool</p></li>
 </ul></td>
 <td><p><strong>Durante il processo di failback:</strong></p>
 <ul>
-<li><p>Raccolta chiamate di gruppo non disponibile per gli utenti in modalità di resilienza</p></li>
+<li><p>Raccolta di chiamate di gruppo non disponibile per gli utenti in modalità di resilienza</p></li>
 </ul>
-<p><strong>Al termine del failback:</strong></p>
+<p><strong>Dopo il completamento del failback:</strong></p>
 <ul>
-<li><p>Raccolta di chiamate di gruppo disponibile quando gli utenti fuori dalla resilienza e dagli intervalli di numeri di raccolta delle chiamate di gruppo vengono reindirizzati al pool primario</p></li>
+<li><p>Raccolta di chiamate di gruppo disponibile quando gli utenti fuori dalla resilienza e gli intervalli di numeri di prelievo delle chiamate di gruppo vengono reindirizzati al pool primario</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>Chiamate nella coda di ritiro delle chiamate di gruppo</p></td>
+<td><p>Chiamate nella coda di prelievo delle chiamate di gruppo</p></td>
 <td><p><strong>Durante il processo di failover:</strong></p>
 <ul>
-<li><p>Non è possibile rispondere alle chiamate in coda tramite raccolta chiamate di gruppo.</p></li>
+<li><p>Non è possibile rispondere alle chiamate in coda tramite il prelievo delle chiamate di gruppo.</p></li>
 </ul>
 <p><strong>Dopo il completamento del failover:</strong></p>
 <ul>
@@ -108,30 +108,30 @@ La tabella seguente riepiloga l'esperienza di raccolta delle chiamate di gruppo 
 </ul></td>
 <td><p><strong>Durante il processo di failback:</strong></p>
 <ul>
-<li><p>Non è possibile rispondere alle chiamate in coda tramite raccolta chiamate di gruppo.</p></li>
+<li><p>Non è possibile rispondere alle chiamate in coda tramite il prelievo delle chiamate di gruppo.</p></li>
 </ul>
-<p><strong>Al termine del failback:</strong></p>
+<p><strong>Dopo il completamento del failback:</strong></p>
 <ul>
-<li><p>Non è possibile rispondere alle chiamate in coda tramite raccolta chiamate di gruppo.</p></li>
+<li><p>Non è possibile rispondere alle chiamate in coda tramite il prelievo delle chiamate di gruppo.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>Chiamata stabilita</p></td>
 <td><p><strong>Durante il processo di failover:</strong></p>
 <ul>
-<li><p>Chiamate rimanete connesse</p></li>
+<li><p>Chiamate rimanere connesse</p></li>
 </ul>
 <p><strong>Dopo il completamento del failover:</strong></p>
 <ul>
-<li><p>Chiamate rimanete connesse</p></li>
+<li><p>Chiamate rimanere connesse</p></li>
 </ul></td>
 <td><p><strong>Durante il processo di failback:</strong></p>
 <ul>
-<li><p>Chiamate rimanete connesse</p></li>
+<li><p>Chiamate rimanere connesse</p></li>
 </ul>
-<p><strong>Al termine del failback:</strong></p>
+<p><strong>Dopo il completamento del failback:</strong></p>
 <ul>
-<li><p>Chiamate rimanete connesse</p></li>
+<li><p>Chiamate rimanere connesse</p></li>
 </ul></td>
 </tr>
 </tbody>

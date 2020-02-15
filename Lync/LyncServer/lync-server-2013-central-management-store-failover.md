@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Failover dell'archivio di gestione centrale"
+title: Failover dell'archivio di gestione centrale di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185809
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 38bde96b74fa1c00fc937a159c5e8e40df42d4dc
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: be877275c2d5f70b7a7038b55f5d42f887ba1739
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736866"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008498"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41736866"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-18_
+_**Ultimo argomento modificato:** 2012-10-18_
 
-L'archivio di gestione centrale contiene i dati di configurazione relativi a server e servizi nella distribuzione di Lync 2013. Offre un solido spazio di archiviazione schematizzato dei dati necessari per definire, configurare, gestire, amministrare, descrivere e gestire una distribuzione di Lync 2013. Convalida inoltre i dati per garantire la coerenza della configurazione.
+L'archivio di gestione centrale contiene i dati di configurazione relativi a server e servizi nella distribuzione di Lync 2013. Fornisce un'archiviazione schematizzato e robusta dei dati necessari per definire, configurare, gestire, amministrare, descrivere e gestire una distribuzione di Lync 2013. Convalida inoltre i dati per garantire la coerenza della configurazione.
 
-Ogni distribuzione di Lync include un unico Central Management store, ospitato dal server back-end di un pool Front-end.
+Ogni distribuzione di Lync include un archivio di gestione centrale, ospitato dal server back-end di un pool Front end.
 
-Quando si stabilisce l'associazione di un pool che include il pool che ospita l'archivio di gestione centrale, nel pool di backup è configurato un database di backup di Central Management store e i servizi di Central Management store sono installati in entrambi i pool. In qualsiasi momento, uno dei due database di Central Management store è lo schema attivo, mentre l'altro è in standby. Il contenuto viene replicato dal servizio di backup da master attivo in standby.
+Quando si stabilisce una coppia di pool che include il pool che ospita l'archivio di gestione centrale, nel pool di backup è configurato un database dell'archivio di gestione centrale di backup e i servizi dell'archivio di gestione centrale sono installati in entrambi i pool. In qualsiasi momento, uno dei due database dell'archivio di gestione centrale è il master attivo e l'altro è una modalità standby. Il contenuto viene replicato dal servizio di backup dal master attivo in quello in standby.
 
-Durante un failover del pool che include i pool che ospitano Central Management store, l'amministratore deve avere esito negativo su Central Management Store prima di non superare il pool Front-end.
+Durante un failover del pool che include i pool che ospitano l'archivio di gestione centrale, l'amministratore deve eseguire il failover dell'archivio di gestione centrale prima di eseguire il failback del pool Front end.
 
-Una volta riparato il disastro, non è necessario eseguire il failover dell'Central Management store. Dopo il ripristino, l'archivio di gestione centrale nel pool di backup originale può rimanere come master attivo.
+Dopo aver ripristinato il disastro, non è necessario eseguire il failover dell'archivio di gestione centrale. Dopo il ripristino, l'archivio di gestione centrale nel pool di backup originale può rimanere come master attivo.
 
-Gli obiettivi di progettazione per il failover di Central Management store sono di 5 minuti per l'obiettivo del tempo di recupero (RTO) e di 5 minuti per l'obiettivo del punto di ripristino (RPO).
+Gli obiettivi di progettazione per il failover dell'archivio di gestione centrale sono di 5 minuti per l'obiettivo del tempo di ripristino (RTO) e di 5 minuti per l'obiettivo del punto di ripristino (RPO).
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: verificare l'accesso degli utenti di dispositivi mobili"
+title: "Lync Server 2013: testare l'accesso degli utenti di dispositivi mobili"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 63969624
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 628fd3aae4f66316627176c3af025eb63202bafb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d6052785bdb8e748ac657d800a630ecc76415af9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746226"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42021337"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="test-mobile-user-access-in-lync-server-2013"></a>Testare l'accesso degli utenti di dispositivi mobili in Lync Server 2013
+# <a name="test-mobile-user-access-in-lync-server-2013"></a>Verificare l'accesso degli utenti di dispositivi mobili in Lync Server 2013
 
 </div>
 
@@ -35,7 +35,7 @@ ms.locfileid: "41746226"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-06-07_
+_**Ultimo argomento modificato:** 2014-06-07_
 
 
 <table>
@@ -49,13 +49,13 @@ _**Argomento Ultima modifica:** 2014-06-07_
 <td><p>Mensile</p></td>
 </tr>
 <tr class="even">
-<td><p>Strumento di test</p></td>
+<td><p>Strumento di testing</p></td>
 <td><p>Windows PowerShell</p></td>
 </tr>
 <tr class="odd">
 <td><p>Autorizzazioni necessarie</p></td>
-<td><p>Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
-<p>Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet Test-CsMcxConference. Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</p>
+<td><p>Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
+<p>Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Test-CsMcxConference. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</p>
 <pre><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsMcxConference&quot;}</code></pre></td>
 </tr>
 </tbody>
@@ -66,21 +66,21 @@ _**Argomento Ultima modifica:** 2014-06-07_
 
 ## <a name="description"></a>Descrizione
 
-Il servizio di mobilità consente agli utenti di dispositivi mobili di eseguire operazioni come:
+Il servizio per dispositivi mobili consente agli utenti del dispositivo mobile di eseguire operazioni quali:
 
 1.  Scambiare messaggi istantanei e informazioni sulla presenza.
 
-2.  Archiviare e recuperare i messaggi vocali internamente anziché con il provider wireless.
+2.  Archiviare e recuperare i messaggi vocali internamente anziché con il provider di servizi di rete.
 
-3.  Sfruttare le funzionalità di Lync Server, ad esempio la chiamata tramite il lavoro e le conferenze telefoniche con accesso esterno. Il cmdlet Test-CsMcxConference offre un modo semplice e rapido per verificare che gli utenti possano partecipare e partecipare alle conferenze di Lync Server usando un dispositivo mobile.
+3.  Sfruttare le funzionalità di Lync Server, ad esempio la chiamata tramite il lavoro e le conferenze telefoniche con accesso esterno. Il cmdlet Test-CsMcxConference consente di verificare rapidamente e facilmente che gli utenti possano partecipare a conferenze di Lync Server utilizzando un dispositivo mobile.
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a>Eseguire il test
+## <a name="running-the-test"></a>Esecuzione del test
 
-Per eseguire questo controllo, è necessario creare tre oggetti delle credenziali di Windows PowerShell (oggetti che contengono il nome dell'account e la password) per ogni account. È quindi necessario includere tali oggetti Credentials e gli indirizzi SIP dei due account quando si chiama Test-CsMcxConference, come illustrato nell'esempio seguente:
+Per eseguire il controllo, è necessario creare tre oggetti credenziali di Windows PowerShell (oggetti che contengono il nome e la password dell'account) per ogni account. È quindi necessario includere gli oggetti Credentials e gli indirizzi SIP dei due account quando si chiama Test-CsMcxConference, come illustrato nell'esempio seguente:
 
     $organizerCred = Get-Credential "litwareinc\kenmyer"
     $user1Cred = Get-Credential "litwareinc\packerman"
@@ -88,21 +88,21 @@ Per eseguire questo controllo, è necessario creare tre oggetti delle credenzial
     
     Test-CsMcxConference -TargetFqdn "atl-cs-001.litwareinc.com" -Authentication Negotiate -OrganizerSipAddress "sip:kenmyer@litwareinc.com" -OrganizerCredential $organizerCred -UserSipAddress "sip:pilar@litwareinc.com" -UserCredential $user1Cred -User2SipAddress "sip:adelaney@litwareinc.com" -User2Credential $user2Cred
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Test-CsMcxConference](https://docs.microsoft.com/powershell/module/skype/Test-CsMcxConference) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Test-CsMcxConference](https://docs.microsoft.com/powershell/module/skype/Test-CsMcxConference) .
 
 </div>
 
 <div>
 
-## <a name="determining-success-or-failure"></a>Determinare l'esito positivo o negativo
+## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
-Se il controllo ha esito positivo, Test-CsMcxConference segnalerà un risultato di test positivo:
+Se il controllo ha esito positivo, Test-CsMcxConference segnalerà un risultato di esito positivo:
 
-Nome di dominio completo di destinazione: atl-cs-001.litwareinc.com
+FQDN di destinazione: atl-cs-001.litwareinc.com
 
 URI di destinazione:http://atl-cs-001.litwareinc.com:443/mcx
 
-Risultato: successo
+Risultato: esito positivo
 
 Latenza: 00:00:00
 
@@ -110,9 +110,9 @@ Messaggio di errore:
 
 Diagnosi
 
-Se il controllo non è riuscito, il Test CsMcxConference segnalerà un risultato di errore. Questo risultato del test sarà in genere accompagnato da un messaggio di errore e una diagnosi dettagliati. Ad esempio:
+Se il controllo non ha avuto esito positivo, il Test-CsMcxConference segnalerà un risultato di esito negativo. Questo risultato del test sarà generalmente accompagnato da un messaggio di errore dettagliato e da una diagnosi. Ad esempio:
 
-Nome di dominio completo di destinazione: atl-cs-001.litwareinc.com
+FQDN di destinazione: atl-cs-001.litwareinc.com
 
 URI di destinazione:https://atl-cs-001.litwareinc.com:443/mcx
 
@@ -120,17 +120,17 @@ Risultato: errore
 
 Latenza: 00:00:00
 
-Messaggio di errore: nessuna risposta ricevuta per il servizio Ticket Web.
+Messaggio di errore: nessuna risposta ricevuta per il servizio Web-Ticket.
 
-Eccezione interna: la richiesta HHTP non è autorizzata con il client
+Eccezione interna: la richiesta di HHTP non è autorizzata con il client
 
-schema di negoziazione "NTLM". Intestazione di autenticazione ricevuta
+schema di negoziazione ' NTLM '. Intestazione di autenticazione ricevuta
 
-dal server è stato "negozia".
+dal server è stato ' Negotiate '.
 
 Eccezione interna: il server remoto ha restituito un errore: (401)
 
-Autorizzato.
+Non autorizzato.
 
 Diagnosi
 
@@ -142,13 +142,13 @@ Content-Type: text/html; charset = UTF-8.
 
 Server: Microsoft-IIS/8.5
 
-Autenticazione WWW: negozia, NTLM
+WWW-Authenticate: Negotiate, NTLM
 
 X-Powered-by: ASP.NET
 
-X-Content-Type-Options: nosniffing
+X-Content-Type-Options: nosniff
 
-Data: Mer, 28 mag 2014 19:22:19 GMT
+Data: Mer, 28 May 2014 19:22:19 GMT
 
 Content-length: 6305
 
@@ -156,27 +156,27 @@ Content-length: 6305
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non essere riuscito
+## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Se Test-CsMcxConference non riesce, è necessario iniziare verificando che il servizio di mobilità sia in funzione ed è possibile accedervi. Questa operazione può essere eseguita usando un Web browser per verificare che sia possibile accedere all'URL del servizio di mobilità per il pool di Lync Server. Questo comando, ad esempio, verifica l'URL per il pool atl-cs-001.litwareinc.com:
+Se Test-CsMcxConference ha esito negativo, è innanzitutto necessario verificare che il servizio per dispositivi mobili sia in esecuzione e che sia possibile accedervi. Che è possibile eseguire utilizzando un Web browser per verificare che sia possibile accedere all'URL del servizio per dispositivi mobili per il pool di Lync Server. Ad esempio, questo comando consente di verificare l'URL per il pool atl-cs-001.litwareinc.com:
 
 `https://atl-cs-001.litwareinc.com/mcx/mcxservice.svc`
 
-Se è possibile accedere al servizio di mobilità, verificare che gli utenti di test dispongano di account di Lync Server validi. Puoi recuperare le informazioni dell'account usando un comando simile al seguente:
+Se è possibile accedere al servizio per dispositivi mobili, è necessario verificare che gli utenti di test dispongano di account Lync Server validi. È possibile recuperare le informazioni dell'account utilizzando un comando simile al seguente:
 
     Get-CsUser -Identity "sip:kenmyer@litwareinc.com" | Select-Object Enabled
 
-Se la proprietà Enabled non è uguale a true o se il comando non riesce, significa che l'utente non ha un account di Lync Server valido. Dovresti anche verificare che ogni account utente sia abilitato per la mobilità. A questo scopo, determina prima di tutto i criteri di mobilità assegnati all'account:
+Se la proprietà Enabled non è uguale a true o se il comando ha esito negativo, significa che l'utente non dispone di un account Lync Server valido. È inoltre necessario verificare che ogni account utente sia abilitato per la mobilità. A tale scopo, determinare innanzitutto i criteri per dispositivi mobili assegnati all'account:
 
     Get-CsUser -Identity "sip:kenmyer@litwareinc.com" | Select-Object MobilityPolicy
 
-Dopo aver conosciuto il nome del criterio, usare il cmdlet Get-CsMobilityPolicy per verificare che il criterio in questione (ad esempio RedmondMobilityPolicy) disponga della proprietà EnableMobility impostata su true:
+Una volta che si conosce il nome del criterio, utilizzare il cmdlet Get-CsMobilityPolicy per verificare che il criterio in questione (ad esempio RedmondMobilityPolicy) la proprietà EnableMobility sia impostata su true:
 
     Get-CsMobilityPolicy -Identity "RedmondMobilityPolicy"
 
-Se viene visualizzato un messaggio di errore "intestazione di autenticazione" quando si esegue Test-CsMcxConference, che spesso significa che non è stato specificato un account utente valido, verificare il nome utente e la password e quindi riprovare il test. Se si è certi che l'account utente sia valido, usare il cmdlet Get-CsWebServiceConfiguration e controllare il valore della Proprietà UseWindowsAuth. In questo modo verranno spiegati i metodi di autenticazione abilitati nell'organizzazione.
+Se si riceve un messaggio di errore "intestazione di autenticazione" quando si esegue Test-CsMcxConference che spesso significa che non è stato specificato un account utente valido, verificare il nome utente e la password e quindi provare di nuovo il test. Se si è certi che l'account utente sia valido, utilizzare il cmdlet Get-CsWebServiceConfiguration e controllare il valore della Proprietà UseWindowsAuth. Che vi dirà quali metodi di autenticazione sono abilitati nell'organizzazione.
 
-Per altre informazioni su come risolvere i problemi relativi al servizio di mobilità, vedere il post di Blog risoluzione dei problemi relativi alla [connettività per dispositivi mobili esterni di Lync](http://blogs.technet.com/b/nexthop/archive/2012/02/21/troubleshooting-external-lync-mobility-connectivity-issues-step-by-step.aspx).
+Per ulteriori suggerimenti su come risolvere i problemi relativi al servizio per dispositivi mobili, vedere il post di Blog per la risoluzione dei problemi relativi alla [connettività per dispositivi mobili esterni di Lync](http://blogs.technet.com/b/nexthop/archive/2012/02/21/troubleshooting-external-lync-mobility-connectivity-issues-step-by-step.aspx).
 
 </div>
 

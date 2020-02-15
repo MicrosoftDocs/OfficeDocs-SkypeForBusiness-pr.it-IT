@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Componenti e topologie per il trunking SIP'
+title: 'Lync Server 2013: componenti e topologie per il trunking SIP'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184775
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d30c589ff02717ad49ce89d0d4e3324f6fe993e9
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a9e31b7cc0ea6e5acec0382ecd468a868152570d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742566"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007976"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41742566"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
 Nella figura seguente viene illustrata la topologia di trunking SIP in Lync Server.
 
 **Topologia di trunking SIP**
 
-![Topologia basata sul trunking SIP](images/Gg398720.669fb55d-7c81-4e21-9421-fabc43d6e064(OCS.15).jpg "Topologia basata sul trunking SIP")
+![Topologia del trunking SIP](images/Gg398720.669fb55d-7c81-4e21-9421-fabc43d6e064(OCS.15).jpg "Topologia del trunking SIP")
 
-Come illustrato nel diagramma, per la connettività tra la rete aziendale e il provider di servizi PSTN (Public Switched Telephone Network) viene usata una rete privata virtuale IP (VPN). Lo scopo di questa rete privata è offrire connettività IP, migliorare la sicurezza e, facoltativamente, ottenere garanzie di qualità del servizio (QoS). A causa della natura di una VPN, non è necessario usare Transport Layer Security (TLS) per il traffico di segnalazione SIP o il protocollo di trasporto in tempo reale (SRTP) sicuro per il traffico multimediale. Le connessioni tra l'organizzazione e il provider di servizi sono quindi costituite da connessioni TCP semplici per SIP e per il protocollo RTP (Plain Real-Time Transport Protocol) (tramite UDP) per i contenuti multimediali tramite una rete VPN IP. Assicurarsi che tutti i firewall tra i router VPN dispongano delle porte aperte per consentire ai router VPN di comunicare e che gli indirizzi IP sui bordi esterni dei router VPN siano instradabili pubblicamente.
+Come illustrato nella figura, una rete privata virtuale (VPN, Virtual Private Network) IP viene utilizzata per la connettività tra l'azienda e il provider di servizi PSTN. Lo scopo di questa rete privata è quello di fornire connettività IP, migliorare la protezione e, facoltativamente, ottenere garanzie relative alla qualità del servizio. Data la natura delle VPN, non è necessario utilizzare TLS per il traffico di segnalazione SIP o SRTP per il traffico multimediale. Le connessioni tra l'azienda e il provider di servizi sono pertanto normali connessioni TCP per SIP e RTP (tramite UDP) per i contenuti multimediali potenzialmente inviati tramite una rete VPN IP. Accertarsi che le porte di tutti i firewall tra i router VPN siano aperte per consentire ai router VPN di comunicare e che gli indirizzi IP nei perimetri esterni dei router VPN consentano l'esecuzione del routing pubblicamente.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Contattare il provider di servizi per determinare se fornisce il supporto per l'elevata disponibilità, incluso il failover. In caso affermativo, dovrai determinare le procedure per configurarlo. Ad esempio, è necessario configurare un solo indirizzo IP e un trunk SIP in ogni Mediation Server oppure è necessario configurare più trunk SIP in ogni Mediation Server?<BR>Se si hanno più siti centrali, chiedere anche se il provider di servizi ha la possibilità di abilitare le connessioni da e verso un altro sito centrale.
+> Contattare il provider di servizi per determinare se fornisce supporto per la disponibilità elevata, incluso il failover. In tal caso, sarà necessario determinare le procedure per configurarlo. Ad esempio, è necessario configurare un solo indirizzo IP e un trunk SIP su ogni Mediation Server oppure è necessario configurare più trunk SIP su ogni Mediation Server?<BR>Se si dispone di più siti centrali, chiedere anche se il provider di servizi ha la possibilità di abilitare le connessioni da e verso un altro sito centrale.
 
 
 
@@ -59,7 +59,7 @@ Come illustrato nel diagramma, per la connettività tra la rete aziendale e il p
 
 
 > [!NOTE]  
-> Per il trunking SIP consigliamo vivamente di distribuire server di mediazione autonomi. Per informazioni dettagliate, vedere <A href="lync-server-2013-deploying-mediation-servers-and-defining-peers.md">distribuzione di Mediation Server e definizione di peer in Lync Server 2013</A> nella documentazione relativa alla distribuzione.
+> Per il trunking SIP, è consigliabile distribuire i Mediation Server autonomi. Per informazioni dettagliate, vedere <A href="lync-server-2013-deploying-mediation-servers-and-defining-peers.md">Deploying Mediation Servers and define Peers in Lync Server 2013</A> nella documentazione relativa alla distribuzione.
 
 
 
@@ -67,27 +67,27 @@ Come illustrato nel diagramma, per la connettività tra la rete aziendale e il p
 
 <div>
 
-## <a name="securing-the-mediation-server-for-sip-trunking"></a>Protezione del server Mediation per il trunking SIP
+## <a name="securing-the-mediation-server-for-sip-trunking"></a>Protezione del Mediation Server per il trunking SIP
 
-Per motivi di sicurezza, è necessario configurare una LAN virtuale (VLAN) per ogni connessione tra i due router VPN. Il processo effettivo per la configurazione di una VLAN varia da un produttore di router a un altro. Per informazioni dettagliate, contattare il fornitore del router.
+Per motivi di sicurezza è opportuno configurare una LAN virtuale (VLAN) per ogni connessione tra i due router VPN. La procedura per la configurazione di una VLAN varia in base al produttore del router. Per informazioni dettagliate, rivolgersi al fornitore del router.
 
-Ti consigliamo di seguire queste linee guida:
+È consigliabile attenersi alle linee guida seguenti:
 
-  - Configurare una LAN virtuale (VLAN) tra il Mediation Server e il router VPN nella rete perimetrale (nota anche come DMZ, zona demilitarizzata e subnet schermata).
+  - Configurare una LAN virtuale (VLAN) tra il Mediation Server e il router VPN nella rete perimetrale (nota anche come DMZ, area demilitarizzata e subnet schermata).
 
   - Non consentire il trasferimento di pacchetti broadcast o multicast dal router alla VLAN.
 
-  - Bloccare le regole di routing che instradano il traffico dal router a un punto qualsiasi ma al Mediation Server.
+  - Bloccare tutte le regole di routing che instradano il traffico dal router a Anywhere but Mediation Server.
 
-Se si usa un server VPN, è consigliabile seguire queste linee guida:
+Se si utilizza un server VPN, è consigliabile attenersi alle linee guida seguenti:
 
   - Configurare una VLAN tra il server VPN e il Mediation Server.
 
   - Non consentire la trasmissione di pacchetti broadcast o multicast dal server VPN alla VLAN.
 
-  - Bloccare qualsiasi regola di routing che instrada il traffico del server VPN ovunque, eccetto il Mediation Server.
+  - Blocca tutte le regole di routing che instradano il traffico del server VPN ovunque tranne il Mediation Server.
 
-  - Crittografare i dati nella rete VPN usando Generic Routing Encapsulation (GRE).
+  - Crittografare i dati sulla VPN utilizzando Generic Routing Encapsulation (GRE).
 
 </div>
 

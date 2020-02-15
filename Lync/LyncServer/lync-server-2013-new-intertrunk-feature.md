@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Nuova funzionalità di routing tra trunk'
+title: 'Lync Server 2013: nuova funzionalità di intertrunk'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733820
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 833cfd1e11b885fc4291f2bbbfecb7d6118074e9
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c88447434594f940ef28b74212e4db2357d6ce38
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758618"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007775"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="new-intertrunk-feature-in-lync-server-2013"></a>Nuova funzionalità di routing tra trunk in Lync Server 2013
+# <a name="new-intertrunk-feature-in-lync-server-2013"></a>Nuova funzionalità di intertrunk in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41758618"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-08_
+_**Ultimo argomento modificato:** 2012-10-08_
 
-Lync Server 2013 offre la gestione delle sessioni di base tramite il supporto del routing intertrunk. Questa nuova funzionalità consente a Lync Server di concedere funzionalità di controllo delle chiamate ai sistemi di telefonia downstream. Con il routing intertrunk, Lync Server può connettere un IP-PBX a un gateway PSTN (Public Switched Telephone Network) in modo che le chiamate da un telefono PBX (Private Branch Exchange) possano essere indirizzate alla rete PSTN e le chiamate PSTN in arrivo possano essere indirizzate a un telefono PBX. Allo stesso modo, Lync Server può interconnettere due o più sistemi IP-PBX in modo che le chiamate possano essere inserite e ricevute tra telefoni PBX dai diversi sistemi IP-PBX.
+Lync Server 2013 fornisce la gestione delle sessioni di base tramite il supporto del routing tra trunk. Questa nuova funzionalità consente a Lync Server di fornire funzionalità di controllo delle chiamate ai sistemi di telefonia downstream. Con il routing intertrunk, Lync Server può interconnettere un IP-PBX a un gateway PSTN (Public Switched Telephone Network) in modo che le chiamate provenienti da un telefono PBX (Private Branch Exchange) possano essere instradate alla rete PSTN e le chiamate PSTN in arrivo possano essere instradate a un telefono PBX. Analogamente, Lync Server può interconnettere due o più sistemi IP-PBX in modo che le chiamate possano essere inserite e ricevute tra i telefoni PBX dei diversi sistemi IP-PBX.
 
 <div>
 

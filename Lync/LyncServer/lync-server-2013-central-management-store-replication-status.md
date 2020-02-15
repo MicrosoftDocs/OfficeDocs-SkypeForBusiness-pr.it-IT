@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: stato della replica dell'archivio di gestione centrale"
+title: "Lync Server 2013: stato di replica dell'archivio di gestione centrale"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 63969663
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4212e8616916f6a2a256530a7a0b74c9811f166d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d7d411733712cf274760a45cd4e315b4f02a66e0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736856"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008488"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41736856"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-01-26_
+_**Ultimo argomento modificato:** 2015-01-26_
 
-Quando un amministratore apporta una modifica di qualche tipo a Lync Server, ad esempio quando un amministratore crea un nuovo criterio vocale o modifica le impostazioni di configurazione del server della Rubrica, la modifica viene registrata nell'Central Management store. A sua volta, la modifica deve essere replicata in tutti i computer in cui sono in uso servizi o ruoli del server Lync.
+Quando un amministratore apporta una modifica a Lync Server, ad esempio quando un amministratore crea un nuovo criterio vocale o modifica le impostazioni di configurazione del server della Rubrica, la modifica viene registrata nell'archivio di gestione centrale. A sua incirca, la modifica deve essere quindi replicata in tutti i computer che eseguono servizi o ruoli del server di Lync Server.
 
-Per replicare i dati, il replicatore Master (in uso nel server di gestione centralizzato) crea uno snapshot dei dati di configurazione modificati. Una copia di questo snapshot viene quindi inviata a ogni computer in cui è in uso servizi o ruoli del server Lync. In tali computer, un agente di replica riceve lo snapshot e carica i dati modificati. L'agente invia quindi a Master Replicator un messaggio che riporta lo stato di replica più recente.
+Per replicare i dati, Master Replicator (in esecuzione nel server di gestione centrale) crea uno snapshot dei dati di configurazione modificati. Una copia di questo snapshot viene quindi inviata a ogni computer che esegue i servizi o i ruoli del server di Lync Server. In tali computer, un agente di replica riceve lo snapshot e carica i dati modificati. L'agente invia quindi a Master Replicator un messaggio in cui viene segnalato lo stato di replica più recente.
 
-Il cmdlet Get-CsManagementStoreReplicationStatus consente di verificare lo stato di replica per qualsiasi o tutti i computer Lync Server dell'organizzazione.
+Il cmdlet Get-CsManagementStoreReplicationStatus consente di verificare lo stato della replica per qualsiasi (o tutti) dei computer Lync Server dell'organizzazione.
 
-Chi può eseguire questo cmdlet? Per impostazione predefinita, i membri dei seguenti gruppi sono autorizzati a eseguire in locale il cmdlet Get-CsManagementStoreReplicationStatus: RTCUniversalUserAdmins, RTCUniversalServerAdmins.
+Chi può eseguire questo cmdlet? Per impostazione predefinita, sono autorizzati a eseguire localmente il cmdlet Get-CsManagementStoreReplicationStatus i membri dei seguenti gruppi: RTCUniversalUserAdmins, RTCUniversalServerAdmins.
 
-Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati manualmente), eseguire il comando seguente dal prompt di Windows PowerShell:
+Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati autonomamente), eseguire il comando seguente dal prompt di Windows PowerShell:
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Get-CsManagementStoreReplicationStatus"}
 

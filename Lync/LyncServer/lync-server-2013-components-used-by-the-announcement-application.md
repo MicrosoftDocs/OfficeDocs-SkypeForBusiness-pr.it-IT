@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Componenti utilizzati dall'applicazione Annuncio"
+title: "Lync Server 2013: componenti utilizzati dall'applicazione annuncio"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184595
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 52ef0b1da665f8797f29582e9ce9e1d311287d61
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a888ca21e26a21103d1c45e74518c3d224d18a7b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757050"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007906"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="components-used-by-the-announcement-application-in-lync-server-2013"></a>Componenti utilizzati dall'applicazione Annuncio in Lync Server 2013
+# <a name="components-used-by-the-announcement-application-in-lync-server-2013"></a>Componenti utilizzati dall'applicazione annuncio in Lync Server 2013
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "41757050"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-13_
+_**Ultimo argomento modificato:** 2012-09-13_
 
-In Lync Server 2013 l'applicazione di annuncio è un componente dell'applicazione Response Group. Quando si distribuisce VoIP aziendale, l'applicazione di annuncio viene automaticamente installata e attivata insieme all'applicazione Response Group. In questa sezione vengono descritti i componenti che supportano l'applicazione di annuncio.
+In Lync Server 2013, l'applicazione annuncio è un componente dell'applicazione Response Group. Quando si distribuisce VoIP aziendale, l'applicazione annuncio viene automaticamente installata e attivata insieme all'applicazione Response Group. In questa sezione vengono descritti i componenti che supportano l'applicazione annuncio.
 
 <div>
 
-## <a name="announcement-application-components"></a>Componenti dell'applicazione di annuncio
+## <a name="announcement-application-components"></a>Componenti dell'applicazione Annuncio
 
-I componenti di Lync Server seguenti supportano l'applicazione di annuncio:
+I componenti di Lync Server seguenti supportano l'applicazione annuncio:
 
-  - **Application Service**   Application Service offre una piattaforma per la distribuzione, l'hosting e la gestione delle applicazioni di comunicazioni unificate. Il servizio applicazione viene installato automaticamente in ogni server front-end in un pool Front-end e in ogni server Standard Edition.
+  - **Application Service**   Application Service fornisce una piattaforma per la distribuzione, l'hosting e la gestione delle applicazioni di comunicazioni unificate. Il servizio applicazione viene installato automaticamente in tutti i front end server in un pool Front end e in tutti i server Standard Edition.
 
-  - **Response Group Application**   l'applicazione Response Group è una delle applicazioni di comunicazioni unificate ospitate dal servizio applicazione. Quando un intervallo di numeri di telefono non assegnato è configurato per l'instradamento a un annuncio, è necessaria l'applicazione Response Group per instradare le chiamate effettuate al numero di telefono. L'applicazione Response Group non è necessaria se tutti gli intervalli sono configurati per l'instradamento alla messaggistica unificata di Exchange.
+  - **Response Group**   Application l'applicazione Response Group è una delle applicazioni di comunicazione unificate ospitate dal servizio applicazione. Quando un intervallo di numeri di telefono non assegnato è configurato in modo da instradare un annuncio, è necessario che l'applicazione Response Group INSTRADE le chiamate effettuate al numero di telefono. (L'applicazione Response Group non è obbligatoria se tutti gli intervalli sono configurati in modo da instradare la messaggistica unificata di Exchange).
 
-  - ****   Per gli annunci vengono usati file audio per i file audio.
+  - **I file audio vengono**utilizzati per gli annunci.   
 
-  - **Archivio file l'**   applicazione di annuncio USA archivio file per archiviare i file audio.
+  - **Archivio file l'**   applicazione annuncio utilizza l'archivio file per archiviare i file audio.
 
-  - **Pannello di controllo di Lync Server**   è possibile usare il pannello di controllo di Lync Server per configurare la tabella dei numeri non assegnati.
+  - **Pannello di controllo di Lync Server**   è possibile utilizzare il pannello di controllo di Lync Server per configurare la tabella dei numeri non assegnati.
 
-  - **Lync Server Management Shell**   è possibile usare i cmdlet di Lync Server Management Shell per configurare le impostazioni degli annunci e la tabella dei numeri non assegnati.
+  - **Lync Server Management Shell**   è possibile utilizzare i cmdlet di Lync Server Management Shell per configurare le impostazioni degli annunci e la tabella dei numeri non assegnati.
 
 </div>
 

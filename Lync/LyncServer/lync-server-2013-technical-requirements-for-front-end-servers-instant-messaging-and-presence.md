@@ -12,16 +12,16 @@ ms:contentKeyID: 48183575
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b3fd89dfe950ccc6c36f014acdf525664096b40f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9502d5cab3cb348b9fdf03236c6da966893d0852
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746586"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006722"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41746586"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-18_
+_**Ultimo argomento modificato:** 2012-09-18_
 
-La messaggistica istantanea (IM) e la presenza vengono sempre eseguite nei pool Front end Enterprise Edition e nei server Standard Edition. Per informazioni su hardware, sistemi operativi e software di database supportati, vedere quanto segue:
+La messaggistica istantanea e la presenza vengono sempre eseguite su pool Enterprise Edition front end e server Standard Edition. Per informazioni sull'hardware supportato, sui sistemi operativi e sul software del database, vedere:
 
   - [Hardware supportato per Lync Server 2013](lync-server-2013-supported-hardware.md)
 
@@ -47,7 +47,7 @@ La messaggistica istantanea (IM) e la presenza vengono sempre eseguite nei pool 
 
 ## <a name="supported-collocation"></a>Collocazione supportata
 
-Il ruolo del server front-end può essere collocato con Mediation Server. È anche possibile eseguire il monitoraggio e l'archiviazione nei server front-end. Il server front-end non può essere collocato con Edge Server o Director.
+Il ruolo Front End Server può essere collocato con Mediation Server. È anche possibile eseguire i ruoli Monitoraggio e Archiviazione nei Front End Server. Non è possibile collocare Front End Server con il server perimetrale o il server Director.
 
 </div>
 

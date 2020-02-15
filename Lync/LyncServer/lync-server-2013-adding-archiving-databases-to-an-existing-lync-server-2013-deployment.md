@@ -12,16 +12,16 @@ ms:contentKeyID: 48184482
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 028148822e7208efd383806693f9799b82d3186a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b2d859f38e6ed7322689f8b89f4865d2ea68733e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738186"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008802"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41738186"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-23_
+_**Ultimo argomento modificato:** 2012-06-23_
 
-Dopo aver configurato le piattaforme di sistema e l'infrastruttura per l'archiviazione, è necessario usare generatore di topologie per aggiungere l'archiviazione alla topologia e quindi pubblicare la topologia.
+Dopo aver configurato le piattaforme di sistema e l'infrastruttura per l'archiviazione, è necessario utilizzare Generatore di topologie per aggiungere l'archiviazione alla topologia e quindi pubblicare la topologia.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Aggiunta di database di archiviazione alla topologia di Lync Server 2013](lync-server-2013-adding-archiving-databases-to-the-lync-server-2013-topology.md)
+  - [Aggiunta dei database di archiviazione alla topologia di Lync Server 2013](lync-server-2013-adding-archiving-databases-to-the-lync-server-2013-topology.md)
 
-  - [Pubblicazione della topologia aggiornata per l'aggiunta di database di archiviazione in Lync Server 2013](lync-server-2013-publishing-the-updated-topology-to-add-archiving-databases.md)
+  - [Pubblicazione della topologia aggiornata per l'aggiunta dei database di archiviazione in Lync Server 2013](lync-server-2013-publishing-the-updated-topology-to-add-archiving-databases.md)
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Disabilitazione o abilitazione di una chat room'
+title: 'Lync Server 2013: disabilitazione o abilitazione di una chat room'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48706011
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a3ed23319631dd8ab51131fe9a8d7a9099e35d18
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 55d9c706c0ea5afcff4f249a9c00a2355667f221
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757600"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007835"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,25 +35,25 @@ ms.locfileid: "41757600"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-02-05_
+_**Ultimo argomento modificato:** 2014-02-05_
 
-Se l'argomento di una chat room persistente non è più pertinente, è possibile rendere la chat room non disponibile per gli utenti disabilitando il problema. Quando una chat room è disabilitata, tutti i membri vengono immediatamente disconnessi dalla sala. Dopo la disattivazione di una chat room, gli utenti non possono raggiungerla o trovarla nelle ricerche in chat room.
+Se l'argomento di una chat room persistente non è più pertinente, è possibile rendere la chat room non disponibile per gli utenti disabilitarla. Quando si disabilita una chat room, tutti i membri vengono disconnessi immediatamente. Dopo la disabilitazione di una chat room, gli utenti non possono più parteciparvi né trovarla eseguendo ricerche di chat room.
 
-Una chat room disabilitata può essere abilitata in seguito da un amministratore della chat persistente. Se una chat room è disabilitata, viene mantenuta l'elenco di appartenenza e altre impostazioni. Se si abilita di nuovo la chat room, non è necessario ricreare manualmente le impostazioni.
+Una chat room disattivata può essere abilitata in un secondo momento da un amministratore di chat persistente. Se una chat è disabilitata, il relativo elenco dei membri e le altre impostazioni vengono mantenuti. In questo modo, se si decide di riabilitarla, non sarà necessario ricreare manualmente le impostazioni.
 
-Se la cronologia della chat room persiste (la persistenza della cronologia delle chat room è un'impostazione facoltativa per una categoria che si applica a tutte le camere all'interno della categoria; l'impostazione predefinita è che viene mantenuta, ma può essere disattivata impostando la **cronologia della chat di Enable** della categoria su false), il contenuto viene mantenuto quando la chat room è disabilitata. Tuttavia, tale contenuto non verrà visualizzato nelle ricerche durante il periodo di permanenza della chat room in uno stato disabilitato. Se in seguito si Abilita la chat room, gli utenti possono cercare i messaggi inviati prima della disattivazione della chat room.
+Se è configurata la persistenza della cronologia della chat room, il contenuto verrà mantenuto in caso di disabilitazione della chat room. La persistenza della cronologia della chat room è un'impostazione facoltativa di una categoria e viene applicata a tutte le chat room della categoria. Per impostazione predefinita, la persistenza è abilitata, ma è possibile disabilitarla impostando la proprietà **Abilita cronologia chat** della categoria su false. Se si disabilita una chat room, il contenuto tuttavia non verrà visualizzato nelle ricerche per tutto il tempo in cui la chat room resterà disabilitata. Se successivamente si abilita la chat room, gli utenti potranno ricercare messaggi inseriti prima che la chat room venisse disabilitata.
 
-Per informazioni dettagliate sulla disabilitazione e l'abilitazione delle chat room tramite l'interfaccia della riga di comando di Windows PowerShell, vedere "gestione sala" nella [configurazione del server di chat persistente usando i cmdlet di Windows PowerShell](configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md). Per disabilitare una chat room, usare un comando simile al seguente:
+Per informazioni dettagliate sulla disattivazione e l'abilitazione delle chat room tramite l'interfaccia della riga di comando di Windows PowerShell, vedere la sezione "gestione sala" in [configurazione del server Chat persistente tramite i cmdlet di Windows PowerShell](configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md). Per disabilitare una chat room, utilizzare un comando simile al seguente:
 
     Set-CsPersistentChatRoom -Identity "atl-cs-001.litwareinc.com\ITChatRoom" -Disabled $True
 
-Per abilitare una chat room, imposta la proprietà Disabled su false:
+Per abilitare una chat room, impostare la proprietà Disabled su false:
 
     Set-CsPersistentChatRoom -Identity "atl-cs-001.litwareinc.com\ITChatRoom" -Disabled $False
 
-Tieni presente che le chat room non possono essere abilitate o disabilitate usando il pannello di controllo di Lync Server.
+Si noti che le chat room non possono essere abilitate o disabilitate utilizzando il pannello di controllo di Lync Server.
 
-Per informazioni dettagliate sulla configurazione delle chat room, vedere [configurare le sale in Lync Server 2013](lync-server-2013-configure-rooms.md) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate sulla configurazione delle chat room, vedere [Configure rooms in Lync Server 2013](lync-server-2013-configure-rooms.md) nella documentazione relativa alla distribuzione.
 
 </div>
 

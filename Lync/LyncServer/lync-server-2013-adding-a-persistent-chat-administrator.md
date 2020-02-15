@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Aggiunta di un amministratore di Chat persistente'
+title: 'Lync Server 2013: aggiunta di un amministratore di chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185300
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9a23ced0c93aae8f55868f44f179c659aead26f1
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 90fa941f575a49b3cb5de23f6aa38944d885eb85
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738196"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008812"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="adding-a-persistent-chat-administrator-in-lync-server-2013"></a>Aggiunta di un amministratore di Chat persistente in Lync Server 2013
+# <a name="adding-a-persistent-chat-administrator-in-lync-server-2013"></a>Aggiunta di un amministratore di chat persistente in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41738196"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-In Lync Server 2013 gli utenti che eseguono attività specifiche devono essere assegnati come membri di uno o più gruppi specifici. Il controllo di accesso basato sui ruoli può essere usato anche per concedere privilegi assegnando agli utenti i ruoli amministrativi predefiniti di Lync Server 2013.
+In Lync Server 2013, gli utenti che eseguono attività specifiche devono essere assegnati come membri di uno o più gruppi specifici. Il controllo di accesso basato sui ruoli (RBAC) può anche essere utilizzato per concedere privilegi assegnando gli utenti ai ruoli amministrativi predefiniti di Lync Server 2013.
 
-Prima di configurare e amministrare il server di chat persistente, assicurati che siano presenti i diritti utente e le autorizzazioni appropriati e che tutti gli utenti che possono essere classificati come amministratori della chat persistente vengano aggiunti alla sicurezza di CsPersistentChatAdministrator gruppo.
+Prima di configurare e amministrare il server Chat persistente, assicurarsi che i diritti utente e le autorizzazioni appropriate siano sul posto e che gli utenti da classificare come amministratori di chat persistente vengano aggiunti alla sicurezza di ruolo CsPersistentChatAdministrator. gruppo.
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 49733879
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0526cc7ba6a6abefd066bf07d845ffed3a4107ca
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 213a945d27c2c5d0ee2135fd0d96bbe1c29c1971
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744666"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42015359"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,27 +35,27 @@ ms.locfileid: "41744666"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Questo argomento spiega come installare un aggiornamento in un server back-end Enterprise Edition o in un server Standard Edition.
+In questo argomento viene descritto come installare un aggiornamento in un server di back-end Enterprise Edition o in un server Standard Edition.
 
-Se un server di back-end è in calo per almeno 30 minuti durante l'aggiornamento, gli utenti possono passare alla modalità resilienza. Al termine dell'aggiornamento e i server back-end sono di nuovo connessi con i server front-end nel pool, gli utenti vengono restituiti alla funzionalità completa. Se l'aggiornamento richiede meno di 30 minuti, gli utenti non saranno interessati.
+Se un server back-end è inverso verso il basso per almeno 30 minuti mentre lo si sta aggiornando, gli utenti possono accedere alla modalità di resilienza. Al termine dell'aggiornamento e i server back-end sono di nuovo connessi con i Front End Server nel pool, gli utenti vengono restituiti alla funzionalità completa. Se l'aggiornamento richiede meno di 30 minuti, gli utenti non saranno coinvolti.
 
 <div>
 
 ## <a name="to-update-a-back-end-server-or-standard-edition-server"></a>Per aggiornare un server back-end o un server Standard Edition
 
-1.  Accedere al server da aggiornare come membro del ruolo CsAdministrator.
+1.  Eseguire l'accesso al server da aggiornare come membro del ruolo CsAdministrator.
 
 2.  Scaricare l'aggiornamento ed estrarlo nel disco rigido locale.
 
-3.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+3.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-4.  Arrestare i servizi di Lync Server. Nella riga di comando digitare:
+4.  Arrestare i servizi di Lync Server. Nella riga di comando digitare il comando seguente:
     
         Stop-CsWindowsService
 
-5.  Arrestare il servizio World Wide Web. Nella riga di comando digitare:
+5.  Arrestare il servizio World Wide Web. Nella riga di comando digitare il comando seguente:
     
         net stop w3svc
 
@@ -63,9 +63,9 @@ Se un server di back-end è in calo per almeno 30 minuti durante l'aggiornamento
 
 7.  Installare l'aggiornamento.
 
-8.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+8.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-9.  Arrestare di nuovo i servizi di Lync Server per intercettare assembly della cache globale (GAC)-d. Nella riga di comando digitare:
+9.  Arrestare di nuovo i servizi di Lync Server per rilevare la Global Assembly Cache (GAC) – d Assemblies. Nella riga di comando digitare:
     
         Stop-CsWindowsService
 
@@ -73,13 +73,13 @@ Se un server di back-end è in calo per almeno 30 minuti durante l'aggiornamento
     
         net start w3svc
 
-11. Applicare le modifiche apportate da LyncServerUpdateInstaller. exe ai database di SQL Server eseguendo una delle operazioni seguenti:
+11. Applicare le modifiche apportate da LyncServerUpdateInstaller.exe ai database di SQL Server eseguendo una delle operazioni seguenti:
     
-      - Se si tratta di un server back-end Enterprise Edition e non sono presenti database collocati nel server, ad esempio l'archiviazione o il monitoraggio dei database, digitare quanto segue nella riga di comando:
+      - Se si tratta di un server back-end Enterprise Edition e non sono presenti database collocati nel server, ad esempio i database di archiviazione o di monitoraggio, digitare quanto segue nella riga di comando:
         
             Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn <SQL Server FQDN>
     
-      - Se si tratta di un server back-end Enterprise Edition e in questo server sono presenti database collocati, digitare quanto segue nella riga di comando:
+      - Se si tratta di un server back-end Enterprise Edition e sono presenti database collocati nel server, digitare quanto segue nella riga di comando:
         
             Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn <SQL Server FQDN>  -ExcludeCollocatedStores
     

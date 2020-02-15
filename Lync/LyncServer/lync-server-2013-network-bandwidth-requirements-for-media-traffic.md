@@ -1,5 +1,5 @@
 ---
-title: Requisiti di larghezza di banda di rete di Lync Server 2013 per il traffico multimediale
+title: Lync Server 2013 requisiti di larghezza di banda di rete per il traffico multimediale
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733716
 ms.date: 09/25/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 684f13a10c066e8902bed0024d7546017450ee9e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f02f87e0cc7adc9cdfbd5e7ba1a9b7a4a6b736ee
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765927"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008228"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41765927"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-09-24_
+_**Ultimo argomento modificato:** 2015-09-24_
 
-Una parte importante della pianificazione della rete garantisce che la rete sia in grado di gestire il traffico multimediale generato da Lync Server. Questa sezione consente di pianificare il traffico multimediale.
+Una parte importante della pianificazione di rete consiste nell'assicurarsi che la rete sia in grado di gestire il traffico multimediale generato da Lync Server. Questa sezione fornisce supporto alla pianificazione per il traffico multimediale.
 
 <div>
 
 ## <a name="media-traffic-network-usage"></a>Utilizzo della rete per il traffico multimediale
 
-L'utilizzo della larghezza di banda del traffico multimediale può essere difficile da calcolare a causa del numero di variabili diverse, ad esempio l'uso dei codec, la risoluzione e i livelli di attività. L'utilizzo della larghezza di banda è una funzione del codec usato e dell'attività del flusso, che variano tra loro in scenari diversi. Nella tabella seguente sono elencati i codec audio usati comunemente negli scenari di Lync Server 2013.
+L'utilizzo della larghezza di banda per il traffico multimediale può essere difficile da calcolare per la quantità di variabili diverse, ad esempio l'utilizzo di codec, la risoluzione e i livelli di attività. L'utilizzo della larghezza di banda dipende dal codec utilizzato e dall'attività del flusso, entrambi variabili a seconda degli scenari. Nella tabella seguente sono elencati i codec audio utilizzati comunemente negli scenari di Lync Server 2013.
 
 ### <a name="audio-codec-bandwidth"></a>Larghezza di banda del codec audio
 
@@ -60,15 +60,15 @@ L'utilizzo della larghezza di banda del traffico multimediale può essere diffic
 <tr class="header">
 <th>Codec audio</th>
 <th>Scenari</th>
-<th>Bitrate del payload audio (KBPS)</th>
-<th>Payload di larghezza di banda audio e solo intestazione IP (Kbps)</th>
-<th>Payload audio con larghezza di banda, intestazione IP, UDP, RTP e SRTP (Kbps)</th>
-<th>Payload audio a larghezza di banda, intestazione IP, UDP, RTP, SRTP e correzione degli errori in avanti (Kbps)</th>
+<th>Velocità in bit di payload audio (Kbps)</th>
+<th>Larghezza di banda solo per payload audio e intestazione (Kbps)</th>
+<th>Larghezza di banda per payload audio, intestazione IP, UDP, RTP e SRTP (Kbps)</th>
+<th>Larghezza di banda per payload audio, intestazione IP, UDP, RTP, SRTP e correzione degli errori di inoltro (FEC) (Kbps)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>RTAudio a banda larga</p></td>
+<td><p>Banda larga RTAudio</p></td>
 <td><p>Peer-to-peer</p></td>
 <td><p>29,0</p></td>
 <td><p>45,0</p></td>
@@ -76,7 +76,7 @@ L'utilizzo della larghezza di banda del traffico multimediale può essere diffic
 <td><p>86,0</p></td>
 </tr>
 <tr class="even">
-<td><p>RTAudio stretta</p></td>
+<td><p>Banda stretta RTAudio</p></td>
 <td><p>Peer-to-peer, PSTN</p></td>
 <td><p>11,8</p></td>
 <td><p>27,8</p></td>
@@ -85,15 +85,15 @@ L'utilizzo della larghezza di banda del traffico multimediale può essere diffic
 </tr>
 <tr class="odd">
 <td><p>G. 722</p></td>
-<td><p>Servizi di conferenza</p></td>
+<td><p>Conferenza</p></td>
 <td><p>64,0</p></td>
 <td><p>80,0</p></td>
 <td><p>95,6</p></td>
 <td><p>159,6</p></td>
 </tr>
 <tr class="even">
-<td><p>Stereo G. 722</p></td>
-<td><p>Servizi di conferenza peer-to-peer</p></td>
+<td><p>G.722 Stereo</p></td>
+<td><p>Peer-to-peer, Servizi di conferenza</p></td>
 <td><p>128,0</p></td>
 <td><p>144,0</p></td>
 <td><p>159,6</p></td>
@@ -101,7 +101,7 @@ L'utilizzo della larghezza di banda del traffico multimediale può essere diffic
 </tr>
 <tr class="odd">
 <td><p>G. 711</p></td>
-<td><p>Servizi di conferenza PSTN</p></td>
+<td><p>PSTN, servizi di conferenza</p></td>
 <td><p>64,0</p></td>
 <td><p>80,0</p></td>
 <td><p>92,0</p></td>
@@ -109,7 +109,7 @@ L'utilizzo della larghezza di banda del traffico multimediale può essere diffic
 </tr>
 <tr class="even">
 <td><p>Sirena</p></td>
-<td><p>Servizi di conferenza</p></td>
+<td><p>Conferenza</p></td>
 <td><p>16,0</p></td>
 <td><p>32,0</p></td>
 <td><p>47,6</p></td>
@@ -119,21 +119,21 @@ L'utilizzo della larghezza di banda del traffico multimediale può essere diffic
 </table>
 
 
-I numeri di larghezza di banda nella tabella precedente si basano su pacchettizzazione 20ms (pacchetti di 50 al secondo) e per sirena e G. 722 includono l'overhead di protocollo di trasporto in tempo reale (SRTP) aggiuntivo protetto da scenari di conferenza e si presuppone che il flusso sia 100% attivo. La correzione degli errori in avanti (FEC) viene usata in modo dinamico quando c'è perdita di pacchetti sul collegamento per mantenere la qualità del flusso audio.
+I numeri relativi alla larghezza di banda nella tabella precedente sono basati sulla pacchettizzazione a 20 ms (50 pacchetti al secondo) e per Siren e G.722 includono l'overhead aggiuntivo del protocollo SRTP (Secure Real Time Transport Protocol) degli scenari di conferenza e presuppongono che il flusso sia attivo al 100%. La correzione degli errori di inoltro (FEC, Forward Error Correction) viene utilizzata dinamicamente in caso di perdita di pacchetti sul collegamento per preservare la qualità del flusso audio.
 
-La versione stereo del codec G. 722 viene usata dai sistemi basati sul sistema room di Lync, che consente l'acquisizione di microfoni stereo per consentire agli ascoltatori di distinguere meglio più chiacchieroni nella sala riunioni.
+La versione stereo del codec G. 722 viene utilizzata dai sistemi basati su Lync room System, che consente all'acquisizione del microfono stereo di consentire agli ascoltatori di distinguere meglio i più parlanti nella sala riunioni.
 
-Per il video, il codec predefinito è lo standard di codifica video avanzato H. 264/MPEG-4 parte 10, insieme alle estensioni di codifica video scalabili per la scalabilità temporale. Per mantenere l'interoperabilità con i client Lync 2010 o Office Communicator 2007 R2, il codec RTVideo viene ancora usato per le chiamate peer-to-peer tra Lync 2013 e i client legacy. Nelle sessioni di conferenza con entrambi i client Lync 2013 e Legacy l'endpoint Lync 2013 può codificare il video con codec video e inviare il Bitstream H. 264 a Lync 2013 e RTVideo Bitstream ai client Lync 2010 o Office Communicator 2007 R2.
+Per il video, il codec predefinito è lo standard H.264/MPEG-4 Part 10 Advanced Video Coding insieme alle estensioni di codifica video scalabile per la scalabilità provvisoria. Per mantenere l'interoperabilità con i client Lync 2010 o Office Communicator 2007 R2, il codec RTVideo è ancora utilizzato per le chiamate peer-to-peer tra Lync 2013 e i client legacy. Nelle sessioni di conferenza con entrambi, Lync 2013 e Legacy clients Lync 2013 endpoint può codificare il video utilizzando entrambi i codec video e inviare il Bitstream H. 264 a Lync 2013 e RTVideo Bitstream ai client Lync 2010 o Office Communicator 2007 R2.
 
-La larghezza di banda necessaria dipende dalla risoluzione, dalla qualità e dalla frequenza dei fotogrammi. Per ogni risoluzione, sono disponibili due velocità in bit interessanti:
+I requisiti di larghezza di banda dipendono da aspetti quali la risoluzione, la qualità e la frequenza frame. Per ogni risoluzione, sono disponibili due velocità in bit interessanti:
 
-  - **Bitrate massimo del payload**   questo è il bitrate che verrà usato da un endpoint 2013 di Lync per la risoluzione alla frequenza massima di fotogrammi supportata per la risoluzione. Questo valore è interessante perché consente il video di altissima qualità e frequenza dei fotogrammi.
+  - **Bitrate massimo del payload**   questo è il bitrate che un endpoint Lync 2013 utilizzerà per la risoluzione alla frequenza massima dei frame supportata per la risoluzione. Questo valore è interessante perché consente di ottenere video con i massimi livelli di qualità e frequenza frame.
 
-  - **Bitrate minimo del payload**   questo è il bitrate sotto il quale un endpoint di Lync 2013 passa alla risoluzione inferiore successiva. Per garantire una determinata risoluzione, il bitrate del payload video disponibile non deve scendere al di sotto di questo bitrate minimo per la risoluzione. Questo valore è interessante in modo che sia possibile comprendere il valore più basso possibile nei casi in cui il bitrate massimo non è disponibile o pratico. Per alcuni utenti, un video a basso bitrate potrebbe essere considerato un'esperienza video inaccettabile, quindi prestare attenzione quando si considerano questi bitrate minimi per il payload video. Tieni presente che per le scene video con poco o nessun movimento dell'utente, il bitrate effettivo può anche essere inferiore alla frequenza minima.
+  - **Bitrate minimo payload**   questo è il bitrate al di sotto del quale un endpoint Lync 2013 passerà alla risoluzione inferiore successiva. Per garantire una data risoluzione, la velocità in bit di payload non deve scendere sotto questo valore per ottenere quella risoluzione. Questo valore è interessante perché consente di identificare il valore minimo possibile nei casi in cui la velocità in bit massima non è disponibile o praticabile. Per alcuni utenti, una risoluzione così bassa può essere considerata accettabile per l'esperienza, per cui valutare con attenzione queste velocità di payload minime. Nelle scene video in cui il movimento dell'utente è minimo o nullo, la velocità in bit potrebbe scendere, temporaneamente, sotto la velocità minima.
 
-Lync 2013 supporta molte più risoluzioni. In questo modo puoi migliorare la larghezza di banda della rete e la ricezione di funzionalità client. Inoltre, le proporzioni predefinite per Lync 2013 sono state modificate in 16:9. Le proporzioni di 4:3 sono ancora supportate per le webcam che non consentono l'acquisizione in proporzioni 16:9.
+Lync 2013 supporta molte altre soluzioni. Ciò consente di regolare in maniera migliore le diverse larghezze di banda della rete, e di ricevere le funzionalità del client. Inoltre, le proporzioni predefinite per Lync 2013 sono state modificate in 16:9. Le proporzioni 4:3 sono ancora supportate per le webcam che non consentono l'acquisizione in 16:9.
 
-### <a name="video-resolution-bandwidth"></a>Larghezza di banda di risoluzione video
+### <a name="video-resolution-bandwidth"></a>Larghezza di banda della risoluzione video
 
 <table>
 <colgroup>
@@ -146,8 +146,8 @@ Lync 2013 supporta molte più risoluzioni. In questo modo puoi migliorare la lar
 <tr class="header">
 <th>Codec video</th>
 <th>Risoluzione e proporzioni</th>
-<th>Bitrate massimo del payload video (Kbps)</th>
-<th>Bitrate minimo del payload video (Kbps)</th>
+<th>Velocità in bit massima di payload (Kbps)</th>
+<th>Velocità in bit minima di payload (Kbps)</th>
 </tr>
 </thead>
 <tbody>
@@ -156,7 +156,7 @@ Lync 2013 supporta molte più risoluzioni. In questo modo puoi migliorare la lar
 <td><p>320x180 (16:9)</p>
 <p>212x160 (4:3)</p></td>
 <td><p>250</p></td>
-<td><p>15</p></td>
+<td><p>15 </p></td>
 </tr>
 <tr class="even">
 <td><p>H. 264/RTVideo</p></td>
@@ -207,7 +207,7 @@ Lync 2013 supporta molte più risoluzioni. In questo modo puoi migliorare la lar
 <td><p>H. 264/RTVideo</p></td>
 <td><p>960x144 (20:3)</p></td>
 <td><p>500</p></td>
-<td><p>15</p></td>
+<td><p>15 </p></td>
 </tr>
 <tr class="even">
 <td><p>H. 264</p></td>
@@ -225,31 +225,31 @@ Lync 2013 supporta molte più risoluzioni. In questo modo puoi migliorare la lar
 </table>
 
 
-Video FEC è incluso nel video bitrate payload quando viene usato in modo che non ci siano valori separati con il video FEC e senza video FEC.
+La correzione FEC video è inclusa nella velocità in bit di payload video quando viene utilizzata, quindi non sono disponibili valori separati con e senza FEC video.
 
-Gli endpoint non eseguono il flusso continuo di pacchetti audio o video. A seconda dello scenario, sono presenti diversi livelli di attività di flusso che indicano la frequenza di invio dei pacchetti per un flusso. L'attività di un flusso dipende dall'elemento multimediale e dallo scenario e non dipende dal codec usato. In uno scenario peer-to-peer:
+Gli endpoint non inviano flussi continui di pacchetti audio o video. A seconda dello scenario, esistono livelli diversi di attività di flusso che indicano la frequenza dell'invio di pacchetti per un flusso. L'attività di un flusso dipende dal contenuto multimediale e dallo scenario e non dal codec utilizzato. In uno scenario peer-to-peer:
 
-  - Gli endpoint inviano flussi audio solo quando gli utenti parlano.
+  - Gli endpoint inviano flussi audio solo quando l'utente parla.
 
   - Entrambi i partecipanti ricevono flussi audio.
 
-  - Se viene usato il video, entrambi gli endpoint inviano e ricevono flussi video durante l'intera chiamata.
+  - Se si utilizzano funzionalità video, entrambi gli endpoint inviano e ricevono flussi video durante l'intera chiamata.
 
-  - Per le scene video con movimenti poco o nessuno, il bitrate effettivo può essere temporaneamente molto basso perché il codec video salterà la codifica delle aree del video senza modifiche.
+  - Nelle scene video con movimento minimo o nullo, la velocità in bit potrebbe raggiungere picchi molto bassi, poiché il codec video non codifica le regioni del video in cui non avvengono cambiamenti.
 
 In uno scenario di conferenza:
 
-  - Gli endpoint inviano flussi audio solo quando gli utenti parlano.
+  - Gli endpoint inviano flussi audio solo quando l'utente parla.
 
   - Tutti i partecipanti ricevono flussi audio.
 
-  - Se viene usato il video, tutti i partecipanti possono ricevere fino a cinque flussi video di ricezione e uno stream video panoramico (ad esempio, aspect ratio 20:3). Per impostazione predefinita, i cinque flussi video di ricezione si basano sulla cronologia degli oratori attivi, ma gli utenti possono anche selezionare manualmente i partecipanti da cui vogliono ricevere un flusso video.
+  - Se è utilizzato il video, tutti i partecipanti possono ricevere fino a cinque flussi video, e un flusso video panoramico (ad esempio, con proporzioni 20:3). Per impostazione predefinita, i cinque flussi video di ricezione si basano sulla cronologia dell'oratore attivo, ma gli utenti possono selezionare manualmente i partecipanti dai quali desiderano ricevere il flusso video.
 
-  - Ogni partecipante che attiva il flusso video di invio dell'utente invierà uno o più flussi video. Lync 2013 aggiunge la possibilità di inviare fino a cinque flussi video per ottimizzare la qualità del video per tutti i client di ricezione. Il numero effettivo di flussi video inviati viene determinato dal mittente in base alle funzionalità della CPU, alla larghezza di banda di uplink disponibile e al numero di client di ricezione che richiedono un determinato flusso video. Il caso più comune è che si sta inviando un flusso video H. 264 e uno RTVideo nel caso in cui un client legacy partecipi alla conferenza. Un altro scenario comune è che diversi flussi video H. 264, ad esempio con risoluzioni video diverse, vengono inviati per ospitare diverse richieste di ricevitore.
+  - Ciascun partecipante che attiva il flusso video di invio dell'utente, invierà uno o più flussi video. Lync 2013 aggiunge la possibilità di inviare fino a cinque flussi video per ottimizzare la qualità video per tutti i client di ricezione. Il numero effettivo di flussi video inviati è determinato dal mittente sulla base della capacità del CPU, della larghezza di banda disponibile, e del numero di client in ricezione che richiedono un determinato flusso video. Il caso più comune è quello in cui un flusso video H.264 e un flusso video RTVideo sono inviati se un client legacy partecipa alla conferenza. Un altro scenario comune è quello in cui diversi flussi video H.264 (ad esempio, con risoluzioni video diverse) vengono inviati al fine di soddisfare diverse richieste.
 
-Oltre alla larghezza di banda necessaria per il traffico RTP (Real-Time Transport Protocol) per i supporti audio e video, è necessaria la larghezza di banda per il protocollo di controllo del trasporto in tempo reale (RTCP). RTCP viene usato per segnalare le statistiche e il controllo fuori banda del flusso RTP. Per la pianificazione, usare i numeri di larghezza di banda nella tabella seguente per il traffico RTCP. Questi valori rappresentano la larghezza di banda massima usata per RTCP e differiscono tra i flussi audio e video a causa delle differenze tra i dati del controllo
+Oltre che per il traffico RTP (Real-time Transport Protocol) per il contenuto multimediale audio e video, la larghezza di banda è necessaria anche per RTCP (Real-time Transport Control Protocol), un protocollo utilizzato per la segnalazione di statistiche e per il controllo statistiche e per il controllo fori banda del flusso RTP. Per la pianificazione, utilizzare i numeri relativi alla larghezza di banda riportati nella tabella seguente per il traffico RTCP. Questi valori rappresentano la larghezza di banda massima utilizzata per RTCP e sono diversi tra flussi audio e video a causa delle differenze nei dati di controllo.
 
-### <a name="rtcp-bandwidth"></a>Larghezza di banda RTCP
+### <a name="rtcp-bandwidth"></a>Larghezza di banda per RTCP
 
 <table>
 <colgroup>
@@ -258,38 +258,38 @@ Oltre alla larghezza di banda necessaria per il traffico RTP (Real-Time Transpor
 </colgroup>
 <thead>
 <tr class="header">
-<th>Contenuti multimediali</th>
-<th>Larghezza di banda massima RTCP (Kbps)</th>
+<th>Media</th>
+<th>Larghezza di banda massima per RTCP (Kbps)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Audio</p></td>
-<td><p>5</p></td>
+<td><p>5 </p></td>
 </tr>
 <tr class="even">
-<td><p>Video (solo H. 264 o RTVideo inviati/ricevuti)</p></td>
-<td><p>10</p></td>
+<td><p>Video (solo H.264 o RTVideo inviati/ricevuti)</p></td>
+<td><p>10 </p></td>
 </tr>
 <tr class="odd">
-<td><p>Video (H. 264 e RTVideo inviati/ricevuti)</p></td>
-<td><p>15</p></td>
+<td><p>Video (H.264 e RTVideo inviati/ricevuti)</p></td>
+<td><p>15 </p></td>
 </tr>
 </tbody>
 </table>
 
 
-Per scopi di pianificazione della capacità, le due larghezze di banda seguenti sono interessanti:
+Per la pianificazione della capacità, sono importanti le due larghezze di banda seguenti:
 
-  - **Larghezza di banda massima senza FEC**   la larghezza di banda massima che verrà utilizzata da un flusso, inclusa l'attività tipica del flusso e il codec tipico usato nello scenario senza FEC.Questa è la larghezza di banda quando il flusso si trova all'attività di 100% e non è disponibile alcuna perdita di pacchetti che attiva l'uso di FEC.Questo è interessante per calcolare la quantità di larghezza di banda che deve essere allocata per consentire l'uso del codec in uno scenario specifico. 
+  - **Larghezza di banda massima senza FEC**   la larghezza di banda massima che verrà utilizzata da un flusso, inclusa l'attività tipica dello Stream e il codec tipico utilizzato nello scenario senza FEC.Si tratta della larghezza di banda utilizzata quando l'attività del flusso corrisponde al 100% e non si verificano perdite di pacchetti che attivano l'utilizzo di FEC.Questo valore è interessante per calcolare la quantità di larghezza di banda da allocare per consentire l'utilizzo del codec in un determinato scenario. 
 
-  - **Larghezza di banda massima con FEC**   la larghezza di banda massima usata da un flusso, inclusa l'attività tipica dello Stream e il codec tipico usato nello scenario con FEC. Questa è la larghezza di banda quando il flusso è a 100% di attività e la perdita di pacchetti attiva l'uso di FEC per migliorare la qualità. Questo è interessante per calcolare la quantità di larghezza di banda che deve essere allocata per consentire l'utilizzo del codec in uno scenario specifico e consentire l'uso di FEC per preservare la qualità in condizioni di perdita di pacchetti. 
+  - **Larghezza di banda massima con FEC**   la larghezza di banda massima utilizzata da un flusso, inclusa l'attività tipica del flusso e il codec tipico utilizzato nello scenario con FEC. Si tratta della larghezza di banda utilizzata quando l'attività del flusso corrisponde al 100% e si verifica una perdita di pacchetti che attiva l'utilizzo di FEC per migliorare la qualità. Questo valore è interessante per calcolare la quantità di larghezza di banda da allocare per consentire l'utilizzo del codec in un determinato scenario e l'utilizzo di FEC per preservare la qualità in condizioni di perdita di pacchetti. 
 
-Le tabelle seguenti elencano anche un valore di larghezza di banda aggiuntivo, la **larghezza di banda tipica**. Si tratta della larghezza di banda media utilizzata da un flusso, inclusa l'attività tipica dello Stream e il codec tipico usato nello scenario. Questa larghezza di banda può essere usata per avvicinare la quantità di larghezza di banda in un dato momento al traffico multimediale, ma non deve essere usata per la pianificazione della capacità, perché le singole chiamate supereranno questo valore quando il livello di attività è superiore alla media. La larghezza di banda tipica del flusso video nelle tabelle seguenti si basa su una combinazione di risoluzioni video diverse, come osservato nei dati dei clienti misurati. Ad esempio, nelle sessioni peer-to-peer la maggior parte degli utenti utilizzerebbe la finestra di rendering video predefinita, mentre una certa percentuale di utenti aumenterebbe o ingrandirebbe l'applicazione Lync per consentire risoluzioni video più elevate.
+Nelle tabelle seguenti sono inoltre elencati un valore di larghezza di banda aggiuntivo, la **larghezza di banda tipica**. Si tratta della larghezza di banda media che un flusso consuma, inclusa l'attività tipica del flusso e il codec tipico utilizzato nello scenario. È possibile utilizzare questa larghezza di banda per approssimare la quantità di larghezza di banda utilizzata per il traffico multimediale, ma non deve essere utilizzata per la pianificazione della capacità, in quanto le singole chiamate superano questo valore quando il livello di attività è superiore alla media. La larghezza di banda di flusso video tipica nelle tabelle seguenti si basa su una combinazione di risoluzioni video diverse, come osservato nei dati dei clienti misurati. Ad esempio, nelle sessioni peer-to-peer la maggior parte degli utenti utilizzerà la finestra di rendering video predefinita, mentre una percentuale di utenti aumenterebbe o ingrandirà l'applicazione Lync per consentire risoluzioni video più elevate.
 
-Le tabelle seguenti includono questi tre valori di larghezza di banda per i vari scenari.
+Nella tabella seguente vengono riportati questi tre valori di larghezza di banda per i vari scenari possibili.
 
-### <a name="audiovideo-capacity-planning-for-peer-to-peer-sessions"></a>Pianificazione della capacità audio/video per le sessioni peer-to-peer
+### <a name="audiovideo-capacity-planning-for-peer-to-peer-sessions"></a>Pianificazione della capacità audio/video per sessioni peer-to-peer
 
 <table>
 <colgroup>
@@ -301,7 +301,7 @@ Le tabelle seguenti includono questi tre valori di larghezza di banda per i vari
 </colgroup>
 <thead>
 <tr class="header">
-<th>Contenuti multimediali</th>
+<th>Media</th>
 <th>Codec</th>
 <th>Larghezza di banda tipica del flusso (Kbps)</th>
 <th>Larghezza di banda massima del flusso senza FEC</th>
@@ -311,51 +311,51 @@ Le tabelle seguenti includono questi tre valori di larghezza di banda per i vari
 <tbody>
 <tr class="odd">
 <td><p>Audio</p></td>
-<td><p>RTAudio a banda larga</p></td>
+<td><p>Banda larga RTAudio</p></td>
 <td><p>39,8</p></td>
 <td><p>62</p></td>
 <td><p>91</p></td>
 </tr>
 <tr class="even">
 <td><p>Audio</p></td>
-<td><p>RTAudio stretta</p></td>
+<td><p>Banda stretta RTAudio</p></td>
 <td><p>29,3</p></td>
 <td><p>44,8</p></td>
 <td><p>56,6</p></td>
 </tr>
 <tr class="odd">
-<td><p>Video principale quando si chiamano endpoint di Lync 2013</p></td>
+<td><p>Video principale quando si chiamano gli endpoint di Lync 2013</p></td>
 <td><p>H. 264</p></td>
 <td><p>460</p></td>
-<td><p>4010 (per la risoluzione massima di 1920x1080)</p></td>
+<td><p>4010 (per una risoluzione massima di 1920x1080)</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 <tr class="even">
 <td><p>Video principale quando si chiamano gli endpoint di Lync 2010 o Office Communicator 2007 R2</p></td>
 <td><p>RTVideo</p></td>
 <td><p>460</p></td>
-<td><p>2510 (per la risoluzione massima di 1280x720)</p></td>
+<td><p>2510 (per una risoluzione massima di 1280x720)</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 <tr class="odd">
-<td><p>Video panoramico quando si chiamano endpoint di Lync 2013</p></td>
+<td><p>Video panoramico quando si chiamano gli endpoint di Lync 2013</p></td>
 <td><p>H. 264</p></td>
 <td><p>190</p></td>
-<td><p>2010 (per la risoluzione massima di 1920x288)</p></td>
+<td><p>2010 (per una risoluzione massima di 1920x288)</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 <tr class="even">
 <td><p>Video panoramico quando si chiamano gli endpoint di Lync 2010 o Office Communicator 2007 R2</p></td>
 <td><p>RTVideo</p></td>
 <td><p>190</p></td>
-<td><p>510 (per la risoluzione massima di 960x144)</p></td>
+<td><p>510 (per una risoluzione massima di 960x144)</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="audiovideo-capacity-planning-for-conferences"></a>Pianificazione della capacità audio/video per le conferenze
+### <a name="audiovideo-capacity-planning-for-conferences"></a>Pianificazione della capacità audio/video per conferenze
 
 <table>
 <colgroup>
@@ -367,7 +367,7 @@ Le tabelle seguenti includono questi tre valori di larghezza di banda per i vari
 </colgroup>
 <thead>
 <tr class="header">
-<th>Contenuti multimediali</th>
+<th>Media</th>
 <th>Codec tipico</th>
 <th>Larghezza di banda tipica del flusso (Kbps)</th>
 <th>Larghezza di banda massima del flusso senza FEC</th>
@@ -391,39 +391,39 @@ Le tabelle seguenti includono questi tre valori di larghezza di banda per i vari
 </tr>
 <tr class="odd">
 <td><p>Ricezione video principale</p></td>
-<td><p>H. 264 e/o RTVideo</p></td>
+<td><p>H.264 e/o RTVideo</p></td>
 <td><p>260</p></td>
 <td><p>8015</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 <tr class="even">
 <td><p>Invio video principale</p></td>
-<td><p>H. 264 e/o RTVideo</p></td>
+<td><p>H.264 e/o RTVideo</p></td>
 <td><p>270</p></td>
 <td><p>8015</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 <tr class="odd">
 <td><p>Ricezione video panoramico</p></td>
-<td><p>H. 264 e/o RTVideo</p></td>
+<td><p>H.264 e/o RTVideo</p></td>
 <td><p>190</p></td>
-<td><p>2010 (per la risoluzione massima di 1920x288)</p></td>
+<td><p>2010 (per una risoluzione massima di 1920x288)</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 <tr class="even">
 <td><p>Invio video panoramico</p></td>
-<td><p>H. 264 e/o RTVideo</p></td>
+<td><p>H.264 e/o RTVideo</p></td>
 <td><p>190</p></td>
-<td><p>2515 (per l'invio di Bitstream usando più risoluzioni/codec</p></td>
+<td><p>2515 (per l'invio di flusso di bit utilizzando risoluzioni/codec multipli</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Per il video principale, la larghezza di banda di flusso standard e massima è la larghezza di banda aggregata su tutti i flussi video ricevuti e su tutti i flussi video inviati rispettivamente. Anche con più flussi video, la larghezza di banda video tipica è più piccola rispetto allo scenario peer-to-peer, poiché molte videoconferenze usano la condivisione di contenuto che porta a finestre video molto più piccole e quindi a risoluzioni video più piccole. La larghezza di banda complessiva del payload video aggregato supportata è di 8000 kbps sia per i flussi di invio che di ricezione che verrebbero usati ad esempio se sono presenti due flussi video di 1920x1080p in arrivo.
+Per il video principale, la larghezza di banda massima del flusso è rappresentata dalla larghezza di banda aggregata di tutti i flussi video ricevuti e tutti i flussi video inviati, rispettivamente. Anche con flussi video multipli, la larghezza di banda video tipica è inferiore rispetto a quella dello scenario peer-to-peer, poiché molte conferenze video utilizzano una condivisione di contenuto che porta a finestre video più piccole, e pertanto a risoluzioni video inferiori. La larghezza di banda di payload massima supportata è pari a 8000 Kbps per entrambi i flussi di invio e ricezione che sarebbero utilizzati, ad esempio, nel caso di due flussi video da 1920x1080p in ingresso.
 
-La tipica larghezza di banda del flusso per il video panoramico si basa sui dispositivi attualmente disponibili che vengono trasmessi solo al video panoramico di 960x144. Una volta che i dispositivi con il video panoramico di 1920x288 diventano disponibili, la larghezza di banda tipica del flusso dovrebbe aumentare.
+La larghezza di banda tipica per il flusso del video panoramico si basa sui dispositivi attualmente disponibili, in grado di eseguire video panoramico fino a 960x144. Quando divengono disponibili dispositivi con video panoramico da 1920x288, la larghezza di banda tipica dovrebbe aumentare.
 
 ### <a name="audio-capacity-planning-for-pstn"></a>Pianificazione della capacità audio per PSTN
 
@@ -437,7 +437,7 @@ La tipica larghezza di banda del flusso per il video panoramico si basa sui disp
 </colgroup>
 <thead>
 <tr class="header">
-<th>Contenuti multimediali</th>
+<th>Media</th>
 <th>Codec tipico</th>
 <th>Larghezza di banda tipica del flusso (Kbps)</th>
 <th>Larghezza di banda massima del flusso senza FEC</th>
@@ -454,7 +454,7 @@ La tipica larghezza di banda del flusso per il video panoramico si basa sui disp
 </tr>
 <tr class="even">
 <td><p>Audio</p></td>
-<td><p>RTAudio stretta</p></td>
+<td><p>Banda stretta RTAudio</p></td>
 <td><p>30,9</p></td>
 <td><p>44,8</p></td>
 <td><p>56,6</p></td>
@@ -463,7 +463,7 @@ La tipica larghezza di banda del flusso per il video panoramico si basa sui disp
 </table>
 
 
-I numeri di larghezza di banda di rete in queste tabelle rappresentano solo il traffico unidirezionale e includono 5 kbps per il sovraccarico del traffico di RTCP per ogni flusso. Per il video viene usata la velocità in bit massima del video per calcolare il flusso massimo.
+I numeri relativi alla larghezza di banda di rete riportati in queste tabelle rappresentano solo il traffico unidirezionale e includono 5 Kbps per l'overhead del traffico RTCP per ogni flusso. Per i video viene utilizzata la velocità in bit massima per il calcolo del flusso massimo.
 
 </div>
 

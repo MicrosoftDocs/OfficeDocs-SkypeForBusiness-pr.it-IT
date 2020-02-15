@@ -1,5 +1,5 @@
 ---
-title: Distribuire Edge Server pilota
+title: Distribuire il server perimetrale pilota
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183446
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 686973f9334b9bf376a2e56c52f3306cf243c0eb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 69d6d83751dd4e8b28a460f154b35416d80e0bb6
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724026"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006432"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deploy-pilot-edge-server"></a>Distribuire Edge Server pilota
+# <a name="deploy-pilot-edge-server"></a>Distribuire il server perimetrale pilota
 
 </div>
 
@@ -35,47 +35,47 @@ ms.locfileid: "41724026"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-19_
+_**Ultimo argomento modificato:** 2012-10-19_
 
-Questo argomento evidenzia le impostazioni di configurazione da tenere presenti prima della distribuzione del server Edge di Lync Server 2013. Questa sezione evidenzia solo i punti chiave da considerare come parte della distribuzione del pool di Edge pilota. Per la procedura dettagliata, vedere [distribuzione dell'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) nella documentazione relativa alla distribuzione, che descrive il processo di distribuzione e fornisce anche informazioni sulla configurazione per l'accesso degli utenti esterni.
+In questo argomento vengono evidenziate le impostazioni di configurazione di cui tenere conto prima di distribuire il server perimetrale di Lync Server 2013. In questa sezione vengono evidenziati solo i punti chiave di cui è consigliabile tenere conto nell'ambito della distribuzione del pool di server perimetrali pilota. Per la procedura dettagliata, vedere [Deploying External User Access in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) nella documentazione relativa alla distribuzione, in cui viene descritto il processo di distribuzione e vengono fornite anche informazioni di configurazione per l'accesso degli utenti esterni.
 
-Mentre ci si sposta nella procedura guidata **Definisci nuovo pool Edge** , rivedere le impostazioni di configurazione chiave illustrate nella procedura seguente. Tieni presente che vengono visualizzate solo alcune pagine della procedura guidata **Definisci nuovo pool di Edge** .
+Man mano che si va avanti nella procedura guidata **Definisci pool di server perimetrali**, esaminare le impostazioni di configurazione chiave illustrate nei passaggi seguenti. Si noti che sono visualizzate solo alcune pagine della procedura guidata **Definisci pool di server perimetrali**.
 
-**Definire un pool di bordi**
+**Definire un pool di server perimetrali**
 
-1.  Aprire la topologia del pool di Pilot usando generatore di topologia.
+1.  Aprire la topologia pool pilota utilizzando Generatore di topologie.
 
-2.  Passare al nodo Lync Server 2013. Fare clic con il pulsante destro del mouse su pool **Edge**e scegliere **nuovo pool di bordi**.
+2.  Passare al nodo Lync Server 2013. Fare clic con il pulsante destro del mouse su **Pool di server perimetrali** e scegliere **Nuovo pool di server perimetrali**.
     
-    ![Finestra di dialogo Definire il nuovo pool di server perimetrali](images/JJ205306.a90d388c-49ff-4620-a19d-42e2f1bb559c(OCS.15).jpg "Finestra di dialogo Definire il nuovo pool di server perimetrali")
+    ![Finestra di dialogo definire il nuovo pool di server perimetrali](images/JJ205306.a90d388c-49ff-4620-a19d-42e2f1bb559c(OCS.15).jpg "Finestra di dialogo definire il nuovo pool di server perimetrali")
 
-3.  Un pool di Edge può essere un pool di **computer multipli** o un pool di **computer singolo**.
+3.  Un pool di server perimetrali può essere un **Pool di più computer** o un **Pool computer singolo**.
     
-    ![Finestra di dialogo Definire l'FQDN del pool di server perimetrali](images/JJ205306.4904fe8f-537c-4e66-a399-1bd8a316dc10(OCS.15).jpg "Finestra di dialogo Definire l'FQDN del pool di server perimetrali")
+    ![Finestra di dialogo definire l'FQDN del pool di server perimetrali](images/JJ205306.4904fe8f-537c-4e66-a399-1bd8a316dc10(OCS.15).jpg "Finestra di dialogo definire l'FQDN del pool di server perimetrali")
 
-4.  Nella pagina **Seleziona funzionalità** non abilitare la Federazione o la Federazione XMPP. Federazione e Federazione XMPP sono attualmente instradati attraverso il server perimetrale legacy di Office Communications Server 2007 R2. Queste caratteristiche verranno configurate in una fase successiva della migrazione.
+4.  Nella pagina **Selezionare funzionalità** non abilitare la federazione o la federazione XMPP. La Federazione e la Federazione XMPP sono attualmente instradate attraverso il server perimetrale Office Communications Server 2007 R2 legacy. Queste funzionalità verranno configurate in una fase successiva della migrazione.
     
-    ![Finestra di dialogo Selezionare funzionalità](images/JJ205306.cb0b45a4-2856-45ba-bd97-e49fafbb077e(OCS.15).jpg "Finestra di dialogo Selezionare funzionalità")
+    ![Finestra di dialogo Seleziona funzionalità.](images/JJ205306.cb0b45a4-2856-45ba-bd97-e49fafbb077e(OCS.15).jpg "Finestra di dialogo Seleziona funzionalità.")
 
-5.  Continuare quindi a completare le pagine della procedura guidata seguenti: **selezionare opzioni IP**, nomi di **dominio completi esterni**, **definire l'indirizzo IP interno**e **definire l'indirizzo IP esterno**.
+5.  Successivamente, completare le pagine seguenti della procedura guidata: **Selezionare le opzioni IP**, **FQDN esterni**, **Definire l'indirizzo IP interno** e **Definire l'indirizzo IP esterno**.
 
-6.  Nella pagina **Definisci l'hop successivo** selezionare il Director per l'hop successivo del pool di Edge di Lync Server 2013.
+6.  Nella pagina **definire l'hop successivo** selezionare il Director per l'hop successivo del pool di Edge di Lync Server 2013.
     
-    ![Finestra di dialogo Definisci pool di server perimetrali - Elenco Pool hop successivo](images/JJ204682.61d963d5-e0bd-4b1f-b437-e37c267347ba(OCS.15).jpg "Finestra di dialogo Definisci pool di server perimetrali - Elenco Pool hop successivo")
+    ![Finestra di dialogo Definisci nuovo pool di server perimetrali, elenco pool hop successivo](images/JJ204682.61d963d5-e0bd-4b1f-b437-e37c267347ba(OCS.15).jpg "Finestra di dialogo Definisci nuovo pool di server perimetrali, elenco pool hop successivo")
 
-7.  Nella pagina **Associa pool Front-End** non associare un pool a questo pool di Edge in questo momento. Il traffico multimediale esterno è attualmente instradato attraverso il server perimetrale legacy di Office Communications Server 2007 R2. Questa impostazione verrà configurata in una fase successiva della migrazione.
+7.  Nella pagina **Associa pool Front End** non associare un pool al pool di server perimetrali in questo momento. Il traffico multimediale esterno è attualmente instradato attraverso il server perimetrale Office Communications Server 2007 R2 legacy. Questa impostazione verrà configurata in una fase successiva della migrazione.
     
-    ![Finestra di dialogo Definisci pool di server perimetrali](images/JJ204682.bb538039-bd2a-40ed-a120-8b80bd2cefc2(OCS.15).jpg "Finestra di dialogo Definisci pool di server perimetrali")
+    ![Finestra di dialogo Definisci nuovo pool di server perimetrali](images/JJ204682.bb538039-bd2a-40ed-a120-8b80bd2cefc2(OCS.15).jpg "Finestra di dialogo Definisci nuovo pool di server perimetrali")
 
-8.  Fare clic su **fine** e quindi **pubblicare** la topologia.
+8.  Fare clic su **Fine** e quindi su **Pubblica** per pubblicare la topologia.
 
-9.  Seguire la procedura descritta in [installare Edge Server per Lync Server 2013](lync-server-2013-install-edge-servers.md) nella documentazione relativa alla distribuzione per installare i file nel nuovo Edge Server, configurare i certificati e avviare i servizi.
+9.  Seguire la procedura descritta in [Install Edge Servers for Lync Server 2013](lync-server-2013-install-edge-servers.md) nella documentazione relativa alla distribuzione per installare i file nel nuovo server perimetrale, configurare i certificati e avviare i servizi.
 
-È molto importante seguire le linee guida degli argomenti relativi alla [distribuzione dell'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) nella documentazione relativa alla distribuzione. Questa sezione ha semplicemente fornito alcune indicazioni sulle impostazioni di configurazione durante l'installazione di questi ruoli del server.
+È molto importante seguire le linee guida illustrate negli argomenti relativi alla [distribuzione di accesso utente esterno in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) nella documentazione relativa alla distribuzione. In questa sezione vengono fornite solo indicazioni sulle impostazioni di configurazione durante la fase di installazione di questi ruoli server.
 
-Ora dovresti avere una distribuzione legacy di Office Communications Server 2007 R2 Edge Server, indicata dalla presenza di BackCompatSite, in parallelo con una distribuzione di Lync Server 2013 Edge Server. La Federazione è configurata per l'uso di Office Communications Server 2007 R2 Director. Verificare che entrambe le distribuzioni vengano eseguite correttamente, i servizi vengano avviati ed è possibile amministrare ogni distribuzione prima di passare alla fase successiva.
+È ora necessario disporre di una distribuzione di Office Communications Server 2007 R2 server perimetrale legacy, indicata dalla presenza di BackCompatSite, in parallelo con una distribuzione di Lync Server 2013 Edge Server. La Federazione è configurata per l'utilizzo del Director di Office Communications Server 2007 R2. Prima di passare alla fase successiva, verificare che entrambe le distribuzioni funzionino correttamente, che i servizi siano stati avviati e che sia possibile amministrare ogni distribuzione.
 
-![Generatore di topologie con server perimetrale OCS](images/JJ204682.171363a3-eaf0-4c94-bd41-02b1ab6fa7dc(OCS.15).jpg "Generatore di topologie con server perimetrale OCS")
+![Generatore di topologie che mostra il server perimetrale OCS](images/JJ204682.171363a3-eaf0-4c94-bd41-02b1ab6fa7dc(OCS.15).jpg "Generatore di topologie che mostra il server perimetrale OCS")
 
 </div>
 

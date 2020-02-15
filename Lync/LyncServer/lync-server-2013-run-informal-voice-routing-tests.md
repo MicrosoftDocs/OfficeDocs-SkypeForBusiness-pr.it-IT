@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: eseguire test di routing vocale informale'
+title: 'Lync Server 2013: esecuzione di test di routing vocale informali'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185904
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2f916de228545a560c94bc45ea0a774ccc538c60
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d8edac9a9bd955165a2e20197fd340ea80c2e27a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765074"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007755"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="run-informal-voice-routing-tests-in-lync-server-2013"></a>Eseguire test di routing vocale informale in Lync Server 2013
+# <a name="run-informal-voice-routing-tests-in-lync-server-2013"></a>Eseguire test informali di routing vocale in Lync Server 2013
 
 </div>
 
@@ -35,77 +35,74 @@ ms.locfileid: "41765074"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-08-07_
+_**Ultimo argomento modificato:** 2012-08-07_
 
-È possibile usare la finestra di dialogo **Crea informazioni per il routing vocale** per eseguire test informali prima di creare un vero e proprio test case. Quando si è soddisfatti del risultato di un test, è possibile salvarlo come test case formale.
+È possibile utilizzare la finestra di dialogo **Crea informazioni test case routing vocale** per eseguire test informativi prima di creare un test case vero e proprio. Quando si è soddisfatti del risultato di un test, è possibile salvarlo come test case formale.
 
 <div>
 
-## <a name="to-run-an-informal-voice-routing-test"></a>Per eseguire un test di routing vocale informale
+## <a name="to-run-an-informal-voice-routing-test"></a>Per eseguire un test informale del routing vocale
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **routing vocale**e quindi fare clic su **Test routing vocale**.
+3.  Sulla barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Test routing vocale**.
 
-4.  Nella pagina **test Voice routing** fare clic su **Crea informazioni sui casi di test per il routing vocale**.
+4.  Nella pagina **Test routing vocale** fare clic su **Crea informazioni test case routing vocale**.
 
-5.  Nel campo **numero composto** Digitare il numero di telefono che si vuole usare per questo test. Questo numero verrà normalizzato e visualizzato nel campo **numero normalizzato** del riquadro **risultati** .
+5.  Nel campo **Numero composto** digitare il numero di telefono da utilizzare per il test. Questo numero verrà normalizzato e visualizzato nel campo **Numero normalizzato** del riquadro **Risultati**.
 
-6.  Nell'elenco **dial plan** selezionare il dial plan da usare per testare il numero selezionato. L'impostazione predefinita è il dial plan globale.
+6.  Nell'elenco **Dial plan** selezionare il dial plan da utilizzare per il test del numero composto. Per impostazione predefinita viene utilizzato il dial plan globale.
     
-    Quando si esegue il test, la prima regola di normalizzazione in questo dial plan che corrisponde al numero composto verrà visualizzata nel campo **regola di normalizzazione** del riquadro **risultati** .
+    Quando si esegue il test, la prima regola di normalizzazione del dial plan che corrisponde al numero composto verrà visualizzata nel campo **Regola di normalizzazione** del riquadro **Risultati**.
 
-7.  Nell'elenco dei **criteri vocali** selezionare il criterio vocale da usare per testare il numero selezionato. L'impostazione predefinita è il criterio vocale globale.
+7.  Nell'elenco **Criteri vocali** selezionare i criteri vocali da utilizzare per il test del numero composto. Per impostazione predefinita vengono utilizzati i criteri vocali globali.
     
-    Quando si esegue il test, il primo record di utilizzo PSTN corrispondente in questo criterio vocale verrà visualizzato nel **primo campo utilizzo PSTN** del riquadro **risultati** . Inoltre, la prima route vocale corrispondente associata a questo record di utilizzo PSTN verrà visualizzata nel campo **First Route** .
+    Quando si esegue il test, il primo record di utilizzo PSTN dei criteri vocali verrà visualizzato nel campo **Primo utilizzo PSTN** del riquadro **Risultati**. Inoltre, la prima route vocale corrispondente associata a questo record di utilizzo PSTN verrà visualizzata nel campo **Prima route**.
 
-8.  Opzionale Selezionare la casella **di controllo popola da utente** se si vuole testare il numero di telefono con il criterio vocale assegnato a un determinato utente.
+8.  (Facoltativo) Selezionare la casella di controllo **Popola da utente** se si desidera testare il numero composto rispetto ai criteri vocali assegnati a un determinato utente.
     
-    1.  Fare clic su **Sfoglia** per visualizzare la finestra di dialogo **Seleziona utenti VoIP aziendale** .
+    1.  Fare clic su **Sfoglia** per visualizzare la finestra di dialogo **Seleziona utenti VoIP aziendale**.
     
-    2.  Fare clic su **trova** per visualizzare l'elenco di utenti abilitati per VoIP aziendale.
+    2.  Fare clic su **Trova** per visualizzare l'elenco di utenti abilitati per VoIP aziendale.
     
-    3.  Fare doppio clic sul nome utente di cui si vuole usare il criterio vocale assegnato per questo test. Il campo **policy** viene ora popolato con il criterio vocale assegnato all'utente selezionato.
+    3.  Fare doppio clic dell'utente a cui sono assegnati i criteri vocali da utilizzare per il test. Il campo **Criteri** viene ora popolato con i criteri vocali assegnati all'utente selezionato.
     
-    Quando si esegue il test, il primo record di utilizzo PSTN (Public Switched Telephone Network) corrispondente in questo criterio vocale verrà visualizzato nel **primo campo utilizzo PSTN** del riquadro **risultati** . Inoltre, la prima route vocale corrispondente associata a questo record di utilizzo PSTN verrà visualizzata nel campo **First Route** .
+    Quando si esegue il test, il primo record di utilizzo PSTN (Public Switched Telephone Network) dei criteri vocali corrispondente verrà visualizzato nel campo **Primo utilizzo PSTN** del riquadro **Risultati**. Inoltre, la prima route vocale corrispondente associata a questo record di utilizzo PSTN verrà visualizzata nel campo **Prima route**.
 
-9.  Fare clic su **Esegui** per eseguire il test case. I risultati vengono visualizzati nel riquadro destro della finestra di dialogo.
+9.  Fare clic su **Esegui** per eseguire il test case. I risultati verranno visualizzati nel pannello destro della finestra di dialogo.
 
-10. Opzionale Fare clic su **Salva come** se si vuole salvare la configurazione di test come test case formale.
+10. (Facoltativo) Fare clic su **Salva con nome** se si desidera salvare questa configurazione di test come test case formale.
     
-    1.  Nel campo **nome** della finestra di dialogo **Salva informazioni sul test case di routing vocale** digitare un nome univoco per il test case.
+    1.  Nel campo **Nome** della finestra di dialogo **Salva informazioni test case routing vocale** digitare un nome univoco per il test case.
         
-        Il nome deve essere univoco tra tutti i casi di test di routing vocale nella distribuzione vocale aziendale. Può essere di lunghezza fino a 32 caratteri e può contenere caratteri alfanumerici, oltre alla barra rovesciata (\\), punto (.) o carattere di sottolineatura\_().
+        Il nome deve essere univoco tra tutti i test case di routing vocale nella distribuzione di VoIP aziendale. Può avere una lunghezza massima di 32 caratteri e può contenere caratteri alfanumerici, oltre alla barra rovesciata (\\), al punto (.) o al carattere di sottolineatura (\_).
     
-    2.  Tieni presente che i campi rimanenti nella finestra di dialogo **Salva informazioni sul test case di routing vocale** sono di sola lettura e vengono prepopolati dalla configurazione *e* dai risultati del test informale. Verificare che questa sia la configurazione che si vuole salvare per il test case.
+    2.  Si noti che i campi rimanenti della finestra di dialogo **Salva informazioni test case routing vocale** sono di sola lettura e vengono compilati preventivamente dai risultati *e* dalla configurazione di test informale. Verificare che la configurazione sia quella che si desidera salvare per il test case.
         
         <div>
         
 
         > [!NOTE]  
-        > I valori dei risultati del test vengono usati per precompilare i campi nella finestra di dialogo <STRONG>Salva informazioni sul caso di test del routing vocale</STRONG> come indicato di seguito: 
+        > I valori dei risultati vengono utilizzati per prepopolare i campi nella finestra di dialogo <STRONG>Salva informazioni test case routing vocale</STRONG> come indicato di seguito: 
         > <UL>
         > <LI>
-        > <P>La <STRONG>traduzione prevista</STRONG> viene prepopolata con il valore nel campo <STRONG>numero normalizzato</STRONG> .</P>
+        > <P>Il campo <STRONG>Conversione prevista</STRONG> è prepopolato con il valore del campo <STRONG>Numero normalizzato</STRONG>.</P>
         > <LI>
-        > <P>La <STRONG>Route prevista</STRONG> viene prepopolata con il valore nel campo <STRONG>First Route</STRONG> .</P>
+        > <P>Il campo <STRONG>Route prevista</STRONG> è prepopolato con il valore del campo <STRONG>Prima route</STRONG>.</P>
         > <LI>
-        > <P>Il <STRONG>record di utilizzo PSTN previsto</STRONG> viene precompilato con il valore nel <STRONG>primo campo utilizzo PSTN</STRONG> .</P></LI></UL>Se non sono state trovate corrispondenze per uno di questi valori durante l'esecuzione di test, il campo corrispondente è vuoto nella finestra di dialogo <STRONG>Salva informazioni sul test case di routing vocale</STRONG> .
-
-        
-        </div>
+        > <P>Il campo <STRONG>Utilizzo PSTN previsto</STRONG> è prepopolato con il valore del campo <STRONG>Primo utilizzo PSTN</STRONG>.</P></LI></UL>Se durante l'esecuzione del test non vengono trovate corrispondenze per uno di questi valori, il campo corrispondente sarà vuoto nella finestra di dialogo <STRONG>Salva informazioni test case routing vocale</STRONG>.</div>
     
-    3.  Fare clic su **OK** per salvare il test case oppure fare clic su **Annulla** per tornare alla finestra di dialogo **Visualizza informazioni sul test dei casi di routing vocale** per sviluppare ulteriormente il test prima di salvarlo.
+    3.  Fare clic su **OK** per salvare il test case oppure su **Annulla** per tornare alla finestra di dialogo **Crea informazioni test case routing vocale** per sviluppare ulteriormente il test prima di salvarlo.
 
-11. Fare clic su **commit**e quindi su **Commit all**.
+11. Fare clic su **Commit** e quindi su **Salva tutto**.
     
     <div>
     
 
     > [!NOTE]  
-    > Ogni volta che si crea un test case di routing vocale, è necessario eseguire il comando <STRONG>commit tutti</STRONG> per pubblicare il test case. Per informazioni dettagliate, vedere <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">pubblicare le modifiche in sospeso nella configurazione del routing vocale in Lync Server 2013</A> nella documentazione Operations.
+    > Ogni volta che si crea un test case di routing vocale, è necessario eseguire il comando <STRONG>Salva tutto</STRONG> per pubblicarlo. Per ulteriori informazioni, vedere <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">pubblicare le modifiche in sospeso alla configurazione del routing vocale in Lync Server 2013</A> nella documentazione relativa alle operazioni.
 
     
     </div>
@@ -123,8 +120,8 @@ _**Argomento Ultima modifica:** 2012-08-07_
 [Importare test case di routing vocale in Lync Server 2013](lync-server-2013-import-voice-routing-test-cases.md)  
 
 
-[Configurazione dei dial plan in Lync Server 2013](lync-server-2013-configuring-dial-plans.md)  
-[Configurazione dei criteri vocali, dei record di utilizzo PSTN e delle route vocali in Lync Server 2013](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)  
+[Configurazione di dial plan in Lync Server 2013](lync-server-2013-configuring-dial-plans.md)  
+[Configurazione di criteri vocali, record di utilizzo PSTN e route vocali in Lync Server 2013](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)  
   
 
 </div>

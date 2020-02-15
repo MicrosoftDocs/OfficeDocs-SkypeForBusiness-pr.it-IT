@@ -12,16 +12,16 @@ ms:contentKeyID: 48185179
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f0cf422ddab501acf521c26c36d8f373bd42dbf9
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ff72248e691d3e5358fda79a98d318cfc3a382eb
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762774"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008448"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41762774"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
 Per configurare l'infrastruttura di Microsoft Lync Server 2013 in modo che funzioni con System Center Operations Manager, è necessario eseguire tre operazioni:
 
-  - Identificare e configurare il server di gestione di Operations Manager principale di System Center. La configurazione del server di gestione include l'installazione di System Center Operations Manager 2012 o System Center Operations Manager 2007 R2, nonché la configurazione di un database back-end con SQL Server. La versione effettiva di SQL Server che è necessario utilizzare dipende dalla versione di System Center Operations Manager in uso. Per informazioni dettagliate, vedere [configurazione del server di gestione principale in Lync server 2013](lync-server-2013-configuring-the-primary-management-server.md).
+  - Identificare e configurare il server di gestione di System Center Operations Manager principale. La configurazione del server di gestione include l'installazione di System Center Operations Manager 2012 o System Center Operations Manager 2007 R2, nonché la configurazione di un database back-end tramite SQL Server. La versione effettiva di SQL Server che è necessario utilizzare dipende dalla versione di System Center Operations Manager in uso. Per informazioni dettagliate, vedere [Configuring the primary Management Server in Lync server 2013](lync-server-2013-configuring-the-primary-management-server.md).
 
-  - Identificare e configurare i computer di Lync Server che si desidera monitorare. Per monitorare un computer Lync Server tramite System Center Operations Manager, è necessario installare i file dell'agente di System Center Operations Manager e configurare ogni server per fungere da proxy.
+  - Identificare e configurare i computer Lync Server che si desidera monitorare. Per monitorare un computer Lync Server tramite System Center Operations Manager, è necessario installare i file dell'agente System Center Operations Manager e configurare ogni server affinché funga da proxy.
 
-  - Identificare e configurare i computer che si vuole usare come *nodi di monitoraggio*di Lync Server. I nodi Watcher sono computer che eseguono periodicamente transazioni sintetiche di Lync Server, ovvero cmdlet di Windows PowerShell che verificano che i componenti principali di Lync Server, ad esempio la possibilità di accedere al sistema o la possibilità di scambiare messaggi istantanei, siano lavoro come previsto.
+  - Identificare e configurare i computer che si desidera utilizzare come *nodi di monitoraggio*di Lync Server. I nodi Watcher sono computer che eseguono periodicamente transazioni sintetiche di Lync Server, che sono cmdlet di Windows PowerShell che verificano che i componenti principali di Lync Server, ad esempio la possibilità di accedere al sistema o la possibilità di scambiare messaggi istantanei siano funziona come previsto.
 
-Gli argomenti di questa sezione contengono istruzioni per eseguire ognuna di queste attività.
+Negli argomenti di questa sezione sono contenute le istruzioni per eseguire ognuna di queste attività.
 
 <div>
 

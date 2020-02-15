@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella SessionDetails'
+title: 'Lync Server 2013: tabella SessionDetails'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184559
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b68c50fc17199c68a69c5a7c6dd6abc8a5bd1dac
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fee9a2f2b59fc523224a778004b5c0beb041a12d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764794"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007745"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41764794"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-Ogni record rappresenta una sessione peer-to-peer, che potrebbe essere una chiamata telefonica VoIP-VoIP, una sessione di messaggistica istantanea a due parti o un altro tipo di sessione. È possibile eseguire un join di tabella con la [tabella multimediale in Lync Server 2013](lync-server-2013-media-table.md) per trovare i dettagli di ogni elemento multimediale coinvolto in questa sessione.
+Ogni record rappresenta una sessione peer-to-peer, ovvero una chiamata telefonica VoIP-VoIP, una sessione di messaggistica istantanea con due partecipanti o un altro tipo di sessione. È possibile eseguire una tabella di join con la [tabella media in Lync Server 2013](lync-server-2013-media-table.md) per trovare i dettagli di ogni supporto coinvolto in questa sessione.
 
-Tieni presente che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWithDeskPhone sono stati eliminati dalla tabella SessionDetails usata in Microsoft Lync Server 2013.
+Si noti che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWithDeskPhone sono stati eliminati dalla tabella SessionDetails utilizzata in Microsoft Lync Server 2013.
 
 
 <table>
@@ -60,167 +60,167 @@ Tieni presente che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWit
 <tbody>
 <tr class="odd">
 <td><p><strong>SessionIdTime</strong></p></td>
-<td><p>DateTime</p></td>
-<td><p>Primaria, straniera</p></td>
-<td><p>Ora della richiesta della sessione. Usato in combinazione con <strong>SessionIdSeq</strong> per identificare in modo univoco una sessione. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+<td><p>datetime</p></td>
+<td><p>Primaria, esterna</p></td>
+<td><p>Data e ora della richiesta di sessione. Valore utilizzato insieme a <strong>SessionIdSeq</strong> per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SessionIdSeq</strong></p></td>
 <td><p>int</p></td>
-<td><p>Primaria, straniera</p></td>
-<td><p>Numero ID per identificare la sessione. Usato in combinazione con <strong>SessionIdTime</strong> per identificare in modo univoco una sessione. * vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> per altre informazioni.</p></td>
+<td><p>Primaria, esterna</p></td>
+<td><p>ID identificativo della sessione. Utilizzato insieme a <strong>SessionIdTime</strong> per identificare in modo univoco una sessione. * vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> per ulteriori informazioni.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CorrelationId</strong></p></td>
 <td><p>uniqueidentifier</p></td>
 <td></td>
-<td><p>GUID per la correlazione di più sessioni.</p></td>
+<td><p>GUID per correlare più sessioni.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ReplaceDialogIdTime</strong></p></td>
-<td><p>DateTime</p></td>
-<td><p>Esterna</p></td>
-<td><p>Numero ID per identificare la finestra di dialogo che è stata sostituita dalla sessione corrente. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+<td><p>datetime</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Numero ID per l'identificazione della finestra di dialogo sostituita dalla sessione corrente. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ReplaceDialogIdSeq</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Numero ID per identificare la sessione. Usato in combinazione con <strong>ReplacesDialogIdTime</strong> per identificare in modo univoco una sessione sostituita da questa sessione. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Numero ID per l'identificazione della sessione. Valore utilizzato in combinazione con <strong>ReplacesDialogIdTime</strong> per identificare in modo univoco una sessione sostituita da questa sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>User1Id</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>ID di un utente nella sessione. Per altre informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella utenti in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>ID di un utente nella sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>User2Id</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>ID dell'altro utente nella sessione. Per altre informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella utenti in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>ID dell'altro utente nella sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>User1EndpointId</strong></p></td>
 <td><p>uniqueIdentifier</p></td>
 <td></td>
-<td><p>GUID che identifica l'endpoint usato dal primo utente della sessione.</p>
+<td><p>GUID che identifica l'endpoint utilizzato dal primo utente della sessione.</p>
 <p>Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>User2EndpointId</strong></p></td>
 <td><p>uniqueIdentifier</p></td>
 <td></td>
-<td><p>GUID che identifica l'endpoint usato dal secondo utente nella sessione.</p>
+<td><p>GUID che identifica l'endpoint utilizzato dal secondo utente della sessione.</p>
 <p>Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>TargetUserId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>L'originale all'URI utente nella richiesta SIP. per altre informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella utenti in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>URI utente di destinazione originale nella richiesta SIP. Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SessionStartedById</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>ID dell'utente che ha avviato la sessione. Per altre informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella utenti in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>ID dell'utente che ha avviato la sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>OnBehalfOfId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Indica l'ID dell'utente di chi è il chiamante per conto. Per altre informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella utenti in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Indica l'ID dell'utente per conto del quale il chiamante esegue la chiamata. Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ReferredById</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>ID dell'utente con cui si fa riferimento alla chiamata. Per altre informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella utenti in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>ID dell'utente da quale proviene la chiamata. Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ServerId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>ID del server front-end usato per questa sessione. Per altre informazioni, vedere la <a href="lync-server-2013-servers-table.md">tabella server in Lync server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>ID del Front End Server utilizzato per questa sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-servers-table.md">tabella Servers in Lync server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PoolId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>ID del pool in cui è stata acquisita la sessione. Per altre informazioni, vedere la <a href="lync-server-2013-pools-table.md">Tabella Pools in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>ID del pool in cui è stata acquisita la sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-pools-table.md">Tabella Pools in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ContentTypeID</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Tipo di contenuto usato nella sessione. Per altre informazioni, vedere la <a href="lync-server-2013-contenttypes-table.md">tabella ContentTypes in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Tipo di contenuto utilizzato nella sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-contenttypes-table.md">tabella ContentTypes in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>User1ClientVerId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Versione client usata da User1. Per altre informazioni, vedere la <a href="lync-server-2013-clientversions-table.md">Tabella ClientVersions in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Versione del client utilizzata da User1. Per ulteriori informazioni, vedere la <a href="lync-server-2013-clientversions-table.md">Tabella ClientVersions in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>User2ClientVerId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Versione client usata da User2. Per altre informazioni, vedere la <a href="lync-server-2013-clientversions-table.md">Tabella ClientVersions in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Versione del client utilizzata da User2. Per ulteriori informazioni, vedere la <a href="lync-server-2013-clientversions-table.md">Tabella ClientVersions in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>User1EdgeServerid</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Server perimetrale usato da User1. Per altre informazioni, vedere la <a href="lync-server-2013-edgeservers-table.md">tabella EdgeServers in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Server perimetrale utilizzato da User1. Per ulteriori informazioni, vedere la <a href="lync-server-2013-edgeservers-table.md">tabella EdgeServers in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>User2EdgeServerid</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Edge Server usato da User2. Per altre informazioni, vedere la <a href="lync-server-2013-edgeservers-table.md">tabella EdgeServers in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Server perimetrale utilizzato da User2. Per ulteriori informazioni, vedere la <a href="lync-server-2013-edgeservers-table.md">tabella EdgeServers in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>IsUser1Internal</strong></p></td>
 <td><p>po'</p></td>
 <td></td>
-<td><p>Se l'utente User1 ha effettuato l'accesso da Internal o not.</p></td>
+<td><p>Indica se User1 è connesso o meno dall'interno.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>IsUser2Internal</strong></p></td>
 <td><p>po'</p></td>
 <td></td>
-<td><p>Se User2 è connesso da Internal o not.</p></td>
+<td><p>Indica se User2 è connesso o meno dall'interno.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>InviteTime</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td></td>
-<td><p>L'ora della prima richiesta di invito. Questo campo viene in genere popolato da dati generati dal messaggio di invito iniziale nella sessione. Se non è presente alcun messaggio di invito, il campo viene popolato con la data e l'ora del primo messaggio SIP pertinente (BYE, CANCEL, MESSAGE o INFO). Questo campo viene in genere popolato da dati generati dal messaggio di invito iniziale nella sessione. Se non è presente alcun messaggio di invito, il campo viene popolato con la data e l'ora del primo messaggio SIP pertinente (BYE, CANCEL, MESSAGE o INFO).</p></td>
+<td><p>Ora della prima richiesta INVITE. Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO). Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ResponseTime</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td></td>
-<td><p>L'ora della risposta al primo messaggio di invito. Questo campo viene in genere popolato da dati generati dal messaggio di invito iniziale nella sessione. Se non è presente alcun messaggio di invito, il campo viene popolato con la data e l'ora del primo messaggio SIP pertinente (BYE, CANCEL, MESSAGE o INFO).</p></td>
+<td><p>Ora della risposta al primo messaggio INVITE. I dati contenuti in questo campo sono, tipicamente, quelli generati dal messaggio INVITE iniziale nella sessione. Se non esiste un messaggio INVITE, il campo conterrà data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ResponseCode</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Codice di risposta SIP per l'invito alla sessione. Questo campo viene in genere popolato da dati generati dal messaggio di invito iniziale nella sessione. Se non è presente alcun messaggio di invito, il campo viene popolato con la data e l'ora del primo messaggio SIP pertinente (BYE, CANCEL, MESSAGE o INFO).</p></td>
+<td><p>Codice di risposta SIP all'invito alla sessione. Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DiagnosticId</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>ID di diagnostica acquisito dall'intestazione SIP.</p></td>
+<td><p>ID diagnostica acquisito dall'intestazione SIP.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CallPriority</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Chiama priorità. Per altre informazioni, vedere la <a href="lync-server-2013-callpriorities-table.md">Tabella CallPriorities in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Priorità della chiamata. Per ulteriori informazioni, vedere la <a href="lync-server-2013-callpriorities-table.md">Tabella CallPriorities in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>User1MessageCount</strong></p></td>
@@ -236,15 +236,15 @@ Tieni presente che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWit
 </tr>
 <tr class="even">
 <td><p><strong>SessionEndTime</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td></td>
-<td><p>Ora alla fine della sessione.</p></td>
+<td><p>Orario al termine della sessione.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MediaTypes</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Set di bit che indica il tipo di elemento multimediale della sessione. Sono elencate le definizioni dei tipi:</p>
+<td><p>Set di bit che indica il tipo di contenuto multimediale della sessione. Di seguito sono elencate le definizioni dei tipi:</p>
 <h3 id="section-1"> </h3>
 <div>
 <table>
@@ -254,24 +254,24 @@ Tieni presente che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWit
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Messaggistica istantanea</p></td>
-<td><p>1</p></td>
+<td><p>IM</p></td>
+<td><p>1 </p></td>
 </tr>
 <tr class="even">
 <td><p>FILE_TRANSFER</p></td>
-<td><p>2</p></td>
+<td><p>2 </p></td>
 </tr>
 <tr class="odd">
 <td><p>REMOTE_ASSISTANCE</p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 </tr>
 <tr class="even">
 <td><p>APP_SHARING</p></td>
-<td><p>8</p></td>
+<td><p>8 </p></td>
 </tr>
 <tr class="odd">
 <td><p>AUDIO</p></td>
-<td><p>16</p></td>
+<td><p>16 </p></td>
 </tr>
 <tr class="even">
 <td><p>VIDEO</p></td>
@@ -290,42 +290,42 @@ Tieni presente che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWit
 <td><p><strong>User1Flag</strong></p></td>
 <td><p>smallint</p></td>
 <td></td>
-<td><p>Set di bit che indica gli attributi User1. Sono elencate le definizioni di attributo seguenti:</p>
+<td><p>Set di bit che indica gli attributi di User1. Sono elencate le definizioni di attributo seguenti:</p>
 <ul>
-<li><p>0x01-integrato con il telefono desktop</p></li>
+<li><p>0x01 - Integrato con telefono da tavolo</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p><strong>User2Flag</strong></p></td>
 <td><p>smallint</p></td>
 <td></td>
-<td><p>Set di bit che indica gli attributi User2. Sono elencate le definizioni di attributo seguenti:</p>
+<td><p>Set di bit che indica gli attributi di User2. Sono elencate le definizioni di attributo seguenti:</p>
 <ul>
-<li><p>0x01-integrato con il telefono desktop</p></li>
+<li><p>0x01 - Integrato con telefono da tavolo</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p><strong>CallFlag</strong></p></td>
 <td><p>smallint</p></td>
 <td></td>
-<td><p>Set di bit che indica gli attributi di chiamata. Sono elencate le definizioni di attributo seguenti:</p>
+<td><p>Set di bit che indica gli attributi della chiamata. Sono elencate le definizioni di attributo seguenti:</p>
 <ul>
-<li><p>0x01-Riprova sessione</p></li>
-<li><p>0x02-chiamata effettuata dall'agente per conto di un gruppo di risposte</p></li>
+<li><p>0x01 - Nuovi tentativi di sessione</p></li>
+<li><p>0x02 - Chiamata effettuata da un agente per conto di un Response Group</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Elaborate</strong></p></td>
+<td><p><strong>Elaborati</strong></p></td>
 <td><p>po'</p></td>
 <td></td>
-<td><p>Per l'uso interno da parte del servizio di monitoraggio.</p>
+<td><p>Per uso interno del servizio di monitoraggio.</p>
 <p>Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-\*Per la maggior parte delle sessioni, SessionIdSeq avrà il valore 1. Se più sessioni iniziano esattamente nello stesso momento, il SessionIdSeq per uno sarà 1, per un altro sarà 2 e così via.
+\*Per la maggior parte delle sessioni, SessionIdSeq avrà il valore 1. Se più sessioni iniziano esattamente alla stessa ora, il valore SessionIdSeq per una sarà 1, per l'altra sarà 2 e così via.
 
 </div>
 

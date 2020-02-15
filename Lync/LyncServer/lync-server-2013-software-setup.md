@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Installazione del software'
+title: 'Lync Server 2013: configurazione del software'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183469
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 659ae8b1184e22b8e681f6c8166d079655b12c4f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8a1fc4f23779c7f75dc7e11a9eed7050e6bd737c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764462"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41985101"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="software-setup-for-lync-server-2013"></a>Installazione del software per Lync Server 2013
+# <a name="software-setup-for-lync-server-2013"></a>Configurazione del software per Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41764462"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-29_
+_**Ultimo argomento modificato:** 2012-06-29_
 
-Questa sezione descrive in dettaglio la configurazione del software necessaria dopo avere configurato l'hardware nell'ambiente.
+In questa sezione viene illustrata in dettaglio l'impostazione software necessaria dopo avere impostato l'hardware nell'ambiente.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Installare i sistemi operativi e il software prerequisito nei server per Lync Server 2013](lync-server-2013-install-operating-systems-and-prerequisite-software-on-servers.md)
+  - [Installare i sistemi operativi e il software prerequisito sui server per Lync Server 2013](lync-server-2013-install-operating-systems-and-prerequisite-software-on-servers.md)
 
   - [Configurare l'archiviazione dei file per Lync Server 2013](lync-server-2013-configure-dfs-file-storage.md)
 
@@ -51,7 +51,7 @@ Questa sezione descrive in dettaglio la configurazione del software necessaria d
 
   - [Configurare IIS per Lync Server 2013](lync-server-2013-configure-iis.md)
 
-  - [Installazione di Windows PowerShell 3.0 per Lync Server 2013](lync-server-2013-installing-windows-powershell-3-0.md)
+  - [Installazione di Windows PowerShell 3,0 per Lync Server 2013](lync-server-2013-installing-windows-powershell-3-0.md)
 
 </div>
 

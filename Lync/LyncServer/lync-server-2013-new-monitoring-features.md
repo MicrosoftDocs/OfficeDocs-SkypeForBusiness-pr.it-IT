@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Nuove funzionalità di monitoraggio'
+title: 'Lync Server 2013: nuove funzionalità di monitoraggio'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185883
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8ce8fa7b78aa00008cd5aaf748ba66a78ecefbe7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 53144bfd9a05d1fc20671b1d7b6aeb22b0f84f6f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725602"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007765"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41725602"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-08_
+_**Ultimo argomento modificato:** 2012-11-08_
 
-Lync Server 2013 non dispone di un ruolo di server di monitoraggio separato. Il monitoraggio è una funzionalità facoltativa disponibile in tutti i server front-end in una distribuzione di Enterprise Edition e nei server Standard Edition, che possono essere implementati e configurati per un pool o un sito. Novità di Lync Server 2013, è possibile abilitare il mirroring del database di SQL Server per il database di monitoraggio.
+Lync Server 2013 non dispone di un ruolo di Monitoring Server separato. Il monitoraggio è una funzionalità facoltativa disponibili in tutti i Front End Server nella distribuzione Enterprise Edition e nei server Standard Edition, che può essere implementata e configurata per un pool o un sito. Nuovo di Lync Server 2013, è possibile abilitare il mirroring del database di SQL Server per il database di monitoraggio.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: report sull'ora di partecipazione alla conferenza"
+title: 'Lync Server 2013: rapporto tempo di partecipazione alla conferenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185686
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cce80d3c61e94752423c70de9827d41243da7119
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 96b1e8af206e6beaec1bf96bc2d91b88f672bd4f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757010"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007865"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="conference-join-time-report-in-lync-server-2013"></a>Report sull'ora di partecipazione alla conferenza in Lync Server 2013
+# <a name="conference-join-time-report-in-lync-server-2013"></a>Rapporto tempo di partecipazione alla conferenza in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41757010"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-04-23_
+_**Ultimo argomento modificato:** 2014-04-23_
 
-Il riepilogo dell'ora di partecipazione alla conferenza consente di determinare il tempo impiegato dagli utenti per partecipare a una conferenza. Il report Mostra il tempo medio di partecipazione (in millisecondi) e fornisce anche una ripartizione che consente di conoscere il numero di utenti che hanno potuto partecipare a una conferenza in 2 secondi o meno, il numero di utenti necessari tra 2 e 5 secondi per partecipare alla conferenza e così via.
+Il rapporto Tempo di partecipazione alla conferenza consente di determinare il tempo richiesto agli utenti per partecipare a una conferenza. Nel rapporto viene visualizzato il tempo medio di partecipazione (in millisecondi) e sono inoltre disponibili informazioni suddivise che indicano il numero di utenti in grado di partecipare a una conferenza in massimo 2 secondi, il numero di utenti che hanno impiegato tra 2 e 5 secondi per partecipare e così via.
 
 <div>
 
-## <a name="accessing-the-conference-join-time-report"></a>Accesso al report tempo di partecipazione alla conferenza
+## <a name="accessing-the-conference-join-time-report"></a>Accesso al rapporto Tempo di partecipazione alla conferenza
 
-È possibile accedere al report Time join della conferenza dalla Home page dei report di monitoraggio.
+È possibile accedere al rapporto Tempo di partecipazione alla conferenza dalla home page Relazioni monitoraggio.
 
 </div>
 
@@ -51,9 +51,9 @@ Il riepilogo dell'ora di partecipazione alla conferenza consente di determinare 
 
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Nella tabella seguente sono elencati i filtri che è possibile usare con il report tempo di partecipazione alla conferenza.
+I filtri consentono di restituire un set di dati più circoscritto o di visualizzare in modi diversi i dati restituiti. Nella tabella riportata di seguito vengono elencati i filtri che è possibile utilizzare con il rapporto Tempo di partecipazione alla conferenza.
 
-### <a name="conference-join-time-report-filters"></a>Filtri per i report sull'ora di conferenza
+### <a name="conference-join-time-report-filters"></a>Filtri del rapporto Tempo di partecipazione alla conferenza
 
 <table>
 <colgroup>
@@ -68,50 +68,50 @@ I filtri consentono di restituire un set di dati più mirato o di visualizzare i
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Da</strong></p></td>
-<td><p>Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:</p>
-<p>7/7/2012 1:00 PM</p>
-<p>Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>From</strong></p></td>
+<td><p>Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:</p>
+<p>07/07/2012 13.00</p>
+<p>Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>A</strong></p></td>
-<td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:</p>
-<p>7/7/2012 1:00 PM</p>
-<p>Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>To</strong></p></td>
+<td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</p>
+<p>07/07/2012 13.00</p>
+<p>Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Intervallo</strong></p></td>
-<td><p>Intervallo di tempo. Selezionare una delle opzioni seguenti:</p>
+<td><p>Selezionare uno dei seguenti:</p>
 <ul>
-<li><p>Ogni ora (può essere visualizzato un massimo di 25 ore)</p></li>
-<li><p>Giornaliera (è possibile visualizzare un massimo di 31 giorni)</p></li>
-<li><p>Settimanale (può essere visualizzato un massimo di 12 settimane)</p></li>
-<li><p>Mensile (può essere visualizzato un massimo di 12 mesi)</p></li>
+<li><p>Orario (è possibile visualizzare un massimo di 25 ore)</p></li>
+<li><p>Giornaliero (è possibile visualizzare un massimo di 31 giorni)</p></li>
+<li><p>Settimanale (è possibile visualizzare un massimo di 12 settimane)</p></li>
+<li><p>Mensile (è possibile visualizzare un massimo di 12 mesi)</p></li>
 </ul>
-<p>Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, viene visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 7/7/2012 e una data di fine 2/28/2012, i dati verranno visualizzati per i giorni 8/7/2012 12:00 da AM a 9/7/2012 12:00 AM, ovvero un totale di 31 giorni di dati.</p></td>
+<p>Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo giornaliero con data di inizio 07/07/2012 e data di fine 28/02/2012, verranno visualizzati i dati per i giorni da 07/08/2012 ore 00.00 a 07/09/2012 ore 00:00 (per un totale di 31 giorni).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Pool</strong></p></td>
-<td><p>Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su <strong>[tutti]</strong> per visualizzare i dati per tutti i pool. Questo elenco a discesa viene compilato automaticamente in base ai record nel database.</p></td>
+<td><p>Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su <strong>[Tutto]</strong> per visualizzare i dati di tutti i pool. Le voci disponibili in questo elenco a discesa vengono inserite automaticamente in base ai record presenti nel database.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Sessioni di conferenza</strong></p></td>
+<td><p><strong>Sessioni conferenza</strong></p></td>
 <td><p>Tipo di sessione. I valori consentiti sono:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>Sessioni di stato attiva (lo stato principale è lo stato di policy e il gestore di stato per le riunioni online e coordina tutti gli aspetti di una conferenza</p></li>
+<li><p>Sessioni di messa a fuoco (lo stato attivo è il criterio centrale e il responsabile dello stato per le riunioni online e coordina tutti gli aspetti di una conferenza</p></li>
 <li><p>Condivisione applicazioni</p></li>
-<li><p>Servizi di conferenza A/V</p></li>
+<li><p>Conferenze audio/video</p></li>
 </ul>
-<p>Se si seleziona [tutti], nella parte superiore del report verrà visualizzato il tempo totale di partecipazione alla conferenza. Tieni presente che questi totali sono solo per le conferenze pianificate con Microsoft Exchange o Microsoft Outlook.</p></td>
+<p>Se si seleziona [Tutto], nella parte superiore del rapporto verrà visualizzato il tempo totale di partecipazione alla conferenza. Si noti che questi totali sono riferiti solo alle conferenze pianificate tramite Microsoft Exchange o Microsoft Outlook.</p></td>
 </tr>
 </tbody>
 </table>
@@ -123,9 +123,9 @@ I filtri consentono di restituire un set di dati più mirato o di visualizzare i
 
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni fornite nel report tempo di partecipazione alla conferenza.
+La tabella seguente elenca le informazioni disponibili nel rapporto Tempo di partecipazione alla conferenza.
 
-### <a name="conference-join-time-report-metrics"></a>Metriche del report Time join conferenza
+### <a name="conference-join-time-report-metrics"></a>Metriche del rapporto Tempo di partecipazione alla conferenza
 
 <table>
 <colgroup>
@@ -136,31 +136,31 @@ Nella tabella seguente sono elencate le informazioni fornite nel report tempo di
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>Data</strong></p>
-<p>Il titolo effettivo per questa metrica sarà diverso a seconda dell'intervallo selezionato.</p></td>
+<p>Il titolo effettivo di questa metrica varia in base all'intervallo selezionato.</p></td>
 <td><p>No</p></td>
-<td><p>Data e ora in cui la conferenza ha avuto luogo.</p></td>
+<td><p>Data e ora in cui ha avuto luogo la conferenza.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Totale sessioni</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di sessioni, incluse le sessioni di successo, le sessioni non riuscite (errori previsti e gli errori imprevisti) e le sessioni Uncategorized.</p></td>
+<td><p>Numero totale di sessioni, comprendente le sessioni con esito positivo, le sessioni con esito negativo (per errori sia previsti che imprevisti) e le sessioni senza categoria.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Media (MS)</strong></p></td>
+<td><p><strong>Media (ms)</strong></p></td>
 <td><p>No</p></td>
-<td><p>Intervallo di tempo medio (in millisecondi) che ha richiesto ai partecipanti di partecipare alla conferenza.</p></td>
+<td><p>Quantità media di tempo (in millisecondi) impiegato dai partecipanti per partecipare alla conferenza.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Sessioni &lt; 2 secondi, volume</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero di partecipanti che hanno potuto partecipare alla conferenza in meno di 2 secondi.</p></td>
+<td><p>Numero di partecipanti che sono riusciti a partecipare alla conferenza in meno di 2 secondi.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Sessioni &lt; 2 secondi, percentuale</strong></p></td>
@@ -168,34 +168,34 @@ Nella tabella seguente sono elencate le informazioni fornite nel report tempo di
 <td></td>
 </tr>
 <tr class="even">
-<td><p><strong>Sessioni 2-5 secondi, volume</strong></p></td>
+<td><p><strong>Sessioni 2-5 secondi, Volume</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero di partecipanti che hanno impiegato tra 2 secondi e 5 secondi per partecipare alla conferenza.</p></td>
+<td><p>Numero di partecipanti che hanno impiegato da 2 a 5 secondi per partecipare alla conferenza.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Sessioni 2-5 secondi, percentuale</strong></p></td>
+<td><p><strong>Sessioni 2-5 secondi, Percentuale</strong></p></td>
 <td><p>No</p></td>
-<td><p>Percentuale dei partecipanti totali alle chiamate che hanno impiegato tra 2 secondi e 5 secondi per partecipare alla conferenza.</p></td>
+<td><p>Percentuale del numero totale di partecipanti che hanno impiegato da 2 a 5 secondi per partecipare alla conferenza.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Sessioni 5-10 secondi, volume</strong></p></td>
+<td><p><strong>Sessioni 5-10 secondi, Volume</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero di partecipanti che hanno impiegato tra 5 secondi e 10 secondi per partecipare alla conferenza.</p></td>
+<td><p>Numero di partecipanti che hanno impiegato da 5 a 10 secondi per partecipare alla conferenza.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Sessioni 5-10 secondi, percentuale</strong></p></td>
+<td><p><strong>Sessioni 5-10 secondi, Percentuale</strong></p></td>
 <td><p>No</p></td>
-<td><p>Percentuale dei partecipanti totali alle chiamate che hanno impiegato tra 5 secondi e 10 secondi per partecipare alla conferenza.</p></td>
+<td><p>Percentuale del numero totale di partecipanti che hanno impiegato da 5 a 10 secondi per partecipare alla conferenza.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Sessioni &gt; di 10 secondi, volume</strong></p></td>
+<td><p><strong>Sessioni &gt; 10 secondi, volume</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero di partecipanti che hanno richiesto più di 10 secondi per partecipare alla conferenza.</p></td>
+<td><p>Numero di partecipanti che hanno impiegato più di 10 secondi per partecipare alla conferenza.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Sessioni &gt; di 10 secondi, percentuale</strong></p></td>
+<td><p><strong>Sessioni &gt; 10 secondi, percentuale</strong></p></td>
 <td><p>No</p></td>
-<td><p>Percentuale dei partecipanti totali alle chiamate che hanno richiesto più di 10 secondi per partecipare alla conferenza.</p></td>
+<td><p>Percentuale del numero totale di partecipanti che hanno impiegato più di 10 secondi per partecipare alla conferenza.</p></td>
 </tr>
 </tbody>
 </table>

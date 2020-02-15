@@ -12,16 +12,16 @@ ms:contentKeyID: 48185891
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8ff9e19288aaaa09b8c72f857f3cfcf4e5331dd7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 63a0bf66a7b09801bea94e8995757543511e298e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742006"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007265"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41742006"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-Ogni record contiene l'evento client per un endpoint in una videochiamata. In genere, una chiamata ha due record, uno per il chiamante e uno per il chiamato.
+Ogni record contiene l'evento client per un endpoint in una chiamata video. In genere, una chiamata ha due record, uno per il chiamante e uno per il destinatario della chiamata.
 
 
 <table>
@@ -58,41 +58,41 @@ Ogni record contiene l'evento client per un endpoint in una videochiamata. In ge
 <tbody>
 <tr class="odd">
 <td><p><strong>ConferenceDateTime</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td><p>Principale</p></td>
-<td><p>A cui si fa riferimento dalla <a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a>.</p></td>
+<td><p>A cui viene fatto riferimento dalla <a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SessionSeq</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>A cui si fa riferimento dalla <a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a>.</p></td>
+<td><p>A cui viene fatto riferimento dalla <a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MediaLineLabel</strong></p></td>
 <td><p>tinyint</p></td>
 <td><p>Principale</p></td>
-<td><p>A cui si fa riferimento dalla <a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a>.</p></td>
+<td><p>A cui viene fatto riferimento dalla <a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>FromCaller</strong></p></td>
 <td><p>po'</p></td>
 <td><p>Principale</p></td>
-<td><p>0: dati del destinatario</p>
+<td><p>0: dati del destinatario della chiamata</p>
 <p>1: dati del chiamante</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NetworkBandwidthLowEventRatio</strong></p></td>
 <td></td>
 <td><p> </p></td>
-<td><p>Percentuale della sessione l'evento LowBandwidth è stato generato per lo stato "Bad". La larghezza di banda disponibile è insufficiente per un'esperienza vocale accettabile.</p></td>
+<td><p>Percentuale di sessione l'evento LowBandwidth è stato generato per lo stato ' Bad '. La larghezza di banda disponibile non è sufficiente per un'esperienza vocale accettabile.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>NetworkReceiveQualityEventRatio</strong></p></td>
 <td></td>
 <td><p> </p></td>
-<td><p>Percentuale della sessione l'evento ReceiveSendQuality è stato generato per lo stato "Bad".</p>
-<p>La qualità della rete in termini di jitter o perdita di pacchetti è grave e ha un impatto sulla qualità dell'audio ricevuto.</p></td>
+<td><p>Percentuale di sessione l'evento l'ReceiveSendQuality è stato generato per lo stato ' Bad '.</p>
+<p>La qualità della rete in termini di instabilità o perdita di pacchetti è grave e ha un impatto sulla qualità dell'audio ricevuto.</p></td>
 </tr>
 </tbody>
 </table>

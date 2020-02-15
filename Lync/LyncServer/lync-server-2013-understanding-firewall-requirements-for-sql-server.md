@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Informazioni sui requisiti del firewall per SQL Server'
+title: 'Lync Server 2013: informazioni sui requisiti del firewall per SQL Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183781
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dba3296ee01f997857660d2a3f328f663d32cf99
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ba04284106bcd1b0cbf17d214d8ad0b1a1ff9024
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744816"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006682"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41744816"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Per una distribuzione Standard Edition, le eccezioni del firewall vengono create automaticamente durante l'installazione di Lync Server 2013. Per le distribuzioni di Enterprise Edition, tuttavia, è necessario configurare manualmente le eccezioni del firewall nel server back-end di SQL Server. Il protocollo TCP/IP consente di usare una determinata porta per un indirizzo IP specifico. Questo significa che per il server basato su SQL Server è possibile assegnare l'istanza di database predefinita la porta TCP predefinita 1433. Per qualsiasi altra istanza sarà necessario usare Gestione configurazione SQL Server per assegnare porte univoche e inutilizzate. Questo argomento illustra:
+Per una distribuzione di Standard Edition, le eccezioni del firewall vengono create automaticamente durante l'installazione di Lync Server 2013. Per le distribuzioni di Enterprise Edition, tuttavia, è necessario configurare manualmente le eccezioni del firewall sul server back-end di SQL Server. Il protocollo TCP/IP consente un solo utilizzo di una determinata porta per un determinato indirizzo IP. Per il server basato su SQL Server, è pertanto possibile assegnare all'istanza di database predefinita la porta TCP predefinita 1433. Per qualsiasi altra istanza, sarà necessario utilizzare Gestione configurazione SQL Server per assegnare porte univoche e inutilizzate. In questo argomento vengono trattati i temi seguenti:
 
-  - Requisiti per un'eccezione del firewall quando si usa l'istanza predefinita
+  - Requisiti per un'eccezione del firewall nei casi in cui viene utilizzata l'istanza predefinita
 
-  - Requisiti per un'eccezione del firewall per il servizio SQL Server browser
+  - Requisiti per un'eccezione del firewall per il servizio SQL Server Browser
 
-  - Requisiti per le porte di ascolto statiche quando si usano istanze denominate
+  - Requisiti per le porte di attesa statiche nei casi in cui vengono utilizzate istanze denominate
 
 <div>
 
-## <a name="requirements-for-a-firewall-exception-when-using-the-default-instance"></a>Requisiti per un'eccezione del firewall quando si usa l'istanza predefinita
+## <a name="requirements-for-a-firewall-exception-when-using-the-default-instance"></a>Requisiti per un'eccezione del firewall nei casi in cui viene utilizzata l'istanza predefinita
 
-Se si usa l'istanza predefinita di SQL Server per qualsiasi database durante la distribuzione di Lync Server 2013, vengono usati i requisiti di regola del firewall seguenti per garantire la comunicazione dal pool Front-end all'istanza predefinita di SQL Server.
+Se si utilizza l'istanza predefinita di SQL Server per qualsiasi database durante la distribuzione di Lync Server 2013, vengono utilizzati i requisiti di regola del firewall riportati di seguito per garantire la comunicazione dal pool Front end all'istanza predefinita di SQL Server.
 
 
 <table>
@@ -60,16 +60,16 @@ Se si usa l'istanza predefinita di SQL Server per qualsiasi database durante la 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Protocollo</th>
+<th>Protocol</th>
 <th>Porta</th>
-<th>Direzione</th>
+<th>Direction</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>TCP</p></td>
 <td><p>1433</p></td>
-<td><p>In ingresso a SQL Server</p></td>
+<td><p>In ingresso-SQL Server</p></td>
 </tr>
 </tbody>
 </table>
@@ -79,9 +79,9 @@ Se si usa l'istanza predefinita di SQL Server per qualsiasi database durante la 
 
 <div>
 
-## <a name="requirements-for-a-firewall-exception-for-the-sql-server-browser-service"></a>Requisiti per un'eccezione del firewall per il servizio SQL Server browser
+## <a name="requirements-for-a-firewall-exception-for-the-sql-server-browser-service"></a>Requisiti per un'eccezione del firewall per il servizio SQL Server Browser
 
-Il servizio SQL Server browser individuerà le istanze di database e comunicherà la porta che l'istanza (denominata o predefinita) è configurata per l'uso.
+Il servizio SQL Server Browser individuerà le istanze di database e comunicherà la porta configurata per l'istanza (denominata o predefinita).
 
 
 <table>
@@ -92,16 +92,16 @@ Il servizio SQL Server browser individuerà le istanze di database e comunicher�
 </colgroup>
 <thead>
 <tr class="header">
-<th>Protocollo</th>
+<th>Protocol</th>
 <th>Porta</th>
-<th>Direzione</th>
+<th>Direction</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>UDP</p></td>
 <td><p>1434</p></td>
-<td><p>In ingresso</p></td>
+<td><p>Inbound</p></td>
 </tr>
 </tbody>
 </table>
@@ -111,9 +111,9 @@ Il servizio SQL Server browser individuerà le istanze di database e comunicher�
 
 <div>
 
-## <a name="requirements-for-static-listening-ports-when-using-named-instances"></a>Requisiti per le porte di ascolto statiche quando si usano istanze denominate
+## <a name="requirements-for-static-listening-ports-when-using-named-instances"></a>Requisiti per le porte di attesa statiche nei casi in cui vengono utilizzate istanze denominate
 
-Quando si usano istanze denominate nella configurazione di SQL Server per i database che supportano Lync Server 2013, è possibile configurare le porte statiche tramite Gestione configurazione SQL Server. Dopo aver assegnato le porte statiche a ogni istanza denominata, è possibile creare eccezioni per ogni porta statica nel firewall.
+Quando si utilizzano le istanze denominate nella configurazione di SQL Server per i database che supportano Lync Server 2013, è necessario configurare le porte statiche mediante Gestione configurazione SQL Server. Dopo l'assegnazione delle porte statiche a ogni istanza denominata, creare eccezioni per ogni porta statica nel firewall.
 
 
 <table>
@@ -124,16 +124,16 @@ Quando si usano istanze denominate nella configurazione di SQL Server per i data
 </colgroup>
 <thead>
 <tr class="header">
-<th>Protocollo</th>
+<th>Protocol</th>
 <th>Porta</th>
-<th>Direzione</th>
+<th>Direction</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>TCP</p></td>
-<td><p>Staticamente definiti</p></td>
-<td><p>In ingresso</p></td>
+<td><p>Definita in modo statico</p></td>
+<td><p>Inbound</p></td>
 </tr>
 </tbody>
 </table>
@@ -145,7 +145,7 @@ Quando si usano istanze denominate nella configurazione di SQL Server per i data
 
 ## <a name="sql-server-documentation"></a>Documentazione di SQL Server
 
-La documentazione di Microsoft SQL Server 2012 fornisce indicazioni dettagliate su come configurare l'accesso tramite firewall per i database. Per informazioni dettagliate su Microsoft SQL Server 2012, vedere la pagina relativa alla configurazione di Windows Firewall per consentire l' [http://go.microsoft.com/fwlink/p/?linkId=218031](http://go.microsoft.com/fwlink/p/?linkid=218031)accesso a SQL Server.
+La documentazione di Microsoft SQL Server 2012 fornisce informazioni dettagliate su come configurare l'accesso del firewall per i database. Per informazioni dettagliate su Microsoft SQL Server 2012, vedere la sezione relativa alla configurazione di Windows Firewall per consentire l' [http://go.microsoft.com/fwlink/p/?linkId=218031](http://go.microsoft.com/fwlink/p/?linkid=218031)accesso a SQL Server.
 
 </div>
 

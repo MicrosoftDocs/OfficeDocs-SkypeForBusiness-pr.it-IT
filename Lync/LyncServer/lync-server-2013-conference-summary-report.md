@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report di riepilogo conferenze'
+title: 'Lync Server 2013: rapporto riepilogativo conferenze'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184299
 ms.date: 09/03/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 68858d56c47953a99928a59e5f83485ba9d305cb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f3ad7208095473529204fd69db631718d8bd774e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757000"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007855"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="conference-summary-report-in-lync-server-2013"></a>Report Riepilogo conferenze in Lync Server 2013
+# <a name="conference-summary-report-in-lync-server-2013"></a>Report riepilogativo conferenze in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41757000"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-09-03_
+_**Ultimo argomento modificato:** 2014-09-03_
 
-Il report Riepilogo conferenze offre una panoramica complessiva delle sessioni di conferenza online. Una conferenza include in genere più di 2 utenti e richiede l'uso di servizi di conferenza di Microsoft Lync Server 2013. In confronto, una sessione peer-to-peer in genere coinvolge solo 2 utenti e non richiede l'uso dei servizi di conferenza di Lync Server. Le attività peer-to-peer sono segnalate nel [report di riepilogo attività peer-to-peer in Lync Server 2013](lync-server-2013-peer-to-peer-activity-summary-report.md).
+Il Rapporto riepilogativo conferenze offre una visuale generale delle sessioni di conferenza online. Una conferenza in genere coinvolge più di 2 utenti e richiede l'utilizzo di Microsoft Lync Server 2013 Servizi di conferenza. Una sessione peer-to-peer, invece, coinvolge in genere solo 2 utenti e non richiede l'utilizzo dei servizi di conferenza di Lync Server. Le attività peer-to-peer sono segnalate nel [rapporto riepilogativo attività peer-to-peer in Lync Server 2013](lync-server-2013-peer-to-peer-activity-summary-report.md).
 
-Il report Riepilogo conferenza non solo indica il numero di conferenze svolte durante un determinato periodo di tempo (ogni ora, ogni giorno, ogni settimana, ogni mese), ma indica anche il totale delle persone che hanno partecipato a tali conferenze e il numero totale di conferenze esclusive organizzatori.
+Il rapporto riepilogativo conferenze non solo indica quante conferenze sono state tenute durante un determinato periodo di tempo (ogni ora, giornaliero, settimanale, mensile) ma indica anche il numero totale di persone che hanno partecipato a tali conferenze e il numero totale di conferenze esclusive organizzatori.
 
-Un organizzatore "univoco" è chiunque abbia pianificato almeno una conferenza. Ad esempio, se Pilar Ackerman pianifica una conferenza che conta come unica organizzazione. Se Ken REQUESTO programma le conferenze di 148, conta anche come unico organizzatore. Ad esempio, la tabella seguente mostra 8 conferenze programmate, ma solo tre organizzatori unici (Ken, Pilar Ackerman e David AHS).
+Con organizzatore "univoco” si intende qualsiasi utente che pianifica almeno una conferenza. Se Luisa Cazzaniga pianifica una conferenza, ad esempio, sarà conteggiata come organizzatore univoco. Se Davide Garghentini pianifica 148 conferenze, anche lui sarà conteggiato come singolo organizzatore univoco. La tabella seguente, ad esempio, indica 8 conferenze pianificate ma solo tre organizzatori univoci, ovvero Davide Garghentini, Luisa Cazzaniga e Luca Argentiero.
 
 
 <table>
@@ -51,54 +51,54 @@ Un organizzatore "univoco" è chiunque abbia pianificato almeno una conferenza. 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Organizzatore di conferenze</th>
+<th>Organizzatore conferenza</th>
 <th>Data conferenza</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Ken</p></td>
-<td><p>7/7/2012 10:00 AM</p></td>
+<td><p>Davide Garghentini</p></td>
+<td><p>07/07/2012 10.00</p></td>
 </tr>
 <tr class="even">
-<td><p>David AHS</p></td>
-<td><p>7/7/2012 10:00 AM</p></td>
+<td><p>Luca Argentiero</p></td>
+<td><p>07/07/2012 10.00</p></td>
 </tr>
 <tr class="odd">
-<td><p>Ken</p></td>
-<td><p>7/7/2012 11:00 AM</p></td>
+<td><p>Davide Garghentini</p></td>
+<td><p>07/07/2012 11.00</p></td>
 </tr>
 <tr class="even">
-<td><p>Pilar Ackerman</p></td>
-<td><p>7/7/2012 11:00 AM</p></td>
+<td><p>Daniela Cazzaniga</p></td>
+<td><p>07/07/2012 11.00</p></td>
 </tr>
 <tr class="odd">
-<td><p>Ken</p></td>
-<td><p>7/7/2012 1:00 PM</p></td>
+<td><p>Davide Garghentini</p></td>
+<td><p>07/07/2012 13.00</p></td>
 </tr>
 <tr class="even">
-<td><p>Pilar Ackerman</p></td>
-<td><p>7/7/2012 2:00 PM</p></td>
+<td><p>Daniela Cazzaniga</p></td>
+<td><p>07/07/2012 14.00</p></td>
 </tr>
 <tr class="odd">
-<td><p>Ken</p></td>
-<td><p>7/2/2012 10:00 AM</p></td>
+<td><p>Davide Garghentini</p></td>
+<td><p>02/07/2012 10.00</p></td>
 </tr>
 <tr class="even">
-<td><p>Pilar Ackerman</p></td>
-<td><p>7/2/2012 10:00 AM</p></td>
+<td><p>Daniela Cazzaniga</p></td>
+<td><p>02/07/2012 10.00</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Il report Riepilogo conferenza indica anche il numero di conferenze incluse audio e/o video.
+Il Rapporto riepilogativo conferenze indica inoltre il numero di conferenze con audio e video.
 
 <div>
 
-## <a name="accessing-the-conference-summary-report"></a>Accesso al report di riepilogo conferenza
+## <a name="accessing-the-conference-summary-report"></a>Accesso al rapporto riepilogativo conferenze
 
-È possibile accedere al report di riepilogo conferenza dalla Home page dei report di monitoraggio. È possibile eseguire il drill-down nel report attività conferenza facendo clic su una delle metriche seguenti:
+È possibile accedere al rapporto riepilogativo conferenze dalla home page Relazioni monitoraggio. È possibile eseguire il drill-down al Rapporto attività conferenza facendo clic su una delle metriche seguenti:
 
   - Totale conferenze
 
@@ -108,9 +108,9 @@ Il report Riepilogo conferenza indica anche il numero di conferenze incluse audi
 
 <div>
 
-## <a name="making-the-best-use-of-the-conference-summary-report"></a>Uso ottimale del report di riepilogo conferenza
+## <a name="making-the-best-use-of-the-conference-summary-report"></a>Utilizzo ottimale del rapporto riepilogativo conferenze
 
-I valori totali per la maggior parte delle metriche usate nel report di riepilogo conferenza possono essere trovati nella parte inferiore del report. scorrere verso il basso per visualizzare i valori, ad esempio il numero totale di conferenze detenute durante il periodo di tempo specificato, e il numero totale di persone che hanno partecipato a tali conferenze. Una metrica non totalizzata nella parte inferiore del report è totale organizzatori di conferenze univoci. Perché no? Ecco un motivo. Supponiamo che tu stia esaminando il valore di un mese di dati. Il giorno 1 hai avuto 34 organizzatori di conferenze univoci; il giorno 2 si sono organizzati 27 organizzatori di conferenze univoci. Vuol dire che hai avuto 61 organizzatori di conferenze univoci per questi due giorni? Non necessariamente. Dopo tutto, tutte le 27 persone che hanno organizzato conferenze il giorno 2 potrebbero essere tra le 34 persone che hanno organizzato conferenze il giorno 1. In questo semplice report, ad esempio, si noti che Ken Rein e Pilar Ackerman hanno programmato le conferenze sia in 7/7/2012 che in 7/2/2012:
+I valori totali per la maggior parte delle metriche utilizzate nel Rapporto riepilogativo conferenze sono disponibili nella parte inferiore del rapporto. Scorrere verso il basso per visualizzare valori come il numero totale di conferenze tenutesi durante il periodo di tempo specificato e il numero totale di persone che hanno partecipato a tali conferenze. Una metrica per la quale non è disponibile il totale nella parte inferiore del rapporto è Totale organizzatori conferenza univoci. Uno dei motivi è questo: si supponga di voler esaminare i dati mensili. Nel giorno 1 sono stati rilevati 34 organizzatori di conferenza univoci, nel giorno 2 gli organizzatori univoci sono 27. Ciò non significa tuttavia che per i due giorni il totale degli organizzatori univoci sia 61. Tutte le 27 persone che hanno organizzato conferenze nel giorno 2 potrebbero essere infatti incluse nei 34 organizzatori univoci del giorno 1. In questo semplice rapporto, ad esempio, notare che Davide Garghentini e Daniela Cazzaniga hanno pianificato conferenze sia in data 07/07/2012 che in data 02/07/2012:
 
 
 <table>
@@ -120,48 +120,48 @@ I valori totali per la maggior parte delle metriche usate nel report di riepilog
 </colgroup>
 <thead>
 <tr class="header">
-<th>Organizzatore di conferenze</th>
+<th>Organizzatore conferenza</th>
 <th>Data conferenza</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Ken</p></td>
-<td><p>7/7/2012 10:00 AM</p></td>
+<td><p>Davide Garghentini</p></td>
+<td><p>07/07/2012 10.00</p></td>
 </tr>
 <tr class="even">
-<td><p>David AHS</p></td>
-<td><p>7/7/2012 10:00 AM</p></td>
+<td><p>Luca Argentiero</p></td>
+<td><p>07/07/2012 10.00</p></td>
 </tr>
 <tr class="odd">
-<td><p>Ken</p></td>
-<td><p>7/7/2012 11:00 AM</p></td>
+<td><p>Davide Garghentini</p></td>
+<td><p>07/07/2012 11.00</p></td>
 </tr>
 <tr class="even">
-<td><p>Pilar Ackerman</p></td>
-<td><p>7/7/2012 11:00 AM</p></td>
+<td><p>Daniela Cazzaniga</p></td>
+<td><p>07/07/2012 11.00</p></td>
 </tr>
 <tr class="odd">
-<td><p>Ken</p></td>
-<td><p>7/7/2012 1:00 PM</p></td>
+<td><p>Davide Garghentini</p></td>
+<td><p>07/07/2012 13.00</p></td>
 </tr>
 <tr class="even">
-<td><p>Pilar Ackerman</p></td>
-<td><p>7/7/2012 2:00 PM</p></td>
+<td><p>Daniela Cazzaniga</p></td>
+<td><p>07/07/2012 14.00</p></td>
 </tr>
 <tr class="odd">
-<td><p>Ken</p></td>
-<td><p>7/2/2012 10:00 AM</p></td>
+<td><p>Davide Garghentini</p></td>
+<td><p>02/07/2012 10.00</p></td>
 </tr>
 <tr class="even">
-<td><p>Pilar Ackerman</p></td>
-<td><p>7/2/2012 10:00 AM</p></td>
+<td><p>Daniela Cazzaniga</p></td>
+<td><p>02/07/2012 10.00</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Per avere un'idea migliore del numero totale di utenti univoci che hanno organizzato conferenze, modificare l'intervallo di tempo; ad esempio, esamina i dati per mese anziché per giorno.
+Per ottenere un'indicazione più precisa del numero totale di utenti univoci che hanno organizzato conferenze, modificare l'intervallo di tempo, ad esempio esaminare i dati su base mensile anziché giornaliera.
 
 </div>
 
@@ -169,11 +169,11 @@ Per avere un'idea migliore del numero totale di utenti univoci che hanno organiz
 
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Ad esempio, il report Riepilogo conferenza consente di scegliere la modalità di raggruppamento dei dati. In questo caso, le conferenze sono raggruppate per ora, giorno, settimana o mese.
+I filtri consentono di ottenere un set di dati più specifico o di visualizzare in modo diverso i dati restituiti. Ad esempio, il rapporto riepilogativo conferenze consente di scegliere la modalità di raggruppamento dei dati. In questo caso le conferenze sono raggruppabili per ora, giorno, settimana o mese.
 
-Nella tabella seguente sono elencati i filtri che è possibile usare con il report di riepilogo conferenza.
+Nella tabella seguente sono elencati i filtri applicabili al rapporto riepilogativo conferenze.
 
-### <a name="conference-summary-report-filters"></a>Filtri di report Riepilogo conferenze
+### <a name="conference-summary-report-filters"></a>Filtri del rapporto riepilogativo conferenze
 
 <table>
 <colgroup>
@@ -188,35 +188,35 @@ Nella tabella seguente sono elencati i filtri che è possibile usare con il repo
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Da</strong></p></td>
-<td><p>Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:</p>
-<p>7/7/2012 1:00 PM</p>
-<p>Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>From</strong></p></td>
+<td><p>Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:</p>
+<p>07/07/2012 13.00</p>
+<p>Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>A</strong></p></td>
-<td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:</p>
-<p>7/7/2012 1:00 PM</p>
-<p>Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>To</strong></p></td>
+<td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</p>
+<p>7/7/2012 13.00</p>
+<p>Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Intervallo</strong></p></td>
-<td><p>Intervallo di tempo. Selezionare una delle opzioni seguenti:</p>
+<td><p>Selezionare uno dei seguenti:</p>
 <ul>
-<li><p>Ogni ora (può essere visualizzato un massimo di 25 ore)</p></li>
-<li><p>Giornaliera (è possibile visualizzare un massimo di 31 giorni)</p></li>
-<li><p>Settimanale (può essere visualizzato un massimo di 12 settimane)</p></li>
-<li><p>Mensile (può essere visualizzato un massimo di 12 mesi)</p></li>
+<li><p>Orario (è possibile visualizzare un massimo di 25 ore)</p></li>
+<li><p>Giornaliero (è possibile visualizzare un massimo di 31 giorni)</p></li>
+<li><p>Settimanale (è possibile visualizzare un massimo di 12 settimane)</p></li>
+<li><p>Mensile (è possibile visualizzare un massimo di 12 mesi)</p></li>
 </ul>
-<p>Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, vengono visualizzati solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 7/7/2012 e una data di fine 2/28/2012, i dati verranno visualizzati per i giorni 8/7/2012 12:00 da AM a 9/7/2012 12:00 AM, ovvero un totale di 31 giorni di dati.</p></td>
+<p>Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo giornaliero con data di inizio 07/07/2012 e data di fine 28/02/2012, verranno visualizzati i dati per i giorni da 07/08/2012 ore 12.00 a 07/09/2012 ore 12.00 (per un totale di 31 giorni).</p></td>
 </tr>
 </tbody>
 </table>
@@ -228,9 +228,9 @@ Nella tabella seguente sono elencati i filtri che è possibile usare con il repo
 
 ## <a name="metrics"></a>Metriche
 
-Tabella seguente le informazioni fornite dal report di riepilogo conferenze.
+La tabella seguente elenca le informazioni disponibili nel rapporto riepilogativo conferenze.
 
-### <a name="conference-summary-report-metrics"></a>Metriche report Riepilogo conferenze
+### <a name="conference-summary-report-metrics"></a>Metriche del rapporto riepilogativo conferenze
 
 <table>
 <colgroup>
@@ -241,59 +241,59 @@ Tabella seguente le informazioni fornite dal report di riepilogo conferenze.
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Oraria</strong></p>
-<p><strong>Quotidiana</strong></p>
+<td><p><strong>Orario</strong></p>
+<p><strong>Giornaliero</strong></p>
 <p><strong>Settimanale</strong></p>
 <p><strong>Mensile</strong></p></td>
 <td><p>No</p></td>
-<td><p>Indica l'intervallo di tempo selezionato sulla barra degli strumenti filtro. Se applicabile, è possibile fare clic su un intervallo di tempo specifico per visualizzare informazioni dettagliate per l'intervallo. Se ad esempio si usa l'intervallo giornaliero e si fa clic su 7/7/2012, viene visualizzata una ripartizione oraria dell'attività di registrazione utente per tale data.</p></td>
+<td><p>Indica l'intervallo di tempo selezionato sulla barra degli strumenti dei filtri. Ove applicabile, è possibile fare clic su un determinato intervallo di tempo per visualizzare informazioni dettagliate relative a tale intervallo. Se ad esempio si sta utilizzando l'intervallo giornaliero e si fa clic su 07/07/2012, verranno visualizzate le attività di registrazione degli utenti per tale data, suddivise per ore.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Totale conferenze</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di conferenze (indipendentemente dal tipo di conferenza) che si sono svolte. Quando si fa clic su questo elemento, nel report viene visualizzato il report attività conferenza per il periodo di tempo selezionato.</p></td>
+<td><p>Numero totale di conferenze eseguite, indipendentemente dal tipo di conferenza. Facendo clic su questo elemento viene visualizzato il rapporto attività conferenza per il periodo di tempo selezionato.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Totale partecipanti</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di persone che hanno partecipato alle conferenze. Quando si fa clic su questo elemento, nel report viene visualizzato il report attività conferenza per il periodo di tempo selezionato.</p></td>
+<td><p>Numero totale di persone che hanno partecipato alle conferenze. Facendo clic su questo elemento viene visualizzato il rapporto attività conferenza per il periodo di tempo selezionato.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Partecipanti medi per conferenza</strong></p></td>
+<td><p><strong>Numero medio di partecipanti per conferenza</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero medio di persone che hanno partecipato a una conferenza. Determinato dividendo le conferenze totali per il totale dei partecipanti.</p></td>
+<td><p>Numero medio di persone che hanno preso parte a una specifica conferenza, determinato dividendo il numero totale di conferenze per il numero totale di partecipanti.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Totale conferenze A/V</strong></p></td>
+<td><p><strong>Totale conferenze audio/video</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di conferenze che includono audio o video.</p></td>
+<td><p>Numero totale di conferenze con audio o video.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Totale minuti di conferenza A/V</strong></p></td>
+<td><p><strong>Totale minuti di conferenza audio/video</strong></p></td>
 <td><p>No</p></td>
 <td><p>Numero totale di minuti dedicati alle conferenze audio/video.</p>
-<p>La metrica totale minuti conferenze A/V riepiloga tutti i tipi di conferenze audio/visive, tra cui: conferenze A/V; Conferenze di messaggistica istantanea; Conferenze di condivisione delle app; Conferenze dati; e conferenze PSTN.</p></td>
+<p>La metrica Total A/V Conference minutes riepiloga tutti i tipi di conferenze audio/video, tra cui: conferenze A/V. Conferenze di messaggistica istantanea; Conferenze di condivisione app; Conferenze dati; e conferenze PSTN.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Totale minuti partecipanti alla conferenza A/V</strong></p></td>
+<td><p><strong>Totale minuti partecipante di conferenza audio/video</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di minuti per i partecipanti dedicati alle conferenze audio/video. Supponiamo ad esempio che un utente spenda 5 minuti in una conferenza audio/video e un secondo utente passi 3 minuti alla stessa conferenza. Il che rende un totale di 8 minuti per i partecipanti: 5 minuti più 3 minuti.</p></td>
+<td><p>Numero totale di minuti partecipante dedicati alle conferenze audio/video. Si supponga, ad esempio, che un utente dedichi 5 minuti a una conferenza audio/video e che un secondo utente ne dedichi 3 nella stessa conferenza. Si ottiene così un totale di 8 minuti partecipante (5+3).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Minuti media di conferenza A/V</strong></p></td>
+<td><p><strong>Media minuti di conferenza audio/video	</strong></p></td>
 <td><p>No</p></td>
 <td><p>Numero medio di minuti per conferenza audio/video.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Numero totale di organizzatori univoci delle conferenze</strong></p></td>
+<td><p><strong>Totale organizzatori conferenza univoci</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di utenti che hanno organizzato almeno una conferenza. Gli utenti che hanno organizzato più di una conferenza vengono conteggiati come un unico organizzatore, proprio come gli utenti che hanno organizzato una singola conferenza.</p></td>
+<td><p>Numero totale di utenti che hanno organizzato almeno una conferenza. Gli utenti che hanno organizzato più conferenze vengono considerati come un organizzatore unico, come gli utenti che hanno organizzato una sola conferenza.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Totale messaggi conferenza</strong></p></td>

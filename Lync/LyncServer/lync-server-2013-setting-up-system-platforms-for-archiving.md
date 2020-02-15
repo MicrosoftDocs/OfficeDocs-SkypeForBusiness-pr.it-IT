@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: configurazione di piattaforme di sistema per l'archiviazione"
+title: "Lync Server 2013: impostazione delle piattaforme di sistema per l'archiviazione"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183716
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 13682b7507e133dd49c102bf6c25293ff5da2c08
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 88e1a8aea999fdf134b0152a9d37b2d36fc81ee8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732076"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008668"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-system-platforms-for-archiving-in-lync-server-2013"></a>Configurazione di piattaforme di sistema per l'archiviazione in Lync Server 2013
+# <a name="setting-up-system-platforms-for-archiving-in-lync-server-2013"></a>Configurazione delle piattaforme di sistema per l'archiviazione in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41732076"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-09_
+_**Ultimo argomento modificato:** 2012-10-09_
 
-Prima di avviare la distribuzione dell'archiviazione, è necessario installare il sistema operativo necessario e qualsiasi altro software prerequisito su hardware che soddisfi i requisiti di sistema:
+Prima di iniziare la distribuzione di Archiviazione, è necessario installare il sistema operativo richiesto e gli altri componenti software prerequisiti in un'infrastruttura hardware che soddisfi i requisiti si sistema:
 
-  - ****   Le distribuzioni di Lync Server 2013 Platform Lync Server 2013 non dispongono di server di archiviazione. Gli agenti di raccolta dati unificati vengono invece eseguiti nei server front-end e nei server Standard Edition per acquisire dati per l'archiviazione, quindi non è necessaria una piattaforma di sistema separata per ospitare l'archiviazione.
+  - ****   Le distribuzioni di Lync Server 2013 Platform Lync Server 2013 non dispongono di server di archiviazione. Gli agenti di raccolta dati unificati vengono invece eseguiti nei front end server e nei server Standard Edition per acquisire i dati per l'archiviazione, pertanto non è necessaria alcuna piattaforma di sistema distinta per ospitare l'archiviazione.
 
-  - **Piattaforma di archiviazione dati**   in Lync Server 2013 è possibile archiviare i dati utilizzando una delle opzioni seguenti:
+  - **Piattaforma di archiviazione dei dati**   in Lync Server 2013, è possibile archiviare i dati utilizzando uno dei seguenti elementi:
     
-      - **Integrazione di Microsoft Exchange**   se si vuole archiviare i dati di archiviazione di Lync Server 2013 tramite la distribuzione di Exchange 2013, anziché o in aggiunta alla configurazione di un database separato per l'archiviazione dei dati di archiviazione, è necessario che la distribuzione di Exchange esegua Exchange 2013. Per informazioni dettagliate sulla configurazione di piattaforme di sistema per Exchange 2013, vedere la documentazione del prodotto Exchange.
+      - **Integrazione di Microsoft Exchange**   se si desidera archiviare i dati di archiviazione di Lync Server 2013 utilizzando la distribuzione di Exchange 2013 anziché o oltre alla configurazione di un database distinto per l'archiviazione dei dati di archiviazione, è necessario che la distribuzione di Exchange esegua Exchange 2013. Per informazioni dettagliate sulla configurazione delle piattaforme di sistema per Exchange 2013, vedere la documentazione del prodotto Exchange.
     
-      - **SQL Server**   se si vuole usare un database SQL Server separato per l'archiviazione dei dati di archiviazione, anziché o oltre a usare l'integrazione di Microsoft Exchange, è necessario configurare la piattaforma di sistema per il database prima della distribuzione dell'archiviazione. I requisiti specifici della piattaforma di sistema variano a seconda che si usi Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 per il database di archiviazione. Per informazioni dettagliate sulla configurazione di piattaforme di sistema per questi database, vedere la documentazione del prodotto Microsoft SQL Server 2008 R2 e Microsoft SQL Server 2012.
+      - **SQL Server**   se si desidera utilizzare un database di SQL Server separato per l'archiviazione dei dati di archiviazione, anziché o oltre a utilizzare l'integrazione di Microsoft Exchange, è necessario configurare la piattaforma di sistema per il database prima della distribuzione dell'archiviazione. I requisiti specifici della piattaforma di sistema variano a seconda che si utilizzi Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 per il database di archiviazione. Per informazioni dettagliate sulla configurazione delle piattaforme di sistema per questi database, vedere la documentazione del prodotto Microsoft SQL Server 2008 R2 e Microsoft SQL Server 2012.
 
-  - **Piattaforma file server**   Lync Server 2013 archivia i file di archiviazione di Lync Server nella stessa posizione specificata per l'archiviazione dei file quando si configurano i server front-end o i server Standard Edition. Non è possibile specificare una posizione separata per l'archiviazione dei file, quindi non è necessaria una piattaforma di sistema separata per archiviare l'archiviazione dei file. Se si usa l'integrazione di Microsoft Exchange, Exchange 2013 i file per le comunicazioni di Lync archiviati sono archiviati nei server di Exchange 2013 per gli utenti residenti in questi server di Exchange.
+  - **Piattaforma file server**   Lync Server 2013 archivia file di archiviazione di Lync Server nello stesso percorso specificato per l'archiviazione dei file quando si configurano i Front End Server o i server Standard Edition. Non è possibile specificare una posizione separata per l'archiviazione dei file di archiviazione e pertanto non è richiesta una piattaforma di sistema separata per tale archiviazione. Se si utilizza l'integrazione di Microsoft Exchange, Exchange 2013 i file per le comunicazioni Lync archiviate sono archiviati nei server Exchange 2013 per gli utenti ospitati nei server di Exchange.
 
 </div>
 

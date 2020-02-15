@@ -13,16 +13,16 @@ ms:contentKeyID: 48183592
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fee8a8894285a321a4a0bc51a7cdf0462be7af85
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 204c183ad63da3278d10b802d3f2140fa9a86a70
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729086"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006602"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -36,27 +36,27 @@ ms.locfileid: "41729086"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-11_
+_**Ultimo argomento modificato:** 2012-10-11_
 
-In un ambiente misto, se si crea un nuovo server applicazioni attendibile, è necessario impostare il pool di hop successivo come pool di Lync Server 2013. In un ambiente misto sia il pool legacy Lync Server 2010 che il pool Lync Server 2013 vengono visualizzati nell'elenco a discesa. La selezione del pool legacy non è supportata.
+In un ambiente misto, se si crea un nuovo server applicazioni attendibili, è necessario impostare il pool dell'hop successivo come pool di Lync Server 2013. In un ambiente misto, sia il pool di Lync Server 2010 legacy che il pool di Lync Server 2013 vengono visualizzati nell'elenco a discesa. La selezione del pool legacy non è supportata.
 
-**Selezionare Lync Server 2013 come hop successivo quando si crea un server applicazioni attendibile**
+**Selezionare Lync Server 2013 come hop successivo durante la creazione di un server applicazioni attendibile**
 
-1.  Aprire Generatore di topologie.
+1.  Apre lo strumento di generazione topologia
 
-2.  Nel riquadro sinistro fare clic con il pulsante destro del mouse su **server applicazioni attendibili** e scegliere **nuovo pool di applicazioni attendibili**.
+2.  Nel riquadro di sinistra fare clic con il pulsante destro del mouse su **Server applicazioni attendibili** e quindi scegliere **Nuovo pool di applicazioni attendibili**.
 
-3.  Immettere il **nome di dominio completo del pool** di applicazioni attendibili e selezionare se si tratta di un server singolo o multiplo.
+3.  Immettere il nome FQDN del pool di applicazioni attendibili in **FQDN pool** e specificare se sarà un pool a server singolo o a più server.
 
 4.  Fare clic su **Avanti**.
 
-5.  Nella pagina **selezionare l'hop successivo** , nell'elenco, selezionare il pool di front end di Lync Server 2013.
+5.  Nell'elenco nella pagina **selezionare l'hop successivo** selezionare il pool Front End di Lync Server 2013.
 
-6.  Fare clic su **fine**.
+6.  Fare clic su **Fine**.
 
-7.  Selezionare il nodo superiore **Lync Server** e scegliere **pubblica**dal menu **azione** .
+7.  Selezionare il nodo principale **Lync Server** e nel menu **Azioni** selezionare **Pubblica**.
     
-    Verificare che il **pool di applicazioni attendibili** sia stato creato correttamente ed è associato al pool Front-end corretto.
+    Verificare che il **Pool di applicazioni attendibili** sia stato creato correttamente e sia associato al pool Front End corretto.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: usare la registrazione avanzata per le transazioni sintetiche'
+title: 'Lync Server 2013: utilizzo della registrazione avanzata per le transazioni sintetiche'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183812
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 48efc99a49fd41678d07eef8685bc7f045397aa3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 421b691bd282b858eca64c9756e92dd24aac8b7b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744046"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007575"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="using-rich-logging-for-synthetic-transactions-in-lync-server-2013"></a>Uso della registrazione avanzata per le transazioni sintetiche in Lync Server 2013
+# <a name="using-rich-logging-for-synthetic-transactions-in-lync-server-2013"></a>Utilizzo della registrazione avanzata per le transazioni sintetiche in Lync Server 2013
 
 </div>
 
@@ -35,42 +35,42 @@ ms.locfileid: "41744046"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
-Le transazioni sintetiche (introdotte in Microsoft Lync Server 2010) consentono agli amministratori di verificare che gli utenti siano in grado di completare correttamente le attività comuni, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono che si trova nella rete PSTN (Public Switched Telephone Network). Questi test (confezionati come set di cmdlet di Windows PowerShell per Lync Server) possono essere condotti manualmente da un amministratore oppure possono essere eseguiti automaticamente da un'applicazione, ad esempio System Center Operations Manager.
+Le transazioni sintetiche (introdotte in Microsoft Lync Server 2010) consentono agli amministratori di verificare che gli utenti siano in grado di completare correttamente attività comuni, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono che si trova sulla rete PSTN (Public Switched Telephone Network). Questi test, che sono inclusi in un set di cmdlet di Windows PowerShell per Lync Server, possono essere eseguiti manualmente da un amministratore oppure possono essere gestiti automaticamente da un'applicazione, ad esempio System Center Operations Manager.
 
-In Lync Server 2010 le transazioni sintetiche si sono rivelate estremamente utili per aiutare gli amministratori a identificare i problemi del sistema. Il cmdlet **Test-CsRegistration** , ad esempio, potrebbe avvisare gli amministratori del fatto che alcuni utenti avevano difficoltà a registrarsi con Lync Server. Tuttavia, le transazioni sintetiche sono state alquanto meno utili per aiutare gli amministratori a determinare il motivo per cui questi utenti avevano difficoltà a registrarsi con Lync Server. Ciò è dovuto al fatto che le transazioni sintetiche non offrono informazioni dettagliate sulla registrazione che potrebbero aiutare gli amministratori a risolvere i problemi relativi a Lync Server. Nella migliore delle ipotesi, l'output dettagliato di una transazione sintetica ha fornito informazioni dettagliate che potrebbero consentire a un amministratore di indovinare il punto in cui si è verificato un problema.
+In Lync Server 2010, le transazioni sintetiche si sono rivelate estremamente utili per aiutare gli amministratori a identificare i problemi del sistema. Ad esempio, il cmdlet **Test-CsRegistration** può avvisare gli amministratori del fatto che alcuni utenti hanno riscontrato problemi di registrazione con Lync Server. Tuttavia, le transazioni sintetiche sono state un po' meno utili per aiutare gli amministratori a determinare il motivo per cui gli utenti hanno difficoltà a registrarsi con Lync Server. Ciò è dovuto al fatto che le transazioni sintetiche non forniscono informazioni dettagliate sulla registrazione che potrebbero aiutare gli amministratori a risolvere i problemi relativi a Lync Server. Nella maggior parte dei casi, l'output dettagliato di una transazione sintetica ha fornito informazioni dettagliate che potrebbero consentire a un amministratore di fare un'ipotesi dettagliata sul luogo in cui si è verificato un problema probabile.
 
-In Microsoft Lync Server 2013 le transazioni sintetiche sono state riprogettato per consentire una registrazione avanzata. "Rich logging" indica che, per ogni attività eseguita da una transazione sintetica, verranno registrate informazioni come questa:
+In Microsoft Lync Server 2013, le transazioni sintetiche sono state rielaborate in modo da garantire una registrazione avanzata. "Rich logging" significa che, per ogni attività intraprese da una transazione sintetica, verranno registrate informazioni come questa:
 
-  - Ora di inizio dell'attività
+  - L'ora di inizio dell'attività
 
-  - Il tempo di completamento dell'attività
+  - L'ora di fine dell'attività
 
-  - Azione eseguita (ad esempio, creazione, partecipazione o uscita di una conferenza; accesso a Lync Server; invio di un messaggio istantaneo e così via)
+  - Azione eseguita, ad esempio la creazione, l'aggiunta o l'uscita di una conferenza, l'accesso a Lync Server, l'invio di un messaggio istantaneo e così via
 
   - Messaggi informativi, dettagliati, di avviso o di errore generati durante l'esecuzione dell'attività
 
   - Messaggi di registrazione SIP
 
-  - Record di eccezioni o codici di diagnostica generati quando l'attività è stata eseguita
+  - Record delle eccezioni o codici diagnostici generati durante l'esecuzione dell'attività
 
-  - Il risultato netto della gestione dell'attività
+  - Il risultato dell'esecuzione dell'attività
 
-Queste informazioni vengono generate automaticamente ogni volta che viene eseguita una transazione sintetica. Le informazioni non vengono tuttavia visualizzate o salvate automaticamente in un file di log. Gli amministratori che hanno invece eseguito manualmente una transazione sintetica possono usare il parametro OutLoggerVariable per specificare una variabile di Windows PowerShell in cui verranno archiviate le informazioni. Da lì gli amministratori possono quindi usare una coppia di metodi che consentono loro di salvare e/o visualizzare il log RTF in formato XML o HTML.
+Queste informazioni vengono generate automaticamente ogni volta che viene eseguita una transazione sintetica. Tuttavia, le informazioni non vengono visualizzate o salvate automaticamente in un file di registro. Al contrario, gli amministratori che eseguono manualmente una transazione sintetica possono utilizzare il parametro OutLoggerVariable per specificare una variabile di Windows PowerShell in cui verranno archiviate le informazioni. Gli amministratori possono quindi utilizzare una coppia di metodi che consentono loro di salvare e/o visualizzare il log RTF in formato XML o HTML.
 
-Ad esempio, gli amministratori di Lync Server 2010 possono eseguire il cmdlet **Test-CsRegistration** usando un comando simile al seguente:
+Ad esempio, gli amministratori di Lync Server 2010 possono eseguire il cmdlet **Test-CsRegistration** utilizzando un comando simile al seguente:
 
     Test-CsRegistration -TargetFqdn atl-cs-001.litwareinc.com
 
-Gli amministratori hanno la possibilità di includere il parametro OutLoggerVariable seguito da un nome di variabile scelto:
+Possono inoltre scegliere se includere il parametro OutLoggerVariable seguito dal nome di variabile desiderato:
 
     Test-CsRegistration -TargetFqdn atl-cs-001.litwareinc.com -OutLoggerVariable RegistrationTest
 
 > [!NOTE]  
-> Non precedere il nome della variabile con il carattere $. Usare un nome di variabile come RegistrationTest e non $RegistrationTest.
+> Non anteporre il carattere $ al nome di variabile. Un nome valido può essere ad esempio RegistrationTest, mentre non lo è il nome $RegistrationTest.
 
-Il comando precedente restituisce il contenuto simile al seguente:
+Il comando precedente restituisce un contenuto simile al seguente:
 
     Target Fqdn   : atl-cs-001.litwareinc.com
     Result        : Failure
@@ -78,20 +78,20 @@ Il comando precedente restituisce il contenuto simile al seguente:
     Error Message : This machine does not have any assigned certificates.
     Diagnosis     :
 
-Tuttavia, informazioni molto più dettagliate sono disponibili per questo errore che non solo il messaggio di errore visualizzato sopra. Per accedere a queste informazioni in formato HTML, usare un comando simile al seguente per salvare le informazioni archiviate nella variabile RegistrationTest in un file HTML:
+Per questo errore, sono tuttavia disponibili informazioni ancora più dettagliate che non si limitano al messaggio di errore riportato sopra. Per accedere a tali informazioni in formato HTML, specificare un comando simile al seguente in modo da salvare in un file HTML le informazioni archiviate nella variabile RegistrationTest:
 
     $RegistrationTest.ToHTML() | Out-File C:\Logs\Registration.html
 
-In alternativa, puoi usare il metodo ToXML () per salvare i dati in un file XML:
+In alternativa, è possibile usare il metodo ToXML() per salvare i dati in un file XML:
 
     $RegistrationTest.ToXML() | Out-File C:\Logs\Registration.xml
 
-Questi file possono quindi essere visualizzati usando Internet Explorer, Visual Studio o qualsiasi altra applicazione in grado di aprire file HTML/XML.
+Questi file possono quindi essere visualizzati tramite Internet Explorer, Visual Studio o qualsiasi altra applicazione in grado di aprire file HTML/XML.
 
-Le transazioni sintetiche eseguite dall'interno di System Center Operations Manager generano automaticamente questi file di log per gli errori. Questi registri non verranno tuttavia generati se l'esecuzione non riesce prima che Windows PowerShell sia in grado di caricare ed eseguire la transazione sintetica.
+Le transazioni sintetiche eseguite dall'interno di System Center Operations Manager genereranno automaticamente questi file di registro per gli errori. Tuttavia, questi registri non verranno generati se l'esecuzione ha esito negativo prima che Windows PowerShell sia in grado di caricare ed eseguire la transazione sintetica.
 
 > [!IMPORTANT]  
-> Per impostazione predefinita, Lync Server 2013 Salva i file di log in una cartella non condivisa. Per rendere questi registri facilmente accessibili, è consigliabile condividere questa cartella, ad esempio \\ \\ATL-watcher-001. litwareinc. com\WatcherNode.
+> Per impostazione predefinita, Lync Server 2013 Salva i file di registro in una cartella non condivisa. Per rendere tali registri facilmente accessibili, è necessario condividere questa cartella, ad esempio \\ \\ATL-watcher-001. litwareinc. com\WatcherNode.
 
 
 </div>

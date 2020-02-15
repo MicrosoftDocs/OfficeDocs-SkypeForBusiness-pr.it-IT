@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Creare flussi di lavoro per Response Group'
+title: 'Lync Server 2013: creare flussi di lavoro di Response Group'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183954
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9aa76d218564e04048a07db7592ffc5ea4046a71
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3b93b63ffbb551c7e5d9d6998a5f25f86eb6fb0b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728786"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42009389"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-response-group-workflows-in-lync-server-2013"></a>Creare flussi di lavoro per Response Group in Lync Server 2013
+# <a name="create-response-group-workflows-in-lync-server-2013"></a>Creare flussi di lavoro di Response Group in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41728786"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-Un flusso di lavoro definisce il comportamento di una chiamata dall'ora in cui il telefono squilla per l'ora in cui qualcuno risponde alla chiamata. Il flusso di lavoro specifica la coda da usare per la chiamata e specifica il metodo di routing da usare per i gruppi di ricerca o le domande e le risposte da usare per i gruppi di risposta interattivi. Un flusso di lavoro definisce anche le impostazioni, ad esempio un messaggio di benvenuto, la musica in attesa, le ore lavorative e le festività.
+Un flusso di lavoro definisce il comportamento di una chiamata dal momento in cui il telefono squilla al momento in cui un qualcuno risponde. Il flusso di lavoro specifica la coda da utilizzare per lasciare in attesa la chiamata e il metodo di routing da utilizzare per i gruppi di risposta oppure le domande e le risposte da utilizzare per i Response Group interattivi. Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenuto, la musica di attesa, l'orario di ufficio e le festività.
 
-Puoi usare lo strumento di configurazione di Response Group per creare flussi di lavoro. È possibile accedere allo strumento di configurazione di Response Group dalla pagina Response Group del pannello di controllo di Lync Server.
+È possibile utilizzare lo strumento di configurazione di Response Group per creare flussi di lavoro. È possibile accedere allo strumento di configurazione di Response Group dalla pagina Response Group del pannello di controllo di Lync Server.
 
 <div>
 
 
 > [!NOTE]  
-> È necessario creare gruppi di agenti e code prima di creare un flusso di lavoro che li usa.
+> È necessario creare i gruppi di agenti e le code prima di creare il flusso di lavoro che li utilizza.
 
 
 
@@ -53,11 +53,11 @@ Puoi usare lo strumento di configurazione di Response Group per creare flussi di
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Creare o modificare un flusso di lavoro di gruppo di ricerca in Lync Server 2013](lync-server-2013-create-or-modify-a-hunt-group-workflow.md)
+  - [Creare o modificare un flusso di lavoro di un gruppo di risposta in Lync Server 2013](lync-server-2013-create-or-modify-a-hunt-group-workflow.md)
 
-  - [Progettare i flussi di chiamate del sistema IVR (Interactive Voice Response) in Lync Server 2013](lync-server-2013-design-interactive-voice-response-call-flows.md)
+  - [Progettare flussi di chiamate di risposta vocale interattivi in Lync Server 2013](lync-server-2013-design-interactive-voice-response-call-flows.md)
 
   - [Creare o modificare un flusso di lavoro interattivo in Lync Server 2013](lync-server-2013-create-or-modify-an-interactive-workflow.md)
 
@@ -67,7 +67,7 @@ Puoi usare lo strumento di configurazione di Response Group per creare flussi di
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-  - [Creare gruppi di agenti per Response Group in Lync Server 2013](lync-server-2013-create-response-group-agent-groups.md)
+  - [Creare gruppi di agenti di Response Group Lync Server 2013](lync-server-2013-create-response-group-agent-groups.md)
 
   - [Creare code di Response Group in Lync Server 2013](lync-server-2013-create-response-group-queues.md)
 

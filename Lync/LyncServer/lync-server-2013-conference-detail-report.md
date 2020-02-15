@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report Dettagli conferenza'
+title: 'Lync Server 2013: rapporto Dettagli conferenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183565
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7e8e2cd992e83adb29c43935d4b4c7f223580d53
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: dce868d90d2811b36a4f11c159b4e7d9d29b5ffa
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757030"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007885"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="conference-detail-report-in-lync-server-2013"></a>Report Dettagli conferenza in Lync Server 2013
+# <a name="conference-detail-report-in-lync-server-2013"></a>Rapporto Dettagli conferenza in Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41757030"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
-Il report Dettagli conferenza offre informazioni dettagliate su tutti gli utenti che hanno partecipato a una conferenza. Ad esempio, puoi visualizzare informazioni come la data e l'ora in cui un utente ha partecipato alla conferenza, la data e l'ora in cui l'utente ha lasciato la conferenza e l'agente utente dell'endpoint usato per connettere l'utente alla conferenza. È anche possibile visualizzare le informazioni sul ruolo dell'utente in ogni conferenza, ad esempio relatore o partecipante. Forse la cosa più importante è vedere rapidamente gli utenti che partecipano e completano la conferenza e che gli utenti non sono stati in grado di partecipare e completare la conferenza con successo.
+Il Rapporto Dettagli conferenza offre informazioni dettagliate su tutti gli utenti che hanno partecipato a una conferenza. È ad esempio possibile conoscere la data e l'ora in cui un utente si è unito alla conferenza o in cui l'ha abbandonata e l'agente utente dell'endpoint utilizzato per connettere tale utente alla conferenza. È anche possibile visualizzare informazioni sul ruolo dell'utente in ciascuna conferenza (relatore o partecipante). E ancora più importante, è possibile sapere rapidamente quali utenti si sono uniti alla conferenza e l'hanno completata e quali non ci sono riusciti.
 
 <div>
 
-## <a name="accessing-the-conference-detail-report"></a>Accesso al report Dettagli conferenza
+## <a name="accessing-the-conference-detail-report"></a>Accesso al Rapporto Dettagli conferenza
 
-È possibile accedere al report Dettagli conferenza dai report seguenti:
+Il Rapporto Dettagli conferenza è accessibile dai rapporti seguenti:
 
-  - [Report di controllo ammissione chiamata in Lync Server 2013](lync-server-2013-call-admission-control-report.md) (facendo clic sulla metrica di dettaglio per una conferenza)
+  - Il [rapporto di controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-call-admission-control-report.md) (facendo clic sulla metrica Dettagli per una conferenza)
 
-  - [Report elenco errori in Lync Server 2013](lync-server-2013-failure-list-report.md) (facendo clic sulla metrica conferenza)
+  - Il [rapporto Elenco errori in Lync Server 2013](lync-server-2013-failure-list-report.md) (facendo clic sulla metrica conferenza)
 
-  - [Report attività utente in Lync Server 2013](lync-server-2013-user-activity-report.md) (facendo clic sulla metrica URI conferenza)
+  - Il [rapporto attività utente in Lync Server 2013](lync-server-2013-user-activity-report.md) (facendo clic sulla metrica URI conferenza)
 
-Dal report Dettagli conferenza è possibile accedere al [report di diagnostica in Lync Server 2013](lync-server-2013-diagnostic-report.md) facendo clic sulla metrica rapporto di diagnostica (dettaglio).
+Dal rapporto Dettagli conferenza è possibile accedere al [rapporto di diagnostica in Lync Server 2013](lync-server-2013-diagnostic-report.md) facendo clic sulla metrica del rapporto di diagnostica (dettaglio).
 
 </div>
 
@@ -59,7 +59,7 @@ Dal report Dettagli conferenza è possibile accedere al [report di diagnostica i
 
 ## <a name="filters"></a>Filtri
 
-Nessuno. Non è possibile filtrare il report Dettagli conferenza.
+Nessuno. Non è possibile applicare filtri al Rapporto Dettagli conferenza.
 
 </div>
 
@@ -67,9 +67,9 @@ Nessuno. Non è possibile filtrare il report Dettagli conferenza.
 
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni fornite nella sezione informazioni conferenza del report Dettagli conferenza.
+La tabella seguente elenca le informazioni contenute nella sezione Informazioni conferenza del Rapporto Dettagli conferenza.
 
-### <a name="conference-information-metrics"></a>Metriche delle informazioni sulla conferenza
+### <a name="conference-information-metrics"></a>Metriche Informazioni conferenza
 
 <table>
 <colgroup>
@@ -80,7 +80,7 @@ Nella tabella seguente sono elencate le informazioni fornite nella sezione infor
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -88,18 +88,18 @@ Nella tabella seguente sono elencate le informazioni fornite nella sezione infor
 <tr class="odd">
 <td><p><strong>URI conferenza</strong></p></td>
 <td></td>
-<td><p>URI assegnato alla conferenza. Ad esempio:</p>
-<p>SIP: kmyer@litwareinc. com; GRUU; opaque = app: conf: stato attiva: ID: drg2y8v4</p></td>
+<td><p>URI assegnato alla conferenza, ad esempio:</p>
+<p>SIP: kmyer@litwareinc. com; GRUU; opaque = app: conf: Focus: ID: drg2y8v4</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>FQDN del pool</strong></p></td>
+<td><p><strong>FQDN pool</strong></p></td>
 <td></td>
-<td><p>Nome di dominio completo del pool di registrazione o del server perimetrale coinvolto in una sessione.</p></td>
+<td><p>Nome di dominio completo del pool di registrazione o del server perimetrale operativo in una sessione.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Ora di inizio</strong></p></td>
 <td></td>
-<td><p>Data e ora in cui è stata avviata la conferenza.</p></td>
+<td><p>Data e ora di inizio della conferenza.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Organizzatore</strong></p></td>
@@ -115,9 +115,9 @@ Nella tabella seguente sono elencate le informazioni fornite nella sezione infor
 </table>
 
 
-Nella tabella seguente sono elencate le informazioni fornite nella sezione partecipazione alla conferenza del report Dettagli conferenza.
+La tabella seguente elenca le informazioni fornite nella sezione Partecipazione conferenza del Rapporto Dettagli conferenza.
 
-### <a name="conference-participation-metrics"></a>Metriche per la partecipazione alla conferenza
+### <a name="conference-participation-metrics"></a>Metriche di Partecipazione conferenza
 
 <table>
 <colgroup>
@@ -128,7 +128,7 @@ Nella tabella seguente sono elencate le informazioni fornite nella sezione parte
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -141,40 +141,40 @@ Nella tabella seguente sono elencate le informazioni fornite nella sezione parte
 <tr class="even">
 <td><p><strong>Ruolo</strong></p></td>
 <td></td>
-<td><p>Ruolo (ad esempio, relatore) riprodotto dal partecipante alla conferenza.</p></td>
+<td><p>Ruolo, ad esempio Relatore, ricoperto dal partecipante alla conferenza.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Connettività</strong></p></td>
 <td></td>
-<td><p>Connettività di rete (in genere da interno o da esterno) per il partecipante.</p></td>
+<td><p>Connettività di rete, solitamente Dall'interno o Dall'esterno, per il partecipante.</p></td>
 </tr>
 <tr class="even">
-<td><p>Tempo di partecipazione</p></td>
+<td><p>Ora partecipazione</p></td>
 <td></td>
-<td><p>Data e ora in cui il partecipante ha partecipato alla conferenza.</p></td>
+<td><p>Data e ora in cui il partecipante si è unito alla conferenza.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Ora di uscita</strong></p></td>
+<td><p><strong>Ora uscita</strong></p></td>
 <td></td>
-<td><p>Data e ora in cui il partecipante ha lasciato la conferenza.</p></td>
+<td><p>Data e ora in cui il partecipante è uscito dalla conferenza.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Agente utente</strong></p></td>
 <td></td>
-<td><p>Identificatore per il software usato dall'endpoint del partecipante.</p></td>
+<td><p>Identificatore del software utilizzato dall'endpoint del partecipante.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Report di diagnostica</strong></p></td>
+<td><p><strong>Rapporti di diagnostica</strong></p></td>
 <td></td>
-<td><p>Fornisce informazioni di diagnostica e risoluzione dei problemi. Inclusi i codici di risposta SIP, le intestazioni di diagnostica, le ore di conferenza e gli ID di diagnostica per le sessioni non riuscite.</p></td>
+<td><p>Contiene informazioni relative alla diagnostica e alla risoluzione dei problemi, tra cui codici di risposta SIP, intestazioni di diagnostica, ore di partecipazione alla conferenza e ID diagnostica per le sessioni non riuscite.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Nella tabella seguente sono elencate le informazioni fornite nella sezione modalità conferenza del report Dettagli conferenza.
+Nella tabella seguente sono elencate le informazioni fornite nella sezione modalità conferenza del rapporto Dettagli conferenza.
 
-### <a name="conference-modalities-metrics"></a>Metriche delle modalità conferenza
+### <a name="conference-modalities-metrics"></a>Metriche di Modalità conferenza
 
 <table>
 <colgroup>
@@ -185,7 +185,7 @@ Nella tabella seguente sono elencate le informazioni fornite nella sezione modal
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -196,24 +196,24 @@ Nella tabella seguente sono elencate le informazioni fornite nella sezione modal
 <td><p>Indirizzo SIP dell'utente che ha partecipato alla conferenza.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Tempo di partecipazione</strong></p></td>
+<td><p><strong>Ora partecipazione</strong></p></td>
 <td></td>
-<td><p>Data e ora in cui il partecipante ha partecipato alla conferenza.</p></td>
+<td><p>Data e ora in cui il partecipante si è unito alla conferenza.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Ora di uscita</strong></p></td>
+<td><p><strong>Ora uscita</strong></p></td>
 <td></td>
-<td><p>Data e ora in cui un partecipante ha lasciato la conferenza.</p></td>
+<td><p>Data e ora in cui un partecipante è uscito dalla conferenza.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>URI di conferenza server</strong></p></td>
+<td><p><strong>URI server per conferenze</strong></p></td>
 <td></td>
-<td><p>URI per il server delle conferenze usato nella conferenza.</p></td>
+<td><p>URI per il server per conferenze utilizzato nella conferenza.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Report di diagnostica</strong></p></td>
+<td><p><strong>Rapporti di diagnostica</strong></p></td>
 <td></td>
-<td><p>Fornisce informazioni di diagnostica e risoluzione dei problemi. Inclusi i codici di risposta SIP, le intestazioni di diagnostica, le ore di conferenza e gli ID di diagnostica per le sessioni non riuscite.</p></td>
+<td><p>Contiene informazioni relative alla diagnostica e alla risoluzione dei problemi, tra cui codici di risposta SIP, intestazioni di diagnostica, ore di partecipazione alla conferenza e ID diagnostica per le sessioni non riuscite.</p></td>
 </tr>
 </tbody>
 </table>

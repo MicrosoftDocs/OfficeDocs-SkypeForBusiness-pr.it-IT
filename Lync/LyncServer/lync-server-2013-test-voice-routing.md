@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Testare il routing vocale'
+title: 'Lync Server 2013: testare il routing vocale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185444
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b27fc4f3dfc42e9187ea0aee801b3c2115d83ff0
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5b45f52a07713973d8f642389513d0e34b5236de
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746036"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42018037"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41746036"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-24_
+_**Ultimo argomento modificato:** 2013-02-24_
 
-Puoi usare la scheda **routing vocale di test** del pannello di controllo di Lync Server per configurare gli scenari dei casi di test. Per definire un test case, specificare il dial plan, il criterio vocale, l'uso PSTN e la route vocale per testare un numero di telefono specificato.
+È possibile utilizzare la scheda **routing vocale di test** del pannello di controllo di Lync Server per configurare gli scenari di test case. Per definire un test case, specificare il dial plan, il criterio vocale, l'utilizzo PSTN e la route vocale in base ai quali testare un numero di telefono specificato.
 
-Prima di distribuire effettivamente la configurazione del routing vocale, è consigliabile testarla su vari numeri di telefono per verificare che i risultati siano quello previsto.
+Prima di distribuire effettivamente la configurazione del routing vocale, è consigliabile testarla su vari numeri di telefono per assicurarsi che i risultati siano quelli previsti.
 
 <div>
 
 
 > [!TIP]  
-> È possibile usare i comandi <STRONG>Esporta</STRONG> test case e <STRONG>Importa test case</STRONG> per salvare i casi di test di routing vocale e importarli per l'uso in un altro computer.
+> È possibile utilizzare i comandi <STRONG>Esporta test case</STRONG> e <STRONG>Importa test case</STRONG> per salvare i test case del routing vocale e importarli per l'uso su un altro computer.
 
 
 
@@ -55,7 +55,7 @@ Prima di distribuire effettivamente la configurazione del routing vocale, è con
 
 
 > [!WARNING]  
-> Se si elimina una parte della configurazione del routing vocale, ad esempio un dial plan, un criterio vocale, una route vocale o un uso telefonico, è necessario rivedere e aggiornare i casi di test di routing vocale. Il pannello di controllo di Lync Server non avvisa i casi di test non più validi a causa delle configurazioni modificate.
+> Se si elimina una parte della configurazione del routing vocale, ad esempio un dial plan, un criterio vocale, una route vocale o un utilizzo del telefono, è necessario controllare e aggiornare i test case del routing vocale. Nel pannello di controllo di Lync Server non verrà avvisato di testare i casi che non sono più validi a causa di configurazioni modificate.
 
 
 
@@ -63,7 +63,7 @@ Prima di distribuire effettivamente la configurazione del routing vocale, è con
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Creare un test case di routing vocale in Lync Server 2013](lync-server-2013-create-a-voice-routing-test-case.md)
 

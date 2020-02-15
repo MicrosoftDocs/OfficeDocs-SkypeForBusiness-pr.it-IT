@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Testare il server Standard Edition'
+title: 'Lync Server 2013: testare il server Standard Edition'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185220
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 00918643fcc59efc33d12dc3f8f77c7d3ac69815
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4145740f09557c8f39830dce689fa122456a28f8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42018977"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,38 +35,38 @@ ms.locfileid: "41746056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-La procedura seguente descrive come testare la distribuzione di un server Standard Edition.
+Nella procedura seguente viene descritto come testare la distribuzione di un server Standard Edition.
 
 <div>
 
 ## <a name="to-test-the-deployment-of-a-standard-edition-server"></a>Per testare la distribuzione di un server Standard Edition
 
-1.  Usare i computer e gli utenti di Active Directory per aggiungere l'oggetto utente di Active Directory del ruolo di amministratore per la distribuzione di Lync Server 2013 (in cui è installato il pannello di controllo di Lync Server) nel gruppo **CsAdministrator** .
+1.  Utilizzare computer e utenti di Active Directory per aggiungere l'oggetto utente di Active Directory del ruolo di amministratore per la distribuzione di Lync Server 2013 (in cui è installato il pannello di controllo di Lync Server) nel gruppo **CsAdministrator** .
 
-2.  Se l'oggetto utente è attualmente connesso, disconnettersi e quindi accedere di nuovo per registrare la nuova assegnazione del gruppo.
+2.  Se l'oggetto utente è connesso, disconnettersi e rieseguire l'accesso per registrare la nuova assegnazione al gruppo.
     
     <div>
     
 
     > [!NOTE]  
-    > L'account utente non può essere l'amministratore locale del server in cui è in uso Lync Server 2013, Standard Edition. Se non si aggiungono gli utenti e i gruppi appropriati al gruppo CsAdministors, viene visualizzato un messaggio di errore quando si apre il pannello di controllo di Lync Server 2013, in cui viene indicato che "non autorizzato: Access viene negato a causa di un errore di autorizzazione del controllo di accesso basato sui ruoli".
+    > L'account utente non può essere l'amministratore locale del server che esegue Lync Server 2013, Standard Edition. Se non si aggiungono gli utenti e i gruppi corretti al gruppo CSAdministrator, verrà visualizzato un messaggio di errore durante l'apertura del pannello di controllo di Lync Server 2013, in cui viene indicato che "non autorizzato: accesso negato a causa di un errore di autorizzazione del controllo di accesso basato sui ruoli (RBAC)".
 
     
     </div>
 
-3.  Usare l'account amministrativo per accedere al computer in cui è installato il pannello di controllo di Lync Server.
+3.  Utilizzare l'account amministrativo per accedere al computer in cui è installato il pannello di controllo di Lync Server.
 
-4.  Avviare il pannello di controllo di Lync Server e specificare le credenziali, se richiesto. Il pannello di controllo di Lync Server 2013 Visualizza le informazioni sulla distribuzione.
+4.  Avviare il pannello di controllo di Lync Server e fornire le credenziali, se richiesto. Il pannello di controllo di Lync Server 2013 Visualizza le informazioni sulla distribuzione.
 
-5.  Nella barra di spostamento sinistra fare clic su **topologia**e quindi verificare che lo stato del servizio sia un'icona del computer con una freccia verde e sia presente un segno di spunta verde accanto a ogni ruolo di Lync Server Server distribuito e portato online.
+5.  Sulla barra di spostamento sinistra fare clic su **topologia**e quindi verificare che lo stato del servizio sia un'icona del computer con una freccia verde e che sia presente un segno di spunta verde accanto a ogni ruolo del server Lync Server distribuito e portato online.
 
-6.  Nella barra di spostamento sinistra fare clic su **utenti**e quindi abilitare i due utenti per Lync Server 2013.
+6.  Sulla barra di spostamento sinistra fare clic su **utenti**e quindi abilitare i due utenti per Lync Server 2013.
 
-7.  È necessario registrare un utente in un computer collegato al dominio e l'altro utente in un altro computer del dominio.
+7.  Connettere un utente a un computer appartenente al dominio e l'altro utente a un altro computer nel dominio.
 
-8.  Installare Lync Server 2013 in ognuno dei due computer client e verificare che entrambi gli utenti possano accedere a Lync Server 2013 e inviare messaggi istantanei.
+8.  Installare Lync Server 2013 in ognuno dei due computer client e quindi verificare che entrambi gli utenti siano in grado di accedere a Lync Server 2013 e possano inviare messaggi istantanei.
 
 </div>
 

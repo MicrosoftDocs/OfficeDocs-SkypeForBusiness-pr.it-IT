@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: creare collegamenti all'area di rete"
+title: 'Lync Server 2013: creare collegamenti area di rete'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185873
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f40b9d569cbc571fe931a53b6f399b6273efd055
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6ef56e2b71e1692b4343515613dec37b2a30621b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740246"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007105"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-network-region-links-in-lync-server-2013"></a>Creare collegamenti all'area di rete in Lync Server 2013
+# <a name="create-network-region-links-in-lync-server-2013"></a>Creare collegamenti area di rete in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41740246"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-19_
+_**Ultimo argomento modificato:** 2012-10-19_
 
-Le aree all'interno di una rete sono collegate tramite connettività WAN fisica. Un *collegamento all'area di rete* crea un collegamento tra due aree geografiche configurate per il controllo di ammissione alle chiamate (CAC) e imposta le limitazioni della larghezza di banda per il traffico audio e video tra queste aree.
+Le aree all'interno di una rete sono collegate tramite connettività fisica WAN. Un *collegamento di aree di rete* crea un collegamento tra due aree configurate per Controllo di ammissione di chiamata e imposta i limiti di larghezza di banda per il traffico audio e video tra tali aree.
 
-Per informazioni dettagliate sull'uso dei collegamenti all'area di rete, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:
+Per informazioni dettagliate sull'utilizzo dei collegamenti tra aree di rete, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:
 
   - [New-CsNetworkRegionLink](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkRegionLink)
 
@@ -49,15 +49,15 @@ Per informazioni dettagliate sull'uso dei collegamenti all'area di rete, vedere 
 
   - [Remove-CsNetworkRegionLink](https://docs.microsoft.com/powershell/module/skype/Remove-CsNetworkRegionLink)
 
-La topologia di esempio include un collegamento tra le aree Nord America e APAC e un collegamento tra le aree EMEA e APAC. Ognuno di questi collegamenti di area geografica è vincolato dalla larghezza di banda WAN, come descritto nella tabella informazioni sulla larghezza di banda del collegamento di area nell' [esempio: raccogliere i requisiti per il controllo di ammissione delle chiamate nella sezione Lync Server 2013](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md) della documentazione relativa alla pianificazione.
+Nella topologia di esempio è presente un collegamento tra il Nord America e le aree APAC e un collegamento tra le aree EMEA e APAC. Ognuno di questi collegamenti tra aree geografiche è vincolato dalla larghezza di banda della WAN, come descritto nella tabella informazioni sulla larghezza di banda del collegamento area nell' [esempio seguente: raccolta dei requisiti per il controllo di ammissione di chiamata nella sezione Lync Server 2013](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md) della documentazione relativa alla pianificazione.
 
 <div>
 
-## <a name="to-create-network-region-links-by-using-lync-server-management-shell"></a>Per creare collegamenti all'area geografica di rete tramite Lync Server Management Shell
+## <a name="to-create-network-region-links-by-using-lync-server-management-shell"></a>Per creare collegamenti area di rete utilizzando Lync Server Management Shell
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-2.  Eseguire il cmdlet New-CsNetworkRegionLink per creare i collegamenti all'area geografica e applicare i profili dei criteri di larghezza di banda appropriati. Ad esempio, eseguire:
+2.  Eseguire il cmdlet New-CsNetworkRegionLink per creare i collegamenti area di rete e applicare i profili di criteri di larghezza di banda appropriati. Ad esempio, eseguire:
     
       ```powershell
         New-CsNetworkRegionLink -NetworkRegionLinkID NA-EMEA-LINK -NetworkRegionID1 NorthAmerica -NetworkRegionID2 EMEA -BWPolicyProfileID 50Mb_Link
@@ -71,36 +71,36 @@ La topologia di esempio include un collegamento tra le aree Nord America e APAC 
 
 <div>
 
-## <a name="to-create-network-region-links-by-using-lync-server-control-panel"></a>Per creare collegamenti all'area geografica di rete tramite il pannello di controllo di Lync Server
+## <a name="to-create-network-region-links-by-using-lync-server-control-panel"></a>Per creare collegamenti area di rete utilizzando il pannello di controllo Lync Server
 
-1.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+1.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-2.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**.
+2.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete**.
 
-3.  Fare clic sul pulsante di spostamento **collegamento area geografica** .
+3.  Fare clic sul pulsante di spostamento **Collegamento area**.
 
-4.  Fare clic su **nuovo**.
+4.  Fare clic su **Nuovo**.
 
-5.  Nella pagina **New Region link** fare clic su **nome** e quindi digitare un nome per il collegamento all'area di rete.
+5.  Nella pagina **Nuovo collegamento area di rete** fare clic su **Nome** e quindi digitare un nome per il collegamento area di rete.
 
-6.  Fare clic su **area \#di rete 1**e quindi sull'area di rete nell'elenco che si vuole collegare all'area \#di rete 2.
+6.  Fare clic su **area \#di rete 1**e quindi fare clic sull'area di rete nell'elenco che si desidera collegare all' \#area di rete 2.
 
-7.  Fare clic su **area geografica \#di rete 2**e quindi fare clic su un'area di rete nell'elenco che si \#vuole collegare all'area geografica di rete 1.
+7.  Fare clic su **area \#di rete 2**e quindi fare clic su un'area di rete nell'elenco che si desidera collegare \#all'area di rete 1.
 
-8.  Facoltativamente, fare clic su **criteri di larghezza di banda**e quindi selezionare il profilo dei criteri di larghezza di banda che si vuole applicare al collegamento all'area di rete.
+8.  Facoltativamente, fare clic su **Criteri larghezza di banda** e selezionare il profilo di criteri di larghezza di banda che si desidera applicare al collegamento area di rete.
     
     <div class=" ">
     
 
     > [!NOTE]  
-    > Applicare un criterio di larghezza di banda solo se il collegamento all'area di rete è vincolato dalla larghezza di banda e si vuole usare CAC per controllare il traffico multimediale sul collegamento.
+    > Applicare criteri di larghezza di banda solo se il collegamento area di rete è vincolato dalla larghezza di banda e si desidera utilizzare CAC per controllare il traffico multimediale su tale collegamento.
 
     
     </div>
 
 9.  Fare clic su **Commit**.
 
-10. Per completare la creazione di collegamenti di area di rete per la topologia, ripetere i passaggi da 4 a 9 con le impostazioni per altre aree geografiche.
+10. Per completare la creazione dei collegamenti area di rete per la topologia, ripetere i passaggi da 4 a 9 con le impostazioni per le altre aree.
 
 </div>
 

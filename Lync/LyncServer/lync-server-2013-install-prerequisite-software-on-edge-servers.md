@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Installare il software prerequisito nei server perimetrali'
+title: 'Lync Server 2013: installare il software prerequisito nei server perimetrali'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184811
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 308459789de6ecbd153b66ef160e4a129223e1d1
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5086c841f52a83c925367f3a4accfdf5326317a5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763700"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008288"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41763700"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-08_
+_**Ultimo argomento modificato:** 2012-09-08_
 
-È necessario distribuire il software prerequisito in ogni server perimetrale distribuito prima di installare Lync Server 2013. Questo include l'installazione del sistema operativo in un server che soddisfa i requisiti di sistema. Per informazioni dettagliate sui requisiti di sistema, inclusi i sistemi operativi supportati, vedere [requisiti di sistema per i componenti di Access per utenti esterni per Lync Server 2013](lync-server-2013-system-requirements-for-external-user-access-components.md).
+È necessario distribuire il software prerequisito in ogni server perimetrale distribuito prima dell'installazione di Lync Server 2013. Questa operazione prevede l'installazione del sistema operativo in un server che soddisfi i requisiti di sistema. Per informazioni dettagliate sui requisiti di sistema, inclusi i sistemi operativi supportati, vedere [requisiti di sistema per i componenti per l'accesso degli utenti esterni per Lync Server 2013](lync-server-2013-system-requirements-for-external-user-access-components.md).
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48183723
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 80e835bfcf12495c75612ecee93d87cf3c421651
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1cfde603ace9036ba547ffb0a7ee80c1963ae6cf
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755940"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008438"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41755940"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-18_
+_**Ultimo argomento modificato:** 2012-10-18_
 
-Le impostazioni dell'intervallo di porte multimediali possono avere un impatto significativo sulle prestazioni del client e configurate. Queste impostazioni possono essere configurate tramite Lync Server Management Shell.
+Le impostazioni degli intervalli di porte multimediali possono influire in modo significativo sulle prestazioni del client e devono essere configurate. È possibile configurare queste impostazioni utilizzando Lync Server Management Shell.
 
-### <a name="media-port-range-settings"></a>Impostazioni dell'intervallo di porte multimediali
+### <a name="media-port-range-settings"></a>Impostazioni intervallo di porte multimediali
 
 <table>
 <colgroup>
@@ -59,21 +59,21 @@ Le impostazioni dell'intervallo di porte multimediali possono avere un impatto s
 <tbody>
 <tr class="odd">
 <td><p>Portrange\Enabled</p></td>
-<td><p>Specifica se gli intervalli di porte inviati dal server devono essere usati dal client per il supporto e la segnalazione. Usato in combinazione con i sottovalori MinMediaPort e MaxMediaPort.</p></td>
+<td><p>Specifica se gli intervalli di porte inviati dal server devono essere usati dal client per il contenuto multimediale e la segnalazione. Viene usata con i valori secondari MinMediaPort e MaxMediaPort.</p></td>
 <td><p><strong>CsConferencingConfiguration</strong></p></td>
 <td><p>ClientMediaPortRangeEnabled</p></td>
 </tr>
 <tr class="even">
 <td><p>Portrange\MinMediaPort</p></td>
-<td><p>Specifica il numero di porta iniziale da usare per l'elemento multimediale. Combina con MaxMediaPort per specificare l'intervallo di porte. L'intervallo minimo consigliato è 40 porte.</p></td>
+<td><p>Specifica il numero iniziale di porte da usare per il contenuto multimediale. Insieme a MaxMediaPort specifica l'intervallo di porte. L'intervallo minimo consigliato è 40 porte.</p></td>
 <td><p><strong>CsConferencingConfiguration</strong></p></td>
-<td><p>ClientMediaPort (rappresenta il numero di porta iniziale da usare per il supporto client)</p></td>
+<td><p>ClientMediaPort (rappresenta il numero di porta iniziale da usare per il contenuto multimediale del client)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Portrange\MaxMediaPort</p></td>
-<td><p>Specifica il numero di porta più alto da usare per l'elemento multimediale. Combina con MinMediaPort per specificare l'intervallo di porte. L'intervallo minimo consigliato è 40 porte.</p></td>
+<td><p>Specifica il numero massimo di porte da usare per il contenuto multimediale. Insieme a MinMediaPort specifica l'intervallo di porte. L'intervallo minimo consigliato è 40 porte.</p></td>
 <td><p><strong>CsConferencingConfiguration</strong></p></td>
-<td><p>ClientMediaPortRange (indica il numero totale di porte disponibili per il supporto client; l'impostazione predefinita è 40)</p></td>
+<td><p>ClientMediaPortRange (indica il numero totale di porte disponibili per il contenuto multimediale dei client; il valore predefinito è 40)</p></td>
 </tr>
 </tbody>
 </table>
@@ -83,13 +83,13 @@ Le impostazioni dell'intervallo di porte multimediali possono avere un impatto s
 
 ## <a name="to-configure-media-port-range-settings"></a>Per configurare le impostazioni dell'intervallo di porte multimediali
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
 2.  Eseguire il cmdlet seguente:
     
         Get-CsConferencingConfiguration
     
-    Questo cmdlet restituisce le impostazioni di configurazione per i servizi di conferenza.
+    Questo cmdlet restituisce le impostazioni di configurazione delle conferenze.
 
 3.  Eseguire il cmdlet seguente con i parametri e i valori che si desidera modificare (per informazioni dettagliate sui parametri per questo cmdlet, vedere la documentazione di Lync Server Management Shell):
     
@@ -99,7 +99,7 @@ Le impostazioni dell'intervallo di porte multimediali possono avere un impatto s
     
 
     > [!NOTE]  
-    > È possibile creare ulteriori set di impostazioni di configurazione per i servizi di conferenza per siti specifici. Usa il cmdlet <STRONG>New-CsConferencingConfiguration</STRONG> con un'identità del sito. Quando si creano nuove impostazioni di configurazione per i servizi di conferenza per i siti, le impostazioni del sito hanno la precedenza sulle impostazioni globali. Per informazioni dettagliate, vedere la documentazione di Lync Server Management Shell.
+    > È possibile creare set aggiuntivi di impostazioni di configurazione delle conferenze per siti specifici. Usare il cmdlet <STRONG>New- CsConferencingConfiguration</STRONG> con un'identità di sito. Quando si creano nuove impostazioni di configurazione delle conferenze per i siti, le impostazioni dei siti hanno la precedenza su quelle globali. Per informazioni dettagliate, vedere la documentazione relativa a Lync Server Management Shell.
 
     
     </div>

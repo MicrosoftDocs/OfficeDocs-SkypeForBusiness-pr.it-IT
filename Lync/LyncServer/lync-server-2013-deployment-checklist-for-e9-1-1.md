@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: elenco di controllo della distribuzione per E9-1-1'
+title: 'Lync Server 2013: elenco di controllo di distribuzione per il servizio E9-1-1'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185655
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5efe5c55386eb431c91e798ad960cc510ce33ce1
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 330f1a31f9a91d69c9e2514d0744abc72806bf4f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763450"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007004"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deployment-checklist-for-e9-1-1-in-lync-server-2013"></a>Elenco di controllo della distribuzione per E9-1-1 in Lync Server 2013
+# <a name="deployment-checklist-for-e9-1-1-in-lync-server-2013"></a>Elenco di controllo di distribuzione per il servizio E9-1-1 in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41763450"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-03_
+_**Ultimo argomento modificato:** 2012-10-03_
 
-Per pianificare efficacemente la 9-1-1 avanzata (E9-1-1), assicurarsi di includere i requisiti di distribuzione seguenti:
+Per pianificare in modo efficace la funzionalità Enhanced 9-1-1 (E9-1-1), assicurarsi di includere i requisiti di distribuzione seguenti:
 
   - Prerequisiti per la distribuzione di E9-1-1.
 
-  - Passaggi necessari per distribuire E9-1-1.
+  - Passaggi necessari per la distribuzione di E9-1-1.
 
 <div>
 
-## <a name="deployment-prerequisites-for-e9-1-1"></a>Prerequisiti di distribuzione per E9-1-1
+## <a name="deployment-prerequisites-for-e9-1-1"></a>Prerequisiti per la distribuzione di E9-1-1
 
-Prima di distribuire E9-1-1, è necessario che siano già stati distribuiti i server interni di Lync Server, inclusi un Central Management store, un pool Front end o un server Standard Edition, uno o più server di mediazione o pool di Mediation Server e i client di Lync Server. Inoltre, una distribuzione di E9-1-1 richiede un trunk SIP per un provider di servizi E9-1-1 qualificato o un gateway ELIN (Emergency Location Identification Number) per la rete PSTN (Public Switched Telephone Network). Lync Server supporta l'uso dei provider di servizi E9-1-1 solo all'interno degli Stati Uniti.
+Prima di distribuire il servizio E9-1-1, è necessario che siano già stati distribuiti i server interni di Lync Server, tra cui un archivio di gestione centrale, un pool Front end o un server Standard Edition, uno o più Mediation Server o pool di Mediation, nonché i client di Lync Server. Inoltre, una distribuzione di E9-1-1 richiede un trunk SIP a un provider di servizi E9-1-1 qualificato o a un gateway ELIN (Emergency Location Identification Number) per la rete PSTN (Public Switched Telephone Network). Lync Server supporta l'utilizzo di provider di servizi E9-1-1 solo all'interno degli Stati Uniti.
 
 </div>
 
@@ -55,7 +55,7 @@ Prima di distribuire E9-1-1, è necessario che siano già stati distribuiti i se
 
 ## <a name="deployment-process"></a>Processo di distribuzione
 
-La tabella seguente offre una panoramica del processo di distribuzione di E9-1-1. Per informazioni dettagliate sui passaggi di distribuzione, vedere [configurare 9-1-1 avanzato in Lync Server 2013](lync-server-2013-configure-enhanced-9-1-1.md) nella documentazione relativa alla distribuzione.
+Nella tabella seguente viene fornita una panoramica del processo di distribuzione di E9-1-1. Per informazioni dettagliate sui passaggi di distribuzione, vedere [Configure Enhanced 9-1-1 in Lync Server 2013](lync-server-2013-configure-enhanced-9-1-1.md) nella documentazione relativa alla distribuzione.
 
 
 <table>
@@ -70,40 +70,40 @@ La tabella seguente offre una panoramica del processo di distribuzione di E9-1-1
 <th>Fase</th>
 <th>Passaggi</th>
 <th>Ruoli</th>
-<th>Documentazione di distribuzione</th>
+<th>Documentazione relativa alla distribuzione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Configurare l'utilizzo delle voci, le rotte e le configurazioni trunk</p></td>
+<td><p>Configurare gli utilizzi vocali, le route e le configurazioni trunk</p></td>
 <td><ol>
-<li><p>Creare un nuovo record di utilizzo PSTN. Si tratta dello stesso nome usato per l'impostazione <strong>utilizzo PSTN</strong> nei criteri posizione.</p></li>
-<li><p>Creare o assegnare una route vocale al record di utilizzo PSTN creato nel passaggio precedente e quindi posizionare l'attributo gateway sul trunk SIP E9-1-1 o sul gateway ELIN.</p></li>
-<li><p>Per un provider di servizi E9-1-1 trunk SIP, imposta il trunk che gestirà le chiamate E9-1-1 tramite il SIP per passare i dati di PIDF-LO usando il cmdlet <strong>Set-CsTrunkConfiguration-EnablePIDFLOSupport</strong> .</p></li>
-<li><p>Facoltativamente, per un provider di servizi E9-1-1 trunk SIP, crea o assegna una route PSTN locale per le chiamate non gestite dal trunk SIP del provider di servizi E9-1-1. Questa route verrà usata se la connessione al provider di servizi E9-1-1 non è disponibile. Se supportata dal provider di servizi E9-1-1, assegna una regola di configurazione trunk al gateway che converte la stringa di chiamata di 911 nel numero di chiamata diretta (DID) del centro di risposta alle chiamate di emergenza nazionali/regionali (ECRC).</p></li>
+<li><p>Creare un nuovo record di utilizzo PSTN. Si tratta dello stesso nome utilizzato per l'impostazione di <strong>utilizzo PSTN</strong> nei criteri percorso.</p></li>
+<li><p>Creare o assegnare una route vocale al record di utilizzo PSTN creato nel passaggio precedente e quindi fare in modo che l'attributo del gateway punti al trunk SIP E9-1-1 o al gateway ELIN.</p></li>
+<li><p>Per un provider di servizi E9-1-1 trunk SIP, impostare il trunk che gestirà le chiamate E9-1-1 sul SIP per passare i dati di PIDF-LO tramite il cmdlet <strong>Set-CsTrunkConfiguration – EnablePIDFLOSupport</strong> .</p></li>
+<li><p>Facoltativamente, per un provider di servizi E9-1-1 trunk SIP creare o assegnare una route PSTN locale per le chiamate non gestite dal trunk SIP del provider di servizi E9-1-1. Questa route verrà utilizzata se la connessione al provider di servizi E9-1-1 non è disponibile. Se supportato dal provider di servizi E9-1-1, assegnare una regola di configurazione trunk al gateway che converte la stringa di composizione 911 nel numero DID (Direct Inward Dialing) del National/Regional Emergency Call Response Center (ECRC).</p></li>
 </ol></td>
 <td><p>CSVoiceAdmin</p></td>
 <td><p><a href="lync-server-2013-configure-an-e9-1-1-voice-route.md">Configurare una route vocale E9-1-1 in Lync Server 2013</a></p></td>
 </tr>
 <tr class="even">
-<td><p>Creare criteri di posizione e assegnarli a utenti e subnet</p></td>
+<td><p>Creare criteri percorso e assegnarli a utenti e subnet</p></td>
 <td><ol>
-<li><p>Esaminare il criterio della posizione globale.</p></li>
-<li><p>Creare un criterio di posizione con un ambito a livello di utente; in alternativa, se l'organizzazione ha più di un sito con diversi usi di emergenza, crea un criterio di posizione con un ambito a livello di rete.</p></li>
-<li><p>Assegnare i criteri di posizione ai siti di rete.</p></li>
+<li><p>Esaminare il criterio percorso globale.</p></li>
+<li><p>Creare un criterio percorso con un ambito a livello di utente. in alternativa, se l'organizzazione dispone di più siti con usi di emergenza diversi, creare un criterio percorso con un ambito a livello di rete.</p></li>
+<li><p>Assegnare il criterio percorso ai siti di rete.</p></li>
 <li><p>Aggiungere le subnet appropriate al sito di rete.</p></li>
-<li><p>Opzionale Assegnare i criteri di posizione ai criteri degli utenti.</p></li>
+<li><p>Optional Assegnare i criteri percorso ai criteri utente.</p></li>
 </ol></td>
 <td><p>CSVoiceAdmin</p>
-<p>CSLocationAdmin (ad eccezione della creazione di criteri di posizione)</p></td>
-<td><p><a href="lync-server-2013-create-location-policies.md">Creare criteri di posizione in Lync Server 2013</a></p>
-<p><a href="lync-server-2013-add-a-location-policy-to-a-network-site.md">Aggiungere un criterio di posizione a un sito di rete in Lync Server 2013</a></p>
-<p><a href="lync-server-2013-associate-subnets-with-network-sites-for-e9-1-1.md">Associare subnet a siti di rete per E9-1-1 in Lync Server 2013</a></p></td>
+<p>CSLocationAdmin (eccetto per la creazione di criteri percorso)</p></td>
+<td><p><a href="lync-server-2013-create-location-policies.md">Creare criteri percorso in Lync Server 2013</a></p>
+<p><a href="lync-server-2013-add-a-location-policy-to-a-network-site.md">Aggiungere un criterio percorso a un sito di rete in Lync Server 2013</a></p>
+<p><a href="lync-server-2013-associate-subnets-with-network-sites-for-e9-1-1.md">Associare subnet a siti di rete per il servizio E9-1-1 in Lync Server 2013</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Configurare il database di percorso</p></td>
+<td><p>Configurare il database delle posizioni</p></td>
 <td><ol>
-<li><p>Popolare il database con un mapping degli elementi di rete alle posizioni.</p></li>
+<li><p>Popolare il database con il mapping degli elementi di rete ai percorsi.</p></li>
 <li><p>Per i gateway ELIN, aggiungere i numeri ELIN alla colonna &lt;CompanyName&gt; .</p></li>
 <li><p>Configurare la connessione al provider di servizi E9-1-1 per la convalida degli indirizzi.</p></li>
 <li><p>Convalidare gli indirizzi con il provider di servizi E9-1-1.</p></li>
@@ -112,17 +112,17 @@ La tabella seguente offre una panoramica del processo di distribuzione di E9-1-1
 </ol></td>
 <td><p>CSVoiceAdmin</p>
 <p>CSLocationAdmin</p></td>
-<td><p><a href="lync-server-2013-configure-the-location-database.md">Configurare il database della posizione in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-configure-the-location-database.md">Configurare il database delle posizioni in Lync Server 2013</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Configurare le funzionalità avanzate (facoltativo)</p></td>
 <td><ol>
 <li><p>Configurare l'URL per l'applicazione SNMP.</p></li>
-<li><p>Configurare l'URL per la posizione del servizio informazioni sulla posizione secondaria.</p></li>
+<li><p>Configurare l'URL per la posizione del servizio informazioni percorso secondario.</p></li>
 </ol></td>
 <td><p>CSVoiceAdmin</p></td>
 <td><p><a href="lync-server-2013-configure-an-snmp-application.md">Configurare un'applicazione SNMP in Lync Server 2013</a></p>
-<p><a href="lync-server-2013-configure-a-secondary-location-information-service.md">Configurare un servizio di informazioni sulla posizione secondaria in Lync Server 2013</a></p></td>
+<p><a href="lync-server-2013-configure-a-secondary-location-information-service.md">Configurare un servizio informazioni percorso secondario in Lync Server 2013</a></p></td>
 </tr>
 </tbody>
 </table>

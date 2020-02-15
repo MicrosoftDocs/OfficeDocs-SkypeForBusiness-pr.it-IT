@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: visualizzare le informazioni sulla configurazione di CDR'
+title: 'Lync Server 2013: visualizzare le informazioni di configurazione di registrazione dettagli chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733695
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f13bbc63d65786823ae49895358216a903878192
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0eff8985832d9bb6e8aa4e06b777944417c7b8bc
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757490"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007205"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="view-cdr-configuration-information-in-lync-server-2013"></a>Visualizzare le informazioni di configurazione CDR in Lync Server 2013
+# <a name="view-cdr-configuration-information-in-lync-server-2013"></a>Visualizzare le informazioni di configurazione di registrazione dettagli chiamata in Lync Server 2013
 
 </div>
 
@@ -35,37 +35,37 @@ ms.locfileid: "41757490"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-La registrazione dei dettagli delle chiamate (CDR) consente di tenere traccia dell'uso di elementi come sessioni di messaggistica istantanea peer-to-peer, chiamate telefoniche VoIP (Voice over Internet Protocol) e chiamate in conferenza. Questo dati di utilizzo include informazioni su chi ha chiamato chi, quando ha chiamato, e per quanto tempo ha parlato.
+La registrazione dettagli chiamata consente di tenere traccia dell'utilizzo delle sessioni di messaggistica istantanea peer-to-peer, delle chiamate telefoniche VoIP (Voice over Internet Protocol) e delle conferenze telefoniche. Questi dati sull'utilizzo includono informazioni sui chiamanti, sugli utenti chiamati, sulla data della chiamata e sulla durata della conversazione.
 
-Quando si installa Microsoft Lync Server 2013, viene creata una singola raccolta globale di impostazioni di configurazione CDR. Gli amministratori hanno anche la possibilità di creare raccolte di impostazioni personalizzate che possono essere applicate a singoli siti. Per visualizzare le impostazioni di configurazione CDR in uso nell'organizzazione, è possibile usare il pannello di controllo di Lync Server o il cmdlet [Get-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsCdrConfiguration) .
+Quando si installa Microsoft Lync Server 2013, viene creata per l'utente una singola raccolta globale di impostazioni di configurazione di registrazione dettagli chiamata. Gli amministratori hanno inoltre la possibilità di creare raccolte di impostazioni personalizzate da applicare ai siti individuali. È possibile visualizzare le impostazioni di configurazione di registrazione dettagli chiamata in uso nell'organizzazione utilizzando il pannello di controllo di Lync Server o il cmdlet [Get-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsCdrConfiguration) .
 
 <div>
 
-## <a name="to-view-cdr-configuration-information-by-using-lync-server-control-panel"></a>Per visualizzare le informazioni di configurazione CDR tramite il pannello di controllo di Lync Server
+## <a name="to-view-cdr-configuration-information-by-using-lync-server-control-panel"></a>Per visualizzare le informazioni sulla configurazione di registrazione dettagli chiamata tramite il pannello di controllo di Lync Server
 
-1.  Nel pannello di controllo di Lync Server fare clic su **monitoraggio e archiviazione**.
+1.  Nel pannello di controllo di Lync Server, fare clic su **monitoraggio e archiviazione**.
 
-2.  Nella scheda **registrazione dettagli chiamata** verrà visualizzato un elenco di tutte le impostazioni di configurazione CDR. per ogni raccolta di impostazioni verrà visualizzato il **nome**della raccolta; indipendentemente dal fatto che CDR sia stato abilitato (la proprietà **CDR** ); e indipendentemente dal fatto che l'eliminazione sia stata abilitata (la proprietà **cancellazione CDR** ). Per visualizzare informazioni dettagliate su una raccolta, fare doppio clic sulla raccolta oppure selezionare la raccolta appropriata, fare clic su **modifica**e quindi su **Mostra dettagli**. Tieni presente che puoi visualizzare solo informazioni dettagliate per una singola raccolta di impostazioni di configurazione CDR alla volta.
+2.  Nella scheda **Registrazione dettagli chiamata** viene visualizzato un elenco delle impostazioni di configurazione per la registrazione dettagli chiamata; per ciascuna raccolta di impostazioni comparirà il **Nome** della raccolta, se la Registrazione dettagli chiamata è abilitata o meno (la proprietà **CDR** property), e se l'eliminazione è abilitata (la proprietà **Eliminazione CDR**). Per visualizzare informazioni dettagliate su una raccolta, fare doppio clic sulla raccolta o selezionare la raccolta appropriata, fare clic su **Modifica** e quindi su **Mostra dettagli**. Si noti che è possibile visualizzare le informazioni dettagliate per una raccolta singola di impostazioni di configurazione per la registrazione dettagli chiamata alla volta.
 
 </div>
 
 <div>
 
-## <a name="viewing-cdr-configuration-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni di configurazione CDR tramite i cmdlet di Windows PowerShell
+## <a name="viewing-cdr-configuration-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni di configurazione di registrazione dettagli chiamata tramite i cmdlet di Windows PowerShell
 
-Per visualizzare le impostazioni di configurazione CDR, è possibile usare Windows PowerShell e il cmdlet Get-CsCdrConfiguration. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile visualizzare le impostazioni di configurazione di registrazione dettagli chiamata utilizzando Windows PowerShell e il cmdlet Get-CsCdrConfiguration. È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-view-cdr-configuration-information"></a>Per visualizzare le informazioni sulla configurazione CDR
+## <a name="to-view-cdr-configuration-information"></a>Visualizzare le informazioni di configurazione della registrazione dettagli chiamata
 
-  - Per visualizzare informazioni su tutte le impostazioni di configurazione CDR, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
+  - Per visualizzare informazioni su tutte le impostazioni di configurazione di registrazione dettagli chiamata, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
     
         Get-CsCdrConfiguration
     
-    Questo restituirà informazioni simili alla seguente:
+    Verranno restituite informazioni simili alle seguenti:
     
         Identity               : Global
         EnableCDR              : True
@@ -76,7 +76,7 @@ Per visualizzare le impostazioni di configurazione CDR, è possibile usare Windo
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsCdrConfiguration) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsCdrConfiguration) .
 
 </div>
 

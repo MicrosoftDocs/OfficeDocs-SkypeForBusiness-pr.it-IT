@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Fornire agli utenti di Lync Server la segreteria telefonica nella messaggistica unificata di Exchange ospitata'
+title: 'Lync Server 2013: fornire agli utenti di Lync Server la segreteria telefonica nella messaggistica unificata di Exchange ospitata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183752
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 02feacedfc2b0cf7d3f34788c5c9a6ee65d50a9c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7849798b1e9cc01b26b5692509bd19c40da644a5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747226"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006854"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="providing-lync-server-2013-users-voice-mail-on-hosted-exchange-um"></a>Fornire agli utenti di Lync Server 2013 la segreteria telefonica nella messaggistica unificata di Exchange ospitata
+# <a name="providing-lync-server-2013-users-voice-mail-on-hosted-exchange-um"></a>Fornire ai messaggi vocali di Lync Server 2013 utenti la messaggistica unificata di Exchange ospitata
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41747226"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-24_
+_**Ultimo argomento modificato:** 2012-09-24_
 
-Questa sezione illustra il processo di fornitura degli utenti in una distribuzione locale di Lync Server 2013 con la segreteria telefonica in un servizio di messaggistica unificata di Exchange ospitata.
+In questa sezione viene illustrato il processo di fornitura degli utenti in una distribuzione locale di Lync Server 2013 con la segreteria telefonica in un servizio di messaggistica unificata di Exchange ospitata.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Creare un Record DNS SRV per l'integrazione con la messaggistica unificata di Exchange ospitata](lync-server-2013-create-a-dns-srv-record-for-integration-with-hosted-exchange-um.md)
+  - [Creare un record DNS SRV per l'integrazione con la messaggistica unificata di Exchange ospitata](lync-server-2013-create-a-dns-srv-record-for-integration-with-hosted-exchange-um.md)
 
   - [Configurare il server perimetrale per l'integrazione con la messaggistica unificata di Exchange ospitata](lync-server-2013-configure-the-edge-server-for-integration-with-hosted-exchange-um.md)
 
