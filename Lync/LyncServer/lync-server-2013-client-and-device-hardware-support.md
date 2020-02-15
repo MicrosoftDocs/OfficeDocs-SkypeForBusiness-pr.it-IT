@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Supporto dell'hardware di dispositivi e client"
+title: Supporto hardware per client e dispositivi di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185851
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 08c87692e169bac11c29bc1beeb61df8c6c964b7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e9041f63f012f7251c51bb60d912417a2ed0494e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729836"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037716"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="client-and-device-hardware-support-in-lync-server-2013"></a><span data-ttu-id="29564-102">Supporto dell'hardware di dispositivi e client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="29564-102">Client and device hardware support in Lync Server 2013</span></span>
+# <a name="client-and-device-hardware-support-in-lync-server-2013"></a><span data-ttu-id="be1a8-102">Supporto hardware per client e dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="be1a8-102">Client and device hardware support in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41729836"
 
 <span> </span>
 
-<span data-ttu-id="29564-103">_**Argomento Ultima modifica:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="29564-103">_**Topic Last Modified:** 2012-10-01_</span></span>
+<span data-ttu-id="be1a8-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="be1a8-103">_**Topic Last Modified:** 2012-10-01_</span></span>
 
-<span data-ttu-id="29564-104">I computer client devono soddisfare determinati requisiti hardware per supportare i client nella distribuzione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="29564-104">Client computers must meet certain hardware requirements to support clients in your Lync Server 2013 deployment.</span></span> <span data-ttu-id="29564-105">Le configurazioni hardware aggiuntive devono essere inserite prima di distribuire telefoni IP e dispositivi analogici.</span><span class="sxs-lookup"><span data-stu-id="29564-105">Additional hardware configurations must be in place before you deploy IP phones and analog devices.</span></span>
+<span data-ttu-id="be1a8-104">I computer client devono soddisfare determinati requisiti hardware per supportare i client nella distribuzione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="be1a8-104">Client computers must meet certain hardware requirements to support clients in your Lync Server 2013 deployment.</span></span> <span data-ttu-id="be1a8-105">Prima di distribuire telefoni IP e dispositivi analogici, è necessario eseguire configurazioni hardware aggiuntive.</span><span class="sxs-lookup"><span data-stu-id="be1a8-105">Additional hardware configurations must be in place before you deploy IP phones and analog devices.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="29564-106">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="29564-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="be1a8-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="be1a8-106">In This Section</span></span>
 
-  - [<span data-ttu-id="29564-107">Supporto per l'hardware client di Lync in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="29564-107">Lync client hardware support in Lync Server 2013</span></span>](lync-server-2013-lync-client-hardware-support.md)
+  - [<span data-ttu-id="be1a8-107">Supporto per l'hardware client di Lync in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="be1a8-107">Lync client hardware support in Lync Server 2013</span></span>](lync-server-2013-lync-client-hardware-support.md)
 
-  - [<span data-ttu-id="29564-108">Supporto di dispositivi hardware in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="29564-108">Device hardware support in Lync Server 2013</span></span>](lync-server-2013-device-hardware-support.md)
+  - [<span data-ttu-id="be1a8-108">Supporto hardware per dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="be1a8-108">Device hardware support in Lync Server 2013</span></span>](lync-server-2013-device-hardware-support.md)
 
-  - [<span data-ttu-id="29564-109">Supporto per i dispositivi mobili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="29564-109">Mobility support in Lync Server 2013</span></span>](lync-server-2013-mobility-support.md)
+  - [<span data-ttu-id="be1a8-109">Supporto per dispositivi mobili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="be1a8-109">Mobility support in Lync Server 2013</span></span>](lync-server-2013-mobility-support.md)
 
 </div>
 
