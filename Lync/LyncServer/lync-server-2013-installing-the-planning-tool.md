@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Installazione dello strumento di pianificazione'
+title: 'Lync Server 2013: installazione dello strumento di pianificazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51541525
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e7a427ab99368d74180e1d0321741117a9ed97e9
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 792f72daac7eb1d7edb10087256bfda0912edfe9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725896"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006172"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41725896"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-11-07_
+_**Ultimo argomento modificato:** 2013-11-07_
 
-Prima di iniziare a progettare e pianificare l'infrastruttura di Lync Server 2013 utilizzando Microsoft Lync Server 2013, strumento di pianificazione, è necessario prima di tutto installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Lync Server 2013. Il file Readme che accompagna lo strumento di pianificazione descrive in dettaglio informazioni importanti sull'installazione e l'uso dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono duplicate qui per chiarezza.
+Prima di iniziare la progettazione e la pianificazione dell'infrastruttura Lync Server 2013 utilizzando Microsoft Lync Server 2013, strumento di pianificazione, è necessario innanzitutto installare lo strumento di pianificazione. Non è necessario distribuire lo strumento di pianificazione su una workstation o un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Lync Server 2013. Il file Readme che accompagna lo strumento di pianificazione descrive in dettaglio informazioni importanti sull'installazione e l'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Lo strumento di pianificazione richiede l'installazione da parte di un utente con diritti e autorizzazioni di amministratore nel computer in cui deve essere installato lo strumento.
+> Lo strumento di pianificazione richiede l'installazione da parte di un utente con autorizzazioni e diritti di amministratore nel computer in cui deve essere installato lo strumento.
 
 
 
 </div>
 
-I sistemi operativi supportati per l'installazione e il funzionamento dello strumento di pianificazione sono i seguenti:
+I sistemi operativi supportati per l'installazione e l'esecuzione dello strumento di pianificazione sono i seguenti:
 
   - Windows 8
 
@@ -59,11 +59,11 @@ I sistemi operativi supportati per l'installazione e il funzionamento dello stru
 
   - Windows Server 2012 R2
 
-  - Windows 7, 32 bit Edition
+  - Windows 7, edizione a 32 bit
 
-  - Windows 7, 64 bit Edition con Windows su Win32 (WOW)
+  - Windows 7, edizione a 64 bit con Windows on Win32 (WOW)
 
-  - Windows Server 2008 R2 con WOW
+  - Windows Server 2008 R2, con WOW
 
 Inoltre, lo strumento di pianificazione richiede Microsoft .NET Framework 4,5.
 
@@ -75,19 +75,19 @@ Dopo aver soddisfatto i requisiti di preinstallazione, è possibile installare l
 
 1.  Accedere al computer locale come membro del gruppo Administrators.
 
-2.  Usando Esplora risorse o una finestra di comando, individuare la directory in cui sono stati scaricati i file di installazione dello strumento di pianificazione.
+2.  Se si utilizza Esplora risorse o una finestra di comando, individuare la directory in cui sono stati scaricati i file di installazione dello strumento di pianificazione.
 
-3.  Individuare il file LyncPlanningTool. msi. In Esplora risorse fare doppio clic sul file. Nella finestra di comando digitare il nome del file e quindi premere **invio** per eseguire il file.
+3.  Individuare il LyncPlanningTool. msi. In Esplora risorse fare doppio clic sul file. Nella finestra di comando, digitare il nome del file e quindi premere **invio** per eseguire il file.
 
-4.  Nella pagina di benvenuto di **Microsoft Lync Server 2013, configurazione guidata strumento di pianificazione**, fare clic su **Avanti**.
+4.  Nella pagina iniziale dell' **installazione guidata dello strumento di pianificazione di Microsoft Lync Server 2013**fare clic su **Avanti**.
 
-5.  Esaminare il **contratto di licenza con l'utente finale**, selezionare **Accetto i termini del contratto di licenza** se si sceglie di accettare le condizioni per l'uso nel contratto di licenza e quindi fare clic su **Avanti**.
+5.  Leggere il **Contratto di Licenza con l'utente finale**, selezionare **Accetto i termini del Contratto di Licenza** se si sceglie di accettare le condizioni per l'utilizzo riportate nel contratto e quindi fare clic su **Avanti**.
 
-6.  Scegliere la posizione in cui installare i file dello strumento di pianificazione. Il percorso predefinito è C:\\Program Files (x86)\\Microsoft Lync Server 2013\\Planning Tool. Se si vuole modificare il percorso di installazione, fare clic su **Cambia**. In **modifica cartella di destinazione**selezionare o digitare la posizione in cui installare i file, fare clic su **OK**e quindi su **Avanti**.
+6.  Scegliere dove installare i file dello strumento di pianificazione. Il percorso predefinito è C:\\Program Files (x86)\\Microsoft Lync Server 2013\\Planning Tool. Se si desidera cambiarlo, fare clic su **Cambia**. In **Modifica cartella di destinazione**, individuare o digitare il percorso in cui installare i file, fare clic su **OK** e quindi su **Avanti**.
 
-7.  Il programma di installazione è ora pronto per l'installazione dello strumento di pianificazione. Fare clic su **Installa** per avviare il processo di installazione.
+7.  Il programma di installazione è ora pronto per installare lo strumento di pianificazione. Fare clic su **Installa** per avviare il processo di installazione.
 
-8.  L'installazione verrà avviata e verrà visualizzato lo stato di avanzamento. Dopo aver completato l'installazione, fare clic su **fine**.
+8.  L'installazione verrà avviata e verrà visualizzato il relativo stato. Al termine dell'installazione, fare clic su **Fine**.
 
 9.  Lo strumento di pianificazione è pronto per l'uso.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Installare il database del server Standard Edition'
+title: 'Lync Server 2013: installare il database del server Standard Edition'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183385
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 63f2ef304b1a603203d09f260b8d3c7c46e23ccf
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 52853073fec62a3386936fe093b83e902d576069
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763690"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006182"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,36 +35,36 @@ ms.locfileid: "41763690"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Configurazione di un server Standard Edition come unico server nell'infrastruttura in cui gli utenti di case si differenziano da altre installazioni del server, in quanto esiste una selezione nella **distribuzione guidata** in modo specifico per la configurazione del server iniziale.
+Configurazione di un server Standard Edition come unico server dell'infrastruttura che gli utenti di case differiscono da altre installazioni del server, in quanto è presente una selezione nella **distribuzione guidata** specificatamente per la configurazione del server iniziale.
 
 <div>
 
 ## <a name="to-install-a-standard-edition-server"></a>Per installare un server Standard Edition
 
-1.  Accedere al server in cui si vuole installare il server Standard Edition come amministratore locale o come equivalente di dominio.
+1.  Accedere al server in cui si intende installare il server Standard Edition come amministratore locale o come equivalente di dominio.
 
-2.  Se non sono stati preparati servizi di dominio Active Directory, eseguire prima di tutto queste procedure. Per informazioni dettagliate, vedere [preparazione di servizi di dominio Active Directory per Lync Server 2013](lync-server-2013-preparing-active-directory-domain-services.md).
+2.  Se non è stato preparato Servizi di dominio Active Directory, eseguire prima queste procedure. Per ulteriori informazioni, vedere [preparazione di servizi di dominio Active Directory per Lync Server 2013](lync-server-2013-preparing-active-directory-domain-services.md).
 
-3.  Nella distribuzione guidata di Lync Server fare clic su **prepara primo server Standard Edition**.
+3.  Nella distribuzione guidata di Lync Server, fare clic su **prepara primo server Standard Edition**.
 
-4.  Nella pagina **prepara Single Standard Edition server** fare clic su **Avanti**.
+4.  Nella pagina **Prepara singolo Server Standard** fare clic su **Avanti**.
 
-5.  Nella pagina **esecuzione dei comandi** , SQL Server 2012 Express viene installato come Central Management store. Vengono create le regole firewall necessarie. Dopo aver completato l'installazione del database e del software prerequisito, fare clic su **fine**.
+5.  Nella pagina **esecuzione comandi** in corso viene installato SQL Server 2012 Express come archivio di gestione centrale. Vengono create le regole firewall necessarie. Al termine dell'installazione del database e dei prerequisiti software, fare clic su **Fine**.
     
     <div>
     
 
     > [!NOTE]  
-    > L'installazione iniziale può richiedere del tempo senza aggiornamenti visibili alla schermata di riepilogo dell'output del comando. Ciò è dovuto all'installazione di SQL Server Express. Se è necessario monitorare l'installazione del database, usare Gestione attività per monitorare la configurazione.
+    > L'installazione iniziale può richiedere tempo senza che vengano visualizzati aggiornamenti visibili nella schermata riepilogativa di output dei comandi. Ciò è dovuto all'installazione di SQL Server Express. Se si desidera monitorare l'installazione del database, usare Gestione attività.
 
     
     </div>
 
-6.  Nella pagina distribuzione guidata di Lync Server fare clic su **installa Generatore di topologie** se non sono stati installati in precedenza gli strumenti di amministrazione. Per informazioni dettagliate, vedere [installare gli strumenti di amministrazione di Lync Server 2013](lync-server-2013-install-lync-server-administrative-tools.md).
+6.  Nella pagina distribuzione guidata di Lync Server, fare clic su **installa Generatore di topologie** se non sono stati precedentemente installati gli strumenti di amministrazione. Per informazioni dettagliate, vedere [Install Lync Server 2013 Administrative Tools](lync-server-2013-install-lync-server-administrative-tools.md).
 
-7.  Verificare che siano presenti segni di spunta verdi accanto a "prepara Active Directory", "prepara First Standard Edition Server" e "Install topologia Builder".
+7.  Verificare che accanto a "Prepara Active Directory", "Prepara primo Server Standard" e "Installa Generatore di topologie" siano visualizzati segni di spunta di colore verde.
 
 </div>
 

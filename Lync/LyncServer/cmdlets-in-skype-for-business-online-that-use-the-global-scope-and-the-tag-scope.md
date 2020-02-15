@@ -1,5 +1,5 @@
 ---
-title: Cmdlet in Skype for business online che usano l'ambito globale e l'ambito dei tag
+title: Cmdlet in Skype for business online che utilizzano l'ambito globale e l'ambito dei tag
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -13,27 +13,27 @@ ms:contentKeyID: 56558824
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 04eb5f71a0092452eb8b24fa9acf53d46fb3bcd5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 998201bf7772003c83ae27d56b3a238f9f0ca055
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728096"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42001151"
 ---
-# <a name="cmdlets-in-skype-for-business-online-that-use-the-global-scope-and-the-tag-scope"></a>Cmdlet in Skype for business online che usano l'ambito globale e l'ambito dei tag
+# <a name="cmdlets-in-skype-for-business-online-that-use-the-global-scope-and-the-tag-scope"></a>Cmdlet in Skype for business online che utilizzano l'ambito globale e l'ambito dei tag
 
  
 
 
-In Skype for business online i criteri possono essere configurati sia nell'ambito *globale* che nell'ambito del *tag* (o nell'ambito *per utente*). Quando si usano i cmdlet **Get-CS** , non è necessario specificare un ambito o un'identità. Se si chiama uno di questi cmdlet senza parametri, verranno restituiti tutti gli elementi rilevanti. Ad esempio, questo comando restituisce informazioni su tutti i criteri di accesso esterno:
+In Skype for business online, i criteri possono essere configurati nell'ambito *globale* o nell'ambito dei *tag* (o nell'ambito *per utente*). Quando si utilizzano i cmdlet **Get-CS** , non è necessario specificare un ambito o un'identità. Se si chiama uno di questi cmdlet senza alcun parametro, verranno restituiti tutti gli elementi rilevanti. Ad esempio, questo comando restituisce informazioni su tutti i criteri di accesso esterno:
 
     Get-CsExternalAccessPolicy
 
-Se si vogliono limitare i dati restituiti, è necessario includere solo il parametro Identity o il parametro Filter. Ad esempio, per restituire solo il criterio globale, usare questo comando:
+Se si desidera limitare i dati restituiti, è necessario includere solo il parametro Identity o il parametro Filter. Ad esempio, per restituire solo il criterio globale, utilizzare il seguente comando:
 
     Get-CsExternalAccessPolicy -Identity "global"
 
-Per restituire un criterio per utente con l'identità "RedmondAccessPolicy", usare questo comando:
+Per restituire un criterio per utente con identità "RedmondAccessPolicy", utilizzare questo comando:
 
     Get-CsExternalAccessPolicy -Identity "RedmondAccessPolicy"
 
@@ -43,29 +43,29 @@ Per restituire un criterio per utente con l'identità "RedmondAccessPolicy", usa
 
 
 
-Per restituire tutti i criteri eccetto i criteri globali, ovvero tutti i criteri per utente, usare questo comando:
+Per restituire tutti i criteri, ad eccezione dei criteri globali, ovvero tutti i criteri per utente, utilizzare questo comando:
 
     Get-CsExternalAccessPolicy -Filter "tag:*"
 
-I cmdlet seguenti funzionano sia per l'ambito globale che per l'ambito per utente (tag):
+I cmdlet seguenti agiscono sull'ambito globale e sull'ambito per utente (tag):
 
-  - [Get-CsClientPolicy](https://technet.microsoft.com/en-us/library/gg398830\(v=ocs.15\))
+  - [Get-CsClientPolicy](https://technet.microsoft.com/library/gg398830\(v=ocs.15\))
 
-  - [Get-CsConferencingPolicy](https://technet.microsoft.com/en-us/library/gg398293\(v=ocs.15\))
+  - [Get-CsConferencingPolicy](https://technet.microsoft.com/library/gg398293\(v=ocs.15\))
 
-  - [Get-CsDialPlan](https://technet.microsoft.com/en-us/library/gg413043\(v=ocs.15\))
+  - [Get-CsDialPlan](https://technet.microsoft.com/library/gg413043\(v=ocs.15\))
 
-  - [Get-CsExternalAccessPolicy](https://technet.microsoft.com/en-us/library/gg425805\(v=ocs.15\))
+  - [Get-CsExternalAccessPolicy](https://technet.microsoft.com/library/gg425805\(v=ocs.15\))
 
-  - [Get-CsHostedVoicemailPolicy](https://technet.microsoft.com/en-us/library/gg398348\(v=ocs.15\))
+  - [Get-CsHostedVoicemailPolicy](https://technet.microsoft.com/library/gg398348\(v=ocs.15\))
 
-  - [Get-CsPresencePolicy](https://technet.microsoft.com/en-us/library/gg398463\(v=ocs.15\))
+  - [Get-CsPresencePolicy](https://technet.microsoft.com/library/gg398463\(v=ocs.15\))
 
-  - [Get-CsVoicePolicy](https://technet.microsoft.com/en-us/library/gg398101\(v=ocs.15\))
+  - [Get-CsVoicePolicy](https://technet.microsoft.com/library/gg398101\(v=ocs.15\))
 
 
 > [!NOTE]  
-> Nonostante il nome, i dial plan sono, in termini funzionali, i criteri. Viene usato il <EM>dial plan</EM> di termine anziché, ad esempio, i criteri di chiamata, per preservare la terminologia usata con le versioni precedenti di Lync Server.
+> Nonostante il nome, i dial plan sono, funzionalmente, i criteri. Viene utilizzato il <EM>dial plan</EM> di termini anziché, ad esempio, i criteri di composizione per mantenere la terminologia utilizzata con le versioni precedenti di Lync Server.
 
 
 
@@ -73,5 +73,5 @@ I cmdlet seguenti funzionano sia per l'ambito globale che per l'ambito per utent
 
 
 [Identità, ambiti e tenant in Skype for business online](identities-scopes-and-tenants-in-skype-for-business-online.md)  
-[Cmdlet di Lync Online](https://technet.microsoft.com/en-us/library/dn362817\(v=ocs.15\))
+[Cmdlet di Skype for business online](https://technet.microsoft.com/library/dn362817\(v=ocs.15\))
 

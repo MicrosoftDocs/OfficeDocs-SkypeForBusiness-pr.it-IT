@@ -1,5 +1,5 @@
 ---
-title: Creare o modificare una regola di traduzione usando lo strumento crea una regola di traduzione
+title: Creare o modificare una regola di conversione utilizzando lo strumento Crea regola di conversione
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185224
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d45ca4e04146a175ec2782aa798ac27559fce495
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8321603c699fb0f25fc0a3a1b94e8b216761c6b4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722375"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006342"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool-in-lync-server-2013"></a>Creare o modificare una regola di traduzione usando lo strumento crea una regola di traduzione in Lync Server 2013
+# <a name="create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool-in-lync-server-2013"></a>Creare o modificare una regola di conversione utilizzando lo strumento Crea regola di conversione in Lync Server 2013
 
 </div>
 
@@ -35,59 +35,59 @@ ms.locfileid: "41722375"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-05_
+_**Ultimo argomento modificato:** 2012-10-05_
 
-Seguire questa procedura se si vuole definire una regola di traduzione immettendo un set di valori nello strumento **Compila una regola di traduzione** e abilitando il pannello di controllo di Lync Server per generare il modello di corrispondenza corrispondente e la regola di traduzione. In alternativa, è possibile eseguire manualmente un'espressione regolare di scrittura per definire il modello e la regola di traduzione corrispondenti. Per informazioni dettagliate, vedere [creare o modificare manualmente una regola di traduzione in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-manually.md).
+Se si desidera definire una regola di conversione, eseguire la procedura seguente per specificare un insieme di valori nello strumento **Crea regola di conversione** e per abilitare il pannello di controllo di Lync Server per generare la regola di conversione e il motivo corrispondente. In alternativa, è possibile scrivere manualmente un'espressione regolare per definire il formato e la regola di conversione corrispondenti. Per ulteriori informazioni, vedere [creare o modificare manualmente una regola di conversione in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-manually.md).
 
 <div>
 
-## <a name="to-define-a-rule-by-using-the-build-a-translation-rule-tool"></a>Per definire una regola usando lo strumento crea una regola di traduzione
+## <a name="to-define-a-rule-by-using-the-build-a-translation-rule-tool"></a>Per definire una regola tramite lo strumento Crea regola di conversione
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Per iniziare a definire una regola di traduzione, seguire la procedura descritta in [configurare un trunk con il bypass multimediale in Lync server 2013](lync-server-2013-configure-a-trunk-with-media-bypass.md) tramite il passaggio 10 o [configurare un trunk senza bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-without-media-bypass.md) tramite il passaggio 9.
+3.  Per iniziare a definire una regola di conversione, eseguire la procedura descritta in [Configure a Trunk with media bypass in Lync server 2013](lync-server-2013-configure-a-trunk-with-media-bypass.md) through Step 10 oppure [Configure a Trunk Without Media Bypass in Lync Server 2013](lync-server-2013-configure-a-trunk-without-media-bypass.md) through Step 9.
 
-4.  In **nome** nella pagina **nuova** regola di traduzione o **Modifica regola di traduzione** digitare un nome che descriva il modello di numero da tradurre.
+4.  In **Nome** nella pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome descrittivo del formato del numero da convertire.
 
-5.  Opzionale In **Descrizione**Digitare una descrizione della regola di traduzione, ad esempio le **chiamate interurbane internazionali degli Stati Uniti**.
+5.  (Facoltativo) In **Descrizione** digitare una descrizione della regola di conversione, ad esempio **Chiamate interurbane internazionali**.
 
-6.  Nella sezione **genera una regola di traduzione** della finestra di dialogo immettere i valori nei campi seguenti:
+6.  Nella sezione **Crea regola di conversione** della finestra di dialogo immettere i valore nei campi seguenti:
     
-      - **Cifre iniziali**: (facoltativo) specificare le cifre iniziali dei numeri a cui si vuole che corrisponda il motivo. Ad esempio, immetti **+** in questo campo i numeri in formato E. 164 (che iniziano con +).
+      - **Cifre iniziali**: (facoltativo) specificare le cifre iniziali dei numeri a cui si desidera corrisponda il formato. Ad esempio, immettere **+** in questo campo per associare i numeri nel formato E. 164 (che iniziano con +).
     
-      - **Length**: specificare il numero di cifre nel criterio di corrispondenza e selezionare se si vuole che il pattern corrisponda a numeri di lunghezza uguale a quella specificata, almeno questa lunghezza o qualsiasi lunghezza. Ad esempio, immetti **11** e **Seleziona almeno nell'elenco a discesa** per abbinare i numeri di almeno 11 cifre in lunghezza.
+      - **Lunghezza**: specificare il numero di cifre nel formato e specificare se si desidera applicare il formato ai numeri esattamente di questa lunghezza, almeno di questa lunghezza o di qualsiasi lunghezza. Ad esempio, immettere **11** e selezionare **Almeno** nell'elenco a discesa per specificare una corrispondenza con i numeri con una lunghezza di almeno 11 cifre.
     
-      - **Cifre da rimuovere**: (facoltativo) specificare il numero di cifre iniziali da eliminare. Ad esempio, immettere **1** per eliminare l' **+** inizio del numero.
+      - **Cifre da rimuovere**: (facoltativo) specificare il numero di cifre iniziali da rimuovere. Ad esempio, immettere **1** per eliminare il **+** valore dall'inizio del numero.
     
-      - **Cifre da aggiungere**: (facoltativo) specificare le cifre da anteporre ai numeri tradotti. Ad esempio, immetti **011** se vuoi che 011 venga anteposto ai numeri tradotti quando viene applicata la regola.
+      - **Prefisso**: (facoltativo) specificare le cifre da aggiungere all'inizio dei numeri convertiti. Ad esempio, immettere **011** se si desidera aggiungere 011 all'inizio dei numeri convertiti quando si applica questa regola.
     
-    I valori immessi in questi campi si riflettono nei campi della regola **per la corrispondenza** e la **traduzione** . Ad esempio, se specifichi i valori di esempio precedenti, l'espressione regolare risultante nel campo **pattern to match** è:
+    I valori immessi in questi campi vengono riportati nei campi **Formato per corrispondenza** e **Regola di conversione**. Se si specificano i valori di esempio precedenti, ad esempio, l'espressione regolare risultante nel campo **Formato per corrispondenza** sarà:
     
     **^\\+ (\\d{9}\\d +) $**
     
-    Il campo della **regola di traduzione** specifica un modello per il formato dei numeri tradotti. Questo modello include due parti:
+    Nel campo **Regola di conversione** specificare un modello per il formato dei numeri convertiti. Il modello è composto da due parti:
     
-      - Un valore, ad esempio **$1**, che rappresenta il numero di cifre nel modello corrispondente
+      - Un valore (ad esempio **$1**) che rappresenta il numero di cifre nel formato corrispondente
     
-      - Opzionale Un valore che puoi anteporre immettendolo nel campo **cifre da aggiungere**
+      - (Facoltativo) Un valore che è possibile aggiungere all'inizio del numero immettendolo nel campo **Prefisso**
     
-    Usando i valori di esempio precedenti, viene visualizzato **011 $1** nel campo della **regola di traduzione** .
+    In base ai valori di esempio precedenti, nel campo **Regola di conversione** viene visualizzato **011$1**.
     
-    Quando viene applicata questa regola di traduzione, + 441235551010 diventa 011441235551010.
+    Con l'applicazione di questa regola di conversione il numero +441235551010 diventa 011441235551010.
 
-7.  Fare clic su **OK** per salvare la regola di traduzione.
+7.  Fare clic su **OK** per salvare la regola di conversione.
 
-8.  Fare clic su **OK** per salvare la configurazione trunk.
+8.  Fare clic su **OK** per salvare la configurazione del trunk.
 
-9.  Nella pagina **trunk Configuration** fare clic su **commit**e quindi su **Commit all**.
+9.  Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**.
     
     <div>
     
 
     > [!NOTE]
-    > Ogni volta che si crea o si modifica una regola di traduzione, è necessario eseguire il comando <STRONG>commit tutti</STRONG> per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">pubblicare le modifiche in sospeso nella configurazione del routing vocale in Lync Server 2013</A> nella documentazione Operations.
+    > Ogni volta che si crea o modifica una regola di conversione, è necessario eseguire il comando <STRONG>Salva tutto</STRONG> per pubblicare la modifica apportata alla configurazione. Per ulteriori informazioni, vedere <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">pubblicare le modifiche in sospeso alla configurazione del routing vocale in Lync Server 2013</A> nella documentazione relativa alle operazioni.
 
     
     </div>
@@ -99,10 +99,10 @@ Seguire questa procedura se si vuole definire una regola di traduzione immettend
 ## <a name="see-also"></a>Vedere anche
 
 
-[Creare o modificare manualmente una regola di traduzione in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-manually.md)  
-[Configurare un trunk con il bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-with-media-bypass.md)  
+[Creare o modificare manualmente una regola di conversione in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-manually.md)  
+[Configurare un trunk con bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-with-media-bypass.md)  
 [Configurare un trunk senza bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-without-media-bypass.md)  
-[Pubblicare le modifiche in sospeso nella configurazione di routing vocale in Lync Server 2013](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)  
+[Pubblicare le modifiche in sospeso alla configurazione del routing vocale in Lync Server 2013](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)  
 
 
 [Opzioni di bypass multimediale globale in Lync Server 2013](lync-server-2013-global-media-bypass-options.md)  

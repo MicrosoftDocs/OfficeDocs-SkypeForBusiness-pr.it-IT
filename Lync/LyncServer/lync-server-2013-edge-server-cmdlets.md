@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: cmdlet Edge Server'
+title: 'Lync Server 2013: cmdlet del server perimetrale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183534
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6d142bc2a98fbbb1d8147943e379ae1e1a243b18
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3d4343e9321ab463a6bf0b4173989d245267588e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726196"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006272"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="edge-server-cmdlets-in-lync-server-2013"></a>Cmdlet Edge Server in Lync Server 2013
+# <a name="edge-server-cmdlets-in-lync-server-2013"></a>Cmdlet per i server perimetrali in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41726196"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-10-07_
+_**Ultimo argomento modificato:** 2013-10-07_
 
-I server perimetrali consentono di estendere le funzionalità di Microsoft Lync Server 2013 a utenti che non hanno eseguito l'accesso alla rete interna. Se ad esempio sono presenti utenti remoti, gli utenti autenticati che accedono a Lync Server 2013 tramite Internet invece che tramite la rete interna, è necessario configurare un server perimetrale che esegua il servizio Access Edge di Lync Server. Inoltre, gli Edge Server sono obbligatori per stabilire la Federazione con un'altra organizzazione o per consentire agli utenti il diritto di comunicare con persone che hanno account con un servizio di messaggistica istantanea pubblico, ad esempio Yahoo\!, AOL o MSN.
+I server perimetrali consentono di estendere le funzionalità di Microsoft Lync Server 2013 a utenti che non hanno effettuato l'accesso alla rete interna. Ad esempio, se si dispone di utenti remoti, gli utenti autenticati che accedono a Lync Server 2013 su Internet invece che tramite la rete interna, sarà necessario configurare un server perimetrale che esegue il servizio Lync Server Access Edge. Inoltre, i server perimetrali sono obbligatori se si desidera stabilire la Federazione con un'altra organizzazione o se si desidera consentire agli utenti di comunicare con persone con account che dispongono di un servizio di messaggistica istantanea pubblico\!, ad esempio Yahoo, AOL o MSN.
 
 <div>
 
@@ -45,11 +45,11 @@ I server perimetrali consentono di estendere le funzionalità di Microsoft Lync 
 > [!IMPORTANT]
 > <UL>
 > <LI>
-> <P>A partire dal 1 ° settembre 2012, la licenza di abbonamento a Microsoft Lync Public IM Connectivity User ("PIC USL") non è più disponibile per l'acquisto di contratti nuovi o rinnovati. I clienti con licenze attive saranno in grado di continuare a eseguire la Federazione con Yahoo! Messenger fino alla data di chiusura del servizio. Data di fine vita del 2014 giugno per AOL e Yahoo! è stato annunciato. Per informazioni dettagliate, vedere <A href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">supporto per la connettività di messaggistica istantanea pubblica in Lync Server 2013</A>.</P>
+> <P>Al 1 ° settembre 2012, la licenza di sottoscrizione di Microsoft Lync Public IM Connectivity ("PIC USL") non è più disponibile per l'acquisto dei contratti nuovi o rinnovati. I clienti con licenze attive saranno in grado di continuare a eseguire la Federazione con Yahoo! Messenger fino alla data di arresto del servizio. Una data di fine vita del 2014 giugno per AOL e Yahoo! sono stati annunciati. Per informazioni dettagliate, vedere <A href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">supporto per la connettività di messaggistica istantanea pubblica in Lync Server 2013</A>.</P>
 > <LI>
-> <P>Il PIC USL è una licenza per abbonamento mensile per ogni utente necessaria per la Federazione di Lync Server o Office Communications Server con Yahoo! Messenger. La capacità di Microsoft di prestare questo servizio è stata subordinata al supporto di Yahoo!, l'accordo sottostante per il quale sta per finire.</P>
+> <P>Il PIC USL è una licenza per ogni utente per ogni mese che è necessaria per Lync Server o Office Communications Server per la Federazione con Yahoo! Messaggero. La capacità di Microsoft di fornire questo servizio è stata subordinata al supporto da Yahoo!, ovvero il contratto sottostante per il quale si sta liquidando.</P>
 > <LI>
-> <P>Più che mai, Lync è uno strumento efficace per la connessione tra le organizzazioni e gli utenti di tutto il mondo. La Federazione con Windows Live Messenger non richiede licenze aggiuntive per utenti e dispositivi oltre la licenza CAL standard di Lync. La Federazione Skype verrà aggiunta a questo elenco, consentendo agli utenti di Lync di raggiungere centinaia di milioni di persone con messaggistica istantanea e voce.</P></LI></UL>
+> <P>Più che mai, Lync è uno strumento potente per la connessione tra le organizzazioni e gli utenti di tutto il mondo. La Federazione con Windows Live Messenger non richiede licenze aggiuntive per utenti e dispositivi oltre la licenza CAL standard di Lync. La Federazione Skype verrà aggiunta a questo elenco, consentendo agli utenti di Lync di raggiungere centinaia di milioni di persone con messaggistica istantanea e vocale.</P></LI></UL>
 
 
 
@@ -57,41 +57,41 @@ I server perimetrali consentono di estendere le funzionalità di Microsoft Lync 
 
 <div>
 
-## <a name="edge-server-cmdlets"></a>Cmdlet Edge Server
+## <a name="edge-server-cmdlets"></a>Cmdlet per i server perimetrali
 
-Di seguito è riportato un elenco di cmdlet correlati direttamente alla gestione di Edge Server:
+Di seguito è riportato un elenco dei cmdlet correlati direttamente alla gestione dei server perimetrali:
 
-**Edge Server**
-
-  - <span></span>  
-    [Get-CsAccessEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg398574(v=OCS.15))
+**Server perimetrale**
 
   - <span></span>  
-    [Set-CsAccessEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg413017(v=OCS.15))
+    [Get-CsAccessEdgeConfiguration](https://technet.microsoft.com/library/Gg398574(v=OCS.15))
+
+  - <span></span>  
+    [Set-CsAccessEdgeConfiguration](https://technet.microsoft.com/library/Gg413017(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsAVEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg413008(v=OCS.15))
+    [Get-CsAVEdgeConfiguration](https://technet.microsoft.com/library/Gg413008(v=OCS.15))
 
   - <span></span>  
-    [New-CsAVEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg412884(v=OCS.15))
+    [New-CsAVEdgeConfiguration](https://technet.microsoft.com/library/Gg412884(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsAVEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg398786(v=OCS.15))
+    [Remove-CsAVEdgeConfiguration](https://technet.microsoft.com/library/Gg398786(v=OCS.15))
 
   - <span></span>  
-    [Set-CsAVEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg412869(v=OCS.15))
+    [Set-CsAVEdgeConfiguration](https://technet.microsoft.com/library/Gg412869(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Test-CsAVEdgeConnectivity](https://technet.microsoft.com/en-us/library/JJ205138(v=OCS.15))
+    [Test-CsAVEdgeConnectivity](https://technet.microsoft.com/library/JJ205138(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Set-CsEdgeServer](https://technet.microsoft.com/en-us/library/Gg398859(v=OCS.15))
+    [Set-CsEdgeServer](https://technet.microsoft.com/library/Gg398859(v=OCS.15))
 
 </div>
 

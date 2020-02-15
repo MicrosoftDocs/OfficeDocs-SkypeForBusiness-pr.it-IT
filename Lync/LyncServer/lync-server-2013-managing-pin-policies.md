@@ -12,16 +12,16 @@ ms:contentKeyID: 49733774
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1bbc4ca63a2b2b31a43b5f5a99aa007fedc745b7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2d5dfa79936b5d9162c6907df961dee38fa1fec2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756100"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41992501"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41756100"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-È possibile gestire le polizie PIN di Lync Server 2013 dal pannello di controllo di Lync Server 2013 o Lync Server Management Shell. Usare le procedure seguenti per configurare i criteri PIN per l'organizzazione.
+È possibile gestire i criteri PIN di Lync Server 2013 dal pannello di controllo di Lync Server 2013 o Lync Server Management Shell. Per configurare i criteri PIN per l'organizzazione, utilizzare le procedure seguenti.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Visualizzare i criteri PIN inforrmation in Lync Server 2013](lync-server-2013-view-pin-policy-inforrmation.md)
+  - [Visualizzazione dei criteri PIN inforrmation in Lync Server 2013](lync-server-2013-view-pin-policy-inforrmation.md)
 
   - [Creare un nuovo criterio PIN in Lync Server 2013](lync-server-2013-create-a-new-pin-policy.md)
 

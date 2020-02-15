@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report di messaggistica istantanea peer-to-peer'
+title: 'Lync Server 2013: rapporto di messaggistica istantanea peer-to-peer'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183533
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 359c3fad7f41d990ffdba3aa533d0d5f10456665
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b74f22e422539a8d7de1f2f7bad29a72d43646a5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755306"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41989291"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="peer-to-peer-im-report-in-lync-server-2013"></a>Report di messaggistica istantanea peer-to-peer in Lync Server 2013
+# <a name="peer-to-peer-im-report-in-lync-server-2013"></a>Rapporto di messaggistica istantanea peer-to-peer in Lync Server 2013
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "41755306"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Il report di messaggistica istantanea peer-to-peer fornisce informazioni sulla tendenza sulle sessioni di messaggistica immediata (IM) peer-to-peer, suddivise per pool e per tipo di autenticazione. Il report può visualizzare il numero totale di sessioni consentite durante il periodo di tempo specificato, ad esempio giorno per giorno o ora per ora, oppure può visualizzare il numero totale di messaggi istantanei inviati durante il periodo di tempo.
+Nel rapporto di messaggistica istantanea peer-to-peer vengono fornite informazioni sulla tendenza delle sessioni di messaggistica istantanea suddivise per pool e per tipo di autenticazione. Il rapporto può inoltre indicare il numero totale di sessioni organizzate oppure segnalare il numero complessivo di messaggi istantanei inviati nel periodo specificato (ad esempio, Giorno o Ora).
 
 <div>
 
-## <a name="accessing-the-peer-to-peer-im-report"></a>Accesso al report di messaggistica istantanea peer-to-peer
+## <a name="accessing-the-peer-to-peer-im-report"></a>Accesso al rapporto di messaggistica istantanea peer-to-peer
 
-È possibile accedere al report di messaggistica istantanea peer-to-peer solo aprendo il [report di riepilogo attività peer-to-peer in Lync Server 2013](lync-server-2013-peer-to-peer-activity-summary-report.md) e quindi facendo clic su una delle metriche seguenti:
+È possibile accedere al rapporto di messaggistica istantanea peer-to-peer solo aprendo il [rapporto riepilogativo attività peer-to-peer in Lync Server 2013](lync-server-2013-peer-to-peer-activity-summary-report.md) e quindi facendo clic su una delle metriche seguenti:
 
   - Totale sessioni di messaggistica istantanea peer-to-peer
 
-  - Totale messaggi di messaggistica istantanea peer-to-peer
+  - Totale messaggi istantanei peer-to-peer
 
 </div>
 
 <div>
 
-## <a name="making-the-best-use-of-the-peer-to-peer-im-report"></a>Sfruttare al meglio il report di messaggistica istantanea peer-to-peer
+## <a name="making-the-best-use-of-the-peer-to-peer-im-report"></a>Utilizzo ottimale del rapporto di messaggistica istantanea peer-to-peer
 
-Per impostazione predefinita, il rapporto di messaggistica istantanea peer-to-peer Mostra il numero di messaggi per ora (o giorno), a seconda delle impostazioni. Tuttavia, puoi anche scegliere di visualizzare il giorno per sessioni per ora. A tale scopo, fare clic su **Nascondi/Mostra parametri** nell'angolo in alto a destra della finestra report e quindi fare clic su **conteggio sessioni** nell'elenco **segnala per** .
+Nel rapporto di messaggistica istantanea peer-to-peer vengono mostrati, per impostazione predefinita, il numero di messaggi per ora (o giorno, a seconda dell'impostazione configurata). Tuttavia, è anche possibile scegliere di visualizzare il giorno in base alle sessioni per ora. In tal caso, fare clic su **Nascondi/mostra parametri** nell'angolo superiore destro della finestra relativa ai rapporti e quindi fare clic su **Numero di sessioni** nell'elenco **Rapporto di**.
 
 </div>
 
@@ -63,9 +63,9 @@ Per impostazione predefinita, il rapporto di messaggistica istantanea peer-to-pe
 
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Nella tabella seguente sono elencati i filtri che è possibile usare con il report di messaggistica istantanea peer-to-peer.
+I filtri consentono di ottenere un set di dati più mirato o di visualizzare i dati restituiti in diversi modi. Nella tabella seguente sono riportati i filtri utilizzabili con il rapporto di messaggistica istantanea peer-to-peer.
 
-### <a name="peer-to-peer-im-report-filters"></a>Filtri di report istantanei di messaggistica istantanea peer-to-peer
+### <a name="peer-to-peer-im-report-filters"></a>Filtri per il rapporto di messaggistica istantanea peer-to-peer
 
 <table>
 <colgroup>
@@ -80,42 +80,42 @@ I filtri consentono di restituire un set di dati più mirato o di visualizzare i
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Da</strong></p></td>
-<td><p>Data e ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:</p>
-<p>7/7/2012 1:00 PM</p>
-<p>Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>From</strong></p></td>
+<td><p>Data e ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di inizio come segue:</p>
+<p>07/07/2012 13.00</p>
+<p>Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data che rientri nella settimana o nel mese desiderato (non è necessario immettere il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>A</strong></p></td>
-<td><p>Data e ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:</p>
-<p>7/7/2012 1:00 PM</p>
-<p>Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>To</strong></p></td>
+<td><p>Data e ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di fine come segue:</p>
+<p>07/07/2012 13.00</p>
+<p>Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Intervallo</strong></p></td>
-<td><p>Intervallo di tempo. Selezionare una delle opzioni seguenti:</p>
+<td><p>Selezionare uno dei seguenti:</p>
 <ul>
-<li><p>Ogni ora (può essere visualizzato un massimo di 25 ore)</p></li>
-<li><p>Giornaliera (è possibile visualizzare un massimo di 31 giorni)</p></li>
-<li><p>Settimanale (può essere visualizzato un massimo di 12 settimane)</p></li>
-<li><p>Mensile (può essere visualizzato un massimo di 12 mesi)</p></li>
+<li><p>Orario (è possibile visualizzare un massimo di 25 ore)</p></li>
+<li><p>Giornaliero (è possibile visualizzare un massimo di 31 giorni)</p></li>
+<li><p>Settimanale (è possibile visualizzare un massimo di 12 settimane)</p></li>
+<li><p>Mensile (possono essere visualizzati al massimo 12 mesi)</p></li>
 </ul>
-<p>Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, viene visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 7/7/2012 e una data di fine 2/28/2012, i dati verranno visualizzati per i giorni 8/7/2012 12:00 da AM a 9/7/2012 12:00 AM, ovvero un totale di 31 giorni di dati.</p></td>
+<p>Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, verrà visualizzato solo il numero massimo di valori, a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo Giornaliero con 07/07/2012 come data di inizio e 28/02/2012 come data di fine, verranno visualizzati i dati dalla mezzanotte del 7 agosto 2012 alla mezzanotte del 7 settembre 2012, ovvero i dati per un totale di 31 giorni.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Report di</strong></p></td>
-<td><p>Indica i valori da usare nel report. Selezionare una delle opzioni seguenti:</p>
+<td><p><strong>Rapporto di</strong></p></td>
+<td><p>Indica i valori da utilizzare nel rapporto. Selezionare una delle impostazioni seguenti:</p>
 <ul>
-<li><p>Conteggio sessioni</p></li>
-<li><p>Numero di messaggi</p></li>
+<li><p>Numero di sessioni</p></li>
+<li><p>Numero messaggi</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -126,11 +126,11 @@ I filtri consentono di restituire un set di dati più mirato o di visualizzare i
 
 <div>
 
-## <a name="metrics-for-peer-to-peer-im-session-by-pool"></a>Metriche per la sessione di messaggistica istantanea peer-to-peer per pool
+## <a name="metrics-for-peer-to-peer-im-session-by-pool"></a>Metrica delle sessioni di messaggistica istantanea peer-to-peer in base al pool
 
-Nella tabella seguente sono elencate le informazioni fornite nel report di messaggistica istantanea peer-to-peer.
+Nella tabella seguente vengono riportate le informazioni fornite nel rapporto di messaggistica istantanea peer-to-peer.
 
-### <a name="metrics-for-peer-to-peer-im-session-by-pool"></a>Metriche per la sessione di messaggistica istantanea peer-to-peer per pool
+### <a name="metrics-for-peer-to-peer-im-session-by-pool"></a>Metrica del rapporto di messaggistica istantanea peer-to-peer in base al pool
 
 <table>
 <colgroup>
@@ -141,7 +141,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di messa
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -154,12 +154,12 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di messa
 <tr class="even">
 <td><p><strong>Data/ora</strong></p></td>
 <td><p>No</p></td>
-<td><p>Data e ora in cui sono state svolte le sessioni.</p></td>
+<td><p>Data e ora in cui hanno avuto luogo le sessioni.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Totale</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di sessioni o conteggio totale dei messaggi.</p></td>
+<td><p>Numero totale di sessioni o di messaggi.</p></td>
 </tr>
 </tbody>
 </table>
@@ -169,11 +169,11 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di messa
 
 <div>
 
-## <a name="metrics-for-peer-to-peer-im-session-by-authentication-type"></a>Metriche per la sessione di messaggistica istantanea peer-to-peer per tipo di autenticazione
+## <a name="metrics-for-peer-to-peer-im-session-by-authentication-type"></a>Metrica delle sessioni di messaggistica istantanea peer-to-peer in base al tipo di autenticazione
 
-Nella tabella seguente sono elencate le informazioni fornite nel report di messaggistica istantanea peer-to-peer per ogni tipo di autenticazione usato dai partecipanti in una sessione peer-to-peer.
+Nella tabella seguente vengono riportate le informazioni fornite nel rapporto di messaggistica istantanea peer-to-peer per ogni tipo di autenticazione utilizzato dai partecipanti a una sessione peer-to-peer.
 
-### <a name="metrics-for-peer-to-peer-im-session-by-authentication-type"></a>Metriche per la sessione di messaggistica istantanea peer-to-peer per tipo di autenticazione
+### <a name="metrics-for-peer-to-peer-im-session-by-authentication-type"></a>Metrica delle sessioni di messaggistica istantanea peer-to-peer in base al tipo di autenticazione
 
 <table>
 <colgroup>
@@ -184,7 +184,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di messa
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -192,22 +192,22 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di messa
 <tr class="odd">
 <td><p><strong>Tipo di autenticazione</strong></p></td>
 <td><p>No</p></td>
-<td><p>Tipo di autenticazione usato dai partecipanti alla sessione. I valori sono in genere uno degli elementi seguenti:</p>
+<td><p>Tipo di autenticazione utilizzato dai partecipanti alla sessione. I valori validi in genere sono i seguenti:</p>
 <ul>
-<li><p>Enterprise</p></li>
-<li><p>Federata</p></li>
+<li><p>Grandi aziende</p></li>
+<li><p>Federati</p></li>
 <li><p>PIC</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p><strong>Data/ora</strong></p></td>
 <td><p>No</p></td>
-<td><p>Data e ora in cui sono state svolte le sessioni.</p></td>
+<td><p>Data e ora in cui hanno avuto luogo le sessioni.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Totale</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di sessioni o conteggio totale dei messaggi.</p></td>
+<td><p>Numero totale di sessioni o di messaggi.</p></td>
 </tr>
 </tbody>
 </table>

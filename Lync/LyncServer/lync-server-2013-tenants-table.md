@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella Tenants'
+title: 'Lync Server 2013: tabella Tenants'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185309
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: de776adeb8c280c5216b35cc8236a0834c14aa13
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b0d2459c169fb93520125ceef7a8076bd51343db
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746496"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006101"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41746496"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-La tabella Tenants è una tabella di supporto in cui è archiviato un elenco dei diversi tenant. Ogni record nella tabella rappresenta un tenant.
+La tabella Tenants è una tabella di supporto in cui viene archiviato un elenco dei diversi tenant. Ogni record della tabella rappresenta un tenant.
 
 <div>
 
 
 > [!NOTE]  
-> Nella distribuzione locale, CDR usa l'ID tenant di build-in per indicare il tipo di autenticazione diverso, ad esempio la connettività di messaggistica istantanea pubblica, federati e Anonymous.
+> Nelle distribuzioni on-premise, registrazione dettagli chiamata utilizza l'ID tenant predefinito per indicare tipi di autenticazione diversi, come connettività per messaggistica istantanea pubblica, autenticazione federata e autenticazione anonima.
 
 
 
@@ -67,7 +67,7 @@ La tabella Tenants è una tabella di supporto in cui è archiviato un elenco dei
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>ID tenant</strong></p></td>
+<td><p><strong>TenantId</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
 <td><p>Numero univoco che identifica questo ID tenant.</p></td>
@@ -78,10 +78,10 @@ La tabella Tenants è una tabella di supporto in cui è archiviato un elenco dei
 <td></td>
 <td><p>Valori consentiti:</p>
 <ul>
-<li><p>00000000-0000-0000-0000-000000000000-Enterprise</p></li>
-<li><p>00000000-0000-0000-0000-000000000001-federati</p></li>
-<li><p>00000000-0000-0000-0000-000000000002-Anonimo</p></li>
-<li><p>00000000-0000-0000-0000-000000000003-connettività per messaggistica istantanea pubblica</p></li>
+<li><p>00000000-0000-0000-0000-000000000000 - Aziendale</p></li>
+<li><p>00000000-0000-0000-0000-000000000001 - Federato</p></li>
+<li><p>00000000-0000-0000-0000-000000000002 - Anonimo</p></li>
+<li><p>00000000-0000-0000-0000-000000000003 - Connettività per la messaggistica istantanea pubblica</p></li>
 </ul></td>
 </tr>
 </tbody>

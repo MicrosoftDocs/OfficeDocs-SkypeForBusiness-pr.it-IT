@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Prerequisiti e ruoli per la configurazione degli annunci'
+title: 'Lync Server 2013: prerequisiti e ruoli per la configurazione degli annunci'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184674
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 42cbc1429d4e27ee172dc1dacf6b86fa6ac243d9
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 09a7a8a17e3431c382ce4f49534336d266bbaa13
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737806"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41998081"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41737806"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-25_
+_**Ultimo argomento modificato:** 2013-02-25_
 
-L'annuncio è una caratteristica di gestione delle chiamate vocali aziendali. Questo argomento descrive le informazioni necessarie prima di poter configurare l'annuncio e le assegnazioni di ruolo necessarie per eseguire attività di configurazione.
+Annuncio è una funzionalità di gestione delle chiamate vocali di VoIP aziendale. In questo argomento vengono descritte le operazioni necessarie per poter configurare l'annuncio e le assegnazioni di ruolo necessarie per eseguire le attività di configurazione.
 
 In questa sezione si presuppone che sia stata letta la documentazione relativa alla pianificazione relativa all'annuncio (vedere [pianificazione delle funzionalità di gestione delle chiamate in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md)).
 
@@ -45,13 +45,13 @@ In questa sezione si presuppone che sia stata letta la documentazione relativa a
 
 ## <a name="announcement-configuration-prerequisites"></a>Prerequisiti per la configurazione degli annunci
 
-L'applicazione di annuncio richiede i componenti seguenti:
+L'applicazione annuncio richiede i componenti seguenti:
 
   - Servizio applicazione
 
-  - Response Group Application
+  - Applicazione Response Group
 
-  - Archivio file per contenere i file audio
+  - Archivio file, per la memorizzazione dei file audio
 
 Tutti questi componenti vengono installati per impostazione predefinita quando si distribuisce VoIP aziendale.
 
@@ -61,19 +61,19 @@ Tutti questi componenti vengono installati per impostazione predefinita quando s
 
 ## <a name="announcement-configuration-roles"></a>Ruoli di configurazione degli annunci
 
-È possibile usare gli strumenti di amministrazione seguenti per configurare gli annunci:
+È possibile utilizzare gli strumenti di amministrazione seguenti per configurare gli annunci:
 
   - Pannello di controllo di Lync Server
 
   - Lync Server Management Shell
 
-La configurazione dell'applicazione di annunci richiede uno dei ruoli amministrativi seguenti:
+La configurazione dell'applicazione annuncio richiede uno dei ruoli amministrativi seguenti:
 
-  - **CsVoiceAdministrator**   questo ruolo di amministratore può creare, configurare e gestire tutte le impostazioni e i criteri relativi alla voce, incluse le impostazioni degli annunci.
+  - **CsVoiceAdministrator**   questo ruolo di amministratore è in grado di creare, configurare e gestire tutte le impostazioni e i criteri vocali, incluse le impostazioni degli annunci.
 
-  - **CsServerAdministrator**   questo ruolo di amministratore può gestire, monitorare e risolvere i problemi relativi a server e servizi e configurare tutte le impostazioni di annuncio.
+  - **CsServerAdministrator**   questo ruolo di amministratore può gestire, monitorare e risolvere i problemi relativi a server e servizi, nonché configurare tutte le impostazioni degli annunci.
 
-  - **CsAdministrator**   questo ruolo di amministratore può eseguire tutte le attività amministrative e modificare tutte le impostazioni.
+  - **CsAdministrator**   questo ruolo di amministratore è in grado di eseguire tutte le attività amministrative e di modificare tutte le impostazioni.
 
   - **CsViewOnlyAdministrator**   questo ruolo di amministratore può visualizzare la distribuzione per monitorare l'integrità della distribuzione.
 
@@ -81,7 +81,7 @@ La configurazione dell'applicazione di annunci richiede uno dei ruoli amministra
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sui diritti degli utenti amministrativi, vedere <A href="lync-server-2013-planning-for-role-based-access-control.md">pianificazione per il controllo dell'accesso basato sui ruoli in Lync Server 2013</A> nella documentazione relativa alla pianificazione.
+> Per informazioni dettagliate sui diritti utente amministrativi, vedere <A href="lync-server-2013-planning-for-role-based-access-control.md">Planning for Role-Based Access Control in Lync Server 2013</A> nella documentazione relativa alla pianificazione.
 
 
 

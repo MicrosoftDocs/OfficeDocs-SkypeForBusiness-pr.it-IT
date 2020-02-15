@@ -12,16 +12,16 @@ ms:contentKeyID: 48185206
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5250eca6372f8cd5394dc9607e4e6330934368b8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 91df3f20d93ce6ee948f385bb46e8b2a0830ca31
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746326"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41985061"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41746326"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Utenti che possono eseguire questo cmdlet: per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire il cmdlet Test-CsAddressBookService: RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli di controllo di accesso basati sul ruolo (RBAC) a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati manualmente), eseguire il comando seguente dal prompt di Windows PowerShell:
+Utenti autorizzati a eseguire questo cmdlet: per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire localmente il cmdlet Test-CsAddressBookService: RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli di controllo di accesso basato sui ruoli a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli del controllo di accesso basato sui ruoli creati personalmente), al prompt di Windows PowerShell eseguire il comando seguente:
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Test-CsAddressBookService"}
 
-Lync Server 2013 contiene numerosi cmdlet che avviano comandi sintetici per verificare che una funzione o una funzionalità specifica funzioni correttamente. Test-CsAddressBookService conferma che un utente definito può connettersi e richiedere i file locali dal servizio Web della Rubrica.
+Lync Server 2013 contiene una serie di cmdlet che avviano comandi sintetici per confermare che una funzione o una funzionalità specifica funzioni correttamente. Il cmdlet Test-CsAddressBookService verifica che l'utente specificato possa connettersi e richiedere i file locali al servizio Web Rubrica.
 
 Ad esempio:
 

@@ -1,5 +1,5 @@
 ---
-title: Cmdlet in Skype for business online che usano solo l'ambito globale
+title: Cmdlet in Skype for business online che utilizzano solo l'ambito globale
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -13,60 +13,60 @@ ms:contentKeyID: 56558800
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5610649295fdf4089372d9c59e4ccb51228c1fc2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f4a894c4a9c6e2913abb003c49094bc6d6868483
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728106"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42001251"
 ---
-# <a name="cmdlets-in-skype-for-business-online-that-use-only-the-global-scope"></a>Cmdlet in Skype for business online che usano solo l'ambito globale
+# <a name="cmdlets-in-skype-for-business-online-that-use-only-the-global-scope"></a>Cmdlet in Skype for business online che utilizzano solo l'ambito globale
 
  
 
 
-Alcune impostazioni di Skype for business online sono disponibili solo nell' *ambito globale*. Questo significa che esiste una singola raccolta di impostazioni che si applica a tutti gli utenti assegnati al tenant. Ogni tenant ha una raccolta univoca di impostazioni globali. Quando si usano cmdlet limitati all'ambito globale, il parametro Identity è facoltativo. Ad esempio, per recuperare le impostazioni di configurazione della riunione, è possibile usare questo comando:
+Un certo numero di impostazioni di Skype for business online sono disponibili solo nell' *ambito globale*. Questo significa che esiste una singola raccolta di impostazioni che si applica a tutti gli utenti assegnati a quel tenant. Ogni tenant ha una propria raccolta univoca di impostazioni globali. Quando si utilizzano i cmdlet limitati all'ambito globale, il parametro Identity è facoltativo. Ad esempio, per recuperare le impostazioni di configurazione delle riunioni, è possibile utilizzare questo comando:
 
     Get-CsMeetingConfiguration -Identity "global"
 
-In alternativa, puoi omettere il parametro Identity e usare questo comando più semplice:
+In alternativa, è possibile omettere il parametro Identity e utilizzare invece questo comando più semplice:
 
     Get-CsMeetingConfiguration
 
-Poiché esiste una sola raccolta globale di impostazioni di configurazione della riunione, i due comandi restituiscono le stesse informazioni esatte. Il parametro Identity può essere omesso anche quando si usa uno dei cmdlet **set-CS** . Questi due comandi sono identici:
+Poiché è presente una sola raccolta globale di impostazioni di configurazione delle riunioni, i due comandi restituiscono le stesse informazioni esatte. È inoltre possibile omettere il parametro Identity quando si utilizza uno dei cmdlet **set-CS** . Questi due comandi sono identici:
 
     Set-CsMeetingConfiguration -Identity "global" -AdmitAnonymousUsersByDefault $False
     Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False
 
-I due comandi sono identici perché, per impostazione predefinita, Windows PowerShell modificherà la raccolta globale se non Includi il parametro Identity.
+I due comandi sono identici perché, per impostazione predefinita, Windows PowerShell modificherà la raccolta globale se non si include il parametro Identity.
 
-I cmdlet seguenti operano solo nell'ambito globale:
+I seguenti cmdlet operano solo nell'ambito globale:
 
-  - [Get-CsImFilterConfiguration](https://technet.microsoft.com/en-us/library/gg398980\(v=ocs.15\))
+  - [Get-CsImFilterConfiguration](https://technet.microsoft.com/library/gg398980\(v=ocs.15\))
 
-  - [Get-CsMeetingConfiguration](https://technet.microsoft.com/en-us/library/gg425875\(v=ocs.15\))
+  - [Get-CsMeetingConfiguration](https://technet.microsoft.com/library/gg425875\(v=ocs.15\))
 
-  - [Get-CsPrivacyConfiguration](https://technet.microsoft.com/en-us/library/gg413002\(v=ocs.15\))
+  - [Get-CsPrivacyConfiguration](https://technet.microsoft.com/library/gg413002\(v=ocs.15\))
 
-  - [Get-CsTenantFederationConfiguration](https://technet.microsoft.com/en-us/library/jj994072\(v=ocs.15\))
+  - [Get-CsTenantFederationConfiguration](https://technet.microsoft.com/library/jj994072\(v=ocs.15\))
 
-  - [Get-CsTenantHybridConfiguration](https://technet.microsoft.com/en-us/library/jj994034\(v=ocs.15\))
+  - [Get-CsTenantHybridConfiguration](https://technet.microsoft.com/library/jj994034\(v=ocs.15\))
 
-  - [Get-CsTenantLicensingConfiguration](https://technet.microsoft.com/en-us/library/dn362770\(v=ocs.15\))
+  - [Get-CsTenantLicensingConfiguration](https://technet.microsoft.com/library/dn362770\(v=ocs.15\))
 
-  - [Get-CsTenantPublicProvider](https://technet.microsoft.com/en-us/library/jj994016\(v=ocs.15\))
+  - [Get-CsTenantPublicProvider](https://technet.microsoft.com/library/jj994016\(v=ocs.15\))
 
-  - [Remove-CsVoicePolicy](https://technet.microsoft.com/en-us/library/gg398309\(v=ocs.15\))
+  - [Remove-CsVoicePolicy](https://technet.microsoft.com/library/gg398309\(v=ocs.15\))
 
-  - [Set-CsMeetingConfiguration](https://technet.microsoft.com/en-us/library/gg398648\(v=ocs.15\))
+  - [Set-CsMeetingConfiguration](https://technet.microsoft.com/library/gg398648\(v=ocs.15\))
 
-  - [Set-CsPrivacyConfiguration](https://technet.microsoft.com/en-us/library/gg398484\(v=ocs.15\))
+  - [Set-CsPrivacyConfiguration](https://technet.microsoft.com/library/gg398484\(v=ocs.15\))
 
-Tieni presente che il cmdlet **Remove-CsVoicePolicy** è una sorta di anomalia. Prima di tutto, questo cmdlet richiede di includere il parametro Identity:
+Si noti che il cmdlet **Remove-CsVoicePolicy** è un elemento anomalo. In primo luogo, questo cmdlet richiede l'inclusione del parametro Identity:
 
     Remove-CsVoicePolicy -Identity "global"
 
-In secondo luogo, il cmdlet **Remove-CsVoicePolicy** non elimina effettivamente il criterio vocale globale; Skype for business online non consente di eliminare i criteri globali o le impostazioni di configurazione. Ciò che il cmdlet fa è consentire di reimpostare i valori predefiniti di tutte le proprietà del criterio vocale globale. Per impostazione predefinita, ad esempio, la proprietà AllowCallForwarding è impostata su false. Tuttavia, AllowCallForwarding potrebbe essere stato modificato, con il valore ora impostato su true. Quando si esegue il cmdlet **Remove-CsVoicePolicy** , la proprietà AllowCallForwarding tornerà al valore predefinito: false. La tabella seguente riepiloga questo scenario:
+In secondo luogo, il cmdlet **Remove-CsVoicePolicy** non elimina effettivamente il criterio vocale globale. Skype for business online non consente di eliminare i criteri globali o le impostazioni di configurazione. Il cmdlet consente di reimpostare i valori predefiniti di tutte le proprietà del criterio vocale globale. Ad esempio, per impostazione predefinita, la proprietà AllowCallForwarding è impostata su false. Tuttavia, AllowCallForwarding potrebbe essere stato modificato, con il valore ora impostato su true. Quando si esegue il cmdlet **Remove-CsVoicePolicy** , la proprietà AllowCallForwarding restituirà il valore predefinito: false. La tabella seguente riepiloga questo scenario:
 
 
 <table>
@@ -76,7 +76,7 @@ In secondo luogo, il cmdlet **Remove-CsVoicePolicy** non elimina effettivamente 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Valore AllowCallForwarding</th>
+<th>Valore di AllowCallForwarding</th>
 <th>Scenario</th>
 </tr>
 </thead>
@@ -87,7 +87,7 @@ In secondo luogo, il cmdlet **Remove-CsVoicePolicy** non elimina effettivamente 
 </tr>
 <tr class="even">
 <td><p>True</p></td>
-<td><p>Dopo la modifica dei criteri globali</p></td>
+<td><p>Dopo che il criterio globale è stato modificato</p></td>
 </tr>
 <tr class="odd">
 <td><p>False</p></td>
@@ -101,5 +101,5 @@ In secondo luogo, il cmdlet **Remove-CsVoicePolicy** non elimina effettivamente 
 
 
 [Identità, ambiti e tenant in Skype for business online](identities-scopes-and-tenants-in-skype-for-business-online.md)  
-[Cmdlet di Lync Online](https://technet.microsoft.com/en-us/library/dn362817\(v=ocs.15\))
+[Cmdlet di Skype for business online](https://technet.microsoft.com/library/dn362817\(v=ocs.15\))
 

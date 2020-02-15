@@ -1,5 +1,5 @@
 ---
-title: Cmdlet in Skype for business online che usano l'identità di un provider di servizi di conferenza
+title: Cmdlet in Skype for business online che utilizzano un'identità del provider di servizi di conferenza
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -13,33 +13,33 @@ ms:contentKeyID: 56558858
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9dc5438a0fe246b1e988d60a0e6ce1ac3d3f6d67
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e0ae3167b1cb6c83b46e4f9d4846e8863b43515d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726716"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42001721"
 ---
-# <a name="cmdlets-in-skype-for-business-online-that-use-a-conferencing-provider-identity"></a>Cmdlet in Skype for business online che usano l'identità di un provider di servizi di conferenza
+# <a name="cmdlets-in-skype-for-business-online-that-use-a-conferencing-provider-identity"></a>Cmdlet in Skype for business online che utilizzano un'identità del provider di servizi di conferenza
 
  
 
 
-Per restituire informazioni su tutti i provider di servizi di audioconferenza con cui l'organizzazione ha contratto, è possibile chiamare semplicemente il cmdlet [Get-CsAudioConferencingProvider](https://technet.microsoft.com/en-us/library/jj994030\(v=ocs.15\)) senza parametri:
+Per restituire informazioni su tutti i provider di servizi di audioconferenza a cui l'organizzazione ha contratto, è possibile chiamare il cmdlet [Get-CsAudioConferencingProvider](https://technet.microsoft.com/library/jj994030\(v=ocs.15\)) senza parametri:
 
     Get-CsAudioConferencingProvider
 
-Se si vogliono limitare i dati restituiti a un singolo provider (in questo esempio, il provider contoso audio Services), usare il parametro Identity:
+Se si desidera limitare i dati restituiti a un singolo provider (in questo esempio, il provider contoso audio Services), utilizzare il parametro Identity:
 
     Get-CsAudioConferencingProvider -Identity "Contoso Audio Services"
 
-Esiste un solo cmdlet Skype for business online che accetta un ID del provider di servizi di audioconferenza:
+È presente un solo cmdlet Skype for business online che accetta un ID provider di servizi di audioconferenza:
 
-  - [Get-CsAudioConferencingProvider](https://technet.microsoft.com/en-us/library/jj994030\(v=ocs.15\))
+  - [Get-CsAudioConferencingProvider](https://technet.microsoft.com/library/jj994030\(v=ocs.15\))
 
 ## <a name="see-also"></a>Vedere anche
 
 
 [Identità, ambiti e tenant in Skype for business online](identities-scopes-and-tenants-in-skype-for-business-online.md)  
-[Cmdlet di Lync Online](https://technet.microsoft.com/en-us/library/dn362817\(v=ocs.15\))
+[Cmdlet di Skype for business online](https://technet.microsoft.com/library/dn362817\(v=ocs.15\))
 

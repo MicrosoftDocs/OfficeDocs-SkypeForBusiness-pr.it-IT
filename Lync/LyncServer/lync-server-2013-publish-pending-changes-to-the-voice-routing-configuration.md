@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: pubblicare le modifiche in sospeso nella configurazione del routing vocale'
+title: 'Lync Server 2013: pubblicare le modifiche in sospeso alla configurazione del routing vocale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185974
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: aac5c30cb73ef428d0571a1a0fe6853dbf70db4c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: eec5236f6b40d332617e2e2a5dedeb6a77d752b9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724616"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41987361"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="publish-pending-changes-to-the-voice-routing-configuration-in-lync-server-2013"></a>Pubblicare le modifiche in sospeso nella configurazione di routing vocale in Lync Server 2013
+# <a name="publish-pending-changes-to-the-voice-routing-configuration-in-lync-server-2013"></a>Pubblicare le modifiche in sospeso alla configurazione del routing vocale in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41724616"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-08-07_
+_**Ultimo argomento modificato:** 2012-08-07_
 
-Dopo aver apportato le modifiche alle impostazioni di configurazione nelle pagine del gruppo **routing vocale** , eseguire questa procedura per rivedere, pubblicare o annullare le modifiche in sospeso.
+Dopo aver apportato modifiche alle impostazioni di configurazione nelle pagine del gruppo **Routing vocale**, eseguire questa procedura per esaminare, pubblicare o annullare le modifiche in sospeso.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Assicurarsi che solo un utente alla volta modifichi le impostazioni di configurazione del routing vocale.<BR>Tutte le modifiche in sospeso devono essere pubblicate contemporaneamente eseguendo il comando <STRONG>commit tutti</STRONG> . Non è possibile pubblicare in modo selettivo le modifiche in sospeso. Prima di pubblicare le modifiche in sospeso, eseguire il comando <STRONG>revisione delle modifiche non salvate</STRONG> e annullare le modifiche di configurazione che non si desidera pubblicare.<BR>Se si esce dalle pagine del gruppo <STRONG>routing vocale</STRONG> prima di confermare le modifiche in sospeso, tutte le modifiche in sospeso andranno perse. È tuttavia possibile esportare la configurazione corrente (incluse le eventuali modifiche in sospeso) in un file di configurazione vocale e quindi importare e pubblicare la configurazione aggiornata. Per informazioni dettagliate, vedere <A href="lync-server-2013-export-a-voice-route-configuration-file.md">esportare un file di configurazione della route vocale in Lync Server 2013</A>.
+> Verificare che un solo utente alla volta modifichi le impostazioni di configurazione di Routing vocale.<BR>Tutte le modifiche in sospeso devono essere pubblicate contemporaneamente eseguendo il comando <STRONG>Salva tutto</STRONG>. Non è possibile pubblicare selettivamente le modifiche in sospeso. Prima di pubblicare le modifiche in sospeso, eseguire il comando <STRONG>Rivedi modifiche di cui non è stato eseguito il commit</STRONG> e annullare qualsiasi modifica di configurazione che non si desidera pubblicare.<BR>Se si esce dalle pagine del gruppo <STRONG>Routing vocale</STRONG> prima di eseguire il commit delle modifiche in sospeso, tutte le modifiche in sospeso andranno perse. Tuttavia, è possibile esportare la configurazione corrente (incluse le modifiche in sospeso) in un file di configurazione vocale e quindi importare e pubblicare la configurazione aggiornata. Per ulteriori informazioni, vedere <A href="lync-server-2013-export-a-voice-route-configuration-file.md">esportare un file di configurazione di route vocali in Lync Server 2013</A>.
 
 
 
@@ -51,27 +51,27 @@ Dopo aver apportato le modifiche alle impostazioni di configurazione nelle pagin
 
 <div>
 
-## <a name="to-review-publish-or-cancel-voice-routing-configuration-changes"></a>Per rivedere, pubblicare o annullare le modifiche alla configurazione del routing vocale
+## <a name="to-review-publish-or-cancel-voice-routing-configuration-changes"></a>Per rivedere, pubblicare o annullare le modifiche di configurazione del routing vocale
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **routing vocale**.
+3.  Sulla barra di spostamento sinistra fare clic su **Routing vocale**.
 
-4.  Apportare le modifiche di configurazione desiderate alle impostazioni in ogni pagina del gruppo di **routing vocale** .
+4.  Apportare le modifiche della configurazione desiderate alle impostazioni in ogni pagina del gruppo **Routing vocale**.
 
-5.  Per rivedere le modifiche in sospeso senza pubblicarle, selezionare **rivedere le modifiche non salvate** dal menu **conferma** .
+5.  Per rivedere le modifiche in sospeso senza pubblicarle, scegliere **Rivedi modifiche di cui non è stato eseguito il commit** dal menu **Commit**.
 
-6.  Se si vuole annullare una delle modifiche in sospeso, eseguire una delle operazioni seguenti:
+6.  Se si desidera annullare qualsiasi modifica in sospeso, effettuare una delle operazioni seguenti:
     
-      - Selezionare **Annulla tutte le modifiche non salvate** dal menu **conferma** .
+      - Scegliere **Annulla tutte le modifiche di cui non è stato eseguito il commit** dal menu **Commit**.
     
-      - Passare alla scheda della pagina di **routing vocale** contenente le modifiche in sospeso che si desidera annullare, selezionare l'elemento con le modifiche in sospeso, fare clic su **commit**e quindi su **Annulla modifiche selezionate**.
+      - Spostarsi sulla scheda della pagina **Routing vocale** che include le modifiche in sospeso che si desidera annullare, selezionare l'elemento con le modifiche in sospeso, fare clic su **Commit** e quindi su **Annulla modifiche selezionate**.
 
-7.  Dopo aver esaminato tutte le modifiche in sospeso e annullato qualsiasi che non si vuole pubblicare, fare clic su **commit**e quindi su **commit tutti**.
+7.  Dopo aver rivisto tutte le modifiche in sospeso e annullato ogni modifica che non si desidera pubblicare, fare clic su **Commit** e quindi su **Salva tutto**.
 
-8.  Nella finestra di dialogo **impostazioni di configurazione vocale non impegnata** , in cui viene visualizzato un elenco di tutte le modifiche in sospeso, fare clic su **OK**.
+8.  Nella finestra di dialogo **Impostazioni di configurazione vocale di cui non è stato eseguito il commit** in cui è visualizzato un elenco delle modifiche in sospeso fare clic su **OK**.
     
     Quando il pannello di controllo di Lync Server ha eseguito il commit delle modifiche, viene visualizzato il messaggio di **configurazione del routing vocale pubblicato correttamente** .
 

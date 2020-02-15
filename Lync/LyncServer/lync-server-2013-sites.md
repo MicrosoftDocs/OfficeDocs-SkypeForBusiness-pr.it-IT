@@ -12,16 +12,16 @@ ms:contentKeyID: 48183233
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f2e5dc3323ad14f02a5b24258878512707f66f19
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: db3e420a1fad89692133df4422138b43d4d7210e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764472"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41987031"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,35 +35,35 @@ ms.locfileid: "41764472"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-16_
+_**Ultimo argomento modificato:** 2012-10-16_
 
-In Lync Server è possibile definire i *siti* della rete che contengono componenti di Lync Server. Un sito è un set di computer ben connessi da una rete a bassa latenza ad alta velocità, ad esempio una rete LAN (Local Area Network) o due reti connesse da una rete a fibre ottiche ad alta velocità. Si noti che i siti di Lync Server sono un concetto separato da siti di servizi di dominio Active Directory e siti di Microsoft Exchange Server. I siti di Lync Server non devono corrispondere ai siti di Active Directory.
+In Lync Server, è possibile definire i *siti* della rete che contengono componenti di Lync Server. Un sito è un insieme di computer connessi attraverso una rete a bassa latenza e alta velocità, come una singola rete LAN o due reti connesse tramite una rete a fibra ottica ad alta velocità. Si noti che i siti di Lync Server sono un concetto separato dai siti di servizi di dominio Active Directory e dai siti di Microsoft Exchange Server. I siti di Lync Server non devono corrispondere ai siti di Active Directory.
 
 <div>
 
 ## <a name="site-types"></a>Tipi di sito
 
-Ogni sito è un *sito centrale*, che contiene almeno un pool di front end o un server Standard Edition o un sito di *succursale*. Ogni sito di succursale è associato a un sito centrale e gli utenti del sito della filiale ottengono la maggior parte delle funzionalità di Lync Server dai server del sito centrale associato.
+Ogni sito è un *sito centrale*, che contiene almeno un pool Front end o un server Standard Edition o un *sito di succursale*. Ogni sito di succursale è associato a un solo sito centrale e gli utenti del sito di succursale ottengono la maggior parte delle funzionalità di Lync Server dai server nel sito centrale associato.
 
-Ogni sito di succursale contiene una delle opzioni seguenti:
+Ogni sito di succursale contiene uno degli elementi seguenti:
 
-  - Un *Survivable Branch Appliance (SBA)*, un server blade di livello industriale con un registrar di Lync Server e un Mediation Server in Windows Server. Il Survivable Branch Appliance contiene anche un gateway PSTN (Public Switched Telephone Network). Survivable Branch Appliance è progettato per i siti di succursale con utenti compresi tra 25 e 1000.
+  - Un *Survivable Branch Appliance (SBA)*, che è un server blade standard del settore con un registrar di Lync Server e un Mediation Server in esecuzione su Windows Server. Survivable Branch Appliance contiene anche un gateway PSTN (Public Switched Telephone Network). Il Survivable Branch Appliance è stato creato per i siti di succursale con gli utenti compresi tra 25 e 1000.
 
-  - Un *Survivable Branch Server (SBS)*, un server che utilizza Windows Server che soddisfa i requisiti hardware specificati e che include il software di registrazione di Lync Server e Mediation Server. Deve essere collegato a un gateway PSTN o a un trunk SIP a un provider di servizi telefonici. Il Survivable Branch Server è progettato per i siti di succursale tra gli utenti di 1000 e 5000.
+  - Un *Survivable Branch Server (SBS)*, che è un server che esegue Windows Server che soddisfa i requisiti hardware specificati, e che dispone di un software di registrazione di Lync Server e Mediation Server installato su di esso. Deve connettersi a un gateway PSTN o a un trunk SIP verso un provider di servizi telefonici. Il Survivable Branch Server è progettato per siti di succursale aventi da 1000 a 5000 utenti.
 
-  - Un gateway PSTN e, facoltativamente, un *Mediation Server*. Per informazioni dettagliate su questo e altri ruoli del server, vedere [ruoli del server in Lync server 2013](lync-server-2013-server-roles.md).
+  - Un gateway PSTN e, facoltativamente, un *Mediation Server*. Per informazioni dettagliate su questo e altri ruoli del server, vedere [Server Roles in Lync server 2013](lync-server-2013-server-roles.md).
 
-Una filiale con un collegamento WAN (Wide Area Network) resiliente a un sito centrale può usare la terza opzione, ovvero un gateway PSTN e, facoltativamente, un Mediation Server. I siti di succursale con collegamenti meno resilienti devono usare un Survivable Branch Appliance o un Survivable Branch Server, che garantiscono la resilienza in tempi di errori di rete wide-area. Ad esempio, in un sito con un Survivable Branch Appliance o un Survivable Branch Server distribuito, gli utenti possono comunque effettuare e ricevere le chiamate vocali aziendali se la WAN che connette il sito della filiale al sito centrale è in calo. Per informazioni dettagliate su Survivable Branch Appliance, Survivable Branch Server e resilienza, vedere [pianificazione della resilienza di Enterprise Voice in Lync Server 2013](lync-server-2013-planning-for-enterprise-voice-resiliency.md) nella documentazione relativa alla pianificazione.
+In un sito di succursale con un collegamento WAN (Wide Area Network) resiliente a un sito centrale è possibile utilizzare la terza opzione, ovvero un gateway PSTN e facoltativamente un Mediation Server. I siti di succursale con collegamenti con resilienza inferiore devono utilizzare un Survivable Branch Appliance o un Survivable Branch Server, che forniscono resilienza in periodi di problemi di rete a aree estese. Ad esempio, in un sito con un Survivable Branch Appliance o un Survivable Branch Server distribuito, gli utenti possono comunque effettuare e ricevere chiamate vocali di VoIP aziendale se la rete WAN che collega il sito di succursale al sito centrale è inattivo. Per informazioni dettagliate sul Survivable Branch Appliance, sul Survivable Branch Server e sulla resilienza, vedere [Planning for Enterprise Voice resilienzy in Lync Server 2013](lync-server-2013-planning-for-enterprise-voice-resiliency.md) nella documentazione relativa alla pianificazione.
 
 </div>
 
 <div>
 
-## <a name="site-topologies"></a>Topologie del sito
+## <a name="site-topologies"></a>Topologie di siti
 
-La distribuzione deve includere almeno un sito centrale e può includere zero in molti siti di succursale. Ogni sito di succursale è affiliato a un sito centrale. Il sito centrale fornisce i servizi di Lync Server al sito della filiale che non sono ospitati localmente nel sito della filiale, ad esempio presenza e conferenza.
+La distribuzione deve includere almeno un sito centrale e può includere da zero a numerosi siti di succursale. Ogni sito di succursale è affiliato a un sito centrale. Nel sito centrale sono disponibili i servizi di Lync Server per il sito di succursale che non sono ospitati localmente nel sito di succursale, ad esempio la presenza e le conferenze.
 
-Se si hanno più siti, è possibile abbinare i pool Front-end in siti diversi per abilitare le abilità di ripristino di emergenza. Per informazioni dettagliate, vedere Supporto per la [disponibilità elevata e il ripristino di emergenza in Lync Server 2013](lync-server-2013-high-availability-and-disaster-recovery-support.md).
+Se sono disponibili più siti, sarà possibile accoppiare i pool Front End su siti diversi per abilitare le funzionalità di ripristino di emergenza. Per informazioni dettagliate, vedere Supporto per la [disponibilità elevata e il ripristino di emergenza in Lync Server 2013](lync-server-2013-high-availability-and-disaster-recovery-support.md).
 
 </div>
 

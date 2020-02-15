@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Ripristino di emergenza dei server perimetrali'
+title: 'Lync Server 2013: ripristino di emergenza del server perimetrale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733545
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 431b4853407b65bca2b029626cc5659490a493d3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4cd85a769d021aae6873a50a719a6043ef72f770
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733496"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006262"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="edge-server-disaster-recovery-in-lync-server-2013"></a>Ripristino di emergenza dei server perimetrali in Lync Server 2013
+# <a name="edge-server-disaster-recovery-in-lync-server-2013"></a>Ripristino di emergenza del server perimetrale in Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41733496"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-03-12_
+_**Ultimo argomento modificato:** 2014-03-12_
 
-Come per gli altri ruoli del server, il modo migliore per garantire elevata disponibilità agli Edge Server consiste nel distribuire più Edge Server nei pool di ogni sito. Se si abbassa un server perimetrale, gli altri server del pool continueranno a includere servizi Edge.
+Come per gli altri ruoli del server, il modo migliore per garantire la disponibilità elevata dei server perimetrali consiste nel distribuire più server perimetrali in pool in ogni sito. In caso di blocco di un server perimetrale, i servizi Edge verranno forniti dagli altri server del pool.
 
-Per abilitare le procedure di ripristino di emergenza, è necessario disporre di pool di Edge Server distinti distribuiti in siti distinti. Non è necessario associare in modo esplicito i pool di bordi come si fa con i pool di front-end, ma avere più pool di bordi offre ancora la disponibilità a continuare se un intero pool di bordi scende. Nelle sezioni seguenti sono disponibili informazioni dettagliate sul ripristino di emergenza per le varie funzioni di Edge Server.
+Per abilitare le procedure di ripristino di emergenza è necessario distribuire pool di server perimetrali distinti in siti separati. Non è necessario accoppiare esplicitamente i pool di server perimetrali come nel caso dei pool Front End, poiché la semplice presenza di più pool di server perimetrali consente di proseguire il lavoro anche in caso di blocco di un intero pool di server perimetrali. Nelle sezioni seguenti sono disponibili informazioni dettagliate sul ripristino di emergenza per le varie funzioni dei server perimetrali.
 
 <div>
 
 ## <a name="remote-access"></a>Accesso remoto
 
-Se si hanno più siti, ognuno con un pool di Edge Server e un intero pool di bordi non riesce, i servizi di accesso remoto continueranno a funzionare senza bisogno di un'azione di amministratore. Quando si creano pool di bordi in siti diversi, non è possibile usare lo stesso nome di dominio completo. Ogni pool di bordi deve avere nomi di dominio completi univoci (interni ed esterni). I pool di bordi non usano regole di pubblicazione del proxy inverso per comunicare con i server front-end. Il failover automatico si verifica quando il client esegue di nuovo una query sui record del servizio DNS di accesso remoto e gli utenti remoti vengono instradati agli Edge Server in un altro sito. Il client tenta ogni FQDN del bordo esterno in base alla priorità dei record SRV DNS.
+Se si dispone di più siti, ognuno con un pool di server perimetrali e un intero pool di perimetri ha esito negativo, i servizi di accesso remoto continueranno a funzionare senza l'intervento dell'amministratore. Quando si creano pool di server perimetrali in siti diversi, non è possibile utilizzare lo stesso nome di dominio completo. Ogni pool di server perimetrali deve disporre di FQDN univoci (interno ed esterno). I pool di server perimetrali non utilizzano le regole di pubblicazione del proxy inverso per comunicare con i front-end. Il failover automatico si verifica quando il client riesegue la query sui record del servizio DNS di accesso remoto e gli utenti remoti vengono instradati ai server perimetrali in un altro sito. Il client tenta ogni FQDN del perimetro esterno in base alla priorità dei record SRV DNS.
 
 <div>
 
 
 > [!NOTE]  
-> Affinché il failover funzioni correttamente, verificare che il firewall consenta ai server front-end di ogni pool di comunicare con tutti i server perimetrali.
+> Affinché il failover funzioni correttamente, verificare che il firewall consenta ai front end server di ogni pool di comunicare con tutti i server perimetrali.
 
 
 
@@ -63,9 +63,9 @@ Se si hanno più siti, ognuno con un pool di Edge Server e un intero pool di bor
 
 ## <a name="federation"></a>Federazione
 
-Per le relazioni federative con altre organizzazioni che gestiscono Lync Server, le richieste di federazione in ingresso continueranno a funzionare purché si disponga di soluzioni come Geo-DNS GTM. È importante comprendere che il failover federativo non offre il failover con priorità nei record SRV. Una soluzione fornita in precedenza può aiutare a fornire funzionalità di ripristino di emergenza per la Federazione in ingresso.
+Per le relazioni di federazione con altre organizzazioni che eseguono Lync Server, le richieste di federazione in ingresso continueranno a funzionare fino a quando si dispone di soluzioni come Geo-DNS GTM. È importante comprendere che il failover federativo non fornisce il failover con priorità nei record SRV. Una soluzione fornita in precedenza può aiutare a fornire le funzionalità di ripristino di emergenza per la Federazione in ingresso.
 
-La Federazione in uscita viene sempre configurata tramite un pool Edge o un server perimetrale pubblicato nell'organizzazione. Se il pool di Edge è sceso, è necessario usare generatore di topologie per modificare la route della Federazione in uscita per usare un pool di bordi ancora in corso. Per informazioni dettagliate, vedere [errori nel pool di Edge usato per la federazione Lync Server in Lync server 2013](lync-server-2013-failing-over-the-edge-pool-used-for-lync-server-federation.md)
+La federazione in uscita viene sempre configurata attraverso un server perimetrale o un pool di server perimetrali pubblicato nell'organizzazione. Se tale pool è inattivo, è necessario utilizzare il Generatore di topologie per modificare la route di federazione in ingresso in modo che venga utilizzato un pool di server perimetrali ancora in esecuzione. Per informazioni dettagliate, vedere [failover del pool di server perimetrali utilizzato per la Federazione di Lync in Lync server 2013](lync-server-2013-failing-over-the-edge-pool-used-for-lync-server-federation.md)
 
 </div>
 
@@ -73,15 +73,15 @@ La Federazione in uscita viene sempre configurata tramite un pool Edge o un serv
 
 ## <a name="xmpp-federation"></a>Federazione XMPP
 
-Per la Federazione XMPP, il traffico in uscita e in uscita non riuscirà se il pool di bordi designato come gateway federativo XMPP scende. Per rendere di nuovo possibile il lavoro della Federazione XMPP, devi modificare la Federazione XMPP per usare un pool di bordi diverso. Per informazioni dettagliate, vedere [errori nel pool di Edge usato per la Federazione XMPP in Lync Server 2013](lync-server-2013-failing-over-the-edge-pool-used-for-xmpp-federation.md).
+Per la federazione XMPP, in caso di blocco del pool di server perimetrali designato come gateway XMPP si verificherà un errore sia nel traffico in ingresso che in quello in uscita. Per ripristinare il funzionamento della federazione XMPP è necessario modificarla in modo che venga utilizzato un pool di server perimetrali diverso. Per informazioni dettagliate, vedere [failover del pool di server perimetrali utilizzato per la Federazione XMPP in Lync 2013](lync-server-2013-failing-over-the-edge-pool-used-for-xmpp-federation.md).
 
 </div>
 
 <div>
 
-## <a name="edge-pool-fails-but-front-end-pool-is-still-running"></a>Il pool di Edge non riesce ma il pool Front-End è ancora in corso
+## <a name="edge-pool-fails-but-front-end-pool-is-still-running"></a>Il pool di server perimetrali è in errore, ma il pool Front End è ancora in esecuzione
 
-Se un pool di Edge non riesce in un sito, ma il pool Front-end in tale sito è ancora in esecuzione, sarà necessario cambiare il pool Front-end per usare un pool di bordi diverso in un sito diverso mentre il primo pool Edge è in calo. Per altre informazioni, vedere [modifica del pool di bordi associato a un pool Front-end in Lync Server 2013](lync-server-2013-changing-the-edge-pool-associated-with-a-front-end-pool.md).
+Se un pool di server perimetrali di un sito è in errore, ma il pool Front End dello stesso sito è ancora in esecuzione, sarà necessario modificare il pool Front End in modo che durante il periodo di non disponibilità del primo pool venga utilizzato un pool di server perimetrali diverso presso un altro sito. Per ulteriori informazioni, vedere [Changing the Edge pool associato a un pool Front end in Lync Server 2013](lync-server-2013-changing-the-edge-pool-associated-with-a-front-end-pool.md).
 
 </div>
 

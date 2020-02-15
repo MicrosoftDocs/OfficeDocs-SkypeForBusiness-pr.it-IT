@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Prerequisiti di VoIP aziendale'
+title: 'Lync Server 2013: prerequisiti di VoIP aziendale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185746
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7d04b94fe5d31c4105d58651b2bc5fa5635bddde
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4289d79be09b1bfbcb9d11e53d97ef2ee9a37dca
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735406"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41993521"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41735406"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-08-06_
+_**Ultimo argomento modificato:** 2012-08-06_
 
-Per un'esperienza ottimale durante la distribuzione di VoIP aziendale, assicurati che l'infrastruttura IT, la rete e i sistemi soddisfino i prerequisiti descritti negli argomenti di questa sezione.
+Per ottimizzare il processo di distribuzione di VoIP aziendale, verificare che l'infrastruttura IT, la rete e i sistemi soddisfino i prerequisiti descritti negli argomenti di questa sezione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Prerequisiti software per VoIP aziendale in Lync Server 2013](lync-server-2013-software-prerequisites-for-enterprise-voice.md)
 
-  - [Prerequisiti per la sicurezza e la configurazione di Enterprise Voice in Lync Server 2013](lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md)
+  - [Prerequisiti di configurazione e sicurezza per VoIP aziendale in Lync Server 2013](lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md)
 
 </div>
 

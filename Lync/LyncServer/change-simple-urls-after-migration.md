@@ -13,16 +13,16 @@ ms:contentKeyID: 49733777
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a24eda274734e0c5a27fab30640a363de6653514
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: df0d6666f4ea824d59a97eb1f63b66016c75d547
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726726"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42003421"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -36,41 +36,41 @@ ms.locfileid: "41726726"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-22_
+_**Ultimo argomento modificato:** 2012-09-22_
 
-Lync Server supporta tre semplici URL:
+Lync Server supporta tre URL semplici:
 
-  - L' **incontro** viene usato come URL di base per tutte le conferenze nel sito o nell'organizzazione. Con l'URL semplice Meet, i collegamenti alle riunioni di partecipazione sono facili da comprendere e facili da comunicare e distribuire.
+  - L'URL **riunione** (meet) viene utilizzato come URL di base per tutte le conferenze nel sito o nell'organizzazione. Con l'URL semplice riunione, i collegamenti per partecipare alle riunioni sono semplici da capire, da comunicare e da distribuire.
 
-  - L'accesso esterno consente di accedere alla pagina Web delle impostazioni dei servizi di conferenza telefonica con **chiamata in ingresso** . L'URL semplice per la chiamata in ingresso è incluso in tutti gli inviti alle riunioni, in modo che gli utenti che vogliono connettersi alla riunione possano accedere al numero di telefono e alle informazioni PIN necessarie.
+  - L'URL **per accesso esterno** (dialin) consente di accedere alla pagina Web Impostazioni conferenza telefonica con accesso esterno. L'URL semplice per accesso esterno è incluso in tutti gli inviti a riunioni, in modo che gli utenti che desiderano eseguire l'accesso esterno alla riunione dispongano delle informazioni necessarie sul numero di telefono e sul PIN.
 
-  - L' **amministratore** consente l'accesso rapido al pannello di controllo di Lync Server. L'URL semplice amministratore è interno dell'organizzazione.
+  - L' **amministratore** consente di accedere rapidamente al pannello di controllo di Lync Server. L'URL semplice di amministrazione è interno all'organizzazione.
 
-Dopo aver eseguito la migrazione a Lync Server 2013, è necessario essere consapevoli del modo in cui la modifica influisce sui record DNS e sui certificati per gli URL semplici. Se l'eredità di Lync Server 2010 Director rimane in uso nella topologia, non sono necessarie modifiche agli URL semplici. Se il Director di Lync Server 2010 viene rimosso dalla topologia dopo la migrazione, è necessario che i record DNS URL semplici vengano aggiornati in modo che puntino a uno dei pool di Lync Server 2013. Ogni volta che si modifica un nome di URL semplice, è necessario eseguire Enable-CsComputer su ogni Director e front end server per registrare la modifica.
+Dopo aver eseguito la migrazione a Lync Server 2013, è necessario essere a conoscenza del modo in cui la modifica incide sui record DNS e sui certificati per gli URL semplici. Se l'amministratore di Lync Server 2010 Legacy rimane in uso nella topologia, non sono necessarie modifiche agli URL semplici. Se Lync Server 2010 Director è stato rimosso dalla topologia dopo la migrazione, è necessario aggiornare i record DNS degli URL semplificati in modo che puntino a uno dei pool di Lync Server 2013. Ogni volta che si modifica il nome di un URL semplice, è necessario però eseguire Enable-CsComputer in ogni Director e Front End Server per registrare la modifica.
 
 <div>
 
-## <a name="changing-simple-urls-after-migration"></a>Modifica di URL semplici dopo la migrazione
+## <a name="changing-simple-urls-after-migration"></a>Modifica degli URL semplici dopo la migrazione
 
 **Per aggiornare l'URL semplice riunione**
 
-1.  In Generatore di topologie fare clic con il pulsante destro del mouse sul **Server Lync**superiore e quindi scegliere **modifica proprietà**.
+1.  In Generatore di topologie fare clic con il pulsante destro del mouse sul nodo principale **Lync Server**e quindi scegliere **modifica proprietà**.
 
-2.  Selezionare **URL semplici** nel riquadro sinistro, quindi sotto gli **URL delle riunioni:** Selezionare l'URL di riunione e quindi fare clic su **modifica URL**.
+2.  Nel riquadro sinistro selezionare URL **semplici** , quindi fare clic su URL di **riunione** e quindi su **modifica URL**.
 
-3.  Aggiornare l'URL con il valore desiderato e quindi fare clic su **OK** per salvare l'URL modificato.
+3.  Aggiornare l'URL in base al valore desiderato e quindi fare clic su **OK** per salvare l'URL modificato.
 
-**Per aggiornare l'URL semplice dell'amministratore**
+**Per aggiornare l'URL semplice di amministrazione**
 
-1.  In Generatore di topologie fare clic con il pulsante destro del mouse sul **Server Lync**superiore e quindi scegliere **modifica proprietà**.
+1.  In Generatore di topologie fare clic con il pulsante destro del mouse sul nodo principale **Lync Server**e quindi scegliere **modifica proprietà**.
 
-2.  Selezionare **URL semplici** nel riquadro sinistro, quindi sotto la casella **URL di accesso amministrativo** immettere l'URL semplice desiderato per l'accesso amministrativo al pannello di controllo di Lync Server 2013 e quindi fare clic su **OK**.
+2.  Nel riquadro sinistro selezionare URL **semplici** , quindi nella casella **URL di accesso amministrativo** immettere l'URL semplice desiderato per l'accesso amministrativo al pannello di controllo di Lync Server 2013 e quindi fare clic su **OK**.
     
     <div>
     
 
     > [!TIP]  
-    > È consigliabile usare l'URL più semplice possibile per l'URL di amministratore. L'opzione più semplice è <STRONG> https://admin.</STRONG> &lt;domain&gt;.
+    > È consigliabile utilizzare l'URL più semplice possibile per l'accesso amministrativo. L'opzione più semplice è <STRONG> https://admin.</STRONG> &lt;dominio&gt;.
 
     
     </div>

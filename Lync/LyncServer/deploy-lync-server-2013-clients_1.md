@@ -1,5 +1,5 @@
 ---
-title: Distribuire client di Lync Server 2013
+title: Distribuire i client di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184100
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ffc6ee3831968c34bcdb501fcdf543626546e2c3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ac6dce30e356ed3161f985f32d8f26dc0e34ac6d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723016"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006472"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deploy-lync-server-2013-clients"></a>Distribuire client di Lync Server 2013
+# <a name="deploy-lync-server-2013-clients"></a>Distribuire i client di Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41723016"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-19_
+_**Ultimo argomento modificato:** 2012-10-19_
 
 Dopo aver eseguito la migrazione degli utenti a Lync Server 2013, eseguire le operazioni seguenti:
 
-1.  Usare il filtro della versione client nel nuovo server Lync Server 2013 per consentire l'accesso solo ai client con gli aggiornamenti più recenti installati.
+1.  Utilizzare il filtro versione client nel nuovo server Lync Server 2013 per consentire l'accesso solo ai client con gli aggiornamenti più recenti installati.
 
-2.  Se necessario, configurare le impostazioni dei criteri di gruppo necessarie per l'avvio automatico del client. Per informazioni dettagliate, vedere [configurazione dei criteri di avvio del client in Lync Server 2013](lync-server-2013-configuring-client-bootstrapping-policies.md) nella documentazione relativa alla distribuzione. La configurazione di queste impostazioni è necessaria solo se si vogliono modificare i criteri di avvio dei client esistenti o se si vogliono impostare nuovi criteri di avvio del client. Se non si prevede di configurare i criteri di avvio del client oppure se si vuole che i criteri di avvio del client legacy rimangano in vigore, non è necessario eseguire alcuna azione.
+2.  Se necessario, configurare le impostazioni dei Criteri di gruppo necessarie per l'avvio automatico dei client. Per informazioni dettagliate, vedere [Configuring Client bootstrap Policies in Lync Server 2013](lync-server-2013-configuring-client-bootstrapping-policies.md) nella documentazione relativa alla distribuzione. La configurazione di queste impostazioni è necessaria solo se si desidera modificare i criteri esistenti di avvio automatico dei client oppure impostare nuovi criteri. Se non si intende configurare i criteri di avvio automatico dei client o si desidera rimangano effettivi i criteri legacy, non sarà necessaria alcuna azione.
 
-3.  Configurare altri criteri utente e client per utenti o gruppi di utenti specifici utilizzando il pannello di controllo di Lync Server 2013, Lync Server 2013 Management Shell o entrambi. Per informazioni dettagliate, vedere [impostazioni nuove e modificate per Lync 2013](lync-server-2013-new-and-changed-settings-for-lync-2013.md) nella documentazione relativa alla pianificazione.
+3.  Configurare gli altri criteri utente e client per utenti o gruppi di utenti specifici utilizzando il pannello di controllo di Lync Server 2013, Lync Server 2013 Management Shell o entrambi. Per ulteriori informazioni, vedere [impostazioni nuove e modificate per Lync 2013](lync-server-2013-new-and-changed-settings-for-lync-2013.md) nella documentazione relativa alla pianificazione.
 
-4.  Distribuire la versione più recente dei client di Lync Server 2013 insieme agli aggiornamenti cumulativi più recenti. Per informazioni dettagliate, vedere [distribuzione di client e dispositivi in Lync Server 2013](lync-server-2013-deploying-clients-and-devices.md) nella documentazione relativa alla distribuzione.
+4.  Distribuire la versione più recente dei client di Lync Server 2013 insieme agli aggiornamenti cumulativi più recenti. Per informazioni dettagliate, vedere [Deploying clients and Devices in Lync Server 2013](lync-server-2013-deploying-clients-and-devices.md) nella documentazione relativa alla distribuzione.
 
-5.  Opzionale Se l'organizzazione richiede la modalità di privacy avanzata della presenza di Lync Server 2013, una volta completata la migrazione, definire una regola di criteri di versione client per impedire l'accesso alle versioni precedenti del client. Abilitare quindi la modalità di privacy avanzata della presenza.
+5.  Optional Se nell'organizzazione è necessaria la modalità privacy di Lync Server 2013 Enhanced Presence, una volta completata la migrazione, definire una regola di criteri di versione client per impedire l'accesso alle versioni precedenti dei client. Quindi, abilitare la modalità privacy della presenza avanzata.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Non abilitare la modalità di privacy avanzata della presenza di Lync 2013 finché ogni utente di un pool di server specifico non ha installato le versioni client più recenti.
+    > Non abilitare la modalità privacy di Lync 2013 Enhanced Presence finché ogni utente su un determinato pool di server non dispone delle versioni client più recenti installate.
 
     
     </div>

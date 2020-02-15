@@ -12,16 +12,16 @@ ms:contentKeyID: 48183309
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 08ecb210ea937184039587d289c5c9c57cb4fa4d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 27383db13176150078bf4855dee4df57cb1615af
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755410"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41989881"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41755410"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-17_
+_**Ultimo argomento modificato:** 2012-10-17_
 
-Quando si creano flussi di lavoro, esistono due scenari possibili:
+Quando si creano flussi di lavoro, i possibili scenari sono due:
 
-  - **L'amministratore crea e configura il flusso di lavoro** , ovvero il membro del ruolo CsResponseGroupAdministrator (o equivalente) crea e attiva il flusso di lavoro e tutti gli elementi del flusso di lavoro, ad esempio i gruppi di agenti, le code, le festività e le ore lavorative, la musica in attesa e così via.
+  - **L'amministratore crea e configura il flusso di lavoro** - Il membro del ruolo CsResponseGroupAdministrator (o equivalente) crea e attiva il flusso di lavoro e tutti i relativi elementi, ad esempio gruppi di agenti, code, festività, orario di ufficio, musica di attesa e così via.
 
-  - **L'amministratore crea il flusso di lavoro e il responsabile configura le opzioni** , ovvero il membro del ruolo CsResponseGroupAdministrator (o equivalente) definisce l'URI SIP principale, il nome visualizzato, assegna un membro o i membri del ruolo CsResponseGroupManager e seleziona una coda e attiva il flusso di lavoro. CsResponseGroupManager può quindi eseguire l'accesso e modificare la configurazione del flusso di lavoro creando gruppi di agenti e assegnando anche il gruppo alla coda, configurando il numero di telefono, le festività e le ore lavorative, la musica in attesa e così via.
+  - **L'amministratore crea il flusso di lavoro e il manager configura le opzioni** - Il membro del ruolo CsResponseGroupAdministrator (o equivalente) definisce l'URI SIP primario, assegna uno o più membri al ruolo CsResponseGroupManager, quindi seleziona una coda e attiva il flusso di lavoro. Il membro del ruolo CsResponseGroupManager può quindi effettuare l'accesso e modificare la configurazione del flusso di lavoro creando gruppi di agenti. Assegna inoltre il gruppo alla coda, configurando il numero di telefono, festività, orario di ufficio, musica di attesa e così via.
     
     <div>
     
 
     > [!NOTE]  
-    > Quando si vuole creare un flusso di lavoro gestito, è necessario creare il flusso di lavoro come attivo. Dopo aver salvato un flusso di lavoro attivo e gestito, è possibile modificare e disattivare il flusso di lavoro.
+    > Se si vuole creare un flusso di lavoro gestito è necessario crearlo come attivo. Dopo aver salvato un flusso di lavoro gestito e attivo, sarà possibile modificarlo e disattivarlo.
 
     
     </div>

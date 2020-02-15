@@ -12,16 +12,16 @@ ms:contentKeyID: 54973688
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ee6bc90743e20f69579c86c565395e0375c8bb0b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3d51d4ff13fa6ec07827c638db49d9a75d370e71
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734466"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41996141"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41734466"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-07-03_
+_**Ultimo argomento modificato:** 2013-07-03_
 
-Nelle sezioni seguenti vengono illustrati i passaggi necessari per configurare l'autenticazione a due fattori per la distribuzione. Per altre informazioni sull'autenticazione a due fattori, vedere [abilitare l'autenticazione a più fattori di Office 365 per gli amministratori online-Grid User post](http://go.microsoft.com/fwlink/p/?linkid=313332).
+Nelle sezioni seguenti vengono descritti i passaggi necessari per configurare l'autenticazione a due fattori per la distribuzione. Per ulteriori informazioni sull'autenticazione a due fattori, vedere [Abilitazione di Office 365 multi-factor authentication for online Administrators-Grid User post](http://go.microsoft.com/fwlink/p/?linkid=313332).
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-[Configurazione della CA aziendale per l'autenticazione tramite smart card in Lync Server 2013](lync-server-2013-configuring-enterprise-ca-for-smart-card-authentication.md)
+[Configurazione di CA dell'organizzazione per l'autenticazione con smart card in Lync Server 2013](lync-server-2013-configuring-enterprise-ca-for-smart-card-authentication.md)
 
-[Configurazione di Windows 8 per l'uso di smart card virtuali con Lync Server 2013](lync-server-2013-configuring-windows-8-for-virtual-smart-cards.md)
+[Configurazione di Windows 8 per l'utilizzo di smart card virtuali con Lync Server 2013](lync-server-2013-configuring-windows-8-for-virtual-smart-cards.md)
 
-[Registrazione degli utenti per l'autenticazione tramite smart card in Lync Server 2013](lync-server-2013-enrolling-users-for-smart-card-authentication.md)
+[Registrazione degli utenti per l'autenticazione con smart card in Lync Server 2013](lync-server-2013-enrolling-users-for-smart-card-authentication.md)
 
 [Configurazione di Active Directory Federation Services (AD FS 2,0) per Lync Server 2013](lync-server-2013-configuring-active-directory-federation-services-ad-fs-2-0.md)
 
-[Configurazione di ADFS 2,0 per supportare l'autenticazione del client in Lync Server 2013](lync-server-2013-configuring-ad-fs-2-0-to-support-client-authentication.md)
+[Configurazione di AD FS 2,0 per il supporto dell'autenticazione client in Lync Server 2013](lync-server-2013-configuring-ad-fs-2-0-to-support-client-authentication.md)
 
 [Configurazione dell'autenticazione passiva di Lync Server 2013](lync-server-2013-configuring-passive-authentication.md)
 

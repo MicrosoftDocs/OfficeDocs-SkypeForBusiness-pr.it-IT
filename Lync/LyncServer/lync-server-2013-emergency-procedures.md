@@ -12,16 +12,16 @@ ms:contentKeyID: 63969640
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 28f6ab6f10d071fc86646deed030ab87d931ad95
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 65f50a5b78c92b82ec4a17711add8744bb2313d6
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729376"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006232"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41729376"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-08-18_
+_**Ultimo argomento modificato:** 2014-08-18_
 
-Le procedure di emergenza sono procedure su richiesta che esulano dalle procedure standard descritte in precedenza e che devono essere gestite dalla funzione di gestione delle modifiche (vedere [MOF](http://go.microsoft.com/fwlink/p/?linkid=40939) per una descrizione nella funzione "Change Management"). Queste procedure in genere si riferiscano a una delle seguenti operazioni:
+Le procedure di emergenza sono procedure su richiesta che non rientrano nelle procedure standard descritte in precedenza e che devono essere gestite dalla funzione Change Management (fare riferimento a [MOF](http://go.microsoft.com/fwlink/p/?linkid=40939) per una descrizione della funzione "Change Management"). Queste procedure in genere si riferiscono a una delle seguenti operazioni:
 
-  - Implementazione della modifica come parte di uno sforzo di risoluzione dei problemi, per risolvere un problema di sistema identificato.
+  - Implementazione della modifica nell'ambito di un tentativo di risoluzione dei problemi, per risolvere un problema di sistema identificato.
 
   - Risolvere una minaccia di sicurezza identificata, ad esempio gli aggiornamenti software.
 
-L'impatto dell'azienda deve essere valutato per determinare se una modifica temporanea deve essere implementata o incanalata tramite le procedure di gestione delle modifiche ufficiali, come definito dalle indicazioni per il cambio di quadrante.
+L'impatto dell'azienda deve essere valutato per determinare se una modifica temporanea deve essere implementata o incanalata tramite le procedure di gestione delle modifiche ufficiali, come definito dalle linee guida per il quadrante che cambia.
 
-È consigliabile implementare le procedure di modifica delle emergenze. Ad esempio, documentare come gestire questi tipi di procedure e aiutare a ridurre lo stato di confusione quando viene presentato un cambiamento di emergenza.
+È consigliabile implementare le procedure di modifica delle emergenze. Ad esempio, documentare come gestire questi tipi di procedure e contribuire alla riduzione dello stato di confusione quando viene presentata una modifica di emergenza.
 
 <div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48183576
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 496dcc3dfafcc7a583fe74d729c3b90d8677691e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6e1c9a55c72522604168fec235f1b9d716cd5cec
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756080"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41992041"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41756080"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-Le code contengono le chiamate a un gruppo di risposte finché un agente non risponde alla chiamata. Quando si gestisce una coda, si assegnano uno o più gruppi di agenti alla coda e si specificano le impostazioni della coda, ad esempio il numero di chiamate che la coda può contenere prima di eseguire un'azione di overflow e il periodo di tempo in cui una chiamata attende un agente prima di eseguire un timeout ction. Quando l'applicazione Response Group cerca un agente disponibile, esegue la ricerca in gruppi di agenti nell'ordine in cui vengono elencati.
+Le chiamate destinate a un Response Group restano nelle code finché un agente non risponde. Quando si gestisce una coda, le si assegnano uno o più gruppi di agenti e se ne specificano le impostazioni, ad esempio il numero di chiamate che possono rimanere nella coda prima che venga eseguita un'azione di overflow e per quanto tempo una chiamata può attendere un agente prima che venga eseguita un'azione di timeout. Quando l'applicazione Response Group cerca un agente disponibile, Cerca i gruppi di agenti nell'ordine in cui vengono elencati.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Creare o modificare una coda in Lync Server 2013](lync-server-2013-create-or-modify-a-queue.md)
 
-  - [Eliminare una coda di un gruppo di risposte in Lync Server 2013](lync-server-2013-delete-a-response-group-queue.md)
+  - [Eliminare una coda di Response Group in Lync Server 2013](lync-server-2013-delete-a-response-group-queue.md)
 
 </div>
 

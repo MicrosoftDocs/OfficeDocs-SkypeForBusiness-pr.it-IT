@@ -13,16 +13,16 @@ ms:contentKeyID: 48185118
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c3d8b50276c2e547ba5f240f429198ef0bca8303
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f31186ffda8cd6c548d83d512c0c795110d4fc4d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724136"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42003841"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -36,9 +36,9 @@ ms.locfileid: "41724136"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-19_
+_**Ultimo argomento modificato:** 2012-10-19_
 
-Prima di iniziare la migrazione a Lync Server 2013, è consigliabile eseguire un backup completo del sistema e documentare il sistema esistente, incluso un inventario degli account utente ospitati in ogni pool, in modo da poter ripristinare Office Communications Server 2007 R2, se necessario. Sono disponibili più strumenti e programmi per eseguire il backup e il ripristino di dati, impostazioni e sistemi. Per informazioni dettagliate e procedure, vedere "Guida al <http://go.microsoft.com/fwlink/p/?linkid=168162>backup e ripristino di Office Communications Server 2007 R2".
+Prima di iniziare la migrazione a Lync Server 2013, è consigliabile eseguire un backup completo del sistema e documentare il sistema esistente, incluso un inventario degli account utente ospitati in ogni pool, in modo da poter tornare a Office Communications Server 2007 R2, se necessario. Sono disponibili diversi strumenti e programmi per eseguire il backup e il ripristino di dati, impostazioni e sistemi. Per informazioni dettagliate e procedure, vedere "Guida di backup e ripristino di Office Communications Server 2007 <http://go.microsoft.com/fwlink/p/?linkid=168162>R2" all'indirizzo.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: Cmdlet in Skype for business online che non usano un ambito o un'identità
+title: Cmdlet in Skype for business online che non utilizzano un ambito o un'identità
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,27 +12,27 @@ ms:contentKeyID: 56558839
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a3dfc2ee8cd812b597f363934475d1996f2e42a0
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ad366315bbc4acf5afb417262da92a5683a084df
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727596"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42001731"
 ---
-# <a name="cmdlets-in-skype-for-business-online-that-do-not-use-a-scope-or-an-identity"></a>Cmdlet in Skype for business online che non usano un ambito o un'identità
+# <a name="cmdlets-in-skype-for-business-online-that-do-not-use-a-scope-or-an-identity"></a>Cmdlet in Skype for business online che non utilizzano un ambito o un'identità
 
  
 
 
-I cmdlet usati per la modifica degli elenchi consentiti e degli elenchi bloccati (elenchi che determinano le organizzazioni esterne con cui gli utenti possono comunicare) non usano né un ambito né un'identità. Infatti, il cmdlet **New-CsEdgeAllowAllKnownDomains** non ha alcun tipo di parametro. I cmdlet che non usano né un ambito né un'identità sono i seguenti:
+I cmdlet utilizzati per la modifica degli elenchi consentiti e degli elenchi bloccati (elenchi che determinano le organizzazioni esterne a cui gli utenti sono autorizzati a comunicare) non utilizzano un ambito o un'identità. Infatti, il cmdlet **New-CsEdgeAllowAllKnownDomains** non dispone di alcun parametro. I cmdlet che non utilizzano un ambito o un'identità sono i seguenti:
 
-  - [New-CsEdgeAllowAllKnownDomains](https://technet.microsoft.com/en-us/library/jj994088\(v=ocs.15\))
+  - [New-CsEdgeAllowAllKnownDomains](https://technet.microsoft.com/library/jj994088\(v=ocs.15\))
 
-  - [New-CsEdgeAllowList](https://technet.microsoft.com/en-us/library/jj994023\(v=ocs.15\))
+  - [New-CsEdgeAllowList](https://technet.microsoft.com/library/jj994023\(v=ocs.15\))
 
-  - [New-CsEdgeDomainPattern](https://technet.microsoft.com/en-us/library/jj994040\(v=ocs.15\))
+  - [New-CsEdgeDomainPattern](https://technet.microsoft.com/library/jj994040\(v=ocs.15\))
 
-Tieni presente che, sia con il cmdlet **New-CsEdgeAllowList** che con il cmdlet **New-CsEdgeDomainPattern** , devi includere il parametro Domain. Ad esempio:
+Si noti che, con il cmdlet **New-CsEdgeAllowList** e il cmdlet **New-CsEdgeDomainPattern** , è necessario includere il parametro Domain. Ad esempio:
 
     $x = New-CsEdgeDomainPattern -Domain "fabrikam.com"
 
@@ -40,5 +40,5 @@ Tieni presente che, sia con il cmdlet **New-CsEdgeAllowList** che con il cmdlet 
 
 
 [Identità, ambiti e tenant in Skype for business online](identities-scopes-and-tenants-in-skype-for-business-online.md)  
-[Cmdlet di Lync Online](https://technet.microsoft.com/en-us/library/dn362817\(v=ocs.15\))
+[Cmdlet di Skype for business online](https://technet.microsoft.com/library/dn362817\(v=ocs.15\))
 

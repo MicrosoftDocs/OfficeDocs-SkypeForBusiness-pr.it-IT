@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Gestione dei Response Group durante una situazione di emergenza'
+title: 'Lync Server 2013: gestione dei Response Group durante un evento di emergenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733757
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fe172863d2a1f8e762f8da2d6029f00531e04c70
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 289e210b8f8959c8bee471a73d9dc5680923d80d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743296"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41991931"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="managing-response-groups-in-lync-server-2013-during-a-disaster"></a>Gestione dei Response Group in Lync Server 2013 durante una situazione di emergenza
+# <a name="managing-response-groups-in-lync-server-2013-during-a-disaster"></a>Gestione dei Response Group in Lync Server 2013 durante un'emergenza
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41743296"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Lync Server 2013 supporta l'uso di Response Groups nel pool di backup durante il ripristino di emergenza. In questa sezione viene descritto come pianificare i gruppi di risposte durante un'interruzione, come funzionano i gruppi di risposta durante l'interruzione e i passaggi necessari per eseguire il failover dei gruppi di risposta.
+Lync Server 2013 supporta l'esecuzione di Response Group nel pool di backup durante il ripristino di emergenza. In questa sezione viene descritto come predisporre i Response Group durante un'interruzione del servizio, viene illustrato il funzionamento dei Response Group durante l'interruzione e i passaggi necessari per il failover e il failback dei Response Group.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Pianificazione per il ripristino di emergenza dei Response Group in Lync Server 2013](lync-server-2013-planning-for-response-group-disaster-recovery.md)
+  - [Pianificazione del ripristino di emergenza di Response Group in Lync Server 2013](lync-server-2013-planning-for-response-group-disaster-recovery.md)
 
-  - [Esperienza dei Response Group in Lync Server 2013 durante un errore del pool](lync-server-2013-response-group-experience-during-pool-failure.md)
+  - [Esperienza di Response Group in Lync Server 2013 durante un errore del pool](lync-server-2013-response-group-experience-during-pool-failure.md)
 
-  - [Procedure per il ripristino di emergenza dei Response Group in Lync Server 2013](lync-server-2013-response-group-disaster-recovery-procedures.md)
+  - [Procedure per il ripristino di emergenza di Response Group in Lync Server 2013](lync-server-2013-response-group-disaster-recovery-procedures.md)
 
 </div>
 

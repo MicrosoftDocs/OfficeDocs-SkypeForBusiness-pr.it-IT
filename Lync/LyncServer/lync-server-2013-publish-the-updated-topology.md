@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pubblicare la topologia aggiornata'
+title: 'Lync Server 2013: pubblicare la topologia aggiornata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184203
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4500d12c7b0a054ccce910f27c80f9aaa83eccaf
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5a0a690d38d6f7d348cdaf12503b08027bc4c0f4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747066"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41987321"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41747066"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Dopo l'aggiornamento della topologia in Generatore di topologie, è necessario pubblicare la topologia in Central Management Store prima di poter configurare e usare il server di chat persistente. Le copie di sola lettura dei dati vengono replicate in tutti i server della topologia per garantire la sincronizzazione di tutti i server con la topologia e altre modifiche alla configurazione.
+Dopo aver aggiornato la topologia in Generatore di topologie, è necessario pubblicare la topologia nell'archivio di gestione centrale prima di poter configurare e utilizzare il server Chat persistente. In tutti i server della topologia vengono replicate copie di sola lettura dei dati in modo che tutti i server siano sincronizzati con la topologia e altre modifiche della configurazione.
 
 <div>
 
 ## <a name="to-publish-an-updated-topology"></a>Per pubblicare una topologia aggiornata
 
-Prima di pubblicare la topologia, installare i database per il server di chat persistente. Usare generatore di topologie per installare i database selezionando **azione** e **Installa database**.
+Prima di pubblicare la topologia, installare i database per il server Chat persistente. Utilizzare Generatore di topologie per installare i database selezionando **azione** e **Installa database**.
 
-1.  In un computer che esegue Lync Server 2013 o in cui sono installati gli strumenti di amministrazione di Lync Server, accedere usando un account che sia membro del gruppo **Domain Admins** e del gruppo **RTCUniversalServerAdmins** . e con autorizzazioni di controllo completo (ovvero, lettura, scrittura e modifica) nell'archivio di file da usare per il file Store del server di chat persistente (in modo che il generatore di topologia possa configurare gli elenchi di controllo di accesso discrezionale (DACL) necessari) o un account con diritti utente equivalenti.
+1.  In un computer in cui è in esecuzione Lync Server 2013 o in cui sono installati gli strumenti di amministrazione di Lync Server, accedere utilizzando un account membro del gruppo **Domain Admins** e del gruppo **RTCUniversalServerAdmins** . e con autorizzazioni di controllo completo, ovvero lettura, scrittura e modifica, nell'archivio file da utilizzare per l'archivio file del server Chat persistente, in modo che il generatore di topologie possa configurare gli elenchi di controllo di accesso discrezionale necessari o un account con diritti utente equivalenti.
 
-2.  Avviare Generatore di topologie. Selezionare **Scarica la topologia dalla distribuzione esistente**o **Apri la topologia da un file locale** se è stata salvata localmente.
+2.  Avviare Generatore di topologie. Selezionare **Scarica topologia dalla distribuzione esistente** o **Apri topologia da un file locale**, se la topologia è stata salvata in locale.
 
 3.  Nell'albero della console fare clic con il pulsante destro del mouse su **Lync Server 2013**e quindi scegliere **Pubblica topologia**.
 
-4.  Nella pagina **pubblica la topologia** fare clic su **Avanti**.
+4.  Nella pagina **Pubblicare la topologia** fare clic su **Avanti**.
 
-5.  Nella pagina **completamento pubblicazione guidata** verificare che la topologia sia stata pubblicata correttamente e quindi fare clic su **fine**.
+5.  Nella pagina **Pubblicazione guidata completata** verificare che la topologia sia stata pubblicata correttamente e quindi fare clic su **Fine**.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Dopo aver pubblicato la topologia, è necessario configurare il supporto per il server di chat persistente prima di poter archiviare qualsiasi contenuto.
+    > Dopo aver pubblicato la topologia, è necessario configurare il supporto per il server Chat persistente prima che sia possibile archiviare qualsiasi contenuto.
 
     
     </div>

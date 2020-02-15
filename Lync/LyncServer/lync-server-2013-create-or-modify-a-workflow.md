@@ -12,16 +12,16 @@ ms:contentKeyID: 48184225
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 13bcb9dd285beaaf96e56aef1114751b74c290a6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9f12ecaef8c6dda3b7bcee1da02add88c6ed5c59
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740196"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41995501"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41740196"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-Lync Server 2013 supporta due tipi di flussi di lavoro: gruppo Cerca e risposta vocale interattiva (IVR). Quando si crea un flusso di lavoro, si usa lo strumento di configurazione Response Group per specificare la coda da usare e altre impostazioni, ad esempio un messaggio di benvenuto, musica in attesa, orari di ufficio e domande che l'applicazione Response Group chiede al chiamante.
+Lync Server 2013 supporta due tipi di flussi di lavoro: il gruppo di risposta e il sistema IVR (Interactive Voice Response). Quando si crea un flusso di lavoro, si utilizza lo strumento di configurazione di Response Group per specificare la coda da utilizzare e altre impostazioni, ad esempio il messaggio di benvenuto, la musica di attesa, l'orario di ufficio e le domande che l'applicazione Response Group richiede al chiamante.
 
 <div>
 
 
 > [!NOTE]  
-> È necessario creare gruppi di agenti e code prima di creare un flusso di lavoro che li usa. Se si vogliono creare orari di lavoro e festività predefiniti che è possibile usare per più flussi di lavoro, è necessario definire anche queste ore e festività prima di creare un flusso di lavoro che li usa.
+> È necessario creare gruppi di agenti e code prima di creare un flusso di lavoro che li utilizzi. Se si desidera creare orari di ufficio e festività predefiniti utilizzabili per più flussi di lavoro, è necessario definire anche tali elementi prima di creare un flusso di lavoro che li utilizzi.
 
 
 
@@ -51,9 +51,9 @@ Lync Server 2013 supporta due tipi di flussi di lavoro: gruppo Cerca e risposta 
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Creare o modificare un flusso di lavoro di gruppo di ricerca in Lync Server 2013](lync-server-2013-create-or-modify-a-hunt-group-workflow.md)
+  - [Creare o modificare un flusso di lavoro di un gruppo di risposta in Lync Server 2013](lync-server-2013-create-or-modify-a-hunt-group-workflow.md)
 
   - [Creare o modificare un flusso di lavoro interattivo in Lync Server 2013](lync-server-2013-create-or-modify-an-interactive-workflow.md)
 
@@ -66,10 +66,10 @@ Lync Server 2013 supporta due tipi di flussi di lavoro: gruppo Cerca e risposta 
 
 [Creare o modificare un gruppo di agenti in Lync Server 2013](lync-server-2013-create-or-modify-an-agent-group.md)  
 [Creare o modificare una coda in Lync Server 2013](lync-server-2013-create-or-modify-a-queue.md)  
-[Opzionale Definire set di festività di Response Group in Lync Server 2013](lync-server-2013-optional-define-response-group-holiday-sets.md)  
+[Optional Definire i set di festività di Response Group in Lync Server 2013](lync-server-2013-optional-define-response-group-holiday-sets.md)  
 
 
-[Opzionale Definire le ore lavorative per il gruppo di risposte in Lync Server 2013](lync-server-2013-optional-define-response-group-business-hours.md)  
+[Optional Definire l'orario di ufficio di Response Group in Lync Server 2013](lync-server-2013-optional-define-response-group-business-hours.md)  
   
 
 </div>

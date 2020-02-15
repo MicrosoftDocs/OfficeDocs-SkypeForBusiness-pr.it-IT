@@ -12,16 +12,16 @@ ms:contentKeyID: 48183974
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 489ad3b47b1502c210fc3f66fea3ed751b4f58a2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4a01005e9c6d78f521c3987bb36813e2d7eadb11
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765587"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41991981"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41765587"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Un flusso di lavoro di Response Group definisce il comportamento di una chiamata dal momento in cui il telefono squilla quando un agente risponde alla chiamata. Il flusso di lavoro include informazioni sulle code e sul routing e include le informazioni sul gruppo di risposta o IVR (Interactive Voice Response).
+Un flusso di lavoro di Response Group definisce il comportamento di una chiamata dal momento in cui il telefono squilla al momento in cui un agente risponde alla chiamata. Nel flusso di lavoro sono incluse informazioni sulla coda e sul routing, nonché informazioni sui gruppi di risposta o sul sistema IVR (Interactive Voice Response).
 
-Gli argomenti di questa sezione identificano le procedure consigliate per la progettazione di flussi di lavoro IVR e spiegano come creare orari di lavoro personalizzati e set di festività, come creare o modificare flussi di lavoro e come eliminare i Workgroup.
+Negli argomenti di questa sezione vengono identificate le procedure consigliate per la progettazione dei flussi di lavoro IVR e viene illustrato come creare insiemi personalizzati di festività e orari di lavoro, nonché creare, modificare ed eliminare gruppi di lavoro.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Progettare i flussi di chiamate del sistema IVR (Interactive Voice Response) in Lync Server 2013](lync-server-2013-design-interactive-voice-response-call-flows.md)
+  - [Progettare flussi di chiamate di risposta vocale interattivi in Lync Server 2013](lync-server-2013-design-interactive-voice-response-call-flows.md)
 
-  - [Opzionale Definire le ore lavorative per il gruppo di risposte in Lync Server 2013](lync-server-2013-optional-define-response-group-business-hours.md)
+  - [Optional Definire l'orario di ufficio di Response Group in Lync Server 2013](lync-server-2013-optional-define-response-group-business-hours.md)
 
-  - [Opzionale Definire set di festività di Response Group in Lync Server 2013](lync-server-2013-optional-define-response-group-holiday-sets.md)
+  - [Optional Definire i set di festività di Response Group in Lync Server 2013](lync-server-2013-optional-define-response-group-holiday-sets.md)
 
   - [Creare o modificare un flusso di lavoro in Lync Server 2013](lync-server-2013-create-or-modify-a-workflow.md)
 

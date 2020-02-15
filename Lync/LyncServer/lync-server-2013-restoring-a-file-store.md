@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: ripristino di un archivio di file'
+title: 'Lync Server 2013: ripristino di un archivio file'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541491
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c013159de83d258273e381dd54556bcceec056f7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 60c4a3e1563890d64394f3a99141523cb95add38
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723566"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006132"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="restoring-a-file-store-in-lync-server-2013"></a>Ripristino di un archivio di file in Lync Server 2013
+# <a name="restoring-a-file-store-in-lync-server-2013"></a>Ripristino di un archivio file in Lync Server 2013
 
 </div>
 
@@ -35,26 +35,26 @@ ms.locfileid: "41723566"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-18_
+_**Ultimo argomento modificato:** 2013-02-18_
 
-Gli archivi di file per l'edizione standard si trovano in genere nel server Standard Edition. Gli archivi di file per Enterprise Edition si trovano in genere in un file server o un cluster. La procedura seguente descrive come ripristinare un archivio di file.
+Gli archivi di file per Standard Edition in genere si trovano nel server Standard Edition. Gli archivi file per Enterprise Edition si trovano in genere in un file server o in un cluster. Nella procedura seguente viene descritto come ripristinare un archivio file.
 
 <div>
 
-## <a name="to-restore-a-file-store"></a>Per ripristinare un archivio di file
+## <a name="to-restore-a-file-store"></a>Per ripristinare un archivio file
 
-1.  Se un archivio di file non riesce, copiare l'archivio di file\\ appropriato da $backup nella posizione dell'archivio file nel server file server o Standard Edition e quindi condividere la cartella.
+1.  Se un archivio file ha esito negativo, copiare l'archivio file\\ appropriato da $backup al percorso dell'archivio file nel server file server o Standard Edition e quindi condividere la cartella.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Il percorso e il nome file dell'archivio file ripristinato devono essere esattamente gli stessi dell'archivio di file di cui è stato eseguito il backup, in modo che i componenti che usano i file possano accedervi.
+    > Il percorso e il nome del file dell'archivio file ripristinato devono essere identici a quelli dell'archivio file di cui è stato eseguito il backup, in modo che i componenti che utilizzano i file possano accedervi.
 
     
     </div>
 
-2.  Se necessario, imposta gli elenchi di controllo di accesso (ACL) per l'archivio di file. Nella riga di comando digitare:
+2.  Se necessario, impostare gli elenchi di controllo di accesso (ACL, Access Control List) per l'archivio file. Nella riga di comando digitare il comando seguente:
     
         Enable-CsTopology
     

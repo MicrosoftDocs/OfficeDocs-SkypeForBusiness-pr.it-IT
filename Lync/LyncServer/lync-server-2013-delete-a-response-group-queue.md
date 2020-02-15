@@ -12,20 +12,20 @@ ms:contentKeyID: 48184356
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6d78b1396d92b16be120484f5bf1b40ef2e47a81
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1ee159d95a21b351da21c76cd04209da1c4ee938
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740986"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006312"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="delete-a-response-group-queue-in-lync-server-2013"></a>Eliminare una coda di un gruppo di risposte in Lync Server 2013
+# <a name="delete-a-response-group-queue-in-lync-server-2013"></a>Eliminare una coda di Response Group in Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41740986"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Per eliminare una coda, usare una delle procedure seguenti.
+Utilizzare una delle procedure seguenti per eliminare una coda.
 
 <div>
 
-## <a name="to-use-lync-server-control-panel-to-delete-a-queue"></a>Per usare il pannello di controllo di Lync Server per eliminare una coda
+## <a name="to-use-lync-server-control-panel-to-delete-a-queue"></a>Per utilizzare il pannello di controllo di Lync Server per eliminare una coda
 
-1.  Accedere come membro del gruppo RTCUniversalServerAdmins o come membro di uno dei ruoli amministrativi predefiniti che supportano il gruppo di risposte.
+1.  Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Nella barra di spostamento sinistra fare clic su **Response Groups**, quindi fare clic su **Accoda**.
+3.  Sulla barra di spostamento sinistra fare clic su **Response Group** e quindi su **Coda**.
 
-4.  Nel campo di ricerca digitare parte o tutto il nome della coda che si desidera eliminare.
+4.  Nel campo di ricerca digitare tutto o parte del nome della coda che si desidera eliminare.
 
-5.  Nell'elenco delle code fare clic sulla coda desiderata, fare clic su **modifica**e quindi su **Elimina**.
+5.  Nell'elenco delle code fare clic sulla coda desiderata, fare clic su **Modifica ** e quindi su **Elimina**.
 
 6.  Fare clic su **OK**.
 
@@ -59,13 +59,13 @@ Per eliminare una coda, usare una delle procedure seguenti.
 
 <div>
 
-## <a name="to-use-windows-powershell-to-delete-a-queue"></a>Per usare Windows PowerShell per eliminare una coda
+## <a name="to-use-windows-powershell-to-delete-a-queue"></a>Per utilizzare Windows PowerShell per eliminare una coda
 
-1.  Accedere come membro del gruppo RTCUniversalServerAdmins o come membro di uno dei ruoli amministrativi predefiniti che supportano il gruppo di risposte.
+1.  Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Nella riga di comando eseguire:
+3.  Nella riga di comando digitare il comando seguente:
     
         Get-CsRgsQueue -Identity <Application Server service> -Name "<name of queue>" | Remove-CsRgsQueue
     

@@ -12,16 +12,16 @@ ms:contentKeyID: 48185519
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8763203827afd3d14638b68474c4f9bd9d6d0cfc
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 870c0e19e2134c1a827485a5cacf2c055f99b0d4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746508"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006071"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41746508"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-01-16_
+_**Ultimo argomento modificato:** 2012-01-16_
 
-Per completare correttamente questa procedura, è necessario avere effettuato l'accesso come utente membro del gruppo RTCUniversalServerAdmins.
+Per eseguire correttamente questa procedura, è necessario essere connessi come utenti membri del gruppo RTCUniversalServerAdmins.
 
-Puoi usare il cmdlet **Test-CsKerberosAccountAssignment** di Windows PowerShell per testare e segnalare la disponibilità funzionale di un'assegnazione di sito per l'autenticazione Kerberos. Questo comando esegue una query sul sito specificato nel parametro Identity obbligatorio. Il parametro facoltativo report fa sì che il cmdlet scriva un report HTML in C\\: log nel computer in cui viene eseguito il comando. Il parametro Verbose facoltativo riporta le informazioni sull'attività sullo schermo.
+È possibile utilizzare il cmdlet **Test-CsKerberosAccountAssignment** di Windows PowerShell per testare e segnalare la conformità funzionale di un'assegnazione di sito per l'autenticazione Kerberos. Questo comando consente di eseguire una query sul sito specificato nel parametro Identity obbligatorio. Il parametro facoltativo report fa in modo che il cmdlet scriva un report HTML in\\C: Logs nel computer in cui viene eseguito il comando. Il parametro Verbose facoltativo segnala informazioni sull'attività allo schermo.
 
 <div>
 
 ## <a name="to-test-and-report-functional-readiness-for-kerberos-authentication-for-a-site"></a>Per testare e segnalare la disponibilità funzionale per l'autenticazione Kerberos per un sito
 
-1.  Come membro del gruppo RTCUniversalServerAdmins, accedere a un computer nel dominio in cui è in uso Lync Server 2013 o nel computer in cui sono installati gli strumenti di amministrazione.
+1.  Come membri del gruppo RTCUniversalServerAdmins, accedere a un computer nel dominio in cui è in esecuzione Lync Server 2013 o al computer in cui sono installati gli strumenti di amministrazione.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Nella riga di comando eseguire il comando seguente:
+3.  Eseguire il comando seguente dalla riga di comando:
     
         Test-CsKerberosAccountAssignment -Identity "site:SiteName" -Report "c:\logs\FileName.htm" -Verbose
     

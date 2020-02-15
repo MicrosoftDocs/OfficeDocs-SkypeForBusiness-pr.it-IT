@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Nuova funzionalità trunk'
+title: 'Lync Server 2013: nuova funzionalità trunk'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733755
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 962da42567ffcc1c0d541b74266ac5bb1b4653c3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 250b240ed0e1b42051e92e9393f10c01ebb753f5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755890"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006142"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41755890"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-In Microsoft Lync Server 2013 è possibile definire più trunk tra un Mediation Server e un gateway. Microsoft Lync Server 2010 è consentito solo per un singolo trunk tra un Mediation Server e un gateway PSTN. Questa caratteristica offre la flessibilità necessaria per definire trunk aggiuntivi. Un trunk è un'associazione logica tra un FQDN di Mediation Server e una porta di ascolto e un FQDN del gateway PSTN e una porta di ascolto. Questa nuova funzionalità consente di semplificare la definizione del trunk per la resilienza (in cui è possibile usare più server di mediazione per instradare le chiamate allo stesso gateway PSTN), per l'interoperabilità PBX, in cui è possibile usare più trunk con criteri associati diversi e IP-PBX e un Mediation Server e per le configurazioni trunk SIP in cui i server di mediazione in siti diversi hanno trunk SIP per il vettore a cui fa riferimento lo stesso FQDN del vettore.
+In Microsoft Lync Server 2013, è possibile definire più trunk tra un Mediation Server e un gateway. Microsoft Lync Server 2010 è consentito solo per un singolo trunk tra un Mediation Server e un gateway PSTN. Questa funzionalità offre la flessibilità necessaria per definire ulteriori trunk. Un trunk è un'associazione logica tra un FQDN del Mediation Server e una porta di attesa e un FQDN del gateway PSTN e una porta di attesa. Questa nuova funzionalità consente di semplificare la definizione trunk per la resilienza (in cui è possibile utilizzare più Mediation Server per instradare le chiamate allo stesso gateway PSTN), per l'interoperabilità PBX, in cui è possibile utilizzare più trunk con criteri associati diversi e IP-PBX e Mediation Server e per le configurazioni trunk SIP in cui Mediation Server in siti diversi dispongono di trunk SIP per il vettore a cui fa riferimento lo stesso nome di dominio completo.
 
 <div>
 

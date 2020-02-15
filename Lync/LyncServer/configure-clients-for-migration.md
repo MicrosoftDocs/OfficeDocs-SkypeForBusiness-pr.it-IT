@@ -13,16 +13,16 @@ ms:contentKeyID: 48185411
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ebfba9142aca4981f02b0dca7e8e0b16a2cde446
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d8ebfefb24d1857a7addade5e92c94bf5daa54f6
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727966"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42000571"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -36,17 +36,17 @@ ms.locfileid: "41727966"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-24_
+_**Ultimo argomento modificato:** 2012-09-24_
 
-Questo argomento contiene le procedure consigliate per la distribuzione del client da eseguire prima della migrazione a Lync Server 2013. Queste modifiche alla configurazione devono essere eseguite in Lync Server 2010.
+Questo argomento contiene le procedure consigliate per la distribuzione del client che è necessario eseguire prima di eseguire la migrazione a Lync Server 2013. Queste modifiche alla configurazione devono essere eseguite su Lync Server 2010.
 
 <div>
 
 ## <a name="to-configure-clients-before-migration"></a>Per configurare i client prima della migrazione
 
-1.  Distribuire gli aggiornamenti più recenti per server, client e dispositivi (hotfix) per Lync Server 2010. Per informazioni più aggiornate su Lync Server 2010, vedere Updates Resource Center for Lync at <http://go.microsoft.com/fwlink/p/?linkid=232630>.
+1.  Distribuire gli aggiornamenti più recenti per server, client e dispositivi (hotfix) per Lync Server 2010. Per le informazioni più aggiornate su Lync Server 2010, vedere Updates Resource Center for Lync at <http://go.microsoft.com/fwlink/p/?linkid=232630>.
 
-2.  In Lync Server 2010 usare il filtro della versione client per consentire solo ai client con gli aggiornamenti più recenti installati.
+2.  In Lync Server 2010, utilizzare il filtro delle versioni client per consentire solo ai client con gli aggiornamenti più recenti installati.
 
 </div>
 
@@ -56,10 +56,10 @@ Questo argomento contiene le procedure consigliate per la distribuzione del clie
 
 
 [Impostazioni nuove e modificate per Lync 2013](lync-server-2013-new-and-changed-settings-for-lync-2013.md)  
-[Interoperabilità dei client in Lync 2013](lync-server-2013-client-interoperability-in-lync-2013.md)  
+[Interoperabilità client in Lync 2013](lync-server-2013-client-interoperability-in-lync-2013.md)  
 
 
-[Pianificazione per client e dispositivi in Lync Server 2013](lync-server-2013-planning-for-clients-and-devices.md)  
+[Pianificazione di client e dispositivi in Lync Server 2013](lync-server-2013-planning-for-clients-and-devices.md)  
   
 
 </div>

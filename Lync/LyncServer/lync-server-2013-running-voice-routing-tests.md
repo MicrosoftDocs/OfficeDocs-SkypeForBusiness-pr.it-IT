@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Esecuzione di test del routing vocale'
+title: 'Lync Server 2013: esecuzione di test del routing vocale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184185
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 869966f5d315fdfaa92409a7586b9eec8fd01ec4
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a04188d671c514557107a7e54eab9ea00d00f2a0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765034"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41987331"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41765034"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Lync Server 2013 offre due diversi metodi per testare le route vocali: è possibile eseguire test informali e ad hoc per qualsiasi numero di telefono e qualsiasi route vocale; in alternativa, è possibile eseguire test più formali usando i casi di test della route vocale. Con i test formali, è possibile definire elementi come il numero da chiamare e i criteri per il dial plan e la segreteria telefonica e Lync Server può quindi verificare che, in base a queste condizioni, il numero fornito possa essere correttamente indirizzato alla rete PSTN. Entrambi questi metodi sono descritti nelle sezioni successive della documentazione.
+In Lync Server 2013 sono disponibili due metodi diversi per testare le route vocali: è possibile eseguire test informali e ad hoc su qualsiasi numero di telefono e su qualsiasi route vocale. in alternativa, è possibile eseguire test più formali utilizzando i test case della route vocale. Con il testing formale, è possibile definire elementi quali il numero da comporre e il dial plan e i criteri vocali da utilizzare e Lync Server può quindi verificare che, date queste condizioni, il numero fornito possa essere instradato correttamente alla rete PSTN. Entrambi questi metodi sono descritti nelle sezioni successive di questa documentazione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Eseguire test di routing vocale informale in Lync Server 2013](lync-server-2013-run-informal-voice-routing-tests.md)
+  - [Eseguire test informali di routing vocale in Lync Server 2013](lync-server-2013-run-informal-voice-routing-tests.md)
 
   - [Eseguire test case di routing vocale in Lync Server 2013](lync-server-2013-run-voice-routing-test-cases.md)
 
