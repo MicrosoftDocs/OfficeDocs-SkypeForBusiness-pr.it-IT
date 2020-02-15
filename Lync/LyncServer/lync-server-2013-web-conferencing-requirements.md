@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: requisiti per i servizi di conferenza Web'
+title: 'Lync Server 2013: requisiti di Web Conferencing'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733559
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 186f597c4328c8cee5085e7e599228b60c300a96
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 914fee9d2ddf0a7e6d6867879a197b55380d35c9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758516"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041275"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="web-conferencing-requirements-in-lync-server-2013"></a>Requisiti per i servizi di conferenza Web in Lync Server 2013
+# <a name="web-conferencing-requirements-in-lync-server-2013"></a>Requisiti di Web Conferencing in Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41758516"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-30_
+_**Ultimo argomento modificato:** 2013-01-30_
 
-Se si è scelto di abilitare i servizi di conferenza Web, è necessario pianificare le operazioni seguenti:
-
-  - <span></span>  
-    Accedere all'archivio file, che viene usato per archiviare il contenuto delle conferenze Web.
+Se si decide di abilitare le conferenze Web, è necessario pianificare quanto segue:
 
   - <span></span>  
-    Integrazione con Office Web Apps Server, che è necessario per condividere i file di PowerPoint durante una conferenza.
+    Accesso all'archivio file utilizzato per l'archiviazione del contenuto delle conferenze Web.
+
+  - <span></span>  
+    Integrazione con il server Office Web Apps, che è necessario per condividere i file di PowerPoint durante una conferenza.
 
 <div>
 
 ## <a name="file-store"></a>Archivio file
 
-Il servizio di conferenza Web Lync Server 2013 archivia il contenuto condiviso durante le riunioni nell'archivio file. Come parte della distribuzione, è necessario specificare una condivisione file da usare come archivio file per il pool di server standard o Enterprise Edition front-end. È possibile usare una condivisione file esistente per l'archivio file oppure specificarne una nuova indicando il nome di dominio completo (FQDN) del file server in cui deve trovarsi la condivisione file, oltre a un nome di cartella per la nuova condivisione file.Per altre informazioni, vedere Generatore di topologie: definire l'archivio di file per il front-end. Il servizio Web Conferencing crittografa il contenuto prima di archiviare il contenuto nell'archivio file.
+Il servizio Web Conferencing di Lync Server 2013 archivia il contenuto condiviso durante le riunioni nell'archivio file. Nell'ambito della distribuzione, è necessario specificare una condivisione file da utilizzare come archivio file per il server Standard Edition o per il pool Enterprise Edition front end. È possibile utilizzare una condivisione di file esistente per l'archivio file oppure specificare una nuova condivisione di file indicando il nome di dominio completo (FQDN) del file server in cui deve essere posizionata la condivisione di file, nonché un nome di cartella per la nuova condivisione di file.Per ulteriori informazioni, vedere Generatore di topologie – Definire l'archivio file per il pool Front End. Il servizio per conferenze Web crittografa il contenuto prima di archiviarlo nell'archivio file.
 
-Lync Server 2013 supporta l'uso di condivisioni file in un ambiente di archiviazione Direct Attached (DAS) o in una rete di archiviazione (SAN), incluso il file System distribuito (DFS) e in una matrice ridondante di dischi indipendenti (RAID) per archivi di file. Dopo che la distribuzione guidata di Lync Server ha definito la posizione della condivisione file, Lync Server crea una struttura di cartelle all'interno della condivisione file simile a:
+Lync Server 2013 supporta l'utilizzo di condivisioni file su una rete di archiviazione diretta (DAS, Direct Attached Storage) o su un sistema di archiviazione (SAN), incluso il file System distribuito (DFS) e un array di dischi indipendenti (RAID) ridondante per gli archivi di file. Dopo che la distribuzione guidata di Lync Server ha definito il percorso della condivisione file, Lync Server crea una struttura di cartelle all'interno della condivisione file simile alla seguente:
 
   - 1-ApplicationServer-1
 
@@ -65,27 +65,27 @@ Lync Server 2013 supporta l'uso di condivisioni file in un ambiente di archiviaz
     
       - Dataconf
 
-Il servizio Web Conferencing consente quindi di archiviare contenuti come diapositive di PowerPoint, lavagne, sondaggi e allegati nelle cartelle CollabContent e CollabMetadata, che si trovano nella cartella WebServices.
+Il servizio di conferenza Web archivia quindi il contenuto, ad esempio diapositive di PowerPoint, lavagne, sondaggi e allegati, nelle cartelle CollabContent e CollabMetadata che si trovano nella cartella WebServices.
 
-L'amministratore deve impostare le autorizzazioni per la condivisione di file in modo che i gruppi RTC dispongano dell'accesso di lettura e scrittura necessario.
+L'amministratore deve impostare le autorizzazioni sulla condivisione file in modo che i gruppi RTC dispongano delle necessarie autorizzazioni di accesso in lettura e scrittura.
 
 <div>
 
 
 > [!WARNING]  
-> Se si verificano errori con le autorizzazioni, aprire Generatore di topologie, scaricare e ripubblicare la topologia esistente. La pubblicazione della topologia verificherà le autorizzazioni di condivisione file e reimpostarle, se necessario.
+> In caso di problemi con le autorizzazioni, aprire il Generatore di topologie, scaricare e ripubblicare la topologia esistente. Durante la pubblicazione della topologia vengono verificate le autorizzazioni per la condivisione file e vengono reimpostate, se necessario.
 
 
 
 </div>
 
-Per gestire la modalità di archiviazione del contenuto per una riunione, è possibile usare le impostazioni seguenti:
+È possibile utilizzare le impostazioni seguenti per gestire l'archiviazione del contenuto per una riunione:
 
-  - **ContentGracePeriod**, che si trova in [Set-CsConferencingConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsConferencingConfiguration), imposta il periodo di tempo in cui il contenuto delle conferenze Web rimarrà sul server al termine della riunione.
+  - **ContentGracePeriod**, disponibile in [Set-CsConferencingConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsConferencingConfiguration), consente di impostare il tempo di permanenza del contenuto Web Conferencing sul server dopo la fine della riunione.
 
-  - **MaxContentStorageMB**, che si trova in [Set-CsConferencingConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsConferencingConfiguration), imposta la quantità massima di spazio su file consentita per l'archiviazione del contenuto durante una singola riunione.
+  - **MaxContentStorageMB**, che si trova in [Set-CsConferencingConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsConferencingConfiguration), imposta la quantità massima di spazio di file consentita per l'archiviazione del contenuto durante una singola riunione.
 
-**MaxUploadFileSizeMb** non limita l'impostazione di caricamento dei file per Lync Web App. Il limite di caricamento delle dimensioni dei file per Lync Web App è impostato su circa 30MB e viene controllato dal file Web. config di\[IIS\]:/DataCollabWeb/int ext/handler/Web.config. Per configurare il limite di caricamento delle dimensioni dei file per Lync Web `maxRequestLength` app `maxAllowedContentLength` , aggiornare e nel file Web. config come illustrato di seguito.
+**MaxUploadFileSizeMb** non limita l'impostazione di caricamento dei file per Lync Web App. Il limite di caricamento delle dimensioni dei file per Lync Web App è impostato su approssimativamente 30MB ed è controllato dal file Web. config di\[IIS\]:/DataCollabWeb/int ext/handler/Web.config. Per configurare il limite di caricamento delle dimensioni dei file per Lync Web `maxRequestLength` app `maxAllowedContentLength` , aggiornarlo e nel file Web. config come illustrato di seguito.
 
     <system.web>
         <!-- 
@@ -105,15 +105,15 @@ Per gestire la modalità di archiviazione del contenuto per una riunione, è pos
                     </requestFiltering>
                     </security>
 
-È necessario aggiornare il file Web. config per ogni server front-end.
+È necessario aggiornare il file Web. config per ogni Front End Server.
 
 </div>
 
 <div>
 
-## <a name="office-web-apps-server"></a>Server Office Web Apps
+## <a name="office-web-apps-server"></a>server Office Web Apps
 
-Per usare questi nuovi amministratori delle funzionalità, è necessario installare Office Web Apps Server e configurare Lync Server 2013 per la comunicazione con Office Web Apps Server. Questa documentazione contiene informazioni su come configurare Lync Server 2013 per l'utilizzo con Office Web Apps Server. La documentazione in questione non è disponibile per informazioni su come installare Office Web Apps Server. Per informazioni dettagliate sull'installazione, vedere il sito Web Microsoft Office Web <http://go.microsoft.com/fwlink/p/?linkid=257525>Apps Deployment. Questa guida include informazioni complete sui prerequisiti per Office Web Apps Server. Tieni presente che il server Office Web Apps deve essere installato in un computer autonomo che non è in grado di eseguire Lync Server, SQL Server o qualsiasi altra applicazione server. Non è necessario che nel computer sia installata una versione di Office. Qualsiasi computer usato per eseguire Office Web Apps Server deve avere anche un set di software specifico installato (inclusi .NET Framework 4,5 e Windows PowerShell 3,0). Questi requisiti, oltre a informazioni sulla configurazione di certificati e Internet Information Services (IIS), vengono descritti in dettaglio nel sito Web Microsoft Office Web Apps Deployment <http://go.microsoft.com/fwlink/p/?linkid=257525>.
+Per poter utilizzare questi nuovi amministratori delle funzionalità, è necessario installare il server Office Web Apps e configurare Lync Server 2013 per la comunicazione con il server Office Web Apps. In questa documentazione vengono fornite informazioni su come configurare Lync Server 2013 per l'utilizzo con il server Office Web Apps. La documentazione non fornita contiene informazioni su come installare il server Office Web Apps. Per informazioni dettagliate sull'installazione, vedere il sito Web Microsoft Office Web <http://go.microsoft.com/fwlink/p/?linkid=257525>Apps Deployment all'indirizzo. Tale guida include informazioni complete sui prerequisiti per il server Office Web Apps. Si noti che il server Office Web Apps deve essere installato in un computer autonomo che non esegue Lync Server, SQL Server o qualsiasi altra applicazione server. Non è necessario disporre di una versione di Office installata nel computer in questione. Qualsiasi computer utilizzato per eseguire il server Office Web Apps deve disporre anche di un insieme specifico di software installato (inclusi .NET Framework 4,5 e Windows PowerShell 3,0). Tali requisiti, oltre alle informazioni sulla configurazione dei certificati e di Internet Information Services (IIS), vengono illustrati in dettaglio nel sito Web Microsoft Office Web <http://go.microsoft.com/fwlink/p/?linkid=257525>Apps Deployment all'indirizzo.
 
 </div>
 
@@ -123,7 +123,7 @@ Per usare questi nuovi amministratori delle funzionalità, è necessario install
 
 
 [Panoramica delle conferenze Web in Lync Server 2013](lync-server-2013-web-conferencing-overview.md)  
-[Elenco di controllo della distribuzione per i servizi di conferenza Web in Lync Server 2013](lync-server-2013-deployment-checklist-for-web-conferencing.md)  
+[Elenco di controllo di distribuzione per le conferenze Web in Lync Server 2013](lync-server-2013-deployment-checklist-for-web-conferencing.md)  
   
 
 </div>

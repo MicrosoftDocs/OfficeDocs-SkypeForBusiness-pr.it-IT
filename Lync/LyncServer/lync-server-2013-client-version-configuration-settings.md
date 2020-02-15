@@ -12,16 +12,16 @@ ms:contentKeyID: 50553005
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 588189b093a27c65ff8348a9c176f9be4f9d1c4d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3365f3a1d2059692a5222fd19871f91836852a04
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733836"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044398"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41733836"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-12-12_
+_**Ultimo argomento modificato:** 2012-12-12_
 
-Le impostazioni di configurazione della versione client vengono usate per attivare o disattivare il controllo della versione client, sia a livello globale che per siti particolari. Usare le procedure seguenti per configurare le impostazioni di configurazione della versione client per Lync Server 2013.
+Le impostazioni di configurazione della versione client vengono utilizzate per abilitare o disabilitare il controllo della versione client, a livello globale o per siti particolari. Utilizzare le procedure seguenti per configurare le impostazioni di configurazione della versione client per Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Abilitare o disabilitare il controllo delle versioni client in Lync Server 2013](lync-server-2013-enable-or-disable-client-versioning.md)
 
   - [Creare o modificare una raccolta di impostazioni di configurazione della versione client in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-client-version-configuration-settings.md)
 
-  - [Modificare l'azione predefinita per i client non esplicitamente supportati o limitati in Lync Server 2013](lync-server-2013-modify-the-default-action-for-clients-not-explicitly-supported-or-restricted.md)
+  - [Modificare l'azione predefinita per i client non supportati in modo esplicito o con restrizioni in Lync Server 2013](lync-server-2013-modify-the-default-action-for-clients-not-explicitly-supported-or-restricted.md)
 
   - [Visualizzare le impostazioni di configurazione della versione client in Lync Server 2013](lync-server-2013-view-client-version-configuration-settings.md)
 

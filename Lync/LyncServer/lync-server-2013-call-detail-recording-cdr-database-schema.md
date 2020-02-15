@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Schema del database di registrazione dettagli chiamata (CDR)'
+title: 'Lync Server 2013: schema del database di registrazione dettagli chiamata (CDR)'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184527
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ccda99476c1d74c68aacda358a6759b02bc65a78
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4cf08b4562550807ce40c26844a89f3f32aba769
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743166"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045388"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41743166"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-17_
+_**Ultimo argomento modificato:** 2012-10-17_
 
-In questo modo vengono documentati lo schema del database di registrazione dettagli chiamata (CDR) in Microsoft Lync Server 2013.
+In questo documento viene documentato lo schema del database di registrazione dettagli chiamata (CDR) in Microsoft Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Elenco di tabelle di registrazione dettagli chiamata (CDR) in Lync Server 2013](lync-server-2013-list-of-cdr-tables.md)
+  - [Elenco delle tabelle di registrazione dettagli chiamata in Lync Server 2013](lync-server-2013-list-of-cdr-tables.md)
 
-  - [Dettagli sulle tabelle di registrazione dettagli chiamata (CDR) in Lync Server 2013](lync-server-2013-cdr-table-details.md)
+  - [Dettagli della tabella CDR in Lync Server 2013](lync-server-2013-cdr-table-details.md)
 
-  - [Elenco di visualizzazioni CDR in Lync Server 2013](lync-server-2013-list-of-cdr-views.md)
+  - [Elenco delle visualizzazioni CDR in Lync Server 2013](lync-server-2013-list-of-cdr-views.md)
 
 </div>
 

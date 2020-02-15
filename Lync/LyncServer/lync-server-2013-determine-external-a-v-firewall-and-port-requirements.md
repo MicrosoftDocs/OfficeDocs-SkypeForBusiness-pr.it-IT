@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Determinare i requisiti di porte e firewall A/V esterni'
+title: 'Lync Server 2013: determinare i requisiti di porte e firewall A/V esterni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183872
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3d5519ef37ff334ddf196e94b40aa7df14d69d25
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c6f44e23cdc60251df4ea3f4071805d9367eef84
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762474"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049338"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41762474"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-29_
+_**Ultimo argomento modificato:** 2012-10-29_
 
-La comunicazione audio/video (A/V) può essere complessa. A causa della natura dei protocolli usati in A/V e in che modo i client e i server usano i protocolli, è garantita una sezione speciale per spiegare le differenze tra le versioni client e server.
+La comunicazione audio/video (A/V) può essere complessa. A causa della natura dei protocolli utilizzati in A/V e in che modo i client e i server utilizzano i protocolli, viene garantita una sezione speciale che spiega le differenze tra le versioni client e server.
 
-Usare la tabella a/V del firewall e della porta seguente per determinare i requisiti del firewall e le porte da aprire. Esaminare quindi la terminologia NAT (Network Address Translation) perché NAT può essere implementato in molti modi diversi. Per un esempio dettagliato delle impostazioni della porta del firewall, vedere le architetture di riferimento in [scenari per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-scenarios-for-external-user-access.md).
+Utilizzare la seguente tabella di porte e firewall a/V per determinare i requisiti del firewall e le porte da aprire. Rivedere quindi la terminologia relativa alla conversione NAT (Network Address Translation) perché quest'ultima può essere implementata in diversi modi. Per un esempio dettagliato delle impostazioni delle porte del firewall, vedere le architetture di riferimento in [scenari per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-scenarios-for-external-user-access.md).
 
-### <a name="general-protocol-usage-for-udp-and-tcp-in-audiovideo-and-media-traffic"></a>Utilizzo di protocolli generali per UDP e TCP nel traffico audio/video e multimediale
+### <a name="general-protocol-usage-for-udp-and-tcp-in-audiovideo-and-media-traffic"></a>Utilizzo di protocollo generale per UDP e TCP in audio/video e traffico multimediale
 
 <table>
 <colgroup>
@@ -51,19 +51,19 @@ Usare la tabella a/V del firewall e della porta seguente per determinare i requi
 <thead>
 <tr class="header">
 <th>Trasporto audio/video</th>
-<th>L'uso</th>
+<th>Usage</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>UDP</p></td>
-<td><p>Protocollo di livello di trasporto preferito per audio e video</p></td>
+<td><p>Protocollo di trasporto Layer preferito per audio e video</p></td>
 </tr>
 <tr class="even">
 <td><p>TCP</p></td>
 <td><p>Protocollo di livello di trasporto di fallback per audio e video</p>
-<p>Protocollo di livello di trasporto obbligatorio per la condivisione delle applicazioni in Office Communications Server 2007 R2, Lync Server 2010 e Lync Server 2013</p>
-<p>Protocollo di livello di trasporto obbligatorio per il trasferimento di file in Lync Server 2010 e Lync Server 2013</p></td>
+<p>Protocollo di trasporto Layer obbligatorio per la condivisione di applicazioni in Office Communications Server 2007 R2, Lync Server 2010 e Lync Server 2013</p>
+<p>Protocollo di trasporto Layer obbligatorio per il trasferimento di file in Lync Server 2010 e Lync Server 2013</p></td>
 </tr>
 </tbody>
 </table>
@@ -71,15 +71,15 @@ Usare la tabella a/V del firewall e della porta seguente per determinare i requi
 
 <div>
 
-## <a name="external-av-firewall-port-requirements-for-external-user-access"></a>Requisiti della porta firewall esterni A/V per l'accesso degli utenti esterni
+## <a name="external-av-firewall-port-requirements-for-external-user-access"></a>Requisiti delle porte dei firewall A/V esterni per l'accesso degli utenti esterni
 
-I requisiti della porta del firewall per le interfacce SIP e per le conferenze esterne (e interne) sono coerenti, indipendentemente dalla versione del client o dalla versione del partner federativo.
+I requisiti delle porte del firewall per le interfacce SIP e di conferenza esterne (e interne) sono coerenti, indipendentemente dalla versione del client o dalla versione del partner federativo.
 
-Lo stesso non è vero per l'interfaccia esterna del bordo audio/video. Per la Federazione con Office Communications Server 2007, l'A/V Edge Service richiede che le regole del firewall esterno consentano il traffico RTP/TCP e RTP/UDP nell'intervallo di porte da 50.000 a 59.999 per il flusso in entrambe le direzioni. La tabella precedente presuppone che Lync Server 2013 sia il partner principale della Federazione e sia configurato per comunicare con uno degli altri tipi di partner federativi elencati.
+Non si applicano gli stessi requisiti per l'interfaccia esterna Audio/Video Edge. Per la Federazione con Office Communications Server 2007, è necessario che il servizio A/V Edge richieda che le regole del firewall esterno consentano il traffico RTP/TCP e RTP/UDP nell'intervallo di porte da 50.000 a 59.999 per il flusso in entrambe le direzioni. La tabella precedente presuppone che Lync Server 2013 sia il partner federativo principale e che sia configurato per la comunicazione con uno degli altri tipi di partner di Federazione elencati.
 
-La configurazione dell'intervallo di porte audio/video di 50000-59.999 deve tenere presente che l'intervallo di porte conterrà le porte di origine per le comunicazioni ai partner federativi. In dettaglio, tenere presente che una comunicazione viene avviata da un partner federativo. La comunicazione dalle porte a/V Edge service nell'intervallo 50000-59.999 si connetterà alla porta prevista TCP 443 dell'A/V Edge del partner. Viceversa, il traffico in entrata per la porta del servizio a/V Edge TCP 443 avrà una porta di origine nell'intervallo di 50000-59.999.
+Se si configura l'intervallo di porte audio/video di 50000-59.999, è necessario tenere presente che l'intervallo di porte conterrà le porte di origine per le comunicazioni ai partner federativi. In dettaglio, considerare che una comunicazione viene avviata da un partner federativo. La comunicazione dalle porte del servizio A/V Edge nell'intervallo 50000-59.999 si collegherà alla porta prevista TCP 443 del servizio A/V Edge del partner. Al contrario, il traffico in ingresso alla porta del servizio A/V Edge TCP 443 avrà una porta di origine nell'intervallo di 50000-59.999.
 
-I diversi firewall e criteri per l'amministrazione del firewall possono richiedere la configurazione di sole regole di destinazione oppure possono richiedere sia la configurazione dell'origine che quella della destinazione. Se i requisiti sono solo per le porte di destinazione, i requisiti audio/video sono i seguenti:
+Diversi firewall e criteri per l'amministrazione del firewall possono richiedere la configurazione delle sole regole di destinazione oppure richiedono la configurazione di origine e di destinazione. Se i requisiti sono solo per le porte di destinazione, i requisiti audio/video sono i seguenti:
 
 
 <table>
@@ -90,37 +90,37 @@ I diversi firewall e criteri per l'amministrazione del firewall possono richiede
 </colgroup>
 <thead>
 <tr class="header">
-<th>IP di origine</th>
-<th>IP di destinazione</th>
+<th>IP origine</th>
+<th>IP destinazione</th>
 <th>Porta di destinazione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Interfaccia A/V Edge service</p></td>
+<td><p>Interfaccia del servizio A/V Edge</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>TCP 443</p></td>
 </tr>
 <tr class="even">
-<td><p>Interfaccia A/V Edge service</p></td>
+<td><p>Interfaccia del servizio A/V Edge</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>UDP 3478</p></td>
 </tr>
 <tr class="odd">
 <td><p>Qualsiasi</p></td>
-<td><p>Interfaccia A/V Edge service</p></td>
+<td><p>Interfaccia del servizio A/V Edge</p></td>
 <td><p>TCP 443</p></td>
 </tr>
 <tr class="even">
 <td><p>Qualsiasi</p></td>
-<td><p>Interfaccia A/V Edge service</p></td>
+<td><p>Interfaccia del servizio A/V Edge</p></td>
 <td><p>UDP 3478</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Se i criteri richiedono definizioni di regole firewall in ingresso e in uscita, i requisiti audio/video sono i seguenti:
+Se i criteri richiedono le definizioni delle regole del firewall in ingresso e in uscita, i requisiti audio/video sono i seguenti:
 
 
 <table>
@@ -132,34 +132,34 @@ Se i criteri richiedono definizioni di regole firewall in ingresso e in uscita, 
 </colgroup>
 <thead>
 <tr class="header">
-<th>IP di origine</th>
-<th>IP di destinazione</th>
+<th>IP origine</th>
+<th>IP destinazione</th>
 <th>Porta di origine</th>
 <th>Porta di destinazione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Interfaccia A/V Edge service</p></td>
+<td><p>Interfaccia del servizio A/V Edge</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>TCP 50000-59.999</p></td>
 <td><p>TCP 443</p></td>
 </tr>
 <tr class="even">
-<td><p>Interfaccia A/V Edge service</p></td>
+<td><p>Interfaccia del servizio A/V Edge</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>UDP 3478</p></td>
 <td><p>UDP 3478</p></td>
 </tr>
 <tr class="odd">
 <td><p>Qualsiasi</p></td>
-<td><p>Interfaccia A/V Edge service</p></td>
+<td><p>Interfaccia del servizio A/V Edge</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>TCP 443</p></td>
 </tr>
 <tr class="even">
 <td><p>Qualsiasi</p></td>
-<td><p>Interfaccia A/V Edge service</p></td>
+<td><p>Interfaccia del servizio A/V Edge</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>UDP 3478</p></td>
 </tr>
@@ -183,31 +183,31 @@ Se i criteri richiedono definizioni di regole firewall in ingresso e in uscita, 
 
 ## <a name="nat-requirements-for-the-edge-service"></a>Requisiti NAT per il servizio Edge
 
-I requisiti NAT seguenti si applicano se si sceglie di configurare indirizzi IP privati non instradabili per il servizio Edge:
+Se si sceglie di configurare gli indirizzi IP privati non instradabili per il servizio Edge, si applicano i requisiti NAT seguenti:
 
-  - NAT può essere usato solo con il bilanciamento del carico DNS. NAT non è supportato con una topologia di Edge di bilanciamento del carico hardware (HLB).
+  - NAT può essere utilizzato solo con il bilanciamento del carico DNS. NAT non è supportato con una topologia Edge di bilanciamento del carico hardware.
 
-  - NAT può essere usato solo nell'interfaccia esterna di Edge. NAT non è supportato nell'interfaccia Edge interna.
+  - NAT può essere utilizzato solo nell'interfaccia perimetrale esterna. NAT non è supportato per l'interfaccia perimetrale interna.
 
-  - NAT deve essere simmetrico per il traffico in entrata e in uscita.
+  - NAT deve essere simmetrico per il traffico in ingresso e in uscita.
     
-  - Per il traffico da Internet, NAT deve cambiare l'indirizzo IP di destinazione dall'indirizzo IP pubblico abilitato per NAT del servizio a/V Edge all'indirizzo IP esterno. L'indirizzo IP di origine deve rimanere intatto, in modo che il servizio A/V Edge sia in grado di trovare il percorso multimediale ottimale.
+  - Per il traffico proveniente da Internet, NAT deve modificare l'indirizzo IP di destinazione dall'indirizzo IP pubblico abilitato NAT del servizio a/V Edge all'indirizzo IP esterno. L'indirizzo IP di origine deve rimanere intatto, in modo che il servizio A/V Edge possa trovare il percorso multimediale ottimale.
   
-  Ad esempio, nella direzione in entrata della figura seguente l'indirizzo IP pubblico 131.107.155.30 è stato modificato in 10.45.16.10 indirizzo IP (privato) esterno. L'indirizzo IP di origine rimane invariato.
+  Ad esempio, nella direzione in ingresso nella figura seguente, l'indirizzo IP pubblico 131.107.155.30 è stato modificato nell'indirizzo IP esterno (privato) 10.45.16.10. L'indirizzo IP di origine è rimasto invariato.
   
-  - Per il traffico dal servizio a/V Edge a Internet, NAT deve modificare l'indirizzo IP di origine dall'indirizzo IP esterno dell'a/V Edge service all'indirizzo IP pubblico abilitato per NAT.
+  - Per il traffico proveniente dal servizio a/V Edge a Internet, NAT deve modificare l'indirizzo IP di origine dall'indirizzo IP esterno del servizio a/V Edge all'indirizzo IP pubblico abilitato per NAT.
 
 Ad esempio, nella direzione in uscita della figura seguente, l'indirizzo IP esterno (privato) 10.45.16.10 è stato modificato nell'indirizzo IP pubblico 131.107.155.30.
 
-**La figura seguente mostra il modo in cui NAT cambia l'indirizzo IP di destinazione per il traffico in entrata e l'indirizzo IP di origine per il traffico in uscita.**
+**Nella figura seguente viene illustrato il modo in cui NAT cambia l'indirizzo IP di destinazione per il traffico in ingresso e l'indirizzo IP di origine per il traffico in uscita.**
 
-![Modifica degli indirizzi IP di origine/destinazione](images/Gg425882.0fee7ec5-4cb8-4aff-9164-e7fbab73336d(OCS.15).jpg "Modifica degli indirizzi IP di origine/destinazione")
+![Modifica degli indirizzi IP di destinazione/origine](images/Gg425882.0fee7ec5-4cb8-4aff-9164-e7fbab73336d(OCS.15).jpg "Modifica degli indirizzi IP di destinazione/origine")
 
-I punti chiave sono:
+I punti principali sono i seguenti:
 
-  - Traffico in ingresso al server che esegue il servizio A/V Edge, l'indirizzo IP di origine non cambia, ma l'indirizzo IP di destinazione cambia da 131.107.155.30 all'indirizzo IP tradotto di 10.45.16.10.
+  - Traffico in ingresso al server che esegue il servizio A/V Edge, l'indirizzo IP di origine non cambia ma l'indirizzo IP di destinazione cambia da 131.107.155.30 all'indirizzo IP convertito di 10.45.16.10.
 
-  - Traffico in uscita dal server che riporta il servizio a/V Edge alla workstation, l'indirizzo IP di origine viene modificato dall'indirizzo IP pubblico del server all'indirizzo IP pubblico del server in cui è in uso il servizio A/V Edge. L'IP di destinazione rimane l'indirizzo IP pubblico della workstation. Dopo che il pacchetto ha lasciato il primo dispositivo NAT in uscita, la regola sul dispositivo NAT cambia l'indirizzo IP di origine del server che gestisce l'indirizzo IP dell'interfaccia esterna del servizio A/V (10.45.16.10) con l'indirizzo IP pubblico (131.107.155.30).
+  - Il traffico in uscita dal server che esegue il servizio A/V Edge torna alla workstation, l'indirizzo IP di origine cambia dall'indirizzo IP pubblico del server all'indirizzo IP pubblico del server che esegue il servizio A/V Edge. L'IP di destinazione rimane l'indirizzo IP pubblico della workstation. Dopo che il pacchetto ha lasciato il primo dispositivo NAT in uscita, la regola sul dispositivo NAT cambia l'indirizzo IP di origine del server che esegue l'indirizzo IP dell'interfaccia esterna del servizio A/V Edge (10.45.16.10) al relativo indirizzo IP pubblico (131.107.155.30).
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Abilitare i criteri del server Chat persistente'
+title: 'Lync Server 2013: abilitare i criteri del server Chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184718
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 27d87277c813c24ae36de14430bc711d991d7181
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f1f98275ee911d1abecbc60907653ad8de0a4222
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735986"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046699"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,29 +35,29 @@ ms.locfileid: "41735986"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-Nel pannello di controllo di Lync Server 2013 è possibile usare la pagina dei **criteri di chat persistente** del gruppo di **chat persistente** per gestire i criteri a livello globale, di pool, di sito o utente, tra cui la configurazione dei criteri globali predefiniti e la creazione di uno o più criteri aggiuntivi per l'utente e il sito per la distribuzione. Se un utente è abilitato per i criteri per il server di chat persistente, l'ambiente del server di chat persistente viene visualizzato nel client Lync 2013.
-
-<div>
-
-
-> [!NOTE]  
-> Nella topologia i criteri del sito del server di chat persistenti si applicano globalmente, per il pool di utenti o per il sito per utente o per utente.
-
-
-
-</div>
-
-Il criterio globale viene creato automaticamente quando si distribuisce il server di chat persistente e può essere configurato, ma non eliminato. Poiché il criterio globale si applica a tutti gli utenti, non è necessario configurarlo per utente.
-
-È possibile creare e configurare più criteri per il sito e gli utenti che, insieme al criterio globale, consentono agli utenti di usare il server di chat persistente. I criteri per i server di chat persistenti per pool e siti eseguono l'override del criterio server globale di chat persistente, ma solo per gli utenti del sito. I criteri utente hanno la priorità sia sul criterio globale che sui criteri pool e sito per gli utenti a cui viene assegnato il criterio utente.
+Nel pannello di controllo di Lync Server 2013, è possibile utilizzare la pagina **criteri di chat persistente** del gruppo di **chat persistente** per gestire i criteri a livello globale, di pool, di sito o di utente, inclusa la configurazione dei criteri globali predefiniti e la creazione di uno o più criteri di sito e utente aggiuntivi per la distribuzione. Se un utente è abilitato per il server Chat persistente in base ai criteri, l'ambiente del server Chat persistente viene visualizzato nel client Lync 2013.
 
 <div>
 
 
 > [!NOTE]  
-> Per configurare e usare il server di chat persistente, è necessario prima di tutto usare generatore di topologia per aggiungere il supporto del server di chat persistente alla topologia e quindi pubblicare la topologia. Per informazioni dettagliate, vedere <A href="lync-server-2013-adding-persistent-chat-server-to-your-deployment.md">aggiunta di un server di chat persistente alla distribuzione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.
+> Nella topologia, i criteri sito del server Chat persistente si applicano a livello globale, per pool di utenti o per sito utente o per utente.
+
+
+
+</div>
+
+Il criterio globale viene creato automaticamente quando si distribuisce il server Chat persistente ed è possibile configurarlo, ma non eliminarlo. Poiché il criterio globale si applica a tutti gli utenti, non è necessario configurarlo per utente.
+
+È possibile creare e configurare più criteri di sito e utente che, insieme ai criteri globali, consentono agli utenti di Persistent Chat Server. I criteri del server Chat persistente per i pool e i siti eseguono l'override del criterio del server Chat persistente globale, ma solo per gli utenti del sito. I criteri utente hanno la priorità sia sul criterio globale che sui criteri pool e sito per gli utenti a cui viene assegnato il criterio utente.
+
+<div>
+
+
+> [!NOTE]  
+> Per configurare e utilizzare il server Chat persistente, è necessario innanzitutto utilizzare Generatore di topologie per aggiungere il supporto del server Chat persistente alla topologia e quindi pubblicare la topologia. Per ulteriori informazioni, vedere <A href="lync-server-2013-adding-persistent-chat-server-to-your-deployment.md">aggiunta del server Chat persistente alla distribuzione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.
 
 
 
@@ -65,15 +65,15 @@ Il criterio globale viene creato automaticamente quando si distribuisce il serve
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Configurare i criteri globali per Chat persistente in Lync Server 2013](lync-server-2013-configure-the-global-policy-for-persistent-chat.md)
+  - [Configurare il criterio globale per la chat persistente in Lync Server 2013](lync-server-2013-configure-the-global-policy-for-persistent-chat.md)
 
   - [Creare criteri sito per chat persistente in Lync Server 2013](lync-server-2013-create-a-site-policy-for-persistent-chat.md)
 
-  - [Creare criteri utente per Chat persistente in Lync Server 2013](lync-server-2013-create-a-user-policy-for-persistent-chat.md)
+  - [Creare un criterio utente per la chat persistente in Lync Server 2013](lync-server-2013-create-a-user-policy-for-persistent-chat.md)
 
-  - [Applicare i criteri di Chat persistente a un utente o un gruppo di utenti in Lync Server 2013](lync-server-2013-apply-a-persistent-chat-policy-to-a-user-or-user-group.md)
+  - [Applicare un criterio di chat persistente a un utente o a un gruppo di utenti in Lync Server 2013](lync-server-2013-apply-a-persistent-chat-policy-to-a-user-or-user-group.md)
 
 </div>
 

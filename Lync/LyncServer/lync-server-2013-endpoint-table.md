@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella Endpoint'
+title: 'Lync Server 2013: tabella endpoint'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184098
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 11da225da1a8120f5de7ac21b3beb318326601f9
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 201e2ae3b44f59f0edb128f58af6c18e18e51931
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735586"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042233"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="endpoint-table-in-lync-server-2013"></a>Tabella Endpoint in Lync Server 2013
+# <a name="endpoint-table-in-lync-server-2013"></a>Tabella endpoint in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41735586"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-La tabella di endpoint è una tabella di supporto in cui vengono archiviate informazioni sugli endpoint che hanno partecipato a sessioni registrate nel database. Ogni record nella tabella rappresenta un endpoint.
+La tabella endpoint è una tabella di supporto in cui vengono archiviate informazioni sugli endpoint che hanno partecipato a sessioni registrate nel database. Ogni record nella tabella rappresenta un endpoint.
 
 
 <table>
@@ -60,12 +60,12 @@ La tabella di endpoint è una tabella di supporto in cui vengono archiviate info
 <td><p><strong>EndpointKey</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>Numero univoco che identifica questo endpoint.</p></td>
+<td><p>Numero univoco che identifica l'endpoint.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Nome</strong></p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Univoci</p></td>
+<td><p>Univoco</p></td>
 <td><p>Nome dell'endpoint.</p></td>
 </tr>
 <tr class="odd">
@@ -96,13 +96,13 @@ La tabella di endpoint è una tabella di supporto in cui vengono archiviate info
 <td><p><strong>VirtualizationFlag</strong></p></td>
 <td><p>tinyint</p></td>
 <td></td>
-<td><p>Flag di bit che indica se il sistema è in uso in un ambiente virtualizzato:</p>
+<td><p>Flag di bit che indica se il sistema è in esecuzione in un ambiente virtualizzato:</p>
 <ul>
-<li><p>0x0000-nessuno</p></li>
-<li><p>0x0001-HyperV</p></li>
-<li><p>0x0002-VMWare</p></li>
-<li><p>0x0004-Virtual PC</p></li>
-<li><p>0x0008-Xen PC</p></li>
+<li><p>0x0000-None</p></li>
+<li><p>0x0001 – HyperV</p></li>
+<li><p>0x0002 – VMWare</p></li>
+<li><p>0x0004 – Virtual PC</p></li>
+<li><p>0x0008 – Xen PC</p></li>
 </ul></td>
 </tr>
 </tbody>

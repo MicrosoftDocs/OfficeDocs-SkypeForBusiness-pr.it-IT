@@ -12,16 +12,16 @@ ms:contentKeyID: 48183577
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ba6b5041453b0965fafc12ada2be62ec42316f89
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ab96d6cd090ebaaa9e33ddf1672ab704ee371f8b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731186"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046149"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731186"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-25_
+_**Ultimo argomento modificato:** 2012-06-25_
 
-tblRoleType è una tabella di ricerca statica con i tipi di ruolo e i set di autorizzazioni associati.
+tblRoleType è una tabella di ricerca statica con i tipi di ruoli e i relativi set di autorizzazioni associati.
 
 ### <a name="columns"></a>Colonne
 
@@ -58,32 +58,32 @@ tblRoleType è una tabella di ricerca statica con i tipi di ruolo e i set di aut
 <tr class="odd">
 <td><p>rtypeID</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID tipo di ruolo.</p></td>
+<td><p>ID del tipo di ruolo.</p></td>
 </tr>
 <tr class="even">
 <td><p>rtypeDesc</p></td>
 <td><p>nvarchar (256), not null</p></td>
-<td><p>Descrizione del tipo di ruolo. Esistono quattro ruoli disponibili:</p>
+<td><p>Descrizione del tipo di ruolo. Sono disponibili quattro ruoli:</p>
 <ul>
-<li><p>Membro: membro della chat room</p></li>
-<li><p>Manager: gestione chat room</p></li>
-<li><p>Voiced: relatore per una chat room dell'Auditorium</p></li>
-<li><p>Creatore: può creare chat room</p></li>
+<li><p>Member: membro della chat.</p></li>
+<li><p>Manager: responsabile della chat.</p></li>
+<li><p>Voiced: relatore per una chat. auditorium</p></li>
+<li><p>Creator: creazione di chat room</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>rtypeAllowedPermSet</p></td>
-<td><p>bigint e non null</p></td>
-<td><p>Set di autorizzazioni per il ruolo. I bit usati sono:</p>
+<td><p>bigint, not null</p></td>
+<td><p>Set di autorizzazioni per il ruolo. I bit utilizzati sono:</p>
 <ul>
 <li><p>2: true se il ruolo può gestire i nodi.</p></li>
 <li><p>4: true se il ruolo può creare nodi figlio.</p></li>
-<li><p>7: vero se il ruolo può partecipare a una chat room (o chat room per bambini di una categoria).</p></li>
-<li><p>8: true se il ruolo può essere chattato in una chat room o in chat per bambini di una categoria.</p></li>
-<li><p>10: true se il ruolo può leggere la cronologia chat anche quando non è stato aggiunto a una chat room.</p></li>
-<li><p>11: vero se il ruolo può vedere la chat room. (Questa operazione viene ulteriormente affinata da fattori come l'ambito e la visibilità).</p></li>
-<li><p>12: vero se il ruolo può chattare in una chat room di un auditorium.</p></li>
-<li><p>13: true se il ruolo può ignorare le regole di visibilità durante la visualizzazione dei nodi.</p></li>
+<li><p>7: true se il ruolo può partecipare a una chat (o a chat figlio di una categoria).</p></li>
+<li><p>8: true se il ruolo può eseguire chat in una chat (o in chat figlio di una categoria).</p></li>
+<li><p>10: true se il ruolo può leggere la cronologia delle chat anche se non partecipa a una chat.</p></li>
+<li><p>11: true se il ruolo può visualizzare la chat (ulteriormente definito da fattori come l'ambito e la visibilità).</p></li>
+<li><p>12: true se il ruolo può eseguire chat in una chat auditorium.</p></li>
+<li><p>13: true se il ruolo può ignorare le regole di visibilità quando visualizza i nodi.</p></li>
 </ul></td>
 </tr>
 </tbody>

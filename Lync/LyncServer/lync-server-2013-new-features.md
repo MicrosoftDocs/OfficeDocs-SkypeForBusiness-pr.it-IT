@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Nuove funzionalità'
+title: Lync Server 2013 nuove funzionalità
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183722
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ed5fa866c178a6e859cfba5eff92e2f6ba13b23a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2cbcb6a3945fbe367f9f4ef706287399631c95c9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743236"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048477"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41743236"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-04_
+_**Ultimo argomento modificato:** 2012-10-04_
 
-Lync Server 2013 introduce molte nuove funzionalità, oltre a miglioramenti significativi alle funzionalità esistenti. Questa sezione offre un'introduzione di alto livello alle nuove funzionalità e ai miglioramenti apportati.
+Lync Server 2013 introduce molte nuove funzionalità, oltre a miglioramenti significativi alla funzionalità esistente. In questa sezione viene fornita un'introduzione generale a tali nuove funzionalità e miglioramenti.
 
-Le discussioni sulle nuove caratteristiche di Lync Server 2013 sono raggruppate tra gli argomenti di questa sezione.
+Le discussioni sulle nuove funzionalità di Lync Server 2013 sono raggruppate tra gli argomenti di questa sezione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Nuove funzionalità per l'amministrazione e la gestione in Lync Server 2013](lync-server-2013-new-management-and-administration-features.md)
+  - [Nuove funzionalità di gestione e amministrazione in Lync Server 2013](lync-server-2013-new-management-and-administration-features.md)
 
-  - [Modifiche della topologia in Lync Server 2013](lync-server-2013-topology-changes.md)
+  - [Modifiche alla topologia in Lync Server 2013](lync-server-2013-topology-changes.md)
 
-  - [Nuove funzionalità per la disponibilità elevata e il ripristino di emergenza in Lync Server 2013](lync-server-2013-new-disaster-recovery-and-high-availability-features.md)
+  - [Nuove funzionalità di ripristino di emergenza e disponibilità elevata in Lync Server 2013](lync-server-2013-new-disaster-recovery-and-high-availability-features.md)
 
   - [Nuove funzionalità di virtualizzazione in Lync Server 2013](lync-server-2013-new-virtualization-features.md)
 
@@ -57,7 +57,7 @@ Le discussioni sulle nuove caratteristiche di Lync Server 2013 sono raggruppate 
 
   - [Nuove funzionalità di conferenza in Lync Server 2013](lync-server-2013-new-conferencing-features.md)
 
-  - [Nuove funzionalità per l'accesso utente esterno in Lync Server 2013](lync-server-2013-new-features-for-external-user-access.md)
+  - [Nuove funzionalità per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-new-features-for-external-user-access.md)
 
   - [Nuove funzionalità di VoIP aziendale in Lync Server 2013](lync-server-2013-new-enterprise-voice-features.md)
 

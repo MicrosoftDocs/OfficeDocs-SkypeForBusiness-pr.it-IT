@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Supporto per client e server per il routing in base alla posizione'
+title: 'Lync Server 2013: supporto per client e server per il routing in base alla posizione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51803933
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5ad7ead20eb9961180fec9204a84b3392b7fa96f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: efdb03adbdf1392e27c3107eef4aaf97f3708e66
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729856"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043838"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41729856"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-06-18_
+_**Ultimo argomento modificato:** 2013-06-18_
 
-Il routing basato sulla posizione viene applicato da Lync Server. Lync Server può identificare i siti di rete in cui gli utenti si connettono dall'interno della rete aziendale. Poiché gli utenti remoti si trovano all'esterno della rete aziendale, la loro posizione è considerata sconosciuta.
+Il routing in base alla posizione viene applicato da Lync Server. Lync Server è in grado di identificare i siti di rete in cui gli utenti si connettono dall'interno della rete aziendale. Poiché gli utenti remoti si trovano all'esterno della rete aziendale, la loro posizione è considerata sconosciuta.
 
 <div>
 
 ## <a name="lync-server-support"></a>Supporto di Lync Server
 
-Il routing basato sulla posizione richiede che Lync Server 2013 CU1 sia distribuito in tutti i pool Front end e nei server Standard Edition in una determinata topologia. Se Lync Server 2013 CU1 non è installato in alcuni componenti Lync della topologia, le restrizioni di routing basate sulla posizione non possono essere applicate completamente.
+Il routing in base alla posizione richiede che Lync Server 2013 CU1 sia distribuito su tutti i pool Front end e i server Standard Edition in una determinata topologia. Se Lync Server 2013 CU1 non è installato in alcuni componenti di Lync nella topologia, non è possibile applicare completamente le restrizioni relative al routing basato sulla posizione.
 
-La tabella seguente identifica la combinazione di ruoli server e versioni supportate per il routing basato sulla posizione.
+La tabella seguente identifica la combinazione di ruoli del server e versioni supportate per il routing in base alla posizione.
 
 
 <table>
@@ -58,44 +58,44 @@ La tabella seguente identifica la combinazione di ruoli server e versioni suppor
 <tr class="header">
 <th>Versione pool</th>
 <th>Versione Mediation Server</th>
-<th>Supportati</th>
+<th>Supportato</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Aggiornamento cumulativo di Lync Server 2013 febbraio 2013</p></td>
-<td><p>Aggiornamento cumulativo di Lync Server 2013 febbraio 2013</p></td>
-<td><p>Sì</p></td>
+<td><p>Lync Server 2013 febbraio 2013 aggiornamento cumulativo</p></td>
+<td><p>Lync Server 2013 febbraio 2013 aggiornamento cumulativo</p></td>
+<td><p>sì</p></td>
 </tr>
 <tr class="even">
-<td><p>Aggiornamento cumulativo di Lync Server 2013 febbraio 2013</p></td>
+<td><p>Lync Server 2013 febbraio 2013 aggiornamento cumulativo</p></td>
 <td><p>Lync Server 2013</p></td>
-<td><p>non</p></td>
+<td><p>no</p></td>
 </tr>
 <tr class="odd">
-<td><p>Aggiornamento cumulativo di Lync Server 2013 febbraio 2013</p></td>
+<td><p>Lync Server 2013 febbraio 2013 aggiornamento cumulativo</p></td>
 <td><p>Lync Server 2010</p></td>
-<td><p>non</p></td>
+<td><p>no</p></td>
 </tr>
 <tr class="even">
-<td><p>Aggiornamento cumulativo di Lync Server 2013 febbraio 2013</p></td>
+<td><p>Lync Server 2013 febbraio 2013 aggiornamento cumulativo</p></td>
 <td><p>Office Communications Server 2007 R2</p></td>
-<td><p>non</p></td>
+<td><p>no</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lync Server 2013</p></td>
 <td><p>qualsiasi</p></td>
-<td><p>non</p></td>
+<td><p>no</p></td>
 </tr>
 <tr class="even">
 <td><p>Lync Server 2010</p></td>
 <td><p>qualsiasi</p></td>
-<td><p>non</p></td>
+<td><p>no</p></td>
 </tr>
 <tr class="odd">
 <td><p>Office Communications Server 2007 R2</p></td>
 <td><p>qualsiasi</p></td>
-<td><p>non</p></td>
+<td><p>no</p></td>
 </tr>
 </tbody>
 </table>
@@ -105,9 +105,9 @@ La tabella seguente identifica la combinazione di ruoli server e versioni suppor
 
 <div>
 
-## <a name="lync-client-support"></a>Supporto client Lync
+## <a name="lync-client-support"></a>Supporto per client Lync
 
-La tabella seguente identifica i client supportati dal routing basato sulla posizione.
+Nella tabella seguente vengono identificati i client supportati dal routing basato sulla posizione.
 
 
 <table>
@@ -119,49 +119,49 @@ La tabella seguente identifica i client supportati dal routing basato sulla posi
 <thead>
 <tr class="header">
 <th>Tipo di client</th>
-<th>Supportati</th>
+<th>Supportato</th>
 <th>Dettagli</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Lync 2013</p></td>
-<td><p>Sì</p></td>
-<td><p>Incluso l'aggiornamento cumulativo di Lync 2013 febbraio 2013</p></td>
+<td><p>sì</p></td>
+<td><p>Incluso Lync 2013 febbraio 2013 Cumulative Update</p></td>
 </tr>
 <tr class="even">
 <td><p>Lync 2010</p></td>
-<td><p>Sì</p></td>
+<td><p>sì</p></td>
 <td> </td>
 </tr>
 <tr class="odd">
 <td><p>Office Communicator 2007 R2</p></td>
-<td><p>non</p></td>
+<td><p>no</p></td>
 <td> </td>
 </tr>
 <tr class="even">
 <td><p>Lync Phone Edition</p></td>
-<td><p>Sì</p></td>
+<td><p>sì</p></td>
 <td> </td>
 </tr>
 <tr class="odd">
-<td><p>Assistente di Lync</p></td>
-<td><p>Sì</p></td>
+<td><p>Lync Attendant</p></td>
+<td><p>sì</p></td>
 <td> </td>
 </tr>
 <tr class="even">
 <td><p>Lync per Windows 8</p></td>
-<td><p>non</p></td>
+<td><p>no</p></td>
 <td> </td>
 </tr>
 <tr class="odd">
 <td><p>Lync Mobile 2013</p></td>
-<td><p>non</p></td>
-<td><p>Il VoIP deve essere disabilitato per i client Lync Mobile 2013 se usato dagli utenti con il routing basato sulla posizione abilitato.</p></td>
+<td><p>no</p></td>
+<td><p>Il VoIP deve essere disabilitato per i client Lync Mobile 2013 se utilizzato dagli utenti con il routing basato sulla posizione abilitato.</p></td>
 </tr>
 <tr class="even">
 <td><p>Lync Mobile 2010</p></td>
-<td><p>Sì</p></td>
+<td><p>sì</p></td>
 <td> </td>
 </tr>
 </tbody>
@@ -173,7 +173,7 @@ La tabella seguente identifica i client supportati dal routing basato sulla posi
 
 
 > [!NOTE]  
-> Per disabilitare il VoIP per i client di Lync Mobile 2013, assegnare un criterio di mobilità con l'impostazione, l'audio/video IP, disabilitato per tutti gli utenti abilitati per il routing basato sulla posizione. Per altre informazioni sui criteri di mobilità, vedere <A href="https://docs.microsoft.com/powershell/module/skype/New-CsMobilityPolicy">New-CsMobilityPolicy</A>.
+> Per disabilitare VoIP per i client Lync Mobile 2013, assegnare un criterio per dispositivi mobili con l'impostazione, IP audio/video, disabilitato per tutti gli utenti abilitati per il routing in base alla posizione. Per ulteriori informazioni sui criteri per dispositivi mobili, vedere <A href="https://docs.microsoft.com/powershell/module/skype/New-CsMobilityPolicy">New-CsMobilityPolicy</A>.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Autorizzazioni e prerequisiti per la configurazione di Response Group'
+title: 'Lync Server 2013: autorizzazioni e prerequisiti per la configurazione di Response Group'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183972
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bcf10a61ed5285fe5cfc907c2624a14112d96eae
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9712d196f485c51d720245903739387befb49dd3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723636"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051822"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41723636"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-05_
+_**Ultimo argomento modificato:** 2012-10-05_
 
-Response Group è una caratteristica di gestione delle chiamate vocali aziendali. Questo argomento descrive le informazioni necessarie per configurare Response Group e le credenziali amministrative e le autorizzazioni necessarie per eseguire le attività di configurazione.
+Response Group è una funzionalità di gestione della chiamate VoIP aziendale. In questo argomento vengono indicati i componenti di cui è necessario disporre prima di poter configurare Response Group e le credenziali e le autorizzazioni amministrative richieste per eseguire le attività di configurazione.
 
-Questa sezione presuppone che sia stata letta la documentazione relativa alla pianificazione relativa al gruppo di risposte. Per informazioni dettagliate, vedere [pianificazione delle funzionalità di gestione delle chiamate in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md) nella documentazione relativa alla pianificazione.
+In questa sezione si presuppone la lettura della documentazione relativa alla pianificazione correlata a Response Group. Per informazioni dettagliate, vedere [Planning for Call Management Features in Lync Server 2013](lync-server-2013-planning-for-call-management-features.md) nella documentazione relativa alla pianificazione.
 
 <div>
 
 ## <a name="configuration-tools-and-administrative-roles"></a>Strumenti di configurazione e ruoli amministrativi
 
-È possibile usare gli strumenti di amministrazione seguenti per configurare Response Group:
+È possibile utilizzare gli strumenti di amministrazione seguenti per configurare Response Group:
 
   - Pannello di controllo di Lync Server
 
@@ -53,7 +53,7 @@ Questa sezione presuppone che sia stata letta la documentazione relativa alla pi
 
   - Lync Server Management Shell
 
-Per configurare i Response Groups, è necessario essere membri di almeno uno dei ruoli amministrativi seguenti:
+Per configurare i Response Group, è necessario essere membri di almeno uno dei ruoli amministrativi seguenti:
 
 
 <table style="width:100%;">
@@ -68,13 +68,13 @@ Per configurare i Response Groups, è necessario essere membri di almeno uno dei
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>Gruppo di sicurezza di Active Directory (1)</strong></p></td>
-<td><p>Creare un flusso di lavoro</p></td>
-<td><p>Assegna Manager</p></td>
-<td><p>Creare agenti/Assign, code</p></td>
-<td><p>Creare/gestire le festività e le ore lavorative</p></td>
+<td><p><strong>Gruppo di sicurezza Active Directory (1)</strong></p></td>
+<td><p>Creare flusso di lavoro</p></td>
+<td><p>Assegnare responsabile</p></td>
+<td><p>Creare/assegnare agenti, code</p></td>
+<td><p>Creare/gestire festività e orari di ufficio</p></td>
 <td><p>Attivare/disattivare il flusso di lavoro</p></td>
-<td><p>Configurare il flusso di lavoro (IVR o gruppo di caccia)</p></td>
+<td><p>Configurare il flusso di lavoro (IVR o gruppo di risposta)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CsResponseGroupAdministrator</strong></p></td>
@@ -138,7 +138,7 @@ Per configurare i Response Groups, è necessario essere membri di almeno uno dei
 
 
 > [!NOTE]  
-> <STRONG>(1)</STRONG> un oggetto utente di servizi di dominio Active Directory deve essere un membro del gruppo di sicurezza Active Directory specificato elencato. Un amministratore o un altro membro del gruppo di Active Directory delegato con le autorizzazioni appropriate per aggiungere utenti a un gruppo di sicurezza, ad esempio Administrator, account Operators, deve aggiungere un oggetto utente al gruppo di sicurezza o al gruppo di protezione elencato per consentire all'utente di eseguire le funzioni elencate. <STRONG>(2)</STRONG> solo per i flussi di lavoro assegnati da CsResponseGroupAdministrator a CsResponseGroupManager. <STRONG>(3)</STRONG> un responsabile del gruppo di risposte può assegnare un altro membro di CsResponseGroupManager a un flusso di lavoro già gestito da gestione corrente. <STRONG>(4)</STRONG> CsViewOnlyAdministrator può eseguire solo il verbo "ottenere" i cmdlet di Lync Server Management Shell.
+> <STRONG>(1)</STRONG> un oggetto utente di servizi di dominio Active Directory deve essere membro del gruppo di sicurezza di Active Directory specificato elencato. Un amministratore o un altro membro del gruppo di Active Directory delegato con le autorizzazioni appropriate per aggiungere gli utenti a un gruppo di sicurezza (ad esempio, Administrator, account Operators) deve aggiungere un oggetto utente al gruppo o al gruppo di sicurezza elencato affinché l'utente possa eseguire le funzioni elencate. <STRONG>(2)</STRONG> solo per i flussi di lavoro assegnati da CsResponseGroupAdministrator a CsResponseGroupManager. <STRONG>(3)</STRONG> un responsabile di Response Group può assegnare un altro membro di CsResponseGroupManager a un flusso di lavoro che il Manager corrente gestisce già. <STRONG>(4)</STRONG> CsViewOnlyAdministrator è in grado di eseguire solo i cmdlet "Get" di Lync Server Management Shell.
 
 
 
@@ -148,35 +148,35 @@ Per configurare i Response Groups, è necessario essere membri di almeno uno dei
 
 <div>
 
-## <a name="response-group-configuration-prerequisites"></a>Prerequisiti per la configurazione di Response Group
+## <a name="response-group-configuration-prerequisites"></a>Prerequisiti di configurazione di Response Group
 
-Response Group richiede i componenti seguenti:
+Per Response Group sono necessari i componenti seguenti:
 
   - Servizio applicazione
 
-  - Response Group Application
+  - Applicazione Response Group
 
   - Language Pack
 
-  - Archivio file (per contenere i file audio)
+  - Archivio file (per gestire i file audio)
 
   - Servizi Web (include lo strumento di configurazione di Response Group e la console di accesso e disconnessione degli agenti)
 
 Tutti questi componenti vengono installati per impostazione predefinita quando si distribuisce VoIP aziendale.
 
-Potrebbe essere necessario eseguire le attività seguenti prima di configurare Response Group:
+Prima di configurare Response Group potrebbe essere necessario eseguire le attività seguenti:
 
-  - Consentire agli utenti di Lync Server 2013 e Enterprise Voice.
+  - Abilitare gli utenti per Lync Server 2013 e VoIP aziendale.
 
-  - Modificare un file di configurazione per essere conforme alle norme FIPS (Federal Information Processing Standards).
+  - Modificare un file di configurazione in modo che sia conforme agli standard FIPS (Federal Information Processing Standard).
 
-  - Modificare le regole di confronto del database per supportare i caratteri Yi, Meng e Zang per i nomi delle code e i nomi dei gruppi di agenti.
+  - Modificare le regole di confronto del database per supportare caratteri Yi, Meng e Zang per i nomi di code e i nomi dei gruppi di agenti.
 
 <div>
 
 ## <a name="enabling-users"></a>Abilitazione degli utenti
 
-Il primo passaggio della configurazione di Response Group consiste nel creare gruppi di agenti. Prima di poter creare un gruppo di agenti, è necessario abilitare gli utenti che saranno agenti per Response Group per Lync Server 2013 e Enterprise Voice. L'abilitazione degli utenti per Lync Server 2013 è in genere un passaggio nel server Enterprise Edition o nella distribuzione di server Standard Edition. Per informazioni dettagliate sull'abilitazione degli utenti per Lync Server 2013, vedere [disabilitare o riattivare l'account utente per Lync server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md). L'abilitazione degli utenti per VoIP aziendale è in genere un passaggio nella distribuzione di VoIP aziendale. Per informazioni dettagliate, vedere [abilitare gli utenti per VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md).
+Il primo passaggio per la configurazione di Response Group consiste nella creazione di gruppi di agenti. Prima di poter creare un gruppo di agenti, è necessario abilitare gli utenti che saranno agenti di Response Group per Lync Server 2013 e VoIP aziendale. L'abilitazione degli utenti per Lync Server 2013 è in genere un passaggio del server Enterprise Edition o della distribuzione del server Standard Edition. Per informazioni dettagliate sull'abilitazione degli utenti per Lync Server 2013, vedere [disabilitare o riabilitare l'account utente per Lync server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md). L'abilitazione degli utenti per VoIP aziendale è in genere un passaggio della distribuzione di VoIP aziendale. Per ulteriori informazioni, vedere [abilitare gli utenti per VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md).
 
 </div>
 
@@ -184,13 +184,13 @@ Il primo passaggio della configurazione di Response Group consiste nel creare gr
 
 ## <a name="complying-with-fips-requirements"></a>Conformità ai requisiti FIPS
 
-Questa sezione si applica solo se l'organizzazione deve essere conforme alle norme FIPS (Federal Information Processing Standards).
+Fare riferimento a questa sezione solo se l'organizzazione deve essere conforme agli standard FIPS (Federal Information Processing Standards).
 
-Per essere conformi con FIPS, è necessario modificare il file Web. config a livello di applicazione per usare un algoritmo di crittografia diverso dopo l'installazione dei servizi Web. Devi specificare che ASP.NET usa l'algoritmo 3DES (Triple Data Encryption Standard) per elaborare i dati sullo stato di visualizzazione. Per l'applicazione Response Group, questo requisito si applica allo strumento di configurazione dei gruppi di risposta e alla console di accesso e disconnessione dell'agente. Per informazioni dettagliate su questo requisito, vedere l'articolo 911722 della Microsoft Knowledge Base "potrebbe essere visualizzato un messaggio di errore quando si accede alle pagine Web di ASP.NET che hanno ViewState abilitato dopo l'aggiornamento da ASP.NET 1,1 a ASP.NET [http://go.microsoft.com/fwlink/p/?linkId=196183](http://go.microsoft.com/fwlink/p/?linkid=196183)2,0".
+Per essere conformi a FIPS, è necessario modificare il file Web.config a livello dell'applicazione in modo da usare un algoritmo di crittografia diverso dopo aver installato Servizi Web. È necessario specificare l'uso dell'algoritmo 3DES (Triple Data Encryption Standard) per ASP.NET per l'elaborazione dei dati sugli stati di visualizzazione. Per l'applicazione Response Group, questo requisito si applica allo strumento di configurazione di Response Group e alla console di accesso e disconnessione dell'agente. Per informazioni dettagliate su questo requisito, vedere l'articolo 911722 della Microsoft Knowledge Base "è possibile che venga visualizzato un messaggio di errore quando si accede alle pagine Web di ASP.NET che dispongono di ViewState abilitato dopo l'aggiornamento da ASP.NET [http://go.microsoft.com/fwlink/p/?linkId=196183](http://go.microsoft.com/fwlink/p/?linkid=196183)1,1 a ASP.NET 2,0" all'indirizzo.
 
-Per modificare il file Web. config, eseguire le operazioni seguenti:
+Per modificare il file Web.config, eseguire le operazioni seguenti:
 
-1.  In un editor di testo, ad esempio Blocco note, aprire il file Web. config a livello di applicazione.
+1.  In un editor di testo come Blocco note aprire il file Web.config a livello dell'applicazione.
 
 2.  Nel file Web. config individuare la `<system.web>` sezione.
 
@@ -198,7 +198,7 @@ Per modificare il file Web. config, eseguire le operazioni seguenti:
     
         <machineKey validationKey="AutoGenerate,IsolateApps" decryptionKey="AutoGenerate,IsolateApps" validation="3DES" decryption="3DES"/>
 
-4.  Salvare il file Web. config.
+4.  Salvare il file Web.config.
 
 5.  Riavviare il servizio Internet Information Services (IIS) eseguendo il comando seguente al prompt dei comandi:
     
@@ -210,19 +210,19 @@ Per modificare il file Web. config, eseguire le operazioni seguenti:
 
 ## <a name="supporting-yi-meng-and-zang-characters"></a>Supporto di caratteri Yi, Meng e Zang
 
-Questa sezione si applica solo se l'organizzazione deve supportare i caratteri Yi, Meng o Zang.
+Fare riferimento a questa sezione solo se l'organizzazione richiede il supporto di caratteri Yi, Meng o Zang.
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni sui caratteri di Yi, Meng e Zang e sul motivo per cui potrebbero essere importanti per la distribuzione, vedere le informazioni sui set <A href="http://go.microsoft.com/fwlink/p/?linkid=240223">http://go.microsoft.com/fwlink/p/?linkId=240223</A>di caratteri GB18030.
+> Per informazioni su ciò che sono i caratteri Yi, Meng e Zang e il motivo per cui possono essere importanti per la distribuzione, vedere le informazioni sui set <A href="http://go.microsoft.com/fwlink/p/?linkid=240223">http://go.microsoft.com/fwlink/p/?linkId=240223</A>di caratteri di GB18030.
 
 
 
 </div>
 
-Per supportare i caratteri Yi, Meng o Zang, è necessario modificare le regole di confronto per il database rgsconfig. Modificare le regole di confronto della colonna **Name** nelle tabelle seguenti in ogni database di rgsconfig:
+Per il supporto di caratteri Yi, Meng o Zang è necessario modificare le regole di confronto del database Rgsconfig. Modificare le regole di confronto della colonna **Name** nelle tabelle seguenti di ogni database Rgsconfig:
 
   - dbo. AgentGroups
 
@@ -234,17 +234,17 @@ Per supportare i caratteri Yi, Meng o Zang, è necessario modificare le regole d
 
   - dbo. Flussi
 
-Per SQL Server 2008 R2 e SQL Server 2012, usare le regole\_di\_confronto in latino generale 100 (accento sensibile). Se si usano queste regole di confronto, tutti i nomi degli oggetti non saranno distinzione tra maiuscole e minuscole.
+Per SQL Server 2008 R2 e SQL Server 2012, utilizzare le regole\_di\_confronto per la lingua latina generale 100 (accento sensibile). Se si utilizzano queste regole di confronto, la distinzione tra maiuscole e minuscole non viene applicata ad alcun nome di oggetto.
 
-È possibile modificare le regole di confronto tramite Microsoft SQL Server Management Studio. Per informazioni dettagliate sull'uso di questo strumento, vedere "utilizzo di SQL Server Management [http://go.microsoft.com/fwlink/p/?linkId=196184](http://go.microsoft.com/fwlink/p/?linkid=196184)studio" all'indirizzo. Seguire questa procedura per modificare le regole di confronto:
+È possibile modificare le regole di confronto utilizzando Microsoft SQL Server Management Studio. Per informazioni dettagliate sull'utilizzo di questo strumento, vedere "using SQL Server Management Studio [http://go.microsoft.com/fwlink/p/?linkId=196184](http://go.microsoft.com/fwlink/p/?linkid=196184)" all'indirizzo. Per modificare le regole di confronto, eseguire la procedura seguente:
 
-1.  Verificare che SQL Server Management Studio sia configurato in modo da consentire la ricreazione delle modifiche che richiedono le tabelle. Per informazioni dettagliate, vedere la finestra di dialogo "Salva (non consentita)" in [http://go.microsoft.com/fwlink/p/?linkId=196186](http://go.microsoft.com/fwlink/p/?linkid=196186). Per informazioni dettagliate sull'impostazione di regole di confronto delle colonne, vedere "procedura: impostare le regole di confronto delle colonne (Visual [http://go.microsoft.com/fwlink/p/?linkId=196185](http://go.microsoft.com/fwlink/p/?linkid=196185)Database Tools)" at.
+1.  Verificare che SQL Server Management Studio sia configurato per consentire modifiche che richiedono la ricreazione di tabelle. Per informazioni dettagliate, vedere la finestra di dialogo "Salva (non consentita)" all'indirizzo [http://go.microsoft.com/fwlink/p/?linkId=196186](http://go.microsoft.com/fwlink/p/?linkid=196186). Per informazioni dettagliate sull'impostazione di una regola di confronto delle colonne, vedere "procedura: impostare le regole di confronto delle colonne ( [http://go.microsoft.com/fwlink/p/?linkId=196185](http://go.microsoft.com/fwlink/p/?linkid=196185)Visual Database Tools)" all'indirizzo.
 
-2.  Con Microsoft SQL Server Management Studio connettersi al database di rgsconfig.
+2.  Utilizzando Microsoft SQL Server Management Studio connettersi al database Rgsconfig.
 
-3.  Individuare la tabella che si vuole modificare nel database di rgsconfig, fare clic con il pulsante destro del mouse sulla tabella e scegliere **progettazione**.
+3.  Trovare la tabella che si desidera modificare nel database Rgsconfig, fare clic con il pulsante destro del mouse sulla tabella e quindi scegliere **Progetta**.
 
-4.  Modificare le regole di confronto della colonna **nome** e salvare la tabella.
+4.  Modificare le regole di confronto della colonna **Name** e salvare la tabella.
 
 </div>
 

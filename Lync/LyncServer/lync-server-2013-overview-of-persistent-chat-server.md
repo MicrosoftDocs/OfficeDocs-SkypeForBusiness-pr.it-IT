@@ -12,16 +12,16 @@ ms:contentKeyID: 48183622
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 71b856b4c5199acacd0ed7a3fdf41ed5ab92f59d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ab73f99c8b5818a68b232e2f2dd928f79d5ff094
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755480"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050918"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41755480"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-29_
+_**Ultimo argomento modificato:** 2012-10-29_
 
-Lync Server 2013, il server di chat persistente consente agli utenti di partecipare a conversazioni multiparte, basate su argomenti che persistono nel tempo. Il server di chat persistente può aiutare l'organizzazione a eseguire le operazioni seguenti:
+Lync Server 2013, il server Chat persistente consente agli utenti di partecipare a conversazioni a più parti, basate su argomenti che persistono nel tempo. Il server Chat persistente può aiutare l'organizzazione a eseguire le operazioni seguenti:
 
-  - Migliorare la comunicazione tra team geograficamente dispersivi e interfunzionali. Usando la chat persistente, i team possono condividere efficacemente informazioni, idee e decisioni tra loro. I messaggi inviati alle chat room (Forum di discussione) possono essere mantenuti (ovvero possono essere disponibili nel tempo), in modo che gli utenti provenienti da sedi e reparti diversi possano partecipare, anche quando non sono contemporaneamente online. Quando un utente si connette a una chat room, il backchat (un numero configurabile di messaggi della cronologia chat) viene caricato automaticamente nella chat room per consentire all'utente un contesto per la conversazione.
+  - Migliorare le comunicazioni tra team interfunzionali distribuiti in zone geografiche diverse. Utilizzando la chat persistente, i team possono condividere in modo efficiente informazioni, idee e decisioni tra loro. I messaggi inviati alle chat room (Forum di discussione) possono essere salvati (ovvero possono essere disponibili nel tempo), in modo che le persone provenienti da diverse località e reparti possano partecipare, anche quando non sono contemporaneamente online. Quando un utente si connette a una chat room, la chat (un numero configurabile di messaggi di cronologia chat) viene caricata automaticamente nella chat room per fornire all'utente un contesto per la conversazione.
 
-  - Migliorare la consapevolezza delle informazioni. Usando i filtri sul lato client, gli utenti possono definire condizioni, ad esempio parole chiave nel contenuto del messaggio o il valore del campo "da" in un messaggio, per ricevere una notifica quando tali condizioni vengono soddisfatte in messaggi istantanei o messaggi della chat room permanenti. In questo modo, gli utenti possono tenersi aggiornati con il contenuto che più li interessa.
+  - Migliorare la capacità di analisi delle informazioni. Utilizzando i filtri sul fianco del client, gli utenti possono definire condizioni, ad esempio parole chiave nel contenuto del messaggio o il valore del campo "da" in un messaggio, per ricevere una notifica quando tali condizioni sono soddisfatte nei messaggi istantanei o nei messaggi di chat in chat persistente. In questo modo, gli utenti possono rimanere aggiornati sul contenuto che più gli interessa.
 
-  - Migliorare la comunicazione con l'organizzazione estesa. Semplificando la collaborazione per gli argomenti a esecuzione prolungata con altri utenti dell'organizzazione e fornendo una posizione persistente per condividere informazioni, la chat persistente aiuta a migliorare la comunicazione.
+  - Migliorare le comunicazioni con l'organizzazione estesa. Semplificando la collaborazione su argomenti di lunga durata con altri utenti dell'organizzazione e fornendo un posto persistente per la condivisione delle informazioni, la chat persistente contribuisce a migliorare la comunicazione.
 
-  - Ridurre il sovraccarico di informazioni. Gli utenti possono seguire le chat room e i messaggi di maggiore interesse usando filtri lato client e possono aggiungere chat room che vogliono seguire all'elenco contatti.
+  - Ridurre il sovraccarico di informazioni. Gli utenti possono seguire le chat room e i messaggi di maggiore interesse utilizzando filtri sul fianco del client e possono aggiungere chat room che desiderano seguire nell'elenco dei contatti.
 
-  - Aumentare la dispersione di conoscenze e informazioni importanti. I documenti e i collegamenti possono essere inclusi nelle conversazioni per l'accesso da parte di tutto il team. Inviando domande a un team più ampio, gli utenti possono trarre vantaggio dalle risposte degli esperti in materia. L'integrazione con altri sistemi informativi consente di comunicare facilmente i dati dell'organizzazione a gruppi di grandi dimensioni.
+  - Migliorare la diffusione di conoscenze e informazioni importanti. È possibile includere nelle conversazioni documenti e collegamenti disponibili per tutto il team. Attraverso l'invio di domande a un team più esteso, gli utenti possono beneficiare delle risposte fornite da esperti di materie specifiche. L'integrazione con altri sistemi informativi consente di comunicare facilmente i dati dell'organizzazione a gruppi di grandi dimensioni.
 
-Per abilitare le chat room in Lync Server 2013, distribuire la chat persistente di Lync Server 2013. Per informazioni sull'abilitazione delle chat room, vedere la Guida di <http://go.microsoft.com/fwlink/p/?linkid=270945>chat persistente in. Se gli utenti sono abilitati per Lync Server e il supporto di Lync Server è distribuito, gli utenti possono installare e usare la chat persistente di Lync 2013 per consentire il supporto di chat room.
+Per abilitare le chat room in Lync Server 2013, distribuire Lync Server 2013 Persistent Chat. Per informazioni sull'abilitazione delle chat room, vedere la Guida di <http://go.microsoft.com/fwlink/p/?linkid=270945>Persistent Chat all'indirizzo. Se gli utenti sono abilitati per Lync Server e il supporto di Lync Server è distribuito, gli utenti possono installare e utilizzare Lync 2013 Persistent Chat per fornire il supporto per la chat room.
 
-Se l'organizzazione è tenuta a seguire le regole di conformità, è possibile distribuire facoltativamente il servizio di conformità della chat persistente.
+Se l'organizzazione è tenuta a seguire le normative di conformità, è possibile distribuire il servizio di conformità di Persistent Chat.
 
 </div>
 

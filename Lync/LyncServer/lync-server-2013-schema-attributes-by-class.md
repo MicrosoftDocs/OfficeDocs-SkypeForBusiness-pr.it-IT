@@ -12,16 +12,16 @@ ms:contentKeyID: 48184468
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 160a148705ececfcbe105dcbc3fca819d4790a0d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8394a1333cff66b076612ed197fa2a6a7af12ec6
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764944"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049438"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41764944"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-08-29_
+_**Ultimo argomento modificato:** 2012-08-29_
 
-Questa sezione elenca gli attributi dello schema che possono essere contenuti in ogni classe Lync Server 2013 e le classi che possono essere contenute in altre classi. Per un elenco di tutte le classi e delle relative descrizioni, vedere [classi di schema e descrizioni in Lync Server 2013](lync-server-2013-schema-classes-and-descriptions.md). Per un elenco di tutti gli attributi e delle relative descrizioni, vedere [attributi e descrizioni dello schema in Lync Server 2013](lync-server-2013-schema-attributes-and-descriptions.md).
+In questa sezione vengono elencati gli attributi dello schema che possono essere contenuti in ogni classe Lync Server 2013 e le classi che possono essere incluse in altre classi. Per un elenco di tutte le classi e le relative descrizioni, vedere [classi e descrizioni di schemi in Lync Server 2013](lync-server-2013-schema-classes-and-descriptions.md). Per un elenco di tutti gli attributi e le relative descrizioni, vedere [attributi e descrizioni dello schema in Lync Server 2013](lync-server-2013-schema-attributes-and-descriptions.md).
 
 <div>
 
@@ -81,7 +81,7 @@ Questa sezione elenca gli attributi dello schema che possono essere contenuti in
 <p>msRTCSIP-tipooggettoorigine</p>
 <p>msRTCSIP-TargetHomeServer</p>
 <p>msRTCSIP-TargetUserPolicies</p>
-<p>msRTCSIP-ID tenant</p>
+<p>msRTCSIP-TenantId</p>
 <p>msRTCSIP-UserEnabled</p>
 <p>msRTCSIP-UserExtension</p>
 <p>msRTCSIP-UserLocationProfile</p>
@@ -91,7 +91,7 @@ Questa sezione elenca gli attributi dello schema che possono essere contenuti in
 <p>ProxyAddresses</p></td>
 </tr>
 <tr class="even">
-<td><p>Destinatario della posta elettronica</p></td>
+<td><p>Mail-Recipient</p></td>
 <td><p>msExchUCVoiceMailSettings</p>
 <p>msExchUserHoldPolicies</p></td>
 </tr>
@@ -285,7 +285,7 @@ Questa sezione elenca gli attributi dello schema che possono essere contenuti in
 <p>msRTCSIP-PrivateLine</p>
 <p>msRTCSIP-TargetHomeServer</p>
 <p>msRTCSIP-TargetUserPolicies</p>
-<p>msRTCSIP-ID tenant</p>
+<p>msRTCSIP-TenantId</p>
 <p>msRTCSIP-UserEnabled</p>
 <p>msRTCSIP-UserExtension</p>
 <p>msRTCSIP-UserLocationProfile</p>

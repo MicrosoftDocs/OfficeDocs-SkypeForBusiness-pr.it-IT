@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: processo di distribuzione per Call Park'
+title: 'Lync Server 2013: processo di distribuzione per il parcheggio di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183586
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9a00c354aa29a3c9a431b18a686105ab16d94c54
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 29e896aa89fe6fadecab3d17689d92671ffe6966
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762644"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038168"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deployment-process-for-call-park-in-lync-server-2013"></a>Processo di distribuzione per Call Park in Lync Server 2013
+# <a name="deployment-process-for-call-park-in-lync-server-2013"></a>Processo di distribuzione per il parcheggio di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41762644"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-25_
+_**Ultimo argomento modificato:** 2013-02-25_
 
-Questa sezione fornisce una panoramica dei passaggi necessari per la distribuzione dell'applicazione Call Park. È necessario distribuire Enterprise Edition o Standard Edition con Enterprise Voice prima di configurare Call Park. I componenti necessari per il parcheggio delle chiamate vengono installati e abilitati quando si distribuisce VoIP aziendale.
+In questa sezione viene fornita una panoramica dei passaggi necessari per la distribuzione dell'applicazione Parcheggio di chiamata. Prima di configurare il parcheggio di chiamata, è necessario distribuire Enterprise Edition o Standard Edition con VoIP aziendale. I componenti richiesti dal parcheggio di chiamata vengono installati e abilitati quando si distribuisce VoIP aziendale.
 
-### <a name="call-park-deployment-process"></a>Processo di distribuzione di Call Park
+### <a name="call-park-deployment-process"></a>Processo di distribuzione di Parcheggio di chiamata
 
 <table>
 <colgroup>
@@ -53,17 +53,17 @@ Questa sezione fornisce una panoramica dei passaggi necessari per la distribuzio
 <th>Fase</th>
 <th>Passaggi</th>
 <th>Gruppi e ruoli obbligatori</th>
-<th>Documentazione di distribuzione</th>
+<th>Documentazione sulla distribuzione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Configurare gli intervalli di orbit del parcheggio delle chiamate nella tabella Orbit</p></td>
-<td><p>Usa il pannello di controllo di Lync Server o il cmdlet <strong>New-CsCallParkOrbit</strong> per creare gli intervalli di Orbit nella tabella Orbit di Call Park e associarli al servizio applicazione che ospita l'applicazione Parcheggio di chiamata.</p>
+<td><p>Configurare gli intervalli dei codici orbit di parcheggio di chiamata nella tabella dei codici orbit</p></td>
+<td><p>Utilizzare il pannello di controllo di Lync Server o il cmdlet <strong>New-CsCallParkOrbit</strong> per creare gli intervalli di Orbit nella tabella orbit del parcheggio di chiamata e associarli al servizio dell'applicazione che ospita l'applicazione Parcheggio di chiamata.</p>
 <div>
 
 > [!NOTE]  
-> Per una perfetta integrazione con i dial plan esistenti, gli intervalli orbit sono in genere configurati come blocco di estensioni virtuali. L'assegnazione di numeri DID (Direct Inward Dialing) come numeri di orbita nella tabella Orbit di parcheggio delle chiamate non è supportata.
+> Per l'integrazione completa con i dial plan esistenti, gli intervalli dei codici orbit in genere sono configurati come un blocco di estensioni virtuali. L'assegnazione di numeri Direct Inward Dialing (DID) come numeri di codici orbit nella tabella dei codici orbit di parcheggio di chiamata non è supportata.
 
 
 </div></td>
@@ -71,45 +71,45 @@ Questa sezione fornisce una panoramica dei passaggi necessari per la distribuzio
 <p>CsVoiceAdministrator</p>
 <p>CsServerAdministrator</p>
 <p>CsAdministrator</p></td>
-<td><p><a href="lync-server-2013-create-or-modify-a-call-park-orbit-range.md">Creare o modificare un intervallo orbit di Call Park in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-create-or-modify-a-call-park-orbit-range.md">Creare o modificare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013</a></p></td>
 </tr>
 <tr class="even">
-<td><p>Configurare le impostazioni di Parcheggio di chiamata</p></td>
-<td><p>Usa il cmdlet <strong>Set-CsCpsConfiguration</strong> per configurare le impostazioni di Call Park. Come minimo, ti consigliamo di configurare l'opzione <strong>OnTimeoutURI</strong> per configurare la destinazione di fallback da usare in caso di timeout di una chiamata parcheggiata. È anche possibile configurare le impostazioni seguenti:</p>
+<td><p>Configurare le impostazioni del parcheggio di chiamata</p></td>
+<td><p>Utilizzare il cmdlet <strong>Set-CsCpsConfiguration</strong> per configurare le impostazioni del parcheggio di chiamata. È consigliabile configurare almeno l'opzione <strong>OnTimeoutURI</strong> per configurare la destinazione di fallback da utilizzare quando si verifica il timeout di una chiamata parcheggiata. È inoltre possibile configurare le impostazioni seguenti:</p>
 <ul>
-<li><p>Opzionale <strong>EnableMusicOnHold</strong> per abilitare o disabilitare la musica in attesa.</p></li>
-<li><p>Opzionale <strong>MaxCallPickupAttempts</strong> per determinare il numero di squilli di una chiamata parcheggiata di nuovo al telefono che risponde prima di inoltrare la chiamata all'URI (Uniform Resource Identifier) di fallback.</p></li>
-<li><p>Opzionale <strong>CallPickupTimeoutThreshold</strong> per determinare la quantità di tempo che trascorre dopo il parcheggio di una chiamata prima che ritorni al telefono in cui è stata risolta la chiamata.</p></li>
+<li><p>(Facoltativo) <strong>EnableMusicOnHold</strong> per abilitare o disabilitare la musica di attesa.</p></li>
+<li><p>(Facoltativo) <strong>MaxCallPickupAttempts</strong> per determinare il numero di squilli sul telefono di destinazione di una chiamata parcheggiata prima dell'inoltro all'URI (Uniform Resource Identifier) di fallback.</p></li>
+<li><p>(Facoltativo) <strong>CallPickupTimeoutThreshold</strong> per determinare quanto tempo deve trascorrere dopo che una chiamata è stata parcheggiata prima che squilli sul telefono da cui è stata effettuata la risposta.</p></li>
 </ul></td>
 <td><p>RTCUniversalServerAdmins</p>
 <p>CsVoiceAdministrator</p>
 <p>CsServerAdministrator</p>
 <p>CsAdministrator</p></td>
-<td><p><a href="lync-server-2013-configure-call-park-settings.md">Configurare le impostazioni di Call Park in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-configure-call-park-settings.md">Configurare le impostazioni del parcheggio di chiamata in Lync Server 2013</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Facoltativamente, personalizzare la musica in attesa</p></td>
-<td><p>Usare il cmdlet <strong>Set-CsCallParkServiceMusicOnHoldFile</strong> per personalizzare e caricare un file audio, se non si vuole usare la musica predefinita in attesa.</p></td>
+<td><p>Se lo si desidera, personalizzare la musica di attesa</p></td>
+<td><p>Utilizzare il cmdlet <strong>Set-CsCallParkServiceMusicOnHoldFile</strong> per personalizzare e caricare un file audio, se non si desidera utilizzare la musica di attesa predefinita.</p></td>
 <td><p>RTCUniversalServerAdmins</p>
 <p>CsVoiceAdministrator</p>
 <p>CsServerAdministrator</p>
 <p>CsAdministrator</p></td>
-<td><p><a href="lync-server-2013-customize-call-park-music-on-hold.md">Personalizzare la musica di Call Park in attesa in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-customize-call-park-music-on-hold.md">Personalizzare la musica del parcheggio di chiamata in attesa in Lync Server 2013</a></p></td>
 </tr>
 <tr class="even">
-<td><p>Configurare i criteri vocali per abilitare il parcheggio delle chiamate per gli utenti</p></td>
+<td><p>Configurare il criterio vocale per abilitare il parcheggio di chiamata per gli utenti</p></td>
 <td><p>Utilizzare il pannello di controllo di Lync Server o il cmdlet <strong>Set-CsVoicePolicy</strong> con l'opzione <strong>EnableCallPark</strong> per abilitare il parcheggio di chiamata per gli utenti nel criterio vocale.</p>
 <div>
 
 > [!NOTE]  
-> Per impostazione predefinita, il parcheggio delle chiamate è disabilitato per tutti gli utenti.
+> Per impostazione predefinita, il parcheggio di chiamata è disabilitato per tutti gli utenti.
 
 
 </div>
 <div>
 
 > [!NOTE]  
-> Se si hanno più criteri vocali, verificare che la proprietà EnableCallPark sia impostata per ogni criterio vocale, non solo per i criteri predefiniti.
+> Se si dispone di più criteri vocali, verificare che la proprietà EnableCallPark sia impostata per ogni criterio vocale e non solo per quello predefinito.
 
 
 </div></td>
@@ -117,22 +117,22 @@ Questa sezione fornisce una panoramica dei passaggi necessari per la distribuzio
 <p>CsVoiceAdministrator</p>
 <p>CsUserAdministrator</p>
 <p>CsAdministrator</p></td>
-<td><p><a href="lync-server-2013-enable-call-park-for-users.md">Abilitare il parcheggio delle chiamate per gli utenti in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-enable-call-park-for-users.md">Abilitare il parcheggio di chiamata per gli utenti in Lync Server 2013</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Verificare le regole di normalizzazione per il parcheggio di chiamata</p></td>
-<td><p>Le orbite del parcheggio delle chiamate non devono essere normalizzate. Verificare che le regole di normalizzazione non includano alcuno degli intervalli di orbita. Se necessario, creare regole di normalizzazione aggiuntive per impedire la normalizzazione delle orbite.</p></td>
+<td><p>I codici orbit di Parcheggio di chiamata non devono essere normalizzati. Verificare che le regole di normalizzazione non includano alcun intervallo dei codici orbit. Se necessario, creare regole di normalizzazione aggiuntive per impedire che vengano normalizzati i codici orbit.</p></td>
 <td><p>RTCUniversalServerAdmins</p>
 <p>CsVoiceAdministrator</p>
 <p>CsServerAdministrator</p>
 <p>CsAdministrator</p></td>
-<td><p><a href="lync-server-2013-verify-normalization-rules-for-call-park.md">Verificare le regole di normalizzazione per Call Park in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-verify-normalization-rules-for-call-park.md">Verificare le regole di normalizzazione per il parcheggio di chiamata in Lync Server 2013</a></p></td>
 </tr>
 <tr class="even">
-<td><p>Verificare la distribuzione di Call Park</p></td>
-<td><p>Verificare il parcheggio e il recupero delle chiamate per verificare che la configurazione funzioni come previsto.</p></td>
+<td><p>Verificare la distribuzione del parcheggio di chiamata</p></td>
+<td><p>Verifica del parcheggio e del recupero delle chiamate per verificare che la configurazione funzioni come previsto.</p></td>
 <td><p>-</p></td>
-<td><p><a href="lync-server-2013-optional-verify-call-park-deployment.md">Opzionale Verificare la distribuzione di Call Park in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-optional-verify-call-park-deployment.md">Optional Verificare la distribuzione del parcheggio di chiamata in Lync Server 2013</a></p></td>
 </tr>
 </tbody>
 </table>

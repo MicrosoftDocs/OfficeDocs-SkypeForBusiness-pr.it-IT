@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Riepilogo delle porte - bilanciamento del carico DNS e bilanciamento del carico hardware'
+title: 'Lync Server 2013: riepilogo delle porte-bilanciamento del carico DNS e bilancio di HLB'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185149
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: eb594057977fbe39f6be6a9a9c678806d7e2d8dc
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a4c691bfeb6017777441002b3248621f5408665f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747606"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050558"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="port-summary---dns-and-hlb-load-balanced-in-lync-server-2013"></a>Riepilogo delle porte - bilanciamento del carico DNS e bilanciamento del carico hardware in Lync Server 2013
+# <a name="port-summary---dns-and-hlb-load-balanced-in-lync-server-2013"></a>Riepilogo delle porte-bilanciamento del carico DNS e del caricamento in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41747606"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
-I requisiti della porta firewall per un singolo Director sono costituiti dalle porte usate per stabilire la comunicazione con il Director dall'interfaccia interna o dalla rete interna del proxy inverso. Per impostazione predefinita, Microsoft Lync Server 2013 prevede che le porte HTTP/TCP 8080 e HTTPS/TCP 4443 siano aperte dal proxy inverso al Director, oltre al pool Front end e al server front-end. Inoltre, deve essere disponibile una comunicazione SIP (Session Initiation Protocol) dall'interfaccia interna del server perimetrale al Director e al pool Front end e front end server. Il protocollo SIP USA SIP/MTLS/TCP 5061 dall'Edge Server al pool Front end e front end server. Deve essere creata anche una regola che consente la comunicazione SIP/MTLS/TCP 5061 da parte del Director, del pool Front end e del front end server all'interfaccia interna del server perimetrale.
+I requisiti delle porte del firewall per un singolo Director sono costituiti dalle porte che vengono utilizzate per stabilire la comunicazione con il server Director dall'interfaccia interna o dalla rete interna del proxy inverso. Per impostazione predefinita, Microsoft Lync Server 2013 prevede che le porte HTTP/TCP 8080 e HTTPS/TCP 4443 siano aperte dal proxy inverso al server Director, nonché il pool Front end e il front end. Inoltre, deve essere presente una comunicazione SIP (Session Initiation Protocol) dall'interfaccia interna del server perimetrale al Director e al pool Front end e front end server. Il protocollo SIP utilizza SIP/MTLS/TCP 5061 dal server perimetrale al pool Front end e front end server. È anche necessario creare una regola che consenta la comunicazione SIP/MTLS/TCP 5061 del server Director, del pool Front end e del front end server fino all'interfaccia interna di Edge.
 
-### <a name="single-director-ports-and-protocols-for-firewall-definitions"></a>Porte e protocolli per Director singole per le definizioni di firewall
+### <a name="single-director-ports-and-protocols-for-firewall-definitions"></a>Porte e protocolli del singolo Director per le definizioni del firewall
 
 <table>
 <colgroup>
@@ -53,63 +53,63 @@ I requisiti della porta firewall per un singolo Director sono costituiti dalle p
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Note</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>HTTP/TCP 8080</p></td>
 <td><p>Interfaccia interna del proxy inverso</p></td>
-<td><p>VIP di bilanciamento del carico hardware Director</p></td>
-<td><p>Inizialmente ricevuto dal lato esterno del proxy inverso, la comunicazione viene inviata al Direttore servizi Web di HLB VIP e front end server.</p></td>
+<td><p>VIP del bilanciamento del carico hardware del server Director</p></td>
+<td><p>Inizialmente ricevuta dal lato esterno del proxy inverso, la comunicazione viene inviata ai servizi Web del Director HLB VIP e front end server.</p></td>
 </tr>
 <tr class="even">
 <td><p>HTTPS/TCP 4443</p></td>
 <td><p>Interfaccia interna del proxy inverso</p></td>
-<td><p>VIP di bilanciamento del carico hardware Director</p></td>
-<td><p>Inizialmente ricevuto dal lato esterno del proxy inverso, la comunicazione viene inviata al Direttore servizi Web di HLB VIP e front end server.</p></td>
+<td><p>VIP del bilanciamento del carico hardware del server Director</p></td>
+<td><p>Inizialmente ricevuta dal lato esterno del proxy inverso, la comunicazione viene inviata ai servizi Web del Director HLB VIP e front end server.</p></td>
 </tr>
 <tr class="odd">
 <td><p>HTTPS/TCP 444</p></td>
 <td><p>Director</p></td>
 <td><p>Pool Front end o front end server</p></td>
-<td><p>Comunicazioni tra server tra il Director HLB VIP e il front end server o Front End Servers.</p></td>
+<td><p>Comunicazione tra server tra il VIP di HLB del regista e il front end server o front end server.</p></td>
 </tr>
 <tr class="even">
 <td><p>HTTP/TCP 80</p></td>
 <td><p>Client interni</p></td>
-<td><p>VIP di bilanciamento del carico hardware Director</p></td>
-<td><p>Il Director offre servizi Web a client interni e esterni.</p></td>
+<td><p>VIP del bilanciamento del carico hardware del server Director</p></td>
+<td><p>Il Director fornisce servizi Web ai client interni e esterni.</p></td>
 </tr>
 <tr class="odd">
 <td><p>HTTPS/TCP 443</p></td>
 <td><p>Client interni</p></td>
-<td><p>VIP di bilanciamento del carico hardware Director</p></td>
-<td><p>Il Director offre servizi Web a client interni e esterni.</p></td>
+<td><p>VIP del bilanciamento del carico hardware del server Director</p></td>
+<td><p>Il Director fornisce servizi Web ai client interni e esterni.</p></td>
 </tr>
 <tr class="even">
 <td><p>SIP/MTLS/TCP 5061</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
 <td><p>Director</p></td>
-<td><p>Comunicare SIP dall'Edge Server al Director, oltre ai server front-end.</p></td>
+<td><p>Comunicazione SIP dal server perimetrale al Director, oltre ai Front End Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p>MTLS/TCP/50001</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Director</p></td>
-<td><p>Controller di servizio di registrazione centralizzato (ClsController. exe) o di comando Agent (ClsAgent. exe) e raccolta log</p></td>
+<td><p>Comandi del controller del servizio di registrazione centralizzato (ClsController. exe) o dell'agente (ClsAgent. exe) e raccolta di registri</p></td>
 </tr>
 <tr class="even">
 <td><p>MTLS/TCP/50002</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Director</p></td>
-<td><p>Controller di servizio di registrazione centralizzato (ClsController. exe) o di comando Agent (ClsAgent. exe) e raccolta log</p></td>
+<td><p>Comandi del controller del servizio di registrazione centralizzato (ClsController. exe) o dell'agente (ClsAgent. exe) e raccolta di registri</p></td>
 </tr>
 <tr class="odd">
 <td><p>MTLS/TCP/50003</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Director</p></td>
-<td><p>Controller di servizio di registrazione centralizzato (ClsController. exe) o di comando Agent (ClsAgent. exe) e raccolta log</p></td>
+<td><p>Comandi del controller del servizio di registrazione centralizzato (ClsController. exe) o dell'agente (ClsAgent. exe) e raccolta di registri</p></td>
 </tr>
 </tbody>
 </table>
