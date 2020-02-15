@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Schema del database di Chat persistente'
+title: 'Lync Server 2013: schema del database di chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184228
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 73f3b21fe8ea7f9fc71aa5432a601e9fa3ad2425
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 51ee4506a22d866a5ba0f771db47546a8fa15e6e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755236"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006914"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="persistent-chat-database-schema-in-lync-server-2013"></a><span data-ttu-id="f4226-102">Schema del database di Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f4226-102">Persistent Chat database schema in Lync Server 2013</span></span>
+# <a name="persistent-chat-database-schema-in-lync-server-2013"></a><span data-ttu-id="ab154-102">Schema del database di chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ab154-102">Persistent Chat database schema in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,43 +35,43 @@ ms.locfileid: "41755236"
 
 <span> </span>
 
-<span data-ttu-id="f4226-103">_**Argomento Ultima modifica:** 2012-09-18_</span><span class="sxs-lookup"><span data-stu-id="f4226-103">_**Topic Last Modified:** 2012-09-18_</span></span>
+<span data-ttu-id="ab154-103">_**Ultimo argomento modificato:** 2012-09-18_</span><span class="sxs-lookup"><span data-stu-id="ab154-103">_**Topic Last Modified:** 2012-09-18_</span></span>
 
-<span data-ttu-id="f4226-104">Questo documento documenta lo schema del database di chat persistente nel software di comunicazione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f4226-104">This documents the schema of the Persistent Chat database in Lync Server 2013 communications software.</span></span>
+<span data-ttu-id="ab154-104">In questo documento viene documentato lo schema del database di chat persistente in Lync Server 2013 Communications software.</span><span class="sxs-lookup"><span data-stu-id="ab154-104">This documents the schema of the Persistent Chat database in Lync Server 2013 communications software.</span></span>
 
-<span data-ttu-id="f4226-105">Il database della chat persistente fa riferimento al database corrispondente ai ruoli di Lync Server 2013 back-end server **PersistentChatStore** (corrispondente al database mgc) e **PersistentChatComplianceStore** (corrispondente al database mgccomp).</span><span class="sxs-lookup"><span data-stu-id="f4226-105">The Persistent Chat database refers to the database corresponding to the Lync Server 2013 Back End Server roles **PersistentChatStore** (corresponding to the mgc database) and **PersistentChatComplianceStore** (corresponding to the mgccomp database).</span></span> <span data-ttu-id="f4226-106">L'obiettivo della pubblicazione di questo schema è quello di consentire la creazione di query e acquisire alcune informazioni utili per la creazione di una segnalazione utile intorno all'utilizzo della chat, alle sale attive, ai poster principali e così via.</span><span class="sxs-lookup"><span data-stu-id="f4226-106">The goal of publishing this schema is to enable you to build queries and gain some insights into building useful reporting around chat usage, active rooms, top posters, and so on.</span></span>
+<span data-ttu-id="ab154-105">Il database di Persistent Chat si riferisce al database corrispondente ai ruoli del server back-end di Lync Server 2013 **PersistentChatStore** (corrispondente al database di MGC) e **PersistentChatComplianceStore** (corrispondente al database di mgccomp).</span><span class="sxs-lookup"><span data-stu-id="ab154-105">The Persistent Chat database refers to the database corresponding to the Lync Server 2013 Back End Server roles **PersistentChatStore** (corresponding to the mgc database) and **PersistentChatComplianceStore** (corresponding to the mgccomp database).</span></span> <span data-ttu-id="ab154-106">L'obiettivo della pubblicazione di questo schema è di consentire la creazione di query per comprendere meglio come generare rapporti efficaci relativi all'uso della chat, alle chat attive, agli autori di post più attivi e così via.</span><span class="sxs-lookup"><span data-stu-id="ab154-106">The goal of publishing this schema is to enable you to build queries and gain some insights into building useful reporting around chat usage, active rooms, top posters, and so on.</span></span>
 
 <div>
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="f4226-107">Ci riserviamo il diritto di evolvere questo schema.</span><span class="sxs-lookup"><span data-stu-id="f4226-107">We reserve the right to evolve this schema.</span></span> <span data-ttu-id="f4226-108">Microsoft non garantisce di mantenere la compatibilità completa con questo schema pubblicato.</span><span class="sxs-lookup"><span data-stu-id="f4226-108">Microsoft does not make any guarantees to maintain full backward compatibility with this published schema.</span></span>
+> <span data-ttu-id="ab154-p102">Ci riserviamo il diritto di modificare questo schema. Microsoft non garantisce di poter mantenere la completa compatibilità di questo schema pubblicato con le versioni precedenti.</span><span class="sxs-lookup"><span data-stu-id="ab154-p102">We reserve the right to evolve this schema. Microsoft does not make any guarantees to maintain full backward compatibility with this published schema.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="f4226-109">Seguire queste procedure consigliate:</span><span class="sxs-lookup"><span data-stu-id="f4226-109">Follow these best practices:</span></span>
+<span data-ttu-id="ab154-109">Tenere presenti queste procedure consigliate:</span><span class="sxs-lookup"><span data-stu-id="ab154-109">Follow these best practices:</span></span>
 
-  - <span data-ttu-id="f4226-110">Nessun SELECT\* //è supportato perché l'elenco di colonne può aumentare.</span><span class="sxs-lookup"><span data-stu-id="f4226-110">No SELECT\* // is supported because the column list can grow.</span></span>
+  - <span data-ttu-id="ab154-110">Nessuna selezione\* //è supportata perché l'elenco di colonne può aumentare.</span><span class="sxs-lookup"><span data-stu-id="ab154-110">No SELECT\* // is supported because the column list can grow.</span></span>
 
-  - <span data-ttu-id="f4226-111">Non sono supportate modifiche allo schema generate dall'utente.</span><span class="sxs-lookup"><span data-stu-id="f4226-111">No user-generated schema modifications are supported.</span></span>
+  - <span data-ttu-id="ab154-111">Non sono supportate modifiche allo schema generate dall'utente.</span><span class="sxs-lookup"><span data-stu-id="ab154-111">No user-generated schema modifications are supported.</span></span>
 
-  - <span data-ttu-id="f4226-112">Non sono supportate operazioni di scrittura.</span><span class="sxs-lookup"><span data-stu-id="f4226-112">No write operations are supported.</span></span>
+  - <span data-ttu-id="ab154-112">Non sono supportate operazioni di scrittura</span><span class="sxs-lookup"><span data-stu-id="ab154-112">No write operations are supported.</span></span>
 
-  - <span data-ttu-id="f4226-113">Testare le query che si compilano su database di dimensioni rappresentative per verificare che le query possano essere eseguite a un livello per soddisfare le proprie esigenze.</span><span class="sxs-lookup"><span data-stu-id="f4226-113">Test any queries that you build on representatively-sized databases to be sure that the queries can perform at a level to meet your needs.</span></span>
+  - <span data-ttu-id="ab154-113">Testare le query create con database di dimensioni rappresentative, per assicurarsi che le prestazioni soddisfino le esigenze.</span><span class="sxs-lookup"><span data-stu-id="ab154-113">Test any queries that you build on representatively-sized databases to be sure that the queries can perform at a level to meet your needs.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="f4226-114">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="f4226-114">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="ab154-114">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="ab154-114">In This Section</span></span>
 
-  - [<span data-ttu-id="f4226-115">Elenco delle tabelle del server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f4226-115">List of Persistent Chat Server tables in Lync Server 2013</span></span>](lync-server-2013-list-of-persistent-chat-server-tables.md)
+  - [<span data-ttu-id="ab154-115">Elenco delle tabelle del server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ab154-115">List of Persistent Chat Server tables in Lync Server 2013</span></span>](lync-server-2013-list-of-persistent-chat-server-tables.md)
 
-  - [<span data-ttu-id="f4226-116">Elenco delle tabelle di conformità del server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f4226-116">List of Persistent Chat Server compliance tables in Lync Server 2013</span></span>](lync-server-2013-list-of-persistent-chat-server-compliance-tables.md)
+  - [<span data-ttu-id="ab154-116">Elenco delle tabelle di conformità del server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ab154-116">List of Persistent Chat Server compliance tables in Lync Server 2013</span></span>](lync-server-2013-list-of-persistent-chat-server-compliance-tables.md)
 
-  - [<span data-ttu-id="f4226-117">Dettagli sulle tabelle del server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f4226-117">Persistent Chat Server table details in Lync Server 2013</span></span>](lync-server-2013-persistent-chat-server-table-details.md)
+  - [<span data-ttu-id="ab154-117">Dettagli della tabella del server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ab154-117">Persistent Chat Server table details in Lync Server 2013</span></span>](lync-server-2013-persistent-chat-server-table-details.md)
 
-  - [<span data-ttu-id="f4226-118">Query del database di Chat persistente di esempio per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f4226-118">Sample Persistent Chat database queries for Lync Server 2013</span></span>](lync-server-2013-sample-persistent-chat-database-queries.md)
+  - [<span data-ttu-id="ab154-118">Query del database di chat persistente di esempio per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ab154-118">Sample Persistent Chat database queries for Lync Server 2013</span></span>](lync-server-2013-sample-persistent-chat-database-queries.md)
 
 </div>
 

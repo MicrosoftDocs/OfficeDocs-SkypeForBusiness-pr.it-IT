@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Requisiti dell'infrastruttura per il controllo di ammissione di chiamata"
+title: "Lync Server 2013: requisiti dell'infrastruttura per il controllo di ammissione di chiamata"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184157
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b5251abe8519d4d4560df57c7d7e70e5d4773c47
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6fe0594d9ab6eb27d38d41df1f71cf25d53b350d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763780"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008368"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="infrastructure-requirements-for-call-admission-control-in-lync-server-2013"></a><span data-ttu-id="29b2c-102">Requisiti dell'infrastruttura per il controllo di ammissione di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="29b2c-102">Infrastructure requirements for call admission control in Lync Server 2013</span></span>
+# <a name="infrastructure-requirements-for-call-admission-control-in-lync-server-2013"></a><span data-ttu-id="e5b97-102">Requisiti dell'infrastruttura per il controllo di ammissione di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e5b97-102">Infrastructure requirements for call admission control in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41763780"
 
 <span> </span>
 
-<span data-ttu-id="29b2c-103">_**Argomento Ultima modifica:** 2012-08-21_</span><span class="sxs-lookup"><span data-stu-id="29b2c-103">_**Topic Last Modified:** 2012-08-21_</span></span>
+<span data-ttu-id="e5b97-103">_**Ultimo argomento modificato:** 2012-08-21_</span><span class="sxs-lookup"><span data-stu-id="e5b97-103">_**Topic Last Modified:** 2012-08-21_</span></span>
 
-<span data-ttu-id="29b2c-104">Non sono necessari requisiti aggiuntivi per l'infrastruttura, ad esempio router di rete speciali.</span><span class="sxs-lookup"><span data-stu-id="29b2c-104">No additional infrastructure requirements, such as special network routers, are necessary.</span></span> <span data-ttu-id="29b2c-105">La distribuzione di Lync Server 2013 installerà automaticamente il servizio criteri di larghezza di banda usato per applicare i criteri di controllo ammissione chiamata (CAC).</span><span class="sxs-lookup"><span data-stu-id="29b2c-105">Deploying Lync Server 2013 will automatically install the Bandwidth Policy Service used to enforce call admission control (CAC) policies.</span></span> <span data-ttu-id="29b2c-106">Il controllo di ammissione delle chiamate funziona solo con i client che utilizzano Lync.</span><span class="sxs-lookup"><span data-stu-id="29b2c-106">Call admission control works only with clients running Lync.</span></span>
+<span data-ttu-id="e5b97-104">Non sono necessari ulteriori requisiti dell'infrastruttura quali ad esempio router di rete speciali.</span><span class="sxs-lookup"><span data-stu-id="e5b97-104">No additional infrastructure requirements, such as special network routers, are necessary.</span></span> <span data-ttu-id="e5b97-105">La distribuzione di Lync Server 2013 installerà automaticamente il servizio criteri di larghezza di banda utilizzato per applicare i criteri di controllo di ammissione di chiamata (CAC).</span><span class="sxs-lookup"><span data-stu-id="e5b97-105">Deploying Lync Server 2013 will automatically install the Bandwidth Policy Service used to enforce call admission control (CAC) policies.</span></span> <span data-ttu-id="e5b97-106">Il controllo di ammissione di chiamata funziona solo con i client che eseguono Lync.</span><span class="sxs-lookup"><span data-stu-id="e5b97-106">Call admission control works only with clients running Lync.</span></span>
 
 </div>
 

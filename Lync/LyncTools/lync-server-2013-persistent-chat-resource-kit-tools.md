@@ -1,5 +1,5 @@
 ---
-title: Strumenti del Resource Kit di chat persistenti di Lync Server 2013
+title: Strumenti del Resource Kit di Lync Server 2013 Persistent Chat
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541423
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a827892dac61ff88d0527eafb7d94948afa21885
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7895a1ebb2c0ce45cebf3514839b7ab3405e1c9f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739416"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41983031"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="lync-server-2013-persistent-chat-resource-kit-tools"></a><span data-ttu-id="85faa-102">Strumenti del Resource Kit di chat persistenti di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="85faa-102">Lync Server 2013 Persistent Chat Resource Kit Tools</span></span>
+# <a name="lync-server-2013-persistent-chat-resource-kit-tools"></a><span data-ttu-id="5791e-102">Strumenti del Resource Kit di Lync Server 2013 Persistent Chat</span><span class="sxs-lookup"><span data-stu-id="5791e-102">Lync Server 2013 Persistent Chat Resource Kit Tools</span></span>
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41739416"
 
 <span> </span>
 
-<span data-ttu-id="85faa-103">_**Argomento Ultima modifica:** 2013-02-24_</span><span class="sxs-lookup"><span data-stu-id="85faa-103">_**Topic Last Modified:** 2013-02-24_</span></span>
+<span data-ttu-id="5791e-103">_**Ultimo argomento modificato:** 2013-02-24_</span><span class="sxs-lookup"><span data-stu-id="5791e-103">_**Topic Last Modified:** 2013-02-24_</span></span>
 
-<span data-ttu-id="85faa-104">Gli strumenti di Resource Kit di chat persistenti di Lync Server 2013 consentono di semplificare le attività di routine per gli amministratori IT che distribuiscono e gestiscono il server di chat persistente di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="85faa-104">The Lync Server 2013 Persistent Chat Resource Kit tools help to make routine tasks easier for IT administrators who deploy and manage Lync Server 2013 Persistent Chat Server.</span></span> <span data-ttu-id="85faa-105">Oltre alle istruzioni per l'installazione, questo argomento descrive lo scopo di ogni strumento e gli esempi del relativo utilizzo.</span><span class="sxs-lookup"><span data-stu-id="85faa-105">In addition to installation instructions, this topic describes the purpose of each tool, and examples of its use.</span></span>
+<span data-ttu-id="5791e-104">Gli strumenti del Resource Kit di chat di Lync Server 2013 Persistent consentono di semplificare le attività di routine per gli amministratori IT che distribuiscono e gestiscono il server di chat persistente di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="5791e-104">The Lync Server 2013 Persistent Chat Resource Kit tools help to make routine tasks easier for IT administrators who deploy and manage Lync Server 2013 Persistent Chat Server.</span></span> <span data-ttu-id="5791e-105">Oltre alle istruzioni per l'installazione, in questo argomento viene descritto lo scopo di ogni strumento e gli esempi di utilizzo.</span><span class="sxs-lookup"><span data-stu-id="5791e-105">In addition to installation instructions, this topic describes the purpose of each tool, and examples of its use.</span></span>
 
 <div>
 
-## <a name="installation-of-the-resource-kit-tools"></a><span data-ttu-id="85faa-106">Installazione degli strumenti del Resource Kit</span><span class="sxs-lookup"><span data-stu-id="85faa-106">Installation of the Resource Kit Tools</span></span>
+## <a name="installation-of-the-resource-kit-tools"></a><span data-ttu-id="5791e-106">Installazione degli strumenti del Resource Kit</span><span class="sxs-lookup"><span data-stu-id="5791e-106">Installation of the Resource Kit Tools</span></span>
 
-<span data-ttu-id="85faa-107">Per installare Lync Server 2013, strumenti Resource Kit, scaricare **PersistentChatReskit. msi**.</span><span class="sxs-lookup"><span data-stu-id="85faa-107">To install the Lync Server 2013, Resource Kit Tools, download **PersistentChatReskit.msi**.</span></span> <span data-ttu-id="85faa-108">Eseguire **PersistentChatReskit. msi** per eseguire un'installazione semplice.</span><span class="sxs-lookup"><span data-stu-id="85faa-108">Run **PersistentChatReskit.msi** to do a simple installation.</span></span> <span data-ttu-id="85faa-109">Il file \\con estensione msi installa tutti gli strumenti disponibili nel percorso seguente: \*\*programmi Microsoft Lync Server\\2013 Persistent Chat Server Resource Kit.\\ \*\*</span><span class="sxs-lookup"><span data-stu-id="85faa-109">The .msi installs all the tools in the following path: \\**Program Files\\ Microsoft Lync Server 2013\\Persistent Chat Server Resource Kit**.</span></span> <span data-ttu-id="85faa-110">Gli strumenti che sono eseguibili indipendenti si trovano in questa cartella.</span><span class="sxs-lookup"><span data-stu-id="85faa-110">Tools that are self-contained executables are in this folder.</span></span> <span data-ttu-id="85faa-111">Gli strumenti che includono anche i file sono presenti nelle sottocartelle.</span><span class="sxs-lookup"><span data-stu-id="85faa-111">Tools that also have files are in their own subfolders.</span></span>
+<span data-ttu-id="5791e-107">Per installare Lync Server 2013, strumenti del Resource Kit, scaricare **PersistentChatReskit. msi**.</span><span class="sxs-lookup"><span data-stu-id="5791e-107">To install the Lync Server 2013, Resource Kit Tools, download **PersistentChatReskit.msi**.</span></span> <span data-ttu-id="5791e-108">Eseguire **PersistentChatReskit. msi** per eseguire un'installazione semplice.</span><span class="sxs-lookup"><span data-stu-id="5791e-108">Run **PersistentChatReskit.msi** to do a simple installation.</span></span> <span data-ttu-id="5791e-109">Il file con estensione msi installa tutti gli strumenti nel percorso seguente \\: **Program\\ Files Microsoft Lync Server\\2013 Persistent Chat Server Resource Kit**.</span><span class="sxs-lookup"><span data-stu-id="5791e-109">The .msi installs all the tools in the following path: \\**Program Files\\ Microsoft Lync Server 2013\\Persistent Chat Server Resource Kit**.</span></span> <span data-ttu-id="5791e-110">Gli strumenti che sono eseguibili indipendenti sono presenti in questa cartella.</span><span class="sxs-lookup"><span data-stu-id="5791e-110">Tools that are self-contained executables are in this folder.</span></span> <span data-ttu-id="5791e-111">Gli strumenti che dispongono anche di file si trovano nelle rispettive sottocartelle.</span><span class="sxs-lookup"><span data-stu-id="5791e-111">Tools that also have files are in their own subfolders.</span></span>
 
 <div>
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="85faa-112">Dopo l'installazione di Lync Server 2013, strumenti Resource Kit, è necessario installare <STRONG>psexec. exe</STRONG> e copiare <STRONG>psexec. exe</STRONG> nel percorso seguente: \\ <STRONG>file di programma \ Microsoft Lync Server 2013 \ Persistent Chat Server Resource Kit\ChatStressTool</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="85faa-112">After installing the Lync Server 2013, Resource Kit Tools, you must install <STRONG>PsExec.exe</STRONG> and copy <STRONG>PsExec.exe</STRONG> to the following path: \\<STRONG>Program Files\ Microsoft Lync Server 2013\Persistent Chat Server Resource Kit\ChatStressTool</STRONG>.</span></span> <span data-ttu-id="85faa-113">Se non si copia <STRONG>psexec. exe</STRONG>, lo strumento di stress della chat persistente genererà un'eccezione di errore e non verrà eseguita correttamente.</span><span class="sxs-lookup"><span data-stu-id="85faa-113">If you do not copy <STRONG>PsExec.exe</STRONG>, the Persistent Chat Stress Tool will throw an error exception, and not perform correctly.</span></span> <span data-ttu-id="85faa-114">Verificare di soddisfare questo requisito preliminare prima di eseguire lo strumento.</span><span class="sxs-lookup"><span data-stu-id="85faa-114">Make sure that you meet this prerequisite requirement prior to running the tool.</span></span> <span data-ttu-id="85faa-115">Per informazioni dettagliate sull'installazione di <STRONG>psexec. exe</STRONG>, vedere <A href="http://go.microsoft.com/fwlink/p/?linkid=282246">http://go.microsoft.com/fwlink/p/?LinkId=282246</A>.</span><span class="sxs-lookup"><span data-stu-id="85faa-115">For details about installing <STRONG>PsExec.exe</STRONG>, see <A href="http://go.microsoft.com/fwlink/p/?linkid=282246">http://go.microsoft.com/fwlink/p/?LinkId=282246</A>.</span></span>
+> <span data-ttu-id="5791e-112">Dopo aver installato Lync Server 2013, strumenti del Resource Kit, è necessario installare <STRONG>psexec. exe</STRONG> e copiare <STRONG>psexec. exe</STRONG> nel percorso seguente: \\ <STRONG>file di programma \ Microsoft Lync Server 2013 \ Kit\ChatStressTool delle risorse del server Chat persistente</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="5791e-112">After installing the Lync Server 2013, Resource Kit Tools, you must install <STRONG>PsExec.exe</STRONG> and copy <STRONG>PsExec.exe</STRONG> to the following path: \\<STRONG>Program Files\ Microsoft Lync Server 2013\Persistent Chat Server Resource Kit\ChatStressTool</STRONG>.</span></span> <span data-ttu-id="5791e-113">Se non si copia <STRONG>psexec. exe</STRONG>, lo strumento di stress Persistent Chat genererà un'eccezione di errore e non verrà eseguita correttamente.</span><span class="sxs-lookup"><span data-stu-id="5791e-113">If you do not copy <STRONG>PsExec.exe</STRONG>, the Persistent Chat Stress Tool will throw an error exception, and not perform correctly.</span></span> <span data-ttu-id="5791e-114">Prima di eseguire lo strumento, accertarsi di rispettare questo requisito prerequisito.</span><span class="sxs-lookup"><span data-stu-id="5791e-114">Make sure that you meet this prerequisite requirement prior to running the tool.</span></span> <span data-ttu-id="5791e-115">Per informazioni dettagliate sull'installazione di <STRONG>psexec. exe</STRONG>, vedere <A href="http://go.microsoft.com/fwlink/p/?linkid=282246">http://go.microsoft.com/fwlink/p/?LinkId=282246</A>.</span><span class="sxs-lookup"><span data-stu-id="5791e-115">For details about installing <STRONG>PsExec.exe</STRONG>, see <A href="http://go.microsoft.com/fwlink/p/?linkid=282246">http://go.microsoft.com/fwlink/p/?LinkId=282246</A>.</span></span>
 
 
 
@@ -59,61 +59,61 @@ ms.locfileid: "41739416"
 
 <div>
 
-## <a name="supported-environments"></a><span data-ttu-id="85faa-116">Ambienti supportati</span><span class="sxs-lookup"><span data-stu-id="85faa-116">Supported Environments</span></span>
+## <a name="supported-environments"></a><span data-ttu-id="5791e-116">Ambienti supportati</span><span class="sxs-lookup"><span data-stu-id="5791e-116">Supported Environments</span></span>
 
-<span data-ttu-id="85faa-117">Per ottenere prestazioni ottimali, gli strumenti di Lync Server 2013, Resource Kit devono essere installati nello stesso ambiente e con le stesse specifiche necessarie per Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="85faa-117">For optimal performance, the Lync Server 2013, Resource Kit Tools should be installed in the same environment and with the same specifications that are required for Lync Server 2013.</span></span>
-
-</div>
-
-<div>
-
-## <a name="resource-kit-tools-overview"></a><span data-ttu-id="85faa-118">Panoramica degli strumenti di Resource Kit</span><span class="sxs-lookup"><span data-stu-id="85faa-118">Resource Kit Tools Overview</span></span>
-
-<span data-ttu-id="85faa-119">Ecco gli strumenti disponibili nel Resource Kit di Lync Server 2013 Persistent Chat.</span><span class="sxs-lookup"><span data-stu-id="85faa-119">Here are the tools that are provided in the Lync Server 2013 Persistent Chat Resource Kit.</span></span> <span data-ttu-id="85faa-120">La sezione seguente fornisce una descrizione di ogni strumento, inclusi i requisiti e l'utilizzo di esempio.</span><span class="sxs-lookup"><span data-stu-id="85faa-120">The following section provides a description of each tool, including requirements and example usage.</span></span>
-
-  - <span data-ttu-id="85faa-121">AffCheck</span><span class="sxs-lookup"><span data-stu-id="85faa-121">AffCheck</span></span>
-
-  - <span data-ttu-id="85faa-122">ChatMonitoringSummary</span><span class="sxs-lookup"><span data-stu-id="85faa-122">ChatMonitoringSummary</span></span>
-
-  - <span data-ttu-id="85faa-123">Strumento ChatStress</span><span class="sxs-lookup"><span data-stu-id="85faa-123">ChatStress Tool</span></span>
-
-  - <span data-ttu-id="85faa-124">ChatUpgradeVerifier</span><span class="sxs-lookup"><span data-stu-id="85faa-124">ChatUpgradeVerifier</span></span>
-
-  - <span data-ttu-id="85faa-125">ChatUsageReport</span><span class="sxs-lookup"><span data-stu-id="85faa-125">ChatUsageReport</span></span>
-
-  - <span data-ttu-id="85faa-126">ScheduleADSyncforPrincipal</span><span class="sxs-lookup"><span data-stu-id="85faa-126">ScheduleADSyncforPrincipal</span></span>
+<span data-ttu-id="5791e-117">Per ottenere prestazioni ottimali, è consigliabile installare gli strumenti di Lync Server 2013, Resource Kit nello stesso ambiente e con le stesse specifiche richieste per Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="5791e-117">For optimal performance, the Lync Server 2013, Resource Kit Tools should be installed in the same environment and with the same specifications that are required for Lync Server 2013.</span></span>
 
 </div>
 
 <div>
 
-## <a name="affcheck"></a><span data-ttu-id="85faa-127">AffCheck</span><span class="sxs-lookup"><span data-stu-id="85faa-127">AffCheck</span></span>
+## <a name="resource-kit-tools-overview"></a><span data-ttu-id="5791e-118">Panoramica degli strumenti del Resource Kit</span><span class="sxs-lookup"><span data-stu-id="5791e-118">Resource Kit Tools Overview</span></span>
 
-<div>
+<span data-ttu-id="5791e-119">Di seguito sono riportati gli strumenti disponibili nel Resource Kit di Lync Server 2013 Persistent Chat.</span><span class="sxs-lookup"><span data-stu-id="5791e-119">Here are the tools that are provided in the Lync Server 2013 Persistent Chat Resource Kit.</span></span> <span data-ttu-id="5791e-120">Nella sezione seguente viene fornita una descrizione di ogni strumento, inclusi i requisiti e l'utilizzo di esempio.</span><span class="sxs-lookup"><span data-stu-id="5791e-120">The following section provides a description of each tool, including requirements and example usage.</span></span>
 
-## <a name="description"></a><span data-ttu-id="85faa-128">Descrizione</span><span class="sxs-lookup"><span data-stu-id="85faa-128">Description</span></span>
+  - <span data-ttu-id="5791e-121">AffCheck</span><span class="sxs-lookup"><span data-stu-id="5791e-121">AffCheck</span></span>
 
-<span data-ttu-id="85faa-129">Lo strumento AffCheck conferma che l'utente del database back-end della chat persistente e i record di affiliazione del gruppo corrispondono a quelli dei servizi di dominio Active Directory.</span><span class="sxs-lookup"><span data-stu-id="85faa-129">The AffCheck tool confirms that the Persistent Chat back-end database user and group affiliation records match that of Active Directory Domain Services.</span></span>
+  - <span data-ttu-id="5791e-122">ChatMonitoringSummary</span><span class="sxs-lookup"><span data-stu-id="5791e-122">ChatMonitoringSummary</span></span>
 
-</div>
+  - <span data-ttu-id="5791e-123">Strumento ChatStress</span><span class="sxs-lookup"><span data-stu-id="5791e-123">ChatStress Tool</span></span>
 
-<div>
+  - <span data-ttu-id="5791e-124">ChatUpgradeVerifier</span><span class="sxs-lookup"><span data-stu-id="5791e-124">ChatUpgradeVerifier</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="85faa-130">Requisiti</span><span class="sxs-lookup"><span data-stu-id="85faa-130">Requirements</span></span>
+  - <span data-ttu-id="5791e-125">ChatUsageReport</span><span class="sxs-lookup"><span data-stu-id="5791e-125">ChatUsageReport</span></span>
 
-<span data-ttu-id="85faa-131">Lo strumento viene installato con il programma di installazione di PersistentChatResKit in un computer unito a un dominio.</span><span class="sxs-lookup"><span data-stu-id="85faa-131">The tool is installed with the PersistentChatResKit installer on a domain joined machine.</span></span>
-
-<span data-ttu-id="85faa-132">L'account utente in cui viene eseguito lo strumento deve avere accesso in lettura al database back-end della chat persistente e ai servizi di dominio Active Directory.</span><span class="sxs-lookup"><span data-stu-id="85faa-132">The user account under which the tool is run must have Read access to the Persistent Chat back-end database and Active Directory Domain Services.</span></span>
+  - <span data-ttu-id="5791e-126">ScheduleADSyncforPrincipal</span><span class="sxs-lookup"><span data-stu-id="5791e-126">ScheduleADSyncforPrincipal</span></span>
 
 </div>
 
 <div>
 
-## <a name="usage"></a><span data-ttu-id="85faa-133">L'uso</span><span class="sxs-lookup"><span data-stu-id="85faa-133">Usage</span></span>
+## <a name="affcheck"></a><span data-ttu-id="5791e-127">AffCheck</span><span class="sxs-lookup"><span data-stu-id="5791e-127">AffCheck</span></span>
 
-<span data-ttu-id="85faa-134">Configura il file AffCheck. exe. config in base alle istruzioni nel file di configurazione ed Esegui lo strumento AffCheck senza parametri della riga di comando.</span><span class="sxs-lookup"><span data-stu-id="85faa-134">Configure the AffCheck.exe.config file according to the instructions in the config file and run the AffCheck tool without command-line parameters.</span></span> <span data-ttu-id="85faa-135">Di seguito sono riportati i contenuti dell'impostazione predefinita AffCheck. exe. config.</span><span class="sxs-lookup"><span data-stu-id="85faa-135">Following are the contents of the default AffCheck.exe.config.</span></span>
+<div>
 
-<span data-ttu-id="85faa-136">**AffCheck. exe. config:**</span><span class="sxs-lookup"><span data-stu-id="85faa-136">**AffCheck.exe.config:**</span></span>
+## <a name="description"></a><span data-ttu-id="5791e-128">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5791e-128">Description</span></span>
+
+<span data-ttu-id="5791e-129">Lo strumento AffCheck conferma che l'utente del database back-end di chat persistente e i record di affiliazione di gruppo corrispondono a quelli dei servizi di dominio Active Directory.</span><span class="sxs-lookup"><span data-stu-id="5791e-129">The AffCheck tool confirms that the Persistent Chat back-end database user and group affiliation records match that of Active Directory Domain Services.</span></span>
+
+</div>
+
+<div>
+
+## <a name="requirements"></a><span data-ttu-id="5791e-130">Requisiti</span><span class="sxs-lookup"><span data-stu-id="5791e-130">Requirements</span></span>
+
+<span data-ttu-id="5791e-131">Lo strumento viene installato con il programma di installazione di PersistentChatResKit in un computer aggiunto a un dominio.</span><span class="sxs-lookup"><span data-stu-id="5791e-131">The tool is installed with the PersistentChatResKit installer on a domain joined machine.</span></span>
+
+<span data-ttu-id="5791e-132">L'account utente con cui viene eseguito lo strumento deve disporre dell'accesso in lettura al database back-end della chat persistente e ai servizi di dominio Active Directory.</span><span class="sxs-lookup"><span data-stu-id="5791e-132">The user account under which the tool is run must have Read access to the Persistent Chat back-end database and Active Directory Domain Services.</span></span>
+
+</div>
+
+<div>
+
+## <a name="usage"></a><span data-ttu-id="5791e-133">Usage</span><span class="sxs-lookup"><span data-stu-id="5791e-133">Usage</span></span>
+
+<span data-ttu-id="5791e-134">Configurare il file AffCheck. exe. config seguendo le istruzioni riportate nel file di configurazione ed eseguire lo strumento AffCheck senza parametri della riga di comando.</span><span class="sxs-lookup"><span data-stu-id="5791e-134">Configure the AffCheck.exe.config file according to the instructions in the config file and run the AffCheck tool without command-line parameters.</span></span> <span data-ttu-id="5791e-135">Di seguito sono riportati i contenuti del file AffCheck. exe. config predefinito.</span><span class="sxs-lookup"><span data-stu-id="5791e-135">Following are the contents of the default AffCheck.exe.config.</span></span>
+
+<span data-ttu-id="5791e-136">**AffCheck. exe. config:**</span><span class="sxs-lookup"><span data-stu-id="5791e-136">**AffCheck.exe.config:**</span></span>
 
 ```XML
     <?xml version="1.0" encoding="utf-8" ?>
@@ -155,49 +155,49 @@ ms.locfileid: "41739416"
 
 <div>
 
-## <a name="chatmonitoringsummary"></a><span data-ttu-id="85faa-137">ChatMonitoringSummary</span><span class="sxs-lookup"><span data-stu-id="85faa-137">ChatMonitoringSummary</span></span>
+## <a name="chatmonitoringsummary"></a><span data-ttu-id="5791e-137">ChatMonitoringSummary</span><span class="sxs-lookup"><span data-stu-id="5791e-137">ChatMonitoringSummary</span></span>
 
 <div>
 
-## <a name="description"></a><span data-ttu-id="85faa-138">Descrizione</span><span class="sxs-lookup"><span data-stu-id="85faa-138">Description</span></span>
+## <a name="description"></a><span data-ttu-id="5791e-138">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5791e-138">Description</span></span>
 
-<span data-ttu-id="85faa-139">Lo strumento PersistentChatMonitoringSummary sposta le informazioni di monitoraggio della chat persistente dal database di monitoraggio in un file di log CSV specificato.</span><span class="sxs-lookup"><span data-stu-id="85faa-139">The PersistentChatMonitoringSummary tool moves Persistent Chat monitoring information from the monitoring database into a specified CSV log file.</span></span>
+<span data-ttu-id="5791e-139">Lo strumento PersistentChatMonitoringSummary sposta le informazioni di monitoraggio della chat persistente dal database di monitoraggio in un file di registro CSV specificato.</span><span class="sxs-lookup"><span data-stu-id="5791e-139">The PersistentChatMonitoringSummary tool moves Persistent Chat monitoring information from the monitoring database into a specified CSV log file.</span></span>
 
-<span data-ttu-id="85faa-140">Il file CSV conterrà una ripartizione delle sessioni di chat persistenti in base al numero di sessioni totali, sessioni di successo, errori imprevisti, errori previsti e una ripartizione degli errori imprevisti per ID diagnostica, numero di errori e Descrizione dell'errore.</span><span class="sxs-lookup"><span data-stu-id="85faa-140">The CSV file will contain a breakdown of Persistent Chat sessions by number of total sessions, successful sessions, unexpected failures, expected failures, and a breakdown of the unexpected failures by diagnostic ID, number of failures, and failure description.</span></span>
+<span data-ttu-id="5791e-140">Il file CSV conterrà una ripartizione delle sessioni di chat persistente per numero di sessioni totali, sessioni riuscite, errori imprevisti, errori previsti e una ripartizione degli errori imprevisti in base all'ID diagnostica, al numero di errori e alla descrizione dell'errore.</span><span class="sxs-lookup"><span data-stu-id="5791e-140">The CSV file will contain a breakdown of Persistent Chat sessions by number of total sessions, successful sessions, unexpected failures, expected failures, and a breakdown of the unexpected failures by diagnostic ID, number of failures, and failure description.</span></span>
 
 </div>
 
 <div>
 
-## <a name="requirements"></a><span data-ttu-id="85faa-141">Requisiti</span><span class="sxs-lookup"><span data-stu-id="85faa-141">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="5791e-141">Requisiti</span><span class="sxs-lookup"><span data-stu-id="5791e-141">Requirements</span></span>
 
-<span data-ttu-id="85faa-142">Installare gli strumenti del Resource Kit della chat persistente in un computer collegato al dominio che abbia accesso al database di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="85faa-142">Install the Persistent Chat Resource Kit tools on a domain-joined machine that has access to the Monitoring database.</span></span>
+<span data-ttu-id="5791e-142">Installare gli strumenti del Resource Kit di Persistent Chat in un computer appartenente a un dominio che ha accesso al database di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="5791e-142">Install the Persistent Chat Resource Kit tools on a domain-joined machine that has access to the Monitoring database.</span></span>
 
-<span data-ttu-id="85faa-143">L'account utente in cui viene eseguito lo strumento deve avere accesso in lettura al database di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="85faa-143">The user account under which the tool runs must have Read access to the Monitoring database.</span></span>
+<span data-ttu-id="5791e-143">L'account utente utilizzato per eseguire lo strumento deve disporre dell'accesso in lettura al database di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="5791e-143">The user account under which the tool runs must have Read access to the Monitoring database.</span></span>
 
-<span data-ttu-id="85faa-144">Il file PersistentChatMonitoringSummary. exe. config deve contenere una \<sezione connectionStrings\> che definisce la stringa di connessione al database di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="85faa-144">The file, PersistentChatMonitoringSummary.exe.config, must contain a \<connectionStrings\> section that defines the connection string to the Monitoring database.</span></span> <span data-ttu-id="85faa-145">Deve inoltre contenere una chiave per il PersistentChatEndpointUri in cui verranno raccolti i dati di monitoraggio e un percorso di file in una posizione per il file CSV che verrà generato.</span><span class="sxs-lookup"><span data-stu-id="85faa-145">It must also contain a key for the PersistentChatEndpointUri that the monitoring data will be gathered for, and a file path to a location for the CSV file that will be generated.</span></span> <span data-ttu-id="85faa-146">Per gli esempi, vedere il file di configurazione installato.</span><span class="sxs-lookup"><span data-stu-id="85faa-146">Refer to the installed config file for examples.</span></span> <span data-ttu-id="85faa-147">Il file deve trovarsi nella stessa directory dello strumento.</span><span class="sxs-lookup"><span data-stu-id="85faa-147">The file must be located in the same directory as the tool.</span></span>
+<span data-ttu-id="5791e-144">Il file PersistentChatMonitoringSummary. exe. config deve contenere una \<sezione connectionStrings\> che definisce la stringa di connessione al database di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="5791e-144">The file, PersistentChatMonitoringSummary.exe.config, must contain a \<connectionStrings\> section that defines the connection string to the Monitoring database.</span></span> <span data-ttu-id="5791e-145">Deve inoltre contenere una chiave per la PersistentChatEndpointUri in cui verranno raccolti i dati di monitoraggio e il percorso di un file per il file CSV che verrà generato.</span><span class="sxs-lookup"><span data-stu-id="5791e-145">It must also contain a key for the PersistentChatEndpointUri that the monitoring data will be gathered for, and a file path to a location for the CSV file that will be generated.</span></span> <span data-ttu-id="5791e-146">Per esempi, fare riferimento al file di configurazione installato.</span><span class="sxs-lookup"><span data-stu-id="5791e-146">Refer to the installed config file for examples.</span></span> <span data-ttu-id="5791e-147">Il file deve trovarsi nella stessa directory dello strumento.</span><span class="sxs-lookup"><span data-stu-id="5791e-147">The file must be located in the same directory as the tool.</span></span>
 
 </div>
 
 <div>
 
-## <a name="usage"></a><span data-ttu-id="85faa-148">L'uso</span><span class="sxs-lookup"><span data-stu-id="85faa-148">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="5791e-148">Usage</span><span class="sxs-lookup"><span data-stu-id="5791e-148">Usage</span></span>
 
 ```Batch
     PersistentChatMonitoringSummary [-StartDateTime <date>] [-EndDateTime <date>]
 ```
 
-<span data-ttu-id="85faa-149">Questi parametri definiscono la selezione dei dati:</span><span class="sxs-lookup"><span data-stu-id="85faa-149">These parameters define the selection of data:</span></span>
+<span data-ttu-id="5791e-149">Questi parametri definiscono la selezione dei dati:</span><span class="sxs-lookup"><span data-stu-id="5791e-149">These parameters define the selection of data:</span></span>
 
-<span data-ttu-id="85faa-150">**StartDateTime:** Facoltativamente, specifica la data di inizio del periodo di selezione.</span><span class="sxs-lookup"><span data-stu-id="85faa-150">**StartDateTime:** Optionally specifies the start date of the selection period.</span></span> <span data-ttu-id="85faa-151">Impostazione predefinita: 1/1/1753 12:00:00 AM</span><span class="sxs-lookup"><span data-stu-id="85faa-151">Default: 1/1/1753 12:00:00 AM</span></span>
+<span data-ttu-id="5791e-150">**StartDateTime:** Facoltativamente, specifica la data di inizio del periodo di selezione.</span><span class="sxs-lookup"><span data-stu-id="5791e-150">**StartDateTime:** Optionally specifies the start date of the selection period.</span></span> <span data-ttu-id="5791e-151">Valore predefinito: 1/1/1753 12:00:00 AM</span><span class="sxs-lookup"><span data-stu-id="5791e-151">Default: 1/1/1753 12:00:00 AM</span></span>
 
-<span data-ttu-id="85faa-152">**EndDateTime:** Facoltativamente, specifica l'ultima data del periodo di selezione.</span><span class="sxs-lookup"><span data-stu-id="85faa-152">**EndDateTime:** Optionally specifies the last date of the selection period.</span></span> <span data-ttu-id="85faa-153">Impostazione predefinita: ora</span><span class="sxs-lookup"><span data-stu-id="85faa-153">Default: Now</span></span>
+<span data-ttu-id="5791e-152">**EndDateTime:** Facoltativamente, specifica l'ultima data del periodo di selezione.</span><span class="sxs-lookup"><span data-stu-id="5791e-152">**EndDateTime:** Optionally specifies the last date of the selection period.</span></span> <span data-ttu-id="5791e-153">Valore predefinito: ora</span><span class="sxs-lookup"><span data-stu-id="5791e-153">Default: Now</span></span>
 
 </div>
 
 <div>
 
-## <a name="example"></a><span data-ttu-id="85faa-154">Esempio</span><span class="sxs-lookup"><span data-stu-id="85faa-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5791e-154">Esempio</span><span class="sxs-lookup"><span data-stu-id="5791e-154">Example</span></span>
 
 ```Batch
     C:\Users\Administrator.VDOMAIN>Desktop\PersistentChatMonitoringSummary.exe
@@ -216,124 +216,80 @@ ms.locfileid: "41739416"
 
 <div>
 
-## <a name="persistent-chat-stress-tool"></a><span data-ttu-id="85faa-155">Strumento di stress per la chat persistente</span><span class="sxs-lookup"><span data-stu-id="85faa-155">Persistent Chat Stress Tool</span></span>
+## <a name="persistent-chat-stress-tool"></a><span data-ttu-id="5791e-155">Strumento di stress per chat persistente</span><span class="sxs-lookup"><span data-stu-id="5791e-155">Persistent Chat Stress Tool</span></span>
 
 <div>
 
-## <a name="description"></a><span data-ttu-id="85faa-156">Descrizione</span><span class="sxs-lookup"><span data-stu-id="85faa-156">Description</span></span>
+## <a name="description"></a><span data-ttu-id="5791e-156">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5791e-156">Description</span></span>
 
-<span data-ttu-id="85faa-157">Lo strumento di stress per la chat persistente offre un modo semplice per simulare l'uso della chat persistente per testare le prestazioni reali, inclusi i vari modelli di utenti per adattarsi meglio agli scenari di utilizzo previsti.</span><span class="sxs-lookup"><span data-stu-id="85faa-157">The Persistent Chat Stress tool provides an easy way to simulate usage of Persistent Chat to test real-world performance, including varied user models to better fit your expected usage scenarios.</span></span>
+<span data-ttu-id="5791e-157">Lo strumento di stress per la chat persistente rappresenta un modo semplice per simulare l'utilizzo di chat persistente per testare le prestazioni del mondo reale, compresi i modelli di utenti diversi per adattarsi meglio agli scenari di utilizzo previsti.</span><span class="sxs-lookup"><span data-stu-id="5791e-157">The Persistent Chat Stress tool provides an easy way to simulate usage of Persistent Chat to test real-world performance, including varied user models to better fit your expected usage scenarios.</span></span>
 
 </div>
 
 <div>
 
-## <a name="requirements"></a><span data-ttu-id="85faa-158">Requisiti</span><span class="sxs-lookup"><span data-stu-id="85faa-158">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="5791e-158">Requisiti</span><span class="sxs-lookup"><span data-stu-id="5791e-158">Requirements</span></span>
 
-<span data-ttu-id="85faa-159">Installare gli strumenti del Resource Kit di chat persistenti in un computer collegato al dominio che abbia accesso al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-159">Install the Persistent Chat Resource Kit tools onto a domain-joined machine that has access to the Persistent Chat back-end database.</span></span>
+<span data-ttu-id="5791e-159">Installare gli strumenti del Resource Kit di Persistent Chat su un computer aggiunto a un dominio che ha accesso al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5791e-159">Install the Persistent Chat Resource Kit tools onto a domain-joined machine that has access to the Persistent Chat back-end database.</span></span>
 
-<span data-ttu-id="85faa-160">Oltre a questo *controller* , è necessario disporre di diversi computer di *caricamento* .</span><span class="sxs-lookup"><span data-stu-id="85faa-160">In addition to this *controller* machine, you will need several *loader* machines.</span></span> <span data-ttu-id="85faa-161">Per tutti gli utenti di 10K nel modello utente, è necessario almeno 4GB di RAM gratuita in un caricatore.</span><span class="sxs-lookup"><span data-stu-id="85faa-161">For every 10K users in your user model, you will need at least 4GB of free RAM on a loader machine.</span></span> <span data-ttu-id="85faa-162">Ad esempio, una corsa con gli utenti di 80K richiederà circa 32GB di RAM distribuiti in tutti i computer Loader.</span><span class="sxs-lookup"><span data-stu-id="85faa-162">For example, a run with 80K users will require about 32GB of RAM spread across all loader machines.</span></span> <span data-ttu-id="85faa-163">È consigliabile disporre di almeno tre computer loader, indipendentemente dal carico previsto.</span><span class="sxs-lookup"><span data-stu-id="85faa-163">We recommend that you have at least three loader machines, regardless of expected load.</span></span>
+<span data-ttu-id="5791e-160">Oltre a questo computer *controller* , sono necessari diversi computer di *caricamento* .</span><span class="sxs-lookup"><span data-stu-id="5791e-160">In addition to this *controller* machine, you will need several *loader* machines.</span></span> <span data-ttu-id="5791e-161">Per tutti gli utenti di 10K nel modello utente, sarà necessario almeno 4GB di RAM libera su un computer caricatore.</span><span class="sxs-lookup"><span data-stu-id="5791e-161">For every 10K users in your user model, you will need at least 4GB of free RAM on a loader machine.</span></span> <span data-ttu-id="5791e-162">Ad esempio, una corsa con gli utenti di 80K richiede circa 32GB di RAM sparsa su tutti i computer del caricatore.</span><span class="sxs-lookup"><span data-stu-id="5791e-162">For example, a run with 80K users will require about 32GB of RAM spread across all loader machines.</span></span> <span data-ttu-id="5791e-163">È consigliabile disporre di almeno tre macchine del caricatore, indipendentemente dal carico previsto.</span><span class="sxs-lookup"><span data-stu-id="5791e-163">We recommend that you have at least three loader machines, regardless of expected load.</span></span>
 
-<span data-ttu-id="85faa-164">I computer Loader devono avere il Framework .NET 4,5 e l'installazione di Visual C++ 2012 ridistribuibile.</span><span class="sxs-lookup"><span data-stu-id="85faa-164">Loader machines must have the .NET 4.5 Framework as well as the Visual C++ 2012 Redistributable installed.</span></span>
+<span data-ttu-id="5791e-164">I computer del caricatore devono disporre di .NET 4,5 Framework e di Visual C++ 2012 Redistributable installato.</span><span class="sxs-lookup"><span data-stu-id="5791e-164">Loader machines must have the .NET 4.5 Framework as well as the Visual C++ 2012 Redistributable installed.</span></span>
 
 </div>
 
 <div>
 
-## <a name="configuration"></a><span data-ttu-id="85faa-165">Configurazione</span><span class="sxs-lookup"><span data-stu-id="85faa-165">Configuration</span></span>
+## <a name="configuration"></a><span data-ttu-id="5791e-165">Configurazione</span><span class="sxs-lookup"><span data-stu-id="5791e-165">Configuration</span></span>
 
-<span data-ttu-id="85faa-166">Copiare i file di ChatStressTool in una cartella condivisa accessibile da tutti i computer Loader.</span><span class="sxs-lookup"><span data-stu-id="85faa-166">Copy ChatStressTool files into a shared folder accessible from all loader machines.</span></span>
+<span data-ttu-id="5791e-166">Copiare i file di ChatStressTool in una cartella condivisa accessibile da tutti i computer del caricatore.</span><span class="sxs-lookup"><span data-stu-id="5791e-166">Copy ChatStressTool files into a shared folder accessible from all loader machines.</span></span>
 
-<span data-ttu-id="85faa-167">Creare utenti e canali da usare durante l'esecuzione della sollecitazione:</span><span class="sxs-lookup"><span data-stu-id="85faa-167">Create users and channels for use in the stress run:</span></span>
+<span data-ttu-id="5791e-167">Creare gli utenti e i canali da utilizzare nell'esecuzione dello sforzo:</span><span class="sxs-lookup"><span data-stu-id="5791e-167">Create users and channels for use in the stress run:</span></span>
 
-  - <span data-ttu-id="85faa-168">Consente di creare il numero di utenti che richiede il modello utente, abilitarli per Lync e impostare i criteri di persistenza della chat su Enabled.</span><span class="sxs-lookup"><span data-stu-id="85faa-168">Create as many users as your user model calls for, enable them for Lync, and set their Persistent Chat policy to Enabled.</span></span>
+  - <span data-ttu-id="5791e-168">Creare tutti gli utenti per le chiamate del modello utente, abilitarli per Lync e impostare i criteri di Persistent Chat su abilitato.</span><span class="sxs-lookup"><span data-stu-id="5791e-168">Create as many users as your user model calls for, enable them for Lync, and set their Persistent Chat policy to Enabled.</span></span>
 
-  - <span data-ttu-id="85faa-169">Creare una categoria per i canali di stress e quindi creare il numero di sale necessario in tale categoria.</span><span class="sxs-lookup"><span data-stu-id="85faa-169">Create a category for your stress channels, and then create as many rooms as are needed under that category.</span></span> <span data-ttu-id="85faa-170">La categoria dovrebbe avere tutti gli utenti di stress nell'elenco **consentiti** (tramite l'aggiunta della propria UO) e le sale di stress dovrebbero avere un'impostazione di privacy **aperta**.</span><span class="sxs-lookup"><span data-stu-id="85faa-170">The category should have all stress users in its **Allowed** list (by way of adding their OU), and stress rooms should have a privacy setting of **Open**.</span></span>
+  - <span data-ttu-id="5791e-169">Creare una categoria per i canali di stress e quindi creare il numero di spazi necessari per tale categoria.</span><span class="sxs-lookup"><span data-stu-id="5791e-169">Create a category for your stress channels, and then create as many rooms as are needed under that category.</span></span> <span data-ttu-id="5791e-170">La categoria deve disporre di tutti gli utenti di stress nell'elenco **consentiti** (aggiungendo la propria unità organizzativa) e le sale di stress devono avere un'impostazione di privacy **aperta**.</span><span class="sxs-lookup"><span data-stu-id="5791e-170">The category should have all stress users in its **Allowed** list (by way of adding their OU), and stress rooms should have a privacy setting of **Open**.</span></span>
 
-  - <span data-ttu-id="85faa-171">È consigliabile creare sale di stress extra.</span><span class="sxs-lookup"><span data-stu-id="85faa-171">We recommend creating extra stress rooms.</span></span> <span data-ttu-id="85faa-172">È possibile creare sale di 50.000 con il comando di interfaccia della riga di comando di Windows PowerShell seguente:</span><span class="sxs-lookup"><span data-stu-id="85faa-172">You can create 50,000 rooms with the following Windows PowerShell command-line interface command:</span></span>
+  - <span data-ttu-id="5791e-171">Si consiglia di creare sale per la sollecitazione aggiuntive.</span><span class="sxs-lookup"><span data-stu-id="5791e-171">We recommend creating extra stress rooms.</span></span> <span data-ttu-id="5791e-172">È possibile creare 50.000 sale con il seguente comando dell'interfaccia della riga di comando di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="5791e-172">You can create 50,000 rooms with the following Windows PowerShell command-line interface command:</span></span>
     ```Powershell
         for ($i = 0; $i -le 50000; $i++) { New-CsPersistentChatRoom -Category <parent category> -Name "StressChan_$i" -Privacy Open }
     ```    
 
-<span data-ttu-id="85faa-173">Modificare i file di configurazione per adattarli alla topologia:</span><span class="sxs-lookup"><span data-stu-id="85faa-173">Edit the configuration files to fit your topology:</span></span>
+<span data-ttu-id="5791e-173">Modificare i file di configurazione per adattarli alla topologia:</span><span class="sxs-lookup"><span data-stu-id="5791e-173">Edit the configuration files to fit your topology:</span></span>
 
-<span data-ttu-id="85faa-174">In **LoaderProcess. exe. config**modificare "controller.contoso.com" con il nome di dominio completo (FQDN) del computer del controller.</span><span class="sxs-lookup"><span data-stu-id="85faa-174">In **LoaderProcess.exe.config**, change “controller.contoso.com” to the controller machine’s fully qualified domain name (FQDN).</span></span>
+<span data-ttu-id="5791e-174">In **LoaderProcess. exe. config**, impostare "controller.contoso.com" sul nome di dominio completo (FQDN) del computer del controller.</span><span class="sxs-lookup"><span data-stu-id="5791e-174">In **LoaderProcess.exe.config**, change “controller.contoso.com” to the controller machine’s fully qualified domain name (FQDN).</span></span>
 
-<span data-ttu-id="85faa-175">In **StressLauncher. exe. config:**</span><span class="sxs-lookup"><span data-stu-id="85faa-175">In **StressLauncher.exe.config:**</span></span>
+<span data-ttu-id="5791e-175">In **StressLauncher. exe. config:**</span><span class="sxs-lookup"><span data-stu-id="5791e-175">In **StressLauncher.exe.config:**</span></span>
 
-1.  <span data-ttu-id="85faa-176">Modificare il valore dell'impostazione "LoaderBinary" nel percorso della cartella condivisa.</span><span class="sxs-lookup"><span data-stu-id="85faa-176">Change the “LoaderBinary” setting value to the shared folder’s path.</span></span>
+1.  <span data-ttu-id="5791e-176">Modificare il valore dell'impostazione "LoaderBinary" nel percorso della cartella condivisa.</span><span class="sxs-lookup"><span data-stu-id="5791e-176">Change the “LoaderBinary” setting value to the shared folder’s path.</span></span>
 
-2.  <span data-ttu-id="85faa-177">Modificare "AdminUser"/"AdminPassword" in credenziali con accesso amministratore ai computer Loader.</span><span class="sxs-lookup"><span data-stu-id="85faa-177">Change “AdminUser”/”AdminPassword” to credentials that have admin access to loader machines.</span></span>
+2.  <span data-ttu-id="5791e-177">Modificare "AdminUser"/"AdminPassword" in credenziali che dispongono dell'accesso di amministratore ai computer del caricatore.</span><span class="sxs-lookup"><span data-stu-id="5791e-177">Change “AdminUser”/”AdminPassword” to credentials that have admin access to loader machines.</span></span>
 
-3.  <span data-ttu-id="85faa-178">Modificare "ChannelCategory" con il nome della categoria in cui sono stati creati i canali di sollecitazione.</span><span class="sxs-lookup"><span data-stu-id="85faa-178">Change “ChannelCategory” to the name of the category that stress channels have been created under.</span></span>
+3.  <span data-ttu-id="5791e-178">Modificare "ChannelCategory" con il nome della categoria in cui sono stati creati i canali di sollecito.</span><span class="sxs-lookup"><span data-stu-id="5791e-178">Change “ChannelCategory” to the name of the category that stress channels have been created under.</span></span>
 
-4.  <span data-ttu-id="85faa-179">Modificare "UserNamePattern" e "UserPasswordPattern" in un modello che corrisponda alle credenziali utente di stress.</span><span class="sxs-lookup"><span data-stu-id="85faa-179">Change “UserNamePattern” and “UserPasswordPattern” to a template that matches your stress user credentials.</span></span> <span data-ttu-id="85faa-180">{0}viene sostituito con il numero di indice dell'utente.</span><span class="sxs-lookup"><span data-stu-id="85faa-180">{0} is replaced with the user’s index number.</span></span>
+4.  <span data-ttu-id="5791e-179">Modificare "UserNamePattern" e "UserPasswordPattern" in un modello corrispondente alle credenziali utente di stress.</span><span class="sxs-lookup"><span data-stu-id="5791e-179">Change “UserNamePattern” and “UserPasswordPattern” to a template that matches your stress user credentials.</span></span> <span data-ttu-id="5791e-180">{0}viene sostituito con il numero di indice dell'utente.</span><span class="sxs-lookup"><span data-stu-id="5791e-180">{0} is replaced with the user’s index number.</span></span>
 
-5.  <span data-ttu-id="85faa-181">Modificare "Domain" nel dominio SIP della topologia di test.</span><span class="sxs-lookup"><span data-stu-id="85faa-181">Change “Domain” to the SIP domain of your test topology.</span></span>
+5.  <span data-ttu-id="5791e-181">Modificare "dominio" nel dominio SIP della topologia di test.</span><span class="sxs-lookup"><span data-stu-id="5791e-181">Change “Domain” to the SIP domain of your test topology.</span></span>
 
-6.  <span data-ttu-id="85faa-182">Modificare "ConnectionString" in una stringa di connessione per il database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-182">Change “ConnectionString” to a connection string for your Persistent Chat back-end database.</span></span>
+6.  <span data-ttu-id="5791e-182">Modificare "ConnectionString" in una stringa di connessione per il database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5791e-182">Change “ConnectionString” to a connection string for your Persistent Chat back-end database.</span></span>
 
-7.  <span data-ttu-id="85faa-183">Modificare "UserIndexStart" con l'indice del primo utente di stress.</span><span class="sxs-lookup"><span data-stu-id="85faa-183">Change “UserIndexStart” to the index of the first stress user.</span></span>
+7.  <span data-ttu-id="5791e-183">Impostare "UserIndexStart" sull'indice del primo utente di stress.</span><span class="sxs-lookup"><span data-stu-id="5791e-183">Change “UserIndexStart” to the index of the first stress user.</span></span>
 
-8.  <span data-ttu-id="85faa-184">Modificare "LyncFQDN" con il nome di dominio completo del pool Front-end.</span><span class="sxs-lookup"><span data-stu-id="85faa-184">Change “LyncFQDN” to the FQDN of your Front End pool.</span></span>
+8.  <span data-ttu-id="5791e-184">Modificare "LyncFQDN" con il nome di dominio completo del pool Front end.</span><span class="sxs-lookup"><span data-stu-id="5791e-184">Change “LyncFQDN” to the FQDN of your Front End pool.</span></span>
 
-9.  <span data-ttu-id="85faa-185">Modificare l'elenco "macchine" per includere i nomi dei computer per tutti i computer del caricatore.</span><span class="sxs-lookup"><span data-stu-id="85faa-185">Modify the “Machines” list to include machine names for all of your loader machines.</span></span>
+9.  <span data-ttu-id="5791e-185">Modificare l'elenco "macchine" per includere i nomi dei computer per tutti i computer del caricatore.</span><span class="sxs-lookup"><span data-stu-id="5791e-185">Modify the “Machines” list to include machine names for all of your loader machines.</span></span>
 
-10. <span data-ttu-id="85faa-186">Modificare il baseAddress dell'endpoint del servizio (il valore predefinito è "controller.contoso.com") con il nome di dominio completo del computer del controller.</span><span class="sxs-lookup"><span data-stu-id="85faa-186">Change the baseAddress of the service endpoint (default is “controller.contoso.com”) to the FQDN of your controller machine.</span></span>
-
-</div>
-
-<div>
-
-## <a name="usage"></a><span data-ttu-id="85faa-187">L'uso</span><span class="sxs-lookup"><span data-stu-id="85faa-187">Usage</span></span>
-
-<span data-ttu-id="85faa-188">Al termine della configurazione, aprire StressLauncher. exe nel computer del controller.</span><span class="sxs-lookup"><span data-stu-id="85faa-188">After configuration is complete, open StressLauncher.exe on the controller machine.</span></span> <span data-ttu-id="85faa-189">Puoi avviare StressLauncher come qualsiasi utente.</span><span class="sxs-lookup"><span data-stu-id="85faa-189">You can launch StressLauncher as any user.</span></span> <span data-ttu-id="85faa-190">Le credenziali in cui vengono avviati i processi del caricatore nei computer Loader devono essere specificate nel file di configurazione.</span><span class="sxs-lookup"><span data-stu-id="85faa-190">The credentials under which the loader processes start on the loader machines must be specified in the config file.</span></span> <span data-ttu-id="85faa-191">Devi anche fornire una stringa di connessione che abbia accesso in lettura al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-191">You also must give a connection string that has Read access to the Persistent Chat back-end database.</span></span> <span data-ttu-id="85faa-192">Se la stringa di connessione usa l'autenticazione integrata di Windows, è necessario avviare StressLauncher come utente con questo accesso.</span><span class="sxs-lookup"><span data-stu-id="85faa-192">If this connection string uses integrated Windows authentication, you must launch StressLauncher as a user that has this access.</span></span>
-
-<span data-ttu-id="85faa-193">Modificare le impostazioni del modello utente in base alle esigenze.</span><span class="sxs-lookup"><span data-stu-id="85faa-193">Alter the user model settings as needed.</span></span> <span data-ttu-id="85faa-194">Fare clic su **Avvia caricamento** per avviare una corsa.</span><span class="sxs-lookup"><span data-stu-id="85faa-194">Click **Start Load** to initiate a run.</span></span> <span data-ttu-id="85faa-195">Dopo un minuto o giù di lì, gli utenti inizieranno a essere connessi e l'indicatore di stato inizierà a riempirsi.</span><span class="sxs-lookup"><span data-stu-id="85faa-195">After a minute or so, users will start being signed in, and the progress bar will begin to fill.</span></span> <span data-ttu-id="85faa-196">A questo punto, è possibile che la macchina di controllo funzioni e prenda misure di prestazioni.</span><span class="sxs-lookup"><span data-stu-id="85faa-196">At this point, you may can the controller machine working and take performance measurements.</span></span>
-
-</div>
+10. <span data-ttu-id="5791e-186">Modificare l'baseAddress dell'endpoint del servizio (il valore predefinito è "controller.contoso.com") con il nome di dominio completo del computer del controller.</span><span class="sxs-lookup"><span data-stu-id="5791e-186">Change the baseAddress of the service endpoint (default is “controller.contoso.com”) to the FQDN of your controller machine.</span></span>
 
 </div>
 
 <div>
 
-## <a name="chatupgradeverifier"></a><span data-ttu-id="85faa-197">ChatUpgradeVerifier</span><span class="sxs-lookup"><span data-stu-id="85faa-197">ChatUpgradeVerifier</span></span>
+## <a name="usage"></a><span data-ttu-id="5791e-187">Usage</span><span class="sxs-lookup"><span data-stu-id="5791e-187">Usage</span></span>
 
-<div>
+<span data-ttu-id="5791e-188">Al termine della configurazione, aprire StressLauncher. exe nel computer del controller.</span><span class="sxs-lookup"><span data-stu-id="5791e-188">After configuration is complete, open StressLauncher.exe on the controller machine.</span></span> <span data-ttu-id="5791e-189">È possibile avviare StressLauncher come qualsiasi utente.</span><span class="sxs-lookup"><span data-stu-id="5791e-189">You can launch StressLauncher as any user.</span></span> <span data-ttu-id="5791e-190">Le credenziali in base alle quali vengono avviati i processi del caricatore nei computer del caricatore devono essere specificate nel file di configurazione.</span><span class="sxs-lookup"><span data-stu-id="5791e-190">The credentials under which the loader processes start on the loader machines must be specified in the config file.</span></span> <span data-ttu-id="5791e-191">È inoltre necessario fornire una stringa di connessione che disponga dell'accesso in lettura al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5791e-191">You also must give a connection string that has Read access to the Persistent Chat back-end database.</span></span> <span data-ttu-id="5791e-192">Se la stringa di connessione utilizza l'autenticazione integrata di Windows, è necessario avviare StressLauncher come utente che dispone di questo accesso.</span><span class="sxs-lookup"><span data-stu-id="5791e-192">If this connection string uses integrated Windows authentication, you must launch StressLauncher as a user that has this access.</span></span>
 
-## <a name="description"></a><span data-ttu-id="85faa-198">Descrizione</span><span class="sxs-lookup"><span data-stu-id="85faa-198">Description</span></span>
-
-<span data-ttu-id="85faa-199">ChatUpgradeVerifier è uno strumento di confronto di database specifico per la chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-199">ChatUpgradeVerifier is a Persistent Chat specific database comparison tool.</span></span> <span data-ttu-id="85faa-200">Lo strumento confronta il database di Group Chat 2007 R2 o Group Chat 2010 (2007/2010Db) con il database Persistent Chat 2013 (2013Db).</span><span class="sxs-lookup"><span data-stu-id="85faa-200">The tool compares either the Group Chat 2007 R2 or Group Chat 2010 Database (2007/2010Db) to the Persistent Chat 2013 Database (2013Db).</span></span>
-
-<span data-ttu-id="85faa-201">Lo strumento controllerà, uno alla volta, ogni categoria, chat room persistente e componente aggiuntivo in 2007/2010Db per vedere se viene visualizzato nel 2013Db.</span><span class="sxs-lookup"><span data-stu-id="85faa-201">The tool will check, one by one, each category, Persistent Chat room, and add-in in 2007/2010Db to see if it appears in the 2013Db.</span></span> <span data-ttu-id="85faa-202">Il confronto include il controllo di tutte le impostazioni della categoria, della chat room o del componente aggiuntivo, di tutte le entità nell'ambito della categoria e di qualsiasi entità di un ruolo nella categoria o nella chat room.</span><span class="sxs-lookup"><span data-stu-id="85faa-202">The comparison includes checking all settings on the category, chat room, or add-in, any principals in scope on the category, and any principal in a role on either the category or the chat room.</span></span> <span data-ttu-id="85faa-203">Se una categoria o una chat room non viene visualizzata correttamente in 2013Db, le differenze verranno restituite a un file Conflicts.</span><span class="sxs-lookup"><span data-stu-id="85faa-203">If a category or a chat room does not appear correctly in the 2013Db, the differences will be output to a conflicts file.</span></span> <span data-ttu-id="85faa-204">Se, dopo l'aggiornamento, il file 2007/2010Db viene modificato e quindi viene eseguito questo strumento, verrà visualizzato un output delle differenze per i conflitti.</span><span class="sxs-lookup"><span data-stu-id="85faa-204">If, after the upgrade has occurred, the 2007/2010Db is changed and then this tool is run, there will be a differences output to the conflicts file.</span></span> <span data-ttu-id="85faa-205">Tieni presente che questa applicazione è solo uno strumento di confronto di database e non convalida il processo di aggiornamento.</span><span class="sxs-lookup"><span data-stu-id="85faa-205">Note that this application is a database comparison tool only and does not validate the upgrade process.</span></span>
-
-</div>
-
-<div>
-
-## <a name="requirements"></a><span data-ttu-id="85faa-206">Requisiti</span><span class="sxs-lookup"><span data-stu-id="85faa-206">Requirements</span></span>
-
-<span data-ttu-id="85faa-207">Installare gli strumenti del Resource Kit della chat persistente in un computer collegato al dominio che abbia accesso ai database back-end della chat persistente (versioni precedenti e correnti per la chat persistente).</span><span class="sxs-lookup"><span data-stu-id="85faa-207">Install the Persistent Chat Resource Kit tools on a domain-joined machine that has access to the Persistent Chat back-end databases (previous and current versions for Persistent Chat).</span></span>
-
-<span data-ttu-id="85faa-208">L'account utente in cui viene eseguito lo strumento deve avere accesso in lettura ai database della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-208">The user account under which the tool runs must have Read access to the Persistent Chat databases.</span></span>
-
-<span data-ttu-id="85faa-209">Il file ChatUpgradeVerifier. exe. config deve contenere il parametro GroupChat2007R2Db o il parametro GroupChat2010Db, con una stringa di connessione al database di chat di gruppo appropriato (GroupChat 2007R2 o 2010).</span><span class="sxs-lookup"><span data-stu-id="85faa-209">The ChatUpgradeVerifier.exe.config file must contain either the GroupChat2007R2Db parameter or the GroupChat2010Db parameter, with a connection string to the appropriate Group Chat database (either Groupchat 2007R2 or 2010).</span></span> <span data-ttu-id="85faa-210">Deve inoltre contenere un parametro PersistentChat2013Db, con una stringa di connessione al database della chat persistente di 2013.</span><span class="sxs-lookup"><span data-stu-id="85faa-210">It must also contain a PersistentChat2013Db parameter, with a connection string to the Persistent Chat 2013 database.</span></span>
-
-</div>
-
-<div>
-
-## <a name="usage"></a><span data-ttu-id="85faa-211">L'uso</span><span class="sxs-lookup"><span data-stu-id="85faa-211">Usage</span></span>
-
-<span data-ttu-id="85faa-212">Eseguire **ChatUpgradeVerifier** senza parametri.</span><span class="sxs-lookup"><span data-stu-id="85faa-212">Run **ChatUpgradeVerifier** without any parameters.</span></span>
-
-</div>
-
-<div>
-
-## <a name="example"></a><span data-ttu-id="85faa-213">Esempio</span><span class="sxs-lookup"><span data-stu-id="85faa-213">Example</span></span>
-
-<span data-ttu-id="85faa-214">![Esecuzione di ChatUpgradeVerifier.exe.](images/JJ945599.4c273bc3-7926-47c7-ade7-34522721ebf9(OCS.15).jpg "Esecuzione di ChatUpgradeVerifier.exe.")</span><span class="sxs-lookup"><span data-stu-id="85faa-214">![Running ChatUpgradeVerifier.exe.](images/JJ945599.4c273bc3-7926-47c7-ade7-34522721ebf9(OCS.15).jpg "Running ChatUpgradeVerifier.exe.")</span></span>
+<span data-ttu-id="5791e-193">Modificare le impostazioni del modello utente in base alle esigenze.</span><span class="sxs-lookup"><span data-stu-id="5791e-193">Alter the user model settings as needed.</span></span> <span data-ttu-id="5791e-194">Fare clic su **Avvia caricamento** per avviare una corsa.</span><span class="sxs-lookup"><span data-stu-id="5791e-194">Click **Start Load** to initiate a run.</span></span> <span data-ttu-id="5791e-195">Dopo un minuto o giù di lì, gli utenti inizieranno a essere connessi e la barra di avanzamento inizierà a essere riempita.</span><span class="sxs-lookup"><span data-stu-id="5791e-195">After a minute or so, users will start being signed in, and the progress bar will begin to fill.</span></span> <span data-ttu-id="5791e-196">A questo punto, è possibile che il computer del controller funzioni e esegua misure di prestazioni.</span><span class="sxs-lookup"><span data-stu-id="5791e-196">At this point, you may can the controller machine working and take performance measurements.</span></span>
 
 </div>
 
@@ -341,93 +297,137 @@ ms.locfileid: "41739416"
 
 <div>
 
-## <a name="persistent-chat-usage-report"></a><span data-ttu-id="85faa-215">Report sull'utilizzo della chat persistente</span><span class="sxs-lookup"><span data-stu-id="85faa-215">Persistent Chat Usage Report</span></span>
+## <a name="chatupgradeverifier"></a><span data-ttu-id="5791e-197">ChatUpgradeVerifier</span><span class="sxs-lookup"><span data-stu-id="5791e-197">ChatUpgradeVerifier</span></span>
 
 <div>
 
-## <a name="description"></a><span data-ttu-id="85faa-216">Descrizione</span><span class="sxs-lookup"><span data-stu-id="85faa-216">Description</span></span>
+## <a name="description"></a><span data-ttu-id="5791e-198">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5791e-198">Description</span></span>
 
-<span data-ttu-id="85faa-217">Lo strumento ChatUsageReport genera un report HTML di utilizzo del servizio chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-217">The ChatUsageReport tool generates an HTML report of Persistent Chat service usage.</span></span>
+<span data-ttu-id="5791e-199">ChatUpgradeVerifier è uno strumento di confronto di database specifico di chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5791e-199">ChatUpgradeVerifier is a Persistent Chat specific database comparison tool.</span></span> <span data-ttu-id="5791e-200">Lo strumento confronta il database di Group Chat 2007 R2 o Group Chat 2010 (2007/2010Db) al database di Persistent Chat 2013 (2013Db).</span><span class="sxs-lookup"><span data-stu-id="5791e-200">The tool compares either the Group Chat 2007 R2 or Group Chat 2010 Database (2007/2010Db) to the Persistent Chat 2013 Database (2013Db).</span></span>
+
+<span data-ttu-id="5791e-201">Lo strumento controllerà, una per una, ogni categoria, chat room persistente e componente aggiuntivo in 2007/2010Db per vedere se viene visualizzato in 2013Db.</span><span class="sxs-lookup"><span data-stu-id="5791e-201">The tool will check, one by one, each category, Persistent Chat room, and add-in in 2007/2010Db to see if it appears in the 2013Db.</span></span> <span data-ttu-id="5791e-202">Il confronto include la verifica di tutte le impostazioni della categoria, della chat room o del componente aggiuntivo, di qualsiasi entità nell'ambito della categoria e di qualsiasi entità in un ruolo nella categoria o nella chat.</span><span class="sxs-lookup"><span data-stu-id="5791e-202">The comparison includes checking all settings on the category, chat room, or add-in, any principals in scope on the category, and any principal in a role on either the category or the chat room.</span></span> <span data-ttu-id="5791e-203">Se una categoria o una chat room non viene visualizzata correttamente in 2013Db, le differenze verranno restituite a un file Conflicts.</span><span class="sxs-lookup"><span data-stu-id="5791e-203">If a category or a chat room does not appear correctly in the 2013Db, the differences will be output to a conflicts file.</span></span> <span data-ttu-id="5791e-204">Se dopo che si è verificato l'aggiornamento, il file 2007/2010Db è stato modificato e quindi questo strumento viene eseguito, si verificherà un output delle differenze per i conflitti.</span><span class="sxs-lookup"><span data-stu-id="5791e-204">If, after the upgrade has occurred, the 2007/2010Db is changed and then this tool is run, there will be a differences output to the conflicts file.</span></span> <span data-ttu-id="5791e-205">Si noti che questa applicazione è solo uno strumento di confronto dei database e non convalida il processo di aggiornamento.</span><span class="sxs-lookup"><span data-stu-id="5791e-205">Note that this application is a database comparison tool only and does not validate the upgrade process.</span></span>
 
 </div>
 
 <div>
 
-## <a name="requirements"></a><span data-ttu-id="85faa-218">Requisiti</span><span class="sxs-lookup"><span data-stu-id="85faa-218">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="5791e-206">Requisiti</span><span class="sxs-lookup"><span data-stu-id="5791e-206">Requirements</span></span>
 
-<span data-ttu-id="85faa-219">Installare gli strumenti del Resource Kit della chat persistente in un computer collegato al dominio che abbia accesso al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-219">Install the Persistent Chat Resource Kit tools on a domain-joined machine that has access to the Persistent Chat back-end database.</span></span>
+<span data-ttu-id="5791e-207">Installare gli strumenti del Resource Kit di Persistent Chat in un computer appartenente a un dominio che ha accesso ai database back-end della chat persistente (versioni precedenti e correnti per la chat persistente).</span><span class="sxs-lookup"><span data-stu-id="5791e-207">Install the Persistent Chat Resource Kit tools on a domain-joined machine that has access to the Persistent Chat back-end databases (previous and current versions for Persistent Chat).</span></span>
 
-<span data-ttu-id="85faa-220">L'account utente in cui viene eseguito lo strumento deve avere accesso in lettura al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-220">The user account under which the tool is run must have Read access to the Persistent Chat back-end database.</span></span>
+<span data-ttu-id="5791e-208">L'account utente utilizzato per l'esecuzione dello strumento deve disporre dell'accesso in lettura ai database di Persistent Chat.</span><span class="sxs-lookup"><span data-stu-id="5791e-208">The user account under which the tool runs must have Read access to the Persistent Chat databases.</span></span>
 
-<span data-ttu-id="85faa-221">Il file ChatUsageReport. exe. config deve contenere una \<sezione connectionStrings\> che definisce la stringa di connessione al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-221">The file, ChatUsageReport.exe.config, must contain a \<connectionStrings\> section defining the connection string to the Persistent Chat back-end database.</span></span> <span data-ttu-id="85faa-222">Il contenuto del file di configurazione predefinito è incluso qui, per il riferimento.</span><span class="sxs-lookup"><span data-stu-id="85faa-222">The contents of the default config file are included here, for your reference.</span></span>
+<span data-ttu-id="5791e-209">Il file ChatUpgradeVerifier. exe. config deve contenere il parametro GroupChat2007R2Db o il parametro GroupChat2010Db, con una stringa di connessione al database di chat di gruppo appropriato (GroupChat 2007R2 o 2010).</span><span class="sxs-lookup"><span data-stu-id="5791e-209">The ChatUpgradeVerifier.exe.config file must contain either the GroupChat2007R2Db parameter or the GroupChat2010Db parameter, with a connection string to the appropriate Group Chat database (either Groupchat 2007R2 or 2010).</span></span> <span data-ttu-id="5791e-210">Deve contenere anche un parametro PersistentChat2013Db, con una stringa di connessione al database di Persistent Chat 2013.</span><span class="sxs-lookup"><span data-stu-id="5791e-210">It must also contain a PersistentChat2013Db parameter, with a connection string to the Persistent Chat 2013 database.</span></span>
 
 </div>
 
 <div>
 
-## <a name="usage"></a><span data-ttu-id="85faa-223">L'uso</span><span class="sxs-lookup"><span data-stu-id="85faa-223">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="5791e-211">Usage</span><span class="sxs-lookup"><span data-stu-id="5791e-211">Usage</span></span>
+
+<span data-ttu-id="5791e-212">Eseguire **ChatUpgradeVerifier** senza alcun parametro.</span><span class="sxs-lookup"><span data-stu-id="5791e-212">Run **ChatUpgradeVerifier** without any parameters.</span></span>
+
+</div>
+
+<div>
+
+## <a name="example"></a><span data-ttu-id="5791e-213">Esempio</span><span class="sxs-lookup"><span data-stu-id="5791e-213">Example</span></span>
+
+<span data-ttu-id="5791e-214">![Esecuzione di ChatUpgradeVerifier. exe.](images/JJ945599.4c273bc3-7926-47c7-ade7-34522721ebf9(OCS.15).jpg "Esecuzione di ChatUpgradeVerifier. exe.")</span><span class="sxs-lookup"><span data-stu-id="5791e-214">![Running ChatUpgradeVerifier.exe.](images/JJ945599.4c273bc3-7926-47c7-ade7-34522721ebf9(OCS.15).jpg "Running ChatUpgradeVerifier.exe.")</span></span>
+
+</div>
+
+</div>
+
+<div>
+
+## <a name="persistent-chat-usage-report"></a><span data-ttu-id="5791e-215">Report sull'utilizzo di chat persistente</span><span class="sxs-lookup"><span data-stu-id="5791e-215">Persistent Chat Usage Report</span></span>
+
+<div>
+
+## <a name="description"></a><span data-ttu-id="5791e-216">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5791e-216">Description</span></span>
+
+<span data-ttu-id="5791e-217">Lo strumento ChatUsageReport genera un rapporto HTML relativo all'utilizzo del servizio chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5791e-217">The ChatUsageReport tool generates an HTML report of Persistent Chat service usage.</span></span>
+
+</div>
+
+<div>
+
+## <a name="requirements"></a><span data-ttu-id="5791e-218">Requisiti</span><span class="sxs-lookup"><span data-stu-id="5791e-218">Requirements</span></span>
+
+<span data-ttu-id="5791e-219">Installare gli strumenti del Resource Kit di Persistent Chat in un computer appartenente a un dominio che ha accesso al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5791e-219">Install the Persistent Chat Resource Kit tools on a domain-joined machine that has access to the Persistent Chat back-end database.</span></span>
+
+<span data-ttu-id="5791e-220">L'account utente con cui viene eseguito lo strumento deve disporre dell'accesso in lettura al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5791e-220">The user account under which the tool is run must have Read access to the Persistent Chat back-end database.</span></span>
+
+<span data-ttu-id="5791e-221">Il file ChatUsageReport. exe. config deve contenere una \<sezione connectionStrings\> che definisce la stringa di connessione al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5791e-221">The file, ChatUsageReport.exe.config, must contain a \<connectionStrings\> section defining the connection string to the Persistent Chat back-end database.</span></span> <span data-ttu-id="5791e-222">Il contenuto del file di configurazione predefinito è incluso qui, per il riferimento.</span><span class="sxs-lookup"><span data-stu-id="5791e-222">The contents of the default config file are included here, for your reference.</span></span>
+
+</div>
+
+<div>
+
+## <a name="usage"></a><span data-ttu-id="5791e-223">Usage</span><span class="sxs-lookup"><span data-stu-id="5791e-223">Usage</span></span>
 
 ```Powershell
     ChatUsageReport [-StartDate {date}] [-EndDate {date}] [-TopActiveUsers {n}] [-TopActiveRooms {n}] [-LeastActiveRooms {n}] [-RoomsInactiveSince {Date}] [-OutputFolder {path}]
 ```
-<span data-ttu-id="85faa-224">Questi parametri definiscono la selezione dei dati:</span><span class="sxs-lookup"><span data-stu-id="85faa-224">These parameters define the selection of data:</span></span>
+<span data-ttu-id="5791e-224">Questi parametri definiscono la selezione dei dati:</span><span class="sxs-lookup"><span data-stu-id="5791e-224">These parameters define the selection of data:</span></span>
 
-<span data-ttu-id="85faa-225">**StartDate:** Facoltativamente, specifica la data di inizio UTC del periodo di selezione.</span><span class="sxs-lookup"><span data-stu-id="85faa-225">**StartDate:** Optionally specifies the UTC start date of the selection period.</span></span> <span data-ttu-id="85faa-226">Impostazione predefinita: data meno recente</span><span class="sxs-lookup"><span data-stu-id="85faa-226">Default: Earliest Date</span></span>
+<span data-ttu-id="5791e-225">**StartDate:** Facoltativamente, specifica la data di inizio dell'ora UTC del periodo di selezione.</span><span class="sxs-lookup"><span data-stu-id="5791e-225">**StartDate:** Optionally specifies the UTC start date of the selection period.</span></span> <span data-ttu-id="5791e-226">Valore predefinito: data meno recente</span><span class="sxs-lookup"><span data-stu-id="5791e-226">Default: Earliest Date</span></span>
 
-<span data-ttu-id="85faa-227">**EndDate:** Facoltativamente, specifica la data di fine dell'ora UTC del periodo di selezione.</span><span class="sxs-lookup"><span data-stu-id="85faa-227">**EndDate:** Optionally specifies the UTC end date of the selection period.</span></span> <span data-ttu-id="85faa-228">Impostazione predefinita: ora</span><span class="sxs-lookup"><span data-stu-id="85faa-228">Default: Now</span></span>
+<span data-ttu-id="5791e-227">**EndDate:** Facoltativamente, specifica la data di fine dell'ora UTC del periodo di selezione.</span><span class="sxs-lookup"><span data-stu-id="5791e-227">**EndDate:** Optionally specifies the UTC end date of the selection period.</span></span> <span data-ttu-id="5791e-228">Valore predefinito: ora</span><span class="sxs-lookup"><span data-stu-id="5791e-228">Default: Now</span></span>
 
-<span data-ttu-id="85faa-229">Questi parametri definiscono la modalità e i dati visualizzati:</span><span class="sxs-lookup"><span data-stu-id="85faa-229">These parameters define how and what data is displayed:</span></span>
+<span data-ttu-id="5791e-229">Questi parametri definiscono come e quali dati vengono visualizzati:</span><span class="sxs-lookup"><span data-stu-id="5791e-229">These parameters define how and what data is displayed:</span></span>
 
-<span data-ttu-id="85faa-230">**TopActiveUsers:** Se specificato, il report includerà l'n utenti più attivi in termini di numero di messaggi pubblicati dall'utente nella chat room per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="85faa-230">**TopActiveUsers:** If this is specified, the report will include the n most active users in terms of the number of messages the user has posted in the chat room for the selected period.</span></span> <span data-ttu-id="85faa-231">Impostazione predefinita: 10</span><span class="sxs-lookup"><span data-stu-id="85faa-231">Default: 10</span></span>
+<span data-ttu-id="5791e-230">**TopActiveUsers:** Se si specifica questo valore, il report includerà gli utenti n più attivi in termini di numero di messaggi inviati dall'utente nella chat room per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="5791e-230">**TopActiveUsers:** If this is specified, the report will include the n most active users in terms of the number of messages the user has posted in the chat room for the selected period.</span></span> <span data-ttu-id="5791e-231">Predefinito: 10</span><span class="sxs-lookup"><span data-stu-id="5791e-231">Default: 10</span></span>
 
-<span data-ttu-id="85faa-232">**TopActiveRooms:** Se specificato, il report includerà la n chat room più attiva in termini di numero di messaggi pubblicati nella sala per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="85faa-232">**TopActiveRooms:** If this is specified, the report will include the n most active chat rooms in terms of the number of messages posted in the room for the selected period.</span></span> <span data-ttu-id="85faa-233">Impostazione predefinita: 10</span><span class="sxs-lookup"><span data-stu-id="85faa-233">Default: 10</span></span>
+<span data-ttu-id="5791e-232">**TopActiveRooms:** Se si specifica questo valore, il report includerà le chat room di n più attive in termini di numero di messaggi inseriti nella sala per il periodo di tempo selezionato.</span><span class="sxs-lookup"><span data-stu-id="5791e-232">**TopActiveRooms:** If this is specified, the report will include the n most active chat rooms in terms of the number of messages posted in the room for the selected period.</span></span> <span data-ttu-id="5791e-233">Predefinito: 10</span><span class="sxs-lookup"><span data-stu-id="5791e-233">Default: 10</span></span>
 
-<span data-ttu-id="85faa-234">**LeastActiveRooms:** Se specificato, il report includerà le chat room meno attive in termini di numero di messaggi pubblicati nella chat room per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="85faa-234">**LeastActiveRooms:** If this is specified, the report will include the n least active chat rooms in terms of the number of messages posted in the chat room for the selected period.</span></span> <span data-ttu-id="85faa-235">Le camere avranno almeno un messaggio pubblicato.</span><span class="sxs-lookup"><span data-stu-id="85faa-235">Rooms will have at least one message posted.</span></span> <span data-ttu-id="85faa-236">Impostazione predefinita: 10</span><span class="sxs-lookup"><span data-stu-id="85faa-236">Default: 10</span></span>
+<span data-ttu-id="5791e-234">**LeastActiveRooms:** Se si specifica questo valore, il report includerà le chat room n meno attive in termini di numero di messaggi pubblicati nella chat room per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="5791e-234">**LeastActiveRooms:** If this is specified, the report will include the n least active chat rooms in terms of the number of messages posted in the chat room for the selected period.</span></span> <span data-ttu-id="5791e-235">Le sale avranno almeno un messaggio inviato.</span><span class="sxs-lookup"><span data-stu-id="5791e-235">Rooms will have at least one message posted.</span></span> <span data-ttu-id="5791e-236">Predefinito: 10</span><span class="sxs-lookup"><span data-stu-id="5791e-236">Default: 10</span></span>
 
-<span data-ttu-id="85faa-237">**RoomsInactiveSince:** Se specificato, il report includerà un elenco di chat room inattive a partire dalla data specificata.</span><span class="sxs-lookup"><span data-stu-id="85faa-237">**RoomsInactiveSince:** If this is specified, the report will include a list of chat rooms that have been inactive since the specified date.</span></span> <span data-ttu-id="85faa-238">Impostazione predefinita: tempo intero</span><span class="sxs-lookup"><span data-stu-id="85faa-238">Default: Entire Time</span></span>
+<span data-ttu-id="5791e-237">**RoomsInactiveSince:** Se viene specificato, il report includerà un elenco di chat room inattive dopo la data specificata.</span><span class="sxs-lookup"><span data-stu-id="5791e-237">**RoomsInactiveSince:** If this is specified, the report will include a list of chat rooms that have been inactive since the specified date.</span></span> <span data-ttu-id="5791e-238">Valore predefinito: tempo intero</span><span class="sxs-lookup"><span data-stu-id="5791e-238">Default: Entire Time</span></span>
 
-<span data-ttu-id="85faa-239">**CartellaOutput:** Cartella in cui verranno inserite le immagini ChatUsageReport. html e Graph.</span><span class="sxs-lookup"><span data-stu-id="85faa-239">**OutputFolder:** The folder where the ChatUsageReport.html and the graph images will be placed.</span></span> <span data-ttu-id="85faa-240">Questa operazione deve essere definita nel file di configurazione o nella riga di comando.</span><span class="sxs-lookup"><span data-stu-id="85faa-240">This must be defined in the config file or on the command line.</span></span>
+<span data-ttu-id="5791e-239">**CartellaOutput:** Cartella in cui verranno posizionate le immagini di ChatUsageReport. html e del grafico.</span><span class="sxs-lookup"><span data-stu-id="5791e-239">**OutputFolder:** The folder where the ChatUsageReport.html and the graph images will be placed.</span></span> <span data-ttu-id="5791e-240">Tale operazione deve essere definita nel file di configurazione o nella riga di comando.</span><span class="sxs-lookup"><span data-stu-id="5791e-240">This must be defined in the config file or on the command line.</span></span>
 
-<span data-ttu-id="85faa-241">Tutti i valori dei parametri della riga di comando possono essere specificati anche nel file ChatUsageReport. exe. config che si trova nella stessa directory dello strumento.</span><span class="sxs-lookup"><span data-stu-id="85faa-241">All of the command line parameter values can also be specified in the ChatUsageReport.exe.config file that is located in the same directory as the tool.</span></span> <span data-ttu-id="85faa-242">Se viene specificato un valore nel file di configurazione e nella riga di comando, il valore della riga di comando sovrascriverà il valore del file di configurazione.</span><span class="sxs-lookup"><span data-stu-id="85faa-242">If any value is specified in both the config file and the command line, the command line value will override the config file value.</span></span>
-
-</div>
-
-<div>
-
-## <a name="output"></a><span data-ttu-id="85faa-243">Output</span><span class="sxs-lookup"><span data-stu-id="85faa-243">Output</span></span>
-
-<span data-ttu-id="85faa-244">Il report includerà sempre l'output seguente:</span><span class="sxs-lookup"><span data-stu-id="85faa-244">The report will always include the following output:</span></span>
-
-  - <span data-ttu-id="85faa-245">Prime n chat room più attive per numero di post di messaggio per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="85faa-245">Top n most active chat rooms by number of message posts for selected period.</span></span>
-
-  - <span data-ttu-id="85faa-246">Primi n utenti più attivi per numero di post di messaggio per periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="85faa-246">Top n most active users by number of message posts for selected period.</span></span>
-
-  - <span data-ttu-id="85faa-247">Principali n meno chat room attive in base al numero di post di messaggio per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="85faa-247">Top n least active chat rooms by number of message posts for selected period.</span></span>
-
-  - <span data-ttu-id="85faa-248">Chat room inattive per l'intera durata del database o dalla data specificata.</span><span class="sxs-lookup"><span data-stu-id="85faa-248">Chat rooms that are inactive for the entire life of the database, or since the specified date.</span></span>
-
-  - <span data-ttu-id="85faa-249">Tendenza post giornaliera del messaggio per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="85faa-249">Daily message post trend for selected period.</span></span>
-
-  - <span data-ttu-id="85faa-250">Tendenza post settimanale del messaggio per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="85faa-250">Weekly message post trend for selected period.</span></span>
-
-  - <span data-ttu-id="85faa-251">Tendenza post mensile per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="85faa-251">Monthly message post trend for selected period.</span></span>
-
-  - <span data-ttu-id="85faa-252">Totale post di messaggio per periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="85faa-252">Total message posts for selected period.</span></span>
-
-  - <span data-ttu-id="85faa-253">Numero totale di sale abilitate.</span><span class="sxs-lookup"><span data-stu-id="85faa-253">Total number of enabled rooms.</span></span>
+<span data-ttu-id="5791e-241">È inoltre possibile specificare tutti i valori dei parametri della riga di comando nel file ChatUsageReport. exe. config che si trova nella stessa directory dello strumento.</span><span class="sxs-lookup"><span data-stu-id="5791e-241">All of the command line parameter values can also be specified in the ChatUsageReport.exe.config file that is located in the same directory as the tool.</span></span> <span data-ttu-id="5791e-242">Se si specifica un valore nel file di configurazione e nella riga di comando, il valore della riga di comando ignorerà il valore del file di configurazione.</span><span class="sxs-lookup"><span data-stu-id="5791e-242">If any value is specified in both the config file and the command line, the command line value will override the config file value.</span></span>
 
 </div>
 
 <div>
 
-## <a name="example"></a><span data-ttu-id="85faa-254">Esempio</span><span class="sxs-lookup"><span data-stu-id="85faa-254">Example</span></span>
+## <a name="output"></a><span data-ttu-id="5791e-243">Output</span><span class="sxs-lookup"><span data-stu-id="5791e-243">Output</span></span>
 
-<span data-ttu-id="85faa-255">L'esempio seguente genera un report sull'utilizzo per l'intero anno 2001 e inserisce il report in CartellaOutput specificato in ChatUsageReport. exe. config.</span><span class="sxs-lookup"><span data-stu-id="85faa-255">The following example generates a usage report for the entire year 2001 and places the report in the OutputFolder specified in the ChatUsageReport.exe.config.</span></span>
+<span data-ttu-id="5791e-244">Il report includerà sempre l'output seguente:</span><span class="sxs-lookup"><span data-stu-id="5791e-244">The report will always include the following output:</span></span>
+
+  - <span data-ttu-id="5791e-245">Top n chat room più attive per numero di post di messaggio per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="5791e-245">Top n most active chat rooms by number of message posts for selected period.</span></span>
+
+  - <span data-ttu-id="5791e-246">Top n gli utenti più attivi per numero di post di messaggio per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="5791e-246">Top n most active users by number of message posts for selected period.</span></span>
+
+  - <span data-ttu-id="5791e-247">Top n chat room meno attive per numero di post di messaggio per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="5791e-247">Top n least active chat rooms by number of message posts for selected period.</span></span>
+
+  - <span data-ttu-id="5791e-248">Chat room inattive per tutta la durata del database o dopo la data specificata.</span><span class="sxs-lookup"><span data-stu-id="5791e-248">Chat rooms that are inactive for the entire life of the database, or since the specified date.</span></span>
+
+  - <span data-ttu-id="5791e-249">Trend post giornaliero del messaggio per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="5791e-249">Daily message post trend for selected period.</span></span>
+
+  - <span data-ttu-id="5791e-250">Trend post settimanale dei messaggi per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="5791e-250">Weekly message post trend for selected period.</span></span>
+
+  - <span data-ttu-id="5791e-251">Trend post mensili del messaggio per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="5791e-251">Monthly message post trend for selected period.</span></span>
+
+  - <span data-ttu-id="5791e-252">Totale messaggi di messaggio per il periodo selezionato.</span><span class="sxs-lookup"><span data-stu-id="5791e-252">Total message posts for selected period.</span></span>
+
+  - <span data-ttu-id="5791e-253">Numero totale di chat room abilitate.</span><span class="sxs-lookup"><span data-stu-id="5791e-253">Total number of enabled rooms.</span></span>
+
+</div>
+
+<div>
+
+## <a name="example"></a><span data-ttu-id="5791e-254">Esempio</span><span class="sxs-lookup"><span data-stu-id="5791e-254">Example</span></span>
+
+<span data-ttu-id="5791e-255">Nell'esempio seguente viene generato un report di utilizzo per l'intero anno 2001 e il report viene inserito in CartellaOutput specificato nel file ChatUsageReport. exe. config.</span><span class="sxs-lookup"><span data-stu-id="5791e-255">The following example generates a usage report for the entire year 2001 and places the report in the OutputFolder specified in the ChatUsageReport.exe.config.</span></span>
 
 ```Powershell
     ChatUsageReport -RoomsInactiveSince 06-20-2010
 ```
-<span data-ttu-id="85faa-256">ChatUsageReport. exe. config:</span><span class="sxs-lookup"><span data-stu-id="85faa-256">ChatUsageReport.exe.config:</span></span>
+<span data-ttu-id="5791e-256">ChatUsageReport. exe. config:</span><span class="sxs-lookup"><span data-stu-id="5791e-256">ChatUsageReport.exe.config:</span></span>
 
 ```XML
     <?xml version="1.0" encoding="utf-8" ?>
@@ -455,29 +455,29 @@ ms.locfileid: "41739416"
 
 <div>
 
-## <a name="scheduleadsyncforprincipal"></a><span data-ttu-id="85faa-257">ScheduleADSyncForPrincipal</span><span class="sxs-lookup"><span data-stu-id="85faa-257">ScheduleADSyncForPrincipal</span></span>
+## <a name="scheduleadsyncforprincipal"></a><span data-ttu-id="5791e-257">ScheduleADSyncForPrincipal</span><span class="sxs-lookup"><span data-stu-id="5791e-257">ScheduleADSyncForPrincipal</span></span>
 
 <div>
 
-## <a name="description"></a><span data-ttu-id="85faa-258">Descrizione</span><span class="sxs-lookup"><span data-stu-id="85faa-258">Description</span></span>
+## <a name="description"></a><span data-ttu-id="5791e-258">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5791e-258">Description</span></span>
 
-<span data-ttu-id="85faa-259">ScheduleADSyncForPrincipal è uno script di Microsoft SQL Server 2012 che deve essere eseguito direttamente da SQL Server Management Studio quando è connesso al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-259">ScheduleADSyncForPrincipal is a Microsoft SQL Server 2012 script that must be run directly from within SQL Server Management Studio when connected to the Persistent Chat back-end database.</span></span> <span data-ttu-id="85faa-260">Questo script consente di forzare la chat persistente a sincronizzare i propri record di un utente con quelli dei servizi di dominio Active Directory, invece di attendere il tempo di sincronizzazione programmato.</span><span class="sxs-lookup"><span data-stu-id="85faa-260">This script enables you to force Persistent Chat to synchronize its records of a user with those of Active Directory Domain Services, rather than waiting for the scheduled synchronization time.</span></span>
+<span data-ttu-id="5791e-259">ScheduleADSyncForPrincipal è uno script di Microsoft SQL Server 2012 che deve essere eseguito direttamente dall'interno di SQL Server Management Studio quando è connesso al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5791e-259">ScheduleADSyncForPrincipal is a Microsoft SQL Server 2012 script that must be run directly from within SQL Server Management Studio when connected to the Persistent Chat back-end database.</span></span> <span data-ttu-id="5791e-260">Questo script consente di forzare la chat persistente a sincronizzare i propri record di un utente con quelli dei servizi di dominio Active Directory, anziché attendere il tempo di sincronizzazione pianificato.</span><span class="sxs-lookup"><span data-stu-id="5791e-260">This script enables you to force Persistent Chat to synchronize its records of a user with those of Active Directory Domain Services, rather than waiting for the scheduled synchronization time.</span></span>
 
 </div>
 
 <div>
 
-## <a name="requirements"></a><span data-ttu-id="85faa-261">Requisiti</span><span class="sxs-lookup"><span data-stu-id="85faa-261">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="5791e-261">Requisiti</span><span class="sxs-lookup"><span data-stu-id="5791e-261">Requirements</span></span>
 
-<span data-ttu-id="85faa-262">L'account utente in cui viene eseguito lo script deve avere accesso proprietario al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="85faa-262">The user account under which the script is run must have owner access to the Persistent Chat back-end database.</span></span>
+<span data-ttu-id="5791e-262">L'account utente con cui viene eseguito lo script deve disporre dell'accesso proprietario al database back-end della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5791e-262">The user account under which the script is run must have owner access to the Persistent Chat back-end database.</span></span>
 
 </div>
 
 <div>
 
-## <a name="usage"></a><span data-ttu-id="85faa-263">L'uso</span><span class="sxs-lookup"><span data-stu-id="85faa-263">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="5791e-263">Usage</span><span class="sxs-lookup"><span data-stu-id="5791e-263">Usage</span></span>
 
-<span data-ttu-id="85faa-264">Di seguito sono riportati i contenuti dello script predefinito:</span><span class="sxs-lookup"><span data-stu-id="85faa-264">Following are the contents of the default script:</span></span>
+<span data-ttu-id="5791e-264">Di seguito sono riportati i contenuti dello script predefinito:</span><span class="sxs-lookup"><span data-stu-id="5791e-264">Following are the contents of the default script:</span></span>
 
 ```Powershell
     /*

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Verifica della distribuzione per dispositivi mobili'
+title: 'Lync Server 2013: verifica della distribuzione dei dispositivi mobili'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184477
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 96b6c82478fffe2815e9d69b870b3b434eadb3cf
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6777414e7fc558e8eef0f913aca90fc7edd924ca
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742016"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007275"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="verifying-your-mobility-deployment-in-lync-server-2013"></a><span data-ttu-id="891b9-102">Verifica della distribuzione per dispositivi mobili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="891b9-102">Verifying your mobility deployment in Lync Server 2013</span></span>
+# <a name="verifying-your-mobility-deployment-in-lync-server-2013"></a><span data-ttu-id="5dadf-102">Verifica della distribuzione di dispositivi mobili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5dadf-102">Verifying your mobility deployment in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "41742016"
 
 <span> </span>
 
-<span data-ttu-id="891b9-103">_**Argomento Ultima modifica:** 2013-02-12_</span><span class="sxs-lookup"><span data-stu-id="891b9-103">_**Topic Last Modified:** 2013-02-12_</span></span>
+<span data-ttu-id="5dadf-103">_**Ultimo argomento modificato:** 2013-02-12_</span><span class="sxs-lookup"><span data-stu-id="5dadf-103">_**Topic Last Modified:** 2013-02-12_</span></span>
 
     Some information in this topic pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
-<span data-ttu-id="891b9-104">Dopo la distribuzione del servizio di mobilità di Lync Server e del servizio di individuazione automatica di Lync Server, eseguire una transazione di test per verificare che la distribuzione funzioni correttamente.</span><span class="sxs-lookup"><span data-stu-id="891b9-104">After you deploy the Lync Server Mobility Service and Lync Server Autodiscover Service, run a test transaction to verify that your deployment works correctly.</span></span> <span data-ttu-id="891b9-105">È possibile eseguire **test-CsUcwaConference** per testare la capacità di due utenti che usano client mobili Lync 2013 di creare, partecipare e comunicare in una conferenza.</span><span class="sxs-lookup"><span data-stu-id="891b9-105">You can run **Test-CsUcwaConference** to test the ability of two users who are using Lync 2013 Mobile clients to create, join and communicate in a conference.</span></span> <span data-ttu-id="891b9-106">Per usare questa transazione di test, sono necessari due utenti effettivi o utenti di test e le relative credenziali complete.</span><span class="sxs-lookup"><span data-stu-id="891b9-106">To use this test transaction, you need two actual users or test users, and their full credentials.</span></span>
+<span data-ttu-id="5dadf-104">Dopo aver distribuito il servizio per dispositivi mobili Lync Server e il servizio di individuazione automatica di Lync Server, eseguire una transazione di prova per verificare che la distribuzione funzioni correttamente.</span><span class="sxs-lookup"><span data-stu-id="5dadf-104">After you deploy the Lync Server Mobility Service and Lync Server Autodiscover Service, run a test transaction to verify that your deployment works correctly.</span></span> <span data-ttu-id="5dadf-105">È possibile eseguire **test-CsUcwaConference** per verificare la capacità di due utenti che utilizzano client mobili Lync 2013 di creare, partecipare e comunicare in una conferenza.</span><span class="sxs-lookup"><span data-stu-id="5dadf-105">You can run **Test-CsUcwaConference** to test the ability of two users who are using Lync 2013 Mobile clients to create, join and communicate in a conference.</span></span> <span data-ttu-id="5dadf-106">Per utilizzare questa transazione di test, sono necessari due utenti effettivi o gli utenti di test e le loro credenziali complete.</span><span class="sxs-lookup"><span data-stu-id="5dadf-106">To use this test transaction, you need two actual users or test users, and their full credentials.</span></span>
 
-<span data-ttu-id="891b9-107">Si usa **Test-CsMcxP2PIM** per testare l'invio di un messaggio istantaneo tra due utenti che usano Lync 2010 mobile.</span><span class="sxs-lookup"><span data-stu-id="891b9-107">You use **Test-CsMcxP2PIM** to test sending an instant message between two users who are using Lync 2010 Mobile.</span></span> <span data-ttu-id="891b9-108">Analogamente a **test-CsUcwaConference**, si usano due utenti effettivi o due utenti di test predefiniti.</span><span class="sxs-lookup"><span data-stu-id="891b9-108">Similar to **Test-CsUcwaConference**, you use two actual users or two predefined test users.</span></span>
+<span data-ttu-id="5dadf-107">È possibile utilizzare **Test-CsMcxP2PIM** per testare l'invio di un messaggio istantaneo tra due utenti che utilizzano Lync 2010 mobile.</span><span class="sxs-lookup"><span data-stu-id="5dadf-107">You use **Test-CsMcxP2PIM** to test sending an instant message between two users who are using Lync 2010 Mobile.</span></span> <span data-ttu-id="5dadf-108">Analogamente a **test-CsUcwaConference**, si utilizzano due utenti effettivi o due utenti di test predefiniti.</span><span class="sxs-lookup"><span data-stu-id="5dadf-108">Similar to **Test-CsUcwaConference**, you use two actual users or two predefined test users.</span></span>
 
 <div>
 
-## <a name="to-test-conferencing-for-lync-2013-mobile-clients"></a><span data-ttu-id="891b9-109">Per testare i servizi di conferenza per i client mobili Lync 2013</span><span class="sxs-lookup"><span data-stu-id="891b9-109">To test conferencing for Lync 2013 Mobile clients</span></span>
+## <a name="to-test-conferencing-for-lync-2013-mobile-clients"></a><span data-ttu-id="5dadf-109">Per testare le conferenze per i client per dispositivi mobili Lync 2013</span><span class="sxs-lookup"><span data-stu-id="5dadf-109">To test conferencing for Lync 2013 Mobile clients</span></span>
 
-1.  <span data-ttu-id="891b9-110">Accedere come membro del ruolo CsAdministrator in un computer in cui sono installati Lync Server Management Shell e OCSCore.</span><span class="sxs-lookup"><span data-stu-id="891b9-110">Log on as a member of the CsAdministrator role on any computer where Lync Server Management Shell and Ocscore are installed.</span></span>
+1.  <span data-ttu-id="5dadf-110">Accedere come membro del ruolo CsAdministrator in un computer in cui sono installati Lync Server Management Shell e OCSCore.</span><span class="sxs-lookup"><span data-stu-id="5dadf-110">Log on as a member of the CsAdministrator role on any computer where Lync Server Management Shell and Ocscore are installed.</span></span>
 
-2.  <span data-ttu-id="891b9-111">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="891b9-111">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+2.  <span data-ttu-id="5dadf-111">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="5dadf-111">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
 
-3.  <span data-ttu-id="891b9-112">Nella riga di comando digitare:</span><span class="sxs-lookup"><span data-stu-id="891b9-112">At the command line, type:</span></span>
+3.  <span data-ttu-id="5dadf-112">Nella riga di comando digitare:</span><span class="sxs-lookup"><span data-stu-id="5dadf-112">At the command line, type:</span></span>
     
         Test-CsUcwaConference -TargetFqdn <FQDN of Front End pool> -Authentication <TrustedServer | Negotiate | ClientCertificate | LiveID> -OrganizerSipAddress sip:<SIP address of test user 1> -OrganizerCredential <test user 1 credentials> -ParticipantSipAddress sip:<SIP address of test user 2> -ParticipantCredential <test user 2 credentials> -v
     
-    <span data-ttu-id="891b9-113">È possibile impostare le credenziali in uno script e passarle al cmdlet di test.</span><span class="sxs-lookup"><span data-stu-id="891b9-113">You can set credentials in a script and pass them to the test cmdlet.</span></span> <span data-ttu-id="891b9-114">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="891b9-114">For example:</span></span>
+    <span data-ttu-id="5dadf-p103">È possibile impostare le credenziali in un script e passarle al cmdlet di test, ad esempio:</span><span class="sxs-lookup"><span data-stu-id="5dadf-p103">You can set credentials in a script and pass them to the test cmdlet. For example:</span></span>
     
         $passwd1 = ConvertTo-SecureString "Password01" -AsPlainText -Force
         $passwd2 = ConvertTo-SecureString "Password02" -AsPlainText -Force
@@ -67,17 +67,17 @@ ms.locfileid: "41742016"
 
 <div>
 
-## <a name="to-test-person-to-person-instant-messaging-im-for-lync-2010-mobile"></a><span data-ttu-id="891b9-115">Per testare la messaggistica istantanea da persona a persona per Lync 2010 Mobile</span><span class="sxs-lookup"><span data-stu-id="891b9-115">To test person-to-person instant messaging (IM) for Lync 2010 Mobile</span></span>
+## <a name="to-test-person-to-person-instant-messaging-im-for-lync-2010-mobile"></a><span data-ttu-id="5dadf-115">Per testare la messaggistica istantanea da persona a persona per Lync 2010 Mobile</span><span class="sxs-lookup"><span data-stu-id="5dadf-115">To test person-to-person instant messaging (IM) for Lync 2010 Mobile</span></span>
 
-1.  <span data-ttu-id="891b9-116">Accedere come membro del ruolo CsAdministrator in un computer in cui sono installati Lync Server Management Shell e OCSCore.</span><span class="sxs-lookup"><span data-stu-id="891b9-116">Log on as a member of the CsAdministrator role on any computer where Lync Server Management Shell and Ocscore are installed.</span></span>
+1.  <span data-ttu-id="5dadf-116">Accedere come membro del ruolo CsAdministrator in un computer in cui sono installati Lync Server Management Shell e OCSCore.</span><span class="sxs-lookup"><span data-stu-id="5dadf-116">Log on as a member of the CsAdministrator role on any computer where Lync Server Management Shell and Ocscore are installed.</span></span>
 
-2.  <span data-ttu-id="891b9-117">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="891b9-117">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+2.  <span data-ttu-id="5dadf-117">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="5dadf-117">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
 
-3.  <span data-ttu-id="891b9-118">Nella riga di comando digitare:</span><span class="sxs-lookup"><span data-stu-id="891b9-118">At the command line, type:</span></span>
+3.  <span data-ttu-id="5dadf-118">Nella riga di comando digitare:</span><span class="sxs-lookup"><span data-stu-id="5dadf-118">At the command line, type:</span></span>
     
         Test-CsMcxP2PIM -TargetFqdn <FQDN of Front End pool> -Authentication <TrustedServer | Negotiate | ClientCertificate | LiveID> -SenderSipAddress sip:<SIP address of test user 1> -SenderCredential <test user 1 credentials> -ReceiverSipAddress sip:<SIP address of test user 2> -ReceiverCredential <test user 2 credentials> -v
     
-    <span data-ttu-id="891b9-119">È possibile impostare le credenziali in uno script e passarle al cmdlet di test.</span><span class="sxs-lookup"><span data-stu-id="891b9-119">You can set credentials in a script and pass them to the test cmdlet.</span></span> <span data-ttu-id="891b9-120">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="891b9-120">For example:</span></span>
+    <span data-ttu-id="5dadf-p104">È possibile impostare le credenziali in un script e passarle al cmdlet di test, ad esempio:</span><span class="sxs-lookup"><span data-stu-id="5dadf-p104">You can set credentials in a script and pass them to the test cmdlet. For example:</span></span>
     
         $passwd1 = ConvertTo-SecureString "Password01" -AsPlainText -Force
         $passwd2 = ConvertTo-SecureString "Password02" -AsPlainText -Force
@@ -89,11 +89,11 @@ ms.locfileid: "41742016"
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="891b9-121">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="891b9-121">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5dadf-121">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="5dadf-121">See Also</span></span>
 
 
-[<span data-ttu-id="891b9-122">Test-CsMcxP2PIM</span><span class="sxs-lookup"><span data-stu-id="891b9-122">Test-CsMcxP2PIM</span></span>](https://docs.microsoft.com/powershell/module/skype/Test-CsMcxP2PIM)  
-[<span data-ttu-id="891b9-123">Test-CsUcwaConference</span><span class="sxs-lookup"><span data-stu-id="891b9-123">Test-CsUcwaConference</span></span>](https://docs.microsoft.com/powershell/module/skype/Test-CsUcwaConference)  
+[<span data-ttu-id="5dadf-122">Test-CsMcxP2PIM</span><span class="sxs-lookup"><span data-stu-id="5dadf-122">Test-CsMcxP2PIM</span></span>](https://docs.microsoft.com/powershell/module/skype/Test-CsMcxP2PIM)  
+[<span data-ttu-id="5dadf-123">Test-CsUcwaConference</span><span class="sxs-lookup"><span data-stu-id="5dadf-123">Test-CsUcwaConference</span></span>](https://docs.microsoft.com/powershell/module/skype/Test-CsUcwaConference)  
   
 
 </div>

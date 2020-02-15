@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Nuove funzionalità di monitoraggio'
+title: 'Lync Server 2013: nuove funzionalità di monitoraggio'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185883
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8ce8fa7b78aa00008cd5aaf748ba66a78ecefbe7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 53144bfd9a05d1fc20671b1d7b6aeb22b0f84f6f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725602"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42007765"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="new-monitoring-features-in-lync-server-2013"></a><span data-ttu-id="e7e10-102">Nuove funzionalità di monitoraggio in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e7e10-102">New Monitoring features in Lync Server 2013</span></span>
+# <a name="new-monitoring-features-in-lync-server-2013"></a><span data-ttu-id="e6c23-102">Nuove funzionalità di monitoraggio in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e6c23-102">New Monitoring features in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41725602"
 
 <span> </span>
 
-<span data-ttu-id="e7e10-103">_**Argomento Ultima modifica:** 2012-11-08_</span><span class="sxs-lookup"><span data-stu-id="e7e10-103">_**Topic Last Modified:** 2012-11-08_</span></span>
+<span data-ttu-id="e6c23-103">_**Ultimo argomento modificato:** 2012-11-08_</span><span class="sxs-lookup"><span data-stu-id="e6c23-103">_**Topic Last Modified:** 2012-11-08_</span></span>
 
-<span data-ttu-id="e7e10-104">Lync Server 2013 non dispone di un ruolo di server di monitoraggio separato.</span><span class="sxs-lookup"><span data-stu-id="e7e10-104">Lync Server 2013 does not have a separate Monitoring Server role.</span></span> <span data-ttu-id="e7e10-105">Il monitoraggio è una funzionalità facoltativa disponibile in tutti i server front-end in una distribuzione di Enterprise Edition e nei server Standard Edition, che possono essere implementati e configurati per un pool o un sito.</span><span class="sxs-lookup"><span data-stu-id="e7e10-105">Monitoring is an optional feature available on all Front End Servers in an Enterprise Edition deployment, and on Standard Edition servers, that can be implemented and configured for a pool or a site.</span></span> <span data-ttu-id="e7e10-106">Novità di Lync Server 2013, è possibile abilitare il mirroring del database di SQL Server per il database di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="e7e10-106">New to Lync Server 2013, you can enable SQL Server database mirroring for your Monitoring database.</span></span>
+<span data-ttu-id="e6c23-104">Lync Server 2013 non dispone di un ruolo di Monitoring Server separato.</span><span class="sxs-lookup"><span data-stu-id="e6c23-104">Lync Server 2013 does not have a separate Monitoring Server role.</span></span> <span data-ttu-id="e6c23-105">Il monitoraggio è una funzionalità facoltativa disponibili in tutti i Front End Server nella distribuzione Enterprise Edition e nei server Standard Edition, che può essere implementata e configurata per un pool o un sito.</span><span class="sxs-lookup"><span data-stu-id="e6c23-105">Monitoring is an optional feature available on all Front End Servers in an Enterprise Edition deployment, and on Standard Edition servers, that can be implemented and configured for a pool or a site.</span></span> <span data-ttu-id="e6c23-106">Nuovo di Lync Server 2013, è possibile abilitare il mirroring del database di SQL Server per il database di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="e6c23-106">New to Lync Server 2013, you can enable SQL Server database mirroring for your Monitoring database.</span></span>
 
 </div>
 

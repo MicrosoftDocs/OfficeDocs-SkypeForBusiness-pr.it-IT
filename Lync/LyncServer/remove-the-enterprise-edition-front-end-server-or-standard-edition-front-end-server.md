@@ -1,5 +1,5 @@
 ---
-title: Rimuovere il server front-end Enterprise Edition o front-end Standard Edition
+title: Rimuovere Enterprise Edition Front End Server o Standard Edition Front End Server
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733721
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e175b4771b9e9777f0fa162cb2a59f7a3b17cc7e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 74689dcc730874ecaea0aef31ab18cfc2e9c2c1d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727156"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008872"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="remove-the-enterprise-edition-front-end-server-or-standard-edition-front-end-server"></a><span data-ttu-id="08687-102">Rimuovere il server front-end Enterprise Edition o front-end Standard Edition</span><span class="sxs-lookup"><span data-stu-id="08687-102">Remove the Enterprise Edition Front End Server or Standard Edition Front End Server</span></span>
+# <a name="remove-the-enterprise-edition-front-end-server-or-standard-edition-front-end-server"></a><span data-ttu-id="7ce20-102">Rimuovere Enterprise Edition Front End Server o Standard Edition Front End Server</span><span class="sxs-lookup"><span data-stu-id="7ce20-102">Remove the Enterprise Edition Front End Server or Standard Edition Front End Server</span></span>
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41727156"
 
 <span> </span>
 
-<span data-ttu-id="08687-103">_**Argomento Ultima modifica:** 2012-10-10_</span><span class="sxs-lookup"><span data-stu-id="08687-103">_**Topic Last Modified:** 2012-10-10_</span></span>
+<span data-ttu-id="7ce20-103">_**Ultimo argomento modificato:** 2012-10-10_</span><span class="sxs-lookup"><span data-stu-id="7ce20-103">_**Topic Last Modified:** 2012-10-10_</span></span>
 
-<span data-ttu-id="08687-104">Le procedure descritte in questo argomento sono progettate per guidare l'utente nel processo di rimozione di un pool di front end di Microsoft Lync Server 2010 Enterprise Edition o di un front end server Standard Edition.</span><span class="sxs-lookup"><span data-stu-id="08687-104">The procedures outlined in this topic are designed to guide you through the process of removing a Microsoft Lync Server 2010 Enterprise Edition Front End pool or a Standard Edition Front End Server.</span></span> <span data-ttu-id="08687-105">Dopo aver eseguito la migrazione a Lync Server 2013, si tratta di uno dei primi passaggi per la disattivazione dell'ambiente legacy di Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="08687-105">After migrating to Lync Server 2013, this is one of the first steps to decommissioning your legacy Lync Server 2010 environment.</span></span>
+<span data-ttu-id="7ce20-104">Le procedure descritte in questo argomento consentono di rimuovere un pool di Microsoft Lync Server 2010 Enterprise Edition front end o un front end server Standard Edition.</span><span class="sxs-lookup"><span data-stu-id="7ce20-104">The procedures outlined in this topic are designed to guide you through the process of removing a Microsoft Lync Server 2010 Enterprise Edition Front End pool or a Standard Edition Front End Server.</span></span> <span data-ttu-id="7ce20-105">Dopo aver eseguito la migrazione a Lync Server 2013, si tratta di uno dei primi passaggi da eseguire per rimuovere l'ambiente legacy di Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="7ce20-105">After migrating to Lync Server 2013, this is one of the first steps to decommissioning your legacy Lync Server 2010 environment.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="08687-106">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="08687-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="7ce20-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="7ce20-106">In This Section</span></span>
 
-  - [<span data-ttu-id="08687-107">Reimpostare il controllo di ammissione di chiamata</span><span class="sxs-lookup"><span data-stu-id="08687-107">Reset call admission control</span></span>](reset-call-admission-control.md)
+  - [<span data-ttu-id="7ce20-107">Reimposta il controllo di ammissione di chiamata</span><span class="sxs-lookup"><span data-stu-id="7ce20-107">Reset call admission control</span></span>](reset-call-admission-control.md)
 
-  - [<span data-ttu-id="08687-108">Impedire le sessioni per i servizi</span><span class="sxs-lookup"><span data-stu-id="08687-108">Prevent sessions for services</span></span>](prevent-sessions-for-services.md)
+  - [<span data-ttu-id="7ce20-108">Impedisci sessioni per i servizi</span><span class="sxs-lookup"><span data-stu-id="7ce20-108">Prevent sessions for services</span></span>](prevent-sessions-for-services.md)
 
-  - [<span data-ttu-id="08687-109">Arrestare i servizi di Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="08687-109">Stop Lync Server 2010 services</span></span>](stop-lync-server-2010-services.md)
+  - [<span data-ttu-id="7ce20-109">Arrestare i servizi di Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="7ce20-109">Stop Lync Server 2010 services</span></span>](stop-lync-server-2010-services.md)
 
-  - [<span data-ttu-id="08687-110">Rimuovere un Front End Server da un pool</span><span class="sxs-lookup"><span data-stu-id="08687-110">Remove a Front End Server from a pool</span></span>](remove-a-front-end-server-from-a-pool.md)
+  - [<span data-ttu-id="7ce20-110">Rimuovere un front end server da un pool</span><span class="sxs-lookup"><span data-stu-id="7ce20-110">Remove a Front End Server from a pool</span></span>](remove-a-front-end-server-from-a-pool.md)
 
-  - [<span data-ttu-id="08687-111">Rimuovere pool Front End o server Standard Edition</span><span class="sxs-lookup"><span data-stu-id="08687-111">Remove Front End pool or Standard Edition server</span></span>](remove-front-end-pool-or-standard-edition-server.md)
+  - [<span data-ttu-id="7ce20-111">Rimuovere il pool Front end o il server Standard Edition</span><span class="sxs-lookup"><span data-stu-id="7ce20-111">Remove Front End pool or Standard Edition server</span></span>](remove-front-end-pool-or-standard-edition-server.md)
 
 </div>
 
