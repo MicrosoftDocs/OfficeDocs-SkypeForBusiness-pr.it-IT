@@ -13,35 +13,35 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d972382f-971e-4fa7-b7ee-8ab9d3a5c11d
-description: Attività che è necessario eseguire per configurare Skype for Business Server 2015 per eseguire prestazioni e test di carico, usando lo strumento stress e prestazioni.
-ms.openlocfilehash: 343378d0b0d763d8a290e8d1e930a64c5d114bdb
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Attività che è necessario eseguire per configurare Skype for Business Server 2015 per eseguire le prestazioni e i test di carico, utilizzando lo strumento stress and performance.
+ms.openlocfilehash: 5531627ab7d5072d32dfcf60fed41eac47f5373f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41803876"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41983851"
 ---
 # <a name="performance-scenarios-for-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Scenari di prestazioni per lo strumento di stress e prestazioni di Skype for Business Server 2015
  
-Attività che è necessario eseguire per configurare Skype for Business Server 2015 per eseguire prestazioni e test di carico, usando lo strumento stress e prestazioni.
+Attività che è necessario eseguire per configurare Skype for Business Server 2015 per eseguire le prestazioni e i test di carico, utilizzando lo strumento stress and performance.
   
-Per eseguire lo strumento di stress e prestazioni di Skype for Business Server 2015 (LyncPerfTool), la topologia di Skype for Business Server 2015 deve prima essere configurata per gli scenari rilevanti. Se Skype for Business Server 2015 non è configurato o è configurato in modo errato, è probabile che la simulazione di caricamento non riesca. Con lo strumento di stress e prestazioni di Skype for Business Server 2015, stiamo fornendo gli script di Skype for Business Server Management Shell di esempio e i file di risorse di base come parte del [download dello strumento](https://www.microsoft.com/download/details.aspx?id=50367). Questi possono essere usati come punto di partenza per configurare la distribuzione di Skype for Business Server. In questo articolo vengono illustrati gli esempi di Windows PowerShell forniti.
+Per eseguire lo strumento di gestione dello stress e delle prestazioni di Skype for Business Server 2015 (LyncPerfTool), è innanzitutto necessario configurare la topologia di Skype for Business Server 2015 per gli scenari rilevanti per l'utente. Se Skype for Business Server 2015 non è configurato o è configurato in modo errato, è probabile che la simulazione di carico abbia esito negativo. Con lo strumento per lo stress e le prestazioni di Skype for Business Server 2015, vengono fornite esempi di script di gestione della shell di Skype for Business Server e file di risorse di base come parte del [download dello strumento](https://www.microsoft.com/download/details.aspx?id=50367). Questi possono essere utilizzati come punto di partenza per la configurazione della distribuzione di Skype for Business Server. In questo articolo vengono descritti gli esempi di Windows PowerShell forniti.
   
 > [!NOTE]
-> Questo argomento non ti aiuterà a descrivere come configurare Skype for Business Server 2015 in generale, abbiamo altri argomenti per la pianificazione e la distribuzione. Per informazioni dettagliate sull'uso di Windows PowerShell in Skype for Business Server 2015, vedere la documentazione di Skype for Business Server Management Shell in Inserisci introduzione qui. 
+> In questo argomento non viene descritto come configurare Skype for Business Server 2015 in genere, sono disponibili altri argomenti per la pianificazione e la distribuzione. Per informazioni dettagliate sull'utilizzo di Windows PowerShell in Skype for Business Server 2015, vedere la documentazione su Skype for Business Server Management Shell all'articolo Introduzione qui. 
   
-## <a name="about-running-skype-for-business-server-management-shell-scripts"></a>Informazioni sull'uso degli script di Skype for Business Server Management Shell
+## <a name="about-running-skype-for-business-server-management-shell-scripts"></a>Informazioni sull'esecuzione degli script di Skype for Business Server Management Shell
 
-Stiamo fornendo script di PowerShell di esempio che puoi usare per preparare le simulazioni di caricamento. Dato che questi script sono destinati alla simulazione del carico, li troverai semplici e permissivi. Potrebbe non essere appropriato per l'ambiente di produzione. Ancora una volta sottolineiamo che questi script sono esempi, è necessario rivederli e in molti casi apportare modifiche rilevanti per l'ambiente prima di poterlo usare in modo pratico. Come minimo, ci aspettiamo che tu debba modificare lo script RSG (Response Service Group) con la topologia in mente (per specificare gli agenti assegnati ai gruppi di agenti). Ma non devi eseguire questa funzione, se non è necessario.
+Vengono fornite esempi di script PowerShell che è possibile utilizzare per preparare le simulazioni di carico. Poiché questi script sono destinati alla simulazione del carico, è possibile trovarli come semplici e permissivi. Potrebbe non essere appropriato per l'ambiente di produzione. Anche in questo caso viene sottolineato che questi script sono campioni, è necessario esaminarli e, in molti casi, apportare modifiche rilevanti all'ambiente prima di essere in grado di utilizzarli in modo pratico. Come minimo, è prevedibile che sia necessario modificare lo script di Response Service Group (RSG) con la topologia in mente (per specificare gli agenti assegnati ai gruppi di agenti). Tuttavia, non è necessario eseguirlo, se non si ha necessità di farlo.
   
 > [!CAUTION]
-> Prestare particolare attenzione a rivedere e comprendere questi esempi. Gli script sovrascriveranno le impostazioni esistenti nella topologia quando verranno eseguite. 
+> Fare attenzione a controllare e comprendere questi esempi. Gli script sovrascrivono le impostazioni esistenti nella topologia quando vengono eseguite. 
   
-## <a name="stress-and-performance-tool-client-version-names"></a>Nomi di versione client dello strumento stress e prestazioni
+## <a name="stress-and-performance-tool-client-version-names"></a>Nomi delle versioni client dello strumento di stress e prestazioni
 
-Potrebbe essere necessario configurare i criteri di controllo della versione client se in precedenza sono state modificate le impostazioni dei valori predefiniti. In caso di dubbi, verificare la [documentazione relativa alla verifica della versione client](https://msdn.microsoft.com/en-us/vsto/jj923060).
+Potrebbe essere necessario configurare i criteri di controllo della versione client se le impostazioni sono state modificate in precedenza dai valori predefiniti. In caso di dubbi, vedere la [documentazione relativa alla verifica della versione client](https://msdn.microsoft.com/vsto/jj923060).
   
-Lo strumento sollecitazione e prestazioni usa le versioni seguenti dell'agente utente per impostazione predefinita durante la comunicazione con Skype for Business Server 2015:
+Lo strumento stress and performance utilizza le seguenti versioni di agente utente per impostazione predefinita durante la comunicazione con Skype for Business Server 2015:
   
 - LSPT/15.0.0.0 (strumento di stress e prestazioni di Skype for Business Server 2015)
     
@@ -49,8 +49,8 @@ Lo strumento sollecitazione e prestazioni usa le versioni seguenti dell'agente u
     
 Per il client Mobility (UCWA) in LyncPerfTool:
   
-- Strumento Perf UCWA/conferenza Web
+- UCWA Perf Tool/Web Conference
     
-- Strumento Perf UCWA/mobile
+- UCWA Perf Tool/mobile
     
 
