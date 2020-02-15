@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Gestione degli utenti in Lync Server'
+title: 'Lync Server 2013: gestione degli utenti in Lync Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49344809
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 35517b535c515bbb0fcfd28b69c99e27d0b9b175
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: cb42a8504964ebbce18cc7ebad23059781f570d4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756060"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045518"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41756060"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-17_
+_**Ultimo argomento modificato:** 2012-10-17_
 
-È possibile usare il pannello di controllo di Lync Server 2013 e Lync Server 2013 Management Shell per gestire gli account utente in Lync Server 2013. Le procedure descritte in questa sezione illustrano come visualizzare le informazioni sull'account e configurare l'impostazione per gli account utente.
+È possibile utilizzare il pannello di controllo di Lync Server 2013 e Lync Server 2013 Management Shell per gestire gli account utente in Lync Server 2013. Le procedure contenute in questa sezione illustrano come visualizzare informazioni sugli account e configurare l'impostazione per gli account utente.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Account utente abilitato per Lync Server 2013](lync-server-2013-user-accounts-enabled-for-lync-server.md)
+  - [Account utente abilitati per Lync Server 2013](lync-server-2013-user-accounts-enabled-for-lync-server.md)
 
 </div>
 

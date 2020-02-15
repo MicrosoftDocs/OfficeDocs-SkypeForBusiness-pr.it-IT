@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione della capacità per Response Group'
+title: 'Lync Server 2013: pianificazione della capacità per Response Group'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184951
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5efb1b928ce7b4bafbbff20ad31872fe12735fe0
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4e5724978347b50db2790e4d5798aace8489acbb
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736995"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046259"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41736995"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-29_
+_**Ultimo argomento modificato:** 2012-10-29_
 
 <div id="sectionSection0" class="section">
 
-La tabella seguente descrive il modello di Response Group User che puoi usare come base per i requisiti di pianificazione della capacità.
+Nella tabella seguente viene descritto il modello utente di Response Group che è possibile utilizzare come base per i requisiti di pianificazione della capacità.
 
 <div>
 
 
 > [!NOTE]  
-> I numeri nella tabella seguente presuppongono l'uso di file wave 16 kHz, mono, a 16 bit (WAV) per tutti i file audio del gruppo di risposte. Se si usano altri formati di file, ad esempio Windows Media Audio (WMA), i numeri possono variare.
+> I numeri nella tabella seguente presuppongono l'utilizzo di file Wave (con estensione wav) a 16 bit, 16 kHz, mono per tutti i file audio Response Group. Se si utilizzano altri formati, ad esempio Windows Media Audio ( con estensione wma), i numeri possono variare.
 
 
 
@@ -55,13 +55,13 @@ La tabella seguente descrive il modello di Response Group User che puoi usare co
 
 
 > [!IMPORTANT]  
-> Tieni presente che per la pianificazione della capacità di ripristino di emergenza, ogni pool di un pool associato dovrebbe essere in grado di gestire i carichi di lavoro per tutti i gruppi di risposta in entrambi i pool.
+> Tenere presente che, per la pianificazione della capacità per il ripristino di emergenza, ogni pool di un pool accoppiato deve poter gestire i carichi di lavoro per tutti i Response Group in entrambi i pool.
 
 
 
 </div>
 
-### <a name="response-group-user-model"></a>Modello di Response Group User
+### <a name="response-group-user-model"></a>Modello utente Response Group
 
 <table>
 <colgroup>
@@ -72,15 +72,15 @@ La tabella seguente descrive il modello di Response Group User che puoi usare co
 <thead>
 <tr class="header">
 <th>Metrica</th>
-<th>Per pool Enterprise Edition (con 8 server front-end)</th>
+<th>Per pool Enterprise Edition (con 8 Front End Server)</th>
 <th>Per server Standard Edition</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Chiamate in arrivo al secondo</p></td>
-<td><p>16</p></td>
-<td><p>2</p></td>
+<td><p>Chiamate in entrata al secondo</p></td>
+<td><p>16 </p></td>
+<td><p>2 </p></td>
 </tr>
 <tr class="even">
 <td><p>Chiamate simultanee connesse a IVR o MoH</p></td>
@@ -88,14 +88,14 @@ La tabella seguente descrive il modello di Response Group User che puoi usare co
 <td><p>60</p></td>
 </tr>
 <tr class="odd">
-<td><p>Sessioni anonime simultanee (senza messaggi istantanei)</p></td>
+<td><p>Sessioni anonime simultanee (senza messaggistica istantanea)</p></td>
 <td><p>224</p></td>
 <td><p>28</p></td>
 </tr>
 <tr class="even">
 <td><p>Sessioni anonime simultanee (con messaggistica istantanea)</p></td>
 <td><p>64</p></td>
-<td><p>8</p></td>
+<td><p>8 </p></td>
 </tr>
 <tr class="odd">
 <td><p>Agenti attivi (formali e informali)</p></td>
@@ -103,12 +103,12 @@ La tabella seguente descrive il modello di Response Group User che puoi usare co
 <td><p>1200</p></td>
 </tr>
 <tr class="even">
-<td><p>Numero di gruppi di ricerca</p></td>
+<td><p>Numero di gruppi di risposta</p></td>
 <td><p>400</p></td>
 <td><p>400</p></td>
 </tr>
 <tr class="odd">
-<td><p>Numero di gruppi IVR (usare il riconoscimento vocale)</p></td>
+<td><p>Numero di gruppi IVR (utilizzo del riconoscimento vocale)</p></td>
 <td><p>200</p></td>
 <td><p>200</p></td>
 </tr>

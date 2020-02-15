@@ -12,16 +12,16 @@ ms:contentKeyID: 48185247
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 77bad1729c67c363dc56eaf8788e57caabd51876
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e1db2211f174c18c160262c1f62c55a178b2cda4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722426"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045919"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,93 +35,93 @@ ms.locfileid: "41722426"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Usare una delle procedure seguenti per creare o modificare una coda.
+Per creare o modificare una coda, utilizzare una delle procedure illustrate di seguito.
 
 <div>
 
-## <a name="to-use-lync-server-control-panel-to-create-or-modify-a-queue"></a>Per usare il pannello di controllo di Lync Server per creare o modificare una coda
+## <a name="to-use-lync-server-control-panel-to-create-or-modify-a-queue"></a>Per utilizzare il pannello di controllo di Lync Server per creare o modificare una coda
 
-1.  Accedere come membro del gruppo RTCUniversalServerAdmins o come membro di uno dei ruoli amministrativi predefiniti che supportano il gruppo di risposte.
+1.  Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
     <div>
     
 
     > [!NOTE]  
-    > Se si è uno dei responsabili del gruppo di risposte delegati per un flusso di lavoro gestito, è possibile creare o modificare code di Response Group e assegnarle ai flussi di lavoro gestiti.
+    > Se si è uno dei responsabili di Response Group delegati per un flusso di lavoro gestito, è possibile creare o modificare le code di Response Group e assegnarle ai flussi di lavoro gestiti personalmente.
 
     
     </div>
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Nella barra di spostamento sinistra fare clic su **Response Groups**, quindi fare clic su **Accoda**.
+3.  Sulla barra di spostamento sinistra fare clic su **Response Group** e quindi su **Coda**.
 
-4.  Nella pagina **coda** eseguire una delle operazioni seguenti:
+4.  Nella pagina **Coda** eseguire una delle operazioni seguenti:
     
-      - Per creare una nuova coda, fare clic su **nuovo**. In **Seleziona un servizio**Digitare parte o tutto il nome del servizio **ApplicationServer** in cui si vuole aggiungere la coda nel campo di ricerca. Nell'elenco dei servizi risultante fare clic sul servizio desiderato e quindi fare clic su **OK**.
+      - Per creare una nuova coda, fare clic su **Nuovo**. In **Seleziona un servizio** digitare nel campo di ricerca parte oppure tutto il nome del servizio **ApplicationServer** in cui si intende aggiungere la coda. Nell'elenco di servizi risultante fare clic sul servizio desiderato e quindi su **OK**.
     
-      - Per modificare una coda esistente, digitare tutto o parte del nome della coda nel campo di ricerca. Nell'elenco di code risultante fare clic sulla coda desiderata, fare clic su **modifica**e quindi su **Mostra dettagli**.
+      - Per modificare una coda esistente, digitare tutto o una parte del nome della coda nel campo di ricerca. Nell'elenco di code risultante fare clic sulla coda desiderata, su **Modifica** e quindi su **Mostra dettagli**.
 
-5.  In **nome**Digitare un nome identificativo per la coda.
+5.  In **Nome** digitare un nome identificativo della coda.
 
-6.  In **Descrizione**Digitare una descrizione per la coda.
+6.  In **Descrizione** digitare una descrizione per la coda.
 
-7.  In **gruppi**specificare i gruppi che si desidera assegnare alla coda. Esegui una delle operazioni seguenti:
+7.  In **Gruppi** specificare i gruppo che si desidera assegnare alla coda. Eseguire una delle operazioni seguenti:
     
-      - Per aggiungere un gruppo alla coda, fare clic su **Seleziona**. Nel campo **Seleziona gruppi** digitare tutto o parte del nome del gruppo di agenti che si vuole assegnare alla coda, fare clic sul gruppo di agenti desiderato e quindi fare clic su **OK**.
+      - Per aggiungere un gruppo alla coda, fare clic su **Seleziona**. Nel campo di ricerca **Seleziona gruppi** digitare tutto o parte del nome del gruppo di agenti che si intende assegnare alla coda, fare clic sul gruppo desiderato e quindi fare clic su **OK**.
     
-      - Per rimuovere un gruppo dalla coda, nell'elenco dei gruppi di agenti fare clic sul gruppo che si desidera rimuovere e quindi fare clic su **Rimuovi**.
+      - Per rimuovere un gruppo dalla coda, nell'elenco di gruppi di agenti fare clic sul gruppo che si desidera rimuovere e quindi fare clic su **Rimuovi**.
     
-      - Per modificare l'ordine in cui vengono cercati gli agenti, nell'elenco dei gruppi di agenti fare clic su un gruppo e quindi fare clic sulla freccia su o freccia giù.
+      - Per modificare l'ordine in cui gli agenti vengono ricercati, nell'elenco di gruppi di agenti fare clic su un gruppo e quindi sulla freccia rivolta verso l'alto o verso il basso.
         
         <div>
         
 
         > [!NOTE]  
-        > Quando il server Cerca un agente disponibile per la coda, usa l'ordine dei gruppi. Il primo gruppo dell'elenco viene quindi cercato per primo, seguito dal secondo gruppo nell'elenco e così via.
+        > Per la ricerca di un agente disponibile per la coda, il server utilizza l'ordine dei gruppi. La ricerca pertanto viene eseguita prima nel primo gruppo, quindi nel secondo gruppo dell'elenco e così via.
 
         
         </div>
 
-8.  Per specificare un periodo di tempo massimo per il chiamante in attesa in attesa prima che un agente risponda alla chiamata, selezionare la casella di controllo **Abilita timeout coda** e quindi eseguire le operazioni seguenti:
+8.  Per specificare un periodo di tempo massimo in cui un chiamante resta in attesa prima che un agente risponda alla chiamata, selezionare la casella di controllo **Abilita timeout coda** e quindi eseguire le operazioni seguenti:
     
-    1.  Nel **periodo di timeout (secondi)** specificare il numero massimo di secondi in cui il chiamante attende che un agente risponda alla chiamata.
+    1.  In **Periodo di timeout (secondi)** specificare il numero massimo di secondi che un chiamante può attendere prima che un agente risponda alla chiamata.
     
-    2.  In **azione chiamata**selezionare l'azione che si verifica quando una chiamata ha un timeout come segue:
+    2.  In **Azione chiamata** selezionare l'azione che deve essere eseguita quando si verifica il timeout di una chiamata, come indicato di seguito:
     
     <!-- end list -->
     
       - Per disconnettere la chiamata dopo il timeout, fare clic su **Disconnetti**.
     
-      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **inoltra alla**segreteria telefonica e quindi, nel campo **indirizzo SIP** , digitare un indirizzo di segreteria\<telefonica\>@\<nel formato\> SIP: nomeutente nomedominio (ad esempio, SIP:bob@contoso.com).
+      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a**segreteria telefonica e quindi digitare un indirizzo di segreteria telefonica nel campo **indirizzo SIP** nel\<formato\>@\<SIP:\> nomeutente DomainName (ad esempio, SIP:bob@contoso.com).
     
-      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **inoltra al numero**di telefono e quindi, nel campo **indirizzo SIP** , digitare il numero di\<telefono\>@\<nel formato\> SIP: Number NomeDominio (ad esempio, SIP:+14255550121@contoso.com).
+      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono**e quindi nel campo **indirizzo SIP** digitare il numero di telefono nel\<formato\>@\<SIP:\> number domainname (ad esempio, SIP:+14255550121@contoso.com).
     
-      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra all'indirizzo SIP**e quindi, nel campo **indirizzo SIP** , digitare l'URI per l'utente nel formato\<SIP\>@\<: nomeutente\>NomeDominio.
+      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a indirizzo SIP**e quindi nel campo **indirizzo SIP** digitare l'URI dell'utente nel formato\<SIP: nomeutente\>@\<DomainName\>.
     
-      - Per inoltrare la chiamata a un'altra coda, fare clic su **Inoltra a un'altra coda**e quindi passare alla coda che si vuole usare.
+      - Per inoltrare la chiamata a un'altra coda, fare clic su **Inoltra a un'altra coda** e quindi selezionare la coda che si desidera utilizzare.
 
-9.  Per specificare un numero massimo di chiamate che la coda può contenere, selezionare la casella di controllo **attiva l'overflow delle code** e quindi eseguire le operazioni seguenti:
+9.  Per specificare il numero massimo di chiamate che possono essere contenute nella coda, selezionare la casella di controllo **Abilita overflow coda** e quindi eseguire le operazioni seguenti:
     
-    1.  In **numero massimo di chiamate**selezionare il numero massimo di chiamate che la coda deve contenere.
+    1.  In **Numero massimo di chiamate** selezionare il numero massimo di chiamate che possono essere contenute nella coda.
     
-    2.  In **inoltra la chiamata**selezionare la chiamata da inoltrare quando la coda è piena: chiamata più **recente** o **chiamata più vecchia**.
+    2.  In **Inoltra la chiamata** selezionare quale chiamata dovrà essere inoltrata quando la coda è piena, ovvero **Chiamata più recente** o **Chiamata meno recente**.
     
-    3.  In **azione chiamata**selezionare l'azione che si verifica quando la soglia di overflow viene soddisfatta come segue:
+    3.  In **Azione chiamata** selezionare l'azione che deve essere eseguita quando viene raggiunta la soglia di overflow, come indicato di seguito:
     
     <!-- end list -->
     
       - Per disconnettere la chiamata dopo il timeout, fare clic su **Disconnetti**.
     
-      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **inoltra alla**segreteria telefonica e quindi, nel campo **indirizzo SIP** , digitare un indirizzo di segreteria\<telefonica\>@\<nel formato\> SIP: nomeutente nomedominio (ad esempio, SIP:bob@contoso.com).
+      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a**segreteria telefonica e quindi digitare un indirizzo di segreteria telefonica nel campo **indirizzo SIP** nel\<formato\>@\<SIP:\> nomeutente DomainName (ad esempio, SIP:bob@contoso.com).
     
-      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **inoltra al numero**di telefono e quindi, nel campo **indirizzo SIP** , digitare il numero di\<telefono\>@\<nel formato\> SIP: Number NomeDominio (ad esempio, SIP:+14255550121@contoso.com).
+      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono**e quindi nel campo **indirizzo SIP** digitare il numero di telefono nel\<formato\>@\<SIP:\> number domainname (ad esempio, SIP:+14255550121@contoso.com).
     
-      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra all'indirizzo SIP**e quindi, nel campo **indirizzo SIP** , digitare l'URI per l'utente nel formato\<SIP\>@\<: nomeutente\>NomeDominio.
+      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a indirizzo SIP**e quindi nel campo **indirizzo SIP** digitare l'URI dell'utente nel formato\<SIP: nomeutente\>@\<DomainName\>.
     
-      - Per inoltrare la chiamata a un'altra coda, fare clic su **Inoltra a un'altra coda**e quindi passare alla coda che si vuole usare.
+      - Per inoltrare la chiamata a un'altra coda, fare clic su **Inoltra a un'altra coda** e quindi selezionare la coda che si desidera utilizzare.
 
 10. Fare clic su **Commit**.
 
@@ -129,22 +129,22 @@ Usare una delle procedure seguenti per creare o modificare una coda.
 
 <div>
 
-## <a name="to-use-windows-powershell-to-create-or-modify-a-queue"></a>Per usare Windows PowerShell per creare o modificare una coda
+## <a name="to-use-windows-powershell-to-create-or-modify-a-queue"></a>Per utilizzare Windows PowerShell per creare o modificare una coda
 
-1.  Accedere come membro del gruppo RTCUniversalServerAdmins o come membro di uno dei ruoli amministrativi predefiniti che supportano il gruppo di risposte.
+1.  Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
     <div>
     
 
     > [!NOTE]  
-    > Se si è uno dei responsabili del gruppo di risposte delegati per un flusso di lavoro gestito, sarà possibile creare gruppi di agenti e code e assegnare gruppi di agenti alle code.
+    > Se si è uno dei responsabili di Response Group delegati per un flusso di lavoro gestito, è possibile creare gruppi di agenti e code, nonché assegnare i gruppi di agenti alle code.
 
     
     </div>
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Creare il prompt da riprodurre quando viene soddisfatta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire:
+3.  Creare la richiesta da riprodurre quando viene raggiunta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire il comando seguente:
     
         $promptTO = New-CsRgsPrompt -TextToSpeechPrompt "<text for TTS prompt>"
     
@@ -156,12 +156,12 @@ Usare una delle procedure seguenti per creare o modificare una coda.
     
 
     > [!NOTE]  
-    > Per usare un file audio per la richiesta, usare il cmdlet <STRONG>Import-CsRgsAudioFile</STRONG> . Per informazioni dettagliate, vedere <A href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</A>.
+    > Per utilizzare un file audio per il messaggio, eseguire il cmdlet <STRONG>Import-CsRgsAudioFile</STRONG>. Per informazioni dettagliate, vedere <A href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</A>.
 
     
     </div>
 
-4.  Definire l'azione da intraprendere quando viene soddisfatta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire:
+4.  Definire l'azione da eseguire quando viene raggiunta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire il comando seguente:
     
         $actionTO = New-CsRgsCallAction -Prompt <saved prompt from previous step> -Action <action to be taken>
     
@@ -178,7 +178,7 @@ Usare una delle procedure seguenti per creare o modificare una coda.
     
         $action = New-CsRgsCallAction -Prompt $promptTO -Action Terminate
 
-5.  Creare il prompt da riprodurre quando viene soddisfatta la soglia di overflow della coda e salvarla in una variabile. Nella riga di comando eseguire:
+5.  Creare la richiesta da riprodurre quando viene raggiunta la soglia di overflow della coda e salvarla in una variabile. Nella riga di comando eseguire il comando seguente:
     
         $promptOV = New-CsRgsPrompt -TextToSpeechPrompt "<text for TTS prompt>"
     
@@ -190,12 +190,12 @@ Usare una delle procedure seguenti per creare o modificare una coda.
     
 
     > [!NOTE]  
-    > Per usare un file audio per la richiesta, usare il cmdlet <STRONG>Import-CsRgsAudioFile</STRONG> . Per informazioni dettagliate, vedere <A href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</A>.
+    > Per utilizzare un file audio per il messaggio, eseguire il cmdlet <STRONG>Import-CsRgsAudioFile</STRONG>. Per informazioni dettagliate, vedere <A href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</A>.
 
     
     </div>
 
-6.  Definire l'azione da intraprendere quando viene soddisfatta la soglia di overflow della coda e salvarla in una variabile. Nella riga di comando eseguire:
+6.  Definire l'azione da eseguire quando viene raggiunta la soglia di overflow della coda e salvarla in una variabile. Nella riga di comando eseguire il comando seguente:
     
         $actionOV = New-CsRgsCallAction -Prompt <saved prompt from previous step> -Action <action to be taken>
     
@@ -212,11 +212,11 @@ Usare una delle procedure seguenti per creare o modificare una coda.
     
         $action = New-CsRgsCallAction -Prompt $promptOV -Action Terminate
 
-7.  Recuperare il nome del servizio per il servizio Response Group e assegnarlo a una variabile. Nella riga di comando eseguire:
+7.  Recuperare il nome del servizio Response Group e assegnarlo a una variabile. Nella riga di comando digitare il comando seguente:
     
         $serviceId="service:"+(Get-CSService | ?{$_.Applications -Like "*RGS*"}).ServiceId;
 
-8.  Ottenere l'identità del gruppo di agenti da assegnare alla coda. Nella riga di comando eseguire:
+8.  Ottenere l'identità del gruppo di agenti da assegnare alla coda. Nella riga di comando eseguire il comando seguente:
     
         $agid = (Get-CsRgsAgentGroup -Name "Help Desk").Identity;
     
@@ -229,7 +229,7 @@ Usare una delle procedure seguenti per creare o modificare una coda.
     
     </div>
 
-9.  Creare la coda. Nella riga di comando eseguire:
+9.  Creare la coda. Nella riga di comando eseguire il comando seguente:
     
         $q = New-CsRgsQueue -Parent <saved service ID from previous step> -Name "<name of queue>" [-Description "<description for queue>"] [-TimeoutThreshold <# seconds before call times out>] [-TimeoutAction <saved timeout action>] [-OverflowThreshold <# calls queue can hold>] [-OverflowCandidate <call to be acted on when overflow threshold met>] [-OverflowAction <saved overflow action>] [-AgentGroupIDList(<agent group identity>)];
     
@@ -237,7 +237,7 @@ Usare una delle procedure seguenti per creare o modificare una coda.
     
         $q = New-CsRgsQueue -Parent $serviceId -Name "Help Desk" -Description "Contoso Help Desk" -TimeoutThreshold 300 -TimeoutAction $actionTO -OverflowThreshold 10 -OverflowCandidate NewestCall -OverflowAction $actionOV -AgentGroupIDList($agid.Identity;
 
-10. Verificare che la coda sia stata creata. Eseguire
+10. Verificare che la coda sia stata creata. Eseguire il comando seguente:
     
         Get-CsRgsQueue -Name "Help Desk"
 

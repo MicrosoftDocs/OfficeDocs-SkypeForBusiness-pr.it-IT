@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Modalità di bypass multimediale'
+title: 'Lync Server 2013: modalità di bypass multimediale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183898
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4f92d45099f39ec96724f8d0f6025f58e2dbccb2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: af12e34f66d21e447963d857b26976fc130202fa
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41761952"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045178"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41761952"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-05_
+_**Ultimo argomento modificato:** 2012-10-05_
 
-È necessario configurare il bypass multimediale sia a livello globale che per ogni singolo trunk PSTN. Quando si Abilita il bypass multimediale a livello globale, sono disponibili due opzioni: **Ignora sempre** e **Usa le informazioni sul sito e le aree**geografiche.
+È necessario configurare il bypass multimediale sia a livello globale che per i singoli trunk PSTN. Quando si abilita il bypass multimediale a livello globale, sono disponibili due opzioni, ovvero **Ignora sempre** e **Usa le informazioni del sito e dell'area**.
 
-Come suggerisce il nome, il **bypass indica sempre** che il bypass verrà tentato per tutte le chiamate PSTN. Il bypass viene usato **sempre** per le distribuzioni in cui non è necessario abilitare il controllo di ammissione alle chiamate e non è necessario specificare informazioni dettagliate sulla configurazione per il tentativo di bypass multimediale. Inoltre, **sempre l'esclusione** viene usata quando esiste una connettività completa tra client e gateway PSTN. In questa configurazione tutte le subnet sono mappate a uno e solo un ID di bypass, calcolato dal sistema.
+Come indicato dal nome, **Ignora sempre** indica che verrà tentato di eseguire il bypass per tutte le chiamate PSTN. L'opzione **Ignora sempre** viene utilizzata per le distribuzioni in cui non è necessario abilitare il servizio Controllo di ammissione di chiamata né specificare informazioni di configurazione dettagliate in cui indicare quando tentare di eseguire il bypass multimediale. L'opzione **Ignora sempre** viene utilizzata inoltre quando esiste la connettività completa tra i client e i gateway PSTN. In questa configurazione tutte le subnet sono mappate a un solo ID bypass, calcolato dal sistema.
 
-Con le **informazioni sull'uso di siti e aree**geografiche, l'ID di bypass associato alla configurazione del sito e dell'area geografica viene usato per prendere la decisione di bypass. Questa configurazione offre la flessibilità necessaria per configurare il bypass per le topologie più comuni, in quanto offre un controllo preciso quando si verifica un bypass, oltre a supportare le interazioni con il controllo di ammissione alle chiamate (CAC). Il sistema cerca di semplificare l'attività assegnando automaticamente gli ID di bypass come indicato di seguito.
+Con **Utilizza configurazione siti e aree**, l'ID bypass associato alla configurazione dei siti e delle aree viene utilizzato per decidere se eseguire il bypass. Questa configurazione consente di configurare il bypass per le topologie più comuni, poiché offre un controllo granulare su quando eseguire il bypass, oltre a supportare le interazioni con il servizio Controllo di ammissione di chiamata. Il sistema tenta di semplificare l'attività assegnando automaticamente gli ID bypass come indicato di seguito.
 
-  - Il sistema assegna automaticamente un singolo ID di bypass univoco a ogni area geografica.
+  - Il sistema assegna automaticamente un singolo ID bypass univoco a ogni area.
 
-  - Qualsiasi sito connesso a un'area geografica su un collegamento WAN senza vincoli di larghezza di banda eredita lo stesso ID di bypass dell'area geografica.
+  - Ogni sito connesso a un'area tramite un collegamento WAN senza vincoli di larghezza di banda eredita lo stesso ID bypass dell'area.
 
-  - Un sito associato all'area geografica su un collegamento WAN con larghezza di banda vincolata viene assegnato un ID di bypass diverso da quello dell'area geografica.
+  - A un sito associato all'area tramite un collegamento WAN con vincoli di larghezza di banda è assegnato un ID bypass diverso rispetto a quello dell'area.
 
-  - Le subnet associate a ogni sito ereditano l'ID di bypass per il sito.
+  - Le subnet associate a ogni sito ereditano l'ID bypass del sito.
 
 <div>
 

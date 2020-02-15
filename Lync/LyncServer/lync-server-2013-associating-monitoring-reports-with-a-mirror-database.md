@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: associazione dei report di monitoraggio a un database mirror'
+title: 'Lync Server 2013: associazione dei rapporti di monitoraggio a un database mirror'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541467
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 93e5f10e3e4bd3c063cafcb2fd984098482ebf22
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 82d1ec6b1256326cca9e74d47d27820529050721
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722756"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044748"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="associating-monitoring-reports-with-a-mirror-database-in-lync-server-2013"></a>Associazione di report di monitoraggio a un database mirror in Lync Server 2013
+# <a name="associating-monitoring-reports-with-a-mirror-database-in-lync-server-2013"></a>Associazione dei rapporti di monitoraggio a un database mirror in Lync Server 2013
 
 </div>
 
@@ -35,57 +35,57 @@ ms.locfileid: "41722756"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-02-07_
+_**Ultimo argomento modificato:** 2014-02-07_
 
-Se si configura uno specchio per il database di monitoraggio, il database mirror subentra come database principale se si verifica un failover. Tuttavia, se si usano i report di monitoraggio di Lync Server e si verifica un failover, potrebbe risultare che i report di monitoraggio non si connettono al database mirror. Questo perché, quando si installano i report di monitoraggio, si specifica solo la posizione del database primario; non si specifica la posizione del database mirror.
+Se si configura un mirror per il database di monitoraggio, il database mirror avrà il sopravvento come database primario se si verifica un failover. Tuttavia, se si utilizzano i rapporti di monitoraggio di Lync Server e si verifica un failover, potrebbe risultare che i rapporti di monitoraggio non si connettono al database mirror. Ciò è dovuto al fatto che, quando si installano i rapporti di monitoraggio, si specifica solo il percorso del database primario. non è possibile specificare il percorso del database mirror.
 
-Per ottenere i report di monitoraggio per il failover automatico nel database mirror, è necessario aggiungere il database mirror come "partner di failover" ai due database usati dai report di monitoraggio (un database per i dati del record di dettagli chiamata e l'altro per la qualità di Dati dell'esperienza (QoE)). Notare che questo passaggio deve essere eseguito dopo aver installato i report di monitoraggio. È possibile aggiungere le informazioni del partner di failover modificando manualmente i valori della stringa di connessione usati da questi due database. Per eseguire questa operazione, eseguire la procedura seguente:
+Per ottenere il failover automatico dei rapporti di monitoraggio per il database mirror, è necessario aggiungere il database mirror come "partner di failover" ai due database utilizzati dai report di monitoraggio (un database per i dati dei record dettagli chiamata e l'altro per la qualità di Dati relativi all'esperienza (QoE)). Tenere presente che questo passaggio deve essere eseguito dopo aver installato i report di monitoraggio. È possibile aggiungere le informazioni del partner di failover modificando manualmente i valori della stringa di connessione utilizzati dai due database. A tale scopo, completare la procedura seguente:
 
-1.  Usare Internet Explorer per aprire la Home page di **SQL Server Reporting Services** . L'URL della Home page di Reporting Services include:
+1.  Utilizzare Internet Explorer per aprire la Home page di **SQL Server Reporting Services** . L'URL della Home page di Reporting Services include:
     
-      - Prefisso **http:**
+      - Il prefisso **http:** .
     
       - Il nome di dominio completo (FQDN) del computer in cui sono installati i servizi di Reporting (ad esempio, **ATL-SQL-001.litwareinc.com**).
     
       - La stringa di **caratteri\_/Reports**.
     
-      - Nome dell'istanza del database in cui sono installati i report di monitoraggio, ad esempio **ARCHINST**.
+      - Nome dell'istanza del database in cui sono installati i rapporti di monitoraggio (ad esempio, **ARCHINST**).
     
-    Ad esempio, se SQL Server Reporting Services è stato installato nel computer atl-sql-001.litwareinc.com e i report di monitoraggio usano l'istanza del database ARCHINST, l'URL della Home page sarà simile al seguente:
+    Ad esempio, se SQL Server Reporting Services è stato installato nel computer atl-sql-001.litwareinc.com e i rapporti di monitoraggio utilizzano l'istanza del database ARCHINST, l'URL della Home Page avrà l'aspetto seguente:
     
     **http://atl-sql-001.litwareinc.com/Reports\_archinst**
 
-2.  Dopo avere eseguito l'accesso alla Home page di Reporting Services, fare clic su **LyncServerReports**e quindi fare clic su **report\_contenuto**. Si accede alla pagina **contenuto report\_** per i report di monitoraggio di Lync Server.
+2.  Dopo aver eseguito l'accesso alla Home page di Reporting Services, fare clic su **LyncServerReports**, quindi fare clic su **report\_contenuto**. Che conterrà la pagina di **contenuto\_dei report** per i report di monitoraggio di Lync Server.
 
 3.  Nella pagina **contenuto\_report** fare clic sull'origine dati **CDRDB** .
 
-4.  Nella scheda **Proprietà** della pagina **CDRDB** cercare nella casella di testo la **stringa di connessione**con etichetta. La stringa di connessione corrente avrà un aspetto simile al seguente:
+4.  Nella scheda **Proprietà** della pagina **CDRDB** cercare la casella di testo denominata **stringa di connessione**. La stringa di connessione corrente avrà un aspetto analogo al seguente:
     
-    **Origine dati = (locale)\\ARCHINST; catalogo iniziale = LcsCDR**
+    **Data Source = (local)\\ARCHINST; Initial Catalog = LcsCDR**
 
-5.  Modificare la stringa di connessione per includere il nome del server e l'istanza del database per il database mirror. Ad esempio, se il server è denominato ATL-mirror-001 e il database mirror si trova nell'istanza di ARCHINST, sarà necessario aggiungerlo per specificare il database mirror usando la sintassi seguente:
+5.  Modificare la stringa di connessione per includere il nome del server e l'istanza del database per il database mirror. Ad esempio, se il server è denominato ATL-mirror-001 e il database mirror si trova nell'istanza di ARCHINST, sarà necessario aggiungere per specificare il database mirror utilizzando la sintassi seguente:
     
     **Partner di failover = ATL-mirror-\\001 ARCHINST**
     
-    La stringa di connessione modificata avrà un aspetto simile al seguente:
+    La stringa di connessione modificata avrà l'aspetto seguente:
     
-    **Origine dati = (local)\\ARCHINST; Partner di failover = ATL-mirror-\\001 ARCHINST; catalogo iniziale = LcsCDR**
+    **Data Source = (local)\\ARCHINST; Partner di failover = ATL-mirror-\\001 ARCHINST; Initial Catalog = LcsCDR**
 
 6.  Dopo aver aggiornato la stringa di connessione, fare clic su **applica**.
 
-7.  Nella pagina **CDRDB** fare clic sul collegamento **contenuto\_report** . Fare clic sull'origine dati **QMSDB** e quindi modificare la stringa di connessione per il database QoE. Ad esempio:
+7.  Nella pagina **CDRDB** fare clic sul collegamento **contenuto\_rapporti** . Fare clic sull'origine dati di **QMSDB** e quindi modificare la stringa di connessione per il database QoE. Ad esempio:
     
-    **Origine dati = (local)\\ARCHINST; Partner di failover = ATL-mirror-\\001 ARCHINST; catalogo iniziale = QoEMetrics**
+    **Data Source = (local)\\ARCHINST; Partner di failover = ATL-mirror-\\001 ARCHINST; Initial Catalog = QoEMetrics**
 
-8.  Fare clic su **applica**.
+8.  Fare clic su **Appy**.
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Installazione di report di monitoraggio di Lync Server 2013](lync-server-2013-installing-lync-server-2013-monitoring-reports.md)  
-[Uso di report di monitoraggio in Lync Server 2013](lync-server-2013-using-monitoring-reports.md)  
+[Installazione dei rapporti di monitoraggio di Lync Server 2013](lync-server-2013-installing-lync-server-2013-monitoring-reports.md)  
+[Utilizzo di report di monitoraggio in Lync Server 2013](lync-server-2013-using-monitoring-reports.md)  
   
 
 </div>

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: abilitazione del controllo di ammissione alle chiamate'
+title: 'Lync Server 2013: abilitazione del controllo di ammissione di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183228
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b89c9b888dc610d60b2abbcefd4c9c67e9b0572e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1482ce09ff4501deb4c3acbb5df77d014b314ffb
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735836"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046309"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="enabling-call-admission-control-in-lync-server-2013"></a>Abilitazione del controllo di ammissione alle chiamate in Lync Server 2013
+# <a name="enabling-call-admission-control-in-lync-server-2013"></a>Abilitazione del controllo di ammissione di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,38 +35,38 @@ ms.locfileid: "41735836"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Il servizio Controllo di ammissione di chiamata è una rete di aree, siti e subnet che consentono di applicare restrizioni alle trasmissioni audio e video in base alla larghezza di banda disponibile. Dopo aver configurato la rete CAC, è necessario abilitare CAC per applicare le limitazioni della larghezza di banda. Per eseguire questa operazione, è possibile usare il pannello di controllo di Lync Server.
+Il servizio Controllo di ammissione di chiamata è una rete di aree, siti e subnet che consentono di applicare restrizioni relative alle trasmissioni audio e video in base alla larghezza di banda disponibile. Dopo avere configurato tale rete, è necessario abilitare il servizio per applicare le limitazioni della larghezza di banda. Per eseguire questa operazione, è possibile utilizzare il pannello di controllo di Lync Server.
 
 <div>
 
-## <a name="to-enable-cac-from-lync-server-control-panel"></a>Per abilitare CAC dal pannello di controllo di Lync Server
+## <a name="to-enable-cac-from-lync-server-control-panel"></a>Per abilitare il servizio di controllo di ammissione da Lync Server Control Panel
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **globale**.
+3.  Sulla barra di spostamento sinistra fare clic su  **Configurazione di rete ** e quindi su  **Globale **.
 
-4.  Nella pagina **globale** fare clic sulla configurazione **globale** .
+4.  Nella pagina  **Globale ** fare clic sulla scheda della configurazione  **Globale **.
     
     <div>
     
 
     > [!NOTE]  
-    > Solo una rete può essere configurata per qualsiasi distribuzione di Microsoft Lync Server 2013, quindi non ci saranno mai più configurazioni di rete nell'elenco. Non è possibile rinominare la configurazione globale.
+    > Solo una rete può essere configurata per qualsiasi distribuzione di Microsoft Lync Server 2013, quindi non vi sarà mai più di una configurazione di rete nell'elenco. Non è possibile rinominare la configurazione globale.
 
     
     </div>
 
-5.  Nel menu **modifica** fare clic su **Mostra dettagli**.
+5.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
-6.  Nella pagina **Modifica impostazioni globali** selezionare la casella di **controllo Abilita l'ammissione alle chiamate** e quindi fare clic su **conferma**.
+6.  Nella pagina **Modifica Impostazioni globali** selezionare la casella di controllo **Abilita il controllo di ammissione di chiamata** e quindi fare clic su **Commit**.
 
-Quando si fa clic su **commit**, si esegue un test della configurazione. La finestra di dialogo **Modifica impostazioni globali** viene chiusa, tornando alla pagina **globale** . Verrà visualizzato un messaggio di avviso in caso di errori o incongruenze individuati nella configurazione di rete che ne impediscono il corretto funzionamento, ad esempio se ogni area geografica non è connessa a tutte le altre aree geografiche tramite una route interregion.
+Quando si fa clic su **Commit**, si esegue un test della configurazione. La finestra di dialogo **Modifica Impostazioni globali** si chiude e si torna alla pagina **Globale**. Si riceverà un avviso se nella configurazione di rete vengono rilevati eventuali errori o incongruenze che ne impediscono il corretto funzionamento, ad esempio se non tutte le aree sono connesse a tutte le altre aree mediante una route tra aree.
 
-Se si apportano modifiche alla configurazione di rete, è possibile eseguire di nuovo il controllo di convalida aprendo la configurazione globale e facendo clic su **commit**. Non è necessario disabilitare prima CAC: tenere selezionata la casella di controllo e fare clic su **conferma**. Puoi eseguire questa operazione in qualsiasi momento senza apportare modifiche alla configurazione.
+Se si apportano modifiche alla configurazione di rete, sarà possibile eseguire di nuovo la convalida aprendo la configurazione globale e facendo clic su **Commit**. Non è necessario disabilitare prima il controllo di ammissione di chiamata, perciò lasciare selezionata la casella di controllo e fare clic su **Commit**. È possibile procedere in questo modo in qualsiasi momento senza apportare modifiche alla configurazione.
 
 </div>
 
@@ -75,10 +75,10 @@ Se si apportano modifiche alla configurazione di rete, è possibile eseguire di 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Panoramica del controllo di ammissione alle chiamate in Lync Server 2013](lync-server-2013-overview-of-call-admission-control.md)  
+[Panoramica del controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-overview-of-call-admission-control.md)  
 
 
-[Pianificazione del servizio Controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-planning-for-call-admission-control.md)  
+[Pianificazione del controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-planning-for-call-admission-control.md)  
 [Configurare il controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-configure-call-admission-control.md)  
 [Get-CsNetworkConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkConfiguration)  
 [Set-CsNetworkConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsNetworkConfiguration)  

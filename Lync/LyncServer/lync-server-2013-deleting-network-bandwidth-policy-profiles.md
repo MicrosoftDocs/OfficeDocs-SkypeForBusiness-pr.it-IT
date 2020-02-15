@@ -12,16 +12,16 @@ ms:contentKeyID: 49733643
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2d01bdea6efb632d95a15c631715e9ebe0c9a3bd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a340cae47a73cb2b7926cf3f3b3832d22432ab2b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763034"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048437"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,38 +35,38 @@ ms.locfileid: "41763034"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Nell'ambito del controllo di ammissione di chiamata (CAC) viene usato un criterio di larghezza di banda per definire le limitazioni della larghezza di banda per determinate modalità. In Microsoft Lync Server 2013 solo le modalità audio e video possono essere assegnate alle limitazioni della larghezza di banda. Puoi impostare limitazioni generali della larghezza di banda e limitazioni della sessione. È possibile usare il pannello di controllo di Lync Server per creare, modificare o eliminare un profilo contenitore per questi criteri. Usare le procedure seguenti per eliminare i profili dei criteri di larghezza di banda di rete. Per informazioni dettagliate sulla creazione o la modifica di un profilo dei criteri di larghezza di banda della rete, vedere [creazione o modifica dei profili dei criteri di larghezza di banda in Lync 2013 server](lync-server-2013-creating-or-modifying-bandwidth-policy-profiles.md)
+In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda vengono utilizzati per definire le limitazioni della larghezza di banda per alcune modalità. In Microsoft Lync Server 2013, è possibile assegnare limitazioni della larghezza di banda solo alle modalità audio e video. È possibile impostare limitazioni della larghezza di banda globali o per le sessioni. È possibile utilizzare il pannello di controllo di Lync Server per creare, modificare o eliminare un profilo contenitore per questi criteri. Usare le procedure seguenti per eliminare profili di criteri della larghezza di banda di rete. Per informazioni dettagliate sulla creazione o la modifica di un profilo dei criteri di larghezza di banda di rete, vedere [creating or Modifying Bandwidth Policy Profiles in Lync Server 2013](lync-server-2013-creating-or-modifying-bandwidth-policy-profiles.md).
 
 <div>
 
-## <a name="to-delete-a-bandwidth-policy-profile"></a>Per eliminare un profilo dei criteri di larghezza di banda
+## <a name="to-delete-a-bandwidth-policy-profile"></a>Per eliminare un profilo di criteri della larghezza di banda
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **criteri larghezza di banda**.
+3.  Nella barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Criteri larghezza di banda**.
 
-4.  Nella pagina **criteri di larghezza di banda** fare clic sul profilo dei criteri di larghezza di banda che si desidera eliminare.
+4.  Nella pagina **Criteri larghezza di banda** fare clic sul profilo di criteri della larghezza di banda che si desidera eliminare.
     
     <div>
     
 
     > [!NOTE]  
-    > È possibile eliminare più di un profilo alla volta. Per eseguire questa operazione, premere CTRL e selezionare più profili tenendo premuto il tasto CTRL. In alternativa, per selezionare tutti i profili, fare clic su <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>modifica</STRONG> .
+    > È possibile eliminare più profili contemporaneamente. A tale scopo, tenere premuto CTRL e selezionare i diversi profili. In alternativa, per selezionare tutti i profili, scegliere <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>Modifica</STRONG>.
 
     
     </div>
 
-5.  Scegliere **Elimina**dal menu **modifica** .
+5.  Scegliere **Elimina** dal menu **Modifica**.
     
     <div>
     
 
     > [!WARNING]  
-    > Non è possibile eliminare un profilo dei criteri di larghezza di banda associato a un sito di rete. Prima di poter eliminare il profilo, devi prima rimuovere l'associazione con il sito di rete. Per informazioni dettagliate su come modificare il sito di rete, vedere <A href="lync-server-2013-creating-or-modifying-network-sites.md">creazione o modifica di siti di rete in Lync Server 2013</A>.
+    > Non è possibile eliminare un profilo di criteri della larghezza di banda associato a un sito di rete. È necessario rimuovere l'associazione al sito di rete prima di poter eliminare il profilo. Per informazioni dettagliate su come modificare il sito di rete, vedere <A href="lync-server-2013-creating-or-modifying-network-sites.md">creazione o modifica di siti di rete in Lync Server 2013</A>.
 
     
     </div>
@@ -78,8 +78,8 @@ Nell'ambito del controllo di ammissione di chiamata (CAC) viene usato un criteri
 ## <a name="see-also"></a>Vedere anche
 
 
-[Creazione o modifica dei profili dei criteri di larghezza di banda in Lync Server 2013](lync-server-2013-creating-or-modifying-bandwidth-policy-profiles.md)  
-[Visualizzazione delle informazioni del profilo dei criteri di larghezza di banda di rete in Lync Server 2013](lync-server-2013-viewing-network-bandwidth-policy-profile-information.md)  
+[Creazione o modifica di profili di criteri di larghezza di banda in Lync Server 2013](lync-server-2013-creating-or-modifying-bandwidth-policy-profiles.md)  
+[Visualizzazione delle informazioni sul profilo del criterio larghezza di banda di rete in Lync Server 2013](lync-server-2013-viewing-network-bandwidth-policy-profile-information.md)  
 
 
 [Configurare il controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-configure-call-admission-control.md)  

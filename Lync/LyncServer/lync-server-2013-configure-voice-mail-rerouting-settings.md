@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare le impostazioni di rerouting della segreteria telefonica'
+title: 'Lync Server 2013: configurare le impostazioni di reinstradamento della segreteria telefonica'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184593
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b4ea243e87490bcabd48c866cce525d6bbd17077
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5fa98050e026c90438b1df0811daa4b5235c9732
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733846"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048139"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-voice-mail-rerouting-settings-in-lync-server-2013"></a>Configurare le impostazioni di rerouting della segreteria telefonica in Lync Server 2013
+# <a name="configure-voice-mail-rerouting-settings-in-lync-server-2013"></a>Configurare le impostazioni di reinstradamento della segreteria telefonica in Lync Server 2013
 
 </div>
 
@@ -35,41 +35,41 @@ ms.locfileid: "41733846"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-18_
+_**Ultimo argomento modificato:** 2012-10-18_
 
-I Survivable Branch Appliances e i Survivable Branch Server possono consentire la sopravvivenza della segreteria telefonica per gli utenti di Branch durante un'interruzione WAN, se la messaggistica unificata di Exchange viene installata presso il sito centrale e viene distribuito un operatore automatico di messaggistica unificata di Exchange (AA). È consigliabile che l'amministratore di Exchange configuri l'AA per accettare solo i messaggi, che Disabilita altre funzionalità generiche, ad esempio il trasferimento a un utente o il trasferimento a un operatore. In alternativa, è possibile usare un generico AA o un AA personalizzato per instradare la chiamata.
+Survivable Branch Appliance e Survivable Branch Server sono in grado di garantire la sopravvivenza dei messaggi vocali per gli utenti di succursali durante un'interruzione della rete WAN, se la messaggistica unificata di Exchange è installata nel sito centrale e viene distribuito un operatore automatico di messaggistica unificata di Exchange. È opportuno che l'amministratore di Exchange configuri l'Operatore automatico in modo che accetti solo i messaggi, disabilitando altre funzionalità generiche come il trasferimento a un utente o a un operatore. In alternativa, è possibile utilizzare un Operatore automatico generico o personalizzato per il routing della chiamata.
 
-Per informazioni dettagliate, vedere la sezione "preparazione per la sopravvivenza della segreteria telefonica" dei [requisiti di resilienza del sito filiale per Lync Server 2013](lync-server-2013-branch-site-resiliency-requirements.md) nella documentazione relativa alla pianificazione.
+Per informazioni dettagliate, vedere la sezione relativa alla preparazione per la sopravvivenza dei messaggi vocali [per i requisiti di resilienza del sito di succursale per Lync Server 2013](lync-server-2013-branch-site-resiliency-requirements.md) nella documentazione relativa alla pianificazione.
 
 <div>
 
-## <a name="to-configure-voice-mail-survivability"></a>Per configurare la sopravvivenza della segreteria telefonica
+## <a name="to-configure-voice-mail-survivability"></a>Per configurare il funzionamento ininterrotto della segreteria telefonica
 
-1.  Chiedere all'amministratore di Exchange di configurare l'AA solo per accettare i messaggi (nella shell di Exchange utilizzare il cmdlet seguente: **set \<-UMAutoAttendant\> AA Name-CallSomeoneEnabled $false**. Il parametro che specifica di consentire l'uscita dei messaggi (*SendVoiceMsgEnabled*) è true per impostazione predefinita.
+1.  Chiedere all'amministratore di Exchange di configurare l'AA per accettare solo i messaggi (nella shell di Exchange utilizzare il cmdlet seguente: **set \<-UMAutoAttendant\> AA Name-CallSomeoneEnabled $false**. Il parametro che consente di specificare se consentire la visualizzazione di messaggi (*SendVoiceMsgEnabled*) viene impostato su true per impostazione predefinita.
 
-2.  In Lync Server Management Shell utilizzare il cmdlet **New-CsVoicemailReroutingConfiguration** per impostare il numero di telefono AA come numero di telefono dell'operatore automatico di messaggistica unificata di Exchange nella configurazione di reindirizzamento della segreteria telefonica in Survivable Branch Appliance o Survivable Branch Server.
+2.  In Lync Server Management Shell, utilizzare il cmdlet **New-CsVoicemailReroutingConfiguration** per impostare il numero di telefono dell'operatore automatico di messaggistica unificata di Exchange nella configurazione di reinstradamento della segreteria telefonica nel Survivable Branch Appliance o Survivable Branch Server.
     
     <div>
     
 
     > [!NOTE]  
-    > Se è necessario modificare l'impostazione di reinstradamento della segreteria telefonica in un secondo momento, usare il cmdlet <STRONG>Set-CsVoicemailReroutingConfiguration</STRONG> per eseguire questa operazione. Per informazioni dettagliate, informazioni su <STRONG>New</STRONG> e <STRONG>Set-CsVoicemailReroutingConfiguration</STRONG>, negli argomenti della Guida di Shell.
+    > Se in seguito sarà necessario modificare l'impostazione di rerouting della segreteria telefonica, utilizzare il cmdlet <STRONG>Set-CsVoiceMailReRoutingConfiguration</STRONG> a tale scopo. Per informazioni dettagliate su <STRONG>New-</STRONG>, vedere <STRONG>Set-CSVoiceMailReroutingConfiguration</STRONG> negli argomenti della Guida della shell.
 
     
     </div>
 
-3.  Impostare il numero di accesso abbonato alla messaggistica UNIFICAta di Exchange che corrisponde al dial plan di messaggistica unificata di Exchange dell'utente della filiale come numero di accesso del Sottoscrittore di Exchange UM nella configurazione di reindirizzamento della segreteria telefonica in Survivable Branch Appliance o Survivable Branch Server.
+3.  Impostare il numero di accesso sottoscrittore Messaggistica unificata di Exchange corrispondente al dial plan di messaggistica unificata di Exchange dell'utente di succursale come numero di accesso sottoscrittore Messaggistica unificata di Exchange nella configurazione di reinstradamento della segreteria telefonica nel Survivable Branch Appliance o Survivable Branch Server
     
     <div>
     
 
     > [!NOTE]  
-    > Configurare il dial plan degli utenti di Exchange UM in modo che sia presente un solo dial plan associato a tutti gli utenti della filiale che hanno bisogno di accedere alla funzionalità Get Voice mail durante un'interruzione WAN.
+    > Configurare il dial plan degli utenti di messaggistica unificata di Exchange in modo che sia presente un solo dial plan associato a tutti gli utenti di succursale che hanno necessità di accedere alla funzionalità di ricezione della posta vocale durante un'interruzione della rete WAN.
 
     
     </div>
 
-**Passaggio successivo** per Survivable Branch Appliances o Survivable Branch Servers: [utenti privati in un Survivable Branch Appliance o server in Lync Server 2013](lync-server-2013-home-users-on-a-survivable-branch-appliance-or-server.md).
+**Passaggio successivo** per Survivable Branch Appliance o Survivable Branch Server: [Home Users on a Survivable Branch Appliance or server in Lync Server 2013](lync-server-2013-home-users-on-a-survivable-branch-appliance-or-server.md).
 
 </div>
 

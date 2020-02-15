@@ -12,16 +12,16 @@ ms:contentKeyID: 48185004
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: aa8068b69afa3e02a5634041c61be6f7711e8f30
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4b1dd5fd119022807fbc64218c80e24a33557aa1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734816"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046199"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41734816"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Sebbene la qualità del servizio (QoS) non sia abilitata per impostazione predefinita per i dispositivi come gli iPhone, QoS è abilitata per impostazione predefinita per i dispositivi in cui è in uso Lync Phone Edition. Questi dispositivi sono comunemente definiti telefoni UC o Unified Communication. Per verificare questo, eseguire il comando di Windows PowerShell seguente dall'interno di Lync Server Management Shell:
+Anche se la qualità del servizio (QoS) non è abilitata per impostazione predefinita per i dispositivi come iPhone, QoS è abilitata per impostazione predefinita per i dispositivi che eseguono Lync Phone Edition. Questi dispositivi sono comunemente denominati telefoni di comunicazione unificati o UC. Per verificarlo, eseguire il comando di Windows PowerShell seguente dall'interno di Lync Server Management Shell:
 
     Get-CsUCPhoneConfiguration
 
-Se non sono state apportate modifiche alle impostazioni di configurazione del telefono UC, verranno restituite le informazioni che hanno un aspetto simile al seguente:
+Se non sono state apportate modifiche alle impostazioni di configurazione dei telefoni UC, verranno restituite informazioni simili alle seguenti:
 
     Identity             : Global
     CalendarPollInterval : 00:03:00
@@ -53,43 +53,43 @@ Se non sono state apportate modifiche alle impostazioni di configurazione del te
     Voice8021p           : 0
     LoggingLevel         : Off
 
-Per la qualità dei servizi, è interessante solo una di queste proprietà: VoiceDiffServTag. VoiceDiffServTag rappresenta il valore DSCP assegnato al traffico vocale proveniente da un dispositivo Lync Phone Edition.
+Per motivi di qualità del servizio, è interessante solo una delle proprietà seguenti: VoiceDiffServTag. VoiceDiffServTag rappresenta il valore DSCP assegnato al traffico vocale proveniente da un dispositivo Lync Phone Edition.
 
 <div>
 
 
 > [!NOTE]
-> Il parametro Voice8021p non è più supportato in Lync Server 2013. Il parametro è ancora valido per la compatibilità con le versioni precedenti di Microsoft Lync Server 2010; Tuttavia, non ha alcun effetto sui dispositivi usati con Lync Server 2013.
+> Il parametro Voice8021p non è più supportato in Lync Server 2013. Il parametro è ancora valido per la compatibilità con le versioni precedenti di Microsoft Lync Server 2010; Tuttavia, non ha alcun effetto sui dispositivi utilizzati con Lync Server 2013.
 
 
 
 </div>
 
-Nella maggior parte delle reti, la marcatura dei pacchetti di Lync Phone Edition con una VoiceDiffServTag di 40 non deve causare problemi. Tuttavia 40 non è il valore normalmente usato per il traffico audio, che in genere è contrassegnato dal codice DSCP 46. Per mantenere la coerenza in tutta la rete, è consigliabile modificare la proprietà VoiceDiffServTag dei telefoni UC in 46.
+Nella maggior parte delle reti, la marcatura dei pacchetti di Lync Phone Edition con una VoiceDiffServTag di 40 non deve causare problemi. 40 non è tuttavia il valore utilizzato comunemente per il traffico audio, che invece è quasi sempre contrassegnato con il codice DSCP 46. Per mantenere la coerenza all'interno della rete, è possibile modificare la proprietà VoiceDiffServTag dei telefoni UC impostandola su 46.
 
-A questo scopo, puoi usare Windows PowerShell o il pannello di controllo di Lync Server. Per modificare il valore di VoiceDiffServTag con Windows PowerShell, eseguire il comando seguente da Lync Server Management Shell:
+A tale scopo, è possibile utilizzare Windows PowerShell o il pannello di controllo di Lync Server. Per modificare il valore VoiceDiffServTag tramite Windows PowerShell, eseguire il comando riportato di seguito dall'interno di Lync Server Management Shell:
 
     Set-CsUCPhoneConfiguration -VoiceDiffServTag 46
 
-Il comando precedente modifica la raccolta globale delle impostazioni di configurazione del telefono UC. Tieni presente, tuttavia, che le impostazioni del telefono UC possono essere assegnate anche all'ambito del sito. Per modificare le impostazioni di configurazione del telefono UC nell'ambito del sito, è necessario specificare l'identità del sito. Ad esempio:
+Il comando precedente modifica la raccolta globale delle impostazioni di configurazione dei telefoni UC. Tali impostazioni possono tuttavia essere assegnate anche all'ambito del sito. Per modificare le impostazioni di configurazione dei telefoni UC nell'ambito del sito, è necessario specificare l'identità (Identity) del sito. Ad esempio:
 
     Set-CsUCPhoneConfiguration -Identity "site:Redmond" -VoiceDiffServTag 46
 
-È anche possibile usare il comando seguente per modificare contemporaneamente tutte le impostazioni di configurazione del telefono UC:
+È inoltre possibile utilizzare il comando seguente per modificare contemporaneamente tutte le impostazioni di configurazione dei telefoni UC:
 
     Get-CsUCPhoneConfiguration | Set-CsUCPhoneConfiguration -VoiceDiffServTag 46
 
-Se si preferisce apportare questa modifica usando il pannello di controllo di Lync Server, avviare il pannello di controllo e quindi completare la procedura seguente:
+Se si preferisce apportare questa modifica utilizzando il pannello di controllo di Lync Server, avviare il pannello di controllo e quindi completare la procedura seguente:
 
-1.  Fare clic su **client** e quindi su **Configurazione dispositivo**.
+1.  Fare clic su **Client** e quindi su **Configurazione dispositivo**.
 
-2.  Nella scheda **Configurazione dispositivo** fare doppio clic sulla raccolta di impostazioni che si desidera modificare, ad esempio **globale**.
+2.  Nella scheda **Configurazione dispositivo** fare doppio clic sulla raccolta di impostazioni che si desidera modificare, ad esempio **Globale**.
 
-3.  Nella finestra di dialogo **modifica configurazione dispositivo** impostare il valore della casella **qualità vocale del servizio (QoS)** su **46** e quindi fare clic su **commit**.
+3.  Nella finestra di dialogo **Modifica configurazione dispositivo** impostare il valore della casella **Qualità vocale servizio (QoS)** su **46** e quindi fare clic su **Commit**.
 
-Se si hanno più raccolte, sarà necessario ripetere questa procedura per ogni raccolta di impostazioni del telefono UC. Il pannello di controllo di Lync Server non consente di modificare contemporaneamente più insiemi di impostazioni.
+Se si dispone di più raccolte, sarà necessario ripetere questo processo per ogni raccolta di impostazioni per i telefoni UC. Il pannello di controllo di Lync Server non consentirà di modificare contemporaneamente più insiemi di impostazioni.
 
-Se si hanno dispositivi che non sono basati sul sistema operativo Windows (ad esempio iPhone) nell'organizzazione, questi dispositivi non saranno interessati modificando l'impostazione VoiceDiffServTag. Se si vogliono modificare i valori di DSCP in questi dispositivi, è necessario fare riferimento al manuale di amministrazione per ogni tipo di dispositivo.
+Se si dispone di dispositivi non basati sul sistema operativo Windows, come nel caso di iPhone, nell'organizzazione la modifica dell'impostazione VoiceDiffServTag non inciderà su questi dispositivi. Se si desidera modificare i valori DSCP su tali dispositivi, sarà necessario fare riferimento al manuale dell'amministratore per ogni tipo di dispositivo.
 
 </div>
 

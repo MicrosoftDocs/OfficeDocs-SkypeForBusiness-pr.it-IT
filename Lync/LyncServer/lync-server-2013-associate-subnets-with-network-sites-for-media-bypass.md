@@ -12,16 +12,16 @@ ms:contentKeyID: 48184244
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dd45daa964b51639c7fe1db3ff10e334e21641f2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: dbe244426b6c2b7f83ef8070f995305a2a02ef31
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722796"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044778"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,29 +35,29 @@ ms.locfileid: "41722796"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
 <div>
 
 
 > [!NOTE]  
-> In questo argomento si presuppone che siano state configurate le impostazioni globali di bypass multimediale e che siano stati configurati i siti di rete e l'area network per il bypass multimediale
+> In questo argomento si presuppone che siano state configurate impostazioni globali per la funzionalità Media Bypass e che siano stati configurati l'area di rete e i siti di rete per tale funzionalità.
 
 
 
 </div>
 
-Ogni subnet della rete deve essere associata a un sito di rete specifico. Il motivo è che le informazioni sulla subnet vengono usate per determinare il sito di rete in cui si trova un endpoint. Quando sono note le posizioni di entrambe le parti di una sessione, il bypass multimediale può determinare dove inviare il supporto per l'elaborazione.
+Ogni subnet della rete deve essere associata a un sito di rete specifico. Le informazioni della subnet, infatti, vengono utilizzate per determinare il sito di rete in cui si trova un endpoint. Quando sono note le posizioni di entrambe le parti di una sessione, il bypass multimediale consente di determinare dove inviare gli elementi multimediali per l'elaborazione.
 
-Il bypass multimediale non ha particolari requisiti per l'associazione delle subnet con i siti di rete. Per creare un'associazione tra le subnet e i siti di rete della topologia, seguire le procedure descritte in [associare una subnet a un sito di rete in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md).
+Per il bypass multimediale non esistono requisiti speciali per l'associazione di subnet a siti di rete. Per creare un'associazione tra le subnet e i siti di rete nella topologia, seguire le procedure illustrate in [associare una subnet a un sito di rete in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md).
 
 <div>
 
-## <a name="next-steps-create-bandwidth-policy-profiles"></a>Passaggi successivi: creare profili dei criteri di larghezza di banda
+## <a name="next-steps-create-bandwidth-policy-profiles"></a>Passaggi successivi: creare profili di criteri di larghezza di banda
 
-Dopo aver associato le subnet con i siti di rete per il bypass multimediale, è necessario creare uno o più profili dei criteri di larghezza di banda che partizionano le subnet in quelle con una buona connettività e quelle senza, ai fini del bypass multimediale. Tutte le subnet all'interno di un'area di rete con siti di rete che non dispongono di vincoli di larghezza di banda hanno una buona connettività e, pertanto, tali subnet possono usare il bypass multimediale.
+Dopo aver associato le subnet ai siti di rete per il bypass multimediale, è necessario creare uno o più profili di criteri di larghezza di banda per suddividere le subnet tra quelle con connettività di buon livello e quelle senza, ai fini del bypass multimediale. Tutte le subnet in un'area di rete con siti di rete che non hanno limiti di larghezza di banda dispongono di connettività di buon livello e possono pertanto utilizzare il bypass multimediale.
 
-Per le procedure per configurare i profili dei criteri di larghezza di banda, vedere [creare profili dei criteri di larghezza di banda in Lync Server 2013](lync-server-2013-create-bandwidth-policy-profiles.md)
+Per le procedure per la configurazione dei profili dei criteri di larghezza di banda, vedere [create Bandwidth Policy Profiles in Lync Server 2013](lync-server-2013-create-bandwidth-policy-profiles.md).
 
 </div>
 

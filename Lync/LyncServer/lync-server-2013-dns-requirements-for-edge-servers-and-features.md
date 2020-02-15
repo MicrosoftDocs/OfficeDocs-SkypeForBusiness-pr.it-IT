@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: requisiti DNS per Edge Server e funzionalità'
+title: 'Lync Server 2013: requisiti DNS per i server perimetrali e le funzionalità'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733846
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9e9f0cb2eb68ed29984811f1c42a97dab4693a2f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: dd9c14de1b25125e94a3019b4e3dcdbd192cbb13
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739146"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049308"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="dns-requirements-for-edge-servers-and-features-in-lync-server-2013"></a>Requisiti DNS per Edge Server e funzionalità in Lync Server 2013
+# <a name="dns-requirements-for-edge-servers-and-features-in-lync-server-2013"></a>Requisiti DNS per i server perimetrali e le funzionalità in Lync Server 2013
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "41739146"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-04-08_
+_**Ultimo argomento modificato:** 2014-04-08_
 
-I server Edge, i pool Edge e i proxy inverso di Lync Server 2013 hanno requisiti specifici per i record DNS (Domain Name System). In Lync Server 2013 quando sono in uso IPv4 e IPv6, è necessario pianificare sia i record host A che AAAA.
+I server perimetrali di Lync Server 2013, i pool perimetrali e i proxy inversi presentano requisiti specifici per i record DNS (Domain Name System). In Lync Server 2013 quando IPv4 e IPv6 sono in uso, è necessario pianificare entrambi i record host A e AAAA.
 
-Gli argomenti elencati di seguito definiscono l'uso dei record DNS per la pianificazione della distribuzione:
+Negli argomenti elencati di seguito viene illustrato l'utilizzo dei record DNS per la pianificazione della distribuzione:
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Riepilogo DNS - singola topologia perimetrale consolidata con indirizzi IP privati tramite NAT in Lync Server 2013](lync-server-2013-dns-summary-single-consolidated-edge-with-private-ip-addresses-using-nat.md)
+  - [Riepilogo DNS-singolo server perimetrale consolidato con indirizzi IP privati tramite NAT in Lync Server 2013](lync-server-2013-dns-summary-single-consolidated-edge-with-private-ip-addresses-using-nat.md)
 
-  - [Riepilogo di DNS - singola topologia perimetrale consolidata con indirizzi IP pubblici in Lync Server 2013](lync-server-2013-dns-summary-single-consolidated-edge-with-public-ip-addresses.md)
+  - [Riepilogo DNS-singolo server perimetrale consolidato con indirizzi IP pubblici in Lync Server 2013](lync-server-2013-dns-summary-single-consolidated-edge-with-public-ip-addresses.md)
 
-  - [Riepilogo di DNS - topologia perimetrale consolidata con scalabilità implementata, bilanciamento del carico DNS con indirizzi IP privati tramite NAT in Lync Server 2013](lync-server-2013-dns-summary-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
+  - [Server perimetrale consolidato in scala di riepilogo DNS, bilanciamento del carico DNS con indirizzi IP privati tramite NAT in Lync 2013](lync-server-2013-dns-summary-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
 
-  - [Riepilogo di DNS - topologia perimetrale consolidata con scalabilità implementata, bilanciamento del carico DNS con indirizzi IP pubblici in Lync Server 2013](lync-server-2013-dns-summary-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
+  - [Server perimetrale consolidato in scala di riepilogo DNS, bilanciamento del carico DNS con indirizzi IP pubblici in Lync 2013](lync-server-2013-dns-summary-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
 
-  - [Riepilogo di DNS - topologia perimetrale consolidata con scalabilità implementata e servizi di bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-dns-summary-scaled-consolidated-edge-with-hardware-load-balancers.md)
+  - [Server di sintesi DNS-Edge consolidato in scala con i dispositivi di bilanciamento del carico hardware in Lync 2013](lync-server-2013-dns-summary-scaled-consolidated-edge-with-hardware-load-balancers.md)
 
-  - [Riepilogo di DNS - proxy inverso in Lync Server 2013](lync-server-2013-dns-summary-reverse-proxy.md)
+  - [Riepilogo DNS-proxy inverso in Lync Server 2013](lync-server-2013-dns-summary-reverse-proxy.md)
 
   - [Riepilogo DNS-SIP, Federazione XMPP e messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Introduzione'
+title: Introduzione a Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184885
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8879bd2f3638df17215b7b8f0ee4a12c751277f8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8b0b6868486f9486758d2a346dd62339d98ed1e7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725666"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046159"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41725666"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-10-07_
+_**Ultimo argomento modificato:** 2013-10-07_
 
-Lync Server 2013 e il relativo software client, ad esempio Lync 2013, consentono agli utenti di connettersi in modo nuovo e di rimanere connessi, indipendentemente dalla loro posizione fisica. Lync e Lync Server riuniscono i diversi modi in cui gli utenti comunicano in una singola interfaccia client, vengono distribuiti come piattaforma unificata e gestiti tramite un'unica infrastruttura di gestione.
+Lync Server 2013 e il relativo software client, ad esempio Lync 2013, consentono agli utenti di connettersi in modo nuovo e di rimanere connessi, indipendentemente dalla posizione fisica. Lync e Lync Server riuniscono i diversi modi in cui gli utenti comunicano in una singola interfaccia client, vengono distribuiti come piattaforma unificata e vengono amministrati tramite un'unica infrastruttura di gestione.
 
-Questa tabella e le sezioni seguenti illustrano i set di caratteristiche principali o i *carichi di lavoro*, forniti da Lync Server per gli utenti.
+In questa tabella e nelle sezioni seguenti vengono illustrati i principali set di caratteristiche, o *carichi di lavoro*, che Lync Server fornisce per gli utenti.
 
 
 <table>
@@ -49,80 +49,80 @@ Questa tabella e le sezioni seguenti illustrano i set di caratteristiche princip
 </colgroup>
 <thead>
 <tr class="header">
-<th>Carico</th>
+<th>Carico di lavoro</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Messaggistica istantanea e presenza</p></td>
-<td><p>Messaggistica istantanea (IM) e presenza aiutano gli utenti a trovare e comunicare tra loro in modo efficiente ed efficace.</p>
-<p>IM offre una piattaforma di messaggistica istantanea con cronologia delle conversazioni e supporta la connettività di messaggistica immediata pubblica con gli utenti di reti di messaggistica istantanea pubbliche come MSN/Windows Live, Yahoo!, AOL e Google Talk.</p>
+<td><p>Messaggistica istantanea (IM) e presenza consentono agli utenti di trovarsi e comunicare tra loro in modo efficace ed efficiente.</p>
+<p>La messaggistica istantanea fornisce una piattaforma IM con cronologia delle conversazioni e supporta la connettività di messaggistica istantanea pubblica con gli utenti di reti come MSN/Windows Live, Yahoo!, AOL e Google Talk.</p>
 <div>
 
 > [!IMPORTANT]  
 > <UL>
 > <LI>
-> <P>A partire dal 1 ° settembre 2012, la licenza di abbonamento a Microsoft Lync Public IM Connectivity User ("PIC USL") non è più disponibile per l'acquisto di contratti nuovi o rinnovati. I clienti con licenze attive saranno in grado di continuare a eseguire la Federazione con Yahoo! Messenger fino alla data di chiusura del servizio. Data di fine vita del 2014 giugno per AOL e Yahoo! è stato annunciato. Per informazioni dettagliate, vedere <A href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">supporto per la connettività di messaggistica istantanea pubblica in Lync Server 2013</A>.</P>
+> <P>Al 1 ° settembre 2012, la licenza di sottoscrizione di Microsoft Lync Public IM Connectivity ("PIC USL") non è più disponibile per l'acquisto dei contratti nuovi o rinnovati. I clienti con licenze attive saranno in grado di continuare a eseguire la Federazione con Yahoo! Messenger fino alla data di arresto del servizio. Una data di fine vita del 2014 giugno per AOL e Yahoo! sono stati annunciati. Per informazioni dettagliate, vedere <A href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">supporto per la connettività di messaggistica istantanea pubblica in Lync Server 2013</A>.</P>
 > <LI>
-> <P>Il PIC USL è una licenza per abbonamento mensile per ogni utente necessaria per la Federazione di Lync Server o Office Communications Server con Yahoo! Messenger. La capacità di Microsoft di prestare questo servizio è stata subordinata al supporto di Yahoo!, l'accordo sottostante per il quale sta per finire.</P>
+> <P>Il PIC USL è una licenza per ogni utente per ogni mese che è necessaria per Lync Server o Office Communications Server per la Federazione con Yahoo! Messaggero. La capacità di Microsoft di fornire questo servizio è stata subordinata al supporto da Yahoo!, ovvero il contratto sottostante per il quale si sta liquidando.</P>
 > <LI>
-> <P>Più che mai, Lync è uno strumento efficace per la connessione tra le organizzazioni e gli utenti di tutto il mondo. La Federazione con Windows Live Messenger non richiede licenze aggiuntive per utenti e dispositivi oltre la licenza CAL standard di Lync. La Federazione Skype verrà aggiunta a questo elenco, consentendo agli utenti di Lync di raggiungere centinaia di milioni di persone con messaggistica istantanea e voce.</P></LI></UL>
+> <P>Più che mai, Lync è uno strumento potente per la connessione tra le organizzazioni e gli utenti di tutto il mondo. La Federazione con Windows Live Messenger non richiede licenze aggiuntive per utenti e dispositivi oltre la licenza CAL standard di Lync. La Federazione Skype verrà aggiunta a questo elenco, consentendo agli utenti di Lync di raggiungere centinaia di milioni di persone con messaggistica istantanea e vocale.</P></LI></UL>
 
 
 </div>
-<p>La presenza stabilisce e visualizza la disponibilità e la volontà personali di un utente per comunicare attraverso l'uso di stati comuni, come <strong>disponibile</strong> o <strong>occupato</strong>, oltre a stati più dettagliati, come ad esempio il <strong>ritorno a destra</strong> e <strong>non disturbare</strong>. Queste informazioni di presenza avanzata consentono ad altri utenti di effettuare immediatamente scelte di comunicazione efficaci.</p></td>
+<p>La presenza determina e visualizza la disponibilità personale di un utente e la sua volontà di comunicare, mediante l'utilizzo di stati comuni quali <strong>Disponibile</strong> o <strong>Occupato</strong> nonché con stati più dettagliati quali <strong>Torno subito</strong> e <strong>Non disturbare</strong>. Queste informazioni sulla presenza avanzata consentono agli altri utenti di utilizzare immediatamente scelte di comunicazione efficienti.</p></td>
 </tr>
 <tr class="even">
-<td><p>Servizi di conferenza</p></td>
-<td><p>Lync Server include il supporto per la messaggistica istantanea, le conferenze audio, le conferenze Web, le videoconferenze e la condivisione di applicazioni, sia per le riunioni programmate che per quelle estemporanee. Tutti questi tipi di riunione sono supportati con un singolo client. Lync Server supporta inoltre i servizi di conferenza telefonica con accesso esterno in modo che gli utenti di telefoni PSTN (Public Switched Telephone Network) possano partecipare alla parte audio delle conferenze.</p>
-<p>Le conferenze possono facilmente cambiare e crescere in tempo reale. Ad esempio, una singola conferenza può iniziare come solo messaggi istantanei tra pochi utenti e inoltrarsi a una conferenza audio con condivisione desktop e un pubblico più ampio istantaneamente, facilmente e senza interrompere il flusso di conversazione.</p></td>
+<td><p>Conferenza</p></td>
+<td><p>Lync Server include il supporto per le conferenze di messaggistica istantanea, audioconferenza, Web Conferencing, video Conferencing e condivisione applicazioni, sia per le riunioni pianificate che per quelle estemporanee. Tutti questi tipi di riunione sono supportati mediante un unico client. Lync Server supporta anche le conferenze telefoniche con accesso esterno in modo che gli utenti del telefono PSTN (Public Switched Telephone Network) possano partecipare alla parte audio delle conferenze.</p>
+<p>Le conferenze possono cambiare e crescere in tempo reale senza problemi. Ad esempio, una singola conferenza può iniziare come un semplice scambio di messaggi istantanei tra pochi utenti e trasformarsi in una conferenza audio con condivisione del desktop e con un pubblico più vasto istantaneamente, facilmente e senza interrompere il flusso di conversazione.</p></td>
 </tr>
 <tr class="odd">
 <td><p>VoIP aziendale</p></td>
-<td><p><em>Enterprise Voice</em> è l'offerta VoIP (Voice over Internet Protocol) in Lync Server. Offre un'opzione vocale per migliorare o sostituire sistemi PBX (Private Branch Exchange) tradizionali. Oltre alle funzionalità complete di telefonia di un IP PBX, Enterprise Voice è integrata con la presenza, la messaggistica istantanea, la collaborazione e le riunioni avanzate. Le caratteristiche come la risposta alle chiamate, il blocco, la ripresa, il trasferimento, l'inoltro e la deviazione sono supportate direttamente, mentre i tasti di scelta rapida personalizzati vengono sostituiti dagli elenchi di contatti e il citofono automatico viene sostituito da messaggistica istantanea.</p>
-<p>Enterprise Voice supporta la disponibilità elevata tramite il controllo di ammissione alle chiamate (CAC), la sopravvivenza della filiale e le opzioni estese per la resilienza dei dati.</p></td>
+<td><p>VoIP <em>aziendale</em> è la voce che offre il protocollo Voice over Internet Protocol in Lync Server. Offre un'opzione vocale per migliorare o sostituire i sistemi PBX (Private Branch Exchange) tradizionali. Oltre alle funzionalità di telefonia complete di un sistema IP PBX, VoIP aziendale è integrato con presenza avanzata, messaggistica istantanea, collaborazione e riunioni. Sono supportate direttamente funzionalità quali la risposta alla chiamata, il blocco, il riassunto, il trasferimento, l'inoltro e la deviazione, mentre i tasti di composizione rapida personalizzati vengono sostituiti da elenchi di contatti e il citofono automatico viene sostituito con messaggistica istantanea.</p>
+<p>VoIP aziendale supporta la disponibilità elevata mediante controllo di ammissione di chiamata (CAC), branch office survivability e opzioni estese per la resilienza dei dati.</p></td>
 </tr>
 <tr class="even">
 <td><p>Supporto per gli utenti remoti</p></td>
-<td><p>Puoi specificare la funzionalità completa di Lync Server per gli utenti che si trovano al di fuori dei firewall dell'organizzazione distribuendo server denominati <em>Edge Server</em> per creare una connessione per questi utenti remoti. Questi utenti remoti possono connettersi alle conferenze usando un personal computer con Lync 2013 installato, il telefono o un'interfaccia Web.</p>
-<p>La distribuzione di Edge Server consente inoltre di eseguire la <em>Federazione</em> con organizzazioni partner o fornitori. Una relazione federata consente agli utenti di inserire gli utenti federati negli elenchi dei contatti, le informazioni sulla presenza di Exchange e i messaggi istantanei con questi utenti e invitarli a chiamate audio, videochiamate e conferenze.</p></td>
+<td><p>È possibile fornire funzionalità complete di Lync Server per gli utenti che si trovano al di fuori dei firewall dell'organizzazione distribuendo server denominati <em>server perimetrali</em> per fornire una connessione a questi utenti remoti. Questi utenti remoti possono connettersi a conferenze utilizzando un personal computer con Lync 2013 installato, il telefono o un'interfaccia Web.</p>
+<p>La distribuzione dei server perimetrali consente inoltre di attuare la <em>federazione</em> con altre organizzazioni, ad esempio partner o fornitori. Una relazione federata consente agli utenti di inserire gli utenti federati nei propri elenchi di contatti, scambiare con essi informazioni sulla presenza e messaggi istantanei e invitarli a chiamate audio, chiamate video e conferenze.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Supporto per i client per dispositivi mobili</p></td>
-<td><p>Inoltre, con i servizi di mobilità di Lync Server, gli utenti possono accedere alle funzionalità di Lync quando usano i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia ed eseguono attività come l'invio e la ricezione di messaggi istantanei, la visualizzazione di contatti, e la visualizzazione della presenza. I dispositivi mobili supportano inoltre alcune funzionalità VoIP aziendale, ad esempio fare clic per partecipare a una conferenza, chiamare tramite lavoro, raggiungere un numero singolo, la segreteria telefonica e le chiamate perse. Le notifiche push sono supportate anche per i dispositivi mobili che non supportano le applicazioni in uso in background.</p></td>
+<td><p>Supporto di client mobili</p></td>
+<td><p>Inoltre, con i servizi per dispositivi mobili di Lync Server, gli utenti possono accedere alle funzionalità di Lync quando utilizzano i sistemi Apple iOS, Android, Windows Phone o Nokia e eseguono tali attività come l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti, e la presenza di visualizzazione. Inoltre, i dispositivi mobili supportano alcune funzionalità di VoIP aziendale, quali l'accesso con un clic alle conferenze, la chiamata tramite ufficio, il numero unico, la segreteria telefonica e le chiamate senza risposta. Le notifiche push sono inoltre supportate per i dispositivi mobili che non supportano applicazioni in esecuzione in background.</p></td>
 </tr>
 <tr class="even">
 <td><p>Integrazione con altri prodotti</p></td>
-<td><p>Lync Server si integra con diversi altri prodotti per ottenere vantaggi aggiuntivi per gli utenti e gli amministratori.</p>
-<p>Gli strumenti riunione sono integrati in Outlook per consentire agli organizzatori di pianificare una riunione o iniziare una conferenza estemporanea con un solo clic e renderlo altrettanto semplice per i partecipanti partecipare.</p>
+<td><p>Lync Server si integra con numerosi altri prodotti per offrire vantaggi aggiuntivi agli utenti e agli amministratori.</p>
+<p>Gli strumenti per riunioni sono integrati in Outlook per consentire agli organizzatori di pianificare una riunione o avviare una conferenza improvvisata con un solo clic e renderla altrettanto semplice per i partecipanti.</p>
 <p>Le informazioni sulla presenza sono integrate in Outlook e SharePoint.</p>
-<p>La messaggistica unificata di Exchange offre diverse funzionalità di integrazione. Gli utenti possono vedere se hanno una nuova segreteria telefonica in Lync Server. È possibile fare clic sul pulsante Riproduci nel messaggio di Outlook per ascoltare la segreteria telefonica o visualizzare una trascrizione della segreteria telefonica nel messaggio di notifica.</p>
-<p>Inoltre, l'uso di Lync Server 2013 con Exchange 2013 consente di accedere a diverse nuove funzionalità, ad esempio un archivio contatti unificato, accessibile dai client di entrambi i prodotti, nonché foto ad alta risoluzione per i contatti archiviati nel database di Exchange 2013.</p></td>
+<p>La messaggistica unificata di Exchange offre numerose funzionalità di integrazione. Gli utenti possono vedere se dispongono di una nuova segreteria telefonica all'interno di Lync Server. Possono fare clic su un pulsante di riproduzione nel messaggio di Outlook per ascoltare l'audio del messaggio, oppure visualizzarne una trascrizione nel messaggio di notifica.</p>
+<p>Inoltre, l'esecuzione di Lync Server 2013 con Exchange 2013 consente di abilitare diverse nuove funzionalità, ad esempio un archivio contatti unificato, che può essere eseguito dai client di entrambi i prodotti, nonché foto ad alta risoluzione per i contatti archiviati nel database di Exchange 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Distribuzione semplice</p></td>
-<td><p>Per facilitare la pianificazione e la distribuzione di server e client, Lync Server fornisce il generatore di topologia.</p>
-<p>Generatore di topologia è un componente di installazione di Lync Server. Si usa generatore di topologie per creare, modificare e pubblicare la topologia pianificata. Convalida anche la topologia prima di iniziare le installazioni del server. Quando si installa Lync Server nei singoli server, il programma di installazione distribuisce il server come indicato nella topologia.</p></td>
+<td><p>Per semplificare la pianificazione e la distribuzione di server e client, Lync Server fornisce il generatore di topologie.</p>
+<p>Generatore di topologie è un componente di installazione di Lync Server. Per creare, modificare e pubblicare la topologia pianificata, è possibile utilizzare Generatore di topologie. Convalida inoltre la topologia prima di iniziare le installazioni del server. Quando si installa Lync Server nei singoli server, il programma di installazione distribuisce il server come indicato nella topologia.</p></td>
 </tr>
 <tr class="even">
 <td><p>Gestione semplice</p></td>
-<td><p>Dopo la distribuzione di Lync Server, offre gli strumenti di gestione potenti e semplificati seguenti:</p>
+<td><p>Dopo la distribuzione di Lync Server, sono disponibili i seguenti strumenti di gestione efficienti e potenti:</p>
 <ul>
-<li><p>Gestione della configurazione centrale, che consente di gestire le modifiche in modo centralizzato e di replicarle rapidamente nell'intera distribuzione.</p></li>
-<li><p>Pannello di controllo di Lync Server, un'interfaccia utente grafica basata sul Web per gli amministratori. Con questa interfaccia utente basata sul Web, gli amministratori di Lync Server possono gestire i loro sistemi ovunque si trovino nella rete aziendale, senza bisogno di un software di gestione specializzato installato nei propri computer.</p></li>
-<li><p>Strumento di gestione della riga di comando di Lync Server Management Shell basato sull'interfaccia della riga di comando di Windows PowerShell. Fornisce un set di comandi RTF per l'amministrazione di tutti gli aspetti del prodotto e consente agli amministratori di Lync Server di automatizzare le attività ripetitive con uno strumento familiare.</p></li>
+<li><p>La gestione centrale della configurazione che consente di gestire le modifiche in modo centralizzato e di replicarle rapidamente nell'intera distribuzione.</p></li>
+<li><p>Pannello di controllo di Lync Server, un'interfaccia utente grafica basata sul Web per gli amministratori. Con questa interfaccia utente basata sul Web, gli amministratori di Lync Server possono gestire i propri sistemi da qualsiasi punto della rete aziendale, senza dover installare il software di gestione specializzato nei propri computer.</p></li>
+<li><p>Strumento di gestione della riga di comando di Lync Server Management Shell, basato sull'interfaccia della riga di comando di Windows PowerShell. Fornisce un set di comandi RTF per l'amministrazione di tutti gli aspetti del prodotto e consente agli amministratori di Lync Server di automatizzare le attività ripetitive utilizzando uno strumento familiare.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 
-Mentre le funzionalità di messaggistica istantanea e presenza vengono installate automaticamente in tutte le distribuzioni di Lync Server, è possibile scegliere se distribuire servizi di conferenza, VoIP aziendale e accesso remoto agli utenti per adattare la distribuzione alle esigenze dell'organizzazione.
+Anche se le funzionalità di messaggistica istantanea e presenza vengono installate automaticamente in ogni distribuzione di Lync Server, è possibile scegliere se distribuire servizi di conferenza, VoIP aziendale e accesso utente remoto per adattare la distribuzione alle esigenze dell'organizzazione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Messaggistica istantanea e presenza in Lync Server 2013](lync-server-2013-im-and-presence.md)
 

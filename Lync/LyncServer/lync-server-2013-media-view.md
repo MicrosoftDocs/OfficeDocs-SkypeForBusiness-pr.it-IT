@@ -12,16 +12,16 @@ ms:contentKeyID: 49733570
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6ad833bc84d488221d46822686077cfde2cda0ff
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a64803642249ef4b355279337fc62d1b3f356d93
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765094"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044928"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41765094"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-La visualizzazione multimediale archivia le informazioni su un tipo di elemento multimediale usato in una sessione peer-to-peer. Una sessione verrebbe rappresentata da più record nella tabella, se viene usato più di un tipo di elemento multimediale. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
+Nella visualizzazione Media vengono archiviate le informazioni sul tipo di supporto utilizzato in una sessione peer-to-peer. Qualora si utilizzino più supporti, nella tabella saranno presenti più record per una sessione. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
 
 <div>
 
 
 > [!NOTE]  
-> La visualizzazione multimediale non deve essere usata per calcolare la durata del supporto per una sessione. Questa visualizzazione contiene i dettagli di segnalazione dello scambio multimediale in una sessione. Lo scambio multimediale viene eseguito dalla richiesta di invito e StartTime indica l'ora in cui è stato inviato l'invito. Il tempo di invito non significa necessariamente l'ora di inizio del supporto, perché il supporto viene avviato solo dopo l'accettazione della sessione.
+> La visualizzazione Media non deve essere utilizzata per calcolare la durata di utilizzo del supporto in una sessione. Questa visualizzazione contiene i dettagli di segnalazione dello scambio di supporti in una sessione. Lo scambio dei supporti viene effettuato mediante la richiesta INVITE, mentre StartTime indica l'ora in cui la richiesta INVITE è stata inviata. L'ora dell'invito non corrisponde necessariamente all'ora di inizio del supporto poiché questo viene avviato solo dopo che la sessione è stata accettata.
 
 
 
@@ -67,18 +67,18 @@ La visualizzazione multimediale contiene tutte le colonne della [Visualizzazione
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Contenuti multimediali</strong></p></td>
+<td><p><strong>Media</strong></p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Tipo di elemento multimediale. Per altre informazioni, vedere la <a href="lync-server-2013-medialist-table.md">tabella degli elementi multimediali in Lync Server 2013</a> .</p></td>
+<td><p>Tipo di supporto. Per ulteriori informazioni, vedere la <a href="lync-server-2013-medialist-table.md">tabella degli elementi multimediali in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MediaStartTime</strong></p></td>
-<td><p>DateTime</p></td>
-<td><p>Ora in cui è stata inviata una richiesta multimediale.</p></td>
+<td><p>datetime</p></td>
+<td><p>Ora di invio di una richiesta di supporto.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MediaEndTime</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td><p>Ora di fine della sessione.</p></td>
 </tr>
 </tbody>

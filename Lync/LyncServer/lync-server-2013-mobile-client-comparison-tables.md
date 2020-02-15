@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabelle di confronto dei client mobili'
+title: 'Lync Server 2013: tabelle di confronto client per dispositivi mobili'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541531
 ms.date: 09/21/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e326ddd479a3d414563b3dd690ecce758f16a9ef
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4f9a3627930f65740fdd00596ddde24cde4dabc3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758744"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044908"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="mobile-client-comparison-tables-for-lync-server-2013"></a>Tabelle di confronto dei client mobili per Lync Server 2013
+# <a name="mobile-client-comparison-tables-for-lync-server-2013"></a>Tabelle di confronto dei client per dispositivi mobili per Lync Server 2013
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41758744"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-09-21_
+_**Ultimo argomento modificato:** 2015-09-21_
 
-Nelle tabelle seguenti vengono confrontate le caratteristiche e le funzionalità dei client mobili Lync 2013 e il client desktop Lync 2013 nelle categorie seguenti:
+Nelle tabelle seguenti vengono confrontate le caratteristiche e le funzionalità tra i client mobili di Lync 2013 e il client desktop Lync 2013 nelle categorie seguenti:
 
-  - Accesso, notifiche push e funzionalità generali
+  - Accesso, notifiche push e caratteristiche generali
 
   - Presenza avanzata
 
   - Contatti e gruppi di contatti
 
-  - Messaggistica istantanea (IM)
+  - Messaggistica istantanea
 
   - Audio e video di Lync-to-Lync
 
-  - Servizi di conferenza
+  - Conferenza
 
   - Telefonia
 
@@ -57,7 +57,7 @@ Nelle tabelle seguenti vengono confrontate le caratteristiche e le funzionalità
 
   - Archiviazione e conformità
 
-Queste tabelle indicano le caratteristiche disponibili per gli utenti di Lync in una distribuzione locale di Lync Server 2013. Le stesse caratteristiche sono disponibili anche per gli utenti di Skype for business online e Microsoft Office 365, se non diversamente indicato nelle note a piè di pagina.
+In queste tabelle sono indicate le caratteristiche disponibili per gli utenti di Lync in una distribuzione locale di Lync Server 2013. Le stesse caratteristiche sono disponibili anche per gli utenti di Skype for business online e Microsoft Office 365, salvo diversa indicazione nelle note a piè di pagina.
 
 <div>
 
@@ -65,13 +65,13 @@ Queste tabelle indicano le caratteristiche disponibili per gli utenti di Lync in
 > [!NOTE]  
 > <UL>
 > <LI>
-> <P>Stai cercando le tabelle di confronto dei client per dispositivi mobili per Skype for business? Vedere <A href="https://technet.microsoft.com/en-us/library/dn951412.aspx">tabelle di confronto dei client per dispositivi mobili per Skype for business</A>.</P>
+> <P>Per informazioni sulle tabelle di confronto dei client per dispositivi mobili per Skype for business? Vedere <A href="https://technet.microsoft.com/library/dn951412.aspx">tabelle di confronto dei client per dispositivi mobili per Skype for business</A>.</P>
 > <LI>
-> <P>Per informazioni sulla guida e le risorse online per gli utenti finali, vedere <A href="http://go.microsoft.com/fwlink/?linkid=286237">Microsoft Lync 2013 per i client mobili</A>.</P>
+> <P>Per le risorse e la Guida in linea per gli utenti finali, vedere <A href="http://go.microsoft.com/fwlink/?linkid=286237">Microsoft Lync 2013 for Mobile Clients</A>.</P>
 > <LI>
 > <P>Per confrontare le funzionalità disponibili in altri client Lync 2013, vedere <A href="lync-server-2013-desktop-client-comparison-tables.md">tabelle di confronto dei client per Lync Server 2013</A>.</P>
 > <LI>
-> <P>Lync Server 2013 supporta anche le app per dispositivi mobili Lync 2010. Per informazioni dettagliate, vedere <A href="http://go.microsoft.com/fwlink/p/?linkid=234777">tabelle di confronto dei client per dispositivi mobili</A> nella documentazione di Lync Server 2010.</P></LI></UL>
+> <P>Lync Server 2013 supporta anche le app per dispositivi mobili Lync 2010. Per ulteriori informazioni, vedere <A href="http://go.microsoft.com/fwlink/p/?linkid=234777">tabelle di confronto dei client per dispositivi mobili</A> nella documentazione di Lync Server 2010.</P></LI></UL>
 
 
 
@@ -79,7 +79,7 @@ Queste tabelle indicano le caratteristiche disponibili per gli utenti di Lync in
 
 <div>
 
-## <a name="sign-in-push-notifications-and-general-features"></a>Accesso, notifiche push e funzionalità generali
+## <a name="sign-in-push-notifications-and-general-features"></a>Accesso, notifiche push e caratteristiche generali
 
 
 <table style="width:100%;">
@@ -93,7 +93,7 @@ Queste tabelle indicano le caratteristiche disponibili per gli utenti di Lync in
 </colgroup>
 <thead>
 <tr class="header">
-<th>Funzionalità/funzionalità</th>
+<th>Caratteristica/funzionalità</th>
 <th>Client desktop Lync 2013</th>
 <th>Windows Phone</th>
 <th>iPhone</th>
@@ -103,7 +103,7 @@ Queste tabelle indicano le caratteristiche disponibili per gli utenti di Lync in
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>La sessione di Lync rimane confirmata</p></td>
+<td><p>La sessione di Lync resta connessa</p></td>
 <td><p>●</p></td>
 <td><p>● 1</p></td>
 <td><p>● 1</p></td>
@@ -111,7 +111,7 @@ Queste tabelle indicano le caratteristiche disponibili per gli utenti di Lync in
 <td><p>● 1</p></td>
 </tr>
 <tr class="even">
-<td><p>Supporto per le notifiche push</p></td>
+<td><p>Supporto per le notifiche Push</p></td>
 <td></td>
 <td><p>●</p></td>
 <td><p>4Not obbligatorio</p></td>
@@ -119,7 +119,7 @@ Queste tabelle indicano le caratteristiche disponibili per gli utenti di Lync in
 <td><p>4Not obbligatorio</p></td>
 </tr>
 <tr class="odd">
-<td><p>Il codice paese viene popolato in base alle impostazioni dell'area geografica</p></td>
+<td><p>Il codice paese viene popolato in base alle impostazioni regionali</p></td>
 <td></td>
 <td></td>
 <td><p>●</p></td>
@@ -127,7 +127,7 @@ Queste tabelle indicano le caratteristiche disponibili per gli utenti di Lync in
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Le informazioni sull'account per più utenti possono essere memorizzate nella cache nello stesso dispositivo</p></td>
+<td><p>È possibile memorizzare nella cache sullo stesso dispositivo le informazioni di account di più utenti</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -135,17 +135,17 @@ Queste tabelle indicano le caratteristiche disponibili per gli utenti di Lync in
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Utilità per la lettura dello schermo/Voice over</p></td>
+<td><p>Screen reader/Voice over</p></td>
 <td><p>●</p></td>
 <td><p>● 2<br />
-Solo inglese</p></td>
+Solo in inglese</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●<br />
-Solo inglese</p></td>
+Solo in inglese</p></td>
 </tr>
 <tr class="even">
-<td><p>Usare una tastiera esterna con Lync</p></td>
+<td><p>Utilizzare una tastiera esterna con Lync</p></td>
 <td></td>
 <td></td>
 <td><p>● 3</p></td>
@@ -153,7 +153,7 @@ Solo inglese</p></td>
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Certificato e supporto dell'autenticazione passiva per i client mobili (solo Lync Server)</p></td>
+<td><p>Supporto per il certificato e l'autenticazione passiva per i client mobili (solo Lync Server)</p></td>
 <td></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -161,7 +161,7 @@ Solo inglese</p></td>
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Supporto di Microsoft Customer Experience Improvement Program </p></td>
+<td><p>Supporto del programma Analisi utilizzo software Microsoft </p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -172,27 +172,27 @@ Solo inglese</p></td>
 </table>
 
 
-1 in Windows Phone, Lync si disconnette automaticamente se l'utente non ha usato l'applicazione per un determinato periodo di tempo, come indicato di seguito:
+1 su Windows Phone, Lync si disconnette automaticamente se l'utente non utilizza l'applicazione per un certo periodo di tempo, come indicato di seguito:
 
   - Se l'utente ha abilitato le notifiche push, Lync si disconnette dopo 10 giorni di inattività.
 
-  - Se l'utente non ha abilitato le notifiche push, Lync esce dopo 1 ora.
+  - Se l'utente non ha abilitato le notifiche push, Lync si disconnette dopo 1 ora.
 
-In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l'applicazione per un determinato periodo di tempo, come indicato di seguito:
+In iPhone e iPad, Lync si disconnette automaticamente se l'utente non utilizza l'applicazione per un certo periodo di tempo, come indicato di seguito:
 
-  - Se il client per dispositivi mobili non ha contattato il server per 10 giorni a causa della perdita di connettività di rete o di altri problemi.
+  - Se il client per dispositivi mobili non ha contattato il server per 10 giorni a causa della perdita della connettività di rete o di altri problemi.
 
 2 solo in app.
 
 3 deve essere in modalità VoiceOver.
 
-4iPhone, iPad e Android non richiedono notifiche push per ricevere messaggi quando un'app viene eseguita in background.
+4iPhone, iPad e Android non richiedono notifiche push per la ricezione di messaggi quando un'app è in esecuzione in background.
 
 </div>
 
 <div>
 
-## <a name="enhanced-presence-support-in-lync-mobile-clients"></a>Supporto per la presenza avanzata nei client mobili di Lync
+## <a name="enhanced-presence-support-in-lync-mobile-clients"></a>Supporto per la presenza avanzata nei client di Lync mobile
 
 
 <table style="width:100%;">
@@ -206,7 +206,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </colgroup>
 <thead>
 <tr class="header">
-<th>Funzionalità/funzionalità</th>
+<th>Caratteristica/funzionalità</th>
 <th>Client desktop Lync 2013</th>
 <th>Windows Phone</th>
 <th>iPhone</th>
@@ -232,7 +232,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Visualizzare le note sullo stato e i messaggi fuori sede</p></td>
+<td><p>Visualizzare note sullo stato e messaggi Fuori sede</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -240,7 +240,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Aggiungere un percorso personalizzato</p></td>
+<td><p>Aggiungere una posizione personalizzata</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -264,7 +264,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Impostare lo stato di presenza manuale (ad esempio occupato, non disturbare e così via)</p></td>
+<td><p>Impostare lo stato di presenza manuale, ad esempio occupato, non disturbare e così via.</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -275,13 +275,13 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </table>
 
 
-1 i client mobili di Lync non aggiornano la presenza di un utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se un utente del client mobile ha anche eseguito l'accesso al client desktop Lync, il client Desktop aggiorna la presenza dell'utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se l'utente ha eseguito l'accesso solo a un client per dispositivi mobili, la presenza dell'utente non viene aggiornata in base alle informazioni sul calendario della disponibilità.
+1 i client mobili di Lync non aggiornano la presenza di un utente in base alle informazioni sulla disponibilità del calendario dell'utente. Se anche un utente di un client per dispositivi mobili ha eseguito l'accesso al client desktop Lync, il client Desktop aggiorna la presenza dell'utente in base alle informazioni sulla disponibilità del calendario dell'utente. Se l'utente ha eseguito l'accesso solo a un client per dispositivi mobili, la presenza dell'utente non viene aggiornata in base alle informazioni sulla disponibilità del calendario.
 
 </div>
 
 <div>
 
-## <a name="contacts-and-contact-groups-support-in-lync-mobile-clients"></a>Supporto per contatti e gruppi di contatti nei client mobili Lync
+## <a name="contacts-and-contact-groups-support-in-lync-mobile-clients"></a>Supporto per i contatti e i gruppi di contatti nei client mobili di Lync
 
 
 <table style="width:100%;">
@@ -295,7 +295,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </colgroup>
 <thead>
 <tr class="header">
-<th>Funzionalità/funzionalità</th>
+<th>Caratteristica/funzionalità</th>
 <th>Client desktop Lync 2013</th>
 <th>Windows Phone</th>
 <th>iPhone</th>
@@ -321,7 +321,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Visualizzare il gruppo contatti frequenti</p></td>
+<td><p>Visualizzare il gruppo Contatti frequenti</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -337,7 +337,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Contrassegnare i contatti per gli avvisi di modifica dello stato</p></td>
+<td><p>Contrassegnare i contatti per avvisi di modifica dello stato</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -353,7 +353,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Eseguire ricerche nella rubrica aziendale</p></td>
+<td><p>Eseguire ricerche nella rubrica della società</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -361,7 +361,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Cerca nell'elenco contatti</p></td>
+<td><p>Eseguire una ricerca nell'elenco contatti</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -369,7 +369,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Gestire i gruppi di contatti</p></td>
+<td><p>Gestire gruppi di contatti</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -385,7 +385,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Cercare gruppi di risposte</p></td>
+<td><p>Cercare Response Group</p></td>
 <td><p>● 1</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -393,7 +393,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Visualizzare o nascondere le foto del contatto</p></td>
+<td><p>Visualizzare o nascondere le foto dei contatti</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -418,7 +418,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 
 <div>
 
-## <a name="instant-messaging-support-in-lync-mobile-clients"></a>Supporto della messaggistica istantanea nei client mobili di Lync
+## <a name="instant-messaging-support-in-lync-mobile-clients"></a>Supporto per la messaggistica istantanea nei client di Lync mobile
 
 
 <table style="width:100%;">
@@ -432,7 +432,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </colgroup>
 <thead>
 <tr class="header">
-<th>Funzionalità/funzionalità</th>
+<th>Caratteristica/funzionalità</th>
 <th>Client desktop Lync 2013</th>
 <th>Windows Phone</th>
 <th>iPhone</th>
@@ -450,7 +450,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Partecipare a un messaggio istantaneo a più parti</p></td>
+<td><p>Partecipare a conversazioni istantanee tra più utenti</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -458,7 +458,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Invitare altri utenti all'interno della finestra di conversazione</p></td>
+<td><p>Invitare altri utente dalla finestra di conversazione</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -474,7 +474,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Spostarsi tra più conversazioni di messaggistica istantanea</p></td>
+<td><p>Spostarsi tra più conversazioni istantanee</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -482,7 +482,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Registrare automaticamente le conversazioni ISTANTANEe in Exchange</p></td>
+<td><p>Accedere automaticamente a conversazioni di messaggistica istantanea in Exchange</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -490,7 +490,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Inviare una conversazione istantanea come messaggio di posta elettronica</p></td>
+<td><p>Inviare una conversazione di messaggistica istantanea come messaggio di posta elettronica</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -498,7 +498,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Avviare un messaggio di posta elettronica a un contatto</p></td>
+<td><p>Avviare un messaggio di posta elettronica per un contatto</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -506,7 +506,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Visualizzare gli inviti di messaggistica istantanea mancanti</p></td>
+<td><p>Visualizzare gli inviti di messaggistica istantanea persi</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -514,7 +514,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Vibrazione con messaggistica istantanea in arrivo</p></td>
+<td><p>Impostare la vibrazione per i messaggi istantanei in arrivo</p></td>
 <td></td>
 <td><p>● 1</p></td>
 <td><p>●</p></td>
@@ -545,7 +545,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </colgroup>
 <thead>
 <tr class="header">
-<th>Funzionalità/funzionalità</th>
+<th>Caratteristica/funzionalità</th>
 <th>Client desktop Lync 2013</th>
 <th>Windows Phone</th>
 <th>iPhone</th>
@@ -555,7 +555,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Voce Lync-to-Lync</p></td>
+<td><p>Lync-to-Lync Voice</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -578,7 +578,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 
 <div>
 
-## <a name="conferencing-support-in-lync-mobile-clients"></a>Supporto delle conferenze nei client mobili di Lync
+## <a name="conferencing-support-in-lync-mobile-clients"></a>Supporto per le conferenze nei client di Lync mobile
 
 
 <table style="width:100%;">
@@ -592,7 +592,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </colgroup>
 <thead>
 <tr class="header">
-<th>Funzionalità/funzionalità</th>
+<th>Caratteristica/funzionalità</th>
 <th>Client desktop Lync 2013</th>
 <th>Windows Phone</th>
 <th>iPhone</th>
@@ -602,7 +602,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Fare clic su un collegamento nel promemoria della riunione per partecipare a una riunione (PSTN (Public Switched Telephone Network))</p></td>
+<td><p>Fare clic su un collegamento nel promemoria riunione per partecipare a una riunione (PSTN) (Public Switched Telephone Network)</p></td>
 <td><p>●</p></td>
 <td><p>● 1</p></td>
 <td><p>● 1</p></td>
@@ -610,7 +610,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>● 1</p></td>
 </tr>
 <tr class="even">
-<td><p>Fare clic su un collegamento nel promemoria della riunione per partecipare a una riunione video o VoIP</p></td>
+<td><p>Fare clic su un collegamento nel promemoria riunioni per partecipare a una riunione video o VoIP</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -618,7 +618,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Partecipare a un messaggio istantaneo a più parti</p></td>
+<td><p>Partecipare a conversazioni istantanee tra più utenti</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -626,7 +626,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Usare i servizi di conferenza telefonica con accesso esterno (server chiama il dispositivo mobile)</p></td>
+<td><p>Utilizzare la funzionalità di conferenza con chiamata in uscita (il server chiama il dispositivo mobile)</p></td>
 <td><p>●</p></td>
 <td><p>● 2</p></td>
 <td><p>● 2</p></td>
@@ -634,7 +634,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>● 2</p></td>
 </tr>
 <tr class="odd">
-<td><p>Usare i servizi di conferenza telefonica con accesso esterno</p></td>
+<td><p>Utilizzare l'audioconferenza con accesso esterno</p></td>
 <td><p>● 3</p></td>
 <td></td>
 <td></td>
@@ -642,7 +642,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Visualizzare il video della riunione</p></td>
+<td><p>Visualizzare le videoconferenze</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -650,7 +650,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Visualizzare il video in più parti (visualizzazione raccolta)</p></td>
+<td><p>Visualizzazione del video in più parti (visualizzazione raccolta)</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -658,7 +658,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Attendere nella sala di attesa della riunione</p></td>
+<td><p>Attendere nella sala d'attesa riunione</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -666,7 +666,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Usare i controlli relatore in-meeting</p></td>
+<td><p>Utilizzare controlli di relatore nell'ambito delle riunioni</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -674,7 +674,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Accedere a roster delle riunioni dettagliato per le conferenze audio</p></td>
+<td><p>Accedere all'elenco dettagliato dei partecipanti alle audioconferenze</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -682,7 +682,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Accedere a un roster dettagliato delle riunioni per le conferenze ISTANTANEe</p></td>
+<td><p>Accedere all'elenco dettagliato dei partecipanti alle conferenze di messaggistica istantanea</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -690,7 +690,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Condividere desktop o programmi</p></td>
+<td><p>Condividere il desktop o un programma</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -698,7 +698,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Visualizzare desktop o programmi condivisi</p></td>
+<td><p>Visualizzazione di un desktop o di un programma condiviso</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -706,7 +706,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Visualizzare PowerPoint condivisi</p></td>
+<td><p>Visualizzazione di PowerPoint condivisi</p></td>
 <td><p>●</p></td>
 <td><p>● 4</p></td>
 <td><p>● 4</p></td>
@@ -714,7 +714,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Usare gli strumenti riunione (presentare i file di Microsoft PowerPoint, usare lavagna, eseguire sondaggi, condividere file)</p></td>
+<td><p>Utilizzare gli strumenti di riunione (presentare file di Microsoft PowerPoint, utilizzare la lavagna, eseguire sondaggi, condividere file)</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -722,7 +722,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Spostarsi in un elenco delle riunioni</p></td>
+<td><p>Esplorare un elenco delle proprie riunioni</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -730,7 +730,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Partecipare a una riunione anche se non si dispone di un account Lync</p></td>
+<td><p>Partecipare a una riunione anche se non si dispone di un account di Lync</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -757,19 +757,19 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </table>
 
 
-1 per gli utenti di Office 365, questa funzionalità è disponibile solo per le riunioni abilitate per il provider di servizi di audioconferenza (ACP).
+1 per gli utenti di Office 365, questa funzionalità è disponibile solo per le riunioni abilitate ai provider di servizi di audioconferenza (ACP).
 
 2 non disponibile per gli utenti di Office 365.
 
-3 per gli utenti di Skype for business online e/o Office 365, questa funzionalità è disponibile nei provider di servizi di audioconferenza di terze parti.
+3 per gli utenti di Skype for business online e/o Office 365, questa funzionalità è disponibile in provider di servizi di audioconferenza di terze parti.
 
-4A presentazione di PowerPoint condivisa da Lync Web App non può essere visualizzata da Lync Mobile 2013. Le annotazioni effettuate nei client desktop di Lync 2013 non sono visibili nei dispositivi mobili.
+4A la presentazione di PowerPoint condivisa da Lync Web App non può essere visualizzata da Lync Mobile 2013. Le annotazioni eseguite nei client desktop di Lync 2013 non sono visualizzabili sui dispositivi mobili.
 
 </div>
 
 <div>
 
-## <a name="telephony-support-in-lync-mobile-clients"></a>Supporto per la telefonia nei client di Lync mobile
+## <a name="telephony-support-in-lync-mobile-clients"></a>Supporto telefonico nei client di Lync mobile
 
 
 <table style="width:100%;">
@@ -783,7 +783,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </colgroup>
 <thead>
 <tr class="header">
-<th>Funzionalità/funzionalità</th>
+<th>Caratteristica/funzionalità</th>
 <th>Client desktop Lync 2013</th>
 <th>Windows Phone</th>
 <th>iPhone</th>
@@ -793,7 +793,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>In Lync toccare l'icona chiama per chiamare un contatto</p></td>
+<td><p>In Lync, toccare l'icona di chiamata per chiamare un contatto</p></td>
 <td><p>● 1</p></td>
 <td><p>● 2</p></td>
 <td><p>● 2</p></td>
@@ -817,7 +817,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Gestire le impostazioni delle chiamate di Team</p></td>
+<td><p>Gestire le impostazioni di intercettazione team</p></td>
 <td><p>● 3</p></td>
 <td></td>
 <td></td>
@@ -833,7 +833,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Avviare una chiamata a un gruppo di risposte</p></td>
+<td><p>Avviare una chiamata a un Response Group</p></td>
 <td><p>● 3</p></td>
 <td></td>
 <td></td>
@@ -841,7 +841,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Supportare i servizi di emergenza</p></td>
+<td><p>Supportare servizi di emergenza</p></td>
 <td><p>● 4</p></td>
 <td></td>
 <td></td>
@@ -849,7 +849,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Effettuare chiamate per conto di un altro contatto (scenario manager/delegato)</p></td>
+<td><p>Eseguire chiamate per conto di un altro contatto (scenario manager/delegato)</p></td>
 <td><p>● 3</p></td>
 <td></td>
 <td></td>
@@ -857,7 +857,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Gestire le chiamate di un altro contatto, se configurato come delegato</p></td>
+<td><p>Gestire le chiamate di un altro contatto, se configurate come delegati</p></td>
 <td><p>● 3</p></td>
 <td><p>● 3</p></td>
 <td><p>● 3</p></td>
@@ -865,7 +865,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>● 3</p></td>
 </tr>
 <tr class="even">
-<td><p>Usare la chiamata tramite lavoro (Lync Server 2013 inserisce le chiamate in uscita in modo che l'ID chiamante del destinatario visualizzi il numero di lavoro anziché il numero di cellulare)</p></td>
+<td><p>Utilizzare la chiamata tramite lavoro (Lync Server 2013 inserisce le chiamate in uscita in modo che l'ID chiamante del destinatario visualizzi il numero di lavoro invece del numero di cellulare)</p></td>
 <td></td>
 <td><p>● 3</p></td>
 <td><p>● 3</p></td>
@@ -881,7 +881,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Usare la tastiera in Lync</p></td>
+<td><p>Utilizzo del tastierino numerico in Lync</p></td>
 <td><p>●</p></td>
 <td><p>● 3</p></td>
 <td><p>● 3</p></td>
@@ -892,19 +892,19 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </table>
 
 
-1 gli utenti di Lync Server 2013, Skype for business online e Office 365 possono chiamare altri utenti di Lync e utenti Skype toccando l'icona. Gli utenti di Lync Server 2013 possono anche inserire chiamate PSTN toccando l'icona.
+1 gli utenti di Lync Server 2013, Skype for business online e Office 365 possono chiamare gli altri utenti di Lync e Skype toccando l'icona. Gli utenti di Lync Server 2013 possono anche effettuare chiamate PSTN toccando l'icona.
 
-2 per gli utenti di Lync Server 2013 locali, in dispositivi Windows Phone, iPhone e iPad, l'utente tocca l'icona della chiamata nella scheda contatto e accetta il callback da Lync Server 2013. Per gli utenti di Office 365, in dispositivi Windows Phone, iPhone e iPad, quando l'utente tocca il pulsante chiama, viene visualizzata una finestra di dialogo che chiede all'utente di confermare che vuole chiamare il numero.
+2 per gli utenti di Lync Server 2013 locali, nei dispositivi Windows Phone, iPhone e iPad, l'utente tocca l'icona della chiamata nella scheda contatto e accetta il callback da Lync Server 2013. Per gli utenti di Office 365, nei dispositivi Windows Phone, iPhone e iPad, quando l'utente tocca il pulsante di chiamata, viene visualizzata una finestra di dialogo in cui viene chiesto all'utente di confermare che vuole chiamare il numero.
 
 3 non disponibile per gli utenti di Skype for business online e/o Office 365.
 
-4 per gli utenti di Skype for business online e/o Office 365, questa funzionalità è supportata da Microsoft partner.
+4 per gli utenti di Skype for business online e/o Office 365, questa funzionalità è supportata dai partner Microsoft.
 
 </div>
 
 <div>
 
-## <a name="external-user-support-in-lync-mobile-clients"></a>Supporto utenti esterni nei client mobili di Lync
+## <a name="external-user-support-in-lync-mobile-clients"></a>Supporto degli utenti esterni nei client mobili di Lync
 
 
 <table style="width:100%;">
@@ -918,7 +918,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </colgroup>
 <thead>
 <tr class="header">
-<th>Funzionalità/funzionalità</th>
+<th>Caratteristica/funzionalità</th>
 <th>Client desktop Lync 2013</th>
 <th>Windows Phone</th>
 <th>iPhone</th>
@@ -928,7 +928,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Avviare un messaggio istantaneo con un contatto pubblico</p></td>
+<td><p>Avviare conversazioni istantanee con un contatto pubblico</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -936,7 +936,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="even">
-<td><p>Avviare un messaggio istantaneo con un contatto federato</p></td>
+<td><p>Avviare conversazioni istantanee con un contatto federato</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -944,7 +944,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td><p>●</p></td>
 </tr>
 <tr class="odd">
-<td><p>Eseguire chiamate in due parti con utenti esterni</p></td>
+<td><p>Condurre chiamate con due utenti esterni</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -952,7 +952,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Eseguire chiamate in più parti con utenti esterni</p></td>
+<td><p>Condurre chiamate con più utenti esterni.</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -960,7 +960,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Usare la chiamata tramite lavoro per raggiungere un contatto federato sul proprio telefono cellulare chiamando il proprio lavoro pubblicato number1</p></td>
+<td><p>Utilizzare la chiamata tramite lavoro per raggiungere un contatto federato sul proprio telefono cellulare chiamando il proprio lavoro pubblicato number1</p></td>
 <td></td>
 <td><p>● 2</p></td>
 <td><p>● 2</p></td>
@@ -971,7 +971,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </table>
 
 
-1 per impostazione predefinita, agli utenti federati viene assegnata la relazione di privacy dei contatti esterni. Per poter raggiungere un contatto federativo sul proprio telefono cellulare chiamando il numero di lavoro pubblicato, il contatto federato deve assegnare manualmente la relazione di privacy dei colleghi.
+1 per impostazione predefinita, agli utenti federati viene assegnata la relazione di privacy dei contatti esterni. Per essere in grado di raggiungere un contatto federato sul proprio telefono cellulare chiamando il numero di lavoro pubblicato, il contatto federato deve assegnare manualmente la relazione di privacy ai colleghi.
 
 2 non disponibile per gli utenti di Office 365.
 
@@ -993,7 +993,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </colgroup>
 <thead>
 <tr class="header">
-<th>Funzionalità/funzionalità</th>
+<th>Caratteristica/funzionalità</th>
 <th>Client desktop Lync 2013</th>
 <th>Windows Phone</th>
 <th>iPhone</th>
@@ -1003,7 +1003,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Contatti rubrica telefonica</p></td>
+<td><p>Contatti rubrica chiamata</p></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1040,7 +1040,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </colgroup>
 <thead>
 <tr class="header">
-<th>Funzionalità/funzionalità</th>
+<th>Caratteristica/funzionalità</th>
 <th>Client desktop Lync 2013</th>
 <th>Windows Phone</th>
 <th>iPhone</th>
@@ -1050,7 +1050,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Fornisci l'archiviazione lato client</p></td>
+<td><p>Fornire l'archiviazione sul lato client</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>
@@ -1058,7 +1058,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non ha usato l
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Fornisci registrazione lato client</p></td>
+<td><p>Fornire la registrazione sul lato client</p></td>
 <td><p>●</p></td>
 <td></td>
 <td></td>

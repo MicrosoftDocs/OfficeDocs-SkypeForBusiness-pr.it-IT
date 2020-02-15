@@ -12,20 +12,20 @@ ms:contentKeyID: 48184436
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0a126e7e1ee61f48ff8857553b7677abf813a25e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 71d6717f183066688fdf94d0fc83e0e662c9a6b3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762294"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044728"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-dial-in-conferencing-in-lync-server-2013"></a>Panoramica dei servizi di conferenza telefonica con accesso esterno in Lync Server 2013
+# <a name="overview-of-dial-in-conferencing-in-lync-server-2013"></a>Panoramica delle conferenze telefoniche con accesso esterno in Lync Server 2013
 
 </div>
 
@@ -35,65 +35,65 @@ ms.locfileid: "41762294"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-30_
+_**Ultimo argomento modificato:** 2012-09-30_
 
-Se l'organizzazione dispone di utenti che devono partecipare a conferenze locali di Lync Server 2013 quando si trovano fuori sede o non hanno accesso a un computer, è possibile distribuire i servizi di conferenza telefonica con chiamata in modo che possano partecipare alla conferenza usando un telefono pubblico con commutazioni telefono di rete (PSTN).
+Se nell'organizzazione sono presenti utenti che devono partecipare a conferenze locali di Lync Server 2013 quando sono fuori sede o che non dispongono dell'accesso a un computer, è possibile distribuire le conferenze telefoniche in ingresso in modo che possano partecipare alla conferenza tramite un telefono pubblico con commutazione telefono di rete (PSTN).
 
-I servizi di conferenza telefonica con accesso esterno sono una funzionalità facoltativa che è possibile configurare quando si distribuisce una conferenza di Lync Server 2013. Anche se i servizi di conferenza telefonica con accesso esterno usano alcuni degli stessi componenti di Lync Server 2013 usati da Enterprise Voice, è possibile distribuire i servizi di conferenza telefonica con accesso esterno anche se non si distribuisce VoIP aziendale.
+Le conferenze telefoniche con accesso esterno sono una funzionalità facoltativa che è possibile configurare quando si distribuisce Lync Server 2013 Conferencing. Anche se la conferenza telefonica con accesso esterno utilizza alcuni degli stessi componenti di Lync Server 2013 utilizzati da VoIP aziendale, è possibile distribuire le conferenze telefoniche con accesso esterno anche se non si esegue la distribuzione di VoIP aziendale.
 
 <div>
 
 
 > [!NOTE]  
-> Se si distribuiscono i servizi di conferenza telefonica con accesso esterno, è necessario distribuirla in tutti i pool in cui si distribuiscono le conferenze di Lync Server 2013. Non è necessario assegnare i numeri di accesso in tutti i pool, ma è necessario distribuire la caratteristica chiamata in ingresso in ogni pool. Questo requisito supporta la caratteristica nome registrato quando un utente chiama un numero di accesso da un pool per partecipare a una conferenza di Lync Server 2013 in un pool diverso.
+> Se si distribuiscono le conferenze telefoniche con accesso esterno, è necessario distribuirle in tutti i pool in cui si distribuisce Lync Server 2013 Conferencing. Non è necessario assegnare i numeri di accesso in ogni pool, ma è necessario distribuire la funzionalità di chiamata in ingresso in ogni pool. Questo requisito supporta la caratteristica del nome registrato quando un utente chiama un numero di accesso da un pool per partecipare a una conferenza di Lync Server 2013 in un pool diverso.
 
 
 
 </div>
 
-Le conferenze devono essere abilitate per l'accesso esterno in criteri riunione. Per impostazione predefinita, le conferenze abilitate per l'accesso esterno includono le informazioni seguenti nell'invito alla conferenza:
+È necessario abilitare le conferenze per l'accesso esterno tramite criteri di riunione. Per impostazione predefinita, le conferenze abilitate per l'accesso esterno includono le informazioni seguenti nell'invito alla conferenza:
 
   - ID conferenza numerico che identifica la conferenza.
 
   - Uno o più numeri di accesso PSTN.
 
-  - Un collegamento a una pagina delle impostazioni di conferenza telefonica con accesso esterno, che contiene un elenco completo dei numeri di Access con le lingue associate; una posizione per creare, reimpostare o sbloccare i numeri di identificazione personali (pin); e altre informazioni, ad esempio i controlli DTMF (Dual-Tone Multi-Frequency).
+  - Un collegamento a una pagina delle impostazioni per le conferenze telefoniche con accesso esterno, che contiene un elenco completo dei numeri di accessi con le rispettive lingue associate. un luogo in cui creare, reimpostare o sbloccare i numeri di identificazione personale (pin); e altre informazioni, ad esempio i controlli DTMF (Dual-Tone Multi-Frequency).
 
-I servizi di conferenza telefonica con accesso esterno supportano utenti Enterprise e Anonymous. Gli utenti aziendali hanno le credenziali dei servizi di dominio Active Directory e gli account di Lync Server 2013 all'interno dell'organizzazione. Gli utenti anonimi non hanno credenziali aziendali all'interno dell'organizzazione. Nel contesto dei servizi di conferenza telefonica con accesso esterno, un utente dell'organizzazione di un partner federato che usa la rete PSTN per connettersi a una conferenza viene considerato come un utente anonimo. Per i servizi di conferenza telefonica con accesso esterno, a differenza di altri contesti, gli utenti federati non vengono autenticati.
+Le conferenze telefoniche con accesso esterno supportano utenti sia aziendali sia anonimi. Gli utenti aziendali dispongono di credenziali di servizi di dominio Active Directory e di account Lync Server 2013 all'interno dell'organizzazione. Gli utenti anonimi non dispongono di credenziali aziendali all'interno dell'organizzazione. Nel contesto delle conferenze telefoniche con accesso esterno un utente in un'organizzazione di un partner federato che utilizza la rete PSTN per connettersi a una conferenza viene considerato un utente anonimo. Per le conferenze telefoniche con accesso esterno, diversamente da altri contesti, gli utenti federati non vengono autenticati.
 
-Gli utenti aziendali o i responsabili delle conferenze che partecipano a una conferenza abilitata per la chiamata in accesso esterno compongono uno dei numeri di accesso alla conferenza e quindi viene richiesto di immettere l'ID conferenza. Se una direttrice non è ancora entrata nella riunione, gli utenti possono immettere l'estensione UC (Unified Communications) o il numero di telefono completo e aggiungere o aspettare di essere ammessi da una direttrice. L'organizzatore della riunione può partecipare alla riunione come leader immettendo solo il PIN. Il server front-end usa la combinazione di numero di telefono completo o estensione e PIN per associare gli utenti aziendali in modo univoco alle credenziali di Active Directory. Di conseguenza, gli utenti dell'organizzazione vengono autenticati e identificati per nome nella conferenza. Gli utenti aziendali possono anche assumere un ruolo di conferenza predefinito dall'organizzatore.
+Gli utenti aziendali o i coordinatori delle conferenze che partecipano a una conferenza abilitata per l'accesso esterno compongono uno dei numeri di accesso alla conferenza e devono immettere l'ID conferenza. Se un coordinatore non ha ancora eseguito l'accesso alla riunione, gli utenti possono immettere il proprio interno (o il numero di telefono completo) per le comunicazioni unificate e il PIN o attendere di essere ammessi da un coordinatore. Gli organizzatori della riunione possono partecipare alla riunione come coordinatori semplicemente immettendo il proprio PIN. Il front end server utilizza la combinazione di numero di telefono completo o interno e il PIN, per mappare in modo univoco gli utenti aziendali alle credenziali di Active Directory. Di conseguenza, gli utenti aziendali vengono autenticati e identificati in base al nome nella conferenza. Gli utenti aziendali possono anche assumere un ruolo della conferenza predefinito dall'organizzatore.
 
 <div>
 
 
 > [!NOTE]  
-> Gli utenti aziendali che effettuano la chiamata da un telefono Office IP o da Lync Server 2013 o Lync 2010 Attendant non vengono richiesti per il proprio numero di telefono perché sono già autenticati.
+> Gli utenti aziendali che effettuano la chiamata da un telefono IP di Office o da un operatore Lync Server 2013 o Lync 2010 non vengono richiesti per il proprio numero di telefono perché sono già autenticati.
 
 
 
 </div>
 
-Utenti anonimi che desiderano partecipare a una conferenza telefonica con accesso esterno, digitare un numero di Access per le conferenze e quindi viene richiesto di immettere l'ID conferenza. Anche agli utenti anonimi non autenticati viene richiesto di registrare il proprio nome. Il nome registrato identifica gli utenti non autenticati nella conferenza. Gli utenti anonimi non sono ammessi alla conferenza fino a quando almeno un leader o un utente autenticato non partecipa e non è possibile assegnare loro un ruolo predefinito.
+Gli utenti anonimi che desiderano partecipare a una conferenza telefonica con accesso esterno compongono uno dei numeri di accesso alla conferenza e devono quindi immettere il proprio ID conferenza. Gli utenti anonimi non autenticati devono inoltre registrare il proprio nome. Il nome registrato identifica gli utenti non autenticati nella conferenza. Gli utenti anonimi non vengono ammessi alla conferenza fino a quando un responsabile o un utente autenticato non accede, e non possono ricevere un ruolo predefinito.
 
 <div>
 
 
 > [!NOTE]  
-> Gli utenti aziendali che scelgono di non immettere il proprio numero di telefono e il PIN non vengono autenticati. Viene richiesto di registrare il proprio nome e di essere trattati come utenti anonimi nella conferenza.
+> Gli utenti aziendali che scelgono di non immettere il proprio numero di telefono e il PIN non vengono autenticati e pertanto devono registrare il proprio nome e vengono considerati utenti anonimi nella conferenza.
 
 
 
 </div>
 
-In fase di pianificazione, l'organizzatore della riunione può scegliere di limitare l'accesso alla riunione rendendo la riunione chiusa o bloccata. In questo caso, gli utenti con accesso esterno vengono richiesti per l'autenticazione. Se gli utenti con accesso esterno non riescono o scelgono di non eseguire l'autenticazione, vengono trasferiti nella sala di attesa. Attendono nella sala di attesa fino a quando un leader non li accetta o li rifiuta oppure viene disconnesso. Gli utenti con accesso esterno sentono la musica se sono in attesa di essere ammessi alla conferenza. Dopo l'ammissione a una conferenza, gli utenti con accesso esterno possono partecipare alla parte audio della conferenza e possono esercitare i comandi DTMF (Dual-Tone Multi-Frequency) usando la tastiera del telefono. I responsabili delle connessioni telefoniche con accesso esterno possono esercitare i comandi DTMF per attivare o disattivare l'attivazione o disattivazione dei partecipanti, bloccare o sbloccare la conferenza, ammettere gli utenti nella sala di attesa e attivare o disattivare gli annunci di entrata e uscita. I responsabili possono anche usare un comando DTMF per ammettere tutti gli utenti della sala di attesa, che modificano le autorizzazioni della riunione per consentire a tutti i partecipanti di accedervi. Tutti i partecipanti alla chiamata in accesso esterno possono esercitare i comandi DTMF per ascoltare la guida, ascoltare il roster della conferenza e disattivare l'audio.
+In fase di pianificazione, l'organizzatore della riunione può scegliere di limitare l'accesso alla riunione chiudendola o bloccandola. In questo caso, agli utenti connessi tramite chiamata in ingresso viene richiesto di eseguire l'autenticazione. Se gli utenti riescono ad autenticarsi o scelgono di non farlo, vengono trasferiti alla pagina di benvenuto, in cui attendono fino a quando un responsabile non li accetta o rifiuta o, in caso di timeout, non vengono disconnessi. Gli utenti connessi tramite chiamata in ingresso ascoltano un brano musicale se devono attendere di essere ammessi alla conferenza. Una volta ammessi alla conferenza, tali utenti possono partecipare alla parte audio della conferenza e utilizzare i comandi DTMF dal tastierino del telefono. I responsabili connessi tramite chiamata in ingresso possono utilizzare i comandi DTMF per consentire o meno ai partecipanti di disattivare il proprio audio, bloccare o sbloccare la conferenza, ammettere altre persone dalla pagina di benvenuto e attivare o disattivare gli annunci di entrata o uscita. I responsabili possono inoltre utilizzare un comando DTMF per ammettere chiunque dalla pagina di benvenuto, scelta che comporta la modifica delle autorizzazioni della riunione in modo da ammettere chiunque acceda successivamente. Tutti i partecipanti connessi tramite chiamata in ingresso possono utilizzare i comandi DTMF per ascoltare la Guida e l'elenco dei partecipanti e disattivare il proprio audio.
 
-Partecipanti con accesso esterno (ovvero, indipendentemente dal fatto che abbiano o meno la chiamata dalla rete PSTN), ascoltare annunci personali durante la conferenza, ad esempio se sono stati riattivati o disattivati, la riunione è stata registrata o qualcuno sta aspettando nella sala di attesa.
+I partecipanti connessi tramite chiamata in ingresso, che chiamino o meno dalla rete PSTN, possono ascoltare annunci personali durante la conferenza, ad esempio relativi alla disattivazione o meno del proprio audio, alla registrazione o meno della riunione o all'eventuale presenze di altri utenti nella pagina di benvenuto.
 
 <div>
 
 
 > [!NOTE]  
-> Partecipanti che partecipano alla conferenza facendo clic su un collegamento invece di effettuare la chiamata in non si sentono annunci personali.
+> I partecipanti che accedono alla conferenza facendo clic su un collegamento invece di comporre un numero non possono ascoltare gli annunci personali.
 
 
 

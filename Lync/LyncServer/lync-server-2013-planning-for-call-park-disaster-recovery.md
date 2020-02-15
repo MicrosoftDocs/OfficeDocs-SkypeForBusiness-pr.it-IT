@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione per il ripristino di emergenza del parcheggio di chiamata'
+title: 'Lync Server 2013: pianificazione per il ripristino di emergenza del parcheggio di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185867
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a76052297e527e24fd3daf0c03d02661c7ddc255
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 74aec0a6fe0edc288dfaae57a146c52cf9a0babe
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41754456"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037114"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-call-park-disaster-recovery-in-lync-server-2013"></a>Pianificazione per il ripristino di emergenza del parcheggio di chiamata in Lync Server 2013
+# <a name="planning-for-call-park-disaster-recovery-in-lync-server-2013"></a>Pianificazione del ripristino di emergenza del parcheggio di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,35 +35,35 @@ ms.locfileid: "41754456"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-30_
+_**Ultimo argomento modificato:** 2012-10-30_
 
-In questa sezione vengono illustrati alcuni modi per preparare l'applicazione Call Park per il ripristino di emergenza e alcune considerazioni per il processo di ripristino di emergenza.
+In questa sezione vengono illustrati alcuni modi per preparare l'applicazione Parcheggio di chiamata per il ripristino di emergenza e alcune considerazioni per il processo di ripristino di emergenza.
 
 <div>
 
-## <a name="preparing-for-call-park-disaster-recovery"></a>Preparazione per il ripristino di emergenza di Call Park
+## <a name="preparing-for-call-park-disaster-recovery"></a>Preparazione per il ripristino di emergenza del parcheggio di chiamata
 
-Quando si preparano e eseguono procedure di ripristino di emergenza, tenere presente quanto segue.
+Quando si preparano e si eseguono le procedure di ripristino di emergenza, tenere presenti gli aspetti seguenti:
 
-  - Pianificare il ripristino di emergenza quando si esegue la pianificazione della capacità. Per la capacità di ripristino di emergenza, ogni pool in un pool associato deve essere in grado di gestire i carichi di lavoro dei servizi di Call Park in entrambi i pool. Per informazioni dettagliate sulla pianificazione della capacità di parcheggio delle chiamate, vedere [pianificazione della capacità per il parcheggio delle chiamate in Lync Server 2013](lync-server-2013-capacity-planning-for-call-park.md).
+  - Pianificare il ripristino di emergenza in fase di pianificazione della capacità. Per la capacità di ripristino di emergenza, ogni pool in un pool associato dovrebbe essere in grado di gestire i carichi di lavoro dei servizi parcheggio di chiamata in entrambi i pool. Per informazioni dettagliate sulla pianificazione della capacità del parcheggio di chiamata, vedere [pianificazione della capacità per il parcheggio di chiamata in Lync Server 2013](lync-server-2013-capacity-planning-for-call-park.md).
 
-  - Durante il ripristino di emergenza, gli utenti che sono stati reindirizzati al pool di backup come parte del processo di failover usano il servizio di parcheggio delle chiamate in esecuzione nel pool di backup. Pertanto, il supporto per il parcheggio delle chiamate durante il ripristino di emergenza richiede che l'applicazione Call Park venga distribuita e abilitata sia nel pool principale che nel pool di backup.
+  - Durante il ripristino di emergenza gli utenti che sono stati reindirizzati al pool di backup durante il processo di failover, utilizzano il servizio Parcheggio di chiamata nel pool di backup. Pertanto, il supporto per il parcheggio di chiamata durante il ripristino di emergenza richiede che l'applicazione Parcheggio di chiamata venga distribuita e abilitata sia nel pool primario che nel pool di backup.
 
-  - Ogni pool deve avere un intervallo valido di numeri di orbita per gli utenti residenti in tale pool da usare per le chiamate di parcheggio.
+  - È necessario che tutti i pool dispongano di un intervallo valido di numeri di codici orbit per gli utenti che sono ospitati nel pool da utilizzare per il parcheggio delle chiamate.
 
-  - Mantenere sempre una copia di backup separata di qualsiasi musica personalizzata in attesa caricata per Call Park. Non è possibile eseguire il backup di questi file come parte del processo di ripristino di emergenza di Lync Server 2013 e andranno perduti se i file caricati nel pool sono danneggiati, danneggiati o eliminati.
+  - Mantenere sempre una copia di backup separata di qualsiasi musica personalizzata in attesa che sia stata caricata per il parcheggio di chiamata. Questi file non vengono sottoposti a backup come parte del processo di ripristino di emergenza di Lync Server 2013 e andranno persi se i file caricati nel pool sono danneggiati, danneggiati o eliminati.
 
 </div>
 
 <div>
 
-## <a name="call-park-disaster-recovery-considerations"></a>Considerazioni sul ripristino di disaster Park di Call
+## <a name="call-park-disaster-recovery-considerations"></a>Considerazioni sul ripristino di emergenza del parcheggio di chiamata
 
-Puoi definire solo un set di impostazioni di configurazione delle applicazioni di Call Park e un file audio in blocco musicale personalizzato per ogni pool. Queste impostazioni includono la soglia di timeout, la musica in attesa, i tentativi di prelievo massimo delle chiamate e l'URI di timeout. Per visualizzare queste impostazioni di configurazione, eseguire il cmdlet **Get-CsCpsConfiguration** . Per informazioni dettagliate sul cmdlet **Get-CsCpsConfiguration** , vedere [Get-CsCpsConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsCpsConfiguration).
+È possibile definire un solo set di impostazioni di configurazione dell'applicazione Parcheggio di chiamata e un file audio personalizzato per pool. Queste impostazioni includono la soglia di timeout, la musica in attesa, il numero massimo di tentativi di risposta alle chiamate e l'URI di timeout. Per visualizzare le impostazioni di configurazione, eseguire il cmdlet **Get-CsCpsConfiguration**. Per informazioni dettagliate sul cmdlet **Get-CsCpsConfiguration** , vedere [Get-CsCpsConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsCpsConfiguration).
 
-Durante il ripristino di emergenza, Call Park USA l'applicazione Call Park nel pool di backup, quindi non è possibile eseguire il backup delle impostazioni nel pool principale. Se il pool principale non può essere recuperato e si distribuisce un nuovo pool in sostituzione del pool principale, le impostazioni del pool principale andranno perse ed è necessario riconfigurare le impostazioni del parcheggio delle chiamate e i file audio di musica in blocco personalizzati nel nuovo pool.
+Durante il ripristino di emergenza, il parcheggio di chiamata utilizza l'applicazione Parcheggio di chiamata nel pool di backup, pertanto non è stato eseguito il backup delle impostazioni del pool primario. Se il pool primario non può essere ripristinato e si distribuisce un nuovo pool per sostituire il pool primario, le impostazioni del pool primario vengono perse ed è necessario riconfigurare le impostazioni del parcheggio di chiamata e gli eventuali file audio di musica di attesa personalizzati nel nuovo pool.
 
-Se si distribuisce un nuovo pool con un nome di dominio completo diverso (FQDN) per sostituire il pool principale, è necessario riassegnare tutti gli intervalli di orbita del parcheggio di chiamata associati al pool principale al nome di dominio completo del nuovo pool. Per riassegnare gli intervalli orbit al nuovo pool, è possibile usare il pannello di controllo di Lync Server o il cmdlet **set-CsCallParkOrbit** . Per informazioni dettagliate sul cmdlet **set-CsCallParkOrbit** , vedere [set-CsCallParkOrbit](https://docs.microsoft.com/powershell/module/skype/Set-CsCallParkOrbit).
+Se si distribuisce un nuovo pool con un nome di dominio completo (FQDN) diverso per sostituire il pool primario, è necessario riassegnare tutti gli intervalli di orbit del parcheggio di chiamata che sono stati associati al pool primario all'FQDN del nuovo pool. Per riassegnare gli intervalli di Orbit al nuovo pool, è possibile utilizzare il pannello di controllo di Lync Server o il cmdlet **set-CsCallParkOrbit** . Per informazioni dettagliate sul cmdlet **set-CsCallParkOrbit** , vedere [set-CsCallParkOrbit](https://docs.microsoft.com/powershell/module/skype/Set-CsCallParkOrbit).
 
 </div>
 

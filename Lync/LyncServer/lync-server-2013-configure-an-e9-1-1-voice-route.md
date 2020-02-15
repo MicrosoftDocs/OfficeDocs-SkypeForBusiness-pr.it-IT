@@ -12,16 +12,16 @@ ms:contentKeyID: 48184384
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d40d2ee5dcb0dd7f759751bdab0d3e09f4ebc577
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e04153e5f5a4b684ac2343d2ef01bfa2c7fd3a9a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757840"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42047170"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41757840"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-17_
+_**Ultimo argomento modificato:** 2012-09-17_
 
-Per distribuire E9-1-1, è prima di tutto necessario configurare una route vocale per le chiamate di emergenza. Per informazioni dettagliate sulla creazione di route vocali, vedere [creare una route vocale in Lync Server 2013](lync-server-2013-create-a-voice-route.md). Puoi definire più di una route se, ad esempio, la distribuzione include un trunk SIP principale e un trunk SIP secondario.
+Per distribuire il servizio E9-1-1, è innanzitutto necessario configurare una route vocale per le chiamate di emergenza. Per informazioni dettagliate sulla creazione di route vocali, vedere [Create a Voice Route in Lync Server 2013](lync-server-2013-create-a-voice-route.md). È possibile definire più di una route, ad esempio, se nella distribuzione sono inclusi un trunk SIP primario e un trunk SIP secondario.
 
 <div>
 
 
 > [!NOTE]  
-> Per includere le informazioni sulla posizione in un invito di E9-1-1, è necessario configurare il trunk SIP che si connette al provider di servizi E9-1-1 per instradare le chiamate di emergenza tramite il gateway. A questo scopo, imposta il contrassegno EnablePIDFLOSupport sul cmdlet <STRONG>Set-CsTrunkConfiguration</STRONG> su true. Il valore predefinito per EnablePIDFLOSupport è false. Per esempio:<CODE>Set-CsTrunkConfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.</CODE><BR>Non è necessario abilitare le posizioni di ricezione per i gateway PSTN (Public Switched Telephone Network) di fallback e i gateway ELIN (Emergency Location Identification Number).
+> Per includere informazioni sulla posizione in un messaggio INVITE E9-1-1, è necessario configurare il trunk SIP per la connessione al provider di servizi E9-1-1 in modo che esegua il routing delle chiamate di emergenza attraverso il gateway. A tale scopo, impostare il flag EnablePIDFLOSupport nel cmdlet <STRONG>Set-CsTrunkConfiguration</STRONG> su True. Il valore predefinito per EnablePIDFLOSupport è False. Per esempio:<CODE>Set-CsTrunkConfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.</CODE><BR>Non è necessario abilitare la ricezione delle posizioni per i gateway PSTN (Public Switched Telephone Network) di fallback e i gateway ELIN (Emergency Location Identification Number).
 
 
 
 </div>
 
-Per informazioni dettagliate sull'uso delle route vocali, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:
+Per informazioni dettagliate sull'utilizzo delle route vocali, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:
 
   - **Set-CsPstnUsage**
 
@@ -67,25 +67,25 @@ Per informazioni dettagliate sull'uso delle route vocali, vedere la documentazio
 
 ## <a name="to-configure-an-e9-1-1-voice-route"></a>Per configurare una route vocale E9-1-1
 
-1.  Accedere al computer con un account membro dei gruppi RTCUniversalServerAdmins o un membro del ruolo di amministratore di CsVoiceAdministrator.
+1.  Accedere al computer con un account membro del gruppo RTCUniversalServerAdmins o del ruolo amministrativo CsVoiceAdministrator.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
 3.  Eseguire il cmdlet seguente per creare un nuovo record di utilizzo PSTN.
     
-    Deve essere lo stesso nome che verrà usato per l'impostazione **PSTN** nei criteri di posizione. Anche se la distribuzione avrà più record utilizzo telefono, nell'esempio seguente viene aggiunto "utilizzo delle emergenze" all'elenco corrente degli usi PSTN disponibili. Per informazioni dettagliate, vedere [configurazione di criteri vocali e record di utilizzo PSTN per autorizzare le funzionalità e i privilegi di chiamata in Lync Server 2013](lync-server-2013-configuring-voice-policies-and-pstn-usage-records-to-authorize-calling-features-and-privileges.md).
+    Deve essere lo stesso nome che verrà utilizzato per l'impostazione **PSTN** nei criteri di percorso. Anche se nella distribuzione reale saranno disponibili più record di utilizzo del telefono, nell'esempio seguente viene aggiunto "Emergency Usage" all'elenco corrente di utilizzi PSTN disponibili. Per ulteriori informazioni, vedere [configurazione di criteri vocali e record utilizzo PSTN per autorizzare le funzionalità e i privilegi di chiamata in Lync Server 2013](lync-server-2013-configuring-voice-policies-and-pstn-usage-records-to-authorize-calling-features-and-privileges.md).
     
         Set-CsPstnUsage -Usage @{add='EmergencyUsage'}
 
-4.  Eseguire il cmdlet seguente per creare una nuova route vocale usando il record di utilizzo PSTN creato nel passaggio precedente.
+4.  Eseguire il cmdlet seguente per creare una nuova route vocale con il record di utilizzo PSTN creato nel passaggio precedente.
     
-    Il pattern numerico deve essere lo stesso modello di numero usato nell'impostazione della **stringa di chiamata di emergenza** nei criteri di posizione. È necessario un segno "+" perché Lync aggiunge "+" alle chiamate di emergenza. "Co1-pstngateway-1" è l'ID del servizio trunk SIP per il provider di servizi E9-1-1 o per l'ID del servizio gateway ELIN. L'esempio seguente usa "EmergencyRoute" come nome della route vocale.
+    Il formato del numero deve essere lo stesso utilizzato nell'impostazione **Maschera di composizione di emergenza** nei criteri di percorso. È necessario un segno "+" perché Lync aggiunge "+" alle chiamate di emergenza. "Co1-pstngateway-1" è l'ID di servizio del trunk SIP per il provider di servizi E9-1-1 o l'ID di servizio del gateway ELIN. Nell'esempio seguente viene utilizzato il nome "EmergencyRoute" per la route vocale.
     
         New-CsVoiceRoute -Name "EmergencyRoute" -NumberPattern "^\+911$" -PstnUsages @{add="EmergencyUsage"} -PstnGatewayList @{add="co1-pstngateway-1"}
 
-5.  Facoltativamente, per le connessioni trunk SIP, è consigliabile eseguire il cmdlet seguente per creare una route locale per le chiamate non gestite dal trunk SIP del provider di servizi E9-1-1. Questa route verrà usata se la connessione al provider di servizi E9-1-1 non è disponibile.
+5.  Facoltativamente, per le connessioni trunk SIP è consigliabile eseguire il cmdlet seguente per creare una route locale per le chiamate non gestite dal trunk SIP del provider di servizi E9-1-1. Questa route verrà utilizzata se la connessione al provider di servizi E9-1-1 non è disponibile.
     
-    L'esempio seguente presuppone che l'utente abbia un uso "locale" nei criteri vocali.
+    Nell'esempio seguente si presuppone che i criteri vocali dell'utente includano l'utilizzo 'Local'.
     
         New-CsVoiceRoute -Name "LocalEmergencyRoute" -NumberPattern "^\+911$" -PstnUsages @{add="Local"} -PstnGatewayList @{add="co1-pstngateway-2"}
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Risorse necessarie per il server Chat persistente'
+title: 'Lync Server 2013: risorse necessarie per il server Chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185255
 ms.date: 02/05/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 31683641e50a3e3bc898841b0cf4b0911e046262
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9917e6eca4780ec415d2750a8e36d06946130137
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723826"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046819"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,49 +35,49 @@ ms.locfileid: "41723826"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-02-05_
+_**Ultimo argomento modificato:** 2016-02-05_
 
-La disponibilità elevata e il ripristino di emergenza per il server di chat persistente richiedono risorse aggiuntive oltre a quelle in genere necessarie per l'operazione completa. Prima di configurare il server di chat persistente per l'elevata disponibilità e il ripristino di emergenza, verificare di disporre delle risorse seguenti, oltre a quelle necessarie per l'operazione standard del server di chat persistente. Per altre informazioni sulla configurazione, vedere [configurazione del server di chat persistente in Lync server 2013](lync-server-2013-configuring-persistent-chat-server.md).
+La disponibilità elevata e il ripristino di emergenza per il server Chat persistente richiedono ulteriori risorse oltre a ciò che in genere è necessario per l'operazione completa. Prima di configurare il server Chat persistente per la disponibilità elevata e il ripristino di emergenza, verificare di disporre delle risorse seguenti oltre a quelle necessarie per l'operazione standard del server Chat persistente. Per ulteriori informazioni sulla configurazione, vedere [Configuring Persistent Chat Server in Lync server 2013](lync-server-2013-configuring-persistent-chat-server.md).
 
-  - Un'istanza di database dedicata situata nello stesso centro dati fisico in cui si trova la parte anteriore iniziale del servizio server di chat persistente. Questo database fungerà da mirror di SQL Server per il database principale della chat persistente. Facoltativamente, è possibile designare un altro server SQL per fungere da Witness per il mirroring se si vuole un failover automatizzato nel database mirror.
+  - Un'istanza di database dedicata che si trova nello stesso data center fisico in cui si trova l'Home Front-end del servizio server Chat persistente. Questo database fungerà da mirror di SQL Server per il database di Persistent Chat principale. Facoltativamente, designare un ulteriore server SQL per fungere da controllo del mirroring se si desidera un failover automatizzato per il database mirror.
 
-  - Un'istanza di database dedicata situata nell'altro centro dati fisico. Questo database fungerà da database secondario di SQL Server log shipping per il database nel centro dati principale.
+  - Un'istanza di database dedicata nell'altro data center fisico. Questo database fungerà da database secondario di log shipping di SQL Server per il database nel data center principale.
 
-  - Un'istanza del database dedicata che funge da mirror di SQL Server per il database secondario. Facoltativamente, è possibile designare un altro server SQL in server come witness di mirroring. Entrambi devono essere situati nello stesso centro dati fisico del database secondario.
+  - Un'istanza di database dedicata che funge da mirror di SQL Server per il database secondario. Facoltativamente, è possibile designare un ulteriore SQL Server per il server come testimone del mirroring. Entrambi devono trovarsi nello stesso data center fisico del database secondario.
 
-  - Se è abilitata la conformità del server di chat persistente, sono necessarie altre tre istanze di database dedicate. La distribuzione è uguale a quelle descritte in precedenza per il database della chat persistente. Mentre è possibile che il database di conformità condivida la stessa istanza di SQL Server del database della chat persistente, consigliamo istanze autonome per l'elevata disponibilità e il ripristino di emergenza.
+  - Se è abilitata la conformità del server Chat persistente, sono necessarie altre tre istanze di database dedicate. La distribuzione è identica a quella descritta in precedenza per il database di chat persistente. Sebbene sia possibile che il database di conformità condivida la stessa istanza di SQL Server del database di chat persistente, è consigliabile disporre di istanze autonome per la disponibilità elevata e il ripristino di emergenza.
 
-  - Una condivisione file deve essere creata e designata per i registri delle transazioni di log di SQL Server. Tutti i server SQL in entrambi i centri dati che eseguono database di chat permanenti devono avere accesso in lettura/scrittura alla condivisione file. Questa condivisione non è definita come parte di un ruolo di filestore.
+  - È necessario creare una condivisione file e designarla per i log delle transazioni di log shipping di SQL Server. Tutti i server SQL in entrambi i data center che eseguono i database di Persistent Chat devono avere accesso in lettura/scrittura alla condivisione di file. Tale condivisione non è definita come parte di un ruolo FileStore.
 
-  - Una condivisione file nel server di database secondario per fungere da cartella di destinazione per i registri delle transazioni di SQL Server copiati dalla condivisione file del server principale.
+  - Una condivisione file nel server di database secondario che funge da cartella di destinazione per i registri delle transazioni di SQL Server che vengono copiati dalla condivisione file del server primario.
 
 <div>
 
 
 > [!NOTE]  
-> I server di chat permanenti attivi in un pool di server di chat persistente devono trovarsi nello stesso fuso orario del pool di Lync hop successivo definito nella topologia.
+> I server di chat persistente attivi in un pool di server Chat persistente devono risiedere nello stesso fuso orario del pool di Lync hop successivo definito nella topologia.
 
 
 
 </div>
 
-Le figure seguenti illustrano come configurare l'intero pool di server di chat persistente nelle due topologie di pool estese diverse:
+Nelle figure seguenti vengono forniti esempi di come è possibile configurare l'intero pool di server Chat persistente nelle due topologie di pool estese diverse:
 
-  - Pool di server di chat persistente allungato quando i Data Center sono ubicati geograficamente con larghezza di banda elevata/bassa latenza.
+  - Pool di server Persistent Chat esteso quando i data center sono georilevati con un'elevata larghezza di banda e una bassa latenza.
 
-  - Pool di server di chat persistente allungato quando i Data Center sono ubicati geograficamente con larghezza di banda ridotta/alta latenza.
+  - Pool di server Persistent Chat esteso quando i data center sono georilevati con una bassa larghezza di banda e un'elevata latenza.
 
-La figura seguente mostra una topologia di pool di server di chat persistente allungata in cui i centri dati sono ubicati geograficamente con larghezza di banda elevata/bassa
+Nella figura seguente viene illustrata una topologia del pool di server Chat persistente estesa in cui i Data Center sono geolocalizzati con elevata larghezza di banda e bassa latenza.
 
-**Pool di server di chat persistente allungato quando i Data Center sono ubicati geograficamente con larghezza di banda elevata/bassa latenza.**
+**Pool di server Persistent Chat esteso quando i data center sono georilevati con un'elevata larghezza di banda e una bassa latenza.**
 
-![Esame della configurazione HBW del pool di server Chat persistente](images/JJ205211.55d10910-c824-41e6-bed2-08d13a2abd65(OCS.15).jpg "Esame della configurazione HBW del pool di server Chat persistente")
+![Esame di configurazione del pool di server Chat persistente HBW](images/JJ205211.55d10910-c824-41e6-bed2-08d13a2abd65(OCS.15).jpg "Esame di configurazione del pool di server Chat persistente HBW")
 
-La figura seguente mostra una topologia di pool di server di chat persistente allungata in cui i centri dati sono ubicati geograficamente con larghezza di banda ridotta/elevata.
+Nella figura seguente viene illustrata una topologia del pool di server Chat persistente estesa in cui i Data Center sono geolocalizzati con una bassa larghezza di banda e un'elevata latenza
 
-**Pool di server di chat persistente allungato quando i Data Center sono ubicati geograficamente con larghezza di banda ridotta/alta latenza.**
+**Pool di server Persistent Chat esteso quando i data center sono georilevati con una bassa larghezza di banda e un'elevata latenza.**
 
-![Esame della configurazione LBW del pool di server Chat persistente](images/JJ205211.586b0a3a-3767-4991-944f-ee54389512aa(OCS.15).jpg "Esame della configurazione LBW del pool di server Chat persistente")
+![Esame di configurazione del pool di server Chat persistente LBW](images/JJ205211.586b0a3a-3767-4991-944f-ee54389512aa(OCS.15).jpg "Esame di configurazione del pool di server Chat persistente LBW")
 
 </div>
 

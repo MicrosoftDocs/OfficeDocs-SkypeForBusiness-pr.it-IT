@@ -12,16 +12,16 @@ ms:contentKeyID: 48183918
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 994a1395363c28976c8bbfe325edae99e97cdc48
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d2070d9e977a730b7c667a2c49a7e896d1309eef
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725186"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045098"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,60 +35,60 @@ ms.locfileid: "41725186"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-10-28_
+_**Ultimo argomento modificato:** 2013-10-28_
 
-I server perimetrali possono essere configurati per consentire agli utenti interni e esterni di accedere ai contatti presso organizzazioni o servizi partner. Le federazioni, dato che questi accordi con i partner sono note, possono eseguire una o tutte le operazioni seguenti ai contatti dell'organizzazione nella Federazione partner o nei contatti della Federazione partner:
+I server perimetrali possono essere configurati in modo da consentire agli utenti interni ed esterni di accedere ai contatti in organizzazioni o servizi partner. Le federazioni, ovvero questi accordi tra partner, possono rendere disponibile qualsiasi contatto dell'organizzazione alla federazione partner e viceversa:
 
   - Messaggistica istantanea e presenza
 
-  - Collaborazione e conferenze, ad esempio-Web Conferencing
+  - Collaborazione e servizi di conferenza, ad esempio Web Conferencing
 
-  - Servizi di conferenza audio, videoconferenza o entrambi
+  - Conferenze audio, video o entrambe
 
-In alcuni casi, la comunicazione, ad esempio messaggistica istantanea e presenza tra un Microsoft Lync Server 2013 e un contatto XMPP (Extensible Messaging and Presence Protocol), è solo peer-to-peer: supporta solo l'utente e il contatto presso la federati partner. In altri casi, ad esempio un server Lync, Lync Server 2010 alla federazione Lync Server 2013, è possibile invitare più partecipanti a partecipare alla conversazione.
+In alcuni casi, la comunicazione, ad esempio la messaggistica istantanea e la presenza tra un contatto Microsoft Lync Server 2013 e un protocollo XMPP (Extensible Messaging and Presence Protocol), è solo di supporto peer-to-peer-che supporta solo l'utente e il contatto a livello federato. partner. In altri casi, ad esempio Lync Server, Lync Server 2010 alla federazione Lync Server 2013, è possibile invitare più partecipanti a partecipare alla conversazione.
 
 <div>
 
-## <a name="lync-server-and-office-communications-server-federation"></a>Lync Server e Office Communications Server Federation
+## <a name="lync-server-and-office-communications-server-federation"></a>Federazione di Lync Server e Office Communications Server
 
-La Federazione tra Microsoft Lync Server 2013, Lync Server 2010 e Office Communications Server supporta le comunicazioni peer-to-peer e multiparty. Le conversazioni peer-to-peer possono essere Escalate in conversazioni multiparte, consentendo riunioni ad hoc. Riunioni-conferenza Web o conferenze audio/visive-può essere programmato per includere i contatti all'interno dell'organizzazione e i contatti nei partner con cui si federa.
+La Federazione tra Microsoft Lync Server 2013, Lync Server 2010 e Office Communications Server supporta le comunicazioni peer-to-peer e multi-party. È possibile effettuare l'escalation delle conversazioni peer-to-peer a conversazioni tra più parti, consentendo l'esecuzione di riunioni ad hoc. Le riunioni, che possono essere conferenze Web o conferenze audio/video, possono essere pianificate in modo da includere contatti all'interno dell'organizzazione e contatti partner con cui si attua la federazione.
 
-La Federazione è stata pubblicata per la prima volta in Microsoft Office Live Communications Server 2005 e ha supportato un tipo di federazione, Direct Federation. Direct Federation richiede di conoscere il dominio SIP (Session Initiation Protocol) del partner federativo e il nome di dominio completo (FQDN) del server Edge del partner. In Live Communications Server 2005 con SP1 sono stati introdotti altri tipi di federazione, tutti i quali sono necessari record SRV DNS (Domain Name System) che devono essere pubblicati dal partner federativo per individuare il proprio Edge Server. La terminologia relativa a tale versione è stata:
+La Federazione è stata introdotta per la prima volta in Microsoft Office Live Communications Server 2005 e ha supportato un tipo di federazione, Direct Federation. Direct Federation richiede di conoscere il dominio SIP (Session Initiation Protocol) del partner federativo e il nome di dominio completo (FQDN) del server perimetrale del partner. In Live Communications Server 2005 con SP1 sono stati introdotti altri tipi di federazione, tutti i quali sono necessari record SRV DNS (Domain Name System) che devono essere pubblicati dal partner federato per individuare il server perimetrale. La terminologia relativa a tale versione è stata la seguente:
 
-  - *Aprire la federazione avanzata*: accettare qualsiasi nome di dominio SIP e usare DNS SRV per individuare il server Edge partner
+  - *Aprire Federazione avanzata*: accettare qualsiasi nome di dominio SIP e utilizzare DNS SRV per individuare il server perimetrale partner
 
-  - *Federazione avanzata*: configurare il nome di dominio SIP del partner come partner federativo per l'organizzazione e usare DNS SRV per trovare il server Edge partner
+  - *Federazione avanzata*: configurare il nome di dominio SIP del partner come partner federativo per l'organizzazione e utilizzare DNS SRV per trovare il server perimetrale del partner
 
   - *Federazione diretta*: configurare il nome di dominio SIP del partner e l'FQDN nel server perimetrale del partner
 
-  - *Elenco Consenti server*: accettare qualsiasi dominio, usare DNS SRV per trovare il server perimetrale di un provider di hosting o di un provider di connettività messaggistica istantanea pubblica
+  - *Elenco Consenti server*: accettare qualsiasi dominio, utilizzare DNS SRV per individuare il server perimetrale di un provider di hosting o di un provider di connettività per la messaggistica istantanea pubblica
 
-Microsoft Office Communications Server 2007 ha introdotto la denominazione aggiornata per i tipi di federazione per definire in modo più efficace il risultato di ogni tipo di Federazione:
+Microsoft Office Communications Server 2007 ha introdotto la denominazione aggiornata per i tipi di federazione per definire meglio ciò che ogni tipo di Federazione ha effettivamente ottenuto:
 
-  - Aprire la federazione avanzata divenne nota come *dominio del partner individuato*
+  - La federazione avanzata aperta è stata denominata *dominio individuato del partner*.
 
-  - La federazione avanzata divenne nota come *dominio del partner consentito*
+  - La federazione avanzata è stata denominata *dominio partner consentito*.
 
-  - La Federazione diretta divenne nota come *server partner consentiti*
+  - La federazione diretta è stata denominata *server partner consentito*.
 
-  - L'elenco dei server consentiti divenne noto come *provider di hosting* e *provider di messaggistica istantanea pubblica*
+  - L'elenco dei server consentiti è stato denominato *provider di hosting* e *provider di servizi di messaggistica istantanea pubblica*.
 
-Microsoft Lync Server 2010 ha introdotto una definizione più ristretta del provider di hosting in conformità con Microsoft Lync Online 2010 e Microsoft Office 365 e lo ha anche reso soggetto allo stesso elenco consentiti definito dal tipo di Federazione del dominio partner consentito.
+Microsoft Lync Server 2010 ha introdotto una definizione più restrittiva del provider di hosting in conformità con Microsoft Lync Online 2010 e Microsoft Office 365 e ha anche reso soggetto allo stesso elenco consentito definito dal tipo di Federazione del dominio del partner consentito.
 
-L'abilitazione della Federazione tra Microsoft Lync Server 2013, Lync Server 2010 e Office Communications Server usa gli Edge Server e i proxy inversi per applicare le regole e i domini partner consentiti che si definiscono. Da un punto di vista della pianificazione, la Federazione con altri server Lync, Office Communications Server richiede quanto segue:
+L'abilitazione della Federazione tra Microsoft Lync Server 2013, Lync Server 2010 e Office Communications Server utilizza i server perimetrali e i proxy inversi per applicare le regole e i domini partner consentiti definiti. Da un punto di vista della pianificazione, la Federazione con altri Lync Server, Office Communications Server richiede quanto segue:
 
-  - Abilitare la Federazione in Generatore di topologie. Per informazioni dettagliate, vedere l'argomento sulla distribuzione [configurazione della Federazione SIP, della Federazione XMPP e della messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-configuring-sip-federation-xmpp-federation-and-public-instant-messaging.md).
+  - Abilitare la federazione in Generatore di topologie. Per informazioni dettagliate, vedere la sezione relativa alla distribuzione di [federazione SIP, Federazione XMPP e messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-configuring-sip-federation-xmpp-federation-and-public-instant-messaging.md).
 
-  - Determinare i requisiti per l'individuazione di domini federati:
+  - Determinare i propri requisiti per l'individuazione del dominio federato:
     
       - <span></span>  
-        Per la configurazione manuale della Federazione, è necessario avere il nome di dominio completo (FQDN) del server perimetrale e del nome di dominio del partner oppure il nome di dominio online, che viene immesso nel pannello di controllo di Lync Server, nella **Federazione e nell'accesso esterno**, i **domini federati SIP**. Creare un **nuovo** criterio o **modificare** un criterio esistente per consentire o bloccare i domini in base al nome di dominio completo.
+        Per la configurazione manuale della Federazione, è necessario disporre del nome di dominio completo (FQDN) del server perimetrale e del nome di dominio del partner oppure del nome di dominio online, immesso nel pannello di controllo di Lync Server, nella **Federazione e nell'accesso esterno**, ovvero nei **domini federati SIP**. Creare nuovi criteri facendo clic su **Nuovo** oppure modificare criteri esistenti facendo clic su **Modifica** in modo da consentire o bloccare i domini in base all'FQDN.
         
         <div>
         
 
         > [!WARNING]
-        > La configurazione manuale di un Edge Server del partner federativo è soggetta a un errore se il partner cambia l'indirizzo IP del server perimetrale.
+        > La configurazione manuale del server perimetrale di un partner federativo è soggetta a un errore nel caso in cui il partner modifichi l'indirizzo IP del server perimetrale.
 
         
         </div>
@@ -97,56 +97,56 @@ L'abilitazione della Federazione tra Microsoft Lync Server 2013, Lync Server 201
         
 
         > [!NOTE]
-        > Per i <STRONG>nuovi domini federati SIP</STRONG>, è necessario specificare il <STRONG>nome di dominio (o FQDN)</STRONG> per Microsoft Lync Online, Microsoft Office 365. Per Microsoft Lync Server 2013, Lync Server 2010 e Office Communications Server è necessario specificare anche un <STRONG>servizio di Access Edge (FQDN)</STRONG>
+        > Per i <STRONG>nuovi domini federati SIP</STRONG>, è necessario fornire il <STRONG>nome di dominio (o FQDN)</STRONG> per Microsoft Lync Online, Microsoft Office 365. Per Microsoft Lync Server 2013, Lync Server 2010 e Office Communications Server è inoltre necessario fornire un <STRONG>servizio Access Edge (FQDN)</STRONG>
 
         
         </div>
     
       - <span></span>  
-        Per la Federazione partner scoperta, in cui i partner possono individuare l'Edge Server, è possibile creare un record SRV nel \_DNS esterno-sipfederationtls. \_TCP.contoso.com-che punta alla porta 5061 e al record host (a) del server perimetrale
+        Per la Federazione partner individuata, in cui i partner possono individuare il server perimetrale, è necessario creare un record \_SRV nel DNS esterno-sipfederationtls. \_TCP.contoso.com – che punta alla porta 5061 e al record host (A) del server perimetrale
         
         <div>
         
 
         > [!IMPORTANT]
-        > Se si supportano i client Microsoft Lync Mobile su Windows Phone o Apple iPhone, iPad o altri dispositivi Apple e si usa il servizio di notifica push o il servizio di notifica push, è necessario pianificare _sipfederationtls. _tcp. &lt;SIP Domain&gt; record SRV per ogni dominio SIP in cui sono presenti client mobili Lync. Android e Nokia Symbian Lync mobile non usano la notifica push e non sono soggetti a questo requisito.
+        > Se si supportano client Microsoft Lync Mobile su Windows Phone o Apple iPhone, iPad o altri dispositivi Apple e si utilizza il servizio di notifica push o di notifica push, è necessario pianificare _sipfederationtls. _tcp. &lt;Record SRV&gt; di dominio SIP per ogni dominio SIP di cui si dispone di client mobili di Lync. Android e Nokia Symbian Lync mobile non utilizzano la notifica push e non sono soggetti a questo requisito.
 
         
         </div>
 
-  - Configurare i criteri di accesso degli utenti esterni per supportare i domini federati
+  - Configurare criteri di accesso utenti esterni per il supporto dei domini federati.
 
-  - Aprire le porte del firewall per SIP (Session Initiation Protocol), Web Conferencing e Audio/Visual per supportare la Federazione o i contatti che si stanno abilitando. Per informazioni dettagliate, vedere: [determinare i requisiti per il firewall e la porta esterni a/V per Lync Server 2013](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md)
+  - Aprire le porte del firewall per il protocollo SIP (Session Initiation Protocol), le conferenze Web e le conferenze audio/video per supportare la federazione o i contatti abilitati. Per informazioni dettagliate, vedere: [determinare i requisiti di porte e firewall a/V esterni per Lync Server 2013](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md)
 
-Le informazioni seguenti ti aiuteranno a definire i requisiti di certificato, porta/protocollo e DNS per la Federazione con Microsoft Lync Server 2013 e Lync Server 2010.
+Le informazioni seguenti consentono di definire il certificato, il protocollo e i requisiti DNS per la Federazione con Microsoft Lync Server 2013 e Lync Server 2010.
 
-La pianificazione per i certificati, i requisiti per il firewall e la porta/protocollo e i requisiti DNS è in genere un processo semplice se si è pianificato o distribuito i server Edge di Microsoft Lync Server 2013. Dato che Federation è una funzionalità aggiuntiva che usa il server perimetrale esistente, i requisiti di pianificazione vengono in genere soddisfatti dalla pianificazione e distribuzione di Edge Server. È consigliabile usare le tabelle seguenti per determinare che i requisiti sono soddisfatti e apportare le modifiche in porta/protocollo e DNS di conseguenza.
+La pianificazione per i certificati, i requisiti del firewall e del protocollo di trasporto e i requisiti DNS è in genere un processo diretto se sono stati pianificati o distribuiti i server perimetrali di Microsoft Lync Server 2013. Poiché la Federazione è una funzionalità aggiuntiva che utilizza il server perimetrale esistente, i requisiti di pianificazione vengono in genere soddisfatti dalla pianificazione e dalla distribuzione del server perimetrale. È consigliabile utilizzare le tabelle seguenti per verificare che i requisiti vengano soddisfatti e apportare eventuali modifiche a porte/protocolli e DNS in base alle esigenze.
 
 <div>
 
 
 > [!IMPORTANT]
-> Se si dispone di un pool di Edge Server e si esegue la Federazione con i partner di Lync Server 2013 o Lync Server 2010, è possibile usare i dispositivi di bilanciamento del carico DNS o di bilanciamento del carico hardware sui lati interni ed esterni degli Edge Server. Se si esegue la Federazione con Office Communications Server 2007 o Office Communications Server 2007 R2, il bilanciamento del carico hardware fornirà il supporto per il failover in caso di un server perimetrale. Office Communications Server 2007 e Office Communications Server 2007 R2 non supportano il bilanciamento del carico DNS. I server Edge partner stabiliscono le comunicazioni con il primo Edge Server nel pool che risponde. Se il server perimetrale non riesce, la comunicazione non esegue automaticamente il failover.
+> Se si dispone di un pool di server perimetrali e si esegue la Federazione con i partner di Lync Server 2013 o Lync Server 2010, è possibile utilizzare il bilanciamento del carico DNS o i dispositivi di bilanciamento del carico hardware sui lati interni ed esterni dei server perimetrali. Se si sta effettuando la Federazione con Office Communications Server 2007 o Office Communications Server 2007 R2, il bilanciamento del carico hardware fornirà supporto per il failover nel caso di un server perimetrale. Office Communications Server 2007 e Office Communications Server 2007 R2 non sono compatibili con il bilanciamento del carico DNS. I server perimetrali partner stabiliranno la comunicazione con il primo server perimetrale del pool che risponde. Se il server perimetrale ha esito negativo, la comunicazione non esegue automaticamente il failover.
 
 
 
 </div>
 
-I requisiti di certificato vengono in genere soddisfatti tramite la pianificazione di certificati per il piano server Edge o pooled Edge scelto.
+I requisiti dei certificati vengono in genere soddisfatti tramite la pianificazione di certificati per il server perimetrale o il piano server perimetrale scelto.
 
 </div>
 
 <div>
 
-## <a name="public-instant-messaging-connectivity"></a>Connettività di messaggistica istantanea pubblica
+## <a name="public-instant-messaging-connectivity"></a>Connettività per messaggistica istantanea pubblica
 
-La connettività di messaggistica istantanea pubblica è una classe di federazione ed è configurata per consentire agli utenti interni ed esterni di Lync Server 2013 di aggiungere contatti da una delle opzioni seguenti:
+La connettività per la messaggistica istantanea pubblica è una classe di federazione ed è configurata per consentire agli utenti interni ed esterni di Lync Server 2013 di aggiungere contatti da uno dei seguenti elementi:
 
   - Contatti di Messenger
 
   - Yahoo\! contatti
 
-  - Contatti di America Online (AOL)
+  - Contatti di AOL (America Online)
 
 <div>
 
@@ -154,39 +154,39 @@ La connettività di messaggistica istantanea pubblica è una classe di federazio
 > [!IMPORTANT]
 > <UL>
 > <LI>
-> <P>A partire dal 1 ° settembre 2012, la licenza di abbonamento a Microsoft Lync Public IM Connectivity User (PIC USL) non è più disponibile per l'acquisto di contratti nuovi o rinnovati. I clienti con licenze attive saranno in grado di continuare a eseguire la Federazione con Yahoo! Messenger fino alla data di chiusura del servizio (la data esatta deve ancora essere decisa, ma non prima del 2013 giugno).</P>
+> <P>Al 1 ° settembre 2012, la licenza di sottoscrizione a Microsoft Lync Public IM Connectivity (PIC USL) non è più disponibile per l'acquisto dei contratti nuovi o rinnovati. I clienti con licenze attive saranno in grado di continuare a eseguire la Federazione con Yahoo! Messenger fino alla data di arresto del servizio (la data esatta deve ancora essere decisa, ma non prima del giugno 2013).</P>
 > <LI>
-> <P>Il PIC USL è una licenza per abbonamento per utente, per mese necessaria per la Federazione di Lync Server o Office Communications Server con Yahoo! Messenger. La capacità di Microsoft di prestare questo servizio è stata subordinata al supporto da Yahoo!, l'accordo sottostante per il quale non verrà rinnovato.</P>
+> <P>Il PIC USL è una licenza di sottoscrizione per utente, per mese, necessaria per la Federazione di Lync Server o Office Communications Server con Yahoo! Messaggero. La capacità di Microsoft di fornire questo servizio è stata subordinata al supporto da Yahoo!, ovvero il contratto sottostante per il quale non verrà rinnovato.</P>
 > <LI>
-> <P>Più che mai, Lync è uno strumento efficace per la connessione tra le organizzazioni e gli utenti di tutto il mondo. La Federazione con Windows Live Messenger non richiede licenze aggiuntive per utenti e dispositivi oltre la licenza CAL standard di Lync. La Federazione Skype verrà aggiunta a questo elenco, consentendo agli utenti di Lync di raggiungere centinaia di milioni di persone tramite messaggistica istantanea e voce.</P></LI></UL>
+> <P>Più che mai, Lync è uno strumento potente per la connessione tra le organizzazioni e gli utenti di tutto il mondo. La Federazione con Windows Live Messenger non richiede licenze aggiuntive per utenti e dispositivi oltre la licenza CAL standard di Lync. La Federazione Skype verrà aggiunta a questo elenco, consentendo agli utenti di Lync di raggiungere centinaia di milioni di persone attraverso la messaggistica istantanea e la voce.</P></LI></UL>
 
 
 
 </div>
 
-Questa classe di federazione richiede le seguenti considerazioni sulla pianificazione:
+Per questa classe di federazione è necessario tenere conto delle considerazioni seguenti per la pianificazione:
 
-  - Gli utenti di Windows Live Messenger possono avere comunicazioni audio/visive peer-to-peer con gli utenti di Lync Server 2013, oltre alla messaggistica istantanea. Gli Edge Server devono soddisfare requisiti specifici per la porta e il protocollo. Per informazioni dettagliate, vedere [determinare i requisiti del firewall e della porta a/V esterni per Lync Server 2013](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md).
+  - Gli utenti di Windows Live Messenger possono avere comunicazioni audio/visive peer-to-peer con gli utenti di Lync Server 2013, oltre alla messaggistica istantanea. I server perimetrali devono soddisfare requisiti specifici per le porte e i protocolli. Per informazioni dettagliate, vedere [Determine External a/V firewall and Port requirements for Lync Server 2013](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md).
 
-  - La messaggistica istantanea di Yahoo non ha requisiti univoci, ad eccezione di quelli usati in genere nella pianificazione e distribuzione del server perimetrale tipico che fornisce la Federazione.
+  - La messaggistica istantanea Yahoo non ha requisiti univoci, oltre a quelli utilizzati in genere nella pianificazione e nella distribuzione del server perimetrale tipico che fornisce la Federazione.
 
-  - America Online richiede che il certificato Edge Server assegnato al servizio Access Edge disponga di un utilizzo di chiave avanzata client (EKU).
+  - America Online richiede che il certificato del server perimetrale assegnato al servizio Access Edge disponga di un utilizzo chiave avanzato (EKU, client Enhanced Key Usage).
 
 </div>
 
 <div>
 
-## <a name="extensible-messaging-and-presence-protocol-xmpp-federation"></a>Federazione XMPP (Extensible Messaging and Presence Protocol)
+## <a name="extensible-messaging-and-presence-protocol-xmpp-federation"></a>Federazione del protocollo XMPP (Extensible Messaging and Presence Protocol)
 
-Le versioni precedenti di Lync Server e Office Communications Server fornivano un gateway XMPP (Extensible Messaging and Presence Protocol) che poteva essere distribuito come ruolo server distinto per consentire la Federazione con le distribuzioni XMPP. In Microsoft Lync Server 2013 la funzionalità XMPP può essere distribuita come caratteristica. La funzionalità XMPP viene installata in due parti: un proxy XMPP che viene eseguito nel server perimetrale e il gateway XMPP che viene eseguito nei server front-end.
+Le versioni precedenti di Lync Server e Office Communications Server fornivano un gateway XMPP (Extensible Messaging and Presence Protocol) che potrebbe essere distribuito come ruolo server separato per consentire la Federazione con le distribuzioni XMPP. In Microsoft Lync Server 2013, la funzionalità XMPP può essere distribuita come caratteristica. La funzionalità XMPP è installata in due parti: un proxy XMPP che viene eseguito nel server perimetrale e il gateway XMPP che viene eseguito nei Front End Server.
 
-La distribuzione e la configurazione di XMPP sono descritte in [distribuzione dell'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) si prevede di supportare XMPP nella propria organizzazione definendo le regole di porta e protocollo nel firewall, la configurazione dei certificati e l'aggiunta di record DNS. Gli argomenti seguenti in questa sezione riepilogano le informazioni che sarà necessario pianificare correttamente la Federazione XMPP per la distribuzione.
+La distribuzione e la configurazione di XMPP sono descritte in [Deploying External User Access in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) si prevede di supportare XMPP nell'organizzazione definendo le regole relative alle porte e ai protocolli del firewall, alla configurazione dei certificati e all'aggiunta di record DNS. Negli argomenti seguenti di questa sezione vengono riepilogate le informazioni necessarie per pianificare correttamente la Federazione XMPP per la distribuzione.
 
 <div>
 
 
 > [!IMPORTANT]
-> La funzionalità XMPP di Lync Server 2013 è testata e supportata da Microsoft per la Federazione della messaggistica istantanea con Google Talk. Per qualsiasi altro sistema XMPP, contattare il fornitore di terze parti per verificare che supportino la Federazione con Lync Server 2013 e per eventuali suggerimenti per la distribuzione o la risoluzione dei problemi.
+> La funzionalità XMPP di Lync Server 2013 è testata e supportata da Microsoft per la federazione di messaggistica istantanea con Google Talk. Per altri sistemi XMPP, contattare il fornitore di terze parti per verificare l'eventuale supporto della federazione con Lync Server 2013 e per indicazioni per la distribuzione o la risoluzione dei problemi.
 
 
 
@@ -196,7 +196,7 @@ La distribuzione e la configurazione di XMPP sono descritte in [distribuzione de
 
 
 > [!IMPORTANT]
-> La Federazione XMPP non è supportata per gli utenti che partecipano a Survivable Branch Appliance. Questo vale sia per vedere le informazioni sulla presenza che per scambiare messaggi di messaggistica istantanea.
+> La Federazione XMPP non è supportata per gli utenti ospitati in Survivable Branch Appliance. Ciò vale sia per la visualizzazione delle informazioni sulla presenza che per lo scambio di messaggi di messaggistica istantanea.
 
 
 
@@ -206,13 +206,13 @@ La distribuzione e la configurazione di XMPP sono descritte in [distribuzione de
 
 <div id="sectionSection3" class="section">
 
-Negli argomenti seguenti sono disponibili indicazioni per la definizione di certificati, porte del firewall e voci DNS per i tipi di scenari federativi supportati.
+Negli argomenti seguenti vengono fornite indicazioni per la definizione dei certificati, delle porte del firewall e delle voci DNS per i tipi di scenari di federazione supportati.
 
   - <span></span>  
     [Riepilogo del certificato-SIP, Federazione XMPP e messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-certificate-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
   - <span></span>  
-    [Riepilogo della porta-SIP, Federazione XMPP e messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-port-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+    [Riepilogo delle porte-SIP, Federazione XMPP e messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-port-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
   - <span></span>  
     [Riepilogo DNS-SIP, Federazione XMPP e messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md)
@@ -224,15 +224,15 @@ Negli argomenti seguenti sono disponibili indicazioni per la definizione di cert
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurare criteri per controllare l'accesso utente federato in Lync Server 2013](lync-server-2013-configure-policies-to-control-federated-user-access.md)  
+[Configurare criteri per controllare l'accesso degli utenti federati in Lync Server 2013](lync-server-2013-configure-policies-to-control-federated-user-access.md)  
 
 
 [Scenari per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-scenarios-for-external-user-access.md)  
 [Determinare i requisiti di porte e firewall A/V esterni per Lync Server 2013](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md)  
-[Determinare i requisiti di DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
+[Determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
 
 
-[Gestire la configurazione Access Edge per l'organizzazione in Lync Server 2013](lync-server-2013-manage-access-edge-configuration-for-your-organization.md)  
+[Gestire la configurazione di Access Edge per l'organizzazione in Lync Server 2013](lync-server-2013-manage-access-edge-configuration-for-your-organization.md)  
 [Gestire i domini federati SIP per l'organizzazione in Lync Server 2013](lync-server-2013-manage-sip-federated-domains-for-your-organization.md)  
 [Gestire i provider federati SIP per l'organizzazione in Lync Server 2013](lync-server-2013-manage-sip-federated-providers-for-your-organization.md)  
   

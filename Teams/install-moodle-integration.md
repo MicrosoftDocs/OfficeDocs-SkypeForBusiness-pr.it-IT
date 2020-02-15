@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 128e476447898e659961a27e071b992b6b802ebf
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: efb53e9b3299f45cd1abfabe508a55ca081a0b92
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836616"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045128"
 ---
 # <a name="installing-the-moodle-integration-with-microsoft-teams"></a>Installazione dell'integrazione di Moodle con Microsoft Teams
 
@@ -173,7 +173,7 @@ Dopo aver completato la distribuzione di risorse in Azure, è necessario configu
 
 Ora che il tuo bot è stato distribuito in Azure e configurato per comunicare con il tuo server Moodle, è il momento di distribuire l'app Microsoft teams. Per eseguire questa operazione, è possibile caricare il file manifesto scaricato dalla pagina impostazioni del plug-in di Office 365 Moodle nel passaggio precedente.
 
-Prima di installare l'app è necessario assicurarsi che le app esterne e sideload delle app siano abilitate. Per eseguire questa procedura, è possibile eseguire [le operazioni](https://docs.microsoft.com/en-us/MicrosoftTeams/admin-settings)seguenti. Dopo avere assicurato che le app esterne sono abilitate, puoi seguire la procedura seguente per distribuire la tua app.
+Prima di installare l'app è necessario assicurarsi che le app esterne e sideload delle app siano abilitate. Per eseguire questa procedura, è possibile eseguire [le operazioni](https://docs.microsoft.com/MicrosoftTeams/admin-settings)seguenti. Dopo avere assicurato che le app esterne sono abilitate, puoi seguire la procedura seguente per distribuire la tua app.
 
 1. Aprire Microsoft teams.
 2. Fare clic sull'icona dello **Store** nell'angolo in basso a sinistra della barra di spostamento.

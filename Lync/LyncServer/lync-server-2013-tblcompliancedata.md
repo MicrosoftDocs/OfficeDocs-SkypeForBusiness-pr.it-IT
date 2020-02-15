@@ -12,16 +12,16 @@ ms:contentKeyID: 48183308
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 48516f307a084d30fde06a03548119e0ada34d6a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 03f5a65b11c610849c5b9d031f24d236dcbcf332
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731506"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048507"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731506"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-tblComplianceData contiene gli eventi di conformità che non sono stati ancora elaborati dalla scheda conformità.
+tblComplianceData contiene gli eventi di conformità ancora non elaborati dall'adattatore di conformità.
 
 ### <a name="columns"></a>Colonne
 
@@ -57,13 +57,13 @@ tblComplianceData contiene gli eventi di conformità che non sono stati ancora e
 <tbody>
 <tr class="odd">
 <td><p>cmplEventID</p></td>
-<td><p>bigint e non null</p></td>
+<td><p>bigint, non null</p></td>
 <td><p>ID evento.</p></td>
 </tr>
 <tr class="even">
 <td><p>entryDate</p></td>
 <td><p>smalldatetime, not null</p></td>
-<td><p>Ora di inserimento (può essere lontano in futuro per cmplType = 9 perché la voce è solo un segnaposto in questo caso).</p></td>
+<td><p>Data/ora di inserimento (può essere molto lontana nel futuro per cmplType=9, poiché in tal caso la voce è solo un segnaposto).</p></td>
 </tr>
 <tr class="odd">
 <td><p>cmplType</p></td>
@@ -71,38 +71,38 @@ tblComplianceData contiene gli eventi di conformità che non sono stati ancora e
 <td><p>Tipo di evento di conformità:</p>
 <ul>
 <li><p>1: chat</p></li>
-<li><p>2: backchat</p></li>
+<li><p>2: dialogo della chat</p></li>
 <li><p>3: download di file</p></li>
 <li><p>4: caricamento di file</p></li>
-<li><p>9: trasferimento di file provvisorio</p></li>
-<li><p>10: eliminazione della chat (con Sostituisci)</p></li>
-<li><p>11: eliminazione chat</p></li>
+<li><p>9: trasferimento file provvisorio</p></li>
+<li><p>10: eliminazione della chat (con sostituzione)</p></li>
+<li><p>11: eliminazione della chat</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>cmplTime</p></td>
-<td><p>bigint e non null</p></td>
-<td><p>Indicatore di data e ora per l'evento.</p></td>
+<td><p>bigint, not null</p></td>
+<td><p>Data e ora dell'evento.</p></td>
 </tr>
 <tr class="odd">
 <td><p>cmplChannelUri</p></td>
-<td><p>nvarchar (255), not null</p></td>
+<td><p>nvarchar (255), non null</p></td>
 <td><p>URI (Uniform Resource Identifier) del canale.</p></td>
 </tr>
 <tr class="even">
 <td><p>cmplChatID</p></td>
 <td><p>bigint</p></td>
-<td><p>ID chat (corrispondente alla tabella tblChat. chatId).</p></td>
+<td><p>ID chat (corrispondente alla tabella tblChat.chatId).</p></td>
 </tr>
 <tr class="odd">
 <td><p>cmplUserID</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID principale del poster (corrispondente alla tabella tblPrincipal. prinID).</p></td>
+<td><p>ID entità di chi effettua l'invio (corrispondente alla tabella tblPrincipal.prinID).</p></td>
 </tr>
 <tr class="even">
 <td><p>cmplUserUri</p></td>
 <td><p>nvarchar (255), not null</p></td>
-<td><p>URI utente.</p></td>
+<td><p>URI dell'utente.</p></td>
 </tr>
 <tr class="odd">
 <td><p>cmplMessage</p></td>

@@ -1,5 +1,5 @@
 ---
-title: Configurazione delle impostazioni di Registrazione dettagli chiamata e Qualità percepita dagli utenti
+title: Configurazione delle impostazioni di registrazione dettagli chiamata e qualità delle esperienze
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183223
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 504c2221e9f8a3ef32e2cebbb792f5e03aef15c5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8382d95ebc1c90a46ab1edee8248b7892e297ea2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756340"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046239"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-call-detail-recording-and-quality-of-experience-settings-in-lync-server-2013"></a>Configurazione della registrazione dei dettagli delle chiamate e della qualità delle impostazioni dell'esperienza in Lync Server 2013
+# <a name="configuring-call-detail-recording-and-quality-of-experience-settings-in-lync-server-2013"></a>Configurazione delle impostazioni di registrazione dettagli chiamata e qualità delle esperienze in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41756340"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-17_
+_**Ultimo argomento modificato:** 2012-10-17_
 
-Dopo avere associato un archivio di monitoraggio con un pool Front-End, configurare l'archivio di monitoraggio e quindi installato e configurato SQL Server Reporting Services e monitoraggio dei report è possibile gestire la registrazione dei dettagli delle chiamate (CDR) e la qualità dell'esperienza (QoE) monitoraggio tramite Lync Server Management Shell. I cmdlet di Lync Server Management Shell consentono di abilitare e disabilitare il monitoraggio CDR e/o QoE per un determinato sito o per l'intera distribuzione di Lync Server. Questa operazione può essere eseguita con un comando semplice come questo:
+Dopo aver associato un archivio di monitoraggio a un pool Front End, impostare l'archivio di monitoraggio e quindi aver installato e configurato SQL Server Reporting Services e Monitoring report è possibile gestire la registrazione dettagli chiamata (CDR) e la qualità dell'esperienza (QoE) monitoraggio mediante Lync Server Management Shell. I cmdlet di Lync Server Management Shell consentono di abilitare e disabilitare il monitoraggio di CDR e/o QoE per un sito specifico o per l'intera distribuzione di Lync Server. che è possibile eseguire con un comando così semplice:
 
     Set-CsQoEConfiguration -Identity "global" -EnableQoE $False
 
-Quando si installa Microsoft Lync Server 2013, viene installata anche una raccolta predefinita di impostazioni di configurazione globali sia per CDR che per QoE. Nella tabella seguente sono illustrati i valori predefiniti per alcune delle impostazioni più comuni usate per la registrazione dei dettagli delle chiamate:
+Quando si installa Microsoft Lync Server 2013, verrà installata anche una raccolta predefinita di impostazioni di configurazione globali per CDR e QoE. I valori predefiniti di alcune delle impostazioni usate più di frequente da CDR sono mostrati nella tabella seguente:
 
 
 <table>
@@ -60,31 +60,31 @@ Quando si installa Microsoft Lync Server 2013, viene installata anche una raccol
 <tbody>
 <tr class="odd">
 <td><p>EnableCDR</p></td>
-<td><p>Indica se CDR è abilitato o meno. Se true, tutti i record CDR verranno raccolti e scritti nel database di monitoraggio.</p></td>
+<td><p>Indica se la registrazione dettagli chiamata è abilitata o meno. Se è impostata su True, tutti i record CDR verranno raccolti e scritti nel database di monitoraggio.</p></td>
 <td><p>True</p></td>
 </tr>
 <tr class="even">
 <td><p>EnablePurging</p></td>
-<td><p>Indica se i record CDR verranno eliminati periodicamente dal database. Se true, i record verranno eliminati dopo il periodo di tempo specificato dalle proprietà KeepCallDetailForDays (per i record CDR) e KeepErrorReportForDays (per gli errori CDR). Se false, i record CDR verranno mantenuti indefinitamente.</p></td>
+<td><p>Indica se i record CDR verranno eliminati periodicamente dal database. Se è impostata su True, i record verranno eliminati dopo il periodo di tempo specificato dalle proprietà KeepCallDetailForDays (per record CDR) e KeepErrorReportForDays (per errori CDR). Se False, i record verranno mantenuti indefinitamente.</p></td>
 <td><p>True</p></td>
 </tr>
 <tr class="odd">
 <td><p>KeepCallDetailForDays</p></td>
-<td><p>Indica il numero di giorni in cui i record CDR verranno conservati nel database. tutti i record antecedenti al numero di giorni specificato verranno eliminati automaticamente. Tuttavia, questo problema si verificherà solo se l'eliminazione è stata abilitata.</p>
-<p>KeepCallDetailForDays può essere impostato su un valore intero compreso tra 1 e 2562 giorni (circa 7 anni).</p></td>
+<td><p>Indica il numero di giorni per cui i record CDR verranno mantenuti nel database. Qualsiasi record che ha superato il numero di giorni specificato verrà eliminato automaticamente, ma solo se l'eliminazione è stata abilitata.</p>
+<p>KeepCallDetailForDays può essere impostato su qualsiasi valore intero compreso tra 1 e 2562 giorni (circa 7 anni).</p></td>
 <td><p>60 giorni</p></td>
 </tr>
 <tr class="even">
 <td><p>KeepErrorReportForDays</p></td>
-<td><p>Indica il numero di giorni in cui vengono mantenuti i report di errore CDR; tutti i report antecedenti al numero di giorni specificato verranno eliminati automaticamente. I report di errore CDR sono report di diagnostica caricati da applicazioni client come Microsoft Lync 2013.</p>
-<p>Puoi impostare questa proprietà su qualsiasi valore intero compreso tra 1 e 2562 giorni.</p></td>
+<td><p>Indica il numero di giorni in cui vengono mantenuti i report di errore di registrazione dettagli chiamata. gli eventuali rapporti precedenti al numero di giorni specificato verranno eliminati automaticamente. I report di errore CDR sono rapporti di diagnostica caricati da applicazioni client quali Microsoft Lync 2013.</p>
+<p>È possibile impostare questa proprietà su qualsiasi valore intero compreso tra 1 e 2562 giorni.</p></td>
 <td><p>60 giorni</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Allo stesso modo, i valori predefiniti per le impostazioni QoE selezionate sono illustrati in questa tabella:
+Analogamente, i valori predefiniti per le impostazioni QoE selezionate vengono mostrati nella tabella seguente:
 
 
 <table>
@@ -103,17 +103,17 @@ Allo stesso modo, i valori predefiniti per le impostazioni QoE selezionate sono 
 <tbody>
 <tr class="odd">
 <td><p>EnableQoE</p></td>
-<td><p>Indica se è abilitato il monitoraggio QoE. Se true, tutti i record QoE verranno raccolti e scritti nel database di monitoraggio.</p></td>
+<td><p>Indica se il monitoraggio QoE è abilitato. Se impostata su True, tutti i record QoE verranno raccolti e scritti nel database di monitoraggio.</p></td>
 <td><p>True</p></td>
 </tr>
 <tr class="even">
 <td><p>EnablePurging</p></td>
-<td><p>Indica se i record QoE verranno eliminati periodicamente dal database. Se true, i record verranno eliminati dopo il periodo di tempo specificato dalla proprietà KeepQoEDataForDays. Se false, i record QoE verranno mantenuti indefinitamente.</p></td>
+<td><p>Indica se i record QoE verranno eliminati periodicamente dal database. Se è impostata su True, i record verranno eliminati dopo il periodo di tempo specificato dalle proprietà KeepQoEDataForDays. Se False, i record QoE verranno mantenuti indefinitamente.</p></td>
 <td><p>True</p></td>
 </tr>
 <tr class="odd">
 <td><p>KeepQoEDataForDays</p></td>
-<td><p>Indica il numero di giorni in cui i record QoE verranno conservati nel database; tutti i record antecedenti al numero di giorni specificato verranno eliminati automaticamente. Tuttavia, questo problema si verificherà solo se l'eliminazione è stata abilitata.</p>
+<td><p>Indica il numero di giorni per cui i record QoE verranno mantenuti nel database. Qualsiasi record che ha superato il numero di giorni specificato verrà eliminato automaticamente, ma solo se l'eliminazione è stata abilitata.</p>
 <p>KeepCallDetailForDays può essere impostato su qualsiasi valore intero compreso tra 1 e 2562 giorni.</p></td>
 <td><p>60 giorni</p></td>
 </tr>
@@ -121,29 +121,29 @@ Allo stesso modo, i valori predefiniti per le impostazioni QoE selezionate sono 
 </table>
 
 
-Se è necessario modificare queste impostazioni globali, è possibile usare i cmdlet Set-CsCdrConfiguration e Set-CsQoEConfiguration. Ad esempio, questo comando (eseguito da Lync Server Management Shell) Disabilita il monitoraggio CDR nell'ambito globale; Questa operazione viene eseguita impostando la proprietà EnableCDR su false ($False):
+Per modificare queste impostazioni globali, utilizzare i cmdlet Set-CsCdrConfiguration e Set-CsQoEConfiguration. Ad esempio, questo comando, eseguito entro Lync Server Management Shell, consente di disabilitare il monitoraggio CDR a livello di ambito globale. Per ottenere questo risultato, la proprietà EnableCDR viene impostata su False ($False):
 
     Set-CsCdrConfiguration -Identity "global" -EnableCDR $False
 
-Tieni presente che la disabilitazione del monitoraggio non dissocia l'archivio di monitoraggio dal pool Front-End, né Disinstalla o influisce in altro modo sul database di monitoraggio del backend. Quando si usa Lync Server Management Shell per disabilitare il monitoraggio CDR o QoE, è possibile interrompere temporaneamente il server Lync dalla raccolta e dall'archiviazione dei dati di monitoraggio. Se si vuole riprendere, in questo caso, la raccolta e l'archiviazione dei dati CDR, è sufficiente impostare la proprietà EnableCDR su true ($True):
+Si noti che la disabilitazione del monitoraggio non annulla l'associazione dell'archivio di monitoraggio dal pool Front End e non disinstallerà o influirà in alcun modo sul database di monitoraggio back-end. Quando si utilizza Lync Server Management Shell per disabilitare il monitoraggio CDR o QoE, tutto ciò che è effettivamente possibile è arrestare temporaneamente Lync Server dalla raccolta e dall'archiviazione dei dati di monitoraggio. Se, in questo caso, si desidera riprendere la raccolta e l'archiviazione di dati CDR, è sufficiente impostare di nuovo la proprietà EnableCDR su True ($True):
 
     Set-CsCdrConfiguration -Identity "global" -EnableCDR $True
 
-Analogamente, questo comando Disabilita l'eliminazione dei record QoE nell'ambito globale:
+Analogamente, questo comando disabilita l'eliminazione dei record QoE a livello di ambito globale:
 
     Set-CsQoEConfiguration -Identity "global" -EnablePurging $False
 
-Oltre alle impostazioni globali, le impostazioni delle configurazioni CDR e QoE possono essere assegnate all'ambito del sito. In questo caso è disponibile un'ulteriore flessibilità di gestione per il monitoraggio. ad esempio, un amministratore può abilitare il monitoraggio CDR per il sito Redmond, ma disabilitare il monitoraggio CDR per il sito di Dublino. Per creare nuove impostazioni di configurazione CDR nell'ambito del sito, usare un comando simile al seguente:
+Oltre alle impostazioni globali, le impostazioni di configurazione di CDR e QoE possono essere assegnate all'ambito del sito. Ciò offre una maggiore flessibilità a livello di gestione per il monitoraggio. Ad esempio, un amministratore può abilitare il monitoraggio CDR per il sito di Redmond ma disabilitarlo per il sito di Dublino. Per creare nuove impostazioni di configurazione CDR a livello di ambito di sito, utilizzare un comando simile a questo:
 
     New-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $False
 
-Tieni presente che le impostazioni configurate nell'ambito del sito hanno la precedenza sulle impostazioni configurate nell'ambito globale. Supponiamo ad esempio che il monitoraggio CDR sia abilitato nell'ambito globale, ma disabilitato nell'ambito del sito (per il sito Redmond). Ciò significa che le informazioni relative alla registrazione dei dettagli delle chiamate non verranno archiviate per gli utenti nel sito Redmond. Tuttavia, gli utenti di altri siti, ovvero gli utenti gestiti dalle impostazioni globali anziché dalle impostazioni del sito Redmond, riceveranno le informazioni di registrazione dei dettagli delle chiamate archiviate.
+È necessario ricordare che le impostazioni configurate a livello di ambito di sito hanno priorità maggiore rispetto alle impostazioni configurate a livello di ambito globale. Ad esempio, si supponga che il monitoraggio CDR sia abilitato a livello di ambito globale, ma disabilitato a livello di ambito di sito (per il sito di Redmond). Le informazioni sulle registrazioni dettagli chiamata non verranno quindi archiviate per gli utenti del sito di Redmond, ma verranno archiviate per gli utenti di altri siti, ovvero utenti gestiti dalle impostazioni globali invece che dalle impostazioni de sito di Redmond.
 
-Le nuove impostazioni di configurazione QoE possono essere create nell'ambito del sito usando un comando come questo:
+Nuove impostazioni di configurazione QoE possono essere create a livello di ambito di sito utilizzando un comando simile a questo:
 
     New-CsQoEConfiguration -Identity "site:Redmond" -KeepQoEDataForDays 15
 
-Per altre informazioni, digitare i comandi seguenti all'interno di Lync Server Management Shell:
+Per ulteriori informazioni, digitare i comandi seguenti dall'interno di Lync Server Management Shell:
 
     Get-Help New-CsCdrConfiguration | more
     Get-Help Set-CsCdrConfiguration | more

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione degli annunci'
+title: 'Lync Server 2013: pianificazione degli annunci'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185706
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3cd5a537b31b36c7a55f19ac476bb5d4c0fde93c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d9adaeba6e26cb01a7c7aa8c2a1fb3f7ce955b6a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725626"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050758"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41725626"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-13_
+_**Ultimo argomento modificato:** 2012-09-13_
 
-L'applicazione di annuncio di Lync Server consente di configurare la gestione delle chiamate in arrivo quando il numero di telefono è valido per l'organizzazione, ma non viene assegnato a un utente o a un telefono. È possibile trasferire queste chiamate a una destinazione predeterminata (numero di telefono, URI SIP o segreteria telefonica) oppure riprodurre un annuncio audio o entrambi. L'applicazione di annuncio consente di evitare le situazioni in cui un chiamante effettua una chiamata errata e sente un tono di occupato o il client SIP riceve un messaggio di errore. Questa sezione include informazioni sulla pianificazione specifiche dell'applicazione di annuncio.
+L'applicazione Annuncio di Lync Server consente di configurare la gestione delle chiamate telefoniche in arrivo quando il numero composto è valido per l'organizzazione, ma non è assegnato a un utente o a un telefono. È possibile trasferire queste chiamate a una destinazione predeterminata (numero di telefono, URI SIP o segreteria telefonica) oppure riprodurre un annuncio audio o entrambe le opzioni. L'applicazione Annuncio consente di evitare il caso in cui un chiamante compone un numero errato e riceve un tono di occupato oppure il client SIP riceve un messaggio di errore. In questa sezione sono incluse informazioni sulla pianificazione specifiche dell'applicazione annuncio.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Panoramica dell'applicazione di annuncio in Lync Server 2013](lync-server-2013-overview-of-the-announcement-application.md)
+  - [Panoramica dell'applicazione annuncio in Lync Server 2013](lync-server-2013-overview-of-the-announcement-application.md)
 
-  - [Componenti utilizzati dall'applicazione Annuncio in Lync Server 2013](lync-server-2013-components-used-by-the-announcement-application.md)
+  - [Componenti utilizzati dall'applicazione annuncio in Lync Server 2013](lync-server-2013-components-used-by-the-announcement-application.md)
 
-  - [Requisiti tecnici per l'applicazione Annuncio in Lync Server 2013](lync-server-2013-technical-requirements-for-the-announcement-application.md)
+  - [Requisiti tecnici per l'applicazione annuncio in Lync Server 2013](lync-server-2013-technical-requirements-for-the-announcement-application.md)
 
-  - [Processo di distribuzione per l'applicazione di annuncio in Lync Server 2013](lync-server-2013-deployment-process-for-the-announcement-application.md)
+  - [Processo di distribuzione per l'applicazione annuncio in Lync Server 2013](lync-server-2013-deployment-process-for-the-announcement-application.md)
 
 </div>
 

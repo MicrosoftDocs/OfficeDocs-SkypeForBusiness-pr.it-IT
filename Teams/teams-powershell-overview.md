@@ -15,12 +15,12 @@ f1.keywords:
 description: Informazioni su come usare i controlli di PowerShell per la gestione di Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d22eb0b14d25bec57949bb804e8bb8098ee33510
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 5b211493bb5b0bfa3dea1abfc0c9b59eadcb4206
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836956"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035358"
 ---
 # <a name="teams-powershell-overview"></a>Panoramica di PowerShell Teams
 
@@ -30,7 +30,7 @@ Microsoft teams include un ricco set di strumenti per gli amministratori IT che 
 
 I controlli di PowerShell per la gestione dei team si trovano in due diversi moduli di PowerShell: 
 - [Modulo di PowerShell per Microsoft teams](https://www.powershellgallery.com/packages/MicrosoftTeams/) : il modulo di PowerShell teams contiene tutti i cmdlet necessari per creare e gestire team.  
-- [Modulo di PowerShell per Skype for business](https://www.microsoft.com/en-us/download/details.aspx?id=39366): il modulo di PowerShell per Skype for business contiene i cmdlet per la gestione di criteri, configurazioni e altri strumenti teams. 
+- [Modulo di PowerShell per Skype for business](https://www.microsoft.com/download/details.aspx?id=39366): il modulo di PowerShell per Skype for business contiene i cmdlet per la gestione di criteri, configurazioni e altri strumenti teams. 
 
 La documentazione di riferimento per i controlli di PowerShell indica il modulo contenente il cmdlet che si sta esaminando. (Alla fine i due moduli verranno combinati.)
 
@@ -79,7 +79,7 @@ Quando è stata rilasciata la versione generalmente disponibile del modulo di Po
 
 ## <a name="managing-policies-via-powershell"></a>Gestione dei criteri tramite PowerShell
 
-I cmdlet per la gestione dei criteri si trovano nel [modulo cmdlet di Skype for business](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
+I cmdlet per la gestione dei criteri si trovano nel [modulo cmdlet di Skype for business](https://www.microsoft.com/download/details.aspx?id=39366).
 
 > [!NOTE]
 > I cmdlet saranno disponibili nella sessione di PowerShell quando ci si connette a Skype for business online. Per altre informazioni, vedere [gestire Skype for business online con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell). 
@@ -111,7 +111,7 @@ Parametri comuni:
 
 ## <a name="managing-configurations-via-powershell"></a>Gestione delle configurazioni tramite PowerShell
 
-I cmdlet per la gestione della configurazione si trovano nel [modulo cmdlet di Skype for business](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
+I cmdlet per la gestione della configurazione si trovano nel [modulo cmdlet di Skype for business](https://www.microsoft.com/download/details.aspx?id=39366).
 
 Le configurazioni sono contenitori di impostazioni gestite nel servizio che non è possibile specificare a livello di utente. Le impostazioni vengono sempre applicate in tutta l'organizzazione. La configurazione globale è l'unica configurazione efficace dell'organizzazione. Ogni tipo di configurazione include due cmdlet principali:
 

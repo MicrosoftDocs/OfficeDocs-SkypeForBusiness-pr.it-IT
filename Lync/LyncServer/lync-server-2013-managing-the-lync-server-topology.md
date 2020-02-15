@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Gestione della topologia di Lync Server'
+title: 'Lync Server 2013: gestione della topologia di Lync Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183784
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8d0411156d6d4c8a801f643f62a93f1a31d999b5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 37a7a823e2dc1aa0e7ea1df5d873292f2932ac32
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727766"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045588"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,33 +35,33 @@ ms.locfileid: "41727766"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-11_
+_**Ultimo argomento modificato:** 2012-10-11_
 
-Gli argomenti di questa sezione includono procedure dettagliate per le attività che è possibile eseguire usando la pagina **topologia** nel pannello di controllo di Lync Server 2013.
+Negli argomenti di questa sezione vengono fornite procedure dettagliate per le attività che è possibile eseguire utilizzando la pagina **topologia** nel pannello di controllo di Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Visualizzare un elenco di computer che eseguono Lync Server 2013](lync-server-2013-view-a-list-of-computers-running-lync-server-2013.md)
 
-  - [Visualizzare lo stato dei servizi in uso in un computer in Lync Server 2013](lync-server-2013-view-the-status-of-services-running-on-a-computer.md)
+  - [Visualizzare lo stato dei servizi in esecuzione in un computer in Lync Server 2013](lync-server-2013-view-the-status-of-services-running-on-a-computer.md)
 
-  - [Visualizzare i dettagli di un servizio in Lync Server 2013](lync-server-2013-view-details-about-a-service.md)
+  - [Visualizzare i dettagli relativi a un servizio in Lync Server 2013](lync-server-2013-view-details-about-a-service.md)
 
   - [Avviare o arrestare i servizi di Lync Server 2013](lync-server-2013-start-or-stop-lync-server-services.md)
 
-  - [Impedire sessioni per i servizi in Lync Server 2013](lync-server-2013-prevent-sessions-for-services.md)
+  - [Impedisci sessioni per i servizi in Lync Server 2013](lync-server-2013-prevent-sessions-for-services.md)
 
-  - [Aggiornare o aggiornare i server front-end in Lync Server 2013](lync-server-2013-upgrade-or-update-front-end-servers.md)
+  - [Aggiornare o aggiornare Front End Server in Lync Server 2013](lync-server-2013-upgrade-or-update-front-end-servers.md)
 
-  - [Aggiungere o rimuovere un server front-end in Lync Server 2013](lync-server-2013-add-or-remove-a-front-end-server.md)
+  - [Aggiungere o rimuovere un front end server in Lync Server 2013](lync-server-2013-add-or-remove-a-front-end-server.md)
 
   - [Aggiornare o aggiornare un server back-end o un server Standard Edition in Lync Server 2013](lync-server-2013-upgrade-or-update-a-back-end-server-or-standard-edition-server.md)
 
   - [Gestione delle applicazioni MSPL (Microsoft SIP Processing Language) in Lync Server 2013](lync-server-2013-managing-microsoft-sip-processing-language-mspl-applications.md)
 
-  - [Gestione di URL semplici in Lync Server 2013](lync-server-2013-managing-simple-urls.md)
+  - [Gestione degli URL semplici in Lync Server 2013](lync-server-2013-managing-simple-urls.md)
 
 </div>
 

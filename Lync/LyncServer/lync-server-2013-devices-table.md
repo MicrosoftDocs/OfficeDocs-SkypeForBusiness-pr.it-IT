@@ -12,16 +12,16 @@ ms:contentKeyID: 48184169
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 381b03fc5680276a64fc327f423f74c6773c2ed3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9c6e1fb5afda3a657bbeff864f5bba06349f4fb4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762354"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044848"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41762354"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-05-25_
+_**Ultimo argomento modificato:** 2012-05-25_
 
-La tabella dispositivi è una tabella di supporto. Ogni record archivia le informazioni su un dispositivo (telefono da tavolo).
+La tabella Devices è una tabella di supporto. In ogni record sono archiviate informazioni relative a un dispositivo (telefono da tavolo).
 
 
 <table>
@@ -65,14 +65,14 @@ La tabella dispositivi è una tabella di supporto. Ogni record archivia le infor
 <tr class="even">
 <td><p><strong>ManufacturerId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Fabbricante di questo dispositivo. Per altre informazioni, vedere la <a href="lync-server-2013-manufacturers-table.md">tabella produttori in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Produttore del dispositivo. Per ulteriori informazioni, vedere la <a href="lync-server-2013-manufacturers-table.md">tabella Manufacturers in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>HardwareVersionId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Versione hardware di questo dispositivo. Per altre informazioni, vedere la <a href="lync-server-2013-hardwareversions-table.md">tabella HardwareVersions in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Versione hardware del dispositivo. Per ulteriori informazioni, vedere la <a href="lync-server-2013-hardwareversions-table.md">tabella HardwareVersions in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MacAddress</strong></p></td>

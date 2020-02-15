@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Gestione delle applicazioni'
+title: 'Lync Server 2013: gestione delle applicazioni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733610
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: debb82de758d8ab585a6fb7e56d7af6eb2f05c62
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7e044f1153f1b7837c2658a64373db6c84e7807d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738956"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037226"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41738956"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Usare le procedure descritte in questa sezione per gestire le applicazioni per Lync Server 2013.
+Utilizzare le procedure descritte in questa sezione per gestire le applicazioni per Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Configurare un nuovo server applicazioni attendibile in Lync Server 2013](lync-server-2013-configure-a-new-trusted-application-server.md)
 
@@ -54,7 +54,7 @@ Usare le procedure descritte in questa sezione per gestire le applicazioni per L
 ## <a name="see-also"></a>Vedere anche
 
 
-[Gestione di servizi e ruoli server di Lync Server 2013](lync-server-2013-managing-lync-server-services-and-server-roles.md)  
+[Gestione di servizi e ruoli del server di Lync Server 2013](lync-server-2013-managing-lync-server-services-and-server-roles.md)  
   
 
 </div>

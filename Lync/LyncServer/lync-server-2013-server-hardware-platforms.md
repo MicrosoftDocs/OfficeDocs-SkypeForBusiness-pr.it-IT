@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Piattaforme hardware server'
+title: Piattaforme hardware del server Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185395
 ms.date: 07/28/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 95c8b0e9b1e13d845672cff07d30b7f2ac1a5b22
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7e352153e4cc2386a159ac11f27f8ba4f5beb09f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764874"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048667"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,29 +35,29 @@ ms.locfileid: "41764874"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-07-28_
+_**Ultimo argomento modificato:** 2016-07-28_
 
-I ruoli server e i computer di Lync Server 2013 che eseguono gli strumenti di amministrazione di Lync Server richiedono hardware a 64 bit.
+I ruoli del server e i computer Lync Server 2013 che eseguono gli strumenti di amministrazione di Lync Server richiedono hardware a 64 bit.
 
-L'hardware specifico usato per la distribuzione di Lync Server 2013 può variare a seconda delle dimensioni e dei requisiti di utilizzo. Questa sezione descrive l'hardware consigliato. Anche se si tratta di raccomandazioni, non di requisiti, l'uso di hardware che non soddisfa questi suggerimenti può causare problemi di prestazioni significativi e altri problemi.
+L'hardware specifico utilizzato per la distribuzione di Lync Server 2013 può variare a seconda delle dimensioni e dei requisiti di utilizzo. In questa sezione viene descritto l'hardware consigliato. Sebbene si tratti di suggerimenti e non di requisiti, l'utilizzo di hardware che non soddisfa tali indicazioni potrebbe generare rallentamenti significativi delle prestazioni e altri problemi.
 
 <div>
 
 ## <a name="recommended-hardware-platform"></a>Piattaforma hardware consigliata
 
-Per ottenere prestazioni ottimali, è consigliabile eseguire Lync Server nei server con hardware che soddisfi i requisiti della tabella seguente. Se usi hardware meno potente, potresti riscontrare problemi di funzionalità o prestazioni scarse. Si noti che questi requisiti hardware sono superiori a quelli delle versioni precedenti di Lync Server, principalmente perché in Lync Server 2013 tutti i server front-end eseguono SQL Server.
+Per prestazioni ottimali, è consigliabile eseguire Lync Server nei server con hardware che soddisfi i requisiti indicati nella tabella seguente. Se si utilizzano componenti hardware meno potenti, è possibile che si verifichino problemi funzionali o di prestazioni insufficienti. Si noti che questi requisiti hardware sono superiori a quelli delle versioni precedenti di Lync Server, principalmente perché in Lync Server 2013 tutti i front end server eseguono SQL Server.
 
 <div>
 
 
 > [!NOTE]  
-> Il teaming di NIC è supportato e deve essere trasparente per Lync Server. Per informazioni dettagliate, vedere <A href="http://go.microsoft.com/fwlink/p/?linkid=389910">Communications Server o Lync Server e Network Adapter Teaming</A>.
+> Il teaming NIC è supportato e deve essere trasparente per Lync Server. Per informazioni dettagliate, vedere <A href="http://go.microsoft.com/fwlink/p/?linkid=389910">Communications Server or Lync Server and Network Adapter Teaming</A>.
 
 
 
 </div>
 
-### <a name="recommended-hardware-for-front-end-servers-back-end-servers-standard-edition-servers-persistent-chat-servers-and-persistent-chat-store-and-persistent-chat-compliance-store-back-end-server-roles-for-persistent-chat-server"></a>Hardware consigliato per i server front-end, i server di back-end, i server Standard Edition, i server di chat persistenti e l'Archivio Chat persistente e lo Store di conformità della chat persistente (ruoli del server back-end per il server
+### <a name="recommended-hardware-for-front-end-servers-back-end-servers-standard-edition-servers-persistent-chat-servers-and-persistent-chat-store-and-persistent-chat-compliance-store-back-end-server-roles-for-persistent-chat-server"></a>Hardware consigliato per Front End Server, server back-end, server Standard Edition, server Chat persistente e archivio chat persistente e archivio conformità chat persistente (ruoli del server back-end per il server Chat persistente)
 
 <table>
 <colgroup>
@@ -73,8 +73,8 @@ Per ottenere prestazioni ottimali, è consigliabile eseguire Lync Server nei ser
 <tbody>
 <tr class="odd">
 <td><p>CPU</p></td>
-<td><p>64-bit Dual Processor, hex-core, 2,26 gigahertz (GHz) o versioni successive.</p>
-<p>I processori Intel Itanium non sono supportati per i ruoli di Lync Server Server.</p></td>
+<td><p>processore duale a 64 bit, hex-core, 2,26 gigahertz (GHz) o superiore.</p>
+<p>I processori Intel Itanium non sono supportati per i ruoli del server di Lync Server.</p></td>
 </tr>
 <tr class="even">
 <td><p>Memoria</p></td>
@@ -83,20 +83,20 @@ Per ottenere prestazioni ottimali, è consigliabile eseguire Lync Server nei ser
 <tr class="odd">
 <td><p>Disco</p></td>
 <td><ul>
-<li><p>8 o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco.</p>
-<p>Due dischi dovrebbero usare RAID 1 e sei dovrebbero usare RAID 10.</p>
+<li><p>Otto o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco</p>
+<p>Due dei dischi dovrebbero utilizzare RAID 1 e sei dovrebbero utilizzare RAID 10.</p>
 <p>-O</p></li>
-<li><p>SSD (Solid State Drive) che garantiscono prestazioni simili alle unità disco meccaniche di 8 10.000-RPM.</p></li>
+<li><p>Unità SSD (Solid State Drive) con prestazioni simili a otto unità disco meccanico da 10.000 RPM.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>Rete</p></td>
 <td><ul>
-<li><p>1 scheda di rete a doppia porta, 1 Gbps o superiore (2 consigliata, che richiede il teaming con un singolo indirizzo MAC e un singolo indirizzo IP).</p>
+<li><p>1 scheda di rete Dual-Port, 1 Gbps o superiore (2 consigliate, che richiede la collaborazione con un singolo indirizzo MAC e un singolo indirizzo IP).</p>
 <div>
 
 > [!NOTE]  
-> Le configurazioni dual o multihomed non sono supportate per i server front-end, i server back-end, i server Standard Edition e i server di chat permanenti.<BR>Le connessioni ILO/DRAC/etc. non esposte al sistema operativo e usate per monitorare e gestire l'hardware del server non costituiscono un server multihomed e quindi sono supportate.
+> Le configurazioni dual o multi-homed non sono supportate per Front End Server, server back-end, server Standard Edition e server Chat persistente.<BR>Le connessioni ILO/DRAC/etc. non esposte al sistema operativo e utilizzate per monitorare e gestire l'hardware del server non costituiscono un server multihomed e pertanto sono supportate.
 
 
 </div></li>
@@ -106,7 +106,7 @@ Per ottenere prestazioni ottimali, è consigliabile eseguire Lync Server nei ser
 </table>
 
 
-### <a name="recommended-hardware-for-edge-servers-standalone-mediation-servers-and-directors"></a>Hardware consigliato per Edge Server, Mediation Server autonomi e direttori
+### <a name="recommended-hardware-for-edge-servers-standalone-mediation-servers-and-directors"></a>Hardware consigliato per server perimetrali, Mediation Server autonomi e server Director
 
 <table>
 <colgroup>
@@ -123,11 +123,11 @@ Per ottenere prestazioni ottimali, è consigliabile eseguire Lync Server nei ser
 <tr class="odd">
 <td><p>CPU</p></td>
 <td><ul>
-<li><p>64-bit Dual Processor, quad-core, 2,0 gigahertz (GHz) o versioni successive.</p>
+<li><p>processore duale a 64 bit, quad-core, 2,0 gigahertz (GHz) o superiore.</p>
 <p>-O</p></li>
-<li><p>processore a 4 vie a 64 bit, Dual-Core, 2,0 GHz o superiore.</p></li>
+<li><p>processore a 4 vie a 64 bit, Dual Core, 2,0 GHz o superiore.</p></li>
 </ul>
-<p>I processori Intel Itanium non sono supportati per i ruoli di Lync Server Server.</p></td>
+<p>I processori Intel Itanium non sono supportati per i ruoli del server di Lync Server.</p></td>
 </tr>
 <tr class="even">
 <td><p>Memoria</p></td>
@@ -139,23 +139,23 @@ Per ottenere prestazioni ottimali, è consigliabile eseguire Lync Server nei ser
 <li><p>4 o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco.</p>
 <p>I dischi devono essere in una configurazione di 2x RAID 1.</p>
 <p>-O</p></li>
-<li><p>SSD (Solid State Drive) che garantiscono prestazioni simili alle unità disco meccaniche di 4 10.000-RPM.</p></li>
+<li><p>Unità SSD (Solid State Drive) con prestazioni simili a quattro unità disco meccanico da 10.000 RPM.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>Rete</p></td>
 <td><ul>
-<li><p>1 scheda di rete a doppia porta, 1 Gbps o superiore (2 consigliata, che richiede il teaming con un singolo indirizzo MAC e un singolo indirizzo IP). 2 le interfacce di rete sono necessarie in Edge Server e sono supportate nei server di mediazione autonomi.</p></li>
+<li><p>1 scheda di rete Dual-Port, 1 Gbps o superiore (2 consigliate, che richiede la collaborazione con un singolo indirizzo MAC e un singolo indirizzo IP). 2 le interfacce di rete sono necessarie nei server perimetrali e sono supportate su Mediation Server autonomi.</p></li>
 </ul>
 <div>
 
 > [!NOTE]  
-> Le configurazioni dual o multihomed non sono supportate per gli amministratori.<BR>Le connessioni ILO/DRAC/etc. non esposte al sistema operativo e usate per monitorare e gestire l'hardware del server non costituiscono un server multihomed e quindi sono supportate.
+> Le configurazioni dual o multi-homed non sono supportate per i direttori.<BR>Le connessioni ILO/DRAC/etc. non esposte al sistema operativo e utilizzate per monitorare e gestire l'hardware del server non costituiscono un server multihomed e pertanto sono supportate.
 
 
 </div>
-<p>I server perimetrali richiedono due interfacce di rete che sono schede di rete a doppia porta, 1 Gbps o superiore (o due schede di rete abbinate, per un totale di quattro, ogni coppia che viene affiancata da un singolo indirizzo MAC e da un singolo indirizzo IP, per un totale di due coppie).</p>
-<p>L'installazione di schede di interfaccia di rete aggiuntive (NIC) per consentire la configurazione di un indirizzo IP PSTN specifico è supportata nei server di mediazione autonomi.</p></td>
+<p>I server perimetrali richiedono due interfacce di rete che sono schede di rete Dual-Port, 1 Gbps o superiore (o due schede di rete abbinate, per un totale di quattro, ciascuna coppia viene affiancata da un singolo indirizzo MAC e da un singolo indirizzo IP, per un totale di due coppie).</p>
+<p>L'installazione di altre schede di interfaccia di rete (NIC) per consentire la configurazione di un indirizzo IP PSTN specifico è supportata su Mediation Server autonomi.</p></td>
 </tr>
 </tbody>
 </table>

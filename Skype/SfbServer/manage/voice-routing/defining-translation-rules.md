@@ -1,5 +1,5 @@
 ---
-title: Definizione delle regole di traduzione in Skype for Business Server
+title: Definizione delle regole di conversione in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -10,108 +10,108 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Skype for Business Server Enterprise Voice instrada le chiamate in base ai numeri di telefono normalizzati in formato E. 164. Questo significa che tutte le stringhe con chiamata devono essere normalizzate in formato E. 164 allo scopo di eseguire la ricerca di numeri inversa (RNL) in modo che possano essere convertite nell'URI SIP corrispondente. Skype for Business Server offre la possibilità di modificare l'ID chiamato e la presentazione dell'ID chiamante.
-ms.openlocfilehash: cdcfe3a847e148461b97abed33df070057dcd00b
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Skype for Business Server Enterprise Voice instrada le chiamate in base ai numeri di telefono normalizzati nel formato E. 164. Questo significa che tutte le stringhe commutate devono essere normalizzate nel formato E. 164 allo scopo di eseguire la ricerca di numeri inversi (inversa), in modo che possano essere convertite nell'URI SIP corrispondente. Skype for Business Server offre la possibilità di modificare l'ID chiamato e la presentazione dell'ID chiamante.
+ms.openlocfilehash: dddeee5ef7784d9c2c433763da4c8b6145611e49
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816986"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045068"
 ---
-# <a name="defining-translation-rules-in-skype-for-business-server"></a>Definizione delle regole di traduzione in Skype for Business Server
+# <a name="defining-translation-rules-in-skype-for-business-server"></a>Definizione delle regole di conversione in Skype for Business Server
 
-Skype for Business Server Enterprise Voice instrada le chiamate in base ai numeri di telefono normalizzati in formato E. 164. Questo significa che tutte le stringhe con chiamata devono essere normalizzate in formato E. 164 allo scopo di eseguire la ricerca di numeri inversa (RNL) in modo che possano essere convertite nell'URI SIP corrispondente. Skype for Business Server offre la possibilità di modificare l'ID chiamato e la presentazione dell'ID chiamante.
+Skype for Business Server Enterprise Voice instrada le chiamate in base ai numeri di telefono normalizzati nel formato E. 164. Questo significa che tutte le stringhe commutate devono essere normalizzate nel formato E. 164 allo scopo di eseguire la ricerca di numeri inversi (inversa), in modo che possano essere convertite nell'URI SIP corrispondente. Skype for Business Server offre la possibilità di modificare l'ID chiamato e la presentazione dell'ID chiamante.
 
-Con Skype for Business Server, il numero di telefono della festa chiamata (ovvero il numero di telefono chiamato) può essere tradotto dal formato E. 164 al formato di chiamata locale richiesto dal peer trunk, ovvero il gateway associato, il PBX (Private Branch Exchange) o il SIP trunk). A tale scopo, è necessario definire una o più regole di traduzione per tradurre l'URI della richiesta prima di instradarlo al peer trunk.
+Con Skype for Business Server, il numero di telefono della parte chiamata (ovvero il numero di telefono chiamato) può essere convertito dal formato E. 164 al formato di composizione locale richiesto dal peer trunk, ovvero il gateway associato, il PBX (Private Branch Exchange) o il SIP trunk). A tale scopo, è necessario definire una o più regole per la conversione dell'URI di richiesta prima del routing al peer trunk.
 
 ## <a name="caller-id-presentation"></a>Presentazione dell'ID chiamante
 
-Skype for Business Server offre la possibilità di tradurre anche il numero di telefono della parte chiamante (ovvero il numero di telefono da cui il chiamante chiama) dal formato E. 164 al formato di chiamata locale richiesto dal peer trunk. Ad esempio, è possibile scrivere una regola di traduzione per rimuovere + 44 dall'inizio di una stringa di chiamata e sostituirla con 0144.
+Skype for Business Server offre la possibilità di tradurre anche il numero di telefono della parte chiamante (ovvero il numero di telefono da cui il chiamante chiama) dal formato E. 164 al formato di composizione locale richiesto dal peer trunk. È ad esempio possibile scrivere una regola di conversione per rimuovere +44 da una stringa di composizione e sostituirlo con 0144.
 
 **Per configurare l'ID chiamante tramite il pannello di controllo di Skype for Business Server**
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione](https://technet.microsoft.com/en-us/library/gg412735(v=ocs.15).aspx).
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Skype for business, vedere [installare e aprire strumenti di amministrazione](../../management-tools/install-and-open-administrative-tools.md).
-3. Sulla barra di spostamento sinistra fare clic su **routing vocale**e quindi su **configurazione trunk**.
-4. Nella pagina trunk Configuration fare doppio clic su un trunk esistente, ad esempio il trunk **globale** , per visualizzare la finestra di dialogo **modifica configurazione trunk** .
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions](https://technet.microsoft.com/library/gg412735(v=ocs.15).aspx).
+2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Skype for business, vedere [Install and Open Administrative Tools](../../management-tools/install-and-open-administrative-tools.md).
+3. Nella barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Configurazione trunk**.
+4. Nella pagina Configurazione trunk fare doppio clic su un trunk esistente, ad esempio il trunk **Globale** per visualizzare la finestra di dialogo **Modifica configurazione trunk**.
 5. Per configurare la presentazione dell'ID chiamante:
-    - Per scegliere una o più regole da un elenco di tutte le regole di traduzione disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. In **regole di traduzione dei numeri di chiamata**fare clic sulle regole da associare al trunk e quindi fare clic su **OK**.
-    - Per definire una nuova regola di traduzione e associarla al trunk, fare clic su **nuovo**. 
-    - Per modificare una regola di traduzione già associata al trunk, fare clic sul nome della regola e quindi fare clic su **Mostra dettagli**.
-    - Per copiare una regola di traduzione esistente da usare come punto di partenza per la definizione di una nuova regola, fare clic sul nome della regola, fare clic su **copia**e quindi su **Incolla**.
-    - Per rimuovere una regola di traduzione dal trunk, evidenziare il nome della regola e fare clic su **Rimuovi**.
+    - Per selezionare una o più regole in un elenco di tutte le regole di conversione disponibili nella distribuzione di VoIP aziendale, fare clic su **Seleziona**. In **Regola di conversione per il numero del chiamante** fare clic sulle regole da associare al trunk e quindi fare clic su **OK**.
+    - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. 
+    - Per modificare una regola di conversione già associata al trunk, fare clic sul nome della regola e quindi su **Mostra dettagli**.
+    - Per copiare una regola di conversione esistente da utilizzare come punto di partenza per la definizione di una nuova regola, fare clic sul nome della regola, scegliere **copia**e quindi fare clic su **Incolla**.
+    - Per rimuovere una regola di conversione dal trunk, evidenziare il nome della regola e fare clic su **Rimuovi**.
 
 > [!Warning] 
-> Non associare regole di traduzione a un trunk se sono state configurate regole di traduzione nel peer trunk associato, perché le due regole potrebbero essere in conflitto. 
+> Non associare regole di conversione a un trunk se sono state configurate regole di conversione nel peer trunk associato, perché le due regole potrebbero essere in conflitto. 
 
-## <a name="called-id-presentation"></a>Chiamata presentazione ID
+## <a name="called-id-presentation"></a>Presentazione ID chiamata
 
 > [!Important]
-> La possibilità di associare una o più regole di traduzione a una configurazione trunk VoIP aziendale è destinata a essere usata come *alternativa* alla configurazione delle regole di traduzione nel trunk peer. Non associare regole di traduzione a una configurazione trunk VoIP aziendale se sono state configurate regole di traduzione nel peer trunk perché le due regole potrebbero essere in conflitto. 
+> La possibilità di associare una o più regole di conversione a una configurazione trunk VoIP aziendale è destinata a essere utilizzata come *alternativa* alla configurazione delle regole di conversione nel peer trunk. Non associare regole di conversione a una configurazione trunk VoIP aziendale se sono state configurate regole di conversione nel peer trunk perché le due regole potrebbero essere in conflitto. 
 
-Puoi usare uno dei metodi seguenti per creare o modificare una regola di traduzione:
+È possibile utilizzare uno dei metodi seguenti per creare e modificare una regola di conversione:
 
-- [Usare lo strumento Costruisci una regola di traduzione](#create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool) per specificare i valori per le cifre iniziali, la lunghezza, le cifre da rimuovere e le cifre da aggiungere e quindi consentire al pannello di controllo di Skype for Business Server di generare automaticamente il modello di corrispondenza e la regola di traduzione corrispondenti.
-- [Scrivere manualmente le espressioni regolari](#create-or-modify-a-translation-rule-manually) per definire il modello e la regola di traduzione corrispondenti.
+- [Utilizzare lo strumento Crea regola di conversione](#create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool) per specificare i valori per le cifre iniziali, la lunghezza, le cifre da rimuovere e le cifre da aggiungere, quindi lasciare che il pannello di controllo di Skype for Business Server generi la corrispondente regola di conversione e il modello corrispondenti.
+- [Scrivere manualmente espressioni regolari](#create-or-modify-a-translation-rule-manually) per definire il modello di corrispondenza e la regola di conversione.
 
 > [!Note]
 > Per informazioni su come scrivere espressioni regolari, vedere [espressioni regolari di .NET Framework](http://go.microsoft.com/fwlink/p/?linkId=140927). 
 
-### <a name="create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool"></a>Creare o modificare una regola di traduzione usando lo strumento crea una regola di traduzione
+### <a name="create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool"></a>Creare o modificare una regola di conversione utilizzando lo strumento Crea regola di conversione
 
-Seguire questa procedura se si vuole definire una regola di traduzione immettendo un set di valori nello strumento compila una regola di traduzione e abilitando il pannello di controllo di Skype for Business Server per generare la regola di corrispondenza corrispondente e le regole di traduzione. 
+Seguire questa procedura se si desidera definire una regola di conversione immettendo un insieme di valori nello strumento Crea regola di conversione e consentendo al pannello di controllo di Skype for Business Server di generare per l'utente il modello corrispondente e la regola di conversione corrispondenti. 
 
-**Per definire una regola usando lo strumento crea una regola di traduzione**
+**Per definire una regola tramite lo strumento Crea regola di conversione**
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione](https://technet.microsoft.com/en-us/library/gg412735(v=ocs.15).aspx).
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Skype for business, vedere [installare e aprire strumenti di amministrazione](../../management-tools/install-and-open-administrative-tools.md).
-3. Per iniziare a definire una regola di traduzione, seguire i passaggi descritti in [configurare un trunk con il bypass multimediale](GET LINK AFTER MIGRATION)tramite il passaggio 10 o [configurare un trunk senza bypass multimediale](GET LINK AFTER MIGRATION) tramite il passaggio 9.
-4. In **nome** nella pagina **nuova** regola di traduzione o **Modifica regola di traduzione** digitare un nome che descriva il modello di numero da tradurre.
-5. Opzionale In **Descrizione**Digitare una descrizione della regola di traduzione, ad esempio le **chiamate interurbane internazionali degli Stati Uniti**.
-6. Nella sezione **genera una regola di traduzione** della finestra di dialogo immettere i valori nei campi seguenti:
-    - **Cifre iniziali**: (facoltativo) specificare le cifre iniziali dei numeri a cui si vuole che corrisponda il motivo. Ad esempio, immettere + in questo campo per abbinare i numeri nel formato E. 164 (che iniziano con +).
-    - **Length**: specificare il numero di cifre nel criterio di corrispondenza e selezionare se si vuole che il pattern corrisponda a numeri di lunghezza uguale a quella specificata, almeno questa lunghezza o qualsiasi lunghezza. Ad esempio, immetti **11** e **Seleziona almeno nell'elenco a discesa** per abbinare i numeri di almeno 11 cifre in lunghezza.
-    - **Cifre da rimuovere**: (facoltativo) specificare il numero di cifre iniziali da eliminare. Ad esempio, immettere **1** per eliminare il + dall'inizio del numero.
-    - **Cifre da aggiungere**: (facoltativo) specificare le cifre da anteporre ai numeri tradotti. Ad esempio, immetti **011** se vuoi che 011 venga anteposto ai numeri tradotti quando viene applicata la regola.
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions](https://technet.microsoft.com/library/gg412735(v=ocs.15).aspx).
+2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Skype for business, vedere [Install and Open Administrative Tools](../../management-tools/install-and-open-administrative-tools.md).
+3. Per iniziare a definire una regola di conversione, eseguire la procedura descritta in [Configure a Trunk with media bypass](GET LINK AFTER MIGRATION)through Step 10 o [Configure a Trunk Without Media Bypass](GET LINK AFTER MIGRATION) through Step 9.
+4. In **Nome** nella pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome descrittivo del formato del numero da convertire.
+5. Optional In **Descrizione**Digitare una descrizione della regola di conversione, ad esempio le **chiamate interurbane internazionali degli Stati Uniti**.
+6. Nella sezione **Crea regola di conversione** della finestra di dialogo immettere i valore nei campi seguenti:
+    - **Cifre iniziali**: (facoltativo) specificare le cifre iniziali dei numeri a cui si desidera corrisponda il formato. Ad esempio, immettere + in questo campo per specificare una corrispondenza con i numeri nel formato E.164, che iniziano con +.
+    - **Lunghezza**: specificare il numero di cifre nel formato e specificare se si desidera applicare il formato ai numeri esattamente di questa lunghezza, almeno di questa lunghezza o di qualsiasi lunghezza. Ad esempio, immettere **11** e selezionare **Almeno** nell'elenco a discesa per specificare una corrispondenza con i numeri con una lunghezza di almeno 11 cifre.
+    - **Cifre da rimuovere**: (facoltativo) specificare il numero di cifre iniziali da rimuovere. Ad esempio, immettere **1** per rimuovere il + all'inizio del numero.
+    - **Prefisso**: (facoltativo) specificare le cifre da aggiungere all'inizio dei numeri convertiti. Ad esempio, immettere **011** se si desidera aggiungere 011 all'inizio dei numeri convertiti quando si applica questa regola.
     
-    I valori immessi in questi campi si riflettono nei campi della regola **per la corrispondenza** e la **traduzione** . Ad esempio, se specifichi i valori di esempio precedenti, l'espressione regolare risultante nel campo **pattern to matc**h è:
+    I valori immessi in questi campi sono riportati nel **modello per la corrispondenza** e la **conversione** dei campi delle regole. Ad esempio, se si specificano i valori di esempio precedenti, l'espressione regolare risultante nel campo **pattern to matc**h è:
     
     **^\+(\d{9}\d +) $** 
 
-    Il campo della **regola di traduzione** specifica un modello per il formato dei numeri tradotti. Questo modello include due parti:
-    - Un valore, ad esempio **$1**, che rappresenta il numero di cifre nel modello corrispondente
-    - Opzionale Un valore che puoi anteporre immettendolo nel campo **cifre da aggiungere**
+    Nel campo **Regola di conversione** specificare un modello per il formato dei numeri convertiti. Il modello è composto da due parti:
+    - Un valore (ad esempio **$1**) che rappresenta il numero di cifre nel formato corrispondente
+    - (Facoltativo) Un valore che è possibile aggiungere all'inizio del numero immettendolo nel campo **Prefisso**
 
-    Usando i valori di esempio precedenti, viene visualizzato **011 $1** nel campo della **regola di traduzione** .
+    In base ai valori di esempio precedenti, nel campo **Regola di conversione** viene visualizzato **011$1**.
     
-    Quando viene applicata questa regola di traduzione, + 441235551010 diventa 011441235551010.
-7. Fare clic su **OK** per salvare la regola di traduzione.
-8. Fare clic su **OK** per salvare la configurazione trunk.
-9. Nella pagina **trunk configuratio**n fare clic su **commit**e quindi su **Commit all**. 
+    Con l'applicazione di questa regola di conversione il numero +441235551010 diventa 011441235551010.
+7. Fare clic su **OK** per salvare la regola di conversione.
+8. Fare clic su **OK** per salvare la configurazione del trunk.
+9. Nella pagina **trunk configuratio**n fare clic su **commit**e quindi su **Salva tutto**. 
 
 > [!Note]
-> Ogni volta che si crea o si modifica una regola di traduzione, è necessario eseguire il comando **commit tutti** per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [pubblicare le modifiche in sospeso nella configurazione del routing vocale](https://technet.microsoft.com/en-us/library/gg413088(v=ocs.15).aspx). 
+> Ogni volta che si crea o modifica una regola di conversione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per ulteriori informazioni, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale](https://technet.microsoft.com/library/gg413088(v=ocs.15).aspx). 
 
-### <a name="create-or-modify-a-translation-rule-manually"></a>Creare o modificare manualmente una regola di traduzione
+### <a name="create-or-modify-a-translation-rule-manually"></a>Creare o modificare manualmente una regola di conversione
 
-Seguire questa procedura se si vuole definire una regola di traduzione scrivendo un'espressione regolare per il modello e la regola di traduzione corrispondenti. 
+Eseguire questa procedura se si desidera definire una regola di conversione scrivendo un'espressione regolare per il formato e la regola. 
 
-**Per definire manualmente una regola di traduzione**
+**Per definire manualmente una regola di conversione**
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione](https://technet.microsoft.com/en-us/library/gg412735(v=ocs.15).aspx).
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Skype for business, vedere [installare e aprire strumenti di amministrazione](../../management-tools/install-and-open-administrative-tools.md).
-3. Per iniziare a definire una regola di traduzione, seguire i passaggi descritti in [configurare un trunk con il bypass multimediale](GET LINK AFTER MIGRATION)tramite il passaggio 10 o [configurare un trunk senza bypass multimediale](GET LINK AFTER MIGRATION) tramite il passaggio 9.
-4. Nel campo **nome** della pagina **nuova** regola di traduzione o **Modifica regola di traduzione** digitare un nome che descriva il modello di numero da tradurre.
-5. Opzionale In **Descrizione**Digitare una descrizione della regola di traduzione; ad esempio, le **chiamate interurbane internazionali degli Stati Uniti**.
-6. Fare clic su **modifica** nella parte inferiore della sezione **Compila una regola di traduzione** .
-7. Immettere le opzioni seguenti nell' **espressione regolare**di tipo:
-    - In **Confronta questo modello**, specifica il motivo che verrà usato per corrispondere ai numeri da tradurre.
-    - Nella **regola di traduzione**specificare un motivo per il formato dei numeri tradotti.
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions](https://technet.microsoft.com/library/gg412735(v=ocs.15).aspx).
+2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Skype for business, vedere [Install and Open Administrative Tools](../../management-tools/install-and-open-administrative-tools.md).
+3. Per iniziare a definire una regola di conversione, eseguire la procedura descritta in [Configure a Trunk with media bypass](GET LINK AFTER MIGRATION)through Step 10 o [Configure a Trunk Without Media Bypass](GET LINK AFTER MIGRATION) through Step 9.
+4. Nel campo **Nome** della pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome che descriva il formato del numero da convertire.
+5. Optional In **Descrizione**Digitare una descrizione della regola di conversione. ad esempio, le **chiamate interurbane internazionali degli Stati Uniti**.
+6. Fare clic su **Modifica** nella parte inferiore della sezione **Crea regola di conversione**.
+7. Immettere quanto segue in digitare un' **espressione regolare**:
+    - In **Trova corrispondenza per questo formato** specificare il modello di formato da utilizzare per trovare corrispondenze con i numeri da convertire.
+    - In **Regola di conversione** specificare un modello per il formato dei numeri convertiti.
 
-    Ad esempio, se immetti ** ^ \+(\d{9}\d +) $** in **corrisponde a questo modello** e **011 $1** nella **regola di traduzione**, la regola tradurrà + 441235551010 in 011441235551010.
-8. Fare clic su **OK** per salvare la regola di traduzione.
-9. Fare clic su **OK** per salvare la configurazione trunk.
-10. Nella pagina **trunk Configuration** fare clic su **commit**e quindi su **Commit all**. 
+    Ad esempio, se si immette ** ^ \+(\d{9}\d +) $** in **corrispondono a questo modello** e **011 $1** in **regola di conversione**, la regola verrà convertita da + 441235551010 a 011441235551010.
+8. Fare clic su **OK** per salvare la regola di conversione.
+9. Fare clic su **OK** per salvare la configurazione del trunk.
+10. Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**. 
 
 > [!Note] 
-> Ogni volta che si crea o si modifica una regola di traduzione, è necessario eseguire il comando **commit tutti** per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [pubblicare le modifiche in sospeso nella configurazione del routing vocale](https://technet.microsoft.com/en-us/library/gg413088(v=ocs.15).aspx). 
+> Ogni volta che si crea o modifica una regola di conversione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per ulteriori informazioni, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale](https://technet.microsoft.com/library/gg413088(v=ocs.15).aspx). 

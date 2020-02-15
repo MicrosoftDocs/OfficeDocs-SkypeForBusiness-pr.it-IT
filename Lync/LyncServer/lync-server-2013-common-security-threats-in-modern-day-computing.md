@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: minacce comuni per la sicurezza in un computing moderno'
+title: "Lync Server 2013: minacce comuni per la sicurezza nell'elaborazione di giorni moderni"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 56708403
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 99e17f9f6dbba30697c72fecf77fbff4bfbdc003
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fb78e03f67f7ceffbbfc401403f4025d3004fb00
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742756"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045688"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="common-security-threats-in-modern-day-computing"></a>Minacce comuni per la sicurezza nell'informatica moderna
+# <a name="common-security-threats-in-modern-day-computing"></a>Minacce alla sicurezza comuni nell'elaborazione di giorni moderni
 
 </div>
 
@@ -35,39 +35,39 @@ ms.locfileid: "41742756"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-09-10_
+_**Ultimo argomento modificato:** 2013-09-10_
 
-Poiché Lync Server 2013 è un sistema di comunicazioni di livello aziendale, è necessario essere consapevoli degli attacchi di sicurezza comuni che potrebbero interessare l'infrastruttura e le comunicazioni.
+Poiché Lync Server 2013 è un sistema di comunicazione di livello aziendale, è necessario essere a conoscenza di attacchi di sicurezza comuni che potrebbero influire sull'infrastruttura e le comunicazioni.
 
 <div>
 
-## <a name="compromised-key-attack"></a>Attacco con chiave compromessa
+## <a name="compromised-key-attack"></a>Attacco tramite chiave compromessa
 
-Una chiave è un codice segreto o un numero che viene utilizzato per crittografare, decrittografare o convalidare informazioni segrete. Esistono due tasti sensibili in uso nell'infrastruttura a chiave pubblica (PKI) che deve essere considerata:.
+Una chiave è un codice o un numero segreto utilizzato per crittografare, decrittografare o convalidare informazioni segrete. Sono disponibili due tasti sensibili in uso nell'infrastruttura a chiave pubblica (PKI) che devono essere considerati:.
 
-  - La chiave privata che ha il titolare di ogni certificato
+  - La chiave privata che ogni titolare del certificato ha
 
-  - Chiave di sessione usata dopo un corretto scambio di identificazioni e chiavi di sessione da parte dei partner di comunicazione
+  - La chiave di sessione utilizzata dopo una corretta identificazione e la chiave di sessione di Exchange da parte dei partner che comunicano
 
-Un attacco con chiave compromessa si verifica quando l'utente malintenzionato determina la chiave privata o la chiave della sessione. Quando l'utente malintenzionato riesce a determinare la chiave, può utilizzarla per decodificare i dati crittografati all'insaputa del mittente.
+Un attacco di compromissione della chiave si verifica quando l'autore dell'attacco riesce a determinare la chiave privata o la chiave di sessione. In questo caso, l'autore dell'attacco può utilizzare la chiave per decrittografare i dati crittografati all'insaputa del mittente.
 
-Lync Server 2013 usa le funzionalità PKI nel sistema operativo Windows Server per proteggere i dati chiave usati per la crittografia per le connessioni TLS (Transport Layer Security). Le chiavi usate per la crittografia media vengono scambiate tramite connessioni TLS.
+Lync Server 2013 utilizza le funzionalità PKI nel sistema operativo Windows Server per proteggere i dati della chiave utilizzati per la crittografia per le connessioni TLS (Transport Layer Security). Le chiavi utilizzate per la crittografia multimediale vengono scambiate tramite connessioni TLS.
 
 </div>
 
 <div>
 
-## <a name="network-denial-of-service-attack"></a>Attacco Denial-of-Service di rete
+## <a name="network-denial-of-service-attack"></a>Attacco Denial of Service alla rete
 
-L' *attacco Denial of Service* si verifica quando l'aggressore impedisce l'uso normale della rete e la funzione da parte di utenti validi. Questa operazione viene eseguita quando l'aggressore inonda il servizio con richieste legittime che sovraccaricano l'uso del servizio da parte di utenti legittimi. Usando un attacco di negazione del servizio, l'aggressore può eseguire le operazioni seguenti:
+L' *attacco Denial-of-Service* si verifica quando l'utente malintenzionato impedisce l'utilizzo e la funzione normale della rete da parte di utenti validi. Questa operazione viene fatta quando l'utente malintenzionato inonda il servizio con richieste legittime che sovraccaricano l'utilizzo del servizio da parte di utenti legittimi. Se si utilizza un attacco Denial of Service, l'utente malintenzionato può eseguire le operazioni seguenti:
 
-  - Inviare dati non validi alle applicazioni e ai servizi in esecuzione nella rete attaccata per interromperne la normale funzione.
+  - Inviare dati non validi alle applicazioni e ai servizi in esecuzione nella rete sottoposta all'attacco per disturbarne il normale funzionamento.
 
-  - Inviare una grande quantità di traffico, sovraccaricando il sistema fino a quando non smette di rispondere o risponde lentamente alle richieste legittime.
+  - Inviare una grande quantità di traffico, sovraccaricando il sistema finché non smette di rispondere o risponde lentamente a richieste legittime.
 
-  - Nascondere l'evidenza degli attacchi.
+  - Nascondere la prova degli attacchi.
 
-  - Impedire agli utenti di accedere alle risorse di rete.
+  - Impedire agli utenti di accedere alle risorse della rete.
 
 </div>
 
@@ -75,49 +75,49 @@ L' *attacco Denial of Service* si verifica quando l'aggressore impedisce l'uso n
 
 ## <a name="eavesdropping-sniffing-snooping"></a>Intercettazioni (sniffing, snooping)
 
-Le *intercettazioni* possono verificarsi quando un utente malintenzionato ottiene l'accesso al percorso dati in una rete e può monitorare e leggere il traffico. Questa operazione è anche denominata *sniffing* o *snooping*. Se il traffico è in testo normale, l'utente malintenzionato può leggerlo quando accede al percorso. Un esempio è un attacco eseguito controllando un router sul percorso dei dati.
+L' *intercettazione* può verificarsi quando un utente malintenzionato accede al percorso dei dati in una rete e ha la possibilità di monitorare e leggere il traffico. Questo è anche chiamato *sniffing* o *snooping*. Se il traffico è in testo normale, l'autore dell'attacco può leggerlo quando ottiene l'accesso al percorso. Un esempio è un attacco eseguito controllando un router nel percorso dei dati.
 
-Le raccomandazioni e le impostazioni predefinite per il traffico in Microsoft Lync Server 2013 sono l'uso di Mutual TLS (MTLS) tra server attendibili e TLS da client a server. Questa misura di protezione renderebbe un attacco molto difficile o impossibile da raggiungere entro il periodo di tempo in cui si verifica una determinata conversazione. TLS autentica tutte le parti e crittografa tutto il traffico. Ciò non impedisce l'intercettazione, ma l'utente malintenzionato non può leggere il traffico a meno che la crittografia non sia interrotta.
+La raccomandazione predefinita e l'impostazione per il traffico all'interno di Microsoft Lync Server 2013 è l'utilizzo di Mutual TLS (MTLS) tra server attendibili e TLS da client a server. Questa misura di protezione renderebbe un attacco molto difficile o impossibile da raggiungere entro il periodo di tempo in cui si verifica una determinata conversazione. TLS autentica tutte le parti e crittografa tutto il traffico. Questo processo non impedisce che si verifichi un attacco eavesdropping, ma l'autore dell'attacco non può leggere il traffico a meno che non venga violata la crittografia.
 
-Il protocollo di traslazione Using Relay NAT (TURN) non obbliga il traffico a essere crittografato e le informazioni che sta inviando sono protette dall'integrità dei messaggi. Anche se è aperto alle intercettazioni, le informazioni che invia (ovvero gli indirizzi IP e la porta) possono essere estratte direttamente semplicemente esaminando gli indirizzi di origine e di destinazione dei pacchetti. Il servizio A/V Edge garantisce che i dati siano validi controllando l'integrità del messaggio usando la chiave derivata da alcuni elementi, tra cui una password di attivazione, che non viene mai inviata in testo non crittografato. Se viene usato il protocollo SRTP (Secure Real Time Protocol), anche il traffico multimediale viene crittografato.
-
-</div>
-
-<div>
-
-## <a name="identity-spoofing-ip-address-spoofing"></a>Spoofing d'identità (spoofing dell'indirizzo IP)
-
-Lo *spoofing* si verifica quando l'aggressore determina e usa un indirizzo IP di una rete, un computer o un componente di rete senza essere autorizzato a farlo. La riuscita dell'attacco consente all'utente malintenzionato di operare come se tale utente malintenzionato fosse l'entità normalmente identificata dall'indirizzo IP. Nel contesto di Microsoft Lync Server 2013, questa situazione entra in gioco solo se un amministratore ha eseguito entrambe le operazioni seguenti:
-
-  - Configurato connessioni che supportano solo TCP (Transmission Control Protocol) (sconsigliato, in quanto le comunicazioni TCP non sono crittografate).
-
-  - Contrassegnato gli indirizzi IP di tali connessioni come host attendibili.
-
-Questo è un problema minore per le connessioni TLS (Transport Layer Security), poiché TLS autentica tutte le parti e crittografa tutto il traffico. L'utilizzo di TLS impedisce a un utente malintenzionato di eseguire lo spoofing dell'indirizzo IP su una connessione specifica (ad esempio, connessioni TLS reciproche). Un utente malintenzionato potrebbe comunque falsificare l'indirizzo del server DNS usato da Lync Server 2013. Tuttavia, poiché l'autenticazione in Lync viene eseguita con i certificati, un utente malintenzionato non avrebbe un certificato valido necessario per falsificare una delle parti nella comunicazione.
+Il protocollo di traslazione tramite Relay NAT (turno) non impone la crittografia del traffico e le informazioni inviate sono protette dall'integrità dei messaggi. Anche se è aperto a intercettazioni, le informazioni inviate (ovvero gli indirizzi IP e la porta) possono essere estratte direttamente semplicemente osservando gli indirizzi di origine e di destinazione dei pacchetti. Il servizio A/V Edge assicura che i dati siano validi verificando l'integrità del messaggio utilizzando la chiave derivata da alcuni elementi, tra cui una password di trasformazioni, che non viene mai inviata in testo non crittografato. Se viene utilizzato il protocollo SRTP (Secure Real Time Protocol), viene crittografato anche il traffico multimediale.
 
 </div>
 
 <div>
 
-## <a name="man-in-the-middle-attack"></a>Attacco MITM (Man-in-the-Middle)
+## <a name="identity-spoofing-ip-address-spoofing"></a>Spoofing di identità (spoofing dell'indirizzo IP)
 
-Un attacco man-in-the-middle si verifica quando un utente malintenzionato dirige la comunicazione tra due utenti attraverso il proprio computer senza che i due utenti comunicanti lo sappiano. L'utente malintenzionato può monitorare e leggere il traffico prima di inviarlo al destinatario previsto. Ogni utente della comunicazione, inconsapevolmente, invia e riceve traffico dall'utente malintenzionato, il tutto pensando di comunicare solo con l'utente previsto. Ciò può accadere se un utente malintenzionato riesce a modificare i Servizi di Dominio di Active Directory per aggiungere il proprio server come server attendibile, o modificare il DNS (Domain Name System) per consentire ai client di connettersi tramite l'utente malintenzionato nel percorso verso il server. Un attacco man-in-the-Middle può verificarsi anche con il traffico multimediale tra due client. Tuttavia, in Microsoft Lync Server 2013, la condivisione di audio, video e applicazioni, i flussi vengono crittografati con SRTP, usando le chiavi crittografiche che vengono negoziate tra i peer che usano SIP (Session Initiation Protocol) su TLS. I server, ad esempio chat di gruppo, usano HTTPS per migliorare la sicurezza del traffico Web.
+Lo *spoofing* si verifica quando l'utente malintenzionato determina e utilizza un indirizzo IP di una rete, un computer o un componente di rete senza essere autorizzato a farlo. Se l'autore riesce a portare a termine l'attacco, può operare come se fosse l'entità normalmente identificata dall'indirizzo IP. Nel contesto di Microsoft Lync Server 2013, questa situazione entra in gioco solo se un amministratore ha eseguito entrambe le operazioni seguenti:
 
-</div>
+  - Ha configurato connessioni che supportano solo TCP (Transmission Control Protocol). Questa operazione è sconsigliata perché le comunicazioni TCP non vengono crittografate.
 
-<div>
+  - Ha contrassegnato gli indirizzi IP di tali connessioni come host attendibile.
 
-## <a name="rtp-replay-attack"></a>Attacco di riproduzione RTP
-
-Un *attacco di riproduzione* si verifica quando una trasmissione multimediale valida tra due parti viene intercettata e ritrasmessa per scopi illeciti. SRTP usato in connessione con un protocollo di segnalazione sicura protegge le trasmissioni da attacchi di riproduzione consentendo al destinatario di mantenere un indice dei pacchetti RTP già ricevuti e di confrontare ogni nuovo pacchetto con quelli già elencati nell'indice.
+Il problema non si presenta con le connessioni TLS (Transport Layer Security), in quanto TLS autentica tutte le parti e crittografa tutto il traffico. L'utilizzo di TLS impedisce all'autore di un attacco di eseguire lo spoofing degli indirizzi PI in una connessione specifica, ad esempio MTLS (Mutual TLS). Tuttavia, un utente malintenzionato può ancora falsificare l'indirizzo del server DNS utilizzato da Lync Server 2013. Tuttavia, poiché in Lync l'autenticazione viene eseguita con i certificati, l'autore di un attacco non disporrebbe di un certificato valido necessario per lo spoofing di una delle parti della comunicazione.
 
 </div>
 
 <div>
 
-## <a name="spim"></a>Spim
+## <a name="man-in-the-middle-attack"></a>Attacco man-in-the-middle
 
-*SPIM* è un messaggio istantaneo commerciale non richiesto o una richiesta di sottoscrizione di presenza. Sebbene non sia di per sé una compromissione della rete, è quanto meno fastidioso, può ridurre la disponibilità e la produzione delle risorse e può comportare una compromissione della rete. Un esempio di ciò è lo spimming reciproco degli utenti che si inviano richieste. Gli utenti possono bloccarsi a vicenda per impedirlo, ma con la federazione, se si stabilisce un attacco spim coordinato, può essere difficile da superare a meno che non si disabiliti la federazione per il partner.
+Un attacco man-in-the-middle si verifica quando l'autore di un attacco reinstrada la comunicazione tra due utenti attraverso il proprio computer senza che i due utenti che stanno comunicando ne siano a conoscenza. L'autore dell'attacco può monitorare e leggere il traffico prima di inviarlo al destinatario previsto. Ogni utente della comunicazione invia e riceve il traffico dall'autore dell'attacco a propria insaputa, pensando di comunicare solo con l'utente previsto. Questa situazione può verificarsi se l'autore di un attacco può modificare Servizi di dominio Active Directory per aggiungere il server come server trusted o modificare DNS (Domain Name System) per fare in modo che i client si connettano all'autore dell'attacco mentre cercano di raggiungere il server. Un attacco man-in-the-Middle può verificarsi anche con il traffico multimediale tra due client. Tuttavia, in Microsoft Lync Server 2013 audio, video e condivisione applicazioni, i flussi vengono crittografati con SRTP, utilizzando le chiavi di crittografia che vengono negoziate tra i peer che utilizzano SIP (Session Initiation Protocol) su TLS. I server come Group Chat utilizzano HTTPS per aumentare la sicurezza del traffico Web.
+
+</div>
+
+<div>
+
+## <a name="rtp-replay-attack"></a>Attacco di tipo replay RTP
+
+Un *attacco di riesecuzione* si verifica quando una trasmissione multimediale valida tra due parti viene intercettata e ritrasmessa per scopi dannosi. SRTP utilizzato insieme a un protocollo di segnalazione sicuro protegge le trasmissioni da attacchi di tipo replay consentendo al destinatario di mantenere un indice dei pacchetti RTP già ricevuti e di confrontare ogni nuovo pacchetto con quelli già elencati nell'indice.
+
+</div>
+
+<div>
+
+## <a name="spim"></a>SPIM
+
+*SPIM* è messaggi istantanei commerciali non richiesti o richieste di sottoscrizione di presenza. Sebbene non costituiscano in se stessi una violazione della rete, sono quanto meno fastidiosi, possono ridurre la produttività e la disponibilità delle risorse e provocare una violazione della rete. Un esempio di questo tipo è l'invio di richieste indesiderate da un utente a un altro. Ogni utente può bloccare gli altri per evitare questo problema, ma con la federazione, se viene stabilito un attacco coordinato con invio di messaggi istantanei indesiderati, può risultare difficile respingerlo a meno che non si disabiliti la federazione per il partner.
 
 </div>
 
@@ -125,23 +125,23 @@ Un *attacco di riproduzione* si verifica quando una trasmissione multimediale va
 
 ## <a name="viruses-and-worms"></a>Virus e worm
 
-Un *virus* è un'unità di codice il cui scopo è quello di riprodurre altre unità di codice simili. Per funzionare, un virus ha bisogno di un host, come un file, un'e-mail o un programma. Un *worm* è un'unità di codice il cui scopo è quello di riprodurre altre unità di codice simili, ma non ha bisogno di un host. Virus e worm si manifestano principalmente durante i trasferimenti di file tra client, quando gli URL vengono inviati da altri utenti. Se un virus si trova sul computer, può, ad esempio, utilizzare l'identità dell'utente e inviare messaggi istantanei per suo conto.
+Un *virus* è un'unità di codice il cui scopo è riprodurre unità di codice aggiuntive e simili. Per funzionare, un virus necessita di un host, ad esempio un file, un messaggio di posta elettronica o un programma. Un *worm* è un'unità di codice il cui scopo è riprodurre unità di codice aggiuntive e simili, ma non richiede un host. Virus e worm si presentano principalmente durante il trasferimento di file tra client o quando vengono inviati URL da altri utenti. Se nel computer in uso è presente un virus, questo può ad esempio utilizzare l'identità dell'utente e inviare messaggi istantanei per suo conto.
 
 </div>
 
 <div>
 
-## <a name="personally-identifiable-information"></a>Informazioni di identificazione personale
+## <a name="personally-identifiable-information"></a>Informazioni personali
 
-Microsoft Lync Server 2013 offre la possibilità di divulgare informazioni in una rete pubblica che potrebbe essere collegata a un singolo utente. I tipi di informazioni si possono suddividere in due categorie specifiche:
+Microsoft Lync Server 2013 è in grado di divulgare informazioni su una rete pubblica che potrebbe essere collegata a un singolo utente. È possibile suddividere i tipi di informazioni in due categorie specifiche:
 
-  - **Dati sulla presenza avanzati** I dati sulla presenza avanzata sono informazioni che un utente può scegliere di condividere o non condividere tramite un collegamento a un partner federato o con contatti all'interno di un'organizzazione. Questi dati non sono condivisi con gli utenti di una rete di messaggi istantanei pubblici. Le politiche del client e altre configurazioni del client possono mettere un certo controllo con l'amministratore di sistema. In Lync Server 2013 la modalità di privacy avanzata della presenza può essere configurata per un singolo utente per impedire agli utenti di Lync non presenti nell'elenco contatti dell'utente di visualizzare le informazioni sulla presenza dell'utente. La modalità di privacy avanzata della presenza non impedisce agli utenti di Microsoft Office Communicator 2007 e Microsoft Office Communicator 2007 R2 di visualizzare le informazioni sulla presenza di un utente. Per informazioni dettagliate, vedere [novità per i client in Lync server 2013](lync-server-2013-what-s-new-for-clients.md) nella documentazione introduttiva e [configurazione della modalità di privacy della presenza avanzata in Lync Server 2013](lync-server-2013-configuring-enhanced-presence-privacy-mode.md) nella documentazione relativa alla distribuzione.
+  - **Dati sulla presenza avanzata** I dati sulla presenza avanzata sono informazioni che un utente può scegliere di condividere o non condividere tramite un collegamento a un partner federato o ai contatti all'interno di un'organizzazione. Questi dati non vengono condivisi con gli utenti di una rete di messaggistica istantanea pubblica. Con i criteri client e altre configurazioni dei client, parte del controllo può venire affidato all'amministratore di sistema. In Lync Server 2013, è possibile configurare la modalità di privacy della presenza avanzata per un singolo utente per impedire agli utenti di Lync nell'elenco contatti dell'utente di visualizzare le informazioni sulla presenza dell'utente. La modalità di privacy della presenza avanzata non impedisce agli utenti di Microsoft Office Communicator 2007 e Microsoft Office Communicator 2007 R2 di visualizzare le informazioni sulla presenza di un utente. Per informazioni dettagliate, vedere [What ' s New for clients in Lync server 2013](lync-server-2013-what-s-new-for-clients.md) nella documentazione introduttiva e [configurazione della modalità di privacy della presenza avanzata in Lync Server 2013](lync-server-2013-configuring-enhanced-presence-privacy-mode.md) nella documentazione relativa alla distribuzione.
 
-  - **Dati obbligatori** I dati obbligatori sono necessari per il corretto funzionamento del server o del client e non sono sotto il controllo del client o dell'amministrazione di sistema. Si tratta di informazioni necessarie a livello di server o di rete ai fini del routing, della manutenzione dello stato e della segnalazione.
+  - **Dati obbligatori** I dati obbligatori sono necessari per il corretto funzionamento del server o del client e non sono sotto il controllo del client o dell'amministrazione del sistema. Si tratta di informazioni necessarie a livello di server o di rete ai fini del routing, del mantenimento dello stato e della segnalazione.
 
-Le tabelle seguenti elencano i dati esposti in una rete pubblica.
+Nelle tabelle riportate di seguito sono elencati i dati esposti su una rete pubblica.
 
-### <a name="enhanced-presence-data"></a>Dati sulla presenza avanzati
+### <a name="enhanced-presence-data"></a>Dati sulla presenza avanzata
 
 <table>
 <colgroup>
@@ -156,20 +156,20 @@ Le tabelle seguenti elencano i dati esposti in una rete pubblica.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Dati Personali</p></td>
+<td><p>Dati personali</p></td>
 <td><p>Nome, titolo, società, indirizzo di posta elettronica, fuso orario</p></td>
 </tr>
 <tr class="even">
 <td><p>Numeri di telefono</p></td>
-<td><p>Lavoro, mobile, casa</p></td>
+<td><p>Ufficio, cellulare, abitazione</p></td>
 </tr>
 <tr class="odd">
-<td><p>Informazioni di calendario</p></td>
-<td><p>Libero/occupato, avviso fuori città, dettagli riunione (per coloro che hanno accesso al calendario)</p></td>
+<td><p>Informazioni del calendario</p></td>
+<td><p>Informazioni sulla disponibilità, avviso fuori città, dettagli sulle riunioni (per coloro che hanno accesso al calendario)</p></td>
 </tr>
 <tr class="even">
 <td><p>Stato presenza</p></td>
-<td><p>Assente, Disponibile, Occupato, Non disturbare, Offline</p></td>
+<td><p>Non al computer, Disponibile, Occupato, Non disturbare, Non in linea</p></td>
 </tr>
 </tbody>
 </table>
